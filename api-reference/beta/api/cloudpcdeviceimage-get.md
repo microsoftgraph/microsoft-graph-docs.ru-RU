@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: b67ac59fa64f26c524265b743f0b2aadf85fe77a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c70571c0c1d658b30b65af5d3a52a0f084bafabc
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121273"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262094"
 ---
 # <a name="get-cloudpcdeviceimage"></a>Get cloudPcDeviceImage
 
@@ -18,7 +18,7 @@ ms.locfileid: "62121273"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями определенного [объекта cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)
+Ознакомьтесь с свойствами и отношениями определенного [объекта cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -51,13 +51,13 @@ GET /deviceManagement/virtualEndpoint/deviceImages/{id}
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -119,7 +119,9 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
     "id": "eda7ed64-7705-4079-9d08-c2bd883f4fff",
     "displayName": "Display Name value",
+    "expirationDate": "2022-11-10",
     "osBuildNumber": "OS Build Number value",
+    "osStatus": "supported",
     "operatingSystem": "Operating System value",
     "version": "Version value",
     "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage",

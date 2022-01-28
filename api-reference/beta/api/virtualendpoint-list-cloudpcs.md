@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: a6e78242b75ea676a0e149706130b56ae16eb5ee
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 64406625dfcb8b4472a79a0fba694f4bb7d916d6
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095642"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262143"
 ---
 # <a name="list-cloudpcs"></a>CloudPCs списка
 
@@ -18,7 +18,7 @@ ms.locfileid: "62095642"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список свойств и связей объектов [cloudPC.](../resources/cloudpc.md)
+Список свойств и связей объектов [cloudPC](../resources/cloudpc.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` и `$filter` `$count` параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select`и `$filter` параметры `$count` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -51,13 +51,13 @@ GET /deviceManagement/virtualEndpoint/cloudPCs
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [cloudPC](../resources/cloudpc.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию объектов [cloudPC](../resources/cloudpc.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -119,6 +119,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.cloudPC",
+      "aadDeviceId": "f5ff445f-7488-40f8-8ab9-ee784a9c1f33",
       "id": "662009bc-7732-4f6f-8726-25883518ffff",
       "displayName": "Demo-1",
       "imageDisplayName": "Windows-10 19h1-evd",
@@ -129,6 +130,7 @@ Content-Type: application/json
       "onPremisesConnectionName": "on-Premises connection for HR",
       "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93ffff",
       "servicePlanName": "lite",
+      "servicePlanType": "enterprise",
       "status": "provisioned",
       "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
       "lastModifiedDateTime": "2020-11-03T10:29:57Z",

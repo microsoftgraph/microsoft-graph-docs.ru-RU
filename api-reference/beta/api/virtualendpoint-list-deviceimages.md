@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6776366567752dd4f72fce596e51bc5eeeea3f1b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 874020c2e3435dbe4239e28c802946570de8df1f
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092808"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262066"
 ---
 # <a name="list-deviceimages"></a>Список устройствImages
 
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` параметры `$filter` запроса OData и помогает настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select` `$filter` запроса OData и помогает настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -51,13 +51,13 @@ GET /deviceManagement/virtualEndpoint/deviceImages
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию объектов [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -122,7 +122,9 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
       "id": "eda7ed64-7705-4079-9d08-c2bd883fffff",
       "displayName": "Display Name value",
+      "expirationDate": "2022-11-10",
       "osBuildNumber": "OS Build Number value",
+      "osStatus": "supported",
       "operatingSystem": "Operating System value",
       "version": "Version value",
       "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Compute/images/ExampleImage",

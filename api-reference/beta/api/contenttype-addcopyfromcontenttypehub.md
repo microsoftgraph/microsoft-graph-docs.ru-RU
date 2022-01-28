@@ -5,20 +5,21 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: dcef0c8b2ca8b21f2375a1d602b1fddd4914ef66
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: de18d986844057dbf9e592f3b1d33d1fe87ed425
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62224800"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262185"
 ---
 # <a name="contenttype-addcopyfromcontenttypehub"></a>contentType: addCopyFromContentTypeHub
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте или синхронизируйте копию опубликованного типа контента из концентратора типов контента на целевой [сайт](../resources/site.md) или [список.](../resources/list.md)
+Добавьте или синхронизируйте копию опубликованного типа контента из концентратора типов контента на целевой [сайт](../resources/site.md) или [список](../resources/list.md).
 
+Этот метод является частью изменений в типе публикации контента, чтобы оптимизировать синхронизацию публикуемого типа контента с сайтами и списками, эффективно переключаясь с "push everywhere" на "вытягивать по мере необходимости" подход. Метод позволяет пользователям вытягивать типы контента непосредственно из концентратора типов контента на сайт или список. Дополнительные сведения см. [в публикации getCompatibleHubContentTypes](contenttype-getcompatiblehubcontenttypes.md) и в блоге [Syntex Product Updates — август 2021 г](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,7 +27,7 @@ ms.locfileid: "62224800"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Manage.All, Sites.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Sites.Manage.All, Sites.FullControl.All |
+|Приложение | Sites.Manage.All, Sites.FullControl.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -53,13 +54,13 @@ POST /sites/{siteId}/contentTypes/addCopyFromContentTypeHub
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|contentTypeId|Строка| ID типа контента в концентраторе типа контента, который должен быть добавлен на целевой сайт или список.|
+|contentTypeId|String| ID типа контента в концентраторе типа контента, который должен быть добавлен на целевой сайт или список.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успеха это действие возвращает код отклика и объект contentType в тексте ответа, если тип контента добавляется синхронно, или код ответа, если тип контента синхронно синхронизирован. `200 OK` [](../resources/contenttype.md) `202 Accepted` В ответе также будет содержаться загон, содержащий расположение `Location` [richLongRunningOperation,](../resources/richLongRunningOperation.md) созданного для обработки копирования и синхронизации. В случае асинхронной операции синхронизация или добавление типа контента может занять до 70 минут.
+`200 OK` В случае успеха это действие возвращает код отклика и объект [contentType](../resources/contenttype.md) в тексте ответа, если тип контента добавляется синхронно, или код ответа, `202 Accepted` если тип контента синхронно синхронизирован. В ответе также будет содержаться `Location` загон, содержащий расположение [richLongRunningOperation](../resources/richLongRunningOperation.md) , созданного для обработки копирования и синхронизации. В случае асинхронной операции синхронизация или добавление типа контента может занять до 70 минут.
 
 ## <a name="examples"></a>Примеры
 
@@ -79,7 +80,7 @@ Content-Type: application/json
 Content-length: 33
 
 {
-  "contentTypeId": "String"
+  "contentTypeId": "0x0101"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -119,15 +120,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.contentType",
-    "id": "String (identifier)",
-    "description": "String",
-    "group": "String",
-    "hidden": "Boolean",
-    "isBuiltIn": "Boolean",
-    "name": "String"
-  }
+    "id": "0x0101",
+    "description": "Document content type",
+    "group": "Document Content Types",
+    "hidden": false,
+    "isBuiltIn": true,
+    "name": "Document"
 }
 ```
 ### <a name="example-2-asynchronous-pull"></a>Пример 2. Асинхронная тяга

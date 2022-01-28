@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: c03900468268c903db79e122dc4f02fc1d5b7222
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 56a6d97dbaba0a66e2d30d0a9afea481f78063e5
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860917"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62261765"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -241,7 +241,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 ### <a name="example-usage"></a>Примеры использования
 
-#### <a name="delegated"></a>Делегированные
+#### <a name="delegated"></a>Делегированное
 * _AppCatalog.ReadWrite.All_. [Составление списка всех приложений в каталоге](/graph/api/teamsapp-list?view=graph-rest-beta&preserve-view=true) (`GET /beta/appCatalogs/teamsApps`)
 * _AppCatalog.ReadWrite.All_. [Публикация приложения](/graph/api/teamsapp-publish?view=graph-rest-beta&preserve-view=true) (`POST /beta/appCatalogs/teamsApps`)
 * _AppCatalog.ReadWrite.All_. [Обновление опубликованного приложения](/graph/api/teamsapp-update?view=graph-rest-beta&preserve-view=true) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
@@ -1330,7 +1330,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 | _Notes.ReadWrite.All_ |    Чтение и запись всех записных книжек OneNote | Позволяет приложению считывать и редактировать все записные книжки OneNote в организации, а также предоставлять к ним доступ в случаях, когда вход пользователя не предусмотрен.| Да |
 
 
-### <a name="remarks"></a>Заметки
+### <a name="remarks"></a>Примечания
 Разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ действительны только для рабочих и учебных учетных записей. Все остальные разрешения поддерживаются как для учетных записей Майкрософт, так и для рабочих или учебных учетных записей.
 
 С помощью разрешения _Notes.Create_ приложение может просматривать иерархию записных книжек OneNote вошедшего пользователя и создавать содержимое OneNote (записные книжки, группы разделов, разделы, страницы и т. д.).
@@ -1340,7 +1340,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 В случае рабочих и учебных учетных записей разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ позволяют приложению получать доступ к содержимому OneNote других пользователей, которое доступно вошедшему пользователю в организации.
 
 ### <a name="example-usage"></a>Примеры использования
-#### <a name="delegated"></a>Делегированные
+#### <a name="delegated"></a>Делегированные разрешения
 
 * _Notes.Create_. Создание записных книжек для вошедшего пользователя (`POST /me/onenote/notebooks`).
 * _Notes.Read_. Чтение записных книжек вошедшего пользователя (`GET /me/onenote/notebooks`).
@@ -2090,6 +2090,22 @@ SubjectRightsRequest.ReadWrite.All | Чтение и запись запросо
 | _TeamsAppInstallation.ReadForTeam.All_ | Чтение установленных приложений Teams для всех команд| Позволяет приложению считывать приложения Teams, установленные в любой команде, в отсутствие пользователя, выполнившего вход. Не предоставляет возможности чтения параметров, относящихся к приложению.| Да |
 | _TeamsAppInstallation.ReadWriteForTeam.All_ | Управление приложениями Teams во всех командах| Позволяет приложению считывать, устанавливать, обновлять и удалять приложения Teams в любой команде, в отсутствие пользователя, выполнившего вход. Не предоставляет возможности чтения параметров, относящихся к приложению.| Да |
 | _TeamsAppInstallation.ReadWriteSelfForTeam.All_ | Разрешение приложению Teams управлять собой во всех командах| Позволяет приложению Teams читать, устанавливать, обновлять и удалять себя в любой команде без необходимости входа пользователя.| Да |
+
+## <a name="teams-device-management-permissions"></a>Разрешения на управление устройствами Teams
+
+#### <a name="delegated-permissions"></a>Делегированные разрешения
+
+|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkDevice.Read.All_ | Чтение устройств Teams. | Позволяет приложению читать данные управления для устройств Teams от имени пользователя, вошедшего в систему.   | Да | Нет |
+| _TeamworkDevice.ReadWrite.All_ | Чтение и запись устройств Teams. | Позволяет приложению читать и записывать данные управления для устройств Teams от имени пользователя, вошедшего в систему.  | Да | Нет |
+
+#### <a name="application-permissions"></a>Разрешения приложений
+
+|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkDevice.Read.All_ | Чтение устройств Teams. | Позволяет приложению читать данные управления для устройств Teams без вошедший в систему пользователя. | Да | Нет |
+| _TeamworkDevice.ReadWrite.All_ | Чтение и запись устройств Teams. | Позволяет приложению читать и записывать данные управления для устройств Teams без вошедший в систему пользователя. | Да | Нет |
 
 ## <a name="team-member-permissions"></a>Разрешения для участников команды 
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1d2d4eeeea13a657f2cd6aed4a18fe846742bf78
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a1a031752f5744aae89ba06ca49f860ec804b6b3
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033802"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262052"
 ---
 # <a name="assign-homerealmdiscoverypolicy"></a>Назначение типа ресурса homeRealmDiscoveryPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "61033802"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Приложение                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/homeRealmDiscoveryPolicies/$ref
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажи идентификатор объекта [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) (с помощью свойства), который должен быть назначен `@odata.id` директору службы.
+В теле запроса укажи идентификатор объекта [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) ( `@odata.id` с помощью свойства), который должен быть назначен директору службы.
 
 ## <a name="response"></a>Отклик
 
@@ -66,11 +66,11 @@ POST /servicePrincipals/{id}/homeRealmDiscoveryPolicies/$ref
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/homeRealmDiscoveryPolicies
+POST https://graph.microsoft.com/beta/servicePrincipals/19c308f2-e088-464d-8ccb-7137b7bab660/homeRealmDiscoveryPolicies/$ref
 Content-Type: application/json
 
 {
-  "@odata.id":"https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
+    "@odata.id": "https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/6c6f154f-cb39-4ff9-bf5b-62d5ad585cde"
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 85a4763d816a4971c07167a9978eb99d9c7f0942
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ed36a7007e9caa5a5130cea822efc78aa0f5840d
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115814"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62261975"
 ---
 # <a name="list-assigned-homerealmdiscoverypolicy"></a>Список, присвоенный homeRealmDiscoveryPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "62115814"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список [объектов homeRealmDiscoveryPolicy,](../resources/homerealmdiscoverypolicy.md) которые назначены [службеPrincipal.](../resources/servicePrincipal.md)
+Список [объектов homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) , которые назначены [службеPrincipal](../resources/servicePrincipal.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,15 +42,15 @@ GET /servicePrincipals/{id}/homeRealmDiscoveryPolicies
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [homeRealmDiscoveryPolicy](../resources/homeRealmDiscoveryPolicy.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и коллекцию объектов [homeRealmDiscoveryPolicy](../resources/homeRealmDiscoveryPolicy.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -65,7 +65,7 @@ GET /servicePrincipals/{id}/homeRealmDiscoveryPolicies
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/homeRealmDiscoveryPolicies
+GET https://graph.microsoft.com/beta/servicePrincipals/19c308f2-e088-464d-8ccb-7137b7bab660/homeRealmDiscoveryPolicies
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-homerealmdiscoverypolicies-on-serviceprincipal-csharp-snippets.md)]
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/homeRealmDiscoveryPo
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -112,16 +112,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "definition": [
-        "definition-value"
-      ],
-      "displayName": "displayName-value",
-      "isOrganizationDefault": true,
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.homeRealmDiscoveryPolicy)",
+    "value": [
+        {
+            "id": "6c6f154f-cb39-4ff9-bf5b-62d5ad585cde",
+            "deletedDateTime": null,
+            "definition": [
+                "{\"HomeRealmDiscoveryPolicy\":     {\"AccelerateToFederatedDomain\":true,      \"PreferredDomain\":\"federated.example.edu\",      \"AlternateIdLogin\":{\"Enabled\":true}}}"
+            ],
+            "displayName": "Contoso default HRD Policy",
+            "isOrganizationDefault": false
+        }
+    ]
 }
 ```
 

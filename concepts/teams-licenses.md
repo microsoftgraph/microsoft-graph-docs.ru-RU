@@ -4,12 +4,12 @@ description: Узнайте о моделях лицензирования и о
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8edb5bc5e35c5c48d61a8e1d48ca724f023a5d8d
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: e3f8637bc55c6cd1cb9055d6b914063b8980e858
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072658"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262108"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Требования к лицензированию и оплате для API Microsoft Teams в Microsoft Graph
 
@@ -20,7 +20,8 @@ ms.locfileid: "62072658"
 - [`model=A`](#modela-requirements) применяется только в приложениях, которые выполняют [функцию безопасности или соответствия требованиям](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms), и требует наличия [поддерживаемой лицензии](#required-licenses-for-modela).
 В будущем приложения также будут должны оплачивать сообщения, потребляемые сверх [заложенной емкости](#seeded-capacity).
 
-- В данное время [`model=B`](#modelb-requirements) можно использовать бесплатно; однако в будущем за приложения будет взиматься плата в зависимости от количества потребляемых сообщений. `model=B` не требует лицензии и не ограничивается приложениями, которые выполняют функции безопасности или соответствия требованиям.
+- [`model=B`](#modelb-requirements) ограничивается приложениями, не связанными с обеспечением [безопасности или соответствия требованиям](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms). 
+В данное время [`model=B`](#modelb-requirements) можно использовать бесплатно; однако в будущем за приложения будет взиматься плата в зависимости от количества потребляемых сообщений. Требования к лицензированию для `model=B` отсутствуют.
 
 - [Режим оценки (по умолчанию)](#evaluation-mode-default-requirements) обеспечивает доступ к интерфейсам API для целей оценки, в ограниченном объеме для каждого запрашивающего приложения. При превышении лимита уведомления об изменении не отправляются.
 
@@ -28,7 +29,7 @@ ms.locfileid: "62072658"
 
 `model=A` применяется только в приложениях, которые выполняют функцию безопасности или соответствия требованиям. Подробные сведения см. в разделе "Условия использования API для приложений безопасности и соответствия требованиям" [условий использования служб Microsoft Azure](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms).
 
-|API                   | Для кого нужна [лицензия](#required-licenses-for-modela)  | Заложенная емкость | Стоимость сверхлимитного использования | Заметки |
+|API                   | Для кого нужна [лицензия](#required-licenses-for-modela)  | Заложенная емкость | [Стоимость сверхлимитного использования](#price-for-additional-use) | Заметки |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [Уведомления об изменении chatMessage](/graph/api/subscription-post-subscriptions) | Отправитель сообщений | 800 сообщений на одного пользователя в месяц на приложение | 0,00075 доллара США за каждое сообщение | Заложенная емкость распределяется по уведомлениям об изменении conversationMember |
 | [Уведомления об изменении conversationMember](/graph/api/subscription-post-subscriptions) | Для каждого пользователя в составе клиента | 800 уведомлений на одного пользователя в месяц на приложение  | 0,00075 доллара США за каждое уведомление | Заложенная емкость распределяется по уведомлениям об изменении chatMessage |
@@ -38,9 +39,11 @@ ms.locfileid: "62072658"
 
 ## <a name="modelb-requirements"></a>Требования для `model=B`
 
+`model=B` ограничивается приложениями, не связанными с обеспечением безопасности или соответствия требованиям. Подробные сведения см. в разделе "Условия использования API для приложений безопасности и соответствия требованиям" [условий использования служб Microsoft Azure](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms).
+
 >**Примечание.** В данное время [`model=B`](#modelb-requirements) можно использовать бесплатно, однако в будущем за приложения будет взиматься плата в зависимости от количества потребляемых сообщений. 
 
-|API                   | Для кого нужна [лицензия](#required-licenses-for-modela)  | Заложенная емкость | Стоимость сверхлимитного использования | Заметки |
+|API                   | Для кого нужна [лицензия](#required-licenses-for-modela)  | Заложенная емкость | [Стоимость сверхлимитного использования](#price-for-additional-use) | Заметки |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [Уведомления об изменении chatMessage](/graph/api/subscription-post-subscriptions) | Недоступно | Отсутствует | 0,00075 доллара США за каждое сообщение |  |
 | [Уведомления об изменении conversationMember](/graph/api/subscription-post-subscriptions) | Недоступно | Нет  | 0,00075 доллара США за каждое уведомление | |
@@ -49,7 +52,7 @@ ms.locfileid: "62072658"
 
 ## <a name="evaluation-mode-default-requirements"></a>Требования режима оценки (по умолчанию)
 
-|API                   | Для кого нужна [лицензия](#required-licenses-for-modela)  | Заложенная емкость | Стоимость сверхлимитного использования | Заметки |
+|API                   | Для кого нужна [лицензия](#required-licenses-for-modela)  | Заложенная емкость | [Стоимость сверхлимитного использования](#price-for-additional-use) | Заметки |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [Уведомления об изменении chatMessage](/graph/api/subscription-post-subscriptions) |  Недоступно | 500 сообщений в месяц на приложение | Недоступно |
 | [Уведомления об изменении conversationMember](/graph/api/subscription-post-subscriptions) | Недоступно | 500 сообщений в месяц на приложение | Недоступно | 

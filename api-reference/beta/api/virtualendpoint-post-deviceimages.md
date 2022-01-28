@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 174cb16055f1979ac322b2c2bd667ddcd941038e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e3a0150ee0912f57bf57f356ae18f6370b8ce5b1
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122540"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262136"
 ---
 # <a name="create-cloudpcdeviceimage"></a>Создание cloudPcDeviceImage
 
@@ -18,7 +18,7 @@ ms.locfileid: "62122540"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md) Upload пользовательский образ ОС, который можно позднее уладить на облачных ПК.
+Создайте новый [объект cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) . Upload пользовательский образ ОС, который можно позднее уладить на облачных ПК.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -48,23 +48,23 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 | Авторизация | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
-В теле запроса поставляем представление JSON объекта [cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)
+В теле запроса поставляем представление JSON объекта [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) .
 
-В следующей таблице показаны свойства, необходимые при создании [cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)
+В следующей таблице показаны свойства, необходимые при создании [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя отображения изображения.|
-|sourceImageResourceId|Строка|ID источника ресурса изображений в Azure. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|displayName|String|Имя отображения изображения.|
+|sourceImageResourceId|String|ID источника ресурса изображений в Azure. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |operatingSystem|String|Операционная система изображения. Например: Windows 10 Корпоративная.|
-|osBuildNumber|Строка|Версия сборки ОС изображения. Например: 1909.|
+|osBuildNumber|String|Версия сборки ОС изображения. Например: 1909.|
 |version|String|Версия изображения. Например: 0.0.1, 1.5.13.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` отклика и [объект cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -142,6 +142,8 @@ Content-Type: application/json
   "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage",
   "lastModifiedDateTime": "2020-11-03T07:03:44.97Z",
   "status": "pending",
-  "statusDetails": null
+  "statusDetails": null,
+  "osStatus":"supported",
+  "expirationDate":"2022-11-10"
 }
 ```

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 4d577cd75d5a1d39db1323331a7b429e43ea9b4c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 33fa0da5493563075882e3d5f367326282abb76f
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126538"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262157"
 ---
 # <a name="list-onpremisesconnections"></a>Список onPremisesConnections
 
@@ -18,7 +18,7 @@ ms.locfileid: "62126538"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список свойств и связей объектов [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
+Список свойств и связей объектов [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/onPremisesConnections
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` параметры `$filter` запроса OData и помогает настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select` `$filter` запроса OData и помогает настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -51,13 +51,13 @@ GET /deviceManagement/virtualEndpoint/onPremisesConnections
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и коллекцию объектов [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -121,6 +121,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
       "id": "07f12770-a225-4957-9127-0d247cf4ffff",
+      "type": "hybridAzureADJoin",
       "displayName": "Display Name value",
       "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
       "subscriptionName": "Subscription Name value",

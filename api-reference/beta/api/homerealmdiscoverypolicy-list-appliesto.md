@@ -1,16 +1,16 @@
 ---
 title: Список применяетсяTo
 description: Получите список объектов directoryObject, к которые был применен объект homeRealmDiscoveryPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 31ea1eb539dc22dce69c3330d641c67188318067
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b94a6501cc7c51947ec61da50afcf2e3b07df5e2
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040975"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262092"
 ---
 # <a name="list-appliesto"></a>Список применяетсяTo
 
@@ -18,7 +18,7 @@ ms.locfileid: "52040975"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [directoryObject,](../resources/directoryObject.md) к которые был применен [объект homeRealmDiscoveryPolicy.](../resources/homerealmdiscoverypolicy.md) HomeRealmDiscoveryPolicy может применяться только к [ресурсам servicePrincipal.](../resources/serviceprincipal.md)
+Получите список объектов [directoryObject](../resources/directoryObject.md) , к которые был применен [объект homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) . HomeRealmDiscoveryPolicy может применяться только к [ресурсам servicePrincipal](../resources/serviceprincipal.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "52040975"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All and Application.Read.All, Policy.ReadWrite.ApplicationConfiguration and Application.Read.All, Directory.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.Read.All and Application.Read.All, Policy.ReadWrite.ApplicationConfiguration and Application.Read.All, Directory.Read.All |
+| Приложение                            | Policy.Read.All and Application.Read.All, Policy.ReadWrite.ApplicationConfiguration and Application.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,7 +54,7 @@ GET /policies/homeRealmDiscoveryPolicies/{id}/appliesTo
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика. Он возвращает код ответа `404 Not Found` , если политика не была применена к объектам каталога.
 
 ## <a name="examples"></a>Примеры
 
@@ -69,7 +69,7 @@ GET /policies/homeRealmDiscoveryPolicies/{id}/appliesTo
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/{id}/appliesTo
+GET https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/6c6f154f-cb39-4ff9-bf5b-62d5ad585cde/appliesTo
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-appliesto-2-csharp-snippets.md)]
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/{id}/ap
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -108,12 +108,58 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "id-value",
-      "deletedDateTime": "datetime-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.servicePrincipal",
+            "id": "19c308f2-e088-464d-8ccb-7137b7bab660",
+            "accountEnabled": true,
+            "alternativeNames": [],
+            "appDisplayName": "LinkedIn",
+            "appId": "c8e5820f-8e41-4b7c-8937-42777eb592a4",
+            "appOwnerOrganizationId": "84841066-274d-4ec0-a5c1-276be684bdd3",
+            "displayName": "LinkedIn",
+            "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=linkedin|ISV9.3|primary|z",
+            "servicePrincipalNames": [
+                "c8e5820f-8e41-4b7c-8937-42777eb592a4",
+                "http://LinkedIn/1a2d95c1-3cc7-46ad-82dd-2c768ae1b4ff"
+            ],
+            "servicePrincipalType": "Application",
+            "signInAudience": "AzureADMyOrg",
+            "tags": [
+                "4d57f64e-9941-4df2-bb70-8d9a2a38ab91",
+                "WindowsAzureActiveDirectoryGalleryApplicationPrimaryV1",
+                "WindowsAzureActiveDirectoryIntegratedApp"
+            ],
+            "appRoles": [
+                {
+                    "allowedMemberTypes": [
+                        "User"
+                    ],
+                    "description": "msiam_access",
+                    "displayName": "msiam_access",
+                    "id": "01c2bb8e-0895-42c8-b950-3ec8abc7a012",
+                    "isEnabled": true,
+                    "origin": "Application",
+                    "value": null
+                }
+            ],
+            "keyCredentials": [],
+            "oauth2PermissionScopes": [
+                {
+                    "adminConsentDescription": "Allow the application to access LinkedIn on behalf of the signed-in user.",
+                    "adminConsentDisplayName": "Access LinkedIn",
+                    "id": "6edde65d-3f90-4251-9df2-0329b678b368",
+                    "isEnabled": true,
+                    "type": "User",
+                    "userConsentDescription": "Allow the application to access LinkedIn on your behalf.",
+                    "userConsentDisplayName": "Access LinkedIn",
+                    "value": "user_impersonation"
+                }
+            ],
+            "passwordCredentials": []
+        }
+    ]
 }
 ```
 

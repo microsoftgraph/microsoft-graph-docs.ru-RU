@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8d3fb9fde36c73e63304fb942101072ce23f3edf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e681097bf2b15665809185a4204813608e7d4797
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133475"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262176"
 ---
 # <a name="get-homerealmdiscoverypolicy"></a>Get homeRealmDiscoveryPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "62133475"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта [homeRealmDiscoveryPolicy.](../resources/homerealmdiscoverypolicy.md)
+Извлечение свойств и связей объекта [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,15 +46,15 @@ GET /policies/homeRealmDiscoveryPolicies/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа и запрашиваемого `200 OK` [объекта homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) в тексте ответа.
+В случае успеха этот метод возвращает `200 OK` код ответа и запрашиваемого [объекта homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/{id}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -115,12 +115,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/homeRealmDiscoveryPolicies/$entity",
+    "id": "8f865ec2-2b02-405f-91e7-cb580dfdfa56",
+    "deletedDateTime": null,
+    "definition": [
+        "{\"HomeRealmDiscoveryPolicy\":     {\"AccelerateToFederatedDomain\":true,      \"PreferredDomain\":\"federated.example.edu\",      \"AlternateIdLogin\":{\"Enabled\":true}}}"
+    ],
+    "displayName": "displayName-value",
+    "isOrganizationDefault": true
 }
 ```
 

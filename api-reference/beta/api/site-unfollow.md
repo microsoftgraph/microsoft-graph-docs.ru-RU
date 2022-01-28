@@ -5,16 +5,18 @@ description: Unfollow a user's site
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ca7f581ec196dcdf1080a90b0c1b162806ffdee9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: be60fc6158877af221e3a9a15037a3eaa011fd65
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054725"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262241"
 ---
 # <a name="unfollow-site"></a>Прекращение отслеживания сайта 
 
 Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Unfollow a user's [site](../resources/site.md) or multiple sites.
 
@@ -48,7 +50,7 @@ POST /users/{user-id}/followedSites/remove
 ## <a name="response"></a>Отклик
 
 * В случае успешного запроса этот метод возвращает код `204` состояния без контента.  
-* Если ошибка произошла при отсоединиле любой из указанных сайтов, этот метод возвращает код состояния, и в тексте ответа будет содержаться массив записей, содержащих объекты ошибок и siteIds, указывающие, какие сайты не могут быть `207` unfollowed. [](/graph/errors)
+* Если ошибка произошла при отсоединиле любой из указанных сайтов, `207` этот метод возвращает код состояния, и в тексте ответа будет содержаться массив записей, содержащих объекты ошибок и siteIds, указывающие, какие сайты не могут быть unfollowed.[](/graph/errors)
 
 ## <a name="example"></a>Пример
 
