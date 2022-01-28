@@ -560,7 +560,7 @@ items:
                 href: api/profile-get.md
               - name: Удаление профиля пользователя
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Командная работа
             items:
               - name: Установленное приложение
                 href: resources/teamsappinstallation.md
@@ -2018,7 +2018,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: Прервать
                     href: api/printjob-abort.md
-                  - name: Redirect
+                  - name: Перенаправление
                     href: api/printjob-redirect.md
               - name: Операция печати
                 href: resources/printoperation.md
@@ -14654,6 +14654,43 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: Удаление приложения из чата
                     href: api/chat-delete-installedapps.md
+          - name: Устройство
+            items:
+              - name: Подготовка устройств
+                href: resources/teamworkdevice.md
+                items:
+                  - name: Список
+                    href: api/teamworkdevice-list.md
+                  - name: Получение
+                    href: api/teamworkdevice-get.md
+                  - name: Перезапуск устройства
+                    href: api/teamworkdevice-restart.md
+                  - name: Запуск диагностики устройств
+                    href: api/teamworkdevice-rundiagnostics.md
+                  - name: Обновление программного обеспечения
+                    href: api/teamworkdevice-updatesoftware.md
+              - name: Активность устройства
+                href: resources/teamworkdeviceactivity.md
+                items:
+                  - name: Получение
+                    href: api/teamworkdeviceactivity-get.md
+              - name: Конфигурация устройства
+                href: resources/teamworkdeviceconfiguration.md
+                items:
+                  - name: Получение
+                    href: api/teamworkdeviceconfiguration-get.md
+              - name: Работоспособность устройства
+                href: resources/teamworkdevicehealth.md
+                items:
+                  - name: Получение
+                    href: api/teamworkdevicehealth-get.md
+              - name: Операция устройства
+                href: resources/teamworkdeviceoperation.md
+                items:
+                  - name: Список
+                    href: api/teamworkdeviceoperation-list.md
+                  - name: Получение
+                    href: api/teamworkdeviceoperation-get.md
           - name: Веб-канал активности
             items:
               - name: Отправка уведомления пользователю в чате

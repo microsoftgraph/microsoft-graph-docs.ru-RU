@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 36c7ea1a43c8e55fd4b6cbe92360a7f088f19da9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 22156bd00fcac68d8da38e465a40225b96eec702
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127623"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62261954"
 ---
 # <a name="list-homerealmdiscoverypolicies"></a>Перечисление типов ресурсов homeRealmDiscoveryPolicy
 
@@ -35,7 +35,7 @@ ms.locfileid: "62127623"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET policies/homeRealmDiscoveryPolicies
+GET /policies/homeRealmDiscoveryPolicies
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -46,9 +46,9 @@ GET policies/homeRealmDiscoveryPolicies
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -116,16 +116,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "definition": [
-        "definition-value"
-      ],
-      "displayName": "displayName-value",
-      "isOrganizationDefault": true,
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/homeRealmDiscoveryPolicies",
+    "value": [
+        {
+            "id": "8f865ec2-2b02-405f-91e7-cb580dfdfa56",
+            "deletedDateTime": null,
+            "definition": [
+                "{\"HomeRealmDiscoveryPolicy\":     {\"AccelerateToFederatedDomain\":true,      \"PreferredDomain\":\"federated.example.edu\",      \"AlternateIdLogin\":{\"Enabled\":true}}}"
+            ],
+            "displayName": "displayName-value",
+            "isOrganizationDefault": true
+        }
+    ]
 }
 ```
 

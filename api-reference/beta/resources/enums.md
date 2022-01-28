@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: e300e3ec5d981376b1bc08c3aca3097ecda1ff9a
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: f05bbd5eadcbff53cc91eba9a2847aca6c91b765
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225548"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62261940"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -72,7 +72,7 @@ ms.locfileid: "62225548"
 | Элемент             | Значение | Описание |
 |:-------------------|:------| :------|
 | notRequired        | 0     | Для завершения регистрации устройства пользователю не требуется многофакторная проверка подлинности.|
-| Обязательный           | 1     | Для завершения регистрации устройства пользователю требуется многофакторная проверка подлинности.|
+| обязательно           | 1     | Для завершения регистрации устройства пользователю требуется многофакторная проверка подлинности.|
 | unknownFutureValue | 2     | Эволюционирующее значение sentinel. Не следует использовать.|
 
 ### <a name="policyscope-values"></a>значения policyScope
@@ -227,9 +227,9 @@ ms.locfileid: "62225548"
 
 |Member|
 |:---|
-|Строка|
+|String|
 |Целое число|
-|Справка|
+|Справочные материалы|
 |Binary|
 |Логическое|
 |Даты и время|
@@ -2154,7 +2154,7 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкий|2|
+|Низкие|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
@@ -2777,6 +2777,70 @@ Enum для серьезности оповещений.
 |персонал|
 |клиент|
 |unknownFutureValue|
+
+### <a name="teamworkconnectionstatus-values"></a>значения teamworkConnectionStatus
+
+| Member |
+|:--------|
+|unknown|
+|подключено|
+|отключено|
+|unknownFutureValue|
+
+### <a name="teamworkdeviceactivitystate-values"></a>значения teamworkDeviceActivityState
+
+| Элемент | Значение| Описание |
+|:---------------|:--------|:----------|
+|unknown|0|Неизвестное состояние.|
+|занят|1|Устройство занято.|
+|праздный|2|Устройство простаивает.|
+|недоступно|3|Устройство недоступно.|
+|unknownFutureValue|4|Эволюционирующее значение sentinel. Не следует использовать.|
+
+### <a name="teamworkdeviceoperationtype-values"></a>значения teamworkDeviceOperationType
+
+| Элемент | Значение| Описание |
+|:---------------|:--------|:----------|
+|deviceRestart|0|Перезапустите устройство.|
+|configUpdate|1|Обновление конфигурации устройства.|
+|deviceDiagnostics|2|Получите журналы устройств.|
+|softwareUpdate|3|Обновление программного обеспечения на устройстве.|
+|deviceManagementAgentConfigUpdate|4|Обновление конфигурации агента устройства.|
+|remoteLogin|5|Удаленный вход устройства.|
+|remoteLogout|6 |Удаленный вход устройства.|
+|unknownFutureValue|7 |Эволюционирующее значение sentinel. Не следует использовать.|
+
+### <a name="teamworksoftwarefreshness-values"></a>значения teamworkSoftwareFreshness
+
+| Элемент | Значение| Описание |
+|:---------------|:--------|:----------|
+|unknown|0|Неизвестное значение.|
+|Последняя|1|Указывает, выполняет ли компонент устройства последнюю версию программного обеспечения.|
+|updateAvailable|2|Указывает, что обновление программного обеспечения доступно для компонента устройства.|
+|unknownFutureValue|3|Эволюционирующее значение sentinel. Не следует использовать.|
+
+### <a name="teamworksoftwaretype-values"></a>значения teamworkSoftwareType
+
+| Member |
+|:---------------|
+|adminAgent|
+|operatingSystem|
+|teamsClient|
+|прошивка|
+|partnerAgent|
+|companyPortal|
+|unknownFutureValue|
+
+### <a name="teamworksupportedclient-values"></a>значения teamworkSupportedClient
+
+| Элемент | Значение| Описание |
+|:---------------|:--------|:----------|
+|unknown|0|Неизвестное значение.|
+|skypeDefaultAndTeams|1|Поддерживает как `Skype` и `Teams` . Значение по умолчанию: `Skype`.|
+|teamsDefaultAndSkype|2|Поддерживает как `Skype` и `Teams` . Значение по умолчанию: `Teams`.|
+|skypeOnly|3|Поддерживает только `Skype` .|
+|teamsOnly|4|Поддерживает только `Teams` .|
+|unknownFutureValue|5|Эволюционирующее значение sentinel. Не следует использовать.|
 
 ### <a name="longrunningoperationstatus-values"></a>значения longRunningOperationStatus
 

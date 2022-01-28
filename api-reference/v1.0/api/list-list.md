@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.date: 09/11/2017
 title: Создание списка списков SharePoint на сайте
 ms.localizationpriority: high
 ms.prod: sharepoint
 description: Получение коллекции списков для сайта.
 doc_type: apiPageType
-ms.openlocfilehash: bc26fb25ec4c130137b46acb7b126e884b1618c0
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7011a7e8c3ac04676635dcc914d1848beadbdf0b
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097764"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262209"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Перечисление списков на сайте
 
@@ -19,6 +18,10 @@ ms.locfileid: "62097764"
 
 Получение коллекции [списков][] для [сайта][].
 
+По умолчанию ресурсы list с аспектом [system][] скрыты.
+Чтобы перечислить их, включите `system` в оператор `$select`.
+
+[system]: ../resources/systemfacet.md
 [списков]: ../resources/list.md
 [сайта]: ../resources/site.md
 
@@ -40,7 +43,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 ## <a name="example"></a>Пример
 
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -76,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
@@ -109,13 +112,6 @@ Content-type: application/json
   ]
 }
 ```
-
-## <a name="remarks"></a>Заметки
-
-По умолчанию ресурсы list с аспектом [system][] скрыты.
-Чтобы перечислить их, включите `system` в оператор `$select`.
-
-[system]: ../resources/systemfacet.md
 
 <!-- {
   "type": "#page.annotation",

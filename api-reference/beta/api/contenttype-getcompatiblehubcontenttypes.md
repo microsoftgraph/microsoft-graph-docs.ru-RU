@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 675722b02361a0231a4ba66109fd4e20029f1658
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 0457265d9c6db8cf8207a3a440bf89b3d10bc2d2
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225255"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62261996"
 ---
 # <a name="contenttype-getcompatiblehubcontenttypes"></a>contentType: getCompatibleHubContentTypes
 Пространство имен: microsoft.graph
@@ -19,6 +19,8 @@ ms.locfileid: "62225255"
 
 Получите совместимые типы контента в концентраторе типов контента, который можно добавить на целевой [сайт](../resources/site.md) или [в список.](../resources/list.md)
 
+Этот метод является частью изменений в типе публикации контента, чтобы оптимизировать синхронизацию публикуемого типа контента с сайтами и списками, эффективно переключаясь с "push everywhere" на "вытягивать по мере необходимости" подход. Метод позволяет пользователям вытягивать типы контента непосредственно из концентратора типов контента на сайт или список. Дополнительные сведения см. [в публикации addCopyFromContentTypeHub](contenttype-addcopyfromcontenttypehub.md) и в блоге [Syntex Product Updates — август 2021 г.](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438)
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,7 +28,7 @@ ms.locfileid: "62225255"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Manage.All, Sites.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Sites.Manage.All, Sites.FullControl.All |
+|Приложение | Sites.Manage.All, Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -104,11 +106,12 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.contentType",
-      "id": "String (identifier)",
-      "description": "String",
-      "group": "String",
-      "isBuiltIn": "Boolean",
-      "name": "String"
+      "id": "0x0101",
+      "description": "Document content type",
+      "group": "Document Content Types",
+      "hidden": false,
+      "isBuiltIn": true,
+      "name": "Document"
     }
   ]
 }
