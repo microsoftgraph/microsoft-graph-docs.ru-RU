@@ -5,12 +5,12 @@ author: akjo
 doc_type: resourcePageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 89ad4d479135972c0bbcfa14163a750ba10841a3
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: ff6a364ed21286d2fb01791bc0ccef0997f3ab5f
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695599"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262227"
 ---
 # <a name="userteamwork-resource-type"></a>Тип ресурса userTeamwork
 
@@ -19,6 +19,11 @@ ms.locfileid: "58695599"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Контейнер для набора функциональных возможностей Microsoft Teams, доступных для пользователя в клиенте.
+
+## <a name="methods"></a>Методы
+|Метод|Тип возвращаемых данных|Описание|
+|:---|:---|:---|
+|[Перечисление installedApps](../api/userteamwork-list-installedapps.md)|[teamsAppInstallation](../resources/teamsappinstallation.md) collection|Получение списка приложений, установленных в личной области указанного пользователя.|
 
 ## <a name="properties"></a>Свойства
 
@@ -62,4 +67,6 @@ ms.locfileid: "58695599"
 }
 -->
 
+## <a name="see-also"></a>См. также
 
+- [Тип ресурса teamwork](teamwork.md)
