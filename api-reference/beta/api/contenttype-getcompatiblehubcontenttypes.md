@@ -5,21 +5,21 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 0457265d9c6db8cf8207a3a440bf89b3d10bc2d2
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: 3356e933a8fa516561dd8efe32211e6c3846b978
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62261996"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282221"
 ---
 # <a name="contenttype-getcompatiblehubcontenttypes"></a>contentType: getCompatibleHubContentTypes
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите совместимые типы контента в концентраторе типов контента, который можно добавить на целевой [сайт](../resources/site.md) или [в список.](../resources/list.md)
+Получите совместимые типы контента в концентраторе типов контента, который можно добавить на целевой [сайт](../resources/site.md) или [список](../resources/list.md).
 
-Этот метод является частью изменений в типе публикации контента, чтобы оптимизировать синхронизацию публикуемого типа контента с сайтами и списками, эффективно переключаясь с "push everywhere" на "вытягивать по мере необходимости" подход. Метод позволяет пользователям вытягивать типы контента непосредственно из концентратора типов контента на сайт или список. Дополнительные сведения см. [в публикации addCopyFromContentTypeHub](contenttype-addcopyfromcontenttypehub.md) и в блоге [Syntex Product Updates — август 2021 г.](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438)
+Этот метод является частью изменений в типе публикации контента, чтобы оптимизировать синхронизацию публикуемого типа контента с сайтами и списками, эффективно переключаясь с "push everywhere" на "вытягивать по мере необходимости" подход. Метод позволяет пользователям вытягивать типы контента непосредственно из концентратора типов контента на сайт или список. Дополнительные сведения см. [в публикации addCopyFromContentTypeHub](contenttype-addcopyfromcontenttypehub.md) и в блоге [Syntex Product Updates — август 2021 г](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,7 +51,7 @@ GET /sites/{siteId}/contentTypes/getCompatibleHubContentTypes
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код ответа и `200 OK` [коллекцию contentType](../resources/contenttype.md) в тексте отклика.
+В случае успешной работы эта функция возвращает код `200 OK` ответа и [коллекцию contentType](../resources/contenttype.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -64,7 +64,7 @@ GET /sites/{siteId}/contentTypes/getCompatibleHubContentTypes
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta//sites/{siteId}/lists/{listId}/contentTypes/getCompatibleHubContentTypes
+GET https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/contentTypes/getCompatibleHubContentTypes
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-getcompatiblehubcontenttypes-csharp-snippets.md)]

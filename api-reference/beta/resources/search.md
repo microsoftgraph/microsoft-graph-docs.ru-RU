@@ -1,16 +1,16 @@
 ---
-title: Поиск
-description: Извлечение ресурса поиска, используемой для выполнения запросов
-localization_priority: Normal
+title: Тип ресурса поиска
+description: Объект верхнего уровня, представляющем конечную точку поиска в Microsoft Graph.
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 123d57b05950203434ac23fd85e9c29dfa41476d
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 034e1adec8d1bcee0336abdbeed2d980ee559964
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067098"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282050"
 ---
 # <a name="search-resource-type"></a>Тип ресурса поиска
 
@@ -18,15 +18,17 @@ ms.locfileid: "52067098"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс поиска — это объект верхнего уровня, представляющий конечную точку поиска. Он служит якорем для [действия запроса.](../api/search-query.md)
+Объект верхнего уровня, представляющем конечную точку поиска. Он служит якорем для [действия запроса](../api/search-query.md) .
 
-Этот ресурс не будет называться как таковой. Любой запрос на ресурс будет понести bad request.
+Этот ресурс не называется. Любой запрос, который вызывает этот ресурс, приведет к http-ответу `400 Bad Request` .
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="methods"></a>Методы
 
-Нет
+| Метод       | Возвращаемый тип | Описание |
+|:-------------|:------------|:------------|
+| [query](../api/search-query.md) | [коллекция searchResponse](searchresponse.md)| Запустите указанный поисковый запрос. |
 
 ## <a name="properties"></a>Свойства
 
@@ -34,13 +36,11 @@ ms.locfileid: "52067098"
 
 ## <a name="relationships"></a>Связи
 
-Нет
+Отсутствуют.
 
-## <a name="methods"></a>Методы
+## <a name="json-representation"></a>Представление в формате JSON
 
-| Метод       | Возвращаемый тип | Описание |
-|:-------------|:------------|:------------|
-| [query](../api/search-query.md) | [searchResponse](searchresponse.md)| Выполняет запрос, указанный в [searchRequest](../resources/searchrequest.md) |
+Нет.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

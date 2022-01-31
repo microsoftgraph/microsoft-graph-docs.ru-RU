@@ -1,16 +1,16 @@
 ---
 title: тип ресурса searchResponse
-description: Описание searchResponse
-localization_priority: Normal
+description: 'Представляет результаты запроса поиска и термины, используемые для запроса. '
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 5778d82c0c4718b9f34c686a613270eebfcc56e1
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 956bb2b38aefdf33f3c1b7096a2e599253e7e3af
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067091"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282153"
 ---
 # <a name="searchresponse-resource-type"></a>тип ресурса searchResponse
 
@@ -18,16 +18,18 @@ ms.locfileid: "52067091"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ответ из поискового запроса. 
+Представляет результаты запроса поиска и термины, используемые для запроса. 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
+|hitsContainers|[коллекция searchHitsContainer](searchhitscontainer.md)|Коллекция результатов поиска.|
+|searchTerms|Коллекция объектов string|Содержит термины поиска, отправленные в исходном запросе поиска.|
+|resultTemplates|[коллекция resultTemplate](resultTemplate.md)|Словарь resultTemplateIds и связанных с ними значений, которые включают имя и схему JSON шаблонов результатов.
 |queryAlterationResponse|[alterationResponse](alterationResponse.md)|Предоставляет сведения об ответе на изменение запросов для исправления правописания.|
-|значение|[коллекция searchResultSet](searchResultSet.md)|Представляет результаты запроса поиска и термины, используемые для запроса.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -43,7 +45,9 @@ ms.locfileid: "52067091"
 ```json
 {
   "queryAlterationResponse": {"@odata.type": "microsoft.graph.alterationResponse"},
-  "value": [{"@odata.type": "microsoft.graph.searchResultSet"}]
+  "hitsContainers": [{"@odata.type": "microsoft.graph.searchHitsContainer"}],
+  "searchTerms": ["String"],
+  "resultTemplates": [{"@odata.type":"microsoft.graph.resultTemplateDictionary"}]
 }
 ```
 

@@ -460,7 +460,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Примечания
+          - name: Заметки
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -560,7 +560,7 @@ items:
                 href: api/profile-get.md
               - name: Удаление профиля пользователя
                 href: api/profile-delete.md
-          - name: Командная работа
+          - name: Teamwork
             items:
               - name: Установленное приложение
                 href: resources/teamsappinstallation.md
@@ -12221,7 +12221,7 @@ items:
                         href: api/identityuserflowattribute-delete.md
                   - name: Назначение атрибута потока пользователей
                     items:
-                      - name: Пользователь
+                      - name: Пользователь.
                         href: resources/identityuserflowattributeassignment.md
                       - name: Получение
                         href: api/identityuserflowattributeassignment-get.md
@@ -12610,7 +12610,7 @@ items:
                         href: api/entitlementmanagementsettings-update.md
               - name: Служба Privileged Identity Management
                 items:
-                  - name: Управление привилегированными пользователями
+                  - name: Служба Privileged Identity Management
                     href: resources/privilegedidentitymanagement-root.md
                   - name: Azure AD (неподготовленная))
                     items:
@@ -12827,6 +12827,26 @@ items:
                 href: api/outlookcategory-update.md
               - name: Удаление категории
                 href: api/outlookcategory-delete.md
+          - name: Расширенные свойства
+            items:
+              - name: Обзор
+                href: resources/extended-properties-overview.md
+              - name: Однозначные расширенные свойства
+                items:
+                  - name: Однозначное расширенное свойство
+                    href: resources/singlevaluelegacyextendedproperty.md
+                  - name: Создание однозначного свойства
+                    href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+                  - name: Получение однозначного свойства
+                    href: api/singlevaluelegacyextendedproperty-get.md
+              - name: Расширенные свойства с несколькими значениями
+                items:
+                  - name: Многозначное расширенное свойство
+                    href: resources/multivaluelegacyextendedproperty.md
+                  - name: Создание многозначного свойства
+                    href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
+                  - name: Получение многозначного свойства
+                    href: api/multivaluelegacyextendedproperty-get.md
           - name: Сортировка почты
             href: resources/manage-focused-inbox.md
             items:
@@ -12897,26 +12917,6 @@ items:
                 href: api/messagerule-update.md
               - name: Удаление правила
                 href: api/messagerule-delete.md
-          - name: Расширенные свойства
-            items:
-              - name: Обзор
-                href: resources/extended-properties-overview.md
-              - name: Однозначные расширенные свойства
-                items:
-                  - name: Однозначное расширенное свойство
-                    href: resources/singlevaluelegacyextendedproperty.md
-                  - name: Создание однозначного свойства
-                    href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-                  - name: Получение однозначного свойства
-                    href: api/singlevaluelegacyextendedproperty-get.md
-              - name: Расширенные свойства с несколькими значениями
-                items:
-                  - name: Многозначное расширенное свойство
-                    href: resources/multivaluelegacyextendedproperty.md
-                  - name: Создание многозначного свойства
-                    href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
-                  - name: Получение многозначного свойства
-                    href: api/multivaluelegacyextendedproperty-get.md
       - name: Примечания
         displayName: OneNote
         items:
@@ -13059,7 +13059,7 @@ items:
                     href: api/useraccountinformation-update.md
                   - name: Delete
                     href: api/useraccountinformation-delete.md
-              - name: Адреса
+              - name: Addresses
                 items:
                   - name: Адрес элемента
                     href: resources/itemaddress.md
@@ -13185,7 +13185,7 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: Примечания
+              - name: Заметки
                 items:
                   - name: Аннотация для человека
                     href: resources/personannotation.md
@@ -14121,26 +14121,26 @@ items:
                 href: api/contenttype-update.md
               - name: Delete
                 href: api/contenttype-delete.md
+              - name: Добавление копии в список
+                href: api/contenttype-addcopy.md
+              - name: Добавление или синхронизация из концентратора
+                href: api/contenttype-addcopyfromcontenttypehub.md
+              - name: Связывать с узлами концентратора
+                href: api/contenttype-associatewithhubsites.md
               - name: Проверка состояния публикации
                 href: api/contenttype-ispublished.md
+              - name: Копирование в расположение контента по умолчанию
+                href: api/contenttype-copytodefaultcontentlocation.md
+              - name: Создание столбца
+                href: api/contenttype-post-columns.md
+              - name: Получить совместимое из концентратора
+                href: api/contenttype-getcompatiblehubcontenttypes.md
+              - name: Перечисление столбцов
+                href: api/contenttype-list-columns.md
               - name: Публикация
                 href: api/contenttype-publish.md
               - name: Отмена публикации
                 href: api/contenttype-unpublish.md
-              - name: Добавление копии в список
-                href: api/contenttype-addcopy.md
-              - name: Связывать с узлами концентратора
-                href: api/contenttype-associatewithhubsites.md
-              - name: Копирование в расположение контента по умолчанию
-                href: api/contenttype-copytodefaultcontentlocation.md
-              - name: Перечисление столбцов
-                href: api/contenttype-list-columns.md
-              - name: Создание столбца
-                href: api/contenttype-post-columns.md
-              - name: Получить совместимые концентраторы
-                href: api/contenttype-getcompatiblehubcontenttypes.md
-              - name: Добавление копии из концентраторов
-                href: api/contenttype-addcopyfromcontenttypehub.md
           - name: Элементы списка
             items:
               - name: Элемент списка
@@ -14155,28 +14155,38 @@ items:
                 href: api/listitem-update.md
               - name: Удаление элемента
                 href: api/listitem-delete.md
-              - name: Список версий
-                href: api/listitem-list-versions.md
-              - name: Получение аналитических данных об элементе
-                href: api/itemanalytics-get.md
-              - name: Получение действий по интервалу
-                href: api/itemactivity-getbyinterval.md
               - name: Создание ссылки совместного доступа
                 href: api/listitem-createlink.md
+              - name: Получение действий по интервалу
+                href: api/itemactivity-getbyinterval.md
+              - name: Получение аналитических данных об элементе
+                href: api/itemanalytics-get.md
+              - name: Список версий
+                href: api/listitem-list-versions.md
           - name: Страницы
             items:
               - name: Страница сайта
                 href: resources/sitepage.md
               - name: Список
                 href: api/sitepage-list.md
-              - name: Получение
-                href: api/sitepage-get.md
               - name: Создание
                 href: api/sitepage-create.md
-              - name: Удалить
+              - name: Получение
+                href: api/sitepage-get.md
+              - name: Удаление
                 href: api/sitepage-delete.md
               - name: Публикация
                 href: api/sitepage-publish.md
+          - name: Богатая долгосрочная операция
+            items:
+              - name: Богатая долгосрочная операция
+                href: resources/richLongRunningOperation.md
+              - name: Список операций на сайте
+                href: api/site-list-operations.md
+              - name: Список операций в списке
+                href: api/list-list-operations.md
+              - name: Получить операцию
+                href: api/richlongrunningoperation-get.md
           - name: Таксономия
             displayname: Taxonomy API
             items:
@@ -14213,7 +14223,7 @@ items:
                     href: api/termstore-set-update.md
                   - name: Delete
                     href: api/termstore-set-delete.md
-              - name: Term
+              - name: Термин
                 href: resources/termstore-term.md
                 items:
                   - name: Список дочерних элементов
@@ -14233,18 +14243,12 @@ items:
                     href: api/termStore-term-list-relations.md
                   - name: Создание
                     href: api/termStore-relation-post.md
-          - name: Богатая долгосрочная операция
-            items:
-              - name: Богатая долгосрочная операция
-                href: resources/richLongRunningOperation.md
-              - name: Получение
-                href: api/richlongrunningoperation-get.md
       - name: Задачи и планы
         displayName: Planner
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -14593,7 +14597,7 @@ items:
                 href: api/teamworktagmember-get.md
               - name: Удаление участника
                 href: api/teamworktagmember-delete.md
-          - name: Приложение
+          - name: Приложение.
             items:
               - name: Приложение в каталоге
                 href: resources/teamsapp.md
@@ -14654,7 +14658,7 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: Удаление приложения из чата
                     href: api/chat-delete-installedapps.md
-          - name: Устройство
+          - name: Устройство.
             items:
               - name: Подготовка устройств
                 href: resources/teamworkdevice.md

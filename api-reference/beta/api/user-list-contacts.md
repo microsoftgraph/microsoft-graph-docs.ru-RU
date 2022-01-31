@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f99e9a204e3db2703d7e1126a78dba6baae9cb1c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9c5161a610854fcd85ad1d1bce6c6eda843f1f64
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130640"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282177"
 ---
 # <a name="list-contacts"></a>Список контактов
 
@@ -37,7 +37,7 @@ ms.locfileid: "62130640"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Для получения всех контактов в почтовом ящике пользователя:
+Чтобы получить все контакты в папке контактов пользователя по умолчанию:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -72,12 +72,12 @@ GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` коллекцию контактных объектов в [](../resources/contact.md) тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [коллекцию](../resources/contact.md) контактных объектов в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 В следующем примере отображаются **свойства displayName** и **emailAddresses** контактов подписанного пользователя.

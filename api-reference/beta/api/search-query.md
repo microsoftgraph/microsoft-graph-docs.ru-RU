@@ -1,16 +1,16 @@
 ---
 title: 'объект поиска: запрос'
-description: Выполняет запрос, указанный в теле запроса. Результаты поиска предоставляются в ответе
+description: Запустите указанный поисковый запрос. Результаты поиска предоставляются в ответе.
 ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 29414d21d939e5ac9280df9c6641a293d77eab90
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 398ae83ba928f81a22688b39b9399e08c1f4066b
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031996"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282179"
 ---
 # <a name="searchentity-query"></a>объект поиска: запрос
 
@@ -18,7 +18,7 @@ ms.locfileid: "61031996"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Выполняет запрос, указанный в теле запроса. Результаты поиска предоставляются в ответе.
+Запустите указанный поисковый запрос. Результаты поиска предоставляются в ответе.
 
 [!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
@@ -52,11 +52,10 @@ POST /search/query
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
 |запросы|[коллекция searchRequest](../resources/searchrequest.md)|Коллекция из одного или более запросов поиска, каждый из которых отформатирован в BLOB JSON. Каждая blob JSON содержит типы ресурсов, ожидаемых в ответе, основные источники, параметры paging, запрашиваемого поля и фактический запрос поиска. <br> Будьте в курсе [известных ограничений](../resources/search-api-overview.md#known-limitations) на поиск определенных комбинаций типов сущностей, а также сортировку или агрегирование результатов поиска. |
-|queryAlterationOptions|[searchAlterationOptions](../resources/searchalterationoptions.md)|Параметры изменения запроса, отформатированные в blob JSON, который содержит два необязательных флага для коррекции орфографии. Необязательный параметр. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `HTTP 200 OK` [объект searchResponse](../resources/searchresponse.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `HTTP 200 OK` ответа и коллекцию объектов [searchResponse](../resources/searchresponse.md) в тексте отклика.
  
 
 ## <a name="examples"></a>Примеры
@@ -167,8 +166,8 @@ Content-type: application/json
 - Поиск [сообщений почты](/graph/search-concept-messages)
 - События [календаря поиска](/graph/search-concept-events)
 - Поисковый [запрос](/graph/search-concept-person)
-- Поиск контента в SharePoint и OneDrive[(файлы, списки и сайты)](/graph/search-concept-files)
-- Пользовательские [типы поиска (Graph соединители)](/graph/search-concept-custom-types) данных
+- Поиск контента в SharePoint и OneDrive ([файлы, списки и сайты](/graph/search-concept-files))
+- [Пользовательские типы поиска (Graph соединители)](/graph/search-concept-custom-types) данных
 - [Сортировка](/graph/search-concept-sort) результатов поиска
 - Использование [агрегаций для](/graph/search-concept-aggregations) уточнения результатов поиска
 - Включить [исправления орфографии](/graph/search-concept-speller) в результатах поиска

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 0a74f5db7c98cf5f6ec96d1fbddb5908f28ccea5
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 4e8cbb2e5dbf87eb34decbf3ec5161477cbd2cf1
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072852"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282161"
 ---
 # <a name="cloudpcorganizationsettings-resource-type"></a>тип ресурса cloudPcOrganizationSettings
 
@@ -18,20 +18,20 @@ ms.locfileid: "62072852"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет параметры организации облачных ПК для клиента. У клиента есть только один **объект cloudPcOrganizationSettings.**
+Представляет параметры организации облачных ПК для клиента. У клиента есть только один **объект cloudPcOrganizationSettings** .
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Get cloudPcOrganizationSettings](../api/cloudpcorganizationsettings-get.md)|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md)|Ознакомьтесь с свойствами и отношениями объекта [cloudPcOrganizationSettings.](../resources/cloudpcorganizationsettings.md)|
-|[Обновление cloudPcOrganizationSettings](../api/cloudpcorganizationsettings-update.md)|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md)|Обновление свойств объекта [cloudPcOrganizationSettings.](../resources/cloudpcorganizationsettings.md)|
+|[Get cloudPcOrganizationSettings](../api/cloudpcorganizationsettings-get.md)|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md)|Ознакомьтесь с свойствами и отношениями объекта [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) .|
+|[Обновление cloudPcOrganizationSettings](../api/cloudpcorganizationsettings-update.md)|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md)|Обновление свойств объекта [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|ID параметров организации.|
-|osVersion|[cloudPcOperatingSystem](#cloudpcoperatingsystem-values)|Тип учетной записи пользователя на предварительных облачных компьютерах. Допустимые значения: `windows10`, `windows11`, `unknownFutureValue`.|
-|userAccountType|[cloudPcUserAccountType](#cloudpcuseraccounttype-values)|Версия операционной системы (ОС) для обеспечения на облачных ПК. Допустимые значения: `standardUser`, `administrator`, `unknownFutureValue`.|
+|osVersion|[cloudPcOperatingSystem](#cloudpcoperatingsystem-values)|Версия операционной системы (ОС) для обеспечения на облачных ПК. Допустимые значения: `windows10`, `windows11`, `unknownFutureValue`.|
+|userAccountType|[cloudPcUserAccountType](#cloudpcuseraccounttype-values)|Тип учетной записи пользователя на предварительных облачных компьютерах. Допустимые значения: `standardUser`, `administrator`, `unknownFutureValue`.|
 
 ### <a name="cloudpcoperatingsystem-values"></a>значения cloudPcOperatingSystem
 

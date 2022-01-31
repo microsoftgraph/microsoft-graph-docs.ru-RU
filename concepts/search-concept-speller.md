@@ -4,20 +4,20 @@ description: Вы можете использовать API Поиск (Майк
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: a16c1e0a69e202ca34c1c52c176a15c0b5da7e88
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c672af903811af716ae7c597bdc748974d24a1e2
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071730"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282186"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-request-spelling-correction-preview"></a>Используйте API Поиск (Майкрософт) в Microsoft Graph для запроса исправления орфографии (предварительный просмотр)
 
-Вы можете использовать API Поиск (Майкрософт) для запроса исправлений орфографии для обработки несоответствий между опечатками в запросах пользователей и правильными словами в содержимом. Чтобы запросить исправления орфографии, укажите следующие свойства в **свойстве requestAlterationOptions** тела запроса [метода](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) запроса:
+Вы можете использовать API Поиск (Майкрософт) для запроса исправлений орфографии для обработки несоответствий между опечатками в запросах пользователей и правильными словами в содержимом. Чтобы запросить исправления орфографии, укажите следующие свойства в **свойстве requestAlterationOptions** [в searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true):
 
-- **enableSuggestion** для включения и отключения предложений орфографии для запроса пользователя. Вы можете передать, чтобы получить рекомендуемые сведения об исправлении орфографии для `true` опечаток в запросе пользователя.
+- **enableSuggestion** для включения и отключения предложений орфографии для запроса пользователя. Вы можете передать, `true` чтобы получить рекомендуемые сведения об исправлении орфографии для опечаток в запросе пользователя.
 
-- **enableModification,** чтобы включить/отключить изменения орфографии для пользовательского запроса. Вы можете передать, чтобы получить результаты поиска для исправленного запроса, если нет результатов для исходного запроса с опечатки, и получить соответствующие `true` сведения о  исправлении.
+- **enableModification** , чтобы включить/отключить изменения орфографии для пользовательского запроса. Вы можете передать, `true` чтобы получить результаты поиска для исправленного запроса, если нет результатов для исходного запроса с опечатки, и получить соответствующие сведения о исправлении.
 
 Приоритет изменения орфографии выше, чем предложение орфографии, если они включены.
 
@@ -25,7 +25,7 @@ ms.locfileid: "59071730"
 
 ## <a name="example-1-request-spelling-suggestions"></a>Пример 1. Запрос предложений по написанию
 
-В следующем примере запрашиваются **ресурсы listItem,** содержащие строку "учетная запись", и запрашивается предложение орфографии для запроса.
+В следующем примере запрашиваются **ресурсы listItem** , содержащие строку "учетная запись", и запрашивается предложение орфографии для запроса.
 
 Ответ содержит [объекты alterationResponse](/graph/api/resources/alterationResponse?view=graph-rest-beta&preserve-view=true) для предложения орфографии.
 
@@ -45,13 +45,13 @@ Content-Type: application/json
                 "queryString": "accountt"
             },
             "from": 0,
-            "size": 25
+            "size": 25,
+            "queryAlterationOptions": {
+                "enableSuggestion": true,
+                "enableModification": false
+            }
         }
-    ],
-    "queryAlterationOptions": {
-        "enableSuggestion": true,
-        "enableModification": false
-    }
+    ]
 }
 ```
 
@@ -73,32 +73,32 @@ Content-type: application/json
                     "total": 0,
                     "moreResultsAvailable": false
                 }
-            ]
+            ],
+            "queryAlterationResponse": {
+                "@odata.type": "#microsoft.substrateSearch.alterationResponse",
+                "originalQueryString": "accountt",
+                "queryAlteration": {
+                    "@odata.type": "#microsoft.substrateSearch.searchAlteration",
+                    "alteredQueryString": "account",
+                    "alteredHighlightedQueryString": "account",
+                    "alteredQueryTokens": [
+                        {
+                            "offset": 0,
+                            "length": 8,
+                            "suggestion": "account"
+                        }
+                    ]
+                },
+                "queryAlterationType": "Suggestion"
+            }
         }
-    ],
-    "queryAlterationResponse": {
-        "@odata.type": "#microsoft.substrateSearch.alterationResponse",
-        "originalQueryString": "accountt",
-        "queryAlteration": {
-            "@odata.type": "#microsoft.substrateSearch.searchAlteration",
-            "alteredQueryString": "account",
-            "alteredHighlightedQueryString": "account",
-            "alteredQueryTokens": [
-                {
-                    "offset": 0,
-                    "length": 8,
-                    "suggestion": "account"
-                }
-            ]
-        },
-        "queryAlterationType": "Suggestion"
-    }
+    ]
 }
 ```
 
 ## <a name="example-2-request-spelling-modifications"></a>Пример 2. Запрос на изменения орфографии
 
-В следующем примере запрашиваются **ресурсы listItem,** содержащие строку "учетная запись", и запрашивается изменение орфографии для запроса.
+В следующем примере запрашиваются **ресурсы listItem** , содержащие строку "учетная запись", и запрашивается изменение орфографии для запроса.
 
 В этом примере нет результатов для исходного запроса с помощью опечатки "учетная запись". Ответ содержит результаты, связанные с исправленными объектами строки "учетная запись" и [объектами alterationResponse](/graph/api/resources/alterationResponse?view=graph-rest-beta&preserve-view=true) для изменения орфографии.
 
@@ -118,13 +118,13 @@ Content-Type: application/json
                 "queryString": "accountt"
             },
             "from": 0,
-            "size": 25
+            "size": 25,
+            "queryAlterationOptions": {
+                "enableSuggestion": true,
+                "enableModification": true
+            }
         }
-    ],
-    "queryAlterationOptions": {
-        "enableSuggestion": true,
-        "enableModification": true
-    }
+    ]
 }
 ```
 
@@ -180,32 +180,32 @@ Content-type: application/json
                         }
                     ]
                 }
-            ]
+            ],
+            "queryAlterationResponse": {
+                "@odata.type": "#microsoft.substrateSearch.alterationResponse",
+                "originalQueryString": "accountt",
+                "queryAlteration": {
+                    "@odata.type": "#microsoft.substrateSearch.searchAlteration",
+                    "alteredQueryString": "account",
+                    "alteredHighlightedQueryString": "account",
+                    "alteredQueryTokens": [
+                        {
+                            "offset": 0,
+                            "length": 8,
+                            "suggestion": "account"
+                        }
+                    ]
+                },
+                "queryAlterationType": "Modification"
+            }
         }
-    ],
-    "queryAlterationResponse": {
-        "@odata.type": "#microsoft.substrateSearch.alterationResponse",
-        "originalQueryString": "accountt",
-        "queryAlteration": {
-            "@odata.type": "#microsoft.substrateSearch.searchAlteration",
-            "alteredQueryString": "account",
-            "alteredHighlightedQueryString": "account",
-            "alteredQueryTokens": [
-                {
-                    "offset": 0,
-                    "length": 8,
-                    "suggestion": "account"
-                }
-            ]
-        },
-        "queryAlterationType": "Modification"
-    }
+    ]
 }
 ```
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-Исправление орфографии поддерживается только для следующих ресурсов: **сообщение,** **событие,** **сайт,** **диск**, **driveItem**, **список**, **listItem** и **externalItem**.
+Исправление орфографии поддерживается только для следующих ресурсов: **сообщения****, события****, сайта**, **диска**, **driveItem**, **списка**, **listItem** и **externalItem**.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

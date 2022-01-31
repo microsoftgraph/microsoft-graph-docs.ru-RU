@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 1b5cf1dd38a6d60e0211663330ebfd8d3f282c9a
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: d87e316200f2cc6fc1cc8632151361ede9d16a57
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61076924"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282018"
 ---
 # <a name="microsoft-graph-connectors-overview"></a>Соединители Microsoft Graph
 
@@ -39,5 +39,3 @@ ms.locfileid: "61076924"
 * [Работа с API соединителей](connecting-external-content-connectors-api-overview.md)
 * [Использование Postman с API соединителей Microsoft Graph](connecting-external-content-connectors-api-postman.md)
 * [Сборка вашего первого пользовательского соединителя Microsoft Graph](connecting-external-content-build-quickstart.yml)
---->
-
