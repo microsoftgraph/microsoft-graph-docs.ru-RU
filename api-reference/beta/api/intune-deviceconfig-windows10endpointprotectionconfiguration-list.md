@@ -2,15 +2,15 @@
 title: Перечисление объектов windows10EndpointProtectionConfiguration
 description: Перечисление свойств и связей объектов windows10EndpointProtectionConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f536b2d3d7c8274d30c68c29db3c787c5a41b892
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1878fbce7ebe7ca5829b62c2e66b56e0233b6ed5
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59088383"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62292104"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>Перечисление объектов windows10EndpointProtectionConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "59088383"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 34441
+Content-Length: 34448
 
 {
   "value": [
@@ -533,7 +533,7 @@ Content-Length: 34441
       "localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts": true,
       "localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares": true,
       "localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange": true,
-      "localSecurityOptionsSmartCardRemovalBehavior": "noAction",
+      "localSecurityOptionsSmartCardRemovalBehavior": "lockWorkstation",
       "defenderSecurityCenterDisableAppBrowserUI": true,
       "defenderSecurityCenterDisableFamilyUI": true,
       "defenderSecurityCenterDisableHealthUI": true,
@@ -817,6 +817,7 @@ Content-Length: 34441
   ]
 }
 ```
+
 
 
 

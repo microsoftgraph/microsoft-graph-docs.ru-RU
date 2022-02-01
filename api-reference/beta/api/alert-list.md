@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 026eb386beed8b9dc181d9734425f72e2a9719ce
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 116f965baa0e64b55c4b748378165b0004c98a15
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109981"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290772"
 ---
 # <a name="list-alerts"></a>Перечисление оповещений
 
@@ -53,7 +53,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 - `$top` – Возвращает объединенные лучшие результаты от каждого поставщика API безопасности.
 - `$filter`
 
-В таблице ниже перечислены ключевые слова `$filter` по именам поставщиков. Несмотря на то, что некоторые из этих продуктов поменяли название в ходе ребрендинга, API еще не обновлен. Ключевые слова фильтра будут продолжать использовать устаревшие названия до дальнейшего уведомления. Подробности см. в [журнале изменений](https://developer.microsoft.com/en-us/graph/changelog).
+В таблице ниже перечислены ключевые слова `$filter` по именам поставщиков. Несмотря на то, что некоторые из этих продуктов поменяли название в ходе ребрендинга, API еще не обновлен. Ключевые слова фильтра будут продолжать использовать устаревшие названия до дальнейшего уведомления. Подробности см. в [журнале изменений](https://developer.microsoft.com/graph/changelog).
 
 | Наименование поставщика      |ключевое слово $filter|
 |:----------|:----------|
@@ -75,7 +75,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 |:----------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода. Текст запроса будет игнорироваться.
 
@@ -127,7 +127,7 @@ GET https://graph.microsoft.com/beta/security/alerts
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

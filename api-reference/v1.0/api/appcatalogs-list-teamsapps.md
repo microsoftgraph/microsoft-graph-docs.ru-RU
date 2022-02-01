@@ -5,22 +5,22 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b64b01907e98ab7d52a18993c78ae274acf545ca
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 2ff4843b5f1f1a9a25fee26676b377f4bd489f00
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239360"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290485"
 ---
 # <a name="list-teamsapp"></a>List teamsApp
 
 Пространство имен: microsoft.graph
 
 Список [приложений](../resources/teamsapp.md) из Microsoft Teams приложения.
-Это включает приложения из Microsoft Teams магазина, а также приложения из каталога приложений организации (каталог приложений клиента). Чтобы получить приложения только из каталога приложений организации, укажите в запросе `organization` **рассылкуMethod.**
+Это включает приложения из Microsoft Teams магазина, а также приложения из каталога приложений организации (каталог приложений клиента). Чтобы получить приложения только из каталога приложений организации, укажите `organization` в запросе **рассылкуMethod** .
 
 > [!NOTE]
-> Ресурс `id` **teamsApp** создается на сервере и не является таким же, как указанный в манифесте `id` Teams приложения. Предоставленная разработчиком в рамках манифеста Teams приложения штампуется как ресурс `id` `externalId` **teamsApp.**
+> Ресурс `id` **teamsApp** создается `id` на сервере и не является таким же, как указанный в манифесте Teams приложения. Предоставленный `id` разработчиком в рамках манифеста Teams `externalId` приложения штампуется как ресурс **teamsApp**.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "62239360"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All,**Directory.Read.All, Directory.ReadWrite.All** |
+| Делегированные (рабочая или учебная учетная запись)     | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All **, Directory.ReadWrite.All** |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All |
 
@@ -46,9 +46,9 @@ GET /appCatalogs/teamsApps
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$filter`, `$select` и `$expand` для настройки отклика.
 
-Использование возвращает дополнительные сведения о состоянии приложения, например `$expand=AppDefinitions` **publishingState,** которое отражает состояние проверки отправки приложения и возвращает, было ли приложение утверждено, отклонено или остается в стадии рассмотрения. 
+Использование `$expand=AppDefinitions` возвращает дополнительные сведения о состоянии приложения, например **о публикацииState**, которое отражает состояние проверки отправки приложения и возвращает, было ли приложение утверждено, отклонено или остается в стадии рассмотрения. 
 
-> **Примечание:** Вы можете фильтровать любое из полей объекта [teamsApp,](../resources/teamsapp.md) чтобы сократить список результатов. Вы можете использовать любую из следующих операций фильтра: Равная, не равная, и, или, и нет.
+> **Примечание:** Вы можете фильтровать любое из полей объекта [teamsApp](../resources/teamsapp.md) , чтобы сократить список результатов. Вы можете использовать любую из следующих операций фильтра: Равная, не равная, и, или, и нет.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -62,7 +62,7 @@ GET /appCatalogs/teamsApps
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и список объектов `200 OK` [teamsApp](../resources/teamsapp.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и список объектов [teamsApp](../resources/teamsapp.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -221,7 +221,7 @@ Content-Type: application/json
 }-->
 
 ```msgraph-interactive
-GET  https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-filter-externalid-csharp-snippets.md)]
@@ -278,7 +278,7 @@ Content-Type: application/json
 
 ### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>Пример 4. Список приложений с заданным ИД и возвращение состояния проверки отправки
 
-В следующем примере перечислены приложения с заданным ID и расширены **приложенияDefinitions,** чтобы вернуть **publishingState,** что отражает состояние проверки отправки приложения. `Submitted` означает, что проверка находится в стадии ожидания, означает, что приложение было утверждено администратором, а значит, приложение было отклонено `published` `rejected` администратором.
+В следующем примере перечислены приложения с заданным ID и расширены **appDefinitions** , чтобы вернуть **publishingState**, отражающий состояние проверки отправки приложения. `Submitted` означает, что проверка находится в стадии ожидания, `published` означает, что приложение было утверждено администратором, `rejected` а значит, приложение было отклонено администратором.
 
 #### <a name="request"></a>Запрос
 
@@ -291,7 +291,7 @@ Content-Type: application/json
 }-->
 
 ```msgraph-interactive
-GET  https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id eq '876df28f-2e78-423b-94a5-44181bd0e225'&$expand=appDefinitions
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id eq '876df28f-2e78-423b-94a5-44181bd0e225'&$expand=appDefinitions
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-with-filter-expand-appdefinitions-csharp-snippets.md)]
@@ -373,7 +373,7 @@ Content-Type: application/json
 }-->
 
 ```msgraph-interactive
-GET  https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$expand=appDefinitions($expand=bot)&$filter=appDefinitions/any(a:a/bot ne null)
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$expand=appDefinitions($expand=bot)&$filter=appDefinitions/any(a:a/bot ne null)
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-with-bots-csharp-snippets.md)]

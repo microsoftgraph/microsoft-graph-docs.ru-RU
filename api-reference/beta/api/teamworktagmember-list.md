@@ -5,12 +5,12 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c1545ccb8ccfcb49f2213750ebd5e469f5ebb91c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 567e0757b800ab0b1686128fd103cdea273a99cf
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098540"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62289988"
 ---
 # <a name="list-members-in-a-teamworktag"></a>Список участников в командной работеTag
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "62098540"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|TeamworkTag.Read, TeamworkTag.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|TeamworkTag.Read.All, TeamworkTag.ReadWrite.All|
 
@@ -46,12 +46,12 @@ GET /teams/{team-Id}/tags/{teamworkTag-Id}/members
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [teamworkTagMember](../resources/teamworktagmember.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию объектов [teamworkTagMember](../resources/teamworktagmember.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

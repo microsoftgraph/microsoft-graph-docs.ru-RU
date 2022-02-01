@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 89bc2c14aff1d5fff71b8461dccecc8964624670
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: f6fac95e1e99fd4548668fb336f8d2661b399830
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61348503"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291017"
 ---
 # <a name="update-hardwareconfiguration"></a>Обновление оборудованияКонфигурация
 
@@ -20,7 +20,7 @@ ms.locfileid: "61348503"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [hardwareConfiguration.](../resources/intune-deviceconfig-hardwareconfiguration.md)
+Обновление свойств объекта [hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,32 +43,32 @@ PATCH /deviceManagement/hardwareConfigurations/{hardwareConfigurationId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для [объекта hardwareConfiguration.](../resources/intune-deviceconfig-hardwareconfiguration.md)
+В теле запроса поставляем представление JSON для [объекта hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md) .
 
-В следующей таблице показаны свойства, необходимые при создании [аппаратнойконфигурации.](../resources/intune-deviceconfig-hardwareconfiguration.md)
+В следующей таблице показаны свойства, необходимые при создании [аппаратнойконфигурации](../resources/intune-deviceconfig-hardwareconfiguration.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор конфигурации оборудования|
-|version|Int32|Версия конфигурации оборудования|
+|version|Int32|Версия конфигурации оборудования (например. 1, 2, 3 ...)|
 |displayName|String|Имя конфигурации оборудования|
-|description|Строка|Описание конфигурации оборудования|
+|description|String|Описание конфигурации оборудования|
 |createdDateTime|DateTimeOffset|Время создания конфигурации оборудования. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Время изменения конфигурации оборудования. Это свойство доступно только для чтения.|
 |fileName|String|Имя файла конфигурации оборудования|
 |configurationFileContent|Binary|Содержимое файла конфигурации оборудования|
-|hardwareConfigurationFormat|[hardwareConfigurationFormat](../resources/intune-deviceconfig-hardwareconfigurationformat.md)|Тип Oem конфигурации оборудования. Возможные значения: `dell`, `surface`, `surfaceDock`.|
+|hardwareConfigurationFormat|[hardwareConfigurationFormat](../resources/intune-deviceconfig-hardwareconfigurationformat.md)|Тип Oem конфигурации оборудования (например. DELL, HP, Surface и SurfaceDock). Возможные значения: `dell`, `surface`, `surfaceDock`.|
 |roleScopeTagIds|Коллекция String|Список ID-тегов области для конфигурации оборудования|
-|perDevicePasswordDisabled|Boolean|Значение, указывающее, отключен ли каждый devcive pasword|
+|perDevicePasswordDisabled|Логическое|Значение, указывающее, отключен ли каждый devcive pasword|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md) в тексте ответа.
+В случае успеха этот метод возвращает код `200 OK` отклика и обновленный объект [hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

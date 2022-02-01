@@ -8103,6 +8103,25 @@ items:
                         href: api/intune-notification-notificationmessagetemplate-sendtestmessage.md
                   - name: Параметры фирменной символики для шаблона уведомления
                     href: resources/intune-notification-notificationtemplatebrandingoptions.md
+                  - name: Гарантия Oem
+                    href: resources/intune-devices-oemwarranty.md
+                  - name: Сведения о гарантии Oem при посадке
+                    href: resources/intune-devices-oemwarrantyinformationonboarding.md
+                    items:
+                      - name: Список
+                        href: api/intune-devices-oemwarrantyinformationonboarding-list.md
+                      - name: Получение
+                        href: api/intune-devices-oemwarrantyinformationonboarding-get.md
+                      - name: Создание
+                        href: api/intune-devices-oemwarrantyinformationonboarding-create.md
+                      - name: Удалить
+                        href: api/intune-devices-oemwarrantyinformationonboarding-delete.md
+                      - name: Обновление
+                        href: api/intune-devices-oemwarrantyinformationonboarding-update.md
+                      - name: включить действие
+                        href: api/intune-devices-oemwarrantyinformationonboarding-enable.md
+                      - name: отключение действия
+                        href: api/intune-devices-oemwarrantyinformationonboarding-disable.md
                   - name: Право на обновление операционной системы
                     href: resources/intune-devices-operatingsystemupgradeeligibility.md
                   - name: Счетчик версии ОС
@@ -8718,6 +8737,23 @@ items:
                         href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-delete.md
                       - name: Обновление
                         href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-update.md
+                  - name: Аналитика пользовательских интерфейсов работает в любом месте производительности модели
+                    href: resources/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance.md
+                    items:
+                      - name: Список
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-list.md
+                      - name: Получение
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-get.md
+                      - name: Создание
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-create.md
+                      - name: Удалить
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-delete.md
+                      - name: Обновление
+                        href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-update.md
+                  - name: Предложение по гарантии
+                    href: resources/intune-devices-warrantyoffer.md
+                  - name: Тип гарантии
+                    href: resources/intune-devices-warrantytype.md
                   - name: Windows состояние продукта defender
                     href: resources/intune-devices-windowsdefenderproductstatus.md
                   - name: Результат действия "проверка Защитника Windows"
@@ -9432,7 +9468,7 @@ items:
                         href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                       - name: Обновление
                         href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
-                  - name: Identity
+                  - name: Удостоверение
                     href: resources/intune-rbac-identity.md
                   - name: Набор удостоверений
                     href: resources/intune-rbac-identityset.md
@@ -12610,7 +12646,7 @@ items:
                         href: api/entitlementmanagementsettings-update.md
               - name: Служба Privileged Identity Management
                 items:
-                  - name: Служба Privileged Identity Management
+                  - name: Управление привилегированными пользователями
                     href: resources/privilegedidentitymanagement-root.md
                   - name: Azure AD (неподготовленная))
                     items:
@@ -14248,7 +14284,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -14658,7 +14694,7 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: Удаление приложения из чата
                     href: api/chat-delete-installedapps.md
-          - name: Устройство.
+          - name: Устройство
             items:
               - name: Подготовка устройств
                 href: resources/teamworkdevice.md

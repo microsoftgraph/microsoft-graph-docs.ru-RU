@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 55d887d3902a7d3da980f81af63439b48f2d54b5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a6aee0fe6ca37337be452a8b701c9ba43c367e03
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987180"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291459"
 ---
 # <a name="cloudpconpremisesconnection-runhealthchecks"></a>CloudPcOnPremisesConnection: runHealthChecks
 
@@ -18,7 +18,7 @@ ms.locfileid: "60987180"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Запустите проверки состояния [на объекте cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
+Запустите проверки состояния [на объекте cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
 
 Это вызовет новую проверку состояния для этого [объекта cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) и изменит свойства healthCheckStatus и [healthCheckStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md) по завершению проверки.
 
@@ -98,7 +98,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremise
 
 ### <a name="response"></a>Отклик
 
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

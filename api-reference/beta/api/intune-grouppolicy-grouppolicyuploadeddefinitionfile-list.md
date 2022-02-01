@@ -2,15 +2,15 @@
 title: List groupPolicyUploadedDefinitionFiles
 description: Список свойств и связей объектов groupPolicyUploadedDefinitionFile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc0366e083e9bbc8d1fb327284f403aad225c54a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c79c58ab0014d40ce7411c7389d60ab58b1eafdf
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041852"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62289869"
 ---
 # <a name="list-grouppolicyuploadeddefinitionfiles"></a>List groupPolicyUploadedDefinitionFiles
 
@@ -20,7 +20,7 @@ ms.locfileid: "59041852"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей [объектов groupPolicyUploadedDefinitionFile.](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md)
+Список свойств и связей [объектов groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "59041852"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -50,7 +50,7 @@ GET /deviceManagement/groupPolicyUploadedDefinitionFiles
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и коллекцию объектов [groupPolicyUploadedDefinitionFile](../resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -80,9 +80,9 @@ Content-Length: 1176
       "targetNamespace": "Target Namespace value",
       "policyType": "admxIngested",
       "revision": "Revision value",
+      "fileName": "File Name value",
       "id": "0ce1a8cf-a8cf-0ce1-cfa8-e10ccfa8e10c",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "fileName": "File Name value",
       "status": "uploadInProgress",
       "content": "Y29udGVudA==",
       "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00",
@@ -101,6 +101,7 @@ Content-Length: 1176
   ]
 }
 ```
+
 
 
 

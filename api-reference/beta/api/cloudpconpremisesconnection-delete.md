@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: d020b4babd2b43012cc3f02d7c0e382e2abb0216
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d0461962933e62edd82462ae0fe7e5ccd93e7161
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134111"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290709"
 ---
 # <a name="delete-cloudpconpremisesconnection"></a>Удаление cloudPcOnPremisesConnection
 
@@ -18,13 +18,13 @@ ms.locfileid: "62134111"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление определенного [объекта cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
+Удаление определенного [объекта cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
 
 При удалении подключения разрешения на службу удаляются из указанных ресурсов Azure.
 
-Локальное подключение невозможно удалить после того, как оно пройдет проверку состояния, которая указывается `healthCheckStatus` свойством.
+Локальное подключение невозможно удалить после того, как оно пройдет проверку состояния, которая указывается свойством `healthCheckStatus` .
 
-Нельзя удалить подключение, если оно используется, как указано в `inUse` свойстве.
+Нельзя удалить подключение, если оно используется, как указано в свойстве `inUse` .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -53,7 +53,7 @@ DELETE /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -105,7 +105,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremi
 
 ### <a name="response"></a>Отклик
 
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

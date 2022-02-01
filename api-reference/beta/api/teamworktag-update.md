@@ -5,26 +5,26 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: 16e743648ecca3db186ad7b223d67c57f215c1bd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 69b747f9ceb08ddac13381f983dda8b8fc95f72b
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122855"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291403"
 ---
 # <a name="update-teamworktag"></a>Обновление командной работы
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [teamworkTag.](../resources/teamworktag.md)
+Обновление свойств объекта [teamworkTag](../resources/teamworktag.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|TeamworkTag.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|TeamworkTag.ReadWrite.All|
 
@@ -44,18 +44,18 @@ PATCH /teams/{team-Id}/tags/{teamworkTag-Id}
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [teamworkTag.](../resources/teamworktag.md)
+## <a name="request-body"></a>Основной текст запроса
+В теле запроса поставляем представление JSON объекта [teamworkTag](../resources/teamworktag.md) .
 
-В следующей таблице показаны свойства, необходимые при обновлении [teamworkTag.](../resources/teamworktag.md)
+В следующей таблице показаны свойства, необходимые при обновлении [teamworkTag](../resources/teamworktag.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя тега. Значение не может быть больше 40 символов.|
+|displayName|String|Имя тега. Значение не может быть больше 40 символов.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и обновленный объект `200 OK` [teamworkTag](../resources/teamworktag.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и обновленный объект [teamworkTag](../resources/teamworktag.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

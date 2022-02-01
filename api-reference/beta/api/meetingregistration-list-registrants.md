@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4090d3ea94802d7e8835afc6b792f51d62f148c1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: eac4cbc1c60c206edd3490ea206cefd37eb4d3be
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019780"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291115"
 ---
 # <a name="list-registrants"></a>Регистраторы списков
 
@@ -20,7 +20,7 @@ ms.locfileid: "61019780"
 
 Получите список [собранийРегистранты](../resources/meetingregistrant.md) [onlineMeeting](../resources/onlinemeeting.md) от имени организатора.
 
-Этот метод можно использовать для получения отчета о регистрации для [веб-Microsoft Teams вебинара.](https://support.microsoft.com/en-us/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3)
+Этот метод можно использовать для получения отчета о регистрации для [веб-Microsoft Teams вебинара](https://support.microsoft.com/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -54,7 +54,7 @@ GET /me/onlineMeetings/{id}/registration/registrants
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию `200 OK` [объектов meetingRegistrant](../resources/meetingRegistrant.md) в тексте ответа. Свойства **joinWebUrl** и **questionId** будут `null` .
+В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию [объектов meetingRegistrant](../resources/meetingRegistrant.md) в тексте ответа. Свойства **joinWebUrl** и **questionId** будут `null`.
 
 ## <a name="example"></a>Пример
 

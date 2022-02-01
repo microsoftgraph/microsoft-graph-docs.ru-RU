@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20e4bc4fcdfc4ee3bcc493e7e2dc7670493fbdd0
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 24b07cc88a6e1a7cbb86db3a09bc21a1e2179c23
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336617"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291283"
 ---
 # <a name="devicemanagementconfigurationsettingapplicability-resource-type"></a>тип ресурса deviceManagementConfigurationSettingApplicability
 
@@ -25,8 +25,8 @@ ms.locfileid: "61336617"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|description|Строка|описание параметра|
-|платформа|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Параметр платформы можно применить. Возможные значения: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`.|
+|description|String|описание параметра|
+|платформа|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Параметр платформы можно применить. Возможные значения: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`.|
 |deviceMode|[deviceManagementConfigurationDeviceMode](../resources/intune-deviceconfigv2-devicemanagementconfigurationdevicemode.md)|Режим устройства, на который можно применить параметр. Возможные значения: `none`, `kiosk`.|
 |технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Какие технологические каналы этот параметр можно развернуть. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
 

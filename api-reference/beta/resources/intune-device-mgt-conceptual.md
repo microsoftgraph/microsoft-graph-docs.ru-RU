@@ -4,12 +4,12 @@ description: Списки microsoft Graph API для конечных точек
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 314e4fd73b9495946aa2c056f307463c741f8bb0
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 3abcb3af4e8f9fd5337be8ea5f08010016b6fe0d
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61342946"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62292041"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -174,6 +174,8 @@ ms.locfileid: "61342946"
 - [Состояние управления](intune-devices-managementstate.md)
 - [Шаблон сообщения уведомления](intune-notification-notificationmessagetemplate.md)
 - [Параметры фирменной символики для шаблона уведомления](intune-notification-notificationtemplatebrandingoptions.md)
+- [Гарантия Oem](intune-devices-oemwarranty.md)
+- [Сведения о гарантии Oem при посадке](intune-devices-oemwarrantyinformationonboarding.md)
 - [Право на обновление операционной системы](intune-devices-operatingsystemupgradeeligibility.md)
 - [Счетчик версии ОС](intune-devices-osversioncount.md)
 - [Тип платформы](intune-esim-platformtype.md)
@@ -252,6 +254,9 @@ ms.locfileid: "61342946"
 - [Аналитика пользовательских интерфейсов работает из любой сводки устройств](intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)
 - [Аналитика пользовательских интерфейсов работает из любой метрики готовности оборудования](intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric.md)
 - [Аналитика пользовательских интерфейсов работает из любой метрики](intune-devices-userexperienceanalyticsworkfromanywheremetric.md)
+- [Аналитика пользовательских интерфейсов работает в любом месте производительности модели](intune-devices-userexperienceanalyticsworkfromanywheremodelperformance.md)
+- [Предложение по гарантии](intune-devices-warrantyoffer.md)
+- [Тип гарантии](intune-devices-warrantytype.md)
 - [Windows состояние продукта defender](intune-devices-windowsdefenderproductstatus.md)
 - [Результат действия "Проверка с помощью Защитника Windows"](intune-devices-windowsdefenderscanactionresult.md)
 - [Учетная запись устройства с Windows](intune-devices-windowsdeviceaccount.md)

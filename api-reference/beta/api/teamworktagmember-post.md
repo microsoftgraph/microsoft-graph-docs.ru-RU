@@ -5,12 +5,12 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 21aee21f6666cabd60b9d486288f1d0d90bf933f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e967d5acd148da3e597777f07615c1aa87c6ecc5
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118081"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290625"
 ---
 # <a name="create-teamworktagmember"></a>Создание командной работыTagMember
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "62118081"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|TeamworkTag.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|TeamworkTag.ReadWrite.All|
 
@@ -44,10 +44,10 @@ POST /teams/{team-Id}/tags/{teamworkTag-Id}/members
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [teamworkTagMember.](../resources/teamworktagmember.md)
+## <a name="request-body"></a>Основной текст запроса
+В теле запроса поставляем представление JSON объекта [teamworkTagMember](../resources/teamworktagmember.md) .
 
-В следующей таблице показаны свойства, необходимые при создании [командной работыTagMember.](../resources/teamworktagmember.md)
+В следующей таблице показаны свойства, необходимые при создании [командной работыTagMember](../resources/teamworktagmember.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -57,7 +57,7 @@ POST /teams/{team-Id}/tags/{teamworkTag-Id}/members
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект teamworkTagMember](../resources/teamworktagmember.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` отклика и [объект teamworkTagMember](../resources/teamworktagmember.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

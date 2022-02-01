@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса internetMessageHeader
-description: 'Пара "ключ-значение", которая представляет заглавный текст сообщения Интернета, определенный в RFC5322, который предоставляет '
-localization_priority: Normal
+description: 'Пара значений ключа, которая представляет заглавную статью интернет-сообщений, определяемую RFC5322, которая обеспечивает '
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
 author: abheek-das
-ms.openlocfilehash: 687465656844722a04c94549c4d8e6f90156f4f4
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.prod: outlook
+ms.openlocfilehash: 5c17023185261b86a53eb87eccc5fce8be8df1d1
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130531"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291171"
 ---
 # <a name="internetmessageheader-resource-type"></a>Тип ресурса internetMessageHeader
 
@@ -20,7 +20,7 @@ ms.locfileid: "50130531"
 
 Пара "ключ-значение", представляющая заголовок сообщения Интернета, как определено в документе [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), где приводятся сведения о сетевом пути, по которому сообщение доставляется от отправителя получателю.
 
-С примерами заголовков сообщения Интернета можно ознакомиться в статье [Просмотр заголовков сообщений Интернета](https://support.office.com/en-us/article/View-e-mail-message-headers-CD039382-DC6E-4264-AC74-C048563D212C#bm4).
+С примерами заголовков сообщения Интернета можно ознакомиться в статье [Просмотр заголовков сообщений Интернета](https://support.office.com/article/View-e-mail-message-headers-CD039382-DC6E-4264-AC74-C048563D212C#bm4).
 
 
 ## <a name="properties"></a>Свойства
@@ -29,7 +29,7 @@ ms.locfileid: "50130531"
 |name|string|Представляет ключ в паре "ключ-значение".|
 |value|string|Представляет значение в паре "ключ-значение".|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

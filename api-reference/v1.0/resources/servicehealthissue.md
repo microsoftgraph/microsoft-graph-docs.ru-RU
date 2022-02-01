@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 7a005605a2994b21e21aa638e554bd8d24327b6a
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 73b7abd734004f70c55947937fee1e0458b4a5cb
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072560"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62289862"
 ---
 # <a name="servicehealthissue-resource-type"></a>тип ресурса serviceHealthIssue
 
@@ -18,36 +18,36 @@ ms.locfileid: "62072560"
 
 Представляет проблему со здоровьем службы в службе.
 
-Проблема со здоровьем службы может быть инцидентом службы или консультацией по обслуживанию. Например:
+Проблема со здоровьем службы может быть инцидентом службы или консультацией по обслуживанию. Например.
 
 * Инцидент службы: "Exchange службы почтовых ящиков не существует".
 * Рекомендации по обслуживанию: "Пользователи могут испытывать задержки в приеме сообщений электронной почты".
 
-Наследует от [serviceAnnouncementBase](../resources/serviceannouncementbase.md).
+Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Get serviceHealthIssue](../api/servicehealthissue-get.md)|[serviceHealthIssue](../resources/servicehealthissue.md)|Извлечение свойств и связей объекта [serviceHealthIssue.](../resources/servicehealthissue.md) |
+|[Get serviceHealthIssue](../api/servicehealthissue-get.md)|[serviceHealthIssue](../resources/servicehealthissue.md)|Извлечение свойств и связей объекта [serviceHealthIssue](../resources/servicehealthissue.md) . |
 |[Получить отчет о проверке после инцидента](../api/servicehealthissue-incidentreport.md)|Stream|Предоставляет отчет о происшествии после публикации (PIR) для указанной проблемы службы для клиента. |
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |classification|serviceHealthClassificationType|Тип проблемы со здоровьем службы. Возможные значения: `advisory`, `incident`, `unknownFutureValue`.|
-|details|[Коллекция(keyValuePair)](../resources/keyvaluepair.md)|Дополнительные сведения о проблеме со здоровьем службы. Это свойство не поддерживает фильтры. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
+|details|Коллекция ([keyValuePair](../resources/keyvaluepair.md))|Дополнительные сведения о проблеме со здоровьем службы. Это свойство не поддерживает фильтры. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |endDateTime|DateTimeOffset|Время окончания проблемы службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|функция|Строка|Имя функции проблемы службы.|
-|featureGroup|Строка|Имя группы функций проблемы службы.|
-|id|Строка|Id проблемы службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|impactDescription|Строка|Описание влияния проблемы службы.|
+|функция|String|Имя функции проблемы службы.|
+|featureGroup|String|Имя группы функций проблемы службы.|
+|id|String|Id проблемы службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
+|impactDescription|String|Описание влияния проблемы службы.|
 |isResolved|Логическое|Указывает, устранена ли проблема.|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время проблемы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |происхождение|serviceHealthOrigin|Указывает происхождение проблемы службы. Возможные значения: `microsoft`, `thirdParty`, `customer`, `unknownFutureValue`.|
-|posts|[Collection(serviceHealthIssuePost)](../resources/servicehealthissuepost.md)|Коллекция исторических сообщений для проблемы службы.|
+|posts|Collection([serviceHealthIssuePost](../resources/servicehealthissuepost.md))|Коллекция исторических сообщений для проблемы службы.|
 |service|String|Указывает службу, затрагиваемую проблемой.|
 |startDateTime|DateTimeOffset|Время начала выпуска службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|status|serviceHealthStatus|Состояние проблемы службы. Возможные значения: `serviceOperational` `investigating` , , , , `restoringService` , `verifyingService` , `serviceRestored` `postIncidentReviewPublished` `serviceDegradation` , `serviceInterruption` `extendedRecovery` `falsePositive` `investigationSuspended` `resolved` `mitigatedExternal` `mitigated` `resolvedExternal` `confirmed` `reported` `unknownFutureValue` . Дополнительные сведения см. в [таблице ниже](#servicehealthstatus-values).|
+|status|serviceHealthStatus|Состояние проблемы службы. Возможные значения: `serviceOperational`, `investigating`, `restoringService`, `verifyingService`, `serviceDegradation``serviceRestored``postIncidentReviewPublished`, `serviceInterruption`, `falsePositive``mitigated``resolved``investigationSuspended``extendedRecovery``resolvedExternal``confirmed``mitigatedExternal`, . `unknownFutureValue``reported` Дополнительные сведения см. в [таблице ниже](#servicehealthstatus-values).|
 |title|String|Название проблемы службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 
 ### <a name="servicehealthstatus-values"></a>значения serviceHealthStatus
@@ -64,12 +64,12 @@ ms.locfileid: "62072560"
 |extendedRecovery|Этот статус указывает на то, что для восстановления службы для большинства пользователей в настоящее время принимаются меры по исправлению положения, но для охвата всех затронутых систем необходимо некоторое время. Вы также можете увидеть этот статус, если будет сделано временное исправление, чтобы уменьшить влияние, пока постоянное исправление будет применено.|
 |falsePositive|После подробного исследования служба будет подтверждена, что она будет работать в штатном режиме. Не обнаружено влияния на службу или причина инцидента находится за пределами службы. Инциденты и предупреждения с таким состоянием отображаются в представлении истории до истечения срока их действия (по истечении периода времени, определенного в последнем сообщении для этого события).|
 |investigationSuspended|Если наше подробное исследование потенциальной проблемы приводит к запросу дополнительных сведений от клиентов, чтобы позволить группе службы исследовать далее, вы увидите этот статус. Если группе служб нужно действовать, они будут знать, какие данные или журналы им нужны.|
-|resolved|Состояние службы Windows, соответствующее восстановленной службе.|
-|mitigatedExternal|Состояние Windows службы, соответствующее восстановлению службы.|
-|смягчение|Состояние Windows службы, соответствующее расширенному восстановлению.|
-|resolvedExternal|Состояние Windows службы, соответствующее расследованию, приостановлено.|
-|подтверждено|Состояние Windows службы, соответствующее прерывании службы.|
-|сообщается|Состояние Windows службы, соответствующее исследованию.|
+|resolved|Зарезервировано для последующего использования.|
+|mitigatedExternal|Зарезервировано для последующего использования.|
+|смягчение|Зарезервировано для последующего использования.|
+|resolvedExternal|Зарезервировано для последующего использования.|
+|подтверждено|Зарезервировано для последующего использования.|
+|сообщается|Зарезервировано для последующего использования.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

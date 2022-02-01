@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d87cdcb43c6afc69a88e22453f87b3519e2ee99
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 58587bc9d72da826703e4c9dfcd58f70acc2900a
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336463"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290765"
 ---
 # <a name="summarizedeviceperformancedevices-function"></a>summarizeDevicePerformanceDevices function
 
@@ -43,7 +43,7 @@ GET /deviceManagement/userExperienceAnalyticsDevicePerformance/summarizeDevicePe
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,7 +57,7 @@ GET /deviceManagement/userExperienceAnalyticsDevicePerformance/summarizeDevicePe
 
 
 ## <a name="response"></a>Ответ
-В случае успешной работы эта функция возвращает код отклика и `200 OK` [коллекцию userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) в тексте ответа.
+В случае успешной `200 OK` работы эта функция возвращает код отклика и [коллекцию userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -82,7 +82,7 @@ Content-Length: 909
       "deviceName": "Device Name value",
       "model": "Model value",
       "manufacturer": "Manufacturer value",
-      "diskType": "hdd",
+      "diskType": "ssd",
       "operatingSystemVersion": "Operating System Version value",
       "bootScore": 9,
       "coreBootTimeInMs": 0,

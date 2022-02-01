@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ea5f7691752c5a8776ac003770ccb1d5f1a3669
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: ce07d88b0f780dd4673f89ab8c70577acd7d1d68
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61344073"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290758"
 ---
 # <a name="get-userexperienceanalyticsmodelscores"></a>Get userExperienceAnalyticsModelScores
 
@@ -20,7 +20,7 @@ ms.locfileid: "61344073"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей [объекта userExperienceAnalyticsModelScores.](../resources/intune-devices-userexperienceanalyticsmodelscores.md)
+Чтение свойств и связей [объекта userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,14 +46,14 @@ GET /deviceManagement/userExperienceAnalyticsModelScores/{userExperienceAnalytic
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и `200 OK` [объект userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) в тексте ответа.
+В случае успеха этот метод возвращает код `200 OK` отклика и [объект userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsMod
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 437
+Content-Length: 472
 
 {
   "value": {
@@ -80,6 +80,7 @@ Content-Length: 437
     "endpointAnalyticsScore": 7.333333333333333,
     "startupPerformanceScore": 7.666666666666667,
     "appReliabilityScore": 6.333333333333333,
+    "workFromAnywhereScore": 7.0,
     "healthStatus": "insufficientData"
   }
 }

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8cbb5c4596e6e6aa906dfeb51be9eae20b85a64
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 9652cef38435ee3ecbe2afe3af80171c04ab43d2
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61347188"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290450"
 ---
 # <a name="get-userexperienceanalyticsbatteryhealthcapacitydetails"></a>Get userExperienceAnalyticsBatteryHealthCapacityDetails
 
@@ -20,7 +20,7 @@ ms.locfileid: "61347188"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ознакомьтесь с свойствами и отношениями [объекта userExperienceAnalyticsBatteryHealthCapacityDetails.](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md)
+Ознакомьтесь с свойствами и отношениями [объекта userExperienceAnalyticsBatteryHealthCapacityDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,14 +46,14 @@ GET /deviceManagement/userExperienceAnalyticsBatteryHealthCapacityDetails
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и `200 OK` [объект userExperienceAnalyticsBatteryHealthCapacityDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md) в тексте ответа.
+В случае успеха этот `200 OK` метод возвращает код отклика и [объект userExperienceAnalyticsBatteryHealthCapacityDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 284
+Content-Length: 351
 
 {
   "value": {
@@ -77,7 +77,8 @@ Content-Length: 284
     "activeDevices": 13,
     "batteryCapacityGood": 3,
     "batteryCapacityFair": 3,
-    "batteryCapacityPoor": 3
+    "batteryCapacityPoor": 3,
+    "lastRefreshedDateTime": "2017-01-01T00:02:37.7100903-08:00"
   }
 }
 ```

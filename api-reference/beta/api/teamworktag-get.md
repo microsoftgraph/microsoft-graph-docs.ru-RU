@@ -5,26 +5,26 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: 0c2cba0986213edda69b6668b2cfc6d01ba586b8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3ef00a4b1dc602c4ae9f9acad472873345c9c65c
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129372"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290639"
 ---
 # <a name="get-teamworktag"></a>Командная работа
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями объекта [тегов.](../resources/teamworktag.md)
+Ознакомьтесь с свойствами и отношениями объекта [тегов](../resources/teamworktag.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|TeamworkTag.Read, TeamworkTag.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|TeamworkTag.Read.All, TeamworkTag.ReadWrite.All|
 
@@ -46,12 +46,12 @@ GET /teams/{team-Id}/tags/{teamworkTag-Id}
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [teamworkTag](../resources/teamworktag.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и объект [teamworkTag](../resources/teamworktag.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

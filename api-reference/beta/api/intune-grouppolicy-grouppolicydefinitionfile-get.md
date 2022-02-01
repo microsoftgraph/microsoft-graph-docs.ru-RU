@@ -2,15 +2,15 @@
 title: Get groupPolicyDefinitionFile
 description: Чтение свойств и связей объекта groupPolicyDefinitionFile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d9b6f9d192ea959a6a4e4a369711e4b3e564a79
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a8b0ea99e67c455a8ab81510ed8de5fefdffe28f
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59124744"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291206"
 ---
 # <a name="get-grouppolicydefinitionfile"></a>Get groupPolicyDefinitionFile
 
@@ -20,7 +20,7 @@ ms.locfileid: "59124744"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [groupPolicyDefinitionFile.](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)
+Чтение свойств и связей объекта [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "59124744"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,7 +55,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitionFiles
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 514
+Content-Length: 550
 
 {
   "value": {
@@ -84,11 +84,13 @@ Content-Length: 514
     "targetNamespace": "Target Namespace value",
     "policyType": "admxIngested",
     "revision": "Revision value",
+    "fileName": "File Name value",
     "id": "940aa2a1-a2a1-940a-a1a2-0a94a1a20a94",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
   }
 }
 ```
+
 
 
 

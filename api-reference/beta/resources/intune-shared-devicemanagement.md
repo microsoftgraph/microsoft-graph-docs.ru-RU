@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a06604a540ebe054d4a9a1c964b568c8210a1f29
-ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
+ms.openlocfilehash: 8a8f9b9ddfa16b05e7e9295e8e71649fddbb59e2
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2022
-ms.locfileid: "61711622"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290821"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -39,7 +39,7 @@ ms.locfileid: "61711622"
 - Удаленный доступ
 - Партнеры удаленной помощи
 - Политики управления доступом на основе ролей (RBAC)
-- Создание отчетов
+- Отчётность
 - Партнеры по управлению телекоммуникационными ресурсами
 - События устранения неполадок
 - Windows сводки по защите информации
@@ -67,7 +67,7 @@ ms.locfileid: "61711622"
 |id|String|Уникальный идентификатор, связанный с устройством.|
 |**Конфигурация устройств**|
 |intuneAccountId|Guid|ID учетной записи Intune для данного клиента|
-|legacyPcManangementEnabled|Логический|Свойство, чтобы включить для этой учетной записи управление устаревшим КОМПЬЮТЕРом без MDM. Это свойство доступно только для чтения.|
+|legacyPcManangementEnabled|Логическое|Свойство, чтобы включить для этой учетной записи управление устаревшим КОМПЬЮТЕРом без MDM. Это свойство доступно только для чтения.|
 |maximumDepTokens|Int32|Максимальное количество маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
@@ -146,7 +146,6 @@ ms.locfileid: "61711622"
 |userExperienceAnalyticsDeviceStartupHistory|[коллекция userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userExperienceAnalyticsDeviceStartupHistory.md)|История запуска устройства для аналитики пользовательских интерфейсов|
 |userExperienceAnalyticsDeviceStartupProcesses|[коллекция userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcess.md)|Процессы запуска устройства для аналитики пользовательских интерфейсов|
 |userExperienceAnalyticsDeviceStartupProcessPerformance|[коллекция userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcessPerformance.md)|Производительность процесса запуска устройства для аналитики пользовательских интерфейсов|
-|userExperienceAnalyticsScoreHistory|[коллекция userExperienceAnalyticsScoreHistory](../resources/intune-devices-userExperienceAnalyticsScoreHistory.md)|История оценки результатов запуска устройства для аналитики пользовательских интерфейсов|
 |**Регистрация**|
 |depOnboardingSettings|[коллекция depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Это коллекция нескольких маркеров DEP для каждого клиента.|
 |importedDeviceIdentities|[importedDeviceIdentity collection](../resources/intune-enrollment-importeddeviceidentity.md)|Идентификаторы импортируемых устройств.|

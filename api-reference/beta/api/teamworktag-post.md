@@ -5,12 +5,12 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b54fecdf51a18354445dd207bbb0c4d6063cb54a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 71d4e6b91a46de223ac4fc1ff7ca5f81f1401a36
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62108075"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290905"
 ---
 # <a name="create-teamworktag"></a>Создание командной работы
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "62108075"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|TeamworkTag.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|TeamworkTag.ReadWrite.All|
 
@@ -44,21 +44,21 @@ POST /teams/{team-Id}/tags
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [teamworkTag.](../resources/teamworktag.md)
+## <a name="request-body"></a>Основной текст запроса
+В теле запроса поставляем представление JSON объекта [teamworkTag](../resources/teamworktag.md) .
 
-В следующей таблице показаны свойства, необходимые при создании [teamworkTag.](../resources/teamworktag.md)
+В следующей таблице показаны свойства, необходимые при создании [teamworkTag](../resources/teamworktag.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя тега. Значение не может быть больше 40 символов.|
+|displayName|String|Имя тега. Значение не может быть больше 40 символов.|
 |members| [коллекция teamworkTagMember](../resources/teamworktagmember.md) |Члены группы, добавленные в тег. Установите свойство идентификатора пользователя каждого участника. Количество участников не должно быть больше 25.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и объект `201 Created` [teamworkTag](../resources/teamworktag.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` отклика и объект [teamworkTag](../resources/teamworktag.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

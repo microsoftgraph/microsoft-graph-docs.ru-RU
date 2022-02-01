@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 97b4d40b7bd99b70a46f7d6c929ff2209ef1821d
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: e9ff99a24a02d579aa2d9056d2f019811aedcb4d
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345594"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291038"
 ---
 # <a name="create-hardwareconfiguration"></a>Создание hardwareConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "61345594"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового [объекта hardwareConfiguration.](../resources/intune-deviceconfig-hardwareconfiguration.md)
+Создание нового [объекта hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,7 +43,7 @@ POST /deviceManagement/hardwareConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,21 +54,21 @@ POST /deviceManagement/hardwareConfigurations
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор конфигурации оборудования|
-|version|Int32|Версия конфигурации оборудования|
+|version|Int32|Версия конфигурации оборудования (например. 1, 2, 3 ...)|
 |displayName|String|Имя конфигурации оборудования|
-|description|Строка|Описание конфигурации оборудования|
+|description|String|Описание конфигурации оборудования|
 |createdDateTime|DateTimeOffset|Время создания конфигурации оборудования. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Время изменения конфигурации оборудования. Это свойство доступно только для чтения.|
 |fileName|String|Имя файла конфигурации оборудования|
 |configurationFileContent|Binary|Содержимое файла конфигурации оборудования|
-|hardwareConfigurationFormat|[hardwareConfigurationFormat](../resources/intune-deviceconfig-hardwareconfigurationformat.md)|Тип Oem конфигурации оборудования. Возможные значения: `dell`, `surface`, `surfaceDock`.|
+|hardwareConfigurationFormat|[hardwareConfigurationFormat](../resources/intune-deviceconfig-hardwareconfigurationformat.md)|Тип Oem конфигурации оборудования (например. DELL, HP, Surface и SurfaceDock). Возможные значения: `dell`, `surface`, `surfaceDock`.|
 |roleScopeTagIds|Коллекция String|Список ID-тегов области для конфигурации оборудования|
-|perDevicePasswordDisabled|Boolean|Значение, указывающее, отключен ли каждый devcive pasword|
+|perDevicePasswordDisabled|Логическое|Значение, указывающее, отключен ли каждый devcive pasword|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` отклика и [объект hardwareConfiguration](../resources/intune-deviceconfig-hardwareconfiguration.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

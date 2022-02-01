@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ce5a893cd2c34b012db90833b9c904c9c5e4367
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: ff64fc47af3147fc7540609dad0ce978d68e6d12
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336484"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291417"
 ---
 # <a name="get-userexperienceanalyticsdeviceperformance"></a>Get userExperienceAnalyticsDevicePerformance
 
@@ -20,7 +20,7 @@ ms.locfileid: "61336484"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей [объекта userExperienceAnalyticsDevicePerformance.](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)
+Чтение свойств и связей [объекта userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,14 +46,14 @@ GET /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperienceAn
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и `200 OK` [объект userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) в тексте ответа.
+В случае успеха этот метод `200 OK` возвращает код отклика и [объект userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -77,7 +77,7 @@ Content-Length: 851
     "deviceName": "Device Name value",
     "model": "Model value",
     "manufacturer": "Manufacturer value",
-    "diskType": "hdd",
+    "diskType": "ssd",
     "operatingSystemVersion": "Operating System Version value",
     "bootScore": 9,
     "coreBootTimeInMs": 0,

@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Ресурс calculatedColumn в ресурсе columnDefinition указывает, что данные столбца вычисляются на основании значений в других столбцах на сайте.
 ms.date: 09/11/2017
 title: calculatedColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: cc46a6987e6fbd2e1f1c77f026118b93b5974fe8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: 232afda8b37ddd5307a32a8e9636f184cf7e6613
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071646"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290604"
 ---
 # <a name="calculatedcolumn-resource-type"></a>Тип ресурса calculatedColumn
 
@@ -45,7 +45,7 @@ ms.locfileid: "48071646"
 В формулах SharePoint используется синтаксис, похожий на синтаксис формул в Excel.
 Дополнительные сведения см. в статье [Примеры часто используемых формул в списках SharePoint][SPFormulas].
 
-[SPFormulas]: https://support.office.com/en-us/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
+[SPFormulas]: https://support.office.com/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
 
 <!--
 {

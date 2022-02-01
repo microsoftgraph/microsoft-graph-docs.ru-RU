@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 52239562480eed674b5b41000d9d3bedb7abfc54
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: c0f1ef0288627561c17bac5fa4c0a0c9f4af74e7
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61547701"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290961"
 ---
 # <a name="broadcastmeetingcaptionsettings-resource-type"></a>тип ресурса broadcastMeetingCaptionSettings
 
@@ -18,14 +18,14 @@ ms.locfileid: "61547701"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет параметры подписи события Microsoft Teams [в прямом эфире](/microsoftteams/teams-live-events/what-are-teams-live-events). Подробные сведения об использовании подписей в Teams клиенте см. в материале [Use live captions in a live event.](https://support.microsoft.com/en-us/office/use-live-captions-in-a-live-event-1d6778d4-6c65-4189-ab13-e2d77beb9e2a)
+Представляет параметры подписи события Microsoft Teams [в прямом эфире](/microsoftteams/teams-live-events/what-are-teams-live-events). Подробные сведения об использовании подписей в Teams клиенте см. в материале [Use live captions in a live event](https://support.microsoft.com/office/use-live-captions-in-a-live-event-1d6778d4-6c65-4189-ab13-e2d77beb9e2a).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство             | Тип              | Описание                                                     |
 |:---------------------|:------------------|:----------------------------------------------------------------|
-| isCaptionEnabled     | Boolean           | Указывает, включена ли подпись для этого Teams в прямом эфире. |
-| spokenLanguage       | Строка            | Разговорный язык.                                            |
+| isCaptionEnabled     | Логическое           | Указывает, включена ли подпись для этого Teams в прямом эфире. |
+| spokenLanguage       | String            | Разговорный язык.                                            |
 | translationLanguages | Коллекция строк | Языки перевода (выберите до 6).                     |
 
 > [!TIP]

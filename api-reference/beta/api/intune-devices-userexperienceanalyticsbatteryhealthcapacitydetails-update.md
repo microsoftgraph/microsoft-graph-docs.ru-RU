@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e953f6ac2552ced6ca2421a4d2d94eb7cf2290d9
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 1407c7ce6f4f76ead2c9004bdaa5c474a040897d
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345242"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62292055"
 ---
 # <a name="update-userexperienceanalyticsbatteryhealthcapacitydetails"></a>Обновление userExperienceAnalyticsBatteryHealthCapacityDetails
 
@@ -20,7 +20,7 @@ ms.locfileid: "61345242"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [userExperienceAnalyticsBatteryHealthCapacityDetails.](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md)
+Обновление свойств объекта [userExperienceAnalyticsBatteryHealthCapacityDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,26 +43,27 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthCapacityDetails
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для объекта [userExperienceAnalyticsBatteryHealthCapacityDetails.](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md)
+В теле запроса поставляем представление JSON для объекта [userExperienceAnalyticsBatteryHealthCapacityDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md) .
 
-В следующей таблице показаны свойства, необходимые при создании [userExperienceAnalyticsBatteryHealthCapacityDetails.](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md)
+В следующей таблице показаны свойства, необходимые при создании [userExperienceAnalyticsBatteryHealthCapacityDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта емкости аккумулятора для аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор объекта емкости аккумулятора для аналитики пользовательского интерфейса.|
 |activeDevices|Int32|Количество активных устройств в клиенте. Допустимые значения 2147483648 2147483647|
 |batteryCapacityGood|Int32|Количество устройств, максимальная емкость которых превышает 80%. Допустимые значения 2147483648 2147483647|
 |batteryCapacityFair|Int32|Количество устройств, максимальная емкость которых превышает 50%, но меньше 80%. Допустимые значения 2147483648 2147483647|
 |batteryCapacityPoor|Int32|Количество устройств, максимальная емкость которых составляет менее 50%. Допустимые значения 2147483648 2147483647|
+|lastRefreshedDateTime|DateTimeOffset|Записано время даты этого экземпляра сведений о емкости.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код ответа и обновленный объект `200 OK` [userExperienceAnalyticsBatteryHealthCapacityDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md) в тексте ответа.
+В случае `200 OK` успеха этот метод возвращает код ответа и обновленный объект [userExperienceAnalyticsBatteryHealthCapacityDetails](../resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -71,14 +72,15 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthCapacityDetails
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBatteryHealthCapacityDetails
 Content-type: application/json
-Content-length: 204
+Content-length: 269
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthCapacityDetails",
   "activeDevices": 13,
   "batteryCapacityGood": 3,
   "batteryCapacityFair": 3,
-  "batteryCapacityPoor": 3
+  "batteryCapacityPoor": 3,
+  "lastRefreshedDateTime": "2017-01-01T00:02:37.7100903-08:00"
 }
 ```
 
@@ -87,7 +89,7 @@ Content-length: 204
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 253
+Content-Length: 318
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthCapacityDetails",
@@ -95,7 +97,8 @@ Content-Length: 253
   "activeDevices": 13,
   "batteryCapacityGood": 3,
   "batteryCapacityFair": 3,
-  "batteryCapacityPoor": 3
+  "batteryCapacityPoor": 3,
+  "lastRefreshedDateTime": "2017-01-01T00:02:37.7100903-08:00"
 }
 ```
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cee46b7ae0e17c8b3473c633d5b04996011d9f32
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: f646d1e1cb2ed530ea3d9eb9152bd544bc87c4c5
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61334713"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62292048"
 ---
 # <a name="update-userexperienceanalyticsoverview"></a>Обновление userExperienceAnalyticsOverview
 
@@ -20,7 +20,7 @@ ms.locfileid: "61334713"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [userExperienceAnalyticsOverview.](../resources/intune-devices-userexperienceanalyticsoverview.md)
+Обновление свойств объекта [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,17 +43,17 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для [объекта userExperienceAnalyticsOverview.](../resources/intune-devices-userexperienceanalyticsoverview.md)
+В теле запроса поставляем представление JSON для [объекта userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) .
 
-В следующей таблице показаны свойства, необходимые при создании [userExperienceAnalyticsOverview.](../resources/intune-devices-userexperienceanalyticsoverview.md)
+В следующей таблице показаны свойства, необходимые при создании [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор обзора аналитики пользовательских интерфейсов.|
+|id|String|Уникальный идентификатор обзора аналитики пользовательских интерфейсов.|
 |overallScore|Int32|Общая оценка аналитики пользовательского опыта.|
 |deviceBootPerformanceOverallScore|Int32|Общая оценка производительности загрузки устройства для аналитики пользовательского интерфейса.|
 |bestPracticesOverallScore|Int32|Анализ пользовательских интерфейсов позволяет опытом работы с общим показателем.|
@@ -68,12 +68,12 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 |workFromAnywhereHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние состояния здоровья аналитики пользовательских интерфейсов категории WorkFromAnywhere. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |appHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние здоровья категории аналитики пользовательских интерфейсов "BestPractices". Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |resourcePerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние состояния здоровья в категории аналитики пользовательского интерфейса "ResourcePerformance". Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
-|batteryHealthHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние состояния состояния аналитики пользовательского интерфейса "BatteryHealth". Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|batteryHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние состояния состояния аналитики пользовательского интерфейса "BatteryHealth". Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и обновленный `200 OK` [объект userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) в тексте ответа.
+В случае успеха этот метод возвращает код `200 OK` отклика и обновленный [объект userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -82,7 +82,7 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOverview
 Content-type: application/json
-Content-length: 1091
+Content-length: 1085
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -113,7 +113,7 @@ Content-length: 1091
   "workFromAnywhereHealthState": "insufficientData",
   "appHealthState": "insufficientData",
   "resourcePerformanceHealthState": "insufficientData",
-  "batteryHealthHealthState": "insufficientData"
+  "batteryHealthState": "insufficientData"
 }
 ```
 
@@ -122,7 +122,7 @@ Content-length: 1091
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1140
+Content-Length: 1134
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -154,7 +154,7 @@ Content-Length: 1140
   "workFromAnywhereHealthState": "insufficientData",
   "appHealthState": "insufficientData",
   "resourcePerformanceHealthState": "insufficientData",
-  "batteryHealthHealthState": "insufficientData"
+  "batteryHealthState": "insufficientData"
 }
 ```
 

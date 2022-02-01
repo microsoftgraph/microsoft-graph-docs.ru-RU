@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d560899a8f47448fd9377d7810125d10a6777960
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 48604d5d4a64c722f7150151de8c71bdcc01c738
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61344843"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290716"
 ---
 # <a name="microsofttunnelconfiguration-resource-type"></a>тип ресурса microsoftTunnelConfiguration
 
@@ -25,29 +25,29 @@ ms.locfileid: "61344843"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список microsoftTunnelConfigurations](../api/intune-mstunnel-microsofttunnelconfiguration-list.md)|[коллекция microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md)|Список свойств и связей объектов [microsoftTunnelConfiguration.](../resources/intune-mstunnel-microsofttunnelconfiguration.md)|
-|[Получите microsoftTunnelConfiguration](../api/intune-mstunnel-microsofttunnelconfiguration-get.md)|[microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md)|Чтение свойств и связей объекта [microsoftTunnelConfiguration.](../resources/intune-mstunnel-microsofttunnelconfiguration.md)|
-|[Создание microsoftTunnelConfiguration](../api/intune-mstunnel-microsofttunnelconfiguration-create.md)|[microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md)|Создайте [новый объект microsoftTunnelConfiguration.](../resources/intune-mstunnel-microsofttunnelconfiguration.md)|
+|[Список microsoftTunnelConfigurations](../api/intune-mstunnel-microsofttunnelconfiguration-list.md)|[коллекция microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md)|Список свойств и связей объектов [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) .|
+|[Получите microsoftTunnelConfiguration](../api/intune-mstunnel-microsofttunnelconfiguration-get.md)|[microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md)|Чтение свойств и связей объекта [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) .|
+|[Создание microsoftTunnelConfiguration](../api/intune-mstunnel-microsofttunnelconfiguration-create.md)|[microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md)|Создайте [новый объект microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) .|
 |[Удаление microsoftTunnelConfiguration](../api/intune-mstunnel-microsofttunnelconfiguration-delete.md)|Нет|Удаляет [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md).|
-|[Обновление microsoftTunnelConfiguration](../api/intune-mstunnel-microsofttunnelconfiguration-update.md)|[microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md)|Обновление свойств объекта [microsoftTunnelConfiguration.](../resources/intune-mstunnel-microsofttunnelconfiguration.md)|
+|[Обновление microsoftTunnelConfiguration](../api/intune-mstunnel-microsofttunnelconfiguration-update.md)|[microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md)|Обновление свойств объекта [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Id MicrosoftTunnelConfiguration|
-|displayName|Строка|Имя отображения MicrosoftTunnelConfiguration|
+|displayName|String|Имя отображения MicrosoftTunnelConfiguration|
 |description|String|Описание MicrosoftTunnelConfiguration|
-|сеть|Строка|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
-|dnsServers|Коллекция String|DNS-серверы, которые будут использоваться клиентами|
+|сеть|String|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
+|dnsServers|Коллекция строк|DNS-серверы, которые будут использоваться клиентами|
 |defaultDomainSuffix|String|Приложение домена по умолчанию, которое будет использоваться клиентами|
-|routesInclude|Коллекция String|Маршруты, которые будут маршрутить сервер|
-|routesExclude|Коллекция String|Подмышы маршрутов, которые не будут маршрутиться сервером|
-|splitDNS|Коллекция String|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
+|routesInclude|Коллекция строк|Маршруты, которые будут маршрутить сервер|
+|routesExclude|Коллекция объектов string|Подмышы маршрутов, которые не будут маршрутиться сервером|
+|splitDNS|Коллекция строк|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
 |listenPort|Int32|Порт, который будут прослушивать TCP и UPD на сервере|
 |advancedSettings|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Дополнительные параметры, которые могут быть применены к серверу|
 |lastUpdateDateTime|DateTimeOffset|При последнем обновлении MicrosoftTunnelConfiguration|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
-|отключениеUDPConnections|Boolean|При задавке отключенияUDPConnections, клиенты и VPN-сервер не будут использовать connctions DTLS для обработки данных tansfer.|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity.|
+|отключениеUDPConnections|Логическое|При наборе disableUdpConnections клиенты и VPN-сервер не будут использовать подключения DTLS для данных tansfer.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: simonhult
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: c78b1e3c4836af0d93dccd1e21edeba69e07381a
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: e5bfe92ba42609a61d113cc8e32faf4499db00b7
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322766"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291985"
 ---
 # <a name="insightssettings-resource-type"></a>тип ресурса insightsSettings
 
@@ -18,11 +18,11 @@ ms.locfileid: "61322766"
 
 Представляет _параметры для_ вычисления и управления отображением или программным возвращением определенного типа информации в организации. Сведения могут быть сведениями о элементах, сведениями о часах собраний или сведениями о человеке. 
 
-Сведения о [элементах](https://support.microsoft.com/en-us/office/suggested-meeting-hours-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) и сведения о часах собраний представляют отношения между пользователями и элементами, такими как документы, сайты и другие типы контента в Microsoft 365. Программным образом они представлены ресурсом [itemInsights.](iteminsights.md) Вы можете получить документы, которые [делятся](../api/insights-list-shared.md) с пользователем, [](../api/insights-list-trending.md) в тренде вокруг пользователя или [используются](../api/insights-list-used.md) пользователем. Вы можете использовать **insightsSettings** для настройки параметров конфиденциальности для вычисления, отображения или возврата элементов в [организации.](/graph/insights-customize-item-insights-privacy)
+Сведения о [элементах и](https://support.microsoft.com/office/suggested-meeting-hours-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) сведения о часах собраний представляют отношения между пользователями и элементами, такими как документы, сайты и другие типы контента в Microsoft 365. Программным образом они представлены ресурсом [itemInsights](iteminsights.md) . Вы можете получить документы, [которые делятся](../api/insights-list-shared.md) с пользователем [, в](../api/insights-list-trending.md) тренде вокруг пользователя или [используются](../api/insights-list-used.md) пользователем. Вы можете использовать **insightsSettings** для настройки параметров конфиденциальности для вычисления, отображения или возврата элементов в [организации](/graph/insights-customize-item-insights-privacy).
 
-Сведения о работе с людьми представляют собой связи людей, которые имеют отношение друг к другу или работают друг с другом на основе их связей с общественностью. Программным образом отдельные люди представлены ресурсом [person.](person.md) Вы можете [использовать API людей, чтобы получить сведения о человеке.](/graph/people-example) Вы можете использовать **insightsSettings** для настройки параметров конфиденциальности для отображения или возвращения [людей.](/graph/insights-customize-people-insights-privacy)
+Сведения о работе с людьми представляют собой связи людей, которые имеют отношение друг к другу или работают друг с другом на основе их связей с общественностью. Программным образом отдельные люди представлены ресурсом [person](person.md) . API [людей можно использовать для получения информации о человеке](/graph/people-example). Вы можете использовать **insightsSettings** для настройки параметров конфиденциальности для отображения или возвращения [людей.](/graph/insights-customize-people-insights-privacy)
 
-Напротив, для анализа элементов и времени собраний вы также можете управлять  их вычислением и видимостью на уровне пользователя с помощью [ресурса userInsightsSettings.](userinsightssettings.md) [](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1)
+Напротив, для анализа элементов и времени [](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1)собраний можно также управлять их расчетом и видимостью на уровне пользователя с помощью  [ресурса userInsightsSettings](userinsightssettings.md).
 
 ## <a name="methods"></a>Методы
 
@@ -37,8 +37,8 @@ ms.locfileid: "61322766"
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| `true` если для организации включен указанный тип анализа; если указанный тип анализа отключен для `false` всех пользователей без исключений. Значение по умолчанию: `true`. Необязательно.|
-|disabledForGroup|Строка| ID группы Azure AD, в которой указанный тип данных отключен для ее участников. Значение по умолчанию: `empty`. Необязательно.|
+|isEnabledInOrganization|Логическое| `true` если для организации включен указанный тип анализа; `false` если указанный тип анализа отключен для всех пользователей без исключений. Значение по умолчанию: `true`. Необязательный параметр.|
+|disabledForGroup|String| ID группы Azure AD, в которой указанный тип данных отключен для ее участников. Значение по умолчанию: `empty`. Необязательный параметр.|
 
 ## <a name="json-representation"></a>Представление JSON
 

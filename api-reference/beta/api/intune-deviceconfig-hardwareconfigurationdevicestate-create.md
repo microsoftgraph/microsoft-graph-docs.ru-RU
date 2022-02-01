@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3d8e2a81c7d706d45e56dae807cb54fe26661459
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: d3a27503cc60c62946fdf6381587de34aa286eff
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61348502"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291010"
 ---
 # <a name="create-hardwareconfigurationdevicestate"></a>Создание hardwareConfigurationDeviceState
 
@@ -20,7 +20,7 @@ ms.locfileid: "61348502"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового [объекта hardwareConfigurationDeviceState.](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md)
+Создание нового [объекта hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,7 +43,7 @@ POST /deviceManagement/hardwareConfigurations/{hardwareConfigurationId}/deviceRu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,20 +53,20 @@ POST /deviceManagement/hardwareConfigurations/{hardwareConfigurationId}/deviceRu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Клавиша состояния состояния устройства конфигурации оборудования. Это свойство доступно только для чтения.|
+|id|String|Клавиша состояния состояния устройства конфигурации оборудования. Это свойство доступно только для чтения.|
 |deviceName|String|Имя устройства|
-|osVersion|String|Версия операционной системы устройства.|
+|osVersion|String|Версия операционной системы устройства (например. 10.0.19042.1165, 10.0.19042.1288 и т.д.)|
 |upn|String|Имя участника-пользователя (UPN).|
 |internalVersion|Int32|Внутренняя версия Policy|
 |lastStateUpdateDateTime|DateTimeOffset|Последний период выполнения конфигурации оборудования|
 |configurationState|[runState](../resources/intune-shared-runstate.md)|Состояние конфигурации из последнего выполнения конфигурации оборудования. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
-|configurationOutput|Строка|Выход выполнения конфигурации оборудования|
-|configurationError|Строка|Ошибка при выполнении конфигурации оборудования|
+|configurationOutput|String|Выход выполнения конфигурации оборудования|
+|configurationError|String|Ошибка при выполнении конфигурации оборудования|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) в теле ответа.
+В случае успешной `201 Created` работы этот метод возвращает код отклика и [объект hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) в теле ответа.
 
 ## <a name="example"></a>Пример
 

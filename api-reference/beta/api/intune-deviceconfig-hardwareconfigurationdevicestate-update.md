@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 862e89589f32573af43267ae66e47a089c0c6f25
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 9a13b1d7d8a418d5332f098043bb3d3bd1428e4a
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345670"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291424"
 ---
 # <a name="update-hardwareconfigurationdevicestate"></a>Обновление оборудованияConfigurationDeviceState
 
@@ -20,7 +20,7 @@ ms.locfileid: "61345670"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [hardwareConfigurationDeviceState.](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md)
+Обновление свойств объекта [hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,30 +43,30 @@ PATCH /deviceManagement/hardwareConfigurations/{hardwareConfigurationId}/deviceR
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для [объекта hardwareConfigurationDeviceState.](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md)
+В теле запроса поставляем представление JSON для [объекта hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) .
 
-В следующей таблице показаны свойства, необходимые при создании [оборудованияConfigurationDeviceState.](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md)
+В следующей таблице показаны свойства, необходимые при создании [оборудованияConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Клавиша состояния состояния устройства конфигурации оборудования. Это свойство доступно только для чтения.|
+|id|String|Клавиша состояния состояния устройства конфигурации оборудования. Это свойство доступно только для чтения.|
 |deviceName|String|Имя устройства|
-|osVersion|String|Версия операционной системы устройства.|
+|osVersion|String|Версия операционной системы устройства (например. 10.0.19042.1165, 10.0.19042.1288 и т.д.)|
 |upn|String|Имя участника-пользователя (UPN).|
 |internalVersion|Int32|Внутренняя версия Policy|
 |lastStateUpdateDateTime|DateTimeOffset|Последний период выполнения конфигурации оборудования|
 |configurationState|[runState](../resources/intune-shared-runstate.md)|Состояние конфигурации из последнего выполнения конфигурации оборудования. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
-|configurationOutput|Строка|Выход выполнения конфигурации оборудования|
-|configurationError|Строка|Ошибка при выполнении конфигурации оборудования|
+|configurationOutput|String|Выход выполнения конфигурации оборудования|
+|configurationError|String|Ошибка при выполнении конфигурации оборудования|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и обновленный объект `200 OK` [hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код отклика и обновленный объект [hardwareConfigurationDeviceState](../resources/intune-deviceconfig-hardwareconfigurationdevicestate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

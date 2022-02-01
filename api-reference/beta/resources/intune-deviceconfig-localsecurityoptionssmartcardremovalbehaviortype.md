@@ -2,15 +2,15 @@
 title: localSecurityOptionsSmartCardRemovalBehaviorType enum type
 description: Возможные значения для LocalSecurityOptionsSmartCardRemovalBehaviorType
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aea13f91cd7c1f22bf82bee5623ecd6922b38e36
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4d19ae9fe5990113cf8e59f50f5fb0ebdd900b7b
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59033674"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290884"
 ---
 # <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a>localSecurityOptionsSmartCardRemovalBehaviorType enum type
 
@@ -25,10 +25,11 @@ ms.locfileid: "59033674"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|lockWorkstation|0|Нет действий|
-|noAction|1|Блокировка рабочей станции|
+|noAction|0|Нет действий|
+|lockWorkstation|1|Блокировка рабочей станции|
 |forceLogoff|2|Force Logoff|
 |disconnectRemoteDesktopSession|3|Отключение, если сеанс удаленных служб удаленного рабочего стола|
+
 
 
 

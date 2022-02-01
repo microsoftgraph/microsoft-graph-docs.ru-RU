@@ -2,15 +2,15 @@
 title: тип переименовки diskType
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cdd94ef38e889184e418700ba8e46c0cdd07bb98
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d076e53507268c793611cc4b10bd09272e6c9a30
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59111000"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291094"
 ---
 # <a name="disktype-enum-type"></a>тип переименовки diskType
 
@@ -25,9 +25,10 @@ ms.locfileid: "59111000"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unkown|0|Пока не задокументировано.|
 |hdd|1|Пока не задокументировано.|
 |ssd|2|Пока не задокументировано.|
+|unknown|3|Член Enum для неизвестного или по умолчанию дискаType|
+
 
 
 

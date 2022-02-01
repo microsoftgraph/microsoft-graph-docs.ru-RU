@@ -2,15 +2,15 @@
 title: Тип ресурса windows10EndpointProtectionConfiguration
 description: В этой статье описаны объявляемые методы, свойства и связи, которые предоставляются ресурсом Windows10EndpointProtectionConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1d851727eedc212a5c678ad5ed97eb6dbd1cf0ad
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bc5d3e4b11abc0838de9debafae2625cc21aad1e
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59069070"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290891"
 ---
 # <a name="windows10endpointprotectionconfiguration-resource-type"></a>Тип ресурса windows10EndpointProtectionConfiguration
 
@@ -39,14 +39,14 @@ ms.locfileid: "59069070"
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логическое|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|Эта политика предназначена для обеспечения дополнительной защиты от внешних устройств, способных к DMA. Это позволяет больше контролировать переумывление внешних устройств, способных к DMA, несовместимых с DMA Remapping/device memory isolation and sandboxing. Эта политика вступает в силу только тогда, когда защита DMA ядра поддерживается и включена программным обеспечением системы. Защита DMA ядра — это функция платформы, которая не может управляться с помощью политики или конечным пользователем. Она должна поддерживаться системой во время производства. Чтобы проверить, поддерживает ли система защиту DMA ядра, ознакомьтесь с полем Защиты DMA ядра на странице Сводка MSINFO32.exe. Возможные значения: `deviceDefault`, `blockAll`, `allowAll`.|
 |firewallRules|[коллекция windowsFirewallRule](../resources/intune-deviceconfig-windowsfirewallrule.md)|Настраивает параметры правил брандмауэра. Эта коллекция может содержать не более 150 элементов.|
@@ -79,83 +79,83 @@ ms.locfileid: "59069070"
 |userRightsRemoteShutdown|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи могут отключить компьютер из удаленного расположения в сети. Неправильное использование этого права пользователя может привести к отказу в обслуживании. Поддерживаются только состояния NotConfigured и Allowed.|
 |userRightsRestoreData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи могут обходить разрешения файлов, каталогов, реестров и других постоянных объектов при восстановлении архивных файлов и каталогов, а также определяет, какие пользователи могут установить любой допустимый принцип безопасности в качестве владельца объекта. Поддерживаются только состояния NotConfigured и Allowed.|
 |userRightsTakeOwnership|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи могут взять на себя право собственности на любой защищаемый объект в системе, включая объекты Active Directory, файлы и папки, принтеры, ключи реестра, процессы и потоки. Поддерживаются только состояния NotConfigured и Allowed.|
-|xboxServicesEnableXboxGameSaveTask|Boolean|Этот параметр определяет, включено ли сохранение игры xbox (1) или отключено (0).|
+|xboxServicesEnableXboxGameSaveTask|Логическое|Этот параметр определяет, включено ли сохранение игры xbox (1) или отключено (0).|
 |xboxServicesAccessoryManagementServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|Этот параметр определяет, является ли тип запуска службы управления аксессуарами автоматическим (2), ручным (3), отключенным (4). По умолчанию: вручную. Возможные значения: `manual`, `automatic`, `disabled`.|
 |xboxServicesLiveAuthManagerServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|Этот параметр определяет, является ли тип запуска службы Live Auth Manager автоматическим (2), ручным (3), отключенным (4). По умолчанию: вручную. Возможные значения: `manual`, `automatic`, `disabled`.|
 |xboxServicesLiveGameSaveServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|Этот параметр определяет, является ли тип запуска службы сохранения Live Game автоматическим (2), ручным (3), отключенным (4). По умолчанию: вручную. Возможные значения: `manual`, `automatic`, `disabled`.|
 |xboxServicesLiveNetworkingServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|Этот параметр определяет, является ли тип запуска сетевой службы автоматическим (2), ручным (3), отключенным (4). По умолчанию: вручную. Возможные значения: `manual`, `automatic`, `disabled`.|
-|localSecurityOptionsBlockMicrosoftAccounts|Boolean|Запретить пользователям добавлять на этот компьютер новые учетные записи Майкрософт.|
-|localSecurityOptionsBlockRemoteLogonWithBlankPassword|Boolean|Включить локальные учетные записи, которые не защищены паролем, для входа из других местоположений, кроме физического устройства. Включено значение по умолчанию|
-|localSecurityOptionsDisableAdministratorAccount|Boolean|Определяет, включена или отключена учетная запись локального администратора.|
-|localSecurityOptionsAdministratorAccountName|Строка|Определите другое имя учетной записи, связанное с идентификатором безопасности (SID) для учетной записи "Администратор".|
-|localSecurityOptionsDisableGuestAccount|Логический|Определяет, включена или отключена учетная запись гостевой.|
-|localSecurityOptionsGuestAccountName|Строка|Определите другое имя учетной записи, связанное с идентификатором безопасности (SID) для учетной записи "Гость".|
-|localSecurityOptionsAllowUndockWithoutHavingToLogon|Логический|Запретить отсоединовку портативного компьютера без входа.|
-|localSecurityOptionsBlockUsersInstallingPrinterDrivers|Логический|Ограничить установку драйверов принтера в рамках подключения к общему принтеру только администраторам.|
-|localSecurityOptionsBlockRemoteOpticalDriveAccess|Boolean|Включение этого параметра позволяет только в интерактивном режиме войти в систему пользователю, чтобы получить доступ к CD-ROM-носителю.|
+|localSecurityOptionsBlockMicrosoftAccounts|Логическое|Запретить пользователям добавлять на этот компьютер новые учетные записи Майкрософт.|
+|localSecurityOptionsBlockRemoteLogonWithBlankPassword|Логическое|Включить локальные учетные записи, которые не защищены паролем, для входа из других местоположений, кроме физического устройства. Включено значение по умолчанию|
+|localSecurityOptionsDisableAdministratorAccount|Логическое|Определяет, включена или отключена учетная запись локального администратора.|
+|localSecurityOptionsAdministratorAccountName|String|Определите другое имя учетной записи, связанное с идентификатором безопасности (SID) для учетной записи "Администратор".|
+|localSecurityOptionsDisableGuestAccount|Логическое|Определяет, включена или отключена учетная запись гостевой.|
+|localSecurityOptionsGuestAccountName|String|Определите другое имя учетной записи, связанное с идентификатором безопасности (SID) для учетной записи "Гость".|
+|localSecurityOptionsAllowUndockWithoutHavingToLogon|Логическое|Запретить отсоединовку портативного компьютера без входа.|
+|localSecurityOptionsBlockUsersInstallingPrinterDrivers|Логическое|Ограничить установку драйверов принтера в рамках подключения к общему принтеру только администраторам.|
+|localSecurityOptionsBlockRemoteOpticalDriveAccess|Логическое|Включение этого параметра позволяет только в интерактивном режиме войти в систему пользователю, чтобы получить доступ к CD-ROM-носителю.|
 |localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser|[localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType](../resources/intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)|Определите, кому разрешено форматирование и удаление съемных носители NTFS. Возможные значения: `notConfigured`, `administrators`, `administratorsAndPowerUsers`, `administratorsAndInteractiveUsers`.|
 |localSecurityOptionsMachineInactivityLimit|Int32|Определите максимальные минуты бездействия на экране входа на интерактивном рабочем столе до тех пор, пока не будет работать замотивник экрана. Допустимые значения от 0 до 9999|
 |localSecurityOptionsMachineInactivityLimitInMinutes|Int32|Определите максимальные минуты бездействия на экране входа на интерактивном рабочем столе до тех пор, пока не будет работать замотивник экрана. Допустимые значения от 0 до 9999|
 |localSecurityOptionsDoNotRequireCtrlAltDel|Логический|Перед входом в систему необходимо нажать на CTRL+ALT+DEL.|
-|localSecurityOptionsHideLastSignedInUser|Логический|Не отображать имя пользователя последнего человека, который вписался на этом устройстве.|
-|localSecurityOptionsHideUsernameAtSignIn|Логический|Не отображать имя пользователя пользователя, вписавшись на это устройство после входа учетных данных и до отображения рабочего стола устройства.|
-|localSecurityOptionsLogOnMessageTitle|Строка|Установите название сообщения для пользователей, пытающихся войти в систему.|
-|localSecurityOptionsLogOnMessageText|Строка|Установите текст сообщения для пользователей, пытающихся войти в систему.|
-|localSecurityOptionsAllowPKU2UAuthenticationRequests|Boolean|Блокировать запросы на проверку подлинности PKU2U на этом устройстве для использования удостоверений в Интернете.|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|Логический|Помощник пользовательского интерфейса для подразделения LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|Строка|Изменить строку определения определения дескриптора безопасности по умолчанию, чтобы разрешить пользователям и группам делать удаленные вызовы в SAM.|
+|localSecurityOptionsHideLastSignedInUser|Логическое|Не отображать имя пользователя последнего человека, который вписался на этом устройстве.|
+|localSecurityOptionsHideUsernameAtSignIn|Логическое|Не отображать имя пользователя пользователя, вписавшись на это устройство после входа учетных данных и до отображения рабочего стола устройства.|
+|localSecurityOptionsLogOnMessageTitle|String|Установите название сообщения для пользователей, пытающихся войти в систему.|
+|localSecurityOptionsLogOnMessageText|String|Установите текст сообщения для пользователей, пытающихся войти в систему.|
+|localSecurityOptionsAllowPKU2UAuthenticationRequests|Логическое|Блокировать запросы на проверку подлинности PKU2U на этом устройстве для использования удостоверений в Интернете.|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|Логическое|Помощник пользовательского интерфейса для подразделения LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|Изменить строку определения определения дескриптора безопасности по умолчанию, чтобы разрешить пользователям и группам делать удаленные вызовы в SAM.|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Этот параметр безопасности позволяет клиенту требовать согласования 128-битного шифрования и/или безопасности сеанса NTLMv2. Возможные значения: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Этот параметр безопасности позволяет серверу требовать согласования 128-битного шифрования и/или безопасности сеанса NTLMv2. Возможные значения: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|Этот параметр безопасности определяет, какой протокол проверки подлинности вызовов и ответов используется для сетевых логотипов. Возможные значения: `lmAndNltm`, `lmNtlmAndNtlmV2`, `lmAndNtlmOnly`, `lmAndNtlmV2`, `lmNtlmV2AndNotLm`, `lmNtlmV2AndNotLmOrNtm`.|
-|lanManagerWorkstationDisableInsecureGuestLogons|Boolean|Если включено, клиент SMB позволит использовать небезопасные гостевых логотипы. Если он не настроен, клиент SMB отклоняет небезопасные гостевых логотипы.|
-|localSecurityOptionsClearVirtualMemoryPageFile|Boolean|Этот параметр безопасности определяет, очищается ли виртуальная страница памяти при отключении системы.|
-|localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|Логический|Этот параметр безопасности определяет, можно ли отключить компьютер без необходимости входа в Windows.|
-|localSecurityOptionsAllowUIAccessApplicationElevation|Логический|Разрешить приложениям UIAccess подсказок для повышения без использования безопасного рабочего стола.|
-|localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations|Логический|Виртуализация сбоев записи файлов и реестра для каждого пользователя|
-|localSecurityOptionsOnlyElevateSignedExecutables|Логический|Принудительное выполнение проверки пути сертификации PKI для заданного исполняемого файла до разрешения на запуск.|
+|lanManagerWorkstationDisableInsecureGuestLogons|Логическое|Если включено, клиент SMB позволит использовать небезопасные гостевых логотипы. Если он не настроен, клиент SMB отклоняет небезопасные гостевых логотипы.|
+|localSecurityOptionsClearVirtualMemoryPageFile|Логическое|Этот параметр безопасности определяет, очищается ли виртуальная страница памяти при отключении системы.|
+|localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|Логическое|Этот параметр безопасности определяет, можно ли отключить компьютер без необходимости входа в Windows.|
+|localSecurityOptionsAllowUIAccessApplicationElevation|Логическое|Разрешить приложениям UIAccess подсказок для повышения без использования безопасного рабочего стола.|
+|localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations|Логическое|Виртуализация сбоев записи файлов и реестра для каждого пользователя|
+|localSecurityOptionsOnlyElevateSignedExecutables|Логическое|Принудительное выполнение проверки пути сертификации PKI для заданного исполняемого файла до разрешения на запуск.|
 |localSecurityOptionsAdministratorElevationPromptBehavior|[localSecurityOptionsAdministratorElevationPromptBehaviorType](../resources/intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)|Определите поведение запроса на повышение для администраторов в режиме утверждения администратора. Возможные значения: `notConfigured`, `elevateWithoutPrompting`, `promptForCredentialsOnTheSecureDesktop`, `promptForConsentOnTheSecureDesktop`, `promptForCredentials`, `promptForConsent`, `promptForConsentForNonWindowsBinaries`.|
 |localSecurityOptionsStandardUserElevationPromptBehavior|[localSecurityOptionsStandardUserElevationPromptBehaviorType](../resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)|Определите поведение запроса высоты для стандартных пользователей. Возможные значения: `notConfigured`, `automaticallyDenyElevationRequests`, `promptForCredentialsOnTheSecureDesktop`, `promptForCredentials`.|
-|localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation|Логический|Включить все запросы на повышение, чтобы перейти на рабочий стол интерактивного пользователя, а не на безопасный рабочий стол. Используются оперативные параметры политики поведения для администраторов и стандартных пользователей.|
-|localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation|Логический|Установки приложений, требующие повышенных привилегий, будут подсказок для учетных данных администратора. Включено значение по умолчанию|
-|localSecurityOptionsAllowUIAccessApplicationsForSecureLocations|Boolean|Разрешить приложениям UIAccess подсказок для повышения без использования безопасного рабочего стола. Включено значение по умолчанию|
-|localSecurityOptionsUseAdminApprovalMode|Логический|Определяет, использует ли встроенная учетная запись администратора режим утверждения администратора или запускает все приложения с полными привилегиями администратора. Включено значение по умолчанию|
-|localSecurityOptionsUseAdminApprovalModeForAdministrators|Логический|Определите, включен ли режим утверждения администрирования и все параметры политики UAC по умолчанию|
+|localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation|Логическое|Включить все запросы на повышение, чтобы перейти на рабочий стол интерактивного пользователя, а не на безопасный рабочий стол. Используются оперативные параметры политики поведения для администраторов и стандартных пользователей.|
+|localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation|Логическое|Установки приложений, требующие повышенных привилегий, будут подсказок для учетных данных администратора. Включено значение по умолчанию|
+|localSecurityOptionsAllowUIAccessApplicationsForSecureLocations|Логическое|Разрешить приложениям UIAccess подсказок для повышения без использования безопасного рабочего стола. Включено значение по умолчанию|
+|localSecurityOptionsUseAdminApprovalMode|Логическое|Определяет, использует ли встроенная учетная запись администратора режим утверждения администратора или запускает все приложения с полными привилегиями администратора. Включено значение по умолчанию|
+|localSecurityOptionsUseAdminApprovalModeForAdministrators|Логическое|Определите, включен ли режим утверждения администрирования и все параметры политики UAC по умолчанию|
 |localSecurityOptionsInformationShownOnLockScreen|[localSecurityOptionsInformationShownOnLockScreenType](../resources/intune-deviceconfig-localsecurityoptionsinformationshownonlockscreentype.md)|Настройка пользовательских сведений, отображаемых при блокировке сеанса. Если они не настроены, отображается имя пользователя, домен и имя пользователя. Возможные значения: `notConfigured`, `userDisplayNameDomainUser`, `userDisplayNameOnly`, `doNotDisplayUser`.|
 |localSecurityOptionsInformationDisplayedOnLockScreen|[localSecurityOptionsInformationDisplayedOnLockScreenType](../resources/intune-deviceconfig-localsecurityoptionsinformationdisplayedonlockscreentype.md)|Настройка пользовательских сведений, отображаемых при блокировке сеанса. Если они не настроены, отображается имя пользователя, домен и имя пользователя. Возможные значения: `notConfigured`, `administrators`, `administratorsAndPowerUsers`, `administratorsAndInteractiveUsers`.|
-|localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees|Boolean|Этот параметр безопасности определяет, пытается ли клиент SMB договориться о подписании пакета SMB.|
-|localSecurityOptionsClientDigitallySignCommunicationsAlways|Boolean|Этот параметр безопасности определяет, требуется ли подписывать пакет клиентского компонента SMB.|
-|localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers|Boolean|Если этот параметр безопасности включен, перенаправлению Блока сообщений сервера (SMB) разрешается отправлять простые пароли на серверы SMB, не включаемые в Microsoft, которые не поддерживают шифрование паролей во время проверки подлинности.|
-|localSecurityOptionsDisableServerDigitallySignCommunicationsAlways|Логический|Этот параметр безопасности определяет, требуется ли подписание пакета компонентом сервера SMB.|
-|localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees|Boolean|Этот параметр безопасности определяет, будет ли SMB-сервер согласовывать подписание пакетов SMB с клиентами, которые его запрашивают.|
-|localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares|Boolean|По умолчанию этот параметр безопасности ограничивает анонимный доступ к акциям и трубам к настройкам именных труб, к которые можно получить анонимный доступ, а также к акциям, к которые можно получить анонимный доступ.|
-|localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts|Boolean|Этот параметр безопасности определяет, какие дополнительные разрешения будут предоставлены для анонимных подключений к компьютеру.|
-|localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares|Boolean|Этот параметр безопасности определяет, разрешает ли анонимным пользователям выполнять определенные действия, такие как список имен учетных записей домена и сетевых акций.|
-|localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange|Boolean|Этот параметр безопасности определяет, сохраняется ли при следующем изменении пароля значение hash-значения lan Manager (LM) для нового пароля. Он не хранится по умолчанию.|
-|localSecurityOptionsSmartCardRemovalBehavior|[localSecurityOptionsSmartCardRemovalBehaviorType](../resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md);|Этот параметр безопасности определяет, что происходит, когда смарт-карта для зарегистрированного пользователя удаляется из чтения смарт-карт. Возможные значения: `lockWorkstation`, `noAction`, `forceLogoff`, `disconnectRemoteDesktopSession`.|
+|localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees|Логический|Этот параметр безопасности определяет, пытается ли клиент SMB договориться о подписании пакета SMB.|
+|localSecurityOptionsClientDigitallySignCommunicationsAlways|Логическое|Этот параметр безопасности определяет, требуется ли подписывать пакет клиентского компонента SMB.|
+|localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers|Логическое|Если этот параметр безопасности включен, перенаправлению Блока сообщений сервера (SMB) разрешается отправлять простые пароли на серверы SMB, не включаемые в Microsoft, которые не поддерживают шифрование паролей во время проверки подлинности.|
+|localSecurityOptionsDisableServerDigitallySignCommunicationsAlways|Логическое|Этот параметр безопасности определяет, требуется ли подписание пакета компонентом сервера SMB.|
+|localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees|Логическое|Этот параметр безопасности определяет, будет ли SMB-сервер согласовывать подписание пакетов SMB с клиентами, которые его запрашивают.|
+|localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares|Логическое|По умолчанию этот параметр безопасности ограничивает анонимный доступ к акциям и трубам к настройкам именных труб, к которые можно получить анонимный доступ, а также к акциям, к которые можно получить анонимный доступ.|
+|localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts|Логическое|Этот параметр безопасности определяет, какие дополнительные разрешения будут предоставлены для анонимных подключений к компьютеру.|
+|localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares|Логическое|Этот параметр безопасности определяет, разрешает ли анонимным пользователям выполнять определенные действия, такие как список имен учетных записей домена и сетевых акций.|
+|localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange|Логическое|Этот параметр безопасности определяет, сохраняется ли при следующем изменении пароля значение hash-значения lan Manager (LM) для нового пароля. Он не хранится по умолчанию.|
+|localSecurityOptionsSmartCardRemovalBehavior|[localSecurityOptionsSmartCardRemovalBehaviorType](../resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md);|Этот параметр безопасности определяет, что происходит, когда смарт-карта для зарегистрированного пользователя удаляется из чтения смарт-карт. Возможные значения: `noAction`, `lockWorkstation`, `forceLogoff`, `disconnectRemoteDesktopSession`.|
 |defenderSecurityCenterDisableAppBrowserUI|Логический|Используется для отключения отображения области защиты приложения и браузера.|
-|defenderSecurityCenterDisableFamilyUI|Boolean|Используется для отключения отображения области семейных параметров.|
-|defenderSecurityCenterDisableHealthUI|Boolean|Используется для отключения отображения производительности устройства и области работоспособности.|
-|defenderSecurityCenterDisableNetworkUI|Boolean|Используется для отключения отображения брандмауэра и области защиты сети.|
-|defenderSecurityCenterDisableVirusUI|Логический|Используется для отключения отображения области защиты от вирусов и угроз.|
-|defenderSecurityCenterDisableAccountUI|Логический|Используется для отключения отображения области защиты учетной записи.|
-|defenderSecurityCenterDisableClearTpmUI|Логический|Используется для отключения отображения кнопки Clear TPM.|
-|defenderSecurityCenterDisableHardwareUI|Boolean|Используется для отключения отображения области защиты оборудования.|
-|defenderSecurityCenterDisableNotificationAreaUI|Boolean|Используется для отключения отображения управления областью уведомлений. Чтобы этот параметр вступил в силу, пользователю необходимо либо выйти, либо войти, либо перезагрустить компьютер.|
-|defenderSecurityCenterDisableRansomwareUI|Логический|Используется для отключения отображения области защиты вымогателей. |
-|defenderSecurityCenterDisableSecureBootUI|Boolean|Используется для отключения отображения безопасной области загрузки под безопасностью устройства.|
-|defenderSecurityCenterDisableTroubleshootingUI|Логический|Используется для отключения отображения устранения неполадок процесса безопасности в области безопасности устройства.|
-|defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI|Логический|Используется для отключения отображения обновления прошивки TPM при обнаружении уязвимого прошивки.|
-|defenderSecurityCenterOrganizationDisplayName|Строка|Имя компании, отображаемая пользователям.|
-|defenderSecurityCenterHelpEmail|Строка|Адрес электронной почты, отображаемой пользователям.|
-|defenderSecurityCenterHelpPhone|Строка|Номер телефона или Skype, отображаемого пользователям.|
-|defenderSecurityCenterHelpURL|Строка|URL-адрес портала справки, отображаемый пользователями.|
+|defenderSecurityCenterDisableFamilyUI|Логическое|Используется для отключения отображения области семейных параметров.|
+|defenderSecurityCenterDisableHealthUI|Логическое|Используется для отключения отображения производительности устройства и области работоспособности.|
+|defenderSecurityCenterDisableNetworkUI|Логическое|Используется для отключения отображения брандмауэра и области защиты сети.|
+|defenderSecurityCenterDisableVirusUI|Логическое|Используется для отключения отображения области защиты от вирусов и угроз.|
+|defenderSecurityCenterDisableAccountUI|Логическое|Используется для отключения отображения области защиты учетной записи.|
+|defenderSecurityCenterDisableClearTpmUI|Логическое|Используется для отключения отображения кнопки Clear TPM.|
+|defenderSecurityCenterDisableHardwareUI|Логическое|Используется для отключения отображения области защиты оборудования.|
+|defenderSecurityCenterDisableNotificationAreaUI|Логическое|Используется для отключения отображения управления областью уведомлений. Чтобы этот параметр вступил в силу, пользователю необходимо либо выйти, либо войти, либо перезагрустить компьютер.|
+|defenderSecurityCenterDisableRansomwareUI|Логическое|Используется для отключения отображения области защиты вымогателей. |
+|defenderSecurityCenterDisableSecureBootUI|Логическое|Используется для отключения отображения безопасной области загрузки под безопасностью устройства.|
+|defenderSecurityCenterDisableTroubleshootingUI|Логическое|Используется для отключения отображения устранения неполадок процесса безопасности в области безопасности устройства.|
+|defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI|Логическое|Используется для отключения отображения обновления прошивки TPM при обнаружении уязвимого прошивки.|
+|defenderSecurityCenterOrganizationDisplayName|String|Имя компании, отображаемая пользователям.|
+|defenderSecurityCenterHelpEmail|String|Адрес электронной почты, отображаемой пользователям.|
+|defenderSecurityCenterHelpPhone|String|Номер телефона или Skype, отображаемого пользователям.|
+|defenderSecurityCenterHelpURL|String|URL-адрес портала справки, отображаемый пользователями.|
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|Уведомления, отображаемые из отображаемой области приложения. Возможные значения: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
 |defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|Настройка отображения контактных данных ИТ для конечных пользователей. Возможные значения: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
 |windowsDefenderTamperProtection|[windowsDefenderTamperProtectionOptions](../resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md)|Настройка параметров защитника Windows TamperProtection. Возможные значения: `notConfigured`, `enable`, `disable`.|
 |firewallBlockStatefulFTP|Boolean|Блокирует FTP-подключения к устройству с отслеживанием состояния.|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Настраивает время ожидания для сопоставлений безопасности в секундах от 300 до 3600 включительно. По истечении этого срока сопоставления безопасности перестают действовать и удаляются. Допустимые значения: от 300 до 3600|
 |firewallPreSharedKeyEncodingMethod|[брандмауэрPreSharedKeyEncodingMethodType](../resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)|Выберите кодику предварительного ключа, которая будет использоваться. Возможные значения: `deviceDefault`, `none`, `utF8`.|
-|firewallIPSecExemptionsNone|Логический|Настройка исключений IPSec без исключений|
+|firewallIPSecExemptionsNone|Логическое|Настройка исключений IPSec без исключений|
 |firewallIPSecExemptionsAllowNeighborDiscovery|Boolean|Настраивает исключения IPSec для разрешения обнаружения соседей. Коды типов ICMP IPv6.|
 |firewallIPSecExemptionsAllowICMP|Boolean|Настраивает исключения IPSec для разрешения ICMP|
 |firewallIPSecExemptionsAllowRouterDiscovery|Boolean|Настраивает исключения IPSec для разрешения обнаружения маршрутизаторов. Коды типов ICMP IPv6.|
@@ -201,8 +201,8 @@ ms.locfileid: "59069070"
 |defenderBlockPersistenceThroughWmiType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Значение, указывающее поведение сохраняемого блока с помощью подписки на события WMI. Возможные значения: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
 |appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|Позволяет администратору выбирать разрешенные типы приложений для устройств. Возможные значения: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
 |deviceGuardLocalSystemAuthorityCredentialGuardSettings|[deviceGuardLocalSystemAuthorityCredentialGuardType](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|Включай учетную защиту, когда включен уровень безопасности платформы с безопасностью безопасной загрузки и безопасностью на основе виртуализации. Возможные значения: `notConfigured`, `enableWithUEFILock`, `enableWithoutUEFILock`, `disable`.|
-|deviceGuardEnableVirtualizationBasedSecurity|Логический|Включает безопасность на основе виртуализации (VBS).|
-|deviceGuardEnableSecureBootWithDMA|Логический|Это свойство будет обесценилось в мае 2019 г. и будет заменено свойством DeviceGuardSecureBootWithDMA. Указывает, включен ли уровень безопасности платформы при следующей перезагрузке.|
+|deviceGuardEnableVirtualizationBasedSecurity|Логическое|Включает безопасность на основе виртуализации (VBS).|
+|deviceGuardEnableSecureBootWithDMA|Логическое|Это свойство будет обесценилось в мае 2019 г. и будет заменено свойством DeviceGuardSecureBootWithDMA. Указывает, включен ли уровень безопасности платформы при следующей перезагрузке.|
 |deviceGuardSecureBootWithDMA|[secureBootWithDMAType](../resources/intune-deviceconfig-securebootwithdmatype.md)|Указывает, включен ли уровень безопасности платформы при следующей перезагрузке. Возможные значения: `notConfigured`, `withoutDMA`, `withDMA`.|
 |deviceGuardLaunchSystemGuard|[включить](../resources/intune-shared-enablement.md)|Позволяет ИТ-администратору настроить запуск System Guard. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |smartScreenEnableInShell|Boolean|Позволяет ИТ-администраторам настраивать SmartScreen для Windows.|
@@ -218,11 +218,11 @@ ms.locfileid: "59069070"
 |applicationGuardAllowPrintToXPS|Boolean|Позволяет разрешить печать в XPS из контейнера.|
 |applicationGuardAllowPrintToLocalPrinters|Boolean|Позволяет разрешить печать на локальных принтерах из контейнера.|
 |applicationGuardAllowPrintToNetworkPrinters|Boolean|Позволяет разрешить печать на сетевых принтерах из контейнера.|
-|applicationGuardAllowVirtualGPU|Boolean|Разрешить охраннику приложения использовать виртуальный GPU|
-|applicationGuardAllowFileSaveOnHost|Boolean|Разрешить пользователям скачивать файлы из Edge в контейнере охраны приложений и сохранять их в файловой системе хост|
-|applicationGuardAllowCameraMicrophoneRedirection|Boolean|Получает или задает, могут ли приложения внутри Application Guard в Microsoft Defender получить доступ к камере и микрофону устройства.|
+|applicationGuardAllowVirtualGPU|Логическое|Разрешить охраннику приложения использовать виртуальный GPU|
+|applicationGuardAllowFileSaveOnHost|Логическое|Разрешить пользователям скачивать файлы из Edge в контейнере охраны приложений и сохранять их в файловой системе хост|
+|applicationGuardAllowCameraMicrophoneRedirection|Логическое|Получает или задает, могут ли приложения внутри Application Guard в Microsoft Defender получить доступ к камере и микрофону устройства.|
 |applicationGuardCertificateThumbprints|Коллекция String|Позволяет совместно использовать корневые сертификаты определенного уровня устройств с Application Guard в Microsoft Defender контейнером.|
-|bitLockerAllowStandardUserEncryption|Boolean|Позволяет администратору разрешить стандартным пользователям включить encrpytion во время azure AD Join.|
+|bitLockerAllowStandardUserEncryption|Логическое|Позволяет администратору разрешить стандартным пользователям включить encrpytion во время azure AD Join.|
 |bitLockerDisableWarningForOtherDiskEncryption|Boolean|Позволяет администратору отключить предупреждение о другом методе шифрования диска на компьютерах пользователей.|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Позволяет администратору требовать включения шифрования с помощью BitLocker. Эта политика действительна только для мобильных устройств.|
 |bitLockerEncryptDevice|Boolean|Позволяет администратору требовать включения шифрования с помощью BitLocker.|
@@ -230,38 +230,38 @@ ms.locfileid: "59069070"
 |bitLockerFixedDrivePolicy|[bitLockerFixedDrivePolicy](../resources/intune-deviceconfig-bitlockerfixeddrivepolicy.md);|Политика фиксированного диска BitLocker.|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|Политика BitLocker в отношении съемных дисков.|
 |bitLockerRecoveryPasswordRotation|[bitLockerRecoveryPasswordRotationType](../resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)|Этот параметр инициирует вращение пароля на основе клиента после восстановления диска ОС (с помощью bootmgr или WinRE). Возможные значения: `notConfigured`, `disabled`, `enabledForAzureAd`, `enabledForAzureAdAndHybrid`.|
-|defenderDisableScanArchiveFiles|Boolean|Позволяет или не разрешает сканирование архивов.|
-|defenderAllowScanArchiveFiles|Boolean|Позволяет или не разрешает сканирование архивов.|
-|defenderDisableBehaviorMonitoring|Boolean|Позволяет или не разрешает Защитник Windows функции мониторинга поведения.|
+|defenderDisableScanArchiveFiles|Логическое|Позволяет или не разрешает сканирование архивов.|
+|defenderAllowScanArchiveFiles|Логическое|Позволяет или не разрешает сканирование архивов.|
+|defenderDisableBehaviorMonitoring|Логическое|Позволяет или не разрешает Защитник Windows функции мониторинга поведения.|
 |defenderAllowBehaviorMonitoring|Boolean|Позволяет или не разрешает Защитник Windows функции мониторинга поведения.|
-|defenderDisableCloudProtection|Boolean|Чтобы лучше защитить компьютер, Защитник Windows отправляет в Корпорацию Майкрософт сведения о любых проблемах, которые он находит. Корпорация Майкрософт проанализирует эту информацию, узнает больше о проблемах, затрагивающих вас и других клиентов, и предложит улучшенные решения.|
+|defenderDisableCloudProtection|Логический|Чтобы лучше защитить компьютер, Защитник Windows отправляет в Корпорацию Майкрософт сведения о любых проблемах, которые он находит. Корпорация Майкрософт проанализирует эту информацию, узнает больше о проблемах, затрагивающих вас и других клиентов, и предложит улучшенные решения.|
 |defenderAllowCloudProtection|Boolean|Чтобы лучше защитить компьютер, Защитник Windows отправляет в Корпорацию Майкрософт сведения о любых проблемах, которые он находит. Корпорация Майкрософт проанализирует эту информацию, узнает больше о проблемах, затрагивающих вас и других клиентов, и предложит улучшенные решения.|
-|defenderEnableScanIncomingMail|Boolean|Позволяет или не разрешает сканирование электронной почты.|
+|defenderEnableScanIncomingMail|Логический|Позволяет или не разрешает сканирование электронной почты.|
 |defenderEnableScanMappedNetworkDrivesDuringFullScan|Boolean|Позволяет или не разрешает полное сканирование картографифицированных сетевых дисков.|
-|defenderDisableScanRemovableDrivesDuringFullScan|Boolean|Позволяет или отстраняет полное сканирование съемных дисков. Во время быстрого сканирования съемные диски могут по-прежнему проверяться.|
-|defenderAllowScanRemovableDrivesDuringFullScan|Boolean|Позволяет или отстраняет полное сканирование съемных дисков. Во время быстрого сканирования съемные диски могут по-прежнему проверяться.|
-|defenderDisableScanDownloads|Логический|Позволяет или не разрешает Защитник Windows IOAVP Protection.|
-|defenderAllowScanDownloads|Логический|Позволяет или не разрешает Защитник Windows IOAVP Protection.|
-|defenderDisableIntrusionPreventionSystem|Boolean|Позволяет или не разрешает Защитник Windows функции предотвращения вторжений.|
-|defenderAllowIntrusionPreventionSystem|Boolean|Позволяет или не разрешает Защитник Windows функции предотвращения вторжений.|
-|defenderDisableOnAccessProtection|Boolean|Позволяет или не разрешает Защитник Windows функции защиты доступа.|
-|defenderAllowOnAccessProtection|Boolean|Позволяет или не разрешает Защитник Windows функции защиты доступа.|
+|defenderDisableScanRemovableDrivesDuringFullScan|Логическое|Позволяет или отстраняет полное сканирование съемных дисков. Во время быстрого сканирования съемные диски могут по-прежнему проверяться.|
+|defenderAllowScanRemovableDrivesDuringFullScan|Логическое|Позволяет или отстраняет полное сканирование съемных дисков. Во время быстрого сканирования съемные диски могут по-прежнему проверяться.|
+|defenderDisableScanDownloads|Логическое|Позволяет или не разрешает Защитник Windows IOAVP Protection.|
+|defenderAllowScanDownloads|Логическое|Позволяет или не разрешает Защитник Windows IOAVP Protection.|
+|defenderDisableIntrusionPreventionSystem|Логическое|Позволяет или не разрешает Защитник Windows функции предотвращения вторжений.|
+|defenderAllowIntrusionPreventionSystem|Логическое|Позволяет или не разрешает Защитник Windows функции предотвращения вторжений.|
+|defenderDisableOnAccessProtection|Логическое|Позволяет или не разрешает Защитник Windows функции защиты доступа.|
+|defenderAllowOnAccessProtection|Логическое|Позволяет или не разрешает Защитник Windows функции защиты доступа.|
 |defenderDisableRealTimeMonitoring|Логический|Позволяет или не разрешает Защитник Windows функции мониторинга реального времени.|
 |defenderAllowRealTimeMonitoring|Логический|Позволяет или не разрешает Защитник Windows функции мониторинга реального времени.|
 |defenderDisableScanNetworkFiles|Логический|Позволяет или не разрешает сканирование сетевых файлов.|
-|defenderAllowScanNetworkFiles|Логический|Позволяет или не разрешает сканирование сетевых файлов.|
-|defenderDisableScanScriptsLoadedInInternetExplorer|Логический|Позволяет или не разрешает Защитник Windows скриптов.|
-|defenderAllowScanScriptsLoadedInInternetExplorer|Boolean|Позволяет или не разрешает Защитник Windows скриптов.|
+|defenderAllowScanNetworkFiles|Логическое|Позволяет или не разрешает сканирование сетевых файлов.|
+|defenderDisableScanScriptsLoadedInInternetExplorer|Логическое|Позволяет или не разрешает Защитник Windows скриптов.|
+|defenderAllowScanScriptsLoadedInInternetExplorer|Логическое|Позволяет или не разрешает Защитник Windows скриптов.|
 |defenderBlockEndUserAccess|Boolean|Позволяет или не разрешает пользователю доступ к пользовательскому Защитник Windows пользовательскому интерфейсу. Если они будут отложены, Защитник Windows уведомления будут также подавлены.|
-|defenderAllowEndUserAccess|Boolean|Позволяет или не разрешает пользователю доступ к пользовательскому Защитник Windows пользовательскому интерфейсу. Если они будут отложены, Защитник Windows уведомления будут также подавлены.|
+|defenderAllowEndUserAccess|Логическое|Позволяет или не разрешает пользователю доступ к пользовательскому Защитник Windows пользовательскому интерфейсу. Если они будут отложены, Защитник Windows уведомления будут также подавлены.|
 |defenderScanMaxCpuPercentage|Int32|Представляет средний коэффициент нагрузки ЦП для Защитник Windows проверки (в процентах). Значение по умолчанию равно 50. Допустимые значения: от 0 до 100|
-|defenderCheckForSignaturesBeforeRunningScan|Boolean|Этот параметр политики позволяет управлять проверкой новых определений вирусов и программ-шпионов перед запуском сканирования.|
-|defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|Добавлена Windows 10 версии 1709. Этот параметр политики определяет, насколько антивирусная программа будут блокировать и сканировать подозрительные файлы. Тип значения является integer. Для этой функции требуется включить параметр "Присоединиться к Microsoft MAPS". Возможные значения: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
-|defenderCloudExtendedTimeoutInSeconds|Int32|Добавлена Windows 10 версии 1709. Эта функция позволяет антивирусная программа подозрительный файл на срок до 60 секунд и сканировать его в облаке, чтобы убедиться, что он является безопасным. Тип значения является наборным, диапазон — 0 — 50. Эта функция зависит от трех других параметров MAPS, которые необходимо включить: "Настройка функции "Блок с первого взгляда"; " Присоединяйтесь к Microsoft MAPS"; "Отправка образцов файлов при необходимости дальнейшего анализа". Допустимые значения: от 0 до 50.|
+|defenderCheckForSignaturesBeforeRunningScan|Логический|Этот параметр политики позволяет управлять проверкой новых определений вирусов и программ-шпионов перед запуском сканирования.|
+|defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|Добавлена Windows 10 версии 1709. Этот параметр политики определяет, насколько антивирусная программа  будут блокировать и сканировать подозрительные файлы. Тип значения является integer. Для этой функции требуется включить параметр "Присоединиться к Microsoft MAPS". Возможные значения: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
+|defenderCloudExtendedTimeoutInSeconds|Int32|Добавлена Windows 10 версии 1709. Эта функция позволяет антивирусная программа  подозрительный файл на срок до 60 секунд и сканировать его в облаке, чтобы убедиться, что он является безопасным. Тип значения является наборным, диапазон — 0 — 50. Эта функция зависит от трех других параметров MAPS, которые необходимо включить: "Настройка функции "Блок с первого взгляда"; " Присоединяйтесь к Microsoft MAPS"; "Отправка образцов файлов при необходимости дальнейшего анализа". Допустимые значения: от 0 до 50.|
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|Период времени (в днях), когда элементы карантина будут храниться в системе. Допустимые значения: от 0 до 90.|
 |defenderDisableCatchupFullScan|Логический|Этот параметр политики позволяет настроить проверки наверстать упущенное для запланированных полных сканов. Проверка наверстать упущенное — это проверка, которая инициируется из-за пропущенного регулярно запланированного сканирования. Обычно эти запланированные проверки пропускаются из-за отключения компьютера в запланированное время.|
-|defenderDisableCatchupQuickScan|Логический|Этот параметр политики позволяет настроить проверки наверстать упущенное для запланированных быстрых сканирований. Проверка наверстать упущенное — это проверка, которая инициируется из-за пропущенного регулярно запланированного сканирования. Обычно эти запланированные проверки пропускаются из-за отключения компьютера в запланированное время.|
-|defenderEnableLowCpuPriority|Логический|Этот параметр политики позволяет включить или отключить низкий приоритет ЦП для запланированных сканов.|
+|defenderDisableCatchupQuickScan|Логическое|Этот параметр политики позволяет настроить проверки наверстать упущенное для запланированных быстрых сканирований. Проверка наверстать упущенное — это проверка, которая инициируется из-за пропущенного регулярно запланированного сканирования. Обычно эти запланированные проверки пропускаются из-за отключения компьютера в запланированное время.|
+|defenderEnableLowCpuPriority|Логическое|Этот параметр политики позволяет включить или отключить низкий приоритет ЦП для запланированных сканов.|
 |defenderFileExtensionsToExclude|Коллекция String|Расширения файлов, которые необходимо исключить из проверки и защиты в режиме реального времени.|
 |defenderFilesAndFoldersToExclude|Коллекция String|Файлы и папки, которые необходимо исключить из проверки и защиты в режиме реального времени.|
 |defenderProcessesToExclude|Коллекция String|Процессы, которые необходимо исключить из проверки и защиты в режиме реального времени.|
@@ -275,7 +275,7 @@ ms.locfileid: "59069070"
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md);|Проверка уровня согласия пользователя в Защитник Windows для отправки данных. Возможные значения: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Позволяет администратору указать допустимые уровни серьезности угрозы и соответствующий ИД действий по умолчанию.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|[коллекция deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -1040,6 +1040,7 @@ ms.locfileid: "59069070"
   }
 }
 ```
+
 
 
 

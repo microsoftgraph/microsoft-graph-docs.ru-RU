@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 72bf9ad32591dff339e090cd55e79a0d71b1164a
-ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
+ms.openlocfilehash: ab41bebd48947851721e2adc78a07f01fc522117
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61561519"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291964"
 ---
 # <a name="meetingregistration-resource-type"></a>тип ресурса meetingRegistration
 
@@ -18,9 +18,9 @@ ms.locfileid: "61561519"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит сведения о регистрации собрания в Интернете, например [вебинар Microsoft Teams вебинар.](https://support.microsoft.com/en-us/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3) 
+Содержит сведения о регистрации собрания в Интернете, например [вебинар Microsoft Teams вебинар](https://support.microsoft.com/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3). 
 
-Наследует [от meetingRegistrationBase](meetingregistrationbase.md).
+Наследуется [от meetingRegistrationBase](meetingregistrationbase.md).
 
 ## <a name="methods"></a>Методы
 
@@ -36,12 +36,12 @@ ms.locfileid: "61561519"
 | Свойство | Тип | Описание |
 | :------- | :--- | :---------- |
 | allowedRegistrant | [meetingAudience](#meetingaudience-values) | Указывает, кто может зарегистрироваться для собрания. |
-| description | Строка | Описание собрания. |
-| endDateTime | DateTime | Время окончания собрания в UTC. |
+| description | String | Описание собрания. |
+| endDateTime | Даты и время | Время окончания собрания в UTC. |
 | registrationPageViewCount | Int32 | Количество посещений страницы регистрации. Только для чтения. |
-| registrationPageWebUrl | Строка | URL-адрес страницы регистрации. Только для чтения. |
+| registrationPageWebUrl | String | URL-адрес страницы регистрации. Только для чтения. |
 | динамики | [meetingSpeaker](meetingSpeaker.md) collection | Сведения спикера собрания. |
-| startDateTime | DateTime | Время начала собрания в UTC. |
+| startDateTime | Даты и время | Время начала собрания в UTC. |
 | subject | String | Тема собрания. |
 
 ### <a name="meetingaudience-values"></a>значения meetingAudience

@@ -2,15 +2,15 @@
 title: Тип ресурса deviceManagementSettings
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 52cfd12bc068926903e37b1a823ac9d58a48f2a2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1009096aa25a504ba02b3c0cc2b8dc9eed6cf2dc
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59069259"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291157"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Тип ресурса deviceManagementSettings
 
@@ -28,15 +28,16 @@ ms.locfileid: "59069259"
 |deviceComplianceCheckinThresholdDays|Int32|Количество дней, в течение которых устройство может считаться соответствующим требованиям, несмотря на отсутствие записей после изменения.|
 |isScheduledActionEnabled|Boolean|Включена ли функция для запланированного действия для правила.|
 |secureByDefault|Boolean|Устройство считается несоответствующим требованиям, если для данного свойства установлено значение true, но не выбраны целевые политики соответствия требованиям.|
-|enhancedJailBreak|Логический|Включена функция или нет для расширенного обнаружения побега из тюрьмы.|
+|enhancedJailBreak|Логическое|Включена функция или нет для расширенного обнаружения побега из тюрьмы.|
 |deviceInactivityBeforeRetirementInDay|Int32|Если устройство не проверяется в течение определенного количества дней, данные компании могут быть удалены и устройство не будет под управлением. Допустимые значения от 30 до 270|
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|Поставщик производных учетных данных для использования для этой учетной записи. Возможные значения: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
-|derivedCredentialUrl|Строка|URI самообслуживаемого поставщика учетных данных.|
-|androidDeviceAdministratorEnrollmentEnabled|Логический|Свойство, определяющее, включена ли регистрация администратора устройства Android для этой учетной записи.|
-|ignoreDevicesForUnsupportedSettingsEnabled|Логический|Свойство для определения того, следует ли игнорировать неподтверченные параметры соответствия определенным моделям устройств.|
-|enableLogCollection|Boolean|Определяет, должна ли функция коллекции журналов быть доступной для использования.|
+|derivedCredentialUrl|String|URI самообслуживаемого поставщика учетных данных.|
+|androidDeviceAdministratorEnrollmentEnabled|Логическое|Свойство, определяющее, включена ли регистрация администратора устройства Android для этой учетной записи.|
+|ignoreDevicesForUnsupportedSettingsEnabled|Логическое|Свойство для определения того, следует ли игнорировать неподтверченные параметры соответствия определенным моделям устройств.|
+|enableLogCollection|Логическое|Определяет, должна ли функция коллекции журналов быть доступной для использования.|
+|enableAutopilotDiagnostics|Логическое|Определяет, включена или нет функция диагностики автопилота.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -58,9 +59,11 @@ ms.locfileid: "59069259"
   "derivedCredentialUrl": "String",
   "androidDeviceAdministratorEnrollmentEnabled": true,
   "ignoreDevicesForUnsupportedSettingsEnabled": true,
-  "enableLogCollection": true
+  "enableLogCollection": true,
+  "enableAutopilotDiagnostics": true
 }
 ```
+
 
 
 

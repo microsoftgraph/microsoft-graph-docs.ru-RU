@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75891fda7feaa7918d4fa94d5a4b7fd67973c226
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: e9b69cd321a815841e1c6297884a2e436147c513
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61338647"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290422"
 ---
 # <a name="get-userexperienceanalyticsoverview"></a>Get userExperienceAnalyticsOverview
 
@@ -20,7 +20,7 @@ ms.locfileid: "61338647"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей [объекта userExperienceAnalyticsOverview.](../resources/intune-devices-userexperienceanalyticsoverview.md)
+Чтение свойств и связей [объекта userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,14 +46,14 @@ GET /deviceManagement/userExperienceAnalyticsOverview
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и `200 OK` [объект userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) в тексте ответа.
+В случае успеха этот метод возвращает код `200 OK` отклика и [объект userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOve
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1219
+Content-Length: 1213
 
 {
   "value": {
@@ -101,7 +101,7 @@ Content-Length: 1219
     "workFromAnywhereHealthState": "insufficientData",
     "appHealthState": "insufficientData",
     "resourcePerformanceHealthState": "insufficientData",
-    "batteryHealthHealthState": "insufficientData"
+    "batteryHealthState": "insufficientData"
   }
 }
 ```

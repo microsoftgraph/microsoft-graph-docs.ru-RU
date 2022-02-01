@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d547203bd05eaf06921e837c0c4d190646004b5a
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 2c9cf7fbf4551fa8fe47b14a93b49389b710c747
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072350"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290471"
 ---
 # <a name="serviceupdatemessage-resource-type"></a>тип ресурса serviceUpdateMessage
 
@@ -20,20 +20,20 @@ ms.locfileid: "62072350"
 
 Представляет объявления об изменениях в службе.
 
-Представляет такие объявления, как основные обновления, новые функции в продукте; например, публикация нового Windows.
+Представляет такие объявления, как основные обновления, новые функции в продукте; например, публикация нового SharePoint.
 
-Наследует от [serviceAnnouncementBase](../resources/serviceannouncementbase.md).
+Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Get serviceUpdateMessage](../api/serviceupdatemessage-get.md)|[serviceUpdateMessage](../resources/serviceupdatemessage.md)|Извлечение свойств и связей объекта [serviceUpdateMessage.](../resources/serviceupdatemessage.md) |
-|[markRead](../api/serviceupdatemessage-markread.md)|Логическое|Пометить список [serviceUpdateMessage](../resources/serviceupdatemessage.md)s в качестве чтения для подписанного пользователя. |
-|[markUnread](../api/serviceupdatemessage-markunread.md)|Логическое|Пометить список [serviceUpdateMessage](../resources/serviceupdatemessage.md)s как непрочитанные для подписанного пользователя. |
-|[архив](../api/serviceupdatemessage-archive.md)|Логический|Архивировать список [serviceUpdateMessage](../resources/serviceupdatemessage.md)s для подписанного пользователя.|
-|[unarchive](../api/serviceupdatemessage-unarchive.md)|Логическое|Unarchive a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the signed in user.|
-|[избранное](../api/serviceupdatemessage-favorite.md)|Логическое|Измените состояние списка [serviceUpdateMessage](../resources/serviceupdatemessage.md)s на избранное для подписанного пользователя.|
-|[unfavorite](../api/serviceupdatemessage-unfavorite.md)|Логическое|Удалите любимый статус [serviceUpdateMessage](../resources/serviceupdatemessage.md)s для подписанного пользователя.|
+|[Get serviceUpdateMessage](../api/serviceupdatemessage-get.md)|[serviceUpdateMessage](../resources/serviceupdatemessage.md)|Извлечение свойств и связей объекта [serviceUpdateMessage](../resources/serviceupdatemessage.md) . |
+|[markRead](../api/serviceupdatemessage-markread.md)|Логическое|Пометить список [serviceUpdateMessages](../resources/serviceupdatemessage.md) в качестве чтения для подписанного пользователя.|
+|[markUnread](../api/serviceupdatemessage-markunread.md)|Логическое|Пометить список [serviceUpdateMessages](../resources/serviceupdatemessage.md) как непрочитанные **для** подписанного пользователя.|
+|[архив](../api/serviceupdatemessage-archive.md)|Логический|Архивировать список [serviceUpdateMessages](../resources/serviceupdatemessage.md) для подписанного пользователя.|
+|[unarchive](../api/serviceupdatemessage-unarchive.md)|Логическое|Unarchive a list of [serviceUpdateMessages](../resources/serviceupdatemessage.md) for the signed in user.|
+|[избранное](../api/serviceupdatemessage-favorite.md)|Логическое|Измените состояние списка [serviceUpdateMessages](../resources/serviceupdatemessage.md) на избранное для подписанного пользователя.|
+|[unfavorite](../api/serviceupdatemessage-unfavorite.md)|Логическое|Удалите любимый статус [serviceUpdateMessages](../resources/serviceupdatemessage.md) для подписанного пользователя.|
 |[Список вложений](../api/serviceupdatemessage-list-attachments.md)|[коллекция serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md)|Получите список вложений, связанных с сообщением службы.|
 
 ## <a name="properties"></a>Свойства
@@ -43,7 +43,7 @@ ms.locfileid: "62072350"
 |attachmentsArchive|Stream|Почтовый файл всех вложений для сообщения.|
 |body|[itemBody](../resources/itembody.md)|Тип контента и содержимое тела сообщения службы.|
 |category|serviceUpdateCategory|Категория сообщений службы. Возможные значения: `preventOrFixIssue`, `planForChange`, `stayInformed`, `unknownFutureValue`.|
-|details|[Коллекция(keyValuePair)](../resources/keyvaluepair.md)|Дополнительные сведения о сообщении службы. Это свойство не поддерживает фильтры. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
+|details|Коллекция ([keyValuePair](../resources/keyvaluepair.md))|Дополнительные сведения о сообщении службы. Это свойство не поддерживает фильтры. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |endDateTime|DateTimeOffset|Конечное время сообщения службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |hasAttachments|Boolean|Указывает, есть ли у сообщения какие-либо вложения.|
 |id|String|Id сообщения службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
@@ -59,7 +59,7 @@ ms.locfileid: "62072350"
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|attachments|[Collection(serviceAnnouncementAttachment)](../resources/serviceannouncementattachment.md)|Коллекция [serviceAnnouncementAttachments](../resources/serviceannouncementattachment.md).|
+|attachments|Collection([serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md))|Коллекция [serviceAnnouncementAttachments](../resources/serviceannouncementattachment.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

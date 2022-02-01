@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 286147139eb81f9d2e9d8ec0b8e4f463d433586f
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: e49607876881a4e472554b7465764c7404d916fd
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61343415"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62290899"
 ---
 # <a name="update-microsofttunnelconfiguration"></a>Обновление microsoftTunnelConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "61343415"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [microsoftTunnelConfiguration.](../resources/intune-mstunnel-microsofttunnelconfiguration.md)
+Обновление свойств объекта [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,35 +44,35 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса предоставляем представление JSON для [объекта MicrosoftTunnelConfiguration.](../resources/intune-mstunnel-microsofttunnelconfiguration.md)
+В теле запроса предоставляем представление JSON для [объекта MicrosoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) .
 
-В следующей таблице показаны свойства, необходимые при создании [microsoftTunnelConfiguration.](../resources/intune-mstunnel-microsofttunnelconfiguration.md)
+В следующей таблице показаны свойства, необходимые при создании [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Id MicrosoftTunnelConfiguration|
 |displayName|String|Имя отображения MicrosoftTunnelConfiguration|
-|description|Строка|Описание MicrosoftTunnelConfiguration|
-|сеть|Строка|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
-|dnsServers|Коллекция String|DNS-серверы, которые будут использоваться клиентами|
-|defaultDomainSuffix|Строка|Приложение домена по умолчанию, которое будет использоваться клиентами|
-|routesInclude|Коллекция String|Маршруты, которые будут маршрутить сервер|
-|routesExclude|Коллекция String|Подмышы маршрутов, которые не будут маршрутиться сервером|
-|splitDNS|Коллекция String|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
+|description|String|Описание MicrosoftTunnelConfiguration|
+|сеть|String|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
+|dnsServers|Коллекция строк|DNS-серверы, которые будут использоваться клиентами|
+|defaultDomainSuffix|String|Приложение домена по умолчанию, которое будет использоваться клиентами|
+|routesInclude|Коллекция строк|Маршруты, которые будут маршрутить сервер|
+|routesExclude|Коллекция объектов string|Подмышы маршрутов, которые не будут маршрутиться сервером|
+|splitDNS|Коллекция объектов string|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
 |listenPort|Int32|Порт, который будут прослушивать TCP и UPD на сервере|
 |advancedSettings|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Дополнительные параметры, которые могут быть применены к серверу|
 |lastUpdateDateTime|DateTimeOffset|При последнем обновлении MicrosoftTunnelConfiguration|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
-|отключениеUDPConnections|Boolean|При задавке отключенияUDPConnections, клиенты и VPN-сервер не будут использовать connctions DTLS для обработки данных tansfer.|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity.|
+|отключениеUDPConnections|Логическое|При наборе disableUdpConnections клиенты и VPN-сервер не будут использовать подключения DTLS для данных tansfer.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код отклика и обновленный [объект microsoftTunnelConfiguration](../resources/intune-mstunnel-microsofttunnelconfiguration.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
