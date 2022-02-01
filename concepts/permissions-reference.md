@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 56a6d97dbaba0a66e2d30d0a9afea481f78063e5
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: d169638dd2565101bcf5e21fb8becdc88b9d25dd
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62261765"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291466"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -1340,7 +1340,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 В случае рабочих и учебных учетных записей разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ позволяют приложению получать доступ к содержимому OneNote других пользователей, которое доступно вошедшему пользователю в организации.
 
 ### <a name="example-usage"></a>Примеры использования
-#### <a name="delegated"></a>Делегированные разрешения
+#### <a name="delegated"></a>Делегированные
 
 * _Notes.Create_. Создание записных книжек для вошедшего пользователя (`POST /me/onenote/notebooks`).
 * _Notes.Read_. Чтение записных книжек вошедшего пользователя (`GET /me/onenote/notebooks`).
@@ -2189,8 +2189,16 @@ SubjectRightsRequest.ReadWrite.All | Чтение и запись запросо
 
 |   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamworkTag.ReadWrite_| Чтение и запись тегов в Microsoft Teams. | Чтение и запись тегов в любой команде Microsoft Teams без необходимости входа пользователя.  | Да | Нет |
-| _TeamworkTag.Read_ | Чтение тегов в Microsoft Teams. | Чтение тегов в любой команде Microsoft Teams без необходимости входа пользователя. | Да | Нет |
+| _TeamworkTag.ReadWrite_| Чтение и запись тегов в Microsoft Teams. | Позволяет приложению считывать и записывать теги в Teams от имени вошедшего пользователя.   | Да | Нет |
+| _TeamworkTag.Read_ | Чтение тегов в Microsoft Teams. | Позволяет приложению считывать теги в Teams от имени вошедшего пользователя. | Да | Нет |
+
+#### <a name="application-permissions"></a>Разрешения приложений
+
+|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkTag.ReadWrite.All_| Чтение и запись тегов в Microsoft Teams. | Позволяет приложению считывать и записывать теги в Teams без необходимости входа пользователя.   | Да | Нет |
+| _TeamworkTag.Read.All_ | Чтение тегов в Microsoft Teams. | Позволяет приложению считывать теги в Teams без необходимости входа пользователя | Да | Нет |
+
 
 ## <a name="terms-of-use-permissions"></a>Разрешения, связанные с условиями использования 
 
