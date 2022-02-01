@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 156f15534b102d5a3e17acd7b04c32e30f34a3f7
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 96d68f14255178ad94bd9fdcc88c8358df018cff
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61803506"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282067"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -18,10 +18,70 @@ ms.locfileid: "61803506"
 > Функции в состоянии _предварительной версии_, в том числе API и инструменты, могут изменяться без предварительного уведомления, а некоторые из них, возможно, никогда не достигнут общедоступного состояния (GA). Не используйте функции, доступные в виде предварительных версий, в рабочих приложениях.
 
 
+## <a name="january-2022-new-and-generally-available"></a>Январь 2022 г.: новые и общедоступные возможности
+
+### <a name="devices-and-apps--service-health-and-communications"></a>Устройства и приложения | Работоспособность и взаимодействие служб
+Получите [вложение с уведомлением о службе](/graph/api/resources/serviceAnnouncementAttachment), добавленное в [сообщение об обновлении службы](/graph/api/resources/serviceupdatemessage).
+
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+- Получите коллекцию ресурсов [проверки доступа и проверяющих](/graph/api/resources/accessreviewreviewer), где определены проверяющие, с которыми будет установлена связь для [экземпляра проверки доступа](/graph/api/resources/accessReviewInstance).
+- Дифференцируйте 3 типа ресурсов, доступ к которым представлен через [решение о проверке доступа](/graph/api/resources/accessreviewinstancedecisionitem):
+  - [Политика назначения пакета для доступа](/graph/api/resources/accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource), для которой доступ определяется решением о проверке доступа.
+  - [Роль ресурса Azure](/graph/api/resources/accessReviewInstanceDecisionItemAzureRoleResource), для которой доступ определяется решением о проверке доступа.
+  - [Субъект-служба](/graph/api/resources/accessReviewInstanceDecisionItemServicePrincipalResource), для которой доступ к ресурсу определяется решением о проверке доступа.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход
+Примените [элемент управления сеансом](/graph/api/resources/conditionalAccessSessionControls) (путем настройки свойства **disableResilienceDefaults**), чтобы определить, следует ли Azure AD расширять существующие сеансы на основе сведений, собранных до сбоя.
+
+### <a name="teamwork"></a>Teamwork
+[Создайте чат](/graph/api/chat-post) с помощью разрешений приложений.
+
+## <a name="january-2022-new-in-preview-only"></a>Январь 2022 г.: новое только в предварительной версии
+
+### <a name="compliance--ediscovery"></a>Соответствие требованиям | Обнаружение электронных данных
+Получите URL-адрес веб-сайта OneDrive для бизнеса хранителя (свойство **siteWebUrl** [userSource](/graph/api/resources/ediscovery-userSource?view=graph-rest-beta&preserve-view=true)).
+
+### <a name="devices-and-apps--cloud-pc"></a>Устройства и приложения | Облачный ПК
+- Получите или обновите [параметры для организации](/graph/api/resources/cloudpcorganizationsettings?view=graph-rest-beta&preserve-view=true), включая версию операционной системы Windows для предоставления на облачных компьютерах, а также тип учетной записи пользователя на предоставленных облачных компьютерах.
+- [Измените тип учетной записи](/graph/api/cloudPC-changeUserAccountType?view=graph-rest-beta&preserve-view=true) пользователя на указанном облачном компьютере.
+
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+- Рецензенты проверки доступа могут [записывать](/graph/api/accessreviewinstancedecisionitem-recordalldecisions?view=graph-rest-beta&preserve-view=true) решения, для которых текущий пользователь является рецензентом.
+- Настройте [дату и время последнего входа пользователя в качестве информации](/graph/api/resources/userLastSignInRecommendationInsightSetting?view=graph-rest-beta&preserve-view=true), чтобы помочь рецензентам принимать решения для [определения расписания проверки доступа](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true).
+- Настройте [дату и время последнего входа пользователя в качестве информации](/graph/api/resources/userSignInInsight?view=graph-rest-beta&preserve-view=true) для [принятия решения о доступе пользователя или субъекта в экземпляре проверки доступа](/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta&preserve-view=true).
+- Инициатор запроса пакета для доступа может предоставить пользовательские сведения в составе [ресурса пакета для доступа](/graph/api/resources/accesspackageresource?view=graph-rest-beta&preserve-view=true), который может использоваться для принятия решений об утверждении пакета для доступа.
+- Инициатор запроса может изменить ответ на [вопрос](/graph/api/resources/accessPackageQuestion?view=graph-rest-beta&preserve-view=true) в [политике назначения пакета для доступа](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true).
+
+### <a name="reports--identity-and-access-reports"></a>Отчеты | Отчеты об удостоверениях и доступе
+- Получите сведения о [методах проверки подлинности, зарегистрированных для пользователя](/graph/api/resources/userRegistrationDetails?view=graph-rest-beta&preserve-view=true), таких как многофакторная проверка подлинности, самостоятельный сброс пароля и проверка подлинности без пароля.
+- Получите следующие свойства для события [входа в систему](/graph/api/resources/signIn?view=graph-rest-beta&preserve-view=true) пользователя или приложения в организации: 
+  - Любой [контекст проверки подлинности](/graph/api/resources/authenticationContext?view=graph-rest-beta&preserve-view=true) условного доступа.
+  - Любая [политика времени существования сеанса](/graph/api/resources/sessionLifetimePolicy?view=graph-rest-beta&preserve-view=true)условного доступа.
+  - Идентификатор ресурса Azure, доступ к которому осуществляется при входе.
+  - Идентификатор учетных данных федеративного удостоверения приложения, если он использовался для входа.
+  - Идентификатор субъекта-службы, представляющего целевой ресурс в событии входа.
+
+### <a name="reports--microsoft-365-usage-reports"></a>Отчеты | Отчеты об использовании Microsoft 365
+Получите отчеты об использовании Outlook, OneDrive и SharePoint для Microsoft Cloud for US Government. См. сводку по [облачным развертываниям](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true#cloud-deployments).
+
+### <a name="sites-and-lists"></a>Сайты и списки
+- Добавьте или синхронизируйте тип контента из концентратора типов контента на [сайт](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true) или в [список](/graph/api/resources/list?view=graph-rest-beta&preserve-view=true) с помощью действия [addCopyFromContentTypeHub](/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-beta&preserve-view=true). Это делает тип контента или его обновление доступными для определенного сайта или списка, где это необходимо. Это улучшение по сравнению с устаревшей инфраструктурой синхронизации, которая распространяет тип контента на все сайты в организации, сокращая время ожидания распространения публикации. 
+- Получите одну или несколько [многофункциональных длительных операций](/graph/api/resources/richlongrunningoperation?view=graph-rest-beta&preserve-view=true), происходящих на сайте или в списке, которые могут выполняться при синхронном добавлении типа контента.
+- Получите коллекцию совместимых ресурсов [типа контента](/graph/api/resources/contentType?view=graph-rest-beta&preserve-view=true) из концентратора типов контента, совместимых с помощью действия [getCompatibleHubContentTypes](/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-beta&preserve-view=true). 
+
+### <a name="teamwork"></a>Teamwork
+- Разрешите пользователям выбирать **LastModifiedDateTime** или **CreatedDateTime** в качестве порядка сортировки при [перечислении сообщений в чате](/graph/api/chat-list-messages?view=graph-rest-beta&preserve-view=true).
+- Укажите атрибуцию пользователя (в свойстве **onBehalfOf**), когда бот отправляет [сообщение чата](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) от имени пользователя.
+- Добавьте в [чат](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) следующие типы участников:
+  - [Анонимный гость](/graph/api/resources/anonymousGuestConversationMember?view=graph-rest-beta&preserve-view=true)
+  - [Пользователь учетной записи Майкрософт](/graph/api/resources/microsoftAccountUserConversationMember?view=graph-rest-beta&preserve-view=true)
+  - [Пользователь Skype для бизнеса](/graph/api/resources/skypeForBusinessUserConversationMember?view=graph-rest-beta&preserve-view=true)
+  - [Пользователь Skype](/graph/api/resources/skypeUserConversationMember?view=graph-rest-beta&preserve-view=true)
+
 ## <a name="december-2021-new-and-generally-available"></a>Декабрь 2021 г.: новые и общедоступные возможности
 
 ### <a name="cloud-communications--presence"></a>Облачные коммуникации | Присутствие
-[Подпишитесь на уведомления об изменениях](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true) в состоянии [присутствия](/graph/api/resources/presence) указанного пользователя. Всегда указывайте сертификат шифрования в запросе подписки, так как это [подробные уведомления, которые включают зашифрованные данные ресурсов](webhooks-with-resource-data.md).
+[Подпишитесь на уведомления об изменениях](/graph/api/subscription-post-subscriptions) в состоянии [присутствия](/graph/api/resources/presence) указанного пользователя. Всегда указывайте сертификат шифрования в запросе подписки, так как это [подробные уведомления, которые включают зашифрованные данные ресурсов](webhooks-with-resource-data.md).
 
 
 ### <a name="compliance--subject-rights-requests"></a>Соответствие требованиям | Запросы прав субъектов
@@ -94,42 +154,6 @@ ms.locfileid: "61803506"
 - Более сложную [задачу](/graph/api/resources/task?view=graph-rest-beta&preserve-view=true) можно разделить на более удобные для обработки подзадачи меньшего размера. Каждая подзадача представлена ресурсом [checklistItem](/graph/api/resources/checklistitem?view=graph-rest-beta&preserve-view=true).
 - [Перемещение](/graph/api/basetask-move?view=graph-rest-beta&preserve-view=true) задачи между списками.
 - В [этой публикации в блоге](https://devblogs.microsoft.com/microsoft365dev/announcing-the-public-preview-of-to-do-tasks-api/) содержатся дополнительные сведения и инструкции по переносу существующих приложений, использующих [более раннюю версию API To Do](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true), на [последнюю версию API To Do](/graph/api/resources/tasks-overview?view=graph-rest-beta&preserve-view=true).
-
-
-## <a name="november-2021-new-and-generally-available"></a>Ноябрь 2021 г.: новые и общедоступные возможности
-
-### <a name="files"></a>Файлы
-Узнайте состояние диска на определенный момент времени, указав соответствующую метку времени, зашифрованную в виде URL-адреса. См. [пример](/graph/api/driveitem-delta#example-4-retrieving-delta-results-using-a-timestamp).
-
-### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход
-- Запустите [кампании](/graph/api/resources/authenticationMethodsRegistrationCampaign) и [заставьте пользователей регистрироваться](/graph/api/resources/registrationEnforcement) во время регистрации, чтобы настроить целевые методы проверки подлинности.
--  Настройте [поставщика удостоверений Apple](/graph/api/resources/applemanagedidentityprovider) в клиенте Azure AD B2C.
-
-## <a name="november-2021-new-in-preview-only"></a>Ноябрь 2021 г.: новые возможности только в предварительной версии
-
-### <a name="cloud-communications--online-meeting"></a>Облачные коммуникации | Онлайн-собрание
-Автоматический допуск новых типов участников в собрания по сети в обход "зала ожидания" собрания.
-- Только пользователи, которых приглашает организатор.
-- Только участники из одной и той же компании.
-
-### <a name="devices-and-apps--cloud-pc"></a>Устройства и приложения | Облачный ПК
-- Определите [конфигурацию](/graph/api/resources/cloudPcDomainJoinConfiguration?view=graph-rest-beta&preserve-view=true) того, как подготовленное устройство с облачным компьютером может присоединиться к Azure Active Directory (Azure AD): только в облаке и присоединиться только к Azure AD, или в гибридной системе и присоединиться к локальной службе Active Directory и Azure AD.
-- Получите [ресурс образа коллекции](/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta&preserve-view=true) текущей организации, который можно использовать для подготовки облачного компьютера к работе.
-
-### <a name="devices-and-apps--device-updates"></a>Устройства и приложения | Обновления устройств
-- Используйте [параметры мер безопасности](/graph/api/resources/windowsupdates-safeguardSettings?view=graph-rest-beta&preserve-view=true), чтобы отказаться от защиты от вероятных проблем при развертывании.
-- Поддержка [состояния развертывания](/graph/api/resources/windowsupdates-deploymentState?view=graph-rest-beta&preserve-view=true) при невозможности развертывания из-за того, что содержимое больше не может быть развернуто, например после окончания обслуживания.
-
-### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
-- Определите и назначьте [настраиваемые атрибуты безопасности](/graph/api/resources/custom-security-attributes-overview?view=graph-rest-beta&preserve-view=true) объектам Azure AD. Используйте эти атрибуты для хранения информации, классификации объектов или применения детального контроля доступа к определенным ресурсам Azure. Используйте эти атрибуты вместе с [контролем доступа на основе атрибутов Azure](/azure/role-based-access-control/conditions-overview) (Azure ABAC).
-- [Создайте группу в административной единице](/graph/api/administrativeunit-post-members?view=graph-rest-beta&preserve-view=true).
-
-### <a name="reports--microsoft-365-usage-reports"></a>Отчеты | Отчеты об использовании Microsoft 365
-[Отчеты об использовании Microsoft 365](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true) в типе вывода JSON больше не строго типизированы и имеют тип `Edm.Stream`. Подробности см. в статье [Изменение свойств OData в API отчетов об использовании Microsoft 365 в Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/odata-property-changes-to-microsoft-365-usage-reports-api-in-microsoft-graph/).
-
-### <a name="teamwork"></a>Teamwork
-Отметьте чат как [прочитанный](/graph/api/chat-markChatReadForUser?view=graph-rest-beta&preserve-view=true) или [непрочитанный](/graph/api/chat-markchatunreadforuser?view=graph-rest-beta&preserve-view=true) для пользователя.
-
 
 
 ## <a name="want-to-stay-in-the-loop"></a>Хотите получать актуальную информацию?
