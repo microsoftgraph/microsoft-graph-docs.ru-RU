@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 5f7453dd5c08f282baa7667ad5793c9223e586d0
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 6a30360dddeb06d9f8ac4d1ff5b485229087c3ce
+ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695450"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "62282055"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 
@@ -150,7 +150,7 @@ API Microsoft Search предоставляет метод [query](../api/search
 
 Исправление орфографии — популярный способ обработки несоответствий между опечатками в запросе пользователя и правильными словами в содержимом. При обнаружении опечаток в исходном пользовательском запросе вы можете получить результат поиска для исходного запроса пользователя или исправленной версии запроса. Вы также можете получить сведения об исправлении опечаток в свойстве **queryAlterationResponse** объекта [searchresponse](searchresponse.md).
 
-В теле метода [запроса](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) укажите **queryAlterationOptions** для применения с целью исправления орфографии в запросе. Описание **queryAlterationOptions** определяется в [searchAlterationOptions](./searchalterationoptions.md).
+В [searchRequest](./searchrequest.md) укажите **queryAlterationOptions** для применения с целью исправления орфографии в запросе. Сведения о свойстве **queryAlterationOptions** см. в [searchAlterationOptions](./searchalterationoptions.md).
 
 Примеры использования исправлений орфографии см. в разделе [Исправление орфографии в запросе](/graph/search-concept-speller).
 
