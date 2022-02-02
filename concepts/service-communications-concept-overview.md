@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: high
 ms.prod: service-communications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: aa4654fdb1d3ebfaba2a4cf62000477d9c978684
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 6b6f5d95684f324864919abb08e5835fd14230bd
+ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766147"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62291452"
 ---
 # <a name="overview-for-accessing-service-health-and-communications-in-microsoft-graph"></a>Обзор доступа к сведениям о работоспособности и взаимодействии служб в Microsoft Graph
 Вы можете использовать API взаимодействия служб в Microsoft Graph для доступа к состоянию работоспособности и записям центра сообщений об облачных службах (Майкрософт). Фактическое состояние работоспособности и записи соответствуют службам Microsoft 365 и Dynamics 365, которые поддерживаются API-интерфейсом и подписка на которые есть у клиента.
@@ -35,7 +35,6 @@ ms.locfileid: "59766147"
 ## <a name="dashboards-examples-in-microsoft-365-admin-center"></a>Примеры панелей мониторинга в Центре администрирования Microsoft 365
 В этом разделе показаны примеры в [Центре администрирования Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage), который использует API взаимодействия служб для создания соответствующих панелей мониторинга о работоспособности. Войдите в Центр администрирования с помощью учетной записи администратора и щелкните **Работоспособность**, чтобы увидеть следующие панели мониторинга.
 - [Работоспособность служб](#service-health-dashboard)
-- [Работоспособность выпуска Windows](#windows-release-health-dashboard)
 - [Центр сообщений](#message-center-dashboard)
 
 ### <a name="service-health-dashboard"></a>Панель мониторинга работоспособности служб
@@ -44,21 +43,13 @@ ms.locfileid: "59766147"
 
 **Рис. 1. Панель мониторинга работоспособности служб в Центре администрирования Microsoft 365**
 
-![Снимок экрана: панель мониторинга работоспособности служб для пользователя в Центре администрирования Microsoft 365](images/service-communications-concept-overview-admin-center-serviceHealth2.png)
-
-### <a name="windows-release-health-dashboard"></a>Панель мониторинга работоспособности выпуска Windows
-
-На панели мониторинга **Работоспособность выпуска Windows** можно просмотреть важную информацию о ежемесячных исправлениях и обновлениях компонентов, а также новейшие функции и улучшения для Windows. См. пример, показанный на рис. 2.
-
-**Рис. 2. Панель мониторинга работоспособности выпуска Windows в Центре администрирования Microsoft 365**
-
-![Снимок экрана: панель мониторинга работоспособности выпуска Windows для пользователя в Центре администрирования Microsoft 365](images/service-communications-concept-overview-admin-center-windowshealth2.png)
+![Снимок экрана: панель мониторинга работоспособности служб для пользователя в Центре администрирования Microsoft 365](images/service-communications-concept-overview-admin-center-servicehealth2.png)
 
 
 ### <a name="message-center-dashboard"></a>Панель мониторинга центра сообщений
 На панели мониторинга **Центр сообщений** вы можете просматривать предстоящие изменения, в том числе новые и измененные компоненты, запланированное обслуживание и другие важные объявления. См. примеры, показанные на рис. 3.
 
-**Рис. 3. Панель мониторинга центра сообщений в Центре администрирования Microsoft 365**
+**Рис. 2. Панель мониторинга центра сообщений в Центре администрирования Microsoft 365**
 
 ![Снимок экрана: панель мониторинга центра сообщений для пользователя в Центре администрирования Microsoft 365](images/service-communications-concept-overview-admin-center-messagecenter2.png)
 
