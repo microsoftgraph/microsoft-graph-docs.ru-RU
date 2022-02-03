@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 7b623335255f6884631a25a8a6ec3e30a76687cf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4a85d4795f05bcae3c42fbab84d5e3c3f018d756
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115182"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62350754"
 ---
 ```powershell
 
@@ -41,6 +41,7 @@ $params = @{
     OnlineMeetingProvider = "teamsForBusiness"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
 
 ```

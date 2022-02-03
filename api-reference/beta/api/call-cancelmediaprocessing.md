@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cd19b2fb1a0d872e74d4676d6e8c59702e48f024
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3d8e257382f347c7203d071fd017bcde698f01e4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60999501"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339279"
 ---
 # <a name="call-cancelmediaprocessing"></a>вызов: cancelMediaProcessing
 
@@ -20,7 +20,7 @@ ms.locfileid: "60999501"
 
 Отменяет обработку для любых операций мультимедиа в ходе выполнения.
 
-Операции мультимедиа относятся к операциям IVR [playPrompt](./call-playprompt.md) и [recordResponse,](./call-record.md)которые по умолчанию находятся в очереди для обработки в порядке. Метод **cancelMediaProcessing** отменяет все операции, которые находятся в процессе, а также операции, которые находятся в очереди. Например, этот API можно использовать для очистки очереди операции IVR для новой операции мультимедиа. Однако операция **ubscribeToTone** не отменяется, так как она работает независимо от очереди операции.
+Операции мультимедиа относятся к операциям IVR [playPrompt](./call-playprompt.md) и [recordResponse](./call-record.md), которые по умолчанию находятся в очереди для обработки в порядке. Метод **cancelMediaProcessing** отменяет все операции, которые находятся в процессе, а также операции, которые находятся в очереди. Например, этот API можно использовать для очистки очереди операции IVR для новой операции мультимедиа. Однако операция **ubscribeToTone** не отменяется, так как она работает независимо от очереди операции.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "60999501"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Нет.                                       |
+| Приложение                            | Нет.                                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -50,10 +50,10 @@ POST /communications/calls/{id}/cancelMediaProcessing
 
 | Параметр      | Тип    | Описание                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| clientContext  | Строка  | Клиентский контекст.                                            |
+| clientContext  | String  | Клиентский контекст.                                            |
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика HTTP и заглавную головку расположения с URI в `200 OK` [commsOperation,](../resources/commsoperation.md) созданный для этого запроса.
+В случае успешной `200 OK` работы этот метод возвращает код отклика HTTP и заглавную головку расположения с URI в [commsOperation](../resources/commsoperation.md) , созданный для этого запроса.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -94,6 +94,10 @@ Content-Length: 62
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-cancelmediaprocessing-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-cancelmediaprocessing-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ac3ce623d45e4ac8a802fbd0dae2c10894a5f7e5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6fafa06afef81cc71d307b8ee768641920cb2857
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025066"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346200"
 ---
 # <a name="call-playprompt"></a>вызов: playPrompt
 
@@ -23,7 +23,7 @@ ms.locfileid: "61025066"
 Дополнительные сведения об обработке операций см. в [commsOperation](../resources/commsoperation.md)
 
 > [!Note]
-> Действие **playPrompt поддерживается** только [для](../resources/call.md) вызовов, инициированных с помощью [serviceHostedMediaConfig.](../resources/servicehostedmediaconfig.md)
+> Действие **playPrompt поддерживается** только [для вызовов](../resources/call.md) , инициированных с [помощью serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -32,7 +32,7 @@ ms.locfileid: "61025066"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Для приложений                            | Нет.                                        |
+| Приложение                            | Нет.                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,11 +54,11 @@ POST /communications/calls/{id}/playPrompt
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |подсказки|[Коллекция MediaPrompt](../resources/mediaprompt.md)| Подсказки для игры. Максимальный поддерживаемый размер коллекции mediaPrompt — 20.|
-|цикл|Логическое| Значение цикла. True указывает на бесконечное циклику. Значение по умолчанию  false. |
-|clientContext|Строка|Уникальная строка контекста клиента. Может иметь не более 256 символов.|
+|цикл|Логический| Значение цикла. True указывает на бесконечное циклику. Значение по умолчанию  false. |
+|clientContext|String|Уникальная строка контекста клиента. Может иметь не более 256 символов.|
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект playPromptOperation](../resources/playpromptoperation.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект playPromptOperation](../resources/playpromptoperation.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -112,11 +112,15 @@ Content-Length: 166
 [!INCLUDE [sample-code](../includes/snippets/go/call-playprompt-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-playprompt-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

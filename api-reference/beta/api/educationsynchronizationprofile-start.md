@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 22187c58ca81f0b4c074c98aefc39c3f993ba746
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f2ded92adc2f62d1f562156de2085bccde0081f7
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018710"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342113"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>Начните синхронизацию после отправки файлов в educationSynchronizationProfile
 
@@ -18,9 +18,9 @@ ms.locfileid: "61018710"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Проверка файлов, загруженных в определенный профиль синхронизации школьных данных [в](../resources/educationsynchronizationprofile.md) клиенте. Если проверка будет успешной, в профиле начнется синхронизация. В противном случае ответ будет содержать ошибки и предупреждения. Если ответ содержит ошибки, синхронизация не начнется. Если ответ содержит только предупреждения, начнется синхронизация.
+Проверка файлов, загруженных в определенный профиль синхронизации школьных [данных в](../resources/educationsynchronizationprofile.md) клиенте. Если проверка будет успешной, в профиле начнется синхронизация. В противном случае ответ будет содержать ошибки и предупреждения. Если ответ содержит ошибки, синхронизация не начнется. Если ответ содержит только предупреждения, начнется синхронизация.
 
-> **Примечание:** Используйте этот метод только в том случае, если поставщик данных имеет тип [educationcsvdataprovider.](../resources/educationcsvdataprovider.md) Кроме того, перед началом работы необходимо предварительно прозаить состояние свойства профиля. Опрос объекта профиля, чтобы проверить его свойство состояния.
+> **Примечание:** Используйте этот метод только в том случае, если поставщик данных имеет тип [educationcsvdataprovider](../resources/educationcsvdataprovider.md). Кроме того, перед началом работы необходимо предварительно прозаить состояние свойства профиля. Опрос объекта профиля, чтобы проверить его свойство состояния.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "61018710"
 |:-----------|:----------|
 | Делегированное (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 |Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|EduAdministration.ReadWrite.All |
+|Приложение|EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ POST /education/synchronizationProfiles/{id}/start
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В случае неудачи `400 Bad Request` возвращается . Ответ содержит коллекцию объектов [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) в составе тела отклика, если были найдены ошибки или предупреждения.
+При успешном выполнении этот метод возвращает код отклика `200 OK`. В случае неудачи возвращается .`400 Bad Request` Ответ содержит коллекцию объектов [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) в составе тела отклика, если были найдены ошибки или предупреждения.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -77,6 +77,10 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/sta
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-educationsynchronizationprofile-start-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-educationsynchronizationprofile-start-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

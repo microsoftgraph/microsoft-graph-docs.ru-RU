@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8cdfd836992d884e840e6717e9a0e912b6b29be5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7add5d22a55071a77fe431f675ee992ec3b32f9d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61015637"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348741"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: проверка Свойств
 
 Пространство имен: microsoft.graph
 
-Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования.  Клиенты могут использовать этот API, чтобы определить, допустимо  ли имя или псевдоним почты перед попыткой создания Microsoft 365 группы. Для проверки свойств существующей группы используйте функцию [validateProperties](group-validateproperties.md) для групп.
+Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования.  Клиенты могут использовать этот API, чтобы определить, допустимо ли имя или псевдоним почты перед попыткой создать Microsoft 365 группу. Для проверки свойств существующей группы используйте функцию [validateProperties](group-validateproperties.md) для групп.
 
 Следующие проверки выполняются для свойств отображения имени и ником почты: 
 1. Проверка политики имен префикса и суффикса
@@ -53,17 +53,17 @@ POST /directoryObjects/validateProperties
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |entityType|String| `Group` это единственный поддерживаемый тип сущности. |
-|displayName|Строка| Отображаемого имени группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство (displayName или mailNickname). |
+|displayName|String| Отображаемого имени группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство (displayName или mailNickname). |
 |mailNickname|String| Имя почты группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство (displayName или mailNickname). |
 |onBehalfOfUserId|Guid| ID объекта пользователя, который должен выдать себя при вызове API. Результаты проверки для атрибутов и ролей onBehalfOfUserId. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешной проверки и без ошибок проверки метод возвращает `204 No Content` код ответа. Метод не возвращает данные в теле отклика.
+В случае успешной проверки `204 No Content` и без ошибок проверки метод возвращает код ответа. Метод не возвращает данные в теле отклика.
 
 Если запрос недействителен, метод возвращает `400 Bad Request` код ответа. Сообщение об ошибке с сведениями о недействительности запроса возвращается в тексте ответа.
 
-При ошибке проверки метод возвращает `422 Unprocessable Entity` код ответа. Сообщение об ошибке и коллекция сведений об ошибках возвращаются в тексте ответа.
+При ошибке проверки `422 Unprocessable Entity` метод возвращает код ответа. Сообщение об ошибке и коллекция сведений об ошибках возвращаются в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -105,6 +105,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-validateproperties-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-validateproperties-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a32b32f8b6e9e81461e4bc56a3f5cef0560bc8d9
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6848af1587bfc79573781d20afbf0ca4e3220e2d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60974459"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346350"
 ---
 # <a name="call-keepalive"></a>call: keepAlive
 
@@ -22,7 +22,7 @@ ms.locfileid: "60974459"
 
 Рекомендуется отправлять запрос с более короткими интервалами времени (каждые 15 минут). Убедитесь, что эти запросы являются успешными, чтобы предотвратить время и завершение вызова.
 
-Попытка отправить запрос на уже закончившийся вызов приведет к `404 Not-Found` ошибке. Ресурсы, связанные с вызовом, должны быть очищены на стороне приложения.
+Попытка отправить запрос на уже закончившийся вызов приведет к ошибке `404 Not-Found` . Ресурсы, связанные с вызовом, должны быть очищены на стороне приложения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API может потребоваться одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +31,7 @@ ms.locfileid: "60974459"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложений     | Никаких других изменений не происходит                                        |
+| Приложение     | Нет                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -83,6 +83,10 @@ POST https://graph.microsoft.com/v1.0/communications/calls/2e1a0b00-2db4-4022-95
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/keep-alive-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/keep-alive-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

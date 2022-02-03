@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 189d28bdc171602165c1c2488cb85d84b71ddf61
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6e6fa50b554cde104342ce28540914594e0baa3a
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014586"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347570"
 ---
 # <a name="message-forward"></a>message: forward
 
@@ -21,8 +21,8 @@ ms.locfileid: "61014586"
 Переад. сообщение в формате JSON или MIME.
 
 При использовании формата JSON можно:
-- Укажите комментарий или **свойство** тела `message` параметра. При указании обоих возвращается ошибка http 400 Bad Request.
-- Укажите `toRecipients` параметр или **свойство toRecipients** `message` параметра. Указание обоих или указаний не возвращает ошибку http 400 Bad Request.
+- Укажите комментарий или **свойство** тела параметра `message` . При указании обоих возвращается ошибка http 400 Bad Request.
+- Укажите параметр `toRecipients` или **свойство toRecipients** параметра `message` . Указание обоих или указаний не возвращает ошибку http 400 Bad Request.
 
 При использовании формата MIME:
 - Укажите соответствующие [заголовки сообщений Интернета](https://tools.ietf.org/html/rfc2076) и [содержимое MIME](https://tools.ietf.org/html/rfc2045), а также закодируйте их в формате **Base64** в тексте запроса.
@@ -30,7 +30,7 @@ ms.locfileid: "61014586"
 
 Этот метод сохраняет сообщение в папке **Отправленные**.
 
-Кроме того, [создайте черновик](../api/message-createforward.md)для отправки сообщения и [отправки](../api/message-send.md) его позже.
+Кроме того, [создайте черновик для отправки сообщения](../api/message-createforward.md) и [отправьте](../api/message-send.md) его позже.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -62,7 +62,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 |:---------------|:--------|:----------|
 |comment|String|Добавляемый комментарий. Может быть пустой строкой.|
 |toRecipients|Коллекция [recipient](../resources/recipient.md)|Список получателей.|
-|message|[message](../resources/message.md)|Любые свойства, которые можно записать для обновления в ответном сообщении.|
+|сообщение|[message](../resources/message.md)|Любые свойства, которые можно записать для обновления в ответном сообщении.|
 
 При указании текста в формате MIME укажите содержимое MIME с применимыми заголовками сообщений Интернета ("Кому", "Копия", "Скрытая копия", "Тема"), все закодированные сообщения в формате **Base64** в тексте запроса.
 
@@ -120,6 +120,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/message-forward-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-forward-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 2d120ffb3d1628611404db9b50e7099cf00cc808
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d1d0fe73770e6ef5994423ebeee0152975ccd047
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980355"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340147"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole: selfActivate
 
@@ -22,13 +22,13 @@ ms.locfileid: "60980355"
 
 Активируйте роль, назначенную запрашиваемой.
 
->**Примечание:** С декабря 2018 г. этот API больше не будет поддерживаться и не должен использоваться. Вместо этого [используйте create PrivilegedRoleAssignmentRequest.](privilegedroleassignmentrequest-post.md)
+>**Примечание:** С декабря 2018 г. этот API больше не будет поддерживаться и не должен использоваться. Вместо этого [используйте create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md) .
 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Запросчик может вызывать только назначенную ему ```selfActivate``` роль.
+Запросчик может вызывать только ```selfActivate``` назначенную ему роль.
  
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -43,7 +43,7 @@ ms.locfileid: "60980355"
 POST /privilegedRoles/{id}/selfActivate
 ```
 
-Обратите ``{id}`` внимание, что это ИД целевой роли.
+Обратите внимание, ``{id}`` что это ИД целевой роли.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
@@ -55,13 +55,13 @@ POST /privilegedRoles/{id}/selfActivate
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |reason|string|Необязательный параметр. Описание причины активации этой роли.|
-|duration|string|Необязательный параметр. Допустимые значения могут быть (минимальная продолжительность активации), (продолжительность активации по умолчанию для роли) или двойное значение, чтобы указать, сколько часов ```min``` ```default``` является активацией. Указанная продолжительность не может быть больше, чем продолжительность активации роли из параметра роли. |
+|duration|string|Необязательный параметр. Допустимые значения могут быть ```min``` (минимальная продолжительность активации), ```default``` (продолжительность активации по умолчанию для роли) или двойное значение, чтобы указать, сколько часов является активацией. Указанная продолжительность не может быть больше, чем продолжительность активации роли из параметра роли. |
 |ticketNumber|string|Необязательный параметр. Номер билета, используемый для отслеживания активации этой роли.|
 |ticketSystem|string|Необязательный параметр. Система билетов.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и объект `200 OK` [privilegedRoleAssignment](../resources/privilegedroleassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` ответа и объект [privilegedRoleAssignment](../resources/privilegedroleassignment.md) в тексте ответа.
 
 Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
 ## <a name="example"></a>Пример
@@ -103,6 +103,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/privilegedrole-selfactivate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedrole-selfactivate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

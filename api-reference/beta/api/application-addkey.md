@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7e8b39733b208a84246dc2ae4f706d86434b1510
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: e74751141ebd5d22173c07b1d2cd3a98b5b1f56d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61285043"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340478"
 ---
 # <a name="application-addkey"></a>приложение: addKey
 
@@ -18,7 +18,7 @@ ms.locfileid: "61285043"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление учетных данных ключа в [приложение.](../resources/application.md) Этот метод, наряду с [removeKey,](application-removekey.md)может использоваться приложением для автоматизации проката истекающих ключей.
+Добавление учетных данных ключа в [приложение](../resources/application.md). Этот метод, наряду с [removeKey](application-removekey.md), может использоваться приложением для автоматизации проката истекающих ключей.
 
 > [!NOTE]
 > Вы можете продолжать использовать операции приложения [Create и](../api/application-post-applications.md) [Update](../api/application-update.md) для добавления и обновления учетных данных для любого приложения с контекстом пользователя или без него. 
@@ -59,13 +59,13 @@ POST /applications/{id}/addKey
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | Добавлены новые учетные данные ключа приложения. __Тип,__ __использование и__ __ключ__ необходимые свойства для этого использования. Поддерживаемые ключевые типы:<br><ul><li>`AsymmetricX509Cert`: Использование должно быть `Verify` .</li><li>`X509CertAndPassword`: Использование должно быть `Sign`</li></ul>|
-| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Требуется __установить только secretText,__ который должен содержать пароль для ключа. Это свойство требуется только для ключей типа `X509CertAndPassword` . Установите его в `null` противном случае.|
-| доказательство | Строка | Самозаверяемый маркер JWT, используемый в качестве доказательства владения существующими ключами. Маркер JWT должен быть подписан с использованием закрытого ключа одного из существующих действительных сертификатов приложения. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` — издателем должен быть __идентификатор__  приложения, выполняющего вызов.</li><li>`nbf` — вовремя.</li><li>`exp` - Срок действия должен `nbf` быть + 10 минут.</li></ul><br>О действиях по созданию этого доказательства маркера владения см. в журнале [Generating proof of possession tokens for rolling keys.](/graph/application-rollkey-prooftoken) Дополнительные сведения о типах утверждений см. в дополнительных сведениях [о полезной нагрузке Claims.](/azure/active-directory/develop/active-directory-certificate-credentials)|
+| keyCredential | [keyCredential](../resources/keycredential.md) | Добавлены новые учетные данные ключа приложения. Тип __,__ __использование и__ __ключ__ необходимые свойства для этого использования. Поддерживаемые ключевые типы:<br><ul><li>`AsymmetricX509Cert`: Использование должно быть `Verify`.</li><li>`X509CertAndPassword`: Использование должно быть `Sign`</li></ul>|
+| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Требуется __установить только secretText__ , который должен содержать пароль для ключа. Это свойство требуется только для ключей типа `X509CertAndPassword`. Установите его в противном `null` случае.|
+| доказательство | String | Самозаверяемый маркер JWT, используемый в качестве доказательства владения существующими ключами. Маркер JWT должен быть подписан с использованием закрытого ключа одного из существующих действительных сертификатов приложения. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` — издателем должен быть __идентификатор__  приложения, выполняющего вызов.</li><li>`nbf` — вовремя.</li><li>`exp` - Срок действия должен быть `nbf` + 10 минут.</li></ul><br>Действия по созданию этого маркера владения см. в журнале [Generating proof of possession tokens for rolling keys](/graph/application-rollkey-prooftoken). Дополнительные сведения о типах утверждений см. в дополнительных сведениях [о полезной нагрузке Claims](/azure/active-directory/develop/active-directory-certificate-credentials).|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и новый `200 OK` [объект keyCredential](../resources/keycredential.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и новый [объект keyCredential](../resources/keycredential.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -116,12 +116,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/application-addkey-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/application-addkey-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -185,6 +189,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/application-addkey-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/application-addkey-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

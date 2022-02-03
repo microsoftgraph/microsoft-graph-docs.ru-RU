@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 01a174593a925d98a5e873381b550864f51deb8a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b8ecffede3feba9421ccaa9a8bf58f5e6eec0ced
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099155"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62350829"
 ---
 ```powershell
 
@@ -15,6 +15,7 @@ $params = @{
     Name = "Personal Tasks"
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserOutlookTaskGroup -UserId $userId -OutlookTaskGroupId $outlookTaskGroupId -BodyParameter $params
 
 ```

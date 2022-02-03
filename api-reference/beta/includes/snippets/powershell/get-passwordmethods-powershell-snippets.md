@@ -1,16 +1,17 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 0fc2cfd310341360183535f8b7671d7dc8de400c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0a45230486a671c1a065d6561af0c8797e354fd1
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62116800"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349688"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
+# A UPN can also be used as -UserId.
 Get-MgUserAuthenticationPasswordMethod -UserId $userId
 
 ```

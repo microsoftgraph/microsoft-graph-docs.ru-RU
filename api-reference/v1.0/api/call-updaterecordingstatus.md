@@ -5,20 +5,20 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a55ed37be9edb6981dc94be24cd0a88f5316b244
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ca7fc640b1d482a8c8cb0fbbdfd55e0388071d87
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029686"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339049"
 ---
 # <a name="call-updaterecordingstatus"></a>вызов: updateRecordingStatus
 
 Пространство имен: microsoft.graph
 
-Обновление состояния записи приложения, связанного с вызовом. Это требует использования решения записи [Teams на основе политики.](/MicrosoftTeams/teams-recording-policy)
+Обновление состояния записи приложения, связанного с вызовом. Для этого необходимо использовать Teams [на основе политики записи](/MicrosoftTeams/teams-recording-policy).
 
-> Дополнительное **ограничение.** Вы не можете использовать API доступа к мультимедиа для записи или иного сохраняемой медиаконтента из звонков или собраний, к которые ваше приложение получает доступ, или данных, полученных из этого медиаконтента ("запись" или "запись"), без вызова API **updateRecordingStatus,** чтобы указать, что запись началась, и получить ответ на успех от этого API. Если ваше приложение начинает записывать любое собрание, оно должно закончить запись перед вызовом **API updateRecordingStatus,** чтобы указать, что запись завершена.
+> Дополнительное **ограничение. Вы** не можете использовать API доступа к мультимедиа для записи или иного сохраняемой медиаконтента из звонков или собраний, к которые ваше приложение получает доступ, или данных, полученных из этого медиаконтента ("запись" или "запись"), не вызывая сначала **API updateRecordingStatus**, чтобы указать, что запись началась, и получить ответ на успех от этого API. Если ваше приложение начинает записывать любое собрание, оно должно закончить запись перед вызовом **API updateRecordingStatus** , чтобы указать, что запись завершена.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "61029686"
 |:---------------------------------------|:-------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                                    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                    |
-| Для приложений                            | Calls.JoinGroupCalls.All, Calls.AccessMedia.All  |
+| Приложение                            | Calls.JoinGroupCalls.All, Calls.AccessMedia.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -46,11 +46,11 @@ POST /communications/calls/{id}/updateRecordingStatus
 
 | Параметр       | Тип    | Описание                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| clientContext   | Строка  | Уникальная строка контекста клиента. Максимальное ограничение — 256 шаров.                                 |
+| clientContext   | String  | Уникальная строка контекста клиента. Максимальное ограничение — 256 шаров.                                 |
 | status          | String  | Состояние записи. Возможные значения: `notRecording`, `recording` или `failed`.  |
 
 ## <a name="response"></a>Отклик
-Этот метод возвращает код ответа и загорелый загорелый код расположения с URI к объекту `200 OK` [updateRecordingStatusOperation,](../resources/updaterecordingstatusoperation.md) созданному для этого запроса.
+Этот метод возвращает код `200 OK` ответа и загорелый загорелый код расположения с URI к объекту [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) , созданному для этого запроса.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -92,6 +92,10 @@ Content-Length: 79
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-updaterecordingstatus-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-updaterecordingstatus-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

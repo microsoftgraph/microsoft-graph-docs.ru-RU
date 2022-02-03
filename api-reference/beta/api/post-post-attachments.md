@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8f79a7e73a167380d8f6bb00f26771677067cabd
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 03a3097aacb5775414b8a81539ca61c6a95646d0
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018079"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347129"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -40,7 +40,7 @@ ms.locfileid: "61018079"
 |Для приложений | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
-Включай вложение при создании [столба](../resources/post.md) в [беседеThread](../resources/conversationthread.md) группы. Указание родительского [разговора необязательно.](../resources/conversation.md)
+Включай вложение при создании [столба](../resources/post.md) в [беседеThread](../resources/conversationthread.md) группы. Указание родительского [разговора необязательно](../resources/conversation.md) .
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -53,11 +53,11 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 | Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажи объект JSON, который включает параметр **post.**
+В теле запроса укажи объект JSON, который включает параметр **post** .
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|post|[post](../resources/post.md)|Новая почта, с которой будет отвечать, включает одно или несколько вложений в коллекцию [вложений.](../resources/attachment.md)|
+|post|[post](../resources/post.md)|Новая почта, с которой будет отвечать, включает одно или несколько вложений в коллекцию [вложений](../resources/attachment.md) .|
 
 ## <a name="response"></a>Отклик
 
@@ -110,6 +110,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-file-attachment-with-post-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-file-attachment-with-post-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -231,6 +235,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-reference-attachment-with-post-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-reference-attachment-with-post-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

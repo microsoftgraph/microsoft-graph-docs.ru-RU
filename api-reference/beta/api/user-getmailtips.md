@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 33934b8866ec553f5f9e127349bd16ef921d5b32
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f4c3c8ce16f8f2b9f73454062ada6334b4465af4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61013417"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345813"
 ---
 # <a name="user-getmailtips"></a>пользователь: getMailTips
 
@@ -18,9 +18,9 @@ ms.locfileid: "61013417"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите mailTips одного или более получателей в качестве [](../resources/user.md)доступных для пользователя, подписав.
+Получите mailTips одного или более получателей в качестве доступных для пользователя, вписав [его](../resources/user.md).
 
-Обратите внимание, что при вызове к действию можно запросить возврат определенных типов mailTips сразу для более чем одного `POST` `getMailTips` получателя. Запрашиваемая mailTips возвращается в [коллекцию mailTips.](../resources/mailtips.md)
+Обратите внимание, что `POST` `getMailTips` при вызове к действию можно запросить возврат определенных типов mailTips сразу для более чем одного получателя. Запрашиваемая mailTips возвращается в [коллекцию mailTips](../resources/mailtips.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,11 +51,11 @@ POST /users/{id|userPrincipalName}/getMailTips
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |EmailAddresses|Коллекция объектов string|Коллекция SMTP-адресов получателей для получения MailTips.|
-|MailTipsOptions|String|Список флагов, которые представляют запрашиваемую почту. Возможные значения: `automaticReplies` `customMailTip` , , , , , `deliveryRestriction` , , `externalMemberCount` и `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` `totalMemberCount` .|
+|MailTipsOptions|String|Список флагов, которые представляют запрашиваемую почту. Возможные значения: , , , , `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`и `recipientScope``totalMemberCount``recipientSuggestions`. `deliveryRestriction``customMailTip``automaticReplies`|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [mailTips](../resources/mailtips.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию объектов [mailTips](../resources/mailtips.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 В следующем примере получается MailTips для указанных получателей, для любых параметров автоматического ответа и полного состояния почтового ящика.
@@ -96,6 +96,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-getmailtips-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-getmailtips-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

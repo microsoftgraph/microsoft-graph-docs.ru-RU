@@ -5,29 +5,29 @@ doc_type: resourcePageType
 description: Представляет группу, используемую в магазине терминов.
 ms.localizationpriority: medium
 ms.prod: taxonomy
-ms.openlocfilehash: 121f195e8054645be47d7a98c5287c52d754b4e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1fa25c258050f1bf5cf2cea3e95a13e95f9b8125
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129756"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339916"
 ---
 # <a name="group-resource-type"></a>Тип группового ресурса
 
 Пространство имен: microsoft.graph.termStore
 
 
-Представляет группу, используемую в магазине [терминов.](../resources/termstore-store.md) Группа — это логическая иерархия, которая содержит коллекцию наборов под ней. 
+Представляет группу, используемую в магазине [терминов](../resources/termstore-store.md). Группа — это логическая иерархия, которая содержит коллекцию наборов под ней. 
 
-Наследует от [объекта](../resources/entity.md).
+Наследуется [от сущности](../resources/entity.md).
 
 
 ## <a name="methods"></a>Методы
 
 | Метод                                                   | Тип возвращаемых данных       |    Описание      |
 |:---------------------------------------------------------|:------------------|:---------------------
-| [Создание группы](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Создание группы в магазине [терминов.] |
-| [Получение группы](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | Извлечение данных группы в магазине [терминов.] |
+| [Создание группы](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Создание группы в магазине [терминов]. |
+| [Получение группы](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | Извлечение данных группы в магазине [терминов]. |
 | [Удаление группы](../api/termstore-group-delete.md)                     | Нет |  Удаление группы в магазине [терминов]. |
 
 ## <a name="properties"></a>Свойства
@@ -35,13 +35,13 @@ ms.locfileid: "59129756"
 | Свойство             | Тип               | Описание                        |
 |:---------------------|:-------------------|:------------------------------------
 | createdDateTime      | DateTimeOffset     | Дата и время создания группы. Только для чтения. |
-| description          | string             | Описание с подробными сведениями об использовании термина. |
+| description          | string             | Описание, которое дает сведения об использовании термина. |
 | id                   | string             | Уникальный идентификатор группы. Только для чтения. |
 | displayName          | string             | Имя группы. |
-| scope                | string              | Возвращает тип группы. Возможные значения : "глобальный", "системный" и "siteCollection". |
-| parentSiteId         | string             | Id родительского сайта этой группы. |
+| scope                | string              | Возвращает тип группы. Возможные значения: `global`, `system` и `siteCollection`. |
+| parentSiteId         | string             | ID родительского сайта этой группы. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь       | Тип                        | Описание              |
 |:-------------------|:----------------------------|:--------------------------
 | наборы           | [коллекция microsoft.graph.termStore.set][] | Все наборы в группе в магазине [терминов]. |

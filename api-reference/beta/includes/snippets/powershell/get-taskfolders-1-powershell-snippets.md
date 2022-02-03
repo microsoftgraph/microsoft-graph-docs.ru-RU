@@ -1,16 +1,17 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 38e6b796bf4195a0ae4cfa7110fcc90b69aaa775
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a0541f343f19f000d6fbfd71fde4bb93ebf398ba
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135378"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62351950"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Users
 
+# A UPN can also be used as -UserId.
 Get-MgUserOutlookTaskGroupTaskFolder -UserId $userId -OutlookTaskGroupId $outlookTaskGroupId
 
 ```

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9a736ac1320746a2e0e42ead7f546b13324b8bc7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: aeb0d9cc3c4251b68876dc99e6ae56b500d50249
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018453"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343055"
 ---
 # <a name="orgcontact-delta"></a>orgContact: delta
 
@@ -29,7 +29,7 @@ ms.locfileid: "61018453"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
-|Для приложений | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+|Приложение | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,29 +42,29 @@ GET /contacts/delta
 
 ## <a name="query-parameters"></a>Параметры запроса
 
-Отслеживание изменений в организационных контактах вызывает один или несколько вызовов функции **дельты.** Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в начальном запросе **delta**. Microsoft Graph автоматически кодирует указанные параметры в маркере, входящем в состав URL-адреса `nextLink` или `deltaLink`, включенного в отклик.
+Отслеживание изменений в организационных контактах вызывает один или несколько вызовов функции **дельты** . Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в начальном запросе **delta**. Microsoft Graph автоматически кодирует указанные параметры в маркере, входящем в состав URL-адреса `nextLink` или `deltaLink`, включенного в отклик.
 
 Необходимо указать параметры запроса только один раз.
 
-В последующих запросах скопируйте и примените `nextLink` `deltaLink` URL-адрес из предыдущего ответа. Этот URL-адрес уже содержит закодированные параметры.
+В последующих запросах скопируйте и примените `nextLink` URL-адрес `deltaLink` из предыдущего ответа. Этот URL-адрес уже содержит закодированные параметры.
 
 | Параметр запроса      | Тип   |Описание|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес предыдущей функции дельты, для той же коллекции контактов организации, что указывает на завершение этого раунда отслеживания `deltaLink` изменений.  Сохраните и примените весь URL-адрес, включая этот маркер, в первом запросе следующего раунда отслеживания `deltaLink` изменений для этой коллекции.|
-| $skiptoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес предыдущего вызова функции дельты, указывает на то, что в том же собрании контактов организации необходимо отслеживать дальнейшие `nextLink` изменения.  |
+| $deltatoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в `deltaLink` URL-адрес предыдущей  функции дельты, для той же коллекции контактов организации, что указывает на завершение этого раунда отслеживания изменений. Сохраните и примените весь `deltaLink` URL-адрес, включая этот маркер, в первом запросе следующего раунда отслеживания изменений для этой коллекции.|
+| $skiptoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный `nextLink` в URL-адрес предыдущего  вызова функции дельты, указывает на то, что в том же собрании контактов организации необходимо отслеживать дальнейшие изменения. |
 
 ### <a name="odata-query-parameters"></a>Параметры запросов OData
 
 Этот метод поддерживает необязательные параметры запроса OData для настройки ответа.
 
-- Параметр запроса можно использовать как в любом запросе GET, чтобы указать только свойства, необходимые `$select` для максимальной производительности. Свойство **id** возвращается всегда.
+- Параметр запроса можно `$select` использовать как в любом запросе GET, чтобы указать только свойства, необходимые для максимальной производительности. Свойство **id** возвращается всегда.
 - Имеется ограниченная поддержка параметра `$filter`:
   - Единственное поддерживаемое выражение `$filter` предназначено для отслеживания изменений в определенном объекте: `$filter=id+eq+{value}`. Допускается фильтрация нескольких объектов. Например, `https://graph.microsoft.com/beta/contacts/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. Максимальное количество фильтруемых объектов: 50.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носитель &lt;токен&gt;. Обязательный.|
+| Авторизация  | Носитель &lt;токен&gt;. Обязательный.|
 | Prefer | return=minimal <br><br>Указание этого заголовка с запросом, использующим параметр `deltaLink`, приведет к возвращению только свойств объекта, измененных с момента последнего цикла. Необязательно. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -72,7 +72,7 @@ GET /contacts/delta
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект коллекции orgContact](../resources/orgcontact.md) в тексте ответа. Оклик также содержит URL-адрес `nextLink` или `deltaLink`.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект коллекции orgContact](../resources/orgcontact.md) в тексте ответа. Оклик также содержит URL-адрес `nextLink` или `deltaLink`.
 
 - Если возвращается URL-адрес `nextLink`:
   - Это означает, что во время сеанса получены не все страницы данных. Приложение продолжает отправлять запросы, используя URL-адрес `nextLink`, пока в отклик не будет включен URL-адрес `deltaLink`.
@@ -91,7 +91,7 @@ GET /contacts/delta
 - Если свойство никогда не было установлено ранее, оно вообще не будет включено в ответ.
 
 
-> **Примечание:** При таком поведении невозможно определить, изменяется ли свойство, глядя на ответ. Кроме того, ответы дельты, как правило, являются большими, так как содержат все значения свойств , как показано в [примере 2.](#example-2-selecting-three-properties)
+> **Примечание:** При таком поведении невозможно определить, изменяется ли свойство, глядя на ответ. Кроме того, ответы дельты, как правило, являются большими, так как содержат все значения свойств, как показано в [примере 2](#example-2-selecting-three-properties).
 
 ### <a name="alternative-return-only-the-changed-properties"></a>Альтернатива: возвращение только измененных свойств
 
@@ -108,7 +108,7 @@ GET /contacts/delta
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. Так как параметра нет, набор свойств по умолчанию отслеживается `$select` и возвращается.
+Ниже приведен пример запроса. Так как параметра нет `$select` , набор свойств по умолчанию отслеживается и возвращается.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -138,6 +138,10 @@ GET https://graph.microsoft.com/beta/contacts/delta
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/orgcontact-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/orgcontact-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -216,6 +220,10 @@ GET https://graph.microsoft.com/beta/contacts/delta?$select=displayName,jobTitle
 [!INCLUDE [sample-code](../includes/snippets/go/orgcontact-delta-select-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/orgcontact-delta-select-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -284,12 +292,16 @@ Prefer: return=minimal
 [!INCLUDE [sample-code](../includes/snippets/go/orgcontact-delta-minimal-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/orgcontact-delta-minimal-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика при использовании параметра `deltaLink`, полученного в начале запроса. Обратите внимание, что свойство не включено, что означает, что оно не изменилось с момента последнего запроса дельты; и включено, что означает, что их значения `mail` `displayName` `jobTitle` изменились.
+Ниже приведен пример отклика при использовании параметра `deltaLink`, полученного в начале запроса. Обратите внимание `mail` , что свойство не включено, что означает, что оно не изменилось с момента последнего запроса дельты; `displayName` `jobTitle` и включено, что означает, что их значения изменились.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0762c538b784373cf3a6d6d6f8e5dc34887665f9
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: d273ad9e05096188ac4946ac9e96e8db8db78857
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62226038"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349062"
 ---
 # <a name="unarchive-team"></a>Распаковка объекта команды
 
@@ -18,7 +18,7 @@ ms.locfileid: "62226038"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Восстановление архивной [группы.](../resources/team.md) Это восстанавливает возможность пользователей отправлять сообщения и изменять команду, соблюдая параметры клиента и группы. Teams архивироваться с помощью [API](team-archive.md) архива.
+Восстановление архивной [группы](../resources/team.md). Это восстанавливает возможность пользователей отправлять сообщения и изменять команду, соблюдая параметры клиента и группы. Teams архивироваться [с помощью](team-archive.md) API архива.
 
 Unarchiving — это операция async. После успешного завершения операции async, которая может возникнуть после ответа из этого API, группа не будет иметь анархизации.
 
@@ -51,7 +51,7 @@ POST /teams/{id}/unarchive
 
 ## <a name="response"></a>Отклик
 
-Если успешно запущена безвластие, этот метод возвращает код `202 Accepted` ответа. В ответе также будет содержаться загон, содержащий расположение `Location` [командAsyncOperation,](../resources/teamsasyncoperation.md) созданных для обработки безархивации группы. Проверьте состояние операции unarchiving, сделав запрос GET в этом расположении.
+Если успешно запущена безвластие, этот метод возвращает код `202 Accepted` ответа. В ответе также будет содержаться `Location` загон, содержащий расположение [командAsyncOperation](../resources/teamsasyncoperation.md) , созданных для обработки безархивации группы. Проверьте состояние операции unarchiving, сделав запрос GET в этом расположении.
 
 ## <a name="example"></a>Пример
 #### <a name="request"></a>Запрос
@@ -83,6 +83,10 @@ POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/unarchive-team-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/unarchive-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

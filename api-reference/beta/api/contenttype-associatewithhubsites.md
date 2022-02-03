@@ -5,12 +5,12 @@ description: Связать тип контента со списком узло
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 84c2700f90d8740ed6e353fbac3daee2f475de80
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f61e2f599a9c21109d86b77f0c09f94e7d9fdada
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028804"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344572"
 ---
 # <a name="contenttype-associatewithhubsites"></a>contentType: associateWithHubSites
 
@@ -32,7 +32,7 @@ ms.locfileid: "61028804"
 |:--------------------|:---------------------------------------------------------
 |Делегированные (рабочая или учебная учетная запись) | Sites.Manage.All, Sites.FullControl.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Sites.Manage.All, Sites.FullControl.All |
+|Приложение | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -59,7 +59,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 |Параметр|Тип|Описание|
 |-|-|-|
 |hubSiteUrls| Коллекция (строка) |Список пушечных URL-адресов для узлов, на которых необходимо применять тип контента. Обязательный.|
-|propagateToExistingLists| Boolean |Если типы контента будут применяться в существующих списках на сайтах концентратора; в противном случае он будет применяться только к вновь `true` созданным спискам. 
+|propagateToExistingLists| Логическое |Если `true`типы контента будут применяться в существующих списках на сайтах концентратора; в противном случае он будет применяться только к вновь созданным спискам. 
 
 ## <a name="response"></a>Ответ
 
@@ -104,6 +104,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-associatewithhubsites-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-associatewithhubsites-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

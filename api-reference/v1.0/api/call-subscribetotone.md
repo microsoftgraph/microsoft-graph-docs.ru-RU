@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e47e90664ab81451179904306d92adb416f73f4d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 33a8d72f9beb72707d25790e9026d4525895d59a
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006928"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344322"
 ---
 # <a name="call-subscribetotone"></a>вызов: subscribeToTone
 
@@ -20,7 +20,7 @@ ms.locfileid: "61006928"
 Подписка на DTMF (двухтонная многочастотная сигнализация). Это позволяет вам быть уведомленным, когда пользователь нажимает клавиши на "dialpad".
 
 > [!Note]
-> Действие **subscribeToTone** поддерживается только [для](../resources/call.md) звонков, инициированных с помощью [serviceHostedMediaConfig.](../resources/servicehostedmediaconfig.md)
+> Действие **subscribeToTone** поддерживается [только для](../resources/call.md) вызовов, инициированных с [помощью serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "61006928"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложений     | Calls.AccessMedia.All                       |
+| Приложение     | Calls.AccessMedia.All                       |
 
 >**Примечание:** Любые предоставленные данные тона могут не сохраняться. Убедитесь, что вы соответствуете законам и правилам вашей области в отношении защиты данных и конфиденциальности сообщений. Дополнительные сведения можно узнать из [условий использования](/legal/microsoft-apis/terms-of-use) и обратившись за юридической помощью.
 
@@ -49,7 +49,7 @@ POST /communications/calls/{id}/subscribeToTone
 
 | Параметр      | Тип    | Описание |
 |:---------------|:--------|:------------|
-| clientContext  | Строка  | Уникальная строка контекста клиента. Может иметь не более 256 символов. |
+| clientContext  | String  | Уникальная строка контекста клиента. Может иметь не более 256 символов. |
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
@@ -95,6 +95,10 @@ Content-Length: 46
 [!INCLUDE [sample-code](../includes/snippets/go/call-subscribetotone-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-subscribetotone-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -124,7 +128,7 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-40
 
 ##### <a name="notification---tone-notification"></a>Уведомление — уведомление о тоне
 
-Уведомление содержит сведения о тоне, нажатом в [ресурсе toneinfo.](../resources/toneinfo.md)
+Уведомление содержит сведения о тоне, нажатом в [ресурсе toneinfo](../resources/toneinfo.md) .
 
 ```http
 POST https://bot.contoso.com/api/calls

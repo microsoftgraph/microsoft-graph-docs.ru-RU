@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8ce2694be61de9dbc313d384411259a85b910dcc
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 83aecf724d771aa6fcf124aeb719141ab0958ff5
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030562"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341191"
 ---
 # <a name="call-unmute"></a>вызов: не игнорировать
 
@@ -22,7 +22,7 @@ ms.locfileid: "61030562"
 
 Это неуправляемый сервер, что означает, что сервер снова начнет отправлять аудио пакеты для этого участника другим участникам.
 
-Дополнительные сведения о том, как обрабатывать незамысленные операции, см. в [нем unmuteParticipantOperation.](../resources/unmuteParticipantoperation.md)
+Дополнительные сведения о том, как обрабатывать незамысленные операции, см. в [нем unmuteParticipantOperation](../resources/unmuteParticipantoperation.md).
 
 > **Примечание:** Этот метод поддерживается только для групповых вызовов.
 
@@ -32,7 +32,7 @@ ms.locfileid: "61030562"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Для приложений                            | Нет.                                        |
+| Приложение                            | Нет.                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -53,10 +53,10 @@ POST /communications/calls/{id}/unmute
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|clientContext|Строка|Клиентский контекст.|
+|clientContext|String|Клиентский контекст.|
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и объект [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) в тексте ответа.
 
 >**Примечание:** Когда этот API возвращает успешный ответ, все участники получат обновление реестра.
 
@@ -96,6 +96,10 @@ Content-Length: 46
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-unmute-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-unmute-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

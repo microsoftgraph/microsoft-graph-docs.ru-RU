@@ -5,18 +5,18 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 29b0cedf1a946cd2a28a0149a75dca8ce6dc511b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 74df86c980c920f861ade707c26d58393f4a48de
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031030"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345487"
 ---
 # <a name="event-dismissreminder"></a>event: dismissReminder
 
 Пространство имен: microsoft.graph
 
-Отклонять напоминание, которое было вызвано [событием](../resources/event.md) в календаре [пользователей.](../resources/calendar.md)
+Отклонять напоминание, которое было вызвано [событием](../resources/event.md) в календаре [пользователей](../resources/calendar.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -50,7 +50,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 <br/>
 
@@ -93,6 +93,10 @@ POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/event-dismissreminder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/event-dismissreminder-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 'directoryObject: checkMemberGroups'
-description: Проверьте членство в указанном списке групп и вернись из этого списка тех групп, участником которых является указанный пользователь, группа, руководитель службы, организационный контакт, устройство или объект каталога.
+description: Проверка участия в указанном списке групп и возвращение из этого списка тех групп, в которых состоит указанный пользователь, группа, субъект-служба, контакт организации, устройство или объект каталога.
 ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7175adaa7eaf60b4e23c5cf3ccc8407ee513b4eb
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: acf57a66d535f39d9ce29d1152b2ec22bc334781
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225072"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345657"
 ---
 # <a name="directoryobject-checkmembergroups"></a>directoryObject: checkMemberGroups
 
@@ -18,7 +18,7 @@ ms.locfileid: "61225072"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Проверьте членство в указанном списке групп и вернись из этого списка тех групп, членом которых [](../resources/device.md)является [](../resources/directoryobject.md) указанный [пользователь,](../resources/user.md) [группа,](../resources/group.md)руководитель службы, [](../resources/serviceprincipal.md)организационный [контакт,](../resources/orgcontact.md)устройство или объект каталога. Это транзитивная функция.
+Проверьте членство в указанном списке групп и вернись из этого списка тех [групп, участником](../resources/user.md) которых является указанный [пользователь, группа](../resources/group.md)[, руководитель](../resources/serviceprincipal.md) службы[, организационный](../resources/orgcontact.md) [контакт, устройство](../resources/device.md) или [](../resources/directoryobject.md) объект каталога. Это транзитивная функция.
 
 В одном запросе можно проверять до 20 групп. Эта функция поддерживает все группы, которые предусмотрены в Azure AD. Поскольку Microsoft 365 группы не могут содержать другие группы, членство Microsoft 365 группы всегда является прямым.
 
@@ -121,7 +121,7 @@ POST /devices/{id}/checkMemberGroups
 
 | Имя       |Описание|
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -180,6 +180,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-checkmembergroups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-checkmembergroups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -250,6 +254,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-checkmembergroups-me-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-checkmembergroups-me-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

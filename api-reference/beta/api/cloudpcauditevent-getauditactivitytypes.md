@@ -5,12 +5,12 @@ author: ecmadao
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 5770a717f350c533070e6079dace8cbe5dd9f158
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8eb9fa4f45641e001aaa3131c2decd73df384f4b
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003456"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348796"
 ---
 # <a name="cloudpcauditevent-getauditactivitytypes"></a>cloudPcAuditEvent: getAuditActivityTypes
 
@@ -28,7 +28,7 @@ ms.locfileid: "61003456"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
-|Для приложений|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ GET /deviceManagement/virtualEndpoint/auditEvents/getAuditActivityTypes
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` строк в тексте отклика.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию строк в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/auditEvent
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cloudpcauditevent-getauditactivitytypes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcauditevent-getauditactivitytypes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

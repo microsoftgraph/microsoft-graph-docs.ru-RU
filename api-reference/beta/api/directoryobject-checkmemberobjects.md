@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cd970c1681fa5b219c94e3ceeeb42298bbfe7215
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 6b210729592818b8a80e4e6be3813f05219eb04b
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226958"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348915"
 ---
 # <a name="directoryobject-checkmemberobjects"></a>directoryObject: checkMemberObjects
 
@@ -18,7 +18,7 @@ ms.locfileid: "61226958"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Проверьте членство в списке групп, административных подразделений или ролей каталога для указанного [пользователя,](../resources/user.md) [группы,](../resources/group.md)руководителя службы, [](../resources/serviceprincipal.md)организационного [контакта,](../resources/orgcontact.md)устройства или объекта [каталога.](../resources/directoryobject.md) [](../resources/device.md) Это транзитивный метод.
+Проверьте членство в списке групп, административных единиц или ролей каталога для указанного [пользователя, группы](../resources/user.md)[, руководителя](../resources/group.md) [службы,](../resources/serviceprincipal.md) организационного [контакта, устройства](../resources/orgcontact.md) или [](../resources/device.md)объекта [каталога](../resources/directoryobject.md). Это транзитивный метод.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -70,7 +70,7 @@ ms.locfileid: "61226958"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Приложение                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -130,7 +130,7 @@ POST /devices/{id}/checkMemberObjects
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и новый объект `200 OK` коллекции String в тексте отклика.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и новый объект коллекции String в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -179,12 +179,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/user-checkmemberobjects-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-checkmemberobjects-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

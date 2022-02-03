@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 17a468a917031985ffb0e507a04e6943413b1998
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 35122fb696c25d531dae3360e5cfec88518820db
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61021719"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339805"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -32,7 +32,7 @@ ms.locfileid: "61021719"
 | Для приложений                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \*Администраторы должны [](/graph/cloud-communication-online-meeting-application-access-policy) создать политику доступа к приложениям и предоставить ее пользователю, уполномочив приложение, настроенного в политике, создать или получить онлайн-встречу с внешним ИД от имени этого пользователя (пользовательский ID, указанный в пути запроса).
+> \*Администраторы должны создать политику [](/graph/cloud-communication-online-meeting-application-access-policy) доступа к приложениям и предоставить ее пользователю, уполномочив приложение, настроенного в политике, создать или получить онлайн-встречу с внешним ИД от имени этого пользователя (пользовательский ID, указанный в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
 Вызов **API createOrGet** с делегированным маркером:
@@ -72,14 +72,14 @@ POST /users/{userId}/onlineMeetings/createOrGet
 >
 > - Если **startDateTime** и **endDateTime** не предоставлены, по умолчанию **startDateTime** будет по умолчанию по текущему значению dateTime, а **значение endDateTime** равно **значению startDateTime** + 1 час.
 >
-> - Если **предоставляется startDateTime,** а **endDateTime** — нет, значение **endDateTime** будет равно **значению startDateTime** + 1 час.
+> - Если **предоставляется startDateTime** , а **endDateTime** — нет, значение **endDateTime** будет равно **значению startDateTime** + 1 час.
 >
-> - Ошибка будет выброшена, если **endDateTime** предоставляется без **startDateTime** или если **endDateTime** является более ранним, чем **startDateTime.**
+> - Ошибка будет выброшена, если **endDateTime** предоставляется без **startDateTime** или если **endDateTime** является более ранним, чем **startDateTime**.
 >
 > - В **настоящее время chatInfo** поддерживается только в бета-версии.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа, если создается новое собрание, или код ответа при извлечении `201 Created` `200 OK` существующего собрания. В обоих случаях [объект onlineMeeting](../resources/onlinemeeting.md) возвращается в теле отклика.
+В случае успешной `201 Created` работы этот метод возвращает код ответа, если создается новое собрание, `200 OK` или код ответа при извлечении существующего собрания. В обоих случаях [объект onlineMeeting](../resources/onlinemeeting.md) возвращается в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -136,6 +136,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-or-get-onlinemeeting-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-or-get-onlinemeeting-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -265,6 +269,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-or-get-onlinemeeting-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-or-get-onlinemeeting-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

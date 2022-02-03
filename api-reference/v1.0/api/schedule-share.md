@@ -5,20 +5,20 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1069ba7025a39d69984a4bc7b365efba62182603
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b0fe3490060835d2144745f1be562530cac1734a
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976440"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347179"
 ---
 # <a name="schedule-share"></a>расписание: доля
 
 Пространство имен: microsoft.graph
 
 Поделитесь [диапазоном](../resources/schedule.md) времени расписания с участниками расписания.
-Сделайте коллекции элементов [shift,](../resources/shift.md) [openshift](../resources/openshift.md) и [timeOff](../resources/timeoff.md) в [](../resources/schedule.md) указанном диапазоне времени для просмотра указанными участниками группы, включая сотрудников и менеджеров.
-Каждая [](../resources/schedule.md) [смена, экземпляр openshift](../resources/openshift.md) и [timeOff](../resources/timeoff.md) в расписании поддерживают проектную версию и общую версию элемента. [](../resources/shift.md) Проектную версию просматривают только руководители, а общую версию просматривают сотрудники и руководители. Для [](../resources/shift.md)каждой смены, экземпляра [openshift](../resources/openshift.md) и [timeOff](../resources/timeoff.md) в указанном диапазоне времени действие share обновляет общую версию из черновиковой версии, чтобы помимо руководителей сотрудники могли просматривать наиболее актуальные сведения о элементе. Параметр **notifyTeam** далее указывает, какие сотрудники могут просматривать элемент.
+Сделайте коллекции элементов [shift](../resources/shift.md), [openshift](../resources/openshift.md) и [timeOff](../resources/timeoff.md) в указанном диапазоне времени для просмотра указанными членами группы, включая сотрудников и менеджеров.[](../resources/schedule.md)
+Каждая [смена](../resources/shift.md), [экземпляр openshift](../resources/openshift.md) и [timeOff](../resources/timeoff.md) в [](../resources/schedule.md) расписании поддерживают проектную версию и общую версию элемента. Проектную версию просматривают только руководители, а общую версию просматривают сотрудники и руководители. Для каждой [смены,](../resources/shift.md) [экземпляра openshift](../resources/openshift.md) и [timeOff](../resources/timeoff.md) в указанном диапазоне времени действие share обновляет общую версию из черновиковой версии, чтобы помимо руководителей сотрудники могли просматривать самые актуальные сведения о элементе. Параметр **notifyTeam** далее указывает, какие сотрудники могут просматривать элемент.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "60976440"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule.ReadWrite.All |
+|Приложение | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -99,6 +99,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/schedule-share-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/schedule-share-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

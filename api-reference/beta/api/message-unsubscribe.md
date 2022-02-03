@@ -1,16 +1,16 @@
 ---
 title: 'сообщение: отписать'
-description: Отправка запроса электронной почты от имени подписанного пользователя для отписки из списка рассылки электронной почты. Использует сведения в `List-Unsubscribe` загонах.
+description: Отправка запроса электронной почты от имени подписанного пользователя для отписки из списка рассылки электронной почты. Использует сведения в загонах `List-Unsubscribe` .
 author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 59b9ebc2c2d21259fed7181165240a7cc5e82be3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 00967bce5c50c1d958933e12fe33f8000565e3d1
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61004752"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342051"
 ---
 # <a name="message-unsubscribe"></a>сообщение: отписать
 
@@ -18,15 +18,15 @@ ms.locfileid: "61004752"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отправка запроса электронной почты от имени подписанного пользователя для отписки из списка рассылки электронной почты. Использует сведения в `List-Unsubscribe` загонах.
+Отправка запроса электронной почты от имени подписанного пользователя для отписки из списка рассылки электронной почты. Использует сведения в загонах `List-Unsubscribe` .
 
-Отправители сообщений могут использовать списки рассылки удобным способом, включив возможность отказа получателей. Они могут это сделать, указав заготку в каждом сообщении `List-Unsubscribe` после [RFC-2369.](https://www.faqs.org/rfcs/rfc2369.html)
+Отправители сообщений могут использовать списки рассылки удобным способом, включив возможность отказа получателей. Они могут это сделать, указав `List-Unsubscribe` заготку в каждом сообщении после [RFC-2369](https://www.faqs.org/rfcs/rfc2369.html).
 
-**Примечание** В частности,  чтобы действие отписки работало, отправитель должен указать, а не отписать данные на основе `mailto:` URL-адресов.
+**Примечание** В частности, чтобы действие  отписки работало, `mailto:` отправитель должен указать, а не отписать данные на основе URL-адресов.
 
-Настройка этого загона также задает свойство **unsubscribeEnabled** экземпляра сообщения и свойство [](../resources/message.md) `true` **unsubscribeData** к данным загона.
+Настройка этого загона также задает свойство **unsubscribeEnabled** [](../resources/message.md) `true`экземпляра сообщения и свойство **unsubscribeData** к данным загона.
 
-Если свойство **unsubscribeEnabled** сообщения является, вы можете использовать действие отписки, чтобы отписать пользователя от аналогичных будущих сообщений, управляемых отправителями `true` сообщений. 
+Если свойство **unsubscribeEnabled** `true`сообщения является, вы можете использовать действие отписки, чтобы отписать пользователя от аналогичных будущих сообщений, управляемых отправителями сообщений.
 
 Успешное **действие отписки** перемещает сообщение в папку **"Удаленные** элементы". Фактическое исключение пользователя из будущей рассылки почты управляется отправителям.
 
@@ -87,6 +87,10 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/unsubscribe
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/message-unsubscribe-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-unsubscribe-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

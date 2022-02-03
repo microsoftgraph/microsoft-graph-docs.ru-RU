@@ -5,17 +5,17 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8e197cfbceeb63a2a132025f570f9baaaec4a9f1
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: a4d93b1fc6da20ad391641f55c050103b24d8816
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225688"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339945"
 ---
 # <a name="team-sendactivitynotification"></a>команда: sendActivityNotification
 Пространство имен: microsoft.graph
 
-Отправьте уведомление о канале действий в области группы. Дополнительные сведения об отправке уведомлений и требованиях к этому см. в Teams [действия.](/graph/teams-send-activityfeednotifications)
+Отправьте уведомление о канале действий в области группы. Дополнительные сведения об отправке уведомлений и требованиях для этого см. в Teams [действий](/graph/teams-send-activityfeednotifications).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,9 +24,9 @@ ms.locfileid: "62225688"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|TeamsActivity.Send|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|TeamsActivity.Send.Group*, TeamsActivity.Send|
+|Приложение|TeamsActivity.Send.Group*, TeamsActivity.Send|
 
->**Примечание:** Разрешения, отмеченные * [использованием согласия, определенного для ресурсов.](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+>**Примечание:** Разрешения, помеченные *, [используют разрешение, определенное для ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ POST /teams/{teamId}/sendActivityNotification
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
@@ -53,12 +53,12 @@ POST /teams/{teamId}/sendActivityNotification
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает обсуждаемый ресурс.|
 |activityType|String|Тип действия. Это должно быть объявлено в [манифесте Teams приложения](/microsoftteams/platform/overview).|
-|chainId|Int64|Необязательно. Используется для переопределения предыдущего уведомления. Используйте то же `chainId` самое в последующих запросах для переопределения предыдущего уведомления.|
+|chainId|Int64|Необязательный параметр. Используется для переопределения предыдущего уведомления. Используйте то же самое `chainId` в последующих запросах для переопределения предыдущего уведомления.|
 |previewText|[itemBody](../resources/itembody.md)|Предварительный текст уведомления. Microsoft Teams только первые 150 символов.|
-|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения переменных шаблонов, определенных в записи ленты действий, соответствующие манифесту `activityType` [Teams приложения.](/microsoftteams/platform/overview)|
+|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения для переменных шаблонов, определенных в записи `activityType` ленты действий, соответствующие манифесту [Teams приложения](/microsoftteams/platform/overview).|
 |получатель;|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Получатель уведомления. Поддерживаются только пользователи Azure AD. См. [также aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
 
-При настройке значения свойства темы для следующих ресурсов `source` поддерживаются следующие  `entityUrl` ресурсы:
+При настройке `source` значения свойства темы для следующих ресурсов  поддерживаются `entityUrl`следующие ресурсы:
 
 - [team](../resources/team.md)
 - [channel](../resources/channel.md)
@@ -131,6 +131,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -150,7 +154,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-notify-a-user-about-a-channel-tab"></a>Пример 2. Уведомление пользователя о вкладке канала
 
-Как и в предыдущем примере, в этом примере `entityUrl` используется `topic` для . Однако в этом примере ссылки на [вкладку](../resources/teamstab.md) в [канале](../resources/channel.md). На вкладке размещена страница, показывающая пользователю состояние бронирования в отеле. Выбор уведомления будет принимать пользователя на вкладке, где он может проверить свое бронирование.
+Как и в предыдущем примере, в этом примере используется `entityUrl` для .`topic` Однако в этом примере ссылки на [вкладку](../resources/teamstab.md) в [канале](../resources/channel.md). На вкладке размещена страница, показывающая пользователю состояние бронирования в отеле. Выбор уведомления будет принимать пользователя на вкладке, где он может проверить свое бронирование.
 
 #### <a name="request"></a>Запрос
 <!-- {
@@ -200,7 +204,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-notify-a-user-about-a-channel-tab-using-user-principal-name"></a>Пример 3. Уведомление пользователя о вкладке канала с использованием основного имени пользователя
 
-Как и в предыдущем примере, в этом примере `entityUrl` используется `topic` для . Однако в этом примере ссылки на [вкладку](../resources/teamstab.md) в [канале](../resources/channel.md). На вкладке размещена страница, показывающая пользователю состояние бронирования в отеле. Выбор уведомления будет принимать пользователя на вкладке, где он может проверить свое бронирование.
+Как и в предыдущем примере, в этом примере используется `entityUrl` для .`topic` Однако в этом примере ссылки на [вкладку](../resources/teamstab.md) в [канале](../resources/channel.md). На вкладке размещена страница, показывающая пользователю состояние бронирования в отеле. Выбор уведомления будет принимать пользователя на вкладке, где он может проверить свое бронирование.
 
 #### <a name="request"></a>Запрос
 
@@ -260,6 +264,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-upn-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-upn-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -276,7 +284,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-4-notify-a-user-about-an-event-using-custom-topic"></a>Пример 4. Уведомление пользователя о событии с использованием настраиваемой темы
 
-Как повествуют в предыдущих примерах, вы можете ссылаться на различные аспекты команды. Однако если вы хотите связаться с аспектом, который не является частью команды или не представлен Корпорацией Майкрософт Graph, или вы хотите настроить имя, вы можете установить источник и передать в настраиваемом значении для `topic` `text` него. `webUrl` требуется при настройке `topic` источника `text` для .
+Как повествуют в предыдущих примерах, вы можете ссылаться на различные аспекты команды. Однако если вы хотите связаться с аспектом, который не является частью команды или не представлен Корпорацией Майкрософт Graph, или вы хотите настроить имя, `topic` `text` вы можете установить источник и передать в настраиваемом значении для него. `webUrl` требуется при настройке `topic` источника для `text`.
 
 #### <a name="request"></a>Запрос
 <!-- {

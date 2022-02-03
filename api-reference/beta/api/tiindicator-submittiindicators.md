@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 325bdb7efd98be05192faba712fbc14937196c5e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d3cae1ab57dcacc1cd9742796b99fbc1a2f3aa53
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60989533"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348257"
 ---
 # <a name="tiindicator-submittiindicators"></a>tiIndicator: submitTiIndicators
 
@@ -28,7 +28,7 @@ Upload нескольких индикаторов разведки угроз (
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatIndicators.ReadWrite.OwnedBy |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Приложение                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,11 +52,11 @@ POST /security/tiIndicators/submitTiIndicators
 |:-------------|:------------|:------------|
 |значение|коллекция tiIndicator| Коллекция **tiIndicators** JSON, которая будет создана. |
 
-Для каждого tiIndicator поставляем JSON-представление объекта [tiIndicator,](../resources/tiindicator.md) [](../resources/tiindicator.md#indicator-observables---file)содержащего [](../resources/tiindicator.md#indicator-observables---network) по крайней мере одну электронную [почту,](../resources/tiindicator.md#indicator-observables---email)файл или сеть, наблюдаемую, и следующие необходимые поля: `action` , , , , `description` `expirationDateTime` `targetProduct` `threatType` `tlpLevel` .
+Для каждого tiIndicator поставляем JSON-представление объекта [tiIndicator](../resources/tiindicator.md)[](../resources/tiindicator.md#indicator-observables---file), содержащего по крайней мере одну электронную [почту, файл](../resources/tiindicator.md#indicator-observables---email) или сеть, наблюдаемую, и следующие необходимые [](../resources/tiindicator.md#indicator-observables---network) поля: `action`, `description`, `expirationDateTime`, `targetProduct`, . `threatType``tlpLevel`
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [tiIndicator](../resources/tiindicator.md) в тексте отклика.  При ошибке этот метод возвращает `206 Partial Content` код ответа.  Дополнительные [сведения см. в](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) "Ошибках".
+В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию объектов [tiIndicator](../resources/tiindicator.md) в тексте отклика.  При ошибке этот метод возвращает код `206 Partial Content` ответа.  [Дополнительные сведения см. в](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) "Ошибках".
 
 ## <a name="examples"></a>Примеры
 
@@ -134,12 +134,16 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/tiindicator-submittiindicators-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tiindicator-submittiindicators-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > [!NOTE]
 > Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.

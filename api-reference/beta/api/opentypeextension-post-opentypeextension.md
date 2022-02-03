@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: b2a85cac85d2f61974fa15d9931d03a9d254ecb6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f834fc291a2294de095a6e223d3b144e4e3e995a
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130952"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339742"
 ---
 # <a name="create-open-extension"></a>Создание открытого расширения
 
@@ -18,7 +18,7 @@ ms.locfileid: "62130952"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте открытое расширение[(объект openTypeExtension)](../resources/opentypeextension.md) и добавьте настраиваемые свойства в новом или существующем экземпляре поддерживаемого ресурса.
+Создайте открытое расширение ([объект openTypeExtension](../resources/opentypeextension.md) ) и добавьте настраиваемые свойства в новом или существующем экземпляре поддерживаемого ресурса.
 
 В таблице раздела [Разрешения](#permissions) перечислены ресурсы, поддерживающие открытые расширения.
 
@@ -100,9 +100,9 @@ POST /users/{id|userPrincipalName}/tasks/lists/{id}/extensions
 | Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-Предостанавлить тело [JSON openTypeExtension,](../resources/opentypeextension.md)с помощью следующих необходимых пар с именем и любыми дополнительными пользовательскими данными. Полезные данные JSON могут относиться к простому типу или представлять собой массив элементов простого типа.
+Предостанавлив JSON-корпус [openTypeExtension](../resources/opentypeextension.md), выполнимые ниже пары значений имени и любые дополнительные пользовательские данные. Полезные данные JSON могут относиться к простому типу или представлять собой массив элементов простого типа.
 
 | Имя       | Значение |
 |:---------------|:----------|
@@ -489,6 +489,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-opentypeextension-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

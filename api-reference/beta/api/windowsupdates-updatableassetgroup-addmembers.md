@@ -5,23 +5,23 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 0782a630e0dcbc4ed5e55af79abee554f8d0a87b
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: e77e15fb422b645d88532b72b134b5e55a2c681c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860012"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342494"
 ---
 # <a name="updatableassetgroup-addmembers"></a>updatableAssetGroup: addMembers
 Пространство имен: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление участников в [updatableAssetGroup.](../resources/windowsupdates-updatableassetgroup.md)
+Добавление участников в [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
 
-В качестве участников можно добавить [ресурсы azureADDevice,](../resources/windowsupdates-azureaddevice.md) но не добавлять **updatableAssetGroup** в качестве участников.
+В качестве участников [можно добавить ресурсы azureADDevice](../resources/windowsupdates-azureaddevice.md) , но не добавлять **updatableAssetGroup** в качестве участников.
 
-Добавление устройства Azure AD в качестве члена группы updatable asset автоматически создает объект **azureADDevice,** если он еще не существует.
+Добавление устройства Azure AD в качестве члена группы updatable asset автоматически создает объект **azureADDevice** , если он еще не существует.
 
 Вы также можете использовать метод [addMembersById](windowsupdates-updatableassetgroup-addmembersbyid.md) для добавления участников.
 
@@ -32,7 +32,7 @@ ms.locfileid: "61860012"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|WindowsUpdates.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|WindowsUpdates.ReadWrite.All|
+|Приложение|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ POST /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/addMembers
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,7 +57,7 @@ POST /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/addMembers
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|assets|[коллекция microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md)|Список **updatableAsset** ресурсов, которые необходимо добавить в качестве членов **updatableAssetGroup.**|
+|assets|[коллекция microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md)|Список **updatableAsset** ресурсов, которые необходимо добавить в качестве членов **updatableAssetGroup**.|
 
 ## <a name="response"></a>Ответ
 
@@ -104,6 +104,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableassetgroup-addmembers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/updatableassetgroup-addmembers-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

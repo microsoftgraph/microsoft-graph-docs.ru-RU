@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: f6cf291183a4f12c8252b09eec70fa948bba49a1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 56dbbc3e3b2632d154b0347feac1b525fe040247
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60991114"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339377"
 ---
 # <a name="alert-updatealerts"></a>оповещение: updateAlerts
 
@@ -28,7 +28,7 @@ ms.locfileid: "60991114"
 |:---------------------------------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |   SecurityEvents.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | SecurityEvents.ReadWrite.All |
+|Приложение | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,15 +46,15 @@ POST /security/alerts/updateAlerts
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. Каждая сущность должна иметь **свойства id** и **vendorInformation.** Сведения о свойствах, которые можно обновить, см. в [материале Update Alert.](alert-update.md)
+В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. Каждая сущность должна иметь **свойства id** и **vendorInformation** . Подробные сведения о свойствах, которые можно обновить, см. в [статью Оповещение об обновлении](alert-update.md).
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|значение|Коллекция [alert](../resources/alert.md)| Коллекция оповещений для обновления. Каждый объект должен иметь **id,** **vendorInformation** и другие редактируемые свойства, которые необходимо обновить.|
+|значение|Коллекция [alert](../resources/alert.md)| Коллекция оповещений для обновления. Каждая сущность должна иметь **id**, **vendorInformation** и другие редактируемые свойства, которые необходимо обновить.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и объект сбора оповещений `200, OK` в тексте [](../resources/alert.md) ответа.
+В случае успешной работы этот `200, OK` метод возвращает код отклика и объект сбора оповещений в тексте ответа.[](../resources/alert.md)
 
 ## <a name="examples"></a>Примеры
 
@@ -114,12 +114,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/alert-updatealerts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/alert-updatealerts-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > [!NOTE]
 > Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.

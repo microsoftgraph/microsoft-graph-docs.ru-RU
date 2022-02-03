@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: dafd238642c49572ec776326584b75fd902b149a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ce9fbe4843560c65ad132cc37c543b84605daa7e
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109070"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340227"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadUrl
 
@@ -18,11 +18,11 @@ ms.locfileid: "62109070"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение подписи общего доступа (SAS) для отправки исходных файлов в хранилище BLOB Azure для определенного профиля синхронизации школьных данных [в](../resources/educationsynchronizationprofile.md) клиенте. Срок действия маркера SAS - один час.
+Извлечение подписи общего доступа (SAS) для отправки исходных файлов в хранилище BLOB Azure для определенного профиля синхронизации школьных [данных в](../resources/educationsynchronizationprofile.md) клиенте. Срок действия маркера SAS - один час.
 
-URL-адрес загрузки предоставляется только поставщику [данных CSV.](../resources/educationcsvdataprovider.md)
+URL-адрес загрузки предоставляется только поставщику [данных CSV](../resources/educationcsvdataprovider.md).
 
-> **Примечание:** Чтобы получить доступ к хранилище blob с помощью маркера SAS, используйте [SDKs](https://github.com/search?q=org%3AAzure+azure-storage) хранилища Azure или [AzCopy.](/azure/storage/storage-use-azcopy)
+> **Примечание:** Чтобы получить доступ к хранилище blob с помощью маркера SAS, используйте [SDKs хранилища Azure](https://github.com/search?q=org%3AAzure+azure-storage) или [AzCopy](/azure/storage/storage-use-azcopy).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,12 +44,12 @@ GET /education/synchronizationProfiles/{id}/uploadUrl
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` URL-адрес SAS для [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код отклика и URL-адрес SAS для [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) в тексте ответа.
 
-Если предыдущий запрос еще обрабатывается, этот метод возвращает указание на то, что загрузка в настоящее время заблокирована для `409 Conflict` [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md).
+Если предыдущий запрос еще обрабатывается, `409 Conflict` этот метод возвращает указание на то, что отправка в настоящее время заблокирована для [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md).
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -83,11 +83,15 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/uplo
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationsynchronizationprofile-uploadurl-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationsynchronizationprofile-uploadurl-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

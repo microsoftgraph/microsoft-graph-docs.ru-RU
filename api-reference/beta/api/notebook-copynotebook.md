@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 3007fcea753c8fb1cdf04adb8b0ff78ecfe4161b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a078c198f96a2cf16a4d9fb93b2b0ddc8c26fa59
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61007902"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339769"
 ---
 # <a name="notebook-copynotebook"></a>блокнот: copyNotebook
 
@@ -50,14 +50,14 @@ POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|siteCollectionId|Строка|ID сайта SharePoint скопировать. Используйте только при копировании на SharePoint сайте.|
-|siteId|Строка|ID веб-SharePoint для копирования. Используйте только при копировании на SharePoint сайте.|
+|siteCollectionId|String|ID сайта SharePoint скопировать. Используйте только при копировании на SharePoint сайте.|
+|siteId|String|ID веб-SharePoint для копирования. Используйте только при копировании на SharePoint сайте.|
 |groupId|String|ID группы для копирования. Используйте только при копировании в Microsoft 365 группу.|
 |переименоватьAs|String|Имя копии. По умолчанию имя существующего элемента. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `202 Accepted` ответа и `Operation-Location` загот. Опрос конечной Operation-Location, [чтобы получить состояние операции копирования.](onenoteoperation-get.md)
+В случае успешной работы этот метод возвращает код `202 Accepted` ответа и загот `Operation-Location` . Опрос Operation-Location конечной точки [, чтобы получить состояние операции копирования](onenoteoperation-get.md).
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -96,6 +96,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/notebook-copynotebook-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/notebook-copynotebook-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

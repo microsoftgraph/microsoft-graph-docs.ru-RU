@@ -5,23 +5,23 @@ author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 075a74b56d3d28c0a40a1f703efe0ee6e0ee9787
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 5be75f26718c2ef5f0b7f7105a006c33d8eae7ca
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524732"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347693"
 ---
 # <a name="educationassignment-delta"></a>educationAssignment: delta
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список недавно созданных или обновленных [назначений,](../resources/educationassignment.md) не выполняя полную версию коллекции.
+Получите список недавно созданных или обновленных [назначений](../resources/educationassignment.md) , не выполняя полную версию коллекции.
 
-Учитель или приложение, работая с разрешениями приложения, могут видеть все объекты **назначения** для класса. Учащиеся могут видеть **только назначения,** которые им назначены.
+Учитель или приложение, работая с разрешениями приложения, могут видеть все объекты **назначения** для класса. Учащиеся могут видеть **только назначения** , которые им назначены.
 
-> **Примечание:** Этот метод не возвращает удаленные **назначения.**
+> **Примечание:** Этот метод не возвращает удаленные **назначения**.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -33,7 +33,7 @@ ms.locfileid: "61524732"
 | Приложение                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод не поддерживает `$expand` параметры `$orderby` запроса , `$search` и `$filter` OData.
+Этот метод не поддерживает `$expand`параметры запроса , `$orderby`и `$filter` `$search`OData.
 
 Этот метод поддерживает только параметр `$top` запроса OData.
 
@@ -58,7 +58,7 @@ GET /education/classes/{educationClassId}/members/{educationUserId}/assignments/
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения эта функция возвращает код ответа и `200 OK` коллекцию [educationAssignment](../resources/educationassignment.md) в тексте ответа.
+В случае успешного выполнения эта функция возвращает код `200 OK` ответа и коллекцию [educationAssignment](../resources/educationassignment.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -68,7 +68,7 @@ GET /education/classes/{educationClassId}/members/{educationUserId}/assignments/
 
 Ниже приведен пример запроса. 
 
-Используйте `$top` параметр, чтобы указать количество возвращаемого назначения. Параметр необязательный, но использовать его желательно, если у вас есть длинный список назначений; в противном случае вы получите все назначения в классе.
+Используйте параметр `$top` , чтобы указать количество возвращаемого назначения. Параметр необязательный, но использовать его желательно, если у вас есть длинный список назначений; в противном случае вы получите все назначения в классе.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -100,15 +100,19 @@ GET https://graph.microsoft.com/beta/education/education/classes/72a7baec-c3e9-4
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-delta-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
->**Примечание:** Возьмите `@odata.nextLink` ответ, чтобы сделать еще один вызов и получить следующий набор назначений.
+>**Примечание:** Возьмите ответ `@odata.nextLink` , чтобы сделать еще один вызов и получить следующий набор назначений.
 
 <!-- {
   "blockType": "response",
@@ -256,6 +260,10 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$s
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-delta-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---
@@ -263,9 +271,9 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$s
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
->**Примечание:** Вы должны продолжать использовать значение для последующих вызовов, пока не `@odata.nextLink` получите свойство в `@odata.deltaLink` ответе.
+>**Примечание:** Вы должны продолжать использовать значение для `@odata.nextLink` последующих вызовов, пока не получите `@odata.deltaLink` свойство в ответе.
 
 <!-- {
   "blockType": "response",
@@ -413,17 +421,21 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$d
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-delta-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
->**Примечание:** Вы должны продолжать использовать для получения вновь созданных или измененных `@odata.deltaLink` назначений с момента первоначального вызова Delta.
+>**Примечание:** Вы должны продолжать использовать для `@odata.deltaLink` получения вновь созданных или измененных назначений с момента первоначального вызова Delta.
 
->Иногда ответ дельты будет очень большим, и в этом случае будет возвращено, чтобы продолжить извлечение изменений до тех пор, `@odata.nextLink` пока вы не нажметесь `@odata.deltaLink` снова.
+>Иногда ответ дельты будет `@odata.nextLink` очень большим, и в этом случае будет возвращено, чтобы продолжить извлечение изменений до тех пор, пока вы не нажметесь снова `@odata.deltaLink` .
 
 <!-- {
   "blockType": "response",

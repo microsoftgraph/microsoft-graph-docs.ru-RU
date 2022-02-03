@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 509e0346103e3d9c73236b4d8d9cc55491dcb29e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: bda54f0e8f59bd69848c688b21f908d5d6e4bc19
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026136"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343698"
 ---
 # <a name="team-completemigration"></a>команда: completeMigration
 
@@ -18,7 +18,7 @@ ms.locfileid: "61026136"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Завершите процесс миграции сообщений, `migration mode` удалив его из [группы.](../resources/team.md) `Migration mode` это специальное состояние, в котором определенные операции запрещены, например post сообщения и операции членства во время процесса миграции данных.
+Завершите процесс миграции сообщений путем удаления `migration mode` из [группы](../resources/team.md). `Migration mode` это специальное состояние, в котором определенные операции запрещены, например post сообщения и операции членства во время процесса миграции данных.
 
 После выполнения **запроса completeMigration** вы не можете импортировать дополнительные сообщения в команду. Вы можете добавить членов в команду после успешного ответа на запрос.
 
@@ -89,6 +89,10 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/completemigration-team-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/completemigration-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

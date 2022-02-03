@@ -1,22 +1,22 @@
 ---
 title: 'directoryObject: checkMemberGroups'
-description: Проверьте членство в указанном списке групп и вернись из этого списка тех групп, участником которых является указанный пользователь, группа, руководитель службы, организационный контакт, устройство или объект каталога.
+description: Проверка участия в указанном списке групп и возвращение из этого списка тех групп, в которых состоит указанный пользователь, группа, субъект-служба, контакт организации, устройство или объект каталога.
 ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c034727b7ced181723258748b5f3547ae875452d
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 5aab6bbb01b942b6f842e410ada87405f2620bdb
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224082"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346795"
 ---
 # <a name="directoryobject-checkmembergroups"></a>directoryObject: checkMemberGroups
 
 Пространство имен: microsoft.graph
 
-Проверьте членство в указанном списке групп и вернись из этого списка тех групп, членом которых [](../resources/device.md)является [](../resources/directoryobject.md) указанный [пользователь,](../resources/user.md) [группа,](../resources/group.md)руководитель службы, [](../resources/serviceprincipal.md)организационный [контакт,](../resources/orgcontact.md)устройство или объект каталога. Это транзитивная функция.
+Проверьте членство в указанном списке групп и вернись из этого списка тех [групп, участником](../resources/user.md) которых является указанный [пользователь, группа](../resources/group.md)[, руководитель](../resources/serviceprincipal.md) службы[, организационный](../resources/orgcontact.md) [контакт, устройство](../resources/device.md) или [](../resources/directoryobject.md) объект каталога. Это транзитивная функция.
 
 В одном запросе можно проверять до 20 групп. Эта функция поддерживает все группы, которые предусмотрены в Azure AD. Поскольку Microsoft 365 группы не могут содержать другие группы, членство Microsoft 365 группы всегда является прямым.
 
@@ -28,7 +28,7 @@ ms.locfileid: "61224082"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All и GroupMember.Read.All, User.Read.All и GroupMember.Read.All, User.ReadBasic.All и Group.Read.All, User.Read.All и Group.Read.All, Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All |
+|Приложение | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All |
 
 ### <a name="group-memberships-for-a-user"></a>Членство в группе для пользователя
 
@@ -36,7 +36,7 @@ ms.locfileid: "61224082"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All и GroupMember.Read.All, User.Read.All и GroupMember.Read.All, User.ReadBasic.All и Group.Read.All, User.Read.All и Group.Read.All, Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All |
+|Приложение | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All |
 
 ### <a name="group-memberships-for-a-group"></a>Членство в группе для группы
 
@@ -68,7 +68,7 @@ ms.locfileid: "61224082"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Приложение                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 <!--
 
@@ -129,7 +129,7 @@ POST /devices/{id}/checkMemberGroups
 
 | Имя       | Описание|
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -138,7 +138,7 @@ POST /devices/{id}/checkMemberGroups
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|groupIds|Коллекция String|Коллекция, содержащая идентификатор объектов групп, членство в которых нужно проверить. Можно указать до 20 групп.|
+|groupIds|Коллекция строк|Коллекция, содержащая идентификатор объектов групп, членство в которых нужно проверить. Можно указать до 20 групп.|
 
 ## <a name="response"></a>Отклик
 
@@ -188,6 +188,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-checkmembergroups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-checkmembergroups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -258,6 +262,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-checkmembergroups-me-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-checkmembergroups-me-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

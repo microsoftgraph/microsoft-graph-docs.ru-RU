@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8e0ca4c9ee3df8a597848873dfef50570212df46
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f73a1bd733f157e409582849289b120b432a7940
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984535"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343257"
 ---
 # <a name="message-replyall"></a>message: replyAll
 
@@ -19,8 +19,8 @@ ms.locfileid: "60984535"
 Ответьте всем получателям [сообщения в](../resources/message.md) формате JSON или MIME.
 
 При использовании формата JSON:
-- Укажите комментарий или **свойство** тела `message` параметра. При указании обоих возвращается ошибка http 400 Bad Request.
-- Если исходное сообщение указывает получателя в свойстве **replyTo,** в формате интернет-сообщений [(RFC 2822),](https://www.rfc-editor.org/info/rfc2822)отправьте ответ получателям в **replyTo,** а не получателю из **свойства.**
+- Укажите комментарий или **свойство** тела параметра `message` . При указании обоих возвращается ошибка http 400 Bad Request.
+- Если исходное сообщение указывает получателя в свойстве **replyTo**, в формате интернет-сообщений ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), отправьте ответ получателям в **replyTo**, а не получателю в свойстве.
 
 При использовании формата MIME:
 - Укажите соответствующие [заголовки сообщений Интернета](https://tools.ietf.org/html/rfc2076) и [содержимое MIME](https://tools.ietf.org/html/rfc2045), а также закодируйте их в формате **Base64** в тексте запроса.
@@ -28,7 +28,7 @@ ms.locfileid: "60984535"
 
 Этот метод сохраняет сообщение в папке **Отправленные**.
 
-Кроме того, [создайте черновик для](../api/message-createreplyall.md) ответа на сообщение и [отправьте его](../api/message-send.md) позже.
+Кроме того, [создайте черновик для ответа на](../api/message-createreplyall.md) сообщение и [отправьте его](../api/message-send.md) позже.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -105,6 +105,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/message-replyall-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-replyall-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

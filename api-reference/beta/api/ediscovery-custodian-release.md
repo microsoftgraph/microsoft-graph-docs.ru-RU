@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 7abe5c1d935eda380753be62fa4a150eabc6d32b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: faf895f665e0c82aee107d2aaec59a5670938351
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60986893"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343538"
 ---
 # <a name="custodian-release"></a>хранитель: освобождение
 
@@ -18,7 +18,7 @@ ms.locfileid: "60986893"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Освобождение хранителя из дела. Подробнее см. в [материале "Освобождение хранителя из дела".](/microsoft-365/compliance/manage-new-custodians#release-a-custodian-from-a-case)
+Освобождение хранителя из дела. Подробные сведения см. [в материале Освобождение хранителя из дела](/microsoft-365/compliance/manage-new-custodians#release-a-custodian-from-a-case).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -89,6 +89,10 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea241
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/custodian-release-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/custodian-release-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

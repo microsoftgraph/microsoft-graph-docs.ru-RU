@@ -1,16 +1,17 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: f5290107b2ffd7c31259dd9a9c1a47007d2f7742
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1ccdc752da11988f2a9aae5ed9941db94f80a42e
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135365"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62351527"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.People
 
+# A UPN can also be used as -UserId.
 Get-MgUserProfileEducationalActivity -UserId $userId
 
 ```

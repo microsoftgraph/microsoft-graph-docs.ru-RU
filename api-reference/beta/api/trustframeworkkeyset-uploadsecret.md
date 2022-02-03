@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e325003e6673a06ff8b4bad1484168dc27dc63c0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4a37724f720d8b5ed5b2d18a7b75da2b60bd1eb9
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61013669"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346404"
 ---
 # <a name="trustframeworkkeyset-uploadsecret"></a>trustFrameworkKeySet: uploadSecret
 
@@ -18,7 +18,7 @@ ms.locfileid: "61013669"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upload простой текстовый секрет [для trustFrameworkKeyset](../resources/trustframeworkkeyset.md). Примеры секретов — секреты приложений в Azure Active Directory, Google, Facebook или любом другом поставщике удостоверений. его метод возвращает [trustFrameworkKey](../resources/trustframeworkkey.md).
+Upload простой текстовый секрет для [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). Примеры секретов — секреты приложений в Azure Active Directory, Google, Facebook или любом другом поставщике удостоверений. его метод возвращает [trustFrameworkKey](../resources/trustframeworkkey.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ Upload простой текстовый секрет [для trustFrameworkKeys
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | TrustFrameworkKeySet.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | TrustFrameworkKeySet.ReadWrite.All |
+| Приложение                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,14 +51,14 @@ POST /trustFramework/keySets/{id}/uploadSecret
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|использование|Строка|Аналогично **свойству использования** **trustFrameworkKey.**|
-|k|Строка|Аналогично свойству **k** **trustFrameworkKey.** Это поле, которое используется для отправки секрета.|
-|nbf|Int64|Аналогично свойству **nbf** **trustFrameworkKey.**|
-|exp|Int64|Аналогично свойству **exp** **trustFrameworkKey.**|
+|использование|String|Аналогично **свойству использования** **trustFrameworkKey**.|
+|k|String|Аналогично свойству **k** **trustFrameworkKey**. Это поле, которое используется для отправки секрета.|
+|nbf|Int64|Аналогично свойству **nbf** **trustFrameworkKey**.|
+|exp|Int64|Аналогично свойству **exp** **trustFrameworkKey**.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и новый `200 OK` [объект trustFrameworkKey](../resources/trustframeworkkey.md) в тексте ответа.
+В случае успеха этот метод возвращает код `200 OK` отклика и новый [объект trustFrameworkKey](../resources/trustframeworkkey.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -103,12 +103,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-uploadsecret-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/trustframeworkkeyset-uploadsecret-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

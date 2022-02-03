@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 713b4a25050fd111a78c77a0b60a637d6b7fad03
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 66834e753d1472bb303ce709586c696859d560d2
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034173"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341666"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -18,11 +18,11 @@ ms.locfileid: "61034173"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте черновик для ответа отправителю сообщения в формате JSON или MIME. [](../resources/message.md)
+Создайте черновик для ответа отправителю сообщения в [](../resources/message.md) формате JSON или MIME.
 
 При использовании формата JSON:
-- Укажите комментарий или **свойство** тела `message` параметра. При указании обоих возвращается ошибка http 400 Bad Request.
-- Если replyTo указывается в исходном сообщении в формате интернет-сообщений [(RFC 2822),](https://www.rfc-editor.org/info/rfc2822)необходимо отправить ответ получателям в **replyTo,** а не получателям из **.** 
+- Укажите комментарий или **свойство** тела параметра `message` . При указании обоих возвращается ошибка http 400 Bad Request.
+- Если **replyTo** указывается в исходном сообщении в формате интернет-сообщений ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), необходимо отправить ответ получателям в **replyTo**, а не получателям **из.**
 - Вы можете [обновить проект](../api/message-update.md) позже, чтобы добавить содержимое ответа в **тело или** изменить другие свойства сообщения.
 
 При использовании формата MIME:
@@ -62,7 +62,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |comment|String|Добавляемый комментарий. Может быть пустой строкой.|
-|message|[message](../resources/message.md)|Любые свойства, которые можно записать для обновления в ответном сообщении.|
+|сообщение|[message](../resources/message.md)|Любые свойства, которые можно записать для обновления в ответном сообщении.|
 
 При указании тела в формате MIME укажите содержимое MIME с применимыми заглавными сообщениями в Интернете, все закодированные в **формате base64** в тексте запроса.
 
@@ -124,6 +124,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/message-createreply-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-createreply-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

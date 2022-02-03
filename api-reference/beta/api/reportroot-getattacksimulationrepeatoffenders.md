@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 5795f832839ec59c5f88e9a94752dd5836a8206d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ab476d19cbcbadcb4a71216ce3b935ae369f29a2
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62111997"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344888"
 ---
 # <a name="reportroot-getattacksimulationrepeatoffenders"></a>reportRoot: getAttackSimulationRepeatOffenders
 Пространство имен: microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "62111997"
 
 Список пользователей клиента, который не раз уступил атакам в кампаниях моделирования атак и обучения.
 
-Эта функция поддерживает `@odata.nextLink` pagination.
+Эта функция поддерживает pagination `@odata.nextLink` .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,12 +45,12 @@ GET /reports/getAttackSimulationRepeatOffenders
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код ответа и `200 OK` [коллекцию attackSimulationRepeatOffender](../resources/attacksimulationrepeatoffender.md) в тексте ответа.
+В случае успешной `200 OK` работы эта функция возвращает код ответа и [коллекцию attackSimulationRepeatOffender](../resources/attacksimulationrepeatoffender.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/reports/getAttackSimulationRepeatOffenders
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reportroot-getattacksimulationrepeatoffenders-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getattacksimulationrepeatoffenders-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

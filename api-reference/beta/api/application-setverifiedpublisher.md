@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jesakowi
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: bae85faa7adc5fb2152bb68a0f0e2a7864baf129
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1bf9c6588b1c3e69a180a03b0a1bb07bdcaa8804
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982861"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340421"
 ---
 # <a name="application-setverifiedpublisher"></a>приложение: setVerifiedPublisher
 
@@ -18,7 +18,7 @@ ms.locfileid: "60982861"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Установите [проверенныйPublisher](../resources/verifiedPublisher.md) в [приложении.](../resources/application.md) Дополнительные сведения, включая необходимые условия для установки проверенного издателя, см. в Publisher [проверки.](/azure/active-directory/develop/publisher-verification-overview)
+Установите [проверенныйPublisher](../resources/verifiedPublisher.md) в [приложении](../resources/application.md). Дополнительные сведения, включая необходимые условия для установки проверенного издателя, см. в Publisher [проверки](/azure/active-directory/develop/publisher-verification-overview).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "60982861"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Для приложений | Не поддерживается |
+|Приложение | Не поддерживается |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,7 @@ POST /applications/{id}/setVerifiedPublisher
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| verifiedPublisherId | Строка | ID microsoft Partner Network (MPNID) проверенного издателя, который будет задат в приложении, из учетной записи Центра партнеров издателя. |
+| verifiedPublisherId | string | ID microsoft Partner Network (MPNID) проверенного издателя, который будет задат в приложении, из учетной записи Центра партнеров издателя. |
 
 ## <a name="response"></a>Отклик
 
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/application-setverifiedpublisher-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/application-setverifiedpublisher-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

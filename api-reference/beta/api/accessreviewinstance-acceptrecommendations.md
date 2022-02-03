@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 74b327cb61bb1a3d71bc8a07ddb5076269a44b62
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 70ee2b4c248e4c79c375d1b74667dc7619f18b40
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60992031"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340512"
 ---
 # <a name="accessreviewinstance-acceptrecommendations"></a>accessReviewInstance: acceptRecommendations
 
@@ -18,7 +18,7 @@ ms.locfileid: "60992031"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Позволяет принимать рекомендации по всем объектам [accessReviewInstanceDecisionItem,](../resources/accessreviewinstancedecisionitem.md) которые не были рассмотрены для объекта [accessReviewInstance,](../resources/accessreviewinstance.md) для которого вызываемого пользователя является рецензентом. Рекомендации, если **рекомендацииEnabled** находятся `true` на [объекте accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md) Если рекомендации по объекту [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) нет, решение не будет записано.
+Позволяет принимать рекомендации по всем объектам [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) , которые не были рассмотрены для объекта [accessReviewInstance](../resources/accessreviewinstance.md) , для которого вызываемого пользователя является рецензентом. Рекомендации создаются, если **рекомендацииEnabled** находятся `true` на [объекте accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md). Если рекомендации по объекту [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) нет, решение не будет записано.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -74,6 +74,10 @@ POST https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-6
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/acceptrecommendations-accessreviewinstance-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/acceptrecommendations-accessreviewinstance-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

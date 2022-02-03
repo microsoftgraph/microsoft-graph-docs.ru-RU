@@ -5,22 +5,22 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2c9fbdf998a26072ba1bb9ee38333cb016b60284
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 367e666748f654ee3363ecbe09e66ca989d846f8
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996204"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340816"
 ---
 # <a name="message-createforward"></a>message: createForward
 
 Пространство имен: microsoft.graph
 
-Создайте черновик для перенаадки существующего [сообщения](../resources/message.md)в формате JSON или MIME.
+Создайте черновик для перенаадки существующего [сообщения](../resources/message.md) в формате JSON или MIME.
 
 При использовании формата JSON можно:
-- Укажите комментарий или **свойство** тела `message` параметра. При указании обоих возвращается ошибка http 400 Bad Request.
-- Укажите `toRecipients` параметр или **свойство toRecipients** `message` параметра. Указание обоих или указаний не возвращает ошибку http 400 Bad Request.
+- Укажите комментарий или **свойство** тела параметра `message` . При указании обоих возвращается ошибка http 400 Bad Request.
+- Укажите параметр `toRecipients` или **свойство toRecipients** параметра `message` . Указание обоих или указаний не возвращает ошибку http 400 Bad Request.
 - [Обновите](../api/message-update.md) черновике позже, чтобы добавить **текст** или изменить другие свойства сообщения.
 
 При использовании формата MIME:
@@ -105,6 +105,10 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/message-createforward-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-createforward-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

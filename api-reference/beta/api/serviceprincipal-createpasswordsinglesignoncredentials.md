@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: da8374fb89de6efc133b4281bf6f3fe5aa92df7c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 968feaa0f7963e9e4582d3e867377ebf8c7a4ea7
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033872"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341008"
 ---
 # <a name="serviceprincipal-createpasswordsinglesignoncredentials"></a>servicePrincipal: createPasswordSingleSignOnCredentials
 
@@ -28,7 +28,7 @@ ms.locfileid: "61033872"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All |
+| Приложение                            | Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All |
 
 > [!NOTE]
 > Пользователи могут создавать учетные данные для себя. Владельцы и администраторы служб со следующими ролями могут создавать учетные данные для любого пользователя или группы: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. Дополнительные дополнительные функции см. в [каталоге ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
@@ -54,12 +54,12 @@ POST /servicePrincipals/{id}/createPasswordSingleSignOnCredentials
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка|ID пользователя или группы, к которой принадлежит этот набор учетных данных.|
+|id|String|ID пользователя или группы, к которой принадлежит этот набор учетных данных.|
 |учетные данные|[коллекция учетных](../resources/credential.md) данных|Список объектов учетных данных, которые определяют полный вход в потоке.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и новый `200 OK` [объект passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и новый [объект passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -113,12 +113,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-createpasswordsinglesignoncredentials-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-createpasswordsinglesignoncredentials-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b964aeb320d31eb03d3ff3bf8932fcf9618754f4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ac0eb31b71f9b963f1eb2671589845c7822ede00
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60989280"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348200"
 ---
 # <a name="timecard-clockout"></a>timeCard: clockOut
 
@@ -18,7 +18,7 @@ ms.locfileid: "60989280"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Clock out to end an open [timeCard](../resources/timeCard.md).
+Часы, чтобы закончить [открытую карту времени](../resources/timeCard.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ Clock out to end an open [timeCard](../resources/timeCard.md).
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule.ReadWrite.All* |
+|Приложение | Schedule.ReadWrite.All* |
 
->\***Важно:** При использовании разрешений приложения необходимо включить в запрос `MS-APP-ACTS-AS` заготвую.
+>\***Важно:** При использовании разрешений приложения необходимо `MS-APP-ACTS-AS` включить в запрос заготвую.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -96,6 +96,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/timecard-clockout-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/timecard-clockout-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

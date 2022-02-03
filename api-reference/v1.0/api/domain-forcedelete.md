@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6ba7dd7cf8a29ddfa008931ee8f210caf6bcc872
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e9b11a9ad26417285f6507910416072160eb77da
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60973935"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342842"
 ---
 # <a name="force-domain-deletion"></a>Принудительное удаление домена
 
@@ -18,21 +18,21 @@ ms.locfileid: "60973935"
 
 Удаляет домен с помощью асинхронной длительной операции.
 
-Перед [вызовом forceDelete](domain-forcedelete.md)необходимо обновить или удалить ссылки на Exchange **в** качестве службы обеспечения.
+Перед [вызовом forceDelete](domain-forcedelete.md) необходимо обновить или удалить ссылки на **Exchange в качестве** службы обеспечения.
 
 В рамках этой операции выполняются следующие действия:
 
-* Обновляет свойства и свойства домена со ссылками на удаленный домен для использования исходного onmicrosoft.com `userPrincipalName` `mail` `proxyAddresses` `users` домена.
+* Обновляет свойства `userPrincipalName`и свойства `mail``proxyAddresses` `users` домена со ссылками на удаленный домен для использования исходного onmicrosoft.com домена.
 
-* Обновляет свойство со ссылками на удаленный домен для использования исходного onmicrosoft.com `mail` `groups` домена.
+* Обновляет свойство со `mail` `groups` ссылками на удаленный домен для использования исходного onmicrosoft.com домена.
 
-* Обновляет свойство со ссылками на удаленный домен для использования исходного onmicrosoft.com `identifierUris` `applications` домена.
+* Обновляет свойство со `identifierUris` `applications` ссылками на удаленный домен для использования исходного onmicrosoft.com домена.
 
 * Если число объектов, которые будут переименованы, превышает 1000, возвращается ошибка.
 
-* Если одно из переименованных — это приложение с несколькими `applications` клиентами, возвращается ошибка.
+* Если одно из переименованных `applications` — это приложение с несколькими клиентами, возвращается ошибка.
 
-После завершения удаления домена операции API для удаленного домена возвращают код состояния HTTP 404. Чтобы проверить удаление домена, можно выполнить операцию [получения домена.](domain-get.md)
+После завершения удаления домена операции API для удаленного домена возвращают код состояния HTTP 404. Чтобы проверить удаление домена, можно выполнить операцию [получения домена](domain-get.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,7 +42,7 @@ ms.locfileid: "60973935"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Domain.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Domain.ReadWrite.All |
+|Приложение | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -67,7 +67,7 @@ POST /domains/{id}/forceDelete
 
 | Параметр | Тип | Описание |
 |:---------------|:--------|:----------|
-|`disableUserAccounts`|`Boolean`| Параметр отключения учетных записей пользователей, которые переименованы. Если учетная запись пользователя отключена, пользователю не будет разрешено войти. Если **установлено,** что обновленная версия в рамках этой операции `users` будет отключена.  Значение по умолчанию: **true**. |
+|`disableUserAccounts`|`Boolean`| Параметр отключения учетных записей пользователей, которые переименованы. Если учетная запись пользователя отключена, пользователю не будет разрешено войти. Если **установлено,** что `users` обновленная версия в рамках этой операции будет отключена.  Значение по умолчанию: **true**. |
 
 ## <a name="response-body"></a>Текст отклика
 
@@ -110,6 +110,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/domain-forcedelete-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/domain-forcedelete-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

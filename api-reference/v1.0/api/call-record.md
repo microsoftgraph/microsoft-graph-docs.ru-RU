@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 266c4541293ee0f6a38b2b15c1037fe4d1347412
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 28c93cc765036e5461d6f2b83b6172fecc5e043d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029714"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344324"
 ---
 # <a name="call-recordresponse"></a>вызов: recordResponse
 
@@ -21,11 +21,11 @@ ms.locfileid: "61029714"
 
 Дополнительные сведения о том, как обрабатывать операции, просмотрите [commsOperation](../resources/commsOperation.md)
 
->**Примечание:** Это поддерживается только для [вызовов,](../resources/call.md) которые инициированы с [помощью serviceHostedMediaConfig.](../resources/servicehostedmediaconfig.md)
+>**Примечание:** Это поддерживается только для [вызовов](../resources/call.md) , инициированных с [помощью serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 
 Это действие не предназначено для записи всего вызова. Максимальная продолжительность записи — 2 минуты. Запись не будет постоянно сохранена платформой облачных коммуникаций и удаляется вскоре после окончания вызова. Бот должен быстро скачать запись после завершения операции записи, используя значение recordingLocation, которое дано в завершенной уведомлении.
 
->**Примечание:** Любые собранные средства **массовой** информации не могут сохраняться. Убедитесь, что вы соответствуете законам и правилам вашей области, когда дело доходит до записи вызовов. Дополнительные сведения обратитесь к адвокату.
+>**Примечание:** Любые собранные средства **массовой информации не могут** сохраняться. Убедитесь, что вы соответствуете законам и правилам вашей области, когда дело доходит до записи вызовов. Дополнительные сведения обратитесь к адвокату.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -34,7 +34,7 @@ ms.locfileid: "61029714"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложений     | Calls.AccessMedia.All                       |
+| Приложение     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -53,16 +53,16 @@ POST /communications/calls/{id}/recordResponse
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |подсказки|[коллекция mediaPrompt](../resources/mediaprompt.md) | Подсказки для игры. Максимальный поддерживаемый размер коллекции mediaPrompt — 1.|
-|bargeInAllowed|Логический| Если это так, запрос recordResponse будет вступать в другие существующие запросы записи и записи playprompt в очереди или в настоящее время. По умолчанию = false. |
+|bargeInAllowed|Boolean| Если это так, запрос recordResponse будет вступать в другие существующие запросы записи и записи playprompt в очереди или в настоящее время. По умолчанию = false. |
 |initialSilenceTimeoutInSeconds | Int32| Максимальная начальная тишина (тишина пользователя) разрешена с того времени, когда мы начнем операцию записи ответа перед периодиалом и не справимся с операцией. Если мы играем запрос, этот отсвечив начинается после завершения запроса. По умолчанию = 5 секунд, Min = 1 секунда, Max = 120 секунд |
 |maxSilenceTimeoutInSeconds|Int32| Максимальное время тишины (паузы) после начала выступления пользователя. По умолчанию = 5 секунд, Min = 1 секунда, Max = 120 секунд.|
 |maxRecordDurationInSeconds|Int32| Максимальная продолжительность операции recordResponse перед остановкой записи. По умолчанию = 5 секунд, Min = 1 секунда, Max = 120 секунд.|
-|playBeep|Логическое| Если это так, воспроизводит звуковой сигнал, чтобы указать пользователю, что он может начать запись своего сообщения. По умолчанию = true.|
-|stopTones|Коллекция объектов string|Стоп-сигналы, указанные для окончания записи.|
-|clientContext|Строка|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
+|playBeep|Boolean| Если это так, воспроизводит звуковой сигнал, чтобы указать пользователю, что он может начать запись своего сообщения. По умолчанию = true.|
+|stopTones|Коллекция String|Стоп-сигналы, указанные для окончания записи.|
+|clientContext|String|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
 
 ## <a name="response"></a>Отклик
-Этот метод возвращает код ответа и заглавную ссылку Location с URI в `200 OK` [записьОперацией,](../resources/recordoperation.md) созданной для этого запроса.
+Этот метод возвращает код ответа `200 OK` и заглавную ссылку Location с URI в [записьОперацией](../resources/recordoperation.md) , созданной для этого запроса.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -120,6 +120,10 @@ Content-Length: 394
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-recordresponse-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-recordresponse-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6edc7e6bffb5d5a13c77616025ab0e93c9b907d8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b5dead68dd5c2c104ce30fc00d9aaace5d3f6403
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61010386"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346136"
 ---
 # <a name="trustframeworkkeyset-uploadcertificate"></a>trustFrameworkKeySet: uploadCertificate
 
@@ -18,7 +18,7 @@ ms.locfileid: "61010386"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upload сертификат в [trustFrameworkKeyset.](../resources/trustframeworkkeyset.md) Входное значение — это закодированное значение содержимого сертификата базового значения 64. Этот метод возвращает [trustFrameworkKey](../resources/trustframeworkkey.md).
+Upload сертификат в [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). Входное значение — это закодированное значение содержимого сертификата базового значения 64. Этот метод возвращает [trustFrameworkKey](../resources/trustframeworkkey.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ Upload сертификат в [trustFrameworkKeyset.](../resources/trustframewo
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | TrustFrameworkKeySet.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | TrustFrameworkKeySet.ReadWrite.All |
+| Приложение                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,11 +51,11 @@ POST /trustFramework/keySets/{id}/uploadCertificate
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|key|Строка| Это поле для отправки контента сертификата. Значение должно быть кодированной версией базового-64 фактического контента сертификата. |
+|key|String| Это поле для отправки контента сертификата. Значение должно быть кодированной версией базового-64 фактического контента сертификата. |
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и новый `200 OK` [объект trustFrameworkKey](../resources/trustframeworkkey.md) в тексте ответа.
+В случае успеха этот метод возвращает код `200 OK` отклика и новый [объект trustFrameworkKey](../resources/trustframeworkkey.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -97,12 +97,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-uploadcertificate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/trustframeworkkeyset-uploadcertificate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

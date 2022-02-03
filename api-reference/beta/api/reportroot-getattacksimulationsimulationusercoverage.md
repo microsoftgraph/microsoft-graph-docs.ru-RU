@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: fb1af678cb07b9ced378f00b02576919fe637b68
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 623b1632540f2ec7be56d649cd62cb0e4bf447dc
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135084"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341981"
 ---
 # <a name="reportroot-getattacksimulationsimulationusercoverage"></a>reportRoot: getAttackSimulationSimulationUserCoverage
 Пространство имен: microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "62135084"
 
 Получите [освещение моделирования](../resources/attacksimulationsimulationusercoverage.md) для пользователей клиента в кампаниях моделирования атак и учебных кампаний.
 
-Эта функция поддерживает `@odata.nextLink` pagination.
+Эта функция поддерживает pagination `@odata.nextLink` .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,12 +45,12 @@ GET /reports/getAttackSimulationSimulationUserCoverage
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код отклика и `200 OK` [коллекцию attackSimulationSimulationUserCoverage](../resources/attacksimulationsimulationusercoverage.md) в тексте ответа.
+В случае успешной `200 OK` работы эта функция возвращает код отклика и [коллекцию attackSimulationSimulationUserCoverage](../resources/attacksimulationsimulationusercoverage.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/reports/getAttackSimulationSimulationUserCo
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reportroot-getattacksimulationsimulationusercoverage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getattacksimulationsimulationusercoverage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

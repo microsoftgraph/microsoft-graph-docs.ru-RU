@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: df6227a3035991a5673e9a640e3fc0b31f673374
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: bf189f1bdae786baa8239a924b5502c442878135
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60992214"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340732"
 ---
 # <a name="reset-accessreview"></a>Сброс accessReview
 
@@ -18,7 +18,9 @@ ms.locfileid: "60992214"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) сброшены решения активного в настоящее время [accessReview.](../resources/accessreview.md)  Целевой объект может быть либо одноразовой проверкой доступа, либо экземпляром повторного обзора доступа.  Предыдущие решения больше не записываются, но рецензенты могут продолжать обновлять решения.
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) сброшены решения действующего [в настоящее время accessReview](../resources/accessreview.md).  Целевой объект может быть либо одноразовой проверкой доступа, либо экземпляром повторного обзора доступа.  Предыдущие решения больше не записываются, но рецензенты могут продолжать обновлять решения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +29,7 @@ ms.locfileid: "60992214"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | AccessReview.ReadWrite.Membership |
+|Приложение                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -75,6 +77,10 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reset-accessreview-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reset-accessreview-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

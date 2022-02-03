@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: jesakowi
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d4da4cc4e61fdd08a8f6c7e895759b373d1da935
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3c9f8c45cb23da2a3de5fc1481c8d9414ed8613d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996735"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346335"
 ---
 # <a name="application-unsetverifiedpublisher"></a>приложение: unsetVerifiedPublisher
 
 Пространство имен: microsoft.graph
 
-Unset the [verifiedPublisher](../resources/verifiedPublisher.md) previously set on an [application,](../resources/application.md)removing all verified publisher properties. Дополнительные сведения см. [в Publisher проверки.](/azure/active-directory/develop/publisher-verification-overview)
+Unset the [verifiedPublisher](../resources/verifiedPublisher.md) previously set on an [application](../resources/application.md), removing all verified publisher properties. Дополнительные сведения см. [в Publisher проверки](/azure/active-directory/develop/publisher-verification-overview).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,7 +24,7 @@ Unset the [verifiedPublisher](../resources/verifiedPublisher.md) previously set 
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Для приложений | Не поддерживается |
+|Приложение | Не поддерживается |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -82,6 +82,10 @@ POST https://graph.microsoft.com/v1.0/applications/{id}/unsetVerifiedPublisher
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/application-unsetverifiedpublisher-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/application-unsetverifiedpublisher-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0e4e9b3e29ede80683bc9fc6a6536abf8d600d3c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e6b01f13c0da8cb0c4c67e48d6c8b7b4c896ff96
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61007033"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348046"
 ---
 # <a name="call-cancelmediaprocessing"></a>вызов: cancelMediaProcessing
 
@@ -18,7 +18,7 @@ ms.locfileid: "61007033"
 
 Отменяет обработку для любых операций мультимедиа в ходе выполнения.
 
-Операции мультимедиа относятся к операциям IVR [playPrompt](./call-playprompt.md) и [recordResponse,](./call-record.md)которые по умолчанию находятся в очереди для обработки в порядке. Метод **cancelMediaProcessing** отменяет все операции, которые находятся в процессе, а также операции, которые находятся в очереди. Например, этот метод можно использовать для очистки очереди операции IVR для новой операции мультимедиа. Однако операция **subscribeToTone** не отменяется, так как она работает независимо от очереди операции.
+Операции мультимедиа относятся к операциям IVR [playPrompt](./call-playprompt.md) и [recordResponse](./call-record.md), которые по умолчанию находятся в очереди для обработки в порядке. Метод **cancelMediaProcessing** отменяет все операции, которые находятся в процессе, а также операции, которые находятся в очереди. Например, этот метод можно использовать для очистки очереди операции IVR для новой операции мультимедиа. Однако операция **subscribeToTone** не отменяется, так как она работает независимо от очереди операции.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "61007033"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Нет.                                       |
+| Приложение                            | Нет.                                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,11 +49,11 @@ POST /communications/calls/{id}/cancelMediaProcessing
 
 | Параметр     | Тип   | Описание         |
 | :------------ | :----- | :------------------ |
-| clientContext | Строка | Клиентский контекст. |
+| clientContext | String | Клиентский контекст. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика HTTP и заглавную головку расположения с URI в `200 OK` [commsOperation,](../resources/commsoperation.md) созданный для этого запроса.
+В случае успешной `200 OK` работы этот метод возвращает код отклика HTTP и заглавную головку расположения с URI в [commsOperation](../resources/commsoperation.md) , созданный для этого запроса.
 
 ## <a name="example"></a>Пример
 
@@ -97,6 +97,10 @@ Content-Length: 62
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-cancelmediaprocessing-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-cancelmediaprocessing-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

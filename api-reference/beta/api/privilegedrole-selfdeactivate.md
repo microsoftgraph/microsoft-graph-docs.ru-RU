@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 33dfb26d7108f10b93e6aeab43d006810b66f7a0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 74ace71b13372c00b61b5456bb38a676efb86a7c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032214"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342975"
 ---
 # <a name="privilegedrole-selfdeactivate"></a>privilegedRole: selfDeactivate
 
@@ -24,7 +24,7 @@ ms.locfileid: "61032214"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Запросчик может вызывать только назначенную ему ```selfDeactivate``` роль. 
+Запросчик может вызывать только ```selfDeactivate``` назначенную ему роль. 
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -38,7 +38,7 @@ ms.locfileid: "61032214"
 POST /privilegedRoles/{id}/selfDeactivate
 ```
 
-Обратите ``{id}`` внимание, что это целевой id роли.
+Обратите внимание, ``{id}`` что это целевой id роли.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
@@ -49,7 +49,7 @@ POST /privilegedRoles/{id}/selfDeactivate
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и объект `200 OK` [privilegedRoleAssignment](../resources/privilegedroleassignment.md) в тексте ответа.
+В случае успешного выполнения этот `200 OK` метод возвращает код ответа и объект [privilegedRoleAssignment](../resources/privilegedroleassignment.md) в тексте ответа.
 
 Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
 ## <a name="example"></a>Пример
@@ -83,6 +83,10 @@ POST https://graph.microsoft.com/beta/privilegedRoles/{id}/selfDeactivate
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/privilegedrole-selfdeactivate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedrole-selfdeactivate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

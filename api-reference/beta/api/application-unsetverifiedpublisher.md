@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jesakowi
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d92c94a139048bf5af21db4de7eb740473b83298
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c3bce6fcce58d960fe83de406fb1b08e59d7a739
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982812"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339313"
 ---
 # <a name="application-unsetverifiedpublisher"></a>приложение: unsetVerifiedPublisher
 
@@ -18,7 +18,7 @@ ms.locfileid: "60982812"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unset the [verifiedPublisher](../resources/verifiedPublisher.md) previously set on an [application,](../resources/application.md)removing all verified publisher properties. Дополнительные сведения см. [в Publisher проверки.](/azure/active-directory/develop/publisher-verification-overview)
+Развязка [проверенногоPublisher](../resources/verifiedPublisher.md) , задаваемая ранее в приложении [, удаляет](../resources/application.md) все проверенные свойства издателя. Дополнительные сведения см. [в Publisher проверки](/azure/active-directory/develop/publisher-verification-overview).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ Unset the [verifiedPublisher](../resources/verifiedPublisher.md) previously set 
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Для приложений | Не поддерживается |
+|Приложение | Не поддерживается |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -84,6 +84,10 @@ POST https://graph.microsoft.com/beta/applications/{id}/unsetVerifiedPublisher
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/application-unsetverifiedpublisher-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/application-unsetverifiedpublisher-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

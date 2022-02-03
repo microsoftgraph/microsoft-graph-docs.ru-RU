@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 02825d29d3ab476c91311f9d1b700860790e2348
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e771d4fdc9647d9e0750ec7bc757af45689768a6
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028321"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341638"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -18,11 +18,11 @@ ms.locfileid: "61028321"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте черновик для ответа отправителю и [](../resources/message.md) всем получателям сообщения в формате JSON или MIME.
+Создайте черновик для ответа отправителю и всем получателям сообщения [](../resources/message.md) в формате JSON или MIME.
 
 При использовании формата JSON:
-- Укажите комментарий или **свойство** тела `message` параметра. При указании обоих возвращается ошибка http 400 Bad Request.
-- Если исходное сообщение указывает получателя в свойстве **replyTo,** в формате интернет-сообщений  [(RFC 2822),](https://www.rfc-editor.org/info/rfc2822)необходимо отправить ответ получателям в **свойствах replyTo** и **toRecipients,** а не получателям в свойствах from and **toRecipients.** 
+- Укажите комментарий или **свойство** тела параметра `message` . При указании обоих возвращается ошибка http 400 Bad Request.
+- Если исходное сообщение указывает получателя в свойстве **replyTo** , в формате интернет-сообщений ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), необходимо отправить ответ получателям в **свойствах replyTo** и **toRecipients** , а не получателям в свойствах from **and** **toRecipients** . 
 - Вы можете [обновить](../api/message-update.md) черновик сообщения позже.
 
 При использовании формата MIME:
@@ -62,7 +62,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |comment|String|Добавляемый комментарий. Может быть пустой строкой.|
-|message|[message](../resources/message.md)|Любые свойства для записи, которые необходимо обновить в сообщении для всех ответов.|
+|сообщение|[message](../resources/message.md)|Любые свойства для записи, которые необходимо обновить в сообщении для всех ответов.|
 
 При указании тела в формате MIME укажите содержимое MIME с применимыми заглавными сообщениями в Интернете, все закодированные в **формате base64** в тексте запроса.
 
@@ -74,7 +74,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 
 ## <a name="examples"></a>Примеры
 ### <a name="example-1-create-a-draft-in-json-format-to-reply-all-to-an-existing-message"></a>Пример 1. Создание черновика в формате JSON для ответа всех на существующее сообщение
-В следующем примере создается черновик для ответа всех и добавляется вложение и комментарий в одном **вызове createReplyAll.**
+В следующем примере создается черновик для ответа всех и добавляется вложение и комментарий в одном **вызове createReplyAll** .
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -118,6 +118,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/message-createreplyall-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-createreplyall-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

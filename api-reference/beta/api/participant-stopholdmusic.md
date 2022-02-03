@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8d4c4295192e730ab935381a110954b305fcfefb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9a7f1d04125f1730ebdfd32d0c41fbae78d2d844
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60997771"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345000"
 ---
 # <a name="participant-stopholdmusic"></a>участник: stopHoldMusic
 
@@ -27,9 +27,9 @@ ms.locfileid: "60997771"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Для приложений                            | Нет. |
+| Приложение                            | Нет. |
 
-> **Примечание:** Проверка разрешений происходит, когда приложение присоединяется или пытается запустить вызов. Дополнительные проверки разрешений не выполняются при `stopHoldMusic` запросе.
+> **Примечание:** Проверка разрешений происходит, когда приложение присоединяется или пытается запустить вызов. Дополнительные проверки разрешений не выполняются при запросе `stopHoldMusic` .
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ POST /communications/calls/{id}/participants/{id}/stopHoldMusic
 |clientContext|String|Необязательный параметр. Уникальная строка контекста клиента. Может иметь не более 256 символов.|
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и `202 Accepted` [объект stopHoldMusicOperation](../resources/stopHoldmusicoperation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код `202 Accepted` ответа и [объект stopHoldMusicOperation](../resources/stopHoldmusicoperation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/participant-stopholdmusic-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-stopholdmusic-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

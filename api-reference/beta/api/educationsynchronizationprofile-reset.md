@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4ec0632122827783ef25e6145065c5faba675d27
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1e9b0b0ee91ae70d7f27ec2dd6bf156981ffe3bd
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003023"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342121"
 ---
 # <a name="reset-sync-on-an-educationsynchronizationprofile"></a>Сброс синхронизации на educationSynchronizationProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "61003023"
 |:-----------|:----------|
 | Делегированное (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 |Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|EduAdministration.ReadWrite.All |
+|Приложение|EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -77,6 +77,10 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-educationsynchronizationprofile-reset-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-educationsynchronizationprofile-reset-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

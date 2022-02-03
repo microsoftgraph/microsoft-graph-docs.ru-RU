@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b6a81bc633bf90e78371e91e7b67e50bc01e957e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 521d7162e872f4e2da90cc2eba2e2968edea7d1a
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61000285"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343836"
 ---
 # <a name="educationsubmission-return"></a>educationSubmission: возврат
 
@@ -43,7 +43,7 @@ POST /education/classes/{class-id}/assignments/{assignment-id}/submissions/{subm
 Не поставляем тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и `200 Ok` объект [educationSubmission](../resources/educationsubmission.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 Ok` ответа и объект [educationSubmission](../resources/educationsubmission.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -79,6 +79,10 @@ POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationsubmission-return-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationsubmission-return-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

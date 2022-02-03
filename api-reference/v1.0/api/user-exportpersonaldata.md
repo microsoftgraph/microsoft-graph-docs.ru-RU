@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6c52e551e95a45571da5309cee18a8b09f435496
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a28edb51f3a36f1cdb40f427d61fe276bb1280a5
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032759"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345198"
 ---
 # <a name="user-exportpersonaldata"></a>пользователь: exportPersonalData
 
@@ -25,7 +25,7 @@ ms.locfileid: "61032759"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  User.Export.All, User.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Неприменимо  |
-|Для приложений | User.Export.All, User.Read.All |
+|Приложение | User.Export.All, User.Read.All |
 
 >**Примечание:** Экспорт может выполняться администратором компании только при делегирования разрешений.
 
@@ -38,14 +38,14 @@ POST /users/{id}/exportPersonalData
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Bearer {token}|
+| Авторизация  | Bearer {token}|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|storageLocation|Строка|Это URL-адрес подписи общего доступа (SAS) к учетной записи служба хранилища Azure, куда следует экспортировать данные.|
+|storageLocation|String|Это URL-адрес подписи общего доступа (SAS) к учетной записи служба хранилища Azure, куда следует экспортировать данные.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Метод не возвращает данные в теле отклика. Ответ содержит следующие заглавные главы ответов.
@@ -89,6 +89,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-exportpersonaldata-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-exportpersonaldata-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

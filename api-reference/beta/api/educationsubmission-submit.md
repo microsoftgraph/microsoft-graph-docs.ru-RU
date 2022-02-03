@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 718c08cf8971a16893395033c24a79ef15592e82
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 877cd2b1d37af250944c2b708f04f3eab6deac54
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61015469"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345238"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission: отправить
 
@@ -18,7 +18,7 @@ ms.locfileid: "61015469"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Указать, что учащийся готов выполнять работу и готов выполнять задание. Это действие может быть принято только студентом. Это изменит состояние отправки с "рабочей" на "отправленную". Во время процесса отправки все ресурсы будут скопированы в ведро **submittedResources.** Учитель будет смотреть на список отправленных ресурсов для классификации.
+Указать, что учащийся готов выполнять работу и готов выполнять задание. Это действие может быть принято только студентом. Это изменит состояние отправки с "рабочей" на "отправленную". Во время процесса отправки все ресурсы будут скопированы в ведро **submittedResources** . Учитель будет смотреть на список отправленных ресурсов для классификации.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,7 +44,7 @@ POST /education/classes/{class-id}/assignments/{assignment-id}/submissions/{subm
 Не поставляем тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и `200 Ok` объект [educationSubmission](../resources/educationsubmission.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 Ok` ответа и объект [educationSubmission](../resources/educationsubmission.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -78,6 +78,10 @@ POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationsubmission-submit-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationsubmission-submit-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

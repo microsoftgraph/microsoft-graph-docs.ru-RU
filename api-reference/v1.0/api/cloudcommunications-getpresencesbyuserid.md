@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: c8dcf82dc87eff9dbac9791a6e54fa92a637988a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7e487954eb7d49f5447c812d2549ec43a0f7a939
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020264"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347290"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications: getPresencesByUserId
 
@@ -25,7 +25,7 @@ ms.locfileid: "61020264"
 | :-------------- | :----------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Presence.Read.All                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                         |
-| Для приложений                            | Не поддерживается.                                  |
+| Приложение                            | Не поддерживается.                                  |
 
 > **Примечание.**
 > * В запросе API поддерживается не более 650 пользовательских ИД.
@@ -54,7 +54,7 @@ POST /communications/getPresencesByUserId
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` присутствия в тексте ответа. [](../resources/presence.md)
+В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию [объектов присутствия в](../resources/presence.md) тексте ответа.
 
 
 ## <a name="examples"></a>Примеры
@@ -97,13 +97,17 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/get-presence-multiple-users-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-presence-multiple-users-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ---
 
 ### <a name="response"></a>Отклик
-Ниже показан пример отклика.
+Ниже приводится пример отклика.
 
 > **Примечание:** Объекты отклика могут быть сокращены для читаемости. При фактическом вызове будут возвращены все свойства.
 

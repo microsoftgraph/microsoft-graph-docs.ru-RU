@@ -5,12 +5,12 @@ description: Проверьте состояние публикации типа
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: aab304fed276e9794cc1bb2d0536f19e82ef22ac
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c91123d5fe29852467b3756ac6f08ee05d449740
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100360"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343205"
 ---
 # <a name="contenttype-ispublished"></a>contentType: isPublished
 Пространство имен: microsoft.graph
@@ -43,9 +43,9 @@ GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 |Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот вызов возвращает ответ и значение boolean, которое указывает состояние публикации `200 OK` типа контента.
+В случае успешной `200 OK` работы этот вызов возвращает ответ и значение boolean, которое указывает состояние публикации типа контента.
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="example"></a>Пример
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId}
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-ispublished-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-ispublished-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

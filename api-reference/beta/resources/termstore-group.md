@@ -3,14 +3,14 @@ author: mohitpcad
 title: Тип группового ресурса
 doc_type: resourcePageType
 description: Представляет группу, используемую в магазине терминов.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
-ms.openlocfilehash: ec2e9609b2de278d2596d42b18cae2fe450efd86
-ms.sourcegitcommit: 73bbf84e6f5dbc8c3db8ed2c48cc5ab9ae3cff78
+ms.openlocfilehash: c43001533c5d0b81eb0f9064915a33d9d3e93815
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53456361"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347390"
 ---
 # <a name="group-resource-type"></a>Тип группового ресурса
 
@@ -19,34 +19,34 @@ ms.locfileid: "53456361"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Представляет группу, используемую в магазине [терминов.](../resources/termstore-store.md) Группа — это логическая иерархия, которая содержит коллекцию наборов под ней. 
+Представляет группу, используемую в магазине [терминов](../resources/termstore-store.md). Группа — это логическая иерархия, которая содержит коллекцию наборов под ней. 
 
-Наследует от [объекта](../resources/entity.md).
+Наследуется [от сущности](../resources/entity.md).
 
 
 ## <a name="methods"></a>Методы
 
-| Метод                                                   | Тип возвращаемых данных       |    Описание
-|:---------------------------------------------------------|:------------------|:---------------------
-| [Создание группы](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Создание группы в магазине [терминов.]
-| [Получение группы](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | Извлечение данных группы в магазине [терминов.]
-| [Удаление группы](../api/termstore-group-delete.md)                     | Нет |  Удаление группы в магазине [терминов].
+| Метод                                                   | Тип возвращаемых данных       |    Описание|
+|:---------------------------------------------------------|:------------------|:---------------------|
+| [Создание группы](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Создание группы в магазине [терминов].|
+| [Получение группы](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | Извлечение данных группы в магазине [терминов].|
+| [Удаление группы](../api/termstore-group-delete.md)                     | Нет |  Удаление группы в магазине [терминов].|
 
 ## <a name="properties"></a>Свойства
 
-| Свойство             | Тип               | Описание
-|:---------------------|:-------------------|:------------------------------------
-| createdDateTime      | DateTimeOffset     | Дата и время создания группы. Только для чтения.
-| description          | string             | Описание с подробными сведениями об использовании термина.
-| id                   | string             | Уникальный идентификатор группы. Только для чтения.
-| displayName          | string             | Имя группы.
-| scope                | string              | Возвращает тип группы. Возможные значения : "глобальный", "системный" и "siteCollection".
-| parentSiteId         | String             | Id родительского сайта этой группы.
+| Свойство             | Тип               | Описание|
+|:---------------------|:-------------------|:------------------------------------|
+| createdDateTime      | DateTimeOffset     | Дата и время создания группы. Только для чтения.|
+| description          | string             | Описание, которое дает сведения об использовании термина.|
+| id                   | string             | Уникальный идентификатор группы. Только для чтения.|
+| displayName          | string             | Имя группы.|
+| scope                | string              | Возвращает тип группы. Возможные значения: `global`, `system` и `siteCollection`.|
+| parentSiteId         | string             | ID родительского сайта этой группы.|
 
 ## <a name="relationships"></a>Связи
-| Связь       | Тип                        | Описание
-|:-------------------|:----------------------------|:--------------------------
-| наборы           | [коллекция microsoft.graph.termStore.set][] | Все наборы в группе в магазине [терминов].
+| Связь       | Тип                        | Описание|
+|:-------------------|:----------------------------|:--------------------------|
+| наборы           | [коллекция microsoft.graph.termStore.set][] | Все наборы в группе в магазине [терминов].|
 
 ## <a name="json-representation"></a>Представление JSON
 

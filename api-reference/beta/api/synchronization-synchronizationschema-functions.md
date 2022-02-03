@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 8f18c10c87a3ed3c2cd2410bcf580f3daf6e217e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2ed50584bd966ed708346ae5ed747a97f3ba9822
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122975"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349112"
 ---
 # <a name="synchronizationschema-functions"></a>синхронизацияSchema: функции
 
@@ -18,7 +18,7 @@ ms.locfileid: "62122975"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список всех функций, поддерживаемых в [атрибутеMappingSource.](../resources/synchronization-attributemappingsource.md)
+Список всех функций, поддерживаемых в [атрибутеMappingSource](../resources/synchronization-attributemappingsource.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,13 +43,13 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код отклика и коллекцию объектов [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/synchronizationschema-functions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/synchronizationschema-functions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

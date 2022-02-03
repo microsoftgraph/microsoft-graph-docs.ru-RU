@@ -5,18 +5,18 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 49b0c989c06da8b3586bf065610e52261b6729d6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 46146d0f7daf98cdb02987a8deb1c46e150c3e06
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993361"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340867"
 ---
 # <a name="educationuser-delta"></a>educationUser: delta
 
 Пространство имен: microsoft.graph
 
-Получите новый или обновленный [educationUser](../resources/educationuser.md) без выполнения полного чтения всей коллекции. Подробные [сведения см. в запросе Use Delta.](/graph/delta-query-overview)
+Получите новый или обновленный [educationUser](../resources/educationuser.md) без выполнения полного чтения всей коллекции. [Подробные сведения см. в запросе Use Delta](/graph/delta-query-overview).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "60993361"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ GET /education/users/delta
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код ответа и `200 OK` [коллекцию educationUser](../resources/educationuser.md) в тексте отклика.
+В случае успешной работы эта функция возвращает код `200 OK` ответа и [коллекцию educationUser](../resources/educationuser.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/education/users/delta
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationuser-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationuser-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

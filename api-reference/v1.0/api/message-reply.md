@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2a9bb1861e8ab9a32381a505bf333925b5c7a397
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8b781a700b22a9a5f14b47452a01342db56cd6c4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029477"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340049"
 ---
 # <a name="message-reply"></a>message: reply
 
@@ -19,8 +19,8 @@ ms.locfileid: "61029477"
 Ответ отправилю сообщения [в](../resources/message.md) формате JSON или MIME.
 
 При использовании формата JSON:
-- Укажите комментарий или **свойство** тела `message` параметра. При указании обоих возвращается ошибка http 400 Bad Request.
-- Если исходное сообщение указывает получателя в свойстве **replyTo,** в формате интернет-сообщений [(RFC 2822),](https://www.rfc-editor.org/info/rfc2822)отправьте ответ получателям в **replyTo,** а не получателю из **свойства.**
+- Укажите комментарий или **свойство** тела параметра `message` . При указании обоих возвращается ошибка http 400 Bad Request.
+- Если исходное сообщение указывает получателя в свойстве **replyTo**, в формате интернет-сообщений ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), отправьте ответ получателям в **replyTo**, а не получателю в свойстве.
 
 При использовании формата MIME:
 - Укажите соответствующие [заголовки сообщений Интернета](https://tools.ietf.org/html/rfc2076) и [содержимое MIME](https://tools.ietf.org/html/rfc2045), а также закодируйте их в формате **Base64** в тексте запроса.
@@ -59,7 +59,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 | Параметр    | Тип   | Описание |
 |---------------|-------|---------|
 | comment | String | Добавляемый комментарий. Может быть пустой строкой. |
-| message | [message](../resources/message.md) | Любые свойства, которые можно записать для обновления в ответном сообщении. |
+| сообщение | [message](../resources/message.md) | Любые свойства, которые можно записать для обновления в ответном сообщении. |
 
 При указании тела в формате MIME укажите содержимое MIME с применимыми заглавными сообщениями в Интернете, все закодированные в **формате base64** в тексте запроса. Этот метод использует отправитель исходного сообщения в качестве получателя.
 
@@ -123,6 +123,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/message-reply-v1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-reply-v1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

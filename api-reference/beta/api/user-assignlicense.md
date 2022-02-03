@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b89836ac5717fa648c50d6e23d9031c8752b2980
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c2c1f1c0139d2b328eb1fed7bbba8d9b1f3566ba
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61010128"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344875"
 ---
 # <a name="user-assignlicense"></a>user: assignLicense
 
@@ -18,7 +18,7 @@ ms.locfileid: "61010128"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление или удаление лицензий для пользователя, чтобы включить или отключить использование облачных предложений Майкрософт. Например, организация может иметь подписку Microsoft 365 корпоративный E3 со 100 лицензиями, и этот запрос назначает одну из этих лицензий конкретному пользователю. Вы также можете включать и отключать отдельные планы, связанные с подпиской. Дополнительные статьи о подписках и лицензиях см. в статье [Technet.](/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
+Добавление или удаление лицензий для пользователя, чтобы включить или отключить использование облачных предложений Майкрософт. Например, организация может иметь подписку Microsoft 365 корпоративный E3 со 100 лицензиями, и этот запрос назначает одну из этих лицензий конкретному пользователю. Вы также можете включать и отключать отдельные планы, связанные с подпиской. Дополнительные новости о подписках и лицензиях см. в статье [Technet](/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
 
 Чтобы получить подписки, доступные в каталоге, выполните [запрос GET subscribedSkus](subscribedsku-list.md). 
 
@@ -47,12 +47,12 @@ POST /users/{id | userPrincipalName}/assignLicense
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|addLicenses|Коллекция [assignedLicense](../resources/assignedlicense.md)|Коллекция объектов [assignedLicense](../resources/assignedlicense.md), указывающих добавляемые лицензии. Вы можете отключить servicePlans, связанные с лицензией, установив свойство **disabledPlans** на [объекте assignedLicense.](../resources/assignedlicense.md)|
+|addLicenses|Коллекция [assignedLicense](../resources/assignedlicense.md)|Коллекция объектов [assignedLicense](../resources/assignedlicense.md), указывающих добавляемые лицензии. Вы можете отключить servicePlans, связанные с лицензией, установив свойство **disabledPlans** на [объекте assignedLicense](../resources/assignedlicense.md) .|
 |removeLicenses|Коллекция объектов Guid|Коллекция skuIds, которые идентифицируют лицензии для удаления.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает `200 OK` код [](../resources/user.md) отклика и обновленный объект пользователя в тексте отклика.
+В случае успеха этот метод возвращает `200 OK` код отклика и [обновленный объект](../resources/user.md) пользователя в тексте отклика.
 
 ## <a name="example"></a>Пример
 Добавление лицензий пользователю.
@@ -99,6 +99,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-assignlicense-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-assignlicense-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 798349400b17bf63dfb86cbee56d907d223221f5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ef47e73784df3c509a2a8e247ab2618e6c2899b4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018367"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341057"
 ---
 # <a name="outlooktask-complete-deprecated"></a>outlookTask: полный (неподготовленный)
 
@@ -21,7 +21,7 @@ ms.locfileid: "61018367"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-Выполните задачу Outlook, которая задает свойство **completedDateTime** к текущей дате, а свойство **состояния** `completed` — .
+Выполните задачу Outlook, которая задает свойство **completedDateTime** к текущей дате, а свойство **состояния** `completed`— .
 
 Если вы завершаете задачу в повторяющейся серии, в ответе коллекция задач будет содержать завершенную задачу в серии и следующую задачу в серии.
 
@@ -61,11 +61,11 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект OutlookTask](../resources/outlooktask.md) в тексте ответа.
+В случае успешной работы этот `200 OK` метод возвращает код отклика и [объект OutlookTask](../resources/outlooktask.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
-В следующем примере указанная задача будет завершена. Он указывает тихоокеанское стандартное время (PST) в `Prefer: outlook.timezone` заговорке.
+В следующем примере указанная задача будет завершена. Он указывает тихоокеанское стандартное время (PST) в заговорке `Prefer: outlook.timezone` .
 
 ### <a name="request"></a>Запрос
 
@@ -99,6 +99,10 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/outlooktask-complete-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/outlooktask-complete-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

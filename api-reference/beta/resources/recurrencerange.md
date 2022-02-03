@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса recurrenceRange
 description: 'Описывает диапазон дат, согласно которому повторяется событие. '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: harini84
-ms.openlocfilehash: 5f09f430ddb23bbd58ab6f98e5d42c560ca11ef4
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 90b965c659fec6efab1c46de9cb3e108d5124ed6
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292922"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342465"
 ---
 # <a name="recurrencerange-resource-type"></a>Тип ресурса recurrenceRange
 
@@ -18,7 +18,7 @@ ms.locfileid: "50292922"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает диапазон дат, согласно которому повторяется [событие](event.md).
+Описывает диапазон дат, в течение которого повторяющееся событие. Этот общий объект используется для определения повторения обзоров [доступа, событий](accessreviewscheduledefinition.md) календаря [](event.md)и назначений пакетов [доступа в Azure](accesspackageassignment.md) AD.
 
 Вы можете задать диапазон дат для повторяющегося события одним из 3 способов (в зависимости от сценария). Необходимо всегда указывать значение **startDate** для диапазона дат, но вы можете задать повторяющееся событие, которое перестает повторяться в определенный день либо повторяется бесконечно или определенное количество раз. Обратите внимание, что фактические экземпляры события в диапазоне дат всегда соответствуют расписанию повторения, заданному для повторяющегося события. Повторяющееся событие всегда определяется соответствующими ресурсами [recurrencePattern](recurrencepattern.md) (частотой повторения события) и **recurrenceRange** (продолжительностью повторения).
 

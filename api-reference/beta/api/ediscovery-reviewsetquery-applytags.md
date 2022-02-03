@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 8eea4dc8cb0890570ff397e0752f8f7d69b0e5e8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3d75d1366a88a2618949db86f6c9c2090ffb1327
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60986676"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344083"
 ---
 # <a name="reviewsetquery-applytags"></a>reviewSetQuery: applyTags
 
@@ -18,7 +18,7 @@ ms.locfileid: "60986676"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Применить [теги](../resources/ediscovery-tag.md) к документам, которые соответствуют указанному [обзоруSetQuery.](../resources/ediscovery-reviewsetquery.md)
+Применить [теги](../resources/ediscovery-tag.md) к документам, которые соответствуют указанному [обзоруSetQuery](../resources/ediscovery-reviewsetquery.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -63,7 +63,7 @@ POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewSetId}/queries/{rev
 
 В случае успешного выполнения это действие возвращает код отклика `202 Accepted`.
 
-Если операция по тегированию успешно запущена, это действие возвращает `202 Accepted` код ответа. В ответе также будет содержаться `Location` заглавный загот, содержащий расположение [тегаOperation,](../resources/ediscovery-tagOperation.md) созданного для обработки тегов. Проверьте состояние операции по тегированию, сделав запрос GET в расположение, после успешного завершения состояние [изменится](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) на `succeeded` .
+Если операция по тегированию успешно запущена, это действие возвращает код `202 Accepted` ответа. В ответе также будет содержаться `Location` заглавный загот, содержащий расположение [тегаOperation](../resources/ediscovery-tagOperation.md) , созданного для обработки тегов. Проверьте состояние операции по тегированию, сделав запрос GET в расположение, после успешного завершения [состояние изменится](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) `succeeded`на .
 
 ## <a name="examples"></a>Примеры
 
@@ -107,6 +107,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reviewsetquery-applytags-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reviewsetquery-applytags-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

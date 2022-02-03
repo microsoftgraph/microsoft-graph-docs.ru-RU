@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: fe9c8fcce1d4c2656719ade493affd3f9c6554c3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 42f7254271102fe08346a2faccfefbe0b8642eb0
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132873"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349620"
 ---
 ```powershell
 
@@ -19,6 +19,7 @@ $params = @{
     WebUrl = "https://www.iame.io/blackbelt"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserProfileCertification -UserId $userId -BodyParameter $params
 
 ```

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 35caa8ff57ae6f5fdafa12b3c4aa84b60f2b737e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 45f7e61305af39544595655fc79e5370cc9148c4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136911"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346064"
 ---
 # <a name="trustframeworkkeyset-getactivekey"></a>trustFrameworkKeySet: getActiveKey
 
@@ -18,7 +18,7 @@ ms.locfileid: "62136911"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите активную [в настоящее время trustFrameworkKey в](../resources/trustframeworkkey.md) [trustFrameworkKeySet.](../resources/trustframeworkkeyset.md) В наборе ключей одновременно активен только один ключ.
+Получите активную [в настоящее время trustFrameworkKey в](../resources/trustframeworkkey.md) [trustFrameworkKeySet](../resources/trustframeworkkeyset.md). В наборе ключей одновременно активен только один ключ.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -45,13 +45,13 @@ GET /trustFramework/keySets/{id}/getActiveKey
 |:--------------|:--------------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и новый `200 OK` [объект trustFrameworkKey](../resources/trustframeworkkey.md) в тексте ответа.
+В случае успеха этот метод возвращает код `200 OK` отклика и новый [объект trustFrameworkKey](../resources/trustframeworkkey.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -88,12 +88,16 @@ GET https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
 [!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-getactivekey-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/trustframeworkkeyset-getactivekey-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

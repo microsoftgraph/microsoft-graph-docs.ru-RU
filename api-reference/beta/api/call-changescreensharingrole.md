@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6819514335b8448573c0a74fed4c5437534a67d3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 360ceab522ca22d95fb58ae4d691e54800ad0a84
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60994587"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345723"
 ---
 # <a name="call-changescreensharingrole"></a>вызов: changeScreenSharingRole
 
@@ -29,7 +29,7 @@ ms.locfileid: "60994587"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | Calls.AccessMedia.All                       |
+| Приложение                            | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +53,7 @@ POST /communications/calls/{id}/changeScreenSharingRole
 |role|String|Возможные значения: "зритель", "sharer"|
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа, и все участники `202 Accepted` получат обновление реестра.
+В случае успешной работы этот метод возвращает код `202 Accepted` ответа, и все участники получат обновление реестра.
 
 ## <a name="example"></a>Пример
 
@@ -95,6 +95,10 @@ Content-Length: 24
 [!INCLUDE [sample-code](../includes/snippets/go/call-changescreensharingrole-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-changescreensharingrole-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -108,7 +112,7 @@ Content-Length: 24
 HTTP/1.1 202 Accepted
 ```
 ##### <a name="notification---roster-updated-with-participant-sending-screen-sharing-video"></a>Уведомление — список обновляется с помощью видео отправки участниками совместного доступа к экранам
-Обратите внимание `direction: sendOnly` на свойство в потоке мультимедиа.
+Обратите внимание на `direction: sendOnly` свойство в потоке мультимедиа.
 
 ```http
 POST https://bot.contoso.com/api/calls

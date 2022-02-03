@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: e1800ead9d1c3d84dca491014ab7073c9bee863e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b83e358e2fe6112937b97dcc123d3447e3f4d6ac
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60977428"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339678"
 ---
 # <a name="tiindicator-deletetiindicatorsbyexternalid"></a>tiIndicator: deleteTiIndicatorsByExternalId
 
@@ -28,7 +28,7 @@ ms.locfileid: "60977428"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatIndicators.ReadWrite.OwnedBy |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Приложение                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,11 +50,11 @@ POST /security/tiIndicators/deleteTiIndicatorsByExternalId
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|значение|Коллекция String| Коллекция `externalIds` удаленных **объектов tiIndicator.** |
+|значение|Коллекция String| Коллекция удаленных `externalIds` **объектов tiIndicator** . |
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200, OK` [объект коллекции resultInfo](../resources/resultinfo.md) в тексте ответа. При ошибке этот метод возвращает `206 Partial Content` код ответа.  Дополнительные [сведения см. в](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) "Ошибках".
+В случае успешной работы этот `200, OK` метод возвращает код ответа и [объект коллекции resultInfo](../resources/resultinfo.md) в тексте ответа. При ошибке этот метод возвращает код `206 Partial Content` ответа.  [Дополнительные сведения см. в](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) "Ошибках".
 
 ## <a name="examples"></a>Примеры
 
@@ -102,12 +102,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/tiindicator-deletetiindicatorsbyexternalid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tiindicator-deletetiindicatorsbyexternalid-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > [!NOTE]
 > Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
