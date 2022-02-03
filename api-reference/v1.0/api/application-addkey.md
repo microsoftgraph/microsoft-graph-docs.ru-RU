@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4596287c7113458d5d565cac99a659a4717ccc19
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: b95641a1e95222c93b75609ed71d29256e5722ca
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61285156"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342948"
 ---
 # <a name="application-addkey"></a>приложение: addKey
 
 Пространство имен: microsoft.graph
 
-Добавление учетных данных ключа в [приложение.](../resources/application.md) Этот метод вместе с [removeKey](application-removekey.md) можно использовать приложением для автоматизации проката истекающих ключей.
+Добавление учетных данных ключа в [приложение](../resources/application.md). Этот метод вместе с [removeKey](application-removekey.md) можно использовать приложением для автоматизации проката истекающих ключей.
 
 > [!NOTE]
 > [Создание операций](../api/application-post-applications.md) [приложения](../api/application-update.md) и обновления приложений можно продолжать использовать для добавления и обновления учетных данных для любого приложения с контекстом пользователя или без него.
@@ -57,13 +57,13 @@ POST /applications/{id}/addKey
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | Добавлены новые учетные данные ключа приложения. __Тип,__ __использование и__ __ключ__ необходимые свойства для этого использования. Поддерживаемые ключевые типы:<br><ul><li>`AsymmetricX509Cert`: Использование должно быть `Verify` .</li><li>`X509CertAndPassword`: Использование должно быть `Sign`</li></ul>|
-| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Требуется __установить только secretText,__ который должен содержать пароль для ключа. Это свойство требуется только для ключей типа `X509CertAndPassword` . Установите его в `null` противном случае.|
-| доказательство | Строка | Самозаверяемый маркер JWT, используемый в качестве доказательства владения существующими ключами. Маркер JWT должен быть подписан с использованием закрытого ключа одного из существующих действительных сертификатов приложения. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` — издателем должен быть __идентификатор__  приложения, выполняющего вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Вот пример [кода,](/graph/application-rollkey-prooftoken) который можно использовать для создания этого доказательства маркера владения. Дополнительные сведения о типах утверждений см. в дополнительных сведениях [о полезной нагрузке Claims.](/azure/active-directory/develop/active-directory-certificate-credentials)|
+| keyCredential | [keyCredential](../resources/keycredential.md) | Добавлены новые учетные данные ключа приложения. Тип __,__ __использование и__ __ключ__ необходимые свойства для этого использования. Поддерживаемые ключевые типы:<br><ul><li>`AsymmetricX509Cert`: Использование должно быть `Verify`.</li><li>`X509CertAndPassword`: Использование должно быть `Sign`</li></ul>|
+| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Требуется __установить только secretText__ , который должен содержать пароль для ключа. Это свойство требуется только для ключей типа `X509CertAndPassword`. Установите его в противном `null` случае.|
+| доказательство | String | Самозаверяемый маркер JWT, используемый в качестве доказательства владения существующими ключами. Маркер JWT должен быть подписан с использованием закрытого ключа одного из существующих действительных сертификатов приложения. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` — издателем должен быть __идентификатор__  приложения, выполняющего вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Вот пример кода [,](/graph/application-rollkey-prooftoken) который можно использовать для создания этого доказательства маркера владения. Дополнительные сведения о типах утверждений см. в дополнительных сведениях [о полезной нагрузке Claims](/azure/active-directory/develop/active-directory-certificate-credentials).|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и новый `200 OK` [объект keyCredential](../resources/keycredential.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и новый [объект keyCredential](../resources/keycredential.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -114,12 +114,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/application-addkey-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/application-addkey-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -183,6 +187,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/application-addkey-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/application-addkey-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a9b6d1fc49c8a526d527d02635f357302f822cff
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3dc9ac91c7d19e1c45e423c6a8105519b8de8e17
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60986390"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348538"
 ---
 # <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: renewGroup
 
@@ -20,7 +20,7 @@ ms.locfileid: "60986390"
 
 Продление срока действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.
 
-> **Примечание:** При вызове конечной точки v1.0 используйте метод [Renew group.](/graph/api/group-renew?view=graph-rest-1.0&preserve-view=true)
+> **Примечание:** При вызове конечной точки v1.0 используйте метод [Renew group](/graph/api/group-renew?view=graph-rest-1.0&preserve-view=true) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -31,7 +31,7 @@ ms.locfileid: "60986390"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All или Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Для приложений | Group.ReadWrite.All или Directory.ReadWrite.All |
+|Приложение | Group.ReadWrite.All или Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/grouplifecyclepolicy-renewgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/grouplifecyclepolicy-renewgroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

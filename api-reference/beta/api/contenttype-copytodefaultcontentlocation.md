@@ -5,18 +5,18 @@ description: Скопируйте файл в расположение конт�
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: c01349a14f6746fb034a539ed4a5ba86a0b4aed6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a74d72c928b1bdb416995a7b6f27cdea05236fd1
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028791"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339154"
 ---
 # <a name="contenttype-copytodefaultcontentlocation"></a>contentType: copyToDefaultContentLocation
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Скопируйте файл в расположение контента по умолчанию в [типе контента.][contentType] Затем файл может быть добавлен в качестве файла или шаблона по умолчанию с помощью операции POST.
+Скопируйте файл в расположение контента по умолчанию в [типе контента][contentType]. Затем файл может быть добавлен в качестве файла или шаблона по умолчанию с помощью операции POST.
 
 ## <a name="permissions"></a>Разрешения  
 
@@ -28,7 +28,7 @@ ms.locfileid: "61028791"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Приложение | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -107,6 +107,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-copytodefaultcontentlocation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-copytodefaultcontentlocation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

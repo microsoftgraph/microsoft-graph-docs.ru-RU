@@ -5,17 +5,17 @@ author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fea1d5bbdbfbfedaed2bd905365f665b69de3776
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 922bf16d011ac904150a25dbd0341d0092888924
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027816"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344509"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-cancel"></a>unifiedRoleEligibilityScheduleRequest: отмена
 Пространство имен: microsoft.graph
 
-Немедленно отмените [унифицированныйRoleEligibilityScheduleRequest,](../resources/unifiedroleeligibilityschedulerequest.md) который находится в состоянии, и через 30 дней система автоматически удаляет `Granted` отмененный запрос. После вызова этого  действия состояние отмененного унифицированногоRoleEligibilityScheduleRequest изменяется на `Revoked` .
+Немедленно отмените [унифицированныйRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)`Granted`, который находится в состоянии, и через 30 дней система автоматически удаляет отмененный запрос. После вызова этого действия состояние отмененного унифицированногоRoleEligibilityScheduleRequest изменяется на . `Revoked`
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,7 +24,7 @@ ms.locfileid: "61027816"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|RoleManagement.ReadWrite.Directory |
+|Приложение|RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligi
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения это действие возвращает код отклика `204 No Content`. Попытка отменить запрос, который не отменяется, например, объект unifiedRoleEligibilityScheduleRequest, состояние которого или , возвращает код  `Provisioned` `Failed` `400 Bad Request` ошибки.
+В случае успешного выполнения это действие возвращает код отклика `204 No Content`.  Попытка отменить запрос, который не отменяется, например, объект unifiedRoleEligibilityScheduleRequest `Provisioned` `Failed``400 Bad Request`, состояние которого или , возвращает код ошибки.
 
 ## <a name="examples"></a>Примеры
 
@@ -79,6 +79,10 @@ POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySc
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/unifiedroleeligibilityschedulerequest-cancel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/unifiedroleeligibilityschedulerequest-cancel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

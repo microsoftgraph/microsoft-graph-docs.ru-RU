@@ -5,20 +5,20 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ea1739f72c73eff133ba56eae2993dd68c1713bb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b41bdef72fcf0a8ac70225e869baf5e56f008bcf
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993236"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345550"
 ---
 # <a name="event-decline"></a>event: decline
 
 Пространство имен: microsoft.graph
 
-Отклонение приглашения на указанное [событие](../resources/event.md) в календаре [пользователей.](../resources/calendar.md)
+Отклонение приглашения на указанное [событие](../resources/event.md) в пользовательском [календаре](../resources/calendar.md).
 
-Если событие позволяет предложить предложения для нового времени при отклонении события, приглашенный может выбрать альтернативное время, включив предложенный **параметрNewTime.** Дополнительные сведения о том, как предложить время, а также как получить и принять новое предложение времени, см. в дополнительных сведениях о том, как предложить [новое время собраний.](/graph/outlook-calendar-meeting-proposals)
+Если событие позволяет предложить предложения для нового времени при отклонении события, приглашенный может выбрать альтернативное время, включив предложенный **параметрNewTime** . Дополнительные сведения о том, как предложить время и как получить и принять новое предложение времени, см. в дополнительных сведениях [о том, как предложить новое время собраний](/graph/outlook-calendar-meeting-proposals).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -64,7 +64,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |comment|String|Текст, включенный в ответ. Необязательный.|
-|proposedNewTime|[timeSlot](../resources/timeslot.md)|Альтернативные даты и времени, предлагаемые приглашенным для запроса на собрание, чтобы начать и закончить. Допустимо только для событий, которые позволяют новые предложения времени. Для настройки этого параметра **необходимо установить sendResponse** для `true` . Необязательный.|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|Альтернативные даты и времени, предлагаемые приглашенным для запроса на собрание, чтобы начать и закончить. Допустимо только для событий, которые позволяют новые предложения времени. Для настройки этого параметра **необходимо установить sendResponse** для `true`. Необязательный.|
 |sendResponse|Логическое|Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
 
 ## <a name="response"></a>Отклик
@@ -73,8 +73,8 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 Это действие возвращает HTTP 400, если происходит одно или оба из следующих действий:
 
-- Предлагаемый **параметрNewTime** включен, но свойство **allowNewTimeProposals** **события** `false` . 
-- Предлагаемый **параметрNewTime** включен, но параметр **sendResponse** задан для `false` .
+- **Предлагаемый параметрNewTime** включен, но свойство **allowNewTimeProposals** **события** .`false` 
+- **Предлагаемый параметрNewTime** включен, но параметр **sendResponse** задан для `false`.
 
 
 ## <a name="example"></a>Пример
@@ -129,6 +129,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/event-decline-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/event-decline-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

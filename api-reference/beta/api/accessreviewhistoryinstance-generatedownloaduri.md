@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2b586e5925f34bd74f7dc2351a6b91fa102767fd
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 44079aafaf994546530d5c9474a774a181b2b6b0
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62226088"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340592"
 ---
 # <a name="accessreviewhistoryinstance-generatedownloaduri"></a>accessReviewHistoryInstance: generateDownloadUri
 
@@ -18,7 +18,7 @@ ms.locfileid: "62226088"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создает URI для [объекта accessReviewHistoryInstance,](../resources/accessReviewHistoryInstance.md) состояние которого  `done` . Каждый URI можно использовать для получения данных истории отзывов экземпляра. Каждый URI действителен в течение 24 часов и может быть извлечен путем получения свойства **downloadUri** из [объекта accessReviewHistoryInstance.](../resources/accessReviewHistoryInstance.md)
+Создает URI для [объекта accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md)**, состояние** которого .`done` Каждый URI можно использовать для получения данных истории отзывов экземпляра. Каждый URI действителен в течение 24 часов и может быть извлечен путем получения свойства **downloadUri** из [объекта accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "62226088"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|AccessReview.ReadWrite.All|
+|Приложение|AccessReview.ReadWrite.All|
 
-Чтобы создать ссылку, пользователь, подписав, должен быть либо создателем связанного  определения  истории отзывов, либо назначены роли глобального администратора или глобального [каталога читателей.](/azure/active-directory/roles/permissions-reference)
+Чтобы создать ссылку, пользователь, вписав его, должен быть либо создателем связанного определения истории обзора, либо назначен роль  глобального администратора или глобального  [каталога читателей](/azure/active-directory/roles/permissions-reference).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,12 +55,14 @@ POST /identityGovernance/accessReviews/historyDefinitions/{accessReviewHistoryDe
 
 ## <a name="response"></a>Отклик
 
-В случае успеха это действие возвращает код отклика и `200 OK` [accessReviewHistoryInstances](../resources/accessReviewHistoryInstance.md) в тексте ответа.
+В случае успеха это действие возвращает код `200 OK` отклика и [accessReviewHistoryInstances](../resources/accessReviewHistoryInstance.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accessreviewhistoryinstance_generatedownloaduri"
@@ -70,6 +72,28 @@ POST /identityGovernance/accessReviews/historyDefinitions/{accessReviewHistoryDe
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/b2cb022f-b7e1-40f3-9854-c65a40861c38/instances/b2cb022f-b7e1-40f3-9854-c65a40861c38/generateDownloadUri
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/accessreviewhistoryinstance-generatedownloaduri-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/accessreviewhistoryinstance-generatedownloaduri-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/accessreviewhistoryinstance-generatedownloaduri-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/accessreviewhistoryinstance-generatedownloaduri-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accessreviewhistoryinstance-generatedownloaduri-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

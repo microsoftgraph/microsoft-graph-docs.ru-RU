@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b34911519edc534e2e238d0fbac9d177c232d332
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f6e8a4a4d23c727643ce2cf46f9113a28810ebfc
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976349"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348614"
 ---
 # <a name="serviceprincipal-addpassword"></a>servicePrincipal: addPassword
 
 Пространство имен: microsoft.graph
 
-Добавьте надежный пароль к [объекту servicePrincipal.](../resources/serviceprincipal.md)
+Добавьте надежный пароль к [объекту servicePrincipal](../resources/serviceprincipal.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -55,7 +55,7 @@ POST /servicePrincipals/{id}/addPassword
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и новый `200 OK` [объект passwordCredential](../resources/passwordcredential.md) в тексте ответа. Свойство **secretText в** объекте ответа содержит надежные пароли, созданные Azure Active Directory длиной 16-64 символа. В будущем этот пароль не будет извлечен.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и новый [объект passwordCredential](../resources/passwordcredential.md) в тексте ответа. Свойство **secretText в** объекте ответа содержит надежные пароли, созданные Azure Active Directory длиной 16-64 символов. В будущем этот пароль не будет извлечен.
 
 ## <a name="examples"></a>Примеры
 
@@ -101,12 +101,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-addpassword-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-addpassword-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

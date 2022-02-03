@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: cdeb0c356d94af01cad84af2c3983d0466944c01
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e9fbfcc4a506e876655ece20e8c1e69813e7f3fb
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982903"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340423"
 ---
 # <a name="application-removekey"></a>приложение: removeKey
 
@@ -18,7 +18,7 @@ ms.locfileid: "60982903"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление учетных данных ключей из [приложения.](../resources/application.md) Этот метод вместе с [addKey](application-addkey.md) можно использовать приложением для автоматизации проката истекающих ключей.
+Удаление учетных данных ключей из [приложения](../resources/application.md). Этот метод вместе с [addKey](application-addkey.md) можно использовать приложением для автоматизации проката истекающих ключей.
 
 > [!NOTE]
 > [Создание службыPrincipal](../api/serviceprincipal-post-serviceprincipals.md) и [Update servicePrincipal](../api/serviceprincipal-update.md) можно продолжать использовать для добавления и обновления учетных данных для любого приложения с приложением или контекстом пользователя.
@@ -58,7 +58,7 @@ POST /applications/{id}/removeKey
 | Свойство  | Тип | Описание|
 |:----------|:-----|:-----------|
 | keyId     | GUID | Уникальный идентификатор пароля.|
-| доказательство | String | Самозаверяемый маркер JWT, используемый в качестве доказательства владения существующими ключами. Маркер JWT должен быть подписан с использованием закрытого ключа одного из существующих действительных сертификатов приложения. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` — издателем должен быть __идентификатор__  приложения, выполняющего вызов.</li><li>`nbf` — вовремя.</li><li>`exp` - Срок действия должен `nbf` быть + 10 минут.</li></ul><br>О действиях по созданию этого доказательства маркера владения см. в журнале [Generating proof of possession tokens for rolling keys.](/graph/application-rollkey-prooftoken)|
+| доказательство | String | Самозаверяемый маркер JWT, используемый в качестве доказательства владения существующими ключами. Маркер JWT должен быть подписан с использованием закрытого ключа одного из существующих действительных сертификатов приложения. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` — издателем должен быть __идентификатор__  приложения, выполняющего вызов.</li><li>`nbf` — вовремя.</li><li>`exp` - Срок действия должен быть `nbf` + 10 минут.</li></ul><br>Действия по созданию этого маркера владения см. в журнале [Generating proof of possession tokens for rolling keys](/graph/application-rollkey-prooftoken).|
 
 ## <a name="response"></a>Отклик
 
@@ -106,6 +106,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/application-removekey-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/application-removekey-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

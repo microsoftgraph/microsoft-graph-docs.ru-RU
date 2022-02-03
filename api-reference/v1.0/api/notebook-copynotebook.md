@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: e01f727103ca1d256de132ce73b8ce08f925c79b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4b8ae5f7e40101a21ee5e865d635a9fff2b70d3d
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033152"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344209"
 ---
 # <a name="notebook-copynotebook"></a>блокнот: copyNotebook
 
@@ -50,7 +50,7 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `202 Accepted` ответа и `Operation-Location` загот. Опрос конечной Operation-Location, [чтобы получить состояние операции копирования.](onenoteoperation-get.md)
+В случае успешной работы этот метод возвращает код `202 Accepted` ответа и загот `Operation-Location` . Опрос Operation-Location конечной точки [, чтобы получить состояние операции копирования](onenoteoperation-get.md).
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -89,6 +89,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/notebook-copynotebook-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/notebook-copynotebook-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

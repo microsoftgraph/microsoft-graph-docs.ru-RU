@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cbddf8d1481566d07a96d425a7bcefc36195cfac
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3a26be264fbc14461d1193bc3e1ec51e2d63abca
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018248"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346130"
 ---
 # <a name="participant-mute"></a>участник: отключить
 
@@ -22,7 +22,7 @@ ms.locfileid: "61018248"
 
 Это отключить сервер, что означает, что сервер отпадет все аудио пакеты для этого участника, даже если участник продолжает поток звука.
 
-Дополнительные сведения об обработке операций немой обработки см. в [muteParticipantOperation.](../resources/muteParticipantoperation.md)
+Дополнительные сведения о том, как обрабатывать операции немой обработки, см. в [muteParticipantOperation](../resources/muteParticipantoperation.md).
 
 > **Примечание:** Этот метод поддерживается только для групповых вызовов.
 
@@ -32,7 +32,7 @@ ms.locfileid: "61018248"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложений     | Никаких других изменений не происходит                                        |
+| Приложение     | Нет                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -53,10 +53,10 @@ POST /communications/calls/{id}/participants/{id}/mute
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|clientContext|Строка|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
+|clientContext|String|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект muteParticipantOperation](../resources/muteParticipantoperation.md) в тексте ответа.
+В случае успешной работы `200 OK` этот метод возвращает код ответа и [объект muteParticipantOperation](../resources/muteParticipantoperation.md) в тексте ответа.
 
 >**Примечание:** Когда этот API возвращает успешный ответ, все участники получат обновление реестра.
 
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/participant-mute-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-mute-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

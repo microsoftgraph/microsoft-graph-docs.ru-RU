@@ -1,16 +1,16 @@
 ---
 title: 'пользователь: активироватьServicePlan'
-description: Активация плана службы с `servicePlanId` заданным и для данного `skuId` пользователя.
+description: Активация плана службы с заданным `servicePlanId` и `skuId` для данного пользователя.
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f96efda2deee2b81af127ec494ab7f7ef51587e2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 686a8f1a88781cff9c7469606d5e5cc61a86a4bd
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031464"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341938"
 ---
 # <a name="user-activateserviceplan"></a>пользователь: активироватьServicePlan
 
@@ -18,7 +18,7 @@ ms.locfileid: "61031464"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Активация плана службы с `servicePlanId` заданным и для данного `skuId` пользователя.
+Активация плана службы с заданным `servicePlanId` и `skuId` для данного пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -100,6 +100,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-activateserviceplan-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-activateserviceplan-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

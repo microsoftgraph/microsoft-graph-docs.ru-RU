@@ -5,12 +5,12 @@ author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b27ee3f2807b6447550682a162e27e1d8a447a13
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 6c669a40301df123b3f4c706cb2089eaf3eb3a67
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525936"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347717"
 ---
 # <a name="educationcategory-delta"></a>educationCategory: delta
 Пространство имен: microsoft.graph
@@ -31,7 +31,7 @@ ms.locfileid: "61525936"
 | Приложение                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод не поддерживает `$expand` параметры `$orderby` запроса , `$search` и `$filter` OData.
+Этот метод не поддерживает `$expand`параметры запроса , `$orderby`и `$filter` `$search`OData.
 
 Этот метод поддерживает только параметр `$top` запроса OData.
 
@@ -56,7 +56,7 @@ GET /education/classes/{educationClassId}/assignments/{educationAssignmentId}/ca
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код отклика и `200 OK` [коллекцию educationCategory](../resources/educationcategory.md) в тексте отклика.
+В случае успешной работы эта функция возвращает код `200 OK` отклика и [коллекцию educationCategory](../resources/educationcategory.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -66,7 +66,7 @@ GET /education/classes/{educationClassId}/assignments/{educationAssignmentId}/ca
 
 Ниже приведен пример запроса. 
 
-Используйте `$top` параметр, чтобы указать количество возвращаемой категории. Параметр необязательный, но использовать его желательно, если у вас есть длинный список категорий, в противном случае вы получите все категории в классе.
+Используйте параметр `$top` , чтобы указать количество возвращаемой категории. Параметр необязательный, но использовать его желательно, если у вас есть длинный список категорий, в противном случае вы получите все категории в классе.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -98,15 +98,19 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/go/get-classcategories-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-classcategories-delta-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
->**Примечание:** Возьмите `@odata.nextLink` ответ, чтобы сделать еще один вызов и получить следующий набор категорий.
+>**Примечание:** Возьмите ответ `@odata.nextLink` , чтобы сделать еще один вызов и получить следующий набор категорий.
 
 <!-- {
   "blockType": "response",
@@ -181,15 +185,19 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories
 [!INCLUDE [sample-code](../includes/snippets/go/get-classcategories-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-classcategories-delta-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
->**Примечание:** Вы должны продолжать использовать значение для последующих вызовов, пока не `@odata.nextLink` получите свойство в `@odata.deltaLink` ответе.
+>**Примечание:** Вы должны продолжать использовать значение для `@odata.nextLink` последующих вызовов, пока не получите `@odata.deltaLink` свойство в ответе.
 
 <!-- {
   "blockType": "response",
@@ -259,17 +267,21 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories
 [!INCLUDE [sample-code](../includes/snippets/go/get-classcategories-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-classcategories-delta-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
->**Примечание:** Вы должны продолжать использовать, чтобы получить недавно созданные или измененные `@odata.deltaLink` категории с момента первоначального вызова Delta.
+>**Примечание:** Вы должны продолжать использовать, `@odata.deltaLink` чтобы получить недавно созданные или измененные категории с момента первоначального вызова Delta.
 
->Иногда ответ дельты будет очень большим, и в этом случае будет возвращено, чтобы продолжить извлечение изменений до тех пор, `@odata.nextLink` пока вы не нажметесь `@odata.deltaLink` снова.
+>Иногда ответ дельты будет `@odata.nextLink` очень большим, и в этом случае будет возвращено, чтобы продолжить извлечение изменений до тех пор, пока вы не нажметесь снова `@odata.deltaLink` .
 
 <!-- {
   "blockType": "response",

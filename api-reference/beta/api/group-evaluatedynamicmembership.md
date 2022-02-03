@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2ca43d71c14cd8468b387444651d79d56f298bd4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f7f57e86a3b6a0ed2eb074de3a44109d30df4ae4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034367"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344062"
 ---
 # <a name="group-evaluatedynamicmembership"></a>группа: оценкаDynamicMembership
 
@@ -56,7 +56,7 @@ POST /groups/evaluateDynamicMembership
 
 | Имя | Описание |
 | :--- | :---------- |
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,11 +68,11 @@ POST /groups/evaluateDynamicMembership
 | Параметр | Тип | Описание |
 | :-------- | :--- | :---------- |
 | memberId | Коллекция объектов string | memberId — это объектный id пользователя или устройства, для оценки. |
-| membershipRule | Коллекция объектов string | Правило, которое используется для оценки членства. Если это свойство не предоставлено, оценивается правило для существующей группы. Если это свойство предоставлено, пользователь или устройство оцениваются для возможного членства в группе с тем же правилом. Дополнительные сведения см. в [программе Dynamic membership rules for groups in Azure Active Directory.](/azure/active-directory/users-groups-roles/groups-dynamic-membership)|
+| membershipRule | Коллекция String | Правило, которое используется для оценки членства. Если это свойство не предоставлено, оценивается правило для существующей группы. Если это свойство предоставлено, пользователь или устройство оцениваются для возможного членства в группе с тем же правилом. Дополнительные сведения см. в [программе Dynamic membership rules for groups in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект evaluateDynamicMembershipResult.](../resources/evaluatedynamicmembershipresult.md)
+В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект evaluateDynamicMembershipResult](../resources/evaluatedynamicmembershipresult.md) .
 
 ## <a name="examples"></a>Примеры
 
@@ -117,12 +117,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-evaluatedynamicmembership-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 <!-- {
   "blockType": "response",

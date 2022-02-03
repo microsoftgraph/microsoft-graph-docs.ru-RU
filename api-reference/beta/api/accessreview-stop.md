@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 487ab54eb9cfa5fd5788af1f4dc5b35078f6294a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9e38afea02221d670812932efead6f05ca219d21
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60992172"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340645"
 ---
 # <a name="stop-accessreview"></a>Остановка accessReview
 
@@ -18,7 +18,9 @@ ms.locfileid: "60992172"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) остановите активный [accessReview.](../resources/accessreview.md)  Целевой объект может быть либо одноразовой проверкой доступа, либо экземпляром повторного обзора доступа.  (Чтобы повторный обзор доступа не запускал [](accessreview-update.md) будущие экземпляры, обнови его, чтобы изменить запланированную дату окончания).  После остановки проверки доступа рецензенты больше не могут вводить ввод, и можно применять решения о проверке доступа.
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) остановите активный [accessReview](../resources/accessreview.md).  Целевой объект может быть либо одноразовой проверкой доступа, либо экземпляром повторного обзора доступа.  (Чтобы повторный обзор доступа не запускал будущие экземпляры [,](accessreview-update.md) обнови его, чтобы изменить запланированную дату окончания).  После остановки проверки доступа рецензенты больше не могут вводить ввод, и можно применять решения о проверке доступа.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,7 +28,7 @@ ms.locfileid: "60992172"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | AccessReview.ReadWrite.Membership  |
+|Приложение                            | AccessReview.ReadWrite.Membership  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -74,6 +76,10 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/stop-accessreview-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/stop-accessreview-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

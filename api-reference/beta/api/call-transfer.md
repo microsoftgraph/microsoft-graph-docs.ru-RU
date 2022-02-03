@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a5efe4e26598449c193403ee44136bcdd6847820
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 36acccdec73dd2c5e7ae088d45329272aa47f348
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987322"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341410"
 ---
 # <a name="call-transfer"></a>вызов: передача
 
@@ -20,7 +20,7 @@ ms.locfileid: "60987322"
 
 Передача активного одноранговых вызовов или групповых вызовов.
 
-> **Примечание:** Это поддерживается только в том случае, если как передателем, так и Microsoft Teams пользователями, принадлежащими одному и одному клиенту. Передача на номер PSTN поддерживается только для экземпляра приложения. Дополнительные информацию о целевой цели переноса, переноса и переноса см. в [rFC 5589.](https://tools.ietf.org/html/rfc5589#section-2)
+> **Примечание:** Это поддерживается только в том случае, если как передателем, так и Microsoft Teams пользователями, принадлежащими одному и одному клиенту. Передача на номер PSTN поддерживается только для экземпляра приложения. Дополнительные информацию о целевой цели переноса, переноса и переноса см. в [rFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
 
 Консультативная передача означает, что перед передачей перед передачей переносчик может сообщить человеку, на которого он хочет передать вызов. Это противоположно переносу вызова напрямую.
 
@@ -31,7 +31,7 @@ ms.locfileid: "60987322"
 | :-------------- | :-------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                |
-| Для приложений     | Calls.Initiate.All                                  |
+| Приложение     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -106,6 +106,10 @@ Content-Length: 430
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-transfer-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-transfer-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -216,7 +220,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание:** При сбойе передачи вызовов состояние вызова будет `established` .
+> **Примечание:** При сбойе передачи вызовов состояние вызова будет .`established`
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -299,6 +303,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-transfer-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-transfer-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -404,7 +412,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание:** При сбойе передачи вызовов состояние вызова будет `established` .
+> **Примечание:** При сбойе передачи вызовов состояние вызова будет .`established`
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -441,7 +449,7 @@ Content-Type: application/json
 
 ### <a name="example-3-call-transfer-from-a-peer-to-peer-call-to-pstn-number"></a>Пример 3. Перенос вызовов из одноранговых вызовов на номер PSTN
 
-Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
+Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 > **Примечание.** Телефон ID — это номер телефона в формате E.164.
 
 #### <a name="request"></a>Запрос
@@ -482,6 +490,10 @@ Content-Length: 430
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-transfer-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-transfer-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -591,7 +603,7 @@ Content-Type: application/json
 ```
 ### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание:** При сбойе передачи вызовов состояние вызова будет `established` .
+> **Примечание:** При сбойе передачи вызовов состояние вызова будет .`established`
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -627,7 +639,7 @@ Content-Type: application/json
 
 ### <a name="example-4-consultative-transfer-from-a-peer-to-peer-call-to-pstn-number"></a>Пример 4. Перенос консультаций с одноранговых вызовов на номер PSTN
 
-Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
+Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 > **Примечание.** Телефон ID — это номер телефона в формате E.164.
 
 #### <a name="request"></a>Запрос
@@ -671,6 +683,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-transfer-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-transfer-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -776,7 +792,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание:** При сбойе передачи вызовов состояние вызова будет `established` .
+> **Примечание:** При сбойе передачи вызовов состояние вызова будет .`established`
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -861,6 +877,10 @@ Content-Length: 430
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-transfer-5-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-transfer-5-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -970,7 +990,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание:** При сбойе передачи вызовов состояние вызова будет `established` .
+> **Примечание:** При сбойе передачи вызовов состояние вызова будет .`established`
 
 ```http
 POST https://bot.contoso.com/api/calls

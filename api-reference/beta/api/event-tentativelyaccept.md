@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 49035bad309c5e232577a610b0a83dff0049cbc8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e4c815b6e8780096ae4990607a02074e4bda5e79
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034467"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345592"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
@@ -18,9 +18,9 @@ ms.locfileid: "61034467"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Предварительно принять указанное событие [в](../resources/event.md) пользовательском [календаре.](../resources/calendar.md)
+Предварительно примите указанное событие [в](../resources/event.md) пользовательском [календаре](../resources/calendar.md).
 
-Если событие позволяет предложить предложения для нового времени при предварительном отклике на событие, приглашенный может выбрать альтернативное время, включив предложенный **параметрNewTime.** Дополнительные сведения о том, как предложить время, а также как получить и принять новое предложение времени, см. в дополнительных сведениях о том, как предложить [новое время собраний.](/graph/outlook-calendar-meeting-proposals)
+Если событие позволяет предложить предложения для нового времени при предварительном отклике на событие, приглашенный может выбрать альтернативное время, включив предложенный **параметрNewTime** . Дополнительные сведения о том, как предложить время и как получить и принять новое предложение времени, см. в дополнительных сведениях [о том, как предложить новое время собраний](/graph/outlook-calendar-meeting-proposals).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -59,7 +59,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 |:---------------|:--------|:----------|
 |comment|String|Текст, включенный в ответ. Необязательный.|
 |sendResponse|Логическое|Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
-|proposedNewTime|[timeSlot](../resources/timeslot.md)|Альтернативные даты и времени, предлагаемые приглашенным для запроса на собрание, чтобы начать и закончить. Допустимо только для событий, которые позволяют новые предложения времени. Для настройки этого параметра **необходимо установить sendResponse** для `true` . Необязательный параметр.|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|Альтернативные даты и времени, предлагаемые приглашенным для запроса на собрание, чтобы начать и закончить. Допустимо только для событий, которые позволяют новые предложения времени. Для настройки этого параметра **необходимо установить sendResponse** для `true`. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
 
@@ -67,13 +67,13 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 Это действие возвращает HTTP 400, если происходит одно или оба из следующих действий:
 
-- Предлагаемый **параметрNewTime** включен, но свойство **allowNewTimeProposals** **события** `false` . 
-- Предлагаемый **параметрNewTime** включен, но параметр **sendResponse** задан для `false` .
+- **Предлагаемый параметрNewTime** включен, но свойство **allowNewTimeProposals** **события** .`false` 
+- **Предлагаемый параметрNewTime** включен, но параметр **sendResponse** задан для `false`.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
 ### <a name="request"></a>Запрос
-В следующем примере пользователь, во время записи, предварительно отвечает на указанное событие, задает параметр **sendResponse** для true и включает альтернативное время в предлагаемый **параметрNewTime.**
+В следующем примере пользователь, во время записи, предварительно отвечает на указанное событие, задает параметр **sendResponse** для true и включает альтернативное время в предлагаемый **параметрNewTime** .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -117,6 +117,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/event-tentativelyaccept-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/event-tentativelyaccept-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

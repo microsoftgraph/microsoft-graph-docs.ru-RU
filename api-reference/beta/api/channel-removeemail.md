@@ -5,12 +5,12 @@ author: anandab-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6df4dcba5fccf523fdad3a4d3d760b4bc64fb2d4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ec45c71b0b14f814d614e818ac98e46d060d5c57
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030547"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339243"
 ---
 # <a name="channel-removeemail"></a>канал: removeEmail
 
@@ -18,9 +18,9 @@ ms.locfileid: "61030547"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите адрес электронной почты [канала.](../resources/channel.md)
+Удалите адрес электронной почты [канала](../resources/channel.md).
 
-Удалить адрес электронной почты можно только в том случае, если он был с помощью метода [provisionEmail](channel-provisionemail.md) или Microsoft Teams клиента.
+Удалить адрес электронной почты можно только в том случае, если он был закамурен с помощью метода [provisionEmail](channel-provisionemail.md) или Microsoft Teams клиента.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -81,6 +81,10 @@ POST https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/channel-removeemail-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/channel-removeemail-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

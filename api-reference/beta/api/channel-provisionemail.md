@@ -5,12 +5,12 @@ author: anandab-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 396465a3f293d523224538358c5bf73e6d65b928
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e0848b9e722191549bc52593cd0154929ed98eeb
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034705"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343158"
 ---
 # <a name="channel-provisionemail"></a>канал: provisionEmail
 
@@ -20,9 +20,9 @@ ms.locfileid: "61034705"
 
 Предоставление адреса электронной почты для [канала](../resources/channel.md).
 
-Microsoft Teams автоматически не содержит адрес электронной почты для **канала по** умолчанию. Чтобы Teams адрес электронной почты, можно вызвать **provisionEmail** или с помощью пользовательского интерфейса Teams, выберите get email address **,** который запускает Teams для создания адреса электронной почты, если он еще не был предварительно.
+Microsoft Teams автоматически не содержит адрес электронной почты для **канала по** умолчанию. Чтобы Teams адрес электронной почты, можно вызвать **provisionEmail** или с помощью пользовательского интерфейса Teams выберите адрес электронной почты **Get**, который запускает Teams для создания адреса электронной почты, если он еще не был предварительно.
 
-Чтобы удалить адрес электронной почты **канала,** используйте [метод removeEmail.](channel-removeemail.md)
+Чтобы удалить адрес электронной почты **канала**, используйте [метод removeEmail](channel-removeemail.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -50,7 +50,7 @@ POST /teams/{team-id}/channels/{channel-id}/provisionEmail
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект provisionChannelEmailResult](../resources/provisionChannelEmailResult.md) в тексте ответа. В свойстве имеется предварительный адрес `email` электронной почты.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект provisionChannelEmailResult](../resources/provisionChannelEmailResult.md) в тексте ответа. В свойстве имеется предварительный адрес электронной `email` почты.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -84,6 +84,10 @@ POST https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/channel-provisionemail-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/channel-provisionemail-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

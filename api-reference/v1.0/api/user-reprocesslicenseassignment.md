@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0c0e80d33d0b9bee9665eece1f5bcca4257cea9b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 26c90cb79ced2dcc437f8fafa830a1703ae27a90
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60992297"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343621"
 ---
 # <a name="user-reprocesslicenseassignment"></a>пользователь: reprocessLicenseAssignment
 
 Пространство имен: microsoft.graph
 
-Перепроцес всех групповых назначений лицензий для пользователя. Дополнительные информацию о групповом лицензировании см. в этой [Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) Дополнительные сведения см. в материале Определение и решение проблем с назначением лицензий для [группы в Azure Active Directory.](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)
+Перепроцес всех групповых назначений лицензий для пользователя. Дополнительные информацию о групповом лицензировании см. в этой [Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) Дополнительные [сведения см. в материале Identify and resolve license assignment problems for a group in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems).
 
 
 ## <a name="permissions"></a>Разрешения
@@ -44,7 +44,7 @@ POST /users/{id}/reprocessLicenseAssignment
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает `200 OK` код [](../resources/user.md) отклика и обновленный объект пользователя в тексте отклика.
+В случае успеха этот метод возвращает `200 OK` код отклика и [обновленный объект](../resources/user.md) пользователя в тексте отклика.
 
 ## <a name="example"></a>Пример
 В следующем примере показано, как перепроцесровать назначения лицензий для пользователя.
@@ -78,6 +78,10 @@ POST https://graph.microsoft.com/v1.0/users/047dd774-f1c4-40f2-82f0-278de79f9b83
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-reprocesslicenseassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-reprocesslicenseassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

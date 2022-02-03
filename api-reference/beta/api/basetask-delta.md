@@ -5,21 +5,21 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 44b85df7d883fa021cbd8a92ba1cde8462af48db
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a662af2401b7cb0e56aa1616c04b195aa0bf6cf7
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131811"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341791"
 ---
 # <a name="basetask-delta"></a>baseTask: дельта
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите набор ресурсов [baseTask,](../resources/basetask.md) которые были добавлены, удалены или обновлены в определенной [базеTaskList.](../resources/basetasklist.md)
+Получите набор ресурсов [baseTask](../resources/basetask.md) , которые были добавлены, удалены или обновлены в определенной [базеTaskList](../resources/basetasklist.md).
 
-Вызов  функции дельты для **ресурсов baseTask** в **baseTaskList** похож на запрос [](/graph/delta-query-overview) GET, за исключением того, что при надлежащем применении маркеров состояния в одном или более из этих вызовов можно запрашивать дополнительные изменения в **baseTask** в этой **baseTaskList**. Это позволяет поддерживать и синхронизировать локальный магазин ресурсов **baseTask** пользователя без необходимости каждый раз получать весь набор с сервера.
+Вызов  функции delta для ресурсов **baseTask** в **baseTaskList** похож на запрос GET, за исключением того, что при надлежащем применении [](/graph/delta-query-overview) маркеров состояния в одном или более из этих вызовов можно запрашивать дополнительные изменения в **baseTask** в этой **baseTaskList**. Это позволяет поддерживать и синхронизировать локальный магазин ресурсов **baseTask** пользователя без необходимости каждый раз получать весь набор с сервера.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,16 +43,16 @@ GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/delta
 
 ## <a name="query-parameters"></a>Параметры запроса
 
-Отслеживание изменений **в коллекции baseTask** вызывает один или несколько вызовов функций **дельты.** Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в начальном запросе **delta**. Microsoft Graph автоматически кодирует указанные параметры в маркере, входящем в состав URL-адреса `nextLink` или `deltaLink`, включенного в отклик. Параметры запроса нужно указать только один раз в первом запросе. В последующих запросах просто скопируйте и примените URL-адрес из предыдущего ответа, так как этот URL-адрес уже содержит закодированные `nextLink` `deltaLink` и нужные параметры.
+Отслеживание изменений **в коллекции baseTask** вызывает один или несколько вызовов функций **дельты** . Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в начальном запросе **delta**. Microsoft Graph автоматически кодирует указанные параметры в маркере, входящем в состав URL-адреса `nextLink` или `deltaLink`, включенного в отклик. Параметры запроса нужно указать только один раз в первом запросе. В последующих запросах `nextLink` `deltaLink` просто скопируйте и примените URL-адрес из предыдущего ответа, так как этот URL-адрес уже содержит закодированные и нужные параметры.
 
 | Параметр запроса    | Тип |Описание|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес предыдущей функции дельты, для той же коллекции baseTask, что указывает на завершение этого раунда `deltaLink` отслеживания  изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
-| $skiptoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес предыдущего вызова функции дельты, указывает на то, что в той же коллекции baseTask необходимо отслеживать дальнейшие `nextLink` изменения.  |
+| $deltatoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в `deltaLink` URL-адрес предыдущей  функции дельты, для той же коллекции baseTask, что указывает на завершение этого раунда отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
+| $skiptoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в `nextLink` URL-адрес предыдущего  вызова функции дельты, указывает на то, что в той же коллекции baseTask необходимо отслеживать дальнейшие изменения. |
 
 ### <a name="odata-query-parameters"></a>Параметры запросов OData
 
-- Поддержка запросов Delta `$filter` `$top` и `$expand` параметры запросов **для baseTask.** 
+- Поддержка запросов Delta `$filter` `$top`и параметры `$expand` запросов **для baseTask**. 
 - Параметр `$search` не поддерживается.
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -61,12 +61,12 @@ GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/delta
 | Authorization  | string  | Bearer {token}. Обязательный. |
 | Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код ответа и `200 OK` [коллекцию baseTask](../resources/basetask.md) в тексте ответа.
+В случае успешной работы эта функция возвращает код `200 OK` ответа и [коллекцию baseTask](../resources/basetask.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -99,6 +99,10 @@ GET /me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAA
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/basetask-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/basetask-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

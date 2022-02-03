@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ca17ca21a1d01db4a04b1fadbb2affe9b8f242c4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 949139a1e5545c654c609e54a8de206d785aa297
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982169"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345691"
 ---
 # <a name="directorydefinition-discover"></a>directoryDefinition: откройте для себя
 
@@ -28,7 +28,7 @@ ms.locfileid: "60982169"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается.|
-|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
+|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/directories/{di
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает ответ `200 OK` с объектом [directoryDefinition.](../resources/synchronization-directorydefinition.md)
+В случае успешной работы этот метод возвращает ответ `200 OK` с объектом [directoryDefinition](../resources/synchronization-directorydefinition.md) .
 
 ## <a name="example"></a>Пример
 
@@ -83,6 +83,10 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/discover-directorydefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/discover-directorydefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

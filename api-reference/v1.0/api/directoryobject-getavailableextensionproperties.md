@@ -5,17 +5,17 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2a43386a3f1e0d409eaa464c903b48f55bf1eaba
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 33a4d43ea5a3c764451276dc9378c2815ecdf733
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60974004"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346730"
 ---
 # <a name="directoryobject-getavailableextensionproperties"></a>directoryObject: getAvailableExtensionProperties
 Пространство имен: microsoft.graph
 
-Верни все или отфильтрованный список свойств расширения каталога, зарегистрированных в каталоге. Следующие сущности поддерживают свойства расширения: **пользовательские,** **групповые,** **организации,** **устройства,** **приложения** и **servicePrincipal.**
+Верни все или отфильтрованный список свойств расширения каталога, зарегистрированных в каталоге. Следующие сущности поддерживают свойства расширения: **пользовательские**, **групповые**, **организации**, **устройства**, **приложения** и **servicePrincipal**.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -49,12 +49,12 @@ POST /directoryObjects/getAvailableExtensionProperties
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|isSyncedFromOnPremises|Логическое|`true` указать, что должны возвращаться только свойства расширения, синхронизированные из локального каталога; чтобы указать, что возвращаются только свойства расширения, не синхронизированные из локального `false` каталога. Если параметр опущен, возвращаются все свойства расширения (как синхронизированные, так и не синхронизированные).|
+|isSyncedFromOnPremises|Логический|`true` указать, что должны возвращаться только свойства расширения, синхронизированные из локального каталога; `false` чтобы указать, что возвращаются только свойства расширения, не синхронизированные из локального каталога. Если параметр опущен, возвращаются все свойства расширения (как синхронизированные, так и не синхронизированные).|
 
 
 ## <a name="response"></a>Отклик
 
-В случае успеха это действие возвращает код ответа и `200 OK` [коллекцию extensionProperty](../resources/extensionproperty.md) в тексте ответа.
+В случае успеха это действие возвращает код `200 OK` ответа и [коллекцию extensionProperty](../resources/extensionproperty.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -92,6 +92,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getavailableextensionproperties-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-getavailableextensionproperties-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

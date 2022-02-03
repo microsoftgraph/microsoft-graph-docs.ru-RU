@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 6d2c6402acb98af771a65bbcdaf0f741bc0d36ec
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 22fa9e10c08ee2446885451eaba1c480be0a30b0
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019626"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349140"
 ---
 # <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment: моя
 
@@ -46,7 +46,7 @@ GET /privilegedRoleAssignments/my
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и объект коллекции `200 OK` [privilegedRoleAssignment](../resources/privilegedroleassignment.md) в тексте ответа.
+В случае успешного выполнения этот `200 OK` метод возвращает код ответа и [объект коллекции privilegedRoleAssignment](../resources/privilegedroleassignment.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments/my
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/privilegedroleassignment-my-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedroleassignment-my-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

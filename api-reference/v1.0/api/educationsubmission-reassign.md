@@ -5,12 +5,12 @@ author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1e6374ca5136711b4d7a5adf3b7b5d824dc77a1e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b37cf6cc3998723b4c0d39c9e0dcec7da24ded2f
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62111223"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344295"
 ---
 # <a name="educationsubmission-reassign"></a>educationSubmission: reassign
 
@@ -20,9 +20,9 @@ ms.locfileid: "62111223"
 
 Выполнить это действие могут только преподаватели. 
 
-Включай заготок при вызове этого метода; в противном случае повторно назначенная отправка будет рассматриваться как `Prefer: include-unknown-enum-members` возвращенная отправка. Это означает, что состояние будет соединяться с состоянием, а свойства `reassigned` `returned` **reassignedDateTime** и **reassignedBy** будут соединяться с **returnedDateTime** и **returnedBy** соответственно.
+Включай `Prefer: include-unknown-enum-members` заготок при вызове этого метода; в противном случае повторно назначенная отправка будет рассматриваться как возвращенная отправка. Это означает `reassigned` `returned` , что состояние будет соединяться с состоянием, а свойства **reassignedDateTime** и **reassignedBy** будут соединяться с **returnedDateTime** и **returnedBy** соответственно.
 
-Если `Prefer: include-unknown-enum-members` заготавка предоставлена, повторно назначенное представление сохраняет `reassigned` состояние. Подробные сведения см. в разделе Примеры.
+Если заготавка `Prefer: include-unknown-enum-members` предоставлена, повторно назначенное представление сохраняет состояние `reassigned` . Подробные сведения см. в разделе Примеры.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,13 +42,13 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
-| Prefer  | `include-unknown-enum-members`. Необязательно.  |
+| Prefer  | `include-unknown-enum-members`. Необязательный параметр.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не поставляем тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и `200 OK` объект [educationSubmission](../resources/educationsubmission.md) в тексте ответа.
+В случае успеха этот метод возвращает `200 OK` код отклика и объект [educationSubmission](../resources/educationsubmission.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 ### <a name="example-1-request-without-optional-prefer-header"></a>Пример 1. Запрос без необязательного заголовка Prefer
@@ -87,13 +87,17 @@ POST /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332
 [!INCLUDE [sample-code](../includes/snippets/go/educationsubmission-reassign-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationsubmission-reassign-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---
 
 
 #### <a name="response"></a>Отклик
-Ниже приводится пример ответа, когда не предоставляется в загона запроса и отправка не `Prefer: include-unknown-enum-members` была возвращена ранее.
+Ниже приводится пример ответа `Prefer: include-unknown-enum-members` , когда не предоставляется в загона запроса и отправка не была возвращена ранее.
 
 <!-- {
   "blockType": "response",
@@ -189,13 +193,17 @@ Prefer: include-unknown-enum-members
 [!INCLUDE [sample-code](../includes/snippets/go/educationsubmission-prefer-reassign-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationsubmission-prefer-reassign-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---
 
 
 #### <a name="response"></a>Отклик
-Ниже приводится пример ответа, когда в заглавной части запроса предоставляется ответ, и отправка не `Prefer: include-unknown-enum-members` была возвращена ранее.
+Ниже приводится пример ответа `Prefer: include-unknown-enum-members` , когда в заглавной части запроса предоставляется ответ, и отправка не была возвращена ранее.
 
 <!-- {
   "blockType": "response",
