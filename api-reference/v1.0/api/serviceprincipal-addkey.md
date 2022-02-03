@@ -5,25 +5,25 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 752cbc25a7841e209e37d8cb39e0541c9c1ea04a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e354dd264633b2acb2f178106843bfa168dde710
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60973827"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346649"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipal: addKey
 
 Пространство имен: microsoft.graph
 
-Добавляет ключевые учетные данные [в службуPrincipal.](../resources/serviceprincipal.md) Этот метод наряду с [removeKey](serviceprincipal-removekey.md) может использоваться службойPrincipal для автоматизации проката истекающих ключей.
+Добавляет ключевые учетные данные в [службуPrincipal](../resources/serviceprincipal.md). Этот метод наряду с [removeKey](serviceprincipal-removekey.md) может использоваться службойPrincipal для автоматизации проката истекающих ключей.
 
 > [!NOTE]
 > [Создание службыPrincipal](../api/serviceprincipal-post-serviceprincipals.md) и [Update servicePrincipal](../api/serviceprincipal-update.md) можно продолжать использовать для добавления и обновления учетных данных для любой службыPrincipal с контекстом пользователя или без него.
 
 В рамках проверки запроса для этого метода проверяется доказательство на наличие существующего ключа перед выполнением действия. 
 
-ServicePrincipals, у которых нет существующих действительных сертификатов (например, еще не добавлены сертификаты или истек срок действия всех сертификатов), не смогут использовать это действие службы. Для выполнения обновления можно использовать службу [UpdatePrincipal.](../api/serviceprincipal-update.md)
+ServicePrincipals, у которых нет существующих действительных сертификатов (например, еще не добавлены сертификаты или истек срок действия всех сертификатов), не смогут использовать это действие службы. Для выполнения обновления можно использовать службу [UpdatePrincipal](../api/serviceprincipal-update.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -55,14 +55,14 @@ POST /servicePrincipals/{id}/addKey
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | Добавлены новые учетные данные ключа servicePrincipal. __Тип,__ __использование и__ __ключ__ необходимые свойства для этого использования. Поддерживаемые ключевые типы:<br><ul><li>`AsymmetricX509Cert`: Использование должно быть `Verify` .</li><li>`X509CertAndPassword`: Использование должно быть `Sign`</li></ul>|
-| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Требуется __установить только secretText,__ который должен содержать пароль для ключа. Это свойство требуется только для ключей типа `X509CertAndPassword` . Установите его в `null` противном случае.|
-| доказательство | Строка | Самозаверяемый маркер JWT, используемый в качестве доказательства владения существующими ключами. Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов службыPrincipal. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Эмитент должен быть __id__  службыPrincipal, которая делает вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Вот пример [кода,](/graph/application-rollkey-prooftoken) который можно использовать для создания этого доказательства маркера владения.|
+| keyCredential | [keyCredential](../resources/keycredential.md) | Добавлены новые учетные данные ключа servicePrincipal. Тип __,__ __использование и__ __ключ__ необходимые свойства для этого использования. Поддерживаемые ключевые типы:<br><ul><li>`AsymmetricX509Cert`: Использование должно быть `Verify`.</li><li>`X509CertAndPassword`: Использование должно быть `Sign`</li></ul>|
+| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Требуется __установить только secretText__ , который должен содержать пароль для ключа. Это свойство требуется только для ключей типа `X509CertAndPassword`. Установите его в противном `null` случае.|
+| доказательство | String | Самозаверяемый маркер JWT, используемый в качестве доказательства владения существующими ключами. Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов службыPrincipal. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Эмитент должен быть __id__  службыPrincipal, которая делает вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Вот пример кода [,](/graph/application-rollkey-prooftoken) который можно использовать для создания этого доказательства маркера владения.|
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и новый `200 OK` [объект keyCredential](../resources/keycredential.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и новый [объект keyCredential](../resources/keycredential.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -113,12 +113,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-addkey-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-addkey-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -182,6 +186,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-addkey-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-addkey-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

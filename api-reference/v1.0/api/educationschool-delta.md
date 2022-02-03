@@ -5,18 +5,18 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d4c5b72281f9716110b019a3b6945dd6388fa1bf
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3c1bd5fa223b876725ce49a72bd0c34ac88be1ee
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979058"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343754"
 ---
 # <a name="educationschool-delta"></a>educationSchool: delta
 
 Пространство имен: microsoft.graph
 
-Создайте новые или обновленные школы, не выполняя полное чтение всей школьной коллекции. Подробные [сведения см. в запросе Use Delta.](/graph/delta-query-overview)
+Создайте новые или обновленные школы, не выполняя полное чтение всей школьной коллекции. [Подробные сведения см. в запросе Use Delta](/graph/delta-query-overview).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "60979058"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,12 +51,12 @@ GET /education/schools/delta
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код отклика и `200 OK` [коллекцию educationSchool](../resources/educationschool.md) в тексте ответа. Отклик также содержит URL-адрес `nextLink` или `deltaLink`.
+В случае успешной работы эта функция возвращает код `200 OK` отклика и [коллекцию educationSchool](../resources/educationschool.md) в тексте ответа. Отклик также содержит URL-адрес `nextLink` или `deltaLink`.
 
 - Если возвращается URL-адрес `nextLink`, это означает, что во время сеанса получены не все страницы данных. Приложение продолжает отправлять запросы, используя URL-адрес `nextLink`, пока в ответ не будет включен URL-адрес `deltaLink`.
-- Если возвращается URL-адрес `deltaLink`, это означает, что больше нет данных о текущем состоянии ресурса. Сохраните и используйте `deltaLink` URL-адрес, чтобы узнать об изменениях в ресурсе в будущем.
+- Если возвращается URL-адрес `deltaLink`, это означает, что больше нет данных о текущем состоянии ресурса. Сохраните и используйте URL-адрес `deltaLink` , чтобы узнать об изменениях в ресурсе в будущем.
 
-Подробные сведения см. в [материале Использование запроса delta.](/graph/delta-query-overview) Например, запросы см. [в рублях Получить дополнительные изменения для пользователей.](/graph/delta-query-users)
+Подробные сведения см. в [материале Использование delta-запроса](/graph/delta-query-overview). Например, запросы см. [в рублях Получить дополнительные изменения для пользователей](/graph/delta-query-users).
 
 ## <a name="examples"></a>Примеры
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/v1.0/education/schools/delta
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationschool-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationschool-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

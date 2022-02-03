@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 7d8b64ae0f1a34f927cfb93944cfa4a7d8770a9b
-ms.sourcegitcommit: 94741ff7f61f20a39dacfa6ce451a77ca02dd68a
+ms.openlocfilehash: b058a8ea3fa72844f3f6f17d6a10d127702e8ecd
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62047128"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349102"
 ---
 # <a name="restart-synchronizationjob"></a>Перезапуск синхронизацииJob
 
@@ -41,7 +41,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса укажи объект JSON со следующим параметром.
 
@@ -51,7 +51,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 
 ## <a name="response"></a>Отклик
 
-В случае успешного ответа `204 No Content` возвращается ответ. Метод не возвращает данные в теле отклика.
+В случае успешного ответа возвращается `204 No Content` ответ. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/synchronizationjob-restart-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/synchronizationjob-restart-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: c09fdc2b1b214ec74b9bdaf22a8600b07ab00732
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e0e4deb54c63d54ab0ff5cdbed8cbe77d081f606
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132782"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349796"
 ---
 ```powershell
 
@@ -23,6 +23,7 @@ $params = @{
     )
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserProfileSkill -UserId $userId -BodyParameter $params
 
 ```

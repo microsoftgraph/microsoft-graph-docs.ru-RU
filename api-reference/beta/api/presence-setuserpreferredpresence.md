@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 005c0c6cd0f35455780c11650a10bab96280bc6d
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 37fd49ea1f45ae8c1bb06e609d6fbc91d465a521
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526097"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344944"
 ---
 # <a name="presence-setuserpreferredpresence"></a>присутствие: setUserPreferredPresence
 
@@ -20,13 +20,13 @@ ms.locfileid: "61526097"
 
 Установите предпочтительное состояние доступности и активности для пользователя. Если установлено предпочтительное присутствие пользователя, его присутствие является предпочтительным.
 
-Предпочтительное присутствие вступает в силу только при наличии хотя бы [одного](presence-setpresence.md#presence-sessions) сеанса присутствия пользователя. В противном случае присутствие пользователя остается в автономном режиме.
+Предпочтительное присутствие вступает в силу только при наличии хотя [бы одного](presence-setpresence.md#presence-sessions) сеанса присутствия пользователя. В противном случае присутствие пользователя остается в автономном режиме.
 
 Сеанс присутствия может быть создан в результате успешной операции [setPresence](presence-setpresence.md) или если пользователь подписан на Teams клиента. 
 
-Дополнительные новости о [сеансах присутствия](presence-setpresence.md#presence-sessions) и [их времени ожидания и истечения срока действия.](presence-setpresence.md#timeout-expiration-and-keep-alive) 
+Дополнительные новости о [сеансах присутствия](presence-setpresence.md#presence-sessions) и [их сроках и сроках действия](presence-setpresence.md#timeout-expiration-and-keep-alive). 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 Для вызова API требуется следующее разрешение. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
@@ -52,11 +52,11 @@ POST /users/{userId}/presence/setUserPreferredPresence
 
 | Параметр          | Тип     | Описание                                                                                                                                                                                                                                    |
 | :----------------- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| availability       | строка   | Сведения о базовом присутствии.                                                                                                                                                                                                                 |
+| availability       | string   | Сведения о базовом присутствии.                                                                                                                                                                                                                 |
 | действие           | string   | Дополнительные сведения о доступности.                                                                                                                                                                                                  |
 | expirationDuration | duration | Срок действия сеанса присутствия приложения. Значение представлено в формате ISO 8601 для длительности.<br/>В случае невыполнения условий по умолчанию будет применено:<br/>DoNotDisturb или Busy: срок действия истекает через 1 день<br/>Все остальные: срок действия истекает через 7 дней |
 
-Поддерживаемые сочетания **доступности** и **активности:**
+Поддерживаемые сочетания **доступности** и **активности** :
 
 | availability | действие     | Описание                                         |
 | :----------- | :----------- | :-------------------------------------------------- |
@@ -72,7 +72,7 @@ POST /users/{userId}/presence/setUserPreferredPresence
 
 ## <a name="examples"></a>Примеры
 
-Следующий запрос задает пользователю предпочтительное присутствие в качестве DoNotDisturb для пользователя `fa8bf3dc-eca7-46b7-bad1-db199b62afc3` с истечением 8 часов.
+Следующий запрос задает пользователю предпочтительное присутствие в качестве DoNotDisturb для пользователя `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`с истечением 8 часов.
 
 #### <a name="request"></a>Запрос
 
@@ -110,6 +110,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/setuserpreferredpresence-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/setuserpreferredpresence-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

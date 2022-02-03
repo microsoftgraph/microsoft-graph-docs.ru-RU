@@ -5,18 +5,18 @@ description: Добавьте копию типа контента сайта в
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 0f17dbcfe3a59ae6ff1d9beb0f06f92ba09af611
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b6a75c30368535396e69f917f50a76c4234eb58c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028818"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344600"
 ---
 # <a name="contenttype-addcopy"></a>contentType: addCopy
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Добавьте копию контента [типа][контентаType] с сайта [в][site] [список][list].
+Добавьте копию [][typecontentType] контента с [сайта в][site] [список][list].
  
   
 
@@ -30,7 +30,7 @@ ms.locfileid: "61028818"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |Sites.Manage.All, Sites.FullControl.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Sites.Manage.All, Sites.FullControl.All |
+|Приложение | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -60,7 +60,7 @@ POST /sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 
 ## <a name="response"></a>Отклик
 
-В случае успешного ответа этот вызов возвращает код отклика и `201 Created` [объект contentType][] в тексте ответа.
+В случае успешного ответа этот вызов возвращает код `201 Created` отклика и [объект contentType][] в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-addcopy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-addcopy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 63f4de55c3e84341949a914c73d9864b87f21b61
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 611e5fb7498b04c0b8d99a3b2b14ecc07f9ed47c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109419"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62352505"
 ---
 ```powershell
 
@@ -15,6 +15,7 @@ $params = @{
     Name = "name-value"
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserCalendarGroup -UserId $userId -CalendarGroupId $calendarGroupId -BodyParameter $params
 
 ```
