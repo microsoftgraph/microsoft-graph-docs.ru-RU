@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cdbb2999f499aaab300cd94bd0de8df062327d4d
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 21f3f3537ffc24f157a6dbd46673af35d92f1452
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651486"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341847"
 ---
 # <a name="accesspackage-getapplicablepolicyrequirements"></a>accessPackage: getApplicablePolicyRequirements
 Пространство имен: microsoft.graph
 
 
-В управлении правами [Azure AD](../resources/entitlementmanagement-overview.md)это действие извлекает список объектов [accessPackageAssignmentRequestRequirements,](../resources/accesspackageassignmentrequestrequirements.md) которые в настоящее время подписан пользователь может использовать для создания [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)  Каждый объект требования соответствует политике назначения пакетов доступа, для которых подписанное в настоящее время пользователь может запрашивать назначение.
+В [управлении правами Azure AD](../resources/entitlementmanagement-overview.md) это действие извлекает список объектов [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) , которые в настоящее время пользователь может использовать для создания [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).  Каждый объект требования соответствует политике назначения пакетов доступа, для которых подписанное в настоящее время пользователь может запрашивать назначение.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,13 +40,13 @@ POST /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}/
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа и `200 OK` [коллекцию accessPackageAssignmentRequestRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) в тексте ответа, по одному объекту для каждой политики, для которой пользователь является **разрешеннымRequestor.** Если политика не имеет требований, то будут иметься и значения **accessPackageAssignmentRequestRequirements.** `false` `null` Если нет политик, в которых пользователь является **разрешеннымRequestor,** вместо него будет возвращена пустая коллекция.
+`200 OK` В случае успешного выполнения этот метод возвращает код ответа и коллекцию [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) в тексте отклика, по одному объекту для каждой политики, для которой пользователь является **разрешеннымRequestor**. Если политика не имеет требований, то будут иметься и значения **accessPackageAssignmentRequestRequirements** `false` `null` . Если нет политик, в которых пользователь является **разрешеннымRequestor**, вместо него будет возвращена пустая коллекция.
 
 ## <a name="examples"></a>Примеры
 
@@ -79,6 +79,10 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/a
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accesspackage-getapplicablepolicyrequirements-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackage-getapplicablepolicyrequirements-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 26c65411ba7ce83fdae9d6d5ac46038deea84ac3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a832aeedbe8f4d44cb6e33b11daf7c6b0ab2a72b
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61004794"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346878"
 ---
 # <a name="informationprotectionlabel-evaluateclassificationresults"></a>informationProtectionLabel: evaluateClassificationResults
 
@@ -18,9 +18,9 @@ ms.locfileid: "61004794"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-С [помощью результатов](../resources/classificationresult.md) [](../resources/informationprotectionlabel.md) классификации вычислите метку защиты информации, которая должна быть применена, и верните набор действий, которые необходимо принять для правильной маркировки сведений. Этот API полезен, когда метка должна быть заданной автоматически на основе классификации содержимого файла, а не метки непосредственно пользователем или службой. 
+С [помощью результатов](../resources/classificationresult.md) классификации вычислите метку защиты информации, которая должна быть применена, и верните набор действий, которые необходимо принять для правильной метки информации.[](../resources/informationprotectionlabel.md) Этот API полезен, когда метка должна быть заданной автоматически на основе классификации содержимого файла, а не метки непосредственно пользователем или службой. 
 
-Чтобы оценить на основе результатов классификации, предостаточная [оценка контентаInfo,](../resources/contentinfo.md)который включает существующие пары [ключей/значений](../resources/keyvaluepair.md)метаданных контента и [результаты классификации.](../resources/classificationresult.md) API возвращает [informationProtectionAction,](../resources/informationprotectionaction.md) который содержит один из следующих ниже: 
+Для оценки на основе результатов классификации предостаточная оценка [контентаInfo](../resources/contentinfo.md), включающая в себя существующие пары [ключей/](../resources/keyvaluepair.md)значений метаданных контента, [а также результаты классификации](../resources/classificationresult.md). API возвращает [informationProtectionAction](../resources/informationprotectionaction.md) , который содержит один из следующих ниже: 
 
 * [addContentFooterAction](../resources/addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/addcontentheaderaction.md)
@@ -46,7 +46,7 @@ ms.locfileid: "61004794"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | InformationProtectionPolicy.Read            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | InformationProtectionPolicy.Read.All        |
+| Приложение                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -75,7 +75,7 @@ POST /informationProtection/policy/labels/{id}/evaluateClassificationResults
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и новый объект `200 OK` [коллекции informationProtectionAction](../resources/informationprotectionaction.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и новый объект [коллекции informationProtectionAction](../resources/informationprotectionaction.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -134,12 +134,16 @@ User-agent: ContosoLOBApp/1.0
 [!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-evaluateclassificationresults-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/informationprotectionlabel-evaluateclassificationresults-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

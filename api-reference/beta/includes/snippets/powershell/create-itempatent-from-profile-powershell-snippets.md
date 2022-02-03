@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: abf6f2398b8f2b4ac96c0d8c9e0a3c7b718c6331
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 93e0ad71add097de4875ebec1b6b27496165d63f
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135225"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62350450"
 ---
 ```powershell
 
@@ -19,6 +19,7 @@ $params = @{
     WebUrl = "https://patents.gov/3954432633"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserProfilePatent -UserId $userId -BodyParameter $params
 
 ```

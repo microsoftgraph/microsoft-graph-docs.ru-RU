@@ -1,16 +1,17 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 6965db0cdfe5003d8fbf0deb072b3d692516d2ae
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3071be91fbb45ac810859bd129726ef62f4cdcd3
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129533"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62352341"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Notes
 
+# A UPN can also be used as -UserId.
 Get-MgUserOnenoteResourceContent -UserId $userId -OnenoteResourceId $onenoteResourceId
 
 ```

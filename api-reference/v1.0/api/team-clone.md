@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5da091152a259a2987b2d99a9082a9f6795a60aa
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 739d4b1eed49bce36ad478877e701c9137991019
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60973690"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342324"
 ---
 # <a name="clone-a-team"></a>Клонировать команду
 
@@ -18,7 +18,7 @@ ms.locfileid: "60973690"
 
 
 
-Создайте копию [команды.](../resources/team.md) Эта операция также создает копию соответствующей [группы.](../resources/group.md)
+Создайте копию [команды](../resources/team.md). Эта операция также создает копию соответствующей [группы](../resources/group.md).
 Можно указать, какие части группы клонировать:
 
 - **приложения** — Microsoft Teams приложения, установленные в команде. 
@@ -30,7 +30,7 @@ ms.locfileid: "60973690"
 Когда вкладки клонируют, они помещаются в неконфигурированное состояние — они отображаются на панели вкладок в Microsoft Teams, и при первом их открытие вы будете проходить через экран конфигурации. (Если открывающий вкладку человек не имеет разрешения на настройку приложений, он увидит сообщение, объясняя, что вкладка не настроена.)
 
 Клонирование является длительной операцией.
-После возвращения клона POST необходимо получить [](../resources/teamsasyncoperation.md) операцию, чтобы узнать, "запущена" или "успешно" или "не удалось". Вы должны продолжать получать, пока состояние не будет "запущено". Рекомендуемая задержка между GETs — 5 секунд.
+После возвращения клона POST необходимо получить операцию, чтобы узнать, [](../resources/teamsasyncoperation.md) "запущена" или "успешно" или "не удалось". Вы должны продолжать получать, пока состояние не будет "запущено". Рекомендуемая задержка между GETs — 5 секунд.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ ms.locfileid: "60973690"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Team.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений                            | Team.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
+|Приложение                            | Team.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 
 > **Примечание**. Разрешения, помеченные **, не поддерживаются и не должны использоваться.
 
@@ -65,11 +65,11 @@ POST /teams/{id}/clone
 |displayName|String|Отображаемое имя для группы. Это свойство необходимо при создании группы. Оно не может быть удалено во время обновления. Поддерживает параметры $filter и $orderby.|
 |mailNickname|String|Почтовый псевдоним для группы (уникальный в организации). Это свойство должно быть указано при создании группы. Поддерживает параметр $filter. Если это свойство не указано, оно будет вычисляться из displayName. Известная проблема: это свойство в настоящее время игнорируется.|
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |Разделенный запятой список частей для клонирования. Юридическими частями являются "приложения, вкладки, параметры, каналы, члены".|
-|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (необязательный)| Указывает видимость группы. Возможные значения: **Private**, **Public**. Если видимость не указана, видимость будет скопирована из исходной группы или группы. Если клонированная группа является командой **educationClass,** параметр видимости игнорируется, а видимость новой группы будет задана в hiddenMembership.|
+|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (необязательный)| Указывает видимость группы. Возможные значения: **Private**, **Public**. Если видимость не указана, видимость будет скопирована из исходной группы или группы. Если клонированная группа является командой **educationClass** , параметр видимости игнорируется, а видимость новой группы будет задана в hiddenMembership.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного использования этот метод возвращает код ответа с заготвом `202 Accepted` Location: header, указывав на [ресурс](../resources/teamsasyncoperation.md) операции.
+В случае успешного использования этот метод возвращает код `202 Accepted` ответа с заготвом Location: header, указывав на [ресурс](../resources/teamsasyncoperation.md) операции.
 По завершению операции ресурс операции покажет вам id созданной команды.
 
 ## <a name="example"></a>Пример
@@ -111,6 +111,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/clone-team-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/clone-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

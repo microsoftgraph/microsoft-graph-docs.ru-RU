@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b582edb0440beca6dfddd659cf3ee035654e1959
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 02ba45c5462c7ddc27f175c745b1898f079272c4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61009994"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345826"
 ---
 # <a name="user-changepassword"></a>пользователь: changePassword
 
@@ -46,8 +46,8 @@ POST /me/changePassword
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-| currentPassword | Строка | Текущий пароль.|
-| newPassword | Строка | Новый пароль.|
+| currentPassword | String | Текущий пароль.|
+| newPassword | String | Новый пароль.|
 
 ## <a name="response"></a>Отклик
 
@@ -91,6 +91,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-changepassword-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-changepassword-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: de8ac29ba5212702633a1fab9110a5aff0e84b37
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a078f5c3c24765507d6bcf06ce5c359cb553dc07
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127377"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341091"
 ---
 # <a name="manageddevice-getcloudpcremoteactionresults"></a>managedDevice: getCloudPcRemoteActionResults
 
@@ -18,7 +18,7 @@ ms.locfileid: "62127377"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Проверьте удаленные результаты действий, [заданные](../resources/cloudpcremoteactionresult.md) облачным КОМПЬЮТЕРом, для устройства облачного ПК. Облачный компьютер поддерживает повторное и повторное управление удаленными действиями.
+Проверьте [удаленные результаты действий, заданные облачным КОМПЬЮТЕРом](../resources/cloudpcremoteactionresult.md) , для устройства облачного ПК. Облачный компьютер поддерживает повторное и повторное управление удаленными действиями.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,13 +47,13 @@ GET /deviceManagement/managedDevices/{managedDeviceId}/getCloudPcRemoteActionRes
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/manageddevice-getcloudpcremoteactionresults-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/manageddevice-getcloudpcremoteactionresults-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 0eafcb1133ed478b301f0f14ce1109b0018b52dc
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 94e1fecac48be599b2e12f3847f4d9116b1e7d4b
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135267"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349413"
 ---
 ```powershell
 
@@ -20,6 +20,7 @@ $params = @{
     WebUrl = "https://www.chelseafc.com"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserProfileInterest -UserId $userId -BodyParameter $params
 
 ```

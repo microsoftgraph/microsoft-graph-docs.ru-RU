@@ -5,18 +5,18 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: aad2786e2f0d91d4975a56235d2b3f3606e53139
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 51530e58d72ff2809d53832138bd50ec16d551d5
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60974403"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347312"
 ---
 # <a name="call-redirect"></a>вызов: перенаправление
 
 Пространство имен: microsoft.graph
 
-Перенаправьте входящий вызов, на который еще не ответили [и](./call-answer.md) [не ответили.](./call-reject.md) Термины "перенаправление" и "переадресовка" вызова используются взаимозаменяемо.
+Перенаправьте входящий вызов, на который еще не ответили [и](./call-answer.md) [не ответили](./call-reject.md) . Термины "перенаправление" и "переадресовка" вызова используются взаимозаменяемо.
 
 Ожидается, что бот перенаправляет вызов до времени вызова. Текущее значение времени времени — 15 секунд.
 
@@ -28,7 +28,7 @@ ms.locfileid: "60974403"
 | :-------------- | :-------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                |
-| Для приложений     | Calls.Initiate.All                                  |
+| Приложение     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ POST /communications/calls/{id}/redirect
 |:---------------|:--------|:----------|
 |targets|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Целевые участники операции перенаправления. Если задано несколько целевых объектов, это симуляцный вызов. Это означает, что все целевые объекты будут одновременно звонили и подключена только первая цель, подбираемая. Мы поддерживаем до 25 целей для simulring.
 |timeout|Int32|Период времени (в секундах) для операции перенаправления. Диапазон значения времени от 15 до 90 секунд включительно. Значение времени по умолчанию — 55 секунд для одной цели и 60 секунд для нескольких целей (при условии изменения). |
-|callbackUri|String|Это позволяет ботам предоставлять определенный URI вызова для текущего вызова для получения более поздних уведомлений. Если это свойство не установлено, вместо него будет использоваться глобальный URI вызова бота. Это должно быть `https` .|
+|callbackUri|String|Это позволяет ботам предоставлять определенный URI вызова для текущего вызова для получения более поздних уведомлений. Если это свойство не установлено, вместо него будет использоваться глобальный URI вызова бота. Это должно быть `https`.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`.
@@ -160,6 +160,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-redirect-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-redirect-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -404,7 +408,7 @@ Content-Type: application/json
 
 ### <a name="example-3-forward-a-call-to-a-pstn-number"></a>Пример 3. Переадмить вызов на номер PSTN
 
-Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
+Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 > **Примечание.** Телефон ID — это номер телефона в формате E.164.
 
 #### <a name="notification---incoming"></a>Уведомление — входящий

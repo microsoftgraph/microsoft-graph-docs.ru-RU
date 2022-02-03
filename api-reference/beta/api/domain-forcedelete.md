@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5f44e63d47519bd61f6e57005c7354d39c8afc5f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d5e6d0a3e6334cee35790494e33f76e1dc2c2c43
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022427"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62346172"
 ---
 # <a name="domain-forcedelete"></a>домен: forceDelete
 
@@ -20,7 +20,7 @@ ms.locfileid: "61022427"
 
 Удаляет домен с помощью асинхронной операции.
 
-Перед [вызовом forceDelete](domain-forcedelete.md)необходимо обновить или удалить ссылки на Exchange **в** качестве службы обеспечения.
+Перед [вызовом forceDelete](domain-forcedelete.md) необходимо обновить или удалить ссылки на **Exchange в качестве** службы обеспечения.
 
 В рамках этой операции выполняются следующие действия:
 
@@ -34,7 +34,7 @@ ms.locfileid: "61022427"
 
 * Если одно из приложений, которое нужно переименовать, — это приложение с несколькими клиентами, возвращается ошибка.
 
-После завершения удаления домена операции API для удаленного домена возвращают код ответа http 404. Чтобы убедиться в удалении домена, можно выполнить [домен get.](domain-get.md) Если домен был успешно удален, в ответе будет возвращен код ответа http 404.
+После завершения удаления домена операции API для удаленного домена возвращают код ответа http 404. Чтобы проверить удаление домена, можно выполнить получить [домен](domain-get.md). Если домен был успешно удален, в ответе будет возвращен код ответа http 404.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,7 +45,7 @@ ms.locfileid: "61022427"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Domain.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Domain.ReadWrite.All |
+|Приложение | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -109,6 +109,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/domain-forcedelete-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/domain-forcedelete-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

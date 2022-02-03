@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fd3daac7d17b4b88c5f17d3d2a1dca676cfa602b
-ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
+ms.openlocfilehash: 8410770e99b7b2b5af1e292e0dc570dbcd2de424
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2021
-ms.locfileid: "61608985"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341344"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment: публикация
 
@@ -18,17 +18,17 @@ ms.locfileid: "61608985"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Изменение состояния [educationAssignment с](../resources/educationassignment.md) исходного `draft` состояния на `published` состояние. 
+Изменение состояния [educationAssignment с](../resources/educationassignment.md) исходного `draft` состояния на состояние `published` . 
 
-Вы можете изменить состояние на `draft` `scheduled` то, назначено ли назначение на будущую дату.  
+Вы можете изменить состояние на `draft` `scheduled` то, назначено  ли назначение на будущую дату. 
 
-Только учитель в классе может сделать этот вызов. Когда назначение **находится** в состоянии черновика, учащиеся не будут видеть **назначение,** равно как и объекты отправки. При вызове этого API [создаются объекты educationSubmission](../resources/educationsubmission.md) и назначение отображается в списке учащегося.
+Только учитель в классе может сделать этот вызов. Когда назначение **находится** в состоянии черновика, учащиеся не будут видеть **назначение, равно** как и объекты отправки. При вызове этого API [создаются объекты educationSubmission](../resources/educationsubmission.md) и назначение отображается в списке учащегося.
 
-Состояние назначения **возвращается** в случае сбоя при отступных во `draft` время публикации.
+Состояние назначения **возвращается** `draft` в случае сбоя при отступных во время публикации.
 
-Чтобы обновить свойства опубликованного **назначения,** см. [в публикации update an assignment.](../api/educationassignment-update.md)
+Чтобы обновить свойства опубликованного **назначения, см**. [в публикации update an assignment](../api/educationassignment-update.md).
 
-Чтобы обновить свойства опубликованного назначения, см. [в публикации обновление назначения.](../api/educationassignment-update.md)
+Чтобы обновить свойства опубликованного назначения, см. [в публикации update an assignment](../api/educationassignment-update.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -54,7 +54,7 @@ POST /education/classes/{id}/assignments/{id}/publish
 Не поставляем тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и `200 Ok` объект [educationAssignment](../resources/educationassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 Ok` отклика и объект [educationAssignment](../resources/educationassignment.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -90,6 +90,10 @@ POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationassignment-publish-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationassignment-publish-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

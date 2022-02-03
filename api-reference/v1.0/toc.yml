@@ -1336,9 +1336,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Запись вызова
                     href: api/callrecords-callrecord-get.md
-              - name: Сеанс
+              - name: Session
                 items:
-                  - name: Сеанс
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: Перечисление сеансов
                     href: api/callrecords-session-list.md
@@ -1591,7 +1591,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: Прервать
                     href: api/printjob-abort.md
-                  - name: Redirect
+                  - name: Перенаправление
                     href: api/printjob-redirect.md
               - name: Операция печати
                 href: resources/printoperation.md
@@ -4446,36 +4446,36 @@ items:
           - name: Параметры назначения
             href: resources/educationassignmentsettings.md
             items:
-              - name: Получить параметры назначения
+              - name: Получение
                 href: api/educationassignmentsettings-get.md
-              - name: Обновление параметров назначения
+              - name: Обновление
                 href: api/educationassignmentsettings-update.md
           - name: Назначение по умолчанию
             href: resources/educationassignmentdefaults.md
             items:
-              - name: Получить по умолчанию назначение
+              - name: Получение
                 href: api/educationassignmentdefaults-get.md
-              - name: Обновление по умолчанию назначения
+              - name: Обновление
                 href: api/educationassignmentdefaults-update.md
           - name: Категория
             href: resources/educationcategory.md
             items:
-              - name: Создание категории
+              - name: Создание
                 href: api/educationclass-post-category.md
-              - name: Получение категории
+              - name: Получение
                 href: api/educationcategory-get.md
-              - name: Удаление категории
+              - name: Удаление
                 href: api/educationcategory-delete.md
           - name: Рубрики
             href: resources/educationrubric.md
             items:
-              - name: Создание рубрики
+              - name: Создание
                 href: api/educationuser-post-rubrics.md
-              - name: Получить рубрику
+              - name: Получение
                 href: api/educationrubric-get.md
-              - name: Рубрику Обновление
+              - name: Обновление
                 href: api/educationrubric-update.md
-              - name: Удаление рубрики
+              - name: Delete
                 href: api/educationrubric-delete.md
           - name: Сданная работа
             href: resources/educationsubmission.md
@@ -6384,7 +6384,7 @@ items:
                     href: api/termstore-set-update.md
                   - name: Delete
                     href: api/termstore-set-delete.md
-              - name: Term
+              - name: Термин
                 href: resources/termstore-term.md
                 items:
                   - name: Список дочерних элементов
@@ -6679,7 +6679,7 @@ items:
                 href: api/chats-getallmessages.md
               - name: Получить контент с хост-контентом
                 href: api/chatmessagehostedcontent-get.md
-          - name: Приложение
+          - name: Приложение.
             items:
               - name: Приложение в каталоге
                 href: resources/teamsapp.md

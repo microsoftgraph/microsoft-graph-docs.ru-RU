@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6f398f27fa1239b7d59594bfb928e09e4595cde0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a0bbd42edc52be9dc9f9d5c48efa9eb977ddf1b8
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985041"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340099"
 ---
 # <a name="send-mail"></a>Отправка почты
 
@@ -20,7 +20,7 @@ ms.locfileid: "60985041"
 
 Отправляйте сообщение, указанное в тексте запроса, в формате JSON или MIME.
 
-При использовании формата JSON можно включить [](../resources/mention.md) [вложение](../resources/attachment.md) и использовать упоминание, чтобы вызвать другого пользователя в новом сообщении.
+При использовании формата JSON можно [включить вложение](../resources/attachment.md) и использовать упоминание[](../resources/mention.md), чтобы вызвать другого пользователя в новом сообщении.
 
 При использовании формата MIME:
 - Укажите соответствующие [заголовки сообщений Интернета](https://tools.ietf.org/html/rfc2076) и [содержимое MIME](https://tools.ietf.org/html/rfc2045), а также закодируйте их в формате **Base64** в тексте запроса.
@@ -60,8 +60,8 @@ POST /users/{id | userPrincipalName}/sendMail
 |Message|[Message](../resources/message.md)|Отправляемое сообщение. Обязательный.|
 |SaveToSentItems|Boolean|Указывает, нужно ли сохранять сообщение в папке "Отправленные". Указывайте этот параметр, если задано значение false (по умолчанию используется true).  Задавать не обязательно.|
 
-Чтобы использовать **упоминание,** чтобы вызвать другого пользователя в новом сообщении:
-- Включай в текст запроса обязательное свойство **toRecipients,** свойство **mentions** и любые полезные свойства сообщений.
+Чтобы использовать **упоминание** , чтобы вызвать другого пользователя в новом сообщении:
+- Включай в текст запроса обязательное свойство **toRecipients** , свойство **mentions** и любые полезные свойства сообщений.
 - Для каждого упоминания в **свойстве упоминаний** необходимо указать **упомянутое** свойство.
 
 При указании текста в формате MIME укажите содержимое MIME в тексте запроса как **строку в кодировке Base 64**. Не включай параметры.
@@ -132,6 +132,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/user-sendmail-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-sendmail-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Отклик
@@ -198,6 +202,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-sendmail-with-mentions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-sendmail-with-mentions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -274,6 +282,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/user-sendmail-with-headers-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-sendmail-with-headers-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Отклик
@@ -342,6 +354,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-sendmail-with-attachment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-sendmail-with-attachment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

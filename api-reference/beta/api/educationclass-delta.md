@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b060b46e30569f9ab95f4badbfbd11f01a3707f1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4b3ec0d221486e4198226d1013aed1eca62805ff
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020935"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348551"
 ---
 # <a name="educationclass-delta"></a>educationClass: delta
 
@@ -18,7 +18,7 @@ ms.locfileid: "61020935"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите новые или обновленные классы, в том числе изменения членства, без выполнения полного чтения всей коллекции классов. Подробные [сведения см. в запросе Use Delta.](/graph/delta-query-overview)
+Получите новые или обновленные классы, в том числе изменения членства, без выполнения полного чтения всей коллекции классов. [Подробные сведения см. в запросе Use Delta](/graph/delta-query-overview).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "61020935"
 | :------------------------------------- | :----------------------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic, EduRoster.Read или EduRoster.ReadWrite              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                           |
-| Для приложений                            | EduRoster.ReadBasic.All, EduRoster.Read.All или EduRoster.ReadWrite.All |
+| Приложение                            | EduRoster.ReadBasic.All, EduRoster.Read.All или EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ GET /education/classes/delta
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [коллекции educationClass](../resources/educationclass.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и объект [коллекции educationClass](../resources/educationclass.md) в тексте ответа.
 
 > [!IMPORTANT]
 > дельты educationClass не включают удаленные классы.
@@ -93,12 +93,16 @@ GET https://graph.microsoft.com/beta/education/classes/delta
 [!INCLUDE [sample-code](../includes/snippets/go/educationclass-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationclass-delta-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

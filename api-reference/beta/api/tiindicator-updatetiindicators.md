@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: e90fd3b95e302956a250f2acf08ff18daa0298ca
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9bddd0b86054550cd17b9add45af3b327fdfaec3
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60989442"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341915"
 ---
 # <a name="tiindicator-updatetiindicators"></a>tiIndicator: updateTiIndicators
 
@@ -28,7 +28,7 @@ ms.locfileid: "60989442"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatIndicators.ReadWrite.OwnedBy |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Приложение                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ POST /security/tiIndicators/updateTiIndicators
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. Сведения о свойствах, которые можно обновить, см. в обновленном [tiIndicator.](tiindicator-update.md) Необходимые поля для каждого tiIndicator: `id` , `expirationDateTime` , `targetProduct` .
+В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. Сведения о свойствах, которые можно обновить, см. в [материале update tiIndicator](tiindicator-update.md). Необходимые поля для каждого tiIndicator: `id`, , `expirationDateTime``targetProduct`.
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
@@ -54,7 +54,7 @@ POST /security/tiIndicators/updateTiIndicators
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [tiIndicator](../resources/tiindicator.md) в тексте отклика.  При ошибке этот метод возвращает `206 Partial Content` код ответа.  Дополнительные [сведения см. в](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) "Ошибках".
+В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию объектов [tiIndicator](../resources/tiindicator.md) в тексте отклика.  При ошибке этот метод возвращает код `206 Partial Content` ответа.  [Дополнительные сведения см. в](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) "Ошибках".
 
 ## <a name="examples"></a>Примеры
 
@@ -108,12 +108,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/tiindicator-updatetiindicators-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tiindicator-updatetiindicators-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > [!NOTE]
 > Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d45135e615c221fb5d9787508e8f8a08adea8cd1
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 5ae148f44e5234f2101b656eb3d4155d9de8512b
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524611"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343503"
 ---
 # <a name="bookingappointment-cancel"></a>bookingAppointment: отмена
 
@@ -18,7 +18,7 @@ ms.locfileid: "61524611"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отмените указанное [бронированиеAppointment](../resources/bookingappointment.md) в указанном [bookingbusiness](../resources/bookingbusiness.md)и отправьте сообщение участвующим клиентам и сотрудникам.
+Отмените указанное [бронированиеAppointment](../resources/bookingappointment.md) в указанном [bookingbusiness](../resources/bookingbusiness.md) и отправьте сообщение участвующим клиентам и сотрудникам.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,12 +45,12 @@ POST /bookingBusinesses/{id}/appointments/{id}/cancel
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|cancellationMessage|Строка|Сообщение об отмене встречи с клиентом.|
+|cancellationMessage|String|Сообщение об отмене встречи с клиентом.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No content`. В тексте отклика не возвращается никаких данных.
 
-Если вы попытается отменить встречу, которая не exisit, этот метод `HTTP 404 Not found` возвращается .
+Если вы попытается отменить встречу, которая не exisit, этот метод возвращается `HTTP 404 Not found`.
 
 ## <a name="example"></a>Пример
 Ниже приводится пример вызова этого API.
@@ -88,6 +88,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/bookingappointment-cancel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/bookingappointment-cancel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

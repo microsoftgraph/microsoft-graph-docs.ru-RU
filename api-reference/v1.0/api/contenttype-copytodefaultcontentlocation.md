@@ -5,18 +5,18 @@ description: Скопируйте файл в расположение конт�
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 59783f0068b1c1f01c194202fdc72d5bf01543ae
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 832263838b99a5ccb7474b17805a832cee32aab5
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60974193"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348985"
 ---
 # <a name="contenttype-copytodefaultcontentlocation"></a>contentType: copyToDefaultContentLocation
 Пространство имен: microsoft.graph
 
 
-Скопируйте файл в расположение контента по умолчанию в [типе контента.][contentType] Затем файл может быть добавлен в качестве файла или шаблона по умолчанию с помощью операции POST.
+Скопируйте файл в расположение контента по умолчанию в [типе контента][contentType]. Затем файл может быть добавлен в качестве файла или шаблона по умолчанию с помощью операции POST.
 
 ## <a name="permissions"></a>Разрешения  
 
@@ -28,7 +28,7 @@ ms.locfileid: "60974193"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Приложение | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -58,7 +58,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/copyToDefaultContentLocation
 |Параметр|Тип|Описание|
 |-|-|-|
 |sourceFile| [itemReference](../resources/itemreference.md) |Метаданные о исходных файлах, которые необходимо скопировать в расположение контента по умолчанию. Обязательный.|
-|destinationFileName| Строка |Имя файла назначения. |
+|destinationFileName| string |Имя файла назначения. |
 
 ## <a name="response"></a>Отклик
 
@@ -108,6 +108,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-copytodefaultcontentlocation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-copytodefaultcontentlocation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

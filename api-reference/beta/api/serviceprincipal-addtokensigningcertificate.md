@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0b835c493916f1f6216ba87625670538db96904b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0117ed77b6fbb76a9e2d986a1be36adea8bed802
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026325"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344005"
 ---
 # <a name="serviceprincipal-addtokensigningcertificate"></a>servicePrincipal: addTokenSigningCertificate
 
@@ -18,11 +18,11 @@ ms.locfileid: "61026325"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создает самозаверяемый сертификат подписи и возвращает объект [selfSignedCertificate,](../resources/selfsignedcertificate.md) который является публичной частью сгенерированного сертификата. Самозаверяется сертификат подписи состоит из следующих объектов, которые добавляются в [службуPrincipal:](../resources/serviceprincipal.md) 
+Создает самозаверяемый сертификат подписи и возвращает объект [selfSignedCertificate](../resources/selfsignedcertificate.md) , который является публичной частью сгенерированного сертификата. Самозаверяемый сертификат подписи состоит из следующих объектов, которые добавляются в [службуPrincipal](../resources/serviceprincipal.md): 
 + Объект [keyCredentials со](../resources/keycredential.md) следующими объектами:
-    + Частный объект ключа **с набором** использования `Sign` .
-    + Объект public key с **набором** использования `Verify` .
-+ Объект [passwordCredentials.](../resources/passwordcredential.md)
+    + Частный объект ключа **с набором** использования `Sign`.
+    + Объект public key с **набором** использования `Verify`.
++ Объект [passwordCredentials](../resources/passwordcredential.md) .
 
 Все объекты имеют одинаковое значение **customKeyIdentifier**.
 
@@ -51,12 +51,12 @@ POST /servicePrincipals/{id}/addTokenSigningCertificate
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| displayName | string | Удобное имя для ключа.  Она должна начинаться `CN=` с .|
+| displayName | string | Удобное имя для ключа.  Она должна начинаться с `CN=`.|
 | endDateTime | DateTimeOffset |Дата и время истечения срока действия учетных данных. Срок создания сертификата может быть не более 3 лет. Если она не предоставлена, по умолчанию — три года со времени создания. Тип timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа и `200 OK` новый [объект selfSignedCertificate](../resources/selfsignedcertificate.md) в тексте ответа.
+В случае успеха этот метод возвращает код `200 OK` ответа и новый [объект selfSignedCertificate](../resources/selfsignedcertificate.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -98,6 +98,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-addtokensigningcertificate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-addtokensigningcertificate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

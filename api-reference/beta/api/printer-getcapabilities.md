@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: b285607d5d20ad5aefbcbc03244ee1fa8ed49bf8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e82886850e577efe4cd30f1aaa1bac989aacea07
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129589"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62343973"
 ---
 # <a name="printer-getcapabilities"></a>принтер: getCapabilities
 
@@ -18,12 +18,12 @@ ms.locfileid: "62129589"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список возможностей для [принтера.](../resources/printer.md)
+Получите список возможностей для [принтера](../resources/printer.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Чтобы использовать службу универсальной печати, пользователь или клиент приложения должен иметь активную подписку универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице. Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Чтобы использовать службу универсальной печати, пользователь или клиент приложения должен иметь активную подписку универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице. Подписанный пользователь должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
@@ -44,7 +44,7 @@ GET /print/printers/{id}/getCapabilities
 ## <a name="request-body"></a>Текст запроса
 
 ## <a name="response"></a>Отклик
-В случае успешного использования этот метод возвращает код отклика и `200 OK` [объект printerCapabilities](../resources/printercapabilities.md) в тексте отклика.
+В случае успешного использования этот метод возвращает код `200 OK` отклика и [объект printerCapabilities](../resources/printercapabilities.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -79,11 +79,15 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/getCapabilities
 [!INCLUDE [sample-code](../includes/snippets/go/printer-getcapabilities-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/printer-getcapabilities-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

@@ -5,19 +5,19 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c1cfc61d8701f4ec904e7975369c6197312da64b
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: a1df0fdd33d02269f2595d40515ad17d7b48210c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225871"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348857"
 ---
 # <a name="chat-sendactivitynotification"></a>чат: sendActivityNotification
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отправьте уведомление о канале действий в области чата. Дополнительные сведения об отправке уведомлений и требованиях к этому см. в Teams [действия.](/graph/teams-send-activityfeednotifications)
+Отправьте уведомление о канале действий в области чата. Дополнительные сведения об отправке уведомлений и требованиях для этого см. в Teams [действий](/graph/teams-send-activityfeednotifications).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,9 +26,9 @@ ms.locfileid: "62225871"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|TeamsActivity.Send|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|TeamsActivity.Send.Chat*, TeamsActivity.Send|
+|Приложение|TeamsActivity.Send.Chat*, TeamsActivity.Send|
 
->**Примечание:** Разрешения, отмеченные * [использованием согласия, определенного для ресурсов.](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+>**Примечание:** Разрешения, помеченные *, [используют разрешение, определенное для ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ POST /chats/{chatId}/sendActivityNotification
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
@@ -55,12 +55,12 @@ POST /chats/{chatId}/sendActivityNotification
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает обсуждаемый ресурс.|
 |activityType|String|Тип действия. Это должно быть объявлено в [манифесте Teams приложения](/microsoftteams/platform/overview).|
-|chainId|Int64|Необязательно. Используется для переопределения предыдущего уведомления. Используйте то же `chainId` самое в последующих запросах для переопределения предыдущего уведомления.|
+|chainId|Int64|Необязательный параметр. Используется для переопределения предыдущего уведомления. Используйте то же самое `chainId` в последующих запросах для переопределения предыдущего уведомления.|
 |previewText|[itemBody](../resources/itembody.md)|Предварительный текст уведомления. Microsoft Teams только первые 150 символов.|
-|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения переменных шаблонов, определенных в записи ленты действий, соответствующие манифесту `activityType` [Teams приложения.](/microsoftteams/platform/overview)|
+|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения для переменных шаблонов, определенных в записи `activityType` ленты действий, соответствующие манифесту [Teams приложения](/microsoftteams/platform/overview).|
 |получатель;|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Получатель уведомления. См. [также aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) и [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). |
 
-При настройке значения свойства темы для следующих ресурсов `source` поддерживаются следующие  `entityURL` ресурсы:
+При настройке `source` значения свойства темы для следующих ресурсов  поддерживаются `entityURL`следующие ресурсы:
 
 - [chat](../resources/chat.md)
 - [chatMessage](../resources/chatmessage.md)
@@ -75,7 +75,7 @@ POST /chats/{chatId}/sendActivityNotification
 
 ### <a name="example-1-notify-a-user-about-a-task-created-in-a-chat"></a>Пример 1. Уведомление пользователя о задаче, созданной в чате
 
-В этом примере показано, как можно отправить уведомление о ленте действий для новой задачи, созданной в чате. Дополнительные сведения см. [в Teams уведомлений об активности.](/graph/teams-send-activityfeednotifications)
+В этом примере показано, как можно отправить уведомление о ленте действий для новой задачи, созданной в чате. Дополнительные сведения см. в [Teams уведомлений об активности](/graph/teams-send-activityfeednotifications).
 
 #### <a name="request"></a>Запрос
 
@@ -130,6 +130,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/chat-sendactivitynotification-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chat-sendactivitynotification-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -145,7 +149,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-notify-a-user-about-an-approval-needed-in-a-chat-message"></a>Пример 2. Уведомление пользователя об утверждении, необходимом в сообщении чата
 
-Как и в предыдущем примере, в этом примере `entityUrl` используется `topic` для . Однако в этом случае он связывается с сообщением в чате. В сообщении может быть карточка с кнопкой утверждения.
+Как и в предыдущем примере, в этом примере используется `entityUrl` для .`topic` Однако в этом случае он связывается с сообщением в чате. В сообщении может быть карточка с кнопкой утверждения.
 
 #### <a name="request"></a>Запрос
 
@@ -200,6 +204,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/chat-sendactivitynotification-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chat-sendactivitynotification-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -215,7 +223,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-notify-a-user-about-an-approval-needed-in-a-chat-message-using-user-principal-name"></a>Пример 3. Уведомление пользователя об утверждении, необходимом в сообщении чата с использованием основного имени пользователя
 
-Как и в предыдущем примере, в этом примере `entityUrl` используется `topic` для . Однако в этом случае он связывается с сообщением в чате. В сообщении может быть карточка с кнопкой утверждения.
+Как и в предыдущем примере, в этом примере используется `entityUrl` для .`topic` Однако в этом случае он связывается с сообщением в чате. В сообщении может быть карточка с кнопкой утверждения.
 
 #### <a name="request"></a>Запрос
 
@@ -263,7 +271,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-4-notify-a-user-about-an-event-in-relation-to-a-chat"></a>Пример 4. Уведомление пользователя о событии по отношению к чату
 
-Как показано в предыдущих примерах, вы можете связаться с различными аспектами чата. Однако, если вы хотите связаться с аспектом, который не является частью чата или не представлен Microsoft Graph, вы можете установить источник и передать в настраиваемом значении для `topic` `text` него. Кроме того, `webUrl` требуется при настройке `topic` источника для `text` .
+Как показано в предыдущих примерах, вы можете связаться с различными аспектами чата. Однако, если вы хотите связаться с аспектом, который не является частью чата или не представлен Microsoft Graph, `topic` `text` вы можете установить источник и передать в настраиваемом значении для него. Кроме того, `webUrl` требуется при настройке `topic` источника для `text`.
 
 #### <a name="request"></a>Запрос
 
@@ -319,6 +327,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/chat-sendactivitynotification-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chat-sendactivitynotification-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -334,7 +346,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-5-notify-the-chat-members-about-a-task-created-in-a-chat"></a>Пример 5. Уведомление участников чата о задаче, созданной в чате.
 
-В этом примере показано, как можно отправить уведомление о канале действий всем участникам чата. Этот пример похож на предыдущие примеры. Однако в этом случае это `recipient` [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). Обратите `chatId` внимание, что указанный в `recipient` должен соответствовать указанному `chatId` в URL-адресе запроса.
+В этом примере показано, как можно отправить уведомление о канале действий всем участникам чата. Этот пример похож на предыдущие примеры. Однако в этом случае `recipient` это [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). Обратите внимание, `chatId` что указанный в должен `recipient` соответствовать указанному `chatId` в URL-адресе запроса.
 
 #### <a name="request"></a>Запрос
 
@@ -389,6 +401,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chat-sendactivitynotification-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chat-sendactivitynotification-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

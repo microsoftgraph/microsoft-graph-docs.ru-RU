@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 644a99f1e2884cff60e1aba6bc56ae4dc4b32f7f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7608ad1c24f2aa44a0d1d4c7454fea8be4be38fe
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61021145"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341188"
 ---
 # <a name="channel-completemigration"></a>канал: completeMigration
 
@@ -18,13 +18,13 @@ ms.locfileid: "61021145"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Завершите процесс миграции сообщений, `migration mode` удалив [канал](../resources/channel.md) в команде. `Migration mode` это специальное состояние, которое предотвращает определенные операции, например отправку сообщений и добавление участников, во время процесса миграции данных.
+Завершите процесс миграции сообщений, удалив `migration mode` [канал](../resources/channel.md) в команде. `Migration mode` это специальное состояние, которое предотвращает определенные операции, например отправку сообщений и добавление участников, во время процесса миграции данных.
 
 После выполнения **запроса completeMigration** вы не можете импортировать дополнительные сообщения в команду. Вы можете добавить членов в команду после успешного ответа на запрос.
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется следующее разрешение. Дополнительные дополнительные новости *см. в см. в* ["Разрешениях".](/graph/permissions-reference)
+Для вызова этого API требуется следующее разрешение. Дополнительные новости см *. в "*[Разрешениях"](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешение  |
 |:--------------------|:---------------------------------------------------------|
@@ -89,6 +89,10 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/completemigration-channel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/completemigration-channel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

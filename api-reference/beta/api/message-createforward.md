@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f0d9288b621190a38d1bb7a31c6d1ae841134214
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ac83f7c75599e41b9a441f9d619a39bcf64c8ddc
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61021957"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341657"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -18,11 +18,11 @@ ms.locfileid: "61021957"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте черновик для перенаадки существующего [сообщения](../resources/message.md)в формате JSON или MIME.
+Создайте черновик для перенаадки существующего [сообщения](../resources/message.md) в формате JSON или MIME.
 
 При использовании формата JSON можно: 
-- Укажите комментарий или **свойство** тела `message` параметра. При указании обоих возвращается ошибка http 400 Bad Request.
-- Укажите `toRecipients` параметр или **свойство toRecipients** `message` параметра. Указание обоих или указаний не возвращает ошибку http 400 Bad Request.
+- Укажите комментарий или **свойство** тела параметра `message` . При указании обоих возвращается ошибка http 400 Bad Request.
+- Укажите параметр `toRecipients` или **свойство toRecipients** параметра `message` . Указание обоих или указаний не возвращает ошибку http 400 Bad Request.
 - [Обновите](../api/message-update.md) черновике позже, чтобы добавить **текст** или изменить другие свойства сообщения.
 
 При использовании формата MIME:
@@ -63,7 +63,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 |:---------------|:--------|:----------|
 |comment|String|Добавляемый комментарий. Может быть пустой строкой.|
 |toRecipients|Коллекция [recipient](../resources/recipient.md)|Список получателей.|
-|message|[message](../resources/message.md)|Любые свойства, которые можно записать для обновления в ответном сообщении.|
+|сообщение|[message](../resources/message.md)|Любые свойства, которые можно записать для обновления в ответном сообщении.|
 
 При указании текста в формате MIME укажите содержимое MIME с применимыми заголовками сообщений Интернета ("Кому", "Копия", "Скрытая копия", "Тема"), все закодированные сообщения в формате **Base64** в тексте запроса.
 
@@ -122,6 +122,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/message-createforward-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-createforward-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 31052264e4f63e630dea26227adb78685e04066b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b1d3b05a1fe2044070aa31959e3a564b97f3c34b
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030239"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342208"
 ---
 # <a name="tag-ashierarchy"></a>тег: asHierarchy
 
@@ -53,7 +53,7 @@ GET /compliance/ediscovery/cases/{caseId}/tags/asHierarchy
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код отклика и `200 OK` [коллекцию microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) в тексте ответа.
+В случае успешной `200 OK` работы эта функция возвращает код отклика и [коллекцию microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tag-ashierarchy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/tag-ashierarchy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

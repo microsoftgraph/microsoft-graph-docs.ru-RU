@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b4260d7c0d62f60ed9f5ef8efa44184cf58d3da9
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 40d44ef09b42eb05c245b75f8ae74fcaa7ad2e54
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61012787"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62345263"
 ---
 # <a name="user-translateexchangeids"></a>пользователь: translateExchangeIds
 
@@ -47,8 +47,8 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-| inputIds | Коллекция объектов string | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции должны иметь один и тот же тип идентификатора источника и должны быть для элементов в одном почтовом ящике. Максимальный размер этой коллекции — 1000 строк. |
-| sourceIdType | exchangeIdFormat | Идентификатор идентификаторов в `InputIds` параметре. |
+| inputIds | Коллекция String | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции должны иметь один и тот же тип идентификатора источника и должны быть для элементов в одном почтовом ящике. Максимальный размер этой коллекции — 1000 строк. |
+| sourceIdType | exchangeIdFormat | Идентификатор идентификаторов в параметре `InputIds` . |
 | targetIdType | exchangeIdFormat | Запрашиваемого типа ID для преобразования. |
 
 ### <a name="exchangeidformat-values"></a>Значения exchangeIdFormat
@@ -61,20 +61,20 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 | restId | Формат ID по умолчанию, используемый Корпорацией Майкрософт Graph. |
 | restImmutableEntryId | Неоменяемый формат ID, используемый Корпорацией Майкрософт Graph. |
 
-Двоичные форматы `entryId` `immutableEntryId` (и) — это кодируемые URL-адреса base64. Безопасность URL-адресов реализуется путем изменения кодирования двоичных данных base64 следующим образом:
+Двоичные форматы (`entryId` и `immutableEntryId`) — это кодируемые URL-адреса base64. Безопасность URL-адресов реализуется путем изменения кодирования двоичных данных base64 следующим образом:
 
 - Замените `+` на `-`
 - Замените `/` на `_`
-- Удалите любые символы обивки с прицепом ( `=` )
-- Добавьте в конец строки integer, указывающее количество символов обивки в оригинале `0` (, `1` `2` или)
+- Удалите любые символы обивки с прицепом (`=`)
+- Добавьте в конец строки integer, указывающее, сколько символов обивки было в оригинале (`0`или`1``2`)
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [коллекцию convertIdResult](../resources/convertidresult.md) в тексте ответа.
+В случае успешной работы этот `200 OK` метод возвращает код отклика и [коллекцию convertIdResult](../resources/convertidresult.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано, как преобразовать несколько идентификаторов из обычного формата API REST () в `restId` неоменяемый формат REST ( `restImmutableEntryId` ).
+В следующем примере показано, как преобразовать несколько идентификаторов из обычного формата API REST (`restId`) в неоменяемый формат REST (`restImmutableEntryId`).
 
 ### <a name="request"></a>Запрос
 
@@ -118,6 +118,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-translateexchangeids-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-translateexchangeids-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

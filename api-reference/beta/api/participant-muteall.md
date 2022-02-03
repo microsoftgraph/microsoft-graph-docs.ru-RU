@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a4d04bce478c0ab4eb94769a222cf7bee6b272ce
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4805c8aa107d2f056fad0b2c112caef58a629ddb
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019766"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341995"
 ---
 # <a name="participant-muteall"></a>участник: muteAll
 
@@ -30,7 +30,7 @@ ms.locfileid: "61019766"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | Никаких других изменений не происходит                                        |
+| Приложение                            | Нет                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,11 +51,11 @@ POST /communications/calls/{id}/participants/muteAll
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|participants|Коллекция объектов string|Участники, которые будут отключены.|
-|clientContext|Строка|Клиентский контекст.|
+|participants|Коллекция строк|Участники, которые будут отключены.|
+|clientContext|String|Клиентский контекст.|
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект commsOperation](../resources/commsoperation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект commsOperation](../resources/commsoperation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -98,6 +98,10 @@ Content-Length: 81
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/participant-muteall-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-muteall-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

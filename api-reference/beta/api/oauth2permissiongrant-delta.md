@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psignoret
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dcf198c00e6bcfaf74c5ce1cbb334a11767cd818
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: fe26e1c95a1b2b3aa5243572ae35ddea27be657c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032360"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342640"
 ---
 # <a name="oauth2permissiongrant-delta"></a>oauth2permissiongrant: дельта
 
@@ -18,7 +18,7 @@ ms.locfileid: "61032360"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить вновь созданные, обновленные или удаленные **объекты oauth2permissiongrant** без полного чтения всей коллекции ресурсов. Подробные сведения см. в [материале Использование запроса delta.](/graph/delta-query-overview)
+Получить вновь созданные, обновленные или удаленные **объекты oauth2permissiongrant** без полного чтения всей коллекции ресурсов. Подробные сведения см. в [материале Использование delta-запроса](/graph/delta-query-overview).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,7 +33,7 @@ ms.locfileid: "61032360"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Чтобы начать отслеживать изменения, необходимо сделать запрос, включив функцию дельты на **ресурсе oauth2permissiongrant.**
+Чтобы начать отслеживать изменения, необходимо сделать запрос, включив функцию дельты на **ресурсе oauth2permissiongrant** .
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -42,12 +42,12 @@ GET /oauth2PermissionGrants/delta
 
 ## <a name="query-parameters"></a>Параметры запроса
 
-Отслеживание изменений вызывает один или несколько вызовов функции **дельты.** Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в начальном запросе **delta**. Microsoft Graph автоматически кодирует указанные параметры в маркере, входящем в состав URL-адреса `nextLink` или `deltaLink`, включенного в отклик. Необходимо указать параметры запроса только один раз. В последующих запросах скопируйте и примените `nextLink` `deltaLink` URL-адрес из предыдущего ответа. Этот URL-адрес уже содержит закодированные параметры.
+Отслеживание изменений вызывает один или несколько вызовов функции **дельты** . Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в начальном запросе **delta**. Microsoft Graph автоматически кодирует указанные параметры в маркере, входящем в состав URL-адреса `nextLink` или `deltaLink`, включенного в отклик. Необходимо указать параметры запроса только один раз. В последующих запросах скопируйте и примените `nextLink` URL-адрес `deltaLink` из предыдущего ответа. Этот URL-адрес уже содержит закодированные параметры.
 
 | Параметр запроса      | Тип   |Описание|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес предыдущей функции дельты, вызываем для того же собрания ресурсов, что указывает на завершение этого раунда отслеживания `deltaLink` изменений.  Сохраните и примените весь URL-адрес, включая этот маркер, в первом запросе следующего раунда отслеживания `deltaLink` изменений для этой коллекции.|
-| $skiptoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес предыдущего вызова функции дельты, указывает на то, что в том же собрании ресурсов необходимо отслеживать дальнейшие `nextLink` изменения.  |
+| $deltatoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в `deltaLink` URL-адрес предыдущей  функции дельты, вызываем для того же собрания ресурсов, что указывает на завершение этого раунда отслеживания изменений. Сохраните и примените весь `deltaLink` URL-адрес, включая этот маркер, в первом запросе следующего раунда отслеживания изменений для этой коллекции.|
+| $skiptoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес `nextLink` предыдущего  вызова функции дельты, указывает на то, что в том же собрании ресурсов необходимо отслеживать дальнейшие изменения. |
 
 ### <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -55,25 +55,25 @@ GET /oauth2PermissionGrants/delta
 
 - Вы можете использовать параметр запроса `$select` так же, как в любом другом запросе GET, чтобы задать только те свойства, которые необходимы для эффективной работы. Свойство **id** возвращается всегда.
 - Имеется ограниченная поддержка параметра `$filter`:
-  * Единственным `$filter` поддерживаемым выражением является отслеживание изменений для определенных ресурсов по их ID:  `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}` . Количество url-адресов, которые можно указать, ограничено максимальной длиной URL-адреса.
+  * Единственным поддерживаемым `$filter` выражением является отслеживание изменений для определенных ресурсов по их ID:  `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}`. Количество url-адресов, которые можно указать, ограничено максимальной длиной URL-адреса.
 
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носитель &lt;токен&gt;. Обязательный.|
+| Авторизация  | Носитель &lt;токен&gt;. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект коллекции oauth2permissiongrant](../resources/oauth2permissiongrant.md) в тексте ответа. Отклик также содержит URL-адрес `nextLink` или `deltaLink`.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект коллекции oauth2permissiongrant](../resources/oauth2permissiongrant.md) в тексте ответа. Отклик также содержит URL-адрес `nextLink` или `deltaLink`.
 
-- Если возвращается URL-адрес `nextLink`, это означает, что во время сеанса получены не все страницы данных. **Oauth2permissiongrant** продолжает делать запросы с помощью URL-адреса до тех пор, пока URL-адрес не будет включен `nextLink` `deltaLink` в ответ.
-- Если возвращается URL-адрес `deltaLink`, это означает, что больше нет данных о текущем состоянии ресурса. Сохраните и используйте `deltaLink` URL-адрес, чтобы узнать об изменениях в ресурсе в будущем.
+- Если возвращается URL-адрес `nextLink`, это означает, что во время сеанса получены не все страницы данных. **Oauth2permissiongrant** `nextLink` продолжает делать запросы с помощью URL-адреса `deltaLink` до тех пор, пока URL-адрес не будет включен в ответ.
+- Если возвращается URL-адрес `deltaLink`, это означает, что больше нет данных о текущем состоянии ресурса. Сохраните и используйте URL-адрес `deltaLink` , чтобы узнать об изменениях в ресурсе в будущем.
 
-Подробные сведения см. в [материале Использование запроса delta.](/graph/delta-query-overview) Например, запросы см. [в рублях Получить дополнительные изменения для пользователей.](/graph/delta-query-users)
+Подробные сведения см. в [материале Использование delta-запроса](/graph/delta-query-overview). Например, запросы см. [в рублях Получить дополнительные изменения для пользователей](/graph/delta-query-users).
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -104,6 +104,10 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants/delta
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/oauth2permissiongrant-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/oauth2permissiongrant-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3cf34fcf3c3fb613a2fd1337f6e272bf71d920bc
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 5ad24b3ed6b98b2338c2605ed47021b7bd27ea6f
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226577"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339503"
 ---
 # <a name="get-member-objects"></a>Вывод объектов членства
 
 Пространство имен: microsoft.graph
 
-Возвращаем все группы, административные единицы и роли каталога, в которые [](../resources/device.md)входит [](../resources/directoryobject.md) [пользователь,](../resources/user.md) [группа,](../resources/group.md)руководитель службы, [](../resources/serviceprincipal.md)организационный [контакт,](../resources/orgcontact.md)устройство или объект каталога. Это транзитивная функция.
+Возвращаем все группы, административные единицы и роли каталога, в которые входит [пользователь, группа](../resources/user.md)[, руководитель](../resources/group.md)[](../resources/directoryobject.md) службы[, организационный](../resources/serviceprincipal.md) [контакт, устройство](../resources/orgcontact.md) или объект каталога. [](../resources/device.md) Это транзитивная функция.
 
 **Примечание:** Только пользователи и группы с поддержкой ролей могут быть членами ролей каталога.
 
@@ -69,7 +69,7 @@ ms.locfileid: "61226577"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Приложение                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -114,7 +114,7 @@ POST /devices/{id}/getMemberObjects
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type   | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -122,7 +122,7 @@ POST /devices/{id}/getMemberObjects
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Логическое| `true` чтобы указать, что должны возвращаться только группы безопасности, в которые входит объект; чтобы указать, что все группы, административные единицы и роли каталога, в которые входит сущность, должны `false` быть возвращены. |
+|securityEnabledOnly|Логическое| `true` чтобы указать, что должны возвращаться только группы безопасности, в которые входит объект; `false` чтобы указать, что все группы, административные единицы и роли каталога, в которые входит сущность, должны быть возвращены. |
 
 ## <a name="response"></a>Отклик
 
@@ -163,6 +163,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getmemberobjects-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-getmemberobjects-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

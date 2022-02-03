@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: f7dfc09c1cd67d9f5f62ffdf506424cd4b6cb4cb
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 8935ff163e82f154420ca9acae247c164ea7554c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62226045"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340265"
 ---
 # <a name="sourcecollection-estimatestatistics"></a>sourceCollection: estimateStatistics
 
@@ -18,7 +18,7 @@ ms.locfileid: "62226045"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Запустите оценку количества электронных писем и документов в коллекции исходных данных. Дополнительные сведения о исходных коллекциях (также известных как поиски в eDiscovery) см. в примере Сбор данных по делу [в Advanced eDiscovery.](/microsoft-365/compliance/collecting-data-for-ediscovery)
+Запустите оценку количества электронных писем и документов в коллекции исходных данных. Дополнительные сведения о исходных коллекциях (также известных как поиски в eDiscovery) см. в примере Сбор данных для [случая в Advanced eDiscovery](/microsoft-365/compliance/collecting-data-for-ediscovery).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -53,7 +53,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 ## <a name="response"></a>Отклик
 
-Если оценка успешно запущена, это действие возвращает код `202 Accepted` ответа. В ответе также будет содержаться `Location` заглавный загот, содержащий расположение оценкиStatisticsOperation, созданной для обработки оценки. [](../resources/ediscovery-estimatestatisticsoperation.md) Проверьте состояние операции оценки, сделав запрос GET в расположение, после успешного завершения состояние [изменится](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) на `succeeded` .
+Если оценка успешно запущена, это действие возвращает код `202 Accepted` ответа. В ответе также будет содержаться `Location` заглавный загот, содержащий расположение [оценкиStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md) , созданной для обработки оценки. Проверьте состояние операции оценки, сделав запрос GET в расположение, после успешного завершения [состояние изменится на](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) `succeeded`.
 
 ## <a name="examples"></a>Примеры
 
@@ -88,6 +88,10 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sourc
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/sourcecollection-estimatestatistics-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/sourcecollection-estimatestatistics-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

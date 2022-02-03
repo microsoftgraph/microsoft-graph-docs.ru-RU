@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: psignoret
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6ecd5123721371a3f33c18c03e3f2d7ea0ee26ee
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6a3a504ee524e637a9f8a131aa090729b2f60bd6
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023308"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344187"
 ---
 # <a name="oauth2permissiongrant-delta"></a>oauth2permissiongrant: дельта
 
 Пространство имен: microsoft.graph
 
-Получить вновь созданные, обновленные или удаленные [объекты oauth2permissiongrant](../resources/oauth2permissiongrant.md) без полного чтения всей коллекции ресурсов. Подробные сведения см. в [материале Использование запроса delta.](/graph/delta-query-overview)
+Получить вновь созданные, обновленные или удаленные [объекты oauth2permissiongrant](../resources/oauth2permissiongrant.md) без полного чтения всей коллекции ресурсов. Подробные сведения см. в [материале Использование delta-запроса](/graph/delta-query-overview).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -39,19 +39,19 @@ GET /oauth2PermissionGrants/delta
 
 ## <a name="query-parameters"></a>Параметры запроса
 
-Отслеживание изменений вызывает один или несколько вызовов функции **дельты.** Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в начальном запросе **delta**. Microsoft Graph автоматически кодирует указанные параметры в маркере, входящем в состав URL-адреса `nextLink` или `deltaLink`, включенного в отклик. Необходимо указать параметры запроса только один раз. В последующих запросах скопируйте и примените `nextLink` `deltaLink` URL-адрес из предыдущего ответа. URL-адрес содержит закодированные параметры.
+Отслеживание изменений вызывает один или несколько вызовов функции **дельты** . Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в начальном запросе **delta**. Microsoft Graph автоматически кодирует указанные параметры в маркере, входящем в состав URL-адреса `nextLink` или `deltaLink`, включенного в отклик. Необходимо указать параметры запроса только один раз. В последующих запросах скопируйте и примените `nextLink` URL-адрес `deltaLink` из предыдущего ответа. URL-адрес содержит закодированные параметры.
 
 | Параметр запроса      | Тип   |Описание|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес предыдущей функции дельты, вызываем для того же собрания ресурсов, что указывает на завершение этого раунда отслеживания `deltaLink` изменений.  Сохраните и примените весь URL-адрес, включая этот маркер, в первом запросе следующего раунда отслеживания `deltaLink` изменений для этой коллекции.|
-| $skiptoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес предыдущего вызова функции дельты, указывает на то, что в том же собрании ресурсов необходимо отслеживать дальнейшие `nextLink` изменения.  |
+| $deltatoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в `deltaLink` URL-адрес предыдущей  функции дельты, вызываем для того же собрания ресурсов, что указывает на завершение этого раунда отслеживания изменений. Сохраните и примените весь `deltaLink` URL-адрес, включая этот маркер, в первом запросе следующего раунда отслеживания изменений для этой коллекции.|
+| $skiptoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес `nextLink` предыдущего  вызова функции дельты, указывает на то, что в том же собрании ресурсов необходимо отслеживать дальнейшие изменения. |
 
 ### <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает параметры запросов OData для настройки ответа.
 
-- Параметр запроса можно указать только свойства, необходимые `$select` для лучшей производительности. Свойство **id** возвращается всегда.
-- Параметр запроса можно использовать только для отслеживания изменений на определенных `$filter` ресурсах с помощью ИД ресурса. Например, `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}`.
+- Параметр запроса можно `$select` указать только свойства, необходимые для лучшей производительности. Свойство **id** возвращается всегда.
+- Параметр `$filter` запроса можно использовать только для отслеживания изменений на определенных ресурсах с помощью ИД ресурса. Например, `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}`.
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -64,12 +64,12 @@ GET /oauth2PermissionGrants/delta
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект коллекции oauth2permissiongrant](../resources/oauth2permissiongrant.md) в тексте ответа. Отклик также содержит URL-адрес `nextLink` или `deltaLink`.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект коллекции oauth2permissiongrant](../resources/oauth2permissiongrant.md) в тексте ответа. Отклик также содержит URL-адрес `nextLink` или `deltaLink`.
 
-- Если URL-адрес возвращается, в сеансе могут быть извлечены `nextLink` дополнительные страницы данных. **Oauth2permissiongrant** продолжает делать запросы с помощью URL-адреса до тех пор, пока URL-адрес не будет включен `nextLink` `deltaLink` в ответ.
-- Если `deltaLink` URL-адрес возвращается, больше не возвращаются данные о ресурсе. Сохраните и используйте `deltaLink` URL-адрес, чтобы узнать об изменениях в ресурсе в будущем.
+- Если URL-адрес `nextLink` возвращается, в сеансе могут быть извлечены дополнительные страницы данных. **Oauth2permissiongrant** `nextLink` продолжает делать запросы с помощью URL-адреса `deltaLink` до тех пор, пока URL-адрес не будет включен в ответ.
+- Если URL-адрес `deltaLink` возвращается, больше не возвращаются данные о ресурсе. Сохраните и используйте URL-адрес `deltaLink` , чтобы узнать об изменениях в ресурсе в будущем.
 
-Подробные сведения см. в [материале Использование запроса delta.](/graph/delta-query-overview) Например, запросы см. [в рублях Получить дополнительные изменения для пользователей.](/graph/delta-query-users)
+Подробные сведения см. в [материале Использование delta-запроса](/graph/delta-query-overview). Например, запросы см. [в рублях Получить дополнительные изменения для пользователей](/graph/delta-query-users).
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -100,6 +100,10 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/delta
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/oauth2permissiongrant-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/oauth2permissiongrant-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

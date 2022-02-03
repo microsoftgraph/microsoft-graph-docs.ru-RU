@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 182cc58962df523549a347b76d65f6aa4e215ea2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 432961612318a5db4f0b15a5d238dc19a0447bd9
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003772"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339000"
 ---
 # <a name="participant-invite"></a>участник: приглашение
 
@@ -18,7 +18,7 @@ ms.locfileid: "61003772"
 
 Приглашение участников в активный вызов.
 
-Дополнительные сведения о том, как обрабатывать операции, см. [в commsoperation.](../resources/commsoperation.md)
+Дополнительные сведения о том, как обрабатывать операции, см. в [commsoperation](../resources/commsoperation.md).
 
 >**Примечание:** Этот API поддерживается только для групповых вызовов.
 
@@ -29,7 +29,7 @@ ms.locfileid: "61003772"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Для приложений     | Calls.InitiateGroupCalls.All                               |
+| Приложение     | Calls.InitiateGroupCalls.All                               |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,12 +49,12 @@ POST /communications/calls/{id}/participants/invite
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participants|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Участники, которые будут приглашены.|
-|clientContext|Строка|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
+|clientContext|String|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
 
 ## <a name="response"></a>Отклик
-Если этот метод безудержен, этот метод возвращает код отклика и заглавную ссылку расположения с URI в `200 OK` [inviteParticipantsOperation,](../resources/inviteparticipantsoperation.md) созданный для этого запроса. 
+Если этот метод безудержен, `200 OK` этот метод возвращает код отклика и заглавную ссылку расположения с URI в [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) , созданный для этого запроса. 
 
-Тело ответа содержит созданный [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md).
+В теле ответа содержится [созданная inviteParticipantsOperation](../resources/inviteparticipantsoperation.md).
 
 >**Примечание:** Когда этот API возвращает успешный ответ, все участники получат обновление реестра.
 
@@ -113,6 +113,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/participant-invite-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-invite-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -256,7 +260,7 @@ Content-Type: application/json
 
 ### <a name="example-2-invite-multiple-participants-to-an-existing-group-call"></a>Пример 2. Приглашение нескольких участников на существующий групповой вызов
 
-> **Примечание.** Существующий групповой вызов должен иметь [допустимый chatInfo](../resources/chatInfo.md). Приглашение до 5 участников поддерживается.
+> **Примечание**. Существующий групповой вызов должен иметь допустимый [чатInfo](../resources/chatInfo.md). Приглашение до 5 участников поддерживается.
 
 ##### <a name="request"></a>Запрос
 
@@ -319,6 +323,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/participant-invite-multiple-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-invite-multiple-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -518,7 +526,7 @@ API приглашения поддерживает только одного у
 
 
 > **Примечание:** API приглашения поддерживает только одного участника при `replacesCallId` условии. 
-> Дополнительные сведения об использовании для замены существующего однорангового вызова см. в `replacesCallId` [материале invitationParticipantInfo.](../resources/invitationparticipantinfo.md)
+> Дополнительные сведения об использовании для `replacesCallId` замены существующего однорангового вызова см. в [материале invitationParticipantInfo](../resources/invitationparticipantinfo.md).
 
 ##### <a name="request"></a>Запрос
 
@@ -568,6 +576,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/participant-invite-existing-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-invite-existing-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -714,7 +726,7 @@ Content-Type: application/json
 
 ### <a name="example-4-invite-one-pstn-participant-to-an-existing-group-call"></a>Пример 4. Приглашение одного участника PSTN на существующий групповой вызов
 
-Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
+Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 > **Примечание.** Телефон ID — это номер телефона в формате E.164.
 
 #### <a name="request"></a>Запрос
@@ -756,6 +768,10 @@ Content-Length: 464
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/participant-invite-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-invite-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -900,7 +916,7 @@ Content-Type: application/json
 
 ```
 
->**Примечание:** Со статусом можно ожидать получения уведомлений о прекращении и удалении исходного одноранговых `completed` вызовов.
+>**Примечание:** Со статусом `completed` можно ожидать получения уведомлений о прекращении и удалении исходного одноранговых вызовов.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

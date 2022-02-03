@@ -460,7 +460,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Заметки
+          - name: Примечания
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -10597,16 +10597,16 @@ items:
           - name: Параметры назначения
             href: resources/educationassignmentsettings.md
             items:
-              - name: Получить параметры назначения
+              - name: Получение
                 href: api/educationassignmentsettings-get.md
-              - name: Обновление параметров назначения
+              - name: Обновление
                 href: api/educationassignmentsettings-update.md
           - name: Назначение по умолчанию
             href: resources/educationassignmentdefaults.md
             items:
-              - name: Получить по умолчанию назначение
+              - name: Получение
                 href: api/educationassignmentdefaults-get.md
-              - name: Обновление по умолчанию назначения
+              - name: Обновление
                 href: api/educationassignmentdefaults-update.md
           - name: Категория
             href: resources/educationcategory.md
@@ -10622,13 +10622,13 @@ items:
           - name: Рубрики
             href: resources/educationrubric.md
             items:
-              - name: Создание рубрики
+              - name: Создание
                 href: api/educationuser-post-rubrics.md
-              - name: Получить рубрику
+              - name: Получение
                 href: api/educationrubric-get.md
-              - name: Рубрику Обновление
+              - name: Обновление
                 href: api/educationrubric-update.md
-              - name: Удаление рубрики
+              - name: Delete
                 href: api/educationrubric-delete.md
           - name: Сданная работа
             href: resources/educationsubmission.md
@@ -10695,12 +10695,12 @@ items:
           - name: Состояние профиля синхронизации
             href: resources/educationsynchronizationprofilestatus.md
             items:
-              - name: Получение состояния синхронизации
+              - name: Получение
                 href: api/educationsynchronizationprofilestatus-get.md
           - name: Ошибки синхронизации
             href: resources/educationsynchronizationerror.md
             items:
-              - name: Получение ошибок синхронизации
+              - name: Получение
                 href: api/educationsynchronizationerrors-get.md
       - name: Расширения
         items:
@@ -12646,7 +12646,7 @@ items:
                         href: api/entitlementmanagementsettings-update.md
               - name: Служба Privileged Identity Management
                 items:
-                  - name: Управление привилегированными пользователями
+                  - name: Служба Privileged Identity Management
                     href: resources/privilegedidentitymanagement-root.md
                   - name: Azure AD (неподготовленная))
                     items:
@@ -13221,7 +13221,7 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: Заметки
+              - name: Примечания
                 items:
                   - name: Аннотация для человека
                     href: resources/personannotation.md

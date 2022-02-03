@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3faf81557d66b5fe66f5cfcfda16f4ef578d1df6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 04b17b5ae906d3a5465505f6c8be530f89559acc
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983107"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62340735"
 ---
 # <a name="apply-accessreview"></a>Применение accessReview
 
@@ -18,7 +18,9 @@ ms.locfileid: "60983107"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) применяются решения завершенного [accessReview.](../resources/accessreview.md)  Целевой объект может быть либо одноразовой проверкой доступа, либо экземпляром повторного обзора доступа.  
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) применяются решения завершенного [accessReview](../resources/accessreview.md).  Целевой объект может быть либо одноразовой проверкой доступа, либо экземпляром повторного обзора доступа.  
 
 
 После завершения проверки доступа, либо из-за того, что он достиг конечной даты, либо администратор остановил его вручную, а автоматическое применение не было настроено для проверки, можно вызвать Apply, чтобы применить изменения. Пока не применяется, решения об устранении прав доступа не отображаются на исходный ресурс, например, пользователи сохраняют свои групповые членства. При вызове применяются результаты проверки, обновляя группу или приложение. Если в обзоре пользователю было отказано в доступе, при вызове администратором этого API Azure AD удаляет назначение членства или приложения. 
@@ -35,7 +37,7 @@ ms.locfileid: "60983107"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | AccessReview.ReadWrite.Membership |
+|Приложение                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -83,6 +85,10 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/apply-accessreview-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/apply-accessreview-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

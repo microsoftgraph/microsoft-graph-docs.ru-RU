@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.localizationpriority: medium
-ms.openlocfilehash: f38d55c11ef65621d83c14407b025207190a9468
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 42a56bb483cdc70a9cfef80428e9649c3d73c2e8
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225822"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342206"
 ---
 # <a name="chat-unhideforuser"></a>чат: unhideForUser
 Пространство имен: microsoft.graph
@@ -41,7 +41,7 @@ POST /chats/{chatsId}/unhideForUser
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +51,7 @@ POST /chats/{chatsId}/unhideForUser
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|пользователь|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|Пользователь, чтобы отоиметь чат. **В делегированном режиме пользователи могут отмыть** чат только для себя.|
+|пользователь|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|Пользователь, чтобы отоиметь чат. **В делегированном режиме пользователи могут отмыть чат только для себя**.|
 |tenantId|String|ID клиента пользователя.|
 
 ## <a name="response"></a>Ответ
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chat-unhideforuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chat-unhideforuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

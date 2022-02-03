@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: e7241a8a44d96397c8f31fce2c1496ae71668e3e
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 7d774e49173354d10f80cdaae74157c88e9f1a14
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225112"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62341316"
 ---
 # <a name="cloudpc-reprovision"></a>cloudPC: reprovision
 
@@ -28,7 +28,7 @@ ms.locfileid: "62225112"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|CloudPC.ReadWrite.All|
+|Приложение|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{id}/reprovision
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса поставляем представление JSON параметров.
 
@@ -56,8 +56,8 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{id}/reprovision
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|Версия операционной системы (ОС) для обеспечения на облачных ПК. Возможные значения: `windows10` , `windows11` и `unknownFutureValue` .|
-|userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|Тип учетной записи пользователя на предварительных облачных компьютерах. Возможные значения: `standardUser` , `administrator` и `unknownFutureValue` .|
+|osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|Версия операционной системы (ОС) для обеспечения на облачных ПК. Возможные значения: `windows10`, и `windows11``unknownFutureValue`.|
+|userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|Тип учетной записи пользователя на предварительных облачных компьютерах. Возможные значения: `standardUser`, и `administrator``unknownFutureValue`.|
 
 ## <a name="response"></a>Отклик
 
@@ -103,6 +103,10 @@ Content-length: 61
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cloudpc-reprovision-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpc-reprovision-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

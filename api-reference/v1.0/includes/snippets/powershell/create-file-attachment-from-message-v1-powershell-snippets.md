@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 8ac199c2ff7f636f33637d568ed30572784363ef
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e77f3db11d06214bfbe723ccb9d67151737fe3f5
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097735"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62351850"
 ---
 ```powershell
 
@@ -17,6 +17,7 @@ $params = @{
     ContentBytes = "R0lGODdhEAYEAA7"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserMessageAttachment -UserId $userId -MessageId $messageId -BodyParameter $params
 
 ```

@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.localizationpriority: medium
-ms.openlocfilehash: f9e82324ab33fafbead3e3590869c9e8a7bf43a1
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 62dc95efbf2df79497125e37c47cd84d36321475
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224268"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62339250"
 ---
 # <a name="chat-hideforuser"></a>чат: hideForUser
 Пространство имен: microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "61224268"
 
 Скрыть [чат](../resources/chat.md) для пользователя.
 
-> **Примечание:** Для пользователя автоматически отключают чат, если на  уровне чата принимаются такие действия, как отправка сообщения.
+> **Примечание:** Для пользователя автоматически отключают чат, если на уровне чата принимаются такие действия, как отправка сообщения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,7 +43,7 @@ POST /chats/{chatsId}/hideForUser
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /chats/{chatsId}/hideForUser
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|пользователь|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|Пользователь, чтобы скрыть чат для. **В делегированном режиме пользователи могут скрыть чат только для себя.**|
+|пользователь|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|Пользователь, чтобы скрыть чат для. **В делегированном режиме пользователи могут скрыть чат только для себя**.|
 |tenantId|String|ID клиента пользователя.|
 
 ## <a name="response"></a>Ответ
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chat-hideforuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/chat-hideforuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

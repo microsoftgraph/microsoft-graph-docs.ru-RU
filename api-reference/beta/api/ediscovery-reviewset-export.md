@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 577f219e004b790ab144715dbcccaf5c29e94492
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f4e431bf23f73d482d9fd9fa2eae929f125a3dc4
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60998654"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62347708"
 ---
 # <a name="reviewset-export"></a>reviewSet: экспорт
 
@@ -18,7 +18,7 @@ ms.locfileid: "60998654"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Инициировать экспорт из **reviewSet**.  Подробные сведения см. [в материале Экспорт документов из](/microsoft-365/compliance/export-documents-from-review-set)набора обзоров в Advanced eDiscovery.
+Инициировать экспорт из **reviewSet**.  Подробные сведения см. [в материале Экспорт документов из набора обзоров в Advanced eDiscovery](/microsoft-365/compliance/export-documents-from-review-set).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -56,16 +56,16 @@ POST /compliance/ediscovery/cases/{caseId}/reviewsets/{reviewsetId}/export
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|outputName|Строка| Имя экспорта. Обязательный. |
-|description|Строка| Описание экспорта |
-|azureBlobContainer|Строка| При экспорте в собственную учетную запись хранения Azure это URL-адрес контейнера. |
+|outputName|String| Имя экспорта. Обязательный. |
+|description|String| Описание экспорта |
+|azureBlobContainer|String| При экспорте в собственную учетную запись хранения Azure это URL-адрес контейнера. |
 |azureBlobToken|String| При экспорте на собственную учетную запись хранения Azure маркер SAS для URL-адреса контейнера. |
 |ExportOptions| [microsoft.graph.ediscovery.exportOptions](../resources/ediscovery-caseexportoperation.md#exportoptions-values) |Указывает параметры, которые контролируют формат экспорта. Возможные значения: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
 |exportStructure|[microsoft.graph.ediscovery.exportFileStructure](../resources/ediscovery-caseexportoperation.md#exportfilestructure-values)| Параметры, которые контролируют структуру файлов и упаковку экспорта. Возможные значения: `none`, `directory`, `pst`.|
 
 ## <a name="response"></a>Отклик
 
-Если экспорт успешно запущен, это действие возвращает код `202 Accepted` ответа. В ответе также будет содержаться `Location` заглавный загот, содержащий расположение [caseExportOperation,](../resources/ediscovery-caseexportoperation.md) созданного для обработки экспорта. Проверьте состояние экспортной операции, сделав запрос GET в расположение, после успешного завершения состояние [изменится](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) на `succeeded` .
+Если экспорт успешно запущен, это действие возвращает код `202 Accepted` ответа. В ответе также будет содержаться `Location` заглавный загот, содержащий расположение [caseExportOperation](../resources/ediscovery-caseexportoperation.md) , созданного для обработки экспорта. Проверьте состояние экспортной операции, сделав запрос GET в расположение, после успешного завершения [состояние изменится на](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) `succeeded`.
 
 ## <a name="examples"></a>Примеры
 
@@ -108,6 +108,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reviewset-export-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reviewset-export-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

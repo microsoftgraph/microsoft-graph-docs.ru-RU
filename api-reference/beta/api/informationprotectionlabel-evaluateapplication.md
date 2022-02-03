@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: a2f2a0fbe7576523584ea56f04a0e608c5d68075
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 869933f62e4378a48454322d8b88b9e3f5cac14c
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023833"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62342155"
 ---
 # <a name="informationprotectionlabel-evaluateapplication"></a>informationProtectionLabel: evaluateApplication
 
@@ -20,7 +20,7 @@ ms.locfileid: "61023833"
 
 Вычислить [метку защиты](../resources/informationprotectionlabel.md) информации, которая должна применяться, и вернуть набор действий, которые необходимо принять для правильной метки информации. Этот API полезен, когда метка должна быть заданной пользователем или службой вручную или явно, а не автоматически на основе содержимого файла. 
 
-Учитывая [contentInfo,](../resources/contentInfo.md)который включает существующие пары [ключей/значений](../resources/keyvaluepair.md)метаданных контента и [меткиOptions](../resources/labelingoptions.md) в качестве ввода, API возвращает объект [informationProtectionAction,](../resources/informationprotectionaction.md) содержащий один из следующих ниже: 
+С [учетом contentInfo](../resources/contentInfo.md), который включает существующие пары ключей [/](../resources/keyvaluepair.md)значений метаданных контента и [меткиOptions](../resources/labelingoptions.md) в качестве ввода, API возвращает объект [informationProtectionAction](../resources/informationprotectionaction.md) , содержащий один из следующих ниже: 
 
 * [addContentFooterAction](../resources/addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/addcontentheaderaction.md)
@@ -46,7 +46,7 @@ ms.locfileid: "61023833"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | InformationProtectionPolicy.Read            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | InformationProtectionPolicy.Read.All        |
+| Приложение                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -76,7 +76,7 @@ POST /users/{id}/informationProtection/policy/labels/evaluateApplication
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и новый объект `200 OK` [коллекции informationProtectionAction](../resources/informationprotectionaction.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и новый объект [коллекции informationProtectionAction](../resources/informationprotectionaction.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -176,12 +176,16 @@ User-agent: ContosoLOBApp/1.0
 [!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-evaluateapplication-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/informationprotectionlabel-evaluateapplication-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

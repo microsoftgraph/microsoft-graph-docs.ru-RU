@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 1f8da276ccbd0f22023550797f1563939e6e7e39
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a9b1f3d2aa6fbadd1b15686e5c5126635cba0873
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126662"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62348945"
 ---
 # <a name="serviceplaninfo-resource-type"></a>Тип ресурса servicePlanInfo
 
@@ -24,8 +24,8 @@ ms.locfileid: "59126662"
 |:---------------|:--------|:----------|
 |servicePlanId|Guid|Уникальный идентификатор плана обслуживания.|
 |servicePlanName|String|Имя плана обслуживания.|
-|provisioningStatus|String|Состояние подготовки плана обслуживания. Возможные значения:<br/>"Успех" — служба полностью предусмотрена.<br/>"Отключено" - служба отключена.<br/>"PendingInput" — служба еще не предусмотрена; ожидание подтверждения службы.<br/>"PendingActivation" — служба предусмотрена, но требует явной активации администратором (например, Intune_O365 плана службы)<br/>"PendingProvisioning" — Microsoft добавила новую службу в SKU продукта, и она еще не была активирована в клиенте.|
-|appliesTo|String|Объект, на который может быть назначен план службы. Возможные значения:<br/>"Пользователь" — план службы может быть назначен отдельным пользователям.<br/>"Company" — план обслуживания может быть назначен всему клиенту.|
+|provisioningStatus|String|Состояние подготовки плана обслуживания. Возможные значения:<br/>`Success` - Служба полностью готова.<br/>`Disabled` - Служба отключена.<br/>`ErrorStatus` - План службы не был предусмотрен и находится в состоянии ошибки.<br/>`PendingInput` - служба еще не предусмотрена; ожидание подтверждения службы.<br/>`PendingActivation` - Служба является предварительной, но требует явной активации администратором (например, Intune_O365 плана службы)<br/>`PendingProvisioning` - Корпорация Майкрософт добавила новую службу в SKU продукта, и она еще не была активирована в клиенте.|
+|appliesTo|String|Объект, на который может быть назначен план службы. Возможные значения:<br/>`User` - план службы может быть назначен отдельным пользователям.<br/>`Company` - план службы может быть назначен для всего клиента.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,12 +5,12 @@ author: learafa
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7a3d71a12958d551ba5ccce900cb7195bbcdd589
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a52612c99bea7cba2da86ae26ec03306f29e5544
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60981195"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62349181"
 ---
 # <a name="listitem-createlink"></a>listItem: createLink
 
@@ -18,15 +18,15 @@ ms.locfileid: "60981195"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте ссылку общего доступа для [listItem.](../resources/listitem.md)
+Создайте ссылку общего доступа для [listItem](../resources/listitem.md).
 
 Действие **createLink** создает новую ссылку общего доступа, если указанный тип ссылки еще не существует для вызываемого приложения.
 Если для приложения уже существует ссылка общего доступа указанного типа, это действие возвращает существующую ссылку общего доступа.
 
-**ресурсы listItem** наследуют разрешения на совместное использование [из списка,](../resources/list.md) в который находится элемент.
+**ресурсы listItem** наследуют разрешения на совместное использование [из списка](../resources/list.md) , в который находится элемент.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из следующих разрешений. Дополнительные дополнительные информации, в том числе о выборе разрешений, см. [в см. в .](/graph/permissions-reference)
+Для вызова этого API требуется одно из следующих разрешений. Дополнительные дополнительные информации, в том числе о выборе разрешений, см. [в дополнительных подробной информации](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
@@ -58,8 +58,8 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 
 |   Свойство             |  Тип  |           Описание                        |
 | :----------------------| :----- | :--------------------------------------------|
-|type|Строка|Тип создаваемой ссылки для совместного доступа. Необязательный параметр. |
-|scope|String|Область создаваемой ссылки. Либо `anonymous` , `organization` или `users` . Необязательный параметр. |
+|type|String|Тип создаваемой ссылки для совместного доступа. Необязательный параметр. |
+|scope|String|Область создаваемой ссылки. Либо `anonymous`, или `users``organization` . Необязательный параметр. |
 |expirationDateTime|DateTimeOffset|Строка с форматом yyyy-MM-ddTHH:mm:ssZ dateTime указывает срок действия разрешения. Необязательный параметр. |
 |password|Строка|Пароль ссылки общего доступа, за устанавливаемой создателем. Необязательный параметр. |
 |recipients|[коллекция driveRecipient](../resources/driverecipient.md)|Коллекция получателей, которые получат доступ к ссылке общего доступа. Необязательный параметр. |
@@ -91,9 +91,9 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 
 ## <a name="response"></a>Отклик
 
-В случае успешного использования [](../resources/permission.md) этот метод возвращает один ресурс разрешений в органе отклика, который представляет запрашиваемую для обмена разрешениями.
+В случае успешного использования этот метод возвращает один [](../resources/permission.md) ресурс разрешений в органе отклика, который представляет запрашиваемую для обмена разрешениями.
 
-Ответ будет, если для listItem создается новая ссылка общего доступа или возвращается `201 Created` `200 OK` существующая ссылка.
+Ответ будет, если `201 Created` для listItem создается новая ссылка общего доступа или `200 OK` возвращается существующая ссылка.
 
 ## <a name="examples"></a>Примеры
 
@@ -144,6 +144,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/listitem-createlink-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/listitem-createlink-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -222,6 +226,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/listitem-createlink-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/listitem-createlink-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -294,7 +302,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 * Чтобы создать ссылку на основе политики по умолчанию организации и разрешений вызываемого в listItem, ограничьте параметры области и типа
 * Срок действия ссылок, созданных с помощью этого действия, не истекает при условии, что в организации не включена политика срока действия.
