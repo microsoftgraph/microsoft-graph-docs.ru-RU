@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ef4ff687c3f4ee73fafefd489743e1a721a020a3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 20ae426d206e0737ff40200989db955bb7503de1
+ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119822"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62344538"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -41,8 +41,9 @@ ms.locfileid: "62119822"
 GET /users/{id | userPrincipalName}
 ```
 
->**Примечание.**
-> + Если **userPrincipalName** начинается с символа `$`, нужно удалить косую черту (/) после `/users` и заключить **userPrincipalName** в скобки и одиночные кавычки. Например, `/users('$AdeleVance@contoso.com')`. Дополнительные сведения см. в списке [известных проблем](/graph/known-issues#users).
+> [!TIP]
+> 
+> + Когда **userPrincipalName** начинается с символа `$`, синтаксис URL-адреса запроса GET `/users/$x@y.com` приводит к сбою с кодом ошибки `400 Bad Request`. Это связано с тем, что этот URL-адрес запроса нарушает соглашение об URL-адресе OData, которые ожидают, что только параметры системного запроса будут иметь префикс символа `$`. Удалите косую черту (/) после `/users` и заключите **userPrincipalName** в скобки и одинарные кавычки следующим образом: `/users('$x@y.com')`. Например, `/users('$AdeleVance@contoso.com')`.
 > + Чтобы запросить пользователя B2B с помощью **userPrincipalName**, закодируйте хэш-символ (#). То есть замените символ `#` на `%23`. Например, `/users/AdeleVance_adatum.com%23EXT%23@contoso.com`.
 
 Для вошедшего пользователя:
@@ -62,7 +63,7 @@ GET /me
 | Авторизация  | Bearer {token}. Обязательный.|
 | Content-Type   | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
