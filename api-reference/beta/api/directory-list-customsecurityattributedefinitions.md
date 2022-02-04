@@ -5,13 +5,8 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 034214b59f3279534df41b26454e7be27311247a
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62184082"
 ---
+
 # <a name="list-customsecurityattributedefinitions"></a>Список customSecurityAttributeDefinitions
 Пространство имен: microsoft.graph
 
@@ -19,16 +14,16 @@ ms.locfileid: "62184082"
 
 Получите список объектов [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) и их свойств.
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Разрешения:
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|CustomSecAttributeDefinition.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CustomSecAttributeDefinition.ReadWrite.All|
+|Для приложений|CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All|
 
-Кроме того, пользователю, заявляемого на учет, должна быть назначена одна из следующих ролей [каталога:](/azure/active-directory/roles/permissions-reference)
+Пользователю, заявляемого в каталог, также должна быть назначена одна из следующих [ролей каталога](/azure/active-directory/roles/permissions-reference):
 
 + Считыватель определения атрибутов
 + Администратор назначения атрибутов
@@ -46,22 +41,22 @@ ms.locfileid: "62184082"
 GET /directory/customSecurityAttributeDefinitions
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$select` параметры `$top` запроса `$expand` `$filter` OData и () для настройки `eq` ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+Этот метод поддерживает `$select`параметры запроса `$expand``$top`OData и `$filter` (`eq`) для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-Свойство `allowedValues` навигации не возвращается или не расширяется по умолчанию и должно быть указано в `$expand` запросе. Например, `/directory/customSecurityAttributeDefinitions?$expand=allowedValues`.
+Свойство `allowedValues` навигации не возвращается или не расширяется по умолчанию и должно быть указано в запросе `$expand` . Например, `/directory/customSecurityAttributeDefinitions?$expand=allowedValues`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) в тексте ответа.
+В случае успеха этот метод возвращает `200 OK` код отклика и коллекцию объектов [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -244,7 +239,7 @@ Content-Type: application/json
 
 ### <a name="example-3-filter-custom-security-attributes-based-on-attribute-set"></a>Пример 3. Фильтр настраиваемые атрибуты безопасности на основе набора атрибутов
 
-В следующем примере извлекаются настраиваемые определения атрибутов безопасности, которые находятся в наборе атрибутов, активны `Engineering` и типа String.
+В следующем примере извлекаются настраиваемые `Engineering` определения атрибутов безопасности, которые находятся в наборе атрибутов, активны и типа String.
 
 #### <a name="request"></a>Запрос
 

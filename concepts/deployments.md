@@ -3,13 +3,8 @@ title: Национальные облачные развертывания
 description: В дополнение к нашей глобальной сети центров обработки данных облачные службы Майкрософт доступны в трех отдельных национальных облачных службах.
 author: arpitha-dhanapathi
 ms.localizationpriority: medium
-ms.openlocfilehash: 28e8e422d121651787dca2f4adf0a153baed072a
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072532"
 ---
+
 # <a name="national-cloud-deployments"></a>Национальные облачные развертывания
 
 В дополнение к нашей глобальной сети центров обработки данных облачные службы Майкрософт доступны в трех отдельных национальных облачных службах. Эти национальные облачные версии являются физическими и логически изолированными сетевыми экземплярами корпоративных облачных служб Майкрософт, которые ограничены географическими границами определенных стран и управляются местным персоналом.
@@ -39,11 +34,11 @@ ms.locfileid: "62072532"
 | Azure AD для Германии | https://portal.microsoftazure.de | `https://login.microsoftonline.de` |
 | Azure AD для Китая под управлением 21Vianet | https://portal.azure.cn | `https://login.chinacloudapi.cn` |
 
-Дополнительные новости о маркерах доступа Azure AD и microsoft Graph см. в основных документах [проверки подлинности.](./auth/auth-concepts.md) В сценариях проверки подлинности Azure AD см. основные принципы проверки [подлинности Azure AD.](/azure/active-directory/develop/authentication-scenarios)
+Дополнительные новости о маркерах доступа Azure AD и microsoft Graph см. в основных документах [проверки подлинности](./auth/auth-concepts.md). В сценариях проверки подлинности Azure AD см. основные принципы проверки [подлинности Azure AD](/azure/active-directory/develop/authentication-scenarios).
 
 ## <a name="microsoft-graph-and-graph-explorer-service-root-endpoints"></a>Корневые точки службы Graph и Graph Explorer
 
-В следующей таблице показаны корневые точки службы microsoft Graph [и Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) для каждого национального облака.
+В следующей таблице показаны корневые точки службы для Microsoft Graph [и Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) для каждого национального облака.
 
 | Национальное облако | Microsoft Graph | Песочница Graph |
 | -------------- | --------------- | -------------- |
@@ -56,20 +51,16 @@ ms.locfileid: "62072532"
 > [!IMPORTANT]
 > Для приложения в правительстве США:
 >
->
-> * Если вы работаете в Microsoft 365 GCC среде, продолжайте использовать конечные точки по всему миру: `https://graph.microsoft.com` и `https://portal.azure.com` .
-> * Если вы работаете в среде Microsoft 365 GCC, используйте: `https://portal.azure.us` и `https://graph.microsoft.us` .
-> * Если вы работаете в среде Microsoft 365 DoD, используйте `https://portal.azure.us` и `https://dod-graph.microsoft.us` .
->
->
-> Доступ к данным правительства США с помощью конечной точки по всему миру будет отключен в ближайшем будущем.
+> * Если вы работаете в среде Microsoft 365 GCC, продолжайте использовать конечные точки по всему миру: `https://graph.microsoft.com` и `https://portal.azure.com`.
+> * Если вы работаете в среде Microsoft 365 GCC, используйте и `https://portal.azure.us` `https://graph.microsoft.us`.
+> * Если вы работаете в среде Microsoft 365 DoD, используйте и `https://portal.azure.us` `https://dod-graph.microsoft.us`.
 
 > [!NOTE]
-> Приложения могут получать доступ к организационным данным только через национальные конечные точки облака. Это означает, что приложения могут получать доступ к данным только в клиентах, зарегистрированных в определенном национальном облаке. Приложения, которые пытаются получить доступ к потребительским данным, связанным с личными учетными записями Майкрософт Graph Microsoft, должны использовать глобальную `https://graph.microsoft.com` службу. Маркеры доступа, приобретенные для развертывания национальных облаков, не являются взаимозаменяемыми с маркерами, приобретенными для глобальной службы или любого другого национального облака.
+> Приложения могут получать доступ к организационным данным только через национальные конечные точки облака. Это означает, что приложения могут получать доступ к данным только в клиентах, зарегистрированных в определенном национальном облаке. Приложения, которые пытаются получить доступ к потребительским данным, связанным с личными учетными записями Майкрософт Graph Microsoft, должны использовать глобальную службу`https://graph.microsoft.com`. Маркеры доступа, приобретенные для развертывания национальных облаков, не являются взаимозаменяемыми с маркерами, приобретенными для глобальной службы или любого другого национального облака.
 
 ## <a name="supported-features"></a>Поддерживаемые функции
 
-Следующие функции Microsoft Graph доступны в конечной точке во всех национальных облачных развертываниях, за исключением `/v1.0` отмеченных.
+Следующие функции Microsoft Graph `/v1.0` доступны в конечной точке во всех национальных облачных развертываниях, за исключением отмеченных.
 
 | Функции Graph Microsoft | Microsoft Cloud for US Government | Microsoft Cloud China под управлением 21Vianet | Microsoft Cloud для Германии |
 | ------------------------ | --------------------------------- | ------------------------------------------ | ----------------------- |
@@ -96,16 +87,16 @@ ms.locfileid: "62072532"
 | Teams | ✔ | ✔ | ✔ |
 | Пользователи | ✔ | ✔ | ✔ |
 
-Следующие функции Microsoft Graph доступны в предварительной версии (на конечной точке) в Microsoft Cloud China и Microsoft Cloud Germany (конечные точки v1.0 для этих функций доступны только в `/beta` Microsoft Cloud for US Government):
+Следующие функции Microsoft Graph доступны в предварительной версии (`/beta`на конечной точке) в Microsoft Cloud China и Microsoft Cloud Germany (конечные точки v1.0 для этих функций доступны только в Microsoft Cloud for US Government):
 
 * Контакты организации
 * Приложения
 * Субъекты-службы
 
-( \* Ограниченная поддержка только Exchange и OneDrive служб. Службы Azure AD не поддерживаются.
+(\*) Ограниченная поддержка только Exchange и OneDrive служб. Службы Azure AD не поддерживаются.
 
 > [!IMPORTANT]
-> Некоторые службы и функции, которые находятся в определенных регионах глобальной службы, могут быть недоступны во всех национальных облаках. Чтобы узнать, какие службы доступны, см. [в сайте продукты, доступные по регионам.](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast)
+> Некоторые службы и функции, которые находятся в определенных регионах глобальной службы, могут быть недоступны во всех национальных облаках. Чтобы узнать, какие службы доступны, см. [в сайте продукты, доступные по регионам](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast).
 
 Дополнительные информацию о национальных облаках см. в следующих разделах:
 

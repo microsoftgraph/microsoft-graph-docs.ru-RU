@@ -5,13 +5,8 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: edabeb0cee6148d55b1cf52052ababda367d9064
-ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61561328"
 ---
+
 # <a name="create-meetingregistration"></a>Создание meetingRegistration
 
 Пространство имен: microsoft.graph
@@ -20,7 +15,7 @@ ms.locfileid: "61561328"
 
 Создание и включить регистрацию [onlineMeeting](../resources/onlinemeeting.md) от имени организатора. На собрании в Интернете может быть включена только одна регистрация.
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Разрешения:
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -41,23 +36,23 @@ POST /me/onlineMeetings/{id}/registration
 | Имя            | Описание               |
 | :-------------- | :------------------------ |
 | Авторизация   | Bearer {token}. Обязательный. |
-| Принять-Язык | Язык. Необязательное свойство.       |
+| Принять-Язык | Язык. Необязательный параметр.       |
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляют представление JSON объекта [meetingRegistration.](../resources/meetingregistration.md)
+В теле запроса поставляют представление JSON объекта [meetingRegistration](../resources/meetingregistration.md) .
 
 > [!IMPORTANT]
 > Необходимо предоставить свойство **@odata.type,** чтобы указать тип регистрации. Дополнительные сведения см. в следующем [примере](#example).
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект meetingRegistration](../resources/meetingregistration.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` ответа и объект [meetingRegistration](../resources/meetingregistration.md) в тексте ответа.
 
 > [!NOTE]
 >
->- Свойство **registrationPageViewCount** не возвращается в ответной части этого метода. Чтобы получить это свойство, используйте метод [Get meetingRegistration.](meetingRegistration-get.md)
->- **CustomQuestions** — это связанный ресурс, который может быть создан только в строке, но не возвращен в этом методе. Для его [получения используйте метод Get meetingRegistration](meetingRegistration-get.md) или Get [meetingRegistrationQuestion.](meetingregistrationquestion-get.md)
+>- Свойство **registrationPageViewCount** не возвращается в ответной части этого метода. Чтобы получить это свойство, используйте метод [Get meetingRegistration](meetingRegistration-get.md) .
+>- **CustomQuestions** — это связанный ресурс, который может быть создан только в строке, но не возвращен в этом методе. Для его [получения используйте метод Get meetingRegistration](meetingRegistration-get.md) или [Get meetingRegistrationQuestion](meetingregistrationquestion-get.md) .
 
 ## <a name="example"></a>Пример
 

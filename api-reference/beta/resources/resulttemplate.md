@@ -1,17 +1,12 @@
 ---
 title: тип ресурса resultTemplate
-description: Словарь resultTemplateIds и связанных с ними значений, которые включают имя и схему JSON шаблонов результатов.
-localization_priority: Normal
+description: 'Словарь resultTemplateIds и связанных с ними значений, которые включают имя и схему JSON шаблонов результатов.'
+ms.localizationpriority: medium
 author: cristianv-ms
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 402b60efc278e72102d9bba4eb89be2dda38916b
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211374"
 ---
+
 # <a name="resulttemplate-resource-type"></a>тип ресурса resultTemplate
 
 Пространство имен: microsoft.graph
@@ -24,8 +19,8 @@ ms.locfileid: "53211374"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|key|String|ID шаблона результатов. Он должен сопопозить **с resultTemplateId** в [searchHit.](searchhit.md)|
-|displayName|String|Имя шаблона результатов.|
+|key|Строка|ID шаблона результатов. Он должен сопопозить **с resultTemplateId** в [searchHit](searchhit.md).|
+|displayName|Строка|Имя шаблона результатов.|
 |body|Json|Схема шаблона результатов JSON.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,10 +39,10 @@ ms.locfileid: "53211374"
 
 ```json
 {
-  "resultTemplateId": {
-                    "displayName": "String",
-                    "body": "Json schema"
-                }
+   "resultTemplateId": {
+      "displayName": "String",
+      "body": "Json schema"
+   }
 }
 ```
 
