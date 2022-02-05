@@ -5,30 +5,25 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7340f4d3bd13f42efc6f453e818416a5fd169ba8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096898"
 ---
+
 # <a name="update-customsecurityattributedefinition"></a>Обновление customSecurityAttributeDefinition
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [customSecurityAttributeDefinition.](../resources/customsecurityattributedefinition.md)
+Обновление свойств объекта [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) .
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Разрешения:
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CustomSecAttributeDefinition.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CustomSecAttributeDefinition.ReadWrite.All|
+|Для приложений|CustomSecAttributeDefinition.ReadWrite.All|
 
-Пользователю, заявиму, также должна быть назначена роль администратора [определения атрибутов.](/azure/active-directory/roles/permissions-reference) По умолчанию глобальные роли администратора и других администраторов не имеют разрешений на чтение, определение или назначение настраиваемого атрибута безопасности.
+Кроме того, пользователю, заявив о подписании, должна быть назначена роль администратора [определения атрибутов](/azure/active-directory/roles/permissions-reference). По умолчанию глобальные роли администратора и других администраторов не имеют разрешений на чтение, определение или назначение настраиваемого атрибута безопасности.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,6 +40,10 @@ PATCH /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefi
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
+|OData-Version|4.01. Необязательный параметр.|
+
+> [!NOTE]
+> Чтобы обновить заданные значения для настраиваемого атрибута безопасности, необходимо добавить заглавную статью **OData-Version** и назначить ему значение `4.01`.
 
 ## <a name="request-body"></a>Текст запроса
 Укажите в тексте запроса *только* значения обновляемых свойств. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств.
@@ -54,7 +53,7 @@ PATCH /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefi
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |description|Строка|Описание настраиваемого атрибута безопасности. Может иметь длину до 128 символов и включать символы Unicode. Необязательный параметр.|
-|status|String|Указывает, активен ли настраиваемый атрибут безопасности или отключен. Допустимые значения `Available` и `Deprecated` . Необязательный параметр.|
+|status|String|Указывает, активен ли настраиваемый атрибут безопасности или отключен. Допустимые значения и `Available` `Deprecated`. Необязательный параметр.|
 |usePreDefinedValuesOnly|Логический|Указывает, могут ли быть назначены только предопределяемые значения атрибуту настраиваемой безопасности. Если установлено значение false, разрешены значения свободной формы. Может быть изменена с true на false, но не может быть изменена с false на true. Если `type` задана настройка Boolean, `usePreDefinedValuesOnly` не может быть задана истина. Необязательный параметр.|
 
 
@@ -126,7 +125,56 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-deactivate-a-custom-security-attribute"></a>Пример 2. Деактивировать настраиваемый атрибут безопасности
+### <a name="example-2-update-the-predefined-values-for-a-custom-security-attribute"></a>Пример 2. Обновление предопределяемых значений для настраиваемой атрибута безопасности
+
+В следующем примере обновляется состояние существующего предопределяемого значения и добавляется новое предопределеное значение для настраиваемого определения атрибута безопасности.
+
++ Набор атрибутов: `Engineering`
++ Атрибут: `Project`
++ Тип данных атрибута: коллекция строк
++ Обновление предопределяемой величины: `Baker`
++ Новое заранее заранее заранеее значение: `Skagit`
+
+> [!NOTE]
+> Для этого запроса необходимо добавить **загодер OData-Version** и назначить ему значение `4.01`.
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "update_customsecurityattributedefinition_allowedvalues"
+}
+-->
+``` msgraph-interactive
+PATCH https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/Engineering_Project
+Content-Type: application/json
+OData-Version: 4.01
+
+{
+    "allowedValues@delta": [
+        {
+            "id": "Baker",
+            "isActive": false
+        },
+        {
+            "id": "Skagit",
+            "isActive": true
+        }
+    ]
+}
+```
+
+#### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-3-deactivate-a-custom-security-attribute"></a>Пример 3. Деактивировать настраиваемый атрибут безопасности
 
 В следующем примере деактивирует настраиваемую определение атрибута безопасности.
 

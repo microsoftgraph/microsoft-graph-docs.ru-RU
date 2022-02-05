@@ -1,26 +1,21 @@
 ---
 title: Список несовместимыхAccessPackages
-description: Извлечение списка accesspackages, права доступа которых несовместимы с определенным пакетом доступа.
-localization_priority: Normal
+description: 'Извлечение списка accesspackages, права доступа которых несовместимы с определенным пакетом доступа.'
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fc30ee9ae6a80b04820b363dea87f376e5db638b
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401166"
 ---
+
 # <a name="list-incompatibleaccesspackages"></a>Список несовместимыхAccessPackages
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка объектов [accessPackage,](../resources/accesspackage.md) которые были отмечены как несовместимые в [accessPackage.](../resources/accesspackage.md)  
+Извлечение списка объектов [accessPackage](../resources/accesspackage.md) , которые были отмечены как несовместимые в [accessPackage](../resources/accesspackage.md).  
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Разрешения:
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -28,17 +23,17 @@ ms.locfileid: "53401166"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Для приложений                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identityGovernance/entitlementManagement/accessPackage/{id}/incompatibleAccessPackages
+GET /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleAccessPackages
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает параметры запроса OData для прогона на стороне сервера с помощью большого отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -54,7 +49,7 @@ GET /identityGovernance/entitlementManagement/accessPackage/{id}/incompatibleAcc
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов accessPackage](../resources/accesspackage.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию [объектов accessPackage](../resources/accesspackage.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

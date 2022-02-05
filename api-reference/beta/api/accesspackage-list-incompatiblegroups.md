@@ -1,26 +1,21 @@
 ---
 title: Несовместимые группы списка
-description: Извлечение списка групп, права доступа которых несовместимы с определенным пакетом доступа.
+description: 'Извлечение списка групп, права доступа которых несовместимы с определенным пакетом доступа.'
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4867551b43c25cff563f1e1945b4bef3e325214b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104085"
 ---
+
 # <a name="list-incompatiblegroups"></a>Несовместимые группы списка
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка [объектов группы,](../resources/group.md) которые были отмечены как несовместимые в [accessPackage.](../resources/accesspackage.md)  
+Извлечение списка объектов [группы](../resources/group.md) , которые были помечены как несовместимые в [accessPackage](../resources/accesspackage.md).  
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Разрешения:
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -28,17 +23,17 @@ ms.locfileid: "62104085"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Для приложений                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identityGovernance/entitlementManagement/accessPackage/{id}/incompatibleGroups
+GET /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleGroups
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает параметры запроса OData для прогона на стороне сервера с помощью большого отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -48,13 +43,13 @@ GET /identityGovernance/entitlementManagement/accessPackage/{id}/incompatibleGro
 |:----------|:----------|
 | Авторизация | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию групповых `200 OK` объектов в тексте ответа. [](../resources/group.md)
+В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию [групповых объектов в](../resources/group.md) тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -101,7 +96,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

@@ -1,24 +1,19 @@
 ---
 title: 'directoryObject: checkMemberObjects'
-description: Проверьте членство в списке групп, административных единиц или ролей каталога для указанного пользователя, группы, руководителя службы, организационного контакта, устройства или объекта каталога.
+description: 'Проверьте членство в списке групп, административных единиц или ролей каталога для указанного пользователя, группы, руководителя службы, организационного контакта, устройства или объекта каталога.'
 ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2d4c707862931d44319eda8a7fc7037868775c0b
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346716"
 ---
+
 # <a name="directoryobject-checkmemberobjects"></a>directoryObject: checkMemberObjects
 
 Пространство имен: microsoft.graph
 
-Проверьте членство в списке групп, административных единиц или ролей каталога для указанного [пользователя, группы](../resources/user.md)[, руководителя](../resources/group.md) [службы,](../resources/serviceprincipal.md) организационного [контакта, устройства](../resources/orgcontact.md) или [](../resources/device.md)объекта [каталога](../resources/directoryobject.md). Это транзитивный метод.
+Проверьте членство в списке групповых ИД, административных ИД единиц или ИД ролей каталога для ID указанного [пользователя, группы](../resources/user.md)[](../resources/device.md)[, руководителя](../resources/group.md) службы[, организационного](../resources/serviceprincipal.md) [контакта, устройства](../resources/orgcontact.md) или объекта [каталога](../resources/directoryobject.md). Это транзитивный метод.
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Разрешения:
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -44,7 +39,7 @@ ms.locfileid: "62346716"
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
-| Приложение                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
+| Для приложений                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
 
 ### <a name="memberships-for-a-service-principal"></a>Членство для директора службы
 
@@ -68,7 +63,7 @@ ms.locfileid: "62346716"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Для приложений                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос

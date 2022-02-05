@@ -5,13 +5,8 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: f05bbd5eadcbff53cc91eba9a2847aca6c91b765
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62261940"
 ---
+
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
@@ -231,7 +226,7 @@ ms.locfileid: "62261940"
 |Целое число|
 |Справочные материалы|
 |Binary|
-|Логическое|
+|Логический|
 |Даты и время|
 
 ### <a name="mutability-values"></a>значения мутируемости
@@ -928,6 +923,20 @@ ms.locfileid: "62261940"
 |block|
 |unknownFutureValue|
 
+### <a name="x509certificateauthenticationmode-values"></a>значения x509CertificateAuthenticationMode
+|Member|
+|:---|
+|x509CertificateSingleFactor|
+|x509CertificateMultiFactor|
+|unknownFutureValue|
+
+### <a name="x509certificateruletype-values"></a>значения x509CertificateRuleType
+|Member|
+|:---|
+|issuerSubject|
+|policyOID|
+|unknownFutureValue|
+
 ### <a name="anniversarytype-values"></a>Значения anniversaryType
 
 |Member|
@@ -1193,7 +1202,7 @@ ms.locfileid: "62261940"
 
 | Member
 |:-------------------------
-| обязательно
+| Обязательный
 | необязательный
 | resource
 
@@ -1669,7 +1678,7 @@ ms.locfileid: "62261940"
 
 ### <a name="registryhive-values"></a>Значения registryHive
 
-Enum для ульев реестра, как определено [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives) .
+Enum для ульев реестра, как определено [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
 
 | Элемент                  | Значение | Описание                       |
 | :---------------------- | :---- | :-------------------------------- |
@@ -1679,7 +1688,7 @@ Enum для ульев реестра, как определено [https://docs
 | localMachineSam         | 3     | HKEY_LOCAL_MACHINE\SAM улей.      |
 | localMachineSamSoftware | 4     | HKEY_LOCAL_MACHINE\Software улей. |
 | localMachineSystem      | 5     | HKEY_LOCAL_MACHINE\System улей.   |
-| usersDefault            | 6      | HKEY_USERS \\ . Улей DEFAULT.        |
+| usersDefault            | 6      | \\HKEY_USERS. Улей DEFAULT.        |
 
 ### <a name="registryoperation-values"></a>Значения registryOperation
 
@@ -1694,7 +1703,7 @@ Enum для ульев реестра, как определено [https://docs
 
 ### <a name="registryvaluetype-values"></a>значения registryValueType
 
-Enum для типов значений реестра, определенных типами [значений Реестра.](/windows/desktop/sysinfo/registry-value-types)
+Enum для типов значений реестра, определенных типами [значений реестра](/windows/desktop/sysinfo/registry-value-types).
 
 | Элемент            | Значение | Описание                                  |
 | :---------------- | :---- | :------------------------------------------- |
@@ -1962,9 +1971,9 @@ Enum для серьезности оповещений.
 | Member   | Значение Int |  Описание |
 |:---------------|:--------|:----------|
 | Нет | 0 |  Пользователю не разрешается переопределять сообщение. Пользователь не может сообщать о сообщении как о ложном срабатывке, если политикаTip не предоставлена. Во всех остальных сценариях пользователь может сообщить о сообщении как о ложном срабатыве.|
-| AllowFalsePositiveOverride | 1 |  Пользователю не разрешается явно переопределять блок, если он не объедин с `AllowOverrideWithoutJustification` `AllowOverrideWithJustification` флагами или флагами. Сообщение о ложном срабатывии нарушения автоматически переопределяет блок и отправляет сообщение. |
-| AllowOverrideWithoutJustification | 2 | Пользователю разрешено переопределять блок и отправлять сообщение. Текст обоснования не требуется. Эксклюзив `AllowOverrideWithJustification` для . |
-| AllowOverrideWithJustification | 4 |  Пользователю разрешено переопределять блок и отправлять сообщение. Требуется текст обоснования. Эксклюзив `AllowOverrideWithoutJustification` для .|
+| AllowFalsePositiveOverride | 1 |  Пользователю не разрешается явно переопределять блок, если он не объедин с флагами `AllowOverrideWithoutJustification` `AllowOverrideWithJustification` или флагами. Сообщение о ложном срабатывии нарушения автоматически переопределяет блок и отправляет сообщение. |
+| AllowOverrideWithoutJustification | 2 | Пользователю разрешено переопределять блок и отправлять сообщение. Текст обоснования не требуется. Эксклюзив для `AllowOverrideWithJustification`. |
+| AllowOverrideWithJustification | 4 |  Пользователю разрешено переопределять блок и отправлять сообщение. Требуется текст обоснования. Эксклюзив для `AllowOverrideWithoutJustification`.|
 
 ### <a name="entitytype-values"></a>Значения entityType
 
@@ -2154,7 +2163,7 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкие|2|
+|Низкий|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
@@ -2199,7 +2208,7 @@ Enum для серьезности оповещений.
 
 | Элемент             | Значение | Описание                                          |
 |:-------------------|:------|:-----------------------------------------------------|
-| checkPolicy        | 1     | Результат проверки политики только для `mail` оценки. |
+| checkPolicy        | 1     | Результат проверки политики только для оценки `mail` . |
 | rescan             | 2     | Результат rescan.                                   |
 | unknownFutureValue | 3     | Член-часовой.                                   |
 
@@ -2228,8 +2237,8 @@ Enum для серьезности оповещений.
 
 | Элемент                       | Значение | Описание                                                            |
 |:-----------------------------|:------|:-----------------------------------------------------------------------|
-| threatCategory               | 1     | Совокупный запрос на оценку угроз `threatCategory` по .               |
-| mailDestinationRoutingReason | 2     | Совокупный запрос на оценку угроз `mailDestinationRoutingReason` по . |
+| threatCategory               | 1     | Совокупный запрос на оценку угроз по `threatCategory`.               |
+| mailDestinationRoutingReason | 2     | Совокупный запрос на оценку угроз по `mailDestinationRoutingReason`. |
 
 ### <a name="userflowtype-values"></a>значения userFlowType
 
@@ -2298,8 +2307,8 @@ Enum для серьезности оповещений.
 
 | Элемент                | Значение | Описание                                                                                                                                                                                                        |
 |:----------------------| :-----|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| настроенный            | 0     | Подключенные организации с этим значением состояния включены в политики назначения с типом области `AllConfiguredConnectedOrganizationSubjects` запроса.                                                          |
-| предложено              | 1     | Подключенные организации, автоматически созданные системой, имеют это значение состояния. Они не включены в политики назначения с типом области `AllConfiguredConnectedOrganizationSubjects` запроса.   |
+| настроенный            | 0     | Подключенные организации с этим значением состояния включены в политики назначения с типом области запроса `AllConfiguredConnectedOrganizationSubjects`.                                                          |
+| предложено              | 1     | Подключенные организации, автоматически созданные системой, имеют это значение состояния. Они не включены в политики назначения с типом области запроса `AllConfiguredConnectedOrganizationSubjects`.   |
 | unknownFutureValue    | 2     | Член-часовой.                                                                                                                                                                                                 |
 
 ### <a name="identityuserflowattributedatatype-values"></a>значения identityUserFlowAttributeDataType
@@ -2836,10 +2845,10 @@ Enum для серьезности оповещений.
 | Элемент | Значение| Описание |
 |:---------------|:--------|:----------|
 |unknown|0|Неизвестное значение.|
-|skypeDefaultAndTeams|1|Поддерживает как `Skype` и `Teams` . Значение по умолчанию: `Skype`.|
-|teamsDefaultAndSkype|2|Поддерживает как `Skype` и `Teams` . Значение по умолчанию: `Teams`.|
-|skypeOnly|3|Поддерживает только `Skype` .|
-|teamsOnly|4|Поддерживает только `Teams` .|
+|skypeDefaultAndTeams|1|Поддерживает как и `Skype` `Teams`. Значение по умолчанию: `Skype`.|
+|teamsDefaultAndSkype|2|Поддерживает как и `Skype` `Teams`. Значение по умолчанию: `Teams`.|
+|skypeOnly|3|Поддерживает только `Skype`.|
+|teamsOnly|4|Поддерживает только `Teams`.|
 |unknownFutureValue|5|Эволюционирующее значение sentinel. Не следует использовать.|
 
 ### <a name="longrunningoperationstatus-values"></a>значения longRunningOperationStatus

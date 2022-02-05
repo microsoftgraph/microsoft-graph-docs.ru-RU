@@ -5,22 +5,17 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 39104bb29ba7b1f8a9e672775781a5303ab0fa81
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650743"
 ---
+
 # <a name="accesspackageassignmentrequest-reprocess"></a>accessPackageAssignmentRequest: reprocess
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении правами Azure AD](../resources/entitlementmanagement-overview.md)звонители могут автоматически повторить запрос пользователя на доступ к пакету доступа. Выполняется на [объекте accessPackageAssignmentRequest,](../resources/accesspackageassignmentrequest.md) запрос **которого** находится в состоянии или `DeliveryFailed` `PartiallyDelivered` состоянии. 
+В [управлении правами Azure AD](../resources/entitlementmanagement-overview.md) звонители могут автоматически повторить запрос пользователя на доступ к пакету доступа. Выполняется на [объекте accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) , запрос **которого** находится в состоянии или `DeliveryFailed` состоянии `PartiallyDelivered` . 
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Разрешения:
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -37,14 +32,14 @@ ms.locfileid: "61650743"
 }
 -->
 ```http
-POST /identityGovernance/entitlementManagement/accessPackageAssignmentsRequests/{id}/reprocess  
+POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{id}/reprocess
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Носитель \{токен\}. Обязательный. |
+| Авторизация | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -52,7 +47,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentsRequests/
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код  `202 Accepted` ответа и возвращает запрос. Если объекта [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) не существует, этот метод возвращается или если код не действителен, этот метод возвращает код `404 Not Found`  `400 Bad Request` ответа.
+В случае успешной работы этот метод возвращает код  `202 Accepted` ответа и возвращает запрос. Если объекта [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) не существует, `404 Not Found` этот метод возвращается или если код не действителен, `400 Bad Request` этот метод возвращает код ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -62,7 +57,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentsRequests/
 
 <!-- {
   "blockType": "ignored",
-  "name": "reprocess_accesspackageassignmentsrequest"
+  "name": "reprocess_accesspackageassignmentrequest"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/d82eb508-acc4-43cc-bcf1-7c1c4a2c073b/reprocess

@@ -1,28 +1,23 @@
 ---
 title: 'directoryObject: getMemberObjects'
-description: Возвращаем все группы, административные единицы и роли каталога, в которые входит пользователь, группа, руководитель службы, организационный контакт, объект устройства или каталога. Это транзитивная функция.
+description: 'Возвращаем все группы, административные единицы и роли каталога, в которые входит пользователь, группа, руководитель службы, организационный контакт, объект устройства или каталога. Это транзитивная функция.'
 ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8afc7252d7900674b89c44168127aa229faac1dc
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346563"
 ---
+
 # <a name="directoryobject-getmemberobjects"></a>directoryObject: getMemberObjects
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Возвращаем все группы, административные единицы и роли каталога, в которые входит [пользователь, группа](../resources/user.md)[, руководитель](../resources/group.md)[](../resources/directoryobject.md) службы[, организационный](../resources/serviceprincipal.md) [контакт, устройство](../resources/orgcontact.md) или объект каталога. [](../resources/device.md) Это транзитивная функция.
+Верни все ID для групп, административных подразделений и ролей каталогов, [](../resources/device.md)в которые входит [пользователь, группа](../resources/user.md)[, руководитель](../resources/group.md)[](../resources/directoryobject.md) службы[, организационный](../resources/serviceprincipal.md) [контакт, устройство](../resources/orgcontact.md) или объект каталога. Это транзитивная функция.
 
 **Примечание:** Только пользователи и группы с поддержкой ролей могут быть членами ролей каталога.
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Разрешения:
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 ### <a name="memberships-for-a-directory-object"></a>Членство для объекта каталога
@@ -47,7 +42,7 @@ ms.locfileid: "62346563"
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
-| Приложение                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
+| Для приложений                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
 
 ### <a name="memberships-for-a-service-principal"></a>Членство для директора службы
 
@@ -71,7 +66,7 @@ ms.locfileid: "62346563"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Для приложений                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос

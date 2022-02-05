@@ -1,24 +1,19 @@
 ---
 title: Обзор API политики проверки подлинности Azure AD
-description: Политики методов проверки подлинности определяют, какие методы проверки подлинности могут использоваться пользователями в Azure AD.
-localization_priority: Normal
+description: 'Политики методов проверки подлинности определяют, какие методы проверки подлинности могут использоваться пользователями в Azure AD.'
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: 35d3beecb26a5ae4455502ed0535c959cf7f502e
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682133"
 ---
+
 # <a name="azure-ad-authentication-methods-policies-api-overview"></a>Обзор API политик проверки подлинности Azure AD
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Политики методов проверки подлинности определяют методы проверки подлинности и пользователей, которые могут использовать их для регистрации и выполнения многофакторной проверки подлинности (MFA) в Azure Active Directory (Azure AD). [](/azure/active-directory/authentication/concept-authentication-methods) Политики методов проверки подлинности, которыми можно управлять в Microsoft Graph, включают ключи безопасности FIDO2 и Телефон вход с Microsoft Authenticator приложением.
+Политики методов проверки подлинности определяют методы проверки подлинности и пользователей, которые могут использовать их для регистрации и выполнения многофакторной проверки подлинности (MFA) в Azure Active Directory (Azure AD).[](/azure/active-directory/authentication/concept-authentication-methods) Политики методов проверки подлинности, которыми можно управлять в Microsoft Graph, включают ключи безопасности FIDO2 и Телефон вход с Microsoft Authenticator приложением.
 
 API-политики методов проверки подлинности используются для управления настройками политики. Например:
 
@@ -36,12 +31,13 @@ API-политики методов проверки подлинности ис
 |[emailauthenticationmethodconfiguration](emailauthenticationmethodconfiguration.md)|Определите пользователей, которые могут использовать OTP электронной почты в клиенте Azure AD.|
 |[passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration](passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) (deprecated)|Определите пользователей, которые могут использовать Телефон для регистрации в Azure AD.|
 |[temporaryaccesspassauthenticationmethodconfiguration](temporaryaccesspassauthenticationmethodconfiguration.md)|Определите пользователей, которые могут использовать временный пропуск доступа для входов в Azure AD.|
+|[x509CertificateAuthenticationMethodConfiguration](x509CertificateAuthenticationMethodConfiguration.md)|Определите пользователей, которые могут использовать сертификат X.509 для регистрации в Azure AD.|
 
 ## <a name="policies-available-to-push-users-to-set-up-authentication-methods"></a>Политики, доступные для того, чтобы подтолкнуть пользователей к настройкам методов проверки подлинности:
 |Политика       | Описание |
 |:---------------------------|:------------|
 |[authenticationMethodsRegistrationCampaign](authenticationmethodsregistrationcampaign.md)| Определите пользователей, которым следует напомнить о том, как настроить метод проверки подлинности (поддерживается только для Microsoft Authenticator).|
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 * Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).

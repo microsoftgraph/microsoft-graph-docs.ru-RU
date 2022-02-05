@@ -5,28 +5,23 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5cb5cb06d50b001514b1c27f3eb68b0024b558cf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62106344"
 ---
+
 # <a name="create-customsecurityattributedefinition"></a>Создание customSecurityAttributeDefinition
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект customSecurityAttributeDefinition.](../resources/customsecurityattributedefinition.md)
+Создайте новый [объект customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) .
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Разрешения:
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CustomSecAttributeDefinition.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CustomSecAttributeDefinition.ReadWrite.All|
+|Для приложений|CustomSecAttributeDefinition.ReadWrite.All|
 
 Пользователю, заявляемого в службу, также необходимо уписать администратору определения атрибутов [роль каталога](/azure/active-directory/roles/permissions-reference. По умолчанию глобальные роли администратора и других администраторов не имеют разрешений на чтение, определение или назначение настраиваемого атрибута безопасности.
 
@@ -47,26 +42,26 @@ POST /directory/customSecurityAttributeDefinitions
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса подарят представление JSON объекта [customSecurityAttributeDefinition.](../resources/customsecurityattributedefinition.md)
+В теле запроса подарят представление JSON объекта [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) .
 
-В следующей таблице показаны свойства, которые можно настроить при создании [customSecurityAttributeDefinition.](../resources/customsecurityattributedefinition.md)
+В следующей таблице показаны свойства, которые можно настроить при создании [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |attributeSet|Строка|Имя набора атрибутов. Случай нечувствительный. Обязательный.|
 |description|Строка|Описание настраиваемого атрибута безопасности. Может иметь длину до 128 символов и включать символы Unicode. Не может содержать пробелы или специальные символы. Можно изменить позже. Необязательный параметр.|
-|isCollection|Логическое|Указывает, можно ли наказать несколько значений к настраиваемой атрибуту безопасности. Не удается изменить позже. Если `type` задана настройка Boolean, `isCollection` не может быть задана истина. Обязательное.|
-|isSearchable|Логический|Указывает, будут ли индексироваться пользовательские значения атрибутов безопасности для поиска объектов, за которые назначены значения атрибутов. Не удается изменить позже. Обязательное.|
-|name|String|Имя настраиваемого атрибута безопасности. Должно быть уникальным в наборе атрибутов. Может иметь длину до 32 символов и включать символы Unicode. Не может содержать пробелы или специальные символы. Не удается изменить позже. Случай нечувствительный. Обязательное.|
-|status|String|Указывает, активен ли настраиваемый атрибут безопасности или отключен. Допустимые значения `Available` и `Deprecated` . Можно изменить позже. Обязательное.|
-|type|Строка|Тип данных для пользовательских значений атрибута безопасности. Поддерживаемые типы `Boolean` , `Integer` и `String` . Не удается изменить позже. Обязательное.|
-|usePreDefinedValuesOnly|Логический|Указывает, могут ли быть назначены только предопределяемые значения атрибуту настраиваемой безопасности. Если установлено значение false, разрешены значения свободной формы. Позже может быть изменено с true на false, но не может быть изменено с false на true. Если `type` задана настройка Boolean, `usePreDefinedValuesOnly` не может быть задана истина. Обязательное.|
+|isCollection|Логический|Указывает, можно ли наказать несколько значений к настраиваемой атрибуту безопасности. Не удается изменить позже. Если `type` задана настройка Boolean, `isCollection` не может быть задана истина. Обязательный.|
+|isSearchable|Логический|Указывает, будут ли индексироваться пользовательские значения атрибутов безопасности для поиска объектов, за которые назначены значения атрибутов. Не удается изменить позже. Обязательный.|
+|name|String|Имя настраиваемого атрибута безопасности. Должно быть уникальным в наборе атрибутов. Может иметь длину до 32 символов и включать символы Unicode. Не может содержать пробелы или специальные символы. Не удается изменить позже. Случай нечувствительный. Обязательный.|
+|status|String|Указывает, активен ли настраиваемый атрибут безопасности или отключен. Допустимые значения и `Available` `Deprecated`. Можно изменить позже. Обязательное.|
+|type|Строка|Тип данных для пользовательских значений атрибута безопасности. Поддерживаемые типы , `Boolean``Integer`и `String`. Не удается изменить позже. Обязательный.|
+|usePreDefinedValuesOnly|Логический|Указывает, могут ли быть назначены только предопределяемые значения атрибуту настраиваемой безопасности. Если установлено значение false, разрешены значения свободной формы. Позже может быть изменено с true на false, но не может быть изменено с false на true. Если `type` задана настройка Boolean, `usePreDefinedValuesOnly` не может быть задана истина. Обязательный.|
 
 Свойство `id` автогенерировано и не может быть установлено.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и настраиваемый `201 Created` [объектSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) в тексте ответа.
+В случае успеха этот метод возвращает код `201 Created` отклика и настраиваемый [объектSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -210,6 +205,78 @@ Content-length: 310
 
 ---
 
+
+#### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.customSecurityAttributeDefinition"
+}
+-->
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/customSecurityAttributeDefinitions/$entity",
+    "attributeSet": "Engineering",
+    "description": "Active projects for user",
+    "id": "Engineering_Project",
+    "isCollection": true,
+    "isSearchable": true,
+    "name": "Project",
+    "status": "Available",
+    "type": "String",
+    "usePreDefinedValuesOnly": true
+}
+```
+
+### <a name="example-3-add-a-custom-security-attribute-with-a-list-of-predefined-values"></a>Пример 3. Добавление настраиваемого атрибута безопасности со списком предопределяемых значений
+
+В следующем примере добавляется новое настраиваемая определение атрибута безопасности со списком заранее созданных значений в качестве коллекции строк.
+
++ Набор атрибутов: `Engineering`
++ Атрибут: `Project`
++ Тип данных атрибута: коллекция строк
++ Предопределяные значения: `Alpine`, `Baker``Cascade`
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "create_customsecurityattributedefinition_allowedvalues"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions
+Content-Type: application/json
+
+{
+    "attributeSet": "Engineering",
+    "description": "Active projects for user",
+    "isCollection": true,
+    "isSearchable": true,
+    "name": "Project",
+    "status": "Available",
+    "type": "String",
+    "usePreDefinedValuesOnly": true,
+    "allowedValues": [
+        {
+            "id": "Alpine",
+            "isActive": true
+        },
+        {
+            "id": "Baker",
+            "isActive": true
+        },
+        {
+            "id": "Cascade",
+            "isActive": true
+        }
+    ]
+}
+```
 
 #### <a name="response"></a>Отклик
 <!-- {

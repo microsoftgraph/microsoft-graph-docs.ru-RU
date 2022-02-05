@@ -5,21 +5,15 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9e98ef1781168a502d5db95de9c87680fb5fc40d
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242721"
 ---
 # <a name="update-accesspackagecatalog"></a>Обновление accessPackageCatalog
 
 Пространство имен: microsoft.graph
 
 
-Обнови [существующий объект accessPackageCatalog,](../resources/accesspackagecatalog.md) чтобы изменить одно или несколько его свойств, например имя или описание отображения.
+Обнови [существующий объект accessPackageCatalog](../resources/accesspackagecatalog.md) , чтобы изменить одно или несколько его свойств, например имя или описание отображения.
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Разрешения:
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
@@ -41,7 +35,7 @@ PATCH /identityGovernance/entitlementManagement/catalogs/{accessPackageCatalogId
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,10 +45,10 @@ PATCH /identityGovernance/entitlementManagement/catalogs/{accessPackageCatalogId
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Имя каталога пакетов доступа.|
-|description|Строка|Описание каталога пакетов доступа.|
+|description|String|Описание каталога пакетов доступа.|
 |catalogType|accessPackageCatalogType|Создается ли каталог пользователем или управлением правами. Допустимые значения: `userManaged`, `serviceDefault`, `serviceManaged`, `unknownFutureValue`.|
-|state|accessPackageCatalogState|Имеет `published` значение, если пакеты доступа доступны для управления. Допустимые значения: `unpublished`, `published`, `unknownFutureValue`.|
-|isExternallyVisible|Boolean|Могут ли пакеты доступа в этом каталоге запрашиваться пользователями за пределами клиента.|
+|state|accessPackageCatalogState|Имеет значение, `published` если пакеты доступа доступны для управления. Допустимые значения: `unpublished`, `published`, `unknownFutureValue`.|
+|isExternallyVisible|Логический|Могут ли пакеты доступа в этом каталоге запрашиваться пользователями за пределами клиента.|
 
 
 
@@ -73,7 +67,7 @@ PATCH /identityGovernance/entitlementManagement/catalogs/{accessPackageCatalogId
 }
 -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}
+PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/{accessPackageCatalogId}
 Content-Type: application/json
 
 {

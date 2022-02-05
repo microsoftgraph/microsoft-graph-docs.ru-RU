@@ -1,24 +1,19 @@
 ---
 title: 'directoryObject: getMemberGroups'
-description: Верни все группы, в которые входит указанный пользователь, группа, руководитель службы, организационный контакт, устройство или объект каталога. Это транзитивная функция.
+description: 'Верни все группы, в которые входит указанный пользователь, группа, руководитель службы, организационный контакт, устройство или объект каталога. Это транзитивная функция.'
 ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c39385631f55cd2d491584ba6fb0baeb0833b1ac
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339525"
 ---
+
 # <a name="directoryobject-getmembergroups"></a>directoryObject: getMemberGroups
 
 Пространство имен: microsoft.graph
 
-Верни все группы, в которые входит указанный [пользователь, группа](../resources/user.md)[, руководитель](../resources/group.md)[](../resources/directoryobject.md) службы[, организационный](../resources/serviceprincipal.md) [контакт, устройство](../resources/orgcontact.md) или объект каталога. [](../resources/device.md) Это транзитивная функция.
+Верни все групповые ID для [групп, в](../resources/user.md)[](../resources/directoryobject.md) которые входит указанный [пользователь, группа](../resources/group.md)[, руководитель](../resources/serviceprincipal.md) службы[, организационный](../resources/orgcontact.md) [контакт, устройство](../resources/device.md) или объект каталога. Это транзитивная функция.
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Разрешения:
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 
@@ -28,7 +23,7 @@ ms.locfileid: "62339525"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All и GroupMember.Read.All, User.Read.All и GroupMember.Read.All, User.ReadBasic.All и Group.Read.All, User.Read.All и Group.Read.All, Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All |
+|Для приложений | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All |
 
 ### <a name="group-memberships-for-a-user"></a>Членство в группе для пользователя
 
@@ -36,7 +31,7 @@ ms.locfileid: "62339525"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All и GroupMember.Read.All, User.Read.All и GroupMember.Read.All, User.ReadBasic.All и Group.Read.All, User.Read.All и Group.Read.All, Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All |
+|Для приложений | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All |
 
 ### <a name="group-memberships-for-a-group"></a>Членство в группе для группы
 
@@ -44,7 +39,7 @@ ms.locfileid: "62339525"
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
-| Приложение                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
+| Для приложений                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
 
 ### <a name="group-memberships-for-a-service-principal"></a>Членство в группе для директора службы
 
@@ -68,7 +63,7 @@ ms.locfileid: "62339525"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Для приложений                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 <!--
 

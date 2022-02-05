@@ -1,26 +1,21 @@
 ---
 title: 'directoryObject: checkMemberGroups'
-description: Проверка участия в указанном списке групп и возвращение из этого списка тех групп, в которых состоит указанный пользователь, группа, субъект-служба, контакт организации, устройство или объект каталога.
+description: 'Проверка участия в указанном списке групп и возвращение из этого списка тех групп, в которых состоит указанный пользователь, группа, субъект-служба, контакт организации, устройство или объект каталога.'
 ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5aab6bbb01b942b6f842e410ada87405f2620bdb
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346795"
 ---
+
 # <a name="directoryobject-checkmembergroups"></a>directoryObject: checkMemberGroups
 
 Пространство имен: microsoft.graph
 
-Проверьте членство в указанном списке групп и вернись из этого списка тех [групп, участником](../resources/user.md) которых является указанный [пользователь, группа](../resources/group.md)[, руководитель](../resources/serviceprincipal.md) службы[, организационный](../resources/orgcontact.md) [контакт, устройство](../resources/device.md) или [](../resources/directoryobject.md) объект каталога. Это транзитивная функция.
+Проверьте членство в указанном списке групповых ИД и вернись из этого списка тех групп (идентифицированных по ID), участником которых является указанный [пользователь, группа](../resources/user.md)[, руководитель](../resources/group.md)[](../resources/directoryobject.md) службы[, организационный](../resources/serviceprincipal.md) [контакт, устройство](../resources/orgcontact.md) или объект каталога. [](../resources/device.md) Это транзитивная функция.
 
 В одном запросе можно проверять до 20 групп. Эта функция поддерживает все группы, которые предусмотрены в Azure AD. Поскольку Microsoft 365 группы не могут содержать другие группы, членство Microsoft 365 группы всегда является прямым.
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Permissions
 
 ### <a name="group-memberships-for-a-directory-object"></a>Членство в группе для объекта каталога
 
@@ -28,7 +23,7 @@ ms.locfileid: "62346795"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All и GroupMember.Read.All, User.Read.All и GroupMember.Read.All, User.ReadBasic.All и Group.Read.All, User.Read.All и Group.Read.All, Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All |
+|Для приложений | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All |
 
 ### <a name="group-memberships-for-a-user"></a>Членство в группе для пользователя
 
@@ -36,7 +31,7 @@ ms.locfileid: "62346795"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All и GroupMember.Read.All, User.Read.All и GroupMember.Read.All, User.ReadBasic.All и Group.Read.All, User.Read.All и Group.Read.All, Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All |
+|Для приложений | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All |
 
 ### <a name="group-memberships-for-a-group"></a>Членство в группе для группы
 
@@ -44,7 +39,7 @@ ms.locfileid: "62346795"
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
-| Приложение                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
+| Для приложений                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
 
 ### <a name="group-memberships-for-a-service-principal"></a>Членство в группе для директора службы
 
@@ -68,7 +63,7 @@ ms.locfileid: "62346795"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Для приложений                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 <!--
 
