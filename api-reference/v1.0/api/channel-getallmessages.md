@@ -5,13 +5,8 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 243771069666410fc997aff1cbc70ef9ae290526
-ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61131919"
 ---
+
 # <a name="channel-getallmessages"></a>канал: getAllMessages
 
 Пространство имен: microsoft.graph
@@ -44,7 +39,8 @@ GET /teams/{team-id}/channels/getAllMessages
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
-Вы можете использовать параметр запроса `model`, который поддерживает значения `A` и `B`, в зависимости от предпочитаемых требований к лицензированию и оплате, как показано в следующих примерах. 
+Вы можете использовать параметр запроса `model`, который поддерживает значения `A` и `B`, в зависимости от предпочитаемой [модели лицензирования и оплаты](/graph/teams-licenses), как показано в следующих примерах.  
+Если параметр `model` не указан, будет использоваться [режим оценки](/graph/teams-licenses#evaluation-mode-default-requirements).
 
 ```http
 GET /teams/{team-id}/channels/getAllMessages?model=A
