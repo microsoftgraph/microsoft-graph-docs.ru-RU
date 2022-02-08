@@ -11,6 +11,21 @@ author: MSGraphDocsvTeam
 
 Пространство имен: microsoft.graph
 
+### <a name="crosstenantaccesspolicytargetconfigurationaccesstype-values"></a>значения crossTenantAccessPolicyTargetConfigurationAccessType
+
+|Member|
+|:---|
+|разрешено|
+|заблокировано|
+|unknownFutureValue|
+
+### <a name="crosstenantaccesspolicytargettype-values"></a>значения crossTenantAccessPolicyTargetType
+
+|Member|
+|:---|
+|пользователь|
+|group;|
+
 ### <a name="accesspackagefilterbycurrentuseroptions-values"></a>значения accessPackageFilterByCurrentUserOptions
 
 |Member|
@@ -222,7 +237,7 @@ author: MSGraphDocsvTeam
 
 |Member|
 |:---|
-|String|
+|Строка|
 |Целое число|
 |Справочные материалы|
 |Binary|
@@ -760,7 +775,7 @@ author: MSGraphDocsvTeam
 
 |Member|
 |:---|
-|обязательно|
+|Обязательный|
 |previouslySatisfied|
 |notApplicable|
 |unknownFutureValue|
@@ -1202,7 +1217,7 @@ author: MSGraphDocsvTeam
 
 | Member
 |:-------------------------
-| Обязательный
+| обязательно
 | необязательный
 | resource
 
@@ -2672,7 +2687,6 @@ Enum для серьезности оповещений.
 |:---|
 |или|
 |и|
-
 
 ### <a name="subjectrightsrequeststage-values"></a>значения subjectRightsRequestStage 
 

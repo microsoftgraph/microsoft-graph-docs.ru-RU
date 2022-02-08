@@ -11699,6 +11699,42 @@ items:
                         href: api/authenticationcontextclassreference-get.md
                       - name: Обновление
                         href: api/authenticationcontextclassreference-update.md
+              - name: Перекрестный доступ к клиенту (предварительный просмотр)
+                items:
+                  - name: Обзор
+                    href: resources/crosstenantaccesspolicy-overview.md
+                  - name: Политика
+                    items:
+                      - name: Политика доступа к клиенту с перекрестным клиентом
+                        href: resources/crosstenantaccesspolicy.md
+                      - name: Получение
+                        href: api/crosstenantaccesspolicy-get.md
+                      - name: Обновление
+                        href: api/crosstenantaccesspolicy-update.md
+                  - name: Параметры по умолчанию
+                    items:
+                      - name: Параметры по умолчанию доступа к меж клиентам
+                        href: resources/crosstenantaccesspolicyconfigurationdefault.md
+                      - name: Получение
+                        href: api/crosstenantaccesspolicyconfigurationdefault-get.md
+                      - name: Обновление
+                        href: api/crosstenantaccesspolicyconfigurationdefault-update.md
+                      - name: Сброс по умолчанию системы
+                        href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
+                  - name: Параметры партнеров
+                    items:
+                      - name: Параметры партнеров-партнеров для меж клиента
+                        href: resources/crosstenantaccesspolicyconfigurationpartner.md
+                      - name: Список
+                        href: api/crosstenantaccesspolicy-list-partners.md
+                      - name: Создание
+                        href: api/crosstenantaccesspolicy-post-partners.md
+                      - name: Получение
+                        href: api/crosstenantaccesspolicyconfigurationpartner-get.md
+                      - name: Обновление
+                        href: api/crosstenantaccesspolicyconfigurationpartner-update.md
+                      - name: Delete
+                        href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
               - name: Операции с политикой данных
                 href: resources/datapolicyoperation.md
                 items:
@@ -12655,7 +12691,7 @@ items:
                         href: api/entitlementmanagementsettings-update.md
               - name: Управление привилегированными пользователями
                 items:
-                  - name: Служба Privileged Identity Management
+                  - name: Управление привилегированными пользователями
                     href: resources/privilegedidentitymanagement-root.md
                   - name: Azure AD (неподготовленная))
                     items:
@@ -14110,7 +14146,7 @@ items:
                 href: api/site-search.md
               - name: Операции со списком
                 href: api/site-list-operations.md
-              - name: Permissions
+              - name: Разрешения
                 items:
                   - name: Разрешение
                     href: resources/permission.md
