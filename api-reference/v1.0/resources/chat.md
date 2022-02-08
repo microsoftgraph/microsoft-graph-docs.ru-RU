@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c37ada5b19f915996e889e1f7dc91afec597c279
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: 05f8614ca9f869d23f987e268e48c101bf7462e4
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61545107"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443039"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса чата
 
@@ -18,7 +18,7 @@ ms.locfileid: "61545107"
 
 Чат — это коллекция [chatMessages](chatmessage.md) между одним или более участниками. Участниками могут быть пользователи или приложения.
 
-> **Примечание.** Если чат связан с экземпляром [onlineMeeting,](../resources/onlinemeeting.md) то некоторые из перечисленных методов будут транзитно влиять на собрание.
+> **Примечание**. Если чат связан с экземпляром [onlineMeeting](../resources/onlinemeeting.md) , то некоторые из перечисленных методов будут транзитно влиять на собрание.
 
 ## <a name="methods"></a>Методы
 
@@ -58,10 +58,12 @@ ms.locfileid: "61545107"
 |:---------------|:--------|:----------|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Указывает тип чата. Возможные значения: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
 | createdDateTime| dateTimeOffset|  Дата и время создания чата. Только для чтения.|
-| id| Строка| Уникальный идентификатор чата. Только для чтения.|
+| id| String| Уникальный идентификатор чата. Только для чтения.|
 | lastUpdatedDateTime| dateTimeOffset|  Дата и время переименования чата или списка участников были изменены в последний раз. Только для чтения.|
 | topic| String|  (Необязательный) Тема или тема для чата. Доступно только для групповых чатов.|
 | webUrl | String| URL-адрес чата в Microsoft Teams. URL-адрес следует рассматривать как непрозрачной blob, а не размыкать. Только для чтения. |
+| tenantId| String | Идентификатор клиента, в котором был создан чат. Только для чтения.|
+| onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Представляет сведения о собрании в Интернете. Если чат не связан с собранием в Интернете, свойство пусто. Только для чтения.|
 
 ### <a name="chattype-values"></a>значения chatType 
 
@@ -97,7 +99,11 @@ ms.locfileid: "61545107"
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
   "chatType": "string",
-  "webUrl": "string"
+  "webUrl": "string",
+  "tenantId": "string",
+  "onlineMeetingInfo": {
+    "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"
+  }
 }
 ```
 

@@ -3,14 +3,14 @@ title: Наборы списков
 description: Получите список установленных объектов и их свойств.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 9532079cf515409ea5b421c5fdabb9ef95adaa68
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5b222bde2791d62107176973490f55e8f9fdf8f2
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094711"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442591"
 ---
 # <a name="list-sets"></a>Наборы списков
 Пространство имен: microsoft.graph.termStore
@@ -22,7 +22,7 @@ ms.locfileid: "59094711"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись) |TermStore.Read.All, TermStore.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) |TermStore.Read.All, TermStore.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -43,14 +43,14 @@ GET sites/{site-id}/termStore/groups/{group-id}/sets
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию заданной `200 OK` объекты в [](../resources/termstore-set.md) тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию [заданной объекты](../resources/termstore-set.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -62,7 +62,7 @@ GET sites/{site-id}/termStore/groups/{group-id}/sets
 }-->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/groups/03577abb-975e-4fb4-9ee0-4102a9108f94/sets
+GET https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/groups/03577abb-975e-4fb4-9ee0-4102a9108f94/sets
 ```
 
 ### <a name="response"></a>Отклик

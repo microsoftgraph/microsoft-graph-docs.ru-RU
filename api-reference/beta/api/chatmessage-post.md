@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b6731887ec9c9f364c6ce5dbdb910abd995dca06
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ccb06fe2585c48935bb670ba2da2a7030c049980
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109506"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443242"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Отправка chatMessage в канале или чате
 
@@ -18,11 +18,11 @@ ms.locfileid: "62109506"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отправьте новый [chatMessage в](../resources/chatmessage.md) указанном [канале](../resources/channel.md) или [в чате.](../resources/chat.md)
+Отправьте новый [chatMessage в](../resources/chatmessage.md) указанном [канале или](../resources/channel.md) [чате](../resources/chat.md).
 
-> **Примечание.** Мы не рекомендуем использовать этот API для переноса данных. Он не имеет пропускной способности, необходимой для обычной миграции.
+> **Примечание**. Мы не рекомендуем использовать этот API для переноса данных. Он не имеет пропускной способности, необходимой для обычной миграции.
 
-> **Примечание.** Это нарушение условий использования Microsoft Teams в качестве файла журнала. [](/legal/microsoft-apis/terms-of-use) Отправка сообщений, которые будут читаться людьми.
+> **Примечание**. Это нарушение условий использования для [](/legal/microsoft-apis/terms-of-use) использования Microsoft Teams в качестве файла журнала. Отправка сообщений, которые будут читаться людьми.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -31,18 +31,18 @@ ms.locfileid: "62109506"
 ### <a name="permissions-for-channel"></a>Разрешения для канала
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All** |
+| Делегированное (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All** |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Teamwork.Migrate.All |
 
-> **Примечание**. Разрешения, помеченные **, не поддерживаются и не должны использоваться.
+> **Примечание**. Разрешения, отмеченные ** поддерживаются только для обратной совместимости. Мы рекомендуем обновить решения, чтобы использовать различные разрешения и избегать использования этих разрешений в будущем.
 
-> **Примечание.** Разрешения приложений *поддерживаются только* для [миграции.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams) В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества импортированных данных.
+> **Примечание**. Разрешения приложений *поддерживаются только для* [миграции](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams). В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества импортированных данных.
 
 ### <a name="permissions-for-chat"></a>Разрешения для чата
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | ChatMessage.Send, Chat.ReadWrite |
+| Делегированное (рабочая или учебная учетная запись)     | ChatMessage.Send, Chat.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -75,16 +75,16 @@ POST /chats/{chat-id}/messages
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем JSON-представление [объекта chatMessage.](../resources/chatmessage.md) Обязательным является только свойство body; другие свойства необязательны.
+В теле запроса поставляем JSON-представление [объекта chatMessage](../resources/chatmessage.md) . Обязательным является только свойство body; другие свойства необязательны.
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект chatMessage](../resources/chatmessage.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` отклика и новый [объект chatMessage](../resources/chatmessage.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-В следующих примерах URL-адрес может использовать синтаксис [HTTP,](#http-request) описанный для отправки сообщения в [чат,](chat-post-messages.md)отправки сообщения на канал или отправки ответа на [канал.](chatmessage-post-replies.md) [](channel-post-messages.md)
+В следующих примерах URL-адрес может использовать синтаксис [HTTP](#http-request), описанный для отправки сообщения в [чат, отправки](chat-post-messages.md) сообщения на канал или отправки ответа [на канал](chatmessage-post-replies.md). [](channel-post-messages.md)
 
 ### <a name="example-1-send-a-hello-world-message-in-a-channel"></a>Пример 1. Отправка сообщения Hello World в канале
 
@@ -136,7 +136,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -253,7 +253,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -324,7 +324,7 @@ Content-type: application/json
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-> **Примечание:** ID вложения должен быть уникальным и может быть новым случайно созданным GUID. Однако, ID вложения должен быть одинаковым в элементах _тела_ и _вложений._
+> **Примечание:** ID вложения должен быть уникальным и может быть новым случайно созданным GUID. Однако, ID вложения должен быть одинаковым в элементах _тела_ и _вложений_ .
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -383,7 +383,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -449,7 +449,7 @@ Content-type: application/json
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
->**Примечание:** Файл уже должен быть в SharePoint. Чтобы найти свойства файла, получите **driveItem** для файла. Например, /drives/{id}/items/{id}. Ваш ИД вложения — это GUID в **eTag** **driveItem,** содержимое вложения — это **webUrl** папки driveItem плюс имя **driveItem,** а имя вложения — имя  **driveItem.** 
+>**Примечание:** Файл уже должен быть в SharePoint. Чтобы найти свойства файла, получите **driveItem** для файла. Например, /drives/{id}/items/{id}. Ваш ИД вложения — это GUID в **eTag** **driveItem**, содержимое вложения —  **webUrl** папки **driveItem** плюс имя **driveItem**, а имя вложения — имя **driveItem**.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -505,7 +505,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -571,7 +571,7 @@ Content-type: application/json
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-> **Примечание:** TemporaryId **в** коллекции **hostedContents** — это случайный ID,  но он должен быть одинаковым по всему телу и элементам **hostedContents.** (Обратите внимание **на временный наборId** **до 1** и ссылку в теле как `../hostedContents/1/$value` .)
+> **Примечание:** **TemporaryId в** коллекции **hostedContents** — это случайный ID, но он должен быть одинаковым по  всему телу и элементам **hostedContents**. (Обратите внимание **на временный наборId** **до 1** и ссылку в теле как `../hostedContents/1/$value`.)
 
 **contentBytes** необходимо задать двоичным строкам Base64-encoded bytes. Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
@@ -628,7 +628,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -682,7 +682,7 @@ Content-type: application/json
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-> **Примечание:** TemporaryId в коллекции **hostedContents** — это случайный ID, но должен быть одинаковым для контента **(в** вложениях) и элементов **hostedContents.**  (Обратите внимание **на временный наборId** **до 1** и ссылку в контенте как `../hostedContents/1/$value` .)
+> **Примечание:** **TemporaryId** в коллекции **hostedContents** — это случайный ID, но он должен быть одинаковым для контента **(в** вложениях **) и** элементов **hostedContents** . (Обратите внимание **на временный наборId** **до 1** и ссылку в контенте как `../hostedContents/1/$value`.)
 
 **contentBytes** необходимо задать двоичным строкам Base64-encoded bytes. Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
@@ -813,9 +813,9 @@ Content-type: application/json
 ### <a name="example-7--mention-a-channel-in-a-channel-message"></a>Пример 7: @mention канал в сообщении канала
 
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса. Сведения о том, как получить список каналов в команде, см. в [списке каналов.](../api/channel-list.md)
+Ниже приведен пример запроса. Сведения о том, как получить список каналов в группе, см. в [списке каналов](../api/channel-list.md).
 
-> Примечание: **conversationIdentityType** должен быть задан для @mention `channel` канала.
+> Примечание. **ConversationIdentityType** должен быть задан для `channel` @mention канала.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -876,7 +876,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -949,7 +949,7 @@ Content-type: application/json
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-> Примечание. **ConversationIdentityType** должен быть задан для @mention `team` группы.
+> Примечание: **conversationIdentityType** должен быть задан для `team` @mention группы.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -1011,7 +1011,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -1082,7 +1082,7 @@ Content-type: application/json
 ### <a name="example-9--mention-a-tag-in-a-channel-message"></a>Пример 9: @mention тег в сообщении канала
 
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса. Сведения о том, как получить список тегов в команде, см. в списке [teamworkTags.](../api/teamworktag-list.md)
+Ниже приведен пример запроса. Сведения о том, как получить список тегов в команде, см. в списке [teamworkTags](../api/teamworktag-list.md).
 
 
 # <a name="http"></a>[HTTP](#tab/http)

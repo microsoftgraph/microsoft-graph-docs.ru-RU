@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0cf669e597eb5233554adac34b5a24b982780dc2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cb5d4dcb7d978f1ca866f2b70e2b86940a9e6698
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100572"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443144"
 ---
 # <a name="list-messages-in-a-chat"></a>Список сообщений в чате
 
@@ -32,7 +32,7 @@ ms.locfileid: "62100572"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | ChatMessage.Read.Chat*, Chat.Read.All, Chat.ReadWrite.All |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
@@ -63,7 +63,7 @@ GET /chats/{chat-id}/messages
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

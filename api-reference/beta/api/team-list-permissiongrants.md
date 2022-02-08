@@ -5,12 +5,12 @@ author: jecha
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 692144e78bd170baf00ef521b114b21ff77bb8b3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0a31d4696a52f705cfa48ea7f250bcef9f0f6613
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126838"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443116"
 ---
 # <a name="list-permissiongrants-of-a-team"></a>Список объектов permissionGrant команды
 
@@ -30,7 +30,7 @@ ms.locfileid: "62126838"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                                                                                                                                                                           |
 | Приложение                            | TeamsAppInstallation.Read.Group *, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsApp.Read.Group* |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ GET /teams/{team-id}/permissionGrants
 | :--------------- | :------------------------- |
 | Авторизация    | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

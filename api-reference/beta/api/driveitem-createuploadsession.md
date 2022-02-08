@@ -1,6 +1,16 @@
 ---
-Автор: Описание JeremyKelley: "Создайте сеанс загрузки, чтобы позволить приложению загружать файлы до максимального размера файла".
-название: driveItem: createUploadSession ms.localizationpriority: medium ms.prod: "sites-and-lists" doc_type: apiPageType
+author: JeremyKelley
+description: Создайте сеанс отправки, чтобы приложение могло отправлять файлы, размер которых не превышает максимальный.
+title: 'driveItem: createUploadSession'
+ms.localizationpriority: medium
+ms.prod: sites-and-lists
+doc_type: apiPageType
+ms.openlocfilehash: dfb6b231b0db8664b7c01fd81f2697f4387554b6
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442647"
 ---
 # <a name="driveitem-createuploadsession"></a>driveItem: createUploadSession
 
@@ -92,7 +102,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 В отклике на этот запрос будут представлены подробные сведения о новом экземпляре [uploadSession](../resources/uploadsession.md) (в том числе URL-адрес для отправки фрагментов файла). 
 
->**Примечание:** {item-path} должен содержать имя элемента, указанного в теле запроса.
+>**Примечание.** {item-path} должен содержать имя элемента, указанного в тексте запроса.
 
 <!-- { "blockType": "request", "name": "upload-fragment-create-session", "scopes": "files.readwrite", "target": "action" } -->
 
@@ -210,8 +220,7 @@ Content-Type: application/json
 - После того как последний диапазон байтов файла методом PUT достигает URL-адреса отправки, отправьте последний запрос PUT таким же образом, которым вы бы [обрабатывали ошибки отправки](#handle-upload-errors) (в настоящее время поддерживается только в OneDrive персональный).
 
 
-После завершения отправки сервер ответит на последний запрос со значением `HTTP 201 Created` или `HTTP 200 OK`.
-Текст ответа также включает набор свойств по умолчанию для ресурса **driveItem**, представляющего полностью отправленный файл.
+После завершения отправки сервер ответит на последний запрос со значением `HTTP 201 Created` или `HTTP 200 OK`. Текст отклика также включает набор свойств по умолчанию для ресурса **driveItem**, представляющего полностью отправленный файл.
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
 

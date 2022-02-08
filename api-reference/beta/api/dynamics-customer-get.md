@@ -4,15 +4,15 @@ description: Получает объект клиента в Dynamics 365 Busine
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: df34248e6977752504f1f1c8f0997fbc0fa8f434
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b72df8585d56a8325ff1d7e6885430854ef6a0a2
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52045637"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442892"
 ---
 # <a name="get-customers"></a>Получить клиентов
 
@@ -20,37 +20,39 @@ ms.locfileid: "52045637"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта клиента для Центра бизнеса Dynamics 365.
+Извлечение свойств и связей объекта [клиента](../resources/dynamics-customer.md) для Центра бизнеса Dynamics 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
 |Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
-```
+```http
 GET /financials/companies/{id}/customers/{id}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |------|-----|
-|Авторизация  |Bearer {токен}. Обязательный. |
+|Авторизация  |Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и объект `200 OK` клиента в тексте ответа. 
+В случае успешной работы этот метод возвращает код `200 OK` отклика и **объект клиента в** тексте ответа.
 
-**Запрос**
+## <a name="examples"></a>Примеры
+
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -58,7 +60,7 @@ GET /financials/companies/{id}/customers/{id}
 GET https://graph.microsoft.com/beta/financials/companies/{id}/customers/{id}
 ```
 
-**Отклик**
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
 

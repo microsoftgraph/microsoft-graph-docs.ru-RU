@@ -3,26 +3,26 @@ title: Создание связи
 description: Создайте новый объект связи.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 5d76e8e424b9ab1aad1311eb1b9a8b3053bfef31
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 7e2c77a47f89eadf5140da215a0386917520f644
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942599"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443404"
 ---
 # <a name="create-relation"></a>Создание связи
 Пространство имен: microsoft.graph.termStore
 
-Создайте новый [объект связи.](../resources/termstore-relation.md) Они используются для создания закрепленных и повторно используемых отношений между терминами или между термином и набором. Если между термином и набором создается закрепленный или повторно задаваемый термин, то в теле столба необходимо установить *null* **fromTerm.**
+Создайте новый [объект связи](../resources/termstore-relation.md) . Они используются для создания закрепленных и повторно используемых отношений между терминами или между термином и набором. Если между термином и набором создается закрепленный или повторно задаваемый термин, то в теле столба **необходимо установить null fromTerm**.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись) |TermStore.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) |TermStore.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -44,9 +44,9 @@ POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/relations
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляют представление JSON объекта [связи.](../resources/termstore-relation.md)
+В теле запроса поставляют представление JSON объекта [связи](../resources/termstore-relation.md) .
 
-В следующей таблице показаны свойства, необходимые при создании объекта [связи.](../resources/termstore-relation.md)
+В следующей таблице показаны свойства, необходимые при создании объекта [связи](../resources/termstore-relation.md) .
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -58,7 +58,7 @@ POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/relations
 
 ## <a name="response"></a>Отклик
 
-В случае успешного решения этот метод возвращает код ответа и `201 Created` [объект microsoft.graph.termStore.relation](../resources/termstore-relation.md) в тексте ответа.
+В случае успешного `201 Created` решения этот метод возвращает код ответа и [объект microsoft.graph.termStore.relation](../resources/termstore-relation.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -71,7 +71,7 @@ POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/relations
 -->
 
 ``` http
-POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/v1.0/27fd2d26-60d3-485c-9420-0c71f74a0cfd/terms/8861b57a-c777-49e7-826f-47d6afecf80d/relations
+POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/27fd2d26-60d3-485c-9420-0c71f74a0cfd/terms/8861b57a-c777-49e7-826f-47d6afecf80d/relations
 Content-Type: application/json
 
 {

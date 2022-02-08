@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8b23b63dcccba6945e60f13d87590f6bc81ae9ce
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5a21d5c817eb93314f76b55c1d2c1f0994ff08f9
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101604"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443418"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -24,15 +24,15 @@ ms.locfileid: "62101604"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Channel.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
+|Делегированное (рабочая или учебная учетная запись) | Channel.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Channel.Create.Group,*Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
+|Для приложений | Channel.Create.Group *, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
-> **Примечания.** Разрешения, отмеченные * использование [согласия, определенного для ресурсов.]( https://aka.ms/teams-rsc) Разрешения, отмеченные **, не используются и не должны использоваться.
+> **Примечания**. Разрешения, отмеченные ** поддерживаются только для обратной совместимости. Мы рекомендуем обновить решения, чтобы использовать различные разрешения и избегать использования этих разрешений в будущем. Разрешения, помеченные *, [используют разрешение, определенное для ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 >
 > Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 >
-> В будущем Корпорация Майкрософт может потребовать от вас или ваших клиентов уплаты дополнительных сборов в зависимости от объема импортируемых данных с помощью API Teamwork.Migrate.All и/или [переноса.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+> В будущем Корпорация Майкрософт может потребовать от вас или ваших клиентов уплаты дополнительных сборов в зависимости от объема данных, импортируемых с помощью API Teamwork.Migrate.All и/или [переноса](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -193,7 +193,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приводится пример отклика.
+Ниже показан пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -272,8 +272,8 @@ Content-Type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приводится пример отклика. Заглавный заглавный пункт Content-Location в ответе указывает путь к каналу, который будет задан.
-После предварительного использования этот канал можно использовать для [импорта сообщений.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+Ниже показан пример отклика. Заглавный заглавный пункт Content-Location в ответе указывает путь к каналу, который будет задан.
+После этого этот канал можно использовать для [импорта сообщений](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 <!-- {
   "blockType": "response",
   "truncated": true,

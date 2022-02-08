@@ -5,19 +5,19 @@ author: jecha
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ce3f28a74eaf904331b21810509237b219077c5f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e4310d314ed345c969be17e4d894ce1b36d82da3
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103861"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443137"
 ---
 # <a name="list-operations-on-a-chat"></a>Список операций в чате
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список [всех Teams async,](../resources/teamsasyncoperation.md) которые запускались или запускались в указанном [чате.](../resources/chat.md)
+Перечислить [Teams операции async](../resources/teamsasyncoperation.md), которые были запущены или запущены в указанном [чате](../resources/chat.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "62103861"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | ChatSettings.Read.Chat *, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { 
@@ -39,9 +39,9 @@ ms.locfileid: "62103861"
 GET /chats/{chat-id}/operations
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
-Этот метод поддерживает `$filter` параметры `$select` запросов , и `$top` `$skip` [OData,](/graph/query-parameters) чтобы помочь настроить ответ.
+Этот метод поддерживает параметры `$filter`запросов , и `$skip` `$select``$top`[OData](/graph/query-parameters), чтобы помочь настроить ответ.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -49,13 +49,13 @@ GET /chats/{chat-id}/operations
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы возвращается код ответа и коллекция объектов `200 OK` [teamsAsyncOperation](../resources/teamsasyncoperation.md) в тексте отклика.
+В случае успешной работы `200 OK` возвращается код ответа и коллекция объектов [teamsAsyncOperation](../resources/teamsasyncoperation.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

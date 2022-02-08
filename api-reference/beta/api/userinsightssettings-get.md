@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: aaef6c52e025d1ee49fde994763b5195c21e4d20
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cc4f6523b836efcfc0fd57251af74e855ffb54c9
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135000"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443361"
 ---
 # <a name="get-userinsightssettings"></a>Get userInsightsSettings
 
@@ -18,7 +18,7 @@ ms.locfileid: "62135000"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите настраиваемые пользователем параметры конфиденциальности для [itemInsights](../resources/iteminsights.md) и сведения [о часах собраний.](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1)
+Получите настраиваемые пользователем параметры конфиденциальности для [insights itemInsights](../resources/iteminsights.md) и [собраний](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "62135000"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.Read, User.ReadWrite |
+|Делегированное (рабочая или учебная учетная запись) | User.Read, User.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -35,10 +35,10 @@ ms.locfileid: "62135000"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/settings/itemInsights
-GET /user/{userId}/settings/itemInsights
+GET /users/{userId}/settings/itemInsights
 ```
 
->**Примечание:** Запросы с `userId` разрешениями User.ReadWrite.All доступны только пользователю или `userPrincipalName` пользователю. Дополнительные сведения см. в статье [Разрешения](/graph/permissions-reference).
+>**Примечание:** Запросы с разрешениями `userId` `userPrincipalName` User.ReadWrite.All доступны только пользователю или пользователю. Дополнительные сведения см. в статье [Разрешения](/graph/permissions-reference).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -46,13 +46,13 @@ GET /user/{userId}/settings/itemInsights
 |:-----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект userInsightsSettings](../resources/userinsightssettings.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект userInsightsSettings](../resources/userinsightssettings.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/me/settings/itemInsights
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

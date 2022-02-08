@@ -5,12 +5,12 @@ author: jecha
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bfbb9f7face458382af90f9899d76461a336871b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 059b68c1f7ffafce9484d83d3642fd078e8a88d1
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118158"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443228"
 ---
 # <a name="get-teamsasyncoperation"></a>Get teamsAsyncOperation
 Пространство имен: microsoft.graph
@@ -30,7 +30,7 @@ ms.locfileid: "62118158"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | ChatSettings.Read.Chat *, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { 
@@ -41,7 +41,7 @@ ms.locfileid: "62118158"
 GET /chats/{chat-id}/operations/{operation-id}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает параметр `$select` [запроса OData](/graph/query-parameters) для настройки ответа.
 
@@ -51,13 +51,13 @@ GET /chats/{chat-id}/operations/{operation-id}
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы возвращается код ответа и объект `200 OK` [teamsAsyncOperation](../resources/teamsasyncoperation.md) в тексте ответа.
+В случае успешной работы возвращается код `200 OK` ответа и объект [teamsAsyncOperation](../resources/teamsasyncoperation.md) в тексте ответа.
 
 ## <a name="example-get-operation-on-chat"></a>Пример. Получить операцию в чате
 

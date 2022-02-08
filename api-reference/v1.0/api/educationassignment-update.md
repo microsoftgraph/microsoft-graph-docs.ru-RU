@@ -5,29 +5,29 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: faca28843e5e9b6c6f4eadea6f9be265ff56bd9e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bc09b5ce5318616de5ca0f138897453b49da8f91
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092366"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442850"
 ---
 # <a name="update-educationassignment"></a>Обновление системы образования
 
 Пространство имен: microsoft.graph
 
-Обновление [объекта educationAssignment.](../resources/educationassignment.md) 
+Обновление [объекта educationAssignment](../resources/educationassignment.md) . 
 
 Выполнить это действие могут только преподаватели. 
 
-Кроме того, запрос на изменение состояния назначения **с** помощью действия [публикации.](../api/educationassignment-publish.md) Для этого не используйте операцию PATCH.
+Кроме того, запрос на изменение состояния назначения **с** помощью действия [публикации](../api/educationassignment-publish.md) . Для этого не используйте операцию PATCH.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Делегированное (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
@@ -42,7 +42,7 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 | Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса поставляют только значения полей, которые необходимо обновить. 
 
 Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
@@ -50,9 +50,9 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |addedStudentAction|Строка| Описывает, следует ли распределять назначение среди учащихся, добавленных после даты публикации назначения.|
-|addToCalendarAction|educationAddToCalendarOptions|Необязательное поле для управления **поведением** назначения для добавления **назначений** в календари учащихся и преподавателей при **публикации** назначения. Допустимые значения: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение `Prefer: include - unknown -enum-members` (ы) в этом [развиваемом переуме:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `studentsOnly` . Необязательно.|
+|addToCalendarAction|educationAddToCalendarOptions|Необязательное поле для управления **поведением** назначения для добавления **назначений** в календари учащихся и преподавателей **при публикации** назначения. Допустимые значения: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Обратите внимание, что для `Prefer: include - unknown -enum-members` получения следующего значения(ы) в этом развиваемом переуме следует использовать загон [запроса](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly`. Необязательный параметр.|
 |allowLateSubmissions|Логическое| Могут ли студенты отправлять отправку после срока.|
-|allowStudentsToAddResourcesToSubmission|Логический| Может ли студент добавлять ресурсы в отправку или нет. Кроме того, указывает, соответствуют ли все ресурсы в представлении списку ресурсов назначения. |
+|allowStudentsToAddResourcesToSubmission|Логическое| Может ли студент добавлять ресурсы в отправку или нет. Кроме того, указывает, соответствуют ли все ресурсы в представлении списку ресурсов назначения. |
 |assignDateTime|DateTimeOffset| Указывает дату публикации назначения для учащихся. Невозможно изменить после публикации назначения.|
 |assignTo|[educationAssignmentRecipient](../resources/educationassignmentrecipient.md)| Студенты, получаювшие назначение.|
 |closeDateTime|DateTimeOffset| Дата закрытия назначения для отправки. Это необязательный поле, которое может быть равно нуль, если назначение не позволяет использоватьLateSubmissions или closeDateTime то же самое, что и dueDateTime, но если указано, оно должно быть больше или равно dueDateTime.|
@@ -60,10 +60,10 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 |dueDateTime|DateTimeOffset| Назначение даты должно быть. |
 |классификация|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)| Оценка назначения.|
 |инструкции|itemBody| Инструкции, которые будут даны учащимся вместе с назначением. |
-|notificationChannelUrl|String| Канал для связи уведомлений, связанных с назначением. Чтобы изменить URL-адрес, `assignTo` установите значение [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md). URL-адрес канала не может измениться после публикации назначения.|
+|notificationChannelUrl|Строка| Канал для связи уведомлений, связанных с назначением. Чтобы изменить URL-адрес, `assignTo` установите значение [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md). URL-адрес канала не может измениться после публикации назначения.|
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа и обновленный объект `200 OK` [educationAssignment](../resources/educationassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` ответа и обновленный объект [educationAssignment](../resources/educationassignment.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -119,7 +119,7 @@ Content-type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -183,6 +183,7 @@ Content-type: application/json
 ## <a name="see-also"></a>См. также
 
 * [Состояния, переходы и ограничения для назначений и представлений](/graph/assignments-submissions-states-transition)
+* [Укажите канал по умолчанию для уведомлений о назначении образования](/graph/education-build-notificationchannelurl)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4c19c719f9343a03b4811bcb5fcef5115d7b654b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 60009cfdc127f26c5e90773f84eb56f96b25949c
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124871"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443004"
 ---
 # <a name="list-replies"></a>Ответы списка
 
@@ -18,7 +18,7 @@ ms.locfileid: "62124871"
 
 Список всех ответов на [сообщение](../resources/chatmessage.md) в [канале](../resources/channel.md) группы.
 
-В этом методе перечислены только ответы указанного сообщения, если таково. Чтобы получить само сообщение, просто позвоните [получить сообщение канала](chatmessage-get.md).
+В этом методе перечислены только ответы указанного сообщения, если таково. Чтобы получить само сообщение, просто позвоните [, чтобы получить сообщение канала](chatmessage-get.md).
 
 > **Примечание**. Этот API поддерживает подписку на изменения (создание, обновление и удаление) с использованием [уведомлений об изменениях](../resources/webhooks.md). Это позволяет вызывающим подписаться на изменения и получать их в режиме реального времени. Дополнительные сведения см. в разделе [Получение уведомлений о сообщениях](/graph/teams-changenotifications-chatmessage).
 
@@ -31,7 +31,7 @@ ms.locfileid: "62124871"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение| ChannelMessage.Read.Group*, ChannelMessage.Read.All |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
@@ -52,7 +52,7 @@ GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

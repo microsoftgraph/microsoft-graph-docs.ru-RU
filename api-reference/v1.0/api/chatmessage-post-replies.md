@@ -5,20 +5,20 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a3b5fb7c322313e07a19e3fa9983e862d2829bc9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 34f36b4fab435480bf3f48be8ef66cd1d05076fa
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62088758"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443221"
 ---
 # <a name="send-replies-to-a-message-in-a-channel"></a>Отправка ответов на сообщение в канале
 
 Пространство имен: microsoft.graph
 
-Отправьте новый ответ в [chatMessage в](../resources/chatmessage.md) указанном [канале.](../resources/channel.md)
+Отправьте новый ответ в [chatMessage в](../resources/chatmessage.md) указанном [канале](../resources/channel.md).
 
-> **Примечание.** Это нарушение условий использования Microsoft Teams в качестве файла журнала. [](/legal/microsoft-apis/terms-of-use) Отправка сообщений, которые будут читаться людьми.
+> **Примечание**. Это нарушение условий использования для [](/legal/microsoft-apis/terms-of-use) использования Microsoft Teams в качестве файла журнала. Отправка сообщений, которые будут читаться людьми.
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD022 -->
 <!-- markdownlint-disable MD025 -->
@@ -29,13 +29,13 @@ ms.locfileid: "62088758"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All** |
+| Делегированное (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All** |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Teamwork.Migrate.All |
 
-> **Примечание**. Разрешения, помеченные **, не поддерживаются и не должны использоваться.
+> **Примечание**. Разрешения, отмеченные ** поддерживаются только для обратной совместимости. Мы рекомендуем обновить решения, чтобы использовать различные разрешения и избегать использования этих разрешений в будущем.
 
-> **Примечание.** Разрешения приложений *поддерживаются только* для [миграции.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+> **Примечание**. Разрешения приложений *поддерживаются только для* [миграции](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества импортированных данных.
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -49,8 +49,8 @@ POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса поставляем представление JSON объекта [сообщения.](../resources/chatmessage.md) Обязательным является только свойство body, другие свойства необязательны.
+## <a name="request-body"></a>Текст запроса
+В тексте запроса поставляем представление JSON объекта [сообщения](../resources/chatmessage.md) . Обязательным является только свойство body, другие свойства необязательны.
 
 ## <a name="response"></a>Отклик
 
@@ -60,7 +60,7 @@ POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 
 ### <a name="example-1-send-a-new-reply-to-a-chatmessage"></a>Пример 1. Отправка нового ответа в chatMessage
 
-Дополнительный список примеров см. в [странице Create chatMessage в канале или чате.](chatmessage-post.md)
+Дополнительный список примеров см. в странице [Create chatMessage в канале или чате](chatmessage-post.md).
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -111,7 +111,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -164,11 +164,11 @@ Content-type: application/json
 
 ### <a name="example-2-import-messages"></a>Пример 2. Импорт сообщений
 
-> **Примечание.** Область `Teamwork.Migrate.All` разрешений требуется для этого сценария.
+> **Примечание**. Для этого `Teamwork.Migrate.All` сценария требуется область разрешений.
 
 #### <a name="request"></a>Запрос
 
-В следующем примере покажите, как импортировать сообщения с использованием ключей и ключей в `createDateTime` `from` тексте запроса.
+В следующем примере покажите, `createDateTime` `from` как импортировать сообщения с использованием ключей и ключей в тексте запроса.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8e9df85b9b55088cc9bb0730801216ebcd9f4df6
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: f749b6e6f34cea41d061f4422da3847bff7417a1
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225681"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442983"
 ---
 # <a name="update-team"></a>Обновление объекта команды
 
@@ -18,7 +18,7 @@ ms.locfileid: "62225681"
 
 
 
-Обновление свойств указанной [группы.](../resources/team.md)
+Обновление свойств указанной [группы](../resources/team.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,7 +30,7 @@ ms.locfileid: "62225681"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Application | TeamSettings.ReadWrite.Group *, TeamSettings.ReadWrite.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). Разрешения, отмеченные **, не используются и не должны использоваться.
+> **Примечание**. Разрешения, отмеченные ** поддерживаются только для обратной совместимости. Мы рекомендуем обновить решения, чтобы использовать различные разрешения и избегать использования этих разрешений в будущем. Разрешения, помеченные *, [используют разрешение, определенное для ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -47,7 +47,7 @@ PATCH /teams/{team-id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляют представление JSON объекта [группы.](../resources/team.md)
+В теле запроса поставляют представление JSON объекта [группы](../resources/team.md) .
 
 ## <a name="response"></a>Отклик
 

@@ -1,6 +1,16 @@
 ---
-Автор: Название JeremyKelley: driveItem: скопируйте ms.localizationpriority: medium ms.prod: описание "sharepoint": "Асинхронно создает копию driveItem (включая любых детей) под новым родительским элементом или с новым именем".
+author: JeremyKelley
+title: 'driveItem: скопируйте'
+ms.localizationpriority: medium
+ms.prod: sharepoint
+description: Асинхронно создает копию элемента driveItem (включая все дочерние элементы) в новом родительском элементе или с новым именем.
 doc_type: apiPageType
+ms.openlocfilehash: f5ec199fee10ca140f0fc9a067244a73660a3dee
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443354"
 ---
 # <a name="driveitem-copy"></a>driveItem: скопируйте
 
@@ -109,7 +119,7 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
 ```
 
 В значении заголовка `Location` имеется URL-адрес службы, которая возвращает сведения о текущем состоянии операции копирования.
-Эти сведения можно использовать для [определения завершения копирования.](/graph/long-running-actions-overview)
+Эти сведения можно использовать для [определения завершения копирования](/graph/long-running-actions-overview).
 
 ### <a name="remarks"></a>Замечания
 

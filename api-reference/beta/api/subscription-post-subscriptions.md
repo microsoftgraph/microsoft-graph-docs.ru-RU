@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: bdcd8a73334362e7315cdcbb4a892b1dbd8aa27c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 83207601601a6813bc9988813236445719fa4e63
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130801"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442878"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -63,7 +63,7 @@ ms.locfileid: "62130801"
 |[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
@@ -109,7 +109,7 @@ POST /subscriptions
 
 ## <a name="response"></a>Отклик
 
-В случае успешного использования этот метод возвращает код отклика и объект подписки `201 Created` в тексте [](../resources/subscription.md) ответа.
+В случае успешного использования этот метод возвращает код `201 Created` отклика [и объект](../resources/subscription.md) подписки в тексте ответа.
 
 Подробнее о том, как возвращаются ошибки, см. в статье [Возвращение ошибок][error-response].
 
@@ -229,7 +229,7 @@ Content-type: application/json
 
 #### <a name="notification-endpoint-validation"></a>Проверка конечной точки уведомлений
 
-Конечная точка уведомления о подписке (указанная в свойстве **notificationUrl)** должна быть способна отвечать на запрос проверки, как описано в настройках уведомлений об изменениях в пользовательских [данных.](/graph/webhooks#notification-endpoint-validation) Если проверка завершилась сбоем, запрос на создание подписки возвращает ошибку 400 (неверный запрос).
+Конечная точка уведомления о подписке (указанная в свойстве **notificationUrl** ) должна быть способна отвечать на запрос проверки, как описано в настройках уведомлений об изменениях в пользовательских [данных](/graph/webhooks#notification-endpoint-validation). Если проверка завершилась сбоем, запрос на создание подписки возвращает ошибку 400 (неверный запрос).
 
 [error-response]: /graph/errors
 

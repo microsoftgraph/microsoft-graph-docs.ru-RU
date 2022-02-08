@@ -1,6 +1,17 @@
 ---
-Описание: JeremyKelley: "Асинхронно создает копию [driveItem][item-resource] (включая любых детей) под новым родительским элементом или с новым именем".
-ms.date: 09/10/2017 title: driveItem: copy ms.localizationpriority: medium ms.prod: "sharepoint" doc_type: apiPageType
+author: JeremyKelley
+description: Асинхронно создает копию [driveItem][item-resource] (включая любых детей) под новым родительским элементом или с новым именем.
+ms.date: 09/10/2017
+title: 'driveItem: скопируйте'
+ms.localizationpriority: medium
+ms.prod: sharepoint
+doc_type: apiPageType
+ms.openlocfilehash: 236d647414b42023a939ef7728e356091f59aa74
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443165"
 ---
 # <a name="driveitem-copy"></a>driveItem: скопируйте
 
@@ -31,7 +42,7 @@ POST /me/drive/items/{item-id}/copy
 POST /sites/{siteId}/drive/items/{itemId}/copy
 POST /users/{userId}/drive/items/{itemId}/copy
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает параметр `@microsoft.graph.conflictBehavior` запроса для настройки поведения при конфликте.
 
@@ -107,7 +118,7 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 В значении заголовка `Location` имеется URL-адрес службы, которая возвращает сведения о текущем состоянии операции копирования.
-Эти сведения можно использовать для [определения завершения копирования.](/graph/long-running-actions-overview)
+Эти сведения можно использовать для [определения завершения копирования](/graph/long-running-actions-overview).
 
 ### <a name="remarks"></a>Замечания
 

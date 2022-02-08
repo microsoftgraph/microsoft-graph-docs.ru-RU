@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: b9b04e4d7ceeb914311470bb61eff214475ace52
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 2aaa800fd49bc87f6dbe6f107d72a4818e8bc6d6
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344364"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443053"
 ---
 # <a name="chatmessage-delta"></a>chatMessage: delta
 
@@ -43,7 +43,7 @@ ms.locfileid: "62344364"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                |
 |Приложение                            | ChannelMessage.Read.Group*, ChannelMessage.Read.All |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).

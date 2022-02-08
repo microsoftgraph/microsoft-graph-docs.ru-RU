@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bd033214b1e999b6d4ec5d746af509f2e34d0500
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 15db1271f4d7f31525b2b548542531048e14b887
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129058"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443186"
 ---
 # <a name="list-channel-messages"></a>Перечисление сообщений в каналах
 
@@ -32,7 +32,7 @@ ms.locfileid: "62129058"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение| ChannelMessage.Read.Group*, ChannelMessage.Read.All |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
@@ -57,7 +57,7 @@ GET /teams/{team-id}/channels/{channel-id}/messages
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

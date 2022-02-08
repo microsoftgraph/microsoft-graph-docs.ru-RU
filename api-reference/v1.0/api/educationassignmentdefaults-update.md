@@ -5,17 +5,17 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ac354e9e373b7c733652fb22fab326dd1a0010be
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e07737d9a5afcd2c97342425b7f47966e5c26350
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62111367"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442843"
 ---
 # <a name="update-educationassignmentdefaults"></a>Обновление educationAssignmentDefaults
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [educationAssignmentDefaults.](../resources/educationassignmentdefaults.md)
+Обновление свойств объекта [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) .
 
 Только преподаватели могут обновлять эти параметры.
 
@@ -24,7 +24,7 @@ ms.locfileid: "62111367"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Делегированное (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. |
 
@@ -52,15 +52,15 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction| Действия по умолчанию класса для учащихся, добавленные после даты публикации назначения. Возможные значения: `none`, `assignIfOpen`. Значение по умолчанию — `none`.|
-|addToCalendarAction|educationAddToCalendarOptions|Необязательное поле для управления **поведением** назначения для добавления **назначений** в календари учащихся и преподавателей при **публикации** назначения. Допустимые значения: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение `Prefer: include - unknown -enum-members` (ы) в этом [развиваемом переуме:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `studentsOnly` . Необязательно.|
+|addToCalendarAction|educationAddToCalendarOptions|Необязательное поле для управления **поведением** назначения для добавления **назначений** в календари учащихся и преподавателей **при публикации** назначения. Допустимые значения: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Обратите внимание, что для `Prefer: include - unknown -enum-members` получения следующего значения(ы) в этом развиваемом переуме следует использовать загон [запроса](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly`. Необязательный параметр.|
 |dueTime|TimeOfDay| Значение по умолчанию класса для должного поля времени. Значение по умолчанию: `23:59:00`.|
-|notificationChannelUrl|String| По умолчанию Teams канал для отправки уведомлений, связанных с назначением. Значение по умолчанию — `null`.|
+|notificationChannelUrl|Строка| По умолчанию Teams канал для отправки уведомлений, связанных с назначением. Значение по умолчанию — `null`.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и обновленный объект `200 OK` [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) в тексте ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код ответа и обновленный объект [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -128,3 +128,6 @@ Content-Type: application/json
 }
 ```
 
+## <a name="see-also"></a>См. также
+
+* [Укажите канал по умолчанию для уведомлений о назначении образования](/graph/education-build-notificationchannelurl)

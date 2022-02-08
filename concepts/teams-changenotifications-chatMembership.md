@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 9069a4b2ec82c14c5de0b7bdda91e48b5ae1b53a
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: 0b2f2c9cff290ec80a298a43744fa357d9c3bdf0
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60084030"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442927"
 ---
 # <a name="get-change-notifications-for-chat-membership-using-microsoft-graph"></a>Получение уведомлений об изменениях участников чата с помощью Microsoft Graph
 
@@ -60,7 +60,7 @@ Content-Type: application/json
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
 |Приложение | ChatMember.Read.Chat *, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All  | Бета |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example"></a>Пример
 
