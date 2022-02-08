@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4d631639da6864f60258c36d1a70e967f8f3829d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e80217af8310e6d4abb36a7c5a24a9f2d470338f
+ms.sourcegitcommit: 38e16940da74bda465f890d945f9dc4aa412c6f4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101438"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62397322"
 ---
 # <a name="chats-getallmessages"></a>чаты: getAllMessages
 
@@ -42,7 +42,8 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
-Вы можете использовать параметр запроса `model`, который поддерживает значения `A` и `B`, в зависимости от предпочитаемых требований к лицензированию и оплате, как показано в следующих примерах.  
+Вы можете использовать параметр запроса `model`, который поддерживает значения `A` и `B`, в зависимости от предпочитаемой [модели лицензирования и оплаты](/graph/teams-licenses), как показано в следующих примерах.  
+Если параметр `model` не указан, будет использоваться [режим оценки](/graph/teams-licenses#evaluation-mode-default-requirements).
 
 ```http
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=A

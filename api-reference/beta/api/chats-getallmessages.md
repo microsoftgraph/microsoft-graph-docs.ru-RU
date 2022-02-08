@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 98681b5dc0fd59a246bdd1f545a9189f1cb6ee2a
-ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
+ms.openlocfilehash: 34b428e38e36fb1ce8ace217d9daddbc5f898d21
+ms.sourcegitcommit: 38e16940da74bda465f890d945f9dc4aa412c6f4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61131940"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62396977"
 ---
 # <a name="chats-getallmessages"></a>чаты: getAllMessages
 
@@ -44,7 +44,8 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
-Вы можете использовать параметр запроса `model`, который поддерживает значения `A` и `B`, в зависимости от предпочитаемых требований к лицензированию и оплате. Если параметр `model` не указан, будет использоваться [режим оценки](/graph/teams-licenses#evaluation-mode-default-requirements). Ниже представлены примеры.
+Вы можете использовать параметр запроса `model`, который поддерживает значения `A` и `B`, в зависимости от предпочитаемой [модели лицензирования и оплаты](/graph/teams-licenses), как показано в следующих примерах.  
+Если параметр `model` не указан, будет использоваться [режим оценки](/graph/teams-licenses#evaluation-mode-default-requirements).
 
 ```http
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
@@ -60,7 +61,7 @@ GET /users/{id}/chats/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 202
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="response"></a>Отклик
 

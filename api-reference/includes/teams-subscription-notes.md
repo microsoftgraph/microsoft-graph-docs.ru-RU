@@ -3,12 +3,12 @@ author: nkramer
 ms.topic: include
 ms.date: 01/25/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: e9b65c0ed6c82e94a38bbeb08b208fbe24d60176
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 5702c0489c9662f85b02c31a6cf6d3aba241208b
+ms.sourcegitcommit: 38e16940da74bda465f890d945f9dc4aa412c6f4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390815"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62425300"
 ---
 <!-- markdownlint-disable MD041-->
 
@@ -21,8 +21,8 @@ ms.locfileid: "61390815"
 Вы должны использовать заголовок запроса `Prefer: include-unknown-enum-members` для получения следующих значений в **chatMessage** **messageType** [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `systemEventMessage` для ресурса `/teams/{id}/channels/{id}/messages` и `/chats/{id}/messages`.
 
 > [!NOTE]
->`/teams/getAllMessages`и `/chats/getAllMessages` имеет требования к [лицензированию и оплате](/graph/teams-licenses).
-> `/teams/getAllMessages` и `/chats/getAllMessages` поддерживают параметры `model=A` и `model=B` запросов.
+>`/teams/getAllMessages`, `/chats/getAllMessages`, `/me/chats/getAllMessages` и `/users/{id}/chats/getAllMessages` имеют [требования к лицензированию и оплате](/graph/teams-licenses).
+> `/teams/getAllMessages` и `/chats/getAllMessages` поддерживают параметры `model=A` и `model=B` запросов, а `/me/chats/getAllMessages` и `/users/{id}/chats/getAllMessages` поддерживают только `model=B`.
 > Если модель не указана, будет использоваться [режим оценки](/graph/teams-licenses#evaluation-mode-default-requirements).
 
 ### <a name="conversationmember"></a>conversationMember
