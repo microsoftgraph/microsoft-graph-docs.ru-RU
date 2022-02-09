@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c082d50af07d7a6652fe2c15f8e0676c5dbe46e9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5e4e4079bf3e7002ed84797f0989fb66c0326484
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098359"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442871"
 ---
 # <a name="list-joinedteams"></a>Перечисление объектов joinedTeams
 
@@ -29,7 +29,7 @@ ms.locfileid: "62098359"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Application | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All **, Directory.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные **, не поддерживаются и не должны использоваться.
+> **Примечание**. Разрешения, отмеченные **, поддерживаются только для обратной совместимости. Рекомендуется обновить решения, чтобы использовать другие разрешения и избегать использования этих разрешений в будущем.
 
 > **Примечание.** В настоящее время при использовании делегированных пользователем разрешений эта операция поддерживается только для пользователя `me`. При использовании разрешений для приложений она поддерживается для всех пользователей путем указания определенного идентификатора пользователя (псевдоним `me` не поддерживается при использовании разрешений для приложений). Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).
 
@@ -49,7 +49,7 @@ GET /users/{id | user-principal-name}/joinedTeams
 | Авторизация  | Bearer {token}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

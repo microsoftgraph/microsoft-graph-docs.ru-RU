@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: c70e5e90325e9998113304a37e0fd261ced1812f
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 4aa74802d54f088d763b14ee0f951a1d32e60de9
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225891"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442906"
 ---
 # <a name="list-channels"></a>Перечисление каналов
 
@@ -30,7 +30,7 @@ ms.locfileid: "62225891"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Application | ChannelSettings.Read.Group *, ChannelSettings.ReadWrite.Group*, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All **, Group.ReadWrite.All**, Directory.Read.All **, Directory.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). Разрешения, отмеченные **, не используются и не должны использоваться.
+> **Примечание**. Разрешения, отмеченные **, поддерживаются только для обратной совместимости. Рекомендуется обновить решения, чтобы использовать другие разрешения и избегать использования этих разрешений в будущем. Разрешения, отмеченные *, используют [согласие для конкретного ресурса](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -180,7 +180,7 @@ GET https://graph.microsoft.com/beta/teams/64c323f2-226a-4e64-8ba4-3e6e3f7b9330/
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

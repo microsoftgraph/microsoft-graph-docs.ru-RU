@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0e39310fcbc3bbe69c13525f74a4d3631e8e8dbc
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 01a1641ddb180bf54ce9ded0096240faa5b0535d
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122934"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443235"
 ---
 # <a name="get-team-photo"></a>Как получить фотографию группы
 
@@ -32,7 +32,7 @@ ms.locfileid: "62122934"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Application | TeamSettings.Read.Group *, TeamSettings.ReadWrite.Group*, Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All **, Group.ReadWrite.All**, Directory.Read.All **, Directory.ReadWrite.All**  |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). Разрешения, отмеченные **, не используются и не должны использоваться.
+> **Примечание**. Разрешения, отмеченные **, поддерживаются только для обратной совместимости. Рекомендуется обновить решения, чтобы использовать другие разрешения и избегать использования этих разрешений в будущем. Разрешения, отмеченные *, используют [согласие для конкретного ресурса](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 

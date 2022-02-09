@@ -6,12 +6,12 @@ title: Получить страницу на сайте
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 44ca1a9c5a601f8a2afca85a100c1511643d7f03
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 28eee4100f8ef9fec393ce9fbb3dd37362b58120
+ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62108216"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62468260"
 ---
 # <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>Получить страницу в списке страниц сайта
 
@@ -19,7 +19,7 @@ ms.locfileid: "62108216"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Возвращает метаданные для [sitePage][] в списке страниц [сайта][] [на сайте.][]
+Возвращает метаданные для [сайтаPage][] в списке страниц [сайта][][.][]
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
@@ -43,7 +43,7 @@ GET /sites/{site-id}/pages/{page-id}
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -79,7 +79,7 @@ GET /sites/{site-id}/pages/{page-id}
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 01c37923f3ca63b7dd7ccf6803bb2bc696ef4546
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 867e4e400175cd912b90b79aadfd64591bedfb7b
+ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792143"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62468344"
 ---
 # <a name="accesspackageresource-resource-type"></a>тип ресурса accessPackageResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "61792143"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [Azure AD Entitlement Management](entitlementmanagement-overview.md)ресурс пакета доступа является ссылкой на ресурс, связанный с каталогом пакетов доступа. Роли для ресурса пакета доступа можно использовать в одном или более пакетах доступа.  Чтобы попросить связать ресурс с каталогом пакетов доступа или удалить его из каталога, создайте [accessPackageResourceRequest](accesspackageresourcerequest.md).
+В [Azure AD Entitlement Management](entitlementmanagement-overview.md) ресурс пакета доступа является ссылкой на ресурс, связанный с каталогом пакетов доступа. Роли для ресурса пакета доступа можно использовать в одном или более пакетах доступа.  Чтобы попросить связать ресурс с каталогом пакетов доступа или удалить его из каталога, создайте [accessPackageResourceRequest](accesspackageresourcerequest.md).
 
 ## <a name="methods"></a>Методы
 
@@ -30,17 +30,17 @@ ms.locfileid: "61792143"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Содержит сведения об среде для ресурса. Это можно установить с помощью `@odata.bind` аннотации или *originId среды.*|
-|attributes|[коллекция accessPackageResourceAttribute](../resources/accesspackageresourceattribute.md)| Содержит сведения о атрибутах для ресурса.
+|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Содержит сведения об среде для ресурса. Это можно установить с помощью аннотации `@odata.bind` или *originId среды*.|
+|attributes|[коллекция accessPackageResourceAttribute](../resources/accesspackageresourceattribute.md)| Содержит сведения о атрибутах, которые будут собраны от запросителя и отправлены в приложение-ресурс. |
 |addedBy|String|Только для чтения.|
 |addedOn|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
-|description|String|Описание ресурса.|
+|description|Строка|Описание ресурса.|
 |displayName|String|Отображает имя ресурса, например имя приложения, имя группы или имя сайта.|
 |id|String| Только для чтения.|
-|isPendingOnboarding|Логический|True, если ресурс еще не доступен для назначения.|
-|OriginId|String|Уникальный идентификатор ресурса в системе происхождения. В случае группы Azure AD это идентификатор группы. |
-|originSystem|String|Тип ресурса в системе происхождения, например `SharePointOnline` , `AadApplication` или `AadGroup` .|
-|resourceType|String|Тип ресурса, например, подключенное приложение `Application` Azure AD или веб-SharePoint `SharePoint Online Site` Online.|
+|isPendingOnboarding|Логическое|True, если ресурс еще не доступен для назначения.|
+|OriginId|Строка|Уникальный идентификатор ресурса в системе происхождения. В случае группы Azure AD это идентификатор группы. |
+|originSystem|String|Тип ресурса в системе происхождения, например `SharePointOnline`, или `AadApplication` `AadGroup`.|
+|resourceType|String|Тип ресурса, `Application` например, подключенное приложение Azure AD или `SharePoint Online Site` веб-SharePoint Online.|
 |url|String|Уникальный локатор ресурсов для ресурса, например URL-адрес для подписания пользователя в приложение.|
 
 ## <a name="relationships"></a>Связи

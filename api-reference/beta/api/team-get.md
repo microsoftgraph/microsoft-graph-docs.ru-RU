@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5c85618df16d6aea4bd9a82514666bd58b0c6bad
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: 01c1396b7b9dadc20978e2d953569ea40e797cd3
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201353"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442857"
 ---
 # <a name="get-team"></a>Получение команды
 
@@ -28,7 +28,7 @@ ms.locfileid: "62201353"
 |Делегированные (рабочая или учебная учетная запись) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All **, Group.ReadWrite.All**, Directory.Read.All **, Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Application | TeamSettings.Read.Group *, TeamSettings.ReadWrite.Group*, Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All **, Group.ReadWrite.All**, Directory.Read.All **, Directory.ReadWrite.All** |
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). Разрешения, отмеченные **, не используются и не должны использоваться.
+> **Примечание**. Разрешения, отмеченные **, поддерживаются только для обратной совместимости. Рекомендуется обновить решения, чтобы использовать другие разрешения и избегать использования этих разрешений в будущем. Разрешения, отмеченные *, используют [согласие для конкретного ресурса](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -46,7 +46,7 @@ GET /teams/{team-id}
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

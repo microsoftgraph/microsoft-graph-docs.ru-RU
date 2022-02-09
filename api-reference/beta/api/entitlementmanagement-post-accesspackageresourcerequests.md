@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5c146dcaa4827e814ed32743c46068992c780803
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1221cd9af225a9a59009b56861879c93506e059f
+ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119095"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62468316"
 ---
 # <a name="create-accesspackageresourcerequest"></a>Создание accessPackageResourceRequest
 
@@ -47,20 +47,20 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [accessPackageResourceRequest.](../resources/accesspackageresourcerequest.md) `accessPackageResource`Включайте связь с [объектом accessPackageResource](../resources/accesspackageresource.md) в качестве части запроса.
+В теле запроса поставляем представление JSON объекта [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) . Включайте `accessPackageResource` связь с [объектом accessPackageResource](../resources/accesspackageresource.md) в качестве части запроса.
 
-Чтобы добавить группу Azure AD в качестве  ресурса в каталог, задайте каталогId ID каталога, **requestType** to be `AdminAdd` и `accessPackageResource` представляющий ресурс. Значение свойства **originSystem** внутри должно быть, а значение originId — `accessPackageResource` `AadGroup` идентификатор группы. 
+Чтобы добавить группу Azure AD в качестве ресурса в каталог, задайте  каталогId ID каталога, **requestType** to be `AdminAdd`и `accessPackageResource` представляющий ресурс. Значение свойства **originSystem** внутри `accessPackageResource` должно быть, `AadGroup` а значение **originId** — идентификатор группы.
 
-Чтобы удалить приложение Azure AD из  каталога, установите каталогId в ID каталога, **requestType** to be и объект ресурса, который необходимо `AdminRemove` `accessPackageResource` удалить.  Объект ресурса можно получить с помощью [списка accessPackageResources.](accesspackagecatalog-list-accesspackageresources.md)
+Чтобы удалить приложение Azure AD из каталога, установите каталогId  в ID каталога, **requestType** to be `AdminRemove`и `accessPackageResource` объект ресурса, который необходимо удалить.  Объект ресурса можно получить с помощью [списка accessPackageResources](accesspackagecatalog-list-accesspackageresources.md).
 
-Чтобы назначить среду геолокации для ресурса Sharepoint Online с несколькими геолокациями, включите связь **accessPackageResourceEnvironment** в `accessPackageResource` объекте. Это можно сделать двумя способами:
-+ Чтобы `@odata.bind` назначить объекту `id` аннотацию, `accessPackageResourceEnvironment` используйте `accessPackageResourceEnvironment` аннотацию.
-+ Укажите `originId` параметр `accessPackageResourceEnvironment` `accessPackageResourceEnvironment` объекта.
+Чтобы назначить среду геолокации для ресурса Sharepoint Online с несколькими геолокациями, включите связь **accessPackageResourceEnvironment** в объекте `accessPackageResource` . Это можно сделать двумя способами:
++ Чтобы `@odata.bind` назначить объекту `id` `accessPackageResourceEnvironment` аннотацию, используйте аннотацию `accessPackageResourceEnvironment` .
++ Укажите `originId` параметр объекта `accessPackageResourceEnvironment` `accessPackageResourceEnvironment` .
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) в тексте ответа.
+В случае успешной `201 Created` работы этот метод возвращает код отклика и новый [объект accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -123,7 +123,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -152,7 +152,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. В этом примере аннотация используется для назначения `@odata.bind` `id` `accessPackageResourceEnvironment` `accessPackageResourceEnvironment` объекта.
+Ниже приведен пример запроса. В этом примере `@odata.bind` аннотация `id` `accessPackageResourceEnvironment` `accessPackageResourceEnvironment` используется для назначения объекта.
 
 
 
@@ -208,7 +208,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -238,7 +238,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. В этом примере параметры объекта `accessPackageResourceEnvironment` указаны в `accessPackageResourceEnvironment` объекте.
+Ниже приведен пример запроса. В этом примере параметры объекта `accessPackageResourceEnvironment` указаны в объекте `accessPackageResourceEnvironment` .
 
 
 
@@ -296,7 +296,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -378,7 +378,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -456,7 +456,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -479,6 +479,82 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-6-create-an-accesspackageresourcerequest-for-adding-an-application"></a>Пример 6. Создание accessPackageResourceRequest для добавления приложения
+
+#### <a name="request"></a>Запрос
+
+Ниже приводится пример запроса на добавление приложения в каталог, включая указание обязательного атрибута этого приложения.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests6"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceRequests
+Content-type: application/json
+
+{
+  "catalogId": "26ac0c0a-08bc-4a7b-a313-839f58044ba5",
+  "requestType": "AdminAdd",
+  "justification": "",
+  "accessPackageResource": {
+      "displayName": "Faculty cafeteria ordering",
+      "description": "Example application",
+      "url": "https://myapps.microsoft.com/example.com/signin/Faculty%20cafeteria%20ordering/f1e3b407-942d-4934-9a3f-cef1975cb988/",
+      "resourceType": "Application",
+      "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
+      "originSystem": "AadApplication",
+      "attributes": [
+        {
+          "attributeName": "extension_2b676109c7c74ae2b41549205f1947ed_personalTitle",
+          "isEditable": true,
+          "isPersistedOnAssignmentRemoval": true,
+          "attributeSource": {
+              "@odata.type": "#microsoft.graph.accessPackageResourceAttributeQuestion",
+              "question": {
+                  "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+                  "isRequired": false,
+                  "sequence": 0,
+                  "isSingleLineQuestion": true,
+                  "text": {
+                      "defaultText": "Title",
+                      "localizedTexts": []
+                  }
+              }
+          },
+          "attributeDestination": {
+              "@odata.type": "#microsoft.graph.accessPackageUserDirectoryAttributeStore"
+          }
+        }
+      ]
+  }
+}
+
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "f0e632ed-afd2-41d3-8d6e-ccefda457e5e",
+  "requestType": "AdminAdd",
+  "requestState": "Delivered",
+  "requestStatus": "Fulfilled"
+}
+```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e3bead9d64b54cc4301d468a3805b09b367f389b
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 9f6557a4256b692005c82ca18bc93041f003b886
+ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651248"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62468300"
 ---
 # <a name="accesspackageresourcerequest-resource-type"></a>тип ресурса accessPackageResourceRequest
 
@@ -18,14 +18,14 @@ ms.locfileid: "61651248"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В управлении правами [Azure AD](entitlementmanagement-overview.md)запрос ресурсов пакета доступа — это запрос на добавление ресурса в каталог, чтобы роли ресурса можно было использовать в одном или несколько пакетах доступа каталога, или удалить ресурс из каталога, который больше не нужен пакетам доступа.
+В [управлении правами Azure AD](entitlementmanagement-overview.md) запрос ресурсов пакета доступа — это запрос на добавление ресурса [](accesspackageresource.md) в каталог, чтобы роли ресурса можно было использовать в одном или несколько пакетах доступа каталога, или удалить ресурс из каталога, который больше не нужен пакетам доступа.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список accessPackageResourceRequests](../api/entitlementmanagement-list-accesspackageresourcerequests.md) | [коллекция accessPackageResourceRequest](accesspackageresourcerequest.md) | Извлечение списка **объектов accessPackageResourceRequest.** |
-| [Создание accessPackageResourceRequest](../api/entitlementmanagement-post-accesspackageresourcerequests.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Создание нового **объекта accessPackageResourceRequest.** |
+| [Список accessPackageResourceRequests](../api/entitlementmanagement-list-accesspackageresourcerequests.md) | [коллекция accessPackageResourceRequest](accesspackageresourcerequest.md) | Извлечение списка **объектов accessPackageResourceRequest** . |
+| [Создание accessPackageResourceRequest](../api/entitlementmanagement-post-accesspackageresourcerequests.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Создание нового **объекта accessPackageResourceRequest** . |
 
 ## <a name="properties"></a>Свойства
 
@@ -34,13 +34,13 @@ ms.locfileid: "61651248"
 |catalogId|Строка|Уникальный ID каталога пакетов доступа.|
 |expirationDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
 |id|String| Только для чтения.|
-|isValidationOnly|Boolean|Если установлено, ресурс не добавляется.|
+|isValidationOnly|Логическое|Если установлено, ресурс не добавляется.|
 |обоснование|Строка|Обоснование запроса для добавления или удаления ресурса.|
 |requestState|Строка| Результат того, удалось ли службе добавить ресурс в каталог.  Значение, если `Delivered` ресурс был добавлен или удален. Только для чтения.|
 |requestStatus|String|Только для чтения.|
-|requestType|Строка|Используйте для добавления ресурса, если вызываемая является администратором или владельцем ресурса, или `AdminAdd` `AdminRemove` для удаления ресурса. |
+|requestType|String|Используйте `AdminAdd` для добавления ресурса, если вызываемая является администратором или владельцем ресурса, `AdminRemove` или для удаления ресурса. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

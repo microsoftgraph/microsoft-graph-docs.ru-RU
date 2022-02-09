@@ -5,12 +5,12 @@ author: anandjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c72c41a10c961cfcc8daf03ebfd72273bb9d7d5b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1e80a9a639d541ece3a2ee7203da06e896a95f06
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62102399"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62442815"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -33,7 +33,7 @@ ms.locfileid: "62102399"
 > **Примечание**. Разрешение Teamwork.Migrate.All поддерживается *только* для [миграции](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества импортированных данных.
 
-> **Примечание**. Разрешения, помеченные **, не поддерживаются и не должны использоваться.
+> **Примечание**. Разрешения, отмеченные **, поддерживаются только для обратной совместимости. Рекомендуется обновить решения, чтобы использовать другие разрешения и избегать использования этих разрешений в будущем.
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 63f38a8f5e47b17db485d0ae05ad854b60b90a05
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a914f4b01c457b4daf930bfe83a584001a756430
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119283"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443291"
 ---
 # <a name="get-chatmessage-in-a-channel-or-chat"></a>Получение объекта chatMessage в канале или чате
 
@@ -32,7 +32,7 @@ ms.locfileid: "62119283"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All **, Group.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные **, не поддерживаются и не должны использоваться.
+> **Примечание**. Разрешения, отмеченные **, поддерживаются только для обратной совместимости. Рекомендуется обновить решения, чтобы использовать другие разрешения и избегать использования этих разрешений в будущем.
 
 ### <a name="permissions-for-chat"></a>Разрешения для чата
 
@@ -72,7 +72,7 @@ GET /me/chats/{chat-id}/messages/{message-id}
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

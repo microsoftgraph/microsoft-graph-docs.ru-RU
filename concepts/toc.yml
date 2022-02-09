@@ -256,6 +256,8 @@ items:
             href: education-upload-resource-overview.md
           - name: Смена состояния назначения и отправки
             href: assignments-submissions-states-transition.md
+          - name: Укажите канал по умолчанию для уведомлений о назначениях
+            href: education-build-notificationchannelurl.md
       - name: Файлы
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:

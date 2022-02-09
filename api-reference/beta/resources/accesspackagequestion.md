@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: df4158f7869407772b0c7a8807366d03e2ef7a62
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 22e2cb56461830156d76c10f9e136a62dca4d440
+ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791947"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62468309"
 ---
 # <a name="accesspackagequestion-resource-type"></a>тип ресурса accessPackageQuestion
 
@@ -18,9 +18,9 @@ ms.locfileid: "61791947"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется для свойства политики назначения `accessPackageQuestion` [пакета доступа.](accesspackageassignmentpolicy.md) 
+Используется для **свойства accessPackageQuestion** политики назначения пакетов доступа и **accessPackageResourceAttributeQuestion** в [accessPackageResourceAttribute](accesspackageresourceattribute.md).[](accesspackageassignmentpolicy.md)
 
-Подтипы включают [accessPackageTextInputQuestions](accesspackagetextinputquestion.md) и [accessPackageMultipleChoiceQuestions.](accesspackagemultiplechoicequestion.md)
+Подтипы включают [accessPackageTextInputQuestion](accesspackagetextinputquestion.md) и [accessPackageMultipleChoiceQuestion](accesspackagemultiplechoicequestion.md).
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -29,7 +29,7 @@ ms.locfileid: "61791947"
 |isRequired|Boolean| Требуется ли запросчику предоставить ответ или нет.|
 |sequence|Int32| Относительное положение этого вопроса при отобраии списка вопросов для запросителя.|
 |текст|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|Текст вопроса, который нужно показать запросчику.|
-|isAnswerEditable|Логический| Указывает, разрешено ли запросчику изменять ответы на вопросы.|
+|isAnswerEditable|Логическое| Указывает, разрешено ли запросчику изменять ответы на вопросы.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

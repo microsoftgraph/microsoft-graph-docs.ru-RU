@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1be9f434fa9af12298e9ff7353f02ed6a3fddb69
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0019af65ee8e1f991412c8751d9f798610810397
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122372"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443018"
 ---
 # <a name="get-filesfolder"></a>Получение filesFolder
 
@@ -27,7 +27,7 @@ ms.locfileid: "62122372"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Application | Files.Read.All, Files.ReadWrite.All, Group.Read.All **, Group.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные **, не поддерживаются и не должны использоваться.
+> **Примечание**. Разрешения, помеченные **, поддерживаются только для обратной совместимости. Рекомендуется обновить решения, чтобы использовать другие разрешения и избегать использования этих разрешений в будущем.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +35,7 @@ ms.locfileid: "62122372"
 GET /teams/{id}/channels/{id}/filesFolder
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод не поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
@@ -44,7 +44,7 @@ GET /teams/{id}/channels/{id}/filesFolder
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/filesFolder
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

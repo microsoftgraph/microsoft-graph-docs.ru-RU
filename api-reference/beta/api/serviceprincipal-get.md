@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4009a12b4bfbbf3635a8138fbd7391445c303505
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7753945628f5fcdb5f4d3112a6ad5f8c58b15271
+ms.sourcegitcommit: 15818a4b494c93682411990311ae7c81598edc5b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098939"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "62370927"
 ---
 # <a name="get-serviceprincipal"></a>Получение объекта servicePrincipal
 
@@ -36,7 +36,7 @@ ms.locfileid: "62098939"
 GET /servicePrincipals/{id}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select` и `$top` для настройки отклика. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
@@ -51,7 +51,7 @@ GET /servicePrincipals/{id}
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -145,6 +145,11 @@ Content-type: application/json
         ],
         "signInAudience": "AzureADandPersonalMicrosoftAccount",
         "tags": [],
+        "verifiedPublisher": {
+            "displayName": "publisher_contoso",
+            "verifiedPublisherId": "9999999",
+             "addedDateTime": "2021-04-24T17:49:44Z"
+        },
         "addIns": [],
         "api": {
             "resourceSpecificApplicationPermissions": []
@@ -209,7 +214,7 @@ Content-type: application/json
 + Тип данных атрибута: строка
 + Значение атрибута: `"Public"`
 
-Чтобы получить назначения настраиваемых атрибутов безопасности, вызывающему субъекту должна быть присвоена роль читателя назначения атрибутов или администратора назначения атрибутов и должно быть предоставлено разрешение *CustomSecAttributeAssignment.ReadWrite.All*.
+Чтобы получить назначения настраиваемых атрибутов безопасности, вызывающему субъекту должна быть назначена роль читателя назначения атрибутов или администратора назначения атрибутов, а также должно быть предоставлено разрешение *CustomSecAttributeAssignment.Read.All* или *CustomSecAttributeAssignment.ReadWrite.All*.
 
 #### <a name="request"></a>Запрос
 

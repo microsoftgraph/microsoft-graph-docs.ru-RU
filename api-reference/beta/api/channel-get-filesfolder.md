@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ad9475a09b3462c11c6596304cf58bb0e8779ff9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bdb61ad54e6bedd3487a3f8c17ef47fae1469299
+ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128106"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "62443347"
 ---
 # <a name="get-filesfolder"></a>Получение filesFolder
 
@@ -29,7 +29,7 @@ ms.locfileid: "62128106"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Application | File.Read.Group *, Files.Read.All, Files.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc). Разрешения, отмеченные **, не используются и не должны использоваться.
+> **Примечание**. Разрешения, помеченные **, поддерживаются только для обратной совместимости. Рекомендуется обновить решения, чтобы использовать другие разрешения и избегать использования этих разрешений в будущем. Разрешения, помеченные *, используют [согласие для определенных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ ms.locfileid: "62128106"
 GET /teams/{id}/channels/{id}/filesFolder
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод не поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
@@ -46,7 +46,7 @@ GET /teams/{id}/channels/{id}/filesFolder
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/filesFolder
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

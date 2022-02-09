@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 20ae426d206e0737ff40200989db955bb7503de1
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 95d1f264e6fb1880c5ef6b22b1a5bfdf67326b95
+ms.sourcegitcommit: 15818a4b494c93682411990311ae7c81598edc5b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344538"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "62370893"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -308,7 +308,7 @@ Content-type: application/json
 + Тип данных атрибута: строка
 + Значение атрибута: `"Public"`
 
-Чтобы получить назначения настраиваемых атрибутов безопасности, вызывающему субъекту должна быть присвоена роль читателя назначения атрибутов или администратора назначения атрибутов и должно быть предоставлено разрешение *CustomSecAttributeAssignment.ReadWrite.All*.
+Чтобы получить назначения настраиваемых атрибутов безопасности, вызывающему субъекту должна быть назначена роль читателя назначения атрибутов или администратора назначения атрибутов, а также должно быть предоставлено разрешение *CustomSecAttributeAssignment.Read.All* или *CustomSecAttributeAssignment.ReadWrite.All*.
 
 #### <a name="request"></a>Запрос
 
