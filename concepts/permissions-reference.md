@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 7d34d827bd45a44114ad36a1c2a122d92f7b7083
-ms.sourcegitcommit: 59918804365570a1a6b7f45c29e546e777c74c85
+ms.openlocfilehash: 0cf655c04e074e7b8c9fb3c1f65c843fee7e2589
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62436070"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62519210"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -212,7 +212,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 * _Analytics.Read_. [Перечисление соответствующих параметров для пользователя](/graph/api/useranalytics-get-settings?view=graph-rest-beta&preserve-view=true) (`GET /beta/me/analytics/settings`)
 
-#### <a name="application"></a>Приложение
+#### <a name="application"></a>Для приложений
 
 Отсутствуют.
 
@@ -247,7 +247,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * _AppCatalog.ReadWrite.All_. [Обновление опубликованного приложения](/graph/api/teamsapp-update?view=graph-rest-beta&preserve-view=true) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
 * _AppCatalog.ReadWrite.All_. [Удаление опубликованного приложения](/graph/api/teamsapp-delete?view=graph-rest-beta&preserve-view=true) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
 
-#### <a name="application"></a>Приложение
+#### <a name="application"></a>Для приложений
 
 Отсутствуют.
 
@@ -425,7 +425,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 ### <a name="example-usage"></a>Примеры использования
 
-#### <a name="application"></a>Приложение
+#### <a name="application"></a>Для приложений
 
 * _Calls.Initiate.All_. Совершение однорангового звонка из приложения пользователю в организации (`POST /beta/communications/calls`).
 * _Calls.InitiateGroupCall.All_. Совершение группового звонка из приложения группе пользователей в организации (`POST /beta/communications/calls`).
@@ -1004,7 +1004,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * _GroupMember.ReadWrite.All_. Обновление участников группы (`POST /groups/{id}/members/$ref`).
 > **Примечание.** При этом также необходимо разрешение _User.ReadBasic.All_ для чтения пользователя, чтобы добавить его как участника.
 
-#### <a name="application"></a>Приложение
+#### <a name="application"></a>Для приложений
 
 * _Group.Read.All_. Поиск всех групп, имена которых начинаются с "Sales" (`GET /groups?$filter=startswith(displayName,'Sales')`).
 * _Group.ReadWrite.All_. Управляющая служба создает события в календаре группы Microsoft 365 (`POST /groups/{id}/events`).
@@ -1043,7 +1043,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 ---
 
-## <a name="identity-risk-permissions"></a>Разрешения на риск для удостоверений
+## <a name="identity-protection-risk-permissions"></a>Разрешения рисков для защиты идентификации
 
 #### <a name="delegated-permissions"></a>Делегированные разрешения
 
@@ -1052,7 +1052,8 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 | _IdentityRiskEvent.Read.All_ |   Чтение сведений о событиях риска несанкционированного использования удостоверений  | Позволяет приложению считывать сведения о событиях риска несанкционированного доступа к удостоверениям всех пользователей в организации от имени вошедшего пользователя. | Да | Нет |
 | _IdentityRiskyUser.Read.All_ |   Чтение сведений о риске пользователя в удостоверении  | Позволяет приложению считывать сведения о риске пользователя в удостоверении для всех пользователей в организации от имени вошедшего пользователя. | Да | Нет |
 | _IdentityRiskyUser.ReadWrite.All_ |   Чтение о обновление сведений о риске пользователя для удостоверений  | Позволяет приложению считывать и обновлять сведения о риске пользователя для удостоверений для всех пользователей в организации от имени вошедшего пользователя. | Да | Нет |
-
+| _IdentityRiskyServicePrincipal.Read.All_ |   Чтение всех сведений о рисках субъект-служб  | Позволяет приложению считывать все сведения о рисках субъект-служб для вашей организации от имени выполнившего вход пользователя. | Да | Нет |
+| _IdentityRiskyServicePrincipal.ReadWrite.All_ |   Чтение и запись всех сведений о рисках субъект-служб  | Позволяет приложению считывать и обновлять сведения о рисках субъект-служб для всех субъект-служб в организации от имени выполнившего вход пользователя. Операции обновления включают удаление рискованных субъект-служб.| Да | Нет |
 
 #### <a name="application-permissions"></a>Разрешения приложений
 
@@ -1061,7 +1062,8 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 | _IdentityRiskEvent.Read.All_ |   Чтение сведений о событиях риска несанкционированного использования удостоверений | Позволяет приложению считывать сведения о событиях риска несанкционированного доступа к удостоверениям всех пользователей в организации в случаях, когда вход пользователя не предусмотрен. | Да |
 | _IdentityRiskyUser.Read.All_ |   Чтение сведений о риске пользователя в удостоверении | Позволяет приложению считывать сведения о риске пользователя в удостоверении для всех пользователей в организации без необходимости входа пользователя. | Да |
 | _IdentityRiskyUser.ReadWrite.All_ |   Чтение о обновление сведений о риске пользователя для удостоверений | Позволяет приложению считывать и обновлять сведения о риске пользователя для удостоверений для всех пользователей в организации без необходимости входа пользователя. | Да |
-
+| _IdentityRiskyServicePrincipal.Read.All_ |   Чтение всех сведений о рисках субъект-служб  | Позволяет приложению считывать все сведения о рисках субъект-служб для вашей организации без необходимости входа пользователя. | Да |
+| _IdentityRiskyServicePrincipal.ReadWrite.All_ |   Чтение и запись всех сведений о рисках субъект-служб  | Позволяет приложению считывать и обновлять риски субъект-служб для вашей организации без необходимости входа пользователя.| Да |
 
 Все разрешения на риск для удостоверений действительны только для учетных записей на работе или в школе. Для приложения с делегированными разрешениями на чтение сведений о рисках, связанных с удостоверениями, пользователь, во время записи, должен быть членом одной из следующих [ролей администратора Azure AD:](/azure/active-directory/roles/permissions-reference)Глобального администратора, администратора безопасности или читателя сведений о безопасности.
 
@@ -1079,6 +1081,12 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * Считывание всех рискованных пользователей и свойств в клиенте (`GET /identityProtection/riskyUsers`)
 * Считывание всех рискованных пользователей со средним совокупным уровнем риска (`GET /identityProtection/riskyUsers?$filter=riskLevel eq 'medium'`)
 * Считывание сведений о риске для отдельного пользователя (`GET /identityProtection/riskyUsers?$filter=id eq 'userId'`)
+
+#### <a name="read-risky-service-principals"></a>Чтение рискованных субъект-служб
+
+* Считывание всех рискованных субъект-служб и свойств в клиенте (`GET /identityProtection/riskyServicePrincipals`)
+* Считывание всех рискованных субъект-служб со средним совокупным уровнем риска (`GET /identityProtection/riskyServicePrincipals?$filter=riskLevel eq 'medium'`)
+* Считывание сведений о риске для отдельного субъект-службы (`GET /identityProtection/riskyServicePrincipals?$filter=id eq '{riskyServicePrincipalsId}'`)
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
@@ -1344,7 +1352,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 В случае рабочих и учебных учетных записей разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ позволяют приложению получать доступ к содержимому OneNote других пользователей, которое доступно вошедшему пользователю в организации.
 
 ### <a name="example-usage"></a>Примеры использования
-#### <a name="delegated"></a>Делегированные разрешения
+#### <a name="delegated"></a>Delegated
 
 * _Notes.Create_. Создание записных книжек для вошедшего пользователя (`POST /me/onenote/notebooks`).
 * _Notes.Read_. Чтение записных книжек вошедшего пользователя (`GET /me/onenote/notebooks`).
@@ -2263,7 +2271,7 @@ SubjectRightsRequest.ReadWrite.All | Чтение и запись запросо
 
 * _ThreatAssessment.ReadWrite.All_: чтение и запись запросов на оценку угроз (`POST /informationProtection/threatAssessmentRequests`)
 
-#### <a name="application"></a>Приложение
+#### <a name="application"></a>Для приложений
 
 * _ThreatAssessment.Read.All_: чтение запросов на оценку угроз (`GET /informationProtection/threatAssessmentRequests`)
 
