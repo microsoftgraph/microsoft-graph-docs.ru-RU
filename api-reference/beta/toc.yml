@@ -300,7 +300,7 @@ items:
             href: resources/calendar.md
             displayName: 'Outlook, Outlook calendar'
             items:
-              - name: Создание
+              - name: Create
                 href: api/user-post-calendars.md
               - name: Создание группы календарей
                 href: api/user-post-calendargroups.md
@@ -327,7 +327,7 @@ items:
           - name: Контакты
             href: resources/contact.md
             items:
-              - name: Создание
+              - name: Create
                 href: api/user-post-contacts.md
               - name: Создание папки контактов
                 href: api/user-post-contactfolders.md
@@ -11787,6 +11787,28 @@ items:
                         href: api/riskyusers-confirmcompromised.md
                       - name: Отклонить
                         href: api/riskyusers-dismiss.md
+                  - name: Обнаружение основных рисков службы
+                    items:
+                      - name: Обнаружение рисков
+                        href: resources/serviceprincipalriskdetection.md
+                      - name: Список
+                        href: api/identityprotectionroot-list-serviceprincipalriskdetections.md
+                      - name: Получение
+                        href: api/serviceprincipalriskdetection-get.md
+                  - name: Директор по рискованным службам
+                    items:
+                      - name: Директор по рискованным службам
+                        href: resources/riskyserviceprincipal.md
+                      - name: Список рискованных принципов службы
+                        href: api/identityprotectionroot-list-riskyserviceprincipals.md
+                      - name: Получить рискованный руководитель службы
+                        href: api/riskyserviceprincipal-get.md
+                      - name: История списка
+                        href: api/riskyserviceprincipal-list-history.md
+                      - name: Подтвердить скомпрометированный
+                        href: api/riskyserviceprincipal-confirmcompromised.md
+                      - name: Отклонить
+                        href: api/riskyserviceprincipal-dismiss.md
               - name: Поставщик удостоверений
                 items:
                   - name: База поставщиков удостоверений
@@ -12691,7 +12713,7 @@ items:
                         href: api/entitlementmanagementsettings-update.md
               - name: Управление привилегированными пользователями
                 items:
-                  - name: Управление привилегированными пользователями
+                  - name: Служба Privileged Identity Management
                     href: resources/privilegedidentitymanagement-root.md
                   - name: Azure AD (неподготовленная))
                     items:
@@ -14449,7 +14471,7 @@ items:
           - name: Команда
             href: resources/team.md
             items:
-              - name: Создание
+              - name: Create
                 href: api/team-post.md
               - name: Создание команды из группы
                 href: api/team-put-teams.md
@@ -15062,11 +15084,11 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Задача
+          - name: Задачи
             items:
               - name: Базовая задача
                 href: resources/basetask.md
-              - name: Задача
+              - name: Задачи
                 href: resources/task.md
               - name: Перечисление задач
                 href: api/basetasklist-list-tasks.md
@@ -15135,7 +15157,7 @@ items:
                     href: api/opentypeextension-post-opentypeextension.md
                   - name: Получение открытого расширения
                     href: api/opentypeextension-get.md
-              - name: Задача
+              - name: Задачи
                 href: resources/todotask.md
                 items:
                   - name: Перечисление задач

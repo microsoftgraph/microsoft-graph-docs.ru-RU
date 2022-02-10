@@ -5,24 +5,24 @@ ms.localizationpriority: medium
 author: alamaral
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c78aecfbc956d505ec46ff76e0b9e604335baa6b
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 4cfcb4613df704f106ff46817014b916f95cc369
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335464"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62519247"
 ---
 # <a name="serviceprincipal-addtokensigningcertificate"></a>servicePrincipal: addTokenSigningCertificate
 
 Пространство имен: microsoft.graph
 
-Создайте самозаверяемый сертификат подписи и верни [объект selfSignedCertificate,](../resources/selfsignedcertificate.md) который является публичной частью сгенерированного сертификата. 
+Создайте самозаверяемый сертификат подписи и верни [объект selfSignedCertificate](../resources/selfsignedcertificate.md) , который является публичной частью сгенерированного сертификата. 
 
-Самозаверяемый сертификат подписи состоит из следующих объектов, которые добавляются в [службуPrincipal:](../resources/serviceprincipal.md) 
+Самозаверяемый сертификат подписи состоит из следующих объектов, которые добавляются в [службуPrincipal](../resources/serviceprincipal.md): 
 + Объект [keyCredentials со](../resources/keycredential.md) следующими объектами:
-    + Частный объект ключа **с набором** использования `Sign` .
-    + Объект public key с **набором** использования `Verify` .
-+ Объект [passwordCredentials.](../resources/passwordcredential.md) 
+    + Частный объект ключа **с набором** использования `Sign`.
+    + Объект public key с **набором** использования `Verify`.
++ Объект [passwordCredentials](../resources/passwordcredential.md) . 
 
 
 Все объекты имеют одинаковое значение **customKeyIdentifier**.
@@ -52,12 +52,12 @@ POST /servicePrincipals/{id}/addTokenSigningCertificate
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| displayName | string | Удобное имя для ключа.  Она должна начинаться `CN=` с .|
+| displayName | string | Удобное имя для ключа.  Она должна начинаться с `CN=`.|
 | endDateTime | DateTimeOffset |Дата и время истечения срока действия учетных данных. Срок создания сертификата может быть не более 3 лет. Если она не предоставлена, по умолчанию — три года со времени создания. Тип timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа и `200 OK` новый [объект selfSignedCertificate](../resources/selfsignedcertificate.md) в тексте ответа.
+В случае успеха этот метод возвращает код `200 OK` ответа и новый [объект selfSignedCertificate](../resources/selfsignedcertificate.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -84,6 +84,22 @@ Content-type: application/json
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addtokensigningcertificate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-addtokensigningcertificate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-addtokensigningcertificate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-addtokensigningcertificate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-addtokensigningcertificate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

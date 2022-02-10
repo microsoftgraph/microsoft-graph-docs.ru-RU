@@ -5,8 +5,13 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
+ms.openlocfilehash: b2c578eadb3379db72d5fc84e2feedc630dc859f
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62519340"
 ---
-
 # <a name="create-customsecurityattributedefinition"></a>Создание customSecurityAttributeDefinition
 Пространство имен: microsoft.graph
 
@@ -14,14 +19,14 @@ doc_type: apiPageType
 
 Создайте новый [объект customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) .
 
-## <a name="permissions"></a>Разрешения:
+## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CustomSecAttributeDefinition.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|CustomSecAttributeDefinition.ReadWrite.All|
+|Application|CustomSecAttributeDefinition.ReadWrite.All|
 
 Пользователю, заявляемого в службу, также необходимо уписать администратору определения атрибутов [роль каталога](/azure/active-directory/roles/permissions-reference. По умолчанию глобальные роли администратора и других администраторов не имеют разрешений на чтение, определение или назначение настраиваемого атрибута безопасности.
 
@@ -50,7 +55,7 @@ POST /directory/customSecurityAttributeDefinitions
 |:---|:---|:---|
 |attributeSet|Строка|Имя набора атрибутов. Случай нечувствительный. Обязательный.|
 |description|Строка|Описание настраиваемого атрибута безопасности. Может иметь длину до 128 символов и включать символы Unicode. Не может содержать пробелы или специальные символы. Можно изменить позже. Необязательный параметр.|
-|isCollection|Логический|Указывает, можно ли наказать несколько значений к настраиваемой атрибуту безопасности. Не удается изменить позже. Если `type` задана настройка Boolean, `isCollection` не может быть задана истина. Обязательный.|
+|isCollection|Логическое|Указывает, можно ли наказать несколько значений к настраиваемой атрибуту безопасности. Не удается изменить позже. Если `type` задана настройка Boolean, `isCollection` не может быть задана истина. Обязательный.|
 |isSearchable|Логический|Указывает, будут ли индексироваться пользовательские значения атрибутов безопасности для поиска объектов, за которые назначены значения атрибутов. Не удается изменить позже. Обязательный.|
 |name|String|Имя настраиваемого атрибута безопасности. Должно быть уникальным в наборе атрибутов. Может иметь длину до 32 символов и включать символы Unicode. Не может содержать пробелы или специальные символы. Не удается изменить позже. Случай нечувствительный. Обязательный.|
 |status|String|Указывает, активен ли настраиваемый атрибут безопасности или отключен. Допустимые значения и `Available` `Deprecated`. Можно изменить позже. Обязательное.|
@@ -243,6 +248,8 @@ Content-Type: application/json
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_customsecurityattributedefinition_allowedvalues"
@@ -277,6 +284,32 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-customsecurityattributedefinition-allowedvalues-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-customsecurityattributedefinition-allowedvalues-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-customsecurityattributedefinition-allowedvalues-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-customsecurityattributedefinition-allowedvalues-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-customsecurityattributedefinition-allowedvalues-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-customsecurityattributedefinition-allowedvalues-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 <!-- {

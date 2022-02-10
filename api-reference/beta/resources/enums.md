@@ -5,8 +5,13 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
+ms.openlocfilehash: f28d28301e4eb9268d1d4961574c3d318e38e7e2
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62519511"
 ---
-
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
@@ -239,9 +244,9 @@ author: MSGraphDocsvTeam
 |:---|
 |Строка|
 |Целое число|
-|Справочные материалы|
+|Справка|
 |Binary|
-|Логический|
+|Логическое|
 |Даты и время|
 
 ### <a name="mutability-values"></a>значения мутируемости
@@ -483,7 +488,7 @@ author: MSGraphDocsvTeam
 |:---|
 |email|
 |mobileSMS|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -635,7 +640,7 @@ author: MSGraphDocsvTeam
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -724,6 +729,8 @@ author: MSGraphDocsvTeam
 |hidden|
 |AdminConfirmedUserCompromised|
 |unknownFutureValue|
+|adminConfirmedServicePrincipalCompromised|
+|adminDismissedAllRiskForServicePrincipal|
 
 
 <!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
@@ -775,7 +782,7 @@ author: MSGraphDocsvTeam
 
 |Member|
 |:---|
-|Обязательный|
+|обязательно|
 |previouslySatisfied|
 |notApplicable|
 |unknownFutureValue|
@@ -956,7 +963,7 @@ author: MSGraphDocsvTeam
 
 |Member|
 |:---|
-|birthday|
+|birthday;|
 |свадьба|
 |unknownFutureValue|
 
@@ -1027,7 +1034,7 @@ author: MSGraphDocsvTeam
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -1972,6 +1979,7 @@ Enum для серьезности оповещений.
 |signin|
 |пользователь|
 |unknownFutureValue|
+|servicePrincipal|
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>значения chatMessagePolicyViolationUserActionType
 
@@ -2184,7 +2192,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| почта;   | 1     | Угроза почты.            |
+| mail;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -2343,7 +2351,7 @@ Enum для серьезности оповещений.
 |:----------------------|:------|:-------------------------------------------------------------------|
 | builtIn               | 1     | Этот тип атрибута потока пользователей обозначает, что он был создан системой |
 | настраиваемый                | 2     | Этот тип атрибута потока пользователей обозначает, что он был создан пользователем   |
-|обязательно|3||
+|Обязательный|3||
 | unknownFutureValue    | 4     | Член-часовой.                                                 |
 
 ### <a name="permissionclassificationtype-values"></a>значения permissionClassificationType

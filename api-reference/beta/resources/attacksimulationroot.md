@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 56c0f8f8ce514e21b39e24494132ee6fec123d31
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: e38107d7c6d95706508ea5260fa9e88c87774672
+ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979775"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62519742"
 ---
 # <a name="attacksimulationroot-resource-type"></a>тип ресурса attackSimulationRoot
 
@@ -24,11 +24,10 @@ ms.locfileid: "59979775"
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Моделирование списка](../api/attacksimulationroot-list-simulations.md)|[коллекция моделирования](../resources/simulation.md)|Получите ресурсы моделирования из свойства навигации моделирования.|
+|[Перечисление симуляций](../api/attacksimulationroot-list-simulations.md)|[коллекция моделирования](../resources/simulation.md)|Получите ресурсы моделирования из свойства навигации моделирования.|
 
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Описание|
-|:---|:---|:---|
+Нет
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
