@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 60473551b20dc38ba12c97d68b370fa524ddae03
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 149ea6004caf2c3f74003fd17815bda92d74b0b2
+ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688089"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62815862"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>Обновление accessReviewScheduleDefinition
 
@@ -18,11 +18,11 @@ ms.locfileid: "60688089"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обнови [существующий объект accessReviewScheduleDefinition,](../resources/accessreviewscheduledefinition.md) чтобы изменить одно или несколько его свойств.
+Обнови [существующий объект accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) , чтобы изменить одно или несколько его свойств.
 
 >[!NOTE]
 >Любые обновления, сделанные в accessReviewScheduleDefinition, применяются только к будущим экземплярам. В настоящее время запущенные экземпляры не могут быть обновлены.
->Кроме того, этот API не предназначен для обновления свойств, включая решения, на уровне accessReviewInstance. Дополнительные сведения о экземплярах см. в [accessReviewInstance.](../resources/accessreviewinstance.md)
+>Кроме того, этот API не предназначен для обновления свойств, включая решения, на уровне accessReviewInstance. Дополнительные сведения о экземплярах см. в [accessReviewInstance](../resources/accessreviewinstance.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,19 +45,20 @@ PUT /identityGovernance/accessReviews/definitions/{review-id}
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 В следующей таблице показаны свойства, принятые для обновления accessReviewScheduleDefinition.
 
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
-| descriptionForAdmins | String | Контекст обзора, предоставленного администраторам. |
-| descriptionForReviewers | String | Контекст обзора, предоставленного рецензентам. |
+| descriptionForAdmins | Строка | Контекст обзора, предоставленного администраторам. |
+| descriptionForReviewers | Строка | Контекст обзора, предоставленного рецензентам. |
 | displayName | String | Имя серии обзоров доступа. |
 | fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Коллекция областей рецензентов, используемых для определения списка рецензентов откатов, которые уведомлены о необходимости принятия мер, если пользователи не найдены из указанного списка рецензентов. Это может произойти, если либо владелец группы указан в качестве рецензента, но владелец группы не существует, либо менеджер указан в качестве рецензента, но диспетчер пользователя не существует.|
-| рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|  Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи просматривают собственный доступ). Свойство **рецензентов** может быть updatable только в том случае, если отдельные пользователи назначены в качестве рецензентов. См. [accessReviewReviewerScope.](../resources/accessreviewreviewerscope.md) |
-| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | Параметры для серии обзоров доступа. См. [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
-| backupReviewers (обесценив)|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| Это свойство было заменено **fallbackReviewers**. Однако указание резервных **копийReviewers** или **fallbackReviewers** автоматически заполняет те же значения для другого свойства. |
+| рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|  Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи просматривают собственный доступ). Свойство **рецензентов** может быть updatable только в том случае, если отдельные пользователи назначены в качестве рецензентов. См [. accessReviewReviewerScope](../resources/accessreviewreviewerscope.md). |
+|stageSettings|[accessReviewStageSettings](../resources/accessreviewstagesettings.md) collection| Определяет, сколько этапов будет иметь каждый экземпляр серии обзоров доступа. Этапы будут создаваться последовательно на основе **свойства dependsOn** . На каждом этапе может быть разный набор рецензентов, рецензентов и параметров. Только рецензенты и рецензенты отката являются updatable. См [. в странице accessReviewStageSettings](../resources/accessreviewstagesettings.md). Необязательное свойство.|
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | Параметры для серии обзоров доступа. См [. accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
+| backupReviewers (обесценив)|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| Это свойство было заменено **на fallbackReviewers**. Однако указание резервных **копийReviewers** или **fallbackReviewers** автоматически заполняет те же значения для другого свойства. |
 
 Запрос **PUT** предполагает, что будет передан полный объект, который включает в себя все свойства, которые можно использовать, а не только обновляемые свойства.
 
@@ -69,7 +70,7 @@ PUT /identityGovernance/accessReviews/definitions/{review-id}
 Это пример обновления displayName существующей серии обзоров доступа.
 
 ### <a name="request"></a>Запрос
-В теле запроса поставляют представление JSON о новых свойствах [объекта accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+В теле запроса поставляют представление JSON о новых свойствах [объекта accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 
 

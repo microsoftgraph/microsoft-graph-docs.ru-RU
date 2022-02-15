@@ -1,16 +1,16 @@
 ---
 title: Обновление accessReviewInstanceDecisionItem
-description: Обновление существующего объекта accessReviewInstanceDecisionItem, вызываемого пользователем, является рецензентом.
+description: Обновите существующий объект accessReviewInstanceDecisionItem, для которого вызываемая пользователь является рецензентом.
 ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c83ebbe6b79f987e8c7d523114dd31e570f155df
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9b3e75d9817b2e41a332d0138dc409301d58f4e1
+ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987726"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62815856"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>Обновление accessReviewInstanceDecisionItem
 
@@ -18,10 +18,10 @@ ms.locfileid: "60987726"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновите решения о доступе, известные как [accessReviewInstanceDecisionItems,](../resources/accessreviewinstancedecisionitem.md)для которых пользователь является рецензентом.
+Обновите решения о доступе, известные как [accessReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md), для которых пользователь является рецензентом.
 
 >[!NOTE]
->Любые обновления, сделанные в **accessReviewInstanceDecisionItem,** могут быть сделаны только путем вызова пользователей, которые указаны в качестве рецензента для родительского [accessReviewInstance](../resources/accessreviewinstance.md).
+>Любые обновления, сделанные в **accessReviewInstanceDecisionItem** , могут быть сделаны только путем вызова пользователей, перечисленных в качестве рецензента для родительского [accessReviewInstance](../resources/accessreviewinstance.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из следующих разрешений. Делегирование разрешений личным учетным записям Майкрософт не поддерживается. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -32,31 +32,44 @@ ms.locfileid: "60987726"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
+
+Чтобы обновить решение о accessReviewInstance:
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/pendingAccessReviewInstances/{instance-id}/decisions/{decision-id}
+PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/{accessReviewInstanceDecisionItemId}
 ```
+
+Обновление решения на этапе accessReviewInstance с несколькими этапами:
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/{accessReviewInstanceDecisionItemId}
+```
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Описание |
 |:-------------|:------------|
-|Авторизация|Bearer {token}. Обязательный.|
+| Авторизация|Bearer {token}. Обязательный.|
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В следующей таблице показаны свойства, принятые для обновления `accessReviewInstanceDecisionItem` .
+В следующей таблице показаны свойства, принятые для обновления `accessReviewInstanceDecisionItem`.
 
 | Свойство     | Тип       | Описание |
 |:-------------|:------------|:------------|
-| решение  | String | Решение о доступе для проверяемого объекта. Возможные значения: `Approve` `Deny` `NotReviewed` `DontKnow` . Обязательный.  |
-|  обоснование | Строка | Контекст обзора, предоставленного администраторам. Обязательно, если оправданиеRequiredOnApproval является true на accessReviewScheduleDefinition.  |
+| решение  | Строка | Решение о доступе для проверяемого объекта. Возможные значения: `Approve` `NotReviewed` `Deny` `DontKnow`. Обязательный элемент.  |
+|  обоснование | String | Контекст обзора, предоставленного администраторам. Обязательно, если оправданиеRequiredOnApproval является true на accessReviewScheduleDefinition.  |
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код `204, NoContent` ответа и не возвращает текст ответа.
+В случае успешной работы этот метод возвращает код `204 No Content` ответа и не возвращает текст ответа.
 
-### <a name="request"></a>Запрос
+
 ## <a name="examples"></a>Примеры
 
-Это пример утверждения доступа для пользователя, представленного пользователем `accessReviewInstanceDecisionItem` .
+### <a name="example-1-update-a-decision-on-an-accessreviewinstance"></a>Пример 1. Обновление решения о accessReviewInstance
+
+#### <a name="request"></a>Запрос
+
+Ниже приводится пример решения об утверждении доступа для пользователя.
 
 
 
@@ -66,7 +79,7 @@ PATCH /me/pendingAccessReviewInstances/{instance-id}/decisions/{decision-id}
   "name": "update_accessReviewInstanceDecisionItem"
 }-->
 ``` http
-PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/12348410-67f3-4d4c-b946-6989e050be19
+PATCH https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06
 Content-Type: application/json
 
 {
@@ -97,11 +110,36 @@ Content-Type: application/json
 ---
 
 
----
+
+#### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 Accepted
+```
 
 
-### <a name="response"></a>Отклик
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+### <a name="example-2-update-a-decision-on-an-stage-in-a-multi-stage-access-review"></a>Пример 2. Обновление решения на этапе в многоэтансовом обзоре доступа
+
+#### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "update_accessReviewInstanceDecisionItem"
+}-->
+``` http
+PATCH https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06
+Content-Type: application/json
+
+{
+  "decision": "Approve",
+  "justification": "This person is still on my team",
+}
+```
+
+#### <a name="response"></a>Отклик
+
 <!-- {
   "blockType": "response"
 } -->

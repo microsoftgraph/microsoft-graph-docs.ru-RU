@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: f7f0016b8f709001ea1adf8621afdcf435e4a190
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: b7db893231e7c28479b446e081e9501a79b27aa3
+ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804580"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62815967"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -78,6 +78,13 @@ ms.locfileid: "62804580"
 |unknownFutureValue|
 
 ### <a name="accessreviewinstancedecisionitemfilterbycurrentuseroptions-values"></a>accessReviewInstanceDecisionItemFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|рецензент|
+|unknownFutureValue|
+
+### <a name="accessreviewstagefilterbycurrentuseroptions-values"></a>accessReviewStageFilterByCurrentUserOptions 
 
 |Member|
 |:---|
@@ -675,7 +682,7 @@ ms.locfileid: "62804580"
 
 |Member|
 |:---|
-|userPrincipalName|
+|userPrincipalName.|
 |phoneNumber|
 |proxyAddress|
 |qrCode|
@@ -792,7 +799,7 @@ ms.locfileid: "62804580"
 
 |Member|
 |:---|
-|Обязательный|
+|обязательно|
 |previouslySatisfied|
 |notApplicable|
 |unknownFutureValue|
@@ -1234,7 +1241,7 @@ ms.locfileid: "62804580"
 
 | Member
 |:-------------------------
-| Обязательный
+| обязательно
 | необязательный
 | resource
 
@@ -2361,7 +2368,7 @@ Enum для серьезности оповещений.
 |:----------------------|:------|:-------------------------------------------------------------------|
 | builtIn               | 1     | Этот тип атрибута потока пользователей обозначает, что он был создан системой |
 | настраиваемый                | 2     | Этот тип атрибута потока пользователей обозначает, что он был создан пользователем   |
-|обязательно|3||
+|Обязательный|3||
 | unknownFutureValue    | 4     | Член-часовой.                                                 |
 
 ### <a name="permissionclassificationtype-values"></a>значения permissionClassificationType

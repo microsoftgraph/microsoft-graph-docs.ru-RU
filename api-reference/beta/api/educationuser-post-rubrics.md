@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 283a739fc6b606d91034542ad5ef1ab4eff073cf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 99c4736855f17d89c466bdcd9353a37fa2567346
+ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096501"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62815854"
 ---
 # <a name="create-educationrubric"></a>Создание educationRubric
 
@@ -18,7 +18,7 @@ ms.locfileid: "62096501"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект educationRubric.](../resources/educationrubric.md)
+Создайте новый [объект educationRubric](../resources/educationrubric.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,11 +46,11 @@ POST /education/me/rubrics
 
 ## <a name="request-body"></a>Тело запроса
 
-В органе запроса поставляем представление JSON объекта [educationRubric.](../resources/educationrubric.md)
+В органе запроса поставляем представление JSON объекта [educationRubric](../resources/educationrubric.md) .
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа и `201 Created` новый [объект educationRubric](../resources/educationrubric.md) в тексте отклика.
+В случае успеха этот метод возвращает `201 Created` код ответа и новый [объект educationRubric](../resources/educationrubric.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -165,10 +165,9 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
-> [!NOTE]
-> Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -374,10 +373,9 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
-> [!NOTE]
-> Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

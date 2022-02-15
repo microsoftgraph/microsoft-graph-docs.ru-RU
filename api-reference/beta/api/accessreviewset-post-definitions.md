@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a3421fc0e98404602982d7307221517e1cb4f850
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: ab5489b0df4a44d256a1ebad709dbecf541071dd
+ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651123"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62815904"
 ---
 # <a name="create-definitions"></a>Создание определений
 
@@ -18,7 +18,7 @@ ms.locfileid: "61651123"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+Создайте новый [объект accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "61651123"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений                            | AccessReview.ReadWrite.All |
+|Application                            | AccessReview.ReadWrite.All |
 
-При входе пользователь должен также быть в роли каталога, что позволяет им создавать обзор доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-overview.md)
+При входе пользователь должен также быть в роли каталога, что позволяет им создавать обзор доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешениям для [отзывов о доступе](../resources/accessreviewsv2-overview.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,42 +40,41 @@ POST /identityGovernance/accessReviews/definitions
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Описание |
 |:-------------|:------------|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 В следующей таблице показаны свойства, принятые для создания accessReview.
 
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
 | additionalNotificationRecipients   |[accessReviewNotificationRecipientItem](../resources/accessReviewNotificationRecipientItem.md) collection| Определяет список дополнительных пользователей или членов группы, которые будут уведомлены о ходе проверки доступа. |
-| descriptionForAdmins | Строка | Контекст обзора, предоставленного администраторам. Обязательный. |
+| descriptionForAdmins | Строка | Контекст обзора, предоставленного администраторам. Обязательный элемент. |
   descriptionForReviewers | String | Контекст обзора, предоставляемого рецензентам в уведомлениях электронной почты. Уведомления электронной почты поддерживают до 256 символов. Обязательный. |
-| displayName | Строка | Имя серии обзоров доступа. Обязательный.|
-| fallbackReviewers |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|При условии, если основные рецензенты не существуют, рецензентам откатов будет предложено завершить проверку. Например, если менеджеры выбраны в качестве и у проверяемого директора нет менеджера в Azure AD, проверятелям откатов будет предложено просмотреть `reviewers` этот принцип.|
-| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | В случае проверки всех групп определяется область, в которой будут рассмотрены группы. Просмотрите [accessReviewScope и](../resources/accessreviewscope.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept)| 
-| рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи просматривают собственный доступ).  Примеры вариантов назначения рецензентов см. в примере Назначение рецензентов определению обзора доступа с помощью [API microsoft Graph.](/graph/accessreviews-reviewers-concept) |
-| область | [accessReviewScope](../resources/accessreviewscope.md) | Определяет объекты, доступ к которым просматривается. Просмотрите [accessReviewScope и](../resources/accessreviewscope.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept) Обязательное.| 
-| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии обзоров доступа. Здесь определяется повторяемость. См. [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
-| backupReviewers (обесценив) |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| Это свойство было заменено **fallbackReviewers**. Однако указание резервных **копийReviewers** или **fallbackReviewers** автоматически заполняет те же значения для другого свойства. |
+| displayName | String | Имя серии обзоров доступа. Обязательный элемент.|
+| fallbackReviewers |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|При условии, если основные рецензенты не существуют, рецензентам откатов будет предложено завершить проверку. Например, если `reviewers` менеджеры выбраны в качестве и у проверяемого директора нет менеджера в Azure AD, проверятелям откатов будет предложено просмотреть этот принцип. <br/><br/>**ПРИМЕЧАНИЕ:** Значение этого свойства будет проигнорировано, если в свойстве **stageSettings** будут назначены анализаторы откатов.|
+| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | В случае проверки всех групп определяется область, в которой будут рассмотрены группы. [Просмотрите accessReviewScope и](../resources/accessreviewscope.md) узнайте, как настроить область определения обзора [доступа](/graph/accessreviews-scope-concept).| 
+| рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи просматривают собственный доступ).  Примеры вариантов назначения рецензентов см. в примере Назначение рецензентов определению обзора доступа с помощью [API microsoft Graph.](/graph/accessreviews-reviewers-concept) <br/><br/>**ПРИМЕЧАНИЕ:** Значение этого свойства будет игнорироваться, если рецензенты назначены через **свойство stageSettings** . |
+| область | [accessReviewScope](../resources/accessreviewscope.md) | Определяет объекты, доступ к которым просматривается. [Просмотрите accessReviewScope и](../resources/accessreviewscope.md) узнайте, как настроить область определения обзора [доступа](/graph/accessreviews-scope-concept). Обязательный элемент.| 
+|stageSettings|[accessReviewStageSettings](../resources/accessreviewstagesettings.md) collection| Определяет, сколько этапов будет иметь каждый экземпляр серии обзоров доступа. Этапы будут создаваться последовательно на основе свойства dependsOn. На каждом этапе может быть разный набор рецензентов, рецензентов и параметров. <br/><br/>Когда это свойство определено, его значения используются вместо соответствующих значений в [объекте accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) и свойстве **параметров** . Необязательное свойство. |
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии обзоров доступа. Здесь определяется повторяемость. См [. accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
+| backupReviewers (обесценив) |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| Это свойство было заменено **на fallbackReviewers**. Однако указание резервных **копийReviewers** или **fallbackReviewers** автоматически заполняет те же значения для другого свойства. |
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в тексте ответа.
+В случае успешной работы `201 Created` этот метод возвращает код ответа и [объект accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1-create-an-access-review-on-a-group"></a>Пример 1. Создание обзора доступа для группы
 
-Это пример создания обзора доступа со следующими настройками:
-+ В обзоре рассматриваются все члены группы, у которых есть **групповой id.** `02f3bafb-448c-487c-88c2-5fd65ce49a41`
-+ Конкретный пользователь, у которого есть **пользовательский ид,** `398164b1-5196-49dd-ada2-364b49f99b27` является рецензентом.
+В следующем примере создается обзор доступа со следующими настройками:
++ В обзоре рассматриваются все члены группы с **id** `02f3bafb-448c-487c-88c2-5fd65ce49a41`.
++ Конкретный пользователь с пользовательским **ид** `398164b1-5196-49dd-ada2-364b49f99b27` является рецензентом.
 + Он повторяется еженедельно и продолжается бесконечно.
 
 #### <a name="request"></a>Запрос
-В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -217,14 +216,14 @@ Content-type: application/json
 
 ### <a name="example-2-create-an-access-review-on-all-teams-with-inactive-guest-users"></a>Пример 2. Создание обзора доступа для всех групп с неактивными гостевых пользователей
 
-Это пример создания обзора доступа со следующими настройками:
+В следующем примере создается обзор доступа со следующими настройками:
 + В обзоре рассматриваются все группы с неактивными гостевых пользователей. Период бездействия — 30 дней с даты начала проверки доступа.
 + Владельцы групп — это рецензенты и назначены рецензенты откатов.
 + Он повторяется на третий день каждого квартала и продолжается бесконечно.
-+ **autoApplyDecisionsEnabled** устанавливается с `true` **значением defaultDecision.** `Deny`
++ **autoApplyDecisionsEnabled** устанавливается `true` с **значением defaultDecision**.`Deny`
 
 #### <a name="request"></a>Запрос
-В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -395,7 +394,7 @@ Content-type: application/json
 ```
 ### <a name="example-3-create-an-access-review-of-all-users-to-an-application"></a>Пример 3. Создание обзора доступа всех пользователей к приложению
 
-Это пример создания обзора доступа со следующими настройками:
+В следующем примере создается обзор доступа со следующими настройками:
 + В обзоре проверяется доступ пользователей к приложению.
 + Менеджеры людей — это рецензенты, а рецензенты откатов — члены группы.
 + Он повторяется в течение полугода и заканчивается 1 год с началаDate.
@@ -572,6 +571,198 @@ Content-type: application/json
         "endDate": "2022-05-05"
       }
     }
+  },
+  "additionalNotificationRecipients": []
+}
+```
+
+### <a name="example-4-create-an-access-review-on-a-group-with-multiple-stages"></a>Пример 4. Создание обзора доступа для группы с несколькими этапами
+
+В следующем примере создается обзор доступа со следующими настройками:
++ В обзоре рассматриваются все члены группы с **id** `02f3bafb-448c-487c-88c2-5fd65ce49a41`.
++ Она имеет два этапа:
+  + Конкретный пользователь с пользовательским **ид** `398164b1-5196-49dd-ada2-364b49f99b27` является рецензентом на первом этапе.
+  + Менеджеры людей являются рецензентами и рецензентами на втором этапе.
++ Он повторяется еженедельно и продолжается бесконечно.
+
+#### <a name="request"></a>Запрос
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accessReviewScheduleDefinition_group_multiStage"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
+Content-type: application/json
+
+{
+  "displayName": "Group Multi-stage Access Review",
+  "descriptionForAdmins": "New scheduled access review",
+  "descriptionForReviewers": "If you have any questions, contact jerry@contoso.com",
+  "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
+    "queryType": "MicrosoftGraph"
+  },
+  "stageSettings": [
+    {
+      "stageId": "1",
+      "durationInDays": 2,
+      "recommendationsEnabled": false,
+      "decisionsThatWillMoveToNextStage": [
+          "NotReviewed",
+          "Approve"
+      ],
+      "reviewers": [
+        {
+          "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
+          "queryType": "MicrosoftGraph"
+        }
+      ]
+    },
+    {
+      "stageId": "2",
+      "dependsOn": [
+          "1"
+      ],
+      "durationInDays": 2,
+      "recommendationsEnabled": true,
+      "reviewers": [
+        {
+          "query": "./manager",
+          "queryType": "MicrosoftGraph",
+          "queryRoot": "decisions"
+        }
+      ],
+      "fallbackReviewers": [
+        {
+          "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+          "queryType": "MicrosoftGraph"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "mailNotificationsEnabled": true,
+    "reminderNotificationsEnabled": true,
+    "justificationRequiredOnApproval": true,
+    "defaultDecisionEnabled": false,
+    "defaultDecision": "None",
+    "instanceDurationInDays": 4,
+    "recurrence": {
+      "pattern": {
+        "type": "weekly",
+        "interval": 1
+      },
+      "range": {
+        "type": "noEnd",
+        "startDate": "2020-09-08T12:02:30.667Z"
+      }
+    },
+    "decisionHistoriesForReviewersEnabled": true
+  }
+}
+
+```
+
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "29f2d16e-9ca6-4052-bbfe-802c48944448",
+  "displayName": "Group Multi-stage Access Review",
+  "createdDateTime": "0001-01-01T00:00:00Z",
+  "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+  "status": "NotStarted",
+  "descriptionForAdmins": "New scheduled access review",
+  "descriptionForReviewers": "If you have any questions, contact jerry@contoso.com",
+  "instanceEnumerationScope": null,
+  "createdBy": {
+    "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
+    "displayName": "MOD Administrator",
+    "userPrincipalName": "admin@contoso.com"
+  },
+  "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/groups/b74444cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
+    "queryType": "MicrosoftGraph"
+  },
+  "stageSettings": [
+    {
+      "stageId": "1",
+      "durationInDays": 2,
+      "recommendationsEnabled": false,
+      "decisionsThatWillMoveToNextStage": [
+          "NotReviewed",
+          "Approve"
+      ],
+      "reviewers": [
+        {
+          "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
+          "queryType": "MicrosoftGraph"
+        }
+      ]
+    },
+    {
+      "stageId": "2",
+      "dependsOn": [
+          "1"
+      ],
+      "durationInDays": 2,
+      "recommendationsEnabled": true,
+      "reviewers": [
+        {
+          "query": "./manager",
+          "queryType": "MicrosoftGraph",
+          "queryRoot": "decisions"
+        }
+      ],
+      "fallbackReviewers": [
+        {
+          "query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
+          "queryType": "MicrosoftGraph"
+        }
+      ]
+    }
+  ], 
+  "settings": {
+    "mailNotificationsEnabled": true,
+    "reminderNotificationsEnabled": true,
+    "justificationRequiredOnApproval": true,
+    "defaultDecisionEnabled": false,
+    "defaultDecision": "None",
+    "instanceDurationInDays": 1,
+    "autoApplyDecisionsEnabled": false,
+    "recommendationsEnabled": false,
+    "recurrence": {
+      "pattern": {
+        "type": "weekly",
+        "interval": 1,
+        "month": 0,
+        "dayOfMonth": 0,
+        "daysOfWeek": [],
+        "firstDayOfWeek": "sunday",
+        "index": "first"
+      },
+      "range": {
+        "type": "noEnd",
+        "numberOfOccurrences": 0,
+        "recurrenceTimeZone": null,
+        "startDate": "2020-09-08",
+        "endDate": null
+      }
+    },
+    "decisionHistoriesForReviewersEnabled": true,
+    "applyActions": []
   },
   "additionalNotificationRecipients": []
 }
