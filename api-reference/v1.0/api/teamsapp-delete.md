@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b7218457dd6c5dee56a1ead5462f7280a7325db3
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 0be663b84f624d0b3650c5baf6859e580fafc380
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443368"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62803956"
 ---
 # <a name="delete-teamsapp"></a>Удаление teamsApp
 
@@ -31,11 +31,11 @@ ms.locfileid: "62443368"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
-| Делегированное (рабочая или учебная учетная запись) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All** |
+| Делегированные (рабочая или учебная учетная запись) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All** |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
 | Для приложений                            | Не поддерживается. |
 
-> **Примечание**. Разрешения, отмеченные ** поддерживаются только для обратной совместимости. Мы рекомендуем обновить решения, чтобы использовать различные разрешения и избегать использования этих разрешений в будущем.
+> **Примечание**. Разрешения, отмеченные **, поддерживаются только для обратной совместимости. Мы рекомендуем обновить решения, чтобы использовать альтернативное разрешение, перечисленное в предыдущей таблице, и избегать использования этих разрешений в будущем.
 
 ## <a name="http-request"></a>HTTP-запрос
 

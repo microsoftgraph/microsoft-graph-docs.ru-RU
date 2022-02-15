@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 4cbad611c7dbcb3e9784b72c5da3f7482843827f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cdfb5c6f667c9370ff6eb2732ebf1a1d8b3cbbb4
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130557"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804684"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -110,7 +110,7 @@ ms.locfileid: "62130557"
 | id | String | Уникальный идентификатор для субъекта-службы. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `in`). |
 | info | [informationalUrl](informationalurl.md) | Базовые данные профиля для полученного приложения, такие как URL-адреса маркетинга, поддержки, условий обслуживания и заявления о конфиденциальности. Условия обслуживания и заявление о конфиденциальности отображаются в окне запроса согласия пользователя. Дополнительные сведения см. в статье [Добавление условий обслуживания и заявления о конфиденциальности для зарегистрированных приложений Azure AD](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le` и `eq` для значений `null`).  |
 |keyCredentials|Коллекция [keyCredential](keycredential.md)|Коллекция ключевых учетных данных, связанных с субъектом-службой. Значение null не допускается. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`).            |
-|loginUrl|Строка|Указывает URL-адрес, по которому поставщик услуг перенаправляет пользователя в Azure AD для проверки подлинности. Azure AD использует этот URL-адрес для запуска приложения из Microsoft 365 или из раздела "Мои приложения" в Azure AD. Если оставить пустое значение, Azure AD осуществляет вход на основе IdP для приложений, для которых настроен [единый вход на базе SAML](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). Пользователь запускает приложение из Microsoft 365, из раздела "Мои приложения" в Azure AD или по URL-адресу единого входа Azure AD.|
+|loginUrl|String|Указывает URL-адрес, по которому поставщик услуг перенаправляет пользователя в Azure AD для проверки подлинности. Azure AD использует этот URL-адрес для запуска приложения из Microsoft 365 или из раздела "Мои приложения" в Azure AD. Если оставить пустое значение, Azure AD осуществляет вход на основе IdP для приложений, для которых настроен [единый вход на базе SAML](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). Пользователь запускает приложение из Microsoft 365, из раздела "Мои приложения" в Azure AD или по URL-адресу единого входа Azure AD.|
 |logoutUrl|String| Указывает URL-адрес, используемый службой проверки подлинности корпорации Майкрософт для выхода пользователя с помощью [основного канала](https://openid.net/specs/openid-connect-frontchannel-1_0.html) OpenId Connect, [обратного канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколов выхода SAML.|
 |notes|String|Поле с произвольным текстом для записи сведений о субъекте-службе, обычно используемых в рабочих целях. Максимальная длина: 1024 символа.|
 |notificationEmailAddresses|Коллекция строк|Указывает список адресов электронной почты, по которым Azure AD отправляет уведомление, когда приближается срок окончания действия активного сертификата. Используется только для сертификатов, с помощью которых подписан маркер SAML, выпущенный для приложений коллекции Azure AD.|
@@ -119,7 +119,7 @@ ms.locfileid: "62130557"
 |preferredSingleSignOnMode|Строка|Указывает режим единого входа, настроенный для этого приложения. Azure AD использует предпочитаемый режим единого входа для запуска этого приложения из Microsoft 365 или из раздела "Мои приложения" Azure AD. Поддерживаемые значения: `password`, `saml`, `notSupported` и `oidc`.|
 |preferredTokenSigningKeyEndDateTime|DateTimeOffset|Указывает дату окончания срока действия keyCredential, использованного для подписи маркера, помеченного с помощью **preferredTokenSigningKeyThumbprint**.|
 |preferredTokenSigningKeyThumbprint|String|Зарезервировано только для внутреннего использования. Не записывайте и не используйте иным образом это свойство. Может быть удалено в будущих версиях. |
-|publishedPermissionScopes|Коллекция [permissionScope](permissionscope.md)|Делегированные разрешения, предоставляемые приложением. Дополнительные сведения см. в описании свойства **oauth2PermissionScopes** в свойстве **api** объекта [application](application.md). Значение null не допускается.|
+|publishedPermissionScopes|Коллекция [permissionScope](permissionscope.md)|Делегированные разрешения, предоставляемые приложением. Дополнительные сведения см. в описании свойства **oauth2PermissionScopes** в свойстве **api** объекта [application](application.md). Значение null не допускается. <br/>**Примечание.** Это свойство называется **oauth2PermissionScopes** в версии 1.0.|
 |replyUrls|Коллекция String|URL-адреса, по которым отправляются маркеры пользователей для входа с помощью связанного приложения, или URI перенаправления, по которым отправляются коды авторизации OAuth 2.0 и маркеры доступа для связанного приложения. Значение NULL не допускается. |
 |samlMetadataUrl|Строка|URL-адрес, по которому служба предоставляет метаданные SAML для федерации.|
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|Коллекция для параметров, связанных с единым входом SAML.|

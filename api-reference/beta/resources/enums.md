@@ -5,16 +5,26 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: f28d28301e4eb9268d1d4961574c3d318e38e7e2
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: f7f0016b8f709001ea1adf8621afdcf435e4a190
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519511"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804580"
 ---
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
+
+### <a name="accessreviewhistorystatus-values"></a>значения accessReviewHistoryStatus
+
+|Member|
+|:---|
+|done|
+|inprogress|
+|error|
+|запрашивается|
+|unknownFutureValue|
 
 ### <a name="crosstenantaccesspolicytargetconfigurationaccesstype-values"></a>значения crossTenantAccessPolicyTargetConfigurationAccessType
 
@@ -87,7 +97,7 @@ ms.locfileid: "62519511"
 | Элемент             | Значение | Описание |
 |:-------------------|:------| :------|
 | notRequired        | 0     | Для завершения регистрации устройства пользователю не требуется многофакторная проверка подлинности.|
-| обязательно           | 1     | Для завершения регистрации устройства пользователю требуется многофакторная проверка подлинности.|
+| Обязательный           | 1     | Для завершения регистрации устройства пользователю требуется многофакторная проверка подлинности.|
 | unknownFutureValue | 2     | Эволюционирующее значение sentinel. Не следует использовать.|
 
 ### <a name="policyscope-values"></a>значения policyScope
@@ -242,11 +252,11 @@ ms.locfileid: "62519511"
 
 |Member|
 |:---|
-|Строка|
+|String|
 |Целое число|
 |Справка|
 |Binary|
-|Логическое|
+|Boolean|
 |Даты и время|
 
 ### <a name="mutability-values"></a>значения мутируемости
@@ -422,7 +432,7 @@ ms.locfileid: "62519511"
 
 |Member|
 |:---|
-|userPrincipalName|
+|userPrincipalName.|
 |onPremisesUserPrincipalName|
 |userPrincipalUsername|
 |onPremisesUserPrincipalUsername|
@@ -782,7 +792,7 @@ ms.locfileid: "62519511"
 
 |Member|
 |:---|
-|обязательно|
+|Обязательный|
 |previouslySatisfied|
 |notApplicable|
 |unknownFutureValue|
@@ -1207,7 +1217,7 @@ ms.locfileid: "62519511"
 | занят             | 2     |
 | oof              | 3     |
 | workingElsewhere | 4     |
-| unknown          | -1    |
+| unknown          | –1    |
 
 
 ### <a name="physicaladdresstype-values"></a>значения physicalAddressType
@@ -1224,7 +1234,7 @@ ms.locfileid: "62519511"
 
 | Member
 |:-------------------------
-| обязательно
+| Обязательный
 | необязательный
 | resource
 
@@ -1251,7 +1261,7 @@ ms.locfileid: "62519511"
 
 | Элемент      | Значение |
 | :---------- | :---- |
-| Авто        | -1    |
+| Авто        | –1    |
 | lightBlue   | 0     |
 | lightGreen  | 1     |
 | lightOrange | 2     |
@@ -1458,7 +1468,7 @@ ms.locfileid: "62519511"
 | Владелец       | 0     |
 | Участник | 1     |
 | Reader      | 2     |
-| Нет        | -1    |
+| Нет        | –1    |
 
 
 ### <a name="operationstatus-values"></a>значения operationStatus
@@ -1466,7 +1476,7 @@ ms.locfileid: "62519511"
 | Member
 |:-----------------
 |NotStarted
-|Выполняется
+|Работает
 |Завершено
 |Не выполнено
 
@@ -1617,7 +1627,7 @@ ms.locfileid: "62519511"
 
 | Элемент   | Значение |
 | :------- | :---- |
-| Нет     | -1    |
+| Нет     | –1    |
 | preset0  | 0     |
 | preset1  | 1     |
 | preset2  | 2     |
@@ -1781,7 +1791,7 @@ Enum для серьезности оповещений.
 
 | Элемент            | Значение | Описание                  |
 | :---------------- | :---- | :--------------------------- |
-| unknown           | -1    | Неизвестно.                     |
+| unknown           | –1    | Неизвестно.                     |
 | интерактивный       | 0     | Logon является интерактивным.        |
 | remoteInteractive | 1     | Logon — это удаленный интерактивный. |
 | сеть           | 2     | Logon — это сеть.            |
@@ -1794,7 +1804,7 @@ Enum для серьезности оповещений.
 
 | Элемент        | Значение | Описание                     |
 | :------------ | :---- | :------------------------------ |
-| unknown       | -1    | Неизвестно.                        |
+| unknown       | –1    | Неизвестно.                        |
 | стандартный      | 0     | Член группы стандартных пользователей. |
 | power         | 1     | Член группы Power Users.    |
 | администратор | 2     | Член группы Администраторы. |
@@ -2186,7 +2196,7 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкий|2|
+|Низкая|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
@@ -2351,7 +2361,7 @@ Enum для серьезности оповещений.
 |:----------------------|:------|:-------------------------------------------------------------------|
 | builtIn               | 1     | Этот тип атрибута потока пользователей обозначает, что он был создан системой |
 | настраиваемый                | 2     | Этот тип атрибута потока пользователей обозначает, что он был создан пользователем   |
-|Обязательный|3||
+|обязательно|3||
 | unknownFutureValue    | 4     | Член-часовой.                                                 |
 
 ### <a name="permissionclassificationtype-values"></a>значения permissionClassificationType
@@ -2441,7 +2451,7 @@ Enum для серьезности оповещений.
 
 |Элемент    |Значение    |Описание |
 |:---------|:--------|:----------- |
-|команда      |0        |Указывает, что Teams приложение может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
+|team      |0        |Указывает, что Teams приложение может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
 |groupChat |1        |Указывает, что Teams приложение может быть установлено в групповом чате и уполномочено получать доступ к данным группового чата.|
 |personal  |2        |Указывает, что Teams приложение может быть установлено в личной области пользователя и уполномочено получать доступ к данным этого пользователя.|
 
@@ -2614,8 +2624,8 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|команда|
-|канал|
+|team|
+|channel|
 |чат|
 |unknownFutureValue|
 

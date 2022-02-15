@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fe02288b4141309c78cb206ae6bf286361cfd073
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 40c1a970348a313845c312a9c54908c35bdab369
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443109"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62803963"
 ---
 # <a name="add-app-to-team"></a>Добавление приложения в команду
 
@@ -28,11 +28,11 @@ ms.locfileid: "62443109"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All **, Directory.ReadWrite.All** |
+|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All **, Directory.ReadWrite.All** |
+|Приложение | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 
-> **Примечание**. Разрешения, отмеченные ** поддерживаются только для обратной совместимости. Мы рекомендуем обновить решения, чтобы использовать различные разрешения и избегать использования этих разрешений в будущем.
+> **Примечание**. Разрешения, отмеченные **, поддерживаются только для обратной совместимости. Мы рекомендуем обновить решения, чтобы использовать альтернативное разрешение, перечисленное в предыдущей таблице, и избегать использования этих разрешений в будущем.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +50,7 @@ POST /teams/{team-id}/installedApps
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|teamsApp|Строка|ID приложения для добавления.|
+|teamsApp|String|ID приложения для добавления.|
 
 ## <a name="response"></a>Отклик
 

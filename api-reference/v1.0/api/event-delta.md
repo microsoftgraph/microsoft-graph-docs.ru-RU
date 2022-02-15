@@ -1,16 +1,16 @@
 ---
 title: 'event: delta'
 description: 'Получение списка событий, которые были добавлены в **calendarView** (диапазон событий), обновлены в нем или удалены из него '
-localization_priority: Priority
+ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f410ec6aee93e70596d811760833ac54366858ba
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 1d25c0c12729a67d991809b3ad5b9f21e514d821
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514016"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "62805069"
 ---
 # <a name="event-delta"></a>event: delta
 
@@ -59,7 +59,7 @@ GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Type  | string  | application/json. Обязательный. |
 | Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
 | Prefer | string | {Часовой пояс}. Необязательный. Если параметр не указан, по умолчанию используется формат UTC.|
@@ -92,6 +92,16 @@ GET https://graph.microsoft.com/v1.0/me/calendarView/delta?startdatetime={start_
 
 Prefer: odata.maxpagesize=2
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/event-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Отклик
 В случае успешного выполнения запроса отклик будет включать маркер состояния — _skipToken_ или _deltaToken_. Первый указан в заголовке отклика _@odata.nextLink_, второй — в заголовке отклика _@odata.deltaLink_. Первый указывает на необходимость продолжать цикл, второй — на наличие всех изменений для определенного цикла.
@@ -108,7 +118,6 @@ Prefer: odata.maxpagesize=2
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 359
 
 {
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarView/delta?$skiptoken={_skipToken_}",

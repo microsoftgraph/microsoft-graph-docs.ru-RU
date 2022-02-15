@@ -5,23 +5,23 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 714a53c2777de89ed5ec1b7d169cbf52d5d84d4a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: abdb21910654b0311312e3a22764337861aa0755
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133323"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804516"
 ---
 # <a name="get-organizationalbranding"></a>Получение organizationalBranding
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение объекта организационного брендинга по умолчанию, если заглавная головка **Accept-Language** установлена или `0` `default` . Если по умолчанию не существует объекта организационного брендинга, этот метод возвращает `404 Not Found` ошибку.
+Извлечение объекта организационного брендинга по умолчанию, если заглавная головка **Accept-Language** установлена или `0` `default`. Если по умолчанию не существует объекта организационного брендинга, этот метод возвращает ошибку `404 Not Found` .
 
-Если загон **Accept-Language** задан существующему локальному языку, определенному по значению его **id,** этот метод извлекает брендинг для указанного локального языка.
+Если загон **Accept-Language** задан существующему локальному языку, определенному по значению его **id**, этот метод извлекает брендинг для указанного локального языка.
 
-Этот метод извлекает только свойства, не веские, например имя **пользователяHintText** и **signInPageText**. Чтобы получить потоковые типы брендинга по умолчанию, например **bannerLogo** и **backgroundImage,** используйте [метод GET organizationalBrandingLocalization.](organizationalbrandinglocalization-get.md)
+Этот метод извлекает только свойства, не веские, например имя **пользователяHintText** и **signInPageText**. Чтобы получить потоковые типы брендинга по умолчанию, например **bannerLogo** и **backgroundImage**, используйте [метод GET organizationalBrandingLocalization](organizationalbrandinglocalization-get.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,7 +42,7 @@ ms.locfileid: "62133323"
 GET /organization/{organizationId}/branding
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает только параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -52,12 +52,12 @@ GET /organization/{organizationId}/branding
 |Авторизация|Bearer {token}. Обязательный.|
 |Принять-Язык|Допустимый локал ISO 639-1. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект organizationalBranding](../resources/organizationalbranding.md) в тексте отклика. Если нет объекта брендинга по умолчанию, этот метод возвращает `404 Not Found` код ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект organizationalBranding](../resources/organizationalbranding.md) в тексте отклика. Если нет объекта брендинга по умолчанию, этот метод возвращает код `404 Not Found` ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -107,7 +107,7 @@ Accept-Language: 0
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -125,7 +125,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#branding",
     "@odata.id": "https://graph.microsoft.com/v2/99b24e1b-abec-4598-9d63-a2baf0a3cea1/directoryObjects/$/Microsoft.DirectoryServices.Organization('99b24e1b-abec-4598-9d63-a2baf0a3cea1')/branding/0",
     "id": "0",
-    "backgroundColor": "",
+    "backgroundColor": " ",
     "backgroundImageRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/illustration?ts=637535563816027796",
     "bannerLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/bannerlogo?ts=637535563824629275",
     "cdnList": [
@@ -133,9 +133,27 @@ Content-Type: application/json
         "aadcdn.msftauthimages.net",
         "aadcdn.msauthimages.net"
     ],
+    "customAccountResetCredentialsUrl": null,
+    "customCannotAccessYourAccountText": null,
+    "customCannotAccessYourAccountUrl": null,
+    "customForgotMyPasswordText": null,
+    "customPrivacyAndCookiesText": null,
+    "customPrivacyAndCookiesUrl": null,
+    "customTermsOfUseText": null,
+    "customTermsOfUseUrl": null,
+    "customResetItNowText": null,
+    "faviconRelativeUrl": null,
+    "headerBackgroundColor": null,
     "signInPageText": "Contoso",
     "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
-    "usernameHintText": ""
+    "usernameHintText": " ",
+    "loginPageTextVisibilitySettings": {
+      "hideCannotAccessYourAccount": false,
+      "hideForgotMyPassword": false,
+      "hideResetItNow": false,
+      "hideTermsOfUse": true,
+      "hidePrivacyAndCookies": true
+    }
 }
 ```
 
@@ -185,7 +203,7 @@ Accept-Language: 0
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"
@@ -197,7 +215,7 @@ HTTP/1.1 404 Not Found
 
 ### <a name="example-3-get-organizational-branding-for-the-french-locale"></a>Пример 3. Получить организационный брендинг для французского языка
 
-В следующем примере для получения брендинга локализации используется заглавная головка **Accept-Language.** `fr-FR`
+В следующем примере для получения брендинга локализации используется заглавная головка **Accept-Language**`fr-FR`.
 
 #### <a name="request"></a>Запрос
 
@@ -242,7 +260,7 @@ Accept-Language: fr-FR
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -272,7 +290,7 @@ Content-Type: application/json
 
 ### <a name="example-4-get-the-bannerlogo-for-the-default-locale"></a>Пример 4. Получить bannerLogo для локального значения по умолчанию
 
-В следующем примере **возвращается объект bannerLogo** для локального значения по умолчанию. Для получения типов объектов Stream, например **bannerLogo,** используйте [get organizationalBrandingLocalizationmethod](organizationalbrandinglocalization-get.md). Вы можете указать значение **id** как `default` или в `0` URL-адресе запроса. Если свойство не установлено, запрос возвращает пустой ответ.
+В следующем примере **возвращается объект bannerLogo** для локального значения по умолчанию. Чтобы получить типы объектов Stream, например **bannerLogo**, используйте [get organizationalBrandingLocalizationmethod](organizationalbrandinglocalization-get.md). Вы можете указать значение **id** как или `default` в `0` URL-адресе запроса. Если свойство не установлено, запрос возвращает пустой ответ.
 
 #### <a name="request"></a>Запрос
 
@@ -289,7 +307,7 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -306,14 +324,12 @@ Content-Type: image/*
 
 ### <a name="example-5-get-the-bannerlogo-for-the-default-locale-when-it-is-not-set"></a>Пример 5. Получить bannerLogo для локального значения по умолчанию, если он не установлен
 
-В следующем примере возвращается **объект bannerLogo,** который не был задат для локального значения по умолчанию.
+В следующем примере возвращается **объект bannerLogo** , который не был задат для локального значения по умолчанию.
 
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbranding_frlocale_bannerLogo"
@@ -322,23 +338,6 @@ Content-Type: image/*
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/default/bannerLogo
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbranding-frlocale-bannerlogo-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationalbranding-frlocale-bannerlogo-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-organizationalbranding-frlocale-bannerlogo-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbranding-frlocale-bannerlogo-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### <a name="response"></a>Отклик

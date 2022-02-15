@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 26c133798aa0484922c565e3f8f30929f499842c
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: d9c157e69a840f8d8b9326623d1bc73b33588dae
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62442920"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804292"
 ---
 # <a name="list-teamsapp"></a>List teamsApp
 
@@ -30,11 +30,11 @@ ms.locfileid: "62442920"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All **, Directory.ReadWrite.All** |
+| Делегированные (рабочая или учебная учетная запись)     | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All **, Directory.ReadWrite.All** |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All |
+| Приложение                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All |
 
-> **Примечание**. Разрешения, отмеченные ** поддерживаются только для обратной совместимости. Мы рекомендуем обновить решения, чтобы использовать различные разрешения и избегать использования этих разрешений в будущем.
+> **Примечание**. Разрешения, отмеченные **, поддерживаются только для обратной совместимости. Мы рекомендуем обновить решения, чтобы использовать альтернативное разрешение, перечисленное в предыдущей таблице, и избегать использования этих разрешений в будущем.
 
 ## <a name="http-request"></a>HTTP-запрос
 

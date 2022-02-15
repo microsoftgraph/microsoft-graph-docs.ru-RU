@@ -5,12 +5,12 @@ author: nkramer
 doc_type: apiPageType
 ms.prod: microsoft-teams
 ms.localizationpriority: medium
-ms.openlocfilehash: 68f53f8d1f4d2a97e6cbd94eae880192ddab9812
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: eaf6b02ed7e6c2703ca1bae148b6de09249761ad
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443081"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805180"
 ---
 # <a name="get-channel"></a>Получение канала
 
@@ -28,7 +28,7 @@ ms.locfileid: "62443081"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Application | ChannelSettings.Read.Group *, ChannelSettings.ReadWrite.Group*, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All **, Group.ReadWrite.All**, Directory.Read.All **, Directory.ReadWrite.All** |
 
-> **Примечание**. Разрешения, отмеченные ** поддерживаются только для обратной совместимости. Мы рекомендуем обновить решения, чтобы использовать различные разрешения и избегать использования этих разрешений в будущем. Разрешения, помеченные *, [используют разрешение, определенное для ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 

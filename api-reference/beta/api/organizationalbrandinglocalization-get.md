@@ -5,19 +5,19 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2272ef473ab58a2ae4aac58e150068c1950ed84a
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 416b6dc855648460e58d9a44a6a54ed1e7b7de3a
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996833"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805076"
 ---
 # <a name="get-organizationalbrandinglocalization"></a>Получение organizationalBrandingLocalization
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями объекта [организационнойbrandingLocalization.](../resources/organizationalbrandinglocalization.md) Чтобы получить объект локализации, укажите значение **id** в URL-адресе.
+Ознакомьтесь с свойствами и отношениями объекта [организационнойbrandingLocalization](../resources/organizationalbrandinglocalization.md) . Чтобы получить объект локализации, укажите значение **id** в URL-адресе.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,14 +41,14 @@ GET /organization/{organizationId}/branding/localizations/{organizationalBrandin
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа и объект `200 OK` [организационнойbrandingLocalization](../resources/organizationalbrandinglocalization.md) в тексте ответа.
+В случае успеха этот метод возвращает код `200 OK` ответа и объект [организационнойbrandingLocalization](../resources/organizationalbrandinglocalization.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -108,7 +108,7 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.organizationalBrandingProperties",
     "@odata.id": "https://graph.microsoft.com/v2/99b24e1b-abec-4598-9d63-a2baf0a3cea1/directoryObjects/$/Microsoft.DirectoryServices.Organization('99b24e1b-abec-4598-9d63-a2baf0a3cea1')//localizations('fr-FR')/fr-FR",
     "id": "fr-FR",
-    "backgroundColor": "",
+    "backgroundColor": " ",
     "backgroundImageRelativeUrl": null,
     "bannerLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/1036/bannerlogo?ts=637673868626068858",
     "cdnList": [
@@ -116,8 +116,27 @@ Content-Type: application/json
         "aadcdn.msftauthimages.net",
         "aadcdn.msauthimages.net"
     ],
-    "signInPageText": "Welcome to Contoso France",
-    "usernameHintText": "Welcome to Contoso France"
+    "customAccountResetCredentialsUrl": null,
+    "customCannotAccessYourAccountText": null,
+    "customCannotAccessYourAccountUrl": null,
+    "customForgotMyPasswordText": null,
+    "customPrivacyAndCookiesText": null,
+    "customPrivacyAndCookiesUrl": null,
+    "customTermsOfUseText": null,
+    "customTermsOfUseUrl": null,
+    "customResetItNowText": null,
+    "faviconRelativeUrl": null,
+    "headerBackgroundColor": null,
+    "signInPageText": "Contoso",
+    "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
+    "usernameHintText": " ",
+    "loginPageTextVisibilitySettings": {
+      "hideCannotAccessYourAccount": false,
+      "hideForgotMyPassword": false,
+      "hideResetItNow": false,
+      "hideTermsOfUse": true,
+      "hidePrivacyAndCookies": true
+    }
 }
 ```
 
@@ -158,7 +177,7 @@ GET https://graph.microsoft.com/beta/organization/99b24e1b-abec-4598-9d63-a2baf0
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -180,7 +199,7 @@ Content-Type: application/json
 
 ### <a name="example-3-get-the-bannerlogo-for-the-default-locale"></a>Пример 3. Получить bannerLogo для локального значения по умолчанию
 
-В следующем примере **возвращается объект bannerLogo** для локального значения по умолчанию. Вы можете указать **id** как `default` или в `0` URL-адресе запроса. Если объект не установлен, запрос возвращает пустой ответ.
+В следующем примере **возвращается объект bannerLogo** для локального значения по умолчанию. Вы можете указать **id** как или `default` в `0` URL-адресе запроса. Если объект не установлен, запрос возвращает пустой ответ.
 
 #### <a name="request"></a>Запрос
 
@@ -214,7 +233,7 @@ Content-Type: image/*
 
 ### <a name="example-4-get-the-bannerlogo-for-the-fr-fr-locale"></a>Пример 4. Получить bannerLogo для fr-FR-locale
 
-В следующем примере возвращается **объект bannerLogo** для локального `fr-FR` объекта, чей bannerLogo не установлен.
+В следующем примере возвращается **объект bannerLogo** `fr-FR` для локального объекта, чей bannerLogo не установлен.
 
 #### <a name="request"></a>Запрос
 

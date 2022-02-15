@@ -1,21 +1,21 @@
 ---
 ms.localizationpriority: medium
 ms.openlocfilehash: 37aff56957c52c05145546c4df4d5f017e50f5f9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59289672"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805353"
 ---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
-На этом шаге вы создайте и запустите образец. Этот пример кода создаст новое подключение, зарегистрирует схему, а затем вытолкирует элементы изApplianceParts.csvв это соединение. [](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/ApplianceParts.csv)
+На этом шаге вы создайте и запустите образец. Этот пример кода создаст новое подключение, зарегистрирует схему, а затем вытолкирует [ ](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/ApplianceParts.csv) элементы изApplianceParts.csvв это соединение.
 
 1. Откройте интерфейс командной строки (CLI) в каталоге PartsInventoryConnector.
 2. Используйте команду: `dotnet build` чтобы создать образец.
 3. Используйте команду: `dotnet run` для запуска примера.
-4. Выберите "**1. Создание подключения".** Введите уникальный идентификатор, имя и описание для этого подключения.
-5. Выберите "**2. Зарегистрируйте схему текущего параметра подключения**" Затем подождите, пока операция завершится.
+4. Выберите "**1. Создание подключения**". Введите уникальный идентификатор, имя и описание для этого подключения.
+5. Выберите "**2. Зарегистрируйте схему текущего параметра подключения**" Затем подождите завершения операции.
 6. Выберите "**3. Нажмите все элементы на текущее подключение**.
 
   > [!NOTE]

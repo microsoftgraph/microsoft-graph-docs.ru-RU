@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
 ms.openlocfilehash: f0ba3bbafa065bce8bb29fa760704df691bd5d79
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59289678"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805347"
 ---
 <!-- markdownlint-disable MD002 MD041 -->
 
@@ -21,7 +21,7 @@ ms.locfileid: "59289678"
 
 В этом руководстве будет создаваться первое Подключение к данным Microsoft Graph приложение. Интересно, не так ли? Мы тоже так думаем! Чтобы начать работу, сначала необходимо настроить несколько вещей.
 
-### <a name="prerequisites"></a>Предварительные условия
+### <a name="prerequisites"></a>Предварительные требования
 
 Чтобы завершить эту лабораторию, вам потребуется следующая подписка или лицензии.
 
@@ -35,7 +35,7 @@ ms.locfileid: "59289678"
 
 1. **Подписка на Microsoft Azure**.
 
-   - Если у вас его нет, вы можете получить его (бесплатно) на нашем веб-сайте [Azure.](https://azure.microsoft.com/free/)
+   - Если у вас его нет, вы можете получить его (бесплатно) на нашем [веб-сайте Azure](https://azure.microsoft.com/free/).
    - Учетная запись, используемая для регистрации, должна иметь роль **глобального** администратора.
    - Подписка Azure должна быть в том же клиенте, что и клиент Microsoft 365, так как Graph Data Подключение будет экспортировать данные только в подписку Azure в том же клиенте, а не между клиентами.
    - Клиенты Microsoft 365 и Azure должны быть в одном Microsoft Azure Active Directory аренде.

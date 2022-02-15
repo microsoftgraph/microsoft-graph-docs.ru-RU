@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
 ms.openlocfilehash: 93112b4ae67b3fe6352f0569613f8df064bc9de3
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59929198"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805389"
 ---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
@@ -13,9 +13,9 @@ ms.locfileid: "59929198"
 
 ## <a name="create-a-net-core-console-app"></a>Создание консольного приложения .NET Core
 
-1. Запуск Visual Studio 2019 г. и перейдите в **файл**  >  **New**  >  **Project.**
+1. Запуск Visual Studio 2019 г. и перейдите в **FileNew** >  >  **Project**.
 2. Выберите шаблон **Консоли App (.NET Core)** и выберите **Далее**.
-3. Введите **Project** имя : "PartsInventoryConnector" и выберите почтовый ящик для **"Место** решения и проекта в том же каталоге" и выберите **Создать,** как показано на следующем изображении.
+3. Введите **Project** имя: "PartsInventoryConnector", выберите почтовый **ящик для "** Место решения и проекта в том же каталоге", а также выберите **Создать**, как показано на следующем изображении.
 
 ![Снимок экрана раздела "Настройка нового проекта"](images/connectors-images/build7.png)
 
@@ -24,7 +24,7 @@ ms.locfileid: "59929198"
 
 ## <a name="add-nuget-packages"></a>Добавление пакетов NuGet
 
-Чтобы добавить NuGet пакеты, сначала щелкните правой кнопкой **мыши Project решение** и выберите Открыть в **терминале**.
+Чтобы добавить NuGet пакеты, сначала щелкните правой кнопкой **мыши Project решение** и выберите **Открыть в терминале**.
 
 ![Снимок экрана, показывающий параметр Открыть терминал](images/connectors-images/build8.png)
 
@@ -40,7 +40,7 @@ dotnet add package Microsoft.Identity.Client --version 4.13.0
 ```
 
 > [!TIP]
-> Если команда `add package` не справилась с этой командой, проверьте источник **пакета** проекта:
+> Если команда `add package` не справилась с этой командой, проверьте **источник пакета** проекта:
 > 1. Выберите проект в обозревателе решений.
 > 2. Перейдите в > Nuget диспетчер пакетов > диспетчер пакетов Параметры.
 > 3. Проверьте источники пакетов и убедитесь, что nuget.&#65279;в качестве источника пакета.
@@ -53,7 +53,7 @@ dotnet add package Microsoft.Identity.Client --version 4.13.0
 
 Эта проверка подлинности необходима для получения необходимого маркера доступа OAuth для вызова API соединителов.
 
-1. Создайте новый каталог с именем **Authentication** в **каталоге PartsInventoryConnector.**
+1. Создайте новый каталог с именем **Authentication** в **каталоге PartsInventoryConnector** .
 2. Создайте новый файл в каталоге **проверки** подлинности clientCredentialAuthProvider.cs и поместите следующий код в этот файл:
 
 ```c
@@ -126,7 +126,7 @@ namespace PartsInventoryConnector.Authentication
 
 ## <a name="add-user-experience"></a>Добавление пользовательского интерфейса
 
-1. Создайте новый каталог в **каталоге PartsInventoryConnector с** именем **Консоль.**
+1. Создайте новый каталог в **каталоге PartsInventoryConnector** с именем **Консоль**.
 2. Создайте новый файл в **каталоге Консоли** с именем MenuChoice.cs и поместите следующий код в этот файл:
 
 ```c
@@ -148,7 +148,7 @@ namespace PartsInventoryConnector.Console
 
 ## <a name="set-up-data-model"></a>Настройка модели данных
 
-1. Создание нового каталога в **каталоге PartsInventoryConnector с** именем **Models**.
+1. Создайте новый каталог в **каталоге PartsInventoryConnector с** именем **Models**.
 2. Создайте новый файл в **каталоге Models** с именем AppliancePart.cs и поместите в этот файл следующий код:
 
 
@@ -279,7 +279,7 @@ namespace PartsInventoryConnector.Models
 }
 ```
 
-4. Создание нового каталога с именем **Data** в **каталоге PartsInventoryConnector.**
+4. Создание нового каталога с именем **Data** в **каталоге PartsInventoryConnector** .
 5. Создайте новый файл в **каталоге данных** CsvDataLoader.cs и поместите в этот файл следующий код:
 
 ```c
@@ -332,7 +332,7 @@ namespace PartsInventoryConnector.Data
 
 ## <a name="write-the-microsoft-graph-helper-service"></a>Напишите службу Graph Майкрософт
 
-1. Создайте новый каталог с именем **MicrosoftGraph** в **каталоге PartsInventoryConnector.**
+1. Создайте новый каталог с именем **MicrosoftGraph** в **каталоге PartsInventoryConnector** .
 2. Создайте новый файл в **каталоге MicrosoftGraph** с именем CustomSerializer.cs и поместите следующий код в этот файл:
 
 ```c
@@ -415,7 +415,7 @@ namespace PartsInventoryConnector.MicrosoftGraph
 
 3. Создайте новый файл в **каталоге Microsoft Graph** MicrosoftGraphHelper.cs и поместите код ниже в этом файле.
 
-    Следующий код содержит методы, которые используют **MicrosoftGraphServiceClient** для создания и отправки вызовов в службу Microsoft Graph и обработки ответа.
+    Следующий код содержит методы, которые используют **MicrosoftGraphServiceClient** для создания и отправки вызовов в службу Microsoft Graph обработку ответа.
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -602,7 +602,7 @@ namespace PartsInventoryConnector
 
 ## <a name="create-the-connection"></a>Создание подключения
 
-1. В **MicrosoftGraph** откройте файл MicrosoftGraphHelper.cs и добавьте следующий код после метода **конструктора.**
+1. В **MicrosoftGraph** откройте файл MicrosoftGraphHelper.cs и добавьте следующий код после метода **конструктора** .
 
 ```c
 #region Connections
@@ -652,7 +652,7 @@ private static async Task CreateConnectionAsync()
 
 ## <a name="register-schema"></a>Схема регистрации
 
-1. В **MicrosoftGraph** откройте файл MicrosoftGraphHelper.cs и добавьте следующий код после метода **конструктора.**
+1. В **MicrosoftGraph** откройте файл MicrosoftGraphHelper.cs и добавьте следующий код после метода **конструктора** .
 
 ```c
 #region Schema
@@ -727,7 +727,7 @@ private static async Task CreateConnectionAsync()
 #endregion
 ```
 
-2. Откройте файл Program.cs и добавьте следующий код после **метода Main.**
+2. Откройте файл Program.cs и добавьте следующий код после **метода Main** .
 
 ```c
 private static async Task RegisterSchemaAsync()
@@ -774,7 +774,7 @@ private static async Task RegisterSchemaAsync()
 
 ## <a name="sync-items"></a>Элементы синхронизации
 
-1. В **Graph** Microsoft откройте файл MicrosoftGraphHelper.cs и добавьте следующий код после метода **Конструктора.**
+1. В **Graph** Microsoft откройте файл MicrosoftGraphHelper.cs и добавьте следующий код после метода **Конструктор**.
 
 ```c
 #region PushData
@@ -806,7 +806,7 @@ private static async Task RegisterSchemaAsync()
         #endregion
 ```
 
-2. Откройте файл Program.cs и добавьте следующий код после **метода Main.**
+2. Откройте файл Program.cs и добавьте следующий код после **метода Main** .
 
 ```c
 private static async Task UpdateItemsFromDatabase()

@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0019af65ee8e1f991412c8751d9f798610810397
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 5e3312489877160441cf20ba30667b0356b4a301
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443018"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805176"
 ---
 # <a name="get-filesfolder"></a>Получение filesFolder
 
@@ -27,7 +27,7 @@ ms.locfileid: "62443018"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Application | Files.Read.All, Files.ReadWrite.All, Group.Read.All **, Group.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные **, поддерживаются только для обратной совместимости. Рекомендуется обновить решения, чтобы использовать другие разрешения и избегать использования этих разрешений в будущем.
+> **Примечание**. Разрешения, помеченные **, поддерживаются только для обратной совместимости. Рекомендуется обновить решения, чтобы использовать другое разрешение, указанное в предыдущей таблице, и избегать использования этих разрешений в будущем.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

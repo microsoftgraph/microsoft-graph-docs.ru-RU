@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f937ed02dc0691f8639ac964804e1347db5dceb1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fabb8e8c1b63c1b50bf8dfc864d2d72d847c74c7
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62102251"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804950"
 ---
 # <a name="publish-teamsapp"></a>Публикация teamsApp
 
@@ -19,7 +19,7 @@ ms.locfileid: "62102251"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Публикация [приложения в](../resources/teamsapp.md) каталоге Microsoft Teams приложения.
-В частности, этот API публикует приложение в каталог организации (каталог приложений клиента); созданный ресурс будет иметь **значение свойства distributionMethod** `organization` в .
+В частности, этот API публикует приложение в каталог организации (каталог приложений клиента); созданный ресурс будет иметь **значение свойства distributionMethod** в `organization`.
 
 Свойство **requiresReview** позволяет любому пользователю отправлять приложение для проверки администратором. Администраторы могут утверждать или отклонить эти приложения с помощью этого API или Microsoft Teams центра администрирования.
 
@@ -33,7 +33,7 @@ ms.locfileid: "62102251"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
 | Для приложений                            | Не поддерживается. |
 
-> **Примечание**. Разрешения, помеченные **, не поддерживаются и не должны использоваться.
+> **Примечание**. Разрешения, помеченные **, поддерживаются только для обратной совместимости. Рекомендуется обновить решения, чтобы использовать другое разрешение, указанное в предыдущей таблице, и избегать использования этих разрешений в будущем.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 |Свойство|Тип|Описание|
 |----|----|----|
-|requiresReview| Логический | Этот необязательный параметр запроса запускает процесс проверки приложения. Пользователи с привилегиями администратора могут отправлять приложения без запуска проверки. Если пользователи хотят запросить отзыв перед публикацией, они должны `requiresReview` задать . `true` Пользователь, у которого есть привилегии администратора, может не устанавливать и не устанавливать значение, и приложение будет считаться утвержденным и будет `requiresReview` `false`  публиковаться мгновенно.|
+|requiresReview| Boolean | Этот необязательный параметр запроса запускает процесс проверки приложения. Пользователи с привилегиями администратора могут отправлять приложения без запуска проверки. Если пользователи хотят запросить отзыв перед публикацией, они должны задать `requiresReview` .`true` Пользователь, у которого есть привилегии `requiresReview` `false`  администратора, может не устанавливать и не устанавливать значение, и приложение будет считаться утвержденным и будет публиковаться мгновенно.|
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -62,15 +62,15 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 | Авторизация | Bearer {token}. Обязательный.  |
 | Content-Type  | application/zip. Обязательно. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-В теле запроса включите полезное Teams почтовый манифест. Дополнительные сведения см. [в материале Create an app package.](/microsoftteams/platform/concepts/apps/apps-package)  
+В теле запроса включите полезное Teams почтовый манифест. Дополнительные сведения см. [в материале Create an app package](/microsoftteams/platform/concepts/apps/apps-package).  
 
-Каждое приложение в каталоге приложений должно иметь уникальный `id` манифест.
+Каждое приложение в каталоге приложений должно иметь уникальный манифест `id`.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект teamsApp.](../resources/teamsapp.md)
+В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект teamsApp](../resources/teamsapp.md) .
 
 ## <a name="examples"></a>Примеры
 
@@ -101,7 +101,7 @@ Content-type: application/zip
 
 ---
 
-Сведения о создании почтового файла Microsoft Teams приложения см. в статью [Создание пакета приложений.](/microsoftteams/platform/concepts/apps/apps-package)
+Сведения о создании почтового файла Microsoft Teams приложения см. в [примере Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
 <!-- markdownlint-disable MD024 -->
 #### <a name="response"></a>Отклик
 

@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e88cfc3dd1e11f42feb3ede56594461a5f9d0b59
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 28028bfe970f5a63f8d877bfebe55a68cced21ec
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62224946"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804180"
 ---
 # <a name="get-accessreviewhistorydefinition"></a>Получить accessReviewHistoryDefinition
 
@@ -18,7 +18,7 @@ ms.locfileid: "62224946"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение [объекта accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) по его идентификатору. Возвращаются все свойства объекта определения истории просмотра доступа. Если определение составляет 30 дней или старше, возвращается ошибка 404.
+Извлечение [объекта accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) по его идентификатору. Возвращаются все свойства объекта определения истории просмотра доступа. Если определение составляет 30 дней или старше, возвращается `404 Not Found` ошибка.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "62224946"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|AccessReview.ReadWrite.All|
+|Приложение|AccessReview.ReadWrite.All|
 
 Для получения определения пользователь, заверяемый в записи, также должен быть создателем связанного определения истории отзывов, членом роли глобального каталога администратора или участником роли глобального каталога чтения.
 
@@ -42,9 +42,9 @@ ms.locfileid: "62224946"
 ``` http
 GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
-Этот метод поддерживает параметры `$select` `$expand` запроса oData и OData для настройки ответа. В том `?$expand=instances` числе будут включены в объект ответа экземпляры, связанные с [объектом accessReviewHistoryDefinition.](../resources/accessreviewhistorydefinition.md) Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select` `$expand` запроса oData и OData для настройки ответа. В том `?$expand=instances` числе будут включены в объект ответа экземпляры, связанные с [объектом accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -58,7 +58,7 @@ GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код отклика и [объект accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1cdb61560e1d04e41171af0b45bbca2c53565070
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: a08aab8150412f3b7124408c65cca0ac7d80b7ba
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651632"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62804446"
 ---
 # <a name="create-definitions"></a>Создание определений
 
 Пространство имен: microsoft.graph
 
-Создайте новый [объект accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+Создайте новый [объект accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "61651632"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений                            | AccessReview.ReadWrite.All |
+|Приложение                            | AccessReview.ReadWrite.All |
 
-При входе пользователь должен также быть в роли каталога, что позволяет им создавать обзор доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-overview.md)
+При входе пользователь должен также быть в роли каталога, что позволяет им создавать обзор доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешениям для [отзывов о доступе](../resources/accessreviewsv2-overview.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,40 +38,40 @@ POST /identityGovernance/accessReviews/definitions
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Описание |
 |:-------------|:------------|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 В следующей таблице показаны свойства, принятые для создания accessReview.
 
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
 | additionalNotificationRecipients   |[accessReviewNotificationRecipientItem](../resources/accessReviewNotificationRecipientItem.md) collection| Определяет список дополнительных пользователей или членов группы, которые будут уведомлены о ходе проверки доступа. |
-| descriptionForAdmins | Строка | Контекст обзора, предоставленного администраторам. Обязательный. |
+| descriptionForAdmins | String | Контекст обзора, предоставленного администраторам. Обязательный. |
 | descriptionForReviewers | String | Контекст обзора, предоставляемого рецензентам в уведомлениях электронной почты. Уведомления электронной почты поддерживают до 256 символов. Обязательный. |
 | displayName | String | Имя серии обзоров доступа. Обязательный.|
-| fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|При условии, если основные рецензенты не существуют, рецензентам откатов будет предложено завершить проверку. Например, если менеджеры выбраны в качестве и у проверяемого директора нет менеджера в Azure AD, проверятелям откатов будет предложено просмотреть `reviewers` этот принцип.|
-| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | В случае проверки всех групп определяется область, в которой будут рассмотрены группы. Просмотрите [accessReviewScope и](../resources/accessreviewscope.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept)|
+| fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|При условии, если основные рецензенты не существуют, рецензентам откатов будет предложено завершить проверку. Например, если `reviewers` менеджеры выбраны в качестве и у проверяемого директора нет менеджера в Azure AD, проверятелям откатов будет предложено просмотреть этот принцип.|
+| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | В случае проверки всех групп определяется область, в которой будут рассмотрены группы. [Просмотрите accessReviewScope и](../resources/accessreviewscope.md) узнайте, как настроить область определения обзора [доступа](/graph/accessreviews-scope-concept).|
 | рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи просматривают собственный доступ). Примеры вариантов назначения рецензентов см. в примере Назначение рецензентов определению обзора доступа с помощью [API microsoft Graph.](/graph/accessreviews-reviewers-concept)  |
-| область | [accessReviewScope](../resources/accessreviewscope.md) |  Определяет объекты, доступ к которым просматривается. Просмотрите [accessReviewScope и](../resources/accessreviewscope.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept) Обязательное.| 
-| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии обзоров доступа. Здесь определяется повторяемость. См. [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
+| область | [accessReviewScope](../resources/accessreviewscope.md) |  Определяет объекты, доступ к которым просматривается. [Просмотрите accessReviewScope и](../resources/accessreviewscope.md) узнайте, как настроить область определения обзора [доступа](/graph/accessreviews-scope-concept). Обязательный.| 
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии обзоров доступа. Здесь определяется повторяемость. См [. accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в тексте ответа.
+В случае успешной работы `201 Created` этот метод возвращает код ответа и [объект accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1-create-an-access-review-on-a-group"></a>Пример 1. Создание обзора доступа для группы
 
 Это пример создания обзора доступа со следующими настройками:
-+ В обзоре рассматриваются все члены группы, у которых есть **групповой id.** `02f3bafb-448c-487c-88c2-5fd65ce49a41`
-+ Конкретный пользователь, у которого есть **пользовательский ид,** `398164b1-5196-49dd-ada2-364b49f99b27` является рецензентом.
++ В обзоре рассматриваются все члены группы, у которых есть **групповой id**`02f3bafb-448c-487c-88c2-5fd65ce49a41`.
++ Конкретный пользователь, у которого есть **пользовательский ид**`398164b1-5196-49dd-ada2-364b49f99b27`, является рецензентом.
 + Он повторяется еженедельно и продолжается бесконечно.
 
 #### <a name="request"></a>Запрос
-В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -219,10 +219,10 @@ Content-type: application/json
 + В обзоре рассматриваются все группы с неактивными гостевых пользователей. Период бездействия — 30 дней с даты начала проверки доступа.
 + Владельцы групп — это рецензенты и назначены рецензенты откатов.
 + Он повторяется на третий день каждого квартала и продолжается бесконечно.
-+ **autoApplyDecisionsEnabled** устанавливается с `true` **значением defaultDecision.** `Deny`
++ **autoApplyDecisionsEnabled** устанавливается `true` с **значением defaultDecision**.`Deny`
 
 #### <a name="request"></a>Запрос
-В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -412,6 +412,8 @@ Content-type: application/json
 #### <a name="request"></a>Запрос
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"
@@ -483,6 +485,16 @@ Content-type: application/json
   }
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-allusers-m365-aadrole-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-allusers-m365-aadrole-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Отклик

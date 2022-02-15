@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f87b4be2aae0382c045ab0d5e5e1449651f583d2
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 3803138932fcf80e6e625df12d506e776c95fb4d
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225352"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804404"
 ---
 # <a name="delete-channel"></a>Удаление канала
 
@@ -18,7 +18,7 @@ ms.locfileid: "62225352"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [канала](../resources/channel.md).
+Удалите [канал](../resources/channel.md).
 
 > **Примечание**. Существует известная проблема с разрешениями для приложений и этим API. Дополнительные сведения см. в [списке известных проблем](/graph/known-issues#application-permissions).
 
@@ -29,9 +29,9 @@ ms.locfileid: "62225352"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Channel.Delete.All, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Channel.Delete.Group,*Channel.Delete.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
+|Приложение | Channel.Delete.Group *, Channel.Delete.All, Group.ReadWrite.All*, Directory.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). Разрешения, отмеченные **, не используются и не должны использоваться.
+[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 

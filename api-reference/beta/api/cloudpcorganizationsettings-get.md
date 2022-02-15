@@ -5,19 +5,19 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 36a8bbf804a82bca50806c82cc4cc648712e96a8
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 51f7cceeeaaaf04eadc657af0dfa1b029cc79fb3
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072846"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804229"
 ---
 # <a name="get-cloudpcorganizationsettings"></a>Get cloudPcOrganizationSettings
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) от текущего клиента. У клиента есть только один **объект cloudPcOrganizationSettings.**
+Ознакомьтесь с свойствами и отношениями [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) от текущего клиента. У клиента есть только один **объект cloudPcOrganizationSettings** .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -35,10 +35,10 @@ ms.locfileid: "62072846"
 }
 -->
 ``` http
-GET /deviceManagement/virtualEndpoint/cloudPcOrganizationSettings
+GET /deviceManagement/virtualEndpoint/organizationSettings
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -46,12 +46,12 @@ GET /deviceManagement/virtualEndpoint/cloudPcOrganizationSettings
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -62,12 +62,11 @@ GET /deviceManagement/virtualEndpoint/cloudPcOrganizationSettings
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPcOrganizationSettings
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/organizationSettings
 ```
 
 
 ### <a name="response"></a>Отклик
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

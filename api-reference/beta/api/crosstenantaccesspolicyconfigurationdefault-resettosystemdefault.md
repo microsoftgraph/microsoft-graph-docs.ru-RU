@@ -1,12 +1,17 @@
 ---
 title: 'crossTenantAccessPolicyConfigurationDefault: resetToSystemDefault'
-description: 'Сброс любых изменений, внесенных в конфигурацию по умолчанию в политике межзаймного доступа к системе по умолчанию.'
+description: Сброс любых изменений, внесенных в конфигурацию по умолчанию в политике межзаймного доступа к системе по умолчанию.
 author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
+ms.openlocfilehash: 22a2b3914d4a526c57146cf395d8255435199f5f
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804425"
 ---
-
 # <a name="crosstenantaccesspolicyconfigurationdefault-resettosystemdefault"></a>crossTenantAccessPolicyConfigurationDefault: resetToSystemDefault
 
 Пространство имен: microsoft.graph
@@ -46,9 +51,9 @@ POST /policies/crossTenantAccessPolicy/default/resetToSystemDefault
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного действия возвращается код `200 OK` ответа и пустой ответ. Чтобы подтвердить, что конфигурация по умолчанию восстановлена в системе по умолчанию, запустите [Get crossTenantAccessPolicyConfigurationDefault](../api/crosstenantaccesspolicyconfigurationdefault-get.md) и подтвердите, что **значение isSystemDefault** `true`установлено .
+В случае успешного выполнения это действие возвращает код отклика `204 No Content`. Чтобы подтвердить, что конфигурация по умолчанию восстановлена в системе по умолчанию, запустите [Get crossTenantAccessPolicyConfigurationDefault](../api/crosstenantaccesspolicyconfigurationdefault-get.md) и подтвердите, что **значение isSystemDefault** `true`установлено .
 
 ## <a name="examples"></a>Примеры
 
@@ -68,16 +73,10 @@ POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default/r
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationDefault"
+  "truncated": true
 }
 -->
 
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-
-}
+HTTP/1.1 204 No Content
 ```

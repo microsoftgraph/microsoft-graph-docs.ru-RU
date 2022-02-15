@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a914f4b01c457b4daf930bfe83a584001a756430
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 997e5fbcdfbef81bef17d920e909b69d6c91a8c2
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443291"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62803886"
 ---
 # <a name="get-chatmessage-in-a-channel-or-chat"></a>Получение объекта chatMessage в канале или чате
 
@@ -32,7 +32,7 @@ ms.locfileid: "62443291"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All **, Group.ReadWrite.All** |
 
-> **Примечание**. Разрешения, отмеченные **, поддерживаются только для обратной совместимости. Рекомендуется обновить решения, чтобы использовать другие разрешения и избегать использования этих разрешений в будущем.
+> **Примечание**. Разрешения, отмеченные **, поддерживаются только для обратной совместимости. Рекомендуется обновить решения, чтобы использовать другое разрешение, указанное в предыдущей таблице, и избегать использования этих разрешений в будущем.
 
 ### <a name="permissions-for-chat"></a>Разрешения для чата
 

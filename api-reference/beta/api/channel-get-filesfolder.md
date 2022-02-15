@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bdb61ad54e6bedd3487a3f8c17ef47fae1469299
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: f060f9161de0d2e53d1322f28ccce431691c85db
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443347"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804390"
 ---
 # <a name="get-filesfolder"></a>Получение filesFolder
 
@@ -29,7 +29,7 @@ ms.locfileid: "62443347"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Application | File.Read.Group *, Files.Read.All, Files.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные **, поддерживаются только для обратной совместимости. Рекомендуется обновить решения, чтобы использовать другие разрешения и избегать использования этих разрешений в будущем. Разрешения, помеченные *, используют [согласие для определенных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

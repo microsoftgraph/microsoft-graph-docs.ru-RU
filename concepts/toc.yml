@@ -88,7 +88,13 @@ items:
       - name: Пользователи
         href: azuread-users-concept-overview.md
       - name: Группы
-        href: office365-groups-concept-overview.md
+        items:
+          - name: Обзор
+            href: /graph/api/resources/groups-overview
+          - name: Группы Microsoft 365
+            href: office365-groups-concept-overview.md
+          - name: Настройка параметров группы
+            href: group-set-options.md
       - name: Приложения
         items:
           - name: Обзор
@@ -297,6 +303,10 @@ items:
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Проверка доступа к группе Microsoft 365
                     href: tutorial-accessreviews-M365group.md
+                  - name: Настройка области
+                    href: accessreviews-scope-concept.md
+                  - name: Назначение проверяющих
+                    href: accessreviews-reviewers-concept.md
               - name: Назначение ролей с помощью PIM для Azure AD
                 href: tutorial-assign-azureadroles.md
       - name: Почта

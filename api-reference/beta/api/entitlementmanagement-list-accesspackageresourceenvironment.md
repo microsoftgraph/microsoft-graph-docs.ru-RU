@@ -5,12 +5,12 @@ author: hanki-microsoft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b4918acbcb4c373bb4725599de9bf20235a7ec40
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1b8a56a9f5e9c01836b61a4974a44c66f8429ac8
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099765"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805055"
 ---
 # <a name="list-accesspackageresourceenvironments"></a>Список accessPackageResourceEnvironments
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "62099765"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Не поддерживается|
+|Приложение|EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,19 +40,19 @@ GET identityGovernance/entitlementManagement/accessPackageResourceEnvironments?$
 
 ## <a name="query-parameters"></a>Параметры запроса
 
-Этот метод требует `$filter` [параметра запроса OData](/graph/query-parameters). Необходимо `$filter` применить, чтобы получить **originSystem,** за которое назначено значение `SharePointOnline` .
+Этот метод требует параметра `$filter` [запроса OData](/graph/query-parameters). Необходимо применить, `$filter` чтобы получить **originSystem** , за которое назначено значение `SharePointOnline`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) в тексте ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код ответа и коллекцию объектов [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
 title: Получение сайта SharePoint
 ms.localizationpriority: high
 ms.prod: sharepoint
 description: Получение свойств и отношений ресурса site.
 doc_type: apiPageType
-ms.openlocfilehash: 199dfbff4bc86507cda919b6a8d22a30376507fe
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: becb062873ed06f327adf9270340af2d71199f73
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131956"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804369"
 ---
 # <a name="get-a-site-resource"></a>Получение ресурса site
 

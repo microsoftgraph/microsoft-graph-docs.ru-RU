@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: aeb9356fe4ab324b42353fb7fc1ecfd9b6e5b613
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 51887516cd6488c9c6530bc123a271805df88c62
+ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443214"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62804243"
 ---
 # <a name="get-chatmessagehostedcontent"></a>Get chatMessageHostedContent
 
@@ -32,7 +32,7 @@ ms.locfileid: "62443214"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All **, Group.ReadWrite.All** |
 
-> **Примечание**. Разрешения, отмеченные ** поддерживаются только для обратной совместимости. Мы рекомендуем обновить решения, чтобы использовать различные разрешения и избегать использования этих разрешений в будущем.
+> **Примечание**. Разрешения, отмеченные **, поддерживаются только для обратной совместимости. Мы рекомендуем обновить решения, чтобы использовать альтернативное разрешение, перечисленное в предыдущей таблице, и избегать использования этих разрешений в будущем.
 
 ### <a name="permissions-for-chat"></a>Разрешения для чата
 
