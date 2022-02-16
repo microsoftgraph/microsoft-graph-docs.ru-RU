@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: ddfe7302c0bec113b9ff799ed4316c6fa1093c27
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: eb43e0b283d2522b897a17247d9a2460664fcbe1
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62138237"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62855795"
 ---
 ```go
 
@@ -20,9 +20,11 @@ requestBody.SetJustification(&justification)
 options := &msgraphsdk.AccessReviewInstanceDecisionItemRequestBuilderPatchOptions{
     Body: requestBody,
 }
+accessReviewScheduleDefinitionId := "accessReviewScheduleDefinition-id"
 accessReviewInstanceId := "accessReviewInstance-id"
+accessReviewStageId := "accessReviewStage-id"
 accessReviewInstanceDecisionItemId := "accessReviewInstanceDecisionItem-id"
-graphClient.Me().PendingAccessReviewInstancesById(&accessReviewInstanceId).DecisionsById(&accessReviewInstanceDecisionItemId).Patch(options)
+graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).StagesById(&accessReviewStageId).DecisionsById(&accessReviewInstanceDecisionItemId).Patch(options)
 
 
 ```

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса assignedPlan
 description: Свойство **assignedPlans** объектов user и organization представляет собой коллекцию объектов **assignedPlan**.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: directory-management
 author: jpettere
-ms.openlocfilehash: ddb13f656eda6e17e037a7bcae06b33b41260f8f
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 3996d374d6fadde598c242f5b68ef9a79238e115
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721833"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854652"
 ---
 # <a name="assignedplan-resource-type"></a>Тип ресурса assignedPlan
 
@@ -26,9 +26,9 @@ ms.locfileid: "50721833"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |assignedDateTime|DateTimeOffset|дата и время, в которые был назначен план; например: 2013-01-02T19:32:30Z. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|capabilityStatus|[capabilityStatus](#capabilitystatus-values)|Условие назначения возможностей. Возможные значения `Enabled` , `Warning` `Suspended` , , `Deleted` `LockedOut` .|
+|capabilityStatus|[capabilityStatus](#capabilitystatus-values)|Условие назначения возможностей. Возможные значения , `Enabled``Warning`, `Suspended`, `Deleted``LockedOut`.|
 |service|String|Имя службы, например "Exchange".|
-|servicePlanId|Guid|Идентификатор GUID, определяющий план обслуживания.|
+|servicePlanId|GUID|Идентификатор GUID, определяющий план обслуживания.|
 
 
 ### <a name="capabilitystatus-values"></a>значения capabilityStatus
@@ -56,9 +56,9 @@ ms.locfileid: "50721833"
 ```json
 {
   "assignedDateTime": "String (timestamp)",
-  "capabilityStatus": "string",
-  "service": "string",
-  "servicePlanId": "guid"
+  "capabilityStatus": "String",
+  "service": "String",
+  "servicePlanId": "GUID"
 }
 
 ```

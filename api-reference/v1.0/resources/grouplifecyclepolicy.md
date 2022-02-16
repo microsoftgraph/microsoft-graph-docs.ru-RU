@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 2a927f172074e8a889589c9c0b475be78868ca62
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 71b163c23626ce9838c1a0f1b0db3199fe5ff1f0
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062679"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854310"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>Тип ресурса groupLifecyclePolicy
 
@@ -58,7 +58,7 @@ ms.locfileid: "59062679"
 {
   "alternateNotificationEmails": "String",
   "groupLifetimeInDays": 180,
-  "id": "Guid (identifier)",
+  "id": "String (identifier)",
   "managedGroupTypes": "String"
 }
 

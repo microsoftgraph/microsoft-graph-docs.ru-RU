@@ -5,12 +5,12 @@ author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0c4ededfdeeb8f221bd9b0089205a27520a20b44
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: 762d62bd0e34daa0ea7be5f9c35fc4cc6477009f
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519542"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62855156"
 ---
 # <a name="get-x509certificateauthenticationmethodconfiguration"></a>Get x509CertificateAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -44,7 +44,7 @@ ms.locfileid: "62519542"
 GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод не поддерживает параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -92,6 +92,8 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 
 ### <a name="response"></a>Отклик
+
+В следующем объекте ответа показан объект x509CertificateAuthenticationMethodConfiguration с конфигурацией по умолчанию.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -104,10 +106,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
     "@odata.type": "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
     "id": "X509Certificate",
     "state": "disabled",
-    "certificateUserBindings": [{
+    "certificateUserBindings": [
+        {
             "x509CertificateField": "PrincipalName",
             "userProperty": "onPremisesUserPrincipalName",
             "priority": 1
@@ -122,11 +126,14 @@ Content-Type: application/json
         "x509CertificateAuthenticationDefaultMode": "x509CertificateSingleFactor",
         "rules": []
     },
-    "includeTargets": [{
-        "targetType": "group",
-        "id": "all_users",
-        "isRegistrationRequired": false
-    }]
+    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('X509Certificate')/microsoft.graph.x509CertificateAuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false
+        }
+    ]
 }
 ```
 

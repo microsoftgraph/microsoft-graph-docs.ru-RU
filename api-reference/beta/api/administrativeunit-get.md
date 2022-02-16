@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a1b7fbdf0c9febab3091db56866f9f7525ff2e9d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0a6f68be5c3cbcb2daef5baa26230b451a93f70c
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097428"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854022"
 ---
 # <a name="get-administrativeunit"></a>Get administrativeUnit
 
@@ -18,9 +18,9 @@ ms.locfileid: "62097428"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта [administrativeUnit.](../resources/administrativeunit.md)
+Извлечение свойств и связей объекта [administrativeUnit](../resources/administrativeunit.md) .
 
-Так как **ресурс administrativeUnit** поддерживает [расширения,](/graph/extensibility-overview)вы также можете использовать операцию для получения настраиваемой информации о свойствах и расширении в `GET` **экземпляре administrativeUnit.**
+Так как **ресурс administrativeUnit** поддерживает [расширения,](/graph/extensibility-overview)`GET` вы также можете использовать операцию для получения настраиваемой информации о свойствах и расширении в **экземпляре administrativeUnit**.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -36,6 +36,7 @@ ms.locfileid: "62097428"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /administrativeUnits/{id}
+GET /directory/administrativeUnits/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает параметр `$select` [запроса OData](/graph/query-parameters) для настройки ответа.
@@ -45,14 +46,14 @@ GET /administrativeUnits/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект administrativeUnit](../resources/administrativeunit.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект administrativeUnit](../resources/administrativeunit.md) в тексте ответа.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -61,7 +62,7 @@ GET /administrativeUnits/{id}
   "name": "get_administrativeunit"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/administrativeUnits/{id}
+GET https://graph.microsoft.com/beta/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-administrativeunit-csharp-snippets.md)]
@@ -89,8 +90,9 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,10 +103,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "visibility": "visibility-value",
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",
+    "id": "4d7ea995-bc0f-45c0-8c3e-132e93bf95f8",
+    "deletedDateTime": null,
+    "displayName": "Seattle District Technical Schools",
+    "description": "Seattle district technical schools administration",
+    "isMemberManagementRestricted": null,
+    "visibility": "HiddenMembership",
+    "membershipRule": null,
+    "membershipType": null,
+    "membershipRuleProcessingState": null
 }
 ```
 

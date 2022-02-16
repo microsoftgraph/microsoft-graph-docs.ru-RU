@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 7b054fde11959055f5b5219475055ce0a97c6607
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4a6a783cc088585aeb50afa9984d1dbf30e629ae
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036027"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62855187"
 ---
 # <a name="passwordcredential-resource-type"></a>тип ресурса passwordCredential
 
 Пространство имен: microsoft.graph
 
-Представляет учетные данные паролей, связанные с приложением или директором службы. Свойство **passwordCredentials** [приложения](application.md) <!--and [servicePrincipal](serviceprincipal.md) entitites--> Объект — это коллекция **объектов passwordCredential.**
+Представляет учетные данные паролей, связанные с приложением или директором службы. Свойство **passwordCredentials** [приложения](application.md) <!--and [servicePrincipal](serviceprincipal.md) entitites--> Объект — это коллекция **объектов passwordCredential** .
 
 > [!IMPORTANT]
 > Использование POST или PATCH для набора **свойства passwordCredential** не поддерживается. Используйте следующие методы addPassword и removePassword, чтобы обновить пароль для приложения или службыPrincipal:
@@ -29,13 +29,13 @@ ms.locfileid: "59036027"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| customKeyIdentifier | В двоичном формате | Не следует использовать. |
-| displayName | Строка | Удобное имя пароля. Необязательно. |
-| endDateTime | DateTimeOffset | Дата и время, в течение которых истекает срок действия пароля, представлены в формате ISO 8601 и всегда во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Необязательно. |
+| customKeyIdentifier | Binary | Не следует использовать. |
+| displayName | Строка | Удобное имя пароля. Необязательное свойство. |
+| endDateTime | DateTimeOffset | Дата и время, в течение которых истекает срок действия пароля, представлены в формате ISO 8601 и всегда во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Необязательное свойство. |
 | подсказка | Строка | Содержит первые три символа пароля. Только для чтения. |
-| keyId | Guid | Уникальный идентификатор пароля. |
-| secretText | String | Только для чтения; Содержит надежные пароли, созданные Azure AD длиной 16-64 символов. Сгенерированное значение пароля возвращается только во время первоначального запроса POST для [добавленияPassword.](../api/application-addpassword.md) В будущем этот пароль не будет извлечен. |
-| startDateTime | DateTimeOffset | Дата и время, в течение которых пароль становится допустимым. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Необязательно. |
+| keyId | GUID | Уникальный идентификатор пароля. |
+| secretText | Строка | Только для чтения; Содержит надежные пароли, созданные Azure AD длиной 16-64 символов. Сгенерированное значение пароля возвращается только во время первоначального запроса POST для [добавленияPassword](../api/application-addpassword.md). В будущем этот пароль не будет извлечен. |
+| startDateTime | DateTimeOffset | Дата и время, в течение которых пароль становится допустимым. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Необязательное свойство. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -70,7 +70,7 @@ ms.locfileid: "59036027"
   "displayName": "String",
   "endDateTime": "String (timestamp)",
   "hint": "String",
-  "keyId": "Guid",
+  "keyId": "GUID",
   "secretText": "String",
   "startDateTime": "String (timestamp)"
 }

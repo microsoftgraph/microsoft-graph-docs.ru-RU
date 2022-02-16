@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: fefb2f204af1f3f64d7b23968722c13fdc36a51b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e7ffa073280c3b6b88284f95ce5f582566b629e6
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123806"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854871"
 ---
 # <a name="assignedplan-resource-type"></a>Тип ресурса assignedPlan
 
@@ -24,16 +24,16 @@ ms.locfileid: "59123806"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |assignedDateTime|DateTimeOffset|Дата и время, в которые был назначен план. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|capabilityStatus|String|Условие назначения возможностей. Возможные значения `Enabled` , `Warning` `Suspended` , , `Deleted` `LockedOut` . См. [подробное описание](#capabilitystatus-values) каждого значения.|
+|capabilityStatus|String|Условие назначения возможностей. Возможные значения , `Enabled``Warning`, `Suspended`, `Deleted``LockedOut`. См [. подробное описание](#capabilitystatus-values) каждого значения.|
 |service|String|Имя службы, например "Exchange".|
-|servicePlanId|Guid|Идентификатор GUID, определяющий план обслуживания.|
+|servicePlanId|GUID|Идентификатор GUID, определяющий план обслуживания.|
 
 
 ### <a name="capabilitystatus-values"></a>значения capabilityStatus
 
 | Member | Описание  |
 |:---------------|:--------|
-| Включен | Доступно для нормального использования. |
+| Включено | Доступно для нормального использования. |
 | Предупреждение | Доступно для нормального использования, но находится в льготном периоде. |
 | Suspended | Недоступны, но все данные, связанные с этой возможностью, должны быть сохранены. |
 | Deleted | Недоступные и любые данные, связанные с этой возможностью, могут быть удалены. |
@@ -54,9 +54,9 @@ ms.locfileid: "59123806"
 ```json
 {
   "assignedDateTime": "String (timestamp)",
-  "capabilityStatus": "string",
-  "service": "string",
-  "servicePlanId": "guid"
+  "capabilityStatus": "String",
+  "service": "String",
+  "servicePlanId": "GUID"
 }
 
 ```

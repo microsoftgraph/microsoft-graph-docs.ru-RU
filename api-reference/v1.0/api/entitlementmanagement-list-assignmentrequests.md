@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 448a35b90f8ee3e8f8ef42d7187fb7064ffadf86
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 37e974d2eca2fb4dbae0731dda34281f858307c7
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130429"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854545"
 ---
 # <a name="list-assignmentrequests"></a>Назначение спискаRequests
 
 Пространство имен: microsoft.graph
 
-В [управлении правами Azure AD](../resources/entitlementmanagement-overview.md)извлекайте список объектов [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)  В итоговом списке содержатся все запросы на назначение, текущие и просроченные, которые вызываемая имеет доступ к считывке во всех каталогах и пакетах доступа.
+В [управлении правами Azure AD](../resources/entitlementmanagement-overview.md) извлекайте список объектов [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) .  В итоговом списке содержатся все запросы на назначение, текущие и просроченные, которые вызываемая имеет доступ к считывке во всех каталогах и пакетах доступа.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,14 +40,14 @@ GET /identityGovernance/entitlementManagement/assignmentRequests
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры `$select` `$expand` `$filter` запроса OData и OData для настройки ответа.
+Этот метод поддерживает параметры `$select`запроса `$filter` `$expand` OData и OData для настройки ответа.
 
 ### <a name="example-scenarios-for-using-query-parameters"></a>Примеры сценариев использования параметров запроса
 
 - Чтобы получить пакет доступа каждого запроса, включайте `$expand=accessPackage` его в запрос.
-- Чтобы получить только запросы для определенного пакета доступа, включайте в запрос фильтр, например `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'` .
+- Чтобы получить только запросы для определенного пакета доступа, включайте в запрос фильтр, например `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'`.
 - Чтобы получить результат назначения, включайте `$expand=assignment` запрос.
-- Дополнительные сведения о запрашиваемом запросе `$expand=requestor` включайте в запрос.
+- Дополнительные сведения о запрашиваемом запросе включайте `$expand=requestor` в запрос.
 
 Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -57,12 +57,12 @@ GET /identityGovernance/entitlementManagement/assignmentRequests
 |:----------|:----------|
 | Авторизация | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) в тексте ответа.
+В случае успешного выполнения этот `200 OK` метод возвращает код ответа и коллекцию объектов [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -125,7 +125,7 @@ Content-Type: application/json
       "state": "delivered",
       "status": "Delivered",
       "createdDateTime": "2019-10-25T22:55:11.623Z",
-      "completedDate": "2019-10-26T22:55:11.623Z",
+      "completedDateTime": "2019-10-26T22:55:11.623Z",
       "schedule": {
         "@odata.type": "microsoft.graph.entitlementManagementSchedule"
       }

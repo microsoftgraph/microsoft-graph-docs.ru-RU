@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса assignedLicense
 description: Представляет лицензию, назначенную пользователю. Свойство **assignedLicenses** объекта user представляет собой коллекцию объектов **assignedLicense**.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: users
 author: jpettere
-ms.openlocfilehash: 9d957f2bfa5c7c9e4390e5c4df06d084a3e49e6f
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: d97afd5fa500f5a4a845365425e1f48b05e8695d
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547254"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854659"
 ---
 # <a name="assignedlicense-resource-type"></a>Тип ресурса assignedLicense
 
@@ -23,8 +23,8 @@ ms.locfileid: "52547254"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|disabledPlans|Коллекция объектов Guid|Коллекция уникальных идентификаторов отключенных планов.|
-|skuId|Guid|Уникальный идентификатор SKU.|
+|disabledPlans|Коллекция GUID|Коллекция уникальных идентификаторов отключенных планов.|
+|skuId|GUID|Уникальный идентификатор SKU.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -40,8 +40,8 @@ ms.locfileid: "52547254"
 
 ```json
 {
-  "disabledPlans": ["guid"],
-  "skuId": "guid"
+  "disabledPlans": ["GUID"],
+  "skuId": "GUID"
 }
 
 ```

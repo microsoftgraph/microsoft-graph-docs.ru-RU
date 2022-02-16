@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c2c1f1c0139d2b328eb1fed7bbba8d9b1f3566ba
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: a4871a3a06e5581eb4efc1427198c4599c681f6e
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344875"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62855201"
 ---
 # <a name="user-assignlicense"></a>user: assignLicense
 
@@ -48,15 +48,17 @@ POST /users/{id | userPrincipalName}/assignLicense
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |addLicenses|Коллекция [assignedLicense](../resources/assignedlicense.md)|Коллекция объектов [assignedLicense](../resources/assignedlicense.md), указывающих добавляемые лицензии. Вы можете отключить servicePlans, связанные с лицензией, установив свойство **disabledPlans** на [объекте assignedLicense](../resources/assignedlicense.md) .|
-|removeLicenses|Коллекция объектов Guid|Коллекция skuIds, которые идентифицируют лицензии для удаления.|
+|removeLicenses|Коллекция GUID|Коллекция skuIds, которые идентифицируют лицензии для удаления.|
 
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает `200 OK` код отклика и [обновленный объект](../resources/user.md) пользователя в тексте отклика.
 
-## <a name="example"></a>Пример
-Добавление лицензий пользователю.
-##### <a name="request"></a>Запрос
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-assign-licenses-to-the-signed-in-user"></a>Пример 1. Назначение лицензий подписанного пользователя
+
+#### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -68,17 +70,19 @@ POST https://graph.microsoft.com/beta/me/assignLicense
 Content-type: application/json
 
 {
-  "addLicenses": [
-    {
-      "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value-1"
-    },
-    {
-      "disabledPlans": [ "a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235" ],
-      "skuId": "skuId-value-2"
-    }
-  ],
-  "removeLicenses": []
+    "addLicenses": [
+        {
+            "disabledPlans": [
+                "8a256a2b-b617-496d-b51b-e76466e88db0"
+            ],
+            "skuId": "84a661c4-e949-4bd2-a560-ed7766fcaf2b"
+        },
+        {
+            "disabledPlans": [],
+            "skuId": "f30db892-07e9-47e9-837c-80727f46fd3d"
+        }
+    ],
+    "removeLicenses": []
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -108,22 +112,8 @@ Content-type: application/json
 ---
 
 
-## <a name="example"></a>Пример
-Удаление лицензий у пользователя.
-
-##### <a name="request"></a>Запрос
-```http
-POST https://graph.microsoft.com/beta/me/assignLicense
-Content-type: application/json
-
-{
-  "addLicenses": [],
-  "removeLicenses": ["skuId-value-1", "skuId-value-2"]
-}
-```
-
-##### <a name="response"></a>Отклик
-В обоих примерах ответ — это обновленный объект пользователя. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -136,24 +126,59 @@ Content-type: application/json
 {
   "accountEnabled": true,
   "assignedLicenses": [
-    {
-      "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "assignedDateTime": "2016-10-19T10:37:00Z",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "companyName": "companyName-value"
+        {
+            "disabledPlans": [
+                "8a256a2b-b617-496d-b51b-e76466e88db0"
+            ],
+            "skuId": "84a661c4-e949-4bd2-a560-ed7766fcaf2b"
+        },
+        {
+            "disabledPlans": [],
+            "skuId": "f30db892-07e9-47e9-837c-80727f46fd3d"
+        }
+    ],
+  "city": "Nairobi",
+  "companyName": "Contoso"
+}
+```
+
+### <a name="example-2-remove-licenses-from-the-signed-in-user"></a>Пример 2. Удаление лицензий у подписанного пользователя
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "user_assignlicense_removelicenses"
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/assignLicense
+Content-type: application/json
+
+{
+    "addLicenses": [],
+    "removeLicenses": [
+        "f30db892-07e9-47e9-837c-80727f46fd3d",
+        "84a661c4-e949-4bd2-a560-ed7766fcaf2b"
+    ]
+}
+```
+
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "accountEnabled": true,
+  "assignedLicenses": [],
+  "city": "Nairobi",
+  "companyName": "Contoso"
 }
 ```
 

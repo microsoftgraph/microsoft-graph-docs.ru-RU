@@ -5,12 +5,12 @@ author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: aa70e6e77e65ed4cdb126a21c003335f3a306ef3
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: eba66ae651b17e114ef2fa36076719d995ec3644
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519387"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854673"
 ---
 # <a name="update-x509certificateauthenticationmethodconfiguration"></a>Обновление x509CertificateAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -70,6 +70,13 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x
 
 ### <a name="request"></a>Запрос
 
+Ниже приводится пример запроса на обновление со следующими настройками:
+
++ Включает метод проверки подлинности сертификата x509 в клиенте.
++ Настраивает только одну привязку пользователя между свойствами **PrincipalName** сертификата и Azure AD **наPremisesUserPrincipalName** .
++ Определяет многофакторную проверку подлинности в качестве требования.
++ Настраивает правила привязки для сильного метода проверки подлинности в отношении типа правила.
+
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -83,27 +90,36 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
     "id": "X509Certificate",
-    "state": "disabled",
-    "certificateUserBindings": [{
+    "state": "enabled",
+    "certificateUserBindings": [
+        {
             "x509CertificateField": "PrincipalName",
             "userProperty": "onPremisesUserPrincipalName",
             "priority": 1
-        },
-        {
-            "x509CertificateField": "RFC822Name",
-            "userProperty": "userPrincipalName",
-            "priority": 2
         }
     ],
     "authenticationModeConfiguration": {
-        "x509CertificateAuthenticationDefaultMode": "x509CertificateSingleFactor",
-        "rules": []
+        "x509CertificateAuthenticationDefaultMode": "x509CertificateMultiFactor",
+        "rules": [
+            {
+                "x509CertificateRuleType": "issuerSubject",
+                "identifier": "CN=ContosoCA,DC=Contoso,DC=org ",
+                "x509CertificateAuthenticationMode": "x509CertificateMultiFactor"
+            },
+            {
+                "x509CertificateRuleType": "policyOID",
+                "identifier": "1.2.3.4",
+                "x509CertificateAuthenticationMode": "x509CertificateMultiFactor"
+            }
+        ]
     },
-    "includeTargets": [{
-        "targetType": "group",
-        "id": "all_users",
-        "isRegistrationRequired": false
-    }]
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false
+        }
+    ]
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -124,12 +140,10 @@ Content-Type: application/json
 ### <a name="response"></a>Отклик
 
 <!-- {
-  "blockType": "response",
-  "truncated": true
+  "blockType": "response"
 }
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
 ```
 

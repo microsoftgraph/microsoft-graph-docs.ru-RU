@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8919f4245c3ba3a48b85b5fc06b4102b852bc96c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 494aa8168eed9a8e26daf1a73e1625fafa6785a3
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60995077"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854008"
 ---
 # <a name="update-authorizationpolicy"></a>Обновление авторизацииPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "60995077"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [authorizationPolicy.](../resources/authorizationpolicy.md)
+Обновление свойств объекта [authorizationPolicy](../resources/authorizationpolicy.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "60995077"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.Authorization|
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.ReadWrite.Authorization|
+| Приложение                            | Policy.ReadWrite.Authorization|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,16 +51,16 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|  
-|displayName|String| Отображение имени для этой политики. |  
+|displayName|Строка| Отображение имени для этой политики. |  
 |description|String| Описание этой политики. |  
-|guestUserRoleId|Guid| Представляет шаблон roleId для роли, которая должна быть предоставлена гостевому пользователю. Чтобы найти список доступных шаблонов ролей, обратитесь к list [unifiedRoleDefinitions.](./rbacapplication-list-roledefinitions.md) Только поддерживаемые роли на сегодняшний день : User `a0b1b346-4d3e-4e8b-98f8-753987be4970` (), Guest User () и Restricted Guest User `10dae51f-b6af-4016-8d66-8c2a99b929b3` `2af84b1e-32c8-42b7-82bc-daa82404023b` (). | 
+|guestUserRoleId|GUID| Представляет шаблон roleId для роли, которая должна быть предоставлена гостевому пользователю. Чтобы найти список доступных шаблонов ролей, обратитесь к list [unifiedRoleDefinitions](./rbacapplication-list-roledefinitions.md) . На сегодняшний день поддерживаются только роли пользователя (`a0b1b346-4d3e-4e8b-98f8-753987be4970`), гостевого пользователя (`10dae51f-b6af-4016-8d66-8c2a99b929b3`) и ограниченного гостевого пользователя (`2af84b1e-32c8-42b7-82bc-daa82404023b`). | 
 |enabledPreviewFeatures|Коллекция (строка)| Список функций, включенных для личного предварительного просмотра в клиенте. | 
-|blockMsolPowerShell|Логическое| Чтобы отключить использование MSOL PowerShell, установите это свойство `true` . Это также отключит доступ пользователей к конечной точке устаревшей службы, используемой MSOL PowerShell. Это не влияет на azure AD Подключение Microsoft Graph. | 
+|blockMsolPowerShell|Логический| Чтобы отключить использование MSOL PowerShell, установите это свойство `true`. Это также отключит доступ пользователей к конечной точке устаревшей службы, используемой MSOL PowerShell. Это не влияет на azure AD Подключение Microsoft Graph. | 
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultUserRolePermissions.md)| Указывает определенные настраиваемые разрешения для роли пользователя по умолчанию. | 
-|allowedToUseSSPR|Логическое| Указывает, можно ли использовать Self-Serve сброса пароля пользователями клиента. | 
-|allowedToSignUpEmailBasedSubscriptions|Логическое| Указывает, могут ли пользователи подписываться на подписки на основе электронной почты. | 
-|allowEmailVerifiedUsersToJoinOrganization|Логическое| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. |
-| permissionGrantPolicyIdsAssignedToDefaultUserRole | Коллекция объектов string | Указывает, разрешено ли согласие пользователя на приложения, [](/azure/active-directory/manage-apps/manage-app-consent-policies) и если это так, то какая политика согласия приложения регулирует разрешение для пользователей на предоставление согласия. Значения должны быть в формате , где находится id встроенной или настраиваемой политики согласия `managePermissionGrantsForSelf.{id}` `{id}` [приложения.](/azure/active-directory/manage-apps/manage-app-consent-policies)  Пустой список указывает, что согласие пользователя на приложения отключено. |
+|allowedToUseSSPR|Логический| Указывает, можно ли использовать Self-Serve сброса пароля пользователями клиента. | 
+|allowedToSignUpEmailBasedSubscriptions|Логический| Указывает, могут ли пользователи подписываться на подписки на основе электронной почты. | 
+|allowEmailVerifiedUsersToJoinOrganization|Boolean| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. |
+| permissionGrantPolicyIdsAssignedToDefaultUserRole | Коллекция строк | Указывает, разрешено ли согласие пользователя на приложения, и если это так, то какая [](/azure/active-directory/manage-apps/manage-app-consent-policies) политика согласия приложения регулирует разрешение для пользователей на предоставление согласия. Значения должны быть в формате `managePermissionGrantsForSelf.{id}`, `{id}` где находится **id** встроенной или настраиваемой политики [согласия приложения](/azure/active-directory/manage-apps/manage-app-consent-policies). Пустой список указывает, что согласие пользователя на приложения отключено. |
 
 ## <a name="response"></a>Отклик
 
@@ -89,7 +89,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"
@@ -145,7 +145,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"
@@ -198,7 +198,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"
@@ -254,7 +254,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"
@@ -308,7 +308,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"
@@ -365,7 +365,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"
@@ -379,7 +379,7 @@ HTTP/1.1 204 No Content
 
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса, который позволяет получить согласие пользователя на [](/azure/active-directory/manage-apps/manage-app-consent-policies) приложения при условии политики согласия на встроенные приложения, которая позволяет делегировать разрешения, классифицированные "низко", для клиентских приложений от проверенных издателей или зарегистрированных в том же `microsoft-user-default-low` клиенте.
+Ниже приводится пример запроса, который позволяет получить согласие пользователя на приложения при `microsoft-user-default-low`условии политики согласия на встроенные [приложения, которая](/azure/active-directory/manage-apps/manage-app-consent-policies) позволяет делегировать разрешения, классифицированные "низко", для клиентских приложений от проверенных издателей или зарегистрированных в том же клиенте.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

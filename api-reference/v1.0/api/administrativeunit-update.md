@@ -5,18 +5,18 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: aa8fc7c6dbc3a65af5f1a92361e09f4863762728
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c8629132cbe4c55336b466d07ec384c4ac9acdc7
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125011"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62853979"
 ---
-# <a name="update-administrativeunit"></a>Обновление администрирования
+# <a name="update-administrativeunit"></a>Обновление администрированияUnit
 
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [administrativeUnit.](../resources/administrativeunit.md)
+Обновление свойств объекта [administrativeUnit](../resources/administrativeunit.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -48,9 +48,8 @@ PATCH /directory/administrativeUnits/{id}
 |:---------------|:--------|:----------|
 |description|string|Описание административного подразделения.|
 |displayName|string|Отображение имени административного подразделения.|
-|visibility|string|Видимость для административного подразделения. Если не установить, то по умолчанию является "общедоступным". Можно установить "HiddenMembership", которое скрывает членство от нечленов.|
 
-Так как ресурс **administrativeUnit** поддерживает [расширения,](/graph/extensibility-overview)вы можете использовать операцию для добавления, обновления или удаления собственных данных, определенных для приложения, в настраиваемом свойстве расширения в существующем экземпляре `PATCH` **administrativeUnit.**
+Так как ресурс **administrativeUnit** поддерживает [расширения,](/graph/extensibility-overview)`PATCH` операцию можно использовать для добавления, обновления или удаления собственных данных, определенных приложениям, в настраиваемом свойстве расширения в существующем экземпляре **administrativeUnit**.
 
 ## <a name="response"></a>Отклик
 
@@ -58,7 +57,7 @@ PATCH /directory/administrativeUnits/{id}
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -67,13 +66,11 @@ PATCH /directory/administrativeUnits/{id}
   "name": "update_administrativeunit"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}
+PATCH https://graph.microsoft.com/v1.0/directory/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "visibility": "visibility-value"
+    "displayName": "Greater Seattle District Technical Schools"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -103,10 +100,7 @@ Content-type: application/json
 ---
 
 
----
-
-
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response"

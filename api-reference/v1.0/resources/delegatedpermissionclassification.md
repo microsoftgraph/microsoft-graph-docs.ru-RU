@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 088fd0264abebaec5e4bf4d9af14bbb4031de1e4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: faa6afc6c7f72efc73189d373c4f9223b558ecc7
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118752"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854353"
 ---
 # <a name="delegatedpermissionclassification-resource-type"></a>тип ресурса delegatedPermissionClassification
 
@@ -18,16 +18,16 @@ ms.locfileid: "59118752"
 
 Используется для указания классификации делегированного разрешения.
 
-Делегированная классификация разрешений может использоваться в сочетании с настройками согласия пользователя для выбора разрешений, на которые разрешено согласие пользователя. Подробнее о классификации разрешений см. в приложении Configure how [end-users consent to applications.](/azure/active-directory/manage-apps/configure-user-consent)
+Делегированная классификация разрешений может использоваться в сочетании с настройками согласия пользователя для выбора разрешений, на которые разрешено согласие пользователя. Подробнее о классификации разрешений см. в приложении [Configure how end-users consent to applications](/azure/active-directory/manage-apps/configure-user-consent) .
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-| id | String | Уникальный идентификатор для ключа **делегированияPermissionClassification.** Значение null не допускается. Только для чтения. |
-| classification | permissionClassificationType | Задано значение классификации. Возможное значение: `low` . Не поддерживает `$filter`. |
-| permissionId | Guid | Уникальный идентификатор **(id)** для делегированного разрешения, перечисленного в **коллекции oauth2PermissionScopes** [службыPrincipal.](servicePrincipal.md) Требуется при создании. Не поддерживает `$filter`. |
-| permissionName | String | Значение утверждения **(значение)** для делегированного разрешения, перечисленного в **коллекции oauth2PermissionScopes** [службыPrincipal.](servicePrincipal.md) Не поддерживает `$filter`. |
+| id | String | Уникальный идентификатор для ключа **делегированияPermissionClassification** . Значение null не допускается. Только для чтения. |
+| classification | permissionClassificationType | Задано значение классификации. Возможное значение: `low`. Не поддерживает `$filter`. |
+| permissionId | String | Уникальный идентификатор (**идентификатор**) для делегированного разрешения, перечисленного в **коллекции oauth2PermissionScopes** [службыPrincipal](servicePrincipal.md). Требуется при создании. Не поддерживает `$filter`. |
+| permissionName | Строка | Значение утверждения (**значение**) для делегированного разрешения, перечисленного в **коллекции oauth2PermissionScopes** [службыPrincipal](servicePrincipal.md). Не поддерживает `$filter`. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -43,9 +43,9 @@ ms.locfileid: "59118752"
 
 ```json
 {
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "classification": "low",
-  "permissionId": "string",
-  "permissionName": "string"
+  "permissionId": "String",
+  "permissionName": "String"
 }
 ```

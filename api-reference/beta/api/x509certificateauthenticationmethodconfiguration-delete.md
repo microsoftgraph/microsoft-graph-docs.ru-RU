@@ -1,23 +1,23 @@
 ---
 title: Удаление x509CertificateAuthenticationMethodConfiguration
-description: Удаление объекта x509CertificateAuthenticationMethodConfiguration и восстановление всех остальных свойств в их параметрах по умолчанию
+description: Удалите настраиваемый клиентом объект x509CertificateAuthenticationMethodConfiguration и восстановите конфигурацию по умолчанию.
 author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 78f50f37eaa4a1310a0c599eaaf92f66857800db
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: 852b63fbfc51401e4f5f2761aad8082c5c261ffd
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519577"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854757"
 ---
 # <a name="delete-x509certificateauthenticationmethodconfiguration"></a>Удаление x509CertificateAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Восстановление [объекта x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) в конфигурации по умолчанию.
+Удалите настраиваемый [клиентом объект x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) и восстановите конфигурацию по умолчанию.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: cd971de84841068ffa8a7a4af7b3258c5f45003f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8b94a9fe36b0ffb482644758b382150c1f71c502
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451418"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854001"
 ---
 # <a name="resourceaccess-resource-type"></a>тип ресурса ResourceAccess
 
@@ -18,13 +18,14 @@ ms.locfileid: "60451418"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Объект, используемый для указания области разрешений OAuth 2.0 или роли приложения, которая требуется приложению, через свойство **resourceAccess** типа ресурса [requiredResourceAccess.](requiredresourceaccess.md)
+Объект, используемый для указания области разрешений OAuth 2.0 или роли приложения, которая требуется приложению, через свойство **resourceAccess** типа ресурса [requiredResourceAccess](requiredresourceaccess.md) .
 
 ## <a name="properties"></a>Свойства
+
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|GUID|Уникальный идентификатор для одного из [экземпляров oauth2PermissionScopes](permissionscope.md) или экземпляров [appRole,](approle.md) которые предоставляет приложение ресурса.|
-|type|String|Указывает, ссылается ли свойство **id** на [oauth2PermissionScopes](permissionscope.md) или [appRole.](approle.md) Возможные значения: `Scope` (для областей разрешений OAuth 2.0) или `Role` (для ролей приложений).|
+|id|GUID|Уникальный идентификатор роли приложения [или](approle.md) [делегированного разрешения](permissionScope.md) , выставленного приложением ресурса. Для делегирования разрешений это должно соответствовать свойству **id** одного из делегированных разрешений в коллекции **oauth2PermissionScopes** доверенного представителя [службы приложения-ресурса](serviceprincipal.md).[](permissionscope.md) Для ролей приложений (разрешений приложений) это должно соответствовать свойству **id** роли [](approle.md) приложения в коллекции **appRoles** основного владельца [службы приложения ресурса](serviceprincipal.md).|
+|type|Строка|Указывает, ссылается ли свойство **id** на делегирование разрешения или роль [приложения](approle.md) (разрешение приложения).[](permissionscope.md) Возможные значения: `Scope` (для делегирования разрешений) или `Role` (для ролей приложения).|
 
 ## <a name="json-representation"></a>Представление JSON
 

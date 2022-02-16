@@ -1,12 +1,17 @@
 ---
 title: тип ресурса x509CertificateAuthenticationMethodConfiguration
-description: 'Представляет сведения о родной службе проверки подлинности Azure AD Certificate-Based (CBA) в клиенте, в том числе о том, включен или отключен метод проверки подлинности, а также пользователи и группы, которые могут зарегистрировать и использовать его.'
+description: Представляет сведения о родной службе проверки подлинности Azure AD Certificate-Based (CBA) в клиенте, в том числе о том, включен или отключен метод проверки подлинности, а также пользователи и группы, которые могут зарегистрировать и использовать его.
 author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
+ms.openlocfilehash: 415f17972c6163314cfdb54a5828e4db65dca04a
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854367"
 ---
-
 # <a name="x509certificateauthenticationmethodconfiguration-resource-type"></a>тип ресурса x509CertificateAuthenticationMethodConfiguration
 
 Пространство имен: microsoft.graph
@@ -22,7 +27,7 @@ doc_type: resourcePageType
 |:---|:---|:---|
 |[Get x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-get.md)|[x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md)|Ознакомьтесь с свойствами и отношениями объекта x509CertificateAuthenticationMethodConfiguration.|
 |[Обновление x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-update.md)|[x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md)|Обновление свойств объекта x509CertificateAuthenticationMethodConfiguration.|
-|[Удаление x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-delete.md)|Нет| Восстановление объекта x509CertificateAuthenticationMethodConfiguration в конфигурации по умолчанию.|
+|[Удаление x509CertificateAuthenticationMethodConfiguration](../api/x509certificateauthenticationmethodconfiguration-delete.md)|Нет| Удалите настраиваемый клиентом объект x509CertificateAuthenticationMethodConfiguration и восстановите конфигурацию по умолчанию.|
 
 
 ## <a name="properties"></a>Свойства

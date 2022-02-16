@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 686a8f1a88781cff9c7469606d5e5cc61a86a4bd
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 4e39fc0f9c6d27c4c820c5fd10eb7e648ed07bba
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341938"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62855163"
 ---
 # <a name="user-activateserviceplan"></a>пользователь: активироватьServicePlan
 
@@ -54,8 +54,8 @@ POST /users/{id | userPrincipalName}/activateServicePlan
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| servicePlanId | Guid | PlanId servicePlan для активации. |
-| skuId | Guid | SkuId SKU, в планах службы. |
+| servicePlanId | GUID | PlanId servicePlan для активации. |
+| skuId | GUID | SkuId SKU, в планах службы. |
 
 ## <a name="response"></a>Ответ
 

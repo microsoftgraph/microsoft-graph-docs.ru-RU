@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 52ff42f8ec45885d8effcd73095cb16ba2512bb7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 48c850a45c90f6e58e58254cbed57e30a31eac99
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59025610"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854360"
 ---
 # <a name="authorizationpolicy-resource-type"></a>тип ресурса authorizationPolicy
 
@@ -32,12 +32,12 @@ ms.locfileid: "59025610"
 |allowedToUseSSPR|Логический| Указывает, можно ли использовать Self-Serve сброса пароля пользователями клиента. | 
 |allowEmailVerifiedUsersToJoinOrganization|Логический| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. | 
 |allowInvitesFrom|allowInvitesFrom|Указывает, кто может приглашать внешних пользователей в организацию. Возможные значения: `none`, `adminsAndGuestInviters`, `adminsGuestInvitersAndAllMembers`, `everyone`.  `everyone` — это параметр по умолчанию для всех облачных сред, за исключением правительства США. Дополнительные сведения см. в [таблице ниже](#allowinvitesfrom-values). |
-|blockMsolPowerShell|Boolean| Чтобы отключить использование MSOL PowerShell, установите это свойство `true` . Это также отключит доступ пользователей к конечной точке устаревшей службы, используемой MSOL PowerShell. Это не влияет на azure AD Подключение Microsoft Graph. | 
+|blockMsolPowerShell|Boolean| Чтобы отключить использование MSOL PowerShell, установите это свойство `true`. Это также отключит доступ пользователей к конечной точке устаревшей службы, используемой MSOL PowerShell. Это не влияет на azure AD Подключение Microsoft Graph. | 
 |defaultUserRolePermissions|[defaultUserRolePermissions](defaultuserrolepermissions.md)| Указывает определенные настраиваемые разрешения для роли пользователя по умолчанию. | 
 |description|String| Описание этой политики.|
 |displayName|Строка| Отображение имени для этой политики. |    
-|guestUserRoleId|Guid| Представляет шаблон roleId для роли, которая должна быть предоставлена гостевому пользователю. В настоящее время поддерживаются следующие роли: User `a0b1b346-4d3e-4e8b-98f8-753987be4970` (), Guest User `10dae51f-b6af-4016-8d66-8c2a99b929b3` () и Restricted Guest User `2af84b1e-32c8-42b7-82bc-daa82404023b` (). |
-|id|String| ID политики авторизации. Обязательный. Только для чтения.| 
+|guestUserRoleId|GUID| Представляет шаблон roleId для роли, которая должна быть предоставлена гостевому пользователю. В настоящее время поддерживаются следующие роли: User (`a0b1b346-4d3e-4e8b-98f8-753987be4970`), Guest User (`10dae51f-b6af-4016-8d66-8c2a99b929b3`) и Restricted Guest User (`2af84b1e-32c8-42b7-82bc-daa82404023b`). |
+|id|String| ID политики авторизации. Обязательный элемент. Только для чтения.| 
 
 ### <a name="allowinvitesfrom-values"></a>allowInvitesFrom values
 
@@ -76,6 +76,6 @@ ms.locfileid: "59025610"
   "allowedToSignUpEmailBasedSubscriptions": true,
   "allowEmailVerifiedUsersToJoinOrganization": true,
   "allowInvitesFrom": "String",
-  "guestUserRoleId": "Guid"
+  "guestUserRoleId": "GUID"
 }
 ```

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7add5d22a55071a77fe431f675ee992ec3b32f9d
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 39bd3f2aeeb87ff82fca521173b78f2be6a9b215
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348741"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854566"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: проверка Свойств
 
@@ -53,9 +53,9 @@ POST /directoryObjects/validateProperties
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |entityType|String| `Group` это единственный поддерживаемый тип сущности. |
-|displayName|String| Отображаемого имени группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство (displayName или mailNickname). |
+|displayName|Строка| Отображаемого имени группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство (displayName или mailNickname). |
 |mailNickname|String| Имя почты группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство (displayName или mailNickname). |
-|onBehalfOfUserId|Guid| ID объекта пользователя, который должен выдать себя при вызове API. Результаты проверки для атрибутов и ролей onBehalfOfUserId. |
+|onBehalfOfUserId|GUID| ID объекта пользователя, который должен выдать себя при вызове API. Результаты проверки для атрибутов и ролей onBehalfOfUserId. |
 
 ## <a name="response"></a>Отклик
 

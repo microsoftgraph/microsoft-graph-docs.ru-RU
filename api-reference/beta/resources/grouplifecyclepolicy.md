@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса groupLifecyclePolicy
 description: Представляет политику жизненного цикла для Microsoft 365 группы.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 4cd6b11989d21fea0095fec9099bdc3cc7dc3a66
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: e50277f78cfff92a0329fe7b8198e18bed42fdd5
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256096"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854482"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>Тип ресурса groupLifecyclePolicy
 
@@ -61,7 +61,7 @@ ms.locfileid: "58256096"
 {
   "alternateNotificationEmails": "String",
   "groupLifetimeInDays": 180,
-  "id": "Guid (identifier)",
+  "id": "GUID (identifier)",
   "managedGroupTypes": "String"
 }
 ```

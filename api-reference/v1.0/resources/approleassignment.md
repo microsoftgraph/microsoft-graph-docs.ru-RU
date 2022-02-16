@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 8136ed1dc33cb16759ee00f5bddd80bc54c600ed
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5e3c061ab574386e0c3fc522d5059dbb8d391617
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104371"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854517"
 ---
 # <a name="approleassignment-resource-type"></a>Тип ресурса appRoleAssignment
 
@@ -32,12 +32,12 @@ ms.locfileid: "59104371"
 |:---------------|:--------|:----------|
 | id | String | Уникальный идентификатор ключа **appRoleAssignment**. Значение NULL не допускается. Только для чтения. |
 | createdDateTime | DateTimeOffset | Время создания назначения роли приложения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`. Только для чтения.  |
-| principalId | Guid | Уникальный идентификатор (**ИД**) [пользователя](user.md), [группы](group.md) или [субъекта-службы](serviceprincipal.md), которым предоставляется роль приложения. Требуется при создании.  |
+| principalId | GUID | Уникальный идентификатор (**ИД**) [пользователя](user.md), [группы](group.md) или [субъекта-службы](serviceprincipal.md), которым предоставляется роль приложения. Требуется при создании.  |
 | principalType | Строка | Тип назначенного субъекта. Это может быть `User`, `Group` или `ServicePrincipal`. Только для чтения.  |
 | principalDisplayName | String |Отображаемое имя пользователя, группы или субъекта-службы, которым было предоставлено назначение роли приложения. Только для чтения. Поддерживает `$filter` (`eq` и `startswith`). |
-| resourceId | Guid |Уникальный идентификатор (**ИД**) ресурса [субъект-службы](serviceprincipal.md), для которого производится назначение. Требуется при создании. Поддерживает `$filter` (только `eq`). |
+| resourceId | GUID |Уникальный идентификатор (**ИД**) ресурса [субъект-службы](serviceprincipal.md), для которого производится назначение. Требуется при создании. Поддерживает `$filter` (только `eq`). |
 | resourceDisplayName | Строка | Отображаемое имя субъекта-службы приложения ресурса, для которого производится назначение.  |
-| appRoleId | Guid | Идентификатор (**ИД**) [роли приложения](approle.md), которая назначается субъекту. Эта роль приложения должна предоставляться в свойстве **appRoles** субъекта-службы приложения ресурса (**resourceId**). Если в приложении ресурса не объявлены никакие роли приложения, можно указать ИД роли приложения по умолчанию (`00000000-0000-0000-0000-000000000000`), чтобы указать, что субъект назначен приложению ресурса без каких-либо определенных ролей приложения. Требуется при создании.  |
+| appRoleId | GUID | Идентификатор (**ИД**) [роли приложения](approle.md), которая назначается субъекту. Эта роль приложения должна предоставляться в свойстве **appRoles** субъекта-службы приложения ресурса (**resourceId**). Если в приложении ресурса не объявлены никакие роли приложения, можно указать ИД роли приложения по умолчанию (`00000000-0000-0000-0000-000000000000`), чтобы указать, что субъект назначен приложению ресурса без каких-либо определенных ролей приложения. Требуется при создании.  |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -53,14 +53,14 @@ ms.locfileid: "59104371"
 
 ```json
 {
-  "id": "string",
+  "id": "String",
   "createdDateTime": "String (timestamp)",
-  "principalDisplayName": "string",
-  "principalId": "guid",
-  "principalType": "string",
-  "resourceDisplayName": "string",
-  "resourceId": "guid",
-  "appRoleId": "guid"
+  "principalDisplayName": "String",
+  "principalId": "GUID",
+  "principalType": "String",
+  "resourceDisplayName": "String",
+  "resourceId": "GUID",
+  "appRoleId": "GUID"
 }
 ```
 

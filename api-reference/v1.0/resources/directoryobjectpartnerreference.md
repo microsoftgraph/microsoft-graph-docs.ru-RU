@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 35cc8be163a9bbbbcdf9330d6b6cf861673e7edf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 17356a5e865fceb9da49447064d141120387328e
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123793"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854339"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>тип ресурса directoryObjectPartnerReference
 
@@ -22,9 +22,9 @@ ms.locfileid: "59123793"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|description|String| Описание возвращенного объекта. Только для чтения. |
-|displayName|Строка| Имя возвращаемого объекта каталога, например группы или приложения. Только для чтения. |
-|externalPartnerTenantId|Guid| Идентификатор клиента для клиента-партнера. Только для чтения. |
+|description|Строка| Описание возвращенного объекта. Только для чтения. |
+|displayName|String| Имя возвращаемого объекта каталога, например группы или приложения. Только для чтения. |
+|externalPartnerTenantId|GUID| Идентификатор клиента для клиента-партнера. Только для чтения. |
 |id|String| Уникальный идентификатор ресурса. Наследуется от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Только для чтения. |
 |objectType|String| Тип ссылаемого объекта в клиенте-партнере. Только для чтения. |
 
@@ -40,11 +40,11 @@ ms.locfileid: "59123793"
 
 ```json
 {
-  "description": "string ",
-  "displayName": "string",
-  "externalPartnerTenantId": "string (identifier)",
-  "id": "string (identifier)",
-  "objectType": "string"
+  "description": "String ",
+  "displayName": "String",
+  "externalPartnerTenantId": "String (identifier)",
+  "id": "String (identifier)",
+  "objectType": "String"
 }
 ```
 

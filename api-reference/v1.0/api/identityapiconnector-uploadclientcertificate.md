@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c9413f1aaa5332fe083a1de9ee6edc5d7add5706
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 729d9676d9a1f2915b82ff5e289e19ce5a3b9db7
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027613"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854701"
 ---
 # <a name="identityapiconnector-uploadclientcertificate"></a>identityApiConnector: uploadClientCertificate
 
@@ -26,7 +26,7 @@ Upload PKCS 12 format key (.pfx) для конфигурации проверк�
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | APIConnectors.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
-| Для приложений                            | APIConnectors.ReadWrite.All |
+| Приложение                            | APIConnectors.ReadWrite.All |
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -54,12 +54,12 @@ POST /identity/apiconnectors/{id}/uploadClientCertificate
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|pkcs12Value|Строка| Это поле для отправки контента pfx. Значение должно быть кодированной версией базового-64 фактического контента сертификата. Обязательный.|
-|password|Строка| Это пароль для файла pfx. Обязательный. Если пароль не используется, необходимо по-прежнему предоставлять значение `""` .|
+|pkcs12Value|Строка| Это поле для отправки контента pfx. Значение должно быть кодированной версией базового-64 фактического контента сертификата. Обязательный элемент.|
+|password|Строка| Это пароль для файла pfx. Обязательный элемент. Если пароль не используется, необходимо по-прежнему предоставлять значение `""`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [apiConnector,](../resources/identityApiConnector.md) содержащий общедоступные сведения `authenticationConfiguration` клиентского сертификата.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и [apiConnector](../resources/identityApiConnector.md)`authenticationConfiguration`, содержащий общедоступные сведения клиентского сертификата.
 
 ## <a name="examples"></a>Примеры
 
@@ -110,7 +110,7 @@ Content-type: application/json
 
 Ниже приведен пример отклика.
 
-> **Примечание:** `authenticationConfiguration` в ответе — тип [microsoft.graph.clientCertificateAuthentication,](../resources/clientcertificateauthentication.md) так как это представляет общедоступные сведения о загруженных сертификатах.
+> **Примечание:** `authenticationConfiguration` в ответе — тип [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md) , так как это представляет общедоступные сведения о загруженных сертификатах.
 
 <!-- {
   "blockType": "response",
@@ -125,7 +125,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/apiConnectors/$entity",
-    "id": "guid",
+    "id": "45715bb8-13f9-4bf6-927f-ef96c102d394",
     "displayName": "My API connector",
     "targetUrl": "https://api.contoso.com/endpoint",
     "authenticationConfiguration": {

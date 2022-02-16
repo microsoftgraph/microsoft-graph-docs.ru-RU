@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 063a42de506b0e7885ffb1ebef12d1a68d7c4803
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 248aabf5a846f5ecdd8a2aacb1a01e8e501d0571
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072301"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854489"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -156,26 +156,26 @@ ms.locfileid: "62072301"
 {
   "accountEnabled": true,
   "addIns": [{"@odata.type": "microsoft.graph.addIn"}],
-  "alternativeNames": ["string"] ,
-  "appDisplayName": "string",
-  "appId": "string",
-  "appOwnerOrganizationId": "guid",
+  "alternativeNames": ["String"] ,
+  "appDisplayName": "String",
+  "appId": "String",
+  "appOwnerOrganizationId": "GUID",
   "appRoleAssignmentRequired": true,
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
-  "disabledByMicrosoftStatus": "string",
-  "displayName": "string",
-  "homepage": "string",
-  "id": "string (identifier)",
+  "disabledByMicrosoftStatus": "String",
+  "displayName": "String",
+  "homepage": "String",
+  "id": "String (identifier)",
   "info": {"@odata.type": "microsoft.graph.informationalUrl"},
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
-  "logoutUrl": "string",
-  "notes": "string",
+  "logoutUrl": "String",
+  "notes": "String",
   "oauth2PermissionScopes": [{"@odata.type": "microsoft.graph.permissionScope"}],
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
-  "replyUrls": ["string"],
-  "servicePrincipalNames": ["string"],
-  "servicePrincipalType": "string",
-  "tags": ["string"],
+  "replyUrls": ["String"],
+  "servicePrincipalNames": ["String"],
+  "servicePrincipalType": "String",
+  "tags": ["String"],
   "tokenEncryptionKeyId": "String",
   "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"}
 }

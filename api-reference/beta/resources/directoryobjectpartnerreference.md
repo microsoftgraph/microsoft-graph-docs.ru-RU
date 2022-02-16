@@ -2,15 +2,15 @@
 title: тип ресурса directoryObjectPartnerReference
 description: Представляет ссылку на объект каталога в клиенте-партнере. Наследуется от directoryObject.
 author: keylimesoda
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 8b9d6a8826c38171dc7b32c281c371e841906f82
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 0b8825a7bd20e7e76aa3825cf29e8b7246e3ad8a
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761563"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62855079"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>тип ресурса directoryObjectPartnerReference
 
@@ -24,9 +24,9 @@ ms.locfileid: "50761563"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|description|String| Описание возвращенного объекта. Только для чтения. |
+|description|Строка| Описание возвращенного объекта. Только для чтения. |
 |displayName|String| Имя возвращаемого объекта каталога, например группы или приложения. Только для чтения. |
-|externalPartnerTenantId|Guid| Идентификатор клиента для клиента-партнера. Только для чтения. |
+|externalPartnerTenantId|GUID| Идентификатор клиента для клиента-партнера. Только для чтения. |
 |id|String| Уникальный идентификатор ресурса. Наследуется от [directoryObject](directoryobject.md). Только для чтения. |
 |objectType|String| Тип ссылаемого объекта в клиенте-партнере. Только для чтения. |
 

@@ -5,12 +5,12 @@ author: nickgmicrosoft
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f09fd3e876802fbe35e5a0c78113b769d96b37de
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6a5a3c50354d298180aa7f4bc6fcd0fd4f6fb3a3
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60986207"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854524"
 ---
 # <a name="get-identityapiconnector"></a>Get identityApiConnector
 
@@ -18,7 +18,7 @@ ms.locfileid: "60986207"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами [объекта identityApiConnector.](../resources/identityapiconnector.md)
+Ознакомьтесь с свойствами [объекта identityApiConnector](../resources/identityapiconnector.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "60986207"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | APIConnectors.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
-| Для приложений                            | APIConnectors.ReadWrite.All |
+| Приложение                            | APIConnectors.ReadWrite.All |
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -59,7 +59,7 @@ GET /identity/apiConnectors/{identityApiConnectorId}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект identityApiConnector](../resources/identityapiconnector.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект identityApiConnector](../resources/identityapiconnector.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/identity/apiConnectors/{id}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -120,7 +120,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/apiConnectors/$entity",
-    "id":"guid",
+    "id":"GUID",
     "displayName": "Test API",
     "targetUrl": "https://someapi.com/api",
     "authenticationConfiguration": {

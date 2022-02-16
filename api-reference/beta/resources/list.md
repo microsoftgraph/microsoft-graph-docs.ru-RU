@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: Ресурс list представляет список на сайте.
-ms.date: 09/11/2017
-title: List
+title: Ресурс List
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 0703f3df00f97391f7f06785bebc880b29bbefbd
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: c2f0fd3fe48eaebbf7f730d0e52e964aab2e057b
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161867"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854475"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -43,9 +42,9 @@ ms.locfileid: "62161867"
 | [Получение канала WebSocket][] | GET /lists/{list-id}/subscriptions/socketIo
 |[Перечисление типов контента][]          | GET /lists/{list-id}/contentTypes
 |[Добавление копии типа контента с сайта][] | POST /lists/{list-id}/contentTypes/addCopy
-|[Список столбцов][]               | GET /lists/{list-id}/columns
+|[Перечисление столбцов][]               | GET /lists/{list-id}/columns
 |[Создание столбца][]              | POST /lists/{list-id}/columns
-|[Операции списка](../api/list-list-operations.md)|GET /lists/{list-id}/operations
+|[Операции со списком](../api/list-list-operations.md)|GET /lists/{list-id}/operations
 
 [Получить списки на сайте]: ../api/list-list.md
 [Получение списка]: ../api/list-get.md
@@ -60,44 +59,6 @@ ms.locfileid: "62161867"
 [Добавление копии типа контента с сайта]: ../api/contenttype-addCopy.md
 [Перечисление столбцов]: ../api/list-list-columns.md
 [Создание столбца]: ../api/list-post-columns.md
-
-## <a name="json-representation"></a>Представление JSON
-
-Ниже показано представление ресурса **list** в формате JSON.
-
-<!-- { "blockType": "resource", 
-       "@odata.type": "microsoft.graph.list",
-       "keyProperty": "id", 
-       "optionalProperties": [ "items", "drive"] } -->
-
-```json
-{
-  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
-  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-  "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
-  "displayName": "title of list",
-  "drive": { "@odata.type": "microsoft.graph.drive" },
-  "items": [ { "@odata.type": "microsoft.graph.listItem" } ],
-  "list": {
-    "@odata.type": "microsoft.graph.listInfo",
-    "hidden": false,
-    "template&quot;: &quot;documentLibrary | genericList | survey | links | announcements | contacts ..."
-  },
-  "system": false,
-  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
-
-  /* inherited from baseItem */
-  "id": "string",
-  "name": "name of list",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "createdDateTime": "timestamp",
-  "description": "description of list",
-  "eTag": "string",
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "timestamp",
-  "webUrl&quot;: &quot;url to visit the list in a browser"
-}
-```
 
 ## <a name="properties"></a>Свойства
 
@@ -134,7 +95,7 @@ ms.locfileid: "62161867"
 | **drive**         | [drive][]                   | Доступна только для библиотек документов. Разрешает доступ к списку как к ресурсу [drive][] с объектами [driveItem][driveItem].
 | **items**         | Коллекция ([listItem][])    | Все элементы, содержащиеся в списке.
 | subscriptions      | Коллекция [subscription][] | Набор подписок на список.
-|**operations**|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection| Коллекция длительных операций для списка.
+|**operations**|Коллекция [richLongRunningOperation](../resources/richlongrunningoperation.md)| Коллекция длительных операций для списка.
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
@@ -148,6 +109,44 @@ ms.locfileid: "62161867"
 [site]: site.md
 [systemFacet]: systemfacet.md
 [subscription]: subscription.md
+
+## <a name="json-representation"></a>Представление JSON
+
+Ниже указано представление ресурса в формате JSON.
+
+<!-- { "blockType": "resource", 
+       "@odata.type": "microsoft.graph.list",
+       "keyProperty": "id", 
+       "optionalProperties": [ "items", "drive"] } -->
+
+```json
+{
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
+  "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
+  "displayName": "title of list",
+  "drive": { "@odata.type": "microsoft.graph.drive" },
+  "items": [ { "@odata.type": "microsoft.graph.listItem" } ],
+  "list": {
+    "@odata.type": "microsoft.graph.listInfo",
+    "hidden": false,
+    "template&quot;: &quot;documentLibrary | genericList | survey | links | announcements | contacts ..."
+  },
+  "system": false,
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
+
+  /* inherited from baseItem */
+  "id": "string",
+  "name": "name of list",
+  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdDateTime": "timestamp",
+  "description": "description of list",
+  "eTag": "string",
+  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "lastModifiedDateTime": "timestamp",
+  "webUrl&quot;: &quot;url to visit the list in a browser"
+}
+```
 
 <!--
 {

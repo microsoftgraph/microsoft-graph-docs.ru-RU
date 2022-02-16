@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.date: 09/11/2017
-title: Перечисление
+title: Ресурс List
 ms.localizationpriority: high
 ms.prod: sharepoint
 description: Ресурс list представляет список на сайте.
 doc_type: resourcePageType
-ms.openlocfilehash: 801d0be6fc3da1800c9ae70edef82dcc869d54b8
-ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
+ms.openlocfilehash: f57507bc75e4e672e0799ac5b0758db5cf16fda6
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240917"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854496"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -44,51 +43,6 @@ ms.locfileid: "60240917"
 [Удаление элемента списка]: ../api/listitem-delete.md
 [Создание элемента в списке]: ../api/listitem-create.md
 [Получение канала WebSocket]: ../api/subscriptions-socketio.md
-
-## <a name="json-representation"></a>Представление JSON
-
-Ниже показано представление ресурса **list** в формате JSON.
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [
-    "items",
-    "drive"
-  ],
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.baseItem",
-  "@odata.type&quot;: &quot;microsoft.graph.list"
-}-->
-
-```json
-{
-  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-  "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
-  "displayName": "title of list",
-  "drive": { "@odata.type": "microsoft.graph.drive" },
-  "items": [ { "@odata.type": "microsoft.graph.listItem" } ],
-  "list": {
-    "@odata.type": "microsoft.graph.listInfo",
-    "hidden": false,
-    "template&quot;: &quot;documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
-  },
-  "system": false,
-  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
-
-  /* inherited from baseItem */
-  "id": "string",
-  "name": "name of list",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "createdDateTime": "timestamp",
-  "description": "description of list",
-  "eTag": "string",
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "timestamp",
-  "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-  "webUrl&quot;: &quot;url to visit the list in a browser"
-}
-```
 
 ## <a name="properties"></a>Свойства
 
@@ -141,6 +95,51 @@ ms.locfileid: "60240917"
 [site]: site.md
 [systemFacet]: systemfacet.md
 [subscription]: subscription.md
+
+## <a name="json-representation"></a>Представление JSON
+
+Ниже указано представление ресурса в формате JSON.
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [
+    "items",
+    "drive"
+  ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type&quot;: &quot;microsoft.graph.list"
+}-->
+
+```json
+{
+  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
+  "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
+  "displayName": "title of list",
+  "drive": { "@odata.type": "microsoft.graph.drive" },
+  "items": [ { "@odata.type": "microsoft.graph.listItem" } ],
+  "list": {
+    "@odata.type": "microsoft.graph.listInfo",
+    "hidden": false,
+    "template&quot;: &quot;documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
+  },
+  "system": false,
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
+
+  /* inherited from baseItem */
+  "id": "string",
+  "name": "name of list",
+  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdDateTime": "timestamp",
+  "description": "description of list",
+  "eTag": "string",
+  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "lastModifiedDateTime": "timestamp",
+  "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+  "webUrl&quot;: &quot;url to visit the list in a browser"
+}
+```
 
 <!-- {
   "type": "#page.annotation",

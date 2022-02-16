@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: d4247d2bbf61c6c0d5a22089d16029c9b2b61ed9
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: e872f2f102f9b906e55e917efdc80d50135c3514
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62292090"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854559"
 ---
 # <a name="contract-resource-type"></a>Тип ресурса контракта
 
@@ -32,10 +32,10 @@ ms.locfileid: "62292090"
 ## <a name="properties"></a>Свойства
 | Свойство   | Тип | Описание |
 |:---------------|:--------|:----------|
-|contractType|String|Тип контракта. Возможные значения: `SyndicationPartner`, , `BreadthPartner``ResellerPartner`. Дополнительные сведения см. в [таблице ниже](#contracttype-values). |
-|customerId|Guid|Уникальный идентификатор клиента клиента, на который ссылается это партнерство. Соответствует свойству id ресурса организации клиента клиента. |
+|contractType|Строка|Тип контракта. Возможные значения: `SyndicationPartner`, , `BreadthPartner``ResellerPartner`. Дополнительные сведения см. в [таблице ниже](#contracttype-values). |
+|customerId|GUID|Уникальный идентификатор клиента клиента, на который ссылается это партнерство. Соответствует свойству id ресурса организации клиента клиента. |
 |defaultDomainName|String|Копия доменного имени клиента по умолчанию. Копия будет выполнена после того, как будет установлено партнерство с клиентом. Он не обновляется автоматически, если меняется имя домена клиента по умолчанию.|
-|displayName|String|Копия отображаемого имени клиента. Копия будет выполнена после того, как будет установлено партнерство с клиентом. Оно не обновляется автоматически, если меняется имя отображения клиента.|
+|displayName|Строка|Копия отображаемого имени клиента. Копия будет выполнена после того, как будет установлено партнерство с клиентом. Оно не обновляется автоматически, если меняется имя отображения клиента.|
 |id|String| Уникальный идентификатор для партнерства. Клавиша, только для чтения |
 
 ### <a name="contracttype-values"></a>значения contractType
@@ -64,7 +64,7 @@ ms.locfileid: "62292090"
 ```json
 {
   "contractType": "String",
-  "customerId": "Guid",
+  "customerId": "GUID",
   "defaultDomainName": "String",
   "displayName": "String",
   "id": "String (identifier)"

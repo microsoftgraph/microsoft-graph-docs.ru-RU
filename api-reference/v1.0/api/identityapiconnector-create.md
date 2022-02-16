@@ -5,18 +5,18 @@ author: nickgmicrosoft
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 324753b7a8bf79ccc55d95c0f7f1adb13adcba1d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3ccda91a736e1c8d78ef86d9b001169fad50dcb2
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027711"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854254"
 ---
 # <a name="create-identityapiconnector"></a>Создание identityApiConnector
 
 Пространство имен: microsoft.graph
 
-Создание нового [объекта identityApiConnector.](../resources/identityapiconnector.md)
+Создание нового [объекта identityApiConnector](../resources/identityapiconnector.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "61027711"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | APIConnectors.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
-| Для приложений                            | APIConnectors.ReadWrite.All |
+| Приложение                            | APIConnectors.ReadWrite.All |
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -53,19 +53,19 @@ POST /identity/apiConnectors
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [identityApiConnector.](../resources/identityapiconnector.md)
+В теле запроса поставляем представление JSON объекта [identityApiConnector](../resources/identityapiconnector.md) .
 
-В следующей таблице показаны свойства, необходимые при создании [identityApiConnector.](../resources/identityapiconnector.md)
+В следующей таблице показаны свойства, необходимые при создании [identityApiConnector](../resources/identityapiconnector.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка| Имя соединитетеля API. |
+|displayName|String| Имя соединитетеля API. |
 |targetUrl|Строка| URL-адрес конечной точки API для вызова. |
-|проверка подлинностиКонфигурация|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|Объект, описывая сведения о конфигурации проверки подлинности для вызова API. [Поддерживается базовая](../resources/basicauthentication.md) проверка подлинности и [клиентский сертификат PKCS 12.](../resources/pkcs12certificate.md)|
+|проверка подлинностиКонфигурация|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|Объект, описывая сведения о конфигурации проверки подлинности для вызова API. [Поддерживается базовая](../resources/basicauthentication.md) проверка подлинности и [клиентский сертификат PKCS 12](../resources/pkcs12certificate.md) .|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект identityApiConnector](../resources/identityapiconnector.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` ответа и [объект identityApiConnector](../resources/identityapiconnector.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -139,7 +139,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/apiConnectors/$entity",
-    "id":"guid",
+    "id":"45715bb8-13f9-4bf6-927f-ef96c102d394",
     "displayName": "Test API",
     "targetUrl": "https://someapi.com/api",
     "authenticationConfiguration": {
@@ -156,7 +156,7 @@ Content-Type: application/json
 
 Ниже приведен пример запроса.
 
-> **Примечание:** `authenticationConfiguration` в запросе имеется тип [microsoft.graph.pkcs12certificate,](../resources/pkcs12certificate.md)который представляет конфигурацию сертификата, необходимого для загрузки или создания.
+> **Примечание:** `authenticationConfiguration` в запросе находится тип [microsoft.graph.pkcs12certificate](../resources/pkcs12certificate.md), который представляет конфигурацию сертификата, необходимого для загрузки или создания.
 
 <!-- {
   "blockType": "request",
@@ -183,7 +183,7 @@ Content-Type: application/json
 
 Ниже приведен пример отклика.
 
-> **Примечание:** `authenticationConfiguration` в ответе — тип [microsoft.graph.clientCertificateAuthentication,](../resources/clientcertificateauthentication.md) так как это представляет общедоступные сведения о загруженных сертификатах.
+> **Примечание:** `authenticationConfiguration` в ответе — тип [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md) , так как это представляет общедоступные сведения о загруженных сертификатах.
 
 <!-- {
   "blockType": "response",
@@ -198,7 +198,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/apiConnectors/$entity",
-    "id":"guid",
+    "id":"45715bb8-13f9-4bf6-927f-ef96c102d394",
     "displayName": "Test API",
     "targetUrl": "https://someotherapi.com/api",
     "authenticationConfiguration": {

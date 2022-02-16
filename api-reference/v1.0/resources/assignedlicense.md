@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 0c48842eec48d2f644cc927385d5ecd9924fcdb5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8c635f863eda10ece261a722f3bc5ae31871799b
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123841"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62854918"
 ---
 # <a name="assignedlicense-resource-type"></a>Тип ресурса assignedLicense
 
@@ -21,8 +21,8 @@ ms.locfileid: "59123841"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|disabledPlans|Коллекция объектов Guid|Коллекция уникальных идентификаторов отключенных планов.|
-|skuId|Guid|Уникальный идентификатор SKU.|
+|disabledPlans|Коллекция GUID|Коллекция уникальных идентификаторов отключенных планов.|
+|skuId|GUID|Уникальный идентификатор SKU.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -38,8 +38,8 @@ ms.locfileid: "59123841"
 
 ```json
 {
-  "disabledPlans": ["guid"],
-  "skuId": "guid"
+  "disabledPlans": ["GUID"],
+  "skuId": "GUID"
 }
 
 ```
