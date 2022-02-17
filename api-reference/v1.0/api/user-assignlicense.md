@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2effba18ed35c81464337361bbf04debcaa6f6da
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 04a7511205c654241da53b97404da7deb5e254d5
+ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344720"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62855194"
 ---
 # <a name="user-assignlicense"></a>user: assignLicense
 
@@ -42,7 +42,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |addLicenses|Коллекция [assignedLicense](../resources/assignedlicense.md)|Коллекция объектов [assignedLicense](../resources/assignedlicense.md), указывающих добавляемые лицензии. Вы можете отключить планы, связанные с лицензией, задав свойство **disabledPlans** объекта [assignedLicense](../resources/assignedlicense.md).|
-|removeLicenses|Коллекция объектов Guid|Коллекция идентификаторов GUID, указывающих удаляемые лицензии.|
+|removeLicenses|Коллекция идентификаторов GUID|Коллекция идентификаторов GUID, указывающих удаляемые лицензии.|
 
 ## <a name="response"></a>Отклик
 
@@ -66,7 +66,7 @@ Content-type: application/json
   "addLicenses": [
     {
       "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "guid"
+      "skuId": "45715bb8-13f9-4bf6-927f-ef96c102d394"
     }
   ],
   "removeLicenses": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ]
