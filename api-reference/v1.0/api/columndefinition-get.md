@@ -5,18 +5,18 @@ description: Получите сайт, список или столбец ти�
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: c7f9fa5e0002e786f8444b2bbf9d1dbb38e4f53e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2e148f0c5fe6ea7ed664c7b9840c43134eae3a04
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128924"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878801"
 ---
 # <a name="get-columndefinition"></a>Получить columnDefinition
 Пространство имен: microsoft.graph
 
 
-Извлечение метаданных для [сайта,][] [списка][]или [столбца contentType.][] [][columnDefinition]
+Извлечение метаданных для [сайта][], [списка][] или [столбца contentType][][.][columnDefinition]
 
   
 
@@ -32,7 +32,7 @@ ms.locfileid: "62128924"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
+|Для приложений | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
 
   
 
@@ -55,20 +55,20 @@ GET /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{colu
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|  
 
-## <a name="request-body"></a>Тело запроса
-
-  
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
+## <a name="response"></a>Отклик
+
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект columnDefinition][columnDefinition] в тексте ответа.
   
 
 ## <a name="example"></a>Пример
 
-  
-
 ### <a name="request"></a>Запрос
 
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get_column_from_contenttype" } -->
@@ -107,7 +107,7 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 
 ### <a name="response"></a>Отклик
 
-  
+Ниже приведен пример отклика.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true } -->
 

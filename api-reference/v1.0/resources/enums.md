@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 2b0bf8890f4929d499b7a58f81d107f3b7c293d5
-ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
+ms.openlocfilehash: 4fed63c948e03fd94cb89ccf2ac07106dc700e9f
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61567379"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878759"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -650,7 +650,7 @@ ms.locfileid: "61567379"
 
 | Member
 |:-------------------------
-| обязательно
+| Обязательный
 | необязательный
 | resource
 
@@ -1106,7 +1106,7 @@ Enum для состояния подключений.
 
 ### <a name="registryhive-values"></a>Значения registryHive
 
-Enum для ульев реестра, как [определено /windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
+Enum для ульев реестра, определяемого [/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -1116,7 +1116,7 @@ Enum для ульев реестра, как [определено /windows/des
 |localMachineSam|3| HKEY_LOCAL_MACHINE\SAM улей.|
 |localMachineSamSoftware|4| HKEY_LOCAL_MACHINE\Software улей.|
 |localMachineSystem|5| HKEY_LOCAL_MACHINE\System улей.|
-|usersDefault|6 | HKEY_USERS \\ . Улей DEFAULT.|
+|usersDefault|6 | \\HKEY_USERS. Улей DEFAULT.|
 
 ### <a name="registryoperation-values"></a>Значения registryOperation
 
@@ -1131,7 +1131,7 @@ Enum для ульев реестра, как [определено /windows/des
 
 ### <a name="registryvaluetype-values"></a>значения registryValueType
 
-Enum для типов значений реестра, определяемого [типами /windows/desktop/sysinfo/registry-value-types.](/windows/desktop/sysinfo/registry-value-types)
+Enum для типов значений реестра, определяемого [типами /windows/desktop/sysinfo/registry-value-types](/windows/desktop/sysinfo/registry-value-types).
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -1362,7 +1362,7 @@ Enum для серьезности оповещений.
 
 | Элемент             | Значение | Описание                                          |
 |:-------------------|:------|:-----------------------------------------------------|
-| checkPolicy        | 1     | Результат проверки политики только для `mail` оценки. |
+| checkPolicy        | 1     | Результат проверки политики только для оценки `mail` . |
 | rescan             | 2     | Результат rescan.                                   |
 | unknownFutureValue | 3     | Член-часовой.                                   |
 
@@ -1391,7 +1391,7 @@ Enum для серьезности оповещений.
 
 | Значение |
 |:-----------------|
-| message |
+| сообщение |
 | chatEvent |
 | ввод текста |
 | unknownFutureValue |
@@ -1419,9 +1419,9 @@ Enum для серьезности оповещений.
 | Member   | Значение Int |  Описание |
 |:---------------|:--------|:----------|
 | Нет | 0 |  Пользователю не разрешается переопределять сообщение. Пользователь не может сообщать о сообщении как о ложном срабатывке, если политикаTip не предоставлена. Во всех остальных сценариях пользователь может сообщить о сообщении как о ложном срабатыве.|
-| AllowFalsePositiveOverride | 1 |  Пользователю не разрешается явно переопределять блок, если он не объедин с `AllowOverrideWithoutJustification` `AllowOverrideWithJustification` флагами или флагами. Сообщение о ложном срабатывии нарушения автоматически переопределяет блок и отправляет сообщение. |
-| AllowOverrideWithoutJustification | 2 | Пользователю разрешено переопределять блок и отправлять сообщение. Текст обоснования не требуется. Эксклюзив `AllowOverrideWithJustification` для . |
-| AllowOverrideWithJustification | 4 |  Пользователю разрешено переопределять блок и отправлять сообщение. Требуется текст обоснования. Эксклюзив `AllowOverrideWithoutJustification` для .|
+| AllowFalsePositiveOverride | 1 |  Пользователю не разрешается явно переопределять блок, если он не объедин с флагами `AllowOverrideWithoutJustification` `AllowOverrideWithJustification` или флагами. Сообщение о ложном срабатывии нарушения автоматически переопределяет блок и отправляет сообщение. |
+| AllowOverrideWithoutJustification | 2 | Пользователю разрешено переопределять блок и отправлять сообщение. Текст обоснования не требуется. Эксклюзив для `AllowOverrideWithJustification`. |
+| AllowOverrideWithJustification | 4 |  Пользователю разрешено переопределять блок и отправлять сообщение. Требуется текст обоснования. Эксклюзив для `AllowOverrideWithoutJustification`.|
 
 ### <a name="channelmembershiptype-values"></a>Значения channelMembershipType
 
@@ -1459,7 +1459,7 @@ Enum для серьезности оповещений.
 |валюта | Столбец Валюта. |
 |dateTime | Столбец DateTime. |
 |lookup | Столбец Lookup. |
-|логический | Столбец Да/Нет. |
+|boolean | Столбец Да/Нет. |
 |пользователь | Столбец Person или group. |
 |url | Гиперссылка или столбец изображения. |
 |вычисляется | Вычисляется столбец. |
@@ -1598,7 +1598,7 @@ Enum для серьезности оповещений.
 | Member                |
 |:----------------------|
 | string                |
-| логический               |
+| boolean               |
 | int64                 |
 | stringCollection      |
 | dateTime              |
@@ -1610,7 +1610,7 @@ Enum для серьезности оповещений.
 |:----------------------|
 | builtIn               |
 | настраиваемый                |
-| обязательно              |
+| Обязательный              |
 | unknownFutureValue    |
 
 ### <a name="identityuserflowattributeinputtype-values"></a>значения identityUserFlowAttributeInputType
@@ -1726,6 +1726,13 @@ Enum для серьезности оповещений.
 |быстрый|
 |стратегический|
 |unknownFutureValue|
+
+### <a name="searchalterationtype-values"></a>значения searchAlterationType
+
+| Member | Описание |
+|:---------------|:----------|
+|изменение|
+|предложение|
 
 ### <a name="servicehealthclassificationtype-values"></a>значения serviceHealthClassificationType 
 

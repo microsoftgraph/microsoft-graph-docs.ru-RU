@@ -1,16 +1,16 @@
 ---
 title: 'участник: приглашение'
 description: Приглашение участников в активный вызов.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b7b53a482df52beb84ee84ac3032f3ea3a46b9dc
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 090bce11ea6fea4dc0ed4fe88f2e7b05f0bc3389
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62342038"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878878"
 ---
 # <a name="participant-invite"></a>участник: приглашение
 
@@ -22,7 +22,7 @@ ms.locfileid: "62342038"
 
 Дополнительные сведения о том, как обрабатывать операции, см. в [commsoperation](../resources/commsoperation.md).
 
->**Примечание:** Этот API поддерживается только для групповых вызовов.
+>**Примечание:** Приглашение нескольких участников в одном запросе поддерживается только для групповых звонков.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +31,7 @@ ms.locfileid: "62342038"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Приложение     | Calls.InitiateGroupCalls.All                               |
+| Для приложений     | Calls.InitiateGroupCalls.All                               |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -56,7 +56,7 @@ POST /communications/calls/{id}/participants/invite
 |clientContext|String|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
 
 ## <a name="response"></a>Отклик
-Если этот метод безусысный, `200 OK` этот метод возвращает код отклика и заглавную ссылку Location с URI в [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) , созданный для этого запроса. Тело ответа содержит созданный [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) .
+В случае успешной `200 OK` работы этот метод возвращает код отклика и заглавную ссылку Location с URI в созданный для этого запроса [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) . Тело ответа содержит созданный [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) .
 
 >**Примечание:** Когда этот API возвращает успешный ответ, все участники получат обновление реестра.
 
@@ -66,7 +66,7 @@ POST /communications/calls/{id}/participants/invite
 
 > **Примечание:** Объекты отклика могут быть сокращены для читаемости. При фактическом вызове будут возвращены все свойства.
 
-### <a name="example-1-invite-one-participant-to-an-existing-group-call"></a>Пример 1. Приглашение одного участника на существующий групповой вызов
+### <a name="example-1-invite-one-participant-to-an-existing-call"></a>Пример 1. Приглашение одного участника на существующий вызов
 
 #### <a name="request"></a>Запрос
 

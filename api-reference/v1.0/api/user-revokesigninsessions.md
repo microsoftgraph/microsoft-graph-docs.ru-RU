@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e8ba47189367fdae88647c6b8d2e82f41928028b
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 5603d0982b28fb25ccdaa60e204592b751e078ed
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62343577"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878836"
 ---
 # <a name="user-revokesigninsessions"></a>пользователь: revokeSignInSessions
 
@@ -31,7 +31,7 @@ ms.locfileid: "62343577"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | User.ReadWrite.All, Directory.ReadWrite.All,|
+|Для приложений                            | User.ReadWrite.All, Directory.ReadWrite.All,|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,19 +51,19 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 
 >[!NOTE]
->У этого API есть [известная проблема](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code). Он возвращает другой код ответа HTTP.
+>У этого API есть [известная проблема](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-http-code). Он возвращает другой код ответа HTTP.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "user_revokesigninsessionss"
 }-->
 ```http
@@ -96,13 +96,19 @@ POST https://graph.microsoft.com/v1.0/me/revokeSignInSessions
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Edm.Boolean",
+    "value": true
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

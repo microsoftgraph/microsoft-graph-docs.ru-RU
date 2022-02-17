@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: b7db893231e7c28479b446e081e9501a79b27aa3
-ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
+ms.openlocfilehash: cd3be7143a53b7985fe2a677f685c3f2ed2b4b18
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62815967"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878724"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -261,7 +261,7 @@ ms.locfileid: "62815967"
 |:---|
 |String|
 |Целое число|
-|Справка|
+|Ссылка|
 |Binary|
 |Boolean|
 |Даты и время|
@@ -1076,8 +1076,8 @@ ms.locfileid: "62815967"
 
 | Member | Описание |
 |:---------------|:----------|
-|предложение|Получите результаты поиска для исходного запроса пользователя и рекомендуемые сведения об исправлении орфографии для опечаток в запросе.|
 |изменение|Получите результаты поиска для исправленного изменения запроса и сведения об исправлении орфографии для опечаток.|
+|предложение|Получите результаты поиска для исходного запроса пользователя и рекомендуемые сведения об исправлении орфографии для опечаток в запросе.|
 
 ### <a name="bucketaggregationsortproperty-values"></a>bucketAggregationSortProperty values
 
@@ -2632,7 +2632,7 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |team|
-|channel|
+|канал|
 |чат|
 |unknownFutureValue|
 

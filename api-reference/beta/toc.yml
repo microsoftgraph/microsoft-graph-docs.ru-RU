@@ -314,7 +314,7 @@ items:
                 href: api/user-findroomlists.md
               - name: Получение сведений о доступности
                 href: api/calendar-getschedule.md
-              - name: List
+              - name: Список
                 href: api/user-list-calendars.md
               - name: Список групп календарей
                 href: api/user-list-calendargroups.md
@@ -331,7 +331,7 @@ items:
                 href: api/user-post-contacts.md
               - name: Создание папки контактов
                 href: api/user-post-contactfolders.md
-              - name: List
+              - name: Список
                 href: api/user-list-contacts.md
               - name: Список папок контактов
                 href: api/user-list-contactfolders.md
@@ -460,7 +460,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Заметки
+          - name: Примечания
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -950,7 +950,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -959,7 +959,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1140,7 +1140,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: List
+                      - name: Список
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -1149,7 +1149,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: List
+                      - name: Список
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -1158,7 +1158,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -1167,7 +1167,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1565,7 +1565,7 @@ items:
                 items:
                   - name: Session
                     href: resources/callrecords-session.md
-                  - name: List
+                  - name: Список
                     href: api/callrecords-session-list.md
               - name: Вызовы PSTN
                 items:
@@ -1604,7 +1604,7 @@ items:
                   - name: Запись посещаемости
                     href: resources/attendancerecord.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/attendancerecord-list.md
               - name: Регистрация собраний
                 href: resources/meetingregistration.md
@@ -1662,7 +1662,7 @@ items:
       - name: Соответствие требованиям
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/complianceapioverview.md
           - name: eDiscovery (предварительная версия)
             items:
@@ -10114,7 +10114,7 @@ items:
                     href: api/virtualendpoint-post-provisioningpolicies.md
                   - name: Обновление
                     href: api/cloudpcprovisioningpolicy-update.md
-                  - name: Удалить
+                  - name: Delete
                     href: api/cloudpcprovisioningpolicy-delete.md
                   - name: Назначение
                     href: api/cloudpcprovisioningpolicy-assign.md
@@ -10138,20 +10138,27 @@ items:
                     href: api/virtualendpoint-post-usersettings.md
                   - name: Обновление
                     href: api/cloudpcusersetting-update.md
-                  - name: Удалить
+                  - name: Delete
                     href: api/cloudpcusersetting-delete.md
                   - name: Назначение
                     href: api/cloudpcusersetting-assign.md
               - name: 'Область, поддерживаемая облачным КОМПЬЮТЕРом'
                 href: resources/cloudpcsupportedregion.md
                 items:
-                  - name: List
+                  - name: Список
                     href: api/virtualendpoint-list-supportedregions.md
               - name: План службы облачных ПК
                 href: resources/cloudpcserviceplan.md
                 items:
-                  - name: List
+                  - name: Список
                     href: api/virtualendpoint-list-serviceplans.md
+              - name: Снимок облачного ПК
+                href: resources/cloudpcsnapshot.md
+                items:
+                  - name: Список
+                    href: api/virtualendpoint-list-snapshots.md
+                  - name: Получение
+                    href: api/cloudpcsnapshot-get.md
               - name: Параметры организации облачных ПК
                 href: resources/cloudpcorganizationsettings.md
                 items:
@@ -11188,7 +11195,7 @@ items:
                     href: api/device-delete-registeredowners.md
                   - name: Удаление зарегистрированного пользователя
                     href: api/device-delete-registeredusers.md
-                  - name: Список групп устройств
+                  - name: Список участника устройства
                     href: api/device-list-memberof.md
                   - name: Перечисление транзитивных групп устройств
                     href: api/device-list-transitivememberof.md
@@ -11517,7 +11524,7 @@ items:
             items:
               - name: Методы проверки подлинности
                 items:
-                  - name: Общие сведения
+                  - name: Обзор
                     href: resources/authenticationmethods-overview.md
                   - name: Список всех методов
                     href: api/authentication-list-methods.md
@@ -12324,7 +12331,7 @@ items:
                         href: api/identityuserflowattribute-delete.md
                   - name: Назначение атрибута потока пользователей
                     items:
-                      - name: User
+                      - name: Пользователь
                         href: resources/identityuserflowattributeassignment.md
                       - name: Получение
                         href: api/identityuserflowattributeassignment-get.md
@@ -12464,7 +12471,7 @@ items:
                       - name: Экземпляр истории проверки доступа
                         href: resources/accessreviewhistoryinstance.md
                         items:
-                          - name: List
+                          - name: Список
                             href: api/accessreviewhistorydefinition-list-instances.md
                           - name: Создание URI загрузки
                             href: api/accessreviewhistoryinstance-generatedownloaduri.md
@@ -12597,7 +12604,7 @@ items:
                   - name: Назначение пакета доступа
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/entitlementmanagement-list-accesspackageassignments.md
                       - name: Фильтр текущего пользователя
                         href: api/accesspackageassignment-filterbycurrentuser.md
@@ -13177,7 +13184,7 @@ items:
                     href: api/useraccountinformation-update.md
                   - name: Delete
                     href: api/useraccountinformation-delete.md
-              - name: Addresses
+              - name: Адреса
                 items:
                   - name: Адрес элемента
                     href: resources/itemaddress.md
@@ -13247,7 +13254,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Delete
                     href: api/educationalactivity-delete.md
-              - name: Адрес электронной почты
+              - name: Адрес электронной почты;
                 items:
                   - name: Электронная почта элемента
                     href: resources/itememail.md
@@ -13303,7 +13310,7 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: Заметки
+              - name: Примечания
                 items:
                   - name: Аннотация для человека
                     href: resources/personannotation.md
@@ -13629,14 +13636,14 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Отчеты о удостоверениях и доступе
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/report-identity-access.md
               - name: Активность приложений AD FS
                 items:
                   - name: Подробный сводка "Опираясь на стороне"
                     href: resources/relyingpartydetailedsummary.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/relyingpartydetailedsummary-list.md
               - name: Вход в приложение
                 items:
@@ -13654,7 +13661,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Регистрация и использование
                 items:
-                  - name: Общие сведения
+                  - name: Обзор
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Учетные данные о регистрации пользователей
                     href: resources/credentialuserregistrationcount.md
@@ -13664,27 +13671,27 @@ items:
                   - name: Сведения о регистрации пользователей учетных данных
                     href: resources/credentialuserregistrationdetails.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/reportroot-list-credentialuserregistrationdetails.md
                   - name: Сведения об использовании учетных данных пользователей
                     href: resources/usercredentialusagedetails.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/reportroot-list-usercredentialusagedetails.md
                   - name: Сводка использования учетных данных
                     href: resources/credentialusagesummary.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/reportroot-getcredentialusagesummary.md
                   - name: 'Пользователи, зарегистрированные по функции'
                     href: resources/userregistrationfeaturesummary.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/authenticationmethodsroot-usersregisteredbyfeature.md
                   - name: 'Пользователи, зарегистрированные методом'
                     href: resources/userregistrationmethodsummary.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
                   - name: Сведения о регистрации пользователей
                     href: resources/userregistrationdetails.md
@@ -13942,7 +13949,7 @@ items:
         items:
           - name: Запрос
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/search-api-overview.md
               - name: Тип запроса поиска
                 href: resources/searchrequest.md
@@ -13952,7 +13959,7 @@ items:
                 href: api/search-query.md
           - name: Index
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/indexing-api-overview.md
               - name: Внешнее подключение
                 items:
@@ -14089,7 +14096,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Оценка угроз
                 items:
-                  - name: Общие сведения
+                  - name: Обзор
                     href: resources/threatassessment-api-overview.md
                   - name: Запрос на оценку угроз
                     href: resources/threatassessmentrequest.md
@@ -14199,7 +14206,7 @@ items:
                     href: api/site-delete-permission.md
           - name: Списки
             items:
-              - name: List
+              - name: Список
                 href: resources/list.md
               - name: Получить списки на сайте
                 href: api/list-list.md
@@ -14329,7 +14336,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: List
+                  - name: Список
                     href: api/termstore-group-list-sets.md
                   - name: Список дочерних элементов
                     href: api/termstore-term-list-children.md
@@ -14917,7 +14924,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Получение
                     href: api/offershiftrequest-get.md
-                  - name: List
+                  - name: Список
                     href: api/offershiftrequest-list.md
                   - name: Утвердить
                     href: api/offershiftrequest-approve.md

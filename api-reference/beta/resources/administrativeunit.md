@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 5f689a44f614d7eb263d5d24fbaae6b7c7998543
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 2d1083dcca8eb48697d12e6c5bc7a3fa5b1e544a
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854750"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878738"
 ---
 # <a name="administrativeunit-resource-type"></a>тип ресурса administrativeUnit
 
@@ -18,7 +18,7 @@ ms.locfileid: "62854750"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Административное подразделение предоставляет концептуальный контейнер для объектов каталогов пользователей и групп. С помощью административных подразделений администратор компании теперь может делегировать административные обязанности по управлению пользователями и группами, содержамися в пределах или в пределах области, административному подразделению региональному или ведомству.
+Административное подразделение предоставляет концептуальный контейнер для объектов каталога пользователей, групп и устройств. С помощью административных подразделений администратор компании теперь может делегировать административные обязанности по управлению пользователями, группами и устройствами, содержамися в пределах или в области административного подразделения, региональному или ведомству.
 
 Этот ресурс поддерживает отслеживание добавлений, удалений и обновлений с помощью [разностного запроса](/graph/delta-query-overview) с функцией [delta](../api/administrativeunit-delta.md). Этот ресурс относится к открытому типу, который позволяет передавать другие свойства.
 
@@ -39,8 +39,8 @@ ms.locfileid: "62854750"
 |[Обновление](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Обновление объекта administrativeUnit. |
 |[удаление](../api/administrativeunit-delete.md); | Нет |Удаление объекта administrativeUnit. |
 |[Получение дельты](../api/administrativeunit-delta.md)|[administrativeUnit](administrativeunit.md)|Создайте заново созданные, обновленные или удаленные **административные** подразделения, не выполняя полное чтение всей коллекции ресурсов.|
-|[Добавить участника](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Добавление участника (пользователя или группы).|
-|[Перечисление участников](../api/administrativeunit-list-members.md) |Коллекция [directoryObject](directoryobject.md)| Получите список участников (пользователей и групп).|
+|[Добавить участника](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Добавление участника (пользователя, группы или устройства).|
+|[Перечисление участников](../api/administrativeunit-list-members.md) |Коллекция [directoryObject](directoryobject.md)| Получите список участников (пользователей, групп и устройств).|
 |[Получение члена](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Получите определенного участника.|
 |[Удаление члена](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Удалите член.|
 |[Добавление члена scoped-role](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Добавление члена с областью действия роли.|
@@ -77,7 +77,7 @@ ms.locfileid: "62854750"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление ресурса в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -90,10 +90,10 @@ ms.locfileid: "62854750"
 
 ```json
 {
-  "description": "string",
-  "displayName": "string",
-  "id": "string (identifier)",
-  "visibility": "string"
+  "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "visibility": "String"
 }
 
 ```

@@ -5,17 +5,17 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: cb0fddba5207c569d72e8350863a2f0a022ca5df
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a40827267352a3a40102dcd78c1bccb6786a480b
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104447"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878731"
 ---
 # <a name="get-group"></a>Вывод группы
 Пространство имен: microsoft.graph.termStore
 
-Ознакомьтесь с свойствами и отношениями объекта группы [терминов](../resources/termstore-group.md) store.
+Ознакомьтесь с свойствами и отношениями объекта [группы терминов](../resources/termstore-group.md) store.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,12 +43,12 @@ GET sites/{site-id}/termStore/groups/{group-id}
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и `200 OK` [объект Microsoft.graph.termStore.group](../resources/termstore-group.md) в тексте ответа.
+В случае успеха этот метод возвращает код `200 OK` отклика и [объект Microsoft.graph.termStore.group](../resources/termstore-group.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -124,7 +124,7 @@ Content-Type: application/json
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_group"
+  "name": "get_group_termstore"
 }
 -->
 

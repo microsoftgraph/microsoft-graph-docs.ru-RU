@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: e64d4d3a2d7599df3ce6674abab352ab474ae18f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 487fbee4e501b6d4154b1ed08102730fd278730c
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137548"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878829"
 ---
 # <a name="searchhit-resource-type"></a>тип ресурса searchHit
 
@@ -22,11 +22,12 @@ ms.locfileid: "59137548"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
+|contentSource|String|Имя источника контента, **частью которого является externalItem** .|
 |hitId|String|Внутренний идентификатор элемента.|
 |rank|Int32|Ранж или порядок результата.|
-|contentSource|String|Имя источника контента, **частью которого является externalItem.**|
-|summary|String|Сводка результатов, если резюме доступно.|
+|resultTemplateId|Строка|ID шаблона результатов, используемого для отображения результата поиска. Этот ID должен отображать макет в **словаре resultTemplates** , который также включен в [searchResponse](searchresponse.md).|
 |resource|[entity](entity.md)|В основном microsoft Graph представление результата поиска.|
+|summary|String|Сводка результатов, если резюме доступно.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -43,11 +44,12 @@ ms.locfileid: "59137548"
 
 ```json
 {
-  "hitId": "String",
-  "rank": 1,
-  "summary": "String",
   "contentSource": "String",
-  "resource": { "@odata.type": "microsoft.graph.entity" }
+  "hitId": "String",
+  "rank": "Int32",
+  "resultTemplateId": "String",
+  "resource": { "@odata.type": "microsoft.graph.entity" },
+  "summary": "String"
 }
 ```
 

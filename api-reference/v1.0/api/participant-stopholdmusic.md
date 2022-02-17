@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b37f26086bcab8ab7d0450a8ece612f7d7f5a25c
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 1168216a0c4899bfb5913035d034ed275ae6e3e7
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62342750"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878430"
 ---
 # <a name="participant-stopholdmusic"></a>участник: stopHoldMusic
 
@@ -25,7 +25,7 @@ ms.locfileid: "62342750"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Приложение                            | Нет. |
+| Для приложений                            | Нет. |
 
 > **Примечание:** Проверка разрешений происходит, когда приложение присоединяется или пытается запустить вызов. Дополнительные проверки разрешений не выполняются при запросе `stopHoldMusic` .
 
@@ -118,38 +118,8 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/e141b67c-90fd-45
 {
   "@odata.type": "#microsoft.graph.stopHoldMusicOperation",
   "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
-  "status": "running",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
-}
-```
-
-### <a name="notification-sent-to-the-application-after-the-stopholdmusicoperation-finishes"></a>Уведомление, отправленное приложению после завершения stopHoldMusicOperation
-
-```http
-POST https://bot.contoso.com/api/calls
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
-{
-  "@odata.type": "#microsoft.graph.commsNotifications",
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.commsNotification",
-      "changeType": "deleted",
-      "resourceUrl": "communications/calls/e141b67c-90fd-455d-858b-b48a40b9cc8d/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.stopHoldMusicOperation",
-        "@odata.id": "communications/calls/e141b67c-90fd-455d-858b-b48a40b9cc8d/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5",
-        "@odata.etag": "W/\"54451\"",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "completed"
-      }
-    }
-  ]
+  "status": "completed",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+  "resultInfo": null
 }
 ```
