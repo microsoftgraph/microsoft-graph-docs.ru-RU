@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 6da57eacca4065fa019776547097863d26f3008b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2656ac0a23a11384878f36eb05dd32f84647664b
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115835"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878640"
 ---
 # <a name="list-approleassignments-granted-for-a-service-principal"></a>Список объектов appRoleAssignment, предоставленных субъект-службе
 
@@ -23,6 +23,8 @@ ms.locfileid: "62115835"
 Например, если ресурс субъект-службы является субъект-службой API Microsoft Graph, все субъект-службы, которым были предоставлены разрешения только для приложений на Microsoft Graph будут возвращены.
 
 Если ресурс субъект-службы является приложением, имеющим роли приложений, предоставленные пользователям и группам, все назначенные им роли для приложения будут возвращены.
+
+>**Примечание** При запросе могут происходить задержки репликации для назначения ролей приложения, которые были недавно предоставлены или удалены.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -51,7 +53,7 @@ GET /servicePrincipals/{id}/appRoleAssignedTo
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

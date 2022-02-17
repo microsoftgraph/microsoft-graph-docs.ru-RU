@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 3c053172d965d914259a0bb2471d9efb010f40e6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fe256df76d99691aa20f96301c1b80204d9a76c4
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098912"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878822"
 ---
 # <a name="list-approleassignments-granted-to-a-service-principal"></a>Список объектов appRoleAssignment, предоставленных для субъект-службы
 
@@ -21,6 +21,9 @@ ms.locfileid: "62098912"
 Получение списка [appRoleAssignment](../resources/approleassignment.md), предоставленного субъект-службе.
 
 Роли приложений, назначаемые субъектам-службам, также называются [разрешениями приложений](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Разрешения приложений можно предоставлять с помощью создания назначений ролей приложений, а также с помощью [интерфейса согласия](/azure/active-directory/develop/application-consent-experience).
+
+
+>**Примечание** При запросе могут происходить задержки репликации для назначения ролей приложения, которые были недавно предоставлены или удалены.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -49,7 +52,7 @@ GET /servicePrincipals/{id}/appRoleAssignments
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
