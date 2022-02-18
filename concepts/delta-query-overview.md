@@ -4,12 +4,12 @@ description: Запросы изменений позволяют приложе
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: d18d429d611c05512196651644525ce4866d7831
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 8b2a302157a7f3a1309d0f7917d1c16816bfab82
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792234"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878752"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
@@ -185,6 +185,8 @@ Content-type: application/json
 ### <a name="processing-delays"></a>Задержка обработки
 
 Ожидайте различные задержки между моментом, когда изменения вносятся в экземпляр ресурса, который может быть через интерфейс приложения или API, и временем, когда отслеживаемое изменение отражается в ответе запроса изменений.
+
+Иногда изменения, произошедшие с объектом, могут не указываться при выборе `nextLink` или `deltaLink`. Дело в том, что в некоторых запросах могут возникнуть задержки репликации для объектов, которые были недавно созданы, обновлены или удалены. Повторите `nextLink` или `deltaLink` через некоторое время, чтобы получить последние изменения.
 
 ### <a name="national-clouds"></a>Национальные облачные развертывания
 
