@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 6a30360dddeb06d9f8ac4d1ff5b485229087c3ce
-ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
+ms.openlocfilehash: 3ebab5bc652f6e6b484312420fb779d849eabb20
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62282055"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894749"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 
@@ -24,9 +24,9 @@ ms.locfileid: "62282055"
 
 ## <a name="common-use-cases"></a>Основные варианты использования
 
-API Microsoft Search предоставляет метод [query](../api/search-query.md) для поиска по данным в Microsoft Search; в этот метод передается [searchRequest](searchRequest.md) в теле запроса, определяя характер поиска.
+API Microsoft Search предоставляет метод [query](../api/search-query.md) для поиска по данным в Microsoft Search; в этот метод передается [searchRequest](searchrequest.md) в теле запроса, определяя характер поиска.
 
-В этом разделе перечислены распространенные варианты использования метода **query** с применением свойств и параметров, заданных в тексте запроса **query** [searchRequest](searchRequest.md).
+В этом разделе перечислены распространенные варианты использования метода **query** с применением свойств и параметров, заданных в тексте запроса **query** [searchRequest](searchrequest.md).
 
 Поисковые запросы выполняются от имени пользователя. Результаты поиска ограничиваются для применения правил контроля доступа к элементам.  Например, в контексте файлов разрешения для них оцениваются в составе поискового запроса. Пользователь не может обратиться в результатах поиска к большему количеству элементов, чем он мог бы получить из соответствующей операции GET с теми же разрешениями и управлением доступом.
 
@@ -148,7 +148,7 @@ API Microsoft Search предоставляет метод [query](../api/search
 
 ## <a name="request-spelling-correction"></a>Исправление орфографии в запросе
 
-Исправление орфографии — популярный способ обработки несоответствий между опечатками в запросе пользователя и правильными словами в содержимом. При обнаружении опечаток в исходном пользовательском запросе вы можете получить результат поиска для исходного запроса пользователя или исправленной версии запроса. Вы также можете получить сведения об исправлении опечаток в свойстве **queryAlterationResponse** объекта [searchresponse](searchresponse.md).
+Исправление орфографии — популярный способ обработки несоответствий между опечатками в запросе пользователя и правильными словами в содержимом. При обнаружении опечаток в исходном пользовательском запросе вы можете получить результат поиска для исходного запроса пользователя или исправленной версии запроса. Вы также можете получить сведения об исправлении опечаток в свойстве **queryAlterationResponse** объекта [searchResponse](searchresponse.md).
 
 В [searchRequest](./searchrequest.md) укажите **queryAlterationOptions** для применения с целью исправления орфографии в запросе. Сведения о свойстве **queryAlterationOptions** см. в [searchAlterationOptions](./searchalterationoptions.md).
 
@@ -158,7 +158,7 @@ API Microsoft Search предоставляет метод [query](../api/search
 
 API поиска позволяет отображать результаты поиска из [соединителей](/microsoftsearch/connectors-overview) при помощи макета отображения или шаблона результатов, настроенного ИТ-администратором для каждого соединителя. Шаблоны результатов — это [адаптивные карточки](https://adaptivecards.io/), которые являются семантически значимым сочетанием макета и данных.
 
-Чтобы получить шаблон результатов в [searchresponse](searchresponse.md), необходимо установить свойство **true** для **enableResultTemplate**, которое определяется в [resultTemplateOptions](./resulttemplateoption.md) и в [searchRequest](./searchrequest.md). Ответ включает **resultTemplateId** для каждого [ввода при поиске](./searchhit.md), который сопоставляется с одним из макетов отображения, включенных в словарь **resultTemplates**, который включается в ответ.
+Чтобы получить шаблон результатов в [searchResponse](searchresponse.md), необходимо установить значение **true** для свойства **enableResultTemplate**, которое определяется в [resultTemplateOptions](./resulttemplateoption.md) в [searchRequest](./searchrequest.md). Ответ включает **resultTemplateId** для каждого [ввода при поиске](./searchhit.md), который сопоставляется с одним из макетов отображения, включенных в словарь **resultTemplates**, который включается в ответ.
 
 См. примеры в статье [Использование макета отображения при поиске](/graph/search-concept-display-layout).
 

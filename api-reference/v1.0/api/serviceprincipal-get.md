@@ -1,12 +1,17 @@
 ---
 title: Получение объекта servicePrincipal
-description: Получение свойств и связей объекта serviceprincipal.
+description: Получение свойств и связей объекта servicePrincipal.
 author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
+ms.openlocfilehash: 5630f5888be3a7c84d2075907231c3d73fc29cb5
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894777"
 ---
-
 # <a name="get-serviceprincipal"></a>Получение объекта servicePrincipal
 
 Пространство имен: microsoft.graph
@@ -22,16 +27,19 @@ doc_type: apiPageType
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
 
+> [!NOTE]
+> Субъект-служба может получить сведения о собственном приложении и субъекте-службе без предоставления разрешений приложения.
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
-По умолчанию этот API не возвращает значение открытого ключа **key** в свойстве **keyCredentials**, если в запросе `$select` не указан параметр **keyCredentials**. 
+По умолчанию этот API не возвращает значение открытого ключа **key** в свойстве **keyCredentials**, если в запросе `$select` не указан параметр **keyCredentials**.
 Например, `$select=id,appId,keyCredentials`.
 
 При использовании `$select` с целью получения **keyCredentials** для субъектов-служб применяется ограничение регулирования в количестве 150 запросов в минуту для каждого клиента.

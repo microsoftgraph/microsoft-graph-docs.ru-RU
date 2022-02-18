@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 04a9f843da8326f257a7a48537353a10ac458a81
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 046fd5a8e3463ab9efcdd63c79eacb82302d70fa
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766938"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894763"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 
@@ -35,6 +35,8 @@ API Microsoft Search предоставляет метод [query](../api/search
 |[Использование KQL в терминах запросов](#keyword-query-language-kql-support) | **query** |
 |[Сортировка результатов поиска](#sort-search-results)| **sort** |
 |[Уточнение результатов с помощью агрегатов](#refine-results-using-aggregations)| **aggregations** |
+|[Исправление орфографии в запросе](#request-spelling-correction)| **queryAlterationOptions** |
+|[Макет отображения при поиске](#search-display-layout) (предварительная версия)| **resultTemplateOptions**|
 
 ## <a name="scope-search-based-on-entity-types"></a>Поиск в области по типам объектов
 
@@ -137,6 +139,22 @@ API Microsoft Search предоставляет метод [query](../api/search
 
 Примеры использования агрегатов для улучшения и снижения объема результатов поиска см. в разделе [Уточнение результатов поиска](/graph/search-concept-aggregation).
 
+## <a name="request-spelling-correction"></a>Исправление орфографии в запросе
+
+Исправление орфографии — популярный способ обработки несоответствий между опечатками в запросе пользователя и правильными словами в содержимом. При обнаружении опечаток в исходном пользовательском запросе вы можете получить результат поиска для исходного запроса пользователя или исправленной версии запроса. Вы также можете получить сведения об исправлении опечаток в свойстве **queryAlterationResponse** объекта [searchResponse](searchresponse.md).
+
+В тексте запроса метода [query](/graph/api/search-query) укажите **queryAlterationOptions** для применения с целью исправления орфографии в запросе. Описание **queryAlterationOptions** определяется в [searchRequest](./searchrequest.md).
+
+Примеры использования исправлений орфографии см. в разделе [Исправление орфографии в запросе](/graph/search-concept-speller).
+
+## <a name="search-display-layout"></a>Макет отображения при поиске
+
+API поиска позволяет отображать результаты поиска из [соединителей](/microsoftsearch/connectors-overview) при помощи макета отображения или шаблона результатов, настроенного ИТ-администратором для каждого соединителя. Шаблоны результатов — это [адаптивные карточки](https://adaptivecards.io/), которые являются семантически значимым сочетанием макета и данных.
+
+Чтобы получить шаблон результатов в [searchResponse](searchresponse.md), присвойте свойству **enableResultTemplate** значение **true**, которое определяется в [resultTemplateOptions](./resulttemplateoption.md) в [searchRequest](./searchrequest.md). Отклик включает **resultTemplateId** для каждого объекта [searchHit](./searchhit.md), который сопоставляется с одним из макетов отображения, включенных в словарь **resultTemplates**, являющийся частью отклика.
+
+Примеры отображения результатов поиска см. в разделе [Использование макета отображения при поиске](/graph/search-concept-display-layout).
+
 ## <a name="error-handling"></a>Обработка ошибок
 
 API поиска возвращает отклики с ошибками, описанные в [определении объектов ошибок OData](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), каждый из которых представляет собой объект JSON, содержащий код и сообщение.
@@ -168,6 +186,8 @@ API поиска возвращает отклики с ошибками, опи
   - [Поиск содержимого в OneDrive и SharePoint](/graph/search-concept-files)
   - [Сортировка результатов поиска](/graph/search-concept-sort)
   - [Уточнение результатов поиска](/graph/search-concept-aggregation)
+  - [Исправление орфографии в запросе](/graph/search-concept-speller)
+  - [Использование макета отображения при поиске](/graph/search-concept-display-layout)
 
 - Узнайте больше об API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.

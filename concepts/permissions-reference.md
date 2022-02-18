@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0cf655c04e074e7b8c9fb3c1f65c843fee7e2589
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: 85a5991cfe230e6588a2bb2c663914b14b816a17
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519210"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894665"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -1287,6 +1287,21 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 ---
 
+## <a name="managed-tenant-permissions"></a>Разрешения управляемого клиента
+
+#### <a name="delegated-permissions"></a>Делегированные разрешения
+
+|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ManagedTenants.Read.All_ | Чтение всех сведений об управляемом клиенте | Позволяет приложению считывать все сведения об управляемом клиенте от имени вошедшего пользователя. | Да | Нет |
+| _ManagedTenants.ReadWrite.All_ | Чтение и запись всех сведений об управляемом клиенте | Позволяет приложению считывать и записывать все сведения об управляемом клиенте от имени вошедшего пользователя. | Да | Нет |
+
+#### <a name="application-permissions"></a>Разрешения приложений
+
+Нет.
+
+---
+
 ## <a name="member-permissions"></a>Разрешения для членов
 
 #### <a name="delegated-permissions"></a>Делегированные разрешения
@@ -1320,6 +1335,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
+---
 
 ## <a name="notes-permissions"></a>Разрешения для заметок
 
@@ -1342,7 +1358,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 | _Notes.ReadWrite.All_ |    Чтение и запись всех записных книжек OneNote | Позволяет приложению считывать и редактировать все записные книжки OneNote в организации, а также предоставлять к ним доступ в случаях, когда вход пользователя не предусмотрен.| Да |
 
 
-### <a name="remarks"></a>Заметки
+### <a name="remarks"></a>Примечания
 Разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ действительны только для рабочих и учебных учетных записей. Все остальные разрешения поддерживаются как для учетных записей Майкрософт, так и для рабочих или учебных учетных записей.
 
 С помощью разрешения _Notes.Create_ приложение может просматривать иерархию записных книжек OneNote вошедшего пользователя и создавать содержимое OneNote (записные книжки, группы разделов, разделы, страницы и т. д.).
@@ -1366,6 +1382,8 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * _Notes.ReadWrite.All_. Обновление страницы в записной книжке любого пользователя в организации (`PATCH /users/{id}/onenote/pages/{id}/$value`).
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
+
+---
 
 ## <a name="notifications-permissions"></a>Разрешения уведомлений
 #### <a name="delegated-permissions"></a>Делегированные разрешения
