@@ -1,56 +1,62 @@
 ---
 title: Получение добавочных изменений для пользователей
-description: Запрос позволяет запрашивать добавления, удаления или обновления пользователей с помощью серии вызовов функции delta. Запрос изменений позволяет находить изменения пользователей. При этом не требуется получать полный набор пользователей из Microsoft Graph и сравнивать изменения.
+description: Разностный запрос в Microsoft Graph позволяет запрашивать добавления, удаления или обновления поддерживаемых ресурсов. Он включается с помощью серии разностных запросов. Для пользователей разностный запрос позволяет обнаруживать изменения, не извлекая весь набор пользователей для сравнения изменений.
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 96a3aa8dccacb53415f7bc6fa6f3005b756caed0
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: dc9480b4cb53de576490d95f94bb46df534fbec4
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524639"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878794"
 ---
 # <a name="get-incremental-changes-for-users"></a>Получение добавочных изменений для пользователей
 
-[Запрос](./delta-query-overview.md) позволяет запрашивать добавления, удаления или обновления пользователей с помощью серии вызовов функции [delta](/graph/api/user-delta?view=graph-rest-1.0). Запрос изменений позволяет находить изменения пользователей. При этом не требуется получать полный набор пользователей из Microsoft Graph и сравнивать изменения.
+[Разностный запрос](./delta-query-overview.md) в Microsoft Graph позволяет запрашивать добавления, удаления или обновления [поддерживаемых ресурсов](delta-query-overview.md#supported-resources). Он включается с помощью серии [разностных](/graph/api/user-delta) запросов. Для пользователей разностный запрос позволяет обнаруживать изменения, не извлекая весь набор пользователей для сравнения изменений.
 
-Клиенты, выполняющие синхронизацию пользователей с локальным хранилищем профилей, в ближайшем будущем смогут использовать запрос изменений как для первичной полной синхронизации, так и для добавочной синхронизации. Как правило, сначала выполняется полная синхронизация пользователей в клиенте, а потом периодически добавляются изменения.
+Клиенты, выполняющие синхронизацию пользователей с локальным хранилищем профилей, смогут использовать разностный запрос как для первичной полной синхронизации, так и для последующей добавочной синхронизации. Как правило, сначала выполняется полная синхронизация пользователей в клиенте, а потом периодически добавляются изменения.
 
-## <a name="tracking-user-changes"></a>Отслеживание изменений пользователей
+## <a name="track-changes-to-users"></a>Отслеживание изменений пользователей
 
-Как правило, цикл отслеживания изменений пользователей состоит из одного или нескольких запросов GET с вызовом функции **delta**. Запрос GET совершается практически так же, как и при [получении списка пользователей](/graph/api/user-list?view=graph-rest-1.0), но в него нужно включить:
+Отслеживайте изменения пользователей с помощью одного или нескольких запросов GET с помощью функции **delta**. Запрос GET похож на запрос [перечисления пользователей](/graph/api/user-list), за исключением следующих дополнительных объектов в URL.
 
 - функцию **delta**;
 - [маркер состояния](./delta-query-overview.md) (_deltaToken_ или _skipToken_) из данных предыдущего вызова функции **delta** в запросе GET.
 
-## <a name="example"></a>Пример
+## <a name="example-to-track-changes-to-users"></a>Пример отслеживания изменений пользователей
 
-В следующем примере показана серия запросов для отслеживания изменений пользователей:
+В следующем примере показана серия запросов для отслеживания изменений пользователей.
 
-1. [Исходный запрос](#initial-request) и [ответ](#initial-response)
-2. [Запрос nextLink](#nextlink-request) и [ответ](#nextlink-response)
-3. [Последний запрос nextLink](#final-nextlink-request) и [ответ](#final-nextlink-response)
-4. [Запрос deltaLink ](#deltalink-request) и [ответ deltaLink](#deltalink-response)
+1. [Исходный запрос](#initial-request) и [отклик](#initial-response)
+2. [Запрос nextLink](#nextlink-request) и [отклик](#nextlink-response)
+3. [Последний запрос nextLink](#final-nextlink-request) и [отклик](#final-nextlink-response)
+4. [Запрос deltaLink ](#deltalink-request) и [отклик deltaLink](#deltalink-response)
 
-## <a name="initial-request"></a>Исходный запрос
+Обратите внимание на следующее в откликах.
 
-Чтобы начать отслеживать изменения в ресурсе пользователя, необходимо совершить к нему запрос, включающий функцию delta.
+- Если пользователь удален, элемент содержит заметку: `@removed` со значением `"reason": "changed"`.
+- Если пользователь удален окончательно, элемент содержит заметку `@removed` со значением `"reason": "deleted"`.
+- Заметок о создании или восстановлении пользователя не существует.
 
-Обратите внимание на следующее:
+### <a name="initial-request"></a>Исходный запрос
 
-- Необязательный параметр $select включен в запрос, чтобы продемонстрировать, как параметры запроса автоматически включаются в последующие запросы.
+Чтобы отслеживать изменения в ресурсе пользователя, создайте запрос и включите функцию **delta** в виде сегмента URL-адреса.
+
+Обратите внимание на следующие элементы.
+
+- Необязательный параметр `$select` включен в запрос, чтобы продемонстрировать, как параметры запроса автоматически включаются в последующие запросы.
 - Исходный запрос не включает маркер состояния. Маркеры состояния будут использоваться в последующих запросах.
 
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,surname
 ```
 
-## <a name="initial-response"></a>Исходный ответ
+### <a name="initial-response"></a>Исходный отклик
 
-В случае успеха этот метод возвращает код ответа `200 OK` и объект коллекции [user](/graph/api/resources/user?view=graph-rest-1.0) в тексте ответа. Если полный набор пользователей не помещается на одну страницу, ответ также будет включать маркер состояния nextLink.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции [user](/graph/api/resources/user) в тексте отклика. Если полный набор пользователей слишком велик, отклик также будет включать маркер состояния `nextLink` в параметре `@odata.nextLink`.
 
-В этом примере возвращается URL-адрес nextLink. Это означает, что в текущем сеансе можно получить дополнительные страницы данных. Параметр $select из исходного запроса кодируется в URL-адресе nextLink.
+В этом примере возвращается URL-адрес `nextLink`. Это означает, что в текущем сеансе можно получить дополнительные страницы данных. Параметр `$select` из исходного запроса кодируется в URL-адресе `nextLink`.
 
 ```http
 HTTP/1.1 200 OK
@@ -61,32 +67,42 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa",
   "value": [
     {
-      "displayName":"Testuser1",
-      "givenName":"John",
-      "surname":"Doe",
+      "displayName":"Cameron White",
+      "givenName":"Cameron",
+      "surname":"White",
       "id":"ffff7b1a-13b6-477b-8c0c-380905cd99f7"
     },
     {
-      "displayName":"Testuser2",
-      "givenName":"Jane",
-      "surname":"Doe",
+      "displayName":"Delia Dennis",
+      "givenName":"Delia",
+      "surname":"Dennis",
       "id":"605d1257-ffff-40b6-8e6f-528a53f5dc55"
+    },
+    {
+      "id": "86462606-fde0-4fc4-9e0c-a20eb73e54c6",
+      "@removed": {
+        "reason": "deleted"
+      }
+    },
+    {
+      "displayName": "Conf Room Adams",
+      "id": "6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0"
     }
   ]
 }
 ```
 
-## <a name="nextlink-request"></a>Запрос nextLink
+### <a name="nextlink-request"></a>Запрос nextLink
 
-Второй запрос указывает маркер `skipToken`, полученный из предыдущего ответа. Обратите внимание, что параметр `$select` указывать не обязательно, так как `skipToken` включает его в закодированном виде.
+Второй запрос указывает маркер `skipToken`, полученный из предыдущего отклика. Обратите внимание, что параметр `$select` закодирован и включен в `skipToken`.
 
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa
 ```
 
-## <a name="nextlink-response"></a>Ответ nextLink
+### <a name="nextlink-response"></a>Отклик nextLink
 
-Ответ содержит ссылку `nextLink` с новым значением `skipToken`, означающим, что доступны дополнительные группы. Вы должны продолжать выполнение запросов с использованием URL-адреса `nextLink`, пока в окончательном ответе не будет возвращен URL-адрес `deltaLink`, даже если значением является пустой массив (это может происходить при некоторых обстоятельствах).
+Отклик содержит другой объект `nextLink` с новым значением `skipToken`, означающим, что доступны дополнительные изменения, которые были отслежены для пользователей. Используйте URL-адрес `nextLink` в других запросах, пока URL-адрес `deltaLink` (в параметре `@odata.deltaLink`) не будет возвращен в окончательном отклике, даже если значение является пустым массивом.
 
 ```http
 HTTP/1.1 200 OK
@@ -97,32 +113,32 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7",
   "value": [
     {
-      "displayName":"Testuser3",
-      "givenName":"Pat",
-      "surname":"Doe",
+      "displayName":"Mallory Cortez",
+      "givenName":"Mallory",
+      "surname":"Cortez",
       "id":"d8c37826-ffff-4cae-b348-e2725b1e814b"
     },
     {
-      "displayName":"Testuser4",
-      "givenName":"Meghan",
-      "surname":"Doe",
+      "displayName":"Diego Sicilian",
+      "givenName":"Diego",
+      "surname":"Sicilian",
       "id":"8b1ee412-cd8f-4d59-ffff-24010edb9f1f"
     }
   ]
 }
 ```
 
-## <a name="final-nextlink-request"></a>Последний запрос nextLink
+### <a name="final-nextlink-request"></a>Последний запрос nextLink
 
-Третий запрос продолжает использовать маркер `skipToken`, полученный из последнего запроса на синхронизацию. 
+Третий запрос использует последний `skipToken`, полученный из последнего запроса на синхронизацию. 
 
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7
 ```
 
-## <a name="final-nextlink-response"></a>Последний ответ nextLink
+### <a name="final-nextlink-response"></a>Последний отклик nextLink
 
-Когда возвращается URL-адрес deltaLink, это означает, что больше нет данных о текущем состоянии ресурса. В последующих запросах приложение использует URL-адрес deltaLink, чтобы узнавать об изменениях ресурса. Сохраните маркер `deltaToken` и используйте его в URL-адресе запроса, чтобы находить изменения пользователей. 
+Если возвращается URL-адрес `deltaLink`, это означает, что больше нет данных о текущем состоянии объектов user. В последующих запросах приложение использует URL-адрес `deltaLink`, чтобы узнавать о других изменениях пользователей. Сохраните маркер `deltaToken` и используйте его в URL-адресе последующего запроса, чтобы находить другие изменения пользователей.
 
 ```http
 HTTP/1.1 200 OK
@@ -133,32 +149,32 @@ Content-type: application/json
   "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
   "value": [
     {
-      "displayName":"Testuser5",
-      "givenName":"Al",
-      "surname":"Doe",
+      "displayName":"Lidia Holloway",
+      "givenName":"Lidia",
+      "surname":"Holloway",
       "id":"25dcffff-959e-4ece-9973-e5d9b800e8cc"
     },
     {
-      "displayName":"Testuser6",
-      "givenName":"Sam",
-      "surname":"Doe",
+      "displayName":"Patti Fernandez",
+      "givenName":"Patti",
+      "surname":"Fernandez",
       "id":"f6ede700-27d0-4c42-bfb9-4dffff43c74a"
     }
   ]
 }
 ```
 
-## <a name="deltalink-request"></a>Запрос deltaLink
+### <a name="deltalink-request"></a>Запрос deltaLink
 
-С помощью маркера `deltaToken` из [последнего ответа](#final-nextlink-response) вы сможете получить пользователей, измененных (добавленных, удаленных или обновленных) с момента последнего запроса.
+С помощью параметра `deltaToken` из [последнего отклика](#final-nextlink-response) вы сможете получить изменения (добавления, удаления или обновления) пользователей с момента последнего запроса.
 
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460
 ```
 
-## <a name="deltalink-response"></a>Ответ deltaLink
+## <a name="deltalink-response"></a>Отклик deltaLink
 
-Если изменений не произошло, возвращается другой маркер `deltatoken` без результатов.
+Если изменений не произошло, возвращается объект `deltaLink` без результатов (свойство **value** является пустым массивом).
 
 ```http
 HTTP/1.1 200 OK
@@ -171,7 +187,9 @@ Content-type: application/json
 }
 ```
 
-Если же обнаружены изменения, возвращается другой маркер `deltatoken`, включающий коллекцию измененных пользователей.
+Если обнаружены изменения, в отклик включается коллекция измененных объектов user. Отклик также содержит ссылку `nextLink` (если требуется получить несколько страниц) или `deltaLink`. Реализуйте такой же порядок перехода по объектам `nextLink`, сохраняя заключительный объект `deltaLink` для последующих вызовов.
+
+>**Примечание.** При запросе могут происходить задержки репликации для пользователей, которые были недавно созданы, обновлены или удалены. Повторите `nextLink` или `deltaLink` через некоторое время, чтобы получить последние изменения.
 
 ```http
 HTTP/1.1 200 OK
@@ -182,9 +200,9 @@ Content-type: application/json
   "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=MF1LuFYbK6Lw4DtZ4o9PDrcGekRP65WEJfDmM0H26l4v9zILCPFiPwSAAeRBghxgiwsXEfywcVQ9R8VEWuYAB50Yw3KvJ-8Z1zamVotGX2b_AHVS_Z-3b0NAtmGpod",
   "value": [
     {
-      "displayName":"Testuser7",
-      "givenName":"Joe",
-      "surname":"Doe",
+      "displayName":"MOD Administrator",
+      "givenName":"MOD",
+      "surname":"Administrator",
       "id":"25dcffff-959e-4ece-9973-e5d9b800e8cc"
     },
     {
@@ -197,13 +215,5 @@ Content-type: application/json
 }
 ```
 
-Ниже представлены некоторые примечания к предыдущему примеру отклика.
-
-- Если пользователь удален, элемент содержит заметку: `@removed` со значением `"reason": "changed"`.
-
-- Если пользователь удален окончательно, элемент содержит заметку: `@removed` со значением `"reason": "deleted"`.
-
-- Заметок о создании или восстановлении пользователя не существует.
-
 ## <a name="see-also"></a>См. также
-Обзор [запросов изменений Microsoft Graph](delta-query-overview.md).
++ Обзор [запросов изменений Microsoft Graph](delta-query-overview.md).

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d4e27286ea1d3352d892dbc7cac6ca0bc13a3da2
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: d477e0333c94114818a0bd4fa8ec7723c1a06150
+ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62342296"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62878647"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -18,7 +18,9 @@ ms.locfileid: "62342296"
 
 Получение свойств и связей объекта user.
 
-> Примечание. При получении пользователя возвращается только стандартный набор свойств (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). С помощью параметра `$select` можно получить остальные свойства и связи объекта [user](../resources/user.md).
+> **Примечание.** При получении пользователя возвращается только стандартный набор свойств (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). С помощью параметра `$select` можно получить остальные свойства и связи объекта [user](../resources/user.md).
+>
+> При запросе могут происходить задержки репликации для пользователей, которые были недавно созданы, обновлены или удалены.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -67,7 +69,7 @@ GET /me
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код ответа `200 OK` и объект [user](../resources/user.md) в теле ответа. Он возвращает свойства по умолчанию, если не используется `$select` для указания конкретных свойств.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [user](../resources/user.md) в тексте отклика. Он возвращает свойства по умолчанию, если не используется `$select` для указания конкретных свойств.
 
 В случае успешной обработки запроса этот метод возвращает `202 Accepted`, но серверу требуется дополнительное время для выполнения соответствующих фоновых операций.
 
@@ -87,7 +89,7 @@ GET /me
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
