@@ -5,12 +5,12 @@ author: hafowler
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 26aa268f1be5a0b8bcf35041ab7e898a1e97ad9c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f8a6cd7685150e36c4e7bc0cdc4eab50a3ff5539
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130091"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894693"
 ---
 # <a name="list-recoverykeys"></a>Список recoveryKeys
 Пространство имен: microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "62130091"
 
 Получите список объектов [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) и их свойств. 
 
-Эта операция не возвращает свойство **ключа.** Сведения о том, как читать **свойство ключей,** см. в материале [Get bitlockerRecoveryKey.](bitlockerrecoverykey-get.md)
+Эта операция не возвращает свойство **ключа** . Сведения о том, как читать свойство **ключей** , см. в материале [Get bitlockerRecoveryKey](bitlockerrecoverykey-get.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "62130091"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Не поддерживается|
+|Для приложений|Не поддерживается|
 
 Для делегирования разрешений, позволяющих приложениям получать ресурсы BitLockerRecoveryKey от имени подписанного пользователя, пользователь должен быть зарегистрированным владельцем устройства, на которое изначально был восстановлен ключ восстановления BitLocker, или вызывающее пользователь должно быть в одной из следующих ролей каталога:
 
@@ -51,7 +51,7 @@ ms.locfileid: "62130091"
 GET /informationProtection/bitlocker/recoveryKeys
 ```
 
-Чтобы получить список ключей BitLocker в клиенте, фильтруемом по **id устройства:**
+Чтобы получить список ключей BitLocker в клиенте, фильтруемом по **id устройства**:
 
 <!-- {
   "blockType": "ignored"
@@ -62,23 +62,24 @@ GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметр запроса OData для фильтрации результатов с помощью id устройства, на который был недавно отсвеят `$filter` ключ.  Этот метод не поддерживает `$top` фильтр. Подробные сведения [см. в примере 2](#example-2). Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$filter` запроса OData для фильтрации результатов с помощью **id** устройства, на который был недавно отсвеят ключ. Этот метод не поддерживает фильтр `$top` . Подробные сведения см [. в примере 2](#example-2). Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-В ответе также может содержаться страница, которую можно использовать для страницы `odata.nextLink` с помощью набора результатов. Подробные сведения см. [в материале Paging Microsoft Graph данных.](/graph/paging)
+В ответе также может содержаться `odata.nextLink`страница, которую можно использовать для страницы с помощью набора результатов. Подробные сведения см. [в материале Paging Microsoft Graph данных](/graph/paging).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
-|ocp-client-name|Имя клиентского приложения, которое выполняет вызов API. Этот загон используется для отладки. Необязательно.|
-|ocp-client-version|Версия клиентского приложения с вызовом API. Этот загон используется для отладки. Необязательно.|
+|User-Agent|Идентификатор для вызываемой заявки. Это значение содержит сведения об операционной системе и используемом браузере. Обязательный элемент.|
+|ocp-client-name|Имя клиентского приложения, которое выполняет вызов API. Этот загон используется для отладки. Необязательное свойство.|
+|ocp-client-version|Версия клиентского приложения с вызовом API. Этот загон используется для отладки. Необязательное свойство.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) в теле ответа.
+В случае успешной `200 OK` работы этот метод возвращает код отклика и коллекцию [объектов bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -96,6 +97,7 @@ GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId
 -->
 ``` http
 GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys
+User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -128,7 +130,7 @@ ocp-client-version: "1.2"
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -161,7 +163,7 @@ Content-Type: application/json
 }
 ```
 ### <a name="example-2"></a>Пример 2
-Извлечение списка ключей BitLocker, фильтруемого **по id устройства.**
+Извлечение списка ключей BitLocker, фильтруемого **по id устройства**.
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -175,6 +177,7 @@ Content-Type: application/json
 -->
 ``` http
 GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
+User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -207,7 +210,7 @@ ocp-client-version: "1.2"
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

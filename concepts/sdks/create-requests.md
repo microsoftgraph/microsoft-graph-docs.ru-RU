@@ -3,24 +3,24 @@ title: Вызовы API с помощью SDKs Graph Microsoft
 description: Содержит инструкции по созданию Graph http-запросов с помощью SDKs.
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: d2d7b1f1a19c1a0a890bab6ab6a8c51ba7ec47a0
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: a1a59bec553f0b568a38a3e9fd5f86348d8edae7
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226377"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894719"
 ---
 <!-- markdownlint-disable MD025 -->
 
 # <a name="make-api-calls-using-the-microsoft-graph-sdks"></a>Вызовы API с помощью SDKs Graph Microsoft
 
-Библиотеки служб майкрософт Graph SDK предоставляют клиентский класс, который можно использовать в качестве отправной точки для создания всех запросов API. Существует два стиля клиентского класса: один использует беглое интерфейс для создания запроса (например, ) и другой принимает строку пути `client.Users["user-id"].Manager` (например, `api("/users/user-id/manager")` ). Если у вас есть объект запроса, можно указать различные параметры, такие как фильтрация и сортировка, и, наконец, вы выберите тип операции, который необходимо выполнить.
+Библиотеки служб майкрософт Graph SDK предоставляют клиентский класс, который можно использовать в качестве отправной точки для создания всех запросов API. Существует два стиля клиентского класса: один использует беглое интерфейс для создания запроса (например, `client.Users["user-id"].Manager`) и другой принимает строку пути (например, `api("/users/user-id/manager")`). Если у вас есть объект запроса, можно указать различные параметры, такие как фильтрация и сортировка, и, наконец, вы выберите тип операции, который необходимо выполнить.
 
-Существует также microsoft [Graph PowerShell SDK,](../powershell/get-started.md)который не имеет клиентского класса вообще. Вместо этого все запросы представлены в качестве команд PowerShell. Например, чтобы получить менеджера пользователя, команда `Get-MgUserManager` . Дополнительные сведения о поиске команд для вызовов API см. в обзоре [Navigating the Microsoft Graph PowerShell SDK.](../powershell/navigating.md)
+Существует также microsoft [Graph PowerShell SDK](../powershell/get-started.md), у которого нет клиентского класса вообще. Вместо этого все запросы представлены в качестве команд PowerShell. Например, чтобы получить менеджера пользователя, команда `Get-MgUserManager`. Дополнительные сведения о поиске команд для вызовов API см. в обзоре [Navigating the Microsoft Graph PowerShell SDK](../powershell/navigating.md).
 
 ## <a name="read-information-from-microsoft-graph"></a>Ознакомьтесь с информацией из Microsoft Graph
 
-Чтобы прочитать сведения из microsoft Graph, сначала необходимо создать объект запроса, а затем запустить `GET` метод по запросу.
+Чтобы прочитать сведения из microsoft Graph, `GET` сначала необходимо создать объект запроса, а затем запустить метод по запросу.
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -38,7 +38,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-read.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -67,7 +67,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-select.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -77,7 +77,9 @@ ms.locfileid: "61226377"
 
 ## <a name="retrieve-a-list-of-entities"></a>Извлечение списка сущностями
 
-Ирисовка списка сущностей похожа на ирисовку одной сущности, за исключением ряда других вариантов настройки запроса. Параметр запроса можно использовать для уменьшения заданного результата только до тех строк, которые соответствуют `$filter` условию.  Параметр запроса запрашивает, чтобы сервер предоставил список объектов, `$orderBy` сортироваться по указанным свойствам.
+Ирисовка списка сущностей похожа на ирисовку одной сущности, за исключением ряда других вариантов настройки запроса. Параметр `$filter` запроса можно использовать для уменьшения заданного результата только до тех строк, которые соответствуют условию.  Параметр `$orderBy` запроса запрашивает, чтобы сервер предоставил список объектов, сортироваться по указанным свойствам.
+
+[!INCLUDE [aad-advanced-queries-note](../../includes/aad-advanced-queries-note.md)]
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -95,7 +97,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-list.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -103,7 +105,7 @@ ms.locfileid: "61226377"
 
 ---
 
-Объект, возвращающийся при сборе списка сущностями, скорее всего, будет страницей коллекции. Сведения о том, как получить полный список сущностях, см. в материале [paging through a collection.](../paging.md)
+Объект, возвращающийся при сборе списка сущностями, скорее всего, будет страницей коллекции. Сведения о том, как получить полный список сущностях, см. в материале [paging through a collection](../paging.md).
 
 ## <a name="access-an-item-of-a-collection"></a>Доступ к элементу коллекции
 
@@ -125,7 +127,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-index.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -135,7 +137,7 @@ ms.locfileid: "61226377"
 
 ## <a name="use-expand-to-access-related-entities"></a>Использование $expand для доступа к связанным сущностям
 
-Фильтр можно использовать для запроса связанной сущности или коллекции сущностей одновременно с запросом `$expand` основного объекта.
+Фильтр можно использовать `$expand` для запроса связанной сущности или коллекции сущностей одновременно с запросом основного объекта.
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -153,7 +155,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-expand.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -163,7 +165,7 @@ ms.locfileid: "61226377"
 
 ## <a name="delete-an-entity"></a>Удаление объекта
 
-Удаление запросов строится так же, как и запросы на извлечение объекта, но вместо `DELETE` запроса используется `GET` .
+Удаление запросов строится так же, как и запросы на извлечение объекта, `DELETE` но вместо запроса используется .`GET`
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -181,7 +183,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-delete.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -191,7 +193,7 @@ ms.locfileid: "61226377"
 
 ## <a name="make-a-post-request-to-create-a-new-entity"></a>Создание запроса POST для создания нового объекта
 
-Для SDKs, которые поддерживают беглое стиле, новые элементы могут быть добавлены в коллекции с помощью `Add` метода. Для SDKs на основе шаблонов объект запроса предоставляет `post` метод. Для PowerShell доступна команда, которая принимает параметры, которые необходимо добавить в `New-*` объект. Созданная сущность обычно возвращается из вызова.
+Для SDKs, которые поддерживают беглое стиле, новые элементы могут быть добавлены в коллекции с помощью `Add` метода. Для SDKs на основе шаблонов объект запроса предоставляет `post` метод. Для PowerShell доступна `New-*` команда, которая принимает параметры, которые необходимо добавить в объект. Созданная сущность обычно возвращается из вызова.
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -209,7 +211,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-create.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -219,7 +221,7 @@ ms.locfileid: "61226377"
 
 ## <a name="updating-an-existing-entity-with-patch"></a>Обновление существующей сущности с помощью PATCH
 
-Большинство обновлений в Microsoft Graph выполняются с помощью метода, поэтому необходимо включать только свойства, которые необходимо изменить в `PATCH` переданном объекте.
+Большинство обновлений в Microsoft Graph `PATCH` выполняются с помощью метода, поэтому необходимо включать только свойства, которые необходимо изменить в переданном объекте.
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -237,7 +239,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-update.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -247,7 +249,7 @@ ms.locfileid: "61226377"
 
 ## <a name="use-http-headers-to-control-request-behavior"></a>Использование http-заглавок для управления поведением запросов
 
-Вы можете использовать `Header()` функцию для прикрепления настраиваемой заготки к запросу. Для PowerShell добавление загона возможно только с помощью `Invoke-GraphRequest` метода. В ряде Graph Майкрософт для настройки поведения запроса используются настраиваемые заготки.
+Вы можете использовать функцию `Header()` для прикрепления настраиваемой заготки к запросу. Для PowerShell добавление загона возможно только с помощью `Invoke-GraphRequest` метода. В ряде Graph Майкрософт для настройки поведения запроса используются настраиваемые заготки.
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -265,7 +267,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-headers.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -275,7 +277,7 @@ ms.locfileid: "61226377"
 
 ## <a name="provide-custom-query-parameters"></a>Предоставление настраиваемой параметров запроса
 
-Для SDKs, которые поддерживают беглое стиле, можно предоставить настраиваемые значения параметров запроса с помощью списка `QueryOptions` объектов. Для SDKs на основе шаблонов параметры кодируются URL-адресами и добавляются в URI запроса. Для PowerShell и Go определенные параметры запроса для данного API выставляются в качестве параметров соответствующей команды.
+Для SDKs, которые поддерживают беглое стиле, можно предоставить настраиваемые значения параметров запроса с помощью списка объектов `QueryOptions` . Для SDKs на основе шаблонов параметры кодируются URL-адресами и добавляются в URI запроса. Для PowerShell и Go определенные параметры запроса для данного API выставляются в качестве параметров соответствующей команды.
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -293,7 +295,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-queryparams.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 

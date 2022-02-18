@@ -5,12 +5,12 @@ author: hafowler
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c3cce594bb7fd6bec167b7b191c636a6c765a23c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3cf3335abf971b9c55d322e7e18e697a62654a4b
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092553"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894756"
 ---
 # <a name="list-recoverykeys"></a>Список recoveryKeys
 
@@ -18,7 +18,7 @@ ms.locfileid: "62092553"
 
 Получите список объектов [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) и их свойств. 
 
-Эта операция не возвращает свойство **ключа.** Сведения о том, как читать **свойство ключей,** см. в материале [Get bitlockerRecoveryKey.](bitlockerrecoverykey-get.md)
+Эта операция не возвращает свойство **ключа** . Сведения о том, как читать свойство **ключей** , см. в материале [Get bitlockerRecoveryKey](bitlockerrecoverykey-get.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "62092553"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Не поддерживается|
+|Для приложений|Не поддерживается|
 
-Для делегирования разрешений вызывающее пользователь должен быть зарегистрированным владельцем устройства, на которое изначально был восстановлен ключ восстановления BitLocker, или он должен быть в одной из следующих ролей [каталога:](/azure/active-directory/roles/permissions-reference)
+Для делегирования разрешений пользователь вызовов должен быть зарегистрированным владельцем устройства, на которое изначально был отсвечиваем ключ восстановления BitLocker, или он должен быть в одной из следующих ролей [каталога](/azure/active-directory/roles/permissions-reference):
 
 * Глобальный администратор
 * Администратор облачных устройств
@@ -55,25 +55,26 @@ GET /informationProtection/bitlocker/recoveryKeys
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметр запроса OData для фильтрации результатов с помощью deviceId устройства, на которое был недавно основан `$filter` ключ.  Этот метод не поддерживает `$top` . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$filter` запроса OData для фильтрации результатов с помощью **deviceId** устройства, на которое был недавно основан ключ. Этот метод не поддерживает `$top`. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-В ответе также может содержаться страница, которую можно использовать для страницы `odata.nextLink` с помощью набора результатов. Подробные сведения см. [в материале Paging Microsoft Graph данных.](/graph/paging)
+В ответе также может содержаться `odata.nextLink`страница, которую можно использовать для страницы с помощью набора результатов. Подробные сведения см. [в материале Paging Microsoft Graph данных](/graph/paging).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
+|User-Agent|Идентификатор для вызываемой заявки. Это значение содержит сведения об операционной системе и используемом браузере. Обязательный элемент.|
 |ocp-client-name|Имя клиентского приложения, которое выполняет вызов API. Этот загон используется для отладки. Необязательное свойство.|
-|ocp-client-version|Версия клиентского приложения с вызовом API. Этот загон используется для отладки. Необязательный параметр.|
+|ocp-client-version|Версия клиентского приложения с вызовом API. Этот загон используется для отладки. Необязательное свойство.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) в теле ответа.
+В случае успешной `200 OK` работы этот метод возвращает код отклика и коллекцию [объектов bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -92,6 +93,7 @@ GET /informationProtection/bitlocker/recoveryKeys
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys
+User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -124,7 +126,7 @@ ocp-client-version: "1.2"
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -174,6 +176,7 @@ Content-Type: application/json
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
+User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -206,7 +209,7 @@ ocp-client-version: "1.2"
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

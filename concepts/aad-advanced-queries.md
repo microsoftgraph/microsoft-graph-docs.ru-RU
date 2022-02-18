@@ -4,12 +4,12 @@ description: Объекты каталога Azure AD поддерживают �
 author: Licantrop0
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 3b4dccfc09b0520d787474256493be2a0b698b7a
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: c2dd37ce2323af5d46e88da8f8594f809857da73
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072574"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894728"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Расширенные возможности запросов для объектов каталога Azure AD
 
@@ -19,8 +19,10 @@ ms.locfileid: "62072574"
 
 Например, если нужно получить только учетные записи неактивных пользователей, можно выполнить любой из этих запросов, использующих параметр запроса `$filter`.
 
+<!-- markdownlint-disable MD023 MD024 MD025 -->
 + Вариант 1. Используйте параметр запроса `$filter` с оператором `eq`. Этот запрос будет работать по умолчанию, то есть этот запрос не требует расширенных параметров запроса.
 
+    # <a name="http"></a>[HTTP](#tab/http)
     <!-- {
       "blockType": "request",
       "name": "get_users_enabled"
@@ -29,8 +31,81 @@ ms.locfileid: "62072574"
     GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
     ```
 
+    # <a name="c"></a>[C#](#tab/csharp)
+
+    ```csharp
+    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=CS
+    var user = await graphClient.Users.Request()
+        .Filter("accountEnabled eq false")
+        .GetAsync();
+    ```
+
+    # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
+    ```javascript
+    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Javascript
+    let users = await client.api('/users')
+      .filter('accountEnabled eq false')
+      .get();
+    ```
+
+    # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
+    ```objectivec
+    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Objective-C
+    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users?$filter=accountEnabled eq false"]]];
+    [urlRequest setHTTPMethod:@"GET"];
+
+    MSURLSessionDataTask *usersDataTask = [httpClient dataTaskWithRequest:urlRequest
+    completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
+
+      NSError *jsonError = nil;
+      MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+      MSGraphUser *user = [[MSGraphUser alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+
+    }];
+
+    [usersDataTask execute];
+    ```
+
+    # <a name="java"></a>[Java](#tab/java)
+
+    ```java
+    // See https://docs.microsoft.com/en-us/graph/sdks/create-client?tabs=Java
+    UserCollectionPage users = graphClient.users()
+        .buildRequest()
+        .filter("accountEnabled eq false")
+        .get();
+    ```
+
+    # <a name="go"></a>[Go](#tab/go)
+
+    ```go
+    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Go
+    requestParameters := &msgraphsdk.UsersRequestBuilderGetQueryParameters{
+        Filter: "accountEnabled eq false",
+    }
+
+    options := &msgraphsdk.UsersRequestBuilderGetOptions{
+        Q: requestParameters,
+    }
+
+    result, err := client.Users().Get(options)
+    ```
+
+    # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
+    ```powershell
+    Import-Module Microsoft.Graph.Users
+
+    Get-MgUser -Filter "accountEnabled eq false"
+    ```
+
+    ---
+
 + Вариант 2. Используйте параметр запроса `$filter` с оператором `ne`. Этот запрос не поддерживается по умолчанию, поскольку оператор `ne` поддерживается только в расширенных запросах. Поэтому необходимо добавить заголовок **ConsistencyLevel**, для которого должно быть указано значение `eventual`*, а также* использовать строку запроса `$count=true`.
 
+    # <a name="http"></a>[HTTP](#tab/http)
     <!-- {
       "blockType": "request",
       "name": "get_users_not_enabled"
@@ -39,6 +114,95 @@ ms.locfileid: "62072574"
     GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
     ConsistencyLevel: eventual
     ```
+
+    # <a name="c"></a>[C#](#tab/csharp)
+
+    ```csharp
+    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=CS
+    var user = await graphClient.Users.Request()
+        .Request(new Option[] { new QueryOption("$count", "true")})
+        .Header("ConsistencyLevel", "eventual")
+        .Filter("accountEnabled ne true")
+        .GetAsync();
+    ```
+
+    # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
+    ```javascript
+    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Javascript
+    let users = await client.api('/users')
+      .header('ConsistencyLevel','eventual')
+      .filter('accountEnabled ne true')
+      .count(true)
+      .get();
+    ```
+
+    # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
+    ```objectivec
+    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Objective-C
+    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users?$filter=accountEnabled ne true&$count=true"]]];
+    [urlRequest setHTTPMethod:@"GET"];
+    [urlRequest setValue:@"eventual" forHTTPHeaderField:@"ConsistencyLevel"];
+
+    MSURLSessionDataTask *usersDataTask = [httpClient dataTaskWithRequest:urlRequest
+    completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
+
+      NSError *jsonError = nil;
+      MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+      MSGraphUser *user = [[MSGraphUser alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+
+    }];
+
+    [usersDataTask execute];
+    ```
+
+    # <a name="java"></a>[Java](#tab/java)
+
+    ```java
+    // See https://docs.microsoft.com/en-us/graph/sdks/create-client?tabs=Java
+    LinkedList<Option> requestOptions = new LinkedList<Option>();
+    requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
+    requestOptions.add(new QueryOption("$count", "true"))
+
+    UserCollectionPage users = graphClient.users()
+        .buildRequest(requestOptions)
+        .filter("accountEnabled ne true")
+        .get();
+    ```
+
+    # <a name="go"></a>[Go](#tab/go)
+
+    ```go
+    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Go
+    requestParameters := &msgraphsdk.UsersRequestBuilderGetQueryParameters{
+        Filter: "accountEnabled ne true",
+        Count: true,
+    }
+
+    headers := map[string]string{
+        "ConsistencyLevel": "eventual"
+    }
+
+    options := &msgraphsdk.UsersRequestBuilderGetOptions{
+        Q: requestParameters,
+        H: headers,
+    }
+
+    result, err := client.Users().Get(options)
+    ```
+
+    # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
+    ```powershell
+    Import-Module Microsoft.Graph.Users
+
+    Get-MgUser -Filter "accountEnabled ne true" -CountVariable CountVar -ConsistencyLevel eventual
+    ```
+
+    ---
+
+<!-- markdownlint-enable MD023 MD024 MD025 -->
 
 Эти расширенные возможности запросов поддерживаются только для объектов каталога Azure Active Directory и их взаимосвязей, включая следующие часто используемые объекты:
 

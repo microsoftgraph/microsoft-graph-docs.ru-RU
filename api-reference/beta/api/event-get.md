@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9effe9adee28cad2ad038c97b76388163beeb9ac
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ad0c1a1383b35df1a576f3d5656c9f44c952c3fc
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103110"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894686"
 ---
 # <a name="get-event"></a>Вывод события
 
@@ -23,9 +23,9 @@ ms.locfileid: "62103110"
 Приложение может получить событие в календаре другого пользователя, если:
 
 * У приложения есть разрешения на приложения
-* Приложение имеет соответствующие [](#permissions) делегированные разрешения от одного пользователя, а другой пользователь поделился календарем с этим пользователем или предоставил ему делегированную возможность доступа. См. [подробные сведения и пример](/graph/outlook-get-shared-events-calendars).
+* Приложение имеет соответствующие делегированные разрешения от одного пользователя, а другой пользователь поделился календарем с этим пользователем или предоставил ему делегированную возможность доступа.[](#permissions) См. [подробные сведения и пример](/graph/outlook-get-shared-events-calendars).
 
-Так как **ресурс событий** поддерживает [расширения,](/graph/extensibility-overview)вы также можете использовать операцию для получения настраиваемой информации о свойствах и расширении `GET` в **экземпляре** события.
+Так как **ресурс событий** поддерживает [расширения](/graph/extensibility-overview), `GET` вы также можете использовать операцию для получения настраиваемой информации о свойствах и расширении в **экземпляре** события.
 
 
 ### <a name="support-various-time-zones"></a>Поддержка разных часовых поясов
@@ -76,7 +76,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 | Prefer: outlook.timezone | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в отклике. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный. |
 | Prefer: outlook.body-content-type | string | Формат возвращаемого свойства **body**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойство **body** возвращается в формате HTML. Необязательное свойство. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -218,7 +218,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
 ```
 ### <a name="example-2-get-the-body-property-in-text-format"></a>Пример 2. Получить свойство body в текстовом формате
 #### <a name="request"></a>Запрос
-В следующем примере показано, как использовать заголовка для получения свойства тела указанного события `Prefer: outlook.body-content-type="text"` в текстовом  формате.
+В следующем примере показано, как `Prefer: outlook.body-content-type="text"` использовать заголовка  для получения свойства тела указанного события в текстовом формате.
 
 В запросе также используется параметр `$select` для возврата отдельных свойств. Без параметра `$select` будут возвращены все свойства событий.
 
@@ -328,7 +328,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 #### <a name="response"></a>Отклик
 Пример отклика. Свойство **locations** включает информацию о трех местах, для которых организовано событие. 
 
-Так как в запросе не указаны какие-либо заголовки или заголовки, свойства запуска и окончания отображаются в часовом поясе UTC по умолчанию, а тело находится в `Prefer: outlook.timezone` HTML-формате `Prefer: outlook.body-content-type` по умолчанию.    
+Так как `Prefer: outlook.timezone`   `Prefer: outlook.body-content-type` в запросе не указаны какие-либо заголовки или заголовки, свойства запуска и окончания отображаются в часовом поясе UTC по умолчанию, а тело находится в HTML-формате по умолчанию.  
 
 <!-- {
   "blockType": "response",
@@ -438,7 +438,7 @@ Content-type: application/json
   "name": "get_event_seriesMaster_expansion"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand=exceptionOccurrences
+GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences&$expand=exceptionOccurrences
 ```
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-event-seriesmaster-expansion-go-snippets.md)]
@@ -451,7 +451,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 ---
 
 #### <a name="response"></a>Отклик
-Операция GET возвращает выбранные свойства для мастер-события серии. В частности, для событий в коллекции **exceptionOccurrences** операция возвращает свойство **id** и применимые, выбранные свойства **(subject,** **start**, **end**, **occurrenceId).** Что касается событий в **коллекции cancelledOccurrences,** так как события больше не существуют, операция возвращает только значения **свойств occurrenceId.**
+Операция GET возвращает выбранные свойства для мастер-события серии. В частности, для событий в коллекции **exceptionOccurrences** операция возвращает свойство **id** и применимые, выбранные **свойства (тема****, начните****, конец**, **occurrenceId**). Что касается событий в **коллекции cancelledOccurrences** , так как события больше не существуют, операция возвращает только значения **свойств occurrenceId** .
 
 <!-- {
   "blockType": "response",

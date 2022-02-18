@@ -5,19 +5,19 @@ author: hafowler
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 17ce44820faee212ff4a8656da27684d550b6e7d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4b2b516c5c1967724d849955dd0e79daaf4605b1
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62111470"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894742"
 ---
 # <a name="get-bitlockerrecoverykey"></a>Get bitlockerRecoveryKey
 Пространство имен: microsoft.graph
 
-Извлечение свойств и связей [объекта bitlockerRecoveryKey.](../resources/bitlockerrecoverykey.md) 
+Извлечение свойств и связей [объекта bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) . 
 
-По умолчанию эта операция не возвращает ключевое **свойство,** которое представляет фактический ключ восстановления. Чтобы включить **ключевое** свойство в ответ, используйте параметр `$select` запроса OData. В том числе параметр запроса запускает аудит Azure AD операции и `$select` создает журнал аудита. Дополнительные сведения о журналах аудита для ключей восстановления bitlocker см. в фильтре категорий KeyManagement журналов аудита [Azure AD.](/azure/active-directory/reports-monitoring/concept-audit-logs)
+По умолчанию эта операция не возвращает ключевое **свойство,** которое представляет фактический ключ восстановления. Чтобы включить **ключевое** свойство в ответ, используйте параметр `$select` запроса OData. В том числе параметр `$select` запроса запускает аудит Azure AD операции и создает журнал аудита. Дополнительные сведения о журналах аудита для ключей восстановления bitlocker см. в фильтре категорий KeyManagement журналов аудита [Azure AD](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,9 +26,9 @@ ms.locfileid: "62111470"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Не поддерживается|
+|Для приложений|Не поддерживается|
 
-Для делегирования разрешений вызывающее пользователь должен быть зарегистрированным владельцем устройства, на которое изначально был восстановлен ключ восстановления BitLocker, или он должен быть в одной из следующих ролей [каталога:](/azure/active-directory/roles/permissions-reference)
+Для делегирования разрешений пользователь вызовов должен быть зарегистрированным владельцем устройства, на которое изначально был отсвечиваем ключ восстановления BitLocker, или он должен быть в одной из следующих ролей [каталога](/azure/active-directory/roles/permissions-reference):
 * Глобальный администратор
 * Администратор облачных устройств
 * Администратор службы поддержки
@@ -38,7 +38,7 @@ ms.locfileid: "62111470"
 * Глобальный читатель
 
 ## <a name="http-request"></a>HTTP-запрос
-Чтобы получить указанный ключ BitLocker без возврата свойства **ключа:**
+Чтобы получить указанный ключ BitLocker без возврата свойства **ключа** :
 <!-- {
   "blockType": "ignored"
 }
@@ -57,21 +57,22 @@ GET /informationProtection/bitlocker/recoveryKeys/{bitlockeryRecoveryKeyId}?$sel
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметр `$select` запроса OData для возврата **свойства ключа.** Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр запроса `$select` OData для возврата **свойства ключа** . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
+|User-Agent|Идентификатор для вызываемой заявки. Это значение содержит сведения об операционной системе и используемом браузере. Обязательный элемент.|
 |ocp-client-name|Имя клиентского приложения, которое выполняет вызов API. Этот загон используется для отладки. Необязательное свойство.|
-|ocp-client-version|Версия клиентского приложения с вызовом API. Этот загон используется для отладки. Необязательный параметр.|
+|ocp-client-version|Версия клиентского приложения с вызовом API. Этот загон используется для отладки. Необязательное свойство.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) в теле ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -89,6 +90,7 @@ GET /informationProtection/bitlocker/recoveryKeys/{bitlockeryRecoveryKeyId}?$sel
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
+User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -120,7 +122,7 @@ ocp-client-version: "1.2"
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -160,6 +162,9 @@ Content-type: application/json
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
+User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
+ocp-client-name: "My Friendly Client"
+ocp-client-version: "1.2"
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-key-csharp-snippets.md)]
@@ -190,7 +195,7 @@ GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKey
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

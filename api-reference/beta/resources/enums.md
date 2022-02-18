@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: cd3be7143a53b7985fe2a677f685c3f2ed2b4b18
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: 480689881eb5b806cd5e2fa734068da013c86966
+ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878724"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62894798"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -1074,10 +1074,10 @@ ms.locfileid: "62878724"
 
 ### <a name="searchalterationtype-values"></a>значения searchAlterationType
 
-| Member | Описание |
-|:---------------|:----------|
-|изменение|Получите результаты поиска для исправленного изменения запроса и сведения об исправлении орфографии для опечаток.|
-|предложение|Получите результаты поиска для исходного запроса пользователя и рекомендуемые сведения об исправлении орфографии для опечаток в запросе.|
+| Member |
+|:---------------|
+|изменение|
+|предложение|
 
 ### <a name="bucketaggregationsortproperty-values"></a>bucketAggregationSortProperty values
 
@@ -1241,7 +1241,7 @@ ms.locfileid: "62878724"
 
 | Member
 |:-------------------------
-| обязательно
+| Обязательный
 | необязательный
 | resource
 
