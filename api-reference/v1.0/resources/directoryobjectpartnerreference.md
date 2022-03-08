@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 17356a5e865fceb9da49447064d141120387328e
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 0a626514e1e078cb34c709027e3f26d9cd478088
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854339"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335943"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>тип ресурса directoryObjectPartnerReference
 
@@ -24,7 +24,7 @@ ms.locfileid: "62854339"
 |:---------------|:--------|:----------|
 |description|Строка| Описание возвращенного объекта. Только для чтения. |
 |displayName|String| Имя возвращаемого объекта каталога, например группы или приложения. Только для чтения. |
-|externalPartnerTenantId|GUID| Идентификатор клиента для клиента-партнера. Только для чтения. |
+|externalPartnerTenantId|Guid| Идентификатор клиента для клиента-партнера. Только для чтения. |
 |id|String| Уникальный идентификатор ресурса. Наследуется от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Только для чтения. |
 |objectType|String| Тип ссылаемого объекта в клиенте-партнере. Только для чтения. |
 

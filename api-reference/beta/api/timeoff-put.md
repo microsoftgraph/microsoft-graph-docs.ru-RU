@@ -1,16 +1,16 @@
 ---
 title: Замена timeOff
 description: Замените существующее время.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5545a8bb2b33f717b56b718faddd288165137083
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 49840649eeafc90b7c9d47b1f14ffafc563e37f6
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61001602"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336076"
 ---
 # <a name="replace-timeoff"></a>Замена timeOff
 
@@ -18,9 +18,9 @@ ms.locfileid: "61001602"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Замените [существующий timeOff](../resources/timeoff.md).
+Замените [существующее время.](../resources/timeoff.md)
 
-Если указанного [timeOff](../resources/timeoff.md) не существует, этот метод `404 Not found` возвращается.
+Если указанного [timeOff](../resources/timeoff.md) не существует, этот метод возвращается `404 Not found`.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -53,11 +53,11 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [timeOff.](../resources/timeoff.md)
+В теле запроса поставляем представление JSON объекта [timeOff](../resources/timeoff.md) .
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект timeOff](../resources/timeoff.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект timeOff](../resources/timeoff.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -116,7 +116,7 @@ Prefer: return=representation
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса directorySetting
 description: Параметры каталога можно создать на основе доступных directorySettingTemplates и изменить их по умолчанию.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 50c73e9c68cd3d2fa3f4aed6c7eba84141443d1a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: eb442e80e92b746e864507536b0e0b0992e8cd9a
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440453"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335278"
 ---
 # <a name="directorysetting-resource-type"></a>тип ресурса directorySetting
 
@@ -18,19 +18,22 @@ ms.locfileid: "50440453"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Параметры каталога могут быть созданы на основе доступных [directorySettingTemplates](directorysettingtemplate.md)и изменены по заранее. Эти параметры могут управлять поведением сущности или функций как на уровне клиента, так и на определенном уровне объекта. Если один и тот же параметр определяется как на уровне клиента, так и на уровне определенного объекта, определенный параметр уровня сущности может отказаться от параметра для всех клиентов.  Например, параметр для клиента может разрешить приглашать гостей существующими членами групп, но определенный параметр группы может отказаться и не разрешит приглашать гостей членами группы. В настоящее время параметры, определенные системой, регулируют только поведение групп Office.
+Параметры каталога определяют конфигурации, которые можно использовать для настройки ограничений, определенных для клиента и объектов, и допустимого поведения. Например, можно заблокировать списки слов для имен отображения групп или определить, разрешено ли гостю быть владельцами групп.
 
-> **Примечание.** Бета-версия типа ресурса directorySetting применяется только к группам. Версия /v1.0 переименована в groupSetting.
+По умолчанию все сущности наследуют предустановленные по умолчанию. Чтобы изменить параметры по умолчанию, необходимо создать новый объект параметров с помощью [directorySettingTemplates](directorysettingtemplate.md). Если один и тот же параметр определяется как для клиента, так и для определенной группы, параметр на уровне сущности переопределяет параметр на уровне клиента. Например, параметр для клиента может разрешить приглашать гостей существующими членами групп, но отдельные параметры группы могут переопределять и не разрешая приглашать гостей членами группы.
+
+> [!TIP]
+> Версия `/v1.0` этого ресурса называется [groupSetting](/graph/api/resources/groupsetting?view=graph-rest-1.0&preserve-view=true).
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Создание параметра](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |Создание объекта настройки на основе directorySettingTemplate. Запрос POST должен предоставить параметрValues для всех параметров, определенных в шаблоне.|
+|[Создание параметра](../api/group-post-settings.md) | [directorySetting](directorysetting.md) |Создание объекта настройки на основе directorySettingTemplate.|
 |[Получение параметра](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) |Считывание свойств определенного объекта setting.|
-|[Перечисление параметров](../api/directorysetting-list.md) | Коллекция [directorySetting](directorysetting.md) |Перечисление свойств всех объектов setting.|
+|[Перечисление параметров](../api/group-list-settings.md) | Коллекция [directorySetting](directorysetting.md) |Перечисление свойств всех объектов setting.|
 |[Обновление параметра](../api/directorysetting-update.md) | [directorySetting](directorysetting.md)  |Обновление объекта setting. В обновлении можно изменить только параметрValues.|
-|[Удаление параметра](../api/directorysetting-delete.md) | Нет |Удаление объекта параметра. |
+|[Удаление параметра](../api/directorysetting-delete.md) | Нет |Удаление объекта setting. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -38,7 +41,7 @@ ms.locfileid: "50440453"
 |displayName|string|Отображение имени этой группы параметров, которое происходит из связанного шаблона. Только для чтения.|
 |id|string| Уникальный идентификатор для этих параметров. Только для чтения.|
 |templateId|string| Уникальный идентификатор для шаблона, используемого для создания этой группы параметров. Только для чтения.|
-|values|[settingValue](settingvalue.md) collection| Коллекция пар значений имен. Необходимо содержать и задать все параметры, определенные в шаблоне.|
+|values|[settingValue](settingvalue.md) collection| Коллекция пар имен и значений, соответствующих свойствам name и defaultValue в объекте [referenced directorySettingTemplates](directorysettingtemplate.md) .|
 
 ## <a name="relationships"></a>Связи
 Нет

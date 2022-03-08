@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 554e16245616605a86beb797adfca0370e948e49
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: ad4cb5d1031c3c8f30e014ad99de01255e737937
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519679"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334333"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -21,7 +21,7 @@ ms.locfileid: "62519679"
 Команда в Microsoft Teams — это коллекция объектов [channel](channel.md).
 Канал представляет тему и логически обособляет обсуждение в команде.
 
-Каждая команда связана с [группой](../resources/group.md).
+Каждая команда связана с [группой Microsoft 365](../resources/group.md).
 У группы такой же идентификатор, как у команды. Например, `/groups/{id}/team` совпадает с `/teams/{id}`.
 Дополнительные сведения о работе с группами и участниками в командах см. в статье [Работа с Microsoft Teams при помощи REST API Microsoft Graph](teams-api-overview.md).
 
@@ -30,7 +30,7 @@ ms.locfileid: "62519679"
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
 |[Создание команды](../api/team-post.md) | [teamsAsyncOperation](teamsasyncoperation.md) | Создание команды с нуля. |
-|[Создание команды из группы](../api/team-put-teams.md) | [team](team.md) | Создание команды или добавление команды в существующую группу.|
+|[Создание команды из группы](../api/team-put-teams.md) | [team](team.md) | Создание команды или добавление команды в существующую группу Microsoft 365.|
 |[Получение команды](../api/team-get.md) | [team](team.md) | Получение свойств и связей указанной команды.|
 |[Обновление команды](../api/team-update.md) | [team](team.md) |Обновление свойств указанной команды. |
 |[Удаление команды](../api/group-delete.md) | Нет |Удаление команды и ее связанной группы. |
@@ -91,7 +91,7 @@ ms.locfileid: "62519679"
 |schedule|[schedule](schedule.md)| Расписание смен для команды.|
 |шаблон|[teamsTemplate](teamstemplate.md)| Шаблон, из которого создана команда. См. [доступные шаблоны](/MicrosoftTeams/get-started-with-teams-templates). |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

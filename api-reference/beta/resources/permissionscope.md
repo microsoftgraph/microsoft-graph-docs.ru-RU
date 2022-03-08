@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 9683cfdaa94ed8c35b338e1d4aa77e0b9f15c625
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: e06af959ffa280256489912e3e3df3dd2490cf74
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854317"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335222"
 ---
 # <a name="permissionscope-resource-type"></a>Тип ресурса permissionScope
 
@@ -49,7 +49,7 @@ ms.locfileid: "62854317"
 
 ```json
 {
-  "id": "GUID",
+  "id": "Guid",
   "adminConsentDisplayName": "String",
   "adminConsentDescription": "String",
   "userConsentDisplayName": "String",

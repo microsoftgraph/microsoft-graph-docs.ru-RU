@@ -5,19 +5,19 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 557dcb8ca8e57dff6cd8fad22d047d3fc56bee78
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 41be988d1cc62b66b5601fb6df196efc41485ba1
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092730"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335649"
 ---
 # <a name="get-windowshelloforbusinessauthenticationmethod"></a>Get windowsHelloForBusinessAuthenticationMethod
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями [объекта windowsHelloForBusinessAuthenticationMethod.](../resources/windowshelloforbusinessauthenticationmethod.md)
+Ознакомьтесь с свойствами и отношениями [объекта windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -37,9 +37,9 @@ ms.locfileid: "62092730"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Для приложений                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих ролей [Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 * Глобальный администратор
 * Глобальный читатель
 * привилегированный администратор проверки подлинности;
@@ -56,6 +56,8 @@ GET /me/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAu
 GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
 ```
 
+>**Примечание:** Чтобы прочитать **свойство навигации** устройства для другого пользователя, укажите `$expand` его в запросе следующим образом: `/users/{id}/authentication/windowsHelloForBusinessMethods/{id}?$expand=device`.
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Не поддерживается.
@@ -65,12 +67,12 @@ GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethod
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) в теле отклика.
+В случае успешной `200 OK` работы этот метод возвращает код отклика и [объект windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

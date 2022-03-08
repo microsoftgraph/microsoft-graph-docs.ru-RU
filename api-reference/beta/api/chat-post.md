@@ -5,19 +5,19 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d774731503ff39081e9f6eb83953dad8de879fd3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 80f45a8956863ff99280d595387a8041d00a44de
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62090981"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335621"
 ---
 # <a name="create-chat"></a>Создание чата
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект чата.](../resources/chat.md)
+Создайте новый [объект чата](../resources/chat.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "62090981"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Chat.Create, Chat.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | Chat.Create |
+|Для приложений | Chat.Create |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,26 +45,26 @@ POST /chats
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем JSON-представление объекта [чата.](../resources/chat.md)
+В теле запроса поставляем JSON-представление объекта [чата](../resources/chat.md) .
 
 В следующей таблице перечислены свойства, необходимые для создания объекта чата.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|topic|(Необязательный) String|Название чата. Название чата может быть предоставлено только в том случае, если чат имеет `group` тип.|
-|chatType|[chatType](../resources/chat.md#chattype-values)| Указывает тип чата. Возможные значения: `group` и `oneOnOne` . |
-|members|Коллекция [conversationMember](../resources/conversationmember.md)|Список участников беседы, которых следует добавить. Каждый пользователь, включая пользователя, инициавшего запрос на создание, который будет участвовать в чате, должен быть указан в этом списке.|
+|topic|(Необязательный) String|Название чата. Название чата может быть предоставлено только в том случае, если чат имеет тип `group` .|
+|chatType|[chatType](../resources/chat.md#chattype-values)| Указывает тип чата. Возможные значения: `group` и `oneOnOne`. |
+|members|Коллекция [conversationMember](../resources/conversationmember.md)|Список участников беседы, которых следует добавить. Каждый пользователь, который будет участвовать в чате, включая пользователя, который инициирует запрос на создание, должен быть указан в этом списке. Каждому участнику должна быть назначена роль `owner` или `guest`. Пользователям гостевого клиента должна быть назначена `guest` роль.|
 |installedApps| Коллекция [teamsApp](../resources/teamsapp.md)|Список приложений, которые необходимо установить в чате.|
 
-> **Примечание:** В настоящее время поддерживается только одна установка приложения. Если в запросе перечислены несколько установок приложений, ответ будет `Bad Request` ошибкой.
+> **Примечание:** В настоящее время поддерживается только одна установка приложения. Если в запросе перечислены несколько установок приложений, ответ будет ошибкой `Bad Request` .
 
 ## <a name="response"></a>Отклик
 
 ### <a name="response-for-creating-a-one-on-one-chat-without-installed-apps"></a>Ответ на создание единого чата без установленных приложений
-В случае успешного использования этот метод возвращает код отклика и вновь созданный ресурс чата `201 Created` в тексте [](../resources/chat.md) ответа.
+В случае успешного использования этот метод возвращает код `201 Created` отклика и вновь созданный ресурс чата в тексте ответа.[](../resources/chat.md)
 
 ### <a name="response-for-creating-a-one-on-one-chat-with-installed-apps"></a>Ответ на создание единого чата с установленными приложениями
-В случае успешной работы этот метод возвращает код ответа и загон расположения, содержащий ссылку на `202 Accepted` [teamsAsyncOperation.](../resources/teamsasyncoperation.md) Ссылку можно использовать для получения состояния и сведений об операции. Подробные сведения см. в [материале Get operation on chat.](teamsasyncoperation-get.md#example-get-operation-on-chat)
+В случае успешной работы этот метод возвращает код `202 Accepted` ответа и загон расположения, содержащий ссылку на [teamsAsyncOperation](../resources/teamsasyncoperation.md). Ссылку можно использовать для получения состояния и сведений об операции. Подробные сведения см. в [материале Get operation on chat](teamsasyncoperation-get.md#example-get-operation-on-chat).
 
 ## <a name="examples"></a>Примеры
 
@@ -314,7 +314,7 @@ Content-Type: application/json
 Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces')/operations('2432b57b-0abd-43db-aa7b-16eadd115d34-861f06db-0208-4815-b67a-965df0d28b7f-10adc8a6-60db-42e2-9761-e56a7e4c7bc9')
 ```
 
-Инициирована операция async, и в ответе содержится загон Location, который включает ссылку на [teamsAsyncOperation.](../resources/teamsasyncoperation.md) Ссылку можно использовать для получения состояния и сведений об операции. Подробные сведения см. в [материале Get operation on chat.](teamsasyncoperation-get.md#example-get-operation-on-chat)
+Инициирована операция async, и в ответе содержится загон Location, который включает ссылку на [teamsAsyncOperation](../resources/teamsasyncoperation.md). Ссылку можно использовать для получения состояния и сведений об операции. Подробные сведения см. в [материале Get operation on chat](teamsasyncoperation-get.md#example-get-operation-on-chat).
 
 ### <a name="example-4-create-a-one-on-one-chat-using-user-principal-name"></a>Пример 4. Создание чата один на один с использованием основного имени пользователя
 
@@ -395,6 +395,94 @@ Content-Type: application/json
     "lastUpdatedDateTime": "2020-12-04T23:10:28.51Z",
     "chatType": "oneOnOne",
     "webUrl": "https://teams.microsoft.com/l/chat/19%3A82fe7758-5bb3-4f0d-a43f-e555fd399c6f_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+}
+```
+
+### <a name="example-5-create-a-group-chat-with-tenant-guest-user"></a>Пример 5. Создание группового чата с гостем клиента клиента
+
+#### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_chat_group"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/chats
+Content-Type: application/json
+
+{
+  "chatType": "group",
+  "topic": "Group chat title",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('82fe7758-5bb3-4f0d-a43f-e555fd399c6f')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["guest"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g')"
+    }
+  ]
+}
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chat-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chat-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-chat-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-chat-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+---
+
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats/$entity",
+    "id": "19:1c5b01696d2e4a179c292bc9cf04e63b@thread.v2",
+    "topic": "Group chat title",
+    "createdDateTime": "2020-12-04T23:11:16.175Z",
+    "lastUpdatedDateTime": "2020-12-04T23:11:16.175Z",
+    "chatType": "group",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3A1c5b01696d2e4a179c292bc9cf04e63b@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
 }
 ```
 

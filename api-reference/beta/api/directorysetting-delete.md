@@ -1,26 +1,24 @@
 ---
-title: Удаление параметра каталога
+title: Удаление directorySetting
 description: Удаление параметра каталога.
 author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8895677736d713564e351ac1b7f91568a1317d3c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0fcecbfbb3d5133eb2bed9377f653ebe1cc8608c
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096791"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336104"
 ---
-# <a name="delete-a-directory-setting"></a>Удаление параметра каталога
+# <a name="delete-directorysetting"></a>Удаление directorySetting
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление параметра каталога.
-
-> **Примечание.** Бета-версия этого API применяется только к группам. Версия /v1.0 этого API переименована в *Delete groupSettings.*
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,22 +27,27 @@ ms.locfileid: "62096791"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
-Удаление определенного параметра для клиента или группы
+Удаление параметра для всех клиентов.
 ```http
-DELETE /settings/{id}
-DELETE /groups/{id}/settings/{id}
-
+DELETE /settings/{directorySettingId}
 ```
+
+<!-- { "blockType": "ignored" } -->
+Удаление параметра, определенного для группы.
+```http
+DELETE /groups/{groupId}/settings/{directorySettingId}
+```
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -52,7 +55,7 @@ DELETE /groups/{id}/settings/{id}
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -60,8 +63,8 @@ DELETE /groups/{id}/settings/{id}
   "blockType": "request",
   "name": "delete_directorysetting"
 }-->
-```http
-DELETE https://graph.microsoft.com/beta/settings/{id}
+```msgraph-interactive
+DELETE https://graph.microsoft.com/beta/settings/3c105fc3-2254-4861-9e2d-d59e2126f3ef
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directorysetting-csharp-snippets.md)]
@@ -89,7 +92,7 @@ DELETE https://graph.microsoft.com/beta/settings/{id}
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": true

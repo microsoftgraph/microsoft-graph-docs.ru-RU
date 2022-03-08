@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 09ae4b8fc02c1a1f13a91102241b119727e8bed2
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 8e3b687e3856ae8d7805bf4b74724c70380359a9
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62289932"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336006"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>тип ресурса educationSynchronizationProfile
 
@@ -18,7 +18,7 @@ ms.locfileid: "62289932"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет набор конфигураций, используемых для синхронизации сущностями образования и сведениями реестра из источника каталога в Azure Active Directory (Azure AD). Этот ресурс предоставляет программное представление, используемого в [Синхронизация сведений о школе](https://sds.microsoft.com).
+Представляет набор конфигураций, используемых для синхронизации сущностями образования и сведениями реестра из источника каталога в Azure Active Directory (Azure AD). Этот ресурс предоставляет программное представление, используемого [в Синхронизация сведений о школе](https://sds.microsoft.com).
 
 ## <a name="methods"></a>Методы
 
@@ -41,11 +41,11 @@ ms.locfileid: "62289932"
 | Свойство                             | Тип                                                   | Описание                                                                                                                       |
 | :----------------------------------- | :----------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
 | id                                   | String                                                 | Уникальный идентификатор ресурса. (только для чтения)                                                                               |
-| displayName                          | String                                                 | Имя профиля конфигурации для синхронизации удостоверений.                                                                         |
+| displayName                          | Строка                                                 | Имя профиля конфигурации для синхронизации удостоверений.                                                                         |
 | dataProvider                         | [educationSynchronizationDataProvider]                 | Поставщик данных, используемый для профиля.                                                                                           |
-| expirationDate                       | Date                                                   | Дата, когда профиль должен считаться истекшим, и прекратить синхронизацию. Когда `null`. срок действия профиля никогда не истекает. (необязательный)       |
+| expirationDate                       | Дата                                                   | Дата, когда профиль должен считаться истекшим, и прекратить синхронизацию. Укай дату в `YYYY-MM-DD` формате, [следуя isO 8601](https://www.iso.org/iso-8601-date-and-time-format.html). Максимальное значение — 18 месяцев с момента создания профиля.  (необязательный)       |
 | handleSpecialCharacterConstraint     | Логический                                                   | Определяет, следует ли Синхронизация сведений о школе автоматически заменить неподтверченные специальные символы при синхронизации из источника.             |
-| identitySynchronizationConfiguration | [educationIdentitySynchronizationConfiguration]        | Определяет, как профиль должен [создавать новые или][fullsync] [соответствовать существующим AAD][dirsync] пользователям.                                  |
+| identitySynchronizationConfiguration | [educationIdentitySynchronizationConfiguration]        | Определяет, как профиль должен [создавать новые или][fullsync] соответствовать существующим [AAD][dirsync] пользователям.                                  |
 | licensesToAssign                     | [коллекция educationSynchronizationLicenseAssignment] | Конфигурация настройки лицензии.                                                                                                      |
 | state                                | educationSynchronizationProfileState                   | Состояние профиля. Возможные значения: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`. |
 

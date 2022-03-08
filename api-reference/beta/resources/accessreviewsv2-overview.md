@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 39c908982adb576a72c1683bcf176dd566b30ae2
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 580d1299503924486dab1be11c33e8f771592baa
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805111"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336062"
 ---
 # <a name="azure-ad-access-reviews"></a>Проверки доступа Azure AD
 
@@ -28,7 +28,7 @@ ms.locfileid: "62805111"
 - Клиенты могут просмотреть и сертифицировать доступ сотрудников к ресурсам Azure AD.
 - Клиенты могут проверять и проверять назначения в привилегированные роли Azure AD. Это поддерживает организации в управлении привилегированным доступом.
 
-Обратите внимание, что функция обзоров доступа, включая API, включена в Azure AD Premium P2.  Клиент, на котором создается обзор доступа, должен иметь допустимую подписку на Azure AD Premium P2 или EMS E5.
+Обратите внимание, что функция обзоров доступа, включая API, включена в Azure AD Premium P2.  Клиент, на котором создается обзор доступа, должен иметь допустимую приобретенную или пробную Azure AD Premium P2 или подписку EMS E5. Дополнительные сведения о требованиях к лицензиям см. в обзоре [требований к лицензии Access](/azure/active-directory/governance/access-reviews-overview#license-requirements).
 
 
 ## <a name="methods"></a>Методы

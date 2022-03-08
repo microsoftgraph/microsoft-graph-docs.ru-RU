@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 963a4194b66bf901c5e724df097957272a64e2de
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: f25bf0db69ab9e414b99ff8f4d6f8351dc6cdfc1
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201752"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335425"
 ---
 # <a name="rbacapplicationmultiple-resource-type"></a>Тип ресурса rbacApplicationMultiple
 
@@ -18,13 +18,13 @@ ms.locfileid: "62201752"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Контейнер управления ролью для унифицированных определений ролей и назначений ролей для Microsoft 365 поставщиков RBAC, которые поддерживают несколько принципов и несколько областей в одном назначении ролей. Это отличается от типа [ресурса rbacApplication.](rbacapplication.md)
+Контейнер управления ролью для унифицированных определений ролей и назначений ролей для Microsoft 365 поставщиков RBAC, которые поддерживают несколько принципов и несколько областей в одном назначении ролей. Это отличается от типа [ресурса rbacApplication](rbacapplication.md) .
 
-Облачные пк и Microsoft Intune являются примерами таких поставщиков RBAC. Назначение ролей в этих поставщиках может иметь массив принципов и массив групп областей.
+Облачный компьютер и Microsoft Intune являются примерами таких поставщиков RBAC. Назначение ролей в этих поставщиках может иметь массив принципов и массив групп областей.
 
-Для определений ролей поставщик облачных ПК в настоящее время поддерживает [операцию](../api/rbacapplication-list-roledefinitions.md) списка, но не [создание](../api/rbacapplication-post-roledefinitions.md).
+Для определений ролей поставщик облачных ПК в настоящее время [поддерживает операцию списка](../api/rbacapplication-list-roledefinitions.md) , но не [создание](../api/rbacapplication-post-roledefinitions.md).
 
-Наследует от [объекта](entity.md).
+Наследуется [от сущности](entity.md).
 
 ## <a name="methods"></a>Методы
 
@@ -43,6 +43,7 @@ ms.locfileid: "62201752"
 
 |Связь|Тип|Описание|
 |:---|:---|:---|
+|resourceNamespaces|[коллекция unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md)|Ресурс, представляючий коллекцию связанных действий.|
 |roleAssignments|[коллекция unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md)| Ресурс для предоставления доступа пользователям или группам. |
 |roleDefinitions|[коллекция unifiedRoleDefinition](../resources/unifiedroledefinition.md)| Ресурс, представляющий роли, разрешенные поставщиками RBAC, и разрешения, присвоенные ролям. |
 

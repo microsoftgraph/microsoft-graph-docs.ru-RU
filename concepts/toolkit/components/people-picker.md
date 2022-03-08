@@ -3,12 +3,12 @@ title: Компонент "Выбор людей"
 description: Веб-компонент mgt-people-picker можно использовать для поиска указанного количества людей и отображать список результатов с помощью Microsoft Graph.
 ms.localizationpriority: medium
 author: elisenyang
-ms.openlocfilehash: 3646640ca9960d49e862d4791ddab3530e12e3a9
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 110a28d5c9309d95591e210441784a63208fa02f
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694787"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335369"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент "Выбор людей" в Microsoft Graph Toolkit
 
@@ -32,16 +32,21 @@ ms.locfileid: "60694787"
 | group-id    | groupId     | Значение строки, принадлежащее определенной группе Microsoft Graph для дальнейшей фильтрации результатов поиска.                                                                            |
 | transitive-search     | transitiveSearch      | Логическое значение для выполнения транзитивного поиска, возвращающего плоский список всех вложенных элементов. По умолчанию транзитивный поиск не используется.|
 | type     | type      | Тип объектов, которые необходимо найти. Доступные варианты — `person`, `group`, `any`. Значение по умолчанию — `person`. Этот атрибут не оказывает влияния, если задано свойство `group-id`.         
-| тип пользователя     | userType      | Тип пользователя, для поиска. Доступные параметры: `any` для пользователей организации или для `user` `contact` контактов. Значение по умолчанию — `any`. |
+| тип пользователя     | userType      | Тип пользователя, для поиска. Доступные параметры: `any`для `user` пользователей организации или `contact` для контактов. Значение по умолчанию — `any`. |
 | group-type     | groupType      | Тип группы, которую необходимо найти. Доступные варианты — `unified`, `security`, `mailenabledsecurity`, `distribution`, `any`. Значение по умолчанию — `any`. Этот атрибут не оказывает влияния, если для свойства `type` задано значение `person`.  |
 | selected-people  | selectedPeople     | Массив выбранных людей. Установите это значение, чтобы выбрать людей программным образом.|
 | people   | people    | Массив людей, найденных и отображенных в результатах поиска. |
 | placeholder   | placeholder    | Текст по умолчанию, который объясняет, как использовать компонент. Значение по умолчанию — `Start typing a name`.
 | default-selected-user-ids | defaultSelectedUserIds | При предоставлении строки разделенных запятой ИД пользователей Microsoft Graph, компонент отображает соответствующих пользователей как выбранных после инициализации.
-| по умолчанию выбранные группы-ids | defaultSelectedGroupIds | Как и в случае с ids, выбранными по умолчанию, при выделении строки разделенных запятой ID microsoft Graph, компонент предоставляет соответствующие группы, выбранные после инициализации.
+| по умолчанию выбранные группы-ids | defaultSelectedGroupIds | Как и в случае с ids, выбранными по умолчанию, когда предоставляется строка разделенных запятой ID microsoft Graph группы, компонент предоставляет соответствующие группы, выбранные при инициализации.
 | selection-mode | selectionMode | Используется, чтобы указать следует ли разрешить выбирать несколько элементов (пользователей или групп) или только один элемент. Доступные варианты — `single`, `multiple`. Значение по умолчанию — `multiple`.
 | отключено | отключено | Задает отключение выборщика людей. При отключении пользователь не может искать или выбирать людей.
-| allow-any-email | allowAnyEmail | Указывает, может ли выборщик людей принимать адреса электронной почты без выбора человека. Значение по умолчанию — `false`. Когда вы закончите вводить адрес электронной почты, вы можете нажать запятую (), запятую (), вкладку или ввести `,` `;` клавиши, чтобы добавить его.
+| отключение изображений | disableImages | Задает, следует ли отключить извлечение и отображение изображений человека. Вместо этого отображаются `true`инициалы пользователей.
+| allow-any-email | allowAnyEmail | Указывает, может ли выборщик людей принимать адреса электронной почты без выбора человека. Значение по умолчанию — `false`. Когда вы закончите вводить адрес электронной почты, вы можете нажать запятую (), запятую (`,`), вкладку или`;` ввести клавиши, чтобы добавить его.
+| user-ids | userIds | Строка разделенных запятой пользовательских ИД. Они будут отображаться только в выпадаемом меню или результатах поиска при введите запрос. Например, `48d31887-5fad-4d73-a9f5-3c356e68a038,24fcbca3-c3e2-48bf-9ffc-c7f81b81483d` отображаются два пользователя в отсеве только при фокусе ввода. При введите текст поиска, он будет возвращать результаты, которые совпадают с пользователями только в двух пользовательских IDs.
+| фильтры пользователей | userFilters | Указывает критерии фильтра, которые необходимо использовать при запросе конечной точки пользователей. Для этого необходимо установить `user-type` `user` `contact`или . По умолчанию это `user-type` и `any` есть приводит к тому, что запросы будут проходить в блоке `people` конечной точки. Пример: `user-filters="startsWith(displayName,'a')"`. Этот атрибут является необязательным. Дополнительные данные [о поддержке фильтрации свойств пользователей объектов каталога Azure AD](/graph/aad-advanced-queries?tabs=http#user-properties).
+| групповые фильтры | groupFilters | Указывает критерии фильтра, которые необходимо использовать при запросе конечной `groups` точки. Для этого необходимо установить`type`.`group` Пример: `group-filters="startsWith(displayName,'a')"`. Этот атрибут является необязательным.
+| people-filters | peopleFilters | Указывает критерии фильтра, которые необходимо использовать при запросе конечной `people` точки. Он используется как есть. Пример: `people-filters="jobTitle eq 'Web Marketing Manager'"`. Этот атрибут является необязательным. Узнайте больше о [фильтрации и поддерживаемых возможностях на ресурсе people](/graph/people-example).
 
 Ниже приведен пример `show-max`.
 
@@ -73,7 +78,7 @@ ms.locfileid: "60694787"
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
     ```
 
-- С помощью метода, который принимает массив ids группы microsoft graph, чтобы найти группу `selectGroupsById()` (ы) с связанными пользователями. [](/graph/api/resources/group)
+- С помощью `selectGroupsById()` метода, который принимает массив [ids](/graph/api/resources/group) группы microsoft graph, чтобы найти группу (ы) с связанными пользователями.
 
     ```javascript
     // groupid = Microsoft graph group "id"
@@ -86,9 +91,9 @@ ms.locfileid: "60694787"
 
 Событие | Когда он излучается | Настраиваемые данные | Отмена | Пузыри | Работает с настраиваемой шаблонной
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`selectionChanged` | Пользователь добавил или удалил человека из списка выбранных или выбранных людей | Массив выбранных людей, где человек может быть Graph [пользователем,](/graph/api/resources/user) [](/graph/api/resources/person) лицом или контактом с дополнительным свойством, содержаным URL-адрес фотографии [](/graph/api/resources/contact) `personImage` пользователя | Нет | Нет | Да, если не переопределить шаблон по умолчанию
+`selectionChanged` | Пользователь добавил или удалил человека из списка выбранных или выбранных людей | Массив выбранных людей, где человек может быть [Graph пользователем](/graph/api/resources/user)[](/graph/api/resources/contact)[,](/graph/api/resources/person) `personImage` лицом или контактом с дополнительным свойством, содержаным URL-адрес фотографии пользователя | Нет | Нет | Да, если не переопределить шаблон по умолчанию
 
-Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
+Дополнительные сведения об обработке событий см. в [этой информации](../customize-components/events.md).
 
 ## <a name="css-custom-properties"></a>Настраиваемые свойства CSS
 
@@ -149,10 +154,10 @@ mgt-people-picker {
 | Конфигурация | Разрешение | API
 | --- | ---------- | ------- |
 | `group-id` set | People.Read, User.Read.All, GroupMember.Read.All | [/groups/\${groupId}/members](/graph/api/group-list-members) |
-| `type` установлено `Person` или `any` | People.Read | [/me/people](/graph/api/user-list-people) |
-| `type`настройка или `Group` поиск пользователей и настройка `type` или `Group``any` | Group.Read.All | [/groups](/graph/api/group-list) |
+| `type`установлено или `Person``any` | People.Read | [/me/people](/graph/api/user-list-people) |
+| `type`настройка или `Group` поиск пользователей и `type` настройка или `Group``any` | Group.Read.All | [/groups](/graph/api/group-list) |
 | `default-selected-user-ids` set | User.ReadBasic.All | [/users](/graph/api/user-list) |
-| поиск пользователей и `type` настройка `Person` или `any` | People.Read, User.ReadBasic.All | [/me/people](/graph/api/user-list-people), [/users](/graph/api/user-list) |
+| поиск пользователей и `type` настройка или `Person``any` | People.Read, User.ReadBasic.All | [/me/people](/graph/api/user-list-people), [/users](/graph/api/user-list) |
 
 ## <a name="authentication"></a>Проверка подлинности
 
@@ -160,13 +165,13 @@ mgt-people-picker {
 
 ## <a name="cache"></a>Кэш
 
-|Хранилище объектов|Кэшные данные|Примечания|
+|Хранилище объектов|Кэшные данные|Замечания|
 |---------|-----------|-------|
 |`groups`|Список групп|Используется, `type` когда установлено `PersonType.group`|
-|`people`|List of people|Используется, `type` когда установлено `PersonType.person` или `PersonType.any`|
-|`users`|Список пользователей|Используется при `groupId` указании|
+|`people`|List of people|Используется, `type` когда установлено или `PersonType.person``PersonType.any`|
+|`users`|Список пользователей|Используется при указании `groupId`|
 
-Дополнительные сведения о настройке кэша см. в [caching.](../customize-components/cache.md)
+Дополнительные сведения о настройке кэша см. в [caching](../customize-components/cache.md) .
 
 ## <a name="extend-for-more-control"></a>Расширение для дополнительного управления
 

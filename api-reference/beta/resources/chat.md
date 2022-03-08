@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3b9c3d04db7a7d03a0f5d7f3926383e1af429a9b
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: 62ceb8079a9e5fb9f59c3d69d1d4148b9178f942
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61545324"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335285"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса чата
 
@@ -20,7 +20,7 @@ ms.locfileid: "61545324"
 
 Чат — это коллекция [chatMessages](chatmessage.md) между одним или более участниками. Участниками могут быть пользователи или приложения.
 
-> **Примечание.** Если чат связан с экземпляром [onlineMeeting,](../resources/onlinemeeting.md) то некоторые из перечисленных методов будут транзитно влиять на собрание.
+> **Примечание**. Если чат связан с экземпляром [onlineMeeting](../resources/onlinemeeting.md) , то некоторые из перечисленных методов будут транзитно влиять на собрание.
 
 ## <a name="methods"></a>Методы
 
@@ -69,7 +69,7 @@ ms.locfileid: "61545324"
 |:---------------|:--------|:----------|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Указывает тип чата. Возможные значения: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
 | createdDateTime| dateTimeOffset|  Дата и время создания чата. Только для чтения.|
-| id| Строка| Уникальный идентификатор чата. Только для чтения.|
+| id| String| Уникальный идентификатор чата. Только для чтения.|
 | lastUpdatedDateTime| dateTimeOffset|  Дата и время переименования чата или списка участников были изменены в последний раз. Только для чтения.|
 | onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Представляет сведения о собрании в Интернете. Если чат не связан с собранием в Интернете, свойство пусто. Только для чтения.|
 | tenantId| String | Идентификатор клиента, в котором был создан чат. Только для чтения.|
@@ -97,6 +97,7 @@ ms.locfileid: "61545324"
 | permissionGrants| Коллекция [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)| Коллекция разрешений, предоставленных приложениям для чата.|
 | operations | Коллекция [teamsAsyncOperation](teamsasyncoperation.md) | Коллекция всех операций Teams async, которые запускались или запускались в чате. Допускается значение null. 
 | lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| Предварительный просмотр последнего сообщения, отправленного в чате. Null, если сообщения не были отправлены в чате. В настоящее время [только операция чатов](../api/chat-list.md) списка поддерживает это свойство.|
+| tabs | Коллекция [teamsTab](teamstab.md) | Коллекция всех вкладок в чате. Допускается значение null. |
 
 ## <a name="json-representation"></a>Представление JSON
 

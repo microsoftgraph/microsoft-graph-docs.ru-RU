@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 34ac23f83984aa685a0cca4699042bd0051ea574
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b16ea1571cc59831cb4736429a6fe6286fa64ff7
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109237"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335488"
 ---
 # <a name="update-cloudpcusersetting"></a>Обновление cloudPcUserSetting
 
@@ -18,7 +18,7 @@ ms.locfileid: "62109237"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [cloudPcUserSetting.](../resources/cloudpcusersetting.md)
+Обновление свойств объекта [cloudPcUserSetting](../resources/cloudpcusersetting.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "62109237"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.ReadWrite.All|
+|Для приложений|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,22 +50,23 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В корпусе запроса поставляем представление JSON объекта [cloudPcUserSetting.](../resources/cloudpcusersetting.md)
+В корпусе запроса поставляем представление JSON объекта [cloudPcUserSetting](../resources/cloudpcusersetting.md) .
 
-В следующей таблице показаны свойства, необходимые при обновлении [cloudPcUserSetting.](../resources/cloudpcusersetting.md)
+В следующей таблице показаны свойства, необходимые при обновлении [cloudPcUserSetting](../resources/cloudpcusersetting.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Имя параметра, отображаемая в пользовательском интерфейсе.|
-|localAdminEnabled|Логический|Чтобы включить локальный параметр администрирования, измените этот параметр на `True` .  |
-|selfServiceEnabled|Логический|Чтобы включить параметр самообслуживки, измените этот параметр на `True` . |
+|localAdminEnabled|Boolean|Чтобы включить локальный параметр администрирования, измените этот параметр на `True`.  |
+|selfServiceEnabled|Boolean|Чтобы включить параметр самообслуживки, измените этот параметр на `True`. |
+|restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Определяет, как часто создается точка восстановления (то есть создается снимок) для пользовательских облачных ПК (по умолчанию — 12 часов), и разрешено ли пользователю восстанавливать собственные облачные КОМПЬЮТЕРы в резервной копии, выполненной в определенный момент времени.|
 |lastModifiedDateTime|DateTimeOffset|Последняя дата и время изменения параметра. Тип Timestamp представляет сведения о дате и времени с помощью формата ISO 8601 и всегда находится во времени UTC. Например, полночь UTC 1 января 2014 г. выглядит так: '2014-01-01T00:00:00Z'. |
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект cloudPcUserSetting](../resources/cloudpcusersetting.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и обновленный [объект cloudPcUserSetting](../resources/cloudpcusersetting.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -85,6 +86,10 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.cloudPcUserSetting",
   "displayName": "Example",
   "selfServiceEnabled": true,
+  "restorePointSetting": {
+    "frequencyInHours": "16",
+    "userRestoreEnabled": true
+  },
   "localAdminEnabled": false
 }
 ```

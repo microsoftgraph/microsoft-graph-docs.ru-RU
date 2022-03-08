@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: conceptualPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 33742bc9970f8e0758fe4ef5269974629c1ccd73
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 9812aeca1d2a8a057389aaec5183b42032b64674
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424443"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335964"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
@@ -31,16 +31,16 @@ REST API Microsoft Graph использует механизм веб-перех
 | [group][] | Изменения во всех группах:<br>`/groups` <br>Изменения в конкретной группе:<br>`/groups/{id}`<br>Изменения для владельцев конкретной группы:<br>`/groups/{id}/owners`<br>Изменения для участников конкретной группы:<br>`/groups/{id}/members` | Нет |
 | [список][] на [сайте][] SharePoint | `/sites/{id}/lists/{id}` | Нет |
 | [Беседа][] группы Microsoft 365  | Изменения в разговорах группы:<br>`groups/{id}/conversations` | Нет |
-| [Событие][] Outlook | Изменения всех событий в почтовом ящике пользователя:<br>`/users/{id}/events` | Нет |
-| [Сообщение][] Outlook | Изменения во всех сообщениях в почтовом ящике пользователя: <br>`/users/{id}/messages`<br>Изменения в сообщениях в папке «Входящие» пользователя:<br>`/users/{id}/mailFolders('inbox')/messages` | Нет |
-| Личный [контакт][] Outlook | Изменения всех личных контактов в почтовом ящике пользователя:<br>`/users/{id}/contacts` | Нет |
+| [Событие][] Outlook | Изменения всех событий в почтовом ящике пользователя:<br>`/users/{id}/events` | Да |
+| [Сообщение][] Outlook | Изменения во всех сообщениях в почтовом ящике пользователя: <br>`/users/{id}/messages`<br>Изменения в сообщениях в папке «Входящие» пользователя:<br>`/users/{id}/mailFolders('inbox')/messages` | Да |
+| Личный [контакт][] Outlook | Изменения всех личных контактов в почтовом ящике пользователя:<br>`/users/{id}/contacts` | Да |
 | [Оповещение][] безопасности | Изменения в конкретном предупреждении:<br>`/security/alerts/{id}` <br>Изменения в отфильтрованных оповещениях:<br> `/security/alerts/?$filter`| Нет |
 | [callRecord][] в Teams | Изменения во _всех_ записях звонков: `/communications/callRecords` | Нет |
 | [Канал][] Teams  | Изменения каналов во всех командах:<br>`/teams/getAllChannels` <br>Изменения канала в определенной группе:<br>`/teams/{id}/channels` | Да |
 | [Чат][] Teams | Изменения в любом чате в клиенте:<br>`/chats` <br>Изменения в определенном чате:<br>`/chats/{id}` | Да |
 | [chatMessage][] Teams | Изменения в сообщениях чата во всех каналах во всех командах:<br>`/teams/getAllMessages` <br>Изменения в сообщениях чата на определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех чатах:<br>`/chats/getAllMessages` <br>Изменения в сообщениях чата в конкретном чате:<br>`/chats/{id}/messages`<br>Изменения в сообщениях чатов во всех чатах определенного пользователя являются частью:<br>`/users/{id}/chats/getAllMessages` | Да |
 | [conversationMember][] в Teams | Изменения членства в определенной команде:<br>`/teams/{id}/members` <br> Изменения членства в определенном чате:<br>`/chats/{id}/members` <br> Изменения членства во всех чатах:<br>`/chats/getAllMembers` <br> Изменения членства во всех каналах в рамках определенной группы:<br>`teams/{id}/channels/getAllMembers` | Да |
-| Teams [присутствия][] | Изменения в присутствии одного пользователя: `/communications/presences/{id}` <br> Изменения нескольких присутствий пользователей:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Да |
+| [presence][] в Teams | Изменения в присутствии одного пользователя: `/communications/presences/{id}` <br> Изменения нескольких присутствий пользователей:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Да |
 | [Команда][] Teams | Изменения для любой команды в клиенте:<br>`/teams` <br>Изменения в определенной группе:<br>`/teams/{id}` | Да |
 | [baseTask][] | Изменения всех задач в определенном списке задач:<br>`/me/tasks/lists/{baseTaskListId}/tasks`<br>Изменения во всех задачах:<br>`/me/tasks/lists/alltasks` | Нет |
 | [user][] | Изменения для всех пользователей:<br>`/users` <br>Изменения для конкретного пользователя:<br>`/users/{id}`| Нет |
@@ -54,9 +54,9 @@ REST API Microsoft Graph использует механизм веб-перех
 
 | Тип разрешения                        | Поддерживаемые типы ресурсов                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Делегированное — рабочая или учебная учетная запись     | [оповещения][], [канал][], [чат][], контакт , беседа , [conversationMember][], [][] [driveItem][] [,][]список [,][]событие , группа , сообщение , пользователь [,][]присутствие , [][] [chatMessage][] (предварительный просмотр), [команда][], [baseTask][] [][] [][] [][] |
-| Делегированное — личная учетная запись Майкрософт | [контакт][], [driveItem][], [список][], [событие][], [сообщение][], [baseTask][]                                     |
-| Application                            | [оповещения][] [,][]канал , [чат][], контакт , [][] [driveItem][] [,][]список , событие , группа , сообщение , пользователь [,][] [callRecord][], [chatMessage][], [conversationMember][], [принтер][], [printTaskDefinition][], [команда][] [][] [][] [][] |
+| Делегированное — рабочая или учебная учетная запись     | [оповещение][], [канал,][] [чат][][, контакт][][,][] беседа, [conversationMember][], [driveItem][], [список][], [событие][], [группа, сообщение][][, пользователь][][, присутствие][][,][] [chatMessage][] (предварительный просмотр), [команда][], [baseTask][] |
+| Делегированное — личная учетная запись Майкрософт | [contact][], [driveItem][], [list][], [event][], [message][], [baseTask][]                                     |
+| Для приложений                            | [оповещение][], канал, [чат][][, контакт][], [driveItem][][, список][][, событие][][, группа][][, сообщение][], [пользователь,][] [callRecord][], [chatMessage, conversationMember][], [принтер][], [printTaskDefinition][], [команда][] [][][][] |
 
 ## <a name="see-also"></a>См. также
 

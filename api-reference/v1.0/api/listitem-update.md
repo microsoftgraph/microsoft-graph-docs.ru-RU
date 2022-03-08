@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: Обновление ресурса listItem
-description: Изменение свойств ресурса **[listItem][]**.
+description: Изменение свойств ресурса listItem.
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 4e194fc3b9a764fabe25afbfcfe4ad5008a64ba7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 518c070ff9d29afeb55ce027b7f66ce8e725aa8d
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132502"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335257"
 ---
 # <a name="update-listitem"></a>Обновление ресурса listItem
 

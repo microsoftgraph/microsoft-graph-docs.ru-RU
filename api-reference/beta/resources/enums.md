@@ -5,16 +5,58 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 480689881eb5b806cd5e2fa734068da013c86966
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: 3ddafab129251829d797d8de943b76182a6d5418
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894798"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335418"
 ---
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
+
+### <a name="accesspackagecustomextensionhandlerstatus-values"></a>accessPackageCustomExtensionHandlerStatus 
+
+|Member|
+|:---|
+|requestSent|
+|requestReceived|
+|unknownFutureValue|
+
+### <a name="accesspackagecustomextensionstage-values"></a>значения accessPackageCustomExtensionStage 
+
+|Member|
+|:---|
+|assignmentRequestCreated|
+|assignmentRequestApproved|
+|assignmentRequestGranted|
+|assignmentRequestRemoved|
+|assignmentFourteenDaysBeforeExpiration|
+|assignmentOneDayBeforeExpiration|
+|unknownFutureValue|
+
+### <a name="accessreviewhistorystatus-values"></a>значения accessReviewHistoryStatus
+
+| Member|
+|:-----------------|
+|done|
+|inprogress|
+|error|
+|запрашивается|
+|unknownFutureValue|
+
+### <a name="accessreviewhistorydecisionfilter-values"></a>accessReviewHistoryDecisionFilter values
+
+| Member|
+|:-----------------|
+|утверждение|
+|запретить|
+|notReviewed|
+|dontKnow|
+|notNotified|
+|unknownFutureValue|
+
 
 ### <a name="accessreviewhistorystatus-values"></a>значения accessReviewHistoryStatus
 
@@ -104,7 +146,7 @@ ms.locfileid: "62894798"
 | Элемент             | Значение | Описание |
 |:-------------------|:------| :------|
 | notRequired        | 0     | Для завершения регистрации устройства пользователю не требуется многофакторная проверка подлинности.|
-| Обязательный           | 1     | Для завершения регистрации устройства пользователю требуется многофакторная проверка подлинности.|
+| обязательно           | 1     | Для завершения регистрации устройства пользователю требуется многофакторная проверка подлинности.|
 | unknownFutureValue | 2     | Эволюционирующее значение sentinel. Не следует использовать.|
 
 ### <a name="policyscope-values"></a>значения policyScope
@@ -118,13 +160,14 @@ ms.locfileid: "62894798"
 
 ### <a name="appcredentialrestrictiontype-values"></a>значения appCredentialRestrictionType
 
-|Member|
-|:-----|
-|passwordAddition|
-|passwordLifetime|
-|symmetricKeyAddition|
-|symmetricKeyLifetime|
-|unknownFutureValue|
+| Member                 |
+| :--------------------- |
+| passwordAddition       |
+| passwordLifetime       |
+| symmetricKeyAddition   |
+| symmetricKeyLifetime   |
+| customPasswordAddition |
+| unknownFutureValue     |
 
 ### <a name="appkeycredentialrestrictiontype-values"></a>значения appKeyCredentialRestrictionType
 
@@ -682,7 +725,7 @@ ms.locfileid: "62894798"
 
 |Member|
 |:---|
-|userPrincipalName.|
+|userPrincipalName|
 |phoneNumber|
 |proxyAddress|
 |qrCode|
@@ -799,7 +842,7 @@ ms.locfileid: "62894798"
 
 |Member|
 |:---|
-|обязательно|
+|Обязательный|
 |previouslySatisfied|
 |notApplicable|
 |unknownFutureValue|
@@ -1241,7 +1284,7 @@ ms.locfileid: "62894798"
 
 | Member
 |:-------------------------
-| Обязательный
+| обязательно
 | необязательный
 | resource
 
@@ -1749,15 +1792,15 @@ Enum для типов значений реестра, определенных
 | unknown           | 0     | Неизвестный тип значения реестра.                 |
 | двоичный            | 1     | REG_BINARY типа значения реестра.              |
 | dword             | 2     | REG_DWORD типа значения реестра.               |
-| dwordLittleEndian | 3     | REG_DWORD_LITTLE_ENDIAN типа значения реестра. |
+| dwordLittleEndian | 3     | REG_DWORD_LITTLE_ENDIAN тип значения реестра. |
 | dwordBigEndian    | 4     | REG_DWORD_BIG_ENDIAN тип значения реестра.    |
-| expandSz          | 5     | REG_EXPAND_SZ тип значения реестра.           |
+| expandSz          | 5     | REG_EXPAND_SZ типа значения реестра.           |
 | ссылка              | 6      | REG_LINK тип значения реестра.                |
 | multiSz           | 7      | REG_MULTI_SZ тип значения реестра.            |
-| Нет              | 8      | REG_NONE тип значения реестра.                |
+| Нет              | 8      | REG_NONE типа значения реестра.                |
 | qword             | 9      | REG_QWORD тип значения реестра.               |
-| qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN типа значения реестра. |
-| sz                | 11    | REG_SZ тип значения реестра.                  |
+| qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN типа реестра. |
+| sz                | 11    | REG_SZ типа значения реестра.                  |
 
 ### <a name="alertseverity-values"></a>значения alertSeverity
 
@@ -2368,7 +2411,7 @@ Enum для серьезности оповещений.
 |:----------------------|:------|:-------------------------------------------------------------------|
 | builtIn               | 1     | Этот тип атрибута потока пользователей обозначает, что он был создан системой |
 | настраиваемый                | 2     | Этот тип атрибута потока пользователей обозначает, что он был создан пользователем   |
-|Обязательный|3||
+|обязательно|3||
 | unknownFutureValue    | 4     | Член-часовой.                                                 |
 
 ### <a name="permissionclassificationtype-values"></a>значения permissionClassificationType
@@ -2458,7 +2501,7 @@ Enum для серьезности оповещений.
 
 |Элемент    |Значение    |Описание |
 |:---------|:--------|:----------- |
-|team      |0        |Указывает, что Teams приложение может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
+|team      |0        |Указывает, что Teams может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
 |groupChat |1        |Указывает, что Teams приложение может быть установлено в групповом чате и уполномочено получать доступ к данным группового чата.|
 |personal  |2        |Указывает, что Teams приложение может быть установлено в личной области пользователя и уполномочено получать доступ к данным этого пользователя.|
 
@@ -2632,7 +2675,7 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |team|
-|канал|
+|channel|
 |чат|
 |unknownFutureValue|
 

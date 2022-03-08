@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: bec57a52a6c12f6228539592ee7559047b7f0ba5
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 4af8059856172ab15a44e20aa1b8dbc5374c195e
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62290877"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336349"
 ---
 # <a name="usersettings-resource-type"></a>Тип ресурса userSettings
 
@@ -18,7 +18,20 @@ ms.locfileid: "62290877"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Параметры, которые представляют предпочтения пользователя для регионального языка и [языка, для](../resources/regionalandlanguagesettings.md) планирования [смены,](../resources/shiftpreferences.md) для Delve и для [элементов.](../resources/officegraphinsights.md)
+Параметры, которые представляют предпочтения пользователя для следующих:
+- Доступ к Delve
+- [Сведения о элементах](../resources/officegraphinsights.md)
+- [Региональный язык и языки](../resources/regionalandlanguagesettings.md)
+- [Планирование переноса](../resources/shiftpreferences.md)
+- [Предложения по объединению дублирующих контактов](../resources/contactmergesuggestions.md).
+
+Управление Delve доступности:
+  - Проверка того, есть ли у пользователя и организации пользователя доступ к Office Delve.
+  - Отключение или включение документов в Office Delve для определенных пользователей. 
+
+Настройка видимости [itemInsights и](../resources/iteminsights.md) [собраний](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1). ItemInsights являются производными между пользователями и другими элементами (например, документами или сайтами) в Microsoft 365:
+  - Проверка включения элементов и часов собраний пользователя.
+  - Отключение или включение данных о элементах и часах собраний для конкретного пользователя.
 
 Управление предпочтениями на основе локального пользователя: 
   - Определение языка и регионального форматирования, с помощью чего пользователь предпочитает просматривать приложения.
@@ -28,18 +41,14 @@ ms.locfileid: "62290877"
   - Проверка того, можно ли пользователю назначены изменения в расписании.
   - Обновление личных предпочтений пользователя.
   
-Управление Delve доступностью:
-  - Проверка доступа пользователя и организации пользователя к Office Delve.
-  - Отключение или включение документов в Office Delve для определенных пользователей. 
-
-Настройка видимости [itemInsights и](../resources/iteminsights.md) [собраний](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1). ItemInsights являются производными между пользователями и другими элементами (например, документами или сайтами) в Microsoft 365:
-  - Проверка включения элементов и часов собраний пользователя.
-  - Отключение или включение данных о элементах и часах собраний для конкретного пользователя.
+Настройка [contactMergeSuggestions](../resources/contactmergesuggestions.md):
+  - Определение того, включено ли предложение об объединении дублирующих контактов для пользователя.
+  - Отключение или включение предложения об объединении дублирующих контактов для пользователя.
 
 Сведения о получении и обновлении параметров пользователя см. в статьях [Получение параметров](../api/usersettings-get.md) и [Обновление параметров](../api/usersettings-update.md).
 
 > [!NOTE]
-> Эта конечная точка работает только с пользователями. Вы не можете использовать эту конечную точку с контактами.
+> Эта конечная точка работает только с [пользовательским ресурсом](user.md) . 
 
 ## <a name="methods"></a>Методы
 | Метод       | Возвращаемый тип  |Описание|
@@ -58,9 +67,12 @@ ms.locfileid: "62290877"
 
 | Связь | Тип | Описание |
 |:---------------|:--------|:----------|
-|shiftPreferences|[shiftPreferences](shiftpreferences.md)| Параметры переноса для пользователя. |
-|regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| Предпочтения пользователя для языков, регионального языка и форматирования даты и времени. |
+|contactMergeSuggestions|[contactMergeSuggestions](contactmergesuggestions.md)| Параметры пользователя для видимости предложения слияния для дублирующихся контактов в списке контактов пользователя.|
 |itemInsights|[userInsightsSettings](userinsightssettings.md)| Параметры пользователя для видимости информации о часах собраний и сведения, полученные между пользователем и другими элементами в Microsoft 365, например документами или сайтами. [Получите userInsightsSettings через](../api/userinsightssettings-get.md) это свойство навигации. |
+|regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| Предпочтения пользователя для языков, регионального языка и форматирования даты и времени. |
+|shiftPreferences|[shiftPreferences](shiftpreferences.md)| Параметры переноса для пользователя. |
+
+
 
 ## <a name="json-representation"></a>Представление JSON
 

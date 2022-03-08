@@ -1,16 +1,16 @@
 ---
 title: тип ресурса shiftActivity
 description: Представляет действие в сдвиге.
-author: nkramer
-localization_priority: Normal
+author: aaku
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: de42cb7722e7d24ba105880790fa2071c4714091
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 89d1015c63ffc6798b9c11b220d3dbe1908a89c1
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721126"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335180"
 ---
 # <a name="shiftactivity-resource-type"></a>тип ресурса shiftActivity
 
@@ -18,15 +18,15 @@ ms.locfileid: "50721126"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет действие в [сдвиге.](shift.md)
+Представляет действие в [сдвиге](shift.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство                         | Тип                    | Описание                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| isPaid               | `bool`                  | Указывает, следует ли платить за действия во `microsoft.graph.user` время их `shift` . Обязательный атрибут.    |
+| isPaid               | `bool`                  | Указывает, следует `microsoft.graph.user` ли платить за действия во время их `shift`. Обязательный элемент.    |
 | startDateTime               | `DateTimeOffset`                  | Дата и время начала для ресурса `shiftActivity`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Обязательный элемент. |
-| endDateTime               | `DateTimeOffset`                  | Дата и время окончания для ресурса `shiftActivity`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Обязательный атрибут.    |
-| code               | `string`                  | Код, определенный клиентом `shiftActivity` для . Обязательный.    |
+| endDateTime               | `DateTimeOffset`                  | Дата и время окончания для ресурса `shiftActivity`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Обязательный.    |
+| code               | `string`                  | Код, определенный клиентом для `shiftActivity`. Обязательный.    |
 | displayName               | `string`                  | Имя ресурса `shiftActivity`. Обязательный элемент.    |
 
 ## <a name="json-representation"></a>Представление JSON

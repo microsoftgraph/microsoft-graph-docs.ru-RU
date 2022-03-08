@@ -1,16 +1,16 @@
 ---
 title: тип ресурса directorySettingTemplate
 description: Шаблоны параметров каталогов представляют параметры, определяемые системой, доступные для клиента.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 71984d472aab9f78197134fae0668fd0a90d7716
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 372abab6126a9e2174638fd59fceb609f6f072c3
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440411"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335236"
 ---
 # <a name="directorysettingtemplate-resource-type"></a>тип ресурса directorySettingTemplate
 
@@ -18,9 +18,12 @@ ms.locfileid: "50440411"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Шаблоны параметров каталогов представляют параметры, определяемые системой, доступные для клиента. [Параметры каталога](directorysetting.md) могут быть созданы на основе доступных directorySettingTemplates, а значения изменены по заранее. Шаблоны параметров каталога не могут быть созданы, обновлены или удалены. Эти параметры могут представлять параметры для клиента или представлять определенные параметры сущности.  В настоящее время только доступные шаблоны применяются к группам Office и включают параметры, например, могут ли пользователи создавать группы или приглашать гостей из-за пределов организации, чтобы стать членами группы.
+Шаблоны параметров каталогов представляют параметры, определяемые системой, доступные для клиента. [Параметры каталога](directorysetting.md) могут быть созданы на основе доступных **directorySettingTemplates**, а значения изменены по заранее. Шаблоны параметров каталога не могут быть созданы, обновлены или удалены. Эти параметры могут представлять параметры для клиента или представлять определенные параметры сущности. В настоящее время только шаблоны, доступные для групп, применяются к Microsoft 365 группам и включают параметры, например, могут ли пользователи создавать группы или приглашать гостей из-за пределов организации в члены группы.
 
-> **Примечание.**/бета-версия типа ресурса directorySettingTemplate применяется только к группам. Версия /v1.0 переименована в groupSettingTemplate.
+Дополнительные сведения о доступных Microsoft 365 группах см. в [параметрах Template](/azure/active-directory/enterprise-users/groups-settings-cmdlets).
+
+> [!TIP]
+> Версия `/v1.0` этого ресурса называется [groupSettingTemplate](/graph/api/resources/groupsettingtemplate?view=graph-rest-1.0&preserve-view=true).
 
 ## <a name="methods"></a>Методы
 

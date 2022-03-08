@@ -2,15 +2,15 @@
 title: тип ресурса serviceAnnouncement
 description: Контейнер верхнего уровня для ресурсов связи службы
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c22cbcd9fd8e67137e649cc099ff7980468c246f
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 86cd4c330cb84b75cf218191ad76b1ed9ed21154
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53109244"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335432"
 ---
 # <a name="serviceannouncement-resource-type"></a>тип ресурса serviceAnnouncement
 
@@ -31,11 +31,11 @@ ms.locfileid: "53109244"
 Нет
 
 ## <a name="relationships"></a>Связи
-|Свойство|Тип|Описание|
+|Связь|Тип|Описание|
 |-|-|-|
-|messages|[Collection(serviceUpdateMessage)](serviceupdatemessage.md)|Коллекция сообщений службы для клиента. Это свойство содержит свойство навигации, оно является недействительным и читаемым.|
-|healthOverviews|[Collection(serviceHealth)](servicehealth.md)|Коллекция сведений о состоянии здоровья служб для клиента. Это свойство содержит свойство навигации, оно является недействительным и читаемым.|
-|проблемы|[Collection(serviceHealthIssue)](servicehealthissue.md)|Набор проблем с обслуживанием для клиента. Это свойство содержит свойство навигации, оно является недействительным и читаемым.|
+|messages|Collection([serviceUpdateMessage](serviceupdatemessage.md))|Коллекция сообщений службы для клиента. Это свойство содержит свойство навигации, оно является недействительным и читаемым.|
+|healthOverviews|Collection([serviceHealth](servicehealth.md))|Коллекция сведений о состоянии здоровья служб для клиента. Это свойство содержит свойство навигации, оно является недействительным и читаемым.|
+|проблемы|Collection([serviceHealthIssue](servicehealthissue.md))|Набор проблем с обслуживанием для клиента. Это свойство содержит свойство навигации, оно является недействительным и читаемым.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

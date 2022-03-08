@@ -1,18 +1,18 @@
 ---
-title: Обновление параметра каталога
+title: Обновление directorySetting
 description: Обновление свойств определенного объекта параметра каталога.
 author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fc260ec6493417a6d0786ca8c7f8572b3845e3e4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bd25d5b60fff3211c0db874b7b634171658d8cba
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100298"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335467"
 ---
-# <a name="update-a-directory-setting"></a>Обновление параметра каталога
+# <a name="update-directorysetting"></a>Обновление directorySetting
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,6 @@ ms.locfileid: "62100298"
 
 Обновление свойств определенного объекта параметра каталога.
 
-> **Примечание.** Бета-версия этого API применяется только к группам. Версия /v1.0 этого API переименована в *Update groupSettings.*
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,15 +28,22 @@ ms.locfileid: "62100298"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
+
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
-Обновление параметра на уровне клиента или отдельной группы.
+Обновление параметра для клиента.
 ```http
-PATCH /settings/{id}
-PATCH /groups/{id}/settings/{id}
+PATCH /settings/{directorySettingId}
 ```
+
+<!-- { "blockType": "ignored" } -->
+Обновление параметра, определенного для группы.
+```http
+PATCH /groups/{groupId}/settings/{directorySettingId}
+```
+
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
@@ -55,7 +61,7 @@ PATCH /groups/{id}/settings/{id}
 В случае успешного выполнения этот метод возвращает код отклика `204 OK`.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -63,17 +69,17 @@ PATCH /groups/{id}/settings/{id}
   "blockType": "request",
   "name": "update_directorysetting"
 }-->
-```http
-PATCH https://graph.microsoft.com/beta/settings/{id}
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/settings/3c105fc3-2254-4861-9e2d-d59e2126f3ef
 Content-type: application/json
 
 {
-  "values": [
-    {
-      "name": "name-value",
-      "value": "value-value"
-    }
-  ]
+    "values": [
+        {
+            "name": "CustomBlockedWordsList",
+            "value": "Contoso"
+        }
+    ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -102,7 +108,7 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response"
 } -->

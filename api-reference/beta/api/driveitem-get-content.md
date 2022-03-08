@@ -1,25 +1,25 @@
 ---
 author: JeremyKelley
-description: Скачивание содержимого основного потока (файла) ресурса DriveItem. Можно скачать только те ресурсы driveItem, у которых есть свойство file.
-ms.date: 09/10/2017
+description: Скачайте содержимое основного потока (файла) driveItem. Можно скачать только те ресурсы driveItem, у которых есть свойство file.
 title: Скачивание файла
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a6f466788158d0461ecb796e85be94c420227b2b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8a20bf3cb894cc09dbae58ce4da8f438aef5e2ca
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806539"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335705"
 ---
-# <a name="download-the-contents-of-a-driveitem"></a>Скачивание содержимого элемента DriveItem
+# <a name="download-the-contents-of-a-driveitem"></a>Скачайте содержимое driveItem
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
-В этой статье рассказывается, как скачать содержимое основного потока (файла) элемента DriveItem. Вы можете скачать только те элементы driveItem, у которых имеется свойство **file**.
+Скачайте содержимое основного потока (файла) [driveItem](../resources/driveitem.md). **Скачивать можно только driveItems** с **свойством** файла.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -55,7 +55,7 @@ GET /users/{userId}/drive/items/{item-id}/content
 
 В примере ниже показано, как скачать весь файл.
 
-
+### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "download-item-content", "scopes": "files.read" } -->
@@ -96,6 +96,36 @@ URL-адреса загрузки, прошедшие предварительн
 HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
+
+## <a name="downloading-files-in-javascript-apps"></a>Загрузка файлов в приложениях JavaScript
+Чтобы загрузить файлы в приложении JavaScript, `/content` нельзя использовать API, так как это отвечает перенаправлением `302` .
+Перенаправление `302` явно запрещается, если требуется предпролет [cross-Origin Resource Sharing (CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)), например при предоставлении загона  авторизации.
+
+Вместо этого приложению необходимо выбрать свойство `@microsoft.graph.downloadUrl` , которое возвращает тот же URL-адрес `/content` , на который направляется.
+Затем этот URL-адрес можно запросить напрямую с помощью XMLHttpRequest.
+Так как эти URL-адреса предварительно проверки подлинности, их можно получить без запроса на предпролет CORS.
+
+### <a name="example"></a>Пример
+
+Чтобы получить URL-адрес для скачивания файла, сначала отправьте запрос, включающий свойство `@microsoft.graph.downloadUrl`:
+
+```http
+GET /drive/items/{item-ID}?select=id,@microsoft.graph.downloadUrl
+```
+
+Это возвращает ID и скачивает URL-адрес для файла:
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": "12319191!11919",
+  "@microsoft.graph.downloadUrl": "https://..."
+}
+```
+
+Затем вы можете отправить запрос XMLHttpRequest на URL-адрес, указанный в свойстве `@microsoft.graph.downloadUrl`, чтобы получить файл.
 
 ## <a name="partial-range-downloads"></a>Загрузка части заданного диапазона байтов
 

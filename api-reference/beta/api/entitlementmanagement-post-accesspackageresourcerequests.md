@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ad210433e5a02282016273fbd0b3e708f2ffac79
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: c0dd53ebb2c8c76814b44a7423b9ee5e896746cb
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804152"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334900"
 ---
 # <a name="create-accesspackageresourcerequest"></a>Создание accessPackageResourceRequest
 
@@ -28,7 +28,7 @@ ms.locfileid: "62804152"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EntitlementManagement.ReadWrite.All |
+| Для приложений                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,14 +49,15 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 В теле запроса поставляем представление JSON объекта [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) . Включайте `accessPackageResource` связь с [объектом accessPackageResource](../resources/accesspackageresource.md) в качестве части запроса.
 
-Чтобы добавить группу Azure AD в качестве ресурса в каталог, задайте  каталогId ID каталога, **requestType** to be `AdminAdd`и `accessPackageResource` представляющий ресурс. Значение свойства **originSystem** внутри `accessPackageResource` должно быть, `AadGroup` а значение **originId** — идентификатор группы.
+Чтобы добавить группу Azure AD в качестве ресурса в каталог, задайте  каталогId ID каталога, **requestType** to be `AdminAdd`и `accessPackageResource` представляющий ресурс. Значение свойства **originSystem** внутри `accessPackageResource` должно быть, `AadGroup` а значение **originId** — идентификатор группы.  При использовании делегирования разрешений пользователь, запрашивающий добавить группу, должен быть владельцем группы или в роли каталога, которая позволяет им изменять группы. При использовании разрешений приложения приложению, запрашиваемом для добавления группы, также должно быть назначено `Group.ReadWrite.All` разрешение.
 
-Чтобы удалить приложение Azure AD из каталога, установите каталогId  в ID каталога, **requestType** to be `AdminRemove`и `accessPackageResource` объект ресурса, который необходимо удалить.  Объект ресурса можно получить с помощью [списка accessPackageResources](accesspackagecatalog-list-accesspackageresources.md).
+Чтобы добавить приложение Azure AD в качестве ресурса в каталог, задайте каталогId для ID каталога, **requestType** to be `AdminAdd`и представляющий `accessPackageResource` ресурс. Значение свойства **originSystem** в `accessPackageResource` пределах должно быть и `AadApplication` значение **originId** является идентификатором [servicePrincipal](../resources/serviceprincipal.md).  При использовании делегирования разрешений пользователь, запрашивающий добавить приложение, должен быть владельцем приложения или в роли каталога, что позволяет ему изменять назначения ролей приложения.
 
-Чтобы назначить среду геолокации для ресурса Sharepoint Online с несколькими геолокациями, включите связь **accessPackageResourceEnvironment** в объекте `accessPackageResource` . Это можно сделать двумя способами:
+Чтобы добавить сайт SharePoint Online в качестве ресурса в каталог, задайте каталогId iD  каталога, **requestType** to be `AdminAdd`и `accessPackageResource` представляющий ресурс. Значение свойства **originSystem** в `accessPackageResource` пределах должно быть, `SharePointOnline` а значение **originId** — это URI [сайта](../resources/site.md).  При использовании делегирования разрешений пользователь должен быть в роли администратора SharePoint администратора. При использовании разрешений приложения приложению, запрашиваемом для добавления сайта, также должно быть назначено `Sites.FullControl.All` разрешение. Чтобы назначить среду геолокации для ресурса Sharepoint Online с несколькими геолокациями, включите связь **accessPackageResourceEnvironment** в объекте `accessPackageResource` . Это можно сделать двумя способами:
 + Чтобы `@odata.bind` назначить объекту `id` `accessPackageResourceEnvironment` аннотацию, используйте аннотацию `accessPackageResourceEnvironment` .
 + Укажите `originId` параметр объекта `accessPackageResourceEnvironment` `accessPackageResourceEnvironment` .
 
+Чтобы удалить ресурс из каталога, установите **каталогId** в ID каталога, **requestType** to be `AdminRemove`и `accessPackageResource` удаляемого объекта ресурса.  Объект ресурса можно получить с помощью [списка accessPackageResources](accesspackagecatalog-list-accesspackageresources.md).
 
 ## <a name="response"></a>Отклик
 
@@ -456,7 +457,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -485,6 +486,8 @@ Content-type: application/json
 
 Ниже приводится пример запроса на добавление приложения в каталог, включая указание обязательного атрибута этого приложения.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests6"
@@ -531,10 +534,36 @@ Content-type: application/json
 }
 
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageresourcerequest-from-accesspackageresourcerequests6-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageresourcerequest-from-accesspackageresourcerequests6-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageresourcerequest-from-accesspackageresourcerequests6-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageresourcerequest-from-accesspackageresourcerequests6-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageresourcerequest-from-accesspackageresourcerequests6-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageresourcerequest-from-accesspackageresourcerequests6-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

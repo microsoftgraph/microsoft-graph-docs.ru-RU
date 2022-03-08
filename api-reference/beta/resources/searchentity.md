@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса searchEntity
-description: Объект верхнего уровня, представляющий конечную точку API поиска Майкрософт.
-localization_priority: Normal
+description: Объект верхнего уровня, представляющий конечную Поиск (Майкрософт) API.
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: d62292b3a4890589d72214a3544059eaf8af8817
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 39f5213e9be29f9fd87332513c3d0b090e3d3e1f
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067133"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335187"
 ---
 # <a name="searchentity-resource-type"></a>Тип ресурса searchEntity
 
@@ -18,22 +18,29 @@ ms.locfileid: "52067133"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Объект верхнего уровня, представляющий конечную точку API поиска Майкрософт. Он не ведет себя как любой другой ресурс в Graph, но служит якорем для [действия запроса.](../api/search-query.md) 
+Объект верхнего уровня, который представляет конечную Поиск (Майкрософт) API.
+
+Он служит якорем для отношений действий [запроса](../api/search-query.md) и ответов на поиск, таких как [](../resources/search-bookmark.md)аббревиатуры[,](../resources/search-acronym.md) закладки и [qnas](../resources/search-qna.md). 
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[query](../api/search-query.md) |[searchResponse](searchresponse.md) | Выполняет запрос, указанный в теле запроса.  |
+|[query](../api/search-query.md) |[коллекция searchResponse](searchresponse.md) | Запустите указанный поисковый запрос.   |
 
 ## <a name="properties"></a>Свойства
 Нет
 
 ## <a name="relationships"></a>Связи
-Отсутствуют.
+| Связь | Тип |Описание|
+|:---------------|:--------|:----------|
+| аббревиатуры | [коллекция microsoft.graph.search.acronym](../resources/search-acronym.md) | Административный ответ в Поиск (Майкрософт), чтобы определить общие аббревиатуры в организации.  |
+| закладки | [коллекция microsoft.graph.search.bookmark](../resources/search-bookmark.md) | Административный ответ в Поиск (Майкрософт) результатов для общих поисковых запросов в организации. |
+| qnas | [коллекция microsoft.graph.search.qna](../resources/search-qna.md) | Административный ответ в Поиск (Майкрософт) результатов, которые предоставляют ответы на определенные ключевые слова поиска в организации. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
@@ -48,9 +55,9 @@ ms.locfileid: "52067133"
 ```
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="see-also"></a>См. также
 
-Ознакомьтесь [с действием запроса.](../api/search-query.md)
+[query](../api/search-query.md)
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
