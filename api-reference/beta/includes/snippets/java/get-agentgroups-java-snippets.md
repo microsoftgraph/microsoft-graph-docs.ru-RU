@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 3bca0c006fc11b4dc6ba06c39259a43eed9380d2c45b6a87fde0490860ba5d41
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: afa559a22610fca3f4671a12775be9a46b10fe3d
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57361439"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63351741"
 ---
 ```java
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 OnPremisesAgentGroupCollectionPage agentGroups = graphClient.onPremisesPublishingProfiles("provisioning").agentGroups()
     .buildRequest()
-    .expand("publishedResources")
+    .expand("agents,publishedResources")
     .get();
 
 ```

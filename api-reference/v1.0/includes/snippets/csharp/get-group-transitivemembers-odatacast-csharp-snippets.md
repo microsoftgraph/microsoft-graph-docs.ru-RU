@@ -1,15 +1,20 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 2f8980edfb7fd712426d627dec0432047a3ef45e5b622dcd1374302af40da932
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: de0ba9b211c6f2078822d67ea1759ed220663cd0
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57307620"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63351725"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+
+var queryOptions = new List<QueryOption>()
+{
+    new QueryOption("$count", "true")
+};
 
 var group = await graphClient.Groups["{group-id}"].TransitiveMembers
     .Request()

@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5af86f432bb26495111feff7a33adeca2d54f372
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e85a6b5133026beca38a65a964f29cc5898324bb
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019148"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336244"
 ---
 # <a name="serviceannouncement-resource-type"></a>тип ресурса serviceAnnouncement
 
@@ -29,11 +29,11 @@ ms.locfileid: "59019148"
 Нет
 
 ## <a name="relationships"></a>Связи
-|Свойство|Тип|Описание|
+|Связь|Тип|Описание|
 |-|-|-|
-|messages|[Collection(serviceUpdateMessage)](serviceupdatemessage.md)|Коллекция сообщений службы для клиента. Это свойство содержит свойство навигации, оно является недействительным и читаемым.|
-|healthOverviews|[Collection(serviceHealth)](servicehealth.md)|Коллекция сведений о состоянии здоровья служб для клиента. Это свойство содержит свойство навигации, оно является недействительным и читаемым.|
-|проблемы|[Collection(serviceHealthIssue)](servicehealthissue.md)|Набор проблем с обслуживанием для клиента. Это свойство содержит свойство навигации, оно является недействительным и читаемым.|
+|messages|Collection([serviceUpdateMessage](serviceupdatemessage.md))|Коллекция сообщений службы для клиента. Это свойство содержит свойство навигации, оно является недействительным и читаемым.|
+|healthOverviews|Collection([serviceHealth](servicehealth.md))|Коллекция сведений о состоянии здоровья служб для клиента. Это свойство содержит свойство навигации, оно является недействительным и читаемым.|
+|проблемы|Collection([serviceHealthIssue](servicehealthissue.md))|Набор проблем с обслуживанием для клиента. Это свойство содержит свойство навигации, оно является недействительным и читаемым.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

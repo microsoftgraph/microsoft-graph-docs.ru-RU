@@ -1,16 +1,16 @@
 ---
 title: тип ресурса resourceData
 description: Представляет данные resouce, присоединенные к уведомлению об изменении, отправленным абоненту.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: b2ddfd62a797cbf5674f522d6fa3c93eca528c30
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 87fcd715bce5a58d3503ef48e43eebcca088cc9d
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469369"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336755"
 ---
 # <a name="resourcedata-resource-type"></a>тип ресурса resourceData
 
@@ -18,7 +18,7 @@ ms.locfileid: "51469369"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет данные resouce, присоединенные к уведомлению об изменении, отправленным абоненту.
+Представляет данные resouce, присоединенные к уведомлению об изменении, отправленным абоненту. Этот ресурс является открытым типом и позволяет передавать другие свойства.
 
 Подробности см. в статье [Получение уведомлений об изменениях с помощью API Microsoft Graph](webhooks.md).
 
@@ -28,16 +28,16 @@ ms.locfileid: "51469369"
 
 ## <a name="properties"></a>Свойства
 
-Для ресурсов Outlook **resourceData содержит** следующие поля:
+Нет, кроме Outlook ресурсов, в которых **resourceData** содержит следующие поля:
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-| @odata.type | строка | @odata.type — тип сущности OData в Microsoft Graph, который описывает представленный объект. |
-| @odata.id | строка | @odata.id — идентификатор OData для объекта. |
-| @odata.etag | строка | @odata.etag — HTTP-тег сущности, представляющий версию объекта. |
-| id | строка | Идентификатор объекта. |
+| @odata.type | Строка | @odata.type — тип сущности OData в Microsoft Graph, который описывает представленный объект. |
+| @odata.id | Строка | @odata.id — идентификатор OData для объекта. |
+| @odata.etag | Строка | @odata.etag — HTTP-тег сущности, представляющий версию объекта. |
+| id | Строка | Идентификатор объекта. |
 
-> **Примечание:** Значение, `id` предоставляемого **в resourceData,** допустимо на момент сгенерировании уведомления об изменении. Некоторые действия, например перенос сообщения в другую папку, могут привести к неодержительным действиям при обработке `id` уведомления об изменении.
+> **Примечание:** Значение **id** , предоставляемого **в resourceData** , допустимо на момент сгенерировании уведомления об изменении. Некоторые действия, например перенос сообщения в другую папку, `id` могут привести к неодержительным действиям при обработке уведомления об изменении.
 
 ## <a name="relationships"></a>Связи
 
@@ -50,16 +50,17 @@ ms.locfileid: "51469369"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "@odata.type",
+    "@odata.id",
+    "@odata.etag",
+    "id"
   ],
   "@odata.type": "microsoft.graph.resourceData"
 }-->
 
 ```json
 {
-  "id": "1565293727947",
-  "@odata.type": "#Microsoft.Graph.ChatMessage",
-  "@odata.id": "teams('88cbc8fc-164b-44f0-b6a6-b59b4a1559d3')/channels('19:8d9da062ec7647d4bb1976126e788b47@thread.tacv2')/messages('1565293727947')/replies('1565293727947')"
+  "@odata.type": "#microsoft.graph.resourceData"
 }
 ```
 

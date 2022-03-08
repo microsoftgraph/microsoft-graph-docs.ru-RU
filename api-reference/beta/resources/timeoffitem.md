@@ -1,16 +1,16 @@
 ---
 title: тип ресурса timeOffItem
 description: Представляет версию timeOff.
-author: nkramer
-localization_priority: Normal
+author: aaku
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8fbe535fcbc63f94a50e65c62c694ffaac1a9aed
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: e6ce7d01cf899bdc958ade3025d222f8fd231be1
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786084"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333969"
 ---
 # <a name="timeoffitem-resource-type"></a>тип ресурса timeOffItem
 
@@ -23,7 +23,7 @@ ms.locfileid: "52786084"
 ## <a name="properties"></a>Свойства
 | Свойство                         | Тип                    | Описание                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| timeOffReasonId               | Строка                  | ID этого `timeOffReason` **времениOffItem**. Обязательный.     |
+| timeOffReasonId               | string                  | ID этого `timeOffReason` **времениOffItem**. Обязательный элемент.     |
 | startDateTime               | DateTimeOffset                  | Дата начала и время **для timeOffItem**. Обязательный элемент. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
 | endDateTime               | DateTimeOffset                  | Дата окончания и время **для timeOffItem**. Обязательный элемент. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
 | theme | scheduleEntityTheme   | Поддерживаемые цвета: белый, синий, зеленый, фиолетовый, розовый, желтый, серый, темно-синий, темно-зеленый, темно-фиолетовый, темно-розовый, темно-желтый. |

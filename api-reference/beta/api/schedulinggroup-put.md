@@ -1,16 +1,16 @@
 ---
 title: Замена объекта schedulingGroup
 description: Замените существующую группу планирования.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 68f75c33913aa5cd7a4eb1e9363b7ed614dfb96d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d8f833e2516017b7724481b683265ea91a8bd2b5
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020572"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334515"
 ---
 # <a name="replace-schedulinggroup"></a>Замена объекта schedulingGroup
 
@@ -20,7 +20,7 @@ ms.locfileid: "61020572"
 
 Замените [существующую группу планирования](../resources/schedulinggroup.md).
 
-Если указанной [schedulingGroup](../resources/schedulinggroup.md) не существует, этот метод `404 Not found` возвращается.
+Если указанной [schedulingGroup](../resources/schedulinggroup.md) не существует, этот метод возвращается `404 Not found`.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -49,11 +49,11 @@ PUT /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [schedulingGroup.](../resources/schedulinggroup.md)
+В теле запроса поставляем представление JSON объекта [schedulingGroup](../resources/schedulinggroup.md) .
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект schedulingGroup](../resources/schedulinggroup.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект schedulingGroup](../resources/schedulinggroup.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

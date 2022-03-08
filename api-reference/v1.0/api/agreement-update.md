@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 85ea3783cd010fbdcd9f03da230af7239365755c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 195537e0cb8dfa04055e816bd20727af598db3c1
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029833"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337455"
 ---
 # <a name="update-agreement"></a>Обновление соглашения
 
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [соглашения.](../resources/agreement.md)
+Обновление свойств объекта [соглашения](../resources/agreement.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -42,10 +42,10 @@ PATCH /identityGovernance/termsOfUse/agreements/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |displayName|Строка|Отображение имени соглашения.|
-|isViewingBeforeAcceptanceRequired|Логическое|Необходимо ли пользователю расширить и просмотреть соглашение перед его принятием.|
+|isViewingBeforeAcceptanceRequired|Boolean|Необходимо ли пользователю расширить и просмотреть соглашение перед его принятием.|
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и обновленный объект соглашения `200 OK` в тексте [](../resources/agreement.md) ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и обновленный [](../resources/agreement.md) объект соглашения в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 
@@ -82,6 +82,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-agreement-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-agreement-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

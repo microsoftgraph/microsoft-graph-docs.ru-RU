@@ -5,12 +5,12 @@ author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 9047977dd701e9844ae7158b6a6c1845a189de4e
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: c072c5b127a4e7b22022d03b674e8a3a8bdacd19
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791905"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337028"
 ---
 # <a name="managedtenant-resource-type"></a>тип ресурсов managedTenant
 
@@ -18,7 +18,7 @@ ms.locfileid: "61791905"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В качестве корневого ресурса Microsoft 365 Lighthouse API **managedTenant** представляет возможности, доступные поставщику управляемых служб (MSP) для масштабирования удаленного управления клиентами клиентов, чтобы помочь им в здоровом и безопасном состоянии.
+В качестве корневого ресурса Microsoft 365 Lighthouse API **managedTenant** представляет возможности, доступные поставщику управляемых служб (MSP) для масштабирования удаленного управления клиентом клиентов, чтобы помочь им в здоровом и безопасном состоянии.
 
 API Microsoft 365 Lighthouse определяется в поднаемной области OData. `microsoft.graph.managedTenants`
 
@@ -29,6 +29,7 @@ API Microsoft 365 Lighthouse определяется в поднаемной о
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |aggregatedPolicyCompliances|[коллекция microsoft.graph.managedTenants.aggregatedPolicyCompliance](../resources/managedtenants-aggregatedpolicycompliance.md)|Сводное представление политик соответствия требованиям устройств для управляемых клиентов.|
+|auditEvents|[коллекция microsoft.graph.managedTenants.auditEvent](../resources/managedtenants-auditevent.md)|Коллекция событий аудита для управляемых клиентов.|
 |cloudPcConnections|[коллекция microsoft.graph.managedTenants.cloudPcConnection](../resources/managedtenants-cloudpcconnection.md)|Коллекция подключений к облачным ПК для управляемых клиентов.|
 |cloudPcDevices|[коллекция microsoft.graph.managedTenants.cloudPcDevice](../resources/managedtenants-cloudpcdevice.md)|Коллекция облачных компьютеров для управляемых клиентов.|
 |cloudPcsOverview|[коллекция microsoft.graph.managedTenants.cloudPcOverview](../resources/managedtenants-cloudpcoverview.md)|Обзор сведений о облачном компьютере для управляемых клиентов.|
@@ -47,7 +48,7 @@ API Microsoft 365 Lighthouse определяется в поднаемной о
 |tenantsDetailedInformation|[коллекция microsoft.graph.managedTenants.tenantDetailedInformation](../resources/managedtenants-tenantdetailedinformation.md)|Уровень клиента коллекции подробные сведения об управляемых клиентах.|
 |tenantTags|[коллекция microsoft.graph.managedTenants.tenantTag](../resources/managedtenants-tenanttag.md)|Коллекция тегов клиента для управляемых клиентов.|
 |WindowsDeviceMalwareStates|[коллекция microsoft.graph.managedTenants.windowsDeviceMalwareState](../resources/managedtenants-windowsdevicemalwarestate.md)|Состояние вредоносных программ для Windows устройств, зарегистрированных в Microsoft Endpoint Manager, в управляемых клиентах.|
-|windowsProtectionStates|[коллекция microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md)|Состояние защиты для Windows устройств, зарегистрированных Microsoft Endpoint Manager, для управляемых клиентов.|
+|windowsProtectionStates|[коллекция microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md)|Состояние защиты для Windows устройств, зарегистрированных в Microsoft Endpoint Manager, для управляемых клиентов.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

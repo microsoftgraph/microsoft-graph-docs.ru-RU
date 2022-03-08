@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 81719d0c6028461561b50f93ecf96ed5645d3794
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 6e782def17541cbfe48923d788e8cbf774c1a473
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650596"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334102"
 ---
 # <a name="connectedorganization-resource-type"></a>тип ресурса connectedOrganization
 
@@ -18,7 +18,7 @@ ms.locfileid: "61650596"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении правами Azure AD](entitlementmanagement-overview.md)подключенная организация является ссылкой на каталог или домен другой организации, пользователи которой могут запрашивать доступ.
+В [управлении правами Azure AD](entitlementmanagement-overview.md) подключенная организация является ссылкой на каталог или домен другой организации, пользователи которой могут запрашивать доступ.
 
 ## <a name="methods"></a>Методы
 
@@ -43,17 +43,17 @@ ms.locfileid: "61650596"
 |createdBy|String|UPN пользователя, создавшего этот ресурс. Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 |description|Строка|Описание связанной организации.|
-|displayName|Строка|Отображает имя подключенной организации. Поддерживает `$filter` (`eq`).|
+|displayName|String|Отображает имя подключенной организации. Поддерживает `$filter` (`eq`).|
 |id|String| Только для чтения.|
 |modifiedBy|Строка|UPN пользователя, который в последний раз изменил этот ресурс. Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
-|state|connectedOrganizationState|Состояние связанной организации определяет, применимы ли политики назначения с типом области `AllConfiguredConnectedOrganizationSubjects` запроса. Возможные значения: `configured`, `proposed`.|
+|state|connectedOrganizationState|Состояние связанной организации определяет `AllConfiguredConnectedOrganizationSubjects` , применимы ли политики назначения с типом области запроса. Возможные значения: `configured`, `proposed`.|
+|identitySources|[коллекция identitySource](identitySource.md)| Источники удостоверений в этой связанной организации, один из [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) или [externalDomainFederation](externaldomainfederation.md). Только для чтения. Допускается значение null. Поддерживает и `$select` `$filter`().`eq` Чтобы фильтровать полученные типы, необходимо объявить ресурс с использованием полного литья OData, `$filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f')`например .|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|identitySources|[коллекция identitySource](identitySource.md)| Источники удостоверений в этой связанной организации, один из [azureActiveDirectoryTenant,](azureactivedirectorytenant.md) [domainIdentitySource](domainidentitysource.md) или [externalDomainFederation.](externaldomainfederation.md) Только для чтения. Допускается значение null. Поддерживает `$select` и `$filter` `eq` (). Чтобы фильтровать полученные типы, необходимо объявить ресурс с использованием полного литья OData, например, `microsoft.graph.azureActiveDirectoryTenant.`|
 |internalSponsors| Коллекция [directoryObject](directoryobject.md)| Допускается значение null.|
 |externalSponsors| Коллекция [directoryObject](directoryobject.md)| Допускается значение null.|
 

@@ -1,18 +1,18 @@
 ---
-title: Получить параметр каталога
+title: Get directorySetting
 description: Извлечение свойств определенного объекта настройки каталога.
 author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 79bb4851ea0aec7a84aa7c3e0ce1d4362a4d3bdd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8a71153b7ed99a4eece21bdb766fef5dee915321
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62090617"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336398"
 ---
-# <a name="get-a-directory-setting"></a>Получить параметр каталога
+# <a name="get-directorysetting"></a>Get directorySetting
 
 Пространство имен: microsoft.graph
 
@@ -20,10 +20,11 @@ ms.locfileid: "62090617"
 
 Извлечение свойств определенного объекта настройки каталога.
 
-> **Примечание.** Бета-версия этого API применяется только к группам. Версия /v1.0 этого API переименована в *Get groupSettings.*
-
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+
+### <a name="list-tenant-wide-settings"></a>Список параметров для всех клиентов
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -31,27 +32,45 @@ ms.locfileid: "62090617"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
+### <a name="list-group-specific-settings"></a>Список параметров, определенных для группы
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Group.Read.All, Group.ReadWrite.All  |
+
+
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
-Получить определенный параметр для клиента или группы
+
+Получите параметр в масштабе клиента.
+
 ```http
-GET /settings/{id}
-GET /groups/{id}/settings/{id}
+GET /settings/{directorySettingId}
 ```
+
+<!-- { "blockType": "ignored" } -->
+Получите параметр, определенный для группы.
+```http
+GET /groups/{groupId}/settings/{directorySettingId}
+```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает `$select` [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект directorySetting](../resources/directorysetting.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект directorySetting](../resources/directorysetting.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -93,8 +112,8 @@ GET https://graph.microsoft.com/beta/settings/f0b2d6f5-097d-4177-91af-a24e530b53
 ---
 
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

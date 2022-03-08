@@ -1,16 +1,16 @@
 ---
 title: Значения Enum
-description: Значения Graph microsoft.
+description: Значения Graph майкрософт.
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 20b05fea6ed20a11ac236f3ad9cbd560c1250d87
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: 0be72cacf043727e0a08a6524a0685ec99bce47a
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894672"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336951"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -650,7 +650,7 @@ ms.locfileid: "62894672"
 
 | Member
 |:-------------------------
-| обязательно
+| Обязательный
 | необязательный
 | resource
 
@@ -1138,15 +1138,15 @@ Enum для типов значений реестра, определяемог
 |unknown|0|Неизвестный тип значения реестра.|
 |двоичный|1|REG_BINARY типа значения реестра.|
 |dword|2| REG_DWORD типа значения реестра.|
-|dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN типа значения реестра.|
+|dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN тип значения реестра.|
 |dwordBigEndian|4| REG_DWORD_BIG_ENDIAN тип значения реестра.|
-|expandSz|5| REG_EXPAND_SZ тип значения реестра.|
+|expandSz|5| REG_EXPAND_SZ типа значения реестра.|
 |ссылка|6 | REG_LINK тип значения реестра.|
 |multiSz|7 | REG_MULTI_SZ тип значения реестра.|
-|Нет|8 | REG_NONE тип значения реестра.|
+|Нет|8 | REG_NONE типа значения реестра.|
 |qword|9 | REG_QWORD тип значения реестра.|
-|qwordlittleEndian|10 | REG_QWORD_LITTLE_ENDIAN типа значения реестра.|
-|sz|11| REG_SZ тип значения реестра.|
+|qwordlittleEndian|10 | REG_QWORD_LITTLE_ENDIAN типа реестра.|
+|sz|11| REG_SZ типа значения реестра.|
 
 ### <a name="alertseverity-values"></a>значения alertSeverity
 
@@ -1195,7 +1195,7 @@ Enum для серьезности оповещений.
 
 ### <a name="useraccountsecuritytype-values"></a>Значения userAccountSecurityType
 
-Возможные значения для типов учетных записей пользователей (членство в группе) в Windows определения.
+Возможные значения для типов учетных записей пользователей (членство в группе) в определении Windows.
 
 |Member|Member|Описание|
 |:---|:---|:---|
@@ -1371,8 +1371,8 @@ Enum для серьезности оповещений.
 | Элемент                | Значение | Описание                         |
 |:----------------------|:------|:------------------------------------|
 | Нет                  | 0     | Еще не знаю.                       |
-| mailFlowRule          | 1     | Exchange правила транспорта.            |
-| safeSender            | 2     | Сейф отправитель.                   |
+| mailFlowRule          | 1     | Правило транспорта Exchange.            |
+| safeSender            | 2     | Безопасный список отправитель.                   |
 | blockedSender         | 3     | Заблокированный список отправитель.                |
 | advancedSpamFiltering | 4     | Расширенный параметр flitering нежелательной почты.     |
 | domainAllowList       | 5     | Список разрешаемой области отправитель.           |
@@ -1610,7 +1610,7 @@ Enum для серьезности оповещений.
 |:----------------------|
 | builtIn               |
 | настраиваемый                |
-| обязательно              |
+| Обязательный              |
 | unknownFutureValue    |
 
 ### <a name="identityuserflowattributeinputtype-values"></a>значения identityUserFlowAttributeInputType
@@ -1701,7 +1701,7 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |team|
-|канал|
+|channel|
 |чат|
 |unknownFutureValue|
 
@@ -1912,4 +1912,25 @@ Enum для серьезности оповещений.
 |priceVaries|
 |callUs|
 |notSet|
+|unknownFutureValue|
+
+### <a name="accessreviewhistorystatus-values"></a>значения accessReviewHistoryStatus
+
+| Member|
+|:-----------------|
+|done|
+|inprogress|
+|error|
+|запрашивается|
+|unknownFutureValue|
+
+### <a name="accessreviewhistorydecisionfilter-values"></a>accessReviewHistoryDecisionFilter values
+
+| Member|
+|:-----------------|
+|утверждение|
+|запретить|
+|notReviewed|
+|dontKnow|
+|notNotified|
 |unknownFutureValue|

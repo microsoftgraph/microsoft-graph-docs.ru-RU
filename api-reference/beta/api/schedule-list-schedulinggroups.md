@@ -1,16 +1,16 @@
 ---
 title: Список объектов schedulingGroup
 description: Получите список schedulingGroup в этом расписании.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 61663b58f3581cedc7398dbb53120f5ff2b6a98b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8294dc255f7ee4061eadafb260a75c6d1ec3dd10
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115898"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334522"
 ---
 # <a name="list-schedulegroups"></a>Расписание списковGroups
 
@@ -18,7 +18,7 @@ ms.locfileid: "62115898"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список [schedulingGroups в](../resources/schedulinggroup.md) этом [расписании.](../resources/schedule.md)
+Получите список [schedulingGroups в](../resources/schedulinggroup.md) этом [расписании](../resources/schedule.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "62115898"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Schedule.Read.All, Schedule.ReadWrite.All |
+|Для приложений | Schedule.Read.All, Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,12 +44,12 @@ GET /teams/{teamId}/schedule/schedulingGroups
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [schedulingGroup](../resources/schedulinggroup.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию объектов [schedulingGroup](../resources/schedulinggroup.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

@@ -1,16 +1,16 @@
 ---
 title: Список timesOff
 description: Получите список timesOff в этом расписании.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3c979f9b9a0912edfce4566d1724f99ecb344490
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 60b7539bc126b3ef13b8bd03c721e9aea95c3727
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129491"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337329"
 ---
 # <a name="list-timesoff"></a>Список timesOff
 
@@ -18,7 +18,7 @@ ms.locfileid: "62129491"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список экземпляров [timeOff](../resources/timeoff.md) в [расписании.](../resources/schedule.md)
+Получите список экземпляров [timeOff](../resources/timeoff.md) в [расписании](../resources/schedule.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ ms.locfileid: "62129491"
 GET /teams/{teamId}/schedule/timesOff
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметр запроса $filter [OData,](/graph/query-parameters) чтобы помочь настроить ответ.
+Этот метод поддерживает параметр запроса $filter [OData](/graph/query-parameters) , чтобы помочь настроить ответ.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -49,18 +49,18 @@ GET /teams/{teamId}/schedule/timesOff
 | Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [timeOff](../resources/timeoff.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию объектов [timeOff](../resources/timeoff.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса, который получает все объекты **timeOff,** которые имеют общую версию и черновик версии в период с 11 марта по 18 марта 2019 г.
+Ниже приводится пример запроса, который получает все объекты **timeOff** , которые имеют общую версию и черновик версии в период с 11 марта по 18 марта 2019 г.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9045cc88e5e68fd49e85b8333c035cabba2bc5b9
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 0f0d6e7e90898592fbd3a1ba43a18e7953c4d892
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651262"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336391"
 ---
 # <a name="accesspackageassignmentpolicy-resource-type"></a>тип ресурса accessPackageAssignmentPolicy
 
@@ -18,9 +18,9 @@ ms.locfileid: "61651262"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В управлении правами [Azure AD](entitlementmanagement-overview.md)политика назначения пакетов доступа указывает политику, в которой субъекты могут запрашивать или получать пакет доступа с помощью назначения пакета доступа. Пакет доступа может иметь нулевую или несколько политик. При получении запроса субъекта субъекту соответствует каждая политика, чтобы найти политику (если таково) с requestorSettings, которые включают этот субъект. Затем политика определяет, требуется ли для запроса утверждение, продолжительность назначения пакета доступа и требуется ли регулярное рассмотрение назначения.
+В [управлении правами Azure AD](entitlementmanagement-overview.md) политика назначения пакетов доступа указывает политику, по которой субъекты могут запрашивать или получать пакет доступа с помощью назначения пакета доступа. Пакет доступа может иметь нулевую или несколько политик. При получении запроса субъекта субъекту соответствует каждая политика, чтобы найти политику (если таково) с requestorSettings, которые включают этот субъект. Затем политика определяет, требуется ли для запроса утверждение, продолжительность назначения пакета доступа и требуется ли регулярное рассмотрение назначения.
 
-Чтобы назначить пользователя пакету доступа, создайте [accessPackageAssignmentRequest,](../api/entitlementmanagement-post-accesspackageassignmentrequests.md) который ссылается на политику назначения пакета доступа и пакета доступа.
+Чтобы назначить пользователя пакету доступа, создайте [accessPackageAssignmentRequest](../api/entitlementmanagement-post-accesspackageassignmentrequests.md) , который ссылается на политику назначения пакета доступа и пакета доступа.
 
 
 ## <a name="methods"></a>Методы
@@ -43,7 +43,7 @@ ms.locfileid: "61651262"
 |createdBy|String|Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
 |description|Строка|Описание политики.|
-|displayName|Строка|Отображает имя политики. Поддерживает `$filter` (`eq`).|
+|displayName|String|Отображает имя политики. Поддерживает `$filter` (`eq`).|
 |durationInDays|Int32|Количество дней, в течение которых назначения из этой политики будут выполняться до истечения срока их действия.|
 |expirationDateTime|DateTimeOffset|Срок действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |id|String| Только для чтения.|
@@ -54,11 +54,14 @@ ms.locfileid: "61651262"
 |вопросы|[коллекция accessPackageQuestion](accesspackagequestion.md)|Вопросы, заданные запросчику.|
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
 |accessPackage|[accessPackage](accesspackage.md)| Пакет доступа с этой политикой. Только для чтения. Допускается значение null. Поддерживает `$expand`.|
+|customExtensionHandlers|[коллекция customExtensionHandler](../resources/customextensionhandler.md)| Коллекция этапов выполнения одного или более пользовательских расширений рабочего процесса пакета доступа. Поддерживает `$expand`.| 
+
+
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -75,42 +78,32 @@ ms.locfileid: "61651262"
 
 ```json
 {
-    "id": "string",
-    "accessPackageId": "string",
-    "displayName": "string",
-    "description": "string",
-    "isDenyPolicy": false,
-    "canExtend": false,
-    "durationInDays": 365,
-    "requestorSettings": {
-        "scopeType": "string",
-        "acceptRequests": true,
-        "allowedRequestors": [{
-            "@odata.type": "#microsoft.graph.userSet"
-        }]
-    },
-    "requestApprovalSettings": {
-        "isApprovalRequired": false,
-        "isApprovalRequiredForExtension": false,
-        "isRequestorJustificationRequired": false,
-        "approvalMode": "string",
-        "approvalStages": [{
-            "approvalStageTimeOutInDays": 14,
-            "isApproverJustificationRequired": true,
-            "isEscalationEnabled": true,
-            "escalationTimeInMinutes": 11520,
-            "primaryApprovers": [{
-                "@odata.type": "#microsoft.graph.userSet"
-            }],
-            "escalationApprovers": [{
-                "@odata.type": "#microsoft.graph.userSet"
-            }]
-        }]
-    },
-    "accessReviewSettings": null,
-    "questions": [{
-        "@odata.type": "#microsoft.graph.question"
-    }]
+  "@odata.type": "#microsoft.graph.accessPackageAssignmentPolicy",
+  "id": "String (identifier)",
+  "accessPackageId": "String",
+  "displayName": "String",
+  "description": "String",
+  "canExtend": "Boolean",
+  "durationInDays": "Integer",
+  "expirationDateTime": "String (timestamp)",
+  "createdBy": "String",
+  "createdDateTime": "String (timestamp)",
+  "modifiedBy": "String",
+  "modifiedDateTime": "String (timestamp)",
+  "questions": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageMultipleChoiceQuestion"
+    }
+  ],
+  "requestorSettings": {
+    "@odata.type": "microsoft.graph.requestorSettings"
+  },
+  "requestApprovalSettings": {
+    "@odata.type": "microsoft.graph.approvalSettings"
+  },
+  "accessReviewSettings": {
+    "@odata.type": "microsoft.graph.assignmentReviewSettings"
+  }
 }
 ```
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 87413dfe2364df1b67eae3d49c50478dcd6b3d47
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3db3f6fba409d32cfbaa623e1dc7922872328d6b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62112642"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333752"
 ---
 # <a name="create-outlook-category"></a>Создание категории Outlook
 
@@ -39,17 +39,17 @@ POST /users/{id|userPrincipalName}/outlook/masterCategories
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
+|Content-Type|application/json. Обязательный.|
 
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта [OutlookCategory](../resources/outlookcategory.md) .
 
-## <a name="request-body"></a>Тело запроса
-Включите в текст запроса описание объекта [outlookCategory](../resources/outlookcategory.md) в формате JSON.
+## <a name="response"></a>Отклик
 
-## <a name="response"></a>Ответ
-
-В случае успешного выполнения этот метод возвращает код ответа `201 Created` и новый объект [outlookCategory](../resources/outlookcategory.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` отклика и [объект OutlookCategory](../resources/outlookcategory.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -63,8 +63,8 @@ Content-type: application/json
 Content-Length: 70
 
 {
-      "displayName":"Project expenses",
-      "color":"preset9"
+   "displayName": "Project expenses",
+   "color": "preset9"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -93,9 +93,9 @@ Content-Length: 70
 
 ---
 
-Включите в текст запроса описание объекта [outlookCategory](../resources/outlookcategory.md) в формате JSON.
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,10 +106,10 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
-  "id":"bac262b7-485d-4739-b436-e31467d64fac",
-  "displayName":"Project expenses",
-  "color":"preset9"
+   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
+   "id": "bac262b7-485d-4739-b436-e31467d64fac",
+   "displayName": "Project expenses",
+   "color": "preset9"
 }
 ```
 

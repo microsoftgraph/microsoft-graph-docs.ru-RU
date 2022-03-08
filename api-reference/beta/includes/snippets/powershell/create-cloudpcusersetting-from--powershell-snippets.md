@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 5348b83d8cdb25eced3dffef009e141c8ff8393f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ba05d0fc90bab5b84d2c30b95f03058853ea86fb
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126587"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334200"
 ---
 ```powershell
 
@@ -16,6 +16,10 @@ $params = @{
     DisplayName = "Example"
     SelfServiceEnabled = $false
     LocalAdminEnabled = $true
+    RestorePointSetting = @{
+        FrequencyInHours = 16
+        UserRestoreEnabled = $true
+    }
 }
 
 New-MgDeviceManagementVirtualEndpointUserSetting -BodyParameter $params

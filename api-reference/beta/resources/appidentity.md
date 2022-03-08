@@ -5,26 +5,26 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-access-reports
 author: sureshja
-ms.openlocfilehash: 7b1005b058508bdb128788836667c05dcc936dd6
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 66a830d5a030a6b3247e3265aaeaa66452a7c577
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61646981"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336930"
 ---
 # <a name="appidentity-resource-type"></a>Тип ресурса appIdentity
 
 Пространство имен: microsoft.graph
 
-Указывает удостоверение приложения, которое выполнило действие или было изменено. Этот ресурс называется API [directoryAudit.](../api/directoryaudit-get.md)
+Указывает удостоверение приложения, которое выполнило действие или было изменено. Этот ресурс называется API [directoryAudit](../api/directoryaudit-get.md) .
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|appId|String|Обозначает уникальный идентификатор GUID, представляющий идентификатор приложения в Azure Active Directory.|
+|appId|String|Ссылается на уникальный идентификатор, представляющий идентификатор приложения в Azure Active Directory.|
 |displayName|String|Ссылается на имя приложения, отображаемую на портале Azure.|
-|servicePrincipalId|String|Ссылается на уникальный GUID с указанием основного id службы в Azure Active Directory для соответствующего приложения.|
+|servicePrincipalId|String|Ссылается на уникальный идентификатор, указывающий идентификатор директора службы в Azure Active Directory для соответствующего приложения.|
 |servicePrincipalName|String|Ссылается на имя главного клиента службы — имя приложения в клиенте. |
 
 ## <a name="json-representation"></a>Представление JSON

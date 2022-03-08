@@ -5,8 +5,13 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
+ms.openlocfilehash: 5af6011c20cc85c42e3bdd72ab203ffdb178356c
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336454"
 ---
-
 # <a name="get-crosstenantaccesspolicyconfigurationdefault"></a>Get crossTenantAccessPolicyConfigurationDefault
 
 Пространство имен: microsoft.graph
@@ -23,7 +28,7 @@ doc_type: apiPageType
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
 |Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Приложение|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
+|Для приложений|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +51,7 @@ GET /policies/crossTenantAccessPolicy/default
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной `200 OK` работы этот метод возвращает код отклика и [объект crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) в тексте ответа.
 
@@ -54,6 +59,8 @@ GET /policies/crossTenantAccessPolicy/default
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_crosstenantaccesspolicyconfigurationdefault"
@@ -63,8 +70,34 @@ GET /policies/crossTenantAccessPolicy/default
 ``` http
 GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-crosstenantaccesspolicyconfigurationdefault-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a>Ответ
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-crosstenantaccesspolicyconfigurationdefault-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-crosstenantaccesspolicyconfigurationdefault-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-crosstenantaccesspolicyconfigurationdefault-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-crosstenantaccesspolicyconfigurationdefault-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-crosstenantaccesspolicyconfigurationdefault-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a>Отклик
 
 В следующем объекте ответа по умолчанию показана политика перекрестного клиента, унаследованной от Azure AD, как определено **в наборе isServiceDefault** `true`.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

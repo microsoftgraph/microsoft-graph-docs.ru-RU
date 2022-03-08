@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 967f81da4b5f1b33eed421677b1dfd45487d61ea
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 74d9cacc9f38c8693fb21b52bb194cf461b443cc
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651819"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336937"
 ---
 # <a name="create-agreement"></a>Создание соглашения
 
@@ -18,7 +18,7 @@ ms.locfileid: "61651819"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [объекта соглашения.](../resources/agreement.md)
+Создание нового [объекта соглашения](../resources/agreement.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -28,7 +28,7 @@ ms.locfileid: "61651819"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
-При вызове от имени пользователя пользователю необходимо принадлежать к одной из следующих ролей каталога. Дополнительные информацию о роли каталогов см. в встроенной роли [Azure AD:](/azure/active-directory/roles/permissions-reference)
+При вызове от имени пользователя пользователю необходимо принадлежать к одной из следующих ролей каталога. Дополнительные информацию о роли каталогов см. в [встроенных ролях Azure AD](/azure/active-directory/roles/permissions-reference):
 + Глобальный администратор
 + Администратор условного доступа
 + Администратор безопасности
@@ -44,25 +44,25 @@ POST /identityGovernance/termsOfUse/agreements
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляют представление JSON объекта [соглашения.](../resources/agreement.md)
+В теле запроса поставляют представление JSON [объекта соглашения.](../resources/agreement.md)
 
 В приведенной ниже таблице показаны обязательные свойства при создании пользователя.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка|Отображение имени соглашения.|
+|displayName|String|Отображение имени соглашения.|
 |isViewingBeforeAcceptanceRequired|Boolean|Указывает, должен ли пользователь расширять и просматривать соглашение перед принятием.|
-|files/fileName|Строка|Имя файла соглашения (например, TOU.pdf).|
+|files/fileName|String|Имя файла соглашения (например, TOU.pdf).|
 |files/isDefault|Boolean|Указывает, является ли это файл соглашения по умолчанию, если ни одна из культур не соответствует предпочтениям клиента. Если ни один файл не помечен как по умолчанию, первый будет рассматриваться как по умолчанию.|
-|файлы/язык|Строка|Культура файла соглашения в формате languagecode2-country/regioncode2. languagecode2 — это код из двух букв более низкого уровня, полученный из ISO 639-1. country/regioncode2 является производным от ISO 3166 и обычно состоит из двух верхних букв или языкового тега BCP-47 (например, en-US).|
+|файлы/язык|String|Культура файла соглашения в формате languagecode2-country/regioncode2. languagecode2 — это код из двух букв более низкого уровня, полученный из ISO 639-1. country/regioncode2 является производным от ISO 3166 и обычно состоит из двух верхних букв или языкового тега BCP-47 (например, en-US).|
 |файлы/fileData/data|Binary|Данные, представляющие условия использования документа PDF.|
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и объект `201, Created` соглашения в тексте ответа. [](../resources/agreement.md)
+В случае успешной работы этот метод возвращает код `201, Created` ответа и [объект соглашения в](../resources/agreement.md) тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В органе запроса поставляем представление JSON объекта [соглашения.](../resources/agreement.md)
+В органе запроса поставляем представление JSON [объекта соглашения.](../resources/agreement.md)
 
 
 
@@ -108,6 +108,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-agreement-from-agreements-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-agreement-from-agreements-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

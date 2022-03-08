@@ -1,23 +1,23 @@
 ---
 title: Обновление чата
 description: Обновление свойств объекта чата.
-author: bhartono
+author: anandjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 23260bb99b509a2039aec249feb392a757c4b942
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: e06367929d2fcb74e2cb21a1bb1f57cce8c3bcbc
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225450"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333794"
 ---
 # <a name="update-chat"></a>Обновление чата
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [чата.](../resources/chat.md)
+Обновление свойств объекта [чата](../resources/chat.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "62225450"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Chat.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложения | ChatSettings.ReadWrite.Chat*, Chat.ReadWrite.All |
+|Для приложений | ChatSettings.ReadWrite.Chat*, Chat.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -46,19 +46,19 @@ PATCH /chats/{chat-id}
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса поставляем JSON-представление объекта [чата.](../resources/chat.md)
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем JSON-представление объекта [чата](../resources/chat.md) .
 
 В следующей таблице показаны свойства, которые можно использовать в этом действии.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|topic|String|Название чата. Это может быть установлено только для чата со **значением chatType** `group` .|
+|topic|String|Название чата. Это может быть установлено только для чата со **значением chatType** .`group`|
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного использования этот метод возвращает код и обновленный ресурс `200 OK response` чата в тексте  отклика.
+В случае успешного использования этот метод возвращает код `200 OK response` и обновленный **ресурс чата** в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

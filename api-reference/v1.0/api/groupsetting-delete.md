@@ -5,18 +5,18 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2796e67f34bc0ee24788c71b735a3483f20d746c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9a640b25e65c8b541171d918dfa15793eb6a6dc7
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027739"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336328"
 ---
 # <a name="delete-a-group-setting"></a>Удаление параметра группы
 
 Пространство имен: microsoft.graph
 
-Удаление параметра группы.
+Удаление объекта [groupSetting](../resources/groupsetting.md) на уровне клиента или группы.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -31,10 +31,15 @@ ms.locfileid: "61027739"
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
+Удаление параметра для всех клиентов.
 ```http
-DELETE /groupSettings/{id}
-DELETE /groups/{id}/settings/{id}
+DELETE /groupSettings/{groupSettingId}
+```
 
+<!-- { "blockType": "ignored" } -->
+Удаление параметра, определенного для группы.
+```http
+DELETE /groups/{groupId}/settings/{groupSettingId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -52,14 +57,17 @@ DELETE /groups/{id}/settings/{id}
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
+
+В этом примере удаляется объект настройки группы на уровне клиента.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_groupsetting"
 }-->
-```http
+```msgraph-interactive
 DELETE https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -84,7 +92,7 @@ DELETE https://graph.microsoft.com/v1.0/groupSettings/{id}
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,16 +1,16 @@
 ---
 title: Создание timeOff
 description: Создание нового timeOff.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7d8002c040051bf179e1d5e2fc9e1c92cb71f313
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7393ef1b5d0eb10cfb230abb8441433c55330dc0
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096055"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336958"
 ---
 # <a name="create-timeoff"></a>Создание timeOff
 
@@ -18,7 +18,7 @@ ms.locfileid: "62096055"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [экземпляра timeOff](../resources/timeoff.md) в расписании. [](../resources/schedule.md)
+Создание нового [экземпляра timeOff](../resources/timeoff.md) в [расписании](../resources/schedule.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "62096055"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Schedule.ReadWrite.All* |
+|Для приложений | Schedule.ReadWrite.All* |
 
 >\***Важно:** Разрешения приложения в настоящее время доступны только в закрытом режиме и недоступны для общего пользования.
 
@@ -51,7 +51,7 @@ POST /teams/{teamId}/schedule/timesOff
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект timeOff](../resources/timeoff.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` ответа и [объект timeOff](../resources/timeoff.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -112,7 +112,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

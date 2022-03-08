@@ -5,12 +5,12 @@ author: ebasseri
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6bdb0100d017fbb53d796520dfab5b4766da7afc
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: 7e268f8f154bcc01bcf1388b73828f2bf61bdd06
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62520002"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336965"
 ---
 # <a name="riskyserviceprincipal-dismiss"></a>riskyServicePrincipal: увольнение
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "62520002"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|IdentityRiskyServicePrincipal.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|IdentityRiskyServicePrincipal.ReadWrite.All|
+|Для приложений|IdentityRiskyServicePrincipal.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,6 +55,8 @@ POST /identityProtection/riskyServicePrincipals/dismiss
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "riskyserviceprincipal_dismiss"
@@ -70,6 +72,28 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/riskyserviceprincipal-dismiss-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/riskyserviceprincipal-dismiss-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/riskyserviceprincipal-dismiss-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/riskyserviceprincipal-dismiss-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/riskyserviceprincipal-dismiss-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

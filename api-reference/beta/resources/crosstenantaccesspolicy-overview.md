@@ -1,12 +1,17 @@
 ---
 title: Обзор API параметров API параметров меж клиента
-description: 'Параметры межзонного доступа позволит управлять как взаимодействием B2B, так и непосредственным подключением B2B для вашей организации.'
+description: Параметры межзонного доступа позволит управлять как взаимодействием B2B, так и непосредственным подключением B2B для вашей организации.
 author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
+ms.openlocfilehash: d427c0cc6e0d4c1de6378556103f4efd3a10f103
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337035"
 ---
-
 # <a name="cross-tenant-access-settings-api-overview"></a>Обзор API параметров API параметров меж клиента
 
 Пространство имен: microsoft.graph
@@ -53,9 +58,11 @@ doc_type: resourcePageType
 
 API параметров меж клиента можно использовать для настройки нескольких конфигураций для допуска или блокировки доступа к организации и из нее. В следующей таблице показаны сценарии, показан пример ответа API и интерпретация этого ответа. **b2bSetting** используется в качестве места для любой входящие B2B (**b2bCollaborationInbound** или **b2bDirectConnectInbound**) или исходящие (**b2bCollaborationOutbound** или **b2bDirectConnectOutbound**) конфигурации.
 
+<br/>
+
 <table>
 <tr>
-<td> Сценарий </td> <td> Выход API </td> <td> Интерпретация </td>
+<th> Сценарий </th> <th> Выход API </th> <th> Интерпретация </th>
 </tr>
 <tr>
 <td> Блокировка всех пользователей и блокировка всех приложений </td>

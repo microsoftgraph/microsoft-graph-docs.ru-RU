@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8fa0f3f1b304c830165c30496ca7e40c1dee2dcd
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: a5c02fc2b0850ec3a58638ce98e0dac45683ee39
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266062"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332975"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>Обновление accessPackageAssignmentPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "61266062"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обнови [существующий объект accessPackageAssignmentPolicy,](../resources/accesspackageassignmentpolicy.md) чтобы изменить одно или несколько его свойств, например имя или описание отображения.
+Обнови [существующий объект accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) , чтобы изменить одно или несколько его свойств, например имя или описание отображения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,19 +40,19 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md)
+В теле запроса поставляем представление JSON объекта [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .
 
-В следующей таблице показаны свойства, необходимые при обновлении [accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md)
+В следующей таблице показаны свойства, необходимые при обновлении [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Отображает имя политики.|
-|description|Строка|Описание политики.|
-|canExtend|Логическое|Указывает, может ли пользователь продлить срок назначения пакета доступа после утверждения.|
+|description|String|Описание политики.|
+|canExtend|Boolean|Указывает, может ли пользователь продлить срок назначения пакета доступа после утверждения.|
 |durationInDays|Int32|Количество дней, в течение которых назначения из этой политики будут выполняться до истечения срока их действия.|
 |expirationDateTime|DateTimeOffset|Срок действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Кто этот пакет доступа можно запросить в этой политике.|
@@ -61,13 +61,14 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа и обновленный `200 OK` [объект accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) в тексте ответа.
-
+В случае успешного `200 OK` выполнения этот метод возвращает код ответа и обновленный [объект accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) в тексте ответа.
 
 
 ## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-update-the-details-of-a-policy"></a>Пример 1. Обновление сведений о политике
+
+#### <a name="request"></a>Запрос
 В этом обновлении политики был удален один из вариантов нескольких вариантов выбора. Будущие запросчики больше не будут иметь удаленную опцию, доступную для них.
 
 
@@ -184,7 +185,7 @@ Content-Type: application/json
 
 
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -251,6 +252,86 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
         "isSingleLineQuestion": false
     }]
+}
+```
+
+
+
+### <a name="example-2-remove-the-customextensionhandlers-from-a-policy"></a>Пример 2. Удаление настраиваемогоExtensionHandlers из политики
+
+Чтобы удалить коллекцию **настраиваемогоExtensionHandlers** и связанных с ними пользовательских объектов расширения рабочего процесса из политики, назначьте пустую коллекцию **объекту customExtensionHandlers** .
+
+#### <a name="request"></a>Запрос
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_accesspackageassignmentpolicy_delete_customExtensionHandlers"
+}
+-->
+
+```http
+PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197
+Content-Type: application/json
+
+{
+    "id": "4540a08f-8ab5-43f6-a923-015275799197",
+    "displayName": "policy with custom access package workflow extension",
+    "description": "Run specified custom access package workflow extension at different stages.",
+    "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+    "expiration": {
+        "type": "afterDuration",
+        "duration": "P365D"
+    },
+    "requestApprovalSettings": null,
+    "requestorSettings": {
+        "acceptRequests": true,
+        "scopeType": "AllExistingDirectorySubjects",
+        "allowedRequestors": []
+    },
+    "accessReviewSettings": null,
+    "customExtensionHandlers": []
+}
+```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackageassignmentpolicy-delete-customextensionhandlers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+
+#### <a name="response"></a>Отклик
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+}
+-->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "id": "4540a08f-8ab5-43f6-a923-015275799197",
+    "displayName": "policy with custom access package workflow extension",
+    "description": "Run specified custom access package workflow extension at different stages.",
+    "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+    "expiration": {
+        "type": "afterDuration",
+        "duration": "P365D"
+    },
+    "requestApprovalSettings": null,
+    "requestorSettings": {
+        "acceptRequests": true,
+        "scopeType": "AllExistingDirectorySubjects",
+        "allowedRequestors": []
+    },
+    "accessReviewSettings": null
 }
 ```
 

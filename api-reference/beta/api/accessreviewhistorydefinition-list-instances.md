@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5283ae971621745251891afac1b4fbc6ba0de736
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 58a8c61984a08e19c94fce45cd977d4b1c74268b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62803949"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332842"
 ---
 # <a name="list-instances-of-an-accessreviewhistorydefinition"></a>Экземпляры списка (из accessReviewHistoryDefinition)
 
@@ -28,7 +28,7 @@ ms.locfileid: "62803949"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.ReadWrite.All|
 
 Если подписанный пользователь не является глобальным администратором или глобальным читателем, возвращаются только определения, созданные пользователем, вписав его.
 
@@ -115,7 +115,7 @@ Content-Type: application/json
     "value": [
         {
             "id": "61a617dd-238f-4037-8fa5-d800e515f5bc",
-            "status": "Done",
+            "status": "done",
             "reviewHistoryPeriodStartDate": "2021-02-01T00:00:00Z",
             "reviewHistoryPeriodEndDate": "2021-03-01T00:00:00Z",
             "fulfilledDateTime": "2021-03-01T01:38:15.7998393Z",

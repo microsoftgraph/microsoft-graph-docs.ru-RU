@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: b47434b128e801e4bc5fbf2fef9dc59247059a10
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7416c94db0f88a298bfd243ec19e507abeb5aa3f
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136799"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337056"
 ---
 # <a name="list-usersettings"></a>Список userSettings
 
@@ -18,7 +18,7 @@ ms.locfileid: "62136799"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка [объектов cloudPcUserSetting.](../resources/cloudpcusersetting.md)
+Извлечение списка [объектов cloudPcUserSetting](../resources/cloudpcusersetting.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "62136799"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Для приложений|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/userSettings
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` и `$filter` `$expand` параметры запроса OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select`и `$filter``$expand` параметры запроса OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -51,13 +51,13 @@ GET /deviceManagement/virtualEndpoint/userSettings
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [cloudPcUserSetting](../resources/cloudpcusersetting.md) в тексте отклика.
+В случае успеха этот метод `200 OK` возвращает код отклика и коллекцию объектов [cloudPcUserSetting](../resources/cloudpcusersetting.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -121,6 +121,10 @@ Content-Type: application/json
       "displayName": "Test1",
       "selfServiceEnabled": true,
       "localAdminEnabled": false,
+      "restorePointSetting": {
+        "frequencyInHours": 16,
+        "userRestoreEnabled": true
+      },
       "lastModifiedDateTime": "2021-02-01T10:29:57Z",
       "createdDateTime": "2021-02-01T10:29:57Z"
     }

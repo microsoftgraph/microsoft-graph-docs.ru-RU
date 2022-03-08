@@ -1,16 +1,16 @@
 ---
 title: Создание timeOffReason
 description: Создание нового timeOffReason.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f07dd222ac10721ff321b75b73383a50fc8b395b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b081babc4f700d9b235eb03a48db45a933d10bec
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096091"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337539"
 ---
 # <a name="create-timeoffreason"></a>Создание timeOffReason
 
@@ -28,7 +28,7 @@ ms.locfileid: "62096091"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Schedule.ReadWrite.All* |
+|Для приложений | Schedule.ReadWrite.All* |
 
 >\***Важно:** Разрешения приложения в настоящее время доступны только в закрытом режиме и недоступны для общего пользования.
 
@@ -51,7 +51,7 @@ POST /teams/{teamId}/schedule/timeOffReasons
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект timeOffReason](../resources/timeoffreason.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` ответа и [объект timeOffReason](../resources/timeoffreason.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -103,7 +103,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

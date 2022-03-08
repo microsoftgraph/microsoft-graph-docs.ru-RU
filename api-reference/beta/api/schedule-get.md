@@ -1,16 +1,16 @@
 ---
 title: Получить расписание
-description: Извлечение свойств и связей объекта **расписания.**
-author: nkramer
+description: Извлечение свойств и связей объекта **расписания** .
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 157b8b5dd451d81dad412e275236ed5081329900
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: afa32e2025c55cb513d57ffdef560487af10773a
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62105465"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333416"
 ---
 # <a name="get-schedule"></a>Получить расписание
 
@@ -18,12 +18,12 @@ ms.locfileid: "62105465"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта [расписания.](../resources/schedule.md)
+Извлечение свойств и связей объекта [расписания](../resources/schedule.md) .
 
-Процесс создания расписания соответствует рекомендациям One API для длительных операций на основе ресурсов [(RELO).](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)
-Когда клиенты используют [метод PUT,](team-put-schedule.md)если расписание запланировали, операция обновляет расписание; в противном случае операция запускает процесс подготовки расписания в фоновом режиме.
+Процесс создания расписания соответствует [рекомендациям one API для длительных операций на основе ресурсов (RELO).](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).
+Когда клиенты используют [метод PUT](team-put-schedule.md), если расписание запланировали, операция обновляет расписание; в противном случае операция запускает процесс подготовки расписания в фоновом режиме.
 
-При расписании клиенты могут использовать метод GET, чтобы получить расписание и посмотреть свойство для текущего состояния `provisionStatus` подготовка. Если подготовка не удалась, клиенты могут получить дополнительные сведения из `provisionStatusCode` свойства.
+При расписании клиенты могут использовать метод GET `provisionStatus` , чтобы получить расписание и посмотреть свойство для текущего состояния подготовка. Если подготовка не удалась, клиенты могут получить дополнительные сведения из `provisionStatusCode` свойства.
 
 Клиенты также могут проверить конфигурацию расписания.
 
@@ -35,7 +35,7 @@ ms.locfileid: "62105465"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Schedule.Read.All, Schedule.ReadWrite.All |
+|Для приложений | Schedule.Read.All, Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -61,7 +61,7 @@ GET /teams/{teamId}/schedule
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [расписания](../resources/schedule.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и объект [расписания](../resources/schedule.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

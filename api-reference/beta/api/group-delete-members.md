@@ -1,16 +1,16 @@
 ---
 title: Удаление участника
-description: Удаление участника из Microsoft 365 группы или группы безопасности через свойство навигации участников.
+description: Удаление участника из группы Microsoft 365 или группы безопасности с помощью свойства навигации members.
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 20d51cee2eb4fc0ab9d53b9e178c04f2c851b966
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: 12802ccd5486776dcdaeeb32c10f0971c78b7f39
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201703"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333437"
 ---
 # <a name="remove-member"></a>Удаление участника
 
@@ -29,6 +29,9 @@ ms.locfileid: "62201703"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
+> [!IMPORTANT]
+> Чтобы удалить участников из группы, назначаемой для ролей, пользователю или приложению необходимо также получить разрешение *RoleManagement.ReadWrite.Directory* .
+
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -40,7 +43,7 @@ DELETE /groups/{id}/members/{id}/$ref
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

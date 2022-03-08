@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: SumitParikh
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 6c610352750c7412b0ccae3aeb2d88aa4c4e9029
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: a00f55553d381fc669cc5d78e1cb9254bccb47b0
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854400"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337504"
 ---
 # <a name="subscribedsku-resource-type"></a>Тип ресурса subscribedSku
 
@@ -36,7 +36,7 @@ ms.locfileid: "62854400"
 |id|Строка| Уникальный идентификатор объекта sku, подписка на который выполнена. Key, not nullable. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Сведения о количестве и состоянии предварительно оплаченных лицензий. |
 |servicePlans|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах обслуживания, доступных в отношении SKU. Не является недействительным |
-|skuId|GUID| Уникальный идентификатор (GUID) для SKU службы. |
+|skuId|Guid| Уникальный идентификатор (GUID) для SKU службы. |
 |skuPartNumber|String| Артикул SKU, например: AAD_PREMIUM или RMSBASIC. Чтобы получить список коммерческих подписок, приобретенных организацией, см. в [примере List subscribedSkus](../api/subscribedsku-list.md). |
 
 ## <a name="relationships"></a>Связи
@@ -63,7 +63,7 @@ ms.locfileid: "62854400"
   "id": "String (identifier)",
   "prepaidUnits": {"@odata.type": "microsoft.graph.licenseUnitsDetail"},
   "servicePlans": [{"@odata.type": "microsoft.graph.servicePlanInfo"}],
-  "skuId": "GUID",
+  "skuId": "Guid",
   "skuPartNumber": "String"
 }
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса timeOff
 description: Единица, не работая в расписании.
-author: nkramer
-localization_priority: Normal
+author: aaku
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 89b74e74b505f542730635ddc0832b834592ff4e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 21fc3395426ea6de8c564b6de92f7fa1fd32edf3
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52784999"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336902"
 ---
 # <a name="timeoff-resource-type"></a>Тип ресурса timeOff
 
@@ -24,21 +24,21 @@ ms.locfileid: "52784999"
 
 | Метод       | Тип возвращаемых данных  |Описание|
 |:---------------|:--------|:----------|
-|[Создание](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | Создание нового **объекта timeOff.**|
-|[List](../api/schedule-list-timesoff.md) | [коллекция timeOff](timeoff.md) | Получите список объектов **timeOff** в этом расписании.|
-|[получение](../api/timeoff-get.md); | [timeOff](timeoff.md) | Получите объект **timeOff** по ID.|
-|[Replace](../api/timeoff-put.md) | [timeOff](timeoff.md) | Замените **объект timeOff.**|
-|[Delete](../api/timeoff-delete.md) | Нет | Удаление объекта **timeOff** из расписания.|
+|[Создание](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | Создание нового **объекта timeOff** .|
+|[Список](../api/schedule-list-timesoff.md) | [коллекция timeOff](timeoff.md) | Получите список объектов **timeOff** в этом расписании.|
+|[Получение](../api/timeoff-get.md); | [timeOff](timeoff.md) | Получите объект **timeOff** по ID.|
+|[Replace](../api/timeoff-put.md) | [timeOff](timeoff.md) | Замените **объект timeOff** .|
+|[удаление](../api/timeoff-delete.md); | Нет | Удаление объекта **timeOff** из расписания.|
 
 ## <a name="properties"></a>Свойства
 |Имя          |Тип           |Описание                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |ID **timeOff**.|
-| userId            |`string`      |ID пользователя, назначенного **timeOff**. Обязательный.|
-| sharedTimeOff     | [timeOffItem](timeoffitem.md)  |Общая версия этого **timeOff,** которая просматривается как сотрудниками, так и руководителями. Обязательный.|
-| draftTimeOff      | [timeOffItem](timeoffitem.md)        |Черновик версии этого **timeOff,** который просматривается руководителями. Обязательный.|
-| createdDateTime       |`DateTimeOffset`        |Отметка времени, на которой впервые был создан **этот timeOff.** Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
-| lastModifiedDateTime      |`DateTimeOffset`        |Отпечаток времени, на котором в этот **раз был** обновлен последний раз. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
+| userId            |`string`      |ID пользователя, назначенного **timeOff**. Обязательный элемент.|
+| sharedTimeOff     | [timeOffItem](timeoffitem.md)  |Общая версия этого **timeOff,** которая просматривается как сотрудниками, так и руководителями. Обязательный элемент.|
+| draftTimeOff      | [timeOffItem](timeoffitem.md)        |Черновик версии этого **timeOff,** который просматривается руководителями. Обязательный элемент.|
+| createdDateTime       |`DateTimeOffset`        |Отметка времени, на которой впервые **был создан этот timeOff** . Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
+| lastModifiedDateTime      |`DateTimeOffset`        |Отпечаток времени, на котором **в этот раз был обновлен последний** раз. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
 | lastModifiedBy        | [identitySet](identityset.md)        |Удостоверение, которое в последний раз обновлялось **в этот раз.** |
 
 ## <a name="json-representation"></a>Представление JSON

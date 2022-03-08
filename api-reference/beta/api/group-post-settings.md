@@ -1,24 +1,27 @@
 ---
-title: Создание параметра каталога для групп
+title: Создание параметров
 description: Используйте этот API для создания нового параметра каталога для группы.
 author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fc706e05df060ac9c5cf850646ac95a2c48e0a4b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 64d9318b1d56094975ad92a5cb43a01269cd5c7b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135512"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332282"
 ---
-# <a name="create-a-directory-setting-on-groups"></a>Создание параметра каталога для групп
+# <a name="create-settings"></a>Создание параметров
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API для создания нового параметра каталога для группы.
+Создайте новый параметр на основе шаблонов, доступных в [directorySettingTemplates](../resources/directorysettingtemplate.md). Эти параметры могут быть на уровне клиента или на уровне группы.
+
+Параметры группы применяются только к Microsoft 365 группам. Названный шаблон `Group.Unified` можно использовать для настройки параметров Microsoft 365 групп, `Group.Unified.Guest` а названный шаблон можно использовать для настройки параметров, определенных для группы.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,50 +29,59 @@ ms.locfileid: "62135512"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
+
+Создайте параметр для всех клиентов.
+<!-- { "blockType": "ignored" } -->
+```http
+POST /settings
+```
+
+Создайте параметр, определенный для группы.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/settings
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {token}. Обязательный|
 
-## <a name="request-body"></a>Тело запроса
-В теле запроса поставляем представление JSON объекта [directorySetting.](../resources/directorysetting.md)
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта [directorySetting](../resources/directorysetting.md) .
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект directorySetting](../resources/directorysetting.md) в тексте ответа.
+В случае успешной работы этот `201 Created` метод возвращает код ответа и [объект directorySetting](../resources/directorysetting.md) в тексте ответа.
 
-## <a name="example"></a>Пример
-### <a name="request"></a>Запрос
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-create-a-setting-to-block-guests-for-a-specific-microsoft-365-group"></a>Пример 1. Создание параметра для блокировки гостей для определенной Microsoft 365 группы
+
+#### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_directorysetting_from_group"
+  "name": "create_groupsetting_from_groupsettings_for_guests"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/settings
+POST https://graph.microsoft.com/beta/groups/05aa6a98-956a-45c0-b13b-88076a23f2cd/settings
 Content-type: application/json
 
 {
-  "directorySetting": {
-    "displayName": "displayName-value",
-    "templateId": "templateId-value",
+    "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
     "values": [
-      {
-        "name": "name-value",
-        "value": "value-value"
-      }
+        {
+            "name": "AllowToAddGuests",
+            "value": "false"
+        }
     ]
-  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -92,8 +104,8 @@ Content-type: application/json
 
 
 
-### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -105,17 +117,87 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "directorySetting": {
-    "id": "id-value",
-    "displayName": "displayName-value",
-    "templateId": "templateId-value",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#settings/$entity",
+    "id": "a06fa228-3042-4662-bd09-33e298da1afe",
+    "displayName": null,
+    "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
     "values": [
-      {
-        "name": "name-value",
-        "value": "value-value"
-      }
+        {
+            "name": "AllowToAddGuests",
+            "value": "false"
+        }
     ]
-  }
+}
+```
+
+### <a name="example-2-create-a-directory-or-tenant-level-setting"></a>Пример 2. Создание каталога или параметра уровня клиента
+
+#### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "create_directorysettings"
+}-->
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/settings
+Content-type: application/json
+
+{
+    "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
+    "values": [
+        {
+            "name": "GuestUsageGuidelinesUrl",
+            "value": "https://privacy.contoso.com/privacystatement"
+        },
+        {
+            "name": "EnableMSStandardBlockedWords",
+            "value": "true"
+        },
+        {
+            "name": "EnableMIPLabels",
+            "value": "true"
+        },
+        {
+            "name": "PrefixSuffixNamingRequirement",
+            "value": "[Contoso-][GroupName]"
+        }
+    ]
+}
+```
+
+#### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directorySetting"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#settings/$entity",
+    "id": "844d252c-4de2-43eb-a784-96df77231aae",
+    "displayName": null,
+    "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
+    "values": [
+        {
+            "name": "GuestUsageGuidelinesUrl",
+            "value": "https://privacy.contoso.com/privacystatement"
+        },
+        {
+            "name": "EnableMSStandardBlockedWords",
+            "value": "true"
+        },
+        {
+            "name": "EnableMIPLabels",
+            "value": "true"
+        },
+        {
+            "name": "PrefixSuffixNamingRequirement",
+            "value": "[Contoso-][GroupName]"
+        }
+    ]
 }
 ```
 

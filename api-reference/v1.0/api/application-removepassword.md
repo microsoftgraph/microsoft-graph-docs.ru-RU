@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6dcd51654e58d0f1defa541ed58c3c205ef910b5
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 44c69ffaf2e7b7be8b751852604ee5a49981ea8c
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62347850"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337189"
 ---
 # <a name="application-removepassword"></a>приложение: removePassword
 
@@ -26,7 +26,7 @@ ms.locfileid: "62347850"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All |
-| Приложение                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+| Для приложений                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ POST /applications/{id}/removePassword
 
 | Свойство  | Тип | Описание|
 |:----------|:-----|:-----------|
-| keyId     | GUID | Уникальный идентификатор пароля. Обязательный. |
+| keyId     | Guid | Уникальный идентификатор пароля. Обязательный. |
 
 ## <a name="response"></a>Отклик
 

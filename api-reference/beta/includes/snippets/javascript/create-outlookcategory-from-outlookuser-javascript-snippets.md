@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: d5293d9b9a3966ddf19a777dc52df886251603ff1cff87d8e3b4b11b100eddf9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 823e0c95d7769a4b1f77b56cc61a620b68d17326
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57269856"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333745"
 ---
 ```javascript
 
@@ -16,8 +16,8 @@ const options = {
 const client = Client.init(options);
 
 const outlookCategory = {
-      displayName: 'Project expenses',
-      color: 'preset9'
+   displayName: 'Project expenses',
+   color: 'preset9'
 };
 
 await client.api('/me/outlook/masterCategories')

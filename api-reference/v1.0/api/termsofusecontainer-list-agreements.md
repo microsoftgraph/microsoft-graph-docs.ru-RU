@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: bc6cc601b99d132e46d5b4983c738be8973a1e6a
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 8f0181a7124d7fca9bd1e1dc7f36c20e2204be6b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650798"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336272"
 ---
 # <a name="list-agreements"></a>Список соглашений
 
@@ -43,7 +43,7 @@ GET /identityGovernance/termsOfUse/agreements
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` соглашения в тексте отклика. [](../resources/agreement.md)
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [коллекцию объектов](../resources/agreement.md) соглашения в тексте отклика.
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
 
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-agreements-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-agreements-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

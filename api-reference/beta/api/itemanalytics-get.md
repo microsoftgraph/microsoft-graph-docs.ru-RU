@@ -1,17 +1,16 @@
 ---
 author: daspek
 description: Получите itemAnalytics о представлениях, которые произошли в этом ресурсе.
-ms.date: 10/06/2017
 title: Получение аналитики
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 6366106097b4f6b9b43d8fe0eacddeaeab53826d
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: c3fc4057142e5a6706d0302328a27b703b0e9b8b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475837"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337007"
 ---
 # <a name="get-analytics"></a>Получение аналитики
 
@@ -20,10 +19,10 @@ ms.locfileid: "50475837"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получите [itemAnalytics][] о представлениях, которые произошли в этом ресурсе.
-Ресурс **itemAnalytics** — это удобный способ получения статистики активности для `allTime` и `lastSevenDays` .
-Для настраиваемого диапазона времени или интервала используйте [API getActivitiesByInterval.][]
+Ресурс **itemAnalytics** — это удобный способ получения статистики активности для `allTime` и `lastSevenDays`.
+Для настраиваемого диапазона времени или интервала используйте [API getActivitiesByInterval][] .
 
->**Примечание:** Ресурс **itemAnalytics** еще не доступен во всех [национальных развертываниях.](/graph/deployments)
+>**Примечание:** Ресурс **itemAnalytics** еще не доступен во всех [национальных развертываниях](/graph/deployments).
 
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
@@ -32,11 +31,11 @@ ms.locfileid: "50475837"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения                        | Разрешения (в порядке повышения привилегий)
-|:--------------------------------------|:-------------------------------------
-|Делегированные (рабочая или учебная учетная запись)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.
-|Для приложений                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+|Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
+|:--------------------------------------|:-------------------------------------|
+|Делегированные (рабочая или учебная учетная запись)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
+|Для приложений                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,10 +47,28 @@ GET /sites/{site-id}/analytics
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 ```
 
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
+
+## <a name="request-headers"></a>Заголовки запросов
+
+| Имя          | Описание               |
+| :------------ | :------------------------ |
+| Авторизация | Bearer {token}. Обязательный. |
+
+## <a name="request-body"></a>Текст запроса
+
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик
+
+В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию [объекта itemAnalytics][] в тексте ответа. 
+
 ## <a name="example"></a>Пример
 
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
@@ -78,7 +95,9 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 ---
 
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.itemAnalytics", "truncated": true } -->
 

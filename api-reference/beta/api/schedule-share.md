@@ -1,16 +1,16 @@
 ---
 title: 'расписание: доля'
 description: Поделитесь диапазоном времени расписания с участниками расписания.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 06622a92c35964957df9e73a7eaebd5c87b3a07d
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: da31a4a02da016f485002129b5cc3a2675a61cea
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345578"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337322"
 ---
 # <a name="schedule-share"></a>расписание: доля
 
@@ -30,7 +30,7 @@ ms.locfileid: "62345578"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Schedule.ReadWrite.All |
+|Для приложений | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ POST /teams/{teamId}/schedule/share
 
 |Параметр                   |Тип           |Описание  |
 |-----------------------|-------------------|--------------|
-| notifyTeam            |`Boolean`             |Указывает, должна ли вся команда получать видимое уведомление об этом действии, или только сотрудникам, у которых назначена смена, которая была общей. Обязательный.       |
+| notifyTeam            |`Boolean`             |Указывает, должна ли вся команда получать видимое уведомление об этом действии, или только сотрудникам, у которых назначена смена, которая была общей. Обязательный элемент.       |
 | startDateTime         |`DateTimeOffset`   |Время начала обмена сменами в расписании. Обязательный элемент.   |
 | endDateTime           |`DateTimeOffset`   | Конечный период для обмена сменами в расписании до.   |
 

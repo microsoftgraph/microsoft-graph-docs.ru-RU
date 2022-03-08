@@ -1,14 +1,14 @@
 ---
 title: Навигация по SDK Graph PowerShell
-description: SDK Graph PowerShell содержит большое количество команд. Узнайте, как найти нужные команды для того, чего вы хотите достичь.
+description: SDK Graph PowerShell microsoft содержит большое количество команд. Узнайте, как найти нужные команды для того, чего вы хотите достичь.
 ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: c4e127df5f8703df6712cc8a28cf0ace078694d6
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: 2c4135691712bcc6cbe8a32a776aa40844ec668e
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894784"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336223"
 ---
 # <a name="navigating-the-microsoft-graph-powershell-sdk"></a>Навигация по SDK Graph PowerShell
 
@@ -36,7 +36,7 @@ API Graph Microsoft является огромным и постоянно ра
 
 Для функций и действий это немного сложнее. API в Microsoft Graph, которые реализуются в качестве функций или действий OData, обычно называются с по крайней мере глаголом. Глагол соответствующей команды основан на глаголе в имени функции или действия. Однако глаголы команд в PowerShell должны соответствовать определенным правилам [именования,](/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands) поэтому это может привести к неинтуитивным сопоставлениям между именами и командами.
 
-Рассмотрим несколько примеров. [API getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0&preserve-view=true) использует `get`и `Get` является утвержденным глаголом PowerShell, поэтому его командой является `Get-MgUserCalendarSchedule`. [API](/graph/api/event-cancel?view=graph-rest-beta&preserve-view=true) отмены события, с другой стороны, использует не утвержденный глагол .`cancel` Утвержденный глагол для отмены или прекращения что-то есть `Stop`, так что это команда `Stop-MgUserEvent`. Наконец, [глагол API snoozeReminder](/graph/api/event-snoozereminder?view=graph-rest-1.0&preserve-view=true) не `snooze`имеет эквивалента, утвержденного PowerShell. Для API используется глагол SDK `Invoke`, чтобы команда API `Invoke-MgSnoozeUserEventReminder`была .
+Рассмотрим несколько примеров. [API getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0&preserve-view=true) использует `get`и `Get` является утвержденным глаголом PowerShell, поэтому его командой является `Get-MgUserCalendarSchedule`. [API](/graph/api/event-cancel?view=graph-rest-beta&preserve-view=true) отмены события, с другой стороны, использует не утвержденный глагол .`cancel` Утвержденный глагол для отмены или прекращения что-то есть `Stop`, поэтому команда `Stop-MgUserEvent`. Наконец, [глагол API snoozeReminder](/graph/api/event-snoozereminder?view=graph-rest-1.0&preserve-view=true) не `snooze`имеет эквивалента, утвержденного PowerShell. Для API используется глагол SDK `Invoke`, чтобы команда API `Invoke-MgSnoozeUserEventReminder`была .
 
 ### <a name="command-nouns"></a>Существимы команды
 
@@ -65,7 +65,7 @@ Get-Help Get-MgUser -Detailed
 
 ## <a name="finding-available-commands"></a>Поиск доступных команд
 
-Иногда просто знать конвенции имен не достаточно, чтобы угадать правую команду. В этом случае можно использовать команду для `Get-Command` поиска доступных команд в SDK. Например, если вы ищете команды, связанные с Microsoft Teams, можно запустить следующую команду.
+Иногда просто знать конвенции имен не достаточно, чтобы угадать правую команду. В этом случае можно использовать команду для `Get-Command` поиска доступных команд в SDK. Например, если вы ищете команды, связанные с Microsoft Teams, можно выполнить следующую команду.
 
 ```powershell
 Get-Command -Module Microsoft.Graph* *team*

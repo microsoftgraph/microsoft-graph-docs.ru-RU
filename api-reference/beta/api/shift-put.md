@@ -1,16 +1,16 @@
 ---
 title: Замена смены
 description: Замените существующую смену.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a829b88600e5f2cfbc21a193c7e8ebf0ca95e6c5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3706b0f2c9df2ae7ed85fae8ad7396937d3d2605
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61002351"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337231"
 ---
 # <a name="replace-shift"></a>Замена смены
 
@@ -18,9 +18,9 @@ ms.locfileid: "61002351"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Замените [существующий сдвиг.](../resources/shift.md)
+Замените существующую [смену](../resources/shift.md).
 
-Если указанной [смены](../resources/shift.md) не существует, этот метод `404 Not found` возвращается.
+Если указанной [смены](../resources/shift.md) не существует, этот метод возвращается `404 Not found`.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -49,11 +49,11 @@ PUT /teams/{teamId}/schedule/shifts/{shiftId}
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [переноса.](../resources/shift.md)
+В теле запроса поставляем представление JSON объекта [переноса](../resources/shift.md) .
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [переноса](../resources/shift.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и объект [переноса](../resources/shift.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

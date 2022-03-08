@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 8b94a9fe36b0ffb482644758b382150c1f71c502
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 1fd97e3ca5a01e87cfc0c204504c1524b8e2f15c
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854001"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336762"
 ---
 # <a name="resourceaccess-resource-type"></a>тип ресурса ResourceAccess
 
@@ -41,7 +41,7 @@ ms.locfileid: "62854001"
 
 ```json
 {
-  "id": "GUID",
+  "id": "Guid",
   "type": "String"
 }
 

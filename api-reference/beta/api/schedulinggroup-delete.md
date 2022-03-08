@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта schedulingGroup
 description: Пометить группу планирования как неактивной, установив ее свойство isActive
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1980b36f2f3d26ae70f7609c9fc2d5384fa9e232
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 414bcf4d355e4c1ef337c2a291f64326041b5845
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62102328"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337532"
 ---
 # <a name="delete-schedulinggroup"></a>Удаление объекта schedulingGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "62102328"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Пометить группу планирования](../resources/schedulinggroup.md) как неактивной, установив ее **свойство isActive.**
+[Пометить группу планирования](../resources/schedulinggroup.md) как неактивной, установив ее **свойство isActive**.
 Этот метод не удаляет [группу планирования из](../resources/schedulinggroup.md) расписания. [Существующие](../resources/shift.md) экземпляры переноса, назначенные группе планирования, остаются частью группы.
 
 ## <a name="permissions"></a>Разрешения
@@ -29,7 +29,7 @@ ms.locfileid: "62102328"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Schedule.ReadWrite.All |
+|Для приложений | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ DELETE /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

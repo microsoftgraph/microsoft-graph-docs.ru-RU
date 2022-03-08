@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f3902d3e1dffd6396c57d948dc209d028197a015
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: d026b9be994cd5f4cf3b7613ed726c8d9f8a14fd
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201367"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333801"
 ---
 # <a name="add-members"></a>Добавление участников
 
@@ -23,10 +23,10 @@ ms.locfileid: "62201367"
 Можно добавить пользователей, устройства, главные службы или другие группы. 
 
 > [!IMPORTANT]
-> + Можно добавлять членов только в группы безопасности и Microsoft 365. Дополнительные сведения см. в [группах Только в Azure AD](/graph/api/resources/groups-overview#group-types-in-azure-ad-and-microsoft-graph)и Microsoft Graph.
+> + Вы можете добавить участников только в группы безопасности и группы Microsoft 365. Дополнительные сведения см. в разделе [Только типы групп в Azure AD и Microsoft Graph](/graph/api/resources/groups-overview#group-types-in-azure-ad-and-microsoft-graph).
 > + Вы не можете добавлять группы безопасности в группы Microsoft 365.
 > + Вы не можете добавлять группы Microsoft 365 в группы безопасности или другие группы Microsoft 365.
-> + Группа безопасности может иметь пользователей, устройств, групп или директоров служб в качестве членов, в то время как Microsoft 365 группы могут иметь только пользователей в качестве ее членов.
+> + Группа безопасности может содержать пользователей, устройства, группы или субъекты-службы в качестве участников, а группа Microsoft 365 может содержать в качестве участников только пользователей.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -37,6 +37,9 @@ ms.locfileid: "62201367"
 |Делегированные (рабочая или учебная учетная запись) | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+
+> [!IMPORTANT]
+> Чтобы добавить участников в группу, назначимую роли, пользователю или приложению для вызова также должно быть назначено разрешение *RoleManagement.ReadWrite.Directory* .
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -98,7 +101,7 @@ Content-type: application/json
 
 ---
 
-В теле запроса устройте JSON-представление объекта `id` [directoryObject](../resources/directoryobject.md), [пользователя](../resources/user.md)или группового объекта, который необходимо добавить. [](../resources/group.md)
+В теле запроса добавьте JSON-представление `id` объекта [directoryObject](../resources/directoryobject.md), [пользователя](../resources/user.md) или группы, который необходимо добавить[](../resources/group.md).
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример ответа.

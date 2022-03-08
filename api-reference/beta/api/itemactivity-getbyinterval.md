@@ -1,17 +1,16 @@
 ---
 author: daspek
 description: Получите itemActivityStats для действий, которые проходили в этом ресурсе в течение указанного интервала времени.
-ms.date: 10/06/2017
 title: Получать статистику активности элементов по интервалу
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: 112c08515e053cde7ff3e2d30965f1c9b1400629
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.prod: files
+ms.openlocfilehash: 731cb1d9e93a478e9ca3159c5a703c163deb0e41
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50626105"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333780"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Получать статистику активности элементов по интервалу
 
@@ -21,21 +20,19 @@ ms.locfileid: "50626105"
 
 Получите [itemActivityStats][] для действий, которые проходили в этом ресурсе в течение указанного интервала времени.
 
->**Примечание:** Ресурс **itemAnalytics** еще не доступен во всех [национальных развертываниях.](/graph/deployments)
+>**Примечание:** Ресурс **itemAnalytics** еще не доступен во всех [национальных развертываниях](/graph/deployments).
 
 Агрегаты аналитики могут быть недоступны для всех типов действий.
-
-[itemActivityStats]: ../resources/itemactivitystat.md
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения                        | Разрешения (в порядке повышения привилегий)
-|:--------------------------------------|:-------------------------------------
-|Делегированные (рабочая или учебная учетная запись)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.
-|Для приложений                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+|Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
+|:--------------------------------------|:-------------------------------------|
+|Делегированные (рабочая или учебная учетная запись)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
+|Для приложений                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,12 +50,27 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 |:---------------|:-------------------|:---------------------------------------
 | startDateTime  | string (timestamp) | Время начала, за которое можно агрегировать действия.
 | endDateTime    | string (timestamp) | Конечный период, за который можно агрегировать действия.
-| interval       | Строка             | Интервал агрегации.
+| interval       | string             | Интервал агрегации.
+
+## <a name="request-headers"></a>Заголовки запросов
+
+| Имя          | Описание               |
+| :------------ | :------------------------ |
+| Авторизация | Bearer {token}. Обязательный. |
+
+## <a name="request-body"></a>Текст запроса
+
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик
+
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект itemActivityStats][] в тексте ответа.
 
 ## <a name="example"></a>Пример
 
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-activities-by-interval" } -->
@@ -85,7 +97,9 @@ GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='20
 ---
 
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivityStat)", "truncated": true } -->
 
@@ -122,6 +136,8 @@ Content-type: application/json
     ]
 }
 ```
+
+[itemActivityStats]: ../resources/itemactivitystat.md
 
 <!--
 {

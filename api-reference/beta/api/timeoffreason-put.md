@@ -1,16 +1,16 @@
 ---
 title: Замените timeOffReason
 description: Замените существующее времяOffReason.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a6b3f24d4b1fe2b52d161f4c02afb1ce6734e585
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d8486f3ca4cf04160d4025ae26778ba76e857f36
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60977372"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333346"
 ---
 # <a name="replace-timeoffreason"></a>Замените timeOffReason
 
@@ -20,7 +20,7 @@ ms.locfileid: "60977372"
 
 Замените [существующее времяOffReason](../resources/timeoffreason.md).
 
-Если указанного [времениOffReason](../resources/timeoffreason.md) не существует, этот метод `404 Not found` возвращается.
+Если указанного [времениOffReason](../resources/timeoffreason.md) не существует, этот метод возвращается `404 Not found`.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -53,11 +53,11 @@ PUT /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [TimeOffReason.](../resources/timeoffreason.md)
+В теле запроса поставляем представление JSON объекта [TimeOffReason](../resources/timeoffreason.md) .
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект timeOffReason](../resources/timeoffreason.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект timeOffReason](../resources/timeoffreason.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -106,7 +106,7 @@ Prefer: return=representation
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

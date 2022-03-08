@@ -5,20 +5,20 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8b4d960faec1363a0acc37587af4a0c39514c53e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9a4a2ad025ad039bf869b68ad6ea51462670973b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132003"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336867"
 ---
 # <a name="replace-shift"></a>Замена смены
 
 Пространство имен: microsoft.graph
 
-Замените [существующий сдвиг.](../resources/shift.md)
+Замените существующую [смену](../resources/shift.md).
 
-Если указанной [смены](../resources/shift.md) не существует, этот метод `404 Not found` возвращается.
+Если указанной [смены](../resources/shift.md) не существует, этот метод возвращается `404 Not found`.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,14 +28,14 @@ ms.locfileid: "62132003"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Schedule.ReadWrite.All |
+|Для приложений | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /teams/{teamId}/schedule/shifts/{shiftId}
+PUT /teams/{teamId}/schedule/shifts/{shiftId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -47,11 +47,11 @@ PATCH /teams/{teamId}/schedule/shifts/{shiftId}
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [переноса.](../resources/shift.md)
+В теле запроса поставляем представление JSON объекта [переноса](../resources/shift.md) .
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [переноса](../resources/shift.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и объект [переноса](../resources/shift.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -66,7 +66,7 @@ PATCH /teams/{teamId}/schedule/shifts/{shiftId}
   "name": "shift-put"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
+PUT https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 Content-type: application/json
 Prefer: return=representation
 
@@ -150,7 +150,7 @@ Prefer: return=representation
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

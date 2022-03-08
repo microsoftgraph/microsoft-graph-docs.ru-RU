@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 685f2eacc6585c701ffe38e68542a397080c409a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 384485bb22f118b334a95883a401b3b71a38b503
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126586"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334242"
 ---
 # <a name="create-cloudpcusersetting"></a>Создание cloudPcUserSetting
 
@@ -18,7 +18,7 @@ ms.locfileid: "62126586"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [объекта cloudPcUserSetting.](../resources/cloudpcusersetting.md)
+Создание нового [объекта cloudPcUserSetting](../resources/cloudpcusersetting.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "62126586"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.ReadWrite.All|
+|Для приложений|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,20 +50,21 @@ POST /deviceManagement/virtualEndpoint/userSettings
 
 ## <a name="request-body"></a>Текст запроса
 
-В корпусе запроса поставляем представление JSON объекта [cloudPcUserSetting.](../resources/cloudpcusersetting.md)
+В корпусе запроса поставляем представление JSON объекта [cloudPcUserSetting](../resources/cloudpcusersetting.md) .
 
-В следующей таблице показаны свойства, необходимые при создании [cloudPcUserSetting.](../resources/cloudpcusersetting.md)
+В следующей таблице показаны свойства, необходимые при создании [cloudPcUserSetting](../resources/cloudpcusersetting.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Имя параметра, которое отображается в пользовательском интерфейсе. |
-|localAdminEnabled|Логический|Чтобы включить локальный параметр администрирования, измените этот параметр на `True` .  |
-|selfServiceEnabled|Логический|Чтобы включить параметр самообслуживки, измените этот параметр на `True` . |
+|localAdminEnabled|Boolean|Чтобы включить локальный параметр администрирования, измените этот параметр на `True`.  |
+|selfServiceEnabled|Boolean|Чтобы включить параметр самообслуживки, измените этот параметр на `True`. |
+|restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Определяет, как часто создается точка восстановления (то есть создается снимок) для пользовательских облачных ПК (по умолчанию — 12 часов), и разрешено ли пользователю восстанавливать собственные облачные КОМПЬЮТЕРы в резервной копии, выполненной в определенный момент времени.|
 |lastModifiedDateTime|DateTimeOffset|Последняя дата и время изменения параметра. Тип Timestamp представляет сведения о дате и времени с помощью формата ISO 8601 и всегда находится во времени UTC. Например, полночь UTC 1 января 2014 г. выглядит так: '2014-01-01T00:00:00Z'. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект cloudPcUserSetting](../resources/cloudpcusersetting.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` отклика и [объект cloudPcUserSetting](../resources/cloudpcusersetting.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -83,7 +84,11 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.cloudPcUserSetting",
   "displayName": "Example",
   "selfServiceEnabled": false,
-  "localAdminEnabled": true
+  "localAdminEnabled": true,
+  "restorePointSetting": {
+    "frequencyInHours": 16,
+    "userRestoreEnabled": true
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -132,6 +137,10 @@ Content-Type: application/json
   "displayName": "Example",
   "selfServiceEnabled": false,
   "localAdminEnabled": true,
+  "restorePointSetting": {
+    "frequencyInHours": 16,
+    "userRestoreEnabled": true
+  },
   "lastModifiedDateTime": "2021-02-01T10:29:57Z"  
 }
 ```

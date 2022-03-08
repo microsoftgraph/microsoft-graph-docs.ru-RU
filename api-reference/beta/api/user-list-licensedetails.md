@@ -1,16 +1,16 @@
 ---
 title: Перечисление licenseDetails
 description: Извлечение списка объектов licenseDetails.
-author: jpettere
+author: cindycrane
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 63cae46c0b6cc33eae932ababe683a147ceb1df1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6500cf34bad41bdfd08e8d8624eae35290ebbb16
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119671"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337224"
 ---
 # <a name="list-licensedetails"></a>Перечисление licenseDetails
 
@@ -41,14 +41,14 @@ GET /users/{id}/licenseDetails
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Код &lt; bearer&gt;|
+| Авторизация  | Код bearer &lt;&gt;|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [licenseDetails](../resources/licensedetails.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию объектов [licenseDetails](../resources/licensedetails.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 

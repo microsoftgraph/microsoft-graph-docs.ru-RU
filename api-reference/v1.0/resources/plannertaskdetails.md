@@ -1,30 +1,30 @@
 ---
 title: тип ресурса plannerTaskDetails
-description: Дополнительные сведения о задаче представляет ресурс **plannerTaskDetails.** Каждый объект задачи имеет объект подробностей.
+description: Представляет дополнительные сведения о задаче. Каждый объект задачи имеет объект подробностей.
 ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 54d15bdd49d7f8bc61dcc057cf77dd710ca0d8df
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7003d0193a60c3a3bf66effe0f4bc4b03eb2f392
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59052869"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337427"
 ---
 # <a name="plannertaskdetails-resource-type"></a>тип ресурса plannerTaskDetails
 
 Пространство имен: microsoft.graph
 
-Дополнительные сведения о задаче представляет ресурс **plannerTaskDetails.** Каждый [объект](plannertask.md) задачи имеет объект подробностей.
+Представляет дополнительные сведения о задаче. [Каждый объект](plannertask.md) задачи имеет объект подробностей.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта plannerTaskDetails](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md); |Чтение свойств и связей **объекта plannerTaskDetails.**|
-|[Обновление](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md);    |Объект **Update plannerTaskDetails.** |
+|[Получение объекта plannerTaskDetails](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md); |Чтение свойств и связей **объекта plannerTaskDetails** .|
+|[Обновление](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md);    |Объект **Update plannerTaskDetails** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -32,15 +32,15 @@ ms.locfileid: "59052869"
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|Коллекция элементов контрольного списка задачи.|
 |description|Строка|Описание задачи.|
 |id|String| Только для чтения. ID сведений о задачах. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
-|previewType|string|Устанавливает тип предварительного просмотра задачи. Допустимые значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. При `automatic` задав показанный предварительный просмотр, приложение будет просматривать задачу.|
+|previewType|string|Устанавливает тип предварительного просмотра задачи. Допустимые значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. При задав `automatic` показанный предварительный просмотр, приложение будет просматривать задачу.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|Коллекция ссылок на задачу.|
 
-## <a name="relationships"></a>Отношения
-Нет
+## <a name="relationships"></a>Связи
+Отсутствуют.
 
 
-## <a name="json-representation"></a>Представление JSON
-Ниже представлено описание ресурса в формате JSON.
+## <a name="json-representation"></a>Представление в формате JSON
+Ниже указано представление ресурса в формате JSON.
 
 <!--{
   "blockType": "resource",
@@ -57,7 +57,6 @@ ms.locfileid: "59052869"
   "previewType": "string",
   "references": {"@odata.type": "microsoft.graph.plannerExternalReferences"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

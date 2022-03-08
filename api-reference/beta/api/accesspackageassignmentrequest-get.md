@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6d641e1531efbe6e3d72c69799f64756ebe568bb
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 279ee832c072abe460e16a885bfdc69655b5b283
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091205"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332968"
 ---
 # <a name="get-accesspackageassignmentrequest"></a>Получить accessPackageAssignmentRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "62091205"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении правами Azure AD](../resources/entitlementmanagement-overview.md)извлекайте свойства и связи объекта [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)
+В [управлении правами Azure AD](../resources/entitlementmanagement-overview.md) извлекайте свойства и связи объекта  [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "62091205"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Для приложений                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{i
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметр запроса OData для расширения связей, получения `$expand` `accessPackage` и `requestor` `acccessPackageAssignment` .  Например, чтобы получить цель назначения пакета доступа, включайте `$expand=accessPackageAssignment($expand=target)` в запрос.  Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$expand` запроса OData для расширения связей, `accessPackage`получения и `requestor` `acccessPackageAssignment`.  Например, чтобы получить цель назначения пакета доступа, включайте `$expand=accessPackageAssignment($expand=target)` в запрос.  Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,13 +48,13 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{i
 |:----------|:----------|
 | Авторизация | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика и запрашиваемого объекта `200 OK` [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) в тексте ответа.
+В случае успешного выполнения этот `200 OK` метод возвращает код отклика и запрашиваемого объекта [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -115,12 +115,29 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "433dafca-5047-4614-95f7-a03510b1ded3",
-  "requestType": "AdminAdd",
-  "requestState": "Delivered",
-  "requestStatus": "Fulfilled",
-  "isValidationOnly": false,
-  "createdDateTime": "2019-10-25T22:55:11.623Z"
+    "id": "c0cfd117-f90e-4f48-8226-e282a2ae752c",
+    "requestType": "UserAdd",
+    "requestState": "delivered",
+    "requestStatus": "Delivered",
+    "createdDateTime": "2022-01-07T00:51:12.817Z",
+    "completedDate": "2022-01-07T00:53:15.127Z",
+    "schedule": {
+        "startDateTime": null,
+        "recurrence": null,
+        "expiration": {
+            "endDateTime": null,
+            "duration": null,
+            "type": "notSpecified"
+        }
+    },
+    "customExtensionHandlerInstances": [
+        {
+            "status": "requestReceived",
+            "externalCorrelationId": "08585600902100964604743022906CU13",
+            "customExtensionId": "e59ef33d-7bc4-4b15-8d3c-01153de8a498",
+            "stage": "assignmentRequestCreated"
+        }
+    ]
 }
 ```
 

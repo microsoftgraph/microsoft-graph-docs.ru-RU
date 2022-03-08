@@ -1,16 +1,16 @@
 ---
 title: Добавление участника в чат
 description: Добавьте conversationMember в чат.
-author: bhartono
+author: anandjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: b4d8bc91aa3b6632ecb2a67a1d9bfaf2c0ac5f89
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 1042c358d1588bbe4cae1af4998aea1ce8c6e1e3
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225443"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334354"
 ---
 # <a name="add-member-to-a-chat"></a>Добавление участника в чат
 
@@ -18,7 +18,7 @@ ms.locfileid: "62225443"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление [conversationMember](../resources/conversationmember.md) в [чат.](../resources/chat.md)
+Добавьте [conversationMember](../resources/conversationmember.md) в [чат](../resources/chat.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "62225443"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChatMember.ReadWrite, Chat.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения| Chat.Manage.Chat*, ChatMember.ReadWrite.All, Chat.ReadWrite.All |
+|Для приложений| Chat.Manage.Chat*, ChatMember.ReadWrite.All, Chat.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -50,7 +50,7 @@ POST /chats/{chat-id}/members
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и заглавную ссылку Location, которая предоставляет URL-адрес вновь созданному `201 Created` объекту-члену.
+В случае успешной работы этот `201 Created` метод возвращает код отклика и заглавную ссылку Location, которая предоставляет URL-адрес вновь созданному объекту-члену.
 
 ## <a name="examples"></a>Примеры
 
@@ -123,7 +123,7 @@ HTTP/1.1 201 Created
 Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
-### <a name="example-2-adding-a-single-member-to-a-microsoft-teams-chat-sharing-no-chat-history"></a>Пример 2. Добавление одного члена в чат Microsoft Teams, не делясь историей чата
+### <a name="example-2-adding-a-single-member-to-a-microsoft-teams-chat-sharing-no-chat-history"></a>Пример 2. Добавление одного участника в чат Microsoft Teams и отсутствие истории чата
 
 #### <a name="request"></a>Запрос
 
@@ -192,7 +192,7 @@ HTTP/1.1 201 Created
 Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
-### <a name="example-3-adding-a-single-member-to-a-microsoft-teams-chat-sharing-the-whole-history-of-the-chat"></a>Пример 3. Добавление одного члена в Microsoft Teams чат, общий доступ к всей истории чата
+### <a name="example-3-adding-a-single-member-to-a-microsoft-teams-chat-sharing-the-whole-history-of-the-chat"></a>Пример 3. Добавление одного участника в чат Microsoft Teams, общий доступ к всей истории чата
 
 #### <a name="request"></a>Запрос
 

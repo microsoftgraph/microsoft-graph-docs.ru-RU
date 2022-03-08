@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0a0984bf8ee84111132612677a202db93be70a2c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4c10e9b12bb0073cdc81994e7f03430aad55c1e9
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114393"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332625"
 ---
 # <a name="create-extensionproperty"></a>Создание extensionProperty
 
@@ -18,7 +18,7 @@ ms.locfileid: "62114393"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новое [определение extensionProperty.](../resources/extensionproperty.md) Эту операцию можно использовать для добавления настраиваемого значения свойства к целевому типу объекта, определенному в extensionProperty, с помощью стандартных запросов на создание и обновление целевого объекта.
+Создайте новое [определение extensionProperty](../resources/extensionproperty.md) . Эту операцию можно использовать для добавления настраиваемого значения свойства к целевому типу объекта, определенному в extensionProperty, с помощью стандартных запросов на создание и обновление целевого объекта.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -58,7 +58,7 @@ POST /applications/{id}/extensionProperties
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `201, Created` новый [объект extensionProperty](../resources/extensionproperty.md) в тексте ответа.
+В случае успешной работы этот `201, Created` метод возвращает код ответа и новый [объект extensionProperty](../resources/extensionproperty.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -73,14 +73,14 @@ POST /applications/{id}/extensionProperties
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/applications/{id}/extensionProperties
+POST https://graph.microsoft.com/beta/applications/fd918e4b-c821-4efb-b50a-5eddd23afc6f/extensionProperties
 Content-type: application/json
 
 {
-    "name": "extensionName",
-    "dataType": "string",
+    "name": "jobGroup",
+    "dataType": "String",
     "targetObjects": [
-        "Application"
+        "User"
     ]
 }
 ```
@@ -113,7 +113,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект extensionProperty](../resources/extensionProperty.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` ответа и [объект extensionProperty](../resources/extensionProperty.md) в тексте ответа.
 
 <!-- {
   "blockType": "response",
@@ -126,14 +126,15 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "a2c459db-f5dc-4328-ae9b-118e88d04d19",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('fd918e4b-c821-4efb-b50a-5eddd23afc6f')/extensionProperties/$entity",
+    "id": "da38c7b1-133e-4a79-abcd-e2fd586ce621",
     "deletedDateTime": null,
-    "appDisplayName": "Display name",
-    "name": "extension_b3efaf8f68a44275abcff28ef86b2ee3_extensionName",
+    "appDisplayName": "b2c-extensions-app. Do not modify. Used by AADB2C for storing user data.",
     "dataType": "String",
     "isSyncedFromOnPremises": false,
+    "name": "extension_25883231668a43a780b25685c3f874bc_jobGroup",
     "targetObjects": [
-        "Application"
+        "User"
     ]
 }
 ```

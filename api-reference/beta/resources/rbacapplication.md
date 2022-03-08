@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса rbacApplication
 description: Контейнер управления ролью для унифицированных определений ролей и назначений ролей для Microsoft 365 поставщиков RBAC.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: e6157355fe71d0643c9fff354a4932fc020a9ffd
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 74b6fe87456108ba66bf4db4363434cc45133ce9
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454187"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336769"
 ---
 # <a name="rbacapplication-resource-type"></a>Тип ресурса rbacApplication
 
@@ -26,6 +26,7 @@ ms.locfileid: "58454187"
 |:-------------|:------------|:------------|
 | [Создание unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Создайте новую унифицированную функциюRoleAssignment, разместив в коллекции roleAssignments. |
 | [Список объектов roleAssignment](../api/rbacapplication-list-roleassignments.md) | [коллекция unifiedRoleAssignment](unifiedroleassignment.md) | Получите коллекцию объектов unifiedRoleAssignment. Только определенные экземпляры можно запрашивать, фильтруя на roleDefitionId или principalId. |
+| [Список transitiveRoleAssignments](../api/rbacapplication-list-transitiveroleassignments.md) | [коллекция unifiedRoleAssignment](unifiedroleassignment.md) | Получите прямые и транзитные унифицированные унифицированные функции, назначенные определенному принципу. Необходимо указать principalId. |
 | [Создание unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Создайте новое единоеRoleDefinition, разместив в коллекции roleDefinitions. |
 | [Перечисление объектов roleDefinition](../api/rbacapplication-list-roledefinitions.md) | [коллекция unifiedRoleDefinition](unifiedroledefinition.md) | Получите коллекцию объектов unifiedRoleDefinition. |
 | [roleSchedules](../api/rbacapplication-roleschedules.md) | [коллекция unifiedRoleScheduleBase](unifiedroleschedulebase.md) | Функция получения коллекции объектов unifiedRoleScheduleBase. |
@@ -38,6 +39,7 @@ ms.locfileid: "58454187"
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
+|resourceNamespaces|[коллекция unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md)|Ресурс, представляючий коллекцию связанных действий.|
 |roleAssignments|[коллекция unifiedRoleAssignment](../resources/unifiedroleassignment.md)| Ресурс для предоставления доступа пользователям или группам. |
 |roleDefinitions|[коллекция unifiedRoleDefinition](../resources/unifiedroledefinition.md)| Ресурс, представляющий роли, разрешенные поставщиками RBAC, и разрешения, присвоенные ролям. |
 |roleAssignmentApprovals|[коллекция утверждений](../resources/approval.md)| Решения, связанные с утверждением назначения ролей.|
@@ -47,7 +49,7 @@ ms.locfileid: "58454187"
 |roleEligibilityScheduleInstances|[коллекция unifiedRoleEligibilityScheduleInstance](../resources/unifiedRoleEligibilityScheduleInstance.md)| Примеры подходящих назначений ролей через Azure AD управление привилегированными пользователями. |
 |roleEligibilityScheduleRequests|[коллекция unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md)| Запросы на подходящие назначения ролей через Azure AD управление привилегированными пользователями. |
 |roleEligibilitySchedules|[коллекция unifiedRoleEligibilitySchedule](../resources/unifiedRoleEligibilitySchedule.md)| Расписание назначений подходящих ролей через Azure AD управление привилегированными пользователями. |
-
+|transitiveRoleAssignments|[коллекция unifiedRoleAssignment](../resources/unifiedroleassignment.md)| Ресурс для предоставления доступа к пользователям или группам, которые являются транзитными. |
 
 
 ## <a name="json-representation"></a>Представление JSON

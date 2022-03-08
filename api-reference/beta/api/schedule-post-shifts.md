@@ -1,16 +1,16 @@
 ---
 title: Создание смены
 description: Создайте новую смену.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bf7b80efd09f7ddc937f23beddf4d5dc60e2e7c4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2da457fd8c08e83a322fb71174dae4a67fba8122
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125515"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63331960"
 ---
 # <a name="create-shift"></a>Создание смены
 
@@ -18,7 +18,7 @@ ms.locfileid: "62125515"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [экземпляра переноса](../resources/shift.md) в [расписании.](../resources/schedule.md)
+Создание нового [экземпляра смены](../resources/shift.md) в [расписании](../resources/schedule.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "62125515"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Schedule.ReadWrite.All* |
+|Для приложений | Schedule.ReadWrite.All* |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ POST /teams/{teamId}/schedule/shifts
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и объект `201 Created` [переноса](../resources/shift.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` отклика и объект [переноса](../resources/shift.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -131,7 +131,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

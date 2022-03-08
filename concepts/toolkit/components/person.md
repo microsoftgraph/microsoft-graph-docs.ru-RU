@@ -3,12 +3,12 @@ title: Компонент пользователя в Microsoft Graph Toolkit
 description: Компонент пользователя используется для отображения пользователя или контакта с помощью его фотографии, имени и/или адреса электронной почты.
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: ab941533b816d80c490c74e157f3d6aa09760928
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 59f2c6f286aa176ea2ebdad0044388bcfb25f896
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61859955"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336111"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Компонент пользователя в Microsoft Graph Toolkit
 
@@ -50,7 +50,7 @@ ms.locfileid: "61859955"
 
   Если изображение не предоставлено, оно будет получено (при наличии).
 
-* По умолчанию компонент пользователя запрашивает только стандартный набор свойств Graph [Майкрософт.](/graph/api/user-get?&tabs=http#optional-query-parameters) Чтобы запросить дополнительные свойства, объявите их в качестве любой части `line(x)Property` . 
+* По умолчанию компонент пользователя запрашивает только стандартный набор свойств Graph [Майкрософт.](/graph/api/user-get?&tabs=http#optional-query-parameters) Чтобы запросить дополнительные свойства, объявите их в качестве любой части `line(x)Property`. 
 
 
 ## <a name="properties"></a>Свойства
@@ -66,8 +66,9 @@ ms.locfileid: "61859955"
 | person-image    | personImage    | Задать изображение, которое будет отображаться для пользователя. |
 | person-presence | personPresence | Установка присутствия для пользователя. |
 | fetch-image     | fetchImage     | Установите флажок для автоматического получения `personImage` из Microsoft Graph на основе объекта `personDetails`, предоставленного пользователем. |
-| тип аватара     | avatarType     | Установите или `initials` `photo` отобразить состояние отображения по умолчанию — это фотография. |
-| представление            | представление           | Установите, чтобы настроить, как выглядит пользователь. Значение по умолчанию: `avatar` <br /> `avatar` — Показывать только аватар <br /> `oneline` — Показывать аватар и первую строку (`displayName` по умолчанию) <br /> `twolines` — Показывать аватар и две строки текста (`displayName` и `mail` по умолчанию) <br /> `threelines` - показать аватар и три строки текста `displayName` (и `mail` по `jobTitle` умолчанию) |
+| отключение-извлечение изображений | disableImageFetch | Установите флаг, чтобы отключить извлечение изображения человека. Можно использовать, чтобы избежать ненужных извлечений из Microsoft Graph при указании `personImage` свойства.
+| тип аватара     | avatarType     | Установите или `initials` отобразить `photo` состояние отображения по умолчанию — это фотография. |
+| представление            | представление           | Установите, чтобы настроить, как выглядит пользователь. Значение по умолчанию: `avatar` <br /> `avatar` — Показывать только аватар <br /> `oneline` — Показывать аватар и первую строку (`displayName` по умолчанию) <br /> `twolines` — Показывать аватар и две строки текста (`displayName` и `mail` по умолчанию) <br /> `threelines` - показать аватар и три строки текста (`displayName`и `mail` по `jobTitle` умолчанию) |
 | line1-property  | line1Property  | Задает свойство personDetails для использования для первой строки текста. Значение по умолчанию: `displayName`.|
 | line2-property  | line2Property  | Задает свойство personDetails для использования для второй строки текста. Значение по умолчанию: `mail`.|
 | line3-property  | line3Property  | Задает свойство personDetails для использования для третьей строки текста. Значение по умолчанию: `jobTitle`.|
@@ -118,11 +119,11 @@ mgt-person {
 
 Событие | Когда он излучается | Настраиваемые данные | Отмена | Пузыри | Работает с настраиваемой шаблонной
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`line1clicked` | Увольнение при нажатии строки1 | Объект, `person` который может быть Graph [пользователем,](/graph/api/resources/user) [](/graph/api/resources/person) лицом или контактом с дополнительным свойством, содержаным URL-адрес фотографии [](/graph/api/resources/contact) `personImage` пользователя | Нет | Нет | Да, если не переопределить шаблон по умолчанию
-`line2clicked` | Увольнение при нажатии строки2 | Объект, `person` который может быть Graph [пользователем,](/graph/api/resources/user) [](/graph/api/resources/person) лицом или контактом с дополнительным свойством, содержаным URL-адрес фотографии [](/graph/api/resources/contact) `personImage` пользователя | Нет | Нет | Да, если не переопределить шаблон по умолчанию
-`line3clicked` | Увольнение при нажатии строки 3 | Объект, `person` который может быть Graph [пользователем,](/graph/api/resources/user) [](/graph/api/resources/person) лицом или контактом с дополнительным свойством, содержаным URL-адрес фотографии [](/graph/api/resources/contact) `personImage` пользователя | Нет | Нет | Да, если не переопределить шаблон по умолчанию
+`line1clicked` | Увольнение при нажатии строки1 | Объект`person`, который может быть Graph [пользователем](/graph/api/resources/user)[](/graph/api/resources/contact)[,](/graph/api/resources/person) `personImage` лицом или контактом с дополнительным свойством, содержаным URL-адрес фотографии пользователя | Нет | Нет | Да, если не переопределить шаблон по умолчанию
+`line2clicked` | Увольнение при нажатии строки2 | Объект`person`, который может быть Graph [пользователем](/graph/api/resources/user)[](/graph/api/resources/contact)[,](/graph/api/resources/person) `personImage` лицом или контактом с дополнительным свойством, содержаным URL-адрес фотографии пользователя | Нет | Нет | Да, если не переопределить шаблон по умолчанию
+`line3clicked` | Увольнение при нажатии строки 3 | Объект`person`, который может быть Graph [пользователем](/graph/api/resources/user)[](/graph/api/resources/contact)[,](/graph/api/resources/person) `personImage` лицом или контактом с дополнительным свойством, содержаным URL-адрес фотографии пользователя | Нет | Нет | Да, если не переопределить шаблон по умолчанию
 
-Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
+Дополнительные сведения об обработке событий см. в [этой информации](../customize-components/events.md).
 
 ## <a name="templates"></a>Шаблоны
 
@@ -213,18 +214,18 @@ MgtPerson.config.useContactApis = false;
 
 | Конфигурация | Разрешение | API |
 | ------------- | ---------- | --- |
-| `personDetails` установить без изображения, `fetchImage` установить , установить , `true` извлекаемого `avatarType` человека является контакт и `photo` `useContactApis` установить `true` | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
-| `personDetails` установить без изображения, установить , установить и лицо не является `fetchImage` `true` `avatarType` `photo` контактом или `useContactApis` установлено, чтобы `false` | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
-| `personDetails` набор без изображения, `fetchImage` установленный `true` для , `avatarType` заданный пользователем и `photo` указанный по электронной почте | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
-| `personDetails` набор без изображения, `fetchImage` `true` `avatarType` заданный, заданный и `photo` контакт, указанный по электронной почте | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `personDetails` установить без изображения, `fetchImage` установить `true`, установить `avatarType` `photo`, извлекаемого человека является контакт и `useContactApis` установить `true` | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `personDetails` установить без изображения, `fetchImage` установить `true`, `avatarType` установить `photo` и лицо не является контактом или `useContactApis` установлено, чтобы `false` | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
+| `personDetails` набор без изображения, `fetchImage` установленный `true`для , заданный `avatarType` `photo` пользователем и указанный по электронной почте | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
+| `personDetails` набор без изображения, `fetchImage` заданный `true`, заданный `avatarType` `photo` и контакт, указанный по электронной почте | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
 | `userId` set | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people) |
-| `personQuery` установлено `me` и `avatarType` установлено `photo` | User.Read | [/ме/фото/$value](/graph/api/profilephoto-get) |
-| `personQuery` установлено `me` и `avatarType` установлено что-то другое, чем `photo` | User.Read | [/me](/graph/api/user-get) |
-| `personQuery`значение, `me` заме- `useContactApis``true` | People.Read, User.ReadBasic.All, Contacts.Read | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people), [/me/contacts/ \* ](/graph/api/user-list-contacts) |
-| `personQuery`значение, `me` заме- `useContactApis``false` | People.Read, User.ReadBasic.All | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people) |
-| `showPresence` установлено `true` и `personQuery` установлено `me` | Presence.Read | [/me/presence](/graph/api/presence-get) |
-| `showPresence`установлено `true` значение, заме- `personQuery``me` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) |
-| `personCardInteraction` значение, заме- `PersonCardInteraction.none` | См. [разрешения на карточку человека](/graph/toolkit/components/person-card#microsoft-graph-permissions) | См. [вызовы API карт персоны](/graph/toolkit/components/person-card#microsoft-graph-permissions) |
+| `personQuery` установлено и `me` `avatarType` установлено `photo` | User.Read | [/ме/фото/$value](/graph/api/profilephoto-get) |
+| `personQuery` установлено и `me` установлено `avatarType` что-то другое, чем `photo` | User.Read | [/me](/graph/api/user-get) |
+| `personQuery`значение, заме-`me` `useContactApis``true` | People.Read, User.ReadBasic.All, Contacts.Read | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people), [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `personQuery`значение, заме-`me` `useContactApis``false` | People.Read, User.ReadBasic.All | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people) |
+| `showPresence` установлено и `true` `personQuery` установлено `me` | Presence.Read | [/me/presence](/graph/api/presence-get) |
+| `showPresence` установлено `true` значение `personQuery` , заме- `me` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) |
+| `personCardInteraction` значение, заме- `PersonCardInteraction.none` | См [. разрешения на карточку человека](/graph/toolkit/components/person-card#microsoft-graph-permissions) | См [. вызовы API карт персоны](/graph/toolkit/components/person-card#microsoft-graph-permissions) |
 
 ## <a name="authentication"></a>Проверка подлинности
 
@@ -234,11 +235,11 @@ MgtPerson.config.useContactApis = false;
 
 |Хранилище объектов|Кэшные данные|Замечания|
 |---------|-----------|-------|
-|`photos`|Фотография человека|Используется, `avatarType` когда установлено и `photo` `fetchImage` установлено `true`|
-|`presence`|Присутствие человека|Используется, `showPresence` когда установлено `true`|
+|`photos`|Фотография человека|Используется, когда `avatarType` установлено `photo` `fetchImage` и установлено `true`|
+|`presence`|Присутствие человека|Используется, когда `showPresence` установлено `true`|
 |`users`|Сведения о пользователях|
 
-Дополнительные сведения о настройке кэша см. в [caching.](../customize-components/cache.md)
+Дополнительные сведения о настройке кэша см. в [caching](../customize-components/cache.md) .
 
 ## <a name="extend-for-more-control"></a>Расширение для дополнительного управления
 

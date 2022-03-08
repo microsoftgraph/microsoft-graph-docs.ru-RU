@@ -1,16 +1,16 @@
 ---
 title: Перечисление смен
 description: Получите список сдвигов в расписании.
-author: nkramer
+author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4e1fa04145e79d44f2cd87582a7b4c5eb9a4e874
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 788b8f49e3ce4fbe43079e47497d0261ed4cc73f
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341548"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333402"
 ---
 # <a name="list-shifts"></a>Перечисление смен
 
@@ -27,7 +27,7 @@ ms.locfileid: "62341548"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Schedule.Read.All, Group.Read.All,Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Schedule.Read.All, Schedule.ReadWrite.All |
+|Для приложений | Schedule.Read.All, Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -38,7 +38,11 @@ GET /teams/{teamId}/schedule/shifts
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает параметр `$filter` [запроса OData](/graph/query-parameters) для настройки ответа.
+
+> [!NOTE]
+> Этот `$filter` параметр не поддерживает использование одного и того же свойства несколько раз в запросе. Например, следующий запрос не будет работать: `sharedShift/startDateTime ge 2019-05-09T00:00:00Z and sharedShift/startDateTime le 2019-05-09T23:59:59Z`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -96,7 +100,7 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts?$filter=shar
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

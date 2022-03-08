@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: removePassword'
 description: Удаление пароля из службыPrincipal
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c1f252fba7ce753c0240b47850e79d71177705b6
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7069e9bb6f0d3031884915251fe4fb260c0dd2fe
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786119"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337266"
 ---
 # <a name="serviceprincipal-removepassword"></a>servicePrincipal: removePassword
 
@@ -18,7 +18,7 @@ ms.locfileid: "52786119"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление пароля из [объекта servicePrincipal.](../resources/serviceprincipal.md)
+Удаление пароля из [объекта servicePrincipal](../resources/serviceprincipal.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "52786119"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+| Для приложений                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,14 +42,14 @@ POST /servicePrincipals/{id}/removePassword
 
 | Имя           | Описание                |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type   | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| keyId | GUID | Уникальный идентификатор пароля. Обязательный. |
+| keyId | Guid | Уникальный идентификатор пароля. Обязательный. |
 
 ## <a name="response"></a>Отклик
 
