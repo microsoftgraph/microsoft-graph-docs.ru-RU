@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 96d68f14255178ad94bd9fdcc88c8358df018cff
-ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
+ms.openlocfilehash: 79d281a04cf4ae1dc683efa93da394e59bdc9149
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62282067"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333836"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -17,6 +17,33 @@ ms.locfileid: "62282067"
 > [!IMPORTANT]
 > Функции в состоянии _предварительной версии_, в том числе API и инструменты, могут изменяться без предварительного уведомления, а некоторые из них, возможно, никогда не достигнут общедоступного состояния (GA). Не используйте функции, доступные в виде предварительных версий, в рабочих приложениях.
 
+
+## <a name="february-2022-new-and-generally-available"></a>Февраль 2022 г.: новые и общедоступные возможности
+
+### <a name="teamwork"></a>Teamwork
+Получение [сведений о виртуальном собрании](/graph/api/resources/teamworkOnlineMeetingInfo), связанном с [чатом](/graph/api/resources/chat), с помощью свойства **onlineMeetingInfo**.
+
+## <a name="february-2022-new-in-preview-only"></a>Февраль 2022 г.: новое только в предварительной версии
+
+### <a name="change-notifications"></a>Уведомления об изменениях
+Подписка на изменения контактов, событий или сообщений Outlook для получения уведомлений, в полезные данные которых включены данные ресурсов. Дополнительные сведения см. в статье [Уведомления об изменениях, связанных с ресурсами Outlook, в Microsoft Graph](outlook-change-notifications-overview.md).
+
+### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
+Использование прав доступа приложений для `CustomSecAttributeAssignment.Read.All` чтения [пользовательских определений атрибутов безопасности](/graph/api/resources/customsecurityattributedefinition?view=graph-rest-beta&preserve-view=true) для организации без пользователя, выполнившего вход.
+
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+- Настройка [параметров](/graph/api/resources/accessreviewstagesettings?view=graph-rest-beta&preserve-view=true) каждого [этапа](/graph/api/resources/accessreviewstage?view=graph-rest-beta&preserve-view=true) в многоступенчатой проверке доступа. Помимо [получения](/graph/api/accessreviewstage-get?view=graph-rest-beta&preserve-view=true) или [обновления](/graph/api/accessreviewstage-update?view=graph-rest-beta&preserve-view=true) этапа проверки доступа, вам доступны следующие действия: 
+  - [Остановка](/graph/api/accessreviewstage-stop?view=graph-rest-beta&preserve-view=true) предоставления проверяющими дополнительной информации на некотором этапе и переход к следующему этапу (если применимо). 
+  - [Фильтрация](/graph/api/accessreviewstage-filterbycurrentuser?view=graph-rest-beta&preserve-view=true) и получение всех этапов [экземпляра проверки доступа](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true), для которого вызывающий пользователь является проверяющим
+  - [Составление списка решений](/graph/api/accessreviewstage-list-decisions?view=graph-rest-beta&preserve-view=true) из многоступенчатой проверки доступа.
+- Приложения могут использовать разрешение приложения `EntitlementManagement.ReadWrite.All` в целях [создания запроса пакета доступа для ресурса](/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta&preserve-view=true), чтобы добавить ресурс в [каталог пакетов доступа](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true) или удалить его из каталога.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход
+- Использование ряда новых свойств для настройки [фирменного стиля организации](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true). Например, варианта логотипа компании в виде баннера для страницы входа, настраиваемой пиктограммы сайта с URL-адресом на основе CDN, а также нескольких других настраиваемых свойств, которые пользователи могут применять для управления учетными записями.
+- Включение или исключение Linux как одного из [условий платформы](/graph/api/resources/conditionalaccessplatforms?view=graph-rest-beta&preserve-view=true) в [политике условного доступа](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true).
+- Выявление [субъектов-служб, с которыми связан риск](/graph/api/resources/riskyserviceprincipal?view=graph-rest-beta&preserve-view=true), в организации с помощью службы Azure AD, которая постоянно [определяет и оценивает риски](/graph/api/resources/serviceprincipalriskdetection?view=graph-rest-beta&preserve-view=true) на основе различных сигналов и машинного обучения. Вы можете [подтвердить](/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-beta&preserve-view=true), что субъект-служба действительно скомпрометирован, после чего корпорация Майкрософт отключит объект этого субъекта-службы. Вы можете [отклонить](/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-beta&preserve-view=true) риск, связанный с субъектом-службой. Кроме того, вы можете [создать журнал рисков](/graph/api/riskyserviceprincipal-list-history?view=graph-rest-beta&preserve-view=true), связанных с субъектом-службой.
+- Использование [параметров межклиентского доступа](/graph/api/resources/crosstenantaccesspolicy-overview?view=graph-rest-beta&preserve-view=true) для контроля над взаимодействием между пользователями в вашей и других организациях и управления этим взаимодействием. Эти параметры детализированы и позволяют определять пользователей, группы и приложения как в вашей, так и во внешних организациях, которые могут участвовать во взаимодействии в рамках Azure AD B2B и прямом подключении Azure AD B2B. 
+- Разрешение или запрещение пользователям и группам в организации применять [встроенную в Azure AD проверку подлинности на основе сертификатов (CBA)](/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true).
 
 ## <a name="january-2022-new-and-generally-available"></a>Январь 2022 г.: новые и общедоступные возможности
 
@@ -39,7 +66,7 @@ ms.locfileid: "62282067"
 ## <a name="january-2022-new-in-preview-only"></a>Январь 2022 г.: новое только в предварительной версии
 
 ### <a name="compliance--ediscovery"></a>Соответствие требованиям | Обнаружение электронных данных
-Получите URL-адрес веб-сайта OneDrive для бизнеса хранителя (свойство **siteWebUrl** [userSource](/graph/api/resources/ediscovery-userSource?view=graph-rest-beta&preserve-view=true)).
+Получение URL-адреса сайта OneDrive для бизнеса хранителя (свойство **siteWebUrl** ресурса [userSource](/graph/api/resources/ediscovery-userSource?view=graph-rest-beta&preserve-view=true)).
 
 ### <a name="devices-and-apps--cloud-pc"></a>Устройства и приложения | Облачный ПК
 - Получите или обновите [параметры для организации](/graph/api/resources/cloudpcorganizationsettings?view=graph-rest-beta&preserve-view=true), включая версию операционной системы Windows для предоставления на облачных компьютерах, а также тип учетной записи пользователя на предоставленных облачных компьютерах.
@@ -62,11 +89,11 @@ ms.locfileid: "62282067"
   - Идентификатор субъекта-службы, представляющего целевой ресурс в событии входа.
 
 ### <a name="reports--microsoft-365-usage-reports"></a>Отчеты | Отчеты об использовании Microsoft 365
-Получите отчеты об использовании Outlook, OneDrive и SharePoint для Microsoft Cloud for US Government. См. сводку по [облачным развертываниям](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true#cloud-deployments).
+Получение отчетов об использовании, относящихся к Outlook, OneDrive и SharePoint для облака Microsoft для государственных организаций США. См. сводку по [облачным развертываниям](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true#cloud-deployments).
 
 ### <a name="sites-and-lists"></a>Сайты и списки
 - Добавьте или синхронизируйте тип контента из концентратора типов контента на [сайт](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true) или в [список](/graph/api/resources/list?view=graph-rest-beta&preserve-view=true) с помощью действия [addCopyFromContentTypeHub](/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-beta&preserve-view=true). Это делает тип контента или его обновление доступными для определенного сайта или списка, где это необходимо. Это улучшение по сравнению с устаревшей инфраструктурой синхронизации, которая распространяет тип контента на все сайты в организации, сокращая время ожидания распространения публикации. 
-- Получите одну или несколько [многофункциональных длительных операций](/graph/api/resources/richlongrunningoperation?view=graph-rest-beta&preserve-view=true), происходящих на сайте или в списке, которые могут выполняться при синхронном добавлении типа контента.
+- Получение одной или нескольких [многофункциональных длительных операций](/graph/api/resources/richlongrunningoperation?view=graph-rest-beta&preserve-view=true), выполняемых на сайте или в списке, что может происходить при синхронном добавлении типа контента.
 - Получите коллекцию совместимых ресурсов [типа контента](/graph/api/resources/contentType?view=graph-rest-beta&preserve-view=true) из концентратора типов контента, совместимых с помощью действия [getCompatibleHubContentTypes](/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-beta&preserve-view=true). 
 
 ### <a name="teamwork"></a>Teamwork
@@ -77,84 +104,7 @@ ms.locfileid: "62282067"
   - [Пользователь учетной записи Майкрософт](/graph/api/resources/microsoftAccountUserConversationMember?view=graph-rest-beta&preserve-view=true)
   - [Пользователь Skype для бизнеса](/graph/api/resources/skypeForBusinessUserConversationMember?view=graph-rest-beta&preserve-view=true)
   - [Пользователь Skype](/graph/api/resources/skypeUserConversationMember?view=graph-rest-beta&preserve-view=true)
-
-## <a name="december-2021-new-and-generally-available"></a>Декабрь 2021 г.: новые и общедоступные возможности
-
-### <a name="cloud-communications--presence"></a>Облачные коммуникации | Присутствие
-[Подпишитесь на уведомления об изменениях](/graph/api/subscription-post-subscriptions) в состоянии [присутствия](/graph/api/resources/presence) указанного пользователя. Всегда указывайте сертификат шифрования в запросе подписки, так как это [подробные уведомления, которые включают зашифрованные данные ресурсов](webhooks-with-resource-data.md).
-
-
-### <a name="compliance--subject-rights-requests"></a>Соответствие требованиям | Запросы прав субъектов
-Средства [управления конфиденциальностью в Microsoft 365](/privacy/solutions/privacymanagement/privacy-management?view=o365-worldwide&preserve-view=true) включают [API запросов прав субъектов](/graph/api/resources/subjectrightsrequest), начиная с версии 1 и с бета-версий конечных точек Microsoft Graph. С помощью этого API пользователи могут создавать запросы, чтобы просматривать свои личные сведения или управлять ими в своих организациях. Этот API также дает возможность автоматизировать управление такими запросами и масштабировать его, что помогает эффективнее выполнять отраслевые регламенты.
-
-### <a name="customer-booking"></a>Резервирование для пользователей
-Используйте этот API для Microsoft Bookings в рабочих приложениях, воспользуйтесь следующими новыми функциями и обновлениями:
-- Уведомите ваших клиентов в США или в Канаде о [встрече](/graph/api/resources/bookingappointment) или какой-либо определенной [службе](/graph/api/resources/bookingservice), связанной со встречей, с помощью SMS-сообщений.
-- Включите собрание по сети для службы и автоматически сформируйте ссылку на собрание Microsoft Teams для встречи.
-- Разрешение одного или нескольких клиентов на групповой встрече, установка максимального количества участников для службы и для встречи, отслеживание фактического количества участников встречи.
-- Создание [настраиваемого вопроса](/graph/api/resources/bookingcustomquestion) для [бизнеса](/graph/api/resources/bookingbusiness), сопоставление вопроса с параметром, чтобы указать его в качестве обязательного для службы, отслеживание вопросов и ответов на встрече.
-- Получение или установка часового пояса для клиента на встрече или для [сотрудника](/graph/api/resources/bookingstaffmember).
-- Получение или установка расположения и номера телефона для [клиента](/graph/api/resources/bookingcustomer).
-- Доступ к API версии 1 из новой конечной точки `https://graph.microsoft.com/v1.0/solutions/`. Обратите внимание, что API бета-версии остается в конечной точке `https://graph.microsoft.com/beta`.
-
-### <a name="education"></a>Образование
-- Укажите [задание](/graph/api/resources/educationassignment) для добавления только календари в учащихся с помощью свойств **addToCalendarAction**.
-- [Повторное назначение](/graph/api/educationsubmission-reassign) [отправленного задания](/graph/api/resources/educationsubmission) учащемуся с отзывом для проверки.
-- [Вывод списка заданий](/graph/api/educationuser-list-assignments) для [educationUser](/graph/api/resources/educationuser). 
-
-### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
-[Обновление](/graph/api/accessreviewinstance-update) проверяющих и откат проверяющих для [экземпляра проверки доступа](/graph/api/resources/accessreviewinstance).
-
-### <a name="teamwork"></a>Teamwork
-- Определение [чата](/graph/api/resources/chat) в Microsoft Teams по его URL-адресу (с помощью свойства **webUrl**).
-- Получайте сведения о событиях, происходящих в чате, канале или команде, путем доступа к ресурсу [eventMessageDetail](/graph/api/resources/EventMessageDetail) из [chatMessage](/graph/api/resources/chatmessage) или [чата](/graph/api/resources/chat). Например, о таких событиях, как добавление участников в канал или чат, или изменение описания команды.
-
-## <a name="december-2021-new-in-preview-only"></a>Декабрь 2021 г.: новые возможности только в предварительной версии
-
-### <a name="cloud-communications--online-meetings"></a>Облачные коммуникации | Собрания по сети
-Включите регистрацию на [собрание по сети](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) с помощью системы [внешней регистрации](/graph/api/resources/externalmeetingregistration?view=graph-rest-beta&preserve-view=true). 
-
-### <a name="cloud-communications--presence"></a>Облачные коммуникации | Присутствие
-- Используйте действие [setUserPreferredPresence](/graph/api/presence-setuserpreferredpresence?view=graph-rest-beta&preserve-view=true), чтобы задать предпочтительное состояние доступности и активности для пользователя. Присутствие пользователя становится предпочтительным.
-- Используйте действие [clearUserPreferredPresence](/graph/api/presence-clearuserpreferredpresence?view=graph-rest-beta&preserve-view=true), чтобы очистить предпочтительное состояние доступности и активности для пользователя.
-- Используйте `Presence.ReadWrite` в качестве делегированного разрешения с действиями [setPresence](/graph/api/presence-setpresence?view=graph-rest-beta&preserve-view=true), [clearPresence](/graph/api/presence-clearpresence?view=graph-rest-beta&preserve-view=true), [setUserPreferredPresence](/graph/api/presence-setuserpreferredpresence?view=graph-rest-beta&preserve-view=true) или [clearUserPreferredPresence](/graph/api/presence-clearuserpreferredpresence?view=graph-rest-beta&preserve-view=true).
-- Используйте `Presence.ReadWrite.All` в качестве разрешения приложения с действиями [setPresence](/graph/api/presence-setpresence?view=graph-rest-beta&preserve-view=true), [clearPresence](/graph/api/presence-clearpresence?view=graph-rest-beta&preserve-view=true), [setUserPreferredPresence](/graph/api/presence-setuserpreferredpresence?view=graph-rest-beta&preserve-view=true) или [clearUserPreferredPresence](/graph/api/presence-clearuserpreferredpresence?view=graph-rest-beta&preserve-view=true).
-
-### <a name="devices-and-apps--cloud-pc"></a>Устройства и приложения | Облачный ПК
-- Администраторы могут включить [Microsoft Managed Desktop](/graph/api/resources/microsoftmanageddesktop?view=graph-rest-beta&preserve-view=true), указав параметры в [политике подготовки облачных компьютеров](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) и настроив функцию управляемых устройств для облачных компьютеров.
-- [Перезагрузка](/graph/api/cloudpc-reboot?view=graph-rest-beta&preserve-view=true) [облачного компьютера](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true).
-- [Переименование](/graph/api/cloudpc-rename?view=graph-rest-beta&preserve-view=true) для обновления отображаемого имени облачного компьютера.
-- [Устранение неполадок](/graph/api/cloudpc-troubleshoot?view=graph-rest-beta&preserve-view=true) для проверки состояния работоспособности облачного компьютера и узла сеанса.
-- Отслеживание результата последнего удаленного действия на облачном компьютере, включая перезагрузку, переименование, повторную подготовку и устранение неполадок, с помощью свойства **lastRemoteActionResult**.
-- Отслеживать метки времени последнего входа на облачный компьютер с помощью свойства **lastLoginResult**.
-- Отслеживание даты недоступности [образа устройства облачного компьютера](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) с помощью свойства **expirationDate**.
-- Отслеживание состояния операционной системы в [образе устройства облачного компьютера](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) с помощью свойства **osStatus**.
-- [Создание](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta&preserve-view=true), [обновление](/graph/api/unifiedroledefinition-update?view=graph-rest-beta&preserve-view=true) и [удаление](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta&preserve-view=true) объекта [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta&preserve-view=true) для поставщика RBAC облачного компьютера.
-
-### <a name="education"></a>Образование
-- [Отслеживание изменений](delta-query-overview.md) ресурсов[educationClass](/graph/api/resources/educationclass?view=graph-rest-beta&preserve-view=true) и [educationUser](/graph/api/resources/educationuser?view=graph-rest-beta&preserve-view=true).
-- Укажите [задание](/graph/api/resources/educationassignment) для добавления только календари в учащихся с помощью свойств **addToCalendarAction**.
-
-### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
-- [Получите](/graph/api/application-get?view=graph-rest-beta&preserve-view=true) сведения о сертификате [приложения](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) с помощью свойства **certification**. Свойство задается только в том случае, если приложение сертифицировано по [программе Соответствия требованиям приложений Microsoft 365](/microsoft-365-app-certification/docs/enterprise-app-certification-guide).  
-- [Включите](/graph/api/permissiongrantpolicy-post-includes?view=graph-rest-beta&preserve-view=true) или [исключите](/graph/api/permissiongrantpolicy-post-excludes?view=graph-rest-beta&preserve-view=true) сертификацию как [условие](/graph/api/resources/permissionGrantConditionSet?view=graph-rest-beta&preserve-view=true) в [политике предоставления разрешений](/graph/api/resources/permissiongrantpolicy?view=graph-rest-beta&preserve-view=true) посредством свойства **certifiedClientApplicationsOnly** в [permissionGrantConditionSet](/graph/api/resources/permissionGrantConditionSet?view=graph-rest-beta&preserve-view=true).
-
-### <a name="search--index"></a>Поиск | Индекс
-Используйте операцию [обновления](/graph/api/externalconnectors-schema-update?view=graph-rest-beta&preserve-view=true) для обновления свойств элементов схемы [подключения](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true), включая их псевдонимы и метки.
-
-### <a name="teamwork"></a>Teamwork
-- [Перечисление](/graph/api/teams-list?view=graph-rest-beta&preserve-view=true) всех команд в организации.
-
-### <a name="to-do-tasks"></a>Задачи To-Do
-- Чтобы предусмотреть возможность централизованного управления всеми задачами, поступающими из разных источников (сообщения Outlook, чаты Teams, документы OneDrive и т. д.):
-  - Используйте [последнюю версию программного интерфейса To Do](/graph/api/resources/tasks-overview?view=graph-rest-beta&preserve-view=true) и обращайтесь к нему из новой конечной точки `https://graph.microsoft.com/beta/me/tasks/`.
-  - Используйте сегмент `allTasks`, чтобы получить все задачи для пользователя: `https://graph.microsoft.com/beta/me/tasks/alltasks`.
-  - Следует различать встроенные списки задач (например, **Помеченные сообщения электронной почты** или **Задачи**) и пользовательские списки задач. Встроенный список задач представлен ресурсом [wellKnownTaskList](/graph/api/resources/wellknowntasklist?view=graph-rest-beta&preserve-view=true), а пользовательский список задач — ресурсом [taskList](/graph/api/resources/tasklist?view=graph-rest-beta&preserve-view=true).
-  - Следует различать определенный в настоящее время типа задач [task](/graph/api/resources/task?view=graph-rest-beta&preserve-view=true) и базовый тип [baseTask](/graph/api/resources/basetask?view=graph-rest-beta&preserve-view=true).
-- Более сложную [задачу](/graph/api/resources/task?view=graph-rest-beta&preserve-view=true) можно разделить на более удобные для обработки подзадачи меньшего размера. Каждая подзадача представлена ресурсом [checklistItem](/graph/api/resources/checklistitem?view=graph-rest-beta&preserve-view=true).
-- [Перемещение](/graph/api/basetask-move?view=graph-rest-beta&preserve-view=true) задачи между списками.
-- В [этой публикации в блоге](https://devblogs.microsoft.com/microsoft365dev/announcing-the-public-preview-of-to-do-tasks-api/) содержатся дополнительные сведения и инструкции по переносу существующих приложений, использующих [более раннюю версию API To Do](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true), на [последнюю версию API To Do](/graph/api/resources/tasks-overview?view=graph-rest-beta&preserve-view=true).
-
+- Использование делегированного разрешения `TeamworkTag.Read` для чтения [тегов](/graph/api/resources/teamworktag?view=graph-rest-beta&preserve-view=true) и [присвоения тегов участникам](/graph/api/resources/teamworktagmember?view=graph-rest-beta&preserve-view=true) в Teams от имени пользователя, выполнившего вход.
 
 ## <a name="want-to-stay-in-the-loop"></a>Хотите получать актуальную информацию?
 

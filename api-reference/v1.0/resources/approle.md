@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: a5298eedfd5476e3aa6cb92e959f2f0822e4091e
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 8c9dfccaa9d41b78271f48119f3e23763232d0a6
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854687"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337168"
 ---
 # <a name="approle-resource-type"></a>тип ресурса appRole
 
@@ -51,7 +51,7 @@ ms.locfileid: "62854687"
   "allowedMemberTypes": ["String"],
   "description": "String",
   "displayName": "String",
-  "id": "GUID",
+  "id": "Guid",
   "isEnabled": true,
   "origin": "String",
   "value": "String"

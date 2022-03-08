@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: removeKey'
 description: Удаление учетных данных ключа из службыPrincipal
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: fbc1e214a9e11d20fbf10a84728d71e5954127a4
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: e834455f015966e59b2a668461ca6054eb21b03b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490478"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63331962"
 ---
 # <a name="serviceprincipal-removekey"></a>servicePrincipal: removeKey
 
@@ -18,7 +18,7 @@ ms.locfileid: "58490478"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление учетных данных ключей [из службыPrincipal.](../resources/serviceprincipal.md) Этот метод вместе с [addKey](serviceprincipal-addkey.md) можно использовать службойPrincipal для автоматизации проката истекающих ключей.
+Удаление учетных данных ключей из [службыPrincipal](../resources/serviceprincipal.md). Этот метод вместе с [addKey](serviceprincipal-addkey.md) можно использовать службойPrincipal для автоматизации проката истекающих ключей.
 
 > [!NOTE]
 > [Создание службыPrincipal](../api/serviceprincipal-post-serviceprincipals.md) и [Update servicePrincipal](../api/serviceprincipal-update.md) можно продолжать использовать для добавления и обновления учетных данных для любой службыPrincipal с контекстом пользователя или без него.
@@ -45,7 +45,7 @@ POST /serviceprincipals/{id}/removeKey
 
 | Имя           | Описание                |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type   | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,8 +54,8 @@ POST /serviceprincipals/{id}/removeKey
 
 | Свойство  | Тип | Описание|
 |:----------|:-----|:-----------|
-| keyId     | GUID | Уникальный идентификатор пароля.|
-| доказательство | Строка | Самозаверяемый маркер JWT, используемый в качестве доказательства владения существующими ключами. Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов службыPrincipal. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Эмитент должен быть __id__  службыPrincipal, которая делает вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Вот пример [кода,](/graph/application-rollkey-prooftoken) который можно использовать для создания этого доказательства маркера владения.|
+| keyId     | Guid | Уникальный идентификатор пароля.|
+| доказательство | String | Самозаверяемый маркер JWT, используемый в качестве доказательства владения существующими ключами. Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов службыPrincipal. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Эмитент должен быть __id__  службыPrincipal, которая делает вызов.</li><li>`nbf` — вовремя.</li><li>`exp` - Срок действия должен быть `nbf` + 10 минут.</li></ul><br>Действия по созданию этого маркера владения см. в журнале [Generating proof of possession tokens for rolling keys](/graph/application-rollkey-prooftoken).|
 
 ## <a name="response"></a>Отклик
 

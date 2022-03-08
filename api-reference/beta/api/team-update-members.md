@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: a2e83999bcaf9754d7d0f48399453c5659a63227
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 37ec2434d7627fd4762f0e76ef853b4756107152
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129386"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63331949"
 ---
 # <a name="update-member-in-team"></a>Обновление участника в команде
 
@@ -18,7 +18,10 @@ ms.locfileid: "62129386"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление роли [conversationMember](../resources/conversationmember.md) в [команде.](../resources/team.md)
+Обновление роли [conversationMember](../resources/conversationmember.md) в [команде](../resources/team.md).
+
+> [!NOTE]
+> Членам группы с ролью `guest` невозможно дать роль `owner`.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +31,7 @@ ms.locfileid: "62129386"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)|TeamMember.ReadWrite.All. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|TeamMember.ReadWrite.All. |
+|Для приложений|TeamMember.ReadWrite.All. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -49,17 +52,17 @@ PATCH /teams/{team-id}/members/{membership-id}
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|roles|Коллекция строк|Роль пользователя. Должно быть `owner` или пусто. Гостевой пользователь автоматически штампуется `guest` ролью, и это значение не может быть обновлено. |
+|roles|Коллекция строк|Роль пользователя. Должно быть или `owner` пусто. Гостевой пользователь автоматически штампуется ролью `guest` , и это значение не может быть обновлено. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект conversationMember](../resources/conversationmember.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и обновленный [объект conversationMember](../resources/conversationmember.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Ниже приводится запрос на применение роли `owner` к существующему члену группы.
+Ниже приводится запрос на применение `owner` роли к существующему члену группы.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

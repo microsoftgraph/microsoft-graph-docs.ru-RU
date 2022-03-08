@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d007512113ab46b25714942f93002936c97fe083
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 6645da51b2f292d787c277096465b0a4b65e0347
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854552"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63331888"
 ---
 # <a name="activateservice-resource-type"></a>тип ресурса activateService
 
@@ -25,8 +25,8 @@ ms.locfileid: "62854552"
 | Свойство         | Тип         | Описание                           |
 | ----------------- | ------------ | ------------------------------------- |
 | service| String | Имя службы для активации. |
-| servicePlanId | GUID | Идентификатор плана для активации плана службы. |
-| skuId | GUID | Идентификатор SKU плана службы. |
+| servicePlanId | Guid | Идентификатор плана для активации плана службы. |
+| skuId | Guid | Идентификатор SKU плана службы. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -43,8 +43,8 @@ ms.locfileid: "62854552"
 ```json
 {
     "service": "String",
-    "skuId": "GUID",
-    "servicePlanId": "GUID"
+    "skuId": "Guid",
+    "servicePlanId": "Guid"
 }
 
 ```

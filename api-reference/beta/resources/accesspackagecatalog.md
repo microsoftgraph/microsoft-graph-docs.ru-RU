@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 5d6eb82a55e21469ea1f0169f0a589fd4f449d15
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 2088bfea2aea6a8383b05826bf3783ea1a84de3f
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650512"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63331878"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>тип ресурса accessPackageCatalog
 
@@ -18,8 +18,7 @@ ms.locfileid: "61650512"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении правами Azure AD](entitlementmanagement-overview.md)каталог пакетов доступа — это контейнер для пакетов с нулевым или более доступом. Каталог пакетов доступа также может иметь связанные ресурсы, которые используются в этих пакетах доступа для обеспечения доступа. Чтобы просмотреть или изменить членство ролей в [](unifiedroleassignment.md) каталоге, используйте API назначений ролей с поставщиком управления правами RBAC.
-
+В [управлении правами Azure AD](entitlementmanagement-overview.md) каталог пакетов доступа — это контейнер для пакетов с нулевым или более доступом. Каталог пакетов доступа также может иметь связанные ресурсы, которые используются в этих пакетах доступа для обеспечения доступа. Чтобы просмотреть или изменить членство ролей в каталоге, используйте API назначений ролей с поставщиком управления правами RBAC.[](unifiedroleassignment.md)
 
 
 ## <a name="methods"></a>Методы
@@ -31,31 +30,42 @@ ms.locfileid: "61650512"
 | [Получить accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Чтение свойств и связей объекта accessPackageCatalog. |
 | [Обновление accessPackageCatalog](../api/accesspackagecatalog-update.md)|Нет | Обновление свойств объекта accessPackageCatalog. |
 | [Удаление accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Удаление accessPackageCatalog. |
+| **Доступ к ресурсам пакета**| | |
 | [Ресурсы accessPackageCatalog списка](../api/accesspackagecatalog-list-accesspackageresources.md) | [коллекция accessPackageResource](accesspackageresource.md) | Извлечение списка объектов accessPackageResource в каталоге. |
+| **Доступ к ролям ресурсов пакета**| | |
 | [Роли ресурсов accessPackageCatalog в списке](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [коллекция accessPackageResourceRole](accesspackageresourcerole.md) | Извлечение списка объектов accessPackageResourceRole для ресурсов в каталоге. |
+| **Расширения рабочего процесса пакетов пакетов пользовательского доступа**| | |
+|[Список customAccessPackageWorkflowExtensions](../api/accesspackagecatalog-list-customaccesspackageworkflowextensions.md)|[коллекция customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Получите список объектов [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) и их свойств.|
+|[Создание customAccessPackageWorkflowExtensions](../api/accesspackagecatalog-post-customaccesspackageworkflowextensions.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Создайте новый [объект customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) .|
+|[Get customAccessPackageWorkflowExtension](../api/customaccesspackageworkflowextension-get.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Ознакомьтесь с свойствами и отношениями объекта [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) .|
+|[Обновление customAccessPackageWorkflowExtension](../api/customaccesspackageworkflowextension-update.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Обновление свойств настраиваемого [объектаAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) .|
+|[Удаление customAccessPackageWorkflowExtension](../api/customaccesspackageworkflowextension-delete.md)|Нет|Удаляет объект [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) .|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|catalogStatus|Строка|Имеет `Published` значение, если пакеты доступа доступны для управления.|
-|catalogType|Строка|Один `UserManaged` из или `ServiceDefault` . |
+|catalogStatus|Строка|Имеет значение, `Published` если пакеты доступа доступны для управления.|
+|catalogType|Строка|Либо `UserManaged`, либо `ServiceDefault`. |
 |createdBy|String|UPN пользователя, создавшего этот ресурс. Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 |description|Строка|Описание каталога пакетов доступа.|
-|displayName|Строка|Отображение имени каталога пакетов доступа. Поддерживает `$filter` (`eq`, `contains`).|
+|displayName|String|Отображение имени каталога пакетов доступа. Поддерживает `$filter` (`eq`, `contains`).|
 |id|String| Только для чтения.|
 |isExternallyVisible|Boolean|Могут ли пакеты доступа в этом каталоге запрашиваться пользователями за пределами клиента.|
 |modifiedBy|Строка|UpN пользователя, который в последний раз изменил этот ресурс. Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
 |accessPackages|[коллекция accessPackage](accesspackage.md)| Пакеты доступа в этом каталоге. Только для чтения. Допускается значение null. Поддерживает `$expand`.|
 |accessPackageResources|[коллекция accessPackageResource](accesspackageresource.md)| Только для чтения. Допускается значение null.|
+|accessPackageResourceRoles|[коллекция accessPackageResourceRole](accesspackageresourcerole.md)|Роли каждого ресурса в каталоге. Только для чтения.|
+|accessPackageResourceScopes|[коллекция accessPackageResourceScope](accesspackageresourcescope.md)|Только для чтения.|
+|customAccessPackageWorkflowExtension|[коллекция customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Атрибуты логического приложения, которые можно назвать на различных этапах запроса пакета доступа и цикла назначения. |
 
 ## <a name="json-representation"></a>Представление JSON
 

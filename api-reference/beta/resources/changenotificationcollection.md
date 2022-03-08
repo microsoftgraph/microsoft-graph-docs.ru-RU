@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса changeNotificationCollection
 description: Представляет коллекцию уведомлений о подписке, отправленных абоненту.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: f2e634f8635927a1ac6f9be42f7de0971f7b1604
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 905a8364b650f4adfc8a634bb804ab0ceabf1132
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469383"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337042"
 ---
 # <a name="changenotificationcollection-resource-type"></a>Тип ресурса changeNotificationCollection
 
@@ -30,8 +30,8 @@ ms.locfileid: "51469383"
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-| validationTokens | Коллекция (string) | Содержит массив маркеров JWT, созданных Microsoft Graph для приложения для проверки происхождения уведомлений. Microsoft Graph создает один маркер для каждого отдельного приложения и пары клиента для элемента, если он существует в массиве значений. Имейте в виду, что уведомления могут содержать сочетание элементов для различных приложений и клиентов, которые подписывались с помощью одного и того же URL-адреса уведомлений. Только для [уведомлений об изменениях с данными ресурса Необязательный.](/graph/webhooks-with-resource-data.md) |
-| значение | [collection(changeNotification)](changenotification.md) | Набор уведомлений, отосланных на URL-адрес уведомления. Обязательный. |
+| validationTokens | Коллекция (string) | Содержит массив маркеров JWT, созданных корпорацией Майкрософт Graph для приложения для проверки происхождения уведомлений. Microsoft Graph создает один маркер для каждого отдельного приложения и пары клиента для элемента, если он существует в массиве значений. Имейте в виду, что уведомления могут содержать сочетание элементов для различных приложений и клиентов, которые подписывались с помощью одного и того же URL-адреса уведомлений. Только для [уведомлений об изменениях с данными ресурса Необязательный](/graph/webhooks-with-resource-data.md) . |
+| значение | collection([changeNotification](changenotification.md)) | Набор уведомлений, отосланных на URL-адрес уведомления. Обязательный. |
 
 ## <a name="relationships"></a>Связи
 
@@ -48,12 +48,16 @@ ms.locfileid: "51469383"
   ],
   "@odata.type": "microsoft.graph.changeNotificationCollection"
 }-->
-
-```json
+``` json
 {
-  "value": [],
+  "@odata.type": "#microsoft.graph.changeNotificationCollection",
   "validationTokens": [
-    "eyJ0eXAiOiJKV1QiLCJhbGciOiJSU..."
+    "String"
+  ],
+  "value": [
+    {
+      "@odata.type": "microsoft.graph.changeNotification"
+    }
   ]
 }
 ```

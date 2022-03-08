@@ -1,20 +1,18 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 820c879109f6d167740e0fa790f0cfabea0053a0
+ms.openlocfilehash: 067af659f7dbe20804bf43412f331eed09582541
 ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63351757"
+ms.locfileid: "63337350"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-TeamsAppInstallationCollectionPage installedApps = graphClient.chats("19:d65713bc498c4a428c71ef9353e6ce20@thread.v2").installedApps()
+RiskyServicePrincipalCollectionPage riskyServicePrincipals = graphClient.identityProtection().riskyServicePrincipals()
     .buildRequest()
-    .filter("teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'")
-    .expand("teamsApp,teamsAppDefinition")
     .get();
 
 ```

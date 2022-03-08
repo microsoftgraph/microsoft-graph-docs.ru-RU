@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: users
 author: jpettere
-ms.openlocfilehash: aa22c50b940afce1e9da1fac0b094faea3e0ac56
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: a6449c2dd5a437244a5da47e2cf32fefc5e68382
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559332"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63331890"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>Тип ресурса onPremisesExtensionAttributes
 
@@ -18,11 +18,11 @@ ms.locfileid: "60559332"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Возвращаемого типа **свойства onPremisesExtensionAttributes** объекта пользователя и **свойства extensionAttributes** [объекта устройства.](device.md) [](user.md) Возвращает пятнадцать пользовательских свойств атрибута расширения.
+Возвращаемого типа **свойства onPremisesExtensionAttributes** объекта пользователя и [](user.md) **свойства extensionAttributes** [объекта устройства](device.md). Возвращает пятнадцать пользовательских свойств атрибута расширения.
 
-В [](user.md) сущности пользователя и для пользователя **onPremisesSyncEnabled** источником полномочий для этого набора свойств является локальное Active Directory, синхронизированное с Azure AD и только для чтения. Для облачного пользователя (где **находится onPremisesSyncEnabled)** эти свойства можно задать при создании `false` или [обновлении.](../api/user-update.md) [](../api/user-post-users.md) Если ранее пользователь с облачным интерфейсом синхронизировался с локальной службой Active Directory, управлять этими свойствами с помощью API microsoft Graph невозможно. Вместо этого ими можно управлять через центр администрирования Exchange или Exchange Online V2 в PowerShell.
+В сущности [](user.md) пользователя и для пользователя **onPremisesSyncEnabled** источником полномочий для этого набора свойств является локальное Active Directory, синхронизированное с Azure AD и только для чтения. Для облачного пользователя (где **находится или находится onPremisesSyncEnabled** `false` `null`) эти свойства можно задать во время [создания](../api/user-post-users.md) или [обновления](../api/user-update.md). Если ранее пользователь с облачным интерфейсом синхронизировался с локальной службой Active Directory, управлять этими свойствами с помощью API microsoft Graph невозможно. Вместо этого ими можно управлять с помощью центра администрирования Exchange центра администрирования или Exchange Online V2 в PowerShell.
 
-Свойство **extensionAttributes** объекта [устройства](device.md) управляется только в Azure AD во время [создания](../api/device-post-devices.md) или [обновления устройства.](../api/device-update.md)
+Свойство **extensionAttributes** объекта [устройства](device.md) управляется только в Azure AD во время [создания или](../api/device-post-devices.md) [обновления устройства](../api/device-update.md).
 
 > **Примечание:** Эти атрибуты расширения также известны как Exchange пользовательские атрибуты 1-15.
 
@@ -31,19 +31,19 @@ ms.locfileid: "60559332"
 |:---------------|:--------|:----------|
 |extensionAttribute1|Строка| Первый настраиваемый атрибут расширения. |
 |extensionAttribute2|Строка| Второй настраиваемый атрибут расширения. |
-|extensionAttribute3|Строка| Третий настраиваемый атрибут расширения. |
-|extensionAttribute4|Строка| Четвертый настраиваемый атрибут расширения. |
-|extensionAttribute5|Строка| Пятый настраиваемый атрибут расширения. |
+|extensionAttribute3|String| Третий настраиваемый атрибут расширения. |
+|extensionAttribute4|String| Четвертый настраиваемый атрибут расширения. |
+|extensionAttribute5|String| Пятый настраиваемый атрибут расширения. |
 |extensionAttribute6|Строка| Шестой настраиваемый атрибут расширения. |
-|extensionAttribute7|Строка| Седьмой настраиваемый атрибут расширения. |
-|extensionAttribute8|Строка| Восьмой настраиваемый атрибут расширения. |
+|extensionAttribute7|String| Седьмой настраиваемый атрибут расширения. |
+|extensionAttribute8|String| Восьмой настраиваемый атрибут расширения. |
 |extensionAttribute9|Строка| Девятый настраиваемый атрибут расширения. |
-|extensionAttribute10|Строка| Десятый настраиваемый атрибут расширения. |
+|extensionAttribute10|String| Десятый настраиваемый атрибут расширения. |
 |extensionAttribute11|Строка| Одиннадцатый настраиваемый атрибут расширения. |
 |extensionAttribute12|Строка| Двенадцатый настраиваемый атрибут расширения. |
-|extensionAttribute13|Строка| Тринадцатый настраиваемый атрибут расширения. |
+|extensionAttribute13|String| Тринадцатый настраиваемый атрибут расширения. |
 |extensionAttribute14|Строка| Четырнадцатый настраиваемый атрибут расширения. |
-|extensionAttribute15|Строка| Пятнадцатый настраиваемый атрибут расширения. |
+|extensionAttribute15|String| Пятнадцатый настраиваемый атрибут расширения. |
 
 ## <a name="json-representation"></a>Представление JSON
 
