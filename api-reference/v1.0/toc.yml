@@ -284,7 +284,7 @@ items:
           - name: Назначение ролей приложений
             href: resources/approleassignment.md
             items:
-              - name: List
+              - name: Список
                 href: api/user-list-approleassignments.md
               - name: Добавить
                 href: api/user-post-approleassignments.md
@@ -304,7 +304,7 @@ items:
                 href: api/user-findmeetingtimes.md
               - name: Получение сведений о доступности
                 href: api/calendar-getschedule.md
-              - name: List
+              - name: Список
                 href: api/user-list-calendars.md
               - name: Список групп календарей
                 href: api/user-list-calendargroups.md
@@ -321,13 +321,13 @@ items:
                 href: api/user-post-contacts.md
               - name: Создание папки контактов
                 href: api/user-post-contactfolders.md
-              - name: List
+              - name: Список
                 href: api/user-list-contacts.md
               - name: Список папок контактов
                 href: api/user-list-contactfolders.md
           - name: Предоставление делегированных разрешений
             items:
-              - name: List
+              - name: Список
                 href: api/user-list-oauth2permissiongrants.md
           - name: Объекты каталога
             href: resources/directoryobject.md
@@ -576,15 +576,15 @@ items:
               - name: Параметр группы
                 href: resources/groupsetting.md
                 items:
-                  - name: Создание параметра
-                    href: api/groupsetting-post-groupsettings.md
-                  - name: Получение параметра
+                  - name: Создание
+                    href: api/group-post-settings.md
+                  - name: Получение
                     href: api/groupsetting-get.md
-                  - name: Перечисление параметров
-                    href: api/groupsetting-list.md
-                  - name: Обновление параметра
+                  - name: Список
+                    href: api/group-list-settings.md
+                  - name: Обновление
                     href: api/groupsetting-update.md
-                  - name: Удаление параметра
+                  - name: Delete
                     href: api/groupsetting-delete.md
               - name: Шаблон параметров группы
                 href: resources/groupsettingtemplate.md
@@ -627,7 +627,7 @@ items:
           - name: Назначение ролей приложений
             href: resources/approleassignment.md
             items:
-              - name: List
+              - name: Список
                 href: api/group-list-approleassignments.md
               - name: Добавить
                 href: api/group-post-approleassignments.md
@@ -854,11 +854,15 @@ items:
                         href: api/application-list-extensionproperty.md
                       - name: Создание
                         href: api/application-post-extensionproperty.md
-                      - name: Удалить
-                        href: api/application-delete-extensionproperty.md
+                      - name: Получение
+                        href: api/extensionproperty-get.md
+                      - name: Удаление
+                        href: api/extensionproperty-delete.md
+                      - name: Получение доступных свойств расширения
+                        href: api/directoryobject-getavailableextensionproperties.md
               - name: Владельцы
                 items:
-                  - name: List
+                  - name: Список
                     href: api/application-list-owners.md
                   - name: Добавить
                     href: api/application-post-owners.md
@@ -871,7 +875,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -880,7 +884,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -912,7 +916,7 @@ items:
               - name: Назначение ролей приложений
                 href: resources/approleassignment.md
                 items:
-                  - name: List
+                  - name: Список
                     href: api/serviceprincipal-list-approleassignments.md
                   - name: Добавить
                     href: api/serviceprincipal-post-approleassignments.md
@@ -938,7 +942,7 @@ items:
                     href: api/serviceprincipal-addtokensigningcertificate.md
               - name: Предоставление делегированных разрешений
                 items:
-                  - name: List
+                  - name: Список
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
               - name: Классификация делегированных разрешений
                 href: resources/delegatedpermissionclassification.md
@@ -965,7 +969,7 @@ items:
                     href: api/directoryobject-getmemberobjects.md
               - name: Владельцы
                 items:
-                  - name: List
+                  - name: Список
                     href: api/serviceprincipal-list-owners.md
                   - name: Добавить
                     href: api/serviceprincipal-post-owners.md
@@ -978,7 +982,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: List
+                      - name: Список
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -987,7 +991,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: List
+                      - name: Список
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -1024,7 +1028,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -1033,7 +1037,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1336,9 +1340,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Запись вызова
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Сеанс
                 items:
-                  - name: Session
+                  - name: Сеанс
                     href: resources/callrecords-session.md
                   - name: Перечисление сеансов
                     href: api/callrecords-session-list.md
@@ -1379,7 +1383,7 @@ items:
                   - name: Запись посещаемости
                     href: resources/attendancerecord.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/attendancerecord-list.md
           - name: Присутствие
             href: resources/presence.md
@@ -1591,7 +1595,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: Прервать
                     href: api/printjob-abort.md
-                  - name: Перенаправление
+                  - name: Redirect
                     href: api/printjob-redirect.md
               - name: Операция печати
                 href: resources/printoperation.md
@@ -5075,9 +5079,10 @@ items:
                         href: api/organizationalbrandinglocalization-update.md
                       - name: Delete
                         href: api/organizationalbrandinglocalization-delete.md
-              - name: Политика
-                href: resources/policy-overview.md
+              - name: Политики
                 items:
+                  - name: Обзор
+                    href: resources/policy-overview.md
                   - name: 'Политика времени, основанная на действиях'
                     href: resources/activitybasedtimeoutpolicy.md
                     items:
@@ -5362,6 +5367,7 @@ items:
                       - name: Список контактных рецензентов
                         href: api/accessreviewinstance-list-contactedreviewers.md
                       - name: Элемент решения экземпляра проверки доступа
+                        displayName: access review decisions
                         href: resources/accessreviewinstancedecisionitem.md
                         items:
                           - name: Получение
@@ -5372,6 +5378,23 @@ items:
                             href: api/accessreviewinstancedecisionitem-update.md
                           - name: Фильтр текущего пользователя
                             href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+                  - name: Определение истории просмотра доступа
+                    href: resources/accessreviewhistorydefinition.md
+                    items:
+                      - name: Получение
+                        href: api/accessreviewhistorydefinition-get.md
+                      - name: Список
+                        href: api/accessreviewset-list-historydefinitions.md
+                      - name: Создание
+                        href: api/accessreviewset-post-historydefinitions.md
+                      - name: Экземпляр истории проверки доступа
+                        href: resources/accessreviewhistoryinstance.md
+                        items:
+                          - name: Список
+                            href: api/accessreviewhistorydefinition-list-instances.md
+                          - name: Создание URI загрузки
+                            displayName: Downloadable access review history report
+                            href: api/accessreviewhistoryinstance-generatedownloaduri.md
               - name: Запросы согласия
                 href: resources/consentrequests-overview.md
                 items:
@@ -5423,7 +5446,7 @@ items:
                   - name: Назначение пакета доступа
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/entitlementmanagement-list-assignments.md
                       - name: Фильтр текущего пользователя
                         href: api/accesspackageassignment-filterbycurrentuser.md
@@ -6166,7 +6189,7 @@ items:
                     href: api/externalconnectors-externalgroup-delete.md
               - name: Внешний член группы
                 items:
-                  - name: Удостоверение
+                  - name: Identity
                     href: resources/externalconnectors-identity.md
                   - name: Создание
                     href: api/externalconnectors-externalgroup-post-members.md
@@ -6279,7 +6302,7 @@ items:
                     href: api/site-delete-permission.md
           - name: Списки
             items:
-              - name: List
+              - name: Список
                 href: resources/list.md
               - name: Создание списка
                 href: api/list-create.md
@@ -6372,7 +6395,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: List
+                  - name: Список
                     href: api/termstore-group-list-sets.md
                   - name: Список дочерних элементов
                     href: api/termstore-term-list-children.md
@@ -6679,7 +6702,7 @@ items:
                 href: api/chats-getallmessages.md
               - name: Получить контент с хост-контентом
                 href: api/chatmessagehostedcontent-get.md
-          - name: Приложение.
+          - name: Приложение
             items:
               - name: Приложение в каталоге
                 href: resources/teamsapp.md
@@ -6835,7 +6858,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Получение
                     href: api/offershiftrequest-get.md
-                  - name: List
+                  - name: Список
                     href: api/offershiftrequest-list.md
                   - name: Утвердить
                     href: api/offershiftrequest-approve.md
@@ -6985,7 +7008,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Задача
+          - name: Задачи
             href: resources/todotask.md
             items:
               - name: Перечисление задач

@@ -1,47 +1,47 @@
 ---
-title: Руководство. Используйте API обзоров доступа, чтобы просмотреть гостевой доступ к группам Microsoft 365.
-description: Используйте API обзоров доступа, чтобы просмотреть гостевой доступ к группам Microsoft 365.
+title: Руководство. Используйте API обзоров доступа для просмотра гостевого доступа к группам Microsoft 365.
+description: Используйте API отзывов доступа, чтобы просмотреть гостевой доступ к группам Microsoft 365.
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 4273c4d80d80c002265833fe14ba4492e9013fb4
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: f2c9210b4173850c6fbccaad352c88b894965e29
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651430"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334921"
 ---
-# <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a>Руководство. Используйте API обзоров доступа, чтобы просмотреть гостевой доступ к группам Microsoft 365.
+# <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a>Руководство. Используйте API обзоров доступа для просмотра гостевого доступа к группам Microsoft 365.
 
-В этом руководстве Graph Explorer для создания и чтения отзывов доступа, которые ориентированы на все Microsoft 365 группы с гостевых пользователей в клиенте. Для этого сначала с помощью Azure AD B2B вы сможете приглашать и создавать гостевого пользователя, также именуемого внешним удостоверением, в клиенте. Затем перед созданием и чтением обзора доступа вы добавите этого гостевых пользователей в Microsoft 365 группу.
+API для проверки доступа в Microsoft Graph позволяет организациям проверять и проверять доступ, который удостоверения (также называемые директорами *)* назначены ресурсам организации. В совместной работе с клиентом внешние пользователи могут получать доступ к ресурсам, таким как файлы, заметки, календари и даже Teams беседы. Этот доступ можно эффективно управлять Microsoft 365 группами. Таким образом, с помощью API отзывов о доступе организации могут периодически засвидетельстовки принципов, имеющих доступ к таким группам, а также других ресурсов организации.
+
+Предположим, что вы предоставили доступ внешним пользователям (также называемым гостевых *) к* ресурсам в вашей организации Microsoft 365 группами. В этом руководстве вы сможете просмотреть их доступ к группам Microsoft 365 в клиенте.
 
 >[!NOTE]
 >Объекты отклика, показанные в этом руководстве, могут быть сокращены для чтения.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для завершения этого руководства необходимы следующие ресурсы и привилегии:
 
-+ Рабочий клиент Azure AD с включенной Azure AD Premium P2 или emS E5. 
++ Рабочий клиент Azure AD с включенной Azure AD Premium P2 или EMS E5. 
 + Учетная запись в другом клиенте Azure AD или социальном удостоверении, которую можно пригласить в качестве гостевого пользователя (B2B-пользователя).
-+ Вопишитесь [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) в качестве пользователя в роли глобального администратора. 
-+ Следующие делегированные разрешения: `User.Invite.All` `AccessReview.ReadWrite.All` , , `Group.ReadWrite.All` `User.ReadWrite.All` .
++ Вопишите Graph [Explorer](https://developer.microsoft.com/graph/graph-explorer) в качестве пользователя в роли глобального администратора. 
++ Следующие делегированные разрешения: `User.Invite.All`, , `Group.ReadWrite.All``AccessReview.ReadWrite.All``User.ReadWrite.All`.
 
 Согласие на необходимые разрешения в Graph Explorer:
-1. Выберите значок параметров справа от сведений учетной записи пользователя, а затем выберите **Выберите разрешения.**
+1. Выберите значок параметров справа от сведений учетной записи пользователя, а затем Выберите **разрешения**.
    
-   ![Выбор разрешений Microsoft Graph](../images/../concepts/images/tutorial-accessreviews-api/settings.png)
-   <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select the Microsoft Graph permissions":::-->
+   :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Выберите разрешения Graph Microsoft." border="true":::
 
 2. Прокрутите список разрешений для этих разрешений:
-   + AccessReview (3), расширяйте и выберите **AccessReview.ReadWrite.All**.
+   + AccessReview (3), развинь, а затем выберите **AccessReview.ReadWrite.All**.
    + Группа (2), развиньте и выберите **Group.ReadWrite.All**.
    + Пользователь (8), расширить и затем выбрать **User.Invite.All** и **User.ReadWrite.All**.
    
-   Нажмите **Согласие** и выберите **Принять**, чтобы согласиться принять разрешения. Вам не нужно предоставлять согласие от имени организации для этих разрешений.
+   Нажмите **Согласие** и выберите **Принять**, чтобы согласиться принять разрешения. Вам не нужно соглашаться от имени организации на эти разрешения.
    
-   ![Согласие на разрешения Graph Майкрософт](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png)
-   <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png" alt-text="Consent to the Microsoft Graph permissions":::-->
+   :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Согласие на Graph разрешений Майкрософт." border="true":::
 
 ## <a name="step-1-create-a-test-user-in-your-tenant"></a>Шаг 1. Создание тестового пользователя в клиенте
 
@@ -52,7 +52,7 @@ ms.locfileid: "61651430"
 }-->
 
 ```http
-POST /users
+POST https://graph.microsoft.com/v1.0/users
 Content-Type: application/json
 
 {
@@ -79,7 +79,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
     "id": "c9a5aff7-9298-4d71-adab-0a222e0a05e4",
     "displayName": "Aline Dupuy",
     "userPrincipalName": "AlineD@contoso.com",
@@ -98,7 +98,7 @@ Content-type: application/json
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/invitations
+POST https://graph.microsoft.com/v1.0/invitations
 Content-Type: application/json
 
 {
@@ -121,7 +121,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#invitations/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#invitations/$entity",
     "invitedUser": {
         "id": "baf1b0a0-1f9a-4a56-9884-6a30824f8d20"
     }    
@@ -131,22 +131,22 @@ Content-type: application/json
 ## <a name="step-3-create-a-new-microsoft-365-group-and-add-the-guest-user"></a>Шаг 3. Создание Microsoft 365 группы и добавление гостевого пользователя
 
 На этом шаге:
-1. Создайте новую Microsoft 365 с именем **маркетинговая кампания Feelgood.**
+1. Создайте новую Microsoft 365 с именем **Feel good marketing campaign**.
 2. Назначьте себя владельцем группы.
 3. Добавьте john@tailspintoys.com в качестве участника группы. Их доступ к группе является предметом рассмотрения вами, владельцем группы.
 
 ### <a name="request"></a>Запрос
 
 В этом вызове замените:
-+ `cdb555e3-b33e-4fd5-a427-17fadacbdfa7` с **вашим id**. Чтобы получить свой **id,** `GET` запустите `https://graph.microsoft.com/beta/me` .
-+ `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` с **john@tailspintoys.com**'s **id** из ответа в шаге 2.
++ `cdb555e3-b33e-4fd5-a427-17fadacbdfa7` с вашим ИД. Чтобы получить свой ID, запустите `GET` .`https://graph.microsoft.com/v1.0/me`
++ `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` с **john@tailspintoys.com** из ответа на шаге 2.
 
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-M365group-creategroup"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups
+POST https://graph.microsoft.com/v1.0/groups
 Content-Type: application/json
 
 {
@@ -159,10 +159,10 @@ Content-Type: application/json
     "mailNickname": "FeelGoodCampaign",
     "securityEnabled": true,
     "owners@odata.bind": [
-        "https://graph.microsoft.com/beta/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7"
+        "https://graph.microsoft.com/v1.0/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7"
     ],
     "members@odata.bind": [
-        "https://graph.microsoft.com/beta/users/baf1b0a0-1f9a-4a56-9884-6a30824f8d20"
+        "https://graph.microsoft.com/v1.0/users/baf1b0a0-1f9a-4a56-9884-6a30824f8d20"
     ]
 }
 ```
@@ -180,7 +180,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
     "id": "59ab642a-2776-4e32-9b68-9ff7a47b7f6a",
     "displayName": "Feelgood Marketing Campaign",
     "groupTypes": [
@@ -193,21 +193,21 @@ Content-type: application/json
 
 ## <a name="step-4-create-an-access-review-for-all-microsoft-365-groups-with-guest-users"></a>Шаг 4. Создание обзора доступа для всех групп Microsoft 365 с гостевых пользователей
 
-При создании серии повторяющихся обзоров доступа для всех групп Microsoft 365 с гостевых пользователей вы запланировать периодический обзор доступа гостей к группе Microsoft 365. Сделайте это для **группы маркетинговой кампании Feelgood.**
+При создании серии повторных обзоров доступа для всех групп Microsoft 365 с гостевых пользователей вы запланировать периодический обзор доступа гостей к Microsoft 365 группе. В этом случае группа **Маркетинговой кампании Feel good** .
 
 В серии обзоров доступа используются следующие параметры:
 + Это повторяющийся обзор доступа, который пересматривается ежеквартно.
-+ Владельцы групп проверяют постоянный доступ гостевых пользователей.
-+ Область обзора ограничивается только Microsoft 365 только с **гостевых пользователей.** Дополнительные параметры настройки области см. в разделе [See also.](#see-also) 
-+ Обозреватель резервного копирования. Это может быть пользователь с откатом или группа, которая может просмотреть доступ в случае, если у группы нет владельцев. Дополнительные возможности настройки рецензентов см. в разделе [See also.](#see-also)
-+ **autoApplyDecisionsEnabled** установлено `true` для . В этом случае решения применяются автоматически, как только рецензент завершит обзор доступа или закончится продолжительность обзора доступа. Если он не включен, пользователь должен после завершения проверки применять решения вручную.
-+ Применить **действие removeAccessApplyAction** для отклонить гостевых пользователей. Это удаляет членство в группе отклоненного гостя. Гостевой пользователь по-прежнему может войти в клиент.
++ Владельцы групп решают, следует ли гостевых пользователей поддерживать свой доступ.
++ Область обзора ограничивается только группами Microsoft 365 с **гостевых пользователей**.
++ Обозреватель резервного копирования. Они могут быть пользователем-откатом или группой, которая может просмотреть доступ в случае, если у группы нет владельцев.
++ **autoApplyDecisionsEnabled** установлено для `true`. В этом случае решения применяются автоматически, как только рецензент завершит обзор доступа или закончится продолжительность обзора доступа. Если он не включен, пользователь должен применять решения вручную после завершения проверки.
++ Применить действие **removeAccessApplyAction** к отклоненным гостевых пользователям, чтобы удалить их из группы. Гостевой пользователь по-прежнему может войти в клиент, но не будет получать доступ к группе.
 
 ### <a name="request"></a>Запрос
 
-В этом вызове замените следующее:
+В этом вызове замените следующие значения:
 
-+ `c9a5aff7-9298-4d71-adab-0a222e0a05e4` с **ид пользователя,** назначенного в качестве резервного рецензента. Это **id из** ответа в шаге 1.
++ `c9a5aff7-9298-4d71-adab-0a222e0a05e4` с ИД Aline, который вы назначаете в качестве резервного рецензента.
 + Значение **startDate с** сегодняшней датой и **значением endDate** с датой один год с даты начала. 
 
 <!-- {
@@ -215,7 +215,7 @@ Content-type: application/json
   "name": "tutorial-accessreviews-M365group-create_accessReviewScheduleDefinition"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
+POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions
 Content-type: application/json
 
 {
@@ -237,7 +237,7 @@ Content-type: application/json
             "queryRoot": null
         }
     ],
-    "backupReviewers": [
+    "fallbackReviewers": [
         {
             "query": "/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4",
             "queryType": "MicrosoftGraph",
@@ -292,7 +292,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions/$entity",
     "id": "c22ae540-b89a-4d24-bac0-4ef35e6591ea",
     "displayName": "Group owners review guest across Microsoft 365 groups in the tenant (Quarterly)",
     "status": "NotStarted",
@@ -316,7 +316,7 @@ Content-type: application/json
             "queryRoot": null
         }
     ],
-    "backupReviewers": [
+    "fallbackReviewers": [
         {
             "query": "/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4",
             "queryType": "MicrosoftGraph",
@@ -357,23 +357,23 @@ Content-type: application/json
 
 ## <a name="step-5-list-instances-of-the-access-review"></a>Шаг 5. Список экземпляров обзора доступа
 
-В следующем запросе перечислены все экземпляры определения обзора доступа. Если клиент тестирования содержит другие группы Microsoft 365 с гостевых пользователей, этот запрос возвращает один экземпляр для каждой Microsoft 365 группы с гостевых пользователей в клиенте.
+В следующем запросе перечислены все экземпляры определения обзора доступа. Если в клиенте Microsoft 365 несколько групп с гостевых пользователей, этот запрос возвращает по одному экземпляру для каждой Microsoft 365 с *гостевых пользователей*.
 
 ### <a name="request"></a>Запрос
 
-В этом вызове `c22ae540-b89a-4d24-bac0-4ef35e6591ea` замените **id** определения обзора доступа, возвращенного в шаге 4.
+В этом вызове замените `c22ae540-b89a-4d24-bac0-4ef35e6591ea` ID определения обзора доступа, возвращенного в шаге 4.
 
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-M365group-list_accessReviewInstance"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances
 ```
 
 ### <a name="response"></a>Отклик
 
-В этом ответе область включает группу с **id** (группа маркетинговой кампании `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` **Feelgood,** созданная в шаге 3), так как у нее есть гость.
+В этом ответе `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` область включает группу, идентифицированную группой (группа маркетинговой кампании **Feel good** , созданная в шаге 3), так как у нее есть гостевой пользователь.
 
 <!-- {
   "blockType": "response",
@@ -386,7 +386,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('c22ae540-b89a-4d24-bac0-4ef35e6591ea')/instances",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions('c22ae540-b89a-4d24-bac0-4ef35e6591ea')/instances",
     "value": [
         {
             "id": "6392b1a7-9c25-4844-83e5-34e23c88e16a",
@@ -401,7 +401,7 @@ Content-type: application/json
     ]
 }
 ```
-В этом ответе экземпляр проверки доступа в настоящее время `InProgress` . Поскольку это ежеквартный обзор, каждые 3 месяца новый экземпляр обзора создается автоматически, и вы — рецензент — можете применять новые решения.
+В этом ответе экземпляр проверки доступа в настоящее время `InProgress`. Поскольку это ежеквартный обзор, новый экземпляр обзора создается автоматически каждые три месяца, и рецензенты могут применять новые решения.
 
 ## <a name="step-6-get-decisions"></a>Шаг 6. Принятие решений
 
@@ -410,15 +410,15 @@ Content-type: application/json
 ### <a name="request"></a>Запрос
 
 В этом вызове:
-+ `c22ae540-b89a-4d24-bac0-4ef35e6591ea`Замените **id определения** обзора доступа, возвращенного в шаге 4.
-+ `6392b1a7-9c25-4844-83e5-34e23c88e16a`Замените **id экземпляра** обзора доступа, возвращенного в шаге 5.
++ Замените `c22ae540-b89a-4d24-bac0-4ef35e6591ea` ID определения обзора доступа, возвращенного в шаге 4.
++ Замените `6392b1a7-9c25-4844-83e5-34e23c88e16a` ID экземпляра обзора доступа, возвращенного в шаге 5.
 
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-M365group-list_accessReviewInstanceDecisionItem"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances/6392b1a7-9c25-4844-83e5-34e23c88e16a/decisions
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances/6392b1a7-9c25-4844-83e5-34e23c88e16a/decisions
 ```
 
 ### <a name="response"></a>Отклик
@@ -436,7 +436,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('c22ae540-b89a-4d24-bac0-4ef35e6591ea')/instances('6392b1a7-9c25-4844-83e5-34e23c88e16a')/decisions",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions('c22ae540-b89a-4d24-bac0-4ef35e6591ea')/instances('6392b1a7-9c25-4844-83e5-34e23c88e16a')/decisions",
     "@odata.count": 1,
     "value": [
         {
@@ -475,24 +475,27 @@ Content-type: application/json
 }
 ```
 
-Так как это ежекварточный обзор, и пока определение по-прежнему активно, то есть периодичная дата повторения не является прошлой датой, каждые 3 месяца, когда создается новый экземпляр обзора, вы, как рецензент, можете применять новые решения. 
+В ежеквартовом обзоре, как этот, и до тех пор, как обзор доступа по-прежнему активен:
++ Каждые три месяца будет создаваться новый экземпляр обзора.
++ Рецензенты должны будут применять новые решения для новых экземпляров.
+
 
 ## <a name="step-7-clean-up-resources"></a>Шаг 7. Очистка ресурсов
 
-Удалите ресурсы, созданные для этого руководства: группу маркетинговой кампании **Feelgood,** определение расписания обзоров доступа, гостевой пользователь и тестовый пользователь.
+Удалите ресурсы, созданные для этого учебного **руководства. Вы** можете использовать группу маркетинговой кампании, определение расписания просмотра доступа, гостевой пользователь и тестовый пользователь.
 
 ### <a name="delete-the-microsoft-365-group"></a>Удаление Microsoft 365 группы
 
 #### <a name="request"></a>Запрос
 
-В этом вызове замените id маркетинговой кампании `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` **Feelgood** Microsoft 365 группы. 
+В этом вызове замените `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` ID вашей маркетинговой кампании **Feel good Microsoft 365** группы.
 
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-M365group-delete_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/groups/59ab642a-2776-4e32-9b68-9ff7a47b7f6a
+DELETE https://graph.microsoft.com/v1.0/groups/59ab642a-2776-4e32-9b68-9ff7a47b7f6a
 ```
 
 #### <a name="response"></a>Отклик
@@ -507,7 +510,7 @@ Content-type: text/plain
 
 ### <a name="delete-the-access-review-definition"></a>Удаление определения обзора доступа
 
-В этом вызове `c22ae540-b89a-4d24-bac0-4ef35e6591ea` замените **id** определения обзора доступа. Так как определение расписания проверки доступа является планом обзора доступа, удаление определения удаляет параметры, экземпляры и решения, связанные с обзором доступа.
+В этом вызове замените `c22ae540-b89a-4d24-bac0-4ef35e6591ea` ID определения обзора доступа. Так как определение расписания проверки доступа является планом обзора доступа, удаление определения удаляет связанные параметры, экземпляры и решения.
 
 #### <a name="request"></a>Запрос
 <!-- {
@@ -515,7 +518,7 @@ Content-type: text/plain
   "name": "tutorial-accessreviews-M365group-delete_accessReviewScheduleDefinition"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea
+DELETE https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea
 ```
 
 #### <a name="response"></a>Отклик
@@ -530,7 +533,7 @@ Content-type: text/plain
 
 ### <a name="remove-the-guest-user"></a>Удаление гостевого пользователя
 
-В этом вызове `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` замените **id** гостевого пользователя john@tailspintoys.com.
+В этом вызове замените `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` ID гостевого пользователя john@tailspintoys.com.
 
 #### <a name="request"></a>Запрос
 <!-- {
@@ -538,7 +541,7 @@ Content-type: text/plain
   "name": "tutorial-accessreviews-M365group-delete_user"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/users/baf1b0a0-1f9a-4a56-9884-6a30824f8d20
+DELETE https://graph.microsoft.com/v1.0/users/baf1b0a0-1f9a-4a56-9884-6a30824f8d20
 ```
 
 #### <a name="response"></a>Отклик
@@ -552,7 +555,7 @@ Content-type: text/plain
 ```
 
 ### <a name="delete-the-test-user"></a>Удаление тестового пользователя
-В этом вызове `c9a5aff7-9298-4d71-adab-0a222e0a05e4` замените **id** тестового пользователя.
+В этом вызове замените `c9a5aff7-9298-4d71-adab-0a222e0a05e4` ID тестового пользователя.
 
 #### <a name="request"></a>Запрос
 <!-- {
@@ -561,7 +564,7 @@ Content-type: text/plain
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4
+DELETE https://graph.microsoft.com/v1.0/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4
 ```
 
 #### <a name="response"></a>Отклик
@@ -575,17 +578,11 @@ HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
-Поздравляем! Вы создали обзор доступа для всех гостевых пользователей в Microsoft 365 группах в клиенте и запланирование ежеквартов для оценки и аттестации доступа гостевых пользователей. Владельцы групп будут пересматривать доступ во время этих циклов, выбирая утверждение или отказ в доступе.
+Поздравляем! Вы создали обзор доступа для гостевых пользователей в Microsoft 365 в клиенте и запланнесли его ежеквартно. Владельцы групп будут пересматривать доступ во время этих циклов, выбирая утверждение или отказ в доступе.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
-+ [Ссылка на API обзоров доступа](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true)
-+ [Настройка области определения обзора доступа с помощью API microsoft Graph](/graph/accessreviews-scope-concept)
-+ [Назначение рецензентов определению обзора доступа с помощью API Graph Microsoft](/graph/accessreviews-reviewers-concept)
-+ [Обзор обзоров доступа и требования к лицензиям](/azure/active-directory/governance/access-reviews-overview)
-+ [Создание обзора доступа групп & приложений](/azure/active-directory/governance/create-access-review)
-+ [Приглашение и добавление гостевых пользователей в организацию](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)
-+ [Ссылка на API обзоров доступа](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true)
-+ [Создание accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
-+ [List accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
-+ [List accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)
+
++ [API обзоров доступа](/graph/api/resources/accessreviewsv2-overview)
++ [Что такое обзоры доступа к Azure AD?](/azure/active-directory/governance/access-reviews-overview)
++ [Просмотр доступа к группам и приложениям в отзывах о доступе к Azure AD](/azure/active-directory/governance/perform-access-review)

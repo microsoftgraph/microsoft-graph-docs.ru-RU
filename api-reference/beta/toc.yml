@@ -325,16 +325,26 @@ items:
               - name: Представление напоминаний
                 href: api/user-reminderview.md
           - name: Контакты
-            href: resources/contact.md
             items:
-              - name: Create
-                href: api/user-post-contacts.md
-              - name: Создание папки контактов
-                href: api/user-post-contactfolders.md
-              - name: Список
-                href: api/user-list-contacts.md
-              - name: Список папок контактов
-                href: api/user-list-contactfolders.md
+              - name: Contact
+                href: resources/contact.md
+                items:
+                  - name: Создание контакта
+                    href: api/user-post-contacts.md
+                  - name: Создание папки контактов
+                    href: api/user-post-contactfolders.md
+                  - name: Список контактов
+                    href: api/user-list-contacts.md
+                  - name: Список папок контактов
+                    href: api/user-list-contactfolders.md
+              - name: Предложения по объединению контактов (предварительный просмотр)
+                items:
+                  - name: Предложения объединения контактов
+                    href: resources/contactmergesuggestions.md
+                  - name: Получение
+                    href: api/contactmergesuggestions-get.md
+                  - name: Обновление
+                    href: api/contactmergesuggestions-update.md
           - name: Предоставление делегированных разрешений
             items:
               - name: Список делегирования разрешений
@@ -560,7 +570,7 @@ items:
                 href: api/profile-get.md
               - name: Удаление профиля пользователя
                 href: api/profile-delete.md
-          - name: Командная работа
+          - name: Teamwork
             items:
               - name: Установленное приложение
                 href: resources/teamsappinstallation.md
@@ -916,8 +926,10 @@ items:
                         href: api/application-list-extensionproperty.md
                       - name: Создание
                         href: api/application-post-extensionproperty.md
-                      - name: Удалить
-                        href: api/application-delete-extensionproperty.md
+                      - name: Получение
+                        href: api/extensionproperty-get.md
+                      - name: Удаление
+                        href: api/extensionproperty-delete.md
               - name: Федераированные учетные данные удостоверений (предварительный просмотр)
                 items:
                   - name: Обзор
@@ -1211,7 +1223,7 @@ items:
                     href: api/synchronization-synchronizationjob-pause.md
                   - name: Перезапуск
                     href: api/synchronization-synchronizationjob-restart.md
-                  - name: Delete
+                  - name: Удалить
                     href: api/synchronization-synchronizationjob-delete.md
                   - name: Предоставление по запросу
                     href: api/synchronization-synchronizationjob-provision-on-demand.md
@@ -1561,9 +1573,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Получение
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Сеанс
                 items:
-                  - name: Session
+                  - name: Сеанс
                     href: resources/callrecords-session.md
                   - name: Список
                     href: api/callrecords-session-list.md
@@ -3224,7 +3236,7 @@ items:
                         href: api/intune-apps-windowsmobilemsi-delete.md
                       - name: Обновление
                         href: api/intune-apps-windowsmobilemsi-update.md
-                  - name: Windows конфигурации клиентского офиса
+                  - name: Windows конфигурации клиента office
                     href: resources/intune-cirrus-windowsofficeclientconfiguration.md
                     items:
                       - name: Список
@@ -6852,7 +6864,7 @@ items:
                         href: api/intune-deviceconfig-windowsdeliveryoptimizationconfiguration-update.md
                   - name: Режим оптимизации доставки в Windows
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md
-                  - name: Windows типа края киоска
+                  - name: Windows края киоска
                     href: resources/intune-deviceconfig-windowsedgekiosktype.md
                   - name: Сетевой профиль брандмауэра Windows
                     href: resources/intune-deviceconfig-windowsfirewallnetworkprofile.md
@@ -8700,7 +8712,7 @@ items:
                     href: resources/intune-devices-userexperienceanalyticssettings.md
                   - name: 'Аналитика пользовательских интерфейсов, обобщенная'
                     href: resources/intune-devices-userexperienceanalyticssummarizedby.md
-                  - name: Сводка Windows 10 пользовательских интерфейсов
+                  - name: Сводка аналитики пользовательских Windows 10 устройств
                     href: resources/intune-devices-userexperienceanalyticswindows10devicessummary.md
                   - name: Аналитика пользовательских интерфейсов работает с любого устройства
                     href: resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md
@@ -9468,7 +9480,7 @@ items:
                         href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                       - name: Обновление
                         href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
-                  - name: Удостоверение
+                  - name: Identity
                     href: resources/intune-rbac-identity.md
                   - name: Набор удостоверений
                     href: resources/intune-rbac-identityset.md
@@ -10058,10 +10070,14 @@ items:
                     href: api/cloudpc-reprovision.md
                   - name: Удаленное действие reprovision
                     href: api/manageddevice-reprovisioncloudpc.md
-                  - name: Массовое удаленное перепроизводство
+                  - name: Массовое перепроизводство удаленного действия
                     href: api/manageddevice-bulkreprovisioncloudpc.md
-                  - name: Повторное удаленное действие
+                  - name: Resize remotely action
                     href: api/manageddevice-resizecloudpc.md
+                  - name: Восстановление удаленного действия
+                    href: api/manageddevice-restorecloudpc.md
+                  - name: Массовое восстановление удаленного действия
+                    href: api/manageddevice-bulkrestorecloudpc.md
                   - name: Устранение неполадок
                     href: api/cloudpc-troubleshoot.md
               - name: Изображение устройства облачного КОМПЬЮТЕРА
@@ -10114,7 +10130,7 @@ items:
                     href: api/virtualendpoint-post-provisioningpolicies.md
                   - name: Обновление
                     href: api/cloudpcprovisioningpolicy-update.md
-                  - name: Delete
+                  - name: Удалить
                     href: api/cloudpcprovisioningpolicy-delete.md
                   - name: Назначение
                     href: api/cloudpcprovisioningpolicy-assign.md
@@ -10138,7 +10154,7 @@ items:
                     href: api/virtualendpoint-post-usersettings.md
                   - name: Обновление
                     href: api/cloudpcusersetting-update.md
-                  - name: Delete
+                  - name: Удалить
                     href: api/cloudpcusersetting-delete.md
                   - name: Назначение
                     href: api/cloudpcusersetting-assign.md
@@ -10268,6 +10284,13 @@ items:
                 items:
                   - name: Список совокупных соответствия политикам
                     href: api/managedtenants-managedtenant-list-aggregatedpolicycompliances.md
+              - name: События аудита
+                href: resources/managedtenants-auditevent.md
+                items:
+                  - name: Список
+                    href: api/managedtenants-managedtenant-list-auditevents.md
+                  - name: Получение
+                    href: api/managedtenants-auditevent-get.md
               - name: Подключение к облачному компьютеру
                 href: resources/managedtenants-cloudpcconnection.md
                 items:
@@ -10414,7 +10437,7 @@ items:
                 items:
                   - name: Список Windows состояния вредоносных программ устройств
                     href: api/managedtenants-managedtenant-list-windowsdevicemalwarestates.md
-                  - name: Получить состояние Windows устройства
+                  - name: Состояние Windows устройств
                     href: api/managedtenants-windowsdevicemalwarestate-get.md
               - name: Состояние защиты Windows
                 href: resources/managedtenants-windowsprotectionstate.md
@@ -11246,18 +11269,18 @@ items:
                     href: api/directoryroletemplate-list.md
                   - name: Получение шаблона для ролей каталогов
                     href: api/directoryroletemplate-get.md
-              - name: Параметр каталога
+              - name: Параметры каталога
                 href: resources/directorysetting.md
                 items:
-                  - name: Создание параметра
-                    href: api/directorysetting-post-settings.md
-                  - name: Получение параметра
+                  - name: Создание
+                    href: api/group-post-settings.md
+                  - name: Получение
                     href: api/directorysetting-get.md
-                  - name: Перечисление параметров
-                    href: api/directorysetting-list.md
-                  - name: Обновление параметра
+                  - name: Список
+                    href: api/group-list-settings.md
+                  - name: Обновление
                     href: api/directorysetting-update.md
-                  - name: Удаление параметра
+                  - name: Delete
                     href: api/directorysetting-delete.md
               - name: Шаблон параметра каталога
                 href: resources/directorysettingtemplate.md
@@ -11412,6 +11435,8 @@ items:
                     items:
                       - name: Назначение ролей списка
                         href: api/rbacapplication-list-roleassignments.md
+                      - name: Список назначений транзитных ролей
+                        href: api/rbacapplication-list-transitiveroleassignments.md
                       - name: Создание назначения ролей
                         href: api/rbacapplication-post-roleassignments.md
                       - name: Получение назначения ролей
@@ -11520,6 +11545,20 @@ items:
                         href: api/unifiedRoleManagementPolicyRule-get.md
                       - name: Обновление
                         href: api/unifiedRoleManagementPolicyRule-update.md
+                  - name: Пространство имен ресурса
+                    href: resources/unifiedrbacresourcenamespace.md
+                    items:
+                      - name: Список
+                        href: api/rbacapplicationmultiple-list-resourcenamespaces.md
+                      - name: Получение
+                        href: api/unifiedrbacresourcenamespace-get.md
+                      - name: Действие ресурса
+                        href: resources/unifiedrbacresourceaction.md
+                        items:
+                          - name: Список
+                            href: api/unifiedrbacresourcenamespace-list-resourceactions.md
+                          - name: Получение
+                            href: api/unifiedrbacresourceaction-get.md
           - name: Удостоверение и вход
             items:
               - name: Методы проверки подлинности
@@ -11903,9 +11942,10 @@ items:
                         href: api/organizationalbrandinglocalization-update.md
                       - name: Delete
                         href: api/organizationalbrandinglocalization-delete.md
-              - name: Политика
-                href: resources/policy-overview.md
+              - name: Политики
                 items:
+                  - name: Обзор
+                    href: resources/policy-overview.md
                   - name: 'Политика времени, основанная на действиях'
                     href: resources/activitybasedtimeoutpolicy.md
                     items:
@@ -12331,7 +12371,7 @@ items:
                         href: api/identityuserflowattribute-delete.md
                   - name: Назначение атрибута потока пользователей
                     items:
-                      - name: Пользователь
+                      - name: User
                         href: resources/identityuserflowattributeassignment.md
                       - name: Получение
                         href: api/identityuserflowattributeassignment-get.md
@@ -12436,6 +12476,7 @@ items:
                       - name: Остановить
                         href: api/accessreviewstage-stop.md
                   - name: Элемент решения экземпляра проверки доступа
+                    displayName: access review decisions
                     href: resources/accessreviewinstancedecisionitem.md
                     items:
                       - name: Список решений из экземпляра
@@ -12474,6 +12515,7 @@ items:
                           - name: Список
                             href: api/accessreviewhistorydefinition-list-instances.md
                           - name: Создание URI загрузки
+                            displayName: Downloadable access review history report
                             href: api/accessreviewhistoryinstance-generatedownloaduri.md
               - name: Обзоры доступа (неподготовленные)
                 href: resources/accessreviews-root.md
@@ -12726,6 +12768,19 @@ items:
                         href: api/connectedorganization-delete-externalsponsors.md
                       - name: Удаление внутренних спонсоров
                         href: api/connectedorganization-delete-internalsponsors.md
+                  - name: Расширение рабочего процесса пакета пользовательского доступа
+                    href: resources/customAccessPackageWorkflowExtension.md
+                    items:
+                      - name: Список
+                        href: api/accesspackagecatalog-list-customaccesspackageworkflowextensions.md
+                      - name: Создание
+                        href: api/accesspackagecatalog-post-customaccesspackageworkflowextensions.md
+                      - name: Получение
+                        href: api/customaccesspackageworkflowextension-get.md
+                      - name: Обновление
+                        href: api/customaccesspackageworkflowextension-update.md
+                      - name: Delete
+                        href: api/customaccesspackageworkflowextension-delete.md
                   - name: Параметры управления правами
                     href: resources/entitlementmanagementsettings.md
                     items:
@@ -12733,7 +12788,7 @@ items:
                         href: api/entitlementmanagementsettings-get.md
                       - name: Обновление
                         href: api/entitlementmanagementsettings-update.md
-              - name: Служба Privileged Identity Management
+              - name: Управление привилегированными пользователями
                 items:
                   - name: Служба Privileged Identity Management
                     href: resources/privilegedidentitymanagement-root.md
@@ -13589,6 +13644,14 @@ items:
                 href: api/contactfolder-post-contacts.md
               - name: Получение дельты контакта
                 href: api/contact-delta.md
+          - name: Предложения по объединению контактов (предварительный просмотр)
+            items:
+              - name: Предложения объединения контактов
+                href: resources/contactmergesuggestions.md
+              - name: Получение
+                href: api/contactmergesuggestions-get.md
+              - name: Обновление
+                href: api/contactmergesuggestions-update.md
           - name: Расширенные свойства
             items:
               - name: Обзор
@@ -13783,7 +13846,7 @@ items:
                     href: api/reportroot-getoffice365activeusercounts.md
                   - name: Получение количества пользователей служб
                     href: api/reportroot-getoffice365servicesusercounts.md
-              - name: Приложения Microsoft 365 использования
+              - name: Использование приложений Microsoft 365
                 href: resources/microsoft-365-apps-usage-report.md
                 items:
                   - name: Получение сведений о пользователе
@@ -13947,7 +14010,7 @@ items:
       - name: Поиск
         displayname: Microsoft Search API
         items:
-          - name: Запрос
+          - name: Query
             items:
               - name: Обзор
                 href: resources/search-api-overview.md
@@ -13957,6 +14020,49 @@ items:
                 href: resources/searchresponse.md
               - name: Данные запроса
                 href: api/search-query.md
+          - name: Ответ
+            items:
+              - name: Обзор
+                href: resources/search-api-answers-overview.md
+              - name: Акроним
+                href: resources/search-acronym.md
+                items:
+                  - name: Акронимы списка
+                    href: api/search-searchentity-list-acronyms.md
+                  - name: Создание аббревиатуры
+                    href: api/search-searchentity-post-acronyms.md
+                  - name: Получить аббревиатура
+                    href: api/search-acronym-get.md
+                  - name: Аббревиатура Update
+                    href: api/search-acronym-update.md
+                  - name: Удаление аббревиатуры
+                    href: api/search-acronym-delete.md
+              - name: Bookmark
+                href: resources/search-bookmark.md
+                items:
+                  - name: Закладки списка
+                    href: api/search-searchentity-list-bookmarks.md
+                  - name: Создание закладки
+                    href: api/search-searchentity-post-bookmarks.md
+                  - name: Получить закладки
+                    href: api/search-bookmark-get.md
+                  - name: Обновление закладки
+                    href: api/search-bookmark-update.md
+                  - name: Удаление закладки
+                    href: api/search-bookmark-delete.md
+              - name: QnA
+                href: resources/search-qna.md
+                items:
+                  - name: Список qnas
+                    href: api/search-searchentity-list-qnas.md
+                  - name: Создание qna
+                    href: api/search-searchentity-post-qnas.md
+                  - name: Get qna
+                    href: api/search-qna-get.md
+                  - name: Обновление qna
+                    href: api/search-qna-update.md
+                  - name: Удаление qna
+                    href: api/search-qna-delete.md
           - name: Index
             items:
               - name: Обзор
@@ -14783,7 +14889,7 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: Удаление приложения из чата
                     href: api/chat-delete-installedapps.md
-          - name: Device
+          - name: Устройство
             items:
               - name: Подготовка устройств
                 href: resources/teamworkdevice.md
@@ -15213,7 +15319,7 @@ items:
                     href: api/linkedresource-delete.md
           - name: Задачи Outlook (не рекомендуется)
             items:
-              - name: Outlook задачи (неуставная)
+              - name: Outlook задачи (неподготовленная)
                 items:
                   - name: Задача Outlook
                     href: resources/outlooktask.md
@@ -15233,7 +15339,7 @@ items:
                     href: api/outlooktask-list-attachments.md
                   - name: Добавление вложения
                     href: api/outlooktask-post-attachments.md
-              - name: Outlook задачи (обесценив)
+              - name: Outlook задачи (неподготовленная)
                 items:
                   - name: Папка задач Outlook
                     href: resources/outlooktaskfolder.md
