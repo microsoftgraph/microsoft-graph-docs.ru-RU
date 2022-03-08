@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: 4fef5e2564cbad29a3b998d11b2f4870663e7a7e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c8cb63331cdd2252f40eef8be468499832bca9d6
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094088"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333647"
 ---
 # <a name="resourcedata-resource-type"></a>тип ресурса resourceData
 
 Пространство имен: microsoft.graph
 
-Представляет данные resouce, присоединенные к уведомлению об изменении, отправленным абоненту.
+Представляет данные ресурса, присоединенные к уведомлению об изменении, отправленным абоненту. Этот ресурс является открытым типом и позволяет передавать другие свойства.
 
 Подробности см. в статье [Получение уведомлений об изменениях с помощью API Microsoft Graph](webhooks.md).
 
@@ -26,18 +26,18 @@ ms.locfileid: "59094088"
 
 ## <a name="properties"></a>Свойства
 
-Для Outlook **ресурсов resourceData содержит** следующие поля:
+Нет, кроме Outlook ресурсов, в которых **resourceData** содержит следующие поля:
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-| @odata.type | строка | @odata.type — тип сущности OData в Microsoft Graph, который описывает представленный объект. |
-| @odata.id | строка | @odata.id — идентификатор OData для объекта. |
-| @odata.etag | строка | @odata.etag — HTTP-тег сущности, представляющий версию объекта. |
-| id | строка | Идентификатор объекта. |
+| @odata.type | Строка | @odata.type — тип сущности OData в Microsoft Graph, который описывает представленный объект. |
+| @odata.id | Строка | @odata.id — идентификатор OData для объекта. |
+| @odata.etag | Строка | @odata.etag — HTTP-тег сущности, представляющий версию объекта. |
+| id | Строка | Идентификатор объекта. |
 
-> **Примечание:** Значение, `id` предоставляемого **в resourceData,** допустимо на момент сгенерировании уведомления об изменении. Некоторые действия, например перенос сообщения в другую папку, могут привести к неодержительным действиям при обработке `id` уведомления об изменении.
+> **Примечание:** Значение **id** , предоставляемого **в resourceData** , допустимо на момент сгенерировании уведомления об изменении. Некоторые действия, например перенос сообщения в другую папку, `id` могут привести к неодержительным действиям при обработке уведомления об изменении.
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -48,16 +48,17 @@ ms.locfileid: "59094088"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "@odata.type",
+    "@odata.id",
+    "@odata.etag",
+    "id"
   ],
   "@odata.type": "microsoft.graph.resourceData"
 }-->
 
 ```json
 {
-  "id": "1565293727947",
-  "@odata.type": "#Microsoft.Graph.ChatMessage",
-  "@odata.id": "teams('88cbc8fc-164b-44f0-b6a6-b59b4a1559d3')/channels('19:8d9da062ec7647d4bb1976126e788b47@thread.tacv2')/messages('1565293727947')/replies('1565293727947')"
+  "@odata.type": "#microsoft.graph.resourceData"
 }
 ```
 

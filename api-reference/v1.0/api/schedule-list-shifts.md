@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bfbc5c890d47ab765ac59f40ef89181533d2e1e7
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 09cc43fe73d68ecc51c69218389fbad6c94f3ab9
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344728"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333255"
 ---
 # <a name="list-shifts"></a>Перечисление смен
 
@@ -26,7 +26,7 @@ ms.locfileid: "62344728"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Schedule.Read.All, Group.Read.All,Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Schedule.Read.All, Schedule.ReadWrite.All |
+|Для приложений | Schedule.Read.All, Schedule.ReadWrite.All |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
@@ -39,7 +39,11 @@ GET /teams/{teamId}/schedule/shifts
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает параметр `$filter` [запроса OData](/graph/query-parameters) для настройки ответа.
+
+> [!NOTE]
+> Этот `$filter` параметр не поддерживает использование одного и того же свойства несколько раз в запросе. Например, следующий запрос не будет работать: `sharedShift/startDateTime ge 2019-05-09T00:00:00Z and sharedShift/startDateTime le 2019-05-09T23:59:59Z`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -100,7 +104,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts?$filter=shar
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

@@ -5,18 +5,23 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 7263e96ca78fb6ef83cb286293e5b6dc13bb09e9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6da14127e3253b9f23b75997cb0e73cc5b05deb4
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084533"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333892"
 ---
 # <a name="groupsettingtemplate-resource-type"></a>тип ресурса groupSettingTemplate
 
 Пространство имен: microsoft.graph
 
-Шаблоны параметров группы представляют параметры, определяемые системой, доступные для клиента. [Параметры группы](groupsetting.md) могут быть созданы на основе доступных **группSettingTemplates** и значений, измененных по заранее. Шаблоны параметров группы не могут быть созданы, обновлены или удалены. Эти параметры могут представлять параметры для клиента или представлять определенные параметры группы. В настоящее время только доступные шаблоны применяются к Microsoft 365 группам и включают параметры, например, могут ли пользователи создавать группы или приглашать гостей из-за пределов организации в члены группы.
+Шаблоны параметров группы представляют параметры, определяемые системой, доступные для клиента. [Параметры группы](groupsetting.md) могут быть созданы на основе доступных **группSettingTemplates**, а значения изменены по заранее. Шаблоны параметров группы не могут быть созданы, обновлены или удалены. Эти параметры могут представлять параметры для клиента или представлять определенные параметры группы. В настоящее время только шаблоны, доступные для групп, применяются к Microsoft 365 группам и включают параметры, например, могут ли пользователи создавать группы или приглашать гостей из-за пределов организации в члены группы.
+
+Дополнительные сведения о доступных Microsoft 365 группах см. в [параметрах Template](/azure/active-directory/enterprise-users/groups-settings-cmdlets).
+
+> [!TIP]
+> Версия `/beta` этого ресурса называется [directorySettingTemplate](/graph/api/resources/directorysettingtemplate?view=graph-rest-beta&preserve-view=true).
 
 ## <a name="methods"></a>Методы
 
@@ -30,11 +35,11 @@ ms.locfileid: "59084533"
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
 |description|String| Описание шаблона. |
-|displayName|Строка| Отображение имени шаблона. |
+|displayName|Строка| Отображение имени шаблона. Названный шаблон `Group.Unified` можно использовать для настройки параметров Microsoft 365 групп, `Group.Unified.Guest` а названный шаблон можно использовать для настройки параметров, определенных для группы.|
 |id|String| Уникальный идентификатор шаблона. Только для чтения.|
 |values|[settingTemplateValue](settingtemplatevalue.md) collection| Коллекция параметровTemplateValues, которые перечисляют набор доступных параметров, по умолчанию и типов, которые составляют этот шаблон. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

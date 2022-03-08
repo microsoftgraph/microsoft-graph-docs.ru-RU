@@ -1,21 +1,21 @@
 ---
 title: Обновление чата
 description: Обновление свойств объекта чата.
-author: bhartono
+author: anandjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 307100bc9c7987d390eadaaf37d41fa98409f57f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 852ed7f4ac74829d5a3c319599126255258bbd89
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117948"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333703"
 ---
 # <a name="update-chat"></a>Обновление чата
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [чата.](../resources/chat.md)
+Обновление свойств объекта [чата](../resources/chat.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,18 +43,18 @@ PATCH /chats/{chat-id}
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем JSON-представление объекта [чата.](../resources/chat.md)
+В теле запроса поставляем JSON-представление объекта [чата](../resources/chat.md) .
 
 В следующей таблице показаны свойства, которые можно использовать в этом действии.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|topic|String|Название чата. Это может быть установлено только для чата со **значением chatType** `group` .|
+|topic|String|Название чата. Это может быть установлено только для чата со **значением chatType** .`group`|
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного использования этот метод возвращает код и обновленный ресурс `200 OK response` чата в тексте  отклика.
+В случае успешного использования этот метод возвращает код `200 OK response` и обновленный **ресурс чата** в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

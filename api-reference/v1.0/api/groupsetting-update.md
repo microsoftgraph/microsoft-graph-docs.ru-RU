@@ -1,22 +1,22 @@
 ---
-title: Обновление параметра группы
+title: Обновление groupSetting
 description: Обновление свойств для указанных объектов параметров группы.
 author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e003606daf271aa0a6da6eeb483f5524bdc555bc
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 896762d4478cb02a6cd0d1c0007ba3cb58548398
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993109"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63331862"
 ---
-# <a name="update-a-group-setting"></a>Обновление параметра группы
+# <a name="update-groupsetting"></a>Обновление groupSetting
 
 Пространство имен: microsoft.graph
 
-Обнови свойства объекта [groupSetting](../resources/groupsetting.md) для [](../resources/group.md) параметров группы для всех клиентов или определенного группового параметра.
+Обнови свойства объекта [groupSetting](../resources/groupsetting.md) для параметров группы для всех клиентов [](../resources/group.md) или определенного группового параметра.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,18 +30,23 @@ ms.locfileid: "60993109"
 |Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
-
-
-
+Обновление параметра для клиента.
 ```http
-PATCH /groupSettings/{id}
-PATCH /groups/{id}/settings/{id}
+PATCH /groupSettings/{groupSettingId}
 ```
+
+<!-- { "blockType": "ignored" } -->
+Обновление параметра, определенного для группы.
+```http
+PATCH /groups/{groupId}/settings/{groupSettingId}
+```
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание |
 |:-----------|:-----------|
-| Authorization  | {token}. Обязательно. |
+| Авторизация  | {token}. Обязательный элемент. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -59,7 +64,7 @@ PATCH /groups/{id}/settings/{id}
 
 ### <a name="example-1-update-a-tenant-wide-group-setting"></a>Пример 1. Обновление параметра группы для всех клиентов
 
-В этом примере — идентификатор объекта groupSetting для всей группы `{id}` клиента.
+В этом примере `84af2ca5-c274-41bf-86e4-6e374ec4def6` — идентификатор объекта **groupSetting** для всей группы клиента.
 
 #### <a name="request"></a>Запрос
 
@@ -67,19 +72,19 @@ PATCH /groups/{id}/settings/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_tenant_setting"
+  "name": "update_tenant_groupsetting"
 }-->
-```http
-PATCH https://graph.microsoft.com/v1.0/groupSettings/f0b2d6f5-097d-4177-91af-a24e530b53cc
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/groupSettings/84af2ca5-c274-41bf-86e4-6e374ec4def6
 Content-type: application/json
 
 {
-  "values": [
-    {
-      "name": "AllowToAddGuests",
-      "value": "false"
-    }
-  ]
+    "values": [
+        {
+            "name": "AllowToAddGuests",
+            "value": "false"
+        }
+    ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -117,18 +122,16 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-update-a-specific-group-setting"></a>Пример 2. Обновление определенного группового параметра
 
-В этом примере первый в запросе — идентификатор группы, а второй — идентификатор объекта `{id}` `{id}` groupSetting.
+В этом примере `0167b5af-f3d1-4910-82d2-398747fa381c` является идентификатором группы и `fa6df613-159b-4f94-add2-7093f961900b` идентификатором объекта groupSetting.
 
 #### <a name="request"></a>Запрос
-
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_groupsetting"
 }-->
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/groups/0167b5af-f3d1-4910-82d2-398747fa381c/settings/fa6df613-159b-4f94-add2-7093f961900b
 Content-type: application/json
 

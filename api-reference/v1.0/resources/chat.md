@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 05f8614ca9f869d23f987e268e48c101bf7462e4
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: a4082bd35d23a7b221f914da5521e91db4892e63
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443039"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333164"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса чата
 
@@ -38,7 +38,7 @@ ms.locfileid: "62443039"
 |[Получение сообщения в чате](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. | 
 |[Получение сообщений во всех чатах для пользователя](../api/chats-getallmessages.md)| [коллекция чатов](chat.md)| Получение сообщений из всех чатах, в которых пользователь является участником. |
 | **Приложения** |||
-|[Список приложений в каталоге](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) collection | Список приложений, установленных в чате (и связанном собрании).|
+|[Список приложений в каталоге](../api/chat-list-installedapps.md) |Коллекция [teamsAppInstallation](teamsappinstallation.md) | Список приложений, установленных в чате (и связанном собрании).|
 |[Получить приложение в чате](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Получите определенное приложение, установленное в чате (и связанное собрание).|
 |[Добавление приложения в чате](../api/chat-post-installedapps.md) | | Добавление (установка) приложения в чате (и связанное собрание).|
 |[Обновление приложения в чате](../api/chat-teamsappinstallation-upgrade.md) | Нет | Обновление до последней версии приложения, установленного в чате (и связанного собрания).|
@@ -58,12 +58,12 @@ ms.locfileid: "62443039"
 |:---------------|:--------|:----------|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Указывает тип чата. Возможные значения: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
 | createdDateTime| dateTimeOffset|  Дата и время создания чата. Только для чтения.|
-| id| String| Уникальный идентификатор чата. Только для чтения.|
+| id| Строка| Уникальный идентификатор чата. Только для чтения.|
 | lastUpdatedDateTime| dateTimeOffset|  Дата и время переименования чата или списка участников были изменены в последний раз. Только для чтения.|
+| onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Представляет сведения о собрании в Интернете. Если чат не связан с собранием в Интернете, свойство пусто. Только для чтения.|
+| tenantId| String | Идентификатор клиента, в котором был создан чат. Только для чтения.|
 | topic| String|  (Необязательный) Тема или тема для чата. Доступно только для групповых чатов.|
 | webUrl | String| URL-адрес чата в Microsoft Teams. URL-адрес следует рассматривать как непрозрачной blob, а не размыкать. Только для чтения. |
-| tenantId| String | Идентификатор клиента, в котором был создан чат. Только для чтения.|
-| onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Представляет сведения о собрании в Интернете. Если чат не связан с собранием в Интернете, свойство пусто. Только для чтения.|
 
 ### <a name="chattype-values"></a>значения chatType 
 
@@ -81,6 +81,7 @@ ms.locfileid: "62443039"
 | installedApps | [teamsAppInstallation](teamsappinstallation.md) collection | Коллекция всех приложений в чате. Допускается значение null. |
 | members | Коллекция [conversationMember](conversationmember.md) | Коллекция всех участников в чате. Допускается значение null. |
 | messages | Коллекция [chatMessage](chatmessage.md) | Коллекция всех сообщений в чате. Допускается значение null. |
+| tabs | Коллекция [teamsTab](teamstab.md) | Коллекция всех вкладок в чате. Допускается значение null. |
 
 ## <a name="json-representation"></a>Представление JSON
 

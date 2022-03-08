@@ -2,15 +2,15 @@
 title: Get userFlowApiConnectorConfiguration
 description: Получите свойство userFlowApiConnectorConfiguration b2cIdentityUserFlow.
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d582b55a37845a855e79ff90e8eb510f50c4e03e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2ca6062f803cfe1323d5de880369693babe5b91b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438325"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "63332418"
 ---
 # <a name="get-userflowapiconnectorconfiguration"></a>Get userFlowApiConnectorConfiguration
 
@@ -28,12 +28,12 @@ ms.locfileid: "50438325"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|IdentityUserFlow.ReadWrite.All|
+|Для приложений|IdentityUserFlow.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока внешних пользователей удостоверений
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,21 +48,21 @@ GET identity/b2cUserFlows/{id}/apiConnectorConfiguration
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметр `$expand` запроса OData для настройки ответа. Например, чтобы получить соединителю API для действий `postFederationSignup` и `postAttributeCollection` действий, добавьте `$expand=postFederationSignup,postAttributeCollection` . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$expand` запроса OData для настройки ответа. Например, чтобы получить соединителю API для действий `postFederationSignup` и действий `postAttributeCollection` , добавьте `$expand=postFederationSignup,postAttributeCollection`. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект apiConnectorConfiguration.](../resources/userflowapiconnectorconfiguration.md)
+В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) .
 
 ## <a name="examples"></a>Примеры
 

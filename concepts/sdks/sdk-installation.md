@@ -1,55 +1,57 @@
 ---
-title: Установка SDK Graph Microsoft
+title: Установка SDK Graph Microsoft Graph
 description: Содержит инструкции по установке C#, Java, Javascript, Objective-C, PHP и Ruby Microsoft Graph SDKs.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 3df00fb5989783c6f3b22c9dba72e28692910c49
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a545f0b3783b19fd23c86bd94a6a356d5767eab3
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022708"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63331778"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>Установка SDKs Graph Microsoft
 
-SDKs Graph Microsoft доступны для включаемой в проекты с помощью GitHub и популярных менеджеров пакетов платформы. В этом разделе описывается, как можно установить Graph SDK в проект.
+SDKs Graph Microsoft доступны для включаемой в ваши проекты с помощью GitHub и популярных менеджеров пакетов платформы. В этом разделе описывается, как можно установить Graph SDK в проект.
 
 ## <a name="install-the-microsoft-graph-net-sdk"></a>Установка SDK Graph Microsoft Graph NET
 
 SDK Graph Microsoft NuGet:
 
-- [Microsoft. Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet) — содержит модели и запрашивает у строителей доступ к конечной точке с помощью `v1.0` свободного API. Microsoft. Graph зависит от Microsoft. Graph. Core.
-- [Microsoft. Graph. Бета-версия](https://github.com/microsoftgraph/msgraph-beta-sdk-dotnet) — содержит модели и запрашивает у строителей доступ к конечной точке с помощью `beta` свободного API. Microsoft. Graph. Бета-версия зависит от Microsoft. Graph. Core.
+- [Microsoft. Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet) — содержит модели и `v1.0` запрашивает у строителей доступ к конечной точке с помощью свободного API. Microsoft. Graph зависит от Microsoft. Graph. Core.
+- [Microsoft. Graph. Бета-версия](https://github.com/microsoftgraph/msgraph-beta-sdk-dotnet) — содержит модели и запрашивает у строителей доступ к `beta` конечной точке с помощью свободного API. Microsoft. Graph. Бета-версия зависит от Microsoft. Graph. Core.
 - [Microsoft. Graph. Core](https://github.com/microsoftgraph/msgraph-sdk-dotnet) — основная библиотека для звонков в Microsoft Graph.
 
-Для установки пакетов Microsoft.Graph в проект можно использовать диспетчер пакетов пользовательского интерфейса Visual Studio консоли [диспетчер пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio) консоли. Следующие команды диспетчер пакетов консоли установят Microsoft.Graph и Microsoft.Graph. Основные библиотеки. Microsoft. Graph. Core устанавливается в зависимости от Microsoft. Graph.
+Для установки пакетов Microsoft.Graph в проект можно использовать диспетчер пакетов пользовательского интерфейса Visual Studio или консоль [диспетчер пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio) консоли. Следующие команды диспетчер пакетов консоли установят Microsoft.Graph и Microsoft.Graph. Основные библиотеки. Microsoft. Graph. Core устанавливается в зависимости от Microsoft. Graph.
 
 ```PowerShell
 Install-Package Microsoft.Graph
 ```
 
-## <a name="install-the-microsoft-graph-go-sdk-preview"></a>Установка SDK Graph Microsoft Graph (предварительный просмотр)
+## <a name="install-the-microsoft-graph-go-sdk-preview"></a>Установите microsoft Graph Go SDK (предварительный просмотр)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
 SDK Graph Microsoft Graph включен в следующие пакеты:
 
-- [Microsoft Graph SDK для go](https://github.com/microsoftgraph/msgraph-sdk-go) — содержит модели и запрашивает у строителей доступ к конечной точке с помощью `v1.0` свободного API.
-- [Microsoft Graph SDK для go](https://github.com/microsoftgraph/msgraph-beta-sdk-go) — содержит модели и запрашивает у строителей доступ к конечной точке с помощью `beta` свободного API.
+- [Microsoft Graph SDK для go](https://github.com/microsoftgraph/msgraph-sdk-go) — `v1.0` содержит модели и запрашивает у строителей доступ к конечной точке с помощью свободного API.
+- [Microsoft Graph бета-версии SDK для go](https://github.com/microsoftgraph/msgraph-beta-sdk-go) — `beta` содержит модели и запрашивает у строителей доступ к конечной точке с помощью свободного API.
 - [Microsoft Graph SDK для go](https://github.com/microsoftgraph/msgraph-sdk-go-core) — основная библиотека для звонков в Microsoft Graph.
 
 ```Shell
 go get -u github.com/microsoftgraph/msgraph-sdk-go
+go get -u github.com/Azure/azure-sdk-for-go/sdk/azidentity
+go get -u github.com/microsoft/kiota/authentication/go/azure
 ```
 
 ## <a name="install-the-microsoft-graph-java-sdk"></a>Установка microsoft Graph Java SDK
 
 Microsoft Graph Java SDK входит в следующие пакеты:
 
-- [Microsoft-graph](https://github.com/microsoftgraph/msgraph-sdk-java) — содержит модели и запрашивает у строителей доступ к конечной точке с помощью `v1.0` свободного API.
-- [Microsoft-graph-beta](https://github.com/microsoftgraph/msgraph-beta-sdk-java) — содержит модели и запрашивает у строителей доступ к конечной точке с `beta` помощью свободного API.
+- [Microsoft-graph](https://github.com/microsoftgraph/msgraph-sdk-java) — содержит модели и запрашивает у строителей доступ к `v1.0` конечной точке с помощью свободного API.
+- [Microsoft-graph-beta](https://github.com/microsoftgraph/msgraph-beta-sdk-java) — содержит модели и запрашивает у строителей доступ к `beta` конечной точке с помощью свободного API.
 - [Microsoft-graph-core](https://github.com/microsoftgraph/msgraph-sdk-java-core) — основная библиотека для звонков в Microsoft Graph.
-- [Microsoft-graph-auth](https://github.com/microsoftgraph/msgraph-sdk-java-auth) — предоставляет обертку сценариев проверки подлинности в Microsoft Authentication Library (MSAL) для использования в microsoft Graph SDK.
+- [Microsoft-graph-auth](https://github.com/microsoftgraph/msgraph-sdk-java-auth) — предоставляет оболочку для проверки подлинности на основе сценария Microsoft Authentication Library (MSAL) для использования в microsoft Graph SDK.
 
 ### <a name="install-the-microsoft-graph-java-sdk-via-gradle"></a>Установка microsoft Graph Java SDK с помощью Gradle
 
@@ -70,7 +72,7 @@ dependency {
 
 ### <a name="install-the-microsoft-graph-java-sdk-via-maven"></a>Установка microsoft Graph Java SDK с помощью Maven
 
-Добавьте зависимость в `dependencies` элементе pom.xml:
+Добавьте зависимость в элементе `dependencies` pom.xml:
 
 ```xml
 <dependency>
@@ -89,8 +91,8 @@ dependency {
 
 SDK Graph Microsoft Graph javascript включен в следующие пакеты:
 
-- @microsoft/microsoft-graph-client[(npm)-](https://www.npmjs.com/package/@microsoft/microsoft-graph-client)Основная библиотека для звонков в Microsoft Graph.
-- @microsoft/microsoft-graph-types[(npm)](https://www.npmjs.com/package/@microsoft/microsoft-graph-types)— типы typescript для сущно-Graph Microsoft.
+- @microsoft/microsoft-graph-client ([npm](https://www.npmjs.com/package/@microsoft/microsoft-graph-client)) — основная библиотека для звонков в Microsoft Graph.
+- @microsoft/microsoft-graph-types ([npm](https://www.npmjs.com/package/@microsoft/microsoft-graph-types)) — типы typescript для сущно-Graph Microsoft.
 
 Вы можете использовать [npm](https://www.npmjs.com) для установки SDK microsoft Graph Javascript:
 
@@ -101,22 +103,22 @@ npm install @microsoft/microsoft-graph-types --save-dev
 
 ## <a name="install-the-microsoft-graph-objective-c-sdk"></a>Установка SDK Graph Microsoft Graph-C
 
-SDK Graph Microsoft Graph поддерживает платформы iOS и macOS и может быть установлена в проект с помощью cocoaPods или Carthage.
+SDK Graph-C Microsoft поддерживает платформы iOS и macOS и может быть установлен в проект с помощью cocoaPods или Carthage.
 
 ### <a name="install-the-microsoft-graph-objective-c-sdk-using-cocoapods"></a>Установка SDK Graph Microsoft Graph-C с помощью Cocoapods
 
-Добавьте следующую строку в podfile, чтобы включить в проект xcode SDK Graph Microsoft Graph Objective-C Auth SDK:
+Добавьте следующую строку в podfile, чтобы включить в проект xcode Graph microsoft Graph SDK и Microsoft Graph Objective-C Auth SDK:
 
 ```ruby
 pod 'MSGraphClientSDK'
 pod 'MSGraphMSALAuthProvider'
 ```
 
-### <a name="install-the-microsoft-graph-objective-c-sdk-using-carthage"></a>Установка SDK Graph Microsoft Graph-C с помощью Carthage
+### <a name="install-the-microsoft-graph-objective-c-sdk-using-carthage"></a>Установка SDK Graph Microsoft Graph-C с помощью Картидж
 
-Выполните следующие действия по установке SDK Graph Microsoft Graph и Microsoft Graph-C Auth SDK с помощью диспетчера пакетов [Carthage.](https://github.com/Carthage/Carthage)
+Выполните следующие действия по установке SDK Graph Microsoft Graph и Microsoft Graph-C Auth SDK с помощью диспетчера пакетов [Carthage](https://github.com/Carthage/Carthage).
 
-1. Создайте **картфил,** который указывает целевой тег SDK GitHub и тег [выпуска.](https://github.com/microsoftgraph/msgraph-sdk-objc/releases)
+1. Создайте **картфил,** который указывает целевой тег SDK GitHub и тег [выпуска](https://github.com/microsoftgraph/msgraph-sdk-objc/releases).
 
     ```text
     github "microsoftgraph/msgraph-sdk-objc" "tags/<latest_release_tag>"
@@ -125,15 +127,15 @@ pod 'MSGraphMSALAuthProvider'
 
 1. Запустите `carthage update`. Это позволит извлечь зависимости в папку Картидж/Проверка, а затем создает библиотеку MSGraphClientSDK.
 
-1. Используя Xcode, в вкладке  Общие параметры целевого приложения в разделе Linked **Frameworks and Libraries** перетащите и отклоняйте папку **MSGraphClientSDK.framework** и **MSGraphMSALAuthProvider.framework** из папки Carthage/Build на диске.
+1. Используя Xcode, в вкладке Общие параметры  целевого приложения в разделе Linked **Frameworks and Libraries** перетащите и отклоняйте папку **MSGraphClientSDK.framework** и **MSGraphMSALAuthProvider.framework** из папки Carthage/Build на диске.
 
-1. На вкладке Параметры **этапов** сборки целевого приложения щелкните значок и **+** выберите новую **фазу сценария запуска.** Создайте сценарий запуска, в котором укажите оболочку (например: /bin/sh), и добавьте в сценарий следующее содержимое:
+1. На вкладке Параметры фаз  сборки целевого приложения щелкните **+** значок и выберите **новую фазу сценария запуска**. Создайте сценарий запуска, в котором укажите оболочку (например: /bin/sh), и добавьте в сценарий следующее содержимое:
 
     ```Shell
     /usr/local/bin/carthage copy-frameworks
     ```
 
-1. Добавьте пути к фреймворкам, которые необходимо использовать в **вводимых файлах.**
+1. Добавьте пути к фреймворкам, которые необходимо использовать в **вводимых файлах**.
 
     ```Shell
     $(SRCROOT)/Carthage/Build/iOS/MSGraphClientSDK.framework
@@ -142,7 +144,7 @@ pod 'MSGraphMSALAuthProvider'
 
 ## <a name="install-the-microsoft-graph-php-sdk"></a>Установка SDK Graph microsoft Graph PHP
 
-[SDK Graph phP microsoft доступен](https://github.com/microsoftgraph/msgraph-sdk-php) из [packagist.org](https://packagist.org/packages/microsoft/microsoft-graph) и может быть установлен следующим образом:
+[SDK Graph microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-php) доступен из packagist.org и может быть установлен следующим [](https://packagist.org/packages/microsoft/microsoft-graph) образом:
 
 ### <a name="install-the-microsoft-graph-php-sdk-manually-using-composer"></a>Установка microsoft Graph phP SDK вручную с помощью композитора
 
@@ -162,11 +164,11 @@ composer require microsoft/microsoft-graph
 
 ## <a name="install-the-microsoft-powershell-sdk"></a>Установка SDK Microsoft PowerShell
 
-См. [в рубрике Установка Graph PowerShell SDK](../powershell/installation.md).
+См[. в этой Graph Microsoft PowerShell SDK](../powershell/installation.md).
 
 ## <a name="install-the-microsoft-graph-ruby-sdk"></a>Установка SDK Graph Microsoft Graph Ruby
 
-[SDK Graph Microsoft rubygems.org](https://github.com/microsoftgraph/msgraph-sdk-ruby) и может [](https://rubygems.org/) быть установлен с помощью следующей команды:
+[SDK microsoft Graph Ruby](https://github.com/microsoftgraph/msgraph-sdk-ruby) доступен из rubygems.org и может быть [](https://rubygems.org/) установлен с помощью следующей команды:
 
 ```ruby
 gem install microsoft_graph

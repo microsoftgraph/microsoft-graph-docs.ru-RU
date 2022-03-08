@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 991ee7f2c48e6bec66775fbb41961c188aca88e2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4343c79e9c81b83f91fb341131a8ef9ad8b2f607
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019211"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333864"
 ---
 # <a name="presence-resource-type"></a>Тип ресурса присутствия
 
@@ -20,7 +20,7 @@ ms.locfileid: "59019211"
 
 > **Примечание:** В настоящее время этот ресурс поддерживается только для Microsoft Teams пользователей.
 
-Этот ресурс поддерживает подписку на изменение [уведомлений.](/graph/webhooks)
+Этот ресурс поддерживает подписку на изменение [уведомлений](/graph/webhooks).
 
 ## <a name="methods"></a>Методы
 
@@ -33,13 +33,13 @@ ms.locfileid: "59019211"
 
 ## <a name="properties"></a>Свойства
 
-| Связь | Тип              | Описание                                                                                                                                                                                                                                                                                       |
+| Свойство | Тип              | Описание                                                                                                                                                                                                                                                                                       |
 | :----------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | id           | string            | ID объекта пользователя                                                                                                                                                                                                                                                                                |
-| availability | string collection | Базовые сведения о присутствии пользователя. Возможные значения `Available` : , , , , `AvailableIdle` `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` , `Offline``PresenceUnknown`                                                                                                              |
-| действие     | string collection | Дополнительные сведения о доступности пользователя. Возможные `Available` значения: , , , , , , , , `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` . |
+| availability | string collection | Базовые сведения о присутствии пользователя. Возможные значения : `Available`, , , , `Busy`, `DoNotDisturb``BusyIdle``Offline``BeRightBack``Away``AvailableIdle``PresenceUnknown`                                                                                                              |
+| действие     | string collection | Дополнительные сведения о доступности пользователя. Возможные значения: `Available`, , , , `DoNotDisturb`, `InACall`, `InAConferenceCall`, `Inactive``OffWork``Presenting``OutOfOffice``UrgentInterruptionsOnly``PresenceUnknown``Offline``InAMeeting`, . `Busy``BeRightBack``Away` |
 
->**Примечание:** Дополнительные данные о различных состояниях присутствия см. в [Teams.](/microsoftteams/presence-admins) 
+>**Примечание:** Дополнительные данные о различных состояниях присутствия см. [в Teams.](/microsoftteams/presence-admins) 
 
 ## <a name="relationships"></a>Связи
 

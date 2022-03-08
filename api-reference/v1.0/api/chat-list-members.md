@@ -1,16 +1,16 @@
 ---
 title: Список участников чата
 description: Получение списка участников чата.
-author: bhartono
+author: anandjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c3cd11fd0ee024221bfadff0c9be8a866b4826e5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4cdc8792705b687d61637c1dfd6824ff3d2e6bf6
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59080242"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333304"
 ---
 # <a name="list-members-of-a-chat"></a>Список участников чата
 
@@ -51,7 +51,7 @@ GET /users/{user-id | user-principal-name}/chats/{chat-id}/members
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 

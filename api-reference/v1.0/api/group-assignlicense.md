@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 39e2abe4b6fe668209055163ffc4ec6c1a467b18
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 48e23d332c2383bf1bc43ce1d9e73126660550a6
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340855"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333696"
 ---
 # <a name="group-assignlicense"></a>группа: assignLicense
 
 Пространство имен: microsoft.graph
 
-Добавление или удаление лицензий в группе. Лицензии, присвоенные группе, будут назначены всем пользователям в группе. Дополнительные информацию о групповом лицензировании см. в этой [Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
+Добавление или удаление лицензий в группе. Лицензии, присвоенные группе, будут назначены всем пользователям в группе. Дополнительные информацию о групповом лицензировании см. в [Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
 
 Чтобы получить подписки, доступные в каталоге, выполните [запрос GET subscribedSkus](../resources/subscribedsku.md).
 
@@ -46,7 +46,7 @@ POST /groups/{id}/assignLicense
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |addLicenses|Коллекция [assignedLicense](../resources/assignedlicense.md)|Коллекция объектов [assignedLicense](../resources/assignedlicense.md), указывающих добавляемые лицензии. Вы можете отключить servicePlans, связанные с лицензией, установив свойство **disabledPlans** на [объекте assignedLicense](../resources/assignedlicense.md) .|
-|removeLicenses|Коллекция GUID|Коллекция skuIds, которые идентифицируют лицензии для удаления.|
+|removeLicenses|Коллекция объектов Guid|Коллекция skuIds, которые идентифицируют лицензии для удаления.|
 
 ## <a name="response"></a>Отклик
 
