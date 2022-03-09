@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: a62290e52b681e6b029d24d87135a80454839a1c
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 04f8f16b6c83c97708a2e56cc77474f24b075274
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860033"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333668"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -41,9 +41,10 @@ ms.locfileid: "61860033"
 |[Добавление ключа](../api/application-addkey.md)|[keyCredential](keycredential.md)|Добавление учетных данных ключа в приложение.|
 |[Удаление ключа](../api/application-removekey.md)|Нет|Удаление учетных данных ключа из приложения.|
 |**Расширения**| | |
-| [Список расширений](../api/application-list-extensionproperty.md) | Коллекция [extensionProperty](extensionProperty.md) | Список свойств расширения для объекта application. |
-| [Создание расширения](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Создание свойства расширения для объекта application. |
-| [Удаление расширения](../api/application-delete-extensionproperty.md) | Нет | Удаление свойства расширения объекта application. |
+| [Список объектов extensionProperties](../api/application-list-extensionproperty.md) | Коллекция [extensionProperty](extensionProperty.md) | Список свойств расширения для объекта application. |
+| [Создание объекта extensionProperties](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Создание свойства расширения для объекта application. |
+| [Вывод объекта ExtensionProperty](../api/extensionproperty-delete.md) | Нет | Вывод свойства расширения из объекта приложения. |
+| [Удаление объекта ExtensionProperty](../api/extensionproperty-delete.md) | Нет | Удаление свойства расширения объекта application. |
 |[Получение доступных свойств расширения](../api/directoryobject-getavailableextensionproperties.md)|Коллекция [extensionProperty](../resources/extensionproperty.md)|Получение полного или отфильтрованного списка свойств расширения каталога, которые зарегистрированы в каталоге.|
 |**Владельцы**| | |
 |[Список владельцев](../api/application-list-owners.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции объектов owner.|

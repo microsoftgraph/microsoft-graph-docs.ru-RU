@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: d87e316200f2cc6fc1cc8632151361ede9d16a57
-ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
+ms.openlocfilehash: b74b4222e2f0065edb9b97c4adba0abd0f2df5b5
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62282018"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63334998"
 ---
 # <a name="microsoft-graph-connectors-overview"></a>Соединители Microsoft Graph
 
@@ -35,7 +35,7 @@ ms.locfileid: "62282018"
 
 Эти соединители помогают подключиться к популярным службам, но вам может потребоваться интеграция со службами, которых нет в существующей [коллекции соединителей](https://www.microsoft.com/microsoft-search/connectors/). Вы можете воспользоваться API соединителей Microsoft Graph и создать пользовательский соединитель для доставки внешних данных функциям Microsoft 365 в вашей организации, среди которых Поиск, Viva Темы и многие другие (ожидаемые в ближайшее время).
 
-## <a name="get-started-with-custom-graph-connectors"></a>Начало работы с пользовательскими соединителями Graph:
+## <a name="get-started-with-custom-microsoft-graph-connectors"></a>Начало работы с пользовательскими соединителями Microsoft Graph:
 * [Работа с API соединителей](connecting-external-content-connectors-api-overview.md)
 * [Использование Postman с API соединителей Microsoft Graph](connecting-external-content-connectors-api-postman.md)
 * [Сборка вашего первого пользовательского соединителя Microsoft Graph](connecting-external-content-build-quickstart.yml)

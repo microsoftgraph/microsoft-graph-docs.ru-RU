@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 109208672ea8c16336171d41a3587ba48a30e207
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: 0b6eb77312d4fef189f776670eb446b5ab167b97
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201362"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335411"
 ---
 # <a name="add-members"></a>Добавление участников
 
@@ -35,6 +35,9 @@ ms.locfileid: "62201362"
 |Делегированные (рабочая или учебная учетная запись) | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложения | GroupMember.ReadWrite.All, Group.ReadWrite.All и Directory.ReadWrite.All |
+
+> [!IMPORTANT]
+> Чтобы добавить участников в группу с возможностью назначения ролей, необходимо также назначить разрешение *RoleManagement.ReadWrite.Directory* вызывающему пользователю или приложению.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

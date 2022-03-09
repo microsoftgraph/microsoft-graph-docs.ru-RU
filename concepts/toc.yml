@@ -24,7 +24,7 @@ items:
             href: users-you-can-reach.md
           - name: Национальные облачные развертывания
             href: deployments.md
-          - name: Гибридные развертывания (предварительная версия)
+          - name: Гибридные развертывания (нерекомендуемые)
             href: hybrid-rest-support.md
       - name: Учебники
         items:
@@ -147,6 +147,8 @@ items:
             href: outlook-large-attachments.md
           - name: Неизменяемый идентификатор
             href: outlook-immutable-id.md
+          - name: Подписка на уведомления об изменениях
+            href: outlook-change-notifications-overview.md
       - name: Коммуникации из облака
         items:
           - name: Обзор
@@ -217,7 +219,7 @@ items:
               - name: Добавление данных в сеанс отправки
                 href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
-              - name: Уведомления об изменениях
+              - name: Подписка на уведомления об изменениях
                 href: universal-print-webhook-notifications.md
                 displayName: Universal Print Webhook Notifications
           - name: Корпоративное управление
@@ -283,7 +285,7 @@ items:
             items:
               - name: Управление настраиваемыми атрибутами безопасности (предварительная версия)
                 href: custom-security-attributes-examples.md
-              - name: Назначение ролей с помощью PIM для Azure AD
+              - name: Используйте PIM для назначения ролей Azure AD
                 href: tutorial-assign-azureadroles.md
           - name: Удостоверение и вход
             items:
@@ -301,13 +303,15 @@ items:
                     href: accessreviews-overview.md
                   - name: Проверка доступа к группе безопасности
                     href: tutorial-accessreviews-securitygroup.md
-                  - name: Проверка доступа к группе Microsoft 365
+                  - name: Просмотр доступа для гостевых пользователей
                     href: tutorial-accessreviews-M365group.md
+                  - name: Просмотр доступа к привилегированным ролям в организации
+                    href: tutorial-accessreviews-roleassignments.md
                   - name: Настройка области
                     href: accessreviews-scope-concept.md
                   - name: Назначение проверяющих
                     href: accessreviews-reviewers-concept.md
-              - name: Назначение ролей с помощью PIM для Azure AD
+              - name: Используйте PIM для назначения ролей Azure AD
                 href: tutorial-assign-azureadroles.md
       - name: Почта
         displayName: 'Outlook, Outlook mail'
@@ -330,6 +334,8 @@ items:
             href: outlook-send-mail-from-other-user.md
           - name: Неизменяемый идентификатор
             href: outlook-immutable-id.md
+          - name: Подписка на уведомления об изменениях
+            href: outlook-change-notifications-overview.md
       - name: Примечания
         displayName: OneNote
         items:
@@ -407,6 +413,8 @@ items:
             href: outlook-get-shared-contacts-folders.md
           - name: Неизменяемый идентификатор
             href: outlook-immutable-id.md
+          - name: Подписка на уведомления об изменениях
+            href: outlook-change-notifications-overview.md
       - name: Отчеты
         items:
           - name: Обзор
@@ -427,14 +435,16 @@ items:
             href: search-concept-custom-types.md
           - name: Поиск людей (предварительная версия)
             href: search-concept-person.md
-          - name: Сортировка результатов поиска
-            href: search-concept-sort.md
+          - name: Управление ответами администратора на поиск (предварительная версия)
+            href: search-concept-answers.md
+          - name: Управление макетом результатов поиска (предварительная версия)
+            href: search-concept-display-layout.md
           - name: Уточнение результатов поиска
             href: search-concept-aggregation.md
           - name: Исправление орфографии в запросе (предварительная версия)
             href: search-concept-speller.md
-          - name: Макет отображения при поиске (предварительная версия)
-            href: search-concept-display-layout.md
+          - name: Сортировка результатов поиска
+            href: search-concept-sort.md
       - name: Безопасность
         items:
           - name: Обзор
@@ -480,6 +490,8 @@ items:
                 href: teams-send-activityfeednotifications.md
               - name: Рекомендации
                 href: teams-activity-feed-notifications-best-practices.md
+          - name: Подписка на уведомления об изменениях
+            href: teams-change-notification-in-microsoft-teams-overview.md
           - name: Системные сообщения
             href: system-messages.md
       - name: Задачи To-Do
@@ -566,7 +578,7 @@ items:
                 href: change-notifications-delivery.md
               - name: Уведомления об изменениях облачной печати
                 href: universal-print-webhook-notifications.md
-              - name: Уведомления об изменениях в Microsoft Teams
+              - name: Изменение уведомлений в Microsoft Teams
                 items:
                   - name: Обзор
                     href: teams-change-notification-in-microsoft-teams-overview.md
@@ -580,6 +592,8 @@ items:
                     href: teams-changenotifications-chat.md
                   - name: Участие в чате
                     href: teams-changenotifications-chatMembership.md
+              - name: Изменение уведомлений для ресурсов Outlook
+                href: outlook-change-notifications-overview.md
           - name: Отслеживание изменений
             displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
             items:

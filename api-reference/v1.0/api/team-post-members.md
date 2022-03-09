@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 67752bb1780dcb5c972a5410e85752a28992d7bd
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 27c2e61b6e5b94731071b504d78f2d7c70e721ca
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443319"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63333227"
 ---
 # <a name="add-member-to-team"></a>Добавление участника в группу
 Пространство имен: microsoft.graph
@@ -18,6 +18,7 @@ ms.locfileid: "62443319"
 Добавление нового [conversationMember](../resources/conversationmember.md) в [группу](../resources/team.md).
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
@@ -26,7 +27,8 @@ ms.locfileid: "62443319"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение| TeamMember.ReadWrite.All |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> [!NOTE]
+> Использование разрешений приложения для [добавления гостевых членов](/microsoft-365/admin/add-users/about-guest-users?view=o365-worldwide&preserve-view=true) в команду не поддерживается.
 
 ## <a name="http-request"></a>HTTP-запрос
 
