@@ -4,12 +4,12 @@ description: Списки microsoft Graph API для конечных точек
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 3abcb3af4e8f9fd5337be8ea5f08010016b6fe0d
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: c9f4eee1ab3c4b1ea58b27fd0fea2af879b909e9
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62292041"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368198"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -194,6 +194,7 @@ ms.locfileid: "62292041"
 - [Результат действия "Отзыв VPP-лицензий Apple "](intune-devices-revokeapplevpplicensesactionresult.md)
 - [Сведения о теге области ролей](intune-auditing-rolescopetaginfo.md)
 - [Поворот результата действия устройства bitLocker клавиш](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
+- [Состояние выполнения](intune-devices-runstate.md)
 - [Сводка состояния базовой категории безопасности](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Состояние соответствия требованиям базового плана безопасности](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Политика базового обеспечения безопасности](intune-deviceintent-securitybaselinecontributingpolicy.md)
@@ -249,7 +250,7 @@ ms.locfileid: "62292041"
 - [История оценки результатов аналитики пользовательского опыта](intune-devices-userexperienceanalyticsscorehistory.md)
 - [Параметры аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticssettings.md)
 - [Аналитика пользовательских интерфейсов, обобщенная](intune-devices-userexperienceanalyticssummarizedby.md)
-- [Сводка Windows 10 пользовательских интерфейсов](intune-devices-userexperienceanalyticswindows10devicessummary.md)
+- [Сводка аналитики пользовательских Windows 10 устройств](intune-devices-userexperienceanalyticswindows10devicessummary.md)
 - [Аналитика пользовательских интерфейсов работает с любого устройства](intune-devices-userexperienceanalyticsworkfromanywheredevice.md)
 - [Аналитика пользовательских интерфейсов работает из любой сводки устройств](intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)
 - [Аналитика пользовательских интерфейсов работает из любой метрики готовности оборудования](intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric.md)

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c457bc23e2bcd6aa1ea8b44731189f96e539dc2
-ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
+ms.openlocfilehash: 922acbdd39dafe63b21c815f38be4ed377817cf0
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2022
-ms.locfileid: "61712035"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367750"
 ---
 # <a name="create-devicemanagementscript"></a>Создание deviceManagementScript
 
@@ -20,7 +20,7 @@ ms.locfileid: "61712035"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового [объекта deviceManagementScript.](../resources/intune-shared-devicemanagementscript.md)
+Создание нового [объекта deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,7 +30,7 @@ ms.locfileid: "61712035"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All|
@@ -59,20 +59,20 @@ POST /deviceManagement/deviceManagementScripts
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для сценария управления устройствами.|
 |displayName|String|Имя сценария управления устройствами.|
-|description|String|Необязательное описание сценария управления устройствами.|
+|description|Строка|Необязательное описание сценария управления устройствами.|
 |scriptContent|Binary|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценария управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Логический|Указать, нужно ли проверять подпись скрипта.|
+|enforceSignatureCheck|Boolean|Указать, нужно ли проверять подпись скрипта.|
 |fileName|String|Имя файла скрипта.|
 |roleScopeTagIds|Коллекция строк|Список ID-тегов области для этого экземпляра PowerShellScript.|
-|runAs32Bit|Логический|Значение, указывающее, должен ли скрипт PowerShell работать как 32-битный|
+|runAs32Bit|Boolean|Значение, указывающее, должен ли скрипт PowerShell работать как 32-битный|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и `201 Created` [объект deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и [объект deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -110,9 +110,6 @@ Content-Length: 615
   "id": "59ea4525-4525-59ea-2545-ea592545ea59",
   "displayName": "Display Name value",
   "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

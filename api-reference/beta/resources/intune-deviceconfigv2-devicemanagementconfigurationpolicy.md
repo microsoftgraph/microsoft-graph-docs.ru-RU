@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4a348889025770e792454df89996f23274c29b19
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: d768f8986d80a407fb2496fdde31bf2e65194336
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62291143"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367610"
 ---
 # <a name="devicemanagementconfigurationpolicy-resource-type"></a>тип ресурса deviceManagementConfigurationPolicy
 
@@ -36,15 +36,15 @@ ms.locfileid: "62291143"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ документа политики. Автоматически созданный.|
+|id|Строка|Ключ документа политики. Автоматически созданный.|
 |name|String|Имя политики|
-|description|String|Описание политики|
+|description|Строка|Описание политики|
 |платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Платформы для этой политики. Возможные значения: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`.|
 |технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Технологии для этой политики. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|Дата и время создания политики. Это свойство доступно только для чтения.|
-|lastModifiedDateTime|DateTimeOffset|Политика последней даты и времени изменения. Это свойство доступно только для чтения.|
-|settingCount|Int32|Количество параметров. Это свойство доступно только для чтения.|
-|creationSource|String|Источник создания политики|
+|createdDateTime|DateTimeOffset|Дата и время создания политики|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения политики|
+|settingCount|Int32|Количество параметров|
+|creationSource|Строка|Источник создания политики|
 |roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity.|
 |isAssigned|Boolean|Состояние назначения политики. Это свойство доступно только для чтения.|
 |templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Справочные сведения по шаблонам|

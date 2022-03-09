@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e89e77e416eb5bda0ca2739be82e3b10911b768
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 70a5fdd114afd1ad4de4e6317282146f481e0288
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62291901"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368275"
 ---
 # <a name="hardwareconfigurationdevicestate-resource-type"></a>тип ресурса hardwareConfigurationDeviceState
 
@@ -40,8 +40,8 @@ ms.locfileid: "62291901"
 |upn|String|Имя участника-пользователя (UPN).|
 |internalVersion|Int32|Внутренняя версия Policy|
 |lastStateUpdateDateTime|DateTimeOffset|Последний период выполнения конфигурации оборудования|
-|configurationState|[runState](../resources/intune-shared-runstate.md)|Состояние конфигурации из последнего выполнения конфигурации оборудования. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
-|configurationOutput|String|Выход выполнения конфигурации оборудования|
+|configurationState|[runState](../resources/intune-deviceconfig-runstate.md)|Состояние конфигурации из последнего выполнения конфигурации оборудования. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|configurationOutput|Строка|Выход выполнения конфигурации оборудования|
 |configurationError|String|Ошибка при выполнении конфигурации оборудования|
 
 ## <a name="relationships"></a>Связи

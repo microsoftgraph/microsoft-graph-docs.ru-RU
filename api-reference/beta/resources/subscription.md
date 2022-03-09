@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: db0663cc068c382319065db9fd29e08cceca03bc
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 70bc8842ed3ccda835e836c5e4c9337668e54ec8
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335173"
+ms.locfileid: "63368107"
 ---
 # <a name="subscription-resource-type"></a>Тип ресурса subscription
 
@@ -33,6 +33,7 @@ ms.locfileid: "63335173"
 - [Группа][] в Azure Active Directory.
 - [Список][] на [сайте][] SharePoint.
 - [Сообщение][], [событие][] или [контакт][] в Outlook.
+- [Онлайн-собрание][] в Microsoft Teams.*
 - Присутствие [пользователя][] в Microsoft Teams.*
 - Команда [в](./team.md) Microsoft Teams.*
 - Объект [printer][] (когда задание печати для принтера переходит в состояние JobFetchable — готово к извлечению для печати) и [printTaskDefinition][] универсальной печати. Дополнительные сведения см. в статье [Подписка на уведомления об изменениях из API облачной печати](/graph/universal-print-webhook-notifications).
@@ -82,6 +83,7 @@ ms.locfileid: "63335173"
 | **Чат** Teams | 60 минут (1 час) |
 | **chatMessage** в Teams    | 60 минут (1 час)  |
 | **conversationMember** в Teams    | 60 минут (1 час)  |
+| Teams **onlineMeeting** | 4320 минут (3 дня) |
 | **Команда** Teams    | 60 минут (1 час)  |
 | Групповая **беседа** | 4230 минут (до 3 дней)    |
 | **driveItem** OneDrive    | 43200 минут (до 30 дней)    |
@@ -163,6 +165,7 @@ ms.locfileid: "63335173"
 [printer]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
 [baseTask]: ./basetask.md
+[онлайн-собрание]: ./onlinemeeting.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

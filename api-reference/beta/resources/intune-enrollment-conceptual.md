@@ -1,15 +1,15 @@
 ---
-title: Регистрация корпоративных устройств с помощью Intune - Microsoft Graph API
-description: Перечисляет API Graph Microsoft для конечных точек Intune (REST), которые регистрировать устройства для организации-клиента.
+title: Регистрация корпоративных устройств с помощью Intune — API Graph Microsoft
+description: Перечисляет Graph API Microsoft для конечных точек Intune (REST), которые регистрировать устройства для организации-клиента.
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 46be1dedc9d9b50f92959ef90c0d76a3353ca7f3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5e0e299a5275e55ddf70d604916f163b02da990b
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59091246"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368023"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Регистрация корпоративных устройств с помощью Intune
 
@@ -54,6 +54,7 @@ ms.locfileid: "59091246"
 - [Рекомендуемый предел регистрации](intune-enrollment-suggestedenrollmentlimit.md)
 - [Назначение профиля Windows Autopilot Deployment](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Удостоверение устройства с Windows Autopilot](intune-enrollment-windowsautopilotdeviceidentity.md)
+- [Windows состояния восстановления устройств автопилота](intune-enrollment-windowsautopilotdeviceremediationstate.md)
 - [Тип устройства с Windows Autopilot](intune-enrollment-windowsautopilotdevicetype.md)
 - [Полное состояние назначения профиля Windows AutoPilot](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
 - [Состояние назначения профиля Windows AutoPilot](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
@@ -62,3 +63,4 @@ ms.locfileid: "59091246"
 - [Тип использования устройства Windows](intune-enrollment-windowsdeviceusagetype.md)
 - [Параметры экрана состояния регистрации Windows](intune-enrollment-windowsenrollmentstatusscreensettings.md)
 - [Тип пользователя Windows](intune-enrollment-windowsusertype.md)
+

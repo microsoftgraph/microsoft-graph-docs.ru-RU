@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 48604d5d4a64c722f7150151de8c71bdcc01c738
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 90086f8b01f1991ff7135f5f5b10dc179570d6d0
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62290716"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367778"
 ---
 # <a name="microsofttunnelconfiguration-resource-type"></a>тип ресурса microsoftTunnelConfiguration
 
@@ -35,19 +35,19 @@ ms.locfileid: "62290716"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Id MicrosoftTunnelConfiguration|
-|displayName|String|Имя отображения MicrosoftTunnelConfiguration|
+|displayName|Строка|Имя отображения MicrosoftTunnelConfiguration|
 |description|String|Описание MicrosoftTunnelConfiguration|
-|сеть|String|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
+|сеть|Строка|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
 |dnsServers|Коллекция строк|DNS-серверы, которые будут использоваться клиентами|
 |defaultDomainSuffix|String|Приложение домена по умолчанию, которое будет использоваться клиентами|
 |routesInclude|Коллекция строк|Маршруты, которые будут маршрутить сервер|
 |routesExclude|Коллекция объектов string|Подмышы маршрутов, которые не будут маршрутиться сервером|
 |splitDNS|Коллекция строк|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
 |listenPort|Int32|Порт, который будут прослушивать TCP и UPD на сервере|
-|advancedSettings|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Дополнительные параметры, которые могут быть применены к серверу|
+|advancedSettings|Коллекция [keyValuePair](../resources/intune-mstunnel-keyvaluepair.md)|Дополнительные параметры, которые могут быть применены к серверу|
 |lastUpdateDateTime|DateTimeOffset|При последнем обновлении MicrosoftTunnelConfiguration|
-|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity.|
-|отключениеUDPConnections|Логическое|При наборе disableUdpConnections клиенты и VPN-сервер не будут использовать подключения DTLS для данных tansfer.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
+|отключениеUdpConnections|Boolean|При наборе disableUdpConnections клиенты и VPN-сервер не будут использовать подключения DTLS для данных tansfer.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -92,7 +92,7 @@ ms.locfileid: "62290716"
   "roleScopeTagIds": [
     "String"
   ],
-  "disableUDPConnections": true
+  "disableUdpConnections": true
 }
 ```
 

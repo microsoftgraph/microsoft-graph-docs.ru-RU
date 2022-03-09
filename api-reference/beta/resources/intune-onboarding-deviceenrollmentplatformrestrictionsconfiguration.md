@@ -2,15 +2,15 @@
 title: Тип ресурса deviceEnrollmentPlatformRestrictionsConfiguration
 description: Конфигурация регистрации устройств, ограничивающая типы устройств, которые пользователь может зарегистрировать
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6634b8c28697e7a5c6dfe01cc4cf0b2239a6eb96
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cdda407febc03168dd8bcb6b7ffae40c43e8d7d0
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59023411"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368037"
 ---
 # <a name="deviceenrollmentplatformrestrictionsconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -39,19 +39,19 @@ ms.locfileid: "59023411"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор учетной записи, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |displayName|String|Отображающее имя конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|description|String|Описание конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|description|Строка|Описание конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |priority|Int32|Приоритет используется, когда пользователь существует в нескольких группах, которые назначены конфигурации регистрации. Пользователи подчиняются только конфигурации с наименьшим значением приоритета. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Создано время даты в UTC конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время даты в UTC конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |version|Int32|Версия конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|roleScopeTagIds|Коллекция String|Необязательные теги области ролей для ограничений регистрации. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|roleScopeTagIds|Коллекция объектов string|Необязательные теги области ролей для ограничений регистрации. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|deviceEnrollmentConfigurationType|[deviceEnrollmentConfigurationType](../resources/intune-onboarding-deviceenrollmentconfigurationtype.md)|Поддержка типа конфигурации регистрации, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md). Возможные значения: `unknown`, `limit`, `platformRestrictions`, `windowsHelloForBusiness`, `defaultLimit`, `defaultPlatformRestrictions`, `defaultWindowsHelloForBusiness`, `defaultWindows10EnrollmentCompletionPageConfiguration`, `windows10EnrollmentCompletionPageConfiguration`, `deviceComanagementAuthorityConfiguration`, `singlePlatformRestriction`, `unknownFutureValue`.|
 |iosRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения IOS на основе платформы, версии операционной системы платформы и владения устройствами|
 |windowsRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Windows на основе платформы, версии операционной системы платформы и владения устройствами|
-|windowsHomeSkuRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Windows Домашние ограничения Sku на основе платформы, версии операционной системы платформы и владения устройствами|
+|windowsHomeSkuRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Windows домашней Sku на основе платформы, версии операционной системы платформы и владения устройствами|
 |windowsMobileRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Windows на основе платформы, версии операционной системы платформы и владения устройствами|
 |androidRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения для Android на основе платформы, версии операционной системы платформы и владения устройствами|
 |AndroidForWorkRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения для android для работы на основе платформы, версии операционной системы платформы и владения устройствами|
-|aospRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения AOSP на основе платформы, версии операционной системы платформы и владения устройствами|
 |macRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения Mac на основе платформы, версии операционной системы платформы и владения устройствами|
 |macOSRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения Mac на основе платформы, версии операционной системы платформы и владения устройствами|
 
@@ -81,6 +81,7 @@ ms.locfileid: "59023411"
   "roleScopeTagIds": [
     "String"
   ],
+  "deviceEnrollmentConfigurationType": "String",
   "iosRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
@@ -159,19 +160,6 @@ ms.locfileid: "59023411"
       "String"
     ]
   },
-  "aospRestriction": {
-    "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
-    "platformBlocked": true,
-    "personalDeviceEnrollmentBlocked": true,
-    "osMinimumVersion": "String",
-    "osMaximumVersion": "String",
-    "blockedManufacturers": [
-      "String"
-    ],
-    "blockedSkus": [
-      "String"
-    ]
-  },
   "macRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
@@ -200,6 +188,7 @@ ms.locfileid: "59023411"
   }
 }
 ```
+
 
 
 

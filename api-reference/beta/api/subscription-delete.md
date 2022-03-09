@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: b1f54db3641993160b46a0ec6a79a96f2f349de3
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: d6fe30d453ea8ae00daf8b9f0d077963ddadaaa7
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335376"
+ms.locfileid: "63368058"
 ---
 # <a name="delete-subscription"></a>Удаление подписки
 
@@ -20,7 +20,7 @@ ms.locfileid: "63335376"
 
 Удаление подписки.
 
-Список ресурсов, поддерживающих подписку на уведомления об изменениях, см. в таблице раздела [Разрешения](#permissions).
+Список ресурсов, поддерживаюющих подписку на изменение уведомлений, см. в таблице в разделе [Permissions](#permissions) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,37 +28,38 @@ ms.locfileid: "63335376"
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
 |:-----|:-----|:-----|:-----|
-|[callRecord](../resources/callrecords-callrecord.md) | Не поддерживается | Не поддерживается | CallRecords.Read.All  |
-|[каналы](../resources/channel.md) (/teams/getAllChannels — все каналы в организации) | Не поддерживается  | Не поддерживается | Channel.ReadBasic.All, ChannelSettings.Read.All |
-|[каналы](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Не поддерживается | Channel.ReadBasic.All, ChannelSettings.Read.All  |
-|[чат](../resources/chat.md) (/чаты — все чаты в организации) | Не поддерживается | Не поддерживается | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
-|[чат](../resources/chat.md) (/chats/{id}) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Не поддерживается | ChatSettings.Read.Chat *, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
-|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Не поддерживается | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages — все сообщения канала в организации) | Не поддерживается | Не поддерживается | ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read, Chat.ReadWrite | Не поддерживается | Chat.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/chats/getAllMessages — все сообщения чата в организации) | Не поддерживается | Не поддерживается | Chat.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/users/{id}/chats/getAllMessages — сообщения чата для всех чатов, в которые входит определенный пользователь) | Chat.Read, Chat.ReadWrite | Не поддерживается | Chat.Read.All, Chat.ReadWrite.All |
+|[callRecord](../resources/callrecords-callrecord.md) | Не поддерживается. | Не поддерживается. | CallRecords.Read.All  |
+|[каналы](../resources/channel.md) (/teams/getAllChannels — все каналы в организации) | Не поддерживается.  | Не поддерживается. | Channel.ReadBasic.All, ChannelSettings.Read.All |
+|[каналы](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Не поддерживается. | Channel.ReadBasic.All, ChannelSettings.Read.All  |
+|[чат](../resources/chat.md) (/чаты — все чаты в организации) | Не поддерживается. | Не поддерживается. | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+|[чат](../resources/chat.md) (/chats/{id}) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Не поддерживается. | ChatSettings.Read.Chat *, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Не поддерживается. | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages — все сообщения канала в организации) | Не поддерживается. | Не поддерживается. | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read, Chat.ReadWrite | Не поддерживается. | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/getAllMessages — все сообщения чата в организации) | Не поддерживается. | Не поддерживается. | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/users/{id}/chats/getAllMessages — сообщения чата для всех чатов, в которые входит определенный пользователь) | Chat.Read, Chat.ReadWrite | Не поддерживается. | Chat.Read.All, Chat.ReadWrite.All |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-|[conversationMember](../resources/conversationmember.md) (/chats/getAllMembers) | Не поддерживается | Не поддерживается | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
-|[conversationMember](../resources/conversationmember.md) (/chats/{id}/members) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Не поддерживается | ChatMember.Read.Chat *, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
-|[conversationMember](../resources/conversationmember.md) (/teams/getAllMembers) | Не поддерживается | Не поддерживается | TeamMember.Read.All, TeamMember.ReadWrite.All |
-|[conversationMember](../resources/conversationmember.md) (/teams/{id}/members) | TeamMember.Read.All | Не поддерживается | TeamMember.Read.All |
-|[conversationMember](../resources/conversationmember.md) (/teams/{id}/channels/getAllMembers) | Не поддерживается | Не поддерживается | ChannelMember.Read.All |
-|[driveItem](../resources/driveitem.md) (личное хранилище OneDrive пользователя) | Не поддерживается | Files.ReadWrite | Не поддерживается |
-|[driveItem](../resources/driveitem.md) (OneDrive для бизнеса) | Files.ReadWrite.All | Не поддерживается | Files.ReadWrite.All |
+|[conversationMember](../resources/conversationmember.md) (/chats/getAllMembers) | Не поддерживается. | Не поддерживается. | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+|[conversationMember](../resources/conversationmember.md) (/chats/{id}/members) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Не поддерживается. | ChatMember.Read.Chat *, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+|[conversationMember](../resources/conversationmember.md) (/teams/getAllMembers) | Не поддерживается. | Не поддерживается. | TeamMember.Read.All, TeamMember.ReadWrite.All |
+|[conversationMember](../resources/conversationmember.md) (/teams/{id}/members) | TeamMember.Read.All | Не поддерживается. | TeamMember.Read.All |
+|[conversationMember](../resources/conversationmember.md) (/teams/{id}/channels/getAllMembers) | Не поддерживается. | Не поддерживается. | ChannelMember.Read.All |
+|[driveItem](../resources/driveitem.md) (личное хранилище OneDrive пользователя) | Не поддерживается. | Files.ReadWrite | Не поддерживается. |
+|[driveItem](../resources/driveitem.md) (OneDrive для бизнеса) | Files.ReadWrite.All | Не поддерживается. | Files.ReadWrite.All |
 |[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-|[group](../resources/group.md) | Group.Read.All | Не поддерживается | Group.Read.All |
-|[group conversation](../resources/conversation.md) | Group.Read.All | Не поддерживается | Не поддерживается |
-|[list](../resources/list.md) | Sites.ReadWrite.All | Не поддерживается | Sites.ReadWrite.All |
+|[group](../resources/group.md) | Group.Read.All | Не поддерживается. | Group.Read.All |
+|[group conversation](../resources/conversation.md) | Group.Read.All | Не поддерживается. | Не поддерживается. |
+|[list](../resources/list.md) | Sites.ReadWrite.All | Не поддерживается. | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
-|[presence](../resources/presence.md) | Presence.Read.All | Не поддерживается | Не поддерживается |
-|[printer](../resources/printer.md) | Не поддерживается | Не поддерживается | Printer.Read.All, Printer.ReadWrite.All |
-|[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается | Не поддерживается | PrintTaskDefinition.ReadWrite.All |
-|[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
-|[teams](../resources/team.md) (/teams — все команды в организации) | Не поддерживается | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
-|[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
-|[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
-|[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
+|[онлайн-собрание](../resources/onlinemeeting.md) | Не поддерживается | Не поддерживается | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
+|[presence](../resources/presence.md) | Presence.Read.All | Не поддерживается. | Не поддерживается. |
+|[printer](../resources/printer.md) | Не поддерживается. | Не поддерживается. | Printer.Read.All, Printer.ReadWrite.All |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается. | Не поддерживается. | PrintTaskDefinition.ReadWrite.All |
+|[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается. | SecurityEvents.ReadWrite.All |
+|[teams](../resources/team.md) (/teams — все команды в организации) | Не поддерживается. | Не поддерживается. | Team.ReadBasic.All, TeamSettings.Read.All |
+|[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Не поддерживается. | Team.ReadBasic.All, TeamSettings.Read.All |
+|[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается. |
+|[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается. |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
@@ -107,7 +108,7 @@ DELETE /subscriptions/{subscription-id}
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -147,7 +148,7 @@ DELETE https://graph.microsoft.com/beta/subscriptions/7f105c7d-2dc5-4530-97cd-4e
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 <!-- {

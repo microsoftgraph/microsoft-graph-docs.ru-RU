@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0d9215d583461073b504897ce82588f7d2420c9
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 444168c83f34ad8da35f23b0bee27095e495bc4a
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62292013"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367680"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>тип ресурса userExperienceAnalyticsDevicePerformance
 
@@ -39,7 +39,7 @@ ms.locfileid: "62292013"
 |deviceName|String|Имя устройства аналитики пользовательского интерфейса.|
 |model|String|Модель устройства аналитики пользовательских интерфейсов.|
 |manufacturer|String|Производитель устройств аналитики пользовательских интерфейсов.|
-|diskType|[diskType](../resources/intune-devices-disktype.md)|Тип диска для аналитики пользовательского интерфейса устройства. Возможные значения: `hdd`, `ssd`, `unknown`.|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|Тип диска для аналитики пользовательского интерфейса устройства. Возможные значения: `unknown`, `hdd`, `ssd`, `unknownFutureValue`.|
 |operatingSystemVersion|String|Версия операционной системы для аналитики пользовательского интерфейса устройства.|
 |bootScore|Int32|Оценка загрузки устройства для аналитики пользовательского интерфейса.|
 |coreBootTimeInMs|Int32|Основное время загрузки устройства для аналитики пользовательского интерфейса в миллисекунд.|

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 8cb0ea6ce1d95a1548cc02de4640ab3a5e3dadac
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 0703504f98312b39e1c0b2e22d9407e56662e576
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333927"
+ms.locfileid: "63367638"
 ---
 # <a name="delete-subscription"></a>Удаление подписки
 
@@ -18,7 +18,7 @@ ms.locfileid: "63333927"
 
 Удаление подписки.
 
-Список ресурсов, поддерживающих подписку на уведомления об изменениях, см. в таблице раздела [Разрешения](#permissions).
+Список ресурсов, поддерживаюющих подписку на изменение уведомлений, см. в таблице в разделе [Permissions](#permissions) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,22 +26,22 @@ ms.locfileid: "63333927"
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
 |:-----|:-----|:-----|:-----|
-|[callRecord](../resources/callrecords-callrecord.md) | Не поддерживается | Не поддерживается | CallRecords.Read.All |
-|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All | Не поддерживается |  ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages — все сообщения канала в организации) | Не поддерживается | Не поддерживается | ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Не поддерживается | Не поддерживается | Chat.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/chats/getAllMessages — все сообщения чата в организации) | Не поддерживается | Не поддерживается | Chat.Read.All  |
+|[callRecord](../resources/callrecords-callrecord.md) | Не поддерживается. | Не поддерживается. | CallRecords.Read.All |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All | Не поддерживается. |  ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages — все сообщения канала в организации) | Не поддерживается. | Не поддерживается. | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Не поддерживается. | Не поддерживается. | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/getAllMessages — все сообщения чата в организации) | Не поддерживается. | Не поддерживается. | Chat.Read.All  |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-|[driveItem](../resources/driveitem.md) (личное хранилище OneDrive пользователя) | Не поддерживается | Files.ReadWrite | Не поддерживается |
-|[driveItem](../resources/driveitem.md) (OneDrive для бизнеса) | Files.ReadWrite.All | Не поддерживается | Files.ReadWrite.All |
+|[driveItem](../resources/driveitem.md) (личное хранилище OneDrive пользователя) | Не поддерживается. | Files.ReadWrite | Не поддерживается. |
+|[driveItem](../resources/driveitem.md) (OneDrive для бизнеса) | Files.ReadWrite.All | Не поддерживается. | Files.ReadWrite.All |
 |[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-|[group](../resources/group.md) | Group.Read.All | Не поддерживается | Group.Read.All |
-|[group conversation](../resources/conversation.md) | Group.Read.All | Не поддерживается | Не поддерживается |
-|[list](../resources/list.md) | Sites.ReadWrite.All | Не поддерживается | Sites.ReadWrite.All |
+|[group](../resources/group.md) | Group.Read.All | Не поддерживается. | Group.Read.All |
+|[group conversation](../resources/conversation.md) | Group.Read.All | Не поддерживается. | Не поддерживается. |
+|[list](../resources/list.md) | Sites.ReadWrite.All | Не поддерживается. | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
-|[printer](../resources/printer.md) | Не поддерживается | Не поддерживается | Printer.Read.All, Printer.ReadWrite.All |
-|[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается | Не поддерживается | PrintTaskDefinition.ReadWrite.All |
-|[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
+|[printer](../resources/printer.md) | Не поддерживается. | Не поддерживается. | Printer.Read.All, Printer.ReadWrite.All |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается. | Не поддерживается. | PrintTaskDefinition.ReadWrite.All |
+|[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается. | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 
@@ -83,11 +83,12 @@ DELETE /subscriptions/{subscription-id}
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+
 Подробнее о том, как возвращаются ошибки, см. в статье [Возвращение ошибок][error-response].
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -127,9 +128,10 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/7f105c7d-2dc5-4530-97cd-4e
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response"
 } -->

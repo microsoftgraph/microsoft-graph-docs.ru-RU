@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: a17e6910874d6a8dbb53f065a7e0ac3bead103d4
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 8d547ea9870642ebf56f2f7c07608b17a5639dce
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524618"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368233"
 ---
 # <a name="bookingservice-resource-type"></a>Тип ресурса bookingService
 
@@ -18,17 +18,17 @@ ms.locfileid: "61524618"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Представляет сведения о конкретной службе, предоставляемой [bookingBusiness,](bookingbusiness.md)например имя службы, цена и персонал, который обычно предоставляет такую услугу.
+Представляет сведения о конкретной службе, предоставляемой [bookingBusiness](bookingbusiness.md), например имя службы, цена и персонал, который обычно предоставляет такую услугу.
 
-Наследует [от bookingNamedEntity](bookingNamedEntity.md).
+Наследует от [bookingNamedEntity](bookingNamedEntity.md).
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Службы списка](../api/bookingbusiness-list-services.md) | [коллекция bookingService](bookingservice.md) | Получите список объектов **bookingService** в указанном [bookingbusiness.](../resources/bookingbusiness.md)|
-|[Создание bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Создайте **bookingService** для указанного [bookingbusiness.](../resources/bookingbusiness.md) |
-|[Получить bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Получите свойства и связи объекта **bookingService** в указанном [bookingbusiness.](../resources/bookingbusiness.md)|
+|[Службы списка](../api/bookingbusiness-list-services.md) | [коллекция bookingService](bookingservice.md) | Получите список объектов **bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md).|
+|[Создание bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Создайте **bookingService** для указанного [bookingbusiness](../resources/bookingbusiness.md). |
+|[Получить bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Получите свойства и связи объекта **bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md).|
 |[Обновление](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |Обновление объекта **bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md). |
 |[удаление](../api/bookingservice-delete.md); | Нет |Удаление объекта **bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md). |
 
@@ -43,17 +43,17 @@ ms.locfileid: "61524618"
 |defaultPriceType|bookingPriceType|Способ заряжания службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
 |defaultReminders|[коллекция bookingReminder](bookingreminder.md)|Набор напоминаний по умолчанию для назначения этой службы. Значение этого свойства доступно только при чтении этого **bookingService** по его ID.|
 |description|Строка|Текстовое описание службы.|
-|displayName|Строка|Имя службы.|
+|displayName|String|Имя службы.|
 |id|Строка|ID этой службы в формате GUID. Только для чтения.|
 |isHiddenFromCustomers|Boolean|True означает, что эта служба недоступна клиентам для бронирования.|
 |isLocationOnline|Boolean|True указывает, что встречи для службы будут проводиться онлайн. Значение по умолчанию − ложь.|
-|maximumAttendeesCount|Int32|Максимальное число клиентов, разрешенных в службе.  |
+|maximumAttendeesCount|Int32|Максимальное число клиентов, разрешенных в службе. Если **значение maximumAttendeesCount** службы превышает 1, передай действительные удостоверения клиентов при создании или обновлении встречи.  Чтобы создать клиента, используйте операцию [Create bookingCustomer](../api/bookingbusiness-post-customers.md) .  |
 |notes|String|Дополнительные сведения об этой службе.|
 |postBuffer|Длительность|Время буферизации после назначения для этой службы заканчивается, и до следующей встречи клиента можно заказать.|
 |preBuffer|Длительность|Время буферизации перед назначением для этой службы может начаться.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Набор политик, которые определяют, как следует создавать и управлять встречами для этого типа службы.|
 |smsNotificationsEnabled|Boolean|True указывает, что sms-уведомления можно отправить клиентам для назначения службы. Значение по умолчанию − ложь.|
-|staffMemberIds|Коллекция строк|Представляет тех [сотрудников,](bookingstaffmember.md) которые предоставляют эту службу. |
+|staffMemberIds|Коллекция String|Представляет тех [сотрудников,](bookingstaffmember.md) которые предоставляют эту службу. |
 |webUrl|String|URL-адрес, который клиент использует для доступа к службе.|
 
 ## <a name="relationships"></a>Связи

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 3ab9f3fe8e756e737ac5959926e87665d1b03d0a
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 7e61a3c931c5c6b12cd633556733c7145c623902
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333724"
+ms.locfileid: "63368072"
 ---
 # <a name="update-subscription"></a>Обновление подписки
 
@@ -53,6 +53,7 @@ ms.locfileid: "63333724"
 |[group conversation](../resources/conversation.md) | Group.Read.All | Не поддерживается | Не поддерживается |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Не поддерживается | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[онлайн-собрание](../resources/onlinemeeting.md) | Не поддерживается | Не поддерживается | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 |[presence](../resources/presence.md) | Presence.Read.All | Не поддерживается | Не поддерживается |
 |[printer](../resources/printer.md) | Не поддерживается | Не поддерживается | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается | Не поддерживается | PrintTaskDefinition.ReadWrite.All |

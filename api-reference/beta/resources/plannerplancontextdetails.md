@@ -1,45 +1,56 @@
 ---
-title: Тип ресурса Планнерпланконтекстдетаилс
-description: Ресурс **планнерпланконтекстдетаилс** содержит дополнительные сведения о планнерпланконтекст.
-localization_priority: Normal
+title: тип ресурса plannerPlanContextDetails
+description: Ресурс **plannerPlanContextDetails содержит** дополнительные сведения о планировщикеPlanContext.
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 0ba8155957b015e5b826253f382281bb7852d5a3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bdb65fab6aecf9c61e066c7e80e9226220c3491c
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064087"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367925"
 ---
-# <a name="plannerplancontextdetails-resource-type"></a>Тип ресурса Планнерпланконтекстдетаилс
+# <a name="plannerplancontextdetails-resource-type"></a>тип ресурса plannerPlanContextDetails
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс **планнерпланконтекстдетаилс** содержит дополнительные сведения о [планнерпланконтекст](plannerplancontext.md).
+Ресурс **plannerPlanContextDetails содержит** дополнительные сведения о [планировщикеPlanContext](plannerplancontext.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|url|String|URL-адрес пользовательского интерфейса, представленного связанным [планнерпланконтекст](plannerplancontext.md). |
+|customLinkText|String|Допускается значение null. Указывает текст, который используется в пользовательском интерфейсе для отображения ссылки связанного [планировщикаPlanContext](plannerplancontext.md). Если null, приложения должны отображать ссылку с пользовательским текстом на основе **свойства displayLinkType** .|
+|displayLinkType|plannerPlanContextType|Указывает, как приложение должно отображать ссылку на связанный **планировщикPlanContext**. Приложения могут предоставлять настраиваемый текст, описание, значки или другие функции в зависимости от типа ссылки. Возможные значения: `teamsTab`, `sharePointPage`, `meetingNotes`, `other`, `unknownFutureValue`.|
+|url|String|URL-адрес пользовательского интерфейса, представленного связанным **планировщикомPlanContext**. |
+|state|plannerContextState| Указывает состояние связанного **планировщикаPlanContext**. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+### <a name="plannercontextstate-values"></a>значения plannerContextState
+
+|Значение              |Описание|
+|:------------------|:----------------------------------------------------------------------|
+|active             | Контекст не имеет проблем.                                          |
+|delinked           | Ранее связанный **планировщикPlanContext** больше не связан с планом. |
+|unknownFutureValue | Эволюционирующее значение sentinel. Не следует использовать.                     |
+
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.plannerPlanContextDetails"
 }-->
 
 ```json
 {
-  "url": "String"
+  "url": "string",
+  "customLinkText": "string",
+  "displayLinkType": "string",
+  "state": "string"
 }
 
 ```

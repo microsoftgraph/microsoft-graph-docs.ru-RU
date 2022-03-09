@@ -1,15 +1,15 @@
 ---
-title: На борту управляемых устройств с intune — API Graph Microsoft
-description: Перечислены API Graph Microsoft для конечных точек Intune (REST), используемый для бортовых (настраивать и инициализировать) устройств для организации-клиента.
+title: На борту управляемых устройств с Intune — API Graph Microsoft
+description: Перечисляет API Graph Microsoft для конечных точек Intune (REST), используемый для бортовых (настраивать и инициализировать) устройств для организации-клиента.
 ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 7f0955ad5ddad757dc4b189eafff925670e0590e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 75d06ef328c6af99eaba70df8b0d3fd858921bd1
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039744"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367743"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Регистрация устройств для управления в Intune
 
@@ -28,6 +28,7 @@ ms.locfileid: "59039744"
 - [Назначение партнера по управлению соответствием требованиям](intune-onboarding-compliancemanagementpartnerassignment.md)
 - [Данные об управлении устройствами и приложениями](intune-onboarding-deviceandappmanagementdata.md)
 - [Конфигурация полномочий по совместному устройству](intune-onboarding-devicecomanagementauthorityconfiguration.md)
+- [Тип конфигурации регистрации устройств](intune-onboarding-deviceenrollmentconfigurationtype.md)
 - [Настройка ограничения регистрации устройств](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [Ограничение платформы для регистрации устройств](intune-onboarding-deviceenrollmentplatformrestriction.md)
 - [Конфигурация ограничения платформы регистрации устройств](intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md)
@@ -50,7 +51,7 @@ ms.locfileid: "59039744"
 - [Назначение конфигураций регистрации](intune-onboarding-enrollmentconfigurationassignment.md)
 - [Тип платформы ограничения регистрации](intune-onboarding-enrollmentrestrictionplatformtype.md)
 - [Торговая марка Intune](intune-onboarding-intunebrand.md)
-- [Центр MDM](intune-onboarding-mdmauthority.md)
+- [Полномочия MDM](intune-onboarding-mdmauthority.md)
 - [Опции выбора портала Microsoft store для бизнеса](intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)
 - [Соединитель Mobile Threat Defense](intune-onboarding-mobilethreatdefenseconnector.md)
 - [Состояние клиента партнера Mobile Threat Defense](intune-onboarding-mobilethreatpartnertenantstate.md)

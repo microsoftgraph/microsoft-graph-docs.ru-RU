@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d7c8c747dea90883c7b5587a9d96ab4d40453ecc
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: ee45c31df0eb2bdd8f65eb670af4a3a83b64f0b9
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61341777"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368163"
 ---
 # <a name="assignmentfilterevaluaterequest-resource-type"></a>тип ресурса assignmentFilterEvaluateRequest
 
@@ -29,6 +29,7 @@ ms.locfileid: "61341777"
 |правило|Строка|Определение правила фильтра назначения.|
 |top|Int32|Ограничение записей на запрос. Значение по умолчанию — 100, если предоставлено менее 0 или более 100|
 |skip|Int32|Количество записей, которые нужно пропустить. Значение по умолчанию — 0|
+|orderBy|Коллекция строк|Заказать сортировку устройств. Значение по умолчанию возрастает по имени устройства.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -46,7 +47,10 @@ ms.locfileid: "61341777"
   "platform": "String",
   "rule": "String",
   "top": 1024,
-  "skip": 1024
+  "skip": 1024,
+  "orderBy": [
+    "String"
+  ]
 }
 ```
 

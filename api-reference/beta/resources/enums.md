@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 3ddafab129251829d797d8de943b76182a6d5418
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: d3624b1b57ba0883447a41fbc3ef08c910e51fc1
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335418"
+ms.locfileid: "63368135"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -94,7 +94,7 @@ ms.locfileid: "63335418"
 
 |Member|
 |:---|
-|клиент|
+|tenant|
 |приложение|
 
 ### <a name="incomingtokentype-values"></a>значения incomingTokenType 
@@ -2488,6 +2488,15 @@ Enum для серьезности оповещений.
 |meetingNotes|
 |другие|
 |unknownFutureValue|
+
+### <a name="plannercontextstate-values"></a>значения plannerContextState
+
+|Member             |
+|:------------------|
+|active             |
+|delinked           |
+|unknownFutureValue |  
+
 
 ### <a name="policyscope-values"></a>значения policyScope
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 76413ffabfbfb20699e285409e836f8e11c4f574
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: a51addd33df2ec52baaf1e967bf1bee45cc33cd2
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61341938"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367729"
 ---
 # <a name="defaultmanagedappprotection-resource-type"></a>Тип ресурса defaultManagedAppProtection
 
@@ -79,11 +79,11 @@ ms.locfileid: "61341938"
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет управляемое поведение приложения, блок или стирка, основываясь на максимальном количестве попыток повторного повторного действия пин-кода. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`, `warn`.|
 |pinRequiredInsteadOfBiometricTimeout|Длительность|Времяпрепровия в минутах для пин-кода приложения, а не биометрического пароля, наследуемого из [управляемогоAppProtection](../resources/intune-mam-managedappprotection.md)|
 |allowedOutboundClipboardSharingExceptionLength|Int32|Укажите количество символов, которые могут быть сокращены или скопированы из данных и учетных записей Org в любое приложение. Этот параметр переопределяет ограничение AllowedOutboundClipboardSharingLevel. Значение "0" по умолчанию означает, что исключений не допускается. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|Укажите ограничение уведомлений приложений, унаследованных от [управляемогоAppProtection.](../resources/intune-mam-managedappprotection.md) Возможные значения: `allow`, `blockOrganizationalData`, `block`.|
+|notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|Укажите ограничение уведомлений приложений, [унаследованных от управляемогоAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `allow`, `blockOrganizationalData`, `block`.|
 |предыдущийPinBlockCount|Int32|Требуется, чтобы пин-код был уникальным из числа, указанного в этом свойстве. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|Указывает, в каких управляемых браузерах (ы) необходимо открыть ссылки в Интернете. Когда это свойство настроено, managedBrowserToOpenLinksRequired должно быть верным. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `notConfigured`, `microsoftEdge`.|
-|maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|Максимальный допустимый уровень угрозы устройства, как сообщается в приложении MTD, унаследованной от [управляемогоAppProtection.](../resources/intune-mam-managedappprotection.md) Возможные значения: `notConfigured`, `secured`, `low`, `medium`, `high`.|
-|mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет, какие действия необходимо принять, если порог угрозы для защиты от мобильных угроз не установлен. Warn не является поддерживаемой ценностью для этого свойства, унаследованной от [управляемогоAppProtection.](../resources/intune-mam-managedappprotection.md) Возможные значения: `block`, `wipe`, `warn`.|
+|maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|Максимальный допустимый уровень угрозы устройства, как сообщается в приложении MTD, унаследованной от [управляемогоAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `notConfigured`, `secured`, `low`, `medium`, `high`.|
+|mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет, какие действия необходимо принять, если порог угрозы для защиты от мобильных угроз не установлен. Предупреждение не является поддерживаемой ценностью для этого свойства, унаследованной от [управляемогоAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`, `warn`.|
 |blockDataIngestionIntoOrganizationDocuments|Boolean|Указывает, может ли пользователь приносить данные в документы орг. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |allowedDataIngestionLocations|[коллекция managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md)|Разрешенные места хранения управляемых данных. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|При наборе будет указано, какие действия необходимо принять в случае, если пользователь не может проверить, так как маркер проверки подлинности является недействительным. Это происходит, когда пользователь удаляется или отключен в AAD. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`, `warn`.|
@@ -94,12 +94,12 @@ ms.locfileid: "61341938"
 |encryptAppData|Boolean|Указывает, следует ли шифровать данные управляемых приложений (только для Android).|
 |disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|Если этот параметр включен, шифрование уровня приложения отключено, если включено шифрование уровня устройства. (только для Android).|
 |minimumRequiredSdkVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании. (только для iOS)|
-|customSettings|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор, состоящий из пар ключа и значения строки, которые отправляются затронутым пользователям в неизменном виде.|
+|customSettings|Коллекция [keyValuePair](../resources/intune-mam-keyvaluepair.md)|Набор, состоящий из пар ключа и значения строки, которые отправляются затронутым пользователям в неизменном виде.|
 |deployedAppCount|Int32|Количество приложений, к которым применена текущая политика.|
 |minimumRequiredPatchVersion|String|Определите самый старый уровень обновления для системы безопасности Android, необходимый для безопасного доступа к приложению. (только для Android).|
 |minimumWarningPatchVersion|String|Определите самый старый уровень обновления для системы безопасности Android, рекомендуемый для безопасного доступа к приложению. (только для Android).|
-|exemptedAppProtocols|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Приложения iOS в этом списке будут освобождены от политики и смогут получать данные из управляемых приложений. (только для iOS)|
-|exemptedAppPackages|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Пакеты android-приложений в этом списке будут освобождены от политики и смогут получать данные из управляемых приложений. (только для Android).|
+|exemptedAppProtocols|Коллекция [keyValuePair](../resources/intune-mam-keyvaluepair.md)|Приложения iOS в этом списке будут освобождены от политики и смогут получать данные из управляемых приложений. (только для iOS)|
+|exemptedAppPackages|Коллекция [keyValuePair](../resources/intune-mam-keyvaluepair.md)|Пакеты android-приложений в этом списке будут освобождены от политики и смогут получать данные из управляемых приложений. (только для Android).|
 |faceIdBlocked|Boolean|Указывает, можно ли использовать FaceID вместо ПИН-кода, если для параметра PinRequired установлено значение True. (только для iOS)|
 |minimumWipeSdkVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании.|
 |minimumWipePatchVersion|String|Уровень исправлений для безопасности Android меньше указанного значения или равного ему, стирает управляемое приложение и связанные с ним данные компании. (только для Android).|
@@ -121,11 +121,11 @@ ms.locfileid: "61341938"
 |minimumRequiredCompanyPortalVersion|String|Минимальная версия портала Компании, которая должна быть установлена на устройстве или доступе к приложению, будет заблокирована|
 |minimumWarningCompanyPortalVersion|Строка|Минимальная версия портала Компании, которая должна быть установлена на устройстве или пользователь получит предупреждение|
 |minimumWipeCompanyPortalVersion|Строка|Минимальная версия портала Компании, которая должна быть установлена на устройстве или данные компании в приложении, будут уничтожены.|
-|allowedAndroidDeviceModels|Коллекция String|Список моделей устройств, разрешенных в качестве строки для работы управляемого приложения. (Только для Android)|
+|allowedAndroidDeviceModels|Коллекция объектов string|Список моделей устройств, разрешенных в качестве строки для работы управляемого приложения. (Только для Android)|
 |appActionIfAndroidDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемого приложения, блок или стирка, если указанная модель устройства не разрешена. (Только для Android). Возможные значения: `block`, `wipe`, `warn`.|
 |customDialerAppProtocol|String|Протокол пользовательского приложения-дозвонщика, чтобы щелкнуть для открытия номера телефона на iOS, например Skype:.|
 |customDialerAppPackageId|Строка|PackageId настраиваемого приложения-дозвонщика, чтобы щелкнуть, чтобы открыть номер телефона на Android.|
-|customDialerAppDisplayName|Строка|Удобное имя настраиваемого приложения-дозвонщика, чтобы щелкнуть для открытия номера телефона на Android.|
+|customDialerAppDisplayName|String|Удобное имя настраиваемого приложения-дозвонщика, чтобы щелкнуть для открытия номера телефона на Android.|
 |biometricAuthenticationBlocked|Boolean|Указывает, разрешено ли использование биометрической проверки подлинности на месте пин-кода, если для PinRequired установлен параметр True. (Только для Android)|
 |requiredAndroidSafetyNetEvaluationType|[androidManagedAppSafetyNetEvaluationType](../resources/intune-mam-androidmanagedappsafetynetevaluationtype.md)|Определяет тип оценки Android SafetyNet для управляемого приложения для работы. (Только для Android). Возможные значения: `basic`, `hardwareBacked`.|
 |blockAfterCompanyPortalUpdateDeferralInDays|Int32|Максимальное количество дней, Корпоративный портал может быть отложено на устройстве или доступ к приложению будет заблокирован.|

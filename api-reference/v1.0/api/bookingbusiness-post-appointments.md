@@ -5,25 +5,25 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 0262ab76e127f2104bdf2edc2e896b8f4a2873b8
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: 8c967b78bb7e3d09aae73268011bc77f34f63d05
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014224"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368254"
 ---
 # <a name="create-bookingappointment"></a>Создание bookingAppointment
 
 Пространство имен: microsoft.graph
 
-Создайте новое [bookingAppointment](../resources/bookingappointment.md) для указанного [bookingBusiness.](../resources/bookingbusiness.md)
+Создайте [новое bookingAppointment](../resources/bookingappointment.md) для указанного [bookingBusiness](../resources/bookingbusiness.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -37,12 +37,18 @@ POST /solutions/bookingBusinesses/{id}/appointments
 |:---------------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
-В теле запроса указать JSON-представление [объекта bookingAppointment.](../resources/bookingappointment.md)
+## <a name="request-body"></a>Текст запроса
 
+В теле запроса указать JSON-представление [объекта bookingAppointment](../resources/bookingappointment.md) .
+
+Если максимальное число клиентов (**maximumAttedeesCount**), разрешенных в службе, превышает 1:[](../resources/bookingservice.md)
+
+- Убедитесь, что клиенты существуют в календаре бронирования. Если этого не сделать, создайте с помощью операции [Create bookingCustomer](bookingbusiness-post-customers.md) .
+
+- Передай действительные удостоверения клиентов при создании или обновлении встречи. Если удостоверение клиента не допустимо, этот клиент не будет включен в объект назначения.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и `201 Created` [объект bookingAppointment](../resources/bookingappointment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и [объект bookingAppointment](../resources/bookingappointment.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -179,7 +185,7 @@ Content-type: application/json
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

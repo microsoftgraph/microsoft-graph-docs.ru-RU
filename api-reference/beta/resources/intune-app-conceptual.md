@@ -1,15 +1,15 @@
 ---
-title: Защита данных приложений компании с помощью Microsoft Intune - API microsoft Graph
+title: Защита данных приложений компании с помощью Microsoft Intune - API Graph Microsoft Graph
 description: Списки microsoft Graph API для конечных точек Intune (REST), которые управляют приложениями и их политиками для организации-клиента.
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 8372aa4c125f0b0e56423bb248fabcd0ee604005
-ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
+ms.openlocfilehash: 1ce759c274bf2762eebeb3a4784162a6a9fe364a
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2022
-ms.locfileid: "61711951"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367652"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -78,6 +78,7 @@ ms.locfileid: "61711951"
 - [Результат действия "Отзыв лицензии для приложения iOS, приобретенного по программе VPP"](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [Электронная книга VPP для iOS](intune-books-iosvppebook.md)
 - [Назначение электронной книги VPP для iOS](intune-books-iosvppebookassignment.md)
+- [Пара "ключ-значение"](intune-androidforwork-keyvaluepair.md)
 - [macOS dmg app](intune-apps-macosdmgapp.md)
 - [macOS включено приложение](intune-apps-macosincludedapp.md)
 - [Бизнес-приложение macOS](intune-apps-macoslobapp.md)
@@ -182,7 +183,7 @@ ms.locfileid: "61711951"
 - [Windows microsoft edge app](intune-apps-windowsmicrosoftedgeapp.md)
 - [Минимальная версия операционной системы Windows](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
-- [Windows конфигурации клиентского офиса](intune-cirrus-windowsofficeclientconfiguration.md)
+- [Windows конфигурации клиента office](intune-cirrus-windowsofficeclientconfiguration.md)
 - [Windows конфигурации безопасности клиента office](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
 - [Информация о пакете Windows](intune-apps-windowspackageinformation.md)
 - [Windows Phone 8.1 AppX](intune-apps-windowsphone81appx.md)

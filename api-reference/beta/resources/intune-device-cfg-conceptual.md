@@ -4,12 +4,12 @@ description: Списки microsoft Graph API для конечных точек
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: f59329e22a916582d13ee4da01179f31440d7f2d
-ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
+ms.openlocfilehash: 574998aa66144f8b3a6a90c92f69e016891268aa
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2022
-ms.locfileid: "61712028"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368219"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Конфигурация устройства в Microsoft Intune
 
@@ -121,8 +121,11 @@ ms.locfileid: "61712028"
 - [Конфигурация VPN для рабочего профиля Android](intune-deviceconfig-androidworkprofilevpnconfiguration.md)
 - [Тип VPN-подключения для рабочего профиля Android](intune-deviceconfig-androidworkprofilevpnconnectiontype.md)
 - [Конфигурация Wi-Fi для рабочего профиля Android](intune-deviceconfig-androidworkprofilewificonfiguration.md)
+- [База профилей сертификата владельца Aosp](intune-deviceconfig-aospdeviceownercertificateprofilebase.md)
 - [Политика соответствия требованиям владельцев устройств Aosp](intune-deviceconfig-aospdeviceownercompliancepolicy.md)
 - [Конфигурация устройства владельца Aosp](intune-deviceconfig-aospdeviceownerdeviceconfiguration.md)
+- [Профиль сертификата владельца Aosp-устройства PKCS](intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md)
+- [Владельцу Aosp-устройства доверен корневой сертификат](intune-deviceconfig-aospdeviceownertrustedrootcertificate.md)
 - [Тип управления установкой приложения](intune-deviceconfig-appinstallcontroltype.md)
 - [Элемент списка приложений](intune-deviceconfig-applistitem.md)
 - [Тип списка приложений](intune-deviceconfig-applisttype.md)
@@ -373,6 +376,8 @@ ms.locfileid: "61712028"
 - [Пара значений ключевой строки](intune-deviceconfig-keystringvaluepair.md)
 - [Пара значений для ключей](intune-deviceconfig-keytypedvaluepair.md)
 - [Значение ключа](intune-deviceconfig-keyvalue.md)
+- [Пара "ключ-значение"](intune-deviceconfig-keyvaluepair.md)
+- [Пара "ключ-значение"](intune-deviceconfig-keyvaluepair.md)
 - [Режим киоска управляемый ПИН-код домашнего экрана](intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)
 - [Уровень проверки подлинности LAN Manager](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [Локальные параметры безопасности: режим отображения запроса для повышения прав администратора](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)
@@ -495,6 +500,7 @@ ms.locfileid: "61712028"
 - [Состояние ограниченных приложений](intune-deviceconfig-restrictedappsstate.md)
 - [Нарушение правил для ограниченных приложений](intune-deviceconfig-restrictedappsviolation.md)
 - [Удалить запланированное управляемое устройство](intune-deviceconfig-retirescheduledmanageddevice.md)
+- [Состояние выполнения](intune-deviceconfig-runstate.md)
 - [Тип фильтра для безопасного поиска](intune-deviceconfig-safesearchfiltertype.md)
 - [Состояние запланированной отставки](intune-deviceconfig-scheduledretirestate.md)
 - [Тип учетной записи для безопасной оценки](intune-deviceconfig-secureassessmentaccounttype.md)
@@ -592,7 +598,7 @@ ms.locfileid: "61712028"
 - [Windows защиты от взлома защитника](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
 - [Конфигурация оптимизации доставки в Windows](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Режим оптимизации доставки в Windows](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
-- [Windows типа края киоска](intune-deviceconfig-windowsedgekiosktype.md)
+- [Windows края киоска](intune-deviceconfig-windowsedgekiosktype.md)
 - [Сетевой профиль брандмауэра Windows](intune-deviceconfig-windowsfirewallnetworkprofile.md)
 - [Правило брандмауэра Windows](intune-deviceconfig-windowsfirewallrule.md)
 - [Типы интерфейсов правила брандмауэра Windows](intune-deviceconfig-windowsfirewallruleinterfacetypes.md)

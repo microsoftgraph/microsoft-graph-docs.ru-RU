@@ -2,15 +2,15 @@
 title: тип enum enrollmentRestrictionPlatformType
 description: В этом переумене указывается тип платформы, для которого применяется ограничение регистрации.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c347bc164d98b27c4f61d2af25b8360d99a64b59
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7accf98adb78d6a47d9f489bec81378340aa560e
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063729"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368011"
 ---
 # <a name="enrollmentrestrictionplatformtype-enum-type"></a>тип enum enrollmentRestrictionPlatformType
 
@@ -26,13 +26,13 @@ ms.locfileid: "59063729"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |allPlatforms|0|Применяется ко всем платформам|
-|ios|1|устройства iOS/iPadOS|
+|ios|1|Устройства iOS и iPadOS|
 |Windows|2|Устройства с Windows|
 |WindowsPhone|3|Windows Phone устройства|
-|Android|4 |устройства Android,|
-|AndroidForWork|5 |Устройства Android для работы|
-|AndroidAosp|6 |Устройства AOSP Для Android|
+|Android|4|устройства Android,|
+|AndroidForWork|5|Устройства Android для работы|
 |mac|7 |устройства macOS|
+
 
 
 

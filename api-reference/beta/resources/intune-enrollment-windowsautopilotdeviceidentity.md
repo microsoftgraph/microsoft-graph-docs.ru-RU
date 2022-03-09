@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 556de32586fc07d7fae38170b430990605451b56
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 531052ac29718493bad6d2ab82d7c1b1eaaeb510
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61339845"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368212"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>тип ресурса windowsAutopilotDeviceIdentity
 
@@ -25,10 +25,10 @@ ms.locfileid: "61339845"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список windowsAutopilotDeviceIdentities](../api/intune-enrollment-windowsautopilotdeviceidentity-list.md)|[коллекция windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Список свойств и связей объектов [windowsAutopilotDeviceIdentity.](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|
-|[Get windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-get.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Чтение свойств и связей объекта [windowsAutopilotDeviceIdentity.](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|
-|[Создание объекта windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-create.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Создание нового [объекта windowsAutopilotDeviceIdentity.](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|
-|[Удаление windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-delete.md)|Нет|Удаляет [объект windowsAutopilotDeviceIdentity.](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|
+|[Список windowsAutopilotDeviceIdentities](../api/intune-enrollment-windowsautopilotdeviceidentity-list.md)|[коллекция windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Список свойств и связей объектов [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .|
+|[Get windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-get.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Чтение свойств и связей объекта [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .|
+|[Создание объекта windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-create.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Создание нового [объекта windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .|
+|[Удаление windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-delete.md)|Нет|Удаляет [объект windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md).|
 |[Действие assignUserToDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|Нет|Назначает пользователя устройствам автопилота.|
 |[Действие unassignUserFromDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|Нет|Отписка пользователя с устройства Автопилота.|
 |[действие updateDeviceProperties](../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md)|Нет|Обновляет свойства на устройствах автопилота.|
@@ -41,9 +41,9 @@ ms.locfileid: "61339845"
 |id|String|GUID объекта|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Состояние назначения профиля устройства Windows автопилота. Возможные значения: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Назначение профиля подробное состояние Windows автопилота. Возможные значения: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`, `surfaceHub2SProfileNotSupported`, `unknownFutureValue`.|
-|deploymentProfileAssignedDateTime|DateTimeOffset|Время набора профилей Windows автопилота.|
+|deploymentProfileAssignedDateTime|DateTimeOffset|Время набора профилей устройства Windows автопилота.|
 |groupTag|Строка|Тег группы устройства Windows автопилота.|
-|purchaseOrderIdentifier|Строка|Покупка идентификатора заказа устройства Windows автопилота.|
+|purchaseOrderIdentifier|Строка|Идентификатор заказа покупки устройства Windows автопилота.|
 |serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
 |manufacturer|String|Oem производитель устройства Windows автопилота.|
@@ -54,11 +54,16 @@ ms.locfileid: "61339845"
 |userPrincipalName|String|Имя главного пользователя.|
 |resourceName|String|Имя ресурса.|
 |skuNumber|String|Номер SKU|
-|systemFamily|String|Семейство system|
-|azureActiveDirectoryDeviceId|Строка|AAD устройства — необходимо отсутвить|
+|systemFamily|Строка|Семейство system|
+|azureActiveDirectoryDeviceId|Строка|AAD устройства - быть обесценив|
 |azureAdDeviceId|Строка|AAD ID устройства|
-|managedDeviceId|Строка|Управляемый ID устройства|
+|managedDeviceId|String|Управляемый ID устройства|
 |displayName|Строка|"Display Name" (Отображаемое имя);|
+|deviceAccountUpn|String|Surface Hub учетной записи устройства|
+|deviceAccountPassword|Строка|Surface Hub учетной записи устройства|
+|deviceFriendlyName|Строка|Surface Hub имя устройства|
+|remediationState|[windowsAutopilotDeviceRemediationState](../resources/intune-enrollment-windowsautopilotdeviceremediationstate.md)|Состояние восстановления устройства. Возможные значения: `unknown`, `noRemediationRequired`, `automaticRemediationRequired`, `unknownFutureValue`.|
+|remediationStateLastModifiedDateTime|DateTimeOffset|RemediationState зафиксировать время работы устройства Автопилот.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -97,7 +102,12 @@ ms.locfileid: "61339845"
   "azureActiveDirectoryDeviceId": "String",
   "azureAdDeviceId": "String",
   "managedDeviceId": "String",
-  "displayName": "String"
+  "displayName": "String",
+  "deviceAccountUpn": "String",
+  "deviceAccountPassword": "String",
+  "deviceFriendlyName": "String",
+  "remediationState": "String",
+  "remediationStateLastModifiedDateTime": "String (timestamp)"
 }
 ```
 

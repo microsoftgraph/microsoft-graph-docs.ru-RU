@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: b2335d3419e73f1554395ddece8c9d7351e1dfc7
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: a1dad572417a97793dd6b1b25176a18879edb491
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335243"
+ms.locfileid: "63368170"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -22,7 +22,7 @@ ms.locfileid: "63335243"
 
 Список ресурсов, поддерживающих подписку на уведомления об изменениях, см. в таблице раздела [Разрешения](#permissions).
 
-Некоторые ресурсы поддерживают возможность включить зашифрованные данные ресурсов в уведомления об изменениях. Эти ресурсы включают [chatMessage](../resources/chatmessage.md), [контакт](../resources/contact.md), [событие](../resources/event.md), [сообщение](../resources/message.md) и [присутствие](../resources/presence.md). Дополнительные сведения см[. в](/graph/webhooks-with-resource-data) дополнительных сведениях о настройках уведомлений об изменениях, которые включают данные о ресурсах и уведомления об изменении для Outlook ресурсов [в Microsoft Graph](/graph/outlook-change-notification-overview).
+Некоторые ресурсы поддерживают возможность включить зашифрованные данные ресурсов в уведомления об изменениях. К этим ресурсам относятся [chatMessage](../resources/chatmessage.md), [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md), [onlineMeetings](../resources/onlinemeeting.md) и [presence](../resources/presence.md). Дополнительные сведения см[. в](/graph/webhooks-with-resource-data) дополнительных сведениях о настройках уведомлений об изменениях, которые включают данные о ресурсах и уведомления об изменении для Outlook ресурсов [в Microsoft Graph](/graph/outlook-change-notification-overview).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -55,6 +55,7 @@ ms.locfileid: "63335243"
 |[group conversation](../resources/conversation.md) | Group.Read.All | Не поддерживается | Не поддерживается |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Не поддерживается | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[онлайн-собрание](../resources/onlinemeeting.md) | Не поддерживается | Не поддерживается | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 |[presence](../resources/presence.md) | Presence.Read.All | Не поддерживается | Не поддерживается |
 |[printer](../resources/printer.md) | Не поддерживается | Не поддерживается | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается | Не поддерживается | PrintTaskDefinition.ReadWrite.All |
