@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 205c3c16ca567fbe7da5d5895e4e3089625cc396
-ms.sourcegitcommit: 38e16940da74bda465f890d945f9dc4aa412c6f4
+ms.openlocfilehash: 28f778723b12e6400a84079fb79eb4e7f842f63b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2022
-ms.locfileid: "62397894"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336895"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -184,7 +184,7 @@ ms.locfileid: "62397894"
 | country | String | Страна или регион, в котором находится пользователь, например `US` или `UK`. Максимальная длина составляет 128 символов. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
 | createdDateTime | DateTimeOffset | Дата и время создания пользователя. Значение не может изменяться и заполняется автоматически при создании сущности. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Свойство допускает значение null. Значение null означает, что для пользователя невозможно точно определить время создания. Только для чтения. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). |
 | creationType | Строка | Указывает, была ли учетная запись пользователя создана с помощью одного из следующих методов: <br/> <ul><li>В качестве обычной учебной или рабочей учетной записи (`null`). <li>Как внешняя учетная запись (`Invitation`). <li>В качестве локальной учетной записи для клиента Azure Active Directory B2C (`LocalAccount`). <li>Через самообслуживаемую регистрацию внутренним пользователем с помощью проверки электронной почты (`EmailVerified`). <li>Через самообслуживаемую регистрацию внешним пользователем, регистрирующимся по ссылке, которая является частью пользовательского потока (`SelfServiceSignUp`). </ul> <br>Только для чтения.<br>Поддерживает `$filter` (`eq`, `ne`, `not` и `in`). |
-|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|Открытый сложный тип, который содержит значение настраиваемого атрибута безопасности, назначенного объекту каталога. Допускается значение null. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `not`, `startsWith`).|
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|Открытый сложный тип, который содержит значение настраиваемого атрибута безопасности, назначенного объекту каталога. Допускается значение NULL.<br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `not`, `startsWith`).|
 | deletedDateTime | DateTimeOffset | Дата и время удаления пользователя. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le` и `in`) |
 | department | String | Название отдела, в котором работает пользователь. Максимальная длина: 64 символа.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `eq` и по `null` значениям). |
 | displayName | Строка | Имя пользователя, отображаемое в адресной книге. Это значение обычно является сочетанием имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Максимальная длина 256 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям), `$orderBy` и `$search`.|
@@ -208,7 +208,7 @@ ms.locfileid: "62397894"
 | legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | Используется корпоративными приложениями для определения юридической возрастной группы пользователя. Это свойство предназначено только для чтения. Вычисляется на основе свойств **ageGroup** и **consentProvidedForMinor**. Допустимые значения: `null`, `MinorWithOutParentalConsent`, `MinorWithParentalConsent`, `MinorNoParentalConsentRequired`, `NotAdult` и `Adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Возвращается только на `$select`. |
 | licenseAssignmentStates | Коллекция [licenseAssignmentState](licenseassignmentstate.md) | Состояние назначений лицензий для пользователя. Только для чтения.<br><br>Возвращается только с помощью оператора `$select`. |
 | почта; | String | SMTP-адрес пользователя, например `admin@contoso.com`. Изменение этого свойства также приведет к обновлению коллекции пользователя **proxyAddresses**, которая будет включать это значение как SMTP-адрес. Для учетных записей Azure AD B2C это свойство можно обновить до десяти раз, используя уникальные адреса протокола SMTP. Это свойство не может содержать диакритические знаки. <br><br> Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith` и `eq` по `null` значениям). |
-| mailboxSettings | [mailboxSettings](mailboxsettings.md) | Параметры основного почтового ящика вошедшего пользователя. Вы можете [получить](../api/user-get-mailboxsettings.md) или [обновить](../api/user-update-mailboxsettings.md) параметры языкового стандарта, часового пояса, отправки автоматических ответов на входящие сообщения. Дополнительные сведения см. в разделе [Пользовательские настройки языков и региональных форматов](#user-preferences-for-languages-and-regional-formats). <br><br>Возвращается только с помощью оператора `$select`. |
+| mailboxSettings | [mailboxSettings](mailboxsettings.md) | Параметры основного почтового ящика пользователя, выполнившего вход. Вы можете [получить](../api/user-get-mailboxsettings.md) или [обновить](../api/user-update-mailboxsettings.md) параметры языкового стандарта, часового пояса, отправки автоматических ответов на входящие сообщения. Дополнительные сведения см. в разделе [Пользовательские настройки языков и региональных форматов](#user-preferences-for-languages-and-regional-formats).<br><br>Возвращается только с помощью оператора `$select`. |
 | mailNickname | String | Псевдоним электронной почты пользователя. Это свойство должно быть указано при создании пользователя. Максимальная длина: 64 символа.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
 | mobilePhone | String | Основной сотовый телефон пользователя. "Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. <br><br> Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям).|
 | mySite | String | URL-адрес личного сайта пользователя. <br><br>Возвращается только с помощью оператора `$select`. |
@@ -220,7 +220,7 @@ ms.locfileid: "62397894"
 | onPremisesLastSyncDateTime | DateTimeOffset | Указывает время последней синхронизации объекта с локальным каталогом, например 2013-02-16T03:04:54Z. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 и формата времени UTC. Например, полночь 1 января 2014 г. в формате UTC представляется в виде `2014-01-01T00:00:00Z`. Только для чтения. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). |
 | onPremisesProvisioningErrors | Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md) | Ошибки при использовании продукта синхронизации Майкрософт во время подготовки. <br> Поддерживает `$filter` (`eq`, `not`, `ge`, `le`).|
 | onPremisesSamAccountName | String | Содержит локальное `sAMAccountName`, синхронизированное из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. <br><br> Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
-| onPremisesSecurityIdentifier | String | Содержит локальный идентификатор безопасности (SID) локальной группы, синхронизированной с облаком. Только для чтения. Поддерживает `$filter` (`eq`) только по `null` значениям.  |
+| onPremisesSecurityIdentifier | String | Содержит локальный идентификатор безопасности (SID) пользователя, синхронизированного из локальной среды с облаком. Только для чтения. Поддерживает `$filter` (`eq`) только для значений `null`.  |
 | onPremisesSyncEnabled | Логический | Значение `true` указывает, что этот объект синхронизируется из локального каталога. Значение `false` указывает, что этот объект изначально синхронизировался из локального каталога, но синхронизация больше не выполняется. Значение `null` указывает, что этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). Только для чтения. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `in` и `eq` по `null` значениям). |
 | onPremisesUserPrincipalName | String | Содержит локальное `userPrincipalName`, синхронизированное из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`). |
 | otherMails | Коллекция строк | Список дополнительных адресов электронной почты для пользователя. Например: `["bob@contoso.com", "Robert@fabrikam.com"]`.<br>ПРИМЕЧАНИЕ. Это свойство не может содержать диакритические знаки.<br><br>Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `in`, `startsWith`). |
@@ -344,7 +344,7 @@ ms.locfileid: "62397894"
 |teamwork|[userTeamwork](userteamwork.md)| Контейнер для функций Microsoft Teams, доступных пользователю. Только для чтения. Допускается значение null.|
 |todo|[todo](todo.md)|Представляет службы To Do, доступные пользователю. |
 |transitiveReports|Коллекция [directoryObject](directoryobject.md) | Транзитивные отчеты для пользователя. Только для чтения.|
-|usageRight|Коллекция [usageRight](usageright.md)|Представляет права использования, предоставленные пользователю. |
+|usageRights|Коллекция [usageRight](usageright.md)|Представляет права использования, предоставленные пользователю. |
 
 ## <a name="json-representation"></a>Представление JSON
 

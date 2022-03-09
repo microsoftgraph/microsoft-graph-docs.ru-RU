@@ -1,23 +1,24 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
 title: Скачивание файла
 ms.localizationpriority: high
 ms.prod: sharepoint
-description: Скачивание содержимого основного потока (файла) ресурса DriveItem. Можно скачать только те ресурсы driveItem, у которых есть свойство file.
+description: Скачивание содержимого основного потока (файла) элемента driveItem. Можно скачать только те ресурсы driveItem, у которых есть свойство file.
 doc_type: apiPageType
-ms.openlocfilehash: f33c2ce3f8992a6c96422d7357d936535e6fb100
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5e5e3a2b9d174957b80c0a74e96d3a658279e44d
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050616"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336335"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>Скачивание содержимого элемента DriveItem
 
 Пространство имен: microsoft.graph
 
-В этой статье рассказывается, как скачать содержимое основного потока (файла) элемента DriveItem. Вы можете скачать только те элементы driveItem, у которых имеется свойство **file**.
+[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
+
+Скачивание содержимого основного потока (файла) элемента [driveItem](../resources/driveitem.md). Вы можете скачать только те элементы **driveItem**, у которых есть свойство **file**.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -53,7 +54,7 @@ GET /users/{userId}/drive/items/{item-id}/content
 
 В примере ниже показано, как скачать весь файл.
 
-
+### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "download-item-content", "scopes": "files.read" } -->
@@ -84,8 +85,7 @@ GET /me/drive/items/{item-id}/content
 
 Возвращает отклик `302 Found`, перенаправляя к URL-адресу загрузки файла, прошедшему предварительную проверку подлинности. Это такой же URL-адрес, доступный с помощью свойства `@microsoft.graph.downloadUrl` в ресурсе DriveItem.
 
-Чтобы скачать содержимое файла, приложению необходимо следовать заголовку `Location` в ответе.
-Многие библиотеки клиентов HTTP будут автоматически следовать перенаправлению 302 и немедленно начинать загрузку файла.
+Чтобы скачать содержимое файла, приложению необходимо следовать заголовку `Location` в отклике. Многие библиотеки клиентов HTTP будут автоматически следовать перенаправлению 302 и немедленно начинать скачивание файла.
 
 URL-адреса загрузки, прошедшие предварительную проверку подлинности, действительны только на протяжении короткого периода времени (несколько минут) и не требуют заголовка `Authorization` для загрузки.
 
@@ -95,6 +95,35 @@ URL-адреса загрузки, прошедшие предварительн
 HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
+
+## <a name="downloading-files-in-javascript-apps"></a>Скачивание файлов в приложениях на JavaScript
+Для скачивания файлов в приложении на JavaScript невозможно использовать API `/content`, так как при этом возвращается код перенаправления `302`. Перенаправление с помощью кода `302` запрещено, если требуется _предварительная проверка_ [общего доступа к ресурсам независимо от источника (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS), например когда указан заголовок **Authorization**.
+
+Вместо этого приложение должно выбрать свойство `@microsoft.graph.downloadUrl`, возвращающее тот же URL-адрес, на который перенаправляет ссылка `/content`.
+Затем этот URL-адрес можно запросить напрямую с помощью XMLHttpRequest.
+Так как эти URL-адреса прошли предварительную проверку подлинности, их можно получить без запроса предварительной проверки CORS.
+
+### <a name="example"></a>Пример
+
+Чтобы получить URL-адрес для скачивания файла, сначала отправьте запрос, включающий свойство `@microsoft.graph.downloadUrl`:
+
+```http
+GET /drive/items/{item-ID}?select=id,@microsoft.graph.downloadUrl
+```
+
+При этом возвращаются идентификатор и URL-адрес для скачивания файла:
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": "12319191!11919",
+  "@microsoft.graph.downloadUrl": "https://..."
+}
+```
+
+Затем вы можете отправить запрос XMLHttpRequest на URL-адрес, указанный в свойстве `@microsoft.graph.downloadUrl`, чтобы получить файл.
 
 ## <a name="partial-range-downloads"></a>Загрузка части заданного диапазона байтов
 

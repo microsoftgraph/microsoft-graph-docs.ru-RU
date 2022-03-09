@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 9cb0c4c29c7f1161dcf57ca88c1dfeb9041e6ab4
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 3789af5539c8a9a80efd4a7a2debab8c54c5f9ba
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443389"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336860"
 ---
 # <a name="get-subscription"></a>Получение подписки
 
@@ -56,13 +56,9 @@ ms.locfileid: "62443389"
 
 ### <a name="contact-event-and-message"></a>contact, event и message
 
-Дополнительные ограничения применяются к подпискам на элементы Outlook. Ограничения применяются для создания, а также управления (получение, обновление и удаление) подписками.
+Вы можете подписаться на изменения ресурсов Outlook **contact**, **event** или **message**.
 
-- Делегированные разрешения поддерживают подписку на элементы в папках только в почтовом ящике пользователя, выполнившего вход. Например, вы не можете использовать делегированное разрешение Calendars.Read, чтобы подписаться на события в почтовом ящике другого пользователя.
-- Чтобы подписаться на уведомления об изменениях контактов Outlook, событий или сообщений в _общих или делегированных_ папках:
-
-  - Используйте соответствующее разрешение приложения для подписки на изменения элементов в папке или почтовом ящике _любого_ пользователя в клиенте.
-  - Не используйте разрешения Outlook на общий доступ (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared и их аналоги для чтения и записи), так как они **не** поддерживают подписку на уведомления об изменениях элементов в общих или делегированных папках.
+[!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
  
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -73,7 +69,7 @@ ms.locfileid: "62443389"
 GET /subscriptions/{id}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 

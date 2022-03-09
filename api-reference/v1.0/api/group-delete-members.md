@@ -1,22 +1,22 @@
 ---
 title: Удаление участника
-description: С помощью этого API можно удалить участника из группы через свойство навигации **members**.
+description: Удалите участника из группы с помощью свойства навигации members.
 ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7cf15af53ba9322489b694a507741065881d3e8a
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: e9c07307c8276b02c536effaa81a77296a85cf6b
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524877"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335971"
 ---
 # <a name="remove-member"></a>Удаление участника
 
 Пространство имен: microsoft.graph
 
-С помощью этого API можно удалить участника из группы через свойство навигации **members**. Вы не можете удалить участника из групп с динамическим членством.
+Удалите участника из группы с помощью свойства навигации **members**. Вы не можете удалить участника из групп с динамическим членством.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,6 +26,9 @@ ms.locfileid: "61524877"
 |Делегированные (рабочая или учебная учетная запись) | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+
+> [!IMPORTANT]
+> Чтобы удалить участников из группы с возможностью назначения ролей, вызывающему пользователю или приложению необходимо также назначить разрешение *RoleManagement.ReadWrite.Directory*.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

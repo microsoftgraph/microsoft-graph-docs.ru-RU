@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: c3209c4facf5cf6c200fabdeb73e80e566a8979d
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 95a6ea99386aa69aa7c0f783719ef0731d50dba7
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443375"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336293"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -18,7 +18,9 @@ ms.locfileid: "62443375"
 
 Создание подписки для приложения прослушивателя, позволяющей ему получать уведомления об изменениях определенного типа в указанном ресурсе в Microsoft Graph.
 
-Список ресурсов, поддерживающих подписку на уведомления об изменениях, см. в таблице раздела [Разрешения](#permissions).
+Список ресурсов, поддерживающих подписку на уведомления об изменениях, см. в таблице раздела [Разрешения](#permissions). 
+
+Некоторые ресурсы поддерживают возможность включить зашифрованные данные ресурсов в уведомления об изменениях. К этим ресурсам относятся: [chatMessage](../resources/chatmessage.md), [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) и [presence](../resources/presence.md). Дополнительные сведения см. в статьях [Настройка уведомлений об изменениях, включающих данные ресурсов](/graph/webhooks-with-resource-data) и [Уведомления об изменениях, связанных с ресурсами Outlook, в Microsoft Graph](/graph/outlook-change-notification-overview).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -61,13 +63,9 @@ OneDrive для бизнеса и SharePoint поддерживают отпра
 
 ### <a name="contact-event-and-message"></a>contact, event и message
 
-Дополнительные ограничения применяются к подпискам на элементы Outlook. Ограничения применяются для создания, а также управления (получение, обновление и удаление) подписками.
+Вы можете подписаться на изменения ресурсов Outlook **contact**, **event** или **message**.
 
-- Делегированные разрешения поддерживают подписку на элементы в папках только в почтовом ящике пользователя, выполнившего вход. Например, вы не можете использовать делегированное разрешение Calendars.Read, чтобы подписаться на события в почтовом ящике другого пользователя.
-- Чтобы подписаться на уведомления об изменениях контактов Outlook, событий или сообщений в _общих или делегированных_ папках:
-
-  - Используйте соответствующее разрешение приложения для подписки на изменения элементов в папке или почтовом ящике _любого_ пользователя в клиенте.
-  - Не используйте разрешения Outlook на общий доступ (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared и их аналоги для чтения и записи), так как они **не** поддерживают подписку на уведомления об изменениях элементов в общих или делегированных папках.
+[!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
 ### <a name="presence"></a>presence
 

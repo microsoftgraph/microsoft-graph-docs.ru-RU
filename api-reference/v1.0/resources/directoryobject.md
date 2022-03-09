@@ -5,18 +5,20 @@ ms.localizationpriority: high
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 545ab52782c8bec83f711faf3928d10d4c3105c1
-ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
+ms.openlocfilehash: 3be3d259d76c20b02ccf4da1ef2bc995f82517e3
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2022
-ms.locfileid: "61711593"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63337147"
 ---
 # <a name="directoryobject-resource-type"></a>Тип ресурса directoryObject
 
 Пространство имен: microsoft.graph
 
 Представляет объект Azure Active Directory. Тип **directoryObject** является базовым типом для многих других типов объектов каталогов.
+
+Наследует [от сущности](entity.md).
 
 ## <a name="methods"></a>Методы
 
@@ -25,10 +27,10 @@ ms.locfileid: "61711593"
 |[Получение объекта directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |Чтение свойств объекта каталога.|
 |[Удаление объекта directoryObject](../api/directoryobject-delete.md) | Нет |Удаление объекта каталога. |
 |[Получение доступных свойств расширения](../api/directoryobject-getavailableextensionproperties.md)|Коллекция [extensionProperty](../resources/extensionproperty.md)|Получение полного или отфильтрованного списка свойств расширения каталога, которые зарегистрированы в каталоге.|
-|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|Коллекция String|Проверка участия в указанном списке групп и возвращение из этого списка тех групп, в которых состоит указанный пользователь, группа, субъект-служба, контакт организации, устройство или объект каталога. Это транзитивная проверка.|
-|[getMemberGroups](../api/directoryobject-getmembergroups.md)|Коллекция String|Возвращение всех групп, в которых состоит пользователь, группа, субъект-служба, контакт организации, устройство или объект каталога. Это транзитивная проверка.|
-|[checkMemberObjects](../api/directoryobject-checkmemberobjects.md)|Коллекция String|Проверка участия в списке ролей группы, административных единиц или каталога для указанного пользователя, группы, устройства, контакта организации или объекта каталога. Это транзитивный метод.|
-|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Коллекция String| Возвращение всех ролей групп, административных единиц и каталога, в которых состоит пользователь, группа, устройство, контакт организации или объект каталога. Это транзитивная проверка. |
+|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|Коллекция строк|Проверка участия в указанном списке групп и возвращение из этого списка тех групп, в которых состоит указанный пользователь, группа, субъект-служба, контакт организации, устройство или объект каталога. Это транзитивная проверка.|
+|[getMemberGroups](../api/directoryobject-getmembergroups.md)|Коллекция строк|Возвращение всех групп, в которых состоит пользователь, группа, субъект-служба, контакт организации, устройство или объект каталога. Это транзитивная проверка.|
+|[checkMemberObjects](../api/directoryobject-checkmemberobjects.md)|Коллекция String|Проверка участия в списке ролей группы, административных единиц или каталога для указанного пользователя, группы, устройства, контакта организации или объекта каталога. Это транзитивная проверка.|
+|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Коллекция строк| Возвращение всех ролей групп, административных единиц и каталога, в которых состоит пользователь, группа, устройство, контакт организации или объект каталога. Это транзитивная проверка. |
 |[getByIds](../api/directoryobject-getbyids.md) | Коллекция [directoryObject](directoryobject.md) | Получение набора объектов каталога на основе указанных идентификаторов. |
 |[validateProperties](../api/directoryobject-validateproperties.md)|JSON| Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования. |
 |delta|Коллекция [directoryObject](directoryObject.md)| Получение добавочных изменений для объектов каталогов, например для [пользователей](../api/user-delta.md), [групп](../api/group-delta.md), [приложений](../api/application-delta.md) и [субъектов-служб](../api/serviceprincipal-delta.md). Каждый производный тип поддерживает фильтрацию по **id**. Дополнительные сведения о разностных запросах см. в статье [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview).|
@@ -37,7 +39,9 @@ ms.locfileid: "61711593"
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|id|String|Уникальный идентификатор объекта. Например, 12345678-9abc-def0-1234-56789abcde. Значение свойства **идентификатор** оформлено часто, но не всегда в виде GUID; необходимо считать его непрозрачным идентификатором и не полагаться на то, что он является GUID. Ключевое. Не допускается значение NULL. Только для чтения.|
+|deletedDateTime|DateTimeOffset|Дата и время удаления этого объекта. Всегда `null`, если объект не был удален. |
+|id|String|Уникальный идентификатор объекта. Например, `12345678-9abc-def0-1234-56789abcde`. Значение свойства **идентификатор** оформлено часто, но не только в виде GUID; необходимо считать его непрозрачным идентификатором и не полагаться на то, что он является GUID. Ключ. Значение null не допускается. Только для чтения. Наследуется от [сущности](entity.md).|
+
 
 ## <a name="relationships"></a>Связи
 

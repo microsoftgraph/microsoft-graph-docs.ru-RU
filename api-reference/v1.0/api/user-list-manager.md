@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 62542da816755ddbdc8f1f42d843520e1cc1ba11
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0760053904beb361518f78ddbed7d5ea99b63141
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107396"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63336685"
 ---
 # <a name="list-manager"></a>Получение руководителя
 
@@ -53,7 +53,7 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 >**Примечание.** 
 > + Значение `n` параметра `$levels` может быть `max` (для возврата всех руководителей) или числом от 1 до 1000.  
 > + Если параметр `$levels` не указан, возвращается только непосредственный руководитель.  
-> + Вы можете указать `$select` в параметре `$expand`, чтобы выбрать свойства отдельных руководителей. Параметр `$levels` необходим: `$expand=manager($levels=max;$select=id,displayName)`.
+> + Вы можете указать `$select` в параметре `$expand`, чтобы выбрать свойства отдельных руководителей. Параметр `$levels` обязателен: `$expand=manager($levels=max;$select=id,displayName)`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -158,6 +158,22 @@ ConsistencyLevel: eventual
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-transitive-managers-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-transitive-managers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-transitive-managers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-transitive-managers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-transitive-managers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
