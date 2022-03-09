@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 09709899718d2823026b43dc67bc61065819aff5
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 2d23fcfb568951e9797d76c2fc0080782ee5435b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266154"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395043"
 ---
 # <a name="create-schema"></a>Создание схемы
 
@@ -18,7 +18,7 @@ ms.locfileid: "61266154"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте схему подключения [Поиск (Майкрософт).](../resources/externalconnectors-externalconnection.md)
+Создайте схему для Поиск (Майкрософт) [подключения](../resources/externalconnectors-externalconnection.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "61266154"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ExternalConnection.ReadWrite.OwnedBy |
+| Приложение                            | ExternalConnection.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,19 +42,19 @@ POST /external/connections/{id}/schema
 
 | Имя                  | Описание                                                        |
 |:----------------------|:-------------------------------------------------------------------|
-| Авторизация         | Bearer {токен}. Обязательный.                                          |
+| Авторизация         | Bearer {token}. Обязательный.                                          |
 | Content-Type          | application/json. Обязательный.                                        |
-| Предпочитаете: respond-async | Используйте это, чтобы вызвать асинхронное выполнение запроса. Необязательно. |
+| Предпочитаете: respond-async | Используйте это, чтобы вызвать асинхронное выполнение запроса. Необязательное свойство. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [схемы.](../resources/externalconnectors-schema.md)
+В теле запроса поставляем представление JSON объекта [схемы](../resources/externalconnectors-schema.md) .
 
-При регистрации настраиваемой схемы элемента  объект **схемы** должен иметь свойство **baseType** и должно содержать `microsoft.graph.externalItem` свойство **свойств.**  Объект **свойств должен** **содержать** по крайней мере одно свойство, не более 128.
+При регистрации настраиваемой схемы элемента объект **схемы** должен  иметь свойство **baseType** `microsoft.graph.externalItem` и должно содержать **свойство свойств**. Объект **свойств должен** **содержать** по крайней мере одно свойство, не более 128.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного использования этот метод возвращает код ответа и URL-адрес в загонах ответа, которые можно использовать для `202 Accepted` `Location` получения состояния [операции.](../api/externalconnectors-connectionoperation-get.md)
+В случае успешного `202 Accepted` использования этот метод возвращает код ответа и URL-адрес `Location` в загонах ответа, которые можно использовать для [получения состояния операции](../api/externalconnectors-connectionoperation-get.md).
 
 ## <a name="examples"></a>Примеры
 
@@ -117,6 +117,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-schema-from-connection-async-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-schema-from-connection-async-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

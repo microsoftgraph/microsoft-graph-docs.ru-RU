@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4d46e1cc181866a1a7fc2e7a3d5eaf8047c95e4a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e5bd42bf61f85a20b63462ce902809302d30dfd5
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091086"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "63394175"
 ---
 # <a name="remove-accessreview-reviewer"></a>Удаление рецензента accessReview
 
@@ -18,7 +18,9 @@ ms.locfileid: "62091086"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) обновите существующий объект [accessReview,](../resources/accessreview.md) чтобы удалить пользователя в качестве рецензента.  Эта операция разрешена только для еще не завершенного обзора доступа и только для проверки доступа, в которой явно указаны рецензенты. Эта операция не разрешается для проверки доступа, в которой пользователи рассматривают собственный доступ, и не предназначена для проверки доступа, в которой владельцы групп назначены в качестве рецензентов. 
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) обновите существующий объект [accessReview](../resources/accessreview.md) , чтобы удалить пользователя в качестве рецензента.  Эта операция разрешена только для еще не завершенного обзора доступа и только для проверки доступа, в которой явно указаны рецензенты. Эта операция не разрешается для проверки доступа, в которой пользователи рассматривают собственный доступ, и не предназначена для проверки доступа, в которой владельцы групп назначены в качестве рецензентов. 
 
 
 ## <a name="permissions"></a>Разрешения
@@ -40,7 +42,7 @@ DELETE /accessReviews/{reviewId}/reviewers/{userId}
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не следует поставлять тело запроса.
 
 

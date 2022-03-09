@@ -5,19 +5,19 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e56928947f05a04c844d9839308e35aae5a88870
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 668121e6e459b2702485742a318a6eaf6abd56d9
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687815"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395267"
 ---
 # <a name="update-externalgroup"></a>Обновление externalGroup
 Пространство имен: microsoft.graph.externalConnectors
 
 
 
-Обновление свойств объекта [externalGroup.](../resources/externalconnectors-externalgroup.md)
+Обновление свойств объекта [externalGroup](../resources/externalconnectors-externalgroup.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -51,7 +51,7 @@ PATCH /external/connections/{connectionsId}/groups/{externalGroupId}
 
 | Свойство    | Тип   | Описание                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| displayName | String | Дружеское имя внешней группы. Необязательный параметр.                                                                      |
+| displayName | String | Дружеское имя внешней группы. Необязательное свойство.                                                                      |
 | description | String | Описание внешней группы. Необязательный параметр.                                                                         |
 
 
@@ -95,6 +95,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-externalgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-externalgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

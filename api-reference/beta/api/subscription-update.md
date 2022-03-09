@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 7e61a3c931c5c6b12cd633556733c7145c623902
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 830ed9a27ae30feb349a9c340436c4a1aa0e6eff
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368072"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394770"
 ---
 # <a name="update-subscription"></a>Обновление подписки
 
@@ -80,9 +80,9 @@ ms.locfileid: "63368072"
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
-### <a name="presence"></a>presence
+### <a name="onlinemeetings-presence"></a>onlineMeetings, присутствие
 
-**Подписки** на присутствие требуют [шифрования](/graph/webhooks-with-resource-data). Создание подписки завершится сбоем, если не указан [encryptionCertificate](../resources/subscription.md).
+**OnlineMeetings и** **подписки на присутствие** [требуют](/graph/webhooks-with-resource-data) шифрования для уведомлений с данными ресурса. Создание подписки не удастся, если [шифрованиеCertificate и](../resources/subscription.md) [encryptionCertificateId](../resources/subscription.md) не будут указаны, нужны ли данные ресурса в уведомлениях.
 
 ## <a name="http-request"></a>HTTP-запрос
 

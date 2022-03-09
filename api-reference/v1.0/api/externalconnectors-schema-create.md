@@ -5,17 +5,17 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 6e32cf8ac7e11d6cefea269c4e85ef95ca1b2db4
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: eb0488fed1d07be4532061a3143ec00d39c5fa18
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266259"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396653"
 ---
 # <a name="create-schema"></a>Создание схемы
 Пространство имен: microsoft.graph.externalConnectors
 
-Создайте новый [объект схемы.](../resources/externalconnectors-schema.md)
+Создайте новый [объект схемы](../resources/externalconnectors-schema.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,7 +24,7 @@ ms.locfileid: "61266259"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Неприменимо|
 |Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Для приложений| ExternalConnection.ReadWrite.OwnedBy|
+|Приложение| ExternalConnection.ReadWrite.OwnedBy|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -35,13 +35,13 @@ ms.locfileid: "61266259"
 ```http
 POST /external/connections/{id}/schema
 ```
-В теле запроса поставляем представление JSON объекта [схемы.](../resources/externalconnectors-schema.md)
+В теле запроса поставляем представление JSON объекта [схемы](../resources/externalconnectors-schema.md) .
 
-При регистрации настраиваемой схемы элемента  объект **схемы** должен иметь свойство **baseType** и должно содержать `microsoft.graph.externalItem` свойство **свойств.**  Объект **свойств должен** **содержать** по крайней мере одно свойство, не более 128.
+При регистрации настраиваемой схемы элемента объект **схемы** должен  иметь свойство **baseType** `microsoft.graph.externalItem` и должно содержать **свойство свойств**. Объект **свойств должен** **содержать** по крайней мере одно свойство, не более 128.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного использования этот метод возвращает код ответа и URL-адрес в загонах ответа, которые можно использовать для `202 Accepted` `Location` получения состояния [операции.](../api/externalconnectors-connectionoperation-get.md)
+В случае успешного `202 Accepted` использования этот метод возвращает код ответа и URL-адрес `Location` в загонах ответа, которые можно использовать для [получения состояния операции](../api/externalconnectors-connectionoperation-get.md).
 
 ## <a name="examples"></a>Примеры
 
@@ -105,12 +105,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-schema-from-connection-async-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-schema-from-connection-async-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

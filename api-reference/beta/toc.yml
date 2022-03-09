@@ -300,7 +300,7 @@ items:
             href: resources/calendar.md
             displayName: 'Outlook, Outlook calendar'
             items:
-              - name: Create
+              - name: Создание
                 href: api/user-post-calendars.md
               - name: Создание группы календарей
                 href: api/user-post-calendargroups.md
@@ -470,7 +470,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Примечания
+          - name: примечания;
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -9529,7 +9529,7 @@ items:
                         href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                       - name: Обновление
                         href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
-                  - name: Identity
+                  - name: Удостоверение
                     href: resources/intune-rbac-identity.md
                   - name: Набор удостоверений
                     href: resources/intune-rbac-identityset.md
@@ -9809,7 +9809,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                       - name: Список
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: Delete
+                      - name: Удалить
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: Сценарий управления устройствами
                     href: resources/intune-shared-devicemanagementscript.md
@@ -11129,7 +11129,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: Удаление поставщика
                 href: api/dynamics-vendor-delete.md
-      - name: Удостоверения и доступ
+      - name: Удостоверение и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: Обзор
@@ -11458,6 +11458,7 @@ items:
                   - name: Удаление включенных групп
                     href: api/mobileappmanagementpolicies-delete-includedgroups.md
               - name: Управление ролью
+                displayName: 'Unified RBAC, Privileged Identity Management, PIM v3'
                 href: resources/rolemanagement.md
                 items:
                   - name: Определение роли
@@ -12456,7 +12457,7 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: Upload клиентского сертификата
                         href: api/identityapiconnector-uploadclientcertificate.md
-                      - name: Delete
+                      - name: Удалить
                         href: api/identityapiconnector-delete.md
           - name: Управление
             items:
@@ -12832,10 +12833,11 @@ items:
                       - name: Обновление
                         href: api/entitlementmanagementsettings-update.md
               - name: Управление привилегированными пользователями
+                displayName: PIM v2
                 items:
                   - name: Служба Privileged Identity Management
                     href: resources/privilegedidentitymanagement-root.md
-                  - name: Azure AD (неподготовленная))
+                  - name: Azure AD (амортизации)
                     items:
                       - name: Azure AD
                         href: resources/privilegedidentitymanagement-directory.md
@@ -13282,7 +13284,7 @@ items:
                     href: api/useraccountinformation-update.md
                   - name: Delete
                     href: api/useraccountinformation-delete.md
-              - name: Адреса
+              - name: Addresses
                 items:
                   - name: Адрес элемента
                     href: resources/itemaddress.md
@@ -13352,7 +13354,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Delete
                     href: api/educationalactivity-delete.md
-              - name: Адрес электронной почты;
+              - name: Адрес электронной почты
                 items:
                   - name: Электронная почта элемента
                     href: resources/itememail.md
@@ -13408,7 +13410,7 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: Примечания
+              - name: примечания;
                 items:
                   - name: Аннотация для человека
                     href: resources/personannotation.md
@@ -14642,7 +14644,7 @@ items:
           - name: Команда
             href: resources/team.md
             items:
-              - name: Create
+              - name: Создание
                 href: api/team-post.md
               - name: Создание команды из группы
                 href: api/team-put-teams.md

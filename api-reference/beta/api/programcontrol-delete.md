@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 40fe71bd2b0c1c9f400efbacae1c45525c804151
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d593f6961b470874576e8ff266fabe85a9441723
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135183"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "63396317"
 ---
 # <a name="delete-programcontrol"></a>Удаление программыControl
 
@@ -18,7 +18,9 @@ ms.locfileid: "62135183"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) удалите [объект programControl.](../resources/programcontrol.md)  Это отонка обзора доступа из программы.
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) удалите [объект programControl](../resources/programcontrol.md) .  Это отонка обзора доступа из программы.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -28,7 +30,7 @@ ms.locfileid: "62135183"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | ProgramControl.ReadWrite.All  |
 
-Подписанный пользователь также должен быть в роли каталога, которая позволяет им удалять `programControl` .
+Подписанный пользователь также должен быть в роли каталога, которая позволяет им удалять `programControl`.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +42,7 @@ DELETE /programControls/{id}
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 

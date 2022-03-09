@@ -5,17 +5,17 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4a76f2e7033df82849c1523a3b160179bc89fd82
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 64ea881ba54bcf54486892daa4e7a439afeab2e6
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976272"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395897"
 ---
 # <a name="get-serviceupdatemessage"></a>Get serviceUpdateMessage
 Пространство имен: microsoft.graph
 
-Извлечение свойств и связей объекта [serviceUpdateMessage.](../resources/serviceupdatemessage.md)
+Извлечение свойств и связей объекта [serviceUpdateMessage](../resources/serviceupdatemessage.md) .
 
 Эта операция извлекает указанное сообщение обновления службы для клиента. Операция возвращает ошибку, если сообщение не существует для клиента.
 
@@ -26,7 +26,7 @@ ms.locfileid: "60976272"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceMessage.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|ServiceMessage.Read.All|
+|Приложение|ServiceMessage.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ GET /admin/serviceAnnouncement/messages/{serviceUpdateMessageId}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [serviceUpdateMessage](../resources/serviceupdatemessage.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и объект [serviceUpdateMessage](../resources/serviceupdatemessage.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages/MC172851
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-serviceupdatemessage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-serviceupdatemessage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

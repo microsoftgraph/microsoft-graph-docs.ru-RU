@@ -5,19 +5,19 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2ac4bcd0167b5814951abe8fd30369198aa8249f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e30f17a427fcc7e0ff61b2a87c5ee3ce74902ef3
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132102"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394910"
 ---
 # <a name="servicehealthissue-incidentreport"></a>serviceHealthIssue: incidentReport
 Пространство имен: microsoft.graph
 
 Предосмотрить документ по проверке после инцидента (PIR) указанной проблемы службы для клиента. 
 
-Проблема только со статусом указывает, что для проблемы существует документ `PostIncidentReviewPublished` PIR. Операция возвращает ошибку, если указанная проблема не существует для клиента или если для проблемы не существует документа PIR.
+Проблема только со статусом указывает `PostIncidentReviewPublished` , что для проблемы существует документ PIR. Операция возвращает ошибку, если указанная проблема не существует для клиента или если для проблемы не существует документа PIR.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,12 +43,12 @@ GET /admin/serviceAnnouncement/issues/{serviceHealthIssueId}/incidentReport
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код отклика и поток файлов `200 OK` в тексте ответа.
+В случае успешной работы эта функция возвращает код `200 OK` отклика и поток файлов в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/issues/MO248163/i
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/servicehealthissue-incidentreport-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/servicehealthissue-incidentreport-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

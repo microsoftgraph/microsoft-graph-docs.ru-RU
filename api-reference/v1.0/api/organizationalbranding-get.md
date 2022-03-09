@@ -5,21 +5,21 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9c9c913e2c136748a384dc81178ada237de1997a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0d43735feb2e2b7390fc9e781179353a0c6992e2
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132427"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394301"
 ---
 # <a name="get-organizationalbranding"></a>Получение organizationalBranding
 Пространство имен: microsoft.graph
 
-Извлечение объекта организационного брендинга по умолчанию, если заглавная головка **Accept-Language** установлена или `0` `default` . Если по умолчанию не существует объекта организационного брендинга, этот метод возвращает `404 Not Found` ошибку.
+Извлечение объекта организационного брендинга по умолчанию, если заглавная головка **Accept-Language** установлена или `0` `default`. Если по умолчанию не существует объекта организационного брендинга, этот метод возвращает ошибку `404 Not Found` .
 
-Если загон **Accept-Language** задан существующему локальному языку, определенному по значению его **id,** этот метод извлекает брендинг для указанного локального языка.
+Если загон **Accept-Language** задан существующему локальному языку, определенному по значению его **id**, этот метод извлекает брендинг для указанного локального языка.
 
-Этот метод извлекает только свойства, не веские, например имя **пользователяHintText** и **signInPageText**. Чтобы получить потоковые типы брендинга по умолчанию, например **bannerLogo** и **backgroundImage,** используйте [метод GET organizationalBrandingLocalization.](organizationalbrandinglocalization-get.md)
+Этот метод извлекает только свойства, не веские, например имя **пользователяHintText** и **signInPageText**. Чтобы получить потоковые типы брендинга по умолчанию, например **bannerLogo** и **backgroundImage**, используйте [метод GET organizationalBrandingLocalization](organizationalbrandinglocalization-get.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,14 +48,14 @@ GET /organization/{organizationId}/branding
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
-|Принять-Язык|Допустимый локал ISO 639-1. Обязательно.|
+|Принять-Язык|Допустимый локал ISO 639-1. Обязательный элемент.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект organizationalBranding](../resources/organizationalbranding.md) в тексте отклика. Если нет объекта брендинга по умолчанию, этот метод возвращает `404 Not Found` код ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект organizationalBranding](../resources/organizationalbranding.md) в тексте отклика. Если нет объекта брендинга по умолчанию, этот метод возвращает код `404 Not Found` ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -105,7 +105,7 @@ Accept-Language: 0
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -183,7 +183,7 @@ Accept-Language: 0
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"
@@ -195,7 +195,7 @@ HTTP/1.1 404 Not Found
 
 ### <a name="example-3-get-organizational-branding-for-the-french-locale"></a>Пример 3. Получить организационный брендинг для французского языка
 
-В следующем примере для получения брендинга локализации используется заглавная головка **Accept-Language.** `fr-FR`
+В следующем примере для получения брендинга локализации используется заглавная головка **Accept-Language**`fr-FR`.
 
 #### <a name="request"></a>Запрос
 
@@ -240,7 +240,7 @@ Accept-Language: fr-FR
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -270,7 +270,7 @@ Content-Type: application/json
 
 ### <a name="example-4-get-the-bannerlogo-for-the-default-locale"></a>Пример 4. Получить bannerLogo для локального значения по умолчанию
 
-В следующем примере **возвращается объект bannerLogo** для локального значения по умолчанию. Для получения типов объектов Stream, например **bannerLogo,** используйте [get organizationalBrandingLocalizationmethod](organizationalbrandinglocalization-get.md). Вы можете указать значение **id** как `default` или в `0` URL-адресе запроса. Если свойство не установлено, запрос возвращает пустой ответ.
+В следующем примере **возвращается объект bannerLogo** для локального значения по умолчанию. Чтобы получить типы объектов Stream, например **bannerLogo**, используйте [get organizationalBrandingLocalizationmethod](organizationalbrandinglocalization-get.md). Вы можете указать значение **id** как или `default` в `0` URL-адресе запроса. Если свойство не установлено, запрос возвращает пустой ответ.
 
 #### <a name="request"></a>Запрос
 
@@ -287,7 +287,7 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -304,7 +304,7 @@ Content-Type: image/*
 
 ### <a name="example-5-get-the-bannerlogo-for-the-default-locale-when-it-is-not-set"></a>Пример 5. Получить bannerLogo для локального значения по умолчанию, если он не установлен
 
-В следующем примере возвращается **объект bannerLogo,** который не был задат для локального значения по умолчанию.
+В следующем примере возвращается **объект bannerLogo** , который не был задат для локального значения по умолчанию.
 
 #### <a name="request"></a>Запрос
 
@@ -336,12 +336,16 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbranding-frlocale-bannerlogo-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbranding-frlocale-bannerlogo-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

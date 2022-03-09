@@ -5,19 +5,19 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 46a2a151bdaa6735f5d6594c48198cab40c11cbe
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: ef0ac7aebb2c100448f1e4aa640eaf1739a892f4
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225149"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396219"
 ---
 # <a name="update-smsauthenticationmethodconfiguration"></a>Обновление smsAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновим свойства объекта [smsAuthenticationMethodConfiguration,](../resources/smsauthenticationmethodconfiguration.md) который представляет политику метода проверки подлинности текстовых сообщений для клиента Azure AD.
+Обновим свойства объекта [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) , который представляет политику метода проверки подлинности текстовых сообщений для клиента Azure AD.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "61225149"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
 
-Для делегирования сценариев администратору требуется одна из следующих ролей [Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Администратор политики проверки подлинности
 * Глобальный администратор
@@ -46,24 +46,24 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/s
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса необходимо предоставить представление JSON объекта [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) со значениями полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+В тексте запроса необходимо предоставить представление [JSON объекта smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) со значениями полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-В следующей таблице показаны свойства, необходимые при обновлении [объекта smsAuthenticationMethodConfiguration.](../resources/smsauthenticationmethodconfiguration.md)
+В следующей таблице показаны свойства, необходимые при обновлении [объекта smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) .
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор политики метода проверки подлинности.|
+|id|String|Идентификатор политики метода проверки подлинности.|
 |state|authenticationMethodState|Возможные значения: `enabled`, `disabled`.|
 
->**Примечание:** Свойство `@odata.type` со значением `#microsoft.graph.smsAuthenticationMethodConfiguration` должно быть включено в тело.
+>**Примечание:** Свойство `@odata.type` со значением должно `#microsoft.graph.smsAuthenticationMethodConfiguration` быть включено в тело.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и обновленный [объект smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-smsauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-smsauthenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

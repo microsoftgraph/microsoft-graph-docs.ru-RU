@@ -5,17 +5,17 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: ba848acc414fbd797bac39662df69c779fe5a220
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 9b032649ba0b078a13311d7dc57449afc70a2d2e
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561481"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397759"
 ---
 # <a name="delete-identity"></a>Удаление удостоверений
 Пространство имен: microsoft.graph.externalConnectors
 
-Удалите [ресурс удостоверений,](../resources/externalconnectors-identity.md) чтобы удалить соответствующий член из [externalGroup.](../resources/externalconnectors-externalgroup.md)
+Удалите [ресурс удостоверений](../resources/externalconnectors-identity.md) , чтобы удалить соответствующий член из [externalGroup](../resources/externalconnectors-externalgroup.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,7 +25,7 @@ ms.locfileid: "60561481"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                 |
+| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                 |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-identity-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-identity-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

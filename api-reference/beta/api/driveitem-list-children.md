@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Возвращает коллекцию DriveItems в дочерних элементах ресурса DriveItem.
 ms.date: 09/10/2017
 title: Создание списка содержимого папки
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 86bc8629f086cb40b4ab500115c04d2aeb7b36e6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1e829cabb4f7c9f58b4d712e3748fca2a5aa25c3
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964291"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394854"
 ---
 # <a name="list-children-of-a-driveitem"></a>Создание списка дочерних элементов ресурса driveItem
 
@@ -21,7 +21,7 @@ ms.locfileid: "48964291"
 
 Возвращает коллекцию [DriveItems](../resources/driveitem.md) в **дочерние** элементы ресурса DriveItem.
 
-Ресурсы DriveItem с аспектом **папки** или **пакета** , отличным от NULL, могут содержать один или несколько дочерних элементов DriveItem.
+Ресурсы DriveItem с аспектом **папки** или **пакета**, отличным от NULL, могут содержать один или несколько дочерних элементов DriveItem.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -116,6 +116,10 @@ GET /drives/{drive-id}/items/{item-id}/children
 [!INCLUDE [sample-code](../includes/snippets/java/list-children-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-children-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -127,10 +131,9 @@ GET /drives/{drive-id}/items/{item-id}/children
 GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает список элементов в коллекции дочерних элементов для целевого элемента.
-Коллекция дочерних элементов будет состоять из ресурсов [driveItem][item-resource].
+При успешном выполнении этот метод возвращает список элементов в коллекции дочерних элементов для целевого элемента. Коллекция дочерних элементов будет состоять из ресурсов [driveItem][item-resource].
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 

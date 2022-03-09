@@ -5,21 +5,22 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 2836a8c4832d38c0e8c2e974d9eda7163c0f2313
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 055e90c1fe006cf7babfdea4f7c585d66ff295d0
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241655"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394511"
 ---
 # <a name="rolemanagement-resource-type"></a>тип ресурса roleManagement
 
 Пространство имен: microsoft.graph
 
-Представляет собой Microsoft 365 управления ролями управления доступом (RBAC). Этот ресурс предоставляет доступ к определениям ролей и назначениям ролей, которые всплыли у поставщиков RBAC. **Поставщики** каталогов (Azure Active Directory) и **deviceManagement** (Intune) в настоящее время поддерживаются.
+Представляет собой Microsoft 365 управления ролями управления доступом (RBAC). Этот ресурс предоставляет доступ к определениям ролей и назначениям ролей, которые всплыли у поставщиков RBAC. **В настоящее** время поддерживаются поставщики каталогов (Azure Active Directory), **entitlementManagement** и **deviceManagement** (Intune).
 
 Дополнительные сведения см. в указанных ниже статьях. 
 * [Разрешения роли администратора в Azure Active Directory](/azure/active-directory/roles/custom-overview).
+* [Делегирования и ролей в управлении правами Azure AD](/azure/active-directory/governance/entitlement-management-delegate).
 * [Управление доступом на основе ролей (RBAC) в Microsoft Intune](/mem/intune/fundamentals/role-based-access-control)
 
 ## <a name="methods"></a>Методы
@@ -35,9 +36,9 @@ ms.locfileid: "61241655"
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
 |каталог|[rbacApplication](rbacapplication.md)| Только для чтения. Допускается значение null.|
-|entitlementManagement|[entitlementManagement](entitlementmanagement.md)| Контейнер для всех ресурсов управления правами в управлении удостоверением Azure AD.|
+|entitlementManagement|[rbacApplication](rbacapplication.md)| Контейнер для ролей и назначений для [ресурсов управления правами](entitlementmanagement.md) .|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 <!-- {

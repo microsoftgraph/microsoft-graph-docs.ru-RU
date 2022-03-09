@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: Добавление элемента в пакет
 description: Добавление элемента в пакет driveItems
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f632b8054c1819c1af8bdd632c0d13092117cb30
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: ae6b0f0aabb4c9aeacb0411b2cbf80568fd09b16
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50774385"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395526"
 ---
 # <a name="add-item-to-a-bundle"></a>Добавление элемента в пакет
 
@@ -18,7 +18,7 @@ ms.locfileid: "50774385"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте дополнительный [driveItem][] из диска в [пакет.][]
+Добавьте дополнительный [driveItem][] из диска в [пакет][].
 
 [bundle]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
@@ -43,7 +43,7 @@ POST /drive/bundles/{bundle-id}/children
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Авторизация | Носитель \{токен\}. Обязательно. |
+| Авторизация | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -51,7 +51,7 @@ POST /drive/bundles/{bundle-id}/children
 
 ## <a name="response"></a>Отклик
 
-В случае успешного ответа `204 No Content` .
+В случае успешного ответа `204 No Content`.
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Отклики ошибок][error-response].
 
@@ -89,6 +89,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/add-to-bundle-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-to-bundle-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -106,7 +110,7 @@ HTTP/1.1 204 No Content
   "type": "#page.annotation",
   "description": "Add items to an existing bundle.",
   "keywords": "",
-  "section": "documentation"
+  "section&quot;: &quot;documentation"
 } -->
 
 

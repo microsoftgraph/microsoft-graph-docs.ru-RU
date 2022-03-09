@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c966263cf7922183f79c966ece655d599c05b2c8
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 258a32017f303302d0bcb045c3b0911d9dd01050
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61340700"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396618"
 ---
 # <a name="list-localizations"></a>Локализация списков
 Пространство имен: microsoft.graph
@@ -49,7 +49,7 @@ GET /organization/{organizationId}/branding/localizations
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [организационнойbrandingLocalization](../resources/organizationalbrandinglocalization.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и коллекцию объектов [организационнойbrandingLocalization](../resources/organizationalbrandinglocalization.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276be6
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-organizationalbrandinglocalization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-organizationalbrandinglocalization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

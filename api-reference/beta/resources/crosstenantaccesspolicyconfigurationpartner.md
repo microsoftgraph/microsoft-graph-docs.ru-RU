@@ -1,12 +1,17 @@
 ---
 title: тип ресурса crossTenantAccessPolicyConfigurationPartner
-description: 'Конфигурация, определяемая для параметров исходящие и входящие параметры совместной работы Azure AD B2B и прямого подключения B2B.'
+description: Конфигурация, определяемая для параметров исходящие и входящие параметры совместной работы Azure AD B2B и прямого подключения B2B.
 author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
+ms.openlocfilehash: 88a8d3fe3480360be8e05beff535de56ed2be617
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395953"
 ---
-
 # <a name="crosstenantaccesspolicyconfigurationpartner-resource-type"></a>тип ресурса crossTenantAccessPolicyConfigurationPartner
 
 Пространство имен: microsoft.graph
@@ -38,8 +43,8 @@ doc_type: resourcePageType
 | b2bDirectConnectInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Определяет конфигурацию конкретного партнера для пользователей из других организаций, имеющих доступ к ресурсам с помощью прямого подключения Azure B2B. Наследуется [от crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
 | b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Определяет конфигурацию конкретного партнера для пользователей в организации, исходящие для доступа к ресурсам другой организации с помощью прямого подключения Azure AD B2B. Наследуется [от crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
 | inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Определяет конфигурацию для конкретного партнера для доверия к другим утверждениям условного доступа от внешних организаций Azure AD. Наследуется [от crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
-| isServiceProvider | Логический | Определяет, является ли конфигурация конкретного партнера поставщиком облачных служб для вашей организации. |
-| tenantId | String | Идентификатор клиента для организации Azure AD партнера. Только для чтения.|
+| isServiceProvider | Boolean | Определяет, является ли конфигурация конкретного партнера поставщиком облачных служб для вашей организации. |
+| tenantId | String | Идентификатор клиента для организации Azure AD партнера. Только для чтения. Ключ.|
 
 ## <a name="relationships"></a>Связи
 
@@ -50,7 +55,7 @@ doc_type: resourcePageType
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "keyProperty": "tenantId",
   "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
   "baseType": "microsoft.graph.crossTenantAccessPolicyConfigurationBase",
   "openType": false
@@ -60,7 +65,7 @@ doc_type: resourcePageType
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
-  "tenantId": "String",
+  "tenantId": "String (identifier)",
   "inboundTrust": {
     "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
   },

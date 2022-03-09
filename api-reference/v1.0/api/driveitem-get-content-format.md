@@ -6,24 +6,32 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: С помощью этого API вы можете получить содержимое элемента в определенном формате.
 doc_type: apiPageType
-ms.openlocfilehash: fc5e59362e2e10ab8538edf7f8a0ba8260c5ac37
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: afa151dbeeab58a83a8570b8f94f82ffc02c6160
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038001"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394994"
 ---
 # <a name="download-a-file-in-another-format"></a>Скачивание файла в другом формате
 
 Пространство имен: microsoft.graph
 
+[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
+
 С помощью этого API вы можете получить содержимое элемента в определенном формате. Не все файлы можно преобразовать в любые форматы.
 
 Сведения о том, как скачать элемент в его исходном формате, см. в статье о [скачивании содержимого элемента](driveitem-get-content.md).
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="permissions"></a>Разрешения
 
-Чтобы можно было вызвать этот API, пользователю необходимо предоставить приложению доступ на чтение к файлу, который это приложение собирается преобразовать.
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+|:---------------------------------------|:------------------------------------|
+| Делегированные (рабочая или учебная учетная запись)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All |
+| Для приложений                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +48,6 @@ GET /drive/root:/{path and filename}:/content?format={format}
 |:----------|:-------|:---------------------------------------------------------------|
 | _format_  | строка | Укажите формат, в котором следует скачать содержимое элемента. |
 
-
 ### <a name="format-options"></a>Параметры форматирования
 
 Для параметра **format** допустимы указанные ниже значения.
@@ -56,7 +63,6 @@ GET /drive/root:/{path and filename}:/content?format={format}
 | _if-none-match_ | String  | Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`. |
 
 ## <a name="example"></a>Пример
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->

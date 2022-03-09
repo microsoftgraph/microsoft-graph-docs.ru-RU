@@ -5,12 +5,12 @@ title: Создание списка списков SharePoint на сайте
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 9c3d4f1f29ce44a9a59324885303bc486450b17c
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: f7a88f770968c2970e66f462200f36d4fb1b3aab
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262178"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395666"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Перечисление списков на сайте
 
@@ -22,10 +22,6 @@ ms.locfileid: "62262178"
 
 По умолчанию ресурсы list с аспектом [system][] скрыты.
 Чтобы перечислить их, включите `system` в оператор `$select`.
-
-[списков]: ../resources/list.md
-[сайта]: ../resources/site.md
-[system]: ../resources/systemfacet.md
 
 ## <a name="permissions"></a>Разрешения
 
@@ -43,9 +39,25 @@ ms.locfileid: "62262178"
 GET /sites/{site-id}/lists
 ```
 
+## <a name="request-headers"></a>Заголовки запросов
+
+| Имя          | Описание               |
+| :------------ | :------------------------ |
+| Авторизация | Bearer {token}. Обязательный. |
+
+## <a name="request-body"></a>Текст запроса
+
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик
+
+В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию [объектов списка в][] тексте отклика. 
+
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -83,6 +95,8 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 
 ### <a name="response"></a>Отклик
 
+Ниже приведен пример ответа.
+
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
 ```http
@@ -114,6 +128,11 @@ Content-type: application/json
   ]
 }
 ```
+
+[lists]: ../resources/list.md
+[list]: ../resources/list.md
+[site]: ../resources/site.md
+[system]: ../resources/systemfacet.md
 
 <!--
 {

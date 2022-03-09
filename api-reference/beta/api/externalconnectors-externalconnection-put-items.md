@@ -1,16 +1,16 @@
 ---
 title: Создание externalItem
 description: Создание нового externalItem.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7939689cf113e709853e5da666d1479e600fe4cd
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 9df3496e49fe7017641b98d2d867e67b420ceede
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467691"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396786"
 ---
 # <a name="create-externalitem"></a>Создание externalItem
 
@@ -20,7 +20,7 @@ ms.locfileid: "53467691"
 
 Создание нового [externalItem](../resources/externalconnectors-externalitem.md).
 
-Этот API можно использовать для создания настраиваемой номенклатуры. Содержащая [externalConnection](../resources/externalconnectors-externalconnection.md) должна иметь [схему,](../resources/externalconnectors-schema.md) зарегистрированную соответствующего типа.
+Этот API можно использовать для создания настраиваемой номенклатуры. Содержащая [externalConnection](../resources/externalconnectors-externalconnection.md) должна иметь [схему](../resources/externalconnectors-schema.md) , зарегистрированную соответствующего типа.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -44,27 +44,27 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 | Параметр     | Тип   | Описание                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | String | `id`Свойствосодержащего [externalConnection](../resources/externalconnectors-externalconnection.md) |
-| item-id       | String | Свойство `id` [externalItem,](../resources/externalconnectors-externalitem.md)предоставленное разработчиком. Если с этим элементом уже не `id` существует, создается новый элемент. Если элемент уже существует с этим, он `id` перезаписывается объектом, отправленным в тело. |
+| connection-id | string | Свойствосодержащего `id` [externalConnection](../resources/externalconnectors-externalconnection.md) |
+| item-id       | string | Свойство [externalItem](../resources/externalconnectors-externalitem.md), `id` предоставленное разработчиком. Если с этим элементом уже не существует `id`, создается новый элемент. Если элемент уже существует с этим `id`, он перезаписывается объектом, отправленным в тело. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание                 |
 |:--------------|:----------------------------|
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [externalItem.](../resources/externalconnectors-externalitem.md) Нагрузка ограничена 4 МБ.
+В теле запроса поставляем представление JSON объекта [externalItem](../resources/externalconnectors-externalitem.md) . Нагрузка ограничена 4 МБ.
 
 ### <a name="creating-an-externalitem"></a>Создание externalItem
 
-При создании поля требуются следующие `externalItem` поля: `acl` и `properties` . Объект `properties` должен содержать по крайней мере одно свойство.
+При создании поля `externalItem`требуются следующие поля: `acl`и `properties`. Объект `properties` должен содержать по крайней мере одно свойство.
 
 Все `DateTime` свойства типа должны быть в формате ISO 8601.
 
-Свойства на объекте должны использовать указанные типы в полезной `externalItem` нагрузке в следующих сценариях:
+Свойства на объекте должны `externalItem` использовать указанные типы в полезной нагрузке в следующих сценариях:
 
 - Для `String` свойств типа, если значение содержит символы, не относимые к ASCII.
 
@@ -84,11 +84,11 @@ PUT /external/connections/{connection-id}/items/{item-id}
     ```
 
     > [!IMPORTANT]
-    > При включаем свойстве типа `Collection(DateTime)` необходимо использовать указанный `Collection(DateTimeOffset)` тип.
+    > При включаем свойстве типа `Collection(DateTime)`необходимо использовать указанный тип `Collection(DateTimeOffset)`.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `200 OK`.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 
 ## <a name="examples"></a>Примеры
 
@@ -145,6 +145,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-externalitem-from-connections-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalitem-from-connections-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

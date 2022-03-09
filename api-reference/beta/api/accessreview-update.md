@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 056212796da53ce71004f41fc8a364590a9f5c64
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 289d2aabaab79f7fb02d5d1f6235dce8294c2660
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107201"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "63394189"
 ---
 # <a name="update-accessreview"></a>Обновление accessReview
 
@@ -18,9 +18,11 @@ ms.locfileid: "62107201"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) обновим существующий [объект accessReview,](../resources/accessreview.md) чтобы изменить одно или несколько его свойств.
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Этот API не предназначен для изменения рецензентов или решений проверки.  Чтобы изменить рецензентов, используйте [API addReviewer](accessreview-addreviewer.md) или [removeReviewer.](accessreview-removereviewer.md)  Чтобы остановить уже запущенный разовую проверку или уже запущенный экземпляр повторяющегося обзора, используйте API [остановки.](accessreview-stop.md) Чтобы применить решения к правам доступа к целевой группе или приложению, используйте [применимый](accessreview-apply.md) API. 
+В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) обновим существующий [объект accessReview](../resources/accessreview.md) , чтобы изменить одно или несколько его свойств.
+
+Этот API не предназначен для изменения рецензентов или решений проверки.  Чтобы изменить рецензентов, используйте [API addReviewer](accessreview-addreviewer.md) или [removeReviewer](accessreview-removereviewer.md) .  Чтобы остановить уже запущенный разовую проверку или уже запущенный экземпляр повторяющегося обзора, используйте API [остановки](accessreview-stop.md) . Чтобы применить решения к правам доступа к целевой группе или приложению, используйте [применимый](accessreview-apply.md) API. 
 
 
 ## <a name="permissions"></a>Разрешения
@@ -42,29 +44,29 @@ PATCH /accessReviews/{reviewId}
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-В теле запроса поставляем представление JSON параметров [объекта accessReview.](../resources/accessreview.md)
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON параметров [объекта accessReview](../resources/accessreview.md) .
 
 В следующей таблице показаны свойства, которые можно получить при обновлении accessReview.
 
 | Свойство      | Тип           | Описание                                                                                                |
 |:--------------|:---------------|:-----------------------------------------------------------------------------------------------------------|
-| displayName   | Строка         | Имя обзора доступа.                                                                                    |
+| displayName   | String         | Имя обзора доступа.                                                                                    |
 | startDateTime | DateTimeOffset | DateTime, когда планируется начать проверку.  Это должна быть дата в будущем.                 |
 | endDateTime   | DateTimeOffset | DateTime, когда проверка должна завершиться. Это должно быть по крайней мере на один день позже даты начала. |
-| description   | Строка         | Описание, чтобы показать рецензентам.                                                                 |
+| description   | String         | Описание, чтобы показать рецензентам.                                                                 |
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `204 Accepted` [объект accessReview](../resources/accessreview.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `204 Accepted` отклика и [объект accessReview](../resources/accessreview.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 Это пример обновления разового (не повторяемого) обзора доступа.
 
 ##### <a name="request"></a>Запрос
-В теле запроса поставляем представление JSON о новых свойствах [объекта accessReview.](../resources/accessreview.md)
+В теле запроса поставляем представление JSON о новых свойствах [объекта accessReview](../resources/accessreview.md) .
 
 
 # <a name="http"></a>[HTTP](#tab/http)

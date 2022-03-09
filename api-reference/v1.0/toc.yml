@@ -294,7 +294,7 @@ items:
             href: resources/calendar.md
             displayName: 'Outlook, Outlook calendar'
             items:
-              - name: Create
+              - name: Создание
                 href: api/user-post-calendars.md
               - name: Создание группы календарей
                 href: api/user-post-calendargroups.md
@@ -317,7 +317,7 @@ items:
           - name: Контакты
             href: resources/contact.md
             items:
-              - name: Create
+              - name: Создание
                 href: api/user-post-contacts.md
               - name: Создание папки контактов
                 href: api/user-post-contactfolders.md
@@ -428,7 +428,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Примечания
+          - name: примечания;
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -4638,7 +4638,7 @@ items:
                 href: api/permission-update.md
               - name: Удаление разрешения
                 href: api/permission-delete.md
-      - name: Удостоверения и доступ
+      - name: Удостоверение и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: Обзор
@@ -5319,7 +5319,7 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: Upload клиентского сертификата
                         href: api/identityapiconnector-uploadclientcertificate.md
-                      - name: Delete
+                      - name: Удалить
                         href: api/identityapiconnector-delete.md
           - name: Управление
             items:
@@ -5450,6 +5450,24 @@ items:
                         href: api/entitlementmanagement-list-assignments.md
                       - name: Фильтр текущего пользователя
                         href: api/accesspackageassignment-filterbycurrentuser.md
+                  - name: Утверждение запроса на назначение пакета доступа
+                    items:
+                      - name: Утверждение
+                        href: resources/approval.md
+                      - name: Получение
+                        href: api/approval-get.md
+                      - name: Фильтр текущего пользователя
+                        href: api/approval-filterbycurrentuser.md
+                      - name: Этап утверждения
+                        items:
+                          - name: Этап утверждения
+                            href: resources/approvalstage.md
+                          - name: Список
+                            href: api/approval-list-stages.md
+                          - name: Получение
+                            href: api/approvalstage-get.md
+                          - name: Обновление
+                            href: api/approvalstage-update.md
                   - name: Запрос на назначение пакета доступа
                     href: resources/accesspackageassignmentrequest.md
                     items:
@@ -6189,7 +6207,7 @@ items:
                     href: api/externalconnectors-externalgroup-delete.md
               - name: Внешний член группы
                 items:
-                  - name: Identity
+                  - name: Удостоверение
                     href: resources/externalconnectors-identity.md
                   - name: Создание
                     href: api/externalconnectors-externalgroup-post-members.md
@@ -6516,7 +6534,7 @@ items:
           - name: Команда
             href: resources/team.md
             items:
-              - name: Create
+              - name: Создание
                 href: api/team-post.md
               - name: Создание команды из группы
                 href: api/team-put-teams.md

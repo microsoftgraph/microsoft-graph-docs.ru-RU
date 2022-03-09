@@ -5,17 +5,17 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 762476a80d1cdfc492d1f9e23259cca5b6a32552
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: f8204252dc6355737d184512c9000161bd4040c3
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59995277"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395253"
 ---
 # <a name="get-organizationalbrandinglocalization"></a>Получение organizationalBrandingLocalization
 Пространство имен: microsoft.graph
 
-Ознакомьтесь с свойствами и отношениями объекта [организационнойbrandingLocalization.](../resources/organizationalbrandinglocalization.md) Чтобы получить объект локализации, укажите значение **id** в URL-адресе.
+Ознакомьтесь с свойствами и отношениями объекта [организационнойbrandingLocalization](../resources/organizationalbrandinglocalization.md) . Чтобы получить объект локализации, укажите значение **id** в URL-адресе.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,14 +39,14 @@ GET /organization/{organizationId}/branding/localizations/{organizationalBrandin
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа и объект `200 OK` [организационнойbrandingLocalization](../resources/organizationalbrandinglocalization.md) в тексте ответа.
+В случае успеха этот метод возвращает код `200 OK` ответа и объект [организационнойbrandingLocalization](../resources/organizationalbrandinglocalization.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandinglocalization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbrandinglocalization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -178,7 +182,7 @@ Content-Type: application/json
 
 ### <a name="example-3-get-the-bannerlogo-for-the-default-locale"></a>Пример 3. Получить bannerLogo для локального значения по умолчанию
 
-В следующем примере **возвращается объект bannerLogo** для локального значения по умолчанию. Вы можете указать **id** как `default` или в `0` URL-адресе запроса. Если объект не установлен, запрос возвращает пустой ответ.
+В следующем примере **возвращается объект bannerLogo** для локального значения по умолчанию. Вы можете указать **id** как или `default` в `0` URL-адресе запроса. Если объект не установлен, запрос возвращает пустой ответ.
 
 #### <a name="request"></a>Запрос
 
@@ -212,7 +216,7 @@ Content-Type: image/*
 
 ### <a name="example-4-get-the-bannerlogo-for-the-fr-fr-locale"></a>Пример 4. Получить bannerLogo для fr-FR-locale
 
-В следующем примере возвращается **объект bannerLogo** для локального `fr-FR` объекта, чей bannerLogo не установлен.
+В следующем примере возвращается **объект bannerLogo** `fr-FR` для локального объекта, чей bannerLogo не установлен.
 
 #### <a name="request"></a>Запрос
 
@@ -242,6 +246,10 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbranding-frlocale-bannerlogo-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbranding-frlocale-bannerlogo-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

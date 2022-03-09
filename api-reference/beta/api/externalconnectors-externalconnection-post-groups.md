@@ -2,15 +2,15 @@
 title: Создание externalGroup
 description: Создайте новый объект externalGroup.
 author: snlraju-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4bd53a81d0efb6e36945cd18d395b7662adb4c74
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: c558a0452984ee67a5adb92269af6e40c80d39e5
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697396"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394833"
 ---
 # <a name="create-externalgroup"></a>Создание externalGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "58697396"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект externalGroup.](../resources/externalconnectors-externalgroup.md)
+Создайте новый [объект externalGroup](../resources/externalconnectors-externalgroup.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "58697396"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
+| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,24 +45,24 @@ POST /external/connections/{connectionId}/groups
 
 | Имя          | Описание                 |
 |:--------------|:----------------------------|
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта **externalGroup.**
+В теле запроса поставляем представление JSON объекта **externalGroup** .
 
-При создании externalGroup можно указать следующие **свойства.**
+При создании **externalGroup** можно указать следующие свойства.
 
 | Свойство    | Тип   | Описание                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
 | id          | String | Уникальный ID внешней группы в подключении. Он должен быть альфа-числом и может иметь длину до 128 символов. |
-| displayName | String | Дружеское имя внешней группы. Необязательный параметр.                                                                      |
+| displayName | String | Дружеское имя внешней группы. Необязательное свойство.                                                                      |
 | description | String | Описание внешней группы. Необязательный параметр.                                                                         |
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `201 Created` **объект externalGroup** в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` отклика и **объект externalGroup** в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -100,6 +100,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-externalgroup-from-connection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalgroup-from-connection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

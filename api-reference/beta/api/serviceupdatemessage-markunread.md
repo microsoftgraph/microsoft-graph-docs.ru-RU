@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: f9ea57a409949c7f32dbdb189586f76c449bba37
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4604f93e2472fa55ce267ec20cab4bef8b4cd459
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61002476"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63398018"
 ---
 # <a name="serviceupdatemessage-markunread"></a>serviceUpdateMessage: markUnread
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61002476"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceMessageViewpoint.Write|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается|
+|Приложение|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,7 +55,7 @@ POST /admin/serviceAnnouncement/messages/markUnread
 
 ## <a name="response"></a>Отклик
 
-В случае успеха это действие возвращает код отклика и значение `200 OK` Boolean `true` в тексте ответа. В противном случае `false` возвращается в тело ответа.
+В случае успеха это действие возвращает код `200 OK` отклика и значение Boolean `true` в тексте ответа. В противном случае возвращается `false` в тело ответа.
 
 ## <a name="example"></a>Пример
 
@@ -93,6 +93,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-markunread-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceupdatemessage-markunread-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

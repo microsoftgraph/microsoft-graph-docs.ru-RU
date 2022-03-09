@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: fe219af5db0d7cda28a52bb65ffdd3ecc3594361
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 6680ef9154c997e106b6394f07533ca19bfda15e
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072679"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394224"
 ---
 # <a name="list-issues"></a>Проблемы со списком
 Пространство имен: microsoft.graph
@@ -46,12 +46,12 @@ GET /admin/serviceAnnouncement/issues
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [serviceHealthIssue](../resources/servicehealthissue.md) в тексте ответа. Ответ paginated и каждая страница содержит 100 объектов.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и коллекцию объектов [serviceHealthIssue](../resources/servicehealthissue.md) в тексте ответа. Ответ paginated и каждая страница содержит 100 объектов.
 
 ## <a name="example"></a>Пример
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/issues
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-servicehealthissue-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-servicehealthissue-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

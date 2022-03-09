@@ -5,12 +5,12 @@ author: ravennMSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d4884d1b4b4103339ac45441b828b511f6161459
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 19b12ed86b112e308d6c5cf0f423d5c7b5000932
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "60780524"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394371"
 ---
 # <a name="add-includedgroups"></a>Добавление includedGroups
 
@@ -50,7 +50,7 @@ POST /policies/mobileDeviceManagementPolicies/{id}/includedGroups/$ref
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте описание объекта [group](../resources/group.md) в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при добавлении [группы.](../resources/group.md)
+В следующей таблице показаны свойства, необходимые при добавлении [группы](../resources/group.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -94,6 +94,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-group-from-groups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-group-from-groups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,16 +5,25 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 0be72cacf043727e0a08a6524a0685ec99bce47a
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: ed4b66b4fbaf281ed8be07d3d8cab7432402819b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336951"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394518"
 ---
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
+
+### <a name="approvalfilterbycurrentuseroptions-values"></a>значения approvalFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|одобрение|
+|unknownFutureValue|
 
 ### <a name="accesspackageassignmentfilterbycurrentuseroptions-values"></a>accessPackageAssignmentFilterByCurrentUserOptions
 
@@ -272,7 +281,7 @@ ms.locfileid: "63336951"
 |:--------------|
 |Android|
 |iOS|
-|Windows|
+|windows|
 |WindowsPhone|
 |macOS|
 |все|
@@ -630,7 +639,7 @@ ms.locfileid: "63336951"
 
 | Member
 |:-----------------
-| Windows
+| windows
 | iana
 
 
@@ -972,7 +981,7 @@ ms.locfileid: "63336951"
 ### <a name="onenotesourceservice-values"></a>значения onenoteSourceService
 | Member
 |:---------------------
-| Unknown
+| Неизвестно
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -1195,7 +1204,7 @@ Enum для серьезности оповещений.
 
 ### <a name="useraccountsecuritytype-values"></a>Значения userAccountSecurityType
 
-Возможные значения для типов учетных записей пользователей (членство в группе) в определении Windows.
+Возможные значения для типов учетных записей пользователей (членство в группе) в Windows определения.
 
 |Member|Member|Описание|
 |:---|:---|:---|
@@ -1323,7 +1332,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail;   | 1     | Угроза почты.            |
+| почта;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -1371,8 +1380,8 @@ Enum для серьезности оповещений.
 | Элемент                | Значение | Описание                         |
 |:----------------------|:------|:------------------------------------|
 | Нет                  | 0     | Еще не знаю.                       |
-| mailFlowRule          | 1     | Правило транспорта Exchange.            |
-| safeSender            | 2     | Безопасный список отправитель.                   |
+| mailFlowRule          | 1     | Exchange правила транспорта.            |
+| safeSender            | 2     | Сейф отправитель.                   |
 | blockedSender         | 3     | Заблокированный список отправитель.                |
 | advancedSpamFiltering | 4     | Расширенный параметр flitering нежелательной почты.     |
 | domainAllowList       | 5     | Список разрешаемой области отправитель.           |

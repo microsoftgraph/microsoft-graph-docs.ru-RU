@@ -1,16 +1,16 @@
 ---
 title: 'informationProtectionLabel: listLabels'
 description: Извлечение списка меток защиты информации.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 1be094a546bb34bc72bfc95e651bb502c0000f75
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 95e4bff83464857d5cbe100fa82e143f553e9f63
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579608"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397206"
 ---
 # <a name="informationprotectionlabel-listlabels"></a>informationProtectionLabel: listLabels
 
@@ -52,8 +52,8 @@ GET /informationProtection/policy/labels
 
 | Имя          | Описание                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.                                                                                                                                                         |
-| User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательно. |
+| Авторизация | Bearer {token}. Обязательный.                                                                                                                                                         |
+| User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -61,7 +61,7 @@ GET /informationProtection/policy/labels
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [informationProtectionLabel](../resources/informationprotectionlabel.md) в тексте ответа.
+В случае успешной работы этот `200 OK` метод возвращает код ответа и коллекцию объектов [informationProtectionLabel](../resources/informationprotectionlabel.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -94,12 +94,16 @@ GET https://graph.microsoft.com/beta/me/informationProtection/policy/labels
 [!INCLUDE [sample-code](../includes/snippets/java/get-labels-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-labels-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

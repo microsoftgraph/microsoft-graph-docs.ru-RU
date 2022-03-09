@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: c93ab2112346b082d9a9e6e24a1dc528bdbc549c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2220f7dc45749723e813fdcd85a8313001ff1804
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132754"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "63396765"
 ---
 # <a name="delete-program"></a>Удаление программы
 
@@ -18,9 +18,11 @@ ms.locfileid: "62132754"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) удалите [объект](../resources/program.md) программы.
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Не удаляйте программу, которая по-прежнему связана с ней, эти обзоры доступа сначала должны быть удалены или отвязаны из программы и связаны `programControl` с другой программой.  Кроме того, обратите внимание, что встроенная программа по умолчанию не может быть удалена.
+В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) удалите [объект программы](../resources/program.md) .
+
+Не удаляйте программу, `programControl` которая по-прежнему связана с ней, эти обзоры доступа сначала должны быть удалены или отвязаны из программы и связаны с другой программой.  Кроме того, обратите внимание, что встроенная программа по умолчанию не может быть удалена.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -44,7 +46,7 @@ DELETE /programs/{id}
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 

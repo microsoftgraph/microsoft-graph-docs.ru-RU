@@ -5,19 +5,19 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b6be3bcf2dd78c56b2da96da10b7c001e16cda60
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d76ef5bebac8caabe95782af22620ea22c84ad9e
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687783"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396156"
 ---
 # <a name="delete-externalitem"></a>Удаление externalItem
 Пространство имен: microsoft.graph.externalConnectors
 
 
 
-Удаляет [объект externalItem.](../resources/externalconnectors-externalitem.md)
+Удаляет [объект externalItem](../resources/externalconnectors-externalitem.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "60687783"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Неприменимо|
 |Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Application| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All|
+|Приложение| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -79,6 +79,10 @@ DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-externalitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-externalitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

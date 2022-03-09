@@ -5,21 +5,22 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 30ecd7e128f96c222997f660d4853a693b00d281
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3b56b90a958d516daec194873319cb266546d067
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62108145"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335691"
 ---
 # <a name="add-member-to-team"></a>Добавление участника в группу
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление нового [conversationMember](../resources/conversationmember.md) в [группу](../resources/team.md).
+Добавьте в [команду](../resources/team.md) [нового участника беседы](../resources/conversationmember.md).
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
@@ -27,6 +28,9 @@ ms.locfileid: "62108145"
 |Делегированные (рабочая или учебная учетная запись)| TeamMember.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение| TeamMember.ReadWrite.All |
+
+> [!NOTE]
+> Использование разрешений приложения для [добавления гостей](/microsoft-365/admin/add-users/about-guest-users?view=o365-worldwide&preserve-view=true) в команду не поддерживается.
 
 ## <a name="http-request"></a>HTTP-запрос
 

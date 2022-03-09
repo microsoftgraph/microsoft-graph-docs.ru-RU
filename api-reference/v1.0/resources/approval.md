@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса утверждения
-description: Объект утверждения, связанный с userConsentRequest.
+description: Объект утверждения, связанный с userConsentRequest или accessPackageAssignmentRequest.
 author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f59736f7cdb4aed235eeb1fa5831e69024057d11
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 812c2315593abdc0556fcf2a5f2d545299999fc1
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067614"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395862"
 ---
 # <a name="approval-resource-type"></a>Тип ресурса утверждения
 
@@ -18,12 +18,17 @@ ms.locfileid: "59067614"
 
 Представляет объект утверждения для решений, связанных с запросом.
 
+## <a name="methods"></a>Методы
+|Метод|Тип возвращаемых данных|Описание|
+|:---|:---|:---|
+|[Получить утверждение](../api/approval-get.md) | [утверждение](approval.md) | Получение свойств **объекта утверждения в** управлении правами. |
+|[filterByCurrentUser](../api/approval-filterbycurrentuser.md)| [коллекция утверждений](approval.md)| Получение объектов **утверждения** для утвержденного в управлении правами.|
+
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор решения об утверждении.|
-|stages|[коллекция approvalStage](../resources/approvalstage.md)|Набор этапов в решении об утверждении. |
+|id|String|Идентификатор решения об утверждении.|
 
 ## <a name="relationships"></a>Связи
 
@@ -31,7 +36,7 @@ ms.locfileid: "59067614"
 |:---|:---|:---|
 |stages|[коллекция approvalStage](../resources/approvalstage.md)|Набор этапов в решении об утверждении. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 <!-- {

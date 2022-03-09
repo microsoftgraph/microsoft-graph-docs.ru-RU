@@ -5,17 +5,17 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 30c330163d61471931866cd4227e052c0fe6fd24
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 704ad177920df8ec34f6964b54752db777516347
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61340748"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396128"
 ---
 # <a name="delete-organizationalbrandinglocalization"></a>Удаление organizationalBrandingLocalization
 Пространство имен: microsoft.graph
 
-Удаление объекта локализованного брендинга. Чтобы удалить [объект organizationalBrandingLocalization,](../resources/organizationalbrandinglocalization.md) все изображения (типы потока) сначала должны быть удалены из объекта.
+Удаление объекта локализованного брендинга. Чтобы удалить [объект organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) , все изображения (типы потока) сначала должны быть удалены из объекта.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -52,7 +52,7 @@ DELETE /organization/{organizationId}/branding/localizations/{organizationalBran
 
 ### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса на удаление объекта `fr-FR` локализации.
+Ниже приводится пример запроса на удаление `fr-FR` объекта локализации.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -80,13 +80,17 @@ DELETE https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249
 [!INCLUDE [sample-code](../includes/snippets/java/delete-organizationalbrandinglocalization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-organizationalbrandinglocalization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

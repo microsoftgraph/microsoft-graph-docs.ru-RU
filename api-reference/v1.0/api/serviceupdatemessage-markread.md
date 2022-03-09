@@ -5,17 +5,17 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: e7d1595d3d2074a45873741f11de29aaf7ebd51f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 31b5a2703de0b255277171250007263412b556af
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61024127"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397703"
 ---
 # <a name="serviceupdatemessage-markread"></a>serviceUpdateMessage: markRead
 Пространство имен: microsoft.graph
 
-Пометить список [serviceUpdateMessages](../resources/serviceupdatemessage.md) в качестве чтения для подписанного пользователя. 
+Пометить список [serviceUpdateMessages](../resources/serviceupdatemessage.md) в качестве чтения для подписанного пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,7 +24,7 @@ ms.locfileid: "61024127"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceMessageViewpoint.Write|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается|
+|Приложение|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,7 +54,7 @@ POST /admin/serviceAnnouncement/messages/markRead
 
 ## <a name="response"></a>Отклик
 
-В случае успеха это действие возвращает код отклика и значение `200 OK` Boolean `true` в тексте ответа. В противном случае `false` возвращается в тело ответа.
+В случае успеха это действие возвращает код `200 OK` отклика и значение Boolean `true` в тексте ответа. В противном случае возвращается `false` в тело ответа.
 
 ## <a name="example"></a>Пример
 
@@ -93,6 +93,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-markread-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceupdatemessage-markread-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

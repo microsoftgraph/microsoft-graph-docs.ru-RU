@@ -5,18 +5,20 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: a61b606288b7bd184a74fa115b2061d98c12b223
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0aaa99de12963528a5b0dc08c8556c5d632f4d30
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089524"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "63398032"
 ---
 # <a name="update-program"></a>Программа обновления
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) обновим существующий [объект](../resources/program.md) программы.
 ## <a name="permissions"></a>Разрешения
@@ -40,8 +42,8 @@ PATCH /programs/{programId}
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-В теле запроса поставляем представление JSON объекта [программы.](../resources/program.md)
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON [объекта программы.](../resources/program.md)
 
 В следующей таблице показаны свойства, которые можно получить при обновлении программы.
 
@@ -52,11 +54,11 @@ PATCH /programs/{programId}
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и объект `204, Accepted` программы в тексте ответа. [](../resources/program.md)
+В случае успешной работы этот метод возвращает код `204, Accepted` отклика и [объект программы в](../resources/program.md) тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В теле запроса необходимо предоставить представление [](../resources/program.md) JSON параметров объекта программы для изменения.
+В теле запроса необходимо предоставить представление JSON параметров объекта программы [](../resources/program.md) для изменения.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -5,19 +5,19 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 51e71c321d366393419fb60f322bf52026b8020c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d973fb2a526f188ef9669b72338c788b14200313
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61010785"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397808"
 ---
 # <a name="get-serviceupdatemessage"></a>Get serviceUpdateMessage
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта [serviceUpdateMessage.](../resources/serviceupdatemessage.md)
+Извлечение свойств и связей объекта [serviceUpdateMessage](../resources/serviceupdatemessage.md) .
 
 Эта операция извлекает указанное сообщение обновления службы для клиента. Операция возвращает ошибку, если сообщение не существует для клиента.
 
@@ -28,7 +28,7 @@ ms.locfileid: "61010785"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceMessage.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|ServiceMessage.Read.All|
+|Приложение|ServiceMessage.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ GET /admin/serviceAnnouncement/messages/{serviceUpdateMessageId}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [serviceUpdateMessage](../resources/serviceupdatemessage.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и объект [serviceUpdateMessage](../resources/serviceupdatemessage.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC172851
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-serviceupdatemessage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-serviceupdatemessage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

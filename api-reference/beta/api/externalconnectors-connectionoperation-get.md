@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 6cb0fb1b1460e731dcbce545bf16b344aaeea443
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: f2f5cea589544f86a7743b126b7fcea81cc0fec4
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694958"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396359"
 ---
 # <a name="get-connectionoperation"></a>Get connectionOperation
 
@@ -28,7 +28,7 @@ ms.locfileid: "60694958"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application                            | ExternalConnection.ReadWrite.OwnedBy |
+| Приложение                            | ExternalConnection.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ GET /external/connections/{connection-id}/operations/{operation-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [connectionOperation](../resources/externalconnectors-connectionoperation.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и запрашиваемого объекта [connectionOperation](../resources/externalconnectors-connectionoperation.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/operations/3
 [!INCLUDE [sample-code](../includes/snippets/java/get-connectionoperation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-connectionoperation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -93,7 +97,7 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/operations/3
 ### <a name="response"></a>Отклик
 <!-- markdownlint-enable MD024 -->
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

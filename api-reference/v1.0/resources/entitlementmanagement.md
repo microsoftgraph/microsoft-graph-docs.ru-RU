@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 85fb78ba5973e3493d2dd62b5e4685d0176dcbe7
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 547e8140ecfb39686b028e967aaf1328f2f077a2
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650911"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393131"
 ---
 # <a name="entitlementmanagement-resource-type"></a>тип ресурса entitlementManagement
 
-Синглтон управления правами — это контейнер для ресурсов управления правами, включая [accessPackageCatalog,](accesspackagecatalog.md) [connectedOrganization](connectedorganization.md)и [entitlementManagementSettings.](entitlementmanagementsettings.md)  Полный список ресурсов см. в [обзоре управления правами.](entitlementmanagement-overview.md)
+Синглтон управления правами — это контейнер для ресурсов управления правами, включая [accessPackageCatalog](accesspackagecatalog.md), [connectedOrganization](connectedorganization.md) и [entitlementManagementSettings](entitlementmanagementsettings.md).  Полный список ресурсов см. в [обзоре управления правами](entitlementmanagement-overview.md).
 
-Наследует от [объекта](entity.md).
+Наследует [от сущности](entity.md).
 
 ## <a name="methods"></a>Методы
 
@@ -25,11 +25,12 @@ ms.locfileid: "61650911"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Это значение указывает на то, что ресурс — это однотон. Только для чтения. Наследуется от [сущности](entity.md).|
+|id|String|Это значение указывает на то, что ресурс — это однотон. Только для чтения. Наследуется от [сущности](entity.md).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
+|accessPackageAssignmentApprovals|[коллекция утверждений](../resources/approval.md) | Этапы утверждения запросов на назначение.|
 |accessPackages|[коллекция accessPackage](../resources/accesspackage.md)|Представляет объекты пакета доступа.|
 |assignmentRequests|[accessPackageAssignmentRequest collection](../resources/accesspackageassignmentrequest.md)|Представляет запросы на назначение пакетов доступа, созданные пользователем или от имени пользователя.|
 |assignments|[коллекция accessPackageAssignment](../resources/accesspackageassignment.md)| Представляет предоставление пакета доступа субъекту (пользователю или группе).|
@@ -37,7 +38,7 @@ ms.locfileid: "61650911"
 |connectedOrganizations|[connectedOrganization](../resources/connectedorganization.md) collection|Представляет ссылки на каталог или домен другой организации, пользователи которой могут запрашивать доступ.|
 |settings|[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)| Представляет параметры, которые контролируют поведение управления правами Azure AD.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

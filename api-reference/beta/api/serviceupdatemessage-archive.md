@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 18c8c19b43a1bd5fae9ae09143ec69296f5432f8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4d53f54a3998f7550cf336c3529b8498dc23cfe3
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61010820"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397857"
 ---
 # <a name="serviceupdatemessage-archive"></a>serviceUpdateMessage: архив
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61010820"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceMessageViewpoint.Write|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается|
+|Приложение|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,7 +55,7 @@ POST /admin/serviceAnnouncement/messages/archive
 
 ## <a name="response"></a>Отклик
 
-В случае успеха это действие возвращает код отклика и значение `200 OK` Boolean `true` в тексте ответа. В противном случае `false` возвращается в тело ответа.
+В случае успеха это действие возвращает код `200 OK` отклика и значение Boolean `true` в тексте ответа. В противном случае возвращается `false` в тело ответа.
 
 ## <a name="example"></a>Пример
 
@@ -93,6 +93,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-archive-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceupdatemessage-archive-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

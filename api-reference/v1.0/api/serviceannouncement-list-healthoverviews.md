@@ -5,17 +5,17 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0d866f714c929d2f29438e0af7781f86c77e8a01
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 90cc5e88d3e842afe064311cee77af3f0dd2399a
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072483"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393608"
 ---
 # <a name="list-healthoverviews"></a>Список healthOverviews
 Пространство имен: microsoft.graph
 
-Извлекать [ресурсы serviceHealth](../resources/servicehealth.md) из **свойства навигации healthOverviews.**
+Извлекать [ресурсы serviceHealth](../resources/servicehealth.md) из **свойства навигации healthOverviews** .
 
 Эта операция предоставляет отчет о состоянии здоровья всех подписаных служб для клиента.
 
@@ -46,12 +46,12 @@ GET /admin/serviceAnnouncement/healthOverviews
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [serviceHealth](../resources/servicehealth.md) в тексте отклика. Ответ paginated и каждая страница содержит 100 объектов.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию объектов [serviceHealth](../resources/servicehealth.md) в тексте отклика. Ответ paginated и каждая страница содержит 100 объектов.
 
 ## <a name="examples"></a>Примеры
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/healthOverviews
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-healthoverviews-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-healthoverviews-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -160,6 +164,10 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/healthOverviews?$
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-healthoverviews-with-issues-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-healthoverviews-with-issues-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

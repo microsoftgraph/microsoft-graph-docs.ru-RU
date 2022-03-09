@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: 70bc8842ed3ccda835e836c5e4c9337668e54ec8
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: f13d607c1f15bb3dcefba5f50d0db9830c8dd280
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368107"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396177"
 ---
 # <a name="subscription-resource-type"></a>Тип ресурса subscription
 
@@ -83,13 +83,14 @@ ms.locfileid: "63368107"
 | **Чат** Teams | 60 минут (1 час) |
 | **chatMessage** в Teams    | 60 минут (1 час)  |
 | **conversationMember** в Teams    | 60 минут (1 час)  |
-| Teams **onlineMeeting** | 4320 минут (3 дня) |
+| **onlineMeeting** в Teams | 4320 минут (3 дня) |
 | **Команда** Teams    | 60 минут (1 час)  |
 | Групповая **беседа** | 4230 минут (до 3 дней)    |
 | **driveItem** OneDrive    | 43200 минут (до 30 дней)    |
 | **Список** SharePoint    | 43200 минут (до 30 дней)    |
 | **Сообщение**, **событие**, **контакт** Outlook              | 4230 минут (до 3 дней)    |
 | **Пользователь**, **группа**, другие ресурсы каталога   | 41 760 минут (до 29 дней)    |
+| **onlineMeeting** | 4230 минут (до 3 дней) |
 | **presence**        | 60 минут (1 час) |
 | **printer** печати | 4230 минут (до 3 дней)    |
 | **printTaskDefinition** печати | 4230 минут (до 3 дней)    |

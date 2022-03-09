@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b29fe74cae67dab5731ba7098f2fc7cf3591ddda
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 8bcd70fc0c6e57b4f069f40428a25a308a50f67b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63339449"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396310"
 ---
 # <a name="list-transitiveroleassignment"></a>Список transitiveRoleAssignment
 
@@ -33,7 +33,7 @@ ms.locfileid: "63339449"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -73,7 +73,7 @@ GET /roleManagement/directory/transitiveRoleAssignments?$filter=principalId eq '
 | :---: | :---: | :---: | :---: | :---: |
 | Алиса<br/>`2c7936bc-3517-40f3-8eda-4806637b6516` |  | Администратор пользователей<br/>`fe930be7-5e62-47db-91af-98c3a49a38b1` | Tenant | RA1<br/>`857708a7-b5e0-44f9-bfd7-53531d72a739` |
 |  | G1<br/>`ae2fc327-4c71-48ed-b6ca-f48632186510`<br/>(Алиса является членом) | Администратор пользователей<br/>`fe930be7-5e62-47db-91af-98c3a49a38b1` | Tenant | RA2<br/>`8a021d5f-7351-4713-aab4-b088504d476e` |
-|  | G2<br/>`6ffb34b8-5e6d-4727-a7f9-93245e7f6ea8`<br/>(Алиса является членом) | Администратор helpdesk<br/>`729827e3-9c14-49f7-bb1b-9608f156bbb8` | Административный блок (AU1)<br/>`26e79164-0c5c-4281-8c5b-be7bc7809fb2` | RA3<br/>`6cc86637-13c8-473f-afdc-e0e65c9734d2` |
+|  | G2<br/>`6ffb34b8-5e6d-4727-a7f9-93245e7f6ea8`<br/>(Алиса является членом) | Администратор службы поддержки<br/>`729827e3-9c14-49f7-bb1b-9608f156bbb8` | Административный блок (AU1)<br/>`26e79164-0c5c-4281-8c5b-be7bc7809fb2` | RA3<br/>`6cc86637-13c8-473f-afdc-e0e65c9734d2` |
 
 + Алисе назначена роль администратора пользователя непосредственно в области клиента с назначением роли RA1. 
 + Алиса входит в группу G1, а G1 назначена роль администратора пользователя в области клиента с назначением роли RA2.
@@ -114,6 +114,10 @@ ConsistencyLevel: eventual
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignment-all-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignment-all-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -200,6 +204,10 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignment-transitive-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignment-transitive-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -275,6 +283,10 @@ ConsistencyLevel: eventual
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignment-tenantscoped-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignment-tenantscoped-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

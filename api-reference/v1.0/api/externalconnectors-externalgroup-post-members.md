@@ -5,19 +5,19 @@ author: sacampbe
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: ab13c0cf77a4b6416d574e109dbb579caa40c639
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 508189bc61dcc7eec8f35da1b8733d72e957b0e0
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561271"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394945"
 ---
 # <a name="create-identity"></a>Создание удостоверений
 Пространство имен: microsoft.graph.externalConnectors
 
 
 
-Создание ресурса [удостоверений](../resources/externalconnectors-identity.md) для нового участника в [externalGroup.](../resources/externalconnectors-externalgroup.md)
+Создание ресурса [удостоверений](../resources/externalconnectors-identity.md) для нового участника в [externalGroup](../resources/externalconnectors-externalgroup.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "60561271"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
+| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,19 +48,19 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем JSON-представление объекта **удостоверений.**
+В теле запроса поставляем JSON-представление объекта **удостоверений** .
 
-Следующие свойства можно указать при создании ресурса **удостоверений** для участника **в externalGroup.**
+Следующие свойства можно указать при создании ресурса **удостоверений** для участника **в externalGroup**.
 
 | Свойство       | Тип                    | Описание                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | Строка                  | Уникальный `id` член. Это будет **objectId** в случае Azure Active Directory пользователей или групп и **externalGroupId** в случае внешних групп. Обязательное.                                    |
-| type           | microsoft.graph.externalConnectors.identityType | Тип участника, добавленного во внешнюю группу. Возможные значения: `user` , `group` , `externalGroup` . Обязательный. |
+| id             | String                  | `id` Уникальный член. Это будет **objectId** в случае Azure Active Directory пользователей или групп и **externalGroupId** в случае внешних групп. Обязательное.                                    |
+| type           | microsoft.graph.externalConnectors.identityType | Тип участника, добавленного во внешнюю группу. Возможные значения: `user`,`group`, `externalGroup`. Обязательный. |
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `201 Created` объект **удостоверения** в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` ответа и объект **удостоверения** в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-aad-user-identity-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-aad-user-identity-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -161,6 +165,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-aad-group-identity-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-aad-group-identity-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -218,6 +226,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-external-group-identity-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-external-group-identity-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

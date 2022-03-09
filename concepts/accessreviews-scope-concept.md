@@ -5,30 +5,30 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 8a8a880882c0a9904484e97d8406bb971c2ff05e
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 8224e78c0597777520de13906c7f3e302703cfd5
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651402"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394504"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Настройка области обзора доступа с помощью API microsoft Graph
 
-API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv2-overview) позволяет программным образом просмотреть доступ пользователей, директоров служб или групп к ресурсам Azure AD.
+API обзоров доступа Azure [AD позволяет](/graph/api/resources/accessreviewsv2-overview) программным образом просмотреть доступ пользователей, директоров служб или групп к ресурсам Azure AD.
 
-Ресурсы для проверки настроены в свойстве **области** доступа к [ресурсу accessReviewScheduleDefinition.](/graph/api/resources/accessreviewscheduledefinition) Это свойство имеет тип [accessReviewScope](/graph/api/resources/accessreviewscope), абстрактный тип, унаследованный следующими ресурсами, которые можно использовать для настройки ресурсов или групп ресурсов, доступ к которые будут рассмотрены.
+Ресурсы для проверки настроены в свойстве **области** доступа к [ресурсу accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition) . Это свойство имеет тип [accessReviewScope](/graph/api/resources/accessreviewscope) , абстрактный тип, унаследованный следующими ресурсами, которые можно использовать для настройки ресурсов или групп ресурсов, доступ к которые будут рассмотрены.
 
 |Ресурс|Описание|Примеры сценариев|
 |:---    |:---       |:---             |
 |[accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope)|Наиболее применимо при просмотре полного набора или подмножества директоров, имеющих доступ к ресурсу или группе связанных ресурсов.|<ul><li>Членство пользователей, назначенных группе.</li><li>Гостевой доступ пользователя к одной группе.</li><li>Гостевой доступ пользователей ко всем Microsoft 365 группам в клиенте.</li><li>Директорам служб назначены привилегированные роли.</li><li>Основной доступ пользователей и служб к пакетам доступа к управлению правами.</li></ul>|
-|[accessReviewInactiveUsersQueryScope](/graph/api/resources/accessreviewinactiveusersqueryscope)|Наследуется от accessReviewQueryScope. Используется при просмотре только неактивных пользователей. Их неактивное состояние указывается **свойством inactiveDuration.** |<ul><li>Членство в группе только неактивных пользователей.</li><ul>|
-|[principalResourceMembershipsScope](/graph/api/resources/principalResourceMembershipsScope)|Наиболее применимо для проверки доступа директоров к ресурсам, в которых настраиваются уникальные пулы директоров и ресурсов.|<ul><li>Просмотр доступа к 3 определенным директорам в 1 Microsoft 365 *и* 1 привилегированной роли Azure AD.</li><ul>|
+|[accessReviewInactiveUsersQueryScope](/graph/api/resources/accessreviewinactiveusersqueryscope)|Наследуется от accessReviewQueryScope. Используется при просмотре только неактивных пользователей. Их неактивное состояние указывается **свойством inactiveDuration** . |<ul><li>Членство в группе только неактивных пользователей.</li><ul>|
+|[principalResourceMembershipsScope](/graph/api/resources/principalResourceMembershipsScope)|Наиболее применимо для проверки доступа директоров к ресурсам, в которых настраиваются уникальные пулы директоров и ресурсов.|<ul><li>Просмотр доступа к 3 определенным директорам в 1 группе *Microsoft 365 и 1* привилегированной роли Azure AD.</li><ul>|
 
 В этой статье вы будете использовать эти типы accessReviewScope для настройки широкого спектра ресурсов Azure AD в качестве области обзора доступа. Это поможет вам автоматизировать упреждающий обзор и сохранить контроль над доступом к ресурсам в организации.  
 
 ## <a name="use-accessreviewqueryscope-to-configure-scope"></a>Используйте accessReviewQueryScope для настройки области
 
-Чтобы настроить область с помощью **типа accessReviewQueryScope,** установите значения его **запросов,** **queryRoot** и **queryType** свойств. Описание этих свойств см. в виде [ресурса accessReviewQueryScope.](/graph/api/resources/accessreviewqueryscope)
+Чтобы настроить область с помощью **типа accessReviewQueryScope** , установите значения свойств запроса **,** **queryRoot** и **queryType** . Описание этих свойств см. в виде [ресурса accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope) .
 
 ### <a name="example-1-review-all-users-assigned-to-a-group"></a>Пример 1. Просмотр всех пользователей, назначенных группе
 
@@ -40,7 +40,7 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
 }
 ```
 
-Чтобы *просмотреть только неактивных пользователей,* назначенных группе:
+Чтобы *просмотреть только неактивных пользователей* , назначенных группе:
 
 ```http
 "scope": {
@@ -73,7 +73,7 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
     "queryType": "MicrosoftGraph"
 }
 ```
-Поскольку этот обзор применяется во всех Microsoft 365 группах, настройте **экземплярEnumerationScope,** чтобы указать Microsoft 365 группы для проверки. Обратите внимание, что динамические группы и группы, назначаемые для ролей, не включены в этот обзор.
+Поскольку этот обзор применяется во всех Microsoft 365 группах, настройте **экземплярEnumerationScope**, чтобы указать Microsoft 365 группы для проверки. Обратите внимание, что динамические группы и группы, назначаемые для ролей, не включены в этот обзор.
 
 ### <a name="example-4-review-all-guest-users-assigned-to-all-microsoft-365-groups"></a>Пример 4. Просмотр всех гостевых пользователей, назначенных всем Microsoft 365 группам
 
@@ -89,7 +89,7 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
 }
 ```
 
-Поскольку этот обзор применяется во всех Microsoft 365 группах, настройте **экземплярEnumerationScope,** чтобы указать Microsoft 365 группы для проверки. Обратите внимание, что динамические группы и группы, назначаемые для ролей, не включены в этот обзор.
+Поскольку этот обзор применяется во всех Microsoft 365 группах, настройте **экземплярEnumerationScope**, чтобы указать Microsoft 365 группы для проверки. Обратите внимание, что динамические группы и группы, назначаемые для ролей, не включены в этот обзор.
     
 ### <a name="example-5-review-all-guest-users-assigned-to-all-teams"></a>Пример 5. Просмотр всех гостевых пользователей, назначенных всем Teams
 
@@ -105,7 +105,7 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
 }
 ```
     
-Поскольку этот обзор применяется во всех Teams с Microsoft 365, настройте **экземплярEnumerationScope,** чтобы указать Teams группы Microsoft 365 для проверки.  Обратите внимание, что динамические группы и группы, назначаемые для ролей, не включены в этот обзор.
+Поскольку этот обзор применяется во всех Teams с Microsoft 365, настройте **экземплярEnumerationScope**, чтобы указать Teams-Microsoft 365 групп.  Обратите внимание, что динамические группы и группы, назначаемые для ролей, не включены в этот обзор.
 
 ### <a name="example-6-review-all-inactive-guest-users-assigned-to-all-microsoft-365-groups"></a>Пример 6. Просмотр всех неактивных гостевых пользователей, назначенных всем Microsoft 365 группам
 
@@ -122,7 +122,7 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
 }
 ```
 
-Поскольку этот обзор применяется к неактивным пользователям, используйте ресурс **accessReviewInactiveUsersQueryScope** и укажите свойство **типа @odata.type** со значением `#microsoft.graph.accessReviewInactiveUsersQueryScope` . Обратите внимание, что динамические группы и группы, назначаемые для ролей, не включены в этот обзор.
+Поскольку этот обзор применяется к неактивным пользователям, используйте **ресурс accessReviewInactiveUsersQueryScope** и укажите свойство **типа @odata.type** `#microsoft.graph.accessReviewInactiveUsersQueryScope`со значением . Обратите внимание, что динамические группы и группы, назначаемые для ролей, не включены в этот обзор.
 
 ### <a name="example-7-review-all-inactive-guest-users-assigned-to-all-teams"></a>Пример 7. Просмотр всех неактивных гостевых пользователей, назначенных всем Teams
 
@@ -139,9 +139,9 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
 }
 ```
 
-Поскольку этот обзор применяется для всех групп, настройте **свойство instanceEnumerationScope,** чтобы указать все группы. Обратите внимание, что динамические группы и группы, назначаемые для ролей, не включены в этот обзор.
+Поскольку этот обзор применяется для всех групп, настройте **свойство instanceEnumerationScope** , чтобы указать все группы. Обратите внимание, что динамические группы и группы, назначаемые для ролей, не включены в этот обзор.
 
-### <a name="example-8-review-all-assignemnt-to-entitlement-management-access-packages"></a>Пример 8. Просмотрите все пакеты доступа assignemnt к пакетам доступа к управлению правами
+### <a name="example-8-review-all-assignment-to-entitlement-management-access-packages"></a>Пример 8. Просмотр всех назначений пакетам доступа к управлению правами
 
 ```http
 "scope": {

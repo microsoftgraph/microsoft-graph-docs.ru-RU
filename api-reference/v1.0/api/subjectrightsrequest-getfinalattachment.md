@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: f6a05a991223202a0e7098bb60a0230f84103656
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 581868cf3c407f90b4a23b5e52659d41691eec6c
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134293"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397654"
 ---
 # <a name="subjectrightsrequest-getfinalattachment"></a>subjectRightsRequest: getFinalAttachment
 Пространство имен: microsoft.graph
@@ -41,12 +41,12 @@ GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного сбоя эта функция перенаправит на Microsoft Azure ссылку на хранилище BLOB с маркером SAS и возвращает `302` код ответа.
+В случае успешного сбоя эта функция перенаправит на Microsoft Azure ссылку на хранилище BLOB с маркером SAS и возвращает код `200` ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -93,6 +93,6 @@ GET https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests/{subjectRight
 }
 -->
 ``` http
-HTTP/1.1 302 
+HTTP/1.1 200 
 ```
 

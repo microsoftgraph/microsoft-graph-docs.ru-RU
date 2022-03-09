@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: a1dad572417a97793dd6b1b25176a18879edb491
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 3746db66d1f79c27d0910de55f9a20b08214b653
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368170"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395659"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -22,7 +22,7 @@ ms.locfileid: "63368170"
 
 Список ресурсов, поддерживающих подписку на уведомления об изменениях, см. в таблице раздела [Разрешения](#permissions).
 
-Некоторые ресурсы поддерживают возможность включить зашифрованные данные ресурсов в уведомления об изменениях. К этим ресурсам относятся [chatMessage](../resources/chatmessage.md), [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md), [onlineMeetings](../resources/onlinemeeting.md) и [presence](../resources/presence.md). Дополнительные сведения см[. в](/graph/webhooks-with-resource-data) дополнительных сведениях о настройках уведомлений об изменениях, которые включают данные о ресурсах и уведомления об изменении для Outlook ресурсов [в Microsoft Graph](/graph/outlook-change-notification-overview).
+Некоторые ресурсы поддерживают возможность включить зашифрованные данные ресурсов в уведомления об изменениях. К этим ресурсам относятся [chatMessage](../resources/chatmessage.md), [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md), [onlineMeetings](../resources/onlinemeeting.md) и [presence](../resources/presence.md). Дополнительные сведения см. в статьях [Настройка уведомлений об изменениях, включающих данные ресурсов](/graph/webhooks-with-resource-data) и [Уведомления об изменениях, связанных с ресурсами Outlook, в Microsoft Graph](/graph/outlook-change-notification-overview).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -185,6 +185,7 @@ Content-type: application/json
 |[Группы](../resources/group.md)|`groups`|
 |[Список](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Почта](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
+|[OnlineMeetings](../resources/onlinemeeting.md)|`/communications/onlineMeetings/?$filter=JoinWebUrl eq '{WebJoinUrl}'`|
 |[Присутствие](../resources/presence.md)| `/communications/presences/{id}` (один пользователь), `/communications/presences?$filter=id in ('{id}','{id}',…)` (несколько пользователей)|
 |[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|

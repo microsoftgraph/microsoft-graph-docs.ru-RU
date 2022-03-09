@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 756c3cf5d3bf8a2b2b70e2a6a7b6807a7ef486da
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 45a8e7a58c2f026d461716162eba73130002a19c
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030603"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397668"
 ---
 # <a name="serviceupdatemessage-unfavorite"></a>serviceUpdateMessage: неблагоприятный
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "61030603"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceMessageViewpoint.Write|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается|
+|Приложение|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ POST /admin/serviceAnnouncement/messages/unfavorite
 
 ## <a name="response"></a>Отклик
 
-В случае успеха это действие возвращает код отклика и значение `200 OK` Boolean `true` в тексте ответа. В противном случае `false` возвращается в тело ответа.
+В случае успеха это действие возвращает код `200 OK` отклика и значение Boolean `true` в тексте ответа. В противном случае возвращается `false` в тело ответа.
 
 ## <a name="example"></a>Пример
 
@@ -92,6 +92,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-unfavorite-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceupdatemessage-unfavorite-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

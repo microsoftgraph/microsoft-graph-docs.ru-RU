@@ -5,19 +5,19 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 56ae5e53863e18146ec7eed101bd39d872916f07
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: d9079597be37d3b4c66400eaaadb42f69e01d72b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559290"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393236"
 ---
 # <a name="create-externalgroup"></a>Создание externalGroup
 Пространство имен: microsoft.graph.externalConnectors
 
 
 
-Создайте новый [объект externalGroup.](../resources/externalconnectors-externalgroup.md)
+Создайте новый [объект externalGroup](../resources/externalconnectors-externalgroup.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "60559290"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
+| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,21 +46,21 @@ POST /external/connections/{connectionsId}/groups
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта **externalGroup.**
+В теле запроса поставляем представление JSON объекта **externalGroup** .
 
-При создании externalGroup можно указать следующие **свойства.**
+При создании **externalGroup** можно указать следующие свойства.
 
 | Свойство    | Тип   | Описание                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | Строка | Уникальный ID внешней группы в подключении. Он должен быть альфа-числом и может иметь длину до 128 символов. Обязательный. |
-| displayName | Строка | Дружеское имя внешней группы. Необязательный параметр.                                                                      |
-| description | Строка | Описание внешней группы. Необязательный параметр.                                                                         |
+| id          | String | Уникальный ID внешней группы в подключении. Он должен быть альфа-числом и может иметь длину до 128 символов. Обязательный. |
+| displayName | String | Дружеское имя внешней группы. Необязательное свойство.                                                                      |
+| description | String | Описание внешней группы. Необязательный параметр.                                                                         |
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `201 Created` **объект externalGroup** в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` отклика и **объект externalGroup** в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-externalgroup-from-connection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalgroup-from-connection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

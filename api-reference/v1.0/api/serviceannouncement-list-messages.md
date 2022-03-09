@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6e8448e1aaf56ee0e251919d546d7d41acbfd48a
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: c8baeb26167f32b19abff9b56d60917b91923c2b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072084"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394602"
 ---
 # <a name="list-serviceannouncement-messages"></a>List serviceAnnouncement messages
 Пространство имен: microsoft.graph
@@ -46,12 +46,12 @@ GET /admin/serviceAnnouncement/messages
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [serviceUpdateMessage](../resources/serviceupdatemessage.md) в тексте отклика. Ответ paginated и каждая страница содержит 100 объектов.
+В случае успешной `200 OK` работы этот метод возвращает код отклика и коллекцию объектов [serviceUpdateMessage](../resources/serviceupdatemessage.md) в тексте отклика. Ответ paginated и каждая страница содержит 100 объектов.
 
 ## <a name="example"></a>Пример
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-serviceupdatemessage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-serviceupdatemessage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

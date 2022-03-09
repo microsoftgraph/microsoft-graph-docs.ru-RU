@@ -5,12 +5,12 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 89612341b9c730672591599fd38ed2c3e2420175
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 4d3b6a7dd81e283362ac9e013966f8c0bf22841c
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939674"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394420"
 ---
 # <a name="create-externalgroupmember"></a>Создание externalGroupMember
 
@@ -18,7 +18,7 @@ ms.locfileid: "60939674"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [внешнего объектаGroupMember.](../resources/externalconnectors-externalgroupmember.md)
+Создание нового [внешнего объектаGroupMember](../resources/externalconnectors-externalgroupmember.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "60939674"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
+| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,19 +50,19 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON внешнего **объектаGroupMember.**
+В теле запроса поставляем представление JSON внешнего **объектаGroupMember** .
 
 При создании **externalGroupMember** можно указать следующие свойства.
 
 | Свойство       | Тип                    | Описание                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | Уникальный `id` член. Это будет objectId в случае Azure Active Directory пользователей или групп и externalGroupId в случае внешних групп. Обязательное.                                   |
-| type           | microsoft.graph.externalConnectors.externalGroupMemberType | Тип участника, добавленного во внешнюю группу. Возможные значения: или когда identitySource является и только `user` `group` `azureActiveDirectory` `group` тогда, когда identitySource `external` является . Обязательный. |
+| id             | String                  | `id` Уникальный член. Это будет objectId в случае Azure Active Directory пользователей или групп и externalGroupId в случае внешних групп. Обязательное.                                   |
+| type           | microsoft.graph.externalConnectors.externalGroupMemberType | Тип участника, добавленного во внешнюю группу. Возможные значения: `user` или когда identitySource является `azureActiveDirectory` `group` и только тогда, когда identitySource является `external``group` . Обязательный. |
 | identitySource | microsoft.graph.externalConnectors.identitySourceType      | Источник удостоверений, к которой принадлежит член. Возможные значения: `azureActiveDirectory`, `external`. Обязательный.                                                                                       |
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `201 Created` **внешний объектGroupMember** в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` отклика и **внешний объектGroupMember** в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -101,6 +101,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-externalgroupmember-from--1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalgroupmember-from--1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -164,6 +168,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-externalgroupmember-from--2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalgroupmember-from--2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -222,6 +230,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-externalgroupmember-from--3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalgroupmember-from--3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

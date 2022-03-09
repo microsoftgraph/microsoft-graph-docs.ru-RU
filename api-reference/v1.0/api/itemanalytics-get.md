@@ -5,12 +5,12 @@ description: Получите itemAnalytics о представлениях, к�
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 9f469d2403d1a474780d847a86e5ffdecf361b3c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: efb1d968bbeb1f9e5b04b215cfab29658c543956
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335635"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397458"
 ---
 # <a name="get-itemanalytics"></a>Get itemAnalytics
 
@@ -40,9 +40,12 @@ ms.locfileid: "63335635"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /drives/{drive-id}/items/{item-id}/analytics
-GET /sites/{site-id}/analytics
-GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
+GET /drives/{drive-id}/items/{item-id}/analytics/allTime
+GET /sites/{site-id}/analytics/allTime
+GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics/allTime
+GET /drives/{drive-id}/items/{item-id}/analytics/lastSevenDays
+GET /sites/{site-id}/analytics/lastSevenDays
+GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics/lastSevenDays
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
@@ -59,7 +62,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 
 ## <a name="response"></a>Отклик 
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию [объекта itemAnalytics][] в тексте ответа. 
+В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию объектов [itemAnalytics][] в тексте отклика. 
 
 ## <a name="example"></a>Пример
 
@@ -71,7 +74,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
 ```msgraph-interactive
-GET /drives/{drive-id}/items/{item-id}/analytics
+GET /drives/{drive-id}/items/{item-id}/analytics/allTime
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-analytics-csharp-snippets.md)]
@@ -87,6 +90,10 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-analytics-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-analytics-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -107,12 +114,6 @@ Content-type: application/json
         "access": {
             "actionCount": 123,
             "actorCount": 89
-        }
-    },
-    "lastSevenDays": {
-        "access": {
-            "actionCount": 52,
-            "actorCount": 41
         }
     }
 }

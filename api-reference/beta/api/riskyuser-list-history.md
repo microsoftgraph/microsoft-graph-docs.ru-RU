@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cloudhandler
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d7bc9795d7bb35cd3489802d53a2b33b39a8e493
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5168f8e53775e8b043f30f65e184983a741ac408
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135071"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393292"
 ---
 # <a name="list-history-of-riskyuser"></a>Список истории riskyUser
 
@@ -18,7 +18,7 @@ ms.locfileid: "62135071"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите историю рисков ресурса [riskyUser.](../resources/riskyuser.md)
+Получите историю рисков ресурса [riskyUser](../resources/riskyuser.md) .
 
 >**Примечание:** Использование API riskyUsers требует Azure AD Premium P2 лицензии.
 
@@ -44,12 +44,12 @@ GET /identityProtection/riskyUsers/{id}/history/
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа и коллекцию объектов `200 OK` [riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md) в теле ответа.
+В случае успеха этот метод возвращает `200 OK` код ответа и коллекцию объектов [riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 ### <a name="example-1-list-history-of-a-specific-user"></a>Пример 1. История списка определенного пользователя
@@ -193,6 +193,10 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyUsers/41a31b00-3b3b
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-userriskhitsory-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-userriskhitsory-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

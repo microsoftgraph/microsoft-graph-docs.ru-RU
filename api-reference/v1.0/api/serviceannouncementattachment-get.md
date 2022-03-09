@@ -5,17 +5,17 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: a5dec619dd9b4b6a13797f5bb74c74abd64e4641
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 6483cc811ccabea84463504cf3ce055ff083ec88
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225710"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396450"
 ---
 # <a name="get-serviceannouncementattachment"></a>Get serviceAnnouncementAttachment
 Пространство имен: microsoft.graph
 
-Ознакомьтесь с свойствами и отношениями объекта [serviceAnnouncementAttachment.](../resources/serviceannouncementattachment.md)
+Ознакомьтесь с свойствами и отношениями объекта [serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,7 +24,7 @@ ms.locfileid: "62225710"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceMessage.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|ServiceMessage.Read.All|
+|Приложение|ServiceMessage.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,13 +49,13 @@ GET /admin/serviceAnnouncement/messages/{serviceUpdateMessageId}/attachments/{se
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика и объект `200 OK` [serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) в тексте ответа.
+В случае успешного выполнения этот `200 OK` метод возвращает код отклика и объект [serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1-get-an-attachment-message-id"></a>Пример 1. Получить ID сообщения вложения
 
-Следующий запрос возвращает ресурс [serviceAnnouncementAttachment.](../resources/serviceannouncementattachment.md)
+Следующий запрос возвращает ресурс [serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) .
 
 #### <a name="request"></a>Запрос
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages/MC54091/
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-serviceannouncementattachment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-serviceannouncementattachment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -147,6 +151,10 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages/MC54091/
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-serviceannouncementattachment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-serviceannouncementattachment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: bf16dad69d1ca5c11b7a207fe96bdfefeef01e44
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 0442c653bff74b09e4ed4dc1f343cf2f17433d5f
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225976"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393762"
 ---
 # <a name="list-attachments"></a>Список вложений
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "62225976"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceMessage.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|ServiceMessage.Read.All|
+|Приложение|ServiceMessage.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ GET /admin/serviceAnnouncement/messages/{serviceUpdateMessageId}/attachments
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика и коллекцию объектов `200 OK` [serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) в теле ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и коллекцию объектов [serviceAnnouncementAttachment](../resources/serviceannouncementattachment.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC54091/
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-serviceannouncementattachment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-serviceannouncementattachment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -157,6 +161,10 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC54091/
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-serviceannouncementattachment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-serviceannouncementattachment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

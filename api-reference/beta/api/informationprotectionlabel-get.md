@@ -1,16 +1,16 @@
 ---
 title: Получить informationProtectionLabel
 description: Извлечение свойств и связей указанного объекта informationProtectionLabel.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 02b1d36a2b4639487b9dd88dcf67c9592bce1aa9
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 6564c59608f8f69d0a2fc68dc1639768ff0695bb
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579622"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395694"
 ---
 # <a name="get-informationprotectionlabel"></a>Получить informationProtectionLabel
 
@@ -18,7 +18,7 @@ ms.locfileid: "52579622"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта [informationProtectionLabel.](../resources/informationprotectionlabel.md)
+Извлечение свойств и связей объекта [informationProtectionLabel](../resources/informationprotectionlabel.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "52579622"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | InformationProtectionPolicy.Read            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | InformationProtectionPolicy.Read.All        |
+| Приложение                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,8 +52,8 @@ GET /informationProtection/policy/labels/{id}
 
 | Имя          | Описание                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.                                                                                                                                                         |
-| User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательно. |
+| Авторизация | Bearer {token}. Обязательный.                                                                                                                                                         |
+| User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -61,7 +61,7 @@ GET /informationProtection/policy/labels/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [informationProtectionLabel](../resources/informationprotectionlabel.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и запрашиваемого объекта [informationProtectionLabel](../resources/informationprotectionlabel.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -94,12 +94,16 @@ GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-informationprotectionlabel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-informationprotectionlabel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

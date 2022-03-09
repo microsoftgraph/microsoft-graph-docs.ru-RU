@@ -5,18 +5,18 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e24af303d0b9195680a7bb59d68d979b1d24d944
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 3eba8b1d5ee44e5afbc6fb9668c01057665f2654
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60560746"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394028"
 ---
 # <a name="get-externalgroup"></a>Get externalGroup
 Пространство имен: microsoft.graph.externalConnectors
 
 
-Получите [объект externalGroup.](../resources/externalconnectors-externalgroup.md)
+Получите [объект externalGroup](../resources/externalconnectors-externalgroup.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "60560746"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All|
+| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All|
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,7 +50,7 @@ GET /external/connections/{connectionsId}/groups/{externalGroupId}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа с **объектом externalGroup.**
+В случае успешной работы этот метод возвращает код `200 OK` ответа с **объектом externalGroup** .
 
 ## <a name="example"></a>Пример
 
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31bea
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-externalgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-externalgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

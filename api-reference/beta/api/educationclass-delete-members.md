@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7e2d0701acd3fafa57228fe101c165ae7a058751
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 7c623da0f5037a9155f4d92bbd169cb90eb91bb0
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225926"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394007"
 ---
 # <a name="remove-a-student"></a>Удаление учащегося
 
@@ -20,7 +20,7 @@ ms.locfileid: "61225926"
 
 Удаление [educationUser](../resources/educationuser.md) из [класса educationClass](../resources/educationclass.md).
 
->**Примечание.** Преподаватели _и_ учащиеся включены в коллекцию **members** курса. Перед вызовом этого API убедитесь, что удаляемая система **educationUser** не является преподавателем.  Получить список преподавателей, [](educationclass-list-teachers.md) позвонив educationclass_list_teachers и проверив пользовательский ID пользователя, который будет удален, не находится в списке возвращенных учителей.
+>**Примечание.** Преподаватели _и_ учащиеся включены в коллекцию **members** курса. Перед вызовом этого API убедитесь, что **удаляемая система educationUser** не является преподавателем.  Получить список преподавателей, позвонив [](educationclass-list-teachers.md) educationclass_list_teachers и проверив пользовательский ID пользователя, который будет удален, не находится в списке возвращенных учителей.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "61225926"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Application | EduRoster.ReadWrite.All | 
+|Приложение | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ DELETE /education/classes/{id}/members/{userId}/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -76,11 +76,15 @@ DELETE https://graph.microsoft.com/beta/education/classes/11003/members/14008
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationclass-from-educationschool-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationclass-from-educationschool-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response"
 } -->

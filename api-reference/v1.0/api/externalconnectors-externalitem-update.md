@@ -5,19 +5,19 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: cc0b1890bc37f9cdb108ddfd8c282028ff67760d
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 0152c9e38584ce63f138edd47f64f4e0a05c2188
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943796"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393257"
 ---
 # <a name="update-externalitem"></a>Обновление externalItem
 Пространство имен: microsoft.graph.externalConnectors
 
 
 
-Обновление свойств объекта [externalItem.](../resources/externalconnectors-externalitem.md)
+Обновление свойств объекта [externalItem](../resources/externalconnectors-externalitem.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "60943796"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Неприменимо|
 |Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Для приложений| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All|
+|Приложение| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,8 +40,8 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 | Параметр     | Тип   | Описание                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | `id`Свойствосодержащего [externalConnection](../resources/externalconnectors-externalconnection.md) |
-| item-id       | string | Свойство `id` [externalItem,](../resources/externalconnectors-externalitem.md)предоставленное разработчиком. |
+| connection-id | string | Свойствосодержащего `id` [externalConnection](../resources/externalconnectors-externalconnection.md) |
+| item-id       | string | Свойство [externalItem](../resources/externalconnectors-externalitem.md), `id` предоставленное разработчиком. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -52,25 +52,25 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства (за исключением свойств внутри объекта), не включенные в тело запроса, будут поддерживать прежние значения или пересчитываться на основе изменений других `properties` значений свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились. Могут быть обновлены перечисленные ниже свойства.
+В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства ( `properties` за исключением свойств внутри объекта), не включенные в тело запроса, будут поддерживать прежние значения или пересчитываться на основе изменений других значений свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились. Могут быть обновлены перечисленные ниже свойства.
 
 | Свойство   | Тип                                  | Описание               |
 |:-----------|:--------------------------------------|:--------------------------|
 | acl        | [коллекция microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) | Массив записей управления доступом. Каждая запись указывает доступ, предоставленный пользователю или группе. |
 | содержимое    | [microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md) | Простое текстовое представление содержимого элемента. Текст в этом свойстве индексироваться с полным текстом. |
-| properties | Объект                              | Пакет свойств со свойствами элемента. Свойства должны соответствовать [схеме,](../resources/externalconnectors-schema.md) определенной для [externalConnection.](../resources/externalconnectors-externalconnection.md) |
+| properties | Объект                              | Пакет свойств со свойствами элемента. Свойства должны соответствовать схеме [,](../resources/externalconnectors-schema.md) определенной для [externalConnection](../resources/externalconnectors-externalconnection.md). |
 
 ### <a name="updating-the-acl-collection"></a>Обновление коллекции acl
 
-Если свойство включено в запрос на обновление, существующая коллекция ACL перезаписывается с коллекцией, `acl` включенной в запрос.
+Если свойство `acl` включено в запрос на обновление, существующая коллекция ACL перезаписывается с коллекцией, включенной в запрос.
 
 ### <a name="updating-the-properties-object"></a>Обновление объекта свойств
 
-Если свойство включено в запрос на обновление, существующий пакет свойств перезаписывается со значением, `properties` включенным в запрос.
+Если свойство `properties` включено в запрос на обновление, существующий пакет свойств перезаписывается со значением, включенным в запрос.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект externalItem](../resources/externalconnectors-externalitem.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и обновленный [объект externalItem](../resources/externalconnectors-externalitem.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -113,6 +113,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-externalitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-externalitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

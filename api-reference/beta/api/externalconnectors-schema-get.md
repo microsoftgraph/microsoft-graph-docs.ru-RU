@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 9af589d20df4acccc942b296ab236c6b1fa1db4b
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 7909bfba11da8ba0fb24549f4a21c040d0375864
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266203"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397234"
 ---
 # <a name="get-schema"></a>Получение схемы
 
@@ -28,7 +28,7 @@ ms.locfileid: "61266203"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ExternalConnection.ReadWrite.OwnedBy |
+| Приложение                            | ExternalConnection.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ GET /external/connections/{id}/schema
 
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -54,7 +54,7 @@ GET /external/connections/{id}/schema
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [схемы](../resources/externalconnectors-schema.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и запрашиваемого объекта [схемы](../resources/externalconnectors-schema.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/schema
 [!INCLUDE [sample-code](../includes/snippets/java/get-schema-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-schema-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -94,7 +98,7 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/schema
 ### <a name="response"></a>Отклик
 <!-- markdownlint-enable MD024 -->
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

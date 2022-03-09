@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: e26211a84ecee4fbebebb7a658081081d26f8153
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 61bd6fd58ce2d8da7efad910e5d43700d84dc323
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939268"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397318"
 ---
 # <a name="list-monthlyprintusagebyprinter"></a>Список ежемесячныхPrintUsageByPrinter
 
@@ -18,7 +18,7 @@ ms.locfileid: "60939268"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка ежемесячных сводок использования печати, сгруппив по [принтеру.](../resources/printer.md)
+Извлечение списка ежемесячных сводок использования печати, сгруппив по [принтеру](../resources/printer.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "60939268"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ GET /print/reports/monthlyPrintUsageByPrinter
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [printUsageByPrinter](../resources/printUsageByPrinter.md) в тексте ответа.
+В случае успешной работы `200 OK` этот метод возвращает код отклика и коллекцию объектов [printUsageByPrinter](../resources/printUsageByPrinter.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/print/reports/monthlyPrintUsageByPrinter
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-endpoints-5-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-endpoints-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

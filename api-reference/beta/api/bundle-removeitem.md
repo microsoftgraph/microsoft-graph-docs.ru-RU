@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: Удаление элемента из пакета
 description: Удаление элемента из пакета driveItems
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: edd7647be648b5eda1560157d35c6a7b2d4aa130
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1a84ceeee22736c7ac02fa50403523734fe2e65b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50774364"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395190"
 ---
 # <a name="remove-item-from-bundle"></a>Удаление элемента из пакета
 
@@ -18,7 +18,7 @@ ms.locfileid: "50774364"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление элемента из [пакета][].
+Удалите [элемент из пакета][].
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Авторизация | Носитель \{токен\}. Обязательно. |
+| Авторизация | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -48,7 +48,7 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного ответа `204 No Content` .
+В случае успешного ответа `204 No Content`.
 
 Дополнительные сведения о возвращении ошибок см. в статье [Отклики с ошибками][error-response].
 
@@ -79,6 +79,10 @@ DELETE https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children/{item
 [!INCLUDE [sample-code](../includes/snippets/java/remove-from-bundle-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/remove-from-bundle-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -98,7 +102,7 @@ HTTP/1.1 204 No Content
   "type": "#page.annotation",
   "description": "Remove an item from a bundle.",
   "keywords": "",
-  "section": "documentation"
+  "section&quot;: &quot;documentation"
 } -->
 
 

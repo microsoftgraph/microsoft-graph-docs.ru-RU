@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 165f4be79e360a3a9aa87b9ab11dded62093f31f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9677cecab1a74c753adf227a5d58e303567ef6f4
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056890"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63394315"
 ---
 # <a name="get-certificatebasedauthconfiguration"></a>Получить certificateBasedAuthConfiguration
 
 Пространство имен: microsoft.graph
 
-Получите свойства объекта [certificateBasedAuthConfiguration.](../resources/certificateBasedAuthConfiguration.md)
+Получите свойства объекта [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "59056890"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Organization.Read.All, Organization.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений    | Organization.Read.All, Organization.ReadWrite.All |
+| Приложение    | Organization.Read.All, Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /organization/{id}/certificateBasedAuthConfiguration/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -48,7 +48,7 @@ GET /organization/{id}/certificateBasedAuthConfiguration/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и запрашиваемого объекта [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/organization/{id}/certificateBasedAuthConfi
 [!INCLUDE [sample-code](../includes/snippets/java/get-certificatebasedauthconfiguration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-certificatebasedauthconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 

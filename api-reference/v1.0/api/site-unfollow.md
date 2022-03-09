@@ -5,12 +5,12 @@ description: Unfollow a user's site
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ccc8ba3e812e5bb8824ea0932c00ea8d85765cfc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 88f107070d8688c1a347b425766f5668a1dc9e38
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118907"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393187"
 ---
 # <a name="unfollow-site"></a>Прекращение отслеживания сайта 
 
@@ -48,7 +48,7 @@ POST /users/{user-id}/followedSites/remove
 ## <a name="response"></a>Отклик
 
 * В случае успешного запроса этот метод возвращает код `204` состояния без контента.  
-* Если ошибка произошла при отсоединиле любой из указанных сайтов, этот метод возвращает код состояния, и в тексте ответа будет содержаться массив записей, содержащих объекты ошибок и siteIds, указывающие, какие сайты не могут быть `207` unfollowed. [](/graph/errors)
+* Если ошибка произошла при отсоединиле любой из указанных сайтов, `207` этот метод возвращает код состояния, и в тексте ответа будет содержаться массив записей, содержащих объекты ошибок и siteIds, указывающие, какие сайты не могут быть unfollowed.[](/graph/errors)
 
 ## <a name="example"></a>Пример
 
@@ -90,6 +90,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/unfollow-site-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/unfollow-site-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

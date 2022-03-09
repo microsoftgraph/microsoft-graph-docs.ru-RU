@@ -5,18 +5,18 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d5224481604e9fcdbe2ee0071c3cc8fea9d3f8d8
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 15e8d1de626d0cb64806c3398c880a9b15a4b6b6
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792108"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63393594"
 ---
 # <a name="create-externalitem"></a>Создание externalItem
 
 Пространство имен: microsoft.graph.externalConnectors
 
-Создайте [новый объект externalItem.](../resources/externalconnectors-externalitem.md)
+Создайте [новый объект externalItem](../resources/externalconnectors-externalitem.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -25,7 +25,7 @@ ms.locfileid: "61792108"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Неприменимо|
 |Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Application| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+|Приложение| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,22 +40,22 @@ PUT /external/connections/{connection-id}/items/{item-id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляют представление JSON объекта [externalItem.](../resources/externalconnectors-externalitem.md)
+В теле запроса поставляют представление JSON объекта [externalItem](../resources/externalconnectors-externalitem.md) .
 
-При создании [externalItem](../resources/externalconnectors-externalitem.md)можно указать следующие свойства.
+При создании [externalItem](../resources/externalconnectors-externalitem.md) можно указать следующие свойства.
 
 |Свойство|Тип| Описание|
 |:---|:---|:---|
-|id|String|ID элемента. Обязательное.|
-|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|Свойства элемента. Объект `properties` должен содержать по крайней мере одно свойство. Все `DateTime` свойства типа должны быть в формате ISO 8601. Обязательное.|
+|id|String|ID элемента. Обязательный.|
+|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|Свойства элемента. Объект `properties` должен содержать по крайней мере одно свойство. Все `DateTime` свойства типа должны быть в формате ISO 8601. Обязательный.|
 |содержимое|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|Внешний контент элемента. Необязательное свойство.|
-|acl|[коллекция microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md)|Список управления доступом. Обязательное.|
+|acl|[коллекция microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md)|Список управления доступом. Обязательный.|
 
-Свойства на объекте должны использовать указанные типы в полезной `externalItem` нагрузке в следующих сценариях:
+Свойства на объекте должны `externalItem` использовать указанные типы в полезной нагрузке в следующих сценариях:
 
 - Для `String` свойств типа, если значение содержит символы, не относимые к ASCII.
 
@@ -75,7 +75,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
     ```
 
     > [!IMPORTANT]
-    > При включаем свойстве типа `Collection(DateTime)` необходимо использовать указанный `Collection(DateTimeOffset)` тип.
+    > При включаем свойстве типа `Collection(DateTime)`необходимо использовать указанный тип `Collection(DateTimeOffset)`.
 
 ## <a name="response"></a>Отклик 
 
@@ -135,6 +135,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-externalitem-from-externalconnections-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalitem-from-externalconnections-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -142,7 +146,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

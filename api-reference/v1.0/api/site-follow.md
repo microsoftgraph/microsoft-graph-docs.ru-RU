@@ -5,12 +5,12 @@ description: Следуйте сайту или сайтам пользоват�
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 16120ffedd1600c6f2021b433891722b80fd84be
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c3c5432a302c21ed9b8d5a4bd81f2cb2e8c2bef9
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085077"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397010"
 ---
 # <a name="follow-site"></a>Отслеживание сайта 
 
@@ -49,7 +49,7 @@ POST /users/{user-id}/followedSites/add
 ## <a name="response"></a>Отклик 
 
 * Если запрос будет успешным, этот метод возвращает массив сайтов, которые были сследованы.  
-* Если ошибка произошла при следовании за любым из указанных сайтов, этот метод возвращает код состояния, и в тексте ответа будет содержаться массив записей, содержащих объекты ошибок и siteIds, указывающие, какие сайты были не в состоянии `207` следовать. [](/graph/errors)
+* Если ошибка произошла при следовании за любым из указанных сайтов, `207` этот метод возвращает код состояния, и в тексте ответа будет содержаться массив записей, [](/graph/errors) содержащих объекты ошибок и siteIds, указывающие, какие сайты были не в состоянии следовать.
 
 ## <a name="example"></a>Пример
 
@@ -91,6 +91,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/follow-site-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/follow-site-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

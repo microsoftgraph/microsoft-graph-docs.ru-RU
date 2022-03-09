@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mecampos
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: fd6aabbd403ddc57798e3e8b6c123839a3f0bf5c
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 582d4d1c912e13754cc8dd4377228256c307a3cc
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336095"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63395463"
 ---
 # <a name="update-schema"></a>Обновление схемы
 
@@ -18,7 +18,7 @@ ms.locfileid: "61336095"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств [схемы](../resources/externalconnectors-schema.md) для [externalConnection](../resources/externalconnectors-externalconnection.md).
+Обновление свойств [схемы для](../resources/externalconnectors-schema.md) [externalConnection](../resources/externalconnectors-externalconnection.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -44,17 +44,17 @@ PATCH /external/connections/{connectionId}/schema
 |:----------------------|:-------------------------------------------------------------------|
 | Авторизация         | Bearer {token}. Обязательный.                                          |
 | Content-Type          | application/json. Обязательный.                                        |
-| Предпочитаете: respond-async | Используйте это, чтобы вызвать асинхронное выполнение запроса. Необязательно. |
+| Предпочитаете: respond-async | Используйте это, чтобы вызвать асинхронное выполнение запроса. Необязательное свойство. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [схемы.](../resources/externalconnectors-schema.md)
+В теле запроса поставляем представление JSON объекта [схемы](../resources/externalconnectors-schema.md) .
 
-При регистрации настраиваемой схемы элемента  объект **схемы** должен иметь свойство **baseType** и должно содержать `microsoft.graph.externalItem` свойство **свойств.**  Объект **свойств должен** **содержать** по крайней мере одно свойство, не более 128.
+При регистрации настраиваемой схемы элемента объект **схемы** должен  иметь свойство **baseType** `microsoft.graph.externalItem` и должно содержать **свойство свойств**. Объект **свойств должен** **содержать** по крайней мере одно свойство, не более 128.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного использования этот метод возвращает код ответа и URL-адрес в загонах ответа, которые можно использовать для `202 Accepted` `Location` получения состояния [операции.](../api/externalconnectors-connectionoperation-get.md)
+В случае успешного `202 Accepted` использования этот метод возвращает код ответа и URL-адрес `Location` в загонах ответа, которые можно использовать для [получения состояния операции](../api/externalconnectors-connectionoperation-get.md).
 
 ## <a name="examples"></a>Примеры
 
@@ -114,6 +114,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-schema-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-schema-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cloudhandler
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d47a5642b552c92bff7eba92dee3f473b9be4148
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7d8b69b0b92f6aeecdca67befc84928a27eee84f
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129520"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63397591"
 ---
 # <a name="get-riskyuserhistoryitem"></a>Get riskyUserHistoryItem
 
@@ -18,7 +18,7 @@ ms.locfileid: "62129520"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите [объект riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) для [riskyUser.](../resources/riskyuser.md)
+Получите [объект riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) для [riskyUser](../resources/riskyuser.md).
 
 >**Примечание:** Использование API riskyUsers требует Azure AD Premium P2 лицензии.
 
@@ -44,12 +44,12 @@ GET /identityProtection/riskyUsers/{userid}/history/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и объект [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 ### <a name="example-1-get-history-of-a-risky-user"></a>Пример 1. Получить историю рискованного пользователя
@@ -149,6 +149,10 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyUsers/41a31b00-3b3b
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-riskyuser-historyitem-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-riskyuser-historyitem-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
