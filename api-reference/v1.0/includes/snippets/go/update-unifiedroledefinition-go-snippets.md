@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 4fc31d0b788139b84d18671e9b48d1ef94979b91
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 9f9ef66b93066036a375938bf400a4bc79e7e111
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61087355"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63416964"
 ---
 ```go
 
@@ -29,7 +29,7 @@ options := &msgraphsdk.UnifiedRoleDefinitionRequestBuilderPatchOptions{
     Body: requestBody,
 }
 unifiedRoleDefinitionId := "unifiedRoleDefinition-id"
-graphClient.RoleManagement().Directory().RoleDefinitionsById(&unifiedRoleDefinitionId).Patch(options)
+result, err := graphClient.RoleManagement().Directory().RoleDefinitionsById(&unifiedRoleDefinitionId).Patch(options)
 
 
 ```

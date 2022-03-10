@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 30720bfd11d0666ceb26450cc52848ef31e312e5
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 4d5d0b1d2d283be02f12b68886d4546d8b8b1f1b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61092189"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63416609"
 ---
 ```go
 
@@ -18,7 +18,7 @@ requestBody.SetExternalUserLifecycleAction(&externalUserLifecycleAction)
 options := &msgraphsdk.SettingsRequestBuilderPatchOptions{
     Body: requestBody,
 }
-graphClient.IdentityGovernance().EntitlementManagement().Settings().Patch(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().Settings().Patch(options)
 
 
 ```

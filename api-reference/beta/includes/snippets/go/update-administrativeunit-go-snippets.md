@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 2b9252c1d718934e780c02acf135f5b60656b900
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 27d0562f10cb21dd4e6a7e8929a1b8f7fb048382
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63351696"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63416418"
 ---
 ```go
 
@@ -19,7 +19,7 @@ options := &msgraphsdk.AdministrativeUnitRequestBuilderPatchOptions{
     Body: requestBody,
 }
 administrativeUnitId := "administrativeUnit-id"
-graphClient.AdministrativeUnitsById(&administrativeUnitId).Patch(options)
+result, err := graphClient.AdministrativeUnitsById(&administrativeUnitId).Patch(options)
 
 
 ```

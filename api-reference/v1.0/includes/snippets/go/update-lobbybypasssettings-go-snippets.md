@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: b4f7ef735b7363bf1d6d41081ad00addf6366b56
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 294feb67355bef87e77b4cebee7bc42d8fb2e9f8
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61097910"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63417297"
 ---
 ```go
 
@@ -21,7 +21,7 @@ options := &msgraphsdk.OnlineMeetingRequestBuilderPatchOptions{
     Body: requestBody,
 }
 onlineMeetingId := "onlineMeeting-id"
-graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Patch(options)
+result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Patch(options)
 
 
 ```

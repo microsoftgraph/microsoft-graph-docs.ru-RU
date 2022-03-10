@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 196c9d3815140e48565b03636b89e9c5bbde4f97
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 26420a4b7a15f9ee13dd177c19c6f025ef1a613d
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128614"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63416681"
 ---
 ```go
 
@@ -45,7 +45,7 @@ options := &msgraphsdk.OpenShiftRequestBuilderPatchOptions{
 }
 teamId := "team-id"
 openShiftId := "openShift-id"
-graphClient.TeamsById(&teamId).Schedule().OpenShiftsById(&openShiftId).Patch(options)
+result, err := graphClient.TeamsById(&teamId).Schedule().OpenShiftsById(&openShiftId).Patch(options)
 
 
 ```

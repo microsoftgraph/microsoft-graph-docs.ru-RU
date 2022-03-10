@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: bc1aba2fbffa942ca5292e78260d4d7ccad39560
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: ea21baa5d11ea0b276806a34f4109f567dcf5649
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61083464"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63417322"
 ---
 ```go
 
@@ -25,7 +25,7 @@ options := &msgraphsdk.BrandingRequestBuilderPatchOptions{
     H: headers,
 }
 organizationId := "organization-id"
-graphClient.OrganizationById(&organizationId).Branding().Patch(options)
+result, err := graphClient.OrganizationById(&organizationId).Branding().Patch(options)
 
 
 ```

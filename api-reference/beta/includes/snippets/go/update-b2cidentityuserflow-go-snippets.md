@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 367a4d7e77c31bb3b59c676b066a442e794d7e9a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: adfb277f22ae8467a55598aacdc2e1c0259397c2
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62138285"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63416389"
 ---
 ```go
 
@@ -21,7 +21,7 @@ options := &msgraphsdk.B2cIdentityUserFlowRequestBuilderPatchOptions{
     Body: requestBody,
 }
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).Patch(options)
+result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).Patch(options)
 
 
 ```
