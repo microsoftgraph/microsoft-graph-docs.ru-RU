@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 24de669f9744d503c0e16fc1633394c5cae91cbf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 012e3df6b36dedadcab968399ba3430663862543
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097309"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63332702"
 ---
 # <a name="get-application"></a>Получение объекта application
 
@@ -47,7 +47,7 @@ GET /applications/{id}
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -169,7 +169,8 @@ Content-type: application/json
             "enableIdTokenIssuance": false,
             "enableAccessTokenIssuance": false
         }
-    }
+    },
+    "windows": null
 }
 ```
 
