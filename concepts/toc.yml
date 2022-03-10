@@ -208,7 +208,7 @@ items:
       - name: Запись клиентов (предварительная версия)
         href: booking-concept-overview.md
         displayName: 'Bookings, Microsoft Bookings'
-      - name: Устройства и приложения
+      - name: Управление устройствами и приложениями
         expanded: true
         items:
           - name: Облачная печать
@@ -285,7 +285,7 @@ items:
             items:
               - name: Управление настраиваемыми атрибутами безопасности (предварительная версия)
                 href: custom-security-attributes-examples.md
-              - name: Используйте PIM для назначения ролей Azure AD
+              - name: Назначение ролей Azure AD с помощью PIM
                 href: tutorial-assign-azureadroles.md
           - name: Удостоверение и вход
             items:
@@ -305,13 +305,13 @@ items:
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Просмотр доступа для гостевых пользователей
                     href: tutorial-accessreviews-M365group.md
-                  - name: Просмотр доступа к привилегированным ролям в организации
+                  - name: Просмотр доступа к привилегированным ролям
                     href: tutorial-accessreviews-roleassignments.md
                   - name: Настройка области
                     href: accessreviews-scope-concept.md
                   - name: Назначение проверяющих
                     href: accessreviews-reviewers-concept.md
-              - name: Используйте PIM для назначения ролей Azure AD
+              - name: Назначение ролей Azure AD с помощью PIM
                 href: tutorial-assign-azureadroles.md
       - name: Почта
         displayName: 'Outlook, Outlook mail'
@@ -435,9 +435,9 @@ items:
             href: search-concept-custom-types.md
           - name: Поиск людей (предварительная версия)
             href: search-concept-person.md
-          - name: Управление ответами администратора на поиск (предварительная версия)
+          - name: Управление поиском ответов администратора (предварительная версия)
             href: search-concept-answers.md
-          - name: Управление макетом результатов поиска (предварительная версия)
+          - name: Управление структурой результатов поиска (предварительная версия)
             href: search-concept-display-layout.md
           - name: Уточнение результатов поиска
             href: search-concept-aggregation.md
@@ -492,6 +492,8 @@ items:
                 href: teams-activity-feed-notifications-best-practices.md
           - name: Подписка на уведомления об изменениях
             href: teams-change-notification-in-microsoft-teams-overview.md
+          - name: Получение уведомлений об изменениях для онлайн-собраний
+            href: changenotifications-for-onlinemeeting.md
           - name: Системные сообщения
             href: system-messages.md
       - name: Задачи To-Do
@@ -578,7 +580,7 @@ items:
                 href: change-notifications-delivery.md
               - name: Уведомления об изменениях облачной печати
                 href: universal-print-webhook-notifications.md
-              - name: Изменение уведомлений в Microsoft Teams
+              - name: Уведомления об изменениях для Microsoft Teams
                 items:
                   - name: Обзор
                     href: teams-change-notification-in-microsoft-teams-overview.md
@@ -592,7 +594,7 @@ items:
                     href: teams-changenotifications-chat.md
                   - name: Участие в чате
                     href: teams-changenotifications-chatMembership.md
-              - name: Изменение уведомлений для ресурсов Outlook
+              - name: Уведомления об изменениях для ресурсов Outlook
                 href: outlook-change-notifications-overview.md
           - name: Отслеживание изменений
             displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
