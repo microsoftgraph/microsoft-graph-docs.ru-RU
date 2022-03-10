@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: e6982052065412a3ae79a99784d935ebb63a09b0
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: eedfdb613483c099216887bda1a86f18b780082b
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335033"
+ms.locfileid: "63368226"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -101,7 +101,7 @@ ms.locfileid: "63335033"
 |id|Строка|Уникальный идентификатор субъекта-службы. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение NULL не допускается. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `in`).|
 | info | [informationalUrl](informationalurl.md) | Базовые данные профиля для полученного приложения, такие как URL-адреса маркетинга, поддержки, условий обслуживания и заявления о конфиденциальности. Условия обслуживания и заявление о конфиденциальности отображаются в окне запроса согласия пользователя. Дополнительные сведения см. в статье [Добавление условий обслуживания и заявления о конфиденциальности для зарегистрированных приложений Azure AD](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le` и `eq` для значений `null`).  |
 |keyCredentials|Коллекция [keyCredential](keycredential.md)|Коллекция ключевых учетных данных, связанных с субъектом-службой. Значение NULL не допускается. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`).            |
-|loginUrl|Строка|Указывает URL-адрес, по которому поставщик услуг перенаправляет пользователя в Azure AD для проверки подлинности. Azure AD использует этот URL-адрес для запуска приложения из Microsoft 365 или из раздела "Мои приложения" в Azure AD. Если оставить пустое значение, Azure AD осуществляет вход на основе IdP для приложений, для которых настроен [единый вход на базе SAML](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). Пользователь запускает приложение из Microsoft 365, из раздела "Мои приложения" в Azure AD или по URL-адресу единого входа Azure AD.|
+|loginUrl|String|Указывает URL-адрес, по которому поставщик услуг перенаправляет пользователя в Azure AD для проверки подлинности. Azure AD использует этот URL-адрес для запуска приложения из Microsoft 365 или из раздела "Мои приложения" в Azure AD. Если оставить пустое значение, Azure AD осуществляет вход на основе IdP для приложений, для которых настроен [единый вход на базе SAML](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). Пользователь запускает приложение из Microsoft 365, из раздела "Мои приложения" в Azure AD или по URL-адресу единого входа Azure AD.|
 |logoutUrl|String| Указывает URL-адрес, используемый службой проверки подлинности корпорации Майкрософт для выхода пользователя с помощью [основного канала](https://openid.net/specs/openid-connect-frontchannel-1_0.html) OpenId Connect, [обратного канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколов выхода SAML.|
 |notes|String|Поле с произвольным текстом для записи сведений о субъекте-службе, обычно используемых в рабочих целях. Максимальная длина: 1024 символа.|
 |notificationEmailAddresses|Коллекция строк|Указывает список адресов электронной почты, по которым Azure AD отправляет уведомление, когда приближается срок окончания действия активного сертификата. Используется только для сертификатов, с помощью которых подписан маркер SAML, выпущенный для приложений коллекции Azure AD.|
@@ -109,6 +109,7 @@ ms.locfileid: "63335033"
 | passwordCredentials | Коллекция [passwordCredential](passwordcredential.md)|Коллекция ключевых учетных данных, связанных с приложением. Значение NULL не допускается.|
 |preferredSingleSignOnMode|Строка|Указывает режим единого входа, настроенный для этого приложения. Azure AD использует предпочитаемый режим единого входа для запуска этого приложения из Microsoft 365 или из раздела "Мои приложения" Azure AD. Поддерживаемые значения: `password`, `saml`, `notSupported` и `oidc`.|
 |replyUrls|Коллекция String|URL-адреса, по которым отправляются маркеры пользователей для входа с помощью связанного приложения, или URI перенаправления, по которым отправляются коды авторизации OAuth 2.0 и маркеры доступа для связанного приложения. Значение NULL не допускается. |
+|resourceSpecificApplicationPermissions|Коллекция [resourceSpecificPermission](../resources/resourcespecificpermission.md)|Разрешения приложения для конкретных ресурсов, предоставляемых этим приложением. В настоящее время разрешения для конкретных ресурсов поддерживаются только для [приложений Teams, получающих доступ к определенным чатам и командам](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) с помощью Microsoft Graph. Только для чтения.|
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|Коллекция для параметров, связанных с единым входом SAML.|
 |ServicePrincipalNames|Коллекция объектов string|Содержит список объектов **identifiersUris**, скопированных из связанного объекта [application](application.md). К гибридным приложениям можно добавить дополнительные значения. С помощью этих значений можно идентифицировать разрешения, предоставленные этим приложением в Azure AD. Пример.<ul><li>Клиентские приложения могут указывать URI ресурса, основанный на значениях этого свойства, чтобы получать маркер доступа, который представляет собой URI, возвращенный в запросе "aud".</li></ul><br>Для выражений фильтра для свойств с несколькими значениями требуется оператор any. Значение NULL не допускается.<br><br> Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 |servicePrincipalType|Строка|Указывает, что представляет субъект-служба: приложение, управляемое удостоверение или устаревшее приложение. Это значение устанавливается внутри Azure AD. Свойству **servicePrincipalType** можно присвоить три различных значения: <ul><li>__Application__ — субъект-служба, представляющая приложение или службу. Свойство **appId** определяет связанную регистрацию приложения и соответствует параметру **appId** объекта [application](application.md), возможно, из другого клиента. Если связанная регистрация приложения отсутствует, для субъекта-службы маркеры не выпускаются.</li><li>__ManagedIdentity__ — субъект-служба, представляющая [управляемое удостоверение](/azure/active-directory/managed-identities-azure-resources/overview). Субъектам-службам, представляющим управляемые удостоверения, можно предоставлять доступ и разрешения, но их нельзя обновить или изменить напрямую.</li><li>__Legacy__ — субъект-служба, представляющая приложение, созданное до регистрации приложений или с помощью устаревших возможностей. Устаревшим субъектом-службой могут быть учетные данные, имена субъектов-служб, URL-адреса ответов и другие свойства, которые могут изменяться авторизованным пользователем, но у которых нет связанной регистрации приложения. Значение **appId** не связывает субъект-службу с регистрацией приложения. Субъект-службу можно использовать только в том клиенте, где он был создан.</li><li>__SocialIdp__ — для внутреннего использования. </ul>|
@@ -173,6 +174,7 @@ ms.locfileid: "63335033"
   "oauth2PermissionScopes": [{"@odata.type": "microsoft.graph.permissionScope"}],
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
   "replyUrls": ["String"],
+  "resourceSpecificApplicationPermissions": [{"@odata.type": "microsoft.graph.resourceSpecificPermission"}],
   "servicePrincipalNames": ["String"],
   "servicePrincipalType": "String",
   "tags": ["String"],
