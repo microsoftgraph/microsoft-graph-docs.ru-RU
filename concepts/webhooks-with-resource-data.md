@@ -4,12 +4,12 @@ description: Microsoft Graph использует механизм веб-пер
 author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
-ms.openlocfilehash: d13db88f179bbce58a6d45fa567b507199fa95f8
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 3cb94fcc4ba55447646e31635a0e9a68a9b8d1a2
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337063"
+ms.locfileid: "63368184"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>Настройка уведомлений об изменениях, включающих данные ресурсов
 
@@ -32,7 +32,7 @@ Microsoft Graph позволяет приложениям подписывать
 
 ## <a name="supported-resources"></a>Поддерживаемые ресурсы
 
-Ресурсы Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) и [presence](/graph/api/resources/presence) поддерживают уведомления об изменениях данных ресурсов. Ресурсы Outlook [contact](/graph/api/resources/contact.md), [event](/graph/api/resources/event.md), [message](/graph/api/resources/message.md) имеют аналогичную поддержку _в предварительной версии_. В частности, можно настроить подписку для вариантов использования, перечисленных ниже.
+Ресурсы Microsoft Teams [chatMessage](/graph/api/resources/chatmessage), [onlineMeetings](/graph/api/resources/onlinemeeting) и [presence](/graph/api/resources/presence) поддерживают уведомления об изменениях данных ресурсов. Ресурсы Outlook [contact](/graph/api/resources/contact.md), [event](/graph/api/resources/event.md) и [message](/graph/api/resources/message.md) имеют аналогичную поддержку _в предварительной версии_. В частности, вы можете настроить подписку для вариантов использования, перечисленных ниже.
 
 Доступно в конечных точках v1.0 и бета-версии:
 - Новые или измененные сообщения в определенном канале Teams: `/teams/{id}/channels/{id}/messages`
@@ -47,12 +47,13 @@ Microsoft Graph позволяет приложениям подписывать
 - Новые или измененные события в почтовом ящике пользователя: `/users/{id}/events`
 - Новые или измененные сообщения в почтовом ящике пользователя: `/users/{id}/messages`
 - Новые или измененные сообщения в mailFolder пользователя: `/users/{id}/mailFolders/{id}/messages`
+- Обновления сведений о состоянии собрания Teams:`/communications/onlineMeetings/{meeting-id}`
 
-Уведомления об изменениях, которые включают данные ресурса **chatMessage** или **presence**, содержат все свойства измененного экземпляра. Они не поддерживают возвращение только выбранных свойств экземпляра. 
+Уведомления об изменениях, которые включают данные ресурса **chatMessage**, **onlineMeeting** или **presence**, содержат все свойства измененного экземпляра. Они не поддерживают возвращение только выбранных свойств экземпляра. 
 
 Уведомления об изменениях для ресурсов **contact**, **event** или **message** включают только подмножество свойств ресурса, которые должны быть указаны в соответствующем запросе на подписку с помощью параметра запроса `$select`. Дополнительные сведения и пример подписки на уведомления об изменениях с данными ресурса для ресурса **message** см. в статье [Изменение уведомлений для ресурсов Outlook в Microsoft Graph](outlook-change-notifications-overview.md). 
 
-В оставшейся части этой статьи рассматривается пример подписки на уведомления об изменениях для ресурсов **chatMessage** в канале Teams, при этом каждое уведомление об изменении включает полные данные ресурса измененного экземпляра **chatMessage**. Дополнительные сведения о подписках на основе объекта **chatMessage** см. в статье [Получение уведомлений об изменениях для сообщений чатов и каналов](teams-changenotifications-chatmessage.md).
+В оставшейся части этой статьи рассматривается пример подписки на уведомления об изменениях для ресурсов **chatMessage** в канале Teams, при этом каждое уведомление об изменении включает полные данные ресурса измененного экземпляра **chatMessage**. Дополнительные сведения о подписках на основе объекта **chatMessage** см. в статье [Получение уведомлений об изменениях сообщений чатов и каналов](teams-changenotifications-chatmessage.md).
 
 ## <a name="creating-a-subscription"></a>Создание подписки
 
