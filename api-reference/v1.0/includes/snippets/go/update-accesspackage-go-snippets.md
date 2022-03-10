@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 98fae05166422e52044419de3701677a4306cbb8
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 1bddea4c7a9fe8fd84baac63ce0fcf032b501169
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61334962"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63417107"
 ---
 ```go
 
@@ -19,7 +19,7 @@ options := &msgraphsdk.AccessPackageRequestBuilderPatchOptions{
     Body: requestBody,
 }
 accessPackageId := "accessPackage-id"
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).Patch(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).Patch(options)
 
 
 ```

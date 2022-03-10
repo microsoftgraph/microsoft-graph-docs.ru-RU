@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: e7af02f1e0be9f586d89389cddc6b94d42987de9
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: a86378167c5c8878d41c2869f85d60dd6386ca93
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61094666"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63416566"
 ---
 ```go
 
@@ -21,7 +21,7 @@ options := &msgraphsdk.UploadClientCertificateRequestBuilderPostOptions{
     Body: requestBody,
 }
 identityApiConnectorId := "identityApiConnector-id"
-result, err := graphClient.Identity().ApiConnectorsById(&identityApiConnectorId).UploadClientCertificate().Post(options)
+result, err := graphClient.Identity().ApiConnectorsById(&identityApiConnectorId).UploadClientCertificate(identityApiConnector-id).Post(options)
 
 
 ```

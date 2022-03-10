@@ -4,19 +4,30 @@ description: Чтобы ограничить область разрешений
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: applications
-ms.openlocfilehash: 22a0c5e2bcd257346746c2b4fc72eae9d28ba573
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 03a0edde1a3e21455200049bf51bf1867e1a0657
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241592"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335894"
 ---
 # <a name="limiting-application-permissions-to-specific-exchange-online-mailboxes"></a>Ограничение разрешений для приложений с указанием определенных почтовых ящиков Exchange Online 
 
 Администраторы, которые хотят ограничить доступ приложения определенными почтовыми ящиками, могут создать политику доступа приложений с помощью командлета PowerShell **New-ApplicationAccessPolicy**. В этой статье описаны основные действия по настройке управления доступом. Эти инструкции относятся к ресурсам Exchange Online и не относятся к другим рабочим нагрузкам Microsoft Graph. 
 
 ## <a name="background"></a>Общие сведения
-Некоторые приложения вызывают Microsoft Graph от своего имени, а не от имени пользователя. Обычно это фоновые службы и управляющие программы, которые работают на сервере без выполнившего вход пользователя. В таких приложениях используется [поток предоставления учетных данных клиента OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow), обеспечивающий проверку подлинности, и заданы настройки разрешений для приложений, которые по умолчанию позволяют таким приложениям получать доступ ко _всем_ почтовым ящикам организации в Exchange Online. Например с помощью разрешения для приложения `Mail.Read` приложения могут считывать почту во всех почтовых ящиках без необходимости входа пользователя. 
+Некоторые приложения вызывают Microsoft Graph от своего имени, а не от имени пользователя. Обычно это фоновые службы и управляющие программы, которые работают на сервере без выполнившего вход пользователя. В таких приложениях используется [поток предоставления учетных данных клиента OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow), обеспечивающий проверку подлинности, и заданы настройки разрешений для приложений, которые по умолчанию позволяют таким приложениям получать доступ ко _всем_ почтовым ящикам организации в Exchange Online. Например с помощью разрешения для приложения `Mail.Read` приложения могут считывать почту во всех почтовых ящиках без необходимости входа пользователя.
+
+> [!IMPORTANT]
+> 
+> По умолчанию приложениям, которым предоставлены разрешения приложений для указанных ниже наборов данных, доступны все почтовые ящики в организации.
+> 
+> - [Календари](permissions-reference.md#calendars-permissions)
+> - [Контакты](permissions-reference.md#contacts-permissions)
+> - [Почта](permissions-reference.md#mail-permissions)
+> - [Параметры почтового ящика](permissions-reference.md#mail-permissions)
+> 
+>Администраторы могут настроить [политику доступа приложения](#configure-applicationaccesspolicy), чтобы ограничить его доступ _определенными_ почтовыми ящиками.
 
 Существуют сценарии, в которых администраторам может потребоваться разрешить приложению доступ только к определенным почтовым ящикам, а _не ко всем_ почтовым ящикам Exchange Online в организации. Администраторы могут определить набор почтовых ящиков для разрешения доступа, поместив их в группу безопасности с поддержкой почты. Затем администраторы могут ограничить доступ сторонних приложений только этим набором почтовых ящиков, создав политику доступа приложений для доступа к этой группе.
 
@@ -25,7 +36,7 @@ ms.locfileid: "61241592"
 ## <a name="configure-applicationaccesspolicy"></a>Настройка ApplicationAccessPolicy
 
 Чтобы настроить политику доступа приложения и ограничить область разрешений для приложения, выполните указанные ниже действия.
-1.  Подключитесь к Exchange Online PowerShell. Подробнее см. статью [Подключение к Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps&preserve-view=true).
+1.  Подключитесь к Exchange Online PowerShell. Подробности см. в статье [Подключение к Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps&preserve-view=true).
 
 2.  Определите идентификатор клиента приложения и группу безопасности с поддержкой электронной почты, чтобы ограничить доступ приложения.
 

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: e9e0b6c1c1e79ab6af0dc9cd67afec066844b3e4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 50248f9a1edbd3fa1ea054a05e7e6b3410180362
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139291"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335880"
 ---
 <!---<author of this doc: rsamai>--->
 
@@ -72,8 +72,8 @@ ms.locfileid: "59139291"
 - [Создание подключения](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) с уникальным идентификатором, отображаемым именем и описанием.
 - [Зарегистрируйте схему](/graph/api/externalconnection-post-schema?view=graph-rest-beta&preserve-view=true), чтобы определить поля, которые будут включены в индекс.
 
-> [!IMPORTANT]
-> После регистрации схемы ее невозможно изменить для существующего подключения.
+> [!NOTE]
+> Сведения об обновлении схемы для существующего подключения см. в статье [Возможности обновления схемы](/graph/connecting-external-content-manage-schema#schema-update-capabilities).
 
 ## <a name="update-a-connection"></a>Обновление подключения
 
@@ -85,7 +85,7 @@ ms.locfileid: "59139291"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Регистрация схемы подключения](./connecting-external-content-manage-schema.md)
+- [Регистрация схемы подключения](/graph/connecting-external-content-manage-schema.md)
 - [Обзор справочника API соединителей Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Обзор соединителей Microsoft Graph](/microsoftsearch/connectors-overview)
 - Скачайте [образец соединителя поиска](https://github.com/microsoftgraph/msgraph-search-connector-sample) с сайта GitHub.

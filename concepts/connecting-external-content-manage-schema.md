@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: c9a90807ae45184d6ae86d9ca9a5a6f9161f38b5
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 77a233c41a09af0e5ec305b29ba25f19805c27bc
+ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266179"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63335572"
 ---
 <!---<author of this doc: rsamai>--->
 
@@ -73,11 +73,12 @@ ms.locfileid: "61266179"
 
 ### <a name="refinable"></a>Возможность уточнения
 
-Если свойство поддерживает уточнение, администратор может настроить его в качестве пользовательского фильтра на странице результатов Поиска (Майкрософт).
+Если свойство поддерживает уточнение, администратор может настроить его в качестве пользовательского фильтра на странице результатов Поиска (Майкрософт). Свойство `refinable` не может иметь значение `searchable`.
 
 ![Уточнение результатов по тегам, свойство с возможностью уточнения](./images/connectors-images/connecting-external-content-manage-schema-5.svg)
 
 *Уточнение результатов по `tags`, свойство с возможностью уточнения.*
+
 
 ## <a name="semantic-labels"></a>Семантические метки
 

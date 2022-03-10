@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: ce0ac8a28f0a1f3bb79130af878721aac8343bd6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9437f1c3e8f660df5383a78dbec91e1485eab62b
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127403"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63417119"
 ---
 ```go
 
@@ -19,7 +19,7 @@ options := &msgraphsdk.MailFolderRequestBuilderPatchOptions{
     Body: requestBody,
 }
 mailFolderId := "mailFolder-id"
-graphClient.Me().MailFoldersById(&mailFolderId).Patch(options)
+result, err := graphClient.Me().MailFoldersById(&mailFolderId).Patch(options)
 
 
 ```
