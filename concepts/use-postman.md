@@ -3,12 +3,12 @@ title: Использование Postman с API Microsoft Graph
 description: Используйте коллекцию Microsoft Graph Postman, чтобы начать работу с API Microsoft Graph в считанные минуты.
 author: jasonjoh
 ms.localizationpriority: high
-ms.openlocfilehash: 75adbacc5339fc28ad741915cf287d9c458d8615
-ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
+ms.openlocfilehash: ef4b7a6c990ce831b9f2a7ac10b9d828eded9c13
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "60270336"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368261"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>Использование Postman с API Microsoft Graph
 
@@ -47,7 +47,8 @@ ms.locfileid: "60270336"
 1. В меню слева выберите **Регистрация приложений**.
 1. В горизонтальном меню выберите **Новая регистрация**.
 1. В качестве **имени приложения** укажите `Postman`.
-1. Присвойте параметру **URI перенаправления** значение `https://oauth.pstmn.io/v1/browser-callback`.
+1. В раскрывающемся меню выберите **Веб**. 
+1. Присвойте параметру **URI перенаправления** значение `https://oauth.pstmn.io/v1/callback`.
 1. Нажмите **Зарегистрировать**.
 1. В меню слева выберите **Проверка подлинности**.
 1. В разделе **URI перенаправления** выберите **Добавить URI**. Установите значение `https://app.getpostman.com/oauth2/callback`, а затем нажмите **Сохранить**.

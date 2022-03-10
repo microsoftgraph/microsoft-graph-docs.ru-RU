@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5630f5888be3a7c84d2075907231c3d73fc29cb5
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: d78005e99e4eb585eb326a4dc225c8ab3b83cfb1
+ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894777"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63367946"
 ---
 # <a name="get-serviceprincipal"></a>Получение объекта servicePrincipal
 
@@ -39,8 +39,7 @@ GET /servicePrincipals/{id}
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
-По умолчанию этот API не возвращает значение открытого ключа **key** в свойстве **keyCredentials**, если в запросе `$select` не указан параметр **keyCredentials**.
-Например, `$select=id,appId,keyCredentials`.
+По умолчанию этот API не возвращает значение открытого ключа **key** в свойстве **keyCredentials**, если в запросе `$select` не указан параметр **keyCredentials**. Например, `$select=id,appId,keyCredentials`.
 
 При использовании `$select` с целью получения **keyCredentials** для субъектов-служб применяется ограничение регулирования в количестве 150 запросов в минуту для каждого клиента.
 
@@ -143,6 +142,7 @@ Content-type: application/json
   "passwordCredentials": [],
   "publisherName": null,
   "replyUrls": [],
+  "resourceSpecificApplicationPermissions": [],
   "servicePrincipalNames": [],
   "servicePrincipalType": null,
   "signInAudience": "AzureADandPersonalMicrosoftAccount",
