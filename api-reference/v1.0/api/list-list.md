@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: Получение коллекции списков для сайта.
 doc_type: apiPageType
-ms.openlocfilehash: 7011a7e8c3ac04676635dcc914d1848beadbdf0b
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: 17461e819195e2609bacd48bc7a5d80f5d895438
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262209"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63396842"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Перечисление списков на сайте
 
@@ -20,10 +20,6 @@ ms.locfileid: "62262209"
 
 По умолчанию ресурсы list с аспектом [system][] скрыты.
 Чтобы перечислить их, включите `system` в оператор `$select`.
-
-[system]: ../resources/systemfacet.md
-[списков]: ../resources/list.md
-[сайта]: ../resources/site.md
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,9 +37,25 @@ ms.locfileid: "62262209"
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
+## <a name="request-headers"></a>Заголовки запросов
+
+| Имя          | Описание               |
+| :------------ | :------------------------ |
+| Авторизация | Bearer {token}. Обязательный. |
+
+## <a name="request-body"></a>Текст запроса
+
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик
+
+При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [list][] в тексте отклика. 
+
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -81,6 +93,8 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 ### <a name="response"></a>Отклик
 
+Ниже приведен пример ответа.
+
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
 ```http
@@ -112,6 +126,11 @@ Content-type: application/json
   ]
 }
 ```
+
+[system]: ../resources/systemfacet.md
+[list]: ../resources/list.md
+[списков]: ../resources/list.md
+[сайта]: ../resources/site.md
 
 <!-- {
   "type": "#page.annotation",
