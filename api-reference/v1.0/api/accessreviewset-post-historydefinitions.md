@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 660a9e24980694688e0db5799ec58bed175af3e1
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 7533b52e58f7229043bf9e6132ca02d36d7acc29
+ms.sourcegitcommit: 1ae0079021dfcbcc910dcdc74440d367ec4af7d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337846"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63460135"
 ---
 # <a name="create-historydefinitions"></a>Создание historyDefinitions
 
@@ -56,10 +56,10 @@ POST /identityGovernance/accessReviews/historyDefinitions
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName | String  | Имя для сбора данных истории проверки доступа. Обязательный элемент. |
+|displayName | String  | Имя для сбора данных истории проверки доступа. Обязательный. |
 |reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp. Отзывы, начиная с этой даты или после нее, будут включены в извлеченные данные истории. Только если **расписаниеSettings** не определено.  |
 |reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Timestamp. Обзоры, начиная с этой даты или до этой даты, будут включены в извлеченные данные истории. Только если **расписаниеSettings** не определено.  |
-|scopes|[accessReviewQueryScope](../resources/accessreviewqueryscope.md) collection| Используется для фильтрации отзывов, включенных в извлеченные данные истории. Извлекает отзывы, область которых совпадает с этой предоставленной областью. Обязательный элемент. <br> Дополнительные возможности см [. в разделах Поддерживаемые запросы области для accessReviewHistoryDefinition](#supported-scope-queries-for-accessreviewhistorydefinition). |
+|scopes|[accessReviewQueryScope](../resources/accessreviewqueryscope.md) collection| Используется для фильтрации отзывов, включенных в извлеченные данные истории. Извлекает отзывы, область которых совпадает с этой предоставленной областью. Обязательный. <br> Дополнительные возможности см [. в разделах Поддерживаемые запросы области для accessReviewHistoryDefinition](#supported-scope-queries-for-accessreviewhistorydefinition). |
 | scheduleSettings  |[accessReviewHistoryScheduleSettings](../resources/accessReviewHistoryScheduleSettings.md)| Параметры для серии определений истории повторного просмотра доступа. Только если не определены **reviewHistoryPeriodStartDateTime** или **reviewHistoryPeriodEndDateTime** .|
 
 ### <a name="supported-scope-queries-for-accessreviewhistorydefinition"></a>Поддерживаемые запросы области для accessReviewHistoryDefinition
@@ -89,8 +89,6 @@ POST /identityGovernance/accessReviews/historyDefinitions
 В следующем примере показано, как создать определение истории доступа для доступа к отзывам по пакетам и группам доступа, которое будет работать между датой начала 01/01/2021 и датой окончания 04/05/2021.
 
 ### <a name="request"></a>Запрос
-
-# <a name="http"></a>[HTTP](#tab/http)
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

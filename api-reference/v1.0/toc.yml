@@ -3341,34 +3341,6 @@ items:
                         href: api/intune-auditing-devicemanagement-get.md
                       - name: Обновление
                         href: api/intune-auditing-devicemanagement-update.md
-                  - name: Управление устройствами
-                    href: resources/intune-auditing-devicemanagement.md
-                    items:
-                      - name: Получение
-                        href: api/intune-auditing-devicemanagement-get.md
-                      - name: Обновление
-                        href: api/intune-auditing-devicemanagement-update.md
-                  - name: Управление устройствами
-                    href: resources/intune-auditing-devicemanagement.md
-                    items:
-                      - name: Получение
-                        href: api/intune-auditing-devicemanagement-get.md
-                      - name: Обновление
-                        href: api/intune-auditing-devicemanagement-update.md
-                  - name: Управление устройствами
-                    href: resources/intune-auditing-devicemanagement.md
-                    items:
-                      - name: Получение
-                        href: api/intune-auditing-devicemanagement-get.md
-                      - name: Обновление
-                        href: api/intune-auditing-devicemanagement-update.md
-                  - name: Управление устройствами
-                    href: resources/intune-auditing-devicemanagement.md
-                    items:
-                      - name: Получение
-                        href: api/intune-auditing-devicemanagement-get.md
-                      - name: Обновление
-                        href: api/intune-auditing-devicemanagement-update.md
                   - name: Состояние доступа к Exchange для управления устройствами
                     href: resources/intune-devices-devicemanagementexchangeaccessstate.md
                   - name: Причина состояния доступа к Exchange для управления устройствами

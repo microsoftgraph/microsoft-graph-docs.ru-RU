@@ -3,12 +3,12 @@ title: Установка SDK Graph Microsoft Graph
 description: Содержит инструкции по установке C#, Java, Javascript, Objective-C, PHP и Ruby Microsoft Graph SDKs.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: a545f0b3783b19fd23c86bd94a6a356d5767eab3
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 1133e8f4cd1d0690c5a8ff6ef818c29294b3d2ee
+ms.sourcegitcommit: 1ae0079021dfcbcc910dcdc74440d367ec4af7d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331778"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63460128"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>Установка SDKs Graph Microsoft
 
@@ -39,9 +39,9 @@ SDK Graph Microsoft Graph включен в следующие пакеты:
 - [Microsoft Graph SDK для go](https://github.com/microsoftgraph/msgraph-sdk-go-core) — основная библиотека для звонков в Microsoft Graph.
 
 ```Shell
-go get -u github.com/microsoftgraph/msgraph-sdk-go
-go get -u github.com/Azure/azure-sdk-for-go/sdk/azidentity
-go get -u github.com/microsoft/kiota/authentication/go/azure
+go get github.com/microsoftgraph/msgraph-sdk-go
+go get github.com/Azure/azure-sdk-for-go/sdk/azidentity
+go get github.com/microsoft/kiota/authentication/go/azure
 ```
 
 ## <a name="install-the-microsoft-graph-java-sdk"></a>Установка microsoft Graph Java SDK
