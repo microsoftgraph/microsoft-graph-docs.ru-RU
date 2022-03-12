@@ -5,19 +5,19 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d1e09db9d4976521c67138a2c510604ae3b2c699
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 84128000fb785e9d5d572de5e81b8d0b8d71b308
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114179"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451384"
 ---
 # <a name="list-basetasks"></a>Список baseTasks
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите ресурсы [baseTask](../resources/basetask.md) из свойства навигации задач определенной [базыTaskList.](../resources/basetasklist.md)
+Получите ресурсы [baseTask](../resources/basetask.md) из свойства навигации задач определенной [базыTaskList](../resources/basetasklist.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,19 +40,19 @@ GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$expand` параметры `$filter` `$top` [запроса OData](/graph/query-parameters) для настройки ответа.  
+Этот метод поддерживает `$expand`параметры `$filter` `$top`  [запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов baseTask](../resources/basetask.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию [объектов baseTask](../resources/basetask.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -115,10 +115,7 @@ Content-Type: application/json
             "createdDateTime": "2021-11-17T06:58:32.4882235Z",
             "lastModifiedDateTime": "2021-11-17T07:02:49.1697427Z",
             "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC",
-            "body": {
-                "content": "",
-                "contentType": "text"
-            },
+            "textBody":  "",
             "parentList": {
                 "id": "AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNm"
             }

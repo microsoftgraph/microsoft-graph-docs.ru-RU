@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: raprakasMSFT
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e1b507c29b71a5591fa4bbae02ccc8fe033e613a
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 1107019aeb27ed444d34c4cddbd7c7e023876da6
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651535"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450991"
 ---
 # <a name="list-agreementacceptances"></a>Перечисление agreementAcceptances
 
 Пространство имен: microsoft.graph
 
-Извлечение списка объектов [agreementAcceptance пользователя.](../resources/agreementacceptance.md)
+Извлечение объектов пользовательского [соглашения, подписанных пользователем](../resources/agreementacceptance.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -30,6 +30,9 @@ ms.locfileid: "61651535"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/agreementAcceptances
+
+# where the id or userPrincipalName is the signed-in user's
+
 GET /users/{id | userPrincipalName}/agreementAcceptances
 ```
 
@@ -39,12 +42,12 @@ GET /users/{id | userPrincipalName}/agreementAcceptances
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов agreementAcceptance](../resources/agreementacceptance.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию [объектов agreementAcceptance](../resources/agreementacceptance.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 
@@ -56,8 +59,6 @@ GET /users/{id | userPrincipalName}/agreementAcceptances
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/agreementAcceptances
-
-GET https://graph.microsoft.com/v1.0/users/f2f4f8e9-c99d-4c73-b990-34f81fbf7fcf/agreementAcceptances
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreementacceptances-csharp-snippets.md)]
@@ -87,16 +88,25 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "agreementId": "093b947f-8363-4979-a47d-4c52b33ee1be",
-      "userId": "f2f4f8e9-c99d-4c73-b990-34f81fbf7fcf",
-      "agreementFileId": "f2f4f8e9-c99d-4c73-b990-34f81fbf7fcf",
-      "recordedDateTime": "2021-03-10T00:39:56.0523527Z",
-      "userDisplayName": "Test_User",
-      "userPrincipalName": "Test_User@TestTenant.onmicrosoft.com"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#agreementAcceptances",
+    "value": [
+        {
+            "id": "94410bbf-3d3e-4683-8149-f034e55c39dd_d4bb5206-77bf-4d5c-96b4-cf7b0ed3be98",
+            "agreementId": "94410bbf-3d3e-4683-8149-f034e55c39dd",
+            "userId": "d4bb5206-77bf-4d5c-96b4-cf7b0ed3be98",
+            "deviceId": "00000000-0000-0000-0000-000000000000",
+            "deviceDisplayName": null,
+            "deviceOSType": null,
+            "deviceOSVersion": null,
+            "agreementFileId": "08033369-8972-42a3-8533-90bbd2757a01",
+            "userDisplayName": "Megan Bowen",
+            "userPrincipalName": "MeganB@M365x43961174.OnMicrosoft.com",
+            "userEmail": "MeganB@M365x43961174.OnMicrosoft.com",
+            "recordedDateTime": "2022-03-04T14:11:22.6658376Z",
+            "expirationDateTime": null,
+            "state": "accepted"
+        }
+    ]
 }
 ```
 

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 4af8059856172ab15a44e20aa1b8dbc5374c195e
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 64454a7004946d354e83467d94aa5148438791e6
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336349"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451461"
 ---
 # <a name="usersettings-resource-type"></a>Тип ресурса userSettings
 
@@ -45,7 +45,7 @@ ms.locfileid: "63336349"
   - Определение того, включено ли предложение об объединении дублирующих контактов для пользователя.
   - Отключение или включение предложения об объединении дублирующих контактов для пользователя.
 
-Сведения о получении и обновлении параметров пользователя см. в статьях [Получение параметров](../api/usersettings-get.md) и [Обновление параметров](../api/usersettings-update.md).
+Наследует [от сущности](entity.md). Сведения о получении и обновлении параметров пользователя см. в статьях [Получение параметров](../api/usersettings-get.md) и [Обновление параметров](../api/usersettings-update.md).
 
 > [!NOTE]
 > Эта конечная точка работает только с [пользовательским ресурсом](user.md) . 
@@ -62,6 +62,7 @@ ms.locfileid: "63336349"
 |:---------------|:--------|:----------|
 |contributionToContentDiscoveryDisabled|Логический|Если задано значение true, документы в Office Delve пользователя отключены. Пользователи могут управлять этим параметром в [Office Delve](https://support.office.com/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
 |contributionToContentDiscoveryAsOrganizationDisabled|Логический|Отражает параметр [уровня Office Delve организации](https://support.office.com/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff). Если задано значение true, у организации отсутствует доступ к Office Delve. Этот параметр доступен только для чтения и может изменяться только администраторами в [Центре администрирования SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
+|id|String|Уникальный идентификатор параметра пользователя. Только для чтения. Наследуется от [сущности](entity.md).|
 
 ## <a name="relationships"></a>Связи
 

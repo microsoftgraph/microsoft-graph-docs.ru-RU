@@ -1,16 +1,16 @@
 ---
 title: тип ресурса agreementAcceptance
-description: Представляет текущее состояние пользователя в пределах настраиваемых условий использования компании с Azure Active Directory (Azure AD).
+description: Представляет текущее состояние пользователя в пределах настраиваемых условий использования компании с Azure Active Directory Azure AD.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 57165e25102b55bad73f43bcdee56baa8e2dd92e
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: fe3d453c7cbd34586bd8db2aaa812cd2a864fa8d
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651311"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451021"
 ---
 # <a name="agreementacceptance-resource-type"></a>тип ресурса agreementAcceptance
 
@@ -21,16 +21,16 @@ ms.locfileid: "61651311"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|agreementFileId|Строка|Идентификатор файла соглашения, принятого пользователем.|
-|agreementId|Строка|Идентификатор соглашения.|
-|deviceDisplayName|String|Отображающее имя устройства, используемого для принятие соглашения.|
-|deviceId|String|Уникальный идентификатор устройства, используемого для принятие соглашения.|
-|deviceOSType|Строка|Операционная система, используемая для принятие соглашения.|
-|deviceOSVersion|String|Версия операционной системы устройства, используемая для принятие соглашения.    |
+|agreementFileId|String|Идентификатор файла соглашения, принятого пользователем.|
+|agreementId|String|Идентификатор соглашения.|
+|deviceDisplayName|String|Отображающее имя устройства, используемого для  принятие соглашения.|
+|deviceId|String|Уникальный идентификатор устройства, используемого для  принятие соглашения.|
+|deviceOSType|String|Операционная система, используемая для  принятие соглашения.|
+|deviceOSVersion|String|Версия операционной системы устройства, используемая для  принятие соглашения.    |
 |expirationDateTime|DateTimeOffset|Срок действия даты принятия. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|id|Строка| Идентификатор принятия соглашения. Только для чтения.|
+|id|String| Идентификатор принятия соглашения. Только для чтения.|
 |recordedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|состояние|string| Состояние принятия соглашения. Возможные значения: `accepted`, `declined`.|
+|состояние|string| Состояние принятия соглашения. Возможные значения: `accepted`, `declined`. Поддерживает `$filter` (`eq`).|
 |userDisplayName|String|Отображение имени пользователя при записи приемки.|
 |userEmail|String|Электронная почта пользователя при записи принятия.|
 |userId|String|Идентификатор пользователя, который принял соглашение.|

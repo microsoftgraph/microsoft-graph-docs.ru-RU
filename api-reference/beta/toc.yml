@@ -300,7 +300,7 @@ items:
             href: resources/calendar.md
             displayName: 'Outlook, Outlook calendar'
             items:
-              - name: Создание
+              - name: Create
                 href: api/user-post-calendars.md
               - name: Создание группы календарей
                 href: api/user-post-calendargroups.md
@@ -470,7 +470,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: примечания;
+          - name: Заметки
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -570,7 +570,7 @@ items:
                 href: api/profile-get.md
               - name: Удаление профиля пользователя
                 href: api/profile-delete.md
-          - name: Командная работа
+          - name: Teamwork
             items:
               - name: Приложение установлено
                 href: resources/teamsappinstallation.md
@@ -614,7 +614,7 @@ items:
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: Группа
+          - name: группа.
             href: resources/group.md
             items:
               - name: Список групп
@@ -2030,7 +2030,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: Прервать
                     href: api/printjob-abort.md
-                  - name: Redirect
+                  - name: Перенаправление
                     href: api/printjob-redirect.md
               - name: Операция печати
                 href: resources/printoperation.md
@@ -12832,7 +12832,7 @@ items:
                         href: api/entitlementmanagementsettings-get.md
                       - name: Обновление
                         href: api/entitlementmanagementsettings-update.md
-              - name: Управление привилегированными пользователями
+              - name: Служба Privileged Identity Management
                 displayName: PIM v2
                 items:
                   - name: Служба Privileged Identity Management
@@ -12957,18 +12957,35 @@ items:
                 items:
                   - name: Соглашение
                     href: resources/agreement.md
+                  - name: Список
+                    href: api/termsofusecontainer-list-agreements.md
                   - name: Создание
                     href: api/termsofusecontainer-post-agreements.md
-                  - name: Перечисление
-                    href: api/termsofusecontainer-list-agreements.md
                   - name: Получение
                     href: api/agreement-get.md
                   - name: Обновление
                     href: api/agreement-update.md
                   - name: Delete
                     href: api/agreement-delete.md
-                  - name: Список состояний принятия
-                    href: api/user-list-agreementacceptances.md
+                  - name: Приемки соглашений
+                    href: resources/agreementacceptance.md
+                    items:
+                      - name: Приемки списков
+                        href: api/user-list-agreementacceptances.md
+                      - name: Список состояний принятия
+                        href: api/agreement-list-acceptances.md
+                  - name: Файлы соглашений
+                    items:
+                      - name: Файл соглашения по умолчанию
+                        href: resources/agreementfile.md
+                      - name: Файлы локализованных соглашений
+                        href: resources/agreementfilelocalization.md
+                      - name: Получить файл по умолчанию
+                        href: api/agreementfile-get.md
+                      - name: Создание локализованных файлов
+                        href: api/agreement-post-files.md
+                      - name: Список локализованных файлов
+                        href: api/agreement-list-files.md
       - name: Почта
         displayName: 'Outlook, Outlook mail'
         items:
@@ -13410,7 +13427,7 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: примечания;
+              - name: Заметки
                 items:
                   - name: Аннотация для человека
                     href: resources/personannotation.md
@@ -14055,7 +14072,7 @@ items:
       - name: Поиск
         displayname: Microsoft Search API
         items:
-          - name: Запрос
+          - name: Query
             items:
               - name: Обзор
                 href: resources/search-api-overview.md
@@ -14473,7 +14490,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Обновление
                     href: api/termstore-store-update.md
-              - name: Группа
+              - name: группа.
                 href: resources/termstore-group.md
                 items:
                   - name: Создание
@@ -14644,7 +14661,7 @@ items:
           - name: Команда
             href: resources/team.md
             items:
-              - name: Создание
+              - name: Create
                 href: api/team-post.md
               - name: Создание команды из группы
                 href: api/team-put-teams.md
@@ -15281,7 +15298,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Контрольный список
+          - name: Элемент контрольного списка
             href: resources/checklistitem.md
             items:
               - name: Список

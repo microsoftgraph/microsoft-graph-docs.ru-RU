@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: e3e09d6de89caa6638e5ce6f163414c5a1b99e30
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 25d24851827b469bf7b6a6d121e1ba92bd79b0b0
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099107"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451370"
 ---
 # <a name="agreementfiledata-resource-type"></a>тип ресурса agreementFileData
 
@@ -19,9 +19,9 @@ ms.locfileid: "59099107"
 Представляет Azure Active Directory (Azure AD) условия файла соглашения об использовании.
 
 ## <a name="properties"></a>Свойства
-| Метод       | Возвращаемый тип | Описание |
+| Свойство       | Тип | Описание |
 |:-------------|:------------|:------------|
-|data|В двоичном формате|Данные, которые представляют условия использования документа PDF. Только для чтения.|
+|data|Binary|Данные, которые представляют условия использования документа PDF. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

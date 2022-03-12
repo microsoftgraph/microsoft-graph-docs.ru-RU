@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 01cca362ac85b10cb4bf141908d2b5dac309c9cd
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 86ec25ee83ae6cd1f30bf8a84b6177f870d39586
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61425153"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451151"
 ---
 # <a name="checklistitem-resource-type"></a>тип ресурса checklistItem
 
@@ -18,27 +18,27 @@ ms.locfileid: "61425153"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет коллекцию элементов контрольного списка для задачи. **ChecklistItem помогает** разделить сложные задачи на более мелкие действия.
+Представляет подзадачу в более крупной [baseTask](./baseTask.md). **ChecklistItem** позволяет разбить сложную задачу на более действий, меньшие задачи. 
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
 |[Контрольные списки спискаItems](../api/basetask-list-checklistitems.md)|[коллекция checklistItem](../resources/checklistitem.md)|Получите список объектов [checklistItem](../resources/checklistitem.md) и их свойств.|
-|[Создание контрольного спискаItem](../api/basetask-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Создайте [новый объект checklistItem.](../resources/checklistitem.md)|
-|[Get checklistItem](../api/checklistitem-get.md)|[checklistItem](../resources/checklistitem.md)|Ознакомьтесь с свойствами и отношениями [объекта checklistItem.](../resources/checklistitem.md)|
-|[Обновление контрольного спискаItem](../api/checklistitem-update.md)|[checklistItem](../resources/checklistitem.md)|Обновление свойств объекта [checklistItem.](../resources/checklistitem.md)|
-|[Удаление контрольного спискаItem](../api/checklistitem-delete.md)|Нет|Удаляет объект [checklistItem.](../resources/checklistitem.md)|
+|[Создание контрольного спискаItem](../api/basetask-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Создайте [новый объект checklistItem](../resources/checklistitem.md) .|
+|[Get checklistItem](../api/checklistitem-get.md)|[checklistItem](../resources/checklistitem.md)|Ознакомьтесь с свойствами и отношениями [объекта checklistItem](../resources/checklistitem.md) .|
+|[Обновление контрольного спискаItem](../api/checklistitem-update.md)|[checklistItem](../resources/checklistitem.md)|Обновление свойств объекта [checklistItem](../resources/checklistitem.md) .|
+|[Удаление контрольного спискаItem](../api/checklistitem-delete.md)|Нет|Удаляет объект [checklistItem](../resources/checklistitem.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|checkedDateTime|DateTimeOffset|Дата и время завершения **контрольного спискаItem.**|
-|createdDateTime|DateTimeOffset|Дата и время создания **контрольного спискаItem.**|
-|displayName|Строка|Поле, указывающее название **checklistItem**.|
-|id|Строка|Созданный сервером ID для **checkListItem**|
+|checkedDateTime|DateTimeOffset|Дата и время завершения **контрольного спискаItem** .|
+|createdDateTime|DateTimeOffset|Дата и время создания **контрольного спискаItem** .|
+|displayName|String|Поле, указывающее название **checklistItem**.|
+|id|String|Созданный сервером ID для **checkListItem**|
 |isChecked|Boolean|Состояние, указывающее, отключается элемент или нет.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

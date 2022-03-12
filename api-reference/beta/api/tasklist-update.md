@@ -5,19 +5,19 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d51e5e22602dfd6aecbd9f69653d81c6dd77cf87
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6b8c543bb5c07979c26654b64245cde8bddcd6bd
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62120005"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451173"
 ---
 # <a name="update-basetasklist"></a>Обновление baseTaskList
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [taskList.](../resources/tasklist.md)
+Обновление свойств объекта [taskList](../resources/tasklist.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,19 +44,19 @@ PATCH /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Поле, указывающее обновленное название списка задач.|
+|displayName|String|Поле, указывающее обновленное название списка задач.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` обновленный [объект baseTaskList](../resources/basetasklist.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и обновленный [объект baseTaskList](../resources/basetasklist.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -74,6 +74,7 @@ Content-Type: application/json
 Content-length: 82
 
 {
+    "@odata.type": "#microsoft.graph.taskList",
     "displayName": "Travel Plan"
 }
 ```

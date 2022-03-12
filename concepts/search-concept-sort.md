@@ -4,19 +4,20 @@ description: Вы сортировать результаты поиска с п
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 56c0c5ed92098afe9df4eb699d113b62baa5522e
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 43852737729eb2d8d36e48093302e21b3fecfe7c
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766945"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451391"
 ---
 # <a name="use-the-microsoft-search-api-to-sort-search-results"></a>Используйте API Поиск (Майкрософт) для сортировки результатов поиска
 
 Вы можете использовать API Поиск (Майкрософт) Microsoft Graph для сортировки результатов поиска. Чтобы сортировать результаты, укажите свойство **sortProperties** в [объекте searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) и определите свойство ресурса **в entityTypes** для сортировки совпадений по восходящему или нисходящему порядку.
 
-Сортировка поддерживается только для SharePoint и OneDrive элементов.
-Свойство, на который будет отсортироваться, должно быть *сортируемым* в схеме поиска.
+Сортировка поддерживается для SharePoint и OneDrive элементов. Свойство элементов SharePoint и OneDrive, которые необходимо сортировать, должно сортироваться *в* схеме поиска.
+
+Сортировка также поддерживается для [внешних элементов](/graph/api/resources/externalconnectors-externalitem). Свойство [внешних](/graph/api/resources/externalconnectors-property) элементов, на которые необходимо отсортироваться, должно быть *уточнено* в схеме поиска.
 
 По умолчанию порядок сортировки возрастает. Установите **свойство isDescending, чтобы** изменить его.
 
@@ -316,8 +317,8 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-- Сортировка не поддерживается **для сообщений,** **событий** и **externalItem**.
-- Сортировка по релевантности не может быть указана в **sortProperties.**
+- Сортировка не поддерживается для **сообщений и** **событий**.
+- Сортировка по релевантности не может быть указана в **sortProperties**.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

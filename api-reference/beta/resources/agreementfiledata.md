@@ -1,16 +1,16 @@
 ---
 title: тип ресурса agreementFileData
 description: Представляет blob из Azure Active Directory (Azure AD) терминов файла соглашения об использовании.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 0531cfd16c42fb7d2a050c8899eea63b8e333f41
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 3fa6c94497ae42b102f03bee6142ec38677eda93
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547564"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451314"
 ---
 # <a name="agreementfiledata-resource-type"></a>тип ресурса agreementFileData
 
@@ -21,9 +21,9 @@ ms.locfileid: "52547564"
 Представляет blob из Azure Active Directory (Azure AD) терминов файла соглашения об использовании.
 
 ## <a name="properties"></a>Свойства
-| Метод       | Возвращаемый тип | Описание |
+| Свойство       | Тип | Описание |
 |:-------------|:------------|:------------|
-|data|В двоичном формате|Данные, представляющие условия использования документа PDF. Только для чтения.|
+|data|Binary|Данные, которые представляют условия использования документа PDF. Только для чтения. <br/><br/>**Примечание:** Вы можете использовать метод .NET [Convert.ToBase64String](/dotnet/api/system.convert.tobase64string) для преобразования файла в двоичные данные для загрузки с помощью API [Create agreements](../api/termsofusecontainer-post-agreements.md) . Пример синтаксиса с использованием этого метода в PowerShell .`[convert]::ToBase64String((Get-Content -path "your_file_path" -Encoding byte))` |
 
 ## <a name="json-representation"></a>Представление JSON
 

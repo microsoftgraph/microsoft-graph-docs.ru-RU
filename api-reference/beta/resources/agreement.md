@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 28abdafb3adda1b1fd3356fcdd1db5bda86c804f
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: dc91a115d79e47cddbeb7211e2b15aaa7bce9528
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651381"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451149"
 ---
 # <a name="agreement-resource-type"></a>тип ресурса соглашения
 
@@ -24,24 +24,26 @@ ms.locfileid: "61651381"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание соглашений](../api/termsofusecontainer-post-agreements.md) | [соглашение](agreement.md) | Создайте новое соглашение, разместив в коллекции соглашений. |
-| [Список соглашений](../api/termsofusecontainer-list-agreements.md) | [коллекция соглашений](agreement.md) | Получите коллекцию объектов соглашения. |
-| [Получение соглашения](../api/agreement-get.md) | [соглашение](agreement.md) | Чтение свойств и связей объекта соглашения. |
-| [Обновление соглашения](../api/agreement-update.md) | [соглашение](agreement.md) | Обновление объекта соглашения. |
-| [Удаление соглашения](../api/agreement-delete.md) | Нет | Удаление объекта соглашения. |
-<!--
-| [Create agreementFile](../api/agreement-post-files.md) | [agreementFile](agreementfile.md) | Create a new agreementFile by posting to the files collection. |
-| [List files](../api/agreement-list-files.md) | [agreementFile](agreementfile.md) collection | Get an agreementFile object collection. |
--->
+| [Создание](../api/termsofusecontainer-post-agreements.md) | [соглашение](agreement.md) | Создайте новое соглашение, разместив в коллекции соглашений. |
+| [Перечисление](../api/termsofusecontainer-list-agreements.md) | [коллекция соглашений](agreement.md) | Получите коллекцию объектов соглашения. |
+| [Получение](../api/agreement-get.md) | [соглашение](agreement.md) | Чтение свойств и связей объекта соглашения. |
+| [Обновление](../api/agreement-update.md) | Нет | Обновление объекта соглашения. |
+| [удаление](../api/agreement-delete.md); | Нет | Удаление объекта соглашения. |
+|[Приемки списков](../api/agreement-list-acceptances.md)|Коллекция [agreementAcceptance](../resources/agreementacceptance.md)|Сведения о записях приемки для определенного соглашения.|
+|[Перечисление agreementAcceptances](../api/user-list-agreementacceptances.md)|Коллекция [agreementAcceptance](../resources/agreementacceptance.md)|Получите приемки соглашения для подписанного пользователя.|
+|[Get agreementFile](../api/agreementfile-get.md)|[коллекция agreementFile](../resources/agreementfile.md)|Извлечение сведений из файла по умолчанию для соглашения, включая сведения о языке и версии.|
+|[Файлы списка](../api/agreement-list-files.md)|[коллекция agreementFileLocalization](../resources/agreementfilelocalization.md)|Извлечение всех локализованных файлов, связанных с соглашением.|
+|[Создание agreementFileLocalization](../api/agreement-post-files.md)|[agreementFileLocalization](../resources/agreementfilelocalization.md)|Создание нового локализованного файла соглашения.|
+
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка|Отображение имени соглашения. Имя отображения используется для внутреннего отслеживания соглашения, но не отображается конечным пользователям, которые просматривают соглашение.|
-|id|String| Только для чтения.|
-|isPerDeviceAcceptanceRequired|Boolean|Этот параметр позволяет требовать от конечных пользователей принять это соглашение на каждом устройстве, с которое они имеют к нему доступ. Конечный пользователь должен будет зарегистрировать свое устройство в Azure AD, если он этого еще не сделал.|
-|isViewingBeforeAcceptanceRequired|Boolean|Указывает, должен ли пользователь расширить соглашение перед принятием.|
-|termsExpiration|[termsExpiration](termsexpiration.md)| Срок действия и периодичность соглашения для всех пользователей. |
+|displayName|String|Отображение имени соглашения. Имя отображения используется для внутреннего отслеживания соглашения, но не отображается конечным пользователям, которые просматривают соглашение. Поддерживает `$filter` (`eq`).|
+|id|String| Только для чтения. Поддерживает `$filter` (`eq`).|
+|isPerDeviceAcceptanceRequired|Boolean|Этот параметр позволяет требовать от конечных пользователей принять это соглашение на каждом устройстве, с которое они имеют к нему доступ. Конечный пользователь должен будет зарегистрировать свое устройство в Azure AD, если он этого еще не сделал. Поддерживает `$filter` (`eq`).|
+|isViewingBeforeAcceptanceRequired|Boolean|Указывает, должен ли пользователь расширить соглашение перед принятием. Поддерживает `$filter` (`eq`).|
+|termsExpiration|[termsExpiration](termsexpiration.md)| Срок действия и периодичность соглашения для всех пользователей.  Поддерживает `$filter` (`eq`).|
 |userReacceptRequiredFrequency|Длительность|Продолжительность, после которой пользователь должен повторно принять условия использования. Значение представлено в формате ISO 8601 для длительности.|
 
 

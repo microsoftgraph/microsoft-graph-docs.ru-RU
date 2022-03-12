@@ -5,19 +5,19 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5e3eda405e5821587afc653ec366476fd7303991
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 291bfa800ce25c333836bf8e45565c61bc6005c6
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62106990"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451342"
 ---
 # <a name="update-basetask"></a>Обновление baseTask
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [baseTask.](../resources/basetask.md)
+Обновление свойств объекта [baseTask](../resources/basetask.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,13 +47,13 @@ PATCH /users/{userId|userPrincipalName}/tasks/alltasks/{baseTaskId}
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|body|[itemBody](../resources/itembody.md)|Текст задачи, который обычно содержит сведения о задаче.|
+|textBody|String|Орган задач в текстовом формате, который обычно содержит сведения о задаче.|
 |createdDateTime|DateTimeOffset|Дата в указанном часовом поясе, когда задача была завершена.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса.|
 |bodyLastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения тела задач. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса.|
@@ -62,15 +62,15 @@ PATCH /users/{userId|userPrincipalName}/tasks/alltasks/{baseTaskId}
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанном часовом поясе, когда задача должна быть начата.|
 |importance|importance|Важность события. Допустимые значения: `low`, `normal`, `high`.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Расписание повторения задачи.|
-|displayName|Строка|Краткое описание задачи.|
+|displayName|String|Краткое описание задачи.|
 |status|taskStatus_v2|Указывает состояние или ход выполнения задачи. Допустимые значения: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`.|
-|personalProperties|[personalTaskProperties](../resources/personaltaskproperties.md)|Свойства, которые являются личными для пользователя, такие как reminderDateTime.|
+|точки зрения|[taskViewpoint](../resources/taskviewpoint.md)|Свойства, которые являются личными для пользователя, такие как reminderDateTime.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект baseTask](../resources/basetask.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и обновленный [объект baseTask](../resources/basetask.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -88,10 +88,8 @@ Content-Type: application/json
 Content-length: 634
 
 {
-  "@odata.type": "#microsoft.graph.baseTask",
-  "body": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
+  "@odata.type": "#microsoft.graph.task",
+  "textBody":  "String",
   "bodyLastModifiedDateTime": "String (timestamp)",
   "completedDateTime": "String (timestamp)",
   "dueDateTime": {
@@ -106,8 +104,8 @@ Content-length: 634
   },
   "displayName": "String",
   "status": "String",
-  "personalProperties": {
-    "@odata.type": "microsoft.graph.personalTaskProperties"
+  "viewpoint": {
+    "@odata.type": "microsoft.graph.taskViewpoint"
   }
 }
 ```
@@ -140,7 +138,7 @@ Content-length: 634
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.baseTask"
+  "@odata.type": "microsoft.graph.task"
 }
 -->
 ``` http
@@ -156,10 +154,7 @@ Content-Type: application/json
     "createdDateTime": "2021-11-15T14:38:25.6868632Z",
     "lastModifiedDateTime": "2021-11-15T15:51:13.3606631Z",
     "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT",
-    "body": {
-        "content": "",
-        "contentType": "text"
-    },
+    "textBody":  "",
     "parentList": {
         "id": "AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt"
     }

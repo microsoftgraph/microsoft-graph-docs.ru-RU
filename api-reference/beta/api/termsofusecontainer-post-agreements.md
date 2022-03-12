@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 74d9cacc9f38c8693fb21b52bb194cf461b443cc
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 03ac058dd53861502bee64f85e254be53db4ab3a
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336937"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451454"
 ---
 # <a name="create-agreement"></a>Создание соглашения
 
@@ -76,7 +76,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 Content-type: application/json
 
 {
-  "displayName": "MSGraph Sample",
+  "displayName": "Contoso ToU for guest users",
   "isViewingBeforeAcceptanceRequired": true,
   "files": [
     {
@@ -84,7 +84,7 @@ Content-type: application/json
       "language": "en",
       "isDefault": true,
       "fileData": {
-        "data": "SGVsbG8gd29ybGQ="
+        "data": "SGVsbG8gd29ybGQ=//truncated-binary"
       }
     }
   ]
@@ -130,9 +130,13 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "displayName": "MSGraph Sample",
-  "isViewingBeforeAcceptanceRequired": true,
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#agreements/$entity",
+    "id": "94410bbf-3d3e-4683-8149-f034e55c39dd",
+    "displayName": "Contoso ToU for guest users",
+    "termsExpiration": null,
+    "userReacceptRequiredFrequency": null,
+    "isViewingBeforeAcceptanceRequired": true,
+    "isPerDeviceAcceptanceRequired": false
 }
 ```
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 7f8d8ec54eec709551281e5d6085e3ea6c5c7b47
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: e70bfb567f43d506bbfc0ce208208456aa9ac8a7
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337476"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451447"
 ---
 # <a name="get-agreement"></a>Получение соглашения
 
@@ -33,7 +33,7 @@ GET /identityGovernance/termsOfUse/agreements/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает параметр `$select` [запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
@@ -44,14 +44,50 @@ GET /identityGovernance/termsOfUse/agreements/{id}
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект соглашения в](../resources/agreement.md) тексте ответа.
-## <a name="example"></a>Пример
-### <a name="request"></a>Запрос
+## <a name="examples"></a>Примеры
 
+### <a name="example-1-retrieve-an-agreement"></a>Пример 1. Извлечение соглашения
+
+#### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "get_agreement"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/0ec9f6a6-159d-4dd8-a563-1f0b5935e80b
+```
+
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.agreement"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#agreements/$entity",
+    "id": "0ec9f6a6-159d-4dd8-a563-1f0b5935e80b",
+    "displayName": "All users terms of use",
+    "termsExpiration": null,
+    "userReacceptRequiredFrequency": "P90D",
+    "isViewingBeforeAcceptanceRequired": false,
+    "isPerDeviceAcceptanceRequired": false
+}
+```
+
+
+### <a name="example-2-retrieve-an-agreement-and-its-related-files"></a>Пример 2. Извлечение соглашения и связанных с ним файлов
+
+#### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_agreement"
+  "name": "get_agreement_files"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/093b947f-8363-4979-a47d-4c52b33ee1be?$expand=files
@@ -83,7 +119,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/09
 ---
 
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -95,17 +131,26 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "MSGraph Sample",
-  "isViewingBeforeAcceptanceRequired": true,
-  "id": "id-value",
-  "files": [
-    {
-      "id": "093b947f-8363-4979-a47d-4c52b33ee1be",
-      "language": "en",
-      "fileName": "TOU.pdf",
-      "isDefault": true
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#agreements(files())/$entity",
+    "id": "0ec9f6a6-159d-4dd8-a563-1f0b5935e80b",
+    "displayName": "All users terms of use",
+    "termsExpiration": null,
+    "userReacceptRequiredFrequency": "P90D",
+    "isViewingBeforeAcceptanceRequired": false,
+    "isPerDeviceAcceptanceRequired": false,
+    "files@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/termsOfUse/agreements('0ec9f6a6-159d-4dd8-a563-1f0b5935e80b')/files",
+    "files": [
+        {
+            "id": "681b73a7-e9ae-4f2d-aca5-9e857599cd15",
+            "fileName": "ToU.pdf",
+            "displayName": "Contoso Terms of Use",
+            "language": "en-GB",
+            "isDefault": true,
+            "isMajorVersion": false,
+            "createdDateTime": "2022-03-02T14:11:32.885186Z",
+            "fileData": null
+        }
+    ]
 }
 ```
 

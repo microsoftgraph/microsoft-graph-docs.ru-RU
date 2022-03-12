@@ -5,19 +5,19 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0f6b3b5deee503e635bf1b6996bf9432d9a83b8f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f696ef66adced69dd286725cb5e1709ba6dbbe27
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098581"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451426"
 ---
 # <a name="create-basetasklist"></a>Создание baseTaskList
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [объекта taskList.](../resources/basetasklist.md)
+Создание нового [объекта taskList](../resources/basetasklist.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,19 +46,19 @@ POST /users/{userId|userPrincipalName}/tasks/lists
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [baseTaskList.](../resources/basetasklist.md)
+В теле запроса поставляем представление JSON объекта [baseTaskList](../resources/basetasklist.md) .
 
-В следующей таблице показаны свойства, необходимые при создании **baseTaskList.**
+В следующей таблице показаны свойства, необходимые при создании **baseTaskList**.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Поле, указывающее название списка задач.|
+|displayName|String|Поле, указывающее название списка задач.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект baseTaskList](../resources/basetasklist.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` ответа и [объект baseTaskList](../resources/basetasklist.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -75,6 +75,7 @@ POST https://graph.microsoft.com/beta/me/tasks/lists
 Content-Type: application/json
 
 {
+    "@odata.type": "#microsoft.graph.taskList",
     "displayName": "Shopping list"
 }
 ```

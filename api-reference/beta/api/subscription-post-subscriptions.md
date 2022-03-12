@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 3746db66d1f79c27d0910de55f9a20b08214b653
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: a348466b45132e641d68785e0537cd4826a299b9
+ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395659"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63451403"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -26,7 +26,7 @@ ms.locfileid: "63395659"
 
 ## <a name="permissions"></a>Разрешения
 
-Для создания подписки требуется разрешение на чтение на ресурс. Например, чтобы получать уведомления об изменениях в сообщениях, вашему приложению необходимо разрешение Mail.Read. 
+Для создания подписки требуется разрешение на чтение на ресурс. Например, чтобы получать уведомления об изменениях в сообщениях, приложению необходимо разрешение Mail.Read. 
 
 В зависимости от ресурса и типа требующегося разрешения (делегированное или для приложения) разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
 
@@ -84,9 +84,9 @@ OneDrive для бизнеса и SharePoint поддерживают отпра
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
-### <a name="presence"></a>presence
+### <a name="onlinemeetings-presence"></a>onlineMeetings, присутствие
 
-Подписки на **присутствие** требуют шифрования любых данных ресурсов, включенных в уведомление об изменении. Всегда указывайте параметр **encryptionCertificate** при [создании подписки](/graph/webhooks-with-resource-data#creating-a-subscription), чтобы избежать сбоя. Дополнительные сведения о [настройке уведомлений об изменении, чтобы включить данные ресурсов](/graph/webhooks-with-resource-data).
+Подписки на **onlineMeetings** и  наличие требуют [](/graph/webhooks-with-resource-data#creating-a-subscription) свойства **encryptionCertificate** и **encryptionCertificateId** при создании подписки на уведомления с зашифрованными данными ресурсов. Дополнительные сведения см. [в дополнительных сведениях о настройке уведомлений об изменении, включив данные ресурсов](/graph/webhooks-with-resource-data).
 
 ## <a name="http-request"></a>HTTP-запрос
 
