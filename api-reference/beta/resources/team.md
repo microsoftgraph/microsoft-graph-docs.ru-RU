@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 27c31e3bd23f5a3e204b8747f9724af93be7a4c5
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 419e88921785cb66d03fe763ff4badd490008ec7
+ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335985"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63500898"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -71,6 +71,7 @@ ms.locfileid: "63335985"
 |classSettings|[teamClassSettings](teamclasssettings.md) |Настройка параметров класса. Доступна только в том случае, если команда представляет класс.|
 |isMembershipLimitedToOwners|Boolean|Если присвоено значение `true`, команда в настоящее время находится в состоянии участия только для владельцев команды и недоступна другим участникам, например учащимся.|
 |createdDateTime|dateTimeOffset|Метка времени создания команды.|
+|summary|[teamSummary](teamsummary.md)| Содержит сводную информацию о команде, включая количество владельцев, участников и гостей. |
 
 ### <a name="instance-attributes"></a>Атрибуты экземпляра
 
@@ -127,7 +128,8 @@ ms.locfileid: "63335985"
   "visibility": "string",
   "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
   "isMembershipLimitedToOwners":"boolean",
-  "createdDateTime": "dateTimeOffset"
+  "createdDateTime": "dateTimeOffset",
+  "summary":  {"@odata.type": "microsoft.graph.teamSummary"}
 }
 ```
 
