@@ -4107,7 +4107,7 @@ items:
                   - name: Использование ПИН-кода в Windows Hello для бизнеса
                     href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
               - name: Управление доступом на основе ролей (RBAC)
-                href: /resources/intune-rbac-conceptual.md
+                href: resources/intune-rbac-conceptual.md
                 items:
                   - name: Назначение роли управления устройствами и приложениями
                     href: resources/intune-rbac-deviceandappmanagementroleassignment.md
@@ -7015,7 +7015,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Задачи
+          - name: Задача
             href: resources/todotask.md
             items:
               - name: Перечисление задач

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: simonhult
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: e5bfe92ba42609a61d113cc8e32faf4499db00b7
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 61625b4d9309ca203d1d523f1fcdb4f0fe6c583f
+ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62291985"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63500891"
 ---
 # <a name="insightssettings-resource-type"></a>тип ресурса insightsSettings
 
@@ -18,7 +18,7 @@ ms.locfileid: "62291985"
 
 Представляет _параметры для_ вычисления и управления отображением или программным возвращением определенного типа информации в организации. Сведения могут быть сведениями о элементах, сведениями о часах собраний или сведениями о человеке. 
 
-Сведения о [элементах и](https://support.microsoft.com/office/suggested-meeting-hours-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) сведения о часах собраний представляют отношения между пользователями и элементами, такими как документы, сайты и другие типы контента в Microsoft 365. Программным образом они представлены ресурсом [itemInsights](iteminsights.md) . Вы можете получить документы, [которые делятся](../api/insights-list-shared.md) с пользователем [, в](../api/insights-list-trending.md) тренде вокруг пользователя или [используются](../api/insights-list-used.md) пользователем. Вы можете использовать **insightsSettings** для настройки параметров конфиденциальности для вычисления, отображения или возврата элементов в [организации](/graph/insights-customize-item-insights-privacy).
+Сведения о элементах [](https://support.microsoft.com/office/suggested-meeting-hours-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) и сведения о часах собраний представляют отношения между пользователями и элементами, такими как документы, сайты и другие типы контента в Microsoft 365. Программным образом они представлены ресурсом [itemInsights](iteminsights.md) . Вы можете получить документы, [которые делятся](../api/insights-list-shared.md) с пользователем [, в](../api/insights-list-trending.md) тренде вокруг пользователя или [используются](../api/insights-list-used.md) пользователем. Вы можете использовать **insightsSettings** для настройки параметров конфиденциальности для вычисления, отображения или возврата элементов в [организации](/graph/insights-customize-item-insights-privacy).
 
 Сведения о работе с людьми представляют собой связи людей, которые имеют отношение друг к другу или работают друг с другом на основе их связей с общественностью. Программным образом отдельные люди представлены ресурсом [person](person.md) . API [людей можно использовать для получения информации о человеке](/graph/people-example). Вы можете использовать **insightsSettings** для настройки параметров конфиденциальности для отображения или возвращения [людей.](/graph/insights-customize-people-insights-privacy)
 
@@ -37,8 +37,8 @@ ms.locfileid: "62291985"
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Логическое| `true` если для организации включен указанный тип анализа; `false` если указанный тип анализа отключен для всех пользователей без исключений. Значение по умолчанию: `true`. Необязательный параметр.|
-|disabledForGroup|String| ID группы Azure AD, в которой указанный тип данных отключен для ее участников. Значение по умолчанию: `empty`. Необязательный параметр.|
+|isEnabledInOrganization|Boolean| `true` если для организации включен указанный тип анализа; `false` если указанный тип анализа отключен для всех пользователей без исключений. Значение по умолчанию: `true`. Необязательный параметр.|
+|disabledForGroup|String| ID группы Azure Active Directory, из которой указанный тип анализа отключен для ее участников. Значение по умолчанию: `empty`. Необязательный параметр.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -52,9 +52,8 @@ ms.locfileid: "62291985"
 
 ```json
 {
-
-  "isEnabledInOrganization": "Boolean",
-  "disabledForGroup": "String"
+  "disabledForGroup": "String",
+  "isEnabledInOrganization": "Boolean"
 }
 ```
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 09e45b8db050a79a6e80e3a70d275493c78aa28c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d9ae143051bd839ac34b4d5b326d2768bc821186
+ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089289"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63500919"
 ---
 # <a name="delete-unifiedroledefinition"></a>Удаление unifiedRoleDefinition
 
@@ -27,15 +27,15 @@ ms.locfileid: "62089289"
 
 ## <a name="permissions"></a>Разрешения
 
-В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующих таблиц наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные новости, в том числе осторожность [перед](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) выбором более привилегированных разрешений, см. [в см. в руб. Permissions.](/graph/permissions-reference) 
+В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующих таблиц наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные дополнительные новости, в том числе [осторожность перед выбором](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) более привилегированных разрешений, см. [в руб. Permissions](/graph/permissions-reference). 
 
 ### <a name="for-a-cloud-pc-provider"></a>Поставщик облачных ПК
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | CloudPC.ReadWrite.All   |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | CloudPC.ReadWrite.All  |
+|Для приложений | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All  |
 
 ### <a name="for-a-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
 
@@ -43,7 +43,7 @@ ms.locfileid: "62089289"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  DeviceManagementRBAC.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | DeviceManagementRBAC.ReadWrite.All |
+|Для приложений | DeviceManagementRBAC.ReadWrite.All |
 
 ### <a name="for-a-directory-azure-ad-provider"></a>Поставщик каталогов (Azure AD)
 
@@ -51,7 +51,7 @@ ms.locfileid: "62089289"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Для приложений | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -81,7 +81,7 @@ DELETE /roleManagement/cloudPc/roleDefinitions/{id}
 |:--------------|:--------------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

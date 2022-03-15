@@ -9499,7 +9499,7 @@ items:
                   - name: Использование ПИН-кода в Windows Hello для бизнеса
                     href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
               - name: Управление доступом на основе ролей (RBAC)
-                href: /resources/intune-rbac-conceptual.md
+                href: resources/intune-rbac-conceptual.md
                 items:
                   - name: Данные назначенной роли для управления устройствами и приложениями
                     href: resources/intune-rbac-deviceandappmanagementassignedroledetails.md
@@ -12832,7 +12832,7 @@ items:
                         href: api/entitlementmanagementsettings-get.md
                       - name: Обновление
                         href: api/entitlementmanagementsettings-update.md
-              - name: Служба Privileged Identity Management
+              - name: Управление привилегированными пользователями
                 displayName: PIM v2
                 items:
                   - name: Служба Privileged Identity Management
@@ -15274,11 +15274,11 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Задачи
+          - name: Задача
             items:
               - name: Базовая задача
                 href: resources/basetask.md
-              - name: Задачи
+              - name: Задача
                 href: resources/task.md
               - name: Перечисление задач
                 href: api/basetasklist-list-tasks.md
@@ -15347,7 +15347,7 @@ items:
                     href: api/opentypeextension-post-opentypeextension.md
                   - name: Получение открытого расширения
                     href: api/opentypeextension-get.md
-              - name: Задачи
+              - name: Задача
                 href: resources/todotask.md
                 items:
                   - name: Перечисление задач

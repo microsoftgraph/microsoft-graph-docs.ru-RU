@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: b16ea1571cc59831cb4736429a6fe6286fa64ff7
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: f6e6d6618e4bc90d23c0b3ec552026953a82bfb9
+ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335488"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63500933"
 ---
 # <a name="update-cloudpcusersetting"></a>Обновление cloudPcUserSetting
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя параметра, отображаемая в пользовательском интерфейсе.|
+|displayName|String|Имя параметра, отображаемая в пользовательском интерфейсе.|
 |localAdminEnabled|Boolean|Чтобы включить локальный параметр администрирования, измените этот параметр на `True`.  |
 |selfServiceEnabled|Boolean|Чтобы включить параметр самообслуживки, измените этот параметр на `True`. |
 |restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Определяет, как часто создается точка восстановления (то есть создается снимок) для пользовательских облачных ПК (по умолчанию — 12 часов), и разрешено ли пользователю восстанавливать собственные облачные КОМПЬЮТЕРы в резервной копии, выполненной в определенный момент времени.|
@@ -87,7 +87,7 @@ Content-Type: application/json
   "displayName": "Example",
   "selfServiceEnabled": true,
   "restorePointSetting": {
-    "frequencyInHours": "16",
+    "frequencyInHours": 16,
     "userRestoreEnabled": true
   },
   "localAdminEnabled": false
