@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f6269c7e5a096a7406431b805b3b927e36cd8170
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bebfec6cad4865525a1cf453a3141da1fb0881b9
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098001"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671925"
 ---
 # <a name="update-device"></a>Обновление устройства
 
@@ -25,13 +25,13 @@ ms.locfileid: "62098001"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | Device.ReadWrite.All, Directory.ReadWrite.All |
+|Для приложений | Device.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
-В `{id}` запросе имеется значение свойства **id** устройства, а не **свойства deviceId.**
+В `{id}` запросе имеется значение свойства **id** устройства, а не **свойства deviceId** .
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /devices/{id}
@@ -43,7 +43,7 @@ PATCH /devices/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Укажите в теле запроса значения обновляемых свойств [device](../resources/device.md). Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
@@ -52,9 +52,9 @@ PATCH /devices/{id}
 |accountEnabled|Логический| Если учетная запись обеспечена — `true`, в противном случае — `false`. Обновить это свойство могут только звонители в ролях глобального администратора и администратора облачных устройств.|
 |operatingSystem|String|Тип операционной системы на устройстве.|
 |operatingSystemVersion|String|Версия операционной системы на устройстве.|
-|displayName|String|Отображаемое имя устройства.|
-|isCompliant|Boolean|`true` если устройство соответствует политикам управления мобильными устройствами(MDM); в противном `false` случае . Это может быть обновлено intune только для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. |
-|isManaged|Boolean|`true` если устройство управляется приложением управления мобильными устройствами (MDM); в противном `false` случае . Это может быть обновлено intune только для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. |
+|displayName|Строка|Отображаемое имя устройства.|
+|isCompliant|Boolean|`true` если устройство соответствует политикам управления мобильными устройствами(MDM); в противном случае `false`. Это может быть обновлено intune для любого типа ОС устройства или утвержденным [приложением MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. |
+|isManaged|Boolean|`true` если устройство управляется приложением управления мобильными устройствами (MDM); в противном случае `false`. Это может быть обновлено intune для любого типа ОС устройства или утвержденным [приложением MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. |
 
 ## <a name="response"></a>Отклик
 

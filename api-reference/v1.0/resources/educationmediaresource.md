@@ -1,31 +1,36 @@
 ---
-title: тип ресурса educationMediaResource
-description: Представляет ресурс файлов мультимедиа для educationAssignment. Наследует от educationResource
+title: Тип ресурса educationMediaResource
+description: Представляет ресурс файла мультимедиа для объекта educationAssignment. Наследует от educationResource
 ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d89835234ff1e388b5da9c618322ebad0c8a101e
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 2daa0b185ced9dd7400be6c54674f6e72a89dfe4
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220806"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684867"
 ---
-# <a name="educationmediaresource-resource-type"></a>тип ресурса educationMediaResource
+# <a name="educationmediaresource-resource-type"></a>Тип ресурса educationMediaResource
 
 Пространство имен: microsoft.graph
 
-Представляет ресурс файлов мультимедиа для [educationAssignment](educationassignment.md). Наследует [от educationResource](educationresource.md).
+Представляет ресурс файла мультимедиа для [объекта educationAssignment](educationassignment.md). Наследуется от [educationResource](educationresource.md).
 
-Upload эти файлы в **каталог fileResource,** связанный с назначением или отправкой.
+Upload эти файлы в **каталог fileResource**, связанный с назначением или отправкой.
 
-Следующие типы файлов — это медиа-ресурсы: `webm` , , , , `mkv` `avi` , `wmv` `mp4` и `m4v` `mpg` `mpeg` `m2v` `jpg` `png` `gif` `bmp` `heic` `jpeg` `psd` `mp3` `m4a` .
+Следующие типы файлов являются ресурсами мультимедиа: `webm`, `mkv`, `avi`, , `wmv`, `m4v``mp4`, `mpg`, `mpeg`, `m2v`, `jpg`, `png``gif`, `bmp`, , `heic`, , , `jpeg`и `m4a``psd``mp3` .
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fileUrl|String|Расположение файла в общей папке точеки. Обязательная|
+|fileUrl|String|Расположение файла в общей папке точек. Обязательный|
+|createdBy|String|Отображаемое имя пользователя, создавшего этот ресурс.|
+|createdDateTime|DateTimeOffset|Дата, когда была добавлена повторная ошибка.|
+|displayName|string|Отображаемое имя пользователя, который добавил ресурс.|
+|lastModifiedBy|[identitySet](identityset.md)|Последний пользователь, который изменяет ресурс|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения ресурса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -40,7 +45,12 @@ Upload эти файлы в **каталог fileResource,** связанный 
 
 ```json
 {
-  "fileUrl": "String"
+  "fileUrl": "String",
+  "createdBy": "String (User)",
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "lastModifiedBy": "String (User)",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 ```

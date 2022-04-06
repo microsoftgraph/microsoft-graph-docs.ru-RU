@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e41a297737014c261908b7622e60ae30b567d9c
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: eaf3aa4d0461236d98a9bf90d77ada1879b83b41
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60492421"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629970"
 ---
 # <a name="list-deviceenrollmentwindowshelloforbusinessconfigurations"></a>Перечисление объектов deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -43,7 +43,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1030
+Content-Length: 1083
 
 {
   "value": [
@@ -81,6 +81,7 @@ Content-Length: 1030
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "deviceEnrollmentConfigurationType": "limit",
       "pinMinimumLength": 0,
       "pinMaximumLength": 0,
       "pinUppercaseCharactersUsage": "required",
@@ -98,6 +99,7 @@ Content-Length: 1030
   ]
 }
 ```
+
 
 
 

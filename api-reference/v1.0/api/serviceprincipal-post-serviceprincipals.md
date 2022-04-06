@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 6798c043ae90f1b3ebc75eb2189204e03f290b29
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 428a108a1ccf2f27b13691b8f81cecd0fb3f727a
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477834"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671232"
 ---
 # <a name="create-serviceprincipal"></a>Создание объекта servicePrincipal
 
@@ -19,7 +19,7 @@ ms.locfileid: "64477834"
 Создание нового объекта [servicePrincipal](../resources/serviceprincipal.md).
 
 > [!IMPORTANT]
-> Добавление [**passwordCredential**](../resources/passwordcredential.md) при создании объектов servicePrincipal не поддерживается. Используйте метод [addPassword](serviceprincipal-addpassword.md), чтобы добавлять пароли и секреты для servicePrincipal.
+> Добавление [**passwordCredential**](../resources/passwordcredential.md) при создании объектов servicePrincipal не поддерживается. Используйте метод [addPassword](serviceprincipal-addpassword.md), чтобы добавлять пароли для servicePrincipal.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

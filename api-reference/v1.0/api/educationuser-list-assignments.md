@@ -5,20 +5,22 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7a9f6e7ec2fe77f87c81717c406a56de7e1bbef7
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 4e3a9cfac827c7bc6e2b6d7c8afe9d838b25d291
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62226018"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63516140"
 ---
 # <a name="list-assignments-of-a-user"></a>Список назначений пользователя
 
 Пространство имен: microsoft.graph
 
-Возвращает список [educationAssignment,](../resources/educationassignment.md) назначенного [для educationUser](../resources/educationuser.md) для [всех классов.](../resources/educationclass.md) 
+Возвращает список [educationAssignment](../resources/educationassignment.md) , назначенного [для educationUser](../resources/educationuser.md) для всех [классов](../resources/educationclass.md). 
 
-Этот метод позволяет звонящем находить  все назначения, принадлежащие учащемуся или преподавателю, в одном вызове, а не запрашивать назначения из каждого **класса.**  В **списке** назначений содержится то,  что необходимо для получения подробных сведений о назначении из пространства **имен** класса. Используйте методы, определенные для **назначения** для всех остальных операций.
+Этот метод позволяет звонящем находить все назначения, принадлежащие учащемуся или преподавателю, в одном вызове, а не запрашивать  назначения в каждом **классе**. В **списке** назначений содержится то, что необходимо для получения подробных сведений о назначении из пространства **имен** класса. Используйте методы, определенные для **назначения** для всех остальных операций.
+
+> **Примечание:** Свойства `instructions`, `assignedDateTime`и `assignTo``resourcesFolderUrl` всегда `webUrl` будут отображать null.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,11 +30,11 @@ ms.locfileid: "62226018"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                         |
-| Для приложения                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+| Для приложений                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 Для вызова конечной точки `/me` требуется вход пользователя и, следовательно, делегированное разрешение. Разрешения приложений не поддерживаются при использовании конечной точки `/me`.
 
-`/users/{user-id}`Конечная точка работает с делегированием разрешений и разрешений приложений.
+Конечная `/users/{user-id}` точка работает с делегированием разрешений и разрешений приложений.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +45,7 @@ GET /education/users/{user-id}/assignments
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры `$submissions` `$categories` [запроса oData и OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает параметры `$submissions` запроса `$categories` [oData и OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -57,7 +59,7 @@ GET /education/users/{user-id}/assignments
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [educationAssignment](../resources/educationassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` ответа и коллекцию объектов [educationAssignment](../resources/educationassignment.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -250,11 +252,9 @@ GET https://graph.microsoft.com/v1.0/education/users/f3a5344e-dbde-48b0-be24-b5b
 
 #### <a name="response"></a>Отклик
 
-Если пользователь пытается запросить другой пользовательский код, чем его собственный, этот метод возвращает `403 Forbidden` код ответа.
+Если пользователь пытается запросить другой пользовательский код, чем его собственный, этот метод возвращает код `403 Forbidden` ответа.
 
-Свойства `instructions` `assignedDateTime` , и всегда будут `assignTo` отображать `resourcesFolderUrl` `webUrl` null.
-
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -399,7 +399,7 @@ GET https://graph.microsoft.com/v1.0/education/users/80cefd93-8d88-40e2-b5d3-678
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 > **Примечание:** Он будет расширять представления, если у пользователя есть роль ученика, и будет нулевую для роли учителя.
 

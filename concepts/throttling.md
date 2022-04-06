@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: da749ed702e60837fb654963a3bbe78f16bfa36e
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: a91c82a3e7378e7abde7bccae0d7a953c7d94cb8
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346571"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671603"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -420,6 +420,8 @@ Microsoft Graph позволяет получать доступ к данным
 
 ### <a name="excel-service-limits"></a>Ограничения службы Excel
 
+Объяснения и рекомендации, связанные с регулированием службы Excel, см. в разделе [Регулирование](workbook-best-practice.md#throttling). Кроме того, ниже приводится ряд ограничений регулирования.
+  
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
 
 ### <a name="identity-providers-service-limits"></a>Ограничения службы поставщиков удостоверений

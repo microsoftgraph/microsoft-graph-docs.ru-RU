@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6e4cb3cd79a05365159a6ca13b8916cc54dfdbbe
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 07d2a88c32539c9146faac4681cc2021fa68533a
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337700"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671988"
 ---
 # <a name="create-settings"></a>Создание параметров
 
@@ -18,7 +18,7 @@ ms.locfileid: "63337700"
 
 Создайте новый параметр на основе шаблонов, доступных [в groupSettingTemplates](../resources/groupsettingtemplate.md). Эти параметры могут быть на уровне клиента или на уровне группы.
 
-Параметры группы применяются только к группам Microsoft 365. Названный шаблон `Group.Unified` можно использовать для настройки параметров группы Microsoft 365 в масштабе всего клиента, `Group.Unified.Guest` а названный шаблон можно использовать для настройки параметров, определенных для группы.
+Параметры группы применяются только к Microsoft 365 группам. Названный шаблон `Group.Unified` можно использовать для настройки параметров Microsoft 365 групп, `Group.Unified.Guest` а названный шаблон можно использовать для настройки параметров, определенных для группы.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "63337700"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.ReadWrite.All |
 
@@ -59,18 +59,18 @@ POST /groups/{id}/settings
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|templateId|Строка| Уникальный идентификатор для объекта [groupSettingTemplates](../resources/groupsettingtemplate.md) , используемого для создания этого объекта параметров группового уровня. Только для чтения. |
+|templateId|String| Уникальный идентификатор для объекта [groupSettingTemplates](../resources/groupsettingtemplate.md) , используемого для создания этого объекта параметров группового уровня. Только для чтения. |
 |values|[settingValue](../resources/settingvalue.md) collection| Коллекция пар имен и значений, соответствующих свойствам **name** и **defaultValue** в объекте [referenced groupSettingTemplates](../resources/groupsettingtemplate.md) .|
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [groupSetting](../resources/groupsetting.md) в теле отклика.
 
-## <a name="example-1-create-a-new-setting-for-all-microsoft-365-groups-in-the-tenant"></a>Пример 1. Создание нового параметра для всех групп Microsoft 365 в клиенте
+## <a name="example-1-create-a-new-setting-for-all-microsoft-365-groups-in-the-tenant"></a>Пример 1. Создание нового параметра для всех Microsoft 365 групп в клиенте
 
 ### <a name="request"></a>Запрос
 
-Только [названный объект groupSettingTemplates](../resources/groupsettingtemplate.md) `Group.Unified` может применяться во всех группах Microsoft 365 на уровне клиента.
+Только [объект GroupSettingTemplates](../resources/groupsettingtemplate.md) `Group.Unified` можно применять для всех Microsoft 365 групп на уровне клиента.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -166,11 +166,11 @@ Content-type: application/json
 
 Свойство **displayName** и другие пары значений имени будут заполнены значениями по умолчанию из объекта [groupSettingTemplates](../resources/groupsettingtemplate.md) , который соответствует **шаблонуId**.
 
-## <a name="example-2-create-a-setting-to-block-guests-for-a-specific-microsoft-365-group"></a>Пример 2. Создание параметра для блокировки гостей для определенной группы Microsoft 365
+## <a name="example-2-create-a-setting-to-block-guests-for-a-specific-microsoft-365-group"></a>Пример 2. Создание параметра для блокировки гостей для определенной Microsoft 365 группы
 
 ### <a name="request"></a>Запрос
 
-Только [объект GroupSettingTemplates](../resources/groupsettingtemplate.md) `Group.Unified.Guest` можно применить к определенным группам Microsoft 365.
+Только [названный объект groupSettingTemplates](../resources/groupsettingtemplate.md) `Group.Unified.Guest` может применяться к определенным Microsoft 365 группам.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

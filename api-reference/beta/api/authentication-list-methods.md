@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 51415c33a78763bc15d7951fa050271f12aec208
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ed50862cfbfd5b4ead416557ebc1857b8fb796d0
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109841"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509590"
 ---
 # <a name="list-methods"></a>Методы List
 
@@ -18,7 +18,7 @@ ms.locfileid: "62109841"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка объектов метода [проверки подлинности.](../resources/authenticationmethod.md) Этот API возвращает только методы проверки подлинности, поддерживаемые в этой версии API. Обзор [API методов проверки подлинности Azure AD](../resources/authenticationmethods-overview.md) см. в списке поддерживаемых в настоящее время методов.
+Извлечение списка [объектов authenticationMethod](../resources/authenticationmethod.md) . Этот API возвращает только методы проверки подлинности, поддерживаемые в этой версии API. Обзор [API методов проверки подлинности Azure AD](../resources/authenticationmethods-overview.md) см. в списке поддерживаемых в настоящее время методов.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -41,7 +41,7 @@ ms.locfileid: "62109841"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих ролей [Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 * Глобальный администратор
 * Глобальный читатель
 * привилегированный администратор проверки подлинности;
@@ -66,13 +66,13 @@ GET /users/{id | userPrincipalName}/authentication/methods
 |:----------|:----------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [authenticationMethod](../resources/authenticationmethod.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию объектов [authenticationMethod](../resources/authenticationmethod.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

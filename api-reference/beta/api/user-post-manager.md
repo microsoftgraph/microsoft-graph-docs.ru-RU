@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4fa2449aa4dcf879cd0bcc96ee21f5ef6e21da30
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2e48767a89ddf52069962811b123f4a63ab16d77
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122695"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669944"
 ---
 # <a name="assign-a-manager"></a>Назначение руководителя
 
@@ -26,7 +26,7 @@ ms.locfileid: "62122695"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -40,16 +40,16 @@ PUT /users/{id}/manager/$ref
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md) или [user](../resources/user.md) в формате JSON.
+## <a name="request-body"></a>Текст запроса
+В тексте запроса поставляют объект JSON `@odata.id` и передают параметр с url-адресом чтения [добавленного объекта directoryObject](../resources/directoryobject.md) или пользователя.[](../resources/user.md)
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+### <a name="request"></a>Запрос
+Ниже приведен пример запроса. Тело запроса — это объект JSON `@odata.id` с параметром и URL-адресом чтения [](../resources/user.md) для объекта пользователя, назначенного в качестве диспетчера.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -57,11 +57,11 @@ PUT /users/{id}/manager/$ref
   "name": "create_manager_for_user"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/users/{id}/manager/$ref
+PUT https://graph.microsoft.com/beta/users/10f17b99-784c-4526-8747-aec8a3159d6a/manager/$ref
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
+    "@odata.id": "https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -90,9 +90,8 @@ Content-type: application/json
 
 ---
 
-Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+
 <!-- {
   "blockType": "response"
 } -->

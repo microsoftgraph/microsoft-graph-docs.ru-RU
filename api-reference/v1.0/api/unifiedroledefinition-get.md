@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 146ca156103dbc2f9cdd29dadd646da5229b5f37
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1c8b7063877f4a53986ac9683025db84e843fb11
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128213"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672072"
 ---
 # <a name="get-unifiedroledefinition"></a>Get unifiedRoleDefinition
 
 Пространство имен: microsoft.graph
 
-Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleDefinition.](../resources/unifiedRoleDefinition.md) В **настоящее время** каталог — это единственный поддерживаемый поставщик управления доступом на основе ролей (RBAC).
+Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) . В **настоящее время** каталог — это единственный поддерживаемый поставщик управления доступом на основе ролей (RBAC).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "62128213"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,13 +46,13 @@ GET /roleManagement/directory/roleDefinitions/{id}
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и запрашиваемого объекта [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -247,7 +247,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>Пример 3. Определение встроенной роли Azure AD и $expand роли, которую она наследует
+### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>Пример 3. Определение встроенной роли Azure AD и $expand роли, от которую она наследуется
 
 #### <a name="request"></a>Запрос
 

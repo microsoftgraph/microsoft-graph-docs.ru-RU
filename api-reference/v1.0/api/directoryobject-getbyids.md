@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: high
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b55f5bc2d942ff622374fb44b3521df95667591f
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 3aae6f488bfe2e652cdffaec85ad7f73cd664946
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339552"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668572"
 ---
 # <a name="directoryobject-getbyids"></a>directoryObject: getByIds
 
@@ -33,7 +33,7 @@ ms.locfileid: "62339552"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All |
 
@@ -61,7 +61,7 @@ POST /directoryObjects/getByIds
 | Параметр   | Тип |Описание|
 |:---------------|:--------|:----------|
 |ids|Коллекция String| Коллекция идентификаторов, для которой необходимо возвратить объекты. Идентификаторы имеют формат GUID и представлены в виде строк. Вы можете указать до 1000 идентификаторов. |
-|types|Коллекция объектов string| Коллекция типов ресурсов, указывающая набор коллекций ресурсов, в котором необходимо выполнить поиск. Если аргумент не указан, по умолчанию используется объект [directoryObject](../resources/directoryobject.md), который содержит все типы ресурсов, определенные в каталоге. В коллекции можно указать любой объект, производный от [directoryObject](../resources/directoryobject.md). Пример: объекты [user](../resources/user.md), [group](../resources/group.md) и [device](../resources/device.md). <br/><br/>Для поиска ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/cloud-solution-provider), укажите [directoryObjectPartnerReference](../resources/directoryobjectpartnerreference.md). Если аргумент не указан, по умолчанию используется объект [directoryObject](../resources/directoryobject.md), который содержит все типы ресурсов, определенные в каталоге, кроме ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/cloud-solution-provider).</br><br/> В значениях не учитывается регистр символов.|
+|types|Коллекция объектов string| Коллекция типов ресурсов, указывающая набор коллекций ресурсов для поиска. Если аргумент не указан, по умолчанию используется объект [directoryObject](../resources/directoryobject.md), который содержит все типы ресурсов, определенные в каталоге. В коллекции можно указать любой объект, производный от [directoryObject](../resources/directoryobject.md). Пример: объекты [user](../resources/user.md), [group](../resources/group.md) и [device](../resources/device.md).<br/><br/>Для поиска ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/cloud-solution-provider), укажите [directoryObjectPartnerReference](../resources/directoryobjectpartnerreference.md). Если аргумент не указан, по умолчанию используется объект [directoryObject](../resources/directoryobject.md), который содержит все типы ресурсов, определенные в каталоге, кроме ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/cloud-solution-provider).</br><br/> В значениях не учитывается регистр символов.|
 
 ## <a name="response"></a>Отклик
 

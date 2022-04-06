@@ -2,13 +2,13 @@
 title: Компонент To Do в Microsoft Graph Toolkit
 description: Компонент To Do позволяет пользователю просматривать, добавлять, удалять, выполнять или изменять задачи To Do. Он поддерживает любые задачи в Microsoft To-Do.
 ms.localizationpriority: medium
-author: shweaver-MSFT
-ms.openlocfilehash: de9c49937b3db76c2d93c308b88d03ec577f76ed
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+author: sebastienlevert
+ms.openlocfilehash: 6a77d75609cbff22fbaccefe45cd1f8b9e5355ca
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072693"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589249"
 ---
 # <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>Компонент To Do в Microsoft Graph Toolkit
 
@@ -103,7 +103,7 @@ mgt-todo {
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
 `taskClick` | Пожары, когда пользователь щелкает или нажимает на задачу | Выбранная [задача](https://github.com/microsoftgraph/microsoft-graph-toolkit/blob/66a5bbb6591e6260e95dbc00c0d06bcbe8dcef38/packages/mgt-components/src/components/mgt-todo/graph.todo.ts#L41) | Нет | Нет | Нет
 
-Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
+Дополнительные сведения об обработке событий см. в [этой информации](../customize-components/events.md).
 
 ## <a name="templates"></a>Шаблоны
 
@@ -132,8 +132,8 @@ mgt-todo {
 
 | Конфигурация | Разрешение | API |
 | ------------- | ---------- | --- |
-| `targetId` set | Tasks.Read | [/me/todo/lists/${listId}](/graph/api/todotasklist-get?view=graph-rest-1.0&tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
-| `targetId` не установлено | Tasks.Read | [/me/todo/lists](/graph/api/todo-list-lists?view=graph-rest-1.0&tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| `targetId` set | Tasks.Read | [/me/todo/lists/${listId}](/graph/api/todotasklist-get?tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| `targetId` не установлено | Tasks.Read | [/me/todo/lists](/graph/api/todo-list-lists?tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
 | создание, обновление или удаление задачи | Tasks.ReadWrite | [/me/todo/lists/{todoTaskListId}/tasks/{taskId}](/graph/api/todotask-get) |
 
 ## <a name="authentication"></a>Проверка подлинности

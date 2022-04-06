@@ -4,12 +4,12 @@ description: Подключение к данным Microsoft Graph исполь
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 8c60df49086ac3b0ebc45475d152e7d7a7d973d9
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: b7ac532d3a175e2ef93a77c8413b245da3bf1ec8
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072602"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63724021"
 ---
 # <a name="microsoft-graph-data-connect-integration-with-privileged-access-management"></a>Интеграция подключения к данным Microsoft Graph с Privileged Access Management
 
@@ -71,7 +71,7 @@ ms.locfileid: "62072602"
    >**Примечание.** Поле context запроса на доступ к данным описывает параметры и свойства действия копирования.
 
    ```powershell
-   Get-ElevatedAccessRequest -RequestId $requestId).Context | ConvertFrom-Json
+   Get-ElevatedAccessRequest -RequestId ($requestId).Context | ConvertFrom-Json
    ```
 
    Вы получите примерно следующий ответ.

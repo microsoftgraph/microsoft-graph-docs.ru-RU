@@ -5,12 +5,12 @@ description: Ресурс drive представляет хранилище OneD
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 1df4114e9dd79dd5845ca0cf1aedfdc458b83668
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: c92e5ef52ed02ba1428624c65d7fd075a27cfc15
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123736"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63560021"
 ---
 # <a name="drive-resource-type"></a>Тип ресурса drive
 
@@ -68,7 +68,7 @@ ms.locfileid: "61123736"
 | items        | Коллекция [driveItem][]             | Все элементы, содержащиеся на диске. Только для чтения. Допускается значение null.
 | root         | [driveItem][]                        | Корневая папка на диске. Только для чтения.
 | special      | Коллекция [driveItem][]             | Коллекция общих папок, доступных в OneDrive. Только для чтения. Допускается значение null.
-
+| список         | [list][]                             | Для дисков в SharePoint, базовый список библиотек документов. Только для чтения. Допускается значение null.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -89,6 +89,7 @@ ms.locfileid: "61123736"
     "webUrl",
     "items",
     "root",
+    "sharepointIds",
     "special",
     "system"
   ],
@@ -113,10 +114,11 @@ ms.locfileid: "61123736"
   "owner": {"@odata.type": "microsoft.graph.identitySet"},
   "quota": {"@odata.type": "microsoft.graph.quota"},
   "root": {"@odata.type": "microsoft.graph.driveItem"},
+  "sharepointIds": {"@odata.type": "microsoft.graph.sharepointIds"},
   "special": [{"@odata.type": "microsoft.graph.driveItem"}],
   "system": {"@odata.type": "microsoft.graph.systemFacet"},
   "webUrl": "string",
-  "sharepointIds": {"@odata.type": "microsoft.graph.sharepointIds"}
+
 }
 ```
 
@@ -126,6 +128,7 @@ ms.locfileid: "61123736"
 [itemActivity]: itemactivity.md
 [item-resource]: driveitem.md
 [identity-set]: identityset.md
+[list]: list.md
 [quota-facet]: quota.md
 [drive-resource]: drive.md
 [drive-activities]: ../api/activities-list.md

@@ -2,15 +2,15 @@
 title: тип ресурса meetingParticipantInfo
 description: Сведения о участнике собрания.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 03d2c207d8c64d3e8b63dae223b624f575b193fd
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 5d3f8e5fb055fa45ef150aa9ef7eef82980d0755
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956955"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668586"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>тип ресурса meetingParticipantInfo
 
@@ -22,11 +22,23 @@ ms.locfileid: "50956955"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип                          | Описание                                                                        |
-| :------- | :---------------------------- | :--------------------------------------------------------------------------------- |
-| identity | [identitySet](identityset.md) | Сведения о удостоверениях участника.                                           |
-| upn      | Строка                        | Основное имя участника пользователя.                                            |
-| role     | onlineMeetingRole             | Указывает роль участника собрания.  Возможные значения `attendee` , `presenter` и `producer` `unknownFutureValue` .|
+| Свойство | Тип             | Описание                 |
+| :------- | :-------------------- | :------------------------------ |
+| удостоверение | [identitySet](identityset.md) | Сведения о удостоверениях участника.           |
+| upn      | Строка                        | Основное имя участника пользователя.             |
+| role     | [onlineMeetingRole](#onlinemeetingrole-values)     | Указывает роль участника собрания.|
+
+### <a name="onlinemeetingrole-values"></a>значения onlineMeetingRole
+
+В следующей таблице перечислены участники [развивающегося перечисления](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Чтобы получить значение `Prefer: include-unknown-enum-members` `coorganizer` в этом развиваемом переуме, необходимо использовать заглавную заготку запроса.
+
+| Значение              | Описание                                                            |
+| ------------------ | ---------------------------------------------------------------------- |
+| attendee            | Роль участника — участник. Это значение применяется ко всем собраниям.   |
+| presenter           | Роль участника — презентер. Это значение применимо к собраниям с разрешенным **значениемPresenter** `roleIsPresenter`или Teams в прямом эфире. |
+| производитель            | Роль участника — продюсер. Это значение применяется только к Teams событию.  |
+| coorganizer | Роль участника является соорганизатором. Это значение применимо ко всем собраниям, кроме Teams события в прямом эфире. |
+| unknownFutureValue | Эволюционирующее значение sentinel. Не следует использовать. |
 
 ## <a name="json-representation"></a>Представление JSON
 

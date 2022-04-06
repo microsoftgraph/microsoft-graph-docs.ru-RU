@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7d49f0d971b00d21abbbaffc6989f297ce18ab09
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
-ms.translationtype: HT
+ms.openlocfilehash: b7770b939a7c125657c3ea751c515f108598127d
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804670"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684930"
 ---
 # <a name="list-joinedteams"></a>Перечисление объектов joinedTeams
 
@@ -19,6 +19,7 @@ ms.locfileid: "62804670"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение [команд](../resources/team.md) в Microsoft Teams, непосредственным участником которых является пользователь.
+> **Примечание**. Этот API не возвращает группу узлов общего канала, непосредственным участником которого является пользователь.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -58,6 +59,7 @@ GET /users/{id | user-principal-name}/joinedTeams
 
 > [!Note]
 > В настоящее время этот вызов API возвращает только свойства **id**, **displayName** и **description** [команды](../resources/team.md). Чтобы получить все свойства, воспользуйтесь операцией [Получение команды](../api/team-get.md). Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams).
+
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -124,7 +126,10 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 - [Перечисление всех команд](/graph/teams-list-all-teams)
+- [Перечисление связанных команд](../api/associatedteaminfo-list.md)
+- [Перечисление всех команд в организации](../api/teams-list.md)
 - [Получение команды](../api/team-get.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

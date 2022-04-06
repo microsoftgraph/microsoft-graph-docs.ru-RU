@@ -2,15 +2,15 @@
 title: Тип ресурса intuneBrand
 description: Ресурс intuneBrand содержит данные, которые используются для настройки внешнего вида приложения "Корпоративный портал" и веб-портала пользователя.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 75e6d8101247517e5b86f256d7cf3c8faf11ee01
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3017408294f8b09abfadccae491ba54a2fbaa15d
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017228"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629269"
 ---
 # <a name="intunebrand-resource-type"></a>Тип ресурса intuneBrand
 
@@ -33,7 +33,7 @@ ms.locfileid: "59017228"
 |showNameNextToLogo|Boolean|Логическое значение, которое определяет, отображается ли возле изображения логотипа указанное администратором отображаемое имя.|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемые изображения, отображаемые на Корпоративный портал странице приложения|
 |showDisplayNameNextToLogo|Boolean|Логическое значение, которое определяет, отображается ли возле изображения логотипа указанное администратором отображаемое имя.|
-|roleScopeTagIds|Коллекция String|Список тегов области, присвоенных профилю брендинга по умолчанию|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области, присвоенных профилю брендинга по умолчанию|
 |contactITName|String|Имя пользователя или название организации, ответственных за ИТ-поддержку.|
 |contactITPhoneNumber|String|Номер телефона пользователя или организации, ответственных за ИТ-поддержку.|
 |contactITEmailAddress|String|Адрес электронной почты пользователя или организации, ответственных за ИТ-поддержку.|
@@ -43,15 +43,15 @@ ms.locfileid: "59017228"
 |privacyUrl|String|URL-адрес страницы с политикой конфиденциальности компании или организации.|
 |customPrivacyMessage|Строка|Пользовательское сообщение о конфиденциальности, используемом для объяснения того, что организация не может видеть или делать на управляемых устройствах.|
 |customCantSeePrivacyMessage|Строка|Пользовательское сообщение о конфиденциальности, используемом для объяснения того, что организация не может видеть или делать на управляемых устройствах.|
-|customCanSeePrivacyMessage|String|Пользовательское сообщение о конфиденциальности, используемом для объяснения того, что организация может видеть и делать на управляемых устройствах.|
+|customCanSeePrivacyMessage|Строка|Пользовательское сообщение о конфиденциальности, используемом для объяснения того, что организация может видеть и делать на управляемых устройствах.|
 |isRemoveDeviceDisabled|Boolean|Boolean, который представляет, отключил ли администратор действие "Удалить устройство" на корпоративных устройствах.|
-|isFactoryResetDisabled|Логический|Boolean, который представляет, отключил ли администратор действие "Сброс фабрики" на корпоративных устройствах.|
+|isFactoryResetDisabled|Логическое|Boolean, который представляет, отключил ли администратор действие "Сброс фабрики" на корпоративных устройствах.|
 |companyPortalBlockedActions|[коллекция companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)|Коллекция заблокированных действий на портале компании в зависимости от типов владения платформой и устройствами.|
-|showAzureADEnterpriseApps|Логический|Boolean, который указывает, будут ли Enterprise AzureAD приложения будут показаны в Корпоративный портал|
+|showAzureADEnterpriseApps|Boolean|Boolean, который указывает, будут ли Enterprise AzureAD apps в Корпоративный портал|
 |showOfficeWebApps|Boolean|Boolean, который указывает, Office веб-приложения будут показаны в Корпоративный портал|
-|sendDeviceOwnershipChangePushNotification|Boolean|Boolean, который указывает, отправляется ли пользователям push-уведомление при смене типа владения устройствами с личного на корпоративный.|
+|sendDeviceOwnershipChangePushNotification|Boolean|SendDeviceOwnershipChangePushNotification будет обесценен в 06/2022 и перестанет возвращать значение в 07/2022. A boolean that indicates if a push notification is sent to users when their device ownership type changes from personal to corporate|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Настраиваемый поток регистрации устройств, отображаемый конечному пользователю. Возможные значения: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
-|отключениеClientTelemetry|Boolean|Применяется к телеметрии, отправленной от всех клиентов в службу Intune. При отключении все упреждающие предупреждения о неполадок в клиенте отключаются, а параметры телеметрии отображаются неактивными или скрытыми для пользователя устройства.|
+|отключениеClientTelemetry|Логический|Применяется к телеметрии, отосланной от всех клиентов в Intune службу. При отключении все упреждающие предупреждения о неполадок в клиенте отключаются, а параметры телеметрии отображаются неактивными или скрытыми для пользователя устройства.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -121,6 +121,7 @@ ms.locfileid: "59017228"
   "disableClientTelemetry": true
 }
 ```
+
 
 
 

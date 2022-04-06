@@ -1,16 +1,16 @@
 ---
 title: тип ресурса unifiedRoleManagementPolicyAuthenticationContextRule
 description: В единойroleManagementPolicyAuthenticationContextRule указывается правило включить, связанное с политикой управления ролью. Она получена из microsoft.graph.unifiedRoleManagementPolicyRule.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7649bec300d49a1d1e09af68d4478f55770516be
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 12fcff3b0a326aa15900ea8b782a1c3fc243cdff
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695053"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510648"
 ---
 # <a name="unifiedrolemanagementpolicyauthenticationcontextrule-resource-type"></a>тип ресурса unifiedRoleManagementPolicyAuthenticationContextRule
 
@@ -23,7 +23,7 @@ ms.locfileid: "60695053"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|claimValue|String|Значение утверждения контекста проверки подлинности.|
+|claimValue|Строка|Значение утверждения контекста проверки подлинности.|
 |id|String|Уникальный идентификатор для правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 |isEnabled|Boolean|Указывает, включен ли параметр.|
 |target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Цель правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|

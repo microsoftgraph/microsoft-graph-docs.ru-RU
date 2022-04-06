@@ -1,35 +1,35 @@
 ---
 title: Тип ресурса educationClass
-description: 'Представляет курс в учебном заведении. Ресурс **educationClass** соответствует группе Microsoft 365 и имеет один и тот же ID. Учащиеся — постоянные участники курса, а преподаватели являются владельцами и обладают соответствующими правами. Чтобы решения для Office работали правильно, преподаватели должны быть включены как в коллекцию teachers, так и в коллекцию members.  '
+description: 'Представляет курс в учебном заведении. Ресурс **educationClass** соответствует группе Microsoft 365 и использует тот же идентификатор. Учащиеся — постоянные участники курса, а преподаватели являются владельцами и обладают соответствующими правами. Чтобы решения для Office работали правильно, преподаватели должны быть включены как в коллекцию teachers, так и в коллекцию members.  '
 ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: dfe36d8068d0a9fa8d2c9f6c8d38b504ee9c83c5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e3b3a8618342afd21f9d18cc1d1c96fa2ed9bbf9
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084561"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685245"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 
 Пространство имен: microsoft.graph
 
-Представляет курс в учебном заведении. Ресурс **educationClass** соответствует группе Microsoft 365 и имеет один и тот же ID. Учащиеся — постоянные участники курса, а преподаватели являются владельцами и обладают соответствующими правами. Чтобы решения для Office работали правильно, преподаватели должны быть включены как в коллекцию teachers, так и в коллекцию members.
+Представляет курс в учебном заведении. Ресурс **educationClass** соответствует группе Microsoft 365 и использует тот же идентификатор. Учащиеся — постоянные участники курса, а преподаватели являются владельцами и обладают соответствующими правами. Чтобы решения для Office работали правильно, преподаватели должны быть включены как в коллекцию teachers, так и в коллекцию members.
 
-Наследует от [объекта](../resources/entity.md).
+Наследует [от сущности](../resources/entity.md).
 
 ## <a name="methods"></a>Методы
 
 | Метод                                                   | Тип возвращаемых данных                                                 | Описание                                                                                          |
 | :------------------------------------------------------- | :---------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
-| [Перечисление educationClasses](../api/educationclass-list.md)   | Коллекция [educationClass](../resources/educationclass.md) | Получите список объектов [educationClass](../resources/educationclass.md) и их свойств.     |
-| [Создание educationClass](../api/educationclass-post.md) | [educationClass](../resources/educationclass.md)            | Создание нового [объекта educationClass.](../resources/educationclass.md)                                |
-| [Получение educationClass](../api/educationclass-get.md)       | [educationClass](../resources/educationclass.md)            | Ознакомьтесь с свойствами и отношениями объекта [educationClass.](../resources/educationclass.md) |
-| [Update educationClass](../api/educationclass-update.md) | [educationClass](../resources/educationclass.md)            | Обновление свойств объекта [educationClass.](../resources/educationclass.md)                 |
-| [Удаление educationClass](../api/educationclass-delete.md) | Нет                                                        | Удаление [объекта educationClass.](../resources/educationclass.md)                                  |
-| [delta](../api/educationclass-delta.md)                  | Коллекция [educationClass](../resources/educationclass.md) | Получите дополнительные изменения в коллекции ресурсов.                                                  |
+| [Перечисление educationClasses](../api/educationclass-list.md)   | Коллекция [educationClass](../resources/educationclass.md) | Получение списка объектов [educationClass](../resources/educationclass.md) и их свойств.     |
+| [Создание educationClass](../api/educationclass-post.md) | [educationClass](../resources/educationclass.md)            | Создайте объект [educationClass](../resources/educationclass.md) .                                |
+| [Получение educationClass](../api/educationclass-get.md)       | [educationClass](../resources/educationclass.md)            | Чтение свойств и связей объекта [educationClass](../resources/educationclass.md) . |
+| [Обновление educationClass](../api/educationclass-update.md) | [educationClass](../resources/educationclass.md)            | Обновление свойств объекта [educationClass](../resources/educationclass.md) .                 |
+| [Удаление educationClass](../api/educationclass-delete.md) | Никаких других изменений не происходит                                                        | Удаление объекта [educationClass](../resources/educationclass.md) .                                  |
+| [delta](../api/educationclass-delta.md)                  | Коллекция [educationClass](../resources/educationclass.md) | Получение добавочных изменений в коллекции ресурсов.                                                  |
 
 ## <a name="properties"></a>Свойства
 
@@ -44,18 +44,22 @@ ms.locfileid: "59084561"
 | externalName         | String                                         | Название курса в системе синхронизации.                           |
 | externalId           | String                                         | Идентификатор курса из системы синхронизации.                           |
 | externalSource       | educationExternalSource                        | Способ создания этого курса. Возможные значения: `sis`, `manual`.  |
-| externalSourceDetail | String                                         | Имя внешнего источника, из которого были созданы эти ресурсы. |
-| оценка                | String                                         | Уровень класса.                                          |
+| externalSourceDetail | String                                         | Имя внешнего источника, из которой были созданы эти ресурсы. |
+| оценка                | String                                         | Уровень оценки класса.                                          |
 | term                 | [educationTerm](../resources/educationterm.md) | Срок для этого курса.                                               |
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип                                                          | Описание                                               |
 | :----------- | :------------------------------------------------------------ | :-------------------------------------------------------- |
-| group;        | [group](../resources/group.md)                                | Объект Microsoft 365 группы.                |
+| assignments  | [коллекция educationAssignment](educationAssignment.md) | Все назначения, связанные с этим классом. Допускается значение null.     |
+| group;        | [group](../resources/group.md)                                | Базовый объект Microsoft 365 группы.                |
 | members      | Коллекция [educationUser](../resources/educationuser.md)     | Все пользователи для этого курса. Допускается значение NULL.                         |
 | schools      | Коллекция [educationSchool](../resources/educationschool.md) | Все учебные заведения, с которыми сопоставлен этот курс. Допускается значение NULL. |
-| teachers     | Коллекция [educationUser](../resources/educationuser.md)     | Все преподаватели для этого курса. Допускается значение null.                      |
+| teachers     | Коллекция [educationUser](../resources/educationuser.md)     | Все преподаватели для этого курса. Допускается значение NULL.                      |
+|assignmentCategories| [Коллекция educationCategory](educationcategory.md) | Все категории, связанные с этим классом. Допускается значение null. |
+|assignmentDefaults| [Коллекция educationAssignmentDefaults](educationassignmentdefaults.md) | Задает значения по умолчанию на уровне класса, которые учитываются новыми назначениями, созданными в классе. |
+|assignmentSettings| [Коллекция educationAssignmentSettings](educationassignmentsettings.md) | Задает параметры назначений на уровне класса. |
 
 ## <a name="json-representation"></a>Представление JSON
 

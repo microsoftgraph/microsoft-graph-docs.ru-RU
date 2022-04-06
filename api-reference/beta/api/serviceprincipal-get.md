@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 933a7cd6f4cee0fdb0abdc78296eaac949824948
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: 108337592abcee2411c3f17327fbac36afdf648d
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894700"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669734"
 ---
 # <a name="get-serviceprincipal"></a>Получение объекта servicePrincipal
 
@@ -26,7 +26,7 @@ ms.locfileid: "62894700"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -44,8 +44,7 @@ GET /servicePrincipals/{id}
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select` и `$top` для настройки отклика. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
 
-По умолчанию этот API не возвращает значение открытого ключа **key** в свойстве **keyCredentials**, если в запросе `$select` не указан параметр **keyCredentials**.
-Например, `$select=id,appId,keyCredentials`.
+По умолчанию этот API не возвращает значение открытого ключа **key** в свойстве **keyCredentials**, если в запросе `$select` не указан параметр **keyCredentials**. Например, `$select=id,appId,keyCredentials`.
 
 При использовании `$select` с целью получения **keyCredentials** для субъектов-служб применяется ограничение регулирования в количестве 150 запросов в минуту для каждого клиента.
 
@@ -53,6 +52,9 @@ GET /servicePrincipals/{id}
 | Имя           | Описание                |
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {token}. Обязательный.  |
+| Принять-Язык| Код языка. Необязательное свойство.   |
+
+Предоставление заголовка **Accept-Language** с поддерживаемым кодом языка, например `es-ES` или `de-DE`, приведет к возврату локализованных значений там, где они доступны. Обратите внимание, что заголовок не поддерживается для [операций перечисления](serviceprincipal-list.md).
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 1293e590b255abfeec446ce77972d4195daa7397
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e913e8b2ec5b13de4097a9015ad790af50717042
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110758"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509905"
 ---
 # <a name="delete-delegatedpermissionclassification"></a>Удаление делегированияPermissionClassification
 
 Пространство имен: microsoft.graph
 
-Удаляет [делегированнуюPermissionClassification,](../resources/delegatedPermissionClassification.md) которая ранее была назначена для делегирования разрешения.
+Удаляет [делегированнуюPermissionClassification](../resources/delegatedPermissionClassification.md) , которая ранее была назначена для делегирования разрешения.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "62110758"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PermissionGrantPolicy.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | Policy.ReadWrite.PermissionGrant |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | PermissionGrantPolicy.ReadWrite.All |
+|Приложение | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ DELETE /servicePrincipals/{id}/delegatedPermissionClassifications/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

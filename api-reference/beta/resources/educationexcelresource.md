@@ -1,34 +1,39 @@
 ---
-title: Тип ресурса Едукатионексцелресаурце
-description: 'Подкласс объекта Едукатионресаурце. Этот тип ресурса представляет документ Excel.  '
+title: Тип ресурса educationExcelResource
+description: 'Подкласс educationResource. Этот тип ресурса представляет Excel документа.  '
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 96fc84227bc7c8e5140ef06ce62ea2d485badab7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 29c892c8f1c4f4d961db654e008eed315407081b
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095529"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685056"
 ---
-# <a name="educationexcelresource-resource-type"></a>Тип ресурса Едукатионексцелресаурце
+# <a name="educationexcelresource-resource-type"></a>Тип ресурса educationExcelResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Подкласс объекта [едукатионресаурце](educationresource.md). Этот тип ресурса представляет документ Excel.  
+Подкласс [educationResource](educationresource.md). Этот тип ресурса представляет Excel документа.  
  
->**Примечание:** Файл Excel должен находиться в папке ресурсов, связанной с назначением или объектом отправки, к которому принадлежит ресурс.
+>**Примечание:** Файл Excel должен находиться в папке ресурсов, связанной с объектом назначения или отправки, к которому принадлежит этот ресурс.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fileUrl|Строка|Указатель на объект файла Excel.|
+|fileUrl|String|Указатель на объект Excel файла.|
+|createdBy|String|Отображаемое имя пользователя, создавшего этот объект.|
+|createdDateTime|DateTimeOffset|Дата, когда была добавлена повторная ошибка.|
+|displayName|string|Отображаемое имя ресурса.|
+|lastModifiedBy|[identitySet](identityset.md)|Последний пользователь, который изменяет ресурс.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения ресурса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -42,7 +47,12 @@ ms.locfileid: "48095529"
 
 ```json
 {
-  "fileUrl": "String"
+  "fileUrl": "String",
+  "createdBy": "String (User)",
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "lastModifiedBy": "String (User)",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 ```

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса запроса
 description: Тип абстрактного объекта для моделирования рабочего процесса асинхронизированного запроса для создания, обновления и удаления объекта.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: fad1d480fbb792ca63b05ddfe8507b2ede9d54e8
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 871f2232e57bdd24aeff9842df699ea0601146eb
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695253"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509191"
 ---
 # <a name="request-resource-type"></a>тип ресурса запроса
 
@@ -20,18 +20,18 @@ ms.locfileid: "60695253"
 
 Тип абстрактного объекта для моделирования рабочего процесса асинхронизированного запроса для создания, обновления и удаления объекта.
 
-Наследует от [объекта](entity.md).
+Наследует [от сущности](entity.md).
 
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|approvalId|String|Идентификатор утверждения запроса.|
+|approvalId|Строка|Идентификатор утверждения запроса.|
 |completedDateTime|DateTimeOffset|Время завершения запроса.|
 |createdBy|[identitySet](identityset.md)|Пользователь, создавший этот запрос.|
 |createdDateTime|DateTimeOffset|Время создания запроса.|
-|customData|String|Свободное текстовое поле для определения настраиваемой информации для запроса. Не используется.|
-|status|String|Состояние запроса. Значение null не допускается. Возможные значения: `Canceled` `Denied` , , , , , , , , `Failed` и `Granted` `PendingAdminDecision` `PendingApproval` `PendingProvisioning` `PendingScheduleCreation` `Provisioned` `Revoked` `ScheduleCreated` . Значение null не допускается.|
+|customData|Строка|Свободное текстовое поле для определения настраиваемой информации для запроса. Не используется.|
+|status|String|Состояние запроса. Значение null не допускается. Возможные значения: `Canceled`, , `Denied`, `Failed`, `Granted`, `PendingAdminDecision`, `PendingApproval`, `PendingProvisioning`, `PendingScheduleCreation`и `Revoked``Provisioned``ScheduleCreated`. Значение null не допускается.|
 |id|String|Идентификатор запроса. Только для чтения. Значение null не допускается. Наследуется от [сущности](entity.md).|
 
 ## <a name="relationships"></a>Связи

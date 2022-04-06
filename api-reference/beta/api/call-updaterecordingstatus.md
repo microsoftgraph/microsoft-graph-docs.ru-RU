@@ -1,16 +1,16 @@
 ---
 title: 'вызов: updateRecordingStatus'
 description: Обновление состояния записи приложения, связанного с вызовом.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ef8ea1bf9b5e48bba453addfe3e778856ce4126c
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 4b1757c3a4a3c28613ff8c45c4ced22beeb9e207
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341197"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608011"
 ---
 # <a name="call-updaterecordingstatus"></a>вызов: updateRecordingStatus
 
@@ -18,7 +18,7 @@ ms.locfileid: "62341197"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление состояния записи приложения, связанного с вызовом. Для этого необходимо использовать Teams [на основе политики записи](/MicrosoftTeams/teams-recording-policy).
+Обновление состояния записи приложения, связанного с вызовом. Это требует использования решения записи [Teams на основе политики](/MicrosoftTeams/teams-recording-policy).
 
 > Дополнительное **ограничение. Вы** не можете использовать API доступа к мультимедиа для записи или иного сохраняемой медиаконтента из звонков или собраний, к которые ваше приложение получает доступ, или данных, полученных из этого медиаконтента ("запись" или "запись"), не вызывая сначала **API updateRecordingStatus**, чтобы указать, что запись началась, и получить ответ на успех от этого API. Если ваше приложение начинает записывать любое собрание, оно должно закончить запись перед вызовом **API updateRecordingStatus** , чтобы указать, что запись завершена.
 
@@ -29,7 +29,7 @@ ms.locfileid: "62341197"
 |:---------------------------------------|:-------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                                    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                    |
-| Приложение                            | Calls.JoinGroupCalls.All, Calls.AccessMedia.All  |
+| Для приложений                            | Calls.JoinGroupCalls.All, Calls.AccessMedia.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
