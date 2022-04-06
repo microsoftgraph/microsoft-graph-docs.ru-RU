@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a13b1d7d8a418d5332f098043bb3d3bd1428e4a
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 06f56ede9e8c98471992dac96a5d7de0797bd18a
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62291424"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630704"
 ---
 # <a name="update-hardwareconfigurationdevicestate"></a>Обновление оборудованияConfigurationDeviceState
 
@@ -29,7 +29,7 @@ ms.locfileid: "62291424"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,15 +53,15 @@ PATCH /deviceManagement/hardwareConfigurations/{hardwareConfigurationId}/deviceR
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Клавиша состояния состояния устройства конфигурации оборудования. Это свойство доступно только для чтения.|
+|id|Строка|Клавиша состояния состояния устройства конфигурации оборудования. Это свойство доступно только для чтения.|
 |deviceName|String|Имя устройства|
 |osVersion|String|Версия операционной системы устройства (например. 10.0.19042.1165, 10.0.19042.1288 и т.д.)|
 |upn|String|Имя участника-пользователя (UPN).|
 |internalVersion|Int32|Внутренняя версия Policy|
 |lastStateUpdateDateTime|DateTimeOffset|Последний период выполнения конфигурации оборудования|
-|configurationState|[runState](../resources/intune-shared-runstate.md)|Состояние конфигурации из последнего выполнения конфигурации оборудования. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
-|configurationOutput|String|Выход выполнения конфигурации оборудования|
-|configurationError|String|Ошибка при выполнении конфигурации оборудования|
+|configurationState|[runState](../resources/intune-deviceconfig-runstate.md)|Состояние конфигурации из последнего выполнения конфигурации оборудования. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|configurationOutput|Строка|Выход выполнения конфигурации оборудования|
+|configurationError|Строка|Ошибка при выполнении конфигурации оборудования|
 
 
 

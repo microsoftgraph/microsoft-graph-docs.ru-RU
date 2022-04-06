@@ -1,16 +1,16 @@
 ---
 title: 'unifiedRoleAssignmentScheduleRequest: отмена'
 description: Отмена единой системыRoleAssignmentScheduleRequest.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2314bd9284a5f801e64b2ddf38d5f0ff9b8e9914
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 2e4049599986e847b7ac198ccadfdd3ae9bffdfe
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348192"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509730"
 ---
 # <a name="unifiedroleassignmentschedulerequest-cancel"></a>unifiedRoleAssignmentScheduleRequest: отмена
 Пространство имен: microsoft.graph

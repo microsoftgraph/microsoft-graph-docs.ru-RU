@@ -1,16 +1,16 @@
 ---
 title: 'вызов: subscribeToTone'
 description: Подписка на DTMF (двухтонная многочастотная сигнализация). Это позволяет вам быть уведомленным, когда пользователь нажимает клавиши на "Dialpad".
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 33a8d72f9beb72707d25790e9026d4525895d59a
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: f0daef9d21f35e0135b7d53b2dc578abf85cb4c2
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344322"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608074"
 ---
 # <a name="call-subscribetotone"></a>вызов: subscribeToTone
 
@@ -29,7 +29,7 @@ ms.locfileid: "62344322"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Приложение     | Calls.AccessMedia.All                       |
+| Для приложений     | Calls.AccessMedia.All                       |
 
 >**Примечание:** Любые предоставленные данные тона могут не сохраняться. Убедитесь, что вы соответствуете законам и правилам вашей области в отношении защиты данных и конфиденциальности сообщений. Дополнительные сведения можно узнать из [условий использования](/legal/microsoft-apis/terms-of-use) и обратившись за юридической помощью.
 
@@ -49,7 +49,7 @@ POST /communications/calls/{id}/subscribeToTone
 
 | Параметр      | Тип    | Описание |
 |:---------------|:--------|:------------|
-| clientContext  | String  | Уникальная строка контекста клиента. Может иметь не более 256 символов. |
+| clientContext  | Строка  | Уникальная строка контекста клиента. Может иметь не более 256 символов. |
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.

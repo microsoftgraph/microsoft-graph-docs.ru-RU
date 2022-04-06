@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Ресурс baseItemVersion представляет предыдущую версию элемента или записи.
 ms.date: 09/17/2017
 title: BaseItemVersion
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 0d007d18f6329763fa6a7a426f1f944ef1fb4106
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7db0626d3915bfb7a76e492ede0d8cfec256f522
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089735"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63724145"
 ---
 # <a name="baseitemversion-resource-type"></a>Тип ресурса baseItemVersion
 
@@ -20,7 +20,6 @@ ms.locfileid: "48089735"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **baseItemVersion** представляет предыдущую версию элемента или записи.
-
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -38,13 +37,12 @@ ms.locfileid: "48089735"
 
 ## <a name="properties"></a>Свойства
 
-|      Имя свойства       |                         Тип                         |                               Описание                               |
+| Свойство                 | Тип                                                 | Описание                                                             |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | Идентификатор версии. Только для чтения.                                       |
 | **lastModifiedBy**;       | [IdentitySet](../resources/identityset.md)           | Удостоверение пользователя, который последним изменил версию. Только для чтения.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Дата и время последнего изменения версии. Только для чтения.                 |
 | **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Указывает состояние публикации конкретной версии. Только для чтения. |
-
 
 <!--
 {
@@ -56,5 +54,3 @@ ms.locfileid: "48089735"
   "suppressions": []
 }
 -->
-
-

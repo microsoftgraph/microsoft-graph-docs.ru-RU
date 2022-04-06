@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 48d51c1841ef54beae7e47b7b5fcd087fe730fe2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7ace4e5455034c431391b41eaf983bae70ddb4b1
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62108804"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668628"
 ---
 # <a name="orgcontact-get-manager"></a>orgContact: get manager
 
@@ -25,7 +25,7 @@ ms.locfileid: "62108804"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -47,7 +47,7 @@ GET /contacts/{id}/manager
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 27ba7d9ab5410ee56f0157279f6ed56104192f18
-ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
+ms.openlocfilehash: 4e970e617e9d9169a183a225ada9b510d632d99e
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2022
-ms.locfileid: "61712049"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629171"
 ---
 # <a name="get-androiddeviceownergeneraldeviceconfiguration"></a>Get androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "61712049"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей [объекта AndroidDeviceOwnerGeneralDeviceConfiguration.](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
+Чтение свойств и связей [объекта AndroidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,14 +48,14 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект AndroidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) в теле отклика.
+В случае успешной `200 OK` работы этот метод возвращает код отклика и [объект AndroidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9557
+Content-Length: 9615
 
 {
   "value": {
@@ -225,6 +225,7 @@ Content-Length: 9557
     "kioskModeManagedHomeScreenSignInBackground": "Kiosk Mode Managed Home Screen Sign In Background value",
     "kioskModeManagedHomeScreenSignInBrandingLogo": "Kiosk Mode Managed Home Screen Sign In Branding Logo value",
     "kioskModeManagedHomeScreenSignInEnabled": true,
+    "kioskModeUseManagedHomeScreenApp": "singleAppMode",
     "microphoneForceMute": true,
     "networkEscapeHatchAllowed": true,
     "nfcBlockOutgoingBeam": true,

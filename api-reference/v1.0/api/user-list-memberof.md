@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1e253abc457e584462ee0aa8568a179f5416e31d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d318a1f8f5aa43e1dc037373f4fc5634af2e5fd9
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107285"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670448"
 ---
 # <a name="list-memberof"></a>Список memberOf
 
@@ -23,7 +23,7 @@ ms.locfileid: "62107285"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.Read, GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | User.Read, GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 

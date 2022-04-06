@@ -5,18 +5,18 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: aa8115c759fb87eca2ca08669106b79a0bd84272
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 90885d0203f4357548ae319e6e8cc49972354118
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091702"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510683"
 ---
 # <a name="list-serviceprincipal-memberof"></a>Перечисление servicePrincipal memberOf
 
 Пространство имен: microsoft.graph
 
-Список групп и ролей каталога, непосредственным участником которых является этот [субъект-служба](../resources/serviceprincipal.md). Эта операция не является транзитивной.
+Получение групп и ролей каталога, непосредственным участником которых является этот объект [servicePrincipal](../resources/serviceprincipal.md). Эта операция не является транзитивной.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,7 +24,7 @@ ms.locfileid: "62091702"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -244,7 +244,7 @@ Content-type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_a_count"
+  "name": "list_serviceprincipals_memberof_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'A')

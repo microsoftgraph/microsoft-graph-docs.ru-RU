@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 39bd3f2aeeb87ff82fca521173b78f2be6a9b215
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: e741b3e35ab2e128b9e8d9a6dd8ed9a265559c39
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854566"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671862"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: проверка Свойств
 
@@ -30,7 +30,7 @@ ms.locfileid: "62854566"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -44,7 +44,7 @@ POST /directoryObjects/validateProperties
 
 | Имя           | Описание      |
 |:---------------|:-----------------|
-| Авторизация  | Bearer {код}. Обязательно.   |
+| Авторизация  | Носитель {code}. Обязательно.   |
 | Content-Type   | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,7 +55,7 @@ POST /directoryObjects/validateProperties
 |entityType|String| `Group` это единственный поддерживаемый тип сущности. |
 |displayName|Строка| Отображаемого имени группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство (displayName или mailNickname). |
 |mailNickname|String| Имя почты группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство (displayName или mailNickname). |
-|onBehalfOfUserId|GUID| ID объекта пользователя, который должен выдать себя при вызове API. Результаты проверки для атрибутов и ролей onBehalfOfUserId. |
+|onBehalfOfUserId|Guid| ID объекта пользователя, который должен выдать себя при вызове API. Результаты проверки для атрибутов и ролей onBehalfOfUserId. |
 
 ## <a name="response"></a>Отклик
 

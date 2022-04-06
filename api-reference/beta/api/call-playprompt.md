@@ -1,16 +1,16 @@
 ---
 title: 'вызов: playPrompt'
 description: Воспроизведения запроса в вызове.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6fafa06afef81cc71d307b8ee768641920cb2857
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 5cbe73f831eebfa2960f5d93df534667eaed1f41
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346200"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607521"
 ---
 # <a name="call-playprompt"></a>вызов: playPrompt
 
@@ -32,7 +32,9 @@ ms.locfileid: "62346200"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Приложение                            | Нет.                                        |
+| Для приложений                            | Calls.Initiate.All, Calls.AccessMedia.All |
+
+> **Примечание:** Разрешения проверяются при вызове; При вызове этого API не проводится дополнительная проверка разрешений. Calls.AccessMedia.All необходим только для вызовов, которые используют носители с использованием приложений.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,8 +56,8 @@ POST /communications/calls/{id}/playPrompt
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |подсказки|[Коллекция MediaPrompt](../resources/mediaprompt.md)| Подсказки для игры. Максимальный поддерживаемый размер коллекции mediaPrompt — 20.|
-|цикл|Логический| Значение цикла. True указывает на бесконечное циклику. Значение по умолчанию  false. |
-|clientContext|String|Уникальная строка контекста клиента. Может иметь не более 256 символов.|
+|цикл|Boolean| Значение цикла. True указывает на бесконечное циклику. Значение по умолчанию  false. |
+|clientContext|Строка|Уникальная строка контекста клиента. Может иметь не более 256 символов.|
 
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект playPromptOperation](../resources/playpromptoperation.md) в тексте ответа.
@@ -120,7 +122,7 @@ Content-Length: 166
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

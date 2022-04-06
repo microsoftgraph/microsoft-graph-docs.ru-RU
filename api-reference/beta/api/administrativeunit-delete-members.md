@@ -1,16 +1,16 @@
 ---
 title: Удаление участника
-description: Используйте этот API для удаления участника (пользователя или группы) из административного подразделения.
+description: Этот API используется для удаления участника (пользователя, группы или устройства) из административного подразделения.
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2d79d9de1f2cf93cec62678150f564381411e0d6
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 2d4cd0dce50476f50711f437790be52e166b8f75
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992067"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669167"
 ---
 # <a name="remove-a-member"></a>Удаление участника
 
@@ -18,7 +18,7 @@ ms.locfileid: "52992067"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API для удаления участника (пользователя или группы) из административного подразделения.
+Этот API используется для удаления участника (пользователя, группы или устройства) из административного подразделения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,9 +26,9 @@ ms.locfileid: "52992067"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | AdministrativeUnit.ReadWrite.All |
+|Для приложений | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ DELETE /administrativeUnits/{id}/members/{id}/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -48,15 +48,15 @@ DELETE /administrativeUnits/{id}/members/{id}/$ref
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса. В приведенной ниже примере идентификатор id1 представляет идентификатор целевого административного подразделения, а id2 — уникальный идентификатор пользователя или группы членов, которые будут удалены из целевого административного подразделения. 
+### <a name="request"></a>Запрос
+Ниже приведен пример запроса. В приведенной `{id1}` `{id2}` ниже примере представляет идентификатор целевого административного подразделения и представляет уникальный идентификатор для пользователя, группы или устройства, удаляемого из целевого административного блока. 
 
-```http
+```msgraph-interactive
 DELETE https://graph.microsoft.com/beta/administrativeUnits/{id1}/members/{id2}/$ref
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа.
  
 ```http
 HTTP/1.1 204 No Content

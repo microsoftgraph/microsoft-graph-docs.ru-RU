@@ -2,23 +2,24 @@
 title: 'группа: проверкаProperties'
 description: Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования.
 ms.localizationpriority: medium
-author: Jordanndahl
+author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 422f9ff13f4b8e1284fa0e638a9589f1bde0ed13
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: d8d95178d3e4b94710c6990230d957d54fc0ffd4
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854708"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589179"
 ---
 # <a name="group-validateproperties"></a>группа: проверкаProperties
 
 Пространство имен: microsoft.graph
 
-Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования.  Клиенты могут использовать этот API, чтобы определить, допустимо ли имя или псевдоним почты перед обновлением Microsoft 365 группы.[](group-update.md) Чтобы проверить свойства перед созданием группы, используйте функцию [directoryobject:validateProperties](directoryobject-validateproperties.md) .
+Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования. Клиенты могут использовать этот API, чтобы определить, допустимо ли имя или псевдоним почты перед тем[](group-update.md), как обновить Microsoft 365 группу. Чтобы проверить свойства перед созданием группы, используйте функцию [directoryobject:validateProperties](directoryobject-validateproperties.md) .
 
 Для свойств отображаемого имени и ником почты выполняются следующие проверки политики:
+
 1. Проверка политики имен префикса и суффикса
 2. Проверка настраиваемой политики запрещенных слов
 
@@ -28,36 +29,39 @@ ms.locfileid: "62854708"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.Read.All, Group.ReadWrite.All |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+| :------------------------------------- | :------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | Group.Read.All, Group.ReadWrite.All         |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | Group.Read.All, Group.ReadWrite.All         |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
-``` http
+
+```http
 POST /groups/{id}/validateProperties
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя           | Описание      |
-|:---------------|:-----------------|
-| Авторизация  | Bearer {token}. Обязательный.    |
-| Content-Type   | application/json |
+| Имя          | Описание               |
+| :------------ | :------------------------ |
+| Авторизация | Bearer {token}. Обязательный. |
+| Content-Type  | application/json          |
 
 ## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр    | Тип   |Описание|
-|:---------------|:--------|:----------|
-|displayName|Строка| Отображаемого имени группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство (**displayName** или **mailNickname**). |
-|mailNickname|String| Имя почты группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство (**displayName** или **mailNickname**). |
-|onBehalfOfUserId|GUID| ID пользователя, который должен выдать себя при вызове API. Результаты проверки для **атрибутов и ролей onBehalfOfUserId** . |
+| Параметр        | Тип   | Описание                                                                                                                                                              |
+| :--------------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName      | Строка | Отображаемого имени группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство (**displayName** или **mailNickname**).  |
+| mailNickname     | String | Имя почты группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство (**displayName** или **mailNickname**). |
+| onBehalfOfUserId | Guid   | ID пользователя, который должен выдать себя при вызове API. Результаты проверки для **атрибутов и ролей onBehalfOfUserId** .                                  |
 
 ## <a name="response"></a>Отклик
+
 В случае успешной проверки `204 No Content` и без ошибок проверки метод возвращает код ответа. Метод не возвращает данные в теле отклика.
 
 Если запрос недействителен, метод возвращает `400 Bad Request` код ответа. Сообщение об ошибке с сведениями о недействительности запроса возвращается в тексте ответа.
@@ -67,16 +71,19 @@ POST /groups/{id}/validateProperties
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1-successful-validation-request"></a>Пример 1. Успешный запрос на проверку
+
 Это пример успешного запроса на проверку.
 
 #### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "group_validateproperties"
 }-->
-``` http
+
+```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/validateProperties
 Content-type: application/json
 
@@ -86,47 +93,57 @@ Content-type: application/json
   "onBehalfOfUserId": "onBehalfOfUserId-value"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-validateproperties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-validateproperties-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/group-validateproperties-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/group-validateproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/group-validateproperties-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-validateproperties-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### <a name="response"></a>Отклик
+
 <!-- {
   "blockType": "response",
   "truncated": true,
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
 
 ### <a name="example-2-request-with-validation-errors"></a>Пример 2. Запрос с ошибками проверки
+
 Это пример запроса с ошибками проверки.
 
 #### <a name="request"></a>Запрос
-``` http
+
+```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/validateProperties
 Content-type: application/json
 
@@ -137,6 +154,7 @@ Content-type: application/json
 ```
 
 #### <a name="response"></a>Отклик
+
 ```http
 HTTP/1.1 422
 Content-type: application/json
@@ -171,4 +189,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса unifiedRoleManagementPolicyExpirationRule
 description: В единойroleManagementPolicyExpirationRule указывается правило включить, связанное с политикой управления ролью. Она получена из microsoft.graph.unifiedRoleManagementPolicyRule.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 08356457995f5e093bd65c9b49e52623d423589c
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: a806283990b42a196c973418eb021542896dd9af
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695883"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510634"
 ---
 # <a name="unifiedrolemanagementpolicyexpirationrule-resource-type"></a>тип ресурса unifiedRoleManagementPolicyExpirationRule
 
@@ -23,8 +23,8 @@ ms.locfileid: "60695883"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
-|isExpirationRequired|Логический|Указывает, требуется ли истечение срока действия для получения права или назначения.|
+|id|Строка|Уникальный идентификатор для правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
+|isExpirationRequired|Boolean|Указывает, требуется ли истечение срока действия для получения права или назначения.|
 |maximumDuration|Длительность|Максимальная продолжительность, разрешенная для получения права или назначения, которая не является постоянной.|
 |target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Цель правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 

@@ -5,16 +5,40 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: ed4b66b4fbaf281ed8be07d3d8cab7432402819b
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: a85865ca6eba3aad8899cd48cdb65ca56e28e1c9
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394518"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608053"
 ---
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
+
+### <a name="accessreviewexpirationbehavior-values"></a>accessReviewExpirationBehavior значения
+
+|Member|
+|:---|
+|keepAccess|
+|removeAccess|
+|acceptAccessRecommendation|
+|unknownFutureValue|
+
+### <a name="allowedtargetscope-values"></a>значения allowedTargetScope
+
+|Member|
+|:---|
+|notSpecified|
+|specificDirectoryUsers|
+|specificConnectedOrganizationUsers|
+|specificDirectoryServicePrincipals|
+|allMemberUsers|
+|allDirectoryUsers|
+|allDirectoryServicePrincipals|
+|allConfiguredConnectedOrganizationUsers|
+|allExternalUsers|
+|unknownFutureValue|
 
 ### <a name="approvalfilterbycurrentuseroptions-values"></a>значения approvalFilterByCurrentUserOptions 
 
@@ -123,7 +147,7 @@ ms.locfileid: "63394518"
 |Member|
 |:---|
 |notSpecified|
-|пользователь|
+|user|
 |servicePrincipal|
 |unknownFutureValue|
 
@@ -221,7 +245,7 @@ ms.locfileid: "63394518"
 
 |Member|
 |:---|
-|пользователь|
+|user|
 |group;|
 
 ### <a name="authenticationmethodstate-values"></a>значения authenticationMethodState
@@ -527,7 +551,7 @@ ms.locfileid: "63394518"
 |Member|
 |:---|
 |signin|
-|пользователь|
+|user|
 |unknownFutureValue|
 
 ### <a name="riskdetectiontimingtype-values"></a>значения riskDetectionTimingType
@@ -659,7 +683,7 @@ ms.locfileid: "63394518"
 
 | Member
 |:-------------------------
-| Обязательный
+| обязательно
 | необязательный
 | resource
 
@@ -796,7 +820,7 @@ ms.locfileid: "63394518"
 | Member
 |:-------------
 | unknown
-| проверка подлинности
+| authentication
 | авторизация
 | accountValidation
 | userValidation
@@ -1364,7 +1388,7 @@ Enum для серьезности оповещений.
 | Элемент        | Значение | Описание              |
 |:--------------|:------|:-------------------------|
 | неопределяемая     | 0     | Еще не знаю.            |
-| пользователь          | 1     | Отправка пользователя.         |
+| user          | 1     | Отправка пользователя.         |
 | администратор | 2     | Отправка администратора клиента. |
 
 ### <a name="threatassessmentresulttype-values"></a>значения threatAssessmentResultType
@@ -1400,7 +1424,7 @@ Enum для серьезности оповещений.
 
 | Значение |
 |:-----------------|
-| сообщение |
+| message |
 | chatEvent |
 | ввод текста |
 | unknownFutureValue |
@@ -1469,10 +1493,10 @@ Enum для серьезности оповещений.
 |dateTime | Столбец DateTime. |
 |lookup | Столбец Lookup. |
 |boolean | Столбец Да/Нет. |
-|пользователь | Столбец Person или group. |
+|user | Столбец Person или group. |
 |url | Гиперссылка или столбец изображения. |
 |вычисляется | Вычисляется столбец. |
-|расположение | Столбец Расположение. |
+|location | Столбец Расположение. |
 |геолокация | Столбец Геолокации. |
 |term | Столбец управляемых метаданных. |
 |многоступенчатый | Столбец управляемых метаданных с несколькими значениями. |
@@ -1689,7 +1713,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|пользователь|
+|user|
 |приложение|
 |system|
 |unknownFutureValue|
@@ -1710,7 +1734,7 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |team|
-|channel|
+|канал|
 |чат|
 |unknownFutureValue|
 

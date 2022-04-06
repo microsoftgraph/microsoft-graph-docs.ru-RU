@@ -5,12 +5,12 @@ author: anandab
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 08a6b996d3ddbe721775a888b161e14788a485a9
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
-ms.translationtype: HT
+ms.openlocfilehash: b6bbfac2cbdb8fcafccbd385c4aa43c994f3c04d
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507768"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684699"
 ---
 # <a name="get-change-notifications-for-teams-and-channels-using-microsoft-graph"></a>Получение уведомлений об изменениях команд и каналов с помощью Microsoft Graph
 
@@ -114,7 +114,7 @@ Content-Type: application/json
 ## <a name="subscribe-to-changes-in-any-channel-of-a-particular-team"></a>Подписка на изменения в любом канале определенной команды
 
 
-Чтобы получать уведомления обо всех изменениях, связанных с любым каналом в определенной команде, подпишитесь на `/teams/{team-id}/channels`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление. Уведомления об изменениях для частных каналов не поддерживаются в делегированном контексте. В этом случае подписчик этого ресурса в делегированном контексте получает уведомления только для стандартных каналов определенной команды, но не для частных каналов.
+Чтобы получать уведомления обо всех изменениях, связанных с любым каналом в определенной команде, подпишитесь на `/teams/{team-id}/channels`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление. Уведомления об изменениях для частных каналов не поддерживаются в делегированном контексте. В этом случае подписчик этого ресурса в делегированном контексте получает уведомления только для стандартных каналов определенной команды, но не для частных каналов. Уведомления об изменениях для общих каналов не поддерживаются.
 
 
 ### <a name="permissions"></a>Разрешения

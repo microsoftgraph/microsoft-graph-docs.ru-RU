@@ -4,13 +4,13 @@ description: 'Представляет разрешение доступа, ко
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 0cb80e78e3cbdb2c019347d28ff79be262ec7b99
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: b4244335bba57c9ff5200099520e2e0b2a5e98c2
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696219"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510410"
 ---
 # <a name="governancepermission-resource-type"></a>тип ресурса governancePermission
 
@@ -18,17 +18,17 @@ ms.locfileid: "60696219"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Представляет разрешение доступа, которое [у governanceSubject](../resources/governancesubject.md) имеется для определенного [governanceResource.](../resources/governanceresource.md)
+Представляет разрешение доступа, которое [у governanceSubject](../resources/governancesubject.md) имеется для определенного [governanceResource](../resources/governanceresource.md).
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|accessLevel|String|Уровень доступа. Допустимые значения: ``None`` ``UserRead`` , , и ``AdminRead`` ``AdminReadWrite`` .|
-|isActive|Логический|Указать, есть ли у запрашивателя какие-либо активные назначения ролей для уровня доступа.|
-|isEligible|Логический|Указать, имеется ли у запросителя любое назначение ролей для уровня доступа.|
+|accessLevel|Строка|Уровень доступа. Допустимые значения: ``None``, ``UserRead``, ``AdminRead``и ``AdminReadWrite``.|
+|isActive|Boolean|Указать, есть ли у запрашивателя какие-либо активные назначения ролей для уровня доступа.|
+|isEligible|Boolean|Указать, имеется ли у запросителя любое назначение ролей для уровня доступа.|
 
 ## <a name="json-representation"></a>Представление JSON
 

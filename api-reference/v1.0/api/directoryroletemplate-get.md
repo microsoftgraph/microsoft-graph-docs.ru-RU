@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d1b75f9a313f5a6f157a1d39d932395a76bc5fbc
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e4fc91f0f45f87eb9ab829f36868087cdcb495cf
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097946"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671701"
 ---
 # <a name="get-directoryroletemplate"></a>Вывод объекта directoryRoleTemplate
 
@@ -22,9 +22,9 @@ ms.locfileid: "62097946"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ GET /directoryRoleTemplates/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

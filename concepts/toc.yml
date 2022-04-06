@@ -527,7 +527,7 @@ items:
   - name: Разработка
     expanded: true
     items:
-      - name: Проверка подлинности и авторизация
+      - name: Получение маркеров аутентификации
         items:
           - name: Обзор
             href: auth/index.yml

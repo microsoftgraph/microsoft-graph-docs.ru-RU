@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ede1dd60226629d024dffb52958fa1308489f35a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: fdca1660b2b5e63f838fdc6cab5c0cdf038e22bd
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60991877"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722102"
 ---
 # <a name="accessreviewinstance-pendingaccessreviewinstances-deprecated"></a>accessReviewInstance: pendingAccessReviewInstances (deprecated)
 
@@ -19,10 +19,7 @@ ms.locfileid: "60991877"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->Этот метод будет обесценится и прекратит возвращать данные 19 мая 2023 г. Он был заменен [filterByCurrentUser](accessreviewinstance-filterbycurrentuser.md).
-
->[!NOTE]
->Размер страницы по умолчанию для этого API — 100 объектов accessReviewInstance. Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
+>Этот метод будет обесценится и прекратит возвращать данные 19 мая 2023 г. Он был заменен [фильтромByCurrentUser](accessreviewinstance-filterbycurrentuser.md).
 
 Извлечение [объектов accessReviewInstance](../resources/accessreviewinstance.md) до утверждения пользователем вызова. Возвращается список нулевых или более объектов accessReviewInstance, из которых пользователем вызова является назначен рецензент.
 
@@ -42,7 +39,9 @@ GET /me/pendingAccessReviewInstances
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$skip` параметры `$top` запроса OData и помогает настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$skip` `$top` запроса OData и помогает настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+
+Размер страницы по умолчанию для этого API — 100 **объектов accessReviewInstance** . Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ## <a name="request-headers"></a>Заголовки запросов
 Нет.
@@ -51,7 +50,7 @@ GET /me/pendingAccessReviewInstances
 Не поставляем тело запроса.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и массив `200 OK` [объектов accessReviewInstance](../resources/accessreviewinstance.md) в теле ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и массив [объектов accessReviewInstance](../resources/accessreviewinstance.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос

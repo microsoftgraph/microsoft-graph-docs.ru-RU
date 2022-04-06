@@ -2,13 +2,13 @@
 title: Создание приложения Azure Active Directory
 description: Создание регистрации приложения Azure Active Directory для связи с Microsoft 365
 ms.localizationpriority: medium
-author: waldekmastykarz
-ms.openlocfilehash: 21a298874beb7cc3c67bc807b4c51fce42a39564
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 2d225736e20bb0cf226057f2d858e85737f377dc
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078527"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589200"
 ---
 # <a name="create-an-azure-active-directory-app-to-use-with-the-microsoft-graph-toolkit"></a>Создание приложения Azure Active Directory для использования с Microsoft Graph Toolkit
 
@@ -24,11 +24,11 @@ Microsoft Graph — это API, используемый для подключе
 1. В меню выберите **Azure Active Directory**.
 1. В меню Azure Active Directory выберите **Регистрация приложений**.
 1. В верхнем меню нажмите кнопку **Новая регистрация**.
-1. Введите имя приложения; например, `My M365 app` .
+1. Введите имя приложения; например, `My M365 app`.
 1. Для параметра [Поддерживаемые типы учетных записей](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app) выберите **Учетные записи в любом каталоге организации (любой каталог Azure AD — мультитенантный) и персональные учетные записи Майкрософт (например, Skype, Xbox)**.
-1. Для поля **URI перенаправления:**
-    - При использовании или выборе приложения для одной страницы (SPA) и в поле `Msal2Provider` `TeamsMsal2Provider` URL-адрес введите URL-адрес перенаправления (и/или при  `http://localhost` локальном тестировании). 
-    - Если вы используете или выберите Веб и в поле URL-адрес, введите URL-адрес перенаправления `MsalProvider` `TeamsProvider` (и/или при  `http://localhost` локальном тестировании). 
+1. Для поля **URI перенаправления** :
+    - Если вы используете `Msal2Provider` или `TeamsMsal2Provider`выберите **приложение для одной страницы (SPA)**, а также в поле URL-адрес, введите URL-адрес перенаправления (и/или `http://localhost` при локальном тестировании). 
+    - Если вы используете `MsalProvider` или `TeamsProvider`выберите **веб-адрес**, а также в поле URL-адрес, введите URL-адрес перенаправления (и/или `http://localhost` при локальном тестировании). 
 1. Подтвердите изменения, нажав кнопку **Зарегистрировать**.
 
 ## <a name="enable-oauth-implicit-flow-only-for-msalprovider-and-teamsprovider"></a>Включить неявный поток OAuth (только для MsalProvider и TeamsProvider)

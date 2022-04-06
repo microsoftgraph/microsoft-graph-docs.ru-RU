@@ -1,16 +1,16 @@
 ---
 title: 'passwordAuthenticationMethod: resetPassword'
-description: сбросить пароль пользователя.
+description: Сброс пароля пользователя
 ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fad8afd1fd3d4507ad7cf9447b855e3d70bc65cc
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 3e07320950184a89c9d8000145b75af978a4e1e1
+ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224471"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64646588"
 ---
 # <a name="passwordauthenticationmethod-resetpassword"></a>passwordAuthenticationMethod: resetPassword
 
@@ -20,35 +20,24 @@ ms.locfileid: "61224471"
 
 Инициировать сброс пароля, связанного с объектом метода проверки [подлинности](../resources/passwordauthenticationmethod.md) паролей. Это может быть сделано только администратором с соответствующими разрешениями и не может выполняться на собственной учетной записи пользователя.
 
-Этот поток записывает новый пароль Azure Active Directory и толкает его на локальное Active Directory, если настроен с помощью записи пароля. Администратор может либо предоставить новый пароль, либо создать его в системе. Пользователю предложено изменить пароль при следующем входе.
+Этот поток записывает новый пароль для Azure Active Directory и подталкивает его к локальная служба Active Directory при настройке с помощью записи пароля. Администратор может либо предоставить новый пароль, либо создать его в системе. Пользователю предложено изменить пароль при следующем входе.
 
-Этот сброс является длительной операцией и возвращает ссылку в загонке, где вызываемая может периодически проверять состояние `Location` сброса.
+Этот сброс является длительной операцией и возвращает заглавную ссылку Location со ссылкой, по которой вызываемая может периодически проверять состояние операции сброса.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-### <a name="permissions-acting-on-self"></a>Разрешения, действующие на себя
-
-Операция не может выполняться на собственной учетной записи пользователя.
+> [!IMPORTANT]
+> Операция не может выполняться на собственной учетной записи пользователя. Выполнить эту операцию может только администратор с соответствующими разрешениями.
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
-
-### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие на других пользователей
-
-Выполнить эту операцию может только администратор с соответствующими разрешениями.
-
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:---------------------------------------|:-------------------------|:-----------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
-Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих ролей [Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * глобальный администратор;
 * привилегированный администратор проверки подлинности;
@@ -66,7 +55,7 @@ POST /users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPa
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -75,11 +64,11 @@ POST /users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPa
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|newPassword|Строка|Новый пароль, вписаный администратором. Требуется для клиентов с гибридными сценариями паролей. Если не будет пропущен пароль только для облака, система возвращает созданный системой пароль. Это строка единого кода без другого кодирования. Он проверяется в отношении запрещенной системы паролей клиента перед принятием и должен соответствовать требованиям облачного и/или локального пароля клиента.|
+|newPassword|String|Новый пароль. Требуется для клиентов с гибридными сценариями паролей. Если не будет пропущен пароль только для облака, система возвращает созданный системой пароль. Это строка единого кода без другого кодирования. Он проверяется в отношении запрещенной системы паролей клиента перед принятием и должен соответствовать требованиям облачного и/или локального пароля клиента.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `202 ACCEPTED` ответа и URL-адрес в `Location` загонах.
+В случае успешной работы `202 Accepted` этот метод возвращает код ответа и заглавную кнопку Location с URL-адресом для проверки состояния операции сброса.
 
 Если вызываемый не представил пароль, созданный Корпорацией Майкрософт пароль предоставляется в объекте JSON в теле ответа.
 
@@ -87,8 +76,8 @@ POST /users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPa
 
 | Имя        | Описание     |
 |:------------|:----------------|
-|Расположение     | URL-адрес для вызова, чтобы проверить состояние операции.|
-|Retry-after  | Длительность в секундах.|
+|Location     | URL-адрес для вызова, чтобы проверить состояние операции. Обязательный.|
+|Retry-after  | Длительность в секундах. Необязательный параметр.|
 
 ## <a name="examples"></a>Примеры
 
@@ -107,11 +96,11 @@ POST /users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPa
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword
+POST https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
 Content-type: application/json
 
 {
-  "newPassword": "newPassword-value",
+    "newPassword": "Cuyo5459"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -137,17 +126,18 @@ Content-type: application/json
 
 Ниже приведен пример ответа.
 
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "@odata.type": "microsoft.graph.entity"
 } -->
 
 ```http
-HTTP/1.1 202 ACCEPTED
+HTTP/1.1 202 Accepted
 Content-type: application/json
-Location: https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/operations/{id}
+Location: https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/operations/88e7560c-9ebf-435c-8089-c3998ac1ec51?aadgdc=DUB02P&aadgsu=ssprprod-a
+
+{}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
@@ -175,7 +165,7 @@ Location: https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authen
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword
+POST https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/passwordauthenticationmethod-resetpassword-systemgenerated-csharp-snippets.md)]
@@ -210,11 +200,12 @@ POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authenticat
 
 ```http
 HTTP/1.1 202 ACCEPTED
-Location: https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/operations/{id}
+Location: https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/operations/77bafe36-3ac0-4f89-96e4-a4a5a48da851?aadgdc=DUB02P&aadgsu=ssprprod-a
 Content-type: application/json
 
 {
-  "password": "new system generated password"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.passwordResetResponse",
+    "newPassword": "Cuyo5459"
 }
 ```
 

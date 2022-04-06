@@ -1,16 +1,16 @@
 ---
 title: 'unifiedRoleAssignmentScheduleRequest: filterByCurrentUser'
 description: Получить список объектов unifiedRoleAssignmentScheduleRequest и их свойств, отфильтрованных определенным пользователем
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e4fb0a94cc88bd764fd937d6453e051c05a899d3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9e583434563406242657b12c184e91963bcd62bc
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125179"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510704"
 ---
 # <a name="unifiedroleassignmentschedulerequest-filterbycurrentuser"></a>unifiedRoleAssignmentScheduleRequest: filterByCurrentUser
 Пространство имен: microsoft.graph
@@ -44,7 +44,7 @@ GET /roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|RoleAssignmentScheduleRequestFilterByCurrentUserOptions|Фильтр для запроса объектов, для которых основным является текущий пользователь. Разрешено значение `principal` . Обязательное.|
+|on|RoleAssignmentScheduleRequestFilterByCurrentUserOptions|Фильтр для запроса объектов, для которых основным является текущий пользователь. Разрешено значение `principal`. Обязательный аргумент.|
 
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -55,12 +55,12 @@ GET /roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика и коллекцию объектов `200 OK` [unifiedRoleAssignmentScheduleRequest](../resources/unifiedRoleAssignmentScheduleRequest.md) в тексте ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код ответа и коллекцию [объектовunifiedRoleAssignmentScheduleRequest](../resources/unifiedRoleAssignmentScheduleRequest.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

@@ -2,13 +2,13 @@
 title: Компонент Get в Microsoft Graph Toolkit
 description: С помощью компонента Get можно создавать любые GET-запросы из Microsoft Graph непосредственно в HTML-коде.
 ms.localizationpriority: medium
-author: nmetulev
-ms.openlocfilehash: 1d12fbe73daa21221ca95cc50e0ae2aa2d44e642
-ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
+author: sebastienlevert
+ms.openlocfilehash: 38eea0b78214c5c647fc432f3e6cf04463dcffcd
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60805390"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589424"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>Компонент Get в Microsoft Graph Toolkit
 
@@ -52,9 +52,9 @@ ms.locfileid: "60805390"
 `dataChange` | Уволено после загрузки данных компонента. | `{ response: any, error: any }`. Свойство `response` содержит ответ, полученный из Microsoft Graph. Свойство `error` содержит сведения об ошибке, если она произошла. | Нет | Нет | Да
 
 > [!TIP]
-> Дополнительные сведения о данных, возвращающихся в свойстве, см. в справке API API, используемого в свойстве `response` `resource` компонента Get.
+> Дополнительные сведения о данных, `response` возвращающихся в свойстве, см. в справке API API `resource` , используемого в свойстве компонента Get.
 
-Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
+Дополнительные сведения об обработке событий см. в [этой информации](../customize-components/events.md).
 
 ## <a name="templates"></a>Шаблоны
 
@@ -78,10 +78,10 @@ ms.locfileid: "60805390"
 
 ## <a name="cache"></a>Кэш
 
-Чтобы включить и настроить кэш, используйте свойства `cacheEnabled` `cacheInvalidationPeriod` и свойства. По умолчанию компонент `mgt-get` не кэшет никаких ответов.
+Чтобы включить и настроить кэш, используйте свойства `cacheEnabled` и `cacheInvalidationPeriod` свойства. По умолчанию компонент не `mgt-get` кэшет никаких ответов.
 
-|Хранилище объектов|Кэшные данные|Замечания|
+|Хранилище объектов|Кэшные данные|Примечания|
 |-----------|-----------|-------|
-|`response`|Полный ответ, полученный Graph Майкрософт для запроса, указанного в `resource` свойстве`mgt-get`|
+|`response`|Полный ответ, полученный Graph майкрософт для запроса, указанного в `resource` свойстве`mgt-get`|
 
-Дополнительные [сведения см. в caching.](../customize-components/cache.md)
+[Дополнительные сведения см. в caching](../customize-components/cache.md).

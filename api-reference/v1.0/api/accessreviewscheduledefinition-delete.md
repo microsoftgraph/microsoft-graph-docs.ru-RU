@@ -5,17 +5,19 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 7df2b03d3308fc289174645545ba46e8e06e1ca1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b5d44c3c9c559c641c6f8dc7897cf6257a750e2b
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979829"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723595"
 ---
 # <a name="delete-accessreviewscheduledefinition"></a>Удаление accessReviewScheduleDefinition
 Пространство имен: microsoft.graph
 
-Удаляет объект [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+Удаляет объект [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
+
+[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2eef9f57982089c728f4d16b77b711b58b95bf9a
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 5ab726733f07102acd16ef004dc559b7634725b7
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854015"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669384"
 ---
 # <a name="update-administrativeunit"></a>Обновление администрирования
 
@@ -25,9 +25,9 @@ ms.locfileid: "62854015"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | AdministrativeUnit.ReadWrite.All |
+|Для приложений | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,8 +48,8 @@ PATCH /directory/administrativeUnits/{id}
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|description|String|Описание административного подразделения.|
-|displayName|Строка|Отображение имени административного подразделения.|
+|description|Строка|Описание административного подразделения.|
+|displayName|String|Отображение имени административного подразделения.|
 
 Так как ресурс **administrativeUnit** поддерживает [расширения,](/graph/extensibility-overview)`PATCH` операцию можно использовать для добавления, обновления или удаления собственных данных, определенных приложениям, в настраиваемом свойстве расширения в существующем экземпляре **administrativeUnit**.
 

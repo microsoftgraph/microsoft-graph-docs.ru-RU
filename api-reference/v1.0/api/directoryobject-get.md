@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: high
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a97a760cab8d2b07bd4df5dc88acb6291904354b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 276a568a1a33b11b55fc8b00d0eec3f1b58411b3
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134777"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668376"
 ---
 # <a name="get-directoryobject"></a>Получение объекта DirectoryObject
 
@@ -24,7 +24,7 @@ ms.locfileid: "62134777"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All |
 
@@ -41,7 +41,7 @@ GET /directoryObjects/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

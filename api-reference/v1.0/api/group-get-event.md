@@ -1,16 +1,16 @@
 ---
 title: Вывод события
 description: Получение объекта event.
-author: Jordanndahl
+author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a7c3fc0947c92b13c295d8fa65be2e177faa62b6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: dcc289482bebd37c1beb3d88568a334bd8e7374a
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130402"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587464"
 ---
 # <a name="get-event"></a>Вывод события
 
@@ -19,86 +19,106 @@ ms.locfileid: "62130402"
 Получение объекта [event](../resources/event.md).
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+| :------------------------------------- | :------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | Group.Read.All, Group.ReadWrite.All         |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | Не поддерживается.                              |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/{id}/events/{id}
 GET /groups/{id}/calendar/events/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание |
-|:---------------|:--------|:--------|
-| Authorization  | string | Bearer {токен}. Обязательный.  |
-| Prefer: outlook.timezone  | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в отклике. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный. |
+
+| Имя                              | Тип   | Описание                                                                                                                                                                                                                                                                        |
+| :-------------------------------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization                     | string | Bearer {token}. Обязательный.                                                                                                                                                                                                                                                          |
+| Prefer: outlook.timezone          | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в отклике. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный.                                                                                                                                      |
 | Prefer: outlook.body-content-type | string | Формат возвращаемого свойства **body**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойство **body** возвращается в формате HTML. Необязательное свойство. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
+
 При успешном выполнении этот метод возвратит код отклика `200 OK` и объект [event](../resources/event.md) в теле отклика.
 
 ## <a name="example"></a>Пример
+
 #### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315", "AQMkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NwAzZWYARgAAA_b2VnUAiWNLj0xeSOs499YHAMT2RdsuOqRIlQZ4vOzp66YAAAIBDQAAAMT2RdsuOqRIlQZ4vOzp66YAAAIJOgAAAA=="],
   "name": "get_group_event"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/events/AQMkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NwAzZWYARgAAA_b2VnUAiWNLj0xeSOs499YHAMT2RdsuOqRIlQZ4vOzp66YAAAIBDQAAAMT2RdsuOqRIlQZ4vOzp66YAAAIJOgAAAA==
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-group-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-group-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-event-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-event-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/get-group-event-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-group-event-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### <a name="response"></a>Отклик
+
 Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -246,4 +266,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

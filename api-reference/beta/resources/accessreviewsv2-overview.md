@@ -1,16 +1,16 @@
 ---
 title: Проверки доступа Azure AD
-description: Вы можете использовать обзоры доступа Azure AD для настройки одновеких или повторяющихся обзоров доступа для проверки прав доступа пользователя. Эта документация служит 2-й версии API.
+description: Проверки доступа Azure AD можно использовать для настройки однофакторной или повторяющейся проверки доступа для аттестации прав доступа пользователя. Эта документация обслуживает 2-ю версию API.
 ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 580d1299503924486dab1be11c33e8f771592baa
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 79db805376e936b8d9bfd36461a5ef421a0eb7c8
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336062"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685105"
 ---
 # <a name="azure-ad-access-reviews"></a>Проверки доступа Azure AD
 
@@ -20,74 +20,75 @@ ms.locfileid: "63336062"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Используйте [обзоры доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) , чтобы настроить разовую или повторяемую проверку доступа для проверки прав пользователей на доступ к ресурсам Azure AD. Эти ресурсы Azure AD включают группы, директора служб, пакеты доступа и привилегированные роли.
+Используйте [проверки доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) для настройки однофакторной или повторяющейся проверки доступа для аттестации прав пользователей на доступ к ресурсам Azure AD. К этим ресурсам Azure AD относятся группы, субъекты-службы, пакеты доступа и привилегированные роли.
 
-Типичные сценарии для отзывов о доступе:
+Типичные сценарии клиентов для проверок доступа:
 
-- Клиенты могут просмотреть и сертифицировать гостевой доступ пользователей к группам с помощью членства в группе. Рецензенты могут использовать сведения, предоставляемые для эффективного решения о том, следует ли гостям иметь постоянный доступ.
-- Клиенты могут просмотреть и сертифицировать доступ сотрудников к ресурсам Azure AD.
-- Клиенты могут проверять и проверять назначения в привилегированные роли Azure AD. Это поддерживает организации в управлении привилегированным доступом.
+- Клиенты могут просматривать и сертифицировать доступ гостевых пользователей к группам с помощью членства в группах. Рецензенты могут использовать аналитические сведения, которые предоставляются, чтобы эффективно решить, должны ли гости иметь постоянный доступ.
+- Клиенты могут просматривать и сертифицировать доступ сотрудников к ресурсам Azure AD.
+- Клиенты могут просматривать и проводить аудит назначений привилегированным ролям Azure AD. Это поддерживает организации в управлении привилегированным доступом.
 
-Обратите внимание, что функция обзоров доступа, включая API, включена в Azure AD Premium P2.  Клиент, на котором создается обзор доступа, должен иметь допустимую приобретенную или пробную Azure AD Premium P2 или подписку EMS E5. Дополнительные сведения о требованиях к лицензиям см. в обзоре [требований к лицензии Access](/azure/active-directory/governance/access-reviews-overview#license-requirements).
+Обратите внимание, что функция проверки доступа, включая API, включена в Azure AD Premium P2.  Клиент, в котором создается проверка доступа, должен иметь допустимую приобретенную или пробную Azure AD Premium P2 или подписку EMS E5. Дополнительные сведения о требованиях к лицензиям см. в разделе ["Требования к лицензиям для проверки доступа"](/azure/active-directory/governance/access-reviews-overview#license-requirements).
 
+[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-overview-note.md)]
 
 ## <a name="methods"></a>Методы
 
-В следующей таблице перечислены методы, которые можно использовать для взаимодействия с ресурсами, связанными с обзором доступа.
+В следующей таблице перечислены методы, которые можно использовать для взаимодействия с ресурсами, связанными с проверкой доступа.
 
 | Метод           | Тип возвращаемых данных    |Описание|
 |:---------------|:--------|:----------|
-|**Определение расписания**| | |
-|[Определения списков](../api/accessreviewset-list-definitions.md) | [accessReviewScheduleDefinition collection](accessreviewscheduledefinition.md) | Получите список объектов [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) и их свойств. |
-|[Получить accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Получите объект accessReviewScheduleDefinition и его свойства. |
-|[Создание определений](../api/accessreviewset-post-definitions.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Создание нового accessReviewScheduleDefinition. |
-|[Удаление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | Нет. | Удаление accessReviewScheduleDefinition. |
-|[Обновление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | Нет. | Обновление свойств accessReviewScheduleDefinition с указанным идентификатором. |
-|[filterByCurrentUser](../api/accessreviewscheduledefinition-filterbycurrentuser.md)|[accessReviewScheduleDefinition collection](../resources/accessreviewscheduledefinition.md)|Извлекает все определения, для которых вызываемая пользователь является рецензентом в одном или более экземплярах.|
-|**Экземпляры**| | |
-|[Перечисление экземпляров](../api/accessreviewscheduledefinition-list-instances.md) | [accessReviewInstance](accessreviewinstance.md) collection | Получите список объектов [accessReviewInstance](../resources/accessreviewinstance.md) и их свойств. |
-|[Получить accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Ознакомьтесь с свойствами и отношениями [объекта accessReviewInstance](../resources/accessreviewinstance.md) . |
+|**Расписания определений**| | |
+|[Определения списков](../api/accessreviewset-list-definitions.md) | [Коллекция accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Получение списка объектов [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) и их свойств. |
+|[Получение accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Получение объекта accessReviewScheduleDefinition и его свойств. |
+|[Создание определений](../api/accessreviewset-post-definitions.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Создайте новый accessReviewScheduleDefinition. |
+|[Удаление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | Нет. | Удаление объекта accessReviewScheduleDefinition. |
+|[Обновление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | Нет. | Обновление свойств объекта accessReviewScheduleDefinition с помощью указанного идентификатора. |
+|[filterByCurrentUser](../api/accessreviewscheduledefinition-filterbycurrentuser.md)|[Коллекция accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)|Извлекает все определения, для которых вызывающий пользователь является рецензентом в одном или нескольких экземплярах.|
+|**Экземпляров**| | |
+|[Перечисление экземпляров](../api/accessreviewscheduledefinition-list-instances.md) | [Коллекция accessReviewInstance](accessreviewinstance.md) | Получение списка объектов [accessReviewInstance](../resources/accessreviewinstance.md) и их свойств. |
+|[Получение accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Чтение свойств и связей объекта [accessReviewInstance](../resources/accessreviewinstance.md) . |
 |[sendReminder](../api/accessreviewinstance-sendreminder.md) | Нет. | Отправьте напоминание рецензентам accessReviewInstance. |
 |[stop](../api/accessreviewinstance-stop.md) | Нет. | Вручную остановите accessReviewInstance. |
-|[acceptRecommendations](../api/accessreviewinstance-acceptrecommendations.md) | Нет. | Позволяет вызываемой пользователю принять рекомендацию по принятию решений для каждого notReviewed accessReviewInstanceDecisionItem, на которых он является рецензентом для определенного accessReviewInstance. |
-|[applyDecisions](../api/accessreviewinstance-applydecisions.md) | Нет. | Вручную применять решения для accessReviewInstance. |
-|[batchRecordDecisions](../api/accessreviewinstance-batchrecorddecisions.md)|Нет|Просмотр пакетов принципов или ресурсов в одном вызове.|
-|[resetDecisions](../api/accessreviewinstance-resetdecisions.md)|Нет|Сброс всех элементов решений в экземпляре в `notReviewed`.|
-|[filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md)|[accessReviewInstance](../resources/accessreviewinstance.md) collection|Возвращает все экземпляры в данном [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) , для которого вызываемая пользователь является рецензентом одного или более решений.|
-|**Элементы решения экземпляра**| | |
-|[Список решений](../api/accessreviewinstance-list-decisions.md) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection | Получите список объектов [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) и их свойств.|
-|[Get accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-get.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)|Ознакомьтесь с свойствами и отношениями [объекта accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) .|
-|[Обновление accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-update.md) | Нет. | Для любого accessReviewInstanceDecisionItems, на который вызывается пользователь, на который назначен рецензент, вызывающий пользователь может записать решение, заплатив объект решения. |
-|[filterByCurrentUser](../api/accessreviewinstancedecisionitem-filterbycurrentuser.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Извлекает все [объекты accessReviewInstanceDecisionItems](accessreviewinstancedecisionitem.md) , где использование вызовов является рецензентом для [данного accessReviewInstance](accessreviewinstance.md).|
-|[listPendingApproval](../api/accessreviewinstancedecisionitem-listpendingapproval.md) (отклонено) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) . | Получите все accessReviewInstanceDecisionItems, назначенные вызываемой пользователю, для определенного accessReviewInstance. Этот метод отстает и заменяется [accessReviewInstanceDecisionItem: filterByCurrentUser](../api/accessreviewinstancedecisionitem-filterbycurrentuser.md). |
-|**Определения истории**| | |
-|[Список historyDefinitions](../api/accessreviewset-list-historydefinitions.md)|[accessReviewHistoryDefinition collection](accessreviewhistorydefinition.md)|Получите список объектов [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) и их свойств.|
-|[Создание historyDefinitions](../api/accessreviewset-post-historydefinitions.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Создайте новый [объект accessReviewHistoryDefinition](accessreviewhistorydefinition.md) .|
-|[Получить accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-get.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Ознакомьтесь с свойствами и отношениями [объекта accessReviewHistoryDefinition](accessreviewhistorydefinition.md) .|
-|[generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md)|[accessReviewHistoryInstance](accessreviewhistoryinstance.md)|Создание URI для экземпляра, который можно использовать для получения данных истории отзывов.|
-|[Перечисление экземпляров](../api/accessreviewhistorydefinition-list-instances.md)|[accessReviewHistoryInstance](accessreviewhistoryinstance.md)|Извлечение списка [объектов accessReviewHistoryInstance](accessreviewhistoryinstance.md) и их свойств.|
+|[acceptRecommendations](../api/accessreviewinstance-acceptrecommendations.md) | Нет. | Позволяет вызывающему пользователю принять рекомендацию по принятию решения для каждого объекта NotReviewInstanceDecisionItem, в котором он является рецензентом для определенного объекта accessReviewInstance. |
+|[applyDecisions](../api/accessreviewinstance-applydecisions.md) | Нет. | Вручную примените решения к accessReviewInstance. |
+|[batchRecordDecisions](../api/accessreviewinstance-batchrecorddecisions.md)|Никаких других изменений не происходит|Просмотрите пакеты субъектов или ресурсов за один вызов.|
+|[resetDecisions](../api/accessreviewinstance-resetdecisions.md)|Никаких других изменений не происходит|Сбрасывает все элементы принятия решений в экземпляре в значение `notReviewed`.|
+|[filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md)|[Коллекция accessReviewInstance](../resources/accessreviewinstance.md)|Возвращает все экземпляры в заданном [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) , для которого вызывающий пользователь является рецензентом одного или нескольких решений.|
+|**Элементы принятия решений об экземпляре**| | |
+|[Список решений](../api/accessreviewinstance-list-decisions.md) | [Коллекция accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) | Получение списка объектов [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) и их свойств.|
+|[Получение объекта accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-get.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)|Чтение свойств и связей объекта [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) .|
+|[Обновление accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-update.md) | Нет. | Для любых объектов accessReviewInstanceDecisionItems, для которых вызывающему пользователю назначен рецензент, вызывающий пользователь может записать решение, исправив объект принятия решения. |
+|[filterByCurrentUser](../api/accessreviewinstancedecisionitem-filterbycurrentuser.md)|[Коллекция accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)|Извлекает все [объекты accessReviewInstanceDecisionItems](accessreviewinstancedecisionitem.md) , где вызывающее использование является рецензентом для данного [объекта accessReviewInstance](accessreviewinstance.md).|
+|[listPendingApproval](../api/accessreviewinstancedecisionitem-listpendingapproval.md) (не рекомендуется) | [коллекция accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) . | Получение всех объектов accessReviewInstanceDecisionItems, назначенных вызывающему пользователю, для определенного объекта accessReviewInstance. Этот метод является устаревшим и заменяется [accessReviewInstanceDecisionItem: filterByCurrentUser](../api/accessreviewinstancedecisionitem-filterbycurrentuser.md). |
+|**Определения журнала**| | |
+|[Перечисление historyDefinitions](../api/accessreviewset-list-historydefinitions.md)|[Коллекция accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Получение списка объектов [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) и их свойств.|
+|[Создание historyDefinitions](../api/accessreviewset-post-historydefinitions.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Создайте объект [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) .|
+|[Получение accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-get.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Чтение свойств и связей объекта [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) .|
+|[generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md)|[accessReviewHistoryInstance](accessreviewhistoryinstance.md)|Создайте универсальный код ресурса (URI) для экземпляра, который можно использовать для получения данных журнала проверки.|
+|[Перечисление экземпляров](../api/accessreviewhistorydefinition-list-instances.md)|[accessReviewHistoryInstance](accessreviewhistoryinstance.md)|Получение списка объектов [accessReviewHistoryInstance](accessreviewhistoryinstance.md) и их свойств.|
 |**Политика**| | |
-|[Получить accessReviewPolicy](../api/accessreviewpolicy-get.md)|[accessReviewPolicy](../resources/accessreviewpolicy.md)|Ознакомьтесь с свойствами и отношениями [объекта accessReviewPolicy](../resources/accessreviewpolicy.md) .|
+|[Получение accessReviewPolicy](../api/accessreviewpolicy-get.md)|[accessReviewPolicy](../resources/accessreviewpolicy.md)|Чтение свойств и связей объекта [accessReviewPolicy](../resources/accessreviewpolicy.md) .|
 |[Обновление accessReviewPolicy](../api/accessreviewpolicy-update.md)|[accessReviewPolicy](../resources/accessreviewpolicy.md)|Обновление свойств объекта [accessReviewPolicy](../resources/accessreviewpolicy.md) .|
-|[Определения списка, ожидающих утверждения](../api/accessreviewscheduledefinition-filterbycurrentuser.md) (неподготовленные)|[accessReviewScheduleDefinition collection](../resources/accessreviewscheduledefinition.md)|Извлекает все определения, для которых вызываемая пользователь является рецензентом в одном или более экземплярах. Этот метод отмещается и заменяется [accessReviewScheduleDefinition: filterByCurrentUser](../api/accessreviewscheduledefinition-filterbycurrentuser.md).|
-|[Список ожидающихAccessReviewInstances](../api/accessreviewinstance-pendingaccessreviewinstances.md) (обесценив) | [accessReviewInstance collection](accessreviewinstance.md) . | Получите все ожидающих accessReviewInstance ресурсы, назначенные вызываемой пользователю. Этот метод отстает и заменяется [accessReviewInstance: filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md). |
+|[Список определений, ожидающих утверждения](../api/accessreviewscheduledefinition-filterbycurrentuser.md) (не рекомендуется)|[Коллекция accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)|Извлекает все определения, для которых вызывающий пользователь является рецензентом в одном или нескольких экземплярах. Этот метод является устаревшим и заменяется [accessReviewScheduleDefinition: filterByCurrentUser](../api/accessreviewscheduledefinition-filterbycurrentuser.md).|
+|[Перечисление pendingAccessReviewInstances](../api/accessreviewinstance-pendingaccessreviewinstances.md) (не рекомендуется) | [коллекция accessReviewInstance](accessreviewinstance.md) . | Получение всех ожидающих ресурсов accessReviewInstance, назначенных вызывающему пользователю. Этот метод является устаревшим и заменяется [accessReviewInstance: filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md). |
 
-## <a name="role-and-application-permission-authorization-checks"></a>Проверки авторизации ролей и разрешений на приложения
+## <a name="role-and-application-permission-authorization-checks"></a>Проверки авторизации разрешений ролей и приложений
 
-Для управления отзывами доступа для вызываемой пользователя требуются следующие роли [Azure AD](/azure/active-directory/roles/permissions-reference) .
+Для управления [проверками доступа](/azure/active-directory/roles/permissions-reference) вызывающему пользователю требуются следующие роли Azure AD.
 
-| Операция | Разрешения приложений | Роль требуемого каталога вызываемого пользователя |
+| Операция | Разрешения приложений | Требуемая роль каталога вызывающего пользователя |
 |:------------------|:------------|:--------------------------------------------|
 | Чтение | AccessReview.Read.All или AccessReview.ReadWrite.All | Глобальный администратор, глобальный читатель, администратор безопасности, читатель безопасности или администратор пользователей |
 | Создание, обновление или удаление | AccessReview.ReadWrite.All | Глобальный администратор или администратор пользователей |
 
-Кроме того, пользователь, которому назначен рецензент обзора доступа, может управлять своими решениями без необходимости быть в роли каталога.
+Кроме того, пользователь, который является назначенным рецензентом проверки доступа, может управлять своими решениями без необходимости быть в роли каталога.
 
 ## <a name="see-also"></a>См. также
 
-- [Учебники](/graph/accessreviews-overview) , чтобы узнать, как использовать API обзоров доступа для проверки доступа к ресурсам Azure AD
-- [Управление доступом к пользователю с помощью отзывов о доступе к Azure AD администратору](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
-- [Управление гостевых доступом администратора с помощью отзывов о доступе к Azure AD](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
+- [Руководства по](/graph/accessreviews-overview) использованию API проверки доступа для проверки доступа к ресурсам Azure AD
+- [Как администратор может управлять доступом пользователей с помощью проверок доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
+- [Как администратор может управлять гостевым доступом с помощью проверок доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
 
 
 <!--

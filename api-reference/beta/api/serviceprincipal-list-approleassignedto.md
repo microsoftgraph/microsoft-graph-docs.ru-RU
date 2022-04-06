@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 2656ac0a23a11384878f36eb05dd32f84647664b
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: 491c5c4f9bca722409f5c93921f0932c9c9de85b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878640"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669853"
 ---
 # <a name="list-approleassignments-granted-for-a-service-principal"></a>Список объектов appRoleAssignment, предоставленных субъект-службе
 
@@ -24,7 +24,7 @@ ms.locfileid: "62878640"
 
 Если ресурс субъект-службы является приложением, имеющим роли приложений, предоставленные пользователям и группам, все назначенные им роли для приложения будут возвращены.
 
->**Примечание** При запросе могут происходить задержки репликации для назначения ролей приложения, которые были недавно предоставлены или удалены.
+>**Примечание.** При запросе могут происходить задержки репликации для назначения ролей приложения, которые были недавно предоставлены или удалены.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -32,7 +32,7 @@ ms.locfileid: "62878640"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 

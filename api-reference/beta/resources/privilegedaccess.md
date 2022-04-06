@@ -1,16 +1,16 @@
 ---
 title: тип ресурса privilegedAccess
-description: " например, представляет собой управление привилегированным доступом PIM к ресурсам `privilegedAccess/azureResources` Azure."
+description: " например, представляет `privilegedAccess/azureResources` собой управление привилегированным доступом PIM к ресурсам Azure."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 9f7bf8f06ae75bd082664b5efad3e5ca9c46b70e
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: f90b76ca24a4bded8c2206a4a5f45ebcfde4d825
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696954"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509555"
 ---
 # <a name="privilegedaccess-resource-type"></a>тип ресурса privilegedAccess
 
@@ -18,16 +18,16 @@ ms.locfileid: "60696954"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет группу функциональных возможностей, предоставляемых службой управление привилегированными пользователями (PIM). Различные экземпляры представляют различных поставщиков, управляемых `privilegedAccess` PIM; например, представляет PIM, управляющую привилегированным доступом `privilegedAccess/azureResources` к ресурсам Azure.
+Представляет группу функциональных возможностей, предоставляемых службой управление привилегированными пользователями (PIM). Различные экземпляры представляют `privilegedAccess` различных поставщиков, управляемых PIM; например, `privilegedAccess/azureResources` представляет PIM, управляющую привилегированным доступом к ресурсам Azure.
 
 
-`privilegedAccess` только для чтения на данный момент. Нет `POST` , или операции `PUT` `PATCH` `DELETE` поддерживаются в `privilegedAccess` наборе сущности.
+`privilegedAccess` только для чтения на данный момент. Нет `POST`, `PUT`или `PATCH`операции `DELETE` поддерживаются в наборе `privilegedAccess` сущности.
 
 ## <a name="properties"></a>Свойства
 | Свойство  | Тип      |Описание|
 |:----------|:----------|:----------|
-|id         |String     |ID поставщика, управляемого PIM.|
-|displayName|String     |Отображает имя поставщика, управляемого PIM.|
+|id         |Строка     |ID поставщика, управляемого PIM.|
+|displayName|Строка     |Отображает имя поставщика, управляемого PIM.|
 
 
 ## <a name="relationships"></a>Связи

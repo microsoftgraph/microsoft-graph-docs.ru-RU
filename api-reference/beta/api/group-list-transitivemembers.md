@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 58ab85988cc71cf0f2e9945b665e00b8d60791b5
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: e778ebc2a8ab5d60f6aef2113cdf190b6d01685d
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393447"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509933"
 ---
 # <a name="list-group-transitive-members"></a>Перечисление транзитивных участников группы
 
@@ -26,7 +26,7 @@ ms.locfileid: "63393447"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All    |
+| Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -173,7 +173,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -227,7 +227,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -311,7 +311,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -346,7 +346,7 @@ Content-type: application/json
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_a_count"
+  "name": "list_groups_transitivemembers_startswith"
 }-->
 
 ```msgraph-interactive
@@ -382,7 +382,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

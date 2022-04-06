@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса educationClass
-description: Представляет курс в учебном заведении. Ресурс **educationClass** соответствует группе Microsoft 365 и имеет один и тот же ID.
+description: Представляет курс в учебном заведении. Ресурс **educationClass** соответствует группе Microsoft 365 и использует тот же идентификатор.
 ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 973cb6ad47feb4d37030eb42d3bdca131c0bdd01
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 50302c03f9ccd1bd1b1ea38717be539a0731941b
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390671"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685097"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 
@@ -18,11 +18,11 @@ ms.locfileid: "61390671"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет курс в учебном заведении. Ресурс **educationClass** в настоящее время соответствует группе Microsoft 365 [и] имеет один и тот же ID.
-Учащиеся являются постоянными членами класса, а преподаватели являются владельцами и имеют соответствующие права.
+Представляет курс в учебном заведении. Ресурс **educationClass** в настоящее время соответствует Microsoft 365 [и] использует тот же идентификатор.
+Учащиеся являются обычными участниками класса, а преподаватели являются владельцами и имеют соответствующие права.
 
 > [!IMPORTANT]
-> Чтобы Microsoft 365 работало правильно, преподаватели должны быть членами собраний преподавателей и членов.
+> Чтобы Microsoft 365 работать правильно, преподаватели должны быть членами коллекций преподавателей и участников.
 
 ## <a name="methods"></a>Методы
 
@@ -36,30 +36,30 @@ ms.locfileid: "61390671"
 | [Добавление преподавателя](../api/educationclass-post-teachers.md)                   | [educationUser]                                | Добавление нового объекта **educationUser** для курса путем публикации в свойстве навигации teachers. |
 | [Перечисление преподавателей](../api/educationclass-list-teachers.md)                 | Коллекция [educationUser]                     | Получение списка преподавателей для курса.                                                     |
 | [Удаление преподавателя](../api/educationclass-delete-teachers.md)              | [educationUser]                                | Удаление **educationUser** для курса с использованием свойства навигации teachers.      |
-| [Создание educationAssignment](../api/educationclass-post-assignments.md) | [educationAssignment]                          | Создайте **новое educationAssignment,** разместив в коллекции назначений.            |
-| [Перечисление заданий](../api/educationclass-list-assignments.md)           | [коллекция educationAssignment]                | Получите **коллекцию объектов educationAssignment.**                                         |
-| [Получение группы](../api/educationclass-get-group.md)                         | [group]                                        | Получите группу **Microsoft 365,** соответствующую данному **классу образования.**              |
-| [Создание educationCategory](../api/educationclass-post-category.md)      | [educationCategory]                            | Создайте **новую систему educationCategory** для этого класса.                                        |
-| [Перечисление категорий](../api/educationclass-list-categories.md)             | [коллекция educationCategory]                 | Получите список **объектов educationCategory,** принадлежащих этому классу.                      |
+| [Создание educationAssignment](../api/educationclass-post-assignments.md) | [educationAssignment]                          | Создайте объект **educationAssignment** , выполнив публикацию в коллекции заданий.            |
+| [Перечисление заданий](../api/educationclass-list-assignments.md)           | [educationAssignmentcollection]                | Получение коллекции **объектов educationAssignment** .                                         |
+| [Получение группы](../api/educationclass-get-group.md)                         | [group]                                        | Получение группы Microsoft 365 **,** соответствующей этому **классу educationClass**.              |
+| [Создание educationCategory](../api/educationclass-post-category.md)      | [educationCategory]                            | Создайте для **этого класса новую educationCategory** .                                        |
+| [Перечисление категорий](../api/educationclass-list-categories.md)             | [Коллекция educationCategory]                 | Получение списка объектов **educationCategory** , принадлежащих этому классу.                      |
 | [Обновление](../api/educationclass-update.md)                               | [educationClass]                               | Обновление объекта **educationClass**.                                                         |
-| [удаление](../api/educationclass-delete.md);                               | Нет                                           | Удаление объекта **educationClass**.                                                         |
-| [Получение дельты](../api/educationclass-delta.md)                                 | Коллекция [educationClass](educationclass.md) | Получить дополнительные изменения для **educationClasses**.                                          |
+| [Delete](../api/educationclass-delete.md)                               | Нет                                           | Удаление объекта **educationClass**.                                                         |
+| [Получение дельты](../api/educationclass-delta.md)                                 | Коллекция [educationClass](educationclass.md) | Получение добавочных изменений для **educationClasses**.                                          |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство             | Тип                                  | Описание                                                                                                                                                          |
 | :------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id                   | Строка                                | Уникальный идентификатор для курса.                                                                                                                                     |
+| id                   | String                                | Уникальный идентификатор для курса.                                                                                                                                     |
 | classCode            | String                                | Код курса, используемый учебным заведением для идентификации курса.                                                                                                                 |
-| курс               | [educationCourse](educationcourse.md) | Сведения о курсе для класса.                                                                                                                                     |
-| createdBy            | [identitySet]                         | Объект, создавший класс.                                                                                                                                         |
-| description          | Строка                                | Описание курса.                                                                                                                                            |
+| Курс               | [educationCourse](educationcourse.md) | Сведения о курсе для класса.                                                                                                                                     |
+| createdBy            | [identitySet]                         | Сущность, создавшего класс.                                                                                                                                         |
+| description          | String                                | Описание курса.                                                                                                                                            |
 | displayName          | String                                | Название курса.                                                                                                                                                   |
 | externalId           | String                                | Идентификатор курса из системы синхронизации.                                                                                                                             |
 | externalName         | String                                | Название курса в системе синхронизации.                                                                                                                             |
-| externalSource       | Строка                                | Тип внешнего источника, из который был создан этот ресурс (автоматически определяется `externalSourceDetail` из). Возможные значения: `sis`, `lms` или `manual`. |
-| externalSourceDetail | Строка                                | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                   |
-| оценка                | String                                | Уровень класса.                                                                                                                                            |
+| externalSource       | String                                | Тип внешнего источника, из которой был создан этот ресурс (автоматически определяется из `externalSourceDetail`). Возможные значения: `sis`, `lms` или `manual`. |
+| externalSourceDetail | String                                | Имя внешнего источника, из которой были созданы эти ресурсы.                                                                                                   |
+| оценка                | String                                | Уровень оценки класса.                                                                                                                                            |
 | mailNickname         | String                                | Почтовое имя для отправки почты всем участникам, если это возможно.                                                                                                      |
 | term                 | [educationTerm]                       | Термин для класса.                                                                                                                                                  |
 
@@ -70,7 +70,10 @@ ms.locfileid: "61390671"
 | assignments  | [коллекция educationAssignment] | Все назначения, связанные с этим классом. Допускается значение null.     |
 | members      | Коллекция [educationUser]       | Все пользователи для этого курса. Допускается значение NULL.                         |
 | schools      | Коллекция [educationSchool]     | Все учебные заведения, с которыми сопоставлен этот курс. Допускается значение NULL. |
-| teachers     | Коллекция [educationUser]       | Все преподаватели для этого курса. Допускается значение null.                      |
+| teachers     | Коллекция [educationUser]       | Все преподаватели для этого курса. Допускается значение NULL.                      |
+|assignmentCategories| [Коллекция educationCategory](educationcategory.md) | Все категории, связанные с этим классом. Допускается значение null. |
+|assignmentDefaults| [Коллекция educationAssignmentDefaults](educationassignmentdefaults.md) | Задает значения по умолчанию на уровне класса, которые учитываются новыми назначениями, созданными в классе. |
+|assignmentSettings| [Коллекция educationAssignmentSettings](educationassignmentsettings.md) | Задает параметры назначений на уровне класса. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -115,7 +118,7 @@ ms.locfileid: "61390671"
 
 }-->
 
-[образовательный класс]: educationclass.md
+[класс education]: educationclass.md
 [educationuser]: educationuser.md
 [educationassignment]: educationassignment.md
 [educationcourse]: educationcourse.md

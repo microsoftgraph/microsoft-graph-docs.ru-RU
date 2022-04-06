@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 531052ac29718493bad6d2ab82d7c1b1eaaeb510
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: e17d665da56a9625d6b83f384904af18284d2bcd
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368212"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629409"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>тип ресурса windowsAutopilotDeviceIdentity
 
@@ -38,7 +38,7 @@ ms.locfileid: "63368212"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта|
+|id|Строка|GUID объекта|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Состояние назначения профиля устройства Windows автопилота. Возможные значения: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Назначение профиля подробное состояние Windows автопилота. Возможные значения: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`, `surfaceHub2SProfileNotSupported`, `unknownFutureValue`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Время набора профилей устройства Windows автопилота.|
@@ -48,22 +48,20 @@ ms.locfileid: "63368212"
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
 |manufacturer|String|Oem производитель устройства Windows автопилота.|
 |model|String|Имя модели устройства Windows автопилота.|
-|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Состояние регистрации intune устройства Windows автопилота. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows автопилота.|
-|addressableUserName|String|Адресное имя пользователя.|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune регистрации устройства Windows автопилота. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|lastContactedDateTime|DateTimeOffset|Intune время последней контактной даты устройства Windows автопилота.|
+|addressableUserName|Строка|Адресное имя пользователя.|
 |userPrincipalName|String|Имя главного пользователя.|
 |resourceName|String|Имя ресурса.|
-|skuNumber|String|Номер SKU|
+|skuNumber|Строка|Номер SKU|
 |systemFamily|Строка|Семейство system|
 |azureActiveDirectoryDeviceId|Строка|AAD устройства - быть обесценив|
 |azureAdDeviceId|Строка|AAD ID устройства|
-|managedDeviceId|String|Управляемый ID устройства|
+|managedDeviceId|Строка|Управляемый ID устройства|
 |displayName|Строка|"Display Name" (Отображаемое имя);|
-|deviceAccountUpn|String|Surface Hub учетной записи устройства|
+|deviceAccountUpn|Строка|Surface Hub учетной записи устройства|
 |deviceAccountPassword|Строка|Surface Hub учетной записи устройства|
 |deviceFriendlyName|Строка|Surface Hub имя устройства|
-|remediationState|[windowsAutopilotDeviceRemediationState](../resources/intune-enrollment-windowsautopilotdeviceremediationstate.md)|Состояние восстановления устройства. Возможные значения: `unknown`, `noRemediationRequired`, `automaticRemediationRequired`, `unknownFutureValue`.|
-|remediationStateLastModifiedDateTime|DateTimeOffset|RemediationState зафиксировать время работы устройства Автопилот.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -105,9 +103,7 @@ ms.locfileid: "63368212"
   "displayName": "String",
   "deviceAccountUpn": "String",
   "deviceAccountPassword": "String",
-  "deviceFriendlyName": "String",
-  "remediationState": "String",
-  "remediationStateLastModifiedDateTime": "String (timestamp)"
+  "deviceFriendlyName": "String"
 }
 ```
 

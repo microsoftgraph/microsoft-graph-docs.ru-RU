@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 518769d7156d529f912f2b6f74d6e64cd68f0154
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3a016999b2b51b3cc0ec80cdc9681a14de15348c
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133285"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587303"
 ---
 # <a name="get-organizationsettings"></a>Get organizationSettings
 
@@ -18,9 +18,11 @@ ms.locfileid: "62133285"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта [organizationSettings,](../resources/organizationsettings.md) включая **profileCardProperties.**
+Извлечение свойств и связей объекта [organizationSettings](../resources/organizationsettings.md) , включая **profileCardProperties**.
 
-Эта операция не возвращает [insightsSettings](../resources/insightssettings.md). В зависимости от типа анализа можно получить их параметры с помощью [list itemInsights](organizationsettings-list-iteminsights.md) или [list peopleInsights.](organizationsettings-list-peopleinsights.md)
+Эта операция не возвращает [insightsSettings](../resources/insightssettings.md). В зависимости от типа анализа можно получить их параметры с помощью [list itemInsights](organizationsettings-list-iteminsights.md) или [list peopleInsights](organizationsettings-list-peopleinsights.md).
+
+Эта операция не возвращает [microsoftApplicationDataAccessSettings](../resources/microsoftApplicationDataAccessSettings.md). Чтобы получить [microsoftApplicationDataAccessSettings](../resources/microsoftApplicationDataAccessSettings.md), используйте [список microsoftApplicationDataAccessSettings](organizationsettings-list-microsoftapplicationdataaccess.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -59,7 +61,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [organizationSettings](../resources/organizationsettings.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и запрашиваемого объекта [organizationSettings](../resources/organizationsettings.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -134,7 +136,7 @@ Content-type: application/json
               {
                 "languageTag": "ru-RU",
                 "displayName": "центр затрат"
-              }
+  }
             ]
           }
         ]
@@ -152,5 +154,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

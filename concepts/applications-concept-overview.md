@@ -5,12 +5,12 @@ author: FaithOmbongi
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c0e264cb0b0b9b638741aeb0db774efd121c83e9
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: c824f8b70f273d31b37d2458e384dbb49ffcb0c7
+ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526172"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63780529"
 ---
 # <a name="applications-api-overview"></a>Общие сведения об API приложений
 
@@ -26,7 +26,7 @@ ms.locfileid: "61526172"
 
 ## <a name="application-management"></a>Управление приложениями
 
-Регистрация приложения включает уведомление Azure AD о вашем приложении, в том числе URL-адрес его расположения, URL-адрес для отправки ответов после проверки подлинности, URI для определения приложения и многое другое. Чтобы управлять приложениями программными средствами, можно использовать [интерфейсы API приложений](/graph/api/resources/application?view=graph-rest-1.0) в Microsoft Graph.
+Регистрация приложения включает уведомление Azure AD о вашем приложении. В частности, следует предоставить URL-адрес его расположения, URL-адрес для отправки ответов после проверки подлинности, URI для определения приложения и другие сведения. Чтобы управлять приложениями программными средствами, можно использовать [интерфейсы API приложений](/graph/api/resources/application?view=graph-rest-1.0) в Microsoft Graph.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/93j0MmRruFo]
 
@@ -74,7 +74,7 @@ ms.locfileid: "61526172"
 - [Как работает подготовка](/azure/active-directory/app-provisioning/how-provisioning-works)
 
 Чтобы узнать о том, как использовать интерфейсы API локальной публикации, см. следующие руководства и связанные с ними API:
-- [Настройка подготовки с помощью интерфейсов API Microsoft Graph](/azure/active-directory/app-provisioning/application-provisioning-configure-api):
+- [Настройка подготовки с помощью интерфейсов API Microsoft Graph](/azure/active-directory/app-provisioning/application-provisioning-configuration-api):
     - [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
     - [synchronizationTemplate](/graph/api/resources/synchronization-synchronizationtemplate)
     - [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob)

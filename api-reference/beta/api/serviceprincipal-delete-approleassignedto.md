@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: c884b6eeeba7e53d6a4d7684e4c25e1ec0aa3259
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 51c6ff9f411a296c5aa391515d714828dd7b5baf
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125453"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670525"
 ---
 # <a name="delete-approleassignedto"></a>Удаление appRoleAssignedTo
 
@@ -18,7 +18,7 @@ ms.locfileid: "62125453"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет [appRoleAssignment](../resources/approleassignment.md) о том, что директору службы ресурсов, группе или директору клиентской службы предоставлено приложение appRoleAssignment.
+Удаляет appRoleAssignment о том, что директору службы ресурсов, группе или директору клиентской службы предоставлено приложение [appRoleAssignment](../resources/approleassignment.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "62125453"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | AppRoleAssignment.ReadWrite.All |
 
@@ -39,7 +39,7 @@ DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-
 ```
 
 > [!NOTE]
-> В качестве наилучшей практики рекомендуется использовать этот метод для удаления назначений ролей приложений вместо метода [Delete appRoleAssignments,](serviceprincipal-delete-approleassignments.md) который удаляется через связь **appRoleAssignments** назначенного пользователя, группы или директора службы.
+> В качестве наилучшей практики рекомендуется использовать этот метод для удаления назначений ролей приложений вместо метода [Delete appRoleAssignments](serviceprincipal-delete-approleassignments.md) , который удаляется через связь **appRoleAssignments** назначенного пользователя, группы или директора службы.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -47,7 +47,7 @@ DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -98,7 +98,7 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{resource-SP-id}/appRo
 ---
 
 
-В этом примере является id основного средства службы ресурсов и является id объекта `{resource-SP-id}` appRoleAssignment, представляюшего назначение пользователю, группе или директору клиентской `{appRoleAssignment-id}` службы.
+В этом примере `{resource-SP-id}` является id `{appRoleAssignment-id}` основного средства службы ресурсов и является id объекта appRoleAssignment, представляюшего назначение пользователю, группе или директору клиентской службы.
 
 ### <a name="response"></a>Отклик
 

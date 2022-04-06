@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: af0ada30b0fde385ad0840ab0bc368717051a143
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 003bb04755c4106661d6e315f601341c9294d8ce
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119316"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684601"
 ---
 # <a name="add-member-to-channel"></a>Добавление участника в канал
 
@@ -18,7 +18,7 @@ ms.locfileid: "62119316"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление [conversationMember в](../resources/conversationmember.md) [канал.](../resources/channel.md) Эта операция разрешена только для каналов со значением **membershipType** `private` .
+Добавьте [conversationMember](../resources/conversationmember.md) в [канал](../resources/channel.md). Эта операция разрешена только для каналов со значением **membershipType** или `private` `shared`.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "62119316"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChannelMember.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| ChannelMember.ReadWrite.All |
+|Для приложений| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -49,8 +49,8 @@ POST /teams/{team-id}/channels/{channel-id}/members
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|roles|Коллекция строк|Роль пользователя. Должно быть `owner` или пусто.|
-|пользователь|[user](../resources/user.md)|Пользователь, который должен добавить в канал.|
+|roles|Коллекция строк|Роль пользователя. Должен быть или `owner` пустым.|
+|user|[user](../resources/user.md)|Пользователь, добавляемого в канал.|
 
 ## <a name="response"></a>Отклик
 
@@ -58,9 +58,11 @@ POST /teams/{team-id}/channels/{channel-id}/members
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-add-a-member-to-a-channel"></a>Пример 1. Добавление участника в канал
+### <a name="example-1-add-a-member-to-a-private-channel"></a>Пример 1. Добавление участника в закрытый канал
 
 #### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -106,6 +108,8 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
+Ниже приведен пример ответа.
+
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
   "blockType": "response",
@@ -128,9 +132,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-add-a-member-with-the-owner-role-to-a-channel"></a>Пример 2. Добавление участника с ролью владельца в канал
+### <a name="example-2-add-a-member-with-the-owner-role-to-a-private-channel"></a>Пример 2. Добавление участника с ролью владельца в закрытый канал
 
 #### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -177,7 +183,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
@@ -201,7 +207,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-add-a-member-to-a-channel-using-user-principal-name"></a>Пример 3. Добавление участника в канал с использованием основного имени пользователя
+### <a name="example-3-add-a-member-to-a-channel-using-user-principal-name"></a>Пример 3. Добавление участника в канал с помощью имени участника-пользователя
 
 #### <a name="request"></a>Запрос
 
@@ -251,6 +257,8 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
+Ниже приведен пример ответа.
+
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
   "blockType": "response",
@@ -270,6 +278,108 @@ Content-type: application/json
   "displayName": "Jacob Hancock",
   "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
   "email": "jacob@contoso.com"
+}
+```
+
+### <a name="example-4-add-a-user-who-is-part-of-the-same-tenant-as-a-member-to-a-shared-channel"></a>Пример 4. Добавление пользователя, который является частью того же клиента, что и участник, в общий канал
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+<!-- {
+  "blockType": "request",
+  "name": "shared_channel_add_intra_tenant_member"
+} -->
+
+```http
+POST https://graph.microsoft.com/beta/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/channels/19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2/members
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "roles": [],
+    "user@odata.bind": "https://graph.microsoft.com/beta/users/24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4"
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conversationMember"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 468
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('6a720ba5-7373-463b-bc9f-4cd04b5c6742')/channels('19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2')/members/$entity",
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "id": "ZGY4MWRiNTMtYzdlMi00MThhLTg4MDMtMGU2OGQ0Yjg4NjA3IyMxOTpMcHhTaEhaWmg5dXRqTmNFbVVTNWFPRVA5QVN3ODVPVW4wNU5jV1lBaFg4MUB0aHJlYWQudGFjdjIjIzI0YjM4MTliLTRlMWQtNGYzZS04NmJkLWU0MmI1NGQwYjJiNA==",
+    "roles": [],
+    "displayName": "John Doe",
+    "visibleHistoryStartDateTime": null,
+    "userId": "24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4",
+    "email": "john_doe@contoso.com",
+    "tenantId": "df81db53-c7e2-418a-8803-0e68d4b88607"
+}
+```
+
+### <a name="example-5-add-a-user-who-is-part-of-a-different-tenant-as-a-member-to-a-shared-channel"></a>Пример 5. Добавление пользователя, который является частью другого клиента, в качестве участника в общий канал
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "shared_channel_add_x_tenant_member"
+} -->
+
+```http
+POST https://graph.microsoft.com/beta/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/channels/19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2/members
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "roles": [],
+    "user@odata.bind": "https://graph.microsoft.com/beta/users/bc3598dd-cce4-4742-ae15-173429951408",
+    "tenantId": "a18103d1-a6ef-4f66-ac64-e4ef42ea8681"
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conversationMember"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 468
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('6a720ba5-7373-463b-bc9f-4cd04b5c6742')/channels('19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2')/members/$entity",
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "id": "YTE4MTAzZDEtYTZlZi00ZjY2LWFjNjQtZTRlZjQyZWE4NjgxIyMxOTpMcHhTaEhaWmg5dXRqTmNFbVVTNWFPRVA5QVN3ODVPVW4wNU5jV1lBaFg4MUB0aHJlYWQudGFjdjIjI2JjMzU5OGRkLWNjZTQtNDc0Mi1hZTE1LTE3MzQyOTk1MTQwOA==",
+    "roles": [],
+    "displayName": "Eric Solomon",
+    "visibleHistoryStartDateTime": null,
+    "userId": "bc3598dd-cce4-4742-ae15-173429951408",
+    "email": "ericsol@fabrikam.com",
+    "tenantId": "a18103d1-a6ef-4f66-ac64-e4ef42ea8681"
 }
 ```
 

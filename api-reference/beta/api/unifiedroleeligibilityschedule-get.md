@@ -1,23 +1,23 @@
 ---
 title: Get unifiedRoleEligibilitySchedule
 description: Ознакомьтесь с свойствами и отношениями объекта unifiedRoleEligibilitySchedule.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 22af8e7d1be82aa5f13321e9b6fe25f68fa8fdb2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3f6405558420d86462898794024c92a2280b271d
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132683"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509373"
 ---
 # <a name="get-unifiedroleeligibilityschedule"></a>Get unifiedRoleEligibilitySchedule
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleEligibilitySchedule.](../resources/unifiedroleeligibilityschedule.md)
+Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,12 +46,12 @@ GET /roleManagement/directory/roleEligibilitySchedules/{unifiedRoleEligibilitySc
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и объект [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

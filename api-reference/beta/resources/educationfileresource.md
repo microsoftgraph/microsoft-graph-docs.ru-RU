@@ -1,31 +1,36 @@
 ---
-title: Тип ресурса Едукатионфилересаурце
-description: Подкласс Едукатионресаурце, представляющий объект File, связанный с назначением или отправкой.  В этом случае файл не является одним из специальных файлов (Word, Excel и т. д.), но это файл, для которого не определена специальная обработка в системе. Файловый ресурс должен храниться в **ресаурцефолдер** , связанном с назначением или отправкой, к которому присоединен этот ресурс.
-localization_priority: Normal
+title: Тип ресурса educationFileResource
+description: Подкласс educationResource, представляющий объект файла, связанный с назначением или отправкой.  В этом случае это не один из специальных файлов (Word, Excel и т. д.), а файл, который не имеет специальной обработки в системе. Файл ресурса должен храниться в **папке resourceFolder** , связанной с назначением или отправкой этого ресурса.
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: cafef836f1e6f6fb4c2e379f9b9ad618f2519f72
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 325fc7beec6eeb482cb19cd1c56eebf144b41cf7
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095452"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684692"
 ---
-# <a name="educationfileresource-resource-type"></a>Тип ресурса Едукатионфилересаурце
+# <a name="educationfileresource-resource-type"></a>Тип ресурса educationFileResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Подкласс [едукатионресаурце](educationresource.md) , представляющий объект File, связанный с назначением или отправкой.  В этом случае файл не является одним из специальных файлов (Word, Excel и т. д.), но это файл, для которого не определена специальная обработка в системе. Файловый ресурс должен храниться в **ресаурцефолдер** , связанном с назначением или отправкой, к которому присоединен этот ресурс.
+Подкласс [educationResource](educationresource.md) , представляющий объект файла, связанный с назначением или отправкой.  В этом случае это не один из специальных файлов (Word, Excel и т. д.), а файл, который не имеет специальной обработки в системе. Файл ресурса должен храниться в **папке resourceFolder** , связанной с назначением или отправкой этого ресурса.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fileUrl|Строка|Расположение на диске файлового ресурса.|
+|fileUrl|String|Расположение на диске файлового ресурса.|
+|createdBy|String|Отображаемое имя пользователя, создавшего этот объект.|
+|createdDateTime|DateTimeOffset|Дата, когда была добавлена повторная ошибка.|
+|displayName|string|Отображаемое имя ресурса.|
+|lastModifiedBy|[identitySet](identityset.md)|Последний пользователь, который изменяет ресурс.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения ресурса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -39,7 +44,12 @@ ms.locfileid: "48095452"
 
 ```json
 {
-  "fileUrl": "String"
+  "fileUrl": "String",
+  "createdBy": "String (User)",
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "lastModifiedBy": "String (User)",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 ```

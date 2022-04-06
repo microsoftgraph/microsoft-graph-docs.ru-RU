@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ef1efb438489b044653c077ccbccd9fbe98e885c
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: bf812f1e50204e4d1948b42e2abea55d0a9d31a2
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61337569"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64628772"
 ---
 # <a name="getmyrequests-function"></a>функция getMyRequests
 
@@ -29,7 +29,7 @@ ms.locfileid: "61337569"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,14 +43,14 @@ GET /deviceManagement/operationApprovalRequests/getMyRequests
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы эта функция возвращает код ответа и `200 OK` [коллекцию operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) в тексте отклика.
+В случае успешной работы эта функция возвращает код `200 OK` ответа и [коллекцию operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/operationApprovalRequests/
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1668
+Content-Length: 1741
 
 {
   "value": [
@@ -113,7 +113,8 @@ Content-Length: 1668
       },
       "status": "needsApproval",
       "requestJustification": "Request Justification value",
-      "approvalJustification": "Approval Justification value"
+      "approvalJustification": "Approval Justification value",
+      "operationApprovalPolicies": "Operation Approval Policies value"
     }
   ]
 }

@@ -1,16 +1,16 @@
 ---
 title: Перечисление правил
 description: Получите ресурсы unifiedRoleManagementPolicyRule из свойства навигации правил.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: de0f303574810e0e8cc0cddb76289ae9c8cefaeb
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: ad00ffe481e6a419aad9f13524fef1e797eeaea4
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669727"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510606"
 ---
 # <a name="list-rules"></a>Перечисление правил
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "63669727"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
+|Приложение|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 

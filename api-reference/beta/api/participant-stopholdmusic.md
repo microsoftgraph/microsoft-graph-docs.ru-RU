@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 31b1b0f98254b04cc1758737ee3e454728c81720
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: 7665fc34203bf6b25f8e23cc93bca2d6f6593f2a
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878871"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607941"
 ---
 # <a name="participant-stopholdmusic"></a>участник: stopHoldMusic
 
@@ -27,9 +27,7 @@ ms.locfileid: "62878871"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Для приложений                            | Нет. |
-
-> **Примечание:** Проверка разрешений происходит, когда приложение присоединяется или пытается запустить вызов. Дополнительные проверки разрешений не выполняются при запросе `stopHoldMusic` .
+| Для приложений                            | Calls.JoinGroupCallsasGuest.All или Calls.JoinGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +46,7 @@ POST /communications/calls/{id}/participants/{id}/stopHoldMusic
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|clientContext|String|Необязательный параметр. Уникальная строка контекста клиента. Может иметь не более 256 символов.|
+|clientContext|Строка|Необязательно. Уникальная строка контекста клиента. Может иметь не более 256 символов.|
 
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код `202 Accepted` ответа и [объект stopHoldMusicOperation](../resources/stopHoldmusicoperation.md) в тексте отклика.

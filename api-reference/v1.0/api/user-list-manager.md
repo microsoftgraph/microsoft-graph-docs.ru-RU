@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0760053904beb361518f78ddbed7d5ea99b63141
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 28e9a6fe5430835a6866a3c54064fb0816f4178a
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336685"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672002"
 ---
 # <a name="list-manager"></a>Получение руководителя
 
@@ -24,7 +24,7 @@ ms.locfileid: "63336685"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 

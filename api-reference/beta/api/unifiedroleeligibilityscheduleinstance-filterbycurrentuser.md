@@ -1,16 +1,16 @@
 ---
 title: 'unifiedRoleEligibilityScheduleInstance: filterByCurrentUser'
 description: Получите список объектов unifiedRoleEligibilityScheduleInstance и их свойств, отфильтрованных определенным пользователем
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ba4edb5ff99c84d9c5a227e40b8df75e43f1fca8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 07c455344d871d1c93715d15a543c45488537b1d
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107886"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510572"
 ---
 # <a name="unifiedroleeligibilityscheduleinstance-filterbycurrentuser"></a>unifiedRoleEligibilityScheduleInstance: filterByCurrentUser
 Пространство имен: microsoft.graph
@@ -43,7 +43,7 @@ GET /roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUs
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|roleEligibilityScheduleInstanceFilterByCurrentUserOptions|Фильтр для запроса объектов, для которых основным является текущий пользователь. Разрешено значение `principal` . Обязательное.|
+|on|roleEligibilityScheduleInstanceFilterByCurrentUserOptions|Фильтр для запроса объектов, для которых основным является текущий пользователь. Разрешено значение `principal`. Обязательный аргумент.|
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
@@ -54,12 +54,12 @@ GET /roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUs
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) в теле ответа.
+В случае успеха `200 OK` этот метод возвращает код отклика и коллекцию объектов [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 

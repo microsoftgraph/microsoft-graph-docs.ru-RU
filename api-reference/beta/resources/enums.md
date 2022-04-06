@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 5085bd3db401b09c24e93a556fd9e938e69f8d73
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: aedf9e901c570fc53e65a519c4363d6f00d633c9
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63758216"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588514"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -80,8 +80,8 @@ ms.locfileid: "63758216"
 
 |Member|
 |:---|
-|пользователь|
-|group;|
+|user|
+|group|
 
 ### <a name="accesspackagefilterbycurrentuseroptions-values"></a>значения accessPackageFilterByCurrentUserOptions
 
@@ -352,7 +352,7 @@ ms.locfileid: "63758216"
 |:---|
 |applicationProxy|
 |exchangeOnline|
-|проверка подлинности|
+|authentication|
 |подготовка|
 |intunePfx|
 |oflineDomainJoin|
@@ -624,7 +624,7 @@ ms.locfileid: "63758216"
 |все|
 |privilegedAdmin|
 |Администратор|
-|пользователь|
+|user|
 |unknownFutureValue|
 
 ### <a name="includedusertypes-values"></a>значения includedUserTypes
@@ -632,7 +632,7 @@ ms.locfileid: "63758216"
 |Member|
 |:---|
 |все|
-|участники|
+|член|
 |гость|
 |unknownFutureValue|
 
@@ -640,7 +640,7 @@ ms.locfileid: "63758216"
 
 |Member|
 |:---|
-|пользователь|
+|user|
 |приложение|
 |system|
 |unknownFutureValue|
@@ -737,7 +737,7 @@ ms.locfileid: "63758216"
 
 |Member|
 |:---|
-|участники|
+|член|
 |гость|
 |unknownFutureValue|
 
@@ -746,7 +746,7 @@ ms.locfileid: "63758216"
 
 |Member|
 |:---|
-|пользователь|
+|user|
 |запрос|
 |servicePrincipal|
 |v1ConditionalAccess|
@@ -938,7 +938,7 @@ ms.locfileid: "63758216"
 |семейство|
 |contacts|
 |groupMembers|
-|organization|
+|organization;|
 |federatedOrganizations|
 |все|
 |unknownFutureValue|
@@ -987,8 +987,8 @@ ms.locfileid: "63758216"
 
 |Member|
 |:---|
-|пользователь|
-|group;|
+|user|
+|group|
 
 ### <a name="authenticationmethodstate-values"></a>значения authenticationMethodState
 
@@ -1106,7 +1106,7 @@ ms.locfileid: "63758216"
 |Member|
 |:---|
 |event|
-|сообщение|
+|message|
 |driveItem|
 |externalItem|
 |site|
@@ -1246,7 +1246,7 @@ ms.locfileid: "63758216"
 | Member
 |:-----------------
 | Нет|
-| пользователь|
+| user|
 | manager|
 | unknownFutureValue|
 
@@ -1449,7 +1449,7 @@ ms.locfileid: "63758216"
 | Member
 |:-------------
 | unknown
-| проверка подлинности
+| authentication
 | авторизация
 | accountValidation
 | userValidation
@@ -1977,7 +1977,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|сообщение|
+|message|
 |chatEvent |
 |ввод текста |
 |unknownFutureValue|
@@ -2037,7 +2037,7 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |signin|
-|пользователь|
+|user|
 |unknownFutureValue|
 |servicePrincipal|
 
@@ -2063,7 +2063,7 @@ Enum для серьезности оповещений.
 | Member       |
 |:--------------|
 |event|
-|сообщение|
+|message|
 |driveItem|
 |externalFile|
 |externalItem|
@@ -2246,7 +2246,7 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкий|2|
+|Низкая|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
@@ -2284,7 +2284,7 @@ Enum для серьезности оповещений.
 | Элемент        | Значение | Описание              |
 |:--------------|:------|:-------------------------|
 | неопределяемая     | 0     | Еще не знаю.            |
-| пользователь          | 1     | Отправка пользователя.         |
+| user          | 1     | Отправка пользователя.         |
 | администратор | 2     | Отправка администратора клиента. |
 
 ### <a name="threatassessmentresulttype-values"></a>значения threatAssessmentResultType
@@ -2375,7 +2375,7 @@ Enum для серьезности оповещений.
 |dateTime | Столбец dateTime. |
 |lookup | столбец lookup. |
 |boolean | Столбец Да/Нет. |
-|пользователь | столбец персоны или группы. |
+|user | столбец персоны или группы. |
 |url | гиперссылка или столбец изображения. |
 |вычисляется | вычислимый столбец. |
 |location | столбец расположения. |
@@ -2458,7 +2458,7 @@ Enum для серьезности оповещений.
 | Элемент             | Значение | Описание               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | Указывает, что чат — это чат 1:1. Размер реестра фиксирован для этого типа чата, член не может быть удален или добавлен.                  |
-|group;               | 1     | Указывает, что чат — это групповой чат. Размер реестра (не менее 2 человек) может быть обновлен для этого типа чата. Члены могут быть удалены или добавлены позже.   |
+|group               | 1     | Указывает, что чат — это групповой чат. Размер реестра (не менее 2 человек) может быть обновлен для этого типа чата. Члены могут быть удалены или добавлены позже.   |
 |собрание             | 2     | Указывает, что чат — это чат собраний, который создается как побочный эффект создания OnlineMeeting.  |
 |unknownFutureValue  | 3     | Значение Sentinel, чтобы указать будущие значения. |
 
@@ -2475,7 +2475,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|group;|
+|group|
 |unknownFutureValue|
 |реестр|
 
@@ -2933,4 +2933,73 @@ Enum для серьезности оповещений.
 |запуск|
 |успешно|
 |не удалось|
+|unknownFutureValue|
+
+### <a name="delegatedadminaccessassignmentstatus-values"></a>delegatedAdminAccessAssignmentStatus values 
+
+|Member|
+|:---|
+|ожидание|
+|active|
+|удаление|
+|deleted|
+|error|
+|unknownFutureValue|
+
+### <a name="delegatedadminaccesscontainertype-values"></a>delegatedAdminAccessContainerType values 
+
+|Member|
+|:---|
+|securityGroup|
+|unknownFutureValue|
+
+### <a name="delegatedadminrelationshipoperationstatus-values"></a>delegatedAdminRelationshipOperationStatus values 
+
+|Member|
+|:---|
+|notStarted|
+|запуск|
+|complete|
+|не удалось|
+|unknownFutureValue|
+
+### <a name="delegatedadminrelationshipoperationtype-values"></a>delegatedAdminRelationshipOperationType values 
+
+|Member|
+|:---|
+|delegatedAdminAccessAssignmentUpdate|
+|unknownFutureValue|
+
+### <a name="delegatedadminrelationshiprequestaction-values"></a>delegatedAdminRelationshipRequestAction values 
+
+|Member|
+|:---|
+|lockForApproval|
+|прекращение|
+|unknownFutureValue|
+
+### <a name="delegatedadminrelationshiprequeststatus-values"></a>delegatedAdminRelationshipRequestStatus values 
+
+|Member|
+|:---|
+|создано|
+|ожидание|
+|complete|
+|не удалось|
+|unknownFutureValue|
+
+### <a name="delegatedadminrelationshipstatus-values"></a>delegatedAdminRelationshipStatus values 
+
+|Member|
+|:---|
+|активация|
+|active|
+|approvalPending|
+|утверждено|
+|создано|
+|истек срок действия|
+|истечение срока действия|
+|прекращено|
+|прекращение|
+|terminationRequested|
 |unknownFutureValue|

@@ -1,16 +1,16 @@
 ---
 title: Создание канала
-description: Создание нового канала в команде, как указано в теле запроса.
+description: Создайте новый канал в команде, как указано в тексте запроса.
 ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d753d89f4dae91e5f052b636c10c86fc760b8561
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 585cda8ea0f44f11a57d08173373ba6440172d45
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804726"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684895"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -18,7 +18,11 @@ ms.locfileid: "62804726"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [канал](../resources/channel.md) в команде, как указано в теле запроса.
+Создайте новый [канал](../resources/channel.md) в команде, как указано в тексте запроса.
+
+> [!IMPORTANT]
+> В настоящее время общие каналы находятся в состоянии общедоступной предварительной версии. В течение этого времени microsoft API Graph для создания общего канала доступна ограниченной аудитории. Мы рекомендуем создавать общие каналы в клиенте Teams и использовать API microsoft Graph для управления ими. Дополнительные сведения о том, как включить общие каналы в клиенте Teams, см. в разделе "Общие Microsoft Teams [(предварительная версия)"](/microsoftteams/shared-channels).
+
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,13 +32,13 @@ ms.locfileid: "62804726"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Channel.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | Channel.Create.Group *, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
+|Для приложений | Channel.Create.Group *, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
 [!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
-> **Примечание**. В будущем Корпорация Майкрософт может потребовать от вас или ваших клиентов уплаты дополнительных сборов в зависимости от количества данных, импортируемых с помощью API Teamwork.Migrate.All и/или [переноса](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+> **Примечание**. В будущем корпорация Майкрософт может потребовать от вас или ваших клиентов оплаты дополнительных сборов в зависимости от объема данных, импортированных с помощью API Teamwork.Migrate.All и (или) [миграции](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,16 +55,16 @@ POST /teams/{team-id}/channels
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [канала](../resources/channel.md) .
+В тексте запроса добавьте представление объекта канала [в формате](../resources/channel.md) JSON.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [channel](../resources/channel.md) в тексте отклика.
+В случае успешного выполнения `201 Created` этот метод возвращает код отклика и [](../resources/channel.md) объект канала в теле отклика для канала со значением **membershipType** или `standard` `private`. Для канала со **значением membershipType** этот `shared`метод возвращает ответ, `202 Accepted` содержащий ссылку на [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
 При безуспешном запросе этот метод возвращает код отклика `400 Bad Request`. Ниже перечислены распространенные причины этого отклика.
 
 * Для **createdDateTime** установлено значение в будущем.
-* **createdDateTime** правильно указывается, но атрибут **экземпляра channelCreationMode** отсутствует или задан для значения недействительным.
+* **Параметр createdDateTime** указан правильно, но атрибут экземпляра **channelCreationMode** отсутствует или задается недопустимое значение.
 
 ## <a name="examples"></a>Примеры
 
@@ -117,7 +121,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 
@@ -142,7 +146,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-В следующем примере показан запрос на создание частного канала и добавление пользователя в качестве владельца группы.
+В следующем примере показан запрос на создание закрытого канала и добавление пользователя в качестве владельца команды.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -201,7 +205,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -253,8 +257,8 @@ Content-Type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример отклика. Заглавный заглавный пункт Content-Location в ответе указывает путь к каналу, который будет задан.
-После этого этот канал можно использовать для [импорта сообщений](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+Ниже приведен пример ответа. Заголовок `Content-Location` в ответе указывает путь к каналу, который подготавливается.
+После подготовки этот канал можно использовать для [импорта сообщений](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -280,11 +284,11 @@ Location: /teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24
 }
 ```
 
-### <a name="example-4-create-standard-channel-with-moderation-settings"></a>Пример 4. Создание стандартного канала с настройками модерации
+### <a name="example-4-create-standard-channel-with-moderation-settings"></a>Пример 4. Создание стандартного канала с параметрами модерации
 
 #### <a name="request"></a>Запрос
 
-В следующем примере показан запрос на создание стандартного канала с настройками модерации. Эта операция может выполняться только для стандартного канала.
+В следующем примере показан запрос на создание стандартного канала с параметрами модерации. Эта операция может выполняться только для стандартного канала.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -340,7 +344,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -359,15 +363,15 @@ Content-type: application/json
     "isFavoriteByDefault": null,
     "email": "",
     "webUrl": "https://teams.microsoft.com/l/channel/19:12b76eea88574bd1969dca37e2b7a819@thread.skype/My%20First%20Private%20Channel?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0fddfdc5-f319-491f-a514-be1bc1bf9ddc",
-    "membershipType": "private"
+    "membershipType": "standard"
 }
 ```
 
-### <a name="example-5-create-private-channel-on-behalf-of-user-using-user-principal-name"></a>Пример 5. Создание частного канала от имени пользователя с использованием основного имени пользователя
+### <a name="example-5-create-private-channel-on-behalf-of-user-using-user-principal-name"></a>Пример 5. Создание частного канала от имени пользователя с использованием имени участника-пользователя
 
 #### <a name="request"></a>Запрос
 
-В следующем примере показан запрос на создание частного канала и добавление пользователя в качестве владельца группы.
+В следующем примере показан запрос на создание закрытого канала и добавление пользователя в качестве владельца команды.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -423,12 +427,9 @@ Content-type: application/json
 
 
 
----
-
 #### <a name="response"></a>Отклик
 
-Ниже показан пример отклика.
-
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -438,7 +439,8 @@ Content-type: application/json
 
 ```http
 HTTP/1.1 201 Created
-Content-type: application/json
+Content-Type: application/json
+Content-Length: 0
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
@@ -452,9 +454,56 @@ Content-type: application/json
 }
 ```
 
+
+### <a name="example-6-create-a-shared-channel-on-behalf-of-a-user"></a>Пример 6. Создание общего канала от имени пользователя
+
+#### <a name="request"></a>Запрос
+
+В следующем примере показано, как создать общий канал.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_shared_channel"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+Content-type: application/json
+
+{
+  "displayName": "My First Shared Channel",
+  "description": "This is my first shared channel",
+  "membershipType": "shared",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('7640023f-fe43-gv3f-9gg4-84a9efe4acd6')",
+      "roles": [
+        "owner"
+      ]
+    }
+  ]
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Content-Location: /teams/7640023f-fe43-4cc7-9bd3-84a9efe4acd6/operations/359d75f6-2bb8-4785-ab2d-377bf3d573fa
+Content-Length: 0
+```
+
 ## <a name="see-also"></a>См. также
 
-* [Полная миграция для канала](channel-completemigration.md)
+* [Завершение миграции для канала](channel-completemigration.md)
 * [Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 * [Создание команды](team-post.md)
 
@@ -471,3 +520,7 @@ Content-type: application/json
   ]
 }
 -->
+
+
+
+

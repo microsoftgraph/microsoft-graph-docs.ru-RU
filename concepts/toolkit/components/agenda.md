@@ -2,13 +2,13 @@
 title: Компонент "Повестка дня" в Microsoft Graph Toolkit
 description: Веб-компонент mgt-agenda используется для представления событий в календаре пользователя или группы.
 ms.localizationpriority: medium
-author: nmetulev
-ms.openlocfilehash: c69c4adf43a16c3a8c8e6af643e89091c28dc4a4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 6787f7d5ce8804b4f24306b0b17ad47024d227b5
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035355"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589051"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Компонент "Повестка дня" в Microsoft Graph Toolkit
 
@@ -133,13 +133,13 @@ mgt-agenda {
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
 `eventClick` | Пользователь щелкает или нажимает событие. | Выбранное [событие](/graph/api/resources/event) | Нет | Нет | Да, с пользовательским **шаблоном** событий
 
-Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
+Дополнительные сведения об обработке событий см. в [этой информации](../customize-components/events.md).
 
 ## <a name="microsoft-graph-permissions"></a>Разрешения Microsoft Graph
 
 Этот компонент использует следующие API и разрешения Microsoft Graph.
 
-| Настройка | Разрешение | API
+| Конфигурация | Разрешение | API
 | - | - | - |
 | default | Calendars.Read | [/me/calendarview](/graph/api/calendar-list-calendarview) |
 

@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: dd2c23bfb37acd11aecca52100866ae1afaa8cc6
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: afaeea22c2a0175588eb8770d6db713c4eed3838
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393552"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671568"
 ---
 # <a name="get-groupsetting"></a>Get groupSetting
 
@@ -27,7 +27,7 @@ ms.locfileid: "63393552"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -37,7 +37,7 @@ ms.locfileid: "63393552"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.Read.All, Group.ReadWrite.All  |
+|Для приложений | Group.Read.All, Group.ReadWrite.All  |
 
 
 ## <a name="http-request"></a>HTTP-запрос

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса educationPointsOutcome
-description: EducationOutcome, который дает числовую оценку
-localization_priority: Normal
+description: EducationOutcome, который дает числовое значение
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ebf9a0bf12b7c4a78f28c9d75c93469afec2c34c
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 86e2b5bd8113b929252e78e4cf362ac1e966373f
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50153632"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685182"
 ---
 # <a name="educationpointsoutcome-resource-type"></a>Тип ресурса educationPointsOutcome
 
@@ -18,7 +18,7 @@ ms.locfileid: "50153632"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[EducationOutcome,](educationoutcome.md) который дает числовую оценку.
+[EducationOutcome](educationoutcome.md) с числовым оценок.
 
 ## <a name="methods"></a>Методы
 
@@ -30,8 +30,9 @@ ms.locfileid: "50153632"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|Числовая оценка, присвоенная преподавателем для этого задания.|
-|publishedPoints|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|Копия свойства points, которая сделана при отписке оценки учащемуся.|
+|id|String|Уникальный идентификатор для educationPointsOutcome.|
+|points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|Числовой класс, который преподаватель предоставил учащемуся для этого задания.|
+|publishedPoints|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|Копия свойства points, которая создается при выпуске оценки учащемуся.|
 
 ## <a name="relationships"></a>Связи
 
@@ -52,6 +53,7 @@ ms.locfileid: "50153632"
 
 ```json
 {
+  "id": "String (identifier)",
   "points": {"@odata.type": "microsoft.graph.educationAssignmentPointsGrade"},
   "publishedPoints": {"@odata.type": "microsoft.graph.educationAssignmentPointsGrade"}
 }

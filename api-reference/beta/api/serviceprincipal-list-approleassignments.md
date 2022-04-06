@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: fe256df76d99691aa20f96301c1b80204d9a76c4
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: 9b48e5b1542ad2c687157a9f1eaff818ddf09e4f
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878822"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671386"
 ---
 # <a name="list-approleassignments-granted-to-a-service-principal"></a>Список объектов appRoleAssignment, предоставленных для субъект-службы
 
@@ -23,7 +23,7 @@ ms.locfileid: "62878822"
 Роли приложений, назначаемые субъектам-службам, также называются [разрешениями приложений](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Разрешения приложений можно предоставлять с помощью создания назначений ролей приложений, а также с помощью [интерфейса согласия](/azure/active-directory/develop/application-consent-experience).
 
 
->**Примечание** При запросе могут происходить задержки репликации для назначения ролей приложения, которые были недавно предоставлены или удалены.
+>**Примечание.** При запросе могут происходить задержки репликации для назначения ролей приложения, которые были недавно предоставлены или удалены.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -31,7 +31,7 @@ ms.locfileid: "62878822"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 

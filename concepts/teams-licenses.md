@@ -4,12 +4,12 @@ description: Узнайте о моделях лицензирования и о
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: e3f8637bc55c6cd1cb9055d6b914063b8980e858
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: 422e1ba9c8ff61ce39b0d65615bd2e2fb45ffaaf
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262108"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672709"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Требования к лицензированию и оплате для API Microsoft Teams в Microsoft Graph
 
@@ -67,7 +67,8 @@ ms.locfileid: "62262108"
 
 ## <a name="required-licenses-for-modela"></a>Требуемые лицензии для `model=A` 
 
-Пользователю потребуется одна из [поддерживаемых лицензий.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-graph-apis-for-teams-data-loss-prevention-dlp-and-for-teams-export) Какому именно пользователю нужна лицензия, зависит от API; подробнее см. [Требования `model=A`](#modela-requirements).
+Пользователю потребуется лицензия, поддерживающая [план обслуживания](/azure/active-directory/enterprise-users/licensing-service-plan-reference) защиты от потери данных Microsoft Communications, например одну из этих [поддерживаемых лицензий](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-graph-apis-for-teams-data-loss-prevention-dlp-and-for-teams-export).
+Какому именно пользователю нужна лицензия, зависит от API; подробнее см. [Требования `model=A`](#modela-requirements).
 
 Эти требования лицензирования не распространяются на гостевых пользователей.
 Они также не распространяются на сообщения, отправленные из-за пределов клиента (в федеративном чате).

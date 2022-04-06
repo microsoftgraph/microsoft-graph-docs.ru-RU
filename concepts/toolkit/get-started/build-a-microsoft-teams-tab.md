@@ -1,25 +1,25 @@
 ---
 title: Создайте вкладку Microsoft Teams с помощью microsoft Graph набор средств
-description: Начало создания вкладки Microsoft Teams с помощью microsoft Graph набор средств.
+description: начало работы создание вкладки Microsoft Teams с помощью microsoft Graph набор средств.
 ms.localizationpriority: medium
-author: simonagren
-ms.openlocfilehash: 76e8957ae515c784dcbbebbeb72bc04e5ab5c588
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+author: sebastienlevert
+ms.openlocfilehash: 6b33fda93f3383fede93d79362762ea234e7a8be
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224876"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589018"
 ---
 # <a name="build-a-microsoft-teams-tab-with-the-microsoft-graph-toolkit"></a>Создайте вкладку Microsoft Teams с помощью microsoft Graph набор средств
 
-В этом разделе описывается, как начать использовать microsoft Graph набор средств в Microsoft Teams решении. Это руководство для приложения на одной странице без единого входного приложения (SSO) и не требует дополнительного приложения. Если вы реализуете SSO с настраиваемой задней спиной, см. в Microsoft Teams вкладке [(SSO).](./build-a-microsoft-teams-sso-tab.md)
+В этом разделе описывается, как начать использовать microsoft Graph набор средств в Microsoft Teams решении. Это руководство для приложения на одной странице без единого входного приложения (SSO) и не требует дополнительного приложения. Если вы реализуете SSO с настраиваемой задней Microsoft Teams([SSO)](./build-a-microsoft-teams-sso-tab.md).
 
 Создание вкладки включает в себя следующие действия:
 
 1. Добавьте microsoft Graph набор средств.
 1. Создание всплываемой страницы auth.
 1. Создание идентификатора клиента/приложения
-1. Инициализация Teams поставщика MSAL2.
+1. Инициализация поставщика Teams MSAL2.
 1. Добавление компонентов.
 1. Проверьте приложение.
 
@@ -28,7 +28,7 @@ ms.locfileid: "61224876"
 Вы можете использовать microsoft Graph набор средств в приложении, ссылаясь на погрузчик напрямую (с помощью unpkg) или установив пакеты npm. Чтобы использовать набор средств, вам также потребуется Microsoft Teams [SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk).
 
 # <a name="unpkg"></a>[unpkg](#tab/unpkg)
-Чтобы использовать набор средств и Teams SDK через загрузчики, добавьте ссылку в скрипте в код:
+Чтобы использовать набор средств и Teams SDK через загрузчики, добавьте ссылку в скрипт в код:
 
 ```html
 <!-- Microsoft Teams sdk must be referenced before the toolkit -->
@@ -47,7 +47,7 @@ npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-msal
 
 ## <a name="create-the-auth-popup-page"></a>Создание всплываемой страницы auth
 
-Чтобы разрешить пользователям войти, вам потребуется страница в приложении, Teams откроется в всплывающее всплывающее приложение, чтобы следовать потоку проверки подлинности. Путь к странице может быть всем, пока он находится в том же домене, что и ваше приложение (например, https://yourdomain.com/tabauth) . Единственное требование для этой страницы — вызвать метод, но вы можете добавить любой необходимый контент или ход `TeamsMsal2Provider.handleAuth()` загрузки.
+Чтобы разрешить пользователям войти, вам потребуется страница в вашем приложении, Teams откроется в всплывающее приложение, чтобы следовать потоку проверки подлинности. Путь к странице может быть всем, пока он находится в том же домене, что и ваше приложение (например, https://yourdomain.com/tabauth). Единственное требование для этой страницы `TeamsMsal2Provider.handleAuth()` — вызвать метод, но вы можете добавить любой необходимый контент или ход загрузки.
 
 Ниже приводится пример базовой страницы, которая обрабатывает поток auth в всплывающее всплывающее.
 
@@ -77,11 +77,11 @@ TeamsMsal2Provider.handleAuth();
 ---
 
 ## <a name="creating-an-appclient-id"></a>Создание идентификатора клиента/приложения
-Чтобы получить клиентский ID, необходимо зарегистрировать Azure Active Directory приложение. Выполните действия в статье [Создание Azure Active Directory приложения.](./add-aad-app-registration.md)
+Чтобы получить клиентский ID, необходимо зарегистрировать Azure Active Directory приложение. Выполните действия в статье [Создание Azure Active Directory приложения](./add-aad-app-registration.md).
 
-Убедитесь, что в регистрации приложения необходимо указать на страницу auth, созданную `redirect URI` на предыдущем шаге. Например, https://localhost:3000/tabauth.
+Убедитесь, что в `redirect URI` регистрации приложения необходимо указать на страницу auth, созданную на предыдущем шаге. Например, https://localhost:3000/tabauth.
 
-> **Примечание:** Убедитесь, что в `redirect URI` качестве `Single Page Application (SPA)` . Teams msAL2 Provider использует поставщика MSAL2 за кулисами.
+> **Примечание:** Убедитесь, что в качестве `redirect URI` .`Single Page Application (SPA)` Teams msAL2 Provider использует поставщика MSAL2 за кулисами.
 
 ## <a name="initialize-the-teams-msal2-provider"></a>Инициализация поставщика Teams MSAL2
 
@@ -102,7 +102,7 @@ TeamsMsal2Provider.handleAuth();
   ></mgt-teams-msal2-provider>
 ```
 
-Замените с помощью клиентского ID для приложения и замените полный или относительный путь `<YOUR_CLIENT_ID>` `auth-popup-url` на страницу auth. 
+Замените `<YOUR_CLIENT_ID>` с помощью клиентского ID для приложения и `auth-popup-url` замените полный или относительный путь на страницу auth. 
 
 # <a name="js"></a>[js](#tab/js)
 
@@ -122,7 +122,7 @@ Providers.globalProvider = new TeamsMsal2Provider({
   scopes: ['User.Read','Mail.ReadBasic'],
 });
 ```
-Замените с помощью клиентского ID для приложения и замените полный или относительный путь `<YOUR_CLIENT_ID>` `authPopupUrl` на страницу auth.
+Замените `<YOUR_CLIENT_ID>` с помощью клиентского ID для приложения и `authPopupUrl` замените полный или относительный путь на страницу auth.
 
 ---
 ## <a name="add-components"></a>Добавление компонентов
@@ -133,9 +133,9 @@ Providers.globalProvider = new TeamsMsal2Provider({
 <mgt-login></mgt-login>
 ```
 
-Компонент Login передает кнопку "Вход", которая направляет пользователя по входу в процессе и интегрируется с любым из поставщиков для обработки проверки подлинности. После того как пользователь включит, все остальные компоненты наборов инструментов смогут автоматически вызывать microsoft Graph. Поставщики также подвергают проверке подлинность клиента Microsoft Graph для звонков API или получения маркеров доступа. Подробные сведения см. [в материале Использование поставщиков.](../providers/providers.md)
+Компонент Login передает кнопку "Вход", которая направляет пользователя по входу в процессе и интегрируется с любым из поставщиков для обработки проверки подлинности. После того, как пользователь включит, все остальные компоненты наборов инструментов смогут автоматически вызывать microsoft Graph. Поставщики также подвергают проверке подлинность клиента Microsoft Graph для звонков API или получения маркеров доступа. Подробные сведения см. [в материале Использование поставщиков](../providers/providers.md).
 
-Если вы используете React, рекомендуется использовать React компоненты вместо `mgt-react` библиотеки. Дополнительные дополнительные ссылки см. в [Graph набор средств Microsoft React](./use-toolkit-with-react.md)
+Если вы используете React, рекомендуется использовать React компоненты `mgt-react` вместо библиотеки. Дополнительные дополнительные ссылки см. в [Graph набор средств Microsoft React](./use-toolkit-with-react.md)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 - Воспользуйтесь компонентами в [интерактивной среде](https://mgt.dev).

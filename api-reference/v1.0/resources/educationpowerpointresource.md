@@ -1,30 +1,35 @@
 ---
-title: тип ресурсов educationPowerPointResource
+title: Тип ресурса educationPowerPointResource
 description: Подкласс educationResource.
 ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0ae36004fdb4673cf5025790442a418cb0dad8c6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 39ee90a926481cf36a6fa518b4955109c9b5d918
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036622"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684475"
 ---
-# <a name="educationpowerpointresource-resource-type"></a>тип ресурсов educationPowerPointResource
+# <a name="educationpowerpointresource-resource-type"></a>Тип ресурса educationPowerPointResource
 
 Пространство имен: microsoft.graph
 
 Подкласс [educationResource](educationresource.md). 
 
-Это ресурс PowerPoint. Файл PowerPoint должен быть загружен в **каталог fileResource,** связанный с назначением или отправкой.
+Это ресурс PowerPoint ресурсов. Файл PowerPoint должен быть передан в каталог **fileResource**, связанный с назначением или отправкой.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |fileUrl|String|Расположение файла на диске.|
+|createdBy|String|Отображаемое имя пользователя, создавшего этот объект.|
+|createdDateTime|DateTimeOffset|Дата, когда была добавлена повторная ошибка.|
+|displayName|string|Отображаемое имя ресурса.|
+|lastModifiedBy|[identitySet](identityset.md)|Последний пользователь, который изменяет ресурс.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения ресурса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -40,7 +45,12 @@ ms.locfileid: "59036622"
 
 ```json
 {
-  "fileUrl": "String"
+  "fileUrl": "String",
+  "createdBy": "String (User)",
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "lastModifiedBy": "String (User)",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 ```

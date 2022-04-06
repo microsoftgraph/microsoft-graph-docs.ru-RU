@@ -1,16 +1,16 @@
 ---
 title: Обновление события
 description: Обновление объекта event.
-author: Jordanndahl
+author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0ef418b1fb416922920728b73291a6629fbd3167
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6eaebb4556e9e2a43daab0713b555094c1382af7
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027753"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64586860"
 ---
 # <a name="update-event"></a>Обновление события
 
@@ -19,77 +19,92 @@ ms.locfileid: "61027753"
 Обновление объекта [event](../resources/event.md).
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+| :------------------------------------- | :------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All                         |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | Не поддерживается.                              |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PATCH /groups/{id}/events/{id}
 PATCH /groups/{id}/calendar/events/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Обязательный. |
+
+| Имя          | Тип   | Описание               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
+
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 ## <a name="response"></a>Отклик
+
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 
 ## <a name="example"></a>Пример
+
 #### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["01d4ee64-15ce-491e-bad1-b91aa3223df4", "AAMkADZlAAAAABERAAA="],
   "name": "update_group_event"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/01d4ee64-15ce-491e-bad1-b91aa3223df4/calendar/events/AAMkADZlAAAAABERAAA=
 Content-type: application/json
 
-{ 
+{
   "location":{
       "displayName":"Conf Room 2"
   }
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-group-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-group-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-group-event-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/update-group-event-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/update-group-event-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### <a name="response"></a>Отклик
+
 Ниже приведен пример ответа.
 
 <!-- {
@@ -97,6 +112,7 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.event",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 
@@ -235,4 +251,3 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
-

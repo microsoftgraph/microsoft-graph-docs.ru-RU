@@ -1,38 +1,39 @@
 ---
-title: тип ресурса educationAssignmentDefaults
-description: Указывает по умолчанию класса, которые соблюдаются новыми назначениями, созданными в классе.
+title: Тип ресурса educationAssignmentDefaults
+description: Задает значения по умолчанию на уровне класса, которые учитываются новыми назначениями, созданными в классе.
 author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 359acda9530b7aa3de10903aca42ca825cde3503
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 3b5804f98508d3dd2e4341f3834b5c9fd7068625
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763620"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684972"
 ---
-# <a name="educationassignmentdefaults-resource-type"></a>тип ресурса educationAssignmentDefaults
+# <a name="educationassignmentdefaults-resource-type"></a>Тип ресурса educationAssignmentDefaults
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Указывает по умолчанию класса, которые соблюдаются новыми назначениями, созданными в классе. Звонители могут продолжать указывать настраиваемые значения для каждого создания назначения, если они не хотят поведения по умолчанию.
+Задает значения по умолчанию на уровне класса, которые учитываются новыми назначениями, созданными в классе. Вызывающие объекты могут по-прежнему указывать пользовательские значения при каждом создании назначения, если им не нужны поведения по умолчанию.
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Get educationAssignmentDefaults](../api/educationassignmentdefaults-get.md)|[educationAssignmentDefaults](../resources/educationassignmentdefaults.md)|Ознакомьтесь с свойствами и отношениями объекта [educationAssignmentDefaults.](../resources/educationassignmentdefaults.md)|
-|[Обновление educationAssignmentDefaults](../api/educationassignmentdefaults-update.md)|[educationAssignmentDefaults](../resources/educationassignmentdefaults.md)|Обновление свойств объекта [educationAssignmentDefaults.](../resources/educationassignmentdefaults.md)|
+|[Получение educationAssignmentDefaults](../api/educationassignmentdefaults-get.md)|[educationAssignmentDefaults](../resources/educationassignmentdefaults.md)|Чтение свойств и связей объекта [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) .|
+|[Обновление educationAssignmentDefaults](../api/educationassignmentdefaults-update.md)|[educationAssignmentDefaults](../resources/educationassignmentdefaults.md)|Обновление свойств объекта [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|addedStudentAction|educationAddedStudentAction|Поведение по умолчанию на уровне класса для обработки учащихся, добавленных после публикации назначения. Возможные значения: `none`, `assignIfOpen`.|
-|addToCalendarAction| educationAddToCalendarOptions|Необязательное поле для управления добавлением назначений в календари учащихся и преподавателей при публикации. Возможные значения: `none` `studentsAndPublisher` , , , , `studentsAndTeamOwners` и `unknownFutureValue` `studentsOnly` . Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение `Prefer: include-unknown-enum-members` (ы) в этом [развиваемом переуме:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `studentsOnly` . Значение по умолчанию — `none`.|
-|dueTime|TimeOfDay|Значение по умолчанию класса для должного поля времени. Значение по умолчанию — `23:59:00`.|
-|notificationChannelUrl|Строка|По умолчанию Teams канал, в который будут отправлены уведомления. Значение по умолчанию — `null`.|
+|id|String|Уникальный идентификатор для educationAssignmentDefaults|
+|addedStudentAction|educationAddedStudentAction|Поведение по умолчанию на уровне класса для обработки учащихся, добавленных после публикации задания. Возможные значения: `none`, `assignIfOpen`.|
+|addToCalendarAction| educationAddToCalendarOptions|Необязательное поле для управления добавлением заданий в календари учащихся и преподавателей при публикации задания. Возможные значения: , , , `studentsAndTeamOwners`, и . `unknownFutureValue``studentsOnly``studentsAndPublisher``none` Обратите внимание, что для `Prefer: include-unknown-enum-members` получения следующих значений в этом развиваемом перечислении необходимо использовать заголовок [запроса](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). `studentsOnly` Значение по умолчанию — `none`.|
+|dueTime|TimeOfDay|Значение по умолчанию уровня класса для поля времени выполнения. Значение по умолчанию — `23:59:00`.|
+|notificationChannelUrl|String|По Teams канал, в который будут отправляться уведомления. Значение по умолчанию — `null`.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
@@ -48,6 +49,7 @@ ms.locfileid: "59763620"
 -->
 ``` json
 {
+  "id": "String (identifier)",
   "addedStudentAction": "none",
   "addToCalendarAction": "none",
   "dueTime": "23:59:00",

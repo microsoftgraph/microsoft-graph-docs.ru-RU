@@ -2,13 +2,13 @@
 title: Поставщик Electron
 description: Поставщик MSAL для Электронный использует msal-node для регистрации пользователей и приобретения маркеров для использования в Microsoft Graph.
 ms.localizationpriority: medium
-author: amrutha95
-ms.openlocfilehash: 183afb0393915c8411b802a4e87614f5a2ecde5c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 34bc60842c9bd22ca79d9a36ce0aa31ef1168f7f
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127901"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589291"
 ---
 # <a name="electron-provider"></a>Поставщик Electron
 
@@ -56,19 +56,19 @@ let config: MsalElectronConfig = {
 ElectronAuthenticator.initialize(config);
 ```
  
-| Атрибут    | Описание                                                                                                                                                                                                                                                           |
-|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientId    | Строковая ID клиента (см. статью Создание ID приложения/клиента). Обязательный.                                                                                                                                                                                                           |                                                                                                                                                                               |
-| scopes       | Разделенные запятой строки для областей, на которые пользователь должен дать согласие при входе. Рекомендуется.                                                                                                                                                                                     |
-| authority    | Строка Authority — по умолчанию является общим органом. Для однотенантного приложения используйте идентификатор клиента или имя клиента. Например, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` или `https://login.microsoftonline.com/[your-tenant-id]`. Необязательный. |                                                                                                                                                                                          |
-| mainWindow  | Экземпляр основного BrowserWindow, требуемого проверки подлинности.|
-| cachePlugin | Плагин кэша, который вы хотите использовать для сохраняемого хранения маркеров. См. [расширения проверки подлинности Майкрософт для узла.](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions) Необязательное. | 
+| Атрибут   | Описание                                                                                                                                                                                                                                                           |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| clientId    | Строковая ID клиента (см. статью Создание ID приложения/клиента). Обязательный.                                                                                                                                                                                                           |
+| scopes      | Разделенные запятой строки для областей, на которые пользователь должен дать согласие при входе. Рекомендуется.                                                                                                                                                                                  |
+| authority   | Строка Authority — по умолчанию является общим органом. Для однотенантного приложения используйте идентификатор клиента или имя клиента. Например, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` или `https://login.microsoftonline.com/[your-tenant-id]`. Необязательный. |
+| mainWindow  | Экземпляр основного BrowserWindow, требуемого проверки подлинности.                                                                                                                                                                                                      |
+| cachePlugin | Плагин кэша, который вы хотите использовать для сохраняемого хранения маркеров. См [. расширения проверки подлинности Майкрософт для узла](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions). Необязательно.                       |
 
 >**Примечание:** В настоящее время поставщик не поддерживает инкрементную поддержку. В качестве наилучшей практики обязательно соглашайтесь на все области, которые требуются компонентам.
     
 ## <a name="create-an-appclient-id"></a>Создание идентификатора клиента/приложения
 
-### <a name="add-new-application-registration-in-azure-active-directory-to-get-a-client-id"></a>Добавление регистрации новых приложений в Azure Active Directory, чтобы получить ID клиента
+### <a name="add-new-application-registration-in-azure-active-directory-to-get-a-client-id"></a>Добавьте новую регистрацию приложений в Azure Active Directory, чтобы получить ID клиента
 
 Чтобы создать приложение в Azure Active Directory, добавьте новую регистрацию приложения, а затем настройте имя приложения и перенаправляйте URI.
 
@@ -78,12 +78,12 @@ ElectronAuthenticator.initialize(config);
 1. В меню выберите **Azure Active Directory**.
 1. В меню Azure Active Directory выберите **Регистрация приложений**.
 1. В верхнем меню нажмите кнопку **Новая регистрация**.
-1. Введите имя приложения; например, `My Electron-App` .
+1. Введите имя приложения; например, `My Electron-App`.
 1. Для параметра [Поддерживаемые типы учетных записей](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app) выберите **Учетные записи в любом каталоге организации (любой каталог Azure AD — мультитенантный) и персональные учетные записи Майкрософт (например, Skype, Xbox)**.
-1. В поле **Перенаправление URI** в отсеве выберите общедоступный **клиент/родной (мобильный &** рабочий стол), а в поле URL-адрес введите `msal://redirect` .
+1. В поле **Перенаправление URI** в отсеве выберите общедоступный клиент/родной (мобильный & **рабочий стол)**, а в поле URL-адрес введите .`msal://redirect`
 1. Подтвердите изменения, нажав кнопку **Зарегистрировать**.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* Ознакомьтесь с пошаговой инструкцией по [построению электронного приложения.](../get-started/build-an-electron-app.md)
+* Ознакомьтесь с пошаговой инструкцией по [построению электронного приложения](../get-started/build-an-electron-app.md).
 * Взгляните на пример [приложения Electron,](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/electron-app) которое показывает, как использовать поставщика Электронный.

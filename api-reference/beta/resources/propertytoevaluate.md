@@ -1,16 +1,16 @@
 ---
 title: тип ресурса propertyToEvaluate
 description: Определяет имя и значение свойства.
-localization_priority: Normal
-author: Jordanndahl
+ms.localizationpriority: medium
+author: psaffaie
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 0855d4f06ed7f1be59c57c2989313268638e9859
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 84481eeff8ed1367e85d4000ffe1b60fb5116ad2
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682616"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587065"
 ---
 # <a name="propertytoevaluate-resource-type"></a>тип ресурса propertyToEvaluate
 
@@ -22,9 +22,9 @@ ms.locfileid: "52682616"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Описание |
-|:-------- |:---- |:----------- |
-| propertyName | String | Предоставляет имя свойства. |
+| Свойство      | Тип   | Описание                  |
+| :------------ | :----- | :--------------------------- |
+| propertyName  | Строка | Предоставляет имя свойства.  |
 | propertyValue | String | Предоставляет значение свойства. |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,4 +56,3 @@ ms.locfileid: "52682616"
   "section": "documentation",
   "tocPath": ""
 }-->
-

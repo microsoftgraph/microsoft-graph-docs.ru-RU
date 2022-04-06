@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: Удаление элемента из пакета
-description: Удаление элемента из пакета driveItems
+description: Удалите элемент из пакета driveItems.
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1a84ceeee22736c7ac02fa50403523734fe2e65b
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 7738ee4348b0b6f0caa81696bcbfe4283c79a483
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395190"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607486"
 ---
 # <a name="remove-item-from-bundle"></a>Удаление элемента из пакета
 
@@ -40,22 +40,23 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного ответа `204 No Content`.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`.
 
-Дополнительные сведения о возвращении ошибок см. в статье [Отклики с ошибками][error-response].
+Сведения об ответах на ошибки см. в Graph ответы на ошибки [и типы ресурсов][error-response].
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "remove-from-bundle" } -->
@@ -87,6 +88,8 @@ DELETE https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children/{item
 
 
 ### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
 
 <!-- { "blockType": "response" } -->
 

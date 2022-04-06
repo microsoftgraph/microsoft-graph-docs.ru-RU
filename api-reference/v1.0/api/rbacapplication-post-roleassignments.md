@@ -5,30 +5,43 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d964aa9dda53533a82384af60369db3b8fe120c5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 27d61f6e10d851272721da13a2cfebdd769fa933
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134422"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629028"
 ---
 # <a name="create-unifiedroleassignment"></a>Создание unifiedRoleAssignment
 
 Пространство имен: microsoft.graph
 
-Создайте новый [объект unifiedRoleAssignment.](../resources/unifiedroleassignment.md)
+Создайте новый [объект unifiedRoleAssignment](../resources/unifiedroleassignment.md) .
 
 ## <a name="permissions"></a>Разрешения
 
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+### <a name="for-the-directory-azure-ad-provider"></a>Для поставщика каталога (Azure AD)
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | RoleManagement.ReadWrite.Directory |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | RoleManagement.ReadWrite.Directory |
+| Для приложений                            | RoleManagement.ReadWrite.Directory |
+
+### <a name="for-the-entitlement-management-provider"></a>Для поставщика прав на управление правами
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) |  EntitlementManagement.ReadWrite.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
+
+Создание назначения ролей для поставщика каталогов:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,28 +49,37 @@ ms.locfileid: "62134422"
 POST /roleManagement/directory/roleAssignments
 ```
 
+Создайте назначение ролей для поставщика управления правами:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /roleManagement/entitlementManagement/roleAssignments
+```
+
+
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
-В теле запроса поставляем представление JSON объекта [unifiedRoleAssignment.](../resources/unifiedroleassignment.md) Запрос должен иметь область, определенную в Azure Active Directory (Azure AD), заданную **directoryScopeId,** или область приложения, заданную **appScopeId.** Примерами областей Azure AD являются клиент `/` (), административные единицы или приложения. Дополнительные сведения о appScope см. [в appScope.](../resources/appscope.md)
+В теле запроса поставляем представление JSON объекта [unifiedRoleAssignment](../resources/unifiedroleassignment.md) . Запрос должен иметь область, определенную в Azure Active Directory (Azure AD), заданную **directoryScopeId**, или область, заданную **appScopeId**. Примерами областей Azure AD являются клиент (`/`), административные единицы или приложения. Дополнительные сведения о appScope см. [в appScope](../resources/appscope.md).
 
-В следующей таблице показаны свойства, необходимые при создании объекта [unifiedRoleAssignment.](../resources/unifiedroleassignment.md)
+В следующей таблице показаны свойства, необходимые при создании объекта [unifiedRoleAssignment](../resources/unifiedroleassignment.md) .
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
 |roleDefinitionId|Строка| Идентификатор определения роли для назначения.|
 |principalId|Строка| Идентификатор основного, которому предоставляется назначение. |
-|directoryScopeId|Строка|Идентификатор объекта каталога, представляющего область назначения. Требуется либо это свойство, либо **appScopeId.** Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Используйте **appScopeId,** чтобы ограничить область только приложения.|
-|appScopeId|Строка|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Требуется либо это **свойство, либо directoryScopeId.** Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId,** чтобы ограничить область для определенных объектов каталогов, например административных единиц.|
+|directoryScopeId|Строка|Идентификатор объекта каталога, представляющего область назначения. Требуется либо это свойство **, либо appScopeId** . Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Используйте **appScopeId,** чтобы ограничить область только приложения.|
+|appScopeId|Строка|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Требуется либо это свойство **, либо directoryScopeId** . Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId** , чтобы ограничить область для определенных объектов каталогов, например административных единиц.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика и новый объект `201 Created` [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и новый объект [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -295,6 +317,53 @@ Content-type: application/json
     "resourceScope": "/661e1310-bd76-4795-89a7-8f3c8f855bfc",
     "directoryScopeId": "/661e1310-bd76-4795-89a7-8f3c8f855bfc",
     "roleDefinitionId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"
+}
+```
+
+### <a name="example-4-create-a-role-assignment-with-access-package-catalog-scope"></a>Пример 4. Создание назначения ролей с областью каталога пакетов доступа
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignment3_from_rbacapplication_4"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleAssignments
+Content-type: application/json
+
+{
+    "principalId": "679a9213-c497-48a4-830a-8d3d25d94ddc",
+    "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+    "appScopeId": "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/entitlementManagement/roleAssignments/$entity",
+    "id": "f3092518-7874-462e-93e9-0cd6c11ffc52",
+    "principalId": "679a9213-c497-48a4-830a-8d3d25d94ddc",
+    "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+    "appScopeId": "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
 }
 ```
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 43ad09f2b20df01b9d63859100c643c61ad5add3
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: ee65458720b533e001db2b34d560d8028e414bda
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489060"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630109"
 ---
 # <a name="get-deviceenrollmentplatformrestrictionconfiguration"></a>Get deviceEnrollmentPlatformRestrictionConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "60489060"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей [объекта deviceEnrollmentPlatformRestrictionConfiguration.](../resources/intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md)
+Чтение свойств и связей [объекта deviceEnrollmentPlatformRestrictionConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,14 +46,14 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и `200 OK` [объект deviceEnrollmentPlatformRestrictionConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md) в тексте ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и [объект deviceEnrollmentPlatformRestrictionConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 957
+Content-Length: 1008
 
 {
   "value": {
@@ -83,6 +83,7 @@ Content-Length: 957
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "deviceEnrollmentConfigurationType": "limit",
     "platformRestriction": {
       "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
       "platformBlocked": true,
@@ -100,6 +101,7 @@ Content-Length: 957
   }
 }
 ```
+
 
 
 

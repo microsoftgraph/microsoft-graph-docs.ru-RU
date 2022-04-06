@@ -1,16 +1,16 @@
 ---
 title: 'вызов: отклонить'
 description: Включить бот, чтобы отклонить входящий вызов.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c7d72d6448cddbd1a174c1f713792453b5039cbb
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: e58b6d996c1083c03aec5b0e96a353da562c020e
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348689"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607934"
 ---
 # <a name="call-reject"></a>вызов: отклонить
 
@@ -29,7 +29,7 @@ ms.locfileid: "62348689"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Приложение     | Нет                                                       |
+| Для приложений     | Нет                                                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ POST /communications/calls/{id}/reject
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|reason|String|Причина отказа. Возможные значения: `None`и `Busy``Forbidden` |
+|reason|Строка|Причина отказа. Возможные значения: `None`и `Busy``Forbidden` |
 |callbackUri|String|Это позволяет ботам предоставлять определенный URI вызова для текущего вызова для получения более поздних уведомлений. Если это свойство не установлено, вместо него будет использоваться глобальный URI вызова бота. Это должно быть `https`.|
 
 ## <a name="response"></a>Отклик

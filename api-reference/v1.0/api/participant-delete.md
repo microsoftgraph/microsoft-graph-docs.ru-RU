@@ -1,17 +1,16 @@
 ---
 title: Удаление участника
 description: Удаление определенного участника вызова.
-manager: zhengni
-author: jackry6350
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 69f714bba49458030627daf5e0a568fc26b1e74b
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 0dcbe3a1b9adcb5e516ec492e7e5887574f89bcc
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340771"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608004"
 ---
 # <a name="delete-participant"></a>Удаление участника
 
@@ -24,7 +23,7 @@ ms.locfileid: "62340771"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | Нет                                        |
+| Для приложений                            | Calls.JoinGroupCallsasGuest.All или Calls.JoinGroupCalls.All |
 
 Конфигурация собрания на уровне клиента требуется для того, чтобы позволить приложению вызывать этот API. Администратор клиента должен вызвать следующий комдлет на удаленной PowerShell клиента, чтобы предоставить приложению разрешение на вызов этого API. Дополнительные сведения см. [в рублях Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md).
 ```

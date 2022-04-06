@@ -5,12 +5,12 @@ description: Элемент — это основная модель данны�
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 3be0a329d891bbaccac012b8753a5c374b49a8a7
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 86589350f5808667067a26d4f89ee0693928c418
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61847228"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63559771"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
@@ -73,7 +73,8 @@ ms.locfileid: "61847228"
 
 | Свойство             | Тип               | Описание
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | Метаданные звукового файла, если элемент — звуковой файл. Только для чтения. Только в личном хранилище OneDrive.
+| audio                | [audio][]          | Метаданные звукового файла, если элемент — звуковой файл. Только для чтения. Только для чтения. Только в личном хранилище OneDrive.
+| bundle               | [bundle][]         | Метаданные пакета, если элемент является пакетом. Только для чтения.
 | содержимое              | Поток             | Поток содержимого, если элемент представляет файл.
 | createdBy            | [identitySet][]    | Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.
 | createdDateTime      | DateTimeOffset     | Дата и время создания элемента. Только для чтения.
@@ -150,7 +151,7 @@ ms.locfileid: "61847228"
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
-       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
+       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video", "bundle",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds"],
@@ -159,6 +160,7 @@ ms.locfileid: "61847228"
 ```json
 {
   "audio": { "@odata.type": "microsoft.graph.audio" },
+  "bundle": { "@odata.type": "microsoft.graph.bundle" },
   "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
@@ -218,6 +220,7 @@ ms.locfileid: "61847228"
 
 [audio]: audio.md
 [baseItem]: baseitem.md
+[bundle]: bundle.md
 [deleted]: deleted.md
 [download-format]: ../api/driveitem-get-content-format.md
 [driveItemVersion]: driveitemversion.md

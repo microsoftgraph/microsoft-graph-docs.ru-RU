@@ -5,19 +5,19 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 72e6ed93a56e39daeb74a9236314ccfe5b2fbfa6
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 943368046a8c6e8efa2c018ebbb6fe957825ab67
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650575"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723073"
 ---
 # <a name="get-accessreviewscheduledefinition"></a>Получить accessReviewScheduleDefinition
 Пространство имен: microsoft.graph
 
-Ознакомьтесь с свойствами и отношениями [объекта accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+Ознакомьтесь с свойствами и отношениями [объекта accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
-Чтобы получить экземпляры серии обзоров доступа, используйте [API accessReviewInstance.](accessreviewscheduledefinition-list-instances.md)   
+Чтобы получить экземпляры серии обзоров доступа, используйте [API accessReviewInstance](accessreviewscheduledefinition-list-instances.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "61650575"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
-Чтобы вызвать этот API, входив в каталог, пользователь должен также быть в роли каталога, которая позволяет ему читать обзор доступа, или пользователь может быть назначен в качестве рецензента в обзоре доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-overview.md)
+Чтобы вызвать этот API, входив в каталог, пользователь должен также быть в роли каталога, которая позволяет ему читать обзор доступа, или пользователь может быть назначен в качестве рецензента в обзоре доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешениям для [отзывов о доступе](../resources/accessreviewsv2-overview.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,19 +41,19 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$select` параметр запроса OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$select` запроса OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в тексте ответа.
+В случае успешной работы `200 OK` этот метод возвращает код ответа и [объект accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

@@ -1,16 +1,16 @@
 ---
 title: 'участник: configureMixer'
 description: Настройка смешанного звука для разных участников многопартийного разговора.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9b7bfd09c189f506933dce3103adc9141e374371
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 275765d6124236a00dd7dba9fd61dd9a9aa945c5
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018290"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608032"
 ---
 # <a name="participant-configuremixer"></a>участник: configureMixer
 
@@ -27,7 +27,7 @@ ms.locfileid: "61018290"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложений     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Для приложений     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ POST /communications/calls/{id}/participants/configureMixer
 |clientContext|Строка|Клиентский контекст.|
 
 ## <a name="response"></a>Отклик
-Возвращает `202 Accepted` код ответа и заглавную ссылку Location с uri в [commsOperation,](../resources/commsoperation.md) созданный для этого запроса.
+Возвращает код `202 Accepted` ответа и заглавную ссылку Location с uri в [commsOperation](../resources/commsoperation.md) , созданный для этого запроса.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.

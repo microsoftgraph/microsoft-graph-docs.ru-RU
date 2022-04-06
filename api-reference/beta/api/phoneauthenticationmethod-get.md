@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dc942a03b7cbc479c2312c41e7086a526756e807
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 82f8de570b1a7596cb558ee79456dc00e68b4ae1
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118614"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671589"
 ---
 # <a name="get-phoneauthenticationmethod"></a>Get phoneAuthenticationMethod
 
@@ -18,7 +18,7 @@ ms.locfileid: "62118614"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение одного [объекта phoneAuthenticationMethod.](../resources/phoneauthenticationmethod.md) Этот метод доступен только для стандартных пользователей Azure AD и B2B, но не для пользователей B2C.
+Извлечение одного [объекта phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) . Этот метод доступен только для стандартных пользователей Azure AD и B2B, но не для пользователей B2C.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -38,9 +38,9 @@ ms.locfileid: "62118614"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Для приложений                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих ролей [Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 * Глобальный администратор
 * Глобальный читатель
 * привилегированный администратор проверки подлинности;
@@ -51,10 +51,10 @@ ms.locfileid: "62118614"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/authentication/phoneMethods/{id}
-GET /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
+GET /me/authentication/phoneMethods/{phoneMethodId}
+GET /users/{userId | userPrincipalName}/authentication/phoneMethods/{phoneMethodId}
 ```
-Значение, `id` соответствующее извлечению phoneType, является одним из следующих:
+Значение, соответствующее `phoneMethodId` phoneType, является одним из следующих:
 + `b6332ec1-7057-4abe-9331-3d72feddfe41` для получения `alternateMobile` **phoneType**.
 + `e37fc753-ff3b-4958-9484-eaa9425c82bc` для получения `office` **phoneType**.
 + `3179e48a-750b-4051-897c-87b9720928f7` для получения `mobile` **phoneType**.
@@ -69,13 +69,13 @@ GET /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 |:----------|:----------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и запрашиваемого объекта [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

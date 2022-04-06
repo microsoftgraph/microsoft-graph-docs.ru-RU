@@ -1,35 +1,36 @@
 ---
-title: тип ресурса educationAssignmentSettings
-description: Указывает параметры назначений на уровне класса.
+title: Тип ресурса educationAssignmentSettings
+description: Задает параметры назначений на уровне класса.
 author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9b52cb9a62346bf01738c7cc37500deeb8c53275
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2421aabe7089e140b4cb9997b1d0143ed8e9f234
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062749"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684678"
 ---
-# <a name="educationassignmentsettings-resource-type"></a>тип ресурса educationAssignmentSettings
+# <a name="educationassignmentsettings-resource-type"></a>Тип ресурса educationAssignmentSettings
 
 Пространство имен: microsoft.graph
 
-Указывает параметры назначений на уровне класса.
+Задает параметры назначений на уровне класса.
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Get educationAssignmentSettings](../api/educationassignmentsettings-get.md)|[educationAssignmentSettings](../resources/educationassignmentsettings.md)|Ознакомьтесь с свойствами и отношениями объекта [educationAssignmentSettings.](../resources/educationassignmentsettings.md)|
-|[Обновление educationAssignmentSettings](../api/educationassignmentsettings-update.md)|[educationAssignmentSettings](../resources/educationassignmentsettings.md)|Обновление свойств объекта [educationAssignmentSettings.](../resources/educationassignmentsettings.md)|
+|[Получение educationAssignmentSettings](../api/educationassignmentsettings-get.md)|[educationAssignmentSettings](../resources/educationassignmentsettings.md)|Чтение свойств и связей объекта [educationAssignmentSettings](../resources/educationassignmentsettings.md) .|
+|[Обновление educationAssignmentSettings](../api/educationassignmentsettings-update.md)|[educationAssignmentSettings](../resources/educationassignmentsettings.md)|Обновление свойств объекта [educationAssignmentSettings](../resources/educationassignmentsettings.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|submissionAnimationDisabled|Boolean|Указывает, будет ли показана анимация празднования по очереди. Значение `true` указывает, что анимация не будет показана. Значение по умолчанию — `false`.|
+|id|String|Уникальный идентификатор объекта educationAssignmentSettings.|
+|submissionAnimationDisabled|Логический|Указывает, будет ли отображаться анимация с пошаговой анимацией. Значение указывает, `true` что анимация не будет отображаться. Значение по умолчанию — `false`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
@@ -43,6 +44,7 @@ ms.locfileid: "59062749"
 -->
 ``` json
 {
+  "id": "String (identifier)",
   "submissionAnimationDisabled": false
 }
 ```

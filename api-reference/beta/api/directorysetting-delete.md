@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0fcecbfbb3d5133eb2bed9377f653ebe1cc8608c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 27cfa150303e7a89553c212561966f87f7b1b47a
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336104"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671505"
 ---
 # <a name="delete-directorysetting"></a>Удаление directorySetting
 
@@ -25,7 +25,7 @@ ms.locfileid: "63336104"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.ReadWrite.All |
 

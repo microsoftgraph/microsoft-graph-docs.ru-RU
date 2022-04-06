@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: c0729952d48ce0e7d4fd31608e1dd2e761b4d4ba
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 91af45d12b72923de76b6ad0408e31d7a0c3745f
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118376"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671456"
 ---
 # <a name="get-privilegedapproval"></a>Получение privilegedApproval
 
@@ -18,7 +18,7 @@ ms.locfileid: "62118376"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 Извлечение свойств и связей объекта privilegedapproval.
 ## <a name="permissions"></a>Разрешения
@@ -27,7 +27,7 @@ ms.locfileid: "62118376"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All   |
+|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -44,12 +44,12 @@ GET /privilegedApproval/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект privilegedApproval](../resources/privilegedapproval.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект privilegedApproval](../resources/privilegedapproval.md) в тексте ответа.
 
 Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
 

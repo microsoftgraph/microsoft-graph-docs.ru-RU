@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c7cf50d4b4c5d5c3b8d127c62efc5e70da7db087
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 687d959dc328b796e378f8a3fcf88c88664e21b1
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61342141"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630445"
 ---
 # <a name="create-devicecompliancescriptdevicestate"></a>Создание deviceComplianceScriptDeviceState
 
@@ -20,7 +20,7 @@ ms.locfileid: "61342141"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового [объекта deviceComplianceScriptDeviceState.](../resources/intune-devices-devicecompliancescriptdevicestate.md)
+Создание нового [объекта deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "61342141"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/device
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,17 +54,17 @@ POST /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/device
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ состояния состояния скрипта устройства устройства. Это свойство доступно только для чтения.|
-|detectionState|[runState](../resources/intune-shared-runstate.md)|Состояние обнаружения из последнего выполнения скрипта соответствия требованиям устройства. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|detectionState|[runState](../resources/intune-devices-runstate.md)|Состояние обнаружения из последнего выполнения скрипта соответствия требованиям устройства. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|Последний период выполнения сценария соответствия требованиям устройства|
 |expectedStateUpdateDateTime|DateTimeOffset|Следующий период выполнения сценария соответствия требованиям к устройству|
-|lastSyncDateTime|DateTimeOffset|Последний раз, когда расширение управления Intune синхронизировали с Intune|
-|scriptOutput|String|Выход сценария обнаружения|
-|scriptError|String|Ошибка из сценария обнаружения|
+|lastSyncDateTime|DateTimeOffset|Последний раз, Intune расширение управления синхронизировали с Intune|
+|scriptOutput|Строка|Выход сценария обнаружения|
+|scriptError|Строка|Ошибка из сценария обнаружения|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного использования этот метод возвращает код отклика и `201 Created` [объект deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) в тексте ответа.
+В случае успешного `201 Created` использования этот метод возвращает код отклика и [объект deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

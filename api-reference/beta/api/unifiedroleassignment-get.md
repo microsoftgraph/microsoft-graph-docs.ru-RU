@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 940ad910af64aa128ad263d415aef8c3a3e83195
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 374c1e3fb8cdf6b36709a9fb680ce1f89cc2d874
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130702"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668642"
 ---
 # <a name="get-unifiedroleassignment"></a>Get unifiedRoleAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "62130702"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта [unifiedRoleAssignment.](../resources/unifiedroleassignment.md)
+Извлечение свойств и связей объекта [unifiedRoleAssignment](../resources/unifiedroleassignment.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "62130702"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
+|Делегированные (рабочая или учебная учетная запись) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ### <a name="for-entitlement-management-provider"></a>Поставщик прав на управление правами
 
@@ -68,13 +68,13 @@ GET /roleManagement/entitlementManagement/roleAssignments/{id}
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` ответа и запрашиваемого объекта [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -150,7 +150,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса с `$expand` параметром запроса.
+Ниже приводится пример запроса с параметром `$expand` запроса.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -160,7 +160,7 @@ Content-type: application/json
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition,principal,directoryScope
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-2-csharp-snippets.md)]
@@ -224,18 +224,7 @@ Content-type: application/json
       "isEnabled": true,
       },
     "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "principal": {
-      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
-      "id": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d ",
-      "userPrincipalName": "alice@contoso.com",
-      "displayName": "Alice Smith"
-    },
-    "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "directoryScope": {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization/$entity",
-      "id": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
-      "displayName": "Contoso_Seattle_Admins"
-    }
+    "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0d"
 }
 ```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

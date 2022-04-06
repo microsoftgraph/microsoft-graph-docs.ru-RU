@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9bce61b2232d01737f35219ae45b9796a2795742
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: f2d897f4abb0e5ffb9becb3d82e93f5d44efcf30
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335684"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670819"
 ---
 # <a name="list-manager"></a>Получение руководителя
 
@@ -26,7 +26,7 @@ ms.locfileid: "63335684"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -55,7 +55,7 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 >**Примечание.** 
 > + Значение `n` параметра `$levels` может быть `max` (для возврата всех руководителей) или числом от 1 до 1000.  
 > + Если параметр `$levels` не указан, возвращается только непосредственный руководитель.
-> + Вы можете указать `$select` в параметре `$expand`, чтобы выбрать свойства отдельных руководителей. Параметр `$levels` необходим: `$expand=manager($levels=max;$select=id,displayName)`.
+> + Вы можете указать `$select` в параметре `$expand`, чтобы выбрать свойства отдельных руководителей. Параметр `$levels` обязателен: `$expand=manager($levels=max;$select=id,displayName)`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 

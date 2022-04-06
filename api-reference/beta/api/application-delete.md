@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c47d7c250c245339f086565671b0fddcfcc6697e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 27f9237c410c14aa7ebb2b14db04436615d250eb
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124403"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668894"
 ---
 # <a name="delete-application"></a>Удаление приложения
 
@@ -25,7 +25,7 @@ ms.locfileid: "62124403"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All    |
 |Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -40,7 +40,7 @@ DELETE /applications/{id}
 |:-----------|:----------|
 | Авторизация | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

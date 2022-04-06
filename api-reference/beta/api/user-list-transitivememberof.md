@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ab79028a05cd5765db414d4164061248a5597049
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 469cef4af6d891741fa9f64d2ef9ad5a404cb0c0
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510360"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63516490"
 ---
 # <a name="list-user-transitive-memberof"></a>Перечисление user transitive memberOf
 
@@ -26,7 +26,7 @@ ms.locfileid: "64510360"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All    |
+| Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -250,7 +250,7 @@ Content-type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "list_users_transitivememberof_startswith"
+  "name": "get_a_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')

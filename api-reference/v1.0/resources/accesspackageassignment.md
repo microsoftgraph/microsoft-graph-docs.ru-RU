@@ -5,28 +5,28 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: bd2493b96043286c4585bec60b5af6f47130cf77
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: a0b88e6a367cb2889c0e59953995498b338f41da
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651325"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608116"
 ---
 # <a name="accesspackageassignment-resource-type"></a>тип ресурса accessPackageAssignment
 
 Пространство имен: microsoft.graph
 
-В [Azure AD Entitlement Management](entitlementmanagement-overview.md)назначение пакета доступа — это назначение пакета доступа определенному субъекту в течение определенного периода времени.  Например, в назначении пакета доступа может быть установлено, что пользователю Алисе назначен доступ через пакет продаж пакета доступа за период с января 2019 г. по июль 2019 г.
+В [Azure AD Entitlement Management](entitlementmanagement-overview.md) назначение пакета доступа — это назначение пакета доступа определенному субъекту на определенный период времени.  Например, в назначении пакета доступа может быть установлено, что пользователю Алисе назначен доступ через пакет продаж пакета доступа за период с января 2019 г. по июль 2019 г.
 
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Списки accessPackageAssignments](../api/entitlementmanagement-list-assignments.md)|[коллекция accessPackageAssignment](accesspackageassignment.md)|Извлечение списка **объектов accessPackageAssignment.** |
-|[filterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[коллекция accessPackageAssignment](../resources/accesspackageassignment.md)|Извлечение списка **объектов accessPackageAssignment,** фильтруемых на входе пользователя.|
+|[Списки accessPackageAssignments](../api/entitlementmanagement-list-assignments.md)|[коллекция accessPackageAssignment](accesspackageassignment.md)|Извлечение списка **объектов accessPackageAssignment** . |
+|[filterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[коллекция accessPackageAssignment](../resources/accesspackageassignment.md)|Извлечение списка **объектов accessPackageAssignment** , фильтруемых на входе пользователя.|
 
 > [!NOTE]
-> Чтобы создать или удалить назначение пакета доступа для пользователя, используйте [метод accessPackageAssignmentRequest.](../api/entitlementmanagement-post-assignmentrequests.md)
+> Чтобы создать или удалить назначение пакета доступа для пользователя, используйте [метод accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md) .
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -35,13 +35,14 @@ ms.locfileid: "61651325"
 |id|String|Только для чтения.|
 |schedule|[entitlementManagementSchedule](../resources/entitlementmanagementschedule.md)|Когда назначение доступа должно быть на месте. Только для чтения.|
 |state|accessPackageAssignmentState|Состояние назначения пакета доступа. Допустимые значения: `delivering`, `partiallyDelivered`, `delivered`, `expired`, `deliveryFailed`, `unknownFutureValue`. Только для чтения. Поддерживает `$filter` (`eq`).|
-|status|String|Дополнительные сведения о жизненном цикле назначения.  Возможные значения включают `Delivering` `Delivered` , или `NearExpiry1DayNotificationTriggered` `ExpiredNotificationTriggered` .  Только для чтения.|
+|status|String|Дополнительные сведения о жизненном цикле назначения.  Возможные значения включают `Delivering`, `Delivered`или `NearExpiry1DayNotificationTriggered``ExpiredNotificationTriggered`.  Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|accessPackage|[accessPackage](accesspackage.md)|Только для чтения. Допускается значение null. Поддерживает `$filter` `eq` () параметры **свойства id** `$expand` и запроса.|
-|target|[accessPackageSubject](accesspackagesubject.md)|Тема назначения пакета доступа. Только для чтения. Допускается значение null. Поддерживает `$expand`. Поддерживает `$filter` `eq` () на **objectId**.|
+|accessPackage|[accessPackage](accesspackage.md)|Только для чтения. Допускается значение null. `$filter` Поддерживает (`eq`) параметры **свойства id** и `$expand` запроса.|
+|target|[accessPackageSubject](accesspackagesubject.md)|Тема назначения пакета доступа. Только для чтения. Допускается значение null. Поддерживает `$expand`. `$filter` Поддерживает (`eq`) на **objectId**.|
+|assignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)|Только для чтения. `$filter` Поддерживает (`eq`) параметры **свойства id** и `$expand` запроса.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

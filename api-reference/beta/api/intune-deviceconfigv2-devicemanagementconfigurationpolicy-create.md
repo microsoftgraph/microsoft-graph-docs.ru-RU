@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a81870614248464e031d7f79586d337d209d936d
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 4549f26c1525acaa800f7e5f0a40815b91f032c5
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62291108"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629003"
 ---
 # <a name="create-devicemanagementconfigurationpolicy"></a>Создание deviceManagementConfigurationPolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "62291108"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,15 +54,15 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ документа политики. Автоматически созданный.|
+|id|Строка|Ключ документа политики. Автоматически созданный.|
 |name|String|Имя политики|
-|description|String|Описание политики|
+|description|Строка|Описание политики|
 |платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Платформы для этой политики. Возможные значения: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`.|
 |технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Технологии для этой политики. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|Дата и время создания политики. Это свойство доступно только для чтения.|
-|lastModifiedDateTime|DateTimeOffset|Политика последней даты и времени изменения. Это свойство доступно только для чтения.|
-|settingCount|Int32|Количество параметров. Это свойство доступно только для чтения.|
-|creationSource|String|Источник создания политики|
+|createdDateTime|DateTimeOffset|Дата и время создания политики|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения политики|
+|settingCount|Int32|Количество параметров|
+|creationSource|Строка|Источник создания политики|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 |isAssigned|Boolean|Состояние назначения политики. Это свойство доступно только для чтения.|
 |templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Справочные сведения по шаблонам|

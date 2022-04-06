@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: spunukol
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 771e2a5c82a4966fc9ef25fb0026312e9acf27ea
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: aa606909476353a6e2fdf235b37cf474b71f5d32
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509828"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671750"
 ---
 # <a name="list-device-transitive-groups"></a>Перечисление транзитивных групп устройств
 
@@ -28,7 +28,7 @@ ms.locfileid: "64509828"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Для приложений | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -218,8 +218,8 @@ Content-type: application/json
 Ниже приведен пример запроса.
 
 <!-- {
-  "blockType": "request",
-  "name": "list_devices_transitivememberof_startswith"
+  "blockType": "ignored",
+  "name": "get_a_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'a')

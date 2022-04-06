@@ -1,16 +1,16 @@
 ---
 title: Список effectiveRules
 description: Получите ресурсы unifiedRoleManagementPolicyRule из свойства эффективной навигацииRules.
-author: japere
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 97bedd15a81c495590fe48359ef54c060b12c8b3
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: cb51b0f7fccc69309724f54cd07ea141e2d23356
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510578"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671932"
 ---
 # <a name="list-effectiverules"></a>Список effectiveRules
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "64510578"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
+|Для приложений|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 

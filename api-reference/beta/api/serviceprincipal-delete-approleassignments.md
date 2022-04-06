@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 59fb187428c993828ccf2caa3eaaace1152a66ed
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 30454de3e550352e8b7bddcd9dfb245e7669bb63
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115848"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670210"
 ---
 # <a name="delete-approleassignment"></a>Удаление объекта AppRoleAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "62115848"
 
 Удаляет [приложение AppRoleAssignment,](../resources/approleassignment.md) предоставленное директору службы.
 
-Роли приложений, которые назначены директорам служб, также называются [разрешениями приложений.](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) Удаление назначения роли приложения для директора службы эквивалентно отмене разрешения только для приложения.
+Роли приложений, которые назначены директорам служб, также известны как [разрешения приложений](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Удаление назначения роли приложения для директора службы эквивалентно отмене разрешения только для приложения.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "62115848"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | AppRoleAssignment.ReadWrite.All |
 
@@ -41,7 +41,7 @@ DELETE /servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssig
 ```
 
 > [!NOTE]
-> В качестве наилучшей практики рекомендуется удалять назначения ролей приложений с помощью метода [Delete appRoleAssignedTo,](serviceprincipal-delete-approleassignedto.md) который  удаляется с помощью **отношения appRoleAssignedTo** директора службы ресурсов, а не этого метода.
+> В качестве наилучшей практики рекомендуется удалять назначения ролей приложений с помощью метода [Delete appRoleAssignedTo](serviceprincipal-delete-approleassignedto.md), который удаляется с помощью **отношения appRoleAssignedTo** директора службы  ресурсов, а не этого метода.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -49,7 +49,7 @@ DELETE /servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssig
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7ce73c668bb9fb9031851ef2c232d9be0e2efb05
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 4b43f13b984aa7a1708b48acc5a8959e4be78a60
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671484"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629430"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -467,7 +467,7 @@ Content-type: text/plain
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_a_count"
+  "name": "list_users_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'a')&$orderby=displayName&$count=true&$top=1
@@ -794,6 +794,52 @@ Content-type: application/json
   ]
 }
 ```
+
+### <a name="example-12-get-the-value-of-a-schema-extension-for-all-users"></a>Пример 12. Получение значения расширения схемы для всех пользователей.
+
+В этом примере идентификатор расширения схемы — `ext55gb1l09_msLearnCourses`.
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "list_schemaextension"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$select=ext55gb1l09_msLearnCourses
+```
+
+#### <a name="response"></a>Отклик
+
+В следующем отклике свойство расширения `ext55gb1l09_msLearnCourses` схемы не назначено в двух объектах пользователя.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(ext55gb1l09_msLearnCourses)",
+    "value": [
+        {},
+        {
+            "ext55gb1l09_msLearnCourses": {
+                "@odata.type": "#microsoft.graph.ComplexExtensionValue",
+                "courseType": "Developer",
+                "courseName": "Introduction to Microsoft Graph",
+                "courseId": 1
+            }
+        },
+        {}
+    ]
+}
+```
+
+> **Примечание.** Также можно применить к `$filter` свойству расширения схемы, чтобы получить объекты, в которых свойство в коллекции соответствует указанному значению. Используется следующий синтаксис: `/users?$filter={schemaPropertyID}/{propertyName} eq 'value'`. Например, `GET /users?$select=ext55gb1l09_msLearnCourses&$filter=ext55gb1l09_msLearnCourses/courseType eq 'Developer'`. Поддерживаются операторы `eq` и `not`.
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

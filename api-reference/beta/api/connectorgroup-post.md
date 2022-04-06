@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: cc969d7e31e376f158a7c8cd6504a803656bf1b7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d3ba0e26b746022230675100a4fbb003c58f69f3
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097126"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671106"
 ---
 # <a name="create-connectorgroup"></a>Создание connectorGroup
 
@@ -18,14 +18,14 @@ ms.locfileid: "62097126"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [connectorGroup.](../resources/connectorgroup.md)
+Создание объекта [connectorGroup](../resources/connectorgroup.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается.  |
 
@@ -42,8 +42,8 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [connectorGroup.](../resources/connectorgroup.md)
-В следующей таблице перечислены свойства, доступные для **connectorGroup.** Свойство **name** — обязательное свойство.
+В теле запроса поставляем представление JSON объекта [connectorGroup](../resources/connectorgroup.md) .
+В следующей таблице перечислены свойства, доступные для **connectorGroup**. Свойство **name** — обязательное свойство.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
@@ -51,11 +51,11 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 |id|string| Уникальный идентификатор для этого соединитетеляGroup. Только для чтения. |
 |isDefault|boolean| Указывает, является ли соединительщикGroup по умолчанию. Соединительщиком по умолчанию может быть только одна группа соединительных групп, и это заранее заданной системой. |
 |name|string| Имя, связанное с соединитетелемGroup. |
-|регион|string| Регион, в который назначен connectorGroup, и будет оптимизировать трафик. Этот регион можно установить только в **том** случае, если соединители или приложения не назначены соединительгруппе. Доступные регионы: Северная Америка, Европа, Австралия, Азия и Индия. Возможные значения: `nam`, `eur`, `aus`, `asia`, `ind`.|
+|регион|string| Регион, в который назначен connectorGroup, и будет оптимизировать трафик. Этот регион можно установить только **в том случае** , если соединители или приложения не назначены соединительгруппе. Доступные регионы: Северная Америка, Европа, Австралия, Азия и Индия. Возможные значения: `nam`, `eur`, `aus`, `asia`, `ind`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `201 Created` объект [connectorGroup](../resources/connectorgroup.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` отклика и объект [connectorGroup](../resources/connectorgroup.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

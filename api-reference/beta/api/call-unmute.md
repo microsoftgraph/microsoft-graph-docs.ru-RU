@@ -1,16 +1,16 @@
 ---
 title: 'вызов: не игнорировать'
 description: Разрешить приложению отметь себя.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 83aecf724d771aa6fcf124aeb719141ab0958ff5
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 0002210f94049dbf491bd8120108d6d3548f4623
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341191"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608060"
 ---
 # <a name="call-unmute"></a>вызов: не игнорировать
 
@@ -32,7 +32,9 @@ ms.locfileid: "62341191"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Приложение                            | Нет.                                        |
+| Для приложений                            | Calls.Initiate.All, Calls.AccessMedia.All |
+
+> **Примечание:** Разрешения проверяются при вызове; При вызове этого API не проводится дополнительная проверка разрешений. Calls.AccessMedia.All необходим только для вызовов, которые используют носители с использованием приложений.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

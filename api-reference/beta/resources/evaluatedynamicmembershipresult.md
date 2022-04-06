@@ -1,16 +1,16 @@
 ---
 title: оценка типа ресурсаDynamicMembershipResult
 description: Представляет результат оценки членства.
-localization_priority: Normal
-author: Jordanndahl
+ms.localizationpriority: medium
+author: psaffaie
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 52621ee317183a59da418ecd35309cacc0637ae3
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 551c2c87a09b7f2ddafc2079ab97c7f7e36837cd
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682644"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588528"
 ---
 # <a name="evaluatedynamicmembershipresult-resource-type"></a>оценка типа ресурсаDynamicMembershipResult
 
@@ -22,11 +22,11 @@ ms.locfileid: "52682644"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Описание |
-|:-------- |:---- |:----------- |
-| membershipRule | String | Если предоставляется групповой ID, значением является правило членства для группы. Если групповой ID не предоставлен, значением является правило членства, которое было предоставлено в качестве параметра. Дополнительные сведения см. в [программе Dynamic membership rules for groups in Azure Active Directory.](/azure/active-directory/users-groups-roles/groups-dynamic-membership) |
-| membershipRuleEvaluationDetails | [expressionEvaluationDetails](expressionevaluationdetails.md) | Предоставляет подробный анализ результатов оценки членства. |
-| membershipRuleEvaluationResult | Boolean | Значение, `true` если пользователь или устройство является членом группы. Значение также может быть, если было предоставлено правило членства и пользователь или устройство проходит оценку `true` правила; в противном случае `false` . |
+| Свойство                        | Тип                                                          | Описание                                                                                                                                                                                                                                                                                                                                   |
+| :------------------------------ | :------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| membershipRule                  | String                                                        | Если предоставляется групповой ID, значением является правило членства для группы. Если групповой ID не предоставлен, значением является правило членства, которое было предоставлено в качестве параметра. Дополнительные сведения можно найти в статье [Правила динамического членства в группах для Azure AD](/azure/active-directory/users-groups-roles/groups-dynamic-membership). |
+| membershipRuleEvaluationDetails | [expressionEvaluationDetails](expressionevaluationdetails.md) | Предоставляет подробный анализ результатов оценки членства.                                                                                                                                                                                                                                                                             |
+| membershipRuleEvaluationResult  | Логический                                                       | Значение, если `true` пользователь или устройство является членом группы. Значение также может быть, `true` если было предоставлено правило членства и пользователь или устройство проходит оценку правила; в противном случае `false`.                                                                                                                                      |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -44,7 +44,9 @@ ms.locfileid: "52682644"
 ```json
 {
   "membershipRule": "String",
-  "membershipRuleEvaluationDetails": {"@odata.type": "microsoft.graph.expressionEvaluationDetails"},
+  "membershipRuleEvaluationDetails": {
+    "@odata.type": "microsoft.graph.expressionEvaluationDetails"
+  },
   "membershipRuleEvaluationResult": true
 }
 ```

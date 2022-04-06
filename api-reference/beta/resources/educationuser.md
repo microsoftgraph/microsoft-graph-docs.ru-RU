@@ -2,15 +2,15 @@
 title: Тип ресурса educationUser
 description: Пользователь в системе. Используемый для сферы образования вариант указания пользователя с тем же параметром `id`, который Microsoft Graph возвратит из конечной точки `/users`, не ограниченной сферой образования.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 22cdd5acc53de06458dd6ce986d635fc5ade2900
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: b3e193a49d1668d43fb311c5e43a506daaa5688a
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50293003"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685084"
 ---
 # <a name="educationuser-resource-type"></a>Тип ресурса educationUser
 
@@ -18,9 +18,9 @@ ms.locfileid: "50293003"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Пользователь в системе. Это вариант стандартного пользовательского [] ресурса, относячий к образовательным службам, с тем же, что и Microsoft Graph, возвращаемая из конечной точки, не относяской к `id` `/users` образовательным службам.
+Пользователь в системе. Это вариант стандартного пользовательского ресурса для образовательных [] учреждений с тем же значением, `id` что `/users` и microsoft Graph из конечной точки, отличной от образовательных учреждений.
 
-Этот объект предоставляет целевое подмножество [] свойств из основного объекта пользователя и добавляет набор свойств для образовательных целей, таких как `primaryRole` , и `student` `teacher` .
+Этот объект [] предоставляет целевое подмножество `primaryRole`свойств из основного пользовательского объекта и добавляет набор свойств для образовательных учреждений, таких как , `student`и .`teacher`
 
 ## <a name="methods"></a>Методы
 
@@ -31,46 +31,46 @@ ms.locfileid: "50293003"
 | [Перечисление учебных заведений](../api/educationuser-list-schools.md) | Коллекция [educationSchool]                 | Получение коллекции объектов **educationSchool**, для которых пользователь является участником. |
 | [Получение пользователя](../api/educationuser-get-user.md)         | [user]                                       | Получение простого каталога **user**, который соответствует этому объекту **educationUser**. |
 | [Обновление](../api/educationuser-update.md)             | [educationUser]                              | Обновление объекта **educationUser**.                                           |
-| [удаление](../api/educationuser-delete.md);             | Нет                                         | Удаление объекта **educationUser**.                                           |
-| [Delta](../api/educationuser-delta.md)               | Коллекция [educationUser](educationuser.md) | Получать добавонные изменения для **educationUsers.**                               |
+| [Delete](../api/educationuser-delete.md)             | Нет                                         | Удаление объекта **educationUser**.                                           |
+| [Delta](../api/educationuser-delta.md)               | Коллекция [educationUser](educationuser.md) | Получение добавочных изменений для **educationUsers**.                               |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство             | Тип                         | Описание                                                                                                                                                                                   |
 | :------------------- | :--------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | id                   | String                       | Уникальный идентификатор пользователя. Наследуется от [directoryObject]. Ключ. Значение null не допускается. Только для чтения.                                                                                           |
-| accountEnabled       | Логический                      | Если учетная запись обеспечена — значение **true**, в противном случае — **false**. Это свойство обязательно указывать при создании пользователя. Поддерживает \$ фильтр.                                                                |
+| accountEnabled       | Логический                      | Если учетная запись обеспечена — значение **true**, в противном случае — **false**. Это свойство обязательно указывать при создании пользователя. Поддерживает фильтр \$.                                                                |
 | assignedLicenses     | Коллекция [assignedLicense] | Лицензии, назначенные пользователю. Значение null не допускается.                                                                                                                                     |
 | assignedPlans        | Коллекция [assignedPlan]    | Планы, назначенные пользователю. Только для чтения. Значение null не допускается.                                                                                                                             |
 | businessPhones       | Коллекция строк            | Номера телефонов пользователя. **Примечание.** Несмотря на то что это коллекция строк, для этого свойства можно задать только один номер.                                                             |
 | createdBy            | [identitySet]                | Объект, который создал пользователя.                                                                                                                                                                  |
-| department           | String                       | Название отдела, в котором работает пользователь. Поддерживает \$ фильтр.                                                                                                                       |
+| department           | String                       | Название отдела, в котором работает пользователь. Поддерживает фильтр \$.                                                                                                                       |
 | displayName          | String                       | Имя пользователя, отображаемое в адресной книге. Поддерживает параметры $filter и $orderby.                                                                                                           |
-| externalSource       | String                       | Тип внешнего источника, из который был создан этот ресурс (автоматически определяется `externalSourceDetail` из). Возможные значения: `sis`, `lms` или `manual`.                          |
-| externalSourceDetail | String                       | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                                            |
-| givenName;            | String                       | Простое имя пользователя. Поддерживает \$ фильтр.                                                                                                                                   |
-| mail                 | String                       | SMTP-адрес пользователя, например "victor@contoso.onmicrosoft.com". Только для чтения. Поддерживает \$ фильтр.                                                                                     |
-| mailNickname         | String                       | Почтовый псевдоним для пользователя. Это свойство должно быть указано при создании пользователя. Поддерживает \$ фильтр.                                                                                       |
-| mailingAddress       | [physicalAddress]            | Почтовый адрес пользователя. Примечание. `type` `postOfficeBox` Ресурсы не `educationUser` поддерживаются.                                                                                       |
+| externalSource       | String                       | Тип внешнего источника, из которой был создан этот ресурс (автоматически определяется из `externalSourceDetail`). Возможные значения: `sis`, `lms` или `manual`.                          |
+| externalSourceDetail | String                       | Имя внешнего источника, из которой были созданы эти ресурсы.                                                                                                                            |
+| givenName;            | String                       | Простое имя пользователя. Поддерживает фильтр \$.                                                                                                                                   |
+| почта;                 | String                       | SMTP-адрес пользователя, например "victor@contoso.onmicrosoft.com". Только для чтения. Поддерживает фильтр \$.                                                                                     |
+| mailNickname         | String                       | Почтовый псевдоним для пользователя. Это свойство должно быть указано при создании пользователя. Поддерживает фильтр \$.                                                                                       |
+| mailingAddress       | [physicalAddress]            | Почтовый адрес пользователя. Примечание. `type` Они не `postOfficeBox` поддерживаются для `educationUser` ресурсов.                                                                                       |
 | middleName           | String                       | Отчество пользователя.                                                                                                                                                                      |
 | mobilePhone          | String                       | Основной сотовый телефон пользователя.                                                                                                                                           |
-| onPremisesInfo       | [educationOnPremisesInfo]    | Дополнительные сведения, используемые для связи пользователя AAD с его аналогом Active Directory.                                                                                                 |
-| passwordPolicies     | String                       | Задает политики паролей для пользователя. Дополнительные [сведения см.] в стандартном ресурсе пользователя.                                                                                                |
-| passwordProfile      | [passwordProfile]            | Задает профиль пароля для пользователя. Профиль содержит пароль пользователя. Это свойство обязательно указывать при создании пользователя. Дополнительные [сведения см.] в стандартном ресурсе пользователя. |
+| onPremisesInfo       | [educationOnPremisesInfo]    | Дополнительные сведения, используемые для AAD пользователя с его аналогом Active Directory.                                                                                                 |
+| passwordPolicies     | String                       | Задает политики паролей для пользователя. Дополнительные [сведения см] . в разделе "Стандартный ресурс пользователя".                                                                                                |
+| passwordProfile      | [passwordProfile]            | Задает профиль пароля для пользователя. Профиль содержит пароль пользователя. Это свойство обязательно указывать при создании пользователя. Дополнительные [сведения см] . в разделе "Стандартный ресурс пользователя". |
 | preferredLanguage    | String                       | Предпочитаемый язык для пользователя. Он должен быть представлен в формате ISO 639-1. Пример: "ru-RU".                                                                                                      |
-| primaryRole          | string                       | Роль по умолчанию для пользователя. Роль пользователя для отдельного курса может отличаться. Возможные значения: `student`, `teacher`, `faculty`. Поддерживает \$ фильтр.                                  |
+| primaryRole          | string                       | Роль по умолчанию для пользователя. Роль пользователя для отдельного курса может отличаться. Возможные значения: `student`, `teacher`, `faculty`. Поддерживает фильтр \$.                                  |
 | provisionedPlans     | Коллекция [provisionedPlan] | Планы, подготовленные для пользователя. Только для чтения. Значение NULL не допускается.                                                                                                                         |
-| relatedContacts      | [коллекция relatedContact]  | Связанные записи, связанные с пользователем. Возможные связи: `parent` `relative` , , , `aide` `doctor` `guardian` `child` , `other``unknownFutureValue`                                    |
-| residenceAddress     | [physicalAddress]            | Адрес проживания пользователя. Примечание. `type` `postOfficeBox` Ресурсы не `educationUser` поддерживаются.                                                                                   |
+| relatedContacts      | [Коллекция relatedContact]  | Связанные записи, связанные с пользователем. Возможные связи: `parent`, `relative`, `aide`, `doctor`, `guardian`, `other``child``unknownFutureValue`                                    |
+| residenceAddress     | [physicalAddress]            | Адрес проживания пользователя. Примечание. `type` Они не `postOfficeBox` поддерживаются для `educationUser` ресурсов.                                                                                   |
 | student              | [educationStudent]           | Если основная роль — student, этот блок будет содержать данные, касающиеся учащегося.                                                                                                                |
-| surname              | String                       | Фамилия пользователя. Поддерживает \$ фильтр.                                                                                                                             |
-| teacher              | [educationTeacher]           | Если основная роль — преподаватель, этот блок будет содержать данные о преподавателях.                                                                                                                |
-| usageLocation        | String                       | Двух буквный код страны[(ISO 3166 Alpha-2).] Требуется для пользователей, которым будут назначены лицензии. Значение null не допускается. Поддерживает \$ фильтр.                                                            |
-| userPrincipalName    | String                       | Имя основного пользователя (UPN) для пользователя. Поддерживает параметры $filter и $orderby. Дополнительные [сведения см.] в стандартном ресурсе пользователя.                                                               |
-| userType             | String                       | Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например "Участник" и "Гость". Поддерживает \$ фильтр.                                                                    |
+| surname              | String                       | Фамилия пользователя. Поддерживает фильтр \$.                                                                                                                             |
+| teacher              | [educationTeacher]           | Если основной ролью является преподаватель, этот блок будет содержать конкретные данные преподавателя.                                                                                                                |
+| usageLocation        | String                       | Двухбуквенный код страны ([ISO 3166 Alpha-2]). Требуется для пользователей, которым будут назначены лицензии. Значение null не допускается. Поддерживает фильтр \$.                                                            |
+| userPrincipalName    | String                       | Имя участника-пользователя (UPN) для пользователя. Поддерживает параметры $filter и $orderby. Дополнительные [сведения см] . в разделе "Стандартный ресурс пользователя".                                                               |
+| userType             | String                       | Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например "Участник" и "Гость". Поддерживает фильтр \$.                                                                    |
 
 > [!IMPORTANT]
-> При использовании областей делегирования разрешений Graph возвращает только ограниченный набор свойств: `id` , , , , , `primaryRole` `accountEnabled` `displayName` `givenName` `surname` `userPrincipalName` `userType` `onPremisesInfo` `student/externalId` `teacher/externalId` . Если приложению требуются дополнительные свойства, необходимо использовать области разрешений приложения.
+> При использовании областей делегированных разрешений Graph возвращает только ограниченный набор свойств: `id`, , `primaryRole`, `accountEnabled`, `displayName`, , `userType``givenName``student/externalId``surname``onPremisesInfo``userPrincipalName``teacher/externalId`. Если приложению требуются дополнительные свойства, необходимо использовать области разрешений приложения.
 
 ## <a name="relationships"></a>Связи
 
@@ -80,6 +80,7 @@ ms.locfileid: "50293003"
 | classes       | Коллекция [educationClass]  | Курсы пользователя. Допускается значение NULL. |
 | schools       | Коллекция [educationSchool] | Учебные заведения пользователя. Допускается значение NULL. |
 | taughtClasses | Коллекция [educationClass]  | Классы, для которых пользователь является преподавателем.     |
+|Рубрики|[Коллекция educationRubric](educationrubric.md)|Если этот параметр задан, к назначению прикреплена категория оценки.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -144,7 +145,7 @@ ms.locfileid: "50293003"
 }-->
 
 [educationuser]: educationuser.md
-[educationclass]: educationclass.md
+[класс education]: educationclass.md
 [educationschool]: educationschool.md
 [educationassignment]: educationassignment.md
 [educationteacher]: educationteacher.md
@@ -153,7 +154,7 @@ ms.locfileid: "50293003"
 [physicaladdress]: physicaladdress.md
 [provisionedplan]: provisionedplan.md
 [passwordprofile]: passwordprofile.md
-[identityset]: identityset.md
+[набор удостоверений]: identityset.md
 [assignedplan]: assignedplan.md
 [assignedlicense]: assignedlicense.md
 [user]: user.md

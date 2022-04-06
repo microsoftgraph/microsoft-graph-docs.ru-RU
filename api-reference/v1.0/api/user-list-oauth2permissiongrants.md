@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a8895a337ccc02ea47f0d5532ff866808f4323c3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fb4ee39996655562f2d0bad19601ac263fc435a1
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134154"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477862"
 ---
 # <a name="list-oauth2permissiongrants"></a>Перечисление oauth2PermissionGrants
 
@@ -30,9 +30,9 @@ ms.locfileid: "62134154"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All, Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ GET /users/{id | userPrincipalName}/oauth2PermissionGrants
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1116f49de0a75edf13c7f73a2186e1ec4988c77f
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: c271302b231f97e22ca6e5be8a24e70153785517
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335294"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630753"
 ---
 # <a name="evaluateassignmentfilter-action"></a>evaluateAssignmentFilter action
 
@@ -29,7 +29,7 @@ ms.locfileid: "61335294"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/evaluateAssignmentFilter
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,7 +68,7 @@ POST /deviceManagement/evaluateAssignmentFilter
 POST https://graph.microsoft.com/beta/deviceManagement/evaluateAssignmentFilter
 
 Content-type: application/json
-Content-length: 185
+Content-length: 235
 
 {
   "data": {
@@ -76,7 +76,10 @@ Content-length: 185
     "platform": "androidForWork",
     "rule": "Rule value",
     "top": 3,
-    "skip": 4
+    "skip": 4,
+    "orderBy": [
+      "Order By value"
+    ]
   }
 }
 ```

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 3c2bee78a5ee4bb6c1999286753db906f827f93d
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 311a80dcfac762c067fd13b94f6273d6aba28e8d
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225338"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672443"
 ---
 # <a name="update-serviceprincipal"></a>Обновление servicePrincipal
 
@@ -26,7 +26,7 @@ ms.locfileid: "62225338"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
@@ -49,7 +49,7 @@ PATCH /servicePrincipals/{id}
 |accountEnabled|Boolean| Значение **true**, если учетная запись субъекта-службы включена. В противном случае используется значение **false**.|
 |addIns| [addIn](../resources/addin.md) | Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые способны визуализировать файловые потоки, [могут установить свойство addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online) для его функции "FileHandler". Это позволит таким службам, как Microsoft 365, вызывать приложение в контексте документов, над которыми работает пользователь.|
 |alternativeNames|Коллекция строк| Используется для получения субъектов-служб по подпискам, для идентификации групп ресурсов и полных идентификаторов ресурсов для [управляемых удостоверений](/azure/active-directory/managed-identities-azure-resources/overview).|
-|appRoleAssignmentRequired|Boolean|Указывает, требуется ли объект **appRoleAssignment** для пользователя или группы, перед тем как Azure AD выпустит маркер пользователя или доступа для приложения. Значение null не допускается. |
+|appRoleAssignmentRequired|Boolean|Указывает, требуется ли объект **appRoleAssignment** для пользователя или группы, перед тем как Azure AD выпустит маркер пользователя или доступа для приложения. Значение NULL не допускается. |
 |appRoles|Коллекция [appRole](../resources/approle.md)|Роли приложения, предоставляемые связанным приложением. Дополнительные сведения см. в определении свойства **appRoles** для ресурса [application](../resources/application.md). Значение null не допускается. |
 |displayName|String|Отображаемое имя для субъекта-службы.|
 |homepage|String|Главная или начальная страница приложения.|

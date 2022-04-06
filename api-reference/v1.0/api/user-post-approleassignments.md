@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 53f176f5121bd196edc8f9f8597a0ca75bdfb406
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f10fe8fbb2a58b08ea8e24fc245eefe5ef71eca6
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128161"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670854"
 ---
 # <a name="grant-an-approleassignment-to-a-user"></a>Предоставление appRoleAssignment пользователю
 
@@ -28,7 +28,7 @@ ms.locfileid: "62128161"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | AppRoleAssignment.ReadWrite.All |
 

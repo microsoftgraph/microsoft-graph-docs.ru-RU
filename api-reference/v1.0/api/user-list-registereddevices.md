@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d676b6c50ad76b55271dab64cb46f82367d9df5d
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 1ce54491c56eb13d27533fff3dddf3d7f7423e8e
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63668404"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630921"
 ---
 # <a name="list-registereddevices"></a>Список registeredDevices
 
@@ -31,6 +31,7 @@ ms.locfileid: "63668404"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/registeredDevices
 GET /users/{id | userPrincipalName}/registeredDevices
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов

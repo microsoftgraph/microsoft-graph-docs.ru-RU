@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса searchQuery
+title: тип ресурса searchQuery
 description: searchQuery
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 1d2d643fed135f97f1ccf2c6346d8fdd6e22f8b5
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 0c437bcb8fd7462d8c4bc85514c40d47311155de
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193367"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589319"
 ---
-# <a name="searchquery-resource-type"></a>Тип ресурса searchQuery
+# <a name="searchquery-resource-type"></a>тип ресурса searchQuery
 
 Пространство имен: microsoft.graph
 
@@ -20,15 +20,15 @@ ms.locfileid: "48193367"
 
 [!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
-Представляет поисковый запрос, содержащий поисковые термины и необязательные фильтры.
+Представляет поисковый запрос, содержащий термины поиска и необязательные фильтры.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|Строку|String|Поисковый запрос, содержащий условия поиска. Обязательно.|
-|query_string (устаревшее)|[сеарчкуеристринг](searchquerystring.md)|Теперь оно заменяется свойством **queryString** . Поисковый запрос, содержащий условия поиска.|
-
+|queryString|Строка|Поисковый запрос, содержащий термины поиска. Обязательный аргумент.|
+|queryTemplate|String|Предоставляет способ украсить строку запроса. Поддерживает переменные KQL и запроса. Необязательно.|
+|query_string (неподготовленный)|[searchQueryString](searchquerystring.md)|Теперь это свойство **queryString заменяется** . Поисковый запрос, содержащий термины поиска.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -46,6 +46,7 @@ ms.locfileid: "48193367"
 ```json
 {
   "queryString": "String",
+  "queryTemplate": "String",
   "query_string": {"@odata.type": "microsoft.graph.searchQueryString"}
 }
 ```

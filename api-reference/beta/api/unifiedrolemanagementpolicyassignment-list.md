@@ -1,16 +1,16 @@
 ---
 title: Список унифицированныхRoleManagementPolicyAssignments
 description: Получите список объектов unifiedRoleManagementPolicyAssignment и их свойств.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 81137910425309b93c27197db39e67f97e394a27
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 771ff41830a0a24c05704f9def617bb721613215
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125214"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510620"
 ---
 # <a name="list-unifiedrolemanagementpolicyassignments"></a>Список унифицированныхRoleManagementPolicyAssignments
 Пространство имен: microsoft.graph
@@ -35,7 +35,7 @@ ms.locfileid: "62125214"
 }
 -->
 ``` http
-GET /policies/roleManagementPolicyAssignments
+GET /policies/roleManagementPolicyAssignments?$filter=scopeId eq 'scopeId' and scopeType eq 'scopeType'
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -46,12 +46,12 @@ GET /policies/roleManagementPolicyAssignments
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) в теле ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код ответа и коллекцию объектов [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -64,7 +64,7 @@ GET /policies/roleManagementPolicyAssignments
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments?$filter=scopeId eq '/' and scopeType eq 'Directory'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrolemanagementpolicyassignment-csharp-snippets.md)]
@@ -107,15 +107,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-      "policyId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-      "scopeId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-      "scopeType": "subscription",
-      "roleDefinitionId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicyAssignments",
+    "value": [
+        {
+            "id": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9_fe930be7-5e62-47db-91af-98c3a49a38b1",
+            "policyId": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9",
+            "scopeId": "/",
+            "scopeType": "Directory",
+            "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1"
+        },
+        {
+            "id": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_da83a66c-eb51-44ae-98d8-3da5f924f90a_0526716b-113d-4c15-b2c8-68e3c22b9f80",
+            "policyId": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_da83a66c-eb51-44ae-98d8-3da5f924f90a",
+            "scopeId": "/",
+            "scopeType": "Directory",
+            "roleDefinitionId": "0526716b-113d-4c15-b2c8-68e3c22b9f80"
+        }
+    ]
 }
 ```
 

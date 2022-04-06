@@ -1,16 +1,16 @@
 ---
 title: Получение члена
-description: Используйте этот API для получения определенного участника (пользователя или группы) в административном подразделении.
+description: Используйте этот API для получения определенного участника (пользователя, группы или устройства) в административном подразделении.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a6355465e00e6d39cc1b8d34182c234131de2120
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 96fa562d1b954bbcfd1cf3dd99731d6359fed06a
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940052"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669160"
 ---
 # <a name="get-a-member"></a>Получение члена
 
@@ -18,7 +18,7 @@ ms.locfileid: "60940052"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API для получения определенного участника (пользователя или группы) в административном подразделении.
+Используйте этот API для получения определенного участника (пользователя, группы или устройства) в административном подразделении.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "60940052"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -45,18 +45,19 @@ GET /administrativeUnits/{id}/members/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и объект пользователя или `200 OK` группы в тексте ответа. [](../resources/user.md) [](../resources/group.md)
+В случае успешной работы этот `200 OK` метод возвращает код ответа и объект [пользователя, группы](../resources/user.md) или устройства [](../resources/device.md) в тексте ответа. [](../resources/group.md)
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/{id}
 ```
 
-##### <a name="response"></a>Отклик
-Вот пример передыжки. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 ```http
 HTTP/1.1 200 OK

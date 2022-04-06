@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Этот ресурс представляет элемент объекта list в SharePoint.
 ms.date: 09/11/2017
 title: ListItem
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: ad1e278f31bbeb0bc079f1ad2a6345d9b260cdec
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: e1a1c17a7feabb66be08c7a036191d82ec18ff45
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941468"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722687"
 ---
 # <a name="listitem-resource"></a>Ресурс ListItem
 
@@ -30,23 +30,23 @@ ms.locfileid: "52941468"
 Ниже перечислены задачи, доступные для ресурсов **listItem**.
 Все приведенные ниже примеры относятся к объекту **[list][]**, например `https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}`.
 
-| Стандартная задача                    | Метод HTTP
-|:-------------------------------|:------------------------
-| [Получение][]                        | GET /items/{item-id}
-| [Получение значений столбцов][Получение]       | GET /items/{item-id}?expand=fields
-| [Получение аналитики][]              | GET /items/{item-id}/analytics
-| [Получение действий по интервалу][] | GET /items/{item-id}/getActivitiesByInterval
-| [Создание][]                     | POST /items
-| [Удаление][]                     | DELETE /items/{item-id}
-| [Обновление][]                     | PATCH /items/{item-id}
-| [Обновление значений столбцов][Обновление] | PATCH /items/{item-id}/fields
-| [createLink][CreateLink]       | POST /items/{itemId}/createLink
+| Стандартная задача                    | Метод HTTP                                  |
+| :----------------------------- | :------------------------------------------- |
+| [Получение][]                        | GET /items/{item-id}                         |
+| [Получение значений столбцов][Получение]       | GET /items/{item-id}?expand=fields           |
+| [Получение аналитики][]              | GET /items/{item-id}/analytics               |
+| [Получение действий по интервалу][] | GET /items/{item-id}/getActivitiesByInterval |
+| [Создание][]                     | POST /items                                  |
+| [Удаление][]                     | DELETE /items/{item-id}                      |
+| [Обновление][]                     | PATCH /items/{item-id}                       |
+| [Обновление значений столбцов][Обновление] | PATCH /items/{item-id}/fields                |
+| [createLink][CreateLink]       | POST /items/{itemId}/createLink              |
 
 [Получение]: ../api/listitem-get.md
 [Получение аналитики]: ../api/itemanalytics-get.md
 [Получение действий по интервалу]: ../api/itemactivity-getbyinterval.md
 [Создание]: ../api/listitem-create.md
-[Удаление]: ../api/listitem-delete.md
+[Delete]: ../api/listitem-delete.md
 [Обновление]: ../api/listitem-update.md
 [CreateLink]: ../api/listitem-createlink.md
 
@@ -91,37 +91,37 @@ ms.locfileid: "52941468"
 
 Ниже перечислены свойства ресурса **listItem**.
 
-| Имя свойства | Тип                | Описание
-|:--------------|:--------------------|:-------------------------------
-| contentType   | [contentTypeInfo][] | Тип контента для данного элемента списка.
+| Свойство    | Тип                | Описание                        |
+| :---------- | :------------------ | :--------------------------------- |
+| contentType | [contentTypeInfo][] | Тип контента для данного элемента списка. |
 
 Ниже перечислены свойства, которые наследуются от ресурса **[baseItem][]**.
 
-| Имя свойства        | Тип              | Описание
-|:---------------------|:------------------|:----------------------------------
-| id                   | string            | Уникальный идентификатор элемента. Только для чтения.
-| name                 | string            | Имя или название элемента.
-| createdBy            | [identitySet][]   | Удостоверение создателя данного элемента. Только для чтения.
-| createdDateTime      | DateTimeOffset    | Дата и время создания элемента. Только для чтения.
-| description          | строка            | Текст с описанием элемента.
-| eTag                 | string            | ETag для элемента. Только для чтения.                                                          |
-| lastModifiedBy       | [identitySet][]   | Удостоверение пользователя, который последним изменил данный элемент. Только для чтения.
-| lastModifiedDateTime | DateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.
-| parentReference      | [itemReference][] | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.
-| sharepointIds        | [sharepointIds][] | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
-| webUrl               | строка (url-адрес)      | URL-адрес для отображения элемента в браузере. Только для чтения.
+| Имя свойства        | Тип              | Описание                                                              |
+| :------------------- | :---------------- | :----------------------------------------------------------------------- |
+| id                   | string            | Уникальный идентификатор элемента. Только для чтения.                            |
+| name                 | string            | Имя или название элемента.                                            |
+| createdBy            | [identitySet][]   | Удостоверение создателя данного элемента. Только для чтения.                         |
+| createdDateTime      | DateTimeOffset    | Дата и время создания элемента. Только для чтения.                       |
+| description          | строка            | Текст с описанием элемента.                                       |
+| eTag                 | string            | ETag для элемента. Только для чтения.                                            |
+| lastModifiedBy       | [identitySet][]   | Удостоверение пользователя, который последним изменил данный элемент. Только для чтения.                   |
+| lastModifiedDateTime | DateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.                 |
+| parentReference      | [itemReference][] | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.                |
+| sharepointIds        | [sharepointIds][] | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения. |
+| webUrl               | строка (url-адрес)      | URL-адрес для отображения элемента в браузере. Только для чтения.                    |
 
 ## <a name="relationships"></a>Связи
 
  Ниже перечислены связи ресурса **listItem** с другими ресурсами.
 
-| Имя связи | Тип                           | Описание
-|:------------------|:-------------------------------|:-------------------------------
-| activities        | Коллекция [itemActivity][]    | Список последних действий, выполненных с элементом.
-| analytics         | Ресурс [itemAnalytics][]     | Аналитические данные о действиях просмотра, выполненных для элемента.
-| driveItem         | [driveItem][]                  | Для библиотек документов связь **driveItem** предоставляет ресурс listItem как объект **[driveItem][]**
-| fields            | [fieldValueSet][]              | Значения столбцов, установленные для данного элемента списка.
-| versions          | Коллекция [listItemVersion][] | Список предыдущих версий элемента списка.
+| Связь | Тип                           | Описание                                                                                        |
+| :----------- | :----------------------------- | :------------------------------------------------------------------------------------------------- |
+| activities   | Коллекция [itemActivity][]    | Список последних действий, выполненных с элементом.                                        |
+| analytics    | Ресурс [itemAnalytics][]     | Аналитические данные о действиях просмотра, выполненных для элемента.                                  |
+| driveItem    | [driveItem][]                  | Для библиотек документов связь **driveItem** предоставляет ресурс listItem как объект **[driveItem][]** |
+| fields       | [fieldValueSet][]              | Значения столбцов, установленные для данного элемента списка.                                                   |
+| versions     | Коллекция [listItemVersion][] | Список предыдущих версий элемента списка.                                                    |
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
@@ -148,5 +148,3 @@ ms.locfileid: "52941468"
   "suppressions": []
 }
 -->
-
-

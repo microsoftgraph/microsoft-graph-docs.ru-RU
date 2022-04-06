@@ -1,50 +1,55 @@
 ---
 title: Перечисление объектов groupSettingTemplate
 description: Извлечение списка доступных объектов groupSettingTemplates.
-author: Jordanndahl
+author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7510a3f0b4d9817f5ad6da30d36204e7b96406fd
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: a66a911163999c4c2a880b6070dca59e738df095
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672163"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587226"
 ---
 # <a name="list-groupsettingtemplates"></a>Перечисление объектов groupSettingTemplate
 
 Пространство имен: microsoft.graph
 
-Шаблоны параметров группы представляют набор шаблонов, на базе которых можно создавать параметры группы для использования в клиенте.  Эта операция позволяет получить список доступных объектов groupSettingTemplate.
+Шаблоны параметров группы представляют собой набор шаблонов, из которых можно создать и использовать параметры группы в клиенте. Эта операция извлекает список доступных объектов groupSettingTemplates.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All, Directory.ReadWrite.All |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+| :------------------------------------- | :------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | Directory.Read.All, Directory.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groupSettingTemplates
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает параметр `$select` [запроса OData](/graph/query-parameters) для настройки ответа.
 
 > **Примечание.** $filter не поддерживается.
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя | Описание |
-|:----------|:----------|
-| Авторизация  | Bearer {token}. Обязательный. |
+
+| Имя          | Описание               |
+| :------------ | :------------------------ |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -52,33 +57,42 @@ GET /groupSettingTemplates
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [groupSettingTemplate](../resources/groupsettingtemplate.md) в теле отклика.
 
 ## <a name="example"></a>Пример
+
 ##### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_groupsettingtemplates"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groupSettingTemplates
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsettingtemplates-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsettingtemplates-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groupsettingtemplates-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-groupsettingtemplates-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/get-groupsettingtemplates-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -87,12 +101,14 @@ GET https://graph.microsoft.com/v1.0/groupSettingTemplates
 ##### <a name="response"></a>Отклик
 
 Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.groupSettingTemplate",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -133,7 +149,7 @@ Content-type: application/json
           "description": "A comma delimited list of reserved words to block for application display names."
         }
       ]
-    }  
+    }
   ]
 }
 ```

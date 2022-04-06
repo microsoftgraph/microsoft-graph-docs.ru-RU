@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: Удаление пакета
-description: Удаление пакета driveItems
+description: Удаление пакета driveItems.
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b574c73db2f4e0dd71d0e2e5c6685b58f8ad8143
-ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
+ms.openlocfilehash: 08396fdaa1dc8903255d1e8dc4914c9761f0ed5a
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63561667"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758103"
 ---
 # <a name="delete-bundle"></a>Удаление пакета
 
@@ -42,30 +42,56 @@ DELETE /drive/items/{bundle-id}
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Authorization | Носитель \{токен\}. Обязательный. |
-| if-match      | eTag. Необязательное свойство. Если этот загон запроса включен, а предоставленный eTag (или cTag) не соответствует текущему тегу в пакете, `412 Precondition Failed` возвращается ответ и пакет не удаляется.
+| Авторизация | Bearer {token}. Обязательный. |
+| if-match      | eTag. Необязательное свойство. Если этот загон запроса включен, а предоставленный eTag (или cTag) не соответствует текущему тегу в пакете, `412 Precondition Failed` возвращается ответ и пакет не удаляется.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного запроса этот вызов возвращает отклик `204 No Content`, указывающий, что ресурс удален, поэтому данные не возвращаются.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
-Сведения об ответах на ошибки см. в этой [информации][error-response].
+Сведения об ответах на ошибки см. в Graph ответы на ошибки [и типы ресурсов][error-response].
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-<!-- { "blockType": "request", "name": "delete-bundle" } -->
+Ниже приведен пример запроса.
 
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "delete-bundle" } -->
 ```http
-DELETE https://graph.microsoft.com/beta/drive/items/{bundle-id}
+DELETE https://graph.microsoft.com/v1.0/drive/items/{bundle-id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-bundle-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-bundle-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-bundle-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-bundle-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-bundle-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
 
 <!-- { "blockType": "response" } -->
 

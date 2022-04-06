@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7a4766090c4782ba35089ede10ddde5e6796014c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 912b8bd1f01663528075a54a9993283c6c60c44e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62106039"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671190"
 ---
 # <a name="list-group-transitive-memberof"></a>Перечисление group transitive memberOf
 
@@ -26,7 +26,7 @@ ms.locfileid: "62106039"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+| Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 

@@ -1,46 +1,46 @@
 ---
 title: Используйте API Поиск (Майкрософт) в Microsoft Graph для поиска пользовательских типов
-description: Вы можете использовать API Поиск (Майкрософт) для импорта внешних данных через [ресурс externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) и запуска поисковых запросов на этом внешнем контенте.
+description: Вы можете использовать API Поиск (Майкрософт) для импорта внешних данных с помощью [ресурса externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) и запуска поисковых запросов на этом внешнем контенте.
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 18269238f77c1c9405242326a5015cdc620c4092
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: 01a78191440f017aaa43600d9d15170bf96662b3
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214827"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671897"
 ---
-# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>Используйте API Поиск (Майкрософт) для поиска пользовательских типов, импортируемых с помощью соединителов Microsoft Graph (предварительный просмотр) 
+# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>Используйте API Поиск (Майкрософт) для поиска пользовательских типов, импортируемых с помощью соединителов Microsoft Graph
 
-Используйте API Поиск (Майкрософт) для поиска по контенту, который будет проиндексироваться соединиттелями [Microsoft Graph.](/microsoftsearch/connectors-overview) Содержимое импортируется либо [](/microsoftsearch/connectors-gallery) через встроенные соединители, предоставляемые Корпорацией Майкрософт, либо через настраиваемые соединители, реализованные с помощью API Graph соединителов [Microsoft.](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
+Используйте API Поиск (Майкрософт) для поиска по контенту, который вошел и индексировали соединители [Microsoft Graph](/microsoftsearch/connectors-overview). Содержимое импортируется либо через встроенные [](https://www.microsoft.com/microsoft-search/connectors) соединители, предоставляемые Корпорацией Майкрософт, либо через настраиваемые соединители, [реализованные с помощью API](/graph/api/resources/indexing-api-overview) Graph соединителов Microsoft.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
 После импорта и индексации контента можно использовать API поиска для запроса контента.
 
-Чтобы найти настраиваемые типы, укажите следующие свойства в теле запроса метода [запроса:](/graph/api/search-query?view=graph-rest-beta&preserve-view=true)
+Чтобы найти настраиваемые типы, укажите следующие свойства в теле запроса метода [запроса](/graph/api/search-query) :
 
-- Свойство **contentSources,** чтобы включить ID подключения, задаваемое во время установки соединиттеля. Вы можете передать несколько ID-подключений для поиска по нескольким подключениям. Результаты возвращаются в одном списке, ранжировали по нескольким подключениям.
+- Свойство **contentSources** , чтобы включить ID подключения, задаваемое во время установки соединиттеля. Вы можете передать несколько ID-подключений для поиска по нескольким подключениям. Результаты возвращаются в одном списке, ранжировали по нескольким подключениям.
 
 <!--
 TODOSEARCHAPI - Bug 1653398 
 -->
 
-- Свойство **entityTypes** как `externalItem` .
+- Свойство **entityTypes** как `externalItem`.
 
-- Свойство **полей,** чтобы включить поля во внешний элемент для получения. Обратите внимание, что если  в запрос не включены какие-либо поля, ответ будет содержать все поля, отмеченные в схеме данных, указанной для указанных подключений в свойстве **contentSources.** 
+- Свойство **полей** , чтобы включить поля во внешний элемент для получения. Обратите внимание, что если в запрос не  включены какие-либо поля, ответ будет содержать все поля, отмеченные  в схеме данных, указанной для указанных подключений в свойстве **contentSources**.
 
-Кроме того, можно агрегировать результаты поиска на основе свойств [в externalItem,](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) которые числимы или типа строки, и которые должны быть уточнены в [схеме](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true). Дополнительные сведения см. в дополнительных сведениях об уточнении результатов поиска с помощью [агрегаций.](search-concept-aggregation.md)
+Кроме того, можно агрегировать результаты поиска на основе свойств [в externalItem](/graph/api/resources/externalitem) , которые числимы или строки типа, и которые должны быть уточнены в [схеме](/graph/api/resources/schema). Дополнительные сведения см. в [дополнительных сведениях об уточнении результатов поиска с помощью агрегаций](search-concept-aggregation.md).
 
 ## <a name="example-1-retrieve-items-using-azure-sql-built-in-connector"></a>Пример 1. Извлечение элементов с помощью встроенного соединиттеля Azure SQL Azure
 
-В этом примере содержимое базы данных [AdventureWorks](/sql/samples/adventureworks-install-configure) было похитовено с помощью встроенного соединиттеля Azure SQL Azure.
+В этом примере содержимое базы данных [AdventureWorks](/sql/samples/adventureworks-install-configure) было въехано с помощью встроенного соединиттеля Azure SQL Azure.
 
 ### <a name="request"></a>Запрос
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -68,14 +68,14 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.searchResponse)",
   "value": [
     {
       "searchTerms": ["yang"],
@@ -126,7 +126,7 @@ Content-type: application/json
 ### <a name="request"></a>Запрос
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -163,7 +163,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.searchResponse)",
 "value": [
       {
         "searchTerms": [
@@ -236,8 +236,8 @@ Content-type: application/json
 }
 ```
 
-Дополнительные сведения см. в [материале Назначение меток свойств.](/microsoftsearch/configure-connector#step-5-assign-property-labels)
+Дополнительные сведения см. в [материале Назначение меток свойств](/microsoftsearch/configure-connector#step-6-assign-property-labels).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview)

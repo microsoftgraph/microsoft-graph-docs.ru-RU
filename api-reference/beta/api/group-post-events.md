@@ -1,16 +1,16 @@
 ---
 title: Создание события
 description: Этот API используется для создания события.
-author: Jordanndahl
+author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3d69f11881c0e90f9b9051ade8fc110d99f99dac
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: 4bab0640fe84bbb147348a952266f077474ab654
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201645"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589298"
 ---
 # <a name="create-event"></a>Создание события
 
@@ -21,42 +21,52 @@ ms.locfileid: "62201645"
 С помощью этого API можно создать [событие](../resources/event.md).
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+| :------------------------------------- | :------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All                         |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | Не поддерживается.                              |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groups/{id}/events
 POST /groups/{id}/calendar/events
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {token}. Обязательный.  |
+
+| Заголовок        | Значение                     |
+| :------------ | :------------------------ |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
-В теле запроса поставляем представление JSON объекта [события.](../resources/event.md)
+
+Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
+
 При успешном выполнении этот метод возвратит код отклика `201 Created` и объект [event](../resources/event.md) в теле отклика.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["01d4ee64-15ce-491e-bad1-b91aa3223df4"],
   "name": "create_event_from_group"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/groups/01d4ee64-15ce-491e-bad1-b91aa3223df4/events
 Content-type: application/json
@@ -89,40 +99,51 @@ Content-type: application/json
   ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-event-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/create-event-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-event-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### <a name="response"></a>Отклик
+
 Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -222,5 +243,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

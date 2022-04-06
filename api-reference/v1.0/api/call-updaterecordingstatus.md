@@ -1,22 +1,22 @@
 ---
 title: 'вызов: updateRecordingStatus'
 description: Обновление состояния записи приложения, связанного с вызовом.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ca7fc640b1d482a8c8cb0fbbdfd55e0388071d87
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: e53694f29ceedae54d5977a0fb2008a7e32649e1
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339049"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607822"
 ---
 # <a name="call-updaterecordingstatus"></a>вызов: updateRecordingStatus
 
 Пространство имен: microsoft.graph
 
-Обновление состояния записи приложения, связанного с вызовом. Для этого необходимо использовать Teams [на основе политики записи](/MicrosoftTeams/teams-recording-policy).
+Обновление состояния записи приложения, связанного с вызовом. Это требует использования решения записи [Teams на основе политики](/MicrosoftTeams/teams-recording-policy).
 
 > Дополнительное **ограничение. Вы** не можете использовать API доступа к мультимедиа для записи или иного сохраняемой медиаконтента из звонков или собраний, к которые ваше приложение получает доступ, или данных, полученных из этого медиаконтента ("запись" или "запись"), не вызывая сначала **API updateRecordingStatus**, чтобы указать, что запись началась, и получить ответ на успех от этого API. Если ваше приложение начинает записывать любое собрание, оно должно закончить запись перед вызовом **API updateRecordingStatus** , чтобы указать, что запись завершена.
 
@@ -27,7 +27,7 @@ ms.locfileid: "62339049"
 |:---------------------------------------|:-------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                                    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                    |
-| Приложение                            | Calls.JoinGroupCalls.All, Calls.AccessMedia.All  |
+| Для приложений                            | Calls.JoinGroupCalls.All, Calls.AccessMedia.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ POST /communications/calls/{id}/updateRecordingStatus
 
 | Параметр       | Тип    | Описание                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| clientContext   | String  | Уникальная строка контекста клиента. Максимальное ограничение — 256 шаров.                                 |
+| clientContext   | Строка  | Уникальная строка контекста клиента. Максимальное ограничение — 256 шаров.                                 |
 | status          | String  | Состояние записи. Возможные значения: `notRecording`, `recording` или `failed`.  |
 
 ## <a name="response"></a>Отклик

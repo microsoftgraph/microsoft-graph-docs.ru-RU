@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 85cb84de23883e15cd6c34e2f2db4cc8fae382e8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ba9c2deaaf34e0ff343dc690ad6d06550fd3429a
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132544"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477897"
 ---
 # <a name="list-calendarview"></a>Список calendarView
 
@@ -72,7 +72,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:--------|:--------|
-| Authorization  | string | Bearer {токен}. Обязательный.  |
+| Authorization  | string | Bearer {token}. Обязательный.  |
 | Prefer: outlook.timezone  | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в отклике. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -82,7 +82,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [event](../resources/event.md) в теле отклика.
 
-Если набор результатов занимает несколько страниц, **calendarView** возвращает в ответе свойство **@odata.nextLink**, содержащее URL-адрес следующей страницы результатов. Дополнительные сведения см. в разделе о [разбиении на страницы](/graph/concepts/paging.md).
+Если набор результатов занимает несколько страниц, **calendarView** возвращает в ответе свойство **@odata.nextLink**, содержащее URL-адрес следующей страницы результатов. Дополнительные сведения см. в разделе [paging](/graph/paging).
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 7db89f3a6181ad4e6dad8d424c00f4af99428a61
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 4a00389960259eea94efbad77f1305dc434da37e
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671309"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587597"
 ---
 # <a name="get-cloudpconpremisesconnection"></a>Get cloudPcOnPremisesConnection
 
@@ -20,6 +20,7 @@ ms.locfileid: "63671309"
 
 Ознакомьтесь с свойствами и отношениями объекта [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
 
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -61,7 +62,7 @@ GET /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-default-properties-of-an-on-premises-connection"></a>Пример 1. Получить свойства локального подключения по умолчанию
+### <a name="example-1-get-the-default-properties-of-an-azure-network-connection"></a>Пример 1. Получить свойства сетевого подключения Azure по умолчанию
 
 #### <a name="request"></a>Запрос
 
@@ -135,7 +136,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-the-selected-properties-of-an-on-premises-connection-including-healthcheckstatusdetails"></a>Пример 2. Получить выбранные свойства локального подключения, включая healthCheckStatusDetails
+### <a name="example-2-get-the-selected-properties-of-an-azure-network-connection-including-healthcheckstatusdetails"></a>Пример 2. Получить выбранные свойства сетевого подключения Azure, включая healthCheckStatusDetails
 
 #### <a name="request"></a>Запрос
 

@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Сложный тип listInfo используется для хранения дополнительных сведений о списке.
 ms.date: 09/11/2017
 title: ListInfo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 5f36e7f08d8a5ce29316e97ff8f03f14063a4d36
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a2174c4fda353d0bfa5148f8ec5985f925ff0070
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055290"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723806"
 ---
 # <a name="listinfo-resource"></a>Ресурс listInfo
 
@@ -23,7 +23,7 @@ ms.locfileid: "48055290"
 
 [списке]: list.md
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -31,24 +31,24 @@ ms.locfileid: "48055290"
   "blockType": "resource",
   "optionalProperties": [
   ],
-  "@odata.type": "microsoft.graph.listInfo"
+  "@odata.type&quot;: &quot;microsoft.graph.listInfo"
 }-->
 
 ```json
 {
   "contentTypesEnabled": false,
   "hidden": false,
-  "template": "documentLibrary | genericList | tasks | survey | links | announcements | contacts | ..."
+  "template&quot;: &quot;documentLibrary | genericList | tasks | survey | links | announcements | contacts | ..."
 }
 ```
 
 ## <a name="properties"></a>Свойства
 
-| Имя свойства           | Тип    | Описание
-|:------------------------|:--------|:------------------------------------------------
-| **contentTypesEnabled** | Boolean | Если свойство имеет значение `true`, это указывает на то, что для этого списка разрешено использовать типы контента.
-| **hidden**              | Boolean | Если это свойство имеет значение `true`, это указывает на то, что список обычно не отображается в пользовательском интерфейсе SharePoint.
-| **template**            | String  | Перечислимое значение, которое представляет базовый шаблон списка, используемый при создании списка. Возможные значения: `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts` и другие.
+| Свойство                | Тип    | Описание                                                                                                                                                                                              |
+| :---------------------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **contentTypesEnabled** | Boolean | Если свойство имеет значение `true`, это указывает на то, что для этого списка разрешено использовать типы контента.                                                                                                                                       |
+| **hidden**              | Boolean | Если это свойство имеет значение `true`, это указывает на то, что список обычно не отображается в пользовательском интерфейсе SharePoint.                                                                                                            |
+| **template**            | String  | Перечислимое значение, которое представляет базовый шаблон списка, используемый при создании списка. Возможные значения: `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts` и другие. |
 
 ### <a name="remarks"></a>Замечания
 
@@ -58,6 +58,7 @@ ms.locfileid: "48055290"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -68,5 +69,3 @@ ms.locfileid: "48055290"
   "suppressions": []
 }
 -->
-
-

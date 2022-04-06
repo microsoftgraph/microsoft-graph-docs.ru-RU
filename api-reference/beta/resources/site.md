@@ -5,12 +5,12 @@ title: Тип ресурса site
 ms.localizationpriority: high
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 496796c5d7d2667b41ca97f31f81c3c79fc5de96
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: 06649de710e2145dfcd624b15b3fe6a45357f687
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62162071"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63721678"
 ---
 # <a name="site-resource-type"></a>Тип ресурса site
 
@@ -22,30 +22,30 @@ ms.locfileid: "62162071"
 
 ## <a name="methods"></a>Методы
 
-| Метод                         | Путь REST
-|:-------------------------------|:--------------------------------------------
-| [Получение корневого сайта][]              | GET /sites/root
-| [Получение сайта][]                   | GET /sites/{site-id}
-| [Получение сайта по пути][]           | GET /sites/{hostname}:/{site-path}
-| [Получение сайта для группы][]       | GET /groups/{group-id}/sites/root
-| [Получение аналитики][]              | GET /sites/{site-id}/analytics
-| [Получение действий по интервалу][] | GET /sites/{site-id}/getActivitiesByInterval
-| [Перечисление страниц][]                 | GET /sites/{site-id}/pages
-| [Перечисление корневых сайтов][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
-| [Поиск сайтов][]           | GET /sites?search={query}
-| [Отслеживание сайта][]                | POST /users/{user-id}/followedSites/add
-| [Прекращение отслеживания сайта][]              | POST /users/{user-id}/followedSites/remove
-| [Перечисление отслеживаемых сайтов][]        | GET /me/followedSites
-| [Получение разрешения][]             | GET /sites/{site-id}/permissions/{permission-id}
-| [Список разрешений][]           | GET /sites/{site-id}/permissions
-| [Создание разрешений][]         | POST /sites/{site-id}/permissions
-| [Удаление разрешения][]         | DELETE /sites/{site-id}/permissions/{permission-id}
-| [Обновление разрешения][]         | PATCH /sites/{site-id}/permissions/{permission-id}
-|[Перечисление типов контента][]          | GET /sites/{site-id}/contentTypes
-|[Создание contentType][]        | POST /sites/{site-id}/contentTypes
-|[Перечисление столбцов][]               | GET /sites/{site-id}/columns
-|[Создание столбца][]              | POST /sites/{site-id}/columns
-|[Операции со списком](../api/site-list-operations.md)|GET /sites/{site-id}/operations
+| Метод                                            | Путь REST                                                   |
+| :------------------------------------------------ | :---------------------------------------------------------- |
+| [Получение корневого сайта][]                                 | GET /sites/root                                             |
+| [Получение сайта][]                                      | GET /sites/{site-id}                                        |
+| [Получение сайта по пути][]                              | GET /sites/{hostname}:/{site-path}                          |
+| [Получение сайта для группы][]                          | GET /groups/{group-id}/sites/root                           |
+| [Получение аналитики][]                                 | GET /sites/{site-id}/analytics                              |
+| [Получение действий по интервалу][]                    | GET /sites/{site-id}/getActivitiesByInterval                |
+| [Перечисление страниц][]                                    | GET /sites/{site-id}/pages                                  |
+| [Перечисление корневых сайтов][]                               | GET /sites?filter=root ne null&select=siteCollection,webUrl |
+| [Поиск сайтов][]                              | GET /sites?search={query}                                   |
+| [Отслеживание сайта][]                                   | POST /users/{user-id}/followedSites/add                     |
+| [Прекращение отслеживания сайта][]                                 | POST /users/{user-id}/followedSites/remove                  |
+| [Перечисление отслеживаемых сайтов][]                           | GET /me/followedSites                                       |
+| [Получение разрешения][]                                | GET /sites/{site-id}/permissions/{permission-id}            |
+| [Список разрешений][]                              | GET /sites/{site-id}/permissions                            |
+| [Создание разрешений][]                            | POST /sites/{site-id}/permissions                           |
+| [Удаление разрешения][]                             | DELETE /sites/{site-id}/permissions/{permission-id}         |
+| [Обновление разрешения][]                             | PATCH /sites/{site-id}/permissions/{permission-id}          |
+| [Перечисление типов контента][]                            | GET /sites/{site-id}/contentTypes                           |
+| [Создание contentType][]                            | POST /sites/{site-id}/contentTypes                          |
+| [Перечисление столбцов][]                                  | GET /sites/{site-id}/columns                                |
+| [Создание столбца][]                                 | POST /sites/{site-id}/columns                               |
+| [Операции со списком](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
 
 [Получение сайта]: ../api/site-get.md
 [Получение корневого сайта]: ../api/site-get.md
@@ -69,24 +69,24 @@ ms.locfileid: "62162071"
 [Перечисление столбцов]: ../api/site-list-columns.md
 [Создание столбца]: ../api/site-post-columns.md
 
-
 ## <a name="properties"></a>Свойства
 
-| Имя свойства            | Тип               | Описание
-|:-------------------------|:-------------------|:-----------------------------
-| **id**                   | string             | [Уникальный идентификатор](#id-property) элемента. Только для чтения.
-| **createdDateTime**      | DateTimeOffset     | Дата и время создания элемента. Только для чтения.
-| **description**          | string             | Текст с описанием сайта.
+| Свойство                 | Тип               | Описание                                                                                    |
+| :----------------------- | :----------------- | :--------------------------------------------------------------------------------------------- |
+| **id**                   | string             | [Уникальный идентификатор](#id-property) элемента. Только для чтения.                                  |
+| **createdDateTime**      | DateTimeOffset     | Дата и время создания элемента. Только для чтения.                                             |
+| **description**          | string             | Текст с описанием сайта.                                                             |
 | **eTag**                 | string             | ETag для элемента. Только для чтения.                                                                  |
-| **displayName**          | string             | Полное название сайта. Только для чтения.
-| **lastModifiedDateTime** | DateTimeOffset     | Дата и время последнего изменения элемента. Только для чтения.
-| **name**                 | string             | Имя или название элемента.
-| **root**                 | [root][]           | Если это свойство присутствует, оно указывает на то, что сайт — корневой в семействе веб-сайтов. Только для чтения.
-| **sharepointIds**        | [sharepointIds][]  | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
-| **siteCollection**       | [siteCollection][] | Предоставляет сведения о семействе веб-сайтов сайта. Доступно только на корневом сайте. Только для чтения.
-| **webUrl**               | строка (url-адрес)       | URL-адрес для отображения элемента в браузере. Только для чтения.
+| **displayName**          | string             | Полное название сайта. Только для чтения.                                                        |
+| **lastModifiedDateTime** | DateTimeOffset     | Дата и время последнего изменения элемента. Только для чтения.                                       |
+| **name**                 | string             | Имя или название элемента.                                                                  |
+| **root**                 | [root][]           | Если это свойство присутствует, оно указывает на то, что сайт — корневой в семействе веб-сайтов. Только для чтения.            |
+| **sharepointIds**        | [sharepointIds][]  | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.                       |
+| **siteCollection**       | [siteCollection][] | Предоставляет сведения о семействе веб-сайтов сайта. Доступно только на корневом сайте. Только для чтения. |
+| **webUrl**               | строка (url-адрес)       | URL-адрес для отображения элемента в браузере. Только для чтения.                                          |
 
 ### <a name="id-property"></a>Свойство id
+
 Ресурс **site** идентифицируется посредством уникального идентификатора, при создании которого используются следующие значения:
 * имя узла семейства веб-сайтов (contoso.sharepoint.com);
 * уникальный идентификатор семейства веб-сайтов (GUID);
@@ -99,21 +99,21 @@ ms.locfileid: "62162071"
 
 ## <a name="relationships"></a>Связи
 
-| Имя связи | Тип                             | Описание
-|:------------------|:---------------------------------|:----------------------
-| **analytics**     | Ресурс [itemAnalytics][]       | Аналитические данные о действиях просмотра, выполненных на этом сайте.
-| **columns**       | Collection([columnDefinition][]) | Коллекция определений столбцов, которые можно повторно использовать в разных списках на этом сайте.
-| **contentTypes**  | Collection([contentType][])      | Коллекция типов контента, определенных для этого сайта.
-| **drive**         | [drive][]                        | Диск по умолчанию (библиотека документов) для этого сайта.
-| **drives**        | Collection([drive][])            | Коллекция дисков (библиотек документов) на этом сайте.
-| **items**         | Collection([baseItem][])         | Используется для адресации любого элемента, содержащегося на этом сайте. Вам не удастся выполнить перечисление этой коллекции.
-| **lists**         | Collection([list][])             | Коллекция списков на этом сайте.
-|**operations**|Коллекция [richLongRunningOperation](../resources/richlongrunningoperation.md)| Коллекция длительных операций для сайта.
-| **pages**         | Collection([sitePage][])         | Коллекция страниц в списке SitePages на этом сайте.
-| **permissions**   | Collection([permission][])         | Разрешения, связанные с сайтом. Допускается значение NULL.
-| **sites**         | Collection([site][])             | Коллекция дочерних сайтов этого сайта.
-| **termStore**     | [microsoft.graph.termStore.store]  | TermStore на этом сайте.
-| **externalColumns**     | Collection([columnDefinition][])  | Коллекция определений столбцов, доступных на сайте, на которые ссылаются сайты в родительской иерархии текущего сайта.
+| Связь        | Тип                                                                            | Описание                                                                                                                                |
+| :------------------ | :------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------- |
+| **analytics**       | Ресурс [itemAnalytics][]                                                      | Аналитические данные о действиях просмотра, выполненных на этом сайте.                                                                          |
+| **columns**         | Collection([columnDefinition][])                                                | Коллекция определений столбцов, которые можно повторно использовать в разных списках на этом сайте.                                                                |
+| **contentTypes**    | Collection([contentType][])                                                     | Коллекция типов контента, определенных для этого сайта.                                                                                     |
+| **drive**           | [drive][]                                                                       | Диск по умолчанию (библиотека документов) для этого сайта.                                                                                        |
+| **drives**          | Collection([drive][])                                                           | Коллекция дисков (библиотек документов) на этом сайте.                                                                             |
+| **items**           | Collection([baseItem][])                                                        | Используется для адресации любого элемента, содержащегося на этом сайте. Вам не удастся выполнить перечисление этой коллекции.                                                     |
+| **lists**           | Collection([list][])                                                            | Коллекция списков на этом сайте.                                                                                                   |
+| **operations**      | Коллекция [richLongRunningOperation](../resources/richlongrunningoperation.md) | Коллекция длительных операций для сайта.                                                                                    |
+| **pages**           | Collection([sitePage][])                                                        | Коллекция страниц в списке SitePages на этом сайте.                                                                                |
+| **permissions**     | Collection([permission][])                                                      | Разрешения, связанные с сайтом. Допускается значение NULL.                                                                                        |
+| **sites**           | Collection([site][])                                                            | Коллекция дочерних сайтов этого сайта.                                                                                           |
+| **termStore**       | [microsoft.graph.termStore.store]                                               | TermStore на этом сайте.                                                                                                             |
+| **externalColumns** | Collection([columnDefinition][])                                                | Коллекция определений столбцов, доступных на сайте, на которые ссылаются сайты в родительской иерархии текущего сайта. |
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md

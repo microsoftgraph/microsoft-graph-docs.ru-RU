@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bb1558119b842634de5dcba43339d3c0155cd74e
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 4c849eba9e34245d58578cd93c90fa88d9fda145
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348967"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672506"
 ---
 # <a name="orgcontact-delta"></a>orgContact: delta
 
@@ -25,9 +25,9 @@ ms.locfileid: "62348967"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
-|Приложение | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+|Для приложений | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

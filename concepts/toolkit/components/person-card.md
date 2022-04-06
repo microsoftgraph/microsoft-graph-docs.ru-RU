@@ -2,13 +2,13 @@
 title: Компонент Person-Card в Microsoft Graph Toolkit
 description: Компонент Person-Card для просмотра дополнительных сведений, относящихся к пользователю.
 ms.localizationpriority: medium
-author: vogtn
-ms.openlocfilehash: a9ebf62b31756702b925ca9b696bf62624205ee6
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+author: sebastienlevert
+ms.openlocfilehash: 8548430e5a34250c89f9e2e9c0c8e43f909b7bbe
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672044"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587940"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Компонент Person-Card в Microsoft Graph Toolkit
 
@@ -175,8 +175,8 @@ mgt-person {
 | `sections.organization` включено (по умолчанию) | User.Read.All | [/users/{id}/manager](/graph/api/user-list-manager) | Организация |
 | `sections.organization.showWorksWith` set (по умолчанию) | People.Read.All | [/users/{id}/people](/graph/api/user-list-people) | Организация |
 | `sections.mailMessages` включено (по умолчанию) | Mail.ReadBasic | [/me/messages](/graph/api/user-list-messages) | Сообщения |
-| `sections.files` включено (по умолчанию) | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Файлы |
-| `sections.profile` включено (по умолчанию) | User.Read.All | [/users/{id}/profile](/graph/api/profile-get?view=graph-rest-beta) | Профиль |
+| `sections.files` включено (по умолчанию) | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Files |
+| `sections.profile` включено (по умолчанию) | User.Read.All | [/users/{id}/profile](/graph/api/profile-get?view=graph-rest-beta&preserve-view=true) | Профиль |
 
 Класс `MgtPersonCard` также предоставляет `getScopes` статический метод, возвращающий массив областей, необходимый для работы карточки контакта с учетом глобальной конфигурации карточки контакта.
 
