@@ -1,10 +1,15 @@
 ---
 title: Известные проблемы с Microsoft Graph
-description: 'В этой статье описываются известные проблемы, связанные с Microsoft Graph.'
+description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
+ms.openlocfilehash: 83c99695e82e4dde776eaadc4506668e4277d423
+ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63780515"
 ---
-
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
 В этой статье описываются известные проблемы, связанные с Microsoft Graph. 
@@ -256,9 +261,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="admins-must-consent-to-permissions-for-groups-and-microsoft-teams"></a>Администраторы должны дать согласие на разрешения для групп и Microsoft Teams
 
-Microsoft Graph предоставляет два разрешения ([*Group.Read.All*](permissions-reference.md#group-permissions) и [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)) для доступа к API для групп и Microsoft Teams.
-Эти разрешения должен предоставить администратор.
-В будущем мы планируем добавить новые разрешения для групп и команд, которые смогут предоставлять пользователи.
+В Microsoft Graph доступны два разрешения ([*Group.Read.All*[ и](permissions-reference.md#group-permissions)*Group.ReadWrite.All*](permissions-reference.md#group-permissions)) для доступа к API для групп и Microsoft Teams. На предоставление этих разрешений должен согласиться администратор. В будущем мы планируем добавить новые разрешения для групп и команд, на предоставление которых смогут соглашаться пользователи.
 
 ### <a name="some-group-apis-dont-support-delegated-or-app-only-permissions"></a>Некоторые API группы не поддерживают делегирование разрешений только для приложений
 
@@ -398,7 +401,7 @@ API [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy) может �
 
 ### <a name="installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported"></a>Установка приложений, требующих разрешений на согласие для определенных ресурсов, не поддерживается
 Следующие вызовы API не поддерживают установку приложений, требующих разрешений на [согласие для определенных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
-- [Добавление приложения в команду](/graph/api/team-post-installedapps.md)
+- [Добавление приложения в команду](/graph/api/team-post-installedapps)
 - [Обновление приложения, установленного в команде](/graph/api/team-teamsappinstallation-upgrade.md)
 - [Добавление приложения в чат](/graph/api/chat-post-installedapps.md)
 - [Обновление приложения, установленного в чате](/graph/api/chat-teamsappinstallation-upgrade.md)
@@ -466,4 +469,4 @@ API [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy) может �
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis-deprecated"></a>Функции, доступные только в REST API Office 365 или API Graph Azure AD (не рекомендуется)
 
-Некоторые функции еще не доступны в Microsoft Graph. Если вы не нашли нужную функцию, можете использовать специальные [REST API Office 365](/previous-versions/office/office-365-api/). Сведения для Azure AD Graph см. в статье [Перенос приложений Azure Active Directory (Azure AD) Graph в Microsoft Graph](./migrate-azure-ad-graph-overview.md).
+Некоторые функции еще не доступны в Microsoft Graph. Если вам не удается найти нужные функции, можно использовать [интерфейсы REST API для Office 365](/previous-versions/office/office-365-api/), связанные с конкретными конечными точками. Для Azure AD Graph см. статью [Миграция приложений Azure Active Directory (Azure AD) Graph в Microsoft Graph](./migrate-azure-ad-graph-overview.md).

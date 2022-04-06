@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 60590d7959285b1c349618d813c5eb2ef6aa6409
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7fc50d29102b83465365365cec6bdc1d5149e9fd
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62111935"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671995"
 ---
 # <a name="delete-schemaextension"></a>Удаление schemaExtension
 
@@ -29,12 +29,12 @@ ms.locfileid: "62111935"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 > [!NOTE]
-> Кроме того, для делегирования потока подписанный пользователь может удалять только собственные схемыExtensions (где свойством владельца схемыExtension является приложение, которое принадлежит подписанного  `appId` пользователя).
+> Кроме того, для делегирования потока подписанный пользователь может удалять только собственные схемыExtensions (где свойством владельца схемыExtension  `appId` является приложение, которое принадлежит подписанного пользователя).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ DELETE /schemaExtensions/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

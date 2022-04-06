@@ -5,25 +5,25 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2fc33c9be0dd234477ed9aee6e138d56cb1b7344
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a13baf6216b8d532956dabd1c1fe9832e7a83bab
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60934880"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668474"
 ---
 # <a name="remove-owner"></a>Удаление владельца
 
 Пространство имен: microsoft.graph
 
-Удаление владельца из [объекта servicePrincipal.](../resources/serviceprincipal.md)
+Удаление владельца из [объекта servicePrincipal](../resources/serviceprincipal.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.ReadWrite.All, Application.ReadWrite.OwnedBy |
 

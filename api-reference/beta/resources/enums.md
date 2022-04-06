@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: d3624b1b57ba0883447a41fbc3ef08c910e51fc1
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 5085bd3db401b09c24e93a556fd9e938e69f8d73
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368135"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758216"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -94,7 +94,7 @@ ms.locfileid: "63368135"
 
 |Member|
 |:---|
-|tenant|
+|клиент|
 |приложение|
 
 ### <a name="incomingtokentype-values"></a>значения incomingTokenType 
@@ -304,10 +304,10 @@ ms.locfileid: "63368135"
 |:---|
 |String|
 |Целое число|
-|Ссылка|
+|Справочные материалы|
 |Binary|
-|Boolean|
-|Даты и время|
+|Логическое|
+|DateTime|
 
 ### <a name="mutability-values"></a>значения мутируемости
 
@@ -482,7 +482,7 @@ ms.locfileid: "63368135"
 
 |Member|
 |:---|
-|userPrincipalName.|
+|userPrincipalName|
 |onPremisesUserPrincipalName|
 |userPrincipalUsername|
 |onPremisesUserPrincipalUsername|
@@ -548,7 +548,7 @@ ms.locfileid: "63368135"
 |:---|
 |email|
 |mobileSMS|
-|mobilePhone;|
+|mobilePhone|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -579,7 +579,7 @@ ms.locfileid: "63368135"
 |приложение|
 |users|
 |devicePlatform|
-|расположение|
+|location|
 |clientType|
 |signInRisk|
 |userRisk|
@@ -700,7 +700,7 @@ ms.locfileid: "63368135"
 |Member|
 |:---|
 |email|
-|mobilePhone;|
+|mobilePhone|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -842,7 +842,7 @@ ms.locfileid: "63368135"
 
 |Member|
 |:---|
-|Обязательный|
+|обязательно|
 |previouslySatisfied|
 |notApplicable|
 |unknownFutureValue|
@@ -1023,7 +1023,7 @@ ms.locfileid: "63368135"
 
 |Member|
 |:---|
-|birthday;|
+|birthday|
 |свадьба|
 |unknownFutureValue|
 
@@ -1094,7 +1094,7 @@ ms.locfileid: "63368135"
 |Member|
 |:---|
 |email|
-|mobilePhone;|
+|mobilePhone|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -1254,7 +1254,7 @@ ms.locfileid: "63368135"
 
 | Member
 |:-----------------
-| Windows
+| windows
 | iana
 
 
@@ -1634,7 +1634,7 @@ ms.locfileid: "63368135"
 ### <a name="onenotesourceservice-values"></a>значения onenoteSourceService
 | Member
 |:---------------------
-| Unknown
+| Неизвестно
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -2234,7 +2234,7 @@ Enum для серьезности оповещений.
 |:--------------|
 |Android|
 |iOS|
-|Windows|
+|windows|
 |WindowsPhone|
 |macOS|
 |все|
@@ -2246,13 +2246,13 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкая|2|
+|Низкий|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail;   | 1     | Угроза почты.            |
+| почта;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -2378,7 +2378,7 @@ Enum для серьезности оповещений.
 |пользователь | столбец персоны или группы. |
 |url | гиперссылка или столбец изображения. |
 |вычисляется | вычислимый столбец. |
-|расположение | столбец расположения. |
+|location | столбец расположения. |
 |геолокация | столбец геолокации. |
 |term | столбец управляемых метаданных. |
 |многоступенчатый | столбец управляемых метаданных, который принимает несколько значений. |
@@ -2684,7 +2684,7 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |team|
-|channel|
+|канал|
 |чат|
 |unknownFutureValue|
 
@@ -2709,23 +2709,6 @@ Enum для серьезности оповещений.
 |сбой|
 |начальный|
 |chunkFinished|
-|unknownFutureValue|
-
-### <a name="simulationstatus-values"></a>значения simulationStatus
-
-|Member|
-|:---|
-|unknown|
-|черновик|
-|inProgress|
-|scheduled|
-|завершено|
-|частичноКомплет|
-|не удалось|
-|отменено|
-|исключено|
-|deleted|
-|включено|
 |unknownFutureValue|
 
 ### <a name="payloaddeliveryplatform-values"></a>значения payloadDeliveryPlatform

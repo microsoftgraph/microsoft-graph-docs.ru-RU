@@ -2,15 +2,15 @@
 title: Добавление владельцев
 description: Добавьте пользователя или субъект-службу к владельцам группы Microsoft 365 или группы безопасности. Владельцы — это группа пользователей или субъектов-служб, которым разрешено изменять объект группы.
 ms.localizationpriority: medium
-author: psaffaie
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 63b1e7afce370a3a6ad75af72eba4dac0edc5e19
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: dc3758231f7d16b8e53e7bd985d1d7e13439b03e
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64588647"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477918"
 ---
 # <a name="add-owners"></a>Добавление владельцев
 
@@ -20,54 +20,43 @@ ms.locfileid: "64588647"
 
 Добавьте пользователя или субъект-службу к владельцам группы Microsoft 365 или группы безопасности. Владельцы — это группа пользователей или субъектов-служб, которым разрешено изменять объект группы.
 
-> **Важно!** При обновлении владельцев группы и создании команды для группы может потребоваться до 2 часов для синхронизации владельцев с Microsoft Teams. Кроме того, если нужно, чтобы владелец мог вносить изменения в команду, например путем создания плана Планировщика, владельца также требуется добавить в качестве участника группы или команды.
+>**Важно!** При обновлении владельцев группы и создании команды для группы может потребоваться до 2 часов для синхронизации владельцев с Microsoft Teams. Кроме того, если нужно, чтобы владелец мог вносить изменения в команду, например путем создания плана Планировщика, владельца также требуется добавить в качестве участника группы или команды. 
 
 ## <a name="permissions"></a>Разрешения
-
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения (в порядке повышения привилегий)  |
-| :------------------------------------- | :------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All, Directory.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Для приложений                            | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.ReadWrite.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
-
 <!-- { "blockType": "ignored" } -->
-
 ```http
 POST /groups/{id}/owners/$ref
 ```
-
 ## <a name="request-headers"></a>Заголовки запросов
-
-| Имя          | Описание                 |
-| :------------ | :-------------------------- |
-| Авторизация | Bearer {token}. Обязательный.   |
-| Content-Type  | application/json. Обязательный. |
+| Имя       | Описание|
+|:---------------|:----------|
+| Авторизация  | Bearer {token}. Обязательный. |
+| Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-
 Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) или [servicePrincipal](../resources/serviceprincipal.md) в формате JSON с **@odata.id**.
 
 ## <a name="response"></a>Отклик
-
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика. Если объект уже является членом группы, этот метод возвращает код отклика `400 Bad Request`. Если добавляемый объект не существует, этот метод возвращает код отклика `404 Not Found`.
 
 ## <a name="example"></a>Пример
-
 ### <a name="request"></a>Запрос
-
 Ниже приводится пример запроса, который добавляет пользователя в качестве владельца группы.
 
 # <a name="http"></a>[HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "create_owner_from_group"
 }-->
-
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/owners/$ref
 Content-type: application/json
@@ -76,34 +65,27 @@ Content-type: application/json
   "@odata.id": "https://graph.microsoft.com/beta/users/{id}"
 }
 ```
-
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-owner-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
 [!INCLUDE [sample-code](../includes/snippets/objc/create-owner-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="c"></a>[C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-owner-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/create-owner-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-
 [!INCLUDE [sample-code](../includes/snippets/go/create-owner-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-owner-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -112,21 +94,16 @@ Content-type: application/json
 Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) или [servicePrincipal](../resources/user.md) в формате JSON с **@odata.id**.
 
 ### <a name="response"></a>Отклик
-
 Ниже приведен пример ответа.
-
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
-
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response"
 } -->
-
 ```http
 HTTP/1.1 204 No Content
 ```
 
 ## <a name="see-also"></a>См. также
-
 - [Добавление участника в команду](team-post-members.md)
 - [Обновление роли участника в группе](team-update-members.md)
 - [Удаление участника из чата](team-delete-members.md)
@@ -144,3 +121,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

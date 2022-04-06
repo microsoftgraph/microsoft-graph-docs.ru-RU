@@ -5,12 +5,12 @@ title: driveItem
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 9b1da27ce64f07c386efd146847da417faeefa60
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: da35d9cb395e1aab22817e4304326848e9970791
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792199"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63559995"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
@@ -39,6 +39,7 @@ ms.locfileid: "61792199"
 элементы с аспектом **folder** выполняют роль контейнеров элементов, поэтому у них есть ссылка `children`, указывающая на коллекцию объектов **driveItem** в папке.
 
 >**Примечание.** В OneDrive для бизнеса и библиотеках документов SharePoint свойство **cTag** не возвращается, если у ресурса **driveItem** есть аспект [folder][].
+
 
 ## <a name="methods"></a>Методы
 
@@ -78,13 +79,14 @@ ms.locfileid: "61792199"
 
 | Свойство             | Тип               | Описание
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | Метаданные звукового файла, если элемент — звуковой файл. Только для чтения. Только на OneDrive Personal.
+| audio                | [audio][]          | Метаданные звукового файла, если элемент — звуковой файл. Только для чтения. Только в личном хранилище OneDrive.
+| bundle               | [bundle][]         | Пакет метаданных, если элемент является пакетом. Только для чтения.
 | содержимое              | Поток             | Поток содержимого, если элемент представляет файл.
 | createdBy            | [identitySet][]    | Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.
 | createdDateTime      | DateTimeOffset     | Дата и время создания элемента. Только для чтения.
 | cTag                 | String             | ETag для содержимого элемента. Такой тег сущности не изменяется, если изменяются только метаданные. **Примечание.** Это свойство не возвращается, если в роли элемента выступает папка. Только для чтения.
 | deleted              | [deleted][]        | Сведения о состоянии удаления элемента. Только для чтения.
-| description          | String             | Предоставляет видимое пользователю описание элемента. Чтение и запись. Только на OneDrive Personal.
+| description          | String             | Предоставляет видимое пользователю описание элемента. Чтение и запись. Только в личном хранилище OneDrive.
 | eTag                 | String             | Тег сущности для всего элемента (метаданные и содержимое). Только для чтения.
 | file                 | [file][]           | Файл метаданных, если в роли элемента выступает файл. Только для чтения.
 | fileSystemInfo       | [fileSystemInfo][] | Сведения о файловой системе на клиенте. Чтение и запись.
@@ -156,7 +158,7 @@ URL-адрес будет доступен в течение короткого 
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
-       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
+       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video", "bundle",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds", "source", "media"],
@@ -165,6 +167,7 @@ URL-адрес будет доступен в течение короткого 
 ```json
 {  
   "audio": { "@odata.type": "microsoft.graph.audio" },
+  "bundle": { "@odata.type": "microsoft.graph.bundle" },
   "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
@@ -225,6 +228,7 @@ URL-адрес будет доступен в течение короткого 
 
 [audio]: audio.md
 [baseItem]: baseitem.md
+[bundle]: bundle.md
 [deleted]: deleted.md
 [download-format]: ../api/driveitem-get-content-format.md
 [driveItemSource]: driveItemSource.md

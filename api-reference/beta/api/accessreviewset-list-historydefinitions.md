@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4971ef6f4a65b4a6c0e1fd9d3f319da3ffb87a4c
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 9c36cb64449cef065810176a631a9bd8e68c3098
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62224821"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63721890"
 ---
 # <a name="list-historydefinitions"></a>Список historyDefinitions
 
@@ -18,12 +18,7 @@ ms.locfileid: "62224821"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Извлечение объектов accessReviewHistoryDefinition,](../resources/accessreviewhistorydefinition.md) созданных за последние 30 дней, включая все вложенные свойства.
-
->[!NOTE]
->Размер страницы по умолчанию для этого API — 100 **объектов accessReviewHistoryDefinitions.** Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
->
->Если параметры запроса не предоставлены и результатов более 100, microsoft Graph автоматически будет предоставлять результаты по 100 результатов на странице.
+[Извлечение объектов accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md), созданных за последние 30 дней, включая все вложенные свойства.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,7 +28,7 @@ ms.locfileid: "62224821"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.ReadWrite.All|
 
 Если подписанный пользователь не является участником роли глобального каталога администратора или членом роли каталога global Reader, возвращаются только определения, созданные пользователем, который был создан для подписи.
 
@@ -50,7 +45,9 @@ GET /identityGovernance/accessReviews/historyDefinitions
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$top` параметры `$filter` запросов , и `$expand` OData, чтобы помочь `$skip` настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters). В том `?$expand=instances` числе будут [возвращены объекты accessReviewHistoryDefinitions](../resources/accessreviewhistorydefinition.md) вместе с связанными с ними экземплярами.
+Этот метод поддерживает параметры `$top`запросов , и `$filter``$expand``$skip` OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters). В том `?$expand=instances` числе будут [возвращены объекты accessReviewHistoryDefinitions](../resources/accessreviewhistorydefinition.md) вместе с связанными с ними экземплярами.
+
+Размер страницы по умолчанию для этого API — 100 **объектов accessReviewHistoryDefinitions** . Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -64,7 +61,7 @@ GET /identityGovernance/accessReviews/historyDefinitions
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код отклика и коллекцию [объектов accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

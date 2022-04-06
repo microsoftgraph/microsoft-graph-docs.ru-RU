@@ -1,16 +1,16 @@
 ---
 title: Добавление scopedRoleMember
-description: Добавьте новое scopedRoleMembership. ПРИМЕЧАНИЕ. Только *роли* администратора учетной записи пользователя и *администратора Helpdesk* в настоящее время поддерживаются для членства в scoped-role.
+description: Добавьте новое scopedRoleMembership. ПРИМЕЧАНИЕ. *Только роли* администратора учетной записи пользователя и *администратора Helpdesk* в настоящее время поддерживаются для членства в scoped-role.
 ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b402f95fb9f6d83d73910753909b8bc676d2ab05
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 84bdfc68985fae07a9f19e2fdb84f418c6967fcd
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103981"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668992"
 ---
 # <a name="add-a-scopedrolemember"></a>Добавление scopedRoleMember
 
@@ -18,7 +18,7 @@ ms.locfileid: "62103981"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте новое [scopedRoleMembership](../resources/scopedrolemembership.md). ПРИМЕЧАНИЕ. Только *роли* администратора учетной записи пользователя и *администратора Helpdesk* в настоящее время поддерживаются для членства в scoped-role.
+Добавьте новое [scopedRoleMembership](../resources/scopedrolemembership.md). ПРИМЕЧАНИЕ. *Только роли* администратора учетной записи пользователя и *администратора Helpdesk* в настоящее время поддерживаются для членства в scoped-role.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,9 +26,9 @@ ms.locfileid: "62103981"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.ReadWrite.Directory |
+|Для приложений | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,12 +40,12 @@ POST /administrativeUnits/{id}/scopedRoleMembers
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
-В теле запроса поставляют представление JSON объекта [scopedRoleMembership.](../resources/scopedrolemembership.md)
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляют представление JSON объекта [scopedRoleMembership](../resources/scopedrolemembership.md) .
 
 ## <a name="response"></a>Отклик
 
-В случае успешного применения этот метод возвращает код ответа и `201 Created` [объект scopedRoleMembership](../resources/scopedrolemembership.md) в тексте ответа.
+В случае успешного применения этот `201 Created` метод возвращает код ответа и [объект scopedRoleMembership](../resources/scopedrolemembership.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -93,7 +93,7 @@ Content-type: application/json
 
 ---
 
-В теле запроса поставляют представление JSON объекта [scopedRoleMembership.](../resources/scopedrolemembership.md)
+В теле запроса поставляют представление JSON объекта [scopedRoleMembership](../resources/scopedrolemembership.md) .
 ##### <a name="response"></a>Отклик
 Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6f0231791d243e9df6dd65f067564778326fa66a
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: afe1ebb541d8d83d7abd8d857383152e2756179b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346668"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669986"
 ---
 # <a name="directoryrole-delta"></a>directoryRole: delta
 
@@ -25,9 +25,9 @@ ms.locfileid: "62346668"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -155,7 +155,7 @@ Content-type: application/json
 
 ### <a name="see-also"></a>См. также
 
-- [Дополнительные сведения можно получить с помощью delta-запроса для отслеживания изменений в Graph microsoft Graph](/graph/delta-query-overview) данных
+- [Дополнительные сведения можно получить с помощью delta-запроса для отслеживания изменений в Graph майкрософт](/graph/delta-query-overview)
 - [Примеры запросов](/graph/delta-query-users)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

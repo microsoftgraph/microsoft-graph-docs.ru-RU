@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: d69fe853c17f55b61ef3b2684df41c759776a71e
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: f542cc9d3b0078234609053039c460986ac85082
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335404"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477673"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -42,9 +42,9 @@ ms.locfileid: "63335404"
 |[Add appRoleAssignedTo](../api/serviceprincipal-post-approleassignedto.md) |[appRoleAssignment](approleassignment.md)| Назначение роли для этого субъекта-службы пользователю, группе или субъекту-службе.|
 |[Remove appRoleAssignedTo](../api/serviceprincipal-delete-approleassignedto.md) | Нет | Удаление назначенной роли этого субъекта-службы у пользователя, группы или субъекта-службы.|
 |**Сертификаты и секреты**| | |
-|[Добавление пароля](../api/serviceprincipal-addpassword.md)|[passwordCredential](passwordcredential.md)|Добавление стойкого пароля объекту servicePrincipal.|
+|[Добавление пароля](../api/serviceprincipal-addpassword.md)|[passwordCredential](passwordcredential.md)|Добавление стойкого пароля или секрета в servicePrincipal.|
 |[Добавление tokenSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md)|[selfSignedCertificate](../resources/selfsignedcertificate.md)| Добавление самозаверяющего сертификата в субъект-службу. В основном используется для настройки приложений единого входа на основе SAML из [коллекции Azure AD](/azure/active-directory/saas-apps/tutorial-list).
-|[Удаление пароля](../api/serviceprincipal-removepassword.md)|[passwordCredential](passwordcredential.md)|Удаление пароля из servicePrincipal.|
+|[Удаление пароля](../api/serviceprincipal-removepassword.md)|[passwordCredential](passwordcredential.md)|Удаление пароля или секрета из servicePrincipal.|
 |[Добавление ключа](../api/serviceprincipal-addkey.md)|[keyCredential](keycredential.md)|Добавление учетных данных ключа объекту servicePrincipal.|
 |[Удаление ключа](../api/serviceprincipal-removekey.md)|Нет|Удаление учетных данных ключа объекта servicePrincipal.|
 |**Классификация делегированных разрешений**| | |

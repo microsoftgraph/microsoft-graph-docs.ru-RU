@@ -1,16 +1,16 @@
 ---
 title: Список участников
 description: Извлечение списка объектов-участников вызова.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6120c14bc8446b08f5f73b63b0057bd99a0ba5d6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3c2fb96d7613ee8dc31d3f82ef90dd25f1775bdf
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131655"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607427"
 ---
 # <a name="list-participants"></a>Список участников
 
@@ -26,7 +26,9 @@ ms.locfileid: "62131655"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Приложение     | Нет                                        |
+| Для приложений     | Calls.Initiate.All, Calls.AccessMedia.All  |
+
+> **Примечание:** Разрешения проверяются при вызове; При вызове этого API не проводится дополнительная проверка разрешений. Calls.AccessMedia.All необходим только для вызовов, которые используют носители с использованием приложений.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,13 +50,13 @@ GET /communications/calls/{id}/participants
 |:--------------|:--------------------------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` коллекцию объектов-участников в тексте отклика. [](../resources/participant.md)
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [коллекцию](../resources/participant.md) объектов-участников в тексте отклика.
 
 ## <a name="example"></a>Пример
 

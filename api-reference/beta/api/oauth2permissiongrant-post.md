@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: dc32f5ba7ff9ed0ac412bc0257e9dc4c0d345dca
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 631bc0ce35a597c44af163cf82d12bc3eb029298
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129666"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670840"
 ---
 # <a name="create-oauth2permissiongrant-a-delegated-permission-grant"></a>Создание oAuth2PermissionGrant (делегированная субсидия на разрешение)
 
@@ -18,7 +18,7 @@ ms.locfileid: "62129666"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте делегированную выдачу разрешений, представленную [объектом oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
+Создайте делегированную выдачу разрешений, представленную [объектом oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) .
 
 Делегированная выдача разрешений разрешает директору клиентской службы (представляющим клиентскую заявку) получать доступ к директору службы ресурсов (представляющим API) от имени подписанного пользователя, для уровня доступа, ограниченного делегированных разрешений, которые были предоставлены.
 
@@ -28,9 +28,9 @@ ms.locfileid: "62129666"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,20 +46,20 @@ POST /oauth2PermissionGrants
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
+В теле запроса поставляем представление JSON объекта [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) .
 
-В следующей таблице показаны свойства, необходимые при создании [oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
+В следующей таблице показаны свойства, необходимые при создании [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-| clientId | String | ID **директора** клиентской службы для приложения, которому разрешено действовать от имени пользователя, входишего в него, при доступе к API. [](../resources/serviceprincipal.md) Обязательное.  |
-| consentType | Строка | Указывает, предоставляется ли авторизация клиентского приложения для выдают себя за всех пользователей или только определенного пользователя. *AllPrincipals* указывает авторизацию, чтобы выдать себя за всех пользователей. *Principal* указывает авторизацию, чтобы выдать себя за конкретного пользователя. Согласие от имени всех пользователей может быть предоставлено администратором. В некоторых случаях для некоторых делегированных разрешений пользователям, не относя правительственным администраторам, может быть разрешено согласие от имени самих себя. Обязательный.  |
-| principalId | Строка | ID **пользователя,** от имени которого клиент уполномочен получать доступ к ресурсу, если **consentType** является [](../resources/user.md) *основным.* Если **consentType** *— это AllPrincipals,* это значение является null. Обязательно, когда **consentType** является *основным*. |
-| resourceId | String | ID **главного** ресурса [службы,](../resources/serviceprincipal.md) к которому разрешен доступ. При этом определяется API, который клиент уполномочен пытаться вызвать от имени подписанного пользователя. |
-| scope | String | Разделенный пробелом список значений утверждений для делегирования разрешений, которые должны быть включены в маркеры доступа для приложения-ресурса (API). Например, `openid User.Read GroupMember.Read.All`. Каждое значение утверждения  должно совпадать с полем значения одного из делегированных разрешений, определенных API, перечисленным в свойстве **publishedPermissionScopes** директора [службы ресурсов.](../resources/serviceprincipal.md) |
-| startTime | DateTimeOffset | В настоящее время значение времени начала игнорируется, но требуется значение. Обязательное. |
+| clientId | String | **ID директора** клиентской службы для приложения, которому разрешено действовать от имени пользователя, входишего в него, при доступе к API.[](../resources/serviceprincipal.md) Обязательный.  |
+| consentType | String | Указывает, предоставляется ли авторизация клиентского приложения для выдают себя за всех пользователей или только определенного пользователя. *AllPrincipals* указывает авторизацию, чтобы выдать себя за всех пользователей. *Principal* указывает авторизацию, чтобы выдать себя за конкретного пользователя. Согласие от имени всех пользователей может быть предоставлено администратором. В некоторых случаях для некоторых делегированных разрешений пользователям, не относя правительственным администраторам, может быть разрешено согласие от имени самих себя. Обязательный.  |
+| principalId | String | **ID пользователя**[,](../resources/user.md) от имени которого клиент уполномочен получать доступ к ресурсу, если **consentType** является *основным*. Если **consentType** *— это AllPrincipals* , это значение является null. Обязательно, когда **consentType** является *основным*. |
+| resourceId | String | **ID главного** ресурса [службы,](../resources/serviceprincipal.md) к которому разрешен доступ. При этом определяется API, который клиент уполномочен пытаться вызвать от имени подписанного пользователя. |
+| scope | String | Разделенный пробелом список значений утверждений для делегирования разрешений, которые должны быть включены в маркеры доступа для приложения-ресурса (API). Например, `openid User.Read GroupMember.Read.All`. Каждое значение утверждения должно соответствовать значению поля одного из делегированных разрешений, определенных API, перечисленных в свойстве **publishedPermissionScopes** директора [службы ресурсов](../resources/serviceprincipal.md). |
+| startTime | DateTimeOffset | В настоящее время значение времени начала игнорируется, но требуется значение. Обязательный. |
 | expiryTime | DateTimeOffset | В настоящее время значение конца времени игнорируется, но требуется значение. Обязательный. |
 
 ## <a name="response"></a>Отклик
@@ -81,13 +81,12 @@ POST https://graph.microsoft.com/beta/oauth2PermissionGrants
 Content-Type: application/json
 
 {
-  "clientId": "clientId-value",
-  "consentType": "consentType-value",
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "scope": "scope-value",
-  "startTime": "2016-10-19T10:37:00Z",
-  "expiryTime": "2016-10-19T10:37:00Z"
+    "clientId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
+    "consentType": "AllPrincipals",
+    "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
+    "scope": "DelegatedPermissionGrant.ReadWrite.All",
+    "startTime": "2022-03-17T00:00:00Z",
+    "expiryTime": "2023-03-17T00:00:00Z"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -130,14 +129,15 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "id": "id-value",
-  "clientId": "clientId-value",
-  "consentType": "consentType-value",
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "scope": "scope-value",
-  "startTime": "2016-10-19T10:37:00Z",
-  "expiryTime": "2016-10-19T10:37:00Z"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#oauth2PermissionGrants/$entity",
+    "clientId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
+    "consentType": "AllPrincipals",
+    "expiryTime": "2023-03-17T00:00:00Z",
+    "id": "l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk",
+    "principalId": null,
+    "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
+    "scope": "DelegatedPermissionGrant.ReadWrite.All",
+    "startTime": "2022-03-17T00:00:00Z"
 }
 ```
 

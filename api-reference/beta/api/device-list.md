@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e6e252916848fa1b40158eef64e3982c07560b45
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 32bbd1e31a02662f31abaff2ed61845ec663d52f
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509807"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670567"
 ---
 # <a name="list-devices"></a>Список устройств
 
@@ -29,7 +29,7 @@ ms.locfileid: "64509807"
 |:--------------- |:------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Для приложений | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -206,11 +206,7 @@ GET https://graph.microsoft.com/beta/devices?$select=id,extensionAttributes
 #### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.device"
-} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -250,8 +246,8 @@ Content-type: application/json
 
 >**Примечание.** В настоящее время параметры `$count` и `$search` недоступны в клиентах Azure AD B2C.
 <!-- {
-  "blockType": "request",
-  "name": "list_devices_startswith"
+  "blockType": "ignored",
+  "name": "get_a_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName 

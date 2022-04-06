@@ -2,15 +2,15 @@
 title: Обновление windows10EnrollmentCompletionPageConfiguration
 description: Обновление свойств объекта Windows10EnrollmentCompletionPageConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 545d0e15456556fac29d31b978b9e47bf2ec8b1a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4879dee14b7350e4087ad6294c6e3d52cd397fd5
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59116502"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64628942"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>Обновление windows10EnrollmentCompletionPageConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "59116502"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [Windows10EnrollmentCompletionPageConfiguration.](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
+Обновление свойств объекта [Windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,35 +47,36 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса предоставляем представление JSON для [объекта Windows10EnrollmentCompletionPageConfiguration.](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
+В теле запроса предоставляем представление JSON для [объекта Windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) .
 
-В следующей таблице показаны свойства, необходимые при создании [windows10EnrollmentCompletionPageConfiguration.](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
+В следующей таблице показаны свойства, необходимые при создании [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор учетной записи, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|displayName|String|Отображающее имя конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|description|String|Описание конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|id|Строка|Уникальный идентификатор учетной записи, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|displayName|Строка|Отображающее имя конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|description|Строка|Описание конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |priority|Int32|Приоритет используется, когда пользователь существует в нескольких группах, которые назначены конфигурации регистрации. Пользователи подчиняются только конфигурации с наименьшим значением приоритета. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Создано время даты в UTC конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время даты в UTC конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |version|Int32|Версия конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|roleScopeTagIds|Коллекция объектов string|Необязательные теги области ролей для ограничений регистрации. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|Логическое|Показать пользователю или скрыть ход установки|
-|blockDeviceSetupRetryByUser|Логический|Разрешить пользователю повторно повторить установку при сбое установки|
-|allowDeviceResetOnInstallFailure|Логический|Разрешить или заблокировать сброс устройства при сбое установки|
-|allowLogCollectionOnInstallFailure|Логическое|Разрешить или заблокировать коллекцию журналов при сбое установки|
-|customErrorMessage|String|Настройка настраиваемой ошибки для демонстрации при сбое установки|
+|roleScopeTagIds|Коллекция String|Необязательные теги области ролей для ограничений регистрации. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|deviceEnrollmentConfigurationType|[deviceEnrollmentConfigurationType](../resources/intune-onboarding-deviceenrollmentconfigurationtype.md)|Поддержка типа конфигурации регистрации, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md). Возможные значения: `unknown`, `limit`, `platformRestrictions`, `windowsHelloForBusiness`, `defaultLimit`, `defaultPlatformRestrictions`, `defaultWindowsHelloForBusiness`, `defaultWindows10EnrollmentCompletionPageConfiguration`, `windows10EnrollmentCompletionPageConfiguration`, `deviceComanagementAuthorityConfiguration`, `singlePlatformRestriction`, `unknownFutureValue`.|
+|showInstallationProgress|Boolean|Показать пользователю или скрыть ход установки|
+|blockDeviceSetupRetryByUser|Boolean|Разрешить пользователю повторно повторить установку при сбое установки|
+|allowDeviceResetOnInstallFailure|Boolean|Разрешить или заблокировать сброс устройства при сбое установки|
+|allowLogCollectionOnInstallFailure|Boolean|Разрешить или заблокировать коллекцию журналов при сбое установки|
+|customErrorMessage|Строка|Настройка настраиваемой ошибки для демонстрации при сбое установки|
 |installProgressTimeoutInMinutes|Int32|Установите время выполнения установки за несколько минут|
-|allowDeviceUseOnInstallFailure|Логическое|Разрешить пользователю продолжить использование устройства при сбое установки|
+|allowDeviceUseOnInstallFailure|Boolean|Разрешить пользователю продолжить использование устройства при сбое установки|
 |selectedMobileAppIds|Коллекция объектов string|Выбранные приложения для отслеживания состояния установки|
 |trackInstallProgressForAutopilotOnly|Логическое|Только показать ход установки для сценариев регистрации автопилота|
-|disableUserStatusTrackingAfterFirstUser|Логическое|Только показать ход установки для первого регистрации после пользователя|
+|disableUserStatusTrackingAfterFirstUser|Логический|Только показать ход установки для первого регистрации после пользователя|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и обновленный `200 OK` [объект Windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) в теле отклика.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и обновленный [объект Windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -84,7 +85,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 Content-type: application/json
-Content-length: 746
+Content-length: 795
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -95,6 +96,7 @@ Content-length: 746
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "deviceEnrollmentConfigurationType": "limit",
   "showInstallationProgress": true,
   "blockDeviceSetupRetryByUser": true,
   "allowDeviceResetOnInstallFailure": true,
@@ -115,7 +117,7 @@ Content-length: 746
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 918
+Content-Length: 967
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -129,6 +131,7 @@ Content-Length: 918
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "deviceEnrollmentConfigurationType": "limit",
   "showInstallationProgress": true,
   "blockDeviceSetupRetryByUser": true,
   "allowDeviceResetOnInstallFailure": true,
@@ -143,6 +146,7 @@ Content-Length: 918
   "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
+
 
 
 

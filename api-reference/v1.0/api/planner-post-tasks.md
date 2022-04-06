@@ -1,22 +1,23 @@
 ---
 title: Создание объекта plannerTask
-description: Используйте этот API, чтобы создать объект **plannerTask**.
+description: Создание объекта plannerTask.
 ms.localizationpriority: high
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 15066999e8a559fb6a6a72f470c398a63a4dbdd6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d8b04ad94bf37d8ede0e9b285d3d555137c1b3fe
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134546"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477666"
 ---
 # <a name="create-plannertask"></a>Создание объекта plannerTask
 
 Пространство имен: microsoft.graph
 
-Используйте этот API, чтобы создать объект **plannerTask**.
+Создание объекта **plannerTask**.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -35,18 +36,19 @@ POST /planner/tasks
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
+| Content-Type   | application/json. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
-Включите в текст запроса описание объекта [plannerTask](../resources/plannertask.md) в формате JSON. В качестве свойства **задачи Планировщика** planId необходимо указать идентификатор существующего объекта [plannerPlan](../resources/plannerplan.md).
+## <a name="request-body"></a>Текст запроса
+Включите в текст запроса описание объекта [plannerTask](../resources/plannertask.md) в формате JSON. В качестве свойства planId объекта **plannerTask** необходимо указать идентификатор существующего объекта [plannerPlan](../resources/plannerplan.md).
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа `201 Created` и объект [plannerTask](../resources/plannertask.md) в тексте ответа.
+В случае правильного выполнения этот метод возвращает код ответа `201 Created` и объект [plannerTask](../resources/plannertask.md) в тексте ответа.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403 и 404, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -88,9 +90,9 @@ Content-type: application/json
 
 ---
 
-Включите в текст запроса описание объекта [plannerTask](../resources/plannertask.md) в формате JSON.
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -4,13 +4,13 @@ description: Регистрация объекта governanceResource в PIM.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 88f379e283fcfb2cdee2fb44f4f33baa3eeb3c3b
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 22274dd73fe3c2a227bedb863d8d95fd6d38bc3b
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687111"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510304"
 ---
 # <a name="governanceresource-register"></a>governanceResource: регистрация
 
@@ -18,7 +18,7 @@ ms.locfileid: "60687111"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 Регистрация [объекта governanceResource](../resources/governanceresource.md) в управление привилегированными пользователями.
 
@@ -61,7 +61,7 @@ POST /privilegedAccess/azureResources/resources/register
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод **поддерживает** только `$select` параметры `$expand` [запроса oData и OData,](/graph/query-parameters) чтобы помочь настроить ответ.
+Этот метод **поддерживает** только параметры `$select` [запроса](/graph/query-parameters) `$expand` oData и OData, чтобы помочь настроить ответ.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -74,7 +74,7 @@ POST /privilegedAccess/azureResources/resources/register
 
 | Свойства | Тип | Описание |
 |:---------- |:---- |:----------- |
-| externalId | String | Внешний идентификатор ресурса, который будет зарегистрирован в PIM. При регистрации подписки идентификатором является идентификатор подписки, предварительно заранее задверяющий `/subscriptions/` . Например, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
+| externalId | String | Внешний идентификатор ресурса, который будет зарегистрирован в PIM. При регистрации подписки идентификатором является идентификатор подписки, предварительно заранее задверяющий `/subscriptions/`. Например, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
 
 ## <a name="response"></a>Отклик
 

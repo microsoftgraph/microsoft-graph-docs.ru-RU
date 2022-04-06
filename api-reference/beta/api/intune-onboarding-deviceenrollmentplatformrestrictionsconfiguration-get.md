@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09ba49f8278c2430aac48daa8b3293054a10e7e4
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: f07568552d7554c197847efe33062af85add274c
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60492428"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629780"
 ---
 # <a name="get-deviceenrollmentplatformrestrictionsconfiguration"></a>Get deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -46,7 +46,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4528
+Content-Length: 4133
 
 {
   "value": {
@@ -83,6 +83,7 @@ Content-Length: 4528
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "deviceEnrollmentConfigurationType": "limit",
     "iosRestriction": {
       "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
       "platformBlocked": true,
@@ -161,19 +162,6 @@ Content-Length: 4528
         "Blocked Skus value"
       ]
     },
-    "aospRestriction": {
-      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
-      "platformBlocked": true,
-      "personalDeviceEnrollmentBlocked": true,
-      "osMinimumVersion": "Os Minimum Version value",
-      "osMaximumVersion": "Os Maximum Version value",
-      "blockedManufacturers": [
-        "Blocked Manufacturers value"
-      ],
-      "blockedSkus": [
-        "Blocked Skus value"
-      ]
-    },
     "macRestriction": {
       "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
       "platformBlocked": true,
@@ -203,6 +191,7 @@ Content-Length: 4528
   }
 }
 ```
+
 
 
 

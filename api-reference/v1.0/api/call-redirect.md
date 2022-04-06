@@ -1,16 +1,16 @@
 ---
 title: 'вызов: перенаправление'
 description: Перенаправление входящего вызова.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 51530e58d72ff2809d53832138bd50ec16d551d5
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 74a2b2f6dd38799a2fe2ba7d8a9fbe8740becb9e
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62347312"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607819"
 ---
 # <a name="call-redirect"></a>вызов: перенаправление
 
@@ -28,7 +28,7 @@ ms.locfileid: "62347312"
 | :-------------- | :-------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                |
-| Приложение     | Calls.Initiate.All                                  |
+| Для приложений     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -409,7 +409,7 @@ Content-Type: application/json
 ### <a name="example-3-forward-a-call-to-a-pstn-number"></a>Пример 3. Переадмить вызов на номер PSTN
 
 Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
-> **Примечание.** Телефон ID — это номер телефона в формате E.164.
+> **Примечание.** Телефон является номером телефона в формате E.164.
 
 #### <a name="notification---incoming"></a>Уведомление — входящий
 <!-- {

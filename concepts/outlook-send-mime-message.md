@@ -4,12 +4,12 @@ description: Почтовые клиенты могут отправлять с�
 author: isvargasmsft
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: d32aee40b5336c2a84fcc83d42692bede89c6bc8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 80b669bfb757010d1842c8ba16513d2789e1e059
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071744"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477715"
 ---
 # <a name="send-messages-with-mime-content"></a>Отправка сообщений с содержимым MIME
 
@@ -38,7 +38,7 @@ API почты Outlook поддерживает следующие действ�
 | Создание черновика для ответа на сообщение | [createReply](/graph/api/message-createreply) |
 | Ответ всем | [replyAll](/graph/api/message-replyall) | 
 | Создание черновика для ответа всем | [createReplyAll](/graph/api-reference/api/message-createreplyall) |
-| Пересылка сообщения | [forward](/graph/api-reference/api/message-forward) |
+| Пересылка сообщения | [forward](/graph/api/message-forward) |
 | Создание черновика для пересылки сообщения | [createForward](/graph/api-reference/api/message-createforward) | 
 
 

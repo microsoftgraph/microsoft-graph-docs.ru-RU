@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cb5f4ef500a08ae3b6ec4ffff321a72520203724
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b883a3871567b8443397208a1f2fbc109d3b98d5
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114693"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672667"
 ---
 # <a name="assign-manager"></a>Назначение руководителя
 
@@ -25,7 +25,7 @@ ms.locfileid: "62114693"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -41,7 +41,7 @@ PUT /users/{id}/manager/$ref
 | Content-Type   | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажи JSON представление [объекта directoryObject,](../resources/directoryobject.md) [пользователя](../resources/user.md)или объекта контакта организации, который будет добавлен. [](../resources/orgcontact.md)
+В тексте запроса подайте объект JSON `@odata.id` и передайте параметру url-адрес для чтения объекта контакта [directoryObject](../resources/directoryobject.md)[, пользователя](../resources/user.md) или организации, который будет добавлен.[](../resources/orgcontact.md)
 
 ## <a name="response"></a>Отклик
 
@@ -49,7 +49,7 @@ PUT /users/{id}/manager/$ref
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+Ниже приведен пример запроса. Тело запроса — это объект JSON `@odata.id` с параметром и URL-адресом чтения [](../resources/user.md) для объекта пользователя, назначенного в качестве диспетчера.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -57,11 +57,11 @@ PUT /users/{id}/manager/$ref
   "name": "create_manager_from_group"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/users/{id}/manager/$ref
+PUT https://graph.microsoft.com/v1.0/users/10f17b99-784c-4526-8747-aec8a3159d6a/manager/$ref
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
+  "@odata.id": "https://graph.microsoft.com/v1.0/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

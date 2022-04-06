@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c9e1f065f3fdd21dcdb4d7cf067f0a7bf25c3d62
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 725b5685b46a5c61ab6f17378794afdd50fe8784
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096728"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670980"
 ---
 # <a name="get-a-directory-setting-template"></a>Получить шаблон настройки каталога
 
@@ -18,16 +18,16 @@ ms.locfileid: "62096728"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Шаблон настройки каталога представляет шаблон параметров, из которых можно создать параметры в клиенте. Эта операция позволяет получить свойства объекта **directorySettingTemplate,** включая доступные параметры и их по умолчанию.
+Шаблон настройки каталога представляет шаблон параметров, из которых можно создать параметры в клиенте. Эта операция позволяет получить свойства объекта **directorySettingTemplate** , включая доступные параметры и их по умолчанию.
 
-> **Примечание.** Бета-версия этого API применяется только к группам. Версия /v1.0 этого API переименована в *Get groupSettingTemplate.*
+> **Примечание**. Бета-версия этого API применяется только к группам. Версия этого API /v1.0 переименована в *Get groupSettingTemplate*.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -44,12 +44,12 @@ GET /directorySettingTemplates/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект directorySettingTemplate](../resources/directorysettingtemplate.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект directorySettingTemplate](../resources/directorysettingtemplate.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

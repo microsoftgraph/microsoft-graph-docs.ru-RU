@@ -2,15 +2,15 @@
 title: Тип ресурса groupLifecyclePolicy
 description: Представляет политику жизненного цикла для Microsoft 365 группы.
 ms.localizationpriority: medium
-author: Jordanndahl
+author: psaffaie
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 5c2e67fc0bf4b1347c40dcadae9a84208368d061
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 7affe2c7c6abe383eadffa51e577b9f7696c4b65
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335642"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588871"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>Тип ресурса groupLifecyclePolicy
 
@@ -22,24 +22,24 @@ ms.locfileid: "63335642"
 
 ## <a name="methods"></a>Методы
 
-| Метод | Возвращаемый тип | Описание |
-|:---------------|:--------|:----------|
-|[Get groupLifecyclePolicy](../api/grouplifecyclepolicy-get.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) |Чтение свойств и связей объекта groupLifecyclePolicy.|
-|[Перечисление groupLifecyclePolicies](../api/grouplifecyclepolicy-list.md) | Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md) | Перечисление всех объектов groupLifecyclePolicy. |
-|[Update groupLifecyclePolicy](../api/grouplifecyclepolicy-update.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) | Обновление объекта groupLifecyclePolicy. |
-|[Delete groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md) | None | Удаление объекта groupLifecyclePolicy. |
-|[Add a group to a groupLifecyclePolicy](../api/grouplifecyclepolicy-addgroup.md)|None| Добавление группы в политику жизненного цикла. |
-|[Remove a group from a groupLifecyclePolicy](../api/grouplifecyclepolicy-removegroup.md)|None| Удаление группы из политики жизненного цикла. |
-|[Обновление группы](../api/grouplifecyclepolicy-renewgroup.md)|Нет| Продление срока действия группы. |
+| Метод                                                                                   | Возвращаемый тип                                                | Описание                                                         |
+| :--------------------------------------------------------------------------------------- | :--------------------------------------------------------- | :------------------------------------------------------------------ |
+| [Get groupLifecyclePolicy](../api/grouplifecyclepolicy-get.md)                           | [groupLifecyclePolicy](grouplifecyclepolicy.md)            | Чтение свойств и связей объекта groupLifecyclePolicy. |
+| [Перечисление groupLifecyclePolicies](../api/grouplifecyclepolicy-list.md)                       | Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md) | Перечисление всех объектов groupLifecyclePolicy.                                |
+| [Update groupLifecyclePolicy](../api/grouplifecyclepolicy-update.md)                     | [groupLifecyclePolicy](grouplifecyclepolicy.md)            | Обновление объекта groupLifecyclePolicy.                               |
+| [Delete groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md)                     | None                                                       | Удаление объекта groupLifecyclePolicy.                               |
+| [Add a group to a groupLifecyclePolicy](../api/grouplifecyclepolicy-addgroup.md)         | None                                                       | Добавление группы в политику жизненного цикла.                                   |
+| [Remove a group from a groupLifecyclePolicy](../api/grouplifecyclepolicy-removegroup.md) | None                                                       | Удаление группы из политики жизненного цикла.                               |
+| [Обновление группы](../api/grouplifecyclepolicy-renewgroup.md)                               | Нет                                                       | Продление срока действия группы.                                    |
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Описание |
-|:---------------|:--------|:----------|
-|alternateNotificationEmails|String| Список адресов электронной почты для отправки уведомлений о группах без владельцев. Можно указать несколько адресов электронной почты, разделив их точкой с запятой. |
-|groupLifetimeInDays|Int32| Количество дней до истечения срока действия группы. После продления группа будет оставаться активной в течение указанного количества дней. |
-|id|Строка| Уникальный идентификатор политики. Только для чтения.|
-|managedGroupTypes|String| Тип группы, к которому применяется политика истечения срока действия. Возможные значения — **All**, **Selected** и **None**. |
+| Свойство                    | Тип   | Описание                                                                                                                                                |
+| :-------------------------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| alternateNotificationEmails | String | Список адресов электронной почты для отправки уведомлений о группах без владельцев. Можно указать несколько адресов электронной почты, разделив их точкой с запятой. |
+| groupLifetimeInDays         | Int32  | Количество дней до истечения срока действия группы. После продления группа будет оставаться активной в течение указанного количества дней.               |
+| id                          | Строка | Уникальный идентификатор политики. Только для чтения.                                                                                                               |
+| managedGroupTypes           | String | Тип группы, к которому применяется политика истечения срока действия. Возможные значения — **All**, **Selected** и **None**.                                             |
 
 ## <a name="relationships"></a>Связи
 
@@ -75,5 +75,3 @@ ms.locfileid: "63335642"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -2,15 +2,15 @@
 title: действие updateDeviceProperties
 description: Обновляет свойства на устройствах автопилота.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42ef88aea8090746fd8263f79935aa65f7d571e2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fafef3abd419a875e5b83b573c168b29a3635d7d
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59107871"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630265"
 ---
 # <a name="updatedeviceproperties-action"></a>действие updateDeviceProperties
 
@@ -57,7 +57,10 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |userPrincipalName|String|Пока не задокументировано.|
 |addressableUserName|String|Пока не задокументировано.|
 |groupTag|String|Пока не задокументировано.|
-|displayName|String|Пока не задокументировано.|
+|displayName|Строка|Пока не задокументировано.|
+|deviceAccountUpn|String|Пока не задокументировано.|
+|deviceAccountPassword|String|Пока не задокументировано.|
+|deviceFriendlyName|String|Пока не задокументировано.|
 
 
 
@@ -72,13 +75,16 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/updateDeviceProperties
 
 Content-type: application/json
-Content-length: 187
+Content-length: 354
 
 {
   "userPrincipalName": "User Principal Name value",
   "addressableUserName": "Addressable User Name value",
   "groupTag": "Group Tag value",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "deviceAccountUpn": "Device Account Upn value",
+  "deviceAccountPassword": "Device Account Password value",
+  "deviceFriendlyName": "Device Friendly Name value"
 }
 ```
 
@@ -87,6 +93,7 @@ Content-length: 187
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

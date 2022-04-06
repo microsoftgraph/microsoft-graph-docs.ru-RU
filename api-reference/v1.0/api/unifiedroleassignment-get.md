@@ -5,35 +5,55 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 89c777179b3315f81b7378f9a829c81019b70120
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5cd44344f9be5087627b3b4bdd335f121372c1f5
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62087540"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629027"
 ---
 # <a name="get-unifiedroleassignment"></a>Get unifiedRoleAssignment
 
 Пространство имен: microsoft.graph
 
-Извлечение свойств и связей объекта [unifiedRoleAssignment.](../resources/unifiedroleassignment.md)
+Извлечение свойств и связей объекта [unifiedRoleAssignment](../resources/unifiedroleassignment.md) .
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
+### <a name="for-the-directory-azure-ad-provider"></a>Для поставщика каталога (Azure AD)
+
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+
+### <a name="for-the-entitlement-management-provider"></a>Для поставщика прав на управление правами
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All  |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
+
+Назначение ролей для поставщика каталогов:
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /roleManagement/directory/roleAssignments/{id}
+```
+
+Получение назначения ролей для поставщика управления правами:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleAssignments/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -44,15 +64,15 @@ GET /roleManagement/directory/roleAssignments/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` ответа и запрашиваемого объекта [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -130,7 +150,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса с `$expand` параметром запроса.
+Ниже приводится пример запроса с параметром `$expand` запроса.
 
 
 
@@ -141,7 +161,7 @@ Content-type: application/json
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition,principal,directoryScope
+GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-csharp-snippets.md)]
@@ -206,18 +226,7 @@ Content-type: application/json
       "isEnabled": true,
       },
     "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "principal": {
-      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
-      "id": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d ",
-      "userPrincipalName": "alice@contoso.com",
-      "displayName": "Alice Smith"
-    },
-    "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "directoryScope": {
-      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#organization/$entity",
-      "id": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
-      "displayName": "Contoso_Seattle_Admins"
-    }
+    "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0d"
 }
 ```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

@@ -1,19 +1,24 @@
 ---
 title: 'directoryObject: getMemberGroups'
-description: 'Верни все группы, в которые входит указанный пользователь, группа, руководитель службы, организационный контакт, устройство или объект каталога. Это транзитивная функция.'
+description: Верни все группы, в которые входит указанный пользователь, группа, руководитель службы, организационный контакт, устройство или объект каталога. Это транзитивная функция.
 ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
+ms.openlocfilehash: 4d36471be49715a45f7771ec2cdf4d94b97b9268
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672373"
 ---
-
 # <a name="directoryobject-getmembergroups"></a>directoryObject: getMemberGroups
 
 Пространство имен: microsoft.graph
 
 Верни все групповые ID для [групп, в](../resources/user.md)[](../resources/directoryobject.md) которые входит указанный [пользователь, группа](../resources/group.md)[, руководитель](../resources/serviceprincipal.md) службы[, организационный](../resources/orgcontact.md) [контакт, устройство](../resources/device.md) или объект каталога. Это транзитивная функция.
 
-## <a name="permissions"></a>Разрешения:
+## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 
@@ -37,7 +42,7 @@ doc_type: apiPageType
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
 | Для приложений                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
 
@@ -45,7 +50,7 @@ doc_type: apiPageType
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -53,7 +58,7 @@ doc_type: apiPageType
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -61,7 +66,7 @@ doc_type: apiPageType
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -131,7 +136,7 @@ POST /devices/{id}/getMemberGroups
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Логическое| `true` чтобы указать, что должны возвращаться только группы безопасности, в которые входит объект; `false` чтобы указать, что все роли групп и каталогов, в которые входит объект, должны быть возвращены. `true` могут быть указаны только для пользователей или директоров служб для возврата групп с поддержкой безопасности. |
+|securityEnabledOnly|Boolean| `true` чтобы указать, что должны возвращаться только группы безопасности, в которые входит объект; `false` чтобы указать, что все роли групп и каталогов, в которые входит объект, должны быть возвращены. `true` могут быть указаны только для пользователей или директоров служб для возврата групп с поддержкой безопасности. |
 
 ## <a name="response"></a>Отклик
 

@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1549dd79f3b2d91a4add242ac8a1dbf96c5afb1d
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: aa3e387e53141d2de7511069deb1b664e86a1082
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224484"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671652"
 ---
 # <a name="remove-directory-role-member"></a>Удаление элемента роли каталога
 
@@ -20,7 +20,7 @@ ms.locfileid: "61224484"
 
 Удаление элемента из объекта directoryRole.
 
-С помощью этого API можно использовать ИД объекта и ИД шаблона **каталогаRole.** ID шаблона встроенной роли неменяем и его можно увидеть в описании роли на портале Azure. Подробные сведения см. [в материале Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+С помощью этого API можно использовать ИД объекта и ИД шаблона **каталогаRole** . ID шаблона встроенной роли неменяем и его можно увидеть в описании роли на портале Azure. Подробные сведения см. [в материале Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,9 +29,9 @@ ms.locfileid: "61224484"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | RoleManagement.ReadWrite.Directory |
+|Для приложений | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 
 | Имя       | Описание|
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -62,7 +62,7 @@ DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 
 #### <a name="request"></a>Запрос
 
-В этом примере замените значение id роли каталога и id-значение объекта пользователя или каталога, которое требуется отменить из роли `f8e85ed8-f66f-4058-b170-3efae8b9c6e5`  `bb165b45-151c-4cf6-9911-cd7188912848` каталога. 
+В этом примере `f8e85ed8-f66f-4058-b170-3efae8b9c6e5` замените значение **id** `bb165b45-151c-4cf6-9911-cd7188912848` роли каталога и **id-значение** объекта пользователя или каталога, которое требуется отменить из роли каталога.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -106,7 +106,7 @@ HTTP/1.1 204 No Content
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. Замените `9f06204d-73c1-4d4c-880a-6edb90606fd8` значение roleTemplateId и `bb165b45-151c-4cf6-9911-cd7188912848` **id-значением** пользователя объекта каталога.
+Ниже приведен пример запроса. Замените `9f06204d-73c1-4d4c-880a-6edb90606fd8` значение roleTemplateId `bb165b45-151c-4cf6-9911-cd7188912848` и **id-значением** пользователя объекта каталога.
 
 <!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
 

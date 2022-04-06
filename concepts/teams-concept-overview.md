@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 9397644c2f9bc8d4e2807fe8f351b158d9d14b21
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 64a314223a333b5ba945ed10426a5ea4bce83283
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071660"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477953"
 ---
 # <a name="microsoft-teams-api-overview"></a>Обзор API Microsoft Teams
 
@@ -24,7 +24,7 @@ ms.locfileid: "59071660"
 
 ### <a name="automate-team-lifecycles"></a>Автоматизация жизненных циклов команд
 
-Если у вас возникла новая бизнес-проблема, с помощью Microsoft Graph вы можете [создать виртуальную команду](/graph/api/team-put-teams), [добавить в нее нужных пользователей](/graph/api/group-post-members) и настроить [каналы](/graph/api/channel-post), [вкладки](/graph/api/teamstab-add) и [приложения](/graph/api/teamsappinstallation-add) для команды.
+Если у вас возникла новая бизнес-проблема, с помощью Microsoft Graph вы можете [создать виртуальную команду](/graph/api/team-put-teams), [добавить в нее нужных пользователей](/graph/api/group-post-members) и настроить [каналы](/graph/api/channel-post), [вкладки](/graph/teams-configuring-builtin-tabs) и [приложения](/graph/api/teamsappinstallation-add) для команды.
 Если вы хотите привлечь участников команды к обсуждению бизнес-проблемы, [добавьте новое событие](/graph/api/group-post-events) в календарь команды.
 
 ![Автоматизируйте жизненные циклы команды путем создания команды, добавления участников и владельцев, настройки параметров команды, добавления каналов, установки приложений, добавления вкладок и архивирования или удаления команды в нужное время.](images/teams-lifecycle.png)
@@ -41,7 +41,7 @@ ms.locfileid: "59071660"
 Разрешите пользователям создавать новые [команды](/graph/api/resources/team) и [каналы](/graph/api/resources/channel). 
 [Установите ](/graph/api/teamsappinstallation-add) ваше [приложение Teams](/microsoftteams/platform/#pivot=home&panel=home-all) в новых командах. 
 [Закрепите приложение на вкладке](/graph/api/teamstab-add) в новом канале. 
-[Отправляйте сообщения](/graph/api/channel-post-message) в канал со ссылкой, возвращающей на ваш веб-сайт.
+[Отправляйте сообщения](/graph/api/chatmessage-post) в канал со ссылкой, возвращающей на ваш веб-сайт.
 
 ### <a name="create-and-manage-multiple-teams-and-channels"></a>Создание нескольких команд и каналов и управление ими
 

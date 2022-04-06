@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4de19a0b51a13e8222139e4e30e44b1c0f00343e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c2fbb6b2f8c93c9e4f44c6e1877f3b98132d1f9c
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128582"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672716"
 ---
 # <a name="update-organization"></a>Обновление организации
 
 Пространство имен: microsoft.graph
 
-Обновите свойства организации, которая прошла проверку подлинности. В этом случае определяется как коллекция ровно одной записи, поэтому ее ID должен быть указан `organization` в запросе.   **ID** также известен как **tenantId** организации.
+Обновите свойства организации, которая прошла проверку подлинности. В этом случае определяется `organization` как коллекция ровно одной записи, поэтому ее **ID** должен быть указан в запросе.  **ID** также известен как **tenantId** организации.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "62128582"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Organization.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Organization.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Organization.ReadWrite.All |
+|Для приложений | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

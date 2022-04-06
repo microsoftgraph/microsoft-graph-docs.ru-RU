@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: b21c00081022bcae13601e5b0932ca5e99ed561f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3255984c6ef102f3dafd9d735d6cdd019767a49e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099311"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670217"
 ---
 # <a name="get-oauth2permissiongrant-a-delegated-permission-grant"></a>Получить oAuth2PermissionGrant (делегированная субсидия на разрешение)
 
@@ -18,7 +18,7 @@ ms.locfileid: "62099311"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств единого делегированного разрешения, представленного объектом [oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
+Извлечение свойств единого делегированного разрешения, представленного объектом [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) .
 
 **OAuth2PermissionGrant** представляет делегированную разрешений, которые были предоставлены для клиентского приложения для доступа к API от имени подписанного пользователя.
 
@@ -28,7 +28,7 @@ ms.locfileid: "62099311"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -50,13 +50,13 @@ GET /oauth2PermissionGrants/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

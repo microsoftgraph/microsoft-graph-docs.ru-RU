@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: Добавление элемента в пакет
-description: Добавление элемента в пакет driveItems
+description: Добавьте элемент в пакет driveItems.
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ae6b0f0aabb4c9aeacb0411b2cbf80568fd09b16
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 957fbf2fc1d2a6b95728d19a0f3f244d6f1f6fab
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395526"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63721657"
 ---
 # <a name="add-item-to-a-bundle"></a>Добавление элемента в пакет
 
@@ -43,23 +43,24 @@ POST /drive/bundles/{bundle-id}/children
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
+| Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
-Тело запроса включает идентификатор элемента, который должен быть добавлен в коллекцию детей пакета.
+В теле запроса поставляем JSON-представление [объекта driveItem][] .
 
 ## <a name="response"></a>Отклик
 
-В случае успешного ответа `204 No Content`.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`.
 
-Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Отклики ошибок][error-response].
+Сведения об ответах на ошибки см. в Graph ответы на ошибки [и типы ресурсов][error-response].
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Этот запрос добавит существующий элемент в указанный пакет.
+Ниже приводится пример запроса, который добавляет существующий элемент в указанный пакет.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -97,6 +98,8 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
 
 <!-- { "blockType": "response" } -->
 

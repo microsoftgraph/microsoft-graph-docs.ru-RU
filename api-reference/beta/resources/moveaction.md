@@ -3,15 +3,15 @@ author: daspek
 description: Наличие ресурса MoveAction в ресурсе itemActivity указывает, что в результате выполнения действия элемент был перемещен.
 ms.date: 09/14/2017
 title: MoveAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 547a49e17a74be43500a9cf52aaa3a375272b810
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d5da0b6502752f25ad59b9d19a8a4a366d473ec8
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021289"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722659"
 ---
 # <a name="moveaction-resource-type"></a>Тип ресурса MoveAction
 
@@ -28,22 +28,22 @@ ms.locfileid: "48021289"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.moveAction"
+  "@type&quot;: &quot;microsoft.graph.moveAction"
 }-->
 
 ```json
 {
   "from": "string",
-  "to": "string"
+  "to&quot;: &quot;string"
 }
 ```
 
 ## <a name="properties"></a>Свойства
 
-| Имя свойства | Тип   | Описание
-|:--------------|:-------|:----------------------------------------------------
-| from          | string | Имя расположения, из которого был перемещен элемент.
-| to            | string | Имя расположения, в которое был перемещен элемент.
+| Свойство | Тип   | Описание                                       |
+| :------- | :----- | :------------------------------------------------ |
+| from     | string | Имя расположения, из которого был перемещен элемент. |
+| to       | string | Имя расположения, в которое был перемещен элемент.   |
 
 ## <a name="remarks"></a>Замечания
 
@@ -59,5 +59,3 @@ ms.locfileid: "48021289"
   "suppressions": []
 }
 -->
-
-

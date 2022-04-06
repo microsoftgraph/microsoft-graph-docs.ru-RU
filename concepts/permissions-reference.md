@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: badc1ef730ee517aa92a629a320d041236db8664
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 856dbe141f03ed88de587ae3fa6142b7ddc6751b
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397913"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510066"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -229,7 +229,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 ### <a name="example-usage"></a>Примеры использования
 
 #### <a name="delegated"></a>Делегированное
-* _AppCatalog.ReadWrite.All_. [Составление списка всех приложений в каталоге](/graph/api/teamsapp-list?view=graph-rest-beta&preserve-view=true) (`GET /beta/appCatalogs/teamsApps`)
+* _AppCatalog.ReadWrite.All_. [Составление списка всех приложений в каталоге](/graph/api/appcatalogs-list-teamsapps) (`GET /beta/appCatalogs/teamsApps`)
 * _AppCatalog.ReadWrite.All_. [Публикация приложения](/graph/api/teamsapp-publish?view=graph-rest-beta&preserve-view=true) (`POST /beta/appCatalogs/teamsApps`)
 * _AppCatalog.ReadWrite.All_. [Обновление опубликованного приложения](/graph/api/teamsapp-update?view=graph-rest-beta&preserve-view=true) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
 * _AppCatalog.ReadWrite.All_. [Удаление опубликованного приложения](/graph/api/teamsapp-delete?view=graph-rest-beta&preserve-view=true) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
@@ -276,7 +276,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * _Application.Read.All_. Составление списка всех приложений (`GET /v1.0/applications`)
 * _Application.ReadWrite.All_. Обновление субъекта-службы (`PATCH /v1.0/servicePrincipals/{id}`)
 
-#### <a name="application"></a>Для приложения
+#### <a name="application"></a>Для приложений
 
 * _Application.Read.All_. Составление списка всех приложений (`GET /v1.0/applications`)
 * _Application.ReadWrite.All_. Удаление субъект-службы (`DELETE /v1.0/servicePrincipals/{id}`)
@@ -503,7 +503,6 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 |   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_ChannelMessage.Delete_ (закрытая ознакомительная версия)|Удаление сообщений канала пользователя |Приложение сможет удалять сообщения канала в Microsoft Teams от имени вошедшего в систему пользователя. |Да | Нет |
 |_ChannelMessage.Edit_ (закрытая ознакомительная версия)|Редактирование сообщений канала пользователя |Приложение сможет редактировать сообщения канала в Microsoft Teams от имени вошедшего в систему пользователя. |Да | Нет |
 |_ChannelMessage.Read.All_ |Чтение сообщений канала пользователя  |Приложение сможет читать сообщения канала в Microsoft Teams от имени вошедшего в систему пользователя. |Да | Нет |
 |_ChannelMessage.Send_ |Отправка сообщений канала |Позволяет приложению отправлять сообщения в Microsoft Teams от имени вошедшего в систему пользователя. |Нет| Нет |
@@ -1345,7 +1344,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 | _Notes.ReadWrite.All_ |    Чтение и запись всех записных книжек OneNote | Позволяет приложению считывать и редактировать все записные книжки OneNote в организации, а также предоставлять к ним доступ в случаях, когда вход пользователя не предусмотрен.| Да |
 
 
-### <a name="remarks"></a>Заметки
+### <a name="remarks"></a>Примечания
 Разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ действительны только для рабочих и учебных учетных записей. Все остальные разрешения поддерживаются как для учетных записей Майкрософт, так и для рабочих или учебных учетных записей.
 
 С помощью разрешения _Notes.Create_ приложение может просматривать иерархию записных книжек OneNote вошедшего пользователя и создавать содержимое OneNote (записные книжки, группы разделов, разделы, страницы и т. д.).
@@ -1355,7 +1354,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 В случае рабочих и учебных учетных записей разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ позволяют приложению получать доступ к содержимому OneNote других пользователей, которое доступно вошедшему пользователю в организации.
 
 ### <a name="example-usage"></a>Примеры использования
-#### <a name="delegated"></a>Делегированные разрешения
+#### <a name="delegated"></a>Delegated
 
 * _Notes.Create_. Создание записных книжек для вошедшего пользователя (`POST /me/onenote/notebooks`).
 * _Notes.Read_. Чтение записных книжек вошедшего пользователя (`GET /me/onenote/notebooks`).

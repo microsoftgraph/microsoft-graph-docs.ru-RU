@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 06d3e2c1cb6163670442750572a8b61214996a35
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c243bdefab340678b9f3317b87cc3ba0bffce77a
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131270"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671743"
 ---
 # <a name="list-group-memberof"></a>Перечисление group memberOf
 
@@ -28,7 +28,7 @@ ms.locfileid: "62131270"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+| Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложения | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 

@@ -5,12 +5,12 @@ description: Содержит данные, которые проверяют з
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: a2c5b464b7f08fcd1de078b94b5ca1b039b6a6f9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 41136c74347e0acdfe41b5b8fd9a5ddc1501a08b
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062791"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63757852"
 ---
 # <a name="columnvalidation-resource-type"></a>тип ресурса columnValidation
 
@@ -19,18 +19,18 @@ ms.locfileid: "59062791"
 Представляет свойства, которые проверяют значения столбцов.
 ## <a name="properties"></a>Свойства
 
-| Имя свойства  | Тип    | Описание|
+| Свойство  | Тип    | Описание|
 |:---------------|:--------|:--------------------------------------------------|
-| **formula**    | string  | Формула для проверки значения столбца. Примеры см. в [примерах распространенных формул в списках.](https://support.microsoft.com/office/examples-of-common-formulas-in-sharepoint-lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3)|
+| **formula**    | string  | Формула для проверки значения столбца. Примеры см. в [примере общих формул в списках](https://support.microsoft.com/office/examples-of-common-formulas-in-sharepoint-lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3).|
 | **описания**    | Collection(microsoft.graph.displayNameLocalization)  | Локализованные сообщения, объясняя, что необходимо для того, чтобы значение этого столбца считалось допустимым. В случае сбой проверки пользователю будет предложено это сообщение. |
-| **defaultLanguage**    | string  | Языковой тег BCP 47 по умолчанию для описания.|
+| **defaultLanguage**    | String  | Языковой тег BCP 47 по умолчанию для описания.|
 
 В формулах SharePoint используется синтаксис, похожий на синтаксис формул в Excel.
-Дополнительные сведения см. [в примере распространенных формул в SharePoint списках.][SPFormulas]
+Дополнительные сведения см. [в примере общих формул в SharePoint Списки][SPFormulas].
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
-Ниже приводится представление JSON ресурса **columnValidation.**
+Ниже приводится представление JSON ресурса **columnValidation** .
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.columnValidation"} -->
 
 ```json

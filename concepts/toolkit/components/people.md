@@ -2,13 +2,13 @@
 title: Компонент People в Microsoft Graph Toolkit
 description: Вы можете использовать веб-компонент `mgt-people`, чтобы отображать группу людей или контактов с помощью фотографий и инициалов.
 ms.localizationpriority: medium
-author: nmetulev
-ms.openlocfilehash: cead6ba4fd4a3604176105a19de5ba1e1293c246
-ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
+author: sebastienlevert
+ms.openlocfilehash: 43bc1016a462a1463437f3090361dfdd997c860c
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63500967"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587107"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Компонент People в Microsoft Graph Toolkit
 

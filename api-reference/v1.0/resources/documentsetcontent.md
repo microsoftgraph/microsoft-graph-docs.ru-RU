@@ -5,12 +5,12 @@ description: Ресурс documentSetContent содержит метаданны
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 741047ab90badd16e4f7dea61c92ca8d952ee978
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5894c31c990f2cd55d5646c44e569c310d599e39
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072542"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63757642"
 ---
 # <a name="documentsetcontent-resource-type"></a>тип ресурса documentSetContent
 
@@ -19,15 +19,15 @@ ms.locfileid: "59072542"
 Представляет содержимое документа по умолчанию, установленного в SharePoint.
 ## <a name="properties"></a>Свойства
 
-| Имя свойства  | Тип    | Описание|
+| Свойство  | Тип    | Описание|
 |:---------------|:--------|:--------------------------------------------------|
 | contentType    | microsoft.graph.contentTypeInfo | Сведения о типе контента файла. |
-| fileName      | string  | Имя файла в папке ресурсов, который должен быть добавлен в качестве контента по умолчанию или шаблона в наборе документов.|
-| folderName         | строка  | Имя папки, в которой будет размещен файл при создания нового набора документов в библиотеке.|
+| fileName      | String  | Имя файла в папке ресурсов, который должен быть добавлен в качестве контента по умолчанию или шаблона в наборе документов.|
+| folderName         | String  | Имя папки, в которой будет размещен файл при создания нового набора документов в библиотеке.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
-Вот представление JSON ресурса **documentSetContent.**
+Вот представление JSON ресурса **documentSetContent** .
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.documentSetContent" } -->
 
 ```json

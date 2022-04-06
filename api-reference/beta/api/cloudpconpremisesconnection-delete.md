@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: d0461962933e62edd82462ae0fe7e5ccd93e7161
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: a68f11b4d4db4a139f9a82abd71ea8445464fbf6
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62290709"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587551"
 ---
 # <a name="delete-cloudpconpremisesconnection"></a>Удаление cloudPcOnPremisesConnection
 
@@ -20,9 +20,11 @@ ms.locfileid: "62290709"
 
 Удаление определенного [объекта cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
 
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
+
 При удалении подключения разрешения на службу удаляются из указанных ресурсов Azure.
 
-Локальное подключение невозможно удалить после того, как оно пройдет проверку состояния, которая указывается свойством `healthCheckStatus` .
+Нельзя удалить сетевое подключение Azure после того, как оно пройдет проверку состояния, которая указывается свойством `healthCheckStatus` .
 
 Нельзя удалить подключение, если оно используется, как указано в свойстве `inUse` .
 

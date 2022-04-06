@@ -1,16 +1,16 @@
 ---
 title: 'вызов: changeScreenSharingRole'
 description: Разрешить приложениям обмениваться контентом экрана с участниками группового вызова.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 99bd1a271a997260cf40af5ff79994d862e4dea3
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: ffef9fbda0725d677d393d01cf80e5f584bded6d
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62342897"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607955"
 ---
 # <a name="call-changescreensharingrole"></a>вызов: changeScreenSharingRole
 
@@ -27,7 +27,7 @@ ms.locfileid: "62342897"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | Calls.AccessMedia.All                       |
+| Для приложений                            | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

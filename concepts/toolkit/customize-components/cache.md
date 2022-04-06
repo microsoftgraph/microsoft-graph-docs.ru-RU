@@ -2,13 +2,13 @@
 title: Кэширование Microsoft Graph Toolkit
 description: В этой статье объясняется, как работает кэширование и как настроить параметры для разработчиков
 ms.localizationpriority: medium
-author: adchau
-ms.openlocfilehash: 79ac43d0a0cc1a09ded730a9957fd1735f7790de
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 88b3ed3c8a30f0fcfd79da3cd094420d4534e619
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129644"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589256"
 ---
 # <a name="microsoft-graph-toolkit-caching"></a>Кэширование Microsoft Graph Toolkit
 
@@ -17,7 +17,7 @@ Microsoft Graph Toolkit поддерживает кэширование выбр
 > [!TIP]
 > Дополнительные сведения о том, какие объекты кэшются каждым компонентом, см. в документации компонента.
 
-Базы данных, созданные mgt для кэшинга, префиксизются `mgt-` с . Данные для каждой сущности хранятся в отдельном хранилище объектов. Чтобы проверить кэш, используйте вкладку **Application** в панели разработчиков (средства F12) — в разделе служба хранилища нажмите на вкладку **IndexedDB.**  
+Базы данных, созданные mgt для кэшинга, префиксизются `mgt-`с . Данные для каждой сущности хранятся в отдельном хранилище объектов. Чтобы проверить кэш, используйте вкладку **Application** в панели разработчиков (средства F12) — в разделе служба хранилища  нажмите на вкладку **IndexedDB**. 
 
 ![средства разработчика indexedDB](../images/indexedDBpanel.png)
 

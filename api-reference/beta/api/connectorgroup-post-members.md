@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: bb61597205e2c5740221e971765c1b46f3199fe8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5b41af5d1799d526f7110f05163786c4dd3f8605
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61024947"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671134"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Добавление соединителя для connectorGroup
 
@@ -18,13 +18,13 @@ ms.locfileid: "61024947"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте [соединителю](../resources/connector.md) в [соединителюGroup.](../resources/connectorgroup.md)
+Добавьте [соединителю](../resources/connector.md) в [соединителюGroup](../resources/connectorgroup.md).
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается.  |
 
@@ -37,15 +37,15 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/members
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носителер. Обязательный параметр.|
+| Авторизация  | Носителер. Обязательный параметр.|
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON ссылки на [объект соединитель.](../resources/connector.md)
+В теле запроса поставляем представление JSON ссылки на [объект соединитель](../resources/connector.md) .
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `201 Created` объект [соединители](../resources/connector.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` отклика и объект [соединители](../resources/connector.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос

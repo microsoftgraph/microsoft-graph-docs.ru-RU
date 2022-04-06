@@ -1,16 +1,16 @@
 ---
 title: 'rbacApplication: roleScheduleInstances'
 description: Извлечение обеих ролейAssignmentScheduleInstances и roleEligibilityScheduleInstances.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 7928b6a590922b5412f8215660b2f78b6077bb49
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 1539d4078639d5d7d16a43c70324e7d339b995d0
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694990"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509863"
 ---
 # <a name="rbacapplication-rolescheduleinstances"></a>rbacApplication: roleScheduleInstances
 Пространство имен: microsoft.graph
@@ -44,8 +44,8 @@ GET /roleManagement/directory/roleScheduleInstances
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|directoryScopeId|String|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Используйте **appScopeId,** чтобы ограничить область только приложения. |
-|appScopeId|String|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId,** чтобы ограничить область для определенных объектов каталогов, например административных единиц. |
+|directoryScopeId|Строка|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Используйте **appScopeId,** чтобы ограничить область только приложения. |
+|appScopeId|String|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId** , чтобы ограничить область для определенных объектов каталогов, например административных единиц. |
 |principalId|String|Идентификатор основного, к которому относятся графики. |
 |roleDefinitionId|String|Идентификатор единойRoleDefinition для назначения. Только для чтения.|
 
@@ -59,7 +59,7 @@ GET /roleManagement/directory/roleScheduleInstances
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [унифицированную коллекциюRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и [унифицированную коллекциюRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

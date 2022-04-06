@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 981c6d46a31c8680ffe692747399de8d2d62ab81
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: ad4982106849d7b187c2ee1bdc60229c70d101e0
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60928398"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672226"
 ---
 # <a name="get-a-member"></a>Получение члена
 
@@ -24,7 +24,7 @@ ms.locfileid: "60928398"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -43,7 +43,7 @@ GET /directory/administrativeUnits/{id}/members/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и объект пользователя или `200 OK` группы в тексте ответа. [](../resources/user.md) [](../resources/group.md)
+В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект пользователя](../resources/user.md) [или группы в](../resources/group.md) тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

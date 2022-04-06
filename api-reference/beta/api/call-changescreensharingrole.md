@@ -1,16 +1,16 @@
 ---
 title: 'вызов: changeScreenSharingRole'
 description: Разрешить приложениям обмениваться контентом экрана с участниками группового вызова.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 360ceab522ca22d95fb58ae4d691e54800ad0a84
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 2595beeb9fa00c15853a1dbd776f14d05632694a
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345723"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607437"
 ---
 # <a name="call-changescreensharingrole"></a>вызов: changeScreenSharingRole
 
@@ -29,7 +29,7 @@ ms.locfileid: "62345723"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | Calls.AccessMedia.All                       |
+| Для приложений                            | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +50,7 @@ POST /communications/calls/{id}/changeScreenSharingRole
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|role|String|Возможные значения: "зритель", "sharer"|
+|role|Строка|Возможные значения: "зритель", "sharer"|
 
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код `202 Accepted` ответа, и все участники получат обновление реестра.

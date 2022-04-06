@@ -1,25 +1,25 @@
 ---
 author: psampath
-description: Ресурс storagePlanInformation предоставляет сведения о планах квот хранилища диска.
+description: Ресурс storagePlanInformation предоставляет сведения о планах квот на хранение диска.
 ms.date: 06/20/2018
 title: StoragePlanInformation
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 4c115276631c67cb796fd06c582dd490d4c59b20
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db5707686f6104d8d9004696094c0bcc22066f5a
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019476"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723272"
 ---
-# <a name="storageplaninformation-resource-type"></a>Тип ресурса storagePlanInformation
+# <a name="storageplaninformation-resource-type"></a>тип ресурса storagePlanInformation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс **storagePlanInformation** предоставляет сведения о планах квот хранилища диска.
+Ресурс **storagePlanInformation** предоставляет сведения о планах квот на хранение диска.
 
 ### <a name="json-representation"></a>Представление JSON
 
@@ -35,12 +35,12 @@ ms.locfileid: "48019476"
 }
 
 ```
+
 ## <a name="properties"></a>Свойства
 
-| Имя свойства     | Тип      | Описание                                                             |
-|:------------------|:----------|:----------------------------------------------------------------------- |
-| упградеаваилабле  | Boolean   | Указывает, доступны ли планы квоты хранилища выше. Только для чтения. |
-
+| Свойство         | Тип    | Описание                                                             |
+| :--------------- | :------ | :---------------------------------------------------------------------- |
+| upgradeAvailable | Boolean | Указывает, имеются ли более высокие планы квоты на хранение. Только для чтения. |
 
 <!--
 {
@@ -52,6 +52,3 @@ ms.locfileid: "48019476"
   "suppressions": []
 }
 -->
-
-
-

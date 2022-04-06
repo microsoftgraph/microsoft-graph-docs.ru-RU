@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6061a60d475ffa19d0512577669cbc748b096848
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: d115da060fc5204248019a10dd14526608e602fc
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629066"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671302"
 ---
 # <a name="list-ownedobjects"></a>Список ownedObjects
 
@@ -31,7 +31,6 @@ ms.locfileid: "64629066"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/ownedObjects
 GET /users/{id | userPrincipalName}/ownedObjects
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов

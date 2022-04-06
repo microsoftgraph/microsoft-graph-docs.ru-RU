@@ -2,15 +2,15 @@
 title: Privileged Identity Management — ресурсы Azure
 description: Интерфейсы API службы Azure AD Privileged Identity Management для управления ресурсами Azure.
 ms.localizationpriority: high
-author: japere
+author: carolinetempleton
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 2441f547fdfbe5777d021b58d84cebe6bb5632f8
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: ec3c67b8ffcb35a223f1491a40bab55e92563c28
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509527"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "64477932"
 ---
 # <a name="privileged-identity-management---azure-resources"></a>Privileged Identity Management — ресурсы Azure
 

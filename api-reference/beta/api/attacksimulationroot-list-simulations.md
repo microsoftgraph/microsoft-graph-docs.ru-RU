@@ -1,23 +1,23 @@
 ---
 title: Перечисление симуляций
-description: Список имитаций атак клиента.
+description: Получите список кампаний имитации атак для клиента.
 author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: d0fb681c1f1d1e6eb1b4eff9eaf293e6c142e8b9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 24c73af15cdffa97007caa367a37a780f3cdbb4f
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114315"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758034"
 ---
 # <a name="list-simulations"></a>Перечисление симуляций
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список имитаций атак клиента.
+Получите список кампаний имитации атак для клиента.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "62114315"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | SecurityEvents.Read.All                     |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | SecurityEvents.Read.All                     |
+| Для приложений                            | SecurityEvents.Read.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,9 +39,9 @@ GET /security/attackSimulation/simulations
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ: `$count` , , , , , `$filter` `$orderby` `$skiptoken` `$top` `$select` .
+Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ: `$count`, `$filter`, `$orderby`, `$skiptoken`, , `$top`. `$select`
 
-Поддержка следующих свойств `$filter` `$orderby` и: **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **состояние**.
+Поддержка следующих `$filter` `$orderby`свойств и: **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **status**.
 
 Используйте `@odata.nextLink` для pagination.
 
@@ -67,18 +67,16 @@ GET /security/attackSimulation/simulations?$select={property}
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` моделирования в тексте [](../resources/simulation.md) отклика.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию [объектов моделирования](../resources/simulation.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_simulation"
@@ -87,32 +85,6 @@ GET /security/attackSimulation/simulations?$select={property}
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-simulation-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-simulation-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-simulation-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-simulation-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-simulation-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-simulation-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 
 ### <a name="response"></a>Отклик
@@ -150,15 +122,9 @@ Content-Type: application/json
       },
       "launchDateTime": "2021-01-01T02:01:01.01Z",
       "completionDateTime": "2021-01-07T01:01:01.01Z",
-      "includeAllAccountTargets": false,
-      "enableRegionTimezoneDelivery": false,
       "isAutomated": false,
-      "cleanupArtifacts": false,
-      "payloadSource": "global",
-      "payloadDeliveryPlatform": "email",
-      "trainingAssignmentPreference": "manual",
-      "trainingContentPreference": "microsoft",
-      "trainingDueDateTime": "2021-01-31T01:01:01.01Z"
+      "automationId": "f1b13829-3829-f1b1-2938-b1f12938b1ab",
+      "payloadDeliveryPlatform": "email"
     }
   ]
 }

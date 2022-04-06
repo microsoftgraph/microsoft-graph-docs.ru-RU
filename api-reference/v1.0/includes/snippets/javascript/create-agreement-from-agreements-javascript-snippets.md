@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 7a4dfd701691a3436c622f870acf1fef2b8dca899569538d724fbb65ea1d02b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fddf1573e2fff8967e9785c41021d136733c8399
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57369674"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528798"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const agreement = {
-  displayName: 'MSGraph Sample',
+  displayName: 'Contoso ToU for guest users',
   isViewingBeforeAcceptanceRequired: true,
   files: [
     {
@@ -24,7 +24,7 @@ const agreement = {
       language: 'en',
       isDefault: true,
       fileData: {
-        data: 'SGVsbG8gd29ybGQ='
+        data: 'SGVsbG8gd29ybGQ=//truncated-binary'
       }
     }
   ]

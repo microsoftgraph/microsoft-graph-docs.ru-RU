@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Ресурс listItemVersion представляет предыдущую версию ресурса ListItem.
 ms.date: 09/17/2017
 title: ListItemVersion
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: de11928d2ac6f0f78e2dabbd34ebb25d927c5aa9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3daffc15f394139301d205c08b02b7a1a57f9d5a
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055241"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722919"
 ---
 # <a name="listitemversion-resource-type"></a>Тип ресурса listItemVersion
 
@@ -25,16 +25,15 @@ ms.locfileid: "48055241"
 
 Ниже перечислены задачи, доступные для ресурсов listItemVersion.
 
-|            Стандартная задача             |         Метод HTTP         |
-| :--------------------------------- | :-------------------------- |
-| [Список версий][version-list]      | `GET /sites/{site-id}/items/{item-id}/versions`  |
-| [Получение версии][version-get]         | `GET /sites/{site-id}/items/versions/{version-id}`     |
+| Стандартная задача                        | Метод HTTP                                                 |
+| :--------------------------------- | :---------------------------------------------------------- |
+| [Список версий][version-list]      | `GET /sites/{site-id}/items/{item-id}/versions`             |
+| [Получение версии][version-get]         | `GET /sites/{site-id}/items/versions/{version-id}`          |
 | [Восстановление версии][version-restore] | `POST /sites/{site-id}/items/versions/{version-id}/restore` |
 
 [version-list]: ../api/listitem-list-versions.md
 [version-get]: ../api/listitemversion-get.md
 [version-restore]: ../api/listitemversion-restore.md
-
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -53,22 +52,20 @@ ms.locfileid: "48055241"
 
 ## <a name="properties"></a>Свойства
 
-|      Имя свойства       |                         Тип                         |                               Описание                               |
+| Свойство                 | Тип                                                 | Описание                                                             |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | Идентификатор версии. Только для чтения.                                       |
+| **id**                   | строка                                               | Идентификатор версии. Только для чтения.                                       |
 | **lastModifiedBy**;       | [IdentitySet](../resources/identityset.md)           | Удостоверение пользователя, который последним изменил версию. Только для чтения.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Дата и время последнего изменения версии. Только для чтения.                 |
 | **published**            | [PublicationFacet](../resources/publicationfacet.md) | Указывает состояние публикации конкретной версии. Только для чтения. |
 
-
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 В таблице ниже определены связи между ресурсом **driveItemVersion** и другими ресурсами.
 
-| Имя связи |                      Тип                      |                               Описание                                |
-| :---------------- | :--------------------------------------------- | :----------------------------------------------------------------------- |
-| **fields**        | [FieldValueSet](../resources/fieldvalueset.md) | Коллекция полей и значений для этой версии элемента списка. |
-
+| Связь | Тип                                           | Описание                                                              |
+| :----------- | :--------------------------------------------- | :----------------------------------------------------------------------- |
+| **fields**   | [FieldValueSet](../resources/fieldvalueset.md) | Коллекция полей и значений для этой версии элемента списка. |
 
 <!--
 {
@@ -80,5 +77,3 @@ ms.locfileid: "48055241"
   "suppressions": []
 }
 -->
-
-

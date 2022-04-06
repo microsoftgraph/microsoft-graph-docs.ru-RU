@@ -1,24 +1,24 @@
 ---
-title: Списки governanceRoleAssignments
+title: Перечисление governanceRoleAssignments
 description: Извлечение коллекции governanceRoleAssignments.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 00674a51ac95f1b40c6e4b12e2fbe72877279d86
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 146839ce0341633d1b8b5390e06cea11c6160084
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60685536"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510494"
 ---
-# <a name="list-governanceroleassignments"></a>Списки governanceRoleAssignments
+# <a name="list-governanceroleassignments"></a>Перечисление governanceRoleAssignments
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 Извлечение коллекции [governanceRoleAssignments](../resources/governanceroleassignment.md).
 
@@ -31,7 +31,7 @@ ms.locfileid: "60685536"
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application | PrivilegedAccess.Read.AzureResources |
+| Приложение | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -39,7 +39,7 @@ ms.locfileid: "60685536"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application | PrivilegedAccess.Read.AzureAD |
+| Приложение | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
@@ -47,7 +47,7 @@ ms.locfileid: "60685536"
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application | PrivilegedAccess.Read.AzureADGroup |
+| Приложение | PrivilegedAccess.Read.AzureADGroup |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -59,7 +59,7 @@ ms.locfileid: "60685536"
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments
 GET /privilegedAccess/azureResources/roleAssignments?$filter=resourceId+eq+'{resourceId}'
 ```
-Перечислить коллекцию [моих произведений governanceRoleAssignments.](../resources/governanceroleassignment.md)
+Перечислить коллекцию [моих произведений governanceRoleAssignments](../resources/governanceroleassignment.md) .
 ```http
 GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId}'
 ```
@@ -75,7 +75,7 @@ GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [governanceRoleAssignment](../resources/governanceroleassignment.md) в тексте ответа.
+В случае успешного выполнения этот `200 OK` метод возвращает код ответа и коллекцию объектов [governanceRoleAssignment](../resources/governanceroleassignment.md) в тексте ответа.
 ## <a name="example"></a>Пример
 
 В этом примере показано, как получить назначения ролей в подписке Wingtip Toys - Prod.

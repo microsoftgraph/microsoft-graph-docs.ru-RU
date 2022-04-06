@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 95ea0d1c83309089cef715569288f4676db6fef0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1de55aca6e8a43fd594a616c14deb38747a3a83d
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980278"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671337"
 ---
 # <a name="update-privilegedrolesettings"></a>Обновление privilegedRoleSettings
 
@@ -27,7 +27,7 @@ ms.locfileid: "60980278"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -43,7 +43,7 @@ PUT /privilegedRoles/{id}/settings
 | Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [privilegedRoleSettings.](../resources/privilegedrolesettings.md)
+В теле запроса поставляем представление JSON объекта [privilegedRoleSettings](../resources/privilegedrolesettings.md) .
 
 В следующей таблице перечислены свойства, которые можно предоставить при обновлении параметра роли.
 
@@ -51,19 +51,19 @@ PUT /privilegedRoles/{id}/settings
 |:---------------|:--------|:----------|
 |elevationDuration|duration|Продолжительность активации роли. Обязательный.|
 |id|string|Уникальный идентификатор параметров ролей. Только для чтения. Обязательный.|
-|isMfaOnElevationConfigurable|логический|**верно,** если mfaOnElevation настраивается. **false,** если mfaOnElevation не настраивается. Обязательный.|
+|isMfaOnElevationConfigurable|boolean|**верно** , если mfaOnElevation настраивается. **false** , если mfaOnElevation не настраивается. Обязательный.|
 |lastGlobalAdmin|Boolean|Только для внутреннего использования.|
 |maxElavationDuration|duration|Максимальная продолжительность для активированной роли. Обязательный.|
-|mfaOnElevation|Boolean|**значение true,** если для активации роли требуется MFA. **false,** если MFA не требуется для активации роли. Обязательный.|
+|mfaOnElevation|Boolean|**значение true** , если для активации роли требуется MFA. **false** , если MFA не требуется для активации роли. Обязательный.|
 |minElevationDuration|duration|Минимальная продолжительность для активированной роли. Обязательный.|
-|notificationToUserOnElevation|Boolean|**значение true,** если отправить уведомление конечному пользователю при активации роли. **false,** если не отправлять уведомления при активации роли. Обязательный.|
-|ticketingInfoOnElevation|Boolean|**значение true,** если при активации роли требуется информация о билетах. **false,** если сведения о билетах не требуются при активации роли. Обязательный.|
-|approvalOnElevation|Boolean|**значение true,** если требуется утверждение при активации роли. **false,** если утверждение не требуется при активации роли. Обязательный.|
+|notificationToUserOnElevation|Boolean|**значение true** , если отправить уведомление конечному пользователю при активации роли. **false** , если не отправлять уведомления при активации роли. Обязательный.|
+|ticketingInfoOnElevation|Boolean|**значение true** , если при активации роли требуется информация о билетах. **false** , если сведения о билетах не требуются при активации роли. Обязательный.|
+|approvalOnElevation|Boolean|**значение true** , если требуется утверждение при активации роли. **false** , если утверждение не требуется при активации роли. Обязательный.|
 |approverIds|string collection|Список ID утверждения, если требуется утверждение для активации.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`.
 
 Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
 ## <a name="example"></a>Пример

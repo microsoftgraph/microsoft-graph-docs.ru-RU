@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: e04b49fedf761ef3715d152fdc2a07a3af139bc3
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: e023b40cd5c23c6b6f34d18c51eb7681354587b1
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695414"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723012"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>тип ресурса governanceRoleAssignmentRequestStatus
 
@@ -20,13 +20,13 @@ ms.locfileid: "60695414"
 
 Представляет состояние [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
-
 ## <a name="properties"></a>Свойства
-Свойство       | Тип |Описание|
-|:----|:-------------|:-----|
-|status |String| Состояние запроса на назначение ролей. Значение может быть `InProgress` или `Closed` .|
-|subStatus |String| Состояние подгруппы запроса назначения ролей. Значения могут быть `Accepted` `PendingEvaluation` , , , , , `Granted` , , , , , , `Denied` `PendingProvisioning` , , `Provisioned` `PendingRevocation` и `Revoked` `Canceled` `Failed` `PendingApprovalProvisioning` `PendingApproval` `FailedAsResourceIsLocked` `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` `ProvisioningStarted` .|
-|statusDetails       |Коллекция [keyValue](../resources/keyvalue.md)| Сведения о состоянии запроса на назначение ролей. Он представляет результаты оценки различных правил. |
+
+| Свойство      | Тип                                            | Описание                                                                                                                                                                                                                                                                                                                                                                                     |
+| :------------ | :---------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| status        | String                                          | Состояние запроса на назначение ролей. Значение может быть или `InProgress` `Closed`.                                                                                                                                                                                                                                                                                                           |
+| subStatus     | String                                          | Состояние подгруппы запроса назначения ролей. Значения могут быть , , , , , , `Provisioned`, `PendingRevocation``Revoked`, `Canceled`, `Failed`, `PendingApprovalProvisioning`, `PendingAdminDecision``AdminApproved``FailedAsResourceIsLocked``PendingApproval`, , `AdminDenied`и .`ProvisioningStarted``TimedOut``PendingProvisioning``Denied``Granted``PendingEvaluation``Accepted` |
+| statusDetails | Коллекция [keyValue](../resources/keyvalue.md) | Сведения о состоянии запроса на назначение ролей. Он представляет результаты оценки различных правил.                                                                                                                                                                                                                                                                              |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -36,7 +36,6 @@ ms.locfileid: "60695414"
   "blockType": "resource",
   "@odata.type": "microsoft.graph.governanceRoleAssignmentRequestStatus"
 }-->
-
 
 ```json
 {
@@ -49,6 +48,7 @@ ms.locfileid: "60695414"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -59,5 +59,3 @@ ms.locfileid: "60695414"
   "suppressions": []
 }
 -->
-
-

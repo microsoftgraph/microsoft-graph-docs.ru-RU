@@ -1,16 +1,16 @@
 ---
 title: 'unifiedRoleAssignmentScheduleInstance: filterByCurrentUser'
 description: Получите список объектов unifiedRoleAssignmentScheduleInstance и их свойств, отфильтрованных определенным пользователем
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 7d38079af0301a785d525cdee6597f12d3969f24
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cceacda74d3c7047a66df47cdc373d4a2f13e90c
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136869"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510395"
 ---
 # <a name="unifiedroleassignmentscheduleinstance-filterbycurrentuser"></a>unifiedRoleAssignmentScheduleInstance: filterByCurrentUser
 Пространство имен: microsoft.graph
@@ -43,7 +43,7 @@ GET /roleManagement/directory/roleAssignmentScheduleInstances/filterByCurrentUse
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|roleAssignmentScheduleInstanceFilterByCurrentUserOptions|Фильтр для запроса объектов, для которых основным является текущий пользователь. Разрешено значение `principal` . Обязательное.|
+|on|roleAssignmentScheduleInstanceFilterByCurrentUserOptions|Фильтр для запроса объектов, для которых основным является текущий пользователь. Разрешено значение `principal`. Обязательный аргумент.|
 
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -55,12 +55,12 @@ GET /roleManagement/directory/roleAssignmentScheduleInstances/filterByCurrentUse
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md) в теле ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код ответа и коллекцию объектов [unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 

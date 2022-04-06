@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 33fa0da5493563075882e3d5f367326282abb76f
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: 2145f371cf0f90ef7db6738d94f89667eacb16b8
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262157"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671708"
 ---
 # <a name="list-onpremisesconnections"></a>Список onPremisesConnections
 
@@ -28,7 +28,7 @@ ms.locfileid: "62262157"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Для приложений|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -121,6 +121,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
       "id": "07f12770-a225-4957-9127-0d247cf4ffff",
+      "managedBy": "windows365",
       "type": "hybridAzureADJoin",
       "displayName": "Display Name value",
       "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",

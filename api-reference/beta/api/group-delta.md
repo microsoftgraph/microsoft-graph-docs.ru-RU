@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 30db6927d18dc87bc4cb50f0b2368149fe730d3a
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 2c35508db300610dcd9ddb59016e0206dafba5eb
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62347622"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671673"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -26,9 +26,9 @@ ms.locfileid: "62347622"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+|Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Для приложений | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -154,7 +154,7 @@ GET https://graph.microsoft.com/beta/groups/delta
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 >
-> Обратите внимание на *наличие members@delta,* которое включает в себя ids объектов-членов в группе.
+> Обратите внимание на наличие *members@delta* , которое включает в себя ids объектов-членов в группе.
 
 <!-- {
   "blockType": "response",

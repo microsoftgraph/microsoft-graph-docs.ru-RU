@@ -5,8 +5,13 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
+ms.openlocfilehash: 93cf1bb04cdc0a1244adf403e0044d4c5893502b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672723"
 ---
-
 # <a name="get-application"></a>Получение объекта application
 
 Пространство имен: microsoft.graph
@@ -18,7 +23,7 @@ doc_type: apiPageType
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, , Directory.Read.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Application.Read.All, Application.ReadWrite.All |
 |Приложение | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
 
@@ -32,7 +37,7 @@ GET /applications/{id}
 
 Этот метод поддерживает [параметр запроса OData](/graph/query-parameters) `$select` для получения конкретных свойств приложения.
 
-По умолчанию этот API не возвращает значение открытого ключа **key** в свойстве **keyCredential**, если в запросе `$select` не указан параметр **keyCredentials**.  Например, `$select=id,appId,keyCredentials`.
+По умолчанию этот API не возвращает значение открытого ключа **key** в свойстве **keyCredential**, если в запросе `$select` не указан параметр **keyCredentials**. Например, `$select=id,appId,keyCredentials`.
 
 При использовании `$select` с целью получения **keyCredentials** для приложений применяется ограничение регулирования в количестве 150 запросов в минуту для каждого клиента.
 

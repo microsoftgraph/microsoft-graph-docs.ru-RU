@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: e94f25e60df83997442c46bb4720cfd0c71a3cdf
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: a4422ca22977a413f4c9e0a2819cf3dbff06a8f1
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62261968"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671295"
 ---
 # <a name="update-cloudpconpremisesconnection"></a>Обновление cloudPcOnPremisesConnection
 
@@ -18,8 +18,8 @@ ms.locfileid: "62261968"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
-После того как локальное подключение проходит проверку состояния, указанную свойством, ее `healthCheckStatus` нельзя обновить.
+Обновление свойств объекта [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
+После того как локальное подключение проходит проверку состояния, `healthCheckStatus` указанную свойством, ее нельзя обновить.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -50,27 +50,27 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 | Авторизация | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
+В теле запроса поставляем представление JSON объекта [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
 
-В следующей таблице показаны свойства, необходимые при создании [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
+В следующей таблице показаны свойства, необходимые при создании [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя отображения локального подключения.|
+|displayName|Строка|Имя отображения локального подключения.|
 |type|cloudPcOnPremisesConnectionType|Указывает, как будет присоединяться к Azure Active Directory. Значение по умолчанию — `hybridAzureADJoin`. Возможные значения: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
-|subscriptionId|String|ID целевой подписки Azure, связанной с клиентом.|
-|adDomainName|String|Полное доменное имя домена (FQDN) домена Active Directory, к нему необходимо присоединиться.|
-|adDomainUsername|String|Имя пользователя учетной записи Active Directory (учетная запись пользователя или службы), которая имеет разрешения на создание компьютерных объектов в Active Directory. Необходимый формат: username@contoso.com.|
-|adDomainPassword|String|Пароль, связанный с adDomainUsername.|
-|resourceGroupId|String|ID целевой группы ресурсов. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
-|virtualNetworkId|String|ID целевой виртуальной сети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
-|subnetId|String|ID целевой подсети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
+|subscriptionId|Строка|ID целевой подписки Azure, связанной с клиентом.|
+|adDomainName|Строка|Полное доменное имя домена (FQDN) домена Active Directory, к нему необходимо присоединиться.|
+|adDomainUsername|Строка|Имя пользователя учетной записи Active Directory (учетная запись пользователя или службы), которая имеет разрешения на создание компьютерных объектов в Active Directory. Необходимый формат: username@contoso.com.|
+|adDomainPassword|Строка|Пароль, связанный с adDomainUsername.|
+|resourceGroupId|Строка|ID целевой группы ресурсов. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
+|virtualNetworkId|Строка|ID целевой виртуальной сети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
+|subnetId|Строка|ID целевой подсети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и обновленный [объект cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -146,6 +146,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
   "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdcc4ffff",
+  "managedBy": "windows365",
   "type": "hybridAzureADJoin", 
   "displayName": "Display Name value",
   "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",

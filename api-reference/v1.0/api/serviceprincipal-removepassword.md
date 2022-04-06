@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 65622e70fbaea89b36ea5a5f88aab1321199c4a7
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 93724628a7cbaea0a4ddfe0e3be0f20c464a6b6e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336888"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672450"
 ---
 # <a name="serviceprincipal-removepassword"></a>servicePrincipal: removePassword
 
@@ -24,7 +24,7 @@ ms.locfileid: "63336888"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 

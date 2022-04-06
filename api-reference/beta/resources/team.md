@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 419e88921785cb66d03fe763ff4badd490008ec7
-ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
-ms.translationtype: HT
+ms.openlocfilehash: 3225578752ab8d58f5e909fe849aa0f038701d73
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63500898"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685112"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -41,9 +41,14 @@ ms.locfileid: "63500898"
 |[Распаковка команды](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Восстановление команды в состояние чтения и записи. |
 |[Клонирование команды](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Копирование команды и ее связанной группы. |
 |[Перечисление ваших команд](../api/user-list-joinedteams.md) | Коллекция [team](team.md) | Перечисление команд, в которых вы являетесь участником. |
+|[Перечисление связанных команд](../api/associatedteaminfo-list.md) | [коллекция associatedTeamInfo](associatedteaminfo.md) | Получение списка связанных [объектовTeamInfo](associatedteaminfo.md) в [Microsoft Teams, с](user.md) чем связан пользователь. |
 |[Перечисление всех команд в организации](../api/teams-list.md) | Коллекция [team](team.md) | Перечисление всех команд в организации. |
 |[Получение фотографии команды](../api/team-get-photo.md) | Двоичные данные | Вы можете получить фотографию (изображение) для команды. |
 |[Завершение миграции](../api/team-completemigration.md)|[team](team.md)| Удаление режима миграции из команды, после чего команда становится доступной для публикации и чтения сообщений пользователями.|
+|[Вывод списка всех каналов](../api/team-list-allchannels.md)|Коллекция [channel](../resources/channel.md)|Получение списка каналов [в этой](../resources/channel.md) **команде или** общий доступ к этой **команде** (входящие каналы).|
+|[Перечисление каналов](../api/channel-list.md)|Коллекция [channel](../resources/channel.md)|Получение списка [каналов](../resources/channel.md) в **команде**.|
+|[Перечисление входящих каналов](../api/team-list-incomingchannels.md)|Коллекция [channel](../resources/channel.md)|Получение списка каналов [, к которые](../resources/channel.md) предоставлен общий доступ этой **команде**.|
+|[Удаление входящего канала](../api/team-delete-incomingchannel.md) | Никаких других изменений не происходит| Удалите входящий канал.|
 |[Перечисление приложений, установленных в команде](../api/team-list-installedapps.md) | Коллекция [teamsAppInstallation](teamsappinstallation.md) | Перечисление приложений, установленных в команде.|
 |[Добавление приложения в команду](../api/team-post-installedapps.md) |Нет | Добавление (установка) приложения в команду.|
 |[Получение приложения, установленного в команде](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Получение указанного приложения, установленного в команде.|
@@ -72,6 +77,7 @@ ms.locfileid: "63500898"
 |isMembershipLimitedToOwners|Boolean|Если присвоено значение `true`, команда в настоящее время находится в состоянии участия только для владельцев команды и недоступна другим участникам, например учащимся.|
 |createdDateTime|dateTimeOffset|Метка времени создания команды.|
 |summary|[teamSummary](teamsummary.md)| Содержит сводную информацию о команде, включая количество владельцев, участников и гостей. |
+|tenantId |string | Идентификатор Azure Active Directory клиента. |
 
 ### <a name="instance-attributes"></a>Атрибуты экземпляра
 
@@ -87,6 +93,7 @@ ms.locfileid: "63500898"
 
 | Связь | Тип | Описание |
 |:---------------|:--------|:----------|
+|allChannels|Коллекция [channel](channel.md)|Список каналов, размещенных или совместно используемых командой (входящих каналов).|
 |channels|Коллекция [channel](channel.md)|Коллекция каналов и сообщений, связанных с командой.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|Приложения, установленные в команде.|
 |members|Коллекция [conversationMember](../resources/conversationmember.md)|Участники и владельцы команды.|

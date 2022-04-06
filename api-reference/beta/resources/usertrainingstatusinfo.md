@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 82b0c6b1de49c9b8eb0572dab33fca8c90e2b6fe
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: d9e2900bb2c72ba8100d5fe49130b7229db988ee
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979756"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63757845"
 ---
 # <a name="usertrainingstatusinfo-resource-type"></a>тип ресурса userTrainingStatusInfo
 
@@ -25,8 +25,8 @@ ms.locfileid: "59979756"
 |:---|:---|:---|
 |assignedDateTime|DateTimeOffset|Дата и время назначения обучения пользователю.|
 |completionDateTime|DateTimeOffset|Дата и время завершения обучения пользователем.|
-|displayName|Строка|Отображение имени назначенного обучения.|
-|trainingStatus|trainingStatus|Состояние обучения, назначенного пользователю. Возможные значения: `unknown`, `assigned`, `inProgress`, `completed`, `overdue`, `notCompleted`, `unknownFutureValue`.|
+|displayName|String|Отображение имени назначенного обучения.|
+|trainingStatus|trainingStatus|Состояние обучения, назначенного пользователю. Возможные значения: `unknown`, `assigned`, `inProgress`, `completed`, `overdue`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

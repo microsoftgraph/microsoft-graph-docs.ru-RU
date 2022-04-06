@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 5f7d579d2d265800526213b8b745cd6f8b059275
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 362688a24163da2ed26c625b81d21790269467c8
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62105442"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671939"
 ---
 # <a name="create-schemaextension"></a>Создание schemaExtension
 
@@ -30,7 +30,7 @@ ms.locfileid: "62105442"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -72,7 +72,7 @@ POST /schemaExtensions
 
 #### <a name="request"></a>Запрос
 
-В следующем примере показано использование проверенного доменного имени и имени схемы для формирования уникальной строки для свойства id определения расширения `graphlearn` `courses` схемы.  Уникальная строка имеет такой формат: \{_&#65279;доменноеИмя_\}\_\{_&#65279;имяСхемы_\}.
+В следующем примере `graphlearn`показано использование проверенного доменного имени и имени схемы для `courses`формирования уникальной строки для свойства **id** определения расширения схемы. Уникальная строка имеет такой формат: \{_&#65279;доменноеИмя_\}\_\{_&#65279;имяСхемы_\}.
 
 В теле запроса должно быть представление объекта [schemaExtension](../resources/schemaextension.md) в формате JSON.
 

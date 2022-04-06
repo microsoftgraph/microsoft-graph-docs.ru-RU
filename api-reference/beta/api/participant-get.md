@@ -1,16 +1,16 @@
 ---
 title: Получение участника
-description: Извлечение свойств и связей **объекта-участника.**
-author: ananmishr
+description: Извлечение свойств и связей **объекта-участника** .
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c2b078acaca3b3a994768f12e40448ebd67432e8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c524f3b77842ade97be031cdf1f642772578dc67
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62094012"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607600"
 ---
 # <a name="get-participant"></a>Получение участника
 
@@ -18,7 +18,7 @@ ms.locfileid: "62094012"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей **объекта-участника.**
+Извлечение свойств и связей **объекта-участника** .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "62094012"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Приложение     | Нет                                        |
+| Для приложений     | Calls.JoinGroupCallsasGuest.All или Calls.JoinGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,11 +44,11 @@ GET /communications/calls/{id}/participants/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` объект [участника](../resources/participant.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и объект [участника](../resources/participant.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

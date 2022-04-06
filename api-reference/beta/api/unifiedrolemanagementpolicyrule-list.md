@@ -1,16 +1,16 @@
 ---
 title: Список unifiedRoleManagementPolicyRules
 description: Получите список объектов unifiedRoleManagementPolicyRule и их свойств.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a0332c331edeb8902ccb918fb1ce6328e88e71e4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8e6bdd100134791e7031abe52ed710c315732805
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095768"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510613"
 ---
 # <a name="list-unifiedrolemanagementpolicyrules"></a>Список unifiedRoleManagementPolicyRules
 Пространство имен: microsoft.graph
@@ -45,12 +45,12 @@ GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/effectiveRu
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) в тексте ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код ответа и коллекцию объектов [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

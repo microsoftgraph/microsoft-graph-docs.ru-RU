@@ -1,12 +1,17 @@
 ---
 title: тип ресурсов policyRoot
-description: 'Тип ресурса, подвергая свойства навигации для однотонных политик.'
-author: carolinetempleton
+description: Тип ресурса, подвергая свойства навигации для однотонных политик.
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
+ms.openlocfilehash: 8e68d04f42744128027279c7d67cabfab7e1c2bd
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510255"
 ---
-
 # <a name="policyroot-resource-type"></a>тип ресурсов policyRoot
 
 Пространство имен: microsoft.graph

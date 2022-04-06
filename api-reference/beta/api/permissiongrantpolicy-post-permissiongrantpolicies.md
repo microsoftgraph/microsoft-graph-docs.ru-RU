@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: c931a41be04555937831d13d22a99a9351e8efd3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 526c1d9093f258094a14f6ce2806d1293f58f805
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62112508"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64508631"
 ---
 # <a name="create-permissiongrantpolicy"></a>Создание permissionGrantPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "62112508"
 
 Создает [permissionGrantPolicy](../resources/permissiongrantpolicy.md). Политика предоставления разрешений используется для описания условий, при которых могут быть предоставлены разрешения (например, во время согласия приложения).
 
-После создания политики предоставления разрешений можно добавить наборы условий [](permissiongrantpolicy-post-excludes.md) для добавления правил совпадения и добавить наборы исключений для добавления правил исключения. [](permissiongrantpolicy-post-includes.md)
+После создания политики предоставления разрешений можно добавить наборы условий для добавления правил совпадения и добавить наборы исключений для добавления правил исключения.[](permissiongrantpolicy-post-includes.md) [](permissiongrantpolicy-post-excludes.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "62112508"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PermissionGrantPolicy.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | Policy.ReadWrite.PermissionGrant |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | PermissionGrantPolicy.ReadWrite.All |
+|Приложение | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,11 +48,11 @@ POST /policies/permissionGrantPolicies
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [permissionGrantPolicy.](../resources/permissiongrantpolicy.md)
+В теле запроса поставляем представление JSON объекта [permissionGrantPolicy](../resources/permissiongrantpolicy.md) .
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект permissionGrantPolicy](../resources/permissiongrantpolicy.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` ответа и [объект permissionGrantPolicy](../resources/permissiongrantpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
