@@ -5,12 +5,12 @@ author: ebasseri
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: edb82f42138f81e8d49c923891736ba437d03cea
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 56daf049e52575bcfa0b0e665f956ff3ae7fb028
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337273"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509758"
 ---
 # <a name="get-serviceprincipalriskdetection"></a>Get servicePrincipalRiskDetection
 Пространство имен: microsoft.graph
@@ -26,9 +26,9 @@ ms.locfileid: "63337273"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|IdentityRiskyServicePrincipal.Read.All, IdentityRiskyServicePrincipal.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|IdentityRiskEvent.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|IdentityRiskyServicePrincipal.Read.All, IdentityRiskyServicePrincipal.ReadWrite.All|
+|Приложение|IdentityRiskEvent.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

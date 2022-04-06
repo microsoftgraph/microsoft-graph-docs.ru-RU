@@ -1,16 +1,16 @@
 ---
 title: 'вызов: playPrompt'
 description: Воспроизведения запроса в вызове.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9af7512dc14491866da93f4c6632334c4bb85c7a
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: dc1c49d33fa4a336dd69e4e4313ec7f72893de85
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62347836"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607983"
 ---
 # <a name="call-playprompt"></a>вызов: playPrompt
 
@@ -30,7 +30,9 @@ ms.locfileid: "62347836"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Приложение                            | Нет.                                        |
+| Для приложений                            | Calls.Initiate.All, Calls.AccessMedia.All |
+
+> **Примечание:** Разрешения проверяются при вызове; При вызове этого API не проводится дополнительная проверка разрешений. Calls.AccessMedia.All необходим только для вызовов, которые используют носители с использованием приложений.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +52,7 @@ POST /communications/calls/{id}/playPrompt
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |подсказки|[Коллекция MediaPrompt](../resources/mediaprompt.md)| Подсказки для игры. Максимальный поддерживаемый размер коллекции MediaPrompt — 20.|
-|clientContext|String|Уникальная строка контекста клиента. Может иметь не более 256 символов.|
+|clientContext|Строка|Уникальная строка контекста клиента. Может иметь не более 256 символов.|
 
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект playPromptOperation](../resources/playpromptoperation.md) в тексте ответа.
@@ -114,7 +116,7 @@ Content-Length: 166
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

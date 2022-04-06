@@ -5,22 +5,29 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1c8b7063877f4a53986ac9683025db84e843fb11
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 1044c0195eade2a56d5d98f1834f59fa451f85e3
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672072"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629668"
 ---
 # <a name="get-unifiedroledefinition"></a>Get unifiedRoleDefinition
 
 Пространство имен: microsoft.graph
 
-Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) . В **настоящее время** каталог — это единственный поддерживаемый поставщик управления доступом на основе ролей (RBAC).
+Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) .
+
+В настоящее время поддерживаются следующие поставщики управления доступом на основе ролей (RBAC):
+
+- directory (роли каталога Azure AD)
+- управление правами (управление правами Azure AD)
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+### <a name="for-the-directory-azure-ad-provider"></a>Для поставщика каталога (Azure AD)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -28,12 +35,30 @@ ms.locfileid: "63672072"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
+### <a name="for-the-entitlement-management-provider"></a>Для поставщика прав на управление правами
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Не поддерживается. |
+
 ## <a name="http-request"></a>HTTP-запрос
+
+Получите определение роли для поставщика каталогов:
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /roleManagement/directory/roleDefinitions/{id}
+```
+
+Получение определения роли для поставщика управления правами:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleDefinitions/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -44,7 +69,7 @@ GET /roleManagement/directory/roleDefinitions/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

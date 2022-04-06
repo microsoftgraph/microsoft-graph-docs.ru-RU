@@ -1,16 +1,16 @@
 ---
 title: Создание группы маршрутизации звука
-description: Создание новой **audioRoutingGroup**.
-author: ananmishr
+description: Создайте **новую audioRoutingGroup**.
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 330142c280a0560ebf76e3afbce5abecba0726c2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bf4248182603da7502b48520a0fe0b4f478fc645
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097260"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607654"
 ---
 # <a name="create-audio-routing-group"></a>Создание группы маршрутизации звука
 
@@ -18,7 +18,7 @@ ms.locfileid: "62097260"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание новой **audioRoutingGroup**.
+Создайте **новую audioRoutingGroup**.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "62097260"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Приложение                            | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Для приложений                            | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,11 +42,11 @@ POST /communications/calls/{id}/audioRoutingGroups
 |:--------------|:--------------------------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-В корпусе запроса поставляем представление JSON объекта [audioRoutingGroup.](../resources/audioroutinggroup.md)
+## <a name="request-body"></a>Текст запроса
+В корпусе запроса поставляем представление JSON объекта [audioRoutingGroup](../resources/audioroutinggroup.md) .
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект audioRoutingGroup](../resources/audioroutinggroup.md) в тексте ответа.
+В случае успешной работы этот `200 OK` метод возвращает код отклика и [объект audioRoutingGroup](../resources/audioroutinggroup.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -104,7 +104,7 @@ Content-Length: 233
 ---
 
 
-В корпусе запроса поставляем представление JSON объекта [audioRoutingGroup.](../resources/audioroutinggroup.md)
+В корпусе запроса поставляем представление JSON объекта [audioRoutingGroup](../resources/audioroutinggroup.md) .
 
 ##### <a name="response"></a>Отклик
 
@@ -162,7 +162,7 @@ Content-Length: 233
 }
 ```
 
-В корпусе запроса поставляем представление JSON объекта [audioRoutingGroup.](../resources/audioroutinggroup.md)
+В корпусе запроса поставляем представление JSON объекта [audioRoutingGroup](../resources/audioroutinggroup.md) .
 
 ##### <a name="response"></a>Отклик
 

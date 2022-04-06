@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d78005e99e4eb585eb326a4dc225c8ab3b83cfb1
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: d1224bc1eebf1d90bfcb46fead37dae4ad01e4bf
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63367946"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672240"
 ---
 # <a name="get-serviceprincipal"></a>Получение объекта servicePrincipal
 
@@ -23,7 +23,7 @@ ms.locfileid: "63367946"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
 
@@ -47,6 +47,9 @@ GET /servicePrincipals/{id}
 | Имя           | Описание                |
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {token}. Обязательный.  |
+| Принять-Язык| Код языка. Необязательное свойство.   |
+
+Предоставление заголовка **Accept-Language** с поддерживаемым кодом языка, например `es-ES` или `de-DE`, приведет к возврату локализованных значений там, где они доступны. Обратите внимание, что заголовок не поддерживается для [операций перечисления](serviceprincipal-list.md).
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

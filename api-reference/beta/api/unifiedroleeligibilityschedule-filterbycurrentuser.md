@@ -1,16 +1,16 @@
 ---
 title: 'unifiedRoleEligibilitySchedule: filterByCurrentUser'
 description: Получите список объектов unifiedRoleEligibilitySchedule и их свойств, отфильтрованных определенным пользователем
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a801b050f87b2873d8cbc0bea04707e7940c20f1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f32ea78083f4c4945a800faa7523a59553736472
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130667"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509849"
 ---
 # <a name="unifiedroleeligibilityschedule-filterbycurrentuser"></a>unifiedRoleEligibilitySchedule: filterByCurrentUser
 Пространство имен: microsoft.graph
@@ -43,7 +43,7 @@ GET roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser(on='pr
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|roleEligibilityScheduleFilterByCurrentUserOptions|Пользователь, в настоящее время подписанный. Разрешено значение `principal` .|
+|on|roleEligibilityScheduleFilterByCurrentUserOptions|Пользователь, в настоящее время подписанный. Разрешено значение `principal`.|
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
@@ -53,12 +53,12 @@ GET roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser(on='pr
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) в теле ответа.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и коллекцию объектов [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 

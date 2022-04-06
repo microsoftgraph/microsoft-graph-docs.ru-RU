@@ -2,13 +2,13 @@
 title: Отображение компонентов Microsoft Graph Toolkit справа налево
 description: Описание поддержки отображения справа налево для компонентов Microsoft Graph Toolkit.
 ms.localizationpriority: medium
-author: vogtn
-ms.openlocfilehash: a573016903f68883dc733e596de2519640a6acac
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 189ffe24f42b2302d0992bcc5ca63c9cd7ff6934
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129574"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589226"
 ---
 # <a name="display-microsoft-graph-toolkit-components-right-to-left-rtl"></a>Отображение компонентов Microsoft Graph Toolkit справа налево
 

@@ -1,16 +1,16 @@
 ---
 title: Создание группы
 description: Создание группы Microsoft 365 или группы безопасности.
-author: Jordanndahl
+author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 40e64178ff682ae9db4c58bffce686a84471361b
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 346c19c28e9e30b196c87b9fdca48d50e9e7bd01
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671400"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587149"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -20,34 +20,36 @@ ms.locfileid: "63671400"
 
 Создайте новую [группу](../resources/group.md) согласно инструкциям в тексте запроса. Можно создать одну из следующих групп.
 
-* Группа Microsoft 365 (единая группа)
-* Группа безопасности
+- Группа Microsoft 365 (единая группа)
+- Группа безопасности
 
 Эта операция по умолчанию возвращает только подмножество свойств для каждой группы. Эти свойства по умолчанию указаны в разделе [Свойства](../resources/group.md#properties). Чтобы получить свойства, которые _не_ возвращаются по умолчанию, выполните [операцию GET](group-get.md) и укажите их в параметре запроса OData `$select`.
 
 **Примечание.** Чтобы создать [команду](../resources/team.md), сначала создайте группу и добавьте команду в нее, см. раздел [Создание команды](../api/team-put-teams.md).
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.ReadWrite.All  |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий)                |
+| :------------------------------------- | :--------------------------------------------------------- |
+| Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All, Directory.ReadWrite.All               |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                             |
+| Приложение                            | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groups
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя       | Описание|
-|:---------------|:--------|
-| Авторизация  | Bearer {token}. Обязательный. |
+| Имя          | Описание               |
+| :------------ | :------------------------ |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -55,19 +57,20 @@ POST /groups
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [group](../resources/group.md). При необходимости укажите другие записываемые свойства для своей группы.
 
-| Свойство | Тип | Описание|
-|:---------------|:--------|:----------|
-| displayName | string | Имя, которое следует отобразить в адресной книге для группы. Максимальная длина: 256 символов. Обязательно. |
-| mailEnabled | boolean | Установите значение `true` для групп с включенной поддержкой почты. Обязательное поле. |
-| mailNickname | string | Почтовый псевдоним для группы, уникальный для групп Microsoft 365 в организации. Максимальная длина: 64 символа. Это свойство может содержать только символы из [набора символов ASCII от 0 до 127](/office/vba/language/reference/user-interface-help/character-set-0127), за исключением следующих: ` @ () \ [] " ; : . <> , SPACE`. Обязательный. |
-| securityEnabled | boolean | Установите значение `true` для групп с поддержкой безопасности, включая группы Microsoft 365. Обязательно. **Примечание.** В группах, созданных с помощью портала Microsoft Azure, для свойства **securityEnabled** всегда устанавливается значение `true`.|
+| Свойство        | Тип    | Описание                                                                                                                                                                                                                                                                                                                                |
+| :-------------- | :------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName     | string  | Имя, которое следует отобразить в адресной книге для группы. Максимальная длина: 256 символов. Обязательно.                                                                                                                                                                                                                                         |
+| mailEnabled     | boolean | Установите значение `true` для групп с включенной поддержкой почты. Обязательное поле.                                                                                                                                                                                                                                                                                           |
+| mailNickname    | string  | Почтовый псевдоним для группы, уникальный для групп Microsoft 365 в организации. Максимальная длина: 64 символа. Это свойство может содержать только символы из [набора символов ASCII от 0 до 127](/office/vba/language/reference/user-interface-help/character-set-0127), за исключением следующих: ` @ () \ [] " ; : . <> , SPACE`. Обязательный. |
+| securityEnabled | boolean | Установите значение `true` для групп с поддержкой безопасности, включая группы Microsoft 365. Обязательно. **Примечание.** В группах, созданных с помощью портала Microsoft Azure, для свойства **securityEnabled** всегда устанавливается значение `true`.                                                                                                                                    |
 
 > [!IMPORTANT]
-> + Создание группы с помощью разрешения приложения **Group.Create** без указания владельцев анонимно создает группу, которая не будет изменяться. Добавьте владельцев в группу при ее создании, чтобы указать владельцев, которые могут изменять группу.
 >
->+ Создание группы Microsoft 365 программным путем с контекстом только для приложений, а также без указания владельцев будет анонимным. Это может привести к тому, что связанный с ней сайт SharePoint Online не будет создан автоматически, пока дальнейшие действия не будут выполнены вручную.
+> - Создание группы с помощью разрешения приложения **Group.Create** без указания владельцев анонимно создает группу, которая не будет изменяться. Добавьте владельцев в группу при ее создании, чтобы указать владельцев, которые могут изменять группу.
 >
->+ Следующие свойства невозможно настроить в исходном запросе POST и необходимо настраивать в последующем запросе PATCH: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
+> - Создание группы Microsoft 365 программным путем с контекстом только для приложений, а также без указания владельцев будет анонимным. Это может привести к тому, что связанный с ней сайт SharePoint Online не будет создан автоматически, пока дальнейшие действия не будут выполнены вручную.
+>
+> - Следующие свойства невозможно настроить в исходном запросе POST и необходимо настраивать в последующем запросе PATCH: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
 
 Так как ресурс **group** поддерживает [расширения](/graph/extensibility-overview), вы можете добавлять настраиваемые свойства с собственными данными к группе при ее создании.
 
@@ -75,10 +78,10 @@ POST /groups
 
 Свойство **groupTypes** используется для управления типом группы и участием в ней, как показано ниже.
 
-| Тип группы | Назначенное участие | Динамическое членство |
-|:--------------|:------------------------|:---------------|
-| Microsoft 365 (как единая группа)| `["Unified"]` | `["Unified","DynamicMembership"]`
-| Динамический | `[]` (_null_) | `["DynamicMembership"]`|
+| Тип группы                     | Назначенное участие | Динамическое членство                |
+| :-------------------------------- | :------------------ | :-------------------------------- |
+| Microsoft 365 (как единая группа) | `["Unified"]`       | `["Unified","DynamicMembership"]` |
+| Динамический                           | `[]` (_null_)       | `["DynamicMembership"]`           |
 
 ## <a name="response"></a>Отклик
 
@@ -90,17 +93,18 @@ POST /groups
 
 В следующем примере создается группа Microsoft 365. Так как владельцы не указаны, вызывающий пользователь автоматически добавляется в качестве владельца группы.
 
-
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_group"
 }-->
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/groups
 Content-type: application/json
 
@@ -115,38 +119,44 @@ Content-type: application/json
   "securityEnabled": false
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/create-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Значение свойства **preferredDataLocation** наследуется от предпочтительного расположения данных создателя группы.
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -154,7 +164,8 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.group",
   "name": "create_group"
 } -->
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -207,7 +218,8 @@ Content-type: application/json
   "blockType": "request",
   "name": "create_prepopulated_group"
 }-->
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
 
@@ -233,7 +245,7 @@ Content-Type: application/json
 
 Ниже представлен пример успешного отклика. Он включает только свойства по умолчанию. Вы можете получить свойства навигации **owners** или **members** группы, чтобы проверить владельца или участников. Значение свойства **preferredDataLocation** наследуется от предпочтительного расположения данных создателя группы.
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -241,7 +253,8 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.group",
   "name": "create_prepopulated_group"
 } -->
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -294,17 +307,18 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. Вызывающему пользователю или приложению должно быть назначено разрешение *RoleManagement.ReadWrite.Directory* для настройки свойства **isAssignableToRole** или обновления участников таких групп. 
+Далее приведен пример запроса. Вызывающему пользователю или приложению должно быть назначено разрешение _RoleManagement.ReadWrite.Directory_ для настройки свойства **isAssignableToRole** или обновления участников таких групп.
 
 **ПРИМЕЧАНИЕ.** Группа, свойству **isAssignableToRole** которой присвоено значение `true`, не может относиться к типу с динамическим членством. Дополнительные сведения см. в статье [Использование группы для управления назначениями ролей Azure AD](https://go.microsoft.com/fwlink/?linkid=2103037).
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_role_enabled_group"
 }-->
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
 
@@ -327,27 +341,34 @@ Content-Type: application/json
     ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-role-enabled-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-role-enabled-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-role-enabled-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-role-enabled-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/create-role-enabled-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-role-enabled-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -363,7 +384,8 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.group",
   "name": "create_role_enabled_group"
 } -->
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -422,7 +444,6 @@ Content-type: application/json
 - [Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](/graph/extensibility-open-users)
 - [Добавление пользовательских данных в ресурсы group с помощью расширений схемы (предварительная версия)](/graph/extensibility-schema-groups)
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -436,5 +457,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 9edd626ae9914941a18801791e942c1dfd69e391
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: cba73bf9f8d3281fe43400e90db9303bba69f36a
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336916"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587667"
 ---
 # <a name="cloudpc-resource-type"></a>Тип ресурса cloudPC
 
@@ -18,7 +18,7 @@ ms.locfileid: "63336916"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет виртуальный рабочий стол с облачным управлением. Этот облачный компьютер также зарегистрирован в Intune и управляется через портал Microsoft Endpoint Manager, поэтому облачный ПК также имеет соответствующий ID управляемого устройства Intune.
+Представляет виртуальный рабочий стол с облачным управлением. Этот облачный КОМПЬЮТЕР также региструется в Intune и управляется через портал Microsoft Endpoint Manager, поэтому облачный ПК также имеет соответствующий Intune управляемый ID устройства.
 
 ## <a name="methods"></a>Методы
 
@@ -32,12 +32,12 @@ ms.locfileid: "63336916"
 |[Перезагрузка](../api/cloudpc-reboot.md)|Нет|Перезагрузка определенного [объекта cloudPC](../resources/cloudpc.md) .|
 |[Rename](../api/cloudpc-rename.md)|Нет|Переименование определенного [объекта cloudPC](../resources/cloudpc.md) . Используйте этот API для обновления **displayName** для объекта облачного ПК.|
 |[Reprovision](../api/cloudpc-reprovision.md)|Нет|Reprovision a [cloudPC](../resources/cloudpc.md) object.|
-|[Удаленное действие reprovision](../api/manageddevice-reprovisioncloudpc.md)|Нет|Перенастройка облачного компьютера с управляемым ИД устройства [Intune.](../resources/cloudpc.md)|
-|[Массовое удаленное перепроизводство](../api/manageddevice-bulkreprovisioncloudpc.md)|Нет|Массовое перепроизводение набора устройств облачного ПК с управляемыми ID-устройствами Intune.|
-|[Повторное удаленное действие](../api/manageddevice-resizecloudpc.md)|Нет|Обновление или понижение существующего облачного компьютера до другой конфигурации с новым vCPU и размером хранилища с помощью ID управляемого устройства Intune.|
+|[Удаленное действие reprovision](../api/manageddevice-reprovisioncloudpc.md)|Нет|Перепроинделка облачного КОМПЬЮТЕРА с Intune [ID](../resources/cloudpc.md) устройства.  |
+|[Массовое удаленное перепроизводство](../api/manageddevice-bulkreprovisioncloudpc.md)|Нет|Массовое перепроизводение набора устройств облачного ПК с Intune управляемыми ID-устройствами.|
+|[Повторное удаленное действие](../api/manageddevice-resizecloudpc.md)|Нет|Обновление или понижение существующего облачного компьютера до другой конфигурации с новым vCPU и размером хранилища с Intune управляемым ID устройства.|
 |[Устранение неполадок](../api/cloudpc-troubleshoot.md)|Нет|Устранение неполадок определенного [объекта cloudPC](../resources/cloudpc.md) . Используйте этот API для проверки состояния здоровья облачного компьютера и хоста сеанса.|
 |[Восстановление удаленного действия](../api/manageddevice-restorecloudpc.md)|Нет|Восстановим устройство облачного ПК до предыдущего состояния из снимка.|
-|[Массовое восстановление удаленного действия](../api/manageddevice-bulkrestorecloudpc.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Восстановление нескольких устройств облачного ПК с одним запросом, который включает в себя ID управляемых устройств Intune и дату и время точки восстановления.|
+|[Массовое восстановление удаленного действия](../api/manageddevice-bulkrestorecloudpc.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Восстановление нескольких устройств облачного ПК с одним запросом, который включает Intune управляемых устройств и дату и время точки восстановления.|
 
 ## <a name="properties"></a>Свойства
 
@@ -46,18 +46,18 @@ ms.locfileid: "63336916"
 |aadDeviceId|Строка|ID Azure Active Directory (Azure AD) облачного компьютера.|
 |displayName|Строка|Имя отображения облачного компьютера.|
 |gracePeriodEndDateTime|DateTimeOffset|Дата и время окончания льготного периода и переделки/депрограммивинга. Требуется только в том случае, если состояние .`inGracePeriod` Timestamp отображается в формате ISO 8601 и Скоординированное универсальное время (UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|id|String|Уникальный идентификатор облачного компьютера. Только для чтения.|
+|id|Строка|Уникальный идентификатор облачного компьютера. Только для чтения.|
 |imageDisplayName|Строка|Имя изображения ОС, которое на облачном компьютере.|
 |lastLoginResult|[cloudPcLoginResult](../resources/cloudpcloginresult.md)|Последний результат входа облачного компьютера. Например, `{ "time": "2014-01-01T00:00:00Z"}`.|
 |lastModifiedDateTime|DateTimeOffset|Последняя измененная дата и время облачного КОМПЬЮТЕРА. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |lastRemoteActionResult|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Последний результат удаленного действия корпоративных облачных компьютеров. Поддерживаемые удаленные действия: `Reboot`, , , `Reprovision`и `Troubleshoot``Restore``Rename`.|
-|managedDeviceId|Строка|ID устройства Intune облачного компьютера.|
-|managedDeviceName|String|Имя устройства Intune облачного КОМПЬЮТЕРА.|
-|onPremisesConnectionName|Строка|Локальное подключение, применяемого при обеспечении облачных компьютеров.|
+|managedDeviceId|Строка|ID Intune устройства облачного компьютера.|
+|managedDeviceName|String|Имя Intune устройства облачного КОМПЬЮТЕРА.|
+|onPremisesConnectionName|String|Сетевое подключение Azure, применяемого во время подготовка облачных компьютеров.|
 |osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|Версия операционной системы (ОС) для обеспечения на облачных ПК. Возможные значения: `windows10`, и `windows11``unknownFutureValue`.|
-|provisioningPolicyId|String|ID политики обеспечения облачного компьютера.|
+|provisioningPolicyId|Строка|ID политики обеспечения облачного компьютера.|
 |provisioningPolicyName|Строка|Политика обеспечения, применяемая при подготовках облачных компьютеров.|
-|servicePlanId|Строка|ID плана службы облачного компьютера.|
+|servicePlanId|String|ID плана службы облачного компьютера.|
 |servicePlanName|String|Имя плана службы облачного компьютера.|
 |servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|Тип плана службы облачного компьютера.|
 |status|[cloudPcStatus](#cloudpcstatus-values)|Состояние облачного КОМПЬЮТЕРА. Возможные значения: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`, `restoring`.|

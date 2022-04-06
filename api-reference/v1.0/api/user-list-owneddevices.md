@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f9ee04c4e54b335f622bbddde09450a8eec98b2b
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 368638641474e2b5217152507598d53ee8ea4244
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629052"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672359"
 ---
 # <a name="list-owneddevices"></a>Список ownedDevices
 
@@ -31,7 +31,6 @@ ms.locfileid: "64629052"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/ownedDevices
 GET /users/{id | userPrincipalName}/ownedDevices
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов

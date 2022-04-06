@@ -1,16 +1,16 @@
 ---
 title: 'unifiedRoleEligibilityScheduleRequest: отмена'
 description: Отмена единойRoleEligibilityScheduleRequest.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 922bf16d011ac904150a25dbd0341d0092888924
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: e70449502a4dd715fcfc389f66d2f0d351a3e574
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344509"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510367"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-cancel"></a>unifiedRoleEligibilityScheduleRequest: отмена
 Пространство имен: microsoft.graph

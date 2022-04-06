@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 83a5a8e1ca6f43aa56454a7a3acb4a2c653880bc
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 846e7a8ca0ee415f78d1f8139809b95888820660
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64630865"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671407"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -31,15 +31,12 @@ ms.locfileid: "64630865"
 |Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite    |
 |Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-> [!TIP]
-> 1. Для вызова конечной точки `/me` требуется вход пользователя и, следовательно, делегированное разрешение. Разрешения приложений не поддерживаются при использовании конечной точки `/me`.
->2. Разрешение `User.Read` дает приложению возможность читать профиль и обнаруживать отношения, такие как членство в группах, отчеты и руководитель пользователя, вошедшего в систему.
+Для вызова конечной точки `/me` требуется вход пользователя и, следовательно, делегированное разрешение. Разрешения приложений не поддерживаются при использовании конечной точки `/me`.
 
 ## <a name="http-request"></a>HTTP-запрос
 Для определенного пользователя:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me
 GET /users/{id | userPrincipalName}
 ```
 
@@ -252,42 +249,6 @@ Content-type: application/json
             "issuerAssignedId": "AdeleV@contoso.com"
         }
     ]
-}
-```
-
-### <a name="example-4-get-the-value-of-a-schema-extension-for-a-user"></a>Пример 4. Получение значения расширения схемы для пользователя
-
-Идентификатор расширения схемы в этом примере: `ext55gb1l09_msLearnCourses`
-
-#### <a name="request"></a>Запрос
-
-<!-- {
-  "blockType": "request",
-  "name": "get_schemaextension"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e?$select=ext55gb1l09_msLearnCourses
-```
-
-#### <a name="response"></a>Отклик
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(ext55gb1l09_msLearnCourses)/$entity",
-    "ext55gb1l09_msLearnCourses": {
-        "@odata.type": "#microsoft.graph.ComplexExtensionValue",
-        "courseType": "Developer",
-        "courseName": "Introduction to Microsoft Graph",
-        "courseId": 1
-    }
 }
 ```
 

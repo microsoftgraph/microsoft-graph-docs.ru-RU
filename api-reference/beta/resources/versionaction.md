@@ -3,15 +3,15 @@ author: daspek
 description: Наличие ресурса VersionAction в ресурсе itemActivity указывает, что в результате выполнения действия была создана другая версия.
 ms.date: 09/14/2017
 title: VersionAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 0f16858c8b62f327019d2523488827fa6b20dced
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0061e53ea03d2dbca8bb4c29d0fb88c1909b592a
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057747"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722652"
 ---
 # <a name="versionaction-resource-type"></a>Тип ресурса VersionAction
 
@@ -28,20 +28,20 @@ ms.locfileid: "48057747"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.versionAction"
+  "@type&quot;: &quot;microsoft.graph.versionAction"
 }-->
 
 ```json
 {
-  "newVersion": "string"
+  "newVersion&quot;: &quot;string"
 }
 ```
 
 ## <a name="properties"></a>Свойства
 
-| Имя свойства | Тип   | Описание
-|:--------------|:-------|:----------------------------------------------------
-| newVersion    | string | Имя новой версии, созданной при выполнении этого действия.
+| Свойство   | Тип   | Описание                                                  |
+| :--------- | :----- | :----------------------------------------------------------- |
+| newVersion | string | Имя новой версии, созданной при выполнении этого действия. |
 
 ## <a name="remarks"></a>Замечания
 
@@ -57,5 +57,3 @@ ms.locfileid: "48057747"
   "suppressions": []
 }
 -->
-
-

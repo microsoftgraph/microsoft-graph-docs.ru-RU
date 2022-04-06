@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: Добавление элемента в пакет
-description: Добавление элемента в пакет driveItems
+description: Добавьте элемент в пакет driveItems.
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ed5ded16b1577a4931b28d24ac22a785eaed2d2a
-ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
+ms.openlocfilehash: 3cfdaa7385e0e20127ced382a2491e890c254c05
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63561630"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758275"
 ---
 # <a name="add-item-to-a-bundle"></a>Добавление элемента в пакет
 
@@ -41,36 +41,59 @@ POST /drive/bundles/{bundle-id}/children
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Authorization | Носитель \{токен\}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
+| Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
-Тело запроса включает идентификатор элемента, который должен быть добавлен в коллекцию детей пакета.
+В теле запроса поставляем JSON-представление [объекта driveItem][] .
 
 ## <a name="response"></a>Отклик
 
-В случае успешного ответа `204 No Content`.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`.
 
-Сведения об ответах на ошибки см. в этой [информации][error-response].
+Сведения об ответах на ошибки см. в Graph ответы на ошибки [и типы ресурсов][error-response].
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Этот запрос добавит существующий элемент в указанный пакет.
+Ниже приводится пример запроса, который добавляет существующий элемент в указанный пакет.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "add-to-bundle", "isCollection": true, "@odata.type": "microsoft.graph.driveItem", "tags": "onedrive.only" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children
+POST https://graph.microsoft.com/v1.0/drive/bundles/{bundle-id}/children
 Content-Type: application/json
 
 {
   "id": "123456!87"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-to-bundle-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-to-bundle-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/add-to-bundle-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/add-to-bundle-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
 
 <!-- { "blockType": "response" } -->
 

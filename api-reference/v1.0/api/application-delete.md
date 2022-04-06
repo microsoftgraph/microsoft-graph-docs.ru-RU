@@ -5,27 +5,27 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c0fdfd3e1537e73c974f1db8cdd0a35b8a93857c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c49b0a9414aa2109346d9ae3526521756517754b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098198"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671239"
 ---
 # <a name="delete-application"></a>Удаление приложения
 
 Пространство имен: microsoft.graph
 
-Удаление объекта [приложения.](../resources/application.md) При удалении приложения перемещаются во временный контейнер и могут быть восстановлены в течение 30 дней. По истечении этого периода они удаляются без возможности восстановления.
+Удаление объекта [приложения](../resources/application.md) . При удалении приложения перемещаются во временный контейнер и могут быть восстановлены в течение 30 дней. По истечении этого периода они удаляются без возможности восстановления.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All |
-|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ DELETE /applications/{id}
 |:-----------|:----------|
 | Авторизация | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

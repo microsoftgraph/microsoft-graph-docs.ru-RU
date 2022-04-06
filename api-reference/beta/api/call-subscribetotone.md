@@ -1,16 +1,16 @@
 ---
 title: 'вызов: subscribeToTone'
 description: Подписка на DTMF (двухтонная многочастотная сигнализация). Это позволяет вам быть уведомленным, когда пользователь нажимает клавиши на "Dialpad".
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a6c66b2519ddbd72add03427f1d7330f92059c85
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 5d3e1b30230aaa4ac1f02045446259558c629d69
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340280"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608025"
 ---
 # <a name="call-subscribetotone"></a>вызов: subscribeToTone
 
@@ -30,7 +30,7 @@ ms.locfileid: "62340280"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Приложение     | Calls.AccessMedia.All                       |
+| Для приложений     | Calls.AccessMedia.All                       |
 
 >**Примечание:** Любые предоставленные данные тона могут не сохраняться. Убедитесь, что вы соответствуете законам и правилам вашей области в отношении защиты данных и конфиденциальности сообщений. Дополнительные сведения можно узнать из [условий использования](/legal/microsoft-apis/terms-of-use) и обратившись за юридической помощью.
 ## <a name="http-request"></a>HTTP-запрос

@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 220ebd3fcb4bf0e92dce53fcc80d68bab617cfe6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3ac390e2394b9ad8e83670eda872de5a5030614e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119579"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669776"
 ---
 # <a name="get-oauth2permissiongrant-a-delegated-permission-grant"></a>Получить oAuth2PermissionGrant (делегированная субсидия на разрешение)
 
 Пространство имен: microsoft.graph
 
-Извлечение свойств единого делегированного разрешения, представленного объектом [oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
+Извлечение свойств единого делегированного разрешения, представленного объектом [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) .
 
 **OAuth2PermissionGrant** представляет делегированную разрешений, которые были предоставлены для клиентского приложения для доступа к API от имени подписанного пользователя.
 
@@ -26,7 +26,7 @@ ms.locfileid: "62119579"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -48,13 +48,13 @@ GET /oauth2PermissionGrants/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

@@ -5,20 +5,17 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9b2383084396bfe95f5f23c4ba871856e30d01d1
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: f225dd42748cf54e79cc3694dfa04aa2a28b7b33
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225479"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722414"
 ---
 # <a name="list-contactedreviewers"></a>Список contactedReviewers
 Пространство имен: microsoft.graph
 
-Получите рецензентов, которые получили уведомления для [экземпляра проверки доступа.](../resources/accessreviewinstance.md) Рецензенты представлены объектом [accessReviewReviewer.](../resources/accessreviewreviewer.md) Возвращается список нулевых или более объектов, включая все вложенные свойства.
-
->[!NOTE]
->Размер страницы по умолчанию для этого API — 100 **объектов accessReviewReviewer.** Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
+Получите рецензентов, которые получили уведомления для [экземпляра проверки доступа](../resources/accessreviewinstance.md). Рецензенты представлены объектом [accessReviewReviewer](../resources/accessreviewreviewer.md) . Возвращается список нулевых или более объектов, включая все вложенные свойства.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +24,7 @@ ms.locfileid: "62225479"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +37,9 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$select` `$filter` параметры запроса `$orderBy` `$skip` `$top` OData и OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select`параметры `$filter`запроса OData `$orderBy``$skip`и `$top` OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+
+Размер страницы по умолчанию для этого API — 100 **объектов accessReviewReviewer** . Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -52,7 +51,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию `200 OK` [объектов accessReviewReviewer](../resources/accessreviewreviewer.md) в тексте отклика.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и коллекцию [объектов accessReviewReviewer](../resources/accessreviewreviewer.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

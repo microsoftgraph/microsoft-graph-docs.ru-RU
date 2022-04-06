@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 2145f371cf0f90ef7db6738d94f89667eacb16b8
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: ad6c17f1019c363c320d31f3eaf5962fa1398f79
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671708"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588353"
 ---
 # <a name="list-onpremisesconnections"></a>Список onPremisesConnections
 
@@ -19,6 +19,8 @@ ms.locfileid: "63671708"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Список свойств и связей объектов [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
+
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
 ## <a name="permissions"></a>Разрешения
 

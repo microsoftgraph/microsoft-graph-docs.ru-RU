@@ -5,18 +5,18 @@ description: Обновление пакета driveItems
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 07f69618fae4fe2424abee3a1ac274d6ed42e88d
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: b4925016b63569bba1915ce83100f59e647acc1e
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64684853"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63561662"
 ---
-# <a name="update-bundle"></a>Обновление пакета
+# <a name="update-bundle"></a>Пакет обновления
 
 Пространство имен: microsoft.graph
 
-Обновите метаданные для [пакета][] [driveItemsdriveItem][] по идентификатору.
+Обновление метаданных [для пакета][] [driveItemsdriveItem] [по] ID.
 Можно обновить только следующие метаданные:
 
 * Имя пакета
@@ -46,8 +46,8 @@ PATCH /drive/items/{bundle-id}
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Авторизация | Носитель \{токен\}. Обязательный. |
-| if-match      | Etag. Необязательный параметр. Если этот заголовок запроса включен и предоставленный eTag не соответствует текущему eTag в пакете, `412 Precondition Failed` возвращается ответ.
+| Authorization | Носитель \{токен\}. Обязательный. |
+| if-match      | eTag. Необязательное свойство. Если этот загон запроса включен, а предоставленный eTag не соответствует текущему eTag на койке, `412 Precondition Failed` возвращается ответ.
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -55,50 +55,26 @@ PATCH /drive/items/{bundle-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает [ресурс driveItem][] , представляющий обновленный пакет в тексте ответа.
+В случае успешного использования этот метод возвращает [ресурс driveItem][] , который представляет обновленный пакет в теле отклика.
 
-Дополнительные сведения об ошибках см. в [разделе "Ответы на ошибки"][error-response].
+Сведения об ответах на ошибки см. в этой [информации][error-response].
 
 ## <a name="example"></a>Пример
 
-В этом примере переименовывание пакета.
+В этом примере переименовка пакета.
 
 ### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "rename-bundle" } -->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/drive/items/{bundle-id}
+PATCH https://graph.microsoft.com/beta/drive/items/{bundle-id}
 Content-Type: application/json
 
 {
   "name": "Shared legal agreements"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/rename-bundle-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/rename-bundle-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/rename-bundle-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/rename-bundle-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/rename-bundle-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Отклик
 

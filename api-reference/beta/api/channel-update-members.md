@@ -1,24 +1,24 @@
 ---
-title: Обновление участника в канале
-description: Обновление роли участника в канале.
+title: Обновление элемента в канале
+description: Обновите роль участника в канале.
 author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6ac62c78b947354e2a9321f693fb7521ebb16be6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 07f5c350d80c0db470ff614576967f0d120fb335
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131542"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684573"
 ---
-# <a name="update-member-in-channel"></a>Обновление участника в канале
+# <a name="update-member-in-channel"></a>Обновление элемента в канале
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление роли [conversationMember](../resources/conversationmember.md) в [канале.](../resources/channel.md) Эта операция разрешена только для каналов со значением **membershipType** `private` .
+Обновите роль [conversationMember](../resources/conversationmember.md) в [канале](../resources/channel.md). Эта операция разрешена только для каналов со значением **membershipType** или `private` `shared`.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "62131542"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)|ChannelMember.ReadWrite.All. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|ChannelMember.ReadWrite.All. |
+|Для приложений|ChannelMember.ReadWrite.All. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -45,21 +45,21 @@ PATCH /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажи значения для обновления соответствующих полей. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+В тексте запроса укажите значения для соответствующих полей для обновления. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|roles|Коллекция строк|Роль пользователя. Должно быть `owner` или пусто. Гостевой пользователь автоматически штампуется `guest` ролью, и это значение не может быть обновлено. |
+|roles|Коллекция строк|Роль пользователя. Должен быть или `owner` пустым. Гостевые пользователи автоматически помечаются ролью `guest` , и это значение не может быть обновлено. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект conversationMember](../resources/conversationmember.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный объект [conversationMember](../resources/conversationmember.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Ниже приводится запрос на применение роли к `owner` существующему члену канала.
+Ниже приведен запрос на применение роли `owner` к существующему члену канала.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -123,7 +123,8 @@ Content-type: application/json
   "roles": ["owner"],
   "displayName": "John Doe",
   "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-  "email": null
+  "email": null,
+  "tenantId": "f2eea028-3898-4e55-b611-2e2d960f7512"
 }
 ```
 

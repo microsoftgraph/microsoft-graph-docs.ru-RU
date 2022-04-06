@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 421bc21d5a5fa4b25981cc0a4a0d1ec8aa33b51d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ad3b07875b2a1fd1e1e65bf9755d3fcdf0fc82c5
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62094235"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668593"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 
@@ -20,16 +20,16 @@ ms.locfileid: "62094235"
 
 Создание нового участника роли каталога.
 
-С помощью этого API можно использовать ИД объекта и ИД шаблона **каталогаRole.** ID шаблона встроенной роли неменяем и его можно увидеть в описании роли на портале Azure. Подробные сведения см. [в материале Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+С помощью этого API можно использовать ИД объекта и ИД шаблона **каталогаRole** . ID шаблона встроенной роли неменяем и его можно увидеть в описании роли на портале Azure. Подробные сведения см. [в материале Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.ReadWrite.Directory |
+|Для приложений | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -106,7 +106,7 @@ HTTP/1.1 204 No content
 
 ### <a name="example-2-assign-a-built-in-role-to-a-group"></a>Пример 2. Назначение встроенной роли группе
 #### <a name="request"></a>Запрос
-Вы можете использовать определенный набор ресурсов, например пользователей или групп в теле запроса, или общие **каталогиОбъектов.** В этом примере показано, как можно использовать **directoryObjects.**
+Вы можете использовать определенный набор ресурсов, такие как пользователи или группы в теле запроса, или вы можете использовать общие **directoryObjects**. В этом примере показано, как **можно использовать directoryObjects**.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -160,7 +160,7 @@ HTTP/1.1 204 No content
 
 ### <a name="example-3-add-a-new-member-to-a-directory-role-using-roletemplateid"></a>Пример 3. Добавление нового участника в роль каталога с помощью roleTemplateId
 #### <a name="request"></a>Запрос
-В этом запросе замените значение `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` **roleTemplateId** для роли каталога, которую вы хотите назначить объекту пользователя или каталога. `bb165b45-151c-4cf6-9911-cd7188912848`Замените **значение id** объекта пользователя или каталога. 
+В этом запросе замените `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` значение **roleTemplateId** для роли каталога, которую вы хотите назначить объекту пользователя или каталога. Замените `bb165b45-151c-4cf6-9911-cd7188912848` **значение id** объекта пользователя или каталога. 
 
 <!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
 

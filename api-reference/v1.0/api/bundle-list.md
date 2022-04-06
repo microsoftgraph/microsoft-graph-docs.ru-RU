@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: Пакеты списков
-description: Список пакетов в диске пользователя
+description: Список пакетов в диске пользователя.
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ac8277f00c46b47cdb074f6c167107300874714b
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: d136fdbd3f2398b6c0ba66b7622d509e4aff73a4
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63757923"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587842"
 ---
 # <a name="list-bundles"></a>Пакеты списков
 
@@ -38,25 +38,25 @@ GET /drive/bundles
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData][] для фильтрации и формирования ответа.
+Этот метод поддерживает `$filter` [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
-Параметр запроса нельзя использовать `expand=children` при переумеживании пакетов.
+Параметр запроса нельзя использовать для `expand=children` списка пакетов.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот запрос возвращает список элементов пакета, определенных для диска.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию объектов [][bundlebundle] в тексте ответа.
 
-Сведения об ответах на ошибки см. в этой [информации][error-response].
+Сведения об ответах на ошибки см. в Graph ответы на ошибки [и типы ресурсов][error-response].
 
 ## <a name="examples"></a>Примеры
 
@@ -66,6 +66,7 @@ GET /drive/bundles
 
 #### <a name="request"></a>Запрос
 
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-all-bundles", "tags": "service.onedrive" } -->
@@ -98,6 +99,10 @@ GET https://graph.microsoft.com/beta/drive/bundles
 
 #### <a name="response"></a>Отклик
 
+Ниже приведен пример отклика.
+
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true, "isCollection": true } -->
 
 ```http
@@ -126,21 +131,20 @@ Content-type: application/json
 }
 ```
 
-Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
-
 
 ### <a name="example-2-list-all-photo-albums-in-a-drive"></a>Пример 2. Список всех фотоальбомов на диске
 
-Чтобы отфильтровать список пакетов, возвращаемого из запроса в коллекцию пакетов, `filter` можно использовать параметр строки запроса, чтобы указать тип пакета, чтобы вернуться, проверив наличие грани в пакете:
+Чтобы отфильтровать список пакетов, возвращаемого из запроса в коллекцию пакетов, `filter` можно использовать параметр строки запроса, чтобы указать тип пакета, чтобы вернуться, проверив наличие грани в пакете.
 
 #### <a name="request"></a>Запрос
 
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "list-album-bundles", "tags": "service.onedrive" } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/drive/bundles?filter=bundle/album%20ne%20null
+GET https://graph.microsoft.com/v1.0/drive/bundles?filter=bundle/album%20ne%20null
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-album-bundles-csharp-snippets.md)]
@@ -167,9 +171,10 @@ GET https://graph.microsoft.com/beta/drive/bundles?filter=bundle/album%20ne%20nu
 
 #### <a name="response"></a>Отклик
 
-Ответ на GET для конечной точки пакетов — массив ресурсов [driveItem][] с [пакетом][].
+Ниже приведен пример ответа. Ответ на GET для конечной точки пакетов — массив ресурсов [driveItem][] с [пакетом][].
 Так как все пакеты являются элементами, можно использовать все стандартные операции элемента на них.
 
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true, "isCollection": true } -->
 
 ```http
@@ -204,13 +209,11 @@ Content-type: application/json
 }
 ```
 
-Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
-
 
 [bundle]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
 [error-response]: /graph/errors
-[Параметры запроса OData]: /graph/query-parameters
+[OData Query Parameters]: /graph/query-parameters
 
 <!-- {
   "type": "#page.annotation",

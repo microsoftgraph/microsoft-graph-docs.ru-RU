@@ -1,16 +1,16 @@
 ---
 title: Список унифицированныхRoleEligibilityScheduleRequests
 description: Получите список объектов unifiedRoleEligibilityScheduleRequest и их свойств.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bb0043510ddb6087928ddc3b82cafc7e0d0b237b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 64b141e421a8c632f312f925c18d2522590c2c1b
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136841"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510662"
 ---
 # <a name="list-unifiedroleeligibilityschedulerequests"></a>Список унифицированныхRoleEligibilityScheduleRequests
 Пространство имен: microsoft.graph
@@ -46,12 +46,12 @@ GET /roleManagement/directory/roleEligibilityScheduleRequests
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и коллекцию объектов [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

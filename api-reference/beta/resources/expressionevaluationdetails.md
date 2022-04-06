@@ -1,16 +1,16 @@
 ---
 title: тип ресурса expressionEvaluationDetails
 description: Представляет сведения об выражениях, результатах и свойствах.
-localization_priority: Normal
-author: Jordanndahl
+ms.localizationpriority: medium
+author: psaffaie
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: a2e2b2620f30234c23753ef743f14e55e29f6f91
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: d588719e8d6bcf32ff337beec8815b6fe329ee0b
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679902"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587044"
 ---
 # <a name="expressionevaluationdetails-resource-type"></a>тип ресурса expressionEvaluationDetails
 
@@ -22,12 +22,12 @@ ms.locfileid: "52679902"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство     | Тип        | Описание |
-|:-------------|:------------|:------------|
-| выражение | String | Представляет выражение, которое было оценено. |
-| expressionEvaluationDetails | коллекция expressionEvaluationDetails | Представляет сведения об оценке выражения. |
-| expressionResult | Boolean | Представляет значение результата текущего выражения. |
-| propertyToEvaluate | [propertyToEvaluate](propertytoevaluate.md) | Определяет имя свойства и значение этого свойства. |
+| Свойство                    | Тип                                        | Описание                                                      |
+| :-------------------------- | :------------------------------------------ | :--------------------------------------------------------------- |
+| выражение                  | Строка                                      | Представляет выражение, которое было оценено.                  |
+| expressionEvaluationDetails | коллекция expressionEvaluationDetails      | Представляет сведения об оценке выражения.      |
+| expressionResult            | Логическое                                     | Представляет значение результата текущего выражения.    |
+| propertyToEvaluate          | [propertyToEvaluate](propertytoevaluate.md) | Определяет имя свойства и значение этого свойства. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -45,9 +45,11 @@ ms.locfileid: "52679902"
 ```json
 {
   "expression": "String",
-  "expressionEvaluationDetails": [{"@odata.type": "microsoft.graph.expressionEvaluationDetails"}],
+  "expressionEvaluationDetails": [
+    { "@odata.type": "microsoft.graph.expressionEvaluationDetails" }
+  ],
   "expressionResult": true,
-  "propertyToEvaluate": {"@odata.type": "microsoft.graph.propertyToEvaluate"}
+  "propertyToEvaluate": { "@odata.type": "microsoft.graph.propertyToEvaluate" }
 }
 ```
 
@@ -60,5 +62,3 @@ ms.locfileid: "52679902"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

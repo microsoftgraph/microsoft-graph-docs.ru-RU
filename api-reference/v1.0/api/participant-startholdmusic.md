@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a73b872ce303a16f5363e5ef77c54773907399a4
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: f8f7728847b303f90658f9cb67bc193e3d0707ab
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346227"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607920"
 ---
 # <a name="participant-startholdmusic"></a>участник: startHoldMusic
 
@@ -27,9 +27,7 @@ ms.locfileid: "62346227"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Приложение                            | Нет. |
-
-> **Примечание:** Проверка разрешений происходит, когда приложение присоединяется или пытается запустить вызов. Дополнительные проверки разрешений не выполняются при запросе `startHoldMusic` .
+| Для приложений                            | Calls.JoinGroupCallsasGuest.All или Calls.JoinGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,8 +46,8 @@ POST /communications/calls/{id}/participants/{id}/startHoldMusic
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|customPrompt|microsoft.graph.mediaPrompt|Необязательный параметр. Звуковой запрос, который участник услышит при размещении на удержании.|
-|clientContext|String|Необязательный параметр. Уникальная строка контекста клиента. Может иметь не более 256 символов.|
+|customPrompt|microsoft.graph.mediaPrompt|Необязательно. Звуковой запрос, который участник услышит при размещении на удержании.|
+|clientContext|Строка|Необязательно. Уникальная строка контекста клиента. Может иметь не более 256 символов.|
 
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код `202 Accepted` отклика и [объект startHoldMusicOperation](../resources/startholdmusicoperation.md) в тексте ответа.

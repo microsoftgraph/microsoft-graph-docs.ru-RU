@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f0e35eab9cc3c0ca87250fc6da0e425aa07f5c86
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: 73100502687101eaf9a9aa056ab12f91af4361ee
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201633"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672562"
 ---
 # <a name="list-deleted-items"></a>Перечисление удаленных элементов
 
@@ -18,7 +18,7 @@ ms.locfileid: "62201633"
 
 Получение списка недавно [удаленных элементов](../resources/directory.md).
 
-В настоящее время функции удаленных элементов поддерживаются только для [приложений,](../resources/application.md) [групповых](../resources/group.md)и [пользовательских](../resources/user.md) ресурсов.
+В настоящее время функции удаленных элементов поддерживаются только для [приложений](../resources/application.md), [групп](../resources/group.md) и [пользовательских](../resources/user.md) ресурсов.
 
 >**Примечание:** Удаленные группы безопасности удаляются постоянно и не могут быть извлечены с помощью этого API.
 
@@ -26,21 +26,21 @@ ms.locfileid: "62201633"
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 ### <a name="for-applications"></a>Для приложений:
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
+|Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ### <a name="for-users"></a>Для пользователей:
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированные (рабочая или учебная учетная запись) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -48,9 +48,9 @@ ms.locfileid: "62201633"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All |
+|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
+|Для приложений | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -61,22 +61,22 @@ GET /directory/deletedItems/microsoft.graph.user
 GET /directory/deletedItems/microsoft.graph.device
 ```
 
-Этот API в настоящее время поддерживает получение типов объектов приложений (), групп () или пользователей `microsoft.graph.application` `microsoft.graph.group` `microsoft.graph.user` () из удаленных элементов. Тип литой OData является обязательной частью URI, и вызов без типа `GET /directory/deleteditems` **не поддерживается.**
+Этот API в настоящее время поддерживает получение типов объектов приложений (`microsoft.graph.application`), групп (`microsoft.graph.group`) или пользователей (`microsoft.graph.user`) из удаленных элементов. Тип литой OData является обязательной частью URI `GET /directory/deleteditems` , и вызов без типа **не поддерживается** .
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры запроса, поддерживаемые ресурсом, заданным литой OData. То есть, `$count` , , , , , и `$expand` `$filter` `$orderBy` `$search` `$select` `$top` параметры запроса. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Например:
+Этот метод поддерживает параметры запроса, поддерживаемые ресурсом, заданным литой OData. То есть, `$count`, `$expand``$filter`, `$orderBy`, , `$search`, и `$select`параметры `$top` запроса. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Например:
 
 ```msgraph-interactive
 https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?&$count=true&$orderBy=deletedDateTime desc&$select=id,displayName,deletedDateTime
 ConsistencyLevel: eventual
 ```
 
-В этом примере требуется **заглавная головка ConsistencyLevel,** так как в запросе используются параметры `$orderBy` `$count` запроса и запроса.
+В этом примере требуется **заглавная головка ConsistencyLevel** , `$orderBy` `$count` так как в запросе используются параметры запроса и запроса.
 
 ### <a name="examples-using-the-orderby-odata-query-parameter"></a>Примеры использования параметра запроса $orderBy OData
 
-Параметр запроса OData поддерживается в удаленных свойствах `$orderBy` **объектовDateTime,** **displayName** и **userPrincipalName.** В **свойстве deletedDateTime** запрос требует [](/graph/aad-advanced-queries) добавления расширенных параметров запроса (заглавная строка **ConsistencyLevel** и `true` `$count=true` строка запросов).
+Параметр `$orderBy` запроса OData поддерживается в свойствах **deletedDateTime**, **displayName** и **userPrincipalName** удаленных типов объектов. В **свойстве deletedDateTime** запрос требует добавления расширенных параметров запроса [(](/graph/aad-advanced-queries) заглавная строка **ConsistencyLevel** `true` `$count=true` и строка запросов).
 
 | Литой OData | Свойства, поддерживающие $orderBy | Пример |
 | :--- | :--- | :--- |
@@ -91,7 +91,7 @@ ConsistencyLevel: eventual
 | Авторизация  | Bearer &lt;code&gt; *Обязательный*.|
 | Accept  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

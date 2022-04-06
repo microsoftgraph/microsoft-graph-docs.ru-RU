@@ -262,7 +262,7 @@ items:
         href: overview.md
       - name: Пользователи
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/users.md
           - name: Пользователь
             href: resources/user.md
@@ -294,7 +294,7 @@ items:
             href: resources/calendar.md
             displayName: 'Outlook, Outlook calendar'
             items:
-              - name: Создание
+              - name: Create
                 href: api/user-post-calendars.md
               - name: Создание группы календарей
                 href: api/user-post-calendargroups.md
@@ -317,7 +317,7 @@ items:
           - name: Контакты
             href: resources/contact.md
             items:
-              - name: Создание
+              - name: Create
                 href: api/user-post-contacts.md
               - name: Создание папки контактов
                 href: api/user-post-contactfolders.md
@@ -532,7 +532,7 @@ items:
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: Группа
+          - name: Group
             href: resources/group.md
             items:
               - name: Список групп
@@ -743,7 +743,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Расширенные свойства
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -1221,7 +1221,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Расширенные свойства
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -1344,9 +1344,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Запись вызова
                     href: api/callrecords-callrecord-get.md
-              - name: Сеанс
+              - name: Session
                 items:
-                  - name: Сеанс
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: Перечисление сеансов
                     href: api/callrecords-session-list.md
@@ -1407,7 +1407,7 @@ items:
             href: resources/complianceapioverview.md
           - name: Запросы прав субъекта
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Запросы прав субъекта
                 href: resources/subjectrightsrequest.md
@@ -1457,7 +1457,7 @@ items:
       - name: Резервирование для пользователей
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/booking-api-overview.md
           - name: Организация в Microsoft Bookings
             href: resources/bookingbusiness.md
@@ -4640,9 +4640,9 @@ items:
                 href: resources/administrativeunit.md
                 items:
                   - name: Список
-                    href: api/directory-list-administrativeunits.md
+                    href: api/administrativeunit-list.md
                   - name: Создание
-                    href: api/directory-post-administrativeunits.md
+                    href: api/administrativeunit-post-administrativeunits.md
                   - name: Получение
                     href: api/administrativeunit-get.md
                   - name: Обновление
@@ -5075,7 +5075,7 @@ items:
                         href: api/organizationalbrandinglocalization-delete.md
               - name: Политики
                 items:
-                  - name: Обзор
+                  - name: Общие сведения
                     href: resources/policy-overview.md
                   - name: 'Политика времени, основанная на действиях'
                     href: resources/activitybasedtimeoutpolicy.md
@@ -5100,7 +5100,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
                   - name: Политика методов проверки подлинности
                     items:
-                      - name: Обзор
+                      - name: Общие сведения
                         href: resources/authenticationmethodspolicies-overview.md
                       - name: Политика метода проверки подлинности
                         href: resources/authenticationmethodspolicy.md
@@ -5522,19 +5522,6 @@ items:
                         href: api/entitlementmanagementsettings-get.md
                       - name: Обновление
                         href: api/entitlementmanagementsettings-update.md
-                  - name: Политика назначения пакета доступа
-                    href: resources/accesspackageassignmentpolicy.md
-                    items:
-                      - name: Список
-                        href: api/entitlementmanagement-list-assignmentpolicies.md
-                      - name: Создание
-                        href: api/entitlementmanagement-post-assignmentpolicies.md
-                      - name: Получение
-                        href: api/accesspackageassignmentpolicy-get.md
-                      - name: Обновление
-                        href: api/accesspackageassignmentpolicy-update.md
-                      - name: Delete
-                        href: api/accesspackageassignmentpolicy-delete.md
               - name: Условия использования
                 items:
                   - name: Соглашение
@@ -5719,7 +5706,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Расширенные свойства
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -5921,7 +5908,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Расширенные свойства
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -5966,7 +5953,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Microsoft 365 отчеты об использовании
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/report.md
               - name: Использование устройств Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -6169,7 +6156,7 @@ items:
         items:
           - name: Query
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/search-api-overview.md
               - name: Тип запроса поиска
                 href: resources/searchrequest.md
@@ -6231,7 +6218,7 @@ items:
                     href: api/externalconnectors-externalgroup-delete.md
               - name: Внешний член группы
                 items:
-                  - name: Удостоверение
+                  - name: Identity
                     href: resources/externalconnectors-identity.md
                   - name: Создание
                     href: api/externalconnectors-externalgroup-post-members.md
@@ -6255,7 +6242,7 @@ items:
             items:
               - name: Оценка угроз
                 items:
-                  - name: Обзор
+                  - name: Общие сведения
                     href: resources/threatassessment-api-overview.md
                   - name: Запрос на оценку угроз
                     href: resources/threatassessmentrequest.md
@@ -6423,7 +6410,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Обновление
                     href: api/termstore-store-update.md
-              - name: Группа
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Список
@@ -6558,7 +6545,7 @@ items:
           - name: Команда
             href: resources/team.md
             items:
-              - name: Создание
+              - name: Create
                 href: api/team-post.md
               - name: Создание команды из группы
                 href: api/team-put-teams.md

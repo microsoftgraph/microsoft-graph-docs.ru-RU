@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2465cdff0cfccc8b6d6b3d7e234b5acec8c159f7
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 41c3d3621e741911a101e994dbb19ce1940b651c
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64630942"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670770"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -267,6 +267,7 @@ Content-type: application/json
 ---
 
 
+
 #### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response"
@@ -274,54 +275,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-
-
-### <a name="example-4-add-or-update-the-values-of-a-schema-extension-for-a-user"></a>Пример 4. Добавление или обновление значений расширения схемы для пользователя
-
-Можно обновить или назначить значение одному свойству или всем свойствам в расширении.
-
-#### <a name="request"></a>Запрос
-
-<!-- {
-  "blockType": "request",
-  "name": "update_schemaextension"
-}-->
-```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
-Content-type: application/json
-
-{
-    "ext55gb1l09_msLearnCourses": {
-        "courseType": "Admin"
-    }
-}
-```
-
-#### <a name="response"></a>Отклик
-
-<!-- {
-  "blockType": "response"
-} -->
-```http
-HTTP/1.1 204 No Content
-```
-
->**Примечание:** Чтобы удалить значение расширения схемы из пользовательского объекта, задайте для свойства значение `null`. Пример:
->
->```http
->PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
->Content-type: application/json
->
->{
->    "ext55gb1l09_msLearnCourses": null
->}
->```
-
-## <a name="see-also"></a>См. также
-
-- [Добавление пользовательских данных в ресурсы с помощью расширений](/graph/extensibility-overview)
-- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](/graph/extensibility-open-users)
-- [Добавление пользовательских данных в ресурсы group с помощью расширений схемы (предварительная версия)](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
