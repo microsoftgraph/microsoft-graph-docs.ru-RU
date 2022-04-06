@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5511001af3e53c8108cbc6fa662a81d11a3a2ee2
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: ef7e1046e1c77ef65157c35fd24130daa7152c71
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672247"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509520"
 ---
 # <a name="list-group-transitive-members"></a>Перечисление транзитивных участников группы
 
@@ -347,7 +347,7 @@ Content-type: application/json
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_a_count"
+  "name": "list_groups_transitivemembers_startswith"
 }-->
 
 ```msgraph-interactive

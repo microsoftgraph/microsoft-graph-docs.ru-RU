@@ -2,15 +2,15 @@
 title: Перечисление участников группы
 description: Получение списка непосредственных участников группы.
 ms.localizationpriority: medium
-author: psaffaie
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f74f0774a6f90fb1d6d0bae49dec9df28edf86f2
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 7248aeb49ce0dc810e380101cab798ca948c895e
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589158"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63516539"
 ---
 # <a name="list-group-members"></a>Перечисление участников группы
 
@@ -26,20 +26,19 @@ ms.locfileid: "64589158"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                              |
-| :------------------------------------- | :------------------------------------------------------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                           |
-| Для приложений                            | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
+| Тип разрешения | Разрешения (в порядке повышения привилегий) |
+|:--------------- |:------------------------------------------- |
+| Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
 
 > **Примечание:** Чтобы перечислить членов скрытой группы членства, требуется разрешение Member.Read.Hidden.
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
-
+ 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /groups/{id}/members
 ```
@@ -50,9 +49,9 @@ GET /groups/{id}/members
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя             | Описание                                                                                                                                                                                                       |
-| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Авторизация    | Bearer {token}. Обязательный.                                                                                                                                                                                         |
+| Имя | Описание |
+|:---- |:----------- |
+| Авторизация | Bearer {token}. Обязательный. |
 | ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`, `$filter`, `$orderby` или с параметрами запросов OData cast. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -72,43 +71,34 @@ GET /groups/{id}/members
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "get_group_members"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/members
 ```
-
 # <a name="c"></a>[C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-group-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-group-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-members-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-
 [!INCLUDE [sample-code](../includes/snippets/go/get-group-members-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-group-members-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -117,8 +107,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/members
 #### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
-
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -126,7 +115,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/members
   "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -154,7 +142,6 @@ Content-type: application/json
   "blockType": "ignored",
   "name": "get_count_only"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/members/$count
 ConsistencyLevel: eventual
@@ -168,13 +155,14 @@ ConsistencyLevel: eventual
   "blockType": "response",
   "truncated": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
 
 893
 ```
+
+
 
 ### <a name="example-3-use-odata-cast-to-get-only-a-count-of-user-membership"></a>Пример 3. Использование приведения к OData для получения только количества участий пользователей
 
@@ -186,7 +174,6 @@ Content-type: text/plain
   "blockType": "ignored",
   "name": "get_count_user_only"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/members/microsoft.graph.user/$count
 ConsistencyLevel: eventual
@@ -200,13 +187,14 @@ ConsistencyLevel: eventual
   "blockType": "response",
   "truncated": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
 
 893
 ```
+
+
 
 ### <a name="example-4-use-search-and-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a>Пример 4. Использование $search и OData для получения членства пользователей в группах с отображаемой фамилией с именами букв "Pr", включая количество возвращенных объектов.
 
@@ -218,17 +206,16 @@ Content-type: text/plain
   "blockType": "request",
   "name": "get_pr_count"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/members/microsoft.graph.user?$count=true&$orderby=displayName&$search="displayName:Pr"&$select=displayName,id
 ConsistencyLevel: eventual
 ```
 
+
 #### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
-
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -236,7 +223,6 @@ ConsistencyLevel: eventual
   "@odata.type": "microsoft.graph.user",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -263,55 +249,47 @@ Content-type: application/json
 
 Ниже приведен пример запроса.
 
-# <a name="http"></a>[HTTP](#tab/http)
 
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_groups_members_startswith"
+  "name": "get_a_count"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/members?$count=true&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
 ```
-
 # <a name="c"></a>[C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-a-count-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-a-count-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
 [!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/get-a-count-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-
 [!INCLUDE [sample-code](../includes/snippets/go/get-a-count-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-a-count-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+
 #### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
-
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -319,7 +297,6 @@ ConsistencyLevel: eventual
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -359,49 +336,42 @@ Content-type: application/json
 
 Ниже приведен пример запроса.
 
-# <a name="http"></a>[HTTP](#tab/http)
 
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_members_serviceprincipals"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/3802e9bb-0951-4e18-b9eb-f934b4241194/members/microsoft.graph.servicePrincipal
 ```
-
 # <a name="c"></a>[C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-members-serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-members-serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
 [!INCLUDE [sample-code](../includes/snippets/objc/get-members-serviceprincipals-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/get-members-serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-
 [!INCLUDE [sample-code](../includes/snippets/go/get-members-serviceprincipals-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+
 #### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
-
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -409,7 +379,6 @@ GET https://graph.microsoft.com/beta/groups/3802e9bb-0951-4e18-b9eb-f934b4241194
   "@odata.type": "microsoft.graph.servicePrincipal",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

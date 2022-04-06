@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: bf02636b95e505d0001d91dcdbf2b5915f201e88
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 2b46abf3c7c7b8b74fcccc3647a4e33cae2efbc4
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722991"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607283"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Работа с API управления правами Azure AD
 
@@ -23,7 +23,7 @@ Azure Active Directory управления правами Azure AD может �
 Типы ресурсов управления правами включают:
 
 - [accessPackage](accesspackage.md). Определяет коллекции ролей ресурсов и политики получения доступа к этим ресурсам одним или более пользователями.
-- accessPackageAssignmentPolicy: указывает политику, по которой субъекты могут запрашивать или получать пакет доступа с помощью назначения пакета доступа.
+- [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md): указывает политику, по которой субъекты могут запрашивать или получать пакет доступа с помощью назначения пакета доступа.
 - [accessPackageAssignmentRequest](accesspackageassignmentrequest.md): создан пользователем, который хочет получить назначение пакета доступа.
 - [accessPackageAssignment](accesspackageassignment.md): назначение пакета доступа определенному субъекту в течение определенного периода времени.
 - [accessPackageCatalog](accesspackagecatalog.md): контейнер для пакетов доступа.
@@ -44,7 +44,7 @@ Azure Active Directory управления правами Azure AD может �
 | [Пакеты доступа к спискам](../api/entitlementmanagement-list-accesspackages.md) | [коллекция accessPackage](accesspackage.md) | Извлечение списка **объектов accessPackage** . |
 | [Создание accessPackage](../api/entitlementmanagement-post-accesspackages.md) | [accessPackage](accesspackage.md) | Создайте новый **объект accessPackage** . |
 | [Получить accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Чтение свойств и связей объекта **accessPackage** . |
-| [Обновление accessPackage](../api/accesspackage-update.md)|Отсутствует | Обновление свойств объекта **accesspackage** . |
+| [Обновление accessPackage](../api/accesspackage-update.md)|Нет | Обновление свойств объекта **accesspackage** . |
 | [Удаление accessPackage](../api/accesspackage-delete.md) | | Удаление **accessPackage**. |
 | [FilterByCurrentUser](../api/accesspackage-filterbycurrentuser.md) | [коллекция accessPackage](accesspackage.md) | Извлечение списка **объектов accessPackage** , фильтруемых на входе пользователя. |
 | [Список accessPackageAssignmentRequests](../api/entitlementmanagement-list-assignmentrequests.md) | [accessPackageAssignmentRequest collection](accesspackageassignmentrequest.md) | Извлечение списка **объектов accessPackageAssignmentRequest** . |
@@ -60,22 +60,27 @@ Azure Active Directory управления правами Azure AD может �
 | [Получить accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Чтение свойств и связей объекта **accessPackageCatalog** . |
 | [Обновление accessPackageCatalog](../api/accesspackagecatalog-update.md)|Нет | Обновление свойств объекта **accessPackageCatalog** . |
 | [Удаление accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Удаление **accessPackageCatalog**. |
+|[Список accessPackageAssignmentPolicies](../api/entitlementmanagement-list-assignmentpolicies.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) collection|Получите список объектов [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) и их свойств.|
+|[Создание accessPackageAssignmentPolicy](../api/entitlementmanagement-post-assignmentpolicies.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|Создание нового [объекта accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .|
+|[Получить accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|Ознакомьтесь с свойствами и отношениями объекта [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .|
+|[Обновление accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|Обновление свойств объекта [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .|
+|[Удаление accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-delete.md)|Нет|Удаляет объект [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .|
 | [Списки подключенныхОрганизацией](../api/entitlementmanagement-list-connectedorganizations.md) | [connectedOrganization](connectedorganization.md) collection | Извлечение списка **объектов connectedOrganization** . |
 | [Создание connectedOrganization](../api/entitlementmanagement-post-connectedorganizations.md) | [connectedOrganization](connectedorganization.md) | Создание нового **объекта connectedOrganization** . |
 | [ПодключениеОрганизация](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Чтение свойств и связей объекта **connectedOrganization** . |
 | [Обновление connectedOrganization](../api/connectedorganization-update.md) |Нет | Обновление **подключеннойорганизации**. |
-| [Удаление connectedOrganization](../api/connectedorganization-delete.md) |Отсутствует | Удаление **подключеннойорганизации**. |
+| [Удаление connectedOrganization](../api/connectedorganization-delete.md) |Нет | Удаление **подключеннойорганизации**. |
 |[Список internalSponsors](../api/connectedorganization-list-internalsponsors.md) | Коллекция [directoryObject](directoryobject.md) | Извлечение списка внутренних спонсоров **connectedOrganization** . |
 |[Список externalSponsors](../api/connectedorganization-list-externalsponsors.md) | Коллекция [directoryObject](directoryobject.md) | Извлечение списка внешних спонсоров **connectedOrganization** . |
-|[Добавление internalSponsors](../api/connectedorganization-post-internalsponsors.md) | Отсутствует | Добавьте пользователя или группу во внутренние спонсоры **connectedOrganization** . |
-|[Добавление externalSponsors](../api/connectedorganization-post-externalsponsors.md) | Отсутствует | Добавьте пользователя или группу к внешним спонсорам **connectedOrganization** . |
-|[Удаление internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | Отсутствует | Удалите пользователя или группу из внутренних спонсоров **connectedOrganization** . |
-|[Удаление externalSponsors](../api/connectedorganization-delete-externalsponsors.md) | Отсутствует | Удалите пользователя или группу из внешних спонсоров **connectedOrganization** . |
+|[Добавление internalSponsors](../api/connectedorganization-post-internalsponsors.md) | Нет | Добавьте пользователя или группу во внутренние спонсоры **connectedOrganization** . |
+|[Добавление externalSponsors](../api/connectedorganization-post-externalsponsors.md) | Нет | Добавьте пользователя или группу к внешним спонсорам **connectedOrganization** . |
+|[Удаление internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | Нет | Удалите пользователя или группу из внутренних спонсоров **connectedOrganization** . |
+|[Удаление externalSponsors](../api/connectedorganization-delete-externalsponsors.md) | Нет | Удалите пользователя или группу из внешних спонсоров **connectedOrganization** . |
 |[Получить утверждение](../api/approval-get.md) | [утверждение](approval.md) | Извлечение свойств объекта **утверждения** . |
 |[filterByCurrentUser](../api/approval-filterbycurrentuser.md)| [коллекция утверждений](approval.md)| **Извлечение объектов** утверждения для утверждения.|
 |[Список утвержденийStages](../api/approval-list-stages.md) | [коллекция approvalStage](approvalstage.md) | Список объектов **approvalStage** , связанных с объектом **утверждения** . |
 |[Получить утверждениеStage](../api/approvalstage-get.md) | [approvalStage](approvalstage.md) | Извлечение свойств объекта **approvalStage** . |
-|[Обновление approvalStage](../api/approvalstage-update.md) | Отсутствует | Применить утверждение или отказ в принятии решения по **объекту approvalStage** . |
+|[Обновление approvalStage](../api/approvalstage-update.md) | Нет | Применить утверждение или отказ в принятии решения по **объекту approvalStage** . |
 
 ## <a name="see-also"></a>См. также
 
