@@ -1,41 +1,38 @@
 ---
 title: Список memberOf
 description: 'Получение групп, непосредственным членом которых является данная группа. '
-author: psaffaie
+author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 87928ccac805bef1312e1ddf378f0df701121d91
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 646585bae4f5d28c42013dde95db3d34b1f9e958
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589410"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510536"
 ---
 # <a name="list-memberof"></a>Список memberOf
 
 Пространство имен: microsoft.graph
 
-Получение групп, непосредственным членом которых является данная группа.
+Получение групп, непосредственным членом которых является данная группа. 
 
 Эта операция не является транзитивной. В отличие от аналогичной операции для функции "Группы Microsoft 365", эта операция возвращает группы всех типов, а не только группы Microsoft 365.
 
 ## <a name="permissions"></a>Разрешения
-
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
-| :------------------------------------- | :------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All                     |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                           |
-| Для приложения                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All |
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложения | GroupMember.Read.All, Group.Read.All, Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP-запрос
-
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /groups/{id}/memberOf
 ```
@@ -46,17 +43,15 @@ GET /groups/{id}/memberOf
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя             | Описание                                                                                                                                                                                                       |
-| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Авторизация    | Bearer {token}. Обязательный.                                                                                                                                                                                         |
+| Имя | Описание |
+|:---- |:----------- |
+| Авторизация  | Bearer {token}. Обязательный. |
 | ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`, `$filter`, `$orderby` или с параметрами запросов OData cast. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
 ## <a name="request-body"></a>Текст запроса
-
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
@@ -68,43 +63,34 @@ GET /groups/{id}/memberOf
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "group_get_memberof"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf
 ```
-
 # <a name="c"></a>[C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-memberof-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-get-memberof-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
 [!INCLUDE [sample-code](../includes/snippets/objc/group-get-memberof-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/group-get-memberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-
 [!INCLUDE [sample-code](../includes/snippets/go/group-get-memberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-get-memberof-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -114,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf
 
 Ниже приведен пример ответа.
 
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -122,7 +108,6 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf
   "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -150,7 +135,6 @@ Content-type: application/json
   "blockType": "ignored",
   "name": "get_count_only"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf/$count
 ConsistencyLevel: eventual
@@ -163,7 +147,6 @@ ConsistencyLevel: eventual
 <!-- {
   "blockType": "response"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
@@ -181,7 +164,6 @@ Content-type: text/plain
   "blockType": "ignored",
   "name": "get_count_group_only"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf/microsoft.graph.group/$count
 ConsistencyLevel: eventual
@@ -194,7 +176,6 @@ ConsistencyLevel: eventual
 <!-- {
   "blockType": "response"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
@@ -212,7 +193,6 @@ Content-type: text/plain
   "blockType": "ignored",
   "name": "get_video_count"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search="displayName:Video"
 ConsistencyLevel: eventual
@@ -222,7 +202,7 @@ ConsistencyLevel: eventual
 
 Ниже приведен пример ответа.
 
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -230,7 +210,6 @@ ConsistencyLevel: eventual
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -258,7 +237,6 @@ Content-type: application/json
   "blockType": "request",
   "name": "list_groups_memberof_startswith"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'A')
 ConsistencyLevel: eventual
@@ -268,7 +246,7 @@ ConsistencyLevel: eventual
 
 Ниже приведен пример ответа.
 
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -276,7 +254,6 @@ ConsistencyLevel: eventual
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

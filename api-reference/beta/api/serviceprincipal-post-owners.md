@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: dbe208e343c23e12f247fc3ae73953fcead328e2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 13a487cf3bc070976af6cc7e193dd77fe95b988c
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115793"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671806"
 ---
 # <a name="serviceprincipal-add-owner"></a>servicePrincipal: Добавление владельца
 
@@ -25,7 +25,7 @@ ms.locfileid: "62115793"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All и Directory.Read.All, Application.ReadWrite.All и Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All and Directory.Read.All, Application.ReadWrite.All and Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.ReadWrite.OwnedBy и Directory.Read.All, Application.ReadWrite.All и Directory.Read.All, Application.ReadWrite.OwnedBy и Directory.ReadWrite.All, Application.ReadWrite.All и Directory.ReadWrite.All  |
 

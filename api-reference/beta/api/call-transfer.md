@@ -1,16 +1,16 @@
 ---
 title: 'вызов: передача'
 description: Передача активного одноранговых вызовов или групповых вызовов.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 36acccdec73dd2c5e7ae088d45329272aa47f348
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 476bcb8d3e8188c9780ab2e16ee5356cd30e8395
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341410"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608046"
 ---
 # <a name="call-transfer"></a>вызов: передача
 
@@ -31,7 +31,7 @@ ms.locfileid: "62341410"
 | :-------------- | :-------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                |
-| Приложение     | Calls.Initiate.All                                  |
+| Для приложений     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -450,7 +450,7 @@ Content-Type: application/json
 ### <a name="example-3-call-transfer-from-a-peer-to-peer-call-to-pstn-number"></a>Пример 3. Перенос вызовов из одноранговых вызовов на номер PSTN
 
 Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
-> **Примечание.** Телефон ID — это номер телефона в формате E.164.
+> **Примечание.** Телефон является номером телефона в формате E.164.
 
 #### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -640,7 +640,7 @@ Content-Type: application/json
 ### <a name="example-4-consultative-transfer-from-a-peer-to-peer-call-to-pstn-number"></a>Пример 4. Перенос консультаций с одноранговых вызовов на номер PSTN
 
 Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
-> **Примечание.** Телефон ID — это номер телефона в формате E.164.
+> **Примечание.** Телефон является номером телефона в формате E.164.
 
 #### <a name="request"></a>Запрос
 Ниже показан пример запроса.

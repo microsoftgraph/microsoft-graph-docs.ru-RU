@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: Удаление элемента из пакета
-description: Удалите элемент из пакета driveItems.
+description: Удаление элемента из пакета driveItems
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 18068d3645c114dab38c6d7ae4d745e8c15a0e49
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: 678bfba01471a123f21f034beed7438b3331eff8
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64607386"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758246"
 ---
 # <a name="remove-item-from-bundle"></a>Удаление элемента из пакета
 
@@ -38,29 +38,28 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Авторизация | Bearer {token}. Обязательный. |
+| Авторизация | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
-Не поставляем тело запроса для метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`.
+В случае успешного ответа `204 No Content`.
 
-Сведения об ответах на ошибки см. в Graph ответы на ошибки [и типы ресурсов][error-response].
+Сведения об ответах на ошибки см. в этой [информации][error-response].
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "remove-from-bundle" } -->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/drive/bundles/{bundle-id}/children/{item-id}
+DELETE https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children/{item-id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/remove-from-bundle-csharp-snippets.md)]
@@ -82,8 +81,6 @@ DELETE https://graph.microsoft.com/v1.0/drive/bundles/{bundle-id}/children/{item
 
 
 ### <a name="response"></a>Отклик
-
-Ниже приведен пример ответа.
 
 <!-- { "blockType": "response" } -->
 

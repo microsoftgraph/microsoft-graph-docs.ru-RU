@@ -3,15 +3,15 @@ author: daspek
 description: Наличие ресурса DeleteAction в ресурсе itemActivity указывает, что в результате выполнения действия элемент был удален.
 ms.date: 09/14/2017
 title: DeleteAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: b8f00827a37ba9c010acd1b52e751bd55638afb3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f5e47f178da27708422e14897a1dd8b19ff328b9
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049886"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723502"
 ---
 # <a name="deleteaction-resource-type"></a>Тип ресурса DeleteAction
 
@@ -28,22 +28,22 @@ ms.locfileid: "48049886"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.deleteAction"
+  "@type&quot;: &quot;microsoft.graph.deleteAction"
 }-->
 
 ```json
 {
   "name": "string",
-  "objectType": "File | Folder"
+  "objectType&quot;: &quot;File | Folder"
 }
 ```
 
 ## <a name="properties"></a>Свойства
 
-| Имя свойства | Тип   | Описание
-|:--------------|:-------|:----------------------------------------------------
-| name          | string | Имя элемента, который был удален.
-| objectType    | string | `File` или `Folder` , в зависимости от типа удаленного элемента.
+| Свойство   | Тип   | Описание                                                    |
+| :--------- | :----- | :------------------------------------------------------------- |
+| name       | string | Имя элемента, который был удален.                         |
+| objectType | string | `File` или `Folder`, в зависимости от типа удаленного элемента. |
 
 ## <a name="remarks"></a>Замечания
 
@@ -59,5 +59,3 @@ ms.locfileid: "48049886"
   "suppressions": []
 }
 -->
-
-

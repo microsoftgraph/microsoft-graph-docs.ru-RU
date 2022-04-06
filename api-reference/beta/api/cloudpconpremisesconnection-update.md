@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: a4422ca22977a413f4c9e0a2819cf3dbff06a8f1
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 35dc9f400753115e9dfbdad92d819314cecd262e
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671295"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587737"
 ---
 # <a name="update-cloudpconpremisesconnection"></a>Обновление cloudPcOnPremisesConnection
 
@@ -19,8 +19,8 @@ ms.locfileid: "63671295"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновление свойств объекта [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
-После того как локальное подключение проходит проверку состояния, `healthCheckStatus` указанную свойством, ее нельзя обновить.
 
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
 ## <a name="permissions"></a>Разрешения
 
@@ -58,7 +58,7 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя отображения локального подключения.|
+|displayName|Строка|Имя отображения для сетевого подключения Azure.|
 |type|cloudPcOnPremisesConnectionType|Указывает, как будет присоединяться к Azure Active Directory. Значение по умолчанию — `hybridAzureADJoin`. Возможные значения: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
 |subscriptionId|Строка|ID целевой подписки Azure, связанной с клиентом.|
 |adDomainName|Строка|Полное доменное имя домена (FQDN) домена Active Directory, к нему необходимо присоединиться.|

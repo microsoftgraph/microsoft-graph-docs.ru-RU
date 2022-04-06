@@ -1,16 +1,16 @@
 ---
 title: тип ресурса ticketInfo
 description: Объект, который представляет сведения о билетах, связанные с запросами на назначение ролей
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e75cd3f594a515e83abb59d0b476e4d130771875
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 410b978184efdc098dfa05c08717d7ca471ffe9c
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694906"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64508470"
 ---
 # <a name="ticketinfo-resource-type"></a>тип ресурса ticketInfo
 
@@ -21,8 +21,8 @@ ms.locfileid: "60694906"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ticketNumber|String|Метаданные номеров билетов|
-|ticketSystem|String|Метаданные системы билетов|
+|ticketNumber|Строка|Метаданные номеров билетов|
+|ticketSystem|Строка|Метаданные системы билетов|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

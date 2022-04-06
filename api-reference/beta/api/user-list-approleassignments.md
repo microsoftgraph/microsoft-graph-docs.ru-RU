@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 5081f7b86eca97ce0ffcdf86a210002c4370b941
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 9916d5794d07968e1184356e7ade0a69829892ed
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671729"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477638"
 ---
 # <a name="list-approleassignments-granted-to-a-user"></a>Список объектов appRoleAssignment, предоставленных для пользователя
 
@@ -26,9 +26,9 @@ ms.locfileid: "63671729"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All  |
+|Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All, Directory.Read.All, AppRoleAssignment.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Directory.Read.All, AppRoleAssignment.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

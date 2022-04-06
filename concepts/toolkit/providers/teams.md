@@ -2,13 +2,13 @@
 title: Поставщик Microsoft Teams
 description: Используйте поставщика Teams в своей вкладке Microsoft Teams для упрощения проверки подлинности и доступа Microsoft Graph ко всем компонентам.
 ms.localizationpriority: medium
-author: nmetulev
-ms.openlocfilehash: c26df2772b974288eaba2bb239a46790f7229f0b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: b83034005a11a7ba1795b3a4e9367b4bb3e94222
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126529"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588045"
 ---
 # <a name="microsoft-teams-provider"></a>Поставщик Microsoft Teams
 
@@ -19,9 +19,9 @@ ms.locfileid: "59126529"
 >**Совет**. Сведения о том, как приступить к созданию приложения Microsoft Teams с помощью поставщика Teams, см. в руководстве по началу работы [Создание вкладки Microsoft Teams](../get-started/build-a-microsoft-teams-tab.md).
 
 ### <a name="difference-between-teams-provider-and-teams-msal2-provider"></a>Разница между Teams и Teams msAL2 Provider
-В отличие от TeamsProvider, Teams msAL2 Provider поддерживает Sign-On (SSO) и строится на вершине [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) для проверки подлинности на стороне клиента. [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) реализует код авторизации OAuth 2.0 [Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) PKCE. Код авторизации Flow считается более безопасным, чем неявный грант Flow для веб-приложений, поэтому мы рекомендуем использовать Teams поставщика MSAL2 через Teams Provider. Сведения о проблемах безопасности, связанных с неявным потоком грантов, см. в материале [Недостатки неявного потока.](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6)
+В отличие от TeamsProvider, Teams msAL2 Provider поддерживает Sign-On (SSO) и построена на вершине [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) для проверки подлинности на стороне клиента. [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) реализует код авторизации OAuth [2.0 Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) PKCE. Код авторизации Flow считается более безопасным, чем неявный грант Flow для веб-приложений, поэтому мы рекомендуем использовать Teams поставщика MSAL2 через Teams поставщика. Сведения о проблемах безопасности, связанных с неявным потоком грантов, см. в материале [Недостатки неявного потока](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
 
-Все новые приложения должны использовать поставщик Teams MSAL2 по мере возможности. См. [Teams msAL2 Provider](./teams-msal2.md) для документации по миграции.
+Все новые приложения должны использовать поставщик Teams MSAL2 по возможности. См[. Teams msAL2 Provider для](./teams-msal2.md) документации по миграции.
 
 ## <a name="get-started"></a>Начало работы
 

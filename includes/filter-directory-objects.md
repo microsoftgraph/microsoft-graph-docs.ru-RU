@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
-ms.openlocfilehash: 91a5d7042cbb336be47fd11a0846980bb49a0a0a
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 24543ebddf54800c7ca0d397712d88d37f91c795
+ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61323858"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64646963"
 ---
 ### <a name="administrative-unit-properties"></a>Свойства административных единиц
 
@@ -76,7 +76,7 @@ ms.locfileid: "61323858"
 | onPremisesProvisioningErrors/any(o:o/category)             | ![Поддержка по умолчанию][RDS]               |                                            |                                            |                                            | ![Не поддерживается][NS]                       |
 | onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![Поддержка по умолчанию][RDS]               |                                            |                                            |                                            | ![Не поддерживается][NS]                       |
 | onPremisesSamAccountName                                   | ![Требуются расширенные параметры запроса][AQP] | ![Требуются расширенные параметры запроса][AQP] |                                            |                                            | ![Не поддерживается][NS]                       |
-| onPremisesSecurityIdentifier                               | ![Не поддерживается][NS]                       |                                            |                                            |                                            | ![Требуются расширенные параметры запроса][AQP] |
+| onPremisesSecurityIdentifier                               | ![Поддержка по умолчанию][RDS]               |                                            |                                            |                                            | ![Требуются расширенные параметры запроса][AQP] |
 | onPremisesSyncEnabled                                      | ![Поддержка по умолчанию][RDS]               |                                            |                                            |                                            | ![Требуются расширенные параметры запроса][AQP] |
 | preferredLanguage                                          | ![Требуются расширенные параметры запроса][AQP] | ![Требуются расширенные параметры запроса][AQP] |                                            |                                            | ![Требуются расширенные параметры запроса][AQP] |
 | proxyAddresses/any(p:p)                                    | ![Поддержка по умолчанию][RDS]               | ![Поддержка по умолчанию][RDS]               | ![Поддержка по умолчанию][RDS]               | ![Поддержка по умолчанию][RDS]               |                                            |
@@ -168,7 +168,7 @@ ms.locfileid: "61323858"
 | onPremisesProvisioningErrors/any(o:o/category)             | ![Поддержка по умолчанию][RDS]               |                                            |                                            |                                            | ![Не поддерживается][NS]                       |
 | onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![Поддержка по умолчанию][RDS]               |                                            |                                            |                                            | ![Не поддерживается][NS]                       |
 | onPremisesSamAccountName                                   | ![Требуются расширенные параметры запроса][AQP] | ![Требуются расширенные параметры запроса][AQP] |                                            |                                            | ![Не поддерживается][NS]                       |
-| onPremisesSecurityIdentifier                               | ![Не поддерживается][NS]                       |                                            |                                            |                                            | ![Требуются расширенные параметры запроса][AQP] |
+| onPremisesSecurityIdentifier                               | ![Поддержка по умолчанию][RDS]               |                                            |                                            |                                            | ![Требуются расширенные параметры запроса][AQP] |
 | onPremisesSyncEnabled                                      | ![Поддержка по умолчанию][RDS]               |                                            |                                            |                                            | ![Требуются расширенные параметры запроса][AQP] |
 | otherMails/any(p:p)                                        | ![Поддержка по умолчанию][RDS]               | ![Поддержка по умолчанию][RDS]               | ![Поддержка по умолчанию][RDS]               | ![Поддержка по умолчанию][RDS]               |                                            |
 | passwordPolicies                                           | ![Не поддерживается][NS]                       | ![Не поддерживается][NS]                       |                                            |                                            | ![Требуются расширенные параметры запроса][AQP] |

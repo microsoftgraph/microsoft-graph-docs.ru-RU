@@ -1,28 +1,28 @@
 ---
 title: Microsoft Teams поставщика MSAL2
-description: Используйте поставщика Teams MSAL2 в вкладке Microsoft Teams для облегчения проверки подлинности и доступа microsoft Graph ко всем компонентам. Поставщик может использоваться для одно-входного (SSO) или интерактивного входного знака.
+description: Используйте поставщик Teams MSAL2 в вкладке Microsoft Teams для облегчения проверки подлинности и доступа microsoft Graph ко всем компонентам. Поставщик может использоваться для одно-входного (SSO) или интерактивного входного знака.
 ms.localizationpriority: medium
-author: simonagren
-ms.openlocfilehash: f46bff605b0980ab71b5ae204e86d90949760117
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+author: sebastienlevert
+ms.openlocfilehash: f4c05862b1a7ad0ffce33b6fa152d47e8e111a63
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61862842"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588724"
 ---
 # <a name="microsoft-teams-msal2-provider"></a>Microsoft Teams поставщика MSAL2
 
-Используйте поставщик Microsoft Teams MSAL2 в вкладке Microsoft Teams для облегчения проверки подлинности и доступа microsoft Graph ко всем компонентам. Поставщик может использоваться для единого входного (SSO) или интерактивного входного знака.
+Используйте поставщика Microsoft Teams MSAL2 в вкладке Microsoft Teams для облегчения проверки подлинности и доступа microsoft Graph ко всем компонентам. Поставщик может использоваться для единого входного (SSO) или интерактивного входного знака.
 
-Дополнительные дополнительные новости см. [в см. в руберсе "Поставщики услуг".](./providers.md)
+Дополнительные дополнительные новости см. [в дополнительных данных.](./providers.md)
 
->**Совет:** Дополнительные сведения о создании приложения Microsoft Teams с поставщиком Teams MSAL2 см. в материале [Сборка](../get-started/build-a-microsoft-teams-tab.md) вкладки Microsoft Teams и создание вкладки Microsoft Teams с [помощью SSO](../get-started/build-a-microsoft-teams-sso-tab.md).
+>**Совет:** Дополнительные сведения о создании приложения Microsoft Teams с поставщиком Teams MSAL2 см. в материале Сборка вкладки [Microsoft Teams](../get-started/build-a-microsoft-teams-tab.md) и создание вкладки Microsoft Teams с [помощью SSO](../get-started/build-a-microsoft-teams-sso-tab.md).
 
 
 ### <a name="difference-between-teams-provider-and-teams-msal2-provider"></a>Разница между Teams и Teams msAL2 Provider
-В отличие от Teams поставщика, Teams MSAL2 поддерживает один вход (SSO) и построен на [msal-браузере](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) для проверки подлинности на стороне клиента. [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) реализует код авторизации OAuth 2.0 [Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) PKCE. Поскольку код авторизации Flow считается более безопасным, чем неявный грант Flow для веб-приложений, мы рекомендуем использовать Teams поставщика MSAL2 через Teams поставщика. Сведения о проблемах безопасности, связанных с неявным потоком грантов, см. в материале [Недостатки неявного потока.](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6)
+В отличие от Teams поставщика, поставщик Teams MSAL2 поддерживает один вход (SSO) и построен на [msal-браузере](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) для проверки подлинности на стороне клиента. [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) реализует код авторизации OAuth [2.0 Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) PKCE. Поскольку код авторизации Flow считается более безопасным, чем неявный грант Flow для веб-приложений, мы рекомендуем использовать Teams поставщика MSAL2 через Teams поставщика. Сведения о проблемах безопасности, связанных с неявным потоком грантов, см. в материале [Недостатки неявного потока](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
 
-Все новые приложения должны использовать Teams поставщика MSAL2 по мере возможности. 
+Все новые приложения должны по возможности использовать Teams поставщика MSAL2. 
 
 ## <a name="get-started"></a>Начало работы
 
@@ -32,17 +32,17 @@ ms.locfileid: "61862842"
 В клиентской проверке подлинности (или интерактивной проверке подлинности) пользователю будет предложено проверить подлинность при первом запуске приложения. Чтобы инициировать поток проверки подлинности, пользователю потребуется использовать кнопку вход в кнопку. Это можно сделать на клиенте и не требует службы backend. 
 
 ### <a name="sso-authentication"></a>Проверка подлинности SSO
-Чтобы не запрашивать у пользователя проверку подлинности в приложении, Microsoft Teams также могут использовать [SSO](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) для автоматической проверки подлинности пользователей. Однако для этого процесса требуется резервная служба, которая используется для обмена маркера Microsoft Teams с маркером доступа, который можно использовать для доступа к Microsoft Graph.
+Чтобы не запрашивать у пользователя проверку подлинности в приложении, Microsoft Teams вкладки также могут использовать [SSO](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) для автоматической проверки подлинности пользователей. Однако для этого процесса требуется резервная служба, которая используется для обмена Microsoft Teams с маркером доступа, который можно использовать для доступа к Microsoft Graph.
 
-Teams MSAL2 поддерживает режим SSO, который включен, когда `ssoUrl`  \  `sso-url` настроены на службу backend, способную обмениваться маркерами. Резервная служба обязана выставить API (например), который получит маркер проверки подлинности из Microsoft Teams и использовать поток для обмена маркера для маркера доступа, который может получить доступ к `api/token` `on-behalf-of` Microsoft Graph. Для эталонной реализации службы backend узла см. пример [Microsoft Teams узла SSO.](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)
+Teams MSAL2 поддерживает режим SSO, который включен при `ssoUrl` \ `sso-url` настроены на службу backend, способную обмениваться маркерами. Резервная служба обязана выставить API (`api/token`например), который получит маркер проверки подлинности из Microsoft Teams `on-behalf-of` и использовать поток для обмена маркера на маркер доступа, который может получить доступ к Microsoft Graph. Для эталонной реализации службы backend узла см. пример [Microsoft Teams узла SSO](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab).
 
 ### <a name="initialize-the-provider"></a>Инициализация поставщика
-Перед использованием Teams msAL2 убедитесь, что на странице [Microsoft Teams SDK.](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk)
+Перед использованием поставщика Teams MSAL2 убедитесь, что на странице [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk).
 
 Инициализация поставщика Teams MSAL2 в основном коде.
 
 # <a name="npm"></a>[npm](#tab/ts)
-При инициализации поставщика Teams MSAL2 в JavaScript убедитесь в установке как инструментария, так и Microsoft Teams SDK.
+При инициализации Teams msAL2 в JavaScript установите как набор инструментов, так и Microsoft Teams SDK.
 
 ```cmd
 npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-msal2-provider
@@ -98,12 +98,12 @@ export interface TeamsMsal2Config {
 | scopes  | Строки с разделителями-запятыми для областей, которым пользователь должен предоставить согласие при входе. Необязательный. |
 | authority    | Строка центра. По умолчанию используется общий центр. Для однотенантного приложения используйте идентификатор клиента или имя клиента. Например, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` или `https://login.microsoftonline.com/[your-tenant-id]`. Необязательный. |
 | sso-url  | Абсолютный или относительный путь к API-резерву, который обрабатывает обмен маркерами OBO. Необязательно. |
-| http-method  | Тип метода HTTP, который используется для вызова API backend. `POST` или `GET`. Значение по умолчанию: `GET`. Необязательна |
+| http-method  | Тип метода HTTP, который используется для вызова API backend. `POST` или `GET`. Значение по умолчанию: `GET`. Необязательный |
 
 ---
 ### <a name="create-the-popup-page"></a>Создание всплывающей страницы
 
-Чтобы войти с помощью Teams учетных данных и обрабатывать согласие, необходимо предоставить URL-адрес, который Teams приложение откроется в всплывающее приложение, которое будет следовать потоку проверки подлинности. Создайте новую страницу в приложении (например, которая будет обрабатывать перенаправление https://mydomain.com/auth) auth и вызывать `TeamsMsal2Provider.handleAuth` метод. Это единственное действие, которое должно выполняться этой страницей. Например:
+Чтобы войти в Teams учетных данных и обрабатывать согласие, необходимо предоставить URL-адрес, который приложение Teams откроется в всплывающее приложение, которое будет следовать потоку проверки подлинности. Создайте новую страницу в приложении (например, https://mydomain.com/auth) которая будет обрабатывать перенаправление auth и вызывать `TeamsMsal2Provider.handleAuth` метод. Это единственное действие, которое должно выполняться этой страницей. Например:
 
 # <a name="npm"></a>[npm](#tab/ts)
 
@@ -133,25 +133,25 @@ TeamsMsal2Provider.handleAuth();
 
 ### <a name="creating-an-appclient-id"></a>Создание идентификатора клиента/приложения
 
-Дополнительные сведения о том, как зарегистрировать приложение и получить идентификацию клиента для интерактивной проверки подлинности, см. в материале [Create an Azure Active Directory app.](../get-started/add-aad-app-registration.md)
+Дополнительные сведения о том, как зарегистрировать приложение и получить идентификацию клиента для интерактивной проверки подлинности, см. в Azure Active Directory [приложения](../get-started/add-aad-app-registration.md).
 
 
-Дополнительные сведения о том, как зарегистрировать приложение и получить клиентский ИД и секрет для SSO, см. в Microsoft Teams вкладке Build a Microsoft Teams с [одним входом.](../get-started/build-a-microsoft-teams-sso-tab.md)
+Дополнительные сведения о том, как зарегистрировать приложение и получить ID клиента и секрет для SSO, см. в Microsoft Teams вкладке Build a Microsoft Teams с [одним входом](../get-started/build-a-microsoft-teams-sso-tab.md).
 
-## <a name="migrating-from-teams-provider-to-teams-msal2-provider"></a>Перенос из Teams поставщика в Teams поставщика MSAL2
+## <a name="migrating-from-teams-provider-to-teams-msal2-provider"></a>Перенос из Teams поставщика в Teams msAL2 Provider
 Чтобы перенести приложение, использующее Teams поставщика, к поставщику Teams MSAL2:
 1. Перейдите на портал Azure по адресу https://portal.azure.com.
 1. В меню выберите **Azure Active Directory**.
 1. В меню Azure Active Directory выберите **Регистрация приложений**.
 1. Выберите регистрацию приложения, используемого в настоящее время. 
-1. В левом меню перейдите к **проверке подлинности.**
-1. В **настройках Платформы** выберите **Добавить платформу** и выбрать **одно-страницное приложение.**
-1. Удалите все URL-адреса перенаправления, зарегистрированные в **интернете,** и добавьте их в **одностражном приложении.**
+1. В левом меню перейдите к **проверке подлинности**.
+1. В **конфигурациях платформы** выберите **Добавить платформу** и выберите **одно-страницное приложение**.
+1. Удалите все URL-адреса перенаправления, зарегистрированные в **Интернете**, и добавьте их в **одностражном приложении**.
 1. В коде замените TeamsProvider на Teams msAL2 Provider.
 
     Если вы инициализируете поставщика в коде JS/TS, выполните следующие действия:
     
-    Замените заявление на ```mgt-teams-provider``` импорт 
+    Замените заявление на импорт ```mgt-teams-provider``` 
     ```ts 
     import {TeamsMsal2Provider} from '@microsoft/mgt-teams-msal2-provider';
     ```
@@ -169,6 +169,6 @@ TeamsMsal2Provider.handleAuth();
     ```
 
 ## <a name="see-also"></a>См. также
-* [Microsoft Teams SSO узла](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)
+* [Microsoft Teams пример SSO узла](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)
 * [Создание вкладки Microsoft Teams](../get-started/build-a-microsoft-teams-tab.md)
 * [Создание вкладки Microsoft Teams с помощью SSO](../get-started/build-a-microsoft-teams-sso-tab.md)

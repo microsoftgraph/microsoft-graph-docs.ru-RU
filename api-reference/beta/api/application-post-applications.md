@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 8d24aa4acc199ded94e4cc0244b629a727a7866d
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: a27891136f2092a4012188cfed6606cf3906e1f3
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669328"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477589"
 ---
 # <a name="create-application"></a>Создание приложения
 
@@ -21,7 +21,7 @@ ms.locfileid: "63669328"
 Создайте новый объект [application](../resources/application.md).
 
 > [!IMPORTANT]
-> Добавление [**passwordCredential**](../resources/passwordcredential.md) при создании приложений не поддерживается. Используйте метод [addPassword](application-addpassword.md), чтобы добавлять пароли для приложения.
+> Добавление [**passwordCredential**](../resources/passwordcredential.md) при создании приложений не поддерживается. Используйте метод [addPassword](application-addpassword.md), чтобы добавлять пароли и секреты для приложения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

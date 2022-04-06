@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: a21cfb34d99142f88eb8651e6df241677844765c
-ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
+ms.openlocfilehash: 55402defbc9ebc8a4c077838b8fcece7d4d16fd8
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64646538"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509345"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -57,7 +57,7 @@ ms.locfileid: "64646538"
 | [Список объектов contactFolder](../api/user-list-contactfolders.md) | Коллекция [contactFolder](contactfolder.md) | Получение коллекции папок контактов в папке контактов по умолчанию для вошедшего пользователя. |
 | **Объекты каталога** |  |  |
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской. |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Коллекция строк | Проверка членства в списке групп. Это транзитивная проверка. |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Коллекция String | Проверка членства в списке групп. Это транзитивная проверка. |
 | [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Коллекция String | Проверка участия в списке группы, роли каталога или объектах административных единиц. Эта функция транзитивна. |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | Нет | Отправка запроса операции политики данных, направленного администратором компании для экспорта данных пользователя организации. |
 | [getByIds](../api/directoryobject-getbyids.md) | Коллекция String | Возвращает объекты каталогов, указанные в списке идентификаторов. |
@@ -189,7 +189,7 @@ ms.locfileid: "64646538"
 |onPremisesLastSyncDateTime|DateTimeOffset|Указывает время последней синхронизации объекта с локальным каталогом, например `2013-02-16T03:04:54Z`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 и формата времени UTC. Например, полночь 1 января 2014 г. в формате UTC представляется в виде `2014-01-01T00:00:00Z`. Только для чтения. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).|
 |onPremisesProvisioningErrors|Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md)| Ошибки при использовании продукта синхронизации Майкрософт во время подготовки. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`).|
 |onPremisesSamAccountName|String| Содержит локальное `samAccountName`, синхронизированное из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
-|onPremisesSecurityIdentifier|String|Содержит локальный идентификатор безопасности (SID) локальной группы, синхронизированной с облаком. Только для чтения.<br><br>Возвращается только с помощью оператора `$select`.  `$filter` Поддерживает (`eq`в том числе по `null` значениям). |
+|onPremisesSecurityIdentifier|String|Содержит локальный идентификатор безопасности (SID) локальной группы, синхронизированной с облаком. Только для чтения.<br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`) только для значений `null`. |
 |onPremisesSyncEnabled|Логический| Значение `true` указывает, что этот объект синхронизируется из локального каталога. Значение `false` указывает, что этот объект изначально синхронизировался из локального каталога, но синхронизация больше не выполняется. Значение `null` указывает, что этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). Только для чтения. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `not`, `in` и `eq` для значений `null`).|
 |onPremisesUserPrincipalName|String| Содержит локальное `userPrincipalName`, синхронизированное из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
 |otherMails|Коллекция строк| Список дополнительных адресов электронной почты для пользователя. Например: `["bob@contoso.com", "Robert@fabrikam.com"]`. <br>ПРИМЕЧАНИЕ. Это свойство не может содержать диакритические знаки. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `in`, `startsWith`).|

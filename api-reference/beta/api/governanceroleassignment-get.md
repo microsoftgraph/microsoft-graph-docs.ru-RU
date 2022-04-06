@@ -4,13 +4,13 @@ description: Извлечение свойств и связей управле�
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: e4c93a97bebc38b66cdc73cc55fa1b8d7c752393
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+author: japere
+ms.openlocfilehash: de853db14b68357071627c8f678d3b93f6982e4a
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60929619"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510017"
 ---
 # <a name="get-governanceroleassignment"></a>Get governanceRoleAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "60929619"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 Извлечение свойств и связей [управленияRoleAssignment](../resources/governanceroleassignment.md).
 
@@ -31,7 +31,7 @@ ms.locfileid: "60929619"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | PrivilegedAccess.Read.AzureResources |
+| Приложение | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -39,7 +39,7 @@ ms.locfileid: "60929619"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | PrivilegedAccess.Read.AzureAD |
+| Приложение | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
@@ -47,7 +47,7 @@ ms.locfileid: "60929619"
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | PrivilegedAccess.Read.AzureADGroup |
+| Приложение | PrivilegedAccess.Read.AzureADGroup |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -64,7 +64,7 @@ GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод **не поддерживает** [параметры запроса OData,](/graph/query-parameters) кроме как для настройки `$filter` ответа.
+Этот метод **не поддерживает** [параметры запроса OData](/graph/query-parameters)`$filter`, кроме как для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -74,7 +74,7 @@ GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа и `200 OK` [объект governanceRoleAssignment](../resources/governanceroleassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` ответа и [объект governanceRoleAssignment](../resources/governanceroleassignment.md) в тексте ответа.
 ## <a name="example"></a>Пример
 <!-- {
   "blockType": "request",

@@ -2,15 +2,15 @@
 title: 'group: delta'
 description: Создайте новые, обновленные или удаленные группы, в том числе изменения членства в группе, без необходимости выполнять полное чтение всей коллекции групп.
 ms.localizationpriority: medium
-author: psaffaie
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 749fbcc81ea5b33d60500282315cf1abe0f3333e
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: da6a3b9a210e08de2733d9689b8a17fb0197a959
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587135"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672492"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -22,11 +22,11 @@ ms.locfileid: "64587135"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                            |
-| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                         |
-| Для приложений                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All  |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,27 +46,27 @@ GET /groups/delta
 
 Копируйте и применяйте URL-адрес `nextLink` или `deltaLink` из предыдущего ответа в последующих запросах, так как в нем уже содержаться закодированные параметры.
 
-| Параметр запроса | Тип   | Описание                                                                                                                                                                                                                                                                                                                                                   |
-| :-------------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| $deltatoken     | string | Этот [токен состояния](/graph/delta-query-overview) возвращается в URL-адресе `deltaLink` предыдущего вызова функции **delta** для той же коллекции групп и указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции. |
-| $skiptoken      | string | Этот [токен состояния](/graph/delta-query-overview) возвращается в URL-адресе `nextLink` предыдущего вызова функции **delta** и указывает, что из коллекции групп получены не все изменения.                                                                                                                                                         |
+| Параметр запроса | Тип  |Описание|
+|:---------------|:--------|:----------|
+| $deltatoken | string | Этот [токен состояния](/graph/delta-query-overview) возвращается в URL-адресе `deltaLink` предыдущего вызова функции **delta** для той же коллекции групп и указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
+| $skiptoken | string | Этот [токен состояния](/graph/delta-query-overview) возвращается в URL-адресе `nextLink` предыдущего вызова функции **delta** и указывает, что из коллекции групп получены не все изменения. |
 
 ### <a name="odata-query-parameters"></a>Параметры запросов OData
 
 Этот метод поддерживает необязательные параметры запроса OData для настройки ответа.
 
-- Вы можете использовать параметр запроса `$select` так же, как в любом другом запросе GET, чтобы задать только те свойства, которые необходимы для эффективной работы. Свойство _id_ возвращается всегда.
+- Вы можете использовать параметр запроса `$select` так же, как в любом другом запросе GET, чтобы задать только те свойства, которые необходимы для эффективной работы. Свойство *id* возвращается всегда.
 - Вы можете использовать для `$select=members` получения изменений членства. Вы можете дополнительно отслеживать другие изменения, такие как владение и другие, выбрав любые групповые отношения коллекции **типов directoryObject**.[](../resources/group.md#relationships)
 - Имеется ограниченная поддержка параметра `$filter`:
   - Единственное поддерживаемое выражение `$filter` предназначено для отслеживания изменений в определенном объекте: `$filter=id+eq+{value}`. Допускается фильтрация нескольких объектов. Например, `https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. Максимальное количество фильтруемых объектов: 50.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя          | Описание                                                                                                                                                                    |
-| :------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization | Bearer &lt;token&gt;                                                                                                                                                           |
-| Content-Type  | application/json                                                                                                                                                               |
-| Prefer        | return=minimal <br><br>Указание этого заголовка с запросом, использующим параметр `deltaLink`, приведет к возвращению только свойств объекта, измененных с момента последнего цикла. Необязательный. |
+| Имя       | Описание|
+|:---------------|:----------|
+| Authorization  | Bearer &lt;token&gt;|
+| Content-Type  | application/json |
+| Prefer | return=minimal <br><br>Указание этого заголовка с запросом, использующим параметр `deltaLink`, приведет к возвращению только свойств объекта, измененных с момента последнего цикла. Необязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -77,7 +77,6 @@ GET /groups/delta
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект коллекции [group](../resources/group.md) в тексте отклика. Ответ также включает маркер состояния, который является URL-адресом `nextLink` или URL-адресом `deltaLink` .
 
 - Если возвращается URL-адрес `nextLink`:
-
   - Это означает, что во время сеанса получены не все страницы данных. Приложение продолжает отправлять запросы, используя URL-адрес `nextLink`, пока в отклик не будет включен URL-адрес `deltaLink`.
   - Отклик включает тот же набор свойств, что и начальный разностный запрос. Это позволяет фиксировать полное текущее состояние объектов при запуске разностного цикла.
 
@@ -93,7 +92,8 @@ GET /groups/delta
 - Если свойство не изменилось, в отклике содержится старое значение.
 - Если свойство ранее никогда не настраивалось, оно не включается в отклик.
 
-> **Примечание.** При таком поведении просмотр отклика не дает возможность определить, изменилось ли свойство. Кроме того, ответы дельты, как правило, являются большими, так как содержат все значения свойств, как показано во [втором примере](#request-2) ниже.
+
+> **Примечание.** При таком поведении просмотр отклика не дает возможность определить, изменилось ли свойство. Кроме того, разностные отклики отличаются большими размерами, так как они содержат все значения свойств, как показано [во втором примере](#request-2) ниже.
 
 #### <a name="alternative-return-only-the-changed-properties"></a>Альтернатива: возвращение только измененных свойств
 
@@ -111,7 +111,6 @@ GET /groups/delta
 Ниже приведен пример запроса. Параметр `$select` отсутствует, поэтому отслеживается и возвращается набор свойств по умолчанию.
 
 # <a name="http"></a>[HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -120,46 +119,40 @@ GET /groups/delta
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/delta
 ```
-
 # <a name="c"></a>[C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/group-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-
 [!INCLUDE [sample-code](../includes/snippets/go/group-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+
 #### <a name="response-1"></a>Отклик 1
 
 Ниже приведен пример отклика при использовании параметра `deltaLink`, полученного в начале запроса.
 
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 >
-> Обратите внимание на наличие _members@delta_ , которое включает в себя ids объектов-членов в группе.
+> Обратите внимание на наличие *members@delta* , которое включает в себя ids объектов-членов в группе.
 
 <!-- {
   "blockType": "response",
@@ -203,7 +196,6 @@ Content-type: application/json
 В следующем примере показан исходный запрос с выбором 3 свойств для отслеживания изменений с поведением отклика по умолчанию:
 
 # <a name="http"></a>[HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "group_delta_with_select"
@@ -212,38 +204,32 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,mailNickname
 ```
-
 # <a name="c"></a>[C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-with-select-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-with-select-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-with-select-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/group-delta-with-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-
 [!INCLUDE [sample-code](../includes/snippets/go/group-delta-with-select-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-delta-with-select-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 #### <a name="response-2"></a>Отклик 2
 
@@ -278,7 +264,6 @@ Content-type: application/json
 В следующем примере показан исходный запрос с выбором 3 свойств для отслеживания изменений с альтернативным поведением отклика с минимальными результатами:
 
 # <a name="http"></a>[HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "group_delta_minimal"
@@ -288,38 +273,32 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,mailNickname
 Prefer: return=minimal
 ```
-
 # <a name="c"></a>[C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-minimal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-minimal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-minimal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/group-delta-minimal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-
 [!INCLUDE [sample-code](../includes/snippets/go/group-delta-minimal-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-delta-minimal-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 #### <a name="response-3"></a>Отклик 3
 
@@ -364,3 +343,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

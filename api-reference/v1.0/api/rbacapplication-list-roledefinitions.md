@@ -1,26 +1,32 @@
 ---
-title: Список унифицированныхRoleDefinitions
+title: Перечисление unifiedRoleDefinitions
 description: Получите список объектов unifiedRoleDefinition.
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3dcec84548ba6c9ce1fc1c1f85eafea4bc0887f9
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 3bebc76aac2d674cca95653c08ef12907f8e0a24
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672632"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629192"
 ---
-# <a name="list-unifiedroledefinitions"></a>Список унифицированныхRoleDefinitions
+# <a name="list-unifiedroledefinitions"></a>Перечисление unifiedRoleDefinitions
 
 Пространство имен: microsoft.graph
 
 Получите список объектов [unifiedRoleDefinition](../resources/unifiedroledefinition.md) для поставщика.
 
+В настоящее время поддерживаются следующие поставщики RBAC:
+- каталог (Azure AD)
+- управление правами (Azure AD)
+
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+### <a name="for-the-directory-azure-ad-provider"></a>Для поставщика каталога (Azure AD)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -28,12 +34,29 @@ ms.locfileid: "63672632"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
+
+### <a name="for-the-entitlement-management-provider"></a>Для поставщика прав на управление правами
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Не поддерживается. |
+
 ## <a name="http-request"></a>HTTP-запрос
+
+Список определений ролей для поставщика каталогов:
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /roleManagement/directory/roleDefinitions
+```
+
+Список определений ролей для поставщика управления правами:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/entitlementManagement/roleDefinitions
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -43,7 +66,7 @@ GET /roleManagement/directory/roleDefinitions
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

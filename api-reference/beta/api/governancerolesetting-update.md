@@ -1,31 +1,31 @@
 ---
-title: Обновление управленияRoleSetting
+title: Обновление governanceRoleSetting
 description: Обновление свойств governanceRoleSetting.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: d92382a056ec666480508c7afb94d0006b527cb6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+author: japere
+ms.openlocfilehash: 5638532dd97fec4e19cfb19d1b1bf3f19c481f19
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62108818"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510452"
 ---
-# <a name="update-governancerolesetting"></a>Обновление управленияRoleSetting
+# <a name="update-governancerolesetting"></a>Обновление governanceRoleSetting
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Обновление свойств [governanceRoleSetting.](../resources/governancerolesetting.md)
+Обновление свойств [governanceRoleSetting](../resources/governancerolesetting.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
 
->**Примечание:** Этот API также требует, чтобы у запрашиваемой стороны было по крайней мере одно назначение роли администратора `Active` `owner` `user access administrator` (или) на ресурсе.
+>**Примечание:** Этот API также требует, `Active` чтобы у запрашиваемой стороны было по крайней мере одно назначение роли администратора (`owner` или `user access administrator`) на ресурсе.
 
 |Тип разрешения      | Разрешения              |
 |:--------------------|:---------------------------------------------------------|
@@ -68,8 +68,8 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 | Content-Type  | application/json|
 
 
-## <a name="request-body"></a>Тело запроса
-В теле запроса укажи значения [для governanceRuleSettings,](../resources/governancerulesetting.md) которые необходимо обновить. 
+## <a name="request-body"></a>Текст запроса
+В теле запроса укажи значения [для governanceRuleSettings](../resources/governancerulesetting.md) , которые необходимо обновить. 
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
@@ -86,8 +86,8 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 
 |Код ошибки     | Сообщение об ошибке         | Details             |
 |:--------------| :---------------------|:--------------------|
-| 400 BadRequest| RoleSettingNotFound   | В системе не существует системы [governanceRoleSetting.](../resources/governancerolesetting.md)
-| 400 BadRequest| InvalidRoleSetting    | Значения [governanceRuleSettings,](../resources/governancerulesetting.md) предоставляемые в теле запроса, не допустимы.
+| 400 BadRequest| RoleSettingNotFound   | В [системе не существует системы governanceRoleSetting](../resources/governancerolesetting.md) .
+| 400 BadRequest| InvalidRoleSetting    | Значения [governanceRuleSettings](../resources/governancerulesetting.md) , предоставляемые в теле запроса, не допустимы.
 
 ## <a name="example"></a>Пример 
 В этом примере обновляется параметр роли для настраиваемой роли 3 в подписке Wingtip Toys - Prod.

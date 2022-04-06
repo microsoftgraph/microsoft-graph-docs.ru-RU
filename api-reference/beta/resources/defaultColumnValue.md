@@ -6,12 +6,12 @@ title: DefaultColumnValue
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 2ba670e93db2fc1c5284c309d23710f0ee4a23ff
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 3c45329a44a5023b10950f49ef568d8be071e6db
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62291178"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723509"
 ---
 # <a name="defaultcolumnvalue-resource-type"></a>Тип ресурса defaultColumnValue
 
@@ -25,6 +25,7 @@ ms.locfileid: "62291178"
 ## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже показано представление ресурса **defaultColumnValue** в формате JSON.
+
 <!-- { "blockType": "resource", "@type": "microsoft.graph.defaultColumnValue" } -->
 
 ```json
@@ -36,10 +37,10 @@ ms.locfileid: "62291178"
 
 ## <a name="properties"></a>Свойства
 
-| Имя свойства | Тип   | Описание
-|:--------------|:-------|:----------------------------------------------------
-| **formula**   | string | Формула, используемая для вычисления значения, используемого по умолчанию, для данного столбца.
-| **value**     | string | Непосредственное значение, которое необходимо применять в качестве значения, используемого по умолчанию, для данного столбца.
+| Свойство    | Тип   | Описание                                                    |
+| :---------- | :----- | :------------------------------------------------------------- |
+| **formula** | string | Формула, используемая для вычисления значения, используемого по умолчанию, для данного столбца. |
+| **value**   | string | Непосредственное значение, которое необходимо применять в качестве значения, используемого по умолчанию, для данного столбца.  |
 
 Одновременно можно указать только одну **формулу** или одно **значение**.
 
@@ -47,7 +48,6 @@ ms.locfileid: "62291178"
 Дополнительные сведения см. в статье [Примеры часто используемых формул в списках SharePoint][SPFormulas].
 
 [SPFormulas]: https://support.office.com/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
-
 
 <!--
 {
@@ -59,5 +59,3 @@ ms.locfileid: "62291178"
   "suppressions": []
 }
 -->
-
-

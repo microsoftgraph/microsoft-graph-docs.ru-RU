@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d50010b29407b900abb67034ff777436a37af46f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9c557ebe6aa66365742983b250c463f7976982c8
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133943"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670392"
 ---
 # <a name="list-directoryroles"></a>Перечисление объектов directoryRole
 
@@ -20,18 +20,18 @@ ms.locfileid: "62133943"
 
 Перечисление ролей каталога, активированных в клиенте.
 
-Эта операция возвращает только роли, которые были активированы. Роль активируется, когда администратор активирует роль с помощью API [Activat directoryRole.](directoryrole-post-directoryroles.md) Не все встроенные роли изначально активируются. 
+Эта операция возвращает только роли, которые были активированы. Роль активируется, когда администратор активирует роль с помощью API [Activat directoryRole](directoryrole-post-directoryroles.md) . Не все встроенные роли изначально активируются. 
 
-При назначении роли с помощью портала Azure шаг активации роли неявно делается от имени администратора. Чтобы получить полный список ролей, доступных в Azure AD, используйте [list directoryRoleTemplates.](directoryroletemplate-list.md)
+При назначении роли с помощью портала Azure шаг активации роли неявно делается от имени администратора. Чтобы получить полный список ролей, доступных в Azure AD, используйте [list directoryRoleTemplates](directoryroletemplate-list.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,14 +39,14 @@ ms.locfileid: "62133943"
 GET /directoryRoles
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$count` параметры `$select` запроса , `$search` , , ( `$filter` и `eq` `$expand` [OData,](/graph/query-parameters) чтобы помочь настроить ответ.
+Этот метод поддерживает `$count`параметры запросов , `$select`, ( `$search``$filter` (`eq`) `$expand` и [OData](/graph/query-parameters), чтобы помочь настроить ответ.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

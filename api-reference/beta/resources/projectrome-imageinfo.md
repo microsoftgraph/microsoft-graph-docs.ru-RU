@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Имажеинфо
-description: Сложный тип для представления свойства " **атрибуты** " в части висуалинфо объекта Activity.
-localization_priority: Normal
+title: тип ресурса imageInfo
+description: Сложный тип для представления свойства **атрибуции** в visualInfo части объекта действия.
+ms.localizationpriority: medium
 ms.prod: project-rome
 doc_type: resourcePageType
 author: ailae
-ms.openlocfilehash: d94e67ecf590198afff31768e550d6b4454dc4bc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a123ea442fe4309ea96962b4155e0f36909fee7b
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026518"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723772"
 ---
-# <a name="imageinfo-resource-type"></a>Тип ресурса Имажеинфо
+# <a name="imageinfo-resource-type"></a>тип ресурса imageInfo
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сложный тип для представления свойства " **атрибуты** " в части [висуалинфо](../resources/projectrome-visualinfo.md) объекта [Activity](../resources/projectrome-activity.md) .
+Сложный тип для представления свойства **атрибуции** в [visualInfo](../resources/projectrome-visualinfo.md) части [объекта действия](../resources/projectrome-activity.md) .
 
 ## <a name="properties"></a>Свойства
 
-|Имя | Тип | Описание|
-|:----|:-----|:-----------|
-|iconUrl | String | Необязательно URI, указывающий на значок, представляющий приложение, используемое для создания действия.|
-|алтернатетекст | String | Необязательно доступное для изображения содержимое с замещающим текстом|
-|аддимажекуери | Boolean | Необязательно параметр, указывающий на то, что сервер может динамически отображать изображение в ответ на параметризация. Например, изображение с высокой контрастностью|
+| Свойство      | Тип    | Описание                                                                                                                                              |
+| :------------ | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| iconUrl       | String  | Необязательный; URI, который указывает на значок, который представляет приложение, используемую для создания действия                                                      |
+| alternateText | String  | Необязательный; alt-text accessible content for the image                                                                                                      |
+| addImageQuery | Boolean | Необязательный; параметр, используемый для того, чтобы указать, что сервер может динамически отрисовки изображения в ответ на параметризацию. Например— изображение с высоким контрастом |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -53,6 +53,7 @@ ms.locfileid: "48026518"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -63,5 +64,3 @@ ms.locfileid: "48026518"
   "suppressions": []
 }
 -->
-
-

@@ -5,18 +5,19 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c7756e775e53256ff51c9a980618f82ba4d4f29f
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: 5fee209f3fdced792cc12ee4ea2e12f45f67e7dd
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014238"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63757873"
 ---
 # <a name="list-staffmembers"></a>Список staffMembers
 
 Пространство имен: microsoft.graph
 
-Получите список объектов [bookingStaffMember](../resources/bookingstaffmember.md) в указанном [bookingBusiness.](../resources/bookingbusiness.md)
+Получите список объектов [bookingStaffMember](../resources/bookingstaffmember.md) в указанном [bookingBusiness](../resources/bookingbusiness.md).
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -32,19 +33,23 @@ ms.locfileid: "62014238"
 GET /solutions/bookingBusinesses/{id}/staffMembers
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметры $count и $expand [OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$count` и `$expand` для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {код}. Обязательно.|
+| Авторизация  | Носитель {code}. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
+
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов bookingStaffMember](../resources/bookingstaffmember.md) в тексте ответа.
+В случае успешной работы этот `200 OK` метод возвращает код отклика и коллекцию [объектов bookingStaffMember](../resources/bookingstaffmember.md) в тексте ответа.
+
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 <!-- {
@@ -55,6 +60,7 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdel
 ```
 
 ### <a name="response"></a>Отклик
+
 Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

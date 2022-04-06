@@ -5,12 +5,12 @@ author: akjo
 doc_type: resourcePageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: ff6a364ed21286d2fb01791bc0ccef0997f3ab5f
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
-ms.translationtype: HT
+ms.openlocfilehash: 709795ce885c5cad231d4aee289f2af18dc6d68a
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262227"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685189"
 ---
 # <a name="userteamwork-resource-type"></a>Тип ресурса userTeamwork
 
@@ -36,6 +36,7 @@ ms.locfileid: "62262227"
 | Связь | Тип | Описание |
 |:---------------|:--------|:----------|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|Приложения, установленные в личной области пользователя.|
+|associatedTeams|[коллекция associatedTeamInfo](associatedteaminfo.md)| Список [связанных объектовTeamInfo](associatedteaminfo.md) , с [которых](user.md) связан пользователь.|
 
 ## <a name="json-representation"></a>Представление JSON
 

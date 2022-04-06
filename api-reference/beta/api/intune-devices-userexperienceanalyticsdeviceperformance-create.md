@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 67b3f73a633cdff7a411d85851ef2cf1856a1083
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: b43716ae6a7122d8de198a228953cbfcea7449ce
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62290674"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629843"
 ---
 # <a name="create-userexperienceanalyticsdeviceperformance"></a>Создание userExperienceAnalyticsDevicePerformance
 
@@ -29,7 +29,7 @@ ms.locfileid: "62290674"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,11 +53,11 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор устройства загрузки загрузочного устройства для аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор устройства загрузки загрузочного устройства для аналитики пользовательского интерфейса.|
 |deviceName|String|Имя устройства аналитики пользовательского интерфейса.|
 |model|String|Модель устройства аналитики пользовательских интерфейсов.|
 |manufacturer|String|Производитель устройств аналитики пользовательских интерфейсов.|
-|diskType|[diskType](../resources/intune-devices-disktype.md)|Тип диска для аналитики пользовательского интерфейса устройства. Возможные значения: `hdd`, `ssd`, `unknown`.|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|Тип диска для аналитики пользовательского интерфейса устройства. Возможные значения: `unknown`, `hdd`, `ssd`, `unknownFutureValue`.|
 |operatingSystemVersion|String|Версия операционной системы для аналитики пользовательского интерфейса устройства.|
 |bootScore|Int32|Оценка загрузки устройства для аналитики пользовательского интерфейса.|
 |coreBootTimeInMs|Int32|Основное время загрузки устройства для аналитики пользовательского интерфейса в миллисекунд.|
@@ -70,10 +70,10 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 |responsiveDesktopTimeInMs|Int32|Аналитика пользовательского интерфейса реагирует на время рабочего стола в миллисекунд.|
 |blueScreenCount|Int32|Количество синих экранов за последние 14 дней. Допустимые значения от 0 до 9999999|
 |restartCount|Int32|Количество перезапусков за последние 14 дней. Допустимые значения от 0 до 9999999|
-|averageBlueScreens|Double|Среднее (среднее) число синих экранов на устройство за последние 14 дней. Допустимые значения от 0 до 9999999|
-|averageRestarts|Double|Среднее (среднее) число перезапусков на устройство за последние 14 дней. Допустимые значения от 0 до 9999999|
-|startupPerformanceScore|Double|Оценка производительности запуска устройства для аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|modelStartupPerformanceScore|Double|Оценка производительности запуска модели аналитики пользовательской модели. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|averageBlueScreens|Двойное с плавающей точкой|Среднее (среднее) число синих экранов на устройство за последние 14 дней. Допустимые значения от 0 до 9999999|
+|averageRestarts|Двойное с плавающей точкой|Среднее (среднее) число перезапусков на устройство за последние 14 дней. Допустимые значения от 0 до 9999999|
+|startupPerformanceScore|Двойное с плавающей точкой|Оценка производительности запуска устройства для аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|modelStartupPerformanceScore|Двойное с плавающей точкой|Оценка производительности запуска модели аналитики пользовательской модели. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 
 
 
@@ -94,7 +94,7 @@ Content-length: 739
   "deviceName": "Device Name value",
   "model": "Model value",
   "manufacturer": "Manufacturer value",
-  "diskType": "ssd",
+  "diskType": "hdd",
   "operatingSystemVersion": "Operating System Version value",
   "bootScore": 9,
   "coreBootTimeInMs": 0,
@@ -127,7 +127,7 @@ Content-Length: 788
   "deviceName": "Device Name value",
   "model": "Model value",
   "manufacturer": "Manufacturer value",
-  "diskType": "ssd",
+  "diskType": "hdd",
   "operatingSystemVersion": "Operating System Version value",
   "bootScore": 9,
   "coreBootTimeInMs": 0,

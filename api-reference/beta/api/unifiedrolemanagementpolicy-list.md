@@ -1,16 +1,16 @@
 ---
 title: Список унифицированныхRoleManagementPolicies
 description: Получите список объектов unifiedRoleManagementPolicy и их свойств.
-author: japere
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0ee14bcd9dd97689c1260b1f681be7a13ed8d0e1
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 12bdee34ff2abf81db65bb8f32f23aafe89a82f2
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510374"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670056"
 ---
 # <a name="list-unifiedrolemanagementpolicies"></a>Список унифицированныхRoleManagementPolicies
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "64510374"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
+|Для приложений|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 

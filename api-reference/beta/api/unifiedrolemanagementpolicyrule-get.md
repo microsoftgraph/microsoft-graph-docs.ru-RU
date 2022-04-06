@@ -1,21 +1,21 @@
 ---
 title: Get unifiedRoleManagementPolicyRule
 description: Ознакомьтесь с свойствами и отношениями объекта unifiedRoleManagementPolicyRule.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 038fa406c41fd76ed914b69ed48a5f92a0e80213
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c820f6137371ebd5987f97a52a104ed46dbd2cc5
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132634"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510599"
 ---
 # <a name="get-unifiedrolemanagementpolicyrule"></a>Get unifiedRoleManagementPolicyRule
 Пространство имен: microsoft.graph
 
-Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleManagementPolicyRule.](../resources/unifiedrolemanagementpolicyrule.md)
+Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,12 +45,12 @@ GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/effectiveRu
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и `200 OK` объект [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) в тексте ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код ответа и объект [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

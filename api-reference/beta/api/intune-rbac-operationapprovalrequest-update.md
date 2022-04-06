@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 68dd7303e9b444d35b4d3183043b498236d39393
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 64a6edcb4c012ba318b09726850e6fd9b9dcecba
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61339677"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630837"
 ---
 # <a name="update-operationapprovalrequest"></a>Обновление операцииApprovalRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "61339677"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [operationApprovalRequest.](../resources/intune-rbac-operationapprovalrequest.md)
+Обновление свойств объекта [operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "61339677"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,13 +43,13 @@ PATCH /deviceManagement/operationApprovalRequests/{operationApprovalRequestId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для [объекта operationApprovalRequest.](../resources/intune-rbac-operationapprovalrequest.md)
+В теле запроса поставляем представление JSON для [объекта operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) .
 
-В следующей таблице показаны свойства, необходимые при создании [операцииApprovalRequest.](../resources/intune-rbac-operationapprovalrequest.md)
+В следующей таблице показаны свойства, необходимые при создании [операцииApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -61,12 +61,13 @@ PATCH /deviceManagement/operationApprovalRequests/{operationApprovalRequestId}
 |одобрение|[identitySet](../resources/intune-rbac-identityset.md)|Удостоверение утвержденного. Это свойство доступно только для чтения.|
 |status|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|Текущий статус запроса на утверждение. Это свойство доступно только для чтения. Возможные значения: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`.|
 |requestJustification|Строка|Обоснование запроса. Это свойство доступно только для чтения.|
-|approvalJustification|String|Обоснование утверждения запроса. Это свойство доступно только для чтения.|
+|approvalJustification|Строка|Обоснование утверждения запроса. Это свойство доступно только для чтения.|
+|operationApprovalPolicies|Строка|Политики оперативного утверждения, используемые в запросе. Это свойство доступно только для чтения.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) в тексте ответа.
+В случае успешной работы `200 OK` этот метод возвращает код ответа и обновленный объект [operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -75,7 +76,7 @@ PATCH /deviceManagement/operationApprovalRequests/{operationApprovalRequestId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/operationApprovalRequests/{operationApprovalRequestId}
 Content-type: application/json
-Content-length: 1346
+Content-length: 1415
 
 {
   "@odata.type": "#microsoft.graph.operationApprovalRequest",
@@ -119,7 +120,8 @@ Content-length: 1346
   },
   "status": "needsApproval",
   "requestJustification": "Request Justification value",
-  "approvalJustification": "Approval Justification value"
+  "approvalJustification": "Approval Justification value",
+  "operationApprovalPolicies": "Operation Approval Policies value"
 }
 ```
 
@@ -128,7 +130,7 @@ Content-length: 1346
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1459
+Content-Length: 1528
 
 {
   "@odata.type": "#microsoft.graph.operationApprovalRequest",
@@ -174,7 +176,8 @@ Content-Length: 1459
   },
   "status": "needsApproval",
   "requestJustification": "Request Justification value",
-  "approvalJustification": "Approval Justification value"
+  "approvalJustification": "Approval Justification value",
+  "operationApprovalPolicies": "Operation Approval Policies value"
 }
 ```
 

@@ -5,12 +5,12 @@ description: Получите список входных записей пол�
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 699ca644b3c968953c36eff155440dea198aefd0
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6aaf95669860d39ca7d26e1bae2301560e2041c8
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095951"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63757784"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -18,9 +18,9 @@ ms.locfileid: "62095951"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список [объектов signIn.](../resources/signin.md) В списке содержатся входы пользователя для Azure Active Directory клиента. Входы, в которых имя пользователя и пароль передаются в рамках маркера авторизации, и успешные федераированные входы в настоящее время включены в журналы входа.
+Получите список [объектов signIn](../resources/signin.md) . В списке содержатся входные записи пользователя для Azure Active Directory клиента. Входы, в которых имя пользователя и пароль передаются в рамках маркера авторизации, и успешные федераированные входы в настоящее время включены в журналы входа.
 
-Максимальный и по умолчанию размер страницы — 1000 объектов, и по умолчанию самые последние входы возвращаются первыми. Доступны только события, произошедшие в течение периода хранения Azure Active Directory [](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) по умолчанию (Azure AD).
+Максимальный и по умолчанию размер страницы — 1000 объектов, и по умолчанию самые последние входы возвращаются первыми. Доступны только события, произошедшие в течение Azure Active Directory по умолчанию (Azure AD). [](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,14 +30,14 @@ ms.locfileid: "62095951"
 |:--------------- |:------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-| Приложение | AuditLog.Read.All и Directory.Read.All | 
+| Для приложений | AuditLog.Read.All и Directory.Read.All | 
 
 > [!IMPORTANT]
 > Этот API имеет [известные](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
 
 Приложения должны быть [правильно зарегистрированы в](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD.
 
-Помимо делегирования разрешений, пользователю, входиму в который, необходимо принадлежать к одной из следующих ролей каталога, которая позволяет ему читать отчеты о входе. Дополнительные информацию о роли каталогов см. в встроенной роли [Azure AD:](/azure/active-directory/roles/permissions-reference)
+Помимо делегирования разрешений, пользователю, входиму в который, необходимо принадлежать к одной из следующих ролей каталога, которая позволяет ему читать отчеты о входе. Дополнительные информацию о роли каталогов см. в [встроенных ролях Azure AD](/azure/active-directory/roles/permissions-reference):
 + Глобальный администратор
 + Глобальный читатель
 + Читатель отчетов
@@ -53,7 +53,7 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$top` параметры `$skiptoken` запроса OData и OData для настройки `$filter` ответа. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$top`запроса OData `$skiptoken``$filter` и OData для настройки ответа. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -61,13 +61,13 @@ GET auditLogs/signIns
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [signIn](../resources/signin.md) в тексте отклика. Коллекция объектов указана в порядке убывания на основе **createdDateTime.**
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [signIn](../resources/signin.md) в тексте отклика. Коллекция объектов указана в порядке убывания на основе **createdDateTime**.
 
 ## <a name="examples"></a>Примеры
 
@@ -240,7 +240,7 @@ Content-type: application/json
 
 ### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-azure"></a>Пример 2. Извлечение первых 10 входов в приложения с помощью appDisplayName, которое начинается с "Azure"
 
-В этом примере объект ответа показывает, что пользователь подписался только с помощью основного метода проверки подлинности — облачного пароля. Ответ включает свойство, содержаное URL-адрес, который можно использовать для получения `@odata.nextLink` следующих 10 результатов.
+В этом примере объект ответа показывает, что пользователь подписался только с помощью основного метода проверки подлинности — облачного пароля. Ответ включает свойство, `@odata.nextLink` содержаное URL-адрес, который можно использовать для получения следующих 10 результатов.
 
 #### <a name="request"></a>Запрос
 
@@ -387,5 +387,194 @@ Content-type: application/json
       "sessionLifetimePolicies":[]
     }
   ]
+}
+```
+
+
+
+### <a name="example-3-retrieve-the-first-10-sign-ins-where-the-signineventtype-is-not-interactiveuser-starting-with-the-latest-sign-in"></a>Пример 3. Извлечение первых 10 входов, в которых signInEventType не является interactiveUser, начиная с последнего входного
+
+В этом примере ответ `@odata.nextLink` включает свойство, содержаное URL-адрес, который можно использовать для получения следующих 10 результатов.
+
+#### <a name="request"></a>Запрос
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_signins_ne_nonInteractiveUser"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=(signInEventTypes/any(t: t ne 'interactiveUser'))&$orderBy=createdDateTime DESC&$top=10
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-signins-ne-noninteractiveuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-signins-ne-noninteractiveuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-signins-ne-noninteractiveuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signins-ne-noninteractiveuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-signins-ne-noninteractiveuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-signins-ne-noninteractiveuser-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.signIn"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/auditLogs/signins?$filter=(signInEventTypes%2fany(t%3a+t+ne+%27interactiveUser%27))&$top=10&$orderBy=createdDateTime+DESC&$skiptoken=186ac5626b89ae2a991ff26b674ac381be50b941a40542cb66f8136f2887275b",
+    "value": [
+        {
+            "id": "ef1e1fcc-80bd-489b-82c5-16ad80770e00",
+            "createdDateTime": "2022-03-18T18:13:37Z",
+            "userDisplayName": "MOD Administrator",
+            "userPrincipalName": "admin@contoso.com",
+            "userId": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e",
+            "appId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+            "appDisplayName": "Graph Explorer",
+            "ipAddress": "197.178.9.154",
+            "ipAddressFromResourceProvider": null,
+            "clientAppUsed": "Browser",
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36",
+            "correlationId": "17b4f05d-3659-42b8-856d-99322911d398",
+            "conditionalAccessStatus": "notApplied",
+            "originalRequestId": "",
+            "isInteractive": false,
+            "tokenIssuerName": "",
+            "tokenIssuerType": "AzureAD",
+            "processingTimeInMilliseconds": 132,
+            "riskDetail": "none",
+            "riskLevelAggregated": "none",
+            "riskLevelDuringSignIn": "none",
+            "riskState": "none",
+            "riskEventTypes_v2": [],
+            "resourceDisplayName": "Microsoft Graph",
+            "resourceId": "00000003-0000-0000-c000-000000000000",
+            "resourceTenantId": "84841066-274d-4ec0-a5c1-276be684bdd3",
+            "homeTenantId": "84841066-274d-4ec0-a5c1-276be684bdd3",
+            "homeTenantName": "",
+            "authenticationMethodsUsed": [],
+            "authenticationRequirement": "singleFactorAuthentication",
+            "signInIdentifier": "",
+            "signInIdentifierType": null,
+            "servicePrincipalName": "",
+            "signInEventTypes": [
+                "nonInteractiveUser"
+            ],
+            "servicePrincipalId": "",
+            "federatedCredentialId": "",
+            "userType": "member",
+            "flaggedForReview": false,
+            "isTenantRestricted": false,
+            "autonomousSystemNumber": 33771,
+            "crossTenantAccessType": "none",
+            "servicePrincipalCredentialKeyId": "",
+            "servicePrincipalCredentialThumbprint": "",
+            "uniqueTokenIdentifier": "ZWYxZTFmY2MtODBiZC00ODliLTgyYzUtMTZhZDgwNzcwZTAw",
+            "incomingTokenType": "none",
+            "authenticationProtocol": "none",
+            "resourceServicePrincipalId": "943603e4-e787-4fe9-93d1-e30f749aae39",
+            "mfaDetail": null,
+            "status": {
+                "errorCode": 0,
+                "failureReason": "Other.",
+                "additionalDetails": null
+            },
+            "deviceDetail": {
+                "deviceId": "eab73519-780d-4d43-be6d-a4a89af2a348",
+                "displayName": "DESKTOP-LK3PESR",
+                "operatingSystem": "Windows 10",
+                "browser": "Chrome 99.0.4844",
+                "isCompliant": false,
+                "isManaged": false,
+                "trustType": "Azure AD registered"
+            },
+            "location": {
+                "city": "Mombasa",
+                "state": "Coast",
+                "countryOrRegion": "KE",
+                "geoCoordinates": {}
+            },
+            "appliedConditionalAccessPolicies": [
+                {
+                    "id": "80290cf6-04c8-4a25-8252-2b4d7d88228a",
+                    "displayName": "Exchange Online Requires Compliant Device",
+                    "enforcedGrantControls": [],
+                    "enforcedSessionControls": [],
+                    "result": "notEnabled",
+                    "conditionsSatisfied": "none",
+                    "conditionsNotSatisfied": "none",
+                    "includeRulesSatisfied": [],
+                    "excludeRulesSatisfied": []
+                },
+                {
+                    "id": "a00746d4-8c33-47f7-b120-91936b367a54",
+                    "displayName": "Office 365 App Control",
+                    "enforcedGrantControls": [],
+                    "enforcedSessionControls": [],
+                    "result": "notEnabled",
+                    "conditionsSatisfied": "none",
+                    "conditionsNotSatisfied": "none",
+                    "includeRulesSatisfied": [],
+                    "excludeRulesSatisfied": []
+                }
+            ],
+            "authenticationProcessingDetails": [
+                {
+                    "key": "Root Key Type",
+                    "value": "Unknown"
+                },
+                {
+                    "key": "Oauth Scope Info",
+                    "value": "[\"Application.ReadWrite.All\",\"AppRoleAssignment.ReadWrite.All\",\"DelegatedPermissionGrant.ReadWrite.All\",\"Directory.ReadWrite.All\",\"openid\",\"profile\",\"RoleManagement.Read.Directory\",\"User.Read\",\"email\",\"AuditLog.Read.All\"]"
+                }
+            ],
+            "networkLocationDetails": [
+                {
+                    "networkType": "namedNetwork",
+                    "networkNames": [
+                        "Suspicious countries"
+                    ]
+                }
+            ],
+            "authenticationDetails": [],
+            "authenticationRequirementPolicies": [],
+            "sessionLifetimePolicies": [],
+            "privateLinkDetails": {
+                "policyId": "",
+                "policyName": "",
+                "resourceId": "",
+                "policyTenantId": ""
+            }
+        }
+    ]
 }
 ```

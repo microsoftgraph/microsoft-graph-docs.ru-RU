@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b37494d1c57d6a202d109c8d8c9c701a4622da5f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bff60a30b7bb22995eb2df470672b56081155311
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114665"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672142"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -27,7 +27,7 @@ ms.locfileid: "62114665"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -56,8 +56,8 @@ POST /users
 |displayName |string |Имя, которое следует отобразить в адресной книге для пользователя.|
 |onPremisesImmutableId |string |Необходимо указывать только при создании учетной записи пользователя, если вы используете федеративный домен для свойства userPrincipalName (UPN) этого пользователя.|
 |mailNickname |string |Почтовый псевдоним для пользователя.|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |Пароль для профиля пользователя. Для клиентов Azure B2C следует присвоить свойству **forceChangePasswordNextSignIn** значение `false` и использовать настраиваемые политики для принудительного сброса пароля при первом входе.|
-|userPrincipalName |string |Имя участника-пользователя (polzovatel@contoso.com). Это имя пользователя для входа через Интернет в соответствии с интернет-стандартом RFC 822. В соответствии с соглашением оно должно указывать на имя пользователя для электронной почты. Общий формат: псевдоним@домен. При этом домен должен входить в коллекцию проверенных доменов клиента. Доступ к проверенным доменам клиента можно получить с помощью свойства **verifiedDomains** объекта [organization](../resources/organization.md). <br>ПРИМЕЧАНИЕ. Это свойство не может содержать диакритические знаки. Разрешены только следующие символы: `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. Полный список разрешенных символов см. в [политиках имен пользователей](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts).|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |Профиль пароля для пользователя. Для клиентов Azure B2C следует присвоить свойству **forceChangePasswordNextSignIn** значение `false` и использовать настраиваемые политики для принудительного сброса пароля при первом входе.|
+|userPrincipalName |string |Имя субъекта-пользователя (polzovatel@contoso.com). Это имя используется для входа через Интернет по стандарту RFC 822. В соответствии с соглашением оно должно указывать на имя пользователя для электронной почты. Общий формат: псевдоним@домен, при этом домен должен входить в совокупность проверенных доменов клиента. Доступ к проверенным доменам клиента можно получить с помощью свойства **verifiedDomains** объекта [organization](../resources/organization.md).<br>ПРИМЕЧАНИЕ. Это свойство не может содержать диакритические знаки. Разрешены только следующие символы: `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. Полный список разрешенных символов см. в [политиках имен пользователей](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts).|
 
 Так как ресурс **user** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными в экземпляр user при его создании.
 

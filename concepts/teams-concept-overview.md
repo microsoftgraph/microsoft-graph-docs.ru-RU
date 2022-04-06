@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 64a314223a333b5ba945ed10426a5ea4bce83283
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: f0bed81ec3857dcb2ef7678b4ff1b1644e0eaae2
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477953"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510506"
 ---
 # <a name="microsoft-teams-api-overview"></a>Обзор API Microsoft Teams
 
@@ -24,7 +24,7 @@ ms.locfileid: "64477953"
 
 ### <a name="automate-team-lifecycles"></a>Автоматизация жизненных циклов команд
 
-Если у вас возникла новая бизнес-проблема, с помощью Microsoft Graph вы можете [создать виртуальную команду](/graph/api/team-put-teams), [добавить в нее нужных пользователей](/graph/api/group-post-members) и настроить [каналы](/graph/api/channel-post), [вкладки](/graph/teams-configuring-builtin-tabs) и [приложения](/graph/api/teamsappinstallation-add) для команды.
+Если у вас возникла новая бизнес-проблема, с помощью Microsoft Graph вы можете [создать виртуальную команду](/graph/api/team-put-teams), [добавить в нее нужных пользователей](/graph/api/group-post-members) и настроить [каналы](/graph/api/channel-post), [вкладки](/graph/teams-configuring-builtin-tabs) и [приложения](/graph/api/team-post-installedapps) для команды.
 Если вы хотите привлечь участников команды к обсуждению бизнес-проблемы, [добавьте новое событие](/graph/api/group-post-events) в календарь команды.
 
 ![Автоматизируйте жизненные циклы команды путем создания команды, добавления участников и владельцев, настройки параметров команды, добавления каналов, установки приложений, добавления вкладок и архивирования или удаления команды в нужное время.](images/teams-lifecycle.png)

@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Ресурс DriveItemVersion представляет определенную версию элемента DriveItem.
 ms.date: 09/17/2017
 title: DriveItemVersion
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: ae02fdd643f0aaa0f085f96e7c08adae50a81c63
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d6f2245fe02657d883d1e6646ac6ff6fce0187ea
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979627"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723164"
 ---
 # <a name="driveitemversion-resource-type"></a>Тип ресурса DriveItemVersion
 
@@ -21,16 +21,15 @@ ms.locfileid: "47979627"
 
 Ресурс **DriveItemVersion** представляет определенную версию элемента [DriveItem](driveitem.md).
 
-
 ## <a name="tasks-on-driveitemversion-resources"></a>Задачи, которые можно выполнить для ресурсов DriveItemVersion
 
 Ниже перечислены задачи, доступные для ресурсов driveItemVersion.
 
-|            Стандартная задача             |         Метод HTTP         |
-| :--------------------------------- | :-------------------------- |
-| [Список версий][version-list]      | `GET /drive/items/{item-id}/versions`  |
-| [Получение версии][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
-| [Get contents][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
+| Стандартная задача                        | Метод HTTP                                                        |
+| :--------------------------------- | :----------------------------------------------------------------- |
+| [Список версий][version-list]      | `GET /drive/items/{item-id}/versions`                              |
+| [Получение версии][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`                 |
+| [Get contents][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content`         |
 | [Восстановление версии][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
 
 [version-list]: ../api/driveitem-list-versions.md
@@ -57,9 +56,9 @@ ms.locfileid: "47979627"
 
 ## <a name="properties"></a>Свойства
 
-|      Имя свойства       |                         Тип                         |                               Описание                               |
+| Свойство                 | Тип                                                 | Описание                                                             |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | Идентификатор версии. Только для чтения.                                       |
+| **id**                   | строка                                               | Идентификатор версии. Только для чтения.                                       |
 | **lastModifiedBy**;       | [IdentitySet](../resources/identityset.md)           | Удостоверение пользователя, который последним изменил версию. Только для чтения.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Дата и время последнего изменения версии. Только для чтения.                 |
 | **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Указывает состояние публикации конкретной версии. Только для чтения. |
@@ -69,9 +68,9 @@ ms.locfileid: "47979627"
 
 В таблице ниже определены связи между ресурсом **driveItemVersion** и другими ресурсами.
 
-| Имя связи |  Тип  |            Описание             |
-| :---------------- | :----- | :--------------------------------- |
-| **content**       | Stream | Поток контента версии. |
+| Связь | Тип   | Описание                        |
+| :----------- | :----- | :--------------------------------- |
+| **content**  | Stream | Поток контента версии. |
 
 <!--
 {
@@ -83,5 +82,3 @@ ms.locfileid: "47979627"
   "suppressions": []
 }
 -->
-
-

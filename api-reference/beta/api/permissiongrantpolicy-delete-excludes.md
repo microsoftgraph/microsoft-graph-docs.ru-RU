@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 385a7bb22d88eb7e18dca4a5791c553092f1ae75
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: af85fd35050b9fb8c2c1c21faa5a7a05bd0bddfd
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137114"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509422"
 ---
 # <a name="delete-permissiongrantconditionset-from-excludes-collection-of-permissiongrantpolicy"></a>Удаление permissionGrantConditionSet из исключения коллекции разрешенийGrantPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "62137114"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) из  исключенной коллекции [permissionGrantPolicy.](../resources/permissiongrantpolicy.md)
+Удаляет [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) из исключенной **коллекции** [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "62137114"
 
 | Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись) | PermissionGrantPolicy.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись) | Policy.ReadWrite.PermissionGrant |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-| Приложение | PermissionGrantPolicy.ReadWrite.All |
+| Приложение | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ DELETE /policies/permissionGrantPolicies/{permissiongrantpolicy-id}/excludes/{ex
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -1,16 +1,16 @@
 ---
 title: 'вызов: cancelMediaProcessing'
 description: Отменяет обработку мультимедиа для выполнения операций playPrompt или recordResponse.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3d8e257382f347c7203d071fd017bcde698f01e4
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 3f2e20db5b503c5d74fca602c66edd864f617cd9
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339279"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607388"
 ---
 # <a name="call-cancelmediaprocessing"></a>вызов: cancelMediaProcessing
 
@@ -29,7 +29,9 @@ ms.locfileid: "62339279"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | Нет.                                       |
+| Для приложений                            | Calls.Initiate.All, Calls.AccessMedia.All |
+
+> **Примечание:** Разрешения проверяются при вызове; При вызове этого API не проводится дополнительная проверка разрешений. Calls.AccessMedia.All необходим только для вызовов, которые используют носители с использованием приложений.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: Удаление пакета
-description: Удаление пакета driveItems
+description: Удаление пакета driveItems.
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7edd748b0e1a1298ed950ce885fb92bbfcf56064
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f649bcda68e8eddfacecc24abd3ed5e0b80cb8bc
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60994705"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758153"
 ---
 # <a name="delete-bundle"></a>Удаление пакета
 
@@ -18,7 +18,7 @@ ms.locfileid: "60994705"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [пакета][] driveItems с помощью **его id.** Обратите внимание, что удаление пакета с помощью этого метода навсегда удаляет пакет и не перемещает его в корзину.
+Удалите [пакет][] driveItems с помощью **его id**. Обратите внимание, что удаление пакета с помощью этого метода навсегда удаляет пакет и не перемещает его в корзину.
 Однако он не удаляет элементы, на которые ссылается пакет.
 Они останутся в родительских папках.
 
@@ -44,23 +44,24 @@ DELETE /drive/items/{bundle-id}
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Authorization | Носитель \{токен\}. Обязательный. |
-| if-match      | eTag. Необязательный параметр. Если этот загон запроса включен, а предоставленный eTag (или cTag) не соответствует текущему тегу в пакете, возвращается ответ и пакет не `412 Precondition Failed` удаляется.
+| Авторизация | Bearer {token}. Обязательный. |
+| if-match      | eTag. Необязательное свойство. Если этот загон запроса включен, а предоставленный eTag (или cTag) не соответствует текущему тегу в пакете, `412 Precondition Failed` возвращается ответ и пакет не удаляется.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного запроса этот вызов возвращает отклик `204 No Content`, указывающий, что ресурс удален, поэтому данные не возвращаются.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
-Дополнительные сведения о возвращении ошибок см. в статье [Отклики с ошибками][error-response].
+Сведения об ответах на ошибки см. в Graph ответы на ошибки [и типы ресурсов][error-response].
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "delete-bundle" } -->
@@ -92,6 +93,8 @@ DELETE https://graph.microsoft.com/beta/drive/items/{bundle-id}
 
 
 ### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
 
 <!-- { "blockType": "response" } -->
 

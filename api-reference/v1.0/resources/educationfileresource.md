@@ -1,29 +1,34 @@
 ---
-title: тип ресурса educationFileResource
-description: Подкласс educationResource, который представляет объект файла, связанный с назначением или отправкой.
+title: Тип ресурса educationFileResource
+description: Подкласс educationResource, представляющий объект файла, связанный с назначением или отправкой.
 ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e0e101e1d21bd8e5aa205875a9f444678aeee218
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c89bac36d51ee07e1ecb81bb7f5ac462e8f30cc7
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036643"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684489"
 ---
-# <a name="educationfileresource-resource-type"></a>тип ресурса educationFileResource
+# <a name="educationfileresource-resource-type"></a>Тип ресурса educationFileResource
 
 Пространство имен: microsoft.graph
 
-Подкласс [educationResource,](educationresource.md) который представляет объект файла, связанный с назначением или отправкой.
+Подкласс [educationResource](educationresource.md) , представляющий объект файла, связанный с назначением или отправкой.
 
-В этом случае файл не является одним из специальных файлов (Word, Excel и т. д.), а является файлом, который не имеет специальной обработки в системе. Файловый ресурс должен храниться в **ресурсеFolder,** связанном с назначением или отправкой этого ресурса.
+В этом случае это не один из специальных файлов (Word, Excel и т. д.), а файл, который не имеет специальной обработки в системе. Файл ресурса должен храниться в **папке resourceFolder** , связанной с назначением или отправкой этого ресурса.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fileUrl|Строка|Расположение на диске файлового ресурса.|
+|fileUrl|String|Расположение на диске файлового ресурса.|
+|createdBy|String|Отображаемое имя пользователя, создавшего этот объект.|
+|createdDateTime|DateTimeOffset|Дата, когда была добавлена повторная ошибка.|
+|displayName|string|Отображаемое имя ресурса.|
+|lastModifiedBy|[identitySet](identityset.md)|Последний пользователь, который изменяет ресурс.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения ресурса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -39,7 +44,12 @@ ms.locfileid: "59036643"
 
 ```json
 {
-  "fileUrl": "String"
+  "fileUrl": "String",
+  "createdBy": "String (User)",
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "lastModifiedBy": "String (User)",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 ```

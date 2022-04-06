@@ -3,15 +3,15 @@ author: simonhult
 description: Ресурс personOrGroupColumn в ресурсе columnDefinition указывает, что значения столбца представляют человека или группу, выбранные в каталоге.
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 261ed729bc865b6679bf6dc9d08060148f32006a
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 2e35c461dcec7cac70af8b6591a4fcb251ccc8e2
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176411"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63720815"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Тип ресурса personOrGroupColumn
 
@@ -24,6 +24,7 @@ ms.locfileid: "50176411"
 ## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже показано представление ресурса **personOrGroupColumn** в формате JSON.
+
 <!-- { "blockType": "resource", "@type": "microsoft.graph.personOrGroupColumn", "@property.aka": "chooseFromType=format" } -->
 
 ```json
@@ -36,16 +37,16 @@ ms.locfileid: "50176411"
 
 ## <a name="properties"></a>Свойства
 
-| Имя свойства              | Тип    | Описание
-|:---------------------------|:--------|:--------------------------------------
-| **allowMultipleSelection** | boolean | Указывает, можно ли выбрать несколько значений в источнике.
-| **displayAs**              | string  | Указывает способ отображения сведений о выбранном человеке или группе. См. ниже.
-| **chooseFromType**         | string  | Указывает, что можно выбирать: только людей либо людей и группы. Должно иметь тип `peopleAndGroups` или `peopleOnly`.
+| Свойство                   | Тип    | Описание                                                                                                        |
+| :------------------------- | :------ | :----------------------------------------------------------------------------------------------------------------- |
+| **allowMultipleSelection** | boolean | Указывает, можно ли выбрать несколько значений в источнике.                                                 |
+| **displayAs**              | string  | Указывает способ отображения сведений о выбранном человеке или группе. См. ниже.                                        |
+| **chooseFromType**         | string  | Указывает, что можно выбирать: только людей либо людей и группы. Должно иметь тип `peopleAndGroups` или `peopleOnly`. |
 
-## <a name="displayas-values"></a>Значения displayAs
+## <a name="displayas-values"></a>DisplayAs values
 
-| Значение               | Описание                                                                                                 |
-|:------------------------------|:------------------------------------------------------------------------------------------------------------|
+| Значение                         | Описание                                                                                                 |
+| :---------------------------- | :---------------------------------------------------------------------------------------------------------- |
 | **account**                   | Необработанная закодированная строка утверждения SharePoint для человека или группы (например, `i:0#.f|membership|jane@contoso.com`). |
 | **department**                | Отдел человека или группы.                                                                           |
 | **firstName**                 | Имя человека.                                                                                    |
@@ -77,5 +78,3 @@ ms.locfileid: "50176411"
   "suppressions": []
 }
 -->
-
-

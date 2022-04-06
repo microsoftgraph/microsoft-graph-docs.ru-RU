@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: be0833fbed80f93e370812891bf44c81c10c350a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5cfd4a178eb24c7f14a3351bd76affc71ac77643
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125152"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63724014"
 ---
 # <a name="list-provisioningpolicies"></a>Список provisioningPolicies
 
@@ -18,7 +18,7 @@ ms.locfileid: "62125152"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список свойств и связей объектов [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
+Список свойств и связей объектов [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "62125152"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Для приложений|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` и `$filter` `$expand` параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select`и `$filter` параметры `$expand` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -51,13 +51,13 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код отклика и коллекцию объектов [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 ### <a name="response"></a>Отклик
 
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,10 +127,13 @@ Content-Type: application/json
           "type": "hybridAzureADJoin"
       },
       "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
+      "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
       "imageDisplayName": "Image Display Name value",
       "imageId": "Image ID value",
       "imageType":"custom",
-      "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
+      "windowsSettings": {
+        "language": "en-US"
+      }
     }
   ]
 }

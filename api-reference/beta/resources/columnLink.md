@@ -3,15 +3,15 @@ author: daspek
 description: Ресурс columnLink для объекта contentType связывает ресурс columnDefinition сайта с соответствующим типом контента.
 ms.date: 09/12/2017
 title: columnLink
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: f60392954cb1a214327edd4ffcc65449c6d976f0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ae75a605f8476b9ec25d5aab5cf50f1bf9508c95
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034065"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723530"
 ---
 # <a name="columnlink-resource-type"></a>Тип ресурса ColumnLink
 
@@ -26,21 +26,22 @@ ms.locfileid: "48034065"
 ## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже показано представление ресурса **columnLink** в формате JSON.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.columnLink" } -->
 
 ```json
 {
   "id": "string",
-  "name": "string"
+  "name&quot;: &quot;string"
 }
 ```
 
 ## <a name="properties"></a>Свойства
 
-| Имя свойства | Тип   | Описание
-|:--------------|:-------|:----------------------------------------------------
-| **id**        | string | Уникальный идентификатор столбца.
-| **name**      | string | Имя столбца в этом типе контента.
+| Свойство | Тип   | Описание                                   |
+| :------- | :----- | :-------------------------------------------- |
+| **id**   | строка | Уникальный идентификатор столбца.         |
+| **name** | строка | Имя столбца в этом типе контента. |
 
 <!--
 {
@@ -52,5 +53,3 @@ ms.locfileid: "48034065"
   "suppressions": []
 }
 -->
-
-

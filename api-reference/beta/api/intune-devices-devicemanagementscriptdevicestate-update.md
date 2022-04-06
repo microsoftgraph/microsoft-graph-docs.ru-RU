@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f1ca494d2c8b53fc224a16e5667d4ebb89a65759
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 73d8617725e5d2e1130cab883fa66b1da05745a4
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61341756"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630669"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>Обновление deviceManagementScriptDeviceState
 
@@ -20,7 +20,7 @@ ms.locfileid: "61341756"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [deviceManagementScriptDeviceState.](../resources/intune-devices-devicemanagementscriptdevicestate.md)
+Обновление свойств объекта [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "61341756"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,19 +46,19 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В корпусе запроса поставляем представление JSON для [объекта deviceManagementScriptDeviceState.](../resources/intune-devices-devicemanagementscriptdevicestate.md)
+В корпусе запроса поставляем представление JSON для [объекта deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) .
 
-В следующей таблице показаны свойства, необходимые при создании [устройстваManagementScriptDeviceState.](../resources/intune-devices-devicemanagementscriptdevicestate.md)
+В следующей таблице показаны свойства, необходимые при создании [устройстваManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта состояния скрипта устройства управления устройствами. Это свойство доступно только для чтения.|
-|runState|[runState](../resources/intune-shared-runstate.md)|Состояние последнего запуска сценария управления устройствами. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
-|resultMessage|String|Сведения о выходе выполнения.|
+|runState|[runState](../resources/intune-devices-runstate.md)|Состояние последнего запуска сценария управления устройствами. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|resultMessage|Строка|Сведения о выходе выполнения.|
 |lastStateUpdateDateTime|DateTimeOffset|Последний раз, когда выполняется скрипт управления устройствами.|
 |errorCode|Int32|Код ошибки, соответствующий ошибочному исполнению сценария управления устройствами.|
 |errorDescription|String|Описание ошибки, соответствующее ошибочному исполнению сценария управления устройствами.|
@@ -66,7 +66,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа и обновленный `200 OK` [объект deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) в тексте ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код ответа и обновленный [объект deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

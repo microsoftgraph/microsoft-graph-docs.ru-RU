@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Ресурс currencyColumn в ресурсе columnDefinition указывает, что значения столбца представляют денежные значения.
 ms.date: 09/11/2017
 title: currencyColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 4cd887d4ca7e38ff6d22189760adf12e1479acb9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 037a5f5a0e3c8e6f5b3a69e2dd1066c3960948ca
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050026"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722792"
 ---
 # <a name="currencycolumn-resource-type"></a>Тип ресурса currencyColumn
 
@@ -24,6 +24,7 @@ ms.locfileid: "48050026"
 ## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже показано представление ресурса **currencyColumn** в формате JSON.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.currencyColumn" } -->
 
 ```json
@@ -34,9 +35,9 @@ ms.locfileid: "48050026"
 
 ## <a name="properties"></a>Свойства
 
-| Имя свойства | Тип   | Описание
-|:--------------|:-------|:----------------------------------------------------
-| **locale**    | string | Указывает языковой стандарт, на основании которого требуется выбрать обозначение денежной единицы.
+| Свойство   | Тип   | Описание                                                   |
+| :--------- | :----- | :------------------------------------------------------------ |
+| **locale** | string | Указывает языковой стандарт, на основании которого требуется выбрать обозначение денежной единицы. |
 
 <!--
 {
@@ -48,5 +49,3 @@ ms.locfileid: "48050026"
   "suppressions": []
 }
 -->
-
-

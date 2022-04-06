@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c01e3fc62d9b68a77ed2f430ed994d59bb14e93
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 58b4b986183f4ac5247103a8d214e7c488811cc2
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61338626"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629493"
 ---
 # <a name="update-windowsdriverupdateprofile"></a>Обновление windowsDriverUpdateProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "61338626"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [WindowsDriverUpdateProfile.](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)
+Обновление свойств объекта [WindowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "61338626"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,18 +43,18 @@ PATCH /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В корпусе запроса поставляем представление JSON для [объекта WindowsDriverUpdateProfile.](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)
+В корпусе запроса поставляем представление JSON для [объекта WindowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) .
 
-В следующей таблице показаны свойства, необходимые при создании [windowsDriverUpdateProfile.](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)
+В следующей таблице показаны свойства, необходимые при создании [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|ID политики Intune.|
-|displayName|String|Имя отображения для профиля.|
+|id|Строка|ID Intune политики.|
+|displayName|Строка|Имя отображения для профиля.|
 |description|Строка|Описание профиля, указанного пользователем.|
 |approvalType|[driverUpdateProfileApprovalType](../resources/intune-softwareupdate-driverupdateprofileapprovaltype.md)|Тип утверждения профиля обновления драйвера. Например, ручное или автоматическое утверждение. Возможные значения: `manual`, `automatic`.|
 |deviceReporting|Int32|Количество устройств, сообщив об этом профиле|
@@ -62,12 +62,13 @@ PATCH /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileI
 |deploymentDeferralInDays|Int32|Параметры отсрочки развертывания в днях, применимые только при автоматическом утверждении ApprovalType.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления драйвера.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого объекта обновления драйвера.|
+|inventorySyncStatus|[windowsDriverUpdateProfileInventorySyncStatus](../resources/intune-softwareupdate-windowsdriverupdateprofileinventorysyncstatus.md)|Состояние синхронизации инвентаризации драйверов для этого профиля.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект WindowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код отклика и обновленный [объект WindowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -76,7 +77,7 @@ PATCH /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileI
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}
 Content-type: application/json
-Content-length: 322
+Content-length: 555
 
 {
   "@odata.type": "#microsoft.graph.windowsDriverUpdateProfile",
@@ -88,7 +89,12 @@ Content-length: 322
   "deploymentDeferralInDays": 8,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "inventorySyncStatus": {
+    "@odata.type": "microsoft.graph.windowsDriverUpdateProfileInventorySyncStatus",
+    "lastSuccessfulSyncDateTime": "2017-01-01T00:03:28.120883-08:00",
+    "driverInventorySyncState": "success"
+  }
 }
 ```
 
@@ -97,7 +103,7 @@ Content-length: 322
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 494
+Content-Length: 727
 
 {
   "@odata.type": "#microsoft.graph.windowsDriverUpdateProfile",
@@ -112,7 +118,12 @@ Content-Length: 494
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "inventorySyncStatus": {
+    "@odata.type": "microsoft.graph.windowsDriverUpdateProfileInventorySyncStatus",
+    "lastSuccessfulSyncDateTime": "2017-01-01T00:03:28.120883-08:00",
+    "driverInventorySyncState": "success"
+  }
 }
 ```
 

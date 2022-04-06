@@ -1,23 +1,23 @@
 ---
 title: Get unifiedRoleEligibilityScheduleRequest
 description: Ознакомьтесь с свойствами и отношениями объекта unifiedRoleEligibilityScheduleRequest.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: de8895d32f05acbc0ec32ccc705e6f1b7f41e937
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 75b679bd4c8a3d21d4f32cfc5e88343759ed0079
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122736"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509667"
 ---
 # <a name="get-unifiedroleeligibilityschedulerequest"></a>Get unifiedRoleEligibilityScheduleRequest
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleEligibilityScheduleRequest.](../resources/unifiedroleeligibilityschedulerequest.md)
+Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,12 +46,12 @@ GET /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligib
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и объект [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

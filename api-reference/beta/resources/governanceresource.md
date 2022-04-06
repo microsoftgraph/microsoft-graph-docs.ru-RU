@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов governanceResource
-description: Представляет ресурсы, которыми может управлять управление привилегированными пользователями (PIM). Для ресурсов Azure это может быть подписка, группа ресурсов и такие ресурсы, как виртуальная машина, SQL базы данных и т. д.
+description: Представляет ресурсы, которыми может управлять управление привилегированными пользователями (PIM). Для ресурсов Azure это может быть подписка, группа ресурсов и такие ресурсы, как виртуальная машина, SQL базы данных и т.д.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: e3a01feb6c33252b377e5d1929c4f6edac0901ce
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 5eacdb75d6607827eaf288b3eed17d41cce07f66
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60693159"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510564"
 ---
 # <a name="governanceresource-resource-type"></a>тип ресурсов governanceResource
 
@@ -18,9 +18,9 @@ ms.locfileid: "60693159"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Представляет ресурсы, которыми может управлять управление привилегированными пользователями (PIM). Для ресурсов Azure это может быть подписка, группа ресурсов и такие ресурсы, как виртуальная машина, SQL базы данных и т. д.
+Представляет ресурсы, которыми может управлять управление привилегированными пользователями (PIM). Для ресурсов Azure это может быть подписка, группа ресурсов и такие ресурсы, как виртуальная машина, SQL базы данных и т.д.
 
 
 ## <a name="methods"></a>Методы
@@ -28,24 +28,24 @@ ms.locfileid: "60693159"
 | Метод          | Возвращаемый тип |Описание|
 |:---------------|:--------|:----------|
 |[Список](../api/governanceresource-list.md) | [коллекция governanceResource](../resources/governanceresource.md)|Перечислить коллекцию ресурсов, к которые имеет доступ запросчик.|
-|[получение](../api/governanceresource-get.md); | [governanceResource](../resources/governanceresource.md) |Чтение свойств и связей объекта ресурсов, указанного в id.|
+|[Получение](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |Чтение свойств и связей объекта ресурсов, указанного в id.|
 |[Регистрация](../api/governanceresource-register.md) | |Зарегистрируйте неуправленную подписку или группу управления Azure в службу PIM. |
 
-`POST`Нет, `PUT` `PATCH` `DELETE` поддерживаются в `roleDefinitions` наборе сущности на данный момент.
+Нет`POST`, `PUT`поддерживаются `DELETE` `PATCH`в наборе `roleDefinitions` сущности на данный момент.
 
 ## <a name="properties"></a>Свойства
 | Свойство          |Тип         |Описание|
 |:------------------|:----------|:----------|
-|id                 |String     |Id ресурса. Он находится в формате GUID.|
+|id                 |Строка     |Id ресурса. Он находится в формате GUID.|
 |externalId           |String   |Внешний id ресурса, представляющий его исходный id во внешней системе. Например, внешний id ресурса подписки может быть "/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac". |
-|type               |String     |Обязательный. Тип ресурса. Например, для ресурсов Azure тип может быть "Подписка", "ResourceGroup", "Microsoft.Sql/server" и т.д.|
-|displayName        |String     |Имя отображения ресурса.|
-|status             |String     |Состояние данного ресурса. Например, он может представлять, заблокирован ресурс или нет (значения: `Active` / `Locked` ). Примечание. Это свойство может быть расширено в будущем, чтобы поддерживать дополнительные сценарии.|
+|type               |Строка     |Обязательный. Тип ресурса. Например, для ресурсов Azure тип может быть "Подписка", "ResourceGroup", "Microsoft.Sql/server" и т.д.|
+|displayName        |Строка     |Имя отображения ресурса.|
+|status             |String     |Состояние данного ресурса. Например, он может представлять, заблокирован ресурс или нет (значения: `Active`/`Locked`). Примечание. Это свойство может быть расширено в будущем, чтобы поддерживать дополнительные сценарии.|
 |registeredDateTime|DateTimeOffset      |Представляет время даты регистрации ресурса в PIM.|
-|registeredRoot|String      |ExternalId корневой области ресурса, зарегистрированной в PIM. Корневой областью могут быть родительские, бабушки и дедушки или более высокие ресурсы предка.|
+|registeredRoot|Строка      |ExternalId корневой области ресурса, зарегистрированной в PIM. Корневой областью могут быть родительские, бабушки и дедушки или более высокие ресурсы предка.|
 |roleAssignmentCount|Int32      |Необязательный. Количество назначений ролей для данного ресурса. Чтобы получить свойство, используйте его в `$select=roleAssignmentCount` запросе.|
 |roleDefinitionCount|Int32      |Необязательный. Количество определений ролей для данного ресурса. Чтобы получить свойство, используйте его в `$select=roleDefinitionCount` запросе.|
-|permissions|[governancePermission](../resources/governancepermission.md)      |Необязательный параметр. Он представляет состояние доступа запросителя к ресурсу. Чтобы получить свойство, используйте его в `$select=permissions` запросе.|
+|permissions|[governancePermission](../resources/governancepermission.md)      |Необязательно. Он представляет состояние доступа запросителя к ресурсу. Чтобы получить свойство, используйте его в `$select=permissions` запросе.|
 
 ## <a name="relationships"></a>Связи
 | Связь   | Тип                                         |Описание|

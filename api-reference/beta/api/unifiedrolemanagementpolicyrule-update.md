@@ -1,21 +1,21 @@
 ---
 title: Обновление unifiedRoleManagementPolicyRule
 description: Обновление свойств единого объектаRoleManagementPolicyRule.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: afdaee102ddda3a5995d32b0d7dff0dfab26e748
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9450c28fba13722d6d30dde62f9d102ff9b32981
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136828"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64508547"
 ---
 # <a name="update-unifiedrolemanagementpolicyrule"></a>Обновление unifiedRoleManagementPolicyRule
 Пространство имен: microsoft.graph
 
-Обновление свойств единого [объектаRoleManagementPolicyRule.](../resources/unifiedrolemanagementpolicyrule.md)
+Обновление свойств единого [объектаRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,20 +44,20 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/effective
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON единого [объектаRoleManagementPolicyRule.](../resources/unifiedrolemanagementpolicyrule.md)
+В теле запроса поставляем представление JSON единого [объектаRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) .
 
-В следующей таблице показаны свойства, необходимые при обновлении [единой системыRoleManagementPolicyRule.](../resources/unifiedrolemanagementpolicyrule.md)
+В следующей таблице показаны свойства, необходимые при обновлении [единой системыRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для правила.|
+|id|String|Уникальный идентификатор для правила.|
 |target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Цель правила политики.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и обновленный `200 OK` [унифицированный объектRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) в тексте ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код ответа и обновленный [унифицированный объектRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

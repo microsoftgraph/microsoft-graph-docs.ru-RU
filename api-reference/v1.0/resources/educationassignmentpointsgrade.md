@@ -1,28 +1,30 @@
 ---
-title: тип ресурса educationAssignmentPointsGrade
-description: Когда назначение заданной типу класса точек, каждый отправка будет иметь этот объект, связанный с **свойством submission.grade.**
+title: Тип ресурса educationAssignmentPointsGrade
+description: Если для задания задано значение типа оценки баллов, каждый объект каждой отправки будет связан со **свойством submission.grade** .
 ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 91dbdc6a6a94a296dffafe32d6d6021dd23d3371
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8019915e246a1b219357887ead1ee9ec8e7627d6
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109152"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684671"
 ---
-# <a name="educationassignmentpointsgrade-resource-type"></a>тип ресурса educationAssignmentPointsGrade
+# <a name="educationassignmentpointsgrade-resource-type"></a>Тип ресурса educationAssignmentPointsGrade
 
 Пространство имен: microsoft.graph
 
-Когда назначение заданной типу класса точек, каждый отправка будет иметь этот объект, связанный с **свойством submission.grade.** Это создает подкласс из [educationAssignmentGrade,](educationassignmentgrade.md)который добавит данные who к этому свойству. Максимальные точки хранятся в **свойстве assignments.grading.**
+Если для задания задано значение типа оценки баллов, каждый объект каждой отправки будет связан со **свойством submission.grade** . При этом создается подкласс [из educationAssignmentGrade](educationassignmentgrade.md), который добавляет данные who в это свойство. Максимальные точки хранятся в **свойстве assignments.grading** .
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|points|Один|Количество точек, которые учитель дает этому объекту отправки.|
+|points|Одинарное|Количество точек, которые преподаватель предоставляет этому объекту отправки.|
+|gradedBy|[identitySet](identityset.md)| Пользователь, выполнивший проверку. |
+|gradedDateTime|DateTimeOffset| Момент времени, когда оценка была применена к этому объекту отправки. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -38,7 +40,9 @@ ms.locfileid: "59109152"
 
 ```json
 {
-  "points": "Double"
+  "points": "Double",
+  "gradedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "gradedDateTime": "String (timestamp)"
 }
 
 ```

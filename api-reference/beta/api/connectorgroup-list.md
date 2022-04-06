@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 06a163e84aa37a0b5d03cc237f3a9e8c8d5959be
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6a60341cafed593c1ca71ea554992dd5c1c262c6
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121177"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671155"
 ---
 # <a name="list-connectorgroups"></a>Перечисление connectorGroups
 
@@ -18,14 +18,14 @@ ms.locfileid: "62121177"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка [объектов connectorGroup.](../resources/connectorgroup.md)
+Извлечение списка [объектов connectorGroup](../resources/connectorgroup.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -41,14 +41,14 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Носителер. Обязательный|
+| Авторизация  | Носителер. Обязательна|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [connectorGroup](../resources/connectorgroup.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию объектов [connectorGroup](../resources/connectorgroup.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

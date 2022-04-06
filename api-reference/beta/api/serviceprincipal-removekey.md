@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e834455f015966e59b2a668461ca6054eb21b03b
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 0f312edfa5ba40edabe0d4bb315085a54f6ff84a
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331962"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670266"
 ---
 # <a name="serviceprincipal-removekey"></a>servicePrincipal: removeKey
 
@@ -29,7 +29,7 @@ ms.locfileid: "63331962"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All, Application.ReadWrite.All, Directory.ReadWrite.All   |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Нет.    |
 |Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -55,7 +55,7 @@ POST /serviceprincipals/{id}/removeKey
 | Свойство  | Тип | Описание|
 |:----------|:-----|:-----------|
 | keyId     | Guid | Уникальный идентификатор пароля.|
-| доказательство | String | Самозаверяемый маркер JWT, используемый в качестве доказательства владения существующими ключами. Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов службыPrincipal. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Эмитент должен быть __id__  службыPrincipal, которая делает вызов.</li><li>`nbf` — вовремя.</li><li>`exp` - Срок действия должен быть `nbf` + 10 минут.</li></ul><br>Действия по созданию этого маркера владения см. в журнале [Generating proof of possession tokens for rolling keys](/graph/application-rollkey-prooftoken).|
+| доказательство | Строка | Самозаверяемый маркер JWT, используемый в качестве доказательства владения существующими ключами. Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов службыPrincipal. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Эмитент должен быть __id__  службыPrincipal, которая делает вызов.</li><li>`nbf` — вовремя.</li><li>`exp` - Срок действия должен быть `nbf` + 10 минут.</li></ul><br>Действия по созданию этого маркера владения см. в журнале [Generating proof of possession tokens for rolling keys](/graph/application-rollkey-prooftoken).|
 
 ## <a name="response"></a>Отклик
 

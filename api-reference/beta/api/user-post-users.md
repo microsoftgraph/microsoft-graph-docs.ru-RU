@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 13b6c278e93685ffd0ac95af6f1588d33366db8b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 76aab90f6573c104cebd717c0619e85ff912c8e9
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126572"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671904"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -31,7 +31,7 @@ ms.locfileid: "62126572"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -54,7 +54,7 @@ POST /users
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
-|accountEnabled |Логический |True, если учетная запись включена; в противном случае, false.|
+|accountEnabled |Boolean |True, если учетная запись включена; в противном случае, false.|
 |displayName |string |Имя, которое следует отобразить в адресной книге для пользователя.|
 |onPremisesImmutableId |string |Необходимо указывать только при создании учетной записи пользователя, если вы используете федеративный домен для свойства userPrincipalName (UPN) этого пользователя.|
 |mailNickname |string |Почтовый псевдоним для пользователя.|
@@ -63,10 +63,10 @@ POST /users
 
 Так как ресурс **user** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными в экземпляр user при его создании.
 
-Федератный пользователь, созданный с помощью этого API, будет вынужден войти каждые 12 часов по умолчанию. Сведения о том, как это изменить, см. в руб. [Исключения для жизни маркеров.](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)
+Федератный пользователь, созданный с помощью этого API, будет вынужден войти каждые 12 часов по умолчанию. Сведения о том, как это изменить, см. в руб. [Исключения для жизни маркеров](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
 
 >[!NOTE]
->Добавление [локальной учетной](../resources/objectidentity.md) записи  B2C к существующему  объекту пользователя запрещено, если объект пользователя уже не содержит локальный идентификатор учетной записи.
+>Добавление [локальной учетной записи B2C](../resources/objectidentity.md) к существующему объекту пользователя запрещено, если  объект пользователя уже не содержит локальный идентификатор учетной записи.
 
 ## <a name="response"></a>Отклик
 

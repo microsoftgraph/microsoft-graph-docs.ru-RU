@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f35421b8f922c14e16930706cff10400520a0a85
-ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
+ms.openlocfilehash: b26a17f53d591172acb5334981aabfe83305277e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63500954"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671799"
 ---
 # <a name="update-unifiedroledefinition"></a>Обновление unifiedRoleDefinition
 
@@ -51,7 +51,7 @@ ms.locfileid: "63500954"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
+|Делегированные (рабочая или учебная учетная запись) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
@@ -87,14 +87,14 @@ PATCH /roleManagement/cloudPc/roleDefinitions/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|String| Описание определения роли. Только для чтения, когда isBuiltIn является правдой. |
-|displayName|String| Имя отображения для определения роли. Только для чтения, когда isBuiltIn является правдой. Обязательный.|
+|description|Строка| Описание определения роли. Только для чтения, когда isBuiltIn является правдой. |
+|displayName|Строка| Имя отображения для определения роли. Только для чтения, когда isBuiltIn является правдой. Обязательный.|
 |id|String| Уникальный идентификатор определения роли. Key, not nullable, Read-only. |
 |isBuiltIn|Boolean| Флаг, указывающий, является ли определение роли частью набора по умолчанию, включенного в продукт или настраиваемый. Только для чтения. |
 |isEnabled|Boolean| Флаг, указывающий, включена ли роль для назначения. Если значение false, роль недоступна для назначения. Только для чтения, когда isBuiltIn является правдой. |
 |resourceScopes|Коллекция String| К списку областей применяются разрешения, предоставленные определением ролей. В настоящее время поддерживается только "/". Только для чтения, когда isBuiltIn является правдой. **НЕ ИСПОЛЬЗУЙТЕ. В ближайшее время это свойство будет обесценилось. Прикрепить область к назначению ролей.**|
 |rolePermissions|[коллекция unifiedRolePermission](../resources/unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, когда isBuiltIn является правдой. Обязательный. |
-|templateId|String| Настраиваемый идентификатор шаблона, который можно установить, когда isBuiltIn является ложным. Этот идентификатор обычно используется, если требуется, чтобы идентификатор был одинаковым в разных каталогах. Только для чтения, когда isBuiltIn является правдой. |
+|templateId|Строка| Настраиваемый идентификатор шаблона, который можно установить, когда isBuiltIn является ложным. Этот идентификатор обычно используется, если требуется, чтобы идентификатор был одинаковым в разных каталогах. Только для чтения, когда isBuiltIn является правдой. |
 |inheritsPermissionsFrom| [коллекция unifiedRoleDefinition](../resources/unifiedroledefinition.md)| Только для чтения набор определений ролей, которые наследует заданное определение роли. Только встроенные роли Azure AD поддерживают этот атрибут. |
 |version|String| Указывает версию определения роли. Только для чтения, когда isBuiltIn является правдой.|
 

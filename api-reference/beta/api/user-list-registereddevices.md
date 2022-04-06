@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 428fd4bf6b62db267d50d3e30b55d1e66be1ed18
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fc73433538ddb1d2d30388026c486109a54f304f
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092829"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630228"
 ---
 # <a name="list-registereddevices"></a>Список registeredDevices
 
@@ -24,7 +24,7 @@ ms.locfileid: "62092829"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.Read, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | User.Read, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -33,6 +33,7 @@ ms.locfileid: "62092829"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/registeredDevices
 GET /users/{id | userPrincipalName}/registeredDevices
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -43,7 +44,7 @@ GET /users/{id | userPrincipalName}/registeredDevices
 | Авторизация  | Bearer {token}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

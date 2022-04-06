@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8386e40dc74f5594f59b7f190d03e73886423bf5
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: e05e0b7ef4be952f7a87adc9fa20c82fa9583e9e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344707"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672114"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -25,13 +25,13 @@ ms.locfileid: "62344707"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Чтобы начать отслеживать изменения, выполните запрос к ресурсу users, включающий функцию delta.
+Чтобы начать отслеживать изменения, выполните запрос к ресурсу users, включающий разностную функцию.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -40,7 +40,7 @@ GET /users/delta
 
 ## <a name="query-parameters"></a>Параметры запроса
 
-Отслеживание изменений в ресурсе users — это цикл из одного или нескольких вызовов функции **delta**. Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в начальном запросе **delta**. Microsoft Graph автоматически кодирует указанные параметры в маркере, входящем в состав URL-адреса `nextLink` или `deltaLink`, включенного в отклик.
+Отслеживание изменений в ресурсе users — это цикл из одного или нескольких вызовов **разностной** функции. Если вы используете какой-либо параметр запроса (кроме `$deltatoken` и `$skiptoken`), его необходимо указать в исходном **разностном** запросе. Microsoft Graph автоматически кодирует любые указанные параметры в той части предоставленного в отклике URL-адреса `nextLink` или `deltaLink`, которая содержит маркер.
 
 Параметры запроса нужно указать только один раз в первом запросе.
 
@@ -64,14 +64,14 @@ GET /users/delta
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
-| Prefer | return=minimal <br><br>Указание этого заголовка с запросом, использующим параметр `deltaLink`, приведет к возвращению только свойств объекта, измененных с момента последнего цикла. Необязательно. |
+| Prefer | return=minimal <br><br>Указание этого заголовка с запросом, использующим параметр `deltaLink`, приведет к возвращению только свойств объекта, измененных с момента последнего цикла. Необязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции [user](../resources/user.md) в тексте отклика. Оклик также содержит URL-адрес `nextLink` или `deltaLink`.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции [user](../resources/user.md) в тексте отклика. Отклик также включает URL-адрес `nextLink` или `deltaLink`.
 
 - Если возвращается URL-адрес `nextLink`:
   - Это означает, что во время сеанса получены не все страницы данных. Приложение продолжает отправлять запросы, используя URL-адрес `nextLink`, пока в отклик не будет включен URL-адрес `deltaLink`.

@@ -1,22 +1,22 @@
 ---
-title: тип ресурса educationRubricOutcome
-description: EducationOutcome, который содержит градуарную рубрику.
+title: Тип ресурса educationRubricOutcome
+description: EducationOutcome, предоставляющий оцениваемую rubric.
 ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: dfeaae5b422c1d77fa5bfd64f991ed47d85e1778
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 831cac7de7510ebc83cf6dc0ddbf5190d1e3d9d9
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123666"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685070"
 ---
-# <a name="educationrubricoutcome-resource-type"></a>тип ресурса educationRubricOutcome
+# <a name="educationrubricoutcome-resource-type"></a>Тип ресурса educationRubricOutcome
 
 Пространство имен: microsoft.graph
 
-[EducationOutcome,](educationoutcome.md) который содержит градуарную рубрику.
+[EducationOutcome](educationoutcome.md), предоставляющий оцениваемую rubric.
 
 ## <a name="methods"></a>Методы
 
@@ -28,14 +28,15 @@ ms.locfileid: "59123666"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|lastModifiedBy|[identitySet](identityset.md)|Последний пользователь, который изменит ресурс.|
-|lastModifiedDateTime|DateTimeOffset|Время последнего изменения ресурса.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|publishedRubricQualityFeedback|[rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md) collection|Копия свойства rubricQualityFeedback, которое будет сделано после выпуска класса для учащегося.|
-|publishedRubricQualitySelectedLevels|[rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md) collection|Копия свойства rubricQualitySelectedLevels, выполненного при отсвойке класса учащемуся.|
-|rubricQualityFeedback|[rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md) collection|Коллекция конкретных отзывов для каждого качества этой рубрики.|
-|rubricQualitySelectedLevels|[rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md) collection|Уровень, выбранный преподавателем для каждого качества при классификации этого назначения.|
+|id|String|Уникальный идентификатор для educationRubricOutcome.|
+|lastModifiedBy|[identitySet](identityset.md)|Последний пользователь, который изменяет ресурс.|
+|lastModifiedDateTime|DateTimeOffset|Момент времени последнего изменения ресурса.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|publishedRubricQualityFeedback|[Коллекция rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md)|Копия свойства rubricQualityFeedback, которая создается при выпуске оценки учащемуся.|
+|publishedRubricQualitySelectedLevels|[Коллекция rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md)|Копия свойства rubricQualitySelectedLevels, которая создается при выпуске оценки учащемуся.|
+|rubricQualityFeedback|[Коллекция rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md)|Коллекция определенных отзывов для каждого качества этого учебника.|
+|rubricQualitySelectedLevels|[Коллекция rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md)|Уровень, выбранный преподавателем для каждого качества во время проверки этого задания.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 
@@ -54,6 +55,7 @@ ms.locfileid: "59123666"
 
 ```json
 {
+  "id": "String (identifier)",
   "publishedRubricQualityFeedback": [{"@odata.type": "microsoft.graph.rubricQualityFeedbackModel"}],
   "publishedRubricQualitySelectedLevels": [{"@odata.type": "microsoft.graph.rubricQualitySelectedColumnModel"}],
   "rubricQualityFeedback": [{"@odata.type": "microsoft.graph.rubricQualityFeedbackModel"}],

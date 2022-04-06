@@ -1,16 +1,16 @@
 ---
 title: тип ресурса externalItemContent
 description: Содержимое элемента, индексироваться с помощью Поиск (Майкрософт) подключения.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: d895d0056da71ea065dbc62d08c9deda054a6f29
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 36ca1d19e9be37d7c47c9195fc2c63f677673c0e
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467855"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63560103"
 ---
 # <a name="externalitemcontent-resource-type"></a>тип ресурса externalItemContent
 
@@ -25,7 +25,7 @@ ms.locfileid: "53467855"
 | Свойство | Тип   | Описание                                                                                 |
 |:---------|:-------|:--------------------------------------------------------------------------------------------|
 | значение    | String | Содержимое для externalItem. Обязательное.                                                 |
-| type     | String | Тип контента в свойстве значения. Возможные значения: `text` и `html`. Обязательный. |
+| type     | String | Тип контента в свойстве значения. Возможные значения: `text` и `html`. Это типы контента, поддерживаемые индексером, а не разрешенные типы расширения файлов. Обязательный. |
 
 ## <a name="relationships"></a>Связи
 

@@ -5,12 +5,12 @@ author: currenmehta
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0304fb18e2af0865dd9ff6ccde030dc68f067bc8
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: b89d41ec573d6035e19590d7015df4e7269909f3
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63339053"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672737"
 ---
 # <a name="customaccesspackageworkflowextension-resource-type"></a>тип ресурса customAccessPackageWorkflowExtension
 
@@ -42,9 +42,9 @@ ms.locfileid: "63339053"
 |clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)| Параметры подключения HTTP, которые определяют, как долго Azure AD может ждать подключения к логическому приложению, сколько раз можно повторить время ожидания подключения и сценарии исключений при разрешенных повторном инауки. Наследуется [от customCalloutExtension](../resources/customcalloutextension.md).|
 |createdDateTime|DateTimeOffset|Представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 |description|Строка|Описание объекта customAccessPackageWorkflowExtension. Наследуется [от customCalloutExtension](../resources/customcalloutextension.md). Только для чтения.|
-|displayName|String|Отображение имени объекта customAccessPackageWorkflowExtension. Наследуется [от customCalloutExtension](../resources/customcalloutextension.md). Только для чтения. Поддерживает `$filter` (`contains`).|
+|displayName|Строка|Отображение имени объекта customAccessPackageWorkflowExtension. Наследуется [от customCalloutExtension](../resources/customcalloutextension.md). Только для чтения. Поддерживает `$filter` (`contains`).|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Тип и сведения для настройки конечной точки для вызова рабочего процесса приложения логики. Наследуется [от customCalloutExtension](../resources/customcalloutextension.md).|  
-|id|Строка|Идентификатор для объекта customAccessPackageWorkflowExtension. Наследуется [от сущности](../resources/entity.md).|
+|id|String|Идентификатор для объекта customAccessPackageWorkflowExtension. Наследуется от [сущности](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
@@ -65,6 +65,12 @@ ms.locfileid: "63339053"
   "@odata.type": "#microsoft.graph.customAccessPackageWorkflowExtension",
   "id": "String (identifier)",
   "displayName": "String",
+  "clientConfiguration": {
+    "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
+  },
+  "authenticationConfiguration": {
+    "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
+  },
   "description": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",

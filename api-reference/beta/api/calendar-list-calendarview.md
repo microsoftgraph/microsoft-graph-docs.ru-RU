@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 73c64648ce02d63e4d8d6f6979b0c45e0164ddbd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: af8dcbe14bb956f211c7b18dd555cca0ba36a35e
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62106774"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477540"
 ---
 # <a name="list-calendarview"></a>Список calendarView
 
@@ -80,7 +80,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [event](../resources/event.md) в теле отклика.
 
-Если набор результатов занимает несколько страниц, **calendarView** возвращает в ответе свойство **@odata.nextLink**, содержащее URL-адрес следующей страницы результатов. Дополнительные сведения см. в разделе о [разбиении на страницы](/graph/concepts/paging.md).
+Если набор результатов занимает несколько страниц, **calendarView** возвращает в ответе свойство **@odata.nextLink**, содержащее URL-адрес следующей страницы результатов. Дополнительные сведения см. в разделе о [разбиении на страницы](/graph/paging).
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос

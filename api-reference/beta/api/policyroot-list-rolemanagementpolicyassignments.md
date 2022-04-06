@@ -1,16 +1,16 @@
 ---
 title: List roleManagementPolicyAssignments
 description: Получите ресурсы unifiedRoleManagementPolicyAssignment из свойства навигации RoleManagementPolicyAssignments.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 85a89a8e568252ec10e9b9c994a18b10f41ceced
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 960204177d6092de89affe79e7f9775e78fc7f98
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133042"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509310"
 ---
 # <a name="list-rolemanagementpolicyassignments"></a>List roleManagementPolicyAssignments
 Пространство имен: microsoft.graph
@@ -46,12 +46,12 @@ GET /policies/roleManagementPolicyAssignments
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) в теле ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код ответа и коллекцию объектов [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 

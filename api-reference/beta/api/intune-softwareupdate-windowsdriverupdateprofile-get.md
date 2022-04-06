@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e5146251417cabcb2bc5c11ccbe4e07e6f009da
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: ad92ae756c73eae2349a5a39546745be8c93928b
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61334293"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630438"
 ---
 # <a name="get-windowsdriverupdateprofile"></a>Получить windowsDriverUpdateProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "61334293"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей [объекта WindowsDriverUpdateProfile.](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)
+Чтение свойств и связей [объекта WindowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "61334293"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,14 +46,14 @@ GET /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект WindowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект WindowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfile
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 539
+Content-Length: 782
 
 {
   "value": {
@@ -84,7 +84,12 @@ Content-Length: 539
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
-    ]
+    ],
+    "inventorySyncStatus": {
+      "@odata.type": "microsoft.graph.windowsDriverUpdateProfileInventorySyncStatus",
+      "lastSuccessfulSyncDateTime": "2017-01-01T00:03:28.120883-08:00",
+      "driverInventorySyncState": "success"
+    }
   }
 }
 ```

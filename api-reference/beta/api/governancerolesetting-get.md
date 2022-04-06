@@ -4,13 +4,13 @@ description: Извлечение свойств и связей управле�
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 19ca2ed16892fae3fd4e9add7584777667b07b9d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+author: japere
+ms.openlocfilehash: 6a52b5acb0a45d613bcbf83daccab555982da0b0
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137185"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509989"
 ---
 # <a name="get-governancerolesetting"></a>Get governanceRoleSetting
 
@@ -19,7 +19,7 @@ ms.locfileid: "62137185"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 Извлечение свойств и связей [управленияRoleSetting](../resources/governancerolesetting.md).
 
@@ -50,7 +50,7 @@ ms.locfileid: "62137185"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение | PrivilegedAccess.Read.AzureADGroup |
 
-Помимо области разрешений, этот API требует, чтобы у запросителя было по крайней мере одно назначение ролей на ресурсе, которому принадлежит [governanceRoleSetting.](../resources/governancerolesetting.md)
+Помимо области разрешений, этот API требует, чтобы у запросителя было по крайней мере одно назначение ролей на ресурсе, которому принадлежит [governanceRoleSetting](../resources/governancerolesetting.md) .
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -67,7 +67,7 @@ GET /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект governanceRoleSetting](../resources/governancerolesetting.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект governanceRoleSetting](../resources/governancerolesetting.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 

@@ -1,16 +1,16 @@
 ---
 title: Список унифицированныхRoleManagementPolicyAssignments
 description: Получите список объектов unifiedRoleManagementPolicyAssignment и их свойств.
-author: japere
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 771ff41830a0a24c05704f9def617bb721613215
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 3887367fd8eed4ab68898802e39dbd9d853dbeb1
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510620"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477960"
 ---
 # <a name="list-unifiedrolemanagementpolicyassignments"></a>Список унифицированныхRoleManagementPolicyAssignments
 Пространство имен: microsoft.graph

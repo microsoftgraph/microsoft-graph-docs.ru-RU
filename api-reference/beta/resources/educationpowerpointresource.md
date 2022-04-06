@@ -1,32 +1,37 @@
 ---
-title: Тип ресурса Едукатионповерпоинтресаурце
-description: 'Подкласс объекта Едукатионресаурце. Это ресурс PowerPoint. Файл PowerPoint необходимо отправить в каталоге **филересаурце** , связанном с '
-localization_priority: Normal
+title: Тип ресурса educationPowerPointResource
+description: 'Подкласс educationResource. Это ресурс PowerPoint ресурсов. Файл PowerPoint должен быть передан в каталог **fileResource**, связанный с '
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e7dabc312e0e8db58624651436e8c04f742d51d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 63a26b1b136033bd52238b6b107f9a8068096602
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081710"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684958"
 ---
-# <a name="educationpowerpointresource-resource-type"></a>Тип ресурса Едукатионповерпоинтресаурце
+# <a name="educationpowerpointresource-resource-type"></a>Тип ресурса educationPowerPointResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Подкласс объекта [едукатионресаурце](educationresource.md). Это ресурс PowerPoint. Файл PowerPoint необходимо отправить в каталоге **филересаурце** , связанном с назначением или отправкой.
+Подкласс [educationResource](educationresource.md). Это ресурс PowerPoint ресурсов. Файл PowerPoint должен быть передан в каталог **fileResource**, связанный с назначением или отправкой.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fileUrl|Строка|Расположение файла на диске.|
+|fileUrl|String|Расположение файла на диске.|
+|createdBy|String|Отображаемое имя пользователя, создавшего этот объект.|
+|createdDateTime|DateTimeOffset|Дата, когда была добавлена повторная ошибка.|
+|displayName|string|Отображаемое имя ресурса.|
+|lastModifiedBy|[identitySet](identityset.md)|Последний пользователь, который изменяет ресурс.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения ресурса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -40,7 +45,12 @@ ms.locfileid: "48081710"
 
 ```json
 {
-  "fileUrl": "String"
+  "fileUrl": "String",
+  "createdBy": "String (User)",
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "lastModifiedBy": "String (User)",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 ```

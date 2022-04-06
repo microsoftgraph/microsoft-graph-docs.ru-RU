@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 66ea0c51822159d7a3f85b4525a12481943d54f1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b59eb882f3560847f16aed7f9e4d360f68360989
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136996"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671393"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Создание privilegedRoleAssignmentRequest
 
@@ -18,16 +18,16 @@ ms.locfileid: "62136996"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Создание [объекта privilegedroleassignmentrequest.](../resources/privilegedroleassignmentrequest.md)
+Создание [объекта privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
@@ -42,19 +42,19 @@ POST /privilegedRoleAssignmentRequests
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-В теле запроса поставляем представление JSON объекта [privilegedroleassignmentrequest.](../resources/privilegedroleassignmentrequest.md) 
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) . 
 
 | Свойство     | Тип    |  Описание|
 |:---------------|:--------|:----------|
 |roleId|Строка|ID роли. Обязательное.|
-|type|Строка|Представляет тип операции при назначении ролей. Значение может `AdminAdd` быть: Администраторы добавляют пользователей в роли; `UserAdd` : Пользователи добавляют назначения ролей. Обязательный.|
-|assignmentState|Строка|Состояние назначения. Это значение может быть для присвоения, если оно непосредственно назначено администраторами или активировано при назначении, назначенного `Eligible` `Active` `Active` пользователями. Возможные значения: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Обязательное.|
-|reason|Строка|Причина должна быть предоставлена для запроса назначения ролей для целей аудита и проверки.|
+|type|String|Представляет тип операции при назначении ролей. Значение может быть: `AdminAdd`Администраторы добавляют пользователей к ролям;`UserAdd` пользователи добавляют назначения ролей. Обязательный.|
+|assignmentState|String|Состояние назначения. Это значение может быть для `Eligible` присвоения `Active` `Active` , если оно непосредственно назначено администраторами или активировано при назначении, назначенного пользователями. Возможные значения: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Обязательный.|
+|reason|String|Причина должна быть предоставлена для запроса назначения ролей для целей аудита и проверки.|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|Расписание запроса на назначение ролей.|
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа и объект `201 Created` [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в тексте ответа.
+В случае успешного `201 Created` выполнения этот метод возвращает код ответа и объект [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в тексте ответа.
 
 ### <a name="error-codes"></a>Коды ошибок
 Этот API возвращает стандартные коды ошибок HTTP. Кроме того, он может возвращать коды ошибок, перечисленные в следующей таблице.

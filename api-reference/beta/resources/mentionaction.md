@@ -3,15 +3,15 @@ author: daspek
 description: Ресурс MentionAction предоставляет сведения о ресурсе activity, в котором есть упоминания пользователей.
 ms.date: 09/14/2017
 title: MentionAction
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: b0f8376c3fcc86cdd16c1eeb32507e5b26469285
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4675a732738741dc5bb201f97753dca2be42a17d
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971608"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723488"
 ---
 # <a name="mentionaction-resource-type"></a>Тип ресурса MentionAction
 
@@ -28,7 +28,7 @@ ms.locfileid: "47971608"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.mentionAction"
+  "@type&quot;: &quot;microsoft.graph.mentionAction"
 }-->
 
 ```json
@@ -39,9 +39,9 @@ ms.locfileid: "47971608"
 
 ## <a name="properties"></a>Свойства
 
-| Имя свойства | Тип                       | Описание
-|:--------------|:---------------------------|:-----------------------------
-| mentionees    | Коллекция [identitySet][] | Удостоверения пользователей, упомянутых в этом действии.
+| Свойство   | Тип                       | Описание                                           |
+| :--------- | :------------------------- | :---------------------------------------------------- |
+| mentionees | Коллекция [identitySet][] | Удостоверения пользователей, упомянутых в этом действии. |
 
 [identitySet]: identityset.md
 
@@ -59,5 +59,3 @@ ms.locfileid: "47971608"
   "suppressions": []
 }
 -->
-
-

@@ -1,16 +1,16 @@
 ---
 title: 'вызов: cancelMediaProcessing'
 description: Отменяет обработку мультимедиа для выполнения операций playPrompt или recordResponse.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e6b01f13c0da8cb0c4c67e48d6c8b7b4c896ff96
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: f4ac6778b34e43017acc11f67afdf324381d70e1
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348046"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608102"
 ---
 # <a name="call-cancelmediaprocessing"></a>вызов: cancelMediaProcessing
 
@@ -28,7 +28,9 @@ ms.locfileid: "62348046"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | Нет.                                       |
+| Для приложений                            | Calls.Initiate.All, Calls.AccessMedia.All |
+
+> **Примечание:** Разрешения проверяются при вызове; При вызове этого API не проводится дополнительная проверка разрешений. Calls.AccessMedia.All необходим только для вызовов, которые используют носители с использованием приложений.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +51,7 @@ POST /communications/calls/{id}/cancelMediaProcessing
 
 | Параметр     | Тип   | Описание         |
 | :------------ | :----- | :------------------ |
-| clientContext | String | Клиентский контекст. |
+| clientContext | Строка | Клиентский контекст. |
 
 ## <a name="response"></a>Отклик
 

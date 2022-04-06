@@ -1,16 +1,16 @@
 ---
 title: Создание cloudPcOnPremisesConnection
-description: Создайте локальное подключение для создания облачных компьютеров.
+description: Создание сетевого подключения Azure для создания облачных компьютеров.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: a1b2968ea12b703e228a55fea6b2c2efbf3e4bdf
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: f541ae5a05ae79507cb042ad6685bbe25754eef8
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63670637"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589368"
 ---
 # <a name="create-cloudpconpremisesconnection"></a>Создание cloudPcOnPremisesConnection
 
@@ -19,6 +19,8 @@ ms.locfileid: "63670637"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создайте новый [объект cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) для создания облачных компьютеров.
+
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
 ## <a name="permissions"></a>Разрешения
 
@@ -56,12 +58,12 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя отображения локального подключения.|
+|displayName|Строка|Имя отображения для сетевого подключения Azure.|
 |type|cloudPcOnPremisesConnectionType|Указывает, как будет присоединяться к Azure Active Directory. Значение по умолчанию — `hybridAzureADJoin`. Возможные значения: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
 |subscriptionId|Строка|ID целевой подписки Azure, связанной с клиентом.|
 |adDomainName|Строка|Полное доменное имя домена (FQDN) домена Active Directory, к нему необходимо присоединиться.|
-|adDomainUsername|Строка|Имя пользователя учетной записи Active Directory (учетная запись пользователя или службы), которая имеет разрешения на создание компьютерных объектов в Active Directory. Необходимый формат: admin@contoso.com.|
-|adDomainPassword|Строка|Пароль, связанный с adDomainUsername.|
+|adDomainUsername|String|Имя пользователя учетной записи Active Directory (учетная запись пользователя или службы), которая имеет разрешения на создание компьютерных объектов в Active Directory. Необходимый формат: admin@contoso.com.|
+|adDomainPassword|String|Пароль, связанный с adDomainUsername.|
 |resourceGroupId|Строка|ID целевой группы ресурсов. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
 |virtualNetworkId|Строка|ID целевой виртуальной сети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
 |subnetId|Строка|ID целевой подсети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|

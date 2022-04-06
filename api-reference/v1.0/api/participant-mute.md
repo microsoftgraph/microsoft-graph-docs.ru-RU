@@ -1,16 +1,16 @@
 ---
 title: 'участник: отключить'
 description: Отключить определенный участник вызова.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 348cda658a38db68658d12e7472871d7f5a7c558
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 40b0f32948b32a970760d5a3d29e4bf39310ff55
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346241"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608137"
 ---
 # <a name="participant-mute"></a>участник: отключить
 
@@ -30,7 +30,7 @@ ms.locfileid: "62346241"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Приложение     | Нет                                        |
+| Для приложений     | Calls.JoinGroupCallsasGuest.All или Calls.JoinGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ POST /communications/calls/{id}/participants/{id}/mute
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|clientContext|String|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
+|clientContext|Строка|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
 
 ## <a name="response"></a>Отклик
 В случае успешной работы `200 OK` этот метод возвращает код ответа и [объект muteParticipantOperation](../resources/muteParticipantoperation.md) в тексте ответа.

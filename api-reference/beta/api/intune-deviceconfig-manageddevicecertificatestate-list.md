@@ -2,15 +2,15 @@
 title: Список managedDeviceCertificateStates
 description: Список свойств и связей объектов managedDeviceCertificateState.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7fe5bbb9fa0de4b37d6d81d26e0ab9164e5d298e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 32dc4e5e1e4325126d06cac2c0f3f9b3c7e7caaf
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59042783"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629283"
 ---
 # <a name="list-manageddevicecertificatestates"></a>Список managedDeviceCertificateStates
 
@@ -20,7 +20,7 @@ ms.locfileid: "59042783"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей [объектов managedDeviceCertificateState.](../resources/intune-deviceconfig-manageddevicecertificatestate.md)
+Список свойств и связей [объектов managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,6 +43,8 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidScepCertificateProfile/managedDeviceCertificateStates
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosImportedPFXCertificateProfile/managedDeviceCertificateStates
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidImportedPFXCertificateProfile/managedDeviceCertificateStates
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.aospDeviceOwnerPkcsCertificateProfile/managedDeviceCertificateStates
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.aospDeviceOwnerScepCertificateProfile/managedDeviceCertificateStates
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerPkcsCertificateProfile/managedDeviceCertificateStates
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerScepCertificateProfile/managedDeviceCertificateStates
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidWorkProfilePkcsCertificateProfile/managedDeviceCertificateStates
@@ -71,7 +73,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и коллекцию объектов [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -121,6 +123,7 @@ Content-Length: 1703
   ]
 }
 ```
+
 
 
 

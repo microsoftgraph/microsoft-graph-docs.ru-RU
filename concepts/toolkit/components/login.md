@@ -2,13 +2,13 @@
 title: Компонент входа в Microsoft Graph Toolkit
 description: Компонент входа — это кнопка и всплывающий элемент управления, предназначенные для упрощения проверки подлинности платформы удостоверений Майкрософт.
 ms.localizationpriority: medium
-author: nmetulev
-ms.openlocfilehash: 3398092c85fea23ad408a208a895c9af287371df
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: fedf3a1ec1f49812b14b03d544a73a8a60baaeb3
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103930"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588822"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Компонент входа в Microsoft Graph Toolkit
 
@@ -83,7 +83,7 @@ mgt-login {
 `logoutInitiated` | Пользователь начал выходить на сайт | Нет | Да | Нет | Да
 `logoutCompleted` | Пользователь вышел из | Нет | Нет | Нет | Да
 
-Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
+Дополнительные сведения об обработке событий см. в [этой информации](../customize-components/events.md).
 
 ## <a name="templates"></a>Шаблоны
 
@@ -104,7 +104,7 @@ mgt-login {
 | - | - | - |
 | default | User.Read | [/users/me/](/graph/api/user-get) |
 
-При использовании шаблонов по умолчанию этот компонент использует компонент Person для отображения пользователя и наследует `signed-in-button-content` `flyout-person-details` все разрешения. [](./person.md)
+При использовании шаблонов `signed-in-button-content` по `flyout-person-details` умолчанию этот компонент использует компонент [Person](./person.md) для отображения пользователя и наследует все разрешения.
 
 ## <a name="authentication"></a>Проверка подлинности
 

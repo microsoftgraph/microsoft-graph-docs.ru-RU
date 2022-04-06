@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: cdf2841aa238a9c37f86c18330b9522deef4f025
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: fe144c80f9cab914f57eda3a3104b5fc1df4383a
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60997302"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630354"
 ---
 # <a name="create-tasktrigger"></a>Создание taskTrigger
 
@@ -18,12 +18,14 @@ ms.locfileid: "60997302"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [триггер задач](../resources/printtasktrigger.md) на указанном [принтере.](../resources/printer.md) В настоящее **время на** принтере может быть указан только один триггер задач, но в будущем это ограничение может быть удалено. 
+Создайте новый [триггер задач](../resources/printtasktrigger.md) на указанном [принтере](../resources/printer.md). В настоящее **время на** принтере может быть указан только один триггер задач, но это ограничение может быть удалено в будущем. 
+
+>**Примечание:** AppId, используемый для создания маркера доступа для создания триггера задачи, должен быть тем же приложением, которое использовалось для создания соответствующего определения задачи.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать. Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать. Подписанный пользователь должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
@@ -44,10 +46,10 @@ POST /print/printers/{id}/taskTriggers
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса подарйте JSON-представление [объекта printTaskTrigger.](../resources/printtasktrigger.md) Поставляем ссылку на [печатьTaskDefinition](../resources/printtaskdefinition.md) с помощью `@odata.bind` формата, как показано в следующем примере.
+В теле запроса подарйте JSON-представление [объекта printTaskTrigger](../resources/printtasktrigger.md) . Поставляем ссылку на [печатьTaskDefinition](../resources/printtaskdefinition.md) `@odata.bind` с помощью формата, как показано в следующем примере.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [печатьTaskTrigger](../resources/printtasktrigger.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` отклика и [печатьTaskTrigger](../resources/printtasktrigger.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос

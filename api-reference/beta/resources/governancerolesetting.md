@@ -4,13 +4,13 @@ description: Представляет набор конфигураций для
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: af49836d52659b6f75727008599aea1ca16d5206
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 8a98725d26d160b9d8687fceb87e6811440ed31a
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688172"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509660"
 ---
 # <a name="governancerolesetting-resource-type"></a>тип ресурса governanceRoleSetting
 
@@ -18,7 +18,7 @@ ms.locfileid: "60688172"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 Представляет набор конфигураций для каждого определения ролей, которые необходимо оценивать при назначении ролей при их назначении или изменениях. Например, параметры ролей могут включать правило "максимальная продолжительность назначения", правило "MFA, требуемая для активации" и так далее.
 
@@ -27,13 +27,13 @@ ms.locfileid: "60688172"
 | Метод          | Возвращаемый тип |Описание|
 |:---------------|:--------|:--------|
 |[Список](../api/governancerolesetting-list.md) | [коллекция governanceRoleSetting](../resources/governancerolesetting.md)|Список параметров ролей на ресурсе.|
-|[получение](../api/governancerolesetting-get.md); |  [governanceRoleSetting](../resources/governancerolesetting.md) |Чтение свойств и связей параметра ролей.|
-|[Обновление](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |Обновление объекта параметра роли. |
+|[Получение](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |Чтение свойств и связей параметра ролей.|
+|[обновление](../api/governancerolesetting-update.md). | [governanceRoleSetting](../resources/governancerolesetting.md)  |Обновление объекта параметра роли. |
 
 ## <a name="properties"></a>Свойства
 |Свойство               |Тип                                      |Описание|
 |:--------------------|:---------------------------------------|:----------|
-|id                   |String                                  |Id of the roleSetting.|
+|id                   |Строка                                  |Id of the roleSetting.|
 |resourceId           |String                                  |Обязательный. ID ресурса, с который связан параметр роли.|
 |roleDefinitionId     |String                                  |Обязательный. ID определения роли, с чем связан параметр роли.|
 |isDefault            |Boolean                                 |Только для чтения. Указать, является ли рольSetting ролью по умолчанию.|

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e1034068bfe01ecf6723fb5ca8bcca7230c52972
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 1f4c74fc5cbb9081aaade25bcad33ab9f8c52262
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671575"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510010"
 ---
 # <a name="list-orgcontacts"></a>Перечисление orgContacts
 
@@ -27,7 +27,7 @@ ms.locfileid: "63671575"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+|Приложение | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -186,7 +186,7 @@ Content-type: text/plain
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_a_count"
+  "name": "list_orgcontacts_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/contacts?$filter=startswith(displayName,'A')&$count=true&$top=1&$orderby=displayName

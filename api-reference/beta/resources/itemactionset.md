@@ -1,17 +1,17 @@
 ---
 author: daspek
-description: Ресурс ItemActionSet предоставляет сведения о действиях, выполненных [Activity] [itemActivity] элемента.
+description: Ресурс ItemActionSet предоставляет сведения о действиях, которые составили [действие][itemActivity] на элементе.
 ms.date: 09/14/2017
 title: ItemActionSet
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 86a4713bbeb757fcb700af8f82d1718589f3f58c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d02467f8c4e780121ce8035b6aa09742a47c6f79
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075689"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63724351"
 ---
 # <a name="itemactionset-resource-type"></a>Тип ресурса ItemActionSet
 
@@ -30,7 +30,7 @@ ms.locfileid: "48075689"
   "optionalProperties": [ ],
   "keyProperty": "id",
   "@type": "microsoft.graph.itemActionSet",
-  "@type.aka": "oneDrive.action"
+  "@type.aka&quot;: &quot;oneDrive.action"
 }-->
 
 ```json
@@ -54,18 +54,18 @@ ms.locfileid: "48075689"
 Ниже перечислены действия, доступные в настоящее время.
 В будущем можно будет вносить в журнал новые действия, поэтому ваше приложение должно быть способно обрабатывать объект **itemActionSet**, содержащий действия, не предусмотренные в приложении.
 
-| Имя свойства | Тип              | Описание
-|:--------------|:------------------|:-----------------------------------------
-| comment       | [commentAction][] | В элемент добавлен комментарий.
-| create        | [createAction][]  | Был создан элемент.
-| delete        | [deleteAction][]  | Был удален элемент.
-| edit          | [editAction][]    | Был изменен элемент.
-| mention       | [mentionAction][] | Пользователь был упомянут в элементе.
-| move          | [moveAction][]    | Элемент был перемещен.
-| rename        | [renameAction][]  | Элемент был переименован.
-| restore       | [restoreAction][] | Элемент был восстановлен.
-| share         | [shareAction][]   | К элементу был предоставлен общий доступ.
-| version       | [versionAction][] | Для элемента была указана версия.
+| Свойство | Тип              | Описание                       |
+| :------- | :---------------- | :-------------------------------- |
+| comment  | [commentAction][] | В элемент добавлен комментарий.  |
+| create   | [createAction][]  | Был создан элемент.              |
+| delete   | [deleteAction][]  | Был удален элемент.              |
+| edit     | [editAction][]    | Был изменен элемент.               |
+| mention  | [mentionAction][] | Пользователь был упомянут в элементе. |
+| move     | [moveAction][]    | Элемент был перемещен.                |
+| rename   | [renameAction][]  | Элемент был переименован.              |
+| restore  | [restoreAction][] | Элемент был восстановлен.             |
+| share    | [shareAction][]   | К элементу был предоставлен общий доступ.               |
+| version  | [versionAction][] | Для элемента была указана версия.            |
 
 [commentAction]: commentaction.md
 [createAction]: createaction.md
@@ -92,5 +92,3 @@ ms.locfileid: "48075689"
   "suppressions": []
 }
 -->
-
-

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5603d0982b28fb25ccdaa60e204592b751e078ed
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: 3a635f8b6be26ea2f625f065ef6333c0f23e18df
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878836"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672324"
 ---
 # <a name="user-revokesigninsessions"></a>пользователь: revokeSignInSessions
 
@@ -29,7 +29,7 @@ ms.locfileid: "62878836"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | User.ReadWrite.All, Directory.ReadWrite.All,|
 
@@ -51,7 +51,7 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
+При успешном выполнении этот метод возвращает код отклика `200 OK`.
 
 >[!NOTE]
 >У этого API есть [известная проблема](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-http-code). Он возвращает другой код ответа HTTP.

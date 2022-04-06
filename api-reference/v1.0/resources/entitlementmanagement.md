@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 547e8140ecfb39686b028e967aaf1328f2f077a2
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 33d5ef28494441d0bbc83d276ce74da6f9e49f8b
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393131"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608109"
 ---
 # <a name="entitlementmanagement-resource-type"></a>тип ресурса entitlementManagement
 
@@ -32,13 +32,14 @@ ms.locfileid: "63393131"
 |:---|:---|:---|
 |accessPackageAssignmentApprovals|[коллекция утверждений](../resources/approval.md) | Этапы утверждения запросов на назначение.|
 |accessPackages|[коллекция accessPackage](../resources/accesspackage.md)|Представляет объекты пакета доступа.|
+|assignmentPolicies|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) collection|Доступ к политикам назначения пакетов.|
 |assignmentRequests|[accessPackageAssignmentRequest collection](../resources/accesspackageassignmentrequest.md)|Представляет запросы на назначение пакетов доступа, созданные пользователем или от имени пользователя.|
 |assignments|[коллекция accessPackageAssignment](../resources/accesspackageassignment.md)| Представляет предоставление пакета доступа субъекту (пользователю или группе).|
-|каталоги|[коллекция accessPackageCatalog](../resources/accesspackagecatalog.md)| Представляет группу пакетов доступа.|
+|каталоги|[коллекция accessPackageCatalog](../resources/accesspackagecatalog.md)| Представляет коллекцию пакетов доступа.|
 |connectedOrganizations|[connectedOrganization](../resources/connectedorganization.md) collection|Представляет ссылки на каталог или домен другой организации, пользователи которой могут запрашивать доступ.|
 |settings|[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)| Представляет параметры, которые контролируют поведение управления правами Azure AD.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

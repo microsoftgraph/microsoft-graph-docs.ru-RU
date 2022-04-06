@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: bd2f5f2a1e56fe113be5b24681661db71bba28d9
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3bbc14695f0b18b9228c39cc3b2f1ed2b839b7ee
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396800"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629318"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Работа с API управления правами Azure AD
 
@@ -23,7 +23,7 @@ Azure Active Directory управления правами Azure AD может �
 Типы ресурсов управления правами включают:
 
 - [accessPackage](accesspackage.md). Определяет коллекции ролей ресурсов и политики получения доступа к этим ресурсам одним или более пользователями.
-- accessPackageAssignmentPolicy: указывает политику, по которой субъекты могут запрашивать или получать пакет доступа с помощью назначения пакета доступа.
+- [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md): указывает политику, по которой субъекты могут запрашивать или получать пакет доступа с помощью назначения пакета доступа.
 - [accessPackageAssignmentRequest](accesspackageassignmentrequest.md): создан пользователем, который хочет получить назначение пакета доступа.
 - [accessPackageAssignment](accesspackageassignment.md): назначение пакета доступа определенному субъекту в течение определенного периода времени.
 - [accessPackageCatalog](accesspackagecatalog.md): контейнер для пакетов доступа.
@@ -31,11 +31,13 @@ Azure Active Directory управления правами Azure AD может �
 - [entitlementManagementSettings](entitlementmanagementsettings.md): параметры для управления правами Azure AD для всех клиентов.
 - [утверждение](approval.md): представляет решения, связанные с запросом пакета доступа.
 
-Обратите внимание, что функция управления правами, включая API, включена в Azure AD Premium P2. Клиент, в котором используется управление правами, должен иметь допустимую Azure AD Premium P2 или подписку emS E5.
+Кроме того, вы можете управлять назначениями ролей для ролей, определенных для управления правами, с помощью определений ролей управления [правами](unifiedroledefinition.md).
 
-В следующей таблице перечислены методы, которые можно использовать для взаимодействия с ресурсами, связанными с управлением правами.
+Обратите внимание, что функция управления правами, включая API, включена в Azure AD Premium P2. Клиент, в котором используется управление правами, должен иметь допустимую Azure AD Premium P2 или подписку emS E5. Дополнительные сведения о требованиях к лицензиям для функции управления правами см. в дополнительных сведениях о требованиях к лицензиям на [управление правами](/azure/active-directory/governance/entitlement-management-overview#license-requirements).
 
 ## <a name="methods"></a>Методы
+
+В следующей таблице перечислены методы, которые можно использовать для взаимодействия с ресурсами, связанными с управлением правами.
 
 | Метод   | Тип возвращаемых данных |Описание|
 |:---------------|:--------|:----------|
@@ -60,6 +62,11 @@ Azure Active Directory управления правами Azure AD может �
 | [Получить accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Чтение свойств и связей объекта **accessPackageCatalog** . |
 | [Обновление accessPackageCatalog](../api/accesspackagecatalog-update.md)|Нет | Обновление свойств объекта **accessPackageCatalog** . |
 | [Удаление accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Удаление **accessPackageCatalog**. |
+|[Список accessPackageAssignmentPolicies](../api/entitlementmanagement-list-assignmentpolicies.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) collection|Получите список объектов [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) и их свойств.|
+|[Создание accessPackageAssignmentPolicy](../api/entitlementmanagement-post-assignmentpolicies.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|Создание нового [объекта accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .|
+|[Получить accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|Ознакомьтесь с свойствами и отношениями объекта [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .|
+|[Обновление accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|Обновление свойств объекта [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .|
+|[Удаление accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-delete.md)|Нет|Удаляет объект [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .|
 | [Списки подключенныхОрганизацией](../api/entitlementmanagement-list-connectedorganizations.md) | [connectedOrganization](connectedorganization.md) collection | Извлечение списка **объектов connectedOrganization** . |
 | [Создание connectedOrganization](../api/entitlementmanagement-post-connectedorganizations.md) | [connectedOrganization](connectedorganization.md) | Создание нового **объекта connectedOrganization** . |
 | [ПодключениеОрганизация](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Чтение свойств и связей объекта **connectedOrganization** . |

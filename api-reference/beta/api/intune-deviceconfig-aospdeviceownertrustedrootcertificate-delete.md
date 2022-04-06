@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ad04681921539993d49701f40b3ff930723f691
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: b0a299d8ad8da0fd5dda98df75b92bcd8786c07f
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63378805"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629276"
 ---
 # <a name="delete-aospdeviceownertrustedrootcertificate"></a>Удаление aospDeviceOwnerTrustedRootCertificate
 
@@ -28,7 +28,7 @@ ms.locfileid: "63378805"
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -37,15 +37,15 @@ ms.locfileid: "63378805"
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.aospDeviceOwnerCertificateProfileBase/rootCertificate
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.aospDeviceOwnerEnterpriseWiFiConfiguration/rootCertificateForServerValidation
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -59,7 +59,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate
 ```
 
 ### <a name="response"></a>Отклик

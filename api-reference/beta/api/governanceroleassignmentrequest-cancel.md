@@ -4,13 +4,13 @@ description: Отмена governanceRoleAssignmentRequest.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 946e0dbfde3f097fb146d4725a2f4b3f9277aa14
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: e5d7946ca588830552a00a630b3c766ba43ecc03
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688221"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510297"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>Отмена governanceRoleAssignmentRequest
 
@@ -18,9 +18,9 @@ ms.locfileid: "60688221"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Отмена [управленияRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
+Отмена [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
@@ -50,7 +50,7 @@ ms.locfileid: "60688221"
 | Для приложений | Не поддерживается. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод **не поддерживает** [параметры запроса OData.](/graph/query-parameters)
+Этот метод **не поддерживает** [параметры запроса OData](/graph/query-parameters).
 
 ### <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -76,7 +76,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 | Код ошибки | Сообщение об ошибке | Details |
 |:---------- |:------------- |:------- |
 | 400 BadRequest | RoleAssignmentRequestNotFound | В системе не существует системы governanceRoleAssignmentRequest. |
-| 400 BadRequest | RequestCannotBeCancelled | Только запросы в состоянии `Granted` , и могут быть `PendingApproval` `PendingApprovalProvisioning` `PendingAdminDecision` отменены. |
+| 400 BadRequest | RequestCannotBeCancelled | Только запросы в состоянии `Granted`, и `PendingApproval``PendingApprovalProvisioning` могут `PendingAdminDecision` быть отменены. |
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос

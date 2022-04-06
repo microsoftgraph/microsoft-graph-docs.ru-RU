@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2fbf1eecad7267ce17ead81dd6573cf885a2ae5b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1bf14d7060aae8a329259bd3a50772fc5252b72b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121141"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671148"
 ---
 # <a name="assign-a-connectorgroup-to-an-application"></a>Назначение соединителиГруп приложению
 
@@ -18,14 +18,14 @@ ms.locfileid: "62121141"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Назначение [соединителиГруп](../resources/connectorgroup.md) [приложению.](../resources/application.md)
+Назначение [соединителиГруп](../resources/connectorgroup.md) [приложению](../resources/application.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается.  |
 
@@ -42,7 +42,7 @@ PUT /applications/{id}/connectorGroup/$ref
 | Content-Type | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [connectorGroup.](../resources/connectorgroup.md)
+В теле запроса поставляем представление JSON объекта [connectorGroup](../resources/connectorgroup.md) .
 
 ## <a name="response"></a>Отклик
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a4c919d0cb119504ab3af408835730d28202c0db
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 29b028d6f96d0179e721ef2286382366f0a06b0f
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61347601"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630900"
 ---
 # <a name="get-operationapprovalpolicy"></a>Get operationApprovalPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "61347601"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [operationApprovalPolicy.](../resources/intune-rbac-operationapprovalpolicy.md)
+Чтение свойств и связей объекта [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "61347601"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,14 +46,14 @@ GET /deviceManagement/operationApprovalPolicies/{operationApprovalPolicyId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/operationApprovalPolicies/
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 441
+Content-Length: 388
 
 {
   "value": {
@@ -78,7 +78,6 @@ Content-Length: 441
     "description": "Description value",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "policyType": "deviceWipe",
-    "policyPlatform": "androidDeviceAdministrator",
     "approverGroupIds": [
       "Approver Group Ids value"
     ]

@@ -4,13 +4,13 @@ description: Извлечение коллекции governanceResource, к ко
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: bf6ce207c535a4ebae6d8b30bb9f40401dcc54d5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+author: japere
+ms.openlocfilehash: 2b0a4846b5b75215a25ad8d027dece7a10947608
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125929"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510157"
 ---
 # <a name="list-governanceresources"></a>Список governanceResources
 
@@ -18,7 +18,7 @@ ms.locfileid: "62125929"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 Извлечение коллекции [governanceResource,](../resources/governanceresource.md) к которую имеет доступ запроситель.
 
@@ -65,7 +65,7 @@ GET /privilegedAccess/azureResources/resources
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` объектов [governanceResource](../resources/governanceresource.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию объектов [governanceResource](../resources/governanceresource.md) в тексте ответа.
 ## <a name="examples"></a>Примеры
 
 В этом примере перечислены все ресурсы, к которые в настоящее время можно получить доступ.

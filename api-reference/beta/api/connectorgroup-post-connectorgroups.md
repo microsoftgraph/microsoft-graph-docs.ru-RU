@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ab659a9d603e98d664b3562c40b795bf76c553a7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 41990833979b46433d057459ea5bc7812d00d16e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62106592"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671379"
 ---
 # <a name="create-connectorgroup"></a>Создание connectorGroup
 
@@ -25,9 +25,9 @@ ms.locfileid: "62106592"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,12 +40,12 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 |:---------------|:----------|
 | Авторизация  | Носителер. Requried|
 
-## <a name="request-body"></a>Тело запроса
-В теле запроса поставляем представление JSON объекта [connectorGroup.](../resources/connectorgroup.md)
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта [connectorGroup](../resources/connectorgroup.md) .
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект connectorGroup](../resources/connectorgroup.md) в тексте ответа.
+В случае успешной работы этот `201 Created` метод возвращает код отклика и [объект connectorGroup](../resources/connectorgroup.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -91,7 +91,7 @@ Content-type: application/json
 
 ---
 
-В теле запроса поставляем представление JSON объекта [connectorGroup.](../resources/connectorgroup.md)
+В теле запроса поставляем представление JSON объекта [connectorGroup](../resources/connectorgroup.md) .
 ##### <a name="response"></a>Отклик
 Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {

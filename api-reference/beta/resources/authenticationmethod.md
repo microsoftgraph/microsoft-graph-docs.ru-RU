@@ -1,16 +1,16 @@
 ---
 title: тип ресурса authenticationMethod
 description: Представляет метод проверки подлинности, зарегистрированный пользователем.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9ab808934491793b796be1c66fc87051ed6e9b29
-ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
+ms.openlocfilehash: bf56f9bcfe469fe386b26a1786dabb05f4b5e793
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52335627"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509786"
 ---
 # <a name="authenticationmethod-resource-type"></a>тип ресурса authenticationMethod
 
@@ -18,16 +18,16 @@ ms.locfileid: "52335627"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет метод проверки подлинности, зарегистрированный пользователем. Метод [проверки подлинности](/azure/active-directory/authentication/concept-authentication-methods) — это то, что используется пользователем для проверки подлинности или иного доказательства его подлинности в системе. Некоторые примеры включают пароль, телефон (можно использовать SMS или голосовой вызов), ключи безопасности FIDO2 и другие.
+Представляет метод проверки подлинности, зарегистрированный пользователем. Метод [проверки подлинности](/azure/active-directory/authentication/concept-authentication-methods) — это то, что используется пользователем для проверки подлинности или иного доказательства его подлинности в системе. Некоторые примеры включают пароль, телефон (можно использовать с помощью SMS или голосового звонка), ключи безопасности FIDO2 и другие.
 
 > [!IMPORTANT]
-> Перечисление методов проверки подлинности пользователей возвращает только методы, поддерживаемые в этой версии API. Обзор [API методов проверки подлинности Azure AD](authenticationmethods-overview.md) см. в списке поддерживаемых в настоящее время методов.
+> Перечисление методов проверки подлинности пользователей возвращает только методы, поддерживаемые в этой версии API и зарегистрированные пользователю. Обзор [API методов проверки подлинности Azure AD](authenticationmethods-overview.md) см. в списке поддерживаемых в настоящее время методов.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Тип возвращаемых данных | Описание |
 |:-------------|:------------|:------------|
-| [Проверка подлинности спискаМетходы](../api/authentication-list-methods.md) | [коллекция authenticationMethod](authenticationmethod.md) | Ознакомьтесь с свойствами и отношениями всех объектов проверки подлинности **пользователяMethod.** |
+| [Проверка подлинности спискаМетходы](../api/authentication-list-methods.md) | [коллекция authenticationMethod](authenticationmethod.md) | Ознакомьтесь с свойствами и отношениями всех объектов проверки подлинности **пользователяMethod** . |
 
 ## <a name="properties"></a>Свойства
 

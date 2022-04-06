@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ac30763b64bde119fd96a518780e01573f7afa6
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 90c5cf2810095ec7355cba4f43dea342f2a8af33
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60484915"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629542"
 ---
 # <a name="list-devicecomanagementauthorityconfigurations"></a>Список устройствComanagementAuthorityConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "60484915"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей [объектов deviceComanagementAuthorityConfiguration.](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md)
+Список свойств и связей [объектов deviceComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,14 +43,14 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и коллекцию объектов `200 OK` [deviceComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md) в теле отклика.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и коллекцию объектов [deviceComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 706
+Content-Length: 759
 
 {
   "value": [
@@ -81,6 +81,7 @@ Content-Length: 706
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "deviceEnrollmentConfigurationType": "limit",
       "managedDeviceAuthority": 6,
       "installConfigurationManagerAgent": true,
       "configurationManagerAgentCommandLineArgument": "Configuration Manager Agent Command Line Argument value"
@@ -88,6 +89,7 @@ Content-Length: 706
   ]
 }
 ```
+
 
 
 

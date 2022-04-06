@@ -5,12 +5,12 @@ author: adsrivastava2
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7cd91f9901c02d1008e5c08a72c47e416222ab75
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: 38058cf2c1697a158eb31c356e22c20af9054156
+ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262717"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64646574"
 ---
 # <a name="teamworkdevice-resource-type"></a>тип ресурса teamworkDevice
 
@@ -20,17 +20,22 @@ ms.locfileid: "62262717"
 
 Представляет сведения о устройстве с Microsoft Teams, которое предназначено для клиента.
 
-Наследуется [от сущности](../resources/entity.md).
+Microsoft Teams устройства с включенной Teams сертифицированными устройствами совместной работы. Они включают Комнаты Microsoft Teams (на Windows и Android), Microsoft Teams телефонов, панелей, устройств Surface Hubs и SIP. Эти категории такие же, как и доступные в центре администрирования Teams в разделе Teams **устройств**.
+
+Дополнительные сведения см. в [материале Управление устройствами в Microsoft Teams.](/microsoftteams/devices/device-management)
+>**Примечание**. Это не включает мобильные телефоны, ноутбуки, компьютеры, вкладки и так далее.
+
+Наследует [от сущности](../resources/entity.md).
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список teamworkDevices](../api/teamworkdevice-list.md)|[teamworkDevice collection](../resources/teamworkdevice.md)|Получите список всех устройств с Microsoft Teams, которые были предусмотрены для клиента.|
+|[Список teamworkDevices](../api/teamworkdevice-list.md)|коллекция [teamworkDevice](../resources/teamworkdevice.md)|Получите список всех устройств с Microsoft Teams, которые были предусмотрены для клиента.|
 |[Get teamworkDevice](../api/teamworkdevice-get.md)|[teamworkDevice](../resources/teamworkdevice.md)|Получите свойства устройства с Microsoft Teams включенной поддержкой.|
 |[перезапуск](../api/teamworkdevice-restart.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Перезапустите указанное Microsoft Teams устройство с включенной поддержкой.|
 |[runDiagnostics](../api/teamworkdevice-rundiagnostics.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Запуск и создание журналов диагностики для указанного Microsoft Teams включенного устройства.|
 |[updateSoftware](../api/teamworkdevice-updatesoftware.md)|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Обновление программного обеспечения для Microsoft Teams устройства с включенной поддержкой.|
-|[Операции со списком](../api/teamworkdeviceoperation-list.md)|[коллекция teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Получите список операций, которые работают на устройстве с Teams с включенной поддержкой.|
+|[Операции со списком](../api/teamworkdeviceoperation-list.md)|[коллекция teamworkDeviceOperation](../resources/teamworkdeviceoperation.md)|Получите список операций, которые работают на устройстве с Teams включенной поддержкой.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -43,7 +48,7 @@ ms.locfileid: "62262717"
 |deviceType|[teamworkDeviceType](../resources/teamworkdevice.md#teamworkdevicetype-values)|Тип устройства. Возможные значения: `unknown`, , `teamsRoom``ipPhone`, , `surfaceHub`, `collaborationBar`, `teamsDisplay`, `sip``touchConsole``lowCostPhone``teamsPanel``unknownFutureValue`.|
 |hardwareDetail|[teamworkHardwareDetail](../resources/teamworkhardwaredetail.md)|Коллекция свойств, связанных с оборудованием. Например, **oemSerialNumber** и **model**.|
 |healthStatus|[teamworkDeviceHealthStatus](../resources/teamworkdevice.md#teamworkdevicehealthstatus-values)|Состояние здоровья устройства. Допустимые значения: `unknown`, `offline`, `critical`, `nonUrgent`, `healthy`, `unknownFutureValue`.|
-|id|String|Идентификатор устройства. Наследуется [от сущности](../resources/entity.md).|
+|id|String|Идентификатор устройства. Наследуется от [сущности](../resources/entity.md).|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Удостоверение пользователя, который в последний раз изменил сведения об устройстве.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения деталей устройства.|
 |notes|String|Заметки, добавленные администратором на устройство.|
@@ -55,14 +60,14 @@ ms.locfileid: "62262717"
 |:---------------|:--------|:----------|
 |unknown|0|Неизвестное устройство.|
 |ipPhone|1|IP Телефон устройства — это настольные телефоны для пользователей, которые могут принимать звуковые вызовы или присоединяться к собраниям.|
-|teamsRoom|2|Комнаты Microsoft Teams — Windows устройства на основе IoT, предназначенные для расширения возможности проведения собраний в конференц-зале.|
-|surfaceHub|3|Surface Hub устройства — это устройства, установленные на стене или на стендах на роликах, с интерактивной доской.|
-|collaborationBar|4|Бары совместной Комнаты Microsoft Teams на Android, используемые для небольших пространств собраний.|
-|teamsDisplay|5|Teams устройства отображения — это эволюция Teams телефонов. Эти устройства являются категорией специальных устройств с Teams, которые имеют сенсорный сенсорный экран с сенсорным экраном и без рук с питанием от Кортана.|
-|touchConsole|6 |Сенсорные устройства консоли являются необязательными периферийными устройствами для Комнаты Teams android для выполнения всех операций устройства.|
+|teamsRoom|2|Комнаты Microsoft Teams это Windows устройства на основе IoT, предназначенные для расширения возможности проведения собраний в конференц-зале.|
+|surfaceHub|3|Surface Hub устройства — это устройства, установленные на стене или на стенде на роликах, с интерактивной доской.|
+|collaborationBar|4|Бары совместной работы Комнаты Microsoft Teams на Android, используемых для небольших пространств собраний.|
+|teamsDisplay|5|Teams устройства отображения — это эволюция Teams телефонов. Эти устройства являются категорией устройств, посвященных Teams, которые имеют сенсорный сенсорный экран с сенсорным экраном и без рук с питанием от Кортана.|
+|touchConsole|6 |Устройства сенсорной консоли являются необязательными периферийными устройствами для Комнаты Teams android для выполнения всех операций устройства.|
 |lowCostPhone|7 |Недорогие телефонные устройства являются экономически эффективными Microsoft Teams телефонов.|
 |teamsPanel|8 |Microsoft Teams панели — это компактные сенсорные устройства, на которые отображаются сведения о собраниях, запланированные Teams.|
-|sip|9 |Устройства протокола инициации сеансов, Teams вызовы с шлюзом SIP от Майкрософт.|
+|sip|9 |Устройства протокола инициации сеансов, Teams вызовы с шлюзом SIP от Microsoft.|
 |unknownFutureValue|10 |Эволюционирующее значение sentinel. Не следует использовать.|
 
 

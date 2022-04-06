@@ -1,30 +1,35 @@
 ---
-title: тип ресурсов educationLinkResource
+title: Тип ресурса educationLinkResource
 description: Подкласс educationResource.
 author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 1429ef21a8ff96ed1afdce14e2590ee4ce937f6e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1dbf39593f4e76aadd714b9a8989e25944f1c2d0
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036636"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684482"
 ---
-# <a name="educationlinkresource-resource-type"></a>тип ресурсов educationLinkResource
+# <a name="educationlinkresource-resource-type"></a>Тип ресурса educationLinkResource
 
 Пространство имен: microsoft.graph
 
 Подкласс [educationResource](educationresource.md). 
 
-Этот ресурс является ссылкой и не имеет никаких дополнительных данных, связанных с ним.
+Этот ресурс является ссылкой и не содержит дополнительных данных, связанных с ним.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|link|Строка|URL-адрес ресурса.|
+|ссылка|String|URL-адрес ресурса.|
+|createdBy|String|Отображаемое имя пользователя, создавшего этот объект.|
+|createdDateTime|DateTimeOffset|Дата, когда была добавлена повторная ошибка.|
+|displayName|string|Отображаемое имя ресурса.|
+|lastModifiedBy|[identitySet](identityset.md)|Последний пользователь, который изменяет ресурс.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения ресурса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -40,7 +45,12 @@ ms.locfileid: "59036636"
 
 ```json
 {
-  "link": "String"
+  "link": "String",
+  "createdBy": "String (User)",
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "lastModifiedBy": "String (User)",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 ```

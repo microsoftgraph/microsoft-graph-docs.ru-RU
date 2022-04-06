@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7fac54742cca998d94af7792db820c2c0859983a
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 8cac1fcb4b35076b6349406630cd6a1460df5977
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63332492"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669272"
 ---
 # <a name="update-application"></a>Обновление приложения
 
@@ -29,7 +29,7 @@ ms.locfileid: "63332492"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированные (рабочая или учебная учетная запись) |  Application.ReadWrite.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All    |
 |Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -69,7 +69,7 @@ PATCH /applications/{id}
 | uniqueName | Строка | Уникальный идентификатор, который можно назначить приложению в качестве альтернативного идентификатора. Неизменяемый. Только для чтения.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | web                     | [webApplication](../resources/webapplication.md)                            | Указывает параметры для веб-приложения.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Указывает параметры для одностраничного приложения, в том числе URL-адреса выхода и URI перенаправления для кодов авторизации и маркеров доступа. |
-| Windows                     | [windowsApplication](../resources/windowsapplication.md)                            | Указывает параметры приложений под управлением Microsoft Windows и опубликованных в Microsoft Store или магазине игр Xbox. Включает пакет SID и перенаправление URL-адресов для кодов авторизации и маркеров доступа. |
+| windows                     | [windowsApplication](../resources/windowsapplication.md)                            | Указывает параметры приложений для устройств под управлением Microsoft Windows, опубликованных в Microsoft Store или магазине игр Xbox. Включает пакет SID и перенаправление URL-адресов для кодов авторизации и маркеров доступа. |
 
 ## <a name="response"></a>Отклик
 

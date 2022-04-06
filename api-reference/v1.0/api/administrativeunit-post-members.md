@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c5095e34787f4739295ab4811356136c7fd30253
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 22cc8c5022cdc27d434ba62bdf76891a7344d7e9
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092653"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672030"
 ---
 # <a name="add-a-member"></a>Добавление участника
 
@@ -26,9 +26,9 @@ ms.locfileid: "62092653"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | AdministrativeUnit.ReadWrite.All |
+|Для приложений | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ POST /directory/administrativeUnits/{id}/members/$ref
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажи добавить пользователя, группу или `id` [directoryObject.](../resources/directoryobject.md) [](../resources/user.md) [](../resources/group.md)
+В теле запроса укажи`id`, что [пользователь, группа](../resources/user.md) или [directoryObject](../resources/directoryobject.md) будут добавлены. [](../resources/group.md)
 
 ## <a name="response"></a>Отклик
 
@@ -93,7 +93,7 @@ Content-type: application/json
 
 ---
 
-В теле запроса укажи объект пользователя или группы, который `id` необходимо добавить. [](../resources/user.md) [](../resources/group.md)
+В теле запроса укажи `id` объект [пользователя](../resources/user.md) или группы[](../resources/group.md), который необходимо добавить.
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика.

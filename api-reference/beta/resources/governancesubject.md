@@ -4,13 +4,13 @@ description: Представляет пользователей, групп и 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 5552ba73a20ed4e27b906244d5610f84dccadfe7
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 99e668cc18ff38f8a4b26c11d514beddcc020e00
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695407"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509639"
 ---
 # <a name="governancesubject-resource-type"></a>тип ресурсов governanceSubject
 
@@ -24,9 +24,9 @@ ms.locfileid: "60695407"
 ## <a name="properties"></a>Свойства
 | Свойство  | Тип       |Описание|
 |:----------|:----------|:----------|
-|id         |String     | ID субъекта.|
-|type       |String     |Тип субъекта. Значение может быть ``User`` , ``Group`` и ``ServicePrincipal`` .|
-|displayName|String     |Отображение имени субъекта.|
+|id         |Строка     | ID субъекта.|
+|type       |Строка     |Тип субъекта. Значение может быть ``User``, ``Group``и ``ServicePrincipal``.|
+|displayName|Строка     |Отображение имени субъекта.|
 |email      |String     |Адрес электронной почты субъекта пользователя. Если объект находится в других типах, он пуст.|
 |principalName|String   |Основное имя субъекта пользователя. Если объект находится в других типах, он пуст.|
 

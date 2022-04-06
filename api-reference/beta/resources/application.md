@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: d72b8a9e823d9f10276cb13b789de089250f67fe
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 4c790077a68746e90491bcc87dd139428458eb87
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335306"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477487"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -43,8 +43,8 @@ ms.locfileid: "63335306"
 |[Создание звонка](../api/application-post-calls.md)|[call](call.md)|Создание звонка путем добавления в коллекцию calls.|
 |[Создание собрания по сети](../api/application-post-onlinemeetings.md)|[onlineMeeting](onlinemeeting.md)|Создание собрания по сети путем добавления в коллекцию onlineMeetings.|
 |**Сертификаты и секреты**| | |
-|[Добавление пароля](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Добавление надежного пароля в приложение.|
-|[Удаление пароля](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Удаление пароля приложения.|
+|[Добавление пароля](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Добавление надежного пароля или секрета в приложение.|
+|[Удаление пароля](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Удаление пароля или секрета из приложения.|
 |[Добавление ключа](../api/application-addkey.md)|[keyCredential](keycredential.md)|Добавление учетных данных ключа в приложение.|
 |[Удаление ключа](../api/application-removekey.md)|Нет|Удаление учетных данных ключа из приложения.|
 |**Расширения**| | |

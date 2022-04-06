@@ -5,12 +5,12 @@ description: Ресурс termColumn указывает, что значения
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: fcdad019f3eb2496116767e560f63a4668ed7508
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 6ccf926f646f11f12bc150fd22b339777df4208b
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63720883"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63757747"
 ---
 # <a name="termcolumn-resource-type"></a>тип ресурсов termColumn
 
@@ -23,10 +23,15 @@ ms.locfileid: "63720883"
 
 | Свойство               | Тип                           | Описание                                                               |
 | :--------------------- | :----------------------------- | :------------------------------------------------------------------------ |
-| allowMultipleValues    | Boolean                        | Указывает, разрешит ли столбец несколько значений               |
-| parentTerm             | microsoft.graph.termStore.term | Указывает термин guid, чьи дети могут быть выбраны в качестве значения столбца. |
-| showFullyQualifiedName | Boolean                        | Указывает, отображать ли весь путь терминов или только метку терминов. |
-| termSet                | microsoft.graph.termStore.set  | Termset, чьи дети могут быть выбраны в качестве значения столбца.                 |
+| allowMultipleValues    | Логический                        | Указывает, разрешит ли столбец несколько значений               |
+| showFullyQualifiedName | Логическое                        | Указывает, отображать ли весь путь терминов или только метку терминов. |
+
+## <a name="relationships"></a>Связи
+
+| Связь   | Тип                      | Описание
+|:----------------|:--------------------------|:-------------------------------
+| parentTerm     | microsoft.graph.termStore.term | Указывает родительский термин, для которого можно выбрать термины ребенка в качестве столбца.
+| termSet      | microsoft.graph.termStore.set | Termset, чьи дети могут быть выбраны в качестве значения столбца.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -37,8 +42,6 @@ ms.locfileid: "63720883"
 ```json
 {
     "allowMultipleValues": true,
-    "parentTerm": { "@type": "microsoft.graph.termStore.term" },
     "showFullyQualifiedName": false,
-    "termSet": { "@type": "microsoft.graph.termStore.set" }
 }
 ```

@@ -2,13 +2,13 @@
 title: Локализация компонентов Microsoft Graph Toolkit
 description: Используйте LocalizationHelper для локализации компонентов Microsoft Graph Toolkit.
 ms.localizationpriority: medium
-author: vogtn
-ms.openlocfilehash: f3cba31d7b02370d30e1caa128a671534f9e4cae
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 934873a6695ce2e858173e0a8f965a7762805c76
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129581"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589235"
 ---
 # <a name="localizing-the-microsoft-graph-toolkit-components"></a>Локализация компонентов Microsoft Graph Toolkit
 
@@ -68,7 +68,7 @@ LocalizationHelper.strings = {
 };
 ```
 
-При присвоении свойству все компоненты автоматически подбирают новые строки и повторно отрисовку, что позволяет динамически изменять `strings` `LocalizationHelper` строки. 
+При присвоении `strings` `LocalizationHelper` свойству все компоненты автоматически подбирают новые строки и повторно отрисовку, что позволяет динамически изменять строки. 
 
 Строки можно задать на глобальном уровне или на уровне компонента (с помощью свойства `_components:`).
 
@@ -200,7 +200,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="file"></a>Файл
+### <a name="file"></a>File
 
 ```ts
 'file': {

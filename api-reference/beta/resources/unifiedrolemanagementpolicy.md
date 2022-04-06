@@ -1,16 +1,16 @@
 ---
 title: тип ресурса unifiedRoleManagementPolicy
 description: В unifiedRoleManagementPolicy указаны различные политики, связанные с областью и определением ролей. Она получена из microsoft.graph.policyBase.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 4b64b5fc402bab0d549d60c1653e826d80fa0bbd
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: d458ab00c772040380adcb9aae800205fe82dc8e
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63667955"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510178"
 ---
 # <a name="unifiedrolemanagementpolicy-resource-type"></a>тип ресурса unifiedRoleManagementPolicy
 
@@ -39,7 +39,7 @@ ms.locfileid: "63667955"
 |isOrganizationDefault|Boolean|Это может быть установлено только для одной широкой политики клиента, которая будет применяться для всех областей и ролей. Установите область ScopeId на "/" и scopeType в Directory.|
 |lastModifiedBy|[identity](../resources/identity.md)|Идентификатор, который в последний раз изменил параметр роли.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения параметра роли.|
-|scopeId|Строка|ID области, в которой создается политика. Может быть `/` для клиента или группового ИД. Обязательный.|
+|scopeId|Строка|ID области, в которой создается политика. Может быть `/` для клиента или группового ИД. Обязательный аргумент.|
 |scopeType|String|Тип области, в которой создается политика. Один из `Directory`. `DirectoryRole` Обязательный.|
 
 ## <a name="relationships"></a>Связи

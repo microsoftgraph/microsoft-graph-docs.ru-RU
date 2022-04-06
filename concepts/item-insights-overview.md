@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c4d458c74b8197fe07f178ea9f725c8094228a2e
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: e605a2f756e64fb6fff45f1888c6d13d549763e0
+ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223056"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63780487"
 ---
 # <a name="overview-of-item-insights"></a>Обзор аналитики элементов
 Аналитика элементов — это ориентированные на пользователя рекомендации для вас и для тех, с кем вы работаете, основанные на вашей совместной работе в Microsoft 365.
@@ -79,4 +79,4 @@ Microsoft 365 — это всемирное облако для продукти
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - Опробуйте API аналитики на собственных файлах в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer). Выполните вход, разверните узел **Аналитика** в столбце слева и попробуйте примеры запросов.
-- Узнайте больше о [настройке конфиденциальности аналитики элементов для пользователей (предварительная версия)](insights-customize-item-insights-privacy.md) и [API параметров аналитики элементов (предварительная версия)](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) с поддержкой персонализации.
+- Узнайте больше о [настройке конфиденциальности аналитики элементов для пользователей (предварительная версия)](insights-customize-item-insights-privacy.md) и [API параметров аналитики (предварительная версия)](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) с поддержкой персонализации.

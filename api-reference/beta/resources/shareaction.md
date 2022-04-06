@@ -3,15 +3,15 @@ author: daspek
 description: Ресурс ShareAction содержит сведения о действии, в результате выполнения которого был предоставлен общий доступ к элементу.
 ms.date: 09/14/2017
 title: ShareAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 6d855b4c42a51e6ff9c9330f0a22e8076778d456
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1fba7d65c03981f5336531e37e47731b21e219c0
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010194"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722483"
 ---
 # <a name="shareaction-resource-type"></a>Тип ресурса ShareAction
 
@@ -28,7 +28,7 @@ ms.locfileid: "48010194"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.shareAction"
+  "@type&quot;: &quot;microsoft.graph.shareAction"
 }-->
 
 ```json
@@ -39,9 +39,9 @@ ms.locfileid: "48010194"
 
 ## <a name="properties"></a>Свойства
 
-| Имя свойства | Тип                       | Описание
-|:--------------|:---------------------------|:-----------------------------
-| recipients    | Коллекция [identitySet][] | Удостоверения, к которым был предоставлен доступ элементу в результате выполнения этого действия.
+| Свойство   | Тип                       | Описание                                             |
+| :--------- | :------------------------- | :------------------------------------------------------ |
+| recipients | Коллекция [identitySet][] | Удостоверения, к которым был предоставлен доступ элементу в результате выполнения этого действия. |
 
 [identitySet]: identityset.md
 
@@ -59,5 +59,3 @@ ms.locfileid: "48010194"
   "suppressions": []
 }
 -->
-
-

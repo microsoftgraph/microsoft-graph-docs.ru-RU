@@ -1,16 +1,16 @@
 ---
 title: 'группа: оценкаDynamicMembership'
 description: Оцените, является ли пользователь или устройство членом динамической группы.
-author: Jordanndahl
+author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f7f57e86a3b6a0ed2eb074de3a44109d30df4ae4
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: e02843f0d4305388b40d6c5d3bf1e73980b72c89
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344062"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588906"
 ---
 # <a name="group-evaluatedynamicmembership"></a>группа: оценкаDynamicMembership
 
@@ -18,9 +18,9 @@ ms.locfileid: "62344062"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Определите, может ли пользователь или устройство являться членом динамической группы. Правило членства возвращается вместе с другими сведениями, которые были использованы в оценке. Эту операцию можно выполнить следующими способами: 
+Определите, может ли пользователь или устройство являться членом динамической группы. Правило членства возвращается вместе с другими сведениями, которые были использованы в оценке. Эту операцию можно выполнить следующими способами:
 
-- Оцените, является ли пользователь или устройство членом указанной динамической группы.  
+- Оцените, является ли пользователь или устройство членом указанной динамической группы.
 - Оцените, будет ли пользователь или устройство членом динамической группы на основе ID пользователя или устройства и правила членства.
 
 ## <a name="permissions"></a>Разрешения
@@ -29,19 +29,19 @@ ms.locfileid: "62344062"
 
 ### <a name="evaluate-dynamic-membership-with-member-id-and-group-id"></a>Оценка динамического членства с помощью ID участника и группового ИД
 
-| Тип разрешения | Разрешения (в порядке повышения привилегий) |
-| :-------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись) | Для пользователя: Group.Read.All и User.Read.All, Directory.Read.All<br>Для устройства: Group.Read.All и Device.Read.All, Directory.Read.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                                                          |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
+| Делегированные (рабочая или учебная учетная запись)     | Для пользователя: Group.Read.All и User.Read.All, Directory.Read.All<br>Для устройства: Group.Read.All и Device.Read.All, Directory.Read.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                                       |
+| Для приложений                            | Не поддерживается.                                                                                                                       |
 
 ### <a name="evaluate-dynamic-membership-with-member-id-and-membership-rule"></a>Оценка динамического членства с помощью ID и правила членства
 
-| Тип разрешения | Разрешения (в порядке повышения привилегий) |
-| :-------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись) | Для пользователя: User.Read.All, Directory.Read.All<br>Для устройства: Device.Read.All, Directory.Read.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                    |
+| :------------------------------------- | :--------------------------------------------------------------------------------------------- |
+| Делегированные (рабочая или учебная учетная запись)     | Для пользователя: User.Read.All, Directory.Read.All<br>Для устройства: Device.Read.All, Directory.Read.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                 |
+| Для приложений                            | Не поддерживается.                                                                                 |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,9 +54,9 @@ POST /groups/evaluateDynamicMembership
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя | Описание |
-| :--- | :---------- |
-| Авторизация | Bearer {token} |
+| Имя          | Описание      |
+| :------------ | :--------------- |
+| Авторизация | Bearer {token}   |
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,10 +65,10 @@ POST /groups/evaluateDynamicMembership
 
 В следующей таблице перечислены свойства, необходимые при оценке членства в группе.
 
-| Параметр | Тип | Описание |
-| :-------- | :--- | :---------- |
-| memberId | Коллекция объектов string | memberId — это объектный id пользователя или устройства, для оценки. |
-| membershipRule | Коллекция String | Правило, которое используется для оценки членства. Если это свойство не предоставлено, оценивается правило для существующей группы. Если это свойство предоставлено, пользователь или устройство оцениваются для возможного членства в группе с тем же правилом. Дополнительные сведения см. в [программе Dynamic membership rules for groups in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
+| Параметр      | Тип              | Описание                                                                                                                                                                                                                                                                                                                                                                                                            |
+| :------------- | :---------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| memberId       | Коллекция строк | memberId — это объектный id пользователя или устройства, для оценки.                                                                                                                                                                                                                                                                                                                                                       |
+| membershipRule | Коллекция строк | Правило, которое используется для оценки членства. Если это свойство не предоставлено, оценивается правило для существующей группы. Если это свойство предоставлено, пользователь или устройство оцениваются для возможного членства в группе с тем же правилом. Дополнительные сведения можно найти в статье [Правила динамического членства в группах для Azure AD](/azure/active-directory/users-groups-roles/groups-dynamic-membership). |
 
 ## <a name="response"></a>Отклик
 
@@ -82,51 +82,57 @@ POST /groups/evaluateDynamicMembership
 
 Ниже приведен пример запроса.
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "group_evaluatedynamicmembership_1"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/evaluateDynamicMembership 
+POST https://graph.microsoft.com/beta/groups/{id}/evaluateDynamicMembership
 Content-type: application/json
 
-{ 
+{
   "memberId": "319b41e8-d9e4-42f8-bdc9-741113f48b33"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-evaluatedynamicmembership-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-evaluatedynamicmembership-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-evaluatedynamicmembership-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -160,48 +166,53 @@ Content-type: application/json
 
 Ниже приведен пример запроса.
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "group_evaluatedynamicmembership_2"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/groups/evaluateDynamicMembership 
+POST https://graph.microsoft.com/beta/groups/evaluateDynamicMembership
 Content-type: application/json
 
-{ 
+{
   "memberId": "319b41e8-d9e4-42f8-bdc9-741113f48b33",
   "membershipRule": "(user.displayName -startsWith \"EndTestUser\")"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-evaluatedynamicmembership-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-evaluatedynamicmembership-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",

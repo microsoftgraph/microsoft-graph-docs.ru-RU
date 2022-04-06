@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: aedf9e901c570fc53e65a519c4363d6f00d633c9
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 775fa88e83b398ce1a6607ece80c53e1103051d0
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64588514"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630675"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -302,9 +302,9 @@ ms.locfileid: "64588514"
 
 |Member|
 |:---|
-|String|
+|Строка|
 |Целое число|
-|Справочные материалы|
+|Ссылка|
 |Binary|
 |Логическое|
 |DateTime|
@@ -548,7 +548,7 @@ ms.locfileid: "64588514"
 |:---|
 |email|
 |mobileSMS|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -700,7 +700,7 @@ ms.locfileid: "64588514"
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -842,7 +842,7 @@ ms.locfileid: "64588514"
 
 |Member|
 |:---|
-|обязательно|
+|Обязательный|
 |previouslySatisfied|
 |notApplicable|
 |unknownFutureValue|
@@ -1023,7 +1023,7 @@ ms.locfileid: "64588514"
 
 |Member|
 |:---|
-|birthday|
+|birthday;|
 |свадьба|
 |unknownFutureValue|
 
@@ -1094,7 +1094,7 @@ ms.locfileid: "64588514"
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -1760,7 +1760,7 @@ ms.locfileid: "64588514"
 
 ### <a name="registryhive-values"></a>Значения registryHive
 
-Enum для ульев реестра, как определено [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
+Enum для ульев реестра, определенных ульями [реестра](/windows/desktop/sysinfo/registry-hives).
 
 | Элемент                  | Значение | Описание                       |
 | :---------------------- | :---- | :-------------------------------- |
@@ -2246,7 +2246,7 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкая|2|
+|Низкий|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
@@ -2475,7 +2475,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|group|
+|group;|
 |unknownFutureValue|
 |реестр|
 
@@ -2745,7 +2745,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|или|
+|Кроме того:|
 |и|
 
 ### <a name="subjectrightsrequeststage-values"></a>значения subjectRightsRequestStage 

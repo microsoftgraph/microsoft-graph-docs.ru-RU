@@ -5,12 +5,12 @@ title: Тип ресурса site
 ms.localizationpriority: high
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 06649de710e2145dfcd624b15b3fe6a45357f687
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 52d5a66533304d2b7df479e2393a7a4a7cf41974
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63721678"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64586876"
 ---
 # <a name="site-resource-type"></a>Тип ресурса site
 
@@ -46,6 +46,7 @@ ms.locfileid: "63721678"
 | [Перечисление столбцов][]                                  | GET /sites/{site-id}/columns                                |
 | [Создание столбца][]                                 | POST /sites/{site-id}/columns                               |
 | [Операции со списком](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
+| [Получение параметров сайта][]                             | GET /sites/{site-id}/settings                               |
 
 [Получение сайта]: ../api/site-get.md
 [Получение корневого сайта]: ../api/site-get.md
@@ -68,6 +69,7 @@ ms.locfileid: "63721678"
 [Создание contentType]: ../api/site-post-contenttypes.md
 [Перечисление столбцов]: ../api/site-list-columns.md
 [Создание столбца]: ../api/site-post-columns.md
+[Получение параметров сайта]: ../api/sitesettings-get.md
 
 ## <a name="properties"></a>Свойства
 
@@ -81,6 +83,7 @@ ms.locfileid: "63721678"
 | **lastModifiedDateTime** | DateTimeOffset     | Дата и время последнего изменения элемента. Только для чтения.                                       |
 | **name**                 | string             | Имя или название элемента.                                                                  |
 | **root**                 | [root][]           | Если это свойство присутствует, оно указывает на то, что сайт — корневой в семействе веб-сайтов. Только для чтения.            |
+| **settings**             | [siteSettings]     | Параметры на этом сайте. Возвращается только с помощью оператора $select. Только для чтения.                                |
 | **sharepointIds**        | [sharepointIds][]  | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.                       |
 | **siteCollection**       | [siteCollection][] | Предоставляет сведения о семействе веб-сайтов сайта. Доступно только на корневом сайте. Только для чтения. |
 | **webUrl**               | строка (url-адрес)       | URL-адрес для отображения элемента в браузере. Только для чтения.                                          |
@@ -126,6 +129,7 @@ ms.locfileid: "63721678"
 [sitePage]: sitepage.md
 [root]: root.md
 [site]: site.md
+[siteSettings]: sitesettings.md
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
 [microsoft.graph.termStore.store]: termstore-store.md
@@ -154,30 +158,32 @@ ms.locfileid: "63721678"
 
 ```json
 {
+  "displayName": "string",
   "id": "string",
   "root": { "@odata.type": "microsoft.graph.root" },
+  "settings": { "@odata.type": "microsoft.graph.sitesettings" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "siteCollection": {"@odata.type": "microsoft.graph.siteCollection"},
-  "displayName": "string",
 
   /* relationships */
   "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
+  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
+  "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
-  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "termStore": { "@odata.type": "microsoft.graph.termStore.store" },
-  "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
+
   /* inherited from baseItem */
-  "name": "string",
   "createdDateTime": "datetime",
   "description": "string",
   "eTag": "string",
   "lastModifiedDateTime": "datetime",
+  "name": "string",
   "webUrl": "url"
 }
 ```

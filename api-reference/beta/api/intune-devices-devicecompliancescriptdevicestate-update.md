@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e1eb29879d2d049d3e959aff4357beb07a2d498
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 26882b9da393c598a2c06d63a0f0dcdff4b8ce8e
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345277"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64628828"
 ---
 # <a name="update-devicecompliancescriptdevicestate"></a>Обновление deviceComplianceScriptDeviceState
 
@@ -20,7 +20,7 @@ ms.locfileid: "61345277"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [deviceComplianceScriptDeviceState.](../resources/intune-devices-devicecompliancescriptdevicestate.md)
+Обновление свойств объекта [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "61345277"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,28 +43,28 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/devic
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В корпусе запроса поставляем представление JSON для [объекта deviceComplianceScriptDeviceState.](../resources/intune-devices-devicecompliancescriptdevicestate.md)
+В корпусе запроса поставляем представление JSON для [объекта deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) .
 
-В следующей таблице показаны свойства, необходимые при создании [устройстваComplianceScriptDeviceState.](../resources/intune-devices-devicecompliancescriptdevicestate.md)
+В следующей таблице показаны свойства, необходимые при создании [устройстваComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ состояния состояния скрипта устройства устройства. Это свойство доступно только для чтения.|
-|detectionState|[runState](../resources/intune-shared-runstate.md)|Состояние обнаружения из последнего выполнения скрипта соответствия требованиям устройства. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|detectionState|[runState](../resources/intune-devices-runstate.md)|Состояние обнаружения из последнего выполнения скрипта соответствия требованиям устройства. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|Последний период выполнения сценария соответствия требованиям устройства|
 |expectedStateUpdateDateTime|DateTimeOffset|Следующий период выполнения сценария соответствия требованиям к устройству|
-|lastSyncDateTime|DateTimeOffset|Последний раз, когда расширение управления Intune синхронизировали с Intune|
-|scriptOutput|String|Выход сценария обнаружения|
-|scriptError|String|Ошибка из сценария обнаружения|
+|lastSyncDateTime|DateTimeOffset|Последний раз, Intune расширение управления синхронизировали с Intune|
+|scriptOutput|Строка|Выход сценария обнаружения|
+|scriptError|Строка|Ошибка из сценария обнаружения|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного использования этот метод возвращает код отклика и обновленный объект `200 OK` [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) в тексте ответа.
+В случае успешного `200 OK` использования этот метод возвращает код отклика и обновленный объект [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

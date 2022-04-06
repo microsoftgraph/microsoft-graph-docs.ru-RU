@@ -1,16 +1,16 @@
 ---
 title: 'участник: muteAll'
 description: Отключение звука всех участников звонка.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4805c8aa107d2f056fad0b2c112caef58a629ddb
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 35ed8ecc894235ff5b7af1b638e471cdbd37b072
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341995"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608018"
 ---
 # <a name="participant-muteall"></a>участник: muteAll
 
@@ -30,7 +30,7 @@ ms.locfileid: "62341995"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | Нет                                        |
+| Для приложений                            | Calls.JoinGroupCallsasGuest.All или Calls.JoinGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

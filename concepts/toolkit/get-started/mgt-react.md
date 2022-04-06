@@ -2,13 +2,13 @@
 title: Компоненты Microsoft Graph Toolkit в React
 description: Компоненты Microsoft Graph Toolkit в React (`mgt-react`) позволяют разработчикам React использовать Microsoft Graph Toolkit в приложениях React.
 ms.localizationpriority: medium
-author: nmetulev
-ms.openlocfilehash: f81446c2b8a2938bd86057b1cbf5f33d583b49f9
-ms.sourcegitcommit: f9e71d3b8a54a98c282ef49783babe5698300c06
+author: sebastienlevert
+ms.openlocfilehash: 4dff722faf3f61b4ed9832c2389b674d9bf1a444
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60793898"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589004"
 ---
 # <a name="microsoft-graph-toolkit-react-components"></a>Компоненты Microsoft Graph Toolkit в React
 

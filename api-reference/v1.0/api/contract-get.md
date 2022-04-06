@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0a04e00fc26778cfdefee8f6b4f51dc9f2a2ae03
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ea7c36310953b7f7b967ac24340b143499c32733
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098121"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672702"
 ---
 # <a name="get-contract"></a>Получить контракт
 
 Пространство имен: microsoft.graph
 
-Извлечение свойств и связей объекта [контракта.](../resources/contract.md)
+Извлечение свойств и связей объекта [контракта](../resources/contract.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,7 +25,7 @@ ms.locfileid: "62098121"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -45,13 +45,13 @@ GET /contracts/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект Contract](../resources/contract.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект Contract](../resources/contract.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

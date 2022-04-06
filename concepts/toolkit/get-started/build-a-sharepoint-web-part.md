@@ -2,13 +2,13 @@
 title: Создание веб-части SharePoint с помощью Microsoft Graph Toolkit
 description: Начало работы с Microsoft Graph Toolkit для создания веб-части SharePoint.
 ms.localizationpriority: medium
-author: elisenyang
-ms.openlocfilehash: d30a2dd4fbaa89890124332528ed157e9043f8a9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 700cfd44ddc115fc88451ce97880893b45feb9d3
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59083812"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588808"
 ---
 # <a name="build-a-sharepoint-web-part-with-the-microsoft-graph-toolkit"></a>Создание веб-части SharePoint с помощью Microsoft Graph Toolkit
 
@@ -147,7 +147,7 @@ gulp serve
 Размещенное рабочее место автоматически откроется в браузере. Добавьте веб-часть на страницу, и вы увидите ее вместе с компонентами Microsoft Graph Toolkit! Пока команда gulp serve все еще работает на консоли, можно продолжать вносить изменения в код, а затем просто обновлять браузер, чтобы увидеть изменения.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Ознакомьтесь с этим пошаговом руководстве по SharePoint [веб-части.](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-9-microsoft-graph-toolkit-sharepoint-provider/)
+- Ознакомьтесь с этим пошаговом руководстве по SharePoint [веб-части](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-9-microsoft-graph-toolkit-sharepoint-provider/).
 - Воспользуйтесь компонентами в [интерактивной среде](https://mgt.dev).
 - Задавайте вопросы на сайте [Stack Overflow](https://aka.ms/mgt-question).
 - Сообщайте об ошибках и оставляйте запросы на создание функций в [GitHub](https://aka.ms/mgt).

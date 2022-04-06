@@ -5,18 +5,18 @@ description: Обновление пакета driveItems
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b9434f81eb832a98cb8199fe78dd76e9ac032625
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: 07f69618fae4fe2424abee3a1ac274d6ed42e88d
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63758061"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684853"
 ---
-# <a name="update-bundle"></a>Пакет обновления
+# <a name="update-bundle"></a>Обновление пакета
 
 Пространство имен: microsoft.graph
 
-Обновление метаданных [для пакета][] [driveItemsdriveItem] [по] ID.
+Обновите метаданные для [пакета][] [driveItemsdriveItem][] по идентификатору.
 Можно обновить только следующие метаданные:
 
 * Имя пакета
@@ -47,7 +47,7 @@ PATCH /drive/items/{bundle-id}
 | Имя          | Описание  |
 |:------------- |:------------ |
 | Авторизация | Носитель \{токен\}. Обязательный. |
-| if-match      | eTag. Необязательное свойство. Если этот загон запроса включен, а предоставленный eTag не соответствует текущему eTag на койке, `412 Precondition Failed` возвращается ответ.
+| if-match      | Etag. Необязательный параметр. Если этот заголовок запроса включен и предоставленный eTag не соответствует текущему eTag в пакете, `412 Precondition Failed` возвращается ответ.
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -55,13 +55,13 @@ PATCH /drive/items/{bundle-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного использования этот метод возвращает [ресурс driveItem][] , который представляет обновленный пакет в теле отклика.
+В случае успешного выполнения этот метод возвращает [ресурс driveItem][] , представляющий обновленный пакет в тексте ответа.
 
-Сведения об ответах на ошибки см. в этой [информации][error-response].
+Дополнительные сведения об ошибках см. в [разделе "Ответы на ошибки"][error-response].
 
 ## <a name="example"></a>Пример
 
-В этом примере переименовка пакета.
+В этом примере переименовывание пакета.
 
 ### <a name="request"></a>Запрос
 
@@ -70,7 +70,7 @@ PATCH /drive/items/{bundle-id}
 <!-- { "blockType": "request", "name": "rename-bundle" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/drive/items/{bundle-id}
+PATCH https://graph.microsoft.com/v1.0/drive/items/{bundle-id}
 Content-Type: application/json
 
 {

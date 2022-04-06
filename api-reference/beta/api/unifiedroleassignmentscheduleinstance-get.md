@@ -1,23 +1,23 @@
 ---
 title: Get unifiedRoleAssignmentScheduleInstance
 description: Ознакомьтесь с свойствами и отношениями объекта unifiedRoleAssignmentScheduleInstance.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d0a83c35d6bc166a9c771c0e978a41ee1190ea93
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e298da589ee3953211270514bc70c79f1d85c541
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62105100"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509156"
 ---
 # <a name="get-unifiedroleassignmentscheduleinstance"></a>Get unifiedRoleAssignmentScheduleInstance
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleAssignmentScheduleInstance.](../resources/unifiedroleassignmentscheduleinstance.md)
+Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,12 +46,12 @@ GET /roleManagement/directory/roleAssignmentScheduleInstances/{unifiedRoleAssign
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и `200 OK` объект [unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md) в тексте ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код ответа и объект [unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

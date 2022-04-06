@@ -3,15 +3,15 @@ author: daspek
 description: Ресурс ItemActivity предоставляет сведения о действиях, выполненных с элементом или в контейнере.
 ms.date: 09/14/2017
 title: ItemActivity
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: a1ce6b675a1e28eb60bc7ebbf86d3cd1cd0dc5a7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dd1ff94bc03a06b69427a76339284ca783b17b39
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075684"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722704"
 ---
 # <a name="itemactivity-resource-type"></a>Тип ресурса ItemActivity
 
@@ -47,14 +47,14 @@ ms.locfileid: "48075684"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип                    | Описание
-|:---------|:------------------------|:----------------------------------------
-| id       | string                  | Уникальный идентификатор действия. Только для чтения.
-| обращения   | [акцессактион][]        | Доступ к элементу.
-| action   | [itemActionSet][]       | Сведения о выполненном действии. Только для чтения.
-| actor    | [identitySet][]         | Удостоверение, выполнившее действие. Только для чтения.
-| location | [location][]            | Физическое расположение, в котором было выполнено действие. Только для чтения.
-| times    | [itemActivityTimeSet][] | Сведения о том, когда было выполнено действие. Только для чтения.
+| Свойство | Тип                    | Описание                                                  |
+| :------- | :---------------------- | :----------------------------------------------------------- |
+| id       | string                  | Уникальный идентификатор действия. Только для чтения.            |
+| доступ   | [accessAction][]        | Был доступ к элементу.                                        |
+| action   | [itemActionSet][]       | Сведения о выполненном действии. Только для чтения.         |
+| actor    | [identitySet][]         | Удостоверение, выполнившее действие. Только для чтения.             |
+| location | [location][]            | Физическое расположение, где было выполнено действие. Только для чтения. |
+| times    | [itemActivityTimeSet][] | Сведения о том, когда было выполнено действие. Только для чтения.       |
 
 [identitySet]: identityset.md
 [itemActionSet]: itemactionset.md
@@ -62,10 +62,10 @@ ms.locfileid: "48075684"
 
 ## <a name="relationships"></a>Связи
 
-| Имя связи | Тип          | Описание
-|:------------------|:--------------|:-----------------------------------------
-| driveItem         | [driveItem][] | Представляет объект **driveItem**, с которым было выполнено действие.
-| listItem          | [listItem][]  | Представляет объект **listItem**, с которым было выполнено действие.
+| Связь | Тип          | Описание                                                     |
+| :----------- | :------------ | :-------------------------------------------------------------- |
+| driveItem    | [driveItem][] | Представляет объект **driveItem**, с которым было выполнено действие. |
+| listItem     | [listItem][]  | Представляет объект **listItem**, с которым было выполнено действие.  |
 
 [driveItem]: driveitem.md
 [listItem]: listitem.md
@@ -76,20 +76,20 @@ ms.locfileid: "48075684"
 Ниже перечислены действия, доступные в настоящее время.
 В будущем можно будет вносить в журнал новые действия, поэтому убедитесь, что ваше приложение позволяет обрабатывать объект **itemActivity** без каких-либо действий, которые "понимает" ваше приложение.
 
-| Название действия | Тип              | Описание
-|:------------|:------------------|:-------------------------------------------
-| comment     | [commentAction][] | В элемент добавлен комментарий.
-| create      | [createAction][]  | Был создан элемент.
-| delete      | [deleteAction][]  | Был удален элемент.
-| edit        | [editAction][]    | Был изменен элемент.
-| mention     | [mentionAction][] | Пользователь был упомянут в элементе.
-| move        | [moveAction][]    | Элемент был перемещен.
-| rename      | [renameAction][]  | Элемент был переименован.
-| restore     | [restoreAction][] | Элемент был восстановлен.
-| share       | [shareAction][]   | К элементу был предоставлен общий доступ.
-| version     | [versionAction][] | Для элемента была указана версия.
+| Название действия | Тип              | Описание                       |
+| :---------- | :---------------- | :-------------------------------- |
+| comment     | [commentAction][] | В элемент добавлен комментарий.  |
+| create      | [createAction][]  | Был создан элемент.              |
+| delete      | [deleteAction][]  | Был удален элемент.              |
+| edit        | [editAction][]    | Был изменен элемент.               |
+| mention     | [mentionAction][] | Пользователь был упомянут в элементе. |
+| move        | [moveAction][]    | Элемент был перемещен.                |
+| rename      | [renameAction][]  | Элемент был переименован.              |
+| restore     | [restoreAction][] | Элемент был восстановлен.             |
+| share       | [shareAction][]   | К элементу был предоставлен общий доступ.               |
+| version     | [versionAction][] | Для элемента была указана версия.            |
 
-[акцессактион]: accessaction.md
+[accessAction]: accessaction.md
 [commentAction]: commentaction.md
 [createAction]: createaction.md
 [deleteAction]: deleteaction.md
@@ -116,5 +116,3 @@ ms.locfileid: "48075684"
   "suppressions": []
 }
 -->
-
-

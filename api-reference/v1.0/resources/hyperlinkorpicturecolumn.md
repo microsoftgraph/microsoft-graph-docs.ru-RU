@@ -5,12 +5,12 @@ description: Ресурс hyperlinkOrPictureColumn указывает, что с
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 093ec12e6920c74ccbef942f18493602d785ee9f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1f2cc282732bbafcb5e5acff3aed53d534a2c557
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007203"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758208"
 ---
 # <a name="hyperlinkorpicturecolumn-resource-type"></a>тип ресурса hyperlinkOrPictureColumn
 
@@ -20,14 +20,14 @@ ms.locfileid: "59007203"
 
 ## <a name="properties"></a>Свойства
 
-| Имя свойства      | Тип               | Описание|
+| Свойство      | Тип               | Описание|
 |:-------------------|:-------------------|:----------------------------------------------|
 | isPicture       | Boolean             | Указывает, является ли формат отображения, используемый для столбцов URL-адресов, изображением или гиперссылкой. |
 
 
 ## <a name="json-representation"></a>Представление JSON
 
-Вот представление JSON ресурса **hyperlinkOrPictureColumn.**
+Вот представление JSON ресурса **hyperlinkOrPictureColumn** .
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.hyperlinkOrPictureColumn" } -->
 
 ```json

@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 8f63a225231365f7dfd654c11b797a52489633ce
-ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
+ms.openlocfilehash: 3737a7203deb844a7fb45cb34e823dba02bb5b15
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63780543"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477568"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>Использование Postman с API соединителей Microsoft Graph
 
@@ -44,7 +44,7 @@ ms.locfileid: "63780543"
 ## <a name="step-2---download-the-postman-agent-optional---postman-web-browser-only"></a>Шаг 2. Скачивание агента Postman (необязательно, только в веб-браузере Postman)
 
 Чтобы использовать эту коллекцию Postman в своем веб-браузере, скачайте [классический агент Postman](https://www.postman.com/downloads). Без этого вы не можете использовать Postman для Интернета из-за ограничений CORS в веб-браузере.
-"Максимальное количество ресурсов [соединения](/graph/api-reference/resources/externalconnection?view=graph-rest-beta&preserve-view=true) на клиента Microsoft 365".
+"Максимальное количество ресурсов [соединения](/graph/api/resources/externalconnectors-externalconnection) на клиента Microsoft 365".
 
 > [!NOTE]
 > Вам не требуется агент, если вы используете Postman для приложения Windows. Если вы открываете Postman для Windows, вы увидите эту коллекцию в своей рабочей области.

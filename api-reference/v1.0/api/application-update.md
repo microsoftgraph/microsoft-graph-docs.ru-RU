@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e1e7756b8663b2d370d1dc1f0b9b8ca189fcc229
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 34c976e1e9b444416cd6645cff0c392aa02d0e5b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477988"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672422"
 ---
 # <a name="update-application"></a>Обновление приложения
 
@@ -19,7 +19,7 @@ ms.locfileid: "64477988"
 Обновление свойств объекта [приложения](../resources/application.md) .
 
 > [!IMPORTANT]
-> Использование метода PATCH для настройки [**passwordCredential**](../resources/passwordcredential.md) не поддерживается. Используйте [методы addPassword и](./application-addpassword.md) [removePassword](./application-removepassword.md) для обновления пароля или секрета приложения.
+> Использование метода PATCH для настройки [**passwordCredential**](../resources/passwordcredential.md) не поддерживается. Чтобы обновить [пароль для](./application-addpassword.md) приложения, используйте [методы addPassword и removePassword](./application-removepassword.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
