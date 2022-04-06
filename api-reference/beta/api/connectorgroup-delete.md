@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a411dac19133b036ad95155dc937c1656df1a9fa
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 52f3f5995a3b1dd650f79c4645042e611e38cdd3
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103715"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671183"
 ---
 # <a name="delete-connectorgroup"></a>Удаление connectorGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "62103715"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [соединителиГруп](../resources/connectorgroup.md). Все [соединители](../resources/connector.md) и приложения должны быть удалены из группы соединитеителей, прежде чем группа соединитеителей может быть удалена.
+Удаление [соединитеной группы](../resources/connectorgroup.md). Все [соединители](../resources/connector.md) и приложения должны быть удалены из группы соединитеителей, прежде чем группа соединитеителей может быть удалена.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "62103715"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается.  |
 
@@ -38,9 +38,9 @@ DELETE /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Носителер. Обязательный|
+| Авторизация  | Носителер. Обязательна|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

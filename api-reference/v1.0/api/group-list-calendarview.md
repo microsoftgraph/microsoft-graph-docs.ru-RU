@@ -2,15 +2,15 @@
 title: Список calendarView
 description: Получение исключений, повторяемых или единичных экземпляров событий в представлении календаря, которое определяется заданным диапазоном времени,
 ms.localizationpriority: medium
-author: Jordanndahl
+author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fed619a1a377387609aa64c885a67c550ddd56fc
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ce4facecc4c8a076d7d982fa5060f13e39ade041
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023490"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589480"
 ---
 # <a name="list-calendarview"></a>Список calendarView
 
@@ -19,25 +19,29 @@ ms.locfileid: "61023490"
 Получение исключений, повторяемых или единичных экземпляров событий в таком представлении стандартного календаря группы, которое определяется заданным диапазоном времени.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+| :------------------------------------- | :------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | Group.Read.All, Group.ReadWrite.All         |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | Не поддерживается.                              |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
 ## <a name="query-parameters"></a>Параметры запроса
+
 В URL-адресе запроса укажите перечисленные ниже обязательные параметры запроса и их значения.
 
-| Параметр     | Тип   | Описание                                                                                                            |
-|:--------------|:-------|:-----------------------------------------------------------------------------------------------------------------------|
+| Параметр     | Тип   | Описание                                                                                                          |
+| :------------ | :----- | :------------------------------------------------------------------------------------------------------------------- |
 | startDateTime | String | Дата и время начала диапазона, представленные в формате ISO 8601. Пример: "2019-11-08T19:00:00-08:00". |
 | endDateTime   | String | Дата и время окончания диапазона, представленные в формате ISO 8601. Пример: "2019-11-08T20:00:00-08:00".   |
 
@@ -49,64 +53,80 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 > Свойства **createdDateTime** и **lastModifiedDateTime** [события](../resources/event.md) не поддерживают `$select`. Чтобы получить их значения, просто запросите **calendarView**, не применяя `$select`.
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание |
-|:---------------|:--------|:--------|
-| Authorization  | string | Bearer {токен}. Обязательный.  |
-| Prefer: outlook.timezone  | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в отклике. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный. |
+
+| Имя                              | Тип   | Описание                                                                                                                                                                                                                                                                        |
+| :-------------------------------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization                     | string | Bearer {token}. Обязательный.                                                                                                                                                                                                                                                          |
+| Prefer: outlook.timezone          | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в отклике. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный.                                                                                                                                      |
 | Prefer: outlook.body-content-type | string | Формат возвращаемого свойства **body**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойство **body** возвращается в формате HTML. Необязательное свойство. |
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [event](../resources/event.md) в теле отклика.
 
 ## <a name="example"></a>Пример
+
 #### <a name="request"></a>Запрос
+
 Приведенный ниже пример запрашивает возвращение тел событий в текстовом формате.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315"],
   "name": "group_get_calendarview"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/calendarView?startDateTime=2017-01-01T19:00:00-08:00&endDateTime=2017-10-01T19:00:00.00-08:00
 Prefer: outlook.body-content-type="text"
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-calendarview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-get-calendarview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/group-get-calendarview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/group-get-calendarview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/group-get-calendarview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### <a name="response"></a>Отклик
+
 Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.event",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

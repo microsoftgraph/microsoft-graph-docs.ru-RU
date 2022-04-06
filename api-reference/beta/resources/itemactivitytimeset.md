@@ -3,15 +3,15 @@ author: daspek
 description: Ресурс ItemActivityTimeSet предоставляет сведения о том, когда было совершено действие над элементом.
 ms.date: 09/14/2017
 title: ItemActivityTimeSet
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 9295337237c681fd0ec02c9fa8061bf206059600
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eb0477255783b3aba7aaa61a0e9ece868c1882d1
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075667"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63724327"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>Тип ресурса ItemActivityTimeSet
 
@@ -31,7 +31,7 @@ ms.locfileid: "48075667"
   "keyProperty": "id",
   "@type": "microsoft.graph.itemActivityTimeSet",
   "@type.aka": "oneDrive.times",
-  "@property.aka": "observedDateTime=observedTime recordedDateTime=recordedTime"
+  "@property.aka&quot;: &quot;observedDateTime=observedTime recordedDateTime=recordedTime"
 }-->
 
 ```json
@@ -43,10 +43,10 @@ ms.locfileid: "48075667"
 
 ## <a name="properties"></a>Свойства
 
-| Имя свойства    | Тип           | Описание
-|:-----------------|:---------------|:-----------------------------------------
-| observedDateTime | DateTimeOffset | Сведения о том, когда было обнаружено действие.
-| recordedDateTime | DateTimeOffset | Сведения о том, когда сведения об обнаружении действия были записаны в службе.
+| Свойство         | Тип           | Описание                                       |
+| :--------------- | :------------- | :------------------------------------------------ |
+| observedDateTime | DateTimeOffset | Сведения о том, когда было обнаружено действие.     |
+| recordedDateTime | DateTimeOffset | Сведения о том, когда сведения об обнаружении действия были записаны в службе. |
 
 Разница между временем **обнаружения** и **записи** особенно важна для сценариев совместной работы в автономном режиме.
 Если пользователь добавляет комментарий к файлу в автономном режиме, то время добавления этого комментария будет указано в свойстве **observedDateTime**.
@@ -66,5 +66,3 @@ ms.locfileid: "48075667"
   "suppressions": []
 }
 -->
-
-

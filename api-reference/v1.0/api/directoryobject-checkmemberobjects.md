@@ -1,19 +1,24 @@
 ---
 title: 'directoryObject: checkMemberObjects'
-description: 'Проверьте членство в списке групп, административных единиц или ролей каталога для указанного пользователя, группы, руководителя службы, организационного контакта, устройства или объекта каталога.'
+description: Проверьте членство в списке групп, административных единиц или ролей каталога для указанного пользователя, группы, руководителя службы, организационного контакта, устройства или объекта каталога.
 ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
+ms.openlocfilehash: 392d875aa71305336d17ea0a81e1c1fd6ede6b38
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668383"
 ---
-
 # <a name="directoryobject-checkmemberobjects"></a>directoryObject: checkMemberObjects
 
 Пространство имен: microsoft.graph
 
 Проверьте членство в списке групповых ИД, административных ИД единиц или ИД ролей каталога для ID указанного [пользователя, группы](../resources/user.md)[](../resources/device.md)[, руководителя](../resources/group.md) службы[, организационного](../resources/serviceprincipal.md) [контакта, устройства](../resources/orgcontact.md) или объекта [каталога](../resources/directoryobject.md). Это транзитивный метод.
 
-## <a name="permissions"></a>Разрешения:
+## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -29,7 +34,7 @@ doc_type: apiPageType
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.Read, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | User.Read, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -37,7 +42,7 @@ doc_type: apiPageType
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
 | Для приложений                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
 
@@ -45,7 +50,7 @@ doc_type: apiPageType
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -53,7 +58,7 @@ doc_type: apiPageType
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -61,7 +66,7 @@ doc_type: apiPageType
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -181,7 +186,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

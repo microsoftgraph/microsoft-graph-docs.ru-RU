@@ -1,48 +1,50 @@
 ---
-title: Удаление группы — API Graph Microsoft
+title: Удаление группы — Microsoft API Graph
 description: Удаление группового ресурса.
-author: Jordanndahl
+author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0ffee0a4a07439f8a7e02ceb427a9b36e6670d4b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2fea2f4a126a4cd812f06b2d1690a58c7b2575e7
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62088712"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589494"
 ---
 # <a name="delete-group"></a>Delete group
 
 Пространство имен: microsoft.graph
 
-Удаление группы.  
+Удаление группы.
 
-При удалении Microsoft 365 группы перемещаются во временный контейнер и могут быть восстановлены в течение 30 дней.  После этого они будут удалены навсегда. Это не применимо к группам безопасности и группам рассылки, которые удаляются немедленно. Дополнительные сведения см. в статье [deletedItems](../resources/directory.md).
+При удалении Microsoft 365 группы перемещаются во временный контейнер и могут быть восстановлены в течение 30 дней. После этого они будут удалены навсегда. Это не применимо к группам безопасности и группам рассылки, которые удаляются немедленно. Дополнительные сведения см. в статье [deletedItems](../resources/directory.md).
+
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.AccessAsUser.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.ReadWrite.All |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+| :------------------------------------- | :------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All                         |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | Group.ReadWrite.All                         |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 DELETE /groups/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя       | Описание|
-|:---------------|:--------|
-| Авторизация  | Bearer {token}. Обязательный. |
+| Имя          | Описание               |
+| :------------ | :------------------------ |
+| Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -57,47 +59,57 @@ DELETE /groups/{id}
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_group"
 }-->
+
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/{id}
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/delete-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/delete-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример ответа.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -113,4 +125,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

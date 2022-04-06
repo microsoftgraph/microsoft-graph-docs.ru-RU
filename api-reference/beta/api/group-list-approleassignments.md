@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: eba08369b5260c2a22cedfc3887495a47b0d51d6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1b7100e1eeec74965e6b7f6003a4e171949771e0
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127825"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671540"
 ---
 # <a name="list-approleassignments-granted-to-a-group"></a>Список объектов appRoleAssignment, предоставленных для группы
 
@@ -26,7 +26,7 @@ ms.locfileid: "62127825"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -47,7 +47,7 @@ GET /groups/{id}/appRoleAssignments
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e25d134bcc815765e2b5a083b71a0eea9fe5360f
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: e3634840205a3294519ba65f6f2ecac8d536bf9f
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62292027"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630417"
 ---
 # <a name="manageddevice-resource-type"></a>Тип ресурса managedDevice
 
@@ -66,12 +66,12 @@ ms.locfileid: "62292027"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для устройства. Это свойство доступно только для чтения.|
+|id|Строка|Уникальный идентификатор для устройства. Это свойство доступно только для чтения.|
 |userId|String|Уникальный идентификатор для пользователя, связанного с устройством. Это свойство доступно только для чтения.|
 |deviceName|String|Имя устройства. Это свойство доступно только для чтения.|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|Подробные сведения для устройства.  Включает такие сведения, как пространство для хранения, производитель, серийный номер и т.д. Это свойство только для чтения.|
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|Владение устройством. Может быть "компания" или "личный". Возможные значения: `unknown`, `company`, `personal`.|
-|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|Владение устройством. Может быть "компания" или "личный". Возможные значения: `unknown`, `company`, `personal`.|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md).|Владение устройством. Может быть "компания" или "личный". Возможные значения: `unknown`, `company`, `personal`.|
 |deviceActionResults|Коллекция [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|Список объектов deviceActionResult сложного типа.
  Это свойство доступно только для чтения.|
 |managementState|[managementState](../resources/intune-devices-managementstate.md)|Состояние управления устройством. Это свойство доступно только для чтения. Возможные значения: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
@@ -125,28 +125,28 @@ ms.locfileid: "62292027"
  Только для чтения. Это свойство доступно только для чтения. Возможные значения: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 |retireAfterDateTime|DateTimeOffset|Указывает время после автоматической отставку устройства из-за запланированных действий. Это свойство доступно только для чтения.|
 |usersLoggedOn|[коллекция loggedOnUser](../resources/intune-devices-loggedonuser.md)|Указывает последний вход в систему для пользователей устройства. Это свойство доступно только для чтения.|
-|preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Сообщает dateTime, задав параметр preferMdmOverGroupPolicy.  При задании параметры MDM Intune переопределяют параметры групповой политики в случае конфликта. Только для чтения. Это свойство доступно только для чтения.|
+|preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Сообщает dateTime, задав параметр preferMdmOverGroupPolicy.  При задании Intune параметров MDM переопределяется групповая политика параметров при конфликте. Только для чтения. Это свойство доступно только для чтения.|
 |autopilotEnrolled|Логическое|Отчеты о регистрации управляемого устройства с помощью автопилотирования. Это свойство доступно только для чтения.|
-|requireUserEnrollmentApproval|Логический|Отчеты о том, является ли управляемое устройство iOS регистрацией пользователя. Это свойство доступно только для чтения.|
+|requireUserEnrollmentApproval|Логическое|Отчеты о том, является ли управляемое устройство iOS регистрацией пользователя. Это свойство доступно только для чтения.|
 |managementCertificateExpirationDate|DateTimeOffset|Отчеты о сроках действия сертификата управления устройствами. Это свойство доступно только для чтения.|
-|iccid|String|Интегрированный идентификатор карты схемы — уникальный идентификационный номер SIM-карты. Это свойство доступно только для чтения.|
-|udid|String|Уникальный идентификатор устройства для устройств с iOS и macOS. Это свойство доступно только для чтения.|
-|roleScopeTagIds|Коллекция строк|Список ID-тегов области для этого экземпляра устройства.|
+|iccid|Строка|Интегрированный идентификатор карты схемы — уникальный идентификационный номер SIM-карты. Это свойство доступно только для чтения.|
+|udid|Строка|Уникальный идентификатор устройства для устройств с iOS и macOS. Это свойство доступно только для чтения.|
+|roleScopeTagIds|Коллекция объектов string|Список ID-тегов области для этого экземпляра устройства.|
 |windowsActiveMalwareCount|Int32|Количество активных вредоносных программ для этого устройства Windows. Это свойство доступно только для чтения.|
 |windowsRemediatedMalwareCount|Int32|Количество исправленных вредоносных программ для этого устройства Windows. Это свойство доступно только для чтения.|
 |notes|String|Заметки на устройстве, созданном ИТ-администратором|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Состояние здоровья клиента диспетчера конфигурации, допустимо только для устройств, управляемых агентом MDM/ConfigMgr|
 |configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Сведения о клиенте диспетчера конфигурации, допустимые только для устройств, управляемых, управляемых дуэлями или трехуправленных агентом ConfigMgr|
-|ethernetMacAddress|String|Mac Ethernet. Это свойство доступно только для чтения.|
+|ethernetMacAddress|Строка|Mac Ethernet. Это свойство доступно только для чтения.|
 |physicalMemoryInBytes|Int64|Общая память в bytes. Это свойство доступно только для чтения.|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|Архитектура процессора. Это свойство доступно только для чтения. Возможные значения: `unknown`, `x86`, `x64`, `arm`, `arM64`.|
-|specificationVersion|String|Версия спецификации. Это свойство доступно только для чтения.|
+|specificationVersion|Строка|Версия спецификации. Это свойство доступно только для чтения.|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|Тип присоединиться к устройству. Возможные значения: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
-|skuFamily|String|Семейство устройств sku|
-|skuNumber|Int32|Номер sku устройства см. также: [функция GetProductInfo](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo). Допустимые значения от 0 до 2147483647. Это свойство доступно только для чтения.|
+|skuFamily|Строка|Семейство устройств sku|
+|skuNumber|Int32|Номер sku устройства см. также: [функция GetProductInfo (sysinfoapi.h)](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo). Допустимые значения от 0 до 2147483647. Это свойство доступно только для чтения.|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Функции управления устройствами. Возможные значения: `none`, `microsoftManagedDesktop`.|
 |chromeOSDeviceInfo|[коллекция chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md)|Список свойств устройства ChromeOS.|
-|enrollmentProfileName|String|Имя профиля регистрации, назначенного устройству. Значение по умолчанию — это пустая строка, указывающая, что профиль регистрации не был засмеян. Это свойство доступно только для чтения.|
+|enrollmentProfileName|Строка|Имя профиля регистрации, назначенного устройству. Значение по умолчанию — это пустая строка, указывающая, что профиль регистрации не был засмеян. Это свойство доступно только для чтения.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

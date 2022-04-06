@@ -1,23 +1,23 @@
 ---
 title: Get unifiedRoleEligibilityScheduleInstance
 description: Ознакомьтесь с свойствами и отношениями объекта unifiedRoleEligibilityScheduleInstance.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 43c0ead31fc1e934cae27678e64e360e1afb27ec
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6af661ce25f674596fb4a04414c77279a60cdb0f
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089103"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510388"
 ---
 # <a name="get-unifiedroleeligibilityscheduleinstance"></a>Get unifiedRoleEligibilityScheduleInstance
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleEligibilityScheduleInstance.](../resources/unifiedroleeligibilityscheduleinstance.md)
+Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,12 +46,12 @@ GET /roleManagement/directory/roleEligibilityScheduleInstances/{unifiedRoleEligi
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) в тексте ответа.
+В случае успешной `200 OK` работы этот метод возвращает код ответа и объект [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

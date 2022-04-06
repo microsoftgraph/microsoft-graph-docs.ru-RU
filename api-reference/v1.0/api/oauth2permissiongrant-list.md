@@ -5,21 +5,21 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 360a6539a682fef89c170871962a0344361f94a5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b5c41094b6dbdf86d7945df1cd5b708c5b460aa4
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119552"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672646"
 ---
 # <a name="list-oauth2permissiongrants-delegated-permission-grants"></a>Список oauth2PermissionGrants (делегирование разрешений)
 
 Пространство имен: microsoft.graph
 
-Получение списка [объектов oAuth2PermissionGrant,](../resources/oauth2permissiongrant.md) представляющих делегированную лицензию, выданную для клиентских приложений для доступа к API от имени пользователей, входиющих в нее.
+Получение списка [объектов oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) , представляющих делегированную лицензию, выданную для клиентских приложений для доступа к API от имени пользователей, входиющих в нее.
 
 > [!NOTE]
-> При запросе могут происходить задержки репликации для предоставленных делегированных разрешений, которые были недавно созданы, обновлены или удалены. При указании фильтра эта задержка будет сведена `clientId` к минимуму.
+> При запросе могут происходить задержки репликации для предоставленных делегированных разрешений, которые были недавно созданы, обновлены или удалены. При указании фильтра `clientId` эта задержка будет сведена к минимуму.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "62119552"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -49,7 +49,7 @@ GET /oauth2PermissionGrants
 |:--------------|:--------------------------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -5,28 +5,30 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: b9a392eed805fa816e3eb4ac84e91965880d7091
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ba37207f1f1a776925ce4db60ed7a89f93fb3fa7
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132249"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629241"
 ---
 # <a name="create-printtasktrigger"></a>Создание printTaskTrigger
 Пространство имен: microsoft.graph
 
-Создайте новый [триггер задач](../resources/printtasktrigger.md) на указанном [принтере.](../resources/printer.md) В настоящее **время на** принтере может быть указан только один триггер задач, но в будущем это ограничение может быть удалено. 
+Создайте новый [триггер задач](../resources/printtasktrigger.md) на указанном [принтере](../resources/printer.md). В настоящее **время на** принтере может быть указан только один триггер задач, но это ограничение может быть удалено в будущем. 
+
+>**Примечание:** AppId, используемый для создания маркера доступа для создания триггера задачи, должен быть тем же приложением, которое использовалось для создания соответствующего определения задачи.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать. Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать. Подписанный пользователь должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Printer.ReadWrite.All, Printer.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,10 +47,10 @@ POST /print/printers/{printerId}/taskTriggers
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса подарйте JSON-представление [объекта printTaskTrigger.](../resources/printtasktrigger.md) Поставляем ссылку на [печатьTaskDefinition](../resources/printtaskdefinition.md) с помощью `@odata.bind` формата, как показано в следующем примере.
+В теле запроса подарйте JSON-представление [объекта printTaskTrigger](../resources/printtasktrigger.md) . Поставляем ссылку на [печатьTaskDefinition](../resources/printtaskdefinition.md) `@odata.bind` с помощью формата, как показано в следующем примере.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [печатьTaskTrigger](../resources/printtasktrigger.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` отклика и [печатьTaskTrigger](../resources/printtasktrigger.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -98,7 +100,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

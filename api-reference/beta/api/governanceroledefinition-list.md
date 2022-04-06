@@ -4,19 +4,19 @@ description: Получите коллекцию governanceRoleDefinitions на 
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 89ce17091cf141269414b29d06c81110308fab82
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 35f3d30a39dda6aacdfd6f06215b82746b75788e
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695018"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510290"
 ---
 # <a name="list-governanceroledefinitions"></a>Управление спискамиRoleDefinitions
 
 Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 Получите коллекцию [governanceRoleDefinitions на](../resources/governanceroledefinition.md) ресурсе.
 
@@ -29,7 +29,7 @@ ms.locfileid: "60695018"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application | PrivilegedAccess.Read.AzureResources |
+| Приложение | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,7 +37,7 @@ ms.locfileid: "60695018"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application | PrivilegedAccess.Read.AzureAD |
+| Приложение | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
@@ -45,7 +45,7 @@ ms.locfileid: "60695018"
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application | PrivilegedAccess.Read.AzureADGroup |
+| Приложение | PrivilegedAccess.Read.AzureADGroup |
 
 Помимо области разрешений этот API требует, чтобы у запросителя было как минимум одно назначение ролей на ресурсе.
 
@@ -66,7 +66,7 @@ GET /privilegedAccess/azureResources/roleDefinitions?$filter=resourceId+eq+'{res
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` объектов [governanceRoleDefinition](../resources/governanceroledefinition.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию объектов [governanceRoleDefinition](../resources/governanceroledefinition.md) в тексте отклика.
 ## <a name="example"></a>Пример
 <!-- {
   "blockType": "request",

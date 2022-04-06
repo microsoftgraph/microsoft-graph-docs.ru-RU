@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: b0511c2eca3fabd8cad27c9c9b733f808274e5e2
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: a84621b6b723f873867fff6d5d961fb6042d9e3c
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341265"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587807"
 ---
 # <a name="get-cloudpc"></a>Get cloudPC
 
@@ -28,7 +28,7 @@ ms.locfileid: "62341265"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Для приложений|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/9
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -131,7 +131,7 @@ Content-Type: application/json
     "managedDeviceName": "A00002GI001",
     "provisioningPolicyId": "13fa0778-ba00-438a-96d3-488c8602ffff",
     "provisioningPolicyName": "Marketing provisioning policy",
-    "onPremisesConnectionName": "on-Premises connection for Marketing",
+    "onPremisesConnectionName": "Azure network connection for Marketing",
     "servicePlanId": "da5615b4-a484-4742-a019-2d52c91cffff",
     "servicePlanName": "standard",
     "servicePlanType": "enterprise",

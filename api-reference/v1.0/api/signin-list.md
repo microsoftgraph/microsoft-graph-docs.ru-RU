@@ -1,16 +1,16 @@
 ---
 title: Перечисление входов
-description: Описывает метод списка ресурса signIn (сущности) из API Microsoft Graph.
+description: Описывает метод списка ресурса signIn (сущности) из microsoft API Graph.
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 615566490fb902724142a96d4ca0fc7c3622e4e9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f4e3f31e3a713d39129d99d726b6628b3d4e10dc
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128502"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629030"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -18,7 +18,7 @@ ms.locfileid: "62128502"
 
 Получает входы пользователей Azure AD для клиента. Входы, которые являются интерактивными по своей природе (где имя пользователя/пароль передается как часть маркера auth) и успешные федеративные входы в настоящее время включены в журналы входа. 
 
-Максимальный и по умолчанию размер страницы — 1000 объектов, и по умолчанию самые последние входы возвращаются первыми. Доступны только события, произошедшие в течение периода хранения Azure Active Directory [](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) по умолчанию (Azure AD).
+Максимальный и по умолчанию размер страницы — 1000 объектов, и по умолчанию самые последние входы возвращаются первыми. Доступны только события, произошедшие в течение Azure Active Directory по умолчанию (Azure AD). [](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,14 +28,14 @@ ms.locfileid: "62128502"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Приложение | AuditLog.Read.All и Directory.Read.All  |
+|Для приложений | AuditLog.Read.All и Directory.Read.All  |
 
 > [!IMPORTANT]
 > Этот API имеет [известные](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
 
 Приложения должны быть [правильно зарегистрированы в](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD.
 
-Помимо делегирования разрешений, пользователю, входиму в который, необходимо принадлежать к одной из следующих ролей каталога, которая позволяет ему читать отчеты о входе. Дополнительные информацию о роли каталогов см. в встроенной роли [Azure AD:](/azure/active-directory/roles/permissions-reference)
+Помимо делегирования разрешений, пользователю, входиму в который, необходимо принадлежать к одной из следующих ролей каталога, которая позволяет ему читать отчеты о входе. Дополнительные информацию о роли каталогов см. в [встроенных ролях Azure AD](/azure/active-directory/roles/permissions-reference):
 + Глобальный администратор
 + Глобальный читатель
 + Читатель отчетов
@@ -52,11 +52,11 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$top` параметры `$skiptoken` запроса OData и OData для настройки `$filter` ответа. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$top`запроса OData `$skiptoken``$filter` и OData для настройки ответа. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query-parameters).
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [signIn](../resources/signin.md) в тексте отклика. Коллекция объектов указана в порядке убывания на основе **createdDateTime.**
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [signIn](../resources/signin.md) в тексте отклика. Коллекция объектов указана в порядке убывания на основе **createdDateTime**.
 
 ## <a name="examples"></a>Примеры
 
@@ -199,7 +199,7 @@ Content-type: application/json
   "name": "list_signins_2"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDisplayName,'Graph')&top=10
+GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDisplayName,'Graph')&$top=10
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-signins-2-csharp-snippets.md)]
@@ -230,7 +230,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDi
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Ответ включает свойство, содержаное URL-адрес, который можно использовать для получения `@odata.nextLink` следующих 10 результатов.
+Ниже приведен пример отклика. Ответ включает свойство, `@odata.nextLink` содержаное URL-адрес, который можно использовать для получения следующих 10 результатов.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

@@ -1,16 +1,16 @@
 ---
 title: 'unifiedRoleEligibilityScheduleRequest: filterByCurrentUser'
 description: Получите список объектов unifiedRoleEligibilityScheduleRequest и их свойств, отфильтрованных определенным пользователем
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 50107b09d3b9ae0fbe0cceaea992404baf84c65f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bdbde5e6eb17dd04a787bcf841d6942971092e21
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089089"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509562"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-filterbycurrentuser"></a>unifiedRoleEligibilityScheduleRequest: filterByCurrentUser
 Пространство имен: microsoft.graph
@@ -47,7 +47,7 @@ GET /roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUse
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|RoleEligibilityScheduleRequestFilterByCurrentUserOptions|Фильтр для запроса объектов, для которых основным является текущий пользователь. Разрешено значение `principal` . Обязательный. Не извлекает назначения для групп, в которые входит этот пользователь.|
+|on|RoleEligibilityScheduleRequestFilterByCurrentUserOptions|Фильтр для запроса объектов, для которых основным является текущий пользователь. Разрешено значение `principal`. Обязательный аргумент. Не извлекает назначения для групп, в которые входит этот пользователь.|
 
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -59,12 +59,12 @@ GET /roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUse
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код ответа и коллекцию `200 OK` [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) в тексте ответа.
+В случае успешной `200 OK` работы эта функция возвращает код ответа и коллекцию [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

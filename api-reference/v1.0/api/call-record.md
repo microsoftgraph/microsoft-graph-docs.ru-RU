@@ -1,16 +1,16 @@
 ---
 title: 'вызов: recordResponse'
 description: Запись короткого голосового ответа звонящего. Это полезно, если бот хочет захватить голосовой ответ от вызываемого после запроса.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 28c93cc765036e5461d6f2b83b6172fecc5e043d
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 1b7ab605e6dfe44d7f0c80242524e3e7845b5055
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344324"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607976"
 ---
 # <a name="call-recordresponse"></a>вызов: recordResponse
 
@@ -34,7 +34,7 @@ ms.locfileid: "62344324"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Приложение     | Calls.AccessMedia.All                       |
+| Для приложений     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -58,8 +58,8 @@ POST /communications/calls/{id}/recordResponse
 |maxSilenceTimeoutInSeconds|Int32| Максимальное время тишины (паузы) после начала выступления пользователя. По умолчанию = 5 секунд, Min = 1 секунда, Max = 120 секунд.|
 |maxRecordDurationInSeconds|Int32| Максимальная продолжительность операции recordResponse перед остановкой записи. По умолчанию = 5 секунд, Min = 1 секунда, Max = 120 секунд.|
 |playBeep|Boolean| Если это так, воспроизводит звуковой сигнал, чтобы указать пользователю, что он может начать запись своего сообщения. По умолчанию = true.|
-|stopTones|Коллекция String|Стоп-сигналы, указанные для окончания записи.|
-|clientContext|String|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
+|stopTones|Коллекция строк|Стоп-сигналы, указанные для окончания записи.|
+|clientContext|Строка|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
 
 ## <a name="response"></a>Отклик
 Этот метод возвращает код ответа `200 OK` и заглавную ссылку Location с URI в [записьОперацией](../resources/recordoperation.md) , созданной для этого запроса.

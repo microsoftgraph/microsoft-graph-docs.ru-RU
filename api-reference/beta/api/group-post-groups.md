@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ac356d2a1b66ff9a0a6605262c84045f677d88b8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 40e64178ff682ae9db4c58bffce686a84471361b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127727"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671400"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -32,7 +32,7 @@ ms.locfileid: "62127727"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -57,7 +57,7 @@ POST /groups
 
 | Свойство | Тип | Описание|
 |:---------------|:--------|:----------|
-| displayName | string | Имя, которое следует отобразить в адресной книге для группы. Максимальная длина: 256 символов. Обязательный. |
+| displayName | string | Имя, которое следует отобразить в адресной книге для группы. Максимальная длина: 256 символов. Обязательно. |
 | mailEnabled | boolean | Установите значение `true` для групп с включенной поддержкой почты. Обязательное поле. |
 | mailNickname | string | Почтовый псевдоним для группы, уникальный для групп Microsoft 365 в организации. Максимальная длина: 64 символа. Это свойство может содержать только символы из [набора символов ASCII от 0 до 127](/office/vba/language/reference/user-interface-help/character-set-0127), за исключением следующих: ` @ () \ [] " ; : . <> , SPACE`. Обязательный. |
 | securityEnabled | boolean | Установите значение `true` для групп с поддержкой безопасности, включая группы Microsoft 365. Обязательно. **Примечание.** В группах, созданных с помощью портала Microsoft Azure, для свойства **securityEnabled** всегда устанавливается значение `true`.|

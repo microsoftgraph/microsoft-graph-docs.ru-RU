@@ -1,23 +1,23 @@
 ---
 title: Get unifiedRoleAssignmentSchedule
 description: Ознакомьтесь с свойствами и отношениями объекта unifiedRoleAssignmentSchedule.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a1a0c4869d592daa5c690018ab317399ab001a40
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 222c225faf4cc443ebb6b6b99bacef4bc613a3b3
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115289"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510669"
 ---
 # <a name="get-unifiedroleassignmentschedule"></a>Get unifiedRoleAssignmentSchedule
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleAssignmentSchedule.](../resources/unifiedroleassignmentschedule.md)
+Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,12 +46,12 @@ GET /roleManagement/directory/roleAssignmentSchedules/{unifiedRoleAssignmentSche
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и `200 OK` объект [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) в тексте ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код ответа и объект [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

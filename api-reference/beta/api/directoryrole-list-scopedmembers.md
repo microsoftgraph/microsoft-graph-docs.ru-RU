@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: be5d28d546f56fcc673fbd39da811b420d02d065
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a016ece96a22560925a5a73b8702ba0e0e069d07
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103558"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671687"
 ---
 # <a name="list-scopedmembers-for-a-directory-role"></a>Список scopedMembers для роли каталога
 
@@ -24,9 +24,9 @@ ms.locfileid: "62103558"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,18 +42,18 @@ GET /directoryroles/roleTemplateId={roleTemplateId}/scopedMembers
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного применения этот метод возвращает код ответа и коллекцию объектов `200 OK` [scopedRoleMembership](../resources/scopedrolemembership.md) в тексте ответа.
+В случае успешного `200 OK` применения этот метод возвращает код ответа и коллекцию объектов [scopedRoleMembership](../resources/scopedrolemembership.md) в тексте ответа.
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1--get-the-scoped-members-of-a-directory-role-using-role-id"></a>Пример 1. Получить масштабные члены роли каталога с помощью role id
 
 #### <a name="request"></a>Запрос
-Ниже приводится пример запроса на id роли **каталога** `41d12a2f-caa8-4e3e-ba14-05e5102ce085` .
+Ниже приводится пример запроса на **id роли каталога** `41d12a2f-caa8-4e3e-ba14-05e5102ce085`.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -121,7 +121,7 @@ Content-type: application/json
 ### <a name="example-2--get-the-scoped-members-of-a-directory-role-using-roletemplateid"></a>Пример 2. Получить масштабные члены роли каталога с помощью roleTemplateId
 
 #### <a name="request"></a>Запрос
-Ниже приводится пример запроса на роль каталога с **roleTemplateId** `fdd7a751-b60b-444a-984c-02652fe8fa1c` .
+Ниже приводится пример запроса на роль каталога с **roleTemplateId** `fdd7a751-b60b-444a-984c-02652fe8fa1c`.
 
 
 <!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->

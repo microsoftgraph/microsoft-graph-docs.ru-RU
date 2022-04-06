@@ -2,21 +2,21 @@
 title: Компонент файла в microsoft Graph набор средств
 description: Компонент файла используется для отображения файла, показывая значок и имя
 ms.localizationpriority: medium
-author: beth-panx
-ms.openlocfilehash: 8b3aaac8e0216cad39b0dd566de763d26eacfb4a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 1519b314be1d41d1a2df87cebbfb99d2e593c6a4
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035334"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589067"
 ---
 # <a name="file-component-in-the-microsoft-graph-toolkit"></a>Компонент файла в microsoft Graph набор средств
 
-Компонент File используется для представления отдельного файла или папки из OneDrive или [SharePoint](/graph/onedrive-concept-overview) путем отображения таких сведений, как имя файла или папки, значок с указанием типа файла и других свойств, таких как автор, последняя измененная дата или другие сведения. Вы можете предоставить идентификаторы для файла, и компонент будет создавать запрос для получения файла на основе предоставленных идентификаторов. Этот компонент можно использовать самостоятельно или в составе компонентов [mgt-file-list.](./file-list.md)
+Компонент File используется для представления отдельного файла или папки из [OneDrive или SharePoint](/graph/onedrive-concept-overview) путем отображения таких сведений, как имя файла или папки, значок с указанием типа файла и других свойств, таких как автор, последняя измененная дата или другие сведения. Вы можете предоставить идентификаторы для файла, и компонент будет создавать запрос для получения файла на основе предоставленных идентификаторов. Этот компонент можно использовать самостоятельно или в составе компонентов [mgt-file-list](./file-list.md) .
 
 ## <a name="example"></a>Пример
 
-В следующем примере отображается файл с помощью `mgt-file` компонента. Вы можете использовать редактор кода, чтобы узнать, как [свойства](#properties) изменяют поведение компонента.
+В следующем примере отображается файл с помощью компонента `mgt-file` . Вы можете использовать редактор кода, чтобы узнать, как [свойства](#properties) изменяют поведение компонента.
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-file--file&source=docs" height="250"></iframe>
 
@@ -29,20 +29,20 @@ ms.locfileid: "59035334"
 | Атрибут | Свойство | Описание |
 | --------- | -------- | ----------- |
 | файл-запрос | fileQuery | Полный запрос или путь к файлу, который будет извлечен. |
-| drive-id | driveId | ID диска, к которой принадлежит файл. Также необходимо предоставить либо `item-id` `item-path` . |
-| group-id | groupId | ID группы, которой принадлежит файл. Также необходимо предоставить либо `item-id` `item-path` . |
-| site-id | siteId | ID сайта, на который принадлежит файл. Также необходимо предоставить либо `{item-id}` `{item-path}` . `{list-id}`Предокапь также, если вы ссылаетесь на файл из определенного списка. |
-| list-id | listId | ID списка, к которой принадлежит файл. Также необходимо предоставить `{site-id}` и `{item-id}` . |
-| item-id | itemId | ID файла. Запрос по умолчанию `/me/drive/items` . Предоставление `{drive-id}` , или запрос `{group-id}` `{site-id}` `{user-id}` определенного расположения. |
-| путь элемента | itemPath | Путь элемента файла. Запрос по умолчанию `/me/drive/root` . Предоставление `{drive-id}` , или запрос `{group-id}` `{site-id}` `{user-id}` определенного расположения. |
-| тип insight | insightType | Тип анализа файла, извлеченного из. Может быть `trending` `used` , или `shared` . |
+| drive-id | driveId | ID диска, к которой принадлежит файл. Также необходимо предоставить либо `item-id` .`item-path` |
+| group-id | groupId | ID группы, которой принадлежит файл. Также необходимо предоставить либо `item-id` .`item-path` |
+| site-id | siteId | ID сайта, на который принадлежит файл. Также необходимо предоставить либо `{item-id}` .`{item-path}` Предокапь `{list-id}` также, если вы ссылаетесь на файл из определенного списка. |
+| list-id | listId | ID списка, к которой принадлежит файл. Также необходимо предоставить `{site-id}` и `{item-id}`. |
+| item-id | itemId | ID файла. Запрос по умолчанию `/me/drive/items`. Предоставление `{drive-id}`, `{group-id}`или `{site-id}`запрос `{user-id}` определенного расположения. |
+| путь элемента | itemPath | Путь элемента файла. Запрос по умолчанию `/me/drive/root`. Предоставление `{drive-id}`, `{group-id}`или `{site-id}`запрос `{user-id}` определенного расположения. |
+| тип insight | insightType | Тип анализа файла, извлеченного из. Может быть `trending`, `used`или `shared`. |
 | insight-id | insightId | ID ресурса insight. |
 | сведения о файле | fileDetails | Настройка объекта, представляющего файл |
 | значок file-icon | fileIcon | Настройка значка для показа файла |
-| представление | представление | Установите для управления тем, как отрисовка файла. Значение по умолчанию: `oneline`. <br>`image` - показать только значок <br>`oneline` - покажите значок и одну строку текста (по умолчанию — `name` файл) <br>`twolines` - покажите значок и две строки текста `name` (и `lastModifiedDateTime` по умолчанию)<br> `threelines` - покажите значок и три строки текста `name` `lastModifiedDateTime` (и `displayName` автора по умолчанию) |
-| line1-property | line1Property | Задает свойство `fileDetails` использовать для первой строки текста. По умолчанию `name` это файл. |
-| line2-property | line2Property | Задает свойство `fileDetails` использовать для второй строки текста. Значение по умолчанию: `lastModifiedDateTime`. |
-| line3-property | line3Property | Задает свойство `fileDetails` для использования для третьей строки текста. По умолчанию `size` это файл. |
+| представление | представление | Установите для управления тем, как отрисовка файла. Значение по умолчанию: `oneline`. <br>`image` - показать только значок <br>`oneline` - покажите значок и одну строку текста (по умолчанию — файл `name`) <br>`twolines` - покажите значок и две строки текста (`name` и по `lastModifiedDateTime` умолчанию)<br> `threelines`- покажите значок и три строки текста (`name``lastModifiedDateTime`и `displayName` автора по умолчанию) |
+| line1-property | line1Property | Задает свойство использовать `fileDetails` для первой строки текста. По умолчанию `name` это файл. |
+| line2-property | line2Property | Задает свойство использовать `fileDetails` для второй строки текста. Значение по умолчанию: `lastModifiedDateTime`. |
+| line3-property | line3Property | Задает свойство для `fileDetails` использования для третьей строки текста. По умолчанию `size` это файл. |
 
 Следующий пример демонстрирует изменение поведения компонента для извлечения данных из определенного запроса.
 
@@ -109,7 +109,7 @@ mgt-file {
 
 Этот элемент управления использует следующие API и разрешения Microsoft Graph.
 
-| Настройка | Области разрешений | API |
+| Конфигурация | Области разрешений | API |
 | ------------- | ----------------- | --- |
 | Разработчик предоставляет `{drive-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}` |
 | Разработчик предоставляет `{drive-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/root:/{item-path}` |
@@ -119,15 +119,15 @@ mgt-file {
 | Разработчик предоставляет ONLY `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root:/{item-path}` |
 | Разработчик предоставляет `{site-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/drive/items/{item-id}` |
 | Разработчик предоставляет `{site-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/drive/root:/{item-path}` |
-| Разработчик предоставляет `{site-id}` AND `{list-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/lists/{list-id}/items/{item-id}/driveItem` |
+| Разработчик предоставляет `{site-id}` AND AND `{list-id}``{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/lists/{list-id}/items/{item-id}/driveItem` |
 | Разработчик предоставляет `{user-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/drive/items/{item-id}` |
 | Разработчик предоставляет `{user-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/drive/root:/{item-path}` |
 | `insight-type` настроена на `trending` И разработчик предоставляет `{insight-id}` | Sites.Read.All | `GET /me/insights/trending/{insight-id}/resource` |
-| Разработчик предоставляет `{user-id or upn}` `{insight-id}` И И `insight-type` заме- `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending/{insight-id}/resource` |
+| Разработчик предоставляет `{user-id or upn}` И `{insight-id}` И `insight-type` заме- `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending/{insight-id}/resource` |
 | `insight-type` настроена на `used` И разработчик предоставляет `{insight-id}` | Sites.Read.All | `GET /me/insights/used/{id}/resource` |
-| Разработчик предоставляет `{user-id or upn}` `{insight-id}` И И `insight-type` заме- `used` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/used/{id}/resource` |
+| Разработчик предоставляет `{user-id or upn}` И `{insight-id}` И `insight-type` заме- `used` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/used/{id}/resource` |
 | `insight-type` предоставляет `shared` разработчик AND `{insight-id}` | Sites.Read.All | `GET /me/insights/shared/{id}/resource` |
-| Разработчик предоставляет `{user-id or upn}` `{insight-id}` И И `insight-type` заме- `shared` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/shared/{id}/resource` |
+| Разработчик предоставляет `{user-id or upn}` И `{insight-id}` И `insight-type` заме- `shared` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/shared/{id}/resource` |
 
 ## <a name="templates"></a>Шаблоны
 
@@ -145,13 +145,13 @@ mgt-file {
 
 ## <a name="cache"></a>Кэш
 
-|Хранилище объектов|Кэшные данные|Замечания|
+|Хранилище объектов|Кэшные данные|Примечания|
 |---------|-----------|-------|
 |`driveFiles`|Список файлов по дисковой id|Используется при `driveId` условии|
 |`groupFiles`|Список файлов по групповому id|Используется при `groupId` условии|
 |`siteFiles`|Список файлов по id сайта|Используется при `siteId` условии|
 |`userFiles`|Список файлов по пользовательскому id|Используется при `userId` условии|
-|`insightFiles`|Список файлов по сведениям|Используется, `insightType` `insightId` когда и предоставляется|
+|`insightFiles`|Список файлов по сведениям|Используется, когда `insightType` и `insightId` предоставляется|
 |`fileQueries`|Список файлов по запросам|Используется при `fileQuery` условии|
 
-Сведения о настройке кэша см. в материале [Caching.](../customize-components/cache.md)
+Сведения о настройке кэша см. в материале [Caching](../customize-components/cache.md).

@@ -5,29 +5,46 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8387a1615eee66f377458bb4d36a26099ae8d66c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3ae3b1c98075db838c72ef8f2028d06c292e9ab8
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092521"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588262"
 ---
 # <a name="delete-directoryobject"></a>Удаление объекта directoryObject
 
 Пространство имен: microsoft.graph
 
-Удаляет directoryObject.
+Удаление объекта каталога, например группы, пользователя, приложения или руководителя службы.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
+### <a name="delete-a-user"></a>Удалить пользователя
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+|Для приложений | User.ReadWrite.All |
+
+### <a name="delete-a-group"></a>Удаление группы
+
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                 |
+| :------------------------------------- | :------------------------------------------------------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
+| Для приложений                            | Group.ReadWrite.All                             |
+
+### <a name="delete-an-application-or-service-principal"></a>Удаление основного приложения или службы
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +59,7 @@ DELETE /directoryObjects/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -61,7 +78,7 @@ DELETE /directoryObjects/{id}
   "name": "delete_directoryobject"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryObjects/{id}
+DELETE https://graph.microsoft.com/v1.0/directoryObjects/ffab4dce-9b82-49a6-b7c7-1a143106598c
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-csharp-snippets.md)]

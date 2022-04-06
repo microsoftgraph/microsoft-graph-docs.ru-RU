@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: spunukol
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a35736914c71f64c978518c94ac219b2d07d289a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 771e2a5c82a4966fc9ef25fb0026312e9acf27ea
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62090673"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509828"
 ---
 # <a name="list-device-transitive-groups"></a>Перечисление транзитивных групп устройств
 
@@ -26,7 +26,7 @@ ms.locfileid: "62090673"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -169,7 +169,7 @@ Content-type: text/plain
 ```
 
 
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Пример 3. Использование литых и $search OData для получения членства с именами отображения, которые содержат буквы "Видео", включая количество возвращенных объектов
+### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Пример 3. Использование литых и $search OData для получения членства с отображаемой фамилией, содержаной буквы "Видео", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 
@@ -218,8 +218,8 @@ Content-type: application/json
 Ниже приведен пример запроса.
 
 <!-- {
-  "blockType": "ignored",
-  "name": "get_a_count"
+  "blockType": "request",
+  "name": "list_devices_transitivememberof_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'a')

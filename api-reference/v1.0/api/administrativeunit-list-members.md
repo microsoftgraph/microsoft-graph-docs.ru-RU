@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 518acaa07960f5569b2996c797b7cfcb4671a9d1
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 4a87d88bbd69a9a9a93b80968b1719780d2f032e
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947037"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672499"
 ---
 # <a name="list-members"></a>Список участников
 
@@ -23,7 +23,7 @@ ms.locfileid: "60947037"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -47,7 +47,7 @@ GET /directory/administrativeUnits/{id}/members/$ref
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов пользователей и/или групп в `200 OK` тексте отклика. [](../resources/user.md) [](../resources/group.md)  Вместо этого, если вы поместите в конце запроса, ответ будет содержать коллекцию ссылок `$ref` `@odata.id` и URL-адресов для участников.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию объектов [](../resources/user.md) пользователей и[/или групп](../resources/group.md) в тексте отклика.  Вместо этого, если вы поместите `$ref` в конце запроса, ответ будет содержать коллекцию `@odata.id` ссылок и URL-адресов для участников.
 
 ## <a name="examples"></a>Примеры
 ##### <a name="list-member-objects"></a>Объекты участников списка
@@ -84,7 +84,7 @@ Content-type: application/json
 ```
 
 ##### <a name="list-member-references"></a>Ссылки на членов списка
-Следующий запрос будет перечислять ссылки членов административного подразделения, возвращая коллекцию ссылок `@odata.id` на членов.
+Следующий запрос будет перечислять ссылки членов административного подразделения, `@odata.id` возвращая коллекцию ссылок на членов.
 ```
 GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 ```

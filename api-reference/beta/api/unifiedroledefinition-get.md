@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cb2e8abfb0edaf14e6350ea89ed627ea5d8cfb8b
-ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
+ms.openlocfilehash: f24ed48d9167d3f8bfa6c8c74fe1c9f74a868a7d
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63500975"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670861"
 ---
 # <a name="get-unifiedroledefinition"></a>Get unifiedRoleDefinition
 
@@ -50,7 +50,7 @@ ms.locfileid: "63500975"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
+|Делегированные (рабочая или учебная учетная запись) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 

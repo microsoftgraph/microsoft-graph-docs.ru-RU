@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: affe14f0ac8f1ea921a1daad2e6993e1322ee849
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 4806463a93de968f1989777e9a28243e10ddaf7e
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341834"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477687"
 ---
 # <a name="application-addpassword"></a>приложение: addPassword
 
 Пространство имен: microsoft.graph
 
-Добавляет надежный пароль в [приложение](../resources/application.md).
+Добавляет надежный пароль или секрет в [приложение](../resources/application.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "62341834"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All |
-| Приложение                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+| Для приложений                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,13 +49,13 @@ POST /applications/{id}/addPassword
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| displayName | String | Удобное имя пароля. Необязательный параметр. |
-| endDateTime | DateTimeOffset | Дата и время, в течение которых истекает срок действия пароля, представлены в формате ISO 8601 и всегда во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Необязательный параметр. Значение по умолчанию — startDateTime + 2 лет. |
-| startDateTime | DateTimeOffset | Дата и время, в течение которых пароль становится допустимым. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Необязательный параметр.  По умолчанию значение "сейчас". |
+| displayName | Строка | Удобное имя пароля. Необязательно. |
+| endDateTime | DateTimeOffset | Дата и время, в течение которых истекает срок действия пароля, представлены в формате ISO 8601 и всегда во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Необязательно. Значение по умолчанию — startDateTime + 2 лет. |
+| startDateTime | DateTimeOffset | Дата и время, в течение которых пароль становится допустимым. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Необязательный аргумент.  По умолчанию значение "сейчас". |
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и новый [объект passwordCredential](../resources/passwordcredential.md) в тексте ответа. Свойство **secretText в** объекте ответа содержит надежные пароли, созданные Azure Active Directory длиной 16-64 символов. В будущем этот пароль не будет извлечен.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и новый [объект passwordCredential](../resources/passwordcredential.md) в тексте ответа. Свойство **secretText в** объекте ответа содержит надежные пароли и секреты, созданные Azure Active Directory длиной 16-64 символов. В будущем этот пароль не будет извлечен.
 
 ## <a name="examples"></a>Примеры
 

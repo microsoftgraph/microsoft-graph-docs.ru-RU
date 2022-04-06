@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f067315b35b3a54f95b184e3f83c961174eded1c
-ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
+ms.openlocfilehash: 49a6b986055207205f1af3778dfed7a5ccf01e74
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63500940"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669874"
 ---
 # <a name="create-unifiedroledefinition"></a>Создание unifiedRoleDefinition
 
@@ -49,7 +49,7 @@ ms.locfileid: "63500940"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
+|Делегированные (рабочая или учебная учетная запись) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 

@@ -3,12 +3,12 @@ title: Компонент Person-Card в Microsoft Graph Toolkit
 description: Компонент Person-Card для просмотра дополнительных сведений, относящихся к пользователю.
 ms.localizationpriority: medium
 author: vogtn
-ms.openlocfilehash: fcbb58a29405c5491db988a26b2c35a237aab346
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: a9ebf62b31756702b925ca9b696bf62624205ee6
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337385"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672044"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Компонент Person-Card в Microsoft Graph Toolkit
 
@@ -172,10 +172,11 @@ mgt-person {
 | `personQuery` значение, отличаее от `me` | People.Read | [/me/people/?$search=](/graph/api/user-list-people) | По умолчанию |
 | `personQuery` установлено значение, отличаее от `me` `config.useContactApis` значения (по умолчанию `true` ) | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) | По умолчанию |
 | `showPresence` установлено, что `true` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) | По умолчанию |
-| `sections.organization` включено (по умолчанию) | User.Read.All | [/users/{id}/manager](/graph/api/user-list-manager) | Organization |
-| `sections.organization.showWorksWith` set (по умолчанию) | People.Read.All | [/users/{id}/people](/graph/api/user-list-people) | Organization |
+| `sections.organization` включено (по умолчанию) | User.Read.All | [/users/{id}/manager](/graph/api/user-list-manager) | Организация |
+| `sections.organization.showWorksWith` set (по умолчанию) | People.Read.All | [/users/{id}/people](/graph/api/user-list-people) | Организация |
 | `sections.mailMessages` включено (по умолчанию) | Mail.ReadBasic | [/me/messages](/graph/api/user-list-messages) | Сообщения |
 | `sections.files` включено (по умолчанию) | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Файлы |
+| `sections.profile` включено (по умолчанию) | User.Read.All | [/users/{id}/profile](/graph/api/profile-get?view=graph-rest-beta) | Профиль |
 
 Класс `MgtPersonCard` также предоставляет `getScopes` статический метод, возвращающий массив областей, необходимый для работы карточки контакта с учетом глобальной конфигурации карточки контакта.
 
@@ -194,7 +195,7 @@ const neededScopes = MgtPersonCard.getScopes();
 > [!IMPORTANT]
 > Компонент `mgt-person-card` извлекает основные данные человека из родительского компонента`mgt-person`, не вызывая microsoft Graph. Когда `mgt-person-card` используется отдельно, он извлекает необходимые данные и кэширует их. Данные, отображаемые в разделах карты, извлекаются отдельно и не кэшются.
 
-|Хранилище объектов|Кэшные данные|Замечания|
+|Хранилище объектов|Кэшные данные|Примечания|
 |---------|-----------|-------|
 |`people`|Сведения о человеке|Используется при `personQuery` указании и его значение отличается от `me`|
 |`photos`|Фотография человека|

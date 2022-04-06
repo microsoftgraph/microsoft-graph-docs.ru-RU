@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: c8fe98b5306137944b1b0e9117d90a649ea709fc
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8adae318e45899cb5a36fc9f534f2f2cdbbea349
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131471"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722813"
 ---
 # <a name="update-cloudpcprovisioningpolicy"></a>Обновление cloudPcProvisioningPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "62131471"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
+Обновление свойств объекта [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "62131471"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.ReadWrite.All|
+|Для приложений|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,18 +50,19 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
+В теле запроса поставляем представление JSON объекта [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) .
 
-В следующей таблице показаны свойства, которые можно обновить для [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
+В следующей таблице показаны свойства, которые можно обновить для [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя отображения политики обеспечения. |
-|description|Строка|Описание политики обеспечения.|
-|onPremisesConnectionId|Строка|ID cloudPcOnPremisesConnection. Чтобы обеспечить подключение к облачным компьютерам и подключение к домену, выберите подключение к виртуальной сети, проверенной службой облачных ПК.|
-|imageId|Строка|ID изображения ОС, которое необходимо уладить на облачных ПК. Формат изображения типа галереи: {publisher_offer_sku}. Поддерживаемые значения для каждого из параметров: <ul><li>издатель: Microsoftwindowsdesktop.</li> <li>предложение: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-os.</li></ul>|
-|imageDisplayName|Строка|Имя отображения образа ОС, которое вы закаповыватель.|
+|displayName|String|Имя отображения политики обеспечения. |
+|description|String|Описание политики обеспечения.|
+|onPremisesConnectionId|String|ID cloudPcOnPremisesConnection. Чтобы обеспечить подключение к облачным компьютерам и подключение к домену, выберите подключение к виртуальной сети, проверенной службой облачных ПК.|
+|imageId|String|ID изображения ОС, которое необходимо уладить на облачных ПК. Формат изображения типа галереи: {publisher_offer_sku}. Поддерживаемые значения для каждого из параметров: <ul><li>издатель: Microsoftwindowsdesktop.</li> <li>предложение: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-os.</li></ul>|
+|imageDisplayName|String|Имя отображения образа ОС, которое вы закаповыватель.|
 |imageType|cloudPcProvisioningPolicyImageType|Тип изображения ОС (настраиваемый или галерейный) для предоставления на облачных ПК. Возможные значения: `gallery`, `custom`.|
+|WindowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Параметры Windows для компьютеров с предварительной настройкой облачных компьютеров с этой политикой обеспечения, например параметр языка системы операций.|
 
 ## <a name="response"></a>Отклик
 
@@ -84,9 +85,16 @@ PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisio
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
   "displayName": "HR provisioning policy",
   "description": "Provisioning policy for India HR employees",
-  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701b553"
+  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+  "imageId": "Image ID value",
+  "imageDisplayName": "Image Display Name value",
+  "imageType": "custom",
+  "windowsSettings": {
+    "language": "en-US"
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

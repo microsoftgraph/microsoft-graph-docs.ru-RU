@@ -2,17 +2,17 @@
 title: Создание веб-приложения с помощью Microsoft Graph Toolkit
 description: Знакомство с разработкой веб-приложений с помощью Microsoft Graph Toolkit
 ms.localizationpriority: medium
-author: elisenyang
-ms.openlocfilehash: 22f5e81f8c382694389ddcffbe5e0f8a77fa55a9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: e464f822f6c08c51443ac24b482c99081954acf7
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103839"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589011"
 ---
 # <a name="build-a-web-application-with-the-microsoft-graph-toolkit"></a>Создание веб-приложения с помощью Microsoft Graph Toolkit
 
-В этом разделе описывается, как начать работу с Microsoft Graph Toolkit в веб-приложении, написанном на простом JavaScript. В пошаговом руководстве попробуйте начать работу с модулем [Microsoft Graph набор средств.](/learn/modules/msgraph-toolkit-intro/) Чтобы узнать, как использовать Toolkit в веб-среде, см. статью [Создание веб-приложения (React)](./use-toolkit-with-react.md) или [Создание веб-приложения (Angular)](./use-toolkit-with-angular.md).
+В этом разделе описывается, как начать работу с Microsoft Graph Toolkit в веб-приложении, написанном на простом JavaScript. В пошаговом руководстве попробуйте начало работы [с модулем Microsoft Graph набор средств](/learn/modules/msgraph-toolkit-intro/). Чтобы узнать, как использовать Toolkit в веб-среде, см. статью [Создание веб-приложения (React)](./use-toolkit-with-react.md) или [Создание веб-приложения (Angular)](./use-toolkit-with-angular.md).
 
 Начало работы с Microsoft Graph Toolkit включает:
 1. Добавление Microsoft Graph Toolkit в проект.
@@ -41,8 +41,8 @@ npm install @microsoft/mgt
 ## <a name="initialize-the-msal2-provider"></a>Инициализация поставщика MSAL2
 Поставщики Microsoft Graph Toolkit обеспечивают проверку подлинности и доступ к Microsoft Graph для компонентов. Дополнительные сведения см. в статье [Использование поставщиков](../providers/providers.md). Поставщик [MSAL2 использует](../providers/msal2.md) msal-browser для регистрации пользователей и приобретения маркеров. Этот поставщик можно инициализировать в HTML или JavaScript.
 
-> **Примечание.** Если вы в настоящее время используете поставщика MSAL и хотите обновить ее до поставщика MSAL2, выполните указанные [здесь действия.](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider)
-Если вы хотите использовать собственную проверку подлинности, используйте поставщика прокси-серверов [на](../providers/proxy.md) месте поставщика MSAL2.
+> **Примечание**. Если вы в настоящее время используете поставщика MSAL и хотите обновить ее до поставщика MSAL2, выполните указанные [ниже действия](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider).
+Если вы хотите использовать собственную проверку подлинности, используйте поставщика прокси-серверов [на месте](../providers/proxy.md) поставщика MSAL2.
 
 Чтобы инициализировать поставщика, можно использовать HTML-код или JavaScript. 
 
@@ -65,7 +65,7 @@ Providers.globalProvider = new Msal2Provider({
 
 ---
 
-Идентификатор клиента — это единственное свойство, которое требуется для инициализации поставщика, но вы можете настроить дополнительные параметры. Полный список см. в [списке MSAL2 Provider.](../providers/msal2.md)
+Идентификатор клиента — это единственное свойство, которое требуется для инициализации поставщика, но вы можете настроить дополнительные параметры. Полный список см. в [списке MSAL2 Provider](../providers/msal2.md).
 
 ### <a name="creating-an-appclient-id"></a>Создание идентификатора клиента/приложения
 Чтобы получить идентификатор клиента, вам нужно [зарегистрировать свое приложение](./add-aad-app-registration.md) в Azure AD.
@@ -122,11 +122,11 @@ document.body.appendChild(component());
 
 Вы можете определить, когда пользователь успешно вписался и соответствующим образом отображает определенные компоненты. Например, отобразить компонент повестки дня, если пользователь в него вписалась. В противном случае отобразить знак в интерфейсе.
 
-Чтобы правильно проверить вход пользователя в состояние, добавьте обработник событий `providerUpdated` в событие с помощью `Providers.onProviderUpdated` функции. В обработнике проверьте состояние поставщика, хранимое в `Providers.globalProvider.state` свойстве.
+Чтобы правильно проверить вход пользователя в состояние, добавьте обработник событий в `providerUpdated` событие с помощью функции `Providers.onProviderUpdated` . В обработнике проверьте состояние поставщика, хранимое в свойстве `Providers.globalProvider.state` .
 
 # <a name="html"></a>[HTML](#tab/HTML)
 
-Если вы используете библиотеку, вы можете получить доступ к глобальному свойству и `mgt-loader` `Provider` из `ProviderState` `mgt` него.
+Если вы используете библиотеку `mgt-loader` , вы можете получить `Provider` `ProviderState` доступ к глобальному свойству и из него `mgt` .
 
 ```html
 <!DOCTYPE html>
@@ -153,7 +153,7 @@ document.body.appendChild(component());
 
 # <a name="javascript"></a>[JavaScript](#tab/JavaScript)
 
-Если вы используете набор инструментов с помощью пакетов npm, вы можете импортировать и `Provider` `ProviderState` из `@microsoft/mgt` .
+Если вы используете набор инструментов с помощью пакетов npm, вы можете импортировать `Provider` `ProviderState` и из `@microsoft/mgt`.
 
 ```javascript
 import { Providers, ProviderState, Msal2Provider } from '@microsoft/mgt';
@@ -175,7 +175,7 @@ Providers.onProviderUpdated(loadAgenda);
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Ознакомьтесь с [пошаговой](/learn/modules/msgraph-toolkit-intro/) инструкцией по началу Graph набор средств Microsoft.
+- Ознакомьтесь с [начало работы в руководстве microsoft Graph набор средств](/learn/modules/msgraph-toolkit-intro/) пошаговом руководстве.
 - Воспользуйтесь компонентами в [интерактивной среде](https://mgt.dev).
 - Задавайте вопросы на сайте [Stack Overflow](https://aka.ms/mgt-question).
 - Сообщайте об ошибках и оставляйте запросы на создание функций в [GitHub](https://aka.ms/mgt).

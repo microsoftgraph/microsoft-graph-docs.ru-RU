@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9baacdbdbe801a9fd83c0540923f15cb6d5b92e6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: dec9c03571ebdaae8e0557d7dffbd369f7c2c5c8
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022489"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671288"
 ---
 # <a name="get-device"></a>Вывод устройства
 
@@ -20,7 +20,7 @@ ms.locfileid: "61022489"
 
 Получение свойств и связей объекта устройства.
 
-Так как **ресурс устройства** поддерживает [расширения,](/graph/extensibility-overview)вы также можете использовать операцию для получения настраиваемой информации о свойствах и расширении в `GET` **экземпляре** устройства.
+Так как **ресурс устройства** поддерживает [расширения](/graph/extensibility-overview), `GET` вы также можете использовать операцию для получения пользовательских свойств и данных расширения в **экземпляре** устройства.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,13 +28,13 @@ ms.locfileid: "61022489"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
-В `{id}` запросе имеется значение свойства **id** устройства, а не **свойства deviceId.**
+В `{id}` запросе имеется значение свойства **id** устройства, а не **свойства deviceId** .
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc36
 
 
 #### <a name="response"></a>Отклик
-В следующем примере показан ответ на устройство без **имен hostNames.** 
+В следующем примере показан ответ на устройство без **имен хост-имен**. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -115,7 +115,7 @@ Content-type: application/json
 }
 ```
 
-В следующем примере показан ответ на устройство с **именами hostNames.** 
+В следующем примере показан ответ на устройство с **именами hostNames**. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

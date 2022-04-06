@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a1f57bec4831939000073bb27a0a86429330bd0
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 87de116b60282b20363193171cbb15207ce8e824
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62290457"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64628919"
 ---
 # <a name="create-macosdevicefeaturesconfiguration"></a>Создание объекта macOSDeviceFeaturesConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "62290457"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |supportsScopeTags|Логическое|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -62,37 +62,37 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |airPrintDestinations|[коллекция airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md)|Массив принтеров AirPrint, которые всегда должны быть показаны. Эта коллекция может содержать не более 500 элементов. Унаследованный от [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
 |autoLaunchItems|[коллекция macOSLaunchItem](../resources/intune-deviceconfig-macoslaunchitem.md)|Список приложений, файлов, папок и других элементов, которые необходимо запустить при входе пользователя. Эта коллекция может содержать не более 500 элементов.|
 |adminShowHostInfo|Логическое|Следует ли показывать сведения о хост-администраторе в окне входа.|
-|loginWindowText|String|Пользовательский текст, отображаемый в окне входа.|
+|loginWindowText|Строка|Пользовательский текст, отображаемый в окне входа.|
 |authorizedUsersListHidden|Логический|Следует ли показывать диалоговое окно имени и пароля или список пользователей в окне входа.|
 |authorizedUsersListHideLocalUsers|Логическое|Следует ли показывать только сетевых и системных пользователей в списке авторизованных пользователей в окне входа.|
-|authorizedUsersListHideMobileAccounts|Логическое|Следует ли скрывать мобильных пользователей в списке авторизованных пользователей в окне входа.|
-|authorizedUsersListIncludeNetworkUsers|Логическое|Следует ли показывать сетевых пользователей в списке авторизованных пользователей в окне входа.|
-|authorizedUsersListHideAdminUsers|Логическое|Следует ли скрывать пользователей администратора в списке авторизованных пользователей в окне входа.|
-|authorizedUsersListShowOtherManagedUsers|Логическое|Следует ли показывать других пользователей в списке авторизованного пользователя в окне входа.|
-|shutDownDisabled|Логическое|Следует ли скрывать элемент кнопки Shut Down в окне входа.|
+|authorizedUsersListHideMobileAccounts|Boolean|Следует ли скрывать мобильных пользователей в списке авторизованных пользователей в окне входа.|
+|authorizedUsersListIncludeNetworkUsers|Boolean|Следует ли показывать сетевых пользователей в списке авторизованных пользователей в окне входа.|
+|authorizedUsersListHideAdminUsers|Boolean|Следует ли скрывать пользователей администратора в списке авторизованных пользователей в окне входа.|
+|authorizedUsersListShowOtherManagedUsers|Boolean|Следует ли показывать других пользователей в списке авторизованного пользователя в окне входа.|
+|shutDownDisabled|Логический|Следует ли скрывать элемент кнопки Shut Down в окне входа.|
 |restartDisabled|Логическое|Следует ли скрывать элемент кнопки Перезапуска в окне входа.|
 |sleepDisabled|Логическое|Следует ли скрывать элемент меню Sleep в окне входа.|
-|consoleAccessDisabled|Логическое|Будет ли другой пользователь игнорировать использование специального `console` имени пользователя.|
-|shutDownDisabledWhileLoggedIn|Логическое|Будет ли отключен элемент меню Shut Down в окне входа во время входа пользователя.|
-|restartDisabledWhileLoggedIn|Логическое|Будет ли элемент меню Перезапуска в окне входа отключен во время входа пользователя.|
-|powerOffDisabledWhileLoggedIn|Логическое|Будет ли отключен элемент меню Power Off в окне входа во время входа пользователя.|
-|logOutDisabledWhileLoggedIn|Логическое|Будет ли отключен элемент меню Log Out в окне входа во время входа пользователя.|
+|consoleAccessDisabled|Boolean|Будет ли другой пользователь игнорировать использование специального `console` имени пользователя.|
+|shutDownDisabledWhileLoggedIn|Boolean|Будет ли отключен элемент меню Shut Down в окне входа во время входа пользователя.|
+|restartDisabledWhileLoggedIn|Логический|Будет ли элемент меню Перезапуска в окне входа отключен во время входа пользователя.|
+|powerOffDisabledWhileLoggedIn|Boolean|Будет ли отключен элемент меню Power Off в окне входа во время входа пользователя.|
+|logOutDisabledWhileLoggedIn|Boolean|Будет ли отключен элемент меню Log Out в окне входа во время входа пользователя.|
 |screenLockDisableImmediate|Логическое|Следует ли отключить функции немедленной блокировки экрана.|
-|associatedDomains|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|DEPRECATED: вместо этого используйте appAssociatedDomains. Получает или задает список, который сопополагает приложения с связанными доменами. Ключ должен соответствовать ID приложения, а значение должно быть строкой в виде "service:domain", где домен является полнокровным имям хост-сайта (например, webcredentials:example.com). Эта коллекция может содержать не более 500 элементов.|
+|associatedDomains|Коллекция [keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md)|DEPRECATED: вместо этого используйте appAssociatedDomains. Получает или задает список, который сопополагает приложения с связанными доменами. Ключ должен соответствовать ID приложения, а значение должно быть строкой в виде "service:domain", где домен является полнокровным имям хост-сайта (например, webcredentials:example.com). Эта коллекция может содержать не более 500 элементов.|
 |appAssociatedDomains|[коллекция macOSAssociatedDomainsItem](../resources/intune-deviceconfig-macosassociateddomainsitem.md)|Получает или задает список, который сопополагает приложения с связанными доменами. Идентификаторы приложений должны быть уникальными. Эта коллекция может содержать не более 500 элементов.|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Получает или задает один профиль расширения для входов. Неуловимый: вместо этого используйте MacOSSingleSignOnExtension.|
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|Получает или задает один профиль расширения для входов.|
 |contentCachingEnabled|Логический|Включает кэшинг контента и предотвращает его отключение пользователем.|
 |contentCachingType|[macOSContentCachingType](../resources/intune-deviceconfig-macoscontentcachingtype.md)|Определяет, какой тип контента разрешен кэшировали службой кэшинга контента Apple. Возможные значения: `notConfigured`, `userContentOnly`, `sharedContentOnly`.|
 |contentCachingMaxSizeBytes|Int64|Максимальное количество bytes дискового пространства, которое будет использоваться для кэша контента. Значение 0 (по умолчанию) указывает на неограниченное пространство диска. |
-|contentCachingDataPath|String|Путь к каталогу, используемый для хранения кэшного контента. Значение должно быть (или заканчивается) /Library/Application Support/Apple/AssetCache/Data|
-|contentCachingDisableConnectionSharing|Логическое|Отключение общего доступа к Интернету.|
+|contentCachingDataPath|Строка|Путь к каталогу, используемый для хранения кэшного контента. Значение должно быть (или заканчивается) /Library/Application Support/Apple/AssetCache/Data|
+|contentCachingDisableConnectionSharing|Логический|Отключение общего доступа к Интернету.|
 |contentCachingForceConnectionSharing|Логическое|Заставляет совместное использование подключения к Интернету. contentCachingDisableConnectionSharing переопределяет этот параметр.|
 |contentCachingClientPolicy|[macOSContentCachingClientPolicy](../resources/intune-deviceconfig-macoscontentcachingclientpolicy.md)|Определяет метод, с помощью которого серверы кэшинга контента будут прослушивать клиентов. Возможные значения: `notConfigured`, `clientsInLocalNetwork`, `clientsWithSamePublicIpAddress`, `clientsInCustomLocalNetworks`, `clientsInCustomLocalNetworksWithFallback`.|
 |contentCachingClientListenRanges|Коллекция объектов [ipRange](../resources/intune-shared-iprange.md)|Список пользовательских кэшей контента диапазонов IP будет использовать для прослушивания для клиентов. Эта коллекция может содержать не более 500 элементов.|
@@ -100,12 +100,12 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |contentCachingPeerListenRanges|Коллекция объектов [ipRange](../resources/intune-shared-iprange.md)|Список пользовательских кэшей контента диапазонов IP будет использовать для прослушивания одноранговых кэшей. Эта коллекция может содержать не более 500 элементов.|
 |contentCachingPeerFilterRanges|Коллекция объектов [ipRange](../resources/intune-shared-iprange.md)|Список пользовательских кэшей контента диапазонов IP будет использовать для запроса контента из кэшей одноранговых. Эта коллекция может содержать не более 500 элементов.|
 |contentCachingParentSelectionPolicy|[macOSContentCachingParentSelectionPolicy](../resources/intune-deviceconfig-macoscontentcachingparentselectionpolicy.md)|Определяет метод, при котором серверы кэшинга контента будут выбирать родителей, если их несколько. Возможные значения: `notConfigured`, `roundRobin`, `firstAvailable`, `urlPathHash`, `random`, `stickyAvailable`.|
-|contentCachingParents|Коллекция строк|Список IP-адресов, представляющих кэши родительского контента.|
-|contentCachingLogClientIdentities|Логический|Включает ведение журнала IP-адресов и портов клиентов, запрашивает кэширование контента.|
+|contentCachingParents|Коллекция String|Список IP-адресов, представляющих кэши родительского контента.|
+|contentCachingLogClientIdentities|Логическое|Включает ведение журнала IP-адресов и портов клиентов, запрашивает кэширование контента.|
 |contentCachingPublicRanges|Коллекция объектов [ipRange](../resources/intune-shared-iprange.md)|Список пользовательских диапазонов IP-адресов, которые служба кэшинга контента Apple должна использовать для совпадения клиентов с кэшами контента. Эта коллекция может содержать не более 500 элементов.|
-|contentCachingBlockDeletion|Логическое|Предотвращает очистку содержимого от кэшей контента, чтобы освободить пространство диска для других приложений.|
-|contentCachingShowAlerts|Логическое|Отображение оповещений кэшинга контента в качестве системных уведомлений.|
-|contentCachingKeepAwake|Логическое|Запретить устройству спать, если включен кэшинг контента.|
+|contentCachingBlockDeletion|Логический|Предотвращает очистку содержимого от кэшей контента, чтобы освободить пространство диска для других приложений.|
+|contentCachingShowAlerts|Boolean|Отображение оповещений кэшинга контента в качестве системных уведомлений.|
+|contentCachingKeepAwake|Логический|Запретить устройству спать, если включен кэшинг контента.|
 |contentCachingPort|Int32|Задает порт, используемый для кэшинга контента. Если значение 0, будет выбран случайный доступный порт. Допустимые значения от 0 до 65535|
 
 

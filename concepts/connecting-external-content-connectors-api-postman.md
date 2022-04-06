@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 2049332c4eb5f82cf44d3cde3fad71f02bd9049a
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 8f63a225231365f7dfd654c11b797a52489633ce
+ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561467"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63780543"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>Использование Postman с API соединителей Microsoft Graph
 
@@ -125,7 +125,7 @@ client_id={{client_id}}
 
 ## <a name="step-6--create-a-new-connection"></a>Шаг 6. Создание соединения
 
-[Соединение](/concepts/connecting-external-content-manage-connections.md) — это логический контейнер для внешних данных, которыми вы можете управлять как единым целым. Выберите имя, ИД и описание соединения. Получите от администратора необходимые сведения для подключения к источнику данных и предоставьте механизм авторизации в источника контента при настройке соединения. Вы можете использовать [SDK Microsoft Graph](/graph/sdks/sdks-overview) API для программирования настройки соединителя. Если вы хотите сохранить учетные данные, можно использовать Azure Key Vault.
+[Соединение](/graph/connecting-external-content-manage-connections) — это логический контейнер для внешних данных, которыми вы можете управлять как единым целым. Выберите имя, ИД и описание соединения. Получите от администратора необходимые сведения для подключения к источнику данных и предоставьте механизм авторизации в источника контента при настройке соединения. Вы можете использовать [SDK Microsoft Graph](/graph/sdks/sdks-overview) API для программирования настройки соединителя. Если вы хотите сохранить учетные данные, можно использовать Azure Key Vault.
 
 ```http
 POST /external/connections

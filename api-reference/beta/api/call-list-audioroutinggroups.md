@@ -1,16 +1,16 @@
 ---
 title: Списки групп маршрутизаний аудио
-description: Извлечение списка **объектов audioRoutingGroup.**
-author: ananmishr
+description: Извлечение списка **объектов audioRoutingGroup** .
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e175b9de2e4230098503600bd926612f340dda78
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 324365fb111c22146f8e3c265a3ec6de3e75057d
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129954"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607577"
 ---
 # <a name="list-audio-routing-groups"></a>Списки групп маршрутизаний аудио
 
@@ -18,7 +18,7 @@ ms.locfileid: "62129954"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка **объектов audioRoutingGroup.**
+Извлечение списка **объектов audioRoutingGroup** .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "62129954"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Приложение     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Для приложений     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,11 +45,11 @@ GET /communications/calls/{id}/audioRoutingGroups
 |:--------------|:--------------------------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [audioRoutingGroup](../resources/audioroutinggroup.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию объектов [audioRoutingGroup](../resources/audioroutinggroup.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

@@ -1,23 +1,23 @@
 ---
 title: Список унифицированныхRoleManagementPolicies
 description: Получите список объектов unifiedRoleManagementPolicy и их свойств.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6f0e5e6bf6ff86e25a9d623a63d2ece2ea18e609
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0ee14bcd9dd97689c1260b1f681be7a13ed8d0e1
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119782"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510374"
 ---
 # <a name="list-unifiedrolemanagementpolicies"></a>Список унифицированныхRoleManagementPolicies
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) и их свойств.
+Получите список объектов [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) и их свойств. Этот API применяется только к ролям Azure AD. Чтобы получить политики, применимые к Azure RBAC, используйте [API PIM REST Azure для политик управления ролью](/rest/api/authorization/role-management-policies/list-for-scope).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -35,7 +35,7 @@ ms.locfileid: "62119782"
 }
 -->
 ``` http
-GET /policies/roleManagementPolicies
+GET /policies/roleManagementPolicies?$filter=scopeId eq 'scopeId' and scopeType eq 'scopeType'
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -46,16 +46,18 @@ GET /policies/roleManagementPolicies
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) в тексте ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код ответа и коллекцию объектов [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+В следующем примере извлекаются политики, масштабные для клиента, и применяются к ролям каталогов.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -64,7 +66,7 @@ GET /policies/roleManagementPolicies
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/roleManagementPolicies
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicies?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrolemanagementpolicy-csharp-snippets.md)]
@@ -107,20 +109,35 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "f93a5c37-5c37-f93a-375c-3af9375c3af9",
-      "displayName": "Policy1",
-      "description": "Policy for all privileged admins",
-      "isOrganizationDefault": false,
-      "scopeId": "f93a5c37-5c37-f93a-375c-3af9375c3af9",
-      "scopeType": "subscription",
-      "lastModifiedDateTime": "2020-09-09T21:35:27.91Z",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identity"
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies",
+    "value": [
+        {
+            "id": "DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9",
+            "displayName": "DirectoryRole",
+            "description": "DirectoryRole",
+            "isOrganizationDefault": false,
+            "scopeId": "/",
+            "scopeType": "DirectoryRole",
+            "lastModifiedDateTime": null,
+            "lastModifiedBy": {
+                "displayName": null,
+                "id": null
+            }
+        },
+        {
+            "id": "DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_da83a66c-eb51-44ae-98d8-3da5f924f90a",
+            "displayName": "DirectoryRole",
+            "description": "DirectoryRole",
+            "isOrganizationDefault": false,
+            "scopeId": "/",
+            "scopeType": "DirectoryRole",
+            "lastModifiedDateTime": null,
+            "lastModifiedBy": {
+                "displayName": null,
+                "id": null
+            }
+        }
+    ]
 }
 ```
 

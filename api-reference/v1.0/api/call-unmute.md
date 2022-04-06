@@ -1,16 +1,16 @@
 ---
 title: 'вызов: не игнорировать'
 description: Разрешить приложению отметь себя.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 14882251b3c07fa3e8f45dc2a5da9b96dd5442a1
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: d7d9d0729715fd5d7d5437c30396c3a02e6ebb4a
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62342883"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608123"
 ---
 # <a name="call-unmute"></a>вызов: не игнорировать
 
@@ -30,7 +30,9 @@ ms.locfileid: "62342883"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Приложение                            | Нет.                                        |
+| Для приложений                            | Calls.Initiate.All, Calls.AccessMedia.All |
+
+> **Примечание:** Разрешения проверяются при вызове; При вызове этого API не проводится дополнительная проверка разрешений. Calls.AccessMedia.All необходим только для вызовов, которые используют носители с использованием приложений.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +51,7 @@ POST /communications/calls/{id}/unmute
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|clientContext|String|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
+|clientContext|Строка|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
 
 ## <a name="response"></a>Отклик
 В случае успешной `200 OK` работы этот метод возвращает код ответа и объект [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) в тексте ответа.

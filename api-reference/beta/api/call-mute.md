@@ -1,16 +1,16 @@
 ---
 title: 'вызов: отключить'
 description: Позволяет приложению отключить себя.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cdc0588e9a168ba478b066d4944c82c3a72da86e
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: ee6839511bc24d0eec7f43b65a13f45adc184a9c
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344671"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607682"
 ---
 # <a name="call-mute"></a>вызов: отключить
 
@@ -33,7 +33,9 @@ ms.locfileid: "62344671"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Приложение                            | Нет.                                        |
+| Для приложений     | Calls.Initiate.All, Calls.AccessMedia.All  |
+
+> **Примечание:** Разрешения проверяются при вызове; При вызове этого API не проводится дополнительная проверка разрешений. Calls.AccessMedia.All необходим только для вызовов, которые используют носители с использованием приложений.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

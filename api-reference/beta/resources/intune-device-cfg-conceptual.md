@@ -1,15 +1,15 @@
 ---
 title: Конфигурация устройства в Microsoft Intune - API Microsoft Gaaph
-description: Списки microsoft Graph API для конечных точек Intune (REST), определяемых для настройки устройств для организации-клиента.
+description: Списки microsoft API Graph для Intune конечных точек (REST), определяемых для настройки устройств для организации-клиента.
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 574998aa66144f8b3a6a90c92f69e016891268aa
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 15533e2fc60f32dc924b6557e8039b8e7851213d
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368219"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629423"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Конфигурация устройства в Microsoft Intune
 
@@ -21,7 +21,7 @@ ms.locfileid: "63368219"
 
 Использование рабочей нагрузки Microsoft Intune конфигурации устройств для управления настройками и функциями на всех управляемых устройствах.
 
-Для управления настройками и функциями на устройствах Intune доступны следующие ресурсы Graph:
+В Graph доступны следующие ресурсы для управления настройками и функциями на устройствах в Intune:
 
 - [Состояние соответствия требованиям настроенного администратором устройства ](intune-deviceconfig-administratorconfigureddevicecompliancestate.md)
 - [Состояние расширенного шифрования BitLocker](intune-deviceconfig-advancedbitlockerstate.md)
@@ -124,8 +124,12 @@ ms.locfileid: "63368219"
 - [База профилей сертификата владельца Aosp](intune-deviceconfig-aospdeviceownercertificateprofilebase.md)
 - [Политика соответствия требованиям владельцев устройств Aosp](intune-deviceconfig-aospdeviceownercompliancepolicy.md)
 - [Конфигурация устройства владельца Aosp](intune-deviceconfig-aospdeviceownerdeviceconfiguration.md)
+- [Корпоративная конфигурация владельцев устройств Aosp Wi-Fi](intune-deviceconfig-aospdeviceownerenterprisewificonfiguration.md)
 - [Профиль сертификата владельца Aosp-устройства PKCS](intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md)
+- [Профиль сертификата владельца устройства Aosp SCEP](intune-deviceconfig-aospdeviceownerscepcertificateprofile.md)
 - [Владельцу Aosp-устройства доверен корневой сертификат](intune-deviceconfig-aospdeviceownertrustedrootcertificate.md)
+- [Конфигурация владельца Wi-Fi Aosp](intune-deviceconfig-aospdeviceownerwificonfiguration.md)
+- [Владелец устройства Aosp Wi-Fi типа безопасности](intune-deviceconfig-aospdeviceownerwifisecuritytype.md)
 - [Тип управления установкой приложения](intune-deviceconfig-appinstallcontroltype.md)
 - [Элемент списка приложений](intune-deviceconfig-applistitem.md)
 - [Тип списка приложений](intune-deviceconfig-applisttype.md)
@@ -379,6 +383,7 @@ ms.locfileid: "63368219"
 - [Пара "ключ-значение"](intune-deviceconfig-keyvaluepair.md)
 - [Пара "ключ-значение"](intune-deviceconfig-keyvaluepair.md)
 - [Режим киоска управляемый ПИН-код домашнего экрана](intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)
+- [Тип режима киоска](intune-deviceconfig-kioskmodetype.md)
 - [Уровень проверки подлинности LAN Manager](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [Локальные параметры безопасности: режим отображения запроса для повышения прав администратора](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)
 - [Локальные параметры безопасности: разрешенный тип пользователя для форматирования и извлечения съемных носителей](intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)
@@ -468,7 +473,7 @@ ms.locfileid: "63368219"
 - [Параметр OMA, строка, XML](intune-deviceconfig-omasettingstringxml.md)
 - [На предварительно зашифрованной полезной нагрузке](intune-raimportcerts-onpremencryptedpayload.md)
 - [Диапазон версий операционной системы](intune-deviceconfig-operatingsystemversionrange.md)
-- [Описание](intune-deviceconfig-operator.md)
+- [Operator](intune-deviceconfig-operator.md)
 - [Совершенная группа секретности вперед](intune-deviceconfig-perfectforwardsecrecygroup.md)
 - [Режим личного магазина воспроизведения личного профиля](intune-deviceconfig-personalprofilepersonalplaystoremode.md)
 - [Запрос на перешифровку Pfx](intune-raimportcerts-pfxrecryptionrequest.md)
@@ -657,4 +662,7 @@ ms.locfileid: "63368219"
 - [Тип VPN-подключения для Windows](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Конфигурация Wi-Fi для Windows](intune-deviceconfig-windowswificonfiguration.md)
 - [Конфигурация корпоративного типа EAP для Wi-Fi в Windows](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+- [Windows конфигурации проводной сети](intune-deviceconfig-windowswirednetworkconfiguration.md)
+- [Метод проверки подлинности проводной сети](intune-deviceconfig-wirednetworkauthenticationmethod.md)
+- [Тип проверки подлинности проводной сети](intune-deviceconfig-wirednetworkauthenticationtype.md)
 - [Интерфейс проводной сети](intune-deviceconfig-wirednetworkinterface.md)

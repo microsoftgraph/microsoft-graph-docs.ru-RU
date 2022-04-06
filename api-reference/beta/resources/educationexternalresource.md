@@ -1,33 +1,38 @@
 ---
-title: тип ресурса educationExternalResource
-description: Представляет общий тип для картографии ресурсов, не подверженных Graph.
+title: Тип ресурса educationExternalResource
+description: Представляет универсальный тип для сопоставления ресурсов, не доступных Graph.
 ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 30180ff445b7a99f3fe3a85315d48677a45a754a
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: b7b8c09613c35c3b00c86a6146adfb9a3b0d2f6b
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220871"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684902"
 ---
-# <a name="educationexternalresource-resource-type"></a>тип ресурса educationExternalResource
+# <a name="educationexternalresource-resource-type"></a>Тип ресурса educationExternalResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет общий тип для картографии ресурсов, не открытых в Microsoft Graph.
+Представляет универсальный тип для сопоставления ресурсов, которые не предоставляются в Microsoft Graph.
 
-Наследует [от educationResource](educationresource.md).
+Наследуется от [educationResource](educationresource.md).
 
-Этот сложный тип позволяет всем звонителям SDK работать без проблем.
+Этот сложный тип позволяет всем вызывающим абонентам пакета SDK работать без проблем.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|webUrl|String|Расположение ресурса. Обязательная|
+|webUrl|String|Расположение ресурса. Обязательный.|
+|createdBy|String|Отображаемое имя пользователя, создавшего этот объект.|
+|createdDateTime|DateTimeOffset|Дата, когда была добавлена повторная ошибка.|
+|displayName|string|Отображаемое имя ресурса.|
+|lastModifiedBy|[identitySet](identityset.md)|Последний пользователь, который изменяет ресурс.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения ресурса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -42,7 +47,12 @@ ms.locfileid: "60220871"
 
 ```json
 {
-  "webUrl": "String"
+  "webUrl": "String",
+  "createdBy": "String (User)",
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "lastModifiedBy": "String (User)",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 ```

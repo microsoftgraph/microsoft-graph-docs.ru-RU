@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 5e50b61d2989f01eefd61d1d318da174c9a53421
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 05ab6e22ba23c16ce1ed1c0da7b622f6110074f2
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336216"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587443"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Обзор API Поиска (Майкрософт) в Microsoft Graph
 
@@ -68,6 +68,8 @@ API Поиска (Майкрософт) поддерживает поиск сл
   - [Уточнение результатов поиска](search-concept-aggregation.md)
   - [Исправление орфографии в запросе](search-concept-speller.md) (предварительная версия)
   - [Сортировка результатов поиска](search-concept-sort.md)
+  - [Использование шаблонов запросов](search-concept-query-template.md) (предварительная версия)
+  - [Обрезка повторяющихся результатов поиска](search-concept-trim-duplicate.md) (предварительная версия)
 - Узнайте больше об API поиска в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Скачайте [образец соединителя поиска](https://github.com/microsoftgraph/msgraph-search-connector-sample) в GitHub.
 - Участвуйте в работе сообщества на сайте [Вопросы и ответы Майкрософт](/answers/products/m365#microsoft-graph) или на GitHub.

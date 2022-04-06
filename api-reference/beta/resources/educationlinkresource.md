@@ -1,32 +1,37 @@
 ---
-title: Тип ресурса Едукатионлинкресаурце
-description: Подкласс объекта Едукатионресаурце. Этот ресурс является ссылкой и не имеет дополнительных данных, связанных с ней.
+title: Тип ресурса educationLinkResource
+description: Подкласс educationResource. Этот ресурс является ссылкой и не содержит дополнительных данных, связанных с ним.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 43c0c3ebf82becb1c82f447600073162af533837
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 586be05b3a1f5ad9d0890f5e3f150a0450a456d5
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095333"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684811"
 ---
-# <a name="educationlinkresource-resource-type"></a>Тип ресурса Едукатионлинкресаурце
+# <a name="educationlinkresource-resource-type"></a>Тип ресурса educationLinkResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Подкласс объекта [едукатионресаурце](educationresource.md). Этот ресурс является ссылкой и не имеет дополнительных данных, связанных с ней.
+Подкласс [educationResource](educationresource.md). Этот ресурс является ссылкой и не содержит дополнительных данных, связанных с ним.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|ссылка|Строка|URL-адрес ресурса.|
+|ссылка|String|URL-адрес ресурса.|
+|createdBy|String|Отображаемое имя пользователя, создавшего этот объект.|
+|createdDateTime|DateTimeOffset|Дата, когда была добавлена повторная ошибка.|
+|displayName|string|Отображаемое имя ресурса.|
+|lastModifiedBy|[identitySet](identityset.md)|Последний пользователь, который изменяет ресурс.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения ресурса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -40,7 +45,12 @@ ms.locfileid: "48095333"
 
 ```json
 {
-  "link": "String"
+  "link": "String",
+  "createdBy": "String (User)",
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "lastModifiedBy": "String (User)",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 ```

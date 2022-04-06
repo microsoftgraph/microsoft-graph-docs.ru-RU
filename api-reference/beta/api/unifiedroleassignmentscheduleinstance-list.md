@@ -1,16 +1,16 @@
 ---
 title: Список unifiedRoleAssignmentScheduleInstances
 description: Получите список объектов unifiedRoleAssignmentScheduleInstance и их свойств.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1e7fc2acded065448221e8098d2b739cce9d46d6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 51a203042397e53c0d8c619636856f10fb0fa2cd
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122750"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509744"
 ---
 # <a name="list-unifiedroleassignmentscheduleinstances"></a>Список unifiedRoleAssignmentScheduleInstances
 Пространство имен: microsoft.graph
@@ -46,12 +46,12 @@ GET /roleManagement/directory/roleAssignmentScheduleInstances
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md) в теле ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код ответа и коллекцию объектов [unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 

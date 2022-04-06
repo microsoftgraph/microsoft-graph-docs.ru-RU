@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1cdf2b6091b8e370c9aff541636f9d9e7209b2e7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3dcec84548ba6c9ce1fc1c1f85eafea4bc0887f9
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124479"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672632"
 ---
 # <a name="list-unifiedroledefinitions"></a>Список унифицированныхRoleDefinitions
 
@@ -24,9 +24,9 @@ ms.locfileid: "62124479"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -37,7 +37,7 @@ GET /roleManagement/directory/roleDefinitions
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$filter` параметр запроса `eq` `in` OData для (и операторов) `id` и `displayName` `isBuiltIn` свойства. Он также поддерживает `$expand` отношения. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$filter` параметр запроса OData `id``eq` для (и `in` операторов) и `displayName``isBuiltIn` свойства. Он также поддерживает `$expand` отношения. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -45,13 +45,13 @@ GET /roleManagement/directory/roleDefinitions
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию объектов [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

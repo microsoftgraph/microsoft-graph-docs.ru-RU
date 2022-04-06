@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 00943b493be3e51725c0a4e61ff72777a43dacc9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5cd2b09fb8184197dde6bf3a8c4df38352e6d27f
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134559"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510332"
 ---
 # <a name="delete-permissiongrantconditionset-from-includes-collection-of-permissiongrantpolicy"></a>Удаление permissionGrantConditionSet включает коллекцию разрешенийGrantPolicy
 
 Пространство имен: microsoft.graph
 
-Удаляет [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) из  коллекции [разрешенийGrantPolicy.](../resources/permissiongrantpolicy.md)
+Удаляет [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) из коллекции [разрешенийGrantPolicy](../resources/permissiongrantpolicy.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "62134559"
 
 | Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись) | PermissionGrantPolicy.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись) | Policy.ReadWrite.PermissionGrant |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-| Приложение | PermissionGrantPolicy.ReadWrite.All |
+| Приложение | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ DELETE /policies/permissionGrantPolicies/{permissiongrantpolicy-id}/includes/{in
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

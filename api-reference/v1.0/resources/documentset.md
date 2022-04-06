@@ -5,12 +5,12 @@ description: Содержит метаданные о параметрах на�
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: a3c0bc96cefaec37ff58f9f41f56c773f6c336cc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9edfe45791f3fa0c9404c7418e3c0a2f647d9c2c
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049524"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758207"
 ---
 # <a name="documentset-resource-type"></a>Тип ресурса documentSet
 
@@ -20,19 +20,24 @@ ms.locfileid: "59049524"
 
 ## <a name="properties"></a>Свойства
 
-| Имя свойства  | Тип    | Описание|
+| Свойство  | Тип    | Описание|
 |:---------------|:--------|:--------------------------------------------------|
-| shouldPrefixNameToFile | Логический  | Добавьте имя установленного документа в каждое имя файла.|
 | allowedContentTypes | Collection (microsoft.graph.contentTypeInfo) | Типы контента разрешены в наборе документов.|
-| defaultContents     | Collection (microsoft.graph.documentSetContent) | Содержимое набора документов по умолчанию. | 
-| propagateWelcomePageChanges | Логический | Указывает, следует ли нажимать изменения приветствия страниц на унаследованные типы контента.  |
-| sharedColumns       | Коллекция (microsoft.graph.columnDefinition) | Столбцы, отредактированы в наборе документов, которые синхронизируются со всеми документами в наборе. Эти данные можно прочитать только в самих документах. |
-| welcomePageColumns  | Коллекция (microsoft.graph.columnDefinition)  | Указывает столбцы, которые будут показываться на странице приветствия для набора документов.  |
-| welcomePageUrl      | string | Url-адрес страницы welcome.  |
+| defaultContents     | Collection(microsoft.graph.documentSetContent) | Содержимое набора документов по умолчанию. | 
+| propagateWelcomePageChanges | Boolean | Указывает, следует ли нажимать изменения приветствия страниц на унаследованные типы контента.  |
+| shouldPrefixNameToFile | Логическое  | Указывает, следует ли добавлять имя установленного документа в каждое имя файла. |
+| welcomePageUrl      | String | Url-адрес страницы welcome.  |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="relationships"></a>Связи
 
-Ниже приводится представление JSON ресурса **documentSet.**
+| Связь   | Тип                      | Описание
+|:----------------|:--------------------------|:-------------------------------
+| sharedColumns       | Коллекция (microsoft.graph.columnDefinition) | Столбцы, отредактированы в наборе документов, которые синхронизируются со всеми документами в наборе. Эти данные можно прочитать только в самих документах. 
+| welcomePageColumns  | Коллекция (microsoft.graph.columnDefinition)  | Указывает столбцы, которые будут показываться на странице приветствия для набора документов.
+
+## <a name="json-representation"></a>Представление JSON
+
+Ниже приводится представление JSON ресурса **documentSet** .
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.documentSet" } -->
 
 ```json
@@ -41,8 +46,6 @@ ms.locfileid: "59049524"
   "allowedContentTypes": [{ "@type": "microsoft.graph.contentTypeInfo" }],
   "defaultContents": [{ "@type": "microsoft.graph.documentSetContent" }],
   "propagateWelcomePageChanges": false,
-  "sharedColumns": [{ "@type": "microsoft.graph.columnDefinition" }],
-  "welcomePageColumns": [{ "@type": "microsoft.graph.columnDefinition" }],
   "welcomePageUrl": "string"
 }
 ```

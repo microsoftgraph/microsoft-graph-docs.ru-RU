@@ -4,13 +4,13 @@ description: Извлечение свойств и связей управле�
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 441e23267b4b2358331fc08f92872c4839d7f4fc
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+author: japere
+ms.openlocfilehash: c154871edfb183ba56d0e03a8fdac16c8500a0d2
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60934320"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510473"
 ---
 # <a name="get-governanceroledefinition"></a>Get governanceRoleDefinition
 
@@ -18,7 +18,7 @@ ms.locfileid: "60934320"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 Извлечение свойств и связей [управленияRoleDefinition](../resources/governanceroledefinition.md).
 
@@ -31,7 +31,7 @@ ms.locfileid: "60934320"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | PrivilegedAccess.Read.AzureResources |
+| Приложение | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -39,7 +39,7 @@ ms.locfileid: "60934320"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | PrivilegedAccess.Read.AzureAD |
+| Приложение | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
@@ -47,9 +47,9 @@ ms.locfileid: "60934320"
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | PrivilegedAccess.Read.AzureADGroup |
+| Приложение | PrivilegedAccess.Read.AzureADGroup |
 
-Помимо области разрешений, этот API требует, чтобы у запросителя было по крайней мере одно назначение ролей на ресурсе, которому принадлежит [governanceRoleDefinition.](../resources/governanceroledefinition.md)
+Помимо области разрешений, этот API требует, чтобы у запросителя было по крайней мере одно назначение ролей на ресурсе, которому принадлежит [governanceRoleDefinition](../resources/governanceroledefinition.md) .
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -69,7 +69,7 @@ GET /privilegedAccess/azureResources/roleDefinitions/{id}?$filter=resourceId+eq+
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект governanceRoleDefinition](../resources/governanceroledefinition.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект governanceRoleDefinition](../resources/governanceroledefinition.md) в тексте ответа.
 ## <a name="example"></a>Пример
 В этом примере показано, как получить сведения об определении роли DNS Zone Contributor в подписке Wingtip Toys - Prod.
 <!-- {

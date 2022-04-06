@@ -1,16 +1,16 @@
 ---
 title: тип ресурса unifiedRoleManagementPolicyRule
 description: В единойRoleManagementPolicyRule указывается правило, связанное с политикой управления ролью. Это абстрактно.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: cc8f6e135c8dd569040f7d738b7a29fb54fdf98e
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 27b982cb74dfac20f14377a2751a0aabb9756830
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688144"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64508680"
 ---
 # <a name="unifiedrolemanagementpolicyrule-resource-type"></a>тип ресурса unifiedRoleManagementPolicyRule
 
@@ -22,13 +22,13 @@ ms.locfileid: "60688144"
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
 |[Список unifiedRoleManagementPolicyRules](../api/unifiedrolemanagementpolicyrule-list.md)|[коллекция unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Получите список объектов [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) и их свойств.|
-|[Get unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleManagementPolicyRule.](../resources/unifiedrolemanagementpolicyrule.md)|
-|[Обновление unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Обновление свойств единого [объектаRoleManagementPolicyRule.](../resources/unifiedrolemanagementpolicyrule.md)|
+|[Get unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) .|
+|[Обновление unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Обновление свойств единого [объектаRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для правила.|
+|id|Строка|Уникальный идентификатор для правила.|
 |target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Цель правила политики.|
 
 ## <a name="relationships"></a>Связи

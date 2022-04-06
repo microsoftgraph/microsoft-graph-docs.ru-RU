@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 9b6eca7e4c911b9cc5e5019244b04f2e48e6cb30
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: 1a33cba93e61752d33b9829871b3280955895360
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979720"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758293"
 ---
 # <a name="usertrainingeventinfo-resource-type"></a>тип ресурса userTrainingEventInfo
 
@@ -23,8 +23,8 @@ ms.locfileid: "59979720"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображение имени тренинга.|
-|latestTrainingStatus|trainingStatus|Последний статус обучения, назначенного пользователю. Возможные значения: `unknown`, `assigned`, `inProgress`, `completed`, `overdue`, `notCompleted`, `unknownFutureValue`.|
+|displayName|String|Отображение имени тренинга.|
+|latestTrainingStatus|trainingStatus|Последний статус обучения, назначенного пользователю. Возможные значения: `unknown`, `assigned`, `inProgress`, `completed`, `overdue`, `unknownFutureValue`.|
 |trainingAssignedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|Сведения о событии обучения при его присвоении пользователю.|
 |trainingCompletedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|Сведения о событиях обучения, когда оно было завершено пользователем.|
 |trainingUpdatedProperties|[userTrainingContentEventInfo](../resources/usertrainingcontenteventinfo.md)|Сведения о событии обучения, когда оно было обновлено или в процессе выполнения пользователем.|

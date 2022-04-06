@@ -2,13 +2,13 @@
 title: Библиотека SharePoint Framework для Microsoft Graph Toolkit
 description: Используйте библиотеку SharePoint Framework microsoft Graph набор средств для использования Microsoft Graph набор средств в SharePoint Framework решениях.
 ms.localizationpriority: medium
-author: waldekmastykarz
-ms.openlocfilehash: 41a1b3703440ce42866c3aaf720bdda55e9d2b20
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+author: sebastienlevert
+ms.openlocfilehash: 952ff0852f4c1c0cf1efb2be2ab3cbe89d805f00
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507762"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588794"
 ---
 # <a name="sharepoint-framework-library-for-microsoft-graph-toolkit"></a>Библиотека SharePoint Framework для Microsoft Graph Toolkit
 
@@ -17,11 +17,11 @@ ms.locfileid: "59507762"
 Чтобы запретить нескольким компонентам регистрировать собственный набор компонентов Microsoft Graph набор средств на странице, следует развернуть эту библиотеку для клиента и ссылаться на компоненты Microsoft Graph набор средств, которые вы используете в решении из этой библиотеки.
 
 > [!CAUTION]
-> Библиотека SharePoint Framework microsoft Graph набор средств предназначена для использования с SharePoint Framework расширениями и не **изолированными веб-частями.** Если вы строите изолированные веб-части, не используйте библиотеку SharePoint Framework для microsoft Graph набор средств. Вместо этого загрузим microsoft Graph набор средств непосредственно из пакета @microsoft/mgt (или @microsoft/mgt-react при использовании React). SharePoint Framework не поддерживает компоненты библиотеки ссылок из изолированных веб-частей, и это приведет к ошибкам во время работы в изолированной веб-части.
+> Библиотека SharePoint Framework microsoft Graph набор средств предназначена для использования с SharePoint Framework расширениями и не **изолированными веб-частями**. Если вы строите изолированные веб-части, не используйте библиотеку SharePoint Framework microsoft Graph набор средств. Вместо этого загрузим microsoft Graph набор средств непосредственно из пакета @microsoft/mgt (или @microsoft/mgt-react, если используется React). SharePoint Framework не поддерживает ссылки на компоненты библиотеки из изолированных веб-частей, что приведет к ошибкам во время работы в изолированной веб-части.
 
 ## <a name="installation"></a>Установка
 
-Чтобы загрузить компоненты microsoft Graph набор средств из библиотеки, добавьте пакет в качестве зависимости от времени работы в `@microsoft/mgt-spfx` SharePoint Framework проект:
+Чтобы загрузить компоненты Microsoft Graph набор средств из библиотеки, `@microsoft/mgt-spfx` добавьте пакет в качестве зависимости от SharePoint Framework проекта:
 
 ```bash
 npm install @microsoft/mgt-spfx
@@ -33,14 +33,14 @@ npm install @microsoft/mgt-spfx
 yarn add @microsoft/mgt-spfx
 ```
 
-Перед развертывание SharePoint Framework пакета для клиента необходимо развернуть SharePoint Framework `@microsoft/mgt-spfx` для клиента. Вы можете скачать пакет, соответствующий версии, используемой в проекте, из раздела `@microsoft/mgt-spfx` [Выпуски](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases) на GitHub.
+Перед развертывание SharePoint Framework пакета для клиента необходимо `@microsoft/mgt-spfx` развернуть SharePoint Framework для клиента. Пакет, соответствующий `@microsoft/mgt-spfx` версии, используемой в проекте, можно скачать в разделе Выпуски на [](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases) GitHub.
 
 >[!IMPORTANT]
 >Поскольку в клиенте может быть установлена только одна версия библиотеки SharePoint Framework для Microsoft Graph Toolkit, перед использованием Microsoft Graph Toolkit в решении определите, развернута ли в вашей организации или клиенте версия библиотеки SharePoint Framework и используется ли она.
 
-## <a name="usage"></a>Использование
+## <a name="usage"></a>Применение
 
-При создании SharePoint Framework веб-частей и расширений ссылайся на microsoft Graph набор средств `Provider` и `SharePointProvider` из `@microsoft/mgt-spfx` пакета. Это позволит вашему решению использовать компоненты Microsoft Graph набор средств, которые уже зарегистрированы на странице, а не мгновенное их использование. Процесс мгновенной обработки является одинаковым для всех веб-частей независимо от используемой ими платформы JavaScript.
+При создании SharePoint Framework веб-частей и расширений ссылайся на Graph набор средств Microsoft и `Provider` `SharePointProvider` из `@microsoft/mgt-spfx` пакета. Это позволит вашему решению использовать компоненты Microsoft Graph набор средств, которые уже зарегистрированы на странице, а не мгновенное их использование. Процесс мгновенной обработки является одинаковым для всех веб-частей независимо от используемой ими платформы JavaScript.
 
 ```ts
 import { Providers, SharePointProvider } from '@microsoft/mgt-spfx';
@@ -58,7 +58,7 @@ export default class MgtWebPart extends BaseClientSideWebPart<IMgtWebPartProps> 
 }
 ```
 
-При создании веб-частей с помощью фреймворка, кроме React, можно загружать компоненты непосредственно в веб-части:
+При создании веб-частей с помощью фреймворка, помимо React, можно загружать компоненты непосредственно в веб-части:
 
 ```ts
 export default class MgtNoFrameworkWebPart extends BaseClientSideWebPart<IMgtNoFrameworkWebPartProps> {
@@ -81,7 +81,7 @@ export default class MgtNoFrameworkWebPart extends BaseClientSideWebPart<IMgtNoF
 
 ### <a name="react"></a>React
 
-Если вы строите веб-часть с React, вы можете использовать `@microsoft/mgt-react` пакет. Однако не забудьте импортировать React компонентов с `@microsoft/mgt-react/dist/es6/spfx` пути. Это гарантирует, что ваше решение будет использовать только компоненты Microsoft Graph набор средств, которые уже зарегистрированы на странице, а не мгновенное ее собственное.
+Если вы строите веб-часть с React, вы можете использовать `@microsoft/mgt-react` пакет. Однако не забудьте импортировать React компонентов с пути`@microsoft/mgt-react/dist/es6/spfx`. Это гарантирует, что ваше решение будет использовать только компоненты Microsoft Graph набор средств, которые уже зарегистрированы на странице, а не мгновенное ее собственное.
 
 ```tsx
 import { Person } from '@microsoft/mgt-react/dist/es6/spfx';
@@ -105,7 +105,7 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
 > * `@microsoft/mgt-spfx` или
 > * `@microsoft/mgt-react/dist/es6/spfx`
 > 
-> Не импортируйте из других пакетов Microsoft Graph набор средств (), чтобы избежать упаковки собственной копии инструментария и столкновения с `@microsoft/mgt-*` общей библиотекой.
+> Не импортируйте из других пакетов Microsoft Graph набор средств (`@microsoft/mgt-*`), чтобы избежать упаковки собственной копии инструментария и столкновения с общей библиотекой.
 
 ## <a name="see-also"></a>См. также
 

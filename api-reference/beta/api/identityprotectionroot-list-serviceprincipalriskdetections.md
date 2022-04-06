@@ -5,12 +5,12 @@ author: ebasseri
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 511c51b3b7beb8d5ef02e4a939d23d5f2d9a7d7e
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: d9fc67aa8a0b8db0efd2db016392b790e43ebfe3
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63334774"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510346"
 ---
 # <a name="list-serviceprincipalriskdetections"></a>List servicePrincipalRiskDetections
 Пространство имен: microsoft.graph
@@ -26,9 +26,9 @@ ms.locfileid: "63334774"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|IdentityRiskyServicePrincipal.Read.All, IdentityRiskyServicePrincipal.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|IdentityRiskEvent.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|IdentityRiskyServicePrincipal.Read.All, IdentityRiskyServicePrincipal.ReadWrite.All|
+|Приложение|IdentityRiskEvent.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDete
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

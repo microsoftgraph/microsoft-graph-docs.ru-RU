@@ -1,16 +1,16 @@
 ---
 title: Удаление groupLifecyclePolicy
-description: Удаление объекта groupLifecyclePolicy.
+description: Удаление groupLifecyclePolicy.
 author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b60dc737115ee3d265b82c18ee265ed8b8c87b61
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d4611478fbf90e91367a3762267fe62110ed7016
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133531"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509583"
 ---
 # <a name="delete-grouplifecyclepolicy"></a>Удаление groupLifecyclePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "62133531"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
+Удаление [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,14 +27,13 @@ ms.locfileid: "62133531"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groupLifecyclePolicies/{id}
-
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -44,18 +43,19 @@ DELETE /groupLifecyclePolicies/{id}
 | Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -91,7 +91,9 @@ DELETE https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",

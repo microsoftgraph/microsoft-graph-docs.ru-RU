@@ -2,13 +2,13 @@
 title: Поставщик SharePoint
 description: Используйте поставщика SharePoint в веб-частях SharePoint, чтобы предоставить компонентам доступ к Microsoft Graph.
 ms.localizationpriority: medium
-author: nmetulev
-ms.openlocfilehash: f1906598eaa0218a9adb7749ecf9276b105f437b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 5a722ba1ee74ca350a8e5775b6430b9f3a21eab4
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126536"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588885"
 ---
 # <a name="sharepoint-provider"></a>Поставщик SharePoint
 
@@ -18,7 +18,7 @@ ms.locfileid: "59126536"
 
 ## <a name="get-started"></a>Начало работы
 
-Инициализируйте поставщика в методе `onInit()` веб-части. В этом примере используется [ `@microsoft/mgt-spfx` пакет](../get-started/mgt-spfx.md).
+Инициализируйте поставщика в методе `onInit()` веб-части. В этом примере используется [`@microsoft/mgt-spfx` пакет](../get-started/mgt-spfx.md).
 
 ```ts
 // import the providers at the top of the page
@@ -40,11 +40,11 @@ public render(): void {
 }
 ```
 
->**Примечание:** Microsoft Graph набор средств typescript 3.7 или более новый. Убедитесь, что вы используете поддерживаемую версию TypeScript, [установив соответствующий компилятор](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x).
+>**Примечание:** Для microsoft Graph набор средств требуется typescript 3.7 или более новый. Убедитесь, что вы используете поддерживаемую версию TypeScript, [установив соответствующий компилятор](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x).
 
 ## <a name="sample"></a>Пример
 
-Сведения о том, как инициализировать SharePoint поставщика, см. в руководстве [Сборка](../get-started/build-a-sharepoint-web-part.md) SharePoint веб-части.
+Подробные сведения о том, как инициализировать SharePoint поставщика, см. в руководстве [сборки](../get-started/build-a-sharepoint-web-part.md) SharePoint веб-части.
 
 ## <a name="test-in-the-workbench"></a>Тестирование на рабочем месте
 

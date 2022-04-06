@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 03f4764becd2753ab3cffcc60cf42d031e87c9c4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 28dfc04b0286ffc7adcb16dfb690da1051036bda
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131498"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723238"
 ---
 # <a name="get-cloudpcprovisioningpolicy"></a>Get cloudPcProvisioningPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "62131498"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями объекта [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
+Ознакомьтесь с свойствами и отношениями объекта [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) .
 
 
 ## <a name="permissions"></a>Разрешения
@@ -29,7 +29,7 @@ ms.locfileid: "62131498"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Для приложений|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` параметры `$expand` запроса OData и помогает настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select` `$expand` запроса OData и помогает настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -52,13 +52,13 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и `200 OK` [объект cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в тексте ответа.
+В случае успеха этот метод возвращает код `200 OK` отклика и [объект cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -106,7 +106,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 #### <a name="response"></a>Отклик
 
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -129,8 +129,11 @@ Content-Type: application/json
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
     "imageId": "Image ID value",
-    "imageType":"custom",
-    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
+    "imageType": "custom",
+    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+    "windowsSettings": {
+      "language": "en-US"
+    }
 }
 ```
 
@@ -178,7 +181,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 #### <a name="response"></a>Отклик
 
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -202,8 +205,11 @@ Content-Type: application/json
     "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
     "imageId": "Image ID value",
-    "imageType":"custom",
+    "imageType": "custom",
     "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+    "windowsSettings": {
+      "language": "en-US"
+    },
     "assignments": [
       {
         "@odata.type": "microsoft.graph.cloudPcProvisioningPolicyAssignment",

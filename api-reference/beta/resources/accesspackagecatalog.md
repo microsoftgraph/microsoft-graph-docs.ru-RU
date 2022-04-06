@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2088bfea2aea6a8383b05826bf3783ea1a84de3f
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 6122c36481204c7f6e7269839be625e45db5432a
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331878"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477484"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>тип ресурса accessPackageCatalog
 
@@ -18,7 +18,9 @@ ms.locfileid: "63331878"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении правами Azure AD](entitlementmanagement-overview.md) каталог пакетов доступа — это контейнер для пакетов с нулевым или более доступом. Каталог пакетов доступа также может иметь связанные ресурсы, которые используются в этих пакетах доступа для обеспечения доступа. Чтобы просмотреть или изменить членство ролей в каталоге, используйте API назначений ролей с поставщиком управления правами RBAC.[](unifiedroleassignment.md)
+В [управлении правами Azure AD](entitlementmanagement-overview.md) каталог пакетов доступа — это контейнер для пакетов с нулевым или более доступом. Управление правами Azure AD включает встроенный каталог с именем **General**.
+
+Каталог пакетов доступа также может иметь связанные ресурсы, которые используются в этих пакетах доступа для обеспечения доступа. Чтобы просмотреть или изменить членство ролей в каталоге, используйте API назначений ролей с поставщиком управления правами RBAC.[](unifiedroleassignment.md)
 
 
 ## <a name="methods"></a>Методы
@@ -50,7 +52,7 @@ ms.locfileid: "63331878"
 |createdBy|String|UPN пользователя, создавшего этот ресурс. Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 |description|Строка|Описание каталога пакетов доступа.|
-|displayName|String|Отображение имени каталога пакетов доступа. Поддерживает `$filter` (`eq`, `contains`).|
+|displayName|Строка|Отображение имени каталога пакетов доступа. Поддерживает `$filter` (`eq`, `contains`).|
 |id|String| Только для чтения.|
 |isExternallyVisible|Boolean|Могут ли пакеты доступа в этом каталоге запрашиваться пользователями за пределами клиента.|
 |modifiedBy|Строка|UpN пользователя, который в последний раз изменил этот ресурс. Только для чтения.|

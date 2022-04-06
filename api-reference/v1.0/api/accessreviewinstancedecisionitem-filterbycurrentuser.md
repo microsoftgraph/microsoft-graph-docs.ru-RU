@@ -5,20 +5,17 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ebd23b66aa59457518e3613902e0b6d850905f92
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 2f6a06e7b6de066e0a8b06383ca3882504dfbf87
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224764"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63720852"
 ---
 # <a name="accessreviewinstancedecisionitem-filterbycurrentuser"></a>accessReviewInstanceDecisionItem: filterByCurrentUser
 Пространство имен: microsoft.graph
 
-Извлекает все [объекты accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) на заданном [accessReviewInstance,](../resources/accessreviewinstance.md) для которого вызываемая пользователь является рецензентом.
-
->[!NOTE]
->Размер страницы по умолчанию для этого API — 100 объектов accessReviewScheduleDefinition. Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
+Извлекает все [объекты accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) на заданном [accessReviewInstance](../resources/accessreviewinstance.md) , для которого вызываемая пользователь является рецензентом.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +24,7 @@ ms.locfileid: "61224764"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,22 +41,24 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|Фильтр для запроса объектов принятия решений для текущего пользователя. Возможные значения `reviewer` : `unknownFutureValue` . Использование `reviewer` . Обязательный.|
+|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|Фильтр для запроса объектов принятия решений для текущего пользователя. Возможные значения : `reviewer`. `unknownFutureValue` Использование `reviewer`. Обязательно.|
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
-Этот метод поддерживает `$select` `$filter` параметры запроса `$orderBy` `$skip` `$top` OData и OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает `$select`параметры `$filter`запроса OData `$orderBy``$skip`и `$top` OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+
+Размер страницы по умолчанию для этого API — 100 **объектов accessReviewInstanceDecisionItem** . Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код ответа и `200 OK` [коллекцию accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) в тексте ответа.
+В случае успешной `200 OK` работы эта функция возвращает код ответа и [коллекцию accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

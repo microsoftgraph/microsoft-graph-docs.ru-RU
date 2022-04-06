@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: high
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: d6fba6ddbf3611bd2c8b14dfdfcd91de67e2077f
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 0fab7fd9b7bc1902b2a643d8cb825301c846a8ff
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61805241"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629718"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>Обзор API облачной среды универсальной печати
 
@@ -44,10 +44,10 @@ ms.locfileid: "61805241"
 * **Отслеживать состояние принтеров, их настройки и доступность** можно через [Список принтеров](/graph/api/print-list-printers) и [printerStatus](/graph/api/resources/printerstatus).
 
 * **Узнать, кто из пользователей использует принтеры и сколько страниц они печатают** можно через отчетные API:
-  * [Список dailyPrintUsageSummariesByUser](/graph/api/reportroot-list-dailyprintusagesummariesbyuser)
-  * [Список monthlyPrintUsageSummariesByUser](/graph/api/reportroot-list-monthlyprintusagesummariesbyuser)
-  * [Список dailyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-dailyprintusagesummariesbyprinter)
-  * [Список monthlyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter)
+  * [List dailyPrintUsageByUser](/graph/api/reportroot-list-dailyprintusagebyuser)
+  * [List monthlyPrintUsageByUser](/graph/api/reportroot-list-monthlyprintusagebyuser)
+  * [List dailyPrintUsageByPrinter](/graph/api/reportroot-list-dailyprintusagebyprinter)
+  * [List monthlyPrintUsageByPrinter](/graph/api/reportroot-list-monthlyprintusagebyprinter)
 
 * **Настройка разрешений для пользователей** через изменения в членстве пользователей и групп касательно принтеров:
   * [Список allowedUsers](/graph/api/printershare-list-allowedusers)
@@ -79,7 +79,7 @@ API универсальной печати Microsoft Graph позволяет �
 
 3. [Обновляйте атрибуты вашего виртуального принтера](/graph/api/printer-update) с помощью разрешений приложения и типа носителя `application/ipp` (см. примеры).
 
-4. [Создайте триггер задачи для вашего виртуального принтера](/graph/api/printer-post-tasktriggers) с помощью администраторского маркера проверки подлинности, который будет использоваться для сопоставления определения задачи с виртуальным принтером.
+4. [Создайте триггер задачи для вашего виртуального принтера](/graph/api/printer-post-tasktriggers) с помощью администраторского маркера проверки подлинности, который будет использоваться для сопоставления определения задачи с виртуальным принтером. Идентификатор appId, используемый для создания маркера доступа, должен быть тем же идентификатором appId, который был использован для создания определения задачи.
 
 5. При отправке задания печати на виртуальный принтер оно будет приостановлено по причине [printTaskTrigger](/graph/api/resources/printtasktrigger). Будут созданы [printTask](/graph/api/resources/printtask) с состоянием `processing` на основе связанного [printTaskDefinition](/graph/api/resources/printtaskdefinition).
 

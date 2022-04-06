@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d21f2a4e25ff42f37df238fc2304d52f825c40f4
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: bf1a8b16076575272c215c28a81bd0b3246a32c9
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63334487"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629458"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -91,7 +91,7 @@ PATCH /users/{id | userPrincipalName}
 |streetAddress|String|Почтовый адрес места работы пользователя.|
 |surname|String|Фамилия пользователя.|
 |usageLocation|String|Двухбуквенный код страны (по стандарту ISO 3166). Необходим для пользователей, которым будут назначены лицензии, в связи с юридическим требованием проверять доступность служб в разных странах. Примеры: `US`, `JP` и `GB`. Значение NULL не допускается. |
-|userPrincipalName|String|Имя участника-пользователя. Это имя для входа через Интернет по стандарту RFC 822. В соответствии с соглашением оно должно указывать на имя пользователя для электронной почты. Общий формат: псевдоним@домен. При этом домен должен входить в коллекцию проверенных доменов клиента. Доступ к проверенным доменам клиента можно получить с помощью свойства **verifiedDomains** объекта [organization](../resources/organization.md). <br>ПРИМЕЧАНИЕ. Это свойство не может содержать диакритические знаки. Разрешены только следующие символы: `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. Полный список разрешенных символов см. в [политиках имен пользователей](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts).|
+|userPrincipalName|String|Имя субъекта-пользователя (UPN) для пользователя. Это имя для входа через Интернет по стандарту RFC 822. В соответствии с соглашением оно должно указывать на имя пользователя для электронной почты. Общий формат: псевдоним@домен. При этом домен должен входить в коллекцию проверенных доменов клиента. Доступ к проверенным доменам клиента можно получить с помощью свойства **verifiedDomains** объекта [organization](../resources/organization.md). <br>ПРИМЕЧАНИЕ. Это свойство не может содержать диакритические знаки. Разрешены только следующие символы: `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. Полный список разрешенных символов см. в [политиках имен пользователей](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts).|
 |userType|String|Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например `Member` и `Guest`.          |
 
 Поскольку ресурс **пользователя** поддерживает [расширения,](/graph/extensibility-overview)`PATCH` операцию можно использовать для добавления, обновления или удаления собственных данных, определенных для приложения, в настраиваемом свойстве расширения в существующем экземпляре **пользователя.**
@@ -294,7 +294,7 @@ HTTP/1.1 204 No Content
 
 Чтобы назначить настраиваемые атрибуты безопасности, вызывающему субъекту должна быть присвоена роль администратора назначения атрибутов и должно быть предоставлено разрешение *CustomSecAttributeAssignment.ReadWrite.All*.
 
-Дополнительные примеры для пользователей см. в примере Назначение, обновление или удаление настраиваемой атрибуты безопасности с помощью [API microsoft Graph.](/graph/custom-security-attributes-examples)
+Дополнительные примеры для пользователей см. в [примере Назначение, обновление](/graph/custom-security-attributes-examples) или удаление настраиваемой атрибуты безопасности с помощью microsoft API Graph.
 
 #### <a name="request"></a>Запрос
 
@@ -346,6 +346,46 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
+### <a name="example-5-add-or-update-the-values-of-a-schema-extension-for-a-user"></a>Пример 5. Добавление или обновление значений расширения схемы для пользователя
+
+Можно обновить или назначить значение одному свойству или всем свойствам в расширении.
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "update_schemaextension"
+}-->
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
+Content-type: application/json
+
+{
+    "ext55gb1l09_msLearnCourses": {
+        "courseType": "Admin"
+    }
+}
+```
+
+#### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+>**Примечание:** Чтобы удалить значение расширения схемы с объекта пользователя, установите свойство `null`. Пример:
+>
+>```http
+>PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
+>Content-type: application/json
+>
+>{
+>    "ext55gb1l09_msLearnCourses": null
+>}
+>```
 
 ## <a name="see-also"></a>См. также
 

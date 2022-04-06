@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cbb96c8a62ac20f0d1f9da046b3fa1c822755591
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 22d313ddbd237d4f3baaaac5aab46938fdf36dcd
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098023"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510697"
 ---
 # <a name="list-device-groups"></a>Список групп устройств
 
@@ -24,7 +24,7 @@ ms.locfileid: "62098023"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -48,7 +48,7 @@ GET /devices/{id}/memberOf
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
-| ConsistencyLevel | необязательный. Этот заглавной и `$count` требуется при использовании `$search` параметров литья OData или при определенном использовании `$filter` . Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries). |
+| ConsistencyLevel | необязательный. Этот заглавной и `$count` требуется при использовании `$search`параметров литья OData или при определенном использовании `$filter`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries). |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -160,7 +160,7 @@ Content-type: text/plain
 394
 ```
 
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Пример 3. Использование литых и $search OData для получения членства с именами отображения, которые содержат буквы "Видео", включая количество возвращенных объектов
+### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Пример 3. Использование литых и $search OData для получения членства с отображаемой фамилией, содержаной буквы "Видео", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 
@@ -204,15 +204,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>Пример 4. Использование литых и $filter OData для получения членства с именем отображения, которое начинается с буквы "A", включая количество возвращенных объектов
+### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>Пример 4. Использование литых и $filter OData для получения членства с отображаемого имени, которое начинается с буквы "A", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
 <!-- {
-  "blockType": "ignored",
-  "name": "get_a_count"
+  "blockType": "request",
+  "name": "list_devices_memberof_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'A')

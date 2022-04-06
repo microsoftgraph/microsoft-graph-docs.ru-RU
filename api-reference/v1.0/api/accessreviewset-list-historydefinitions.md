@@ -5,23 +5,18 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 099240b1f73e5dad7f0b56590c695f30f6188088
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: b991b24b2d8b3c09c882c3e2087641c571e32d2b
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337857"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722998"
 ---
 # <a name="list-historydefinitions"></a>Список historyDefinitions
 
 Пространство имен: microsoft.graph
 
 [Извлечение объектов accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md), созданных за последние 30 дней, включая все вложенные свойства.
-
->[!NOTE]
->Размер страницы по умолчанию для этого API — 100 **объектов accessReviewHistoryDefinitions** . Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
->
->Если параметры запроса не предоставлены и результатов более 100, Microsoft Graph автоматически будет предоставлять результаты по 100 результатов на страницу.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -49,6 +44,8 @@ GET /identityGovernance/accessReviews/historyDefinitions
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает параметры `$top`запросов , и `$filter``$expand``$skip` OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters). В том `?$expand=instances` числе будут [возвращены объекты accessReviewHistoryDefinitions](../resources/accessreviewhistorydefinition.md) вместе с связанными с ними экземплярами.
+
+Размер страницы по умолчанию для этого API — 100 **объектов accessReviewHistoryDefinitions** . Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ## <a name="request-headers"></a>Заголовки запросов
 

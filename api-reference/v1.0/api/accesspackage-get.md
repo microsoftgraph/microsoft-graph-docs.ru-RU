@@ -5,19 +5,19 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a0babe007c61c897513ec5b3aa676b63f3dcf408
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a83e07fcfdf004f12a8f3c74085890d4679df071
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136680"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607997"
 ---
 # <a name="get-accesspackage"></a>Получить accessPackage
 
 Пространство имен: microsoft.graph
 
 
-Извлечение свойств и связей объекта [accessPackage.](../resources/accesspackage.md)
+Извлечение свойств и связей объекта [accessPackage](../resources/accesspackage.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "62136680"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Для приложений                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,9 @@ GET /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметр `$select` [запроса OData для](/graph/query-parameters) получения определенных свойств.
+Этот метод поддерживает параметр `$select` [запроса OData](/graph/query-parameters) для получения определенных свойств `$expand` и параметр для получения отношений.
+
+Например, чтобы получить политики назначения пакета доступа, добавьте `$expand=assignmentPolicies`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -49,12 +51,12 @@ GET /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 |:----------|:----------|
 | Авторизация | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и запрашиваемого объекта `200 OK` [accessPackage](../resources/accesspackage.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и запрашиваемого объекта [accessPackage](../resources/accesspackage.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: eade917bcee86acbc44917d8809fb26a1776bf42
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 35a410a12608ad43f75196b41b3d747e56b10d59
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123428"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63560028"
 ---
 # <a name="externalitemcontent-resource-type"></a>тип ресурса externalItemContent
 
@@ -21,7 +21,7 @@ ms.locfileid: "59123428"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|type|microsoft.graph.externalConnectors.externalItemContentType|Тип контента в свойстве значения. Возможные значения: `text`, `html`, `unknownFutureValue`.|
+|type|microsoft.graph.externalConnectors.externalItemContentType|Тип контента в свойстве значения. Возможные значения: `text`, `html`, `unknownFutureValue`. Это типы контента, поддерживаемые индексером, а не разрешенные типы расширения файлов.|
 |value|String|Содержимое для externalItem. Обязательный.|
 
 ## <a name="relationships"></a>Связи

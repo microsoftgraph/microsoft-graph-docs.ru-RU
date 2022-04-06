@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: eedfdb613483c099216887bda1a86f18b780082b
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: ca78548f8fe4590ccde9d8faf8cb558c6572ca8f
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368226"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477820"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -40,9 +40,9 @@ ms.locfileid: "63368226"
 |[Add appRoleAssignedTo](../api/serviceprincipal-post-approleassignedto.md) |[appRoleAssignment](approleassignment.md)| Назначение роли для этого субъекта-службы пользователю, группе или субъекту-службе.|
 |[Remove appRoleAssignedTo](../api/serviceprincipal-delete-approleassignedto.md) | Нет | Удаление назначенной роли этого субъекта-службы у пользователя, группы или субъекта-службы.|
 |**Сертификаты и секреты**| | |
-|[Добавление пароля](../api/serviceprincipal-addpassword.md)|[passwordCredential](passwordcredential.md)|Добавление стойкого пароля объекту servicePrincipal.|
+|[Добавление пароля](../api/serviceprincipal-addpassword.md)|[passwordCredential](passwordcredential.md)|Добавление стойкого пароля или секрета в servicePrincipal.|
 |[Добавление tokenSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md)|[selfSignedCertificate](../resources/selfsignedcertificate.md)| Добавление самозаверяющего сертификата в субъект-службу. В основном используется для настройки приложений единого входа на основе SAML из [коллекции Azure AD](/azure/active-directory/saas-apps/tutorial-list).
-|[Удаление пароля](../api/serviceprincipal-removepassword.md)|[passwordCredential](passwordcredential.md)|Удаление пароля из servicePrincipal.|
+|[Удаление пароля](../api/serviceprincipal-removepassword.md)|[passwordCredential](passwordcredential.md)|Удаление пароля или секрета из servicePrincipal.|
 |[Добавление ключа](../api/serviceprincipal-addkey.md)|[keyCredential](keycredential.md)|Добавление учетных данных ключа объекту servicePrincipal.|
 |[Удаление ключа](../api/serviceprincipal-removekey.md)|Нет|Удаление учетных данных ключа объекта servicePrincipal.|
 |**Классификация делегированных разрешений**| | |
@@ -101,7 +101,7 @@ ms.locfileid: "63368226"
 |id|Строка|Уникальный идентификатор субъекта-службы. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение NULL не допускается. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `in`).|
 | info | [informationalUrl](informationalurl.md) | Базовые данные профиля для полученного приложения, такие как URL-адреса маркетинга, поддержки, условий обслуживания и заявления о конфиденциальности. Условия обслуживания и заявление о конфиденциальности отображаются в окне запроса согласия пользователя. Дополнительные сведения см. в статье [Добавление условий обслуживания и заявления о конфиденциальности для зарегистрированных приложений Azure AD](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le` и `eq` для значений `null`).  |
 |keyCredentials|Коллекция [keyCredential](keycredential.md)|Коллекция ключевых учетных данных, связанных с субъектом-службой. Значение NULL не допускается. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`).            |
-|loginUrl|String|Указывает URL-адрес, по которому поставщик услуг перенаправляет пользователя в Azure AD для проверки подлинности. Azure AD использует этот URL-адрес для запуска приложения из Microsoft 365 или из раздела "Мои приложения" в Azure AD. Если оставить пустое значение, Azure AD осуществляет вход на основе IdP для приложений, для которых настроен [единый вход на базе SAML](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). Пользователь запускает приложение из Microsoft 365, из раздела "Мои приложения" в Azure AD или по URL-адресу единого входа Azure AD.|
+|loginUrl|Строка|Указывает URL-адрес, по которому поставщик услуг перенаправляет пользователя в Azure AD для проверки подлинности. Azure AD использует этот URL-адрес для запуска приложения из Microsoft 365 или из раздела "Мои приложения" в Azure AD. Если оставить пустое значение, Azure AD осуществляет вход на основе IdP для приложений, для которых настроен [единый вход на базе SAML](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). Пользователь запускает приложение из Microsoft 365, из раздела "Мои приложения" в Azure AD или по URL-адресу единого входа Azure AD.|
 |logoutUrl|String| Указывает URL-адрес, используемый службой проверки подлинности корпорации Майкрософт для выхода пользователя с помощью [основного канала](https://openid.net/specs/openid-connect-frontchannel-1_0.html) OpenId Connect, [обратного канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколов выхода SAML.|
 |notes|String|Поле с произвольным текстом для записи сведений о субъекте-службе, обычно используемых в рабочих целях. Максимальная длина: 1024 символа.|
 |notificationEmailAddresses|Коллекция строк|Указывает список адресов электронной почты, по которым Azure AD отправляет уведомление, когда приближается срок окончания действия активного сертификата. Используется только для сертификатов, с помощью которых подписан маркер SAML, выпущенный для приложений коллекции Azure AD.|

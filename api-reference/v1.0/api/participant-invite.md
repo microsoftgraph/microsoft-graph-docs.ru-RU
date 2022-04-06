@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f59bddee4fe1ca18f6a8e702e0893b6924ce13e4
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: f7702d7286d6c7f6037fd396fed682f3a2609c80
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878885"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607332"
 ---
 # <a name="participant-invite"></a>участник: приглашение
 
@@ -29,7 +29,7 @@ ms.locfileid: "62878885"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Для приложений     | Calls.InitiateGroupCalls.All                               |
+| Для приложений     | Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -727,7 +727,7 @@ Content-Type: application/json
 ### <a name="example-4-invite-one-pstn-participant-to-an-existing-group-call"></a>Пример 4. Приглашение одного участника PSTN на существующий групповой вызов
 
 Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
-> **Примечание.** Телефон ID — это номер телефона в формате E.164.
+> **Примечание.** Телефон является номером телефона в формате E.164.
 
 #### <a name="request"></a>Запрос
 

@@ -1,12 +1,17 @@
 ---
 title: 'directoryObject: checkMemberGroups'
-description: 'Проверка участия в указанном списке групп и возвращение из этого списка тех групп, в которых состоит указанный пользователь, группа, субъект-служба, контакт организации, устройство или объект каталога.'
+description: Проверка участия в указанном списке групп и возвращение из этого списка тех групп, в которых состоит указанный пользователь, группа, субъект-служба, контакт организации, устройство или объект каталога.
 ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
+ms.openlocfilehash: 7628a829216f8c5a9feb93544657dead23f4f9d8
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668901"
 ---
-
 # <a name="directoryobject-checkmembergroups"></a>directoryObject: checkMemberGroups
 
 Пространство имен: microsoft.graph
@@ -17,7 +22,7 @@ doc_type: apiPageType
 
 В одном запросе можно проверять до 20 групп. Эта функция поддерживает все группы, которые предусмотрены в Azure AD. Поскольку Microsoft 365 группы не могут содержать другие группы, членство Microsoft 365 группы всегда является прямым.
 
-## <a name="permissions"></a>Разрешения:
+## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -33,7 +38,7 @@ doc_type: apiPageType
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:-|:-|
-| Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -41,7 +46,7 @@ doc_type: apiPageType
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:-|:-|
-| Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -49,7 +54,7 @@ doc_type: apiPageType
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -57,7 +62,7 @@ doc_type: apiPageType
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 

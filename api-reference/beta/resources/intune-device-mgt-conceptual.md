@@ -1,15 +1,15 @@
 ---
-title: Управление устройствами в Microsoft Intune - API Graph Microsoft
-description: Списки microsoft Graph API для конечных точек Intune (REST), которые определяют управление устройствами для организации-клиента.
+title: Управление устройствами в Microsoft Intune - Microsoft API Graph
+description: Списки microsoft API Graph для Intune конечных точек (REST), которые определяют управление устройствами для организации-клиента.
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: c9f4eee1ab3c4b1ea58b27fd0fea2af879b909e9
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: a5c2263feafc8316be17d5e3ec6051c77861b7f8
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368198"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64628835"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -203,6 +203,8 @@ ms.locfileid: "63368198"
 - [Сводка состояния базового плана безопасности](intune-deviceintent-securitybaselinestatesummary.md)
 - [Шаблон базового плана безопасности](intune-deviceintent-securitybaselinetemplate.md)
 - [Пользователь общего устройства Apple](intune-devices-sharedappledeviceuser.md)
+- [Tenant attach r b a c](intune-devices-tenantattachrbac.md)
+- [Tenant attach r b a c state](intune-devices-tenantattachrbacstate.md)
 - [Tuple_2 выполнения type_ i collection_1 операции](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
 - [Параметр действия "Обновление учетной записи устройства с Windows"](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [Производительность приложения работоспособности приложения для аналитики пользовательского интерфейса по версии приложения](intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)

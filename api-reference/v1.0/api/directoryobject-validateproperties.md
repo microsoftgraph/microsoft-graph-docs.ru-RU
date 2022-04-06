@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c41a217d781738292d52912dc8525fc64565b2a4
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: aad33a2affbab407bc187a70d71aa86f270f3c50
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339489"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672688"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: проверка Свойств
 
@@ -30,7 +30,7 @@ ms.locfileid: "62339489"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -53,7 +53,7 @@ POST /directoryObjects/validateProperties
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |entityType|String| Группа — это единственный поддерживаемый тип сущности. |
-|displayName|String| Отображаемого имени группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство (**displayName** или **mailNickname**). |
+|displayName|Строка| Отображаемого имени группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство (**displayName** или **mailNickname**). |
 |mailNickname|String| Имя почты группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство (**displayName** или **mailNickname**). |
 |onBehalfOfUserId|Guid| ID пользователя, который должен выдать себя при вызове API. Результаты проверки для **атрибутов и ролей onBehalfOfUserId** . |
 

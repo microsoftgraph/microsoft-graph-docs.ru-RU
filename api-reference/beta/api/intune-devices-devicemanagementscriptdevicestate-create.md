@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bd68f198420714683cdf9d9cae826066722c3b00
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: a63077aa9429c7e3445d9677324ef813207b711a
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61338381"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630767"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>Создание deviceManagementScriptDeviceState
 
@@ -20,7 +20,7 @@ ms.locfileid: "61338381"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создайте новый [объект deviceManagementScriptDeviceState.](../resources/intune-devices-devicemanagementscriptdevicestate.md)
+Создайте новый [объект deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "61338381"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,8 +57,8 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта состояния скрипта устройства управления устройствами. Это свойство доступно только для чтения.|
-|runState|[runState](../resources/intune-shared-runstate.md)|Состояние последнего запуска сценария управления устройствами. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
-|resultMessage|String|Сведения о выходе выполнения.|
+|runState|[runState](../resources/intune-devices-runstate.md)|Состояние последнего запуска сценария управления устройствами. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|resultMessage|Строка|Сведения о выходе выполнения.|
 |lastStateUpdateDateTime|DateTimeOffset|Последний раз, когда выполняется скрипт управления устройствами.|
 |errorCode|Int32|Код ошибки, соответствующий ошибочному исполнению сценария управления устройствами.|
 |errorDescription|String|Описание ошибки, соответствующее ошибочному исполнению сценария управления устройствами.|
@@ -66,7 +66,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и `201 Created` [объект deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) в тексте ответа.
+В случае успешного `201 Created` выполнения этот метод возвращает код отклика и [объект deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

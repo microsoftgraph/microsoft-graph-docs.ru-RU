@@ -2,13 +2,13 @@
 title: Компонент выбора каналов Microsoft Teams в Microsoft Graph Toolkit
 description: Вы можете использовать компонент mgt-teams-channel-picker, чтобы в Microsoft Graph искать каналы и команды, связанные с пользователем.
 ms.localizationpriority: medium
-author: vogtn
-ms.openlocfilehash: 5e44218da3f2ec1e0e2b36cfd9137bb91e189b6d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 0b37085f580258abb14737384d4a3d4c0a535b45
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129665"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589263"
 ---
 # <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент выбора каналов Microsoft Teams в Microsoft Graph Toolkit
 
@@ -80,9 +80,9 @@ mgt-teams-channel-picker {
 
 Событие | Когда он излучается | Настраиваемые данные | Отмена | Пузыри | Работает с настраиваемой шаблонной
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`selectionChanged` | Увольнение при изменении выбора канала пользователем | Выбранный в настоящее время элемент в `{ channel: ` [качестве группы](/graph/api/resources/channel) `, team: ` [каналов](/graph/api/resources/team)`}` | Нет | Нет | Да
+`selectionChanged` | Увольнение при изменении выбора канала пользователем | Выбранный в настоящее время элемент в `{ channel: `[качестве](/graph/api/resources/channel) [channelteam](/graph/api/resources/team)`, team: ``}` | Нет | Нет | Да
 
-Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
+Дополнительные сведения об обработке событий см. в [этой информации](../customize-components/events.md).
 
 ## <a name="templates"></a>Шаблоны
 
@@ -105,14 +105,14 @@ mgt-teams-channel-picker {
 
 ## <a name="microsoft-graph-permissions"></a>Разрешения Microsoft Graph
 
-В этом компоненте по умолчанию используются следующие API Graph Microsoft и разрешения.
+В этом компоненте по умолчанию Graph API и разрешения Microsoft.
 
 | API                                                                                                              | Разрешение  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
 | [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | User.Read.All        |
 | [/teams/${id}/channels](/graph/api/channel-list) | Group.Read.All        |
 
-В версии 2.2 необходимые разрешения были обновлены до менее Teams разрешений на основе Teams. Чтобы избежать изменений, необходимо выбрать новые разрешения с помощью глобальной конфигурии.
+В версии 2.2 необходимые разрешения обновляются до менее Teams разрешений на основе Teams. Чтобы избежать изменений, необходимо выбрать новые разрешения с помощью глобальной конфигурии.
 
 ```ts
 import {MgtTeamsChannelPicker} from "@microsoft/mgt-components";
@@ -120,7 +120,7 @@ import {MgtTeamsChannelPicker} from "@microsoft/mgt-components";
 MgtTeamsChannelPicker.config.useTeamsBasedScopes = true;
 ```
 
-При `useTeamsBasedScopes` наборе Teams каналов будет использовать следующие `true` области. 
+При `useTeamsBasedScopes` наборе `true`Teams каналов будет использовать следующие области. 
 
 | API                                                                                                              | Разрешение  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |

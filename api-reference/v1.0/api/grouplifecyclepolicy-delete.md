@@ -5,18 +5,18 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7cdb2354858ca1afd215f4360680792b08966630
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8828fd3c01e989e2fd122802d3728765fef57664
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114764"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510711"
 ---
 # <a name="delete-grouplifecyclepolicy"></a>Удаление groupLifecyclePolicy
 
 Пространство имен: microsoft.graph
 
-Удаление объекта [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
+Удаление [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -32,7 +32,6 @@ ms.locfileid: "62114764"
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groupLifecyclePolicies/{id}
-
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -42,18 +41,19 @@ DELETE /groupLifecyclePolicies/{id}
 | Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -89,7 +89,9 @@ DELETE https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
+
+Ниже приведен пример запроса.
 
 <!-- {
   "blockType": "response",

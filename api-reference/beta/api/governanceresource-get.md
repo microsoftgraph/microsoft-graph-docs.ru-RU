@@ -4,13 +4,13 @@ description: Извлечение свойств и связей объекта 
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 79e564c1219417f5f065c41b6f2dba785bb85335
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 7670a7a2fb157d6c9dcf752f54d673c8604ed067
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696730"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510508"
 ---
 # <a name="get-governanceresource"></a>Get governanceResource
 
@@ -18,9 +18,9 @@ ms.locfileid: "60696730"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Извлечение свойств и связей объекта [governanceResource.](../resources/governanceresource.md)
+Извлечение свойств и связей объекта [governanceResource](../resources/governanceresource.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
@@ -31,7 +31,7 @@ ms.locfileid: "60696730"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application | PrivilegedAccess.Read.AzureResources |
+| Приложение | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -39,7 +39,7 @@ ms.locfileid: "60696730"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application | PrivilegedAccess.Read.AzureAD |
+| Приложение | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
@@ -47,7 +47,7 @@ ms.locfileid: "60696730"
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application | PrivilegedAccess.Read.AzureADGroup |
+| Приложение | PrivilegedAccess.Read.AzureADGroup |
 
 Помимо области разрешений этот API требует, чтобы у запросителя было как минимум одно назначение ролей на ресурсе.
 
@@ -58,7 +58,7 @@ GET /privilegedAccess/azureResources/resources/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод **поддерживает** только  `$select` `$expand` [параметры запроса OData,](/graph/query-parameters) чтобы помочь настроить ответ.
+Этот метод **поддерживает** только параметры  `$select` `$expand` [запроса OData,](/graph/query-parameters) чтобы помочь настроить ответ.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -68,7 +68,7 @@ GET /privilegedAccess/azureResources/resources/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект governanceResource](../resources/governanceresource.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект governanceResource](../resources/governanceresource.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 В этом примере показано, как получить сведения о подписке Wingtip Toys - Prod (e5e7d29d-5465-45ac-885f-4716a5ee74b5).

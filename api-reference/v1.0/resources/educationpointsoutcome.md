@@ -1,22 +1,22 @@
 ---
-title: тип ресурсов educationPointsOutcome
-description: EducationOutcome, который дает числовую оценку.
+title: Тип ресурса educationPointsOutcome
+description: EducationOutcome с числовым оценок.
 ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 87751e7b59f883e5d317bcc16e5d97c141faff98
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e0dcab6cc22aa694754c13fce2104aed97d10200
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044722"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685224"
 ---
-# <a name="educationpointsoutcome-resource-type"></a>тип ресурсов educationPointsOutcome
+# <a name="educationpointsoutcome-resource-type"></a>Тип ресурса educationPointsOutcome
 
 Пространство имен: microsoft.graph
 
-[EducationOutcome,](educationoutcome.md) который дает числовую оценку.
+[EducationOutcome](educationoutcome.md) с числовым оценок.
 
 ## <a name="methods"></a>Методы
 
@@ -28,10 +28,11 @@ ms.locfileid: "59044722"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|Числовая оценка, предоставленная преподавателем для этого задания.|
-|publishedPoints|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|Копия свойства точек, которое будет сделано после выпуска класса для учащегося.|
+|id|String|Уникальный идентификатор для educationPointsOutcome.|
+|points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|Числовой класс, который преподаватель предоставил учащемуся для этого задания.|
+|publishedPoints|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|Копия свойства points, которая создается при выпуске оценки учащемуся.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 
@@ -50,6 +51,7 @@ ms.locfileid: "59044722"
 
 ```json
 {
+  "id": "String (identifier)",
   "points": {"@odata.type": "microsoft.graph.educationAssignmentPointsGrade"},
   "publishedPoints": {"@odata.type": "microsoft.graph.educationAssignmentPointsGrade"}
 }

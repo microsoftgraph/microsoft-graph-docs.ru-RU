@@ -428,7 +428,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Заметки
+          - name: Примечания
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -4591,6 +4591,21 @@ items:
                 href: api/driveitem-preview.md
               - name: Получение аналитических данных об элементе
                 href: api/itemanalytics-get.md
+          - name: Пакеты
+            href: resources/bundle.md
+            items:
+              - name: Список
+                href: api/bundle-list.md
+              - name: Создание
+                href: api/drive-post-bundles.md
+              - name: Получение
+                href: api/bundle-get.md
+              - name: Обновление
+                href: api/bundle-update.md
+              - name: Добавление элемента
+                href: api/bundle-additem.md
+              - name: Удаление элемента
+                href: api/bundle-removeitem.md
           - name: Разрешения
             href: resources/permission.md
             items:
@@ -5702,7 +5717,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Заметки
+      - name: Примечания
         displayName: OneNote
         items:
           - name: Обзор

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса assignedLabel
 description: Представляет метку конфиденциальности, назначенную Microsoft 365 группе. Метки конфиденциальности позволяют администраторам применять определенные групповые параметры в группе, назначая классификацию группе (например, конфиденциальность, высокая конфиденциальность или общие).
-localization_priority: Normal
-author: Jordanndahl
+ms.localizationpriority: medium
+author: psaffaie
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: b54236376979d064a86eb1e4852919e2b5ff9e49
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 52b3954982b35e2882092ca76870ba832a7e54f5
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680460"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588836"
 ---
 # <a name="assignedlabel-resource-type"></a>тип ресурса assignedLabel
 
@@ -18,13 +18,14 @@ ms.locfileid: "52680460"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет метку конфиденциальности, назначенную Microsoft 365 группе. Метки конфиденциальности позволяют администраторам применять определенные групповые параметры в группе, назначая классификацию группе (например, конфиденциальность, высокая конфиденциальность или общие). Метки конфиденциальности публикуются администраторами в центре Microsoft 365 безопасности & в рамках возможностей Microsoft Information Protection. Дополнительные сведения о метки конфиденциальности см. в обзоре [меток sensitivity.](/Office365/SecurityCompliance/sensitivity-labels)
+Представляет метку конфиденциальности, назначенную Microsoft 365 группе. Метки конфиденциальности позволяют администраторам применять определенные групповые параметры в группе, назначая классификацию группе (например, конфиденциальность, высокая конфиденциальность или общие). Метки конфиденциальности публикуются администраторами в центре Microsoft 365 безопасности & соответствия требованиям в Microsoft Information Protection возможностей. Дополнительные сведения о метки конфиденциальности см. в обзоре [меток Sensitivity](/Office365/SecurityCompliance/sensitivity-labels).
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|labelId|String|Уникальный идентификатор метки.|
-|displayName|String|Имя отображения метки. Только для чтения.|
+
+| Свойство    | Тип   | Описание                               |
+| :---------- | :----- | :---------------------------------------- |
+| labelId     | Строка | Уникальный идентификатор метки.       |
+| displayName | Строка | Имя отображения метки. Только для чтения. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -45,7 +46,6 @@ ms.locfileid: "52680460"
 }
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -58,5 +58,3 @@ ms.locfileid: "52680460"
   "suppressions": []
 }
 -->
-
-

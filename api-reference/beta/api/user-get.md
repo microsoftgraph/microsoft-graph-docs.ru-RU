@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 95d1f264e6fb1880c5ef6b22b1a5bfdf67326b95
-ms.sourcegitcommit: 15818a4b494c93682411990311ae7c81598edc5b
+ms.openlocfilehash: 7caf89d98d31c28e41dfbd4c8b9e3d9e5dbf2ab1
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "62370893"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671610"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -27,7 +27,7 @@ ms.locfileid: "62370893"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite    |
 |Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -69,7 +69,7 @@ GET /me
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код ответа `200 OK` и объект [user](../resources/user.md) в теле ответа. Он возвращает свойства по умолчанию, если не используется `$select` для указания конкретных свойств.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [user](../resources/user.md) в тексте отклика. Он возвращает свойства по умолчанию, если не используется `$select` для указания конкретных свойств.
 
 В случае успешной обработки запроса этот метод возвращает `202 Accepted`, но серверу требуется дополнительное время для выполнения соответствующих фоновых операций.
 

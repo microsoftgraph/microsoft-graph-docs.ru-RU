@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cb5d4dcb7d978f1ca866f2b70e2b86940a9e6698
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 3fd8240f4d07e82e01c5893ac6c68a9a6dcd2296
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443144"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671582"
 ---
 # <a name="list-messages-in-a-chat"></a>Список сообщений в чате
 
@@ -53,7 +53,7 @@ GET /chats/{chat-id}/messages
 | Имя      | Описание          |
 |:----------|:---------------------|
 | [$top](/graph/query-parameters#top-parameter)| Управляет количеством элементов в отклике. Максимальное значение `$top`: 50. |
-| [$orderBy](/graph/query-parameters#orderBy)  | В настоящее время поддерживает **LastModifiedDateTime (по умолчанию)** и **CreatedDateTime**. |
+| [$orderBy](/graph/query-parameters#orderBy)  | В настоящее время поддерживает **lastModifiedDateTime** (по умолчанию) и **createdDateTime** с сортировкой **по убыванию**. Сортировка по возрастанию в настоящее время не поддерживается.|
 
 Другие [параметры запроса OData](/graph/query-parameters) в настоящее время не поддерживаются.
 
@@ -75,7 +75,7 @@ GET /chats/{chat-id}/messages
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. `$top=2` передается для получения двух сообщений, а `$orderBy=createdDateTime` передается для сортировки сообщений с помощью createdDateTime.
+Ниже приведен пример запроса. `$top=2` передается для получения двух сообщений, а `$orderBy=createdDateTime` передается для сортировки сообщений с помощью **createdDateTime**.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -84,7 +84,7 @@ GET /chats/{chat-id}/messages
   "name": "get_allchatmessages_1"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2&$orderBy=createdDateTime
+GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2&$orderBy=createdDateTime desc
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-allchatmessages-1-csharp-snippets.md)]

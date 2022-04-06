@@ -1,16 +1,16 @@
 ---
 title: Получение вызова
 description: Извлечение свойств и связей объекта вызова.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 08761ac2a0992482e5addea26ad09abd28203302
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ea190e9aa23ede92ae789c108de6492cbc3ed95c
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131675"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607605"
 ---
 # <a name="get-call"></a>Получение вызова
 
@@ -27,7 +27,9 @@ ms.locfileid: "62131675"
 | :-------------- | :----------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                         |
-| Приложение                            | Нет.                                  |
+| Для приложений                            | Calls.Initiate.All, Calls.AccessMedia.All |
+
+> **Примечание:** Разрешения проверяются при вызове; При вызове этого API не проводится дополнительная проверка разрешений. Calls.AccessMedia.All необходим только для вызовов, которые используют носители с использованием приложений.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,11 +47,11 @@ GET /communications/calls/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` объект [вызова](../resources/call.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и объект [вызова](../resources/call.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

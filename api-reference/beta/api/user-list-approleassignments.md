@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: 64ead1536242a5c45c3c274d66cf6253e835fcee
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5081f7b86eca97ce0ffcdf86a210002c4370b941
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119733"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671729"
 ---
 # <a name="list-approleassignments-granted-to-a-user"></a>Список объектов appRoleAssignment, предоставленных для пользователя
 
@@ -26,7 +26,7 @@ ms.locfileid: "62119733"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -47,7 +47,7 @@ GET /users/{id | userPrincipalName}/appRoleAssignments
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

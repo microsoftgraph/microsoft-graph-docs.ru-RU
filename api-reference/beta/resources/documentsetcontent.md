@@ -2,15 +2,15 @@
 author: swapnil1993
 title: тип ресурса documentSetContent
 description: Ресурс documentSetContent содержит метаданные о файле, присутствуют в расположении контента по умолчанию.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 8597dfb8a762d2166a9253fb4e806b9c2fcf5223
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0ec71779247f143c0f43f1695c75049af15d453f
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447402"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722984"
 ---
 # <a name="documentsetcontent-resource-type"></a>тип ресурса documentSetContent
 
@@ -21,15 +21,16 @@ ms.locfileid: "50447402"
 
 ## <a name="properties"></a>Свойства
 
-| Имя свойства  | Тип    | Описание
-|:---------------|:--------|:--------------------------------------------------
-| contentType    | microsoft.graph.contentTypeInfo | Сведения о типе контента файла. 
-| fileName      | string  | Имя файла в папке ресурсов, которое должно быть добавлено в качестве контента по умолчанию или шаблона в наборе документов  
-| folderName         | string  | Имя папки, в которой будет размещен файл при создания нового набора документов в библиотеке.
+| Свойство    | Тип                            | Описание                                                                                                     |
+| :---------- | :------------------------------ | :-------------------------------------------------------------------------------------------------------------- |
+| contentType | microsoft.graph.contentTypeInfo | Сведения о типе контента файла.                                                                           |
+| fileName    | строка                          | Имя файла в папке ресурсов, которое должно быть добавлено в качестве контента по умолчанию или шаблона в наборе документов |
+| folderName  | строка                          | Имя папки, в которой будет размещен файл при создания нового набора документов в библиотеке.                 |
 
 ## <a name="json-representation"></a>Представление JSON
 
-Вот представление JSON ресурса **documentSetContent.**
+Вот представление JSON ресурса **documentSetContent** .
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.documentSetContent" } -->
 
 ```json

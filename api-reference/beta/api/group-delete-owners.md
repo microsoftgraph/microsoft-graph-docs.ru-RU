@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 02207cd87a431518ebc202e4f87474ae30ae97ff
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: cca609fdaff4a827e0f08f128aca6aac266515a4
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201668"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669888"
 ---
 # <a name="remove-group-owner"></a>Удаление владельца группы
 
@@ -18,16 +18,16 @@ ms.locfileid: "62201668"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API, чтобы удалить владельца из Microsoft 365 группы или группы безопасности через свойство **навигации** владельцев. Когда владельцам назначена группа, последний владелец (объект пользователя) группы не может быть удален.
+Используйте этот API, чтобы удалить владельца из Microsoft 365 или группы безопасности через свойство **навигации** владельцев. Когда владельцам назначена группа, последний владелец (объект пользователя) группы не может быть удален.
 
-> **Примечание:** Проблемы, с которыми сталкиваются при удалении владельца группы, связанной с [группой,](/graph/api/resources/team.md)см. [в ссылке Known Issues.](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member)
+> **Примечание:** Проблемы, с которыми сталкиваются при удалении владельца группы, связанной с [группой](/graph/api/resources/team.md), см. [в ссылке Known Issues](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -42,7 +42,7 @@ DELETE /groups/{id}/owners/{id}/$ref
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf7471d89cf23ac8a938d452a97d0fa4ba632d2f
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: a6239337f14c5b80b600fc1f89c42ef25094fc1d
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489018"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630396"
 ---
 # <a name="list-ioslobapps"></a>Перечисление объектов iosLobApp
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1893
+Content-Length: 1917
 
 {
   "value": [
@@ -114,7 +114,8 @@ Content-Length: 1893
         "v11_0": true,
         "v12_0": true,
         "v13_0": true,
-        "v14_0": true
+        "v14_0": true,
+        "v15_0": true
       },
       "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
       "versionNumber": "Version Number value",
@@ -124,6 +125,7 @@ Content-Length: 1893
   ]
 }
 ```
+
 
 
 

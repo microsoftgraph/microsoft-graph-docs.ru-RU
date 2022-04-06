@@ -1,22 +1,22 @@
 ---
-title: тип ресурса educationFeedbackOutcome
-description: EducationOutcome, который дает обратную связь в виде текста.
+title: Тип ресурса educationFeedbackOutcome
+description: EducationOutcome, который дает отзыв в виде текста.
 ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 120e7b603ca1d441b696e0fe50c64cb5d0373b7f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ab90e8cee986869b6d27e80061755970ea46f345
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036657"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684496"
 ---
-# <a name="educationfeedbackoutcome-resource-type"></a>тип ресурса educationFeedbackOutcome
+# <a name="educationfeedbackoutcome-resource-type"></a>Тип ресурса educationFeedbackOutcome
 
 Пространство имен: microsoft.graph
 
-Представляет обратную связь по [объекту educationOutcome](educationoutcome.md) в виде текста. 
+Представляет отзыв об [объекте educationOutcome](educationoutcome.md) в виде текста. 
 
 ## <a name="methods"></a>Методы
 
@@ -28,8 +28,9 @@ ms.locfileid: "59036657"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|feedback|[educationFeedback](educationfeedback.md)|Письменные отзывы преподавателя для учащегося.|
-|publishedFeedback|[educationFeedback](educationfeedback.md)|Копия свойства обратной связи, которая сделана при отсвойке класса учащемуся.|
+|id|String|Уникальный идентификатор для educationFeedbackOutcome.|
+|feedback|[educationFeedback](educationfeedback.md)|Отзывы преподавателя для учащегося.|
+|publishedFeedback|[educationFeedback](educationfeedback.md)|Копия свойства обратной связи, которая создается при выпуске оценки учащемуся.|
 
 ## <a name="relationships"></a>Связи
 
@@ -50,6 +51,7 @@ ms.locfileid: "59036657"
 
 ```json
 {
+  "id": "String (identifier)",
   "feedback": {"@odata.type": "microsoft.graph.educationFeedback"},
   "publishedFeedback": {"@odata.type": "microsoft.graph.educationFeedback"}
 }

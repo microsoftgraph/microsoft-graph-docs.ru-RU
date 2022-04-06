@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 28f778723b12e6400a84079fb79eb4e7f842f63b
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
-ms.translationtype: HT
+ms.openlocfilehash: 63a760648d7fcb58a6a24ee3505c82c65ee5c273
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336895"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510227"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -70,7 +70,7 @@ ms.locfileid: "63336895"
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской. |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | Нет | Отправка запроса операции политики данных, направленного администратором компании для экспорта данных пользователя организации. |
 | [getByIds](../api/directoryobject-getbyids.md) | Коллекция String | Возвращает объекты каталогов, указанные в списке идентификаторов. |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Коллекция строк | Проверка членства в списке групп. Это транзитивная проверка. |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Коллекция String | Проверка членства в списке групп. Это транзитивная проверка. |
 | [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Коллекция String | Проверка участия в списке группы, роли каталога или объектах административных единиц. Это транзитивная проверка. |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | Коллекция строк | Возвращает все группы, в которых состоит пользователь. Это транзитивная проверка. |
 | [getMemberObjects](../api/directoryobject-getmemberobjects.md) | Коллекция строк | Возвращение всех групп, ролей каталога и административных единиц, в которых состоит пользователь. Это транзитивная проверка. |
@@ -187,7 +187,7 @@ ms.locfileid: "63336895"
 |customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|Открытый сложный тип, который содержит значение настраиваемого атрибута безопасности, назначенного объекту каталога. Допускается значение NULL.<br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `not`, `startsWith`).|
 | deletedDateTime | DateTimeOffset | Дата и время удаления пользователя. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le` и `in`) |
 | department | String | Название отдела, в котором работает пользователь. Максимальная длина: 64 символа.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `eq` и по `null` значениям). |
-| displayName | Строка | Имя пользователя, отображаемое в адресной книге. Это значение обычно является сочетанием имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Максимальная длина 256 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям), `$orderBy` и `$search`.|
+| displayName | String | Имя пользователя, отображаемое в адресной книге. Это значение обычно является сочетанием имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Максимальная длина 256 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям), `$orderBy` и `$search`.|
 | employeeHireDate | DateTimeOffset | Дата и время, когда пользователь был нанят или начнет работу в случае найма в будущем. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).|
 | employeeId | String | Идентификатор сотрудника, назначенный пользователю организацией. Максимальная длина составляет 16 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`и `eq` для значений `null`).|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |Представляет данные организации (например, подразделение и место возникновения затрат), связанные с пользователем. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).|
@@ -250,7 +250,7 @@ ms.locfileid: "63336895"
 ### <a name="mail-and-proxyaddresses-properties"></a>свойства mail и proxyAddresses
 **mail** и **proxyAddresses** — это свойства, связанные с электронной почтой. **proxyAddresses** — это коллекция адресов, относящихся только к Microsoft Exchange Server. Это свойство используется для хранения списка привязанных к одному почтовому ящику почтовых адресов пользователя. Cвойство **mail** используется в качестве адреса электронной почты пользователя для различных целей, включая вход пользователя, и определяет основной прокси-адрес.
  
-Свойства **mail** и **proxyAddresses** можно получить с помощью API [GET user](add link) в MS Graph. Свойство **mail** можно обновить с помощью метода [PATCH в API обновления пользователя](add link), но свойство **proxyAddresses** нельзя обновить в Microsoft Graph. При обновлении свойства **mail** пользователя запускается перерасчет **proxyAddresses**, и обновленная почта устанавливается в качестве основного прокси-адреса, за исключением следующих сценариев: 
+Свойства **mail** и **proxyAddresses** можно получить с помощью API [GET user](../api/user-get.md) в MS Graph. Свойство **mail** можно обновить с помощью метода [PATCH в API обновления пользователя](../api/user-update.md), но свойство **proxyAddresses** нельзя обновить в Microsoft Graph. При обновлении свойства **mail** пользователя запускается перерасчет **proxyAddresses**, и обновленная почта устанавливается в качестве основного прокси-адреса, за исключением следующих сценариев: 
  
 1. Если у пользователя есть лицензия, включающая Microsoft Exchange, все прокси-адреса пользователя должны относиться к проверенному домену клиента. Все, что не относится к проверенным доменам, удаляется без предупреждения.
 2. Если пользователь является гостем и основной прокси-адрес содержит строку имени участника-пользователя гостя с #EXT#, почта пользователя НЕ будет установлена в качестве основного прокси-адреса.
@@ -308,6 +308,7 @@ ms.locfileid: "63336895"
 |:---------------|:--------|:----------|
 |agreementAcceptances|Коллекция [agreementAcceptance](agreementacceptance.md)| Состояния принятия пользователем условий использования. Только для чтения. Допускается значение NULL.|
 |appRoleAssignments|Коллекция [appRoleAssignment](approleassignment.md)|Представляет роли приложения, предоставленные пользователю для приложения. Поддерживает `$expand`. |
+|authentication|[authentication](../resources/authentication.md)|**ЗАДАЧА: добавить описание**|
 |calendar|[calendar](calendar.md)|Основной календарь пользователя. Только для чтения.|
 |calendarGroups|Коллекция [calendarGroup](calendargroup.md)|Группы календарей пользователя. Только для чтения. Допускается значение null.|
 |calendarView|Коллекция [event](event.md)|Представление календаря. Только для чтения. Допускается значение null.|

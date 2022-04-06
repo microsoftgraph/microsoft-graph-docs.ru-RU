@@ -1,23 +1,23 @@
 ---
 title: Get unifiedRoleManagementPolicyAssignment
 description: Ознакомьтесь с свойствами и отношениями единого объектаRoleManagementPolicyAssignment.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4e95235fe7db3d6c87224b2ab55bee0e288626f6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f12f9e006b622142cc03d3b8a01ea5818527e6ca
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130653"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509135"
 ---
 # <a name="get-unifiedrolemanagementpolicyassignment"></a>Get unifiedRoleManagementPolicyAssignment
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями единого [объектаRoleManagementPolicyAssignment.](../resources/unifiedrolemanagementpolicyassignment.md)
+Ознакомьтесь с свойствами и отношениями единого [объектаRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,12 +46,12 @@ GET /policies/roleManagementPolicyAssignments/{unifiedRoleManagementPolicyAssign
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и `200 OK` [унифицированный объектRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) в тексте ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код ответа и [унифицированный объектRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

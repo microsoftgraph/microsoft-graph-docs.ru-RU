@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 231325110f1396001cfcc47e6897a15ec24c81b3
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 0dda5eab5251595424e40763519a4ba554a70024
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63378793"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629290"
 ---
 # <a name="get-aospdeviceownertrustedrootcertificate"></a>Get aospDeviceOwnerTrustedRootCertificate
 
@@ -28,7 +28,7 @@ ms.locfileid: "63378793"
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -37,9 +37,9 @@ ms.locfileid: "63378793"
 }
 -->
 ``` http
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.aospDeviceOwnerCertificateProfileBase/rootCertificate
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.aospDeviceOwnerEnterpriseWiFiConfiguration/rootCertificateForServerValidation
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -62,7 +62,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate
 ```
 
 ### <a name="response"></a>Отклик

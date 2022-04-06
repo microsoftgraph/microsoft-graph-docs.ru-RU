@@ -1,16 +1,16 @@
 ---
 title: Создание звонка
 description: Создайте новый вызов.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 132dc8bcceeee11383f6e429addcb3542b970420
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fff18805550d888a493573d1f2200277d09fc128
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136606"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607829"
 ---
 # <a name="create-call"></a>Создание звонка
 
@@ -26,7 +26,7 @@ ms.locfileid: "62136606"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                                                                           |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                                                           |
-| Приложение                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
+| Для приложений                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
 
 > **Примечание:** Для вызова с помощью носители, на которые есть приложения, требуется разрешение Calls.AccessMedia.All в дополнение к одному из разрешений, перечисленных в таблице выше.
 
@@ -43,10 +43,10 @@ POST /communications/calls
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем JSON-представление объекта [вызова.](../resources/call.md)
+В теле запроса поставляем JSON-представление объекта [вызова](../resources/call.md) .
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `201 Created` объект [вызова](../resources/call.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `201 Created` отклика и объект [вызова](../resources/call.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -262,7 +262,7 @@ Content-Type: application/json
 
 ### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>Пример 2. Создание одноранговых вызовов VoIP с помощью средств массовой информации приложения
 
-> **Примечание.** В этом примере необходимы разрешения Calls.Initiate.All и Calls.AccessMedia.All.
+> **Примечание**. В этом примере необходимы разрешения Calls.Initiate.All и Calls.AccessMedia.All.
 
 ##### <a name="request"></a>Запрос
 В следующем примере показан запрос, который делает одноранговой вызов между ботом и указанным пользователем. В этом примере средства массовой информации локализованы приложением. Значения маркера авторизации, URL-адреса вызова, id приложения, имени приложения, пользовательского именем пользователя и id клиента должны быть заменены фактическими значениями, чтобы сделать пример работой.
@@ -550,7 +550,7 @@ Content-Type: application/json
 Чтобы присоединиться к запланированному собранию, нам необходимо получить потоковый id, id сообщения, id организатора и id клиента, в котором планируется собрание.
 Эти сведения можно получить из [API Get Online Meetings](../api/onlinemeeting-get.md) (только на основе VTC).
 
-Значения маркера авторизации, URL-адреса вызовов, id приложения, имени приложения, пользовательского именем пользователя и ид клиента должны быть заменены на сведения, полученные из API Get  [Online Meetings](../api/onlinemeeting-get.md) (только на основе VTC) с фактическими значениями для работы в примере.
+Значения маркера авторизации, URL-адреса вызовов, id приложения, имени приложения, пользовательского именем пользователя и ид клиента должны быть заменены на сведения, полученные из  [API Get Online Meetings](../api/onlinemeeting-get.md) (только на основе VTC) с фактическими значениями для работы в примере.
 > **Примечание:** В этом примере требуется `Calls.JoinGroupCalls.All` разрешение.
 
 ##### <a name="request"></a>Запрос
@@ -874,7 +874,7 @@ Content-Type: application/json
 >**Примечание:** Для сценариев присоединиться к собраниям, кроме уведомлений состояния вызовов, мы получаем уведомления реестра.
 
 ### <a name="example-6-join-scheduled-meeting-with-application-hosted-media"></a>Пример 6. Регистрация запланированной встречи с носители приложения
-Обнови медиафайл [с помощью AppHostedMediaConfig,](../resources/apphostedmediaconfig.md) как показано ниже.
+Обнови медиафайл [с помощью AppHostedMediaConfig](../resources/apphostedmediaconfig.md) , как показано ниже.
 
 <!-- {
   "blockType": "example",
@@ -921,7 +921,7 @@ Content-Type: application/json
 
 > **Примечание:** Этот вызов требует разрешения Calls.Initiate.All.
 
-Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
+Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### <a name="request"></a>Запрос
 В следующем примере показан запрос на одноранговой вызов между ботом и номером PSTN. В этом примере носители хозяйской службы. Для работы примера необходимо заменить значения маркера авторизации, URL-адреса вызова, ID экземпляра приложения, имени экземпляра приложения, ИД телефона и ID клиента.
@@ -1086,9 +1086,9 @@ Content-Type: application/json
 
 ### <a name="example-8-create-peer-to-peer-pstn-call-with-application-hosted-media"></a>Пример 8. Создание одноранговых вызовов PSTN с помощью средств массовой информации, на которые было организовано приложение.
 
-> **Примечание.** В этом примере требуются разрешения Calls.Initiate.All и Calls.AccessMedia.All.
+> **Примечание**. В этом примере требуются разрешения Calls.Initiate.All и Calls.AccessMedia.All.
 
-Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
+Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### <a name="request"></a>Запрос
 В следующем примере показан запрос на одноранговой вызов между ботом и номером PSTN. В этом примере средства массовой информации локализованы приложением. Для работы примера необходимо заменить значения маркера авторизации, URL-адреса вызова, ID экземпляра приложения, имени экземпляра приложения, ИД телефона и ID клиента.

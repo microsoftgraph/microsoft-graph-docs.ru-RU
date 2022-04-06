@@ -1,24 +1,25 @@
 ---
 title: 'cloudPcOnPremisesConnection: updateAdDomainPassword'
-description: Обновление пароля домена Active Directory для успешного локального подключения. Этот API поддерживается, когда тип onPremisesConnection является hybridAzureADJoin.
+description: Обновление пароля домена Active Directory для успешного подключения к сети Azure. Этот API поддерживается, когда тип onPremisesConnection является hybridAzureADJoin.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 3a2f518821eb7825146450dc6aaf2da00e39dd36
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: b10b3d2cdac6ce00119a374987c71ee19f0f94a0
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266315"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587730"
 ---
 # <a name="cloudpconpremisesconnection-updateaddomainpassword"></a>cloudPcOnPremisesConnection: updateAdDomainPassword
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление пароля домена Active Directory для [onPremisesConnection](../resources/cloudpconpremisesconnection.md). Этот API поддерживается при типе **onPremisesConnection** `hybridAzureADJoin` .
+Обновление пароля домена Active Directory для [onPremisesConnection](../resources/cloudpconpremisesconnection.md). Этот API поддерживается при типе **onPremisesConnection** `hybridAzureADJoin`.
 
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,7 +43,7 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomai
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса

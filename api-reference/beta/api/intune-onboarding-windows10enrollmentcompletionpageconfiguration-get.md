@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba0a6dcb920b75d77e8095a5b367a41a29ce348e
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: e521404887428128945585f104fcf6b5e0c0291d
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488894"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64628751"
 ---
 # <a name="get-windows10enrollmentcompletionpageconfiguration"></a>Get windows10EnrollmentCompletionPageConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "60488894"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей [объекта Windows10EnrollmentCompletionPageConfiguration.](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
+Чтение свойств и связей [объекта Windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,14 +46,14 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и `200 OK` [объект Windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) в тексте отклика.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и [объект Windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 983
+Content-Length: 1034
 
 {
   "value": {
@@ -83,6 +83,7 @@ Content-Length: 983
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "deviceEnrollmentConfigurationType": "limit",
     "showInstallationProgress": true,
     "blockDeviceSetupRetryByUser": true,
     "allowDeviceResetOnInstallFailure": true,
@@ -98,6 +99,7 @@ Content-Length: 983
   }
 }
 ```
+
 
 
 

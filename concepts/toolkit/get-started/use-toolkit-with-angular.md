@@ -2,13 +2,13 @@
 title: Использование Microsoft Graph Toolkit с Angular
 description: Начало использования Microsoft Graph Toolkit в приложении Angular
 ms.localizationpriority: medium
-author: elisenyang
-ms.openlocfilehash: da50a18176a5945c3b90b136766149ff83951692
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 9131fa4a1e161c93983fea3d615ebd1fc78bf0b7
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032085"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588759"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-angular"></a>Использование Microsoft Graph Toolkit с Angular
 
@@ -40,9 +40,9 @@ npm install @microsoft/mgt
 
 Поставщики Microsoft Graph Toolkit обеспечивают проверку подлинности и доступ к Microsoft Graph для компонентов. Дополнительные сведения см. в статье [Использование поставщиков](../providers/providers.md). Применяемый поставщик зависит от контекста, в котором будет использоваться ваше решение.
 
-В следующем примере показано, как добавить [поставщика MSAL2,](../providers/msal2.md)но вы можете следовать той же модели с любым из поставщиков.
+В следующем примере показано, как добавить [поставщика MSAL2](../providers/msal2.md), но вы можете следовать той же модели с любым из поставщиков.
 >[!NOTE] 
->Если вы в настоящее время используете поставщика MSAL и хотите обновить ее до поставщика MSAL2, выполните действия в статье [MSAL2 Provider.](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider)
+>Если вы в настоящее время используете поставщика MSAL и хотите обновить ее до поставщика MSAL2, выполните действия в статье [MSAL2 Provider](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider) .
 
 Импортируйте поставщика и настройте его для инициализации при запуске приложения. Замените `<YOUR-CLIENT-ID>` на идентификатор клиента для своего приложения.
 

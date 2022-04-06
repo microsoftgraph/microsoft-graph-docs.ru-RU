@@ -1,16 +1,16 @@
 ---
 title: 'call: keepAlive'
 description: Сделайте запрос на этот API каждые 15-45 минут, чтобы убедиться, что текущий вызов остается в живых.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6848af1587bfc79573781d20afbf0ca4e3220e2d
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 7e951d6e76bbe41cf3027b124a5f130e0efbd448
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346350"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608088"
 ---
 # <a name="call-keepalive"></a>call: keepAlive
 
@@ -24,14 +24,16 @@ ms.locfileid: "62346350"
 
 Попытка отправить запрос на уже закончившийся вызов приведет к ошибке `404 Not-Found` . Ресурсы, связанные с вызовом, должны быть очищены на стороне приложения.
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Permissions
 Для вызова этого API может потребоваться одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Приложение     | Нет                                        |
+| Для приложений                            | Calls.Initiate.All, Calls.AccessMedia.All |
+
+> **Примечание:** Разрешения проверяются при вызове; При вызове этого API не проводится дополнительная проверка разрешений. Calls.AccessMedia.All необходим только для вызовов, которые используют носители с использованием приложений.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 84e0686d5f8cc5421f70af8b19a662d07f16cb67
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 0012f004b0b4434a9f2468dc9e827376ed200e78
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60490000"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629395"
 ---
 # <a name="get-windowsautopilotdeviceidentity"></a>Get windowsAutopilotDeviceIdentity
 
@@ -20,7 +20,7 @@ ms.locfileid: "60490000"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [windowsAutopilotDeviceIdentity.](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)
+Чтение свойств и связей объекта [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,14 +47,14 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) в тексте ответа.
+В случае успешной работы `200 OK` этот метод возвращает код отклика и [объект windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIden
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1189
+Content-Length: 1362
 
 {
   "value": {
@@ -94,10 +94,14 @@ Content-Length: 1189
     "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
     "azureAdDeviceId": "Azure Ad Device Id value",
     "managedDeviceId": "Managed Device Id value",
-    "displayName": "Display Name value"
+    "displayName": "Display Name value",
+    "deviceAccountUpn": "Device Account Upn value",
+    "deviceAccountPassword": "Device Account Password value",
+    "deviceFriendlyName": "Device Friendly Name value"
   }
 }
 ```
+
 
 
 

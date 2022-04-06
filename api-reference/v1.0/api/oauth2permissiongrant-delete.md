@@ -5,23 +5,23 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: fab9fa26922d50096e260cfcdd8cea8ad7bc6742
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fe2079beb91c35a758fe45ed0613cfc2ed8253cf
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134657"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672303"
 ---
 # <a name="delete-oauth2permissiongrant-a-delegated-permission-grant"></a>Удаление oAuth2PermissionGrant (делегированная субсидия на разрешение)
 
 Пространство имен: microsoft.graph
 
-Удаление делегированного разрешения, представленного [объектом oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
+Удаление делегированного разрешения, представленного [объектом oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) .
 
 При удалении делегированного разрешения доступ, предоставленный им, отменяется. Существующие маркеры доступа будут по-прежнему действительны для их срока службы, но новые маркеры доступа не будут предоставлены для делегирования разрешений, выявленных в удаленной **oAuth2PermissionGrant**.
 
 > [!NOTE]
-> Может быть два делегированных разрешения, разрешающих приложению действовать от имени пользователя при вызове API. Это может произойти, когда пользователь соглашается на приложение от своего имени (создает **oAuth2PermissionGrant** с **согласияType** *Principal,* идентифицирует пользователя), а затем администратор предоставляет согласие администратора на все клиенты от имени всех пользователей (создание второго **oAuth2PermissionGrant** с **согласияType** *allPrincipals).*
+> Может быть два делегированных разрешения, разрешающих приложению действовать от имени пользователя при вызове API. Это может произойти, когда пользователь соглашается на приложение от своего имени (создает **oAuth2PermissionGrant** с **согласияType** *Principal*, идентифицирует пользователя), а затем администратор предоставляет согласие администратора от имени всех пользователей (создание второго **oAuth2PermissionGrant** с **согласияType** of *AllPrincipals*).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,9 +29,9 @@ ms.locfileid: "62134657"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ DELETE /oAuth2PermissionGrants/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -67,7 +67,7 @@ DELETE /oAuth2PermissionGrants/{id}
   "name": "delete_oAuth2PermissionGrant"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
+DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-oauth2permissiongrant-csharp-snippets.md)]

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: daae2148a46bd4f55834c998a477bd57a655db10
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e47674875358101d0e90459e1dd6f2aa23eb9a94
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100459"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671169"
 ---
 # <a name="list-applications-assigned-to-a-connectorgroup"></a>Список приложений, назначенных соединителиГруп
 
@@ -18,14 +18,14 @@ ms.locfileid: "62100459"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [приложений,](../resources/application.md) связанных с [соединителиГруп.](../resources/connectorgroup.md) Этот список содержит все приложения, заданной определенной группе соединитений.
+Извлечение списка [объектов приложений](../resources/application.md) , связанных с [соединитетелемGroup](../resources/connectorgroup.md). Этот список содержит все приложения, заданной определенной группе соединитений.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается.  |
 
@@ -40,14 +40,14 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applicat
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Носителер. Обязательный|
+| Авторизация  | Носителер. Обязательна|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного применения этот метод возвращает код отклика и `200 OK` коллекцию объектов приложений в тексте [](../resources/application.md) отклика.
+В случае успешного применения этот метод возвращает код `200 OK` отклика и [коллекцию объектов](../resources/application.md) приложений в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

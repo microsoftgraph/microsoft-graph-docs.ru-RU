@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e34125f89a3c9fe9e2f84ba12d7e29091bd63120
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 79c59b957570dde01a78535ff41283f15c6e2f85
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098345"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670847"
 ---
 # <a name="list-user-memberof"></a>Перечисление user memberOf
 
@@ -26,7 +26,7 @@ ms.locfileid: "62098345"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | User.Read, GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись) | User.Read, GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 

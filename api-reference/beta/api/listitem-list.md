@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: Получение коллекции элементов в списке.
-ms.date: 09/11/2017
 title: Получение элементов из списка SharePoint
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: bc6f0d0f8fc96ceffd3114a4cfc3ac99ebf8a0e9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5eb0910bb74119ab99a99b5b59b19ae90b050efe
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096287"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63516313"
 ---
 # <a name="enumerate-items-in-a-list"></a>Перечисление элементов списка
 
@@ -42,10 +41,25 @@ GET /sites/{site-id}/lists/{list-id}/items?expand=fields
 GET /sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
 
+## <a name="request-headers"></a>Заголовки запросов
+
+| Имя      |Описание|
+|:----------|:----------|
+| Авторизация  | Носитель {code}. Обязательно.|
+
+## <a name="request-body"></a>Текст запроса
+
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик 
+
+В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию [объектов listItem][item] в тексте отклика. 
+
 ## <a name="example"></a>Пример
 
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-items" } -->
@@ -80,7 +94,9 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 ---
 
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true } -->
 

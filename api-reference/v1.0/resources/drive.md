@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
 title: Тип ресурса drive
+description: Ресурс drive — объект верхнего уровня, представляющий хранилище OneDrive пользователя или библиотеку документов в SharePoint.
 ms.localizationpriority: high
 ms.prod: sharepoint
-description: Ресурс drive — объект верхнего уровня, представляющий хранилище OneDrive пользователя или библиотеку документов в SharePoint.
 doc_type: resourcePageType
-ms.openlocfilehash: 9449c118ed5ca0ebd158e5555a6ab4f7bef847d2
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: eb7070e357681311cfe0d881940c3047dbac5505
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123960"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63560238"
 ---
 # <a name="drive-resource-type"></a>Тип ресурса drive
 
@@ -23,17 +22,16 @@ ms.locfileid: "61123960"
 
 ## <a name="methods"></a>Методы
 
-|                        Стандартная задача                         |         Метод HTTP         |
-| :--------------------------------------------------------- | :-------------------------- |
-| [Получение метаданных другого ресурса Drive][drive-get]           | `GET /drives/{drive-id}`    |
-| [Получение корневой папки для ресурса Drive по умолчанию пользователя][item-get]       | `GET /drive/root`           |
-| [Получение списка дочерних элементов ресурса Drive][item-children]             | `GET /drive/root/children`  |
-| [Получение списка изменений для всех элементов в ресурсе Drive][item-changes]    | `GET /drive/root/delta`     |
-| [Получение списка отслеживаемых объектов driveItems пользователя][drive-following]         | `Get /drive/following`       |
-| [Поиск элементов в ресурсе Drive][item-search]               | `GET /drive/root/search`    |
-| [Доступ к специальной папке](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
+|                        Метод                              |         Тип возвращаемых данных         | Описание |
+| :--------------------------------------------------------- | :-------------------------- |-------------|
+| [Получение объекта drive][drive-get]                                     | drive                       | Получение метаданных о диске |
+| [Получение корня диска][item-get]                                 | [driveItem][]               | Получение корневой папки диска |
+| [Список отслеживаемых элементов][drive-following]                     | Коллекция [driveItem][]    | Получение списка отслеживаемых объектов driveItems пользователя |
+| [Список дочерних элементов][item-children]                             | Коллекция [driveItem][]    | Получение списка дочерних элементов корневой папки диска |
+| [Список изменений][item-changes]                               | Коллекция [driveItem][]    | Получение списка изменений для всех объектов driveItems в ресурсе Drive |
+| [Search][item-search]                                      | Коллекция [driveItem][]    | Поиск объектов driveItems на диске |
+| [Получение специальной папки](../api/drive-get-specialfolder.md)    | [driveItem][]               | Доступ к специальной папке по ее каноническому имени |
 
-В примерах в предыдущей таблице используется каталог `/drive`, но можно использовать и другие пути.
 
 ## <a name="properties"></a>Свойства
 
@@ -61,11 +59,12 @@ ms.locfileid: "61123960"
 
 | Связь | Тип                                 | Описание
 |:-------------|:-------------------------------------|:-----------------------
-| following    | Коллекция [DriveItem](driveitem.md) | Список элементов, которые отслеживает пользователь. Только в OneDrive для бизнеса.
-| items        | Коллекция [DriveItem](driveitem.md) | Все элементы, содержащиеся на диске. Только для чтения. Допускается значение null.
-| root         | [DriveItem](driveitem.md)            | Корневая папка на диске. Только для чтения.
-| special      | Коллекция [DriveItem](driveitem.md) | Коллекция общих папок, доступных в OneDrive. Только для чтения. Допускается значение null.
-| список         | [Перечисление](list.md)                      | Для дисков в SharePoint, базовый список библиотек документов. Только для чтения. Допускается значение null.
+| bundles      | Коллекция [driveItem][]             | Коллекция объектов [bundles][bundle] (альбомы и наборы общих элементов с множественным выбором). Только в OneDrive для личного пользования.
+| following    | Коллекция [driveItem][]             | Список элементов, которые отслеживает пользователь. Только в OneDrive для бизнеса.
+| items        | Коллекция [driveItem][]             | Все элементы, содержащиеся на диске. Только для чтения. Допускается значение null.
+| root         | [driveItem][]                        | Корневая папка на диске. Только для чтения.
+| special      | Коллекция [driveItem][]             | Коллекция общих папок, доступных в OneDrive. Только для чтения. Допускается значение null.
+| список         | [list][]                             | Для дисков в SharePoint, базовый список библиотек документов. Только для чтения. Допускается значение null.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -98,47 +97,55 @@ ms.locfileid: "61123960"
 ```json
 {
   "id": "string",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "driveType": "personal | business | documentLibrary",
   "following": [{"@odata.type": "microsoft.graph.driveItem"}],
-  "items": [ { "@odata.type": "microsoft.graph.driveItem" } ],
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "items": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "string (timestamp)",
   "name": "string",
-  "owner": { "@odata.type": "microsoft.graph.identitySet" },
-  "quota": { "@odata.type": "microsoft.graph.quota" },
-  "root": { "@odata.type": "microsoft.graph.driveItem" },
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-  "special": [ { "@odata.type": "microsoft.graph.driveItem" }],
-  "system": { "@odata.type": "microsoft.graph.systemFacet" },
-  "webUrl": "url"
+  "owner": {"@odata.type": "microsoft.graph.identitySet"},
+  "quota": {"@odata.type": "microsoft.graph.quota"},
+  "root": {"@odata.type": "microsoft.graph.driveItem"},
+  "sharepointIds": {"@odata.type": "microsoft.graph.sharepointIds"},
+  "special": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "system": {"@odata.type": "microsoft.graph.systemFacet"},
+  "webUrl": "string",
+
 }
 ```
 
+[bundle]: bundle.md
+[driveItem]: driveItem.md
 [item-resource]: driveitem.md
 [identity-set]: identityset.md
+[list]: list.md
 [quota-facet]: quota.md
 [drive-resource]: drive.md
+[drive-following]: ../api/drive-list-following.md
 [drive-get]: ../api/drive-get.md
 [item-get]: ../api/driveitem-get.md
 [item-changes]: ../api/driveitem-delta.md
 [item-search]: ../api/driveitem-search.md
 [item-children]: ../api/driveitem-list-children.md
-[drive-following]: ../api/drive-list-following.md
 
 
-<!-- {
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
   "type": "#page.annotation",
   "description": "Drive is a top level object for OneDrive API that provides access to the contents of a drive. ",
   "keywords": "drive,objects,resources",
   "section": "documentation",
-  "suppressions": [
-    "Warning: /api-reference/v1.0/resources/drive.md:
-      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
-  ],
   "tocPath": "Drives",
-  "tocBookmarks": { "Resources/Drive": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Drive&quot;: &quot;#"
+  },
+  "suppressions": []
+}
+-->
+
 

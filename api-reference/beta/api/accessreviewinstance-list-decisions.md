@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0061077f1659e031a5437eb0a2bfdbdc3c730bb3
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 0c0b0535a475ba7f1fe3408d306385e0774442c0
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63332873"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722123"
 ---
 # <a name="list-decisions"></a>Список решений
 Пространство имен: microsoft.graph
@@ -18,9 +18,6 @@ ms.locfileid: "63332873"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [Извлечение объектов accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) для определенного [accessReviewInstance](../resources/accessreviewinstance.md). Возвращается список объектов zero или more accessReviewInstanceDecisionItem, включая все вложенные свойства.
-
->[!NOTE]
->Размер страницы по умолчанию для этого API — 100 объектов accessReviewInstance. Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,6 +40,8 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает `$select`параметры `$filter`запроса OData `$orderBy``$skip`и `$top` OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+
+Размер страницы по умолчанию для этого API — 100 **объектов accessReviewInstance** . Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|

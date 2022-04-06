@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса educationFeedbackOutcome
 description: EducationOutcome, который дает отзыв в виде текста.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 1c50776f6b8dde27d8f937e8b7ee2028ce1cfca1
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 325994248fc72abbf96ec1c3113699f05ba3a75e
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50153657"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684706"
 ---
 # <a name="educationfeedbackoutcome-resource-type"></a>Тип ресурса educationFeedbackOutcome
 
@@ -30,8 +30,9 @@ ms.locfileid: "50153657"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|feedback|[educationFeedback](educationfeedback.md)|Письменный отзыв преподавателя для учащегося.|
-|publishedFeedback|[educationFeedback](educationfeedback.md)|Копия свойства обратной связи, которая выдана учащемуся после выпуска оценки.|
+|id|String|Уникальный идентификатор для educationFeedbackOutcome.|
+|feedback|[educationFeedback](educationfeedback.md)|Отзывы преподавателя для учащегося.|
+|publishedFeedback|[educationFeedback](educationfeedback.md)|Копия свойства обратной связи, которая создается при выпуске оценки учащемуся.|
 
 ## <a name="relationships"></a>Связи
 
@@ -52,6 +53,7 @@ ms.locfileid: "50153657"
 
 ```json
 {
+  "id": "String (identifier)",
   "feedback": {"@odata.type": "microsoft.graph.educationFeedback"},
   "publishedFeedback": {"@odata.type": "microsoft.graph.educationFeedback"}
 }

@@ -4,13 +4,13 @@ description: 'Получите governanceRoleAssignmentRequest. '
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 364021cdf0d9f29f278f316bd6aaee5d6ff0f2d3
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+author: japere
+ms.openlocfilehash: 28112d23ac613cc3694b4105dc0d5300c7e180c8
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60934592"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510480"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>Get governanceRoleAssignmentRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "60934592"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 Получите [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
@@ -31,7 +31,7 @@ ms.locfileid: "60934592"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | PrivilegedAccess.Read.AzureResources |
+| Приложение | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -39,7 +39,7 @@ ms.locfileid: "60934592"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | PrivilegedAccess.Read.AzureAD |
+| Приложение | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
@@ -47,11 +47,11 @@ ms.locfileid: "60934592"
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | PrivilegedAccess.Read.AzureADGroup |
+| Приложение | PrivilegedAccess.Read.AzureADGroup |
 
 Помимо области разрешений, для этого требуется запросчик 
 *   иметь хотя бы одно назначение роли на ресурсе; или
-*   является предметом [управленияRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
+*   является объектом [управленияRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -70,7 +70,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа и объект `200 OK` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` ответа и объект [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 Получить запрос на назначение ролей

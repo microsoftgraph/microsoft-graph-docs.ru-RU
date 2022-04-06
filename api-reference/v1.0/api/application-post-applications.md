@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 8ca22561b2e41d43493cf5e697c1054ac1a9c517
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: dd405f5b0cbc5b953c6f32efcf0860df095fe15d
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132558"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671372"
 ---
 # <a name="create-application"></a>Создание приложения
 
@@ -27,9 +27,9 @@ ms.locfileid: "62132558"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All |
-|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

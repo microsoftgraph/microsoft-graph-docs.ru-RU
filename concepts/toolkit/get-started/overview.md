@@ -2,26 +2,26 @@
 title: Начало работы с microsoft Graph набор средств
 description: Начало работы с помощью microsoft Graph набор средств в приложении.
 ms.localizationpriority: medium
-author: elisenyang
-ms.openlocfilehash: 00e4bdf2f7c4561ea67ed1917edbe2290df2950d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 09e69c51e4cbb693f9923b793a80b687c0afbddc
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032078"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477680"
 ---
 # <a name="getting-started-with-the-microsoft-graph-toolkit"></a>Начало работы с microsoft Graph набор средств
 
-Компоненты microsoft Graph набор средств легко можно добавить в ваше веб-приложение, SharePoint веб-часть или Microsoft Teams вкладки. Компоненты основаны на веб-стандартах и могут использоваться как в обычных проектах JavaScript, так и в популярных веб-инфраструктурах, таких как Reach, Angular, Vue.js и других.
+Компоненты microsoft Graph набор средств легко можно добавить в ваше веб-приложение, SharePoint веб-часть или Microsoft Teams вкладки. Эти компоненты основаны на веб-стандартах и могут использоваться как в обычных проектах JavaScript, так и в популярных веб-инфраструктурах, таких как Reach, Angular, Vue.js и других.
 
 Вы можете просмотреть это короткое видео, чтобы узнать, как быстро и легко начать работу с набор средств.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oZCGb2MMxa0]
 
-Пошаговую инструкцию см. в руководстве [Get started with Microsoft Graph набор средств.](/learn/modules/msgraph-toolkit-intro/) 
+Пошаговая инструкция см. в руководстве [Get started with Microsoft Graph набор средств](/learn/modules/msgraph-toolkit-intro/). 
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>Настройка клиента Microsoft 365
-Чтобы развиваться с помощью набор средств, вам необходим доступ к Microsoft 365 клиента. Если у вас его нет, вы можете получить бесплатную подписку Microsoft 365 разработчика, присоединившись [к программе Microsoft 365 разработчика](https://developer.microsoft.com/microsoft-365/dev-program). Сведения о настройке подписки см. в материале [Настройка подписки Microsoft 365 разработчика.](/office/developer-program/microsoft-365-developer-program-get-started)
+Чтобы развиваться с помощью набор средств, вам необходим доступ к Microsoft 365 клиента. Если у вас его нет, вы можете получить бесплатную подписку Microsoft 365 разработчика, присоединившись [к программе Microsoft 365 разработчика](https://developer.microsoft.com/microsoft-365/dev-program). Сведения о настройке подписки см. в материале [Настройка подписки Microsoft 365 разработчика](/office/developer-program/microsoft-365-developer-program-get-started).
 
 ## <a name="set-up-your-development-environment"></a>Настройка среды разработки
 Для разработки набор средств текстового редактора или IDE. Вы можете использовать редактор или IDE по вашему выбору или установить и [использовать Visual Studio Code](https://code.visualstudio.com/download) бесплатно. Вам также понадобится современный веб-браузер, Microsoft Edge, Google Chrome или Firefox. Вам также понадобится версия LTS Node.js, которую можно установить с [nodejs.org](https://nodejs.org).
@@ -63,51 +63,51 @@ Microsoft Graph набор средств состоит из нескольки
 
 <b>@microsoft/mgt-element</b>
 
-Основной пакет содержит только базовые классы, используемые для создания `@microsoft/mgt-element` компонентов и поставщиков. Этот пакет предоставляет все необходимые классы и интерфейсы, необходимые для создания собственных компонентов, и экспортирует [интерфейс IProvider и класс SimpleProvider](../providers/custom.md) для создания настраиваемого поставщика.
+Основной `@microsoft/mgt-element` пакет содержит только базовые классы, используемые для создания компонентов и поставщиков. Этот пакет предоставляет все необходимые классы и интерфейсы, необходимые для создания собственных компонентов, и экспортирует [интерфейс IProvider и класс SimpleProvider](../providers/custom.md) для создания настраиваемого поставщика.
 
 <b>@microsoft/mgt-components</b>
 
-Пакет содержит все подключенные Graph Майкрософт `@microsoft/mgt-components` веб-компоненты, такие как , и `Person` `PeoplePicker` более. 
+Пакет `@microsoft/mgt-components` содержит все подключенные Graph microsoft, `Person`например , и `PeoplePicker`другие. 
 
 **Поставщики**
 
 Поставщики доступны через один пакет и могут быть установлены по мере необходимости. Доступны следующие пакеты поставщиков:
 
-- <b>@micosoft/mgt-msal-provider</b>
+- <b>@microsoft/mgt-msal-provider</b>
 
-    [`@micosoft/mgt-msal-provider`](../providers/msal.md) содержит `MsalProvider` и `mgt-msal-provider` компонент. Поставщик MSAL использует msal.js для проверки подлинности в веб-приложениях и прогрессивных веб-приложениях (PWAs).
+    [`@microsoft/mgt-msal-provider`](../providers/msal.md) содержит и `MsalProvider` компонент `mgt-msal-provider` . Поставщик MSAL использует msal.js для проверки подлинности в веб-приложениях и прогрессивных веб-приложениях (PWAs).
 
-- <b>@micosoft/mgt-msal2-provider</b>
+- <b>@microsoft/mgt-msal2-provider</b>
 
-    [`@micosoft/mgt-msal2-provider`](../providers/msal2.md) содержит `Msal2Provider` и `mgt-msal2-provider` компонент. Поставщик MSAL2 использует msal-browser для проверки подлинности в веб-приложениях и PWAs.
+    [`@microsoft/mgt-msal2-provider`](../providers/msal2.md) содержит и `Msal2Provider` компонент `mgt-msal2-provider` . Поставщик MSAL2 использует msal-browser для проверки подлинности в веб-приложениях и PWAs.
 
 -  <b>@microsoft/mgt-teams-provider</b>
 
-    [`@microsoft/mgt-teams-provider`](../providers/teams.md) содержит `TeamsProvider` и `mgt-teams-provider` компонент. Поставщик Microsoft Teams включает проверку подлинности в Microsoft Teams вкладке.
+    [`@microsoft/mgt-teams-provider`](../providers/teams.md) содержит и `TeamsProvider` компонент `mgt-teams-provider` . Поставщик Microsoft Teams включает проверку подлинности в Microsoft Teams вкладке.
 
 -  <b>@microsoft/mgt-teams-msal2-provider</b>
 
-    [`@microsoft/mgt-teams-msal2-provider`](../providers/teams.md) содержит `TeamsMsal2Provider` и `mgt-teams-msal2-provider` компонент. Поставщик Microsoft Teams MSAL2 включает проверку подлинности в Microsoft Teams вкладке.
+    [`@microsoft/mgt-teams-msal2-provider`](../providers/teams.md) содержит и `TeamsMsal2Provider` компонент `mgt-teams-msal2-provider` . Поставщик Microsoft Teams MSAL2 включает проверку подлинности в Microsoft Teams вкладке.
 
 - <b>@microsoft/mgt-sharepoint-provider</b>
 
-    [`@microsoft/mgt-sharepoint-provider`](../providers/sharepoint.md)содержит `SharePointProvider` для проверки подлинности в SharePoint среде. 
+    [`@microsoft/mgt-sharepoint-provider`](../providers/sharepoint.md)содержит для `SharePointProvider` проверки подлинности в SharePoint среде. 
 
 - <b>@microsoft/mgt-proxy-provider</b>
 
-    [`@microsoft/mgt-proxy-provider`](../providers/proxy.md)содержит `ProxyProvider` приложение, которое Graph через службу backend. 
+    [`@microsoft/mgt-proxy-provider`](../providers/proxy.md)содержит приложение`ProxyProvider`, которое Graph через службу backend. 
 
 <b>@microsoft/mgt</b>
 
-Это основной пакет, который включает все вышеперечисленные пакеты и повторно экспортирует их, чтобы они были доступны с помощью одного `@microsoft/mgt` пакета, который можно установить. 
+Это `@microsoft/mgt` основной пакет, который включает все вышеперечисленные пакеты и повторно экспортирует их, чтобы они были доступны с помощью одного пакета, который можно установить. 
 
 <b>@microsoft/mgt-react</b>
 
-Пакет содержит все автоматически созданные [`@microsoft/mgt-react`](./mgt-react.md) React и принимает зависимость от `@microsoft/mgt` пакета.
+Пакет [`@microsoft/mgt-react`](./mgt-react.md) содержит все автоматически созданные React и принимает зависимость от `@microsoft/mgt` пакета.
 
 <b>@microsoft/mgt-spfx</b>
 
-Пакет содержит библиотеку SharePoint Framework, которая необходима для использования [`@microsoft/mgt-spfx`](./mgt-spfx.md) Microsoft Graph набор средств в SharePoint Framework решениях.
+Пакет [`@microsoft/mgt-spfx`](./mgt-spfx.md) содержит библиотеку SharePoint Framework, которая необходима для использования Microsoft Graph набор средств в SharePoint Framework решениях.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Теперь вы готовы начать разработку с помощью microsoft Graph набор средств! Для начала работы доступны следующие руководства:

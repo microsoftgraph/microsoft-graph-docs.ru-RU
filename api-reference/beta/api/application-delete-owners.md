@@ -2,15 +2,15 @@
 title: Удаление владельца
 description: Удаление владельца приложения.
 author: sureshja
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 81adcd2db83b1ab4173bbf344025e7ac68ef4a50
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: eb822cb2d857731f2507edf7a00fb2e8dea0a634
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786848"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669363"
 ---
 # <a name="remove-owner"></a>Удаление владельца
 
@@ -18,16 +18,16 @@ ms.locfileid: "52786848"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление владельца из [приложения.](../resources/application.md)
+Удалите владельца из [приложения](../resources/application.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ DELETE /applications/{id}/owners/{id}/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание|
 |:---- |:---------- |
-| Авторизация | Bearer {токен}. Обязательный.  |
+| Авторизация | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса укажи идентификатор объекта каталога, назначенного в качестве владельца.

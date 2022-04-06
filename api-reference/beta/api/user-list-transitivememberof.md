@@ -2,15 +2,15 @@
 title: Перечисление user transitive memberOf
 description: Получите группы, роли каталогов и административные единицы, в которые входит пользователь. Этот запрос API является транзитным и также возвращает все группы, вложенные пользователем.
 ms.localizationpriority: medium
-author: jpettere
+author: Jordanndahl
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1e62c19a93cde4a7e2aa3e0500880a89f2c5a444
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ab79028a05cd5765db414d4164061248a5597049
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118012"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510360"
 ---
 # <a name="list-user-transitive-memberof"></a>Перечисление user transitive memberOf
 
@@ -26,7 +26,7 @@ ms.locfileid: "62118012"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+| Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -242,7 +242,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-filter-and-odata-cast-to-get-transitive-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 5. Использование $filter и OData для получения переходного членства в группах с именем отображения, которое начинается с "a", включая количество возвращенных объектов
+### <a name="example-5-use-filter-and-odata-cast-to-get-transitive-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 5. Использование $filter и OData для получения переходного членства в группах с отображаемым именем, которое начинается с "a", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 
@@ -250,7 +250,7 @@ Content-type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_a_count"
+  "name": "list_users_transitivememberof_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')

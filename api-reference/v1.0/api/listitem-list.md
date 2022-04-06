@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-ms.date: 09/11/2017
 title: Получение элементов из списка SharePoint
 ms.localizationpriority: high
 ms.prod: sharepoint
 description: Получение коллекции элементов в списке.
 doc_type: apiPageType
-ms.openlocfilehash: 08ebf4b7aa245dc4b4f3ceeb80d4b48f3a76d0aa
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 633dd974e41b78b936cf05e808040532d27d975d
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126362"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63559923"
 ---
 # <a name="enumerate-items-in-a-list"></a>Перечисление элементов списка
 
@@ -40,9 +39,25 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
 
+## <a name="request-headers"></a>Заголовки запросов
+
+| Имя      |Описание|
+|:----------|:----------|
+| Авторизация  | Носитель {code}. Обязательно.|
+
+## <a name="request-body"></a>Текст запроса
+
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик 
+
+В случае успеха этот метод возвращает код отклика `200 OK` и совокупность объектов [listItem][item] в тексте отклика. 
+
 ## <a name="example"></a>Пример
 
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,7 +93,9 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 ---
 
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true } -->
 

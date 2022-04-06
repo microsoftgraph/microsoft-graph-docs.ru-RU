@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a507b821cd923cb268c3be98f3239474b1fdd900
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 9b4e7a0037ee1045a9caf739f246a10864e69dc4
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368363"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629933"
 ---
 # <a name="list-aospdeviceownercertificateprofilebases"></a>Список aospDeviceOwnerCertificateProfileBases
 
@@ -28,7 +28,7 @@ ms.locfileid: "63368363"
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1373
+Content-Length: 1833
 
 {
   "value": [
@@ -102,7 +102,19 @@ Content-Length: 1373
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
-      "version": 7
+      "version": 7,
+      "renewalThresholdPercentage": 10,
+      "subjectNameFormat": "commonNameIncludingEmail",
+      "certificateValidityPeriodValue": 14,
+      "certificateValidityPeriodScale": "months",
+      "extendedKeyUsages": [
+        {
+          "@odata.type": "microsoft.graph.extendedKeyUsage",
+          "name": "Name value",
+          "objectIdentifier": "Object Identifier value"
+        }
+      ],
+      "subjectAlternativeNameType": "emailAddress"
     }
   ]
 }

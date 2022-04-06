@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: 2e1bd0c6d5dacf0323570360d7a0050777408435
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5c14868f94816fbc79ab71100a9d7d3fbcb86b05
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117458"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670945"
 ---
 # <a name="delete-approleassignment"></a>Удаление объекта AppRoleAssignment
 
 Пространство имен: microsoft.graph
 
-Удаляет [appRoleAssignment,](../resources/approleassignment.md) предоставленную группе.
+Удаляет [appRoleAssignment](../resources/approleassignment.md) , предоставленную группе.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,7 +24,7 @@ ms.locfileid: "62117458"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | AppRoleAssignment.ReadWrite.All |
 
@@ -37,7 +37,7 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 ```
 
 > [!NOTE]
-> В качестве наилучшей практики рекомендуется удалять назначения ролей приложений с помощью метода [Delete appRoleAssignedTo,](serviceprincipal-delete-approleassignedto.md) который  удаляется с помощью **отношения appRoleAssignedTo** директора службы ресурсов, а не этого метода.
+> В качестве наилучшей практики рекомендуется удалять назначения ролей приложений с помощью метода [Delete appRoleAssignedTo](serviceprincipal-delete-approleassignedto.md), который удаляется с помощью **отношения appRoleAssignedTo** директора службы  ресурсов, а не этого метода.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -45,7 +45,7 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

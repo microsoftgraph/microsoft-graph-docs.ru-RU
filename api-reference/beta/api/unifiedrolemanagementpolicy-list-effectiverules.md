@@ -1,23 +1,23 @@
 ---
 title: Список effectiveRules
 description: Получите ресурсы unifiedRoleManagementPolicyRule из свойства эффективной навигацииRules.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ba4fd2025a7e56388b72400866c25d07713b82da
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 97bedd15a81c495590fe48359ef54c060b12c8b3
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132657"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510578"
 ---
 # <a name="list-effectiverules"></a>Список effectiveRules
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите ресурсы unifiedRoleManagementPolicyRule из свойства эффективной навигацииRules.
+Получите ресурсы unifiedRoleManagementPolicyRule из свойства эффективной навигацииRules. Чтобы получить правила политики, применяемой к Azure RBAC, используйте [API PIM REST Azure для политик управления ролью](/rest/api/authorization/role-management-policies/list-for-scope).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,12 +46,12 @@ GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/effectiveRu
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) в тексте ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код ответа и коллекцию объектов [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

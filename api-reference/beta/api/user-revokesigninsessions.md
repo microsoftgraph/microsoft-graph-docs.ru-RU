@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: de0c8be20775431a53fd6b7cdd877eed27020913
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 50cbd3a7b85817b2591ad927fae91549a1a0a55f
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341036"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671890"
 ---
 # <a name="user-revokesigninsessions"></a>пользователь: revokeSignInSessions
 
@@ -31,7 +31,7 @@ ms.locfileid: "62341036"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | User.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -53,19 +53,19 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`.
+При успешном выполнении этот метод возвращает код отклика `200 OK`.
 
 >[!NOTE]
->У этого API есть [известная проблема](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code). Он возвращает другой код ответа HTTP.
+>У этого API есть [известная проблема](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-http-code). Он возвращает другой код ответа HTTP.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "user_revokesigninsessionss"
 }-->
 ```http
@@ -98,13 +98,19 @@ POST https://graph.microsoft.com/beta/me/revokeSignInSessions
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Edm.Boolean",
+    "value": true
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

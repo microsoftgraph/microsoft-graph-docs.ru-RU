@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bd16af6333fb505a6b3e00ddaa7eee730438ca95
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: befe4c1eb75471da1a952c996f1547d4fb684d55
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487998"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64628726"
 ---
 # <a name="list-depmacosenrollmentprofiles"></a>Список depMacOSEnrollmentProfiles
 
@@ -20,7 +20,7 @@ ms.locfileid: "60487998"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [depMacOSEnrollmentProfile.](../resources/intune-enrollment-depmacosenrollmentprofile.md)
+Список свойств и связей объектов [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,14 +43,14 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) в тексте ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код ответа и коллекцию объектов [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1522
+Content-Length: 1566
 
 {
   "value": [
@@ -104,11 +104,13 @@ Content-Length: 1522
       "zoomDisabled": true,
       "iCloudStorageDisabled": true,
       "chooseYourLockScreenDisabled": true,
-      "accessibilityScreenDisabled": true
+      "accessibilityScreenDisabled": true,
+      "autoUnlockWithWatchDisabled": true
     }
   ]
 }
 ```
+
 
 
 

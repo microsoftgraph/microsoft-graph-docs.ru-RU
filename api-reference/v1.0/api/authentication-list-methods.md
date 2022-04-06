@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ca231fb1c794660171aeed59a67b39152318767d
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 8814d4bcb6b5ebee28cf19cbdcbe6b4f5889bfc0
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224941"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510424"
 ---
 # <a name="list-methods"></a>Методы List
 
 Пространство имен: microsoft.graph
 
-Извлечение списка объектов метода [проверки подлинности.](../resources/authenticationmethod.md) Этот API возвращает только методы проверки подлинности, поддерживаемые в этой версии API. Обзор [API методов проверки подлинности Azure AD](../resources/authenticationmethods-overview.md) см. в списке поддерживаемых в настоящее время методов.
+Извлечение списка [объектов authenticationMethod](../resources/authenticationmethod.md) . Этот API возвращает только методы проверки подлинности, поддерживаемые в этой версии API. Обзор [API методов проверки подлинности Azure AD](../resources/authenticationmethods-overview.md) см. в списке поддерживаемых в настоящее время методов.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -36,9 +36,9 @@ ms.locfileid: "61224941"
 |:---------------------------------------|:-------------------------|:-----------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих ролей [Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 * Глобальный администратор
 * Глобальный читатель
 * привилегированный администратор проверки подлинности;
@@ -53,7 +53,7 @@ GET /me/authentication/methods
 GET /users/{id | userPrincipalName}/authentication/methods
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод не поддерживает необязательные параметры запроса для настройки ответа.
 
@@ -61,7 +61,7 @@ GET /users/{id | userPrincipalName}/authentication/methods
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -69,7 +69,7 @@ GET /users/{id | userPrincipalName}/authentication/methods
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [authenticationMethod](../resources/authenticationmethod.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию объектов [authenticationMethod](../resources/authenticationmethod.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/me/authentication/methods
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

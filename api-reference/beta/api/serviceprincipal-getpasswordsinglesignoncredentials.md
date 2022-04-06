@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5362978d805c2459fd8f3758069f495c6588d07f
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 9229f3e464fe5b9fd5e3d505c0b6369447f23035
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62347506"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671876"
 ---
 # <a name="serviceprincipal-getpasswordsinglesignoncredentials"></a>servicePrincipal: getPasswordSingleSignOnCredentials
 
@@ -26,9 +26,9 @@ ms.locfileid: "62347506"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Application.ReadWrite.OwnedBy и Directory.Read.All, Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All |
+| Для приложений                            | Application.ReadWrite.OwnedBy и Directory.Read.All, Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All |
 
 > [!NOTE]
 > Пользователи могут создавать учетные данные для себя. Владельцы и администраторы служб со следующими ролями могут создавать учетные данные для любого пользователя или группы: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. Дополнительные дополнительные функции см. в [каталоге ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
@@ -54,7 +54,7 @@ POST /servicePrincipals/{id}/getPasswordSingleSignOnCredentials
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String|ID пользователя или группы, к которой принадлежит этот набор учетных данных.|
+|id|Строка|ID пользователя или группы, к которой принадлежит этот набор учетных данных.|
 
 ## <a name="response"></a>Отклик
 
@@ -108,7 +108,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
