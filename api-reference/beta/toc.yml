@@ -300,7 +300,7 @@ items:
             href: resources/calendar.md
             displayName: 'Outlook, Outlook calendar'
             items:
-              - name: Создание
+              - name: Create
                 href: api/user-post-calendars.md
               - name: Создание группы календарей
                 href: api/user-post-calendargroups.md
@@ -410,7 +410,7 @@ items:
                 href: api/user-list-memberof.md
               - name: Список транзитных членов
                 href: api/user-list-transitivememberof.md
-          - name: Сведения о элементах
+          - name: Аналитика
             items:
               - name: Сведения о элементах
                 items:
@@ -422,14 +422,22 @@ items:
                     href: api/insights-list-trending.md
                   - name: Список "Использованные"
                     href: api/insights-list-used.md
-              - name: Управление оргией (предварительный просмотр)
+              - name: Управление организацией (предварительный просмотр)
                 items:
                   - name: Аналитика параметров
                     href: resources/insightssettings.md
-                  - name: Список
-                    href: api/organizationsettings-list-iteminsights.md
-                  - name: Обновление
-                    href: api/insightssettings-update.md
+                  - name: Параметры для анализа элементов
+                    items:
+                      - name: Список
+                        href: api/organizationsettings-list-iteminsights.md
+                      - name: Обновление
+                        href: api/insightssettings-update.md
+                  - name: Параметры для понимания людей
+                    items:
+                      - name: Список
+                        href: api/organizationsettings-list-peopleinsights.md
+                      - name: Обновление
+                        href: api/insightssettings-update.md
               - name: Управление пользователем (предварительный просмотр)
                 items:
                   - name: Параметры пользовательского анализа
@@ -462,7 +470,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Примечания
+          - name: Заметки
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -518,7 +526,7 @@ items:
                 href: resources/person.md
               - name: Список людей
                 href: api/user-list-people.md
-              - name: Управление org для понимания людей (предварительный просмотр)
+              - name: Параметры для понимания людей
                 items:
                   - name: Аналитика параметров
                     href: resources/insightssettings.md
@@ -902,10 +910,8 @@ items:
               - name: Сертификаты и секреты
                 items:
                   - name: Добавление пароля
-                    displayName: Add secrets
                     href: api/application-addpassword.md
                   - name: Удаление пароля
-                    displayName: Remove secrets
                     href: api/application-removepassword.md
                   - name: Клавиша прибавления
                     href: api/application-addkey.md
@@ -1095,10 +1101,8 @@ items:
               - name: Сертификаты и секреты
                 items:
                   - name: Добавление пароля
-                    displayName: Add secrets
                     href: api/serviceprincipal-addpassword.md
                   - name: Удаление пароля
-                    displayName: Remove secrets
                     href: api/serviceprincipal-removepassword.md
                   - name: Клавиша прибавления
                     href: api/serviceprincipal-addkey.md
@@ -1569,9 +1573,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Получение
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Сеанс
                 items:
-                  - name: Session
+                  - name: Сеанс
                     href: resources/callrecords-session.md
                   - name: List
                     href: api/callrecords-session-list.md
@@ -1811,8 +1815,6 @@ items:
                     href: api/ediscovery-sourcecollection-list-addtoreviewsetoperation.md
                   - name: Список операции последней оценки
                     href: api/ediscovery-sourcecollection-list-lastestimatestatisticsoperation.md
-                  - name: Очистка данных
-                    href: api/ediscovery-sourcecollection-purgedata.md
               - name: Tag
                 href: resources/ediscovery-tag.md
                 items:
@@ -2028,7 +2030,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: Прервать
                     href: api/printjob-abort.md
-                  - name: Redirect
+                  - name: Перенаправление
                     href: api/printjob-redirect.md
               - name: Операция печати
                 href: resources/printoperation.md
@@ -3690,6 +3692,8 @@ items:
                         href: api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md
                       - name: Действие unassignResourceAccountFromDevice
                         href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md
+                  - name: Windows состояния восстановления устройств автопилота
+                    href: resources/intune-enrollment-windowsautopilotdeviceremediationstate.md
                   - name: Тип устройства с Windows Autopilot
                     href: resources/intune-enrollment-windowsautopilotdevicetype.md
                   - name: Полное состояние назначения профиля Windows AutoPilot
@@ -4486,19 +4490,6 @@ items:
                         href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-update.md
-                  - name: Корпоративная конфигурация владельцев устройств Aosp Wi-Fi
-                    href: resources/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration.md
-                    items:
-                      - name: Список
-                        href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-list.md
-                      - name: Получение
-                        href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-get.md
-                      - name: Создание
-                        href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-create.md
-                      - name: Удалить
-                        href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-delete.md
-                      - name: Обновление
-                        href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-update.md
                   - name: Профиль сертификата владельца Aosp-устройства PKCS
                     href: resources/intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md
                     items:
@@ -4512,19 +4503,6 @@ items:
                         href: api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-update.md
-                  - name: Профиль сертификата владельца устройства Aosp SCEP
-                    href: resources/intune-deviceconfig-aospdeviceownerscepcertificateprofile.md
-                    items:
-                      - name: Список
-                        href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-list.md
-                      - name: Получение
-                        href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-get.md
-                      - name: Создание
-                        href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-create.md
-                      - name: Удалить
-                        href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-delete.md
-                      - name: Обновление
-                        href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-update.md
                   - name: Владельцу Aosp-устройства доверен корневой сертификат
                     href: resources/intune-deviceconfig-aospdeviceownertrustedrootcertificate.md
                     items:
@@ -4538,21 +4516,6 @@ items:
                         href: api/intune-deviceconfig-aospdeviceownertrustedrootcertificate-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-aospdeviceownertrustedrootcertificate-update.md
-                  - name: Конфигурация владельца Wi-Fi Aosp
-                    href: resources/intune-deviceconfig-aospdeviceownerwificonfiguration.md
-                    items:
-                      - name: Список
-                        href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-list.md
-                      - name: Получение
-                        href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-get.md
-                      - name: Создание
-                        href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-create.md
-                      - name: Удалить
-                        href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-delete.md
-                      - name: Обновление
-                        href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-update.md
-                  - name: Владелец устройства Aosp Wi-Fi типа безопасности
-                    href: resources/intune-deviceconfig-aospdeviceownerwifisecuritytype.md
                   - name: Тип управления установкой приложения
                     href: resources/intune-deviceconfig-appinstallcontroltype.md
                   - name: Элемент списка приложений
@@ -5882,8 +5845,6 @@ items:
                     href: resources/intune-deviceconfig-keyvaluepair.md
                   - name: Режим киоска управляемый ПИН-код домашнего экрана
                     href: resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md
-                  - name: Тип режима киоска
-                    href: resources/intune-deviceconfig-kioskmodetype.md
                   - name: Уровень проверки подлинности LAN Manager
                     href: resources/intune-deviceconfig-lanmanagerauthenticationlevel.md
                   - name: 'Локальные параметры безопасности: режим отображения запроса для повышения прав администратора'
@@ -7243,23 +7204,6 @@ items:
                         href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-update.md
-                  - name: Windows конфигурации проводной сети
-                    href: resources/intune-deviceconfig-windowswirednetworkconfiguration.md
-                    items:
-                      - name: Список
-                        href: api/intune-deviceconfig-windowswirednetworkconfiguration-list.md
-                      - name: Получение
-                        href: api/intune-deviceconfig-windowswirednetworkconfiguration-get.md
-                      - name: Создание
-                        href: api/intune-deviceconfig-windowswirednetworkconfiguration-create.md
-                      - name: Удалить
-                        href: api/intune-deviceconfig-windowswirednetworkconfiguration-delete.md
-                      - name: Обновление
-                        href: api/intune-deviceconfig-windowswirednetworkconfiguration-update.md
-                  - name: Метод проверки подлинности проводной сети
-                    href: resources/intune-deviceconfig-wirednetworkauthenticationmethod.md
-                  - name: Тип проверки подлинности проводной сети
-                    href: resources/intune-deviceconfig-wirednetworkauthenticationtype.md
                   - name: Интерфейс проводной сети
                     href: resources/intune-deviceconfig-wirednetworkinterface.md
               - name: Управление устройствами
@@ -8356,17 +8300,6 @@ items:
                         href: api/intune-deviceintent-securitybaselinetemplate-update.md
                   - name: Пользователь общего устройства Apple
                     href: resources/intune-devices-sharedappledeviceuser.md
-                  - name: Tenant attach r b a c
-                    href: resources/intune-devices-tenantattachrbac.md
-                    items:
-                      - name: Получение
-                        href: api/intune-devices-tenantattachrbac-get.md
-                      - name: Обновление
-                        href: api/intune-devices-tenantattachrbac-update.md
-                      - name: включить действие
-                        href: api/intune-devices-tenantattachrbac-enable.md
-                  - name: Tenant attach r b a c state
-                    href: resources/intune-devices-tenantattachrbacstate.md
                   - name: Tuple_2 выполнения type_ i collection_1 операции
                     href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
                   - name: Параметр действия "Обновление учетной записи устройства с Windows"
@@ -9566,7 +9499,7 @@ items:
                   - name: Использование ПИН-кода в Windows Hello для бизнеса
                     href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
               - name: Управление доступом на основе ролей (RBAC)
-                href: /resources/intune-rbac-conceptual.md
+                href: resources/intune-rbac-conceptual.md
                 items:
                   - name: Данные назначенной роли для управления устройствами и приложениями
                     href: resources/intune-rbac-deviceandappmanagementassignedroledetails.md
@@ -9596,7 +9529,7 @@ items:
                         href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                       - name: Обновление
                         href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
-                  - name: Identity
+                  - name: Удостоверение
                     href: resources/intune-rbac-identity.md
                   - name: Набор удостоверений
                     href: resources/intune-rbac-identityset.md
@@ -10212,7 +10145,7 @@ items:
                     href: api/virtualendpoint-list-galleryimages.md
                   - name: Получение
                     href: api/cloudpcgalleryimage-get.md
-              - name: Подключение к сети Cloud PC Azure
+              - name: Локальное подключение облачного КОМПЬЮТЕРА
                 href: resources/cloudpconpremisesconnection.md
                 items:
                   - name: Список
@@ -10569,7 +10502,7 @@ items:
                     href: api/serviceannouncement-list-healthoverviews.md
                   - name: Получить состояние службы
                     href: api/servicehealth-get.md
-              - name: Работоспособность служб проблемы
+              - name: Проблема со здоровьем службы
                 href: resources/servicehealthissue.md
                 items:
                   - name: Проблемы со списком
@@ -11214,74 +11147,15 @@ items:
         items:
           - name: Обзор
             href: resources/azure-ad-overview.md
-          - name: Управление отношениями с клиентами
-            items:
-              - name: Делегированная связь администратора
-                displayName: 'Partner Center, CSP, VAR'
-                items:
-                  - name: Делегированная связь администратора
-                    href: resources/delegatedadminrelationship.md
-                    items:
-                      - name: Создание
-                        href: api/tenantrelationship-post-delegatedadminrelationships.md
-                      - name: Перечисление
-                        href: api/tenantrelationship-list-delegatedadminrelationships.md
-                      - name: Получение
-                        href: api/delegatedadminrelationship-get.md
-                      - name: Обновление
-                        href: api/delegatedadminrelationship-update.md
-                      - name: Delete
-                        href: api/delegatedadminrelationship-delete.md
-                  - name: Делегирование назначений доступа администратора
-                    href: resources/delegatedadminaccessassignment.md
-                    items:
-                      - name: Создание
-                        href: api/delegatedadminrelationship-post-accessassignments.md
-                      - name: Перечисление
-                        href: api/delegatedadminrelationship-list-accessassignments.md
-                      - name: Получение
-                        href: api/delegatedadminaccessassignment-get.md
-                      - name: Обновление
-                        href: api/delegatedadminaccessassignment-update.md
-                      - name: Delete
-                        href: api/delegatedadminaccessassignment-delete.md
-                  - name: Делегирование запросов на отношения администратора
-                    href: resources/delegatedadminrelationshiprequest.md
-                    items:
-                      - name: Создание
-                        href: api/delegatedadminrelationship-post-requests.md
-                      - name: Перечисление
-                        href: api/delegatedadminrelationship-list-requests.md
-                      - name: Получение
-                        href: api/delegatedadminrelationshiprequest-get.md
-                  - name: Делегированная операция отношений администрирования
-                    href: resources/delegatedadminrelationshipoperation.md
-                    items:
-                      - name: Список
-                        href: api/delegatedadminrelationship-list-operations.md
-                      - name: Получение
-                        href: api/delegatedadminrelationshipoperation-get.md
-                  - name: Делегированная клиентка администрирования
-                    href: resources/delegatedadmincustomer.md
-                    items:
-                      - name: Список
-                        href: api/tenantrelationship-list-delegatedadmincustomers.md
-                      - name: Получение
-                        href: api/delegatedadmincustomer-get.md
-                      - name: Сведения об управлении службами
-                        href: resources/delegatedadminservicemanagementdetail.md
-                        items:
-                          - name: List
-                            href: api/delegatedadmincustomer-list-servicemanagementdetails.md
           - name: Управление каталогом
             items:
               - name: Административная единица
                 href: resources/administrativeunit.md
                 items:
                   - name: Список
-                    href: api/directory-list-administrativeunits.md
+                    href: api/administrativeunit-list.md
                   - name: Создание
-                    href: api/directory-post-administrativeunits.md
+                    href: api/administrativeunit-post-administrativeunits.md
                   - name: Получение
                     href: api/administrativeunit-get.md
                   - name: Обновление
@@ -11519,44 +11393,6 @@ items:
                 items:
                   - name: Получить параметры оргии
                     href: api/organizationSettings-get.md
-                  - name: Параметры приложения для Microsoft 365 данных (предварительный просмотр)
-                    items:
-                      - name: Параметры доступа к данным приложения
-                        href: resources/microsoftapplicationdataaccesssettings.md
-                      - name: Список
-                        href: api/organizationsettings-list-microsoftapplicationdataaccess.md
-                      - name: Обновление
-                        href: api/microsoftapplicationdataaccesssettings-update.md
-                  - name: Управление оргией для получения информации о элементах (предварительный просмотр)
-                    items:
-                      - name: Аналитика параметров
-                        href: resources/insightssettings.md
-                      - name: Список
-                        href: api/organizationsettings-list-iteminsights.md
-                      - name: Обновление
-                        href: api/insightssettings-update.md
-                  - name: Управление org для понимания людей (предварительный просмотр)
-                    items:
-                      - name: Аналитика параметров
-                        href: resources/insightssettings.md
-                      - name: Список
-                        href: api/organizationsettings-list-peopleinsights.md
-                      - name: Обновление
-                        href: api/insightssettings-update.md
-                  - name: Настройка карточки профиля (предварительная версия)
-                    items:
-                      - name: Свойство карточки профиля
-                        href: resources/profilecardproperty.md
-                      - name: Список
-                        href: api/organizationsettings-list-profilecardproperties.md
-                      - name: Создание
-                        href: api/organizationsettings-post-profilecardproperties.md
-                      - name: Получение
-                        href: api/profilecardproperty-get.md
-                      - name: Обновление
-                        href: api/profilecardproperty-update.md
-                      - name: Delete
-                        href: api/profilecardproperty-delete.md
               - name: Контакты организации
                 href: resources/orgcontact.md
                 items:
@@ -11641,7 +11477,7 @@ items:
                   - name: Определение роли
                     href: resources/unifiedroledefinition.md
                     items:
-                      - name: Перечисление определений ролей
+                      - name: Определения ролей списка
                         href: api/rbacapplication-list-roledefinitions.md
                       - name: Создание определения роли
                         href: api/rbacapplication-post-roledefinitions.md
@@ -11784,11 +11620,8 @@ items:
                 items:
                   - name: Обзор
                     href: resources/authenticationmethods-overview.md
-                  - name: Методы проверки подлинности
-                    href: resources/authenticationmethod.md
-                    items:
-                      - name: List
-                        href: api/authentication-list-methods.md
+                  - name: Список всех методов
+                    href: api/authentication-list-methods.md
                   - name: Ключи безопасности FIDO2
                     href: resources/fido2authenticationmethod.md
                     items:
@@ -12023,7 +11856,7 @@ items:
                     href: api/oauth2permissiongrant-delete.md
                   - name: Получение дельты
                     href: api/oauth2permissiongrant-delta.md
-              - name: Защита идентификации
+              - name: Защита удостоверений
                 href: resources/identityprotection-overview.md
                 items:
                   - name: Обнаружение рисков
@@ -12593,7 +12426,7 @@ items:
                         href: api/identityuserflowattribute-delete.md
                   - name: Назначение атрибута потока пользователей
                     items:
-                      - name: User
+                      - name: Пользователь
                         href: resources/identityuserflowattributeassignment.md
                       - name: Получение
                         href: api/identityuserflowattributeassignment-get.md
@@ -13013,7 +12846,7 @@ items:
               - name: Служба Privileged Identity Management
                 displayName: PIM v2
                 items:
-                  - name: Служба Privileged Identity Management
+                  - name: Управление привилегированными пользователями
                     href: resources/privilegedidentitymanagement-root.md
                   - name: Azure AD (амортизации)
                     items:
@@ -13449,7 +13282,7 @@ items:
                 href: resources/person.md
               - name: Список людей
                 href: api/user-list-people.md
-              - name: Управление org для понимания людей (предварительный просмотр)
+              - name: Параметры для понимания людей
                 items:
                   - name: Аналитика параметров
                     href: resources/insightssettings.md
@@ -13605,7 +13438,7 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: Примечания
+              - name: Заметки
                 items:
                   - name: Аннотация для человека
                     href: resources/personannotation.md
@@ -13759,7 +13592,7 @@ items:
                 href: api/profilecardproperty-update.md
               - name: Delete
                 href: api/profilecardproperty-delete.md
-          - name: Сведения о элементах
+          - name: Аналитика
             items:
               - name: Сведения о элементах
                 items:
@@ -13771,14 +13604,22 @@ items:
                     href: api/insights-list-trending.md
                   - name: Список "Использованные"
                     href: api/insights-list-used.md
-              - name: Управление оргией (предварительный просмотр)
+              - name: Управление организацией (предварительный просмотр)
                 items:
                   - name: Аналитика параметров
                     href: resources/insightssettings.md
-                  - name: Список
-                    href: api/organizationsettings-list-iteminsights.md
-                  - name: Обновление
-                    href: api/insightssettings-update.md
+                  - name: Параметры для анализа элементов
+                    items:
+                      - name: Список
+                        href: api/organizationsettings-list-iteminsights.md
+                      - name: Обновление
+                        href: api/insightssettings-update.md
+                  - name: Параметры для понимания людей
+                    items:
+                      - name: Список
+                        href: api/organizationsettings-list-peopleinsights.md
+                      - name: Обновление
+                        href: api/insightssettings-update.md
               - name: Управление пользователем (предварительный просмотр)
                 items:
                   - name: Параметры пользовательского анализа
@@ -14078,7 +13919,7 @@ items:
                     href: api/reportroot-getoffice365activeusercounts.md
                   - name: Получение количества пользователей служб
                     href: api/reportroot-getoffice365servicesusercounts.md
-              - name: Приложения Microsoft 365 использования
+              - name: Использование приложений Microsoft 365
                 href: resources/microsoft-365-apps-usage-report.md
                 items:
                   - name: Получение сведений о пользователе
@@ -14087,15 +13928,6 @@ items:
                     href: api/reportroot-getm365appusercounts.md
                   - name: Получить количество пользователей платформы
                     href: api/reportroot-getm365appplatformusercounts.md
-              - name: Использование браузера Microsoft 365
-                href: resources/microsoft-365-browser-usage-report.md
-                items:
-                  - name: Получение сведений о пользователе
-                    href: api/reportroot-getbrowseruserdetail.md
-                  - name: Получение количества пользователей
-                    href: api/reportroot-getbrowserusercounts.md
-                  - name: Получение количества пользователей рассылки
-                    href: api/reportroot-getbrowserdistributionusercounts.md
               - name: Действия в группах Microsoft 365
                 href: resources/office-365-groups-activity-reports.md
                 items:
@@ -14225,7 +14057,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Получение количества действий
                     href: api/reportroot-getyammergroupsactivitycounts.md
-          - name: Microsoft Defender для Office 365 отчеты о безопасности
+          - name: Microsoft Defender для Office 365 отчетов по безопасности
             items:
               - name: Отчеты об имитации атак
                 displayname: Attack simulation and training
@@ -14519,10 +14351,6 @@ items:
                 href: resources/site.md
               - name: Получение сайта
                 href: api/site-get.md
-              - name: Получение списков
-                href: api/list-list.md
-              - name: Список дочерних сайтов
-                href: api/site-list-subsites.md
               - name: Получения аналитических данных сайта
                 href: api/itemanalytics-get.md
               - name: Получение действий по интервалу
@@ -14553,9 +14381,7 @@ items:
                 href: api/site-search.md
               - name: Операции со списком
                 href: api/site-list-operations.md
-              - name: Получение параметров сайта
-                href: api/sitesettings-get.md
-              - name: Разрешения
+              - name: Permissions
                 items:
                   - name: Разрешение
                     href: resources/permission.md
@@ -14858,7 +14684,7 @@ items:
           - name: Команда
             href: resources/team.md
             items:
-              - name: Создание
+              - name: Create
                 href: api/team-post.md
               - name: Создание команды из группы
                 href: api/team-put-teams.md
@@ -15148,7 +14974,7 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: Удаление приложения из чата
                     href: api/chat-delete-installedapps.md
-          - name: Device
+          - name: Устройство
             items:
               - name: Подготовка устройств
                 href: resources/teamworkdevice.md
