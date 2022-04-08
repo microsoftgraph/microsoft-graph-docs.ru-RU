@@ -5,19 +5,19 @@ author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3b5e72ed6b43c94f04a55568023bd44d5fb035b4
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: 6efc3817b107eb3a30d26b3648de0ec5f4594e16
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685378"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704269"
 ---
 # <a name="delete-sharedwithchannelteaminfo"></a>Удаление sharedWithChannelTeamInfo
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление команды [из](../resources/sharedwithchannelteaminfo.md) общего [канала](../resources/channel.md). Эта операция разрешена только для каналов со **значением membershipType**`shared`.
+Удалите [команду](../resources/sharedwithchannelteaminfo.md) из общего [канала](../resources/channel.md). Эта операция разрешена только для каналов **membershipType** со значением `shared`.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "64685378"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) | ChannelMember.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | ChannelMember.ReadWrite.All |
+|Приложение | ChannelMember.ReadWrite.All |
 
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
@@ -38,7 +38,7 @@ ms.locfileid: "64685378"
 }
 -->
 ``` http
-DELETE /teams/{teamsId}/channels/{channelId}/sharedWithTeams/{sharedWithChannelTeamInfoId}
+DELETE /teams/{team-id}/channels/{channel-id}/sharedWithTeams/{shared-with-channel-team-info-id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов

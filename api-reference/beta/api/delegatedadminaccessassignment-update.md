@@ -1,23 +1,23 @@
 ---
-title: Обновление делегированияAdminAccessAssignment
-description: Обновление свойств объекта делегированияAdminAccessAssignment.
+title: Обновление delegatedAdminAccessAssignment
+description: Обновление свойств объекта delegatedAdminAccessAssignment.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 52bee21df148af0bd02bb6a72d52d7c24db3c75f
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 7c0a6e045d64aba40c2db8a323afab273ee7f517
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589883"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704291"
 ---
-# <a name="update-delegatedadminaccessassignment"></a>Обновление делегированияAdminAccessAssignment
+# <a name="update-delegatedadminaccessassignment"></a>Обновление delegatedAdminAccessAssignment
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [делегированияAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) .
+Обновление свойств объекта [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,7 +42,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
-|If-Match|If-match: etag}. Последнее известное значение ETag для **делегированияAdminAccessAssignment** , который необходимо обновить. Обязательно.|
+|If-Match|If-match: etag}. Последнее известное значение ETag для **обновляемого объекта delegatedAdminAccessAssignment** . Обязательно.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -50,21 +50,21 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Идентификаторы административных ролей, которые партнеру назначены в клиенте клиента|
+|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Идентификаторы административных ролей, назначенных партнеру в клиенте клиента.|
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` `202 Accepted` ответа или код ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` ответа `202 Accepted` или код ответа.
 
 ## <a name="response-headers"></a>Заголовки откликов
 |Имя|Описание|
 |:---|:---|
 |Content-Type|application/json.|
-|Расположение|Расположение длительной операции.|
-|Retry-After|Время, после которого можно сделать следующий вызов API в URL-адрес Location, чтобы проверить состояние длительной операции.|
+|Location|Расположение длительной операции.|
+|Retry-After|Время, по истечении которого можно выполнить последующий вызов API к URL-адресу расположения для проверки состояния длительной операции.|
 
-Этот метод обычно возвращает код `202 Accepted` ответа с URL-адресом для длительной операции в загонах  ответов Location, которые можно отслеживать для завершения. Если значения, указанные в вызове, идентичны значениям существующего объекта, API `200 OK` возвращает код ответа с исходным делегированным [объектомAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) в тексте ответа.
+Этот метод обычно возвращает `202 Accepted` код отклика с URL-адресом длительной операции в заголовке ответа **Location** , который можно отслеживать для завершения. Если значения, указанные в вызове, идентичны значениям в существующем объекте, API `200 OK` возвращает код ответа с исходным [объектом delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -98,7 +98,7 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приводится пример ответа, который возвращает `202 Accepted` код ответа вместе с заглавными заглавами **Location** и **Retry-After** .
+Ниже приведен пример ответа, который возвращает `202 Accepted` код ответа вместе с заголовками **Location** и **Retry-After** .
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

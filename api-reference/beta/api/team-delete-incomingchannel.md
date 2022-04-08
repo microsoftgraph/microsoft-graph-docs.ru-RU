@@ -1,23 +1,23 @@
 ---
-title: Удаление incomingChannels
-description: Удалите входящий канал.
+title: Удалить входящие каналы
+description: Удаление входящих каналов.
 author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2d5b71c2b39da4094792f95d2ccf1084d21e5742
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: f7f79688b0fd722136ab6f5f2539ecfdc7685fc2
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685371"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704228"
 ---
-# <a name="remove-incomingchannels"></a>Удаление incomingChannels
+# <a name="remove-incomingchannels"></a>Удалить входящие каналы
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите входящий [канал](../resources/channel.md) ( **канал,** общий для **команды**) из [команды](../resources/team.md).
+Удаление входящего [канала](../resources/channel.md) (**канал** с общим доступом для **команды**) из [команды](../resources/team.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "64685371"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) | Channel.Delete.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Channel.Delete.All |
+|Приложение | Channel.Delete.All |
 
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
@@ -38,7 +38,7 @@ ms.locfileid: "64685371"
 }
 -->
 ``` http
-DELETE /teams/{teamsId}/channels/{channelId}/sharedWithTeams/{sharedWithChannelTeamInfoId}
+DELETE /teams/{team-id}/channels/{channel-id}/incomingChannels/{incoming-channel-id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов

@@ -1,23 +1,23 @@
 ---
-title: Создание делегированияAdminRelationship
-description: Создание нового объекта делегированияAdminRelationship.
+title: Создание delegatedAdminRelationship
+description: Создайте новый объект delegatedAdminRelationship.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 052790ed1b5356d86316364017dab395e2ecc661
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 3db8f5c4073d3ba709e06137c8f5ea02ec78f157
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64590023"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704319"
 ---
-# <a name="create-delegatedadminrelationship"></a>Создание делегированияAdminRelationship
+# <a name="create-delegatedadminrelationship"></a>Создание delegatedAdminRelationship
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [объекта делегированияAdminRelationship](../resources/delegatedadminrelationship.md) .
+Создайте новый [объект delegatedAdminRelationship](../resources/delegatedadminrelationship.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,22 +45,22 @@ POST /tenantRelationships/delegatedAdminRelationships
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляют представление JSON объекта [делегированияAdminRelationship](../resources/delegatedadminrelationship.md) .
+В тексте запроса добавьте представление объекта [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) в формате JSON.
 
-При создании **делегированияAdminRelationship** можно указать следующие свойства.
+При создании объекта **delegatedAdminRelationship** можно указать следующие свойства.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Идентификаторы административных ролей, к которые партнер запрашивает или имеет доступ в клиенте-клиенте. Обязательный аргумент.|
-|клиент|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|Имя отображения и уникальный идентификатор клиента отношения. Необязательное свойство.|
-|displayName|String|Отображает имя отношения, используемого для простоты идентификации. Должна быть уникальной для *всех* делегированных отношений администратора партнера. Обязательный аргумент.|
-|duration|Длительность|Продолжительность отношений в формате ISO 8601. Должно быть значением между инклюзивным `P1D` `P2Y` . Обязательный.|
+|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Идентификаторы административных ролей, к которые партнер запрашивает или имеет доступ в клиенте клиента. Обязательный.|
+|Клиентов|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|Отображаемое имя и уникальный идентификатор клиента связи. Необязательное свойство.|
+|displayName|String|Отображаемое имя связи, используемой для упрощения идентификации. Должен быть уникальным для *всех делегированных* отношений администратора партнера. Обязательный.|
+|duration|Длительность|Длительность связи в формате ISO 8601. Должно быть значением между инклюзивным `P1D` `P2Y` . Обязательный.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `201 Created` ответа и объект [делегированияAdminRelationship](../resources/delegatedadminrelationship.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) в теле отклика.
 
-Ответ содержит **заглавную ссылку Location** , которая содержит URL-адрес созданного делегированного отношения администратора. **Каждый объект делегированияAdminRelationship** **содержит свойство @odata.etag** по RFC2616.
+Ответ содержит заголовок **Location** , содержащий URL-адрес созданной делегированной связи администратора. **Каждый объект delegatedAdminRelationship** **содержит свойство @odata.etag** согласно RFC2616.
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос

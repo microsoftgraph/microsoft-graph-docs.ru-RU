@@ -1,23 +1,23 @@
 ---
-title: ДелегированиеAdminAccessAssignment
-description: Ознакомьтесь с свойствами объекта делегированияAdminAccessAssignment.
+title: Получение delegatedAdminAccessAssignment
+description: Чтение свойств объекта delegatedAdminAccessAssignment.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 3f5fe01c5f68fc70e859c9701f7a61efd6ee2d77
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 41f41940a9802270e02d20aff462e1152a1792f2
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589974"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704195"
 ---
-# <a name="get-delegatedadminaccessassignment"></a>ДелегированиеAdminAccessAssignment
+# <a name="get-delegatedadminaccessassignment"></a>Получение delegatedAdminAccessAssignment
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами объекта [делегированияAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) .
+Чтение свойств объекта [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,7 +39,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметр `$select` запроса OData для получения определенных свойств пользователей, включая те, которые не возвращаются по умолчанию.
+Этот метод поддерживает параметр `$select` запроса OData для получения определенных свойств пользователя, включая те, которые не возвращаются по умолчанию.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -51,7 +51,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 
 ## <a name="response"></a>Отклик
 
-В случае успешного `200 OK` выполнения этот метод возвращает код ответа и объект [делегированияAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

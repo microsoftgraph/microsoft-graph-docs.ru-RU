@@ -1,23 +1,23 @@
 ---
 title: Создание запросов
-description: Создание нового объекта делегированияAdminRelationshipRequest.
+description: Создайте новый объект delegatedAdminRelationshipRequest.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 96760913dc8dc5e4745cd1231f1b69a18a313b6f
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: df8e80f55e51c5b720e791243668fa468c1bcea6
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589886"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704401"
 ---
 # <a name="create-requests"></a>Создание запросов
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [объекта делегированияAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) .
+Создайте новый [объект delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,17 +45,17 @@ POST /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshi
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) .
+В тексте запроса добавьте представление объекта [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) в формате JSON.
 
-При создании **делегированияAdminRelationshipRequest** можно указать следующие свойства.
+При создании **delegatedAdminRelationshipRequest** можно указать следующие свойства.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|action|delegatedAdminRelationshipRequestAction|Действие, выполняемые в делегированной связи администратора. Обязательный аргумент. Возможные значения: `lockForApproval`, `terminate`.|
+|action|delegatedAdminRelationshipRequestAction|Действие, выполняемые с делегированным отношением администратора. Обязательный. Возможные значения: `lockForApproval`, `terminate`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод `201 Created` возвращает код ответа и объект [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) в тексте ответа. Ответ содержит **заглавную ссылку Location** , которая содержит URL-адрес созданного делегированного запроса на отношения администратора.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) в тексте отклика. Ответ содержит заголовок **Location** , который содержит URL-адрес созданного запроса делегированных отношений администратора.
 
 ## <a name="examples"></a>Примеры
 

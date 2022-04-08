@@ -1,31 +1,31 @@
 ---
-title: Перечисление allowedMembers
-description: Получение списка ресурсов conversationMember из свойства навигации allowedMembers.
+title: Список allowedMembers
+description: Получите список ресурсов conversationMember из свойства навигации allowedMembers.
 author: devjha-ms
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: aa8d70f76656f01fdcda6fc29304e0a1ba29a25e
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: 170181e59e2f427d87ce9a55c1c5165121d77262
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685287"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704271"
 ---
-# <a name="list-allowedmembers"></a>Перечисление allowedMembers
+# <a name="list-allowedmembers"></a>Список allowedMembers
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [участников conversationMember,](../resources/conversationmember.md) которые могут получить доступ к общему [каналу](../resources/channel.md).
-Этот метод не возвращает следующие [объекты conversationMember из](../resources/conversationmember.md) [команды](../resources/team.md):
+Получите список тех [conversationMembers](../resources/conversationmember.md), кто может получить доступ к общему [каналу](../resources/channel.md).
+Этот метод не возвращает следующие [conversationMembers](../resources/conversationmember.md) из [команды](../resources/team.md):
 - Пользователи с ролью `Guest`
-- Пользователи, прошедшие внешнюю проверку подлинности в клиенте
+- Пользователи, которые имеют внешнюю проверку подлинности в клиенте
 
 > [!NOTE]
-> Идентификатор членства, возвращаемый сервером, должен рассматриваться как непрозрачные строки. Клиенту не следует пытаться проанализировать или сделать какие-либо предположения об этом идентификаторе.
+> Идентификаторы членства, возвращаемые сервером, должны рассматриваться как непрозрачные строки. Клиент не должен пытаться анализировать или делать какие-либо предположения об этих идентификаторах ресурсов.
 >
-> Результаты членства могут сопоставляться с пользователями из разных клиентов, как указано в ответе, в будущем. Клиент не должен предполагать, что все члены являются только из текущего клиента.
+> В дальнейшем результаты участия могут сопоставляться с пользователями из разных клиентов, как указано в отклике. Клиент не должен предполагать, что все участники относятся только к текущему клиенту.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,7 +46,7 @@ ms.locfileid: "64685287"
 }
 -->
 ``` http
-GET /teams/{teamsId}/channels/{channelId}/sharedWithTeams/{sharedWithChannelTeamInfoId}/allowedMembers
+GET /teams/{team-id}/channels/{channel-id}/sharedWithTeams/{shared-with-channel-team-info-id}/allowedMembers
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов

@@ -1,30 +1,30 @@
 ---
-title: делегирован тип ресурса DelegatedAdminAccessContainer
-description: Контейнер доступа администратора, через который роли каталога назначены с помощью назначения доступа.
+title: Тип ресурса delegatedAdminAccessContainer
+description: Контейнер доступа администратора, с помощью которого роли каталога назначаются с помощью назначения доступа.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: 0f129195430f51ca3102f38db5730eb36ea4d7a8
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 330cbb49f1ad78f327b3d00c9b04b16004de2969
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589995"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704333"
 ---
-# <a name="delegatedadminaccesscontainer-resource-type"></a>делегирован тип ресурса DelegatedAdminAccessContainer
+# <a name="delegatedadminaccesscontainer-resource-type"></a>Тип ресурса delegatedAdminAccessContainer
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Контейнер доступа администратора, через который роли каталога назначены с помощью назначения доступа.
+Контейнер доступа администратора, с помощью которого роли каталога назначаются с помощью назначения доступа.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|accessContainerId|Строка|Идентификатор контейнера доступа (например, группы безопасности). Для контейнеров доступа "SecurityGroup" это должен быть действительный удостоверение группы безопасности Azure AD в клиенте партнера Майкрософт.|
-|accessContainerType|delegatedAdminAccessContainerType|Тип контейнера доступа (например, группы безопасности), который будет назначен одной или несколько ролей через делегированную связь администратора. Возможные значения: `securityGroup`, `unknownFutureValue`.|
+|accessContainerId|String|Идентификатор контейнера доступа (например, группы безопасности). Для контейнеров доступа securityGroup это должен быть допустимый идентификатор группы безопасности Azure AD в клиенте партнера Майкрософт.|
+|accessContainerType|delegatedAdminAccessContainerType|Тип контейнера доступа (например, группа безопасности), который будет назначен одной или нескольким ролям через делегированное отношение администратора. Возможные значения: `securityGroup`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

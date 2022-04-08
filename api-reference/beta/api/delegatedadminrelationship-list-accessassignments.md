@@ -1,23 +1,23 @@
 ---
-title: Списки accessAssignments
-description: Получите список объектов делегированияAdminAccessAssignment и их свойств.
+title: Перечисление объектов accessAssignment
+description: Получение списка объектов delegatedAdminAccessAssignment и их свойств.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: e4e08efc3cb349787d1cb0b98dc9c76af817bc29
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 66ed3acd2ffd153fa3499acaf1a73a711509b768
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589910"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704405"
 ---
-# <a name="list-accessassignments"></a>Списки accessAssignments
+# <a name="list-accessassignments"></a>Перечисление объектов accessAssignment
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [делегированияAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) и их свойств.
+Получение списка объектов [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) и их свойств.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,7 +39,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметры `$select`запросов , `$filter`, `$top`, , `$orderBy`и `$skipToken``$count`[OData](/graph/query-parameters), чтобы помочь настроить ответ.  
+Этот метод поддерживает параметры `$select`запроса , `$filter`, `$top`, `$orderBy`, `$count`и `$skipToken`  [OData](/graph/query-parameters) , чтобы помочь настроить ответ.
 
 `$top` поддерживает до 300 объектов.
 
@@ -53,9 +53,9 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 
 ## <a name="response"></a>Отклик
 
-В случае успешного `200 OK` выполнения этот метод возвращает код ответа и коллекцию объектов [делегированияAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) в тексте ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) в теле отклика.
 
-**Каждый объект delegatedAdminAccessAssignment** содержит **свойство @odata.etag** в соответствии с RFC2616.
+**Каждый объект delegatedAdminAccessAssignment** **содержит свойство @odata.etag** согласно RFC2616.
 
 ## <a name="examples"></a>Примеры
 

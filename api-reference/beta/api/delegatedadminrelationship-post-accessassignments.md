@@ -1,23 +1,23 @@
 ---
 title: Создание accessAssignments
-description: Создание нового объекта делегированияAdminAccessAssignment.
+description: Создайте новый объект delegatedAdminAccessAssignment.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: d59f24dbe8a149110183a1f4d70223e39697aca1
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: f3faa2293b47f7837f016537563dfb8b6be77455
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589891"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704361"
 ---
 # <a name="create-accessassignments"></a>Создание accessAssignments
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [объекта делегированияAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) .
+Создайте новый [объект delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,19 +45,19 @@ POST /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshi
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляют представление JSON объекта [делегированияAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) .
+В тексте запроса добавьте представление объекта [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) в формате JSON.
 
-При создании **делегированияAdminAccessAssignment** можно указать следующие свойства.
+При создании объекта **delegatedAdminAccessAssignment** можно указать следующие свойства.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|accessContainer|[delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|Контейнер доступа, через который участникам назначен доступ. Например, группа безопасности.|
-|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Идентификаторы административных ролей, которые партнеру назначены в клиенте клиента.|
+|accessContainer|[delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|Контейнер доступа, через который членам назначается доступ. Например, группа безопасности.|
+|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Идентификаторы административных ролей, назначенных партнеру в клиенте клиента.|
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного `201 Created` выполнения этот метод возвращает код ответа и объект [делегированияAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) в тексте ответа. **Заглавная** точка расположения в ответе указывает на созданный объект **делегированияAdminAccessAssignment**.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) в теле отклика. **Заголовок Location** в ответе указывает на созданный **объект delegatedAdminAccessAssignment**.
 
 ## <a name="examples"></a>Примеры
 

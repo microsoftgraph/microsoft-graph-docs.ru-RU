@@ -1,23 +1,23 @@
 ---
 title: Операции со списком
-description: Получите список объектов делегированияAdminRelationshipOperation и их свойств.
+description: Получение списка объектов delegatedAdminRelationshipOperation и их свойств.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 8493c222acea2fe481da3fc43c613301a87f9dfb
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 782d4cec7ebf4268330c5b23ca1e2b30f1c66a42
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589907"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704384"
 ---
 # <a name="list-operations"></a>Операции со списком
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [делегированияAdminRelationshipOperation и](../resources/delegatedadminrelationshipoperation.md) их свойств.
+Получение списка объектов [delegatedAdminRelationshipOperation и](../resources/delegatedadminrelationshipoperation.md) их свойств.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,7 +39,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметры `$expand`запросов , `$select`, `$filter`, , `$top`и `$skipToken``$count`[OData](/graph/query-parameters), чтобы помочь настроить ответ.  
+Этот метод поддерживает параметры `$expand`запроса , `$select`, `$filter`, `$top`, `$count`и `$skipToken`  [OData](/graph/query-parameters) , чтобы помочь настроить ответ.
 
 `$top` поддерживает до 300 объектов.
 
@@ -53,7 +53,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы этот метод возвращает код ответа и коллекцию объектов [делегированияAdminRelationshipOperation в](../resources/delegatedadminrelationshipoperation.md) тексте ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов [delegatedAdminRelationshipOperation](../resources/delegatedadminrelationshipoperation.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

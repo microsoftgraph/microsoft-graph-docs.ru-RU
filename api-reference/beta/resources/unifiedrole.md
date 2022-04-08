@@ -1,28 +1,28 @@
 ---
-title: тип ресурсов unifiedRole
-description: Роли каталога, которые могут быть назначены партнеру Майкрософт через делегированную связь администратора.
+title: Тип ресурса unifiedRole
+description: Роли каталога, которые можно назначить партнеру Майкрософт через делегированное отношение администратора.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: 8a5c1cc9d450275642e767f7653eea09bcb103f6
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 2355770dfdae2209d61903e7160527a57d4e5203
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589958"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704419"
 ---
-# <a name="unifiedrole-resource-type"></a>тип ресурсов unifiedRole
+# <a name="unifiedrole-resource-type"></a>Тип ресурса unifiedRole
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Роли каталога, которые могут быть назначены партнеру Майкрософт через делегированную связь администратора.
+Роли каталога, которые можно назначить партнеру Майкрософт через делегированное отношение администратора.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|roleDefinitionId|Строка|Единый ID определения роли роли каталога. Обратитесь [к ресурсу unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) .|
+|roleDefinitionId|String|Идентификатор определения единой роли роли каталога. Обратитесь [к ресурсу unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) .|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

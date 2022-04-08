@@ -1,23 +1,23 @@
 ---
-title: Перечисление incomingChannels
-description: Получение списка входящих каналов.
+title: Список incomingChannels
+description: Получить список входящих каналов.
 author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 50ef42f8aaefed6aa297bddf396f577b8ab89be1
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: 4e664f4460b46c76cb1aeb6ccded0812feadfa66
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685301"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704251"
 ---
-# <a name="list-incomingchannels"></a>Перечисление incomingChannels
+# <a name="list-incomingchannels"></a>Список incomingChannels
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка входящих [каналов](../resources/channel.md) (каналов, совместно используемых [командой](../resources/team.md)).
+Получить список входящих [ каналов](../resources/channel.md) (каналы, к которым был открыт общий доступ для[команды](../resources/team.md)).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,7 +37,7 @@ ms.locfileid: "64685301"
 }
 -->
 ``` http
-GET /teams/{teamsId}/incomingChannels
+GET /teams/{team-id}/incomingChannels
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -53,10 +53,10 @@ GET /teams/{teamsId}/incomingChannels
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию [объектов канала](../resources/channel.md) в тексте отклика. Ответ также включает свойство **@odata.id** , которое можно использовать для доступа к каналу и выполнения других операций в [объекте](../resources/channel.md) канала.
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [ каналов ](../resources/channel.md) в тексте отклика. Ответ также включает свойство **@odata.id**, которое можно использовать для доступа к каналу и запуска других операций с [каналом](../resources/channel.md).
 
 > [!Note]
-> В настоящее время вызов URL-адреса, **возвращаемого свойством @odata.id** , завершается сбоем для общих каналов между клиентами. Эту проблему можно решить, если удалить `/tenants/{tenant-id}` часть из URL-адреса перед вызовом этого API. Дополнительные сведения см[. в разделе "Известные проблемы с microsoft Graph](/graph/known-issues#unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id)".
+> Сейчас при запросе URL-адреса, возвращенного из свойства **@odata.id** найти общие каналы между клиентами, не удается. Эту проблему можно устранить, удалив часть `/tenants/{tenant-id}` из URL-адреса перед вызовом этого API. Подробнее см.[Известные проблемы с Microsoft Graph](/graph/known-issues#unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id).
 
 ## <a name="examples"></a>Примеры
 

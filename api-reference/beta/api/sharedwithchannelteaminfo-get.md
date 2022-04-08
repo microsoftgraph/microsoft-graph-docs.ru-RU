@@ -1,23 +1,23 @@
 ---
-title: Получение sharedWithChannelTeamInfo
-description: Получение общего доступа к команде с каналом.
+title: Получить sharedWithChannelTeamInfo
+description: Подключение команды к общему каналу.
 author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: d2c82aa499e33a51f2b738328e23850f100833bf
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: 091dba268028c36ab5622b0ca800dc78330056d3
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685294"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704326"
 ---
-# <a name="get-sharedwithchannelteaminfo"></a>Получение sharedWithChannelTeamInfo
+# <a name="get-sharedwithchannelteaminfo"></a>Получить sharedWithChannelTeamInfo
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение общего [доступа](../resources/sharedwithchannelteaminfo.md) к команде с [каналом](../resources/channel.md). Эта операция разрешена только для каналов со **значением membershipType**`shared`.
+Получите [команду](../resources/sharedwithchannelteaminfo.md) с общим доступом к[каналу](../resources/channel.md). Эта операция разрешена только для каналов **membershipType** со значением `shared`.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,7 +37,7 @@ ms.locfileid: "64685294"
 }
 -->
 ``` http
-GET /teams/{teamsId}/channels/{channelId}/sharedWithTeams/{sharedWithChannelTeamInfoId}
+GET /teams/{team-id}/channels/{channel-id}/sharedWithTeams/{shared-with-channel-team-info-id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -53,7 +53,7 @@ GET /teams/{teamsId}/channels/{channelId}/sharedWithTeams/{sharedWithChannelTeam
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `200 OK` отклика и общий [объектWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

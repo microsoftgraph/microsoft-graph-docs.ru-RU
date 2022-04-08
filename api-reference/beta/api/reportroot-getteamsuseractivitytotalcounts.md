@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsUserActivityTotalCounts'
-description: Получение количества действий Microsoft Teams по типам. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний. Эти действия выполняются Microsoft Teams или не лицензированными пользователями.
+description: Получение количества действий Microsoft Teams по типам. Действия выполняются Microsoft Teams лицензированными или не лицензированным пользователями.
 ms.localizationpriority: medium
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 57b763dc23b2d301efc32c79d24e0cc0f437c83b
-ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
+ms.openlocfilehash: f0e8aed9e90d3755d9c856b6098aea66af098040
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61044577"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704210"
 ---
 # <a name="reportroot-getteamsuseractivitytotalcounts"></a>reportRoot: getTeamsUserActivityTotalCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "61044577"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение количества действий Microsoft Teams по типам. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний. Эти действия выполняются Microsoft Teams или не лицензированными пользователями.
+Получение количества действий Microsoft Teams по типам. Действия выполняются Microsoft Teams лицензированными или не лицензированным пользователями.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -50,13 +50,13 @@ GET /reports/getTeamsUserActivityTotalCounts(period='D7')
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$format` для настройки отклика. Тип вывода по умолчанию — текст/csv. Однако если требуется указать тип вывода, можно использовать параметр запроса OData, заданный для `$format` text/csv или application/json.
+Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$format` для настройки отклика. Тип выходных данных по умолчанию — text/csv. Однако если вы хотите указать тип выходных данных, можно использовать параметр запроса OData `$format` , для которого задано значение text/csv или application/json.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание               |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="response"></a>Отклик
 
@@ -71,20 +71,27 @@ CSV-файл содержит столбцы со следующими заго�
 - "Report Refresh Date" (Дата обновления отчета);
 - Report Date (Дата отчета);
 - Team Chat Messages (Сообщения в чатах групп);
+- Отправка сообщений
+- Ответные сообщения
 - Private Chat Messages (Сообщения в приватных чатах);
 - Calls (Звонки);
-- Meetings (собрания);
-- Report Period (отчетный период).
+- Meetings (Собрания);
+- Длительность звука
+- Длительность видео
+- Длительность демонстрации экрана
+- Упорядоченные собрания
+- Участие в собраниях
+- Report Period (Отчетный период).
 
 ### <a name="json"></a>JSON
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект JSON в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="csv"></a>CSV
 
-Ниже приводится пример, который выводит CSV.
+Ниже приведен пример вывода CSV-файла.
 
 #### <a name="request"></a>Запрос
 
@@ -123,12 +130,12 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Date,Team Chat Messages,Private Chat Messages,Calls,Meetings,Report Period
+Report Refresh Date,Report Date,Team Chat Messages,Post Messages,Reply Messages,Private Chat Messages,Calls,Meetings,Audio Duration,Video Duration,Screen Share Duration,Meetings Organized,Meetings Attended,Report Period
 ```
 
 ### <a name="json"></a>JSON
 
-Ниже приводится пример, который возвращает JSON.
+Ниже приведен пример, который возвращает JSON.
 
 #### <a name="request"></a>Запрос
 
@@ -146,7 +153,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityTotalCounts(per
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -159,7 +166,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityTotalCounts(per
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 277
+Content-Length: 475
 
 {
   "value": [
@@ -167,9 +174,16 @@ Content-Length: 277
       "reportRefreshDate": "2017-09-01", 
       "reportDate": "2017-09-01", 
       "teamChatMessages": 26, 
+      "postMessages": 3,
+      "replyMessages": 1,
       "privateChatMessages": 17, 
       "calls": 4, 
       "meetings": 0, 
+      "audioDuration": 00:00:00,
+      "videoDuration": 00:00:00,
+      "screenShareDuration": 00:00:00,
+      "meetingsOrganized": 0,
+      "meetingsAttended": 0,
       "reportPeriod": "7"
     }
   ]

@@ -1,23 +1,23 @@
 ---
-title: Запросы списка
-description: Получите список объектов делегированияAdminRelationshipRequest и их свойств.
+title: Перечисление запросов
+description: Получение списка объектов delegatedAdminRelationshipRequest и их свойств.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 4a836751466151d9e0b2b53bfa7c9e689dffbc22
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: db0ebb59bea4fa6b278e15580fda9108768b115a
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589902"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704284"
 ---
-# <a name="list-requests"></a>Запросы списка
+# <a name="list-requests"></a>Перечисление запросов
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [делегированияAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) и их свойств.
+Получение списка объектов [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) и их свойств.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,7 +39,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметры `$expand`запросов , `$select`, `$filter`, , `$top`и `$skipToken``$count`[OData](/graph/query-parameters), чтобы помочь настроить ответ.  
+Этот метод поддерживает параметры `$expand`запроса , `$select`, `$filter`, `$top`, `$count`и `$skipToken`  [OData](/graph/query-parameters) , чтобы помочь настроить ответ.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -51,9 +51,9 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы этот метод возвращает код ответа и коллекцию объектов [делегированияAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) в тексте ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) в теле отклика.
 
-**Каждый объект delegatedAdminRelationshipRequest** **содержит свойство @odata.etag** по RFC2616.
+**Каждый объект delegatedAdminRelationshipRequest** **содержит свойство @odata.etag** согласно RFC2616.
 
 ## <a name="examples"></a>Примеры
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: e5a0d99a1f17c9a61a221b4df0c06a0b4e5f2dac
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 192a2476c6e7f34d202ada3ec46dff334d63b6b6
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239059"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704305"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -37,8 +37,8 @@ ms.locfileid: "62239059"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getTeamsUserActivityUserDetail(period='D7')
-GET /reports/getTeamsUserActivityUserDetail(date=2017-09-01)
+GET /reports/getTeamsUserActivityUserDetail(period='{period_value}')
+GET /reports/getTeamsUserActivityUserDetail(date={date_value})
 ```
 
 ## <a name="function-parameters"></a>Параметры функции
@@ -52,13 +52,19 @@ GET /reports/getTeamsUserActivityUserDetail(date=2017-09-01)
 
 > **Примечание.** В URL-адресе необходимо указать либо период, либо дату.
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$format`, `$top` и `$skipToken` для настройки ответа. Тип вывода по умолчанию — текст/csv. Однако, если требуется указать тип вывода, можно использовать параметр OData $format для параметра text/csv или application/json.
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$format`, `$top` и `$skipToken` для настройки ответа. Тип выходных данных по умолчанию — `text/csv`.. Однако если вы хотите указать тип выходных данных, можно использовать параметр запроса OData `$format` , для которого задано значение или `text/csv` `application/json`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание               |
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
+
+## <a name="request-body"></a>Текст запроса
+
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -71,7 +77,9 @@ URL-адреса для скачивания, для которых выполн
 CSV-файл содержит столбцы со следующими заголовками:
 
 - "Report Refresh Date" (Дата обновления отчета);
-- Пользовательский id
+- Отображаемое имя клиента
+- Отображаемые имена клиентов общего канала
+- Идентификатор пользователя
 - "User Principal Name" (Имя участника-пользователя);
 - Last Activity Date (Дата последнего действия);
 - Is Deleted (Удален);
@@ -81,35 +89,38 @@ CSV-файл содержит столбцы со следующими заго�
 - Private Chat Message Count (Количество сообщений в приватных чатах);
 - Call Count (Количество звонков);
 - Meeting Count (Количество собраний);
-- Организованный подсчет собраний
-- Собрания, на которые было посчитано
-- Ad Hoc Meetings Organized Count
-- Ad Hoc Meetings Attended Count
-- Запланированный разовый подсчет собраний
-- Плановые одновековые собрания, на которые присутствовало количество
-- Запланированные повторные собрания Организованный подсчет
-- Запланированные повторяющиеся собрания, на которые присутствовало количество
-- Продолжительность звука
+- Отправка сообщений
+- Ответные сообщения
+- Срочные сообщения
+- Количество организованных собраний
+- Количество участников собраний
+- Количество упорядоченных нерегламентированных собраний
+- Число участников нерегламентированных собраний
+- Количество запланированных одноразово организованных собраний
+- Число участников запланированных одно разных собраний
+- Количество запланированных повторяющихся собраний
+- Число запланированных повторяющихся собраний
+- Длительность звука
 - Длительность видео
-- Продолжительность обмена экранами
-- Продолжительность звука в секундах
+- Длительность демонстрации экрана
+- Длительность звука в секундах
 - Длительность видео в секундах
-- Продолжительность обмена экрана в секундах
+- Длительность демонстрации экрана в секундах
 - Has Other Action (Есть другое действие);
 - Лицензировано
-- "Report Period" (Отчетный период).
+- Report Period (Отчетный период).
 
 ### <a name="json"></a>JSON
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект JSON в тексте отклика.
 
 Размер страницы по умолчанию для этого запроса — 2000 элементов.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
-### <a name="csv"></a>CSV
+### <a name="example-1-csv-output"></a>Пример 1. Выходные данные CSV
 
-Ниже приводится пример, который выводит CSV.
+Ниже приведен пример вывода CSV-файла.
 
 #### <a name="request"></a>Запрос
 
@@ -150,12 +161,12 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
+Report Refresh Date,Tenant Display Name,Shared Channel Tenant Display Names,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Post Messages,Reply Messages,Urgent Messages,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 
-### <a name="json"></a>JSON
+### <a name="example-2-json-output"></a>Пример 2. Выходные данные JSON
 
-Ниже приводится пример, который возвращает JSON.
+Ниже приведен пример, который возвращает JSON.
 
 #### <a name="request"></a>Запрос
 
@@ -174,7 +185,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityUserDetail(peri
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -193,6 +204,8 @@ Content-Length: 452
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
+      "tenantDisplayName": "Microsoft",
+      "sharedChannelTenantDisplayNames": "SampleTenant",
       "userId": "userId-value", 
       "userPrincipalName": "userPrincipalName-value", 
       "isLicensed": true, 
@@ -205,7 +218,10 @@ Content-Length: 452
       "teamChatMessageCount": 0, 
       "privateChatMessageCount": 49, 
       "callCount": 2, 
-      "meetingCount": 0, 
+      "meetingCount": 0,
+      "postMessages": 10,
+      "replyMessages": 1,
+      "urgentMessages": 1, 
       "meetingsOrganizedCount": 0, 
       "meetingsAttendedCount": 0, 
       "adHocMeetingsOrganizedCount": 0, 

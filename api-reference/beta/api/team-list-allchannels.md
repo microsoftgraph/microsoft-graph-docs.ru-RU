@@ -1,23 +1,23 @@
 ---
-title: Перечисление всех каналов
-description: Получение списка каналов в этой команде или общий доступ к этой команде (входящие каналы).
+title: Список всех каналов
+description: Получите список каналов в этой команде или общих с этой командой (входящие каналы).
 author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4f5f025062089d3550fe8f2212b353757059bd12
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: 77332d239310ab4552d724362c19d770d6f1d471
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685322"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704205"
 ---
-# <a name="list-allchannels"></a>Перечисление всех каналов
+# <a name="list-allchannels"></a>Список всех каналов
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка каналов [в этой](../resources/channel.md) [команде или](../resources/team.md) общий доступ к этой [команде](../resources/team.md) (входящие каналы).
+Получить список [каналов](../resources/channel.md) в этой [команде](../resources/team.md) или общих с этой[командой](../resources/team.md) (входящие каналы).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,7 +38,7 @@ ms.locfileid: "64685322"
 }
 -->
 ``` http
-GET /teams/{teamsId}/allChannels
+GET /teams/{team-id}/allChannels
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -57,10 +57,10 @@ GET /teams/{teamsId}/allChannels
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию [объектов канала](../resources/channel.md) в тексте отклика. Ответ также включает свойство **@odata.id** , которое можно использовать для доступа к каналу и выполнения других операций в [объекте](../resources/channel.md) канала.
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [ каналов ](../resources/channel.md) в тексте отклика. Ответ также включает свойство **@odata.id**, которое можно использовать для доступа к каналу и запуска других операций с [каналом](../resources/channel.md).
 
 > [!Note]
-> В настоящее время вызов URL-адреса, **возвращаемого свойством @odata.id** , завершается сбоем для общих каналов между клиентами. Эту проблему можно решить, если удалить `/tenants/{tenant-id}` часть из URL-адреса перед вызовом этого API. Дополнительные сведения см[. в разделе "Известные проблемы с microsoft Graph](/graph/known-issues#unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id)".
+> Сейчас при запросе URL-адреса, возвращенного из свойства **@odata.id** найти общие каналы между клиентами, не удается. Эту проблему можно устранить, удалив часть `/tenants/{tenant-id}` из URL-адреса перед вызовом этого API. Подробнее см.[Известные проблемы с Microsoft Graph](/graph/known-issues#unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id).
 
 ## <a name="examples"></a>Примеры
 
@@ -107,7 +107,7 @@ Content-Type: application/json
        "@odata.id": "https://graph.microsoft.com/beta/tenants/b3246f44-b4gb-5678-96c6-25b18fa2c910/teams/893075dd-5678-5634-925f-022c42e20265/channels/19:561fbdbbfca848a484gabdf00ce9dbbd@thread.tacv",
       "id": "19:561fbdbbfca848a484gabdf00ce9dbbd@thread.tacv2",
       "createdDateTime": "2020-05-27T19:22:25.692Z",
-      "displayName": "Shared channel from Contosso",
+      "displayName": "Shared channel from Contoso",
       "membershipType": "shared",
       "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910"
     }
@@ -116,7 +116,7 @@ Content-Type: application/json
 ```
 
 
-### <a name="example-2-list-all-shared-channels"></a>Пример 2. Вывод списка всех общих каналов
+### <a name="example-2-list-all-shared-channels"></a>Пример 2. Список всех общих каналов
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -150,7 +150,7 @@ Content-Type: application/json
        "@odata.id": "https://graph.microsoft.com/beta/tenants/b3246f44-b4gb-5678-96c6-25b18fa2c910/teams/893075dd-5678-5634-925f-022c42e20265/channels/19:561fbdbbfca848a484gabdf00ce9dbbd@thread.tacv",
       "id": "19:561fbdbbfca848a484gabdf00ce9dbbd@thread.tacv2",
       "createdDateTime": "2020-05-27T19:22:25.692Z",
-      "displayName": "Shared channel from Contosso",
+      "displayName": "Shared channel from Contoso",
       "membershipType": "shared",
       "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910"
     }

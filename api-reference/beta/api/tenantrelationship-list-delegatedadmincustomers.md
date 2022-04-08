@@ -1,23 +1,23 @@
 ---
-title: Список делегированAdminCustomers
-description: Получите список делегирования объектовAdminCustomer и их свойств.
+title: Перечисление delegatedAdminCustomers
+description: Получение списка объектов delegatedAdminCustomer и их свойств.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 384133bac2deb24e2e9147cb8ffa3d9db482ec6d
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 8d3e20b6f46ddf548f706c93680ac7d6b5b3b6ed
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589782"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704462"
 ---
-# <a name="list-delegatedadmincustomers"></a>Список делегированAdminCustomers
+# <a name="list-delegatedadmincustomers"></a>Перечисление delegatedAdminCustomers
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список делегирования [объектовAdminCustomer](../resources/delegatedadmincustomer.md) и их свойств.
+Получение списка объектов [delegatedAdminCustomer](../resources/delegatedadmincustomer.md) и их свойств.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,7 +39,7 @@ GET /tenantRelationships/delegatedAdminCustomers
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметры `$select`запросов , `$filter`, `$top`, , `$orderBy`и `$skipToken``$count`[OData](/graph/query-parameters), чтобы помочь настроить ответ.  
+Этот метод поддерживает параметры `$select`запроса , `$filter`, `$top`, `$orderBy`, `$count`и `$skipToken`  [OData](/graph/query-parameters) , чтобы помочь настроить ответ.
 
 `$top` поддерживает до 300 объектов.
 
@@ -53,9 +53,9 @@ GET /tenantRelationships/delegatedAdminCustomers
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы этот метод возвращает код отклика и коллекцию объектов [делегированияAdminCustomer](../resources/delegatedadmincustomer.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [delegatedAdminCustomer](../resources/delegatedadmincustomer.md) в теле отклика.
 
-**Каждый объект delegatedAdminCustomer** **содержит свойство @odata.etag** по RFC2616.
+**Каждый объект delegatedAdminCustomer** **содержит свойство @odata.etag** согласно RFC2616.
 
 ## <a name="examples"></a>Примеры
 

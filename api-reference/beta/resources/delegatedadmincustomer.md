@@ -1,42 +1,42 @@
 ---
-title: тип ресурса delegatedAdminCustomer
-description: Представляет клиента, у которого есть делегированная связь администратора с партнером Майкрософт.
+title: Тип ресурса delegatedAdminCustomer
+description: Представляет клиента, который имеет делегированные отношения администратора с партнером Майкрософт.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: b7ac3c580ab566565d99f7c7c542e2bee0f0bcc3
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 4d86eb070a72102aee490321bc854ea319467fab
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589990"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704219"
 ---
-# <a name="delegatedadmincustomer-resource-type"></a>тип ресурса delegatedAdminCustomer
+# <a name="delegatedadmincustomer-resource-type"></a>Тип ресурса delegatedAdminCustomer
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет организацию Azure AD, которая является клиентом партнера Майкрософт и имеет делегированную связь администратора с партнером Майкрософт. Этот объект автоматически создается системой, когда между партнером и клиентом существует по крайней мере одна делегированная связь администратора и удаляется, если более активных отношений не существует.
+Представляет организацию Azure AD, которая является клиентом партнера Майкрософт и имеет делегированные отношения администратора с партнером Майкрософт. Этот объект автоматически создается системой, если между партнером и клиентом существует хотя бы одна делегированная связь администратора, и удаляется, если активных связей больше нет.
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список делегированAdminCustomers](../api/tenantrelationship-list-delegatedadmincustomers.md)|[delegatedAdminCustomer](delegatedadmincustomer.md) collection|Получите список делегирования **объектовAdminCustomer** и их свойств.|
-|[ДелегированиеAdminCustomer](../api/delegatedadmincustomer-get.md)|[delegatedAdminCustomer](delegatedadmincustomer.md)|Ознакомьтесь с свойствами и отношениями объекта **делегированияAdminCustomer** .|
+|[Перечисление delegatedAdminCustomers](../api/tenantrelationship-list-delegatedadmincustomers.md)|[Коллекция delegatedAdminCustomer](delegatedadmincustomer.md)|Получение списка объектов **delegatedAdminCustomer** и их свойств.|
+|[Получение delegatedAdminCustomer](../api/delegatedadmincustomer-get.md)|[delegatedAdminCustomer](delegatedadmincustomer.md)|Чтение свойств и связей объекта **delegatedAdminCustomer** .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя клиента клиента отображает имя Azure AD. Только для чтения. Поддерживает `$orderBy`. |
-|id|String|Уникальный идентификатор клиента, назначенного Azure AD. Только для чтения. Наследуется от [сущности](../resources/entity.md).|
-|tenantId|String|ID клиента, назначенного Azure AD. Только для чтения.|
+|displayName|String|Отображаемое имя клиента Клиента Azure AD. Только для чтения. Поддерживает `$orderBy`. |
+|id|String|Уникальный идентификатор клиента, назначаемого Azure AD. Только для чтения. Наследуется от [сущности](../resources/entity.md).|
+|tenantId|String|Идентификатор клиента, назначаемого Azure AD. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|serviceManagementDetails|[delegatedAdminServiceManagementDetail](delegatedadminservicemanagementdetail.md) collection|Содержит сведения об управлении службой в клиенте-клиенте, управляемом делегированной администрацией.|
+|serviceManagementDetails|[Коллекция delegatedAdminServiceManagementDetail](delegatedadminservicemanagementdetail.md)|Содержит сведения об управлении службой в клиенте клиента, управляемом делегированным администрированием.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

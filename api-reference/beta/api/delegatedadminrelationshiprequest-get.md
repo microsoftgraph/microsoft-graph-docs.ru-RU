@@ -1,23 +1,23 @@
 ---
-title: Получить делегированиеAdminRelationshipRequest
-description: Ознакомьтесь с свойствами и отношениями объекта delegatedAdminRelationshipRequest.
+title: Получение delegatedAdminRelationshipRequest
+description: Чтение свойств и связей объекта delegatedAdminRelationshipRequest.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 0813ccfd3699ceedecb55d99998ad22d2fb88750
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 8c63819a3ab7be61feefa038965162b64c091544
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589836"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704354"
 ---
-# <a name="get-delegatedadminrelationshiprequest"></a>Получить делегированиеAdminRelationshipRequest
+# <a name="get-delegatedadminrelationshiprequest"></a>Получение delegatedAdminRelationshipRequest
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями объекта [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) .
+Чтение свойств и связей объекта [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,7 +39,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметр `$select` запроса OData для получения определенных свойств пользователей, включая те, которые не возвращаются по умолчанию.
+Этот метод поддерживает параметр `$select` запроса OData для получения определенных свойств пользователя, включая те, которые не возвращаются по умолчанию.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -51,7 +51,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод `200 OK` возвращает код ответа и объект [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

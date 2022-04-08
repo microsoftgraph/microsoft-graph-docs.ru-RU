@@ -1,18 +1,18 @@
 ---
-title: delegatedAdminRelationshipCustomerParticipant resource type
+title: Тип ресурса delegatedAdminRelationshipCustomerParticipant
 description: Представляет сведения об идентификации клиента в делегированной связи администратора.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: 738ae13f0a999cecc7d1b24bb5ef2fec81302441
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 228681c0ade8f7b0db7ad3901e402049288cefd7
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589791"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704426"
 ---
-# <a name="delegatedadminrelationshipcustomerparticipant-resource-type"></a>delegatedAdminRelationshipCustomerParticipant resource type
+# <a name="delegatedadminrelationshipcustomerparticipant-resource-type"></a>Тип ресурса delegatedAdminRelationshipCustomerParticipant
 
 Пространство имен: microsoft.graph
 
@@ -23,8 +23,8 @@ ms.locfileid: "64589791"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображает имя клиента клиента в качестве задатого Azure AD. Только чтение|
-|tenantId|String|ID клиента, назначенного Azure AD, клиентского клиента.|
+|displayName|String|Отображаемое имя клиента клиента, задаемое Azure AD. Только чтение|
+|tenantId|String|Идентификатор клиента, назначаемого Azure AD.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

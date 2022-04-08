@@ -1,23 +1,23 @@
 ---
-title: Обновление делегированияAdminRelationship
-description: Обновление свойств объекта делегированияAdminRelationship.
+title: Обновление delegatedAdminRelationship
+description: Обновление свойств объекта delegatedAdminRelationship.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: bf73a4950f499fcc09a67d85d281c1072eb70647
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: a248385d5ff066bf03306bf49eaca40203b15969
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589839"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704277"
 ---
-# <a name="update-delegatedadminrelationship"></a>Обновление делегированияAdminRelationship
+# <a name="update-delegatedadminrelationship"></a>Обновление delegatedAdminRelationship
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [делегированияAdminRelationship](../resources/delegatedadminrelationship.md) . Связь может быть обновлена только в том случае, если она в **состоянии**`created`.
+Обновление свойств объекта [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) . Связь может быть обновлена только в том случае, если она **в состоянии.**`created`
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,7 +42,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
-|If-Match|If-match: {etag}. Последнее известное значение ETag для **делегированияAdminRelationship** для обновления. Извлечение значения ETag из операции LIST или GET. Обязательно.|
+|If-Match|If-match: {etag}. Последнее известное значение ETag для **обновляемого объекта delegatedAdminRelationship** . Получение значения ETag из операции LIST или GET. Обязательно.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,15 +51,15 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Идентификаторы административных ролей, к которые партнер запрашивает или имеет доступ в клиенте-клиенте.|
-|клиент|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|Имя отображения и уникальный идентификатор клиента отношения.|
-|displayName|Строка|Отображает имя отношения, используемого для простоты идентификации. Должна быть уникальной для *всех* делегированных отношений администратора партнера.|
-|duration|Длительность|Продолжительность отношений в формате ISO 8601. Должно быть значением между инклюзивным `P1D` `P2Y` .|
+|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Идентификаторы административных ролей, к которые партнер запрашивает или имеет доступ в клиенте клиента.|
+|Клиентов|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|Отображаемое имя и уникальный идентификатор клиента связи.|
+|displayName|String|Отображаемое имя связи, используемой для упрощения идентификации. Должен быть уникальным для *всех делегированных* отношений администратора партнера.|
+|duration|Длительность|Длительность связи в формате ISO 8601. Должно быть значением между инклюзивным `P1D` `P2Y` .|
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и обновленный объект [делегированияAdminRelationship](../resources/delegatedadminrelationship.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный объект [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

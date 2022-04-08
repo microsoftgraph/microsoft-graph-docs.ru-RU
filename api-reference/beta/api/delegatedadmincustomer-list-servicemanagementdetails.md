@@ -1,23 +1,23 @@
 ---
-title: Список serviceManagementDetails
-description: Получите список делегирования объектовAdminServiceManagementDetail и их свойств.
+title: Перечисление serviceManagementDetails
+description: Получение списка объектов delegatedAdminServiceManagementDetail и их свойств.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 72b9293e6dab7cc9f4d85fe1444304b5848beeef
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: c61167f61ff0caf04dee02d43e82d855665c9679
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589926"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704245"
 ---
-# <a name="list-servicemanagementdetails"></a>Список serviceManagementDetails
+# <a name="list-servicemanagementdetails"></a>Перечисление serviceManagementDetails
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список делегирования [объектовAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) и их свойств.
+Получение списка объектов [delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) и их свойств.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,7 +51,7 @@ GET /tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}/serv
 
 ## <a name="response"></a>Отклик
 
-В случае успешного `200 OK` выполнения этот метод возвращает код ответа и коллекцию объектов [делегированияAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) в тексте ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов [delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

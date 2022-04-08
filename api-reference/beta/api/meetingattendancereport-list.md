@@ -1,24 +1,27 @@
 ---
-title: List meetingAttendanceReports
-description: Получите список отчетов о посещаемости для собрания в Интернете.
+title: Перечисление meetingAttendanceReports
+description: Получение списка отчетов об участии в собрании по сети.
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b2b342fd902a5126ae2165a7c5653851d60ba14b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9e80e4fa2fa8cec47938ccc7e106f41c73d25662
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099492"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704447"
 ---
-# <a name="list-meetingattendancereports"></a>List meetingAttendanceReports
+# <a name="list-meetingattendancereports"></a>Перечисление meetingAttendanceReports
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [meetingAttendanceReport](../resources/meetingAttendanceReport.md) для [onlineMeeting.](../resources/onlinemeeting.md) Каждый раз, когда собрание в Интернете заканчивается, для этого сеанса создается отчет о посещаемости.
+Получение списка объектов [meetingAttendanceReport](../resources/meetingAttendanceReport.md) для [onlineMeeting](../resources/onlinemeeting.md). Каждый раз, когда собрание по сети завершается, для этого сеанса создается отчет о присутствии.
+
+> [!WARNING]
+> Этот метод не поддерживает собрания каналов.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,11 +33,11 @@ ms.locfileid: "62099492"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение | OnlineMeetingArtifact.Read.All |
 
-Чтобы использовать разрешение приложения для этого API, администраторы клиентов должны создать политику доступа к приложениям и предоставить ее пользователю. Это разрешает приложению, настроенное в политике, получать артефакты собраний и/или онлайн-собраний от имени этого пользователя (с ИД пользователя, указанного в пути запроса). Дополнительные сведения см. в материале [Разрешить приложениям получать](/graph/cloud-communication-online-meeting-application-access-policy)доступ к собраниям в Интернете от имени пользователя.
+Чтобы использовать разрешение приложения для этого API, администраторы клиента должны создать политику доступа к приложениям и предоставить ее пользователю. Это позволяет приложению, настроенное в политике, получать сетевые собрания и (или) артефакты собраний по сети от имени этого пользователя (с идентификатором пользователя, указанным в пути запроса). Дополнительные сведения см. в разделе "Разрешить приложениям доступ к собраниям по сети [от имени пользователя"](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Чтобы получить все отчеты о посещаемости для онлайн-встречи с делегированной `/me` () и приложением `/users/{userId}` () разрешения:
+Чтобы получить все отчеты об участии в собрании по сети с делегированным (`/me`) и приложением (`/users/{userId}`) разрешением:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/attendanceReports
@@ -43,8 +46,8 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports
 
 > [!TIP]
 >
->- `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в материале [Разрешить приложениям получать](/graph/cloud-communication-online-meeting-application-access-policy)доступ к собраниям в Интернете от имени пользователя.
->- `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)
+>- `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в разделе "Разрешить приложениям доступ к собраниям по сети [от имени пользователя"](/graph/cloud-communication-online-meeting-application-access-policy).
+>- `meetingId` — **это идентификатор** объекта [onlineMeeting](../resources/onlinemeeting.md) .
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -56,13 +59,13 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports
 | :-------------- | :------------------------ |
 | Авторизация   | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и список объектов `200 OK` [meetingAttendanceReport](../resources/meetingAttendanceReport.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и список объектов [meetingAttendanceReport](../resources/meetingAttendanceReport.md) в тексте отклика.
 
 > [!TIP]
 > Свойство **attendanceRecords** пусто в ответе.

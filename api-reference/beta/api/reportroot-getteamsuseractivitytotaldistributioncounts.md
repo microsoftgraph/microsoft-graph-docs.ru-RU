@@ -1,24 +1,23 @@
 ---
-title: 'reportRoot: getTeamsUserActivityCounts'
-description: Получение количества действий в Microsoft Teams по каждому типу. Действия выполняются Microsoft Teams лицензированными пользователями.
+title: 'reportRoot: getTeamsUserActivityTotalDistributionCounts'
+description: Получение количества действий Microsoft Teams за выбранный период. Типы действий — это сообщения в чате группы, личные сообщения чата, звонки, собрания, организованные собрания, собрания, длительность звука, длительность видео, продолжительность демонстрации экрана, отправка сообщений и ответных сообщений.
 ms.localizationpriority: medium
 ms.prod: reports
 author: zhiliqiao
 doc_type: apiPageType
-ms.openlocfilehash: fa04a85e992c649c39587d386ae8e422b6a2d2b5
+ms.openlocfilehash: bfd2c37c542392022e0347089f0a1b4382265842
 ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704312"
+ms.locfileid: "64704488"
 ---
-# <a name="reportroot-getteamsuseractivitycounts"></a>reportRoot: getTeamsUserActivityCounts
-
+# <a name="reportroot-getteamsuseractivitytotaldistributioncounts"></a>reportRoot: getTeamsUserActivityTotalDistributionCounts
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение количества действий Microsoft Teams по типам. Действия выполняются Microsoft Teams лицензированными пользователями.
+Получение количества действий Microsoft Teams за выбранный период. Типы действий — это сообщения в чате группы, личные сообщения чата, звонки, собрания, организованные собрания, собрания, длительность звука, длительность видео, продолжительность демонстрации экрана, отправка сообщений и ответных сообщений.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,14 +29,14 @@ ms.locfileid: "64704312"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                           |
 | Для приложений                            | Reports.Read.All                         |
 
-**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
+> **Примечание**. Для делегированных разрешений, позволяющих приложениям считывать отчеты об использовании служб от имени пользователя, администратор клиента должен назначить пользователю соответствующую роль Azure Active Directory администратора. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getTeamsUserActivityCounts(period='D7')
+GET /reports/getTeamsUserActivityTotalDistributionCounts(period='{period_value}')
 ```
 
 ## <a name="function-parameters"></a>Параметры функции
@@ -46,15 +45,21 @@ GET /reports/getTeamsUserActivityCounts(period='D7')
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения для {period_value}: `D7`, `D30`, и `D90``D180`. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный.|
 
-Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$format` для настройки отклика. Тип выходных данных по умолчанию — text/csv. Однако если вы хотите указать тип выходных данных, можно использовать параметр запроса OData $format text/csv или application/json.
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$format`, `$top` и `$skipToken` для настройки ответа. Тип выходных данных по умолчанию — `text/csv`.. Однако если вы хотите указать тип выходных данных, можно использовать параметр запроса OData `$format` для задания выходных данных по умолчанию `application/json`или `text/csv` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание               |
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
+
+## <a name="request-body"></a>Текст запроса
+
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -66,28 +71,29 @@ URL-адреса для скачивания, для которых выполн
 
 CSV-файл содержит столбцы со следующими заголовками:
 
-- "Report Refresh Date" (Дата обновления отчета);
-- Report Date (Дата отчета);
+- Report Refresh Date (Дата обновления отчета);
 - Team Chat Messages (Сообщения в чатах групп);
-- Отправка сообщений
-- Ответные сообщения
 - Private Chat Messages (Сообщения в приватных чатах);
 - Calls (Звонки);
 - Meetings (Собрания);
+- Упорядоченные собрания
+- Участие в собраниях
 - Длительность звука
 - Длительность видео
 - Длительность демонстрации экрана
-- Упорядоченные собрания
-- Участие в собраниях
+- Отправка сообщений
+- Ответные сообщения
 - Report Period (Отчетный период).
 
 ### <a name="json"></a>JSON
 
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект JSON в тексте отклика.
 
-## <a name="example"></a>Пример
+Размер страницы по умолчанию для этого запроса — 2000 элементов.
 
-### <a name="csv"></a>CSV
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-csv-output"></a>Пример 1. Выходные данные CSV
 
 Ниже приведен пример вывода CSV-файла.
 
@@ -98,11 +104,11 @@ CSV-файл содержит столбцы со следующими заго�
 
 <!-- {
   "blockType": "ignored",
-  "name": "reportroot_getteamsuseractivitycounts_csv"
+  "name": "reportroot_getteamsuseractivityuserdetail_csv"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityCounts(period='D7')?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityTotalDistributionCounts(period='D7')?$format=text/csv
 ```
 
 
@@ -117,6 +123,7 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+
 У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.
 
 <!-- {
@@ -129,10 +136,10 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Date,Team Chat Messages,Post Messages,Reply Messages,Private Chat Messages,Calls,Meetings,Audio Duration,Video Duration,Screen Share Duration,Meetings Organized,Meetings Attended,Report Period
+Report Refresh Date,Team Chat Messages,Private Chat Messages,Calls,Meetings,Meetings Organized,Meetings Attended,Audio Duration,Video Duration,Screen Share Duration,Post Messages,Reply Messages,Report Period
 ```
 
-### <a name="json"></a>JSON
+### <a name="example-2-json-output"></a>Пример 2. Выходные данные JSON
 
 Ниже приведен пример, который возвращает JSON.
 
@@ -143,11 +150,11 @@ Report Refresh Date,Report Date,Team Chat Messages,Post Messages,Reply Messages,
 
 <!-- {
   "blockType": "ignored",
-  "name": "reportroot_getteamsuseractivitycounts_json"
+  "name": "reportroot_getteamsuseractivityuserdetail_json"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityCounts(period='D7')?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityTotalDistributionCounts(period='D7')?$format=application/json
 ```
 
 
@@ -166,25 +173,26 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityCounts(period='
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 475
+Content-Length: 661
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/getTeamsUserActivityTotalDistributionCounts(period='D7')?$format=application/json&$skiptoken=D07uj", 
   "value": [
-    {
-      "reportRefreshDate": "2017-09-01", 
-      "reportDate": "2017-09-01", 
-      "teamChatMessages": 26, 
-      "postMessages": 3,
-      "replyMessages": 1,
-      "privateChatMessages": 17, 
-      "calls": 4, 
-      "meetings": 0, 
-      "audioDuration": 00:00:00,
-      "videoDuration": 00:00:00,
-      "screenShareDuration": 00:00:00,
-      "meetingsOrganized": 0,
-      "meetingsAttended": 0,
-      "reportPeriod": "7"
+      "reportRefreshDate": "2021-09-01", 
+      "userCounts"
+        {
+          "reportPeriod":7,
+          "teamChatMessages": 26, 
+          "privateChatMessages": 17, 
+          "calls": 4, 
+          "meetings": 0, 
+          "audioDuration": 00:00:00,
+          "videoDuration": 00:00:00,
+          "screenShareDuration": 00:00:00,
+          "meetingsOrganized": 0,
+          "meetingsAttended": 0,
+          "postMessages": 1,
+          "replyMessages": 1
     }
   ]
 }

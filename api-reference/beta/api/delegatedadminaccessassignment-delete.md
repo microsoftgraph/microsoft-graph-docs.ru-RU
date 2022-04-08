@@ -1,23 +1,23 @@
 ---
-title: Удаление делегированияAdminAccessAssignment
-description: Удаление объекта делегированияAdminAccessAssignment.
+title: Удаление delegatedAdminAccessAssignment
+description: Удаление объекта delegatedAdminAccessAssignment.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 1169e1d17011b8521bc5b79cd12681647476258b
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 2f9342324f44e2abf63062f0252d50c27aa293ec
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589966"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704263"
 ---
-# <a name="delete-delegatedadminaccessassignment"></a>Удаление делегированияAdminAccessAssignment
+# <a name="delete-delegatedadminaccessassignment"></a>Удаление delegatedAdminAccessAssignment
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [объекта делегированияAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) .
+Удаление объекта [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,7 +42,7 @@ DELETE /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelations
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
-|If-Match|If-match: {etag}. Последнее известное значение ETag для **делегирования ДелегированияAdminAccessAssignment** для удаления. Обязательный аргумент. Извлечение значения ETag из операции LIST или GET.|
+|If-Match|If-match: {etag}. Последнее известное значение ETag для **удаляемого объекта delegatedAdminAccessAssignment** . Обязательный. Получение значения ETag из операции LIST или GET.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

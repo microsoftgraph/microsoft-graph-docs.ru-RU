@@ -1,23 +1,23 @@
 ---
-title: Удаление делегированияAdminRelationship
-description: Удаляет объект делегированияAdminRelationship.
+title: Удаление delegatedAdminRelationship
+description: Удаляет объект delegatedAdminRelationship.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: ab47df3c98a26931dc9decc1dd15a36e7e3bf38f
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 41087bde23bfba8bdf2f5ec969bdd13f80c69f1f
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589923"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704377"
 ---
-# <a name="delete-delegatedadminrelationship"></a>Удаление делегированияAdminRelationship
+# <a name="delete-delegatedadminrelationship"></a>Удаление delegatedAdminRelationship
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [объекта делегированияAdminRelationship](../resources/delegatedadminrelationship.md) . Связь может быть удалена только в том случае, если она в "созданном" состоянии. 
+Удаление объекта [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) . Связь может быть удалена только в том случае, если она в состоянии "создано". 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,7 +41,7 @@ DELETE /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelations
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|If-Match|If-match: {etag}. Последнее известное значение ETag для **удаления делегированияAdminRelationship** . Извлечение значения ETag из операции LIST или GET. Обязательно.|
+|If-Match|If-match: {etag}. Последнее известное значение ETag для **удаляемого объекта delegatedAdminRelationship** . Получение значения ETag из операции LIST или GET. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
