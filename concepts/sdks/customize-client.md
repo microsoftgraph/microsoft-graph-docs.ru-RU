@@ -1,18 +1,18 @@
 ---
-title: Настройка клиента службы Microsoft Graph SDK
-description: Содержит инструкции по изменению поведения клиента службы microsoft Graph SDK.
+title: Настройка клиента службы microsoft Graph SDK
+description: Содержит инструкции по изменению поведения клиента службы microsoft Graph SDK по умолчанию.
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: e5bf4dc288d401fd86b8fed578a108433c833678
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 292548544abba7cd56bd2154cec576e0bb3fba0a
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61862885"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733166"
 ---
-# <a name="customize-the-microsoft-graph-sdk-service-client"></a>Настройка клиента службы Microsoft Graph SDK
+# <a name="customize-the-microsoft-graph-sdk-service-client"></a>Настройка клиента службы microsoft Graph SDK
 
-Клиент microsoft Graph SDK настраивает по умолчанию набор средних программ, который позволяет SDK взаимодействовать с конечными точками Microsoft Graph. Этот набор по умолчанию настраивается, что позволяет изменить поведение клиента. Например, можно вставить настраиваемый журнал или добавить обработник тестирования для имитации определенных сценариев. Вы можете добавлять и удалять компоненты middleware. Важно отметить, что порядок запуска компонентов middleware имеет важное значение.
+Клиент microsoft Graph SDK настраивает набор ПО промежуточного слоя по умолчанию, который позволяет пакету SDK взаимодействовать с конечными точками Graph Майкрософт. Этот набор по умолчанию настраивается, что позволяет изменить поведение клиента. Например, можно вставить настроенное ведение журнала или добавить обработчик тестов для имитации определенных сценариев. Вы можете добавлять и удалять компоненты ПО промежуточного слоя. Важно отметить, что порядок выполнения компонентов ПО промежуточного слоя очень важен.
 
 ## <a name="c"></a>[C#](#tab/csharp)
 
@@ -150,8 +150,8 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
 
 ```go
 import (
-    a "github.com/microsoft/kiota/authentication/go/azure"
-    khttp "github.com/microsoft/kiota/http/go/nethttp"
+    a "github.com/microsoft/kiota-authentication-azure-go"
+    khttp "github.com/microsoft/kiota-http-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
     core "github.com/microsoftgraph/msgraph-sdk-go-core"
 )
@@ -164,7 +164,7 @@ defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(msgraphsdk.GetDefault
 
 // Get instance of custom middleware
 // Implement a custom middleware by implementing the Middleware interface
-// https://github.com/microsoft/kiota/blob/main/http/go/nethttp/middleware.go
+// https://github.com/microsoft/kiota-http-go/blob/main/middleware.go
 allMiddleware := append(defaultMiddleware, mycustom.NewCustomHandler())
 
 // Create an HTTP client with the middleware
@@ -183,7 +183,7 @@ client := msgraphsdk.NewGraphServiceClient(adapter)
 
 ## <a name="configuring-the-http-proxy-for-the-client"></a>Настройка прокси-сервера HTTP для клиента
 
-В некоторых средах клиентские приложения должны использовать прокси-сервер HTTP, прежде чем они смогут получить доступ к общественному Интернету. В этом разделе показано, как настроить прокси-сервер microsoft Graph SDKs.
+В некоторых средах клиентские приложения должны использовать прокси-сервер HTTP, прежде чем они могут получить доступ к общедоступному Интернету. В этом разделе показано, как настроить прокси-сервер для пакетов SDK Graph Майкрософт.
 
 <!-- markdownlint-disable MD024 -->
 ## <a name="c"></a>[C#](#tab/csharp)
@@ -316,12 +316,12 @@ final GraphServiceClient graphServiceClient =
 ```
 
 > [!NOTE]
-> Дополнительные сведения о конфигурации прокси-сервера Azure Identity см. в [профиле ProxyOptions.](/java/api/com.azure.core.http.proxyoptions.proxyoptions)
+> Дополнительные сведения о конфигурации прокси-сервера удостоверений Azure см. в [разделе ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions).
 
 ## <a name="go"></a>[Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
-Корпорация Майкрософт Graph SDK для Go в настоящее время не поддерживает прокси-сервер HTTP. Дополнительные [сведения см. GitHub этой](https://github.com/microsoftgraph/msgraph-sdk-go-core/issues/15) проблеме.
+Пакет Microsoft Graph SDK для Go в настоящее время не поддерживает прокси-сервер HTTP. [Дополнительные сведения см. GitHub этой](https://github.com/microsoftgraph/msgraph-sdk-go-core/issues/15) проблеме.
 
 ---

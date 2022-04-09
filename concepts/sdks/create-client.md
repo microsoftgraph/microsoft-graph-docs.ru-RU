@@ -1,20 +1,20 @@
 ---
-title: Создание клиентской Graph Майкрософт
-description: Описывает, как создать клиента для звонков в Microsoft Graph. Включает в себя настройка проверки подлинности и выбор суверенного облака.
+title: Создание клиента Graph Майкрософт
+description: Описывает, как создать клиент, который будет использовать для выполнения вызовов к microsoft Graph. Включает в себя настройку проверки подлинности и выбор национального облака.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 0daa9a27ff1a7c92fc39c1eb46c76f38fb34336a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3f1cc7167f0cff4266707fb1d66f6b82c8c01475
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020027"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733173"
 ---
-# <a name="create-a-microsoft-graph-client"></a>Создание клиентской Graph Майкрософт
+# <a name="create-a-microsoft-graph-client"></a>Создание клиента Graph Майкрософт
 
-Клиент microsoft Graph разработан, чтобы сделать простое для звонков в Корпорацию Майкрософт Graph. Можно использовать один экземпляр клиента в течение всего срока службы приложения. Сведения о том, как добавить и установить клиентский пакет Microsoft Graph в проект, см. в сайте [Install the SDK.](sdk-installation.md)
+Клиент Microsoft Graph предназначен для у простых вызовов к microsoft Graph. В течение всего времени существования приложения можно использовать один экземпляр клиента. Сведения о том, как добавить и установить пакет клиента Microsoft Graph в проект, см. в разделе "Установка [пакета SDK"](sdk-installation.md).
 
-В следующих примерах кода покажите, как создать экземпляр клиента Microsoft Graph с поставщиком проверки подлинности на поддерживаемых языках. Поставщик проверки подлинности будет обрабатывать получение маркеров доступа для приложения. Для каждого языка и платформы доступно множество различных поставщиков проверки подлинности. Различные поставщики проверки подлинности поддерживают различные клиентские сценарии. Дополнительные сведения о том, какой поставщик и какие параметры подходят для вашего сценария, см. в материале [Выберите поставщика проверки подлинности.](choose-authentication-providers.md)
+В следующих примерах кода показано, как создать экземпляр клиента Microsoft Graph с поставщиком проверки подлинности на поддерживаемых языках. Поставщик проверки подлинности будет обрабатывать получение маркеров доступа для приложения. Для каждого языка и платформы доступно множество различных поставщиков проверки подлинности. Разные поставщики проверки подлинности поддерживают разные клиентские сценарии. Дополнительные сведения о том, какой поставщик и параметры подходят для вашего сценария, см. в разделе ["Выбор поставщика проверки подлинности"](choose-authentication-providers.md).
 
 <!-- markdownlint-disable MD025 -->
 # <a name="c"></a>[C#](#tab/CS)
@@ -164,7 +164,7 @@ $user = $graph->createRequest("GET", "/me")
               ->execute();
 ```
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -174,7 +174,7 @@ import (
     "fmt"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 

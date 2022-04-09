@@ -1,33 +1,33 @@
 ---
-title: Списки групп маршрутизаний аудио
-description: Извлечение списка **объектов audioRoutingGroup** .
+title: Перечисление групп маршрутизации звука
+description: Получение списка объектов audioRoutingGroup.
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 324365fb111c22146f8e3c265a3ec6de3e75057d
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: 325ec119be751bc2c4be7e915e183747888f9954
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64607577"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733250"
 ---
-# <a name="list-audio-routing-groups"></a>Списки групп маршрутизаний аудио
+# <a name="list-audio-routing-groups"></a>Перечисление групп маршрутизации звука
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка **объектов audioRoutingGroup** .
+Получение списка объектов **audioRoutingGroup** .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Для приложений     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений     | Calls.JoinGroupCall.All, Calls.InitiateGroupCall.All               |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,12 +49,12 @@ GET /communications/calls/{id}/audioRoutingGroups
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию объектов [audioRoutingGroup](../resources/audioroutinggroup.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [audioRoutingGroup](../resources/audioroutinggroup.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
-Ниже показан пример запроса.
+### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -92,7 +92,9 @@ GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroup
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

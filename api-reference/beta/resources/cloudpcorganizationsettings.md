@@ -1,53 +1,54 @@
 ---
-title: тип ресурса cloudPcOrganizationSettings
-description: Представляет параметры организации облачных ПК для клиента.
+title: Тип ресурса cloudPcOrganizationSettings
+description: Представляет параметры организации облачных компьютеров для клиента.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 4e8cbb2e5dbf87eb34decbf3ec5161477cbd2cf1
-ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
+ms.openlocfilehash: 770531c1d5bcf5dac870b2c341c9b20e2d723e66
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62282161"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733187"
 ---
-# <a name="cloudpcorganizationsettings-resource-type"></a>тип ресурса cloudPcOrganizationSettings
+# <a name="cloudpcorganizationsettings-resource-type"></a>Тип ресурса cloudPcOrganizationSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет параметры организации облачных ПК для клиента. У клиента есть только один **объект cloudPcOrganizationSettings** .
+Представляет параметры организации облачных компьютеров для клиента. У клиента есть только один **объект cloudPcOrganizationSettings** .
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Get cloudPcOrganizationSettings](../api/cloudpcorganizationsettings-get.md)|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md)|Ознакомьтесь с свойствами и отношениями объекта [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) .|
+|[Получение cloudPcOrganizationSettings](../api/cloudpcorganizationsettings-get.md)|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md)|Чтение свойств и связей объекта [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) .|
 |[Обновление cloudPcOrganizationSettings](../api/cloudpcorganizationsettings-update.md)|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md)|Обновление свойств объекта [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|ID параметров организации.|
-|osVersion|[cloudPcOperatingSystem](#cloudpcoperatingsystem-values)|Версия операционной системы (ОС) для обеспечения на облачных ПК. Допустимые значения: `windows10`, `windows11`, `unknownFutureValue`.|
-|userAccountType|[cloudPcUserAccountType](#cloudpcuseraccounttype-values)|Тип учетной записи пользователя на предварительных облачных компьютерах. Допустимые значения: `standardUser`, `administrator`, `unknownFutureValue`.|
+|id|String|Идентификатор параметров организации.|
+|osVersion|[cloudPcOperatingSystem](#cloudpcoperatingsystem-values)|Версия операционной системы (ОС) для подготовки на облачных компьютерах. Допустимые значения: `windows10`, `windows11`, `unknownFutureValue`.|
+|userAccountType|[CloudPcUserAccountType](#cloudpcuseraccounttype-values)|Тип учетной записи пользователя на подготовленных облачных компьютерах. Допустимые значения: `standardUser`, `administrator`, `unknownFutureValue`.|
+|windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Представляет параметры организации облачных компьютеров для клиента. У клиента есть только один **объект cloudPcOrganizationSettings** . Значение языка по умолчанию `en-US`.|
 
-### <a name="cloudpcoperatingsystem-values"></a>значения cloudPcOperatingSystem
-
-|Member|Описание|
-|:---|:---|
-|windows10|Операционная Windows 10.|
-|windows11|Операционная Windows 11.|
-|unknownFutureValue|Эволюционирующее значение sentinel. Не следует использовать.|
-
-### <a name="cloudpcuseraccounttype-values"></a>значения cloudPcUserAccountType
+### <a name="cloudpcoperatingsystem-values"></a>Значения cloudPcOperatingSystem
 
 |Member|Описание|
 |:---|:---|
-|standardUser|Пользователь без локальных административных разрешений на облачном компьютере. Стандартные пользователи могут устанавливать контент только из приложения Microsoft Store, но они не могут изменять Windows параметров, которые требуют местных административных привилегий.|
-|администратор|Пользователь с полными локальными административными разрешениями на облачном компьютере. Администраторы могут устанавливать любое программное обеспечение и изменять любой файл или параметр на облачном компьютере.|
-|unknownFutureValue|Эволюционирующее значение sentinel. Не следует использовать.|
+|windows10|Windows 10 операционной системы.|
+|windows11|Windows 11 операционной системы.|
+|unknownFutureValue|Значение sentinel для развиваемого перечисления. Не следует использовать.|
+
+### <a name="cloudpcuseraccounttype-values"></a>Значения cloudPcUserAccountType
+
+|Member|Описание|
+|:---|:---|
+|standardUser|Пользователь без разрешений локального администратора на облачном компьютере. Стандартные пользователи могут устанавливать содержимое только из Microsoft Store приложения, но не могут изменять Windows, для которых требуются права локального администратора.|
+|Администратора|Пользователь с полными разрешениями локального администратора на облачном компьютере. Администраторы могут установить любое программное обеспечение и изменить любой файл или параметр на облачном компьютере.|
+|unknownFutureValue|Значение sentinel для развиваемого перечисления. Не следует использовать.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
@@ -66,6 +67,9 @@ ms.locfileid: "62282161"
   "@odata.type": "#microsoft.graph.cloudPcOrganizationSettings",
   "id": "String (identifier)",
   "osVersion": "String",
-  "userAccountType": "String"
+  "userAccountType": "String",
+  "windowsSettings": {
+    "@odata.type": "microsoft.graph.cloudPcWindowsSettings"
+  }
 }
 ```

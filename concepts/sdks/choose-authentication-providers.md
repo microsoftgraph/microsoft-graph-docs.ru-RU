@@ -1,50 +1,50 @@
 ---
-title: Выберите поставщика проверки подлинности Graph Майкрософт
-description: Узнайте, как выбрать поставщиков проверки подлинности по сценарию для приложения.
+title: Выбор поставщика проверки Graph Майкрософт
+description: Узнайте, как выбрать поставщики проверки подлинности для конкретного сценария для приложения.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: e5375225aa8d9ab01b82f99fee1930e952767718
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 040a42ae20ee48d5af92dd4460b2e26b059ffea7
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020034"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733246"
 ---
 <!-- markdownlint-disable MD001 MD024 MD025 -->
 
 # <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Выбор поставщика проверки подлинности Microsoft Graph на основе сценария
 
-Поставщики проверки подлинности реализуют код, необходимый для приобретения маркера с помощью Библиотеки проверки подлинности Майкрософт (MSAL); обработка ряда потенциальных ошибок для таких случаев, как постепенное согласие, просроченные пароли и условный доступ; а затем установите заглавную головку авторизации http-запроса. В следующей таблице перечислены поставщики, которые соответствуют сценариям для различных [типов приложений.](/azure/active-directory/develop/v2-app-types)
+Поставщики проверки подлинности реализуют код, необходимый для получения маркера с помощью библиотеки проверки подлинности Майкрософт (MSAL); обрабатывать ряд потенциальных ошибок в таких случаях, как добавочное согласие, просроченные пароли и условный доступ; и задайте заголовок авторизации HTTP-запроса. В следующей таблице перечислены поставщики, соответствующие сценариям для различных [типов приложений](/azure/active-directory/develop/v2-app-types).
 
 | Сценарий                                                                                               | Flow/Grant         | Аудитория               | Поставщик |
 |--------------------------------------------------------------------------------------------------------|--------------------|------------------------|-----|
-| [Приложение для одной страницы](/azure/active-directory/develop/scenario-spa-acquire-token)                          | Код авторизации с помощью PKCE | Делегированная потребительская/org | [Поставщик кода авторизации](#authorization-code-provider) |
-| [Веб-приложение, которое вызывает веб-API](/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) |                    |                        |     |
-|                                                                                                        | Authorization Code | Делегированная потребительская/org | [Поставщик кода авторизации](#authorization-code-provider) |
+| [Одностраничного приложения](/azure/active-directory/develop/scenario-spa-acquire-token)                          | Код авторизации с PKCE | Делегированный потребитель или организация | [Поставщик кода авторизации](#authorization-code-provider) |
+| [Веб-приложение, вызывающее веб-API](/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) |                    |                        |     |
+|                                                                                                        | Authorization Code | Делегированный потребитель или организация | [Поставщик кода авторизации](#authorization-code-provider) |
 |                                                                                                        | Учетные данные клиента | Только приложение               | [Поставщик учетных данных клиента](#client-credentials-provider) |
 | [Веб-API, который вызывает веб-API](/azure/active-directory/develop/scenario-web-api-call-api-acquire-token) |                    |                        |     |
-|                                                                                                        | От имени       | Делегированная потребительская/org | [От имени поставщика](#on-behalf-of-provider) |
+|                                                                                                        | От имени       | Делегированный потребитель или организация | [От имени поставщика](#on-behalf-of-provider) |
 |                                                                                                        | Учетные данные клиента | Только приложение               | [Поставщик учетных данных клиента](#client-credentials-provider) |
-| [Настольное приложение, которое вызывает веб-API](/azure/active-directory/develop/scenario-desktop-acquire-token)      |                    |                        |     |
-|                                                                                                        | Интерактивны        | Делегированная потребительская/org | [Интерактивный поставщик](#interactive-provider) |
-|                                                                                                        | Интегрированные Windows | Делегированная org          | [Интегрированный Windows поставщик](#integrated-windows-provider) |
-|                                                                                                        | Владелец ресурса     | Делегированная org          | [Поставщик имен пользователей и паролей](#usernamepassword-provider) |
-|                                                                                                        | Код устройства        | Делегированная org          | [Поставщик кода устройств](#device-code-provider) |
-| [Приложение Daemon](/azure/active-directory/develop/scenario-daemon-acquire-token)                            |                    |                        |     |
+| [Настольное приложение, вызывающее веб-API](/azure/active-directory/develop/scenario-desktop-acquire-token)      |                    |                        |     |
+|                                                                                                        | Интерактивны        | Делегированный потребитель или организация | [Интерактивный поставщик](#interactive-provider) |
+|                                                                                                        | Интегрированные Windows | Делегированная организация          | [Интегрированный поставщик Windows](#integrated-windows-provider) |
+|                                                                                                        | Владелец ресурса     | Делегированная организация          | [Поставщик имени пользователя и пароля](#usernamepassword-provider) |
+|                                                                                                        | Код устройства        | Делегированная организация          | [Поставщик кода устройства](#device-code-provider) |
+| [Управляющее приложение](/azure/active-directory/develop/scenario-daemon-acquire-token)                            |                    |                        |     |
 |                                                                                                        | Учетные данные клиента | Только приложение               | [Поставщик учетных данных клиента](#client-credentials-provider) |
-| [Мобильное приложение, которое вызывает веб-API](/azure/active-directory/develop/scenario-mobile-acquire-token)        |                    |                        |     |
-|                                                                                                        | Интерактивны        | Делегированная потребительская/org | [Интерактивный поставщик](#interactive-provider) |
+| [Мобильное приложение, вызывающее веб-API](/azure/active-directory/develop/scenario-mobile-acquire-token)        |                    |                        |     |
+|                                                                                                        | Интерактивны        | Делегированный потребитель или организация | [Интерактивный поставщик](#interactive-provider) |
 
 > [!NOTE]
-> Следующие фрагменты кода были написаны с последними версиями соответствующих SDKs. Если вы столкнулись с ошибками компиляторов с этими фрагментами, убедитесь, что у вас есть последние версии. Используемые поставщики проверки подлинности обеспечиваются следующими библиотеками удостоверений Azure:
+> Следующие фрагменты кода были написаны с использованием последних версий соответствующих пакетов SDK. Если с этими фрагментами кода возникают ошибки компилятора, убедитесь, что у вас есть последние версии. Используемые поставщики проверки подлинности предоставляются следующими библиотеками удостоверений Azure:
 >
-> - Разработчикам .NET необходимо добавить пакет [Azure.Identity.](/dotnet/api/azure.identity)
-> - Разработчикам JavaScript необходимо добавить библиотеку [@azure/identity.](/javascript/api/@azure/identity)
-> - Разработчикам Java и Android необходимо добавить библиотеку [azure-identity.](/java/api/overview/azure/identity-readme)
+> - Разработчикам .NET необходимо добавить [пакет Azure.Identity](/dotnet/api/azure.identity) .
+> - Разработчикам JavaScript необходимо добавить библиотеку [@azure/identity](/javascript/api/@azure/identity) .
+> - Разработчикам Java и Android необходимо добавить [библиотеку azure-identity](/java/api/overview/azure/identity-readme) .
 
 ## <a name="authorization-code-provider"></a>Поставщик кода авторизации
 
-Поток кода авторизации позволяет родным и веб-приложениям безопасно получать маркеры от имени пользователя. Дополнительные дополнительные платформа удостоверений Майкрософт и поток кода авторизации [OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
+Поток кода авторизации позволяет собственным и веб-приложениям безопасно получать маркеры от имени пользователя. Дополнительные сведения см[. в платформа удостоверений Майкрософт кода авторизации OAuth 2.0](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -152,21 +152,21 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="android"></a>[Android](#tab/Android)
 
-Неприменимо.
+Не применимо.
 
 # <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
-Неприменимо.
+Не применимо.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Еще не доступно. Пожалуйста, поддержите или откройте запрос на [Graph Microsoft,](https://aka.ms/graphrequests) если это важно для вас.
+Пока недоступно. Если это важно, обратитесь в службу поддержки или [Graph майкрософт](https://aka.ms/graphrequests).
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Пока недоступна. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://aka.ms/graphrequests) если это важно для вас.
+Пока недоступно. Если это важно, проголосуйте за Graph [microsoft](https://aka.ms/graphrequests) Graph функции.
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -175,7 +175,7 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -202,7 +202,7 @@ result, err := client.Me().Get(nil)
 
 ## <a name="client-credentials-provider"></a>Поставщик учетных данных клиента
 
-Поток клиентских учетных данных позволяет приложениям-службам работать без взаимодействия с пользователем. Доступ основан на удостоверении приложения. Дополнительные сведения см. платформа удостоверений Майкрософт и поток учетных данных [клиентов OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
+Поток учетных данных клиента позволяет приложениям-службам выполняться без взаимодействия с пользователем. Доступ основан на удостоверении приложения. Дополнительные сведения см. в платформа удостоверений Майкрософт и потоке учетных данных клиента [OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -309,21 +309,21 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="android"></a>[Android](#tab/Android)
 
-Неприменимо.
+Не применимо.
 
 # <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
-Неприменимо.
+Не применимо.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Пока недоступна. Пожалуйста, поддержите или откройте запрос на [Graph Microsoft,](https://aka.ms/graphrequests) если это важно для вас.
+Пока недоступно. Если это важно, обратитесь в службу поддержки или [Graph майкрософт](https://aka.ms/graphrequests).
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Пока недоступна. Пожалуйста, поддержите или откройте запрос на [Graph Microsoft,](https://aka.ms/graphrequests) если это важно для вас.
+Пока недоступно. Если это важно, обратитесь в службу поддержки или [Graph майкрософт](https://aka.ms/graphrequests).
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -332,7 +332,7 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -356,11 +356,11 @@ result, err := client.Me().Get(nil)
 
 ## <a name="on-behalf-of-provider"></a>От имени поставщика
 
-Поток от имени применим, когда ваше приложение вызывает API службы и веб-службы, который по очереди вызывает API microsoft Graph. Дополнительные дополнительные [платформа удостоверений Майкрософт и поток OAuth 2.0 On-Behalf-Of](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
+Поток "от имени" применяется, когда приложение вызывает службу или веб-API, который, в свою API Graph. Дополнительные сведения см[. в платформа удостоверений Майкрософт и потоке On-Behalf-Of oAuth 2.0](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
 # <a name="c"></a>[C#](#tab/CS)
 
-Пакет не поддерживает поток от имени по версии `Azure.Identity` 1.4.0. Вместо этого создайте настраиваемый поставщик проверки подлинности с помощью MSAL.
+Пакет `Azure.Identity` не поддерживает поток on-behalf-of в версии 1.4.0. Вместо этого создайте пользовательский поставщик проверки подлинности с помощью MSAL.
 
 ```csharp
 var scopes = new[] { "User.Read" };
@@ -406,7 +406,7 @@ var graphClient = new GraphServiceClient(authProvider);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Потоки OAuth от имени OAuth требуют реализации настраиваемого поставщика проверки подлинности в это время. Дополнительные сведения читайте в [публикации "Использование](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md) поставщика настраиваемой проверки подлинности".
+Для потоков OAuth от имени в данный момент необходимо реализовать настраиваемый поставщик проверки подлинности. [Дополнительные сведения см](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md). с помощью пользовательского поставщика проверки подлинности.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -431,35 +431,35 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="android"></a>[Android](#tab/Android)
 
-Неприменимо.
+Не применимо.
 
 # <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
-Неприменимо.
+Не применимо.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://aka.ms/graphrequests) если это важно для вас.
+Пока недоступно. Если это важно, проголосуйте за Graph [microsoft](https://aka.ms/graphrequests) Graph функции.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://aka.ms/graphrequests) если это важно для вас.
+Пока недоступно. Если это важно, проголосуйте за Graph [microsoft](https://aka.ms/graphrequests) Graph функции.
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://aka.ms/graphrequests) если это важно для вас.
+Пока недоступно. Если это важно, проголосуйте за Graph [microsoft](https://aka.ms/graphrequests) Graph функции.
 
 ---
 
 ## <a name="implicit-provider"></a>Неявный поставщик
 
-Неявный поток проверки подлинности не рекомендуется из-за [его недостатков.](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6) Теперь общедоступные клиенты, такие как родные приложения и приложения JavaScript, должны использовать поток кода авторизации с расширением PKCE. [Справка](https://oauth.net/2/grant-types/implicit/).
+Поток неявной проверки подлинности не рекомендуется из-за его [недостатков](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6). Общедоступные клиенты, такие как собственные приложения и приложения JavaScript, теперь должны использовать поток кода авторизации с расширением PKCE. [Справочные материалы](https://oauth.net/2/grant-types/implicit/).
 
-## <a name="device-code-provider"></a>Поставщик кода устройств
+## <a name="device-code-provider"></a>Поставщик кода устройства
 
-Поток кода устройства позволяет войти на устройства с помощью другого устройства. Подробные сведения [см. платформа удостоверений Майкрософт и поток кода устройства OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-device-code)
+Поток кода устройства позволяет выполнять вход на устройства с помощью другого устройства. Дополнительные сведения см[. платформа удостоверений Майкрософт и потоке кода устройства OAuth 2.0](/azure/active-directory/develop/v2-oauth2-device-code).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -542,21 +542,21 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="android"></a>[Android](#tab/Android)
 
-Неприменимо.
+Не применимо.
 
 # <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
-Неприменимо.
+Не применимо.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://aka.ms/graphrequests) если это важно для вас.
+Пока недоступно. Если это важно, проголосуйте за Graph [microsoft](https://aka.ms/graphrequests) Graph функции.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://aka.ms/graphrequests) если это важно для вас.
+Пока недоступно. Если это важно, проголосуйте за Graph [microsoft](https://aka.ms/graphrequests) Graph функции.
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -565,7 +565,7 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -588,13 +588,13 @@ result, err := client.Me().Get(nil)
 
 ---
 
-## <a name="integrated-windows-provider"></a>Интегрированный Windows поставщик
+## <a name="integrated-windows-provider"></a>Интегрированный поставщик Windows
 
-Интегрированный поток Windows обеспечивает возможность Windows компьютеров для бесшумного приобретения маркера доступа при присоединении к домену. Подробные сведения см. в [Windows комплексной проверки подлинности.](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication)
+Интегрированный поток Windows позволяет Windows автоматически получать маркер доступа при присоединении к домену. Дополнительные сведения см. в [разделе проверка подлинности Windows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
 
 # <a name="c"></a>[C#](#tab/CS)
 
-В `Azure.Identity` данный момент пакет не поддерживает Windows проверку подлинности. Вместо этого создайте настраиваемый поставщик проверки подлинности с помощью MSAL.
+В `Azure.Identity` настоящее время пакет не поддерживает Windows встроенной проверки подлинности. Вместо этого создайте пользовательский поставщик проверки подлинности с помощью MSAL.
 
 ```csharp
 var scopes = new[] { "User.Read" };
@@ -628,37 +628,37 @@ var graphClient = new GraphServiceClient(authProvider);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Неприменимо.
+Не применимо.
 
 # <a name="java"></a>[Java](#tab/Java)
 
-Неприменимо.
+Не применимо.
 
 # <a name="android"></a>[Android](#tab/Android)
 
-Неприменимо.
+Не применимо.
 
 # <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
-Неприменимо.
+Не применимо.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Неприменимо.
+Не применимо.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Неприменимо.
+Не применимо.
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Go](#tab/Go)
 
-Неприменимо.
+Не применимо.
 
 ---
 
 ## <a name="interactive-provider"></a>Интерактивный поставщик
 
-Интерактивный поток используется мобильными приложениями (Xamarin и UWP) и настольными приложениями для вызова microsoft Graph от имени пользователя. Подробные сведения см. [в материале Эквайринг маркеров в интерактивном режиме.](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively)
+Интерактивный поток используется мобильными приложениями (Xamarin и UWP) и классическими приложениями для вызова Microsoft Graph от имени пользователя. Дополнительные сведения см [. в интерактивном разделе "Получение маркеров"](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -691,7 +691,7 @@ var graphClient = new GraphServiceClient(interactiveCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://aka.ms/graphrequests) если это важно для вас.
+Пока недоступно. Если это важно, проголосуйте за Graph [microsoft](https://aka.ms/graphrequests) Graph функции.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -744,13 +744,13 @@ MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProv
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Неприменимо.
+Не применимо.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Неприменимо.
+Не применимо.
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -759,7 +759,7 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -780,9 +780,9 @@ result, err := client.Me().Get(nil)
 
 ---
 
-## <a name="usernamepassword-provider"></a>Поставщик имен пользователей и паролей
+## <a name="usernamepassword-provider"></a>Поставщик имени пользователя и пароля
 
-Поставщик имен пользователей и паролей позволяет приложению войти в пользователя с помощью имени пользователя и пароля. Используйте этот поток только в том случае, если вы не можете использовать другие потоки OAuth. Дополнительные сведения см. в платформа удостоверений Майкрософт и учетных данных владельца пароля ресурса [OAuth 2.0](/azure/active-directory/develop/v2-oauth-ropc)
+Поставщик имени пользователя и пароля позволяет приложению входить в систему с помощью имени пользователя и пароля. Используйте этот поток только в том случае, если вы не можете использовать другие потоки OAuth. Дополнительные сведения см[. в платформа удостоверений Майкрософт и учетных данных пароля владельца ресурса OAuth 2.0](/azure/active-directory/develop/v2-oauth-ropc).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -814,7 +814,7 @@ var graphClient = new GraphServiceClient(userNamePasswordCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://aka.ms/graphrequests) если это важно для вас.
+Пока недоступно. Если это важно, проголосуйте за Graph [microsoft](https://aka.ms/graphrequests) Graph функции.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -838,21 +838,21 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="android"></a>[Android](#tab/Android)
 
-Неприменимо.
+Не применимо.
 
 # <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
-Неприменимо.
+Не применимо.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://aka.ms/graphrequests) если это важно для вас.
+Пока недоступно. Если это важно, проголосуйте за Graph [microsoft](https://aka.ms/graphrequests) Graph функции.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://aka.ms/graphrequests) если это важно для вас.
+Пока недоступно. Если это важно, проголосуйте за Graph [microsoft](https://aka.ms/graphrequests) Graph функции.
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Go](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -861,7 +861,7 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -886,6 +886,6 @@ result, err := client.Me().Get(nil)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Примеры кода, которые показывают, как использовать платформа удостоверений Майкрософт для защиты различных типов приложений, см. в платформа удостоверений Майкрософт примерах кода [(конечная точка v2.0).](/azure/active-directory/develop/sample-v2-code)
-- Поставщикам проверки подлинности требуется идентификация клиента. Вы захотите [зарегистрировать свое приложение после](https://portal.azure.com/) того, как настроите поставщика проверки подлинности.
-- Дайте нам знать, если необходимый поток OAuth в настоящее время не поддерживается путем голосования или открытия запроса функций [Microsoft Graph.](https://aka.ms/graphrequests)
+- Примеры кода, в которых показано, как использовать платформа удостоверений Майкрософт для защиты различных типов приложений, см. в платформа удостоверений Майкрософт примерах кода [(конечная точка версии 2.0).](/azure/active-directory/develop/sample-v2-code)
+- Поставщикам проверки подлинности требуется идентификатор клиента. Вы захотите [зарегистрировать приложение после](https://portal.azure.com/) настройки поставщика проверки подлинности.
+- Сообщите нам, если требуемый поток OAuth в настоящее время не поддерживается путем голосования или открытия запроса функции [Microsoft Graph.](https://aka.ms/graphrequests)

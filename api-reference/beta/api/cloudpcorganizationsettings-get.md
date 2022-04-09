@@ -1,32 +1,32 @@
 ---
-title: Get cloudPcOrganizationSettings
-description: Ознакомьтесь с свойствами и отношениями объекта cloudPcOrganizationSettings.
+title: Получение cloudPcOrganizationSettings
+description: Чтение свойств и связей объекта cloudPcOrganizationSettings.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 51f7cceeeaaaf04eadc657af0dfa1b029cc79fb3
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 644a1a8bb427dcf20a249051aec030ac70076dde
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804229"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733203"
 ---
-# <a name="get-cloudpcorganizationsettings"></a>Get cloudPcOrganizationSettings
+# <a name="get-cloudpcorganizationsettings"></a>Получение cloudPcOrganizationSettings
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) от текущего клиента. У клиента есть только один **объект cloudPcOrganizationSettings** .
+Чтение свойств и связей [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) из текущего клиента. У клиента есть только один **объект cloudPcOrganizationSettings** .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -38,7 +38,7 @@ ms.locfileid: "62804229"
 GET /deviceManagement/virtualEndpoint/organizationSettings
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -51,11 +51,13 @@ GET /deviceManagement/virtualEndpoint/organizationSettings
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_cloudpcorganizationsettings"
@@ -64,6 +66,32 @@ GET /deviceManagement/virtualEndpoint/organizationSettings
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/organizationSettings
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpcorganizationsettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpcorganizationsettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-cloudpcorganizationsettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-cloudpcorganizationsettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcorganizationsettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcorganizationsettings-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик
@@ -82,7 +110,10 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.cloudPcOrganizationSettings",
     "id": "8660bf17-bf17-8660-17bf-608617bfffff",
     "userAccountType": "standardUser",
-    "osVersion": "windows11"
+    "osVersion": "windows11",
+    "windowsSettings": {
+      "language": "en-US"
+    }
   }
 }
 ```

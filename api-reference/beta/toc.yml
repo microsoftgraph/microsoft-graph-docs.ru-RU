@@ -300,7 +300,7 @@ items:
             href: resources/calendar.md
             displayName: 'Outlook, Outlook calendar'
             items:
-              - name: Create
+              - name: Создание
                 href: api/user-post-calendars.md
               - name: Создание группы календарей
                 href: api/user-post-calendargroups.md
@@ -9600,7 +9600,7 @@ items:
                         href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                       - name: Обновление
                         href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
-                  - name: Идентификация
+                  - name: Удостоверение
                     href: resources/intune-rbac-identity.md
                   - name: Набор удостоверений
                     href: resources/intune-rbac-identityset.md
@@ -11221,8 +11221,10 @@ items:
           - name: Управление отношениями с клиентами
             items:
               - name: Делегированные отношения администратора
-                displayName: 'Partner Center, CSP, VAR'
+                displayName: 'GDAP, Partner Center, CSP, VAR'
                 items:
+                  - name: Обзор
+                    href: resources/delegatedadminrelationships-api-overview.md
                   - name: Делегированные отношения администратора
                     href: resources/delegatedadminrelationship.md
                     items:
@@ -14744,7 +14746,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -14864,7 +14866,7 @@ items:
           - name: Команда
             href: resources/team.md
             items:
-              - name: Create
+              - name: Создание
                 href: api/team-post.md
               - name: Создание команды из группы
                 href: api/team-put-teams.md

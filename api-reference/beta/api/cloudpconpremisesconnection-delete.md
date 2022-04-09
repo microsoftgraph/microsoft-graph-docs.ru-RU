@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: a68f11b4d4db4a139f9a82abd71ea8445464fbf6
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 765bdf68d0aa5f12af24cf148d6da0045b9ba617
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587551"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733223"
 ---
 # <a name="delete-cloudpconpremisesconnection"></a>Удаление cloudPcOnPremisesConnection
 
@@ -22,11 +22,9 @@ ms.locfileid: "64587551"
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
-При удалении подключения разрешения на службу удаляются из указанных ресурсов Azure.
+При удалении сетевого подключения Azure разрешения на доступ к службе удаляются из указанных ресурсов Azure.
 
-Нельзя удалить сетевое подключение Azure после того, как оно пройдет проверку состояния, которая указывается свойством `healthCheckStatus` .
-
-Нельзя удалить подключение, если оно используется, как указано в свойстве `inUse` .
+При использовании сетевое подключение Azure невозможно удалить, как указано в свойстве `inUse` .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -34,8 +32,8 @@ ms.locfileid: "64587551"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос

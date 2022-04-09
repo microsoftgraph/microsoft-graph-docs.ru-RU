@@ -5,28 +5,28 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6eac121c8bc16460e76c6f0909eb154eb0e225ef
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 711c386c8df0ddcbb7a3c6dd6bd2964eff0bacbc
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62803878"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733215"
 ---
 # <a name="update-cloudpcorganizationsettings"></a>Обновление cloudPcOrganizationSettings
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [cloudPcOrganizationSettings в](../resources/cloudpcorganizationsettings.md) клиенте.
+Обновление свойств объекта [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) в клиенте.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,8 +50,9 @@ PATCH /deviceManagement/virtualEndpoint/organizationSettings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|osVersion|cloudPcOperatingSystem|Версия операционной системы (ОС) для обеспечения на облачных ПК. Допустимые значения: `windows10`, `windows11`, `unknownFutureValue`. Необязательное свойство.|
-|userAccountType|cloudPcUserAccountType|Тип учетной записи пользователя на предварительных облачных компьютерах. Допустимые значения: `standardUser`, `administrator`, `unknownFutureValue`. Необязательный параметр.|
+|osVersion|cloudPcOperatingSystem|Версия операционной системы (ОС) для подготовки на облачных компьютерах. Допустимые значения: `windows10`, `windows11`, `unknownFutureValue`. Необязательный параметр.|
+|userAccountType|CloudPcUserAccountType|Тип учетной записи пользователя на подготовленных облачных компьютерах. Допустимые значения: `standardUser`, `administrator`, `unknownFutureValue`. Необязательный параметр.|
+|windowsSettings|cloudPcWindowsSettings|Параметры, применяемые к Windows при создании облачных компьютеров для этой организации. Значение языка по умолчанию — `en-US`..|
 
 
 ## <a name="response"></a>Отклик
@@ -76,7 +77,10 @@ Content-length: 127
 {
   "@odata.type": "#microsoft.graph.cloudPcOrganizationSettings",
   "userAccountType": "standardUser",
-  "osVersion": "windows11"
+  "osVersion": "windows11",
+  "windowsSettings": {
+    "language": "en-US"
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

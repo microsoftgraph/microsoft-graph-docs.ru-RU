@@ -1,23 +1,23 @@
 ---
 title: 'cloudPcOnPremisesConnection: updateAdDomainPassword'
-description: Обновление пароля домена Active Directory для успешного подключения к сети Azure. Этот API поддерживается, когда тип onPremisesConnection является hybridAzureADJoin.
+description: Обновите пароль домена Active Directory для успешного сетевого подключения Azure. Этот API поддерживается, если тип onPremisesConnection — hybridAzureADJoin.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: b10b3d2cdac6ce00119a374987c71ee19f0f94a0
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 0328358f712f952fa4a264405298ea7fd22858c5
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587730"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733209"
 ---
 # <a name="cloudpconpremisesconnection-updateaddomainpassword"></a>cloudPcOnPremisesConnection: updateAdDomainPassword
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление пароля домена Active Directory для [onPremisesConnection](../resources/cloudpconpremisesconnection.md). Этот API поддерживается при типе **onPremisesConnection** `hybridAzureADJoin`.
+Обновите пароль домена Active Directory для объекта [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) . Этот API поддерживается, если тип объекта **cloudPcOnPremisesConnection** имеет значение `hybridAzureADJoin`.
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
@@ -26,8 +26,8 @@ ms.locfileid: "64587730"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -53,7 +53,7 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomai
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|adDomainPassword|Строка|Пароль, связанный с **adDomainUsername**.|
+|adDomainPassword|String|Пароль, связанный с **adDomainUsername**.|
 
 
 

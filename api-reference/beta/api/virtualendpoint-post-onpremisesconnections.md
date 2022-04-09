@@ -1,16 +1,16 @@
 ---
 title: Создание cloudPcOnPremisesConnection
-description: Создание сетевого подключения Azure для создания облачных компьютеров.
+description: Создайте сетевое подключение Azure для подготовки облачных компьютеров.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: f541ae5a05ae79507cb042ad6685bbe25754eef8
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: e396064655ff1a0b143f296935c1eb3c06b2d5e1
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589368"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733236"
 ---
 # <a name="create-cloudpconpremisesconnection"></a>Создание cloudPcOnPremisesConnection
 
@@ -18,7 +18,7 @@ ms.locfileid: "64589368"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) для создания облачных компьютеров.
+Создайте объект [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) для подготовки облачных компьютеров.
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
@@ -28,8 +28,8 @@ ms.locfileid: "64589368"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -52,25 +52,25 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
+В тексте запроса добавьте представление объекта [cloudPcOnPremisesConnection в формате](../resources/cloudpconpremisesconnection.md) JSON.
 
-В следующей таблице показаны свойства, необходимые при создании [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).
+В следующей таблице показаны свойства, необходимые при создании объекта [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя отображения для сетевого подключения Azure.|
-|type|cloudPcOnPremisesConnectionType|Указывает, как будет присоединяться к Azure Active Directory. Значение по умолчанию — `hybridAzureADJoin`. Возможные значения: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
-|subscriptionId|Строка|ID целевой подписки Azure, связанной с клиентом.|
-|adDomainName|Строка|Полное доменное имя домена (FQDN) домена Active Directory, к нему необходимо присоединиться.|
-|adDomainUsername|String|Имя пользователя учетной записи Active Directory (учетная запись пользователя или службы), которая имеет разрешения на создание компьютерных объектов в Active Directory. Необходимый формат: admin@contoso.com.|
+|displayName|String|Отображаемое имя сетевого подключения Azure.|
+|type|CloudPcOnPremisesConnectionType|Указывает, как подготовленный облачный компьютер будет присоединен к Azure Active Directory. Значение по умолчанию — `hybridAzureADJoin`. Возможные значения: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
+|subscriptionId|String|Идентификатор целевой подписки Azure, связанной с клиентом.|
+|adDomainName|String|Полное доменное имя (FQDN) домена Active Directory, к которому вы хотите присоединиться.|
+|adDomainUsername|String|Имя пользователя учетной записи Active Directory (учетной записи пользователя или службы), которая имеет разрешения на создание объектов-компьютеров в Active Directory. Обязательный формат: admin@contoso.com.|
 |adDomainPassword|String|Пароль, связанный с adDomainUsername.|
-|resourceGroupId|Строка|ID целевой группы ресурсов. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
-|virtualNetworkId|Строка|ID целевой виртуальной сети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
-|subnetId|Строка|ID целевой подсети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
+|resourceGroupId|String|Идентификатор целевой группы ресурсов. Обязательный формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
+|virtualNetworkId|String|Идентификатор целевой виртуальной сети. Обязательный формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
+|subnetId|String|Идентификатор целевой подсети. Обязательный формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `201 Created` ответа и [объект cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
