@@ -564,7 +564,7 @@ items:
                 href: api/profile-get.md
               - name: Удаление профиля пользователя
                 href: api/profile-delete.md
-          - name: Командная работа
+          - name: Teamwork
             items:
               - name: Приложение установлено
                 href: resources/teamsappinstallation.md
@@ -11220,7 +11220,7 @@ items:
             href: resources/azure-ad-overview.md
           - name: Управление отношениями с клиентами
             items:
-              - name: Делегированные отношения администратора
+              - name: Детализированные делегированные права администратора (предварительная версия)
                 displayName: 'GDAP, Partner Center, CSP, VAR'
                 items:
                   - name: Обзор
@@ -14086,7 +14086,7 @@ items:
                     href: api/reportroot-getoffice365activeusercounts.md
                   - name: Получение количества пользователей служб
                     href: api/reportroot-getoffice365servicesusercounts.md
-              - name: Приложения Microsoft 365 использования
+              - name: Использование приложений Microsoft 365
                 href: resources/microsoft-365-apps-usage-report.md
                 items:
                   - name: Получение сведений о пользователе
@@ -15319,7 +15319,7 @@ items:
                     href: api/offershiftrequest-get.md
                   - name: List
                     href: api/offershiftrequest-list.md
-                  - name: Утвердить
+                  - name: '"Утвердить"'
                     href: api/offershiftrequest-approve.md
                   - name: Снижение
                     href: api/offershiftrequest-decline.md
@@ -15345,7 +15345,7 @@ items:
                     href: api/openshiftchangerequest-post.md
                   - name: Получение
                     href: api/openshiftchangerequest-get.md
-                  - name: Утвердить
+                  - name: '"Утвердить"'
                     href: api/openshiftchangerequest-approve.md
                   - name: Снижение
                     href: api/openshiftchangerequest-decline.md
@@ -15365,7 +15365,7 @@ items:
                     href: api/swapshiftschangerequest-post.md
                   - name: Получение
                     href: api/swapshiftschangerequest-get.md
-                  - name: Утвердить
+                  - name: '"Утвердить"'
                     href: api/swapshiftschangerequest-approve.md
                   - name: Снижение
                     href: api/swapshiftschangerequest-decline.md
@@ -15425,7 +15425,7 @@ items:
                     href: api/timeoffrequest-get.md
                   - name: Удаление
                     href: api/timeoffrequest-delete.md
-                  - name: Утвердить
+                  - name: '"Утвердить"'
                     href: api/timeoffrequest-approve.md
                   - name: Снижение
                     href: api/timeoffrequest-decline.md
