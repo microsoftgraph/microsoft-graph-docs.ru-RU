@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e82902116d9e6abde93dffb9b8c090e8b26a782a
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: b0e578acd8467c7fe0cc6ba3c3a35160cf243e90
+ms.sourcegitcommit: c854c48f33159628e1d4852e897bb3343ecaf11a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64588535"
+ms.lasthandoff: 04/10/2022
+ms.locfileid: "64753959"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -691,7 +691,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 ---
 
-## <a name="delegated-admin-relationship-permissions"></a>Разрешения отношений полномочного администратора
+## <a name="granular-delegated-admin-privileges-gdap-permissions"></a>Детализированное делегированное разрешение администратора (GDAP)
 
 #### <a name="delegated-permissions"></a>Делегированные разрешения
 
@@ -1362,7 +1362,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 | _Notes.ReadWrite.All_ |    Чтение и запись всех записных книжек OneNote | Позволяет приложению считывать и редактировать все записные книжки OneNote в организации, а также предоставлять к ним доступ в случаях, когда вход пользователя не предусмотрен.| Да |
 
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Заметки
 Разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ действительны только для рабочих и учебных учетных записей. Все остальные разрешения поддерживаются как для учетных записей Майкрософт, так и для рабочих или учебных учетных записей.
 
 С помощью разрешения _Notes.Create_ приложение может просматривать иерархию записных книжек OneNote вошедшего пользователя и создавать содержимое OneNote (записные книжки, группы разделов, разделы, страницы и т. д.).
