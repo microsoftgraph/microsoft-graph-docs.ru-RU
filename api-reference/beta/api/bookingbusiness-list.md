@@ -1,48 +1,49 @@
 ---
-title: Список bookingBusinesses
-description: Получите коллекцию объектов bookingbusiness, созданных для клиента.
+title: Перечисление bookingBusinesses
+description: Получение коллекции объектов bookingBusiness, созданных для клиента.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 7c591f89800c773fb6b841e924f684a51c937dfa
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1308d0a8b01eeb2d073fcb69c0a71addcdf70b82
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131780"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755518"
 ---
-# <a name="list-bookingbusinesses"></a>Список bookingBusinesses
+# <a name="list-bookingbusinesses"></a>Перечисление bookingBusinesses
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите коллекцию [объектов bookingbusiness,](../resources/bookingbusiness.md) созданных для клиента.
+Получение коллекции объектов [bookingBusiness](../resources/bookingbusiness.md) , созданных для клиента.
 
-Эта операция возвращает только **id** и **displayName** каждого бизнеса Bookings в коллекции. Для соображений производительности он не возвращает другие свойства. Вы можете получить другие свойства бизнеса Bookings, указав его **id** в [операции GET.](bookingbusiness-get.md)
+Эта операция возвращает только **идентификатор и** **displayName** каждого Microsoft Bookings в коллекции. Для соображений производительности он не возвращает другие свойства. Вы можете получить другие свойства Bookings, указав его **идентификатор** в операции [GET](bookingbusiness-get.md).
 
-Вы также можете задать запрос для предприятий Bookings, указав строку в параметре для выполнения подстройки, совпадающих между предприятиями `query` клиента. См. [пример](#request-2) ниже.
-
+Вы также можете запросить Bookings `query` предприятия, указав строку в параметре для сопоставления подстроки между компаниями клиента. См. [пример](#request-2) ниже.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | Не поддерживается.  |
+|Делегированное (рабочая или учебная учетная запись) |  Bookings. Read.All, BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
-Этот метод также поддерживает `query` параметр, который принимает значение строки. Этот параметр ограничивает результаты GET предприятиями, которые соответствуют указанной строке. Ниже приведен [пример.](#request-2)
+Этот метод также поддерживает параметр `query` , который принимает строковое значение. Этот параметр ограничивает результаты GET организациями, которые соответствуют указанной строке. Ниже [приведен пример.](#request-2)
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -52,11 +53,11 @@ GET /bookingBusinesses
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и коллекцию `200 OK` [объектов bookingBusiness](../resources/bookingbusiness.md) в тексте отклика.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [bookingBusiness](../resources/bookingbusiness.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request-1"></a>Запрос 1
-В следующем примере получается бизнес Bookings в клиенте.
+В следующем примере Bookings предприятия в клиенте.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -119,9 +120,9 @@ Content-type: application/json
 }
 ```
 
-
 ##### <a name="request-2"></a>Запрос 2
-В следующем примере показано, как использовать параметр для получения одного или более совпадающих предприятий `query` Bookings в клиенте.
+
+В следующем примере показано`query`, как использовать параметр для получения одного или нескольких соответствующих Bookings в клиенте.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

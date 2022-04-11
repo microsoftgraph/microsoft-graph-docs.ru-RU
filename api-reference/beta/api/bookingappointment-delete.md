@@ -1,16 +1,16 @@
 ---
 title: Удаление bookingAppointment
-description: Удаление bookingAppointment в указанном bookingbusiness.
+description: Удалите bookingAppointment в указанном bookingBusiness.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: b66de4e6e3bed721530bee48eacf690e17ca3bd1
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 36016231c72982ec99842ca563163e9f07146fd0
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63334942"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755567"
 ---
 # <a name="delete-bookingappointment"></a>Удаление bookingAppointment
 
@@ -18,35 +18,43 @@ ms.locfileid: "63334942"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [bookingAppointment в](../resources/bookingappointment.md) указанном [bookingbusiness](../resources/bookingbusiness.md).
+Удалите [bookingAppointment в](../resources/bookingappointment.md) указанном [bookingBusiness](../resources/bookingbusiness.md).
+
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | Не поддерживается.  |
+|Делегированное (рабочая или учебная учетная запись) |  BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /bookingBusinesses/{id}/appointments/{id}
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
+
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -84,7 +92,7 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@c
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

@@ -208,6 +208,9 @@ items:
       - name: Запись клиентов (предварительная версия)
         href: booking-concept-overview.md
         displayName: 'Bookings, Microsoft Bookings'
+        items:
+          - name: Бизнес-правила
+            href: bookingsbusiness-business-rules.md
       - name: Управление устройствами и приложениями
         expanded: true
         items:
@@ -443,6 +446,10 @@ items:
             href: search-concept-aggregation.md
           - name: Исправление орфографии в запросе (предварительная версия)
             href: search-concept-speller.md
+          - name: Обрезка повторяющихся результатов поиска (предварительная версия)
+            href: search-concept-trim-duplicate.md
+          - name: Использование шаблонов запросов (предварительная версия)
+            href: search-concept-query-template.md
           - name: Сортировка результатов поиска
             href: search-concept-sort.md
       - name: Безопасность
@@ -523,7 +530,7 @@ items:
   - name: Разработка
     expanded: true
     items:
-      - name: Получение маркеров аутентификации
+      - name: Проверка подлинности и авторизация
         items:
           - name: Обзор
             href: auth/index.yml

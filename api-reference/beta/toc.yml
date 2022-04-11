@@ -1913,6 +1913,8 @@ items:
                 href: api/bookingbusiness-publish.md
               - name: Отмена публикации
                 href: api/bookingbusiness-unpublish.md
+              - name: Получение сведений о доступности персонала
+                href: api/bookingbusiness-getstaffavailability.md
           - name: Резервирование
             href: resources/bookingappointment.md
             items:
@@ -14746,7 +14748,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы

@@ -1,16 +1,16 @@
 ---
 title: Удаление bookingCustomer
-description: Удаление указанного объекта bookingCustomer.
+description: Удалите указанный объект bookingCustomer.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 038f7d7f31d3349974982065c083714d0c77f213
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f38bdf10698dd379ad5f3d37ebd93f4c4647d447
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62106875"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755686"
 ---
 # <a name="delete-bookingcustomer"></a>Удаление bookingCustomer
 
@@ -18,36 +18,41 @@ ms.locfileid: "62106875"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление указанного [объекта bookingCustomer.](../resources/bookingcustomer.md)
+Удалите указанный [объект bookingCustomer](../resources/bookingcustomer.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | Не поддерживается.  |
+|Делегированное (рабочая или учебная учетная запись) | BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /bookingBusinesses/{id}/customers/{id}
 
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
 
-
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.
+
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -84,8 +89,8 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@c
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true

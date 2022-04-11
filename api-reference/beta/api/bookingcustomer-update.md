@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 4d84becf75c11f97370540e089017e4cc429bea3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e2bd3e0b3a1f844523a77b5212fa7105ae606d99
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62094603"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755532"
 ---
 # <a name="update-bookingcustomer"></a>Обновление bookingcustomer
 
@@ -18,22 +18,27 @@ ms.locfileid: "62094603"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [bookingCustomer.](../resources/bookingcustomer.md)
+Обновление свойств объекта [bookingCustomer](../resources/bookingcustomer.md) .
+
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | Не поддерживается.  |
+|Делегированное (рабочая или учебная учетная запись) | BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /bookingBusinesses/{id}/customers/{id}
 ```
+
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
+
 | Имя       | Описание|
 |:-----------|:-----------|
 | Авторизация  | Bearer {code}|
@@ -45,11 +50,11 @@ PATCH /bookingBusinesses/{id}/customers/{id}
 |:---------------|:--------|:----------|
 |displayName|String|Имя клиента.|
 |emailAddress|String|SMTP-адрес клиента.|
-|адреса|[коллекция physicalAddress](../resources/physicaladdress.md)|Адреса, связанные с клиентом, включая домашние, бизнес и другие адреса.|
-|phones|Коллекция [phone](../resources/phone.md)|Телефон номеров, связанных с клиентом, включая домашние, деловые и мобильные номера.|
+|Адреса|[Коллекция physicalAddress](../resources/physicaladdress.md)|Адреса, связанные с клиентом, включая домашние, бизнес-адреса и другие адреса.|
+|phones|Коллекция [phone](../resources/phone.md)|Телефон номера, связанные с клиентом, включая домашние, бизнес-номера и мобильные номера.|
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и `200 OK` обновленный [объект bookingCustomer](../resources/bookingcustomer.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный объект [bookingCustomer](../resources/bookingcustomer.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

@@ -1,24 +1,24 @@
 ---
-title: Получить bookingCustomQuestion
-description: Ознакомьтесь с свойствами и отношениями объекта bookingCustomQuestion.
+title: Получение bookingCustomQuestion
+description: Чтение свойств и связей объекта bookingCustomQuestion.
 author: razortbone
 ms.localizationpriority: medium
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 85538db0260c2e07facbeb44383e93747967d416
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e7d36ede35c144dcba1580fe5f2233c3b3d77af4
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109711"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755462"
 ---
-# <a name="get-bookingcustomquestion"></a>Получить bookingCustomQuestion
+# <a name="get-bookingcustomquestion"></a>Получение bookingCustomQuestion
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями объекта [bookingCustomQuestion.](../resources/bookingcustomquestion.md)
+Чтение свойств и связей объекта [bookingCustomQuestion](../resources/bookingcustomquestion.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "62109711"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                       |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                    |
-| Для приложений                            | Не поддерживается.                                                                                    |
+| Делегированное (рабочая или учебная учетная запись)     | Bookings. Read.All, BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                                    |
+| Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ GET /bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQuest
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в $count и $expand [параметров запроса OData.](/graph/query-parameters)
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в $count и $expand [параметров запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -51,20 +51,20 @@ GET /bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQuest
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект bookingCustomQuestion](../resources/bookingcustomquestion.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [bookingCustomQuestion](../resources/bookingcustomquestion.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_bookingcustomquestion"

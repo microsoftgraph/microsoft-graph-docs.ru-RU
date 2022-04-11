@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: b0e578acd8467c7fe0cc6ba3c3a35160cf243e90
-ms.sourcegitcommit: c854c48f33159628e1d4852e897bb3343ecaf11a
+ms.openlocfilehash: 72a104326a577e2d66f484f720666fbc07653528
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2022
-ms.locfileid: "64753959"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755616"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -199,7 +199,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 * _Analytics.Read_. [Перечисление соответствующих параметров для пользователя](/graph/api/useranalytics-get-settings?view=graph-rest-beta&preserve-view=true) (`GET /beta/me/analytics/settings`)
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Приложение
 
 Отсутствуют.
 
@@ -234,7 +234,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * _AppCatalog.ReadWrite.All_. [Обновление опубликованного приложения](/graph/api/teamsapp-update?view=graph-rest-beta&preserve-view=true) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
 * _AppCatalog.ReadWrite.All_. [Удаление опубликованного приложения](/graph/api/teamsapp-delete?view=graph-rest-beta&preserve-view=true) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Приложение
 
 Отсутствуют.
 
@@ -338,7 +338,12 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 #### <a name="application-permissions"></a>Разрешения приложений
 
-Нет.
+|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Bookings.Read.All_ |  Позволяет приложению считывать сведения о встречах, компаниях, клиентах, службах и персонале Bookings от имени вошедшего пользователя. | Для приложений, предназначенных только для чтения. Типичный целевой пользователь — клиент компании по бронированию. | Нет | Нет |
+| _BookingsAppointment.ReadWrite.All_ | Позволяет приложению считывать и записывать встречи и клиентов Bookings, а также считывать сведения о компаниях, службах и персонале от имени вошедшего пользователя. | Предназначено для программ планирования, которым необходимо выполнять операции со встречами и клиентами. Не предусмотрена возможность менять основную информацию о компании по бронированию, ее услугах и персонале. Типичный целевой пользователь — клиент компании по бронированию.| Нет | Нет |
+| _Bookings.ReadWrite.All_ | Позволяет приложению считывать и записывать сведения о встречах, компаниях, клиентах, службах и персонале Bookings от имени вошедшего пользователя. Не позволяют создавать, удалять или публиковать компании Bookings. | Предназначено для приложений управления, которые выполняют операции с существующими компаниями, их службами и персоналом. Не предусмотрена возможность создавать, удалять или изменять состояние публикации компании по бронированию. Типичный целевой пользователь — сотрудник службы поддержки в организации.| Нет | Нет |
+| _Bookings.Manage.All_ | Позволяет приложению считывать и записывать сведения о встречах, компаниях, клиентах, службах и персонале Bookings, а также управлять такими сведениями от имени вошедшего пользователя.  | Предоставляет приложению полный доступ. <br>Предназначается для полного управления. Типичный целевой пользователь — администратор организации.| Нет | Нет |
 
 ### <a name="example-usage"></a>Примеры использования
 
@@ -412,7 +417,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 ### <a name="example-usage"></a>Примеры использования
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Приложение
 
 * _Calls.Initiate.All_. Совершение однорангового звонка из приложения пользователю в организации (`POST /beta/communications/calls`).
 * _Calls.InitiateGroupCall.All_. Совершение группового звонка из приложения группе пользователей в организации (`POST /beta/communications/calls`).
@@ -1008,7 +1013,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * _GroupMember.ReadWrite.All_. Обновление участников группы (`POST /groups/{id}/members/$ref`).
 > **Примечание.** При этом также необходимо разрешение _User.ReadBasic.All_ для чтения пользователя, чтобы добавить его как участника.
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Приложение
 
 * _Group.Read.All_. Поиск всех групп, имена которых начинаются с "Sales" (`GET /groups?$filter=startswith(displayName,'Sales')`).
 * _Group.ReadWrite.All_. Управляющая служба создает события в календаре группы Microsoft 365 (`POST /groups/{id}/events`).
@@ -1362,7 +1367,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 | _Notes.ReadWrite.All_ |    Чтение и запись всех записных книжек OneNote | Позволяет приложению считывать и редактировать все записные книжки OneNote в организации, а также предоставлять к ним доступ в случаях, когда вход пользователя не предусмотрен.| Да |
 
 
-### <a name="remarks"></a>Заметки
+### <a name="remarks"></a>Примечания
 Разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ действительны только для рабочих и учебных учетных записей. Все остальные разрешения поддерживаются как для учетных записей Майкрософт, так и для рабочих или учебных учетных записей.
 
 С помощью разрешения _Notes.Create_ приложение может просматривать иерархию записных книжек OneNote вошедшего пользователя и создавать содержимое OneNote (записные книжки, группы разделов, разделы, страницы и т. д.).
@@ -2319,7 +2324,7 @@ SubjectRightsRequest.ReadWrite.All | Чтение и запись запросо
 
 * _ThreatAssessment.ReadWrite.All_: чтение и запись запросов на оценку угроз (`POST /informationProtection/threatAssessmentRequests`)
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Приложение
 
 * _ThreatAssessment.Read.All_: чтение запросов на оценку угроз (`GET /informationProtection/threatAssessmentRequests`)
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 27c5c39fd128ad8eb5e83f4fc326eee6a429c724
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fc6d51511279139b61382cc70ab0c3cf15e31fd4
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130168"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755679"
 ---
 # <a name="delete-bookingbusiness"></a>Удаление bookingBusiness
 
@@ -18,15 +18,15 @@ ms.locfileid: "62130168"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [объекта bookingBusiness.](../resources/bookingbusiness.md)
+Удаление объекта [bookingBusiness](../resources/bookingbusiness.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Bookings.Manage.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | Не поддерживается.  |
+|Делегированное (рабочая или учебная учетная запись) |  Bookings.Manage.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

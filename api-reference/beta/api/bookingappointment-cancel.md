@@ -1,16 +1,16 @@
 ---
 title: 'bookingAppointment: отмена'
-description: Отмените указанное бронированиеAppointment в указанном bookingbusiness и отправьте сообщение участвующим клиентам и сотрудникам.
+description: Отмените указанный параметр bookingAppointment в указанном bookingBusiness и отправьте сообщение участвующим клиентам и сотрудникам.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5ae148f44e5234f2101b656eb3d4155d9de8512b
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 8b9d64f2ffae95af61e2b6eb524887a02c659208
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62343503"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755546"
 ---
 # <a name="bookingappointment-cancel"></a>bookingAppointment: отмена
 
@@ -18,16 +18,17 @@ ms.locfileid: "62343503"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отмените указанное [бронированиеAppointment](../resources/bookingappointment.md) в указанном [bookingbusiness](../resources/bookingbusiness.md) и отправьте сообщение участвующим клиентам и сотрудникам.
+Отмените [указанный параметр bookingAppointment](../resources/bookingappointment.md) в указанном [bookingBusiness](../resources/bookingbusiness.md) и отправьте сообщение участвующим клиентам и сотрудникам.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | Не поддерживается.  |
+|Делегированное (рабочая или учебная учетная запись) |  BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -35,26 +36,33 @@ ms.locfileid: "62343503"
 POST /bookingBusinesses/{id}/appointments/{id}/cancel
 
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
+
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|cancellationMessage|String|Сообщение об отмене встречи с клиентом.|
+|cancellationMessage|String|Сообщение о том, что встреча отменена.|
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 No content`. В тексте отклика не возвращается никаких данных.
 
-Если вы попытается отменить встречу, которая не exisit, этот метод возвращается `HTTP 404 Not found`.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
+
+При попытке отменить встречу, которая не существует, этот метод возвращает значение `HTTP 404 Not found`.
 
 ## <a name="example"></a>Пример
-Ниже приводится пример вызова этого API.
-##### <a name="request"></a>Запрос
+
+Ниже приведен пример вызова этого API.
+
+### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -97,7 +105,7 @@ Content-type: application/json
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 <!-- {
   "blockType": "response"

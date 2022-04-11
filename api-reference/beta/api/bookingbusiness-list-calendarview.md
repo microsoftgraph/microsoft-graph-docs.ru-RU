@@ -1,16 +1,16 @@
 ---
 title: Представление календаря "Список резервирований"
-description: Получите коллекцию объектов bookingAppointment для bookingBusiness, которая происходит в указанном диапазоне дат.
+description: Получение коллекции объектов bookingAppointment для bookingBusiness, которая происходит в указанном диапазоне дат.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 64d5ddd168064445c26c7e23d8b26e33e97af864
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3362edeb6d9382dca937e4484ea0ccc4d4f85b84
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114124"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755497"
 ---
 # <a name="list-bookings-calendarview"></a>Представление календаря "Список резервирований"
 
@@ -18,15 +18,15 @@ ms.locfileid: "62114124"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите коллекцию [объектов bookingAppointment](../resources/bookingappointment.md) для [bookingBusiness,](../resources/bookingbusiness.md)которая происходит в указанном диапазоне дат.
+Получение коллекции объектов [bookingAppointment](../resources/bookingappointment.md) для [bookingBusiness](../resources/bookingbusiness.md), которая происходит в указанном диапазоне дат.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Делегированное (рабочая или учебная учетная запись) |  Bookings. Read.All, BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -41,14 +41,15 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|start|DateTimeOffset|Дата начала и время диапазона времени, представленного в формате ISO 8601, как UTC или смещение от UTC. Например, полночь UTC 1 января 2018 г. будет выглядеть так: '2018-01-01T00:00:00Z', и то же время в PST будет выглядеть так: '2017-12-31T16:00:00-08:00'.|
-|end|DateTimeOffset|Дата окончания и время диапазона времени, представленного в формате ISO 8601, как UTC или смещение от UTC. Например, 1 января 2018 г. UTC в 3:00 будет выглядеть так: '2018-01-01T03:00:00Z', а в PST будет выглядеть так: '2017-12-31T19:00:00-08:00'.|
+|start|DateTimeOffset|Дата и время начала диапазона времени, представленные в формате ISO 8601 в формате UTC или смещение от UTC. Например, полночь в формате UTC 1 января 2018 г. будет выглядеть следующим образом: "2018-01-01T00:00:00Z" и то же время в PST будет выглядеть следующим образом: "2017-12-31T16:00:00-08:00".|
+|end|DateTimeOffset|Дата и время окончания диапазона времени, представленные в формате ISO 8601, в формате UTC или смещение от UTC. Например, 1 января 2018 г. в 03:00 UTC будет выглядеть следующим образом: "2018-01-01T03:00:00Z", а то же время в PST-файле будет выглядеть следующим образом: "2017-12-31T19:00:00-08:00".|
 
-Значения и интерпретируются с помощью смещения часового пояса, указанного в соответствующих значениях, и не влияют на значение заглавного заглавного `start` `end` `Prefer: outlook.timezone` загона, если он присутствует.
+Значения и интерпретируются `start` `end` `Prefer: outlook.timezone` с помощью смещения часового пояса, указанного в соответствующих значениях, и не затрагиваются значением заголовка при наличии.
 
-Этот метод также поддерживает некоторые параметры [запроса OData,](/graph/query-parameters) чтобы помочь настроить ответ.
+Этот метод также поддерживает некоторые параметры [запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {code}|
@@ -56,11 +57,12 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа и `200, OK` [объект коллекции bookingAppointment](../resources/bookingappointment.md) в тексте ответа.
+## <a name="response"></a>Ответ
+
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [bookingAppointment](../resources/bookingappointment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
-Ниже приводится пример вызова этого API.
+Ниже приведен пример вызова этого API.
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 

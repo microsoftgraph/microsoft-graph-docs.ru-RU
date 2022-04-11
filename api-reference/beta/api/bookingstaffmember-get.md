@@ -1,50 +1,58 @@
 ---
-title: Получить bookingStaffMember
-description: Получите свойства и отношения bookingStaffMember в указанном bookingbusiness.
+title: Получение bookingStaffMember
+description: Получение свойств и связей объекта bookingStaffMember в указанном bookingbusiness.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 40e34c67dc6bf726d02370e02a3a16e5856ea027
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d43a755d9ded6a0226775fcc66ba69b20670607a
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62116399"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755504"
 ---
-# <a name="get-bookingstaffmember"></a>Получить bookingStaffMember
+# <a name="get-bookingstaffmember"></a>Получение bookingStaffMember
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите свойства и отношения [bookingStaffMember](../resources/bookingstaffmember.md) в указанном [bookingBusiness.](../resources/bookingbusiness.md)
+Получение свойств и связей [объекта bookingStaffMember](../resources/bookingstaffmember.md) в указанном [bookingBusiness](../resources/bookingbusiness.md).
+
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | Не поддерживается.  |
+|Делегированное (рабочая или учебная учетная запись) |  Bookings. Read.All, BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/staffMembers/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект bookingStaffMember](../resources/bookingstaffmember.md) в тексте ответа.
+
+## <a name="response"></a>Ответ
+
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [bookingStaffMember](../resources/bookingstaffmember.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

@@ -1,75 +1,78 @@
 ---
-title: тип ресурса bookingAppointment
-description: Представляет назначение клиента для bookingService, выполняемого набором сотрудников, предоставляемым бизнесом Microsoft Bookings.
+title: Тип ресурса bookingAppointment
+description: Представляет встречу клиента для bookingService, выполняемую набором сотрудников, предоставляемых Microsoft Bookings компании.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: ac5c39da4a9f6ad0ffc352007f10bc4d2dd68eff
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: c3fb44ea22819728d5d048dd0c41daed4e20cef3
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63367722"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755700"
 ---
-# <a name="bookingappointment-resource-type"></a>тип ресурса bookingAppointment
+# <a name="bookingappointment-resource-type"></a>Тип ресурса bookingAppointment
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Представляет назначение клиента для [bookingService](bookingservice.md), выполняемого набором сотрудников, предоставляемым бизнесом Microsoft Bookings.
+Представляет встречу клиента для [bookingService](bookingservice.md), выполняемую набором сотрудников, предоставляемых Microsoft Bookings компании.
 
+> [!NOTE]
+> При создании пользовательского приложения с использованием разрешений приложения необходимо выполнить проверку [бизнес-правил](/graph/bookingsbusiness-business-rules).
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список встреч](../api/bookingbusiness-list-appointments.md) |  [коллекция bookingAppointment](bookingappointment.md) | Получите список объектов **bookingAppointment** в указанном [bookingbusiness](../resources/bookingbusiness.md). |
-|[Создание bookingAppointment](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Создание нового **bookingAppointment** для указанного [bookingbusiness](../resources/bookingbusiness.md). |
-|[Получить bookingAppointment](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |Ознакомьтесь с свойствами и отношениями **объекта bookingAppointment** .|
+|[Список встреч](../api/bookingbusiness-list-appointments.md) |  [Коллекция bookingAppointment](bookingappointment.md) | Получение списка объектов **bookingAppointment** в указанном [bookingbusiness](bookingbusiness.md). |
+|[Создание bookingAppointment](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Создайте **новое bookingAppointment** для указанного [bookingbusiness](bookingbusiness.md). |
+|[Получение bookingAppointment](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |Чтение свойств и связей объекта **bookingAppointment** .|
 |[Обновление](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)    |Обновление объекта **bookingAppointment** . |
-|[удаление](../api/bookingappointment-delete.md); | Нет |Удаление **объекта bookingAppointment** . |
-|[Отмена](../api/bookingappointment-cancel.md)|Нет| Отмена **объекта bookingAppointment** .|
+|[Удаление](../api/bookingappointment-delete.md) | Нет |Удаление объекта **bookingAppointment** . |
+|[Cancel](../api/bookingappointment-cancel.md)|Нет| Отмена **объекта bookingAppointment** .|
 
 ## <a name="properties"></a>Свойства
+
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|additionalInformation|Строка|Дополнительные сведения, которые отправляются клиенту при подтверждении встречи.|
-|customerEmailAddress|Строка|SMTP-адрес [bookingCustomer](bookingcustomer.md) , который бронирует встречу.|
-|customerId|String|ID [bookingCustomer](bookingcustomer.md) для этого назначения. Если при назначении не указывается номер, создается новый объект **bookingCustomer** . После набора следует считать **customerId** неуменяемым.|
-|customerLocation|[location](location.md)|Представляет сведения о расположении [для bookingCustomer](bookingcustomer.md) , который бронирует встречу.|
-|имя клиента|String|Имя клиента.|
-|customerNotes|Строка|Заметки от клиента, связанного с этим назначением. Значение можно получить только при чтении этого **bookingAppointment** по его ID. <br> Это свойство можно установить только при первоначальном создании встречи с новым клиентом. После этого значение вычисляется от клиента, представленного **customerId**.|
-|customerPhone|Строка|Номер телефона клиента.|
-|клиенты|[коллекция bookingCustomerInformation](../resources/bookingcustomerinformation.md)|В нем перечислены свойства клиента для встречи. Встреча будет содержать список сведений о клиентах, и каждое подразделение будет указывать свойства клиента, который является частью этого назначения. Необязательное свойство.|
-|customerTimeZone|Строка|Часовой пояс клиента. Список возможных значений см. в [списке dateTimeTimeZone](datetimetimezone.md).|
-|duration|Длительность|Продолжительность встречи, обозначаемая в [формате ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) . |
-|end|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, которые заканчивается встреча.|
-|filledAttendeesCount|Int32|Текущее число клиентов в записи. |
-|id|Строка| ID **bookingAppointment**. Только для чтения.|
-|invoiceAmount|Double|Выставленная на счету сумма.|
-|invoiceDate|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс счета-фактуры для этого назначения.|
-|invoiceId|String|ID счета-фактуры.|
-|invoiceStatus|Строка| Состояние счета. Возможные значения: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
+|additionalInformation|String|Дополнительные сведения, отправляемые клиенту при подтверждении встречи.|
+|customerEmailAddress|String|SMTP-адрес [bookingCustomer](bookingcustomer.md) , который резервировать встречу.|
+|customerId|String|Идентификатор объекта [bookingCustomer](bookingcustomer.md) для этой встречи. Если при создании встречи не указан идентификатор, создается новый объект **bookingCustomer** . После установки идентификатор **клиента** следует считать неизменяемым.|
+|customerLocation|[location](location.md)|Представляет сведения о расположении [для bookingCustomer](bookingcustomer.md) , который резервирует встречу.|
+|customerName|String|Имя клиента.|
+|customerNotes|String|Заметки от клиента, связанного с этой встречей. Значение можно получить только при чтении **этого объекта bookingAppointment** по его идентификатору. <br> Это свойство можно задать только при первоначальном создании встречи с новым клиентом. По истечении этого момента значение вычисляется из клиента, представленного **идентификатором клиента**.|
+|customerPhone|String|Номер телефона клиента.|
+|Клиентов|[Коллекция bookingCustomerInformation](bookingcustomerinformation.md)|В нем перечислены свойства клиента для встречи. Встреча будет содержать список сведений о клиенте, и каждое подразделение будет указывать свойства клиента, который является частью этой встречи. Необязательное свойство.|
+|customerTimeZone|String|Часовой пояс клиента. Список возможных значений см. в [разделе dateTimeTimeZone](datetimetimezone.md).|
+|duration|Длительность|Длина встречи, помеченная в [формате ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) . |
+|end|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, на которых заканчивается встреча.|
+|filledAttendeesCount|Int32|Текущее число клиентов во встрече. |
+|id|String| Идентификатор объекта **bookingAppointment**. Только для чтения.|
+|invoiceAmount|Двойное с плавающей точкой|Сумма, выставленная в счете.|
+|invoiceDate|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс счета для этой встречи.|
+|invoiceId|String|Идентификатор счета.|
+|invoiceStatus|string| Состояние счета. Возможные значения: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
 |invoiceUrl|String|URL-адрес счета в Microsoft Bookings.|
-|isLocationOnline|Boolean|True указывает, что встреча будет проходить в Интернете. Значение по умолчанию − ложь.|
-|joinWebUrl|Строка|URL-адрес собрания в Интернете для встречи.|
-|maximumAttendeesCount|Int32|Максимальное число клиентов, разрешенных при встрече. Если **значение maximumAttendeesCount** службы превышает 1, передай действительные удостоверения клиентов при создании или обновлении встречи. Чтобы создать клиента, используйте операцию [Create bookingCustomer](../api/bookingbusiness-post-customers.md) . |
-|optOutOfCustomerEmail|Boolean|True указывает, что [bookingCustomer](bookingcustomer.md) для этого назначения не желает получать подтверждение для этого назначения.|
-|postBuffer|Длительность|Количество времени, необходимое для резерва после окончания встречи, для очистки в качестве примера. Значение выражается в [формате ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) . |
-|preBuffer|Длительность|Количество времени, необходимое для резерва перед началом встречи, для подготовки в качестве примера. Значение выражается в [формате ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
-|цена|Double|Обычная цена встречи для указанного [bookingService](bookingservice.md).|
-|priceType|bookingPriceType| Параметр, который обеспечивает гибкость структуры ценообразования служб. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
-|напоминания|[коллекция bookingReminder](bookingreminder.md)|Коллекция напоминаний клиентов, отправленных для этого назначения. Значение этого свойства доступно только при чтении этого **bookingAppointment** по его ID.|
-|selfServiceAppointmentId|String|Дополнительный ИД отслеживания для встречи, если назначение было создано непосредственно клиентом на странице планирования, а не сотрудником от имени клиента.|
-|serviceId|Строка|ID службы [bookingService](bookingservice.md) , связанной с этим назначением.|
-|serviceLocation|[location](location.md)|Расположение, в котором доставляется служба.|
-|serviceName|Строка|Имя **bookingService, связанного** с этим назначением.<br>Это свойство является необязательным при создании новой встречи. Если не указано, оно вычисляется из службы, связанной с назначением **свойством serviceId** .|
-|serviceNotes|String|Заметки [из bookingStaffMember](bookingstaffmember.md). Значение этого свойства доступно только при чтении этого **bookingAppointment** по его ID.|
-|smsNotificationsEnabled|Boolean|True указывает, что sms-уведомления будут отправлены клиентам для встречи. Значение по умолчанию − ложь.|
-|staffMemberIds|Коллекция String|ID каждого [бронированияStaffMember](bookingstaffmember.md) , который запланирован в этом назначении.|
-|начать|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, в который начинается встреча.|
+|isLocationOnline|Логическое|Значение true указывает, что встреча будет храниться в сети. Значение по умолчанию − ложь.|
+|joinWebUrl|String|URL-адрес собрания по сети для встречи.|
+|maximumAttendeesCount|Int32|Максимальное число клиентов, разрешенных во время встречи. Если **значение maximumAttendeesCount** службы больше 1, передайте допустимые идентификаторы клиентов при создании или обновлении встречи. Чтобы создать клиента, используйте операцию [Create bookingCustomer](../api/bookingbusiness-post-customers.md) . |
+|optOutOfCustomerEmail|Логическое|Значение true указывает, [что bookingCustomer](bookingcustomer.md) для этой встречи не хочет получать подтверждение для этой встречи.|
+|postBuffer|Длительность|Например, время резервирования после окончания встречи для очистки. Значение выражается в [формате ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) . |
+|preBuffer|Длительность|Количество времени, зарезервируемого до начала встречи, для подготовки, в качестве примера. Значение выражается в [формате ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
+|Цена|Двойное с плавающей точкой|Обычная цена встречи для указанной [службы bookingService](bookingservice.md).|
+|priceType|bookingPriceType| Параметр, предоставляющий гибкость для структуры ценообразования служб. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
+|Напоминания|[Коллекция bookingReminder](bookingreminder.md)|Коллекция напоминаний клиентов, отправленных для этой встречи. Значение этого свойства доступно только при чтении **этого объекта bookingAppointment** по его идентификатору.|
+|selfServiceAppointmentId|String|Дополнительный идентификатор отслеживания встречи, если встреча была создана непосредственно клиентом на странице планирования, а не сотрудником от имени клиента.|
+|serviceId|Строка|Идентификатор службы [bookingService](bookingservice.md) , связанной с этой встречей.|
+|serviceLocation|[location](location.md)|Расположение, куда доставляется служба.|
+|serviceName|String|Имя службы **bookingService,** связанной с этой встречей.<br>Это свойство является необязательным при создании новой встречи. Если значение не указано, оно вычисляется из службы, связанной с встречей, с помощью **свойства serviceId** .|
+|serviceNotes|String|Заметки из [bookingStaffMember](bookingstaffmember.md). Значение этого свойства доступно только при чтении **этого объекта bookingAppointment** по его идентификатору.|
+|smsNotificationsEnabled|Boolean|Значение true указывает, что для встречи клиентам будут отправляться SMS-уведомления. Значение по умолчанию − ложь.|
+|staffMemberIds|Коллекция String|Идентификатор каждого объекта [bookingStaffMember](bookingstaffmember.md) , который запланирован на эту встречу.|
+|начать|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, с которых начинается встреча.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

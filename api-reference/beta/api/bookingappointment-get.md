@@ -1,52 +1,58 @@
 ---
-title: Получить bookingAppointment
-description: Получите свойства и связи объекта bookingAppointment в указанном bookingbusiness.
+title: Получение bookingAppointment
+description: Получение свойств и связей объекта bookingAppointment в указанном bookingBusiness.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5bad6872224c31066c8e76db92e459db87543770
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6d63955a83f53da7536422987a01758550acc09d
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62094828"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755637"
 ---
-# <a name="get-bookingappointment"></a>Получить bookingAppointment
+# <a name="get-bookingappointment"></a>Получение bookingAppointment
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите свойства и связи объекта [bookingAppointment](../resources/bookingappointment.md) в указанном [bookingBusiness.](../resources/bookingbusiness.md)
+Получение свойств и связей объекта [bookingAppointment](../resources/bookingappointment.md) в указанном [bookingBusiness](../resources/bookingbusiness.md).
 
-Свойства **запуска** **и окончания** всегда возвращаются в UTC.
+**Начальные** **и конечные** свойства всегда возвращаются в формате UTC.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | Не поддерживается.  |
+|Делегированное (рабочая или учебная учетная запись) |  Bookings. Read.All, BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/appointments/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа и `200 OK` [объект bookingAppointment](../resources/bookingappointment.md) в тексте ответа.
+
+## <a name="response"></a>Ответ
+
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [bookingAppointment](../resources/bookingappointment.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
