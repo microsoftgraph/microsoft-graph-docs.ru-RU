@@ -706,14 +706,16 @@ items:
             href: sdks/use-beta.md
           - name: Воспользуйтесь PowerShell
             items:
+              - name: Обзор
+                href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
               - name: Установка
-                href: powershell/installation.md
+                href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
               - name: Начало работы
-                href: powershell/get-started.md
+                href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
               - name: Перемещение по пакету SDK
-                href: powershell/navigating.md
+                href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
               - name: Проверка подлинности только для приложений
-                href: powershell/app-only.md
+                href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
       - name: Использование набора средств
         items:
           - name: Общие сведения о наборе средств

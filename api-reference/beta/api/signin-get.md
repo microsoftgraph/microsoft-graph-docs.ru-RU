@@ -1,16 +1,16 @@
 ---
 title: Получение объекта signIn
 doc_type: apiPageType
-description: Получите объект signIn, содержащий все входы для Azure Active Directory клиента.
+description: Получение объекта signIn, содержащего все входы для Azure Active Directory клиента.
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: ce2fa2046e563e2d294d9022e08354af37038436
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e3e2259e130bbc091d078cd86551fb62afb038bc
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125376"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848757"
 ---
 # <a name="get-signin"></a>Получение объекта signIn
 
@@ -18,7 +18,7 @@ ms.locfileid: "62125376"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите [объект signIn,](../resources/signin.md) содержащий определенное событие для регистрации пользователя для клиента. Это включает входы, в которых пользователю будет предложено ввести имя пользователя или пароль, а также маркеры сеанса.
+Получение объекта [signIn](../resources/signin.md) , содержащего определенное событие входа пользователя для вашего клиента. К ним относятся входы, когда пользователю предлагается ввести имя пользователя или пароль, а также маркеры сеанса.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,16 +26,16 @@ ms.locfileid: "62125376"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
+| Делегированное (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-| Приложение | AuditLog.Read.All и Directory.Read.All | 
+| Для приложений | AuditLog.Read.All и Directory.Read.All | 
 
 > [!IMPORTANT]
-> Этот API имеет [известные](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
+> Этот API имеет известная проблема и в настоящее время требует согласия на разрешения **AuditLog.Read.All** и **Directory.Read.All**.[](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports)
 
-Приложения должны быть [правильно зарегистрированы в](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD.
+Приложения должны быть [правильно зарегистрированы](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
-Помимо делегирования разрешений, пользователю, входиму в который, необходимо принадлежать к одной из следующих ролей каталога, которая позволяет ему читать отчеты о входе. Дополнительные информацию о роли каталогов см. в встроенной роли [Azure AD:](/azure/active-directory/roles/permissions-reference)
+Помимо делегированных разрешений, вошед в систему пользователь должен принадлежать к одной из следующих ролей каталога, которые позволяют ему считывать отчеты о входе. Дополнительные сведения о ролях каталогов см. в статье о встроенных ролях [Azure AD](/azure/active-directory/roles/permissions-reference):
 + Глобальный администратор
 + Глобальный читатель
 + Читатель отчетов
@@ -60,13 +60,13 @@ GET /auditLogs/signIns/{id}
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект signIn](../resources/signin.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [signIn](../resources/signin.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -143,6 +143,7 @@ Content-type: application/json
   "incomingTokenType": "Primary Refresh Token",
   "ipAddress":"131.107.159.37",
   "clientAppUsed":"Browser",
+  "clientCredentialType": "certificate",
   "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54",
   "correlationId":"5d295068-919b-4017-85d8-44be2f5f5483",
   "conditionalAccessStatus":"notApplied",

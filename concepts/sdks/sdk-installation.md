@@ -3,12 +3,12 @@ title: Установка пакета Microsoft Graph SDK
 description: Содержит инструкции по установке пакетов SDK microsoft Graph C#, Java, JavaScript, Objective-C, PHP и Ruby.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 587c5f1e9c14cff83bb55a7b4174297c5e1256f3
-ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
+ms.openlocfilehash: 770b1e72d418a3f0308651b8fdd93a5e2fb7e834
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64733068"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848771"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>Установка пакетов SDK Graph Майкрософт
 
@@ -164,7 +164,7 @@ composer require microsoft/microsoft-graph
 
 ## <a name="install-the-microsoft-powershell-sdk"></a>Установка пакета SDK для Microsoft PowerShell
 
-См[. статью "Установка пакета SDK Microsoft Graph PowerShell"](../powershell/installation.md).
+См[. статью "Установка пакета SDK Microsoft Graph PowerShell"](/powershell/microsoftgraph/installation.md).
 
 ## <a name="install-the-microsoft-graph-ruby-sdk"></a>Установка microsoft Graph Ruby SDK
 

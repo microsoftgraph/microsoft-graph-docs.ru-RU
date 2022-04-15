@@ -1,31 +1,31 @@
 ---
-title: тип ресурса windowsApplication
-description: Представляет параметры приложений под управлением Microsoft Windows и опубликованных в Microsoft Store или магазине игр Xbox.
+title: Тип ресурса windowsApplication
+description: Представляет параметры для приложений, работающих Windows Microsoft и опубликованных в магазине Microsoft Store или Xbox.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: aricrowe57
-ms.openlocfilehash: 7caedf0d8f8cda38129cfc108a2e4dc7ce609279
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 9472a8c39a9ddeb7ed7a3857c5bba11c8435d44c
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63339224"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848685"
 ---
-# <a name="webapplication-resource-type"></a>Тип ресурса webApplication
+# <a name="windowsapplication-resource-type"></a>Тип ресурса windowsApplication
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет параметры приложений под управлением Microsoft Windows и опубликованных в Microsoft Store или магазине игр Xbox.
+Представляет параметры для приложений, работающих Windows Microsoft и опубликованных в магазине Microsoft Store или Xbox.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-| packageSid | Строка | Идентификатор безопасности пакета, назначенный корпорацией Майкрософт приложению. Необязательно. Только для чтения. |
-| redirectUris | Коллекция объектов string | Указывает URL-адреса, куда отправляются маркеры пользователей для регистрации или URL-адреса перенаправления, куда отправляются коды авторизации OAuth 2.0 и маркеры доступа. Доступно только для приложений, поддерживаюных `PersonalMicrosoftAccount` **signInAudience**. |
+| packageSid | String | Идентификатор безопасности пакета, назначенный корпорацией Майкрософт приложению. Необязательно. Только для чтения. |
+| redirectUris | Коллекция String | Указывает URL-адреса, куда отправляются маркеры пользователя для входа, или URI перенаправления, в которые отправляются коды авторизации OAuth 2.0 и маркеры доступа. Доступно только для приложений, поддерживающих `PersonalMicrosoftAccount` **signInAudience**. |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

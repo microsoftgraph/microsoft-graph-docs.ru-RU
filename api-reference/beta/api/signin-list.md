@@ -1,16 +1,16 @@
 ---
 title: Перечисление входов
 doc_type: apiPageType
-description: Получите список входных записей пользователя в Azure Active Directory клиента.
+description: Получение списка входов пользователей в клиенте Azure Active Directory клиента.
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 873c2d6be67c50b29fdeb52ba77d68cddaa548e7
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 547b13bbd97b459eec60b88270e13c6063107704
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629962"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848778"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -18,9 +18,9 @@ ms.locfileid: "64629962"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список [объектов signIn](../resources/signin.md) . В списке содержатся входные записи пользователя для Azure Active Directory клиента. Входы, в которых имя пользователя и пароль передаются в рамках маркера авторизации, и успешные федераированные входы в настоящее время включены в журналы входа.
+Получение списка объектов [signIn](../resources/signin.md) . Список содержит входы пользователей для вашего Azure Active Directory клиента. Входы, в которых имя пользователя и пароль передаются как часть маркера авторизации, а успешные федеративные входы в настоящее время включаются в журналы входа.
 
-Максимальный и по умолчанию размер страницы — 1000 объектов, и по умолчанию самые последние входы возвращаются первыми. Доступны только события, произошедшие в течение Azure Active Directory по умолчанию (Azure AD). [](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
+Максимальный и стандартный размер страницы — 1000 объектов. По умолчанию сначала возвращаются последние входы. Доступны только события входа, произошедшие в течение Azure Active Directory (Azure AD[) по](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) умолчанию.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,16 +28,16 @@ ms.locfileid: "64629962"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
+| Делегированное (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
 | Для приложений | AuditLog.Read.All и Directory.Read.All | 
 
 > [!IMPORTANT]
-> Этот API имеет [известные](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
+> Этот API имеет известная проблема и в настоящее время требует согласия на разрешения **AuditLog.Read.All** и **Directory.Read.All**.[](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports)
 
-Приложения должны быть [правильно зарегистрированы в](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD.
+Приложения должны быть [правильно зарегистрированы](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
-Помимо делегирования разрешений, пользователю, входиму в который, необходимо принадлежать к одной из следующих ролей каталога, которая позволяет ему читать отчеты о входе. Дополнительные информацию о роли каталогов см. в [встроенных ролях Azure AD](/azure/active-directory/roles/permissions-reference):
+Помимо делегированных разрешений, вошед в систему пользователь должен принадлежать к одной из следующих ролей каталога, которые позволяют ему считывать отчеты о входе. Дополнительные сведения о ролях каталогов см. в статье о встроенных ролях [Azure AD](/azure/active-directory/roles/permissions-reference):
 + Глобальный администратор
 + Глобальный читатель
 + Читатель отчетов
@@ -53,13 +53,13 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры `$top`запроса OData `$skiptoken``$filter` и OData для настройки ответа. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$top``$skiptoken`запроса OData `$filter` и , чтобы помочь настроить ответ. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -71,8 +71,8 @@ GET auditLogs/signIns
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-all-sign-ins"></a>Пример 1. Список всех входов
-В этом примере объект ответа показывает, как пользователь подписался с помощью MFA, который был вызван политикой условного доступа, а основной метод проверки подлинности — через FIDO.
+### <a name="example-1-list-all-sign-ins"></a>Пример 1. Перечисление всех входов
+В этом примере объект ответа показывает пользователя, выполнившего вход с помощью MFA, который был активируется политикой условного доступа, а основной метод проверки подлинности — через FIDO.
 
 #### <a name="request"></a>Запрос
 
@@ -144,6 +144,7 @@ Content-type: application/json
       ],
       "ipAddress":"131.107.159.37",
       "clientAppUsed":"Browser",
+      "clientCredentialType": "certificate",
       "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54",
       "correlationId":"5d295068-919b-4017-85d8-44be2f5f5483",
       "conditionalAccessStatus":"notApplied",
@@ -238,9 +239,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-azure"></a>Пример 2. Извлечение первых 10 входов в приложения с помощью appDisplayName, которое начинается с "Azure"
+### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-azure"></a>Пример 2. Получение первых 10 входов в приложения с помощью appDisplayName, которое начинается с Azure
 
-В этом примере объект ответа показывает, что пользователь подписался только с помощью основного метода проверки подлинности — облачного пароля. Ответ включает свойство, `@odata.nextLink` содержаное URL-адрес, который можно использовать для получения следующих 10 результатов.
+В этом примере объект ответа показывает пользователя, выполнившего вход, используя только основной метод проверки подлинности — облачный пароль. Ответ содержит свойство, содержащее `@odata.nextLink` URL-адрес, который можно использовать для получения следующих 10 результатов.
 
 #### <a name="request"></a>Запрос
 
@@ -392,9 +393,9 @@ Content-type: application/json
 
 
 
-### <a name="example-3-retrieve-the-first-10-sign-ins-where-the-signineventtype-is-not-interactiveuser-starting-with-the-latest-sign-in"></a>Пример 3. Извлечение первых 10 входов, в которых signInEventType не является interactiveUser, начиная с последнего входного
+### <a name="example-3-retrieve-the-first-10-sign-ins-where-the-signineventtype-is-not-interactiveuser-starting-with-the-latest-sign-in"></a>Пример 3. Получение первых 10 входов, в которых signInEventType не является interactiveUser, начиная с последнего входа
 
-В этом примере ответ `@odata.nextLink` включает свойство, содержаное URL-адрес, который можно использовать для получения следующих 10 результатов.
+В этом примере ответ `@odata.nextLink` содержит свойство, содержащее URL-адрес, который можно использовать для получения следующих 10 результатов.
 
 #### <a name="request"></a>Запрос
 

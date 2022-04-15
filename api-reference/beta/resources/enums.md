@@ -5,16 +5,41 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: af7a53c81bc1adf8a4e5571c69b1e63e457254b6
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: bc9694ff5e7946656cac8246cf9682e0b71663ab
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755427"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848729"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
 Пространство имен: microsoft.graph
+
+
+#### <a name="authenticationprotocol-values"></a>Значения authenticationProtocol
+
+|Member|
+|:---|
+|wsFed|
+|Saml|
+|unknownFutureValue|
+
+#### <a name="federatedidpmfabehavior-values"></a>Значения federatedIdpMfaBehavior
+|Member|
+|:---|
+|acceptIfMfaDoneByFederatedIdp|
+|enforceMfaByFederatedIdp|
+|rejectMfaByFederatedIdp|
+|unknownFutureValue|
+
+#### <a name="promptloginbehavior-values"></a>Значения promptLoginBehavior
+|Member|
+|:---|
+|translateToFreshPasswordAuthentication|
+|nativeSupport|
+|отключено|
+|unknownFutureValue|
 
 ### <a name="bookingsavailabilitystatus-values"></a>Значения bookingsAvailabilityStatus
 
@@ -91,7 +116,7 @@ ms.locfileid: "64755427"
 |Member|
 |:---|
 |пользователь|
-|group|
+|group;|
 
 ### <a name="accesspackagefilterbycurrentuseroptions-values"></a>значения accessPackageFilterByCurrentUserOptions
 
@@ -116,6 +141,7 @@ ms.locfileid: "64755427"
 |saml11|
 |saml20|
 |unknownFutureValue|
+|remoteDesktopToken|
 
 ### <a name="protocoltype-values"></a>Значения protocolType 
 
@@ -314,7 +340,7 @@ ms.locfileid: "64755427"
 |:---|
 |String|
 |Целое число|
-|Справочные материалы|
+|Справка|
 |Binary|
 |Логическое|
 |DateTime|
@@ -569,6 +595,22 @@ ms.locfileid: "64755427"
 |alternateMobilePhone|
 |mobilePhoneAndSMS|
 |unknownFutureValue|
+
+
+### <a name="clientcredentialtype-values"></a>Значения clientCredentialType 
+
+
+
+|Member|
+|:---|
+|Нет|
+|clientSecret|
+|clientAssertion|
+|federatedIdentityCredential|
+|managedIdentity|
+|certificate|
+|unknownFutureValue|
+
 
 ### <a name="azureadlicensetype-values"></a>Значения azureADLicenseType
 
@@ -998,7 +1040,7 @@ ms.locfileid: "64755427"
 |Member|
 |:---|
 |пользователь|
-|group|
+|group;|
 
 ### <a name="authenticationmethodstate-values"></a>Значения authenticationMethodState
 
@@ -1644,7 +1686,7 @@ ms.locfileid: "64755427"
 ### <a name="onenotesourceservice-values"></a>Значения onenoteSourceService
 | Member
 |:---------------------
-| Unknown
+| Неизвестно
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -2256,13 +2298,13 @@ ms.locfileid: "64755427"
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкий|2|
+|Низкая|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>Значения threatAssessmentContentType
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail;   | 1     | Почтовая угроза.            |
+| почта;   | 1     | Почтовая угроза.            |
 | url    | 2     | Угроза URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -2277,9 +2319,9 @@ ms.locfileid: "64755427"
 
 | Элемент             | Значение | Описание        |
 |:-------------------|:------|:-------------------|
-| уверенности               | 1     | Угроза нежелательной почты.       |
+| спам               | 1     | Угроза нежелательной почты.       |
 | степенью           | 2     | Фишинговая угроза.   |
-| malware            | 3     | Угроза вредоносных программ.    |
+| вредоносная программа            | 3     | Угроза вредоносных программ.    |
 | unknownFutureValue | 4     | Элемент sentinel. |
 
 ### <a name="threatassessmentstatus-values"></a>Значения threatAssessmentStatus

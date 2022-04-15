@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса directoryAudit
-description: Описывает ресурс directoryAudit (сущность) API microsoft Graph API (REST), который помогает действиям аудита каталога (клиента) (бета-версия).
+description: Описывает ресурс directoryAudit (сущность) Microsoft API Graph (REST), который помогает выполнять действия каталога аудита (клиента) (бета-версия).
 author: SarahBar
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 36a1eea5320bbd42b77c32522180a4a539431613
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: a34e8deedfac1fa85273b37053b3019c59294cd3
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336013"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848743"
 ---
 # <a name="directoryaudit-resource-type"></a>Тип ресурса directoryAudit
 
@@ -32,17 +32,18 @@ ms.locfileid: "63336013"
 | Свойство            | Тип                                                | Описание                                                                                                                                                                                                                                                            |
 |:--------------------|:----------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | activityDateTime    | DateTimeOffset                                      | Указывает дату и время выполнения действия. Тип Timestamp всегда представлен в формате времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.                                                                              |
-| activityDisplayName | String                                              | Указывает имя действия или операции (например, "Создание пользователя", "Добавление участника в группу"). Список действий, зарегистрированных в журнале, обратитесь к [списку действий Azure Ad](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list). |
+| activityDisplayName | String                                              | Указывает имя действия или операции (например, "Создание пользователя", "Добавление участника в группу"). Список зарегистрированных действий см. в [списке действий Azure AD](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list). |
 | additionalDetails   | Коллекция [keyValue](keyvalue.md)                  | Указывает дополнительные сведения о действии.                                                                                                                                                                                                                          |
 | category            | String                                              | Указывает, для какой категории ресурса предназначено действие. (Пример: управление пользователями, управление группами и т. д.)                                                                                                                                              |
 | correlationId       | Guid                                                | Указывает уникальный идентификатор, помогающий соотносить действия, происходящие в различных службах. Можно использовать для отслеживания журналов в службах.                                                                                                                                    |
 | id                  | String                                              | Указывает уникальный идентификатор для действия.                                                                                                                                                                                                            |
 | initiatedBy         | [auditActivityInitiator](auditactivityinitiator.md) | Указывает сведения о пользователе или приложении, запустившем действие.                                                                                                                                                                                                    |
 | loggedByService     | String                                              | Указывает, в какой службе запущено действие (например: самостоятельное управление паролями, основной каталог, B2C, приглашенные пользователи, Microsoft Identity Manager, Privileged Identity Management).                                                          |
+| operationType       | String                                              | Указывает тип выполненной операции. Возможные значения включают, но не ограничиваются следующими значениями: `Add`, , , `Update`и `Delete``Unassign``Assign`.                                                                                   |
 | result              | operationResult                                              | Указывает результат действия. Возможные значения: `success`, `failure`, `timeout`, `unknownFutureValue`.                                                                                                                                                       |
-| resultReason        | String                                              | Указывает причину сбоя, если **результат** или `failure` `timeout`.                                                                                                                                                                                              |
+| resultReason        | String                                              | Указывает причину сбоя, если **результатом** является или `failure` `timeout`.                                                                                                                                                                                              |
 | targetResources     | Коллекция [targetResource](targetresource.md)      | Сведения о ресурсе, который изменился из-за действия.  | 
-| userAgent | String | Тип агента пользователя, используемого пользователем в действии. |                                                                                                      
+| Useragent | String | Тип агента пользователя, используемого пользователем в действии. |                                                                                                      
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -70,6 +71,7 @@ ms.locfileid: "63336013"
   "id": "String (identifier)",
   "initiatedBy": {"@odata.type": "microsoft.graph.auditActivityInitiator"},
   "loggedByService": "String",
+  "operationType": "String",
   "result": "string",
   "resultReason": "String",
   "targetResources": [{"@odata.type": "microsoft.graph.targetResource"}],

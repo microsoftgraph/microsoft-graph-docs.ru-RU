@@ -1,16 +1,16 @@
 ---
 title: Создание extensionProperty
-description: Создайте новое расширениеProperty.
+description: Создайте расширение extensionProperty.
 ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 58b6622f41582398345cb5dfc30f4be5f7ba3b3e
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 44a36227c6f4cd215e20d6db2f81668cffe8e8b6
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669279"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848715"
 ---
 # <a name="create-extensionproperty"></a>Создание extensionProperty
 
@@ -18,7 +18,7 @@ ms.locfileid: "63669279"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новое [определение extensionProperty](../resources/extensionproperty.md) . Эту операцию можно использовать для добавления настраиваемого значения свойства к целевому типу объекта, определенному в extensionProperty, с помощью стандартных запросов на создание и обновление целевого объекта.
+Создайте новое [определение extensionProperty](../resources/extensionproperty.md) . Эту операцию можно использовать для добавления значения настраиваемого свойства к типу целевого объекта, определенному в extensionProperty, с помощью стандартных запросов на создание и обновление целевого объекта.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,14 +28,14 @@ ms.locfileid: "63669279"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All    |
-|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /applications/{id}/extensionProperties
+POST /applications/{application ObjectId}/extensionProperties
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -46,19 +46,19 @@ POST /applications/{id}/extensionProperties
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса уделяем [объекту extensionProperty](../resources/extensionproperty.md) следующие свойства.
+В тексте запроса укажите [объект extensionProperty](../resources/extensionproperty.md) со следующими свойствами.
 
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|dataType|String| Указывает тип данных значения, который может удерживать свойство расширения. Поддерживаются следующие значения. Значение null не допускается. <ul><li>`Binary` - максимум 256 bytes</li><li>`Boolean`</li><li>`DateTime` - Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC.</li><li>`Integer` - 32-битное значение.</li><li>`LargeInteger` - 64-битное значение.</li><li>`String` - максимум 256 символов</li></ul>|
+|dataType|String| Указывает тип данных значения, которое может содержать свойство расширения. Поддерживаются следующие значения. Значение null не допускается. <ul><li>`Binary` — максимум 256 байт</li><li>`Boolean`</li><li>`DateTime` — должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC.</li><li>`Integer` — 32-разрядное значение.</li><li>`LargeInteger` — 64-разрядное значение.</li><li>`String` — не более 256 символов</li></ul>|
 |name|String| Имя свойства расширения. Значение null не допускается. |
-|targetObjects|Коллекция объектов string| Поддерживаются следующие значения. Значение null не допускается. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|targetObjects|Коллекция String| Поддерживаются следующие значения. Значение null не допускается. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешной работы этот `201, Created` метод возвращает код ответа и новый [объект extensionProperty](../resources/extensionproperty.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый [объект extensionProperty](../resources/extensionproperty.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -113,7 +113,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `201 Created` ответа и [объект extensionProperty](../resources/extensionProperty.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [extensionProperty](../resources/extensionProperty.md) в тексте отклика.
 
 <!-- {
   "blockType": "response",
