@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 430c44adc75bf18d44d3e3bc6d3c0fc7dc724b45
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: 7ce17257ac6d300b9006472261a913663d654d3f
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780935"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848638"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Настройка элемента конфиденциальности insights в Microsoft Graph (предварительный просмотр)
 
@@ -46,7 +46,7 @@ ms.locfileid: "60780935"
 
 
 ### <a name="how-to-configure-item-insights-settings-via-powershell"></a>Как настроить параметры аналитики элементов с помощью PowerShell?
-Убедитесь, что выполнены следующие дополнительные предварительные требования. После этого используйте [пакет SDK PowerShell Microsoft Graph](./powershell/installation.md), чтобы настроить аналитику элементов для всей организации или для определенных групп.
+Убедитесь, что выполнены следующие дополнительные предварительные требования. После этого используйте пакет [SDK PowerShell Microsoft Graph](/powershell/microsoftgraph/installation.md), чтобы настроить аналитику элементов для всей организации или для определенных групп.
 
 #### <a name="additional-prerequisites"></a>Дополнительные предварительные требования
 * **Модуль PowerShell** — установите [модуль версии 0.9.1 или более поздней](https://www.powershellgallery.com/packages/Microsoft.Graph).
@@ -83,7 +83,7 @@ ms.locfileid: "60780935"
 Как сказано выше, параметры конфиденциальности для аналитики элементов по умолчанию включены для всей организации. Эти параметры доступны с помощью свойства навигации с именем **itemInsights** в ресурсе [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta&preserve-view=true). Параметры по умолчанию можно изменить двумя способами.
 
 - Отключите аналитику элементов для всех пользователей в организации, установив для свойства **isEnabledInOrganization** ресурса [insightsSettings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) значение `false`. 
-- Отключите аналитику элементов для _подмножества_, назначив этих пользователей в группу Azure AD и установив для свойства **disabledForGroup** идентификатор этой группы. Подробнее о [создании групп и добавлении пользователей в качестве участников](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
+- Чтобы отключить элемент insights для _подмножества_ пользователей в группе Azure AD, назначьте этих пользователей в группу Azure AD и задайте для свойства **disabledForGroup** идентификатор этой группы. Узнайте больше о [создании группы и добавлении пользователей в качестве участников](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
 Используйте операцию [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true) для соответствующей настройки свойств **isEnabledInOrganization** и **disabledForGroup**.
 
