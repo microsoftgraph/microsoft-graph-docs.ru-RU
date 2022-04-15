@@ -1,79 +1,79 @@
 ---
-title: Установка SDK microsoft Graph PowerShell
-description: Содержит инструкции по установке SDK microsoft Graph PowerShell.
+title: Установка пакета SDK Microsoft Graph PowerShell
+description: Содержит инструкции по установке пакета SDK Microsoft Graph PowerShell.
 ms.localizationpriority: medium
 author: jasonjoh
 ms.openlocfilehash: 80086e4879ce9acb547e060c45891bd58dc602bf
-ms.sourcegitcommit: 0fa7148e0b776663eaca3e79e72b85046d4b8b1a
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63500966"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64883390"
 ---
-# <a name="install-the-microsoft-graph-powershell-sdk"></a>Установка SDK microsoft Graph PowerShell
+# <a name="install-the-microsoft-graph-powershell-sdk"></a>Установка пакета SDK Microsoft Graph PowerShell
 
 > [!NOTE]
-> Установка основного модуля SDK установит все 38 модулей. Рассмотрим только установку необходимых модулей, в том числе `Microsoft.Graph.Authentication`. Для списка доступных модулей Microsoft Graph используйте следующую команду.
+> При установке основного модуля пакета SDK будут устанавливаться все 38 подмножеов. Рассмотрите возможность установки только необходимых модулей, включая `Microsoft.Graph.Authentication`. Для списка доступных модулей Microsoft Graph используйте следующую команду.
 >
 > ```powershell
 > Find-Module Microsoft.Graph*
 > ```
 
-SDK microsoft Graph PowerShell опубликован в [галерее PowerShell](https://www.powershellgallery.com/packages/Microsoft.Graph). Можно установить SDK в PowerShell Core или Windows PowerShell с помощью следующей команды.
+Пакет SDK Microsoft Graph PowerShell публикуется [на коллекция PowerShell.](https://www.powershellgallery.com/packages/Microsoft.Graph) Пакет SDK можно установить в PowerShell Core или Windows PowerShell с помощью следующей команды.
 
 ```powershell
 Install-Module Microsoft.Graph -Scope CurrentUser
 ```
 
-Необязательно можно изменить область установки с помощью параметра `-Scope` . Для этого требуются разрешения администратора.
+При необходимости можно изменить область установки с помощью параметра `-Scope` . Для этого требуются разрешения администратора.
 
 ```powershell
 Install-Module Microsoft.Graph -Scope AllUsers
 ```
 
 > [!IMPORTANT]
-> Установка SDK в одной версии PowerShell не устанавливает его для другой. Не забудьте запустить команду установки в версии PowerShell, в которая вы собираетесь использовать ее.
+> При установке пакета SDK в одной версии PowerShell он не устанавливается для другой. Обязательно выполните команду установки в версии PowerShell, в которой она будет использоваться.
 
 ## <a name="supported-powershell-versions"></a>Поддерживаемые версии PowerShell
 
-PowerShell 7 и более поздние версии PowerShell рекомендуется использовать с microsoft Graph PowerShell SDK на всех платформах. Нет дополнительных предпосылок для использования SDK с PowerShell 7 или более поздней.
+PowerShell 7 и более поздних версий — это рекомендуемая версия PowerShell для использования с пакетом SDK Microsoft Graph PowerShell на всех платформах. Нет дополнительных предварительных условий для использования пакета SDK с PowerShell 7 или более поздней версии.
 
-Чтобы использовать SDK Microsoft Graph PowerShell с Windows PowerShell, необходимо следовать следующим Windows PowerShell.
+Чтобы использовать пакет SDK Microsoft Graph PowerShell с Windows PowerShell, необходимо выполнить следующие предварительные требования.
 
-- Обновление до [PowerShell 5.1 или более поздней](/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell)
-- Установка [платформа .NET Framework 4.7.2 или более поздней](/dotnet/framework/install/)
-- Обновление **PowerShellGet** до последней версии с помощью `Install-Module PowerShellGet -Force`
+- Обновление до [PowerShell 5.1 или более поздней версии](/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell)
+- Установка [платформа .NET Framework 4.7.2 или более поздней версии](/dotnet/framework/install/)
+- Обновление **PowerShellGet до** последней версии с помощью `Install-Module PowerShellGet -Force`
 
 ## <a name="verify-installation"></a>Проверка установки
 
-После завершения установки можно проверить установленную версию следующей командой.
+После завершения установки можно проверить установленную версию с помощью следующей команды.
 
 ```powershell
 Get-InstalledModule Microsoft.Graph
 ```
 
-Версия в выходе должна соответствовать последней версии, опубликованной в Галерее PowerShell. Теперь вы готовы использовать SDK.
+Версия в выходных данных должна соответствовать последней версии, опубликованной на коллекция PowerShell. Теперь вы готовы использовать пакет SDK.
 
 > [!div class="nextstepaction"]
 > [Начало работы с пакетом SDK Microsoft Graph PowerShell](get-started.md)
 
-## <a name="updating-the-sdk"></a>Обновление SDK
+## <a name="updating-the-sdk"></a>Обновление пакета SDK
 
-Вы можете обновить SDK и все его зависимости с помощью следующей команды.
+Пакет SDK и все его зависимости можно обновить с помощью следующей команды.
 
 ```powershell
 Update-Module Microsoft.Graph
 ```
 
-## <a name="uninstalling-the-sdk"></a>Uninstalling the SDK
+## <a name="uninstalling-the-sdk"></a>Удаление пакета SDK
 
-Сначала используйте следующую команду, чтобы удалить основной модуль.
+Сначала выполните следующую команду, чтобы удалить основной модуль.
 
 ```powershell
 Uninstall-Module Microsoft.Graph
 ```
 
-Затем удалите все модули зависимостей, запуская следующие команды.
+Затем удалите все модули зависимостей, выполнив следующие команды.
 
 ```powershell
 Get-InstalledModule Microsoft.Graph.* | %{ if($_.Name -ne "Microsoft.Graph.Authentication"){ Uninstall-Module $_.Name } }
@@ -82,4 +82,4 @@ Uninstall-Module Microsoft.Graph.Authentication
 
 ## <a name="provide-feedback"></a>Предоставление отзывов
 
-Мы приветствуем отзывы! Пожалуйста, предосообщите о любых проблемах в [репозитории SDK GitHub.](https://github.com/microsoftgraph/msgraph-sdk-powershell/issues)
+Мы будем рады получить отзыв! Предоставьте отзыв или сообщите о любых проблемах в [репозитории GitHub пакета SDK](https://github.com/microsoftgraph/msgraph-sdk-powershell/issues).

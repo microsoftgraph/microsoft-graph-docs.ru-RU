@@ -1,63 +1,63 @@
 ---
-title: Навигация по SDK Graph PowerShell
-description: SDK Graph PowerShell microsoft содержит большое количество команд. Узнайте, как найти нужные команды для того, чего вы хотите достичь.
+title: Навигация по пакету SDK Microsoft Graph PowerShell
+description: Пакет SDK Microsoft Graph PowerShell содержит большое количество команд. Узнайте, как найти подгоную команду для достижения поставленных целей.
 ms.localizationpriority: medium
 author: jasonjoh
 ms.openlocfilehash: 2c4135691712bcc6cbe8a32a776aa40844ec668e
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336223"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64883404"
 ---
-# <a name="navigating-the-microsoft-graph-powershell-sdk"></a>Навигация по SDK Graph PowerShell
+# <a name="navigating-the-microsoft-graph-powershell-sdk"></a>Навигация по пакету SDK Microsoft Graph PowerShell
 
-API Graph Microsoft является огромным и постоянно растет. Из-за этого количество команд в microsoft Graph PowerShell SDK также очень большое. Поиск правильной команды для того, чего вы хотите добиться, может быть сложной задачей, особенно если вы еще не знакомы с Microsoft Graph. Рассмотрим несколько способов поиска определенной команды.
+Корпорация Майкрософт API Graph и постоянно растет. По этой причине количество команд в пакете SDK Microsoft Graph PowerShell также очень велико. Поиск нужной команды может оказаться сложной задачей, особенно если вы еще не знакомы с microsoft Graph. Давайте рассмотрим несколько способов поиска определенной команды.
 
 [!INCLUDE [aad-advanced-queries-note](../../includes/aad-advanced-queries-note.md)]
 
-## <a name="command-naming-conventions"></a>Соглашения о именовании команд
+## <a name="command-naming-conventions"></a>Соглашения об именовании команд
 
-Команды в SDK создаются непосредственно из [API REST](/graph/api/overview?view=graph-rest-1.0&preserve-view=true), поэтому на имена влияет API. Чтобы использовать этот SDK, не нужно разбираться в деталях API, но это помогает понять конвенцию именования.
+Команды в пакете SDK создаются непосредственно из [REST API](/graph/api/overview?view=graph-rest-1.0&preserve-view=true), поэтому на имена влияет API. Вам не нужно понимать сведения об API для использования этого пакета SDK, но это помогает понять соглашение об именовании.
 
-Команды PowerShell именуются с помощью пары существительное глагола, например `Get-Command` или `Update-List`. Начнем с глагола.
+Команды PowerShell именуются с помощью пары глагол-существительное, например или `Get-Command` `Update-List`. Начнем с команды.
 
-### <a name="command-verbs"></a>Командные глаголы
+### <a name="command-verbs"></a>Команды
 
-Для основных операций REST глагол определяется методом HTTP, используемым для API.
+Для основных операций REST команда определяется методом HTTP, используемым для API.
 
-| Метод HTTP | Командный глагол | Пример |
+| Метод HTTP | Команда | Пример |
 |-------------|--------------|---|
 | GET         | Получение          | `Get-MgUser` [Справочные материалы по API](/graph/api/user-get?view=graph-rest-1.0&preserve-view=true) |
 | POST        | Новое          | `New-MgUserMessage` [Справочные материалы по API](/graph/api/user-post-messages?view=graph-rest-1.0&preserve-view=true) |
-| PUT         | Новая          | `New-MgTeam` [Справочные материалы по API](/graph/api/team-put-teams?view=graph-rest-1.0&preserve-view=true) |
+| PUT         | Новое          | `New-MgTeam` [Справочные материалы по API](/graph/api/team-put-teams?view=graph-rest-1.0&preserve-view=true) |
 | PATCH       | Update       | `Update-MgUserEvent` [Справочные материалы по API](/graph/api/event-update?view=graph-rest-1.0&preserve-view=true) |
 | DELETE      | Удалить       | `Remove-MgDriveItem` [Справочные материалы по API](/graph/api/driveitem-delete?view=graph-rest-1.0&preserve-view=true) |
 
-Для функций и действий это немного сложнее. API в Microsoft Graph, которые реализуются в качестве функций или действий OData, обычно называются с по крайней мере глаголом. Глагол соответствующей команды основан на глаголе в имени функции или действия. Однако глаголы команд в PowerShell должны соответствовать определенным правилам [именования,](/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands) поэтому это может привести к неинтуитивным сопоставлениям между именами и командами.
+Для функций и действий это немного сложнее. Интерфейсы API в Microsoft Graph, реализованные как функции или действия OData, обычно именуются по крайней мере командой. Команда соответствующей команды основана на глаголе в имени функции или действия. Однако командные команды в PowerShell должны соответствовать определенным правилам именования [, поэтому](/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands) это может привести к неинтуативным сопоставлениям имен и команд.
 
-Рассмотрим несколько примеров. [API getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0&preserve-view=true) использует `get`и `Get` является утвержденным глаголом PowerShell, поэтому его командой является `Get-MgUserCalendarSchedule`. [API](/graph/api/event-cancel?view=graph-rest-beta&preserve-view=true) отмены события, с другой стороны, использует не утвержденный глагол .`cancel` Утвержденный глагол для отмены или прекращения что-то есть `Stop`, поэтому команда `Stop-MgUserEvent`. Наконец, [глагол API snoozeReminder](/graph/api/event-snoozereminder?view=graph-rest-1.0&preserve-view=true) не `snooze`имеет эквивалента, утвержденного PowerShell. Для API используется глагол SDK `Invoke`, чтобы команда API `Invoke-MgSnoozeUserEventReminder`была .
+Рассмотрим некоторые примеры. API [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0&preserve-view=true) использует `get``Get` и является утвержденной командой PowerShell, поэтому это команда `Get-MgUserCalendarSchedule`. С [другой стороны](/graph/api/event-cancel?view=graph-rest-beta&preserve-view=true) , API отмены для события использует не утвержденную команду `cancel`. Утвержденная команда для отмены или отмены чего-либо является `Stop`, поэтому команда имеет значение `Stop-MgUserEvent`. Наконец, команда API [snoozeReminder](/graph/api/event-snoozereminder?view=graph-rest-1.0&preserve-view=true) не имеет эквивалента, `snooze`утвержденного PowerShell. Для таких API пакет SDK `Invoke`использует команду, чтобы команда API была такой `Invoke-MgSnoozeUserEventReminder`.
 
-### <a name="command-nouns"></a>Существимы команды
+### <a name="command-nouns"></a>Существительные команд
 
-Возможно, вы уже заметили, что все существии в командах SDK начинаются с `Mg`. Этот префикс помогает избежать конфликтов именования с другими модулями PowerShell. С учетом этого следует иметь в `Get-MgUser` виду, что такие команды используются для получения пользователя. И в соответствии с конвенцией PowerShell, даже если существительное является исключительным, эти же команды могут возвращать несколько результатов, если не запрашивается конкретный экземпляр.
+К настоящему моменту вы могли заметить, что все существительные в командах пакета SDK начинаются с `Mg`. Этот префикс помогает избежать конфликтов именования с другими модулями PowerShell. Учитывая это, имеет смысл `Get-MgUser` , что такие команды используются для получения пользователя. Кроме того, несмотря на то, что существительное является единым, эти же команды могут возвращать несколько результатов, если конкретный экземпляр не запрашивается.
 
-Но как насчет команд, как `Get-MgUserMessage` или `Get-MgUserMailFolderMessage`? Оба из них получают [объект сообщения](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true) , так почему бы и нет `Get-MgMessage`? Ответ приходит из [API получения сообщения](/graph/api/message-get?view=graph-rest-1.0&preserve-view=true).
+Но как насчет таких команд `Get-MgUserMessage` `Get-MgUserMailFolderMessage`? И то, и другое получает [объект сообщения](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true) , так почему бы и нет `Get-MgMessage`? Ответ поступает из [API получения сообщения](/graph/api/message-get?view=graph-rest-1.0&preserve-view=true).
 
-Посмотрите на запросы HTTP для этого API. Игнорируя запросы в `/me` URL-адресе, можно вызвать этот API двумя другими способами.
+Просмотрите HTTP-запросы для этого API. Игнорируя запросы в `/me` URL-адресе, можно вызвать этот API двумя другими способами.
 
 ```http
 GET /users/{id | userPrincipalName}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-Пути совпадают с существительным. Для первой формы, вы начинаете с `users`, то `messages`, так что команда `Get-MgUserMessage`. Во второй форме вы начинаете с `users`, а затем `mailFolders`сообщения, поэтому команда `Get-MgUserMailFolderMessage`.
+Пути соответствуют существительным. Для первой формы вы начинаете с `users`, а затем `messages`, поэтому команда имеет значение `Get-MgUserMessage`. Во второй форме вы начинаете с `users`сообщения`mailFolders`, а затем сообщения, поэтому команда будет .`Get-MgUserMailFolderMessage`
 
-Другой способ посмотреть на это является то, что владеет или содержит то, что. Пользователь владеет почтовыми папками, а почтовые папки содержат сообщения. Добавьте префикс и получите `Get-MgUserMailFolderMessage`.
+Другим способом просмотра является то, что является владельцем или содержит то, что. Пользователь владеет почтовыми папками, а почтовые папки содержат сообщения. Добавьте префикс и получите .`Get-MgUserMailFolderMessage`
 
-### <a name="listing-parameters"></a>Параметры перечисления
+### <a name="listing-parameters"></a>Перечисление параметров
 
-После того, как вы находили нужные команды, вы можете изучить все доступные параметры с помощью `Get-Help` команды. Например, в следующей команде перечислены все доступные параметры `Get-MgUser` для команды.
+После поиска нужной команды можно проверить все доступные параметры с помощью этой `Get-Help` команды. Например, приведенная ниже команда выводит список всех доступных параметров для `Get-MgUser` команды.
 
 ```powershell
 Get-Help Get-MgUser -Detailed
@@ -65,7 +65,7 @@ Get-Help Get-MgUser -Detailed
 
 ## <a name="finding-available-commands"></a>Поиск доступных команд
 
-Иногда просто знать конвенции имен не достаточно, чтобы угадать правую команду. В этом случае можно использовать команду для `Get-Command` поиска доступных команд в SDK. Например, если вы ищете команды, связанные с Microsoft Teams, можно выполнить следующую команду.
+Иногда просто знать соглашения об именовании недостаточно, чтобы угадать подголовную команду. В этом случае можно использовать команду `Get-Command` для поиска доступных команд в пакете SDK. Например, если вы ищете команды, связанные с Microsoft Teams, можно выполнить следующую команду.
 
 ```powershell
 Get-Command -Module Microsoft.Graph* *team*
