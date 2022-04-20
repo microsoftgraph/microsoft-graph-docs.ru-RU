@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: b3f542369e7f39600aa49ea0d37c13d9f0264c15
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: f51cea4ec7ca24c228ad7d4c92459f4c81cf3a45
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239311"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917782"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -28,7 +28,7 @@ ms.locfileid: "62239311"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                           |
 | Для приложений                            | Reports.Read.All                         |
 
-**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
+**Примечание**. Для делегированных разрешений, позволяющих приложениям считывать отчеты об использовании служб от имени пользователя, администратор клиента должен назначить пользователю соответствующую роль Azure Active Directory администратора. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -36,7 +36,7 @@ ms.locfileid: "62239311"
 
 ```http
 GET /reports/getTeamsDeviceUsageUserDetail(period='{period_value}')
-GET /reports/getTeamsDeviceUsageUserDetail(date={date_value})
+GET /reports/getTeamsDeviceUsageUserDetail(date='{date_value}')
 ```
 
 ## <a name="function-parameters"></a>Параметры функции
@@ -45,10 +45,10 @@ GET /reports/getTeamsDeviceUsageUserDetail(date={date_value})
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. |
-| date      | Date   | Указывает дату, за которую вы хотите просмотреть пользователей, выполнивших какое-либо действие. Значение {date_value} указывается в формате ГГГГ-ММ-ДД. Поскольку этот отчет доступен только за последние 28 дней, {date_value} должна быть дата из этого диапазона. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения для {period_value}: `D7`, `D30`, и `D90``D180`. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. |
+| date      | Date   | Указывает дату, за которую вы хотите просмотреть пользователей, выполнивших какое-либо действие. Значение {date_value} указывается в формате ГГГГ-ММ-ДД. Так как этот отчет доступен только за последние 28 дней, {date_value} должен быть датой из этого диапазона. |
 
-> **Примечание.** В URL-адресе необходимо указать либо период, либо дату.
+> **Примечание:** Необходимо задать точку **или** дату **в** URL-адресе.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -65,25 +65,24 @@ URL-адреса для скачивания, для которых выполн
 CSV-файл содержит столбцы со следующими заголовками:
 
 - Report Refresh Date (Дата обновления отчета);
-- Пользовательский id
+- Идентификатор пользователя
 - "User Principal Name" (Имя участника-пользователя);
 - Last Activity Date (Дата последнего действия);
 - Is Deleted (Удален);
-- Deleted Date (дата удаления)
+- Deleted Date (Дата удаления);
 - Used Web (использовал браузер);
 - Used Windows Phone (использовал телефон с Windows);
 - Used iOS (использовал iOS);
 - Used Mac (использовал Mac);
 - Used Android Phone (использовал телефон с Android);
 - Used Windows (использовал Windows);
-- "Report Period" (Отчетный период).
+- Report Period (Отчетный период).
 
 ## <a name="example"></a>Пример
 
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
-
 
 <!-- {
   "blockType": "ignored",
@@ -95,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageUserDetail(perio
 ```
 
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

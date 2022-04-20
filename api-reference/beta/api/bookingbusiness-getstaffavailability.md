@@ -1,16 +1,16 @@
 ---
 title: 'bookingsBusiness: getStaffAvailability'
-description: Узнайте, как получить сведения о доступности сотрудников Microsoft Bookings календаря.
+description: Получение сведений о доступности сотрудников Microsoft Bookings календаря.
 ms.localizationpriority: medium
 author: kwekua
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 71954be1123f5b36532380b61159934228edfc9e
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: f3c63a90dd58b0765d641c7be7cf5dd0727571f4
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755757"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917706"
 ---
 # <a name="bookingsbusiness-getstaffavailability"></a>bookingsBusiness: getStaffAvailability
 
@@ -35,7 +35,6 @@ ms.locfileid: "64755757"
 <!-- { "blockType": "ignored" } -->
 ```http
 Get /solutions/bookingBusinesses/{id}/getStaffAvailability
-
 ```
 
 ## <a name="request-header"></a>Заголовок запроса
@@ -49,9 +48,9 @@ Get /solutions/bookingBusinesses/{id}/getStaffAvailability
 
 В тексте запроса передайте список идентификаторов сотрудников вместе с двумя другими параметрами типа ресурса [dateTimeTimeZone](/graph/resources/datetimetimezone) , которые **называются startDateTime** и **endDateTime**. Они соответствуют двум меткам времени, между которыми будет возвращена доступность персонала.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию [staffAvailabilityItem](../resources/staffavailabilityitem.md) в ответе.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию [staffAvailabilityItem](../resources/staffavailabilityitem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: bc9694ff5e7946656cac8246cf9682e0b71663ab
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: d524a6d1015943b269f95535aa7cf3a390aa57b7
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848729"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917635"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
@@ -340,7 +340,7 @@ ms.locfileid: "64848729"
 |:---|
 |String|
 |Целое число|
-|Справка|
+|Справочные материалы|
 |Binary|
 |Логическое|
 |DateTime|
@@ -2319,7 +2319,7 @@ ms.locfileid: "64848729"
 
 | Элемент             | Значение | Описание        |
 |:-------------------|:------|:-------------------|
-| спам               | 1     | Угроза нежелательной почты.       |
+| уверенности               | 1     | Угроза нежелательной почты.       |
 | степенью           | 2     | Фишинговая угроза.   |
 | вредоносная программа            | 3     | Угроза вредоносных программ.    |
 | unknownFutureValue | 4     | Элемент sentinel. |
@@ -2752,6 +2752,7 @@ ms.locfileid: "64848729"
 |skypeUser|
 |phoneUser|
 |unknownFutureValue|
+|emailUser|
 
 ### <a name="callrecordingstatus-values"></a>Значения callRecordingStatus
 

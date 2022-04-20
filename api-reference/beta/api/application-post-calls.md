@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b272eb839dd1bf2bb9384db9be58610bc5c7ce4e
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: ddd3d8ca490183a20763eec07a7c651107fd47de
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64607773"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917672"
 ---
 <!-- markdownlint-disable MD001 MD022 MD024 -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "64607773"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание [вызова](../resources/call.md) позволяет боту создать новый исходяющий одноранговой или групповой вызов или присоединиться к существующему собранию. Вам потребуется [зарегистрировать вызываемого бота](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) и пройти список необходимых разрешений.
+Создание [звонка](../resources/call.md) позволяет боту создать новый исходящий одноранговый или групповой звонок или присоединиться к существующему собранию. Необходимо зарегистрировать [вызывающий бот](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) и просмотреть список необходимых разрешений.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -32,7 +32,7 @@ ms.locfileid: "64607773"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                                                           |
 | Для приложений                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
 
-> **Примечания:** Для вызова с носители, на которые есть приложения, помимо одного из перечисленных разрешений, требуется разрешение Calls.AccessMedia.All или Calls.AccessMedia.Chat*.
+> **Заметки:** Для вызова с размещенным в приложении носителем требуется разрешение Calls.AccessMedia.All или Calls.AccessMedia.Chat* в дополнение к одному из указанных разрешений.
 >
 > Разрешения, помеченные *, используют [согласие для определенных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -54,21 +54,21 @@ POST /communications/calls
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем JSON-представление объекта [вызова](../resources/call.md) .
+В тексте запроса добавьте представление объекта вызова [в формате](../resources/call.md) JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешной работы этот метод возвращает код `201 Created` отклика и объект [вызова](../resources/call.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [вызова](../resources/call.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-peer-to-peer-voip-call-with-service-hosted-media"></a>Пример 1. Создание одноранговых вызовов VoIP с помощью средств массовой информации службы
+### <a name="example-1-create-peer-to-peer-voip-call-with-service-hosted-media"></a>Пример 1. Создание однорангового вызова VoIP с размещенным в службе носителем
 
-> **Примечание:** Этот вызов требует разрешения Calls.Initiate.All.
+> **Примечание:** Для этого вызова требуется разрешение Calls.Initiate.All.
 
-##### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
-В следующем примере показан запрос, который делает одноранговой вызов между ботом и указанным пользователем. В этом примере носители хозяйской службы. Значения маркера авторизации, URL-адреса, ID приложения, имени приложения, пользовательского ИД, имени пользователя и ИД клиента должны быть заменены фактическими значениями, чтобы сделать пример работой.
+В следующем примере показан запрос, который выполняет одноранговый вызов между ботом и указанным пользователем. В этом примере носитель размещается службой. Для работы примера значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и клиента должны быть заменены фактическими значениями.
 
 # <a name="http"></a>[HTTP](#tab/http)
 
@@ -101,6 +101,10 @@ Content-Type: application/json
   "requestedModalities": [
     "audio"
   ],
+  "callOptions": {
+    "@odata.type": "#microsoft.graph.outgoingCallOptions",
+    "isContentSharingNotificationEnabled": true
+  },
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
   }
@@ -133,7 +137,7 @@ Content-Type: application/json
 
 ---
 
-##### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -223,7 +227,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a>Уведомление — создание
+#### <a name="notification---establishing"></a>Уведомление — установка
 
 ```http
 POST https://bot.contoso.com/callback
@@ -254,7 +258,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>Уведомление — установлено
+#### <a name="notification---established"></a>Уведомление — установлено
 
 ```http
 POST https://bot.contoso.com/callback
@@ -287,12 +291,102 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>Пример 2. Создание одноранговых вызовов VoIP с помощью средств массовой информации приложения
+#### <a name="notification---content-sharing-started"></a>Уведомление — общий доступ к содержимому запущен
 
-> **Примечание**. В этом примере необходимы разрешения Calls.Initiate.All и Calls.AccessMedia.All.
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
 
-##### <a name="request"></a>Запрос
-В следующем примере показан запрос, который делает одноранговой вызов между ботом и указанным пользователем. В этом примере средства массовой информации локализованы приложением. Значения маркера авторизации, URL-адреса, ID приложения, имени приложения, пользовательского ИД, имени пользователя и ИД клиента должны быть заменены фактическими значениями, чтобы сделать пример работой.
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.contentSharingSession",
+          "id": "F7D9EF30FF0A9BD3F64B274387FB8FF8E96B6CFBA8F87F8305A74DE99AF007BC"
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### <a name="notification---content-sharing-updated"></a>Уведомление — обновлен общий доступ к содержимому
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.contentSharingSession",
+          "id": "F7D9EF30FF0A9BD3F64B274387FB8FF8E96B6CFBA8F87F8305A74DE99AF007BC"
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### <a name="notification---content-sharing-ended"></a>Уведомление — общий доступ к содержимому завершен
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.contentSharingSession",
+          "id": "F7D9EF30FF0A9BD3F64B274387FB8FF8E96B6CFBA8F87F8305A74DE99AF007BC"
+        }
+      ]
+    }
+  ]
+}
+```
+
+### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>Пример 2. Создание однорангового вызова VoIP с размещенным в приложении носителем
+
+> **Примечание**. В этом примере требуются разрешения Calls.Initiate.All и Calls.AccessMedia.All.
+
+#### <a name="request"></a>Запрос
+В следующем примере показан запрос, который выполняет одноранговый вызов между ботом и указанным пользователем. В этом примере носитель размещается локально приложением. Для работы примера значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и клиента должны быть заменены фактическими значениями.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -370,17 +464,17 @@ Content-Type: application/json
 
 ---
 
-`<Media Session Configuration>` — это конфигурация сеанса сеанса мультимедиа, которая содержит сведения о сеансах стека мультимедиа. Конкретные сведения о аудио, видео, сведения о Ssession VBSS должны быть переданы здесь.
+`<Media Session Configuration>` — это сериализованная конфигурация сеанса мультимедиа, содержащая сведения о сеансе стека носителей. Здесь должны быть переданы конкретные сведения о звуке, видео, ssession VBSS.
 
-Ниже приводится пример blob сеанса сеанса аудио мультимедиа.
+Ниже приведен пример большого двоичного объекта сеанса звукового мультимедиа.
 
 ```json
 {\"mpUri\":\"net.tcp://bot.contoso.com:18732/MediaProcessor\",\"audioRenderContexts\":[\"14778cc4-f54c-43c7-989f-9092e34ef784\"],\"videoRenderContexts\":[],\"audioSourceContexts\":[\"a5dcfc9b-5a54-48ef-86f5-1fdd8508741a\"],\"videoSourceContexts\":[],\"dataRenderContexts\":null,\"dataSourceContexts\":null,\"supportedAudioFormat\":\"Pcm16K\",\"videoSinkEncodingFormats\":[],\"mpMediaSessionId\":\"2379cf46-acf3-4fef-a914-be9627075320\",\"regionAffinity\":null,\"skypeMediaBotsVersion\":\"1.11.1.0086\",\"mediaStackVersion\":\"2018.53.1.1\",\"mpVersion\":\"7.2.0.3881\",\"callId\":\"1b69b141-7f1a-4033-9c34-202737190a20\"}
 ```
 
->**Примечание:** Для одноранговых вызовов ожидаемые уведомления только для изменения состояния вызовов.
+>**Примечание:** Для одноранговых вызовов ожидаемые уведомления предназначены только для изменения состояния вызова.
 
-##### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -455,12 +549,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-create-a-group-call-with-service-hosted-media"></a>Пример 3. Создание группового вызова с помощью средства массовой информации службы
+### <a name="example-3-create-a-group-call-with-service-hosted-media"></a>Пример 3. Создание группового вызова с размещенным в службе носителем
 
 Это поддерживает до 5 пользователей VoIP. В примере показано, как создать групповой вызов с двумя пользователями VoIP.
-> **Примечание:** В этом примере вызову требуется `Calls.InitiateGroupCalls.All` разрешение. Созданный групповой вызов не поддерживает чат или запись.
+> **Примечание:** В этом примере вызова требуется `Calls.InitiateGroupCalls.All` разрешение. Созданный групповой вызов не поддерживает чат или запись.
 
-##### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
@@ -524,12 +618,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>Пример 4. Создание группового вызова с помощью средства массовой информации с хостингом приложения
+### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>Пример 4. Создание группового вызова с размещенным в приложении носителем
 
 Это поддерживает до 5 пользователей VoIP. В примере показано, как создать групповой вызов с двумя пользователями VoIP.
-> **Примечание:** В этом примере вызову требуется `Calls.InitiateGroupCalls.All` разрешение. Созданный групповой вызов не поддерживает чат или запись.
+> **Примечание:** В этом примере вызова требуется `Calls.InitiateGroupCalls.All` разрешение. Созданный групповой вызов не поддерживает чат или запись.
 
-##### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
@@ -594,16 +688,16 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>Пример 5. Присоединиться к запланированной встрече с средствами массовой информации службы
+### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>Пример 5. Присоединение к запланированному собранию с размещенным в службе носителем
 
-Чтобы присоединиться к запланированному собранию, нам необходимо получить потоковый id, id сообщения, id организатора и id клиента, в котором планируется собрание.
-Эти сведения можно получить из [API Get Online Meetings](../api/onlinemeeting-get.md).
+Чтобы присоединиться к запланированному собранию, необходимо получить идентификатор потока, идентификатор сообщения, идентификатор организатора и идентификатор клиента, в котором запланировано собрание.
+Эти сведения можно получить из [API get Online Meetings](../api/onlinemeeting-get.md).
 
-Значения маркера авторизации, URL-адреса вызова, id приложения, имени приложения, пользовательского именем пользователя и id клиента должны быть заменены вместе с сведениями, полученными из  [API Get Online Meetings](../api/onlinemeeting-get.md) , фактическими значениями для работы в примере.
+Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и клиента должны быть заменены вместе со сведениями, полученными из  [API get Online Meetings](../api/onlinemeeting-get.md) , фактическими значениями, чтобы пример совмещал работу.
 
-> **Примечание:** В этом примере необходимо `Calls.JoinGroupCalls.All` разрешение или `Calls.JoinGroupCalls.Chat` разрешение [, определенное для ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Примечание:** В этом примере требуется `Calls.JoinGroupCalls.All` разрешение или `Calls.JoinGroupCalls.Chat` разрешение [для конкретного ресурса](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
-##### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 
@@ -680,7 +774,7 @@ Content-Type: application/json
 
 ---
 
-##### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -767,7 +861,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a>Уведомление — создание
+#### <a name="notification---establishing"></a>Уведомление — установка
 
 ```http
 POST https://bot.contoso.com/callback
@@ -817,7 +911,7 @@ Content-Type: application/json
 
 ```
 
-##### <a name="notification---established"></a>Уведомление — установлено
+#### <a name="notification---established"></a>Уведомление — установлено
 
 ```http
 POST https://bot.contoso.com/callback
@@ -866,7 +960,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster"></a>Уведомление — список
+#### <a name="notification---roster"></a>Уведомление — список
 
 ```http
 POST https://bot.contoso.com/callback
@@ -962,12 +1056,12 @@ Content-Type: application/json
 }
 ```
 
->**Примечание:** Для сценариев присоединиться к собраниям, кроме уведомлений состояния вызовов, мы получаем уведомления реестра.
+>**Примечание:** Для сценариев присоединения к собраниям, кроме уведомлений о состоянии зова, мы получаем уведомления о списке.
 
-### <a name="example-6-join-scheduled-meeting-with-app-hosted-media"></a>Пример 6. Присоединяйтесь к запланированной встрече с средствами массовой информации, на которые было организовано приложение
-Чтобы присоединиться к собранию с помощью носители приложения, обновим конфигурацию мультимедиа с [помощью appHostedMediaConfig](../resources/apphostedmediaconfig.md) , как показано в следующем примере.
+### <a name="example-6-join-scheduled-meeting-with-app-hosted-media"></a>Пример 6. Присоединение к запланированному собранию с размещенным в приложении носителем
+Чтобы присоединиться к собранию с размещенным в приложении носителем, обновите конфигурацию мультимедиа с [помощью appHostedMediaConfig](../resources/apphostedmediaconfig.md) , как показано в следующем примере.
 
->**Примечание:** В этом примере необходимо `Calls.AccessMedia.All` разрешение или `Calls.AccessMedia.Chat` разрешение [, определенное для ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+>**Примечание:** В этом примере требуется `Calls.AccessMedia.All` разрешение или `Calls.AccessMedia.Chat` разрешение [для конкретного ресурса](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 <!-- {
   "blockType": "example",
@@ -1012,14 +1106,14 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-7-join-channel-meeting-with-service-hosted-media"></a>Пример 7. Регистрация собрания каналов со средствами массовой информации службы
-Собрание внутри канала требует определенных сведений, таких как потоковые id, messageid и сведения организатора, которые можно получить с помощью [API Get Online Meetings](../api/onlinemeeting-get.md).
+### <a name="example-7-join-channel-meeting-with-service-hosted-media"></a>Пример 7. Присоединение к собранию канала с размещенным в службе носителем
+Для собрания в канале требуются определенные сведения, такие как идентификатор потока, идентификатор сообщения и сведения организатора, которые можно получить с помощью [API get Online Meetings](../api/onlinemeeting-get.md).
 
-Значения маркера авторизации, URL-адреса вызова, id приложения, имени приложения, пользовательского именем пользователя и id клиента должны быть заменены вместе с сведениями, полученными из  [API Get Online Meetings](../api/onlinemeeting-get.md) , фактическими значениями для работы в примере.
+Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и клиента должны быть заменены вместе со сведениями, полученными из  [API get Online Meetings](../api/onlinemeeting-get.md) , фактическими значениями, чтобы пример совмещал работу.
 
-> **Примечание:** В этом примере требуется `Calls.JoinGroupCalls.All` разрешение.
+> **Примечание:** Этому примеру требуется разрешение `Calls.JoinGroupCalls.All` .
 
-##### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
 <!-- {
   "blockType": "example",
@@ -1071,13 +1165,13 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-8-join-channel-meeting-as-a-guest-with-service-hosted-media"></a>Пример 8. Регистрация собрания канала в качестве гостя со средствами массовой информации службы
-Для присоединения к собранию канала в качестве гостя необходимо создать удостоверение гостя и [](../resources/identityset.md) добавить его в качестве источника вызова в запросе на присоединение к собранию.
-Имя отображения — это имя, которое необходимо отобразить на собрании для удостоверения гостя. Идентификатор может быть уникальным идентификатором, идентифицирующий личность гостя.
+### <a name="example-8-join-channel-meeting-as-a-guest-with-service-hosted-media"></a>Пример 8. Присоединение к собранию канала в качестве гостя с размещенным в службе носителем
+Для присоединения к собранию канала в качестве гостя необходимо создать гостевое удостоверение [](../resources/identityset.md) и добавить его в качестве источника вызова в запросе на присоединение к собранию.
+Отображаемое имя — это имя, которое вы хотите отобразить на собрании для вашего гостевого удостоверения. Идентификатор может быть уникальным идентификатором, идентифицирующий гостевое удостоверение.
 
-> **Примечание:** В этом примере требуется `Calls.JoinGroupCallsAsGuest.All` разрешение.
+> **Примечание:** Этому примеру требуется разрешение `Calls.JoinGroupCallsAsGuest.All` .
 
-##### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
 <!-- {
   "blockType": "example",
@@ -1140,9 +1234,9 @@ Content-Type: application/json
 }
 ```
 
-> **Примечание:** Регистрация гостей зависит от параметров клиента для собрания. Приложение может быть положено в вестибюль, ожидая, чтобы его допустил пользователь. Это определяется свойством `isInLobby`
+> **Примечание:** Гостевое присоединение зависит от параметров клиента для собрания. Приложение может находиться в "зале ожидания" в ожидании разрешения пользователем. Это определяется свойством `isInLobby`
 
-##### <a name="notification---roster"></a>Уведомление — список
+#### <a name="notification---roster"></a>Уведомление — список
 
 ```http
 POST https://bot.contoso.com/callback
@@ -1197,17 +1291,17 @@ Content-Type: application/json
 }
 ```
 
-> **Примечание:** Приложение не будет получать реестр участников собрания, пока его не впустят из лобби
+> **Примечание:** Приложение не получит список участников собрания, пока его не допустит из зала ожидания.
 
-### <a name="example-9-create-peer-to-peer-pstn-call-with-service-hosted-media"></a>Пример 9. Создание одноранговых вызовов PSTN с помощью средства массовой информации службы
+### <a name="example-9-create-peer-to-peer-pstn-call-with-service-hosted-media"></a>Пример 9. Создание однорангового вызова ТСОП с размещенным в службе носителем
 
-> **Примечание:** Этот вызов требует разрешения Calls.Initiate.All.
+> **Примечание:** Для этого вызова требуется разрешение Calls.Initiate.All.
 
-Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+Для этого вызова требуется экземпляр приложения с назначенным номером ТСОП. Дополнительные сведения см. [в статье "Назначение боту номера телефона"](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### <a name="request"></a>Запрос
-В следующем примере показан запрос на одноранговой вызов между ботом и номером PSTN. В этом примере носители хозяйской службы. Для работы примера необходимо заменить значения маркера авторизации, URL-адреса вызова, ID экземпляра приложения, имени экземпляра приложения, ИД телефона и ID клиента.
-> **Примечание:** ID экземпляра приложения — это объектный ID экземпляра приложения. ID приложения, на который ссылались экземпляры приложений, должен соответствовать тому, который есть в маркере авторизации. Телефон — это номер телефона в формате E.164.
+В следующем примере показан запрос на одноранговый вызов между ботом и номером ТСОП. В этом примере носитель размещается службой. Для работы примера значения маркера авторизации, URL-адреса обратного вызова, идентификатора экземпляра приложения, отображаемого имени экземпляра приложения, идентификатора телефона и клиента должны быть заменены фактическими значениями.
+> **Примечание:** Идентификатор экземпляра приложения — это идентификатор объекта экземпляра приложения. Идентификатор приложения, на который ссылается экземпляр приложения, должен совпадать с идентификатором в маркере авторизации. Телефон идентификатором является номер телефона в формате E.164.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -1367,15 +1461,15 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-10-create-peer-to-peer-pstn-call-with-application-hosted-media"></a>Пример 10. Создание одноранговых вызовов PSTN с помощью носите-
+### <a name="example-10-create-peer-to-peer-pstn-call-with-application-hosted-media"></a>Пример 10. Создание однорангового вызова ТСОП с размещенным в приложении носителем
 
 > **Примечание**. В этом примере требуются разрешения Calls.Initiate.All и Calls.AccessMedia.All.
 
-Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+Для этого вызова требуется экземпляр приложения с назначенным номером ТСОП. Дополнительные сведения см. [в статье "Назначение боту номера телефона"](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### <a name="request"></a>Запрос
-В следующем примере показан запрос на одноранговой вызов между ботом и номером PSTN. В этом примере средства массовой информации локализованы приложением. Для работы примера необходимо заменить значения маркера авторизации, URL-адреса вызова, ID экземпляра приложения, имени экземпляра приложения, ИД телефона и ID клиента.
-> **Примечание:** ID экземпляра приложения — это объектный ID экземпляра приложения. ID приложения, на который ссылались экземпляры приложений, должен соответствовать тому, который есть в маркере авторизации. Телефон — это номер телефона в формате E.164.
+В следующем примере показан запрос на одноранговый вызов между ботом и номером ТСОП. В этом примере носитель размещается локально приложением. Для работы примера значения маркера авторизации, URL-адреса обратного вызова, идентификатора экземпляра приложения, отображаемого имени экземпляра приложения, идентификатора телефона и клиента должны быть заменены фактическими значениями.
+> **Примечание:** Идентификатор экземпляра приложения — это идентификатор объекта экземпляра приложения. Идентификатор приложения, на который ссылается экземпляр приложения, должен совпадать с идентификатором в маркере авторизации. Телефон идентификатором является номер телефона в формате E.164.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

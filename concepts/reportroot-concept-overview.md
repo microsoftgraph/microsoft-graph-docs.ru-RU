@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: ec4077dfb44b4135463412d56ecbb38ec0fd2be4
-ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
+ms.openlocfilehash: 8c0ea574670cd5d52d33a0ef6f8479335206cef4
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60115146"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917796"
 ---
 # <a name="microsoft-graph-reports-api-overview"></a>Обзор API отчетов Microsoft Graph
 
@@ -51,7 +51,7 @@ API отчетов Microsoft Graph позволяют получить пред�
 | Приложения AD FS | [Детальная сводка о проверяющей части (Предварительная версия)](/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta) |
 | Регистрация приложения | [Счетчик регистрации пользователей учетных данных (Предварительная версия)](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta)<br/>[Сведения о регистрации пользователей учетных данных (Предварительная версия)](/graph/api/resources/credentialuserregistrationdetails?view=graph-rest-beta) <br/>[Сведения об использовании учетных данных пользователей (Предварительная версия)](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta) <br/>[Сводка по использованию учетных данных (Предварительная версия)](/graph/api/resources/credentialusagesummary?view=graph-rest-beta)|
 | Вход в приложение | [Сводка по входу (Предварительная версия)](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta) <br/>[Данные для входа (Предварительная версия)](/graph/api/resources/applicationsignindetailedsummary?view=graph-rest-beta)|
-| Microsoft Teams | [Использование устройств](/graph/api/resources/microsoft-teams-device-usage-reports?view=graph-rest-1.0)<br/>[Действия пользователей](/graph/api/resources/microsoft-teams-user-activity-reports?view=graph-rest-1.0) |
+| Microsoft Teams | [Использование устройств](/graph/api/resources/microsoft-teams-device-usage-reports?view=graph-rest-1.0)<br/>[Использование команды](/graph/api/resources/microsoft-teams-team-usage-reports?view=graph-rest-beta)<br/>[Действия пользователей](/graph/api/resources/microsoft-teams-user-activity-reports?view=graph-rest-1.0)|
 | Microsoft 365 (общая) | [Активации](/graph/api/resources/office-365-activations-reports?view=graph-rest-1.0)<br/>[Активные пользователи](/graph/api/resources/office-365-active-users-reports?view=graph-rest-1.0)<br/>[Действия в группах](/graph/api/resources/office-365-groups-activity-reports?view=graph-rest-1.0) |
 | OneDrive | [Действия](/graph/api/resources/onedrive-activity-reports?view=graph-rest-1.0)<br/>[Использование](/graph/api/resources/onedrive-usage-reports?view=graph-rest-1.0) |
 | Outlook | [Действия](/graph/api/resources/email-activity-reports?view=graph-rest-1.0)<br/>[Использование приложений](/graph/api/resources/email-app-usage-reports?view=graph-rest-1.0)<br/>[Использование почтовых ящиков](/graph/api/resources/mailbox-usage-reports?view=graph-rest-1.0) |

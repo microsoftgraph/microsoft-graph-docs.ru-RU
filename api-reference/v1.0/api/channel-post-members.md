@@ -5,18 +5,18 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0768fdfe759fc99e39057a978a947b8045bed5c2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c6ea35bfef3de2d51f0c374e3b4a2f1f67cef3ea
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124961"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917761"
 ---
 # <a name="add-member-to-channel"></a>Добавление участника в канал
 
 Пространство имен: microsoft.graph
 
-Добавление [conversationMember в](../resources/conversationmember.md) [канал.](../resources/channel.md) Эта операция разрешена только для каналов со значением **membershipType** `private` .
+Добавьте [conversationMember](../resources/conversationmember.md) в [канал](../resources/channel.md). Эта операция разрешена только для каналов **membershipType** со значением `private`.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,8 +47,8 @@ POST /teams/{team-id}/channels/{channel-id}/members
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|roles|Коллекция строк|Роль пользователя. Должно быть `owner` или пусто.|
-|пользователь|[user](../resources/user.md)|Пользователь, который должен добавить в канал.|
+|roles|Коллекция строк|Роль пользователя. Должен быть или `owner` пустым.|
+|пользователь|[user](../resources/user.md)|Пользователь, добавляемого в канал.|
 
 ## <a name="response"></a>Отклик
 
@@ -56,7 +56,7 @@ POST /teams/{team-id}/channels/{channel-id}/members
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-add-a-member-to-a-channel"></a>Пример 1. Добавление участника в канал
+### <a name="example-1-add-a-member-to-a-channel"></a>Пример 1. Добавление члена в канал
 
 #### <a name="request"></a>Запрос
 
@@ -185,7 +185,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-add-a-member-to-a-channel-using-user-principal-name"></a>Пример 3. Добавление участника в канал с использованием основного имени пользователя
+### <a name="example-3-add-an-owner-to-a-channel-using-user-principal-name"></a>Пример 3. Добавление владельца в канал с использованием имени участника-пользователя
 
 #### <a name="request"></a>Запрос
 

@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c98483bd92db368b997692b1856ce6a475c15d37
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: b12d80ae786abc93d9b3e00358f7b18d42b89140
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695133"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917775"
 ---
 # <a name="call-resource-type"></a>Тип ресурса call
 
@@ -77,7 +77,8 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | answeredBy          | [participantInfo](participantinfo.md)                                                                  | Участник, ответивший на вызов. Только для чтения.                                                                                                                                |
 | callRoutes          | Коллекция [callRoute](callroute.md)                                                                   | Сведения маршрутизации о том, как был перенаправлен вызов. Только для чтения.                                                                                                                |
 | callbackUri         | String                                                                                                 | URL-адрес обратного вызова, на который направляются обратные вызовы. Должно быть задано значение `https`.                                                                                                                               |
-| callChainId         | String                                                                                                 | Уникальный идентификатор всех звонков участника конференции или уникальный идентификатор двух звонков участника в звонке P2P.  Необходимо скопировать из `Microsoft.Graph.Call.CallChainId`. |
+| callChainId         | String                                                                                                 | Уникальный идентификатор всех звонков участника конференции или уникальный идентификатор звонков двух участников в звонке P2P. Необходимо скопировать из `Microsoft.Graph.Call.CallChainId`. |
+| callOptions            | [outgoingCallOptions](outgoingcalloptions.md)                                                         | Содержит необязательные функции для вызова.   |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | Сведения о чате. Обязательные сведения для сценариев собраний.                                                                                                                                |
 | direction           | callDirection                                                                                                 | Направление вызова. Возможные значения: `incoming` или `outgoing`. Только для чтения.                                                                                            |
 | id                  | String                                                                                                 | Идентификатор вызова. Только для чтения.                                                                                                                                                                        |
@@ -107,6 +108,7 @@ myParticipantId     | String                                                    
 | audioRoutingGroups  | Коллекция [audioRoutingGroup](audioroutinggroup.md) | Только для чтения. Допускается значение null.                                                |
 | operations          | Коллекция [commsOperation](commsoperation.md)       | Только для чтения. Допускается значение null.                                                |
 | participants        | Коллекция [participant](participant.md)             | Только для чтения. Допускается значение null.                                                |
+| contentSharingSessions        | Коллекция [contentSharingSession](contentsharingsession.md)             | Только для чтения. Допускается значение null.                                                |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -119,7 +121,9 @@ myParticipantId     | String                                                    
     "answeredBy",
     "callRoutes",
     "callChainId",
+    "callOptions",
     "chatInfo",
+    "contentSharingSessions",
     "direction",
     "id",
     "incomingContext",
@@ -150,7 +154,9 @@ myParticipantId     | String                                                    
   "callRoutes": [{"@odata.type": "#microsoft.graph.callRoute"}],
   "callbackUri": "String",
   "callChainId": "String",
+  "callOptions": {"@odata.type": "#microsoft.graph.outgoingCallOptions"},
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
+  "contentSharingSessions": [{ "@odata.type": "microsoft.graph.contentSharingSession" }],
   "direction": "incoming | outgoing",
   "id": "String (identifier)",
   "incomingContext": {"@odata.type": "#microsoft.graph.incomingContext"},

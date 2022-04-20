@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 495c5b4d13c49ff782f853672e41546eacbe2237
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 03bc25bdda2e5e47609a5d6b7f7d4f49b6260aaf
+ms.sourcegitcommit: 813bed8cbb61a5f892e8a227afc17c66687ab1fb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133160"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974484"
 ---
 # <a name="update-plannerbucket"></a>Обновление объекта plannerbucket
 
@@ -39,18 +39,17 @@ PATCH /planner/buckets/{id}
 | Авторизация  | Bearer {token}. Обязательный. |
 | If-Match  | Последнее известное значение ETag обновляемого объекта **plannerBucket**. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |name|String|Имя сегмента.|
 |orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определен в статье [Использование указаний order в Планировщике](../resources/planner-order-hint-format.md).|
-|planId|Строка|Идентификатор плана, к которому относится сегмент.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает `204 No Content` отклик и пустой контент. Если запрос указывает заголовку с предпочтением, этот метод возвращает код ответа и обновленный `Prefer` `return=representation` объект `200 OK` [plannerBucket](../resources/plannerbucket.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `204 No Content` ответ и пустое содержимое. Если запрос задает заголовок `Prefer` `return=representation` с предпочтениями, `200 OK` этот метод возвращает код отклика и обновленный объект [plannerBucket](../resources/plannerbucket.md) в тексте отклика.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
 

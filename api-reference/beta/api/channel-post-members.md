@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 003bb04755c4106661d6e315f601341c9294d8ce
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: a1f5f669b54d900e58982242273d5e76bccbab04
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64684601"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917691"
 ---
 # <a name="add-member-to-channel"></a>Добавление участника в канал
 
@@ -28,7 +28,7 @@ ms.locfileid: "64684601"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChannelMember.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| ChannelMember.ReadWrite.All |
+|Приложение| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -50,7 +50,7 @@ POST /teams/{team-id}/channels/{channel-id}/members
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |roles|Коллекция строк|Роль пользователя. Должен быть или `owner` пустым.|
-|user|[user](../resources/user.md)|Пользователь, добавляемого в канал.|
+|пользователь|[user](../resources/user.md)|Пользователь, добавляемого в канал.|
 
 ## <a name="response"></a>Отклик
 
@@ -207,7 +207,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-add-a-member-to-a-channel-using-user-principal-name"></a>Пример 3. Добавление участника в канал с помощью имени участника-пользователя
+### <a name="example-3-add-an-owner-to-a-channel-using-user-principal-name"></a>Пример 3. Добавление владельца в канал с использованием имени участника-пользователя
 
 #### <a name="request"></a>Запрос
 

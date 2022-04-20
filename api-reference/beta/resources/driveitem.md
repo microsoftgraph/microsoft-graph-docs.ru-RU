@@ -5,12 +5,12 @@ title: driveItem
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: da35d9cb395e1aab22817e4304326848e9970791
-ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
+ms.openlocfilehash: f0bf0d668aacd62cf452f7fa8a469d7e6b9663f7
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63559995"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917733"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
@@ -43,44 +43,45 @@ ms.locfileid: "63559995"
 
 ## <a name="methods"></a>Методы
 
-| Метод                                                   | Путь REST
-|:---------------------------------------------------------|:------------------
-| [Получение элемента](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
-| [Список действий](../api/activities-list.md)             | `GET /drive/items/{item-id}/activities`
-| [Получение аналитики][]                                        | `GET /drive/items/{item-id}/analytics`
-| [Получение действий по интервалу][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
-| [Список дочерних элементов](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
-| [Список версий](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
-| [Создание элемента](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
-| [Обновление элемента](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
-| [Отправка содержимого](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
-| [Скачивание содержимого](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
-| [Скачивание файла в определенном формате][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
-| [Удаление элемента](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
-| [Элемент восстановления](../api/driveitem-restore.md)              | `POST /drive/items/{item-id}/restore`
-| [Перемещение элемента](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
-| [Копирование элемента](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
-| [Поиск элементов](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
-| [Перечисление изменений на диске](../api/driveitem-delta.md)     | `GET /drive/root/delta`
-| [Следуйте элементу](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
-| [Элемент unfollow](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
-| [Перечисление эскизов](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
-| [Создание ссылки совместного доступа](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
-| [Добавление разрешений](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
-| [Список разрешений](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [Удаление разрешения](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
-| [Получение канала WebSocket][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
-| [Предварительный просмотр элемента][item-preview]                             | `POST /drive/items/{item-id}/preview`
-| [Регистрация](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
-| [Выписка](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
-| [Отоимка грантов](../api/permission-revokegrants.md)   | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`
+| Метод                                                                       | Путь REST                                                              |
+|:-----------------------------------------------------------------------------|:-----------------------------------------------------------------------|
+| [Получение элемента](../api/driveitem-get.md)                                          | `GET /drive/items/{item-id}`                                           |
+| [Список действий](../api/activities-list.md)                                 | `GET /drive/items/{item-id}/activities`                                |
+| [Получение аналитики][]                                                            | `GET /drive/items/{item-id}/analytics`                                 |
+| [Получение действий по интервалу][]                                               | `GET /drive/items/{item-id}/getActivitiesByInterval`                   |
+| [Список дочерних элементов](../api/driveitem-list-children.md)                           | `GET /drive/items/{item-id}/children`                                  |
+| [Список версий](../api/driveitem-list-versions.md)                           | `GET /drive/items/{item-id}/versions`                                  |
+| [Создание элемента](../api/driveitem-post-children.md)                             | `POST /drive/items/{item-id}/children`                                 |
+| [Обновление элемента](../api/driveitem-update.md)                                    | `PATCH /drive/items/{item-id}`                                         |
+| [Отправка содержимого](../api/driveitem-put-content.md)                            | `PUT /drive/items/{item-id}/content`                                   |
+| [Скачивание содержимого](../api/driveitem-get-content.md)                          | `GET /drive/items/{item-id}/content`                                   |
+| [Скачивание файла в определенном формате][download-format]                             | `GET /drive/items/{item-id}/content?format={format}`                   |
+| [Удаление элемента](../api/driveitem-delete.md)                                    | `DELETE /drive/items/{item-id}`                                        |
+| [Элемент восстановления](../api/driveitem-restore.md)                                  | `POST /drive/items/{item-id}/restore`                                  |
+| [Перемещение элемента](../api/driveitem-move.md)                                        | `PATCH /drive/items/{item-id}`                                         |
+| [Копирование элемента](../api/driveitem-copy.md)                                        | `POST /drive/items/{item-id}/copy`                                     |
+| [Поиск элементов](../api/driveitem-search.md)                                   | `GET /drive/items/{item-id}/search(q='text')`                          |
+| [Перечисление изменений на диске](../api/driveitem-delta.md)                         | `GET /drive/root/delta`                                                |
+| [Элемент "Подписка"](../api/driveitem-follow.md)                                    | `POST /drives/{drive-id}/items/{item-id}/follow`                       |
+| [Элемент Unfollow](../api/driveitem-unfollow.md)                                | `POST /drives/{drive-id}/items/{item-id}/unfollow`                     |
+| [Перечисление эскизов](../api/driveitem-list-thumbnails.md)                       | `GET /drive/items/{item-id}/thumbnails`                                |
+| [Создание ссылки совместного доступа](../api/driveitem-createlink.md)                        | `POST /drive/items/{item-id}/createLink`                               |
+| [Добавление разрешений](../api/driveitem-invite.md)                                | `POST /drive/items/{item-id}/invite`                                   |
+| [Список разрешений](../api/driveitem-list-permissions.md)                     | `GET /drive/items/{item-id}/permissions`                               |
+| [Удаление разрешения](../api/permission-delete.md)                             | `DELETE /drive/items/{item-id}/permissions/{perm-id}`                  |
+| [Получение канала WebSocket][getWebSocket]                                        | `GET /drive/root/subscriptions/socketIo`                               |
+| [Предварительный просмотр элемента][item-preview]                                                 | `POST /drive/items/{item-id}/preview`                                  |
+| [Регистрация](../api/driveitem-checkin.md)                                      | `POST /drives/{driveId}/items/{itemId}/checkin`                        |
+| [Выписка](../api/driveitem-checkout.md)                                    | `POST /drives/{driveId}/items/{itemId}/checkout`                       |
+| [Отмена предоставления](../api/permission-revokegrants.md)                           | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`      |
+| [Извлечение меток конфиденциальности](../api/driveitem-extractsensitivitylabels.md)   | `POST /drive/items/{item-id}/extractSensitivityLabels`                 |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство             | Тип               | Описание
 |:---------------------|:-------------------|:---------------------------------
 | audio                | [audio][]          | Метаданные звукового файла, если элемент — звуковой файл. Только для чтения. Только в личном хранилище OneDrive.
-| bundle               | [bundle][]         | Пакет метаданных, если элемент является пакетом. Только для чтения.
+| bundle               | [bundle][]         | Метаданные пакета, если элемент является пакетом. Только для чтения.
 | содержимое              | Поток             | Поток содержимого, если элемент представляет файл.
 | createdBy            | [identitySet][]    | Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.
 | createdDateTime      | DateTimeOffset     | Дата и время создания элемента. Только для чтения.
@@ -97,11 +98,11 @@ ms.locfileid: "63559995"
 | lastModifiedDateTime | DateTimeOffset     | Дата и время последнего изменения элемента. Только для чтения.
 | location             | [geoCoordinates][] | Метаданные местоположения, если в роли элемента выступают данные о местоположении. Только для чтения.
 | malware              | [malware][]        | Метаданные вредоносной программы, если обнаружено, что элемент содержит вредоносную программу. Только для чтения.
-| мультимедиа                | [media][]          | Сведения о элементе мультимедиа (аудио или видео). Чтение и запись. Только на OneDrive для бизнеса и SharePoint.
+| Носителя                | [media][]          | Сведения об элементе мультимедиа (аудио или видео). Чтение и запись. Только OneDrive для бизнеса и SharePoint.
 | name                 | String             | Имя элемента (имя и расширение файла). Чтение и запись.
 | package              | [package][]        | В случае наличия указывает, что этот элемент — пакет, а не папка или файл. Пакеты обрабатываются как файлы в одном контексте, и как папки — в другом. Только для чтения.
 | parentReference      | [itemReference][]  | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.
-| pendingOperations    | [pendingOperations][] | При этом указывается, что одна или несколько операций, которые могут повлиять на состояние driveItem, находятся в ожидании завершения. Только для чтения.
+| pendingOperations    | [pendingOperations][] | При наличии указывает, что одна или несколько операций, которые могут повлиять на состояние driveItem, ожидают завершения. Только для чтения.
 | photo;                | [photo][]          | Метаданные фотографии, если в роли элемента выступает фотография. Только для чтения.
 | publication          | [publicationFacet][] | Предоставляет сведения о состоянии элемента (опубликован или получен для изменения) в расположениях, поддерживающих такие действия. Это свойство не возвращается по умолчанию. Только для чтения. |
 | remoteItem           | [remoteItem][]     | Данные удаленного элемента, если элемент используется совместно на диске, но не на том, к которому получен доступ в данный момент. Только для чтения.
@@ -111,7 +112,7 @@ ms.locfileid: "63559995"
 | sharepointIds        | [sharepointIds][]  | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
 | size                 | Int64              | Размер элемента (в байтах). Только для чтения.
 | specialFolder        | [specialFolder][]  | Если текущий элемент также доступен как специальная папка, возвращается этот аспект. Только для чтения.
-| source               | [driveItemSource][]| Сведения об источнике элемента диска. Только для чтения. Только на OneDrive для бизнеса и SharePoint.
+| source               | [driveItemSource][]| Сведения об источнике элемента диска. Только для чтения. Только OneDrive для бизнеса и SharePoint.
 | video                | [video][]          | Метаданные видео, если в роли элемента выступает видео. Только для чтения.
 | webDavUrl            | Строка             | URL-адрес элемента, совместимый с WebDAV.
 | webUrl               | String             | URL-адрес для отображения ресурса в браузере. Только для чтения.

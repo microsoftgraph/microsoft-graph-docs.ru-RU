@@ -1,34 +1,34 @@
 ---
-title: тип ресурса teamworkUserIdentity
+title: Тип ресурса teamworkUserIdentity
 description: Представляет пользователя в Microsoft Teams.
 author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d6989f7b3c5689fefe8e9516e25fd6ff3777fe16
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 86b827be0a7d947a627f41f97b4002b7406006ca
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59128160"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917614"
 ---
-# <a name="teamworkuseridentity-resource-type"></a>тип ресурса teamworkUserIdentity
+# <a name="teamworkuseridentity-resource-type"></a>Тип ресурса teamworkUserIdentity
 
 Пространство имен: microsoft.graph
 
-Представляет пользователя **в** Microsoft Teams.
+Представляет пользователя **в Microsoft Teams**.
 
 
-Наследует от [удостоверения](../resources/identity.md).
+Наследуется от [удостоверения](../resources/identity.md).
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Унаследованный от [удостоверения](../resources/identity.md). Отображаемое имя пользователя. Необязательное.|
-|id|String|Унаследованный от [удостоверения](../resources/identity.md). ID пользователя. |
-|userIdentityType|teamworkUserIdentityType| Тип пользователя. Возможные значения: `aadUser` `onPremiseAadUser` , , , , , `anonymousGuest` , `federatedUser` и `personalMicrosoftAccountUser` `skypeUser` `phoneUser` `unknownFutureValue` .|
+|displayName|String|Наследуется от [удостоверения](../resources/identity.md). Отображаемое имя пользователя. Необязательное свойство.|
+|id|String|Наследуется от [удостоверения](../resources/identity.md). Идентификатор пользователя. |
+|userIdentityType|teamworkUserIdentityType| Тип пользователя. Возможные значения: `aadUser`, , `onPremiseAadUser`, `anonymousGuest`, `federatedUser`, `personalMicrosoftAccountUser`, `skypeUser`, и `unknownFutureValue` `phoneUser``emailUser`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

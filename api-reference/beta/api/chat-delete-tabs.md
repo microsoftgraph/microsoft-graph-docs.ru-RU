@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 22b2319e753b93d85f59f89884f7e0829ddc3acb
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 5cc2f84352dbaae66191e87410ca3b182d130b50
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225576"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917719"
 ---
 # <a name="delete-tab-from-chat"></a>Удаление вкладки из чата
 
@@ -18,18 +18,18 @@ ms.locfileid: "62225576"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите (открепите) вкладку из указанного [чата.](../resources/chat.md) 
+Удалите (открепите) вкладку из указанного [чата](../resources/chat.md). 
 
-> **Примечание.** Если чат связан с экземпляром [onlineMeeting,](../resources/onlinemeeting.md) вкладка будет удалена с собрания.
+> **Примечание**. Если чат связан с экземпляром [onlineMeeting](../resources/onlinemeeting.md) , вкладка будет удалена из собрания.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | TeamsTab.Delete.Chat,*TeamsTab.ReadWrite.Chat,* TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Application | TeamsTab.Delete.Chat *, TeamsTab.ReadWrite.Chat*, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -49,7 +49,7 @@ DELETE /chats/{chat-id}/tabs/{tab-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -90,7 +90,7 @@ DELETE https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f29
 ---
 
 ### <a name="response"></a>Отклик
-Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",

@@ -5,29 +5,29 @@ author: subray
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 223a19a9bad471f7b4f3cfb376e1ed1dc79769c6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fa6ab0da8eb50a038e6b75cbf0b777bda90a73c6
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122323"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917593"
 ---
 # <a name="delete-tab-from-chat"></a>Удаление вкладки из чата
 
 Пространство имен: microsoft.graph
 
-Удалите (открепите) вкладку из указанного [чата.](../resources/chat.md) 
+Удалите (открепите) вкладку из указанного [чата](../resources/chat.md). 
 
-> **Примечание.** Если чат связан с экземпляром [onlineMeeting,](../resources/onlinemeeting.md) вкладка будет удалена с собрания.
+> **Примечание**. Если чат связан с экземпляром [onlineMeeting](../resources/onlinemeeting.md) , вкладка будет удалена из собрания.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Application | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -41,12 +41,12 @@ DELETE /chats/{chat-id}/tabs/{tab-id}
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
