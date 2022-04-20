@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 3737a7203deb844a7fb45cb34e823dba02bb5b15
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 39dabdbc0823099d53ea63dcfbe86b8626ecdae6
+ms.sourcegitcommit: 813bed8cbb61a5f892e8a227afc17c66687ab1fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477568"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974463"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>Использование Postman с API соединителей Microsoft Graph
 
@@ -19,7 +19,7 @@ ms.locfileid: "64477568"
 ## <a name="prerequisites"></a>Предварительные требования
 
 * Учетная запись Майкрософт либо рабочая или учебная учетная запись.
-* Доступ к клиенту разработчика Microsoft 365. Если у вас его нет, вы можете зарегистрироваться в [программе для разработчиков Microsoft 365], чтобы получить бесплатную подписку разработчика.
+* Доступ к клиенту разработчика Microsoft 365. Если у вас его нет, вы можете зарегистрироваться в программе разработчиков [Microsoft 365](https://developer.microsoft.com/en-us/microsoft-365/dev-program), чтобы получить бесплатную подписку для разработчиков.
 
 ## <a name="step-1---fork-the-microsoft-graph-postman-collection"></a>Шаг 1. Разветвление коллекции Microsoft Graph Postman
 
