@@ -1,39 +1,59 @@
 ---
-title: Get unifiedRoleAssignment
-description: Ознакомьтесь с свойствами и отношениями объекта unifiedRoleAssignment.
+title: Получение unifiedRoleAssignment
+description: Чтение свойств и связей объекта unifiedRoleAssignment.
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5bc137caa9eb23f65a8d79515dc5484c48eb4629
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 3e090cb660e7f2dc22a1bb229cf96bbdd8033c7d
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672338"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016969"
 ---
-# <a name="get-unifiedroleassignment"></a>Get unifiedRoleAssignment
+# <a name="get-unifiedroleassignment"></a>Получение unifiedRoleAssignment
 
 Пространство имен: microsoft.graph
 
-Извлечение свойств и связей объекта [unifiedRoleAssignment](../resources/unifiedroleassignment.md) .
+Получение свойств и связей объекта [unifiedRoleAssignment](../resources/unifiedroleassignment.md) .
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
+### <a name="for-the-directory-azure-ad-provider"></a>Для поставщика каталога (Azure AD)
+
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+
+### <a name="for-the-entitlement-management-provider"></a>Для поставщика управления правами
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированное (рабочая или учебная учетная запись) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All  |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
+
+Получение назначения роли для поставщика каталогов:
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /roleManagement/directory/roleAssignments/{id}
+```
+
+Получение назначения роли для поставщика управления правами:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleAssignments/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -52,11 +72,11 @@ GET /roleManagement/directory/roleAssignments/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `200 OK` ответа и запрашиваемого объекта [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и запрашиваемый объект [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1--get-the-details-of-a-role-assignment"></a>Пример 1. Сведения о назначении ролей
+### <a name="example-1--get-the-details-of-a-role-assignment"></a>Пример 1. Получение сведений о назначении роли
 
 #### <a name="request"></a>Запрос
 
@@ -103,7 +123,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lA
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -126,11 +146,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-details-of-a-role-assignment-and-expand-the-relationships"></a>Пример 2. Сведения о назначении ролей и расширении отношений
+### <a name="example-2-get-the-details-of-a-role-assignment-and-expand-the-relationships"></a>Пример 2. Получение сведений о назначении роли и расширение связей
 
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса с параметром `$expand` запроса.
+Ниже приведен пример запроса с параметром `$expand` запроса.
 
 
 

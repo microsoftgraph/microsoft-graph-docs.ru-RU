@@ -1,34 +1,50 @@
 ---
-title: Список unifiedRoleAssignments
-description: Получите список объектов unifiedRoleAssignment.
+title: Перечисление объектов unifiedRoleAssignment
+description: Получение списка объектов unifiedRoleAssignment.
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bcba974b749092103730cbe492caa23d3c994360
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: e5d4bb44d6aacad34ee248aeb731ff24b6235cd3
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672639"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016983"
 ---
-# <a name="list-unifiedroleassignments"></a>Список unifiedRoleAssignments
+# <a name="list-unifiedroleassignments"></a>Перечисление объектов unifiedRoleAssignment
 
 Пространство имен: microsoft.graph
 
-Получите список [объектов unifiedRoleAssignment](../resources/unifiedroleassignment.md) для поставщика каталогов.
+Получение списка объектов [unifiedRoleAssignment](../resources/unifiedroleassignment.md) для поставщика RBAC.
+
+В настоящее время поддерживаются следующие поставщики RBAC:
+- каталог (Azure AD)
+- управление правами (Azure AD)
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
+### <a name="for-the-directory-azure-ad-provider"></a>Для поставщика каталога (Azure AD)
+
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+
+### <a name="for-the-entitlement-management-provider"></a>Для поставщика управления правами
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированное (рабочая или учебная учетная запись) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
+
+Чтобы получить список назначений ролей для поставщика каталогов:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,9 +54,27 @@ GET /roleManagement/directory/roleAssignments?$filter=principalId eq '{principal
 GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 ```
 
+Чтобы получить список назначений ролей для поставщика управления правами:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=principalId eq '{principal id}'
+
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
+
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'
+```
+
 ## <a name="query-parameters"></a>Параметры запроса
 
-Эта операция требует параметра `$filter` запроса для запроса определенных экземпляров назначений ролей. Вы можете фильтровать свойства `roleDefinitionId` или `principalId` свойства. Свойство `roleDefinitionId` может быть как объектом ролей, так и **шаблономId**. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Для выполнения этой операции требуется параметр `$filter` запроса для запроса назначений ролей для поддерживаемых поставщиков RBAC.
+
+Для поставщика каталогов необходимо выполнить фильтрацию по свойствам **roleDefinitionId** или **principalId** . Свойство **roleDefinitionId** может быть идентификатором объекта роли или значением **свойства templateId** .
+
+Для поставщика управления правами необходимо выполнить фильтрацию по свойствам **roleDefinitionId**, **principalId** или **appScopeId** .
+
+Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -54,11 +88,11 @@ GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{role
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения `200 OK` этот метод возвращает код ответа и коллекцию объектов [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-request-using-a-filter-on-roledefinitionid-and-expand-the-principal-object"></a>Пример 1. Запрос на использование фильтра roleDefinitionId и расширение основного объекта
+### <a name="example-1-request-using-a-filter-on-roledefinitionid-and-expand-the-principal-object"></a>Пример 1. Запрос на использование фильтра по roleDefinitionId и развертывание основного объекта
 
 #### <a name="request"></a>Запрос
 
@@ -106,7 +140,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$f
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -180,7 +214,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-request-using-a-filter-on-principalid"></a>Пример 2. Запрос на использование фильтра на principalId
+### <a name="example-2-request-using-a-filter-on-principalid"></a>Пример 2. Запрос с использованием фильтра по principalId
 
 #### <a name="request"></a>Запрос
 
@@ -228,7 +262,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$f
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -257,6 +291,55 @@ Content-type: application/json
             "resourceScope": "/",
             "directoryScopeId": "/",
             "roleDefinitionId": "f2ef992c-3afb-46b9-b7cf-a126ee74c451"
+        }
+    ]
+}
+```
+
+### <a name="example-3-request-using-filter-for-role-assignments-on-an-access-package-catalog-and-expand-the-principal-object"></a>Пример 3. Запрос на $filter назначения ролей в каталоге пакетов для доступа и развертывание основного объекта
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_roleAssignments_3"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc'&$expand=principal
+```
+
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "id": "900633fe-2508-4b13-a561-a15e320ad35f",
+            "principalId": "39228473-522e-4533-88cc-a9553180cb99",
+            "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+            "appScopeId": "/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc",
+            "principal": {
+                "@odata.type": "#microsoft.graph.user",
+                "id": "39228473-522e-4533-88cc-a9553180cb99"
+            }
         }
     ]
 }

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b30de9c7078d879fedec5840ad83550588375ad0
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: 21c5990ede8784afc6bc4b4be1fb0b46409cd6c9
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63516392"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016955"
 ---
 # <a name="delete-extensionproperty"></a>Удаление объекта extensionProperty
 
@@ -35,7 +35,7 @@ ms.locfileid: "63516392"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /applications/{id}/extensionProperties/{id}
+DELETE /applications/{application ObjectId}/extensionProperties/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -96,7 +96,7 @@ DELETE https://graph.microsoft.com/beta/applications/fd918e4b-c821-4efb-b50a-5ed
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

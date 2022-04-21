@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: eed79b67204666ae0d29cd2cff975b4deeb50676
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: a9fa75dd7dd1d48305fffb4871d5dacd1da1fdd8
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629794"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016927"
 ---
 # <a name="delete-unifiedroleassignment"></a>Удаление unifiedRoleAssignment
 
 Пространство имен: microsoft.graph
 
-Удаление [объекта unifiedRoleAssignment](../resources/unifiedRoleAssignment.md) .
+Удаление объекта [unifiedRoleAssignment](../resources/unifiedRoleAssignment.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,21 +26,21 @@ ms.locfileid: "64629794"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | RoleManagement.ReadWrite.Directory |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | RoleManagement.ReadWrite.Directory |
+| Делегированное (рабочая или учебная учетная запись)     | RoleManagement.ReadWrite.Directory |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | RoleManagement.ReadWrite.Directory |
 
-### <a name="for-the-entitlement-management-provider"></a>Поставщик прав на управление правами
+### <a name="for-the-entitlement-management-provider"></a>Для поставщика управления правами
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EntitlementManagement.ReadWrite.All  |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись) |  EntitlementManagement.ReadWrite.All  |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Удаление назначения роли у поставщика каталогов:
+Удалите назначение ролей из поставщика каталогов:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -48,7 +48,7 @@ ms.locfileid: "64629794"
 DELETE /roleManagement/directory/roleAssignments/{id}
 ```
 
-Удаление назначения роли у поставщика управления правами:
+Удалите назначение ролей у поставщика управления правами:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -60,7 +60,7 @@ DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -116,7 +116,7 @@ DELETE https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

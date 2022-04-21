@@ -5,24 +5,24 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8dc7c850357c8f7c260d2ef1afa858118243e008
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 7e3e0cc06496b3328ab79b1058bb15f747645238
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394245"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016808"
 ---
 # <a name="get-extensionproperty"></a>Получение объекта extensionProperty
 Пространство имен: microsoft.graph
 
-Чтение [объекта extensionProperty](../resources/extensionproperty.md) .
+Чтение объекта [extensionProperty](../resources/extensionproperty.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Application.Read.All, Application.ReadWrite.All    |
 |Приложение | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
@@ -33,7 +33,7 @@ ms.locfileid: "63394245"
 }
 -->
 ``` http
-GET /applications/{applicationsId}/extensionProperties/{extensionPropertyId}
+GET /applications/{application ObjectId}/extensionProperties/{extensionPropertyId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -49,7 +49,7 @@ GET /applications/{applicationsId}/extensionProperties/{extensionPropertyId}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект extensionProperty](../resources/extensionproperty.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [extensionProperty](../resources/extensionproperty.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

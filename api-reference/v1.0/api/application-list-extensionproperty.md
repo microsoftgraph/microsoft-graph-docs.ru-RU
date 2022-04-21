@@ -1,22 +1,22 @@
 ---
-title: Свойства расширения списка
-description: Извлечение списка объектов extensionproperty.
+title: Список объектов extensionProperties
+description: Получение списка объектов extensionproperty.
 ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: bb05950e79888f36a3cacdf03cf3824376982431
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: c01afa6ffa794e4da28edb9d7108d0da916e38d3
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335110"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016976"
 ---
-# <a name="list-extensionproperties"></a>Свойства расширения списка
+# <a name="list-extensionproperties"></a>Список объектов extensionProperties
 
 Пространство имен: microsoft.graph
 
-Получение списка [объектов extensionProperty](../resources/extensionproperty.md) в приложении.
+Получение списка объектов [extensionProperty](../resources/extensionproperty.md) в приложении.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,7 +24,7 @@ ms.locfileid: "63335110"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
+|Делегированное (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Application.Read.All, Application.ReadWrite.All |
 |Приложение | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
@@ -33,7 +33,7 @@ ms.locfileid: "63335110"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /applications/{id}/extensionProperties
+GET /applications/{application ObjectId}/extensionProperties
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -52,7 +52,7 @@ GET /applications/{id}/extensionProperties
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию [объектов extensionProperty](../resources/extensionproperty.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [extensionProperty](../resources/extensionproperty.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/applications/fd918e4b-c821-4efb-b50a-5eddd2
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
