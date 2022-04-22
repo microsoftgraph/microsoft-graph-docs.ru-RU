@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b12d80ae786abc93d9b3e00358f7b18d42b89140
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: b1b2dc2890686d61845223a517698096ef1d9a0a
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917775"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016817"
 ---
 # <a name="call-resource-type"></a>Тип ресурса call
 
@@ -53,8 +53,9 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | [Отключение звука всех участников](../api/participant-muteall.md)             | [commsOperation](commsoperation.md)                         | Отключение звука всех участников звонка.                                              |
 | [Отключение звука участника](../api/participant-mute.md)                     | [muteParticipantOperation](muteparticipantoperation.md)     | Отключение звука участника в групповом вызове.                                           |
 | [Настройка звукового микшера](../api/participant-configuremixer.md)      | [commsOperation](commsoperation.md)                         | Настройка звука в многопользовательской беседе.                                     |
-| [Создание объекта audioRoutingGroup](../api/call-post-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)                   | Создание нового объекта audioRoutingGroup путем публикации в коллекции audioRoutingGroups. |
-| [Перечисление AudioRoutingGroups](../api/call-list-audioroutinggroups.md)  | Коллекция [audioRoutingGroup](audioroutinggroup.md)        | Получение коллекции объектов audioRoutingGroup.                                      |
+| [Создание объекта audioRoutingGroup](../api/call-post-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)                   | Создание нового объекта **audioRoutingGroup** путем публикации в коллекции audioRoutingGroups. |
+| [Перечисление AudioRoutingGroups](../api/call-list-audioroutinggroups.md)  | Коллекция [audioRoutingGroup](audioroutinggroup.md)        | Получение коллекции объектов **audioRoutingGroup**.                                      |
+| [Добавление представления "Большая галерея"](../api/call-addlargegalleryview.md)            | [addLargeGalleryViewOperation](addlargegalleryviewoperation.md)  | Добавление представления "Большая галерея" в вызов.                                      |
 | **Интерактивный голосовой ответ**                                     |                                                             |                                                                                 |
 | [PlayPrompt](../api/call-playprompt.md)                            | [playPromptOperation](playpromptoperation.md)               | Воспроизведение запроса в вызове.                                                        |
 | [RecordResponse](../api/call-record.md)                            | [recordOperation](recordoperation.md)                       | Запись короткого голосового ответа звонящего.                                        |
