@@ -1,44 +1,50 @@
 ---
-title: Настройка области обзора доступа с помощью microsoft API Graph
-description: Узнайте, как использовать API обзоров доступа в Microsoft Graph для просмотра доступа к ресурсам Azure AD.
+title: Настройка области проверки доступа с помощью microsoft API Graph
+description: Узнайте, как использовать API проверок доступа в Microsoft Graph для проверки доступа к ресурсам Azure AD.
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 4d1439e2086934ad01fcc83978b70c6dc68b083c
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 48947751fa6ed8330fe2d4ecda5161ec8d708315
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509919"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65061155"
 ---
-# <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Настройка области обзора доступа с помощью microsoft API Graph
+# <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Настройка области проверки доступа с помощью microsoft API Graph
 
-API обзоров доступа Azure [AD позволяет](/graph/api/resources/accessreviewsv2-overview) программным образом просмотреть доступ пользователей, директоров служб или групп к ресурсам Azure AD.
+API проверок [](/graph/api/resources/accessreviewsv2-overview) доступа Azure AD позволяет программно проверять доступ пользователей, субъектов-служб или групп к ресурсам Azure AD. API помогает автоматизировать упреждающий просмотр и контролировать доступ к ресурсам в организации.  
 
-Ресурсы для проверки настроены в свойстве **области** доступа к [ресурсу accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition) . Это свойство имеет тип [accessReviewScope](/graph/api/resources/accessreviewscope) , абстрактный тип, унаследованный следующими ресурсами, которые можно использовать для настройки ресурсов или групп ресурсов, доступ к которые будут рассмотрены.
+Проверяемые ресурсы настраиваются в свойстве **области** ресурса [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition) . Это свойство имеет тип [accessReviewScope](/graph/api/resources/accessreviewscope), абстрактный тип, от которого наследуются следующие ресурсы API, которые можно использовать для настройки области проверки доступа.
 
-|Resource|Описание|Примеры сценариев|
+|Ресурс|Описание|Примеры сценариев|
 |:---    |:---       |:---             |
-|[accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope)|Наиболее применимо при просмотре полного набора или подмножества директоров, имеющих доступ к ресурсу или группе связанных ресурсов.|<ul><li>Членство пользователей, назначенных группе.</li><li>Гостевой доступ пользователя к одной группе.</li><li>Гостевой доступ пользователей ко всем Microsoft 365 группам в клиенте.</li><li>Директорам служб назначены привилегированные роли.</li><li>Основной доступ пользователей и служб к пакетам доступа к управлению правами.</li></ul>|
-|[accessReviewInactiveUsersQueryScope](/graph/api/resources/accessreviewinactiveusersqueryscope)|Наследуется от accessReviewQueryScope. Используется при просмотре только неактивных пользователей. Их неактивное состояние указывается **свойством inactiveDuration** . |<ul><li>Членство в группе только неактивных пользователей.</li><ul>|
-|[principalResourceMembershipsScope](/graph/api/resources/principalResourceMembershipsScope)|Наиболее применимо для проверки доступа директоров к ресурсам, в которых настраиваются уникальные пулы директоров и ресурсов.|<ul><li>Просмотр доступа к 3 определенным директорам в 1 группе *Microsoft 365 и 1* привилегированной роли Azure AD.</li><ul>|
+|[accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope)|Наследуется **от accessReviewScope**. Лучше всего подходит при просмотре полного набора или подмножества субъектов, имеющих доступ к ресурсу или группе связанных ресурсов.|<ul><li>Членство пользователей, назначенных группе, прямых или прямых и транзитивных участников.</li><li>Гостевой пользователь имеет доступ к одной группе.</li><li>Гостевой пользователь имеет доступ ко Microsoft 365 групп в клиенте.</li><li>Субъекты-службы, назначенные привилегированным ролям.</li><li>Доступ пользователя и субъекта-службы к пакетам доступа управления правами.</li></ul>|
+|[accessReviewInactiveUsersQueryScope](/graph/api/resources/accessreviewinactiveusersqueryscope)|Наследуется **от accessReviewQueryScope**. Используется, если проверяются только неактивные пользователи. Их состояние неактивности указывается **свойством inactiveDuration** . |<ul><li>Членство в группах только неактивных пользователей.</li><ul>|
+|[principalResourceMembershipsScope](/graph/api/resources/principalResourceMembershipsScope)|Наследуется **от accessReviewScope**. Лучше всего подходит для проверки доступа субъектов к ресурсам, в которых настраиваются уникальные пулы субъектов и ресурсов.|<ul><li>Проверка доступа трех определенных субъектов в одной Microsoft 365 и *одной* привилегированной роли Azure AD.</li><ul>|
 
-В этой статье вы будете использовать эти типы accessReviewScope для настройки широкого спектра ресурсов Azure AD в качестве области обзора доступа. Это поможет вам автоматизировать упреждающий обзор и сохранить контроль над доступом к ресурсам в организации.  
+В этой статье вы узнаете, как ограничить область проверки доступа с помощью этих трех производных типов ресурсов.
 
-## <a name="use-accessreviewqueryscope-to-configure-scope"></a>Используйте accessReviewQueryScope для настройки области
+## <a name="use-accessreviewqueryscope-and-accessreviewinactiveusersqueryscope-to-configure-scope"></a>Использование accessReviewQueryScope и accessReviewInactiveUsersQueryScope для настройки области
 
-Чтобы настроить область с помощью **типа accessReviewQueryScope** , установите значения свойств запроса **,** **queryRoot** и **queryType** . Описание этих свойств см. в виде [ресурса accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope) .
+Чтобы настроить область с помощью типа **accessReviewQueryScope** , задайте значения свойств запроса **,** **queryRoot** и **queryType** . Описание этих свойств см. в описании [типа ресурса accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope) .
+
+**AccessReviewInactiveUsersQueryScope** требует всех свойств **accessReviewQueryScope** и включает свойство **inactiveDuration** .
 
 ### <a name="example-1-review-all-users-assigned-to-a-group"></a>Пример 1. Просмотр всех пользователей, назначенных группе
+
+В следующем примере проверка определяется как прямыми, так и транзитивными членами группы, которые являются пользователями. Транзитивные члены являются членами вложенных групп.
 
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/groups/{group id}/transitiveMembers",
+    "query": "/groups/{group id}/transitiveMembers/microsoft.graph.user",
     "queryType": "MicrosoftGraph"
 }
 ```
+
+**Пример сценария:** Предположим, что группа A имеет трех прямых участников: пользователей AU1 и AU2 и группу G1. Группа G1, с другой стороны, имеет два члена: пользователи GU1 и GU2. Поэтому пользователи GU1 и GU2 являются транзитивными членами вложенной группы G1. В проверку будут включены четыре объекта: пользователи AU1, AU2, GU1 и GU2.
 
 Чтобы *просмотреть только неактивных пользователей* , назначенных группе:
 
@@ -46,12 +52,16 @@ API обзоров доступа Azure [AD позволяет](/graph/api/resou
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
     "inactiveDuration": "P30D",
-    "query": "/groups/{group id}/transitiveMembers",
+    "query": "/groups/{group id}/transitiveMembers/microsoft.graph.user",
     "queryType": "MicrosoftGraph"
 }
 ```
 
+В этом примере также область проверки определяется как прямыми, так и транзитивными членами группы, которые являются неактивными пользователями.
+
 ### <a name="example-2-review-all-guest-users-assigned-to-a-group"></a>Пример 2. Просмотр всех гостевых пользователей, назначенных группе
+
+В следующем примере проверка определяется как прямыми, так и транзитивными членами группы, которые являются гостевыми пользователями. Транзитивные члены являются членами вложенных групп.
 
 ```http
 "scope": {
@@ -61,7 +71,25 @@ API обзоров доступа Azure [AD позволяет](/graph/api/resou
 }
 ```
 
-### <a name="example-3-review-all-users-assigned-to-all-microsoft-365-groups"></a>Пример 3. Просмотр всех пользователей, назначенных всем Microsoft 365 группам
+### <a name="example-3-review-all-users-and-groups-assigned-to-a-group"></a>Пример 3. Просмотр всех пользователей и групп, назначенных группе
+
+В следующем примере проверка определяется только непосредственными участниками группы, которые являются пользователями или другими группами. В этой области:
++ В проверку включаются прямые пользователи.
++ Прямые группы включаются в проверку.
++ Транзитивные члены групп, то есть члены вложенных групп, не включаются в проверку.
+
+```http
+"scope": {
+        "query": "/groups/{group id}/members",
+        "queryType": "MicrosoftGraph"
+}
+```
+
+**Пример сценария:** Предположим, что группа A имеет трех прямых участников: пользователей AU1 и AU2 и группу G1. Группа G1, с другой стороны, имеет два члена: пользователи GU1 и GU2. Поэтому пользователи GU1 и GU2 являются транзитивными членами вложенной группы G1. В приведенной выше проверке целевыми объектами являются только три объекта: au1 и AU2, а также группа G1.
+
+### <a name="example-4-review-all-users-assigned-to-all-microsoft-365-groups"></a>Пример 4. Проверка всех пользователей, назначенных всем Microsoft 365 группам
+
+В следующем примере создается проверка каждой Microsoft 365, которая содержит гостевых пользователей. Для экземпляра проверки в каждой группе проверка применяется только к прямым участникам группы, которые являются гостевыми пользователями.
 
 ```http
 "instanceEnumerationScope": {
@@ -74,9 +102,12 @@ API обзоров доступа Azure [AD позволяет](/graph/api/resou
     "queryType": "MicrosoftGraph"
 }
 ```
-Поскольку этот обзор применяется во всех Microsoft 365 группах, настройте **экземплярEnumerationScope**, чтобы указать Microsoft 365 группы для проверки. Обратите внимание, что динамические группы и группы, назначаемые для ролей, не включены в этот обзор.
 
-### <a name="example-4-review-all-guest-users-assigned-to-all-microsoft-365-groups"></a>Пример 4. Просмотр всех гостевых пользователей, назначенных всем Microsoft 365 группам
+Кроме того, поскольку эта проверка применяется ко всем группам Microsoft 365, настройте **instanceEnumerationScope**, чтобы указать Microsoft 365 группы для проверки. Динамические группы и группы, назначаемые ролем, не включаются в эту проверку.
+
+### <a name="example-5-review-all-guest-users-assigned-to-all-microsoft-365-groups"></a>Пример 5. Просмотр всех гостевых пользователей, назначенных всем Microsoft 365 группам
+
+В следующем примере область проверки определяется для прямых участников всех Microsoft 365, которые являются гостевыми пользователями.
 
 ```http
 "instanceEnumerationScope": {
@@ -90,9 +121,30 @@ API обзоров доступа Azure [AD позволяет](/graph/api/resou
 }
 ```
 
-Поскольку этот обзор применяется во всех Microsoft 365 группах, настройте **экземплярEnumerationScope**, чтобы указать Microsoft 365 группы для проверки. Обратите внимание, что динамические группы и группы, назначаемые для ролей, не включены в этот обзор.
+Кроме того, поскольку эта проверка применяется ко всем группам Microsoft 365, настройте **instanceEnumerationScope**, чтобы указать Microsoft 365 группы для проверки. Динамические группы и группы, назначаемые ролем, не включаются в эту проверку.
 
-### <a name="example-5-review-all-guest-users-assigned-to-all-teams"></a>Пример 5. Просмотр всех гостевых пользователей, назначенных всем Teams
+#### <a name="review-all-inactive-guest-users-assigned-to-all-microsoft-365-groups"></a>Просмотр всех неактивных гостевых пользователей, назначенных всем Microsoft 365 группам
+
+В следующем примере область проверки определяется для всех Microsoft 365, которые являются неактивными гостевыми пользователями.
+
+```http
+"instanceEnumerationScope": {
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified'))",
+    "queryType": "MicrosoftGraph"
+},
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
+    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
+    "queryType": "MicrosoftGraph",
+    "inactiveDuration": "P30D"
+}
+```
+
+Кроме того, поскольку эта проверка применяется к неактивным пользователям, используйте ресурс **accessReviewInactiveUsersQueryScope** и укажите свойство **@odata.type** `#microsoft.graph.accessReviewInactiveUsersQueryScope`со значением . Динамические группы и группы, назначаемые ролем, не включаются в эту проверку.
+
+### <a name="example-6-review-all-guest-users-assigned-to-all-teams"></a>Пример 6. Просмотр всех гостевых пользователей, назначенных всем командам
+
+В следующем примере проверка определяется для прямых участников всех команд, которые являются гостевыми пользователями.
 
 ```http
 "instanceEnumerationScope": {
@@ -106,28 +158,13 @@ API обзоров доступа Azure [AD позволяет](/graph/api/resou
 }
 ```
     
-Поскольку этот обзор применяется во всех Teams с Microsoft 365, настройте **экземплярEnumerationScope**, чтобы указать Teams-Microsoft 365 групп.  Обратите внимание, что динамические группы и группы, назначаемые для ролей, не включены в этот обзор.
+Кроме того, поскольку эта проверка применяется ко всем группам Teams с поддержкой Microsoft 365, настройте **instanceEnumerationScope**, чтобы указать Teams группы Microsoft 365 для проверки. Динамические группы и группы, назначаемые ролем, не включаются в эту проверку.
 
-В этом обзоре не будет включаться прямое подключение пользователей B2B к группам с общими каналами. Чтобы включить пользователей прямого подключения B2B в группы с общими каналами, см. в примере 14. Обзор всех пользователей, назначенных команде [, включая пользователей прямого подключения B2B](#example-14-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels) в команде с общими каналами.
+Эта проверка не будет включать пользователей прямого подключения B2B в команды с общими каналами. Чтобы включить пользователей прямого подключения B2B в команды с общими каналами, см. пример 11. Просмотр всех пользователей, назначенных команде [, включая пользователей прямого подключения B2B](#example-13-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels) в команде с общими каналами.
 
-### <a name="example-6-review-all-inactive-guest-users-assigned-to-all-microsoft-365-groups"></a>Пример 6. Просмотр всех неактивных гостевых пользователей, назначенных всем Microsoft 365 группам
+#### <a name="review-all-inactive-guest-users-assigned-to-all-teams"></a>Просмотрите все неактивные гостевые пользователи, назначенные всем Teams
 
-```http
-"instanceEnumerationScope": {
-    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified'))",
-    "queryType": "MicrosoftGraph"
-},
-"scope": {
-    "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
-    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
-    "queryType": "MicrosoftGraph",
-    "inactiveDuration": "P30D"
-}
-```
-
-Поскольку этот обзор применяется к неактивным пользователям, используйте **ресурс accessReviewInactiveUsersQueryScope** и укажите свойство **типа @odata.type** `#microsoft.graph.accessReviewInactiveUsersQueryScope`со значением . Обратите внимание, что динамические группы и группы, назначаемые для ролей, не включены в этот обзор.
-
-### <a name="example-7-review-all-inactive-guest-users-assigned-to-all-teams"></a>Пример 7. Просмотр всех неактивных гостевых пользователей, назначенных всем Teams
+В следующем примере область проверки определяется для участников всех команд, которые являются неактивными гостевыми пользователями.
 
 ```http
 "instanceEnumerationScope": {
@@ -142,11 +179,14 @@ API обзоров доступа Azure [AD позволяет](/graph/api/resou
 }
 ```
 
-Поскольку этот обзор применяется для всех групп, настройте **свойство instanceEnumerationScope** , чтобы указать все группы. Обратите внимание, что динамические группы и группы, назначаемые для ролей, не включены в этот обзор.
+Кроме того, так как эта проверка применяется ко всем командам, настройте свойство **instanceEnumerationScope** , чтобы указать все команды. Динамические группы и группы, назначаемые ролем, не включаются в эту проверку.
 
-В этом обзоре не будет включаться прямое подключение пользователей B2B к группам с общими каналами. Чтобы включить пользователей прямого подключения B2B в группы с общими каналами, см. в примере 14. Обзор всех пользователей, назначенных команде [, включая пользователей прямого подключения B2B](#example-14-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels) в команде с общими каналами.
+Эта проверка не будет включать пользователей прямого подключения B2B в команды с общими каналами. Чтобы включить пользователей прямого подключения B2B в команды с общими каналами, см. пример 11. Просмотр всех пользователей, назначенных команде [, включая пользователей прямого подключения B2B](#example-11-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels) в команде с общими каналами.
 
-### <a name="example-8-review-all-assignment-to-entitlement-management-access-packages"></a>Пример 8. Просмотр всех назначений пакетам доступа к управлению правами
+
+---
+
+### <a name="example-7-review-all-assignment-to-entitlement-management-access-packages"></a>Пример 7. Просмотр всех назначений для пакетов доступа управления правами
 
 ```http
 "scope": {
@@ -156,7 +196,9 @@ API обзоров доступа Azure [AD позволяет](/graph/api/resou
 }
 ```
 
-### <a name="example-9-review-all-service-principals-assigned-to-a-privileged-role"></a>Пример 9. Просмотр всех директоров служб, присвоенных привилегированной роли
+---
+
+### <a name="example-8-review-all-service-principals-assigned-to-a-privileged-role"></a>Пример 8. Просмотр всех субъектов-служб, назначенных привилегированной роли
 
 ```http
 "scope": {
@@ -166,7 +208,9 @@ API обзоров доступа Azure [AD позволяет](/graph/api/resou
 }
 ```
     
-### <a name="example-10-review-all-users-assigned-to-a-privileged-role-all-active-and-eligible-assignments-included"></a>Пример 10. Просмотр всех пользователей, назначенных на привилегированную роль (все активные и подходящие назначения, включенные)
+### <a name="example-9-review-all-users-assigned-to-a-privileged-role"></a>Пример 9. Проверка всех пользователей, которым назначена привилегированная роль 
+
+#### <a name="review-all-users-assigned-to-a-privileged-role-all-active-and-eligible-assignments-included"></a>Просмотрите всех пользователей, которым назначена привилегированная роль (все активные и допустимые назначения).
 
 ```http
 "scope": {
@@ -176,7 +220,7 @@ API обзоров доступа Azure [AD позволяет](/graph/api/resou
 }
 ```
     
-### <a name="example-11-review-all-users-with-eligible-assignment-to-a-privileged-role"></a>Пример 11. Обзор всех пользователей с подходящим назначением на привилегированную роль
+#### <a name="review-all-users-with-eligible-assignment-to-a-privileged-role"></a>Проверка всех пользователей с соответствующим назначением привилегированной роли
 
 ```http
 "scope": {
@@ -186,7 +230,7 @@ API обзоров доступа Azure [AD позволяет](/graph/api/resou
 }
 ```
     
-### <a name="example-12-review-all-users-with-active-assignment-to-a-privileged-role"></a>Пример 12. Обзор всех пользователей с активным назначением на привилегированную роль
+#### <a name="review-all-users-with-active-assignment-to-a-privileged-role"></a>Проверка всех пользователей с активным назначением привилегированной роли
 
 ```http
 "scope": {
@@ -196,11 +240,15 @@ API обзоров доступа Azure [AD позволяет](/graph/api/resou
 }
 ```
 
-## <a name="use-principalresourcemembershipsscope-to-configure-scope"></a>Для настройки области используйте principalResourceMembershipsScope
+---
 
-**PrincipalResourceMembershipsScope** предоставляет свойства **principalScopes** и **resourceScopes** для поддержки более адаптированных параметров конфигурации для области **accessReviewScheduleDefinition**. Это включает обзор доступа нескольких директоров или групп директоров к нескольким ресурсам.
+## <a name="use-principalresourcemembershipsscope-to-configure-scope"></a>Настройка области с помощью principalResourceMembershipsScope
 
-### <a name="example-13-review-all-inactive-guest-users-assigned-to-all-groups"></a>Пример 13. Просмотр всех неактивных гостевых пользователей, назначенных всем группам
+**PrincipalResourceMembershipsScope** предоставляет свойства **principalScopes** и **resourceScopes** для поддержки более специализированных параметров конфигурации для области объекта **accessReviewScheduleDefinition**. Эти возможности включают проверку доступа для нескольких субъектов или групп субъектов к нескольким ресурсам.
+
+### <a name="example-10-review-all-inactive-guest-users-assigned-to-all-groups"></a>Пример 10. Просмотр всех неактивных гостевых пользователей, назначенных всем группам
+
+В следующем примере проверка определяется для прямых участников всех групп, которые являются неактивными гостевыми пользователями. Гостевые пользователи считаются неактивными, если период их бездействия — 30 дней с даты начала экземпляра проверки доступа.
 
 ```http
 "scope": {
@@ -223,9 +271,9 @@ API обзоров доступа Azure [AD позволяет](/graph/api/resou
 }
 ```
 
-В этом примере все директора являются неактивными гостевых пользователей с периодом их неактивности, рассчитанным в течение 30 дней с даты начала экземпляра проверки доступа.
+### <a name="example-11-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels"></a>Пример 11. Просмотр всех пользователей, назначенных команде, включая пользователей прямого подключения B2B в команде с общими каналами
 
-### <a name="example-14-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels"></a>Пример 14. Просмотр всех пользователей, назначенных команде, включая пользователей прямого подключения B2B в команде с общими каналами
+В этом примере областью проверки доступа являются все пользователи, которые являются членами команды или назначены общему каналу в команде. К ним относятся внутренние пользователи, прямые и транзитивные пользователи, пользователи службы совместной работы B2B и пользователи прямого подключения B2B.
 
 ```http
 "scope": {
@@ -241,7 +289,7 @@ API обзоров доступа Azure [AD позволяет](/graph/api/resou
     "resourceScopes": [
         {
             "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-            "query": "/groups/{groupId}/transitiveMembers",
+            "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user",
             "queryType": "MicrosoftGraph",
             "queryRoot": null
         },
@@ -255,14 +303,12 @@ API обзоров доступа Azure [AD позволяет](/graph/api/resou
 }
 ```
 
-В этом примере обзор доступа является областью для всех пользователей, которые являются членами группы или назначены общему каналу в группе, включая внутренних пользователей, пользователей совместной работы B2B и пользователей прямого подключения B2B.
-
-Чтобы просмотреть B2B прямое подключение пользователей и групп в общих каналах, `/teams/{groupId}/channels?$filter=(membershipType eq 'shared')` необходимо указать шаблон запроса в **объекте resourceScopes**. Обзор *всех групп* , например [пример 7](#example-5-review-all-guest-users-assigned-to-all-teams), не будет включать пользователей и групп B2B прямого подключения в общих каналах.
+Чтобы просмотреть пользователей и команды прямого подключения B2B в общих каналах, `/teams/{groupId}/channels?$filter=(membershipType eq 'shared')` необходимо указать шаблон запроса в **объекте resourceScopes**. Во *всех командах* , например в [примере 7](#example-7-review-all-inactive-guest-users-assigned-to-all-teams-direct-members-only), не будут включены пользователи и команды прямого подключения B2B в общих каналах.
 
 > [!NOTE]
-> Обзор доступа к пользователям и группам прямого подключения B2B поддерживается только в одноэтапных обзорах доступа, а не в многоэтапных обзорах доступа.
+> Проверка доступа пользователей и команд прямого подключения B2B поддерживается только в одноэтабных проверках доступа, а не в многоэтабных проверках доступа.
 
-### <a name="example-15-review-all-guest-users-assigned-to-a-directory-role"></a>Пример 15. Просмотр всех гостевых пользователей, назначенных роли каталога
+### <a name="example-12-review-all-guest-users-assigned-to-a-directory-role"></a>Пример 12. Проверка всех гостевых пользователей, которым назначена роль каталога
 
 ```http
 "scope": {
@@ -287,5 +333,5 @@ API обзоров доступа Azure [AD позволяет](/graph/api/resou
 ## <a name="next-steps"></a>Дальнейшие действия
 
 + [Назначение рецензентов определению проверки доступа](/graph/accessreviews-reviewers-concept)
-+ [Узнайте, как](/graph/accessreviews-overview) использовать API обзоров доступа для проверки доступа к ресурсам Azure AD.
-+ [Создание обзора доступа](/azure/active-directory/governance/create-access-review)
++ [Ознакомьтесь с руководствами](/graph/accessreviews-overview) , чтобы узнать, как использовать API проверки доступа для проверки доступа к ресурсам Azure AD.
++ [Создание проверки доступа](/azure/active-directory/governance/create-access-review)

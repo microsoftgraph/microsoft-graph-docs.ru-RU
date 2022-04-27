@@ -1,44 +1,43 @@
 ---
 title: Обзор пакета SDK Microsoft Graph
-description: Описывает доступные SDKs, поддерживаемые ими платформы и их значение для разработчиков.
+description: Описывает доступные пакеты SDK, поддерживаемые языки и ценность, которую они предоставляют разработчикам.
 ms.localizationpriority: medium
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5e1ed9da65088b7f3542efcae95ff7e8ce26cee4
-ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
+ms.openlocfilehash: 9fdd4d5cc858413b08ff4f86c2b564611617c315
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64646601"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060544"
 ---
 # <a name="microsoft-graph-sdks-overview"></a>Обзор пакета SDK Microsoft Graph
 
-SDKs Graph Microsoft предназначены для упрощения создания высококачественных, эффективных и устойчивых приложений, которые имеют доступ к microsoft Graph. SDKs включают два компонента: библиотеку служб и основную библиотеку.
+Пакеты SDK Graph Майкрософт предназначены для упрощения создания высококачественных, эффективных и устойчивых приложений, которые имеют доступ к Graph. Пакеты SDK включают два компонента: библиотеку служб и основную библиотеку.
 
-Библиотека служб содержит модели и конструкторы запросов, созданные из метаданных Microsoft Graph, чтобы обеспечить богатый, строго впечатаемый и обнаруживаемый опыт при работе с множеством наборов данных, доступных в Microsoft Graph.
+Библиотека *служб* содержит модели и построицы запросов, созданные из метаданных Microsoft Graph для обеспечения полнофункциональных, строго типизированных и обнаруживаемых возможностей при работе с множеством наборов данных, доступных в Microsoft Graph.
 
-В основной библиотеке содержится набор функций, которые улучшают работу со всеми службами Microsoft Graph. Встроенная поддержка обработки повторной обработки, безопасных перенаправлений, прозрачной проверки подлинности и сжатия полезной нагрузки улучшает качество взаимодействия приложения с Microsoft Graph без дополнительных сложностей, при этом полностью контролируется. В основной библиотеке также поддерживается выполнение общих задач, таких как прогона через коллекции и создание пакетных запросов.
+*Базовая библиотека* предоставляет набор функций, которые улучшают работу со всеми службами Microsoft Graph. Встроенная поддержка обработки повторных попыток, безопасных перенаправлений, прозрачной проверки подлинности и сжатия полезных данных повышает качество взаимодействия приложения с Microsoft Graph без дополнительной сложности, сохраняя при этом полный контроль. Базовая библиотека также обеспечивает поддержку распространенных задач, таких как разбиение на страницы по коллекциям и создание пакетных запросов.
 
-## <a name="supported-platforms"></a>Поддерживаемые платформы
+## <a name="supported-languages"></a>Поддерживаемые языки
 
-В настоящее время SDKs доступны для следующих языков и платформ:
+Пакеты SDK в настоящее время доступны для следующих языков:
 
-- [Android](https://developer.microsoft.com/en-us/graph/get-started/android)
-- [Angular](https://developer.microsoft.com/en-us/graph/get-started/angular)
-- [ASP.NET](https://developer.microsoft.com/en-us/graph/get-started/asp.net)
-- [Go (PREVIEW)](https://github.com/microsoftgraph/msgraph-sdk-go)
-- [iOS](https://developer.microsoft.com/en-us/graph/get-started/ios)
-- [Javascript](https://developer.microsoft.com/en-us/graph/get-started/javascript)
-- [Node.js](https://developer.microsoft.com/en-us/graph/get-started/node.js)
-- [Java](https://developer.microsoft.com/en-us/graph/get-started/java)
-- [PHP](https://developer.microsoft.com/en-us/graph/get-started/php)
-- [PowerShell](/graph/powershell/get-started)
-- [Python](https://developer.microsoft.com/en-us/graph/get-started/python)
+- [C#](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
+- [PowerShell](https://github.com/microsoftgraph/msgraph-sdk-powershell)
+- [| Javascript](https://github.com/microsoftgraph/msgraph-sdk-javascript)
+- [Java](https://github.com/microsoftgraph/msgraph-sdk-java)
+- [Go](https://github.com/microsoftgraph/msgraph-sdk-go)
+- [PHP](https://github.com/microsoftgraph/msgraph-sdk-php)
+- [Python (предварительная версия)](https://github.com/microsoftgraph/msgraph-sdk-python-core)
+- [Objective-C | Swift](https://github.com/microsoftgraph/msgraph-sdk-objc)
 
-## <a name="microsoft-365-developer-subscription"></a>Microsoft 365 подписка на разработчика
+## <a name="microsoft-365-developer-subscription"></a>Microsoft 365 подписка разработчика
 
-При создании приложений с Graph Microsoft мы рекомендуем вам получить бесплатную подписку Microsoft 365 разработчика, подписавшись на программу Microsoft 365 [разработчика](https://developer.microsoft.com/microsoft-365/dev-program).
+При создании приложений с помощью Microsoft Graph мы рекомендуем получить бесплатную подписку Microsoft 365 разработчика, зарегистрировав ее в Microsoft 365 [developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
 
 ## <a name="see-also"></a>См. также
 
-Документация по [требованиям](https://github.com/microsoftgraph/msgraph-sdk-design) к проектированию SDK содержит дополнительные сведения о возможностях и возможностях SDK. Запрос или голосование по дополнительным функциям [на форуме идей Microsoft 365 платформы разработчиков](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph). Список SDKs и примеров для Microsoft Graph см. на странице [microsoft Graph ресурсов](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples,SDKs).
+* Дополнительные сведения о функциях и возможностях пакета SDK см. в документации по требованиям к [проектированию пакета SDK](https://github.com/microsoftgraph/msgraph-sdk-design).
+* Запросите или проголосуйте за дополнительные [функции на форуме Microsoft 365 идей платформы разработчиков](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph). 
+* Список примеров для microsoft Graph см. на странице [ресурсов Microsoft Graph.](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples)

@@ -1,70 +1,70 @@
 ---
-title: Get unifiedRoleDefinition
-description: Извлечение свойств и связей объекта unifiedRoleDefinition.
+title: Получение unifiedRoleDefinition
+description: Получение свойств и связей объекта unifiedRoleDefinition.
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f24ed48d9167d3f8bfa6c8c74fe1c9f74a868a7d
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 8b7db1af8d1ba0fb6f3fa130c89732a1ce9fb87e
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63670861"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060809"
 ---
-# <a name="get-unifiedroledefinition"></a>Get unifiedRoleDefinition
+# <a name="get-unifiedroledefinition"></a>Получение unifiedRoleDefinition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите свойства и связи объекта [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) поставщика RBAC. 
+Получение свойств и связей объекта [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) поставщика RBAC. 
 
 В настоящее время поддерживаются следующие поставщики RBAC:
-- Облачный КОМПЬЮТЕР 
+- Облачный компьютер 
 - управление устройствами (Intune)
-- directory (роли каталога Azure AD)
-- управление правами (управление правами Azure AD)
+- каталог (роли каталога Azure AD)
+- управление правами (управление правами Azure AD);
 
 ## <a name="permissions"></a>Разрешения
 
-В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующих таблиц наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные дополнительные новости, в том числе [осторожность перед выбором](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) более привилегированных разрешений, см. [в руб. Permissions](/graph/permissions-reference). 
+В зависимости от поставщика RBAC и требуемого типа разрешения (делегированного или приложения) выберите из следующих таблиц наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные сведения, [включая осторожность перед](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) выбором более привилегированных разрешений, см. в [разделе "Разрешения"](/graph/permissions-reference). 
 
-### <a name="for-a-cloud-pc-provider"></a>Поставщик облачных ПК
+### <a name="for-a-cloud-pc-provider"></a>Для поставщика облачных компьютеров
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All, RoleManagement.Read.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) |  RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All, RoleManagement.Read.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All, RoleManagement.Read.All  |
 
 ### <a name="for-a-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) |  DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
-### <a name="for-a-directory-azure-ad-provider"></a>Поставщик каталогов (Azure AD)
+### <a name="for-a-directory-azure-ad-provider"></a>Для поставщика каталога (Azure AD)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
-### <a name="for-an-entitlement-management-provider"></a>Для поставщика прав на управление правами
+### <a name="for-an-entitlement-management-provider"></a>Для поставщика управления правами
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Получите определение роли для поставщика облачных ПК:
+Получите определение роли для поставщика облачных компьютеров:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/cloudPC/roleDefinitions/{id}
@@ -83,7 +83,7 @@ GET /roleManagement/deviceManagement/roleDefinitions/{id}
 GET /roleManagement/directory/roleDefinitions/{id}
 ```
 
-Получение определения роли для поставщика управления правами:
+Получите определение роли для поставщика управления правами:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -98,7 +98,7 @@ GET /roleManagement/entitlementManagement/roleDefinitions/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -106,11 +106,11 @@ GET /roleManagement/entitlementManagement/roleDefinitions/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и запрашиваемого объекта [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и запрашиваемый объект [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-definition-of-a-custom-role-for-a-directory-provider"></a>Пример 1. Определение настраиваемой роли поставщика каталогов
+### <a name="example-1-get-the-definition-of-a-custom-role-for-a-directory-provider"></a>Пример 1. Получение определения настраиваемой роли для поставщика каталогов
 
 #### <a name="request"></a>Запрос
 
@@ -155,7 +155,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/f1
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -172,7 +172,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions/$entity",
-    "id": "429c3819-053d-4250-9926-4c7dcb18ae17",
+    "id": "f189965f-f560-4c59-9101-933d4c87a91a",
     "description": "Allows reading Application Registrations",
     "displayName": "Application Registration Reader",
     "isBuiltIn": false,
@@ -192,7 +192,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-definition-of-a-built-in-role-for-a-directory-provider"></a>Пример 2. Определение встроенной роли поставщика каталогов
+### <a name="example-2-get-the-definition-of-a-built-in-role-for-a-directory-provider"></a>Пример 2. Получение определения встроенной роли для поставщика каталогов
 
 #### <a name="request"></a>Запрос
 
@@ -240,7 +240,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/fd
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -300,7 +300,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>Пример 3. Определение встроенной роли Azure AD и $expand роли, от которую она наследуется
+### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>Пример 3. Получение определения встроенной роли Azure AD и $expand роли, от $expand от нее.
 
 #### <a name="request"></a>Запрос
 
@@ -348,7 +348,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/fd
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -474,7 +474,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-get-the-definition-of-a-built-in-role-for-a-cloud-pc-provider"></a>Пример 4. Определение роли встроенного компьютера для поставщика облачных ПК
+### <a name="example-4-get-the-definition-of-a-built-in-role-for-a-cloud-pc-provider"></a>Пример 4. Получение определения встроенной роли для поставщика облачных компьютеров
 
 #### <a name="request"></a>Запрос
 
@@ -557,7 +557,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-5-get-the-definition-of-a-built-in-role-for-the-entitlement-management-provider"></a>Пример 5. Получение определения встроенной роли поставщика управления правами
+## <a name="example-5-get-the-definition-of-a-built-in-role-for-the-entitlement-management-provider"></a>Пример 5. Получение определения встроенной роли для поставщика управления правами
 
 #### <a name="request"></a>Запрос
 

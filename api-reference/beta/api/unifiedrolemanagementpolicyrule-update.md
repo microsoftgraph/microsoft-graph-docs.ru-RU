@@ -1,30 +1,35 @@
 ---
 title: Обновление unifiedRoleManagementPolicyRule
-description: Обновление свойств единого объектаRoleManagementPolicyRule.
+description: Обновление правила, определенного для политики управления ролем.
 author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9450c28fba13722d6d30dde62f9d102ff9b32981
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 79b88f50dcbbe60756e9a47459906454785bdc34
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64508547"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65061099"
 ---
 # <a name="update-unifiedrolemanagementpolicyrule"></a>Обновление unifiedRoleManagementPolicyRule
 Пространство имен: microsoft.graph
 
-Обновление свойств единого [объектаRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) .
+Обновление правила, определенного для политики управления ролем. Правило может быть одним из следующих типов, производных от объекта [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) :
++ [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md)
++ [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md)
++ [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md)
++ [unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md)
++ [unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Не поддерживается|
+|Делегированное (рабочая или учебная учетная запись)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -34,7 +39,6 @@ ms.locfileid: "64508547"
 -->
 ``` http
 PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{unifiedRoleManagementPolicyRuleId}
-PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/effectiveRules/{unifiedRoleManagementPolicyRuleId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -44,24 +48,23 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/effective
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON единого [объектаRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) .
-
-В следующей таблице показаны свойства, необходимые при обновлении [единой системыRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для правила.|
-|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Цель правила политики.|
+|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Определяет сведения об области, предназначенной для правила политики управления ролами. Сведения могут включать тип субъекта, тип назначения роли и действия, влияющие на роль. Необязательный параметр.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного `200 OK` выполнения этот метод возвращает код ответа и обновленный [унифицированный объектRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+В следующем примере правило политики управления ролем обновляется с помощью идентификатора `Expiration_EndUser_Assignment`.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -70,14 +73,24 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/effective
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{unifiedRoleManagementPolicyRuleId}
+PATCH https://graph.microsoft.com/beta/policies/roleManagementPolicies/DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9/rules/Expiration_EndUser_Assignment
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyApprovalRule",
-  "target": {
-    "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
-  }
+    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+    "id": "Expiration_EndUser_Assignment",
+    "isExpirationRequired": true,
+    "maximumDuration": "PT1H45M",
+    "target": {
+        "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRuleTarget",
+        "caller": "EndUser",
+        "operations": [
+            "All"
+        ],
+        "level": "Assignment",
+        "inheritableSettings": [],
+        "enforcedSettings": []
+    }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -109,14 +122,13 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
 ```http
-HTTP/1.1 204 OK
+HTTP/1.1 204 No Content
 
 ```
 <!--

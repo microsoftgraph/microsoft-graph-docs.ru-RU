@@ -1570,7 +1570,7 @@ items:
                     href: api/contentsharingsession-get.md
               - name: Журнал данных о качестве устройства телеконference
                 href: api/call-logteleconferencedevicequality.md
-              - name: Добавление представления большой коллекции
+              - name: Добавление представления "Большая галерея"
                 href: api/call-addlargegalleryview.md
               - name: Операция представления большой коллекции
                 items:
@@ -11232,7 +11232,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: Удаление поставщика
                 href: api/dynamics-vendor-delete.md
-      - name: Удостоверения и доступ
+      - name: Удостоверение и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: Обзор
@@ -11501,6 +11501,12 @@ items:
                 items:
                   - name: Список доменов
                     href: api/domain-list.md
+                  - name: Перечисление ссылок на доменные имена
+                    href: api/domain-list-domainnamereferences.md
+                  - name: Вывод списка записей конфигурации службы
+                    href: api/domain-list-serviceconfigurationrecords.md
+                  - name: Вывод списка записей DNS для проверки
+                    href: api/domain-list-verificationdnsrecords.md
                   - name: Создание домена
                     href: api/domain-post-domains.md
                   - name: Удаление домена
@@ -14705,6 +14711,20 @@ items:
                 href: api/itemanalytics-get.md
               - name: Список версий
                 href: api/listitem-list-versions.md
+          - name: Версия набора документов
+            items:
+              - name: Версия набора документов
+                href: resources/documentsetversion.md
+              - name: Список
+                href: api/listitem-list-documentsetversions.md
+              - name: Создание
+                href: api/listitem-post-documentsetversions.md
+              - name: Получение
+                href: api/documentsetversion-get.md
+              - name: Удаление
+                href: api/documentsetversion-delete.md
+              - name: Восстановление
+                href: api/documentsetversion-restore.md
           - name: Страницы
             items:
               - name: Страница сайта
@@ -15060,9 +15080,9 @@ items:
                 href: api/chatmessage-update.md
               - name: Проверка доступа пользователей
                 href: api/channel-doesuserhaveaccess.md
-              - name: 'Перечисление команд, к которые предоставлен общий доступ с помощью канала'
+              - name: 'Перечисление команд, совместное использование канала'
                 href: api/sharedwithchannelteaminfo-list.md
-              - name: Получение общего доступа к команде с помощью канала
+              - name: Получение общего доступа к каналу для команды
                 href: api/sharedwithchannelteaminfo-get.md
               - name: Отмена общего доступа к каналу с командой
                 href: api/sharedwithchannelteaminfo-delete.md

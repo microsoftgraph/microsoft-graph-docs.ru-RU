@@ -1,55 +1,57 @@
 ---
-title: тип ресурса riskyUser
-description: элемент рискованных пользователей
+title: Тип ресурса riskyUser
+description: Элемент "Пользователи с риском"
 author: cloudhandler
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 8d01e80acf9f05061cf69998d6ba94c444b67dd1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 222ff5f10fdb7ddf9ebd80209551d5e3f44ce83b
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078618"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060788"
 ---
-# <a name="riskyuser-resource-type"></a>тип ресурса riskyUser
+# <a name="riskyuser-resource-type"></a>Тип ресурса riskyUser
 
 Пространство имен: microsoft.graph
 
-Представляет пользователей Azure AD, которые находятся в опасности. Azure AD непрерывно оценивает риски пользователей на основе различных сигналов и машинного обучения. Этот API предоставляет программный доступ ко всем пользователям в Azure AD.
+Представляет пользователей Azure AD, которые находятся под угрозой. Azure AD постоянно оценивает риск пользователей на основе различных сигналов и машинного обучения. Этот API обеспечивает программный доступ ко всем пользователям, которым в Azure AD предоставляется риск.
 
-Дополнительные сведения о событиях риска см. [в Azure Active Directory Identity Protection.](/azure/active-directory/identity-protection/overview-identity-protection)
+Дополнительные сведения о событиях риска см[. в Azure Active Directory identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
->**Примечание:** Использование API riskyUsers требует Azure AD Premium P2 лицензии.
+>[!NOTE]
+> 1. Для использования API riskyUsers требуется Azure AD Premium P2 лицензии.
+> 2. Доступность рискованных пользовательских данных регулируется политиками хранения [данных Azure AD](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список riskyUsers](../api/riskyuser-list.md)|[коллекция riskyUser](../resources/riskyuser.md)|Получите список объектов **riskyUser** и их свойств.|
-|[Get riskyUser](../api/riskyuser-get.md)|[riskyUser](../resources/riskyuser.md)|Ознакомьтесь с свойствами и отношениями объекта **riskyUser.**|
-|[Отклонение riskyUser](../api/riskyuser-dismiss.md)|Нет|Отклонять риск одного или более **объектов riskyUser.** |
-|[Подтверждение riskyUser как скомпрометированного](../api/riskyuser-confirmcompromised.md)|Нет|Подтвердим, что один или несколько **объектов riskyUser** могут быть скомпрометированы.|
-|[История списка](../api/riskyuser-list-history.md)|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection|Получите **свойство riskyUserHistoryItems из** свойства навигации по истории.|
-|[Получить историю](../api/riskyuser-get-riskyuserhistoryitem.md)|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md)|Ознакомьтесь с свойствами и отношениями объекта [riskyUserHistoryItem.](../resources/riskyuserhistoryitem.md)|
+|[Перечисление объектов riskyUsers](../api/riskyuser-list.md)|[Коллекция riskyUser](../resources/riskyuser.md)|Получение списка объектов **riskyUser** и их свойств.|
+|[Получение riskyUser](../api/riskyuser-get.md)|[riskyUser](../resources/riskyuser.md)|Чтение свойств и связей объекта **riskyUser** .|
+|[Закрытие riskyUser](../api/riskyuser-dismiss.md)|Нет|Закройте риск одного или нескольких **объектов riskyUser** . |
+|[Подтверждение скомпрометированного пользователя riskyUser](../api/riskyuser-confirmcompromised.md)|Нет|Подтвердите **компрометацию одного или нескольких объектов riskyUser** .|
+|[Журнал списков](../api/riskyuser-list-history.md)|[Коллекция riskyUserHistoryItem](../resources/riskyuserhistoryitem.md)|Получите **riskyUserHistoryItems из** свойства навигации журнала.|
+|[Получение журнала](../api/riskyuser-get-riskyuserhistoryitem.md)|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md)|Чтение свойств и связей объекта [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) .|
 
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный ID пользователя в опасности.|
-|isDeleted|Логический|Указывает, удален ли пользователь. Возможные значения: `true`, `false`.|
-|isProcessing|Логический|Указывает, обрабатывается ли приложением рискованное состояние пользователя.|
-|riskDetail|riskDetail|Сведения об обнаружении риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
-|riskLastUpdatedDateTime|DateTimeOffset|Дата и время последнего обновления рискованного пользователя.  Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|riskLevel|riskLevel|Уровень обнаруженного рискованного пользователя. Возможные значения: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
+|id|String|Уникальный идентификатор пользователя, на который есть риск.|
+|isDeleted|Boolean|Указывает, удален ли пользователь. Возможные значения: `true`, `false`.|
+|isProcessing|Логическое|Указывает, обрабатывается ли серверной частью состояние риска пользователя.|
+|riskDetail|riskDetail|Сведения об обнаруженном риске. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
+|riskLastUpdatedDateTime|DateTimeOffset|Дата и время последнего обновления пользователя с риском.  Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|riskLevel|riskLevel|Уровень обнаруженного пользователя, который является рискованным. Возможные значения: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
 |riskState|riskState|Состояние риска пользователя. Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
-|userDisplayName|String|Рискованное имя отображения пользователя.|
-|userPrincipalName|String|Рискованное основное имя пользователя.|
+|userDisplayName|String|Отображаемое имя пользователя, которое является рискованным.|
+|userPrincipalName|String|Имя участника-пользователя с риском.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|история|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection|   Действие, связанное с изменением уровня риска пользователя|
+|Истории|[Коллекция riskyUserHistoryItem](../resources/riskyuserhistoryitem.md)|   Действие, связанное с изменением уровня риска пользователя|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

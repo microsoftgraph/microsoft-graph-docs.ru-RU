@@ -1,22 +1,22 @@
 ---
 title: Настройка Application Proxy с помощью API Graph Майкрософт
 description: Настройте Application Proxy API Microsoft Graph для предоставления удаленного доступа и единого входа в локальные приложения.
-author: davidmu1
+author: FaithOmbongi
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: c6466de02e1521889db27b509bc0ecb2d07cd4af
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: 832060f2aed60311b8315a4511a467cc57847f47
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685210"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060781"
 ---
 # <a name="configure-application-proxy-using-the-microsoft-graph-api"></a>Настройка Application Proxy с помощью microsoft API Graph
 
 Из этой статьи вы узнаете, как настроить Azure Active Directory (Azure AD) Application Proxy для приложения. Application Proxy обеспечивает безопасный удаленный доступ и единый вход в локальные веб-приложения. После настройки Application Proxy приложения пользователи могут получить доступ к локальным приложениям через внешний URL-адрес, портал Мои приложения или другие внутренние порталы приложений.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - В этом руководстве предполагается, что вы уже установили соединитель и [](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites) выполнили необходимые условия для Application Proxy, чтобы соединители могли взаимодействовать со службами Azure AD.
 - В этом руководстве предполагается, что вы используете песочницу Microsoft Graph, но вы можете использовать Postman или создать собственное клиентское приложение, чтобы вызывать Microsoft Graph. Чтобы вызвать API Microsoft Graph в этом руководстве, используйте учетную запись с ролью глобального администратора и соответствующими разрешениями. Чтобы настроить разрешения в песочнице Microsoft Graph, выполните следующие действия.
@@ -110,7 +110,7 @@ Content-type: application/json
     "externalAuthenticationType": "aadPreAuthentication",
     "internalUrl": "https://contosoiwaapp.com",
     "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net"
-  }
+  },
   "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
   "web": {
     "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],

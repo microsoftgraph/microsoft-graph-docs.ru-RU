@@ -1,32 +1,32 @@
 ---
-title: Назначение соединителиГруп приложению
-description: Используйте этот API для назначения соединителиГруп приложению
+title: Назначение группы соединителей приложению
+description: Используйте этот API для назначения connectorGroup приложению
 ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1bf14d7060aae8a329259bd3a50772fc5252b72b
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: fec92858ff617b83d26a60d4bd750034c9acec40
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671148"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060007"
 ---
-# <a name="assign-a-connectorgroup-to-an-application"></a>Назначение соединителиГруп приложению
+# <a name="assign-a-connectorgroup-to-an-application"></a>Назначение группы соединителей приложению
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Назначение [соединителиГруп](../resources/connectorgroup.md) [приложению](../resources/application.md).
+[Назначьте connectorGroup](../resources/connectorgroup.md) [приложению](../resources/application.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается.  |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -38,15 +38,15 @@ PUT /applications/{id}/connectorGroup/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Носителер. Обязательный параметр.|
+| Authorization  | Носителем. Обязательный параметр.|
 | Content-Type | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [connectorGroup](../resources/connectorgroup.md) .
+В тексте запроса добавьте представление объекта [connectorGroup](../resources/connectorgroup.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [application](../resources/application.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -93,7 +93,7 @@ Content-type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 <!-- {
   "blockType": "response"

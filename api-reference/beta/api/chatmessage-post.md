@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c9fd6c7115d5ab50334b2e63cf394c807d89da7e
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: fc64bbe5858ef20f363bd049cd98eec6b75e777e
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804257"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060705"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Отправка chatMessage в канале или чате
 
@@ -20,9 +20,9 @@ ms.locfileid: "62804257"
 
 Отправьте новый [chatMessage в](../resources/chatmessage.md) указанном [канале или](../resources/channel.md) [чате](../resources/chat.md).
 
-> **Примечание**. Мы не рекомендуем использовать этот API для переноса данных. Он не имеет пропускной способности, необходимой для обычной миграции.
+> **Примечание**. Не рекомендуется использовать этот API для миграции данных. У него нет пропускной способности, необходимой для обычной миграции.
 
-> **Примечание**. Это нарушение условий использования для [](/legal/microsoft-apis/terms-of-use) использования Microsoft Teams в качестве файла журнала. Отправка сообщений, которые будут читаться людьми.
+> **Примечание**. Использование Microsoft Teams в качестве файла журнала [](/legal/microsoft-apis/terms-of-use) является нарушением условий использования. Отправлять только сообщения, которые будут считывать пользователи.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -31,19 +31,19 @@ ms.locfileid: "62804257"
 ### <a name="permissions-for-channel"></a>Разрешения для канала
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All** |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All** |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Teamwork.Migrate.All |
 
-> **Примечание**. Разрешения, отмеченные **, поддерживаются только для обратной совместимости. Мы рекомендуем обновить решения, чтобы использовать альтернативное разрешение, перечисленное в предыдущей таблице, и избегать использования этих разрешений в будущем.
+> **Примечание**. Разрешения, отмеченные **, поддерживаются только для обратной совместимости. Рекомендуется обновить решения, чтобы использовать другое разрешение, указанное в предыдущей таблице, и избегать использования этих разрешений в будущем.
 
-> **Примечание**. Разрешения приложений *поддерживаются только для* [миграции](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams). В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества импортированных данных.
+> **Примечание**. Разрешения приложения *поддерживаются только* для [миграции](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams). В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества импортированных данных.
 
 ### <a name="permissions-for-chat"></a>Разрешения для чата
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | ChatMessage.Send, Chat.ReadWrite |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | ChatMessage.Send, Chat.ReadWrite |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -70,23 +70,23 @@ POST /chats/{chat-id}/messages
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {код}. Обязательно. |
+| Авторизация | Носитель {code}. Обязательно. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем JSON-представление [объекта chatMessage](../resources/chatmessage.md) . Обязательным является только свойство body; другие свойства необязательны.
+В тексте запроса добавьте представление объекта [chatMessage](../resources/chatmessage.md) в формате JSON. Обязательно только свойство body; Другие свойства являются необязательными.
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `201 Created` отклика и новый [объект chatMessage](../resources/chatmessage.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и новый объект [chatMessage](../resources/chatmessage.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-В следующих примерах URL-адрес может использовать синтаксис [HTTP](#http-request), описанный для отправки сообщения в [чат, отправки](chat-post-messages.md) сообщения на канал или отправки ответа [на канал](chatmessage-post-replies.md). [](channel-post-messages.md)
+В следующих примерах URL-адрес может использовать синтаксис [HTTP](#http-request), описанный для отправки сообщения в [чат, отправки](chat-post-messages.md) сообщения в канал или отправки ответа [каналу](chatmessage-post-replies.md). [](channel-post-messages.md)
 
-### <a name="example-1-send-a-hello-world-message-in-a-channel"></a>Пример 1. Отправка сообщения Hello World в канале
+### <a name="example-1-send-a-hello-world-message-in-a-channel"></a>Пример 1. Отправка Hello World сообщения в канале
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -319,12 +319,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-send-message-that-contains-cards"></a>Пример 3. Отправка сообщения с картами
+### <a name="example-3-send-message-that-contains-cards"></a>Пример 3. Отправка сообщения, содержащего карточки
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-> **Примечание:** ID вложения должен быть уникальным и может быть новым случайно созданным GUID. Однако, ID вложения должен быть одинаковым в элементах _тела_ и _вложений_ .
+> **Примечание:** Идентификатор вложения должен быть уникальным и может быть новым случайным образом созданным GUID. Однако идентификатор вложения должен быть одинаковым в тексте и _элементах_ вложений.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -332,6 +332,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "post_chatmessage_3"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
@@ -444,12 +445,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-send-a-message-with-file-attachment-in-it"></a>Пример 4. Отправка сообщения с вложением файла в нем
+### <a name="example-4-send-a-message-with-file-attachment-in-it"></a>Пример 4. Отправка сообщения с вложением файла
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
->**Примечание:** Файл уже должен быть в SharePoint. Чтобы найти свойства файла, получите **driveItem** для файла. Например, /drives/{id}/items/{id}. Ваш ИД вложения — это GUID в **eTag** **driveItem**, содержимое вложения —  **webUrl** папки **driveItem** плюс имя **driveItem**, а имя вложения — имя **driveItem**.
+>**Примечание:** Файл уже должен находиться в SharePoint. Чтобы найти свойства файла, get **the driveItem** для файла. Например, /drives/{id}/items/{id}. Идентификатор вложения — это ИДЕНТИФИКАТОР GUID в **eTag** объекта **driveItem**, **contentURL** вложения — это **webUrl** папки **driveItem** и имя **driveItem**, а имя вложения — имя **driveItem**.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -566,14 +567,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-send-inline-images-along-with-the-message"></a>Пример 5. Отправка изображений в линию вместе с сообщением
+### <a name="example-5-send-inline-images-along-with-the-message"></a>Пример 5. Отправка встроенных изображений вместе с сообщением
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-> **Примечание:** **TemporaryId в** коллекции **hostedContents** — это случайный ID, но он должен быть одинаковым по  всему телу и элементам **hostedContents**. (Обратите внимание **на временный наборId** **до 1** и ссылку в теле как `../hostedContents/1/$value`.)
+> **Примечание:** **Временный идентификатор** в коллекции **hostedContents** является случайным идентификатором, но должен быть одинаковым для всех  элементов **body и hostedContents**. (Обратите внимание, **что параметр temporaryId** имеет значение **1** , а ссылка в тексте — `../hostedContents/1/$value`.)
 
-**contentBytes** необходимо задать двоичным строкам Base64-encoded bytes. Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**Для параметра contentBytes** необходимо задать двоичную строку в кодировке Base64 байт. Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -677,14 +678,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-6-send-a-card-with-inline-images"></a>Пример 6. Отправка карточки с inline изображениями
+### <a name="example-6-send-a-card-with-inline-images"></a>Пример 6. Отправка карточки со встроенными изображениями
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-> **Примечание:** **TemporaryId** в коллекции **hostedContents** — это случайный ID, но он должен быть одинаковым для контента **(в** вложениях **) и** элементов **hostedContents** . (Обратите внимание **на временный наборId** **до 1** и ссылку в контенте как `../hostedContents/1/$value`.)
+> **Примечание:** **TemporaryId** в коллекции **hostedContents** является случайным идентификатором, но должен быть одинаковым для **содержимого (во** вложениях **) и** **элементов hostedContents** . (Обратите внимание **, что параметр temporaryId** имеет значение **1** , а ссылка в содержимом — `../hostedContents/1/$value`.)
 
-**contentBytes** необходимо задать двоичным строкам Base64-encoded bytes. Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**Для параметра contentBytes** необходимо задать двоичную строку в кодировке Base64 байт. Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -810,12 +811,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-7--mention-a-channel-in-a-channel-message"></a>Пример 7: @mention канал в сообщении канала
+### <a name="example-7--mention-a-channel-in-a-channel-message"></a>Пример 7. @mention канал в сообщении канала
 
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса. Сведения о том, как получить список каналов в группе, см. в [списке каналов](../api/channel-list.md).
+Ниже приведен пример запроса. Сведения о том, как получить список каналов в команде, см. в разделе ["Списки каналов"](../api/channel-list.md).
 
-> Примечание. **ConversationIdentityType** должен быть задан для `channel` @mention канала.
+> Примечание. **Параметр conversationIdentityType** должен иметь значение @mention `channel` канале.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -944,12 +945,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-8--mention-a-team-in-a-channel-message"></a>Пример 8. @mention группы в сообщении канала
+### <a name="example-8--mention-a-team-in-a-channel-message"></a>Пример 8. @mention команды в сообщении канала
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-> Примечание: **conversationIdentityType** должен быть задан для `team` @mention группы.
+> Примечание. **Параметр conversationIdentityType** должен иметь значение @mention `team` команды.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -1079,10 +1080,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-9--mention-a-tag-in-a-channel-message"></a>Пример 9: @mention тег в сообщении канала
+### <a name="example-9--mention-a-tag-in-a-channel-message"></a>Пример 9. @mention тег в сообщении канала
 
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса. Сведения о том, как получить список тегов в команде, см. в списке [teamworkTags](../api/teamworktag-list.md).
+Ниже приведен пример запроса. Сведения о том, как получить список тегов в команде, см. в разделе [List teamworkTags](../api/teamworktag-list.md).
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -1142,7 +1143,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -1205,6 +1206,110 @@ Content-type: application/json
             }
         }
     ],
+    "reactions": []
+}
+```
+
+### <a name="example-10-send-message-that-contains-cards-that-are-attributed-to-a-teams-app"></a>Пример 10. Отправка сообщения, содержащего карточки с атрибутами Teams приложения
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+> **Примечание:** При указании Teams для атрибута карточки идентификатор приложения Azure AD, используемый для вызова, должен соответствовать идентификатору приложения Azure AD Teams приложения. Идентификатор приложения Azure AD для Teams можно указать в разделе *webApplicationInfo* манифеста приложения. См. следующую документацию по текущей схеме [манифеста Teams приложения](/microsoftteams/platform/resources/schema/manifest-schema).
+>
+> Кроме того, приложение, указанное в полезных данных, должно быть установлено либо для пользователя, отправляющего сообщение, либо в чате или канале, в котором отправляется сообщение.
+
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_10"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
+Content-type: application/json
+
+{
+    "subject": null,
+    "body": {
+        "contentType": "html",
+        "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
+    },
+    "attachments": [
+        {
+            "id": "74d20c7f34aa4a7fb74e2b30004247c5",
+            "contentType": "application/vnd.microsoft.card.thumbnail",
+            "contentUrl": null,
+            "content": "{\r\n  \"title\": \"This is an example of posting a card\",\r\n  \"subtitle\": \"<h3>This is the subtitle</h3>\",\r\n  \"text\": \"Here is some body text. <br>\\r\\nAnd a <a href=\\\"http://microsoft.com/\\\">hyperlink</a>. <br>\\r\\nAnd below that is some buttons:\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"Login to FakeBot\",\r\n      \"text\": \"login\",\r\n      \"displayText\": \"login\",\r\n      \"value\": \"login\"\r\n    }\r\n  ]\r\n}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": "881b8843-fd91-49e5-9ac2-47ec497ffbe5"
+        }
+    ]
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
+    "id": "1616991851162",
+    "replyToId": null,
+    "etag": "1616991851162",
+    "messageType": "message",
+    "createdDateTime": "2021-03-29T04:24:11.162Z",
+    "lastModifiedDateTime": "2021-03-29T04:24:11.162Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616991851162?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616991851162&parentMessageId=1616991851162",
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
+    },
+    "channelIdentity": {
+        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
+    },
+    "attachments": [
+        {
+            "id": "74d20c7f34aa4a7fb74e2b30004247c5",
+            "contentType": "application/vnd.microsoft.card.thumbnail",
+            "contentUrl": null,
+            "content": "{  \"title\": \"This is an example of posting a card\",  \"subtitle\": \"<h3>This is the subtitle</h3>\",  \"text\": \"Here is some body text. <br>\\\\And a <a href=\\\"http://microsoft.com/\\\">hyperlink</a>. <br>\\\\And below that is some buttons:\",  \"buttons\": [    {      \"type\": \"messageBack\",      \"title\": \"Login to FakeBot\",      \"text\": \"login\",      \"displayText\": \"login\",      \"value\": \"login\"    }  ]}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": "881b8843-fd91-49e5-9ac2-47ec497ffbe5"
+        }
+    ],
+    "onBehalfOf": null,
+    "mentions": [],
     "reactions": []
 }
 ```

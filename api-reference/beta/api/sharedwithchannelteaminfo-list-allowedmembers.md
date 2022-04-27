@@ -5,12 +5,12 @@ author: devjha-ms
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 170181e59e2f427d87ce9a55c1c5165121d77262
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: eae5653a68d72d8ec68ad3eb81d96bc192c3f90a
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704271"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060859"
 ---
 # <a name="list-allowedmembers"></a>Список allowedMembers
 Пространство имен: microsoft.graph
@@ -18,6 +18,7 @@ ms.locfileid: "64704271"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получите список тех [conversationMembers](../resources/conversationmember.md), кто может получить доступ к общему [каналу](../resources/channel.md).
+
 Этот метод не возвращает следующие [conversationMembers](../resources/conversationmember.md) из [команды](../resources/team.md):
 - Пользователи с ролью `Guest`
 - Пользователи, которые имеют внешнюю проверку подлинности в клиенте
@@ -79,7 +80,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-5634-925f-022c42e20265/
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

@@ -1,25 +1,25 @@
 ---
-title: Обновление oAuth2PermissionGrant
-description: Обновление свойств oAuth2PermissionGrant, представляющего делегированную лицензию.
+title: Обновление объекта oAuth2PermissionGrant
+description: Обновите свойства oAuth2PermissionGrant, представляющие делегированное предоставление разрешений.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: b1da4a17b903ec2f340f3d63c83dcef14a9831d5
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 062eec013595bcc9957ed85eb447cf7355bd1570
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672261"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65061092"
 ---
 # <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>Обновление делегированного разрешения (oAuth2PermissionGrant)
 
 Пространство имен: microsoft.graph
 
 
-Обновление свойств [объекта oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) , представляющего делегированную выдачу разрешений.
+Обновите свойства [объекта oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) , представляющего делегированное предоставление разрешений.
 
-**OAuth2PermissionGrant** можно обновить, чтобы изменить, какие делегированная разрешения предоставляется, путем добавления или удаления элементов из списка в **области**.
+**OAuth2PermissionGrant** можно обновить, чтобы изменить делегированные разрешения, добавив или удалив элементы из списка в **областях**.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,9 +27,9 @@ ms.locfileid: "63672261"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ PATCH /oauth2PermissionGrants/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|scope|String| Указывает значение утверждения области, которое приложение ресурсов должно ожидать в маркере доступа OAuth 2.0. |
+|scope|String| Указывает значение утверждения области, которое приложение ресурса должно ожидать в маркере доступа OAuth 2.0. |
 
 ## <a name="response"></a>Отклик
 

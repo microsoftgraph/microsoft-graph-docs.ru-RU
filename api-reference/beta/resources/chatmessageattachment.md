@@ -1,36 +1,38 @@
 ---
-title: тип ресурса chatMessageAttachment
-description: Представляет вложение в объект сообщения чата.
-localization_priority: Normal
+title: Тип ресурса chatMessageAttachment
+description: Представляет вложение в сущность сообщения чата.
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: RamjotSingh
-ms.openlocfilehash: b4660e92643d868fbd09c693187a486fc3937584
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: caf7d1693395d9272a8999910dcaa29a9bef11da
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582573"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060760"
 ---
-# <a name="chatmessageattachment-resource-type"></a>тип ресурса chatMessageAttachment
+# <a name="chatmessageattachment-resource-type"></a>Тип ресурса chatMessageAttachment
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет вложение в объект сообщения чата.
+Представляет вложение в сущность сообщения чата.
 
-Объект типа возвращается в рамках API сообщений get channel, как часть `chatMessageAttachment` [сущности chatMessage.](chatmessage.md) [](../api/channel-list-messages.md)
+Сущность типа возвращается `chatMessageAttachment` как [часть API](../api/channel-list-messages.md) получения сообщений канала в составе сущности [chatMessage](chatmessage.md) .
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|string| Только для чтения. Уникальный id вложения.|
-|contentType| string | Тип мультимедиа вложения контента. Он может иметь следующие значения: <br><ul><li>`reference`: Вложение — это ссылка на другой файл. Заполнять contentURL ссылкой на объект.</li><li>Любые contentTypes, поддерживаемые [](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?#attachment-object) объектом вложения Bot Framework</li><li>`application/vnd.microsoft.card.codesnippet`. Фрагмент кода. </li><li>`application/vnd.microsoft.card.announcement`: Заглавная ведерка объявления. </li>|
-|contentUrl|string|URL-адрес для содержимого вложения. Поддерживаемые протоколы: http, https, file и data.|
-|содержимое|string|Содержимое вложения. Если вложение является [богатой картой,](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference)установите свойство объекту богатой карты. Это свойство и contentUrl являются взаимоисключающими.|
+|id|string| Только для чтения. Уникальный идентификатор вложения.|
+|contentType| string | Тип носителя вложения контента. Он может иметь следующие значения: <br><ul><li>`reference`: вложение — это ссылка на другой файл. Заполните contentURL ссылкой на объект.</li><li>Любые contentTypes, поддерживаемые объектом [Attachment Bot Framework](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?#attachment-object)</li><li>`application/vnd.microsoft.card.codesnippet`: фрагмент кода. </li><li>`application/vnd.microsoft.card.announcement`: заголовок объявления. </li>|
+|contentUrl|string|URL-адрес содержимого вложения. Поддерживаемые протоколы: HTTP, HTTPS, файл и данные.|
+|содержимое|string|Содержимое вложения. Если вложение является форматированным [карточкой](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference), задайте для свойства объект форматированного карточки. Это свойство и contentUrl являются взаимоисключающими.|
 |name|string|Имя вложения.|
-|thumbnailUrl| string |URL-адрес изображения эскиза, который канал может использовать, если поддерживает использование альтернативной, более мелкой формы контента или contentUrl. Например, если вы установите contentType для приложения/слова и установите contentUrl к расположению документа Word, вы можете включить эскизное изображение, которое представляет документ. Канал может отображать изображение эскиза вместо документа. Когда пользователь щелкает изображение, канал откроет документ.|
+|teamsAppId| string |Идентификатор приложения Teams, связанного с вложением. Это свойство используется специально для атрибута Teams сообщений указанному приложению.|
+|thumbnailUrl| string |URL-адрес эскиза, который канал может использовать, если он поддерживает использование альтернативной, меньшей формы содержимого или contentUrl. Например, если задать contentType для приложения или слова и задать contentUrl для расположения документа Word, можно включить эскиз изображения, представляющего документ. Вместо документа в канале может отображаться эскиз. Когда пользователь щелкает изображение, канал открывает документ.|
+
 
 ## <a name="json-representation"></a>Представление JSON
  Ниже указано представление ресурса в формате JSON.
@@ -40,7 +42,8 @@ ms.locfileid: "51582573"
   "optionalProperties": [
     "thumbnailUrl",
     "content",
-    "contentUrl"
+    "contentUrl",
+    "teamsAppId"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.chatMessageAttachment"
@@ -53,6 +56,7 @@ ms.locfileid: "51582573"
   "contentUrl": "string",
   "content": "string",
   "name": "string",
+  "teamsAppId": "string",
   "thumbnailUrl": "string"
 }
 

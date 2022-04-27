@@ -1,37 +1,41 @@
 ---
-title: тип ресурса riskyUserHistoryItem
-description: Представляет историю рисков пользователей Azure AD
+title: Тип ресурса riskyUserHistoryItem
+description: Представляет журнал рисков для пользователей Azure AD.
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 4ae6d5fbc28e8dddb4c782aa9e9b2fad79b347ad
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6a415325c26226ad2400ce572146bbfaa5beb8c7
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442859"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060670"
 ---
-# <a name="riskyuserhistoryitem-resource-type"></a>тип ресурса riskyUserHistoryItem
+# <a name="riskyuserhistoryitem-resource-type"></a>Тип ресурса riskyUserHistoryItem
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Представляет историю рисков пользователя Azure AD, определяемую службой Azure AD Identity Protection. 
+Представляет журнал рисков пользователя Azure AD, определенный защитой идентификации Azure AD.
+
+>[!NOTE]
+> 1. Для использования этого API требуется Azure AD Premium P2 лицензия.
+> 2. Доступность данных журнала рисков регулируется политиками хранения [данных Azure AD](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
 ## <a name="methods"></a>Методы
 
 | Метод   | Возвращаемый тип|Описание|
 |:---------------|:--------|:----------|
-|[История списка](../api/riskyuser-list-history.md) | [riskyUserHistoryItem](riskyuserhistoryitem.md) collection|Получите историю рисков пользователя Azure AD.|
+|[Журнал списков](../api/riskyuser-list-history.md) | [Коллекция riskyUserHistoryItem](riskyuserhistoryitem.md)|Получение журнала рисков пользователя Azure AD.|
 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство       | Тип    | Описание |
 |:---------------|:--------|:------------|
-| userId         | строка  | ID пользователя. |
-| initiatedBy    | bool    | ID субъекта, который делает операцию. |
+| userId         | строка  | Идентификатор пользователя. |
+| initiatedBy    | логический    | Идентификатор субъекта, который выполняет операцию. |
 | действие       | [riskUserActivity](riskuseractivity.md)| Действие, связанное с изменением уровня риска пользователя. | 
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,16 +1,16 @@
 ---
 title: Создание unifiedRoleDefinition
-description: Создайте новый объект unifiedRoleDefinition.
+description: Создайте объект unifiedRoleDefinition.
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 49a6b986055207205f1af3778dfed7a5ccf01e74
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 7ed0b30e2e2f1a2c7c0b995cc8062a4bf0e68fde
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669874"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65061085"
 ---
 # <a name="create-unifiedroledefinition"></a>Создание unifiedRoleDefinition
 
@@ -18,39 +18,39 @@ ms.locfileid: "63669874"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [единого объектаRoleDefinition](../resources/unifiedroledefinition.md) для поставщика RBAC.
+Создайте объект [unifiedRoleDefinition](../resources/unifiedroledefinition.md) для поставщика RBAC.
 
 В настоящее время поддерживаются следующие поставщики RBAC:
-- Облачный КОМПЬЮТЕР
+- Облачный компьютер
 - управление устройствами (Intune)
 - каталог (Azure AD)
 
 ## <a name="permissions"></a>Разрешения
 
-В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующих таблиц наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные дополнительные новости, в том числе [осторожность перед выбором](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) более привилегированных разрешений, см. [в руб. Permissions](/graph/permissions-reference). 
+В зависимости от поставщика RBAC и требуемого типа разрешения (делегированного или приложения) выберите из следующих таблиц наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные сведения, [включая осторожность перед](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) выбором более привилегированных разрешений, см. в [разделе "Разрешения"](/graph/permissions-reference). 
 
-### <a name="for-a-cloud-pc-provider"></a>Поставщик облачных ПК
+### <a name="for-a-cloud-pc-provider"></a>Для поставщика облачных компьютеров
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All  |
 
 ### <a name="for-a-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  DeviceManagementRBAC.ReadWrite.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) |  DeviceManagementRBAC.ReadWrite.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | DeviceManagementRBAC.ReadWrite.All |
 
-### <a name="for-a-directory-azure-ad-provider"></a>Поставщик каталогов (Azure AD)
+### <a name="for-a-directory-azure-ad-provider"></a>Для поставщика каталога (Azure AD)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -67,7 +67,7 @@ POST /roleManagement/deviceManagement/roleDefinitions
 POST /roleManagement/directory/roleDefinitions
 ```
 
-Чтобы создать определение ролей для поставщика облачных ПК:
+Чтобы создать определение роли для поставщика облачных компьютеров:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /roleManagement/cloudPc/roleDefinitions
@@ -77,25 +77,25 @@ POST /roleManagement/cloudPc/roleDefinitions
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
-В теле запроса поставляем представление JSON объекта [unifiedRoleDefinition](../resources/unifiedroledefinition.md) .
+В тексте запроса добавьте представление объекта [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в формате JSON.
 
 В следующей таблице показаны свойства, необходимые при создании roleDefinition.
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
-|displayName |string |Имя отображения для определения роли.|
-|isEnabled |Boolean |Флаг, указывающий, включена ли роль для назначения. Если значение false, роль недоступна для назначения.|
-|rolePermissions |[коллекция unifiedRolePermission](../resources/unifiedrolepermission.md) |Список разрешений, включенных в роль.|
+|displayName |string |Отображаемое имя определения роли.|
+|isEnabled |Boolean |Флаг, указывающий, включена ли роль для назначения. Если задано значение false, роль недоступна для назначения.|
+|rolePermissions |[Коллекция unifiedRolePermission](../resources/unifiedrolepermission.md) |Список разрешений, включенных в роль.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает `201 Created` код отклика и новый [объект unifiedRoleDefinition](../resources/unifiedroledefinition.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в теле отклика.
 
-## <a name="example-1create-a-custom-role-for-a-directory-provider"></a>Пример 1:Создание настраиваемой роли для поставщика каталогов
+## <a name="example-1create-a-custom-role-for-a-directory-provider"></a>Пример 1. Создание настраиваемой роли для поставщика каталогов
 
 ### <a name="request"></a>Запрос
 
@@ -153,7 +153,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -173,7 +173,7 @@ Content-type: application/json
     "displayName": "Application Registration Support Administrator",
     "isBuiltIn": false,
     "isEnabled": true,
-    "templateId": "c2cb59a3-2d01-4176-a458-95b0e674966f",
+    "templateId": "d5eec5e0-6992-4c6b-b430-0f833f1a815a",
     "version": null,
     "rolePermissions": [
         {
@@ -184,7 +184,7 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('c2cb59a3-2d01-4176-a458-95b0e674966f')/inheritsPermissionsFrom",
+    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('d5eec5e0-6992-4c6b-b430-0f833f1a815a')/inheritsPermissionsFrom",
     "inheritsPermissionsFrom": []
 }
 ```
@@ -199,7 +199,7 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
-### <a name="example-2-create-a-custom-role-for-a-cloud-pc-provider"></a>Пример 2. Создание настраиваемой роли для поставщика облачных ПК
+### <a name="example-2-create-a-custom-role-for-a-cloud-pc-provider"></a>Пример 2. Создание настраиваемой роли для поставщика облачных компьютеров
 
 #### <a name="request"></a>Запрос
 
@@ -250,7 +250,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

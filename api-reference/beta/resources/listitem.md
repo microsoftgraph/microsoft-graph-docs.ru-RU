@@ -1,19 +1,18 @@
 ---
 author: JeremyKelley
-description: Этот ресурс представляет элемент объекта list в SharePoint.
-ms.date: 09/11/2017
-title: ListItem
+description: Этот ресурс представляет элемент в SharePoint списка.
+title: Ресурс listItem
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: e1a1c17a7feabb66be08c7a036191d82ec18ff45
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: bfda041c473da6d5d98c7c6b076ba9be276cd486
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722687"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060677"
 ---
-# <a name="listitem-resource"></a>Ресурс ListItem
+# <a name="listitem-resource"></a>Ресурс listItem
 
 Пространство имен: microsoft.graph
 
@@ -41,12 +40,15 @@ ms.locfileid: "63722687"
 | [Обновление][]                     | PATCH /items/{item-id}                       |
 | [Обновление значений столбцов][Обновление] | PATCH /items/{item-id}/fields                |
 | [createLink][CreateLink]       | POST /items/{itemId}/createLink              |
+|[Перечисление documentSetVersions](../api/listitem-list-documentsetversions.md)| GET /items/{item-id}/documentSetVersions |
+|[Создание documentSetVersion](../api/listitem-post-documentsetversions.md)| POST /items/{item-id}/documentSetVersions |
+|[Восстановление documentSetVersion](../api/documentsetversion-restore.md)| POST /items/{item-id}/documentSetVersions/{documentSetVersion-id}/restore |
 
 [Получение]: ../api/listitem-get.md
 [Получение аналитики]: ../api/itemanalytics-get.md
 [Получение действий по интервалу]: ../api/itemactivity-getbyinterval.md
 [Создание]: ../api/listitem-create.md
-[Delete]: ../api/listitem-delete.md
+[Удаление]: ../api/listitem-delete.md
 [Обновление]: ../api/listitem-update.md
 [CreateLink]: ../api/listitem-createlink.md
 
@@ -70,6 +72,7 @@ ms.locfileid: "63722687"
   /* relationships */
   "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
   "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
+  "documentSetVersions": [{"@odata.type": "microsoft.graph.documentSetVersion"}],
   "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
   "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
 
@@ -118,7 +121,8 @@ ms.locfileid: "63722687"
 | Связь | Тип                           | Описание                                                                                        |
 | :----------- | :----------------------------- | :------------------------------------------------------------------------------------------------- |
 | activities   | Коллекция [itemActivity][]    | Список последних действий, выполненных с элементом.                                        |
-| analytics    | Ресурс [itemAnalytics][]     | Аналитические данные о действиях просмотра, выполненных для элемента.                                  |
+| analytics    | Ресурс [itemAnalytics][]     | Аналитические данные о действиях просмотра, выполненных для элемента.|
+|documentSetVersions|[Коллекция documentSetVersion](../resources/documentsetversion.md)| Сведения о версии набора документов, созданной пользователем.|
 | driveItem    | [driveItem][]                  | Для библиотек документов связь **driveItem** предоставляет ресурс listItem как объект **[driveItem][]** |
 | fields       | [fieldValueSet][]              | Значения столбцов, установленные для данного элемента списка.                                                   |
 | versions     | Коллекция [listItemVersion][] | Список предыдущих версий элемента списка.                                                    |

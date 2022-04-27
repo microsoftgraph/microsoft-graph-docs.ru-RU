@@ -1,26 +1,26 @@
 ---
-title: Получить oAuth2PermissionGrant (делегированная субсидия на разрешение)
-description: Извлечение свойств и связей одного oAuth2PermissionGrant, представляющего делегированную лицензию.
+title: Получение oAuth2PermissionGrant (делегированное предоставление разрешений)
+description: Получение свойств и связей одного объекта oAuth2PermissionGrant, представляющего делегированное предоставление разрешений.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 3255984c6ef102f3dafd9d735d6cdd019767a49e
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 3e4d0abfdf8666dbb2c15d31151571a0c23a3d2b
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63670217"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060579"
 ---
-# <a name="get-oauth2permissiongrant-a-delegated-permission-grant"></a>Получить oAuth2PermissionGrant (делегированная субсидия на разрешение)
+# <a name="get-oauth2permissiongrant-a-delegated-permission-grant"></a>Получение oAuth2PermissionGrant (делегированное предоставление разрешений)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств единого делегированного разрешения, представленного объектом [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) .
+Получение свойств одного делегированного разрешения, представленного [объектом oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) .
 
-**OAuth2PermissionGrant** представляет делегированную разрешений, которые были предоставлены для клиентского приложения для доступа к API от имени подписанного пользователя.
+**OAuth2PermissionGrant** представляет делегированные разрешения, которые были предоставлены клиентским приложениям для доступа к API от имени вошедщего пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "63670217"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All, Directory.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -56,7 +56,7 @@ GET /oauth2PermissionGrants/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и [объект oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants/AVs6JuUDjkCFV7q2gd8Q
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

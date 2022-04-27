@@ -5,12 +5,12 @@ title: Тип ресурса site
 ms.localizationpriority: high
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 52d5a66533304d2b7df479e2393a7a4a7cf41974
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 423986ac43de3558836660a1684978784db724eb
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64586876"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65059976"
 ---
 # <a name="site-resource-type"></a>Тип ресурса site
 
@@ -83,7 +83,7 @@ ms.locfileid: "64586876"
 | **lastModifiedDateTime** | DateTimeOffset     | Дата и время последнего изменения элемента. Только для чтения.                                       |
 | **name**                 | string             | Имя или название элемента.                                                                  |
 | **root**                 | [root][]           | Если это свойство присутствует, оно указывает на то, что сайт — корневой в семействе веб-сайтов. Только для чтения.            |
-| **settings**             | [siteSettings]     | Параметры на этом сайте. Возвращается только с помощью оператора $select. Только для чтения.                                |
+| **settings**             | [siteSettings]     | Параметры на этом сайте. Только для чтения.                                |
 | **sharepointIds**        | [sharepointIds][]  | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.                       |
 | **siteCollection**       | [siteCollection][] | Предоставляет сведения о семействе веб-сайтов сайта. Доступно только на корневом сайте. Только для чтения. |
 | **webUrl**               | строка (url-адрес)       | URL-адрес для отображения элемента в браузере. Только для чтения.                                          |

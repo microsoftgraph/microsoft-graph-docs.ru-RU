@@ -3,14 +3,54 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: c45d0b704bede20ad3fa8a643c68a88a1f109829
-ms.sourcegitcommit: 525baf0edb3e7e0f895134e900a0a52e77650267
+ms.openlocfilehash: bcfced8791bddae5bac1d32f0a900f40db286511
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64918353"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060698"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
+
+## <a name="february-2022-new-and-generally-available"></a>Февраль 2022 г.: новые и общедоступные возможности
+
+### <a name="teamwork"></a>Teamwork
+Получение [сведений о виртуальном собрании](/graph/api/resources/teamworkOnlineMeetingInfo), связанном с [чатом](/graph/api/resources/chat), с помощью свойства **onlineMeetingInfo**.
+
+## <a name="february-2022-new-in-preview-only"></a>Февраль 2022 г.: новое только в предварительной версии
+
+### <a name="applications"></a>Приложения
+- Использование нового параметра политики для [методов проверки подлинности приложения](/graph/api/resources/applicationauthenticationmethodpolicy?view=graph-rest-beta&preserve-view=true), чтобы ограничить секрет пользовательского пароля для приложения или субъекта-службы.
+- Указание [параметров](/graph/api/resources/windowsApplication?view=graph-rest-beta&preserve-view=true) приложений для устройств под управлением Windows, опубликованных в Microsoft Store или магазине игр Xbox.
+
+### <a name="change-notifications"></a>Уведомления об изменениях
+Подписка на изменения контактов, событий или сообщений Outlook для получения уведомлений, в полезные данные которых включены данные ресурсов. Дополнительные сведения см. в статье [Уведомления об изменениях, связанных с ресурсами Outlook, в Microsoft Graph](outlook-change-notifications-overview.md).
+
+### <a name="device-and-app-management--cloud-pc"></a>Управление устройствами и приложениями | Облачный компьютер 
+- Определение [параметров точки восстановления](/graph/api/resources/cloudpcrestorepointsetting?view=graph-rest-beta&preserve-view=true), которые включают периодичность создания точки восстановления и определяют возможность восстановления пользователями своих облачных компьютеров на основе резервной копии точки восстановления.
+- [Восстановление](/graph/api/manageddevice-restorecloudpc?view=graph-rest-beta&preserve-view=true) облачного компьютера на основе предыдущего моментального снимка.
+- [Восстановление несколько облачных компьютеров](/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta&preserve-view=true) в одном запросе путем указания идентификаторов их управляемых устройств и диапазона даты и времени (например, до, после) точки восстановления.
+
+### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
+Использование прав доступа приложений для `CustomSecAttributeAssignment.Read.All` чтения [пользовательских определений атрибутов безопасности](/graph/api/resources/customsecurityattributedefinition?view=graph-rest-beta&preserve-view=true) для организации без пользователя, выполнившего вход.
+
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+- Настройка [параметров](/graph/api/resources/accessreviewstagesettings?view=graph-rest-beta&preserve-view=true) каждого [этапа](/graph/api/resources/accessreviewstage?view=graph-rest-beta&preserve-view=true) в многоступенчатой проверке доступа. Помимо [получения](/graph/api/accessreviewstage-get?view=graph-rest-beta&preserve-view=true) или [обновления](/graph/api/accessreviewstage-update?view=graph-rest-beta&preserve-view=true) этапа проверки доступа, вам доступны следующие действия: 
+  - [Остановка](/graph/api/accessreviewstage-stop?view=graph-rest-beta&preserve-view=true) предоставления проверяющими дополнительной информации на некотором этапе и переход к следующему этапу (если применимо). 
+  - [Фильтрация](/graph/api/accessreviewstage-filterbycurrentuser?view=graph-rest-beta&preserve-view=true) и получение всех этапов [экземпляра проверки доступа](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true), для которого вызывающий пользователь является проверяющим
+  - [Составление списка решений](/graph/api/accessreviewstage-list-decisions?view=graph-rest-beta&preserve-view=true) из многоступенчатой проверки доступа.
+- Приложения могут использовать разрешение приложения `EntitlementManagement.ReadWrite.All` в целях [создания запроса пакета доступа для ресурса](/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta&preserve-view=true), чтобы добавить ресурс в [каталог пакетов доступа](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true) или удалить его из каталога.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход
+- Использование ряда новых свойств для настройки [фирменного стиля организации](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true). Например, варианта логотипа компании в виде баннера для страницы входа, настраиваемой пиктограммы сайта с URL-адресом на основе CDN, а также нескольких других настраиваемых свойств, которые пользователи могут применять для управления учетными записями.
+- Включение или исключение Linux как одного из [условий платформы](/graph/api/resources/conditionalaccessplatforms?view=graph-rest-beta&preserve-view=true) в [политике условного доступа](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true).
+- Выявление [субъектов-служб, с которыми связан риск](/graph/api/resources/riskyserviceprincipal?view=graph-rest-beta&preserve-view=true), в организации с помощью службы Azure AD, которая постоянно [определяет и оценивает риски](/graph/api/resources/serviceprincipalriskdetection?view=graph-rest-beta&preserve-view=true) на основе различных сигналов и машинного обучения. Вы можете [подтвердить](/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-beta&preserve-view=true), что субъект-служба действительно скомпрометирован, после чего корпорация Майкрософт отключит объект этого субъекта-службы. Вы можете [отклонить](/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-beta&preserve-view=true) риск, связанный с субъектом-службой. Кроме того, вы можете [создать журнал рисков](/graph/api/riskyserviceprincipal-list-history?view=graph-rest-beta&preserve-view=true), связанных с субъектом-службой.
+- Использование [параметров межклиентского доступа](/graph/api/resources/crosstenantaccesspolicy-overview?view=graph-rest-beta&preserve-view=true) для контроля над взаимодействием между пользователями в вашей и других организациях и управления этим взаимодействием. Эти параметры детализированы и позволяют определять пользователей, группы и приложения как в вашей, так и во внешних организациях, которые могут участвовать во взаимодействии в рамках Azure AD B2B и прямом подключении Azure AD B2B. 
+- Разрешение или запрещение пользователям и группам в организации применять [встроенную в Azure AD проверку подлинности на основе сертификатов (CBA)](/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true).
+
+### <a name="search"></a>Поиск
+Настройка ресурсов [acronym](/graph/api/resources/search-acronym?view=graph-rest-beta&preserve-view=true), [bookmark](/graph/api/resources/search-bookmark?view=graph-rest-beta&preserve-view=true) и [QnA](/graph/api/resources/search-qna?view=graph-rest-beta&preserve-view=true) в качестве [ответов административного поиска для пользователей в организации](search-concept-answers.md).
+
 
 ## <a name="january-2022-new-and-generally-available"></a>Январь 2022 г.: новые и общедоступные возможности
 

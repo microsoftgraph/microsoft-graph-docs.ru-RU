@@ -1,27 +1,27 @@
 ---
-title: Список oAuth2PermissionGrants (делегирование разрешений)
-description: Получение списка объектов oauth2PermissionGrant, представляющих делегированную дотации разрешений.
+title: Перечисление oAuth2PermissionGrants (делегированные разрешения)
+description: Получение списка объектов oauth2PermissionGrant, представляющих делегированные разрешения.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: d1d27b6c27944529b128785c765cb7ff856380bf
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 2f8027d0ee84819c665a3c60efaa94ff9c2552ab
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671533"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060767"
 ---
-# <a name="list-oauth2permissiongrants-delegated-permission-grants"></a>Список oauth2PermissionGrants (делегирование разрешений)
+# <a name="list-oauth2permissiongrants-delegated-permission-grants"></a>Перечисление oauth2PermissionGrants (делегированные разрешения)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [объектов oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) , представляющих делегированную лицензию, выданную для клиентских приложений для доступа к API от имени пользователей, входиющих в нее.
+Получение списка объектов [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) , представляющих делегированные разрешения, предоставленные клиентским приложениям для доступа к API от имени вошедшему пользователю.
 
 > [!NOTE]
-> При запросе могут происходить задержки репликации для предоставленных делегированных разрешений, которые были недавно созданы, обновлены или удалены. При указании фильтра `clientId` эта задержка будет сведена к минимуму.
+> При запросе могут происходить задержки репликации для предоставленных делегированных разрешений, которые были недавно созданы, обновлены или удалены. Эта задержка будет свернута, если указан фильтр `clientId` .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,9 +29,9 @@ ms.locfileid: "63671533"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All, Directory.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

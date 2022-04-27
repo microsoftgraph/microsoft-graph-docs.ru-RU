@@ -1,22 +1,22 @@
 ---
 title: Создание unifiedRoleDefinition
-description: Создайте новый объект unifiedRoleDefinition.
+description: Создайте объект unifiedRoleDefinition.
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ebeea0cdf0922dde8dff004f21832df206cfaad0
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 582d0c3619779c3291a0cf2bfaa06bab62a4fee1
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134398"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060726"
 ---
 # <a name="create-unifiedroledefinition"></a>Создание unifiedRoleDefinition
 
 Пространство имен: microsoft.graph
 
-Создание нового [настраиваемого единого объектаRoleDefinition.](../resources/unifiedroledefinition.md)
+Создайте пользовательский [объект unifiedRoleDefinition](../resources/unifiedroledefinition.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "62134398"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | RoleManagement.ReadWrite.Directory |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | RoleManagement.ReadWrite.Directory |
+| Делегированное (рабочая или учебная учетная запись)     | RoleManagement.ReadWrite.Directory |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,30 +40,30 @@ POST /roleManagement/directory/roleDefinitions
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [unifiedRoleDefinition.](../resources/unifiedroledefinition.md)
+В тексте запроса добавьте представление объекта [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в формате JSON.
 
 В следующей таблице показаны свойства, необходимые при создании roleDefinition.
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
-|displayName |string |Имя отображения для определения роли.|
-|isEnabled |Boolean |Флаг, указывающий, включена ли роль для назначения. Если `false` роль недоступна для назначения.|
-|rolePermissions |[коллекция unifiedRolePermission](../resources/unifiedrolepermission.md) |Список разрешений, включенных в роль.|
+|displayName |string |Отображаемое имя определения роли.|
+|isEnabled |Boolean |Флаг, указывающий, включена ли роль для назначения. Если `false`роль недоступна для назначения.|
+|rolePermissions |[Коллекция unifiedRolePermission](../resources/unifiedrolepermission.md) |Список разрешений, включенных в роль.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и новый `201 Created` [объект unifiedRoleDefinition](../resources/unifiedroledefinition.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Ниже приводится пример создания настраиваемой роли.
+Ниже приведен пример создания настраиваемой роли.
 
 
 
@@ -122,7 +122,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -142,7 +142,7 @@ Content-type: application/json
     "displayName": "Application Registration Support Administrator",
     "isBuiltIn": false,
     "isEnabled": true,
-    "templateId": "c2cb59a3-2d01-4176-a458-95b0e674966f",
+    "templateId": "d5eec5e0-6992-4c6b-b430-0f833f1a815a",
     "version": null,
     "rolePermissions": [
         {
@@ -153,7 +153,7 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('c2cb59a3-2d01-4176-a458-95b0e674966f')/inheritsPermissionsFrom"
+    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('d5eec5e0-6992-4c6b-b430-0f833f1a815a')/inheritsPermissionsFrom"
 }
 ```
 

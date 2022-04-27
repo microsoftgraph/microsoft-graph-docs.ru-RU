@@ -1,24 +1,24 @@
 ---
-title: 'applicationTemplate: instantiate'
-description: Используйте этот API для создания нового приложенияTemplate
+title: 'applicationTemplate: создание экземпляра'
+description: Использование этого API для создания нового объекта applicationTemplate
 ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c55b93249535bc12b26c299a3d4a916f739d0fe4
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: f0374ec223daba8f5df49ebb89d764eec24cee0c
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339300"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060558"
 ---
-# <a name="applicationtemplate-instantiate"></a>applicationTemplate: instantiate
+# <a name="applicationtemplate-instantiate"></a>applicationTemplate: создание экземпляра
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте экземпляр приложения из галереи приложений Azure AD в каталог.
+Добавьте экземпляр приложения из коллекции приложений Azure AD в каталог. Этот API также можно использовать для создания экземпляров приложений, отличных [от коллекции](/azure/active-directory/manage-apps/add-non-gallery-app). Используйте следующий идентификатор для **объекта applicationTemplate** : `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "62339300"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+| Для приложений                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -37,6 +37,8 @@ ms.locfileid: "62339300"
 ```http
 POST /applicationTemplates/{id}/instantiate
 ```
+
+Для создания экземпляров приложений, отличных от коллекции, используйте `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` для `{applicationTemplate-id}`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -50,11 +52,11 @@ POST /applicationTemplates/{id}/instantiate
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Настраиваемая фамилия приложения|
+|displayName|String|Пользовательское имя приложения|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного применения этот метод возвращает код `201 OK` отклика и новый [объект applicationServicePrincipal](../resources/applicationserviceprincipal.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и новый [объект applicationServicePrincipal](../resources/applicationserviceprincipal.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -62,9 +64,7 @@ POST /applicationTemplates/{id}/instantiate
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса.
- 
-> Этот API можно использовать для мгновенного запуска приложений [, не в галерее](/azure/active-directory/manage-apps/add-non-gallery-app). Используйте следующий ID для **applicationTemplate**: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
+Ниже приведен пример запроса. URL-адрес запроса указывается `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` как идентификатор шаблона приложения. Это означает, что запрос создает экземпляр приложения, отличного от коллекции.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -73,11 +73,11 @@ POST /applicationTemplates/{id}/instantiate
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/applicationTemplates/{id}/instantiate
+POST https://graph.microsoft.com/beta/applicationTemplates/8adf8e6e-67b2-4cf2-a259-e3dc5476c621/instantiate
 Content-type: application/json
 
 {
-  "displayName": "My custom name"
+    "displayName": "testProperties"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -120,56 +120,59 @@ Content-type: application/json
 } -->
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-   "servicePrincipal":{
-      "accountEnabled":true,
-      "addIns":[
-         {
-            "id":"id-value",
-            "type":"type-value",
-            "properties":[
-               {
-                  "key":"key-value",
-                  "value":"value-value"
-               }
-            ]
-         }
-      ],
-      "appDisplayName":"appDisplayName-value",
-      "appId":"appId-value",
-      "appOwnerOrganizationId":"appOwnerOrganizationId-value",
-      "appRoleAssignmentRequired":true
-   },
-   "application":{
-      "api":{
-         "acceptedAccessTokenVersion":1,
-         "publishedPermissionScopes":[
-            {
-               "adminConsentDescription":"adminConsentDescription-value",
-               "adminConsentDisplayName":"adminConsentDisplayName-value",
-               "id":"id-value",
-               "isEnabled":true,
-               "type":"type-value",
-               "userConsentDescription":"userConsentDescription-value",
-               "userConsentDisplayName":"userConsentDisplayName-value",
-               "value":"value-value"
-            }
-         ]
-      },
-      "allowPublicClient":true,
-      "applicationAliases":[
-         "applicationAliases-value"
-      ],
-      "createdDateTime":"datetime-value",
-      "installedClients":{
-         "redirectUrls":[
-            "redirectUrls-value"
-         ]
-      }
-   }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.applicationServicePrincipal",
+    "application": {
+        "objectId": "428fbcb1-35bc-471d-95f2-6cc339357cb5",
+        "appId": "23a223ba-bb90-4949-8232-1bf479189e9b",
+        "applicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
+        "displayName": "testProperties",
+        "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
+        "identifierUris": [],
+        "publicClient": null,
+        "replyUrls": [],
+        "logoutUrl": null,
+        "samlMetadataUrl": null,
+        "errorUrl": null,
+        "groupMembershipClaims": null,
+        "availableToOtherTenants": false
+    },
+    "servicePrincipal": {
+        "objectId": "7b358fa1-7d10-4a57-bd96-b7e63c2f9be5",
+        "deletionTimestamp": null,
+        "accountEnabled": true,
+        "appId": "23a223ba-bb90-4949-8232-1bf479189e9b",
+        "appDisplayName": "testProperties",
+        "applicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
+        "appOwnerTenantId": "29a4f813-9274-4e1b-858d-0afa98ae66d4",
+        "appRoleAssignmentRequired": true,
+        "displayName": "testProperties",
+        "errorUrl": null,
+        "loginUrl": null,
+        "logoutUrl": null,
+        "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
+        "samlMetadataUrl": null,
+        "microsoftFirstParty": null,
+        "publisherName": "Contoso",
+        "preferredSingleSignOnMode": null,
+        "preferredTokenSigningKeyThumbprint": null,
+        "preferredTokenSigningKeyEndDateTime": null,
+        "replyUrls": [],
+        "servicePrincipalNames": [
+            "23a223ba-bb90-4949-8232-1bf479189e9b"
+        ],
+        "tags": [
+            "WindowsAzureActiveDirectoryIntegratedApp",
+            "WindowsAzureActiveDirectoryCustomSingleSignOnApplication"
+        ],
+        "notificationEmailAddresses": [],
+        "samlSingleSignOnSettings": null,
+        "keyCredentials": [],
+        "passwordCredentials": []
+    }
 }
 ```
 
