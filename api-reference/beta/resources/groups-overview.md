@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 39855db405aeac9d6f8896e04fdd4fa25067cc0d
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: 799fd82f5754d07a58fd570205f10fbe6d306f8a
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848533"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65061134"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Работа с группами в Microsoft Graph
 
@@ -59,11 +59,11 @@ Azure Active Directory (Azure AD) поддерживает следующие т
 В следующем объекте JSON показано примерное представление группы при вызове API групп Microsoft Graph.
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
     "id": "4c5ee71b-e6a5-4343-9e2c-4244bc7e0938",
     "deletedDateTime": null,
     "classification": "MBI",
@@ -98,7 +98,7 @@ Content-type: application/json
 В следующем объекте JSON показано примерное представление группы при вызове API групп Microsoft Graph.
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
@@ -153,6 +153,16 @@ Content-type: application/json
 ## <a name="other-types-of-groups"></a>Группы других типов
 
 Группы Microsoft 365 в Yammer используются для организации совместной работы пользователей с помощью записей Yammer. Группы такого типа можно возвращать с помощью запроса на чтение, но записи из них недоступны через API. Если в группе включены записи и каналы бесед Yammer, то стандартные групповые беседы Microsoft 365 отключены. Дополнительные сведения см. в [документах, посвященных API Yammer для разработчиков](https://developer.yammer.com/docs).
+
+## <a name="group-search-limitations-for-guest-users-in-organizations"></a>Ограничения на поиск групп для гостевых пользователей в организациях
+
+Функции поиска групп позволяют приложению найти любую группу в каталоге организации с помощью запросов для ресурса `/groups` (например, `https://graph.microsoft.com/beta/groups`). Эта возможность доступна администраторам и пользователям, которые являются участниками. Однако это недоступно гостевым пользователям.
+
+Если пользователь вошел как гость, в зависимости от предоставленных приложению разрешений оно может прочитать профиль определенной группы (например, `https://graph.microsoft.com/beta/group/fc06287e-d082-4aab-9d5e-d6fd0ed7c8bc`). Но оно не может отправлять ресурсу `/groups` запросы, способные возвращать несколько ресурсов.
+
+При наличии подходящих разрешений приложение может читать профили групп, которые оно получает благодаря ссылкам в свойствах навигации (например, `/groups/{id}/members`).
+
+Дополнительные сведения о том, что гостевые пользователи могут делать с группами, см. в разделе [Сравнение стандартных разрешений участника и гостя](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions).
 
 ## <a name="group-based-licensing"></a>Лицензирование на основе групп
 

@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getCredentialUsageSummary'
-description: Report the current state of how many users in your organization are using self-service password reset capabilities.
-localization_priority: Normal
+description: Ведите отчет о текущем состоянии количества пользователей в организации, использующих возможности самостоятельного сброса пароля.
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 56015afd7bc5589d518277df555ac511b7f91657
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5a059ed68c90a071d0027c059eb2470791be8cca
+ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131357"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65102957"
 ---
 # <a name="reportroot-getcredentialusagesummary"></a>reportRoot: getCredentialUsageSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "50131357"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Report the current state of how many users in your organization used the self-service password reset capabilities.
+Укажите текущее состояние количества пользователей в организации, которые использовали возможности самостоятельного сброса пароля.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -35,24 +35,24 @@ Report the current state of how many users in your organization used the self-se
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getCredentialUsageSummary
+GET /reports/getCredentialUsageSummary(period='{periodValue}')
 ```
 
 ## <a name="function-parameters"></a>Параметры функции
 
-Для настройки ответа можно использовать следующий параметр функции.
+Чтобы запросить временные рамки ответа, необходимо использовать следующий параметр функции.
 
 | Параметр | Тип | Описание |
 |:--------- |:---- |:----------- |
-| period | Строка | Указывает период времени, для которого требуются данные об использовании. Пример: `/reports/getCredentialUsageSummary(period='D30')`. Поддерживаемые периоды: `D1` , `D7` , и `D30` . Точка нечувствительна к делу. |
+| period | String | Обязательный. Указывает период времени в днях, в течение которого требуются данные об использовании. Пример: `/reports/getCredentialUsageSummary(period='D30')`. Поддерживаемые периоды: `D1`и `D30``D7`. Период не учитывает регистр. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Эта функция поддерживает необязательный параметр запроса OData **$filter.** Вы можете **применить $filter** к одному или более из следующих свойств ресурса [credentialUsageSummary.](../resources/credentialusagesummary.md)
+Эта функция поддерживает необязательный параметр запроса OData **$filter**. Можно **применить $filter к** одному или нескольким из следующих свойств ресурса [credentialUsageSummary](../resources/credentialusagesummary.md) .
 
 | Свойства | Описание и пример |
 |:---- |:----------- |
-| feature | Указывает нужный тип данных об использовании (регистрация и сброс). Пример: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`. Поддерживаемые операторы фильтра: `eq` . |
+| Функция | Указывает нужный тип данных об использовании (регистрация и сброс). Пример: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`. Поддерживаемые операторы фильтра: `eq`. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -67,7 +67,7 @@ GET /reports/getCredentialUsageSummary
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и новый объект `200 OK` [коллекции credentialUsageSummary](../resources/credentialusagesummary.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и новый объект [коллекции credentialUsageSummary](../resources/credentialusagesummary.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUsageSummary(period='D
 
 Ниже приведен пример отклика.
 
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Все свойства возвращаются при фактическом вызове.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Все свойства возвращаются из фактического вызова.
 
 <!-- {
   "blockType": "response",

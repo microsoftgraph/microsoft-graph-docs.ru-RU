@@ -1,29 +1,34 @@
 ---
-title: Список несовместимыхAccessPackages
-description: 'Извлечение списка accesspackages, права доступа которых несовместимы с определенным пакетом доступа.'
+title: Перечисление несовместимых пакетовAccessPackage
+description: Получение списка пакетов доступа, права доступа которых несовместимы с определенным пакетом доступа.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
+ms.openlocfilehash: c78226a7f131e6e8d5259edb6972ff506c2a8b81
+ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65102936"
 ---
-
-# <a name="list-incompatibleaccesspackages"></a>Список несовместимыхAccessPackages
+# <a name="list-incompatibleaccesspackages"></a>Перечисление несовместимых пакетовAccessPackage
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка объектов [accessPackage](../resources/accesspackage.md) , которые были отмечены как несовместимые в [accessPackage](../resources/accesspackage.md).  
+Получение списка объектов [accessPackage](../resources/accesspackage.md) , помеченных как несовместимые в [accessPackage](../resources/accesspackage.md).  
 
-## <a name="permissions"></a>Разрешения:
+## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Делегированное (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -33,9 +38,9 @@ doc_type: apiPageType
 GET /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleAccessPackages
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры запроса OData для прогона на стороне сервера с помощью большого отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры запроса OData для разбиения по страницам на стороне сервера с помощью большого ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -49,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleAc
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию [объектов accessPackage](../resources/accesspackage.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [accessPackage](../resources/accesspackage.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -64,11 +69,13 @@ GET /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleAc
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleAccessPackages
-### Response
+```
 
-The following is an example of the response.
+### <a name="response"></a>Отклик
 
-> **Note:** The response object shown here might be shortened for readability.
+Ниже приведен пример отклика.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

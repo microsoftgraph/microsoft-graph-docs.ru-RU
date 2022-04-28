@@ -4,12 +4,12 @@ description: Запросы изменений позволяют приложе
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: be2f0aa1df6edc791f2e34b34ad0c7ab4b8c9555
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 45232a25e17aedbd47c208ee31c7f21b51ca4986
+ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477974"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65102997"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
@@ -201,7 +201,12 @@ Content-type: application/json
 
 ### <a name="token-duration"></a>Длительность маркера
 
-Токены изменений действительны только в течение определенного периода, прежде чем клиентскому приложению потребуется снова выполнить полную синхронизацию. Для объектов каталога (**application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal** и **user**) ограничение составляет 7 дней. Для образовательных объектов (**educationSchool**, **educationUser** и **educationClass**) ограничение составляет 7 дней. Для объектов Outlook (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask** и **todoTaskList**) верхнее ограничение не фиксировано; оно зависит от размера внутреннего кэша разностного маркера. Хотя новые разностные маркеры непрерывно добавляются в кэш, после превышения емкости кэша старые разностные маркеры удаляются.
+Токены изменений действительны только в течение определенного периода, прежде чем клиентскому приложению потребуется снова выполнить полную синхронизацию.
++ Для [объектов каталога](/graph/api/resources/directoryobject) ограничение составляет семь дней. 
++ Для образовательных объектов (**educationSchool**, **educationUser** и **educationClass**) ограничение составляет семь дней.
++ Для объектов Outlook (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask** и **todoTaskList**) верхнее ограничение не фиксировано; оно зависит от размера внутреннего кэша разностного маркера. Хотя новые разностные маркеры непрерывно добавляются в кэш, после превышения емкости кэша старые разностные маркеры удаляются.
+
+В случае просроченного маркера служба должна отреагировать ошибкой серии 40X с кодами ошибок, такими как `syncStateNotFound`. Дополнительные сведения см. в разделе (Коды ошибок в Microsoft Graph](/graph/errors#code-property).
 
 ## <a name="prerequisites"></a>Предварительные требования
 

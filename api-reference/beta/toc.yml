@@ -39,9 +39,9 @@ items:
       - name: Регулирование
         href: /graph/throttling?context=graph/api/beta
       - name: Уведомления об изменениях
-        displayname: 'Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
         items:
           - name: Обзор
+            displayName: 'Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
             href: /graph/api/resources/webhooks?context=graph/api/beta
           - name: Учебник
             href: /learn/modules/msgraph-changenotifications-trackchanges
@@ -54,9 +54,9 @@ items:
           - name: Получение уведомлений об изменениях для сообщений чатов или каналов
             href: /graph/teams-changenotifications-chatmessage?context=graph/api/beta
       - name: Отслеживание изменений
-        displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
         items:
           - name: Обзор
+            displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
             href: /graph/delta-query-overview?context=graph/api/beta
           - name: Получение изменений для событий (пример)
             href: /graph/delta-query-events?context=graph/api/beta
@@ -67,9 +67,9 @@ items:
           - name: Получение изменений для пользователей (пример)
             href: /graph/delta-query-users?context=graph/api/beta
       - name: Добавление пользовательских данных
-        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD'
         items:
           - name: Обзор
+            displayName: 'Extensions, Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD'
             href: /graph/extensibility-overview?context=graph/api/beta
           - name: Использование открытых расширений (пример)
             href: /graph/extensibility-open-users?context=graph/api/beta
@@ -89,9 +89,9 @@ items:
     expanded: false
     items:
       - name: Azure AD Graph
-        displayname: 'Migration, Azure AD Graph'
         items:
           - name: Обзор
+            displayName: Azure AD Graph Migration
             href: /graph/migrate-azure-ad-graph-overview
           - name: Контрольный список для переноса приложений
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -1466,9 +1466,9 @@ items:
               - name: Место обновления
                 href: api/place-update.md
       - name: Уведомления об изменениях
-        displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
         items:
           - name: Обзор
+            displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
             href: resources/webhooks.md
           - name: Подписка
             href: resources/subscription.md
@@ -10867,7 +10867,7 @@ items:
         items:
           - name: Открытые расширения
             href: resources/opentypeextension.md
-            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+            displayName: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
             items:
               - name: Создание открытого расширения
                 href: api/opentypeextension-post-opentypeextension.md
@@ -10879,7 +10879,7 @@ items:
                 href: api/opentypeextension-delete.md
           - name: Расширения схемы
             href: resources/schemaextension.md
-            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+            displayName: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
             items:
               - name: Перечисление расширений схемы
                 href: api/schemaextension-list.md
@@ -11233,16 +11233,16 @@ items:
               - name: Удаление поставщика
                 href: api/dynamics-vendor-delete.md
       - name: Удостоверение и доступ
-        displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: Обзор
+            displayName: 'Azure AD, Microsoft identity platform'
             href: resources/azure-ad-overview.md
           - name: Управление отношениями с клиентами
             items:
               - name: Детализированные делегированные права администратора (предварительная версия)
-                displayName: 'GDAP, Partner Center, CSP, VAR'
                 items:
                   - name: Обзор
+                    displayName: 'GDAP, Partner Center, CSP, VAR'
                     href: resources/delegatedadminrelationships-api-overview.md
                   - name: Делегированные отношения администратора
                     href: resources/delegatedadminrelationship.md
@@ -13054,9 +13054,9 @@ items:
                       - name: Обновление
                         href: api/entitlementmanagementsettings-update.md
               - name: Служба Privileged Identity Management
-                displayName: PIM v2
                 items:
                   - name: Служба Privileged Identity Management
+                    displayName: PIM v2
                     href: resources/privilegedidentitymanagement-root.md
                   - name: Azure AD (не рекомендуется)
                     items:
@@ -15026,7 +15026,7 @@ items:
           - name: Канал
             href: resources/channel.md
             items:
-              - name: Вывод списка всех каналов
+              - name: Перечисление всех каналов
                 href: api/team-list-allchannels.md
               - name: Перечисление каналов
                 href: api/channel-list.md
@@ -15080,13 +15080,13 @@ items:
                 href: api/chatmessage-update.md
               - name: Проверка доступа пользователей
                 href: api/channel-doesuserhaveaccess.md
-              - name: 'Перечисление команд, совместное использование канала'
+              - name: Перечисление команд с общим доступом к каналу
                 href: api/sharedwithchannelteaminfo-list.md
-              - name: Получение общего доступа к каналу для команды
+              - name: Получение команды с общим доступом к каналу
                 href: api/sharedwithchannelteaminfo-get.md
-              - name: Отмена общего доступа к каналу с командой
+              - name: Отмена общего доступа к каналу для команды
                 href: api/sharedwithchannelteaminfo-delete.md
-              - name: Список разрешенных участников
+              - name: Перечисление разрешенных участников
                 href: api/sharedwithchannelteaminfo-list-allowedmembers.md
           - name: Чат
             href: resources/chat.md

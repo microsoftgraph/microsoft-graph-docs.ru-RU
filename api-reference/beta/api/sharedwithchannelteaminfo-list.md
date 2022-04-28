@@ -5,19 +5,19 @@ author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4d00cc33949c5047c9a565464df984e4f6356e84
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: 15c1e34b906c163d2d07bf51116a98a84d49e641
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704347"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060495"
 ---
 # <a name="list-sharedwithchannelteaminfo"></a>Получить sharedWithChannelTeamInfo
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список [команд](../resources/sharedwithchannelteaminfo.md), которыми поделились[с каналом](../resources/channel.md). Эта операция разрешена только для каналов **membershipType** со значением `shared`.
+Получение списка [команд](../resources/sharedwithchannelteaminfo.md), которым был предоставлен общий доступ к указанному [каналу](../resources/channel.md). Эта операция разрешена только для каналов **membershipType** со значением `shared`.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.sharedWithChannelTeamInfo",

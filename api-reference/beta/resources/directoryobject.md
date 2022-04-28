@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса directoryObject
-description: Представляет объект Azure Active Directory. Тип directoryObject является базовым типом для многих других типов объектов каталогов.
+description: Представляет объект Azure Active Directory. Тип directoryObject является базовым типом для многих других типов элементов каталогов, которые принято называть объектами каталога.
 ms.localizationpriority: high
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4db8a25eac6d627b82d38e6d060d3098fc25baa6
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 196d95935171ab7b38559024b5d1ac46b84b7ae3
+ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335439"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65103025"
 ---
 # <a name="directoryobject-resource-type"></a>Тип ресурса directoryObject
 
@@ -18,7 +18,18 @@ ms.locfileid: "63335439"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет объект Azure Active Directory. Тип **directoryObject** является базовым типом для многих других типов объектов каталогов.
+Представляет объект Azure Active Directory. Тип **directoryObject** является базовым типом для следующих типов элементов каталогов, которые обычно называют объектами каталогов.
+
++ [application](application.md)
++ [administrativeUnit](administrativeunit.md)
++ [directoryObject](directoryobject.md)
++ [directoryRole](directoryrole.md)
++ [device](device.md)
++ [group](group.md)
++ [orgContact](orgcontact.md)
++ [oAuth2PermissionGrant](oauth2permissiongrant.md)
++ [servicePrincipal](serviceprincipal.md)
++ [user](user.md)
 
 Этот ресурс поддерживает:
 
@@ -31,7 +42,7 @@ ms.locfileid: "63335439"
 |[Получение объекта directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |Чтение свойств объекта каталога.|
 |[Удаление](../api/directoryobject-delete.md) | Нет |Удаление объекта каталога. |
 |[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|Коллекция строк|Проверка участия в указанном списке групп и возвращение из этого списка тех групп, в которых состоит указанный пользователь, группа, субъект-служба, контакт организации или объект каталога. Это транзитивная проверка.|
-|[getMemberGroups](../api/directoryobject-getmembergroups.md)|Коллекция String|Возвращение всех групп, в которых состоит пользователь, группа, субъект-служба, контакт организации, устройство или объект каталога. Это транзитивная проверка.|
+|[getMemberGroups](../api/directoryobject-getmembergroups.md)|Коллекция строк|Возвращение всех групп, в которых состоит пользователь, группа, субъект-служба, контакт организации, устройство или объект каталога. Это транзитивная проверка.|
 |[checkMemberObjects](../api/directoryobject-checkmemberobjects.md)|Коллекция String|Проверка участия в списке ролей группы, административных единиц или каталога для указанного пользователя, группы, устройства, контакта организации или объекта каталога. Это транзитивный метод.|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Коллекция String| Возвращение всех ролей групп, административных единиц и каталога, в которых состоит пользователь, группа, устройство, контакт организации или объект каталога. Это транзитивная проверка. |
 |[getByIds](../api/directoryobject-getbyids.md) | Коллекция [directoryObject](directoryobject.md) | Получение набора объектов каталога на основе указанных идентификаторов. |

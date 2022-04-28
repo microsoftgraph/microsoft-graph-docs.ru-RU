@@ -1,40 +1,43 @@
 ---
-title: тип ресурса crossTenantAccessPolicyConfigurationDefault
-description: 'Конфигурация по умолчанию, определяемая для входящие и исходящие параметры совместной работы Azure AD B2B и прямого подключения B2B.'
+title: Тип ресурса crossTenantAccessPolicyConfigurationDefault
+description: Конфигурация по умолчанию, определенная для параметров входящего и исходящего трафика службы совместной работы Azure AD B2B и прямого подключения B2B.
 author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
+ms.openlocfilehash: 3fb4df32d047a695952a3ac0b91bb3188f90c190
+ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65103023"
 ---
-
-# <a name="crosstenantaccesspolicyconfigurationdefault-resource-type"></a>тип ресурса crossTenantAccessPolicyConfigurationDefault
+# <a name="crosstenantaccesspolicyconfigurationdefault-resource-type"></a>Тип ресурса crossTenantAccessPolicyConfigurationDefault
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Конфигурация по умолчанию, определяемая для входящие и исходящие параметры совместной работы Azure AD B2B и прямого подключения B2B.
-
-Наследуется [от crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md).
+Конфигурация по умолчанию, определенная для параметров входящего и исходящего трафика службы совместной работы Azure AD B2B и прямого подключения B2B.
 
 ## <a name="methods"></a>Методы
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Get crossTenantAccessPolicyConfigurationDefault](../api/crosstenantaccesspolicyconfigurationdefault-get.md)|[crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md)|Получите конфигурацию по умолчанию для B2B-совместной работы и параметров прямого подключения B2B к входящие и исходящие.|
-|[Обновление crossTenantAccessPolicyConfigurationDefault](../api/crosstenantaccesspolicyconfigurationdefault-update.md)|Нет|Обновление конфигурации по умолчанию для B2B-совместной работы и параметров прямого подключения B2B.|
-|[Сброс по умолчанию системы](../api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md)|Нет|Сброс конфигурации по умолчанию для политики межзаявного доступа к параметрам по умолчанию системы.|
+|[Получение crossTenantAccessPolicyConfigurationDefault](../api/crosstenantaccesspolicyconfigurationdefault-get.md)|[crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md)|Получите конфигурацию по умолчанию для совместной работы B2B и параметров прямого подключения B2B для входящего и исходящего трафика.|
+|[Обновление crossTenantAccessPolicyConfigurationDefault](../api/crosstenantaccesspolicyconfigurationdefault-update.md)|Нет|Обновите конфигурацию по умолчанию для совместной работы B2B и параметров прямого подключения B2B для входящего и исходящего трафика.|
+|[Сброс до системного значения по умолчанию](../api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md)|Нет|Сбросьте конфигурацию по умолчанию для политики межтенантного доступа к параметрам системы по умолчанию.|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-| b2bCollaborationInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) |Определяет конфигурацию по умолчанию для пользователей из других организаций, имеющих доступ к ресурсам с помощью совместной работы Azure AD B2B. Наследуется [от crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
-| b2bCollaborationOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) |Определяет конфигурацию по умолчанию для пользователей в организации, исходящие для доступа к ресурсам в другой организации с помощью совместной работы Azure AD B2B. Наследуется [от crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
-| b2bDirectConnectInbound  |[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Определяет конфигурацию по умолчанию для пользователей из других организаций, имеющих доступ к ресурсам с помощью прямого подключения Azure AD B2B. Наследуется [от crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
-| b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) |Определяет конфигурацию по умолчанию для пользователей в организации, исходящие для доступа к ресурсам другой организации с помощью прямого подключения Azure AD B2B. Наследуется [от crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
-| inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Определяет конфигурацию по умолчанию для доверия к другим утверждениям условного доступа от внешних организаций Azure AD. Наследуется [от crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
-| isServiceDefault | Логический | Если `true`конфигурация по умолчанию установлена для конфигурации системы по умолчанию. Если `false`параметры по умолчанию настроены. |
+| b2bCollaborationInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) |Определяет конфигурацию по умолчанию для пользователей из других организаций, которые имеют доступ к ресурсам через службу совместной работы Azure AD B2B. |
+| b2bCollaborationOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) |Определяет конфигурацию по умолчанию для пользователей в организации, которые будут получать исходящий доступ к ресурсам в другой организации с помощью службы совместной работы Azure AD B2B. |
+| b2bDirectConnectInbound  |[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Определяет конфигурацию по умолчанию для пользователей из других организаций, которые имеют доступ к ресурсам через прямое подключение Azure AD B2B. |
+| b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) |Определяет конфигурацию по умолчанию для пользователей в вашей организации, которые будут получать исходящий трафик для доступа к ресурсам в другой организации через прямое подключение Azure AD B2B. |
+| inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Определяет конфигурацию по умолчанию для доверия другим утверждениям условного доступа от внешних организаций Azure AD. |
+| isServiceDefault | Логическое | Если `true`используется конфигурация по умолчанию, задана конфигурация системы по умолчанию. Если `false`параметры по умолчанию настроены. |
 
 ## <a name="relationships"></a>Связи
 
@@ -47,7 +50,6 @@ doc_type: resourcePageType
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationDefault",
-  "baseType": "microsoft.graph.crossTenantAccessPolicyConfigurationBase",
   "openType": false
 }
 -->

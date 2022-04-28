@@ -1,45 +1,49 @@
 ---
-title: тип ресурса crossTenantAccessPolicy
-description: Политика доступа между клиентами представляет базовую политику в каталоге для параметров меж клиента.
+title: Тип ресурса crossTenantAccessPolicy
+description: Межтенантная политика доступа представляет базовую политику в каталоге для параметров межтенантного доступа.
 author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
+ms.openlocfilehash: ed825ae07c1a707be2847b9bdc40f7fe71add334
+ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65103027"
 ---
-
-# <a name="crosstenantaccesspolicy-resource-type"></a>тип ресурса crossTenantAccessPolicy
+# <a name="crosstenantaccesspolicy-resource-type"></a>Тип ресурса crossTenantAccessPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет базовую политику в каталоге для параметров межъединого доступа.
+Представляет базовую политику в каталоге для параметров межтенантного доступа.
 
-Наследует от [tenantRelationshipAccessPolicyBase](../resources/tenantrelationshipaccesspolicybase.md).
+Наследуется [от tenantRelationshipAccessPolicyBase](../resources/tenantrelationshipaccesspolicybase.md).
 
 ## <a name="methods"></a>Методы
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Get crossTenantAccessPolicy](../api/crosstenantaccesspolicy-get.md)|[crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md)|Ознакомьтесь с свойствами и отношениями объекта [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) .|
+|[Получение crossTenantAccessPolicy](../api/crosstenantaccesspolicy-get.md)|[crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md)|Чтение свойств и связей объекта [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) .|
 |[Обновление crossTenantAccessPolicy](../api/crosstenantaccesspolicy-update.md)|[crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md)|Обновление свойств объекта [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) .|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-| displayName | Строка | Отображает имя политики меж клиента доступа. Унаследовано от [policyBase](../resources/policybase.md).|
-| lastModifiedDateTime | DateTimeOffset | Время последнего изменения политики доступа к клиенту с использованием формата ISO 8601 и всегда во время UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-| определение (неподготовленное) | String | Необработанные определения JSON политики меж клиента доступа. **Устарело. Не используйте.**|
+| displayName | String | Отображаемое имя политики межтенантного доступа. Наследуется [от policyBase](../resources/policybase.md).|
+| определение (не рекомендуется) | String | Необработанные определения JSON политики межтенантного доступа. **Устарело. Не используйте.**|
 
 ## <a name="relationships"></a>Связи
 
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |default|[crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md)|Определяет конфигурацию по умолчанию для взаимодействия организации с внешними Azure Active Directory организациями.|
-|партнеры|[коллекция crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)|Определяет конфигурации для внешних Azure Active Directory партнеров.|
+|Партнеров|[Коллекция crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)|Определяет конфигурации, относящиеся к партнерам, для внешних Azure Active Directory организаций.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 <!-- {
@@ -55,7 +59,6 @@ doc_type: resourcePageType
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicy",
   "displayName": "String",
-  "lastModifiedDateTime": "String (timestamp)",
   "definition": "String"
 }
 ```

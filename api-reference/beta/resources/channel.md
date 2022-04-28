@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e7c8091f3f3e29932520e93a7be3cdd2d830c5e0
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: c08705efe8d88387aed81b0c1f98e9d87cfba017
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64684594"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65061078"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
@@ -25,8 +25,8 @@ ms.locfileid: "64684594"
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
 |[Перечисление каналов](../api/channel-list.md) | Коллекция [channel](channel.md) | Получение списка каналов в команде.|
-|[Перечисление входящих каналов](../api/team-list-incomingchannels.md)|Коллекция [channel](../resources/channel.md)|Получение списка каналов [, к которые](../resources/channel.md) предоставлен общий доступ **команде**.|
-|[Вывод списка всех каналов](../api/team-list-allchannels.md)|Коллекция [channel](../resources/channel.md)|Получение списка [каналов в](../resources/channel.md) команде **или** общий доступ к **команде (** входящие каналы).|
+|[Перечисление входящих каналов](../api/team-list-incomingchannels.md)|Коллекция [channel](../resources/channel.md)|Получение списка [каналов](../resources/channel.md), к которым предоставлен общий доступ в **команде**.|
+|[Перечисление всех каналов](../api/team-list-allchannels.md)|Коллекция [channel](../resources/channel.md)|Получение списка [каналов](../resources/channel.md) в **команде** или каналов, к которым предоставлен общий доступ в **команде** (входящие каналы).|
 |[Создание канала](../api/channel-post.md) | [channel](channel.md) | Создание нового канала путем добавления отображаемого имени и описания.|
 |[Получение канала](../api/channel-get.md) | [channel](channel.md) | Чтение свойств и связей канала.|
 |[Обновление канала](../api/channel-patch.md) | [channel](channel.md) | Обновление свойств канала.|
@@ -39,10 +39,10 @@ ms.locfileid: "64684594"
 |[Получение папки с файлами](../api/channel-get-filesfolder.md)| [driveItem](driveitem.md) | Получение сведений о папке SharePoint, в которой хранятся файлы канала. |
 |[Перечисление вкладок](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | Перечисление вкладок, закрепленных в канале.|
 |[Перечисление участников канала](../api/channel-list-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка участников канала.|
-|[Добавление участника канала](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Добавление участника в канал. Поддерживается только для каналов с **типом membershipType** или `private` `shared`.|
+|[Добавление участника канала](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Добавление участника в канал. Поддерживается только для каналов, у которых **membershipType** имеет значение `private` или `shared`.|
 |[Получение участника канала](../api/channel-get-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение участника канала.|
-|[Обновление роли участника канала](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Обновление свойства участника канала. Поддерживается только для каналов с **типом membershipType** или `private` `shared`.|
-|[Удаление участника канала](../api/channel-delete-members.md) | Нет | Удаление участника канала. Поддерживается только для каналов с **типом membershipType** или `private` `shared`.|
+|[Обновление роли участника канала](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Обновление свойства участника канала. Поддерживается только для каналов, у которых **membershipType** имеет значение `private` или `shared`.|
+|[Удаление участника канала](../api/channel-delete-members.md) | Нет | Удаление участника канала. Поддерживается только для каналов, у которых **membershipType** имеет значение `private` или `shared`.|
 |[Завершение миграции](../api/channel-completemigration.md)|[channel](channel.md)| Удаление режима миграции из канала, после чего канал становится доступным для публикации и чтения сообщений пользователями.|
 |[Перечисление вкладок в канале](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | Перечисление вкладок, закрепленных на канале.|
 |[Добавление вкладки в канал](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | Добавление (закрепление) вкладки на канал.|
@@ -51,12 +51,12 @@ ms.locfileid: "64684594"
 |[Удаление вкладки из канала](../api/channel-delete-tabs.md) | Нет | Удаление (открепление) вкладки из канала.|
 |[Подготовка адреса электронной почты канала](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| Подготовка адреса электронной почты для канала.|
 |[Удаление адреса электронной почты канала](../api/channel-removeemail.md) | Нет | Удаление адреса электронной почты канала.|
-|[Удаление входящего канала](../api/team-delete-incomingchannel.md) | Никаких других изменений не происходит| Удалите входящий канал.|
-|[Перечисление команд, к которые предоставлен общий доступ с помощью канала](../api/sharedwithchannelteaminfo-list.md)|[Коллекция sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Получение списка команд, к которые предоставлен доступ каналу.|
-|[Получение общего доступа к команде с помощью канала](../api/sharedwithchannelteaminfo-get.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Получите команду, доступную каналу.|
-|[Отмена общего доступа к каналу с командой](../api/sharedwithchannelteaminfo-delete.md)|Никаких других изменений не происходит|Отмените общий доступ к каналу с командой.|
-|[Список разрешенных участников](../api/sharedwithchannelteaminfo-list-allowedmembers.md)|Коллекция [conversationMember](../resources/conversationmember.md)|Получение списка участников команды, имеющих доступ к общему каналу.|
-|[Проверка доступа пользователей](../api/channel-doesuserhaveaccess.md)|Логический|Проверьте, имеет ли пользователь доступ к общему каналу.|
+|[Удаление входящего канала](../api/team-delete-incomingchannel.md) | Нет| Удаление входящих каналов.|
+|[Перечисление команд с общим доступом к каналу](../api/sharedwithchannelteaminfo-list.md)|Коллекция [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Получение списка команд, которым был предоставлен общий доступ к указанному каналу.|
+|[Получение команды с общим доступом к каналу](../api/sharedwithchannelteaminfo-get.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Получение команды, которой был предоставлен общий доступ к указанному каналу.|
+|[Отмена общего доступа к каналу для команды](../api/sharedwithchannelteaminfo-delete.md)|Нет|Отмена общего доступа к каналу для команды.|
+|[Перечисление разрешенных участников](../api/sharedwithchannelteaminfo-list-allowedmembers.md)|Коллекция [conversationMember](../resources/conversationmember.md)|Получение списка участников команды, у которых есть доступ к общему каналу.|
+|[Проверка доступа пользователей](../api/channel-doesuserhaveaccess.md)|Boolean|Проверка того, есть ли у пользователя доступ к общему каналу.|
 
 ## <a name="properties"></a>Свойства
 
@@ -71,7 +71,7 @@ ms.locfileid: "64684594"
 |membershipType|channelMembershipType|Тип канала. Можно настроить во время создания и нельзя изменить. Допустимые значения: `standard`, `private`, `unknownFutureValue`, `shared`. Значение по умолчанию — `standard`. Обратите внимание, что требуется использоваться заголовок запроса `Prefer: include-unknown-enum-members`, чтобы получить следующее значение в этом [расширяемом перечислении](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `shared`.|
 |createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания канала.|
 |moderationSettings|[channelModerationSettings](../resources/channelmoderationsettings.md)|Настройки модерации канала, чтобы контролировать, кто может создавать новые сообщения и отвечать на сообщения в этом канале.|
-|tenantId |string | Идентификатор Azure Active Directory клиента. |
+|tenantId |string | Идентификатор клиента Azure Active Directory. |
 
 ### <a name="instance-attributes"></a>Атрибуты экземпляра
 
@@ -94,7 +94,7 @@ ms.locfileid: "64684594"
 |members|Коллекция [conversationMember](conversationmember.md)|Коллекция записей участников, сопоставленных с каналом.|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Метаданные для расположения, в котором хранятся файлы канала.|
 |operations|Коллекция [teamsAsyncOperation](teamsasyncoperation.md)| Асинхронные операции, которые выполнялись или выполняются для этой команды. |
-|sharedWithTeams|[Коллекция sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Коллекция команд, совместно используемых с каналом.|
+|sharedWithTeams|Коллекция [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Коллекция команд, которым предоставлен общий доступ к каналу.|
 
 ## <a name="json-representation"></a>Представление JSON
 
