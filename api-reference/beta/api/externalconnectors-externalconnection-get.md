@@ -1,24 +1,24 @@
 ---
-title: Подключение
-description: Извлечение свойств и связей externalConnection.
+title: Получение подключения
+description: Получение свойств и связей внешнего соединения.
 ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4c7e42319396d36330817bc27f15cb0e176cb844
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 98d0895eace4b387ddb50019f595f49270e805dc
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62108950"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133206"
 ---
-# <a name="get-connection"></a>Подключение
+# <a name="get-connection"></a>Получение подключения
 
 Пространство имен: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей [externalConnection.](../resources/externalconnectors-externalconnection.md)
+Получение свойств и связей [внешнего соединения](../resources/externalconnectors-externalconnection.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "62108950"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | ExternalConnection.ReadWrite.OwnedBy |
+| Делегированное (рабочая или учебная учетная запись)     | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,13 +48,13 @@ GET /external/connections/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и запрашиваемого `200 OK` [объекта externalConnection](../resources/externalconnectors-externalconnection.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и запрашиваемый [объект externalConnection](../resources/externalconnectors-externalconnection.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr
 ### <a name="response"></a>Отклик
 <!-- markdownlint-enable MD024 -->
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

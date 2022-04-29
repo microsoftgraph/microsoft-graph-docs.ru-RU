@@ -1,21 +1,21 @@
 ---
 title: Удаление удостоверения участника
-description: Удалите члена из externalGroup, удалив соответствующий ресурс удостоверений.
+description: Удалите член из внешней группы, удалив соответствующий ресурс удостоверения.
 author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 9b032649ba0b078a13311d7dc57449afc70a2d2e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 9db185f168e5f7ce486635133029893cb7ab06e5
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397759"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133039"
 ---
-# <a name="delete-identity"></a>Удаление удостоверений
+# <a name="delete-identity"></a>Удаление удостоверения
 Пространство имен: microsoft.graph.externalConnectors
 
-Удалите [ресурс удостоверений](../resources/externalconnectors-identity.md) , чтобы удалить соответствующий член из [externalGroup](../resources/externalconnectors-externalgroup.md).
+Удалите [ресурс удостоверения](../resources/externalconnectors-identity.md) , чтобы удалить соответствующий член из [внешней группы](../resources/externalconnectors-externalgroup.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,9 +23,9 @@ ms.locfileid: "63397759"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                               |
+| Делегированное (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                 |
+| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

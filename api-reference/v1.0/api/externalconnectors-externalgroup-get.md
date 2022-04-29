@@ -1,22 +1,22 @@
 ---
-title: Get externalGroup
-description: Получите объект externalGroup.
+title: Получение externalGroup
+description: Получение объекта externalGroup.
 author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 3eba8b1d5ee44e5afbc6fb9668c01057665f2654
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: e6f1272f9dfc5e5b9394fbff815fa4d137967e60
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394028"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133400"
 ---
-# <a name="get-externalgroup"></a>Get externalGroup
+# <a name="get-externalgroup"></a>Получение externalGroup
 Пространство имен: microsoft.graph.externalConnectors
 
 
-Получите [объект externalGroup](../resources/externalconnectors-externalgroup.md) .
+Получение объекта [externalGroup](../resources/externalconnectors-externalgroup.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,10 +24,9 @@ ms.locfileid: "63394028"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                               |
+| Делегированное (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.Read.All, ExternalItem.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All|
-
+| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.Read.All, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +49,7 @@ GET /external/connections/{connectionsId}/groups/{externalGroupId}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа с **объектом externalGroup** .
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика с **объектом externalGroup** .
 
 ## <a name="example"></a>Пример
 

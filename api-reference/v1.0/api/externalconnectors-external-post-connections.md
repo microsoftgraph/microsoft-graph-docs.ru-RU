@@ -1,32 +1,32 @@
 ---
 title: Создание externalConnection
-description: Создайте новый объект externalConnection.
+description: Создайте объект externalConnection.
 author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 437359ac65a0fe53ea0dafc6704935b3337c6ffd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 459ec5b7c867e7b85aa353aa10294a52a431d5e2
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107466"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133778"
 ---
 # <a name="create-externalconnection"></a>Создание externalConnection
 Пространство имен: microsoft.graph.externalConnectors
 
 
 
-Создайте новый объект externalConnection.
+Создайте объект externalConnection.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Неприменимо|
-|Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Приложение| ExternalConnection.ReadWrite.OwnedBy|
+|Делегированное (рабочая или учебная учетная запись)|ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Неприменимо|
+|Приложение| ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,22 +45,22 @@ POST /external/connections
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [externalConnection.](../resources/externalconnectors-externalconnection.md)
+В тексте запроса добавьте представление объекта [externalConnection](../resources/externalconnectors-externalconnection.md) в формате JSON.
 
-При создании [externalConnection](../resources/externalconnectors-externalconnection.md)можно указать следующие свойства.
+При создании внешнего подключения можно указать [следующие свойства](../resources/externalconnectors-externalconnection.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|ID подключения. Обязательное.|
+|id|String|Идентификатор подключения. Обязательный.|
 |name|String|Имя подключения. Обязательный.|
-|description|Строка|Описание подключения. Обязательный.|
+|description|String|Описание подключения. Обязательный.|
 |configuration|[microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md)|Конфигурации подключения. Необязательный параметр.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект externalConnection](../resources/externalconnectors-externalconnection.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [externalConnection](../resources/externalconnectors-externalconnection.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -111,7 +111,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,

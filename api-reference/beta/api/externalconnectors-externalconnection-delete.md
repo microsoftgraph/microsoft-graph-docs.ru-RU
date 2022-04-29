@@ -1,16 +1,16 @@
 ---
 title: Удаление externalConnection
-description: Удаление externalConnection.
+description: Удаление внешнего подключения.
 ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 634b76929a03a549e2b438811cbd5bd2300b76b6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0dbc325853f973236fea190c77f65567206862db
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099709"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133722"
 ---
 # <a name="delete-externalconnection"></a>Удаление externalConnection
 
@@ -18,7 +18,7 @@ ms.locfileid: "62099709"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [externalConnection](../resources/externalconnectors-externalconnection.md).
+Удаление [внешнего подключения](../resources/externalconnectors-externalconnection.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "62099709"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | ExternalConnection.ReadWrite.OwnedBy |
+| Делегированное (рабочая или учебная учетная запись)     | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ DELETE /external/connections/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -101,7 +101,7 @@ DELETE https://graph.microsoft.com/beta/external/connections/contosohr
 ### <a name="response"></a>Отклик
 <!-- markdownlint-enable MD024 -->
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

@@ -1,32 +1,32 @@
 ---
-title: Список externalConnections
-description: Получите список объектов externalConnection и их свойств.
+title: Перечисление внешних подключений
+description: Получение списка объектов externalConnection и их свойств.
 author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 519825c476b352aaeb153e3954cb2a689ab80af3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: dedb0c41c3ac26211995e4baa736d8a026e05b1d
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114931"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133834"
 ---
-# <a name="list-externalconnections"></a>Список externalConnections
+# <a name="list-externalconnections"></a>Перечисление внешних подключений
 Пространство имен: microsoft.graph.externalConnectors
 
 
 
-Получите список объектов [externalConnection](../resources/externalconnectors-externalconnection.md) и их свойств.
+Получение списка объектов [externalConnection](../resources/externalconnectors-externalconnection.md) и их свойств.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Неприменимо|
-|Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Приложение| ExternalConnection.ReadWrite.OwnedBy|
+|Делегированное (рабочая или учебная учетная запись)|ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Неприменимо|
+|Приложение| ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,12 +46,12 @@ GET /external/connections
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию `200 OK` [объектов externalConnection](../resources/externalconnectors-externalconnection.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию [объектов externalConnection](../resources/externalconnectors-externalconnection.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

@@ -1,26 +1,26 @@
 ---
-title: Get externalItem
-description: Получите externalItem.
+title: Получение externalItem
+description: Получение объекта externalItem.
 ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 8704e18f3c6abf16cff4ba6168c324236fa3083d
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 09eac8a949db61342c386bef6a90290346d4a371
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60934620"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133253"
 ---
-# <a name="get-externalitem"></a>Get externalItem
+# <a name="get-externalitem"></a>Получение externalItem
 
 Пространство имен: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите свойства и связи объекта [externalitem.](../resources/externalconnectors-externalitem.md)
+Получение свойств и связей объекта [externalitem](../resources/externalconnectors-externalitem.md) .
 
-Этот API предоставляется только для диагностических целей. Она не предназначена для использования для каких-либо других целей. Повторные запросы на этот API могут привести к `429` ошибкам HTTP.
+Этот API предоставляется только для целей диагностики. Он не предназначен для других целей. Повторяющиеся запросы к этому API могут привести к `429` ошибкам HTTP.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "60934620"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Делегированное (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.Read.All, ExternalItem.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.Read.All, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,8 +44,8 @@ GET /external/connections/{connection-id}/items/{item-id}
 
 | Параметр     | Тип   | Описание                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | `id`Свойствосодержащего [externalConnection](../resources/externalconnectors-externalconnection.md) |
-| item-id       | string | Свойство `id` [externalItem,](../resources/externalconnectors-externalitem.md)предоставленное разработчиком. |
+| идентификатор подключения | string | Свойство `id` содержащего [externalConnection](../resources/externalconnectors-externalconnection.md) |
+| item-id       | string | Предоставленное разработчиком `id` свойство [externalItem](../resources/externalconnectors-externalitem.md). |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -63,7 +63,7 @@ GET /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект externalItem](../resources/externalconnectors-externalitem.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [externalItem](../resources/externalconnectors-externalitem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228
 ### <a name="response"></a>Отклик
 <!-- markdownlint-enable MD024 -->
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

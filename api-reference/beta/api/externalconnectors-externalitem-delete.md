@@ -1,16 +1,16 @@
 ---
 title: Удаление externalItem
-description: Удаление externalItem.
+description: Удалите externalItem.
 ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c2d151babb8704b7fb14b12f28fd5f67fef5b192
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3d07f499c4ac419ef54e9265ca96338ee5e8168d
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394399"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133610"
 ---
 # <a name="delete-externalitem"></a>Удаление externalItem
 
@@ -18,7 +18,7 @@ ms.locfileid: "63394399"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [externalitem](../resources/externalconnectors-externalitem.md).
+Удаление [внешнего сайта](../resources/externalconnectors-externalitem.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "63394399"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -42,8 +42,8 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 
 | Параметр     | Тип   | Описание                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | Свойствосодержащего `id` [externalConnection](../resources/externalconnectors-externalconnection.md) |
-| item-id       | string | Свойство [externalItem](../resources/externalconnectors-externalitem.md), `id` предоставленное разработчиком. |
+| идентификатор подключения | string | Свойство `id` содержащего [externalConnection](../resources/externalconnectors-externalconnection.md) |
+| item-id       | string | Предоставленное разработчиком `id` свойство [externalItem](../resources/externalconnectors-externalitem.md). |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -104,7 +104,7 @@ DELETE https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP
 ### <a name="response"></a>Отклик
 <!-- markdownlint-enable MD024 -->
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

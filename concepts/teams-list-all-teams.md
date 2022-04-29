@@ -4,27 +4,27 @@ description: 'Чтобы перечислить все команды '
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 010c22046df95b684bad73632cf658c074723366
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 1045c71fadcd70f9888f6357366d7097178dbec4
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60936084"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133575"
 ---
 # <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>Перечисление всех команд в Microsoft Teams для организации
 
-Чтобы перечислить все [команды](/graph/api/resources/team?view=graph-rest-beta) в организации (клиенте), найдите все группы с командами, а затем получите сведения для каждой команды.
+Чтобы перечислить все [команды](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) в организации (клиенте), найдите все группы с командами, а затем получите сведения для каждой команды.
 
 ## <a name="get-a-list-of-groups"></a>Получение списка групп
 
-Чтобы получить список всех [групп](/graph/api/resources/group?view=graph-rest-beta) в организации, содержащих команды, получите [список всех групп](/graph/api/group-list?view=graph-rest-beta) и затем в коде найдите нужные, имеющие свойство **resourceProvisioningOptions** со значением "Team".
+Чтобы получить список всех [групп](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) в организации, содержащих команды, получите [список всех групп](/graph/api/group-list?view=graph-rest-beta&preserve-view=true) и затем в коде найдите нужные, имеющие свойство **resourceProvisioningOptions** со значением "Team".
 Так как группы являются большими объектами, используйте аргумент $select, чтобы получить только нужные свойства группы.
 
 ```http
 GET /groups?$select=id,resourceProvisioningOptions
 ```
 
-> **Примечание**. У некоторых неиспользуемых старых групп отсутствует присвоенное свойство resourceProvisioningOptions. Дополнительные сведения см. в статье [Известные проблемы](known-issues.md#missing-teams-in-list-all-teams).
+> **Примечание**. У некоторых неиспользуемых старых групп отсутствует присвоенное свойство resourceProvisioningOptions. Дополнительные сведения см. в статье [Известные проблемы](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
 
 Ниже приведен пример ответа. 
 
@@ -59,7 +59,7 @@ GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 
 > **Примечание.** Фильтрация групп по свойству resourceProvisioningOptions доступна только в конечной точке бета-версии. Свойство resourceProvisioningOptions доступно в версии 1.0 и бета-версии.
 
-> **Примечание**. Некоторые неиспользуемые старые команды не указываются в списке. Дополнительные сведения см. в статье [Известные проблемы](known-issues.md#missing-teams-in-list-all-teams).
+> **Примечание**. Некоторые неиспользуемые старые команды не указываются в списке. Дополнительные сведения см. в статье [Известные проблемы](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
 
 Ниже приведен пример ответа. 
 
@@ -110,7 +110,7 @@ Content-type: application/json
 
 ## <a name="get-team-information-for-a-group"></a>Получение сведений о команде для группы
 
-Чтобы получить сведения о команде в определенной группе, вызовите API [get team](/graph/api/team-get?view=graph-rest-beta) и включите идентификатор группы.
+Чтобы получить сведения о команде в определенной группе, вызовите API [get team](/graph/api/team-get?view=graph-rest-beta&preserve-view=true) и включите идентификатор группы.
 
 ```http
 GET /teams/{group-id}
@@ -159,5 +159,5 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Перечисление объектов joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-beta)
-- [Перечисление групп](/graph/api/group-list?view=graph-rest-beta)
+- [Перечисление объектов joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-beta&preserve-view=true)
+- [Перечисление групп](/graph/api/group-list?view=graph-rest-beta&preserve-view=true)

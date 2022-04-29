@@ -5,26 +5,30 @@ ms.localizationpriority: medium
 author: harini84
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f87ffd54073a4e7f414cbcb6c48bf92755cc33cc
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: 23a0e22fe44cac84f017446326beea052e3c067c
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61545254"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133799"
 ---
 # <a name="patternedrecurrence-resource-type"></a>Тип ресурса patternedRecurrence
 
 Пространство имен: microsoft.graph
 
-Расписание и диапазон повторения. Этот общий объект используется для определения повторения [](event.md)обзоров [доступа,](accessreviewscheduledefinition.md)событий календаря и назначений пакетов доступа [в](accesspackageassignment.md) Azure AD.
+Расписание и диапазон повторения. Этот общий объект используется для определения повторения следующих объектов:
++ [Объекты accessReviewScheduleDefinition](accessreviewscheduledefinition.md) в Azure AD API проверки доступа
++ [объекты](event.md) событий в API календаря
++ [объекты unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) и [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) в PIM;
++ [объекты accessPackageAssignment](accesspackageassignment.md) в Azure AD управления правами.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|pattern|[recurrencePattern](recurrencepattern.md)|Частота события. <br/><br/> Обзоры доступа: <li>Не укажите это свойство для разового просмотра доступа. <li> **Поддерживаются** только **интервалы, dayOfMonth** и **тип** (, ) свойства `weekly` `absoluteMonthly` [recurrencePattern.](recurrencepattern.md)|
+|pattern|[recurrencePattern](recurrencepattern.md)|Частота события. <br/><br/> Для проверок доступа: <li>Не указывайте это свойство для однофакторной проверки доступа. <li> **Поддерживаются только свойства interval**, **dayOfMonth** и **type** (`weekly`,`absoluteMonthly`) [recurrencePattern](recurrencepattern.md).|
 |range|[recurrenceRange](recurrencerange.md)|Продолжительность события.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

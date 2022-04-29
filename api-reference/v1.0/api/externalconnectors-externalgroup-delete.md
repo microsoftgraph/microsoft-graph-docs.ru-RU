@@ -5,19 +5,19 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 5f4f013eb9802b7da76eda991fd06d3de9a3ac4c
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 84f003d2a7a904bad30a984d1d69e67e767d284b
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393692"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133617"
 ---
 # <a name="delete-externalgroup"></a>Удаление externalGroup
 Пространство имен: microsoft.graph.externalConnectors
 
 
 
-Удаление [объекта externalGroup](../resources/externalconnectors-externalgroup.md) .
+Удаление объекта [externalGroup](../resources/externalconnectors-externalgroup.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,10 +25,9 @@ ms.locfileid: "63393692"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                               |
+| Делегированное (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All|
-
+| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 0152c9e38584ce63f138edd47f64f4e0a05c2188
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: a0df694f1eb991051e234243fd0b5198df60643e
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393257"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133568"
 ---
 # <a name="update-externalitem"></a>Обновление externalItem
 Пространство имен: microsoft.graph.externalConnectors
@@ -24,9 +24,9 @@ ms.locfileid: "63393257"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Неприменимо|
-|Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Приложение| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All|
+| Делегированное (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
+| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,8 +40,8 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 | Параметр     | Тип   | Описание                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | Свойствосодержащего `id` [externalConnection](../resources/externalconnectors-externalconnection.md) |
-| item-id       | string | Свойство [externalItem](../resources/externalconnectors-externalitem.md), `id` предоставленное разработчиком. |
+| идентификатор подключения | string | Свойство `id` содержащего [externalConnection](../resources/externalconnectors-externalconnection.md) |
+| item-id       | string | Предоставленное разработчиком `id` свойство [externalItem](../resources/externalconnectors-externalitem.md). |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -52,25 +52,25 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства ( `properties` за исключением свойств внутри объекта), не включенные в тело запроса, будут поддерживать прежние значения или пересчитываться на основе изменений других значений свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились. Могут быть обновлены перечисленные ниже свойства.
+В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства ( `properties` за исключением свойств внутри объекта), которые не включены в текст запроса, сохраняют предыдущие значения или пересчитываются на основе изменений других значений свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились. Могут быть обновлены перечисленные ниже свойства.
 
 | Свойство   | Тип                                  | Описание               |
 |:-----------|:--------------------------------------|:--------------------------|
-| acl        | [коллекция microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) | Массив записей управления доступом. Каждая запись указывает доступ, предоставленный пользователю или группе. |
-| содержимое    | [microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md) | Простое текстовое представление содержимого элемента. Текст в этом свойстве индексироваться с полным текстом. |
-| properties | Объект                              | Пакет свойств со свойствами элемента. Свойства должны соответствовать схеме [,](../resources/externalconnectors-schema.md) определенной для [externalConnection](../resources/externalconnectors-externalconnection.md). |
+| Acl        | [Коллекция microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) | Массив записей управления доступом. Каждая запись указывает доступ, предоставленный пользователю или группе. |
+| содержимое    | [microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md) | Текстовое представление содержимого элемента. Текст в этом свойстве является полнотекстовой индексированной. |
+| properties | Объект                              | Контейнер свойств со свойствами элемента. Свойства должны соответствовать [схеме](../resources/externalconnectors-schema.md) , определенной для [внешнего соединения](../resources/externalconnectors-externalconnection.md). |
 
-### <a name="updating-the-acl-collection"></a>Обновление коллекции acl
+### <a name="updating-the-acl-collection"></a>Обновление коллекции ACL
 
-Если свойство `acl` включено в запрос на обновление, существующая коллекция ACL перезаписывается с коллекцией, включенной в запрос.
+Если свойство `acl` включено в запрос на обновление, существующая коллекция ACL перезаписывается коллекцией, включенной в запрос.
 
 ### <a name="updating-the-properties-object"></a>Обновление объекта свойств
 
-Если свойство `properties` включено в запрос на обновление, существующий пакет свойств перезаписывается со значением, включенным в запрос.
+Если свойство `properties` включено в запрос на обновление, существующий контейнер свойств перезаписывается значением, включенным в запрос.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и обновленный [объект externalItem](../resources/externalconnectors-externalitem.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный [объект externalItem](../resources/externalconnectors-externalitem.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -125,7 +125,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

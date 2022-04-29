@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f7702d7286d6c7f6037fd396fed682f3a2609c80
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: ad40838092328e9d02815f1736ce45a91feb4708
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64607332"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133155"
 ---
 # <a name="participant-invite"></a>участник: приглашение
 
@@ -18,7 +18,7 @@ ms.locfileid: "64607332"
 
 Приглашение участников в активный вызов.
 
-Дополнительные сведения о том, как обрабатывать операции, см. в [commsoperation](../resources/commsoperation.md).
+Дополнительные сведения об обработке операций см. в разделе [commsoperation](../resources/commsoperation.md).
 
 >**Примечание:** Приглашение нескольких участников в одном запросе поддерживается только для групповых звонков.
 
@@ -29,7 +29,7 @@ ms.locfileid: "64607332"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Для приложений     | Calls.InitiateGroupCalls.All |
+| Приложение     | Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,22 +49,22 @@ POST /communications/calls/{id}/participants/invite
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participants|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Участники, которые будут приглашены.|
-|clientContext|Строка|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
+|clientContext|String|Уникальная строка контекста клиента. Максимальное ограничение — 256 знаков.|
 
 ## <a name="response"></a>Отклик
-В случае успеха этот `200 OK` метод возвращает код отклика и заглавную ссылку расположения с URI в созданный для этого запроса [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) . 
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и заголовок расположения с URI в [объект inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) , созданный для этого запроса. 
 
-В теле ответа содержится [созданная inviteParticipantsOperation](../resources/inviteparticipantsoperation.md).
+Текст ответа содержит созданный [объект inviteParticipantsOperation](../resources/inviteparticipantsoperation.md).
 
->**Примечание:** Когда этот API возвращает успешный ответ, все участники получат обновление реестра.
+>**Примечание:** Когда этот API возвращает успешный ответ, все участники получат обновление списка.
 
 
 ## <a name="examples"></a>Примеры
-В следующих примерах покажите, как вызвать этот API.
+В следующих примерах показано, как вызвать этот API.
 
-> **Примечание:** Объекты отклика могут быть сокращены для читаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание:** Объекты ответа могут быть сокращены для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
-### <a name="example-1-invite-one-participant-to-an-existing-call"></a>Пример 1. Приглашение одного участника на существующий вызов
+### <a name="example-1-invite-one-participant-to-an-existing-call"></a>Пример 1. Приглашение одного участника к существующему вызову
 
 ##### <a name="request"></a>Запрос
 
@@ -204,7 +204,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-added"></a>Уведомление — список, обновленный с добавленным участником
+##### <a name="notification---roster-updated-with-participant-added"></a>Уведомление — список обновлен с добавлением участника
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -258,9 +258,9 @@ Content-Type: application/json
 
 ```
 
-### <a name="example-2-invite-multiple-participants-to-an-existing-group-call"></a>Пример 2. Приглашение нескольких участников на существующий групповой вызов
+### <a name="example-2-invite-multiple-participants-to-an-existing-group-call"></a>Пример 2. Приглашение нескольких участников в существующий групповой вызов
 
-> **Примечание**. Существующий групповой вызов должен иметь допустимый [чатInfo](../resources/chatInfo.md). Приглашение до 5 участников поддерживается.
+> **Примечание**. Существующий групповой вызов должен иметь [допустимый chatInfo](../resources/chatInfo.md). Поддерживается приглашение до 5 участников.
 
 ##### <a name="request"></a>Запрос
 
@@ -436,7 +436,7 @@ Content-Type: application/json
 }
 
 ```
-##### <a name="notification---roster-updated-with-participants-added"></a>Уведомление — список, обновленный с добавленными участниками
+##### <a name="notification---roster-updated-with-participants-added"></a>Уведомление — список обновлен с добавленными участниками
 ```http
 POST https://bot.contoso.com/api/calls
 Content-Type: application/json
@@ -519,14 +519,14 @@ Content-Type: application/json
 
 ```
 
-### <a name="example-3-invite-participants-to-a-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>Пример 3. Приглашение участников на существующий групповой вызов, заменив существующий одноранговой вызов
+### <a name="example-3-invite-participants-to-a-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>Пример 3. Приглашение участников к существующему групповому вызову, заменив существующий одноранговый вызов
 
 
-API приглашения поддерживает только одного участника при замене существующего одноранговых вызовов. Если в тексте запроса будет предоставлено несколько участников, будет прочитан только первый участник, а остальные участники будут проигнорированы.
+API приглашения поддерживает только одного участника при замене существующего однорангового вызова. Если в тексте запроса указано несколько участников, будет прочитан только первый участник, а остальные участники будут игнорироваться.
 
 
-> **Примечание:** API приглашения поддерживает только одного участника при `replacesCallId` условии. 
-> Дополнительные сведения об использовании для `replacesCallId` замены существующего однорангового вызова см. в [материале invitationParticipantInfo](../resources/invitationparticipantinfo.md).
+> **Примечание:** API приглашения поддерживает только одного участника, если он `replacesCallId` предоставлен. 
+> Дополнительные сведения об использовании для `replacesCallId` замены существующего однорангового вызова см. в [разделе invitationParticipantInfo](../resources/invitationparticipantinfo.md).
 
 ##### <a name="request"></a>Запрос
 
@@ -667,7 +667,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-added"></a>Уведомление — список, обновленный с добавленным участником
+##### <a name="notification---roster-updated-with-participant-added"></a>Уведомление — список обновлен с добавлением участника
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -722,12 +722,12 @@ Content-Type: application/json
 }
 ```
 
->**Примечание:** С состоянием "завершен" можно ожидать получения уведомлений о прекращении и удалении исходного одноранговых вызовов.
+>**Примечание:** С состоянием "Завершено" можно ожидать получения уведомлений о завершении и удалении исходного однорангового вызова.
 
-### <a name="example-4-invite-one-pstn-participant-to-an-existing-group-call"></a>Пример 4. Приглашение одного участника PSTN на существующий групповой вызов
+### <a name="example-4-invite-one-pstn-participant-to-an-existing-call"></a>Пример 4. Приглашение одного участника ТСОП к существующему вызову
 
-Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
-> **Примечание.** Телефон является номером телефона в формате E.164.
+Для этого вызова требуется экземпляр приложения с назначенным номером ТСОП. Дополнительные сведения см. [в статье "Назначение боту номера телефона"](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+> **Примечание.** Телефон идентификатором является номер телефона в формате E.164.
 
 #### <a name="request"></a>Запрос
 
@@ -862,7 +862,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---roster-updated-with-participant-added"></a>Уведомление — список, обновленный с добавленным участником
+#### <a name="notification---roster-updated-with-participant-added"></a>Уведомление — список обновлен с добавлением участника
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -916,7 +916,7 @@ Content-Type: application/json
 
 ```
 
->**Примечание:** Со статусом `completed` можно ожидать получения уведомлений о прекращении и удалении исходного одноранговых вызовов.
+>**Примечание:** С состоянием `completed` можно ожидать получения уведомлений о завершении и удалении исходного однорангового вызова.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

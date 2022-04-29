@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c01afa6ffa794e4da28edb9d7108d0da916e38d3
-ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
+ms.openlocfilehash: 614d7155a2423ed54b3ec4826932a97cd59fd5e3
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65016976"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133309"
 ---
 # <a name="list-extensionproperties"></a>Список объектов extensionProperties
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов [extensionProperty](../resources/extensionproperty.md) в приложении.
+Получение списка объектов [extensionProperty](../resources/extensionproperty.md) в [приложении](../resources/application.md).
 
 ## <a name="permissions"></a>Разрешения
 

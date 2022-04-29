@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ebcd0088a85fb1c272f44e0b335b1aa9f6f05477
-ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
+ms.openlocfilehash: 83daf8f19974f1cda08efaf2bf6e51d82e745656
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65016878"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133246"
 ---
 # <a name="list-extensionproperties"></a>Список объектов extensionProperties
 
@@ -18,7 +18,7 @@ ms.locfileid: "65016878"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [extensionProperty](../resources/extensionproperty.md) в приложении.
+Получение списка объектов [extensionProperty](../resources/extensionproperty.md) в [приложении](../resources/application.md).
 
 ## <a name="permissions"></a>Разрешения
 

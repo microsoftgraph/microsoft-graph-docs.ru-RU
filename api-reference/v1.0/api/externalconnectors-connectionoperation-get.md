@@ -1,31 +1,31 @@
 ---
-title: Get connectionOperation
-description: Ознакомьтесь с свойствами и отношениями объекта connectionOperation.
+title: Получение connectionOperation
+description: Чтение свойств и связей объекта connectionOperation.
 author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: acb978a137e8505c22fc5364b613f7a6e79203e4
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 514926936aab8d4c2273dd131ed3fdf8c23b4c3b
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397773"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133638"
 ---
-# <a name="get-connectionoperation"></a>Get connectionOperation
+# <a name="get-connectionoperation"></a>Получение connectionOperation
 
 Пространство имен: microsoft.graph.externalConnectors
 
-Ознакомьтесь с свойствами и отношениями объекта [connectionOperation](../resources/externalconnectors-connectionoperation.md) .
+Чтение свойств и связей объекта [connectionOperation](../resources/externalconnectors-connectionoperation.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Неприменимо|
-|Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Приложение| ExternalConnection.ReadWrite.OwnedBy |
+|Делегированное (рабочая или учебная учетная запись)|ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Неприменимо|
+|Приложение| ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ GET /external/connections/{connectionsId}/operations/{connectionOperationId}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и объект [connectionOperation](../resources/externalconnectors-connectionoperation.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [connectionOperation](../resources/externalconnectors-connectionoperation.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

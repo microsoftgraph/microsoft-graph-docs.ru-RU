@@ -5,27 +5,27 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7d93dfffa3b28a5ab9877046b6e38a7ad3dd6a8f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bd1e91f40237e79a98f648888f6253808ca8bbd7
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62088697"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133491"
 ---
 # <a name="update-externalconnection"></a>Обновление externalConnection
 
 Пространство имен: microsoft.graph.externalConnectors
 
-Обновление свойств объекта [externalConnection.](../resources/externalconnectors-externalconnection.md)
+Обновление свойств объекта [externalConnection](../resources/externalconnectors-externalconnection.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | ExternalConnection.ReadWrite.OwnedBy |
+|Делегированное (рабочая или учебная учетная запись)|ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Неприменимо|
+|Приложение| ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,9 +49,9 @@ PATCH /external/connections/{connectionsId}
 
 | Свойство      | Тип                                           | Описание |
 |:--------------|:-----------------------------------------------|:------------|
-| configuration | [microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md) | Указывает дополнительные ID-адреса приложений, которые разрешены для управления подключением и индексации контента в подключении. |
-| description   | Строка                                         | Описание подключения, отображаемого в Центр администрирования Microsoft 365. |
-| name          | String                                         | Отображает имя подключения, отображаемого в Центр администрирования Microsoft 365. Максимальная длина 128 символов. |
+| configuration | [microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md) | Указывает дополнительные идентификаторы приложений, которым разрешено управлять подключением и индексировать содержимое в соединении. |
+| description   | String                                         | Описание подключения, отображаемого в Центр администрирования Microsoft 365. |
+| name          | String                                         | Отображаемое имя подключения, отображаемое в Центр администрирования Microsoft 365. Максимальная длина — 128 символов. |
 
 
 ## <a name="response"></a>Отклик
@@ -111,7 +111,7 @@ Content-type: application/json
 ### <a name="response"></a>Отклик
 <!-- markdownlint-enable MD024 -->
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

@@ -5,26 +5,26 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: eb0488fed1d07be4532061a3143ec00d39c5fa18
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: c5deccc949c954c029712a94442b6868be81d75a
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396653"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133820"
 ---
 # <a name="create-schema"></a>Создание схемы
 Пространство имен: microsoft.graph.externalConnectors
 
-Создайте новый [объект схемы](../resources/externalconnectors-schema.md) .
+Создайте объект [схемы](../resources/externalconnectors-schema.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Неприменимо|
-|Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Приложение| ExternalConnection.ReadWrite.OwnedBy|
+|Делегированное (рабочая или учебная учетная запись)|ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Неприменимо|
+|Приложение| ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -35,17 +35,17 @@ ms.locfileid: "63396653"
 ```http
 POST /external/connections/{id}/schema
 ```
-В теле запроса поставляем представление JSON объекта [схемы](../resources/externalconnectors-schema.md) .
+В тексте запроса добавьте представление объекта [схемы](../resources/externalconnectors-schema.md) в формате JSON.
 
-При регистрации настраиваемой схемы элемента объект **схемы** должен  иметь свойство **baseType** `microsoft.graph.externalItem` и должно содержать **свойство свойств**. Объект **свойств должен** **содержать** по крайней мере одно свойство, не более 128.
+При регистрации пользовательской схемы элемента объект схемы должен иметь  свойство **baseType**`microsoft.graph.externalItem`, которое должно содержать **свойство** свойств. Объект **свойств должен** **содержать** по крайней мере одно свойство не более 128.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного `202 Accepted` использования этот метод возвращает код ответа и URL-адрес `Location` в загонах ответа, которые можно использовать для [получения состояния операции](../api/externalconnectors-connectionoperation-get.md).
+В случае успешного выполнения `202 Accepted` этот метод возвращает код отклика и URL-адрес `Location` в заголовке ответа, которые можно использовать для [получения состояния операции](../api/externalconnectors-connectionoperation-get.md).
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-register-custom-schema-asynchronously"></a>Пример. Регистрация настраиваемой схемы асинхронно
+### <a name="example-register-custom-schema-asynchronously"></a>Пример: асинхронная регистрация пользовательской схемы
 
 #### <a name="request"></a>Запрос
 

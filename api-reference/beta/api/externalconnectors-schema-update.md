@@ -1,16 +1,16 @@
 ---
 title: Обновление схемы
-description: Обновление свойств схемы для externalConnection.
+description: Обновление свойств схемы для внешнего соединения.
 ms.localizationpriority: medium
 author: mecampos
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 582d4d1c912e13754cc8dd4377228256c307a3cc
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: e921cd556696713fc12391a6038bbc1a63a6d9d6
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395463"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133317"
 ---
 # <a name="update-schema"></a>Обновление схемы
 
@@ -18,7 +18,7 @@ ms.locfileid: "63395463"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств [схемы для](../resources/externalconnectors-schema.md) [externalConnection](../resources/externalconnectors-externalconnection.md).
+Обновление свойств [схемы для](../resources/externalconnectors-schema.md) [внешнего соединения](../resources/externalconnectors-externalconnection.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "63395463"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | ExternalConnection.ReadWrite.OwnedBy |
+| Делегированное (рабочая или учебная учетная запись)     | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,17 +44,17 @@ PATCH /external/connections/{connectionId}/schema
 |:----------------------|:-------------------------------------------------------------------|
 | Авторизация         | Bearer {token}. Обязательный.                                          |
 | Content-Type          | application/json. Обязательный.                                        |
-| Предпочитаете: respond-async | Используйте это, чтобы вызвать асинхронное выполнение запроса. Необязательное свойство. |
+| Предпочитать: асинхронный ответ | Используйте его для асинхронного выполнения запроса. Необязательное свойство. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [схемы](../resources/externalconnectors-schema.md) .
+В тексте запроса добавьте представление объекта [схемы](../resources/externalconnectors-schema.md) в формате JSON.
 
-При регистрации настраиваемой схемы элемента объект **схемы** должен  иметь свойство **baseType** `microsoft.graph.externalItem` и должно содержать **свойство свойств**. Объект **свойств должен** **содержать** по крайней мере одно свойство, не более 128.
+При регистрации пользовательской схемы элемента объект схемы должен иметь  свойство **baseType**`microsoft.graph.externalItem`, которое должно содержать **свойство** свойств. Объект **свойств должен** **содержать** по крайней мере одно свойство не более 128.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного `202 Accepted` использования этот метод возвращает код ответа и URL-адрес `Location` в загонах ответа, которые можно использовать для [получения состояния операции](../api/externalconnectors-connectionoperation-get.md).
+В случае успешного выполнения `202 Accepted` этот метод возвращает код отклика и URL-адрес `Location` в заголовке ответа, которые можно использовать для [получения состояния операции](../api/externalconnectors-connectionoperation-get.md).
 
 ## <a name="examples"></a>Примеры
 
@@ -127,7 +127,7 @@ Content-type: application/json
 ### <a name="response"></a>Отклик
 <!-- markdownlint-enable MD024 -->
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

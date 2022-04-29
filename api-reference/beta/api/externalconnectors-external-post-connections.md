@@ -1,16 +1,16 @@
 ---
 title: Создание подключения
-description: Используйте этот API для создания нового externalConnection.
+description: Используйте этот API для создания внешнего подключения.
 ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4074d979440390a1c52488af937a1a5295f94ef0
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 43a59da2460efc09f5f8b58c7d57e2795485482a
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135539"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133211"
 ---
 # <a name="create-connection"></a>Создание подключения
 
@@ -18,7 +18,7 @@ ms.locfileid: "62135539"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [externalConnection](../resources/externalconnectors-externalconnection.md).
+Создайте [внешнее подключение](../resources/externalconnectors-externalconnection.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "62135539"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | ExternalConnection.ReadWrite.OwnedBy |
+| Делегированное (рабочая или учебная учетная запись)     | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,11 +47,11 @@ POST /external/connections
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [externalConnection.](../resources/externalconnectors-externalconnection.md)
+В тексте запроса добавьте представление объекта [externalConnection](../resources/externalconnectors-externalconnection.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и `201 Created` новый объект [externalConnection](../resources/externalconnectors-externalconnection.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый [объект externalConnection](../resources/externalconnectors-externalconnection.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -106,7 +106,7 @@ Content-type: application/json
 ### <a name="response"></a>Отклик
 <!-- markdownlint-enable MD024 -->
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

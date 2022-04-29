@@ -1,40 +1,42 @@
 ---
-title: тип ресурса expirationPattern
-description: Шаблон истечения срока действия в расписании запросов может быть включен в запрос на назначение пакета доступа и присутствует в назначении пакета доступа.
+title: Тип ресурса expirationPattern
+description: Шаблон срока действия определяет, когда истекает срок действия запроса или назначения.
 author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 83ec2f3cafc25787a979103f4edea5e6436b57a9
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 03810c04707d9b53a0254cbb4d322f4d5696b0d0
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650694"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133198"
 ---
-# <a name="expirationpattern-resource-type"></a>тип ресурса expirationPattern
+# <a name="expirationpattern-resource-type"></a>Тип ресурса expirationPattern
 
 Пространство имен: microsoft.graph
 
-В [управлении правами Azure AD](entitlementmanagement-overview.md)запрос на назначение пакета доступа создается пользователем, который хочет получить назначение пакета доступа. Этот запрос может включать расписание, когда пользователь хотел бы получить назначение.  Назначение пакета доступа, которое является результатом такого запроса, также имеет расписание.  Поле истечения срока действия [entitlementManagementSchedule](entitlementmanagementschedule.md) указывает, когда должно истекть назначение пакета доступа.
+В [Azure AD управления правами](entitlementmanagement-overview.md) пользователь, желающий получить назначение пакета доступа, создает запрос на назначение пакета доступа. Этот запрос может включать расписание, в течение которых пользователь должен иметь назначение. Назначение пакета для доступа, которое является результатом такого запроса, также имеет расписание. Поле срока действия [объекта entitlementManagementSchedule](entitlementmanagementschedule.md) указывает, когда должно истечь назначение пакета доступа.
+
+В PIM используйте этот ресурс, чтобы определить, когда истекает срок действия объекта [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) или [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) .
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|duration|Длительность|Запрашиваемая продолжительность доступа, представленная в формате ISO 8601 для длительности. Например, PT3H — это три часа.  Если указано в запросе, **endDateTime** не должен присутствовать и свойство **типа** должно быть задано `afterDuration` .|
-|endDateTime|DateTimeOffset|Время даты и времени с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|type|[expirationPatternType](#expirationpatterntype-values)|Желаемый тип шаблона истечения срока действия запрашиваемого запроса. Допустимые значения: `notSpecified`, `noExpiration`, `afterDateTime`, `afterDuration`. |
+|duration|Длительность|Требуемая продолжительность доступа запрашиваемого объекта, представленная в формате ISO 8601 для длительности. Например, PT3H ссылается на три часа.  Если этот параметр указан в запросе, **значение endDateTime** не должно присутствовать, а свойству **type** должно быть задано значение `afterDuration`.|
+|endDateTime|DateTimeOffset|Метка времени для сведений о дате и времени в формате ISO 8601 и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|type|[expirationPatternType](#expirationpatterntype-values)|Требуемый тип шаблона срока действия запрашиваемого объекта. Допустимые значения: `notSpecified`, `noExpiration`, `afterDateTime`, `afterDuration`. |
 
-### <a name="expirationpatterntype-values"></a>значения expirationPatternType
+### <a name="expirationpatterntype-values"></a>Значения expirationPatternType
 
 | Member | Описание |
 |:---------------|:--------|
-|notSpecified|Срок действия не указан.|
-|noExpiration|Запросчик не хотел, чтобы срок действия доступа истек.|
-|afterDateTime|Срок доступа истекает после указанной даты и времени.|
-|afterDuration|Срок доступа истекает после указанной продолжительности, относительно предоставленного доступа. Требуется при **указании** свойства продолжительности.|
+|notSpecified|Расписание окончания срока действия не указано.|
+|noExpiration|Инициатор запроса не хочет, чтобы срок действия доступа истек.|
+|afterDateTime|Срок действия доступа истекает после указанной даты и времени.|
+|afterDuration|Срок действия доступа истекает по истечении указанного периода, относительно предоставленного доступа. Требуется при **указании свойства duration** .|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

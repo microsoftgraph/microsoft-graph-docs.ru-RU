@@ -5,28 +5,28 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d76ef5bebac8caabe95782af22620ea22c84ad9e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 5a7ece15096d5d676f691b82754a4fafdba2ebc5
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396156"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133484"
 ---
 # <a name="delete-externalitem"></a>Удаление externalItem
 Пространство имен: microsoft.graph.externalConnectors
 
 
 
-Удаляет [объект externalItem](../resources/externalconnectors-externalitem.md) .
+Удаляет объект [externalItem](../resources/externalconnectors-externalitem.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Неприменимо|
-|Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Приложение| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All|
+| Делегированное (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
+| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -1,32 +1,32 @@
 ---
-title: Get externalItem
-description: Ознакомьтесь с свойствами и отношениями объекта externalItem.
+title: Получение externalItem
+description: Чтение свойств и связей объекта externalItem.
 author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c983947208ea02f4af0f395c3e294acedc894b89
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 1c36751b9463454f1251cc7ca269054791ca9ed5
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60558553"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133463"
 ---
-# <a name="get-externalitem"></a>Get externalItem
+# <a name="get-externalitem"></a>Получение externalItem
 Пространство имен: microsoft.graph.externalConnectors
 
 
 
-Ознакомьтесь с свойствами и отношениями [объекта externalItem.](../resources/externalconnectors-externalitem.md)
+Чтение свойств и связей объекта [externalItem](../resources/externalconnectors-externalitem.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Неприменимо|
-|Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Application| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Делегированное (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.Read.All, ExternalItem.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
+| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.Read.All, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ GET /external/connections/{connectionsId}/items/{externalItemId}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект externalItem](../resources/externalconnectors-externalitem.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [externalItem](../resources/externalconnectors-externalitem.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

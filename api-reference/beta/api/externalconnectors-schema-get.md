@@ -1,16 +1,16 @@
 ---
 title: Получение схемы
-description: Извлечение свойств схемы для externalConnection.
+description: Получение свойств схемы для внешнего соединения.
 ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7909bfba11da8ba0fb24549f4a21c040d0375864
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: a474302922518ed535350ddf619c32560ee63ab2
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397234"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133323"
 ---
 # <a name="get-schema"></a>Получение схемы
 
@@ -18,7 +18,7 @@ ms.locfileid: "63397234"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств [схемы](../resources/externalconnectors-schema.md) для [externalConnection](../resources/externalconnectors-externalconnection.md).
+Получение свойств [схемы для](../resources/externalconnectors-schema.md) [внешнего соединения](../resources/externalconnectors-externalconnection.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "63397234"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | ExternalConnection.ReadWrite.OwnedBy |
+| Делегированное (рабочая или учебная учетная запись)     | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /external/connections/{id}/schema
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает [параметры запроса OData](/graph/query-parameters) для настройки ответа.
+Этот метод не поддерживает параметры [запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -54,7 +54,7 @@ GET /external/connections/{id}/schema
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и запрашиваемого объекта [схемы](../resources/externalconnectors-schema.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и запрашиваемый объект [схемы в](../resources/externalconnectors-schema.md) тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

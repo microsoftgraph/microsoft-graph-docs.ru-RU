@@ -1,32 +1,32 @@
 ---
 title: Создание externalGroup
-description: Создайте новый объект externalGroup.
+description: Создайте объект externalGroup.
 author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d9079597be37d3b4c66400eaaadb42f69e01d72b
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 5da40fb48ff9b6ae4fdc62cb8e7d9fbdfca04b9b
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393236"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133041"
 ---
 # <a name="create-externalgroup"></a>Создание externalGroup
 Пространство имен: microsoft.graph.externalConnectors
 
 
 
-Создайте новый [объект externalGroup](../resources/externalconnectors-externalgroup.md) .
+Создайте объект [externalGroup](../resources/externalconnectors-externalgroup.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                               |
+| Делегированное (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
+| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,21 +46,21 @@ POST /external/connections/{connectionsId}/groups
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта **externalGroup** .
+В тексте запроса добавьте представление объекта **externalGroup** в формате JSON.
 
-При создании **externalGroup** можно указать следующие свойства.
+При создании внешней группы можно указать **следующие свойства**.
 
 | Свойство    | Тип   | Описание                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | String | Уникальный ID внешней группы в подключении. Он должен быть альфа-числом и может иметь длину до 128 символов. Обязательный. |
-| displayName | String | Дружеское имя внешней группы. Необязательное свойство.                                                                      |
+| id          | String | Уникальный идентификатор внешней группы в соединении. Он должен быть буквенно-цифровым и может содержать до 128 символов. Обязательный. |
+| displayName | String | Понятное имя внешней группы. Необязательное свойство.                                                                      |
 | description | String | Описание внешней группы. Необязательный параметр.                                                                         |
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `201 Created` отклика и **объект externalGroup** в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и **объект externalGroup** в тексте отклика.
 
 ## <a name="example"></a>Пример
 

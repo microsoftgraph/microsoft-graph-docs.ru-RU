@@ -1,16 +1,16 @@
 ---
 title: Обновление externalItem
-description: Обновление свойств externalitem.
+description: Обновление свойств внешнего сайта.
 ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c338aac56111598eaffd8eb10d7419d5730f505b
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: a37cb11ac809955d80b59b2134b099815608b313
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396030"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133666"
 ---
 # <a name="update-externalitem"></a>Обновление externalItem
 
@@ -18,7 +18,7 @@ ms.locfileid: "63396030"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств [externalitem](../resources/externalconnectors-externalitem.md).
+Обновление свойств внешнего [сайта](../resources/externalconnectors-externalitem.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "63396030"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -42,8 +42,8 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 | Параметр     | Тип   | Описание                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | Свойствосодержащего `id` [externalConnection](../resources/externalconnectors-externalconnection.md) |
-| item-id       | string | Свойство [externalItem](../resources/externalconnectors-externalitem.md), `id` предоставленное разработчиком. |
+| идентификатор подключения | string | Свойство `id` содержащего [externalConnection](../resources/externalconnectors-externalconnection.md) |
+| item-id       | string | Предоставленное разработчиком `id` свойство [externalItem](../resources/externalconnectors-externalitem.md). |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -54,25 +54,25 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства ( `properties` за исключением свойств внутри объекта), не включенные в тело запроса, будут поддерживать прежние значения или пересчитываться на основе изменений других значений свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились. Могут быть обновлены перечисленные ниже свойства.
+В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства ( `properties` за исключением свойств внутри объекта), которые не включены в текст запроса, сохраняют предыдущие значения или пересчитываются на основе изменений других значений свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились. Могут быть обновлены перечисленные ниже свойства.
 
 | Свойство   | Тип                                  | Описание               |
 |:-----------|:--------------------------------------|:--------------------------|
-| acl        | [коллекция microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) | Массив записей управления доступом. Каждая запись указывает доступ, предоставленный пользователю или группе. |
-| содержимое    | [microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md) | Простое текстовое представление содержимого элемента. Текст в этом свойстве индексироваться с полным текстом. |
-| properties | Объект                                | Пакет свойств со свойствами элемента. Свойства должны соответствовать схеме [,](../resources/externalconnectors-schema.md) определенной для [externalConnection](../resources/externalconnectors-externalconnection.md). |
+| Acl        | [Коллекция microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) | Массив записей управления доступом. Каждая запись указывает доступ, предоставленный пользователю или группе. |
+| содержимое    | [microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md) | Текстовое представление содержимого элемента. Текст в этом свойстве является полнотекстовой индексированной. |
+| properties | Объект                                | Контейнер свойств со свойствами элемента. Свойства должны соответствовать [схеме](../resources/externalconnectors-schema.md) , определенной для [внешнего соединения](../resources/externalconnectors-externalconnection.md). |
 
-### <a name="updating-the-acl-collection"></a>Обновление коллекции acl
+### <a name="updating-the-acl-collection"></a>Обновление коллекции ACL
 
-Если свойство `acl` включено в запрос на обновление, существующая коллекция ACL перезаписывается с коллекцией, включенной в запрос.
+Если свойство `acl` включено в запрос на обновление, существующая коллекция ACL перезаписывается коллекцией, включенной в запрос.
 
 ### <a name="updating-the-properties-object"></a>Обновление объекта свойств
 
-Если свойство `properties` включено в запрос на обновление, существующий пакет свойств перезаписывается со значением, включенным в запрос.
+Если свойство `properties` включено в запрос на обновление, существующий контейнер свойств перезаписывается значением, включенным в запрос.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и обновленный [объект externalItem](../resources/externalconnectors-externalitem.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный [объект externalItem](../resources/externalconnectors-externalitem.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -131,7 +131,7 @@ Content-type: application/json
 ### <a name="response"></a>Отклик
 <!-- markdownlint-enable MD024 -->
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

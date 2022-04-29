@@ -1,16 +1,16 @@
 ---
 title: Создание externalGroupMember
-description: Создание нового внешнего объектаGroupMember.
+description: Создайте объект externalGroupMember.
 author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4d3b6a7dd81e283362ac9e013966f8c0bf22841c
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 975b08d9850ca7512813b222491c608e18fdd065
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394420"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133456"
 ---
 # <a name="create-externalgroupmember"></a>Создание externalGroupMember
 
@@ -18,7 +18,7 @@ ms.locfileid: "63394420"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [внешнего объектаGroupMember](../resources/externalconnectors-externalgroupmember.md) .
+Создайте объект [externalGroupMember](../resources/externalconnectors-externalgroupmember.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "63394420"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                               |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
+| Делегированное (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,19 +50,19 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON внешнего **объектаGroupMember** .
+В тексте запроса добавьте представление объекта **externalGroupMember** в формате JSON.
 
 При создании **externalGroupMember** можно указать следующие свойства.
 
 | Свойство       | Тип                    | Описание                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | `id` Уникальный член. Это будет objectId в случае Azure Active Directory пользователей или групп и externalGroupId в случае внешних групп. Обязательное.                                   |
-| type           | microsoft.graph.externalConnectors.externalGroupMemberType | Тип участника, добавленного во внешнюю группу. Возможные значения: `user` или когда identitySource является `azureActiveDirectory` `group` и только тогда, когда identitySource является `external``group` . Обязательный. |
+| id             | String                  | `id` Уникальный элемент. Это будет objectId в случае Azure Active Directory пользователей или групп и externalGroupId в случае внешних групп. Обязательное.                                   |
+| type           | microsoft.graph.externalConnectors.externalGroupMemberType | Тип члена, добавленного во внешнюю группу. Возможные значения: `user` или когда identitySource имеет `azureActiveDirectory` значение и `group` только когда identitySource имеет значение `external``group` . Обязательный. |
 | identitySource | microsoft.graph.externalConnectors.identitySourceType      | Источник удостоверений, к которой принадлежит член. Возможные значения: `azureActiveDirectory`, `external`. Обязательный.                                                                                       |
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `201 Created` отклика и **внешний объектGroupMember** в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и **объект externalGroupMember** в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -131,7 +131,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>Пример 2. Добавление Azure Active Directory группы в качестве участника
+### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>Пример 2. Добавление группы Azure Active Directory в качестве участника
 
 ### <a name="request"></a>Запрос
 

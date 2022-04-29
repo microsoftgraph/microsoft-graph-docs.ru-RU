@@ -1,30 +1,30 @@
 ---
 title: Получение схемы
-description: Ознакомьтесь с свойствами и отношениями объекта схемы.
+description: Чтение свойств и связей объекта схемы.
 author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d473b69481916a07afce30c7d401fc12ab826096
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: e77ddef905bb429a69587e530f8daa29567004c6
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394014"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133715"
 ---
 # <a name="get-schema"></a>Получение схемы
 Пространство имен: microsoft.graph.externalConnectors
 
-Ознакомьтесь с свойствами и отношениями объекта [схемы](../resources/externalconnectors-schema.md) .
+Чтение свойств и связей объекта [схемы](../resources/externalconnectors-schema.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Неприменимо|
-|Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Приложение| ExternalConnection.ReadWrite.OwnedBy|
+|Делегированное (рабочая или учебная учетная запись)|ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Неприменимо|
+|Приложение| ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -38,7 +38,7 @@ GET /external/connections/{connectionsId}/schema
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает [параметры запроса OData](/graph/query-parameters) для настройки ответа.
+Этот метод не поддерживает параметры [запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -50,7 +50,7 @@ GET /external/connections/{connectionsId}/schema
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и объект [схемы](../resources/externalconnectors-schema.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [схемы](../resources/externalconnectors-schema.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

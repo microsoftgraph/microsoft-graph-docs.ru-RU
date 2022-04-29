@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: deec2846b8f8490bf7005be46b19ad282c2cbae6
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 6f37fdf90f510a650f2b1d13c42e83636c22697a
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64588934"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133351"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -164,9 +164,8 @@ Microsoft Graph позволяет получать доступ к данным
 
 Указанные выше ограничения действуют для следующих ресурсов:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [activityHistoryItem](/graph/api/resources/activityhistoryitem) <li> [userActivity](/graph/api/resources/useractivity) </ul>|
+- [activityHistoryItem](/graph/api/resources/activityhistoryitem)
+- [userActivity](/graph/api/resources/useractivity)
 
 ### <a name="microsoft-teams-service-limits"></a>Ограничения службы Microsoft Teams
 
@@ -342,9 +341,10 @@ Microsoft Graph позволяет получать доступ к данным
 
 Указанные выше ограничения действуют для следующих ресурсов:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [people](/graph/api/resources/people) <li> [sharedInsight](/graph/api/resources/sharedinsight) <li> [trending](/graph/api/resources/trending)  <li> [usedInsight](/graph/api/resources/usedinsight) </ul>|
+- [people](/graph/api/resources/people)
+- [sharedInsight](/graph/api/resources/sharedinsight)
+- [trending](/graph/api/resources/trending)
+- [usedInsight](/graph/api/resources/usedinsight)
 
 
 ### <a name="microsoft-graph-reports-service-limits"></a>Ограничения службы отчетов Microsoft Graph
@@ -412,9 +412,7 @@ Microsoft Graph позволяет получать доступ к данным
 
 Указанные выше ограничения действуют для следующих ресурсов:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [dataPolicyOperation](/graph/api/resources/datapolicyoperation) </ul>|
+- [dataPolicyOperation](/graph/api/resources/datapolicyoperation)
 
 > **Примечание.** Перечисленные выше ресурсы не возвращают заголовок `Retry-After` в откликах `429 Too Many Requests`.
 
@@ -491,9 +489,10 @@ Microsoft Graph позволяет получать доступ к данным
 
 Указанные выше ограничения действуют для следующих ресурсов:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [educationAssignment](/graph/api/resources/educationassignment) <li> [educationSubmission](/graph/api/resources/educationsubmission) <li> [trending](/graph/api/resources/trending)  <li> [educationResource](/graph/api/resources/educationresource) </ul>|
+- [educationAssignment](/graph/api/resources/educationassignment)
+- [educationSubmission](/graph/api/resources/educationsubmission)
+- [trending](/graph/api/resources/trending)
+- [educationResource](/graph/api/resources/educationresource)
 
 ### <a name="service-communications-service-limits"></a>Ограничения взаимодействия служб
 Следующие ограничения применяются к любому типу запросов для взаимодействия служб в `/admin/serviceAnnouncement/`.

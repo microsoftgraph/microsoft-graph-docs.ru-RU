@@ -12930,6 +12930,8 @@ items:
                     items:
                       - name: Список
                         href: api/entitlementmanagement-list-accesspackageassignments.md
+                      - name: Дополнительный доступ
+                        href: api/accesspackageassignment-additionalaccess.md
                       - name: Фильтрация по текущему пользователю
                         href: api/accesspackageassignment-filterbycurrentuser.md
                       - name: Повторная обработка

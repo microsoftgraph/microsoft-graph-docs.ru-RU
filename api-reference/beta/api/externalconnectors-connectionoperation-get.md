@@ -1,24 +1,24 @@
 ---
-title: Get connectionOperation
-description: Извлечение свойств подключенияOperation.
+title: Получение connectionOperation
+description: Получение свойств connectionOperation.
 ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: f2f5cea589544f86a7743b126b7fcea81cc0fec4
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: b050a2f979e3bdc55461dd76d35a8b5b9d761ebf
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396359"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133526"
 ---
-# <a name="get-connectionoperation"></a>Get connectionOperation
+# <a name="get-connectionoperation"></a>Получение connectionOperation
 
 Пространство имен: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств [подключенияOperation](../resources/externalconnectors-connectionoperation.md).
+Получение свойств [connectionOperation](../resources/externalconnectors-connectionoperation.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "63396359"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | ExternalConnection.ReadWrite.OwnedBy |
+| Делегированное (рабочая или учебная учетная запись)     | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ GET /external/connections/{connection-id}/operations/{operation-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и запрашиваемого объекта [connectionOperation](../resources/externalconnectors-connectionoperation.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и запрашиваемый объект [connectionOperation](../resources/externalconnectors-connectionoperation.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

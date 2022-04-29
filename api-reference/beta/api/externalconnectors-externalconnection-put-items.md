@@ -1,16 +1,16 @@
 ---
 title: Создание externalItem
-description: Создание нового externalItem.
+description: Создайте новый externalItem.
 ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 9df3496e49fe7017641b98d2d867e67b420ceede
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 49cf69b49edda6c8a7ea7a97d2ef826ce1bd5bce
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396786"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133449"
 ---
 # <a name="create-externalitem"></a>Создание externalItem
 
@@ -18,9 +18,9 @@ ms.locfileid: "63396786"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [externalItem](../resources/externalconnectors-externalitem.md).
+Создайте [новый externalItem](../resources/externalconnectors-externalitem.md).
 
-Этот API можно использовать для создания настраиваемой номенклатуры. Содержащая [externalConnection](../resources/externalconnectors-externalconnection.md) должна иметь [схему](../resources/externalconnectors-schema.md) , зарегистрированную соответствующего типа.
+Этот API можно использовать для создания пользовательского элемента. Содержащее [внешнее соединение должно](../resources/externalconnectors-externalconnection.md) иметь [схему,](../resources/externalconnectors-schema.md) зарегистрированную для соответствующего типа.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,8 +28,8 @@ ms.locfileid: "63396786"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,8 +44,8 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 | Параметр     | Тип   | Описание                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | Свойствосодержащего `id` [externalConnection](../resources/externalconnectors-externalconnection.md) |
-| item-id       | string | Свойство [externalItem](../resources/externalconnectors-externalitem.md), `id` предоставленное разработчиком. Если с этим элементом уже не существует `id`, создается новый элемент. Если элемент уже существует с этим `id`, он перезаписывается объектом, отправленным в тело. |
+| идентификатор подключения | string | Свойство `id` содержащего [externalConnection](../resources/externalconnectors-externalconnection.md) |
+| item-id       | string | Предоставленное разработчиком `id` свойство [externalItem](../resources/externalconnectors-externalitem.md). Если элемент с этим элементом уже не существует `id`, создается новый элемент. Если элемент уже существует с этим `id`элементом, он перезаписывается объектом, отправленным в тексте. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -56,17 +56,17 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [externalItem](../resources/externalconnectors-externalitem.md) . Нагрузка ограничена 4 МБ.
+В теле запроса добавьте представление объекта [externalItem](../resources/externalconnectors-externalitem.md) в формате JSON. Полезные данные ограничены 4 МБ.
 
-### <a name="creating-an-externalitem"></a>Создание externalItem
+### <a name="creating-an-externalitem"></a>Создание объекта externalItem
 
 При создании поля `externalItem`требуются следующие поля: `acl`и `properties`. Объект `properties` должен содержать по крайней мере одно свойство.
 
-Все `DateTime` свойства типа должны быть в формате ISO 8601.
+Все `DateTime` свойства типа должны иметь формат ISO 8601.
 
-Свойства на объекте должны `externalItem` использовать указанные типы в полезной нагрузке в следующих сценариях:
+Свойства в объекте должны `externalItem` использовать оптовицы типов в полезных данных в следующих сценариях:
 
-- Для `String` свойств типа, если значение содержит символы, не относимые к ASCII.
+- Для `String` свойств типа, если значение содержит символы, отличные от ASCII.
 
     ```json
     "description@odata.type": "String",
@@ -84,7 +84,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
     ```
 
     > [!IMPORTANT]
-    > При включаем свойстве типа `Collection(DateTime)`необходимо использовать указанный тип `Collection(DateTimeOffset)`.
+    > При включаемом свойстве типа `Collection(DateTime)`необходимо использовать омитор типа `Collection(DateTimeOffset)`.
 
 ## <a name="response"></a>Отклик
 
@@ -92,7 +92,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-create-a-custom-item"></a>Пример: Создание настраиваемой номенклатуры
+### <a name="example-create-a-custom-item"></a>Пример. Создание пользовательского элемента
 
 #### <a name="request"></a>Запрос
 
@@ -158,7 +158,7 @@ Content-type: application/json
 #### <a name="response"></a>Отклик
 <!-- markdownlint-enable MD024 -->
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

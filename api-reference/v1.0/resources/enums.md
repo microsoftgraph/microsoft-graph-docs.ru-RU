@@ -5,16 +5,120 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 3391b332900b05fccf3cce873cc5e9ffa6aeec66
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: 30a478f5a3021bf7efbadd0e924bd8c8e343ad40
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917747"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133141"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
 Пространство имен: microsoft.graph
+
+### <a name="expirationpatterntype-values"></a>Значения expirationPatternType 
+
+|Member|
+|:---|
+|notSpecified|
+|noExpiration|
+|afterDateTime|
+|afterDuration|
+
+### <a name="recurrencepatterntype-values"></a>Значения recurrencePatternType 
+
+|Member|
+|:---|
+|Ежедневно|
+|Еженедельно|
+|absoluteMonthly|
+|relativeMonthly|
+|absoluteYearly|
+|relativeYearly|
+
+### <a name="roleassignmentschedulefilterbycurrentuseroptions-values"></a>Значения roleAssignmentScheduleFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|Основной|
+|unknownFutureValue|
+
+### <a name="roleassignmentscheduleinstancefilterbycurrentuseroptions-values"></a>Значения roleAssignmentScheduleInstanceFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|Основной|
+|unknownFutureValue|
+
+### <a name="roleassignmentschedulerequestfilterbycurrentuseroptions-values"></a>Значения roleAssignmentScheduleRequestFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|Основной|
+|createdBy|
+|Утверждающий|
+|unknownFutureValue|
+
+### <a name="roleeligibilityschedulefilterbycurrentuseroptions-values"></a>Значения roleEligibilityScheduleFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|Основной|
+|unknownFutureValue|
+
+### <a name="roleeligibilityscheduleinstancefilterbycurrentuseroptions-values"></a>Значения roleEligibilityScheduleInstanceFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|Основной|
+|unknownFutureValue|
+
+### <a name="roleeligibilityschedulerequestfilterbycurrentuseroptions-values"></a>Значения roleEligibilityScheduleRequestFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|Основной|
+|createdBy|
+|Утверждающий|
+|unknownFutureValue|
+
+### <a name="unifiedrolemanagementpolicyruletargetoperations-values"></a>Значения unifiedRoleManagementPolicyRuleTargetOperations 
+
+|Member|
+|:---|
+|Все|
+|Активировать|
+|Отключить|
+|Назначить|
+|Обновление|
+|Удалить|
+|Расширить|
+|renew|
+|unknownFutureValue|
+
+### <a name="unifiedroleschedulerequestactions-values"></a>Значения unifiedRoleScheduleRequestActions 
+
+|Member|
+|:---|
+|adminAssign|
+|adminUpdate|
+|adminRemove|
+|selfActivate|
+|selfDeactivate|
+|adminExtend|
+|adminRenew|
+|selfExtend|
+|selfRenew|
+|unknownFutureValue|
+
+### <a name="approvalfilterbycurrentuseroptions-values"></a>Значения approvalFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|Утверждающий|
+|unknownFutureValue|
 
 ### <a name="accessreviewexpirationbehavior-values"></a>Значения accessReviewExpirationBehavior
 
@@ -246,7 +350,7 @@ ms.locfileid: "64917747"
 |Member|
 |:---|
 |пользователь|
-|group|
+|group;|
 
 ### <a name="authenticationmethodstate-values"></a>Значения authenticationMethodState
 
@@ -1059,7 +1163,7 @@ ms.locfileid: "64917747"
 | preset7  | 7 
 | preset8  | 8 
 | preset9  | 9 
-| preset10 | 10 
+| preset10 | 10
 | preset11 | 11
 | preset12 | 12 
 | preset13 | 13
@@ -1131,7 +1235,7 @@ ms.locfileid: "64917747"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестно.|
-|Ненадежных|10 |Уровень целостности ненадежный.|
+|Ненадежных|10|Уровень целостности ненадежный.|
 |Низкой|20| Уровень целостности низкий.|
 |medium|30| Уровень целостности — средний.|
 |Высокой|40| Уровень целостности — Высокий.|
@@ -1178,7 +1282,7 @@ ms.locfileid: "64917747"
 |multiSz|7 | REG_MULTI_SZ типа значения реестра.|
 |Нет|8 | REG_NONE типа значения реестра.|
 |qword|9 | REG_QWORD типа значения реестра.|
-|qwordlittleEndian|10 | REG_QWORD_LITTLE_ENDIAN типа значения реестра.|
+|qwordlittleEndian|10| REG_QWORD_LITTLE_ENDIAN типа значения реестра.|
 |Sz|11| REG_SZ типа значения реестра.|
 
 ### <a name="alertseverity-values"></a>Значения alertSeverity
@@ -1200,7 +1304,7 @@ ms.locfileid: "64917747"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестное состояние.|
-|newAlert|10 | Оповещение является новым.|
+|newAlert|10| Оповещение является новым.|
 |Inprogress|20|Оповещение выполняется.|
 |resolved|30|Оповещение разрешается.|
 
@@ -1233,7 +1337,7 @@ ms.locfileid: "64917747"
 |Member|Member|Описание|
 |:---|:---|:---|
 |unknown|–1|Неизвестно.|
-|Стандартный|0|Член группы "Стандартные пользователи".|
+|стандарт|0|Член группы "Стандартные пользователи".|
 |Мощность|1| Член группы Power Users.|
 |Администратора|2| Член группы "Администраторы".|
 
@@ -1356,7 +1460,7 @@ ms.locfileid: "64917747"
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| почта;   | 1     | Почтовая угроза.            |
+| mail   | 1     | Почтовая угроза.            |
 | url    | 2     | Угроза URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -1413,7 +1517,7 @@ ms.locfileid: "64917747"
 | notInAddressBook      | 7      | Исключить отправителя не в адресной книге. |
 | firstTimeSender       | 8      | Заблокировано из-за первого отправителя.   |
 | autoPurgeToInbox      | 9      | Перемещение сообщения TimeTravel в папку "Входящие".   |
-| autoPurgeToJunk       | 10     | Перемещение сообщения TimeTravel в нежелательное.    |
+| autoPurgeToJunk       | 10    | Перемещение сообщения TimeTravel в нежелательное.    |
 | autoPurgeToDeleted    | 11    | Сообщение о перемещении TimeTravel в удаленное. |
 | Исходящих              | 12     | Исходящая почта.                      |
 | notJunk               | 13    | Разрешить из-за нежелательной почты.              |
@@ -1460,7 +1564,7 @@ ms.locfileid: "64917747"
 
 | Элемент             | Значение |Описание|
 | :----------------- | :---- |:-----------|
-| Стандартный           | 0     |Канал наследует список участников родительской команды.|
+| стандарт           | 0     |Канал наследует список участников родительской команды.|
 | Частная            | 1     |Канал может содержать участников, которые являются подмножеством всех участников родительской команды.|
 | unknownFutureValue | 2     |      |
 ### <a name="wellknownlistname-values"></a>Значения wellknownListName
@@ -1630,7 +1734,7 @@ ms.locfileid: "64917747"
 
 | Member                |
 |:----------------------|
-| String                |
+| string                |
 | boolean               |
 | int64                 |
 | Stringcollection      |
@@ -1643,7 +1747,7 @@ ms.locfileid: "64917747"
 |:----------------------|
 | Builtin               |
 | Пользовательские                |
-| Обязательный              |
+| обязательно              |
 | unknownFutureValue    |
 
 ### <a name="identityuserflowattributeinputtype-values"></a>Значения identityUserFlowAttributeInputType

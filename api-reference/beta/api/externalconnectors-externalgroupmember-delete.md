@@ -1,16 +1,16 @@
 ---
 title: Удаление externalGroupMember
-description: Удаление внешнего объектаGroupMember.
+description: Удаление объекта externalGroupMember.
 author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b9488fb10b638afe81958e4906dcc34accf231bf
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: c502382cd6cc92720a396a25fbbf42413fd3997d
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395827"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133841"
 ---
 # <a name="delete-externalgroupmember"></a>Удаление externalGroupMember
 
@@ -18,7 +18,7 @@ ms.locfileid: "63395827"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [внешнего объектаGroupMember](../resources/externalconnectors-externalgroupmember.md) .
+Удаление объекта [externalGroupMember](../resources/externalconnectors-externalgroupmember.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "63395827"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                               |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                 |
+| Делегированное (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

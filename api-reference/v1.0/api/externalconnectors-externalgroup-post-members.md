@@ -1,23 +1,23 @@
 ---
-title: Создание удостоверений
-description: Создание нового участника в качестве ресурса удостоверений в externalGroup.
+title: Создание удостоверения
+description: Создайте новый член в качестве ресурса удостоверения во внешней группе.
 author: sacampbe
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 508189bc61dcc7eec8f35da1b8733d72e957b0e0
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 66bf2b1f9b179fcef6f1b4754cf3316be0a067c1
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394945"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133736"
 ---
-# <a name="create-identity"></a>Создание удостоверений
+# <a name="create-identity"></a>Создание удостоверения
 Пространство имен: microsoft.graph.externalConnectors
 
 
 
-Создание ресурса [удостоверений](../resources/externalconnectors-identity.md) для нового участника в [externalGroup](../resources/externalconnectors-externalgroup.md).
+Создайте [ресурс удостоверения](../resources/externalconnectors-identity.md) для нового члена внешней [группы](../resources/externalconnectors-externalgroup.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,9 +25,9 @@ ms.locfileid: "63394945"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                               |
+| Делегированное (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
+| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,19 +48,19 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем JSON-представление объекта **удостоверений** .
+В тексте запроса добавьте представление объекта удостоверения в формате **JSON.**
 
-Следующие свойства можно указать при создании ресурса **удостоверений** для участника **в externalGroup**.
+При создании ресурса удостоверения для члена внешней группы можно  указать **следующие свойства**.
 
 | Свойство       | Тип                    | Описание                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | `id` Уникальный член. Это будет **objectId** в случае Azure Active Directory пользователей или групп и **externalGroupId** в случае внешних групп. Обязательное.                                    |
-| type           | microsoft.graph.externalConnectors.identityType | Тип участника, добавленного во внешнюю группу. Возможные значения: `user`,`group`, `externalGroup`. Обязательный. |
+| id             | String                  | `id` Уникальный элемент. Это будет **objectId** в случае Azure Active Directory пользователей или групп и **externalGroupId** в случае внешних групп. Обязательное.                                    |
+| type           | microsoft.graph.externalConnectors.identityType | Тип члена, добавленного во внешнюю группу. Возможные значения: `user`,`group`, `externalGroup`. Обязательный. |
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `201 Created` ответа и объект **удостоверения** в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект **удостоверения** в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -128,7 +128,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>Пример 2. Добавление Azure Active Directory группы в качестве участника
+### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>Пример 2. Добавление группы Azure Active Directory в качестве участника
 
 #### <a name="request"></a>Запрос
 
