@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 79d8e9b44204b5d64df353e87b02125557c8dcda
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: ed1f58f3243a0abc433b2407f61d04077469f896
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917740"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133694"
 ---
 # <a name="working-with-microsoft-365-usage-reports-in-microsoft-graph"></a>Работа с отчетами об использовании Microsoft 365 в Microsoft Graph
 
@@ -35,9 +35,9 @@ Microsoft Graph позволяет управлять доступом к рес
 | [Использование приложений Microsoft 365](/graph/api/resources/microsoft-365-apps-usage-report?view=graph-rest-beta&preserve-view=true) | ✔                              | ➖                                     | ➖                                              | ➖                           |
 | [Использование браузера Microsoft 365](/graph/api/resources/microsoft-365-browser-usage-report?view=graph-rest-beta&preserve-view=true) | ✔                              | ➖                                     | ➖                                              | ➖                           |
 | [Действия в группах Microsoft 365](/graph/api/resources/office-365-groups-activity-reports?view=graph-rest-beta&preserve-view=true) | ✔                              | ➖                                     | ✔                                              | ➖                           |
-| [Использование устройств Microsoft Teams](/graph/api/resources/microsoft-teams-device-usage-reports?view=graph-rest-beta&preserve-view=true) | ✔                              | ➖                                     | ➖                                              | ➖                           |
-| [Использование команды Microsoft Teams](/graph/api/resources/microsoft-teams-team-usage-reports?view=graph-rest-beta&preserve-view=true) | ✔                              | ➖                                     | ➖                                              | ➖                           |
-| [Действия пользователей Microsoft Teams](/graph/api/resources/microsoft-teams-user-activity-reports?view=graph-rest-beta&preserve-view=true) | ✔                              | ➖                                     | ➖                                              | ➖                           |
+| [Использование устройств Microsoft Teams](/graph/api/resources/microsoft-teams-device-usage-reports?view=graph-rest-beta&preserve-view=true) | ✔                              | ✔                                     | ➖                                              | ➖                           |
+| [Использование команды Microsoft Teams](/graph/api/resources/microsoft-teams-team-usage-reports?view=graph-rest-beta&preserve-view=true) | ✔                              | ✔                                     | ➖                                              | ➖                           |
+| [Действия пользователей Microsoft Teams](/graph/api/resources/microsoft-teams-user-activity-reports?view=graph-rest-beta&preserve-view=true) | ✔                              | ✔                                     | ➖                                              | ➖                           |
 | [Действия в Outlook](/graph/api/resources/email-activity-reports?view=graph-rest-beta&preserve-view=true) | ✔                              | ✔                                     | ✔                                              | ➖                           |
 | [Использование приложения Outlook](/graph/api/resources/email-app-usage-reports?view=graph-rest-beta&preserve-view=true) | ✔                              | ✔                                     | ✔                                              | ➖                           |
 | [Использование почтового ящика Outlook](/graph/api/resources/mailbox-usage-reports?view=graph-rest-beta&preserve-view=true) | ✔                              | ✔                                     | ✔                                              | ➖                           |
