@@ -314,7 +314,7 @@ items:
                 href: api/user-findroomlists.md
               - name: Получение сведений о доступности
                 href: api/calendar-getschedule.md
-              - name: List
+              - name: Список
                 href: api/user-list-calendars.md
               - name: Список групп календарей
                 href: api/user-list-calendargroups.md
@@ -324,6 +324,14 @@ items:
                 href: api/user-list-events.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
+          - name: Облачный компьютер
+            items:
+              - name: Облачный компьютер
+                href: resources/cloudpc.md
+              - name: Список
+                href: api/user-list-cloudpcs.md
+              - name: Получение сведений о запуске
+                href: api/cloudpc-getcloudpclaunchinfo.md
           - name: Контакты
             items:
               - name: Contact
@@ -564,7 +572,7 @@ items:
                 href: api/profile-get.md
               - name: Удаление профиля пользователя
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Командная работа
             items:
               - name: Приложение установлено
                 href: resources/teamsappinstallation.md
@@ -608,7 +616,7 @@ items:
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: Группа
+          - name: Group
             href: resources/group.md
             items:
               - name: Список групп
@@ -960,7 +968,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -969,7 +977,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1152,7 +1160,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: List
+                      - name: Список
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -1161,7 +1169,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: List
+                      - name: Список
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -1170,7 +1178,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -1179,7 +1187,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1417,9 +1425,9 @@ items:
                 href: api/event-delta.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-          - name: Категория
+          - name: Category
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -1592,7 +1600,7 @@ items:
                 items:
                   - name: Сеанс
                     href: resources/callrecords-session.md
-                  - name: List
+                  - name: Список
                     href: api/callrecords-session-list.md
               - name: Вызовы ТСОП
                 items:
@@ -1631,7 +1639,7 @@ items:
                   - name: Запись о присутствии
                     href: resources/attendancerecord.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/attendancerecord-list.md
               - name: Регистрация собрания
                 href: resources/meetingregistration.md
@@ -9895,7 +9903,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
                       - name: Обновление
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
-                      - name: List
+                      - name: Список
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                       - name: Удалить
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
@@ -10211,6 +10219,10 @@ items:
                     href: api/manageddevice-bulkrestorecloudpc.md
                   - name: Устранение неполадок
                     href: api/cloudpc-troubleshoot.md
+                  - name: Список для пользователя
+                    href: api/user-list-cloudpcs.md
+                  - name: Получение сведений о запуске для пользователя
+                    href: api/cloudpc-getcloudpclaunchinfo.md
               - name: Образ устройства облачного компьютера
                 href: resources/cloudpcdeviceimage.md
                 items:
@@ -10292,12 +10304,12 @@ items:
               - name: 'Регион, поддерживаемый облачным компьютером'
                 href: resources/cloudpcsupportedregion.md
                 items:
-                  - name: List
+                  - name: Список
                     href: api/virtualendpoint-list-supportedregions.md
               - name: План обслуживания облачных компьютеров
                 href: resources/cloudpcserviceplan.md
                 items:
-                  - name: List
+                  - name: Список
                     href: api/virtualendpoint-list-serviceplans.md
               - name: Моментальный снимок облачного компьютера
                 href: resources/cloudpcsnapshot.md
@@ -10368,14 +10380,14 @@ items:
                     href: api/windowsupdates-updatableasset-get.md
                   - name: Удаление обновляемого ресурса
                     href: api/windowsupdates-updatableasset-delete.md
-                  - name: Устройство Azure AD
+                  - name: Azure AD устройства
                     href: resources/windowsupdates-azureaddevice.md
                     items:
-                      - name: Вывод списка устройств Azure AD
+                      - name: Перечисление Azure AD устройств
                         href: api/windowsupdates-updates-list-updatableassets-azureaddevice.md
-                      - name: Получение устройства Azure AD
+                      - name: Получение Azure AD устройства
                         href: api/windowsupdates-azureaddevice-get.md
-                      - name: Удаление устройства Azure AD
+                      - name: Удаление Azure AD устройства
                         href: api/windowsupdates-azureaddevice-delete.md
                       - name: Регистрация в управлении обновлениями
                         href: api/windowsupdates-updatableasset-enrollassets.md
@@ -10769,7 +10781,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: Обновление
                 href: api/educationassignmentdefaults-update.md
-          - name: Категория
+          - name: Category
             href: resources/educationcategory.md
             items:
               - name: Создание категории
@@ -11296,7 +11308,7 @@ items:
                       - name: Сведения об управлении службами
                         href: resources/delegatedadminservicemanagementdetail.md
                         items:
-                          - name: List
+                          - name: Список
                             href: api/delegatedadmincustomer-list-servicemanagementdetails.md
           - name: Управление каталогом
             items:
@@ -11708,93 +11720,6 @@ items:
                         href: api/unifiedroleassignmentmultiple-update.md
                       - name: Delete
                         href: api/unifiedroleassignmentmultiple-delete.md
-                  - name: Запрос на назначение ролей
-                    href: resources/unifiedroleassignmentschedulerequest.md
-                    items:
-                      - name: Список
-                        href: api/unifiedroleassignmentschedulerequest-list.md
-                      - name: Получение
-                        href: api/unifiedroleassignmentschedulerequest-get.md
-                      - name: Создание
-                        href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
-                      - name: Отмена
-                        href: api/unifiedroleassignmentschedulerequest-cancel.md
-                      - name: Фильтрация по текущему пользователю
-                        href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
-                  - name: Запрос на участие в роли
-                    href: resources/unifiedroleeligibilityschedulerequest.md
-                    items:
-                      - name: Список
-                        href: api/unifiedroleeligibilityschedulerequest-list.md
-                      - name: Получение
-                        href: api/unifiedroleeligibilityschedulerequest-get.md
-                      - name: Создание
-                        href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
-                      - name: Отмена
-                        href: api/unifiedroleeligibilityschedulerequest-cancel.md
-                      - name: Фильтрация по текущему пользователю
-                        href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
-                  - name: Расписание назначения ролей
-                    href: resources/unifiedRoleAssignmentSchedule.md
-                    items:
-                      - name: Список
-                        href: api/unifiedroleassignmentschedule-list.md
-                      - name: Получение
-                        href: api/unifiedroleassignmentschedule-get.md
-                      - name: Фильтрация по текущему пользователю
-                        href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
-                  - name: Расписание соответствия роли
-                    href: resources/unifiedRoleEligibilitySchedule.md
-                    items:
-                      - name: Список
-                        href: api/unifiedRoleEligibilitySchedule-list.md
-                      - name: Получение
-                        href: api/unifiedRoleEligibilitySchedule-get.md
-                      - name: Фильтрация по текущему пользователю
-                        href: api/unifiedRoleEligibilitySchedule-filterbycurrentuser.md
-                  - name: Экземпляр назначения роли
-                    href: resources/unifiedRoleAssignmentScheduleInstance.md
-                    items:
-                      - name: Список
-                        href: api/unifiedRoleAssignmentScheduleInstance-list.md
-                      - name: Получение
-                        href: api/unifiedRoleAssignmentScheduleInstance-get.md
-                      - name: Фильтрация по текущему пользователю
-                        href: api/unifiedRoleAssignmentScheduleInstance-filterbycurrentuser.md
-                  - name: Экземпляр соответствия роли
-                    href: resources/unifiedRoleEligibilityScheduleInstance.md
-                    items:
-                      - name: Список
-                        href: api/unifiedRoleEligibilityScheduleInstance-list.md
-                      - name: Получение
-                        href: api/unifiedRoleEligibilityScheduleInstance-get.md
-                      - name: Фильтрация по текущему пользователю
-                        href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
-                  - name: Политики управления ролами
-                    items:
-                      - name: Политика управления ролами
-                        href: resources/unifiedRoleManagementPolicy.md
-                        items:
-                          - name: Список
-                            href: api/unifiedrolemanagementpolicy-list.md
-                          - name: Получение
-                            href: api/unifiedrolemanagementpolicy-get.md
-                          - name: Rules
-                            href: resources/unifiedRoleManagementPolicyRule.md
-                            items:
-                              - name: Список
-                                href: api/unifiedrolemanagementpolicy-list-rules.md
-                              - name: Получение
-                                href: api/unifiedrolemanagementpolicyrule-get.md
-                              - name: Обновление
-                                href: api/unifiedrolemanagementpolicyrule-update.md
-                      - name: Назначение политики управления ролами
-                        href: resources/unifiedRoleManagementPolicyAssignment.md
-                        items:
-                          - name: Список
-                            href: api/unifiedRoleManagementPolicyAssignment-list.md
-                          - name: Получение
-                            href: api/unifiedRoleManagementPolicyAssignment-get.md
                   - name: Пространство имен ресурса
                     href: resources/unifiedrbacresourcenamespace.md
                     items:
@@ -11809,6 +11734,98 @@ items:
                             href: api/unifiedrbacresourcenamespace-list-resourceactions.md
                           - name: Получение
                             href: api/unifiedrbacresourceaction-get.md
+                  - name: управление привилегированными пользователями (PIM);
+                    items:
+                      - name: Назначения ролей
+                        items:
+                          - name: Планирование запросов
+                            href: resources/unifiedroleassignmentschedulerequest.md
+                            items:
+                              - name: Список
+                                href: api/unifiedroleassignmentschedulerequest-list.md
+                              - name: Создание
+                                href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
+                              - name: Получение
+                                href: api/unifiedroleassignmentschedulerequest-get.md
+                              - name: '"Отмена"'
+                                href: api/unifiedroleassignmentschedulerequest-cancel.md
+                              - name: Фильтрация по текущему пользователю
+                                href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+                          - name: Расписания
+                            href: resources/unifiedroleassignmentschedule.md
+                            items:
+                              - name: Список
+                                href: api/unifiedroleassignmentschedule-list.md
+                              - name: Получение
+                                href: api/unifiedroleassignmentschedule-get.md
+                              - name: Фильтрация по текущему пользователю
+                                href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+                          - name: Планирование экземпляров
+                            href: resources/unifiedroleassignmentscheduleinstance.md
+                            items:
+                              - name: Список
+                                href: api/unifiedroleassignmentscheduleinstance-list.md
+                              - name: Получение
+                                href: api/unifiedroleassignmentscheduleinstance-get.md
+                              - name: Фильтрация по текущему пользователю
+                                href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
+                      - name: Право на роль
+                        items:
+                          - name: Планирование запросов
+                            href: resources/unifiedroleeligibilityschedulerequest.md
+                            items:
+                              - name: Список
+                                href: api/unifiedroleeligibilityschedulerequest-list.md
+                              - name: Создание
+                                href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
+                              - name: Получение
+                                href: api/unifiedroleeligibilityschedulerequest-get.md
+                              - name: '"Отмена"'
+                                href: api/unifiedroleeligibilityschedulerequest-cancel.md
+                              - name: Фильтрация по текущему пользователю
+                                href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+                          - name: Расписания
+                            href: resources/unifiedroleeligibilityschedule.md
+                            items:
+                              - name: Список
+                                href: api/unifiedroleeligibilityschedule-list.md
+                              - name: Получение
+                                href: api/unifiedroleeligibilityschedule-get.md
+                              - name: Фильтрация по текущему пользователю
+                                href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
+                          - name: Планирование экземпляров
+                            href: resources/unifiedroleeligibilityscheduleinstance.md
+                            items:
+                              - name: Список
+                                href: api/unifiedroleeligibilityscheduleinstance-list.md
+                              - name: Получение
+                                href: api/unifiedroleeligibilityscheduleinstance-get.md
+                              - name: Фильтрация по текущему пользователю
+                                href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+                      - name: Политики управления ролами
+                        items:
+                          - name: Политики и правила
+                            displayName: 'role management policies, Azure AD role settings'
+                            href: resources/unifiedrolemanagementpolicy.md
+                            items:
+                              - name: Список
+                                href: api/policyroot-list-rolemanagementpolicies.md
+                              - name: Получение
+                                href: api/unifiedrolemanagementpolicy-get.md
+                              - name: Перечисление правил
+                                href: api/unifiedrolemanagementpolicy-list-rules.md
+                              - name: Получение правила
+                                href: api/unifiedrolemanagementpolicyrule-get.md
+                              - name: Обновление правила
+                                href: api/unifiedrolemanagementpolicyrule-update.md
+                          - name: Назначения политик
+                            displayName: role managemement policy assignments
+                            href: resources/unifiedrolemanagementpolicyassignment.md
+                            items:
+                              - name: Список
+                                href: api/unifiedRoleManagementPolicyAssignment-list.md
+                              - name: Получение
+                                href: api/unifiedrolemanagementpolicyassignment-get.md
           - name: Удостоверение и вход
             items:
               - name: Методы проверки подлинности
@@ -11818,7 +11835,7 @@ items:
                   - name: Методы проверки подлинности
                     href: resources/authenticationmethod.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/authentication-list-methods.md
                   - name: Ключи безопасности FIDO2
                     href: resources/fido2authenticationmethod.md
@@ -12777,7 +12794,7 @@ items:
                       - name: Экземпляр журнала проверки доступа
                         href: resources/accessreviewhistoryinstance.md
                         items:
-                          - name: List
+                          - name: Список
                             href: api/accessreviewhistorydefinition-list-instances.md
                           - name: Создание URI скачивания
                             displayName: Downloadable access review history report
@@ -12911,7 +12928,7 @@ items:
                   - name: Доступ к назначению пакета
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/entitlementmanagement-list-accesspackageassignments.md
                       - name: Фильтрация по текущему пользователю
                         href: api/accesspackageassignment-filterbycurrentuser.md
@@ -13278,7 +13295,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -13835,9 +13852,9 @@ items:
           - name: Аналитика (предварительная версия)
             href: resources/useranalytics.md
             items:
-              - name: Параметры
+              - name: Settings
                 items:
-                  - name: Параметры
+                  - name: Settings
                     href: resources/settings.md
                   - name: Получение параметров
                     href: api/useranalytics-get-settings.md
@@ -13882,7 +13899,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -13985,7 +14002,7 @@ items:
                   - name: Подробная сводка по проверяющей стороне
                     href: resources/relyingpartydetailedsummary.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/relyingpartydetailedsummary-list.md
               - name: Вход в приложение
                 items:
@@ -14013,27 +14030,27 @@ items:
                   - name: Сведения о регистрации пользователя учетных данных
                     href: resources/credentialuserregistrationdetails.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/reportroot-list-credentialuserregistrationdetails.md
                   - name: Сведения об использовании учетных данных пользователя
                     href: resources/usercredentialusagedetails.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/reportroot-list-usercredentialusagedetails.md
                   - name: Сводка по использованию учетных данных
                     href: resources/credentialusagesummary.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/reportroot-getcredentialusagesummary.md
                   - name: 'Пользователи, зарегистрированные по признаку'
                     href: resources/userregistrationfeaturesummary.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/authenticationmethodsroot-usersregisteredbyfeature.md
                   - name: 'Пользователи, зарегистрированные методом'
                     href: resources/userregistrationmethodsummary.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
                   - name: Сведения о регистрации пользователей
                     href: resources/userregistrationdetails.md
@@ -14463,13 +14480,13 @@ items:
                 items:
                   - name: Автоматизация моделирования
                     href: resources/simulationautomation.md
-                  - name: List
+                  - name: Список
                     href: api/attacksimulationroot-list-simulationautomations.md
               - name: Запуск модели автоматизации
                 items:
                   - name: Запуск модели автоматизации
                     href: resources/simulationautomationrun.md
-                  - name: List
+                  - name: Список
                     href: api/simulationautomation-list-runs.md
               - name: Отчеты
                 items:
@@ -14629,7 +14646,7 @@ items:
                     href: api/site-delete-permission.md
           - name: Списки
             items:
-              - name: List
+              - name: Список
                 href: resources/list.md
               - name: Получение списков на сайте
                 href: api/list-list.md
@@ -14759,7 +14776,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Обновление
                     href: api/termstore-store-update.md
-              - name: Группа
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Создание
@@ -14773,7 +14790,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: List
+                  - name: Список
                     href: api/termstore-group-list-sets.md
                   - name: Список дочерних элементов
                     href: api/termstore-term-list-children.md
@@ -15381,7 +15398,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Получение
                     href: api/offershiftrequest-get.md
-                  - name: List
+                  - name: Список
                     href: api/offershiftrequest-list.md
                   - name: '"Утвердить"'
                     href: api/offershiftrequest-approve.md
@@ -15740,7 +15757,7 @@ items:
                     href: api/attachment-delete.md
               - name: Категории
                 items:
-                  - name: Категория
+                  - name: Category
                     href: resources/outlookcategory.md
                   - name: Перечисление категорий
                     href: api/outlookuser-list-mastercategories.md
