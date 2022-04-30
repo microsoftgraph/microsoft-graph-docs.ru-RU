@@ -3,20 +3,18 @@ author: nkramer
 ms.topic: include
 ms.date: 01/25/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 5702c0489c9662f85b02c31a6cf6d3aba241208b
-ms.sourcegitcommit: 38e16940da74bda465f890d945f9dc4aa412c6f4
+ms.openlocfilehash: 6e5f62d52969dcc1b332b2cd6e5f02f318c8b6a9
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2022
-ms.locfileid: "62425300"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65135271"
 ---
 <!-- markdownlint-disable MD041-->
 
 ### <a name="chatmessage"></a>chatMessage
 
-Подписки **chatMessage** с делегированными разрешениями не поддерживают данные ресурса (**includeResourceData** должен иметь значение `false`) и не требуют [шифрования](/graph/webhooks-with-resource-data). Единственным исключением является ресурс `/users/{id}/chats/getAllMessages` (доступный только в бета-версии), который поддерживает данные ресурса независимо от типа разрешения.
-
-Подписки **chatMessage** с разрешениями для приложений включают данные ресурса и требуют [шифрования](/graph/webhooks-with-resource-data). Создание подписки завершается сбоем, если не указан [encryptionCertificate](/graph/api/resources/subscription). Перед созданием подписки **chatMessage** требуется запросить доступ. Дополнительные сведения см. в статье [Защищенные API в Microsoft Teams](/graph/teams-protected-apis).
+Подписки **chatMessage** можно указать, чтобы включить данные ресурсов. Если задано включение данных ресурсов (**includeResourceData** имеет значение `true`), требуется [шифрование](/graph/webhooks-with-resource-data). Подписку нельзя создать, если для таких подписок не указан [encryptionCertificate](/graph/api/resources/subscription). До создания **подписки chatMessage** с разрешениями приложения, возможно, потребуется запросить доступ. Дополнительные сведения см. в статье [Защищенные API в Microsoft Teams](/graph/teams-protected-apis).
 
 Вы должны использовать заголовок запроса `Prefer: include-unknown-enum-members` для получения следующих значений в **chatMessage** **messageType** [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `systemEventMessage` для ресурса `/teams/{id}/channels/{id}/messages` и `/chats/{id}/messages`.
 
