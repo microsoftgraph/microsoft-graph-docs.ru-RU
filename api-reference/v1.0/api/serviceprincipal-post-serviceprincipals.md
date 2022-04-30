@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 428a108a1ccf2f27b13691b8f81cecd0fb3f727a
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 34d5c8ca00ffc2f8a817aad3b025b783919bbbef
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671232"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133078"
 ---
 # <a name="create-serviceprincipal"></a>Создание объекта servicePrincipal
 
@@ -19,7 +19,7 @@ ms.locfileid: "63671232"
 Создание нового объекта [servicePrincipal](../resources/serviceprincipal.md).
 
 > [!IMPORTANT]
-> Добавление [**passwordCredential**](../resources/passwordcredential.md) при создании объектов servicePrincipal не поддерживается. Используйте метод [addPassword](serviceprincipal-addpassword.md), чтобы добавлять пароли для servicePrincipal.
+> Добавление [**passwordCredential**](../resources/passwordcredential.md) при создании объектов servicePrincipal не поддерживается. Используйте метод [addPassword](serviceprincipal-addpassword.md), чтобы добавлять пароли и секреты для servicePrincipal.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,6 +30,11 @@ ms.locfileid: "63671232"
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+
+> [!IMPORTANT]
+> Для создания субъекта-службы в приложении должны быть выполнены следующие дополнительные требования:
+> + Если резервное приложение зарегистрировано в домашнем клиенте вызывающего приложения, вызывающее приложение должно быть владельцем резервного приложения.
+> + Если резервное приложение зарегистрировано в другом Azure AD клиенте, вызывающему приложению должна быть назначена роль `Cloud Application Administrator` или роль`Application Administrator`.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
