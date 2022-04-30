@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3e62386b6d51c8e6fe97b0ede9f6a21f97f72a8b
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: c9bd130ce01738ae03cb0521b85774e974240055
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60083992"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133330"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>Получение уведомлений об изменениях сообщений в каналах и чатах Teams с помощью Microsoft Graph
 
@@ -86,7 +86,7 @@ Content-Type: application/json
 
 ## <a name="subscribe-to-messages-in-a-channel"></a>Подписка на сообщения в канале
 
-Чтобы отслеживать сообщения и ответы в канале, вы можете создать подписку на уведомления об изменениях на уровне канала. Для этого подпишитесь на `/teams/{team-id}/channels/{channel-id}/messages`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление *в режиме только для приложения*.
+Чтобы отслеживать сообщения и ответы в канале, вы можете создать подписку на уведомления об изменениях на уровне канала. Для этого подпишитесь на `/teams/{team-id}/channels/{channel-id}/messages`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление как в *делегированном* режиме, так и в режиме *только для приложений*.
 
 Подписки на уровне канала также поддерживают поиск на основе ключевых слов с помощью параметра запроса `$search`.
 
@@ -174,7 +174,7 @@ Content-Type: application/json
 
 ## <a name="subscribe-to-messages-in-a-chat"></a>Подписка на сообщения в чате
 
-Чтобы отслеживать сообщения в чате, вы можете создать подписку на уведомления об изменениях на уровне чата. Для этого подпишитесь на `/chats/{chat-id}/messages`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление *в режиме только для приложения*.
+Чтобы отслеживать сообщения в чате, вы можете создать подписку на уведомления об изменениях на уровне чата. Для этого подпишитесь на `/chats/{chat-id}/messages`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление как в *делегированном* режиме, так и в режиме *только для приложений*.
 
 Подписки на уровне чата также поддерживают поиск на основе ключевых слов с помощью параметра запроса `$search`.
 
