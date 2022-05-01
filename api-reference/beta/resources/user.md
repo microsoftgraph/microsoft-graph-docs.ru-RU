@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: fa5d9a09174011a1c07f9c05bad833ea933b5b1a
-ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
-ms.translationtype: MT
+ms.openlocfilehash: 2701ff53871efa34719fb7cdf9b8542f39746641
+ms.sourcegitcommit: 4ef29d4a2cfa1ccc4a3da649e683377b17b90108
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64646608"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65125901"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -162,6 +162,9 @@ ms.locfileid: "64646608"
 | **Задачи Outlook** (не рекомендуется)|||
 | [Создание объекта outlookTask](../api/outlookuser-post-tasks.md) (не рекомендуется) | [outlookTask](outlooktask.md) | Создание задачи Outlook в группе задач по умолчанию ("Мои задачи") и папке задач по умолчанию ("Задачи") в почтовом ящике пользователя. |
 | [Перечисление задач](../api/outlookuser-list-tasks.md) (не рекомендуется) | Коллекция объектов [outlookTask](outlooktask.md) | Получение всех задач Outlook в почтовом ящике пользователя. |
+| **Облачный ПК**|||
+|[Перечисление облачных ПК](../api/user-list-cloudpcs.md)|Коллекция [cloudPC](../resources/cloudpc.md)|Перечислите устройства [cloudPC](../resources/cloudpc.md), которые связаны с вошедшим пользователем.|
+|[Получение сведений о запуске](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Получите [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) для вошедшего пользователя.|
 
 
 ## <a name="properties"></a>Свойства
@@ -220,7 +223,7 @@ ms.locfileid: "64646608"
 | onPremisesLastSyncDateTime | DateTimeOffset | Указывает время последней синхронизации объекта с локальным каталогом, например 2013-02-16T03:04:54Z. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 и формата времени UTC. Например, полночь 1 января 2014 г. в формате UTC представляется в виде `2014-01-01T00:00:00Z`. Только для чтения. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). |
 | onPremisesProvisioningErrors | Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md) | Ошибки при использовании продукта синхронизации Майкрософт во время подготовки. <br> Поддерживает `$filter` (`eq`, `not`, `ge`, `le`).|
 | onPremisesSamAccountName | String | Содержит локальное `sAMAccountName`, синхронизированное из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. <br><br> Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
-| onPremisesSecurityIdentifier | String | Содержит локальный идентификатор безопасности (SID) локальной группы, синхронизированной с облаком. Только для чтения. `$filter` Поддерживает (`eq`в том числе по `null` значениям).  |
+| onPremisesSecurityIdentifier | String | Содержит локальный идентификатор безопасности (SID) пользователя, синхронизированного из локальной среды с облаком. Только для чтения. Поддерживает `$filter` (`eq` включая значения `null`).  |
 | onPremisesSyncEnabled | Логический | Значение `true` указывает, что этот объект синхронизируется из локального каталога. Значение `false` указывает, что этот объект изначально синхронизировался из локального каталога, но синхронизация больше не выполняется. Значение `null` указывает, что этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). Только для чтения. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `in` и `eq` по `null` значениям). |
 | onPremisesUserPrincipalName | String | Содержит локальное `userPrincipalName`, синхронизированное из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`). |
 | otherMails | Коллекция строк | Список дополнительных адресов электронной почты для пользователя. Например: `["bob@contoso.com", "Robert@fabrikam.com"]`.<br>ПРИМЕЧАНИЕ. Это свойство не может содержать диакритические знаки.<br><br>Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `in`, `startsWith`). |
