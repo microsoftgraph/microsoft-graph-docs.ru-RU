@@ -5,13 +5,13 @@ ms.date: 09/14/2017
 title: ItemActivity
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: dd1ff94bc03a06b69427a76339284ca783b17b39
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: d07ec18e3e9ccd70cd4028f577d927f0b12323c2
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722704"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176575"
 ---
 # <a name="itemactivity-resource-type"></a>Тип ресурса ItemActivity
 
@@ -50,10 +50,10 @@ ms.locfileid: "63722704"
 | Свойство | Тип                    | Описание                                                  |
 | :------- | :---------------------- | :----------------------------------------------------------- |
 | id       | string                  | Уникальный идентификатор действия. Только для чтения.            |
-| доступ   | [accessAction][]        | Был доступ к элементу.                                        |
+| Доступа   | [accessAction][]        | Доступ к элементу был выполнен.                                        |
 | action   | [itemActionSet][]       | Сведения о выполненном действии. Только для чтения.         |
 | actor    | [identitySet][]         | Удостоверение, выполнившее действие. Только для чтения.             |
-| location | [location][]            | Физическое расположение, где было выполнено действие. Только для чтения. |
+| location | [location][]            | Физическое расположение, в котором было выполнено действие. Только для чтения. |
 | times    | [itemActivityTimeSet][] | Сведения о том, когда было выполнено действие. Только для чтения.       |
 
 [identitySet]: identityset.md

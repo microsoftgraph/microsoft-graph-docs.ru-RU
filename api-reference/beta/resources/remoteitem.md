@@ -5,13 +5,13 @@ ms.date: 09/10/2017
 title: RemoteItem
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 196f0105a2fb9f436d50728af1ab5865de47d397
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: files
+ms.openlocfilehash: 13016aa906c70ed0b3023b9cdd71843243371246
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63724227"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176520"
 ---
 # <a name="remoteitem-resource-type"></a>Тип ресурса RemoteItem
 
@@ -64,7 +64,7 @@ ms.locfileid: "63724227"
 | file                 | [File](file.md)                     | Указывает, что удаленный элемент является файлом. Только для чтения.                                                                                                              |
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | Сведения об удаленном элементе из локальной файловой системы. Только для чтения.                                                                                          |
 | folder               | [Folder](folder.md)                 | Указывает, что удаленный элемент является папкой. Только для чтения.                                                                                                            |
-| id                   | String                              | Уникальный идентификатор для удаленного элемента на его диске. Только для чтения.                                                                                                    |
+| id                   | Строка                              | Уникальный идентификатор для удаленного элемента на его диске. Только для чтения.                                                                                                    |
 | image                | [Image](image.md)                   | Метаданные изображения, если в роли элемента выступает изображение. Только для чтения.                                                                                                               |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | Идентификатор пользователя, устройства или приложения, внесшего последние изменения в элемент. Только для чтения.                                                                            |
 | lastModifiedDateTime | Timestamp                           | Дата и время последнего изменения элемента. Только для чтения.                                                                                                              |

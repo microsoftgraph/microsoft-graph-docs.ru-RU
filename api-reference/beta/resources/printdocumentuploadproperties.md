@@ -1,24 +1,24 @@
 ---
 author: nilakhan
-description: Представляет сведения для отправки документа на печать
-title: Тип ресурса Принтдокументуплоадпропертиес
-localization_priority: Normal
+description: Представляет сведения для отправки документа для печати
+title: Тип ресурса printDocumentUploadProperties
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: universal-print
-ms.openlocfilehash: 1249eaae4d62cffe14935587c655ba402237b0ed
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.prod: cloud-printing
+ms.openlocfilehash: 219834eb64863d67dcc6e3ed75f33bc08eead768
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727971"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176897"
 ---
-# <a name="printdocumentuploadproperties-resource-type"></a>Тип ресурса Принтдокументуплоадпропертиес
+# <a name="printdocumentuploadproperties-resource-type"></a>Тип ресурса printDocumentUploadProperties
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает отправляемый документ
+Описание передаваемого документа
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -44,8 +44,8 @@ ms.locfileid: "48727971"
 
 | Свойство       | Тип              |Описание
 |:-------------------|:------------------|:------------------------------------
-| contentType | String    | Тип контента документа (MIME).
-| Имя_документа | Строка | Имя документа.
+| contentType | String    | Тип содержимого документа (MIME).
+| documentName | Строка | Имя документа.
 | size          | Int64            | Размер документа в байтах.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса printDocument
-description: Представляет документ, который печатается.
+description: Представляет печатаемый документ.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: c0bc886b618e061bee51ad82d7032737015f58ab
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 55eaea78c960596beab18682209acad9522c00d1
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48849216"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176902"
 ---
 # <a name="printdocument-resource-type"></a>Тип ресурса printDocument
 
@@ -18,21 +18,21 @@ ms.locfileid: "48849216"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет документ, который печатается.
+Представляет печатаемый документ.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [Создание сеанса отправки](../api/printdocument-createuploadsession.md) | [uploadSession](uploadsession.md) | Создайте сеанс отправки для последовательной отправки диапазонов двоичного файла **printDocument**. |
-| [Скачать двоичный файл](../api/printdocument-get-file.md) | URL-адрес скачивания | Скачайте двоичный файл, связанный с классом **printDocument**. |
+| [Скачивание двоичного файла](../api/printdocument-get-file.md) | Скачать URL-адрес | Скачайте двоичный файл, связанный с **printDocument**. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String|Идентификатор документа. Только для чтения.|
-|displayName|String|Имя документа. Только для чтения.|
-|contentType|String|Тип контента документа (MIME). Только для чтения.|
+|id|Строка|Идентификатор документа. Только для чтения.|
+|displayName|Строка|Имя документа. Только для чтения.|
+|contentType|String|Тип содержимого документа (MIME). Только для чтения.|
 |size|Int64|Размер документа в байтах. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON

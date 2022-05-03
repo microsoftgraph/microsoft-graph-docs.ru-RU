@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса операции
+title: Тип ресурса operation
 description: Состояние длительной операции.
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: teamwork
 author: billbliss
-ms.openlocfilehash: 781dcf64cae103cd65f460edead13ca6995d2a51
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: c1f07f81754b1cf0373917bbb59953fd1342d627
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792262"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176517"
 ---
-# <a name="operation-resource-type"></a>Тип ресурса операции
+# <a name="operation-resource-type"></a>Тип ресурса operation
 
 Пространство имен: microsoft.graph
 
@@ -29,7 +29,7 @@ ms.locfileid: "61792262"
 | Свойство           | Тип            | Описание                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset  | Время начала операции.                                                |
-| id                 | String          | ID операции. Только для чтения. Создается сервером.                                  |
+| id                 | Строка          | Идентификатор операции. Только для чтения. Создается сервером.                                  |
 | lastActionDateTime | DateTimeOffset  | Время последнего действия операции.                                   |
 | status             | String          | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |
 

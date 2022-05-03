@@ -1,44 +1,44 @@
 ---
-title: Тип ресурса Принттаскстатус
-description: Представляет текущее состояние выполнения Принттаск.
+title: Тип ресурса printTaskStatus
+description: Представляет текущее состояние выполнения printTask.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 5f340acf8357155893020985aa6036d93ed5b2df
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c484ef988e7452096d63fe103a6c45a8d22d06ff
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078306"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176332"
 ---
-# <a name="printtaskstatus-resource-type"></a>Тип ресурса Принттаскстатус
+# <a name="printtaskstatus-resource-type"></a>Тип ресурса printTaskStatus
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет текущее состояние выполнения [принттаск](printtask.md). 
+Представляет текущее состояние выполнения [printTask](printtask.md). 
 
->**Примечание:** Приложения, которые регистрируют триггеры задач, несут ответственность за обновление состояния задач при завершении обработки, если соответствующее задание печати не было перенаправлено на другой принтер.
+>**Примечание:** Приложения, которые регистрируют триггеры задач, отвечают за обновление состояний задач после завершения обработки, если связанное задание печати не было перенаправлено на другой принтер.
 
-Дополнительные сведения о том, как использовать этот ресурс для поддержки печати по запросу в универсальной печати, [можно узнать в статье расширение универсальной печати для поддержки печати по запросу](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Дополнительные сведения об использовании этого ресурса для добавления поддержки печати по запросу в универсальную печать см. в разделе "Расширение универсальной печати для [поддержки печати по запросу"](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|state|принттаскпроцессингстате|Текущее состояние обработки [принттаск](printtask.md). Допустимые значения описаны в приведенной ниже таблице.|
-|description|String|Удобное для человека описание текущего состояния обработки [принттаск](printtask.md).|
+|state|printTaskProcessingState|Текущее состояние обработки [printTask](printtask.md). Допустимые значения описаны в следующей таблице.|
+|description|Строка|Понятное описание текущего состояния обработки [printTask](printtask.md).|
 
-### <a name="printtaskprocessingstate-values"></a>значения Принттаскпроцессингстате
+### <a name="printtaskprocessingstate-values"></a>Значения printTaskProcessingState
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|закончен|нуль|Ожидание выполнения задачи.|
-|двухпроцессорной|1 |Выполняется выполнение задачи.|
-|готовы|2 |Выполнение задачи завершено.|
-|прерван|4|Выполнение задачи было прервано.|
-|unknownFutureValue|4 |Значение Sentinel для перечисления расширяемые. Не следует использовать.|
+|Ожидающие|0|Выполнение задачи ожидается.|
+|Обработки|1|Выполняется задача.|
+|Завершена|2|Выполнение задачи завершено.|
+|Прервана|3|Выполнение задачи прервано.|
+|unknownFutureValue|4|Значение sentinel для развиваемого перечисления. Не следует использовать.|
 
 ## <a name="json-representation"></a>Представление JSON
 

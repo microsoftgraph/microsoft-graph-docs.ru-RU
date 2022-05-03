@@ -1,26 +1,26 @@
 ---
-title: тип ресурса onenoteResource
-description: 'Изображение или другой ресурс файла на OneNote странице. '
+title: Тип ресурса onenoteResource
+description: 'Изображение или другой файл ресурса на OneNote страницы. '
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: notes
 author: jewan-microsoft
-ms.openlocfilehash: f7a479ec529cae209fef085da2978c3e412a844f
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 21d0be436241b518e87b0eb36956886808211a0d
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804922"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176713"
 ---
-# <a name="onenoteresource-resource-type"></a>тип ресурса onenoteResource
+# <a name="onenoteresource-resource-type"></a>Тип ресурса onenoteResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Изображение или другой ресурс файла на OneNote странице.
+Изображение или другой файл ресурса на OneNote страницы.
 
-Вы можете получить двоичные данные ресурса, но получение представления JSON объекта ресурса или коллекции ресурсов не поддерживается.
+Вы можете получить двоичные данные ресурса, но получение представления объекта ресурса или коллекции ресурсов в формате JSON не поддерживается.
 
 <!-- {
   "blockType": "resource",
@@ -37,19 +37,19 @@ ms.locfileid: "62804922"
 }
 ```
 
-Получите двоичные данные определенного ресурса, отправив запрос GET в конечную `content` точку ресурса:
+Получите двоичные данные определенного ресурса, отправив запрос GET в конечную точку `content` ресурса:
 
 ```http
 GET ../onenote/resources/{id}/content
 ```
 
-URI ресурса файла возвращается после получения HTML-контента страницы с помощью следующего запроса:
+URI ресурса файла возвращается при получение HTML-содержимого страницы с помощью следующего запроса:
 
 ```http
 GET ../onenote/pages/{id}/content
 ```
 
-На странице HTML тег `img` `data-fullres-src` содержит конечные точки исходного ресурса изображения в атрибуте и оптимизированный образ в атрибуте `src` :
+В HTML-коде `img` `data-fullres-src` страницы тег включает конечные точки для исходного ресурса изображения в атрибуте и оптимизированный образ в атрибуте `src` :
 
 ```html
 <img
@@ -59,7 +59,7 @@ GET ../onenote/pages/{id}/content
     data-fullres-src-type="media-type" ... />
 ```
 
-Тег `object` (который представляет файлы, такие как PDF, DOCX и PNG), включает конечную точку для файловой ресурс в атрибуте `data` :
+Тег `object` (который представляет такие файлы, как PDF, DOCX и PNG) содержит конечную точку для файлового ресурса в атрибуте `data` :
 
 ```html
 <object
@@ -71,13 +71,13 @@ GET ../onenote/pages/{id}/content
 ## <a name="methods"></a>Методы
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получить двоичные данные ресурсов](../api/resource-get.md) | Stream |Извлечение двоичных данных файла или ресурса изображений.|
+|[Получение двоичных данных ресурсов](../api/resource-get.md) | Stream |Получение двоичных данных ресурса файла или изображения.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | content | Edm.Stream||
-| contentUrl | String ||
+| contentUrl | Строка ||
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

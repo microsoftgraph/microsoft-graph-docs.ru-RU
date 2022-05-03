@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса Принтоператион
-description: Представляет длительную универсальную операцию печати. Базовый класс для типов операций, например Принтеркреатеоператион.
+title: Тип ресурса printOperation
+description: Представляет долго выполняющуюся операцию универсальной печати. Базовый класс для типов операций, таких как printerCreateOperation.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 970ac3dd06e5af1478600166ffdd4c84815aa5b5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5e3d53d9fbdc5fbb4dd1bda2aa477581df5c838e
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048724"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176662"
 ---
-# <a name="printoperation-resource-type"></a>Тип ресурса Принтоператион
+# <a name="printoperation-resource-type"></a>Тип ресурса printOperation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет длительную универсальную операцию печати. Базовый класс для типов операций, например [принтеркреатеоператион](printercreateoperation.md).
+Представляет долго выполняющуюся операцию универсальной печати. Базовый класс для типов операций, таких [как printerCreateOperation](printercreateoperation.md).
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение операции](../api/printoperation-get.md) | [printOperation](printoperation.md) | Получение длительной операции в текущем пользователе или клиенте приложения. |
+| [Операция Get](../api/printoperation-get.md) | [printOperation](printoperation.md) | Получение длительной операции в клиенте текущего пользователя или приложения. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|Строка|Идентификатор операции. Только для чтения.|
 |status|[printOperationStatus](printoperationstatus.md)|Состояние операции. Только для чтения.|
-|createdDateTime|DateTimeOffset|Значение DateTimeOffset при создании операции. Только для чтения.|
+|createdDateTime|DateTimeOffset|DateTimeOffset при создании операции. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

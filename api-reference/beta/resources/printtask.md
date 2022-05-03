@@ -1,47 +1,47 @@
 ---
-title: тип ресурса printTask
-description: Представляет задачу, выполненную или выполненную в результате события универсальной печати.
+title: Тип ресурса printTask
+description: Представляет задачу, которая выполняется или была выполнена в результате события универсальной печати.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: c684ff64aa4c3667214b61b70a422690381525b3
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 4348a07af0849359c72c6b28fa5ef665420a2842
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766303"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176750"
 ---
-# <a name="printtask-resource-type"></a>тип ресурса printTask
+# <a name="printtask-resource-type"></a>Тип ресурса printTask
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет задачу, выполненную или выполненную в результате события универсальной печати.
+Представляет задачу, которая выполняется или была выполнена в результате события универсальной печати.
 
-Дополнительные сведения о том, как использовать этот ресурс для добавления поддержки печати в Universal Print, см. в материале [Extending Universal Print to support pull printing.](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
+Дополнительные сведения об использовании этого ресурса для добавления поддержки печати по запросу в универсальную печать см. в разделе "Расширение универсальной печати для [поддержки печати по запросу"](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список (от printTaskDefintion)](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | Получите список задач, созданных на основе определенного шрифтаTaskDefinition. Список включает в себя выполнение текущих задач и недавно завершенных задач. |
-| [Get](../api/printtask-get.md) | [printTask](printtask.md) | Сведения о задаче печати. |
+| [List (from printTaskDefintion)](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | Получение списка задач, созданных на основе определенного объекта printTaskDefinition. Список включает в себя выполняющиеся задачи и недавно завершенные задачи. |
+| [получение](../api/printtask-get.md); | [printTask](printtask.md) | Получение сведений о задаче печати. |
 | [Обновление](../api/printtaskdefinition-update-task.md) | [printTask](printtask.md) | Обновляет задачу печати. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String|Идентификатор printTask. Только для чтения.|
-|status|[printTaskStatus](printtaskstatus.md)|Текущее состояние выполнения этого printTask. **Приложение вызовов отвечает за обновление этого состояния по завершению обработки, если соответствующий printJob не был перенаправлен на другой принтер.** Невыполнение отчетов о завершении приведет к блокировке связанного задания печати от печати и в конечном итоге к их удаляемой работе. |
-|parentUrl|String|URL-адрес для объекта печати, который вызвал эту задачу. Например, `https://graph.microsoft.com/beta/print/printers/{printerId}/jobs/{jobId}`. Только для чтения.|
+|status|[printTaskStatus](printtaskstatus.md)|Текущее состояние выполнения этого объекта printTask. **Вызывающее приложение отвечает за обновление этого состояния после завершения обработки, если связанное задание печати не было перенаправлено на другой принтер.** Если не сообщить о завершении, связанное задание печати будет заблокировано и в конечном итоге удалено. |
+|parentUrl|Строка|URL-адрес сущности печати, которая активирует эту задачу. Например, `https://graph.microsoft.com/beta/print/printers/{printerId}/jobs/{jobId}`. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|триггер|[printTaskTrigger](printtasktrigger.md)|PrintTaskTrigger, который вызвал выполнение этой задачи. Только для чтения.|
-|определение|[printTaskDefinition](printtaskdefinition.md)|PrintTaskDefinition, который использовался для создания этой задачи. Только для чтения.|
+|Триггер|[printTaskTrigger](printtasktrigger.md)|PrintTaskTrigger, который инициирует выполнение этой задачи. Только для чтения.|
+|Определение|[printTaskDefinition](printtaskdefinition.md)|PrintTaskDefinition, который использовался для создания этой задачи. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

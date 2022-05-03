@@ -1,52 +1,52 @@
 ---
-title: тип ресурса onenotePage
-description: Страница в записной книжке OneNote.
-localization_priority: Normal
+title: Тип ресурса onenotePage
+description: Страница в OneNote записной книжке.
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: notes
 author: jewan-microsoft
-ms.openlocfilehash: 2f8a93080b3eaa58be95e8721307cdde31b359ea
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 4f4b556b048d535236d40259bc9736de4e3e5ee4
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719453"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176728"
 ---
-# <a name="onenotepage-resource-type"></a>тип ресурса onenotePage
+# <a name="onenotepage-resource-type"></a>Тип ресурса onenotePage
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Страница в записной книжке OneNote.
+Страница в OneNote записной книжке.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|содержимое|Поток|HTML-контент страницы.|
-|contentUrl|String|URL-адрес HTML-контента страницы.  Только для чтения.|
+|содержимое|Поток|HTML-содержимое страницы.|
+|contentUrl|Строка|URL-адрес HTML-содержимого страницы.  Только для чтения.|
 |createdByAppId|String|Уникальный идентификатор приложения, создавшего страницу. Только для чтения.|
 |createdDateTime|DateTimeOffset|Дата и время создания страницы. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 |id|String|Уникальный идентификатор страницы.  Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения страницы. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
-|уровень|Int32|Уровень отступа страницы. Только для чтения.|
-|links|[pageLinks](pagelinks.md)|Ссылки для открытия страницы. Ссылка `oneNoteClientURL` открывает страницу в родном клиенте OneNote, если она установлена. Ссылка `oneNoteWebUrl` открывает страницу в OneNote в Интернете. Только для чтения.|
-|порядок|Int32|Порядок страницы в родительском разделе. Только для чтения.|
-|self|String|Конечная точка, в которой можно получить сведения о странице. Только для чтения.|
-|title|String|Заголовок страницы. |
+|Уровень|Int32|Уровень отступа страницы. Только для чтения.|
+|links|[pageLinks](pagelinks.md)|Ссылки для открытия страницы. Ссылка `oneNoteClientURL` открывает страницу в собственном OneNote, если она установлена. Ссылка `oneNoteWebUrl` откроет страницу в OneNote в Интернете. Только для чтения.|
+|Заказ|Int32|Порядок страницы в родительском разделе. Только для чтения.|
+|Самостоятельно|String|Конечная точка, в которой можно получить сведения о странице. Только для чтения.|
+|title|Строка|Заголовок страницы. |
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|parentNotebook|[notebook](notebook.md)|Блокнот, содержащий страницу.  Только для чтения.|
+|parentNotebook|[notebook](notebook.md)|Записная книжка, содержащая страницу.  Только для чтения.|
 |parentSection|[onenoteSection](onenotesection.md)|Раздел, содержащий страницу. Только для чтения.|
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Вывод страницы](../api/page-get.md) | [onenotePage](onenotepage.md) |Ознакомьтесь с свойствами и отношениями страницы.|
-|[Обновление содержимого страницы](../api/page-update.md) | Нет |Обновление HTML-контента страницы. |
+|[Вывод страницы](../api/page-get.md) | [onenotePage](onenotepage.md) |Чтение свойств и связей страницы.|
+|[Обновление содержимого страницы](../api/page-update.md) | Нет |Обновите HTML-содержимое страницы. |
 |[Удаление страницы](../api/page-delete.md) | Нет |Удалите страницу. |
 |[copyToSection](../api/page-copytosection.md)| Нет |Копирует страницу в определенный раздел.|
 

@@ -1,25 +1,25 @@
 ---
 author: JeremyKelley
-description: Ресурс квоты содержит сведения о ограничениях пространства на ресурсе диска.
+description: Ресурс квоты предоставляет сведения об ограничениях пространства для ресурса диска.
 ms.date: 09/10/2017
-title: Квота
+title: Квоты
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 28006748084878d5c7ce3f327f6c4237e12bf83c
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: files
+ms.openlocfilehash: fb27c29c70c0775ad59bf23c33348aaf490ebaed
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722435"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176734"
 ---
-# <a name="quota-resource-type"></a>тип ресурсов квоты
+# <a name="quota-resource-type"></a>тип ресурса квоты
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс **квоты** содержит сведения о ограничениях пространства на [ресурсе диска](drive.md) .
+Ресурс **квоты** предоставляет сведения об ограничениях пространства для [ресурса](drive.md) диска.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -53,9 +53,9 @@ ms.locfileid: "63722435"
 | remaining              | Int64                                               | Общий объем дискового пространства, оставшегося до достижения максимальной квоты, в байтах. Только для чтения.   |
 | deleted                | Int64                                               | Общий объем дискового пространства, занятого файлами в корзине, в байтах. Только для чтения.        |
 | состояние                  | string                                              | Значение перечисления, указывающее состояние дискового пространства. Только для чтения.   |
-| storagePlanInformation | [storagePlanInformation](storageplaninformation.md) | Сведения о планах квоты на хранение диска. Только в личном OneDrive. |
+| storagePlanInformation | [storagePlanInformation](storageplaninformation.md) | Сведения о планах квоты хранилища диска. Только в личных OneDrive. |
 
-### <a name="state-enumeration-values"></a>Значения государственного переумерия
+### <a name="state-enumeration-values"></a>Значения перечисления состояний
 
 | Значение      | Описание                                                                                                                                                                 |
 | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

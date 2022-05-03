@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Принтидентити
-description: Представляет удостоверение в универсальной службе печати. Сопоставление группы Azure AD.
+title: Тип ресурса printIdentity
+description: Представляет удостоверение в службе универсальной печати. Карты в Azure AD группу.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 45a69cbad25d2f9c3c99c9e01aa47982fe5c62b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6132cabcb0aa7dfff94207a38b963aefe568fe29
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048773"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176330"
 ---
-# <a name="printidentity-resource-type"></a>Тип ресурса Принтидентити
+# <a name="printidentity-resource-type"></a>Тип ресурса printIdentity
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет удостоверение в универсальной службе печати. Сопоставление с [группой Azure Active Directory (Azure AD)](group.md).
+Представляет удостоверение в службе универсальной печати. Карты в Azure Active Directory [(Azure AD).](group.md)
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка|Идентификатор Принтидентити. Только для чтения.|
-|displayName|Строка|Отображаемое имя Принтидентити.|
+|id|Строка|Идентификатор printIdentity. Только для чтения.|
+|displayName|Строка|Отображаемое имя объекта printIdentity.|
 
 ## <a name="json-representation"></a>Представление JSON
 

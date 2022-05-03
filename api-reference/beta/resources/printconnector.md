@@ -1,46 +1,46 @@
 ---
-title: тип ресурса printConnector
-description: Представляет соединители печати, зарегистрированные с помощью подписки универсальной печати. Ресурс printConnector можно использовать для просмотра состояния соединитетеля и обновления свойств.
+title: Тип ресурса printConnector
+description: Представляет соединитель печати, зарегистрированный с помощью подписки на универсальную печать. Ресурс printConnector можно использовать для просмотра состояния соединителя и обновления свойств.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: ad4a8f733f39490bbf126d60fe193a664b06888a
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: c482d17cd702751f5f2cd2b8cff5e34166fb2075
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561775"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176905"
 ---
-# <a name="printconnector-resource-type"></a>тип ресурса printConnector
+# <a name="printconnector-resource-type"></a>Тип ресурса printConnector
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет соединители печати, зарегистрированные с помощью подписки универсальной печати. Ресурс printConnector можно использовать для просмотра состояния соединитетеля и обновления свойств.
+Представляет соединитель печати, зарегистрированный с помощью подписки на универсальную печать. Ресурс printConnector можно использовать для просмотра состояния соединителя и обновления свойств.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Перечисление соединителей](../api/print-list-connectors.md) | [printConnector](printconnector.md) | Извлечение списка соединитений печати. |
-| [Получение соединителя](../api/printconnector-get.md) | [printConnector](printconnector.md) | Ознакомьтесь с свойствами и отношениями объекта соединители. |
-| [Соединители обновления](../api/printconnector-update.md) | [printConnector](printconnector.md) | Обновление объекта соединители. |
-| [Удаление соединителя](../api/printconnector-delete.md) | Нет | Unregister the connector from the Universal Print service. |
+| [Перечисление соединителей](../api/print-list-connectors.md) | [printConnector](printconnector.md) | Получение списка соединителей печати. |
+| [Получение соединителя](../api/printconnector-get.md) | [printConnector](printconnector.md) | Чтение свойств и связей объекта соединителя. |
+| [Обновление соединителя](../api/printconnector-update.md) | [printConnector](printconnector.md) | Обновите объект соединителя. |
+| [Удаление соединителя](../api/printconnector-delete.md) | Нет | Отмените регистрацию соединителя в службе универсальной печати. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String| Только для чтения.|
-|displayName|Строка|Имя соединитетеля.|
-|fullyQualifiedDomainName|Строка|Имя хост-имени соединители.|
-|operatingSystem|String|Версия операционной системы соединитетеля.|
-|appVersion|Строка|Версия соединиттеля.|
-|deviceHealth|[deviceHealth](devicehealth.md)|Состояние устройства соединиттеля.|
-|расположение|[printerLocation](printerlocation.md)|Физическое и/или организационное расположение соединитетеля.|
-|registeredDateTime|DateTimeOffset|DateTimeOffset при регистрации соединитетеля.|
-|registeredBy|[userIdentity](useridentity.md)|Пользователь, зарегистрировавший соединители.|
+|displayName|Строка|Имя соединителя.|
+|fullyQualifiedDomainName|Строка|Имя узла компьютера соединителя.|
+|operatingSystem|String|Версия операционной системы компьютера соединителя.|
+|appVersion|Строка|Версия соединителя.|
+|deviceHealth|[deviceHealth](devicehealth.md)|Работоспособность устройства соединителя.|
+|расположение;|[printerLocation](printerlocation.md)|Физическое и (или) организационное расположение соединителя.|
+|registeredDateTime|DateTimeOffset|DateTimeOffset, когда был зарегистрирован соединитель.|
+|registeredBy|[userIdentity](useridentity.md)|Пользователь, зарегистрировавший соединитель.|
 
 ## <a name="json-representation"></a>Представление JSON
 

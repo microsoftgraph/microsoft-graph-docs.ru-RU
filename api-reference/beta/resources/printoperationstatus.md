@@ -1,42 +1,42 @@
 ---
-title: Тип ресурса Принтоператионстатус
-description: Представляет текущее состояние длительной универсальной операции печати.
+title: Тип ресурса printOperationStatus
+description: Представляет текущее состояние длительной операции универсальной печати.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 14c66cf59dc1715a16bd786657202a554d7c1753
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 79cc94a38335bede616ef57bc33db12db63a5664
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052553"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176655"
 ---
-# <a name="printoperationstatus-complex-type"></a>сложный тип Принтоператионстатус
+# <a name="printoperationstatus-complex-type"></a>Сложный тип printOperationStatus
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет текущее состояние длительной универсальной операции печати.
+Представляет текущее состояние длительной операции универсальной печати.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|state|принтоператионпроцессингстате|Текущее состояние обработки Принтоператион. Допустимые значения описаны в приведенной ниже таблице. Только для чтения.|
-|description|String|Удобное для человека описание текущего состояния обработки Принтоператион. Только для чтения.|
+|state|printOperationProcessingState|Текущее состояние обработки printOperation. Допустимые значения описаны в следующей таблице. Только для чтения.|
+|description|Строка|Понятное описание текущего состояния обработки printOperation. Только для чтения.|
 
-### <a name="printoperationprocessingstate-values"></a>значения Принтоператионпроцессингстате
+### <a name="printoperationprocessingstate-values"></a>Значения printOperationProcessingState
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notStarted|нуль|Операция еще не запущена.|
-|запускается|1 |Выполняется операция.|
-|закончил|2 |Операция успешно завершена.|
-|сбоев|4|Сбой операции.|
-|unknownFutureValue|4 |Значение Sentinel для перечисления расширяемые. Не следует использовать.|
+|notStarted|0|Операция еще не запущена.|
+|Запущена|1|Операция выполняется.|
+|Удалось|2|Операция успешно завершена.|
+|Сбой при|3|Сбой операции.|
+|unknownFutureValue|4|Значение sentinel для развиваемого перечисления. Не следует использовать.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

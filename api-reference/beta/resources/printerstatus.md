@@ -1,18 +1,18 @@
 ---
-title: тип ресурса printerStatus
+title: Тип ресурса printerStatus
 description: Представляет состояние обработки принтера, включая все ошибки.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 97462f4e2c7059eb857a382c4944da7b697ee363
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 4b405fe00ab7dfe0e3ce90e79b1e7a82607f012c
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508456"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176547"
 ---
-# <a name="printerstatus-resource-type"></a>тип ресурса printerStatus
+# <a name="printerstatus-resource-type"></a>Тип ресурса printerStatus
 
 Пространство имен: microsoft.graph
 
@@ -24,22 +24,22 @@ ms.locfileid: "59508456"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |state|printerProcessingState|Текущее состояние обработки. Допустимые значения описаны в следующей таблице. Только для чтения.|
-|details|коллекция printerProcessingStateDetail|Список сведений, описывающих, почему принтер находится в текущем состоянии. Допустимые значения описаны в следующей таблице. Только для чтения.|
-|description|String|Описание текущего состояния обработки принтера, считываемым человеком. Только для чтения.|
+|details|Коллекция printerProcessingStateDetail|Список сведений, описывающий, почему принтер находится в текущем состоянии. Допустимые значения описаны в следующей таблице. Только для чтения.|
+|description|Строка|Понятное для человека описание текущего состояния обработки принтера. Только для чтения.|
 
-### <a name="printerprocessingstate-values"></a>значения printerProcessingState
+### <a name="printerprocessingstate-values"></a>Значения printerProcessingState
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|0|Состояние обработки, о чем сообщает принтер, неизвестно.|
-|праздный|1 |Принтер простаивает и готов к приему новых заданий печати.|
-|обработка|2|В настоящее время принтер обрабатывает задание печати и обрабатывает все ожидающие задания по завершении.|
-|остановлено|3 |Принтер столкнулся с проблемой (например, закончились бумаги в активном лотке) и не может продолжить текущую работу печати до тех пор, пока проблема не будет устранена. Дополнительные **сведения см.** в  дополнительных сведениях о значении (s) или значении описания.|
-|unknownFutureValue|4 |Эволюционирующее значение sentinel. Не следует использовать.|
+|unknown|0|Состояние обработки, сообщаемое принтером, неизвестно.|
+|Простоя|1|Принтер неактивен и готов к приему новых заданий печати.|
+|Обработки|2|Принтер в настоящее время обрабатывает задание печати и будет обрабатывать все ожидающие задания по завершении.|
+|Остановился|3|На принтере возникла проблема (например, из-за того, что в активной области не печаталась бумага) и не удается продолжить текущее задание печати, пока проблема не будет устранена. Дополнительные **сведения см**. в сведениях о  значениях или описании.|
+|unknownFutureValue|4|Значение sentinel для развиваемого перечисления. Не следует использовать.|
 
-### <a name="printerprocessingstatedetail-values"></a>значения printerProcessingStateDetail
+### <a name="printerprocessingstatedetail-values"></a>Значения printerProcessingStateDetail
 
-[тип enum printerProcessingStateDetail](./printerprocessingstatedetail.md)
+[Тип перечисления printerProcessingStateDetail](./printerprocessingstatedetail.md)
 
 ## <a name="json-representation"></a>Представление JSON
 

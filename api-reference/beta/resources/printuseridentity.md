@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Принтусеридентити
-description: Представляет удостоверение пользователя в универсальной службе печати. Сопоставление с пользователем Azure AD.
+title: Тип ресурса printUserIdentity
+description: Представляет удостоверение пользователя в службе универсальной печати. Карты к Azure AD пользователя.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 8a695bed829d6c7e8825898da366737427195e1d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 50a73a6f08448d50ac616e82d15c046d52d63b83
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070662"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176305"
 ---
-# <a name="printuseridentity-resource-type"></a>Тип ресурса Принтусеридентити
+# <a name="printuseridentity-resource-type"></a>Тип ресурса printUserIdentity
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет удостоверение пользователя в универсальной службе печати. Сопоставляется с [пользователем Azure Active Directory (Azure AD)](user.md).
+Представляет удостоверение пользователя в службе универсальной печати. Карты пользователю Azure Active Directory [(Azure AD).](user.md)
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String|Идентификатор Принтусеридентити. Только для чтения.|
-|displayName|String|Отображаемое имя Принтусеридентити.|
-|ipAddress|String|IP-адрес Принтусеридентити. Не заполнено.|
-|userPrincipalName|String|Имя участника-пользователя Принтусеридентити (UPN).|
+|id|Строка|Идентификатор printUserIdentity. Только для чтения.|
+|displayName|Строка|Отображаемое имя printUserIdentity.|
+|ipAddress|String|IP-адрес printUserIdentity. Не заполнено.|
+|userPrincipalName|String|Имя участника-пользователя (UPN) printUserIdentity.|
 
 ## <a name="json-representation"></a>Представление JSON
 

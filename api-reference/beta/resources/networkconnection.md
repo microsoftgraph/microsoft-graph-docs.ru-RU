@@ -1,77 +1,78 @@
 ---
-title: тип ресурса networkConnection
+title: Тип ресурса networkConnection
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 author: preetikr
-ms.openlocfilehash: 2221f38c4ba8f8e71030d540985fb93f415bfa19
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 4e87cd2019f3dd4eeda73509857d34775017dd1b
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722113"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176826"
 ---
-# <a name="networkconnection-resource-type"></a>тип ресурса networkConnection
+# <a name="networkconnection-resource-type"></a>Тип ресурса networkConnection
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит сведения о сетевом подключении, связанном с оповещением.
+Содержит сведения о сетевом подключении, связанном с оповещением, с отслеживанием состояния.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|applicationName|String|Имя приложения, управляющего сетевым подключением (например, Facebook, SMTP и т.д.).|
-|destinationAddress|String|IP-адрес назначения (сетевого подключения).|
-|destinationDomain|String|Часть домена назначения URL-адреса. (например, "www.contoso.com").|
-|destinationLocation|String|Расположение (сопоставление IP-адресов), связанное с назначением сетевого подключения.|
-|destinationPort|String|Порт назначения (сетевого подключения).|
-|destinationUrl|String|Строка URL-адрес/строка URI сетевого подключения без учета параметров. (например, www.contoso.com/products/default.html')|
+|applicationName|String|Имя приложения, управляющего сетевым подключением (например, Facebook, SMTP и т. д.).|
+|destinationAddress|Строка|IP-адрес назначения (сетевого подключения).|
+|destinationDomain|Строка|Часть целевого домена в URL-адресе назначения. (например, "www.contoso.com").|
+|destinationLocation|Строка|Расположение (по сопоставлению IP-адресов), связанное с назначением сетевого подключения.|
+|destinationPort|Строка|Порт назначения (сетевого подключения).|
+|destinationUrl|Строка|Строка URL-адреса или URI сетевого подключения за исключением параметров. (например, "www.contoso.com/products/default.html")|
 |direction|connectionDirection|Направление сетевого подключения. Возможные значения: `unknown`, `inbound`, `outbound`.|
-|domainRegisteredDateTime|DateTimeOffset|Дата регистрации домена назначения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|localDnsName|String|Локальное разрешение имен DNS, как оно отображается в локальном DNS-кэше хоста (например, в случае, если файл "хост" был подделан).|
-|natDestinationAddress|String|IP-адрес назначения перевода сетевого адреса.|
-|natDestinationPort|String|Порт назначения перевода сетевых адресов.|
-|natSourceAddress|String|IP-адрес источника перевода сетевого адреса.|
-|natSourcePort|String|Порт источника перевода сетевых адресов.|
-|протокол|securityNetworkProtocol|Сетевой протокол. Возможные значения: `unknown` `ip` , , `icmp` `igmp` `ggp` `ipv4` `tcp` `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader` , `ipv6FragmentHeader` `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd` `raw` `ipx` `spx` `spxII` .|
-|riskScore|String|Оценка риска сетевого подключения поставщика сгенерирована и рассчитана. Рекомендуемый диапазон значений 0-1, который приравнивается к проценту.|
-|sourceAddress|String|IP-адрес источника (то есть происхождения) (сетевого подключения).|
-|sourceLocation|String|Расположение (по сопоставлению IP-адресов), связанное с источником сетевого подключения.|
-|sourcePort|String|Ip-порт source (то есть происхождение) (сетевого подключения).|
+|domainRegisteredDateTime|DateTimeOffset|Дата регистрации целевого домена. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|localDnsName|Строка|Локальное разрешение DNS-имен, которое отображается в локальном кэше DNS узла (например, в случае незаконного изменения файла hosts).|
+|natDestinationAddress|Строка|IP-адрес назначения преобразования сетевых адресов.|
+|natDestinationPort|Строка|Порт назначения преобразования сетевых адресов.|
+|natSourceAddress|Строка|IP-адрес источника преобразования сетевых адресов.|
+|natSourcePort|Строка|Исходный порт преобразования сетевых адресов.|
+|Протокол|securityNetworkProtocol|Сетевой протокол. Возможные значения: `unknown`, , `ip``icmp`, , `igmp`, `ggp`, `ipv4`, `tcp``pup`, `udp``idp``ipv6RoutingHeader``ipv6`, `icmpV6``ipv6FragmentHeader``ipSecEncapsulatingSecurityPayload``ipSecAuthenticationHeader``ipv6NoNextHeader`, , `ipv6DestinationOptions`, , `nd`, `raw`, `ipx`, . `spx``spxII`|
+|riskScore|Строка|Созданная поставщиком или вычисляемая оценка риска сетевого подключения. Рекомендуемый диапазон значений — 0–1, что соответствует проценту.|
+|sourceAddress|Строка|Исходный (например, исходный) IP-адрес (сетевого подключения).|
+|sourceLocation|Строка|Расположение (по сопоставлению IP-адресов), связанное с источником сетевого подключения.|
+|sourcePort|Строка|Исходный (например, исходный) IP-порт (сетевого подключения).|
 |status|connectionStatus|Состояние сетевого подключения. Возможные значения: `unknown`, `attempted`, `succeeded`, `blocked`, `failed`.|
-|urlParameters|String|Параметры (суффикс) URL-адреса назначения.|
+|urlParameters|String|Параметры (суффикс) целевого URL-адреса.|
 
-### <a name="securitynetworkprotocol-values"></a>значения securityNetworkProtocol
+### <a name="securitynetworkprotocol-values"></a>Значения securityNetworkProtocol
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|-1|Неизвестный протокол.|
-|IP|0|Протокол Интернета.|
-|icmp|1| Протокол сообщений управления Интернетом.|
-|igmp|2 | Протокол управления интернет-группой.|
-|ggp|3 | Протокол Gateway to Gateway.|
-|ipv4|4 | Версия 4 протокола Интернета.|
+|unknown|–1|Неизвестный протокол.|
+|Ip|0|Протокол Интернета.|
+|Icmp|1| Протокол сообщений управления Интернетом.|
+|Igmp|2| Протокол управления интернет-группой.|
+|Ggp|3| Протокол шлюза к шлюзу.|
+|ipv4|4| Протокол Интернета версии 4.|
 |tcp|6 | Протокол управления передачей.|
-|pup|12 | Универсальный протокол пакетов PARC.|
-|udp|17 | Протокол пользовательской datagram.|
-|idp|22| Протокол Internet Datagram.|
-|ipv6|41| Версия 6 протокола Интернета (ipv6).|
-|ipv6RoutingHeader|43| загодер маршрутивки ipv6.|
-|ipv6FragmentHeader|44| Заглавная часть ipv6.|
-|ipSecEncapsulatingSecurityPayload|50| ipv6 Encapsulating Security Payload header.|
-|ipSecAuthenticationHeader|51| загона проверки подлинности ipv6.|
-|icmpV6|58| Протокол сообщения управления Интернетом для ipv6.|
-|ipv6NoNextHeader|59| ipv6 Нет следующего загона.|
-|ipv6DestinationOptions|60| заглавная головка вариантов назначения ipv6.|
-|nd|77| Протокол чистого диска (неофициальный).|
-|raw|255| Необработанные протоколы пакетов IP.|
-|ipx|1000| Протокол обмена пакетами в Интернете.|
-|spx|1256| Секвенный протокол Exchange пакетов.|
-|spxII|1257| Секвенсорный протокол Exchange пакетов версии 2.|
+|Pup|12 | Универсальный протокол пакетов PARC.|
+|Udp|17 | Протокол датаграммы пользователя.|
+|Idp|22| Протокол internet Datagram.|
+|ipv6|41| Internet Protocol version 6 (ipv6).|
+|ipv6RoutingHeader|43| Заголовок маршрутизации ipv6.|
+|ipv6FragmentHeader|44| Заголовок фрагмента ipv6.|
+|ipSecEncapsulatingSecurityPayload|50| Инкапсуляция заголовка полезных данных безопасности ipv6.|
+|IpSecAuthenticationHeader|51| Заголовок проверки подлинности ipv6.|
+|icmpV6|58| Протокол сообщений управления Интернетом для ipv6.|
+|ipv6NoNextHeader|59| ipv6 Без следующего заголовка.|
+|ipv6DestinationOptions|60| Заголовок параметров назначения ipv6.|
+|Nd|77| Протокол net Disk (неформальная версия).|
+|Сырой|255| Необработанный протокол IP-пакетов.|
+|Ipx|1000| Протокол Exchange пакетов Интернета.|
+|Spx|1256| Протокол виртуализации Exchange пакетов.|
+|spxII|1257| Протокол sequenced Packet Exchange версии 2.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -1,39 +1,39 @@
 ---
-title: Тип ресурса Принтеркреатеоператион
-description: Представляет длительную операцию регистрации принтеров. Производный от Принтоператион.
+title: Тип ресурса printerCreateOperation
+description: Представляет долго выполняющуюся операцию регистрации принтера. Является производным от printOperation.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 3ae18e201f5b768de9cc1456de186fdd6b9336b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 716c23603dd811ddad61dd604c9961d1df3f5297
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048857"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176533"
 ---
-# <a name="printercreateoperation-resource-type"></a>Тип ресурса Принтеркреатеоператион
+# <a name="printercreateoperation-resource-type"></a>Тип ресурса printerCreateOperation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет длительную операцию регистрации принтеров. Производный от [принтоператион](printoperation.md).
+Представляет долго выполняющуюся операцию регистрации принтера. Является производным [от printOperation](printoperation.md).
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение операции](../api/printoperation-get.md) | [printOperation](printoperation.md) | Получение длительной операции в текущем пользователе или клиенте приложения. |
+| [Операция Get](../api/printoperation-get.md) | [printOperation](printoperation.md) | Получение длительной операции в клиенте текущего пользователя или приложения. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|Строка|Идентификатор операции. Только для чтения.|
-|status|[printOperationStatus](printoperationstatus.md)|Состояние операции регистрации. Содержит ход выполнения операции, а также сведения о ее успешном выполнении. Только для чтения.|
-|createdDateTime|DateTimeOffset|Значение DateTimeOffset при создании операции. Только для чтения.|
-|certificate|String|Подписанный сертификат, созданный в процессе регистрации. Только для чтения.|
-|Printer|[Printer](printer.md)|Созданная сущность принтера. Только для чтения.|
+|status|[printOperationStatus](printoperationstatus.md)|Состояние операции регистрации. Содержит ход выполнения операции и ее успешное выполнение. Только для чтения.|
+|createdDateTime|DateTimeOffset|DateTimeOffset при создании операции. Только для чтения.|
+|certificate|String|Подписанный сертификат, созданный во время регистрации. Только для чтения.|
+|Принтера|[printer](printer.md)|Созданная сущность принтера. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

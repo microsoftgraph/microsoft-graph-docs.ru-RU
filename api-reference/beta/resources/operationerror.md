@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Оператионеррор
-description: Описание ошибок в Теамсасинкоператион.
-localization_priority: Normal
+title: Тип ресурса operationError
+description: Описание ошибок в teamsAsyncOperation.
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: teamwork
 author: billbliss
-ms.openlocfilehash: d3511979cc03df496a8c12f948ddd728e3cd0c19
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3634e55dca6328b40a9d21577183e8a5616c53f8
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998523"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176509"
 ---
-# <a name="operationerror-resource-type"></a>Тип ресурса Оператионеррор
+# <a name="operationerror-resource-type"></a>Тип ресурса operationError
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описание ошибок в [теамсасинкоператион](teamsasyncoperation.md).
+Описание ошибок в [teamsAsyncOperation](teamsasyncoperation.md).
 
-## <a name="operationerror-properties"></a>Свойства Оператионеррор
+## <a name="operationerror-properties"></a>Свойства operationError
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |code|string (только для чтения)|Код ошибки операции.|

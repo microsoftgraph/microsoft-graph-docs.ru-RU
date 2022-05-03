@@ -1,41 +1,41 @@
 ---
-title: тип ресурса процесса
-description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-localization_priority: Normal
+title: Тип ресурса process
+description: Содержит сведения о процессе, связанном с оповещением, с отслеживанием состояния.
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: db832c64fb62e6c5f72f49b1e147d8d7f282834f
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 262ad1946bed87c47693b034ca8590bfad754c1f
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722274"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176318"
 ---
-# <a name="process-resource-type"></a>тип ресурса процесса
+# <a name="process-resource-type"></a>Тип ресурса process
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит сведения о процессе, связанном с оповещением.
+Содержит сведения о процессе, связанном с оповещением, с отслеживанием состояния.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|accountName|String|Идентификатор учетной записи пользователя (контекст учетной записи пользователя, в котором был указан процесс), например, Имя учетной записи, SID и так далее.|
-|commandLine|String|Командная линия полного призыва процесса, включая все параметры.|
-|createdDateTime|DateTimeOffset|Время начала процесса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|fileHash|[fileHash](filehash.md)|Сложный тип, содержащий хеши файлов (криптографические и чувствительные к расположению).|
+|Accountname|Строка|Идентификатор учетной записи пользователя (контекст учетной записи пользователя, в которой выполнялся процесс), например AccountName, SID и т. д.|
+|commandLine|String|Полная командная строка вызова процесса, включая все параметры.|
+|createdDateTime|DateTimeOffset|Время запуска процесса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|fileHash|[fileHash](filehash.md)|Сложный тип, содержащий хэши файлов (криптографические и с учетом расположения).|
 |integrityLevel|processIntegrityLevel|Уровень целостности процесса. Возможные значения: `unknown`, `untrusted`, `low`, `medium`, `high`, `system`.|
-|isElevated|Логический|True, если процесс повышен.|
-|name|String|Имя файла Image процесса.|
-|parentProcessCreatedDateTime|DateTimeOffset|DateTime, на котором был запущен родительский процесс. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|parentProcessId|Int32|ID процесса (PID) родительского процесса.|
-|parentProcessName|String|Имя файла изображений родительского процесса.|
+|isElevated|Логическое|Значение true, если процесс имеет повышенные привилегии.|
+|name|String|Имя файла образа процесса.|
+|parentProcessCreatedDateTime|DateTimeOffset|Дата и время начала родительского процесса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|parentProcessId|Int32|Идентификатор (PID) родительского процесса.|
+|parentProcessName|Строка|Имя файла изображения родительского процесса.|
 |path|String|Полный путь, включая имя файла.|
-|processId|Int32|ID процесса (PID) процесса.|
+|processId|Int32|Идентификатор процесса (PID) процесса.|
 
 ## <a name="json-representation"></a>Представление JSON
 

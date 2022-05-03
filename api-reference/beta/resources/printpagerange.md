@@ -1,30 +1,30 @@
 ---
-title: тип ресурса printPageRange
-description: Указывает диапазон страниц, которые будут напечатаны.
+title: Тип ресурса printPageRange
+description: Указывает диапазон страниц для печати.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 229b13a398a01412a7c85e1df954dcddffb2ed9c
-ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
+ms.openlocfilehash: a8bd855bc4b7d561d9157923d7ce3ace8323b899
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "60354737"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176890"
 ---
-# <a name="printpagerange-resource-type"></a>тип ресурса printPageRange
+# <a name="printpagerange-resource-type"></a>Тип ресурса printPageRange
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Указывает диапазон страниц, которые будут напечатаны.
+Указывает диапазон страниц для печати.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|startPage|Int32|Стартовая страница (включительно) для диапазона. Только для чтения.|
-|endPage|Int32|End page (включительно) для диапазона. Только для чтения.|
+|Начальная страница|Int32|Начальная страница (включительно) для диапазона. Только для чтения.|
+|endPage|Int32|Конечная страница (включительно) для диапазона. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

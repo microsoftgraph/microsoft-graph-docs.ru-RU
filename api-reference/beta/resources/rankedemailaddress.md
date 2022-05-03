@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Ранкедемаиладдресс
-description: Представляет ранжированный адрес электронной почты.
-localization_priority: Normal
+title: Тип ресурса rankedEmailAddress
+description: Представляет ранжированные адреса электронной почты.
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: mail
 author: AAmatino
-ms.openlocfilehash: 36215d545bb6d24fae4ef8cbca35a1c5210976bf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2723009cc44680e98b9c8b5a685c06846bb9abd7
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026409"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176314"
 ---
-# <a name="rankedemailaddress-resource-type"></a>Тип ресурса Ранкедемаиладдресс
+# <a name="rankedemailaddress-resource-type"></a>Тип ресурса rankedEmailAddress
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ранжированный адрес электронной почты.
+Представляет ранжированные адреса электронной почты.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |address|string|Адрес электронной почты.|
-|rank|double|Ранг адреса электронной почты. В качестве ключа сортировки используется ранг, связанный с другими возвращенными результатами. Более высокое значение соответствует более актуальному результату. Релевантность определяется сигналами связи, сотрудничества и рабочих отношений.|
+|rank|double|Ранг адреса электронной почты. Ранг используется в качестве ключа сортировки относительно других возвращаемых результатов. Более высокое значение соответствует более актуальному результату. Релевантность определяется сигналами связи, сотрудничества и рабочих отношений.|
 
 ## <a name="json-representation"></a>Представление JSON
 

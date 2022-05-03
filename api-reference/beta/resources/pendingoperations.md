@@ -1,19 +1,19 @@
 ---
-title: пендингоператионс
-description: Ресурс Пендингоператионс указывает, что одна или несколько операций, которые могут повлиять на состояние driveItem, ожидают завершения.
-localization_priority: Normal
+title: pendingOperations
+description: Ресурс pendingOperations указывает, что одна или несколько операций, которые могут повлиять на состояние driveItem, ожидают завершения.
+ms.localizationpriority: medium
 author: JeremyKelley
 ms.date: 08/06/2019
-ms.prod: ''
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: b7b5d162bfcc9cccdfc7a2ea769e4ea39272e2d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6cf3903a99405dbcbdf83f26da053030e46dbb9e
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998097"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176538"
 ---
-# <a name="pendingoperations-resource-type"></a>Тип ресурса Пендингоператионс
+# <a name="pendingoperations-resource-type"></a>Тип ресурса pendingOperations
 
 Пространство имен: microsoft.graph
 
@@ -25,7 +25,7 @@ ms.locfileid: "47998097"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|пендингконтентупдате|[пендингконтентупдате](pendingcontentupdate.md)|Свойство, указывающее на то, что операция, которая может обновить двоичный контент файла, ожидает завершения.|
+|pendingContentUpdate|[pendingContentUpdate](pendingcontentupdate.md)|Свойство, указывающее, что операция, которая может обновить двоичное содержимое файла, ожидает завершения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

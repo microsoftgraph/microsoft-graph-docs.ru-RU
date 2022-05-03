@@ -5,13 +5,13 @@ ms.date: 09/14/2017
 title: RenameAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 3f7d9e7dad20ff8c03e0135cfe90928561fede51
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: files
+ms.openlocfilehash: 01ffdffff58b6e7d3592cfa6493d17c3d8649efc
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723765"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176866"
 ---
 # <a name="renameaction-resource-type"></a>Тип ресурса RenameAction
 
@@ -43,7 +43,7 @@ ms.locfileid: "63723765"
 | Свойство | Тип   | Описание                    |
 | :------- | :----- | :----------------------------- |
 | oldName  | string | Предыдущее имя элемента. |
-| newName  | string | Новое имя элемента.      |
+| Newname  | string | Новое имя элемента.      |
 
 ## <a name="remarks"></a>Замечания
 

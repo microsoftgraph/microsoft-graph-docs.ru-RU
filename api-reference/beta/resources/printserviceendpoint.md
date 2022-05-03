@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса Принтсервицеендпоинт
-description: Представляет URI и идентификационные данные для экземпляра службы печати.
+title: Тип ресурса printServiceEndpoint
+description: Представляет универсальный код ресурса (URI) и идентифицирует сведения для экземпляра службы печати.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 8b9289807778c1a44940d8e8eb0d9163ed12f006
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3c5d9085614b4c4ad99aa43cb8281a3123eb3741
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985862"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176751"
 ---
-# <a name="printserviceendpoint-resource-type"></a>Тип ресурса Принтсервицеендпоинт
+# <a name="printserviceendpoint-resource-type"></a>Тип ресурса printServiceEndpoint
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет URI и идентификационные данные для экземпляра службы печати.
+Представляет универсальный код ресурса (URI) и идентифицирует сведения для экземпляра службы печати.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение конечной точки](../api/printserviceendpoint-get.md) | [принтсервицеендпоинт](printserviceendpoint.md) | Считывание свойств и связей объекта Endpoint. |
+| [Получение конечной точки](../api/printserviceendpoint-get.md) | [printServiceEndpoint](printserviceendpoint.md) | Чтение свойств и связей объекта конечной точки. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Понятное для пользователя отображаемое имя для конечной точки.|
-|name|String|Уникальное имя, идентифицирующее службу, которую предоставляет конечная точка. Возможные значения: `discovery` (служба обнаружения), `notification` (служба уведомлений), `ipp` (Служба протокола IPP) и `registration` (служба регистрации). Только для чтения.|
-|URI|String|Универсальный код ресурса (URI), который можно использовать для доступа к службе.|
+|displayName|Строка|Понятное для человека отображаемое имя конечной точки.|
+|name|String|Уникальное имя, определяющее службу, которую предоставляет конечная точка. Возможные значения: `discovery` (служба обнаружения), `notification` (служба уведомлений), `ipp` (служба IPP) и `registration` (служба регистрации). Только для чтения.|
+|Uri|Строка|Универсальный код ресурса (URI), который можно использовать для доступа к службе.|
 
 ## <a name="json-representation"></a>Представление JSON
 
