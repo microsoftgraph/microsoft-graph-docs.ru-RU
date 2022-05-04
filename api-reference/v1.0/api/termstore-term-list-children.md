@@ -1,21 +1,21 @@
 ---
 title: Список дочерних элементов
-description: Получите условия из свойства навигации для детей.
+description: Получение терминов из свойства навигации дочерних элементов.
 author: vishriv
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.openlocfilehash: fbaede0e9c9233ed536805b3101976054b722470
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ab871eef76bfce88435c6a3539d39477b445c2b8
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091624"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191776"
 ---
 # <a name="list-children"></a>Список дочерних элементов
 Пространство имен: microsoft.graph.termStore
 
-Получите детей первого уровня набора [или] ресурса [терминов] с помощью свойства навигации для детей.
+Получение дочерних элементов первого уровня ресурса [набора] [или термина с] помощью свойства навигации дочерних элементов.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,12 +45,12 @@ GET sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного решения этот метод возвращает код ответа и коллекцию объектов `200 OK` [microsoft.graph.termStore.term](../resources/termstore-term.md) в тексте ответа.
+В случае успешного выполнения этот `200 OK` метод возвращает код отклика и коллекцию объектов [microsoft.graph.termStore.term](../resources/termstore-term.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -123,7 +123,7 @@ Content-Type: application/json
 }
 ```
 
-[термин]: ../resources/termstore-term.md
+[Термин]: ../resources/termstore-term.md
 [set]: ../resources/termstore-set.md
 
 <!--

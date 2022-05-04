@@ -1,21 +1,21 @@
 ---
 title: Удалить набор
-description: Удаление объекта набора.
+description: Удаление объекта set.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: bbe0d4a5b022ae737c6261e484e1c7c2fa91b216
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5ab2105011d8c29b758b9d62e7169be85a4d2fdf
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104393"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191762"
 ---
 # <a name="delete-set"></a>Удалить набор
 Пространство имен: microsoft.graph.termStore
 
-Удаление объекта [набора.](../resources/termstore-set.md)
+Удаление объекта [set](../resources/termstore-set.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,7 +42,7 @@ DELETE sites/{site-id}/termStore/sets/{set-id}
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

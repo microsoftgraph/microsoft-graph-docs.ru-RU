@@ -1,22 +1,22 @@
 ---
 title: Обновление объектов secureScoreControlProfile
-description: Обновление редактируемого объекта secureScoreControlProfile в рамках любого интегрированного решения для изменения различных свойств, таких как назначеноTo или tenantNote.
+description: Обновите редактируемый объект secureScoreControlProfile в любом интегрированном решении, чтобы изменить различные свойства, такие как assignedTo или tenantNote.
 author: preetikr
 ms.localizationpriority: medium
-ms.prod: ''
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 100922582d5ef9fcea94fde1d164c78fb703f6e0
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d18d90b8f6d7ad6cfaebc4bff8bba008d0100e5f
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62088095"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191656"
 ---
 # <a name="update-securescorecontrolprofile"></a>Обновление объектов secureScoreControlProfile
 
 Пространство имен: microsoft.graph
 
-Обновление редактируемого объекта **secureScoreControlProfile** в рамках любого интегрированного решения, чтобы изменить различные свойства, например **назначеноTo** или **tenantNote.**
+Обновите редактируемый **объект secureScoreControlProfile** в любом интегрированном решении, чтобы изменить различные свойства, такие как **assignedTo** **или tenantNote**.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,30 +40,30 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {код}. Обязательно.|
+| Авторизация  | Носитель {code}. Обязательно.|
 |Prefer | return=representation. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON значений для соответствующих полей, которые должны быть обновлены. Тело должно **содержать** свойство `vendorInformation` с допустимым и `provider` `vendor` полями. В следующей таблице перечислены поля, которые можно обновить для **secureScoreControlProfile.** Значения для существующих свойств, не включенных в тело запроса, не изменятся. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+В тексте запроса добавьте представление значений для соответствующих полей, которые необходимо обновить, в формате JSON. Текст должен **содержать** свойство с `vendorInformation` допустимыми полями `vendor` `provider`. В следующей таблице перечислены поля, которые можно обновить для **secureScoreControlProfile**. Значения существующих свойств, не включенных в текст запроса, не изменяются. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|assignedTo|String|Имя аналитика, на который назначен контроль для выполнения, выполнения или устранения.|
-|comment|String|Аналитик комментирует управление (для управления клиентом).|
-|state| String|Параметр управления, управляемый аналитиком. Возможные значения: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
-| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Сложный тип, содержащий сведения о поставщике продуктов и служб безопасности, поставщике и подпрограмме (например, поставщик=Microsoft; provider=SecureScore;). **Требуются поля поставщика и поставщика.** |
+|assignedTo|String|Имя аналитика, назначенного элементу управления для рассмотрения, реализации или исправления.|
+|comment|String|Комментарии аналитика к элементу управления (для управления клиентом).|
+|state| String|Управляемый аналитиком параметр элемента управления. Возможные значения: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
+| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Сложный тип, содержащий сведения о поставщике продукта или службы безопасности, поставщике и субпроидере (например, vendor=Microsoft; provider=SecureScore;). **Поля поставщика и поставщика являются обязательными.** |
 
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
-Если используется необязательный заголовок запроса, метод возвращает код ответа и обновленный объект `200 OK` [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) в теле ответа.
+Если используется необязательный заголовок запроса, `200 OK` метод возвращает код отклика и обновленный объект [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
-### <a name="example-1-request-without-prefer-header"></a>Пример 1. Запрос без загона Prefer
+### <a name="example-1-request-without-prefer-header"></a>Пример 1. Запрос без заголовка Prefer
 
 ### <a name="request"></a>Запрос
 
@@ -130,11 +130,11 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-request-with-prefer-header"></a>Пример 2. Запрос с помощью загона Prefer
+### <a name="example-2-request-with-prefer-header"></a>Пример 2. Запрос с заголовком Prefer
 
 #### <a name="request"></a>Запрос
 
-В следующем примере показан запрос, который включает заглавную `Prefer` головку запроса.
+В следующем примере показан запрос, содержащий заголовок `Prefer` запроса.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -184,7 +184,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приводится пример ответа, когда используется необязательный `Prefer: return=representation` заглавной запрос.
+Ниже приведен пример ответа при использовании необязательного `Prefer: return=representation` заголовка запроса.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

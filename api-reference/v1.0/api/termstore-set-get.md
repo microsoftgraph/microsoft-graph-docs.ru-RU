@@ -1,21 +1,21 @@
 ---
-title: Набор
-description: Ознакомьтесь с свойствами и отношениями установленного объекта.
+title: Получить набор
+description: Чтение свойств и связей задавного объекта.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 018138dca5d031ec2f19a1b8b43800c4c957b226
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 51a7cf724021925a1d4273b8f523d744f02c2c53
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128343"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191734"
 ---
-# <a name="get-set"></a>Набор
+# <a name="get-set"></a>Получить набор
 Пространство имен: microsoft.graph.termStore
 
-Ознакомьтесь с свойствами и отношениями [установленного](../resources/termstore-set.md) объекта.
+Чтение свойств и связей [задавного](../resources/termstore-set.md) объекта.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,12 +46,12 @@ GET sites/{site-id}/termStore/sets/{set-id}
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект microsoft.graph.termStore.set](../resources/termstore-set.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [microsoft.graph.termStore.set](../resources/termstore-set.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

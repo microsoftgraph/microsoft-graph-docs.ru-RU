@@ -1,21 +1,21 @@
 ---
-title: Получить термин
-description: Ознакомьтесь с свойствами и отношениями объекта терминов.
+title: Получение термина
+description: Чтение свойств и связей объекта термина.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 8e44d984a64506461ee42699adb73542e2be38fd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 524dac81c9b416a2cd338ee0d98222e92bfa248b
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62087619"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191410"
 ---
-# <a name="get-term"></a>Получить термин
+# <a name="get-term"></a>Получение термина
 Пространство имен: microsoft.graph.termStore
 
-Ознакомьтесь с свойствами и отношениями объекта [терминов.](../resources/termstore-term.md)
+Чтение свойств и связей объекта [термина](../resources/termstore-term.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,12 +46,12 @@ GET sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика и `200 OK` [объект microsoft.graph.termStore.term](../resources/termstore-term.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [microsoft.graph.termStore.term](../resources/termstore-term.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

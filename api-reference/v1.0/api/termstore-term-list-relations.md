@@ -1,21 +1,21 @@
 ---
-title: Отношения списка
-description: Получите отношения из свойства навигации отношений.
+title: Перечисление связей
+description: Получение связей из свойства навигации связей.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: b4634f82d813d6a8add04f818f02c4ca5c5cf8e4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3ec4e7e0caa4c765b67445883cacb6eac6ecb722
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128287"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191389"
 ---
-# <a name="list-relations"></a>Отношения списка
+# <a name="list-relations"></a>Перечисление связей
 Пространство имен: microsoft.graph.termStore
 
-Получите другое отношение термина [или] набора [из] свойства навигации отношений.
+Получение разных связей термина [или] набора [из] свойства навигации связей.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,12 +46,12 @@ GET sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/relations
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [microsoft.graph.termStore.relation](../resources/termstore-relation.md) в тексте ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов [microsoft.graph.termStore.relation](../resources/termstore-relation.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -119,7 +119,7 @@ Content-Type: application/json
 
 
 [set]: ../resources/termstore-set.md
-[термин]: ../resources/termstore-term.md
+[Термин]: ../resources/termstore-term.md
 [microsoft.graph.termStore.relation]: ../resources/termstore-relation.md
 
 

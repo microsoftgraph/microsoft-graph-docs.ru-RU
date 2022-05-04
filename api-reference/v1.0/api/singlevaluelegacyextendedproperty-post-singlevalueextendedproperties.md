@@ -3,14 +3,14 @@ title: Создание однозначного расширенного сво
 description: 'Создайте одно или несколько свойств с одним значением в новом или существующем экземпляре ресурса. '
 ms.localizationpriority: medium
 author: abheek-das
-ms.prod: ''
+ms.prod: non-product-specific
 doc_type: apiPageType
-ms.openlocfilehash: ba741a172d8c93616626c4848cb6f8e2793155b4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 42b688ccb6e83d12ebf1b487791fd2941f02986e
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085086"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191691"
 ---
 # <a name="create-single-value-extended-property"></a>Создание однозначного расширенного свойства
 
@@ -36,9 +36,9 @@ ms.locfileid: "59085086"
 Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md).
 
 ## <a name="permissions"></a>Разрешения
-В зависимости от ресурса, в который вы создаете расширенное свойство, и типа разрешений (делегирован или приложения), запрашиваемого вами, разрешение, указанное в следующей таблице, является минимальным, требуемого для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от ресурса, в который вы создаете расширенное свойство, и запрашиваемого типа разрешений (делегированного или приложения), разрешение, указанное в следующей таблице, является минимальным, необходимым для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
@@ -119,7 +119,7 @@ PATCH /groups/{id}/events/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Значение |
 |:---------------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -129,7 +129,7 @@ PATCH /groups/{id}/events/{id}
 |Свойство|Тип|Описание|
 |:-----|:-----|:-----|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| Массив из одного или нескольких расширенных свойств с одним значением. |
-|id|Строка|Чтобы идентифицировать свойства в коллекции **singleValueExtendedProperties**, для каждого из них укажите этот параметр. Свойство должно быть одного из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный параметр.|
+|id|String|Чтобы идентифицировать свойства в коллекции **singleValueExtendedProperties**, для каждого из них укажите этот параметр. Свойство должно быть одного из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный параметр.|
 |значение|string|Для каждого свойства из коллекции **singleValueExtendedProperties** следует указать значение. Обязательный параметр.|
 
 При создании расширенного свойства в _новом_ экземпляре ресурса, помимо новой коллекции **singleValueExtendedProperties**, нужно указать описание этого экземпляра ресурса (то есть [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md) и т. д.) в формате JSON.

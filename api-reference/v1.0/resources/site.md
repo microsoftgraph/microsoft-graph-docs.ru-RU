@@ -5,12 +5,12 @@ description: Ресурс site предоставляет метаданные �
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 030edb54913db91f1ff69b3e8589addeae60ba95
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2eef3e7f3e46d28fe848b5693329e967c05a9a54
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134120"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191473"
 ---
 # <a name="site-resource-type"></a>Тип ресурса site
 
@@ -37,6 +37,7 @@ ms.locfileid: "62134120"
 | [Создание разрешений][]         | POST /sites/{site-id}/permissions
 | [Удаление разрешения][]         | DELETE /sites/{site-id}/permissions/{permission-id}
 | [Обновление разрешения][]         | PATCH /sites/{site-id}/permissions/{permission-id}
+| [Операции со списком](../api/site-list-operations.md)|Коллекция [richLongRunningOperation](../resources/richlongrunningoperation.md)|Получите список [длительных операций](../resources/richlongrunningoperation.md) связанных с [сайтом](../resources/site.md).
 
 [Получение сайта]: ../api/site-get.md
 [Получение корневого сайта]: ../api/site-get.md
@@ -94,6 +95,7 @@ ms.locfileid: "62134120"
 | **items**         | Collection([baseItem][])                         | Используется для адресации любого элемента на этом сайте. Перечисление этой коллекции невозможно.
 | **lists**         | Collection([list][])                             | Коллекция списков на этом сайте.
 | **onenote**       | [onenote][]                                      | Вызывает службу OneNote для выполнения операций, связанных с записными книжками.
+| **operations**    | Коллекция [richLongRunningOperation](../resources/richlongrunningoperation.md) | Коллекция длительных операций на сайте.
 | **permissions**   | Collection([permission][])                       | Разрешения, связанные с сайтом. Допускается значение NULL.
 | **sites**         | Collection([site][])                             | Коллекция дочерних сайтов этого сайта.
 | **termStore**     | [microsoft.graph.termStore.store]                | TermStore по умолчанию на этом сайте.
@@ -148,6 +150,7 @@ ms.locfileid: "62134120"
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
+  "operations": [ { "@odata.type": "microsoft.graph.richLongRunningOperation" }],
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],

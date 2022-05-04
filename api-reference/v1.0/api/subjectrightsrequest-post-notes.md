@@ -1,21 +1,21 @@
 ---
 title: Создание authoredNote
-description: Создание нового объекта authoredNote.
+description: Создайте объект authoredNote.
 author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: b8b34d6041ca63f696a879ae237b9ffe324fc393
-ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
+ms.openlocfilehash: b5b92bdde3aa98f78a2bcccdbd0709b446a68441
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61403150"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191720"
 ---
 # <a name="create-authorednote"></a>Создание authoredNote
 Пространство имен: microsoft.graph
 
-Создание нового [объекта authoredNote.](../resources/authorednote.md)
+Создайте объект [authoredNote](../resources/authorednote.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,7 +24,7 @@ ms.locfileid: "61403150"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|SubjectRightsRequest.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|Не поддерживается|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,22 +43,24 @@ POST /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [authoredNote.](../resources/authorednote.md)
+В тексте запроса добавьте представление объекта [authoredNote](../resources/authorednote.md) в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании [authoredNote.](../resources/authorednote.md)
+В следующей таблице показаны свойства, необходимые при создании [authoredNote](../resources/authorednote.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|content|[microsoft.graph.itemBody](../resources/itembody.md)|Содержимое заметки для запроса|
+|content|[microsoft.graph.itemBody](../resources/itembody.md)|Содержимое заметки для запроса.|
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект authoredNote](../resources/authorednote.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [authoredNote](../resources/authorednote.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -100,9 +102,10 @@ Content-Type: application/json
 
 ---
 
-
-
 ### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

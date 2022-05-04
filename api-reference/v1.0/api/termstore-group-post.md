@@ -1,21 +1,21 @@
 ---
-title: Создание группы
-description: Создание нового группового объекта в магазине терминов.
+title: Создание группы termStore
+description: Создайте объект группы в хранилище терминов.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: ff08b50016ff40065ec09c462f6f14bd6d8face4
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: b8bd550ea4d310099385a6cb9b522250db273612
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947453"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191783"
 ---
 # <a name="create-termstore-group"></a>Создание группы termStore
 Пространство имен: microsoft.graph.termStore
 
-Создание нового [группового](../resources/termstore-group.md) объекта в магазине терминов.
+Создайте объект [группы](../resources/termstore-group.md) в хранилище терминов.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,17 +46,17 @@ POST sites/{site-id}/termStore/groups
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте описание объекта [group](../resources/termstore-group.md) в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании [группового](../resources/termstore-group.md) объекта.
+В следующей таблице показаны свойства, необходимые при создании [объекта](../resources/termstore-group.md) группы.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя создаемой группы.|
+|displayName|Строка|Имя создаемой группы.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика и `201 Created` [объект Microsoft.graph.termStore.group](../resources/termstore-group.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [microsoft.graph.termStore.group](../resources/termstore-group.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

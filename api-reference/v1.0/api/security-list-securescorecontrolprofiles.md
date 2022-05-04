@@ -1,22 +1,22 @@
 ---
 title: Перечисление объектов secureScoreControlProfiles
-description: Извлечение свойств и связей объекта secureScoreControlProfiles.
+description: Получение свойств и связей объекта secureScoreControlProfiles.
 author: preetikr
 ms.localizationpriority: medium
-ms.prod: ''
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 0402b07fc2a972401826fbc95217f65433de2906
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ab569fae3b6b7592c1e5c4565bd335d21c4e1a90
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124424"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191755"
 ---
 # <a name="list-securescorecontrolprofiles"></a>Перечисление объектов secureScoreControlProfiles
 
 Пространство имен: microsoft.graph
 
-Извлечение свойств и связей [объекта secureScoreControlProfiles.](../resources/securescorecontrolprofile.md)
+Получение свойств и связей объекта [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -51,15 +51,15 @@ GET /security/secureScoreControlProfiles?$filter={property} eq '{property-value}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {код}. Обязательно.|
+| Авторизация  | Носитель {code}. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода. Текст запроса будет игнорироваться.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` **secureScoreControlProfiles** в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов **secureScoreControlProfiles** в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,

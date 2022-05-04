@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 640cd67114ec43ae6981b10a645d0fe8d90a0268
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: ff2fcc644112b2f3594c476d796779b7402c58ed
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133827"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191663"
 ---
 # <a name="participant-invite"></a>участник: приглашение
 
@@ -20,7 +20,7 @@ ms.locfileid: "65133827"
 
 Приглашение участников в активный вызов.
 
-Дополнительные сведения об обработке операций см. в разделе [commsoperation](../resources/commsoperation.md).
+Дополнительные сведения об обработке операций см. в [разделе commsOperation](../resources/commsoperation.md).
 
 >**Примечание:** Приглашение нескольких участников в одном запросе поддерживается только для групповых звонков.
 
@@ -55,7 +55,7 @@ POST /communications/calls/{id}/participants/invite
 |participants|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Участники, которые будут приглашены.|
 |clientContext|String|Уникальная строка контекста клиента. Максимальное ограничение — 256 знаков.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного `200 OK` выполнения этот метод возвращает код отклика и заголовок Location с универсальным кодом ресурса (URI) в [объект inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) , созданный для этого запроса. Текст ответа содержит [созданный объект inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) .
 
 >**Примечание:** Когда этот API возвращает успешный ответ, все участники получат обновление списка.
@@ -520,7 +520,7 @@ Content-Type: application/json
 
 ```
 
-### <a name="example-3-invite-participants-to-a-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>Пример 3. Приглашение участников к существующему групповому вызову, заменив существующий одноранговый вызов
+### <a name="example-3-invite-participants-to-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>Пример 3. Приглашение участников к существующему групповому вызову, заменив существующий одноранговый вызов
 
 
 API приглашения поддерживает только одного участника при замене существующего однорангового вызова. Если в тексте запроса указано несколько участников, будет прочитан только первый участник, а остальные участники будут игнорироваться.
@@ -918,6 +918,191 @@ Content-Type: application/json
 ```
 
 >**Примечание:** С состоянием `completed` можно ожидать получения уведомлений о завершении и удалении исходного однорангового вызова.
+
+### <a name="example-5-move-one-participant-from-one-meeting-to-another"></a>Пример 5. Перемещение одного участника из одного собрания в другое
+
+Вы можете переместить одного участника из одного собрания в другое, если эти два собрания были созданы одним приложением.
+Дополнительные сведения о создании собрания по сети см. в [разделе Create onlineMeeting](/graph/api/application-post-onlinemeetings).
+
+> **Примечание:** API приглашения может перемещать только одного участника на запрос. Если вы предоставите несколько участников в тексте запроса, API приглашения переместит только первый.
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "participant-invite-move"
+}-->
+
+```http
+POST /communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
+Content-Type: application/json
+
+{
+  "participants": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      "participantId": "7d501bf1-5ee4-4605-ba92-0ae4513c611c",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "682b6c37-0729-4fab-ace6-d730d5d9137e",
+          "identityProvider": "AAD"
+        }
+      }
+    }
+  ],
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+<!-- {
+  "blockType": "response",
+  "truncated": "true",
+  "@odata.type": "microsoft.graph.inviteParticipantsOperation",
+  "name": "participant-invite-move"
+}-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
+  "id": "278405a3-f568-4b3e-b684-009193463064",
+  "status": "Running",
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+  "resultInfo": null,
+  "participants": [
+    {
+      "endpointType": null,
+      "id": null,
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      "participantId": "7d501bf1-5ee4-4605-ba92-0ae4513c611c",
+      "identity": {
+        "user": {
+          "id": "682b6c37-0729-4fab-ace6-d730d5d9137e",
+          "displayName": "Participant",
+          "identityProvider": "AAD",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        },
+        "application": null,
+        "device": null,
+        "phone": null
+      }
+    }
+  ]
+}
+```
+
+#### <a name="notification---operation-completed"></a>Уведомление — операция завершена
+
+``` http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+
+```json
+{ 
+   "@odata.type":"#microsoft.graph.commsNotifications",
+   "value":[ 
+      { 
+         "@odata.type":"#microsoft.graph.commsNotification",
+         "changeType":"deleted",
+         "resource":"/app/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/278405a3-f568-4b3e-b684-009193463064",
+         "resourceUrl":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/278405a3-f568-4b3e-b684-009193463064",
+         "resourceData":{ 
+            "@odata.type":"#microsoft.graph.inviteParticipantsOperation",
+            "participants":[ 
+               { 
+                  "@odata.type":"#microsoft.graph.invitationParticipantInfo",
+                  "identity":{ 
+                     "@odata.type":"#microsoft.graph.identitySet",
+                     "user":{ 
+                        "@odata.type":"#microsoft.graph.identity",
+                        "id":"682b6c37-0729-4fab-ace6-d730d5d9137e",
+                        "identityProvider":"AAD",
+                        "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+                     }
+                  }
+               }
+            ],
+            "status":"completed",
+            "clientContext":"f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+            "id":"278405a3-f568-4b3e-b684-009193463064"
+         }
+      }
+   ]
+}
+```
+
+#### <a name="notification---roster-updated-with-participant-added"></a>Уведомление — список обновлен с добавлением участника
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+
+```json
+{
+   "@odata.type":"#microsoft.graph.commsNotifications",
+   "value":[
+      {
+         "@odata.type":"#microsoft.graph.commsNotification",
+         "changeType":"updated",
+         "resource":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants",
+         "resourceUrl":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants",
+         "resourceData":[
+            {
+               "@odata.type":"#microsoft.graph.participant",
+               "info":{
+                  "@odata.type":"#microsoft.graph.participantInfo",
+                  "identity":{
+                     "@odata.type":"#microsoft.graph.identitySet",
+                     "user":{ 
+                        "@odata.type":"#microsoft.graph.identity",
+                        "id":"682b6c37-0729-4fab-ace6-d730d5d9137e",
+                        "identityProvider":"AAD",
+                        "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+                     }
+                  },
+                  "endpointType":"default"
+               },
+               "mediaStreams":[
+                  {
+                     "@odata.type":"#microsoft.graph.mediaStream",
+                     "mediaType":"audio",
+                     "sourceId":"1",
+                     "direction":"sendReceive",
+                     "serverMuted":false
+                  }
+               ],
+               "isMuted":false,
+               "isInLobby":false,
+               "id":null
+            }
+         ]
+      }
+   ]
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

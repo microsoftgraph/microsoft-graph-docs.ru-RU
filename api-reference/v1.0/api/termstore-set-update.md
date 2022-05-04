@@ -1,21 +1,21 @@
 ---
 title: Набор обновлений
-description: Обновление свойств объекта набора.
+description: Обновление свойств объекта set.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 4866a3efb88f005ade8020bb3155b197d2ccedd7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2aa24cf98f787b382c3df96e2295225804464aa0
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110548"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191727"
 ---
 # <a name="update-set"></a>Набор обновлений
 Пространство имен: microsoft.graph.termStore
 
-Обновление свойств объекта [набора.](../resources/termstore-set.md)
+Обновление свойств объекта [set](../resources/termstore-set.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,21 +45,21 @@ PATCH sites/{site-id}/termStore/sets/{set-id}
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса устроим представление JSON [установленного](../resources/termstore-set.md) объекта.
+В тексте запроса добавьте представление объекта set в формате [JSON.](../resources/termstore-set.md)
 
-В следующей таблице показаны свойства, которые можно изменить для за [наборного](../resources/termstore-set.md) объекта.
+В следующей таблице показаны свойства, которые можно изменить для объекта [set](../resources/termstore-set.md) .
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|локализованные имена|[коллекция microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md)|Имя набора.|
+|localizedNames|[Коллекция microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md)|Имя набора.|
 |description|Строка|Описание набора.|
-|properties|[коллекция microsoft.graph.keyValue](../resources/keyvalue.md)|Свойства набора.|
+|properties|[Коллекция microsoft.graph.keyValue](../resources/keyvalue.md)|Свойства набора.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного решения этот метод возвращает код отклика и обновленный `200 OK` [объект microsoft.graph.termStore.set](../resources/termstore-set.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный объект [microsoft.graph.termStore.set](../resources/termstore-set.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

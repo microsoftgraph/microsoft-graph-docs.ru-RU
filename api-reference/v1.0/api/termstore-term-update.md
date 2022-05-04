@@ -1,21 +1,21 @@
 ---
-title: Термин Update
-description: Обновление свойств объекта терминов.
+title: Срок обновления
+description: Обновление свойств объекта термина.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: f14ca04df3b90553d9fec9ae737a0f896a122134
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 10b4371906456ddc24c9dbf3f19afab844d7979e
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121707"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191706"
 ---
-# <a name="update-term"></a>Термин Update
+# <a name="update-term"></a>Срок обновления
 Пространство имен: microsoft.graph.termStore
 
-Обновление свойств объекта [терминов.](../resources/termstore-term.md)
+Обновление свойств объекта [термина](../resources/termstore-term.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,21 +44,21 @@ PATCH sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляют представление JSON объекта [термин.](../resources/termstore-term.md)
+В тексте запроса добавьте представление объекта термина в формате [JSON.](../resources/termstore-term.md)
 
-В следующей таблице показаны свойства, которые можно обновить для объекта [терминов.](../resources/termstore-term.md)
+В следующей таблице показаны свойства, которые можно обновить для объекта [термина](../resources/termstore-term.md) .
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|метки|[коллекция microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Метки термина.|
-|описания|[коллекция microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md)|Описание термина.|
-|properties|[коллекция microsoft.graph.keyValue](../resources/keyvalue.md)|Свойства, связанные с термином.|
+|Метки|[Коллекция microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Метки термина.|
+|Описания|[Коллекция microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md)|Описание термина.|
+|properties|[Коллекция microsoft.graph.keyValue](../resources/keyvalue.md)|Свойства, связанные с термином.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика и обновленный `200 OK` [объект microsoft.graph.termStore.term](../resources/termstore-term.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный объект [microsoft.graph.termStore.term](../resources/termstore-term.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

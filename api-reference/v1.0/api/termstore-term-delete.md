@@ -1,21 +1,21 @@
 ---
-title: Удаление термина
-description: Удаление объекта терминов.
+title: Удалить термин
+description: Удаление объекта термина.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 21e4d28705627987effe09363259e36062f1a8e7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f5e70745b85958e83ceaf47b4a3a695bbb96ec05
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121721"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191811"
 ---
-# <a name="delete-term"></a>Удаление термина
+# <a name="delete-term"></a>Удалить термин
 Пространство имен: microsoft.graph.termStore
 
-Удаление объекта [терминов.](../resources/termstore-term.md)
+Удаление объекта [термина](../resources/termstore-term.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,7 +42,7 @@ DELETE sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

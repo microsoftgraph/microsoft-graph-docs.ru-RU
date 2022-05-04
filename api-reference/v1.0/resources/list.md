@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: Ресурс list представляет список на сайте.
 doc_type: resourcePageType
-ms.openlocfilehash: f57507bc75e4e672e0799ac5b0758db5cf16fda6
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 2de3af4c781ad325b59eeb9dff762c47a23dff20
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854496"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191649"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -35,6 +35,7 @@ ms.locfileid: "62854496"
 | [Удаление элемента списка][]      | DELETE /lists/{list-id}/items/{item-id}
 | [Создание элемента в списке][]      | POST /lists/{list-id}
 | [Получение канала WebSocket][] | GET /lists/{list-id}/subscriptions/socketIo
+| [Операции со списком](../api/list-list-operations.md)| GET /lists/{list-id}/operations
 
 [Получение списка]: ../api/list-get.md
 [Создание списка]: ../api/list-create.md
@@ -80,6 +81,7 @@ ms.locfileid: "62854496"
 | **items**         | Коллекция ([listItem][])         | Все элементы, содержащиеся в списке.
 | **columns**       | Коллекция ([columnDefinition][]) | Коллекция определений полей для данного списка.
 | **contentTypes**  | Коллекция ([contentType][])      | Коллекция типов контента в данном списке.
+| **operations** | Коллекция [richLongRunningOperation](../resources/richlongrunningoperation.md) | Коллекция длительных операций в списке. 
 | **subscriptions** | Коллекция ([subscription][])     | Набор подписок на список.
 
 [baseItem]: baseitem.md
@@ -123,6 +125,7 @@ ms.locfileid: "62854496"
     "hidden": false,
     "template&quot;: &quot;documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
   },
+  "operations": [ { "@odata.type": "microsoft.graph.richLongRunningOperation" }],
   "system": false,
   "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
 

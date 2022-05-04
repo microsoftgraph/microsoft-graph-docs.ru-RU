@@ -1,31 +1,32 @@
 ---
-title: тип ресурса invitationParticipantInfo
-description: '**InvitationParticipant** используется для представления набора удостоверений, связанных с приглашением на беседу, и предоставляет дополнительные параметры приглашения.'
+title: Тип ресурса invitationParticipantInfo
+description: '**InvitationParticipant** используется для представления набора удостоверений, связанных с приглашением к беседе, и предоставляет дополнительные параметры приглашения.'
 author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f048fae8d5d63aac8a64dc0e8d3193de5cc5aef5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c09e15063524fbba0f9a53b69786545399c8e35a
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084428"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191684"
 ---
-# <a name="invitationparticipantinfo-resource-type"></a>тип ресурса invitationParticipantInfo
+# <a name="invitationparticipantinfo-resource-type"></a>Тип ресурса invitationParticipantInfo
 
 Пространство имен: microsoft.graph
 
-Этот ресурс используется для представления объекта, приглашенного на групповой вызов. 
+Этот ресурс используется для представления сущности, которая приглашена на групповой вызов. 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                           | Тип                          | Описание                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| удостоверение                           | [identitySet](identityset.md) | [IdentitySet,](identityset.md) связанный с этим приглашением.                   |
-| replacesCallId                     | String                        | Необязательный параметр. Вызов, частью которого в настоящее время является тождественность целевого пользователя. Этот вызов будет отброшен после того, как будет добавлен участник. |
+| Идентичности                           | [identitySet](identityset.md) | Набор [удостоверений,](identityset.md) связанный с этим приглашением.                   |
+| participantId                      | Строка                        | Необязательный параметр. Идентификатор целевого участника.                                          |
+| replacesCallId                     | Строка                        | Необязательный параметр. Вызов, частью которого в настоящее время является целевое удостоверение. При одноранговом случае вызов будет удален после успешного добавления участника. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -39,6 +40,7 @@ ms.locfileid: "59084428"
 ```json
 {
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
+  "participantId": "String",  
   "replacesCallId": "String"
 }
 ```

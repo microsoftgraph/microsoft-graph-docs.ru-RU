@@ -5,14 +5,14 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9bf782bfaa75dbb4c31e62d23c43a8b4465e944a
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 17e249db9ec645a6cb7a013bd5949d377b772519
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587709"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191396"
 ---
-# <a name="get-group"></a>Вывод группы
+# <a name="get-group"></a>Вывод группы 
 
 Пространство имен: microsoft.graph
 
@@ -30,7 +30,7 @@ ms.locfileid: "64587709"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                         |
-| Для приложений                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Приложение                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Примечание.** В зависимости от функций группы, к которым вы пытаетесь получить доступ, разрешения могут быть ограничены. Дополнительные сведения см. в разделе [Группы](/graph/known-issues#groups) статьи [Известные проблемы с Microsoft Graph](/graph/known-issues).
 

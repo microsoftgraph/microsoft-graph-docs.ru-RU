@@ -1,21 +1,21 @@
 ---
 title: Создание термина
-description: Создание нового объекта терминов.
+description: Создайте объект термина.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: d62641abd9287560b01cee651785b349aa58be0f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1b8dc16cdc36e50b777c64189fd5ffd2e8f85acc
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131864"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191417"
 ---
 # <a name="create-term"></a>Создание термина
 Пространство имен: microsoft.graph.termStore
 
-Создание нового [объекта терминов.](../resources/termstore-term.md)
+Создайте объект [термина](../resources/termstore-term.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,19 +45,19 @@ POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляют представление JSON объекта [термин.](../resources/termstore-term.md)
+В тексте запроса добавьте представление объекта термина в формате [JSON.](../resources/termstore-term.md)
 
-В следующей таблице показаны свойства, необходимые при создании объекта [терминов.](../resources/termstore-term.md)
+В следующей таблице показаны свойства, необходимые при создании объекта [термина](../resources/termstore-term.md) .
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|метки|[коллекция microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Метка для создаемой термины.|
+|Метки|[Коллекция microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Метка создаемой термины.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика и `201 Created` [объект microsoft.graph.termStore.term](../resources/termstore-term.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [microsoft.graph.termStore.term](../resources/termstore-term.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

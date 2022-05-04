@@ -1,21 +1,21 @@
 ---
-title: Get store
-description: Ознакомьтесь с свойствами и отношениями объекта магазина.
+title: Получение хранилища
+description: Чтение свойств и связей объекта хранилища.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: df211027b5485244566635a29d16d2a1deb9741c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e471c529e7b18d8bd9c144755cbe742b56913171
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104358"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191713"
 ---
-# <a name="get-store"></a>Get store
+# <a name="get-store"></a>Получение хранилища
 Пространство имен: microsoft.graph.termStore
 
-Ознакомьтесь с свойствами и отношениями объекта [магазина.](../resources/termstore-store.md)
+Чтение свойств и связей [объекта хранилища](../resources/termstore-store.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,7 +44,7 @@ GET sites/{site-id}/termStore
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика `200 OK` [и объект microsoft.graph.termStore.store](../resources/termstore-store.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика [и](../resources/termstore-store.md) microsoft.graph.termStore.store в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

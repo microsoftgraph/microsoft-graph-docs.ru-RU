@@ -1,21 +1,21 @@
 ---
 title: Удаление группы
-description: Удаление объекта группы в магазине терминов.
+description: Удаление объекта группы в хранилище терминов.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 327f4b8756afc68c4436e30137d3b42fc15a5b1a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b9b50c2b90848c13c284fbc8fe5d004caed702b1
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110604"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191677"
 ---
 # <a name="delete-group"></a>Delete group
 Пространство имен: microsoft.graph.termStore
 
-Удаление [группового](../resources/termstore-group.md) объекта в магазине [терминов.]
+Удаление объекта [группы](../resources/termstore-group.md) в хранилище [терминов].
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,7 +42,7 @@ DELETE sites/{site-id}/termStore/groups/{group-id}
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -103,7 +103,7 @@ HTTP/1.1 204 No Content
 [microsoft.graph.termStore.group]: ../resources/termstore-group.md
 [microsoft.graph.termStore.store]: ../resources/termstore-store.md
 [microsoft.graph.termStore.set]: ../resources/termstore-set.md
-[магазин]: ../resources/termstore-store.md
+[Магазин]: ../resources/termstore-store.md
 
 <!--
 {

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 30a478f5a3021bf7efbadd0e924bd8c8e343ad40
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 85536cc55604de7f88f561a3b1e232cd333c7ec8
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133141"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191354"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
@@ -86,7 +86,7 @@ ms.locfileid: "65133141"
 
 |Member|
 |:---|
-|Все|
+|все|
 |Активировать|
 |Отключить|
 |Назначить|
@@ -251,7 +251,7 @@ ms.locfileid: "65133141"
 |Member|
 |:---|
 |notSpecified|
-|пользователь|
+|пользователь;|
 |servicePrincipal|
 |unknownFutureValue|
 
@@ -349,8 +349,8 @@ ms.locfileid: "65133141"
 
 |Member|
 |:---|
-|пользователь|
-|group;|
+|пользователь;|
+|group|
 
 ### <a name="authenticationmethodstate-values"></a>Значения authenticationMethodState
 
@@ -412,7 +412,7 @@ ms.locfileid: "65133141"
 |windows|
 |WindowsPhone|
 |macOS|
-|Все|
+|все|
 |unknownFutureValue|
 
 ### <a name="signinfrequencytype-values"></a>Значения signinFrequencyType
@@ -455,7 +455,7 @@ ms.locfileid: "65133141"
 
 |Member|
 |:---|
-|Все|
+|все|
 |Обозреватель|
 |mobileAppsAndDesktopClients|
 |exchangeActiveSync|
@@ -655,7 +655,7 @@ ms.locfileid: "65133141"
 |Member|
 |:---|
 |Signin|
-|пользователь|
+|пользователь;|
 |unknownFutureValue|
 
 ### <a name="riskdetectiontimingtype-values"></a>Значения riskDetectionTimingType
@@ -798,7 +798,7 @@ ms.locfileid: "65133141"
 |:-------------------------
 | Нет
 | contactsOnly
-| Все
+| все
 
 
 ### <a name="automaticrepliesstatus-values"></a>Значения automaticRepliesStatus
@@ -1167,8 +1167,8 @@ ms.locfileid: "65133141"
 | preset11 | 11
 | preset12 | 12 
 | preset13 | 13
-| preset14 | 14 
-| preset15 | 15 
+| preset14 | 14
+| preset15 | 15
 | preset16 | 16
 | preset17 | 17 
 | preset18 | 18 
@@ -1460,7 +1460,7 @@ ms.locfileid: "65133141"
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail   | 1     | Почтовая угроза.            |
+| почта;   | 1     | Почтовая угроза.            |
 | url    | 2     | Угроза URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -1492,7 +1492,7 @@ ms.locfileid: "65133141"
 | Элемент        | Значение | Описание              |
 |:--------------|:------|:-------------------------|
 | Неопределенный     | 0     | Пока не известно.            |
-| пользователь          | 1     | Отправка пользователя.         |
+| пользователь;          | 1     | Отправка пользователя.         |
 | Администратора | 2     | Отправка администратора клиента. |
 
 ### <a name="threatassessmentresulttype-values"></a>Значения threatAssessmentResultType
@@ -1521,8 +1521,8 @@ ms.locfileid: "65133141"
 | autoPurgeToDeleted    | 11    | Сообщение о перемещении TimeTravel в удаленное. |
 | Исходящих              | 12     | Исходящая почта.                      |
 | notJunk               | 13    | Разрешить из-за нежелательной почты.              |
-| Нежелательной                  | 14     | Заблокировано из-за нежелательной почты.                |
-| unknownFutureValue    | 15     | Элемент sentinel.                  |
+| Нежелательной                  | 14    | Заблокировано из-за нежелательной почты.                |
+| unknownFutureValue    | 15    | Элемент sentinel.                  |
 
 ### <a name="chatmessagetype-values"></a>Значения chatMessageType
 
@@ -1597,11 +1597,11 @@ ms.locfileid: "65133141"
 |dateTime | Столбец DateTime. |
 |Поиска | Столбец подстановки. |
 |boolean | Столбец "Да" или "Нет". |
-|пользователь | Столбец пользователя или группы. |
+|пользователь; | Столбец пользователя или группы. |
 |url | Гиперссылка или столбец рисунка. |
 |Рассчитывается | Вычисляемый столбец. |
-|расположение | Столбец расположения. |
-|Географического расположения | Столбец географического расположения. |
+|расположение; | Столбец расположения. |
+|географическое положение | Столбец географического расположения. |
 |term | Столбец управляемых метаданных. |
 |многотерминантная | Столбец управляемых метаданных, который принимает несколько значений. |
 |Миниатюру | Столбец изображения. |
@@ -1817,7 +1817,7 @@ ms.locfileid: "65133141"
 
 |Member|
 |:---|
-|пользователь|
+|пользователь;|
 |приложение|
 |system|
 |unknownFutureValue|
@@ -2071,4 +2071,14 @@ ms.locfileid: "65133141"
 |notReviewed|
 |dontKnow|
 |notNotified|
+|unknownFutureValue|
+
+### <a name="longrunningoperationstatus-values"></a>Значения longRunningOperationStatus
+
+| Member|
+|:-----------------|
+|notStarted|
+|Запущена|
+|Удалось|
+|Сбой при|
 |unknownFutureValue|

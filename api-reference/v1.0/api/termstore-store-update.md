@@ -1,21 +1,21 @@
 ---
-title: Магазин обновлений
-description: Обновление свойств объекта магазина.
+title: Обновление хранилища
+description: Обновление свойств объекта хранилища.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 54329bad1cce7ba6eade01a58907640d049f3487
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9b27b2a102707025f5f10ba431480f2157519a6c
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104372"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191769"
 ---
-# <a name="update-store"></a>Магазин обновлений
+# <a name="update-store"></a>Обновление хранилища
 Пространство имен: microsoft.graph.termStore
 
-Обновление свойств объекта [магазина.](../resources/termstore-store.md)
+Обновление свойств [объекта хранилища.](../resources/termstore-store.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,20 +43,20 @@ PATCH sites/{site-id}/termStore
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В корпусе запроса поставляем представление JSON объекта [магазина.](../resources/termstore-store.md)
+В тексте запроса добавьте представление объекта [хранилища](../resources/termstore-store.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые можно изменить для [объекта магазина.](../resources/termstore-store.md)
+В следующей таблице показаны свойства, которые можно изменить для [объекта](../resources/termstore-store.md) хранилища.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|defaultLanguageTag|Строка|Язык по умолчанию [microsoft.graph.termstore.store](../resources/termstore-store.md).|
-|LanguageTags|Коллекция строк|Доступные языки в [microsoft.graph.termstore.store](../resources/termstore-store.md).|
+|defaultLanguageTag|Строка|Язык по умолчанию для [microsoft.graph.termstore.store](../resources/termstore-store.md).|
+|languageTags|Коллекция строк|Доступные языки [в microsoft.graph.termstore.store](../resources/termstore-store.md).|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект Microsoft.graph.termStore в](../resources/termstore-store.md) тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный объект [microsoft.graph.termStorestore](../resources/termstore-store.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

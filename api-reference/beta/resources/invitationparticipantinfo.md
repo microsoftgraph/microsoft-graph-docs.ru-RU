@@ -1,32 +1,33 @@
 ---
-title: Тип ресурса ИнвитатионпартиЦипантинфо
-description: Представляет объект, приглашенный на вызов группы.
+title: Тип ресурса invitationParticipantInfo
+description: Представляет сущность, которая приглашена на групповой вызов.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9193ec70a3884ba9bf25e4f1c8c33eb7c77d838f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 16885239d0af9be8e9e8e66eade8f75c2d120a8e
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989040"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191642"
 ---
-# <a name="invitationparticipantinfo-resource-type"></a>Тип ресурса ИнвитатионпартиЦипантинфо
+# <a name="invitationparticipantinfo-resource-type"></a>Тип ресурса invitationParticipantInfo
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет объект, приглашенный на вызов группы. 
+Представляет сущность, которая приглашена на групповой вызов. 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                           | Тип                          | Описание                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| ендпоинттипе                       | String                        | Тип конечной точки. Возможные значения: `default`, `voicemail`. |
-| хищения                           | [identitySet](identityset.md) | [Удостоверение](identityset.md) , связанное с этим приглашением.                   |
-| реплацескаллид                     | String                        | Необязательный параметр. Вызов, частью которого в данный момент является целевой иденити. Этот вызов будет сброшен после добавления участника. |
+| endpointType                       | Строка                        | Тип конечной точки. Возможные значения: `default`, `voicemail`. |
+| identity                           | [identitySet](identityset.md) | Набор [удостоверений,](identityset.md) связанный с этим приглашением.                   |
+| participantId                      | Строка                        | Необязательный параметр. Идентификатор целевого участника.                                          |
+| replacesCallId                     | Строка                        | Необязательный параметр. Вызов, частью которого в настоящее время является целевое удостоверение. При одноранговом случае вызов будет удален после успешного добавления участника. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -42,8 +43,9 @@ ms.locfileid: "47989040"
 }-->
 ```json
 {
-  "endpointType": "default | voicemail",
+  "endpointType": "String",
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
+  "participantId": "String",  
   "replacesCallId": "String"
 }
 ```

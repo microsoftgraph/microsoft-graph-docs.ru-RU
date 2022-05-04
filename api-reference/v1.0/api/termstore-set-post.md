@@ -1,21 +1,21 @@
 ---
 title: Создание набора
-description: Создайте новый объект набора.
+description: Создайте объект набора.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 781cca8fce8b83b00be65cc1063cd290318bbd55
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 3dd711a657f536ca3d48db6bed989b0a0a99bbe3
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940260"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191635"
 ---
 # <a name="create-set"></a>Создание набора
 Пространство имен: microsoft.graph.termStore
 
-Создайте новый [объект набора.](../resources/termstore-set.md)
+Создайте объект [набора](../resources/termstore-set.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,20 +44,20 @@ POST sites/{site-id}/termStore/sets
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса устроим представление JSON [установленного](../resources/termstore-set.md) объекта.
+В тексте запроса добавьте представление объекта set в формате [JSON.](../resources/termstore-set.md)
 
-В следующей таблице показаны свойства, необходимые при создании [задатки](../resources/termstore-set.md) объекта.
+В следующей таблице показаны свойства, необходимые при создании объекта [набора](../resources/termstore-set.md) .
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|локализованные имена|[коллекция microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md)|Имя создаемого набора.|
+|localizedNames|[Коллекция microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md)|Имя создаируемого набора.|
 |parentGroup|[microsoft.graph.termstore.group](../resources/termstore-group.md)|termstore-group, в которой необходимо создать набор.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект microsoft.graph.termStore.set](../resources/termstore-set.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [microsoft.graph.termStore.set](../resources/termstore-set.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

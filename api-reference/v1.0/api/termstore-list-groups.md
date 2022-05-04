@@ -1,21 +1,21 @@
 ---
-title: Список групп
-description: Получите список групповых объектов в магазине терминов.
+title: Перечисление групп termStore
+description: Получение списка объектов группы в хранилище терминов.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: cc0e21fddef8fdc4251009e07e1413e213d4af1c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6e750ecc3de80821e9e3fee8c0f978bd676c4e3f
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104407"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191445"
 ---
-# <a name="list-termstore-groups"></a>Группы termStore списка
+# <a name="list-termstore-groups"></a>Перечисление групп termStore
 Пространство имен: microsoft.graph.termStore
 
-Получите список [групповых объектов](../resources/termstore-group.md) в магазине [терминов.](../resources/termstore-store.md)
+Получение списка объектов [группы](../resources/termstore-group.md) в хранилище [терминов](../resources/termstore-store.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,12 +45,12 @@ GET sites/{site-id}/termStore/groups
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного решения этот метод возвращает код ответа и коллекцию объектов `200 OK` [microsoft.graph.termStore.group](../resources/termstore-group.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [microsoft.graph.termStore.group](../resources/termstore-group.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
