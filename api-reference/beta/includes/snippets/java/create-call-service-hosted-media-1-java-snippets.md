@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 9109d0440fe3a1643e28d263a1bc3270355472b3cc346ff7077efd8063b84e43
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ae60aaac16ef0990db6fd68c9d619810ca972a05
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57192856"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220655"
 ---
 ```java
 
@@ -26,6 +26,9 @@ call.targets = targetsList;
 LinkedList<Modality> requestedModalitiesList = new LinkedList<Modality>();
 requestedModalitiesList.add(Modality.AUDIO);
 call.requestedModalities = requestedModalitiesList;
+OutgoingCallOptions callOptions = new OutgoingCallOptions();
+callOptions.isContentSharingNotificationEnabled = true;
+call.callOptions = callOptions;
 ServiceHostedMediaConfig mediaConfig = new ServiceHostedMediaConfig();
 call.mediaConfig = mediaConfig;
 

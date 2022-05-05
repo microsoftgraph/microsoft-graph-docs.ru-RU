@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 2e204fbb734b7e892d27babd534e3b5e4f1e5503
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: ad55432afad478fe644ed16f983cd27a39443e86
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416400"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220648"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "63416400"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewDisplayNameRequestBody()
-displayName := "My custom name"
+displayName := "testProperties"
 requestBody.SetDisplayName(&displayName)
 options := &msgraphsdk.InstantiateRequestBuilderPostOptions{
     Body: requestBody,
