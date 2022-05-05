@@ -1,50 +1,49 @@
 ---
-title: тип ресурса plannerBucket
-description: ) для задач в плане в Microsoft 365. Он содержится в планировщикеPlan и может иметь коллекцию plannerTasks.
+title: Тип ресурса plannerBucket
+description: Представляет контейнер для задач в плане в Microsoft 365. Он содержится в планировщике и может содержать коллекцию plannerTasks.
 author: TarkanSevilmis
 ms.localizationpriority: medium
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 46360d413f676e6420f28b94b5ba91ec9237e681
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3b7687c4005d939307f871836f470d918a26cc4d
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129848"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65208878"
 ---
-# <a name="plannerbucket-resource-type"></a>тип ресурса plannerBucket
+# <a name="plannerbucket-resource-type"></a>Тип ресурса plannerBucket
 
 Пространство имен: microsoft.graph
 
-Ресурс **plannerBucket** представляет ведро (или "настраиваемый столбец") для задач в плане в Microsoft 365. Он содержится в [планировщикеPlan](plannerplan.md) и может иметь коллекцию [plannerTasks.](plannertask.md)
-
+Представляет контейнер (или "настраиваемый столбец") для задач в плане в Microsoft 365. Он содержится в [планировщике и](plannerplan.md) может содержать коллекцию [plannerTasks](plannertask.md).
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md) |Чтение свойств и связей **объекта plannerBucket.**|
+|[Получение объекта plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md); |Чтение свойств и связей объекта **plannerBucket** .|
 |[Перечисление plannerTasks](../api/plannerbucket-list-tasks.md) |Коллекция [plannerTask](plannertask.md)| Получение коллекции объектов **plannerTask**.|
-|[Создание](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | Создание нового **объекта plannerBucket.** |
-|[Обновление](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)   |Объект **Update plannerBucket.** |
-|[удаление](../api/plannerbucket-delete.md); | Нет |Удаление **объекта plannerBucket.** |
+|[Создание](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md);   | Создайте объект **plannerBucket** . |
+|[Обновление](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md);   |Обновление **объекта plannerBucket** . |
+|[удаление](../api/plannerbucket-delete.md); | Нет |Удаление **объекта plannerBucket** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения. ID из ведра. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
+|id|String| Только для чтения. Идентификатор контейнера. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
 |name|String|Имя сегмента.|
 |orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
-|planId|Строка|Запланируйте ID, к которому принадлежит ведро.|
+|planId|Строка|Идентификатор плана, к которому принадлежит контейнер.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускается значение null. Коллекция задач в ведре.|
+|tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускается значение null. Коллекция задач в контейнере.|
 
 ## <a name="json-representation"></a>Представление JSON
-Ниже представлено описание ресурса в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -62,7 +61,6 @@ ms.locfileid: "59129848"
   "orderHint": "String",
   "planId": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

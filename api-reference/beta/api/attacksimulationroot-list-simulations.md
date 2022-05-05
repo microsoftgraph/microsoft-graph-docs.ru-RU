@@ -1,23 +1,23 @@
 ---
 title: Перечисление симуляций
-description: Получите список кампаний имитации атак для клиента.
+description: Получение списка кампаний моделирования атак для клиента.
 author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 24c73af15cdffa97007caa367a37a780f3cdbb4f
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: d1ee63b72436f74e44d9e416c20b2c1c40b36b57
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63758034"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65203591"
 ---
 # <a name="list-simulations"></a>Перечисление симуляций
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список кампаний имитации атак для клиента.
+Получение списка кампаний моделирования атак для клиента.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "63758034"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | SecurityEvents.Read.All                     |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | SecurityEvents.Read.All                     |
+| Приложение                            | SecurityEvents.Read.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,13 +39,13 @@ GET /security/attackSimulation/simulations
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ: `$count`, `$filter`, `$orderby`, `$skiptoken`, , `$top`. `$select`
+Этот метод поддерживает следующие параметры запроса OData для настройки ответа: , , , , , `$select``$top`. `$orderby``$skiptoken``$filter``$count`
 
-Поддержка следующих `$filter` `$orderby`свойств и: **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **status**.
+Поддерживаются следующие свойства `$filter` `$orderby`: **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **status**.
 
-Используйте `@odata.nextLink` для pagination.
+Используется `@odata.nextLink` для разбиения на страницы.
 
-Ниже приводится пример их использования:
+Ниже приведены примеры их использования.
 
 <!-- {
   "blockType": "ignored"
@@ -70,13 +70,15 @@ GET /security/attackSimulation/simulations?$select={property}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию [объектов моделирования](../resources/simulation.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [имитации](../resources/simulation.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_simulation"
@@ -85,6 +87,32 @@ GET /security/attackSimulation/simulations?$select={property}
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-simulation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-simulation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-simulation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-simulation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-simulation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-simulation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

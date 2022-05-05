@@ -1,16 +1,16 @@
 ---
 title: Обновление microsoftApplicationDataAccessSettings
-description: Обновление свойств объекта MicrosoftApplicationDataAccessSettings.
+description: Обновление свойств объекта microsoftApplicationDataAccessSettings.
 author: ttomi
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: d7031fefb9f90718dc0e0fb66714cb933fa9dfe9
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 411a1b8cad849979cb3c0d49500c45d1e452037e
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589824"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65212406"
 ---
 # <a name="update-microsoftapplicationdataaccesssettings"></a>Обновление microsoftApplicationDataAccessSettings
 
@@ -18,7 +18,7 @@ ms.locfileid: "64589824"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление параметров объекта [MicrosoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md), который указывает доступ из приложений Майкрософт к Microsoft 365 пользовательских данных в организации.
+Обновите параметры в объекте [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md), которые задают доступ из приложений Майкрософт к Microsoft 365 данных пользователей в организации.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -51,19 +51,21 @@ PATCH /organization/{organizationId}/settings/microsoftApplicationDataAccess
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|isEnabledForAllMicrosoftApplications|Логическое|Если установлено`true`, все пользователи в организации могут получить доступ в приложении Майкрософт к любым Microsoft 365 данным, к данным, к которые пользователь получил разрешение на доступ. Приложение Microsoft может быть приложением Microsoft 365 (например, Excel, Outlook) или не Microsoft 365 приложением (например, Edge). Значение по умолчанию: `true`. <br> Этот доступ можно отключить для подмножество пользователей в группе безопасности Azure Active Directory Azure AD, указав группу в свойстве **disabledForGroup**. <br> Если установлено`false`, пользователи могут получать доступ к Microsoft 365 данным только в Microsoft 365 приложении.|
-|disabledForGroup|Строка|ID группы безопасности Azure AD, члены которой могут получать доступ к Microsoft 365 с помощью только Microsoft 365 приложений, но не других приложений Майкрософт, таких как Edge. <br> Это применимо только в том случае, если **установлено для isEnabledForAllMicrosoftApplications** `true`.|
+|isEnabledForAllMicrosoftApplications|Логический|Если задано значение ,`true`все пользователи в организации могут получить доступ к приложению Майкрософт Microsoft 365 данных, к которым пользователь был авторизован. Приложение Майкрософт может быть приложением Microsoft 365 (например, Excel, Outlook) или не Microsoft 365 приложением (например, Edge). Значение по умолчанию: `true`. <br> Этот доступ можно отключить для подмножества пользователей в группе безопасности Azure Active Directory (Azure AD), указав группу в свойстве **disabledForGroup**. <br> Если задано значение `false`,пользователи могут получить доступ к Microsoft 365 только в Microsoft 365 приложении.|
+|disabledForGroup|Строка|Идентификатор группы безопасности Azure AD, члены которой могут получать доступ к Microsoft 365 с помощью только Microsoft 365 приложений, но не других приложений Майкрософт, таких как Edge. <br> Это применимо только в том случае, если **для isEnabledForAllMicrosoftApplications** задано значение `true`.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха `200 OK` этот метод возвращает код ответа и обновленный [объект MicrosoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) в тексте ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и обновленный объект [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
-В следующем примере показано, как администратор обновляет параметр конфиденциальности **disabledForGroup**, чтобы запретить пользователям определенной группы Azure AD получать доступ к Microsoft 365 с помощью приложений Майкрософт, не включающих Microsoft 365.
+В следующем примере запроса показано, как администратор обновляет параметр конфиденциальности **disabledForGroup**, чтобы запретить пользователям в определенной группе Azure AD доступ к данным Microsoft 365 с помощью приложений Майкрософт, которые не являются частью Microsoft 365.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_microsoftapplicationdataaccesssettings"
@@ -77,6 +79,32 @@ Content-Type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-microsoftapplicationdataaccesssettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-microsoftapplicationdataaccesssettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-microsoftapplicationdataaccesssettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-microsoftapplicationdataaccesssettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-microsoftapplicationdataaccesssettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-microsoftapplicationdataaccesssettings-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

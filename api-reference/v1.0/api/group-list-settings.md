@@ -1,28 +1,28 @@
 ---
 title: Перечисление параметров
-description: Извлечение списка объектов группового настройки.
+description: Получение списка объектов параметров группы.
 author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2a0ddfe1c1dd0d85e64deaf37560b912a5ea9589
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 8d192f869f10b7c0f7e26d2734d1febf919a668e
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587170"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211293"
 ---
 # <a name="list-settings"></a>Перечисление параметров
 
 Пространство имен: microsoft.graph
 
-Извлечение списка объектов параметров групп на уровне клиента или групп.
+Получение списка объектов параметров группы на уровне клиента или группы.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-### <a name="list-tenant-wide-settings"></a>Список параметров для всех клиентов
+### <a name="list-tenant-wide-settings"></a>Вывод списка параметров на уровне клиента
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
@@ -30,19 +30,19 @@ ms.locfileid: "64587170"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Directory.Read.All, Directory.ReadWrite.All |
 
-### <a name="list-group-specific-settings"></a>Список параметров, определенных для группы
+### <a name="list-group-specific-settings"></a>Перечисление параметров для конкретной группы
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Group.Read.All, Group.ReadWrite.All         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Group.Read.All, Group.ReadWrite.All         |
+| Приложение                            | Group.Read.All, Group.ReadWrite.All         |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
-Список параметров для всех клиентов.
+Список параметров на уровне клиента.
 
 ```http
 GET /groupSettings
@@ -50,7 +50,7 @@ GET /groupSettings
 
 <!-- { "blockType": "ignored" } -->
 
-Список параметров, определенных для группы
+Перечисление параметров для конкретной группы
 
 ```http
 GET /groups/{groupId}/settings
@@ -70,13 +70,13 @@ GET /groups/{groupId}/settings
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию объектов [groupSetting](../resources/groupsetting.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [groupSetting](../resources/groupsetting.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-retrieve-the-tenant-level-group-settings"></a>Пример. Извлечение параметров группы на уровне клиента
+### <a name="example-retrieve-the-tenant-level-group-settings"></a>Пример. Получение параметров группы на уровне клиента
 
 #### <a name="request"></a>Запрос
 
@@ -92,27 +92,27 @@ GET https://graph.microsoft.com/v1.0/groupSettings
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsettings-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsettings-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/get-groupsettings-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groupsettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/get-groupsettings-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/get-groupsettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/get-groupsettings-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/get-groupsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -203,7 +203,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-the-group-settings-for-a-specific-group"></a>Пример 2. Извлечение параметров группы для определенной группы
+### <a name="example-2-retrieve-the-group-settings-for-a-specific-group"></a>Пример 2. Получение параметров группы для определенной группы
 
 #### <a name="request"></a>Запрос
 
@@ -219,27 +219,27 @@ GET https://graph.microsoft.com/v1.0/groups/05aa6a98-956a-45c0-b13b-88076a23f2cd
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsettings-for-a-group-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsettings-for-a-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsettings-for-a-group-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsettings-for-a-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/get-groupsettings-for-a-group-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groupsettings-for-a-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/get-groupsettings-for-a-group-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/get-groupsettings-for-a-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/get-groupsettings-for-a-group-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/get-groupsettings-for-a-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

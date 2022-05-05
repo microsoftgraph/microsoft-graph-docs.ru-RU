@@ -1,22 +1,22 @@
 ---
-title: функция getLicensesForApp
+title: Функция getLicensesForApp
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b4989de8c1cf8c36dd376e3e1c7953f7f719b2cf
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 33d289ea170e316c75d5fe6226106cc8c59dc777
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60486735"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65205671"
 ---
-# <a name="getlicensesforapp-function"></a>функция getLicensesForApp
+# <a name="getlicensesforapp-function"></a>Функция getLicensesForApp
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,9 +27,9 @@ ms.locfileid: "60486735"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -57,7 +57,7 @@ GET /deviceAppManagement/vppTokens/getLicensesForApp
 
 
 ## <a name="response"></a>Ответ
-В случае успешной работы эта функция возвращает код ответа и `200 OK` [коллекцию vppTokenLicenseSummary](../resources/intune-onboarding-vpptokenlicensesummary.md) в тексте ответа.
+В случае успешного выполнения эта функция возвращает код `200 OK` отклика и коллекцию [vppTokenLicenseSummary](../resources/intune-onboarding-vpptokenlicensesummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -87,6 +87,7 @@ Content-Length: 298
   ]
 }
 ```
+
 
 
 

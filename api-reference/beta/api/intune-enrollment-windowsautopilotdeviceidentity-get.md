@@ -1,22 +1,22 @@
 ---
-title: Get windowsAutopilotDeviceIdentity
+title: Получение объекта windowsAutopilotDeviceIdentity
 description: Чтение свойств и связей объекта windowsAutopilotDeviceIdentity.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0012f004b0b4434a9f2468dc9e827376ed200e78
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: e2481ca54ede1ed0c3d05a7c9f2c6cf36ab8b648
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629395"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65205419"
 ---
-# <a name="get-windowsautopilotdeviceidentity"></a>Get windowsAutopilotDeviceIdentity
+# <a name="get-windowsautopilotdeviceidentity"></a>Получение объекта windowsAutopilotDeviceIdentity
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "64629395"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,14 +47,14 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
-В случае успешной работы `200 OK` этот метод возвращает код отклика и [объект windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) в тексте ответа.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и [объект windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIden
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1362
+Content-Length: 1493
 
 {
   "value": {
@@ -97,7 +97,9 @@ Content-Length: 1362
     "displayName": "Display Name value",
     "deviceAccountUpn": "Device Account Upn value",
     "deviceAccountPassword": "Device Account Password value",
-    "deviceFriendlyName": "Device Friendly Name value"
+    "deviceFriendlyName": "Device Friendly Name value",
+    "remediationState": "noRemediationRequired",
+    "remediationStateLastModifiedDateTime": "2017-01-01T00:00:10.730021-08:00"
   }
 }
 ```

@@ -1,32 +1,32 @@
 ---
 title: 'signIn: confirmSafe'
-description: Позволяет пометить события входа Azure AD как безопасные для защиты идентификации Azure AD.
+description: Позволяет пометить Azure AD входа как безопасные для защиты Azure AD идентификации.
 author: besiler
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: c8b6cb66ac2fc0e1a3488fd5cb3be743a5ea5c7f
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: 960d5312a409a4975d82152c8ded0b4e99a8269d
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64852727"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65212710"
 ---
 # <a name="signin-confirmsafe"></a>signIn: confirmSafe
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Позволяет администраторам пометить событие в журналах входа Azure AD как безопасное. Администраторы могут пометить события как безопасные, помеченные защитой идентификации Azure AD как рискованные, или пометить события без метки как безопасные.
+Позволяет администраторам пометить событие Azure AD входа в журналы как безопасное. Администраторы могут пометить события как безопасные, помеченные как рискованные с помощью защиты Azure AD идентификации, или пометить события без метки как безопасные.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|IdentityRiskyUser.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|IdentityRiskyUser.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|IdentityRiskyUser.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|IdentityRiskyUser.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ POST /auditLogs/signIns/confirmSafe
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|requestIds|Коллекция String|Идентификаторы событий входа, которые должны быть помечены как безопасные для защиты идентификации Azure AD.|
+|requestIds|Коллекция объектов string|Идентификаторы событий входа, которые должны быть помечены как безопасные для Azure AD идентификации.|
 
 
 
@@ -62,6 +62,8 @@ POST /auditLogs/signIns/confirmSafe
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "signinthis.confirmsafe"
@@ -79,6 +81,28 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/signinthisconfirmsafe-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/signinthisconfirmsafe-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/signinthisconfirmsafe-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/signinthisconfirmsafe-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/signinthisconfirmsafe-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

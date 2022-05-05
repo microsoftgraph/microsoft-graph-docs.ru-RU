@@ -1,26 +1,26 @@
 ---
-title: Создание deviceManagementConfigurationCategory
-description: Создание нового объекта deviceManagementConfigurationCategory.
+title: Создание объекта deviceManagementConfigurationCategory
+description: Создайте объект deviceManagementConfigurationCategory.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 150c1d857c090a729671e77edf1ae136c5878152
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 341853dae7620215b12723af9217b54607129875
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62289890"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65203437"
 ---
-# <a name="create-devicemanagementconfigurationcategory"></a>Создание deviceManagementConfigurationCategory
+# <a name="create-devicemanagementconfigurationcategory"></a>Создание объекта deviceManagementConfigurationCategory
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового [объекта deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) .
+Создайте объект [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,33 +44,33 @@ POST /deviceManagement/configurationCategories
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для объекта deviceManagementConfigurationCategory.
+В теле запроса добавьте представление объекта deviceManagementConfigurationCategory в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании устройстваManagementConfigurationCategory.
+В следующей таблице показаны свойства, необходимые при создании объекта deviceManagementConfigurationCategory.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор элемента|
 |description|String|Описание элемента|
-|categoryDescription|String|Описание загона категории|
-|helpText|String|Справка текста элемента|
+|categoryDescription|String|Описание заголовка категории|
+|Helptext|String|Текст справки элемента|
 |name|String|Имя элемента|
-|displayName|String|Отображение имени элемента|
-|платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Типы платформ, которые имеются в этой категории. Возможные значения: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`.|
-|технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Типы технологий, которые имеют параметры в категории. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
-|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Указывает, что категория содержит параметры, используемые для соответствия требованиям или конфигурации. Возможные значения: `none`, `configuration`, `compliance`.|
-|parentCategoryId|String|Родительский id категории.|
-|rootCategoryId|String|Корневой id категории.|
-|childCategoryIds|Коллекция объектов string|Список детских ids этой категории.|
+|displayName|String|Отображаемое имя элемента|
+|Платформ|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Типы платформ, которые имеют параметры в категории. Возможные значения: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`.|
+|Технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Типы технологий, параметры которых имеются в категории. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `appleRemoteManagement`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Указывает, что категория содержит параметры, используемые для соответствия или конфигурации. Возможные значения: `none`, `configuration`, `compliance`.|
+|parentCategoryId|String|Родительский идентификатор категории.|
+|rootCategoryId|String|Корневой идентификатор категории.|
+|childCategoryIds|Коллекция строк|Список дочерних идентификаторов категории.|
 
 
 
-## <a name="response"></a>Отклик
-В случае успешного `201 Created` выполнения этот метод возвращает код отклика и [объект deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) в теле отклика.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 

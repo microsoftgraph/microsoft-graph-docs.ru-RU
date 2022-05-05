@@ -1,26 +1,26 @@
 ---
-title: Перечисление associatedTeamInfo
-description: Получение списка команд в Microsoft Teams, с чем связан пользователь.
+title: Список associatedTeamInfo
+description: Получите список команд в Microsoft Teams, с которыми связан пользователь.
 author: devjha-ms
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 16842866ca4c2b03268e80eb838bbf953844c605
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: c94e2edd52bd647d2884051d0e9c53422d39c7b8
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685266"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65203704"
 ---
-# <a name="list-associatedteaminfo"></a>Перечисление associatedTeamInfo
+# <a name="list-associatedteaminfo"></a>Список associatedTeamInfo
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка команд [в Microsoft Teams](../resources/associatedteaminfo.md), с помощью [которых связан](../resources/user.md) пользователь.
-В настоящее [время пользователь](../resources/user.md) может быть связан с [командой двумя](../resources/team.md) разными способами:
-* Пользователь [может](../resources/user.md) быть непосредственным участником [команды](../resources/team.md).
-* Пользователь [может](../resources/user.md) быть членом общего [канала,](../resources/channel.md) размещенного в [команде](../resources/team.md).
+Получите список [команд](../resources/associatedteaminfo.md) в Microsoft Teams, с которыми связан [пользователь](../resources/user.md).
+Сейчас [пользователь](../resources/user.md) может быть связан с [командой](../resources/team.md) двумя способами:
+* [Пользователь](../resources/user.md) может быть непосредственным участником [команды](../resources/team.md).
+* [Пользователь](../resources/user.md) может быть участником общего [канала](../resources/channel.md), размещенного внутри [команды](../resources/team.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -54,11 +54,11 @@ GET /users/{user-id}/teamwork/associatedTeams
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию связанных [объектовTeamInfo](../resources/associatedteaminfo.md) в теле отклика.
+В случае успеха этот метод возвращает `200 OK` код отклика и коллекцию объектов [associatedTeamInfo](../resources/associatedteaminfo.md) в тексте отклика.
 
-> **Примечание**. Этот API также возвращает группу узлов общего канала, непосредственным участником которого является пользователь.
+> **Примечание**: Этот API также возвращает команду хоста общего канала, непосредственным участником которого является пользователь.
 
 ## <a name="examples"></a>Примеры
 
@@ -66,6 +66,8 @@ GET /users/{user-id}/teamwork/associatedTeams
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_associatedteaminfo"
@@ -74,11 +76,37 @@ GET /users/{user-id}/teamwork/associatedTeams
 ``` http
 GET https://graph.microsoft.com/beta/me/teamwork/associatedTeams
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-associatedteaminfo-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-associatedteaminfo-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-associatedteaminfo-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-associatedteaminfo-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-associatedteaminfo-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-associatedteaminfo-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

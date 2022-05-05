@@ -1,47 +1,47 @@
 ---
-title: тип ресурса operationApprovalPolicy
-description: Политика утверждения операции
+title: Тип ресурса operationApprovalPolicy
+description: Политика утверждения операций
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f8bcee20030f654ff17f0ebba28ba199dbbe1a7c
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 45076a2f7b7e4354a7df06182904887c1147ecaa
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63367906"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211307"
 ---
-# <a name="operationapprovalpolicy-resource-type"></a>тип ресурса operationApprovalPolicy
+# <a name="operationapprovalpolicy-resource-type"></a>Тип ресурса operationApprovalPolicy
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Политика утверждения операции
+Политика утверждения операций
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список операцииApprovalPolicies](../api/intune-rbac-operationapprovalpolicy-list.md)|[коллекция operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md)|Список свойств и связей объектов [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) .|
-|[Get operationApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-get.md)|[operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md)|Чтение свойств и связей объекта [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) .|
-|[Создание операцииApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-create.md)|[operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md)|Создайте новый [объект operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) .|
-|[Удаление операцииApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-delete.md)|Нет|Удаляет [операциюApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md).|
-|[Обновление операцииApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-update.md)|[operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md)|Обновление свойств объекта [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) .|
-|[функция getOperationsAllowedApproval](../api/intune-rbac-operationapprovalpolicy-getoperationsallowedapproval.md)|[коллекция operationApprovalPolicySet](../resources/intune-rbac-operationapprovalpolicyset.md)|Пока не задокументировано.|
-|[функция getOperationsRequiringApproval](../api/intune-rbac-operationapprovalpolicy-getoperationsrequiringapproval.md)|[коллекция operationApprovalPolicySet](../resources/intune-rbac-operationapprovalpolicyset.md)|Н/Д|
+|[Перечисление operationApprovalPolicies](../api/intune-rbac-operationapprovalpolicy-list.md)|[Коллекция operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md)|Список свойств и связей объектов [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) .|
+|[Получение operationApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-get.md)|[operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md)|Чтение свойств и связей объекта [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) .|
+|[Создание operationApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-create.md)|[operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md)|Создайте объект [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) .|
+|[Удаление operationApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-delete.md)|Нет|Удаляет [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md).|
+|[Обновление operationApprovalPolicy](../api/intune-rbac-operationapprovalpolicy-update.md)|[operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md)|Обновление свойств объекта [operationApprovalPolicy](../resources/intune-rbac-operationapprovalpolicy.md) .|
+|[Функция getApprovableOperations](../api/intune-rbac-operationapprovalpolicy-getapprovableoperations.md)|[Коллекция operationApprovalPolicySet](../resources/intune-rbac-operationapprovalpolicyset.md)|Пока не задокументировано.|
+|[Функция getOperationsRequiringApproval](../api/intune-rbac-operationapprovalpolicy-getoperationsrequiringapproval.md)|[Коллекция operationApprovalPolicySet](../resources/intune-rbac-operationapprovalpolicyset.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|ID операцииApprovalPolicy. Это свойство доступно только для чтения.|
-|displayName|Строка|Имя отображения этой операцииApprovalPolicy|
-|description|String|Описание этой операцииApprovalPolicy|
-|lastModifiedDateTime|DateTimeOffset|Последняя измененная дата и время операцииApprovalPolicy. Это свойство доступно только для чтения.|
-|policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|Тип политики для этой операцииApprovalPolicy. Возможные значения: `deviceActions`, `deviceWipe`, `deviceRetire`, `deviceRetireNonCompliant`, `deviceDelete`, `deviceLock`, `apps``windowsEnrollment``compliancePolicies``deviceDisableActivationLock``configurationPolicies``endpointSecurity``policySets``appProtectionPolicies``deviceErase``scripts``roles``filters`, . `unknownFutureValue``deviceResetPasscode`|
-|approverGroupIds|Коллекция объектов string|Групповые ID для тех, кто одобряет эту операциюApprovalPolicy|
+|id|String|Идентификатор OperationApprovalPolicy. Это свойство доступно только для чтения.|
+|displayName|Строка|Отображаемое имя объекта OperationApprovalPolicy|
+|description|Строка|Описание этой политики OperationApprovalPolicy|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения этой политики OperationApprovalPolicy. Это свойство доступно только для чтения.|
+|policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|Тип политики для этой политики OperationApprovalPolicy. Возможные значения: `deviceActions`, , `deviceWipe``deviceRetire`, , `deviceRetireNonCompliant`, `deviceDelete`, `deviceLock``deviceErase`, `deviceDisableActivationLock`, `compliancePolicies``windowsEnrollment`, `configurationPolicies`, `appProtectionPolicies`, , `policySets`, `filters`, `endpointSecurity`, `apps`, , `scripts`, , `roles`, , `deviceResetPasscode``unknownFutureValue`.|
+|approverGroupIds|Коллекция строк|Идентификаторы групп для утверждающих для этой политики OperationApprovalPolicy|
 
 ## <a name="relationships"></a>Связи
 Нет

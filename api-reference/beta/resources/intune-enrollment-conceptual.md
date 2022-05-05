@@ -1,15 +1,15 @@
 ---
-title: Регистрация корпоративных устройств с помощью Intune — API Graph Microsoft
-description: Перечисляет Graph API Microsoft для конечных точек Intune (REST), которые регистрировать устройства для организации-клиента.
+title: Регистрация корпоративных устройств с помощью Intune — Microsoft API Graph
+description: Список microsoft API Graph для Intune конечных точек (REST), которые регистрирует устройства для организации клиента.
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 5e0e299a5275e55ddf70d604916f163b02da990b
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 68bf3e2f220be640434be73a6dcb87a953870198
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368023"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65210747"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Регистрация корпоративных устройств с помощью Intune
 
@@ -25,8 +25,8 @@ ms.locfileid: "63368023"
 
 - [Профиль Windows AutoPilot Deployment для Active Directory](intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)
 - [Назначение профиля регистрации Apple](intune-enrollment-appleenrollmentprofileassignment.md)
-- [Тип регистрации владельца Apple](intune-enrollment-appleownertypeenrollmenttype.md)
-- [Пользователь Apple инициировал регистрацию профиля](intune-enrollment-appleuserinitiatedenrollmentprofile.md)
+- [Тип регистрации типа владельца Apple](intune-enrollment-appleownertypeenrollmenttype.md)
+- [Профиль регистрации, инициированный пользователем Apple](intune-enrollment-appleuserinitiatedenrollmentprofile.md)
 - [Тип регистрации, инициированный пользователем Apple](intune-enrollment-appleuserinitiatedenrollmenttype.md)
 - [Профиль Windows AutoPilot Deployment для Azure AD](intune-enrollment-azureadwindowsautopilotdeploymentprofile.md)
 - [Базовые профиль регистрации DEP](intune-enrollment-depenrollmentbaseprofile.md)
@@ -54,7 +54,7 @@ ms.locfileid: "63368023"
 - [Рекомендуемый предел регистрации](intune-enrollment-suggestedenrollmentlimit.md)
 - [Назначение профиля Windows Autopilot Deployment](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Удостоверение устройства с Windows Autopilot](intune-enrollment-windowsautopilotdeviceidentity.md)
-- [Windows состояния восстановления устройств автопилота](intune-enrollment-windowsautopilotdeviceremediationstate.md)
+- [Windows исправление устройства Autopilot](intune-enrollment-windowsautopilotdeviceremediationstate.md)
 - [Тип устройства с Windows Autopilot](intune-enrollment-windowsautopilotdevicetype.md)
 - [Полное состояние назначения профиля Windows AutoPilot](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
 - [Состояние назначения профиля Windows AutoPilot](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
@@ -63,4 +63,3 @@ ms.locfileid: "63368023"
 - [Тип использования устройства Windows](intune-enrollment-windowsdeviceusagetype.md)
 - [Параметры экрана состояния регистрации Windows](intune-enrollment-windowsenrollmentstatusscreensettings.md)
 - [Тип пользователя Windows](intune-enrollment-windowsusertype.md)
-

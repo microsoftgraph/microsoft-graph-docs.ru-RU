@@ -1,23 +1,23 @@
 ---
-title: Получить accessPackageAssignmentPolicy
-description: Извлечение свойств и связей объекта accessPackageAassignmentPolicy.
+title: Получение accessPackageAssignmentPolicy
+description: Получение свойств и связей объекта accessPackageAassignmentPolicy.
 author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 12a0a334199f17e0db339e7b00732ed4361bd02d
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: ed85dcbe8cf5ed6ab671dd2f4dfc363cb86264a2
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64608304"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65209908"
 ---
-# <a name="get-accesspackageassignmentpolicy"></a>Получить accessPackageAssignmentPolicy
+# <a name="get-accesspackageassignmentpolicy"></a>Получение accessPackageAssignmentPolicy
 
 Пространство имен: microsoft.graph
 
 
-В [управлении правами Azure AD](../resources/entitlementmanagement-overview.md) извлекайте свойства и связи объекта [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .
+В [Azure AD управления правами](../resources/entitlementmanagement-overview.md) извлеките свойства и связи объекта [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "64608304"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ GET /identityGovernance/entitlementManagement/assignmentPolicies/{accessPackageA
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметр `$select` [запроса OData](/graph/query-parameters) для получения определенных свойств `$expand` и параметр для получения отношений.
+Этот метод поддерживает параметр `$select` [запроса OData](/graph/query-parameters) для получения определенных свойств и параметр `$expand` для получения связей.
 
 Например, чтобы получить пакет доступа, добавьте `$expand=accessPackage`.
 ## <a name="request-headers"></a>Заголовки запросов
@@ -53,13 +53,15 @@ GET /identityGovernance/entitlementManagement/assignmentPolicies/{accessPackageA
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного `200 OK` выполнения этот метод возвращает код ответа и запрашиваемого объекта [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и запрашиваемый [объект accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accesspackageassignmentpolicy"
@@ -68,6 +70,32 @@ GET /identityGovernance/entitlementManagement/assignmentPolicies/{accessPackageA
 ``` http
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies/{accessPackageAssignmentPolicyId}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageassignmentpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackageassignmentpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-accesspackageassignmentpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageassignmentpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageassignmentpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-accesspackageassignmentpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик
