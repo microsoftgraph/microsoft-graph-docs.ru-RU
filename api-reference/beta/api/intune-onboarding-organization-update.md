@@ -2,21 +2,21 @@
 title: Обновление организации
 description: Обновление свойств объекта organization.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e03f87fb82d7d2bace596d3828630af72fd3446a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c22b23e47fce70bfeb138fe6311cbdb5c60823b6
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027570"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65205475"
 ---
 # <a name="update-organization"></a>Обновление организации
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,9 +27,9 @@ ms.locfileid: "59027570"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,9 +53,9 @@ PATCH /organization/{organizationId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта.|
+|id|Строка|GUID объекта.|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
-|certificateConnectorSetting|[certificateConnectorSetting](../resources/intune-onboarding-certificateconnectorsetting.md)|Параметр соединиттеля сертификата.|
+|certificateConnectorSetting|[certificateConnectorSetting](../resources/intune-onboarding-certificateconnectorsetting.md)|Параметр соединителя сертификатов.|
 
 
 
@@ -108,6 +108,7 @@ Content-Length: 541
   }
 }
 ```
+
 
 
 

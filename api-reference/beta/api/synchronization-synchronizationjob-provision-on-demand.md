@@ -5,12 +5,12 @@ author: ArvindHarinder1
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d61516dc7da6bdd98bbacb6e6021f578abcb7f29
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 7ca972ae4bb28028d99375d3051978ce32c1568a
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060816"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65202938"
 ---
 # <a name="synchronizationjob-provisionondemand"></a>synchronizationJob: provisionOnDemand
 
@@ -23,9 +23,9 @@ ms.locfileid: "65060816"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
-|Делегированное (личная учетная запись Майкрософт) |Не поддерживается. |
-|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
+|Делегированные (личная учетная запись Майкрософт) |Не поддерживается. |
+|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,13 +54,13 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizat
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и stringKeyStringValuePair.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-provision-users-from-azure-ad-to-third-party-applications"></a>Пример 1. Подготовка пользователей из Azure AD в сторонних приложениях
+### <a name="example-1-provision-users-from-azure-ad-to-third-party-applications"></a>Пример 1. Подготовка пользователей Azure AD приложениям сторонних производителей
 
 #### <a name="request"></a>Запрос
 
@@ -89,27 +89,27 @@ Content-Type: application/json
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-provisionondemand-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-provisionondemand-adto3p-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-provisionondemand-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-provisionondemand-adto3p-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-provisionondemand-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-provisionondemand-adto3p-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-provisionondemand-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-provisionondemand-adto3p-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/synchronizationjob-provisionondemand-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/synchronizationjob-provisionondemand-adto3p-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/synchronizationjob-provisionondemand-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/synchronizationjob-provisionondemand-adto3p-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -134,10 +134,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-sync-on-demand-from-active-directory-to-azure-active-directory-azure-ad-cloud-sync"></a>Пример 2. Синхронизация по запросу из Active Directory в Azure Active Directory (облачная синхронизация Azure AD)
+### <a name="example-2-sync-on-demand-from-active-directory-to-azure-active-directory-azure-ad-cloud-sync"></a>Пример 2. Синхронизация по запросу из Active Directory в Azure Active Directory (Azure AD облачной синхронизации)
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_provisionondemand_AD2AAD"
@@ -161,6 +163,32 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-provisionondemand-ad2aad-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-provisionondemand-ad2aad-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-provisionondemand-ad2aad-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-provisionondemand-ad2aad-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/synchronizationjob-provisionondemand-ad2aad-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/synchronizationjob-provisionondemand-ad2aad-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

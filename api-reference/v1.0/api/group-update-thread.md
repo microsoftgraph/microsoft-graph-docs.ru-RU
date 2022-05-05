@@ -5,16 +5,16 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8f1ca49a3ed924ce65e49d06d38642fe4724410e
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: f2d2c5b7d45b4911f73795a7324bb84564d6b7c9
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589193"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65206386"
 ---
 # <a name="update-conversation-thread"></a>Обновление цепочки беседы
 
-Пространство имен: microsoft.graph Обновление объекта [потока](../resources/conversationthread.md) .
+Пространство имен: microsoft.graph. Обновление [объекта](../resources/conversationthread.md) потока.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -80,17 +80,17 @@ Content-type: application/json
 ```
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-group-thread-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-group-thread-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/update-group-thread-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/update-group-thread-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-group-thread-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-group-thread-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -98,7 +98,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

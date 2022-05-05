@@ -5,20 +5,20 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d2f512c760d0c9d50e8089420ed6c4676bb34ab8
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: ef409744ee99cbf39648252b3d192fb235060943
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589459"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211286"
 ---
 # <a name="create-settings"></a>Создание параметров
 
 Пространство имен: microsoft.graph
 
-Создайте новый параметр на основе шаблонов, доступных [в groupSettingTemplates](../resources/groupsettingtemplate.md). Эти параметры могут быть на уровне клиента или на уровне группы.
+Создайте новый параметр на основе шаблонов, доступных в [groupSettingTemplates](../resources/groupsettingtemplate.md). Эти параметры могут быть на уровне клиента или на уровне группы.
 
-Параметры группы применяются только к Microsoft 365 группам. Названный шаблон `Group.Unified` можно использовать для настройки параметров Microsoft 365 групп, `Group.Unified.Guest` а названный шаблон можно использовать для настройки параметров, определенных для группы.
+Параметры группы применяются только к Microsoft 365 группам. Именованный `Group.Unified` шаблон можно использовать для настройки параметров группы Microsoft 365 на уровне клиента, `Group.Unified.Guest` а именованный шаблон можно использовать для настройки параметров конкретной группы.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,11 +28,11 @@ ms.locfileid: "64589459"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Directory.ReadWrite.All                     |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Directory.ReadWrite.All                     |
+| Приложение                            | Directory.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Создайте параметр для всех клиентов.
+Создайте параметр на уровне клиента.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,7 +40,7 @@ ms.locfileid: "64589459"
 POST /groupSettings
 ```
 
-Создайте параметр, определенный для группы.
+Создайте параметр для конкретной группы.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -57,14 +57,14 @@ POST /groups/{id}/settings
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса предоставьте описание объекта [groupSetting](../resources/groupsetting.md) в формате JSON. Имя отображения, templateId и описание наследуются от объекта [referenced groupSettingTemplates](../resources/groupsettingtemplate.md) . Только свойство значения может быть изменено с значения по умолчанию.
+В теле запроса предоставьте описание объекта [groupSetting](../resources/groupsetting.md) в формате JSON. Отображаемое имя, templateId и описание наследуются от объекта [groupSettingTemplates](../resources/groupsettingtemplate.md) , на который указывает ссылка. Только свойство value можно изменить со значения по умолчанию.
 
-При создании объекта [groupSetting](../resources/groupsetting.md) необходимы следующие свойства.
+При создании объекта [groupSetting](../resources/groupsetting.md) требуются следующие свойства.
 
 | Параметр  | Тип                                                    | Описание                                                                                                                                                                          |
 | :--------- | :------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| templateId | String                                                  | Уникальный идентификатор для объекта [groupSettingTemplates](../resources/groupsettingtemplate.md) , используемого для создания этого объекта параметров группового уровня. Только для чтения.              |
-| values     | [settingValue](../resources/settingvalue.md) collection | Коллекция пар имен и значений, соответствующих свойствам **name** и **defaultValue** в объекте [referenced groupSettingTemplates](../resources/groupsettingtemplate.md) . |
+| templateId | Строка                                                  | Уникальный идентификатор объекта [groupSettingTemplates](../resources/groupsettingtemplate.md) на уровне клиента, используемого для создания этого объекта параметров уровня группы. Только для чтения.              |
+| values     | [Коллекция settingValue](../resources/settingvalue.md) | Коллекция пар "имя-значение", соответствующих свойствам **name** и **defaultValue** в объекте [groupSettingTemplates](../resources/groupsettingtemplate.md) , на который указывает ссылка. |
 
 ## <a name="response"></a>Отклик
 
@@ -74,7 +74,7 @@ POST /groups/{id}/settings
 
 ### <a name="request"></a>Запрос
 
-Только [объект GroupSettingTemplates](../resources/groupsettingtemplate.md) `Group.Unified` можно применять для всех Microsoft 365 групп на уровне клиента.
+Только [именованный объект groupSettingTemplates](../resources/groupsettingtemplate.md) `Group.Unified` может применяться ко Microsoft 365 групп на уровне клиента.
 
 # <a name="http"></a>[HTTP](#tab/http)
 
@@ -111,27 +111,27 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -177,13 +177,13 @@ Content-type: application/json
 }
 ```
 
-Свойство **displayName** и другие пары значений имени будут заполнены значениями по умолчанию из объекта [groupSettingTemplates](../resources/groupsettingtemplate.md) , который соответствует **шаблонуId**.
+Свойство **displayName** и другие пары "имя-значение" будут заполнены значениями по умолчанию из объекта [groupSettingTemplates](../resources/groupsettingtemplate.md) , соответствующего **templateId**.
 
 ## <a name="example-2-create-a-setting-to-block-guests-for-a-specific-microsoft-365-group"></a>Пример 2. Создание параметра для блокировки гостей для определенной Microsoft 365 группы
 
 ### <a name="request"></a>Запрос
 
-Только [названный объект groupSettingTemplates](../resources/groupsettingtemplate.md) `Group.Unified.Guest` может применяться к определенным Microsoft 365 группам.
+Только [именованный объект groupSettingTemplates](../resources/groupsettingtemplate.md) `Group.Unified.Guest` может применяться к определенным Microsoft 365 группам.
 
 # <a name="http"></a>[HTTP](#tab/http)
 
@@ -208,27 +208,27 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-for-guests-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-for-guests-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-for-guests-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-for-guests-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-for-guests-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-for-guests-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-for-guests-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-for-guests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-for-guests-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-for-guests-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

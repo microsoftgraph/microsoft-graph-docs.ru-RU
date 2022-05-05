@@ -1,22 +1,22 @@
 ---
 title: Список групп устройств
-description: Получите группы, в которые входит это устройство. Эта операция не является транзитивной.
+description: Получение групп, непосредственным участником которых является это устройство. Эта операция не является транзитивной.
 author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3e4efd6250c129b125d8d0ea6069f1a28e58a27c
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: a7a8321c12f3fb31c7daef3e79c2f4f9da82d353
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672611"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65209787"
 ---
 # <a name="list-device-groups"></a>Список групп устройств
 
 Пространство имен: microsoft.graph
 
-Получите группы, в которые входит это устройство. Эта операция не является транзитивной.
+Получение групп, непосредственным участником которых является это устройство. Эта операция не является транзитивной.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "63672611"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Приложение | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -37,7 +37,7 @@ GET /devices/{id}/memberOf
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$search`, `$count` и `$filter` для настройки отклика. Также включена литье OData, например, вы можете задать только каталоги, в которые входит устройство. Вы можете использовать `$search` в свойствах **displayName** и **description**.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$search`, `$count` и `$filter` для настройки отклика. Приведение OData также включено. Например, можно выполнить приведение, чтобы получить только directoryRoles, в который входит устройство. Вы можете использовать `$search` в свойствах **displayName** и **description**.
 
 Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
 
@@ -48,7 +48,7 @@ GET /devices/{id}/memberOf
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
-| ConsistencyLevel | необязательный. Этот заглавной и `$count` требуется при использовании `$search`параметров литья OData или при определенном использовании `$filter`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries). |
+| ConsistencyLevel | необязательный. Этот заголовок и являются `$count` обязательными при использовании `$search`параметров приведения OData или при определенном использовании `$filter`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries). |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -59,7 +59,7 @@ GET /devices/{id}/memberOf
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-groups-that-the-device-is-a-direct-member-of"></a>Пример 1. Получить группы, которые устройство является непосредственным участником
+### <a name="example-1-get-groups-that-the-device-is-a-direct-member-of"></a>Пример 1. Получение групп, непосредственным участником которых является устройство
 
 #### <a name="request"></a>Запрос
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -148,7 +148,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"
@@ -160,7 +160,7 @@ Content-type: text/plain
 394
 ```
 
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Пример 3. Использование литых и $search OData для получения членства с отображаемой фамилией, содержаной буквы "Видео", включая количество возвращенных объектов
+### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Пример 3. Использование приведения и $search OData для получения членства с отображаемыми именами, содержащим буквы "Видео", включая количество возвращаемых объектов
 
 #### <a name="request"></a>Запрос
 
@@ -177,7 +177,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -204,24 +204,48 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>Пример 4. Использование литых и $filter OData для получения членства с отображаемого имени, которое начинается с буквы "A", включая количество возвращенных объектов
+### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>Пример 4. Использование приведения и $filter OData для получения членства с отображаемого имени, которое начинается с буквы A, включая количество возвращаемых объектов
 
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
-  "name": "get_a_count"
+  "blockType": "request",
+  "name": "list_devices_memberof_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'A')
 ConsistencyLevel: eventual
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-devices-memberof-startswith-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-devices-memberof-startswith-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-devices-memberof-startswith-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-devices-memberof-startswith-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-devices-memberof-startswith-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

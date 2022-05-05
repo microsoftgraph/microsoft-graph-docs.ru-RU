@@ -2,21 +2,21 @@
 title: Создать VPP токен
 description: Создайте новый объект vppToken.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 526b86394a2ad91ab2eb511a1c5e43814a0b66bd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 872624fb1c451a94c02367d4a0dee15416b5efc4
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59087739"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65212276"
 ---
 # <a name="create-vpptoken"></a>Создать VPP токен
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,9 +27,9 @@ ms.locfileid: "59087739"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceAppManagement/vppTokens
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /deviceAppManagement/vppTokens
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Создается автоматически при создании appleVolumePurchaseProgramToken. Это ключ объекта.|
+|id|Строка|Создается автоматически при создании appleVolumePurchaseProgramToken. Это ключ объекта.|
 |organizationName|Строка|Организация, связанная с токеном Apple Volume Purchase Program.|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|Тип программы оптовых покупок, с которой связан заданный токен Apple Volume Purchase Program. Возможные значения: `business`, `education`. Возможные значения: `business`, `education`.|
 |appleId|Строка|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
@@ -62,15 +62,15 @@ POST /deviceAppManagement/vppTokens
 |токен|Строка|Строка токена Apple Volume Purchase Program; загрузка выполнена из Apple Volume Purchase Program.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения, связанного с токеном Apple Volume Purchase Program.|
 |состояние|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Текущее состояние токена Apple Volume Purchase Program. Возможные значения: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`. Возможные значения: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`, `duplicateLocationId`.|
-|tokenActionResults|[коллекция vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|Коллекция статусов действий, выполняемых в маркере программы покупки тома Apple.|
+|tokenActionResults|[Коллекция vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|Коллекция состояний действий, выполняемых с токеном apple Volume Purchase Program.|
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Текущее состояние последней синхронизации приложения, инициированной с помощью токена Apple Volume Purchase Program. Возможные значения: `none`, `inProgress`, `completed`, `failed`. Возможные значения: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Логическое|Автоматически обновятся все приложения, не только для токена VPP.|
 |countryOrRegion|Строка|Автоматически обновятся все приложения, не только для токена VPP.|
-|dataSharingConsentGranted|Логическое|Согласие на обмен данными с программой покупки тома Apple.|
-|displayName|String|Администратор указал имя, удобное для маркеров.|
-|locationName|String|Расположение маркера, возвращенного из VPP Apple.|
-|claimTokenManagementFromExternalMdm|Логическое|Согласие администратора на разрешение требовать управления маркерами из внешнего MDM.|
-|roleScopeTagIds|Коллекция объектов string|ID-теги области ролей, присвоенные этому объекту.|
+|dataSharingConsentGranted|Логическое|Согласие, предоставленное для общего доступа к данным с помощью программы Apple Volume Purchase Program.|
+|displayName|String|Понятное имя маркера, указанное администратором.|
+|locationName|String|Расположение маркера, возвращенное из Apple VPP.|
+|claimTokenManagementFromExternalMdm|Логическое|Согласие администратора на разрешение управления утверждениями маркеров из внешнего MDM.|
+|Идентификаторы roleScopeTagId|Коллекция строк|Идентификаторы тегов области роли, назначенные этой сущности.|
 
 
 
@@ -156,6 +156,7 @@ Content-Length: 1115
   ]
 }
 ```
+
 
 
 

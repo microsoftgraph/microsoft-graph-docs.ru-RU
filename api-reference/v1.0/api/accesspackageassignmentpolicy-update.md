@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bf59437cde4e33cafe7c9d6da1af24a735f17969
-ms.sourcegitcommit: ca3edeed9408ee94bb12d7acf506d7317bf01d25
+ms.openlocfilehash: bacd3eb3c3e65effa389046a8d9aa1b554d5d91c
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64842344"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65209865"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>Обновление accessPackageAssignmentPolicy
 
@@ -24,8 +24,8 @@ ms.locfileid: "64842344"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -49,8 +49,8 @@ PUT /identityGovernance/entitlementManagement/assignmentPolicies/{accessPackageA
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя политики.|
-|description|String|Описание политики.|
+|displayName|Строка|Отображаемое имя политики.|
+|description|Строка|Описание политики.|
 |allowedTargetScope|allowedTargetScope|Кто может запрашивать пакет доступа с помощью этой политики. Возможные значения: `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `unknownFutureValue`.|
 |specificAllowedTargets|[Коллекция subjectSet](../resources/subjectset.md)|Субъектам, которые могут быть назначены доступ из пакета доступа с помощью этой политики.|
 |Истечения срока действия|[expirationPattern](../resources/expirationpattern.md)|Дата окончания срока действия для назначений, созданных в этой политике.|
@@ -58,7 +58,7 @@ PUT /identityGovernance/entitlementManagement/assignmentPolicies/{accessPackageA
 |requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|Задает параметры для утверждения запросов на назначение пакета доступа с помощью этой политики. Например, если требуется утверждение для новых запросов.|
 |reviewSettings|[accessPackageReviewSettings](../resources/accesspackageassignmentreviewsettings.md)|Параметры для проверки доступа к назначениям с помощью этой политики.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный объект [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) в тексте отклика.
 
 
@@ -66,6 +66,8 @@ PUT /identityGovernance/entitlementManagement/assignmentPolicies/{accessPackageA
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accesspackageassignmentpolicy"
@@ -126,6 +128,24 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accesspackageassignmentpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackageassignmentpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-accesspackageassignmentpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accesspackageassignmentpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

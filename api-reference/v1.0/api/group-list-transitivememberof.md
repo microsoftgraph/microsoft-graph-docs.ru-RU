@@ -1,22 +1,22 @@
 ---
 title: Перечисление group transitive memberOf
-description: Получите группы, в которые входит группа.  Эта операция является транзитной и также будет включать все группы, вложенные в эту группу. В отличие от получения пользовательских Microsoft 365, это возвращает все типы групп, а не только Microsoft 365 групп.
+description: Получение групп, в которые входит группа.  Эта операция является транзитивной и также будет включать все группы, в которые эти группы входят. В отличие от получения пользовательских Microsoft 365, это возвращает все типы групп, а не только Microsoft 365 групп.
 author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3983c0164df4b912a7f43e06993d6bcb06e0421d
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: c720576d8cda6b15c002d3c8c9c0058fafbd404f
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64588549"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65206043"
 ---
 # <a name="list-group-transitive-memberof"></a>Перечисление group transitive memberOf
 
 Пространство имен: microsoft.graph
 
-Получите группы, в которые входит группа. Эта операция является транзитной и также будет включать все группы, вложенные в эту группу. В отличие от получения пользовательских Microsoft 365, это возвращает все типы групп, а не только Microsoft 365 групп.
+Получение групп, в которые входит группа. Эта операция является транзитивной и также будет включать все группы, в которые эти группы входят. В отличие от получения пользовательских Microsoft 365, это возвращает все типы групп, а не только Microsoft 365 групп.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ GET /groups/{id}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Также включено литье OData, например, для получения только транзитных участников группы. Вы можете использовать `$search` в свойствах **displayName** и **description**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Приведение OData также включено, например можно привести, чтобы получить только транзитивных членов группы. Вы можете использовать `$search` в свойствах **displayName** и **description**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -59,7 +59,7 @@ GET /groups/{id}/transitiveMemberOf
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-groups-and-administrative-units-that-the-group-is-a-transitive-member-of"></a>Пример 1. Получить группы и административные единицы, которые группа является транзитным членом
+### <a name="example-1-get-groups-and-administrative-units-that-the-group-is-a-transitive-member-of"></a>Пример 1. Получение групп и административных единиц, которые группа является транзитивным членом
 
 #### <a name="request"></a>Запрос
 
@@ -77,32 +77,32 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMemberOf
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-group-transitivememberof-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-group-transitivememberof-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-group-transitivememberof-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-group-transitivememberof-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/get-group-transitivememberof-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-transitivememberof-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/get-group-transitivememberof-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-transitivememberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/get-group-transitivememberof-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/get-group-transitivememberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-group-transitivememberof-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-group-transitivememberof-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMemberOf
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -185,7 +185,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"
@@ -198,7 +198,7 @@ Content-type: text/plain
 294
 ```
 
-### <a name="example-4-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Пример 4. Использование литых и $search OData для получения членства в группах с отображаемой именами, которые содержат буквы "tier", включая количество возвращенных объектов
+### <a name="example-4-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Пример 4. Использование приведения и $search OData для получения членства в группах с отображаемыми именами, содержащим буквы "уровень", включая количество возвращаемых объектов
 
 #### <a name="request"></a>Запрос
 
@@ -216,7 +216,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -243,7 +243,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 5. Использование литых и $filter OData для получения членства с именем отображения, которое начинается с "A", включая количество возвращенных объектов
+### <a name="example-5-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 5. Использование приведения и $filter OData для получения членства с отображаемого имени, которое начинается с "A", включая количество возвращаемых объектов
 
 #### <a name="request"></a>Запрос
 
@@ -261,7 +261,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

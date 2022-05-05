@@ -1,35 +1,35 @@
 ---
-title: Обновление deviceManagementExchangeOnPremisesPolicy
+title: Обновление объекта deviceManagementExchangeOnPremisesPolicy
 description: Обновление свойств объекта deviceManagementExchangeOnPremisesPolicy.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15b820171929651c48fe783c8664b06e63ab6444
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 48e29ff78556cb0568076c928923e1685cc12d6e
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59076749"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65206303"
 ---
-# <a name="update-devicemanagementexchangeonpremisespolicy"></a>Обновление deviceManagementExchangeOnPremisesPolicy
+# <a name="update-devicemanagementexchangeonpremisespolicy"></a>Обновление объекта deviceManagementExchangeOnPremisesPolicy
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [deviceManagementExchangeOnPremisesPolicy.](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)
+Обновление свойств объекта [deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,26 +44,26 @@ PATCH /deviceManagement/exchangeOnPremisesPolicies/{deviceManagementExchangeOnPr
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для [объекта deviceManagementExchangeOnPremisesPolicy.](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)
+В теле запроса добавьте представление объекта [deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании [устройстваManagementExchangeOnPremisesPolicy.](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)
+В следующей таблице показаны свойства, необходимые при создании [объекта deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
-|notificationContent|В двоичном формате|Текст уведомления, который будет отправлен пользователям, на карантин по этой политике. Это HTML массива UTF8 с кодом byte.|
+|id|Строка|Пока не задокументировано.|
+|notificationContent|Binary|Текст уведомления, который будет отправлен пользователям, помещенным в карантин этой политикой. Это HTML-кодировка массива байтов в кодировке UTF8.|
 |defaultAccessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Состояние доступа по умолчанию в Exchange. Это правило применяется глобально ко всей Exchange организации. Возможные значения: `none`, `allow`, `block`, `quarantine`.|
-|accessRules|[коллекция deviceManagementExchangeAccessRule](../resources/intune-onboarding-devicemanagementexchangeaccessrule.md)|Список правил доступа к устройствам в Exchange. Правила доступа глобально применяются ко всей Exchange организации|
-|knownDeviceClasses|[коллекция deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)|Список классов устройств, известных Exchange|
+|accessRules|[Коллекция deviceManagementExchangeAccessRule](../resources/intune-onboarding-devicemanagementexchangeaccessrule.md)|Список правил доступа к устройствам в Exchange. Правила доступа глобально применяются ко всей Exchange организации.|
+|knownDeviceClasses|[Коллекция deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)|Список классов устройств, известных Exchange|
 
 
 
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа и обновленный объект `200 OK` [deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) в тексте ответа.
+## <a name="response"></a>Ответ
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и обновленный объект [deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -131,6 +131,7 @@ Content-Length: 714
   ]
 }
 ```
+
 
 
 

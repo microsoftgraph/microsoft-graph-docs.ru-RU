@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bb5bc9c0b6d55f4bf93e57cbbdb852d5bd109b8f
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 6aac3e2ac4ecb3c539a24bf8fa730641e2fa09e1
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65134579"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65203795"
 ---
 # <a name="accesspackageassignment-additionalaccess"></a>accessPackageAssignment: additionalAccess
 Пространство имен: microsoft.graph
@@ -24,8 +24,8 @@ ms.locfileid: "65134579"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,8 +43,8 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments/additiona
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-| accessPackageId | String |  Указывает идентификатор пакета доступа, для которого вызывающий объект должен получить назначения. Обязательный. |
-| incompatibleAccessPackageId | String | Конкретный несовместимый пакет доступа, для которого вызывающий объект должен получить только те назначения, в которых пользователь также имеет назначение этому несовместимым пакету доступа. Обязательный. |
+| accessPackageId | Строка |  Указывает идентификатор пакета доступа, для которого вызывающий объект должен получить назначения. Обязательно. |
+| incompatibleAccessPackageId | Строка | Конкретный несовместимый пакет доступа, для которого вызывающий объект должен получить только те назначения, в которых пользователь также имеет назначение этому несовместимым пакету доступа. Обязательно. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -58,7 +58,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments/additiona
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [accessPackageAssignment](../resources/accesspackageassignment.md) в теле отклика.
 
@@ -70,6 +70,8 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments/additiona
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accesspackageassignment_additionalaccess"
@@ -78,6 +80,32 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments/additiona
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments/additionalAccess(accessPackageId='2506aef1-3929-4d24-a61e-7c8b83d95e6f',incompatibleAccessPackageId='d5d99728-8c0b-4ede-83d2-cf9b0e8dabfb')?$expand=target
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/accesspackageassignment-additionalaccess-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/accesspackageassignment-additionalaccess-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/accesspackageassignment-additionalaccess-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/accesspackageassignment-additionalaccess-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accesspackageassignment-additionalaccess-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackageassignment-additionalaccess-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

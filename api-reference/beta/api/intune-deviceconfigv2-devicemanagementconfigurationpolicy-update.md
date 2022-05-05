@@ -1,22 +1,22 @@
 ---
-title: Обновление deviceManagementConfigurationPolicy
+title: Обновление объекта deviceManagementConfigurationPolicy
 description: Обновление свойств объекта deviceManagementConfigurationPolicy.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1783471935f049f2b5fa85391b1e1fe24ea82dd6
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 130a4bf99ad3c229d74e8d75f1599b547f1af05c
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629654"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65208634"
 ---
-# <a name="update-devicemanagementconfigurationpolicy"></a>Обновление deviceManagementConfigurationPolicy
+# <a name="update-devicemanagementconfigurationpolicy"></a>Обновление объекта deviceManagementConfigurationPolicy
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "64629654"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,33 +44,33 @@ PATCH /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySe
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для [объекта deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) .
+В теле запроса добавьте представление объекта [deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании [устройстваManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md).
+В следующей таблице показаны свойства, необходимые при создании [объекта deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ документа политики. Автоматически созданный.|
+|id|String|Ключ документа политики. Создается автоматически.|
 |name|String|Имя политики|
 |description|Строка|Описание политики|
-|платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Платформы для этой политики. Возможные значения: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`.|
-|технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Технологии для этой политики. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
+|Платформ|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Платформы для этой политики. Возможные значения: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`.|
+|Технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Технологии для этой политики. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `appleRemoteManagement`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|Дата и время создания политики|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения политики|
 |settingCount|Int32|Количество параметров|
 |creationSource|Строка|Источник создания политики|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
+|Идентификаторы roleScopeTagId|Коллекция строк|Список тегов области для этого экземпляра сущности.|
 |isAssigned|Boolean|Состояние назначения политики. Это свойство доступно только для чтения.|
-|templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Справочные сведения по шаблонам|
+|templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Справочные сведения о шаблоне|
 
 
 
-## <a name="response"></a>Отклик
-В случае успешного `200 OK` выполнения этот метод возвращает код отклика и обновленный [объект deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) в тексте ответа.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный объект [deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 

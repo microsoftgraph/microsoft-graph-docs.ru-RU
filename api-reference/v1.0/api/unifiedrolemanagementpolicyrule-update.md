@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9c082c138b0846635773822ce0f3976e99a62066
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: a32f562a86ed72d8da728973ca6c5b5a5db7fcbb
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65134529"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65204425"
 ---
 # <a name="update-unifiedrolemanagementpolicyrule"></a>Обновление unifiedRoleManagementPolicyRule
 Пространство имен: microsoft.graph
@@ -27,8 +27,8 @@ ms.locfileid: "65134529"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -53,15 +53,15 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{un
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|claimValue|String|Значение утверждения контекста проверки подлинности. <br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyAuthenticationContextRule** .|
+|claimValue|Строка|Значение утверждения контекста проверки подлинности. <br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyAuthenticationContextRule** .|
 |enabledRules|Коллекция строк|Коллекция правил, включенных для этого правила политики. Например, `MultiFactorAuthentication`и `Ticketing``Justification`.<br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyEnablementRule** .|
 |isDefaultRecipientsEnabled|Логическое|Указывает, будет ли получатель по умолчанию получать уведомление по электронной почте.<br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyNotificationRule** .|
 |isEnabled|Boolean| Указывает, включено ли это правило. <br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyAuthenticationContextRule** .|
 |isExpirationRequired|Логическое|Указывает, требуется ли срок действия, является ли это постоянно активным назначением или допустимостью. <br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyExpirationRule** .|
 |maximumDuration|Длительность| Максимальная длительность, допустимая для допустимости или назначения, которая не является постоянной. Требуется, если **isExpirationRequired** имеет значение `true`. <br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyExpirationRule** . |
-|notificationLevel|String|Уровень уведомления. Возможные значения: `None`, `Critical`. `All`<br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyNotificationRule** .|
+|notificationLevel|Строка|Уровень уведомления. Возможные значения: `None`, `Critical`. `All`<br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyNotificationRule** .|
 |notificationRecipients|Коллекция String|Список получателей уведомлений по электронной почте.<br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyNotificationRule** .|
-|notificationType|String|Тип уведомления. Поддерживается `Email` только.<br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyNotificationRule** .|
+|notificationType|Строка|Тип уведомления. Поддерживается `Email` только.<br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyNotificationRule** .|
 |recipientType|String|Тип получателя уведомления. Возможные значения: `Requestor`, `Approver`. `Admin`<br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyNotificationRule** .|
 |setting|[approvalSettings](../resources/approvalsettings.md)|Параметры для утверждения назначения роли. <br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyApprovalRule** .|
 |target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Определяет сведения об области, предназначенной для правила политики управления ролами. Сведения могут включать тип субъекта, тип назначения роли и действия, влияющие на роль. <br/><br/> Может быть обновлен для всех типов правил.|
@@ -77,6 +77,8 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{un
 ### <a name="request"></a>Запрос
 
 В следующем примере обновляется правило политики управления ролами типа **unifiedRoleManagementPolicyExpirationRule** и с идентификатором `Expiration_EndUser_Assignment`.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_unifiedrolemanagementpolicyrule"
@@ -103,6 +105,28 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-unifiedrolemanagementpolicyrule-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-unifiedrolemanagementpolicyrule-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-unifiedrolemanagementpolicyrule-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-unifiedrolemanagementpolicyrule-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-unifiedrolemanagementpolicyrule-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

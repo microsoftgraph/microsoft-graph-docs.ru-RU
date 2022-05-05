@@ -1,29 +1,29 @@
 ---
-title: 'группа: проверкаProperties'
-description: Проверьте, соответствует ли Microsoft 365 или псевдониму почты, соответствующим политикам именования.
+title: 'group: validateProperties'
+description: Проверьте, соответствует ли Microsoft 365 отображаемое имя группы или псевдоним электронной почты политикам именования.
 ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 88c162ad3aa40aa4ed6c6a293afeef3a6470f66d
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 9c8da32a04195e42b97562705551af3e0326ce42
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64588402"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65203045"
 ---
-# <a name="group-validateproperties"></a>группа: проверкаProperties
+# <a name="group-validateproperties"></a>group: validateProperties
 
 Пространство имен: microsoft.graph
 
-Проверьте, соответствует ли Microsoft 365 или псевдониму почты, соответствующим политикам именования. Клиенты могут использовать API, чтобы определить, допустимо ли имя или псевдоним почты перед тем, как обновить Microsoft 365 группу. Для проверки свойств перед созданием группы используйте функцию [validateProperties](directoryobject-validateproperties.md) для объектов каталога.
+Проверьте, соответствует ли Microsoft 365 отображаемое имя группы или псевдоним электронной почты политикам именования. Клиенты могут использовать API для определения допустимого отображаемого имени или псевдонима почты, прежде чем пытаться **обновить Microsoft 365** группу. Для проверки свойств перед созданием группы используйте функцию [validateProperties](directoryobject-validateproperties.md) для объектов каталога.
 
-Следующие проверки выполняются для свойств отображения имени и ником почты:
+Для свойств отображаемого имени и псевдонима почты выполняются следующие проверки:
 
-1. Проверка политики имен префикса и суффикса
+1. Проверка политики именования префиксов и суффиксов
 2. Проверка настраиваемой политики запрещенных слов
 
-Этот API возвращается с первым сбоем. Если одно или несколько свойств не удается несколько проверки, возвращается только свойство с первым сбоем проверки. Однако вы можете проверить как имя почты, так и имя дисплея и получить коллекцию ошибок проверки, если вы только проверяете политику именования префикса и суффикса.
+Этот API возвращается с первым обнаруженным сбоем. Если одному или нескольким свойствам не удается выполнить несколько проверк, возвращается только свойство с первым сбоем проверки. Однако вы можете проверить псевдоним почты и отображаемое имя и получить коллекцию ошибок проверки, если проверяете только политику именования префиксов и суффиксов.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,7 +33,7 @@ ms.locfileid: "64588402"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Group.Read.All, Group.ReadWrite.All         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Group.Read.All, Group.ReadWrite.All         |
+| Приложение                            | Group.Read.All, Group.ReadWrite.All         |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -56,17 +56,17 @@ POST /groups/{id}/validateProperties
 
 | Параметр        | Тип   | Описание                                                                                                                                                      |
 | :--------------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName      | Строка | Отображаемого имени группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство (displayName или mailNickname).  |
-| mailNickname     | String | Имя почты группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство (displayName или mailNickname). |
-| onBehalfOfUserId | Guid   | ID объекта пользователя, который должен выдать себя при вызове API. Результаты проверки для атрибутов и ролей onBehalfOfUserId.                       |
+| displayName      | Строка | Отображаемое имя проверяемой группы. Свойство не является обязательным по отдельности. Однако требуется по крайней мере одно свойство (displayName или mailNickname).  |
+| mailNickname     | String | Псевдоним электронной почты проверяемой группы. Свойство не является обязательным по отдельности. Однако требуется по крайней мере одно свойство (displayName или mailNickname). |
+| onBehalfOfUserId | Guid   | Идентификатор объекта пользователя, олицетворяемого при вызове API. Результаты проверки предназначены для атрибутов и ролей onBehalfOfUserId.                       |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешной проверки `204 No Content` и без ошибок проверки метод возвращает код ответа. Метод не возвращает данные в теле отклика.
+При успешном выполнении и отсутствии ошибок проверки метод возвращает `204 No Content` код отклика. Метод не возвращает данные в теле отклика.
 
-Если запрос недействителен, метод возвращает `400 Bad Request` код ответа. Сообщение об ошибке с сведениями о недействительности запроса возвращается в тексте ответа.
+Если запрос недопустим, метод возвращает код `400 Bad Request` ответа. В тексте ответа возвращается сообщение об ошибке с подробными сведениями о недопустимом запросе.
 
-При ошибке проверки. Метод возвращает код `422 Unprocessable Entity` ответа. Сообщение об ошибке и коллекция сведений об ошибках возвращаются в тексте ответа.
+При возникновении ошибки проверки. Метод возвращает код `422 Unprocessable Entity` отклика. В тексте ответа возвращается сообщение об ошибке и коллекция сведений об ошибке.
 
 ## <a name="examples"></a>Примеры
 
@@ -93,32 +93,32 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-validateproperties-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-validateproperties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-validateproperties-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-validateproperties-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/group-validateproperties-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/group-validateproperties-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/group-validateproperties-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/group-validateproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/group-validateproperties-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/group-validateproperties-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-validateproperties-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-validateproperties-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

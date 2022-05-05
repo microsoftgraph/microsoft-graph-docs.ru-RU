@@ -1,23 +1,23 @@
 ---
 title: Операции со списком
-description: Получите список richLongRunningOperations, связанных с сайтом.
+description: Получение списка richLongRunningOperations, связанных с сайтом.
 author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: f9504ee561c69d51a2e4fb065d99cfaca07a914b
-ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
+ms.openlocfilehash: 101e25a8faf87b4fa483ab6b19c84f24710feef2
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62282193"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65202976"
 ---
 # <a name="list-operations"></a>Операции со списком
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список [richLongRunningOperations](../resources/richlongrunningoperation.md) , связанных с [сайтом](../resources/site.md).
+Получение списка [richLongRunningOperations, связанных](../resources/richlongrunningoperation.md) с [сайтом](../resources/site.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -49,9 +49,9 @@ GET /sites/{siteId}/operations
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешной `200 OK` работы этот метод возвращает код ответа и коллекцию объектов [richLongRunningOperation](../resources/richlongrunningoperation.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [richLongRunningOperation](../resources/richlongrunningoperation.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/sites/{site-ID}/operations
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-richlongrunningoperation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-richlongrunningoperation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

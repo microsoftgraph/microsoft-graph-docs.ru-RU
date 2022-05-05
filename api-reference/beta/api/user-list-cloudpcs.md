@@ -1,23 +1,23 @@
 ---
 title: Перечисление облачных компьютеров для пользователя
-description: Список устройств CloudPC, которые назначены вошедаму пользователю.
+description: Перечислите устройства cloudPC, которые связаны с вошедшим пользователем.
 author: andrewku0409
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6d2e1427cf94c80c61426f15df7256c9ad917661
-ms.sourcegitcommit: 4ef29d4a2cfa1ccc4a3da649e683377b17b90108
+ms.openlocfilehash: c63838a4e63d4126a5cfb270cd01618c340eca7b
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65126361"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211978"
 ---
 # <a name="list-cloudpcs-for-user"></a>Перечисление облачных компьютеров для пользователя
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список устройств [CloudPC](../resources/cloudpc.md) , которые назначены вошедаму пользователю. 
+Перечислите устройства [cloudPC](../resources/cloudpc.md), которые связаны с вошедшим пользователем. 
 
 >[!NOTE]
 >Эта операция возвращает только следующие свойства: **id**, **displayName**, **imageDisplayName**, **servicePlanId**, **servicePlanName**, **servicePlanType**, **status**, **lastModifiedDateTime**, **aadDeviceId**, **statusDetails**, **gracePeriodEndDateTime**.
@@ -27,8 +27,8 @@ ms.locfileid: "65126361"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -52,13 +52,15 @@ GET /me/cloudPCs
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [cloudPC](../resources/cloudpc.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_cloudpc"
@@ -67,6 +69,28 @@ GET /me/cloudPCs
 ``` http
 GET https://graph.microsoft.com/beta/me/cloudPCs
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-cloudpc-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-cloudpc-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-cloudpc-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-cloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpc-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

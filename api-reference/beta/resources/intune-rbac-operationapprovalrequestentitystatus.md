@@ -1,22 +1,22 @@
 ---
-title: тип ресурса operationApprovalRequestEntityStatus
+title: Тип ресурса operationApprovalRequestEntityStatus
 description: Объект OperationApprovalRequestEntityStatus
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7449a0fd644e23bd7cba49398ecb3c84ac6e739d
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: ffc877ddf0a724b1471c55e2b9edb0455e4da0fb
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61343590"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65209130"
 ---
-# <a name="operationapprovalrequestentitystatus-resource-type"></a>тип ресурса operationApprovalRequestEntityStatus
+# <a name="operationapprovalrequestentitystatus-resource-type"></a>Тип ресурса operationApprovalRequestEntityStatus
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,10 +25,10 @@ ms.locfileid: "61343590"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|requestId|Строка|ID operationApprovalRequest для этого объекта. Это свойство доступно только для чтения.|
-|requestExpirationDateTime|DateTimeOffset|DateTime, в котором действия по запросу больше не разрешены. Это свойство доступно только для чтения.|
-|requestStatus|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|Текущий статус запроса на утверждение. Это свойство доступно только для чтения. Возможные значения: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`.|
-|entityLocked|Boolean|Состояние объекта в отношении изменений, разрешенных дальнейших запросов или блокировки объекта. Это свойство доступно только для чтения.|
+|requestId|Строка|Идентификатор OperationApprovalRequest для этой сущности. Это свойство доступно только для чтения.|
+|requestExpirationDateTime|DateTimeOffset|Дата и время, когда действия по запросу больше не разрешены. Это свойство доступно только для чтения.|
+|requestStatus|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|Текущее состояние запроса на утверждение. Это свойство доступно только для чтения. Возможные значения: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`, `unknownFutureValue`.|
+|entityLocked|Логическое|Состояние сущности в отношении изменений, разрешено ли дальнейшие запросы или сущность заблокирована. Это свойство доступно только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Нет

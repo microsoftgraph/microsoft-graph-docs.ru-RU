@@ -1,22 +1,22 @@
 ---
 title: Перечисление транзитивных групп устройств
-description: Получите группы, в которые входит устройство.
+description: Получение групп, членом которых является устройство.
 author: spunukol
 ms.prod: directory-management
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.openlocfilehash: 0bf347808a302525903f3f445229eea44367c236
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 4610a7c493146c127e3847d762fc953635f50733
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672282"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65203975"
 ---
 # <a name="list-device-transitive-groups"></a>Перечисление транзитивных групп устройств
 
 Пространство имен: microsoft.graph
 
-Получите группы, в которые входит устройство. Этот запрос API является транзитным и также возвращает все группы, вложенные в устройство.
+Получение групп, членом которых является устройство. Этот запрос API является транзитивным и также возвращает все группы, в которые входит устройство.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -59,7 +59,7 @@ GET /devices/{id | userPrincipalName}/transitiveMemberOf
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-groups-that-the-device-is-a-transitive-member-of"></a>Пример 1. Получить группы, которые устройство является транзитным членом
+### <a name="example-1-get-groups-that-the-device-is-a-transitive-member-of"></a>Пример 1. Получение групп, которые устройство является транзитивным членом
 
 #### <a name="request"></a>Запрос
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -148,7 +148,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"
@@ -160,7 +160,7 @@ Content-type: text/plain
 294
 ```
 
-### <a name="example-3-use-odata-cast-and-search-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Пример 3. Использование литых и $search OData для получения членства в группе с именами отображения, содержами буквы "Видео", включая количество возвращенных объектов.
+### <a name="example-3-use-odata-cast-and-search-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Пример 3. Использование приведения и $search OData для получения членства в группах с отображаемыми именами, содержащим буквы "Видео", включая количество возвращаемых объектов
 
 #### <a name="request"></a>Запрос
 
@@ -177,7 +177,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -203,24 +203,48 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 4. Использование литых и $filter OData для получения членства с именем отображения, которое начинается с "A", включая количество возвращенных объектов
+### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 4. Использование приведения и $filter OData для получения членства с отображаемого имени, которое начинается с "A", включая количество возвращаемых объектов
 
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
-  "name": "get_a_count"
+  "blockType": "request",
+  "name": "list_devices_transitivememberof_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-devices-transitivememberof-startswith-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-devices-transitivememberof-startswith-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-devices-transitivememberof-startswith-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-devices-transitivememberof-startswith-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-devices-transitivememberof-startswith-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

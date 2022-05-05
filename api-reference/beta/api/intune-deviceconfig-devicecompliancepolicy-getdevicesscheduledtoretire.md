@@ -1,22 +1,22 @@
 ---
-title: действие getDevicesScheduledToRetire
+title: Функция getDevicesScheduledToRetire
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cfab154e970f6d03ecfa37e528ec88544eb24fa3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d3cf2da54b1e30b685a34d99db592219385fcba6
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103237"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65210040"
 ---
-# <a name="getdevicesscheduledtoretire-action"></a>действие getDevicesScheduledToRetire
+# <a name="getdevicesscheduledtoretire-function"></a>Функция getDevicesScheduledToRetire
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "59103237"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,27 +37,27 @@ ms.locfileid: "59103237"
 }
 -->
 ``` http
-POST /deviceManagement/deviceCompliancePolicies/getDevicesScheduledToRetire
+GET /deviceManagement/deviceCompliancePolicies/getDevicesScheduledToRetire
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
-В случае успешного действия возвращается код ответа и коллекция `200 OK` [retireScheduledManagedDevice](../resources/intune-deviceconfig-retirescheduledmanageddevice.md) в тексте ответа.
+## <a name="response"></a>Ответ
+В случае успешного выполнения эта функция возвращает код `200 OK` отклика и коллекцию [retireScheduledManagedDevice](../resources/intune-deviceconfig-retirescheduledmanageddevice.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/getDevicesScheduledToRetire
+GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/getDevicesScheduledToRetire
 ```
 
 ### <a name="response"></a>Отклик
@@ -88,6 +88,7 @@ Content-Length: 670
   ]
 }
 ```
+
 
 
 

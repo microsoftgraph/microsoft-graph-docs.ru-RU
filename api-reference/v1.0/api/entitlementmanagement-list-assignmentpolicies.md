@@ -1,21 +1,21 @@
 ---
-title: Назначение спискаPolicies
-description: Список объектов accessPackageAssignmentPolicy.
+title: Перечисление assignmentPolicies
+description: Вывод списка объектов accessPackageAssignmentPolicy.
 author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 82de66f4eac1095374177eff848ea4e6b67d1540
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: f5a6776ac699e35aa21419d1fa2f1baf018e2ced
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64608303"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65209699"
 ---
-# <a name="list-assignmentpolicies"></a>Назначение спискаPolicies
+# <a name="list-assignmentpolicies"></a>Перечисление assignmentPolicies
 Пространство имен: microsoft.graph
 
-В [управлении правами Azure AD](../resources/entitlementmanagement-overview.md) извлекайте список объектов [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) . Если делегированная пользователь находится в роли каталога, в итоговом списке содержатся все политики назначения, которые вызывающий имеет доступ к считыву, во всех каталогах и пакетах доступа. Если делегированная пользователь является менеджером пакетов доступа или владельцем каталога, [](entitlementmanagement-list-accesspackages.md) `$expand=accessPackageAssignmentPolicies` он должен вместо этого получить политики для пакетов доступа, которые они могут прочитать с помощью пакетов доступа к спискам, в том числе в качестве параметра запроса.
+В [Azure AD управления правами](../resources/entitlementmanagement-overview.md) получите список объектов [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). Если делегированный пользователь находится в роли каталога, итоговый список включает все политики назначения, к которой вызывающий объект имеет доступ для чтения во всех каталогах и пакетах доступа. Если делегированный пользователь является диспетчером пакетов доступа или владельцем каталога, он должен получить политики для пакетов доступа, которые он может считывать с помощью [accessPackage списка](entitlementmanagement-list-accesspackages.md)`$expand=accessPackageAssignmentPolicies`, включив их в качестве параметра запроса.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,7 +25,7 @@ ms.locfileid: "64608303"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -39,7 +39,7 @@ GET /identityGovernance/entitlementManagement/assignmentPolicies
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает некоторые из `$filter`параметров запроса OData `$select`и `$expand` OData для настройки ответа. Например, чтобы получить политику назначения пакета доступа с заданным именем отображения, включайте `$filter=displayName eq 'Employee sales support'` в запрос. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры `$filter``$select`запроса , и `$expand` OData для настройки ответа. Например, чтобы получить политику назначения пакетов для доступа с указанным отображаемое имя, включите `$filter=displayName eq 'Employee sales support'` в запрос. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -49,13 +49,15 @@ GET /identityGovernance/entitlementManagement/assignmentPolicies
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного `200 OK` выполнения этот метод возвращает код ответа и коллекцию объектов [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) в тексте ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accesspackageassignmentpolicy"
@@ -64,6 +66,32 @@ GET /identityGovernance/entitlementManagement/assignmentPolicies
 ``` http
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-accesspackageassignmentpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-accesspackageassignmentpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-accesspackageassignmentpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-accesspackageassignmentpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accesspackageassignmentpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-accesspackageassignmentpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

@@ -1,24 +1,24 @@
 ---
-title: 'группа: assignLicense'
-description: Добавление или удаление лицензий в группе. Лицензии, присвоенные группе, будут назначены всем пользователям в группе.
+title: 'group: assignLicense'
+description: Добавьте или удалите лицензии в группе. Лицензии, назначенные группе, будут назначены всем пользователям в группе.
 ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9301efac2e3fab983ca48b8697ffa8173a74361b
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 46b1f78f3341fcd06bb0c2cf592aa8b6c6ceda4b
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589354"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65210726"
 ---
-# <a name="group-assignlicense"></a>группа: assignLicense
+# <a name="group-assignlicense"></a>group: assignLicense
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление или удаление лицензий в группе. Лицензии, присвоенные группе, будут назначены всем пользователям в группе. Дополнительные информацию о групповом лицензировании см. в [Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
+Добавьте или удалите лицензии в группе. Лицензии, назначенные группе, будут назначены всем пользователям в группе. Дополнительные сведения о групповом лицензировании см. в статье о [групповом](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) лицензировании в Azure Active Directory.
 
 Чтобы получить подписки, доступные в каталоге, выполните [запрос GET subscribedSkus](subscribedsku-list.md).
 
@@ -53,18 +53,18 @@ POST /groups/{id}/assignLicense
 
 | Параметр      | Тип                                                          | Описание                                                                                                                                                                                                                                                                    |
 | :------------- | :------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| addLicenses    | Коллекция [assignedLicense](../resources/assignedlicense.md) | Коллекция объектов [assignedLicense](../resources/assignedlicense.md), указывающих добавляемые лицензии. Вы можете отключить servicePlans, связанные с лицензией, установив свойство **disabledPlans** на [объекте assignedLicense](../resources/assignedlicense.md) . |
-| removeLicenses | Коллекция объектов Guid                                               | Коллекция skuIds, которые идентифицируют лицензии для удаления.                                                                                                                                                                                                                   |
+| addLicenses    | Коллекция [assignedLicense](../resources/assignedlicense.md) | Коллекция объектов [assignedLicense](../resources/assignedlicense.md), указывающих добавляемые лицензии. Вы можете отключить servicePlans, связанные с лицензией, заданное свойство **disabledPlans** для [объекта assignedLicense](../resources/assignedlicense.md) . |
+| removeLicenses | Коллекция объектов Guid                                               | Коллекция идентификаторов skuId, определяющий удаляемую лицензию.                                                                                                                                                                                                                   |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешной работы этот метод возвращает код `202 Accepted` ответа и объект целевой группы в тексте ответа.[](../resources/group.md)
+В случае успешного выполнения этот метод возвращает код `202 Accepted` отклика и целевой [объект группы](../resources/group.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1-add-licenses-to-the-group"></a>Пример 1. Добавление лицензий в группу
 
-В следующем примере добавляется лицензии в группу.
+В следующем примере лицензии добавляются в группу.
 
 #### <a name="request"></a>Запрос
 
@@ -100,32 +100,32 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-assignlicense-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-assignlicense-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-assignlicense-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-assignlicense-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/group-assignlicense-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/group-assignlicense-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/group-assignlicense-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/group-assignlicense-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/group-assignlicense-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/group-assignlicense-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-assignlicense-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-assignlicense-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -133,7 +133,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ответ — это обновленный групповой объект.
+Ответ — это обновленный объект группы.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -158,7 +158,7 @@ location: https://graph.microsoft.com/v2/e8e96c2a-d787-4eb1-98d7-9e57c965f1de/di
 
 ### <a name="example-2-remove-licenses-from-the-group"></a>Пример 2. Удаление лицензий из группы
 
-В следующем примере из группы удаляются лицензии.
+В следующем примере лицензии удаляются из группы.
 
 #### <a name="request"></a>Запрос
 
@@ -183,32 +183,32 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-removelicense-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-removelicense-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-removelicense-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-removelicense-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/group-removelicense-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/group-removelicense-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/group-removelicense-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/group-removelicense-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/group-removelicense-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/group-removelicense-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-removelicense-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-removelicense-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -216,9 +216,9 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ответ — это обновленный групповой объект.
+Ответ — это обновленный объект группы.
 
-> **Примечание:** Объект ответа, показанный здесь, может быть сокращен для читаемости..
+> **Примечание:** Показанный здесь объект ответа может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

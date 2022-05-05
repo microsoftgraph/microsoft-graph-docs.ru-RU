@@ -1,22 +1,22 @@
 ---
 title: Перечисление orgContacts
-description: Извлечение списка организационных контактов для этой организации.
+description: Получение списка контактов организации для этой организации.
 ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ffffd0989303b8160d7b9ef44338ca29f69465ae
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 217ddcc7da6505db32596c233a987c4e99b7fb9c
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510466"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65207758"
 ---
 # <a name="list-orgcontacts"></a>Перечисление orgContacts
 
 Пространство имен: microsoft.graph
 
-Получите список [организационных контактов](../resources/orgcontact.md) для этой организации.
+Получение списка контактов [организации для](../resources/orgcontact.md) этой организации.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,13 +44,13 @@ GET /contacts
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию объектов [orgContact](../resources/orgcontact.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [orgContact](../resources/orgcontact.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-organizational-contacts-for-an-organization"></a>Пример 1. Получить организационные контакты для организации
+### <a name="example-1-get-organizational-contacts-for-an-organization"></a>Пример 1. Получение контактов организации для организации
 
 #### <a name="request"></a>Запрос
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/contacts
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -139,7 +139,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-organizational-contacts"></a>Пример 2. Получить только количество организационных контактов
+### <a name="example-2-get-only-a-count-of-organizational-contacts"></a>Пример 2. Получение только количества контактов организации
 
 #### <a name="request"></a>Запрос
 
@@ -158,7 +158,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"
@@ -171,7 +171,7 @@ Content-type: text/plain
 ```
 
 
-### <a name="example-3-use-filter-and-top-to-get-one-organizational-contact-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 3. Использование $filter и $top для получения одного организационного контакта с именем отображения, которое начинается с "a", включая количество возвращенных объектов
+### <a name="example-3-use-filter-and-top-to-get-one-organizational-contact-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 3. Использование $filter и $top для получения одного контакта организации с отображаемой именем, которое начинается с "a", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 
@@ -190,27 +190,27 @@ GET https://graph.microsoft.com/v1.0/contacts?$filter=startswith(displayName,'A'
 ConsistencyLevel: eventual
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-a-count-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-orgcontacts-startswith-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-a-count-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-orgcontacts-startswith-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-orgcontacts-startswith-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-a-count-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-orgcontacts-startswith-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-a-count-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-orgcontacts-startswith-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-a-count-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-orgcontacts-startswith-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -218,7 +218,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -245,7 +245,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>Пример 4. Использование $search для получения организационных контактов с именами отображения, которые содержат буквы "wa", включая количество возвращенных объектов
+### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>Пример 4. Использование $search для получения контактов организации с отображаемыми именами, содержащим буквы "wa", включая количество возвращаемых объектов
 
 #### <a name="request"></a>Запрос
 
@@ -292,7 +292,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

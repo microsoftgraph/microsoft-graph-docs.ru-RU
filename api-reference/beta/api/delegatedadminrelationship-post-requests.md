@@ -5,12 +5,12 @@ author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: df8e80f55e51c5b720e791243668fa468c1bcea6
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: 4eb6d88e9b2384fb7cc2fea95fc3c52fecfb727c
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704401"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65203480"
 ---
 # <a name="create-requests"></a>Создание запросов
 Пространство имен: microsoft.graph
@@ -51,15 +51,17 @@ POST /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshi
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|action|delegatedAdminRelationshipRequestAction|Действие, выполняемые с делегированным отношением администратора. Обязательный. Возможные значения: `lockForApproval`, `terminate`.|
+|action|delegatedAdminRelationshipRequestAction|Действие, выполняемые с делегированным отношением администратора. Обязательно. Возможные значения: `lockForApproval`, `terminate`.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) в тексте отклика. Ответ содержит заголовок **Location** , который содержит URL-адрес созданного запроса делегированных отношений администратора.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_delegatedadminrelationshiprequest_from_"
@@ -73,6 +75,28 @@ Content-Type: application/json
   "action": "lockForApproval"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-delegatedadminrelationshiprequest-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-delegatedadminrelationshiprequest-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-delegatedadminrelationshiprequest-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-delegatedadminrelationshiprequest-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-delegatedadminrelationshiprequest-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

@@ -1,32 +1,32 @@
 ---
 title: 'signIn: confirmCompromised'
-description: Позволяет пометить события входа Azure AD как рискованные для защиты идентификации Azure AD.
+description: Позволяет пометить Azure AD входа как рискованные для Azure AD идентификации.
 author: besiler
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 9fdc4e06b22c1f828863fdb8d650c1ba10dfb788
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: 226a9986402ce315b77472ea1f37062f9e1f6753
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64852730"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65212838"
 ---
 # <a name="signin-confirmcompromised"></a>signIn: confirmCompromised
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Позволяет администраторам пометить событие в журналах входа Azure AD как рискованные. События, помеченные администратором как рискованные, немедленно помечаются как высокий риск в службе защиты идентификации Azure AD, переопределяя предыдущие состояния риска. Администраторы могут подтвердить, что события, помеченные защитой идентификации Azure AD как рискованные, на самом деле являются рискованными или могут пометить события без метки как рискованные. 
+Позволяет администраторам пометить событие в журнале Azure AD входа как рискованные. События, помеченные администратором как рискованные, немедленно помечаются как Azure AD защиты идентификации, переопределяя предыдущие состояния риска. Администраторы могут подтвердить, что события, помеченные как рискованные, Azure AD защита идентификации на самом деле являются рискованными, или они могут пометить события без метки как рискованные. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|IdentityRiskyUser.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|IdentityRiskyUser.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|IdentityRiskyUser.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|IdentityRiskyUser.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ POST /auditLogs/signIns/confirmCompromised
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|requestIds|Коллекция String|Идентификаторы событий входа, которые должны быть помечены как рискованные для защиты идентификации Azure AD.|
+|requestIds|Коллекция объектов string|Идентификаторы событий входа, которые должны быть помечены как рискованные для Azure AD идентификации.|
 
 
 
@@ -62,6 +62,8 @@ POST /auditLogs/signIns/confirmCompromised
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "signinthis.confirmcompromised"
@@ -79,6 +81,28 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/signinthisconfirmcompromised-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/signinthisconfirmcompromised-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/signinthisconfirmcompromised-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/signinthisconfirmcompromised-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/signinthisconfirmcompromised-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

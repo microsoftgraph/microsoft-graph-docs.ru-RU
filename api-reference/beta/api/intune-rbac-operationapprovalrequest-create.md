@@ -1,26 +1,26 @@
 ---
 title: Создание operationApprovalRequest
-description: Создание нового объекта operationApprovalRequest.
+description: Создайте объект operationApprovalRequest.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 29f985d26e5c69ee7a7dd1dfc8d30f743c3c6fa3
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 2d279732025e39af5081104832138b542c68ba52
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64630760"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65210852"
 ---
 # <a name="create-operationapprovalrequest"></a>Создание operationApprovalRequest
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового [объекта operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) .
+Создайте объект [operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "64630760"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,31 +43,31 @@ POST /deviceManagement/operationApprovalRequests
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для объекта operationApprovalRequest.
+В теле запроса добавьте представление объекта operationApprovalRequest в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании операцииApprovalRequest.
+В следующей таблице показаны свойства, необходимые при создании operationApprovalRequest.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID объекта|
+|id|Строка|Идентификатор сущности|
 |requestDateTime|DateTimeOffset|DateTime запроса. Это свойство доступно только для чтения.|
-|expirationDateTime|DateTimeOffset|DateTime, в котором действия по запросу больше не разрешены. Это свойство доступно только для чтения.|
-|lastModifiedDateTime|DateTimeOffset|Последнее изменение DateTime. Это свойство доступно только для чтения.|
-|запросчик|[identitySet](../resources/intune-rbac-identityset.md)|Удостоверение запросителя. Это свойство доступно только для чтения.|
-|одобрение|[identitySet](../resources/intune-rbac-identityset.md)|Удостоверение утвержденного. Это свойство доступно только для чтения.|
-|status|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|Текущий статус запроса на утверждение. Это свойство доступно только для чтения. Возможные значения: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`.|
+|expirationDateTime|DateTimeOffset|Дата и время, когда действия по запросу больше не разрешены. Это свойство доступно только для чтения.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения. Это свойство доступно только для чтения.|
+|Запрашивающего|[identitySet](../resources/intune-rbac-identityset.md)|Удостоверение запрашиваемого объекта. Это свойство доступно только для чтения.|
+|Утверждающий|[identitySet](../resources/intune-rbac-identityset.md)|Удостоверение утверждающего. Это свойство доступно только для чтения.|
+|status|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|Текущее состояние запроса на утверждение. Это свойство доступно только для чтения. Возможные значения: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`, `unknownFutureValue`.|
 |requestJustification|Строка|Обоснование запроса. Это свойство доступно только для чтения.|
 |approvalJustification|Строка|Обоснование утверждения запроса. Это свойство доступно только для чтения.|
-|operationApprovalPolicies|Строка|Политики оперативного утверждения, используемые в запросе. Это свойство доступно только для чтения.|
+|operationApprovalPolicies|Строка|Политики рабочего утверждения, используемые в запросе. Это свойство доступно только для чтения.|
 
 
 
-## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код `201 Created` ответа и [объект operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) в тексте ответа.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

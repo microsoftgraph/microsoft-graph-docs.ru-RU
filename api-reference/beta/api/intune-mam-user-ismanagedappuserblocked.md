@@ -1,35 +1,35 @@
 ---
-title: функция isManagedAppUserBlocked
-description: Получает заблокированную состояние пользователя управляемого приложения.
+title: Функция isManagedAppUserBlocked
+description: Возвращает заблокированное состояние пользователя управляемого приложения.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39acf246d0fb110fee39e9dc44b82e87064cb778
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 34e38a091f3eb21e6eb4e80a4d7321ddaa3d7688
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487242"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65205903"
 ---
-# <a name="ismanagedappuserblocked-function"></a>функция isManagedAppUserBlocked
+# <a name="ismanagedappuserblocked-function"></a>Функция isManagedAppUserBlocked
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Получает заблокированную состояние пользователя управляемого приложения.
+Возвращает заблокированное состояние пользователя управляемого приложения.
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,7 +49,7 @@ GET /users/{usersId}/isManagedAppUserBlocked
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения эта функция возвращает код отклика `200 OK` и объект Boolean в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -71,6 +71,7 @@ Content-Length: 21
   "value": true
 }
 ```
+
 
 
 

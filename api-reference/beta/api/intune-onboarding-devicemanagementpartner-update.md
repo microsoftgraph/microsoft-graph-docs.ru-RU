@@ -2,21 +2,21 @@
 title: Обновление объекта deviceManagementPartner
 description: Обновление свойств объекта deviceManagementPartner.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a6fc3e4136c176c64d6ba0bd4520e16c9ea203c7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: abbad5d8c69eb57df249b98731e1a6a4c400bd14
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017972"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65202797"
 ---
 # <a name="update-devicemanagementpartner"></a>Обновление объекта deviceManagementPartner
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,9 +27,9 @@ ms.locfileid: "59017972"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,18 +53,18 @@ PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Id объекта|
+|id|String|Идентификатор сущности|
 |lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пульса после того, как администратор включил параметр "Подключиться к партнеру по управлению устройствами".|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Тип приложения-партнера. Возможные значения: `unknown`, `singleTenantApp`, `multiTenantApp`.|
+|partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Тип партнерского приложения. Возможные значения: `unknown`, `singleTenantApp`, `multiTenantApp`.|
 |singleTenantAppId|String|Идентификатор одноклиентского приложения партнера|
-|displayName|Строка|Отображаемое имя партнера|
+|displayName|String|Отображаемое имя партнера|
 |isConfigured|Boolean|Указывает, настроен ли партнер по управлению устройствами|
-|whenPartnerDevicesWillBeRemoved|DateTimeOffset|DateTime в UTC, когда будут удалены PartnerDevices. Это станет obselete в ближайшее время.|
-|whenPartnerDevicesWillBeMarkedAsNonCompliant|DateTimeOffset|DateTime в UTC, когда PartnerDevices будет помечен как NonCompliant. Это станет obselete в ближайшее время.|
+|whenPartnerDevicesWillBeRemoved|DateTimeOffset|Дата и время в формате UTC, когда PartnerDevices будет удален. Скоро эта возможность станет неавселяемой.|
+|whenPartnerDevicesWillBeMarkedAsNonCompliant|DateTimeOffset|DateTime в формате UTC, когда PartnerDevices будет помечен как несоответствующий. Скоро эта возможность станет неавселяемой.|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|Дата и время в формате UTC, указывающие, когда будут удалены партнерские устройства|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|Дата и время в формате UTC, указывающие, когда партнерские устройства будут отмечены как несоответствующие требованиям|
-|groupsRequiringPartnerEnrollment|[коллекция deviceManagementPartnerAssignment](../resources/intune-onboarding-devicemanagementpartnerassignment.md)|Группы пользователей, которые уточняют, является ли регистрация партнером.|
+|groupsRequiringPartnerEnrollment|[Коллекция deviceManagementPartnerAssignment](../resources/intune-onboarding-devicemanagementpartnerassignment.md)|Группы пользователей, указывающие, осуществляется ли регистрация через партнера.|
 
 
 
@@ -139,6 +139,7 @@ Content-Length: 1189
   ]
 }
 ```
+
 
 
 

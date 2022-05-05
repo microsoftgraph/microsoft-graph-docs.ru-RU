@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 871755979904dfa05156c814911a40b43a177914
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: c778b6bf713bafd3199d7fa2fe8743ecdca4bf19
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65134373"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65206718"
 ---
 # <a name="create-unifiedroleeligibilityschedulerequest"></a>Создание unifiedRoleEligibilityScheduleRequest
 Пространство имен: microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "65134373"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|RoleEligibilitySchedule.ReadWrite.Directory|
+|Делегированные (рабочая или учебная учетная запись)|RoleEligibilitySchedule.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
 |Приложение|RoleAssignmentSchedule.ReadWrite.Directory|
 
@@ -52,15 +52,15 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 |action|unifiedRoleScheduleRequestActions|Представляет тип операции в запросе на получение прав на роль. Возможные значения: `adminAssign`, , `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend``adminRenew`, `selfExtend``selfRenew``unknownFutureValue`. <br/><ul><li>`adminAssign`: администраторы могут назначать субъектам допустимые роли.</li><li>`adminRemove`: чтобы администраторы удаляли допустимые роли из субъектов.</li><li> `adminUpdate`: чтобы администраторы меняли существующие права на роль.</li><li>`adminExtend`: чтобы администраторы расширяли права на роль с истекающим сроком действия.</li><li>`adminRenew`: чтобы администраторы продлевали просроченные права доступа.</li><li>`selfActivate`: для активации назначений пользователями.</li><li>`selfDeactivate`: для отключения активных назначений пользователями.</li><li>`selfExtend`: пользователи должны запрашивать продление назначений с истекающим сроком действия.</li><li>`SelfRenew`: чтобы пользователи запрашивали продление назначений с истекшим сроком действия.</li></ul>|
 |appScopeId|String|Идентификатор области, относяшейся к приложению, если доступ к роли определяется приложением. Область действия роли определяет набор ресурсов, к которым субъект имеет право доступа. Области приложения — это области, которые определяются и распознаются только этим приложением. Используется `/` для областей приложений на уровне клиента. Используйте **directoryScopeId** , чтобы ограничить область определенными объектами каталога, например административными единицами. Требуется **directoryScopeId** **или appScopeId** .|
 |directoryScopeId|String|Идентификатор объекта каталога, представляющего область допустимости роли. Область действия роли определяет набор ресурсов, к которым участнику был предоставлен доступ. Области каталога — это общие области, хранящиеся в каталоге, которые распознаются несколькими приложениями. Используется `/` для области на уровне клиента. Используйте **appScopeId** , чтобы ограничить область только приложением. Требуется **directoryScopeId** **или appScopeId** .|
-|isValidationOnly|Boolean|Определяет, является ли вызов проверкой или фактическим вызовом. Задайте это свойство только в том случае, если вы хотите проверить, применяется ли активация к дополнительным правилам, таким как MFA, перед фактической отправкой запроса. Необязательное свойство.|
-|Обоснование|String|Сообщение, предоставляемое пользователями и администраторами при создании объекта **unifiedRoleEligibilityScheduleRequest** . Необязательный, **если действие** имеет значение `adminRemove`.|
-|principalId|String|Идентификатор участника, которой предоставлено право на роль. Обязательный.|
-|roleDefinitionId|String|Идентификатор объекта [unifiedRoleDefinition](../resources/unifiedroledefinition.md) , назначаемого субъекту. Обязательный.|
+|isValidationOnly|Логическое|Определяет, является ли вызов проверкой или фактическим вызовом. Задайте это свойство только в том случае, если вы хотите проверить, применяется ли активация к дополнительным правилам, таким как MFA, перед фактической отправкой запроса. Необязательное.|
+|Обоснование|Строка|Сообщение, предоставляемое пользователями и администраторами при создании объекта **unifiedRoleEligibilityScheduleRequest** . Необязательный, **если действие** имеет значение `adminRemove`.|
+|principalId|String|Идентификатор участника, которой предоставлено право на роль. Обязательно.|
+|roleDefinitionId|Строка|Идентификатор объекта [unifiedRoleDefinition](../resources/unifiedroledefinition.md) , назначаемого субъекту. Обязательно.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Период допустимости роли. В настоящее время повторяющиеся расписания не поддерживаются. Необязательный, **если действие** имеет значение `adminRemove`.|
-|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Сведения о билете, связанные с запросом на участие в роли, включая сведения о номере билета и системе билетов. Необязательна|
+|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Сведения о билете, связанные с запросом на участие в роли, включая сведения о номере билета и системе билетов. Необязательный|
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) в тексте отклика.
 
@@ -69,6 +69,8 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 ### <a name="example-1-admin-to-assign-a-role-eligibility-schedule-request"></a>Пример 1. Назначение администратором запроса на расписание соответствия роли
 
 #### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleeligibilityschedulerequest_from_"
@@ -93,6 +95,28 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleeligibilityschedulerequest-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleeligibilityschedulerequest-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleeligibilityschedulerequest-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleeligibilityschedulerequest-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleeligibilityschedulerequest-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик
@@ -152,6 +176,8 @@ Content-Type: application/json
 В следующем запросе `071cc716-8147-4397-a5ba-b2105951cc0b` администратор создает запрос на отмену права субъекта с идентификатором на роль с идентификатором `8424c6f0-a189-499e-bbd0-26c1753c96d4`.
 
 #### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleeligibilityschedulerequest_from_unifiedroleeligibilityschedulerequests_adminRemove"
@@ -168,6 +194,32 @@ Content-Type: application/json
     "principalId": "071cc716-8147-4397-a5ba-b2105951cc0b"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Отклик

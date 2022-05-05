@@ -1,25 +1,25 @@
 ---
-title: Get siteSettings
-description: Получите параметры сайта.
+title: Получение siteSettings
+description: Получение параметров сайта.
 author: k-tsoi
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: db5ab35af82c22ea8681e27aca86b1046048b45e
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: fe05b525d506fb3192244b40a784dc7971843bea
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64590006"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211195"
 ---
-# <a name="get-sitesettings"></a>Get siteSettings
+# <a name="get-sitesettings"></a>Получение siteSettings
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите параметры [сайта].
+Получение параметров [сайта].
 
->**Примечание:** Этот API в настоящее время доступен только в SharePoint и OneDrive для бизнеса.
+>**Примечание:** В настоящее время этот API доступен только в SharePoint и OneDrive для бизнеса.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -55,9 +55,9 @@ GET /sites/{sitesId}/settings
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект siteSettings](../resources/sitesettings.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [siteSettings](../resources/sitesettings.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -65,6 +65,8 @@ GET /sites/{sitesId}/settings
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_sitesettings"
@@ -73,10 +75,28 @@ GET /sites/{sitesId}/settings
 ``` http
 GET https://graph.microsoft.com/beta/sites/03164a2b-a288-486a-993e-c41454113e2a/settings
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-sitesettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-sitesettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-sitesettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-sitesettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -97,4 +117,4 @@ Content-Type: application/json
 }
 ```
 
-[сайта]: ../resources/site.md
+[site]: ../resources/site.md
