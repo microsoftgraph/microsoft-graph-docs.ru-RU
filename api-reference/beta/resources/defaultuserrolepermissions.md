@@ -1,30 +1,31 @@
 ---
 title: Тип ресурса defaultUserRolePermissions
-description: Содержит определенные настраиваемые разрешения для роли пользователя по умолчанию.
-localization_priority: Normal
+description: Содержит определенные настраиваемые разрешения роли пользователя по умолчанию.
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b6ee2e8deccf73929b68079379efb0f6d93a3369
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 71edaa99eedc7a37abe5694ace6e5c3c05e29884
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135676"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65202331"
 ---
 # <a name="defaultuserrolepermissions-resource-type"></a>Тип ресурса defaultUserRolePermissions
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит определенные настраиваемые разрешения для роли пользователя по умолчанию в Azure AD.
+Содержит настраиваемые разрешения настраиваемой роли пользователя по умолчанию в Azure AD.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| allowedToCreateApps | Boolean | Указывает, может ли роль пользователя по умолчанию создавать приложения. |  
-| allowedToCreateSecurityGroups | Boolean | Указывает, может ли роль пользователя по умолчанию создавать группы безопасности. |  
-| allowedToReadOtherUsers | Boolean | Указывает, может ли роль пользователя по умолчанию читать других пользователей. |  
+| allowedToCreateApps | Логическое | Указывает, может ли роль пользователя по умолчанию создавать приложения. |  
+| allowedToCreateSecurityGroups | Логическое | Указывает, может ли роль пользователя по умолчанию создавать группы безопасности. |  
+| allowedToReadBitlockerKeysForOwnedDevice | Логическое | Указывает, могут ли зарегистрированные владельцы устройства считывать собственные ключи восстановления BitLocker с ролью пользователя по умолчанию. |
+| allowedToReadOtherUsers | Логическое | Указывает, может ли роль пользователя по умолчанию читать других пользователей. |  
 
 ## <a name="relationships"></a>Связи
 
@@ -44,6 +45,7 @@ ms.locfileid: "50135676"
 {
   "allowedToCreateApps": true,
   "allowedToCreateSecurityGroups": true,
+  "allowedToReadBitlockerKeysForOwnedDevice": true,
   "allowedToReadOtherUsers": true
 }
 ```

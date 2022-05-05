@@ -5,12 +5,12 @@ author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 3db8f5c4073d3ba709e06137c8f5ea02ec78f157
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: d310865432f166a1c16432992b39903952e94873
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704319"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65205448"
 ---
 # <a name="create-delegatedadminrelationship"></a>Создание delegatedAdminRelationship
 Пространство имен: microsoft.graph
@@ -51,9 +51,9 @@ POST /tenantRelationships/delegatedAdminRelationships
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Идентификаторы административных ролей, к которые партнер запрашивает или имеет доступ в клиенте клиента. Обязательный.|
+|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Идентификаторы административных ролей, к которые партнер запрашивает или имеет доступ в клиенте клиента. Обязательно.|
 |Клиентов|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|Отображаемое имя и уникальный идентификатор клиента связи. Необязательное свойство.|
-|displayName|String|Отображаемое имя связи, используемой для упрощения идентификации. Должен быть уникальным для *всех делегированных* отношений администратора партнера. Обязательный.|
+|displayName|Строка|Отображаемое имя связи, используемой для упрощения идентификации. Должен быть уникальным для *всех делегированных* отношений администратора партнера. Обязательно.|
 |duration|Длительность|Длительность связи в формате ISO 8601. Должно быть значением между инклюзивным `P1D` `P2Y` . Обязательный.|
 
 ## <a name="response"></a>Отклик
@@ -64,6 +64,8 @@ POST /tenantRelationships/delegatedAdminRelationships
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_delegatedadminrelationship_from_"
@@ -92,6 +94,28 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-delegatedadminrelationship-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-delegatedadminrelationship-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-delegatedadminrelationship-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-delegatedadminrelationship-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-delegatedadminrelationship-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

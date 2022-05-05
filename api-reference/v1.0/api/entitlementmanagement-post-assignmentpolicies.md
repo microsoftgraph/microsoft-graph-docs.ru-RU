@@ -1,21 +1,21 @@
 ---
 title: Создание assignmentPolicies
-description: Создание нового объекта accessPackageAssignmentPolicy.
+description: Создайте объект accessPackageAssignmentPolicy.
 author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 848f259c6d40ae14fb45c9230ad4d0b524dbf17b
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: c4337a07e9667ac23d3d0c386964fc1f9f44a275
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64608376"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65209637"
 ---
 # <a name="create-assignmentpolicies"></a>Создание assignmentPolicies
 Пространство имен: microsoft.graph
 
-В [управлении правами Azure AD](../resources/entitlementmanagement-overview.md) создайте новый [объект accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .  Запрос будет содержать ссылку на [accessPackage](../resources/accesspackage.md) , которая будет содержать эту политику, которая уже должна существовать.
+В [Azure AD управления правами](../resources/entitlementmanagement-overview.md) создайте объект [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).  Запрос будет содержать ссылку на [accessPackage](../resources/accesspackage.md) , который будет содержать эту политику, которая уже должна существовать.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,7 +25,7 @@ ms.locfileid: "64608376"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | EntitlementManagement.ReadWrite.All |
+| Приложение                            | EntitlementManagement.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,28 +45,37 @@ POST /identityGovernance/entitlementManagement/assignmentPolicies
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .
+В тексте запроса добавьте представление объекта [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) в формате JSON.
 
 При создании **accessPackageAssignmentPolicy** можно указать следующие свойства.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |description|Строка|Описание политики.|
-|displayName|Строка|Отображает имя политики.|
-|allowedTargetScope|allowedTargetScope|Кто может быть назначен пакет доступа через эту политику. Возможные значения: `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `unknownFutureValue`. Необязательно.|
-|истечение срока действия|[expirationPattern](../resources/expirationpattern.md)|Срок действия для назначений, созданных в этой политике.|
-|requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|Указывает параметры для утверждения запросов на назначение пакета доступа с помощью этой политики. Например, если требуется утверждение для новых запросов.|
-|requestorSettings|[accessPackageAssignmentRequestorSettings](../resources/accesspackageassignmentrequestorsettings.md)|Предоставляет дополнительные параметры, чтобы выбрать, кто может создать запрос на назначение пакета доступа с помощью этой политики и что они могут включить в свой запрос.|
-|specificAllowedTargets|[коллекция subjectSet](../resources/subjectset.md)|Целевые показатели для получения доступа из пакета доступа из этой политики.|
+|displayName|Строка|Отображаемое имя политики.|
+|allowedTargetScope|allowedTargetScope|Кто может быть назначен пакет доступа с помощью этой политики. Возможные значения: `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `unknownFutureValue`. Необязательное.|
+|Истечения срока действия|[expirationPattern](../resources/expirationpattern.md)|Дата окончания срока действия для назначений, созданных в этой политике.|
+|requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|Задает параметры для утверждения запросов на назначение пакета доступа с помощью этой политики. Например, если требуется утверждение для новых запросов.|
+|requestorSettings|[accessPackageAssignmentRequestorSettings](../resources/accesspackageassignmentrequestorsettings.md)|Предоставляет дополнительные параметры, чтобы выбрать, кто может создать запрос на назначение пакета для доступа с помощью этой политики и что они могут включить в свой запрос.|
+|specificAllowedTargets|[Коллекция subjectSet](../resources/subjectset.md)|Целевые объекты для назначения доступа из пакета доступа из этой политики.|
 |accessPackage|[accessPackage](../resources/accesspackage.md)| Ссылка на пакет доступа, который будет содержать политику, которая уже должна существовать.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот `201 Created` метод возвращает код отклика и [объект accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-create-a-direct-assignment-policy"></a>Пример 1. Создание политики прямого назначения
+
+Политика прямого назначения полезна, если запросы на назначение пакетов для доступа создаются только администратором, а не самими пользователями.
+
+#### <a name="request"></a>Запрос
+
+В следующем примере показан запрос на создание политики назначения пакетов для доступа. В этой политике пользователи не могут запрашивать запросы, утверждение не требуется, а проверки доступа отсутствуют.
+
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageassignmentpolicy_from_"
@@ -106,9 +115,34 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentpolicy-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentpolicy-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageassignmentpolicy-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentpolicy-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageassignmentpolicy-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageassignmentpolicy-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -127,4 +161,134 @@ Content-Type: application/json
 }
 ```
 
+### <a name="example-2-create-a-policy-for-users-from-other-organizations-to-request"></a>Пример 2. Создание политики для пользователей из других организаций для запроса
+
+В следующем примере показана более сложная политика с двумя этапами утверждения.
+
+#### <a name="request"></a>Запрос
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentpolicy_2"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies
+Content-Type: application/json
+
+{
+    "displayName": "policy for external access requests",
+    "description": "policy for users from connected organizations to request access, with two stages of approval.",
+    "allowedTargetScope": "allConfiguredConnectedOrganizationUsers",
+    "specificAllowedTargets": [],
+    "expiration": {
+        "type": "noExpiration"
+    },
+    "requestorSettings": {
+        "enableTargetsToSelfAddAccess": true,
+        "enableTargetsToSelfUpdateAccess": true,
+        "enableTargetsToSelfRemoveAccess": true,
+        "allowCustomAssignmentSchedule": false,
+        "enableOnBehalfRequestorsToAddAccess": false,
+        "enableOnBehalfRequestorsToUpdateAccess": false,
+        "enableOnBehalfRequestorsToRemoveAccess": false,
+        "onBehalfRequestors": []
+    },
+    "requestApprovalSettings": {
+        "isApprovalRequiredForAdd": true,
+        "isApprovalRequiredForUpdate": false,
+        "stages": [
+            {
+                "durationBeforeAutomaticDenial": "P14D",
+                "isApproverJustificationRequired": false,
+                "isEscalationEnabled": false,
+                "durationBeforeEscalation": "PT0S",
+                "primaryApprovers": [
+                    {
+                        "@odata.type": "#microsoft.graph.internalSponsors"
+                    }
+                ],
+                "fallbackPrimaryApprovers": [
+                    {
+                        "@odata.type": "#microsoft.graph.singleUser",
+                        "userId": "7deff43e-1f17-44ef-9e5f-d516b0ba11d4"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.groupMembers",
+                        "groupId": "1623f912-5e86-41c2-af47-39dd67582b66"
+                    }
+                ],
+                "escalationApprovers": [],
+                "fallbackEscalationApprovers": []
+            },
+            {
+                "durationBeforeAutomaticDenial": "P14D",
+                "isApproverJustificationRequired": false,
+                "isEscalationEnabled": false,
+                "durationBeforeEscalation": "PT0S",
+                "primaryApprovers": [],
+                "fallbackPrimaryApprovers": [
+                    {
+                        "@odata.type": "#microsoft.graph.singleUser",
+                        "userId": "46184453-e63b-4f20-86c2-c557ed5d5df9"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.groupMembers",
+                        "groupId": "1623f912-5e86-41c2-af47-39dd67582b66"
+                    }
+                ],
+                "escalationApprovers": [],
+                "fallbackEscalationApprovers": []
+            }
+        ]
+    },
+    "accessPackage": {
+        "id": "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b"
+    }
+}
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentpolicy-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentpolicy-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageassignmentpolicy-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentpolicy-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageassignmentpolicy-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>Отклик
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "9d8f2361-39be-482e-b267-34ad6baef4d3",
+    "displayName": "policy for external access requests",
+    "description": "policy for users from connected organizations to request access, with two stages of approval."
+}
+```
 

@@ -1,38 +1,39 @@
 ---
-title: тип enum deviceManagementConfigurationTechnologies
-description: Описывает, какую технологию можно развернуть с помощью этого параметра
+title: Тип перечисления deviceManagementConfigurationTechnologies
+description: Описывает технологию, с помощью которой можно развернуть этот параметр
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fc7e240c4e48dfcab9974ff7c6ab4d1c30a629a8
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 6efdc017f80a37529344f197c1d0e071a3936686
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335021"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65202758"
 ---
-# <a name="devicemanagementconfigurationtechnologies-enum-type"></a>тип enum deviceManagementConfigurationTechnologies
+# <a name="devicemanagementconfigurationtechnologies-enum-type"></a>Тип перечисления deviceManagementConfigurationTechnologies
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Описывает, какую технологию можно развернуть с помощью этого параметра
+Описывает технологию, с помощью которой можно развернуть этот параметр
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Настройка не может быть развернута по любому каналу|
-|mdm|1|Параметр можно развернуть через канал MDM|
+|Нет|0|Параметр не может быть развернут по любому каналу|
+|Mdm|1|Параметр можно развернуть через канал MDM|
 |windows10XManagement|2|Параметр можно развернуть через канал Windows10XManagement|
 |configManager|4|Параметр можно развернуть через канал ConfigManager|
-|MicrosoftSense|128|Настройка может быть развернута через канал агента SENSE|
+|appleRemoteManagement|64|Параметр можно развернуть через канал AppleRemoteManagement|
+|microsoftSense|128|Параметр можно развернуть через канал агента SENSE|
 |exchangeOnline|256|Параметр можно развернуть через канал Exchange Online агента|
-|LinuxMdm|1024|Параметр можно развернуть через канал Linux Mdm|
-|unknownFutureValue|1073741824|Член Sentinel для случаев, когда клиент не может обрабатывать новые значения в переуме.|
+|linuxMdm|1024|Параметр можно развернуть через канал Linux Mdm.|
+|unknownFutureValue|1073741824|Член Sentinel в случаях, когда клиент не может обработать новые значения перечисления.|
 
 
 

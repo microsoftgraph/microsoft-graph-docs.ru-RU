@@ -5,12 +5,12 @@ author: akgoel23
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c7f3857ecaf2f16435d8a1ae2bc0e554fd96d2bd
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: c3ec8bebe163e289dda6ecedc85a07dd9ac82440
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64852715"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65202496"
 ---
 # <a name="create-federationconfiguration"></a>Создание federationConfiguration
 Пространство имен: microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "64852715"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|Domain.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|Domain.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|Domain.ReadWrite.All|
+|Приложение|Domain.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,16 +51,16 @@ POST /domains/{domainsId}/federationConfiguration
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя федеративного поставщика удостоверений.|
-|IssuerUri|String|URI издателя сервера федерации.|
-|metadataExchangeUri|String|URI конечной точки обмена метаданными, используемой для проверки подлинности из полнофункциональных клиентских приложений.|
-|signingCertificate|String|Текущий сертификат, используемый для подписи маркеров, передаваемых платформа удостоверений Майкрософт. Сертификат форматируется как строка в кодировке Base64 общедоступной части сертификата подписи маркера федеративного IdP и должна быть совместима с классом X509Certificate2. <br>Это свойство используется в следующих сценариях: <li> Если требуется смена за пределами обновления автоматической регистрации <li> Настраивается новая служба федерации <li> Если новый сертификат подписи маркера отсутствует в свойствах федерации после обновления сертификата службы федерации.<br>Azure AD обновляет сертификаты с помощью процесса автоматической регистрации, в котором пытается получить новый сертификат из метаданных службы федерации за 30 дней до истечения срока действия текущего сертификата. Если новый сертификат недоступен, Azure AD ежедневно отслеживает метаданные и обновляет параметры федерации для домена, когда доступен новый сертификат.|
-|passiveSignInUri|String|Универсальный код ресурса (URI), на который направляются веб-клиенты при входе в службы Azure AD.|
+|displayName|Строка|Отображаемое имя федеративного поставщика удостоверений.|
+|IssuerUri|Строка|URI издателя сервера федерации.|
+|metadataExchangeUri|Строка|URI конечной точки обмена метаданными, используемой для проверки подлинности из полнофункциональных клиентских приложений.|
+|signingCertificate|Строка|Текущий сертификат, используемый для подписи маркеров, передаваемых платформа удостоверений Майкрософт. Сертификат форматируется как строка в кодировке Base64 общедоступной части сертификата подписи маркера федеративного IdP и должна быть совместима с классом X509Certificate2. <br>Это свойство используется в следующих сценариях: <li> Если требуется смена за пределами обновления автоматической регистрации <li> Настраивается новая служба федерации <li> Если новый сертификат подписи маркера отсутствует в свойствах федерации после обновления сертификата службы федерации.<br>Azure AD обновляет сертификаты с помощью процесса автоматической регистрации, в котором он пытается получить новый сертификат из метаданных службы федерации за 30 дней до истечения срока действия текущего сертификата. Если новый сертификат недоступен, Azure AD отслеживает метаданные ежедневно и обновляет параметры федерации для домена, когда доступен новый сертификат.|
+|passiveSignInUri|Строка|Универсальный код ресурса (URI), на который направляются веб-клиенты при входе в Azure AD служб.|
 |preferredAuthenticationProtocol|authenticationProtocol|Предпочтительный протокол проверки подлинности. Допустимые значения: `wsFed`, `saml`, `unknownFutureValue`.|
-|activeSignInUri|String|URL-адрес конечной точки, используемой активными клиентами при проверке подлинности с федеративными доменами, настроенной для единого входа в Azure Active Directory (Azure AD). Соответствует свойству **ActiveLogOnUri** [командлета Set-MsolDomainFederationSettings MSOnline v1 PowerShell](/powershell/module/msonline/set-msoldomainfederationsettings).|
-|signOutUri|String|URI, на который клиенты перенаправляются при выходе из служб Azure AD. Соответствует свойству **LogOffUri** [командлета Set-MsolDomainFederationSettings MSOnline версии 1 PowerShell](/powershell/module/msonline/set-msoldomainfederationsettings).|
+|activeSignInUri|Строка|URL-адрес конечной точки, используемой активными клиентами при проверке подлинности в федеративных доменах, настроив единый вход в Azure Active Directory (Azure AD). Соответствует свойству **ActiveLogOnUri** [командлета Set-MsolDomainFederationSettings MSOnline v1 PowerShell](/powershell/module/msonline/set-msoldomainfederationsettings).|
+|signOutUri|Строка|URI, на который клиенты перенаправляются при выходе из Azure AD служб. Соответствует свойству **LogOffUri** [командлета Set-MsolDomainFederationSettings MSOnline версии 1 PowerShell](/powershell/module/msonline/set-msoldomainfederationsettings).|
 |promptLoginBehavior|promptLoginBehavior|Задает предпочтительное поведение для запроса на вход. Допустимые значения: `translateToFreshPasswordAuthentication`, `nativeSupport`, `disabled`, `unknownFutureValue`.|
-|isSignedAuthenticationRequestRequired|Логический|Если значение равно true, то при отправке запросов проверки подлинности SAML федеративному поставщику удостоверений SAML Azure AD будет подписывать эти запросы с помощью ключа подписи OrgID. Если значение равно false (по умолчанию), запросы проверки подлинности SAML, отправленные федеративному поставщику удостоверений, не подписыются.|
+|isSignedAuthenticationRequestRequired|Логическое|Если значение равно true, то при отправке запросов проверки подлинности SAML федеративному поставщику удостоверений SAML Azure AD подписывать эти запросы с помощью ключа подписи OrgID. Если значение равно false (по умолчанию), запросы проверки подлинности SAML, отправленные федеративному поставщику удостоверений, не подписыются.|
 |nextSigningCertificate|String|Резервный сертификат подписи маркера, используемый для подписи маркеров по истечении срока действия основного сертификата подписи. Форматированные в виде строк в кодировке Base64 открытой части сертификата подписи маркера федеративного IdP. Должен быть совместим с классом X509Certificate2. Как и **в случае с signingCertificate**, свойство **nextSigningCertificate** используется, если требуется смена за пределами обновления автоматической смены, настраивается новая служба федерации или если новый сертификат подписи маркера отсутствует в свойствах федерации после обновления сертификата службы федерации.|
 |signingCertificateUpdateStatus|[signingCertificateUpdateStatus](../resources/signingcertificateupdatestatus.md)|Предоставляет состояние и метку времени последнего обновления сертификата подписи.|
 |federatedIdpMfaBehavior|federatedIdpMfaBehavior|Определяет, принимает ли Azure AD многофакторную проверку подлинности, выполняемую федеративным IdP, когда федеративный пользователь имеет доступ к приложению, которое управляется политикой условного доступа, требуемой MFA. Допустимые значения: `acceptIfMfaDoneByFederatedIdp`, `enforceMfaByFederatedIdp`, `rejectMfaByFederatedIdp`, `unknownFutureValue`. Дополнительные сведения см. в [разделе federatedIdpMfaBehavior.](#federatedidpmfabehavior-values)|
@@ -69,24 +69,26 @@ POST /domains/{domainsId}/federationConfiguration
 
 | Member | Описание |
 | :--- | :--- |
-| acceptIfMfaDoneByFederatedIdp | Azure AD принимает MFA, выполняемую федеративным поставщиком удостоверений. Если федеративный поставщик удостоверений не выполнил MFA, Azure AD выполняет MFA. |
-| enforceMfaByFederatedIdp | Azure AD принимает MFA, выполняемую федеративным поставщиком удостоверений. Если федеративный поставщик удостоверений не выполнил MFA, он перенаправляет запрос к федеративному поставщику удостоверений для выполнения MFA. |
-| rejectMfaByFederatedIdp | Azure AD всегда выполняет многофакторную проверку подлинности и отклоняет MFA, выполняемую федеративным поставщиком удостоверений. |
+| acceptIfMfaDoneByFederatedIdp | Azure AD принимает MFA, выполняемый федеративным поставщиком удостоверений. Если федеративный поставщик удостоверений не выполнил MFA, Azure AD выполняет MFA. |
+| enforceMfaByFederatedIdp | Azure AD принимает многофакторную проверку подлинности, выполняемую федеративным поставщиком удостоверений. Если федеративный поставщик удостоверений не выполнил MFA, он перенаправляет запрос к федеративному поставщику удостоверений для выполнения MFA. |
+| rejectMfaByFederatedIdp | Azure AD выполняет многофакторную проверку подлинности и отклоняет MFA, выполняемую федеративным поставщиком удостоверений. |
 
 **Примечание.** **FederatedIdpMfaBehavior** — это версия свойства **SupportsMfa** командлета [Set-MsolDomainFederationSettings MSOnline v1 PowerShell](/powershell/module/msonline/set-msoldomainfederationsettings). 
 + Переключение **между federatedIdpMfaBehavior** и **SupportsMfa** не поддерживается.
-+ После **установки свойства federatedIdpMfaBehavior** Azure AD игнорирует параметр **SupportsMfa** .
-+ Если свойство **federatedIdpMfaBehavior** никогда не задано, Azure AD продолжит соблюдать параметр **SupportsMfa** .
-+ Если ни **federatedIdpMfaBehavior** , ни **SupportsMfa** не заданы, Azure AD по умолчанию будет работать `acceptIfMfaDoneByFederatedIdp` .
++ После **установки свойства federatedIdpMfaBehavior** Azure AD параметр **SupportsMfa**.
++ Если свойство **federatedIdpMfaBehavior** никогда не задано, Azure AD будет по-прежнему учитывать параметр **SupportsMfa**.
++ Если ни **federatedIdpMfaBehavior**, ни **SupportsMfa** не заданы, Azure AD будет по умолчанию работать`acceptIfMfaDoneByFederatedIdp`.
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [internalDomainFederation](../resources/internaldomainfederation.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_internaldomainfederation_from_"
@@ -113,6 +115,32 @@ Content-Type: application/json
   "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-internaldomainfederation-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-internaldomainfederation-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-internaldomainfederation-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-internaldomainfederation-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-internaldomainfederation-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-internaldomainfederation-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

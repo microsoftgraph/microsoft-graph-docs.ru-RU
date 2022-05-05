@@ -1,26 +1,26 @@
 ---
 title: Создание объекта windowsAutopilotDeviceIdentity
-description: Создание нового объекта windowsAutopilotDeviceIdentity.
+description: Создайте объект windowsAutopilotDeviceIdentity.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ca95ab731773714d210bd315a25a668e52caa5be
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 1f1c533593c0730846f570b67ee1a31446bba16e
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64628975"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65204039"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Создание объекта windowsAutopilotDeviceIdentity
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового [объекта windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .
+Создайте объект [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "64628975"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,45 +44,47 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для объекта windowsAutopilotDeviceIdentity.
+В тексте запроса добавьте представление объекта windowsAutopilotDeviceIdentity в формате JSON.
 
 В следующей таблице показаны свойства, необходимые при создании объекта windowsAutopilotDeviceIdentity.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|GUID объекта|
-|deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Состояние назначения профиля устройства Windows автопилота. Возможные значения: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
-|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Назначение профиля подробное состояние Windows автопилота. Возможные значения: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`, `surfaceHub2SProfileNotSupported`, `unknownFutureValue`.|
-|deploymentProfileAssignedDateTime|DateTimeOffset|Время набора профилей устройства Windows автопилота.|
-|groupTag|Строка|Тег группы устройства Windows автопилота.|
-|purchaseOrderIdentifier|Строка|Идентификатор заказа покупки устройства Windows автопилота.|
+|deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Состояние назначения профиля устройства Windows autopilot. Возможные значения: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
+|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Подробное состояние назначения профиля Windows autopilot. Возможные значения: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`, `surfaceHub2SProfileNotSupported`, `unknownFutureValue`.|
+|deploymentProfileAssignedDateTime|DateTimeOffset|Время набора профилей Windows autopilot.|
+|GroupTag|Строка|Тег группы устройства Windows autopilot.|
+|purchaseOrderIdentifier|Строка|Идентификатор заказа на покупку устройства Windows autopilot.|
 |serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
-|manufacturer|String|Oem производитель устройства Windows автопилота.|
-|model|String|Имя модели устройства Windows автопилота.|
-|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune регистрации устройства Windows автопилота. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|lastContactedDateTime|DateTimeOffset|Intune время последней контактной даты устройства Windows автопилота.|
-|addressableUserName|Строка|Адресное имя пользователя.|
-|userPrincipalName|String|Имя главного пользователя.|
+|manufacturer|String|Изготовитель изготовителя Windows autopilot.|
+|model|String|Имя модели устройства Windows autopilot.|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune регистрации устройства Windows autopilot. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|lastContactedDateTime|DateTimeOffset|Intune дата последнего контакта устройства Windows autopilot.|
+|addressableUserName|Строка|Адресируемое имя пользователя.|
+|userPrincipalName|String|Имя участника-пользователя.|
 |resourceName|String|Имя ресурса.|
 |skuNumber|Строка|Номер SKU|
-|systemFamily|Строка|Семейство system|
-|azureActiveDirectoryDeviceId|Строка|AAD устройства - быть обесценив|
-|azureAdDeviceId|Строка|AAD ID устройства|
-|managedDeviceId|Строка|Управляемый ID устройства|
+|systemFamily|Строка|Семейство систем|
+|azureActiveDirectoryDeviceId|Строка|AAD устройства — нерекомендуемый|
+|azureAdDeviceId|Строка|AAD устройства|
+|managedDeviceId|Строка|Идентификатор управляемого устройства|
 |displayName|Строка|"Display Name" (Отображаемое имя);|
-|deviceAccountUpn|Строка|Surface Hub учетной записи устройства|
+|deviceAccountUpn|String|Surface Hub учетной записи устройства|
 |deviceAccountPassword|Строка|Surface Hub учетной записи устройства|
-|deviceFriendlyName|Строка|Surface Hub имя устройства|
+|deviceFriendlyName|Строка|Surface Hub понятное имя устройства|
+|remediationState|[windowsAutopilotDeviceRemediationState](../resources/intune-enrollment-windowsautopilotdeviceremediationstate.md)|Состояние исправления устройства. Возможные значения: `unknown`, `noRemediationRequired`, `automaticRemediationRequired`, `manualRemediationRequired`, `unknownFutureValue`.|
+|remediationStateLastModifiedDateTime|DateTimeOffset|Время установки значения RemediationState для устройства Autopilot.|
 
 
 
-## <a name="response"></a>Отклик
-В случае успешной `201 Created` работы этот метод возвращает код отклика и [объект windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) в тексте ответа.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -91,7 +93,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 1244
+Content-length: 1371
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -117,7 +119,9 @@ Content-length: 1244
   "displayName": "Display Name value",
   "deviceAccountUpn": "Device Account Upn value",
   "deviceAccountPassword": "Device Account Password value",
-  "deviceFriendlyName": "Device Friendly Name value"
+  "deviceFriendlyName": "Device Friendly Name value",
+  "remediationState": "noRemediationRequired",
+  "remediationStateLastModifiedDateTime": "2017-01-01T00:00:10.730021-08:00"
 }
 ```
 
@@ -126,7 +130,7 @@ Content-length: 1244
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1293
+Content-Length: 1420
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -153,7 +157,9 @@ Content-Length: 1293
   "displayName": "Display Name value",
   "deviceAccountUpn": "Device Account Upn value",
   "deviceAccountPassword": "Device Account Password value",
-  "deviceFriendlyName": "Device Friendly Name value"
+  "deviceFriendlyName": "Device Friendly Name value",
+  "remediationState": "noRemediationRequired",
+  "remediationStateLastModifiedDateTime": "2017-01-01T00:00:10.730021-08:00"
 }
 ```
 

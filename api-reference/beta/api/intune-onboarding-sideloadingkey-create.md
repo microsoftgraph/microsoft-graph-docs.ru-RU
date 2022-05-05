@@ -1,35 +1,35 @@
 ---
 title: Создание sideLoadingKey
-description: Создайте новый объект sideLoadingKey.
+description: Создайте объект sideLoadingKey.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 249a57d10c4e7640b76ed7052906cc0c4b396a87
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a55840adf84a5234a7ded834ca03ceb4a9c69498
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027577"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65212908"
 ---
 # <a name="create-sideloadingkey"></a>Создание sideLoadingKey
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создайте новый [объект sideLoadingKey.](../resources/intune-onboarding-sideloadingkey.md)
+Создайте объект [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,23 +47,23 @@ POST /deviceAppManagement/sideLoadingKeys
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для объекта sideLoadingKey.
+В тексте запроса добавьте представление объекта sideLoadingKey в формате JSON.
 
 В следующей таблице показаны свойства, необходимые при создании sideLoadingKey.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный ID side Loading Key.|
-|value|String|Ключевое значение side Loading — это значение 5x5, разделенное hiphens.|
-|displayName|String|Имя клавиши боковой загрузки, отображаемой администраторам ITPro.|
-|description|String|Описание клавиши боковой загрузки, отображаемой администраторам ITPro..|
-|totalActivation|Int32|Полная активация клавиши боковой загрузки, отображаемая администраторам ITPro.|
-|lastUpdatedDateTime|String|Клавиша side Loading Last Updated Date, отображаемая администраторам ITPro.|
+|id|String|Уникальный идентификатор ключа загрузки неопубликоваемого ключа.|
+|value|String|Значение ключа загрузки стороны— это значение 5x5, разделяемое по hiphens.|
+|displayName|String|Имя ключа загрузки стороны, отображаемое для администраторов ITPro.|
+|description|Строка|Описание ключа загрузки неопубликоваемых приложений, отображаемое для администраторов ITPro.|
+|totalActivation|Int32|Активация всего ключа загрузки неопубликоваемых ключей, отображаемая для ИТ-администраторов.|
+|lastUpdatedDateTime|Строка|Дата последнего обновления ключа загрузки стороны, отображаемая для администраторов ITPro.|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -101,6 +101,7 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
+
 
 
 

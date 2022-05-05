@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса plannerBucket
-description: ) для задач в плане в Microsoft 365. Он находится в plannerPlan и может иметь коллекцию перечисление plannertasks.
+description: Представляет контейнер для задач в плане в Microsoft 365. Он содержится в планировщике и может содержать коллекцию plannerTasks.
 author: TarkanSevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 02c8ef4dc25d43ee1fdd57a939bd0ed69ba86b81
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a13e219c4d31fc129e7f5561e61a073d635d41c1
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073607"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65212646"
 ---
 # <a name="plannerbucket-resource-type"></a>Тип ресурса plannerBucket
 
@@ -18,8 +18,7 @@ ms.locfileid: "48073607"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс **plannerBucket** представляет сегмент (или "настраиваемый столбец") для задач в плане в Microsoft 365. Он находится в [plannerPlan](plannerplan.md) и может иметь коллекцию [перечисление plannertasks](plannertask.md).
-
+Представляет контейнер (или "настраиваемый столбец") для задач в плане в Microsoft 365. Он содержится в [планировщике и](plannerplan.md) может содержать коллекцию [plannerTasks](plannertask.md).
 
 
 ## <a name="methods"></a>Методы
@@ -28,25 +27,25 @@ ms.locfileid: "48073607"
 |:---------------|:--------|:----------|
 |[Получение объекта plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md); |Чтение свойств и связей объекта **plannerBucket** .|
 |[Перечисление plannerTasks](../api/plannerbucket-list-tasks.md) |Коллекция [plannerTask](plannertask.md)| Получение коллекции объектов **plannerTask**.|
-|[Создание](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md);   | Создание нового объекта **plannerBucket** . |
-|[Обновление](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md);   |Обновление объекта **plannerBucket** . |
-|[Удаление](../api/plannerbucket-delete.md) | Нет |Удаление объекта **plannerBucket** . |
+|[Создание](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md);   | Создайте объект **plannerBucket** . |
+|[Обновление](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md);   |Обновление **объекта plannerBucket** . |
+|[удаление](../api/plannerbucket-delete.md); | Нет |Удаление **объекта plannerBucket** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения. Идентификатор сегмента. Содержит 28 знаков, учитывается регистр. [Проверка формата](tasks-identifiers-disclaimer.md) проводится для службы.|
+|id|String| Только для чтения. Идентификатор контейнера. Содержит 28 знаков, учитывается регистр. [Проверка формата](tasks-identifiers-disclaimer.md) проводится для службы.|
 |name|String|Имя сегмента.|
 |orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
-|planId|Строка|ИДЕНТИФИКАТОР плана, к которому относится сегмент.|
+|planId|Строка|Идентификатор плана, к которому принадлежит контейнер.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускается значение null. Коллекция задач в сегменте.|
+|tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускается значение null. Коллекция задач в контейнере.|
 
 ## <a name="json-representation"></a>Представление JSON
-Ниже представлено описание ресурса в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -65,7 +64,6 @@ ms.locfileid: "48073607"
   "orderHint": "String",
   "planId": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -5,12 +5,12 @@ author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 7c0a6e045d64aba40c2db8a323afab273ee7f517
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: 4cd761bee3a41033804e16840e27b60a3f4928aa
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704291"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65202472"
 ---
 # <a name="update-delegatedadminaccessassignment"></a>Обновление delegatedAdminAccessAssignment
 Пространство имен: microsoft.graph
@@ -53,7 +53,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 |accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Идентификаторы административных ролей, назначенных партнеру в клиенте клиента.|
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код `200 OK` ответа `202 Accepted` или код ответа.
 
@@ -61,7 +61,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 |Имя|Описание|
 |:---|:---|
 |Content-Type|application/json.|
-|Location|Расположение длительной операции.|
+|Местонахождение|Расположение длительной операции.|
 |Retry-After|Время, по истечении которого можно выполнить последующий вызов API к URL-адресу расположения для проверки состояния длительной операции.|
 
 Этот метод обычно возвращает `202 Accepted` код отклика с URL-адресом длительной операции в заголовке ответа **Location** , который можно отслеживать для завершения. Если значения, указанные в вызове, идентичны значениям в существующем объекте, API `200 OK` возвращает код ответа с исходным [объектом delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) в теле отклика.
@@ -69,6 +69,8 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_delegatedadminaccessassignment",
@@ -96,6 +98,28 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-delegatedadminaccessassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-delegatedadminaccessassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-delegatedadminaccessassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-delegatedadminaccessassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-delegatedadminaccessassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример ответа, который возвращает `202 Accepted` код ответа вместе с заголовками **Location** и **Retry-After** .

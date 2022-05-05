@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: bf1a8b16076575272c215c28a81bd0b3246a32c9
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 36d96649c4b527caf1772e9fab9045718e405d12
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629458"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65212053"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -21,7 +21,7 @@ ms.locfileid: "64629458"
 Обновление свойств объекта [user](../resources/user.md). Не все свойства могут быть обновлены участниками или гостями с разрешениями по умолчанию без ролей администратора. [Сравните разрешения по умолчанию для участника и гостя](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions), чтобы узнать, какими свойствами они могут управлять.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из следующих pefrmissions. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из следующих значений pefrmissions. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -56,7 +56,7 @@ PATCH /users/{id | userPrincipalName}
 | ageGroup | [ageGroup](../resources/user.md#agegroup-values) | Устанавливает возрастную группу пользователя. Допустимые значения: `null`, `Minor`, `NotAdult` и `Adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](../resources/user.md#legal-age-group-property-definitions). |
 |assignedLicenses|Коллекция [assignedLicense](../resources/assignedlicense.md)|Лицензии, назначенные пользователю. Значение null не допускается.            |
 |birthday|DateTimeOffset|День рождения пользователя. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и формата времени UTC. Например, полночь 1 января 2014 г. в формате UTC представляется в виде `2014-01-01T00:00:00Z`.|
-|businessPhones| Коллекция строк | Номера телефонов пользователя. **ПРИМЕЧАНИЕ:** Хотя это коллекция строк, для этого свойства можно установить только одно число.|
+|businessPhones| Коллекция строк | Номера телефонов пользователя. **ПРИМЕЧАНИЕ:** Хотя это строковая коллекция, для этого свойства можно задать только одно число.|
 |city|String|Город, в котором находится пользователь.|
 | CompanyName | String | Название организации, с которой связан пользователь. Это свойство может быть полезно для описания компании внешнего пользователя. Максимальная длина: 64 символа. |
 | consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | Устанавливает, получено ли согласие для несовершеннолетних. Допустимые значения: `null`, `Granted`, `Denied` и `NotRequired`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](../resources/user.md#legal-age-group-property-definitions). |
@@ -66,9 +66,9 @@ PATCH /users/{id | userPrincipalName}
 |displayName|String|Имя пользователя, отображаемое в адресной книге. Обычно это сочетание имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении.|
 |employeeId|String|Идентификатор сотрудника, назначенный пользователю организацией. Максимальная длина составляет 16 символов.|
 | employeeType | String | Фиксирует тип корпоративного работника. Например, `Employee`, `Contractor`, `Consultant` или `Vendor`.|
-|givenName;|String|Простое имя пользователя.|
+|givenName|String|Простое имя пользователя.|
 |employeeHireDate|DateTimeOffset|Дата приема пользователя на работу. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`. |
-|identities|Коллекция [objectIdentity](../resources/objectidentity.md)| Представляет удостоверения, которые можно использовать для входа в учетную запись пользователя. Удостоверение может предоставляться корпорацией Майкрософт, организациями или поставщиками удостоверений социальных сетей, такими как Facebook, Google и Майкрософт, и привязывается к учетной записи пользователя. Любое обновление **удостоверений** заменит всю коллекцию, и необходимо предоставить идентификатор userPrincipalName **signInType** в коллекции.|
+|identities|Коллекция [objectIdentity](../resources/objectidentity.md)| Представляет удостоверения, которые можно использовать для входа в учетную запись пользователя. Удостоверение может предоставляться корпорацией Майкрософт, организациями или поставщиками удостоверений социальных сетей, такими как Facebook, Google и Майкрософт, и привязывается к учетной записи пользователя. Любое обновление **удостоверений** заменит всю коллекцию, и необходимо указать удостоверение **signInType** userPrincipalName в коллекции.|
 |interests;|Коллекция строк|Список интересов пользователя.|
 |jobTitle|String|Должность пользователя.|
 |почта;|String|SMTP-адрес пользователя, например `jeff@contoso.onmicrosoft.com`. Для учетных записей Azure AD B2C это свойство можно обновить до десяти раз, используя уникальные адреса протокола SMTP. Изменение этого свойства также приведет к обновлению коллекции пользователя **proxyAddresses**, которая будет включать это значение как SMTP-адрес.|
@@ -94,7 +94,7 @@ PATCH /users/{id | userPrincipalName}
 |userPrincipalName|String|Имя субъекта-пользователя (UPN) для пользователя. Это имя для входа через Интернет по стандарту RFC 822. В соответствии с соглашением оно должно указывать на имя пользователя для электронной почты. Общий формат: псевдоним@домен. При этом домен должен входить в коллекцию проверенных доменов клиента. Доступ к проверенным доменам клиента можно получить с помощью свойства **verifiedDomains** объекта [organization](../resources/organization.md). <br>ПРИМЕЧАНИЕ. Это свойство не может содержать диакритические знаки. Разрешены только следующие символы: `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. Полный список разрешенных символов см. в [политиках имен пользователей](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts).|
 |userType|String|Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например `Member` и `Guest`.          |
 
-Поскольку ресурс **пользователя** поддерживает [расширения,](/graph/extensibility-overview)`PATCH` операцию можно использовать для добавления, обновления или удаления собственных данных, определенных для приложения, в настраиваемом свойстве расширения в существующем экземпляре **пользователя.**
+Так **как** пользовательский ресурс поддерживает [расширения,](/graph/extensibility-overview)`PATCH` операцию можно использовать для добавления, обновления или удаления собственных данных приложения в пользовательских свойствах расширения в существующем **экземпляре** пользователя.
 
 > [!NOTE] 
 > - Следующие свойства невозможно обновить с помощью приложения с использованием разрешений только для приложений: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** и **skills**.
@@ -283,9 +283,9 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-4-assign-a-custom-security-attribute-with-a-string-value-to-a-user"></a>Пример 4. Назначение пользовательского атрибута безопасности со значением строки пользователю
+### <a name="example-4-assign-a-custom-security-attribute-with-a-string-value-to-a-user"></a>Пример 4. Назначение пользовательского атрибута безопасности со строковым значением пользователю
 
-В следующем примере показано, как назначить пользователю настраиваемый атрибут безопасности со значением строки.
+В следующем примере показано, как назначить пользователю настраиваемый атрибут безопасности со строковым значением.
 
 + Набор атрибутов: `Engineering`
 + Атрибут: `ProjectDate`
@@ -294,7 +294,7 @@ HTTP/1.1 204 No Content
 
 Чтобы назначить настраиваемые атрибуты безопасности, вызывающему субъекту должна быть присвоена роль администратора назначения атрибутов и должно быть предоставлено разрешение *CustomSecAttributeAssignment.ReadWrite.All*.
 
-Дополнительные примеры для пользователей см. в [примере Назначение, обновление](/graph/custom-security-attributes-examples) или удаление настраиваемой атрибуты безопасности с помощью microsoft API Graph.
+Дополнительные примеры для пользователей см. в статье "Назначение, обновление или удаление настраиваемых атрибутов безопасности с помощью microsoft [API Graph"](/graph/custom-security-attributes-examples).
 
 #### <a name="request"></a>Запрос
 
@@ -352,6 +352,8 @@ HTTP/1.1 204 No Content
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_schemaextension"
@@ -366,6 +368,24 @@ Content-type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-schemaextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-schemaextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-schemaextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-schemaextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
@@ -376,7 +396,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
->**Примечание:** Чтобы удалить значение расширения схемы с объекта пользователя, установите свойство `null`. Пример:
+>**Примечание:** Чтобы удалить значение расширения схемы из пользовательского объекта, задайте для свойства значение `null`. Пример:
 >
 >```http
 >PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
