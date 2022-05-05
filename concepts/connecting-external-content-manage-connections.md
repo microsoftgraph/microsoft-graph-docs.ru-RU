@@ -5,20 +5,20 @@ ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 50248f9a1edbd3fa1ea054a05e7e6b3410180362
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 264f9611b9bd71524f60718e066d064b844acec0
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335880"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176620"
 ---
 <!---<author of this doc: rsamai>--->
 
-# <a name="create-update-and-delete-connections-in-the-microsoft-graph"></a>Создание, обновление и удаление подключений в Microsoft Graph
+# <a name="create-update-and-delete-connections-in-microsoft-graph"></a>Создание, обновление и удаление подключений в Microsoft Graph
 
 Подключения внешних служб к службе "Поиск (Майкрософт)" представляются ресурсом [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) в Microsoft Graph.
 
-Платформа подключений Microsoft Graph — это простой способ добавления внешних данных в Microsoft Graph. Подключение — это логический контейнер для внешних данных, которыми администратор управляет как единым целым.
+Платформа соединителей Microsoft Graph — это простой способ добавления внешних данных в Microsoft Graph. Подключение — это логический контейнер для внешних данных, которыми администратор управляет как единым целым.
 
 После создания подключения можно добавить содержимое из любого внешнего источника данных, такого как локальный источник контента или внешний сервис SaaS. Вы можете просматривать и управлять только созданными вами подключениями, и теми из них, которые были [авторизованными](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) для управления. Администратор поиска может просматривать все подключения клиента и управлять ими в современной версии центра администрирования.
 
