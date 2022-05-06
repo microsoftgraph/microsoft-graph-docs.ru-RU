@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 9e05d022b9bcf2359bdd2a84e8d5707d55c086b6
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 88cd4d08db4b903e188c82dd38c8d5b89131887f
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205622"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247338"
 ---
 # <a name="microsoft-graph-connectors-api-limits"></a>Ограничения API соединителей Microsoft Graph
 
@@ -34,7 +34,7 @@ ms.locfileid: "65205622"
 
 | **Ограничение** | **Описание** |
 | --------- | --------------- |
-| 100,000 | Максимальное количество [внешних групп](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) на клиента Microsoft 365. |
+| **100,000** | Максимальное количество [внешних групп](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) на клиента Microsoft 365. |
 | **1000 запросов/с** | Максимальное количество запросов, разрешенных в секунду в пороге[регулирования](#throttling) администрирования группы. |
 
 ## <a name="item-ingestion"></a>Прием элементов

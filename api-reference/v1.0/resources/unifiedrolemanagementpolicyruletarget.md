@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 1ae571305de5d7f20635467e65d38090761b21ce
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: f0b796bb00601d33bdeba2bd2acab8277f526f4d
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65134425"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247254"
 ---
 # <a name="unifiedrolemanagementpolicyruletarget-resource-type"></a>Тип ресурса unifiedRoleManagementPolicyRuleTarget
 
@@ -24,16 +24,16 @@ ms.locfileid: "65134425"
 |:---|:---|:---|
 |Вызывающий объект|String|Тип вызывающего объекта, который является целевым объектом правила политики. Допустимые значения: `None`, `Admin`, `EndUser`.|
 |enforcedSettings|Коллекция строк|Список параметров роли, которые применяются и не могут быть переопределены дочерними областями. Используйте `All` для всех параметров.|
-|inheritableSettings|Коллекция String|Список параметров роли, которые могут наследоваться дочерними областями. Используйте `All` для всех параметров.|
+|inheritableSettings|Коллекция строк|Список параметров роли, которые могут наследоваться дочерними областями. Используйте `All` для всех параметров.|
 |Уровень|String|Тип назначения роли, который является целевым объектом правила политики. Допустимые значения: `Eligibility`, `Assignment`.   |
-|operations|Коллекция String|Операции управления ролами, которые являются целью правила политики. Допустимые значения: `All`, `Activate`, , `Deactivate`, `Assign`, `Update`, `Extend``Remove``Renew`.|
+|operations|Коллекция строк|Операции управления ролами, которые являются целью правила политики. Допустимые значения: `All`, `Activate`, , `Deactivate`, `Assign`, `Update`, `Extend``Remove``Renew`.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|targetObjects|Коллекция [directoryObject](../resources/directoryobject.md)| Коллекция пользователей, групп и субъектов-служб, которые находятся в области действия политики. Если этот параметр не указан, все объекты находятся в области действия политики.|
+|targetObjects|Коллекция [directoryObject](../resources/directoryobject.md)| **Не реализовано.** Коллекция пользователей, групп и субъектов-служб, которые находятся в области действия политики. Если этот параметр не указан, все объекты находятся в области действия политики.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

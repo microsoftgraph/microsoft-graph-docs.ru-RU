@@ -1,21 +1,21 @@
 ---
 title: Перечисление объектов roleManagementPolicyAssignment
-description: Получение сведений о всех назначениях политик управления ролами.
+description: Получение сведений о всех назначениях политик управления ролями, включая политики и правила, связанные с Azure AD ролей.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5ebb16cc0f2ee140d4c1151a88de3f4bf57b717d
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: ec171a251928fab96bfb10a2a9f58143c0e204de
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65207390"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246820"
 ---
 # <a name="list-rolemanagementpolicyassignments"></a>Перечисление объектов roleManagementPolicyAssignment
 Пространство имен: microsoft.graph
 
-Получение сведений о всех назначениях политик управления ролами.
+Получение сведений о всех назначениях политик управления ролями, включая политики и правила, связанные с Azure AD ролей.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,7 +24,7 @@ ms.locfileid: "65207390"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
+|Для приложений|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ GET /policies/roleManagementPolicyAssignments?$filter=scopeId eq 'scopeId' and s
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного `200 OK` выполнения этот метод возвращает код отклика и коллекцию объектов [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) в теле отклика.
 

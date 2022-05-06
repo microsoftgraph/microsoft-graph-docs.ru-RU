@@ -1,27 +1,27 @@
 ---
-title: тип ресурса unifiedRoleDefinition
-description: Единое определение роли — это набор разрешений
+title: Тип ресурса unifiedRoleDefinition
+description: Унифицированное определение роли — это коллекция разрешений
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: c1d9f11a71aa9b6a611cab259801f34cd889deb5
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 93bc01ac19e0f976463821342524b060141e6182
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524632"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247233"
 ---
-# <a name="unifiedroledefinition-resource-type"></a>тип ресурса unifiedRoleDefinition
+# <a name="unifiedroledefinition-resource-type"></a>Тип ресурса unifiedRoleDefinition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет коллекцию разрешений с перечислением операций, таких как чтение, запись и удаление, которые могут выполняться поставщиком RBAC в рамках управления Microsoft 365 [RBAC](rolemanagement.md).
+Представляет коллекцию разрешений с перечислением операций, таких как чтение, запись и удаление, которые могут выполняться поставщиком RBAC в Microsoft 365 управления [RBAC.](rolemanagement.md)
 
 В настоящее время поддерживаются следующие поставщики RBAC:
-- Облачный КОМПЬЮТЕР 
+- Облачный ПК 
 - управление устройствами (Intune)
 - каталог (Azure AD) 
 - управление правами (Azure AD)
@@ -31,9 +31,9 @@ ms.locfileid: "61524632"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список unifiedRoleDefinition](../api/rbacapplication-list-roledefinitions.md) | [коллекция unifiedRoleDefinition](unifiedroledefinition.md) | Ознакомьтесь со списком объектов unifiedRoleDefinition и их свойствами. |
-| [Get unifiedRoleDefinition](../api/unifiedroledefinition-get.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Ознакомьтесь с свойствами объекта unifiedRoleDefinition. |
-| [Создание unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Создайте объект unifiedRoleDefinition. |
+| [Перечисление unifiedRoleDefinition](../api/rbacapplication-list-roledefinitions.md) | [Коллекция unifiedRoleDefinition](unifiedroledefinition.md) | Чтение списка объектов unifiedRoleDefinition и их свойств. |
+| [Получение unifiedRoleDefinition](../api/unifiedroledefinition-get.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Чтение свойств объекта unifiedRoleDefinition. |
+| [Создание roleDefinitions](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Создайте объект unifiedRoleDefinition. |
 | [Обновление unifiedRoleDefinition](../api/unifiedroledefinition-update.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Обновление объекта unifiedRoleDefinition. |
 | [Удаление unifiedRoleDefinition](../api/unifiedroledefinition-delete.md) | Нет | Удаление объекта unifiedRoleDefinition. |
 
@@ -41,21 +41,21 @@ ms.locfileid: "61524632"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|Строка| Описание единогоRoleDefinition. Только для чтения, **когда isBuiltIn** является правдой. |
-|displayName|Строка| Имя отображения для unifiedRoleDefinition. Только для чтения, **когда isBuiltIn** является правдой. Обязательно.  Поддерживает `$filter` `eq` (и `startsWith` только операторов).|
-|id|Строка| Уникальный идентификатор для единойRoleDefinition. Key, not nullable, Read-only.  Поддерживает `$filter` `eq` (только оператор). |
-|isBuiltIn|Boolean| Флаг, указывающий, является ли unifiedRoleDefinition частью набора по умолчанию, включенного в продукт или настраиваемый. Только для чтения.  Поддерживает `$filter` `eq` (только оператор).|
-|isEnabled|Boolean| Флаг, указывающий, включена ли роль для назначения. Если значение false, роль недоступна для назначения. Только для чтения, **когда isBuiltIn** является правдой. |
-|resourceScopes|Коллекция String| К списку областей применяются разрешения, предоставленные определением ролей. В настоящее `/` время поддерживается только. Только для чтения, когда isBuiltIn является правдой. **НЕ ИСПОЛЬЗУЙТЕ. В ближайшее время это будет отохошено. Присоединение области к назначению ролей** | 
-|rolePermissions|[коллекция unifiedRolePermission](unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, **когда isBuiltIn** является правдой. Обязательно. |
-|templateId|Строка| Настраиваемый идентификатор шаблона, который можно установить, когда isBuiltIn является ложным. Этот идентификатор обычно используется, если требуется, чтобы идентификатор был одинаковым в разных каталогах. Только для чтения, **когда isBuiltIn** является правдой. |
-|version|String| Указывает версию единойRoleDefinition. Только для чтения, **когда isBuiltIn** является правдой.|
+|description|String| Описание объекта unifiedRoleDefinition. Только для чтения, **если isBuiltIn** имеет значение true. |
+|displayName|String| Отображаемое имя объекта unifiedRoleDefinition. Только для чтения, **если isBuiltIn** имеет значение true. Обязательно.  Поддерживает (`$filter``eq`и `startsWith` только операторы).|
+|id|String| Уникальный идентификатор для unifiedRoleDefinition. Ключ, не допускающий значения NULL, только для чтения.  Поддерживает ( `$filter` только`eq` оператор). |
+|isBuiltIn|Boolean| Флаг, указывающий, является ли unifiedRoleDefinition частью набора по умолчанию, включенного в продукт или пользовательский. Только для чтения.  Поддерживает ( `$filter` только`eq` оператор).|
+|isEnabled|Boolean| Флаг, указывающий, включена ли роль для назначения. Если задано значение false, роль недоступна для назначения. Только для чтения, **если isBuiltIn** имеет значение true. |
+|resourceScopes|Коллекция String| К списку областей применяются разрешения, предоставленные определением роли. В настоящее время поддерживается `/` только. Только для чтения, если isBuiltIn имеет значение true. **НЕ ИСПОЛЬЗУЙТЕ. В ближайшее время это будет нерекомендуемым. Присоединение области к назначению ролей** | 
+|rolePermissions|[Коллекция unifiedRolePermission](unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, **если isBuiltIn** имеет значение true. Обязательно. |
+|templateId|String| Пользовательский идентификатор шаблона, который можно задать, если isBuiltIn имеет значение false. Этот идентификатор обычно используется, если требуется, чтобы идентификатор был одинаковым в разных каталогах. Только для чтения, **если isBuiltIn** имеет значение true. |
+|version|String| Указывает версию unifiedRoleDefinition. Только для чтения, **если isBuiltIn** имеет значение true.|
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|inheritsPermissionsFrom| [коллекция unifiedRoleDefinition](unifiedroledefinition.md)| Только для чтения набор определений ролей, которые наследует заданное определение роли. Только встроенные роли Azure AD поддерживают этот атрибут. |
+|inheritsPermissionsFrom| [Коллекция unifiedRoleDefinition](unifiedroledefinition.md)| Доступная только для чтения коллекция определений ролей, от которых наследуется заданное определение роли. Только Azure AD встроенные роли поддерживают этот атрибут. |
 
 ## <a name="json-representation"></a>Представление JSON
 

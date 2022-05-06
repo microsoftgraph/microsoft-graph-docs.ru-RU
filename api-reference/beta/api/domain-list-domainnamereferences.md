@@ -1,24 +1,24 @@
 ---
-title: Список domainNameReferences
-description: Извлечение списка directoryObject со ссылкой на домен.
+title: Перечисление domainNameReferences
+description: Получение списка directoryObject со ссылкой на домен.
 author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dd71708a6b944e7541b2ffc9bdb4f9e88353c9e3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d804a81e1896c5ac9d9fa9a357e2a9032bf4bad2
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62090554"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247317"
 ---
-# <a name="list-domainnamereferences"></a>Список domainNameReferences
+# <a name="list-domainnamereferences"></a>Перечисление domainNameReferences
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка [directoryObject](../resources/directoryobject.md) со ссылкой на домен. Возвращенный список будет содержать все объекты каталога, которые имеют зависимость от домена.
+Получение списка [directoryObject](../resources/directoryobject.md) со ссылкой на домен. Возвращаемый список будет содержать все объекты каталога, которые имеют зависимость от домена.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,7 +29,7 @@ ms.locfileid: "62090554"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Domain.Read.All, Domain.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Domain.Read.All, Domain.ReadWrite.All |
+|Для приложений | Domain.Read.All, Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -41,7 +41,7 @@ GET /domains/{id}/domainNameReferences
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает параметры `$select` запроса `$filter` [OData](/graph/query-parameters) и для настройки ответа. Можно отфильтровать только по типу OData возвращаемых объектов, например . `/domains/{domainId}/domainNameReferences/microsoft.graph.group` `/domains/{domainId}/domainNameReferences/microsoft.graph.user`
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -49,7 +49,7 @@ GET /domains/{id}/domainNameReferences
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

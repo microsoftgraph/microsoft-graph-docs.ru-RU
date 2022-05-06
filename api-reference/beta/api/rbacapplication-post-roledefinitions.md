@@ -1,18 +1,18 @@
 ---
-title: Создание unifiedRoleDefinition
+title: Создание roleDefinitions
 description: Создайте объект unifiedRoleDefinition.
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7ed0b30e2e2f1a2c7c0b995cc8062a4bf0e68fde
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 6a53b70d813ba0104bcd93f525866d8c73cf378e
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65061085"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246834"
 ---
-# <a name="create-unifiedroledefinition"></a>Создание unifiedRoleDefinition
+# <a name="create-roledefinitions"></a>Создание roleDefinitions
 
 Пространство имен: microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "65061085"
 Создайте объект [unifiedRoleDefinition](../resources/unifiedroledefinition.md) для поставщика RBAC.
 
 В настоящее время поддерживаются следующие поставщики RBAC:
-- Облачный компьютер
+- Облачный ПК
 - управление устройствами (Intune)
 - каталог (Azure AD)
 
@@ -33,24 +33,24 @@ ms.locfileid: "65061085"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All   |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All  |
 
 ### <a name="for-a-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) |  DeviceManagementRBAC.ReadWrite.All   |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) |  DeviceManagementRBAC.ReadWrite.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | DeviceManagementRBAC.ReadWrite.All |
 
 ### <a name="for-a-directory-azure-ad-provider"></a>Для поставщика каталога (Azure AD)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -77,7 +77,7 @@ POST /roleManagement/cloudPc/roleDefinitions
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -250,7 +250,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

@@ -1,18 +1,18 @@
 ---
-title: Создание unifiedRoleDefinition
+title: Создание roleDefinitions
 description: Создайте объект unifiedRoleDefinition.
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 582d0c3619779c3291a0cf2bfaa06bab62a4fee1
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: d49fc85b0e16bf7b3377a413123b31588293bf38
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060726"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247002"
 ---
-# <a name="create-unifiedroledefinition"></a>Создание unifiedRoleDefinition
+# <a name="create-roledefinitions"></a>Создание roleDefinitions
 
 Пространство имен: microsoft.graph
 
@@ -24,8 +24,8 @@ ms.locfileid: "65060726"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | RoleManagement.ReadWrite.Directory |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | RoleManagement.ReadWrite.Directory |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -40,7 +40,7 @@ POST /roleManagement/directory/roleDefinitions
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -122,7 +122,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

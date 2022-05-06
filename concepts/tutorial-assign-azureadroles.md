@@ -1,62 +1,62 @@
 ---
-title: Руководство. Используйте API управление привилегированными пользователями (PIM) для назначения ролей Azure AD
-description: Узнайте, как использовать API управление привилегированными пользователями (PIM) в Microsoft Graph для назначения привилегированных ролей Azure AD.
+title: Руководство. Использование API управление привилегированными пользователями (PIM) для назначения Azure AD ролей
+description: Узнайте, как использовать API управление привилегированными пользователями (PIM) в Microsoft Graph для назначения Azure AD привилегированных ролей.
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 8a30d6d4640ea6c84801e1db0325c1f79c8e9b08
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 78e523a12d59ac7b25482da26f3fb594e9517657
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337336"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247192"
 ---
-# <a name="tutorial-use-the-privileged-identity-management-pim-api-to-assign-azure-ad-roles"></a>Руководство. Используйте API управление привилегированными пользователями (PIM) для назначения ролей Azure AD
+# <a name="tutorial-use-the-privileged-identity-management-pim-api-to-assign-azure-ad-roles"></a>Руководство. Использование API управление привилегированными пользователями (PIM) для назначения Azure AD ролей
 
-API Graph PIM позволяет организациям управлять привилегированным доступом к ресурсам в Azure Active Directory (Azure AD). Это также помогает управлять рисками привилегированного доступа, ограничив время активного доступа, управляя областью доступа и предоставляя аудитируемый журнал привилегированного доступа.
+Microsoft Graph API PIM позволяет организациям управлять привилегированным доступом к ресурсам в Azure Active Directory (Azure AD). Он также помогает управлять рисками привилегированного доступа путем ограничения активности доступа, управления областью доступа и предоставления доступного для аудита журнала привилегированного доступа.
 
-В этом руководстве вымышлетельная компания Contoso Limited желает, чтобы ее ИТ-службы помогли управлять жизненным циклом доступа сотрудников. Компания определила роль администратора пользователя Azure AD в качестве соответствующей привилегированной роли, требуемой службой it helpdesk, и будет использовать API PIM для назначения роли.
+В этом руководстве вымышленная компания Contoso Limited хочет, чтобы служба ИТ-поддержки управляет жизненным циклом доступа сотрудников. Компания определила роль Azure AD пользователя как соответствующую привилегированную роль, необходимую службе технической поддержки ИТ, и будет использовать API PIM для назначения роли.
 
-Вы создаите группу безопасности, назначимую роли для ИТ-службы helpdesk, и с помощью API PIM назначите группе безопасности право на роль администратора пользователя. Назначив подходящую роль группе безопасности, Contoso имеет более эффективный способ управления доступом администратора к ресурсам, таким как роли Azure AD. Пример:
+Вы создадите группу безопасности, назначаемую ролем, для ИТ-службы технической поддержки и с помощью API PIM назначьте группе безопасности право на роль администратора пользователей. Назначая допустимую роль группе безопасности, contoso имеет более эффективный способ управления доступом администратора к ресурсам, таким как Azure AD ролей. Например:
 
-+ Удаление существующих или добавление дополнительных членов группы также удаляет администраторов.
-+ Добавление дополнительных ролей участникам группы вместо назначения ролей отдельным пользователям.
++ При удалении существующих или добавлении дополнительных членов группы также удаляются администраторы.
++ Добавление дополнительных ролей для участников группы вместо назначения ролей отдельным пользователям.
 
-Назначение права вместо постоянно активной привилегии администратора пользователей позволяет компании обеспечить доступ к простому **времени, что** дает временные разрешения на выполнение привилегированных задач. После определения права на роль соответствующий член группы активирует свое назначение на временный период. Все записи активаций ролей будут проверяться компанией.
+Назначение прав доступа вместо постоянного активного права администратора пользователей позволяет компании принудительно применять **JIT-доступ**, который предоставляет временные разрешения на выполнение привилегированных задач. После определения допустимости роли соответствующий член группы активирует свое назначение на временный период. Все записи об активации ролей будут доступны для аудита в компании.
 
 >[!NOTE]
->Объекты отклика, показанные в этом руководстве, могут быть сокращены для чтения.
+>Объекты ответа, показанные в этом руководстве, могут быть сокращены для удобочитаемости.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 
-Для завершения этого руководства необходимы следующие ресурсы и привилегии:
+Для работы с этим руководством вам потребуются следующие ресурсы и привилегии:
 
 + Рабочий клиент Azure AD с включенной Azure AD Premium P2 или EMS E5.
-+ Вопишитесь [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) в качестве пользователя в роли глобального администратора.
-  + [Необязательный] Запустите новый сеанс инкогнито или браузера InPrivate или запустите сеанс в анонимном браузере. Далее в этом учебнике вы вопишитесь.
-+ Следующие делегированные разрешения: `User.ReadWrite.All`, `Group.ReadWrite.All`, , `Directory.Read.All`и `RoleEligibilitySchedule.ReadWrite.Directory`, `RoleAssignmentSchedule.ReadWrite.Directory`и `RoleManagement.ReadWrite.Directory`.
-+ Authenticator установлено на телефоне для регистрации пользователя для многофакторной проверки подлинности (MFA).
++ Войдите в [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) в качестве пользователя с ролью глобального администратора.
+  + [Необязательно] Запустите новый сеанс инкогнито или браузера InPrivate или запустите сеанс в анонимном браузере. Вы выполните вход позже в этом руководстве.
++ Следующие делегированные разрешения: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, , `RoleEligibilitySchedule.ReadWrite.Directory`и `RoleAssignmentSchedule.ReadWrite.Directory`, и `RoleManagement.ReadWrite.Directory`.
++ Authenticator приложение, установленное на телефоне, чтобы зарегистрировать пользователя для многофакторной проверки подлинности (MFA).
 
-Согласие на необходимые разрешения в Graph Explorer:
-1. Выберите значок горизонтальных эллипсов справа от сведений учетной записи пользователя, а затем выберите **выбранные разрешения**.
+Чтобы дать согласие на необходимые разрешения в Graph Explorer:
+1. Щелкните значок многоточия по горизонтали справа от сведений об учетной записи пользователя, а затем выберите " **Выбрать разрешения"**.
   
-      :::image type="content" source="/graph/images/GE-Permissions/selectpermissions.png" alt-text="Выберите разрешения Graph Microsoft." border="true":::
+      :::image type="content" source="/graph/images/GE-Permissions/selectpermissions.png" alt-text="Выберите разрешения Graph Майкрософт." border="true":::
 
-2. Прокрутите список разрешений для этих разрешений:
-    + Группа (2), развиньте и выберите **Group.ReadWrite.All**.
-    + Каталог (4), развяжи и выберите **Directory.Read.All**.
-    + RoleAssignmentSchedule (2), расширяйте и выберите **RoleAssignmentSchedule.ReadWrite.Directory**.
-    + RoleEligibilitySchedule (2), расширяйте и выберите **RoleEligibilitySchedule.ReadWrite.Directory**.
-    + RoleManagement (3), развиньте и выберите **RoleManagement.ReadWrite.Directory**.
-    + Пользователь (8), расширить и затем выбрать **User.ReadWrite.All**.
+2. Прокрутите список разрешений до следующих разрешений:
+    + Группу (2), разверните и выберите **Group.ReadWrite.All**.
+    + Разверните каталог (4), а затем выберите **Directory.Read.All**.
+    + RoleAssignmentSchedule (2), разверните и выберите **RoleAssignmentSchedule.ReadWrite.Directory**.
+    + RoleEligibilitySchedule (2), разверните и выберите **RoleEligibilitySchedule.ReadWrite.Directory**.
+    + RoleManagement (3), разверните и выберите **RoleManagement.ReadWrite.Directory**.
+    + Пользователь (8), разверните и выберите **User.ReadWrite.All**.
    
-   Нажмите **Согласие** и выберите **Принять**, чтобы согласиться принять разрешения. Для получения `RoleEligibilitySchedule.ReadWrite.Directory` разрешений `RoleAssignmentSchedule.ReadWrite.All` и разрешений согласие от имени организации.
+   Нажмите **Согласие** и выберите **Принять**, чтобы согласиться принять разрешения. Для получения `RoleEligibilitySchedule.ReadWrite.Directory` разрешений `RoleAssignmentSchedule.ReadWrite.All` и разрешений согласие от имени вашей организации.
 
-      :::image type="content" source="/graph/images/GE-Permissions/User.ReadWrite.All-consent.png" alt-text="Согласие на Graph разрешений Майкрософт." border="true":::
+      :::image type="content" source="/graph/images/GE-Permissions/User.ReadWrite.All-consent.png" alt-text="Предоставление согласия на Graph майкрософт." border="true":::
 
 ## <a name="step-1-create-a-test-user"></a>Шаг 1. Создание тестового пользователя
 
-Создайте пользователя, который должен сбросить пароль при первом входе. На этом шаге зафиксировать значение **id** нового пользователя для использования на следующем шаге. После создания пользователя посетите портал Azure и ввести для пользователя многофакторную проверку подлинности (MFA). Дополнительные сведения о включаемой MFA см. в разделе [See also](#see-also) .
+Создайте пользователя, который должен сбросить пароль при первом входе. На этом шаге запишите значение идентификатора нового пользователя для использования  на следующем шаге. После создания пользователя посетите веб-портал Azure и включите многофакторную проверку подлинности (MFA) для пользователя. Дополнительные сведения о включении MFA см. в [разделе "См. также](#see-also) ".
 
 
 ### <a name="request"></a>Запрос
@@ -101,13 +101,13 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-2-create-a-security-group-that-can-be-assigned-an-azure-ad-role"></a>Шаг 2. Создание группы безопасности, которая может быть назначена роли Azure AD
+## <a name="step-2-create-a-security-group-that-can-be-assigned-an-azure-ad-role"></a>Шаг 2. Создание группы безопасности, которая может быть назначена Azure AD роли
 
-Создайте группу, которая назначается роли Azure AD. Назначьте себя владельцем группы, а вы и Aline (пользователь, созданный в шаге 1) в качестве участников.
+Создайте группу, которая может быть назначена Azure AD роли. Назначьте себя владельцем группы и вас и Aline (пользователя, созданного на шаге 1) в качестве участников.
 
-### <a name="request-create-a-role-assignable-group"></a>Запрос. Создайте группу, назначаемую для ролей
+### <a name="request-create-a-role-assignable-group"></a>Запрос. Создание группы с возможностью назначения ролей
 
-Замените `1ed8ac56-4827-4733-8f80-86adc2e67db5` свой ID `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` и значение ID Aline.
+Замените `1ed8ac56-4827-4733-8f80-86adc2e67db5` идентификатор и `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` значение идентификатора Aline.
 
 <!-- {
   "blockType": "request",
@@ -162,23 +162,23 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-3-create-a-unifiedroleeligibilityschedulerequest"></a>Шаг 3. Создание единой системыRoleEligibilityScheduleRequest
+## <a name="step-3-create-a-unifiedroleeligibilityschedulerequest"></a>Шаг 3. Создание unifiedRoleEligibilityScheduleRequest
 
-Теперь, когда у вас есть группа безопасности, назначьте ее в качестве подходящих для роли администратора пользователей. На этом шаге:
+Теперь, когда у вас есть группа безопасности, назначьте ее в качестве подходящей для роли администратора пользователей. На этом шаге:
 
-+ Создайте объект unifiedRoleEligibilityScheduleRequest, который определяет группу **it helpdesk (User)** в качестве права на роль администратора пользователя в течение одного года. Azure AD распространяет это назначение на членов группы, то есть на вас и на Aline.
-+ Область назначения, находящегося на 1000 000 000 000 00 Это позволяет администратору пользователя использовать свои привилегии для всех пользователей в клиенте, за исключением более высоких привилегированных пользователей, таких как Глобальный администратор.
++ Создайте объект unifiedRoleEligibilityScheduleRequest, который определяет группу **ИТ-службы технической поддержки (пользователя)** в качестве подходящей для роли администратора пользователя в течение одного года. Azure AD это допустимое назначение распространяется на участников группы, то есть вас и Алин.
++ Окажите допустимое назначение для всего клиента. Это позволяет администратору пользователя использовать свои привилегии для всех пользователей в клиенте, за исключением пользователей с более высоким уровнем привилегий, таких как глобальный администратор.
 
 ### <a name="request"></a>Запрос
 
-Замените `e77cbb23-0ff2-4e18-819c-690f58269752` значение **id** группы безопасности **ИТ-службы helpdesk (User** ). Этот **principalId** определяет назначителем права на роль администратора пользователя. RoleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` — это глобальный идентификатор шаблона для роли администратора пользователей в Azure AD.
+Замените `e77cbb23-0ff2-4e18-819c-690f58269752` значение идентификатора группы  безопасности **ИТ-службы (** пользователя). Этот **principalId** определяет получателя прав на роль администратора пользователя. RoleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` — это глобальный идентификатор шаблона для роли администратора пользователей в Azure AD.
 
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-unifiedRoleEligibilityScheduleRequest_create"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests
+POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilityScheduleRequests
 Content-type: application/json
 
 {
@@ -209,7 +209,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
     "id": "64a8bd54-4591-4f6a-9c77-3e9cb1fdd29b",
     "status": "Provisioned",
     "createdDateTime": "2021-09-03T20:45:28.3848182Z",
@@ -239,19 +239,19 @@ Content-type: application/json
 
 ## <a name="step-4-confirm-the-users-current-role-assignments"></a>Шаг 4. Подтверждение текущих назначений ролей пользователя
 
-Хотя теперь члены группы имеют право на роль администратора пользователей, они по-прежнему не могут использовать эту роль. Это потому, что они еще не активировать свои права. Вы можете подтвердить, проверив текущие назначения ролей пользователя.
+Хотя участники группы теперь имеют право на роль администратора пользователей, они по-прежнему не могут использовать эту роль. Это связано с тем, что они еще не активируют свое право на участие. Это можно проверить, проверив текущие назначения ролей пользователя.
 
 
 ### <a name="request"></a>Запрос
 
-В следующем запросе замените `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` значение **ID** Aline.
+В следующем запросе замените `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` значение идентификатора Aline **.**
 
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-roleAssignments_list"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=principalId eq '7146daa8-1b4b-4a66-b2f7-cf593d03c8d2'
+GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$filter=principalId eq '7146daa8-1b4b-4a66-b2f7-cf593d03c8d2'
 ```
 
 ### <a name="response"></a>Отклик
@@ -266,39 +266,39 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleAssignments",
     "value": []
 }
 ```
 
-На пустом объекте ответа показано, что у Aline нет существующих ролей Azure AD в Contoso. Теперь Aline активирует свою роль администратора пользователей в течение ограниченного времени.
+Пустой объект ответа показывает, что у Aline нет Azure AD ролей в Contoso. Теперь Aline активирует доступную роль администратора пользователей в течение ограниченного времени.
 
-## <a name="step-5-user-self-activates-their-eligible-assignment"></a>Шаг 5. Пользователь самостоятельно активирует свое назначение
+## <a name="step-5-user-self-activates-their-eligible-assignment"></a>Шаг 5. Пользователь самостоятельно активирует свое подходящее назначение
 
-Билет на инцидент CONTOSO: Security-012345 был поднят в системе управления инцидентами Contoso, и компания требует, чтобы все маркеры обновления сотрудника были признаны недействительными. Как член it-helpdesk, Aline отвечает за выполнение этой задачи.
+Запрос на инцидент CONTOSO: security-012345 был вызван в системе управления инцидентами Компании Contoso, и компания требует, чтобы все маркеры обновления сотрудника были недействительными. Как член службы технической поддержки ИТ,Aline отвечает за выполнение этой задачи.
 
 Сначала запустите приложение Authenticator на телефоне и откройте учетную запись Aline Dupuy.
 
-Во входе Graph Explorer в качестве Aline. Для этого шага можно использовать сеанс инкогнито или анонимный браузер. Таким образом, текущий сеанс в роли глобального администратора не прерывается. Кроме того, вы можете прервать текущий сеанс, подписав Graph Explorer и вернувшись в качестве Aline.
+Войдите в Graph Explorer в качестве Aline. Для этого шага можно использовать сеанс инкогнито или анонимный браузер. Таким образом, вы не будете прерывать текущий сеанс как пользователь с ролью глобального администратора. Кроме того, можно прервать текущий сеанс, выполнив выход из Graph Explorer и снова войдя в систему как Aline.
 
-Во время создания учетной записи вы сначала измените пароль, так как он был указан в качестве Aline. Затем, так как администратор настроил учетную запись для MFA, вам будет предложено настроить учетную запись в приложении Authenticator и получить вызов для регистрации MFA. Это потому, что PIM требует, чтобы MFA для всех назначений активной роли.
+Вошед в систему как Aline, вы сначала измените пароль, так как он был указан во время создания учетной записи. После этого, так как администратор настроит учетную запись для многофакторной проверки подлинности, вам будет предложено настроить учетную запись в приложении Authenticator и получить запрос на вход в MFA. Это связано с тем, что PIM требует многофакторную проверку подлинности для всех активных назначений ролей.
 
-После регистрации активируйте роль администратора пользователя в течение пяти часов.
+После входа активируйте роль администратора пользователя в течение пяти часов.
 
 ### <a name="request"></a>Запрос
 
-Чтобы активировать роль, позвоните в конечную `roleAssignmentScheduleRequests` точку. В этом запросе действие `UserActivate` позволяет активировать допустимые назначения, в этом случае в течение пяти часов.
+Чтобы активировать роль, вызовите конечную `roleAssignmentScheduleRequests` точку. В этом запросе действие `UserActivate` позволяет активировать допустимое назначение в течение пяти часов.
 
-+ Для **principalId** укайте значение **id** (Aline's).
-+ **RoleDefinitionId** — это **id** роли, на которую вы имеете право, в данном случае на роль администратора пользователей.
-+ Введите сведения о системе билетов, которая обеспечивает проверку для активации запроса.
++ Для **principalId** укажите значение идентификатора (Aline's **).**
++ **RoleDefinitionId** — это **идентификатор** роли, на которую вы имеете право, в данном случае роль администратора пользователя.
++ Введите сведения о системе запросов, которая предоставляет обоснование для аудита для активации запроса.
 
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-roleAssignmentScheduleRequests_selfActivate"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests
+POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests
 Content-type: application/json
 
 {
@@ -334,7 +334,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignmentScheduleRequests/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleAssignmentScheduleRequests/$entity",
     "id": "295edd40-4646-40ca-89b8-ab0b46b6f60e",
     "status": "Granted",
     "createdDateTime": "2021-09-03T21:10:49.6670479Z",
@@ -366,26 +366,26 @@ Content-type: application/json
 }
 ```
 
-Вы можете подтвердить назначение, запуская `GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser(on='principal')`. Объект ответа возвращает вновь активированное назначение роли со своим значением состояния `Granted`. С помощью новой привилегии выполнять любые разрешенные действия в течение пяти часов, для выполнения задания. Это включает недействительные маркеры обновления всех сотрудников. По истечении пяти часов срок действия активного назначения истекает, но благодаря вашему членству в группе ИТ-поддержки **(пользователей)** вы по-прежнему можете претендовать на роль администратора пользователя.
+Вы можете подтвердить назначение, выполнив команду `GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser(on='principal')`. Объект ответа возвращает только что активированное назначение роли с состоянием " `Granted`. С новыми привилегиями выполните все разрешенные действия в течение пяти часов, для выполнения задания. Это включает в себя недействительные маркеры обновления всех сотрудников. По истечении пяти часов срок действия активного назначения истекает, но благодаря членству в группе ИТ-поддержки **(пользователи)** вы по-прежнему можете использовать роль администратора пользователей.
 
-Во время глобального сеанса администратора вы получили уведомления как о назначении, так и об активации роли. Это позволяет глобальному администратору быть в курсе всех возвышения к привилегиям администратора в вашей организации.
+Вернув сеанс глобального администратора, вы получили уведомления о допустимом назначении и активации роли. Это позволяет глобальному администратору быть в курсе всех прав администратора в вашей организации.
 
 ## <a name="step-6-clean-up-resources"></a>Шаг 6. Очистка ресурсов
 
-Впишитесь в качестве глобального администратора и удалите следующие ресурсы, созданные для этого руководства: запрос на получение права на роль, группу ИТ-поддержки (пользователи) и тестовый пользователь (Aline Dupuy).
+Войдите в систему с правами глобального администратора и удалите следующие ресурсы, созданные для этого руководства: запрос на получение прав на роль, группа ИТ-поддержки (пользователи) и тестовый пользователь (Aline Dupuy).
 
-### <a name="revoke-the-role-eligibility-request"></a>Отопросить запрос на право на роль
+### <a name="revoke-the-role-eligibility-request"></a>Отзыв запроса на получение прав на роль
 
 #### <a name="request"></a>Запрос
 
-Замените `e77cbb23-0ff2-4e18-819c-690f58269752` **id** группы ИТ-поддержки (пользователей).
+Замените `e77cbb23-0ff2-4e18-819c-690f58269752` **идентификатором группы** ИТ-поддержки (пользователи).
 
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-roleEligibilityScheduleRequests_revoke"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests
+POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilityScheduleRequests
 Content-type: application/json
 
 {
@@ -409,7 +409,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
     "id": "dcd11a1c-300f-4d17-8c7a-523830400ec8",
     "status": "Revoked",
     "action": "AdminRemove",
@@ -419,18 +419,18 @@ Content-type: application/json
 }
 ```
 
-### <a name="delete-the-it-support-users-group"></a>Удаление группы ИТ-поддержки (пользователей)
+### <a name="delete-the-it-support-users-group"></a>Удаление группы ИТ-поддержки (пользователи)
 
 #### <a name="request"></a>Запрос
 
-Замените `e77cbb23-0ff2-4e18-819c-690f58269752` **id** группы ИТ-поддержки (пользователей).
+Замените `e77cbb23-0ff2-4e18-819c-690f58269752` **идентификатором группы** ИТ-поддержки (пользователи).
 
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-group_delete"
 }-->
 ```msgraph-interactive
-DELETE https://graph.microsoft.com/beta/groups/e77cbb23-0ff2-4e18-819c-690f58269752
+DELETE https://graph.microsoft.com/v1.0/groups/e77cbb23-0ff2-4e18-819c-690f58269752
 ```
 
 #### <a name="response"></a>Отклик
@@ -447,14 +447,14 @@ HTTP/1.1 204 No Content
 
 #### <a name="request"></a>Запрос
 
-Замените `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` значение **id** Aline.
+Замените `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` значение идентификатора Aline **.**
 
 <!-- {
   "blockType": "request",
   "name": "tutorial-assignaadroles-user_delete"
 }-->
 ```msgraph-interactive
-DELETE https://graph.microsoft.com/beta/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2
+DELETE https://graph.microsoft.com/v1.0/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2
 ```
 
 #### <a name="response"></a>Отклик
@@ -469,7 +469,7 @@ HTTP/1.1 204 No Content
 
 ## <a name="see-also"></a>См. также
 
-+ [Начните использовать управление привилегированными пользователями](/azure/active-directory/privileged-identity-management/pim-getting-started)
-+ [Роли, встроенные в Azure AD](/azure/active-directory/roles/permissions-reference#all-roles)
-+ [Включить многофакторную проверку подлинности Azure AD для обеспечения безопасности событий регистрации](/azure/active-directory/authentication/howto-mfa-userstates)
-+ [тип ресурса unifiedRoleEligibilityScheduleRequest](/graph/api/resources/unifiedroleeligibilityschedulerequest?view=graph-rest-beta&preserve-view=true)
++ [Общие сведения об управлении ролами с помощью PIM](/graph/api/resources/privilegedidentitymanagementv3-overview)
++ [Azure AD встроенных ролей](/azure/active-directory/roles/permissions-reference#all-roles)
++ [Включение многофакторной Azure AD проверки подлинности для каждого пользователя для защиты событий входа](/azure/active-directory/authentication/howto-mfa-userstates)
++ [Тип ресурса unifiedRoleEligibilityScheduleRequest](/graph/api/resources/unifiedroleeligibilityschedulerequest)

@@ -1,18 +1,18 @@
 ---
-title: Перечисление unifiedRoleDefinitions
+title: Перечисление объектов roleDefinition
 description: Получение списка объектов unifiedRoleDefinition.
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 992c25a0e050fe8fa58cc0cb674acb0db64302d7
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: eada3530c736ba8be1e027ea4610ddcb6b69cafd
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65207143"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246967"
 ---
-# <a name="list-unifiedroledefinitions"></a>Перечисление unifiedRoleDefinitions
+# <a name="list-roledefinitions"></a>Перечисление объектов roleDefinition
 
 Пространство имен: microsoft.graph
 
@@ -32,7 +32,7 @@ ms.locfileid: "65207143"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 
 ### <a name="for-the-entitlement-management-provider"></a>Для поставщика управления правами
@@ -41,7 +41,7 @@ ms.locfileid: "65207143"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+|Для приложений | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -72,7 +72,7 @@ GET /roleManagement/entitlementManagement/roleDefinitions
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в теле отклика.
 
@@ -121,7 +121,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -274,7 +274,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleDe
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

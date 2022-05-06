@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 25ec329d6cf0cd930ef62de8cc743694c3ecc0b9
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 3e171ba6b80f96ddd4a77d9e200f38d425eb7c4d
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804859"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246757"
 ---
 # <a name="list-channel-messages"></a>Перечисление сообщений в каналах
 
@@ -32,7 +32,7 @@ ms.locfileid: "62804859"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All, Group.Read.All **, Group.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application| ChannelMessage.Read.Group *, ChannelMessage.Read.All, Group.Read.All**, Group.ReadWrite.All** |
+|Приложение| ChannelMessage.Read.Group *, ChannelMessage.Read.All, Group.Read.All**, Group.ReadWrite.All** |
 
 [!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример запроса. `nextLink` в отклике можно использовать для получения следующей страницы сообщений.
+Ниже приведен пример запроса. `@odata.nextLink` в отклике можно использовать для получения следующей страницы сообщений.
 
 <!-- {
   "blockType": "response",

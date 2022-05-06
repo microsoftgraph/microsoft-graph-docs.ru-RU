@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса domainDnsRecord
-description: Объект DomainDnsRecord используется для представить записи DNS.
-localization_priority: Normal
+description: Сущность domainDnsRecord используется для представления записей DNS.
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: e3a5152d5eb59a4a1547ee8c7fcc6dbf88c1d976
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 327a07fcbca5c9c02bca90e46ceff9454c3267f3
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137608"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246561"
 ---
 # <a name="domaindnsrecord-resource-type"></a>Тип ресурса domainDnsRecord
 
@@ -18,20 +18,26 @@ ms.locfileid: "50137608"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Для каждого домена в клиенте может потребоваться добавить записи DNS в DNS-файл зоны домена, прежде чем домен будет использоваться Microsoft Online Services. Объект **DomainDnsRecord используется** для представить такие записи DNS. Базовый объект для сущностей [DomainDnsCnameRecord,](domaindnscnamerecord.md) [DomainDnsMxRecord,](domaindnsmxrecord.md) [DomainDnsSrvRecord](domaindnssrvrecord.md) и [DomainDnsTxtRecord.](domaindnstxtrecord.md)
+Для каждого [домена](domain.md) в клиенте может потребоваться добавить записи DNS в файл зоны DNS домена, прежде чем домен может использоваться Microsoft Online Services. Сущность **domainDnsRecord** используется для представления таких записей DNS. Этот тип ресурса является базовой сущностью для следующих ресурсов:
++ [domainDnsCnameRecord](domaindnscnamerecord.md);
++ [domainDnsMxRecord](domaindnsmxrecord.md);
++ [domainDnsSrvRecord](domaindnssrvrecord.md);
++ [domainDnsTxtRecord](domaindnstxtrecord.md);
++ [domainDnsUnavailableRecord](domaindnsunavailablerecord.md).
 
 ## <a name="methods"></a>Методы
-Прямые запросы к этому ресурсу не поддерживаются. Сведения о [том,](domain.md) как запрашивать записи доменной службы, см. в разделе "Домен".
+
+Нет.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка| Уникальный идентификатор, присвоенный этой сущности. Не имеет null, только для чтения.|
-|isOptional|Boolean| Если задается false, эта запись должна быть настроена клиентом на DNS-Microsoft Online Services для правильной работы с доменом. |
-|label|Строка| Значение, используемого при настройке имени DNS-записи на DNS-хосте. |
-|recordType|Строка| Указывает, какой тип DNS-записи представляет этот объект.</br></br>Может иметь одно из следующих значений: *CName,* *Mx,* *Srv,* *Txt*</br></br>Key |
-|supportedService|Строка| Microsoft Online Service или функция, которая зависит от этой записи DNS.</br></br>Может иметь одно из следующих значений: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
-|ttl|Int32| Значение, используемого при настройке свойства времени жизни (ttl) записи DNS на DNS-хосте. Не nullable |
+|id|String| Уникальный идентификатор, назначенный этой сущности. Не допускает значения NULL, только для чтения.|
+|isOptional|Boolean| Если значение равно false, эта запись должна быть настроена клиентом на узле DNS для правильной работы microsoft Online Services с доменом. |
+|label|String| Значение, используемое при настройке имени записи DNS на узле DNS. |
+|recordType|String| Указывает, какой тип записи DNS представляет эта сущность.</br></br>Значение может быть одним из следующих: `CName`, , `Mx``Srv`, `Txt`. |
+|supportedService|String| Microsoft Online Service или компонент, который зависит от этой записи DNS.</br></br>Может иметь одно из следующих значений: `null`, , `Email`, `Sharepoint`, `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`, `FullRedelegation``SharePointDefaultDomain`, `SharePointPublic`, `OrgIdAuthentication``Yammer`. `Intune`|
+|Ttl|Int32| Значение, используемое при настройке свойства срока жизни (ttl) записи DNS на узле DNS. Значение null не допускается. |
 
 ## <a name="relationships"></a>Связи
 Нет

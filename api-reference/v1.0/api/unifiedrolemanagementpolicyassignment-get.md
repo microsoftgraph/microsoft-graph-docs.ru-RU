@@ -1,21 +1,21 @@
 ---
 title: Получение объекта unifiedRoleManagementPolicyAssignment
-description: Получение сведений о назначении политики управления ролами и связанной политике.
+description: Получение сведений о назначении политики управления ролем, включая политику и правила, связанные с Azure AD роли.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 67801e603a87ea395fae33b4ce8b3535659c301e
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 167a2682d5e59ff948a3afcf12fc5143352a62e0
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204540"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246638"
 ---
 # <a name="get-unifiedrolemanagementpolicyassignment"></a>Получение объекта unifiedRoleManagementPolicyAssignment
 Пространство имен: microsoft.graph
 
-Получение сведений о назначении политики управления ролами и связанной политике.
+Получение сведений о назначении политики управления ролем, включая политику и правила, связанные с Azure AD роли.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,7 +24,7 @@ ms.locfileid: "65204540"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
+|Для приложений|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ GET /policies/roleManagementPolicyAssignments/{unifiedRoleManagementPolicyAssign
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения `200 OK` этот метод возвращает код отклика и объект [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) в теле отклика.
 

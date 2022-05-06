@@ -1,22 +1,22 @@
 ---
 title: 'educationSchool: delta'
-description: Создайте новые или обновленные школы, не выполняя полное чтение всей школьной коллекции.
+description: Получение только что созданных или обновленных учебных заведений без необходимости выполнять полное чтение всей коллекции учебных заведений.
 author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3c1bd5fa223b876725ce49a72bd0c34ac88be1ee
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 0d03adf36b56ded39b62c7101323ede33ebcbf9c
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62343754"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246617"
 ---
 # <a name="educationschool-delta"></a>educationSchool: delta
 
 Пространство имен: microsoft.graph
 
-Создайте новые или обновленные школы, не выполняя полное чтение всей школьной коллекции. [Подробные сведения см. в запросе Use Delta](/graph/delta-query-overview).
+Получение только что созданных или обновленных учебных заведений без необходимости выполнять полное чтение всей коллекции учебных заведений. Дополнительные [сведения см. в разделе "Использование разностного](/graph/delta-query-overview) запроса".
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "62343754"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,12 +51,12 @@ GET /education/schools/delta
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код `200 OK` отклика и [коллекцию educationSchool](../resources/educationschool.md) в тексте ответа. Отклик также содержит URL-адрес `nextLink` или `deltaLink`.
+В случае успешного выполнения эта функция возвращает код `200 OK` отклика и коллекцию [educationSchool](../resources/educationschool.md) в тексте отклика. Отклик также содержит URL-адрес `@odata.nextLink` или `@odata.deltaLink`.
 
-- Если возвращается URL-адрес `nextLink`, это означает, что во время сеанса получены не все страницы данных. Приложение продолжает отправлять запросы, используя URL-адрес `nextLink`, пока в ответ не будет включен URL-адрес `deltaLink`.
-- Если возвращается URL-адрес `deltaLink`, это означает, что больше нет данных о текущем состоянии ресурса. Сохраните и используйте URL-адрес `deltaLink` , чтобы узнать об изменениях в ресурсе в будущем.
+- Если возвращается URL-адрес `@odata.nextLink`, это означает, что во время сеанса получены не все страницы данных. Приложение продолжает отправлять запросы, используя URL-адрес `@odata.nextLink`, пока в ответ не будет включен URL-адрес `@odata.deltaLink`.
+- Если возвращается URL-адрес `@odata.deltaLink`, это означает, что больше нет данных о текущем состоянии ресурса. Сохраните и используйте URL-адрес `@odata.deltaLink` , чтобы узнать об изменениях в ресурсе в будущем.
 
-Подробные сведения см. в [материале Использование delta-запроса](/graph/delta-query-overview). Например, запросы см. [в рублях Получить дополнительные изменения для пользователей](/graph/delta-query-users).
+Дополнительные сведения см. в [разделе "Использование разностного запроса"](/graph/delta-query-overview). Примеры запросов см. в статье ["Получение добавочных изменений для пользователей"](/graph/delta-query-users).
 
 ## <a name="examples"></a>Примеры
 

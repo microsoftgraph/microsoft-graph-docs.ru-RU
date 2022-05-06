@@ -1,25 +1,25 @@
 ---
-title: 'baseTaskList: дельта'
-description: Получите набор ресурсов baseTaskList, которые были добавлены, удалены или удалены в Microsoft To Do.
+title: 'baseTaskList: delta'
+description: Получение набора ресурсов baseTaskList, которые были добавлены, удалены или удалены в Список дел Microsoft.
 author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 61922688438f294271e87b819523b6c07b476336
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: f5427f68c14faf5e1205cebee608a37e8eda87e0
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62343557"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247177"
 ---
-# <a name="basetasklist-delta"></a>baseTaskList: дельта
+# <a name="basetasklist-delta"></a>baseTaskList: delta
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите набор ресурсов [baseTaskList](../resources/basetasklist.md) , которые были добавлены, удалены или удалены в Microsoft To Do.
+Получение набора ресурсов [baseTaskList](../resources/basetasklist.md), которые были добавлены, удалены или удалены в Список дел Microsoft.
 
-**Вызов** функции дельты **для baseTaskList** похож на запрос GET, за исключением того, что при надлежащем применении маркеров состояния в одном или несколько из этих вызовов можно запрашивать дополнительные изменения **в baseTaskList**.[](/graph/delta-query-overview) Это позволяет поддерживать и синхронизировать локальный магазин **базыTaskList** пользователя без необходимости получать все **baseTaskList** с сервера каждый раз.
+Вызов **разностной** функции **для baseTaskList** аналогичен запросу GET, за исключением того, [](/graph/delta-query-overview) что при соответствующем применении маркеров состояния в одном или нескольких из этих вызовов можно запросить добавочные изменения **в baseTaskList**. Это позволяет поддерживать и синхронизировать локальное хранилище **baseTaskList** пользователя без необходимости каждый раз получать **все данные baseTaskList** с сервера.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,16 +43,16 @@ GET /users/{userId|userPrincipalName}/tasks/lists/delta
 
 ## <a name="query-parameters"></a>Параметры запроса
 
-Отслеживание изменений **в ресурсах baseTaskList** вызывает один или несколько вызовов функции **дельты** . Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в начальном запросе **delta**. Microsoft Graph автоматически кодирует указанные параметры в маркере, входящем в состав URL-адреса `nextLink` или `deltaLink`, включенного в отклик. Параметры запроса нужно указать только один раз в первом запросе. В последующих запросах `nextLink` `deltaLink` просто скопируйте и примените URL-адрес из предыдущего ответа, так как этот URL-адрес уже содержит закодированные и нужные параметры.
+Отслеживание изменений **в ресурсах baseTaskList** вызывает один или несколько вызовов **разностных** функций. Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в начальном запросе **delta**. Microsoft Graph автоматически кодирует указанные параметры в маркере, входящем в состав URL-адреса `@odata.nextLink` или `@odata.deltaLink`, включенного в отклик. Параметры запроса нужно указать только один раз в первом запросе. В последующих запросах `@odata.nextLink` `@odata.deltaLink` просто скопируйте и примените URL-адрес из предыдущего ответа, так как этот URL-адрес уже содержит закодированные требуемые параметры.
 
 | Параметр запроса    | Тип |Описание|
 |:---------------|:--------|:----------|
-| $deltatoken | string | В [URL-адрес](/graph/delta-query-overview) `deltaLink` предыдущей функции дельты возвращается маркер состояния для той же коллекции **baseTaskList**, что указывает на завершение этого раунда отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
-| $skiptoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в `nextLink` URL-адрес предыдущего  вызова функции дельты, указывает на то, что в том же **базовом собранииTaskList** необходимо отслеживать дальнейшие изменения. |
+| $deltatoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный `@odata.deltaLink` в URL-адресе предыдущего вызова разностной функции для той же коллекции **baseTaskList**, что указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `@odata.deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
+| $skiptoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный `@odata.nextLink` в URL-адресе предыдущего вызова функции delta, указывающий на то, что в той же коллекции **baseTaskList** будут отслеживаться дальнейшие изменения. |
 
 ### <a name="odata-query-parameters"></a>Параметры запросов OData
 
-- Поддержка запросов Delta `$filter` `$top`и параметры `$expand` запросов **для baseTaskList**. 
+- Поддержка разностных `$filter` `$top`запросов и `$expand` параметры запроса **для baseTaskList**. 
 - Параметр `$search` не поддерживается. 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -66,7 +66,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists/delta
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код `200 OK` отклика и [коллекцию baseTaskList](../resources/basetasklist.md) в тексте ответа.
+В случае успешного выполнения эта функция возвращает код `200 OK` отклика и [коллекцию baseTaskList](../resources/basetasklist.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 90b9f91d2e4a12a8c6211d125497c9179775990c
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: b2dc50efe61ca0e7fd4298cbc38d9b81442b9d30
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060988"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246379"
 ---
 # <a name="domain-resource-type"></a>Тип ресурса домена
 
@@ -51,17 +51,17 @@ ms.locfileid: "65060988"
 
 | Свойство   | Тип | Описание |
 |:---------------|:--------|:----------|
-|authenticationType|String| Указывает настроенный тип проверки подлинности для домена. Значение равно "или `Managed` " `Federated`. `Managed` указывает облачный управляемый домен, в котором Azure AD выполняет проверку подлинности пользователей. `Federated`указывает, что проверка подлинности выполняется в федерации с поставщиком удостоверений, таким как клиентский локальная служба Active Directory через службы федерации Active Directory (AD FS). Это свойство доступно только для чтения и не допускает значения NULL. |
+|authenticationType|String| Указывает настроенный тип проверки подлинности для домена. Значение равно "или `Managed` " `Federated`. `Managed`указывает облачный управляемый домен, Azure AD выполняет проверку подлинности пользователя. `Federated`указывает, что проверка подлинности выполняется в федерации с поставщиком удостоверений, таким как клиентский локальная служба Active Directory через службы федерации Active Directory (AD FS). Это свойство доступно только для чтения и не допускает значения NULL. |
 |availabilityStatus|String| Это свойство всегда за исключением `null` [случаев, когда](../api/domain-verify.md) используется действие проверки. При использовании [действия](../api/domain-verify.md) проверки **в** ответе возвращается сущность домена. Свойство **availabilityStatus** сущности **домена** в ответе имеет значение либо `AvailableImmediately` .`EmailVerifiedDomainTakeoverScheduled`|
 |id|String| Полное имя домена. Ключ, неизменяемый, не допускающий значения NULL, уникальный. |
-|isAdminManaged|Логический| Значение свойства равно, `false` если управление записями DNS домена делегировано Microsoft 365. В противном случае значение равно `true`. Не допускает значения NULL |
+|isAdminManaged|Boolean| Значение свойства равно, `false` если управление записями DNS домена делегировано Microsoft 365. В противном случае значение равно `true`. Не допускает значения NULL |
 |isDefault|Boolean| `true` Значение , если это домен по умолчанию, используемый для создания пользователя. Существует только один домен по умолчанию для каждой компании. Не допускает значения NULL |
 |isInitial|Boolean| `true` Значение , если это исходный домен, созданный службами Microsoft Online Services (companyname.onmicrosoft.com). Существует только один исходный домен для каждой компании. Не допускает значения NULL |
-|isRoot|Логическое| `true` Значение , если домен является проверенным корневым доменом. В противном `false` случае, если домен является поддоменом или непроверенным. Не допускает значения NULL |
+|isRoot|Boolean| `true` Значение , если домен является проверенным корневым доменом. В противном `false` случае, если домен является поддоменом или непроверенным. Не допускает значения NULL |
 |isVerified|Boolean| `true` Значение , если домен завершил проверку владения доменом. Не допускает значения NULL |
 |passwordNotificationWindowInDays|Int32|Указывает количество дней до получения пользователем уведомления о том, что срок действия пароля истекает. Если свойство не задано, будет использоваться значение по умолчанию 14 дней.|
 |passwordValidityPeriodInDays|Int32| Указывает срок действия пароля перед его изменением. Если свойство не задано, будет использоваться значение по умолчанию 90 дней. |
-|supportedServices|Коллекция объектов string| Возможности, назначенные домену. Может включать `0`или `1` несколько следующих значений: `Email`, , `Sharepoint`, `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`, `SharePointDefaultDomain`, `FullRedelegation`, `SharePointPublic``OrgIdAuthentication`, `Yammer`. `Intune` Значения, которые можно добавить или удалить с помощью API Graph: `Email`, `OfficeCommunicationsOnline`, `Yammer`. Не допускает значения NULL|
+|supportedServices|Коллекция строк| Возможности, назначенные домену. Может включать `0`или `1` несколько следующих значений: `Email`, , `Sharepoint`, `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`, `SharePointDefaultDomain`, `FullRedelegation`, `SharePointPublic``OrgIdAuthentication`, `Yammer`. `Intune` Значения, которые можно добавить или удалить с помощью API Graph: `Email`, `OfficeCommunicationsOnline`, `Yammer`. Значение null не допускается.|
 |state|[domainState](domainstate.md)| Состояние асинхронных операций, запланированных для домена. |
 
 ## <a name="relationships"></a>Связи
@@ -70,9 +70,9 @@ ms.locfileid: "65060988"
 
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
-|domainNameReferences|Коллекция [directoryObject](directoryobject.md)| Только для чтения, допускает значение NULL|
-|serviceConfigurationRecords|[Коллекция domainDnsRecord](domaindnsrecord.md)| Записи DNS, которые клиент добавляет в файл зоны DNS домена перед использованием домена службами Microsoft Online. Только для чтения, допускает значение NULL |
-|verificationDnsRecords|[Коллекция domainDnsRecord](domaindnsrecord.md)| Записи DNS, которые клиент добавляет в файл зоны DNS домена, прежде чем клиент сможет завершить проверку владения доменом с помощью Azure AD. Только для чтения, допускает значение NULL|
+|domainNameReferences|Коллекция [directoryObject](directoryobject.md)| Объекты, такие как пользователи и группы, которые ссылаются на идентификатор домена. Только для чтения, допускает значение NULL. Поддерживает и `$expand` тип `$filter` возвращаемых объектов OData. Например, `/domains/{domainId}/domainNameReferences/microsoft.graph.user` и `/domains/{domainId}/domainNameReferences/microsoft.graph.group`.|
+|serviceConfigurationRecords|[Коллекция domainDnsRecord](domaindnsrecord.md)| Записи DNS, которые клиент добавляет в файл зоны DNS домена перед использованием домена службами Microsoft Online. Только для чтения, допускает значение NULL. Поддерживает `$expand`. |
+|verificationDnsRecords|[Коллекция domainDnsRecord](domaindnsrecord.md)| Записи DNS, которые клиент добавляет в файл зоны DNS домена, прежде чем клиент сможет завершить проверку владения доменом с помощью Azure AD. Только для чтения, допускает значение NULL. Поддерживает `$expand`.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 813e0bd3ec6c5327f3bd0028d9b1c8c59eab5c5d
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: b03374daa233ca550e10faefc92b1b7d7c843e5b
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65134469"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247212"
 ---
 # <a name="unifiedrolemanagementpolicyassignment-resource-type"></a>Тип ресурса unifiedRoleManagementPolicyAssignment
 
@@ -23,16 +23,9 @@ ms.locfileid: "65134469"
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Перечисление объектов unifiedRoleManagementPolicyAssignment](../api/policyroot-list-rolemanagementpolicyassignments.md)|[Коллекция unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md)|Получение списка объектов [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) и их свойств.|
+|[Перечисление объектов unifiedRoleManagementPolicyAssignment](../api/policyroot-list-rolemanagementpolicyassignments.md)|[Коллекция unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md)|Получение сведений о всех назначениях политик управления ролами, включая политики и правила, связанные с Azure AD роли.|
 |[Получение объекта unifiedRoleManagementPolicyAssignment](../api/unifiedrolemanagementpolicyassignment-get.md)|[unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md)|Чтение свойств и связей объекта [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) .|
 
-<!--
-|[Create unifiedRoleManagementPolicyAssignment](../api/policyroot-post-rolemanagementpolicyassignments.md)|[unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md)|Create a new [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) object.|
-|[Update unifiedRoleManagementPolicyAssignment](../api/unifiedrolemanagementpolicyassignment-update.md)|[unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md)|Update the properties of an [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) object.|
-|[Delete unifiedRoleManagementPolicyAssignment](../api/unifiedrolemanagementpolicyassignment-delete.md)|None|Deletes an [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) object.|
-|[List unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicyassignment-list-policy.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) collection|Get the unifiedRoleManagementPolicy resources from the policy navigation property.|
-|[Add unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicyassignment-post-policy.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)|Add policy by posting to the policy collection.|
--->
 
 ## <a name="properties"></a>Свойства
 
@@ -41,7 +34,7 @@ ms.locfileid: "65134469"
 |id|String|Уникальный идентификатор назначения политики. Идентификатор обычно представляет собой объединение идентификатора **unifiedRoleManagementPolicy** и **roleDefinitionId** , разделенных символом подчеркивания.|
 |policyId|String|Идентификатор политики. Наследуется от [сущности](../resources/entity.md).|
 |roleDefinitionId|String|Идентификатор объекта [определения роли,](unifiedroledefinition.md) к которому применяется политика. Если этот параметр не указан, политика применяется ко всем ролям. Поддерживает $filter (`eq`).|
-|scopeId|String|Идентификатор области, в которой назначена политика.  Может быть `/` для клиента или идентификатора группы. Обязательный.|
+|scopeId|String|Идентификатор области, в которой назначена политика.  Может быть `/` для клиента или идентификатора группы. Обязательно.|
 |scopeType|String|Тип области, в которой назначена политика. Один из `Directory`, `DirectoryRole`. Обязательный.|
 
 ## <a name="relationships"></a>Связи
@@ -49,7 +42,7 @@ ms.locfileid: "65134469"
 |:---|:---|:---|
 |policy|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)| Политика, связанная с назначением политики. Поддерживает и `$expand` вложенные `$expand` правила **и** **эффективные отношенияrules** для политики.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

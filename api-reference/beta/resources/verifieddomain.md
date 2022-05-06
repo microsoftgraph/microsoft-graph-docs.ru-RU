@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса verifiedDomain
-description: Задает домен клиента. Свойство **verifiedDomains** объекта organization представляет собой коллекцию объектов **VerifiedDomain**.
-localization_priority: Normal
+description: Задает домен клиента. Свойство verifiedDomains сущности организации представляет собой коллекцию объектов verifiedDomain.
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: directory-management
 author: Jumaodhiss
-ms.openlocfilehash: b4a3a5bed105fe0e0849ddf7c21d7a1b087942ca
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: e792f30cf77d5199d27cae8d7ca7e6dbc6fc37da
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468686"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247037"
 ---
 # <a name="verifieddomain-resource-type"></a>Тип ресурса verifiedDomain
 
@@ -18,17 +18,17 @@ ms.locfileid: "51468686"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Задает домен клиента. Свойство **verifiedDomains** объекта [organization](organization.md) представляет собой коллекцию объектов **VerifiedDomain**.
+Задает домен клиента. Свойство **verifiedDomains** сущности организации представляет [](organization.md) собой коллекцию объектов **verifiedDomain**.
 
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|capabilities|String|Примеры: “Email”, “OfficeCommunicationsOnline”.|
-|isDefault|Boolean|                Значение **true** указывает, что это связанный с клиентом домен по умолчанию. В противном случае используется значение **false**.            |
-|isInitial|Boolean|Значение **true** указывает, что это первоначальный домен, связанный с клиентом. В противном случае используется значение **false**.|
-|name|String|Доменное имя, например "contoso.onmicrosoft.com"|
-|type|String|Пример: "Managed".|
+| Свойство     | Тип    | Описание                                                                          |
+|:-------------|:--------|:-------------------------------------------------------------------------------------|
+| capabilities | String  | Например: `Email`, `OfficeCommunicationsOnline`.                                  |
+| isDefault    | Boolean | `true`Значение , если это домен по умолчанию, связанный с клиентом; в противном случае . `false` |
+| isInitial    | Boolean | `true`Значение , если это исходный домен, связанный с клиентом; в противном случае . `false` |
+| name         | String  | Доменное имя; Например, `contoso.onmicrosoft.com`.                             |
+| type         | String  | Например, `Managed`.                                                              |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -44,11 +44,11 @@ ms.locfileid: "51468686"
 
 ```json
 {
-  "capabilities": "string",
+  "capabilities": "String",
   "isDefault": true,
   "isInitial": true,
-  "name": "string",
-  "type": "string"
+  "name": "String",
+  "type": "String"
 }
 
 ```

@@ -1,36 +1,36 @@
 ---
-title: Список унифицированныхRoleDefinitions
-description: Получите список объектов unifiedRoleDefinition.
+title: Перечисление объектов roleDefinition
+description: Получение списка объектов unifiedRoleDefinition.
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 197ca38aee291954cdac700a15ce167aaaa6f127
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: f9409d573cac02be8e870c6e7572713ec72c30ff
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669258"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246883"
 ---
-# <a name="list-unifiedroledefinitions"></a>Список унифицированныхRoleDefinitions
+# <a name="list-roledefinitions"></a>Перечисление объектов roleDefinition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [unifiedRoleDefinition](../resources/unifiedroledefinition.md) для поставщика RBAC.
+Получение списка объектов [unifiedRoleDefinition](../resources/unifiedroledefinition.md) для поставщика RBAC.
 
 В настоящее время поддерживаются следующие поставщики RBAC:
-- Облачный КОМПЬЮТЕР 
+- Облачный ПК 
 - управление устройствами (Intune)
 - каталог (Azure AD) 
 - управление правами (Azure AD)
 
 ## <a name="permissions"></a>Разрешения
 
-В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующих таблиц наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные дополнительные новости, в том числе [осторожность перед выбором](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) более привилегированных разрешений, см. [в руб. Permissions](/graph/permissions-reference).
+В зависимости от поставщика RBAC и требуемого типа разрешения (делегированного или приложения) выберите из следующих таблиц наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные сведения, [включая осторожность перед](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) выбором более привилегированных разрешений, см. в [разделе "Разрешения"](/graph/permissions-reference).
 
-### <a name="for-a-cloud-pc-provider"></a>Поставщик облачных ПК
+### <a name="for-a-cloud-pc-provider"></a>Для поставщика облачных компьютеров
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -46,7 +46,7 @@ ms.locfileid: "63669258"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
-### <a name="for-a-directory-azure-ad-provider"></a>Поставщик каталогов (Azure AD)
+### <a name="for-a-directory-azure-ad-provider"></a>Для поставщика каталога (Azure AD)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -54,7 +54,7 @@ ms.locfileid: "63669258"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
-### <a name="for-an-entitlement-management-provider"></a>Для поставщика прав на управление правами
+### <a name="for-an-entitlement-management-provider"></a>Для поставщика управления правами
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -64,32 +64,32 @@ ms.locfileid: "63669258"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Список определений ролей для поставщика облачных ПК:
+Чтобы получить список определений ролей для поставщика облачных компьютеров:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/cloudPC/roleDefinitions
 ```
 
-Список определений ролей для поставщика управления устройствами:
+Чтобы получить список определений ролей для поставщика управления устройствами:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/deviceManagement/roleDefinitions
 ```
 
-Список определений ролей для поставщика каталогов:
+Чтобы получить список определений ролей для поставщика каталогов:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/directory/roleDefinitions
 ```
 
-Список определений ролей для поставщика управления правами:
+Чтобы получить список определений ролей для поставщика управления правами:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/entitlementManagement/roleDefinitions
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметр `$filter` запроса и `id``displayName`свойства`isBuiltIn`. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$filter` запроса для `id`свойств `displayName`и `isBuiltIn` свойств. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -103,11 +103,11 @@ GET /roleManagement/entitlementManagement/roleDefinitions
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию объектов [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-role-definitions-for-a-directory-provider"></a>Пример 1. Список определений ролей для поставщика каталогов
+### <a name="example-1-list-role-definitions-for-a-directory-provider"></a>Пример 1. Перечисление определений ролей для поставщика каталогов
 
 #### <a name="request"></a>Запрос
 
@@ -152,7 +152,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -261,7 +261,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-role-definitions-for-a-cloud-pc-provider"></a>Пример 2. Список определений ролей для поставщика облачных ПК
+### <a name="example-2-list-role-definitions-for-a-cloud-pc-provider"></a>Пример 2. Перечисление определений ролей для поставщика облачных компьютеров
 
 #### <a name="request"></a>Запрос
 
@@ -306,7 +306,7 @@ GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -392,7 +392,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-list-role-definitions-for-the-entitlement-management-provider"></a>Пример 3. Список определений ролей для поставщика управления правами
+### <a name="example-3-list-role-definitions-for-the-entitlement-management-provider"></a>Пример 3. Перечисление определений ролей для поставщика управления правами
 
 #### <a name="request"></a>Запрос
 
@@ -437,7 +437,7 @@ GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleDe
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

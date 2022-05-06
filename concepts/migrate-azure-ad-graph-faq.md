@@ -1,150 +1,149 @@
 ---
-title: Вопросы переноса Graph Azure AD Graph Microsoft
-description: Предоставляет ответы на часто задамые вопросы о переносе Azure Active Directory (Azure AD) Graph Microsoft Graph.
+title: Azure AD Graph часто задаваемые вопросы о миграции Graph Microsoft
+description: Ответы на часто задаваемые вопросы о переходе с Azure Active Directory (Azure AD) Graph на microsoft Graph.
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: bf7f6f10551e80574d95a09894b3a23ae56a5452
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 0605dfc2eb38f6339fe27f167599a211d1c80208
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63334935"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247072"
 ---
-# <a name="azure-ad-graph-to-microsoft-graph-migration-faq"></a>Вопросы переноса Graph Azure AD Graph Microsoft
+# <a name="azure-ad-graph-to-microsoft-graph-migration-faq"></a>Azure AD Graph часто задаваемые вопросы о миграции Graph Microsoft
 
-В этой статье данная статья содержит ответы на часто задамые вопросы о переносе Azure Active Directory (Azure AD) Graph [в Microsoft Graph](/graph/overview).
+В этой статье содержатся ответы на часто задаваемые вопросы о миграции Azure Active Directory (Azure AD) Graph [в Microsoft Graph](/graph/overview).
 
-## <a name="how-is-microsoft-graph-different-from-azure-ad-graph-and-why-should-i-migrate-my-apps"></a>Чем Microsoft отличается Graph Azure AD Graph и почему следует перенести приложения?
+## <a name="how-is-microsoft-graph-different-from-azure-ad-graph-and-why-should-i-migrate-my-apps"></a>Чем Microsoft Graph отличается от Azure AD Graph и почему следует переносить мои приложения?
 
-API Azure AD Graph предоставляет доступ только к службам Azure AD. API microsoft Graph предоставляет единую конечную точку для доступа к службам Azure AD и другим службы Майкрософт, таким как Microsoft Teams, Microsoft Exchange и Microsoft Intune.
+Этот Azure AD API Graph предоставляет доступ только к Azure AD служб. Microsoft API Graph предоставляет единую конечную точку для доступа к службам Azure AD и другим службы Майкрософт, таким как Microsoft Teams, Microsoft Exchange и Microsoft Intune.
 
-[Microsoft Graph](/graph/overview) также более безопасна и устойчива, чем Azure AD Graph. По этой причине Azure AD Graph с 30 июня 2020 г. находится на пути обесценения и в ближайшее время будет завершена по мере перемещения всех инвестиций в Microsoft Graph. После выхода на пенсию приложения будут получать ответы на ошибки из конечной точки Azure AD Graph. Миграция в microsoft Graph, чтобы избежать потери функциональных возможностей.
+[Microsoft Graph](/graph/overview) также является более безопасным и устойчивым, чем Azure AD Graph. По этой причине Azure AD Graph был выведен из эксплуатации с 30 июня 2020 г. и будет прекращен в ближайшем будущем по мере переноса всех инвестиций в Microsoft Graph. После прекращения поддержки ваши приложения будут получать сообщения об ошибках от Azure AD Graph конечной точки. Перейдите на microsoft Graph, чтобы избежать потери функциональности.
 
-## <a name="as-a-developer-how-do-i-identify-apps-that-use-azure-ad-graph"></a>Как определить приложения, которые используют Azure AD Graph?
+## <a name="as-a-developer-how-do-i-identify-apps-that-use-azure-ad-graph"></a>Как разработчик может определить приложения, использующие Azure AD Graph?
 
-Выполните следующие действия, чтобы определить приложения с зависимостью от Azure AD Graph:
+Выполните следующие действия, чтобы определить приложения с зависимостью от Azure AD Graph.
 
-### <a name="step-1-scan-the-application-source-code"></a>Шаг 1. Сканирование исходных кодов приложений
+### <a name="step-1-scan-the-application-source-code"></a>Шаг 1. Сканирование исходного кода приложения
 
-Если у вас есть исходный код приложения, поиск `https://graph.windows.net/` URI в коде. Это конечная точка Azure AD Graph и приложения, которые называют эту конечную точку, используют Azure AD Graph. Зафиксировать значение ID приложения пострадавшего приложения.
+Если вы владеете исходным кодом приложения, `https://graph.windows.net/` найдите URI в коде. Это конечная Azure AD Graph и приложения, вызывающие эту конечную точку, используют Azure AD Graph. Запишите значение идентификатора приложения затронутого приложения.
 
-### <a name="step-2-check-the-apps-api-permissions-on-the-azure-portal"></a>Шаг 2. Проверка разрешений API приложения на портале Azure
+### <a name="step-2-check-the-apps-api-permissions-on-the-azure-portal"></a>Шаг 2. Проверка разрешений API приложения на портал Azure
 
-1. Во входе на портал [Azure](https://portal.azure.com) в качестве глобального администратора.
-1. Поиск и выбор **Azure Active Directory**.
+1. Войдите [в портал Azure в](https://portal.azure.com) качестве глобального администратора.
+1. Найдите **и выберите Azure Active Directory**.
 1. В разделе **Управление** выберите **Регистрация приложений**.
-1. В **окне регистраций приложений** в режиме предварительного просмотра включить предварительный просмотр **регистраций приложений**. Выберите **вкладку Все приложения** , а затем выберите **параметр Добавить фильтры** . Выберите **параметр ID приложения (клиента)** из списка доступных фильтров и выберите **Apply**.  Всплывет фильтр.
-1. В текстовом окне введите ИД приложения, полученный в шаге 1, и выберите **Apply**. Список сужен до указанного приложения.
+1. В **окне Регистрация приложений** включите **предварительный Регистрация приложений поиска**. Перейдите **на вкладку "Все приложения** ", а затем выберите **параметр "Добавить фильтры** ". Выберите параметр **идентификатора приложения (клиента)** из списка доступных фильтров и нажмите кнопку " **Применить"**.  Отобразит фильтр.
+1. В текстовом поле введите идентификатор приложения, полученный на шаге 1, и нажмите кнопку " **Применить"**. Список сужается до указанного приложения.
 
-    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppClientIDFilter.png" alt-text="Фильтрация по приложениям по ID приложения." border="true":::
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppClientIDFilter.png" alt-text="Фильтрация по приложениям по идентификатору приложения." border="true":::
 
-1. Выберите приложение. Это показывает меню приложения.
-1. В левой области окна выберите **разрешения API**. В этом случае раскрываются настроенные разрешения API для вашего приложения, в том числе Graph Azure AD.
+1. Выберите приложение. Откроется меню приложения.
+1. В левой области окна выберите разрешения **API**. Это позволяет отобразить настроенные разрешения API для вашего приложения, включая Azure AD Graph разрешений.
 
-    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/configuredPermissions.png" alt-text="Список разрешений API приложения с портала Azure." border="true":::
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/configuredPermissions.png" alt-text="Список разрешений API приложения из портал Azure." border="true":::
 
 
-## <a name="as-an-it-admin-how-do-i-identify-apps-in-my-tenant-that-use-azure-ad-graph"></a>Как определить приложения в клиенте, которые используют Azure AD Graph?
+## <a name="as-an-it-admin-how-do-i-identify-apps-in-my-tenant-that-use-azure-ad-graph"></a>Как ИТ-администратору определить приложения в клиенте, которые используют Azure AD Graph?
 
-Используйте один из следующих трех методов для определения приложений в клиенте с зависимостью от Azure AD Graph.
+Используйте один из следующих трех методов для идентификации приложений в клиенте с зависимостью от Azure AD Graph.
 
-### <a name="method-1-through-network-proxy-logs"></a>Метод 1. С помощью журналов прокси-серверов сети
+### <a name="method-1-through-network-proxy-logs"></a>Метод 1. С помощью журналов прокси-сервера сети
 
-Проверьте журналы трафика сетевого сервера с помощью прокси-фильтра для любых приложений, вызываемой конечной `https://graph.windows.net/` точкой. Эти приложения используют Azure AD Graph.
+Проверьте журналы трафика сетевого сервера через прокси-сервер фильтра для всех приложений, вызывающих конечную `https://graph.windows.net/` точку. Эти приложения используют Azure AD Graph.
 
-### <a name="method-2-use-the-app-registrations-menu-of-the-azure-portal"></a>Метод 2. Используйте меню регистрации приложений на портале Azure
+### <a name="method-2-use-the-app-registrations-menu-of-the-azure-portal"></a>Метод 2. Используйте Регистрация приложений меню портал Azure
 
-1. Во входе на портал [Azure](https://portal.azure.com) в качестве глобального администратора.
-1. Поиск и выбор **Azure Active Directory**.
+1. Войдите [в портал Azure в](https://portal.azure.com) качестве глобального администратора.
+1. Найдите **и выберите Azure Active Directory**.
 1. В разделе **Управление** выберите **Регистрация приложений**.
-1. В **окне регистраций приложений** в режиме предварительного просмотра включить предварительный просмотр **регистраций приложений**. Выберите **вкладку Все приложения** , а затем выберите **параметр Добавить фильтры** . Выберите параметр **Запрашиваемого API** из списка доступных фильтров и выберите **Apply**. **Всплывет фильтр запрашиваемой API**.
+1. В **окне Регистрация приложений** включите **предварительный Регистрация приложений поиска**. Перейдите **на вкладку "Все приложения** ", а затем выберите **параметр "Добавить фильтры** ". Выберите параметр **"Запрашиваемый API** " из списка доступных фильтров и нажмите кнопку " **Применить"**. **Отобразит фильтр запрашиваемого API**.
 
-    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/RequestedAPI.png" alt-text="Фильтрация приложений по запрашиваемой API." border="true":::
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/RequestedAPI.png" alt-text="Фильтрация приложений по запрошенным API." border="true":::
 
-5. Выберите **API Майкрософт**. Выберите падение **API** **и выберите Azure Active Directory Graph**. Нажмите **Применить**. В этом списке перечислены все приложения с зависимостью от Azure AD Graph.
+5. Выберите **API Майкрософт**. Выберите **раскрывающийся список API** **и выберите Azure Active Directory Graph**. Нажмите **Применить**. Здесь перечислены все приложения с зависимостью от Azure AD Graph.
 
-    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/RequestedAPI-AAD.png" alt-text="Фильтруем приложения, которые используют azure AD Graph." border="true":::
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/RequestedAPI-AAD.png" alt-text="Фильтрация приложений, использующих Azure AD Graph." border="true":::
 
-### <a name="method-3-use-a-powershell-script"></a>Метод 3. Использование сценария PowerShell
+### <a name="method-3-use-a-powershell-script"></a>Метод 3. Использование скрипта PowerShell
 
-Скачайте и [запустите этот скрипт PowerShell](https://github.com/microsoft/AzureADGraphApps).
+Скачайте и [запустите этот сценарий PowerShell](https://github.com/microsoft/AzureADGraphApps). Используйте этот метод для получения приложений с домашним каталогом в клиенте и приложений с их домашними каталогами в других клиентах.
 
 
+## <a name="microsoft-sent-me-an-email-with-a-list-of-app-ids-for-apps-using-azure-ad-graph-how-do-i-find-the-details-of-each-app-including-its-owner"></a>Корпорация Майкрософт отправила мне сообщение электронной почты со списком идентификаторов приложений, использующих Azure AD Graph. Разделы справки найти сведения о каждом приложении, включая его владельца?
 
-## <a name="microsoft-sent-me-an-email-with-a-list-of-app-ids-for-apps-using-azure-ad-graph-how-do-i-find-the-details-of-each-app-including-its-owner"></a>Корпорация Майкрософт отправила мне электронное письмо со списком ID приложений с помощью Azure AD Graph. Как найти сведения о каждом приложении, включая его владельца?
-
-1. Во входе на портал [Azure](https://portal.azure.com) в качестве глобального администратора.
-1. Поиск и выбор **Azure Active Directory**.
+1. Войдите [в портал Azure в](https://portal.azure.com) качестве глобального администратора.
+1. Найдите **и выберите Azure Active Directory**.
 1. В разделе **Управление** выберите **Регистрация приложений**.
-1. В **окне регистраций приложений** в режиме предварительного просмотра включить предварительный просмотр **регистраций приложений**. Выберите **вкладку Все приложения** , а затем выберите **параметр Добавить фильтры** . Выберите **параметр ID приложения (клиента)** из списка доступных фильтров и выберите **Apply**.  Всплывет фильтр.
-1. Введите ID приложения в текстовом окне и выберите **Apply**. Список сужен до указанного приложения.
+1. В **окне Регистрация приложений** включите **предварительный Регистрация приложений поиска**. Перейдите **на вкладку "Все приложения** ", а затем выберите **параметр "Добавить фильтры** ". Выберите параметр **идентификатора приложения (клиента)** из списка доступных фильтров и нажмите кнопку " **Применить"**.  Отобразит фильтр.
+1. Введите идентификатор приложения в текстовом поле и нажмите кнопку " **Применить"**. Список сужается до указанного приложения.
 
-    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppClientIDFilter.png" alt-text="Фильтрация по приложениям по ID приложения." border="true":::
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppClientIDFilter.png" alt-text="Фильтрация по приложениям по идентификатору приложения." border="true":::
 
-6. Выберите приложение. Это показывает меню приложения. В левой области окна параметры меню, такие как **Owners** , позволяют получить сведения о приложении.
+6. Выберите приложение. Откроется меню приложения. В левой области окна параметры меню, такие как "Владельцы", позволяют получить сведения о приложении.
 
-## <a name="microsoft-sent-me-an-email-with-a-list-of-app-ids-for-apps-using-azure-ad-graph-are-these-all-the-affected-apps"></a>Корпорация Майкрософт отправила мне электронное письмо со списком ID приложений с помощью Azure AD Graph. Это все затронутые приложения?
+## <a name="microsoft-sent-me-an-email-with-a-list-of-app-ids-for-apps-using-azure-ad-graph-are-these-all-the-affected-apps"></a>Корпорация Майкрософт отправила мне сообщение электронной почты со списком идентификаторов приложений, использующих Azure AD Graph. Это все затронутые приложения?
 
-В этом списке запечатлены только приложения, используемые в течение последних 28 дней и называемые Graph Azure AD. Так как некоторые приложения могут использовать сезонные, их ID приложения может быть захвачен в списке одного месяца, но не в другом. Чтобы получить полный список затронутых приложений, рекомендуется следовать одному [из трех](#as-an-it-admin-how-do-i-identify-apps-in-my-tenant-that-use-azure-ad-graph) перечисленных ранее методов.
+В этом списке фиксируются только приложения, используемые в течение последних 28 дней и вызываемые Azure AD Graph конечной точкой. Так как некоторые приложения могут использовать сезонное использование, их идентификатор может быть записан в списке за один месяц, но не в другом. Чтобы получить полный список затронутых приложений, рекомендуется следовать одному [из трех](#as-an-it-admin-how-do-i-identify-apps-in-my-tenant-that-use-azure-ad-graph) указанных выше методов.
 
-## <a name="im-a-subscription-owner-and-microsoft-sent-me-an-email-about-azure-ad-graph-deprecation-with-a-list-of-app-ids-what-should-i-do"></a>Я владелец подписки, и Корпорация Майкрософт отправила мне сообщение об амортизации Azure AD Graph со списком ID приложения. Что мне делать?
+## <a name="im-a-subscription-owner-and-microsoft-sent-me-an-email-about-azure-ad-graph-deprecation-with-a-list-of-app-ids-what-should-i-do"></a>Я владелец подписки, и корпорация Майкрософт отправила мне сообщение Azure AD Graph о прекращении поддержки со списком идентификаторов приложений. Что мне делать?
 
-Получаемая электронная почта включает в себя ID клиента, связанные с ID-адресами приложений. Выполните следующие действия, чтобы получить технические контактные данные для определенных клиентов.
-1. Во входе на [портал Azure в](https://portal.azure.com) качестве администратора.
-1. Если вы владелец подписки в нескольких клиентах Azure AD, сначала переключение на соответствующий клиент или каталог.
-    1. В правом верхнем окне выберите значок профиля и выберите **каталог Switch**. Это показывает **параметры портала | Окно каталогов и подписки** . 
-    1. Из списка используйте вкладку **Switch** , чтобы перейти в каталог, который соответствует ИД клиента, полученному в электронной почте. Активный каталог **помечен current.**
+Получаемые сообщения электронной почты содержат идентификаторы клиентов, связанные с идентификаторами приложений. Выполните следующие действия, чтобы получить технические контактные данные для конкретных клиентов.
+1. Войдите [в портал Azure с](https://portal.azure.com) правами администратора.
+1. Если вы являетесь владельцем подписки в нескольких Azure AD клиентах, сначала переключитесь на соответствующий клиент или каталог.
+    1. В правом верхнем углу окна щелкните значок профиля и выберите " **Переключить каталог"**. Откроется список **параметров портала | Окно каталогов и подписок** . 
+    1. В списке используйте вкладку **"** Переключить", чтобы перейти в каталог, идентификатор каталога которого соответствует идентификатору клиента, полученному в сообщении электронной почты. Active Directory помечен как **"Текущий"**.
     1. Закройте окно.
-1. В соответствующем каталоге поиск **и выбор Azure Active Directory**. Это показывает меню для активного клиента. 
-1. В левой области окна в статье **Управление** выберите **Свойства**.
-1. В **окне свойств клиента** сначала убедитесь, что значение tenant ID совпадает с ИД клиента, полученным в электронной почте. Извлечения **технических контактных** данных, чтобы связаться с клиентом, чтобы они могли быть осведомлены об амортизации.
+1. В соответствующем каталоге найдите и **выберите Azure Active Directory.** Откроется меню для активного клиента. 
+1. В левой области окна в **разделе "Управление**" выберите **"Свойства"**.
+1. В **окне свойств клиента** сначала убедитесь, что значение идентификатора клиента соответствует идентификатору клиента, полученному в сообщении электронной почты. Получите сведения **о техническом** контакте для связи с клиентом, чтобы он знал об устаревании.
 
-    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/tenantTechnicalContact.png" alt-text="Найдите технический контакт клиента." border="true":::
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/tenantTechnicalContact.png" alt-text="Поиск технического контакта клиента." border="true":::
 
-## <a name="i-know-apps-that-are-using-azure-ad-graph-how-do-i-migrate-them-to-microsoft-graph"></a>Я знаю приложения, использующие Azure AD Graph. Как перенести их в Microsoft Graph?
+## <a name="i-know-apps-that-are-using-azure-ad-graph-how-do-i-migrate-them-to-microsoft-graph"></a>Я знаю приложения, использующие Azure AD Graph. Разделы справки перенести их в Microsoft Graph?
 
-Чтобы перенести приложения из Azure AD Graph Microsoft Graph, выполните контрольный список планирования [миграции приложений](migrate-azure-ad-graph-planning-checklist.md).
+Чтобы перенести приложения из Azure AD Graph в Microsoft Graph, следуйте контрольным спискам планирования [миграции приложений](migrate-azure-ad-graph-planning-checklist.md).
 
-## <a name="i-dont-own-some-apps-in-my-tenant-but-they-use-azure-ad-graph-how-do-i-migrate-them-to-microsoft-graph-api-can-i-find-the-owner-of-such-apps"></a>У меня нет некоторых приложений в клиенте, но они используют Azure AD Graph. Как перенести их в API Graph Майкрософт? Могу ли я найти владельца таких приложений?
+## <a name="i-dont-own-some-apps-in-my-tenant-but-they-use-azure-ad-graph-how-do-i-migrate-them-to-microsoft-graph-api-can-i-find-the-owner-of-such-apps"></a>У меня нет приложений в моем клиенте, но они используют Azure AD Graph. Разделы справки перенести их в Microsoft API Graph? Можно ли найти владельца таких приложений?
 
-Сначала подтвердите полный список приложений, которые принадлежат вашему клиенту или сторонним приложениям, интегрированным в клиента.
+Сначала подтвердите полный список приложений, принадлежащих вашему клиенту или сторонним приложениям, интегрированным в клиент.
 
-1. Во входе на [портал Azure в](https://portal.azure.com) качестве администратора.
-1. Поиск и выбор **Azure Active Directory**.
+1. Войдите [в портал Azure с](https://portal.azure.com) правами администратора.
+1. Найдите **и выберите Azure Active Directory**.
 1. В разделе **Управление** выберите **Регистрация приложений**.
-1. В окне регистраций приложений выберите вкладку **Все приложения** .
-1. Выберите приложение. Это показывает меню приложения.
-1. В левом окне параметры меню раскрывают сведения о приложении, в том числе о его владельцах.
+1. В окне Регистрация приложений выберите вкладку **"Все приложения**".
+1. Выберите приложение. Откроется меню приложения.
+1. В левой области окна параметры меню показывают сведения о приложении, включая его владельцев.
 
     :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppOwners.png" alt-text="Найдите владельцев приложений." border="true":::
 
 
-## <a name="my-organization-runs-azure-stack-hub-what-actions-should-i-take"></a>Моя организация выполняет Azure Stack Hub. Какие действия следует принять?
+## <a name="my-organization-runs-azure-stack-hub-what-actions-should-i-take"></a>В моей организации работает Azure Stack Hub. Какие действия следует выполнить?
 
-Если в организации работает центр Azure Stack Hub, самое важное действие — следовать политике обслуживания [концентратора Azure Stack Hub](/azure-stack/operator/azure-stack-servicing-policy).
+Если в вашей организации используется Azure Stack Hub, самое важное действие — следовать политике обслуживания [Azure Stack Hub](/azure-stack/operator/azure-stack-servicing-policy).
 
-Для миграции клиенты будут уведомлены на портале администрирования Azure Stack Hub для обновления каталогов домашних и гостевых клиентов. Миграция в microsoft Graph будет управляться с помощью встроенного обновления системы.
+Чтобы выполнить миграцию, клиенты будут получать уведомления на портале администрирования Azure Stack Hub для обновления каталогов домашних и гостевых клиентов. Миграцией в Microsoft Graph будет управлять интегрированная среда обновления системы.
 
-## <a name="i-need-to-add-new-azure-ad-graph-permissions-to-my-app-but-i-cant-select-azure-ad-graph-as-a-required-permission-for-my-app-registration-how-can-i-add-the-azure-ad-graph-permissions"></a>Мне нужно добавить новые разрешения Azure AD Graph в свое приложение, но я не могу выбрать Azure AD Graph в качестве необходимого разрешения для регистрации приложения. Как добавить разрешения Azure AD Graph?
+## <a name="i-need-to-add-new-azure-ad-graph-permissions-to-my-app-but-i-cant-select-azure-ad-graph-as-a-required-permission-for-my-app-registration-how-can-i-add-the-azure-ad-graph-permissions"></a>Мне нужно добавить новые разрешения Azure AD Graph приложения, но я не могу выбрать Azure AD Graph в качестве необходимого разрешения для регистрации приложения. Как добавить разрешения Azure AD Graph разрешений?
 
-Во-первых, рекомендуется следовать контрольным [](migrate-azure-ad-graph-planning-checklist.md) списком планирования миграции приложений, чтобы помочь вам перейти к API Graph Microsoft.
+Во-первых, рекомендуется выполнить контрольный [](migrate-azure-ad-graph-planning-checklist.md) список планирования миграции приложений, чтобы помочь вам перевести приложения в microsoft API Graph.
 
-Если вы определили пробел, в котором microsoft Graph не поддерживает функцию, доступную в Azure AD Graph, дайте нам знать через Microsoft Q&A с помощью тега [azure-ad-graph-deprecation](/answers/topics/azure-ad-graph-deprecation.html).
+Если вы обнаружили разрыв, в котором Microsoft Graph не поддерживает функцию, доступную в Azure AD Graph, сообщите нам об этом с помощью Microsoft Q&A с помощью тега [azure-ad-graph-deprecation](/answers/topics/azure-ad-graph-deprecation.html).
 
-Если вам по-прежнему необходимо настроить Graph Azure AD для приложений, используйте одно из следующих обходных пути.
+Если вам по-прежнему Azure AD Graph разрешения для приложений, используйте одно из следующих обходных решений.
 
-+ С помощью портала Azure можно найти API, которые использует организация
-+ Обновление манифеста приложения на портале Azure
-+ Используйте [API](/graph/api/resources/application) приложения в Microsoft Graph для обновления объекта [requiredResourceAccess](/graph/api/resources/requiredresourceaccess)
-+ Используйте [смдлет Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true)  в Microsoft Graph PowerShell SDK
++ Используйте портал Azure, чтобы найти API, которые использует ваша организация
++ Обновление манифеста приложения на портал Azure
++ Использование API [приложения](/graph/api/resources/application) в Microsoft Graph для обновления [объекта requiredResourceAccess](/graph/api/resources/requiredresourceaccess)
++ Использование [командлета Update-MgApplicationcmdlet](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true)  в microsoft Graph PowerShell
 
-Примеры, использующие перечисленные обходные пути, см. в Graph Microsoft для настройки необходимых разрешений [Azure AD Graph для регистрации приложений](migrate-azure-ad-graph-configure-permissions.md)
+Примеры использования перечисленных обходных решений см. в статье "Использование Microsoft Graph для настройки необходимых разрешений Azure AD Graph для [регистрации приложения"](migrate-azure-ad-graph-configure-permissions.md).
 
->**Примечание:** Добавление разрешений Azure AD Graph с помощью этих обходных методов не будет поддерживаться после выхода из службы Azure AD Graph. Любое приложение с Graph Azure AD по-прежнему перестает функционировать после выхода на пенсию.
+>**Примечание:** Добавление Azure AD Graph разрешений с помощью этих обходных решений не будет поддерживаться после прекращения использования Azure AD Graph. Все приложения, использующие Azure AD Graph, по-прежнему перестанут работать после прекращения поддержки.
 
 
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также
 
 + [Контрольный список для переноса приложений](migrate-azure-ad-graph-request-differences.md)
