@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 04f8f16b6c83c97708a2e56cc77474f24b075274
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5bd90acea4a93bba5ae5687141a68b1deaca841f
+ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333668"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65294028"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -43,8 +43,8 @@ ms.locfileid: "63333668"
 |**Расширения**| | |
 | [Список объектов extensionProperties](../api/application-list-extensionproperty.md) | Коллекция [extensionProperty](extensionProperty.md) | Список свойств расширения для объекта application. |
 | [Создание объекта extensionProperties](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Создание свойства расширения для объекта application. |
-| [Вывод объекта ExtensionProperty](../api/extensionproperty-delete.md) | Нет | Вывод свойства расширения из объекта приложения. |
-| [Удаление объекта ExtensionProperty](../api/extensionproperty-delete.md) | Нет | Удаление свойства расширения объекта application. |
+| [Получение объекта extensionProperty](../api/extensionproperty-delete.md) | Нет | Удаление свойства расширения объекта application. |
+| [Удаление объекта extensionProperty](../api/extensionproperty-delete.md) | Нет | Удаление свойства расширения объекта application. |
 |[Получение доступных свойств расширения](../api/directoryobject-getavailableextensionproperties.md)|Коллекция [extensionProperty](../resources/extensionproperty.md)|Получение полного или отфильтрованного списка свойств расширения каталога, которые зарегистрированы в каталоге.|
 |**Владельцы**| | |
 |[Список владельцев](../api/application-list-owners.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции объектов owner.|
@@ -94,6 +94,7 @@ ms.locfileid: "63333668"
 | publicClient | [publicClientApplication](publicclientapplication.md) | Указывает параметры для установленных клиентов, например классических или мобильных устройств. |
 | publisherDomain | String | Проверенный домен издателя для приложения. Только для чтения. Дополнительные сведения см. в статье [Практическое руководство. Настройка домена издателя приложения](/azure/active-directory/develop/howto-configure-publisher-domain). Поддерживает `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`).|
 | requiredResourceAccess |Коллекция [requiredResourceAccess](requiredresourceaccess.md)| Указывает ресурсы, к которым приложению необходимо получить доступ. В этом свойстве также указывается набор делегированных разрешений и ролей приложения, необходимых для каждого из этих ресурсов. Эта настройка доступа к необходимым ресурсам определяет порядок предоставления согласия. Можно настроить не более 50 служб ресурсов (API). С середины октября 2021 г. общее количество необходимых разрешений не должно превышать 400. Значение null не допускается. <br><br>Поддерживает `$filter` (`eq`, `not`, `ge`, `le`).|
+| serviceManagementReference | Строка | Ссылается на контактные данные приложения или службы из базы данных службы или управления активами. Допускается значение null. |
 | signInAudience | String | Указывает, учетные записи Майкрософт, которые поддерживаются для текущего приложения. Возможные значения: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount` (используется по умолчанию) и `PersonalMicrosoftAccount`. Дополнительные сведения см. в [таблице ниже](#signinaudience-values). <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`).|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Указывает параметры для одностраничного приложения, в том числе URL-адреса выхода и URI перенаправления для кодов авторизации и маркеров доступа. |
 | tags |Коллекция String| Настраиваемые строки, которые можно использовать для классификации и определения приложения. Значение null не допускается.<br><br>Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
@@ -159,6 +160,7 @@ ms.locfileid: "63333668"
   "publicClient": {"@odata.type": "microsoft.graph.publicClientApplication"},
   "publisherDomain": "String",
   "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredResourceAccess"}],
+  "serviceManagementReference": "String",
   "signInAudience": "String",
   "spa": {"@odata.type": "microsoft.graph.spaApplication"},
   "tags": ["String"],

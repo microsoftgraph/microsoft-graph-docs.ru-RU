@@ -4,12 +4,12 @@ description: Описание различий в свойствах между 
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 19f6490cda2c6107de97fd853a8d09e604fb83f6
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: 2d5df9eede57ff0987bfced91d34c11d4d5142f1
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65293965"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296243"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Различия свойств между Azure AD Graph и Microsoft Graph
 
@@ -38,7 +38,8 @@ ms.locfileid: "65293965"
 | **isCompromised** | бета-версия  &nbsp;-&nbsp; _недоступна_ <br> Версия 1.0 &nbsp;-&nbsp; _недоступна_ | API [защиты Graph](/graph/api/resources/identityprotection-root?view=graph-rest-beta&preserve-view=true) удостоверений Майкрософт предоставляет более сложные функции. |
 | **lastDirSyncDateTime** | beta &nbsp;-&nbsp;**onPremisesLastSyncDateTime** <br> v1.0 &nbsp;-&nbsp; **onPremisesLastSyncDateTime** | |
 | **mobile** | бета-версия  &nbsp;-&nbsp; **mobilePhone** <br> MobilePhone версии 1.0 &nbsp;-&nbsp; | |
-| **passwordProfile** | beta  &nbsp;-&nbsp; **passwordProfile** <br> **PasswordProfile** версии 1.0 &nbsp;-&nbsp; | Имя и тип свойства по-прежнему **являются passwordProfile** , но свойства сложного типа **passwordProfile** изменились. См [. сведения о различиях в свойствах passwordProfile](#passwordprofile-property-differences). |
+| **passwordProfile/enforceChangePasswordPolicy** | beta  &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignIn** <br> v1.0 &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignIn** | |
+| **passwordProfile/forceChangePasswordNextLogin** | beta  &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignInWithMfa** <br> v1.0 &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignInWithMfa** | |
 | **provisioningErrors** | бета-версия &nbsp;-&nbsp; _недоступна_ <br> Версия 1.0 &nbsp;-&nbsp; _недоступна_ | Это свойство и его сведения являются нерекомендуемыми.  Однако новое свойство, описывающее все ошибки подготовки Подключение AD, можно найти в **onPremisesProvisioningErrors**. |
 | **refreshTokensValidFromDateTime** | **betasigninSessionsValidFromDateTime**&nbsp;-&nbsp;<br>**v1.0signinSessionsValidFromDateTime**&nbsp;-&nbsp; | |
 | **signinNames** | beta &nbsp;-&nbsp; **identities/signInType** <br> Удостоверения версии 1.0 &nbsp;-&nbsp; **/signInType** | Это свойство теперь является частью [ресурса objectIdentity](/graph/api/resources/objectIdentity) .|
@@ -47,16 +48,6 @@ ms.locfileid: "65293965"
 | **userIdentities** | бета-версии &nbsp;-&nbsp; **удостоверений** <br> Удостоверения версии 1.0 &nbsp;-&nbsp; | Дополнительные сведения см. в описании типа ресурса [objectIdentity](/graph/api/resources/objectIdentity) .|
 | **userState** | beta  &nbsp;-&nbsp; **externalUserState** <br> v1.0 &nbsp;-&nbsp; **externalUserState** | |
 | **userStateChangedOn** | **betaexternalUserStateChangeDateTime**&nbsp;-&nbsp;<br>**v1.0externalUserStateChangeDateTime**&nbsp;-&nbsp; | |
-
-### <a name="passwordprofile-property-differences"></a>Различия в свойствах passwordProfile
-
-Свойства сложного **типа passwordProfile** были переименованы в Microsoft Graph следующим образом.
-
-| Azure AD Graph <br>(v1.6) свойство | Microsoft Graph<br> свойство | Комментарии |
-|--|--|--|
-| enforceChangePasswordPolicy | beta &nbsp;-&nbsp; **forceChangePasswordNextSignIn** <br> v1.0 &nbsp;-&nbsp; **forceChangePasswordNextSignIn** |  |
-| forceChangePasswordNextLogin | beta &nbsp;-&nbsp; **forceChangePasswordNextSignInWithMfa** <br> v1.0 &nbsp;-&nbsp; **forceChangePasswordNextSignInWithMfa** |  |
-| password | **бета-пароль** &nbsp;-&nbsp; <br> Пароль версии 1.0 &nbsp;-&nbsp; |  |
 
 ## <a name="group-property-differences"></a>Различия в свойствах группы
 

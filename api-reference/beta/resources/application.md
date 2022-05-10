@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 4c790077a68746e90491bcc87dd139428458eb87
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: a4c6b7ebd169c8c0557748a476a773072df75a7a
+ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477487"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65294035"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -109,6 +109,7 @@ ms.locfileid: "64477487"
 | publicClient | [publicClientApplication](publicclientapplication.md) | Указывает параметры для установленных клиентов, например классических или мобильных устройств. |
 | publisherDomain | String | Проверенный домен издателя для приложения. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`).|
 | requiredResourceAccess |Коллекция [requiredResourceAccess](requiredresourceaccess.md)| Указывает ресурсы, к которым приложению необходимо получить доступ. В этом свойстве также указывается набор делегированных разрешений и ролей приложения, необходимых для каждого из этих ресурсов. Эта настройка доступа к необходимым ресурсам определяет порядок предоставления согласия. Можно настроить не более 50 служб ресурсов (API). С середины октября 2021 г. общее количество необходимых разрешений не должно превышать 400. Значение null не допускается. <br><br>Поддерживает `$filter` (`eq`, `not`, `ge`, `le`).|
+| serviceManagementReference | Строка | Ссылается на контактные данные приложения или службы из базы данных службы или управления активами. Допускается значение null. |
 | signInAudience | String | Указывает, учетные записи Майкрософт, которые поддерживаются для текущего приложения. Возможные значения: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount` (используется по умолчанию) и `PersonalMicrosoftAccount`. Дополнительные сведения см. в [таблице ниже](#signinaudience-values). <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`).|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Указывает параметры для одностраничного приложения, в том числе URL-адреса выхода и URI перенаправления для кодов авторизации и маркеров доступа. |
 | tags |Коллекция String| Настраиваемые строки, которые можно использовать для классификации и определения приложения. Значение null не допускается.<br><br>Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
@@ -183,6 +184,7 @@ ms.locfileid: "64477487"
   "publicClient": {"@odata.type": "microsoft.graph.publicClientApplication"},
   "publisherDomain": "String",
   "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredResourceAccess"}],
+  "serviceManagementReference": "String",
   "signInAudience": "String",
   "spa": {"@odata.type": "microsoft.graph.spaApplication"},
   "tags": ["String"],

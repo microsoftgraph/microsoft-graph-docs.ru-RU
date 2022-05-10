@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9f337a8a516dbd1bc3bd772a52f74000d412c071
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 663ce725f4e3812c025915199da5cc702cbadba3
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072556"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296418"
 ---
 # <a name="directory-resource-type"></a>Тип ресурса каталога
 
@@ -18,9 +18,9 @@ ms.locfileid: "59072556"
 
 Представляет удаленный элемент в каталоге. После удаления элемент добавляется в "контейнер" удаленных элементов. Удаленные элементы можно восстановить в течение 30 дней. Через 30 дней элементы удаляются без возможности восстановления.
 
-В настоящее время функции удаленных элементов поддерживаются только для [приложений,](application.md) [групповых](group.md)и [пользовательских](user.md) ресурсов.
+В настоящее время функции удаленных элементов поддерживаются только для [ресурсов приложения](application.md), [группы](group.md) [и](user.md) пользователей.
 
-Наследует от [объекта](entity.md).
+Наследует [от сущности](entity.md).
 
 ## <a name="methods"></a>Методы
 
@@ -30,22 +30,23 @@ ms.locfileid: "59072556"
 |[Восстановление удаленного элемента](../api/directory-deleteditems-restore.md) |[directoryObject](directoryobject.md)| Восстанавливает недавно удаленный элемент. |
 |[Перечисление удаленных элементов](../api/directory-deleteditems-list.md) |Коллекция [directoryObject](directoryobject.md)| Получает список недавно удаленных элементов. |
 |[Окончательное удаление элемента](../api/directory-deleteditems-delete.md) | None | Окончательно удаляет элемент. |
-|[Список удаленных элементов, которые принадлежат пользователю](../api/directory-deleteditems-user-owned.md) | Коллекция [directoryObject](directoryobject.md) | Списки элементов каталогов, которые принадлежат пользователю. |
+|[Вывод списка удаленных элементов, принадлежащих пользователю](../api/directory-deleteditems-user-owned.md) | Коллекция [directoryObject](directoryobject.md) | Выводит список элементов каталога, принадлежащих пользователю. |
 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|id|Строка| Уникальный идентификатор объекта; например, `12345678-9abc-def0-1234-56789abcde` . Ключ. Значение null не допускается. Только для чтения. Наследуется от [сущности](entity.md).|
+|id|Строка| Уникальный идентификатор объекта; Например, `12345678-9abc-def0-1234-56789abcde`. Ключ. Значение null не допускается. Только для чтения. Наследуется от [сущности](entity.md).|
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|administrativeUnits|[коллекция administrativeUnit](administrativeunit.md)| Концептуальный контейнер для объектов каталога пользователей и групп.|
+|administrativeUnits|[Коллекция administrativeUnit](administrativeunit.md)| Концептуальный контейнер для объектов каталогов пользователей и групп.|
 |deletedItems|Коллекция [directoryObject](directoryobject.md)| Недавно удаленные элементы. Только для чтения. Допускается значение null.|
+|federationConfigurations|Коллекция [identityProviderBase](../resources/identityproviderbase.md)|Настройте федерацию домена с организациями, поставщик удостоверений которых поддерживает протокол SAML или WS-Fed.|
 
 ## <a name="json-representation"></a>Представление JSON
 

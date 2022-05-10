@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 85536cc55604de7f88f561a3b1e232cd333c7ec8
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: fab1fff05253708ddad039d04ebb79a8c747f598
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191354"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296228"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
@@ -1047,7 +1047,7 @@ ms.locfileid: "65191354"
 | Автоматически
 | noPreview
 | checklist
-| description
+| описание
 | справочник
 
 
@@ -1109,7 +1109,7 @@ ms.locfileid: "65191354"
 ### <a name="onenotesourceservice-values"></a>Значения onenoteSourceService
 | Member
 |:---------------------
-| Неизвестно
+| Unknown
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -1460,7 +1460,7 @@ ms.locfileid: "65191354"
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| почта;   | 1     | Почтовая угроза.            |
+| mail;   | 1     | Почтовая угроза.            |
 | url    | 2     | Угроза URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -1596,7 +1596,7 @@ ms.locfileid: "65191354"
 |Валюты | Столбец валюты. |
 |dateTime | Столбец DateTime. |
 |Поиска | Столбец подстановки. |
-|boolean | Столбец "Да" или "Нет". |
+|логический | Столбец "Да" или "Нет". |
 |пользователь; | Столбец пользователя или группы. |
 |url | Гиперссылка или столбец рисунка. |
 |Рассчитывается | Вычисляемый столбец. |
@@ -1735,7 +1735,7 @@ ms.locfileid: "65191354"
 | Member                |
 |:----------------------|
 | string                |
-| boolean               |
+| логический               |
 | int64                 |
 | Stringcollection      |
 | dateTime              |
@@ -1747,7 +1747,7 @@ ms.locfileid: "65191354"
 |:----------------------|
 | Builtin               |
 | Пользовательские                |
-| обязательно              |
+| Обязательный              |
 | unknownFutureValue    |
 
 ### <a name="identityuserflowattributeinputtype-values"></a>Значения identityUserFlowAttributeInputType
@@ -2072,6 +2072,13 @@ ms.locfileid: "65191354"
 |dontKnow|
 |notNotified|
 |unknownFutureValue|
+
+### <a name="authenticationprotocol-values"></a>Значения authenticationProtocol 
+
+|Member|
+|:---|
+|wsFed|
+|Saml|
 
 ### <a name="longrunningoperationstatus-values"></a>Значения longRunningOperationStatus
 
