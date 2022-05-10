@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса organization
-description: 'Представляет клиента Azure Active Directory клиента. '
+description: 'Представляет Azure Active Directory клиента. '
 ms.localizationpriority: medium
-author: adimitui
+author: KuiGithui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 916da77d59fb4aee607145ffdbcd8cc40b7669e6
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4daead4b510944427edbea4f3c42a8946614293a
+ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60691577"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65294014"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -28,7 +28,7 @@ ms.locfileid: "60691577"
 |:---------------|:--------|:----------|
 |[Get organization](../api/organization-get.md) | Коллекция объектов [organization](organization.md)|Считывание свойств и связей объекта организации.|
 |[Обновление организации](../api/organization-update.md) | [organization](organization.md)  |Обновление объекта организации. Обновляются только следующие свойства: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** и **privacyProfile**. |
-| [Получить параметры организации](../api/organizationsettings-get.md) | [organisationSettings](organizationsettings.md) | Ознакомьтесь с объектом параметры организации. |
+| [Получение параметров организации](../api/organizationsettings-get.md) | [organizationSettings](organizationsettings.md) | Чтение объекта параметров организации. |
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
 |[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
@@ -56,17 +56,17 @@ ms.locfileid: "60691577"
 | businessPhones | Коллекция String | Номера телефонов пользователя. Несмотря на то что это коллекция строк, в качестве значения этого свойства можно указать только одно число. |
 | city | String | Название города в адресе организации. |
 | country | String | Название страны или региона в адресе организации. |
-| countryLetterCode | String | Сокращение страны или региона для организации в формате ISO 3166-2. |
+| countryLetterCode | String | Сокращенное обозначение страны или региона организации в формате ISO 3166-2. |
 | createdDateTime | DateTimeOffset | Метка времени создания организации. Значение не может изменяться и заполняется автоматически, когда создается организация. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |
 | deletedDateTime | DateTimeOffset | Представляет дату и время удаления клиента Azure AD в формате ISO 8601 (время всегда указывается в формате UTC). Например, полночь 1 января 2014 г. в формате UTC представляется в виде `2014-01-01T00:00:00Z`. Только для чтения. |
 | directorySizeQuota | [directorySizeQuota](directorySizeQuota.md) | Сведения о квоте размера каталога организации. |
 | displayName | String | Отображаемое имя для клиента. |
 | id | String | Уникальный идентификатор клиента, представляющий организацию (или клиента). Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения. |
-| isMultipleDataLocationsForServicesEnabled | Boolean | `true` если организация включена в Multi-Geo; `false` если организация не включена в Multi-Geo; `null` (по умолчанию). Только для чтения. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](/sharepoint/dev/solution-guidance/multigeo-introduction). |
+| isMultipleDataLocationsForServicesEnabled | Boolean | `true` Значение , если в организации включена поддержка нескольких регионов; `false` Значение , если в организации не включена поддержка нескольких регионов; `null` (по умолчанию). Только для чтения. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | Коллекция String | Значение null не допускается. |
-| objectType | String | Строка, которая определяет тип объекта. Для клиентов значение всегда `Company` .|
+| Objecttype | String | Строка, которая определяет тип объекта. Для клиентов значение всегда равно `Company`.|
 | onPremisesLastSyncDateTime | DateTimeOffset | Время и дата последней синхронизации клиента с локальным каталогом. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-| onPremisesSyncEnabled | Логический | `true` если этот объект синхронизирован из локального каталога; если этот объект был первоначально синхронизирован из локального каталога, но `false` больше не синхронизирован; Nullable. Используется значение `null`, если этот объект никогда не синхронизировался из локального каталога (по умолчанию). |
+| onPremisesSyncEnabled | Boolean | `true` Значение , если этот объект синхронизирован из локального каталога; `false` Значение , если изначально этот объект был синхронизирован из локального каталога, но больше не синхронизирован; Nullable. Используется значение `null`, если этот объект никогда не синхронизировался из локального каталога (по умолчанию). |
 | postalCode | String | Почтовый индекс в адресе организации. |
 | preferredLanguage | String | Предпочитаемый язык для организации. Он должен быть представлен в формате ISO 639-1, например `en`. |
 | privacyProfile | [privacyProfile](privacyprofile.md) | Профиль конфиденциальности организации. |
@@ -76,16 +76,16 @@ ms.locfileid: "60691577"
 | state | String | Название республики, области или края в адресе организации. |
 | street | String | Название улицы в адресе организации. |
 | technicalNotificationMails |Коллекция String | Значение null не допускается. |
-| verifiedDomains | [коллекция verifiedDomain](verifieddomain.md)|Коллекция доменов, сопоставленных с этим клиентом. Значение null не допускается. |
+| verifiedDomains | [Коллекция verifiedDomain](verifieddomain.md)|Коллекция доменов, сопоставленных с этим клиентом. Значение null не допускается. |
 
 ## <a name="relationships"></a>Отношения
 
 | Связь  | Тип  |Описание|
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|Коллекция [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Свойство навигации для управления конфигурацией проверки подлинности на основе сертификатов. В коллекции можно создать только один экземпляр объекта certificateBasedAuthConfiguration.  |
-|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для ресурса организации. Допускается значение null.| 
-|organizationalBranding|Коллекция [organizationalBranding](organizationalbranding.md)| Ресурс для управления брендингом по умолчанию для организации. Допускается значение null.|
-|settings|[organisationSettings](organizationsettings.md) | Извлечение свойств и связей объекта organizationSettings. Допускается значение null.|
+|extensions|Коллекция объектов [extension](extension.md)|Коллекция открытых расширений, определенных для ресурса организации. Допускается значение null.| 
+|organizationalBranding|Коллекция [organizationalBranding](organizationalbranding.md)| Ресурс для управления фирменной символикой по умолчанию для организации. Допускается значение null.|
+|settings|[organizationSettings](organizationsettings.md) | Получение свойств и связей объекта organizationSettings. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

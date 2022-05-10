@@ -2,15 +2,15 @@
 title: Обновление организации
 description: Обновление свойств объекта organization, для которого выполнена проверка подлинности.
 ms.localizationpriority: medium
-author: adimitui
+author: KuiGithui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 174c9d51d2c7e67c3b1a9a4c603457ab68715dd7
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: d3d005522ca8d4d43bf5416193e15fd380de6e03
+ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671645"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65294056"
 ---
 # <a name="update-organization"></a>Обновление организации
 
@@ -18,7 +18,7 @@ ms.locfileid: "63671645"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновите свойства организации, которая прошла проверку подлинности. В этом случае определяется `organization` как коллекция ровно одной записи, поэтому ее **ID** должен быть указан в запросе.  **ID** также известен как **tenantId** организации.
+Обновите свойства организации, которая прошла проверку подлинности. В этом случае определяется `organization` как коллекция ровно одной записи, поэтому ее идентификатор должен быть указан  в запросе.  Идентификатор **также** называется **tenantId** организации.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "63671645"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Organization.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Organization.ReadWrite.All |
+|Приложение | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -58,7 +58,7 @@ PATCH /organization/{id}
 |securityComplianceNotificationPhones|Коллекция String||
 |technicalNotificationMails|Коллекция String|                                        **Примечание.** Значение NULL не допускается.            |
 
-Так **как ресурс** организации поддерживает [расширения,](/graph/extensibility-overview)`PATCH` операцию можно использовать для добавления, обновления или удаления собственных данных, определенных приложениям, в настраиваемом свойстве расширения в существующем экземпляре **организации.**
+Так **как ресурс** организации поддерживает [расширения,](/graph/extensibility-overview)`PATCH` эту операцию можно использовать для добавления, обновления или удаления собственных данных приложения в пользовательских свойствах расширения в существующем **экземпляре** организации.
 
 ## <a name="response"></a>Отклик
 
@@ -75,7 +75,7 @@ PATCH /organization/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/{id}
+PATCH https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3
 Content-type: application/json
 
 {

@@ -2,21 +2,21 @@
 title: Обновление организации
 description: Обновление свойств объекта organization, для которого выполнена проверка подлинности.
 ms.localizationpriority: medium
-author: adimitui
+author: KuiGithui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c2fbb6b2f8c93c9e4f44c6e1877f3b98132d1f9c
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: be0561ea0c96a21dd4829e594a0842b188ba4973
+ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672716"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65293991"
 ---
 # <a name="update-organization"></a>Обновление организации
 
 Пространство имен: microsoft.graph
 
-Обновите свойства организации, которая прошла проверку подлинности. В этом случае определяется `organization` как коллекция ровно одной записи, поэтому ее **ID** должен быть указан в запросе.  **ID** также известен как **tenantId** организации.
+Обновите свойства организации, которая прошла проверку подлинности. В этом случае определяется `organization` как коллекция ровно одной записи, поэтому ее идентификатор должен быть указан  в запросе.  Идентификатор **также** называется **tenantId** организации.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "63672716"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Organization.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Organization.ReadWrite.All |
+|Приложение | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -71,7 +71,7 @@ PATCH /organization/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization/{id}
+PATCH https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276be684bdd3
 Content-type: application/json
 
 {
