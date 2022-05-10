@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6e8b1555fa56bf884d36aad20c1c382a8279708b
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: c5ea0860085ce2740e6ca014965f0e31586de324
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247324"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296502"
 ---
 # <a name="chatmessage-delta"></a>chatMessage: delta
 
@@ -74,7 +74,10 @@ GET /teams/{team-id}/channels/{channel-id}/messages/delta
 Этим API поддерживаются указанные ниже [параметры запросов OData](/graph/query-parameters).
 - `$top`, указывает максимальное количество сообщений, которое нужно получить в результате вызова. Верхний предел – **50**.
 - `$skip`, указывает, сколько сообщений нужно пропустить в начале списка.
-- `$filter` поддерживает возврат сообщений, удовлетворяющих определенным условиям. Единственное свойство, поддерживающее фильтрацию, — это `lastModifiedDateTime`, при этом поддерживается только оператор **gt**. Например, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` будет получать любые сообщения, созданные или измененные после указанной даты и времени.
+- `$filter` поддерживает возврат сообщений, удовлетворяющих определенным условиям. Единственное свойство, поддерживающее фильтрацию, — это `lastModifiedDateTime`, при этом поддерживается только оператор **gt**. Например, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` извлечет любую **цепочку ответов (каждое почтовое сообщение канала и связанные ответные сообщения)**, созданную или измененную после указанной даты и времени.
+- `$expand` позволяет расширять свойства для каждого сообщения канала. Поддерживаются только **ответы**. Если сообщение канала содержит более 1000 ответов, для разбиения на страницы будет предоставлен `replies@odata.nextLink`. 
+
+> **Примечание.** Параметр запроса `$expand` см. в разделе [Список сообщений канала](channel-list-messages.md#example-3-request-with-top-and-expand-query-options-on-replies).
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок        | Значение                     |

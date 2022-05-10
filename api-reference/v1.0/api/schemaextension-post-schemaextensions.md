@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 1adccedf32431e52bb2deca8f373c591ff4017bd
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 46cc17173698ca00f203127d0aa37bbc4b4d433b
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671519"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296425"
 ---
 # <a name="create-schemaextension"></a>Создание schemaExtension
 
@@ -30,10 +30,10 @@ ms.locfileid: "63671519"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+|Приложение | Application.ReadWrite.All и Directory.ReadWrite.All |
 
 > [!NOTE]
-> Кроме того, при делегированном потоке вошедший в систему пользователь должен быть владелец вызывающего приложения ИЛИ владельцем (приложения с) `appId`, использованного для задания свойства **Владелец**.
+> Кроме того, для делегированного потока пользователь, вошедший в систему, должен быть владельцем вызывающего приложения ИЛИ владельцем (приложения с) **appId**, используемого для установки свойства **владельца**.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -132,7 +132,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 5d48d1020035d289f13d56a03d8db2c3961282b8
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 151d8aff7d48f4ef954554a480736a391833544b
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060795"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296439"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Работа с группами в Microsoft Graph
 
@@ -30,6 +30,9 @@ Azure Active Directory (Azure AD) поддерживает следующие т
 - Группы безопасности
 - группы безопасности с включенной поддержкой почты.
 - Группы рассылки
+
+> [!NOTE]
+> Microsoft также поддерживает [динамические группы рассылки](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019), которыми нельзя управлять или извлекать их через Microsoft Graph.
 
 Через API групп Microsoft Graph можно управлять только Microsoft 365 и группами безопасности. Почтовые группы и группы рассылки доступны только для чтения через Microsoft Graph.
 

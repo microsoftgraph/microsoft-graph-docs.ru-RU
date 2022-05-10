@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 88cd4d08db4b903e188c82dd38c8d5b89131887f
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: e50085b8c59e304c852f8f75c326fca2967a54f9
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247338"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296467"
 ---
 # <a name="microsoft-graph-connectors-api-limits"></a>Ограничения API соединителей Microsoft Graph
 
@@ -18,32 +18,32 @@ ms.locfileid: "65247338"
 
 ## <a name="connection-limits"></a>Ограничения подключений
 
-| **Ограничение** | **Описание** |
-| --------- | --------------- |
-| **10 подключений** | Максимальное количество ресурсов [подключений](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0&preserve-view=true) на клиента Microsoft 365. |
-| **700 000 элементов** | Максимальное количество [элементов](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0&preserve-view=true) на подключение. |
-| **70 ГБ** | Максимальное количество байтов подключения. |
+| Тип ограничения | Ограничение |
+| ---------- | ----- |
+| Ресурсы [подключения](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0&preserve-view=true) для каждого клиента Microsoft 365 | 10 |
+| [Элементов](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0&preserve-view=true) на соединение | 700 000 |
+| Размер соединения в байтах | 70 ГБ |
 
 ## <a name="schema-limits"></a>Ограничения схемы
 
-| **Ограничение** | **Описание** |
-| --------- | --------------- |
-| **128 свойств** | Максимальное количество свойств, которые можно определить в [схеме](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0&preserve-view=true), характеризующих данные, полученные через подключение. |
+| Тип ограничения | Ограничение |
+| ---------- | ----- |
+| Свойства, которые можно определить в [схеме](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0&preserve-view=true), характеризующие данные, получаемые через соединение. | 128 |
 
 ## <a name="group-limits"></a>Ограничения для групп
 
-| **Ограничение** | **Описание** |
-| --------- | --------------- |
-| **100,000** | Максимальное количество [внешних групп](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) на клиента Microsoft 365. |
-| **1000 запросов/с** | Максимальное количество запросов, разрешенных в секунду в пороге[регулирования](#throttling) администрирования группы. |
+| Тип ограничения | Ограничение |
+| ---------- | ----- |
+| [Внешние группы](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) на каждого клиента Microsoft 365 | 100,000 | 
+| Разрешенные запросы в секунду (запросы/сек) в пороге [регулирования количества запросов](#throttling) группового администрирования | 1 000 |
 
 ## <a name="item-ingestion"></a>Прием элементов
 
-| **Ограничение** | **Описание** |
-| --------- | --------------- |
-| **4 элемента/с (250 МБ в час)** | Ограничение пропускной способности для приема элементов через подключение. |
-| **4 МБ** | Максимальный размер элемента; это ограничение применяется к телу запроса при [приеме и индексации элемента](/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0). |
-| **Н/Д** | Максимальный размер свойства. |
+| Тип ограничения | Ограничение |
+| ---------- | ----- |
+| Ограничение пропускной способности для приема элементов через соединение | 4 элемента/с <br> (250 МБ/ч) |
+| Размер элемента; это ограничение применяется к телу запроса при [приеме и индексировании элемента](/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0). | 4 МБ |
+| Размер свойства | Недоступно |
 
 ## <a name="throttling"></a>Регулирование
 

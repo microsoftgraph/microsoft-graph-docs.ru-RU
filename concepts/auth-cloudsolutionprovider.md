@@ -5,12 +5,12 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8c610b1d795045c49b469ceb906a9994a4020b3a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4817c905f5283a1b248d38d9a1910e9a52db18c6
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021395"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296235"
 ---
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>Вызов Microsoft Graph из приложения CSP
 
@@ -18,7 +18,7 @@ ms.locfileid: "59021395"
 
 В этой статье описано, как обеспечить доступ приложения к данным пользователей, управляемым партнером, через Microsoft Graph с помощью [потока предоставления кодов авторизации](/azure/active-directory/develop/active-directory-protocols-oauth-code) или [потока клиентских учетных данных между службами](/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
 
-**Важно!** Вызов Microsoft Graph из приложения CSP поддерживается только для ресурсов каталога (таких как **user**, **group**, **device**, **organization**) и ресурсов [Intune](/graph/api/resources/intune-graph-overview?view=graph-rest-beta).
+**Важно!** Вызов Microsoft Graph из приложения CSP поддерживается только для ресурсов каталога (таких как **user**, **group**, **device**, **organization**) и ресурсов [Intune](/graph/api/resources/intune-graph-overview).
 
 ## <a name="what-is-a-partner-managed-application"></a>Приложение, управляемое партнером
 
@@ -41,7 +41,9 @@ ms.locfileid: "59021395"
 
 ### <a name="pre-consent-your-app-for-all-your-customers"></a>Предоставление приложению доступа к данным всех клиентов
 
-Предоставьте приложению, управляемому партнером, настроенные разрешения для доступа к данным всех ваших клиентов. Для этого добавьте атрибут **servicePrincipal**, представляющий приложение, в группу *Adminagents* в домене Партнера, используя PowerShell Azure AD версии 2. Скачать и установить PowerShell Azure AD версии 2 можно [здесь](https://www.powershellgallery.com/packages/AzureAD).  Выполните указанные ниже шаги, чтобы найти группу *Adminagents*, и добавьте в нее атрибут **servicePrincipal**.
+Наконец, предоставьте своему приложению, управляемому партнером, эти настроенные разрешения для всех ваших клиентов. Это можно сделать, добавив **servicePrincipal**, представляющий приложение, в группу *Adminagents* в клиенте Partner с помощью [Azure AD PowerShell V2](https://www.powershellgallery.com/packages/AzureAD) или [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation). Выполните следующие действия, чтобы найти группу *Adminagents*, **servicePrincipal** l и добавить ее в группу.
+
+# <a name="azure-ad-powershell"></a>[PowerShell для Azure AD](#tab/azuread)
 
 1. Откройте сеанс PowerShell и подключитесь к клиенту партнера, введя учетные данные администратора в окне входа.
 
@@ -66,6 +68,33 @@ ms.locfileid: "59021395"
     ```PowerShell
     Add-AzureADGroupMember -ObjectId $group.ObjectId -RefObjectId $sp.ObjectId
     ```
+
+# <a name="microsoft-graph-powershell"></a>[Microsoft Graph PowerShell](#tab/graphpowershell)
+
+1. Откройте сеанс PowerShell и подключитесь к клиенту партнера, введя учетные данные администратора в окне входа.
+
+    ```PowerShell
+    Connect-MgGraph
+    ```
+
+2. Найдите группу *Adminagents*.
+
+    ```PowerShell
+    $group = Get-MgGroup -Filter "displayName eq 'Adminagents'"
+    ```
+
+3. Найдите субъект-службу с тем же, *appId*, что и у приложения.
+
+    ```PowerShell
+    $sp = Get-MgServicePrincipal -Filter "appId eq '{yourAppsAppId}'"
+    ```
+
+4. Добавьте субъект-службу в группу *Adminagents*.
+
+    ```PowerShell
+    New-MgGroupMember -GroupId $group.Id -DirectoryObjectId $sp.Id
+    ```
+----
 
 ## <a name="token-acquisition-flows"></a>Потоки получения маркеров
 
@@ -107,6 +136,6 @@ ms.locfileid: "59021395"
 
 При создании нового клиента с помощью [API Центра партнеров](https://partnercenter.microsoft.com/partner/developer) создается новый домен. Кроме того, создается отношение партнеров — вы становитесь партнером для этого нового домена клиента. Передача этого отношения в новый домен клиента может занять до 3 минут. Если приложение вызовет Microsoft Graph сразу после создания, ему, скорее всего, будет отказано в доступе. Аналогичная задержка может возникать после принятия вашего приглашения существующим клиентом. Это связано с тем, что предварительное предоставление доступа зависит от наличия отношения партнеров в домене клиента.
 
-Во избежание этой проблемы рекомендуем сделать так, чтобы партнерское приложение вызывало Azure AD для получения маркера (требуется при вызове Microsoft Graph) только через **три минуты** после создания пользователя. В большинстве случаев этого будет достаточно. Но если через три минуты снова появится ошибка авторизации, подождите еще 60 секунд и попробуйте еще раз.
+Чтобы избежать этой проблемы, мы рекомендуем вашему партнерскому приложению подождать **три минуты** после создания клиента, прежде чем вызывать Azure AD для получения токена (для вызова Microsoft Graph). Это должно охватывать большинство случаев. Однако, если после трех минут ожидания вы по-прежнему получаете сообщение об ошибке авторизации, подождите еще 60 секунд и повторите попытку.
 
 > **Примечание.** Перед повторным вызовом Microsoft Graph нужно получить новый маркер доступа из Azure AD.  Вызвать Microsoft Graph с помощью имеющегося маркера доступа не получится, так как маркер доступа действует в течение часа и не будет содержать утверждений о предоставленном доступе.

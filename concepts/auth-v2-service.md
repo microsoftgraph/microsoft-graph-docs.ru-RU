@@ -5,12 +5,12 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 1fd849f0176468c76353f9f2c478dfca0b753027
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: b958ca3774218383edc24504a115da37a43d9822
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133428"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296509"
 ---
 # <a name="get-access-without-a-user"></a>Получение доступа без пользователя
 
@@ -155,15 +155,17 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 {
   "token_type": "Bearer",
   "expires_in": 3599,
+  "ext_expires_in":3599,
   "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik1uQ19WWmNBVGZNNXBP..."
 }
 ```
 
-| Параметр     | Описание
-|:--------------|:------------
-| access_token  | Запрашиваемый маркер доступа. Приложение может использовать его в вызовах Microsoft Graph.
-| token_type    | Указывает значение типа маркера. Azure AD поддерживает только тип `bearer`.
-| expires_in    | Срок действия маркера доступа (в секундах).
+| Параметр      | Описание                                                                                   |
+|:---------------|:----------------------------------------------------------------------------------------------|
+| access_token   | Запрашиваемый маркер доступа. Приложение может использовать его в вызовах Microsoft Graph.          |
+| expires_in     | Срок действия маркера доступа (в секундах).                                              |
+| ext_expires_in | Используется для указания продленного срока действия токена доступа и поддержки отказоустойчивости, когда служба выдачи токенов не отвечает. |
+| token_type     | Указывает значение типа маркера. Azure AD поддерживает только тип `Bearer`.             |
 
 ## <a name="5-use-the-access-token-to-call-microsoft-graph"></a>5. Вызов Microsoft Graph с помощью маркера доступа
 
