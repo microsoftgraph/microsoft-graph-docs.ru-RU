@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 27a76af2433afe1f57551d8b9013482c4eaefc3a
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: a37e05eba98381edc5dfcd7fa0dd4d68da6304ac
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61294856"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342892"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "61294856"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 cloudPcUserSettingId := "cloudPcUserSetting-id"
-result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Get(nil)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Get()
 
 
 ```

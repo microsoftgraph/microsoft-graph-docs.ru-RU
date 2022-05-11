@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 2a705d2cb4273d971a9da37d2dcca096cbbe4b8f
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 95373d278173ab541c4654bae283e40643bb2126
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61087269"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340782"
 ---
 ```go
 
@@ -31,10 +31,7 @@ apiConnectorConfiguration.SetPostAttributeCollection(postAttributeCollection)
 postAttributeCollection.SetAdditionalData(map[string]interface{}{
     "@odata.id": "https://graph.microsoft.com/v1/identity/apiConnectors/{id}",
 }
-options := &msgraphsdk.B2xUserFlowsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Identity().B2xUserFlows().Post(options)
+result, err := graphClient.Identity().B2xUserFlows().Post(requestBody)
 
 
 ```

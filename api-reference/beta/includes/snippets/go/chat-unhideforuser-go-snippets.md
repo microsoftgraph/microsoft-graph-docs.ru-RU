@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 9a0a87dd77f5ecd6bf74a89f1aa854090f75e2b0
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 17c57cf493d82ff41e4bd4049f4757ab66f2b755
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416538"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65341299"
 ---
 ```go
 
@@ -19,11 +19,8 @@ id := "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
 user.SetId(&id)
 tenantId := "2a690434-97d9-4eed-83a6-f5f13600199a"
 requestBody.SetTenantId(&tenantId)
-options := &msgraphsdk.UnhideForUserRequestBuilderPostOptions{
-    Body: requestBody,
-}
 chatId := "chat-id"
-graphClient.ChatsById(&chatId).UnhideForUser(chat-id).Post(options)
+graphClient.ChatsById(&chatId).UnhideForUser(chat-id).Post(requestBody)
 
 
 ```

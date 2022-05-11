@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: a3bbb55eba15de4c3420959e57c112e694474cb9
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: fb14d6f63cca2c242bfb62d012542df66768f2c0
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416607"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342117"
 ---
 ```go
 
@@ -19,11 +19,8 @@ dateTime := "2016-10-19T10:37:00Z"
 newReminderTime.SetDateTime(&dateTime)
 timeZone := "timeZone-value"
 newReminderTime.SetTimeZone(&timeZone)
-options := &msgraphsdk.SnoozeReminderRequestBuilderPostOptions{
-    Body: requestBody,
-}
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).SnoozeReminder(event-id).Post(options)
+graphClient.Me().EventsById(&eventId).SnoozeReminder(event-id).Post(requestBody)
 
 
 ```

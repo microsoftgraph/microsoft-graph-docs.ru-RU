@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: f9739f668af933a3653a7c65033a6b30c233b60c
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 69bc969bad32f2d6950612e9f188880c174ee45e
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65208721"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65343085"
 ---
 ```go
 
@@ -16,7 +16,7 @@ siteId := "site-id"
 listId := "list-id"
 listItemId := "listItem-id"
 documentSetVersionId := "documentSetVersion-id"
-graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).DocumentSetVersionsById(&documentSetVersionId).Delete(nil)
+graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).DocumentSetVersionsById(&documentSetVersionId).Delete()
 
 
 ```

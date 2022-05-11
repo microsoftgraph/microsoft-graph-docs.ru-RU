@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 9080c22e9d0a8cf56d289be3a36ffdcf3f3b35f0
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: e5d43244019ab0207923d6f6b037d582106ed572
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61090251"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65341721"
 ---
 ```go
 
@@ -15,11 +15,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.AgentGroupsRequestBuilderGetQueryParameters{
     Expand: "agents,publishedResources",
 }
-options := &msgraphsdk.AgentGroupsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.AgentGroupsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
-result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).AgentGroups().Get(options)
+result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).AgentGroups().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

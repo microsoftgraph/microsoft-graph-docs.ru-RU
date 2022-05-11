@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 9ea6dc5292a7b00b91b2e10a4f95a8be9aeb1101
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: e4ad144df95ee728cd612c225950b26f9a7e472c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65207405"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340891"
 ---
 ```go
 
@@ -16,10 +16,10 @@ requestParameters := &msgraphsdk.RoleManagementPolicyAssignmentsRequestBuilderGe
     Filter: "scopeId%20eq%20'/'%20and%20scopeType%20eq%20'DirectoryRole'%20and%20roleDefinitionId%20eq%20'62e90394-69f5-4237-9190-012177145e10'",
     Expand: "policy($expand=rules)",
 }
-options := &msgraphsdk.RoleManagementPolicyAssignmentsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.RoleManagementPolicyAssignmentsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
-result, err := graphClient.Policies().RoleManagementPolicyAssignments().Get(options)
+result, err := graphClient.Policies().RoleManagementPolicyAssignments().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

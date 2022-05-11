@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 4ff4840b2e020e25156e3c917d492ffe851b0835
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3ce28c253b0449cb4fbc60a860894bd766782503
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416803"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65341448"
 ---
 ```go
 
@@ -19,12 +19,9 @@ state := "completed"
 status.SetState(&state)
 description := "completed"
 status.SetDescription(&description)
-options := &msgraphsdk.PrintTaskRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 printTaskDefinitionId := "printTaskDefinition-id"
 printTaskId := "printTask-id"
-result, err := graphClient.Print().TaskDefinitionsById(&printTaskDefinitionId).TasksById(&printTaskId).Patch(options)
+graphClient.Print().TaskDefinitionsById(&printTaskDefinitionId).TasksById(&printTaskId).Patch(requestBody)
 
 
 ```

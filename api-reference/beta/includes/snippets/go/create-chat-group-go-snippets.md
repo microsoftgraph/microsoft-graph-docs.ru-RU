@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 3189280625f12e2dbe595f5cc32f405a3cf3f518
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 72ccdd4999ff8ca4edb738676bd384fa66a90455
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335614"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340740"
 ---
 ```go
 
@@ -43,10 +43,7 @@ requestBody.SetMembers( []ConversationMember {
         "user@odata.bind": "https://graph.microsoft.com/beta/users('8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g')",
     }
 }
-options := &msgraphsdk.ChatsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Chats().Post(options)
+result, err := graphClient.Chats().Post(requestBody)
 
 
 ```
