@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 039f656b0efac60d3fd4fae220e20ffc261917a7
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 10a0226d0c2be52e06e0e4f5012ea742564949a0
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61096842"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65341033"
 ---
 ```go
 
@@ -39,10 +39,7 @@ requestBody.SetPhones( []Phone {
         "type": "business",
     }
 }
-options := &msgraphsdk.ContactsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().Contacts().Post(options)
+result, err := graphClient.Me().Contacts().Post(requestBody)
 
 
 ```
