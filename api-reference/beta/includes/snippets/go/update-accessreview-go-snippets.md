@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 71f0281bd3d8e8162f71621c28fdeeea1f888f44
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 9988da3f25c1742e667b284aaa06a03a66fd4707
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394196"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340458"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewAccessReview()
 displayName := "TestReview new name"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.AccessReviewRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 accessReviewId := "accessReview-id"
-result, err := graphClient.AccessReviewsById(&accessReviewId).Patch(options)
+graphClient.AccessReviewsById(&accessReviewId).Patch(requestBody)
 
 
 ```

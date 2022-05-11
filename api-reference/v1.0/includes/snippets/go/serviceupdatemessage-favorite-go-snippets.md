@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 4106ce96580239291f576394aaf13f1babfc8b5e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: a6338c4eed31539ba5b085643777902aaab93add
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397059"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340252"
 ---
 ```go
 
@@ -17,10 +17,7 @@ requestBody.SetMessageIds( []String {
     "MC172851",
     "MC167983",
 }
-options := &msgraphsdk.FavoriteRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().Favorite().Post(options)
+result, err := graphClient.Admin().ServiceAnnouncement().Messages().Favorite().Post(requestBody)
 
 
 ```

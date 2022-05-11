@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 6e452ff009e4b9c0cb2a03d0454bf970bd9b2e26
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: b2c1e5ae46fa647f721abceff96b1c7141db1c60
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61092510"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65341726"
 ---
 ```go
 
@@ -33,10 +33,7 @@ participants.SetAttendees( []MeetingParticipantInfo {
 }
 subject := "Create a meeting with customId provided"
 requestBody.SetSubject(&subject)
-options := &msgraphsdk.CreateOrGetRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(options)
+result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(requestBody)
 
 
 ```

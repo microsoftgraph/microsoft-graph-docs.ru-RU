@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 4f2365ebd1fa5487abee3f820e0965380e2e0757
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 841e31941d6c814c5ce73560c6f2c79bb196e452
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63417242"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342668"
 ---
 ```go
 
@@ -25,11 +25,8 @@ message.SetAttachments( []Attachment {
 }
 comment := "Please take a look at the attached guidelines before you decide on the name."
 requestBody.SetComment(&comment)
-options := &msgraphsdk.ReplyAllRequestBuilderPostOptions{
-    Body: requestBody,
-}
 messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).ReplyAll(message-id).Post(options)
+graphClient.Me().MessagesById(&messageId).ReplyAll(message-id).Post(requestBody)
 
 
 ```
