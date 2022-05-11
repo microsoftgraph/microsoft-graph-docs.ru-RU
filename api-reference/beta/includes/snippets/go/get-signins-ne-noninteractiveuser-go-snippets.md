@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 1cf5edeff488c86b0e7ad34872e6c50080176d38
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: e505b84bff22219a3cb30d82360733a4e9853110
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63757793"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342229"
 ---
 ```go
 
@@ -17,10 +17,10 @@ requestParameters := &msgraphsdk.SignInsRequestBuilderGetQueryParameters{
     OrderBy: "createdDateTime%20DESC",
     Top: 10,
 }
-options := &msgraphsdk.SignInsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.SignInsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
-result, err := graphClient.AuditLogs().SignIns().Get(options)
+result, err := graphClient.AuditLogs().SignIns().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

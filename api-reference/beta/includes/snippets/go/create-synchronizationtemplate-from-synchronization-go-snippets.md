@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 7005df441bd20fb83a84e51d9d981eb047b6bc7c
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 9f86b33e4dab96a612017a334866cb1e9eadd303
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61086632"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65341278"
 ---
 ```go
 
@@ -19,11 +19,8 @@ applicationId := "{id}"
 requestBody.SetApplicationId(&applicationId)
 factoryTag := "CustomSCIM"
 requestBody.SetFactoryTag(&factoryTag)
-options := &msgraphsdk.TemplatesRequestBuilderPostOptions{
-    Body: requestBody,
-}
 applicationId := "application-id"
-result, err := graphClient.ApplicationsById(&applicationId).Synchronization().Templates().Post(options)
+result, err := graphClient.ApplicationsById(&applicationId).Synchronization().Templates().Post(requestBody)
 
 
 ```
