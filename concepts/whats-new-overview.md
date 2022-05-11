@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 4db9be8a564eb133b92830729902f5c36d0ed84c
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: 75b01f4903153249131cc69e336bb2d12e26095d
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191670"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65316163"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -62,6 +62,12 @@ ms.locfileid: "65191670"
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 Указание [включения или исключения клиентских приложений](/graph/api/resources/conditionalaccessclientapplications) среди [набора условий](/graph/api/resources/conditionalAccessConditionSet) для применения [политики условного доступа](/graph/api/resources/conditionalaccesspolicy).
+
+### <a name="use-the-toolkit"></a>Использование набора средств
+Отметьте реальную командную работу со вкладом сообщества и попробуйте новые функции в [Microsoft Graph Toolkit версии 2.4.0](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v2.4.0):
+- Оптимизируйте обновление изображений людей в компоненте [пользователь](/graph/toolkit/components/person) с помощью атрибута `disable-image-fetch` для управления ненужным получением.
+- Избегайте ненужной загрузки изображений людей в компоненте [выбора людей](/graph/toolkit/components/people-picker) с помощью атрибута `disable-images`. 
+- Используйте фильтр по доступным пользователям, группам и списку людей в компоненте [выбора людей](/graph/toolkit/components/people-picker) с помощью атрибутов `user-filters`, `group-filters` и `people-filters`.
 
 
 ## <a name="march-2022-new-in-preview-only"></a>Март 2022 г.: новые возможности только в предварительной версии
