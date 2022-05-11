@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 547a1b82e206c06fe2f5d96eeb3c0807268bc75f
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: f66a95d5a9088cb5c28bed0bfed4fd25e3d0d75f
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61091085"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65341833"
 ---
 ```go
 
@@ -32,11 +32,8 @@ requestBody.SetMembers( []ConversationMember {
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#Microsoft.Graph.channel",
 }
-options := &msgraphsdk.ChannelsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Channels().Post(options)
+result, err := graphClient.TeamsById(&teamId).Channels().Post(requestBody)
 
 
 ```

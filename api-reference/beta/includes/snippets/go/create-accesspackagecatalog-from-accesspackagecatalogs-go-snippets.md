@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 9aaba1273e74337c8850af220e9408cd765de7ef
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: c9221de560081bc930ff4692388d22fe57a0a3c2
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61098552"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340647"
 ---
 ```go
 
@@ -19,10 +19,7 @@ description := "for employees working with sales and outside sales partners"
 requestBody.SetDescription(&description)
 isExternallyVisible := true
 requestBody.SetIsExternallyVisible(&isExternallyVisible)
-options := &msgraphsdk.AccessPackageCatalogsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogs().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogs().Post(requestBody)
 
 
 ```

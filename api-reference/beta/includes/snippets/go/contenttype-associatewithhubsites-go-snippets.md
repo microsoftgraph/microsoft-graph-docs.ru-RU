@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 5068cf1cb813dac91e98359225fa5c481bc07ce3
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 166fd24115949863bf7c7f005dd5ba74c6d2cf82
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416337"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342884"
 ---
 ```go
 
@@ -18,12 +18,9 @@ requestBody.SetHubSiteUrls( []String {
 }
 propagateToExistingLists := false
 requestBody.SetPropagateToExistingLists(&propagateToExistingLists)
-options := &msgraphsdk.AssociateWithHubSitesRequestBuilderPostOptions{
-    Body: requestBody,
-}
 siteId := "site-id"
 contentTypeId := "contentType-id"
-graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).AssociateWithHubSites(site-id, contentType-id).Post(options)
+graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).AssociateWithHubSites(site-id, contentType-id).Post(requestBody)
 
 
 ```

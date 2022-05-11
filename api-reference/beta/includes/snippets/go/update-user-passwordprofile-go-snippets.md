@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 65a78b054ff044d555e7aa0fc0dc8a79fbc1eab2
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: a84462e258d5755f3013ce968e375dfaabce7aa7
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416588"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342844"
 ---
 ```go
 
@@ -19,11 +19,8 @@ forceChangePasswordNextSignIn := false
 passwordProfile.SetForceChangePasswordNextSignIn(&forceChangePasswordNextSignIn)
 password := "xWwvJ]6NMw+bWH-d"
 passwordProfile.SetPassword(&password)
-options := &msgraphsdk.UserRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 userId := "user-id"
-result, err := graphClient.UsersById(&userId).Patch(options)
+graphClient.UsersById(&userId).Patch(requestBody)
 
 
 ```

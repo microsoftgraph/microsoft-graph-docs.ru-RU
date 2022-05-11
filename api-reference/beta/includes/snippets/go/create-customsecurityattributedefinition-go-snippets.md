@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: eb51335bcf7139637e73c8df0322180f3cd1f359
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 48d97ddd5ab836ec59ca9bf00aff37f704f9d00f
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226810"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342715"
 ---
 ```go
 
@@ -29,10 +29,7 @@ type := "String"
 requestBody.SetType(&type)
 usePreDefinedValuesOnly := false
 requestBody.SetUsePreDefinedValuesOnly(&usePreDefinedValuesOnly)
-options := &msgraphsdk.CustomSecurityAttributeDefinitionsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(options)
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(requestBody)
 
 
 ```

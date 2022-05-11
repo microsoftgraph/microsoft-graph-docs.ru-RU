@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 3e239500138461af97064b9109d86f0a9faeedc2
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: a3835e83f74db1f170f00d97f2e281a898653ae8
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61100481"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340148"
 ---
 ```go
 
@@ -38,10 +38,7 @@ requestBody.SetInternetMessageHeaders( []InternetMessageHeader {
         "value": "WA001",
     }
 }
-options := &msgraphsdk.MessagesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().Messages().Post(options)
+result, err := graphClient.Me().Messages().Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: eb18c7a4ad6447cdccd67cb6109cb71237c95f7c
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 5b0423c1e1b2e4085398ff87bf37d835192c3c2c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416717"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342857"
 ---
 ```go
 
@@ -43,11 +43,8 @@ requestBody.SetTemplateParameters( []KeyValuePair {
         "value": "23",
     }
 }
-options := &msgraphsdk.SendActivityNotificationRequestBuilderPostOptions{
-    Body: requestBody,
-}
 teamId := "team-id"
-graphClient.TeamsById(&teamId).SendActivityNotification(team-id).Post(options)
+graphClient.TeamsById(&teamId).SendActivityNotification(team-id).Post(requestBody)
 
 
 ```

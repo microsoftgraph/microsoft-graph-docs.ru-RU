@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 7f8e5de3af43951631d67b42d0e200248ecf4f0d
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 1587263ada4703b512509d823cbe86569de46af3
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416858"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65343202"
 ---
 ```go
 
@@ -23,11 +23,8 @@ longitude := float64(2.2)
 location.SetLongitude(&longitude)
 altitudeInMeters := int32(3)
 location.SetAltitudeInMeters(&altitudeInMeters)
-options := &msgraphsdk.PrinterRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 printerId := "printer-id"
-result, err := graphClient.Print().PrintersById(&printerId).Patch(options)
+graphClient.Print().PrintersById(&printerId).Patch(requestBody)
 
 
 ```

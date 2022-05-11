@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 904854c7c5365b3de7ffeb52d6dd3f60e64a13f2
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 908567b16c3dad64e7566ce65185e00dca87c9ca
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61084773"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340285"
 ---
 ```go
 
@@ -31,10 +31,7 @@ expiration := msgraphsdk.NewExpirationPattern()
 scheduleInfo.SetExpiration(expiration)
 type := "NoExpiration"
 expiration.SetType(&type)
-options := &msgraphsdk.RoleAssignmentScheduleRequestsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().Post(options)
+result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().Post(requestBody)
 
 
 ```

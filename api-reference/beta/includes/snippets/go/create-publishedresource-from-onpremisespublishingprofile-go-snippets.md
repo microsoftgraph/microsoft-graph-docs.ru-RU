@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: d99235d801b2d436ace35af7b2404aba33cf3c92
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 25b5acb5bc83705e369ad50496a304d1b1662b50
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61098276"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342868"
 ---
 ```go
 
@@ -17,11 +17,8 @@ displayName := "New provisioning"
 requestBody.SetDisplayName(&displayName)
 resourceName := "domain1.contoso.com"
 requestBody.SetResourceName(&resourceName)
-options := &msgraphsdk.PublishedResourcesRequestBuilderPostOptions{
-    Body: requestBody,
-}
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
-result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).PublishedResources().Post(options)
+result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).PublishedResources().Post(requestBody)
 
 
 ```

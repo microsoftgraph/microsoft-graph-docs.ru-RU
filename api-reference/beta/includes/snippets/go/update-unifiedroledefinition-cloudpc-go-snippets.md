@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: d92e58989bb4b328f3b7def0319be449ef97a9b7
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 8f9a06c784df1ac0833bb4b44f95eca2fb55211e
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416908"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65341135"
 ---
 ```go
 
@@ -26,11 +26,8 @@ requestBody.SetRolePermissions( []UnifiedRolePermission {
         }
     }
 }
-options := &msgraphsdk.UnifiedRoleDefinitionRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 unifiedRoleDefinitionId := "unifiedRoleDefinition-id"
-result, err := graphClient.RoleManagement().CloudPC().RoleDefinitionsById(&unifiedRoleDefinitionId).Patch(options)
+graphClient.RoleManagement().CloudPC().RoleDefinitionsById(&unifiedRoleDefinitionId).Patch(requestBody)
 
 
 ```

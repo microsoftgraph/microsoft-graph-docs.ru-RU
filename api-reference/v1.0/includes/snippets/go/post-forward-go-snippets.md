@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 2f06202fd9115394c12b45078cca44d33a85b788
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 049360b350a58c151a7d7aea07c050b3fd5572d1
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63417081"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340889"
 ---
 ```go
 
@@ -20,13 +20,10 @@ requestBody.SetToRecipients( []Recipient {
     SetAdditionalData(map[string]interface{}{
     }
 }
-options := &msgraphsdk.ForwardRequestBuilderPostOptions{
-    Body: requestBody,
-}
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
 postId := "post-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Forward(group-id, conversationThread-id, post-id).Post(options)
+graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Forward(group-id, conversationThread-id, post-id).Post(requestBody)
 
 
 ```

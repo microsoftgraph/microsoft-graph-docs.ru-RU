@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 85ea1e93a710abbbd4b74dd52fd4e440f989c87f
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: e6adcea57a77409213f7899e6181e1ef5043ce12
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211245"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65343347"
 ---
 ```go
 
@@ -21,11 +21,11 @@ requestParameters := &msgraphsdk.ServicePrincipalsRequestBuilderGetQueryParamete
 headers := map[string]string{
     "ConsistencyLevel": "eventual"
 }
-options := &msgraphsdk.ServicePrincipalsRequestBuilderGetOptions{
-    Q: requestParameters,
-    H: headers,
+options := &msgraphsdk.ServicePrincipalsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
+    Headers: headers,
 }
-result, err := graphClient.ServicePrincipals().Get(options)
+result, err := graphClient.ServicePrincipals().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 4744367ba4b4280ae9081ec49d066553354486d2
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: e1ce5c3226e89eca320410bba9b70f35f2a4ed6b
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416185"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65341230"
 ---
 ```go
 
@@ -26,11 +26,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "comment": "control is reviewed",
     "state": "Reviewed",
 }
-options := &msgraphsdk.SecureScoreControlProfileRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 secureScoreControlProfileId := "secureScoreControlProfile-id"
-result, err := graphClient.Security().SecureScoreControlProfilesById(&secureScoreControlProfileId).Patch(options)
+graphClient.Security().SecureScoreControlProfilesById(&secureScoreControlProfileId).Patch(requestBody)
 
 
 ```
