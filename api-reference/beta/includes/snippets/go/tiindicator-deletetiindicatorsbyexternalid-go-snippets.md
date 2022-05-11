@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 00dfea61faf79ab3838059084833915cd1878024
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 9b0cdcef6170510b9d2228794ac7921b2b0d548b
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416592"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65343392"
 ---
 ```go
 
@@ -17,10 +17,7 @@ requestBody.SetValue( []String {
     "externalId-value1",
     "externalId-value2",
 }
-options := &msgraphsdk.DeleteTiIndicatorsByExternalIdRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Security().TiIndicators().DeleteTiIndicatorsByExternalId().Post(options)
+result, err := graphClient.Security().TiIndicators().DeleteTiIndicatorsByExternalId().Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 548fdf5f59fa03d722ce333f0132cda707fb5443
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: 45483dcaa91ac2fb98d47287588bb330f50b42a5
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61295684"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65341161"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "61295684"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 onenotePageId := "onenotePage-id"
-graphClient.Me().Onenote().PagesById(&onenotePageId).Content().Patch(nil)
+graphClient.Me().Onenote().PagesById(&onenotePageId).Content().Patch()
 
 
 ```

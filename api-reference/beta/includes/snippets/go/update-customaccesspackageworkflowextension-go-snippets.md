@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 1cbcb8f4ec871813c5913e86466dbcac1d4927c2
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: d3239885f2284691665c02ff2db912184a0459ed
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63339212"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340967"
 ---
 ```go
 
@@ -18,12 +18,9 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "displayName": "test_action_0124_email",
     "description": "this is for graph testing only",
 }
-options := &msgraphsdk.CustomAccessPackageWorkflowExtensionRequestBuilderPutOptions{
-    Body: requestBody,
-}
 accessPackageCatalogId := "accessPackageCatalog-id"
 customAccessPackageWorkflowExtensionId := "customAccessPackageWorkflowExtension-id"
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).CustomAccessPackageWorkflowExtensionsById(&customAccessPackageWorkflowExtensionId).Put(options)
+graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).CustomAccessPackageWorkflowExtensionsById(&customAccessPackageWorkflowExtensionId).Put(requestBody)
 
 
 ```

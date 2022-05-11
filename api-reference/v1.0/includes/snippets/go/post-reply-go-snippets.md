@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 990125a883ef74a5ef0624fef5f7dd4cf292283c
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: a7c9fdc968731e91115f47740c904265dda110c9
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63417212"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340888"
 ---
 ```go
 
@@ -75,13 +75,10 @@ post.SetAttachments( []Attachment {
         "id": "id-value",
     }
 }
-options := &msgraphsdk.ReplyRequestBuilderPostOptions{
-    Body: requestBody,
-}
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
 postId := "post-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Reply(group-id, conversationThread-id, post-id).Post(options)
+graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Reply(group-id, conversationThread-id, post-id).Post(requestBody)
 
 
 ```

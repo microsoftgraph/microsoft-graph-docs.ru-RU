@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: d4df3f9e10ebb38770749cf238a8345a57cd4e6c
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: f7d2408057e9ccf8a76a0d94c9bf7a9a6db191a9
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63758894"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340220"
 ---
 ```go
 
@@ -19,10 +19,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "children":  []Object {
     }
 }
-options := &msgraphsdk.BundlesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-graphClient.Drive().Bundles().Post(options)
+graphClient.Drive().Bundles().Post(requestBody)
 
 
 ```

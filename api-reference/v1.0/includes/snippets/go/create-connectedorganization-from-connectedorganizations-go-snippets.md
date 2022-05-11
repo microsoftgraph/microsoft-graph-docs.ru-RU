@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 0241b07667c2cce4630f042c94bfb665cde28e14
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 6904737dc8c94de7a412cbebebbdc600fe5d57b0
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61347983"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65343237"
 ---
 ```go
 
@@ -27,10 +27,7 @@ requestBody.SetIdentitySources( []IdentitySource {
 }
 state := "proposed"
 requestBody.SetState(&state)
-options := &msgraphsdk.ConnectedOrganizationsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().Post(requestBody)
 
 
 ```

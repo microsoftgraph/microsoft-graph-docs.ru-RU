@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 3c7a969866f7024559315b2dc8356bed06eb0d76
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: dc5c407ab0ca62be115fc726979db437e37332cd
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61098914"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65341150"
 ---
 ```go
 
@@ -23,10 +23,7 @@ name := "GitHub"
 service.SetName(&name)
 webUrl := "https://github.com"
 service.SetWebUrl(&webUrl)
-options := &msgraphsdk.WebAccountsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().Profile().WebAccounts().Post(options)
+result, err := graphClient.Me().Profile().WebAccounts().Post(requestBody)
 
 
 ```

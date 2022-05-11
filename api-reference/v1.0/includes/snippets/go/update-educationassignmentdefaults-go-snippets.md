@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 40a8deaf47316458ec643c029bc052b120997f8c
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 8065b1c950e5020d548fc33b8be70258c2d8b58a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63417092"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342074"
 ---
 ```go
 
@@ -17,11 +17,8 @@ addedStudentAction := "assignIfOpen"
 requestBody.SetAddedStudentAction(&addedStudentAction)
 notificationChannelUrl := "https://graph.microsoft.com/beta/teams('acdefc6b-2dc6-4e71-b1e9-6d9810ab1793')/channels('3da03fc4-8eac-4459-84fb-1422dc01f65e')"
 requestBody.SetNotificationChannelUrl(&notificationChannelUrl)
-options := &msgraphsdk.AssignmentDefaultsRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 educationClassId := "educationClass-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentDefaults().Patch(options)
+graphClient.Education().ClassesById(&educationClassId).AssignmentDefaults().Patch(requestBody)
 
 
 ```

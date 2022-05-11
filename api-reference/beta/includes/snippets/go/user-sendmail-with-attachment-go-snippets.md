@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: c0fd3d6c48a11c78f4bcdffc7ed44c2c4b7c9a36
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 622e635d4d186ef5bfc6fe2073c4622057166425
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61088298"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65341379"
 ---
 ```go
 
@@ -37,10 +37,7 @@ message.SetAttachments( []Attachment {
         "contentBytes": "SGVsbG8gV29ybGQh",
     }
 }
-options := &msgraphsdk.SendMailRequestBuilderPostOptions{
-    Body: requestBody,
-}
-graphClient.Me().SendMail().Post(options)
+graphClient.Me().SendMail().Post(requestBody)
 
 
 ```

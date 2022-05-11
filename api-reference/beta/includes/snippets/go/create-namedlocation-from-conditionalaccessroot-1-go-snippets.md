@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 9b91466422008bbfde7c7be279e377564d34c08a
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 239078992408ca0a32edad8105ade23aa43a37ae
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61093131"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65341410"
 ---
 ```go
 
@@ -21,10 +21,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "ipRanges":  []Object {
     }
 }
-options := &msgraphsdk.NamedLocationsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Post(options)
+result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Post(requestBody)
 
 
 ```

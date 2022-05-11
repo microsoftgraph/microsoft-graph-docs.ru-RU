@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 87ece3f54bec17cc819946f85f7f9f2c0a409822
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: d52d49cb14edaa7bb8a746a8c31725c87cfdc8e6
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335494"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65341431"
 ---
 ```go
 
@@ -21,10 +21,7 @@ state := "published"
 requestBody.SetState(&state)
 isExternallyVisible := true
 requestBody.SetIsExternallyVisible(&isExternallyVisible)
-options := &msgraphsdk.CatalogsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().Catalogs().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().Catalogs().Post(requestBody)
 
 
 ```

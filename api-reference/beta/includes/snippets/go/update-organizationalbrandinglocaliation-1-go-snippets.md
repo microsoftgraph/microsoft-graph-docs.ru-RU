@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: ea21baa5d11ea0b276806a34f4109f567dcf5649
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 7d3d751f994520f48f37bc3c19586c44c4c3a844
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63417322"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65341625"
 ---
 ```go
 
@@ -20,12 +20,11 @@ requestBody.SetUsernameHintText(&usernameHintText)
 headers := map[string]string{
     "Accept-Language": "0"
 }
-options := &msgraphsdk.BrandingRequestBuilderPatchOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.BrandingRequestBuilderPatchRequestConfiguration{
+    Headers: headers,
 }
 organizationId := "organization-id"
-result, err := graphClient.OrganizationById(&organizationId).Branding().Patch(options)
+graphClient.OrganizationById(&organizationId).Branding().PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```
