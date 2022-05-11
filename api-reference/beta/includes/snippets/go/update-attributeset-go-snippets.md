@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: f3f0ae0da99299e76b275cbc019c933dfed5e307
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 08bb787fd0d68cf28d0d37defbcedb29adcc9e1d
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416394"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65341566"
 ---
 ```go
 
@@ -17,11 +17,8 @@ description := "Attributes for engineering team"
 requestBody.SetDescription(&description)
 maxAttributesPerSet := int32(20)
 requestBody.SetMaxAttributesPerSet(&maxAttributesPerSet)
-options := &msgraphsdk.AttributeSetRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 attributeSetId := "attributeSet-id"
-result, err := graphClient.Directory().AttributeSetsById(&attributeSetId).Patch(options)
+graphClient.Directory().AttributeSetsById(&attributeSetId).Patch(requestBody)
 
 
 ```

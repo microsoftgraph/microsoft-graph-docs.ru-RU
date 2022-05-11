@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 667cb2e528603e93e5ba5ef1851f165489f1d530
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: dac19e885edc06448984996bb06f9f150151805d
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61089934"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340996"
 ---
 ```go
 
@@ -50,11 +50,10 @@ requestBody.SetTransactionId(&transactionId)
 headers := map[string]string{
     "Prefer": "outlook.timezone="Pacific Standard Time""
 }
-options := &msgraphsdk.EventsRequestBuilderPostOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.EventsRequestBuilderPostRequestConfiguration{
+    Headers: headers,
 }
-result, err := graphClient.Me().Events().Post(options)
+result, err := graphClient.Me().Events().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

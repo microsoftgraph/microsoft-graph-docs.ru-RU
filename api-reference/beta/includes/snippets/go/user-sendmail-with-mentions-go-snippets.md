@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: d0a4c3229813ba24aae0dde4695c0a237fac71ec
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 184a82bfccbc3cb103cffb52036c5f0f4c5011ec
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61094408"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65341377"
 ---
 ```go
 
@@ -27,10 +27,7 @@ message.SetMentions( []Mention {
     SetAdditionalData(map[string]interface{}{
     }
 }
-options := &msgraphsdk.SendMailRequestBuilderPostOptions{
-    Body: requestBody,
-}
-graphClient.Me().SendMail().Post(options)
+graphClient.Me().SendMail().Post(requestBody)
 
 
 ```

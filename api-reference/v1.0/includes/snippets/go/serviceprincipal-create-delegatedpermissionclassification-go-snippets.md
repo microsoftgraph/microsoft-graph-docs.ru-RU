@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: bb68cf224d2e8814c61d3a4ffa1acba504d90646
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 608739f8d8d7ac7ce7f617d199696c16b842d562
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61087369"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340069"
 ---
 ```go
 
@@ -19,11 +19,8 @@ permissionName := "User.Read"
 requestBody.SetPermissionName(&permissionName)
 classification := "low"
 requestBody.SetClassification(&classification)
-options := &msgraphsdk.DelegatedPermissionClassificationsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).DelegatedPermissionClassifications().Post(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).DelegatedPermissionClassifications().Post(requestBody)
 
 
 ```

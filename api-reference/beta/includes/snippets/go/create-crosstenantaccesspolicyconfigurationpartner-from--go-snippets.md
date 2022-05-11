@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: d5572f01a1c04c99de811136350b47c8da5248a5
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 00d3eb726fcbbe97d36c1b30a2d92318100b746b
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335838"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340661"
 ---
 ```go
 
@@ -41,10 +41,7 @@ applications.SetTargets( []CrossTenantAccessPolicyTarget {
         "targetType": "application",
     }
 }
-options := &msgraphsdk.PartnersRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().Post(options)
+result, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().Post(requestBody)
 
 
 ```

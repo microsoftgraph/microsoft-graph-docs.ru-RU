@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: ce1d38caae41d056f82b817804a5f31a43b0672f
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 5594304e6b032610467d427ba579b2632bb0ce9c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416251"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340353"
 ---
 ```go
 
@@ -19,13 +19,10 @@ hidden := false
 requestBody.SetHidden(&hidden)
 propagateChanges := false
 requestBody.SetPropagateChanges(&propagateChanges)
-options := &msgraphsdk.ColumnDefinitionRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 siteId := "site-id"
 contentTypeId := "contentType-id"
 columnDefinitionId := "columnDefinition-id"
-result, err := graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).ColumnsById(&columnDefinitionId).Patch(options)
+graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).ColumnsById(&columnDefinitionId).Patch(requestBody)
 
 
 ```

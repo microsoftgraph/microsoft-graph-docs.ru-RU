@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: fda7b09d6c18bea042f11b1d6f713b95d51acc19
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 014ea63502c83af12e2e243956b62949d3f16007
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61084811"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342260"
 ---
 ```go
 
@@ -27,10 +27,7 @@ externalSource := "sis"
 requestBody.SetExternalSource(&externalSource)
 mailNickname := "fineartschool.net"
 requestBody.SetMailNickname(&mailNickname)
-options := &msgraphsdk.ClassesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Education().Classes().Post(options)
+result, err := graphClient.Education().Classes().Post(requestBody)
 
 
 ```

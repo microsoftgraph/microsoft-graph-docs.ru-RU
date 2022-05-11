@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 00391a153fa7835b9c1b4199ea2ad94879205710
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 173d8c0f14e5084d4f1c5340617b912c693c0275
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416741"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340878"
 ---
 ```go
 
@@ -36,11 +36,8 @@ requestBody.SetStopTones( []String {
     "1",
     "*",
 }
-options := &msgraphsdk.RecordResponseRequestBuilderPostOptions{
-    Body: requestBody,
-}
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).RecordResponse(call-id).Post(options)
+result, err := graphClient.Communications().CallsById(&callId).RecordResponse(call-id).Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: eb49540a078d016a93caf3340196bcff1c1235e2
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 7da294b7ab69cc4097bc54b65dbfeac9072e1d60
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63417205"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65341294"
 ---
 ```go
 
@@ -14,7 +14,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 caseId := "case-id"
 noncustodialDataSourceId := "noncustodialDataSource-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).NoncustodialDataSourcesById(&noncustodialDataSourceId).Release(case-id, noncustodialDataSource-id).Post(nil)
+graphClient.Compliance().Ediscovery().CasesById(&caseId).NoncustodialDataSourcesById(&noncustodialDataSourceId).Release(case-id, noncustodialDataSource-id).Post()
 
 
 ```

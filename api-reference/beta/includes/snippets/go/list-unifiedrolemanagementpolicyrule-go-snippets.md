@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: e03f3cf7c4a140f093b93994afb2d8c9d806deec
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: e12ca6e8d7a9a2b3a81612d7c157f1fed65cceae
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61544972"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340105"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "61544972"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 unifiedRoleManagementPolicyId := "unifiedRoleManagementPolicy-id"
-result, err := graphClient.Policies().RoleManagementPoliciesById(&unifiedRoleManagementPolicyId).Rules().Get(nil)
+result, err := graphClient.Policies().RoleManagementPoliciesById(&unifiedRoleManagementPolicyId).EffectiveRules().Get()
 
 
 ```

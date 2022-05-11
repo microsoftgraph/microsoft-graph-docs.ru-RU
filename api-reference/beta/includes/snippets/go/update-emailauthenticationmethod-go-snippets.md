@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 44bf396231e6a92ceccef47d58eab4f77694772a
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 53da850d67e3e800b89582cbb1912e33a4a054ba
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61095854"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65343436"
 ---
 ```go
 
@@ -16,12 +16,9 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
     "emailAddress": "kim@contoso.com",
 }
-options := &msgraphsdk.EmailAuthenticationMethodRequestBuilderPutOptions{
-    Body: requestBody,
-}
 userId := "user-id"
 emailAuthenticationMethodId := "emailAuthenticationMethod-id"
-graphClient.UsersById(&userId).Authentication().EmailMethodsById(&emailAuthenticationMethodId).Put(options)
+graphClient.UsersById(&userId).Authentication().EmailMethodsById(&emailAuthenticationMethodId).Put(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: c15e1bd70331deb9172678c75882fae8157f9f7e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 224c6b4cc657553bb98d260b6890a7a97701279e
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63417278"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65340832"
 ---
 ```go
 
@@ -18,11 +18,8 @@ requestBody.SetCategories( []String {
 }
 proficiency := "advancedProfessional"
 requestBody.SetProficiency(&proficiency)
-options := &msgraphsdk.SkillProficiencyRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 skillProficiencyId := "skillProficiency-id"
-result, err := graphClient.Me().Profile().SkillsById(&skillProficiencyId).Patch(options)
+graphClient.Me().Profile().SkillsById(&skillProficiencyId).Patch(requestBody)
 
 
 ```

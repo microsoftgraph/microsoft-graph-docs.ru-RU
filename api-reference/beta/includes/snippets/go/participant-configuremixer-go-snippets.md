@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 47449a3da5df2c2e5038edb796e44028ca852517
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 1d4d3bcfb33fe86c60d2305372976382e4c3704d
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61104137"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342350"
 ---
 ```go
 
@@ -18,12 +18,9 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "participantMixerLevels":  []Object {
     }
 }
-options := &msgraphsdk.ParticipantRequestBuilderPostOptions{
-    Body: requestBody,
-}
 callId := "call-id"
 participantId := "participant-id"
-graphClient.Communications().CallsById(&callId).ParticipantsById(&participantId).Post(options)
+graphClient.Communications().CallsById(&callId).ParticipantsById(&participantId).Post(requestBody)
 
 
 ```
