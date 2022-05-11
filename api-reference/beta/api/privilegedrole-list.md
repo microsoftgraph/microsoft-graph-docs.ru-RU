@@ -1,32 +1,32 @@
 ---
-title: Список привилегированныхролей
-description: Извлечение списка объектов privilegedRole.
+title: Перечисление privilegedRoles
+description: Получение списка объектов privilegedRole.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: c9d4aa5bf172487eedde95fefa2bcdd1caba5c45
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+author: japere
+ms.openlocfilehash: 114db703f0af6b7ce0fedf159f332959c1d2cd51
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137052"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65315993"
 ---
-# <a name="list-privilegedroles"></a>Список привилегированныхролей
+# <a name="list-privilegedroles"></a>Перечисление privilegedRoles
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Извлечение списка [объектов privilegedRole.](../resources/privilegedrole.md)
+Получение списка объектов [privilegedRole](../resources/privilegedrole.md) .
 
 Чтобы отфильтровать результаты запроса, используйте стандартные выражения OData ``$filter`` в URI.
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
-У запросителя должна быть одна из следующих ролей: _администратор_ привилегированных _ролей,_ глобальный _администратор,_ администратор безопасности или _читатель безопасности._
+Инициатор запроса должен иметь одну из следующих _ролей: администратор_ привилегированных _ролей,_ глобальный _администратор, администратор_ безопасности или _читатель сведений о безопасности_.
  
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -48,14 +48,14 @@ GET /privilegedRoles
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [privilegedRole](../resources/privilegedrole.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [privilegedRole](../resources/privilegedrole.md) в теле отклика.
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае возвращается код состояния HTTP 403 Forbidden.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

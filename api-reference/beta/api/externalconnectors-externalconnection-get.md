@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 98d0895eace4b387ddb50019f595f49270e805dc
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: e16a5b406970934c74e481f050c28c19c6485407
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133206"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65314594"
 ---
 # <a name="get-connection"></a>Получение подключения
 
@@ -26,8 +26,8 @@ ms.locfileid: "65133206"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -54,7 +54,7 @@ GET /external/connections/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `200 OK` отклика и запрашиваемый [объект externalConnection](../resources/externalconnectors-externalconnection.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [externalConnection](../resources/externalconnectors-externalconnection.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -62,9 +62,6 @@ GET /external/connections/{id}
 
 Ниже приведен пример запроса.
 
-
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_connection"
@@ -73,33 +70,6 @@ GET /external/connections/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/connections/contosohr
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-connection-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-connection-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-connection-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-connection-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-connection-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-connection-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="response"></a>Отклик
@@ -119,6 +89,7 @@ Content-type: application/json
 
 {
   "id": "contosohr",
+  "ingestedItemsCount": 700000,
   "name": "Contoso HR",
   "description": "Connection to index Contoso HR system",
   "state": "ready",

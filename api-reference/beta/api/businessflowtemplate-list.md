@@ -1,24 +1,26 @@
 ---
-title: Список businessFlowTemplates
-description: В функции обзоров доступа Azure AD перечислите все объекты businessFlowTemplate.
+title: Перечисление businessFlowTemplates
+description: В Azure AD проверки доступа перечислите все объекты BusinessFlowTemplate.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 0fefb1b789b3d13995d93c5acfe09362faa3e600
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 150617d1035cf8036dc4424db5e48f38676f8127
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124130"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65315188"
 ---
-# <a name="list-businessflowtemplates"></a>Список businessFlowTemplates
+# <a name="list-businessflowtemplates"></a>Перечисление businessFlowTemplates
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) перечислите все [объекты businessFlowTemplate.](../resources/businessflowtemplate.md)
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+В Azure AD [проверки доступа](../resources/accessreviews-root.md) перечислите все объекты [BusinessFlowTemplate](../resources/businessflowtemplate.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -28,7 +30,7 @@ ms.locfileid: "62124130"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
 
-Подписанный пользователь также должен быть в роли каталога, что позволяет им читать обзор доступа.
+Пользователь, выполнив вход, также должен иметь роль каталога, которая позволяет ему читать проверку доступа.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,11 +42,11 @@ GET /businessFlowTemplates
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не следует поставлять тело запроса.
+## <a name="request-body"></a>Текст запроса
+Текст запроса не должен быть указан.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и массив объектов `200, OK` [businessFlowTemplate](../resources/businessflowtemplate.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200, OK` отклика и массив объектов [businessFlowTemplate](../resources/businessflowtemplate.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -128,7 +130,7 @@ Content-type: application/json
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Создание accessReview](accessreview-create.md) |    [accessReview](../resources/accessreview.md) |  Создание нового accessReview. |
+|[Создание accessReview](accessreview-create.md) |    [accessReview](../resources/accessreview.md) |  Создайте новый accessReview. |
 
 
 

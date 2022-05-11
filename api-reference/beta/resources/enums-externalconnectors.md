@@ -1,74 +1,73 @@
 ---
-title: Внешние соединители, которые окружались значениями
-description: Значения Graph внешних соединителях Microsoft
+title: Значения перечисления внешних соединителей
+description: Значения Graph внешних соединителей Майкрософт
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: search
 ms.author: emzho
 author: emzho
-ms.openlocfilehash: a15712ce6fe32efe9e26d659b8e763432c478040
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: c89dfafdd1973dfbdc908368427e43076aaad07d
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214652"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65315456"
 ---
-# <a name="external-connectors-enum-values"></a>Внешние соединители, которые окружались значениями
+# <a name="external-connectors-enum-values"></a>Значения перечисления внешних соединителей
 
 Пространство имен: microsoft.graph.externalConnectors
 
-### <a name="accesstype-values"></a>значения accessType
+### <a name="accesstype-values"></a>Значения accessType
 
 | Member
 |:--------------
-| грант
-| запретить
+| Предоставить
+| Отрицать
 | unknownFutureValue
 
-### <a name="acltype-values"></a>значения aclType
+### <a name="acltype-values"></a>Значения aclType
 
 | Member
 |:--------------
-| пользователь
-| group;
-| все
+| пользователь;
+| group
+| Все
 | everyoneExceptGuests
 | externalGroup
 | unknownFutureValue
 
 
-### <a name="connectionoperationstatus-values"></a>значения connectionOperationStatus
+### <a name="connectionoperationstatus-values"></a>Значения connectionOperationStatus
 
 | Member
 |:--------------
-| неустановленные
-| inprogress
-| завершено
-| не удалось
+| Неопределенное
+| Inprogress
+| Завершена
+| Сбой при
 | unknownFutureValue
 
 
-### <a name="connectionstate-values"></a>значения connectionState
+### <a name="connectionstate-values"></a>Значения connectionState
 
 |Member
 |:--------------
-| черновик
-| готово
-| устаревший
+| Проект
+| Готов
+| Устаревшие
 | limitExceeded
 | unknownFutureValue
 
-
-### <a name="externalgroupmembertype-values"></a>значения externalGroupMemberType
+### <a name="externalgroupmembertype-values"></a>Значения externalGroupMemberType
 
 | Member
 |:--------------
-| пользователь
+| пользователь;
 | group;
 | unknownFutureValue
 
 
-### <a name="externalitemcontenttype-values"></a>значения externalItemContentType
+### <a name="externalitemcontenttype-values"></a>Значения externalItemContentType
 
 | Member
 |:--------------
@@ -76,12 +75,12 @@ ms.locfileid: "60214652"
 | HTML
 | unknownFutureValue
 
-### <a name="identitysourcetype-values"></a>значения identitySourceType
+### <a name="identitysourcetype-values"></a>Значения identitySourceType
 
 | Member
 |:--------------
 | azureActiveDirectory
-| внешние
+| Внешних
 
 
 ### <a name="label-values"></a>Значения меток
@@ -103,7 +102,7 @@ ms.locfileid: "60214652"
 | containerUrl
 
 
-### <a name="propertytype-values"></a>значения propertyType
+### <a name="propertytype-values"></a>Значения propertyType
 
 | Member
 |:--------------
@@ -112,7 +111,7 @@ ms.locfileid: "60214652"
 | double
 | dateTime
 | логический
-| stringCollection
+| Stringcollection
 | int64Collection
 | doubleCollection
 | dateTimeCollection
@@ -123,11 +122,11 @@ ms.locfileid: "60214652"
 |Member|
 |:---|
 |null|
-|equals|
+|Равно|
 |notEquals|
 |contains|
 |notContains|
-|lessThan|
+|Lessthan|
 |greaterThan|
 |startsWith|
 |unknownFutureValue|

@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 1d0f5d421e1f1f68298c555c8e7dad9dd81f294f
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: 5c274787d6f4b81dc6be8203993b94e019be178b
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191891"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65316104"
 ---
 # <a name="contenttype-getcompatiblehubcontenttypes"></a>contentType: getCompatibleHubContentTypes
 Пространство имен: microsoft.graph
@@ -47,7 +47,7 @@ GET /sites/{siteId}/contentTypes/getCompatibleHubContentTypes
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения эта функция возвращает код `200 OK` отклика и коллекцию объектов [contentType](../resources/contenttype.md) в тексте отклика.
 
@@ -57,6 +57,8 @@ GET /sites/{siteId}/contentTypes/getCompatibleHubContentTypes
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_getcompatiblehubcontenttypes"
@@ -65,6 +67,28 @@ GET /sites/{siteId}/contentTypes/getCompatibleHubContentTypes
 ``` http
 GET https://graph.microsoft.com/v1.0/sites/root/lists/Documents/contentTypes/getCompatibleHubContentTypes
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-getcompatiblehubcontenttypes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-getcompatiblehubcontenttypes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-getcompatiblehubcontenttypes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-getcompatiblehubcontenttypes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-getcompatiblehubcontenttypes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

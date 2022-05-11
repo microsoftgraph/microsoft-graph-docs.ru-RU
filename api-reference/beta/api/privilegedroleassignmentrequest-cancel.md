@@ -1,16 +1,16 @@
 ---
 title: Отмена privilegedRoleAssignmentRequest
-description: Отмена привилегированногоRoleAssignmentRequest.
+description: Отмена privilegedRoleAssignmentRequest.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: dc45a27afa7fe830ef439cd2263713b1a7a5efc4
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+author: japere
+ms.openlocfilehash: 8333afad2d35cc41731a3a13d86fb17dd5280f73
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671365"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65314374"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>Отмена privilegedRoleAssignmentRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "63671365"
 
 [!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Отмена [привилегированногоRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).
+Отмена [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,17 +47,17 @@ POST /privilegedRoleAssignmentRequests/{requestid}/cancel
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `200 Ok`. Он возвращает [привилегированныеRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в ответном органе.
+В случае успешного выполнения этот метод возвращает код отклика `200 Ok`. Он возвращает [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в тексте ответа.
 
 ### <a name="error-codes"></a>Коды ошибок
 Этот API возвращает стандартные коды ошибок HTTP. Кроме того, он возвращает пользовательские коды ошибок, перечисленные в следующей таблице.
 
 |Код ошибки     | Сообщение об ошибке              |
 |:--------------------| :---------------------|
-| 400 BadRequest | RequestId не может быть Null. |
-| 400 BadRequest | Запрос с ИД запроса не найден. |
-| 400 BadRequest | Отмена может быть сделана только в состоянии Запланированный и PendingApproval. |
-| 403 UnAuthorized | Запрашиватель не может сделать отмену вызова или запроса не найден. |
+| 400 BadRequest | RequestId не может иметь значение NULL. |
+| 400 BadRequest | Запрос с идентификатором запроса не найден. |
+| 400 BadRequest | Отмена может быть выполнена только в состоянии "Запланировано" и "Ожиданиеapproval". |
+| 403 Без проверки подлинности | Запрашиватель не может сделать вызов отмены или запрос не найден. |
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

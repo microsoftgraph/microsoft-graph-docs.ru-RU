@@ -1,24 +1,26 @@
 ---
-title: Рецензенты списка accessReview
-description: В функции обзоров доступа Azure AD извлекаем рецензентов объекта accessReview.
+title: Перечисление рецензентов accessReview
+description: В Azure AD проверки доступа извлеките рецензентов объекта accessReview.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b473bf47ab98606ec300f6a9683eea6dc83554bf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0a5ffc308b63eabf9b883be1f68bee1190c86c8a
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100732"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65314475"
 ---
-# <a name="list-accessreview-reviewers"></a>Рецензенты списка accessReview
+# <a name="list-accessreview-reviewers"></a>Перечисление рецензентов accessReview
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) извлекаем рецензентов объекта [accessReview.](../resources/accessreview.md)
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+В Azure AD [проверки доступа](../resources/accessreviews-root.md) получите рецензентов объекта [accessReview](../resources/accessreview.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -29,7 +31,7 @@ ms.locfileid: "62100732"
 |Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership  |
 
 
- Подписанный пользователь также должен быть в роли каталога, что позволяет им читать обзор доступа.
+ Пользователь, выполнив вход, также должен иметь роль каталога, которая позволяет ему читать проверку доступа.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,11 +43,11 @@ GET /accessReviews/{reviewId}/reviewers
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не следует поставлять тело запроса.
+## <a name="request-body"></a>Текст запроса
+Текст запроса не должен быть указан.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и массив объектов `200 OK` [userIdentity](../resources/useridentity.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и массив объектов [userIdentity](../resources/useridentity.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -112,7 +114,7 @@ Content-type: application/json
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получить accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Извлечение обзора доступа. |
+|[Получение accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Получение проверки доступа. |
 |[Добавление рецензента accessReview](accessreview-addreviewer.md) |     Нет.   |   Добавление рецензента в accessReview. |
 |[Удаление рецензента accessReview](accessreview-removereviewer.md) | Нет. |   Удаление рецензента из accessReview. |
 

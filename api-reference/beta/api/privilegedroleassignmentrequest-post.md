@@ -1,16 +1,16 @@
 ---
 title: Создание privilegedRoleAssignmentRequest
-description: Создание объекта privilegedroleassignmentrequest.
+description: Создайте объект privilegedroleassignmentrequest.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: b59eb882f3560847f16aed7f9e4d360f68360989
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+author: japere
+ms.openlocfilehash: a09a8e23e876ae57fa85c1b579cecf14f34ee510
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671393"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65316372"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Создание privilegedRoleAssignmentRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "63671393"
 
 [!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Создание [объекта privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) .
+Создайте [объект privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,18 +43,18 @@ POST /privilegedRoleAssignmentRequests
 | Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) . 
+В тексте запроса добавьте представление объекта [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) в формате JSON. 
 
 | Свойство     | Тип    |  Описание|
 |:---------------|:--------|:----------|
-|roleId|Строка|ID роли. Обязательное.|
-|type|String|Представляет тип операции при назначении ролей. Значение может быть: `AdminAdd`Администраторы добавляют пользователей к ролям;`UserAdd` пользователи добавляют назначения ролей. Обязательный.|
-|assignmentState|String|Состояние назначения. Это значение может быть для `Eligible` присвоения `Active` `Active` , если оно непосредственно назначено администраторами или активировано при назначении, назначенного пользователями. Возможные значения: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Обязательный.|
-|reason|String|Причина должна быть предоставлена для запроса назначения ролей для целей аудита и проверки.|
+|roleId|String|Идентификатор роли. Обязательное.|
+|type|String|Представляет тип операции назначения роли. Значение может быть: `AdminAdd`администраторы добавляют пользователей к ролям;`UserAdd` пользователи добавляют назначения ролей. Обязательно.|
+|assignmentState|String|Состояние назначения. Значение может быть задано `Eligible` для `Active` допустимого назначения , `Active` если оно напрямую назначено администраторами или активировано для допустимого назначения пользователями. Возможные значения: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Обязательно.|
+|reason|String|Причина должна быть указана для запроса на назначение роли для аудита и проверки.|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|Расписание запроса на назначение ролей.|
 
 ## <a name="response"></a>Отклик
-В случае успешного `201 Created` выполнения этот метод возвращает код ответа и объект [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в тексте отклика.
 
 ### <a name="error-codes"></a>Коды ошибок
 Этот API возвращает стандартные коды ошибок HTTP. Кроме того, он может возвращать коды ошибок, перечисленные в следующей таблице.
@@ -62,20 +62,20 @@ POST /privilegedRoleAssignmentRequests
 |Код ошибки     | Сообщение об ошибке              | 
 |:--------------------| :---------------------|
 | 400 BadRequest | Свойство RoleAssignmentRequest было NULL |
-| 400 BadRequest | Не удается deserialize roleAssignmentRequest Object. |
-| 400 BadRequest | RoleId необходим. |
-| 400 BadRequest | Дата начала расписания должна быть указана и должна быть больше, чем сейчас. |
+| 400 BadRequest | Не удалось десериализировать объект roleAssignmentRequest. |
+| 400 BadRequest | Требуется RoleId. |
+| 400 BadRequest | Дата начала расписания должна быть указана и больше, чем сейчас. |
 | 400 BadRequest | Для этого пользователя, роли и типа расписания уже существует расписание. |
-| 400 BadRequest | Ожидается утверждение уже существует для этого пользователя, роли и утверждения типа. |
-| 400 BadRequest | Причина запроса отсутствует. |
-| 400 BadRequest | Причина запроса должна быть менее 500 символов. |
-| 400 BadRequest | Продолжительность высоты должна быть между 0,5 и {from setting}. |
-| 400 BadRequest | Существует совпадение между запланированной активацией и запросом. |
+| 400 BadRequest | Для этого пользователя, роли и типа утверждения уже существует ожидающее утверждения. |
+| 400 BadRequest | Отсутствует причина запроса. |
+| 400 BadRequest | Причина запроса не должна превышать 500 символов. |
+| 400 BadRequest | Длительность повышения прав должна находиться в диапазоне от 0,5 до {с параметра}. |
+| 400 BadRequest | Между запланированной активацией и запросом существует перекрытие. |
 | 400 BadRequest | Роль уже активирована. |
-| 400 BadRequest | GenericElevateUserToRoleAssignments: сведения о тикинге необходимы и не поставляются в процессе активации. |
-| 400 BadRequest | Существует совпадение между запланированной активацией и запросом. |
-| 403 UnAuthorized | Высота требует многофакторной проверки подлинности. |
-| 403 UnAuthorized | От имени высоты не допускается. |
+| 400 BadRequest | GenericElevateUserToRoleAssignments: сведения о делениях являются обязательными и не предоставляются в процессе активации. |
+| 400 BadRequest | Между запланированной активацией и запросом существует перекрытие. |
+| 403 Без проверки подлинности | Повышение прав требует многофакторной проверки подлинности. |
+| 403 Без проверки подлинности | От имени повышения прав не допускается. |
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

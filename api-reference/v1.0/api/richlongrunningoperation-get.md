@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 461decb162e11ecc96b39b9e75bf8a9ffb970adb
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: 8344ee5d4ef01335ce53387e225da7ffd790a36e
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191878"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65315817"
 ---
 # <a name="get-richlongrunningoperation"></a>Получение richLongRunningOperation
 Пространство имен: microsoft.graph
@@ -49,7 +49,7 @@ GET /sites/{siteId}/lists/{listId}/operations/{richLongRunningOperation-ID}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [richLongRunningOperation](../resources/richlongrunningoperation.md) в тексте отклика.
 
@@ -59,6 +59,8 @@ GET /sites/{siteId}/lists/{listId}/operations/{richLongRunningOperation-ID}
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_richlongrunningoperation"
@@ -67,6 +69,28 @@ GET /sites/{siteId}/lists/{listId}/operations/{richLongRunningOperation-ID}
 ``` http
 GET https://graph.microsoft.com/v1.0/sites/root/operations/contentTypeCopy,0x010100298A15181454D84EBB62EDD7559FCBFE
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-richlongrunningoperation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-richlongrunningoperation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-richlongrunningoperation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-richlongrunningoperation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-richlongrunningoperation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

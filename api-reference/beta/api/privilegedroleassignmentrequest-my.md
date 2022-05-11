@@ -1,16 +1,16 @@
 ---
 title: 'privilegedRoleAssignmentRequest: my'
-description: Получите запросы на присвоение привилегированных ролей запрашиваемой запрашиваемой роли.
+description: Получение запросов на назначение привилегированных ролей запрашивателя.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: d0fa95397478e9736ad5c7b91cee795619e1f7cb
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+author: japere
+ms.openlocfilehash: 44964c5152fbb38a8cba63fd656d85f28a72aa83
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671638"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65316183"
 ---
 # <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest: my
 
@@ -20,7 +20,7 @@ ms.locfileid: "63671638"
 
 [!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Получите запросы на присвоение привилегированных ролей запрашиваемой запрашиваемой роли.
+Получение запросов на назначение привилегированных ролей запрашивателя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,7 +48,7 @@ POST /privilegedRoleAssignmentRequests/my
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного `200 OK` выполнения этот метод возвращает код ответа и объект [коллекции privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [коллекции privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

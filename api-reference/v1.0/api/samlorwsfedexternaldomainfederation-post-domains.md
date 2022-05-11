@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 27ab98515dc1d829ddd4136914d11e9c22e94c3b
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: 2b88d4b2a4cebcb0ef895b65e809b84d836d9641
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296640"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65314633"
 ---
 # <a name="create-externaldomainname"></a>Создание externalDomainName
 Пространство имен: microsoft.graph
@@ -57,7 +57,7 @@ POST /directory/federationConfigurations/{samlOrWsFedExternalDomainFederation ID
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Доменное имя внешней организации, которую вы хотите добавить в [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md). Наследуется от [сущности](../resources/entity.md).|
+|id|String|Доменное имя внешней организации, которую вы хотите добавить в [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md). Наследуется от [сущности](../resources/entity.md).|
 
 ## <a name="response"></a>Отклик
 
@@ -67,6 +67,8 @@ POST /directory/federationConfigurations/{samlOrWsFedExternalDomainFederation ID
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_externaldomainname_from_"
@@ -82,6 +84,24 @@ Content-Type: application/json
     "id": "contososuites.com"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-externaldomainname-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-externaldomainname-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-externaldomainname-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-externaldomainname-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика.

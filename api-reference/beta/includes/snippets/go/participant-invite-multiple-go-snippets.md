@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: eaa52398ba1039766be5d1d81c2f45da2025df46
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 091a7a916fc27930bbed54d47ddb02b8aa4777bf
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416930"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65316260"
 ---
 ```go
 
@@ -27,11 +27,8 @@ requestBody.SetParticipants( []InvitationParticipantInfo {
 }
 clientContext := "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 requestBody.SetClientContext(&clientContext)
-options := &msgraphsdk.InviteRequestBuilderPostOptions{
-    Body: requestBody,
-}
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).Participants().Invite(call-id).Post(options)
+result, err := graphClient.Communications().CallsById(&callId).Participants().Invite(call-id).Post(requestBody)
 
 
 ```

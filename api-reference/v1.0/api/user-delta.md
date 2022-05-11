@@ -5,18 +5,21 @@ ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 46a1c1c89d96a6117e5dddfbb6e1c42f30157b59
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: ffd00feb6beaf2ce5ac8aeec33befe07caed05b7
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247359"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65315162"
 ---
 # <a name="user-delta"></a>user: delta
 
 Пространство имен: microsoft.graph
 
 Создавайте, обновляйте или удаляйте пользователей без необходимости полного чтения всей коллекции пользователей. Дополнительные сведения см. в статье [Отслеживание изменений](/graph/delta-query-overview).
+
+> [!NOTE]
+> Изменения свойства **licenseAssignmentStates** сейчас не отслеживаются.
 
 ## <a name="permissions"></a>Разрешения
 

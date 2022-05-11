@@ -1,16 +1,16 @@
 ---
 title: Перечисление privilegedApproval
-description: Извлечение списка привилегированных объектов.
+description: Получение списка привилегированных объектов.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: a8a95060f8dd00193b57a780fa9df73b8112ddaa
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+author: japere
+ms.openlocfilehash: bbf4d7841f456a398f5c5aadc3f228dc3315727e
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671449"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65316211"
 ---
 # <a name="list-privilegedapproval"></a>Перечисление privilegedApproval
 
@@ -20,7 +20,7 @@ ms.locfileid: "63671449"
 
 [!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Извлечение списка привилегированных объектов.
+Получение списка привилегированных объектов.
 
 Чтобы отфильтровать результаты запроса, используйте стандартные выражения OData ``$filter`` в URI.
 ## <a name="permissions"></a>Разрешения
@@ -51,9 +51,9 @@ GET /privilegedApproval
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию привилегированных [объектовApproval](../resources/privilegedapproval.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [privilegedApproval](../resources/privilegedapproval.md) в тексте отклика.
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае возвращается код состояния HTTP 403 Forbidden.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

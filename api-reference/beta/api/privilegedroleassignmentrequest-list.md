@@ -1,18 +1,18 @@
 ---
-title: Список привилегированныхRoleAssignmentRequests
-description: 'Извлечение коллекции privilegedRoleAssignmentRequest. '
+title: Перечисление privilegedRoleAssignmentRequests
+description: 'Получение коллекции privilegedRoleAssignmentRequest. '
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 8ea2888e370bbfd2c3cb082994fbc154b9a0f0b5
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+author: japere
+ms.openlocfilehash: 835a544de23eddbc016d3c20089cddb73c728d45
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671351"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65315615"
 ---
-# <a name="list-privilegedroleassignmentrequests"></a>Список привилегированныхRoleAssignmentRequests
+# <a name="list-privilegedroleassignmentrequests"></a>Перечисление privilegedRoleAssignmentRequests
 
 Пространство имен: microsoft.graph
 
@@ -20,9 +20,9 @@ ms.locfileid: "63671351"
 
 [!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Извлечение коллекции [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md). 
+Получение коллекции [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md). 
 
-**Примечание:** Этот запрашиватель должен иметь как минимум одно назначение ролей на ресурсе.
+**Примечание:** Этот запрашиватель должен иметь по крайней мере одно назначение роли для ресурса.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,7 +51,7 @@ GET /privilegedRoleAssignmentRequests
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного `200 OK` выполнения этот метод возвращает код ответа и коллекцию объектов [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в тексте ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

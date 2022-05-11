@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f7d319e024189847c2358016673dcf9750f0614a
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: f7de7a4bdd9a877bfa5e9f4935d7e95171bac240
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191452"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65315901"
 ---
 # <a name="participant-invite"></a>участник: приглашение
 
@@ -51,7 +51,7 @@ POST /communications/calls/{id}/participants/invite
 |participants|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Участники, которые будут приглашены.|
 |clientContext|String|Уникальная строка контекста клиента. Максимальное ограничение — 256 знаков.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного `200 OK` выполнения этот метод возвращает код отклика и заголовок расположения с URI в [объект inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) , созданный для этого запроса. 
 
 Текст ответа содержит созданный [объект inviteParticipantsOperation](../resources/inviteparticipantsoperation.md).
@@ -929,6 +929,8 @@ Content-Type: application/json
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "participant-invite-move"
@@ -957,6 +959,28 @@ Content-Type: application/json
   "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-move-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-move-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-move-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-invite-move-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-invite-move-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

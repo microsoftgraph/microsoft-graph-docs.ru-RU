@@ -1,16 +1,16 @@
 ---
 title: 'privilegedRole: selfActivate'
-description: Активируйте роль, назначенную запрашиваемой.
+description: Активируйте роль, назначенную запрашивающий.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: d1d0fe73770e6ef5994423ebeee0152975ccd047
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+author: japere
+ms.openlocfilehash: 4c4abcbac602fd0c3c32a2641798aaf7304ba781
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340147"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65316395"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole: selfActivate
 
@@ -18,17 +18,17 @@ ms.locfileid: "62340147"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Активируйте роль, назначенную запрашиваемой.
+Активируйте роль, назначенную запрашивающий.
 
 >**Примечание:** С декабря 2018 г. этот API больше не будет поддерживаться и не должен использоваться. Вместо этого [используйте create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md) .
 
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
-Запросчик может вызывать только ```selfActivate``` назначенную ему роль.
+Инициатор запроса может вызывать только ```selfActivate``` назначенную ему роль.
  
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -43,7 +43,7 @@ ms.locfileid: "62340147"
 POST /privilegedRoles/{id}/selfActivate
 ```
 
-Обратите внимание, ``{id}`` что это ИД целевой роли.
+Обратите внимание, ``{id}`` что это идентификатор целевой роли.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
@@ -55,15 +55,15 @@ POST /privilegedRoles/{id}/selfActivate
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |reason|string|Необязательный параметр. Описание причины активации этой роли.|
-|duration|string|Необязательный параметр. Допустимые значения могут быть ```min``` (минимальная продолжительность активации), ```default``` (продолжительность активации по умолчанию для роли) или двойное значение, чтобы указать, сколько часов является активацией. Указанная продолжительность не может быть больше, чем продолжительность активации роли из параметра роли. |
-|ticketNumber|string|Необязательный параметр. Номер билета, используемый для отслеживания активации этой роли.|
-|ticketSystem|string|Необязательный параметр. Система билетов.|
+|duration|string|Необязательный параметр. Допустимые значения могут быть ```min``` (минимальная длительность активации), ```default``` (длительность активации по умолчанию для роли) или двойное значение, чтобы указать, сколько часов является активацией. Указанная длительность не может превышать длительность активации роли из параметра роли. |
+|ticketNumber|string|Необязательный параметр. Номер билета, который используется для отслеживания активации этой роли.|
+|ticketSystem|string|Необязательный параметр. Система запросов.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `200 OK` ответа и объект [privilegedRoleAssignment](../resources/privilegedroleassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [privilegedRoleAssignment](../resources/privilegedroleassignment.md) в тексте отклика.
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае возвращается код состояния HTTP 403 Forbidden.
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
 ##### <a name="request"></a>Запрос

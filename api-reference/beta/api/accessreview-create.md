@@ -1,16 +1,16 @@
 ---
 title: Создание accessReview
-description: В функции обзоров доступа Azure AD создайте новый объект accessReview.
+description: В Azure AD проверки доступа создайте объект accessReview.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4c2ac0c265675516f985a36d29d1b0f2ec76bfd2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bfddca0486d9f622107b4e234c5baa6ab66cbaa0
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100767"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65314542"
 ---
 # <a name="create-accessreview"></a>Создание accessReview
 
@@ -18,11 +18,13 @@ ms.locfileid: "62100767"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) создайте новый [объект accessReview.](../resources/accessreview.md)
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Прежде чем сделать этот запрос, [](businessflowtemplate-list.md)звонявший должен ранее получить список шаблонов бизнес-потока, чтобы включить в запрос значение **businessFlowTemplateId.**
+В Azure AD [проверки доступа](../resources/accessreviews-root.md) создайте объект [accessReview](../resources/accessreview.md).
 
-После этого запроса вызываемая должна [создать программуControl,](programcontrol-create.md)чтобы связать обзор доступа с программой.  
+Перед выполнением этого запроса вызывающий объект должен получить список шаблонов бизнес-потока [, чтобы](businessflowtemplate-list.md) включить в запрос значение **businessFlowTemplateId** .
+
+После выполнения этого запроса вызывающий объект должен [создать programControl](programcontrol-create.md), чтобы связать проверку доступа с программой.  
 
 ## <a name="permissions"></a>Разрешения
 
@@ -34,8 +36,8 @@ ms.locfileid: "62100767"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | AccessReview.ReadWrite.Membership |
 
-Вызываемая должна также иметь разрешение ProgramControl.ReadWrite.All, чтобы после создания обзора доступа вызываемая мог создать [программуControl](../resources/programcontrol.md).
-Кроме того, подписанный пользователь также должен быть в роли каталога, что позволяет им создавать обзор доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviews-root.md)
+Вызывающий объект также должен иметь разрешение ProgramControl.ReadWrite.All, чтобы после создания проверки доступа вызывающий объект можно было [создать programControl](../resources/programcontrol.md).
+Кроме того, пользователь, выполнив вход, также должен быть в роли каталога, которая позволяет ему создать проверку доступа.  Дополнительные сведения см. в разделе о требованиях к роли и разрешениям для [проверок доступа](../resources/accessreviews-root.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,37 +51,37 @@ POST /accessReviews
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [accessReview.](../resources/accessreview.md)
+В тексте запроса добавьте представление объекта [accessReview в формате](../resources/accessreview.md) JSON.
 
 В следующей таблице показаны свойства, необходимые при создании accessReview.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| displayName             |Строка                                                        | Имя обзора доступа.  |
-| startDateTime           |DateTimeOffset                                                | DateTime, когда планируется начать проверку.  Это должна быть дата в будущем.   |
-| endDateTime             |DateTimeOffset                                                | DateTime, когда проверка должна завершиться. Это должно быть по крайней мере на один день позже даты начала.   |
-| description             |String                                                        | Описание, чтобы показать рецензентам. |
-| businessFlowTemplateId  |String                                                        | Идентификатор шаблона бизнес-потока, полученный из [businessFlowTemplate.](../resources/businessflowtemplate.md)  |
-| reviewerType            |Строка                                                        | Тип отношения рецензента к правам доступа к рассмотренного объекта, одного из `self` , `delegated` или `entityOwners` . | 
-| reviewedEntity          |[identity](../resources/identity.md)                                     | Объект, для которого создается обзор доступа, например членство в группе или назначения пользователей приложению. | 
+| displayName             |String                                                        | Имя проверки доступа.  |
+| startDateTime           |DateTimeOffset                                                | Дата и время начала проверки.  Это должна быть дата в будущем.   |
+| endDateTime             |DateTimeOffset                                                | Дата и время окончания проверки. Это значение должно быть по крайней мере на один день позже даты начала.   |
+| description             |String                                                        | Описание, отображаемая рецензентам. |
+| businessFlowTemplateId  |String                                                        | Идентификатор шаблона бизнес-потока, полученный из [businessFlowTemplate](../resources/businessflowtemplate.md).  |
+| reviewerType            |String                                                        | Тип отношения рецензента с правами доступа проверяемого объекта, один из `self`, `delegated`или `entityOwners`. | 
+| reviewedEntity          |[identity](../resources/identity.md)                                     | Объект, для которого создается проверка доступа, например членство в группе или назначение пользователей приложению. | 
 
 
-Если **reviewerType** имеет значение, то вызывавший должен также включать свойство рецензентов с коллекцией объектов `delegated` [userIdentity,](../resources/useridentity.md) представляющих рецензентов. 
+Если свойство **reviewerType** `delegated`имеет значение, вызывающий объект также должен включать свойство **рецензентов** с коллекцией объектов [userIdentity](../resources/useridentity.md) , представляющих рецензентов.
 
-Если приложение вызывает этот API без подписанного пользователя, вызываемая должна также включать свойство **createdBy,** значение для которого является [объектом userIdentity](../resources/useridentity.md) пользователя, который будет определен в качестве создателя отзыва.
+Если приложение вызывает этот API без пользователя, выполнившего вход, вызывающий объект также должен включить свойство **createdBy** , значение которого является [userIdentity](../resources/useridentity.md) пользователя, который будет определен как создатель проверки.
 
-Кроме того, вызывающее может включать **параметры,** чтобы создать повторяющиеся серии обзоров или изменить поведение проверки по умолчанию. В частности, чтобы создать повторяющийся обзор, звонящая должна включить [accessReviewRecurrenceSettings](../resources/accessreviewrecurrencesettings.md) в параметры обзора доступа,
+Кроме того, вызывающий объект может включать **параметры, чтобы** создать повторяющийся ряд проверок или изменить поведение проверки по умолчанию. В частности, чтобы создать повторяющиеся проверки, вызывающий объект должен включить [accessReviewRecurrenceSettings](../resources/accessreviewrecurrencesettings.md) в параметры проверки доступа.
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект accessReview](../resources/accessreview.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [accessReview](../resources/accessreview.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
-Это пример создания разового (не повторяющегося) обзора доступа, явно указывав двух пользователей в качестве рецензентов.
+Это пример создания однофакторной (не повторяющейся) проверки доступа, явно указав двух пользователей в качестве рецензентов.
 
 ### <a name="request"></a>Запрос
-В теле запроса поставляем JSON-представление [объекта accessReview.](../resources/accessreview.md)
+В тексте запроса добавьте представление объекта [accessReview в формате](../resources/accessreview.md) JSON.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

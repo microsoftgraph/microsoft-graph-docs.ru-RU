@@ -572,7 +572,7 @@ items:
                 href: api/profile-get.md
               - name: Удаление профиля пользователя
                 href: api/profile-delete.md
-          - name: Командная работа
+          - name: Teamwork
             items:
               - name: Приложение установлено
                 href: resources/teamsappinstallation.md
@@ -2057,7 +2057,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: Прервать
                     href: api/printjob-abort.md
-                  - name: Redirect
+                  - name: Перенаправление
                     href: api/printjob-redirect.md
               - name: Операция печати
                 href: resources/printoperation.md
@@ -2187,7 +2187,7 @@ items:
               - name: Управление приложениями
                 href: resources/intune-app-conceptual.md
                 items:
-                  - name: Режим регистрации владельца устройства Android
+                  - name: Android регистрации владельца устройства
                     href: resources/intune-androidforwork-androiddeviceownerenrollmentmode.md
                   - name: Профиль регистрации владельца устройства Android
                     href: resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md
@@ -2206,7 +2206,7 @@ items:
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
                       - name: Действие createToken
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
-                  - name: Тип маркера регистрации владельца устройства Android
+                  - name: Android типа маркера регистрации владельца устройства
                     href: resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md
                   - name: Код компании регистрации Android
                     href: resources/intune-androidforwork-androidenrollmentcompanycode.md
@@ -2374,9 +2374,9 @@ items:
                     href: resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md
                   - name: Тип данных для элемента схемы конфигурации управляемого приложения магазина Android
                     href: resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md
-                  - name: Дорожка приложения управляемого магазина Android
+                  - name: Android управляемого магазина
                     href: resources/intune-apps-androidmanagedstoreapptrack.md
-                  - name: Веб-приложение управляемого магазина Android
+                  - name: Android веб-приложения управляемого магазина
                     href: resources/intune-apps-androidmanagedstorewebapp.md
                     items:
                       - name: Список
@@ -2395,7 +2395,7 @@ items:
                     href: resources/intune-apps-androidpermissionaction.md
                   - name: Тип действия разрешения Android
                     href: resources/intune-apps-androidpermissionactiontype.md
-                  - name: Применимость профиля Android
+                  - name: Android профиля
                     href: resources/intune-apps-androidprofileapplicability.md
                   - name: Приложение из магазина Android
                     href: resources/intune-apps-androidstoreapp.md
@@ -2599,7 +2599,7 @@ items:
                         href: api/intune-books-iosvppebookassignment-update.md
                   - name: Пара "ключ-значение"
                     href: resources/intune-androidforwork-keyvaluepair.md
-                  - name: Приложение dmg для macOS
+                  - name: macOS dmg
                     href: resources/intune-apps-macosdmgapp.md
                     items:
                       - name: Список
@@ -2612,7 +2612,7 @@ items:
                         href: api/intune-apps-macosdmgapp-delete.md
                       - name: Обновление
                         href: api/intune-apps-macosdmgapp-update.md
-                  - name: Включено приложение macOS
+                  - name: macOS включенного приложения
                     href: resources/intune-apps-macosincludedapp.md
                   - name: Бизнес-приложение macOS
                     href: resources/intune-apps-macoslobapp.md
@@ -2629,7 +2629,7 @@ items:
                         href: api/intune-apps-macoslobapp-update.md
                   - name: Дочернее бизнес-приложение для macOS
                     href: resources/intune-apps-macoslobchildapp.md
-                  - name: Приложение mdatp для macOS
+                  - name: macOS mdatp
                     href: resources/intune-apps-macosmdatpapp.md
                     items:
                       - name: Список
@@ -2642,7 +2642,7 @@ items:
                         href: api/intune-apps-macosmdatpapp-delete.md
                       - name: Обновление
                         href: api/intune-apps-macosmdatpapp-update.md
-                  - name: Приложение Microsoft Edge для macOS
+                  - name: macOS Microsoft Edge
                     href: resources/intune-apps-macosmicrosoftedgeapp.md
                     items:
                       - name: Список
@@ -3810,14 +3810,14 @@ items:
                     href: resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md
                   - name: Режим подключения аккумулятора для владельца устройства с Android
                     href: resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md
-                  - name: База профиля сертификата владельца устройства Android
+                  - name: Android профиля сертификата владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md
                     items:
                       - name: Список
                         href: api/intune-deviceconfig-androiddeviceownercertificateprofilebase-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androiddeviceownercertificateprofilebase-get.md
-                  - name: Политика соответствия владельца устройства Android
+                  - name: Android политики соответствия владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownercompliancepolicy.md
                     items:
                       - name: Список
@@ -3830,11 +3830,11 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-update.md
-                  - name: Совместное использование данных с помощью перекрестного профиля владельца устройства Android
+                  - name: Android владельца устройства для совместного использования данных в нескольких профилях
                     href: resources/intune-deviceconfig-androiddeviceownercrossprofiledatasharing.md
                   - name: Тип политики разрешений приложения по умолчанию для владельца устройства с Android
                     href: resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md
-                  - name: Конфигурация проверки подлинности производных учетных данных владельца устройства Android
+                  - name: Android конфигурации проверки подлинности производных учетных данных владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md
                     items:
                       - name: Список
@@ -3847,9 +3847,9 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-update.md
-                  - name: Тип профиля регистрации владельца устройства Android
+                  - name: Android типа профиля регистрации владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md
-                  - name: Конфигурация корпоративной Wi-Fi владельца устройства Android
+                  - name: Android конфигурации корпоративного Wi-Fi устройства
                     href: resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md
                     items:
                       - name: Список
@@ -3875,13 +3875,13 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-update.md
-                  - name: Глобальный прокси-сервер владельца устройства Android
+                  - name: Android глобального прокси-сервера владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerglobalproxy.md
-                  - name: Глобальная автоматическая конфигурация глобального прокси-сервера владельца устройства Android
+                  - name: Android глобальной автоматической конфигурации прокси-сервера владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md
-                  - name: Глобальный прокси-сервер владельца устройства Android direct
+                  - name: Android глобального прокси-сервера владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerglobalproxydirect.md
-                  - name: Владелец устройства Android импортирует профиль сертификата PFX
+                  - name: 'Android, импортированный владельцем устройства, профиль сертификата PFX'
                     href: resources/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile.md
                     items:
                       - name: Список
@@ -3894,31 +3894,31 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-update.md
-                  - name: Строка состояния настройки киоска владельца устройства Android
+                  - name: Android состояния киоска владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerkioskcustomizationstatusbar.md
-                  - name: Навигация по системе настройки киоска владельца устройства Android
+                  - name: Android навигации по системе настройки киоска владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerkioskcustomizationsystemnavigation.md
-                  - name: Приложение режима терминала владельца устройства Android
+                  - name: Android в режиме киоска владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodeapp.md
-                  - name: Элемент положения приложения в режиме киоска владельца устройства Android
+                  - name: Android позиции приложения владельца устройства в режиме киоска
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodeapppositionitem.md
-                  - name: Значок папки режима терминала владельца устройства Android
+                  - name: Android папки режима терминала владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md
-                  - name: Элемент папки режима терминала владельца устройства Android
+                  - name: Android элемента папки режима киоска владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodefolderitem.md
-                  - name: Элемент начального экрана режима терминала владельца устройства Android
+                  - name: Android начального экрана в режиме терминала владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodehomescreenitem.md
-                  - name: Размер значка режима киоска владельца устройства Android
+                  - name: Android размера значка режима киоска владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md
-                  - name: Управляемая папка в режиме терминала владельца устройства Android
+                  - name: Android управляемой папке в режиме киоска владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodemanagedfolder.md
-                  - name: Справочник по управляемым папкам в режиме терминала владельца устройства Android
+                  - name: Android справочник по управляемым папкам в режиме киоска владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodemanagedfolderreference.md
-                  - name: Ориентация экрана в режиме терминала владельца устройства Android
+                  - name: Android ориентации экрана в режиме киоска владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodescreenorientation.md
-                  - name: Веб-ссылка режима киоска владельца устройства Android
+                  - name: Android веб-ссылки в режиме киоска владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodeweblink.md
-                  - name: Профиль сертификата PKCS владельца устройства Android
+                  - name: Android PKCS-сертификата владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md
                     items:
                       - name: Список
@@ -3931,13 +3931,13 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-update.md
-                  - name: Режим магазина воспроизведения владельца устройства Android
+                  - name: Android в режиме хранилища воспроизведения владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerplaystoremode.md
                   - name: Требуемый тип пароля для владельца устройства с Android
                     href: resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md
-                  - name: Владельцу устройства Android требуется разблокировка пароля
+                  - name: Android владельца устройства требуется разблокировка пароля
                     href: resources/intune-deviceconfig-androiddeviceownerrequiredpasswordunlock.md
-                  - name: Профиль сертификата SCEP владельца устройства Android
+                  - name: Android сертификата SCEP владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md
                     items:
                       - name: Список
@@ -3950,11 +3950,11 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-update.md
-                  - name: Период зависания обновления системы владельцем устройства Android
+                  - name: Android зависания системных обновлений владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownersystemupdatefreezeperiod.md
                   - name: Тип установки системного обновления для владельца устройства с Android
                     href: resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md
-                  - name: Доверенный корневой сертификат владельца устройства Android
+                  - name: Android доверенного корневого сертификата владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md
                     items:
                       - name: Список
@@ -3967,11 +3967,11 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-update.md
-                  - name: Сообщение о пользователе владельца устройства Android
+                  - name: Android с сообщением владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceowneruserfacingmessage.md
-                  - name: Тип виртуальной кнопки домашней кнопки владельца устройства Android
+                  - name: Android виртуальной домашней кнопки владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md
-                  - name: Конфигурация VPN владельца устройства Android
+                  - name: Android конфигурации VPN владельца устройства
                     href: resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md
                     items:
                       - name: Список
@@ -4259,11 +4259,11 @@ items:
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-update.md
-                  - name: Требуемая сложность пароля для Android
+                  - name: Android сложность пароля
                     href: resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md
                   - name: Требуемый тип пароля для Android
                     href: resources/intune-deviceconfig-androidrequiredpasswordtype.md
-                  - name: Тип оценки Android safety net
+                  - name: Android типа оценки safety net
                     href: resources/intune-deviceconfig-androidsafetynetevaluationtype.md
                   - name: Профиль сертификата SCEP для Android
                     href: resources/intune-deviceconfig-androidscepcertificateprofile.md
@@ -5586,7 +5586,7 @@ items:
                     href: resources/intune-deviceconfig-internetexplorermessagesetting.md
                   - name: Уровень безопасности сайта в Интернете
                     href: resources/intune-deviceconfig-internetsitesecuritylevel.md
-                  - name: Расширение единого входа в iOS Azure AD
+                  - name: iOS расширения единого входа Azure AD
                     href: resources/intune-deviceconfig-iosazureadsinglesignonextension.md
                   - name: Закладка iOS
                     href: resources/intune-deviceconfig-iosbookmark.md
@@ -5617,7 +5617,7 @@ items:
                         href: api/intune-deviceconfig-ioscompliancepolicy-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-ioscompliancepolicy-update.md
-                  - name: Расширение единого входа учетных данных iOS
+                  - name: iOS единого входа учетных данных
                     href: resources/intune-deviceconfig-ioscredentialsinglesignonextension.md
                   - name: Настраиваемая конфигурация для iOS
                     href: resources/intune-deviceconfig-ioscustomconfiguration.md
@@ -5632,7 +5632,7 @@ items:
                         href: api/intune-deviceconfig-ioscustomconfiguration-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-ioscustomconfiguration-update.md
-                  - name: Конфигурация проверки подлинности производных учетных данных iOS
+                  - name: iOS конфигурации проверки подлинности производных учетных данных
                     href: resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md
                     items:
                       - name: Список
@@ -5712,7 +5712,7 @@ items:
                         href: api/intune-deviceconfig-iosenterprisewificonfiguration-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-iosenterprisewificonfiguration-update.md
-                  - name: Конфигурация ускоренной проверки iOS
+                  - name: iOS конфигурации ускоренной проверки
                     href: resources/intune-deviceconfig-iosexpeditedcheckinconfiguration.md
                     items:
                       - name: Список
@@ -5761,15 +5761,15 @@ items:
                         href: api/intune-deviceconfig-iosimportedpfxcertificateprofile-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-iosimportedpfxcertificateprofile-update.md
-                  - name: Расширение единого входа kerberos для iOS
+                  - name: iOS расширения единого входа Kerberos
                     href: resources/intune-deviceconfig-ioskerberossinglesignonextension.md
-                  - name: Тип приложения в режиме киоска iOS
+                  - name: iOS типа приложения в режиме киоска
                     href: resources/intune-deviceconfig-ioskioskmodeapptype.md
                   - name: Правило использование сети iOS
                     href: resources/intune-deviceconfig-iosnetworkusagerule.md
                   - name: Тип оповещений об уведомлениях iOS
                     href: resources/intune-deviceconfig-iosnotificationalerttype.md
-                  - name: Видимость предварительного просмотра уведомлений iOS
+                  - name: iOS предварительного просмотра уведомлений
                     href: resources/intune-deviceconfig-iosnotificationpreviewvisibility.md
                   - name: Параметры уведомлений iOS
                     href: resources/intune-deviceconfig-iosnotificationsettings.md
@@ -5786,7 +5786,7 @@ items:
                         href: api/intune-deviceconfig-iospkcscertificateprofile-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-iospkcscertificateprofile-update.md
-                  - name: Расширение единого входа перенаправления iOS
+                  - name: iOS единого входа перенаправления
                     href: resources/intune-deviceconfig-iosredirectsinglesignonextension.md
                   - name: Профиль сертификатов SCEP для iOS
                     href: resources/intune-deviceconfig-iosscepcertificateprofile.md
@@ -5801,11 +5801,11 @@ items:
                         href: api/intune-deviceconfig-iosscepcertificateprofile-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-iosscepcertificateprofile-update.md
-                  - name: Расширение единого входа iOS
+                  - name: iOS расширения единого входа
                     href: resources/intune-deviceconfig-iossinglesignonextension.md
                   - name: Параметры единого входа iOS
                     href: resources/intune-deviceconfig-iossinglesignonsettings.md
-                  - name: Тип расписания обновления программного обеспечения iOS
+                  - name: iOS типа расписания обновления программного обеспечения
                     href: resources/intune-deviceconfig-iossoftwareupdatescheduletype.md
                   - name: Доверенный корневой сертификат для iOS
                     href: resources/intune-deviceconfig-iostrustedrootcertificate.md
@@ -5861,7 +5861,7 @@ items:
                         href: api/intune-deviceconfig-iosvpnconfiguration-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-iosvpnconfiguration-update.md
-                  - name: Параметры сопоставления безопасности VPN для iOS
+                  - name: iOS параметров связи безопасности VPN
                     href: resources/intune-deviceconfig-iosvpnsecurityassociationparameters.md
                   - name: место отображения фонового рисунка iOS
                     href: resources/intune-deviceconfig-ioswallpaperdisplaylocation.md
@@ -5935,11 +5935,11 @@ items:
                     href: resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md
                   - name: 'Локальные параметры безопасности: режим отображения запроса для повышения прав стандартного пользователя'
                     href: resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md
-                  - name: Приемник событий apple macOS
+                  - name: macOS приемник событий Apple
                     href: resources/intune-deviceconfig-macosappleeventreceiver.md
-                  - name: Элемент связанных доменов macOS
+                  - name: macOS связанных доменов
                     href: resources/intune-deviceconfig-macosassociateddomainsitem.md
-                  - name: Расширение единого входа в macOS Azure AD
+                  - name: macOS расширения единого входа Azure AD
                     href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
                   - name: База профилей сертификатов для macOS
                     href: resources/intune-deviceconfig-macoscertificateprofilebase.md
@@ -5961,17 +5961,17 @@ items:
                         href: api/intune-deviceconfig-macoscompliancepolicy-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-macoscompliancepolicy-update.md
-                  - name: Политика клиента кэширования содержимого macOS
+                  - name: macOS клиентской политики кэширования содержимого
                     href: resources/intune-deviceconfig-macoscontentcachingclientpolicy.md
-                  - name: Родительская политика выбора кэширования содержимого macOS
+                  - name: macOS родительской политики выбора кэширования содержимого
                     href: resources/intune-deviceconfig-macoscontentcachingparentselectionpolicy.md
-                  - name: Политика однорангового кэширования содержимого macOS
+                  - name: macOS одноранговой политики кэширования содержимого
                     href: resources/intune-deviceconfig-macoscontentcachingpeerpolicy.md
-                  - name: Тип кэширования содержимого macOS
+                  - name: macOS кэширования содержимого
                     href: resources/intune-deviceconfig-macoscontentcachingtype.md
-                  - name: Расширение единого входа учетных данных macOS
+                  - name: macOS единого входа учетных данных
                     href: resources/intune-deviceconfig-macoscredentialsinglesignonextension.md
-                  - name: Настройка пользовательского приложения macOS
+                  - name: macOS настраиваемой конфигурации приложения
                     href: resources/intune-deviceconfig-macoscustomappconfiguration.md
                     items:
                       - name: Список
@@ -6036,7 +6036,7 @@ items:
                         href: api/intune-deviceconfig-macosenterprisewificonfiguration-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-macosenterprisewificonfiguration-update.md
-                  - name: Конфигурация расширений macOS
+                  - name: macOS расширения
                     href: resources/intune-deviceconfig-macosextensionsconfiguration.md
                     items:
                       - name: Список
@@ -6049,7 +6049,7 @@ items:
                         href: api/intune-deviceconfig-macosextensionsconfiguration-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-macosextensionsconfiguration-update.md
-                  - name: Типы ключей восстановления хранилища файлов macOS
+                  - name: macOS типов ключей восстановления хранилища файлов
                     href: resources/intune-deviceconfig-macosfilevaultrecoverykeytypes.md
                   - name: Приложение брандмауэра macOS
                     href: resources/intune-deviceconfig-macosfirewallapplication.md
@@ -6081,13 +6081,13 @@ items:
                         href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-update.md
-                  - name: Расширение единого входа kerberos для macOS
+                  - name: macOS расширения единого входа Kerberos
                     href: resources/intune-deviceconfig-macoskerberossinglesignonextension.md
-                  - name: Расширение ядра macOS
+                  - name: macOS ядра
                     href: resources/intune-deviceconfig-macoskernelextension.md
-                  - name: Элемент запуска macOS
+                  - name: macOS запуска
                     href: resources/intune-deviceconfig-macoslaunchitem.md
-                  - name: Профиль сертификата PKCS для macOS
+                  - name: macOS профиля сертификата PKCS
                     href: resources/intune-deviceconfig-macospkcscertificateprofile.md
                     items:
                       - name: Список
@@ -6100,11 +6100,11 @@ items:
                         href: api/intune-deviceconfig-macospkcscertificateprofile-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-macospkcscertificateprofile-update.md
-                  - name: Элемент управления доступом к конфиденциальности macOS
+                  - name: macOS элемента управления доступом к конфиденциальности
                     href: resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md
-                  - name: Тип идентификатора процесса macOS
+                  - name: macOS типа идентификатора процесса
                     href: resources/intune-deviceconfig-macosprocessidentifiertype.md
-                  - name: Расширение единого входа перенаправления macOS
+                  - name: macOS расширения единого входа перенаправления
                     href: resources/intune-deviceconfig-macosredirectsinglesignonextension.md
                   - name: Профиль сертификата SCEP для macOS
                     href: resources/intune-deviceconfig-macosscepcertificateprofile.md
@@ -6119,9 +6119,9 @@ items:
                         href: api/intune-deviceconfig-macosscepcertificateprofile-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-macosscepcertificateprofile-update.md
-                  - name: Расширение единого входа macOS
+                  - name: macOS расширения единого входа
                     href: resources/intune-deviceconfig-macossinglesignonextension.md
-                  - name: Сводка по учетной записи обновления программного обеспечения macOS
+                  - name: macOS учетной записи обновления программного обеспечения
                     href: resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md
                     items:
                       - name: Список
@@ -6134,11 +6134,11 @@ items:
                         href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-update.md
-                  - name: Поведение при обновлении программного обеспечения macOS
+                  - name: macOS обновления программного обеспечения
                     href: resources/intune-deviceconfig-macossoftwareupdatebehavior.md
-                  - name: Категория обновления программного обеспечения macOS
+                  - name: macOS категории обновлений программного обеспечения
                     href: resources/intune-deviceconfig-macossoftwareupdatecategory.md
-                  - name: Сводка по категориям обновлений программного обеспечения macOS
+                  - name: macOS категории обновления программного обеспечения
                     href: resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md
                     items:
                       - name: Список
@@ -6151,7 +6151,7 @@ items:
                         href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-update.md
-                  - name: Конфигурация обновления программного обеспечения macOS
+                  - name: macOS конфигурации обновления программного обеспечения
                     href: resources/intune-deviceconfig-macossoftwareupdateconfiguration.md
                     items:
                       - name: Список
@@ -6164,13 +6164,13 @@ items:
                         href: api/intune-deviceconfig-macossoftwareupdateconfiguration-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-macossoftwareupdateconfiguration-update.md
-                  - name: Политика задержки обновления программного обеспечения macOS
+                  - name: macOS политики задержки обновления программного обеспечения
                     href: resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md
-                  - name: Тип расписания обновления программного обеспечения macOS
+                  - name: macOS типа расписания обновления программного обеспечения
                     href: resources/intune-deviceconfig-macossoftwareupdatescheduletype.md
-                  - name: Состояние обновления программного обеспечения macOS
+                  - name: macOS состояния обновления программного обеспечения
                     href: resources/intune-deviceconfig-macossoftwareupdatestate.md
-                  - name: Сводка состояния обновления программного обеспечения macOS
+                  - name: macOS состояния обновления программного обеспечения
                     href: resources/intune-deviceconfig-macossoftwareupdatestatesummary.md
                     items:
                       - name: Список
@@ -6183,11 +6183,11 @@ items:
                         href: api/intune-deviceconfig-macossoftwareupdatestatesummary-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-macossoftwareupdatestatesummary-update.md
-                  - name: Системное расширение macOS
+                  - name: macOS системного расширения
                     href: resources/intune-deviceconfig-macossystemextension.md
-                  - name: Тип расширения системы macOS
+                  - name: macOS системного расширения
                     href: resources/intune-deviceconfig-macossystemextensiontype.md
-                  - name: Сопоставление типов расширений системы macOS
+                  - name: macOS сопоставление типов расширений системы
                     href: resources/intune-deviceconfig-macossystemextensiontypemapping.md
                   - name: Доверенный корневой сертификат для macOS
                     href: resources/intune-deviceconfig-macostrustedrootcertificate.md
@@ -6228,7 +6228,7 @@ items:
                         href: api/intune-deviceconfig-macoswificonfiguration-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-macoswificonfiguration-update.md
-                  - name: Конфигурация проводной сети macOS
+                  - name: macOS проводной сети
                     href: resources/intune-deviceconfig-macoswirednetworkconfiguration.md
                     items:
                       - name: Список
@@ -8751,7 +8751,7 @@ items:
                     href: resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md
                   - name: Тип аттестации устройства системы безопасности для управляемых приложений для Android
                     href: resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md
-                  - name: Тип оценки для сети безопасности управляемых приложений Android
+                  - name: Android типа оценки сети безопасности управляемого приложения
                     href: resources/intune-mam-androidmanagedappsafetynetevaluationtype.md
                   - name: Идентификатор мобильных приложений для Android
                     href: resources/intune-mam-androidmobileappidentifier.md
@@ -9522,7 +9522,7 @@ items:
                     href: resources/intune-shared-alldevicesassignmenttarget.md
                   - name: Объект назначения всех лицензированных пользователей
                     href: resources/intune-shared-alllicensedusersassignmenttarget.md
-                  - name: Тип пакета VPN для Android enterprise always on
+                  - name: Android корпоративный всегда на типе пакета VPN
                     href: resources/intune-shared-androidenterprisealwaysonvpnpackagetype.md
                   - name: Защита управляемых приложений для Android
                     href: resources/intune-shared-androidmanagedappprotection.md
@@ -9539,9 +9539,9 @@ items:
                         href: api/intune-shared-androidmanagedappprotection-update.md
                       - name: Действие hasPayloadLinks
                         href: api/intune-shared-androidmanagedappprotection-haspayloadlinks.md
-                  - name: Параметры назначения приложений в управляемом магазине Android
+                  - name: Android параметров назначения приложений управляемого магазина
                     href: resources/intune-shared-androidmanagedstoreappassignmentsettings.md
-                  - name: Режим автоматического обновления управляемого магазина Android
+                  - name: Android автоматического обновления управляемого хранилища
                     href: resources/intune-shared-androidmanagedstoreautoupdatemode.md
                   - name: Целевое хранилище сертификатов
                     href: resources/intune-shared-certificatedestinationstore.md
@@ -9735,7 +9735,7 @@ items:
                     href: resources/intune-shared-keystorageprovideroption.md
                   - name: Использование ключей
                     href: resources/intune-shared-keyusages.md
-                  - name: Параметры назначения бизнес-приложения macOS
+                  - name: macOS параметров назначения бизнес-приложения
                     href: resources/intune-shared-macoslobappassignmentsettings.md
                   - name: 'Настройки назначения приложения macOS, приобретенного по программе VPP'
                     href: resources/intune-shared-macosvppappassignmentsettings.md
@@ -11649,9 +11649,9 @@ items:
                         href: api/phoneauthenticationmethod-delete.md
                       - name: Добавление
                         href: api/authentication-post-phonemethods.md
-                      - name: Включение входа с помощью SMS
+                      - name: Включение SMS входа
                         href: api/phoneauthenticationmethod-enablesmssignin.md
-                      - name: Отключение входа с помощью SMS
+                      - name: Отключение SMS входа
                         href: api/phoneauthenticationmethod-disablesmssignin.md
                   - name: Электронная почта
                     href: resources/emailauthenticationmethod.md
@@ -12275,11 +12275,11 @@ items:
                     href: api/trustframeworkkeyset-generatekey.md
                   - name: Получение активного ключа
                     href: api/trustframeworkkeyset-getactivekey.md
-                  - name: Upload сертификата
+                  - name: Отправка сертификата
                     href: api/trustframeworkkeyset-uploadcertificate.md
-                  - name: Upload PKCS12
+                  - name: Отправка сертификата PKCS12
                     href: api/trustframeworkkeyset-uploadpkcs12.md
-                  - name: Upload секрета
+                  - name: Отправка секрета
                     href: api/trustframeworkkeyset-uploadsecret.md
               - name: Политика инфраструктуры доверия
                 href: resources/trustframeworkpolicy.md
@@ -12436,7 +12436,7 @@ items:
                         href: api/identityapiconnector-get.md
                       - name: Обновление
                         href: api/identityapiconnector-update.md
-                      - name: Upload сертификат клиента
+                      - name: Отправка сертификата клиента
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Удалить
                         href: api/identityapiconnector-delete.md
@@ -13597,9 +13597,9 @@ items:
           - name: Аналитика (предварительная версия)
             href: resources/useranalytics.md
             items:
-              - name: Параметры
+              - name: Settings
                 items:
-                  - name: Параметры
+                  - name: Settings
                     href: resources/settings.md
                   - name: Получение параметров
                     href: api/useranalytics-get-settings.md
@@ -14182,6 +14182,12 @@ items:
                     href: api/externalconnectors-externalgroup-post-members.md
                   - name: Удалить
                     href: api/externalconnectors-externalgroupmember-delete.md
+              - name: Квота подключения
+                items:
+                  - name: Квота подключения
+                    href: resources/externalconnectors-connectionquota.md
+                  - name: Получение
+                    href: api/externalconnectors-connectionquota-get.md
       - name: Безопасность
         displayname: 'Security API, Microsoft Graph Security API'
         items:
@@ -14375,7 +14381,7 @@ items:
                 href: api/site-list-operations.md
               - name: Получение параметров сайта
                 href: api/sitesettings-get.md
-              - name: Permissions
+              - name: Разрешения
                 items:
                   - name: Разрешение
                     href: resources/permission.md
@@ -14572,7 +14578,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -15002,7 +15008,7 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: Удаление приложения из чата
                     href: api/chat-delete-installedapps.md
-          - name: Device
+          - name: Устройство
             items:
               - name: Подготовленные устройства
                 href: resources/teamworkdevice.md

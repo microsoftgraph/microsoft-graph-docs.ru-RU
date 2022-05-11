@@ -4,13 +4,13 @@ description: Сделайте назначение роли постоянным
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 1d37c53633b41ca729de856d2eaedd8b3325fd18
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+author: japere
+ms.openlocfilehash: e9069d820d85a2b228192a997c70dfbfee0505b9
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340134"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65314276"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment: makePermanent
 
@@ -18,16 +18,16 @@ ms.locfileid: "62340134"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 Сделайте назначение роли постоянным.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
-Клиент должен быть зарегистрирован в PIM. В противном случае будет возвращена ошибка http 403 Forbidden.
+Клиент должен быть зарегистрирован в PIM. В противном случае будет возвращена ошибка HTTP 403 Forbidden.
 
-Запросчику должна быть роль _администратора привилегированных_ ролей. 
+Инициатор запроса должен иметь роль _администратора привилегированных_ ролей. 
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -50,13 +50,13 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|reason|string|Необязательный параметр. Причина для этого вызова.|
-|ticketNumber|string|Необязательный параметр. Номер билета, связанный с этим действием.|
-|ticketSystem|string|Необязательный параметр. Система билетов.|
+|reason|string|Необязательный параметр. Причина для выполнения этого вызова.|
+|ticketNumber|string|Необязательный параметр. Номер билета, связанного с этим действием.|
+|ticketSystem|string|Необязательный параметр. Система запросов.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот `200 OK` метод возвращает код ответа и объект [privilegedRoleAssignment](../resources/privilegedroleassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [privilegedRoleAssignment](../resources/privilegedroleassignment.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

@@ -1,28 +1,30 @@
 ---
-title: Получить accessReview
-description: В функции обзоров доступа Azure AD извлекаем объект accessReview.
+title: Получение accessReview
+description: В Azure AD проверки доступа получите объект accessReview.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6a5d14aa63b523d5bd0b3fd9846b96eae055d1a3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 50f3ba903b15db5e2cee1972d0629127e14926f7
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104023"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65314514"
 ---
-# <a name="get-accessreview"></a>Получить accessReview
+# <a name="get-accessreview"></a>Получение accessReview
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) извлекаем [объект accessReview.](../resources/accessreview.md)  
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Для получения рецензентов обзора доступа используйте API [рецензентов списка accessReview.](accessreview-listreviewers.md) Чтобы получить решения обзора доступа, используйте API решений [accessReview](accessreview-listdecisions.md) или список API решений [accessReview.](accessreview-listmydecisions.md)
+В Azure AD [проверки доступа](../resources/accessreviews-root.md) получите [объект accessReview](../resources/accessreview.md).  
 
-Если это повторяющийся обзор доступа, никакие решения не будут связаны с повторяющимися сериями обзоров доступа. Вместо этого используйте связь этой серии для получения `instances` [коллекции accessReview](../resources/accessreview.md) прошлых, текущих и будущих экземпляров обзора доступа. Каждый прошлый и текущий экземпляр будут иметь решения.
+Чтобы получить рецензентов проверки доступа, используйте API рецензентов [accessReview списка](accessreview-listreviewers.md) . Чтобы получить решения проверки доступа, используйте API принятия решений [accessReview](accessreview-listdecisions.md) списка или список API решений [accessReview](accessreview-listmydecisions.md) .
+
+Если это повторяющаяся проверка доступа, никакие решения не будут связаны с циклом повторяющихся проверок доступа. Вместо этого используйте связь `instances` этого ряда, чтобы получить коллекцию [accessReview](../resources/accessreview.md) прошлых, текущих и будущих экземпляров проверки доступа. Решения будут приниматься для каждого из прошлых и текущих экземпляров.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -33,7 +35,7 @@ ms.locfileid: "62104023"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership  |
 
-Чтобы вызвать этот API, подписанный пользователем должен также быть в роли каталога, который позволяет ему читать обзор доступа, или пользователь может быть назначен в качестве рецензента в обзоре доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviews-root.md)
+Чтобы вызвать этот API, пользователь, выполнив вход, также должен быть в роли каталога, которая позволяет ему читать проверку доступа, или пользователь может быть назначен в качестве рецензента при проверке доступа.  Дополнительные сведения см. в разделе о требованиях к роли и разрешениям для [проверок доступа](../resources/accessreviews-root.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,11 +47,11 @@ GET /accessReviews/{reviewId}
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект accessReview](../resources/accessreview.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [accessReview](../resources/accessreview.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -135,11 +137,11 @@ Content-type: application/json
 ## <a name="see-also"></a>См. также
 
 - [Создание accessReview](accessreview-create.md)
-- [AccessReviews списка](accessreview-list.md)
-- [List programControls](programcontrol-list.md)
-- [Рецензенты списка accessReview](accessreview-listreviewers.md)
-- [Списки решений accessReview](accessreview-listdecisions.md)
-- [Список решений accessReview](accessreview-listmydecisions.md)
+- [Перечисление объектов accessReview](accessreview-list.md)
+- [Перечисление объектов programControls](programcontrol-list.md)
+- [Перечисление рецензентов accessReview](accessreview-listreviewers.md)
+- [Вывод списка решений accessReview](accessreview-listdecisions.md)
+- [Вывод списка решений accessReview](accessreview-listmydecisions.md)
 
 
 <!--

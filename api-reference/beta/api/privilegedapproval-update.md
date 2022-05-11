@@ -4,13 +4,13 @@ description: Обновление свойств объекта privilegedapprov
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 522cf6dfab49dd282208ac56bf327d44de838e17
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+author: japere
+ms.openlocfilehash: a431b5fa873cce61fd4b53219f8de09f6729ea64
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671442"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65315482"
 ---
 # <a name="update-privilegedapproval"></a>Обновление privilegedapproval
 
@@ -48,7 +48,7 @@ PATCH /privilegedApproval/{id}
 |:---------------|:--------|:----------|
 |approvalDuration|Длительность||
 |approvalState|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvalType|Строка||
+|approvalType|String||
 |approverReason|String||
 |endDateTime|DateTimeOffset||
 |requestorReason|String||
@@ -58,9 +58,9 @@ PATCH /privilegedApproval/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `204 No Content` ответа
+В случае успешного выполнения этот метод возвращает код `204 No Content` ответа.
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае возвращается код состояния HTTP 403 Forbidden.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

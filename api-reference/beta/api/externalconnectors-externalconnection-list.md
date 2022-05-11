@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 2d6f89c7a166d038de17c4d2628fe7d2f44df538
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: dc89c112ec15627ff01b6640c9264f519483c41f
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133512"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65314587"
 ---
 # <a name="list-connections"></a>Перечисление подключений
 
@@ -26,8 +26,8 @@ ms.locfileid: "65133512"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -62,7 +62,6 @@ GET /external/connections
 
 Ниже приведен пример запроса.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_connections"
@@ -71,32 +70,6 @@ GET /external/connections
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/connections
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-connections-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-connections-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-connections-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-connections-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-connections-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-connections-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="response"></a>Отклик
@@ -122,6 +95,7 @@ Content-type: application/json
       "name": "Contoso HR",
       "description": "Connection to index Contoso HR system",
       "state": "ready",
+      "ingestedItemsCount": 700000,
       "configuration": {
         "authorizedAppIds": [
           "d310d35d-72ec-47dd-92f2-fb9c40936555"
@@ -133,6 +107,7 @@ Content-type: application/json
       "name": "Contoso Finance",
       "description": "Connection to index Contoso Finance system",
       "state": "ready",
+      "ingestedItemsCount": 700000,
       "configuration": {
         "authorizedAppIds": [
           "fbdc7d4e-07f4-4143-8258-e5a2fcebeadb"

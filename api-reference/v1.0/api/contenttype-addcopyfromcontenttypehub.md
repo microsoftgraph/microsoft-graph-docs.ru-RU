@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: c19aa0813e8bf7a5fa59fd87e9023a1ea605318c
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: 975957cb1dca96e074b9012dc7f6d2d7fa948271
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191882"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65315929"
 ---
 # <a name="contenttype-addcopyfromcontenttypehub"></a>contentType: addCopyFromContentTypeHub
 Пространство имен: microsoft.graph
@@ -53,11 +53,11 @@ POST /sites/{siteId}/contentTypes/addCopyFromContentTypeHub
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|contentTypeId|Строка| Идентификатор типа контента в центре типов контента, который будет добавлен на целевой сайт или в список.|
+|contentTypeId|String| Идентификатор типа контента в центре типов контента, который будет добавлен на целевой сайт или в список.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 `200 OK` В случае успешного выполнения это действие возвращает код отклика и объект [contentType](../resources/contenttype.md) `202 Accepted` в тексте ответа, если тип контента добавляется синхронно, или код ответа, если тип контента будет синхронно синхронизирован. Ответ также будет содержать `Location` заголовок, содержащий расположение [объекта richLongRunningOperation](../resources/richlongrunningoperation.md) , созданного для обработки операции копирования и синхронизации. В случае асинхронной операции синхронизация или добавление типа контента может занять до 70 минут.
 
@@ -71,6 +71,8 @@ POST /sites/{siteId}/contentTypes/addCopyFromContentTypeHub
 
 Ниже приведен пример синхронной операции.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_addcopyfromcontenttypehub"
@@ -85,8 +87,30 @@ Content-length: 33
   "contentTypeId": "0x0101"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-addcopyfromcontenttypehub-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a>Ответ
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-addcopyfromcontenttypehub-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-addcopyfromcontenttypehub-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-addcopyfromcontenttypehub-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-addcopyfromcontenttypehub-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -136,7 +160,7 @@ Content-length: 33
 ```
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

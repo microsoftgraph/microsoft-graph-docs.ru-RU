@@ -1,16 +1,16 @@
 ---
 title: Получение privilegedRoleSummary
-description: Извлечение свойств и связей объекта privilegedRoleSummary.
+description: Получение свойств и связей объекта privilegedRoleSummary.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 13957f9519f575d9542d331678ce7fde461c8a70
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+author: japere
+ms.openlocfilehash: 34aaebfd36fec82bc4c214716f6aa8bf7134a009
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137010"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65316421"
 ---
 # <a name="get-privilegedrolesummary"></a>Получение privilegedRoleSummary
 
@@ -18,9 +18,9 @@ ms.locfileid: "62137010"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Извлечение свойств и связей объекта [privilegedRoleSummary.](../resources/privilegedrolesummary.md)
+Получение свойств и связей объекта [privilegedRoleSummary](../resources/privilegedrolesummary.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -44,14 +44,14 @@ GET /privilegedRoles/{id}?$expand=summary
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [privilegedRoleSummary](../resources/privilegedrolesummary.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [privilegedRoleSummary](../resources/privilegedrolesummary.md) в тексте отклика.
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае возвращается код состояния HTTP 403 Forbidden.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

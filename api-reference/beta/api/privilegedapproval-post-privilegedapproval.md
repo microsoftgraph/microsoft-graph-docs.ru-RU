@@ -1,16 +1,16 @@
 ---
 title: Создание privilegedApproval
-description: Используйте этот API для создания нового привилегированногоApproval.
+description: Используйте этот API для создания нового privilegedApproval.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 1613da269d527065059fdf3ddee9c6d1b6d1f7b3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+author: japere
+ms.openlocfilehash: 0fa39e7332279fda504b4d8f9563ff1f2dd713d6
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62112243"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65314816"
 ---
 # <a name="create-privilegedapproval"></a>Создание privilegedApproval
 
@@ -18,9 +18,9 @@ ms.locfileid: "62112243"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Используйте этот API для создания нового привилегированногоApproval.
+Используйте этот API для создания нового privilegedApproval.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -42,14 +42,14 @@ POST /privilegedApproval
 |:---------------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-В теле запроса поставляем представление JSON объекта [privilegedApproval.](../resources/privilegedapproval.md)
+## <a name="request-body"></a>Текст запроса
+В тексте запроса добавьте представление объекта [privilegedApproval](../resources/privilegedapproval.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект privilegedApproval](../resources/privilegedapproval.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и [объект privilegedApproval](../resources/privilegedapproval.md) в тексте отклика.
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае возвращается код состояния HTTP 403 Forbidden.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -98,7 +98,7 @@ Content-type: application/json
 
 ---
 
-В теле запроса поставляем представление JSON объекта [privilegedApproval.](../resources/privilegedapproval.md)
+В тексте запроса добавьте представление объекта [privilegedApproval](../resources/privilegedapproval.md) в формате JSON.
 ##### <a name="response"></a>Отклик
 Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {

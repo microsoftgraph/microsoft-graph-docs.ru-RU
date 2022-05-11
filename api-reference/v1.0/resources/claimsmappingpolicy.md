@@ -1,46 +1,46 @@
 ---
-title: тип ресурса claimsMappingPolicy
-description: Представляет политики сопоставления утверждений для протоколов WS-Fed, SAML, OAuth 2.0 и OpenID Подключение для маркеров, выдаваемого конкретному приложению.
+title: Тип ресурса claimsMappingPolicy
+description: Представляет политики сопоставления утверждений для протоколов WS-Fed, SAML, OAuth 2.0 и OpenID Подключение для маркеров, выданных конкретному приложению.
 ms.localizationpriority: medium
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b61a1288a397a3894b39f05aab695f24d8317a3a
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: b29c1c6bfd9fa3ac92b682e4a902aeda328230c0
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335068"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65315225"
 ---
-# <a name="claimsmappingpolicy-resource-type"></a>тип ресурса claimsMappingPolicy
+# <a name="claimsmappingpolicy-resource-type"></a>Тип ресурса claimsMappingPolicy
 
 Пространство имен: microsoft.graph
 
-Представляет политики сопоставления утверждений для протоколов WS-Fed, SAML, OAuth 2.0 и OpenID Подключение для маркеров, выдаваемого конкретному приложению. Политики сопоставления утверждений можно использовать для:
+Представляет политики сопоставления утверждений для протоколов WS-Fed, SAML, OAuth 2.0 и OpenID Подключение для маркеров, выданных конкретному приложению. Политики сопоставления утверждений можно использовать для:
 
-- Выберите, какие утверждения включены в маркеры
+- Выбор утверждений, включенных в маркеры
 - Создание типов утверждений, которые еще не существуют
-- Выберите или измените источник данных, излучаемый в определенных утверждениях  
+- Выбор или изменение источника данных, выдаваемого в определенных утверждениях  
 
-Количество утверждений и преобразований, которые можно добавить в политику сопоставления утверждений, ограничено для уменьшения размера маркера. Все записи схемы утверждений или преобразования, которые встречаются после того, как предел был достигнут, игнорируются и включаются в выданный маркер. Дополнительные сведения об ограничениях см. в дополнительных сведениях о свойствах определения политики сопоставления [утверждений](#properties-of-a-claims-mapping-policy-definition)
+Количество утверждений и преобразований, которые можно добавить в политику сопоставления утверждений, ограничено уменьшением размера маркера. Все записи схемы утверждений или преобразования, обнаруженные после предела, игнорируются и включаются в выданный токен. Дополнительные сведения об ограничениях см. в разделе ["Свойства определения политики сопоставления утверждений".](#properties-of-a-claims-mapping-policy-definition)
 
-Дополнительные сведения о сценарии и конфигурации см. в материале [How to: Customize claims emitted in tokens for a specific app in a tenant](/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties).
+Дополнительные сведения о сценарии и конфигурации см. в разделах "Тип политики сопоставления утверждений" и "Практическое руководство. Настройка утверждений, создаваемых в маркерах для конкретного приложения [в клиенте"](/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties).[](/azure/active-directory/develop/reference-claims-mapping-policy-type)
 
-Наследует [от stsPolicy](stsPolicy.md).
+Наследуется от [stsPolicy](stsPolicy.md).
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание claimsMappingPolicy](../api/claimsmappingpolicy-post-claimsmappingpolicies.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Создание объекта claimsMappingPolicy. |
-| [Get claimsMappingPolicy](../api/claimsmappingpolicy-get.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Чтение свойств и связей объекта claimsMappingPolicy. |
+| [Создание claimsMappingPolicy](../api/claimsmappingpolicy-post-claimsmappingpolicies.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Создайте объект claimsMappingPolicy. |
+| [Получение claimsMappingPolicy](../api/claimsmappingpolicy-get.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Чтение свойств и связей объекта claimsMappingPolicy. |
 | [Перечисление типов ресурсов claimsMappingPolicy](../api/claimsmappingpolicy-list.md) | [claimsMappingPolicy](claimsmappingpolicy.md) | Чтение свойств и связей объектов claimsMappingPolicies. |
-| [Обновление утвержденийMappingPolicy](../api/claimsmappingpolicy-update.md) | Нет | Обновление объекта claimsMappingPolicy. |
-| [Удаление утвержденийMappingPolicy](../api/claimsmappingpolicy-delete.md) | Нет | Удаление объекта claimsMappingPolicy. |
+| [Обновление claimsMappingPolicy](../api/claimsmappingpolicy-update.md) | Нет | Обновление объекта claimsMappingPolicy. |
+| [Удаление claimsMappingPolicy](../api/claimsmappingpolicy-delete.md) | Нет | Удаление объекта claimsMappingPolicy. |
 | **Объекты каталога** |  |  |
-| [Список применяетсяTo](../api/claimsmappingpolicy-list-appliesto.md) | Коллекция [directoryObject](directoryobject.md) | Получите список directoryObjects, к которые была применена эта политика. |
-| [Назначение типа ресурса claimsMappingPolicy](../api/serviceprincipal-post-claimsmappingpolicies.md) | Нет | Назначьте объекту [servicePrincipal объект claimsMappingPolicy](serviceprincipal.md) . |
-| [Список присвоенных утвержденийMappingPolicy](../api/serviceprincipal-list-claimsmappingpolicies.md) | Коллекция [claimsMappingPolicy](claimsmappingpolicy.md) | Список объектов claimsMappingPolicy, которые назначены [объекту servicePrincipal](serviceprincipal.md) . |
+| [List appliesTo](../api/claimsmappingpolicy-list-appliesto.md) | Коллекция [directoryObject](directoryobject.md) | Получение списка объектов directoryObject, к которым применена эта политика. |
+| [Назначение типа ресурса claimsMappingPolicy](../api/serviceprincipal-post-claimsmappingpolicies.md) | Нет | Назначьте claimsMappingPolicy [объекту servicePrincipal](serviceprincipal.md) . |
+| [Перечисление назначенных claimsMappingPolicy](../api/serviceprincipal-list-claimsmappingpolicies.md) | Коллекция [claimsMappingPolicy](claimsmappingpolicy.md) | Список объектов claimsMappingPolicy, назначенных [объекту servicePrincipal](serviceprincipal.md) . |
 | [Удаление типа ресурса claimsMappingPolicy](../api/serviceprincipal-delete-claimsmappingpolicies.md) | Нет | Удалите claimsMappingPolicy из [объекта servicePrincipal](serviceprincipal.md) . |
 
 ## <a name="properties"></a>Свойства
@@ -48,16 +48,16 @@ ms.locfileid: "63335068"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String| Уникальный идентификатор для этой политики. Только для чтения.|
-|определение|Коллекция объектов string| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики. [Дополнительные сведения о](#properties-of-a-claims-mapping-policy-definition) схеме JSON для этого свойства см. в материале Свойства определения политики сопоставления утверждений. Обязательный.|
-|description|Строка| Описание этой политики.|
-|displayName|String| Отображение имени для этой политики. Обязательный элемент.|
-|isOrganizationDefault|Boolean|Игнорируйте это свойство. Политика сопоставления утверждений может применяться только к директорам служб и не может быть установлена глобально для организации.|
+|Определение|Коллекция String| Коллекция строк, содержащая строку JSON, которая определяет правила и параметры для этой политики. [Дополнительные сведения о схеме](#properties-of-a-claims-mapping-policy-definition) JSON для этого свойства см. в разделе "Свойства определения политики сопоставления утверждений". Обязательный.|
+|description|String| Описание этой политики.|
+|displayName|String| Отображаемое имя для этой политики. Обязательно.|
+|isOrganizationDefault|Boolean|Игнорируйте это свойство. Политика сопоставления утверждений может применяться только к субъектам-службам и не может быть глобально задана для организации.|
 
 ### <a name="properties-of-a-claims-mapping-policy-definition"></a>Свойства определения политики сопоставления утверждений
 
-Свойства, представленные ниже, формируют объект JSON, который представляет политику сопоставления утверждений. Этот объект JSON **необходимо преобразовать в** строку с кавычками, которые будут вставлены в **свойство определения** . Ниже показано несколько примеров определения:
+Приведенные ниже свойства формируют объект JSON, представляющий политику сопоставления утверждений. Этот объект JSON необходимо преобразовать **в** строку с escape-кавычками, чтобы вставить его в **свойство** определения. Ниже приведено несколько примеров определения.
 
-#### <a name="example-definition-to-include-the-employeeid-and-tenantcountry-as-claims-in-tokens"></a>Пример: **определение** для того, чтобы включить EmployeeID и TenantCountry в качестве утверждений в маркерах
+#### <a name="example-definition-to-include-the-employeeid-and-tenantcountry-as-claims-in-tokens"></a>Пример. **Определение для** включаемой EmployeeID и TenantCountry в качестве утверждений в маркеры
 <!-- {
   "blockType": "ignored"
 }-->
@@ -85,17 +85,17 @@ ms.locfileid: "63335068"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Версия|Целое число|Значение 1. Обязательный элемент.|
-|IncludeBasicClaimSet|Boolean|Если установлено, `true`все утверждения в базовом наборе утверждений излучаются в маркерах, затронутых политикой. Если установлено `false`, утверждения в базовом наборе утверждений не находятся в маркерах, если они не добавляются отдельно в свойстве ClaimsSchema той же политики.|
-|ClaimsSchema|Объект JSON|Определяет, какие утверждения присутствуют в маркерах, затронутых политикой, в дополнение к основному набору утверждений и набору основных утверждений. Для каждой записи схемы утверждения, определенной в этом свойстве, требуется определенная информация. Укажите, откуда приходят данные (пара Value или Source/ID) и какие утверждают, что данные излучаются как (Тип утверждения). Не более 50 утверждений включаются в маркер через объект ClaimsSchema. Любые записи схемы утверждений, с которыми сталкиваются после ограничения, будут проигнорированы и не будут отображаться в выданных маркерах. Дополнительные сведения доступны в [определении ClaimsSchema](/azure/active-directory/develop/active-directory-claims-mapping#claims-schema).|
-|ClaimsTransformation|Объект JSON| Определяет общие преобразования, которые можно применить к исходным данным, для создания данных вывода для утверждений, указанных в ClaimsSchema. Не более 50 преобразований включены в маркер через объект ClaimsTransformation. Любые преобразования, которые возникают после того, как лимит достигнут, будут проигнорированы и не будут отображаться в выданных маркерах. Дополнительные сведения о claimsTransformation и поддерживаемых функциях см. в этой [ссылке.](/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation)|
+|Версия|Целое число|Задайте значение 1. Обязательно.|
+|IncludeBasicClaimSet|Boolean|Если задано значение , `true`все утверждения в базовом наборе утверждений выдаются в маркерах, затронутых политикой. Если задано значение " `false`, утверждения в базовом наборе утверждений не находятся в маркерах, если они не добавляются отдельно в свойство ClaimsSchema той же политики.|
+|ClaimsSchema|Объект JSON|Определяет, какие утверждения присутствуют в маркерах, затронутых политикой, в дополнение к базовому набору утверждений и набору основных утверждений. Для каждой записи схемы утверждения, определенной в этом свойстве, требуются определенные сведения. Укажите, откуда поступают данные (пара "Значение" или "Источник/идентификатор") и какое утверждение создает данные как (тип утверждения). Не более 50 утверждений включаются в маркер через объект ClaimsSchema. Все записи схемы утверждений, обнаруженные после достигнутого ограничения, будут игнорироваться и не будут отображаться в выданном токене. Дополнительные сведения доступны в [определении ClaimsSchema](/azure/active-directory/develop/active-directory-claims-mapping#claims-schema).|
+|ClaimsTransformation|Объект JSON| Определяет общие преобразования, которые могут применяться к исходным данным для создания выходных данных для утверждений, указанных в ClaimsSchema. Не более 50 преобразований включаются в маркер через объект ClaimsTransformation. Все преобразования, которые возникают после предела, будут игнорироваться и не будут отображаться в выданном токене. Дополнительные сведения о ClaimsTransformation и поддерживаемых функциях см. в разделе ["Преобразование утверждений"](/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation).|
 
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|appliesTo|Коллекция [directoryObject](directoryobject.md)| Коллекция [directoryObject](directoryObject.md) , к которую была применена эта политика. Только для чтения.|
+|appliesTo|Коллекция [directoryObject](directoryobject.md)| Коллекция [directoryObject](directoryObject.md) , к которой была применена эта политика. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

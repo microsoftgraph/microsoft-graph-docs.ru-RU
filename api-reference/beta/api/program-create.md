@@ -1,16 +1,16 @@
 ---
 title: Создание программы
-description: В функции обзоров доступа Azure AD создайте новый объект программы.
+description: В Azure AD проверки доступа создайте объект программы.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: eb41b5ad613a95c40cf70ce8b91fdf375426ef98
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: aa1ac48fb85b2c20d40b9b211d17183a6a78ab65
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118299"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65315286"
 ---
 # <a name="create-program"></a>Создание программы
 
@@ -18,7 +18,9 @@ ms.locfileid: "62118299"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) создайте [новый](../resources/program.md) объект программы.
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+В Azure AD [проверки доступа](../resources/accessreviews-root.md) создайте [объект программы](../resources/program.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -28,7 +30,7 @@ ms.locfileid: "62118299"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
-Подписанный пользователь также должен быть в роли каталога, что позволяет им создавать программу.
+Пользователь, выполнив вход, также должен иметь роль каталога, которая позволяет ему создать программу.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,8 +42,8 @@ POST /programs
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-В теле запроса поставляем представление JSON объекта [программы.](../resources/program.md)
+## <a name="request-body"></a>Текст запроса
+В тексте запроса добавьте представление объекта программы [в формате](../resources/program.md) JSON.
 
 В следующей таблице показаны свойства, необходимые при создании программы.
 
@@ -52,11 +54,11 @@ POST /programs
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и объект `201, Created` программы в тексте ответа. [](../resources/program.md)
+В случае успешного выполнения этот метод возвращает код `201, Created` отклика [и объект](../resources/program.md) программы в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В теле запроса поставляем представление JSON объекта [программы.](../resources/program.md)
+В тексте запроса добавьте представление объекта программы в формате [JSON.](../resources/program.md)
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -122,10 +124,10 @@ Content-type: application/json
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Списки программ](program-list.md) | [коллекция](../resources/program.md) программ|  Получите коллекцию всех программ.|
-|[Список программКонтроли программы](program-listcontrols.md) |     [коллекция programControl](../resources/programcontrol.md)|    Получите коллекцию элементов управления программы.|
-|[Программа обновления](program-update.md) |  [программа](../resources/program.md)| Обновление программы.|
-|[Создание programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |   Добавьте программуControl в программу.|
+|[Перечисление программ](program-list.md) | [коллекция программ](../resources/program.md)|  Получение коллекции всех программ.|
+|[Перечисление programControls программы](program-listcontrols.md) |     [Коллекция programControl](../resources/programcontrol.md)|    Получение коллекции элементов управления программы.|
+|[Обновление программы](program-update.md) |  [Программа](../resources/program.md)| Обновление программы.|
+|[Создание объекта programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |   Добавьте programControl в программу.|
 
 <!--
 {

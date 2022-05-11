@@ -1,24 +1,26 @@
 ---
-title: List programControlTypes
-description: В функции обзоров доступа Azure AD перечислить все объекты programControlType.
+title: Перечисление programControlTypes
+description: В Azure AD проверки доступа перечислите все объекты programControlType.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: e06627d9d3e4070e5fa7e63be7f0ee4a820d779b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 69596e18a015c6b8528648f7165894f6244f43c1
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62123038"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65315349"
 ---
-# <a name="list-programcontroltypes"></a>List programControlTypes
+# <a name="list-programcontroltypes"></a>Перечисление programControlTypes
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) перечислить все [объекты programControlType.](../resources/programcontroltype.md)
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+В Azure AD [проверки доступа](../resources/accessreviews-root.md) перечислите все [объекты programControlType](../resources/programcontroltype.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,9 +28,9 @@ ms.locfileid: "62123038"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | ProgramControl.Read.All,ProgramControl.ReadWrite.All  |
+|Приложение                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 
-Подписанный пользователь также должен быть в роли каталога, которая позволяет им читать программу.
+Пользователь, выполнив вход, также должен иметь роль каталога, которая позволяет ему читать программу.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,11 +42,11 @@ GET /programControlTypes
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не следует поставлять тело запроса.
+## <a name="request-body"></a>Текст запроса
+Текст запроса не должен быть указан.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и массив объектов `200, OK` [programControlType](../resources/programcontroltype.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200, OK` отклика и массив объектов [programControlType](../resources/programcontroltype.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -124,7 +126,7 @@ Content-type: application/json
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список программКонтроли программы](program-listcontrols.md) |     [коллекция programControl](../resources/programcontrol.md)|    Получите коллекцию элементов управления программы.|
+|[Перечисление programControls программы](program-listcontrols.md) |     [Коллекция programControl](../resources/programcontrol.md)|    Получение коллекции элементов управления программы.|
 
 
 <!--

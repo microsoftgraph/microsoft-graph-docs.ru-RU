@@ -1,23 +1,23 @@
 ---
 title: Создание agreementFileLocalization
-description: Создание нового локализованного файла соглашения.
+description: Создайте файл локализованного соглашения.
 author: raprakasMSFT
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 248e5f81d7e5dd85ad1f8bf97c98a87a1d8e6453
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 92fce38d514a42b91f99aca23f2f9528824ddefb
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451560"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65314439"
 ---
 # <a name="create-agreementfilelocalization"></a>Создание agreementFileLocalization
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового локализованного файла соглашения.
+Создайте файл локализованного соглашения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,30 +45,30 @@ POST /agreements/{agreementsId}/files
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [agreementFileLocalization](../resources/agreementfilelocalization.md) .
+В тексте запроса добавьте представление объекта [agreementFileLocalization](../resources/agreementfilelocalization.md) в формате JSON.
 
-Следующие свойства можно указать при создании **соглашенияFileLocalization**.
+При создании **agreementFileLocalization** можно указать следующие свойства.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Локализованное отображение имени файла политики соглашения. Локализованное имя отображения отображается конечным пользователям, которые просматривают соглашение.|
-|fileData|[agreementFileData](../resources/agreementfiledata.md)|Данные, которые представляют условия использования документа PDF.|
+|displayName|String|Локализованное отображаемое имя файла политики соглашения. Локализованное отображаемое имя отображается пользователям, просматривая соглашение.|
+|fileData|[agreementFileData](../resources/agreementfiledata.md)|Данные, которые представляют условия использования PDF-документа.|
 |fileName|String|Имя файла соглашения (например, TOU.pdf). |
-|isDefault|Boolean|Если ни один из языков не соответствует предпочтениям клиента, указывает, является ли это файл соглашения по умолчанию. Если ни один из файлов не помечен как по умолчанию, первый из них рассматривается как по умолчанию. Только для чтения.|
-|isMajorVersion|Boolean|Указывает, является ли файл соглашения основным обновлением версии. Обновления основных версий недействительны для принятия соглашения на соответствующем языке.|
-|language|String|Язык файла соглашения в формате "languagecode2-country/regioncode2". "languagecode2" — это код из двух букв нижнего уровня, полученный из ISO 639-1, в то время как "country/regioncode2" является производным от ISO 3166 и обычно состоит из двух верхних букв или языкового тега BCP-47. Например, американский английский язык `en-US`.|
+|isDefault|Boolean|Если ни один из языков не соответствует предпочтениям клиента, указывает, является ли это файл соглашения по умолчанию. Если ни один из файлов не помечен как по умолчанию, первый из них рассматривается как файл по умолчанию. Только для чтения.|
+|isMajorVersion|Boolean|Указывает, является ли файл соглашения основным обновлением версии. Обновления основных версий недействительны для принятия условий соглашения на соответствующем языке.|
+|language|String|Язык файла соглашения в формате languagecode2-country/regioncode2. Languagecode2 — это двухбуквенный код в нижнем регистре, производный от ISO 639-1, а "country/regioncode2" является производным от ISO 3166 и обычно состоит из двух прописных букв или языкового тега BCP-47. Например, английский (США) — `en-US`.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код `200 OK` ответа и [объект agreementFileLocalization](../resources/agreementfilelocalization.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [agreementFileLocalization](../resources/agreementfilelocalization.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_agreementfilelocalization_from_"
 }
 -->
@@ -83,7 +83,7 @@ Content-Type: application/json
     "isMajorVersion": false,
     "displayName": "Contoso ToU for guest users (French)",
     "fileData": {
-        "data": "JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGluZWFyaX//truncated-binary-data"
+        "data": "base64JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGluZWFyaX//truncated-binary-data"
     }
 }
 ```
@@ -111,7 +111,7 @@ Content-Type: application/json
     "isMajorVersion": false,
     "createdDateTime": "2022-03-04T14:38:22.8292386Z",
     "fileData": {
-        "data": "JVBERi0xLjUKJb/"
+        "data": "base64JVBERi0xLjUKJb/"
     }
 }
 ```

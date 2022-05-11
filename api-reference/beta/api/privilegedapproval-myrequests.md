@@ -4,13 +4,13 @@ description: Получение запросов утверждения запр
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: af0aa900c13e401cf3f70cc992c02e7bc9162713
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+author: japere
+ms.openlocfilehash: c2df406d619b5ba28456f41b14e7464d0dba8382
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340161"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65316397"
 ---
 # <a name="privilegedapproval-myrequests"></a>privilegedApproval: myRequests
 
@@ -18,7 +18,7 @@ ms.locfileid: "62340161"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 Получение запросов утверждения запрашивающей стороны.
 
@@ -47,9 +47,9 @@ GET /privilegedApproval/myRequests
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот `200 OK` метод возвращает код ответа и [объект privilegedApproval](../resources/privilegedapproval.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и [объект privilegedApproval](../resources/privilegedapproval.md) в тексте отклика.
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае возвращается код состояния HTTP 403 Forbidden.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

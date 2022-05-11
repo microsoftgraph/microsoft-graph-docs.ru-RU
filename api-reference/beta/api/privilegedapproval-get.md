@@ -1,16 +1,16 @@
 ---
 title: Получение privilegedApproval
-description: Извлечение свойств и связей объекта privilegedapproval.
+description: Получение свойств и связей объекта privilegedapproval.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 91af45d12b72923de76b6ad0408e31d7a0c3745f
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+author: japere
+ms.openlocfilehash: f22e8e5b547b2c36a9b48922aed526be344e4aa4
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671456"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65316007"
 ---
 # <a name="get-privilegedapproval"></a>Получение privilegedApproval
 
@@ -20,7 +20,7 @@ ms.locfileid: "63671456"
 
 [!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Извлечение свойств и связей объекта privilegedapproval.
+Получение свойств и связей объекта privilegedapproval.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -49,9 +49,9 @@ GET /privilegedApproval/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект privilegedApproval](../resources/privilegedapproval.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [privilegedApproval](../resources/privilegedapproval.md) в тексте отклика.
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае возвращается код состояния HTTP 403 Forbidden.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

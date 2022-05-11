@@ -1,42 +1,46 @@
 ---
-title: тип ресурса agreementFile
-description: Представляет настраиваемый файл соглашений об использовании, который клиент управляет Azure Active Directory Azure AD.
+title: Тип ресурса agreementFile
+description: Представляет настраиваемый файл соглашения об условиях использования, управляемый клиентом с Azure Active Directory (Azure AD).
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: dee599f1639df5f5255fa4852de29f52bc0b6907
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: a48fa216ff9051e04bf57046387fd3e94619f7b2
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650666"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65314952"
 ---
-# <a name="agreementfile-resource-type"></a>тип ресурса agreementFile
+# <a name="agreementfile-resource-type"></a>Тип ресурса agreementFile
 
 Пространство имен: microsoft.graph
 
-Представляет настраиваемый файл соглашений об использовании, который клиент управляет Azure Active Directory Azure AD. Он содержит метаданные о файле соглашения (например, имя, язык и является ли это файл по умолчанию).
+Представляет настраиваемый файл соглашения об условиях использования, управляемый клиентом с Azure Active Directory (Azure AD). Он содержит метаданные о файле соглашения (например, имя, язык и является ли он файлом по умолчанию).
 
-Наследует от [agreementFileProperties](agreementfileproperties.md).
+Наследуется [от agreementFileProperties](agreementfileproperties.md).
+
+## <a name="methods"></a>Методы
+
+Нет.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|Время даты, представляющее момент создания файла. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
-|displayName|Строка|Локализованное отображение имени файла политики соглашения. Локализованное имя отображения отображается конечным пользователям, которые просматривают соглашение. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
-|fileData|[agreementFileData](agreementfiledata.md)|Данные, которые представляют условия использования документа PDF. Только для чтения. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
+|createdDateTime|DateTimeOffset|Дата и время создания файла. Тип метки времени представляет сведения о дате и времени в формате ISO 8601 и всегда используется в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
+|displayName|String|Локализованное отображаемое имя файла политики соглашения. Локализованное отображаемое имя отображается пользователям, просматривая соглашение. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
+|fileData|[agreementFileData](agreementfiledata.md)|Данные, которые представляют условия использования PDF-документа. Только для чтения. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
 |fileName|String|Имя файла соглашения (например, TOU.pdf). Только для чтения. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
-|id|String|Идентификатор объекта AgreementFileVersion. Только для чтения. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
-|isDefault|Boolean|Если ни один из языков не соответствует предпочтениям клиента, указывает, является ли это файл соглашения по умолчанию. Если ни один из файлов не помечен как по умолчанию, первый из них рассматривается как по умолчанию. Только для чтения. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
-|isMajorVersion|Boolean|Указывает, является ли файл соглашения основным обновлением версии. Обновления основных версий недействительны для принятия соглашения на соответствующем языке. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
-|language|String|Язык файла соглашения в формате "languagecode2-country/regioncode2". "languagecode2" — это код из двух букв нижнего уровня, полученный из ISO 639-1, в то время как "country/regioncode2" является производным от ISO 3166 и обычно состоит из двух верхних букв или языкового тега BCP-47. Например, американский английский язык `en-US` . Только для чтения. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
+|id|String|Идентификатор объекта agreementFileVersion. Только для чтения. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
+|isDefault|Boolean|Если ни один из языков не соответствует предпочтениям клиента, указывает, является ли это файл соглашения по умолчанию. Если ни один из файлов не помечен как по умолчанию, первый из них рассматривается как файл по умолчанию. Только для чтения. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
+|isMajorVersion|Boolean|Указывает, является ли файл соглашения основным обновлением версии. Обновления основных версий недействительны для принятия условий соглашения на соответствующем языке. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
+|language|String|Язык файла соглашения в формате languagecode2-country/regioncode2. Languagecode2 — это двухбуквенный код в нижнем регистре, производный от ISO 639-1, а "country/regioncode2" является производным от ISO 3166 и обычно состоит из двух прописных букв или языкового тега BCP-47. Например, английский (США) — `en-US`. Только для чтения. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|локализация|[коллекция agreementFileLocalization](agreementfilelocalization.md)|Локализованная версия условий файлов соглашений об использовании, присоединенных к соглашению.|
+|Локализации|[Коллекция agreementFileLocalization](agreementfilelocalization.md)|Локализованная версия файлов соглашения об условиях использования, вложенных в соглашение.|
 
 
 ## <a name="json-representation"></a>Представление JSON

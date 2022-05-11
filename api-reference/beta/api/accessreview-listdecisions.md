@@ -1,26 +1,28 @@
 ---
-title: Списки решений accessReview
-description: В функции обзоров доступа Azure AD извлекаем решения объекта accessReview.
+title: Вывод списка решений accessReview
+description: В Azure AD проверки доступа извлеките решения объекта accessReview.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b5e19b303745d6c217f2dec6dc084330b45eb858
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9e6f9d7430a1fd00357ac2455e4754f7d4958e58
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110127"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65314493"
 ---
-# <a name="list-accessreview-decisions"></a>Списки решений accessReview
+# <a name="list-accessreview-decisions"></a>Вывод списка решений accessReview
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) извлекаем решения объекта [accessReview.](../resources/accessreview.md)
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Обратите внимание, что повторяющиеся проверки доступа не будут иметь отношения **решений.**  Для поиска объекта [accessReview](../resources/accessreview.md) для текущего или последнего экземпляра обзора доступа вызываемой службе необходимо ориентироваться на связь экземпляра экземпляра. 
+В Azure AD [проверки доступа](../resources/accessreviews-root.md) извлеките решения объекта [accessReview](../resources/accessreview.md).
+
+Обратите внимание, что повторяющиеся проверки доступа не будут иметь отношения **принятия решений** .  Вместо этого вызывающий объект должен перемещаться  по связи экземпляра, чтобы найти объект [accessReview](../resources/accessreview.md) для текущего или прошлых экземпляров проверки доступа.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +33,7 @@ ms.locfileid: "62110127"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
 
- Подписанный пользователь также должен быть в роли каталога, что позволяет им читать обзор доступа.
+ Пользователь, выполнив вход, также должен иметь роль каталога, которая позволяет ему читать проверку доступа.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,11 +45,11 @@ GET /accessReviews/{reviewId}/decisions
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не следует поставлять тело запроса.
+## <a name="request-body"></a>Текст запроса
+Текст запроса не должен быть указан.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и массив `200 OK` [объектов accessReviewDecision](../resources/accessreviewdecision.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и массив объектов [accessReviewDecision](../resources/accessreviewdecision.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -117,12 +119,12 @@ Content-type: application/json
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получить accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Извлечение обзора доступа. |
-|[Список решений accessReview](accessreview-listmydecisions.md) |        [accessReviewDecision](../resources/accessreviewdecision.md) collection|    Как рецензент, получите мои решения accessReview.|
+|[Получение accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Получение проверки доступа. |
+|[Вывод списка решений accessReview](accessreview-listmydecisions.md) |        [Коллекция accessReviewDecision](../resources/accessreviewdecision.md)|    Как рецензент получите мои решения о accessReview.|
 |[Отправка напоминания accessReview](accessreview-sendreminder.md) |       Нет.   |   Отправьте напоминание рецензентам accessReview. |
 |[Остановка accessReview](accessreview-stop.md) |        Нет.   |   Остановите accessReview. |
-|[Сброс решений accessReview](accessreview-reset.md) |        Нет.   |   Сброс решений в ходе выполнения accessReview.|
-|[Применение решений accessReview](accessreview-apply.md) |        Нет.   |   Применение решений из завершенного accessReview.|
+|[Сброс решений accessReview](accessreview-reset.md) |        Нет.   |   Сбросьте решения в ходе выполнения accessReview.|
+|[Применение решений accessReview](accessreview-apply.md) |        Нет.   |   Примените решения из завершенного accessReview.|
 
 
 <!--

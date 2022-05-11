@@ -1,26 +1,26 @@
 ---
-title: 'privilegedRoleAssignment: моя'
-description: Получите привилегированные назначения ролей запросителя.
+title: 'privilegedRoleAssignment: my'
+description: Получение назначений привилегированных ролей запрашиваемого пользователя.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 22fa9e10c08ee2446885451eaba1c480be0a30b0
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+author: japere
+ms.openlocfilehash: 0212a6597ecdad812749f2f3b9d4a421cc0fe71e
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62349140"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65314262"
 ---
-# <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment: моя
+# <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment: my
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Получите привилегированные назначения ролей запросителя.
+Получение назначений привилегированных ролей запрашиваемого пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,7 +46,7 @@ GET /privilegedRoleAssignments/my
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот `200 OK` метод возвращает код ответа и [объект коллекции privilegedRoleAssignment](../resources/privilegedroleassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции [privilegedRoleAssignment](../resources/privilegedroleassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

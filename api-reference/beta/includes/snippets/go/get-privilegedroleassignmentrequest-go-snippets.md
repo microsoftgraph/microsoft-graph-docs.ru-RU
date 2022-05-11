@@ -1,18 +1,18 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: d12a304e83792f68baa62f0633c1cb4e79f11df6
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: f0e4b71f63546d9991f01c2df2c88d8216602e82
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61295379"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65315616"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-result, err := graphClient.PrivilegedRoleAssignmentRequests().Get(nil)
+result, err := graphClient.PrivilegedRoleAssignmentRequests().Get()
 
 
 ```
