@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 32333c584c43867552d49cd8f40f529cbacfc4a0
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 4070b19bea88d9d6df4f8052687cea7961707523
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416370"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342231"
 ---
 ```go
 
@@ -29,11 +29,8 @@ requestBody.SetCredentials( []Credential {
         "type": "password",
     }
 }
-options := &msgraphsdk.UpdatePasswordSingleSignOnCredentialsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).UpdatePasswordSingleSignOnCredentials(servicePrincipal-id).Post(options)
+graphClient.ServicePrincipalsById(&servicePrincipalId).UpdatePasswordSingleSignOnCredentials(servicePrincipal-id).Post(requestBody)
 
 
 ```

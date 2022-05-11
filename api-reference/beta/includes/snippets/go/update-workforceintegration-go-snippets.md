@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 65e618c84a41a8f24991d02a6e2aa526f1be80cd
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: f92495ef95e7ff9df9d6d684bace495c500854d6
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416579"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342834"
 ---
 ```go
 
@@ -29,11 +29,8 @@ url := "url-value"
 requestBody.SetUrl(&url)
 supports := "supports-value"
 requestBody.SetSupports(&supports)
-options := &msgraphsdk.WorkforceIntegrationRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 workforceIntegrationId := "workforceIntegration-id"
-result, err := graphClient.Teamwork().WorkforceIntegrationsById(&workforceIntegrationId).Patch(options)
+graphClient.Teamwork().WorkforceIntegrationsById(&workforceIntegrationId).Patch(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: c3e6d92745c748ac415ba4fc520f1dc5e8b5f974
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: d17472b5f2f27aad4175f545d263eb70f7637de9
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61081811"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342558"
 ---
 ```go
 
@@ -19,10 +19,7 @@ userFlowType := "signUpOrSignIn"
 requestBody.SetUserFlowType(&userFlowType)
 userFlowTypeVersion := float32(1)
 requestBody.SetUserFlowTypeVersion(&userFlowTypeVersion)
-options := &msgraphsdk.B2xUserFlowsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Identity().B2xUserFlows().Post(options)
+result, err := graphClient.Identity().B2xUserFlows().Post(requestBody)
 
 
 ```

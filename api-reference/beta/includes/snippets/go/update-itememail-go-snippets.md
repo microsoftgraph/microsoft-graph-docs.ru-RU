@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: e844cfba0ee117e4039aa66597d5764c49a2e635
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: aa63e6d9cae206ae93e555b68011970af1450c9f
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416814"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342679"
 ---
 ```go
 
@@ -17,12 +17,9 @@ displayName := "Business Email"
 requestBody.SetDisplayName(&displayName)
 type := "work"
 requestBody.SetType(&type)
-options := &msgraphsdk.ItemEmailRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 userId := "user-id"
 itemEmailId := "itemEmail-id"
-result, err := graphClient.UsersById(&userId).Profile().EmailsById(&itemEmailId).Patch(options)
+graphClient.UsersById(&userId).Profile().EmailsById(&itemEmailId).Patch(requestBody)
 
 
 ```

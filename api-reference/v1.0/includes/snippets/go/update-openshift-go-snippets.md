@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 26420a4b7a15f9ee13dd177c19c6f025ef1a613d
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3869b7a62ce329a90a9cc7197057e7632a27d0c3
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63416681"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342808"
 ---
 ```go
 
@@ -40,12 +40,9 @@ sharedOpenShift.SetActivities( []ShiftActivity {
     }
 }
 requestBody.SetDraftOpenShift(nil)
-options := &msgraphsdk.OpenShiftRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 teamId := "team-id"
 openShiftId := "openShift-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().OpenShiftsById(&openShiftId).Patch(options)
+graphClient.TeamsById(&teamId).Schedule().OpenShiftsById(&openShiftId).Patch(requestBody)
 
 
 ```

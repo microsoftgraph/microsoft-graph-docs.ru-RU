@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 5105f63a4b03321c3e5d9f74d7e0f397610e2ec9
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: b2261132abdb2d128f6c2ee4bade8e98de18de15
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61087141"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342016"
 ---
 ```go
 
@@ -21,12 +21,9 @@ displayName := "Microsoft"
 requestBody.SetDisplayName(&displayName)
 externalId := "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 requestBody.SetExternalId(&externalId)
-options := &msgraphsdk.LinkedResourcesRequestBuilderPostOptions{
-    Body: requestBody,
-}
 todoTaskListId := "todoTaskList-id"
 todoTaskId := "todoTask-id"
-result, err := graphClient.Me().Todo().ListsById(&todoTaskListId).TasksById(&todoTaskId).LinkedResources().Post(options)
+result, err := graphClient.Me().Todo().ListsById(&todoTaskListId).TasksById(&todoTaskId).LinkedResources().Post(requestBody)
 
 
 ```

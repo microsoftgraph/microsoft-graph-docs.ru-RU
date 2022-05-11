@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 055a2e1b5239b9be6589cad2695e5dcea57eddee
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 5d5c689129cd0a2162623ffa16621eae626da957
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61103037"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65342638"
 ---
 ```go
 
@@ -17,10 +17,10 @@ requestParameters := &msgraphsdk.GroupsRequestBuilderGetQueryParameters{
     Count: true,
     Select: "id,membershipRule,membershipRuleProcessingState",
 }
-options := &msgraphsdk.GroupsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.GroupsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
-result, err := graphClient.Groups().Get(options)
+result, err := graphClient.Groups().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

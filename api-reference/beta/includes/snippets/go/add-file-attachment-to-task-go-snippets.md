@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 7f824a4bd32ca980dc4efbbf0e91a8582fda90b1
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: d282dd34c3df42f702d305ce293c79aa73e8fb7a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61092758"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65343210"
 ---
 ```go
 
@@ -19,11 +19,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.fileAttachment",
     "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk=",
 }
-options := &msgraphsdk.AttachmentsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 outlookTaskId := "outlookTask-id"
-result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).Attachments().Post(options)
+result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).Attachments().Post(requestBody)
 
 
 ```
