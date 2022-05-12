@@ -1,23 +1,23 @@
 ---
 title: 'userConsentRequest: filterByCurrentUser'
-description: Извлечение объектов userConsentRequest, для которых текущий пользователь является рецензентом.
+description: Получение объектов userConsentRequest, для которых текущий пользователь является рецензентом.
 author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 7509590210d6c7061240c69a5f9a53774429f18d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f0cd91a03a32180b9ecc3424772504e4e235f254
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984863"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365192"
 ---
 # <a name="userconsentrequest-filterbycurrentuser"></a>userConsentRequest: filterByCurrentUser
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение коллекции [объектов userConsentRequest](../resources/userconsentrequest.md) для доступа к указанному приложению, для которого текущий пользователь является рецензентом.
+Получение коллекции объектов [userConsentRequest](../resources/userconsentrequest.md) для доступа к указанному приложению, для которого текущий пользователь является рецензентом.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,10 +44,10 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|Фильтр для запроса объектов userConsentRequest для объекта appConsentRequest, для которого текущий пользователь является рецензентом. Разрешено значение `reviewer` . Обязательный.|
+|on|consentRequestFilterByCurrentUserOptions|Фильтр для запроса объектов userConsentRequest для объекта appConsentRequest, для которого текущий пользователь является рецензентом. Допустимое значение: `reviewer`. Обязательно.|
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Эта функция поддерживает параметр  `$filter` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Эта функция поддерживает параметр `$filter` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -59,13 +59,13 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [userConsentRequest](../resources/userconsentrequest.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [userConsentRequest](../resources/userconsentrequest.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-В этом запросе вы перечислите все **объекты userConsentRequest,** для которых текущий пользователь является рецензентом и состояние `Completed` .
+В этом запросе вы перечислите все **объекты userConsentRequest** , для которых текущий пользователь является рецензентом и имеет состояние `Completed`.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -129,10 +129,8 @@ Content-Type: application/json
           "mail": "AlexW@contoso.com"
         }
       },
-      "approval@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('ee245379-e3bb-4944-a997-24115f0b8b5e')/userConsentRequests('acef2660-d194-4943-b927-4fe4fb5cb7e3')/approval/$entity",
       "approval": {
         "id": "acef2660-d194-4943-b927-4fe4fb5cb7e3",
-        "steps@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('ee245379-e3bb-4944-a997-24115f0b8b5e')/userConsentRequests('acef2660-d194-4943-b927-4fe4fb5cb7e3')/approval/steps",
         "steps": [
           {
             "id": "f5a4ca4a-1316-4872-8112-993c55dab51e",

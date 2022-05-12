@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5f24f19703d499c005ad0a5e275dbe9f60464b8b
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: f46a5b79bb4e75b1dd9a800b151db1280a93d391
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204680"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366214"
 ---
 # <a name="get-unifiedrolemanagementpolicy"></a>Получение unifiedRoleManagementPolicy
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "65204680"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
+|Для приложений|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) в теле отклика.
 
@@ -181,7 +181,6 @@ Content-Type: application/json
         "displayName": null,
         "id": null
     },
-    "effectiveRules@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/roleManagementPolicies('DirectoryRole_cab01047-8ad9-4792-8e42-569340767f1b_70c808b5-0d35-4863-a0ba-07888e99d448')/effectiveRules",
     "effectiveRules": [
         {
             "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
@@ -482,7 +481,6 @@ Content-Type: application/json
             }
         }
     ],
-    "rules@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/roleManagementPolicies('DirectoryRole_cab01047-8ad9-4792-8e42-569340767f1b_70c808b5-0d35-4863-a0ba-07888e99d448')/rules",
     "rules": [
         {
             "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8b7db1af8d1ba0fb6f3fa130c89732a1ce9fb87e
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 44a13df00e5f24ced47957dc49f27f5e4ee0ef2c
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060809"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365010"
 ---
 # <a name="get-unifiedroledefinition"></a>Получение unifiedRoleDefinition
 
@@ -21,10 +21,10 @@ ms.locfileid: "65060809"
 Получение свойств и связей объекта [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) поставщика RBAC. 
 
 В настоящее время поддерживаются следующие поставщики RBAC:
-- Облачный компьютер 
+- Облачный ПК 
 - управление устройствами (Intune)
-- каталог (роли каталога Azure AD)
-- управление правами (управление правами Azure AD);
+- каталог (Azure AD каталога)
+- управление правами (Azure AD управления правами)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -34,32 +34,32 @@ ms.locfileid: "65060809"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) |  RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All, RoleManagement.Read.All   |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) |  RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All, RoleManagement.Read.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All, RoleManagement.Read.All  |
 
 ### <a name="for-a-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) |  DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All   |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) |  DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
 ### <a name="for-a-directory-azure-ad-provider"></a>Для поставщика каталога (Azure AD)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ### <a name="for-an-entitlement-management-provider"></a>Для поставщика управления правами
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -187,7 +187,6 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('f189965f-f560-4c59-9101-933d4c87a91a')/inheritsPermissionsFrom",
     "inheritsPermissionsFrom": []
 }
 ```
@@ -292,7 +291,6 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('fdd7a751-b60b-444a-984c-02652fe8fa1c')/inheritsPermissionsFrom",
     "inheritsPermissionsFrom": [
         {
             "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
@@ -401,7 +399,6 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('fdd7a751-b60b-444a-984c-02652fe8fa1c')/inheritsPermissionsFrom",
     "inheritsPermissionsFrom": [
         {
             "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",

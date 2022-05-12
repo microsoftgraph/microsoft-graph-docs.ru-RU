@@ -1,16 +1,16 @@
 ---
 title: Получение объекта multiValueLegacyExtendedProperty
 description: expand'.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
 author: abheek-das
-ms.openlocfilehash: 04c9229bd73b0f50a49cd7558ec2b8cb82c8dc6d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 58adb39062247d970f91a702ec4146199b6a3491
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131021"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365038"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>Получение объекта multiValueLegacyExtendedProperty
 
@@ -44,7 +44,7 @@ ms.locfileid: "50131021"
 Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md).
 
 ## <a name="permissions"></a>Разрешения
-В зависимости от ресурса, из которых вы получаете расширенное свойство, и типа запрашиваемого разрешения (делегирования или приложения), разрешение, указанное в следующей таблице, является минимальным, требуемого для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от ресурса, из который вы получаете расширенное свойство, и типа разрешения (делегированного или приложения), которое вы запрашиваете, разрешение, указанное в следующей таблице, является минимальным, необходимым для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
@@ -105,7 +105,7 @@ GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Получите экземпляр **outlookTask:**
+Получение **экземпляра outlookTask** :
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -115,7 +115,7 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}?$expand=mu
 GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получите экземпляр **outlookTaskFolder:**
+Получение **экземпляра outlookTaskFolder** :
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -145,7 +145,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -193,7 +193,6 @@ Content-type: application/json
             "address": "christine@contoso.com"
         }
     },
-    "multiValueExtendedProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/events('AAMkAGE1M2_bs88AACbuFiiAAA%3D')/multiValueExtendedProperties",
     "multiValueExtendedProperties": [
         {
             "id": "StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",

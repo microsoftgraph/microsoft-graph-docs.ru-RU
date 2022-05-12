@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 342cb4e09ee572e0c02a5924257a298d3d6911b5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 19ed7cdd38d6a29d61e37a609d690501ea99ad71
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003907"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366102"
 ---
 # <a name="create-open-extension"></a>Создание открытого расширения
 
@@ -250,8 +250,6 @@ Content-type: application/json
   "webLink": "https://outlook.office.com/owa/?
 ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
   "inferenceClassification": "Focused",
-  "extensions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages
-('AAMkAGEbs88AAB84uLuAAA%3D')/extensions",
   "extensions": [
     {
       "@odata.type": "#microsoft.graph.openTypeExtension",
@@ -574,7 +572,6 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations/$entity",
     "id": "AAQkADJToRlbJ5Mg7TFM7H-j3Y=",
-    "threads@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations('AAQkADJToRlbJ5Mg7TFM7H-j3Y%3D')/threads",
     "threads": [
         {
             "id": "AAQkADJDtMUzsf_PdhAAswJOhGVsnkyDtMUzsf_Pdg=="

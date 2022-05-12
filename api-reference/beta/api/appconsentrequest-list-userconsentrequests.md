@@ -1,23 +1,23 @@
 ---
-title: Список userConsentRequests
-description: Извлечение объектов userConsentRequest и их свойств.
+title: Перечисление объектов userConsentRequests
+description: Получение объектов userConsentRequest и их свойств.
 author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cda869a5d05c52a770a57e4eb6e13e094012d1c8
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 629735670e44e8c39dea5ae18109cdd3707e1440
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651102"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365857"
 ---
-# <a name="list-userconsentrequests"></a>Список userConsentRequests
+# <a name="list-userconsentrequests"></a>Перечисление объектов userConsentRequests
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение коллекции [объектов userConsentRequest](../resources/userconsentrequest.md) и их свойств.
+Получение коллекции объектов [userConsentRequest](../resources/userconsentrequest.md) и их свойств.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,19 +39,19 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает  `$select` параметры `$skip` запроса , `$top` , , и `$filter` `$orderby` OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select` запроса `$skip`, , `$top`и `$orderby` `$filter`OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [userConsentRequest](../resources/userconsentrequest.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [userConsentRequest](../resources/userconsentrequest.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -119,10 +119,8 @@ Content-Type: application/json
           "mail": "AlexW@contoso.com"
         }
       },
-      "approval@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('ee245379-e3bb-4944-a997-24115f0b8b5e')/userConsentRequests('acef2660-d194-4943-b927-4fe4fb5cb7e3')/approval/$entity",
       "approval": {
         "id": "acef2660-d194-4943-b927-4fe4fb5cb7e3",
-        "steps@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('ee245379-e3bb-4944-a997-24115f0b8b5e')/userConsentRequests('acef2660-d194-4943-b927-4fe4fb5cb7e3')/approval/steps",
         "steps": [
           {
             "id": "f5a4ca4a-1316-4872-8112-993c55dab51e",

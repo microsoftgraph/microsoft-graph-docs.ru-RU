@@ -1,22 +1,22 @@
 ---
-title: Get userConsentRequest
-description: Ознакомьтесь с свойствами и отношениями объекта userConsentRequest.
+title: Получение объекта userConsentRequest
+description: Чтение свойств и связей объекта userConsentRequest.
 author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8a7da71a9192510cf3692226b7bf132560e80545
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5b5d8fe39e8f7ea619bb36bb1e29fc32d6859297
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61008314"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365816"
 ---
-# <a name="get-userconsentrequest"></a>Get userConsentRequest
+# <a name="get-userconsentrequest"></a>Получение объекта userConsentRequest
 
 Пространство имен: microsoft.graph
 
-Ознакомьтесь с свойствами и отношениями [объекта userConsentRequest.](../resources/userconsentrequest.md)
+Чтение свойств и связей объекта [userConsentRequest](../resources/userconsentrequest.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{appconsentrequest-id}/use
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметр  `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -54,7 +54,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{appconsentrequest-id}/use
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект userConsentRequest](../resources/userconsentrequest.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [userConsentRequest](../resources/userconsentrequest.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -120,10 +120,8 @@ Content-Type: application/json
       "mail": "AlexW@contoso.com"
     }
   },
-  "approval@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/appConsent/appConsentRequests('ee245379-e3bb-4944-a997-24115f0b8b5e')/userConsentRequests('acef2660-d194-4943-b927-4fe4fb5cb7e3')/approval/$entity",
   "approval": {
     "id": "acef2660-d194-4943-b927-4fe4fb5cb7e3",
-    "stages@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/appConsent/appConsentRequests('ee245379-e3bb-4944-a997-24115f0b8b5e')/userConsentRequests('acef2660-d194-4943-b927-4fe4fb5cb7e3')/approval/stages",
     "stages": [
       {
         "id": "f5a4ca4a-1316-4872-8112-993c55dab51e",

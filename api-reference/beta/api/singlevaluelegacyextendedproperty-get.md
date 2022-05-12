@@ -1,16 +1,16 @@
 ---
 title: Получение объекта singleValueLegacyExtendedProperty
-description: Один экземпляр ресурса можно расширить с помощью определенного расширенного свойства или коллекции экземпляров ресурсов.
+description: Можно получить один экземпляр ресурса, развернутый с определенным расширенным свойством, или коллекцию экземпляров ресурсов.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
 author: abheek-das
-ms.openlocfilehash: aa8c99e15c2f05c963ff31dc01a486cff69f33c1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c6779f1bf625571aca579be47deec944fc795acc
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122989"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366137"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>Получение объекта singleValueLegacyExtendedProperty
 
@@ -48,9 +48,9 @@ ms.locfileid: "62122989"
 Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md).
 
 ## <a name="permissions"></a>Разрешения
-В зависимости от ресурса, с который вы получаете расширенное свойство, и от запрашиваемого типа разрешений (делегирования или приложения), разрешение, указанное в следующей таблице, является минимальным, необходимым для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от ресурса, из который вы получаете расширенное свойство, и типа разрешения (делегированного или приложения), которое вы запрашиваете, разрешение, указанное в следующей таблице, является минимальным, необходимым для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
@@ -112,7 +112,7 @@ GET /me/contactfolders/{id}?$expand=singleValueExtendedProperties($filter=id eq 
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Получите **экземпляр outlookTask:**
+Получение **экземпляра outlookTask** :
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -122,7 +122,7 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}?$expand=si
 GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получите **экземпляр outlookTaskFolder:**
+Получение **экземпляра outlookTaskFolder** :
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/taskFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -147,7 +147,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 #### <a name="get-resource-instances-that-include-numeric-extended-properties-matching-a-filter"></a>Получение экземпляров ресурсов с числовыми расширенными свойствами, которые соответствуют фильтру
 
 Получите экземпляры поддерживаемого ресурса с расширенным свойством, соответствующим фильтру. В случае фильтра используется оператор `eq` для свойства **id**, а также применяется один из следующих операторов для свойства **value**: `eq`, `ne`, `ge`, `gt`, `le` или `lt`.
-Убедитесь, что вы [](https://www.w3schools.com/tags/ref_urlencode.asp) применяли кодию URL-адресов к следующим символам в строке фильтра - двоеточию, косой полосе и пространству.
+Обязательно примените кодирование [URL-адресов](https://www.w3schools.com/tags/ref_urlencode.asp) к следующим символам в строке фильтра: двоеточию, косой черте и пробелу.
 
 В приведенных ниже строках синтаксиса показан фильтр, в случае которого один оператор `eq` используется для свойства id, а другой оператор `eq` — для свойства value. Вы можете заменить оператор `eq` для свойства **value** любым из других операторов (`ne`, `ge`, `gt`, `le` или `lt`), которые применяются к числовым значениям.
 
@@ -192,7 +192,7 @@ GET /me/contactfolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{
 GET /users/{id|userPrincipalName}/contactFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-Получите **экземпляр outlookTask:**
+Получение **экземпляра outlookTask** :
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -202,7 +202,7 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks?$filter=singleV
 GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-Получите **экземпляр outlookTaskFolder:**
+Получение **экземпляра outlookTaskFolder** :
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/taskFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -285,7 +285,7 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -372,7 +372,6 @@ Content-type: application/json
             }
         }
     ],
-    "singleValueExtendedProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages('AAMkAGE1M2_bs88AACHsLqWAAA%3D')/singleValueExtendedProperties",
     "singleValueExtendedProperties": [
         {
             "id": "String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color",

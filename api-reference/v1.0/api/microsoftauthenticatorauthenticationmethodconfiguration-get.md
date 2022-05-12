@@ -1,21 +1,21 @@
 ---
-title: Получите microsoftAuthenticatorAuthenticationMethodConfiguration
-description: Ознакомьтесь с свойствами и отношениями объекта MicrosoftAuthenticatorAuthenticationMethodConfiguration.
+title: Получение объекта microsoftAuthenticatorAuthenticationMethodConfiguration
+description: Чтение свойств и связей объекта microsoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 774a1179f3e748b811d075e48a8ad949a575c866
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 0d9aecde05da587a94c9052684f0ef4efe665380
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396142"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364863"
 ---
-# <a name="get-microsoftauthenticatorauthenticationmethodconfiguration"></a>Получите microsoftAuthenticatorAuthenticationMethodConfiguration
+# <a name="get-microsoftauthenticatorauthenticationmethodconfiguration"></a>Получение объекта microsoftAuthenticatorAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
-Извлечение свойств и связей объекта [MicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md), который представляет политику метода Microsoft Authenticator проверки подлинности для клиента Azure AD.
+Получение свойств и связей объекта [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md), который представляет политику метода Microsoft Authenticator проверки подлинности для Azure AD клиента.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "63396142"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
 
-Для делегирования сценариев администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев администратору требуется одна из следующих [Azure AD ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный читатель
 * Администратор политики проверки подлинности
@@ -52,7 +52,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/mic
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы этот метод возвращает код отклика и [объект MicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) в теле отклика.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и объект [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -108,7 +108,6 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
     "id": "MicrosoftAuthenticator",
     "state": "disabled",
-    "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('MicrosoftAuthenticator')/microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [
         {
             "targetType": "group",

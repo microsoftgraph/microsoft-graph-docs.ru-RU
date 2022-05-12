@@ -1,16 +1,16 @@
 ---
 title: Определения списков
-description: Извлечение объектов accessReviewScheduleDefinition.
+description: Получение объектов accessReviewScheduleDefinition.
 ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3e50590e0c7708daa0b769ce817eb81cc4b8bff4
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 3f6519662c4c864c945347323f06698291afe14e
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63721907"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365906"
 ---
 # <a name="list-definitions"></a>Определения списков
 
@@ -18,7 +18,7 @@ ms.locfileid: "63721907"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение [объектов accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) . Возвращается список объектов accessReviewScheduleDefinition, включая все вложенные свойства, для каждой созданной серии обзоров доступа. Это не включает связанные объекты accessReviewInstance.
+Получение объектов [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) . Возвращается список из нуля или более объектов accessReviewScheduleDefinition, включая все их вложенные свойства, для каждого созданного ряда проверки доступа. Он не включает связанные объекты accessReviewInstance.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,11 +29,11 @@ ms.locfileid: "63721907"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
- В роли каталога должен также быть подписан пользователь, который позволяет им читать обзор доступа. См. роль [обзора доступа и проверки авторизации разрешений приложений](../resources/accessreviewsv2-overview.md#role-and-application-permission-authorization-checks).
+ Пользователь, выполнив вход, также должен иметь роль каталога, которая позволяет ему читать проверку доступа. См. сведения о роли [проверки доступа и проверке авторизации разрешений приложения](../resources/accessreviewsv2-overview.md#role-and-application-permission-authorization-checks).
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Чтобы перечислить все ваши accessReviewScheduleDefinitions:
+Чтобы получить список всех объектов accessReviewScheduleDefinitions:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -41,12 +41,12 @@ GET /identityGovernance/accessReviews/definitions
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметры `$select`запросов , и `$top``$skip``$filter` OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select``$top`запроса , и `$filter` `$skip`OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-Размер страницы по умолчанию для этого API — 100 **объектов accessReviewScheduleDefinition** . Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
+Размер страницы по умолчанию для этого API — 100 **объектов accessReviewScheduleDefinition** . Чтобы повысить эффективность и избежать времени ожидания из-за больших результирующих наборов, примените разбиение на страницы с помощью `$skip` `$top` параметров запроса и параметров запроса. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ### <a name="use-the-filter-query-parameter"></a>Использование параметра $filter запроса
-Параметр `$filter` запроса с оператором `contains` поддерживается **в свойстве** области accessReviewScheduleDefinition. Используйте следующий формат для запроса:
+Параметр `$filter` запроса с оператором `contains` поддерживается в свойстве **области** accessReviewScheduleDefinition. Используйте следующий формат запроса:
 
 ```http
 GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '{object}')
@@ -56,27 +56,27 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 
 |Значение|Описание|
 |:---     |:---       |
-|/groups  |Список всех accessReviewScheduleDefinition для отдельных групп (исключает определения, Microsoft 365 группы с гостевых пользователей).|
-|/groups/{group id}  |Список всех accessReviewScheduleDefinition в определенной группе (исключает определения, Microsoft 365 группы с гостевых пользователей).|
-|./members  |Список всех accessReviewScheduleDefinition, Microsoft 365 групп с гостевых пользователей.|
-|accessPackageAssignments  |Список всех accessReviewScheduleDefinition в пакете доступа.|
-|roleAssignmentScheduleInstances  |Список всех accessReviewScheduleDefinition для глав служб, присвоенных привилегированной роли.|
+|/groups  |Вывод списка всех объектов accessReviewScheduleDefinition в отдельных группах (исключая определения, область действия для всех Microsoft 365 групп с гостевыми пользователями).|
+|/groups/{идентификатор группы}  |Вывод списка всех объектов accessReviewScheduleDefinition в определенной группе (исключая определения, относящиеся ко всем группам Microsoft 365 с гостевыми пользователями).|
+|./members  |Выводит список всех объектов accessReviewScheduleDefinition, Microsoft 365 группы с гостевыми пользователями.|
+|accessPackageAssignments  |Вывод списка всех объектов accessReviewScheduleDefinition в пакете доступа.|
+|roleAssignmentScheduleInstances  |Список всех объектов accessReviewScheduleDefinition для субъектов-служб, назначенных привилегированной роли.|
 
-Параметр `$filter` запроса не поддерживается в **accessReviewInactiveUserQueryScope** или **principalResourceMembershipScope**.
+Параметр `$filter` запроса не поддерживается **в accessReviewInactiveUserQueryScope** или **principalResourceMembershipScope**.
 
 
 ## <a name="request-headers"></a>Заголовки запросов
 Нет.
 
 ## <a name="request-body"></a>Текст запроса
-Не поставляем тело запроса.
+Не предоставляйте текст запроса.
 
 ## <a name="response"></a>Отклик
-В случае успешной `200 OK` работы этот метод возвращает код отклика и массив [объектов accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в тексте ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и массив объектов [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-the-first-one-hundred-access-review-definitions"></a>Пример 1. Список первой сотни определений обзоров доступа
+### <a name="example-1-list-the-first-one-hundred-access-review-definitions"></a>Пример 1. Вывод списка первых сотен определений проверки доступа
 
 #### <a name="request"></a>Запрос
 
@@ -180,10 +180,10 @@ Content-type: application/json
 ```
 
 
-### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>Пример 2. Извлечение всех определений обзоров доступа для всех Microsoft 365 групп клиента
+### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>Пример 2. Извлечение всех определений проверки доступа, область действия Microsoft 365 групп в клиенте
 
 #### <a name="request"></a>Запрос
-В следующем примере показан запрос на извлечение всей серии обзоров доступа для всех Microsoft 365 групп клиента.
+В следующем примере показан запрос на получение всех рядов проверки доступа, область действия Microsoft 365 групп в клиенте.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -287,7 +287,6 @@ Content-type: application/json
                     }
                 ]
             },
-            "instances@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('cc701697-762c-439a-81f5-f58d680fde76')/instances",
             "instances": []
         }
     ]
@@ -298,7 +297,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Получить accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
+- [Получение accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
 
 
 <!--

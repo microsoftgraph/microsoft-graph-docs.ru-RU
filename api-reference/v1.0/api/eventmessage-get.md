@@ -1,16 +1,16 @@
 ---
 title: Получение объекта eventMessage
-description: расширйте параметр **свойства навигации** событий, чтобы получить связанное событие в календаре участника.
+description: Разверните параметр в **свойстве навигации** по событиям, чтобы получить связанное событие в календаре участника.
 ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dcc1a1d223c2d097ce878d7bc5bc74e1edd2ae2b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5fd3787f21de5876340c0cdf1e6abab826ba87cd
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117499"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365829"
 ---
 # <a name="get-eventmessage"></a>Получение объекта eventMessage
 
@@ -45,7 +45,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -281,7 +281,6 @@ Content-type: application/json
    "replyTo":[
 
    ],
-   "event@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8fd6e83b-3cc0-4bf0-8b26-950f4d7110f6')/messages('AAMkADYAAAImV_jAAA%3D')/microsoft.graph.eventMessage/event/$entity",
    "event":{
       "@odata.etag":"W/\"V5Qf0i9DeEOoOqPo0mABLgAACJpBWg==\"",
       "id":"AAMkADYAAAImVu6AAA=",

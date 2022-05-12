@@ -1,34 +1,34 @@
 ---
 title: Создание printTaskDefinition
-description: Создайте новое определение задачи.
+description: Создайте определение задачи.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: c9ef9a2726238fdcee143193610d5a70adf75f60
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d963e05888b45d42444cb88013c8558dffe9c32d
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117010"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366242"
 ---
 # <a name="create-printtaskdefinition"></a>Создание printTaskDefinition
 Пространство имен: microsoft.graph
 
-Создайте новое определение задачи.
+Создайте определение задачи.
 
-Дополнительные сведения о том, как использовать этот API для добавления поддержки печати для тяги в Universal Print, см. в материале [Extending Universal Print to support pull printing.](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
+Дополнительные сведения об использовании этого API для добавления поддержки печати по запросу в универсальную печать см. в статье "Расширение универсальной печати для [поддержки печати по запросу"](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать.
+Помимо указанных ниже разрешений, клиент пользователя должен иметь активную подписку на универсальную печать.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| PrintTaskDefinition.ReadWrite.All |
+|Для приложений| PrintTaskDefinition.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,13 +47,13 @@ POST /print/taskDefinitions
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [printTaskDefinition.](../resources/printtaskdefinition.md)
+В тексте запроса добавьте представление объекта [printTaskDefinition](../resources/printtaskdefinition.md) в формате JSON.
 
-Свойства **id** **и createdBy.appId** объекта [printTaskDefinition](../resources/printtaskdefinition.md) автоматически заданы при создании ресурса.
+Свойства **id** и **createdBy.appId** объекта [printTaskDefinition](../resources/printtaskdefinition.md) устанавливаются автоматически при создании ресурса.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект printTaskDefinition](../resources/printtaskdefinition.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [printTaskDefinition](../resources/printtaskdefinition.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

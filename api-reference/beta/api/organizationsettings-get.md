@@ -1,26 +1,26 @@
 ---
-title: Get organizationSettings
-description: Извлечение свойств и связей объекта organizationSettings.
+title: Получение organizationSettings
+description: Получение свойств и связей объекта organizationSettings.
 ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 3a016999b2b51b3cc0ec80cdc9681a14de15348c
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: bc796ce943230b695075e6295195424e2527286a
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587303"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365794"
 ---
-# <a name="get-organizationsettings"></a>Get organizationSettings
+# <a name="get-organizationsettings"></a>Получение organizationSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта [organizationSettings](../resources/organizationsettings.md) , включая **profileCardProperties**.
+Получение свойств и связей объекта [organizationSettings](../resources/organizationsettings.md) , включая **profileCardProperties**.
 
-Эта операция не возвращает [insightsSettings](../resources/insightssettings.md). В зависимости от типа анализа можно получить их параметры с помощью [list itemInsights](organizationsettings-list-iteminsights.md) или [list peopleInsights](organizationsettings-list-peopleinsights.md).
+Эта операция не возвращает [insightsSettings](../resources/insightssettings.md). В зависимости от типа аналитических сведений их параметры можно получить с помощью [list itemInsights](organizationsettings-list-iteminsights.md) или [списка peopleInsights](organizationsettings-list-peopleinsights.md).
 
 Эта операция не возвращает [microsoftApplicationDataAccessSettings](../resources/microsoftApplicationDataAccessSettings.md). Чтобы получить [microsoftApplicationDataAccessSettings](../resources/microsoftApplicationDataAccessSettings.md), используйте [список microsoftApplicationDataAccessSettings](organizationsettings-list-microsoftapplicationdataaccess.md).
 
@@ -34,7 +34,7 @@ ms.locfileid: "64587303"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Не поддерживается.                              |
 
->**Примечание:** Использование делегирования разрешений для этой операции требует от пользователя, вписаного, роли администратора клиента или глобального администратора.
+>**Примечание:** Для использования делегированных разрешений для этой операции требуется, чтобы вошед в систему пользователь был администратором клиента или глобальным администратором.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и запрашиваемого объекта [organizationSettings](../resources/organizationsettings.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и запрашиваемый объект [organizationSettings](../resources/organizationsettings.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/organization/a9f3c90b-04fd-4504-a302-47672b
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -125,7 +125,6 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('a9f3c90b-04fd-4504-a302-47672bbca6c8')/settings/$entity",
     "id": "",
-    "profileCardProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('a9f3c90b-04fd-4504-a302-47672bbca6c8')/settings/profileCardProperties",
     "profileCardProperties": [
       {
         "directoryPropertyName": "CustomAttribute1",

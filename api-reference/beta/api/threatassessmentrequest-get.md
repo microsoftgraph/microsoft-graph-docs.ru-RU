@@ -1,16 +1,16 @@
 ---
 title: Получение объекта threatAssessmentRequest
-description: Извлечение свойств и связей указанного объекта threatassessmentrequest.
+description: Получение свойств и связей указанного объекта threatassessmentrequest.
 ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 9f1803c736b272ae4ba853169569b37ee3980f35
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f8c1d77d4bbf43592452eb4788ecc502564785a0
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115637"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364800"
 ---
 # <a name="get-threatassessmentrequest"></a>Получение объекта threatAssessmentRequest
 
@@ -18,9 +18,9 @@ ms.locfileid: "62115637"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей указанного объекта [threatAssessmentRequest.](../resources/threatassessmentrequest.md)
+Получение свойств и связей указанного [объекта threatAssessmentRequest](../resources/threatassessmentrequest.md) .
 
-Запрос на оценку угроз может быть одним из следующих типов:
+Запрос на оценку угроз может иметь один из следующих типов:
 
 * [Почта](../resources/mailAssessmentRequest.md)
 * [Файл электронной почты](../resources/emailFileAssessmentRequest.md)
@@ -35,7 +35,7 @@ ms.locfileid: "62115637"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatAssessment.ReadWrite.All             |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | ThreatAssessment.Read.All                  |
+| Для приложений                            | ThreatAssessment.Read.All                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,11 +47,11 @@ GET /informationProtection/threatAssessmentRequests/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 |Имя            |Значение    |Описание                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$expand         |string   |Использование `$expand=results` в запросе для получения результата оценки угрозы.                                                                                              |
+|$expand         |string   |Использование `$expand=results` в запросе для получения результата оценки угроз.                                                                                              |
 |$select         |string   |Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.                                        |
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -60,17 +60,17 @@ GET /informationProtection/threatAssessmentRequests/{id}
 |:----------|:----------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [threatAssessmentRequest](../resources/threatassessmentrequest.md) в тексте ответа. Возвращаются свойства этого типа: [mailAssessmentRequest,](../resources/mailAssessmentRequest.md) [emailFileAssessmentRequest,](../resources/emailFileAssessmentRequest.md) [fileAssessmentRequest](../resources/fileAssessmentRequest.md), [urlAssessmentRequest](../resources/urlAssessmentRequest.md).
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и запрашиваемый объект [threatAssessmentRequest](../resources/threatassessmentrequest.md) в тексте отклика. Возвращаются свойства этого типа: [mailAssessmentRequest](../resources/mailAssessmentRequest.md), [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md), [fileAssessmentRequest](../resources/fileAssessmentRequest.md), [urlAssessmentRequest](../resources/urlAssessmentRequest.md).
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-properties-of-a-mail-assessment-request"></a>Пример 1. Получить свойства запроса на оценку почты
+### <a name="example-1-get-the-properties-of-a-mail-assessment-request"></a>Пример 1. Получение свойств запроса на оценку почты
 
 #### <a name="request"></a>Запрос
 
@@ -114,7 +114,7 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -150,7 +150,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-properties-of-an-email-file-assessment-request"></a>Пример 2. Получить свойства запроса на оценку файлов электронной почты
+### <a name="example-2-get-the-properties-of-an-email-file-assessment-request"></a>Пример 2. Получение свойств запроса на оценку файлов электронной почты
 
 #### <a name="request"></a>Запрос
 
@@ -194,7 +194,7 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -230,7 +230,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-the-properties-of-a-file-assessment-request"></a>Пример 3. Получить свойства запроса на оценку файлов
+### <a name="example-3-get-the-properties-of-a-file-assessment-request"></a>Пример 3. Получение свойств запроса на оценку файлов
 
 #### <a name="request"></a>Запрос
 
@@ -274,7 +274,7 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -309,7 +309,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-get-the-properties-of-an-url-assessment-request"></a>Пример 4. Получить свойства запроса на оценку URL-адреса
+### <a name="example-4-get-the-properties-of-an-url-assessment-request"></a>Пример 4. Получение свойств запроса на оценку URL-адреса
 
 #### <a name="request"></a>Запрос
 
@@ -353,7 +353,7 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -431,7 +431,7 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -464,7 +464,6 @@ Content-type: application/json
         "displayName": "Ronald Admin"
       }
     },
-    "results@odata.context": "https://graph.microsoft.com/beta/$metadata#informationProtection/threatAssessmentRequests('11922306-b25b-4605-ff0d-08d772fcf996')/microsoft.graph.mailAssessmentRequest/results",
     "results": [
         {
             "id": "63798129-a62c-4f9e-2c6d-08d772fcfb0e",

@@ -1,26 +1,26 @@
 ---
-title: Список назначений пользователя
-description: Возвращает список назначений, присвоенных пользователю для всех классов.
+title: Перечисление назначений пользователя
+description: Возвращает список назначений, назначенных пользователю для всех классов.
 ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f9642ccc072e71ab950448c6e8661149e1e1f302
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7b1de5d2031bd6da5305c6cefa6b6a1fe3fcbfbf
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109026"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365836"
 ---
-# <a name="list-assignments-of-a-user"></a>Список назначений пользователя
+# <a name="list-assignments-of-a-user"></a>Перечисление назначений пользователя
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Возвращает список назначений, присвоенных пользователю для всех классов. 
+Возвращает список назначений, назначенных пользователю для всех классов. 
 
-Это пространство имен утилиты позволяет звонящем находить все назначения, принадлежащие учащемуся или преподавателю, в одном вызове, а не запрашивать назначения у каждого класса. В списке назначений содержится то, что необходимо для получения подробных сведений о назначении из пространства имен класса. Все остальные операции назначения должны использовать пространство имен класса.
+Это пространство имен служебной программы позволяет вызываемой стороне находить все задания, принадлежащие учащемуся или преподавателю, в одном вызове, а не запрашивать задания из каждого класса. Список назначений содержит сведения, необходимые для получения подробных сведений о назначении из пространства имен класса. Все остальные операции с назначением должны использовать пространство имен класса.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,11 +30,11 @@ ms.locfileid: "62109026"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                         |
-| Приложение                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+| Для приложений                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 Для вызова конечной точки `/me` требуется вход пользователя и, следовательно, делегированное разрешение. Разрешения приложений не поддерживаются при использовании конечной точки `/me`.
 
-`/users/{user-id}`Конечная точка работает с делегированием разрешений и разрешений приложений.
+`/users/{user-id}` Конечная точка работает с делегированными разрешениями и разрешениями приложения.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -53,17 +53,17 @@ GET /education/users/{user-id}/assignments
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [educationAssignment](../resources/educationassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [educationAssignment](../resources/educationassignment.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-assignments-of-the-logged-in-user"></a>Пример 1. Получить назначения в журнале пользователя
+### <a name="example-1-get-the-assignments-of-the-logged-in-user"></a>Пример 1. Получение назначений пользователя, выполнив вход
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/education/me/assignments
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -207,7 +207,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-assignments-of-a-user"></a>Пример 2. Назначение пользователя
+### <a name="example-2-get-assignments-of-a-user"></a>Пример 2. Получение назначений пользователя
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -251,11 +251,11 @@ GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-678
 
 #### <a name="response"></a>Отклик
 
-Если пользователь пытается запросить другой пользовательский код, чем его собственный, этот метод возвращает `403 Forbidden` код ответа.
+Если пользователь пытается запросить другой идентификатор пользователя, отличный от его собственного, этот метод возвращает код `403 Forbidden` ответа.
 
-Свойства `instructions` `assignedDateTime` , и всегда будут `assignTo` отображать `resourcesFolderUrl` `webUrl` null.
+Свойства `instructions`, `assignedDateTime`и `assignTo``resourcesFolderUrl` свойства `webUrl` всегда будут отображать значение NULL.
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -356,7 +356,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-user-assignments-with-expand-submissions"></a>Пример 3. Получить назначения пользователей с расширением отправки
+### <a name="example-3-get-user-assignments-with-expand-submissions"></a>Пример 3. Получение назначений пользователей с развернутой отправкой
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -400,9 +400,9 @@ GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-678
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
-> **Примечание:** Он будет расширять представления, если у пользователя есть роль ученика, и будет нулевую для роли учителя.
+> **Примечание:** Он будет расширять отправки, если пользователь имеет роль учащегося и будет иметь значение NULL для роли преподавателя.
 
 
 <!-- {
@@ -458,7 +458,6 @@ Content-type: application/json
                     "displayName": null
                 }
             },
-            "submissions@odata.context": "https://graph.microsoft.com/beta/$metadata#education/users('80cefd93-8d88-40e2-b5d3-67898383e226')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions",
             "submissions": [
                 {
                     "status": "working",

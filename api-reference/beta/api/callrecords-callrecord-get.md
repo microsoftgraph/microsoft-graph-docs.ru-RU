@@ -1,16 +1,16 @@
 ---
 title: Получение callRecord
-description: Извлечение свойств и связей объекта callrecord.
+description: Получение свойств и связей объекта callrecord.
 ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 998557a8849a5c5ad68b8382c0e664d008e97bc0
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3763bae6271b7a1586b1e1173b551d424b73163c
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131640"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366221"
 ---
 # <a name="get-callrecord"></a>Получение callRecord
 
@@ -18,12 +18,12 @@ ms.locfileid: "62131640"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей [объекта callRecord.](../resources/callrecords-callrecord.md)
+Получение свойств и связей объекта [callRecord](../resources/callrecords-callrecord.md) .
 
-Существует два способа получения **id** **callRecord:**
+Получить идентификатор **callRecord** можно  двумя способами:
 
-* [Подпишитесь на изменение уведомлений](/graph/api/resources/webhooks?view=graph-rest-beta) в `/communications/callRecords` конечную точку.
-* Используйте **свойство callChainId** [вызова.](../resources/call.md) Запись вызова доступна только после завершения связанного вызова.
+* [Подпишитесь на уведомления об изменениях](/graph/api/resources/webhooks?view=graph-rest-beta) в конечной `/communications/callRecords` точке.
+* Используйте свойство **callChainId** [вызова](../resources/call.md). Запись вызова доступна только после завершения соответствующего вызова.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,7 +33,7 @@ ms.locfileid: "62131640"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | CallRecords.Read.All |
+| Для приложений                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,23 +51,23 @@ GET /communications/callRecords/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного решения этот метод возвращает код ответа и запрашиваемого `200 OK` [объекта microsoft.graph.callRecords.callRecord](../resources/callrecords-callrecord.md) в тексте ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и запрашиваемый [объект microsoft.graph.callRecords.callRecord](../resources/callrecords-callrecord.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-basic-details"></a>Пример 1. Получить основные сведения
+### <a name="example-1-get-basic-details"></a>Пример 1. Получение основных сведений
 
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса на получения основных сведений из [callRecord.](../resources/callrecords-callrecord.md)
+Ниже приведен пример запроса на получение основных сведений из [callRecord](../resources/callrecords-callrecord.md).
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -159,11 +159,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-full-details"></a>Пример 2. Получить полные сведения
+### <a name="example-2-get-full-details"></a>Пример 2. Получение полных сведений
 
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса на получения полных сведений из [callRecord,](../resources/callrecords-callrecord.md)включая компоненты сеанса и сегмента.
+Ниже приведен пример запроса на получение полных сведений из [callRecord](../resources/callrecords-callrecord.md), включая компоненты сеанса и сегмента.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -204,7 +204,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=ses
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Если список сеансов усечен, для получения следующей страницы сеансов будет предоставлено `sessions@odata.nextLink` значение.
+Ниже приведен пример отклика. Если список сеансов усечен, `sessions@odata.nextLink` будет указано значение для получения следующей страницы сеансов.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -252,7 +252,6 @@ Content-type: application/json
             }
         }
     ],
-    "sessions@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions(segments())",
     "sessions": [
         {
             "modalities": [
@@ -307,7 +306,6 @@ Content-type: application/json
                     }
                 }
             },
-            "segments@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions('e523d2ed-2966-4b6b-925b-754a88034cc5')/segments",
             "segments": [
                 {
                     "startDateTime": "2020-02-25T18:52:21.2169889Z",

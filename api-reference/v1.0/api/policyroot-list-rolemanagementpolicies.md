@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 894eba495c2535a0af32227b83afe3ce1a3021bb
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 3fedf3659cb416f53e1d23cea71cb17c070c39e0
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65315553"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366039"
 ---
 # <a name="list-rolemanagementpolicies"></a>Перечисление roleManagementPolicies
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "65315553"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
+|Для приложений|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -198,7 +198,6 @@ Content-Type: application/json
                 "displayName": "MOD Administrator",
                 "id": null
             },
-            "rules@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/roleManagementPolicies('Directory_cab01047-8ad9-4792-8e42-569340767f1b_70c808b5-0d35-4863-a0ba-07888e99d448')/rules",
             "rules": [
                 {
                     "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",

@@ -1,32 +1,32 @@
 ---
 title: Получение printerShare
-description: Извлечение свойств и связей совместной работы принтера.
+description: Получение свойств и связей общей папки принтера.
 author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 49281f2f1304c776791ba2fdc04691c21daf151e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f00e3930b337c9789cf80ff7dc1c4bac6ce8473e
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091965"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365934"
 ---
 # <a name="get-printershare"></a>Получение printerShare
 Пространство имен: microsoft.graph
 
-Извлечение свойств и связей совместной работы принтера.
+Получение свойств и связей общей папки принтера.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Помимо следующих разрешений, клиент или клиент приложения должен иметь активную подписку на универсальную печать.
+Помимо указанных ниже разрешений, у пользователя или клиента приложения должна быть активная подписка на универсальную печать.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,9 +40,9 @@ GET /print/printers/{printerId}/shares/{printerShareId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает некоторые параметры запроса OData, включая и , чтобы помочь `$select` `$expand` настроить ответ. Например: 
+Этот метод поддерживает некоторые параметры запроса OData, `$select` `$expand`в том числе и для настройки ответа. Например: 
 
-например. 
+Например. 
 ```http
 GET /print/printers/{id}?$select=id,displayName,capabilities
 ```
@@ -56,19 +56,19 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного использования этот метод возвращает код отклика и `200 OK` объект [printerShare](../resources/printershare.md) в тексте отклика.
-По умолчанию ответ не будет содержать [printerCapabilities](../resources/printerCapabilities.md). Чтобы получить **printerCapabilities,** используйте параметр `$select` запроса. 
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [printerShare](../resources/printershare.md) в тексте отклика.
+По умолчанию ответ не будет содержать [printerCapabilities](../resources/printerCapabilities.md). Чтобы получить **printerCapabilities**, используйте параметр `$select` запроса. 
 
-## <a name="response"></a>Отклик
+<!--## Response
 
-В случае успешного использования этот метод возвращает код отклика и `200 OK` объект [printerShare](../resources/printershare.md) в тексте отклика.
+If successful, this method returns a `200 OK` response code and a [printerShare](../resources/printershare.md) object in the response body.-->
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-a-printershare"></a>Пример 1. Получить принтерShare
+### <a name="example-1-get-a-printershare"></a>Пример 1. Получение printerShare
 
 #### <a name="request"></a>Запрос
 
@@ -186,7 +186,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-a-printershare-and-its-capabilities"></a>Пример 2. Получить принтерShare и его возможности
+### <a name="example-2-get-a-printershare-and-its-capabilities"></a>Пример 2. Получение printerShare и его возможностей
 
 #### <a name="request"></a>Запрос
 

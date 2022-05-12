@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 9cd112f1def4b486c5c5069d3c7bb361f35e0c86
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 247795d16dadacdc5f88ffa45d03ffbb880e839e
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62112897"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365003"
 ---
 # <a name="get-open-extension"></a>Получение открытого расширения
 
@@ -26,9 +26,9 @@ ms.locfileid: "62112897"
 
 |**Сценарий GET**|**Поддерживаемые ресурсы**|**Текст ответа**|
 |:-----|:-----|:-----|
-|Получение определенного расширения из экземпляра известного ресурса.| [Административный блок](../resources/administrativeunit.md), [устройство](../resources/device.md), [событие](../resources/event.md), [группа](../resources/group.md) [,](../resources/event.md)групповое событие , [групповое](../resources/post.md)событие [,](../resources/message.md)сообщение [,](../resources/organization.md)организация [,](../resources/contact.md)личный контакт [,](../resources/user.md)пользователь [,](../resources/basetask.md)задача , [tasklist](../resources/basetasklist.md)  | Только открытое расширение.|
-|Получение экземпляра известного ресурса, дополненного определенным расширением.|Административный блок, устройство, событие, группа, групповое событие, групповое событие, должность группы, сообщение, организация, личный контакт, пользователь, задача, список задач. |Экземпляр известного ресурса, дополненный открытым расширением.|
-|Поиск экземпляров ресурсов и их дополнение определенным расширением. | Событие, групповое событие, должность группы, сообщение, личный контакт, задача, список задач |Экземпляры ресурса, дополненные открытым расширением.|
+|Получение определенного расширения из экземпляра известного ресурса.| [Административная](../resources/administrativeunit.md) единица, [устройство](../resources/device.md), [событие](../resources/event.md), [группа](../resources/group.md)[, событие](../resources/event.md) группы, [запись](../resources/post.md) группы, [сообщение](../resources/message.md), [организация](../resources/organization.md), личный [контакт](../resources/contact.md), [пользователь](../resources/user.md), [задача](../resources/basetask.md), [список задач](../resources/basetasklist.md)  | Только открытое расширение.|
+|Получение экземпляра известного ресурса, дополненного определенным расширением.|Административная единица, устройство, событие, группа, событие группы, запись группы, сообщение, организация, личный контакт, пользователь, задача, список задач. |Экземпляр известного ресурса, дополненный открытым расширением.|
+|Поиск экземпляров ресурсов и их дополнение определенным расширением. | Событие, групповое событие, запись группы, сообщение, личный контакт, задача, список задач |Экземпляры ресурса, дополненные открытым расширением.|
 
 ## <a name="permissions"></a>Разрешения
 
@@ -136,7 +136,7 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 |:---------------|:----------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -393,8 +393,7 @@ Content-type: application/json
     "isDraft": false,
     "isRead": true,
     "webLink": "https://outlook.office.com/owa/?ItemID=AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===%2FNJTqt5NqHlVnKVBwCY4MQpaFz9SbqUDe4%2Bbs88AAAAAAEJAACY4MQpaFz9SbqUDe4%2Bbs88AAApA4JMAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
-    "inferenceClassification": "Focused",
-    "extensions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
+    "inferenceClassification": "Focused", 
     "extensions": [ 
       { 
         "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
@@ -578,8 +577,7 @@ HTTP/1.1 200 OK
     "isDraft": false,
     "isRead": true,
     "webLink": "https://outlook.office.com/owa/?ItemID=AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===%2FNJTqt5NqHlVnKVBwCY4MQpaFz9SbqUDe4%2Bbs88AAAAAAEJAACY4MQpaFz9SbqUDe4%2Bbs88AAApA4JMAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
-    "inferenceClassification": "Focused",
-    "extensions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
+    "inferenceClassification": "Focused", 
     "extensions": [ 
       { 
         "@odata.type": "#Microsoft.Graph.OpenTypeExtension",

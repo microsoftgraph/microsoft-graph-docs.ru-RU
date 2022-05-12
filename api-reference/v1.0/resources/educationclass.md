@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e3b3a8618342afd21f9d18cc1d1c96fa2ed9bbf9
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: d9853bf9d82240801c9853b69a60b21ad8830709
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685245"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366235"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 
@@ -28,8 +28,8 @@ ms.locfileid: "64685245"
 | [Создание educationClass](../api/educationclass-post.md) | [educationClass](../resources/educationclass.md)            | Создайте объект [educationClass](../resources/educationclass.md) .                                |
 | [Получение educationClass](../api/educationclass-get.md)       | [educationClass](../resources/educationclass.md)            | Чтение свойств и связей объекта [educationClass](../resources/educationclass.md) . |
 | [Обновление educationClass](../api/educationclass-update.md) | [educationClass](../resources/educationclass.md)            | Обновление свойств объекта [educationClass](../resources/educationclass.md) .                 |
-| [Удаление educationClass](../api/educationclass-delete.md) | Никаких других изменений не происходит                                                        | Удаление объекта [educationClass](../resources/educationclass.md) .                                  |
-| [delta](../api/educationclass-delta.md)                  | Коллекция [educationClass](../resources/educationclass.md) | Получение добавочных изменений в коллекции ресурсов.                                                  |
+| [Удаление educationClass](../api/educationclass-delete.md) | Нет                                                        | Удаление объекта [educationClass](../resources/educationclass.md) .                                  |
+| [Получение дельты](../api/educationclass-delta.md)                  | Коллекция [educationClass](educationclass.md)              | Получение добавочных изменений для **educationClasses**.                                          |
 
 ## <a name="properties"></a>Свойства
 
@@ -53,7 +53,7 @@ ms.locfileid: "64685245"
 | Связь | Тип                                                          | Описание                                               |
 | :----------- | :------------------------------------------------------------ | :-------------------------------------------------------- |
 | assignments  | [коллекция educationAssignment](educationAssignment.md) | Все назначения, связанные с этим классом. Допускается значение null.     |
-| group;        | [group](../resources/group.md)                                | Базовый объект Microsoft 365 группы.                |
+| group        | [group](../resources/group.md)                                | Базовый объект Microsoft 365 группы.                |
 | members      | Коллекция [educationUser](../resources/educationuser.md)     | Все пользователи для этого курса. Допускается значение NULL.                         |
 | schools      | Коллекция [educationSchool](../resources/educationschool.md) | Все учебные заведения, с которыми сопоставлен этот курс. Допускается значение NULL. |
 | teachers     | Коллекция [educationUser](../resources/educationuser.md)     | Все преподаватели для этого курса. Допускается значение NULL.                      |
@@ -61,7 +61,7 @@ ms.locfileid: "64685245"
 |assignmentDefaults| [Коллекция educationAssignmentDefaults](educationassignmentdefaults.md) | Задает значения по умолчанию на уровне класса, которые учитываются новыми назначениями, созданными в классе. |
 |assignmentSettings| [Коллекция educationAssignmentSettings](educationassignmentsettings.md) | Задает параметры назначений на уровне класса. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

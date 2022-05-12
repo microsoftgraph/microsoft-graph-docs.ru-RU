@@ -1,23 +1,23 @@
 ---
-title: Get x509CertificateAuthenticationMethodConfiguration
-description: Ознакомьтесь с свойствами и отношениями объекта x509CertificateAuthenticationMethodConfiguration.
+title: Получение объекта x509CertificateAuthenticationMethodConfiguration
+description: Чтение свойств и связей объекта x509CertificateAuthenticationMethodConfiguration.
 author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6986e51bc8815684841158e0b65f7bfbf429a2df
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 2f2c00157ebd34bcdee5ffe7258c38bb81326dd3
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397969"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365941"
 ---
-# <a name="get-x509certificateauthenticationmethodconfiguration"></a>Get x509CertificateAuthenticationMethodConfiguration
+# <a name="get-x509certificateauthenticationmethodconfiguration"></a>Получение объекта x509CertificateAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сведения о конфигурации метода [проверки подлинности сертификата X.509](../resources/x509certificateauthenticationmethodconfiguration.md) читайте в политике [методов проверки подлинности](../resources/authenticationmethodspolicy.md).
+Ознакомьтесь с сведениями о конфигурации для метода проверки подлинности сертификата [X.509](../resources/x509certificateauthenticationmethodconfiguration.md) в политике [методов проверки подлинности](../resources/authenticationmethodspolicy.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "63397969"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для делегирования сценариев администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев администратору требуется одна из следующих [Azure AD ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный читатель
 * Администратор политики проверки подлинности
@@ -57,7 +57,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x50
 
 ## <a name="response"></a>Отклик
 
-В случае `200 OK` успеха этот метод возвращает код отклика и [объект x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) в теле ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и объект [x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -130,7 +130,6 @@ Content-Type: application/json
         "x509CertificateAuthenticationDefaultMode": "x509CertificateSingleFactor",
         "rules": []
     },
-    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('X509Certificate')/microsoft.graph.x509CertificateAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [
         {
             "targetType": "group",

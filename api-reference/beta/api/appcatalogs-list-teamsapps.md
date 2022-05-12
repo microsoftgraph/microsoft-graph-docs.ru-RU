@@ -1,28 +1,28 @@
 ---
-title: List teamsApp
-description: 'Список приложений из Microsoft Teams приложения. '
+title: Перечисление teamsApp
+description: 'Вывод списка приложений из Microsoft Teams приложения. '
 author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d9c157e69a840f8d8b9326623d1bc73b33588dae
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 77386b0253d0d94096d0687a15111e0e06b66d54
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804292"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365885"
 ---
-# <a name="list-teamsapp"></a>List teamsApp
+# <a name="list-teamsapp"></a>Перечисление teamsApp
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список [приложений](../resources/teamsapp.md) из Microsoft Teams приложения.
-Это включает приложения из Microsoft Teams магазина, а также приложения из каталога приложений организации (каталог приложений клиента). Чтобы получить приложения только из каталога приложений организации, укажите `organization` в запросе **рассылкуMethod** .
+Вывод [списка приложений](../resources/teamsapp.md) из Microsoft Teams приложения.
+К ним относятся приложения из Microsoft Teams, а также приложения из каталога приложений организации (каталог приложений клиента). Чтобы получить приложения только из каталога приложений организации, `organization` укажите в запросе **значение distributionMethod** .
 
 > [!NOTE]
-> Ресурс `id` **teamsApp** создается `id` на сервере и не является таким же, как указанный в манифесте Teams приложения. Предоставленный `id` разработчиком в рамках манифеста Teams `externalId` приложения штампуется как ресурс **teamsApp**.
+> Ресурс `id` **teamsApp** `id` создается сервером и не совпадает с указанным в манифесте Teams приложения. Предоставляемый `id` разработчиком как часть манифеста Teams приложения `externalId` помечается как ресурс **teamsApp**.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -32,9 +32,9 @@ ms.locfileid: "62804292"
 |:---------------------------------------|:------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All **, Directory.ReadWrite.All** |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All |
+| Для приложений                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All |
 
-> **Примечание**. Разрешения, отмеченные **, поддерживаются только для обратной совместимости. Мы рекомендуем обновить решения, чтобы использовать альтернативное разрешение, перечисленное в предыдущей таблице, и избегать использования этих разрешений в будущем.
+> **Примечание**. Разрешения, отмеченные **, поддерживаются только для обратной совместимости. Рекомендуется обновить решения, чтобы использовать другое разрешение, указанное в предыдущей таблице, и избегать использования этих разрешений в будущем.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,9 +48,9 @@ GET /appCatalogs/teamsApps
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$filter`, `$select` и `$expand` для настройки отклика.
 
-Использование `$expand=AppDefinitions` возвращает дополнительные сведения о состоянии приложения, например **о публикацииState**, которое отражает состояние проверки отправки приложения и возвращает, было ли приложение утверждено, отклонено или остается в стадии рассмотрения. 
+При `$expand=AppDefinitions` использовании будут возвращены дополнительные сведения о состоянии приложения, такие как **publishingState**, которое отражает состояние проверки отправки приложения и возвращает, было ли приложение утверждено, отклонено или остается на проверке. 
 
-> **Примечание:** Вы можете фильтровать любое из полей объекта [teamsApp](../resources/teamsapp.md) , чтобы сократить список результатов. Вы можете использовать любую из следующих операций фильтра: Равная, не равная, и, или, и нет.
+> **Примечание:** Чтобы сократить список результатов, можно выполнить фильтрацию по любому из полей объекта [teamsApp](../resources/teamsapp.md) . Можно использовать любую из следующих операций фильтра: "Равно", "Не равно" или "нет".
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -64,13 +64,13 @@ GET /appCatalogs/teamsApps
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и список объектов [teamsApp](../resources/teamsapp.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и список объектов [teamsApp](../resources/teamsapp.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-all-applications-specific-to-the-tenant"></a>Пример 1. Список всех приложений, определенных для клиента
+### <a name="example-1-list-all-applications-specific-to-the-tenant"></a>Пример 1. Вывод списка всех приложений, которые относятся к клиенту
 
-В следующем примере перечислены все приложения, которые специфичны для клиента.
+В следующем примере перечислены все приложения, относящиеся к вашему клиенту.
 
 #### <a name="request"></a>Запрос
 
@@ -141,9 +141,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-list-applications-with-a-given-id"></a>Пример 2. Список приложений с заданным ИД
+### <a name="example-2-list-applications-with-a-given-id"></a>Пример 2. Перечисление приложений с заданным идентификатором
 
-В следующем примере перечислены приложения с заданным ИД.
+В следующем примере перечислены приложения с заданным идентификатором.
 
 #### <a name="request"></a>Запрос
 
@@ -210,9 +210,9 @@ Content-Type: application/json
   ]
 }
 ```
-### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>Пример 3. Поиск приложения на основе Teams манифеста приложения
+### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>Пример 3. Поиск приложения на основе идентификатора манифеста Teams приложения
 
-В следующем примере перечислены приложения, которые соответствуют "id", указанному в манифесте Teams приложения. В этом примере идентификатор манифеста приложения Teams — 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
+В следующем примере перечислены приложения, соответствующие идентификатору, указанному в Teams приложения. В этом примере идентификатор манифеста приложения Teams — 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
 
 #### <a name="request"></a>Запрос
 
@@ -280,9 +280,9 @@ Content-Type: application/json
   }
 ```
 
-### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>Пример 4. Список приложений с заданным ИД и возвращение состояния проверки отправки
+### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>Пример 4. Перечисление приложений с заданным идентификатором и возврат состояния проверки отправки
 
-В следующем примере перечислены приложения с заданным ID и расширены **appDefinitions** , чтобы вернуть **publishingState**, отражающий состояние проверки отправки приложения. `Submitted` означает, что проверка находится в стадии ожидания, `published` означает, что приложение было утверждено администратором, `rejected` а значит, приложение было отклонено администратором.
+В следующем примере перечислены приложения с заданным идентификатором и **развернутые объекты appDefinitions** , чтобы получить **значение publishingState**, которое отражает состояние проверки отправки приложения. `Submitted` означает, что проверка находится в состоянии ожидания, означает, `published` что приложение было утверждено администратором, и означает, `rejected` что приложение было отклонено администратором.
 
 #### <a name="request"></a>Запрос
 
@@ -362,9 +362,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-5-list-the-details-of-only-those-apps-in-the-catalog-that-contain-a-bot"></a>Пример 5. Список сведений только о тех приложениях в каталоге, которые содержат бот
+### <a name="example-5-list-the-details-of-only-those-apps-in-the-catalog-that-contain-a-bot"></a>Пример 5. Вывод списка сведений только о приложениях в каталоге, содержащих бота
 
-В следующем примере перечислены только те приложения в каталоге, которые содержат бот.
+В следующем примере перечислены только те приложения в каталоге, которые содержат бота.
 
 #### <a name="request"></a>Запрос
 
@@ -428,7 +428,6 @@ Content-Type: application/json
             "externalId": "3CAB7543-216D-47C6-986C-6247670F4663",
             "displayName": "Ducks-3",
             "distributionMethod": "organization",
-            "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6')/appDefinitions(bot())",
             "appDefinitions": [
                 {
                     "@odata.etag": "ImNOTW1CR2V1VzgwczlEblVidU00UHc9PSI=",
@@ -452,7 +451,6 @@ Content-Type: application/json
                             "userIdentityType": "aadUser"
                         }
                     },
-                    "bot@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6')/appDefinitions('OGExZWQ3YTMtNWM3OC00NmIyLTg1MDQtZjlkYTAwYTFkMWE2IyMxLjAuOSMjUmVqZWN0ZWQ%3D')/bot/$entity",
                     "bot": {
                         "id": "bb9f67a4-893b-48d7-ab17-40ed466c0f16"
                     }
@@ -464,7 +462,6 @@ Content-Type: application/json
             "externalId": "0ebd3f4d-ca91-495b-a227-a17d298e22cc",
             "displayName": "Self-Install-App-E2E-Tests",
             "distributionMethod": "organization",
-            "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('30909dee-f7dd-4f89-8b3b-55de2e32489c')/appDefinitions(bot())",
             "appDefinitions": [
                 {
                     "@odata.etag": "IkwzVDlMOTBSSEdTMFducHUyYkpjVmc9PSI=",
@@ -488,7 +485,6 @@ Content-Type: application/json
                             "userIdentityType": "aadUser"
                         }
                     },
-                    "bot@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('30909dee-f7dd-4f89-8b3b-55de2e32489c')/appDefinitions('MzA5MDlkZWUtZjdkZC00Zjg5LThiM2ItNTVkZTJlMzI0ODljIyM2LjAuMCMjU3VibWl0dGVk')/bot/$entity",
                     "bot": {
                         "id": "da7d471b-de7d-4152-8556-1cdf7a564f6c"
                     }
@@ -499,9 +495,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-6-list-the-details-of-apps-filtered-by-app-installation-scope"></a>Пример 6. Список сведений о приложениях, отфильтрованных в области установки приложений
+### <a name="example-6-list-the-details-of-apps-filtered-by-app-installation-scope"></a>Пример 6. Список сведений о приложениях, отфильтрованных по области установки приложения
 
-В следующем примере перечислены только те приложения, которые можно установить в личном поле пользователя.
+В следующем примере перечислены только те приложения, которые можно установить в личной области пользователя.
 
 #### <a name="request"></a>Запрос
 
@@ -565,7 +561,6 @@ Content-Type: application/json
             "externalId": "4b3ec336-b998-4623-9e25-d4182fb82159",
             "displayName": "Carriage",
             "distributionMethod": "organization",
-            "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('5a542e1c-5f8c-4793-8b0c-6082464b2378')/appDefinitions(id,displayName,allowedInstallationScopes)",
             "appDefinitions": [
                 {
                     "id": "MWE1NDJlMWMtNWY4Yy00NzkzLThiMGMtNjA4MjQ2NGIyMzc4IyMxLjAuMCMjUHVibGlzaGVk",
@@ -581,9 +576,9 @@ Content-Type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Список приложений, установленных в команде](team-list-installedapps.md)
-- [Список приложений, установленных в чате](chat-list-installedapps.md)
-- [Список приложений, установленных в личной области пользователя](userteamwork-list-installedapps.md)
+- [Перечисление приложений, установленных в команде](team-list-installedapps.md)
+- [Перечисление приложений, установленных в чате](chat-list-installedapps.md)
+- [Перечисление приложений, установленных в личной области пользователя](userteamwork-list-installedapps.md)
 
 
 

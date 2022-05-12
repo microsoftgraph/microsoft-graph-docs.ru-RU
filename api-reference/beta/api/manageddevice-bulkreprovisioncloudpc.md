@@ -1,16 +1,16 @@
 ---
 title: 'managedDevice: bulkReprovisionCloudPc'
-description: Массовое перепроизводение набора устройств облачного ПК с управляемыми ID-устройствами Intune.
+description: Массовая повторная подготовка набора облачных компьютеров с Intune управляемых устройств.
 author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 2c98d596fad136245eae59daef954256f7045ad1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 314c7170ff700abfb2ae59b303610b4ba309c7eb
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030065"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365059"
 ---
 # <a name="manageddevice-bulkreprovisioncloudpc"></a>managedDevice: bulkReprovisionCloudPc
 
@@ -18,7 +18,7 @@ ms.locfileid: "61030065"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Массовое перепроизводение набора устройств облачного ПК с управляемыми ID-устройствами Intune. [](../resources/cloudpc.md)
+Массовая повторная подготовка набора облачных компьютеров с [Intune управляемых](../resources/cloudpc.md) устройств.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -50,17 +50,17 @@ POST /deviceManagement/managedDevices/bulkReprovisionCloudPc
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON iDs управляемых устройств Intune.
+В тексте запроса добавьте представление идентификаторов Intune управляемых устройств в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при массовом перепроизводении набора устройств облачного ПК.
+В следующей таблице показаны свойства, необходимые при массовой повторной подготовке набора облачных компьютеров.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|managedDeviceIds|Collection(String)|ID устройств облачного ПК.|
+|managedDeviceIds|Collection(String)|Идентификаторы устройств с облачными компьютерами.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+В случае успешного выполнения это действие возвращает код `200 OK` отклика и объект [cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -109,10 +109,28 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcBulkRemoteActionResult"
 }
 -->
 
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "microsoft.graph.cloudPcBulkRemoteActionResult",
+    "successfulDeviceIds": [
+        "30d0e128-de93-41dc-89ec-33d84bb662a0"
+    ],
+    "failedDeviceIds": [
+        "7c82a3e3-9459-44e4-94d9-b92f93bf78dd"
+    ],
+    "notFoundDeviceIds": [
+    ],
+    "notSupportedDeviceIds": [
+    ]
+  }
+}
 ```

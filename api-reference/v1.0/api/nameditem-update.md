@@ -3,14 +3,14 @@ title: Обновление объекта NamedItem
 description: Обновление свойств объекта nameditem.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbook-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: a861709a63239b02385b22ece2a009485bb553b5
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 5b8876e7e046628c531ad879c148d274739090db
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938212"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364744"
 ---
 # <a name="update-nameditem"></a>Обновление объекта NamedItem
 
@@ -48,7 +48,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/names/{name}
 
 ## <a name="response"></a>Ответ
 
-В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект WorkbookNamedItem](../resources/nameditem.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный [объект WorkbookNamedItem](../resources/nameditem.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

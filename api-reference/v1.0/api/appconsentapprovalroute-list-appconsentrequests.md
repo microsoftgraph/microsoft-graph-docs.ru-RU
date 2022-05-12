@@ -1,21 +1,21 @@
 ---
-title: Список appConsentRequests
-description: Извлечение объектов appConsentRequest и их свойств
+title: Перечисление объектов appConsentRequests
+description: Получение объектов appConsentRequest и их свойств
 author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ad68cec70bc0937cd670969fa26322588d9ae49a
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: bd8f0525d82b3ac177fbebac1327741e8c602f56
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651650"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364966"
 ---
-# <a name="list-appconsentrequests"></a>Список appConsentRequests
+# <a name="list-appconsentrequests"></a>Перечисление объектов appConsentRequests
 Пространство имен: microsoft.graph
 
-[Извлечение объектов appConsentRequest](../resources/appconsentrequest.md) и их свойств.
+Получение [объектов appConsentRequest](../resources/appconsentrequest.md) и их свойств.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -39,13 +39,13 @@ GET /identityGovernance/appConsent/appConsentRequests
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает  `$select` параметры `$skip` запроса , `$top` , , и `$filter` `$orderby` OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select` запроса `$skip`, , `$top`и `$orderby` `$filter`OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -53,7 +53,7 @@ GET /identityGovernance/appConsent/appConsentRequests
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [appConsentRequest](../resources/appconsentrequest.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [appConsentRequest](../resources/appconsentrequest.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -114,7 +114,6 @@ Content-Type: application/json
       "appId": "3ca5f23f-94b4-4930-aec9-b8ca0f060e68",
       "appDisplayName": "Moodle",
       "pendingScopes": [],
-      "userConsentRequests@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/appConsent/appConsentRequests('af330b30-dd59-4482-a848-0fd81b0438ed')/userConsentRequests",
       "userConsentRequests": []
     }
   ]

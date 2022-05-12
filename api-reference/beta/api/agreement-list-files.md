@@ -1,23 +1,23 @@
 ---
-title: Файлы списков (локализованные файлы соглашений)
-description: Извлечение всех локализованных файлов, связанных с соглашением.
+title: Список файлов (локализованные файлы соглашений)
+description: Получение всех локализованных файлов, связанных с соглашением.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 9679e1e26867130c5ae44cbc2bf0b3fafc6aa110
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: 1c1c821dc14e515972b9a10d06361ccd97c3c118
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63516374"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365892"
 ---
-# <a name="list-files-localized-agreement-files"></a>Файлы списков (локализованные файлы соглашений)
+# <a name="list-files-localized-agreement-files"></a>Список файлов (локализованные файлы соглашений)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение всех локализованных файлов, связанных с соглашением.
+Получение всех локализованных файлов, связанных с соглашением.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -52,7 +52,7 @@ GET /agreements/{agreementsId}?$expand=files
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы этот метод возвращает код отклика и коллекцию объектов [agreementFileLocalization](../resources/agreementfilelocalization.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [agreementFileLocalization](../resources/agreementfilelocalization.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -115,7 +115,6 @@ Content-Type: application/json
     "userReacceptRequiredFrequency": null,
     "isViewingBeforeAcceptanceRequired": true,
     "isPerDeviceAcceptanceRequired": false,
-    "files@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/termsOfUse/agreements('94410bbf-3d3e-4683-8149-f034e55c39dd')/files",
     "files": [
         {
             "id": "08033369-8972-42a3-8533-90bbd2757a01",

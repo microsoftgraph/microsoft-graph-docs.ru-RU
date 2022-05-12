@@ -4,14 +4,14 @@ ms.date: 09/10/2017
 title: Удаление доступа к элементу
 ms.localizationpriority: medium
 description: Отмена доступа к ресурсу DriveItem.
-ms.prod: ''
+ms.prod: files
 doc_type: apiPageType
-ms.openlocfilehash: ffe87066c4a1d99b6458629fcbbc58318585b636
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 36e6a2e455f65ea2975fc751441042d3774356ea
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072843"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365927"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>Удаление разрешения на общий доступ для файла или папки
 

@@ -1,16 +1,16 @@
 ---
 title: Создание открытого расширения
-description: Создание открытого расширения (объект openTypeExtension) и добавление настраиваемого свойства
+description: Создание открытого расширения (объект openTypeExtension) и добавление настраиваемых свойств
 ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: f834fc291a2294de095a6e223d3b144e4e3e995a
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 92b6400c3541e4964cf5ef1ba09cc99e05a60665
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339742"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365808"
 ---
 # <a name="create-open-extension"></a>Создание открытого расширения
 
@@ -18,7 +18,7 @@ ms.locfileid: "62339742"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте открытое расширение ([объект openTypeExtension](../resources/opentypeextension.md) ) и добавьте настраиваемые свойства в новом или существующем экземпляре поддерживаемого ресурса.
+Создайте открытое расширение ([объект openTypeExtension](../resources/opentypeextension.md) ) и добавьте настраиваемые свойства в новый или существующий экземпляр поддерживаемого ресурса.
 
 В таблице раздела [Разрешения](#permissions) перечислены ресурсы, поддерживающие открытые расширения.
 
@@ -102,7 +102,7 @@ POST /users/{id|userPrincipalName}/tasks/lists/{id}/extensions
 
 ## <a name="request-body"></a>Текст запроса
 
-Предостанавлив JSON-корпус [openTypeExtension](../resources/opentypeextension.md), выполнимые ниже пары значений имени и любые дополнительные пользовательские данные. Полезные данные JSON могут относиться к простому типу или представлять собой массив элементов простого типа.
+Предоставьте текст JSON [openTypeExtension](../resources/opentypeextension.md) со следующими необходимыми парами "имя-значение" и дополнительными пользовательскими данными. Полезные данные JSON могут относиться к простому типу или представлять собой массив элементов простого типа.
 
 | Имя       | Значение |
 |:---------------|:----------|
@@ -260,8 +260,6 @@ Content-type: application/json
   "webLink": "https://outlook.office.com/owa/?
 ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
   "inferenceClassification": "Focused",
-  "extensions@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages
-('AAMkAGEbs88AAB84uLuAAA%3D')/extensions",
   "extensions": [
     {
       "@odata.type": "#microsoft.graph.openTypeExtension",
@@ -604,7 +602,6 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations/$entity",
     "id": "AAQkADJToRlbJ5Mg7TFM7H-j3Y=",
-    "threads@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations('AAQkADJToRlbJ5Mg7TFM7H-j3Y%3D')/threads",
     "threads": [
         {
             "id": "AAQkADJDtMUzsf_PdhAAswJOhGVsnkyDtMUzsf_Pdg=="

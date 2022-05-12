@@ -1,22 +1,22 @@
 ---
-title: Чаты списка
-description: Извлечение списка чатов для пользователя.
+title: Перечисление чатов
+description: Получение списка чатов для пользователя.
 author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b0cc62b18db107d05e3317c6832eae310c8af978
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1a7d96d7db62a9457bd8d8883be7452ea19f961d
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134942"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366263"
 ---
-# <a name="list-chats"></a>Чаты списка
+# <a name="list-chats"></a>Перечисление чатов
 
 Пространство имен: microsoft.graph
 
-Извлечение списка [чатов,](../resources/chat.md) в которые входит пользователь.
+Получение списка [чатов](../resources/chat.md) , частью которых является пользователь.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -39,7 +39,7 @@ GET /chats
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры запросов (только для свойств участников) и `$expand`  `$filter` [OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает (только `$expand` для свойства **members** ) `$filter` и параметры [запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -47,7 +47,7 @@ GET /chats
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -57,7 +57,7 @@ GET /chats
 
 ## <a name="example"></a>Пример
 
-### <a name="example-1-list-all-chats"></a>Пример 1. Список всех чатов
+### <a name="example-1-list-all-chats"></a>Пример 1. Перечисление всех чатов
 
 #### <a name="request"></a>Запрос
 
@@ -143,7 +143,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-chats-along-with-the-members-of-each-chat"></a>Пример 2. Список всех чатов вместе с участниками каждого чата
+### <a name="example-2-list-all-chats-along-with-the-members-of-each-chat"></a>Пример 2. Перечисление всех чатов вместе с участниками каждого чата
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
@@ -189,7 +189,7 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 Ниже приведен пример отклика. 
 
 > [!NOTE]
-> Идентификаторы членства, возвращаемые сервером, должны рассматриваться как непрозрачные строки. Клиент не должен пытаться разработать или сделать какие-либо предположения об этих ИД ресурсов.
+> Идентификаторы членства, возвращаемые сервером, должны рассматриваться как непрозрачные строки. Клиент не должен пытаться проанализировать или сделать какие-либо предположения об этих идентификаторах ресурсов.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -213,7 +213,6 @@ Content-type: application/json
             "createdDateTime": "2020-12-08T23:53:05.801Z",
             "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
             "chatType": "meeting",
-            "members@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2%40thread.v2')/members",
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -247,7 +246,6 @@ Content-type: application/json
             "createdDateTime": "2020-12-03T19:41:07.054Z",
             "lastUpdatedDateTime": "2020-12-08T23:53:11.012Z",
             "chatType": "group",
-            "members@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3A561082c0f3f847a58069deb8eb300807%40thread.v2')/members",
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -297,7 +295,6 @@ Content-type: application/json
             "createdDateTime": "2020-12-04T23:10:28.51Z",
             "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
             "chatType": "oneOnOne",
-            "members@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca%40unq.gbl.spaces')/members",
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",

@@ -1,21 +1,21 @@
 ---
-title: Задачи списка Todo
-description: Получите ресурсы todoTask из свойства навигации задач указанного todoTaskList.
+title: Перечисление задач списка дел
+description: Получение ресурсов todoTask из свойства навигации задач указанного todoTaskList.
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0a8eb72640666e6ce8d777e1c663da403062d0bf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 62499074919aa2f539148c38d06be32c266572df
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128245"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364968"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 Пространство имен: microsoft.graph
 
-Получите ресурсы **todoTask** из **свойства** навигации задач указанного [todoTaskList.](../resources/todotasklist.md)
+Получение ресурсов **todoTask** из свойства **навигации задач** указанного [todoTaskList](../resources/todotasklist.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,12 +45,12 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [todoTask](../resources/todotask.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [todoTask](../resources/todotask.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -122,7 +122,6 @@ Content-Type: application/json
             "content":"",
             "contentType":"text"
          },
-         "linkedResources@odata.context":"https://graph.microsoft.com/beta/$metadata#users('todoservicetest2412201901%40outlook.com')/todo/lists('35e2-35e2-721a-e235-1a72e2351a7')/tasks('AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtMDACLTAwCgBGAAAD')/linkedResources",
          "linkedResources":[
             {
                "applicationName":"Partner App Name",

@@ -1,26 +1,26 @@
 ---
-title: Назначения классов списка
-description: Извлечение списка объектов назначения.
+title: Перечисление назначений классов
+description: Получение списка объектов назначения.
 author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e1fed901bb8174247e4108f635791b27e170fca7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 685fe0a965a21ac2d609219719f1269893909898
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62123664"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365962"
 ---
-# <a name="list-class-assignments"></a>Назначения классов списка
+# <a name="list-class-assignments"></a>Перечисление назначений классов
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка объектов назначения. 
+Получение списка объектов назначения. 
 
-Учитель или приложение, исполняющие с разрешениями приложений, могут видеть все объекты назначения для класса. Учащиеся могут видеть только назначения, которые им назначены.
+Преподаватель или приложение, выполняемые с разрешениями приложения, могут просматривать все объекты назначения для класса. Учащиеся могут видеть только назначенные им задания.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +30,7 @@ ms.locfileid: "62123664"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                         |
-| Приложение                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+| Для приложений                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ GET /education/classes/{id}/assignments
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
-Доступные `$expand` параметры для этого метода: , , и который включает в себя `categories` `resources` все предыдущие `rubric` `submissions` `*` параметры.
+Доступны следующие `$expand` параметры для этого метода: `categories`, `resources`, и `submissions` `rubric``*` который включает все предыдущие параметры.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -50,17 +50,17 @@ GET /education/classes/{id}/assignments
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-Не поставляем тело запроса для этого метода.
+Не предоставляйте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [educationAssignment](../resources/educationassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [educationAssignment](../resources/educationassignment.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-assignments"></a>Пример 1. Получить назначения
+### <a name="example-1-get-assignments"></a>Пример 1. Получение назначений
 
 #### <a name="request"></a>Запрос
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -169,7 +169,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-assignments-using-expand-options"></a>Пример 2. Получать назначения с помощью $expand параметров
+### <a name="example-2-get-assignments-using-expand-options"></a>Пример 2. Получение назначений с помощью $expand параметров
 
 #### <a name="request"></a>Запрос
 
@@ -214,7 +214,7 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Ответ включает список ресурсов для каждого назначения. 
+Ниже приведен пример отклика. Ответ содержит список ресурсов для каждого назначения. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -275,7 +275,6 @@ Content-length: 344
                     "displayName": null
                 }
             },
-            "resources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('efcdf80b-a5de-42ac-8579-e40b0223d48b')/resources",
             "resources": []
         },
         {
@@ -320,7 +319,6 @@ Content-length: 344
                     "displayName": null
                 }
             },
-            "resources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('c057de5a-850e-4a35-b233-daf89cd55c8b')/resources",
             "resources": [
                 {
                     "distributeForStudentWork": false,

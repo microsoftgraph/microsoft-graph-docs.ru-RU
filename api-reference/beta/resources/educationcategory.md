@@ -1,18 +1,18 @@
 ---
-title: тип ресурса educationCategory
+title: Тип ресурса educationCategory
 description: Категория, которую можно применить к назначениям.
-author: mmast-msft
+author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 15c6427062f09493168f0f94cca3060bc3f631de
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 49e5f0c27cb643cdba94dc710ae980ef946d19d1
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390887"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366109"
 ---
-# <a name="educationcategory-resource-type"></a>тип ресурса educationCategory
+# <a name="educationcategory-resource-type"></a>Тип ресурса educationCategory
 
 Пространство имен: microsoft.graph
 
@@ -25,19 +25,19 @@ ms.locfileid: "61390887"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Создание категории](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | Создание нового **образованияCategory**.|
-|[Get educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Получите существующее **educationCategory**.|
-|[Удаление категории](../api/educationcategory-delete.md) | Нет | Удалить **educationCategory**.|
-|[Получение дельты](../api/educationcategory-delta.md)|[коллекция educationCategory](../resources/educationcategory.md)|Получите список объектов **educationCategory,** принадлежащих этому классу, с поддержкой запросов delta.|
+|[Создание категории](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | Создайте **новую educationCategory**.|
+|[Получение educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Получите существующую **educationCategory**.|
+|[Удаление категории](../api/educationcategory-delete.md) | Нет | Удалите **educationCategory**.|
+|[Получение дельты](../api/educationcategory-delta.md)|[Коллекция educationCategory](../resources/educationcategory.md)|Получение списка только что созданных или обновленных **объектов educationCategory** без необходимости выполнять полное чтение коллекции.|
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка|Уникальный идентификатор для категории.|
-|displayName|Строка|Уникальный идентификатор для категории.|
+|id|String|Уникальный идентификатор категории.|
+|displayName|String|Уникальный идентификатор категории.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -69,5 +69,3 @@ ms.locfileid: "61390887"
   "suppressions": []
 }
 -->
-
-

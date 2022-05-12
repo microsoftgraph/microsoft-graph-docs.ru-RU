@@ -1,22 +1,22 @@
 ---
-title: Get appConsentRequest
-description: Ознакомьтесь с свойствами и отношениями объекта appConsentRequest.
+title: Получение appConsentRequest
+description: Чтение свойств и связей объекта appConsentRequest.
 author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e6ba7198f47257439d3a5a687b906c6c18a5e2d5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2672785b42008872950ecaee78516fd5d84e5dcd
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61007075"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366095"
 ---
-# <a name="get-appconsentrequest"></a>Get appConsentRequest
+# <a name="get-appconsentrequest"></a>Получение appConsentRequest
 
 Пространство имен: microsoft.graph
 
-Ознакомьтесь с свойствами и отношениями [объекта appConsentRequest.](../resources/appconsentrequest.md)
+Чтение свойств и связей объекта [appConsentRequest](../resources/appconsentrequest.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметр  `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -54,7 +54,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект appConsentRequest](../resources/appconsentrequest.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [appConsentRequest](../resources/appconsentrequest.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -112,7 +112,6 @@ Content-Type: application/json
   "appId": "3ca5f23f-94b4-4930-aec9-b8ca0f060e68",
   "appDisplayName": "Moodle",
   "pendingScopes": [],
-  "userConsentRequests@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/appConsent/appConsentRequests('af330b30-dd59-4482-a848-0fd81b0438ed')/userConsentRequests",
   "userConsentRequests": []
 }
 ```

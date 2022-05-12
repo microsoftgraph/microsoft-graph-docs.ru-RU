@@ -1,22 +1,22 @@
 ---
 title: Получение соглашения
-description: Извлечение свойств и связей объекта соглашения.
+description: Получение свойств и связей объекта соглашения.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 71fc2a299be6eba5eef285dbb9cc6031fcf61244
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: 84773131cc41cdfedeeb20a8e21a65fb92531144
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63515979"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364954"
 ---
 # <a name="get-agreement"></a>Получение соглашения
 
 Пространство имен: microsoft.graph
 
-Извлечение свойств и связей объекта [соглашения](../resources/agreement.md) .
+Получение свойств и связей [объекта соглашения](../resources/agreement.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -43,10 +43,10 @@ GET /identityGovernance/termsOfUse/agreements/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект соглашения в](../resources/agreement.md) тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика [и объект](../resources/agreement.md) соглашения в тексте отклика.
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-retrieve-an-agreement"></a>Пример 1. Извлечение соглашения
+### <a name="example-1-retrieve-an-agreement"></a>Пример 1. Получение соглашения
 
 #### <a name="request"></a>Запрос
 <!-- {
@@ -80,7 +80,7 @@ Content-type: application/json
 ```
 
 
-### <a name="example-2-retrieve-an-agreement-and-its-related-files"></a>Пример 2. Извлечение соглашения и связанных с ним файлов
+### <a name="example-2-retrieve-an-agreement-and-its-related-files"></a>Пример 2. Получение соглашения и связанных с ним файлов
 
 #### <a name="request"></a>Запрос
 
@@ -138,7 +138,6 @@ Content-type: application/json
     "userReacceptRequiredFrequency": "P90D",
     "isViewingBeforeAcceptanceRequired": false,
     "isPerDeviceAcceptanceRequired": false,
-    "files@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/termsOfUse/agreements('0ec9f6a6-159d-4dd8-a563-1f0b5935e80b')/files",
     "files": [
         {
             "id": "681b73a7-e9ae-4f2d-aca5-9e857599cd15",

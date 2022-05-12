@@ -1599,7 +1599,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: Прервать
                     href: api/printjob-abort.md
-                  - name: Redirect
+                  - name: Перенаправление
                     href: api/printjob-redirect.md
               - name: Операция печати
                 href: resources/printoperation.md
@@ -4196,7 +4196,7 @@ items:
                     href: resources/intune-shared-alldevicesassignmenttarget.md
                   - name: Объект назначения всех лицензированных пользователей
                     href: resources/intune-shared-alllicensedusersassignmenttarget.md
-                  - name: Тип пакета VPN для Android enterprise always on
+                  - name: Android корпоративный всегда на типе пакета VPN
                     href: resources/intune-shared-androidenterprisealwaysonvpnpackagetype.md
                   - name: Состояние соответствия
                     href: resources/intune-shared-compliancestatus.md
@@ -4335,7 +4335,7 @@ items:
                 href: api/educationclass-update.md
               - name: Удаление курса
                 href: api/educationclass-delete.md
-              - name: Получение изменений в классах
+              - name: Получение дельты
                 href: api/educationclass-delta.md
               - name: Перечисление преподавателей
                 href: api/educationclass-list-teachers.md
@@ -4423,6 +4423,8 @@ items:
                 href: api/educationassignment-put-rubric.md
               - name: Удаление rubric из назначения
                 href: api/educationassignment-delete-rubric.md
+              - name: Получение дельты
+                href: api/educationassignment-delta.md
           - name: Параметры назначения
             href: resources/educationassignmentsettings.md
             items:
@@ -4446,6 +4448,8 @@ items:
                 href: api/educationcategory-get.md
               - name: Удаление
                 href: api/educationcategory-delete.md
+              - name: Получение дельты
+                href: api/educationcategory-delta.md
           - name: Рубрика
             href: resources/educationrubric.md
             items:
@@ -5432,7 +5436,7 @@ items:
                         href: api/identityapiconnector-get.md
                       - name: Обновление
                         href: api/identityapiconnector-update.md
-                      - name: Upload сертификат клиента
+                      - name: Отправка сертификата клиента
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Удалить
                         href: api/identityapiconnector-delete.md

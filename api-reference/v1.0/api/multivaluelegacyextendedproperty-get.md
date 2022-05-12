@@ -3,14 +3,14 @@ title: Получение объекта multiValueLegacyExtendedProperty
 description: expand'.
 ms.localizationpriority: medium
 author: abheek-das
-ms.prod: ''
+ms.prod: non-product-specific
 doc_type: apiPageType
-ms.openlocfilehash: c3e75e6f7bd88b9bfc005fb87d0a7f44209651c9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dfe0e47e23e08372b27e63adf05bb4304b600e57
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110188"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365766"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>Получение объекта multiValueLegacyExtendedProperty
 
@@ -38,7 +38,7 @@ ms.locfileid: "59110188"
 Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md).
 
 ## <a name="permissions"></a>Разрешения
-В зависимости от ресурса, с который вы получаете расширенное свойство, и от запрашиваемого типа разрешений (делегирования или приложения), разрешение, указанное в следующей таблице, является минимальным, необходимым для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от ресурса, из который вы получаете расширенное свойство, и типа разрешения (делегированного или приложения), которое вы запрашиваете, разрешение, указанное в следующей таблице, является минимальным, необходимым для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
@@ -117,14 +117,14 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `200 OK`.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 
 Основной текст отклика содержит объект, который представляет запрошенный экземпляр ресурса, дополненный соответствующим объектом [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md).
 
@@ -165,7 +165,6 @@ Content-type: application/json
             "address": "christine@contoso.com"
         }
     },
-    "multiValueExtendedProperties@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/events('AAMkAGE1M2_bs88AACbuFiiAAA%3D')/multiValueExtendedProperties",
     "multiValueExtendedProperties": [
         {
             "id": "StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",

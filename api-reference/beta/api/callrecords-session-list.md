@@ -1,24 +1,24 @@
 ---
-title: Список сеансов callRecord
-description: Извлечение списка объектов сеанса для callRecord.
+title: Перечисление сеансов callRecord
+description: Получение списка объектов сеанса для callRecord.
 ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6a70d5b5237178d2ca94852ea2e21bdc6ee2364c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e10dd8733a5f614c3ad78a6d5987d713fcda9d0e
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097236"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365738"
 ---
-# <a name="list-callrecord-sessions"></a>Список сеансов callRecord
+# <a name="list-callrecord-sessions"></a>Перечисление сеансов callRecord
 
 Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка [сеансов, связанных](../resources/callrecords-session.md) с [объектом callRecord.](../resources/callrecords-callrecord.md)
+Получение списка [сеансов, связанных](../resources/callrecords-session.md) с [объектом callRecord](../resources/callrecords-callrecord.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "62097236"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | CallRecords.Read.All |
+| Для приложений                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,23 +46,23 @@ GET /communications/callRecords/{id}/sessions
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и объекты запрашиваемого сеанса `200 OK` в тексте [](../resources/callrecords-session.md) ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и запрашиваемые [объекты сеанса](../resources/callrecords-session.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-session-list"></a>Пример 1. Получить список сеансов
+### <a name="example-1-get-session-list"></a>Пример 1. Получение списка сеансов
 
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса на получения [](../resources/callrecords-session.md) списка сеансов для [callRecord.](../resources/callrecords-callrecord.md)
+Ниже приведен пример запроса на получение списка сеансов [для](../resources/callrecords-session.md) [callRecord](../resources/callrecords-callrecord.md).
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -180,11 +180,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-session-list-with-segments"></a>Пример 2. Получить список сеансов с сегментами
+### <a name="example-2-get-session-list-with-segments"></a>Пример 2. Получение списка сеансов с сегментами
 
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса на получения [](../resources/callrecords-session.md) списка сеансов для [callRecord](../resources/callrecords-callrecord.md) с [включенными сегментами.](../resources/callrecords-segment.md)
+Ниже приведен пример запроса на получение списка сеансов для [callRecord](../resources/callrecords-callrecord.md) с включенными [сегментами](../resources/callrecords-segment.md).[](../resources/callrecords-session.md)
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -225,7 +225,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions?$e
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -296,7 +296,6 @@ Content-type: application/json
                     }
                 }
             },
-            "segments@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions('e523d2ed-2966-4b6b-925b-754a88034cc5')/segments",
             "segments": [
                 {
                     "startDateTime": "2020-02-25T18:52:21.2169889Z",

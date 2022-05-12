@@ -1,28 +1,28 @@
 ---
-title: Get educationSubmission
-description: 'Извлечение определенной отправки. Объект отправки представляет работу учащегося для назначения. Ресурсы, связанные с отправкой, представляют эту работу. Увидеть и изменить представление может только учащийся, за который назначена отправка. Учитель или приложение с разрешениями на приложения имеют полный доступ ко всем отправкам. '
+title: Получение educationSubmission
+description: 'Получение определенной отправки. Объект отправки представляет работу учащегося для задания. Ресурсы, связанные с отправкой, представляют эту работу. Просматривать и изменять отправку может только учащийся, для отправки назначенного учащегося. Преподаватель или приложение с разрешениями приложения имеет полный доступ ко всем отправкам. '
 author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b30839a0610b9d5bfe93099fdef81d3d21e08021
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e526848340fa4af183539766f2da5c679ce88ae0
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130467"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364789"
 ---
-# <a name="get-educationsubmission"></a>Get educationSubmission
+# <a name="get-educationsubmission"></a>Получение educationSubmission
 
 Пространство имен: microsoft.graph
 
-Извлечение определенной [отправки.](../resources/educationsubmission.md)
+Получение определенной [отправки](../resources/educationsubmission.md).
 
-Объект **отправки** представляет работу студента для [назначения.](../resources/educationassignment.md) Ресурсы, связанные с **отправкой,** представляют эту работу.
+Объект **отправки** представляет работу учащегося для [задания](../resources/educationassignment.md). Ресурсы, связанные с **отправкой,** представляют эту работу.
 
-Только **назначенное** Учащемуся может видеть и изменять **отправку.** Учитель или приложение с разрешениями на приложения имеют полный доступ ко всем **отправкам.**
+Только **учащийся assignedTo** может просматривать и изменять **отправку**. Преподаватель или приложение с разрешениями приложения имеет полный доступ ко всем **отправкам**.
 
-Оценка и отзывы от преподавателя являются частью [образованияOutcome,](../resources/educationoutcome.md) связанного с этим объектом. Добавить или изменить оценки и отзывы могут только преподаватели или приложения с разрешениями приложений. Учащиеся не будут видеть оценку или отзывы до тех пор, пока **назначение** не будет выпущено.
+Оценка и отзывы преподавателя являются частью [educationOutcome](../resources/educationoutcome.md) , связанного с этим объектом. Добавлять или изменять оценки и отзывы могут только преподаватели или приложения с разрешениями приложения. Учащиеся не будут видеть оценку или отзывы, пока **задание не** будет выпущено.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +31,7 @@ ms.locfileid: "62130467"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
+|Для приложений | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,20 +41,20 @@ GET /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submi
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
-Ниже параметров для этого метода: , , и , который `$expand` включает все предыдущие `outcomes` `resources` `submittedResources` `*` параметры. Подробные сведения см. в разделе Примеры.
+Ниже приведены доступные параметры `$expand` для этого метода: `outcomes`, `resources`, и `submittedResources`, `*`который включает все предыдущие параметры. Дополнительные сведения см. в разделе примеров.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
-Не поставляем тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не предоставляйте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [educationSubmission](../resources/educationsubmission.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [educationSubmission](../resources/educationsubmission.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
-### <a name="example-1-get-submission"></a>Пример 1. Отправка
+### <a name="example-1-get-submission"></a>Пример 1. Получение отправки
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -93,11 +93,11 @@ GET https://graph.microsoft.com/v1.0/education/classes/59069eb2-2a09-4d90-bb19-2
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
->**Примечания:** Объект отклика, показанный здесь, может быть сокращен для чтения. 
+>**Заметки:** Показанный здесь объект ответа может быть сокращен для удобочитаемости. 
 >
->Если [setUpResourcesFolder](educationsubmission-setupResourcesFolder.md) еще не был вызван на этот ресурс [educationSubmission,](../resources/educationsubmission.md) свойство **resourcesFolderUrl** `null` является .
+>Если [setUpResourcesFolder](educationsubmission-setupResourcesFolder.md) еще не был вызван для этого ресурса [educationSubmission](../resources/educationsubmission.md) , свойство **resourcesFolderUrl** имеет значение `null`.
 
 <!-- {
   "blockType": "response",
@@ -148,7 +148,7 @@ Content-length: 712
 }
 ```
 
-### <a name="example-2-get-submission-with-expand-options"></a>Пример 2. Получить отправку с помощью $expand параметров
+### <a name="example-2-get-submission-with-expand-options"></a>Пример 2. Получение отправки с $expand параметров
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -173,7 +173,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/59069eb2-2a09-4d90-bb19-2
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -223,7 +223,6 @@ Content-length: 4492
             "displayName": null
         }
     },
-    "outcomes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('59069eb2-2a09-4d90-bb19-2089cc69d613')/assignments('80da1069-a635-4913-813f-d775a5470a8f')/submissions('869369de-3e5a-89eb-6f2d-83cd88f860b5')/outcomes",
     "outcomes": [
         {
             "@odata.type": "#microsoft.graph.educationFeedbackOutcome",
@@ -327,9 +326,7 @@ Content-length: 4492
             ]
         }
     ],
-    "resources@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('59069eb2-2a09-4d90-bb19-2089cc69d613')/assignments('80da1069-a635-4913-813f-d775a5470a8f')/submissions('869369de-3e5a-89eb-6f2d-83cd88f860b5')/resources",
     "resources": [],
-    "submittedResources@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('59069eb2-2a09-4d90-bb19-2089cc69d613')/assignments('80da1069-a635-4913-813f-d775a5470a8f')/submissions('869369de-3e5a-89eb-6f2d-83cd88f860b5')/submittedResources",
     "submittedResources": []
 }
 ```

@@ -3,14 +3,14 @@ title: Получение объекта NamedItem
 description: Получение свойств и связей объекта nameditem.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: f03501aacf27e96d7c4caf20e18119983524897b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: d881439450b6194f6d138ee3aee6f013441590dd
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60944489"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364751"
 ---
 # <a name="get-nameditem"></a>Получение объекта NamedItem
 
@@ -46,7 +46,7 @@ GET /me/drive/root:/{item-path}:/workbook/names/{name}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект WorkbookNamedItem](../resources/nameditem.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [WorkbookNamedItem](../resources/nameditem.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

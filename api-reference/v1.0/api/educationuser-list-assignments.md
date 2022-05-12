@@ -1,26 +1,26 @@
 ---
-title: Список назначений пользователя
-description: Возвращает список назначений, присвоенных пользователю для всех классов.
+title: Перечисление назначений пользователя
+description: Возвращает список назначений, назначенных пользователю для всех классов.
 ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4e3a9cfac827c7bc6e2b6d7c8afe9d838b25d291
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: ed12fe80755feac3ac543590a33b2f851457da2a
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63516140"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365017"
 ---
-# <a name="list-assignments-of-a-user"></a>Список назначений пользователя
+# <a name="list-assignments-of-a-user"></a>Перечисление назначений пользователя
 
 Пространство имен: microsoft.graph
 
-Возвращает список [educationAssignment](../resources/educationassignment.md) , назначенного [для educationUser](../resources/educationuser.md) для всех [классов](../resources/educationclass.md). 
+Возвращает список объектов [educationAssignment](../resources/educationassignment.md) , назначенных [educationUser](../resources/educationuser.md) для всех [классов](../resources/educationclass.md). 
 
-Этот метод позволяет звонящем находить все назначения, принадлежащие учащемуся или преподавателю, в одном вызове, а не запрашивать  назначения в каждом **классе**. В **списке** назначений содержится то, что необходимо для получения подробных сведений о назначении из пространства **имен** класса. Используйте методы, определенные для **назначения** для всех остальных операций.
+Этот метод позволяет вызываемой стороне находить все  задания, принадлежащие учащемуся или преподавателю, в одном вызове, а не запрашивать **задания из каждого** **класса**. Список **назначений** содержит сведения, необходимые для получения подробных сведений о назначении **из пространства** **имен класса** . Используйте методы, определенные для **назначения для** всех остальных операций.
 
-> **Примечание:** Свойства `instructions`, `assignedDateTime`и `assignTo``resourcesFolderUrl` всегда `webUrl` будут отображать null.
+> **Примечание:** Свойства `instructions`, `assignedDateTime`и `assignTo``resourcesFolderUrl` свойства `webUrl` всегда будут отображать значение NULL.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -34,7 +34,7 @@ ms.locfileid: "63516140"
 
 Для вызова конечной точки `/me` требуется вход пользователя и, следовательно, делегированное разрешение. Разрешения приложений не поддерживаются при использовании конечной точки `/me`.
 
-Конечная `/users/{user-id}` точка работает с делегированием разрешений и разрешений приложений.
+`/users/{user-id}` Конечная точка работает с делегированными разрешениями и разрешениями приложения.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /education/users/{user-id}/assignments
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры `$submissions` запроса `$categories` [oData и OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает параметры `$submissions` запроса `$categories` [OData](/graph/query-parameters) и для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -59,11 +59,11 @@ GET /education/users/{user-id}/assignments
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `200 OK` ответа и коллекцию объектов [educationAssignment](../resources/educationassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [educationAssignment](../resources/educationassignment.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-assignments-of-the-logged-in-user"></a>Пример 1. Получить назначения в журнале пользователя
+### <a name="example-1-get-the-assignments-of-the-logged-in-user"></a>Пример 1. Получение назначений пользователя, выполнив вход
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/v1.0/education/me/assignments
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -205,7 +205,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-assignments-of-a-user"></a>Пример 2. Назначение пользователя
+### <a name="example-2-get-assignments-of-a-user"></a>Пример 2. Получение назначений пользователя
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -252,9 +252,9 @@ GET https://graph.microsoft.com/v1.0/education/users/f3a5344e-dbde-48b0-be24-b5b
 
 #### <a name="response"></a>Отклик
 
-Если пользователь пытается запросить другой пользовательский код, чем его собственный, этот метод возвращает код `403 Forbidden` ответа.
+Если пользователь пытается запросить другой идентификатор пользователя, отличный от его собственного, этот метод возвращает код `403 Forbidden` ответа.
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -352,7 +352,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-user-assignments-with-expand-submissions"></a>Пример 3. Получить назначения пользователей с расширением отправки
+### <a name="example-3-get-user-assignments-with-expand-submissions"></a>Пример 3. Получение назначений пользователей с развернутой отправкой
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -399,9 +399,9 @@ GET https://graph.microsoft.com/v1.0/education/users/80cefd93-8d88-40e2-b5d3-678
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
-> **Примечание:** Он будет расширять представления, если у пользователя есть роль ученика, и будет нулевую для роли учителя.
+> **Примечание:** Он будет расширять отправки, если пользователь имеет роль учащегося и будет иметь значение NULL для роли преподавателя.
 
 
 <!-- {
@@ -457,7 +457,6 @@ Content-type: application/json
                     "displayName": null
                 }
             },
-            "submissions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/users('80cefd93-8d88-40e2-b5d3-67898383e226')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions",
             "submissions": [
                 {
                     "status": "working",

@@ -1,21 +1,21 @@
 ---
-title: Получить проверку подлинностиMethodsPolicy
-description: Ознакомьтесь с свойствами и отношениями объекта authenticationMethodsPolicy.
+title: Получение authenticationMethodsPolicy
+description: Чтение свойств и связей объекта authenticationMethodsPolicy.
 author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5d0b90204ce482cce2ee131a499d0f0d12059e17
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 434f2e9da053a9f7d4ba58fbff17a3594f0fa7a2
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239024"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366193"
 ---
-# <a name="get-authenticationmethodspolicy"></a>Получить проверку подлинностиMethodsPolicy
+# <a name="get-authenticationmethodspolicy"></a>Получение authenticationMethodsPolicy
 Пространство имен: microsoft.graph
 
-Ознакомьтесь с свойствами и отношениями объекта [authenticationMethodsPolicy.](../resources/authenticationmethodspolicy.md)
+Чтение свойств и связей объекта [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "62239024"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
 
-Для делегирования сценариев администратору требуется одна из следующих ролей [Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегированных сценариев администратору требуется одна из следующих [Azure AD ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный читатель
 * Администратор политики проверки подлинности
@@ -43,7 +43,7 @@ GET /policies/authenticationMethodsPolicy
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод не поддерживает параметры необязательных запросов.
+Этот метод не поддерживает необязательные параметры запроса.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -55,7 +55,7 @@ GET /policies/authenticationMethodsPolicy
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -132,7 +132,6 @@ Content-Type: application/json
             ]
         }
     },
-    "authenticationMethodConfigurations@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations",
     "authenticationMethodConfigurations": [
         {
             "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
@@ -145,7 +144,6 @@ Content-Type: application/json
                 "enforcementType": "block",
                 "aaGuids": []
             },
-            "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Fido2')/microsoft.graph.fido2AuthenticationMethodConfiguration/includeTargets",
             "includeTargets": [
                 {
                     "targetType": "group",
@@ -158,7 +156,6 @@ Content-Type: application/json
             "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
             "id": "MicrosoftAuthenticator",
             "state": "disabled",
-            "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('MicrosoftAuthenticator')/microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration/includeTargets",
             "includeTargets": [
                 {
                     "targetType": "group",
@@ -173,7 +170,6 @@ Content-Type: application/json
             "id": "Email",
             "state": "enabled",
             "allowExternalIdToUseEmailOtp": "default",
-            "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Email')/microsoft.graph.emailAuthenticationMethodConfiguration/includeTargets",
             "includeTargets": []
         }
     ]

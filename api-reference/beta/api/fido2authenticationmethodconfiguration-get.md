@@ -1,23 +1,23 @@
 ---
-title: Get fido2AuthenticationMethodConfiguration
-description: Ознакомьтесь с свойствами и отношениями объекта fido2AuthenticationMethodConfiguration.
+title: Получение fido2AuthenticationMethodConfiguration
+description: Чтение свойств и связей объекта fido2AuthenticationMethodConfiguration.
 author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 532cbf50df2fbfef32f61895a3bc9cbdb5c1eb04
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 65c972544592a34e058d7b027554ebb37e9a493f
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395806"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366018"
 ---
-# <a name="get-fido2authenticationmethodconfiguration"></a>Get fido2AuthenticationMethodConfiguration
+# <a name="get-fido2authenticationmethodconfiguration"></a>Получение fido2AuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md), который представляет политику метода проверки подлинности ключей [](../resources/authenticationmethodspolicies-overview.md) безопасности FIDO2 для клиента Azure Active Directory Azure AD.
+Получение свойств и связей объекта [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md), который представляет политику метода проверки подлинности ключей безопасности FIDO2 для Azure Active Directory (Azure AD).[](../resources/authenticationmethodspolicies-overview.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "63395806"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для делегирования сценариев администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев администратору требуется одна из следующих [Azure AD ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный читатель
 * Администратор политики проверки подлинности
@@ -55,7 +55,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fid
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот `200 OK` метод возвращает код отклика и [объект fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) в тексте ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и объект [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -120,7 +120,6 @@ Content-type: application/json
         "enforcementType": "block",
         "aaGuids": []
     },
-    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Fido2')/microsoft.graph.fido2AuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [
         {
             "targetType": "group",

@@ -1,26 +1,26 @@
 ---
 title: Получение printJob
-description: Извлечение свойств и связей задания печати.
+description: Получение свойств и связей задания печати.
 author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: eea88e679900db3bbd68a22b8fb9191db125b48a
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: b65d8433177a4a6e71c267a01e2e7387474617dc
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60924399"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365716"
 ---
 # <a name="get-printjob"></a>Получение printJob
 Пространство имен: microsoft.graph
 
-Извлечение свойств и связей задания печати.
+Получение свойств и связей задания печати.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Помимо следующих разрешений, клиент пользователя или приложения должен иметь активную подписку на универсальную печать и иметь разрешение, которое предоставляет доступ [к принтеру Get](printer-get.md) или [Get printerShare](printershare-get.md) в зависимости от того, используется ли принтер или принтер.
+Помимо указанных ниже разрешений, у пользователя или клиента приложения должна быть активная подписка на универсальную печать и разрешение, предоставляющее доступ к [get printer](printer-get.md) или [Get printerShare](printershare-get.md) в зависимости от того, используется ли принтер или printerShare.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
@@ -32,12 +32,12 @@ ms.locfileid: "60924399"
 
 <!-- { "blockType": "ignored" } -->
 
-Чтобы получить задание на принтере:
+Чтобы получить задание с принтера:
 ```http
 GET /print/printers/{id}/jobs/{id}
 ```
 
-Чтобы получить задание из доли принтера:
+Чтобы получить задание из общей папки принтера:
 ```http
 GET /print/shares/{id}/jobs/{id}
 ```
@@ -55,14 +55,14 @@ GET /print/shares/{id}/jobs/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект printJob](../resources/printjob.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [printJob](../resources/printjob.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-print-job"></a>Пример 1. Задание печати
+### <a name="example-1-get-print-job"></a>Пример 1. Получение задания печати
 
 #### <a name="request"></a>Запрос
-Ниже приводится пример запроса на получения метаданных для задания печати.
+Ниже приведен пример запроса на получение метаданных для задания печати.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -125,10 +125,10 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-print-job-with-task-list"></a>Пример 2. Получить задание печати со списком задач
+### <a name="example-2-get-print-job-with-task-list"></a>Пример 2. Получение задания печати со списком задач
 
 #### <a name="request"></a>Запрос
-Ниже приводится запрос на выполнение задания [](../resources/printtask.md) печати и любые задачи, которые выполняются или выполняются.
+Ниже приведен запрос на получение задания печати и любых выполняемых [](../resources/printtask.md) или выполненных в нем задач.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -201,10 +201,10 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-get-a-print-job-and-its-associated-document-data"></a>Пример 3. Получить задание печати и связанные с ним данные документов
+### <a name="example-3-get-a-print-job-and-its-associated-document-data"></a>Пример 3. Получение задания печати и связанных с ним данных документа
 
 #### <a name="request"></a>Запрос
-Ниже приводится пример запроса на задание печати и связанных с ним данных документов.
+Ниже приведен пример запроса на получение задания печати и связанных с ним данных документа.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -264,7 +264,6 @@ Content-Type: application/json
   "redirectedTo": null,
   "redirectedFrom": null,
   "isFetchable": false,
-  "documents@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs('5182')/documents",
   "documents": [
     {
       "id": "ca96c367-c3ad-478a-bbce-fbd1cd856e73",

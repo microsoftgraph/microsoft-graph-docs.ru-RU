@@ -1,24 +1,24 @@
 ---
-title: Get meetingRegistration
-description: Получите сведения о регистрации собрания в Интернете.
+title: Получение meetingRegistration
+description: Получение сведений о регистрации собрания по сети.
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e236bd73973d67305ef43be1809d24ca5d7e5339
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 57108b112413d34fd9cf948e4c5ed5324052b28b
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62102851"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365724"
 ---
-# <a name="get-meetingregistration"></a>Get meetingRegistration
+# <a name="get-meetingregistration"></a>Получение meetingRegistration
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите [сведения о собранииРегистрация,](../resources/meetingregistration.md) связанные с [onlineMeeting](../resources/onlinemeeting.md) от имени организатора.
+Получение [сведений о собрании,](../resources/meetingregistration.md) связанных с [onlineMeeting](../resources/onlinemeeting.md) от имени организатора.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,7 +41,7 @@ GET /me/onlineMeetings/{id}/registration
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 > [!TIP]
-> Свойство **customQuestions** не возвращается по умолчанию. Чтобы получить **настраиваемыеQuestions** в строке, используйте параметр запроса, как показано в примере ниже `expand` в этом разделе.
+> Свойство **customQuestions** не возвращается по умолчанию. Чтобы получить **customQuestions** в строке, используйте параметр `expand` запроса, как показано в примере далее в этом разделе.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -49,13 +49,13 @@ GET /me/onlineMeetings/{id}/registration
 | :-------------- | :------------------------ |
 | Авторизация   | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект meetingRegistration](../resources/meetingregistration.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [meetingRegistration](../resources/meetingregistration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -133,7 +133,6 @@ Content-Type: application/json
       "bio": "CFO"
     }
   ],
-  "customQuestions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('dc17674c-81d9-4adb-bfb2-8f6a442e4622')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/microsoft.graph.meetingRegistration/microsoft.graph.meetingRegistration/customQuestions",
   "customQuestions": [
     {
       "id": "MSNhMjVlZmUyMy01MDBhLTQwYjItYjUwZS04YWU5EG9hX3gwMDIwX2RldmU=",

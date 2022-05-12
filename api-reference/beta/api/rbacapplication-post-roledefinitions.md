@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6a53b70d813ba0104bcd93f525866d8c73cf378e
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 86a2a9dc48c52923e51146eedc2dc4cd23c790d8
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246834"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365185"
 ---
 # <a name="create-roledefinitions"></a>Создание roleDefinitions
 
@@ -77,7 +77,7 @@ POST /roleManagement/cloudPc/roleDefinitions
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -184,7 +184,6 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('d5eec5e0-6992-4c6b-b430-0f833f1a815a')/inheritsPermissionsFrom",
     "inheritsPermissionsFrom": []
 }
 ```
@@ -250,7 +249,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

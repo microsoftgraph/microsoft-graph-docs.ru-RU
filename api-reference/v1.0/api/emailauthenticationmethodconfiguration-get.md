@@ -1,22 +1,22 @@
 ---
-title: Получить emailAuthenticationMethodConfiguration
-description: Ознакомьтесь с свойствами и отношениями объекта emailAuthenticationMethodConfiguration.
+title: Получение объекта emailAuthenticationMethodConfiguration
+description: Чтение свойств и связей объекта emailAuthenticationMethodConfiguration.
 author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 94f84e40ff5cc9aa620a60d7b41be3360830e5a9
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: ebdb861b41028c11e2a7a4208f7a4f9be1044246
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395302"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364989"
 ---
-# <a name="get-emailauthenticationmethodconfiguration"></a>Получить emailAuthenticationMethodConfiguration
+# <a name="get-emailauthenticationmethodconfiguration"></a>Получение объекта emailAuthenticationMethodConfiguration
 
 Пространство имен: microsoft.graph
 
-Ознакомьтесь с свойствами и отношениями объекта [электронной почтыAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md), который представляет политику метода проверки подлинности [OTP](../resources/authenticationmethodspolicies-overview.md) электронной почты для клиента Azure Active Directory Azure AD.
+Чтение свойств и связей объекта [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md), который представляет политику метода проверки подлинности [OTP](../resources/authenticationmethodspolicies-overview.md) электронной почты для клиента Azure Active Directory (Azure AD).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "63395302"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
 
-Для делегирования сценариев администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев администратору требуется одна из следующих [Azure AD ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный читатель
 * Администратор политики проверки подлинности
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authen
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы этот метод возвращает код отклика и объект [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) в тексте ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и объект [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -116,7 +116,6 @@ Content-Type: application/json
     "id": "Email",
     "state": "enabled",
     "allowExternalIdToUseEmailOtp": "default",
-    "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Email')/microsoft.graph.emailAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": []
 }
 ```

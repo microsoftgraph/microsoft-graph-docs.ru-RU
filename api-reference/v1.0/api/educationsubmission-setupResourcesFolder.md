@@ -1,24 +1,24 @@
 ---
 title: 'educationSubmission: setUpResourcesFolder'
-description: Запуск создания папки SharePoint, в которой все ресурсы на основе файлов (Word, Excel и так далее) должны быть загружены для данной отправки.
+description: Запустите создание папки SharePoint, в которую все файловые ресурсы (Word, Excel и т. д.) должны быть отправлены для данной отправки.
 ms.localizationpriority: medium
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 46056e35ac29833deb20b1b1f421a9db9bf36e2b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: e24eefafa4ded91ca3753aaab29bb1564eff6299
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60931803"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366172"
 ---
 # <a name="educationsubmission-setupresourcesfolder"></a>educationSubmission: setUpResourcesFolder
 
 Пространство имен: microsoft.graph
 
-Запуск создания папки SharePoint, в которой все ресурсы на основе файлов (Word, Excel и так далее) должны быть загружены для данной отправки.
+Запустите создание папки SharePoint, в которую все файловые ресурсы (Word, Excel и т. д.) должны быть отправлены для данной отправки.
 
-Обратите внимание, что файлы должны быть размещены в этой папке, чтобы они были добавлены в качестве ресурсов. Только учащийся в классе может определить, какие файлы загрузить в данной папке ресурсов на уровне отправки. 
+Обратите внимание, что файлы должны находиться в этой папке для добавления в качестве ресурсов. Только учащийся в классе может определить, какие файлы нужно отправить в заданную папку ресурсов уровня отправки. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,13 +38,13 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/setUpResourcesFol
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer `{token}`. Обязательный параметр.  |
+| Authorization  | Bearer `{token}`. Обязательный параметр.  |
 
 ## <a name="request-body"></a>Текст запроса
-Предоставление пустого json `{}` в качестве тела запроса для этого метода.
+Укажите пустой JSON в `{}` качестве текста запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 Ok`. Тело будет содержать модель отправки.
+В случае успешного выполнения этот метод возвращает код отклика `200 Ok`. Текст будет содержать модель отправки.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -133,9 +133,7 @@ Content-type: application/json
             "displayName": null
         }
     },
-    "resources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('b07edbef-7420-4b3d-8f7c-d599cf21e069')/assignments('1e5222bd-b7d2-4d64-8a22-74b722ce2fc6')/submissions('803fb5dd-3553-455f-3d94-f79fb54a1003')/resources",
     "resources": [],
-    "submittedResources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('b07edbef-7420-4b3d-8f7c-d599cf21e069')/assignments('1e5222bd-b7d2-4d64-8a22-74b722ce2fc6')/submissions('803fb5dd-3553-455f-3d94-f79fb54a1003')/submittedResources",
     "submittedResources": []
 }
 ```

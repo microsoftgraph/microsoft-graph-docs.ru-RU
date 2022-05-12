@@ -1,23 +1,23 @@
 ---
-title: Список appConsentRequests
-description: Извлечение объектов appConsentRequest и их свойств.
+title: Перечисление объектов appConsentRequests
+description: Получение объектов appConsentRequest и их свойств.
 author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: de18f6d7aefdb7ad96f06d2b11900c59414f4de0
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 52fb6058eeaa49d9d543b31110518362244b66c3
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651115"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365878"
 ---
-# <a name="list-appconsentrequests"></a>Список appConsentRequests
+# <a name="list-appconsentrequests"></a>Перечисление объектов appConsentRequests
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Извлечение объектов appConsentRequest](../resources/appconsentrequest.md) и их свойств.
+Получение [объектов appConsentRequest](../resources/appconsentrequest.md) и их свойств.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,21 +39,21 @@ GET /identityGovernance/appConsent/appConsentRequests
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает  `$select` параметры `$skip` запроса , `$top` , , и `$filter` `$orderby` OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select` запроса `$skip`, , `$top`и `$orderby` `$filter`OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [appConsentRequest](../resources/appconsentrequest.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [appConsentRequest](../resources/appconsentrequest.md) в тексте отклика.
 
-## <a name="example-1-list-all-appconsentrequests"></a>Пример 1. Список всех appConsentRequests
+## <a name="example-1-list-all-appconsentrequests"></a>Пример 1. Перечисление всех объектов appConsentRequests
 
 ### <a name="request"></a>Запрос
 
@@ -112,14 +112,13 @@ Content-Type: application/json
       "appDisplayName": "Moodle",
       "consentType": "Dynamic",
       "pendingScopes": [],
-      "userConsentRequests@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('af330b30-dd59-4482-a848-0fd81b0438ed')/userConsentRequests",
       "userConsentRequests": []
     }
   ]
 }
 ```
 
-## <a name="example-2-list-all-appconsentrequests-with-at-least-one-userconsentrequest-whose-status-is-inprogress"></a>Пример 2. Список всех appConsentRequests по крайней мере с одним пользователемConsentRequest, состояние которого InProgress
+## <a name="example-2-list-all-appconsentrequests-with-at-least-one-userconsentrequest-whose-status-is-inprogress"></a>Пример 2. Вывод списка всех объектов appConsentRequest по крайней мере с одним объектом userConsentRequest, состояние которого — InProgress
 
 ### <a name="request"></a>Запрос
 
@@ -178,7 +177,6 @@ Content-Type: application/json
       "appDisplayName": "Moodle",
       "consentType": "Dynamic",
       "pendingScopes": [],
-      "userConsentRequests@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('af330b30-dd59-4482-a848-0fd81b0438ed')/userConsentRequests",
       "userConsentRequests": []
     }
   ]

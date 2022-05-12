@@ -3,14 +3,14 @@ title: 'NamedItem: Range'
 description: Возвращает объект Range, сопоставленный с именем. Вызывает исключение, если тип именованного элемента не является диапазоном.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: c815be7955f28a57db3900808066944dac247541
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: fad8ae7da8b207b8ea477a54b4ec71d1cafa047d
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943691"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366032"
 ---
 # <a name="nameditem-range"></a>NamedItem: Range
 

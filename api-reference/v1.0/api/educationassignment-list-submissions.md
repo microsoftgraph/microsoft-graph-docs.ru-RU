@@ -1,24 +1,24 @@
 ---
-title: Отправки списков
-description: Список всех отправлений, связанных с назначением.
+title: Перечисление отправок
+description: Вывод списка всех отправок, связанных с назначением.
 author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 63a97d3205a140d0f7ad8fecd86023acd2d8e53e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2b3ed96fbda874d3d8eb690cfc1a2e960771f811
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092455"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366256"
 ---
-# <a name="list-submissions"></a>Отправки списков
+# <a name="list-submissions"></a>Перечисление отправок
 
 Пространство имен: microsoft.graph
 
-Список всех представлений, связанных с [назначением.](../resources/educationassignment.md) 
+Вывод списка всех отправок, связанных с [назначением](../resources/educationassignment.md). 
 
-Учитель или приложение с разрешениями на приложения могут получать все материалы, в то время как студент может получать только те материалы, с которые они связаны.
+Преподаватель или приложение с разрешениями приложения может получить все отправки, в то время как учащийся может получать только отправки, с которых он связан.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "62092455"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
+|Для приложений | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,22 +38,22 @@ GET /education/classes/{id}/assignments/{id}/submissions
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
-Ниже параметров для этого метода: , , и , который `$expand` включает все предыдущие `outcomes` `resources` `submittedResources` `*` параметры.
+Ниже приведены доступные параметры `$expand` для этого метода: `outcomes`, `resources`, и `submittedResources`, `*`который включает все предыдущие параметры.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
-Не поставляем тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не предоставляйте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` объектов [educationSubmission](../resources/educationsubmission.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [educationSubmission](../resources/educationsubmission.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-submissions"></a>Пример 1. Получения представлений
+### <a name="example-1-get-submissions"></a>Пример 1. Получение отправок
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -151,7 +151,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-submissions-with-expand-options"></a>Пример 2. Получать отправки с помощью $expand параметров
+### <a name="example-2-get-submissions-with-expand-options"></a>Пример 2. Получение отправок с $expand параметров
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -246,7 +246,6 @@ Content-length: 4492
                     "displayName": null
                 }
             },
-            "outcomes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('efcdf80b-a5de-42ac-8579-e40b0223d48b')/submissions('9bc724ee-d314-1ec5-725d-5f81228e85a6')/outcomes",
             "outcomes": [
                 {
                     "@odata.type": "#microsoft.graph.educationFeedbackOutcome",

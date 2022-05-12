@@ -3,18 +3,18 @@ title: Add Named Item FormulaLocal
 description: Добавляет новое имя в определенную коллекцию, применяя языковой стандарт пользователя для формулы.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: db613228752c4a1fa3fc2f956903c994ba430759
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 732e233bf0e110c97415c51695a0358fddecf688
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60928305"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365801"
 ---
 # <a name="add-named-item-formulalocal"></a>Add Named Item FormulaLocal
 
-Пространство имен: microsoft.graph добавляет новое имя в коллекцию данной области с помощью локалиа пользователя для формулы.
+Пространство имен: microsoft.graph добавляет новое имя в коллекцию заданной области с использованием языкового стандарта пользователя для формулы.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,7 +51,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/names/add
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект WorkbookNamedItem](../resources/nameditem.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [WorkbookNamedItem](../resources/nameditem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

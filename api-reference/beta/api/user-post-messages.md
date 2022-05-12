@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0b380851d0eee45411dc02908d2b905b6ba590ec
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2f8a2dcd2ebb53db5285c77888408be335d92147
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095739"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365788"
 ---
 # <a name="create-message"></a>Создание объекта Message
 
@@ -21,8 +21,8 @@ ms.locfileid: "62095739"
 Создание черновика нового сообщения в формате JSON или MIME.
 
 При использовании формата JSON можно:
-- Включив [вложение.](../resources/attachment.md)
-- Используйте [упоминание,](../resources/mention.md) чтобы вызвать другого пользователя в новом сообщении.
+- Включите [вложение](../resources/attachment.md).
+- Используйте упоминание [,](../resources/mention.md) чтобы вызвать другого пользователя в новом сообщении.
 - [Обновите](../api/message-update.md) черновике позже, чтобы добавить **текст** или изменить другие свойства сообщения.
 
 При использовании формата MIME:
@@ -33,7 +33,7 @@ ms.locfileid: "62095739"
 
 [Отправьте](../api/message-send.md) черновик сообщения в ходе последующей операции.
 
-Кроме того, [отправьте новое сообщение](../api/user-sendmail.md) в одном действии или [](../api/message-createreply.md) создайте [](../api/message-createreplyall.md) черновик для отправки, [](../api/message-createforward.md)чтобы ответить или ответить всем на существующее сообщение.
+Кроме того, [можно отправить новое сообщение](../api/user-sendmail.md) в одном действии или создать черновик для пересылки [](../api/message-createreply.md) [, ответа](../api/message-createforward.md) или [](../api/message-createreplyall.md) ответа всем на существующее сообщение.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -55,31 +55,31 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}.|
-| Content-Type | string  | Характер данных в теле объекта. Обязательный.<br/> Использование `application/json` объекта JSON и `text/plain` контента MIME |
+| Authorization  | string  | Носитель {token}.|
+| Content-Type | string  | Характер данных в теле объекта. Обязательный.<br/> Использование `application/json` для объекта JSON и содержимого `text/plain` MIME |
 
-## <a name="request-body"></a>Тело запроса
-При использовании формата JSON предоформим JSON-представление объекта [сообщения.](../resources/message.md)
+## <a name="request-body"></a>Текст запроса
+При использовании формата JSON предоставьте представление объекта сообщения в [формате](../resources/message.md) JSON.
 
 При указании текста в формате MIME укажите содержимое MIME с применимыми заголовками сообщений Интернета ("Кому", "Копия", "Скрытая копия", "Тема"), все закодированные сообщения в формате **Base64** в тексте запроса.
 
-Чтобы использовать **упоминание,** чтобы вызвать другого пользователя в новом сообщении:
-- Включай в текст запроса обязательное свойство **toRecipients,** свойство **mentions** и любые полезные свойства сообщений.
-- Для каждого упоминания в **свойстве упоминаний** необходимо указать **упомянутое** свойство.
+Чтобы использовать **упоминание** для вызова другого пользователя в новом сообщении:
+- Включите обязательное **свойство toRecipients** , свойство **упоминаний** и все записываемые свойства сообщения в тексте запроса.
+- Для каждого упоминания в **свойстве упоминаний** необходимо указать **указанное** свойство.
 
 Так как ресурс **message** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными в сообщение при его создании.
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `201 Created` объект [сообщения](../resources/message.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [сообщения](../resources/message.md) в тексте отклика.
 
 Если текст запроса содержит неправильно отформатированное содержимое MIME, этот метод возвращает `400 Bad request` и следующее сообщение об ошибке: "Недопустимая строка Base 64 для содержимого MIME".
 
 ## <a name="examples"></a>Примеры
-### <a name="example-1-create-a-message-draft-in-json-format"></a>Пример 1. Создание черновика сообщений в формате JSON
+### <a name="example-1-create-a-message-draft-in-json-format"></a>Пример 1. Создание черновика сообщения в формате JSON
 #### <a name="request"></a>Запрос
-Вот пример запроса на создание черновика нового сообщения.
+Ниже приведен пример запроса на создание черновика нового сообщения.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -203,9 +203,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-draft-message-that-includes-an--mention"></a>Пример 2. Создание черновика сообщения с упоминанием @
+### <a name="example-2-create-a-draft-message-that-includes-an--mention"></a>Пример 2. Создание черновика сообщения с @-упоминанием
 #### <a name="request"></a>Запрос
-В следующем примере показан черновик электронной почты Ранди Уэлч в Samantha Booth. В сообщении также содержится упоминание другого пользователя, Даны Swope.
+В следующем примере показан черновик сообщения электронной почты От Ранди Уиша (Randi Welch) к Samantha Booth. В сообщении также содержится упоминание другого пользователя, Dana Swope.
 
 Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.
 
@@ -301,7 +301,6 @@ Content-type: application/json
   "mentionsPreview":{
     "isMentioned":false
   },
-  "mentions@odata.context":"https://graph.microsoft.com/beta/$metadata#me/messages('AQMkADJmMTUAAAW1fsAAAAA%3D%3D')/mentions",
   "mentions":[
     {
       "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages('AQMkADJmMTUAAAW1fsAAAAA==')/mentions('4577bba4-b063-4cea-9073-6f7ca815fcec')",
@@ -326,7 +325,7 @@ Content-type: application/json
 
 ```
 
-### <a name="example-3-create-a-draft-message-that-includes-custom-internet-message-headers"></a>Пример 3. Создание черновика сообщения, которое включает настраиваемые заглавные сообщения в Интернете
+### <a name="example-3-create-a-draft-message-that-includes-custom-internet-message-headers"></a>Пример 3. Создание черновика сообщения с настраиваемыми заголовками сообщений в Интернете
 #### <a name="request"></a>Запрос
 
 

@@ -1,23 +1,23 @@
 ---
-title: Get baseTask
-description: Ознакомьтесь с свойствами и отношениями объекта baseTask.
+title: Получение baseTask
+description: Чтение свойств и связей объекта baseTask.
 author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0caaca09bd7350678fe8f2f01517cd77069d08d8
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 2b1cef10bb6f67b2f9613d566b971a9e353271cb
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451349"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365199"
 ---
-# <a name="get-basetask"></a>Get baseTask
+# <a name="get-basetask"></a>Получение baseTask
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями [объекта baseTask](../resources/basetask.md) .
+Чтение свойств и связей объекта [baseTask](../resources/basetask.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -55,7 +55,7 @@ GET /users/{userId|userPrincipalName}/tasks/alltasks/{baseTaskId}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект baseTask](../resources/basetask.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [baseTask](../resources/basetask.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -117,7 +117,6 @@ Content-Type: application/json
     "lastModifiedDateTime": "2021-11-15T13:17:24.9876101Z",
     "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT--0qFRAqk3TNe0QAAAy35RwAA",
     "textBody":  "",
-    "parentList@odata.context": "https://graph.microsoft.com/beta/$metadata#users('43e9e4fb-be9f-4ee4-b879-59688955ed54')/tasks/lists('AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA%3D')/tasks('AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT--0qFRAqk3TNe0QAAAy35RwAA')/microsoft.graph.task/parentList/$entity",
     "parentList": {
         "id": "AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA="
     }
