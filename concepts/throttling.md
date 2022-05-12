@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6f37fdf90f510a650f2b1d13c42e83636c22697a
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: f870167c24d1ccdf24659bc9b8bdb843c8d0b812
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133351"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365920"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -307,6 +307,11 @@ Microsoft Graph позволяет получать доступ к данным
 
 [!INCLUDE [Azure AD identity and access reports throttling documentation](../includes/throttling-aad-reports.md)]
 
+#### <a name="identity-and-access-reports-best-practices"></a>Рекомендации по отчетам об идентификации и доступе
+API-интерфейсы отчетов Azure AD регулируются, когда Azure AD получает слишком много вызовов в течение заданного периода времени от клиента или приложения. Вызовы также могут быть ограничены, если служба отвечает слишком долго. Если ваши запросы по-прежнему завершаются ошибкой с кодом ошибки `429 Too Many Requests`, несмотря на применение [описанных выше рекомендаций](#best-practices-to-handle-throttling), попробуйте уменьшить объем возвращаемых данных. Сначала попробуйте эти подходы:
+- Используйте фильтры, чтобы настроить запрос только на те данные, которые вам нужны. Если вам нужен только определенный тип события или подмножество пользователей, например, отфильтруйте другие события, используя параметры запроса `$filter` и `$select`, чтобы уменьшить размер объекта ответа и риск регулирования.
+- Если вам нужен широкий набор данных отчетов Azure AD, используйте`$filter` для **createdDateTime**, чтобы ограничить количество событий входа, которые вы запрашиваете в одном вызове. Затем выполните итерацию по следующему промежутку времени, пока не получите все необходимые записи. Например, если вас регулируют, вы можете начать с вызова, запрашивающего данные за 3 дня, и выполнять итерации с более короткими промежутками времени, пока ваши запросы больше не будут регулироваться.
+  
 ### <a name="information-protection-service-limits"></a>Ограничения службы защиты информации
 
 Указанные ниже ограничения применяются к любому запросу в `/informationProtection`.

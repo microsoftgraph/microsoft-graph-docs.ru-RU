@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: fb9d91dc1390ecc217f94051006a8d10111d848b
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
-ms.translationtype: MT
+ms.openlocfilehash: c05bc8548fc6e43b96720e358204cb9752c5ddbe
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477890"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366060"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -245,7 +245,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="owner-must-be-specified-when-updating-a-schemaextension-definition-using-microsoft-graph-explorer"></a>При обновлении определения schemaExtension с помощью проводника Microsoft Graph должен быть указан владелец
 
-При использовании `PATCH` для обновления schemaExtension с помощью проводника Graph необходимо указать свойство **owner** и задать для него текущее значение `appid` (которое должно быть `appId` имеющегося приложения). Это также относится к любому клиентскому приложению `appId`, **владелец** которого не совпадает с ним.
+При использовании `PATCH` для обновления schemaExtension с помощью проводника Graph необходимо указать свойство **owner** и задать для него текущее значение `appId` (которое должно быть `appId` имеющегося приложения). Это также относится к любому клиентскому приложению `appId`, **владелец** которого не совпадает с ним.
 
 ### <a name="filtering-on-schema-extension-properties-is-not-supported-on-all-entity-types"></a>Фильтрация по свойствам расширения схемы не поддерживается для всех типов объектов
 
@@ -405,6 +405,24 @@ API [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy) может �
 - [Обновление приложения, установленного в команде](/graph/api/team-teamsappinstallation-upgrade.md)
 - [Добавление приложения в чат](/graph/api/chat-post-installedapps)
 - [Обновление приложения, установленного в чате](/graph/api/chat-teamsappinstallation-upgrade.md)
+
+### <a name="unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id"></a>Невозможно получить доступ к общему каналу между арендаторами, когда URL-адрес запроса содержит tenants/{cross-tenant-id}
+Вызовы API для [teams/{team-id}/incomingChannels](/graph/api/team-list-incomingchannels.md) и [teams/{team-id}/allChannels](/graph/api/team-list-allchannels.md) возвращают свойство **@odata.id**, которое можно использовать для доступа к каналу и выполнения других операций над объектом [канала](/graph/api/resources/channel.md). Если вы вызываете URL-адрес, возвращенный из свойства **@odata.id**, запрос завершается со следующей ошибкой при попытке доступа к общему [каналу](/graph/api/resources/channel.md) между клиентами:
+```http
+GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
+{
+    "error": {
+        "code": "BadRequest",
+        "message": "TenantId in the optional tenants/{tenantId} segment should match the tenantId(tid) in the token used to call Graph.",
+        "innerError": {
+            "date": "2022-03-08T07:33:50",
+            "request-id": "dff19596-b5b2-421d-97d3-8d4b023263f3",
+            "client-request-id": "32ee2cbd-27f8-2441-e3be-477dbe0cedfa"
+        }
+    }
+}
+```
+Чтобы решить эту проблему, удалите часть `/tenants/{tenant-id}` URL-адреса, прежде чем вызывать API для доступа к общему [каналу](/graph/api/resources/channel.md) между арендаторами.
 
 ## <a name="users"></a>Пользователи
 
