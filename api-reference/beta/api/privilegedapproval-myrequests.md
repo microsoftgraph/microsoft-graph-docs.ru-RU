@@ -4,13 +4,13 @@ description: Получение запросов утверждения запр
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: c2df406d619b5ba28456f41b14e7464d0dba8382
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 20d8682e26c1db88182839847c0bb1c61d7b53d3
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65316397"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399406"
 ---
 # <a name="privilegedapproval-myrequests"></a>privilegedApproval: myRequests
 

@@ -1,18 +1,18 @@
 ---
-title: тип ресурса governanceRoleSetting
-description: Представляет набор конфигураций для каждого определения ролей, которые необходимо оценивать при назначении ролей при их назначении или изменениях.
+title: Тип ресурса governanceRoleSetting
+description: Представляет набор конфигураций для каждого определения роли, который необходимо оценить при создании или изменении назначений ролей.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 8a98725d26d160b9d8687fceb87e6811440ed31a
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: d5e441b35cd4b6ccdb52710508bd8afe5955d860
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509660"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399470"
 ---
-# <a name="governancerolesetting-resource-type"></a>тип ресурса governanceRoleSetting
+# <a name="governancerolesetting-resource-type"></a>Тип ресурса governanceRoleSetting
 
 Пространство имен: microsoft.graph
 
@@ -20,37 +20,37 @@ ms.locfileid: "64509660"
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Представляет набор конфигураций для каждого определения ролей, которые необходимо оценивать при назначении ролей при их назначении или изменениях. Например, параметры ролей могут включать правило "максимальная продолжительность назначения", правило "MFA, требуемая для активации" и так далее.
+Представляет набор конфигураций для каждого определения роли, который необходимо оценить при создании или изменении назначений ролей. Например, параметры роли могут включать правило "максимальная длительность назначения", правило MFA, необходимое для активации, и т. д.
 
 ## <a name="methods"></a>Методы
 
 | Метод          | Возвращаемый тип |Описание|
 |:---------------|:--------|:--------|
-|[Список](../api/governancerolesetting-list.md) | [коллекция governanceRoleSetting](../resources/governancerolesetting.md)|Список параметров ролей на ресурсе.|
-|[Получение](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |Чтение свойств и связей параметра ролей.|
-|[обновление](../api/governancerolesetting-update.md). | [governanceRoleSetting](../resources/governancerolesetting.md)  |Обновление объекта параметра роли. |
+|[Перечисление](../api/governancerolesetting-list.md) | [Коллекция governanceRoleSetting](../resources/governancerolesetting.md)|Вывод списка параметров роли для ресурса.|
+|[Получение](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |Чтение свойств и связей параметра роли.|
+|[Обновление](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |Обновление объекта параметра роли. |
 
 ## <a name="properties"></a>Свойства
 |Свойство               |Тип                                      |Описание|
 |:--------------------|:---------------------------------------|:----------|
-|id                   |Строка                                  |Id of the roleSetting.|
-|resourceId           |String                                  |Обязательный. ID ресурса, с который связан параметр роли.|
-|roleDefinitionId     |String                                  |Обязательный. ID определения роли, с чем связан параметр роли.|
-|isDefault            |Boolean                                 |Только для чтения. Указать, является ли рольSetting ролью по умолчанию.|
+|id                   |String                                  |Идентификатор roleSetting.|
+|resourceId           |String                                  |Обязательный. Идентификатор ресурса, с помощью которого связан параметр роли.|
+|roleDefinitionId     |String                                  |Обязательный. Идентификатор определения роли, с помощью которого связан параметр роли.|
+|isDefault            |Boolean                                 |Только для чтения. Укажите, является ли roleSetting ролью по умолчанию.|
 |lastUpdatedDateTime  |DateTimeOffset                          |Только для чтения. Время последнего обновления параметра роли. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|lastUpdatedBy        |String                                  |Только для чтения. Отображает имя администратора, который в последний раз обновлял рольSetting.|
-|adminEligibleSettings|[коллекция governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются при добавлении администратором назначения подходящих ролей.|
-|adminMemberSettings  |[коллекция governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда администратор пытается добавить назначение ролей прямого участника.|
-|userEligibleSettings |[коллекция governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правил, оцениваемые при добавлении права на назначение ролей. Параметр пока не поддерживается.|
-|userMemberSettings   |[коллекция governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются при попытках пользователя активировать назначение ролей.|
+|lastUpdatedBy        |String                                  |Только для чтения. Отображаемое имя администратора, который последним обновил roleSetting.|
+|adminEligibleSettings|[Коллекция governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются при попытке администратора добавить допустимое назначение роли.|
+|adminMemberSettings  |[Коллекция governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правила, которые оцениваются при попытке администратора добавить назначение роли прямого участника.|
+|userEligibleSettings |[Коллекция governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда пользователь пытается добавить допустимое назначение роли. Этот параметр пока не поддерживается.|
+|userMemberSettings   |[Коллекция governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правила, которые оцениваются, когда пользователь пытается активировать назначение роли.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|resource|[governanceResource](../resources/governanceresource.md)|Только для чтения. Связанный ресурс для этого параметра ролей.|
-|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|Только для чтения. Определение роли, которое выполняется с помощью этого параметра роли. |
+|resource|[governanceResource](../resources/governanceresource.md)|Только для чтения. Связанный ресурс для этого параметра роли.|
+|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|Только для чтения. Определение роли, которое применяется с этим параметром роли. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

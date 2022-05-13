@@ -4,13 +4,13 @@ description: Отмена governanceRoleAssignmentRequest.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: e5d7946ca588830552a00a630b3c766ba43ecc03
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: eb0d0d8327851a9b8d18cf4d86af22099df4a2df
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510297"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399546"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>Отмена governanceRoleAssignmentRequest
 
@@ -30,7 +30,7 @@ ms.locfileid: "64510297"
 | Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ### <a name="azure-ad"></a>Azure AD
@@ -38,7 +38,7 @@ ms.locfileid: "64510297"
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ### <a name="groups"></a>Группы
@@ -46,11 +46,11 @@ ms.locfileid: "64510297"
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод **не поддерживает** [параметры запроса OData](/graph/query-parameters).
+Этот метод не **поддерживает** [параметры запроса OData](/graph/query-parameters).
 
 ### <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -71,11 +71,11 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 В случае успешного выполнения этот метод возвращает код отклика `204 NoContent`. В тексте отклика не возвращается никаких данных. 
 
 ## <a name="error-codes"></a>Коды ошибок
-Этот API следует стандарту http-кодов. Кроме того, ниже показаны пользовательские коды ошибок.
+Этот API соответствует стандарту кодов HTTP. Кроме того, ниже приведены пользовательские коды ошибок.
 
 | Код ошибки | Сообщение об ошибке | Details |
 |:---------- |:------------- |:------- |
-| 400 BadRequest | RoleAssignmentRequestNotFound | В системе не существует системы governanceRoleAssignmentRequest. |
+| 400 BadRequest | RoleAssignmentRequestNotFound | Объект governanceRoleAssignmentRequest не существует в системе. |
 | 400 BadRequest | RequestCannotBeCancelled | Только запросы в состоянии `Granted`, и `PendingApproval``PendingApprovalProvisioning` могут `PendingAdminDecision` быть отменены. |
 
 ## <a name="example"></a>Пример

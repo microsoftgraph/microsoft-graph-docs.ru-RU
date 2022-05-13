@@ -4,12 +4,12 @@ description: Запросы изменений позволяют приложе
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4331c661889868bdbf7735e7ef476739d63621fc
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 714fac5350f7df2222ca563b9660994431a3b382
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247079"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398575"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
@@ -58,7 +58,7 @@ ms.locfileid: "65247079"
 
 - `$orderby`
 
-    Не считайте, что разностный запрос возвращает определенную последовательность ответов. Предполагайте, что один и тот же элемент может встречаться в любом месте последовательности `@odata.nextLink`, и учитывайте это в логике объединения.
+    Не рассчитывайте на определенную последовательность откликов, возвращаемых дельта-запросом. Предположите, что один и тот же элемент может отображаться где угодно в последовательности `@odata.nextLink` и обработайте это в логике слияния.
 - `$top`
 
     Число объектов на каждой странице зависит от типа ресурса и типа изменений, внесенных в ресурс.
@@ -206,9 +206,9 @@ Content-type: application/json
 + Для образовательных объектов (**educationSchool**, **educationUser** и **educationClass**) ограничение составляет семь дней.
 + Для объектов Outlook (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask** и **todoTaskList**) верхнее ограничение не фиксировано; оно зависит от размера внутреннего кэша разностного маркера. Хотя новые разностные маркеры непрерывно добавляются в кэш, после превышения емкости кэша старые разностные маркеры удаляются.
 
-В случае просроченного маркера служба должна отреагировать ошибкой серии 40X с кодами ошибок, такими как `syncStateNotFound`. Дополнительные сведения см. в разделе (Коды ошибок в Microsoft Graph](/graph/errors#code-property).
+В случае просроченного маркера служба должна отреагировать ошибкой серии 40X с кодами ошибок, такими как `syncStateNotFound`. Дополнительные сведения см. в разделе [Коды ошибок в Microsoft Graph](/graph/errors#code-property).
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 
 Выполнение разностных запросов для определенного ресурса требует тех же [разрешений](./permissions-reference.md), что и его чтение.
 

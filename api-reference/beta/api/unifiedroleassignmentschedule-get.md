@@ -1,32 +1,32 @@
 ---
-title: Get unifiedRoleAssignmentSchedule
-description: Ознакомьтесь с свойствами и отношениями объекта unifiedRoleAssignmentSchedule.
-author: japere
+title: Получение unifiedRoleAssignmentSchedule
+description: Чтение свойств и связей объекта unifiedRoleAssignmentSchedule.
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 222c225faf4cc443ebb6b6b99bacef4bc613a3b3
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 9117b495e94db2789d91c2e501aec21c00c4af57
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510669"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399336"
 ---
-# <a name="get-unifiedroleassignmentschedule"></a>Get unifiedRoleAssignmentSchedule
+# <a name="get-unifiedroleassignmentschedule"></a>Получение unifiedRoleAssignmentSchedule
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) .
+Чтение свойств и связей объекта [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory|
+|Делегированное (рабочая или учебная учетная запись)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
+|Для приложения|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/{unifiedRoleAssignmentSche
 
 ## <a name="response"></a>Отклик
 
-В случае успешного `200 OK` выполнения этот метод возвращает код ответа и объект [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

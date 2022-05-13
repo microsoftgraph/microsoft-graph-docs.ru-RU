@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c2ecae03202adb66cc0aa49148679a5b9807fe41
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 781a90f75e070feb17380e4538a340b88831b422
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205979"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397637"
 ---
 # <a name="add-members"></a>Добавление участников
 
@@ -18,14 +18,16 @@ ms.locfileid: "65205979"
 
 Добавляйте участника в группу Microsoft 365 или группу безопасности через свойство навигации **members**.
 
-Вы можете добавлять пользователей, контакты организации, cубъект-службы или другие группы.
+В следующей таблице показаны типы участников, которых можно добавить в группы безопасности или группы Microsoft 365.
 
-> [!IMPORTANT]
->
-> - Вы можете добавить участников только в группы безопасности и группы Microsoft 365. Дополнительные сведения см. в разделе [Только типы групп в Azure AD и Microsoft Graph](/graph/api/resources/groups-overview#group-types-in-azure-ad-and-microsoft-graph).
-> - Вы не можете добавлять группы безопасности в группы Microsoft 365.
-> - Вы не можете добавлять группы Microsoft 365 в группы безопасности или другие группы Microsoft 365.
-> - Группа безопасности может содержать пользователей, устройства, группы или субъекты-службы в качестве участников, а группа Microsoft 365 может содержать в качестве участников только пользователей.
+| Тип объектов             | Участник групп безопасности.     | Участник группы Microsoft 365 |
+|-------------------------|-------------------------------|-------------------------------|
+| Пользователи                   | ![Может быть участником группы][Yes]   | ![Может быть участником группы][Yes]   |
+| Группы безопасности         | ![Может быть участником группы][Yes]   | ![Не может быть участником группы][No] |
+| Группах Microsoft 365    | ![Не может быть участником группы][No] | ![Не может быть участником группы][No] |
+| Устройства                 | ![Может быть участником группы][Yes]   | ![Не может быть участником группы][No] |
+| Субъекты-службы      | ![Может быть участником группы][Yes]   | ![Не может быть участником группы][No] |
+| Контакты организации | ![Может быть участником группы][Yes]   | ![Не может быть участником группы][No] |
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,8 +35,8 @@ ms.locfileid: "65205979"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                |
 | :------------------------------------- | :------------------------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All    |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                             |
+| Делегированное (рабочая или учебная учетная запись)     | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All    |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                             |
 | Для приложения                            | GroupMember.ReadWrite.All, Group.ReadWrite.All и Directory.ReadWrite.All |
 
 > [!IMPORTANT]
@@ -213,6 +215,11 @@ HTTP/1.1 204 No Content
 - [Обновление роли участника в группе](team-update-members.md)
 - [Удаление участника из чата](team-delete-members.md)
 
+
+
+[Yes]: /graph/images/yesandnosymbols/greencheck.svg
+[No]: /graph/images/yesandnosymbols/no.svg
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -222,5 +229,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api/group-post-members.md:
+      Failed to parse enumeration values for type microsoft.graph.add. Table requires a column header named one of the following: Member, Name, Value"
   ]
 }-->

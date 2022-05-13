@@ -1,51 +1,51 @@
 ---
-title: тип ресурса eventMessageDetail
-description: Представляет базовый тип для детализации сообщений событий.
+title: Тип ресурса eventMessageDetail
+description: Представляет базовый тип для подробных данных сообщения о событии.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: da40b7413bc52a2ec0d663e2b7e0467f0e5e06fd
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 79dad5d78b3e6804a0f0b950a37dd3bce5c057e1
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53535815"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399497"
 ---
-# <a name="eventmessagedetail-resource-type"></a>тип ресурса eventMessageDetail
+# <a name="eventmessagedetail-resource-type"></a>Тип ресурса eventMessageDetail
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Этот абстрактный тип представляет сведения о сообщении события системы.
+Этот абстрактный тип представляет сведения о сообщении системного события.
 
-Системные сообщения — это сообщения, созданные для таких событий, как участники, добавленные в канал, участники, добавленные в чат, и обновленное описание команды.
+Системные сообщения — это сообщения, создаваемые для таких событий, как участники, добавленные в канал, участники, добавленные в чат, и обновленное описание команды.
 
 Список поддерживаемых событий
 
 | Событие | Описание |
 | :---- | :---------- |
-| [callEndedEventMessageDetail](../resources/callStartedEventMessageDetail.md) | Вызов завершен. |
-| [callRecordingEventMessageDetail](../resources/callRecordingEventMessageDetail.md) | Запись вызова доступна. |
-| [callStartedEventMessageDetail](../resources/callStartedEventMessageDetail.md) | Вызов начался. |
-| [callTranscriptEventMessageDetail](../resources/callTranscriptEventMessageDetail.md) | Имеется запись вызова. |
-| [channelAddedEventMessageDetail](../resources/channelAddedEventMessageDetail.md) | Добавлен канал. |
+| [callEndedEventMessageDetail](../resources/callEndedEventMessageDetail.md) | Вызов завершен. |
+| [callRecordingEventMessageDetail](../resources/callRecordingEventMessageDetail.md) | Доступна запись звонка. |
+| [callStartedEventMessageDetail](../resources/callStartedEventMessageDetail.md) | Вызов запущен. |
+| [callTranscriptEventMessageDetail](../resources/callTranscriptEventMessageDetail.md) | Доступна расшифровка звонка. |
+| [channelAddedEventMessageDetail](../resources/channelAddedEventMessageDetail.md) | Канал добавлен. |
 | [channelDeletedEventMessageDetail](../resources/channelDeletedEventMessageDetail.md) | Канал удален. |
 | [channelDescriptionUpdatedEventMessageDetail](../resources/channelDescriptionUpdatedEventMessageDetail.md) | Описание канала обновлено. |
 | [channelRenamedEventMessageDetail](../resources/channelRenamedEventMessageDetail.md) | Канал переименован. |
-| [channelSetAsFavoriteByDefaultEventMessageDetail](../resources/channelSetAsFavoriteByDefaultEventMessageDetail.md) | Канал по умолчанию настроен как любимый. |
-| [channelUnsetAsFavoriteByDefaultEventMessageDetail](../resources/channelUnsetAsFavoriteByDefaultEventMessageDetail.md) | Канал по умолчанию не установлен как любимый. |
+| [channelSetAsFavoriteByDefaultEventMessageDetail](../resources/channelSetAsFavoriteByDefaultEventMessageDetail.md) | Канал по умолчанию настроен как избранный. |
+| [channelUnsetAsFavoriteByDefaultEventMessageDetail](../resources/channelUnsetAsFavoriteByDefaultEventMessageDetail.md) | Канал по умолчанию не задан как избранный. |
 | [chatRenamedEventMessageDetail](../resources/chatRenamedEventMessageDetail.md) | Чат переименован. |
-| [conversationMemberRoleUpdatedEventMessageDetail](../resources/conversationMemberRoleUpdatedEventMessageDetail.md) | Роль была обновлена для участника. |
-| [meetingPolicyUpdatedEventMessageDetail](../resources/meetingPolicyUpdatedEventMessageDetail.md) | Обновлена политика собраний. |
-| [membersAddedEventMessageDetail](../resources/membersAddedEventMessageDetail.md) | Добавлены участники. |
-| [membersDeletedEventMessageDetail](../resources/membersDeletedEventMessageDetail.md) | Участники удалены. |
+| [conversationMemberRoleUpdatedEventMessageDetail](../resources/conversationMemberRoleUpdatedEventMessageDetail.md) | Роль обновлена для члена. |
+| [meetingPolicyUpdatedEventMessageDetail](../resources/meetingPolicyUpdatedEventMessageDetail.md) | Политика собраний обновлена. |
+| [membersAddedEventMessageDetail](../resources/membersAddedEventMessageDetail.md) | Добавлены члены. |
+| [membersDeletedEventMessageDetail](../resources/membersDeletedEventMessageDetail.md) | Элементы удалены. |
 | [membersJoinedEventMessageDetail](../resources/membersJoinedEventMessageDetail.md) | Участники присоединились. |
-| [membersLeftEventMessageDetail](../resources/membersLeftEventMessageDetail.md) | Участники ушли. |
+| [membersLeftEventMessageDetail](../resources/membersLeftEventMessageDetail.md) | Участники слева. |
 | [tabUpdatedEventMessageDetail](../resources/tabUpdatedEventMessageDetail.md) | Вкладка обновлена. |
-| [teamArchivedEventMessageDetail](../resources/teamArchivedEventMessageDetail.md) | Команда архивов. |
-| [teamCreatedEventMessageDetail](../resources/teamCreatedEventMessageDetail.md) | Создана команда. |
+| [teamArchivedEventMessageDetail](../resources/teamArchivedEventMessageDetail.md) | Команда архивирована. |
+| [teamCreatedEventMessageDetail](../resources/teamCreatedEventMessageDetail.md) | Команда создана. |
 | [teamDescriptionUpdatedEventMessageDetail](../resources/teamDescriptionUpdatedEventMessageDetail.md) | Описание команды обновлено. |
 | [teamJoiningDisabledEventMessageDetail](../resources/teamJoiningDisabledEventMessageDetail.md) | Присоединение к команде отключено. |
 | [teamJoiningEnabledEventMessageDetail](../resources/teamJoiningEnabledEventMessageDetail.md) | Присоединение к команде включено. |
@@ -53,7 +53,7 @@ ms.locfileid: "53535815"
 | [teamsAppInstalledEventMessageDetail](../resources/teamsAppInstalledEventMessageDetail.md) | Teams установлено приложение. |
 | [teamsAppRemovedEventMessageDetail](../resources/teamsAppRemovedEventMessageDetail.md) | Teams приложение удалено. |
 | [teamsAppUpgradedEventMessageDetail](../resources/teamsAppUpgradedEventMessageDetail.md) | Teams приложение было обновлено. |
-| [teamUnarchivedEventMessageDetail](../resources/teamUnarchivedEventMessageDetail.md) | Команда была невечена. |
+| [teamUnarchivedEventMessageDetail](../resources/teamUnarchivedEventMessageDetail.md) | Команда была неархивна. |
 
 ## <a name="properties"></a>Свойства
 Отсутствуют.

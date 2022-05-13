@@ -1,16 +1,16 @@
 ---
 title: тип ресурса запроса
-description: Тип абстрактного объекта для моделирования рабочего процесса асинхронизированного запроса для создания, обновления и удаления объекта.
-author: japere
+description: Абстрактный тип сущности для моделирования асинхронного рабочего процесса запроса для создания, обновления и удаления объекта.
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 871f2232e57bdd24aeff9842df699ea0601146eb
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 6e75c2d632356fceffaf432fc4def204e837c9bc
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509191"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399399"
 ---
 # <a name="request-resource-type"></a>тип ресурса запроса
 
@@ -18,7 +18,7 @@ ms.locfileid: "64509191"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Тип абстрактного объекта для моделирования рабочего процесса асинхронизированного запроса для создания, обновления и удаления объекта.
+Абстрактный тип сущности для моделирования асинхронного рабочего процесса запроса для создания, обновления и удаления объекта.
 
 Наследует [от сущности](entity.md).
 
@@ -26,20 +26,20 @@ ms.locfileid: "64509191"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|approvalId|Строка|Идентификатор утверждения запроса.|
-|completedDateTime|DateTimeOffset|Время завершения запроса.|
+|approvalId|String|Идентификатор утверждения запроса.|
+|completedDateTime|DateTimeOffset|Время даты завершения запроса.|
 |createdBy|[identitySet](identityset.md)|Пользователь, создавший этот запрос.|
-|createdDateTime|DateTimeOffset|Время создания запроса.|
-|customData|Строка|Свободное текстовое поле для определения настраиваемой информации для запроса. Не используется.|
-|status|String|Состояние запроса. Значение null не допускается. Возможные значения: `Canceled`, , `Denied`, `Failed`, `Granted`, `PendingAdminDecision`, `PendingApproval`, `PendingProvisioning`, `PendingScheduleCreation`и `Revoked``Provisioned``ScheduleCreated`. Значение null не допускается.|
+|createdDateTime|DateTimeOffset|Дата создания запроса.|
+|Customdata|String|Поле "Бесплатный текст" для определения любых пользовательских данных для запроса. Не используется.|
+|status|String|Состояние запроса. Значение null не допускается. Возможные значения: `Canceled`, , `Denied`, `Failed`, `Granted`, `PendingAdminDecision`, `PendingApproval`, `PendingProvisioning`, `PendingScheduleCreation`, `Provisioned`и `Revoked``ScheduleCreated`. Значение null не допускается.|
 |id|String|Идентификатор запроса. Только для чтения. Значение null не допускается. Наследуется от [сущности](entity.md).|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|утверждение|[утверждение](../resources/approval.md)|Представляет объект утверждения, с который связан запрос.|
+|утверждение|[утверждение](../resources/approval.md)|Представляет объект утверждения, с котором связан запрос.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

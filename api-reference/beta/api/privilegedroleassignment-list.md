@@ -4,13 +4,13 @@ description: Получение списка объектов privilegedRoleAssi
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 3532915fc41226846a05e3f3ea6520f940fc0875
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 3e17151352a9ea68fb58452819772a1addbe4067
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65314310"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399525"
 ---
 # <a name="list-privilegedroleassignments"></a>Перечисление privilegedRoleAssignments
 
@@ -22,7 +22,7 @@ ms.locfileid: "65314310"
 
 Получение списка объектов [privilegedRoleAssignment](../resources/privilegedroleassignment.md) , соответствующих всем назначениям ролей для организации.
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 Инициатор запроса должен иметь одну из следующих _ролей: администратор_ привилегированных _ролей,_ глобальный _администратор, администратор_ безопасности или _читатель сведений о безопасности_. 
 

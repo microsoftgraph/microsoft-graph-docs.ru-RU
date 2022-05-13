@@ -1,16 +1,16 @@
 ---
 title: Обновление privilegedRoleSettings
-description: Обновление параметров ролей для данного параметра ролей. Объект privilegedRoleSettings будет возвращен.
+description: Обновите параметры роли для заданного параметра роли. Будет возвращен объект privilegedRoleSettings.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: d4a21eb18d8cfa6e6b3616840b66cd2e2ec01c2f
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 210d70c4ddb7b55003f2e78d9bfcc4e3f64491f6
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509947"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399392"
 ---
 # <a name="update-privilegedrolesettings"></a>Обновление privilegedRoleSettings
 
@@ -18,17 +18,17 @@ ms.locfileid: "64509947"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление параметров ролей для данного параметра ролей. Объект [privilegedRoleSettings](../resources/privilegedrolesettings.md) будет возвращен.
+Обновите параметры роли для заданного параметра роли. Будет [возвращен объект privilegedRoleSettings](../resources/privilegedrolesettings.md) .
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
->**Примечание:** Запрашиватель должен иметь роль администратора привилегированных ролей для обновления параметров ролей. 
+>**Примечание:** Запрашиватель должен иметь роль администратора привилегированных ролей для обновления параметров роли. 
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,29 +43,29 @@ PUT /privilegedRoles/{id}/settings
 | Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [privilegedRoleSettings](../resources/privilegedrolesettings.md) .
+В тексте запроса добавьте представление объекта [privilegedRoleSettings](../resources/privilegedrolesettings.md) в формате JSON.
 
-В следующей таблице перечислены свойства, которые можно предоставить при обновлении параметра роли.
+В следующей таблице перечислены свойства, которые можно указать при обновлении параметра роли.
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|Продолжительность активации роли. Обязательный.|
-|id|string|Уникальный идентификатор параметров ролей. Только для чтения. Обязательный атрибут.|
-|isMfaOnElevationConfigurable|boolean|**верно** , если mfaOnElevation настраивается. **false** , если mfaOnElevation не настраивается. Обязательный аргумент.|
-|lastGlobalAdmin|Boolean|Только для внутреннего использования.|
-|maxElavationDuration|duration|Максимальная продолжительность для активированной роли. Обязательный аргумент.|
-|mfaOnElevation|Boolean|**значение true** , если для активации роли требуется MFA. **false** , если MFA не требуется для активации роли. Обязательный аргумент.|
-|minElevationDuration|duration|Минимальная продолжительность для активированной роли. Обязательный аргумент.|
-|notificationToUserOnElevation|Boolean|**значение true** , если отправить уведомление конечному пользователю при активации роли. **false** , если не отправлять уведомления при активации роли. Обязательный аргумент.|
-|ticketingInfoOnElevation|Boolean|**значение true** , если при активации роли требуется информация о билетах. **false** , если сведения о билетах не требуются при активации роли. Обязательный аргумент.|
-|approvalOnElevation|Boolean|**значение true** , если требуется утверждение при активации роли. **false** , если утверждение не требуется при активации роли. Обязательный аргумент.|
-|approverIds|string collection|Список ID утверждения, если требуется утверждение для активации.|
+|elevationDuration|duration|Длительность активации роли. Обязательный.|
+|id|string|Уникальный идентификатор параметров роли. Только для чтения. Обязательный.|
+|isMfaOnElevationConfigurable|логический|**Значение true** , если mfaOnElevation настраивается. **Значение false** , если mfaOnElevation не настраивается. Обязательно.|
+|lastGlobalAdmin|Логический|Только для внутреннего использования.|
+|maxElavationDuration|duration|Максимальная длительность активированной роли. Обязательно.|
+|mfaOnElevation|Логический|**Значение true** , если для активации роли требуется многофакторная проверка подлинности. **false** if MFA is not required to activate the role. Обязательно.|
+|minElevationDuration|duration|Минимальная длительность активированной роли. Обязательно.|
+|notificationToUserOnElevation|Логическое|**Значение true** , если при активации роли пользователю отправляется уведомление. **false** if do not send notification when the role is activated. Обязательно.|
+|ticketingInfoOnElevation|Логическое|**Значение true** , если сведения о запросе требуются при активации роли. **false** if the ticketing information is not required when activate the role. Обязательно.|
+|approvalOnElevation|Логическое|**true** if the approval is required when activate the role. **false** if the approval is not required when activate the role. Обязательно.|
+|approverIds|string collection|Список идентификаторов утверждения, если для активации требуется утверждение.|
 
 ## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`.
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае возвращается код состояния HTTP 403 Forbidden.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

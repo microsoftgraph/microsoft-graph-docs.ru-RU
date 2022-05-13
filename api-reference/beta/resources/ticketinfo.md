@@ -1,28 +1,28 @@
 ---
-title: тип ресурса ticketInfo
-description: Объект, который представляет сведения о билетах, связанные с запросами на назначение ролей
-author: japere
+title: Тип ресурса ticketInfo
+description: Объект, представляющий сведения о билетах, связанные с запросами на назначение ролей
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 410b978184efdc098dfa05c08717d7ca471ffe9c
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: d64bd63615ec156548942d14deb5833eb5dd990a
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64508470"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399455"
 ---
-# <a name="ticketinfo-resource-type"></a>тип ресурса ticketInfo
+# <a name="ticketinfo-resource-type"></a>Тип ресурса ticketInfo
 
 Пространство имен: microsoft.graph
 
-Объект, который представляет сведения о билетах, связанные с запросами на назначение ролей
+Объект, представляющий сведения о билетах, связанные с запросами на назначение ролей
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ticketNumber|Строка|Метаданные номеров билетов|
-|ticketSystem|Строка|Метаданные системы билетов|
+|ticketNumber|String|Метаданные номера билета|
+|ticketSystem|String|Метаданные системы запросов|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

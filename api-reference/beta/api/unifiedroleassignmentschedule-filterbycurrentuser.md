@@ -1,32 +1,32 @@
 ---
 title: 'unifiedRoleAssignmentSchedule: filterByCurrentUser'
-description: Получите список объектов unifiedRoleAssignmentSchedule и их свойств, отфильтрованных определенным пользователем
-author: japere
+description: Получение списка объектов unifiedRoleAssignmentSchedule и их свойств, отфильтрованных по определенному субъекту-пользователю
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3c96ba615ce734d31c4fb717ad3c3ecedf07837f
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: e6499aa163ea860cf7b8e09b4c5d7e80b7447ea4
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510690"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399434"
 ---
 # <a name="unifiedroleassignmentschedule-filterbycurrentuser"></a>unifiedRoleAssignmentSchedule: filterByCurrentUser
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [unifiedRoleAssignmentSchedule](../resources/unifiedRoleAssignmentSchedule.md) и их свойств, связанных с определенным основным объектом.
+Получение списка объектов [unifiedRoleAssignmentSchedule](../resources/unifiedRoleAssignmentSchedule.md) и их свойств, связанных с определенным основным объектом.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory|
+|Делегированное (рабочая или учебная учетная запись)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
+|Для приложения|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,11 +39,11 @@ GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='pr
 ```
 
 ## <a name="function-parameters"></a>Параметры функции
-В следующей таблице показаны параметры запроса, которые можно использовать с помощью этого метода.
+В следующей таблице показаны параметры запроса, которые можно использовать с этим методом.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|roleAssignmentScheduleFilterByCurrentUserOptions|Фильтр для запроса объектов, для которых основным является текущий пользователь. Разрешено значение `principal`. Обязательный аргумент.|
+|on|roleAssignmentScheduleFilterByCurrentUserOptions|Фильтр для запроса объектов, для которых текущий пользователь является субъектом. Допустимое значение: `principal`. Обязательно.|
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
@@ -58,7 +58,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='pr
 
 ## <a name="response"></a>Отклик
 
-В случае успешного `200 OK` выполнения этот метод возвращает код ответа и коллекцию [объектовunifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) в тексте ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию [объектовunifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 
 ### <a name="response"></a>Отклик
 
-Ниже приводится пример ответа с указанием расписания приемлемости, которое должно выполняться путем прямого назначения.
+Ниже приведен пример ответа с расписанием соответствия требованиям, которое выполняется через прямое назначение.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

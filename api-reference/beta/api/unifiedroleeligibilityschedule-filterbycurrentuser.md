@@ -1,32 +1,32 @@
 ---
 title: 'unifiedRoleEligibilitySchedule: filterByCurrentUser'
-description: Получите список объектов unifiedRoleEligibilitySchedule и их свойств, отфильтрованных определенным пользователем
-author: japere
+description: Получение списка объектов unifiedRoleEligibilitySchedule и их свойств, отфильтрованных по конкретному субъекту-пользователю
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f32ea78083f4c4945a800faa7523a59553736472
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: a30a813f73bcac6da31073a0e0fb9e59174a6c31
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509849"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399224"
 ---
 # <a name="unifiedroleeligibilityschedule-filterbycurrentuser"></a>unifiedRoleEligibilitySchedule: filterByCurrentUser
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [unifiedRoleEligibilitySchedule](../resources/unifiedRoleEligibilitySchedule.md) и их свойств, связанных с определенным основным объектом.
+Получение списка объектов [unifiedRoleEligibilitySchedule](../resources/unifiedRoleEligibilitySchedule.md) и их свойств, связанных с определенным основным объектом.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|RoleEligibilitySchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
+|Делегированное (рабочая или учебная учетная запись)|RoleEligibilitySchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
+|Для приложения|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,11 +39,11 @@ GET roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser(on='pr
 ```
 
 ## <a name="function-parameters"></a>Параметры функции
-В следующей таблице показаны параметры, которые можно использовать с помощью этого метода.
+В следующей таблице показаны параметры, которые можно использовать с этим методом.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|roleEligibilityScheduleFilterByCurrentUserOptions|Пользователь, в настоящее время подписанный. Разрешено значение `principal`.|
+|on|roleEligibilityScheduleFilterByCurrentUserOptions|Текущий вошед в систему пользователь. Допустимое значение: `principal`.|
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
@@ -58,7 +58,7 @@ GET roleManagement/directory/roleEligibilitySchedules/filterByCurrentUser(on='pr
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы этот метод возвращает код ответа и коллекцию объектов [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) в теле ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 ### <a name="response"></a>Отклик
 
-Ниже приводится пример ответа с указанием расписания приемлемости, определяемого групповым назначением.
+Ниже приведен пример ответа с расписанием соответствия требованиям, которое выполняется через назначение группы.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

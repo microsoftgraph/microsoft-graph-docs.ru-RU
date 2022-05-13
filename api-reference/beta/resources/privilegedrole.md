@@ -1,42 +1,42 @@
 ---
-title: тип ресурса privilegedRole
-description: Представляет роль администратора Azure AD, например глобального администратора, администратора биллинга, администратора службы, администратора пользователей и администратора паролей.
+title: Тип ресурса privilegedRole
+description: Представляет роль Azure AD администратора, например глобального администратора, администратора выставления счетов, администратора служб, администратора пользователей и администратора паролей.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 756ffd580a2f44fad1631bbfd153d1320f1aef05
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: rkarim-ms
+ms.openlocfilehash: 8c96fc5c7de9eb907639f7d01795b85750eeaf0a
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687678"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399315"
 ---
-# <a name="privilegedrole-resource-type-deprecated"></a>тип ресурса privilegedRole (неподготовленный)
+# <a name="privilegedrole-resource-type-deprecated"></a>Тип ресурса privilegedRole (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Представляет встроенную роль администратора [Azure AD,](/azure/active-directory/roles/permissions-reference)например глобального администратора, администратора биллинга, администратора **службы,** администратора пользователей и **администратора паролей.**
+Представляет встроенную [Azure AD](/azure/active-directory/roles/permissions-reference) администратора, например глобального администратора **,** администратора выставления счетов, администратора служб, администратора пользователей и **администратора паролей**.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список объектов privilegedRole](../api/privilegedrole-list.md) | Коллекция [privilegedRole](privilegedrole.md)|Получите коллекцию privilegedRole.|
+|[Перечисление объектов privilegedRole](../api/privilegedrole-list.md) | Коллекция [privilegedRole](privilegedrole.md)|Получение коллекции privilegedRole.|
 |[Получение privilegedRole](../api/privilegedrole-get.md) | [privilegedRole](privilegedrole.md) |Чтение свойств и связей объекта privilegedRole.|
-|[Перечисление заданий](../api/privilegedrole-list-assignments.md) |Коллекция [privilegedRoleAssignment](privilegedroleassignment.md)| Получите коллекцию объектов назначения для этой роли.|
+|[Перечисление заданий](../api/privilegedrole-list-assignments.md) |Коллекция [privilegedRoleAssignment](privilegedroleassignment.md)| Получение коллекции объектов назначения для этой роли.|
 |[selfActivate](../api/privilegedrole-selfactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Активируйте назначенную роль.|
-|[selfDeactivate](../api/privilegedrole-selfdeactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Деактивировать назначенную роль.|
+|[selfDeactivate](../api/privilegedrole-selfdeactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Деактивация назначенной роли.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|string|Уникальный идентификатор роли администратора. Это строка GUID и имеет то же значение, что и id шаблона ролей из Azure AD для данной роли. Только для чтения.|
+|id|string|Уникальный идентификатор роли администратора. Это строка GUID, которая имеет то же значение, что и идентификатор шаблона роли из Azure AD для данной роли. Только для чтения.|
 |name|string|Имя роли.|
 
 ## <a name="relationships"></a>Связи

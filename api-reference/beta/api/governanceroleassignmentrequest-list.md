@@ -1,18 +1,18 @@
 ---
-title: Список governanceRoleAssignmentRequests
-description: 'Извлечение коллекции governanceRoleAssignmentRequests. '
+title: Перечисление governanceRoleAssignmentRequests
+description: 'Получение коллекции governanceRoleAssignmentRequests. '
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: e14489475e4cfb4b9cf39417f0681135ff9e23df
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 632ceed669ddea34b1ba36b85a893336ca2d0615
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510417"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399483"
 ---
-# <a name="list-governanceroleassignmentrequests"></a>Список governanceRoleAssignmentRequests
+# <a name="list-governanceroleassignmentrequests"></a>Перечисление governanceRoleAssignmentRequests
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "64510417"
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Извлечение коллекции [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md). 
+Получение коллекции [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md). 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
@@ -30,44 +30,44 @@ ms.locfileid: "64510417"
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureResources |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложения | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureAD |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложения | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureADGroup |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложения | PrivilegedAccess.Read.AzureADGroup |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
-Список коллекции [governanceRoleAssignmentRequests на](../resources/governanceroleassignmentrequest.md) ресурсе.
+Перечисление коллекции [governanceRoleAssignmentRequests для](../resources/governanceroleassignmentrequest.md) ресурса.
     
->**Примечание:** Кроме области разрешений, запрос требует, чтобы у запроса было хотя бы одно назначение роли на ресурсе.
+>**Примечание:** Помимо области разрешений, запрос требует, чтобы инициатор запроса должен иметь по крайней мере одно назначение роли для ресурса.
 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignmentRequests
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'{resourceId}'
 ```
-Список коллекции [моих произведений governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) .
+Перечисление коллекции [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) of mine.
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq+'{myId}'
 ```
 
-Список коллекции [управляющегоRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) , которые находятся в ожидании решений администратора.
+Список коллекций [объектов governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) , ожидающих принятия решений администратором.
     
->**Примечание:** Помимо области разрешений, `Active` для этого запроса требуется, чтобы у запросителя было по крайней мере одно назначение роли администратора (`owner``user access administrator`или) на ресурсе.
+>**Примечание:** Помимо области разрешений, `Active` для этого запроса инициатор запроса должен иметь по крайней мере одно назначение роли администратора (`owner` или `user access administrator`) для ресурса.
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subStatus+eq+'PendingAdminDecision'
@@ -85,14 +85,14 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subSt
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного `200 OK` выполнения этот метод возвращает код ответа и коллекцию объектов [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в тексте ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignmentrequests"
 }-->
-Администраторы запрашивают запросы о назначении ролей для подписки Wingtip Toys - Prod.
+Администраторы запрашивают ожидающие назначения ролей для подписки Wingtip Toys — Prod.
 ##### <a name="request"></a>Запрос
 
 ```http

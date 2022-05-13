@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b2488935cfb88e1c7e17c99d567ca4a79acbf4a5
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 145eded434e80a9418747682e16afb3a654a05eb
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671785"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399441"
 ---
 # <a name="update-device"></a>Обновление устройства
 
@@ -18,20 +18,20 @@ ms.locfileid: "63671785"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств устройства. Только некоторые свойства устройства могут обновляться с помощью утвержденных приложений для управления мобильными устройствами (MDM).
+Обновление свойств устройства. Только определенные свойства устройства можно обновить с помощью утвержденных мобильных Управление устройствами (MDM).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Device.ReadWrite.All, Directory.ReadWrite.All |
+|Для приложения | Device.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
-В `{id}` запросе имеется значение свойства **id** устройства, а не **свойства deviceId** .
+В `{id}` запросе содержится значение свойства **идентификатора** устройства, а не **свойства deviceId** .
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -49,14 +49,14 @@ PATCH /devices/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|accountEnabled|Логический| Если учетная запись обеспечена — `true`, в противном случае — `false`. Обновить это свойство могут только звонители в ролях глобального администратора и администратора облачных устройств. |
+|accountEnabled|Логический| Если учетная запись обеспечена — `true`, в противном случае — `false`. Обновить это свойство могут только вызывающие объекты с ролями глобального администратора и администратора облачных устройств. |
 |operatingSystem|String|Тип операционной системы на устройстве.|
 |operatingSystemVersion|String|Версия операционной системы на устройстве.|
-|displayName|Строка|Отображаемое имя устройства.|
-|isCompliant|Boolean|`true` если устройство соответствует политикам управления мобильными устройствами(MDM); в противном случае `false`. Это может быть обновлено intune для любого типа ОС устройства или утвержденным [приложением MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. |
-|isManaged|Boolean|`true` если устройство управляется приложением управления мобильными устройствами (MDM); в противном случае `false`. Это может быть обновлено intune для любого типа ОС устройства или утвержденным [приложением MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. |
+|displayName|String|Отображаемое имя устройства.|
+|isCompliant|Boolean|`true` if the device complies with Mobile Device Management (MDM) policies; otherwise, `false`. Его можно обновить только Intune для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows ОС. |
+|isManaged|Boolean|`true`Значение , если устройство управляется мобильным приложением Управление устройствами (MDM); в противном случае — значение `false`. Его можно обновить только Intune для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows ОС. |
 
-Так **как ресурс** устройства поддерживает [расширения,](/graph/extensibility-overview)`PATCH` операцию можно использовать для добавления, обновления или удаления собственных данных, определенных приложениям, в настраиваемые свойства расширения в существующем экземпляре **устройства.**
+Так как ресурс **устройства** поддерживает [расширения,](/graph/extensibility-overview)`PATCH` операцию можно использовать для добавления, обновления или удаления собственных данных приложения в пользовательских свойствах расширения в существующем **экземпляре** устройства.
 
 ## <a name="response"></a>Отклик
 
@@ -117,7 +117,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2--write-extensionattributes-on-a-device"></a>Пример 2. Напишите расширениеAttributes на устройстве
+### <a name="example-2--write-extensionattributes-on-a-device"></a>Пример 2. Запись extensionAttributes на устройстве
 
 #### <a name="request"></a>Запрос
 

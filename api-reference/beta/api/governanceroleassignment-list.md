@@ -1,16 +1,16 @@
 ---
 title: Перечисление governanceRoleAssignments
-description: Извлечение коллекции governanceRoleAssignments.
+description: Получение коллекции объектов governanceRoleAssignment.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 146839ce0341633d1b8b5390e06cea11c6160084
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 51324e0ce9bc6ede19debe1ec157c23c51f5b0af
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510494"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399518"
 ---
 # <a name="list-governanceroleassignments"></a>Перечисление governanceRoleAssignments
 
@@ -20,7 +20,7 @@ ms.locfileid: "64510494"
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Извлечение коллекции [governanceRoleAssignments](../resources/governanceroleassignment.md).
+Получение коллекции [объектов governanceRoleAssignment.](../resources/governanceroleassignment.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
@@ -30,36 +30,36 @@ ms.locfileid: "64510494"
 | Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureResources |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложения | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureAD |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложения | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureADGroup |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложения | PrivilegedAccess.Read.AzureADGroup |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 
-Список коллекции [governanceRoleAssignments на](../resources/governanceroleassignment.md) ресурсе.
+Перечисление коллекции [объектов governanceRoleAssignment для](../resources/governanceroleassignment.md) ресурса.
 
->**Примечание:** Помимо области разрешений, для этого запроса требуется, чтобы у запросителя было по крайней мере одно назначение ролей на ресурсе. 
+>**Примечание:** Помимо области разрешений, этот запрос требует, чтобы инициатор запроса должен иметь по крайней мере одно назначение роли для ресурса. 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments
 GET /privilegedAccess/azureResources/roleAssignments?$filter=resourceId+eq+'{resourceId}'
 ```
-Перечислить коллекцию [моих произведений governanceRoleAssignments](../resources/governanceroleassignment.md) .
+Перечисление коллекции [объектов governanceRoleAssignment.](../resources/governanceroleassignment.md)
 ```http
 GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId}'
 ```
@@ -75,10 +75,10 @@ GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот `200 OK` метод возвращает код ответа и коллекцию объектов [governanceRoleAssignment](../resources/governanceroleassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [governanceRoleAssignment](../resources/governanceroleassignment.md) в теле отклика.
 ## <a name="example"></a>Пример
 
-В этом примере показано, как получить назначения ролей в подписке Wingtip Toys - Prod.
+В этом примере показано, как получить назначения ролей в подписке Wingtip Toys — Prod.
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignments"

@@ -1,64 +1,64 @@
 ---
-title: тип ресурса governanceRoleAssignment
-description: Представляет назначение пользователя или группы роли.
+title: Тип ресурса governanceRoleAssignment
+description: Представляет назначение роли пользователю или группе.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 7af62e0e1b408b361f7862c25543a92c57249574
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 76aaa6e63b9c44e1bc3db1ccf6e8351a5796051f
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510269"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399462"
 ---
-# <a name="governanceroleassignment-resource-type"></a>тип ресурса governanceRoleAssignment
+# <a name="governanceroleassignment-resource-type"></a>Тип ресурса governanceRoleAssignment
 
 Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Представляет назначение пользователя или группы роли.
+Представляет назначение роли пользователю или группе.
 
 управление привилегированными пользователями (PIM) поддерживает два типа назначений:
 
 1. Активное назначение — представляет прямой или активированный доступ к ресурсам.
-2. Право назначения — представляет промежуточный этап привилегированного доступа к ресурсам между отсутствием доступа и прямым доступом. Администраторы могут назначать пользователям или `eligible assignment` группам заранее, и всякий раз, когда необходим доступ, `eligible assignment` `activation` необходимо получить мгновенный доступ к ресурсу в течение нескольких часов. После активации будет `active assignment` создано для пользователей или членов группы, чтобы указать активированный статус.
+2. Допустимое назначение — представляет промежуточный этап привилегированного доступа к ресурсам между отсутствием доступа и прямым доступом. Администраторы могут назначать `eligible assignment` пользователей или группы заранее, и каждый раз, когда требуется доступ, `eligible assignment` `activation` требуется для получения мгновенного доступа к ресурсу в течение нескольких часов. После активации будет создано `active assignment` для пользователей или членов группы, чтобы указать состояние активации.
 
 ## <a name="methods"></a>Методы
 
 | Метод          | Возвращаемый тип |Описание|
 |:------------|:--------|:--------|
-|[Получение](../api/governanceroleassignment-get.md) |  [governanceRoleAssignment](../resources/governanceroleassignment.md) |Чтение свойств и связей объекта назначения ролей.|
-|[List](../api/governanceroleassignment-list.md) | [коллекция governanceRoleAssignment](../resources/governanceroleassignment.md)|Список набор назначений ролей на ресурсе. |
-|[Export](../api/governanceroleassignment-export.md) | octet-stream |Скачайте коллекцию назначений ролей на ресурсе и сохраните в качестве `.csv` файла.|
+|[Получение](../api/governanceroleassignment-get.md) |  [governanceRoleAssignment](../resources/governanceroleassignment.md) |Чтение свойств и связей сущности назначения роли.|
+|[Перечисление](../api/governanceroleassignment-list.md) | [Коллекция governanceRoleAssignment](../resources/governanceroleassignment.md)|Перечисление коллекции назначений ролей для ресурса. |
+|[Export](../api/governanceroleassignment-export.md) | octet-stream |Скачайте коллекцию назначений ролей для ресурса и сохраните ее в виде `.csv` файла.|
 
-Нет `POST`, `PUT`или `PATCH`операции `DELETE` поддерживаются в наборе `roleAssignments` сущности. Любые операции по созданию, обновлению и удаляемой работе `governanceRoleAssignment` делаются путем `governanceRoleAssignmentRequest`.
+В `POST`наборе `PATCH``PUT`сущностей `DELETE` `roleAssignments` не поддерживаются операции, а также операции. Любые операции создания, обновления и удаления `governanceRoleAssignment` выполняются с помощью `governanceRoleAssignmentRequest`.
 
 ## <a name="properties"></a>Свойства
 | Свойство  | Тип      |Описание|
 |:----------|:----------|:----------|
-|id         |Строка     |ID назначения роли. Он находится в формате GUID.|
-|resourceId |String     |Обязательный. ID ресурса, с которым связано назначение ролей. |
-|roleDefinitionId|String|Обязательный. ID определения роли, с которым связано назначение ролей. |
-|subjectId|String       |Обязательный. ID субъекта, с которым связано назначение ролей. |
-|linkedEligibleRoleAssignmentId|String|Если это и создано `active assignment` из-за активации на `eligible assignment`, он представляет собой ID этого `eligible assignment`; В противном случае значение `null`. |
-|externalId   |String     |Внешний ID ресурса, который используется для определения назначения роли в поставщике.|
+|id         |String     |Идентификатор назначения роли. Он имеет формат GUID.|
+|resourceId |String     |Обязательный. Идентификатор ресурса, с которым связано назначение роли. |
+|roleDefinitionId|String|Обязательный. Идентификатор определения роли, с которым связано назначение роли. |
+|subjectId|String       |Обязательный. Идентификатор субъекта, с которым связано назначение роли. |
+|linkedEligibleRoleAssignmentId|String|Если это действие создано `active assignment` из-за активации в объекте `eligible assignment`, он представляет его идентификатор `eligible assignment`; В противном случае значение равно `null`. |
+|externalId   |String     |Внешний идентификатор ресурса, который используется для идентификации назначения роли в поставщике.|
 |startDateTime|DateTimeOffset|Время начала назначения роли. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|endDateTime|DateTimeOffset|Для назначения непостоянных ролей это время, когда срок действия назначения роли истекает. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|assignmentState|Строка  |Состояние назначения. Это значение может быть для `Eligible` назначения `Active` `Active` , назначенного администраторами, или если оно непосредственно назначено администраторами или активировано при назначении, назначенное пользователями.|
-|memberType|String      |Тип участника. Значение может быть: `Inherited` (если назначение роли наследуется из области родительского ресурса), `Group` (если назначение роли не наследуется, а происходит от членства в групповом назначении) `User` или (если назначение роли не наследуется или не от группового назначения).|
+|endDateTime|DateTimeOffset|Для назначения неповратимых ролей это время, когда срок действия назначения роли истекает. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|assignmentState|String  |Состояние назначения. Это значение может быть предназначено `Eligible` `Active` `Active` для допустимого назначения или если оно напрямую назначено администраторами или активировано для допустимого назначения пользователями.|
+|memberType|String      |Тип члена. Значение может быть: `Inherited` (если назначение роли наследуется от области родительского ресурса), `Group` (если назначение роли не наследуется, а происходит от членства в назначении группы) `User` или (если назначение роли не наследуется или не наследуется от назначения группы).|
 
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|resource|[governanceResource](../resources/governanceresource.md)|Только для чтения. Ресурс, связанный с назначением ролей. |
+|resource|[governanceResource](../resources/governanceresource.md)|Только для чтения. Ресурс, связанный с назначением роли. |
 |roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|Только для чтения. Определение роли, связанное с назначением роли. |
-|subject|[governanceSubject](../resources/governancesubject.md)|Только для чтения. Тема, связанная с назначением ролей. |
-|linkedEligibleRoleAssignment|[governanceRoleAssignment](../resources/governanceroleassignment.md)|Только для чтения. Если это и создается `active assignment` из-за активации на `eligible assignment`объекте, он представляет объект этого `eligible assignment`; В противном случае значение `null`. |
+|subject|[governanceSubject](../resources/governancesubject.md)|Только для чтения. Тема, связанная с назначением роли. |
+|linkedEligibleRoleAssignment|[governanceRoleAssignment](../resources/governanceroleassignment.md)|Только для чтения. Если это объект, созданный `active assignment` из-за активации в объекте `eligible assignment`, он представляет его; `eligible assignment` В противном случае значение равно `null`. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

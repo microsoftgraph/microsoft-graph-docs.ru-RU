@@ -1,18 +1,18 @@
 ---
-title: Список governanceResources
-description: Извлечение коллекции governanceResource, к которую имеет доступ запроситель.
+title: Перечисление governanceResources
+description: Извлеките коллекцию governanceResource, к которой у запрашиваемого объекта есть доступ.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 2b0a4846b5b75215a25ad8d027dece7a10947608
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 4c27f9c6215de112b06201aac1671382a29a9b4d
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510157"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399173"
 ---
-# <a name="list-governanceresources"></a>Список governanceResources
+# <a name="list-governanceresources"></a>Перечисление governanceResources
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "64510157"
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Извлечение коллекции [governanceResource,](../resources/governanceresource.md) к которую имеет доступ запроситель.
+Извлеките коллекцию [governanceResource](../resources/governanceresource.md) , к которой у запрашиваемого объекта есть доступ.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
@@ -30,24 +30,24 @@ ms.locfileid: "64510157"
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureResources |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложения | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureAD |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложения | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureADGroup |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложения | PrivilegedAccess.Read.AzureADGroup |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -65,7 +65,7 @@ GET /privilegedAccess/azureResources/resources
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию объектов [governanceResource](../resources/governanceresource.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [governanceResource](../resources/governanceresource.md) в теле отклика.
 ## <a name="examples"></a>Примеры
 
 В этом примере перечислены все ресурсы, к которые в настоящее время можно получить доступ.

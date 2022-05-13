@@ -4,13 +4,13 @@ description: Удаление privilegedRoleAssignment.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 02aef76cbd5f2619126659881adc0e74ac88d3ca
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: d35e1610ebcb8b943fcbcf267a055e892ba41e40
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65315314"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399385"
 ---
 # <a name="delete-privilegedroleassignment"></a>Удаление privilegedRoleAssignment
 
@@ -22,7 +22,7 @@ ms.locfileid: "65315314"
 
 Удаление [privilegedRoleAssignment](../resources/privilegedroleassignment.md).
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 Инициатор запроса должен иметь роль _администратора привилегированных_ ролей.
  
