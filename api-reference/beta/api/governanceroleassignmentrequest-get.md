@@ -1,18 +1,18 @@
 ---
-title: Get governanceRoleAssignmentRequest
-description: 'Получите governanceRoleAssignmentRequest. '
+title: Получение governanceRoleAssignmentRequest
+description: 'Получение governanceRoleAssignmentRequest. '
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 28112d23ac613cc3694b4105dc0d5300c7e180c8
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 592fc3ac4bbebbbe8f20a759c05a28c1306102e0
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510480"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398568"
 ---
-# <a name="get-governanceroleassignmentrequest"></a>Get governanceRoleAssignmentRequest
+# <a name="get-governanceroleassignmentrequest"></a>Получение governanceRoleAssignmentRequest
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "64510480"
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Получите [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
+Получение [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
@@ -30,28 +30,28 @@ ms.locfileid: "64510480"
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureResources |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureAD |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureADGroup |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | PrivilegedAccess.Read.AzureADGroup |
 
-Помимо области разрешений, для этого требуется запросчик 
-*   иметь хотя бы одно назначение роли на ресурсе; или
-*   является объектом [управленияRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
+Помимо области разрешений, требуется инициатор запроса. 
+*   значение , чтобы иметь хотя бы одно назначение роли для ресурса; Или
+*   is the subject of the [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -70,10 +70,10 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код `200 OK` ответа и объект [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
-Получить запрос на назначение ролей
+Получение запроса на назначение ролей
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignmentrequest"

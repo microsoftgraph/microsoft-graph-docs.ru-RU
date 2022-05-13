@@ -1,18 +1,18 @@
 ---
-title: Get governanceRoleDefinition
-description: Извлечение свойств и связей управленияRoleDefinition.
+title: Получение governanceRoleDefinition
+description: Получение свойств и связей объекта governanceRoleDefinition.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: c154871edfb183ba56d0e03a8fdac16c8500a0d2
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 4dad4a2bc7f4d2b2ad4cbed58036f84e0f185212
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510473"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397854"
 ---
-# <a name="get-governanceroledefinition"></a>Get governanceRoleDefinition
+# <a name="get-governanceroledefinition"></a>Получение governanceRoleDefinition
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "64510473"
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Извлечение свойств и связей [управленияRoleDefinition](../resources/governanceroledefinition.md).
+Получение свойств и связей [объекта governanceRoleDefinition](../resources/governanceroledefinition.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
@@ -30,26 +30,26 @@ ms.locfileid: "64510473"
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureResources |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureAD |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureADGroup |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | PrivilegedAccess.Read.AzureADGroup |
 
-Помимо области разрешений, этот API требует, чтобы у запросителя было по крайней мере одно назначение ролей на ресурсе, которому принадлежит [governanceRoleDefinition](../resources/governanceroledefinition.md) .
+Помимо области разрешений, этот API требует, чтобы инициатор запроса должен иметь по крайней мере одно назначение роли для ресурса, к которому принадлежит [governanceRoleDefinition](../resources/governanceroledefinition.md) .
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -58,7 +58,7 @@ GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions/{id}
 GET /privilegedAccess/azureResources/roleDefinitions/{id}?$filter=resourceId+eq+'{resourceId}'
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод **не поддерживает** [параметры запроса OData для](/graph/query-parameters) настройки ответа.
+Этот метод **не поддерживает** параметры [запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -69,9 +69,9 @@ GET /privilegedAccess/azureResources/roleDefinitions/{id}?$filter=resourceId+eq+
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект governanceRoleDefinition](../resources/governanceroledefinition.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и [объект governanceRoleDefinition](../resources/governanceroledefinition.md) в теле отклика.
 ## <a name="example"></a>Пример
-В этом примере показано, как получить сведения об определении роли DNS Zone Contributor в подписке Wingtip Toys - Prod.
+В этом примере показано, как получить сведения об определении роли участника зоны DNS в подписке Wingtip Toys — Prod.
 <!-- {
   "blockType": "request",
   "name": "get_governanceroledefinition"

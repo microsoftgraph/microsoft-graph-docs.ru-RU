@@ -1,16 +1,16 @@
 ---
 title: Обновление governanceRoleAssignmentRequests
-description: Включить администраторов для обновления своих решений (`AdminApproved` или `AdminDenied`) по governanceRoleAssignmentRequests, которые находятся в состоянии `PendingAdminDecision`.
+description: Разрешить администраторам обновлять свои решения (`AdminApproved` или `AdminDenied`) по governanceRoleAssignmentRequests, которые находятся в состоянии `PendingAdminDecision`.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 4d07d05d9335b6d8dd7a1a123e0432d4f702deed
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 4cefce6d174fff53527ecef0cf921839157fe355
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510459"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398776"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Обновление governanceRoleAssignmentRequests
 
@@ -20,19 +20,19 @@ ms.locfileid: "64510459"
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Включить администраторов для обновления своих решений (`AdminApproved` или `AdminDenied`) по [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) , которые находятся в состоянии `PendingAdminDecision`.
+Разрешить администраторам обновлять свои решения (`AdminApproved` или `AdminDenied`) по [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) , которые находятся в состоянии `PendingAdminDecision`.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
 
->**Примечание:** Этот API также `Active` требует, чтобы у запрашиваемого по крайней мере одно назначение роли администратора (`owner``user access administrator`или) на ресурсе, к который принадлежит [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). 
+>**Примечание:** Этот API также `Active` требует, чтобы у запрашивателя было по крайней мере одно назначение роли администратора (`owner``user access administrator`или) для ресурса, к которым принадлежит [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). 
 
 ### <a name="azure-resources"></a>Ресурсы Azure
 
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ### <a name="azure-ad"></a>Azure AD
@@ -40,7 +40,7 @@ ms.locfileid: "64510459"
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ### <a name="groups"></a>Группы
@@ -48,7 +48,7 @@ ms.locfileid: "64510459"
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -67,12 +67,12 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 |Параметры      |Тип                   |Обязательный |Описание|
 |:-------------|:----------------------|:--------|:----------|
-|reason        |Строка                 |✓        |Причина, по которой администратор принял решение.|
-|решение        |Строка                 |✓        |Решение администратора запроса на назначение ролей. Значение должно быть обновлено как или `AdminApproved` `AdminDenied`.|
-|schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | Расписание запроса на назначение ролей. Для состояния `AdminApproved`требуется.|
-|assignmentState      |Строка|         | Состояние назначения и значения могут быть или `Eligible` `Active`. Для принятия решения `AdminApproved`требуется. |
+|reason        |String                 |✓        |Причина, указанная администратором для принятия решения.|
+|Решение        |String                 |✓        |Решение администратора запроса на назначение роли. Значение должно быть обновлено как `AdminApproved` или `AdminDenied`.|
+|schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | Расписание запроса на назначение ролей. Для состояния является `AdminApproved`обязательным.|
+|assignmentState      |String|         | Состояние присваивания и значения могут быть или `Eligible` `Active`. Для принятия решения `AdminApproved`он является обязательным. |
 ### <a name="response"></a>Отклик
-Этот метод может применяться только к запросам, которые находятся в состоянии `PendingAdminDecision`.
+Этот метод может применяться только к запросам, которые находятся в состоянии `PendingAdminDecision`..
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 

@@ -1,35 +1,35 @@
 ---
-title: тип ресурса unifiedRoleManagementPolicyNotificationRule
-description: В единойroleManagementPolicyNotificationRule указывается правило уведомлений, связанное с политикой управления ролью. Она получена из microsoft.graph.unifiedRoleManagementPolicyRule.
-author: japere
+title: Тип ресурса unifiedRoleManagementPolicyNotificationRule
+description: UnifiedRoleManagementPolicyNotificationRule указывает правило уведомления, связанное с политикой управления ролем. Он является производным от microsoft.graph.unifiedRoleManagementPolicyRule.
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9707803654c43634fc261eaf6f1ad05310735490
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 46e7ec80a8abd9058f74e5bdc8ed01d4d9b81eb2
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510199"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398807"
 ---
-# <a name="unifiedrolemanagementpolicynotificationrule-resource-type"></a>тип ресурса unifiedRoleManagementPolicyNotificationRule
+# <a name="unifiedrolemanagementpolicynotificationrule-resource-type"></a>Тип ресурса unifiedRoleManagementPolicyNotificationRule
 
 Пространство имен: microsoft.graph
 
-В единойroleManagementPolicyNotificationRule указывается правило уведомлений, связанное с политикой управления ролью. Она получена из microsoft.graph.unifiedRoleManagementPolicyRule.
+UnifiedRoleManagementPolicyNotificationRule указывает правило уведомления, связанное с политикой управления ролем. Он является производным от microsoft.graph.unifiedRoleManagementPolicyRule.
 
-Наследует [от unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
+Наследуется [от unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
-|notificationLevel|String|Уровень уведомления. Один из "Нет", "Критический", "Все".|
-|notificationRecipients|Коллекция String|Список уведомлений перекликается с электронной почтой.|
-|notificationType|Строка|Тип уведомления. Одно из сообщений электронной почты.|
-|recipientType|Строка|Тип получателя. Один из requestor, Approver, Admin.|
-|isDefaultRecipientsEnabled|Boolean|Получает ли получатель электронной почты по умолчанию или нет.|
-|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Цель правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
+|id|String|Уникальный идентификатор правила. Наследуется от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
+|notificationLevel|String|Уровень уведомления. Один из них: "Нет", "Критическое", "Все".|
+|notificationRecipients|Коллекция String|Список получателей уведомлений, таких как электронная почта.|
+|notificationType|String|Тип уведомления. Один из адресов электронной почты.|
+|recipientType|String|Тип получателя. Один из инициаторов запроса, утверждающий, администратор.|
+|isDefaultRecipientsEnabled|Логическое|Получает ли получатель сообщение электронной почты по умолчанию.|
+|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Целевой объект для правила. Наследуется от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

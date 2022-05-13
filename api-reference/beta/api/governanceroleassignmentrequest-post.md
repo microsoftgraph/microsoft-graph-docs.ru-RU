@@ -1,16 +1,16 @@
 ---
 title: Создание governanceRoleAssignmentRequest
-description: Создайте запрос на назначение ролей для представления операции, необходимой для назначения ролей. В следующей таблице перечислены операции.
+description: Создайте запрос на назначение роли, чтобы представить операцию, которую необходимо выполнить с назначением роли. В следующей таблице перечислены операции.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: b4047c7e3483e205ca282f77636276a5268b4fd3
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: f742354fb44bf9f478aa6ede6ef87a5383220302
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510262"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397665"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Создание governanceRoleAssignmentRequest
 
@@ -19,19 +19,19 @@ ms.locfileid: "64510262"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Создайте запрос на назначение ролей для представления операции, необходимой для назначения ролей. В следующей таблице перечислены операции.
+Создайте запрос на назначение роли, чтобы представить операцию, которую необходимо выполнить с назначением роли. В следующей таблице перечислены операции.
 
-| Operation                                   | Type        |
+| Операция                                   | Тип        |
 |:--------------------------------------------|:------------|
 | Назначение роли                    | AdminAdd    |
-| Активация назначения подходящих ролей        | UserAdd     |
-| Отключение назначения активированной роли     | UserRemove  |
-| Удаление назначения ролей                    | AdminRemove |
-| Обновление назначения ролей                    | AdminUpdate |
-| Запрос на продление назначения ролей        | UserExtend  |
-| Расширение назначения ролей                    | AdminExtend |
-| Запрос на возобновление назначения истекшим сроком выполнения ролей | UserRenew   |
-| Возобновление назначения роли с истекшим сроком действия            | AdminRenew  |
+| Активация допустимого назначения роли        | UserAdd     |
+| Деактивация активированной роли     | UserRemove  |
+| Удаление назначения роли                    | AdminRemove |
+| Обновление назначения роли                    | AdminUpdate |
+| Запрос на продление назначения роли        | UserExtend  |
+| Расширение назначения роли                    | AdminExtend |
+| Запрос на продление назначения роли с истекшим сроком действия | UserRenew   |
+| Продление назначения роли с истекшим сроком действия            | AdminRenew  |
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,7 +42,7 @@ ms.locfileid: "64510262"
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ### <a name="azure-ad"></a>Azure AD
@@ -50,7 +50,7 @@ ms.locfileid: "64510262"
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ### <a name="groups"></a>Группы
@@ -58,7 +58,7 @@ ms.locfileid: "64510262"
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -78,52 +78,52 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) .
+В тексте запроса добавьте представление объекта [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в формате JSON.
 
 | Свойство         | Тип                                                     | Описание |
 |:-----------------|:---------------------------------------------------------|:--|
-| resourceId       | String                                                   | Уникальный идентификатор ресурса Azure, связанный с запросом на назначение ролей. Ресурсы Azure могут включать подписки, группы ресурсов, виртуальные машины и SQL базы данных. Обязательный аргумент. |
-| roleDefinitionId | String                                                   | Идентификатор определения роли Azure, с котором связан запрос на назначение ролей. Обязательный аргумент. |
-| subjectId        | Строка                                                   | Уникальный идентификатор основного или субъекта, с который связан запрос на назначение ролей. Директорами могут быть пользователи, группы или директора службы. Обязательный аргумент. |
+| resourceId       | String                                                   | Уникальный идентификатор ресурса Azure, связанного с запросом на назначение роли. Ресурсы Azure могут включать подписки, группы ресурсов, виртуальные машины и базы данных SQL. Обязательно. |
+| roleDefinitionId | String                                                   | Идентификатор определения роли Azure, с помощью которого связан запрос на назначение ролей. Обязательно. |
+| subjectId        | String                                                   | Уникальный идентификатор субъекта или субъекта, с помощью которого связан запрос на назначение ролей. Субъектами могут быть пользователи, группы или субъекты-службы. Обязательно. |
 | assignmentState  | String                                                   | Состояние назначения. Значение может быть и `Eligible` `Active`. Обязательное. |
-| type             | String                                                   | Тип запроса. Значение может быть , , , , , , `UserExtend`и `UserRenew``AdminRenew``AdminExtend`. `AdminRemove``UserRemove``AdminUpdate``UserAdd``AdminAdd` Обязательный аргумент. |
-| reason           | String                                                   | Причина должна быть предоставлена для запроса назначения ролей для целей аудита и проверки. |
-| schedule         | [governanceSchedule](../resources/governanceschedule.md) | Расписание запроса на назначение ролей. Для типа запроса `UserAdd`, `AdminAdd`и `AdminUpdate``AdminExtend`, это необходимо. |
+| type             | String                                                   | Тип запроса. Значение может быть `AdminAdd`: , `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, , `UserExtend`, и `AdminExtend``UserRenew``AdminRenew`. Обязательно. |
+| reason           | String                                                   | Причина должна быть указана для запроса на назначение роли для аудита и проверки. |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | Расписание запроса на назначение ролей. Для типа запроса `UserAdd`, `AdminAdd`и `AdminUpdate``AdminExtend`, он является обязательным. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `201 Created` ответа и объект [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в тексте отклика.
 
 ### <a name="error-codes"></a>Коды ошибок
 
-Этот API возвращает стандартные коды ошибок HTTP. Кроме того, он возвращает коды ошибок, перечисленные в следующей таблице.
+Этот API возвращает стандартные коды ошибок HTTP. Кроме того, он также возвращает коды ошибок, перечисленные в следующей таблице.
 
 | Код ошибки     | Сообщение об ошибке                               | Details       |
 |:---------------|:--------------------------------------------|:--------------|
-| 400 BadRequest | RoleNotFound                                | Предоставленное `roleDefinitionId` в теле запроса не удается найти. |
-| 400 BadRequest | ResourceIsLocked                            | Ресурс, предоставленный в теле запроса, находится в состоянии и `Locked` не может создавать запросы на назначение ролей. |
-| 400 BadRequest | SubjectNotFound                             | Предоставленное `subjectId` в теле запроса не удается найти. |
-| 400 BadRequest | PendingRoleAssignmentRequest                | В системе уже существует ожидаемая [система governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . |
-| 400 BadRequest | RoleAssignmentExists                        | Система [governanceRoleAssignment](../resources/governanceroleassignment.md) , запрашиваемая для создания, уже существует в системе. |
-| 400 BadRequest | RoleAssignmentDoesNotExist                  | [УправлениеRoleAssignment](../resources/governanceroleassignment.md), запрашиваемая для обновления или расширения, не существует в системе. |
-| 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) не отвечает внутренним политикам и не может быть создан. |
+| 400 BadRequest | RoleNotFound                                | Не `roleDefinitionId` удается найти указанное в тексте запроса. |
+| 400 BadRequest | ResourceIsLocked                            | Ресурс, указанный в тексте запроса, находится в состоянии `Locked` и не может создавать запросы на назначение ролей. |
+| 400 BadRequest | SubjectNotFound                             | Не `subjectId` удается найти указанное в тексте запроса. |
+| 400 BadRequest | PendingRoleAssignmentRequest                | В системе уже существует [ожидающий запрос governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . |
+| 400 BadRequest | RoleAssignmentExists                        | Система [governanceRoleAssignment, запрашиваемая](../resources/governanceroleassignment.md) для создания, уже существует в системе. |
+| 400 BadRequest | RoleAssignmentDoesNotExist                  | Объект [governanceRoleAssignment](../resources/governanceroleassignment.md) , запрашиваемый для обновления или расширения, не существует в системе. |
+| 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) не соответствует внутренним политикам и не может быть создан. |
 
 ## <a name="examples"></a>Примеры
 
-В следующих примерах покажите, как использовать этот API.
+В следующих примерах показано, как использовать этот API.
 
 ### <a name="example-1-administrator-assigns-user-to-a-role"></a>Пример 1. Администратор назначает пользователю роль
 
-В этом примере администратор назначает пользователю nawu@contoso.com роль читателя биллинга.
+В этом примере администратор назначает пользователю nawu@contoso.com роли читателя счетов.
 
- >**Примечание:** В дополнение к разрешению в `Active` этом примере требуется, чтобы у запрашиваемой стороны было по крайней мере одно назначение роли администратора (`owner``user access administrator`или) на ресурсе.
+ >**Примечание:** В дополнение к разрешению в `Active` этом примере требуется, чтобы у запрашивателя было по крайней мере одно назначение роли администратора (`owner` или `user access administrator`) для ресурса.
 
 | Свойство         | Тип                                                     | Обязательный                 | Значение |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | String                                                   | Да                      | \<resourceId\> |
-| roleDefinitionId | Строка                                                   | Да                      | \<roleDefinitionId\> |
-| subjectId        | Строка                                                   | Да                      | \<subjectId\> |
-| assignmentState  | Строка                                                   | Да                      | Подходящая / Активная |
+| roleDefinitionId | String                                                   | Да                      | \<roleDefinitionId\> |
+| subjectId        | String                                                   | Да                      | \<subjectId\> |
+| assignmentState  | String                                                   | Да                      | Допустимые и активные |
 | type             | String                                                   | Да                      | AdminAdd |
 | reason           | String                                                   | зависит от роли Параметры |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                      |   |
@@ -236,15 +236,15 @@ Content-type: application/json
 
 ### <a name="example-2-user-activates-eligible-role"></a>Пример 2. Пользователь активирует допустимую роль
 
-В этом примере пользователь nawu@contoso.com активирует допустимую роль чтения биллинга.
+В этом примере пользователь nawu@contoso.com активирует допустимую роль читателя выставления счетов.
 
 | Свойство         | Тип                                                     | Обязательный                 | Значение |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | String                                                   | Да                      | \<resourceId\> |
-| roleDefinitionId | Строка                                                   | Да                      | \<roleDefinitionId\> |
-| subjectId        | Строка                                                   | Да                      | \<subjectId\> |
-| assignmentState  | Строка                                                   | Да                      | Активное |
-| type             | Строка                                                   | Да                      | UserAdd |
+| roleDefinitionId | String                                                   | Да                      | \<roleDefinitionId\> |
+| subjectId        | String                                                   | Да                      | \<subjectId\> |
+| assignmentState  | String                                                   | Да                      | Активация |
+| type             | String                                                   | Да                      | UserAdd |
 | reason           | String                                                   | зависит от роли Параметры |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                      |   |
 
@@ -365,16 +365,16 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-user-deactivates-an-assigned-role"></a>Пример 3. Пользователь отключает назначенную роль
+### <a name="example-3-user-deactivates-an-assigned-role"></a>Пример 3. Пользователь деактивирует назначенную роль
 
-В этом примере пользователь nawu@contoso.com активную роль чтения биллинга.
+В этом примере пользователь nawu@contoso.com активирует активную роль читателя счетов.
 
 | Свойство         | Тип                                                     | Обязательный | Значение |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | String                                                   | Да      | \<resourceId\> |
-| roleDefinitionId | Строка                                                   | Да      | \<roleDefinitionId\> |
-| subjectId        | Строка                                                   | Да      | \<subjectId\> |
-| assignmentState  | String                                                   | Да      | Активное |
+| roleDefinitionId | String                                                   | Да      | \<roleDefinitionId\> |
+| subjectId        | String                                                   | Да      | \<subjectId\> |
+| assignmentState  | String                                                   | Да      | Активация |
 | type             | String                                                   | Да      | UserRemove |
 | reason           | String                                                   | Нет       |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Нет       |   |
@@ -463,18 +463,18 @@ Content-type: application/json
 
 ### <a name="example-4-administrator-removes-user-from-a-role"></a>Пример 4. Администратор удаляет пользователя из роли
 
-В этом примере администратор удаляет пользовательские nawu@contoso.com из роли чтения биллинга.
+В этом примере администратор удаляет пользователя nawu@contoso.com роли читателя выставления счетов.
 
- >**Примечание:** В дополнение к разрешению в `Active` этом примере требуется, чтобы у запрашиваемой стороны было по крайней мере одно назначение роли администратора (`owner``user access administrator`или) на ресурсе.
+ >**Примечание:** В дополнение к разрешению в `Active` этом примере требуется, чтобы у запрашивателя было по крайней мере одно назначение роли администратора (`owner` или `user access administrator`) для ресурса.
 
 | Свойство         | Тип                                                     | Обязательный | Значение |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | String                                                   | Да      | \<resourceId\> |
-| roleDefinitionId | Строка                                                   | Да      | \<roleDefinitionId\> |
-| subjectId        | Строка                                                   | Да      | \<subjectId\> |
-| assignmentState  | Строка                                                   | Да      | Подходящая / Активная |
-| type             | Строка                                                   | Да      | AdminRemove |
-| reason           | Строка                                                   | Нет       |   |
+| roleDefinitionId | String                                                   | Да      | \<roleDefinitionId\> |
+| subjectId        | String                                                   | Да      | \<subjectId\> |
+| assignmentState  | String                                                   | Да      | Допустимые и активные |
+| type             | String                                                   | Да      | AdminRemove |
+| reason           | String                                                   | Нет       |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Нет       |   |
 
 #### <a name="request"></a>Запрос
@@ -557,20 +557,20 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-administrator-updates-role-assignment"></a>Пример 5. Назначение роли администратора
+### <a name="example-5-administrator-updates-role-assignment"></a>Пример 5. Администратор обновляет назначение ролей
 
-В этом примере администраторы обновляют назначение ролей для пользователя, nawu@contoso.com владельца.
+В этом примере администраторы обновляют назначение роли для пользователя, nawu@contoso.com владельца.
 
- >**Примечание:** В дополнение к разрешению в `Active` этом примере требуется, чтобы у запрашиваемой стороны было по крайней мере одно назначение роли администратора (`owner``user access administrator`или) на ресурсе.
+ >**Примечание:** В дополнение к разрешению в `Active` этом примере требуется, чтобы у запрашивателя было по крайней мере одно назначение роли администратора (`owner` или `user access administrator`) для ресурса.
 
 | Свойство         | Тип                                                     | Обязательный                | Значение |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | String                                                   | Да                     | \<resourceId\> |
-| roleDefinitionId | Строка                                                   | Да                     | \<roleDefinitionId\> |
-| subjectId        | Строка                                                   | Да                     | \<subjectId\> |
-| assignmentState  | Строка                                                   | Да                     | Подходящая / Активная |
+| roleDefinitionId | String                                                   | Да                     | \<roleDefinitionId\> |
+| subjectId        | String                                                   | Да                     | \<subjectId\> |
+| assignmentState  | String                                                   | Да                     | Допустимые и активные |
 | type             | String                                                   | Да                     | AdminUpdate |
-| reason           | String                                                   | зависит от ролиSettings |   |
+| reason           | String                                                   | зависит от roleSettings |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                     |   |
 
 #### <a name="request"></a>Запрос
@@ -676,20 +676,20 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-6-administrator-extends-expiring-role-assignment"></a>Пример 6. Администратор расширяет назначение ролей по истечении срока действия
+### <a name="example-6-administrator-extends-expiring-role-assignment"></a>Пример 6. Администратор расширяет назначение ролей с истекающим сроком действия
 
-В этом примере назначение ролей по истечении срока действия для пользователя ANUJCUSER расширяется Управление API service Contributor.
+В этом примере назначение ролей с истекающим сроком действия для пользователя ANUJCUSER расширяется Управление API участника службы.
 
- >**Примечание:** В дополнение к разрешению в `Active` этом примере требуется, чтобы у запрашиваемой стороны было по крайней мере одно назначение роли администратора (`owner``user access administrator`или) на ресурсе.
+ >**Примечание:** В дополнение к разрешению в `Active` этом примере требуется, чтобы у запрашивателя было по крайней мере одно назначение роли администратора (`owner` или `user access administrator`) для ресурса.
 
 | Свойство         | Тип                                                     | Обязательный                | Значение |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | String                                                   | Да                     | \<resourceId\> |
 | roleDefinitionId | String                                                   | Да                     | \<roleDefinitionId\> |
 | subjectId        | String                                                   | Да                     | \<subjectId\> |
-| assignmentState  | Строка                                                   | Да                     | Подходящая / Активная |
-| type             | Строка                                                   | Да                     | AdminExtend |
-| reason           | Строка                                                   | зависит от ролиSettings |   |
+| assignmentState  | String                                                   | Да                     | Допустимые и активные |
+| type             | String                                                   | Да                     | AdminExtend |
+| reason           | String                                                   | зависит от roleSettings |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                     |   |
 
 #### <a name="request"></a>Запрос

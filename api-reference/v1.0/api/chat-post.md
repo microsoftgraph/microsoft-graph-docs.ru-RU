@@ -1,29 +1,31 @@
 ---
 title: Создание чата
-description: Создайте новый объект чата.
+description: Создайте объект чата.
 author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e6a84f714afcbfaff254f77b439ac431d0f695dc
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 3119daba10087abfe802405e2878d85851dde1ea
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335159"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397633"
 ---
 # <a name="create-chat"></a>Создание чата
 Пространство имен: microsoft.graph
 
-Создайте новый [объект чата](../resources/chat.md) .
+Создайте объект [чата](../resources/chat.md) .
 
+> **Примечание:** Между двумя участниками может существовать только один чат "один к одному". Если чат "один к одному" уже существует, эта операция вернет существующий чат, а не создаст новый.
+> 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Chat.Create, Chat.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)|Chat.Create, Chat.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений | Chat.Create |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,23 +45,23 @@ POST /chats
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем JSON-представление объекта [чата](../resources/chat.md) .
+В тексте запроса добавьте представление объекта чата в формате [JSON.](../resources/chat.md)
 
 В следующей таблице перечислены свойства, необходимые для создания объекта чата.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|topic|(Необязательный) String|Название чата. Название чата может быть предоставлено только в том случае, если чат имеет тип `group` .|
+|topic|(Необязательно) Строка|Название чата. Заголовок чата можно указать только в том случае, если чат имеет тип `group` .|
 |chatType|[chatType](../resources/chat.md#chattype-values)| Указывает тип чата. Возможные значения: `group` и `oneOnOne`. |
-|members|Коллекция [conversationMember](../resources/conversationmember.md)|Список участников беседы, которых следует добавить. Каждый пользователь, который будет участвовать в чате, включая пользователя, который инициирует запрос на создание, должен быть указан в этом списке. Каждому участнику должна быть назначена роль `owner` или `guest`. Пользователям гостевого клиента должна быть назначена `guest` роль.|
+|members|Коллекция [conversationMember](../resources/conversationmember.md)|Список участников беседы, которых следует добавить. В этом списке должен быть указан каждый пользователь, который будет участвовать в чате, включая пользователя, который инициирует запрос на создание. Each member must be assigned a role of `owner` or `guest`. Роль должна быть назначена пользователям гостевого `guest` клиента.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного использования этот метод возвращает код `201 Created` отклика и вновь созданный ресурс чата в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и только что созданный ресурс **чата** в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-a-one-on-one-chat"></a>Пример 1. Создание чата один на один
+### <a name="example-1-create-a-one-on-one-chat"></a>Пример 1. Создание чата "один к одному"
 
 #### <a name="request"></a>Запрос
 
@@ -227,7 +229,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-create-a-one-on-one-chat-using-user-principal-name"></a>Пример 3. Создание чата один на один с использованием основного имени пользователя
+### <a name="example-3-create-a-one-on-one-chat-using-user-principal-name"></a>Пример 3. Создание чата "один к одному" с использованием имени участника-пользователя
 
 #### <a name="request"></a>Запрос
 
@@ -308,7 +310,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-create-a-group-chat-with-tenant-guest-user"></a>Пример 4. Создание группового чата с гостем клиента
+### <a name="example-4-create-a-group-chat-with-tenant-guest-user"></a>Пример 4. Создание группового чата с гостевым пользователем клиента
 
 #### <a name="request"></a>Запрос
 

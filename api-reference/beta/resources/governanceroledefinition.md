@@ -1,18 +1,18 @@
 ---
-title: тип ресурса governanceRoleDefinition
-description: Представляет определения ролей. Для ресурсов Azure он может представлять роли Azure RBAC, такие как Owner, Reader, Contributor и т.д.
+title: Тип ресурса governanceRoleDefinition
+description: Представляет определения ролей. Для ресурсов Azure он может представлять роли RBAC Azure, такие как владелец, читатель, участник и т. д.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 631640b8187b2fae87b28fcd6cd1b1b9b57a9bb5
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 5cbb9cb86664407018237def427381610d898ff5
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510557"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398828"
 ---
-# <a name="governanceroledefinition-resource-type"></a>тип ресурса governanceRoleDefinition
+# <a name="governanceroledefinition-resource-type"></a>Тип ресурса governanceRoleDefinition
 
 Пространство имен: microsoft.graph
 
@@ -21,34 +21,34 @@ ms.locfileid: "64510557"
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 
-Представляет определения ролей. Для ресурсов Azure он может представлять роли Azure RBAC, такие как Owner, Reader, Contributor и т.д.
+Представляет определения ролей. Для ресурсов Azure он может представлять роли RBAC Azure, такие как владелец, читатель, участник и т. д.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод          | Возвращаемый тип |Описание|
 |:---------------|:--------|:--------|
-|[Список](../api/governanceroledefinition-list.md) | [коллекция governanceRoleDefinition](../resources/governanceroledefinition.md) |Список коллекции определений ролей на ресурсе.|
-|[Получение](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Чтение свойств и связей сущности определения роли, указанной в id.|
+|[Перечисление](../api/governanceroledefinition-list.md) | [Коллекция governanceRoleDefinition](../resources/governanceroledefinition.md) |Вывод списка определений ролей для ресурса.|
+|[Получение](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Чтение свойств и связей сущности определения роли, указанной идентификатором.|
 
-Нет`POST`, `PUT`поддерживается `DELETE` `PATCH`в наборе `roleDefinitions` сущности на данный момент.
+Нет `POST`, `PUT`, `PATCH`поддерживается `DELETE` для набора `roleDefinitions` сущностей на данный момент.
 
 ## <a name="properties"></a>Свойства
 | Свойство    | Тип   | Описание                                                           |
 |:------------|:-------|:----------------------------------------------------------------------|
-| id          | Строка | ID определения роли.                                        |
-| resourceId  | String | Обязательный. ID ресурса, связанного с определением роли. |
-| externalId  | String | Внешний id определения роли.                               |
-| displayName | Строка | Отображение имени определения роли.                              |
-| templateId  | Строка |                                                                       |
+| id          | String | Идентификатор определения роли.                                        |
+| resourceId  | String | Обязательный. Идентификатор ресурса, связанного с определением роли. |
+| externalId  | String | Внешний идентификатор определения роли.                               |
+| displayName | String | Отображаемое имя определения роли.                              |
+| templateId  | String |                                                                       |
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |resource|[governanceResource](../resources/governanceresource.md)|Только для чтения. Связанный ресурс для определения роли.|
-|roleSetting|[governanceRoleSetting](../resources/governancerolesetting.md)|Связанный параметр роли для определения роли.|
+|roleSetting|[governanceRoleSetting](../resources/governancerolesetting.md)|Параметр связанной роли для определения роли.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

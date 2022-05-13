@@ -1,30 +1,30 @@
 ---
-title: 'unifiedRoleEligibilityScheduleRequest: отмена'
-description: Отмена единойRoleEligibilityScheduleRequest.
-author: japere
+title: 'unifiedRoleEligibilityScheduleRequest: cancel'
+description: Отмена unifiedRoleEligibilityScheduleRequest.
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e70449502a4dd715fcfc389f66d2f0d351a3e574
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: c0a89a241a4dfcaf9ed946bee9b1e6ee1e0dae5e
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510367"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397474"
 ---
-# <a name="unifiedroleeligibilityschedulerequest-cancel"></a>unifiedRoleEligibilityScheduleRequest: отмена
+# <a name="unifiedroleeligibilityschedulerequest-cancel"></a>unifiedRoleEligibilityScheduleRequest: cancel
 Пространство имен: microsoft.graph
 
-Немедленно отмените [унифицированныйRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)`Granted`, который находится в состоянии, и через 30 дней система автоматически удаляет отмененный запрос. После вызова этого действия состояние отмененного унифицированногоRoleEligibilityScheduleRequest изменяется на . `Revoked`
+Немедленно [отмените unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)`Granted`, который находится в состоянии, и система автоматически удалит отмененный запрос через 30 дней. После вызова этого действия состояние отмененного unifiedRoleEligibilityScheduleRequest изменяется на . `Revoked`
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
+|Делегированное (рабочая или учебная учетная запись)|RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|RoleManagement.ReadWrite.Directory |
+|Для приложений|RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligi
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения это действие возвращает код отклика `204 No Content`.  Попытка отменить запрос, который не отменяется, например, объект unifiedRoleEligibilityScheduleRequest `Provisioned` `Failed``400 Bad Request`, состояние которого или , возвращает код ошибки.
+В случае успешного выполнения это действие возвращает код отклика `204 No Content`. Попытка отменить запрос, который не находится в состоянии отмены, например  объект unifiedRoleEligibilityScheduleRequest `Provisioned` `Failed`, состояние которого равно или возвращает `400 Bad Request` код ошибки.
 
 ## <a name="examples"></a>Примеры
 

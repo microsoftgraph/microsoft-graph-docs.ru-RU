@@ -10322,6 +10322,11 @@ items:
                     href: api/managedtenants-tenanttag-assigntag.md
                   - name: Отмена назначения тега клиента
                     href: api/managedtenants-tenanttag-unassigntag.md
+              - name: Использование клиента
+                href: resources/managedtenants-tenantusage.md
+                items:
+                  - name: Список
+                    href: api/managedtenants-managedtenant-list-tenantusage.md
               - name: Наличие вредоносных программ на устройстве с Windows
                 href: resources/managedtenants-windowsdevicemalwarestate.md
                 items:

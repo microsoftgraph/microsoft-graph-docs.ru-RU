@@ -2,15 +2,15 @@
 title: Privileged Identity Management — Azure AD
 description: Интерфейсы API службы Azure AD Privileged Identity Management для управления ролями Azure Active Directory.
 ms.localizationpriority: high
-author: carolinetempleton
+author: rkarim-ms
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 900038e9c68517ac42ade68218b55d7cc52450f9
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: bf9ef6441e4157f62b57a5f5bfdc8a21333b11a5
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688782"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398863"
 ---
 # <a name="privileged-identity-management---azure-ad-deprecated"></a>Privileged Identity Management — Azure AD (не рекомендуется)
 
@@ -18,7 +18,7 @@ ms.locfileid: "60688782"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 Следующие методы предоставляются службой PIM для ролей Azure AD. Служба создана на основе OData. Чтобы отфильтровать результаты запросов, используйте стандартные выражения OData `$filter` в URI.
 
@@ -46,6 +46,8 @@ ms.locfileid: "60688782"
 |[Создание privilegedApproval](../api/privilegedapproval-post-privilegedapproval.md) | [privilegedApproval](privilegedapproval.md)    |Создание объекта privilegedApproval. |
 |[Обновление privilegedApproval](../api/privilegedapproval-update.md) | [privilegedApproval](privilegedapproval.md) |Обновление объекта privilegedApproval. |
 |[myrequests](../api/privilegedapproval-myrequests.md) | Коллекция [privilegedApproval](privilegedapproval.md)|Получение запросов утверждения запрашивающей стороны. |
+
+[!INCLUDE [pimv2AADRoles-migration](../../includes/pimv2AADRoles-migration.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

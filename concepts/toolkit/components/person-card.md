@@ -3,12 +3,12 @@ title: Компонент Person-Card в Microsoft Graph Toolkit
 description: Компонент Person-Card для просмотра дополнительных сведений, относящихся к пользователю.
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.openlocfilehash: 8548430e5a34250c89f9e2e9c0c8e43f909b7bbe
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 20f34becb875b7bd8dd10bfdafce28fd6d14c808
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587940"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398323"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Компонент Person-Card в Microsoft Graph Toolkit
 
@@ -63,7 +63,7 @@ MgtPersonCard.config.sections.profile = false;
 | files | `boolean` — указывает, отображается ли раздела файлов карточки контакта. Значение по умолчанию: `true`.  |
 | profile | `boolean` — указывает, отображается ли раздел профиля карточки контакта. Значение по умолчанию: `true`.  |
 
-Чтобы отключить раздел, просто установите свойство в `false` коде инициализации приложения:
+Чтобы отключить раздел, просто задайте `false` свойство в коде инициализации приложения:
 ```ts
 import { MgtPersonCard } from `@microsoft/mgt`;
 
@@ -94,9 +94,9 @@ TeamsHelper.microsoftTeamsLib = microsoftTeams;
 | person-details | MicrosoftGraph.User <br> MicrosoftGraph.Person <br> MicrosoftGraph.Contact | Объект пользователя, определенный в Microsoft Graph и содержащий подробные сведения о пользователе. |
 | person-image   | string                    | Универсальный код ресурса (URI) изображения, связанный с человеком, который отображается в карточке.                                   |
 | inherit-details   | Отсутствует.                  | Разрешает проработку дерева родителей для компонента `mgt-person` для использования одинаковых данных `person-details` и `person-image`.                      |
-| user-id | string | Позволяет разработчикам поставлять пользовательский id для получения данных, показанных на компоненте person-card |
-| person-query | string | Позволяет разработчикам поставлять запрос пользователя для получения данных, показанных на компоненте person-card |
-| person-card | string | Указывает wheter компонент `person-card` может быть показан как всплывающее всплывающее удостоверение при наведении или нажатии кнопки на компоненте `mgt-person` . Допустимые значения или `hover` `click`.
+| user-id | string | Позволяет разработчикам указать идентификатор пользователя для получения данных, отображаемых в компоненте карточки пользователя |
+| person-query | string | Позволяет разработчикам предоставить запрос пользователя для получения данных, отображаемых в компоненте карточки пользователя |
+| person-card | string | Указывает, что компонент может `person-card` отображаться как всплывающее окно при наведении указателя мыши или щелчке по компоненту `mgt-person` . Допустимые значения: или `hover` `click`.
 
 
 ## <a name="templates"></a>Шаблоны
@@ -134,11 +134,11 @@ TeamsHelper.microsoftTeamsLib = microsoftTeams;
 
 Из компонента инициируются следующие события.
 
-Событие | Когда он излучается | Настраиваемые данные | Отмена | Пузыри | Работает с настраиваемой шаблонной
+Событие | Когда он создается | Пользовательские данные | Отменяемым | Пузыри | Работа с пользовательским шаблоном
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`expanded` | Пользователь открыл расширенный раздел сведений карты | Нет | Нет | Да | Да, если не переопределить шаблон по умолчанию
+`expanded` | Пользователь открывает развернутый раздел сведений карточки. | Нет | Нет | Да | Да, если вы не переопределите шаблон по умолчанию
 
-Дополнительные сведения об обработке событий см. в [этой информации](../customize-components/events.md).
+Дополнительные сведения об обработке событий см. в [разделе событий](../customize-components/events.md).
 
 ## <a name="css-custom-properties"></a>Настраиваемые свойства CSS
 
@@ -157,6 +157,16 @@ mgt-person {
   --person-card-details-item-font-size: 20px;
   --person-card-details-item-color: #3abf0a;
   --person-card-background-color: #000000;
+  --person-card-contact-link-color: #ff0000;
+  --person-card-contact-link-hover-color: #00ff00;
+  --person-card-show-more-color: #ff0000;
+  --person-card-show-more-hover-color: #00ff00;
+  --person-card-base-links-color: #ff0000;
+  --person-card-base-links-hover-color: #00ff00;
+  --person-card-tab-nav-color: #ff0000;
+  --person-card-active-org-member-color: #ff0000;
+  --person-card-nav-back-arrow-hover-color: #00ff00;
+  --person-card-nav-back-arrow-color: #ff0000;
 }
 ```
 
@@ -168,15 +178,15 @@ mgt-person {
 
 | Конфигурация | Разрешение | API | Section |
 | --- | ---------- | ------- | --------- |
-| `personDetails` установить с пользователем `id` , но без электронной почты, или `userId` установить, или `personQuery` установить `me` | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people), [/users/{id}/photo/$value](/graph/api/profilephoto-get) | По умолчанию |
-| `personQuery` значение, отличаее от `me` | People.Read | [/me/people/?$search=](/graph/api/user-list-people) | По умолчанию |
-| `personQuery` установлено значение, отличаее от `me` `config.useContactApis` значения (по умолчанию `true` ) | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) | По умолчанию |
-| `showPresence` установлено, что `true` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) | По умолчанию |
-| `sections.organization` включено (по умолчанию) | User.Read.All | [/users/{id}/manager](/graph/api/user-list-manager) | Организация |
+| `personDetails` set with user's `id` but without e-mail, or `userId` set, or `personQuery` set to `me` | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people), [/users/{id}/photo/$value](/graph/api/profilephoto-get) | По умолчанию |
+| `personQuery` задано значение, отличное от `me` | People.Read | [/me/people/?$search=](/graph/api/user-list-people) | По умолчанию |
+| `personQuery` задано значение, отличное от `me` и заданное `config.useContactApis` в `true` значение (по умолчанию) | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) | По умолчанию |
+| `showPresence` задано значение `true` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) | По умолчанию |
+| `sections.organization` enabled (по умолчанию) | User.Read.All | [/users/{id}/manager](/graph/api/user-list-manager) | Организация |
 | `sections.organization.showWorksWith` set (по умолчанию) | People.Read.All | [/users/{id}/people](/graph/api/user-list-people) | Организация |
-| `sections.mailMessages` включено (по умолчанию) | Mail.ReadBasic | [/me/messages](/graph/api/user-list-messages) | Сообщения |
-| `sections.files` включено (по умолчанию) | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Files |
-| `sections.profile` включено (по умолчанию) | User.Read.All | [/users/{id}/profile](/graph/api/profile-get?view=graph-rest-beta&preserve-view=true) | Профиль |
+| `sections.mailMessages` enabled (по умолчанию) | Mail.ReadBasic | [/me/messages](/graph/api/user-list-messages) | Сообщения |
+| `sections.files` enabled (по умолчанию) | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Файлы |
+| `sections.profile` enabled (по умолчанию) | User.Read.All | [/users/{id}/profile](/graph/api/profile-get?view=graph-rest-beta&preserve-view=true) | Профиль |
 
 Класс `MgtPersonCard` также предоставляет `getScopes` статический метод, возвращающий массив областей, необходимый для работы карточки контакта с учетом глобальной конфигурации карточки контакта.
 
@@ -193,13 +203,13 @@ const neededScopes = MgtPersonCard.getScopes();
 ## <a name="cache"></a>Кэш
 
 > [!IMPORTANT]
-> Компонент `mgt-person-card` извлекает основные данные человека из родительского компонента`mgt-person`, не вызывая microsoft Graph. Когда `mgt-person-card` используется отдельно, он извлекает необходимые данные и кэширует их. Данные, отображаемые в разделах карты, извлекаются отдельно и не кэшются.
+> Компонент `mgt-person-card` получает основные данные пользователя из родительского компонента `mgt-person` без вызова Microsoft Graph. Если `mgt-person-card` используется отдельно, он будет извлекать необходимые данные и кэшировать их. Данные, отображаемые в разделах карточки, извлекаются отдельно и не кэшируются.
 
-|Хранилище объектов|Кэшные данные|Примечания|
+|Хранилище объектов|Кэшированные данные|Замечания|
 |---------|-----------|-------|
-|`people`|Сведения о человеке|Используется при `personQuery` указании и его значение отличается от `me`|
-|`photos`|Фотография человека|
-|`presence`|Присутствие человека|Используется, когда `showPresence` установлено `true`|
-|`users`|Сведения о пользователях|Используется при `userId` указании или `personQuery` задан `me`|
+|`people`|Сведения о пользователе|Используется при `personQuery` указании и его значение отличается от `me`|
+|`photos`|Фотография пользователя|
+|`presence`|Присутствие пользователя|Используется, если `showPresence` задано значение . `true`|
+|`users`|Сведения о пользователе пользователя|Используется, `userId` если указано или задано `personQuery` значение `me`|
 
-Дополнительные сведения о настройке кэша см. в [caching](../customize-components/cache.md) .
+[Дополнительные сведения](../customize-components/cache.md) о настройке кэша см. в разделе "Кэширование".

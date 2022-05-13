@@ -1,18 +1,18 @@
 ---
-title: тип ресурсов governanceRuleSetting
-description: Представляет правила, из которого состоят параметры ролей.
+title: Тип ресурса governanceRuleSetting
+description: Представляет правила, из которых состоят параметры роли.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 212bee0fdf42e66346aef32083f86f748801ded1
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 12436250814a45bae0c7bf3c910e01f2f0a0c303
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509674"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397496"
 ---
-# <a name="governancerulesetting-resource-type"></a>тип ресурсов governanceRuleSetting
+# <a name="governancerulesetting-resource-type"></a>Тип ресурса governanceRuleSetting
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "64509674"
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Представляет правила, из которого состоят параметры ролей.
+Представляет правила, из которых состоят параметры роли.
 
 
 ## <a name="properties"></a>Свойства
 |Свойство      | Тип         |Описание|
 |:-------------|:-------------|:----------|
-|ruleIdentifier|String        |Id правила. Например, ``ExpirationRule`` и ``MfaRule``.|
-|setting       |String        |Параметры правила. Это значение — строка JSON со списком пар в формате Parameter_Name:Parameter_Value. Пример: `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
+|ruleIdentifier|String        |Идентификатор правила. Например, ``ExpirationRule`` и ``MfaRule``.|
+|setting       |String        |Параметры правила. Значение представляет собой строку JSON со списком пар в формате Parameter_Name:Parameter_Value. Пример: `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

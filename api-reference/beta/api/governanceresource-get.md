@@ -1,18 +1,18 @@
 ---
-title: Get governanceResource
-description: Извлечение свойств и связей объекта governanceResource.
+title: Получение governanceResource
+description: Получение свойств и связей объекта governanceResource.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 7670a7a2fb157d6c9dcf752f54d673c8604ed067
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 5ed1ac7790d35f13302e30630df9a2c74a2c60c2
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510508"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398465"
 ---
-# <a name="get-governanceresource"></a>Get governanceResource
+# <a name="get-governanceresource"></a>Получение governanceResource
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "64510508"
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Извлечение свойств и связей объекта [governanceResource](../resources/governanceresource.md) .
+Получение свойств и связей объекта [governanceResource](../resources/governanceresource.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
@@ -30,26 +30,26 @@ ms.locfileid: "64510508"
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureResources |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureAD |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureADGroup |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | PrivilegedAccess.Read.AzureADGroup |
 
-Помимо области разрешений этот API требует, чтобы у запросителя было как минимум одно назначение ролей на ресурсе.
+Помимо области разрешений, этот API требует, чтобы инициатор запроса должен иметь по крайней мере одно назначение роли для ресурса.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -58,7 +58,7 @@ GET /privilegedAccess/azureResources/resources/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод **поддерживает** только параметры  `$select` `$expand` [запроса OData,](/graph/query-parameters) чтобы помочь настроить ответ.
+Этот метод **поддерживает** только параметры  `$select` `$expand` [запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -68,10 +68,10 @@ GET /privilegedAccess/azureResources/resources/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект governanceResource](../resources/governanceresource.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [governanceResource](../resources/governanceresource.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
-В этом примере показано, как получить сведения о подписке Wingtip Toys - Prod (e5e7d29d-5465-45ac-885f-4716a5ee74b5).
+В этом примере показано, как получить сведения о подписке Wingtip Toys — Prod (e5e7d29d-5465-45ac-885f-4716a5ee74b5).
 <!-- {
   "blockType": "request",
   "name": "get_governanceresource"

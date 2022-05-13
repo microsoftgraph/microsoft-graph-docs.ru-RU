@@ -1,18 +1,18 @@
 ---
-title: тип ресурса privilegedRoleSummary
+title: Тип ресурса privilegedRoleSummary
 description: Сводка статистики для определенной роли.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 10963bbd913b1c11651a4de3899056f3edc5be88
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: c8917786bfce56910555e2ea5aea98dfd0af3a75
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510543"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397502"
 ---
-# <a name="privilegedrolesummary-resource-type"></a>тип ресурса privilegedRoleSummary
+# <a name="privilegedrolesummary-resource-type"></a>Тип ресурса privilegedRoleSummary
 
 Пространство имен: microsoft.graph
 
@@ -30,12 +30,12 @@ ms.locfileid: "64510543"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|elevatedCount|int32|Число пользователей, которые имеют назначенную роль и роль активируется.|
+|elevatedCount|int32|Число пользователей, которым назначена роль и роль активирована.|
 |id|string| Уникальный идентификатор роли. Только для чтения.|
-|managedCount|int32|Число пользователей, которые имеют назначенную роль, но роль отключена.|
-|mfaEnabled|boolean|`true` если активация роли требует MFA. `false` если активация роли не требует MFA.|
-|status|roleSummaryStatus| Возможные значения: `ok`, `bad`. Значение зависит от соотношения (managedCount /usersCount). Если коэффициент меньше заранее установленного порогового значения, `ok` возвращается. В противном `bad` случае возвращается.|
-|usersCount|int32|Число пользователей, которые назначены с ролью.|
+|managedCount|int32|Количество пользователей, которым назначена роль, но роль отключена.|
+|mfaEnabled|логический|`true` , если для активации роли требуется многофакторная проверка подлинности. `false` if the role activation doesn't require MFA.|
+|status|roleSummaryStatus| Возможные значения: `ok`, `bad`. Значение зависит от соотношения (managedCount /usersCount). Если коэффициент меньше предопределенного порогового значения, `ok` возвращается. В противном `bad` случае возвращается.|
+|usersCount|int32|Количество пользователей, которым назначена роль.|
 
 ## <a name="relationships"></a>Связи
 Нет

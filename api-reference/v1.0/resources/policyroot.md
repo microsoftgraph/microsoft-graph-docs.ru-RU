@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса policyRoot
 description: Тип ресурса, который предоставляет свойства навигации для одноэлементных политик.
-author: japere
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f91bdf76395b44c4041a64ce81716158455de3cf
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: fd9c30baa16ef404c363448f06d211613bad64e7
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133498"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398414"
 ---
 # <a name="policyroot-resource-type"></a>Тип ресурса policyRoot
 

@@ -1,34 +1,34 @@
 ---
-title: тип ресурсов governanceSubject
-description: Представляет пользователей, групп и директоров служб, управляемых в управление привилегированными пользователями (PIM).
+title: Тип ресурса governanceSubject
+description: Представляет пользователей, группы и субъекты-службы, управляемые в управление привилегированными пользователями (PIM).
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 99e668cc18ff38f8a4b26c11d514beddcc020e00
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: f898c844a9bf2d461cf73e02abf1852e012c1825
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509639"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397574"
 ---
-# <a name="governancesubject-resource-type"></a>тип ресурсов governanceSubject
+# <a name="governancesubject-resource-type"></a>Тип ресурса governanceSubject
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет пользователей, групп и директоров служб, управляемых в управление привилегированными пользователями (PIM).
+Представляет пользователей, группы и субъекты-службы, управляемые в управление привилегированными пользователями (PIM).
 
 
 ## <a name="properties"></a>Свойства
 | Свойство  | Тип       |Описание|
 |:----------|:----------|:----------|
-|id         |Строка     | ID субъекта.|
-|type       |Строка     |Тип субъекта. Значение может быть ``User``, ``Group``и ``ServicePrincipal``.|
-|displayName|Строка     |Отображение имени субъекта.|
-|email      |String     |Адрес электронной почты субъекта пользователя. Если объект находится в других типах, он пуст.|
-|principalName|String   |Основное имя субъекта пользователя. Если объект находится в других типах, он пуст.|
+|id         |String     | Идентификатор субъекта.|
+|type       |String     |Тип темы. Значение может быть ``User``, ``Group``и ``ServicePrincipal``.|
+|displayName|String     |Отображаемое имя субъекта.|
+|email      |String     |Адрес электронной почты субъекта пользователя. Если тема находится в других типах, она пуста.|
+|principalName|String   |Имя субъекта пользователя. Если тема находится в других типах, она пуста.|
 
 ## <a name="relationships"></a>Связи
 Нет

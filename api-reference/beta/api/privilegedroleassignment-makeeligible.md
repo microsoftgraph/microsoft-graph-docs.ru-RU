@@ -4,13 +4,13 @@ description: Сделайте назначение роли допустимой
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 73c4a227589e32bc65238544357b55cf88f97116
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: cd277c4f47e5af8bd40fe09187d08bf5da480e01
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65314290"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397567"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>privilegedRoleAssignment: makeEligible
 
@@ -23,7 +23,7 @@ ms.locfileid: "65314290"
 Сделайте назначение роли допустимой. Если назначение роли уже подходит перед вызовом, оно не выполняет никаких действий. Если назначение роли является постоянным и инициатор запроса отличается от целевого пользователя, назначение роли становится допустимой и роль будет отключена для целевого пользователя. Если запрашиваемый пользователь является целевым пользователем и ролью является администратор безопасности или администратор привилегированных ролей, роль будет активирована с истечением срока действия по умолчанию.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 Инициатор запроса должен иметь роль _администратора привилегированных_ ролей. 
 

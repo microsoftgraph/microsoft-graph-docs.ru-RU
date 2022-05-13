@@ -1,31 +1,33 @@
 ---
 title: Создание чата
-description: Создайте новый объект чата.
+description: Создайте объект чата.
 author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 80f45a8956863ff99280d595387a8041d00a44de
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 8616739bf32756b5421e0a0ed0f3164521c0b916
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335621"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398610"
 ---
 # <a name="create-chat"></a>Создание чата
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект чата](../resources/chat.md) .
+Создайте объект [чата](../resources/chat.md) .
+
+> **Примечание:** Между двумя участниками может существовать только один чат "один к одному". Если чат "один к одному" уже существует, эта операция вернет существующий чат, а не создаст новый.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Chat.Create, Chat.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)|Chat.Create, Chat.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений | Chat.Create |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,30 +47,30 @@ POST /chats
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем JSON-представление объекта [чата](../resources/chat.md) .
+В тексте запроса добавьте представление объекта чата в формате [JSON.](../resources/chat.md)
 
 В следующей таблице перечислены свойства, необходимые для создания объекта чата.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|topic|(Необязательный) String|Название чата. Название чата может быть предоставлено только в том случае, если чат имеет тип `group` .|
+|topic|(Необязательно) Строка|Название чата. Заголовок чата можно указать только в том случае, если чат имеет тип `group` .|
 |chatType|[chatType](../resources/chat.md#chattype-values)| Указывает тип чата. Возможные значения: `group` и `oneOnOne`. |
-|members|Коллекция [conversationMember](../resources/conversationmember.md)|Список участников беседы, которых следует добавить. Каждый пользователь, который будет участвовать в чате, включая пользователя, который инициирует запрос на создание, должен быть указан в этом списке. Каждому участнику должна быть назначена роль `owner` или `guest`. Пользователям гостевого клиента должна быть назначена `guest` роль.|
-|installedApps| Коллекция [teamsApp](../resources/teamsapp.md)|Список приложений, которые необходимо установить в чате.|
+|members|Коллекция [conversationMember](../resources/conversationmember.md)|Список участников беседы, которых следует добавить. В этом списке должен быть указан каждый пользователь, который будет участвовать в чате, включая пользователя, который инициирует запрос на создание. Each member must be assigned a role of `owner` or `guest`. Роль должна быть назначена пользователям гостевого `guest` клиента.|
+|installedApps| Коллекция [teamsApp](../resources/teamsapp.md)|Список приложений, которые должны быть установлены в чате.|
 
-> **Примечание:** В настоящее время поддерживается только одна установка приложения. Если в запросе перечислены несколько установок приложений, ответ будет ошибкой `Bad Request` .
+> **Примечание:** В настоящее время поддерживается только одна установка приложения. Если в запросе указано несколько установок приложений, ответ будет ошибкой `Bad Request` .
 
 ## <a name="response"></a>Отклик
 
-### <a name="response-for-creating-a-one-on-one-chat-without-installed-apps"></a>Ответ на создание единого чата без установленных приложений
-В случае успешного использования этот метод возвращает код `201 Created` отклика и вновь созданный ресурс чата в тексте ответа.[](../resources/chat.md)
+### <a name="response-for-creating-a-one-on-one-chat-without-installed-apps"></a>Ответ на создание чата "один к одному" без установленных приложений
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и только что созданный ресурс [чата](../resources/chat.md) в тексте отклика.
 
-### <a name="response-for-creating-a-one-on-one-chat-with-installed-apps"></a>Ответ на создание единого чата с установленными приложениями
-В случае успешной работы этот метод возвращает код `202 Accepted` ответа и загон расположения, содержащий ссылку на [teamsAsyncOperation](../resources/teamsasyncoperation.md). Ссылку можно использовать для получения состояния и сведений об операции. Подробные сведения см. в [материале Get operation on chat](teamsasyncoperation-get.md#example-get-operation-on-chat).
+### <a name="response-for-creating-a-one-on-one-chat-with-installed-apps"></a>Ответ на создание чата "один к одному" с установленными приложениями
+В случае успешного выполнения этот метод возвращает код `202 Accepted` отклика и заголовок Location, содержащий ссылку на [teamsAsyncOperation](../resources/teamsasyncoperation.md). Ссылку можно использовать для получения сведений о состоянии операции. Дополнительные сведения см. в [разделе "Получение операции в чате"](teamsasyncoperation-get.md#example-get-operation-on-chat).
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-a-one-on-one-chat"></a>Пример 1. Создание чата один на один
+### <a name="example-1-create-a-one-on-one-chat"></a>Пример 1. Создание чата "один к одному"
 
 #### <a name="request"></a>Запрос
 
@@ -238,7 +240,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-create-a-one-on-one-chat-with-installed-apps"></a>Пример 3. Создание чата один на один с установленными приложениями
+### <a name="example-3-create-a-one-on-one-chat-with-installed-apps"></a>Пример 3. Создание чата "один к одному" с установленными приложениями
 
 #### <a name="request"></a>Запрос
 
@@ -314,9 +316,9 @@ Content-Type: application/json
 Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces')/operations('2432b57b-0abd-43db-aa7b-16eadd115d34-861f06db-0208-4815-b67a-965df0d28b7f-10adc8a6-60db-42e2-9761-e56a7e4c7bc9')
 ```
 
-Инициирована операция async, и в ответе содержится загон Location, который включает ссылку на [teamsAsyncOperation](../resources/teamsasyncoperation.md). Ссылку можно использовать для получения состояния и сведений об операции. Подробные сведения см. в [материале Get operation on chat](teamsasyncoperation-get.md#example-get-operation-on-chat).
+Инициируется асинхронная операция, а ответ содержит заголовок Location, который содержит ссылку на [teamsAsyncOperation](../resources/teamsasyncoperation.md). Ссылку можно использовать для получения сведений о состоянии операции. Дополнительные сведения см. в [разделе "Получение операции в чате"](teamsasyncoperation-get.md#example-get-operation-on-chat).
 
-### <a name="example-4-create-a-one-on-one-chat-using-user-principal-name"></a>Пример 4. Создание чата один на один с использованием основного имени пользователя
+### <a name="example-4-create-a-one-on-one-chat-using-user-principal-name"></a>Пример 4. Создание чата "один к одному" с использованием имени участника-пользователя
 
 #### <a name="request"></a>Запрос
 
@@ -398,7 +400,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-5-create-a-group-chat-with-tenant-guest-user"></a>Пример 5. Создание группового чата с гостем клиента клиента
+### <a name="example-5-create-a-group-chat-with-tenant-guest-user"></a>Пример 5. Создание группового чата с гостевым пользователем клиента
 
 #### <a name="request"></a>Запрос
 
@@ -487,4 +489,4 @@ Content-Type: application/json
 ```
 
 ## <a name="see-also"></a>См. также
-- [Get teamsAsyncOperation](teamsasyncoperation-get.md)
+- [Получение teamsAsyncOperation](teamsasyncoperation-get.md)

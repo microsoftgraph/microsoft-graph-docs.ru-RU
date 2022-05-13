@@ -1,31 +1,31 @@
 ---
-title: тип ресурса unifiedRoleManagementPolicyEnablementRule
-description: В единойroleManagementPolicyEnablementRule указывается правило включить, связанное с политикой управления ролью. Она получена из microsoft.graph.unifiedRoleManagementPolicyRule.
-author: japere
+title: Тип ресурса unifiedRoleManagementPolicyEnablementRule
+description: UnifiedRoleManagementPolicyEnablementRule указывает правило включения, связанное с политикой управления ролем. Он является производным от microsoft.graph.unifiedRoleManagementPolicyRule.
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 094c760f0436d95bb6fcb2b6480f55a60a11e1ad
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 5a709aedb9d0a6b819fffe2edf4ce5a217f20ba4
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510641"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397742"
 ---
-# <a name="unifiedrolemanagementpolicyenablementrule-resource-type"></a>тип ресурса unifiedRoleManagementPolicyEnablementRule
+# <a name="unifiedrolemanagementpolicyenablementrule-resource-type"></a>Тип ресурса unifiedRoleManagementPolicyEnablementRule
 
 Пространство имен: microsoft.graph
 
-В единойroleManagementPolicyEnablementRule указывается правило включить, связанное с политикой управления ролью. Она получена из microsoft.graph.unifiedRoleManagementPolicyRule.
+UnifiedRoleManagementPolicyEnablementRule указывает правило включения, связанное с политикой управления ролем. Он является производным от microsoft.graph.unifiedRoleManagementPolicyRule.
 
-Наследует [от unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
+Наследуется [от unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|enabledRules|Коллекция String|Правила, которые включены. Допустимые значения : MultifactorAuthentication, Justification, Ticketing.|
-|id|String|Уникальный идентификатор для правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
-|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Цель правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
+|enabledRules|Коллекция String|Включенные правила. Допустимые значения: MultifactorAuthentication, Justification, Ticketing.|
+|id|String|Уникальный идентификатор правила. Наследуется от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
+|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Целевой объект для правила. Наследуется от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

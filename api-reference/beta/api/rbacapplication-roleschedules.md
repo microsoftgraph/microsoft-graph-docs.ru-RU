@@ -1,32 +1,32 @@
 ---
 title: 'rbacApplication: roleSchedules'
-description: Извлечение обеих ролейAssignmentSchedules и roleEligibilitySchedules.
-author: japere
+description: Получение обоих roleAssignmentSchedules и roleEligibilitySchedules.
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5bb7c202d222999266379692007c89543605d4a0
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 20d0f4f42f60e7c37c16738068a02594233528f6
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510325"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398491"
 ---
 # <a name="rbacapplication-roleschedules"></a>rbacApplication: roleSchedules
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение обеих ролейAssignmentSchedules и roleEligibilitySchedules.
+Получение обоих roleAssignmentSchedules и roleEligibilitySchedules.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|PrivilegedAccess.ReadWrite.AzureAD|
+|Делегированное (рабочая или учебная учетная запись)|PrivilegedAccess.ReadWrite.AzureAD|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|PrivilegedAccess.Read.AzureAD|
+|Для приложений|PrivilegedAccess.Read.AzureAD|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,14 +39,14 @@ GET /roleManagement/directory/roleSchedules
 ```
 
 ## <a name="function-parameters"></a>Параметры функции
-В следующей таблице показаны параметры запроса, которые можно использовать с помощью этого метода.
+В следующей таблице показаны параметры запроса, которые можно использовать с этим методом.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|directoryScopeId|Строка|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Используйте **appScopeId,** чтобы ограничить область только приложения. |
-|appScopeId|String|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId** , чтобы ограничить область для определенных объектов каталогов, например административных единиц. |
-|principalId|String| Идентификатор основного, которому предоставляется назначение. Может быть группой или пользователем. |
-|roleDefinitionId|String|Идентификатор единойRoleDefinition для назначения. Только для чтения.|
+|directoryScopeId|String|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым участнику был предоставлен доступ. Области каталога — это общие области, хранящиеся в каталоге, которые распознаются несколькими приложениями. Используется `/` для области на уровне клиента. Используйте **appScopeId** , чтобы ограничить область только приложением. |
+|appScopeId|String|Идентификатор области, относяшейся к приложению, если область назначения предназначена для конкретного приложения. Область назначения определяет набор ресурсов, к которым участнику был предоставлен доступ. Области приложения — это области, которые определяются и распознаются только этим приложением. Используется `/` для областей приложений на уровне клиента. Используйте **directoryScopeId** , чтобы ограничить область определенными объектами каталога, например административными единицами. |
+|principalId|String| Идентификатор субъекта, которому предоставляется назначение. Может быть группой или пользователем. |
+|roleDefinitionId|String|Идентификатор объекта unifiedRoleDefinition для назначения. Только для чтения.|
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -59,7 +59,7 @@ GET /roleManagement/directory/roleSchedules
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы этот метод возвращает код отклика и коллекцию объектов [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleSchedules(dire
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

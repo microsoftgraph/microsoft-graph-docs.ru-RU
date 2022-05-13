@@ -1,18 +1,18 @@
 ---
-title: 'governanceResource: регистрация'
-description: Регистрация объекта governanceResource в PIM.
+title: 'governanceResource: register'
+description: Зарегистрируйте объект governanceResource в PIM.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 22274dd73fe3c2a227bedb863d8d95fd6d38bc3b
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 8f676f534e08e66a481d68c892241ff33206d651
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510304"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398022"
 ---
-# <a name="governanceresource-register"></a>governanceResource: регистрация
+# <a name="governanceresource-register"></a>governanceResource: register
 
 Пространство имен: microsoft.graph
 
@@ -20,20 +20,20 @@ ms.locfileid: "64510304"
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Регистрация [объекта governanceResource](../resources/governanceresource.md) в управление привилегированными пользователями.
+Зарегистрируйте [объект governanceResource](../resources/governanceresource.md) в управление привилегированными пользователями.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
 
->**Примечание:** Этот API также требует, чтобы у запрашиваемой стороны было по крайней мере одно назначение активной роли на ресурсе.
+>**Примечание:** Этот API также требует, чтобы у запрашивателя было по крайней мере одно активное назначение ролей для ресурса.
 
 ### <a name="azure-resources"></a>Ресурсы Azure
 
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ### <a name="azure-ad"></a>Azure AD
@@ -41,7 +41,7 @@ ms.locfileid: "64510304"
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ### <a name="groups"></a>Группы
@@ -49,7 +49,7 @@ ms.locfileid: "64510304"
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -61,7 +61,7 @@ POST /privilegedAccess/azureResources/resources/register
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод **поддерживает** только параметры `$select` [запроса](/graph/query-parameters) `$expand` oData и OData, чтобы помочь настроить ответ.
+Этот метод **поддерживает** только параметры `$select` [запроса](/graph/query-parameters) `$expand` OData и для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -74,11 +74,11 @@ POST /privilegedAccess/azureResources/resources/register
 
 | Свойства | Тип | Описание |
 |:---------- |:---- |:----------- |
-| externalId | String | Внешний идентификатор ресурса, который будет зарегистрирован в PIM. При регистрации подписки идентификатором является идентификатор подписки, предварительно заранее задверяющий `/subscriptions/`. Например, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
+| externalId | String | Внешний идентификатор ресурса, который необходимо зарегистрировать в PIM. При регистрации подписки идентификатором является идентификатор подписки, который добавляется в начало `/subscriptions/`. Например, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает `200 OK` ответ.
+В случае успешного выполнения этот метод возвращает `200 OK` ответ.
 
 ## <a name="example"></a>Пример
 

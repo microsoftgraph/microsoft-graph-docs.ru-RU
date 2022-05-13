@@ -1,26 +1,26 @@
 ---
-title: тип ресурса privilegedApproval
-description: Представляет утверждение, запрашиваемую в управление привилегированными пользователями для получения роли.
+title: Тип ресурса privilegedApproval
+description: Представляет утверждение, которое запрашивается в управление привилегированными пользователями для получения роли.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: c2c6ef9ec7ca62b3ccc85cb14f848497b2858dce
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: rkarim-ms
+ms.openlocfilehash: 6b84579b400aa1948aa0ce1faebd29100048fe49
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687685"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398762"
 ---
-# <a name="privilegedapproval-resource-type-deprecated"></a>тип ресурса privilegedApproval (отклонен)
+# <a name="privilegedapproval-resource-type-deprecated"></a>Тип ресурса privilegedApproval (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Представляет утверждение, запрашиваемую в управление привилегированными пользователями (PIM) для получения роли.
+Представляет утверждение, которое запрашивается в управление привилегированными пользователями (PIM) для получения роли.
 
 
 ## <a name="methods"></a>Методы
@@ -28,7 +28,7 @@ ms.locfileid: "60687685"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение privilegedApproval](../api/privilegedapproval-get.md) | [privilegedApproval](privilegedapproval.md) |Чтение свойств и связей объекта privilegedApproval.|
-|[Список объектов privilegedApproval](../api/privilegedapproval-list.md) | Коллекция [privilegedApproval](privilegedapproval.md)|Получите коллекцию privilegedApproval.|
+|[Перечисление объектов privilegedApproval](../api/privilegedapproval-list.md) | Коллекция [privilegedApproval](privilegedapproval.md)|Получение коллекции privilegedApproval.|
 |[Создание privilegedApproval](../api/privilegedapproval-post-privilegedapproval.md) | [privilegedApproval](privilegedapproval.md)    |Создание объекта privilegedApproval. |
 |[Обновление privilegedApproval](../api/privilegedapproval-update.md) | [privilegedApproval](privilegedapproval.md) |Обновление объекта privilegedApproval. |
 |[Myrequests](../api/privilegedapproval-myrequests.md)|[privilegedApproval](privilegedapproval.md)|Получение запросов утверждения запрашивающей стороны.|
@@ -51,9 +51,9 @@ ms.locfileid: "60687685"
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |roleInfo|[privilegedRole](privilegedrole.md)| Только для чтения. Допускается значение null.|
-|запрос|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| Только для чтения. Запрос назначения ролей для этого объекта утверждения|
+|Запрос|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| Только для чтения. Запрос на назначение роли для этого объекта утверждения|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

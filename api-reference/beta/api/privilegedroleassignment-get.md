@@ -4,13 +4,13 @@ description: Получение свойств и связей объекта pr
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 6788f4448e594d97a9808d1702b4161c00e78c20
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: a89d95bd24cba9dfeef48db0e0346b3661fdbb46
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65315300"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398057"
 ---
 # <a name="get-privilegedroleassignment"></a>Получение privilegedRoleAssignment
 
@@ -22,7 +22,7 @@ ms.locfileid: "65315300"
 
 Получение свойств и связей объекта privilegedRoleAssignment.
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 Инициатор запроса должен иметь одну из следующих _ролей: администратор_ привилегированных _ролей,_ глобальный _администратор, администратор_ безопасности или _читатель сведений о безопасности_. 
 

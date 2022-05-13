@@ -1,18 +1,18 @@
 ---
-title: тип ресурса privilegedRoleSettings
+title: Тип ресурса privilegedRoleSettings
 description: Представляет параметры привилегированной роли.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 4cc98c3db18569677e0d158da8b7cfb63b00dac7
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 6c91003b7aa0455c6dd56b374fb45c3664111be3
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510550"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397498"
 ---
-# <a name="privilegedrolesettings-resource-type"></a>тип ресурса privilegedRoleSettings
+# <a name="privilegedrolesettings-resource-type"></a>Тип ресурса privilegedRoleSettings
 
 Пространство имен: microsoft.graph
 
@@ -30,17 +30,17 @@ ms.locfileid: "64510550"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|Продолжительность активации роли.|
-|id|string| Уникальный идентификатор параметров ролей. Только для чтения.|
-|isMfaOnElevationConfigurable|boolean|`true` если **mfaOnElevation** настраивается. `false` если **mfaOnElevation** не настраивается.|
-|lastGlobalAdmin|boolean|Только для внутреннего использования.|
-|maxElavationDuration|duration|Максимальная продолжительность для активированной роли.|
-|mfaOnElevation|boolean|`true` если для активации роли требуется MFA. `false` если MFA не требуется активировать роль.|
-|minElevationDuration|duration|Минимальная продолжительность для активированной роли.|
-|notificationToUserOnElevation|boolean|`true` при отправке уведомления конечному пользователю при активации роли. `false` если не отправлять уведомления при активации роли.|
-|ticketingInfoOnElevation|boolean|`true` если при активации роли требуется информация о билетах. `false` если сведения о билетах не требуются при активации роли.|
-|approvalOnElevation|boolean|`true` если требуется утверждение при активации роли. `false` если утверждение не требуется при активации роли.|
-|approverIds| string collection |Список ids утверждения, если требуется утверждение для активации.|
+|elevationDuration|duration|Длительность активации роли.|
+|id|string| Уникальный идентификатор параметров роли. Только для чтения.|
+|isMfaOnElevationConfigurable|логический|`true` Значение **mfaOnElevation** можно настроить. `false` Значение **mfaOnElevation** не настраивается.|
+|lastGlobalAdmin|логический|Только для внутреннего использования.|
+|maxElavationDuration|duration|Максимальная длительность активированной роли.|
+|mfaOnElevation|логический|`true` Значение , если для активации роли требуется многофакторная проверка подлинности. `false` Значение , если MFA не требуется для активации роли.|
+|minElevationDuration|duration|Минимальная длительность активированной роли.|
+|notificationToUserOnElevation|логический|`true` Значение , если при активации роли пользователю отправляется уведомление. `false` Значение , если не отправлять уведомление при активации роли.|
+|ticketingInfoOnElevation|логический|`true` Значение , если сведения о запросе требуются при активации роли. `false` Значение , если сведения о запросе не требуются при активации роли.|
+|approvalOnElevation|логический|`true` Значение , если требуется утверждение при активации роли. `false` Значение , если утверждение не требуется при активации роли.|
+|approverIds| string collection |Список идентификаторов утверждения, если для активации требуется утверждение.|
 
 ## <a name="relationships"></a>Связи
 Нет

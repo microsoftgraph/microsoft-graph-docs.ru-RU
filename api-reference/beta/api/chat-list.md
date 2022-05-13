@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f434a9d8a15a81da23a5e6b2c2ff4eaa24a41193
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: d44f0250507018548fb3b425ea395d9e7e05c7af
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65366165"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397875"
 ---
 # <a name="list-chats"></a>Перечисление чатов
 
@@ -28,7 +28,9 @@ ms.locfileid: "65366165"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+|Для приложений | Chat.ReadBasic.All *, Chat.Read.All*, Chat.ReadWrite.All* |
+
+\* Этот сценарий поддерживается только для следующего вызова: `GET /users/{user-id | user-principal-name}/chats`
 
 ## <a name="http-request"></a>HTTP-запрос
 

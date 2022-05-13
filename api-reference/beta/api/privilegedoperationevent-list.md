@@ -1,32 +1,32 @@
 ---
-title: Список privilegedOperationEvents
-description: Извлечение событий аудита, созданных PIM для операций ролей.
+title: Перечисление privilegedOperationEvents
+description: Получение событий аудита, созданных PIM для операций роли.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 4d1c169565671eec804108e44a9cda64b7163802
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+author: rkarim-ms
+ms.openlocfilehash: 744a9c1e5b4468b858bfd318315234c0d6cce7d9
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947666"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398393"
 ---
-# <a name="list-privilegedoperationevents"></a>Список privilegedOperationEvents
+# <a name="list-privilegedoperationevents"></a>Перечисление privilegedOperationEvents
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Извлечение списка [объектов privilegedOperationEvent,](../resources/privilegedoperationevent.md) которые представляют события аудита, созданные управление привилегированными пользователями для операций ролей. Сведения о событии аудита можно услать [на privilegedOperationEvent.](../resources/privilegedoperationevent.md) Для фильтрации результатов запроса используйте стандартное выражение ``$filter`` OData.
+Получение списка объектов [privilegedOperationEvent](../resources/privilegedoperationevent.md), представляющих события аудита, создаваемые управление привилегированными пользователями для операций роли. Дополнительные сведения о событии аудита см. в [разделе privilegedOperationEvent](../resources/privilegedoperationevent.md). Чтобы отфильтровать результаты запроса, используйте стандартное выражение OData ``$filter`` .
 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-У запросителя должна быть одна из следующих ролей: _администратор_ привилегированных _ролей,_ глобальный _администратор,_ администратор безопасности или _читатель безопасности._
+Инициатор запроса должен иметь одну из следующих _ролей: администратор_ привилегированных _ролей,_ глобальный _администратор, администратор_ безопасности или _читатель сведений о безопасности_.
 
  
 
@@ -54,14 +54,14 @@ GET /privilegedOperationEvents
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [privilegedOperationEvent](../resources/privilegedoperationevent.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [privilegedOperationEvent](../resources/privilegedoperationevent.md) в тексте отклика.
 
-Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае возвращается код состояния HTTP 403 Forbidden.
 ## <a name="examples"></a>Примеры
 
-### <a name="get-audit-events-for-role-assignment-operations"></a>Получить события аудита для операций назначения ролей
+### <a name="get-audit-events-for-role-assignment-operations"></a>Получение событий аудита для операций назначения ролей
 ##### <a name="request"></a>Запрос
-В следующем примере показан запрос на выполнение событий аудита для операций назначения ролей. В этом случае ``requestType`` значение ``Assign`` .
+В следующем примере показан запрос на получение событий аудита для операций назначения ролей. В этом случае значение ``requestType`` равно ``Assign``.
 
 <!-- { "blockType": "request" } -->
 ```http
@@ -118,9 +118,9 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>Получить события аудита для операций активации роли самостоятельно и makePermanent
+### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>Получение событий аудита для операций активации самостоятельной роли и makePermanent
 ##### <a name="request"></a>Запрос
-В следующем примере показан запрос на получения событий аудита для операций активации роли самостоятельно и makePermanent. В этом случае ``requestType`` значение ``Activate`` .
+В следующем примере показан запрос на получение событий аудита для операций активации самостоятельной роли и makePermanent. В этом случае значение ``requestType`` равно ``Activate``.
 
 <!-- { "blockType": "request" } -->
 ```http
@@ -178,9 +178,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="get-audit-events-for-role-assignment-deactivation"></a>Получить события аудита для отключения назначения ролей
+### <a name="get-audit-events-for-role-assignment-deactivation"></a>Получение событий аудита для деактивации назначения ролей
 ##### <a name="request"></a>Запрос
-В следующем примере показан запрос на отключение событий аудита для деактивации назначения ролей. В этом случае ``requestType`` значение ``Deactivate`` .
+В следующем примере показан запрос на получение событий аудита для деактивации назначения ролей. В этом случае значение ``requestType`` равно ``Deactivate``.
 
 <!-- { "blockType": "request" } -->
 ```http
@@ -220,9 +220,9 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="get-audit-events-created-in-a-time-range"></a>Получить события аудита, созданные в диапазоне времени
+### <a name="get-audit-events-created-in-a-time-range"></a>Получение событий аудита, созданных в диапазоне времени
 ##### <a name="request"></a>Запрос 
-В следующем примере показан запрос на то, чтобы события аудита создавались в диапазоне времени.
+В следующем примере показан запрос на получение событий аудита, созданных в диапазоне времени.
 
 <!-- { "blockType": "request" } -->
 ```http

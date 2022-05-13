@@ -1,35 +1,35 @@
 ---
 title: 'unifiedRoleEligibilityScheduleRequest: filterByCurrentUser'
-description: Получите список объектов unifiedRoleEligibilityScheduleRequest и их свойств, отфильтрованных определенным пользователем
-author: japere
+description: Получение списка объектов unifiedRoleEligibilityScheduleRequest и их свойств, отфильтрованных по определенному субъекту-пользователю
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bdbde5e6eb17dd04a787bcf841d6942971092e21
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: edbdccaa88d6049e3a8835f4616b4f97c8f2853c
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509562"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398343"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-filterbycurrentuser"></a>unifiedRoleEligibilityScheduleRequest: filterByCurrentUser
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) и их свойств, связанных с подписанным в настоящее время основным объектом. 
+Получение списка объектов [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) и их свойств, связанных с текущим входившего в систему основного объекта. 
 
 > [!NOTE]
-> Этот метод не извлекает объекты для групп, которые в настоящее время подписаны пользователем, и которые имеют право назначения.
+> Этот метод не извлекает объекты для групп, в которые в данный момент входит пользователь, и для которых назначено допустимое назначение.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|RoleEligibilitySchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
+|Делегированное (рабочая или учебная учетная запись)|RoleEligibilitySchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory |
+|Для приложений|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ GET /roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUse
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|RoleEligibilityScheduleRequestFilterByCurrentUserOptions|Фильтр для запроса объектов, для которых основным является текущий пользователь. Разрешено значение `principal`. Обязательный аргумент. Не извлекает назначения для групп, в которые входит этот пользователь.|
+|on|RoleEligibilityScheduleRequestFilterByCurrentUserOptions|Фильтр для запроса объектов, для которых текущий пользователь является субъектом. Допустимое значение: `principal`. Обязательно. Не извлекает назначения для групп, участником которых является этот пользователь.|
 
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -64,7 +64,7 @@ GET /roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUse
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы эта функция возвращает код ответа и коллекцию [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) в тексте ответа.
+В случае успешного выполнения эта функция возвращает код `200 OK` отклика и коллекцию [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/RoleEligibilitySch
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
