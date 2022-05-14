@@ -1,26 +1,26 @@
 ---
 author: daspek
-description: Аспект Инкомплетедата указывает, что ресурс был создан с неполными данными.
+description: Аспект incompleteData указывает, что ресурс был создан с неполными данными.
 ms.date: 10/06/2017
-title: инкомплетедата
-localization_priority: Normal
+title: IncompleteData
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 6505d02ee7436e02d90627cfd38a83e3e436706a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: b24b10db7f38ee17356c77d40bcda3b08576e45b
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016568"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420679"
 ---
-# <a name="incompletedata-resource-type"></a>Тип ресурса Инкомплетедата
+# <a name="incompletedata-resource-type"></a>Тип ресурса incompleteData
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Аспект **инкомплетедата** указывает, что ресурс был создан с неполными данными.
-Свойства, содержащиеся в, могут содержать сведения о причине неполных данных.
+Аспект **incompleteData указывает** , что ресурс был создан с неполными данными.
+Свойства внутри могут предоставлять сведения о том, почему имеются неполные данные.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -37,8 +37,8 @@ ms.locfileid: "48016568"
 
 | Свойство                  | Тип           | Описание
 |:--------------------------|:---------------|:--------------------------------
-| миссингдатабефоредатетиме | DateTimeOffset | В службе нет исходных данных до указанного времени.
-| вассроттлед              | Boolean        | Некоторые данные не были записаны из-за чрезмерной активности.
+| missingDataBeforeDateTime | DateTimeOffset | Служба не имеет исходных данных до указанного времени.
+| wasThrottled              | Логический        | Некоторые данные не были записаны из-за чрезмерной активности.
 
 <!--
 {

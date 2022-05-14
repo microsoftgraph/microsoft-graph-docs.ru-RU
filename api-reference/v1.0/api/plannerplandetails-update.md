@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f4ca5cf79d36ff4775d75423619b40b293b15eef
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9d3a583cf3518a351a1a152f29db71d668414003
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117199"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420483"
 ---
 # <a name="update-plannerplandetails"></a>Обновление объекта plannerplandetails
 
@@ -37,17 +37,17 @@ PATCH /planner/plans/{id}/details
 | Авторизация  | Bearer {token}. Обязательный. |
 | If-Match  | Последнее известное значение ETag обновляемого объекта plannerPlanDetails. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](../resources/plannercategorydescriptions.md)|Объект с описаниями шести категорий, которые могут быть связаны с задачами в плане.|
-|sharedWith|[plannerUserIds](../resources/planneruserids.md)|Набор пользовательских ids, с помощью которые мы делим этот план. Если вы используете Microsoft 365 группы, используйте API групп для управления членством в группе, чтобы поделиться [планом](../resources/group.md) группы. Вы также можете добавить в эту коллекцию существующих членов группы, хотя для них не требуется доступ к плану, который принадлежит группе.|
+|sharedWith|[plannerUserIds](../resources/planneruserids.md)|Набор идентификаторов пользователей, к которых предоставлен общий доступ к этому плану. Если вы используете Microsoft 365 групп, используйте API групп для управления членством в группах для совместного использования [плана](../resources/group.md) группы. Вы также можете добавить существующих членов группы в эту коллекцию, хотя они не должны иметь доступ к плану, принадлежащим группе.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает `204 No Content` отклик и пустой контент. Если запрос указывает заголовку с предпочтением, этот метод возвращает код ответа и обновленный `Prefer` `return=representation` объект `200 OK` [plannerPlanDetails](../resources/plannerplandetails.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `204 No Content` ответ и пустое содержимое. Если запрос задает заголовок `Prefer` `return=representation` с предпочтениями, `200 OK` этот метод возвращает код отклика и обновленный объект [plannerPlanDetails](../resources/plannerplandetails.md) в тексте отклика.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -125,7 +125,26 @@ Content-type: application/json
     "category3": null,
     "category4": null,
     "category5": "Needs materials",
-    "category6": "Needs equipment"
+    "category6": "Needs equipment",
+    "category7": "Description of category 7",
+    "category8": "Description of category 8",
+    "category9": "Description of category 9",
+    "category10": "Description of category 10",
+    "category11": "Description of category 11",
+    "category12": "Description of category 12",
+    "category13": "Description of category 13",
+    "category14": "Description of category 14",
+    "category15": "Description of category 15",
+    "category16": "Description of category 16",
+    "category17": "Description of category 17",
+    "category18": "Description of category 18",
+    "category19": "Description of category 19",
+    "category20": "Description of category 20",
+    "category21": "Description of category 21",
+    "category22": "Description of category 22",
+    "category23": "Description of category 23",
+    "category24": "Description of category 24",
+    "category25": "Description of category 25"
   },
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }

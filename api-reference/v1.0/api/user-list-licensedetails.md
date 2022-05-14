@@ -1,29 +1,30 @@
 ---
 title: Перечисление licenseDetails
-description: Извлечение списка объектов licenseDetails.
+description: Получение списка объектов licenseDetails.
 author: cindycrane
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4b3db8c390655ca4a619df72a911a11cc50857e2
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 2007d3960008fbf2f8588c89f1fa6203697b8ef0
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669636"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420448"
 ---
 # <a name="list-licensedetails"></a>Перечисление licenseDetails
 
 Пространство имен: microsoft.graph
 
-Извлечение списка **объектов licenseDetails** для корпоративных пользователей.
+Получение списка объектов [licenseDetails](../resources/licensedetails.md) для корпоративных пользователей. Этот API возвращает сведения о лицензиях, которые назначаются напрямую и которые транзитивно назначаются через членство в лицензированных группах.
+
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.Read, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
+|Делегированное (рабочая или учебная учетная запись) | User.Read, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | User.Read    |
 |Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -39,14 +40,14 @@ GET /users/{id}/licenseDetails
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Код bearer &lt;&gt;|
+| Авторизация  | Код носителя &lt;&gt;|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию объектов [licenseDetails](../resources/licensedetails.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [licenseDetails](../resources/licensedetails.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 
@@ -98,21 +99,13 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "servicePlans": [
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('071cc716-8147-4397-a5ba-b2105951cc0b')/assignedLicenses",
+    "value": [
         {
-          "servicePlanId": "servicePlanId-value",
-          "servicePlanName": "servicePlanName-value",
-          "provisioningStatus": "provisioningStatus-value",
-          "appliesTo": "appliesTo-value"
+            "disabledPlans": [],
+            "skuId": "b05e124f-c7cc-45a0-a6aa-8cf78c946968"
         }
-      ],
-      "skuId": "skuId-value",
-      "skuPartNumber": "skuPartNumber-value",
-      "id": "id-value"
-    }
-  ]
+    ]
 }
 ```
 

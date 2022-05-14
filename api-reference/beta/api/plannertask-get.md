@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 52dbc7ee119fb8a2a45192fed949953ddab2bf3f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: dc17ff7c82aaa6539419a49f2ef2c5afff98263a
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62093543"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420777"
 ---
 # <a name="get-plannertask"></a>Получение объекта plannerTask
 
@@ -39,7 +39,7 @@ GET /planner/tasks/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -121,7 +121,8 @@ Content-type: application/json
       "orderHint": "RWk1"
     }
   },
-  "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh"
+  "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh",
+  "priority": 5
 }
 ```
 

@@ -1,29 +1,29 @@
 ---
 author: kevklam
-description: Жеолокатионколумн для ресурса columnDefinition указывает на то, что столбец содержит географическое положение.
+description: GeolocationColumn ресурса columnDefinition указывает, что столбец содержит географическое положение.
 ms.date: 09/10/2018
-title: жеолокатионколумн
-localization_priority: Normal
+title: GeolocationColumn
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 5a0fad3a3dfd91808c300431ce55335d9b9a5cf8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: 368f86557d7593a60d81d6e9e1d5c8317959c2d7
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973934"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420490"
 ---
-# <a name="geolocationcolumn-resource-type"></a>Тип ресурса Жеолокатионколумн
+# <a name="geolocationcolumn-resource-type"></a>Тип ресурса geolocationColumn
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Жеолокатионколумн** для ресурса [columnDefinition](columndefinition.md) указывает на то, что столбец содержит географическое положение.
+**GeolocationColumn** ресурса [columnDefinition](columndefinition.md) указывает, что столбец содержит географическое положение.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
-Ниже показано представление ресурса **жеолокатионколумн** в формате JSON.
+Ниже приведено представление ресурса **geolocationColumn в формате** JSON.
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.geolocationColumn" } -->
 
 ```json
@@ -33,7 +33,7 @@ ms.locfileid: "47973934"
 
 ## <a name="properties"></a>Свойства
 
-Ресурс **жеолокатионколумн** не содержит свойств.
+Ресурс **geolocationColumn** не содержит свойств.
 
 <!--
 {

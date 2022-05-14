@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 628b664aaf5a308ed373086f206550ee32727820
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b5e2fe71a66c10ed456c80f8d74bfba874ef6b3b
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135882"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420469"
 ---
 # <a name="get-plannerplan"></a>Получение объекта plannerPlan
 
 Пространство имен: microsoft.graph
 
-Извлечение свойств и связей объекта [plannerplan.](../resources/plannerplan.md)
+Получение свойств и связей объекта [plannerplan](../resources/plannerplan.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -36,12 +36,12 @@ GET /planner/plans/{plan-id}
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [plannerPlan](../resources/plannerplan.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [plannerPlan](../resources/plannerplan.md) в тексте отклика.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 403 и 404, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -106,7 +106,12 @@ Content-type: application/json
     }
   },
   "createdDateTime": "2015-03-30T18:36:49.2407981Z",
-  "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+  "container": {
+    "@odata.type": "microsoft.graph.plannerPlanContainer",
+    "url": "https://graph.microsoft.com/v1.0/groups/ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "containerId": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "type": "group"
+  },
   "title": "title-value",
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }

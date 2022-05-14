@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: fab1fff05253708ddad039d04ebb79a8c747f598
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: abf5a95ccc6c19bcb656d84c9d6cf4d9891cbea6
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296228"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420574"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
@@ -1040,6 +1040,15 @@ ms.locfileid: "65296228"
 | Радио
 
 
+### <a name="plannercontainertype-values"></a>Значения plannerContainerType
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+|Реестр|
+
+
 ### <a name="plannerpreviewtype-values"></a>Значения plannerPreviewType
 
 | Member
@@ -1047,7 +1056,7 @@ ms.locfileid: "65296228"
 | Автоматически
 | noPreview
 | checklist
-| описание
+| description
 | справочник
 
 
@@ -1460,7 +1469,7 @@ ms.locfileid: "65296228"
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail;   | 1     | Почтовая угроза.            |
+| почта;   | 1     | Почтовая угроза.            |
 | url    | 2     | Угроза URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 

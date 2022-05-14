@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса объекта filesecuritystate
+title: Тип ресурса fileSecurityState
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: bec30dec9f30186d3a8a5a0bcbd9be15874c8297
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f080ecded6cf6716f985ccf06e885e9955c8525d
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055479"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420455"
 ---
-# <a name="filesecuritystate-resource-type"></a>Тип ресурса объекта filesecuritystate
+# <a name="filesecuritystate-resource-type"></a>Тип ресурса fileSecurityState
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит сведения о файле (не процессу), связанном с предупреждением.
+Содержит сведения о файле (не процессе), связанном с оповещением.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|fileHash|[fileHash](filehash.md)|Сложный тип, содержащий хэши файлов (криптография и с учетом расположения).|
+|fileHash|[fileHash](filehash.md)|Сложный тип, содержащий хэши файлов (криптографические и с учетом расположения).|
 |name|String|Имя файла (без пути).|
-|path|String|Полный путь к файлу или файлу imageFile.|
-|riskScore|String|Созданный поставщиком/вычисляемый показатель риска для файла оповещений. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
+|path|String|Полный путь к файлу или imageFile.|
+|riskScore|String|Созданная поставщиком или вычисляемая оценка риска для файла оповещений. Рекомендуемый диапазон значений — 0–1, что соответствует проценту.|
 
 ## <a name="json-representation"></a>Представление в формате JSON
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса chunkedUploadSessionDescriptor
-description: Ниже представлено описание ресурса в формате JSON.
+description: Тип ресурса chunkedUploadSessionDescriptor
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: non-product-specific
 author: MSGraphDocsVteam
-ms.openlocfilehash: 23bebadf6576e89e4b419f9abcf4c8ee20a8995d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d754a50a5ec732348f58e4cadb72dfb15a67290d
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59111497"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420700"
 ---
 # <a name="chunkeduploadsessiondescriptor-resource-type"></a>Тип ресурса chunkedUploadSessionDescriptor
 
@@ -22,7 +22,7 @@ ms.locfileid: "59111497"
 |:---------------|:--------|:----------|
 |name|String||
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

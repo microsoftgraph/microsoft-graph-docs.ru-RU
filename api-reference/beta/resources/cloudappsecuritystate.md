@@ -1,32 +1,32 @@
 ---
-title: тип ресурсов cloudAppSecurityState
-description: Содержит сведения о облачном приложении (destinationServiceName, destinationServiceIp).
+title: Тип ресурса cloudAppSecurityState
+description: Содержит сведения об облачном приложении с отслеживанием состояния (destinationServiceName, destinationServiceIp).
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: 80011803b1e73a4b0377d739c6f0d0b21e38eeb7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d509aa92fafb3848a5bb77c5f4fb1b0674d66f31
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126074"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420756"
 ---
-# <a name="cloudappsecuritystate-resource-type"></a>тип ресурсов cloudAppSecurityState
+# <a name="cloudappsecuritystate-resource-type"></a>Тип ресурса cloudAppSecurityState
 
 Пространство имен: microsoft.graph
 
-Содержит сведения о облачном приложении (destinationServiceName, destinationServiceIp).
+Содержит сведения об облачном приложении с отслеживанием состояния (destinationServiceName, destinationServiceIp).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|destinationServiceIp|String|IP-адрес адреса подключения к облачному приложению/службе.|
-|destinationServiceName|String|Имя облачного приложения/службы (например, "Salesforce", "DropBox" и т.д.).|
-|riskScore|String|Оценка риска, генерируемая поставщиком и рассчитанная для облачного приложения/службы. Рекомендуемый диапазон значений 0-1, который приравнивается к проценту.|
+|destinationServiceIp|String|IP-адрес назначения подключения к облачному приложению или службе.|
+|destinationServiceName|String|Имя облачного приложения или службы (например, Salesforce, DropBox и т. д.).|
+|riskScore|String|Созданная поставщиком или вычисляемая оценка риска для облачного приложения или службы. Рекомендуемый диапазон значений — 0–1, что соответствует проценту.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
