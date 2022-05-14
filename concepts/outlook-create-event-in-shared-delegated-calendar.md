@@ -4,12 +4,12 @@ description: В Outlook клиенты могут поделиться кале�
 author: juforan
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 4b9e57cdd251a72a7a6f51b3ca14eb17a0da9367
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 77534a6b1fad8392df01c33f91e0db321767007c
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59135986"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366081"
 ---
 # <a name="create-outlook-events-in-a-shared-or-delegated-calendar"></a>Создание событий Outlook в общем или делегированном календаре
 
@@ -39,7 +39,7 @@ ms.locfileid: "59135986"
 
 **Разрешения Microsoft Graph**
 
-Воспользуйтесь делегированным разрешением с минимальными правами `Calendars.Read.Shared`. Дополнительные сведения см. в разделе [Разрешения календаря](permissions-reference.md#calendars-permissions).
+Для этой операции необходимо использовать подходящее разрешение делегирования, `Calendars.Read.Shared`. Дополнительные сведения см. в разделе [Разрешения календаря](permissions-reference.md#calendars-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -126,7 +126,7 @@ Content-type: application/json
 
 **Разрешения Microsoft Graph**
 
-Воспользуйтесь делегированным разрешением с минимальными правами `Calendars.ReadWrite.Shared`. Дополнительные сведения см. в разделе [Разрешения календаря](permissions-reference.md#calendars-permissions).
+Для этой операции необходимо использовать подходящее разрешение делегирования, `Calendars.ReadWrite.Shared`. Дополнительные сведения см. в разделе [Разрешения календаря](permissions-reference.md#calendars-permissions).
 
 <!-- {
   "blockType": "request",
@@ -409,7 +409,6 @@ Content-type: application/json
     "flag": {
         "flagStatus": "notFlagged"
     },
-    "event@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('662b947c-d9a1-4064-926c-eba1316d4462')/messages('AAMkADADVj3fyAABZ5hYdAAA%3D')/microsoft.graph.eventMessage/microsoft.graph.eventMessage/event/$entity",
     "event": {
         "@odata.etag": "W/\"yvNriWFaOEaxVdwA1Y938gAAX+T7Jg==\"",
         "id": "AAMkADADVj3fyAABZ5ieyAAA=",
@@ -519,7 +518,7 @@ Content-type: application/json
 
 **Разрешения Microsoft Graph**
 
-Воспользуйтесь делегированным разрешением с минимальными правами `Calendars.ReadWrite.Shared`. Дополнительные сведения см. в разделе [Разрешения календаря](permissions-reference.md#calendars-permissions).
+Для этой операции необходимо использовать подходящее разрешение делегирования, `Calendars.ReadWrite.Shared`. Дополнительные сведения см. в разделе [Разрешения календаря](permissions-reference.md#calendars-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -574,7 +573,7 @@ HTTP/1.1 202 Accepted
 
 **Разрешения Microsoft Graph**
 
-Воспользуйтесь делегированным разрешением с минимальными правами `Mail.Read.Shared`. Дополнительные сведения см. в разделе [Разрешения почты](permissions-reference.md#mail-permissions).
+Для этой операции необходимо использовать подходящее разрешение делегирования, `Mail.Read.Shared`. Дополнительные сведения см. в разделе [Разрешения почты](permissions-reference.md#mail-permissions).
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -688,7 +687,7 @@ Content-type: application/json
 
 **Разрешения Microsoft Graph**
 
-Воспользуйтесь делегированным разрешением с минимальными правами `Calendars.Read`. Дополнительные сведения см. в разделе [Разрешения календаря](permissions-reference.md#calendars-permissions).
+Для этой операции необходимо использовать подходящее разрешение делегирования, `Calendars.Read`. Дополнительные сведения см. в разделе [Разрешения календаря](permissions-reference.md#calendars-permissions).
 
 
 # <a name="http"></a>[HTTP](#tab/http)
