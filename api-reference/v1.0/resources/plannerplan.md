@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: f4ef9cd3bcefcbc9edd06bedc1b48388b8efca57
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 53497ac4745cecc18d86fe3341da43118ea22210
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129833"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420602"
 ---
 # <a name="plannerplan-resource-type"></a>Тип ресурса plannerPlan
 
@@ -30,11 +30,12 @@ ms.locfileid: "59129833"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|createdDateTime|DateTimeOffset|Только для чтения. Дата и время создания плана. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|id|String| Только для чтения. Идентификатор плана. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
-|owner|String|Идентификатор [группы](group.md), которая является владельцем плана. Чтобы в этом поле можно было указать значение, должна существовать подходящая группа. После установки значения обновить это свойство невозможно.|
-|title|String|Обязательный. Название плана.|
+|контейнер|[plannerPlanContainer](../resources/plannerplancontainer.md)|Определяет контейнер плана. После установки значения обновить это свойство невозможно. Обязательно.|
 |createdBy|[identitySet](identityset.md)|Только для чтения. Пользователь, создавший этот план.|
+|createdDateTime|DateTimeOffset|Только для чтения. Дата и время создания плана. Тип "Метка времени" представляет информацию о дате и времени в формате ISO 8601 и всегда соответствует времени в стандарте UTC. Например, полночь в стандарте UTC 1 января 2014 года равна`2014-01-01T00:00:00Z`|
+|id|String| Только для чтения. Идентификатор плана. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
+|title|String|Обязательный. Название плана.|
+|владелец (не рекомендуется) |String| Вместо этого используйте свойство **контейнера**. Идентификатор [группы](group.md), которая является владельцем плана. После установки значения обновить это свойство невозможно. Это свойство не возвращает допустимый идентификатор группы, если контейнер плана не является группой.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
@@ -58,10 +59,15 @@ ms.locfileid: "59129833"
 
 ```json
 {
+  "container": {
+    "@odata.type": "microsoft.graph.plannerPlanContainer",
+    "containerId": "String",
+    "type": "String",
+    "url": "String"
+  },
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "owner": "String",
   "title": "String"
 }
 ```

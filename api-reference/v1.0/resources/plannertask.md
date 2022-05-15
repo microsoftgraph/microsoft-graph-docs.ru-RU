@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 7ebc2b2940ea7fd767279ee9fdbb0b4772c7330f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 079170c91bfa754f1f36dbef1404b7c92c0d1602
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021458"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420651"
 ---
 # <a name="plannertask-resource-type"></a>Тип ресурса plannerTask
 
@@ -34,7 +34,7 @@ ms.locfileid: "59021458"
 |appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|Категории, к которым применена задача. Возможные значения см. [здесь](plannerappliedcategories.md).|
 |assigneePriority|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 |assignments|[plannerAssignments](plannerassignments.md)|Список исполнителей, которым назначена задача.|
-|bucketId|Строка|Идентификатор сегмента, к которому относится задача. Сегмент должен находиться в том же плане, что и задача. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы. |
+|bucketId|Строка|Идентификатор сегмента, к которому относится задача. Сегмент должен находиться в том же плане, что и задача. Идентификатор состоит из 28 символов и чувствителен к регистру. [Проверка формата](planner-identifiers-disclaimer.md) выполняется на службе. |
 |checklistItemCount|Int32|Количество элементов контрольного списка, представленных в задаче.|
 |completedBy|[identitySet](identityset.md)|Идентификатор пользователя, который выполнил задачу.|
 |completedDateTime|DateTimeOffset|Только для чтения. Дата и время присвоения свойству задачи `'percentComplete'` значения `'100'`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`|
@@ -46,6 +46,7 @@ ms.locfileid: "59021458"
 |id|String|Только для чтения. Идентификатор задачи. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
 |orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 |percentComplete|Int32|Процент выполнения задачи. Если установлено значение `100`, задача считается выполненной. |
+|priority|Int32|Приоритет задачи. Допустимый диапазон значений находится между `0` и `10`, при этом возрастающее значение имеет более низкий приоритет (`0` имеет самый высокий приоритет, а `10` имеет самый низкий приоритет).  В настоящее время Планировщик интерпретирует значения `0` и `1`как "срочно", `2`,`3` и `4` как "важно", `5`,`6` и `7` как "средние", а `8`,`9` и `10` как "низкие".  Кроме того, Планировщик задает значение `1` для "срочно", `3` для "важно", `5` для "средний" и `9` для "низкий".|
 |planId|Строка|Идентификатор плана, к которому относится задача.|
 |previewType|String|Устанавливает тип предварительного просмотра задачи. Возможные значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |referenceCount|Int32|Количество внешних ссылок на задачу.|
@@ -74,12 +75,12 @@ ms.locfileid: "59021458"
 
 ```json
 {
-  "activeChecklistItemCount": 1024,
+  "activeChecklistItemCount": "Int32",
   "appliedCategories": {"@odata.type": "microsoft.graph.plannerAppliedCategories"},
   "assigneePriority": "String",
   "assignments": {"@odata.type": "microsoft.graph.plannerAssignments"},
   "bucketId": "String",
-  "checklistItemCount": 1024,
+  "checklistItemCount": "Int32",
   "completedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "completedDateTime": "String (timestamp)",
   "conversationThreadId": "String",
@@ -89,10 +90,11 @@ ms.locfileid: "59021458"
   "hasDescription": true,
   "id": "String (identifier)",
   "orderHint": "String",
-  "percentComplete": 1024,
+  "percentComplete": "Int32",
+  "priority": "Int32",
   "planId": "String",
   "previewType": "String",
-  "referenceCount": 1024,
+  "referenceCount": "Int32",
   "startDateTime": "String (timestamp)",
   "title": "String"
 }
