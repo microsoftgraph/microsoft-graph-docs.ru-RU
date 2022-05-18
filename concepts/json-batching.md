@@ -4,12 +4,12 @@ description: 'Пакетная обработка JSON позволяет опт
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 55de4d5a122487173425ad297f8834267534f659
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 016f096eee9d601f0f178c0fa256c4271d1cd563
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477428"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461382"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Объединение нескольких запросов в один вызов HTTP с помощью пакетной обработки JSON
 
@@ -59,6 +59,14 @@ Content-Type: application/json
       "headers": {
         "Content-Type": "application/json"
       }
+    },
+    {
+      "id": "5",
+      "url": "users?$select=id,displayName,userPrincipalName&$filter=city eq null&$count=true",
+      "method": "GET",
+      "headers": {
+        "ConsistencyLevel": "eventual"
+      }
     }
   ]
 }
@@ -87,6 +95,24 @@ Content-Type: application/json
           "code": "Forbidden",
           "message": "..."
         }
+      }
+    },
+    {
+      "id": "5",
+      "status": 200,
+      "headers": {
+        "OData-Version": "4.0",
+      },
+      "body": {
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,userPrincipalName)",
+        "@odata.count": 12,
+        "value": [
+          {
+            "id": "071cc716-8147-4397-a5ba-b2105951cc0b",
+            "displayName": "Adele Vance",
+            "userPrincipalName": "AdeleV@Contoso.com"
+          }
+        ]
       }
     },
     {
@@ -128,6 +154,7 @@ Content-Type: application/json
 * Свойство в основном объекте JSON называется **responses**, а не **requests**.
 * Порядок отображения ответов и запросов может отличаться.
 * Вместо свойств **method** и **url** отдельные отклики содержат свойство **status**. Значение свойства **status** — число, соответствующее коду состояния HTTP.
+* Свойство **заголовков** в каждом отдельном ответе представляет заголовки, возвращаемые сервером, например заголовки **Cache-Control** и **Content-Type**.
 
 Пакетный ответ обычно содержит код состояния `200` или `400`. Если пакетный запрос имеет неправильный формат, код состояния — `400`. Если пакетный запрос пригоден для анализа, код состояния — `200`. Код состояния `200` пакетного ответа не указывает на успешное выполнение отдельных запросов в пакете. Именно поэтому у каждого отдельного отклика в свойстве **responses** есть код состояния.
 

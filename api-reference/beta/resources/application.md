@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: a4c6b7ebd169c8c0557748a476a773072df75a7a
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: 6b3d2bc227b81eb39f6bb324579366f5bf3b7386
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65294035"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461410"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -109,7 +109,7 @@ ms.locfileid: "65294035"
 | publicClient | [publicClientApplication](publicclientapplication.md) | Указывает параметры для установленных клиентов, например классических или мобильных устройств. |
 | publisherDomain | String | Проверенный домен издателя для приложения. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`).|
 | requiredResourceAccess |Коллекция [requiredResourceAccess](requiredresourceaccess.md)| Указывает ресурсы, к которым приложению необходимо получить доступ. В этом свойстве также указывается набор делегированных разрешений и ролей приложения, необходимых для каждого из этих ресурсов. Эта настройка доступа к необходимым ресурсам определяет порядок предоставления согласия. Можно настроить не более 50 служб ресурсов (API). С середины октября 2021 г. общее количество необходимых разрешений не должно превышать 400. Значение null не допускается. <br><br>Поддерживает `$filter` (`eq`, `not`, `ge`, `le`).|
-| serviceManagementReference | Строка | Ссылается на контактные данные приложения или службы из базы данных службы или управления активами. Допускается значение null. |
+| serviceManagementReference | Строка | Ссылки на контактные данные приложения или службы из базы данных управления службами или активами. Возможность обнуления. |
 | signInAudience | String | Указывает, учетные записи Майкрософт, которые поддерживаются для текущего приложения. Возможные значения: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount` (используется по умолчанию) и `PersonalMicrosoftAccount`. Дополнительные сведения см. в [таблице ниже](#signinaudience-values). <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`).|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Указывает параметры для одностраничного приложения, в том числе URL-адреса выхода и URI перенаправления для кодов авторизации и маркеров доступа. |
 | tags |Коллекция String| Настраиваемые строки, которые можно использовать для классификации и определения приложения. Значение null не допускается.<br><br>Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
@@ -136,8 +136,8 @@ ms.locfileid: "65294035"
 |calls           |Коллекция [call](call.md)                  |Только для чтения. Допускается значение null.|
 |connectorGroup|[connectorGroup](connectorgroup.md)| Параметр connectorGroup, используемый приложением с прокси приложения Azure AD. Допускается значение NULL.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Только для чтения.|
-|extensionProperties|Коллекция [extensionProperty](extensionproperty.md)| Только для чтения. Допускается значение null.|
-|federatedIdentityCredentials|Коллекция [federatedIdentityCredential](federatedidentitycredential.md) |Федеративные удостоверения для приложений. Этот объект можно получить только по одному запросу GET (`GET /applications/{id}/federatedIdentityCredentials`).|
+|extensionProperties|Коллекция [extensionProperty](extensionproperty.md)| Только для чтения. Допускается значение null. Поддерживает `$expand` и `$filter` (`eq` при подсчете пустых коллекций).|
+|federatedIdentityCredentials|Коллекция [federatedIdentityCredential](federatedidentitycredential.md) |Федеративные удостоверения для приложений. Поддерживает `$expand` и `$filter` (`eq` при подсчете пустых коллекций).|
 |onlineMeetings  |Коллекция [onlineMeeting](onlinemeeting.md)|Только для чтения. Допускается значение null.|
 |owners|Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, владеющие приложением. Только для чтения. Допускается значение NULL. Поддерживает `$expand`.|
 |tokenLifetimePolicies|Коллекция [tokenLifetimePolicy](tokenLifetimePolicy.md)|Типы ресурсов tokenLifetimePolicy, назначенные приложению. Поддерживает `$expand`.|
