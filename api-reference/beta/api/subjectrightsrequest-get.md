@@ -1,40 +1,43 @@
 ---
-title: Get subjectRightsRequest
-description: Ознакомьтесь с свойствами и отношениями объекта subjectRightsRequest.
+title: Получение subjectRightsRequest
+description: Чтение свойств и связей объекта subjectRightsRequest.
 author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 905bc47f41271bcaff38ab16431bcfbf6c555272
-ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
+ms.openlocfilehash: cd48eb10d40a44d6dfbf392c7207ddd7bf9b4b6b
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61402911"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461466"
 ---
-# <a name="get-subjectrightsrequest"></a>Get subjectRightsRequest
+# <a name="get-subjectrightsrequest"></a>Получение subjectRightsRequest
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями [объекта subjectRightsRequest.](../resources/subjectRightsRequest.md)
+Чтение свойств и связей объекта [subjectRightsRequest](../resources/subjectRightsRequest.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|Не поддерживается|
+|Делегированное (рабочая или учебная учетная запись)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
+
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+GET /security/subjectRightsRequests/{subjectRightsRequestId}
 GET /privacy/subjectRightsRequests/{subjectRightsRequestId}
 ```
 
@@ -52,7 +55,7 @@ GET /privacy/subjectRightsRequests/{subjectRightsRequestId}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект subjectRightsRequest](../resources/subjectRightsRequest.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [subjectRightsRequest](../resources/subjectRightsRequest.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -103,19 +106,19 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-    {
-    "type": "microsoft.graph.subjectRightsRequestType",
-    "dataSubjectType": "microsoft.graph.dataSubjectType",
+{
+    "type": "export",
+    "dataSubjectType": "customer",
     "regulations": [
-        "String"
+        "GDPR"
     ],
-    "displayName": "String",
-    "description": "String",
+    "displayName": "Export request for Monica Thompson",
+    "description": "This is a export request",
     "status": "active",
-    "internalDueDateTime": "String",
-    "lastModifiedDateTime": "String",
-    "id": "String",
-    "createdDateTime": "String",
+    "internalDueDateTime": "2022-06-20T22:42:28Z",
+    "lastModifiedDateTime": "2022-04-20T22:42:28Z",
+    "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+    "createdDateTime": "2022-04-19T22:42:28Z",
     "stages": [
         {
             "stage": "contentRetrieval",
@@ -139,22 +142,36 @@ Content-Type: application/json
         }
     ],
     "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "user": {
+            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+            "displayName": "srradmin@contoso.com"
+        }
     },
     "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "user": {
+            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+            "displayName": "srradmin@contoso.com"
+        }
     },
     "dataSubject": {
-        "firstName": "String",
-        "lastName": "String",
-        "email": "String",
-        "residency": "String",
-        "phoneNumber": "String",
-        "SSN": "String"
+        "firstName": "Monica",
+        "lastName": "Thompson",
+        "email": "Monica.Thompson@contoso.com",
+        "residency": "USA",
+        "SSN": "123-456-7890"
     },
     "team": {
-        "id": "String (identifier)",
-        "webUrl": "String"
+        "id": "5484809c-fb5b-415a-afc6-da7ff601034e",
+        "webUrl": "https://teams.contoso.com/teams/teamid"
+    },
+    "includeAllVersions": false,
+    "pauseAfterEstimate": true,
+    "includeAuthoredContent": true,
+    "externalId": null,
+    "contentQuery": "(('Monica Thompson' OR 'Monica.Thompson@contoso.com') OR (participants=Monica.Thompson@contoso.com))",
+    "mailboxLocations": null,
+    "siteLocations": {
+        "@odata.type": "microsoft.graph.subjectRightsRequestAllSiteLocation"
     }
 }
 ```

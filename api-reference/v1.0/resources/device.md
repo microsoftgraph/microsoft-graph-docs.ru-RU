@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sandeo-MSFT
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: b6248929247c72a742a350a3d4af58f86af98efb
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: cda079886ed0bde20238d338cbba1428305b0d7c
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322242"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461592"
 ---
 # <a name="device-resource-type"></a>Тип ресурса device
 
@@ -29,11 +29,11 @@ ms.locfileid: "61322242"
 |[Список объектов device](../api/device-list.md) | Коллекция [device](device.md)| Получение списка устройств, зарегистрированных в каталоге. |
 |[Обновление device](../api/device-update.md) | [device](device.md) |Обновление свойств, принадлежащих объекту device. |
 |[Удаление device](../api/device-delete.md) | Нет |Удаление объекта device. |
-|[Перечисление memberOf](../api/device-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, в которые устройство входит напрямую. |
+|[Список memberOf](../api/device-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, непосредственным участником которых является устройство. |
 |[Список экземпляров registeredOwner](../api/device-list-registeredowners.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей, которые относятся к зарегистрированным владельцам устройства, из свойства навигации registeredOwners.|
 |[Перечисление registeredUsers](../api/device-list-registeredusers.md) |Коллекция [directoryObject](directoryobject.md)| Получение зарегистрированных пользователей устройства из свойства навигации registeredUsers.|
-|[checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Коллекция String | Проверьте членство в списке групп, ролей каталогов или объектов административных единиц. |
-|[getMemberObjects](../api/directoryobject-checkmemberobjects.md) | Коллекция String | Возвращаем все группы, административные единицы и роли каталога, в которые входит устройство. Это транзитивная проверка. |
+|[checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Коллекция String | Проверьте членство в списке групп, роли каталога или объектов административной единицы. |
+|[getMemberObjects](../api/directoryobject-checkmemberobjects.md) | Коллекция String | Возвращает все группы, административные единицы и роли каталога, членом которых является устройство. Это транзитивная проверка. |
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
 |[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
@@ -47,36 +47,36 @@ ms.locfileid: "61322242"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|accountEnabled|Логический| Если учетная запись обеспечена — `true`, в противном случае — `false`. Обязательно. Значение по умолчанию: `true`. <br/><br/> Поддерживает `$filter` (`eq`, `ne`, `not`, `in`). Только вызыватели в ролях глобального администратора и администратора облачных устройств могут установить это свойство.|
+|accountEnabled|Логический| Если учетная запись обеспечена — `true`, в противном случае — `false`. Обязательный. Значение по умолчанию: `true`. <br/><br/> Поддерживает `$filter` (`eq`, `ne`, `not`, `in`). Задать это свойство могут только вызывающие объекты с ролями глобального администратора и администратора облачных устройств.|
 |alternativeSecurityIds|Коллекция [alternativeSecurityId](alternativeSecurityId.md)| Только для внутреннего использования. Значение null не допускается. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`).|
-|approximateLastSignInDateTime|DateTimeOffset| Тип timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. Поддерживает `$filter` `eq` `ne` (, `not` , `ge` , , , и `le` по `eq` `null` значениям) и `$orderBy` . |
-|complianceExpirationDateTime|DateTimeOffset| Время, когда устройство больше не считается совместимым. Тип timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |
+|approximateLastSignInDateTime|DateTimeOffset| Тип метки времени представляет сведения о дате и времени в формате ISO 8601 и всегда используется в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. `$filter` Поддерживает (`eq`, `ne`, `not`, `ge`, и `le`для `eq` `null` значений) и `$orderBy`. |
+|complianceExpirationDateTime|DateTimeOffset| Метка времени, когда устройство больше не считается соответствующим требованиям. Тип метки времени представляет сведения о дате и времени в формате ISO 8601 и всегда используется в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |
 |deviceId|String| Уникальный идентификатор, задаваемый службой Azure Device Registration Service при регистрации. Поддерживает `$filter` (`eq`, `ne`, `not`, `startsWith`).|
 |deviceMetadata|String| Только для внутреннего использования. Установите значение `null`. |
 |deviceVersion|Int32| Только для внутреннего использования. |
 |displayName|String|Отображаемое имя устройства. Обязательный параметр. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`), `$search` и `$orderBy`.  |
-| extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Содержит атрибуты расширения 1-15 для устройства. Отдельные атрибуты расширения не выбираются. Эти свойства освояются в облаке и могут быть задатки во время создания или обновления объекта устройства в Azure AD. <br><br>Поддерживает `$filter` (`eq`, `not`, `startsWith` и `eq` по `null` значениям). |
-|id|String|Уникальный идентификатор устройства. Наследуется из [directoryObject](directoryobject.md). Ключ, значение null не допускается. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `in`). |
-|isCompliant|Boolean|`true` если устройство соответствует политикам управления мобильными устройствами(MDM); в противном `false` случае . Только для чтения. Это может быть обновлено intune только для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. Поддерживает `$filter` (`eq`, `ne`, `not`).|
-|isManaged|Boolean|`true` если устройство управляется приложением управления мобильными устройствами (MDM); в противном `false` случае . Это может быть обновлено intune только для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. Поддерживает `$filter` (`eq`, `ne`, `not`). |
+| extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Содержит атрибуты расширения 1–15 для устройства. Отдельные атрибуты расширения невозможно выбрать. Эти свойства хранятся в облаке и могут быть заданы во время создания или обновления объекта устройства в Azure AD. <br><br>Поддерживает `$filter` (`eq`, `not`, `startsWith` и `eq` по `null` значениям). |
+|id|Строка|Уникальный идентификатор устройства. Наследуется из [directoryObject](directoryobject.md). Ключ, значение null не допускается. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `in`). |
+|isCompliant|Boolean|`true` if the device complies with Mobile Device Management (MDM) policies; otherwise, `false`. Только для чтения. Его можно обновить только Intune для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows ОС. Поддерживает `$filter` (`eq`, `ne`, `not`).|
+|isManaged|Boolean|`true`Значение , если устройство управляется мобильным приложением Управление устройствами (MDM); в противном случае — значение `false`. Его можно обновить только Intune для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows ОС. Поддерживает `$filter` (`eq`, `ne`, `not`). |
 |manufacturer|String| Производитель устройства. Только для чтения. |
-|mdmAppId|String|Идентификатор приложения, используемый для регистрации устройства в MDM. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `startsWith`).|
+|mdmAppId|Строка|Идентификатор приложения, используемый для регистрации устройства в MDM. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `startsWith`).|
 |model|String| Модель устройства. Только для чтения. |
-|onPremisesLastSyncDateTime|DateTimeOffset|Последний раз, когда объект синхронизировался с локальной каталоги. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полуночный UTC 1 января 2014 г. является `2014-01-01T00:00:00Z` только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).|
+|onPremisesLastSyncDateTime|DateTimeOffset|Время последней синхронизации объекта с локальным каталогом. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь в формате UTC 1 января 2014 г. доступна `2014-01-01T00:00:00Z` только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).|
 |onPremisesSyncEnabled|Логический|Значение `true` указывает, что этот объект синхронизируется из локального каталога. Значение `false` указывает, что этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Значение `null` указывает, что этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `in` и `eq` по `null` значениям). |
-|operatingSystem|String| Тип операционной системы на устройстве. Обязательный параметр. Поддерживает `$filter` `eq` `ne` (, `not` , `ge` , , , , и по `le` `startsWith` `eq` `null` значениям). |
-|operatingSystemVersion|Строка|Версия операционной системы на устройстве. Обязательный параметр. Поддерживает `$filter` `eq` `ne` (, `not` , `ge` , , , , и по `le` `startsWith` `eq` `null` значениям). |
-|physicalIds|Коллекция String| Только для внутреннего использования. Значение null не допускается. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
-|profileType|deviceProfileType|Тип профиля устройства. Возможные значения: `RegisteredDevice` (по умолчанию), `SecureVM` , , `Printer` `Shared` `IoT` .|
-|systemLabels|Коллекция String| Список меток, применяемых к устройству системой. |
-|trustType|String| Тип доверия для присоединенного устройства. Только для чтения. Возможные значения: (указывает на приведение собственных личных устройств), (облачные только присоединились к устройствам), (локальное доменное соединялось с устройствами, присоединив их к `Workplace`  `AzureAd` Azure `ServerAd` AD). Дополнительные сведения см. в статье [Общие сведения об управлении устройствами в Azure Active Directory](/azure/active-directory/device-management-introduction). |
+|operatingSystem|String| Тип операционной системы на устройстве. Обязательный параметр. `$filter` Поддерживает (`eq`, `ne`, `not`, `ge`, `le`, , и `startsWith`для `eq` `null` значений). |
+|operatingSystemVersion|Строка|Версия операционной системы на устройстве. Обязательный параметр. `$filter` Поддерживает (`eq`, `ne`, `not`, `ge`, `le`, , и `startsWith`для `eq` `null` значений). |
+|physicalIds|Коллекция String| Только для внутреннего использования. Значение NULL не допускается. `$filter` Поддерживает (`eq`, `not`, `ge`, `le`, и `startsWith`подсчитывает пустые коллекции). |
+|profileType|deviceProfileType|Тип профиля устройства. Возможные значения: `RegisteredDevice` (по умолчанию), `SecureVM`, `Printer`, `Shared`, `IoT`.|
+|systemLabels|Коллекция String| Список меток, примененных системой к устройству. Поддерживает ( `$filter` при`eq` подсчете пустых коллекций). |
+|trustType|String| Тип доверия для присоединенного устройства. Только для чтения. Возможные значения: `Workplace` (указывает на использование собственных личных *устройств),*`AzureAd` (устройства, присоединенные только к облаку), `ServerAd` (устройства, присоединенные к локальному домену, присоединенные к Azure AD). Дополнительные сведения см. в статье [Общие сведения об управлении устройствами в Azure Active Directory](/azure/active-directory/device-management-introduction). |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |extensions|Коллекция объектов [extension](extension.md)|Коллекция открытых расширений, определенных для устройства. Только для чтения. Допускается значение null.|
-|memberOf|Коллекция [directoryObject](directoryobject.md)|Группы, в которые входит это устройство. Только для чтения. Допускается значение null. Поддерживает `$expand`. |
-|transitiveMemberOf |Коллекция [directoryObject](directoryobject.md)| Группы, в которые входит устройство. Эта операция является транзитной. Поддерживает `$expand`.  |
+|memberOf|Коллекция [directoryObject](directoryobject.md)|Группы, участником которых является это устройство. Только для чтения. Допускается значение null. Поддерживает `$expand`. |
+|transitiveMemberOf |Коллекция [directoryObject](directoryobject.md)| Группы, участником которых является устройство. Эта операция является транзитивной. Поддерживает `$expand`.  |
 |registeredOwners|Коллекция [directoryObject](directoryobject.md)|Пользователь, который присоединил устройство через облако или зарегистрировал личное устройство. Зарегистрированный владелец задается при регистрации. Сейчас можно настроить лишь одного такого владельца. Только для чтения. Допускается значение null. Поддерживает `$expand`.  |
 |registeredUsers|Коллекция [directoryObject](directoryobject.md)|Коллекция зарегистрированных пользователей устройства. В случае зарегистрированных личных устройств или устройств, присоединенных через облако, при регистрации для обычных пользователей задается то же значение, что и для владельцев. Только для чтения. Допускается значение null. Поддерживает `$expand`. |
 

@@ -1,41 +1,45 @@
 ---
 title: Создание subjectRightsRequest
-description: Создайте новый объект subjectRightsRequest.
+description: Создайте объект subjectRightsRequest.
 author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 5873e828c13c975d1064d7504e2af67604536a1a
-ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
+ms.openlocfilehash: 9c4530948142d639295993d24f4c44392e647af4
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61402899"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461494"
 ---
 # <a name="create-subjectrightsrequest"></a>Создание subjectRightsRequest
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект subjectRightsRequest.](../resources/subjectRightsRequest.md)
+Создайте объект [subjectRightsRequest](../resources/subjectrightsrequest.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|SubjectRightsRequest.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|Не поддерживается|
+|Делегированное (рабочая или учебная учетная запись)|SubjectRightsRequest.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
+
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+POST /security/subjectRightsRequests
 POST /privacy/subjectRightsRequests
+
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,24 +49,30 @@ POST /privacy/subjectRightsRequests
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [subjectRightsRequest.](../resources/subjectRightsRequest.md)
+В тексте запроса добавьте представление объекта [subjectRightsRequest](../resources/subjectrightsrequest.md) в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании [subjectRightsRequest.](../resources/subjectRightsRequest.md)
+В следующей таблице показаны свойства, необходимые при создании [subjectRightsRequest](../resources/subjectrightsrequest.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
+| contentQuery         | Строка | KQL на основе запроса содержимого, который должен использоваться для поиска. Это свойство определяется только для интерфейсов API `\security` , к ним можно получить доступ с помощью пути запроса, а не пути `\privacy` запроса.|
 |dataSubject|[microsoft.graph.dataSubject](../resources/datasubject.md)|Содержит свойства субъекта данных для запроса.|
 |dataSubjectType|dataSubjectType|Тип субъекта данных. Возможные значения: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
-|description|String|Описание запроса.|
+|description|Строка|Описание запроса.|
 |displayName|String|Имя запроса.|
+| externalId           | String| Внешний идентификатор запроса, который неизменяем после создания и используется для отслеживания запроса внешней системы. Это свойство определяется только для интерфейсов API `\security` , к ним можно получить доступ с помощью пути запроса, а не пути `\privacy` запроса.|
+| includeAllVersions   | Boolean | Включите все версии документов. По умолчанию будут возвращены текущие копии документов. Если SharePoint сайтов включено управление версиями, включая все версии, будут включены исторические копии документов. Это свойство определяется только для интерфейсов API `\security` , к ним можно получить доступ с помощью пути запроса, а не пути `\privacy` запроса.|
+| includeAuthoredContent| Boolean | Включите контент, созданный субъектом данных. Это свойство определяется только для интерфейсов API `\security` , к ним можно получить доступ с помощью пути запроса, а не пути `\privacy` запроса.|
 |internalDueDateTime|DateTimeOffset|Внутренняя дата выполнения, используемая для отслеживания завершения запроса.|
-|нормативные акты|Коллекция строк|Одно или несколько правил для запроса.|
-|type|subjectRightsRequestType|Тип запроса. Возможные значения: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
-
+| mailboxLocations     | [subjectRightsRequestMailboxLocation](../resources/subjectrightsrequestmailboxlocation.md)|Расположения почтовых ящиков, в которых должен выполняться поиск. Это свойство определяется только для интерфейсов API `\security` , к ним можно получить доступ с помощью пути запроса, а не пути `\privacy` запроса.|
+| pauseAfterEstimate   | Boolean| Приостановка запроса после завершения оценки. По умолчанию оценка данных будет выполняться, а затем приостанавливаться, что позволяет просмотреть результаты, а затем выбрать параметр для получения данных в пользовательском интерфейсе. Это свойство можно задать, `false` если требуется выполнить оценку, а затем автоматически начать с извлечения содержимого. Это свойство определяется только для интерфейсов API `\security` , к ним можно получить доступ с помощью пути запроса, а не пути `\privacy` запроса.|
+|Правила|Коллекция String|Одно или несколько нормативных требований для запроса.|
+| siteLocations| [subjectRightsRequestSiteLocation](../resources/subjectrightsrequestsitelocation.md)| В SharePoint и OneDrive сайтов, в которых должен выполняться поиск. Это свойство определяется только для интерфейсов API `\security` , к ним можно получить доступ с помощью пути запроса, а не пути `\privacy` запроса.|
+|type|subjectRightsRequestType|Тип запроса. Возможные значения: `export`, `access`, `tagForAction`, `unknownFutureValue`. Тип `delete` в настоящее время не поддерживается.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект subjectRightsRequest](../resources/subjectRightsRequest.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [subjectRightsRequest](../resources/subjectRightsRequest.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -79,19 +89,28 @@ POST https://graph.microsoft.com/beta/privacy/subjectRightsRequests
 Content-Type: application/json
 
 {
-    "type": "microsoft.graph.subjectRightsRequestType",
-    "dataSubjectType": "microsoft.graph.dataSubjectType",
-    "regulations": ["String"],
-    "displayName": "String",
-    "description": "String",
-    "internalDueDateTime": "String (timestamp)",
+    "type": "export",
+    "contentQuery": "((\"Diego Siciliani\" OR \"Diego.Siciliani@contoso.com\") OR (participants:\"Diego.Siciliani@contoso.com\"))",
+    "dataSubjectType": "customer",
+    "externalId": "F53BF2DA-607D-412A-B568-FAA0F023AC0B",
+    "displayName": "Export report for customer Id: 12345",
+    "description": "This is a export request",
+    "includeAllVersions": false,
+    "includeAuthoredContent": true,
+    "internalDueDateTime": "2022-07-20T22:42:28Z",
     "dataSubject": {
-        "firstName": "String",
-        "lastName": "String",
-        "email": "String",
-        "residency": "String",
-        "phoneNumber": "String",
-        "SSN": "String"
+        "firstName": "Diego",
+        "lastName": "Siciliani",
+        "email": "Diego.Siciliani@contoso.com",
+        "residency": "USA"
+    },
+    "mailboxLocations": null,
+    "pauseAfterEstimate": true,
+    "regulations": [
+        "CCPA"
+    ],
+    "siteLocations": {
+        "@odata.type": "microsoft.graph.subjectRightsRequestAllSiteLocation"
     }
 }
 ```
@@ -128,69 +147,70 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "type": "microsoft.graph.subjectRightsRequestType",
-    "dataSubjectType": "microsoft.graph.dataSubjectType",
+    "type": "export",
+    "dataSubjectType": "customer",
     "regulations": [
-        "String"
+        "CCPA"
     ],
-    "displayName": "String",
-    "description": "String",
+    "displayName": "Export report for customer Id: 12345",
+    "description": "This is a export request",
     "status": "active",
-    "internalDueDateTime": "String",
-    "lastModifiedDateTime": "String",
-    "id": "String",
-    "createdDateTime": "String",
+    "internalDueDateTime": "2022-07-20T22:42:28Z",
+    "lastModifiedDateTime": "2022-05-10T22:42:28Z",
+    "id": "CA084038-C5D2-493D-8DAB-23FC12393C76",
+    "createdDateTime": "2022-05-10T22:42:28Z",
     "stages": [
         {
             "stage": "contentRetrieval",
             "status": "notStarted",
-            "error": 
-            {
-                "@odata.type": "microsoft.graph.publicError"
-            }
+            "error": null
         },
         {
             "stage": "contentReview",
             "status": "notStarted",
-            "error": 
-            {
-                "@odata.type": "microsoft.graph.publicError"
-            }
+            "error": null
         },
         {
             "stage": "generateReport",
             "status": "notStarted",
-            "error": 
-            {
-                "@odata.type": "microsoft.graph.publicError"
-            }
+            "error": null
         },
         {
             "stage": "caseResolved",
             "status": "notStarted",
-            "error": 
-            {
-                "@odata.type": "microsoft.graph.publicError"
-            }
+            "error": null
         }
     ],
     "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "user": {
+            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+            "displayName": "srradmin@contoso.com"
+        }
     },
     "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "user": {
+            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+            "displayName": "srradmin@contoso.com"
+        }
     },
     "dataSubject": {
-        "firstName": "String",
-        "lastName": "String",
-        "email": "String",
-        "residency": "String",
-        "phoneNumber": "String",
-        "SSN": "String"
+        "firstName": "Diego",
+        "lastName": "Siciliani",
+        "email": "Diego.Siciliani@contoso.com",
+        "residency": "USA"
     },
     "team": {
-        "id": "String (identifier)",
-        "webUrl": "String"
+        "id": "5484809c-fb5b-415a-afc6-da7ff601034e",
+        "webUrl": "https://teams.contoso.com/teams/teamid"
+    },
+    "includeAllVersions": false,
+    "pauseAfterEstimate": false,
+    "includeAuthoredContent": false,
+    "externalId": "F53BF2DA-607D-412A-B568-FAA0F023AC0B",
+    "contentQuery": "((\"Diego Siciliani\" OR \"Diego.Siciliani@contoso.com\") OR (participants:\"Diego.Siciliani@contoso.com\"))",
+    "mailboxLocations": null,
+    "siteLocations": {
+        "@odata.type": "microsoft.graph.subjectRightsRequestAllSiteLocation"
     }
 }
 ```

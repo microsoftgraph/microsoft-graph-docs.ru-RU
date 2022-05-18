@@ -5,18 +5,18 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 67fb91da3601c467e33725064ca68753f35eab86
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 59adc6589ea351d565248797aeb9384b9ae3f890
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65134444"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461445"
 ---
 # <a name="requestschedule-resource-type"></a>Тип ресурса requestSchedule
 
 Пространство имен: microsoft.graph
 
-В PIM используйте этот ресурс, чтобы определить расписание, в течение которых субъекту будет присвоено допустимое или активное назначение ролей.
+В PIM при создании или обновлении объекта [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) или [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) используйте этот ресурс для определения расписания назначения роли субъекту. Параметры, допустимые для этого объекта, зависят от [параметров Azure AD роли](../api/unifiedrolemanagementpolicy-list-rules.md).
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -25,7 +25,7 @@ ms.locfileid: "65134444"
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Частота допустимого или активного назначения. Это свойство в настоящее время не поддерживается в PIM.|
 |startDateTime|DateTimeOffset|Когда допустимое или активное назначение становится активным.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

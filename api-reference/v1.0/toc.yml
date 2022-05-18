@@ -428,7 +428,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Примечания
+          - name: примечания;
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -4871,10 +4871,9 @@ items:
                       - name: Удаление
                         href: api/unifiedroleassignment-delete.md
                   - name: управление привилегированными пользователями (PIM);
+                    displayName: 'Privileged identity management, PIM'
+                    href: resources/privilegedidentitymanagementv3-overview.md
                     items:
-                      - name: Обзор
-                        displayName: 'Privileged identity management, PIM'
-                        href: resources/privilegedidentitymanagementv3-overview.md
                       - name: Назначения ролей
                         items:
                           - name: Планирование запросов

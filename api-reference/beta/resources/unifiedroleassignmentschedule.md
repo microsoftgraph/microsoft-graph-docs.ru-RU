@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d2188f6e3a19f2ff906a16cad9d24d8444b3972d
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: ab32cf141bf16b8b763c5b2d54700df7d3f3d8a9
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398870"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461627"
 ---
 # <a name="unifiedroleassignmentschedule-resource-type"></a>Тип ресурса unifiedRoleAssignmentSchedule
 
@@ -25,27 +25,27 @@ ms.locfileid: "65398870"
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Перечисление объектов unifiedRoleAssignmentSchedule](../api/unifiedroleassignmentschedule-list.md)|[Коллекция unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md)|Получение списка объектов [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) и их свойств.|
+|[Перечисление объектов unifiedRoleAssignmentSchedule](../api/rbacapplication-list-roleassignmentschedules.md)|[Коллекция unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md)|Получение списка объектов [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) и их свойств.|
 |[Получение unifiedRoleAssignmentSchedule](../api/unifiedroleassignmentschedule-get.md)|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md)|Чтение свойств и связей объекта [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) .|
 |[filterByCurrentUser](../api/unifiedroleassignmentschedule-filterbycurrentuser.md)|[Коллекция unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md)|Получение списка объектов [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) и их свойств, предоставленных конкретному пользователю.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|appScopeId|String|Идентификатор области, относяшейся к приложению, если область назначения предназначена для конкретного приложения. Область назначения определяет набор ресурсов, к которым участнику был предоставлен доступ. Области приложения — это области, которые определяются и распознаются только этим приложением. Используется `/` для областей приложений на уровне клиента. Используйте **directoryScopeId** , чтобы ограничить область определенными объектами каталога, например административными единицами. Наследуется от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|appScopeId|Строка|Идентификатор области, относяшейся к приложению, если область назначения предназначена для конкретного приложения. Область назначения определяет набор ресурсов, к которым участнику был предоставлен доступ. Области приложения — это области, которые определяются и распознаются только этим приложением. Используется `/` для областей приложений на уровне клиента. Используйте **directoryScopeId** , чтобы ограничить область определенными объектами каталога, например административными единицами. Наследуется от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |assignmentType|String|Тип назначения. Это может быть либо `Assigned` .`Activated`|
 |createdDateTime|DateTimeOffset|Время создания расписания. Наследуется от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|createdUsing|String|Идентификатор ролиAssignmentScheduleRequest, создавшего это расписание. Наследуется от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|directoryScopeId|String|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым участнику был предоставлен доступ. Области каталога — это общие области, хранящиеся в каталоге, которые распознаются несколькими приложениями. Используется `/` для области на уровне клиента. Используйте **appScopeId** , чтобы ограничить область только приложением. Наследуется от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|id|String|Уникальный идентификатор объекта unifiedRoleAssignmentSchedule. Ключ, не допускающий значения NULL, только для чтения. Наследуется от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|memberType|String|Тип членства назначения. Это может быть либо `Inherited`, `Direct`, либо `Group`.|
+|createdUsing|Строка|Идентификатор ролиAssignmentScheduleRequest, создавшего это расписание. Наследуется от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|directoryScopeId|Строка|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым участнику был предоставлен доступ. Области каталога — это общие области, хранящиеся в каталоге, которые распознаются несколькими приложениями. Используется `/` для области на уровне клиента. Используйте **appScopeId** , чтобы ограничить область только приложением. Наследуется от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|id|Строка|Уникальный идентификатор объекта unifiedRoleAssignmentSchedule. Ключ, не допускающий значения NULL, только для чтения. Наследуется от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|memberType|Строка|Тип членства назначения. Это может быть либо `Inherited`, `Direct`, либо `Group`.|
 |modifiedDateTime|DateTimeOffset|Время последнего обновления расписания. Наследуется от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|principalId|String| Objectid субъекта, которому предоставляется назначение. Может быть группой или пользователем. Наследуется [от unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md). <br> Поддерживает `$filter` (`eq`).|
-|roleDefinitionId|String|Идентификатор объекта unifiedRoleDefinition, для который предназначено назначение. Только для чтения. Наследуется [от unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md). <br> Поддерживает `$filter` (`eq`).|
+|principalId|Строка| Objectid субъекта, которому предоставляется назначение. Может быть группой или пользователем. Наследуется [от unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md). <br> Поддерживает `$filter` (`eq`).|
+|roleDefinitionId|Строка|Идентификатор объекта unifiedRoleDefinition, для который предназначено назначение. Только для чтения. Наследуется [от unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md). <br> Поддерживает `$filter` (`eq`).|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Объект расписания запроса на назначение роли.|
 |status|String|Состояние для .`roleAssignmentSchedule` Он может включать сообщения, связанные с состоянием, такие `Provisioned`как , `Revoked`, и `Pending Provisioning``Pending Approval`. Наследуется [от unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md).<br> Поддерживает `$filter` (`eq`).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |activatedUsing|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|Если roleAssignmentSchedule активируется roleEligibilitySchedule, это ссылка на это расписание.|
@@ -55,7 +55,7 @@ ms.locfileid: "65398870"
 |Основной|[directoryObject](../resources/directoryobject.md)|Свойство, ссылающееся на субъект, который получает назначение роли через запрос. Предоставляется для того, чтобы вызывающие объекты `$expand` могли получить субъект одновременно с получением назначения роли. Только для чтения. Наследуется от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|Свойство, указывающее roleDefinition, для которых предназначено назначение. Предоставляется для того, чтобы вызывающие объекты могли получить определение роли `$expand` одновременно с получением назначения роли. roleDefinition.Id будет автоматически развернут. Наследуется от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

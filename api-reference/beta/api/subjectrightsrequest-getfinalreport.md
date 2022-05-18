@@ -1,40 +1,43 @@
 ---
 title: 'subjectRightsRequest: getFinalReport'
-description: Получите окончательный отчет для запроса на права субъекта.
+description: Получение окончательного отчета для запроса прав субъекта.
 author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: c4341f58e52ce37be2071a4699d0a14f11923aa5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: dc4fca0e134b1d596783727360da1e630bd41a38
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098771"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461536"
 ---
 # <a name="subjectrightsrequest-getfinalreport"></a>subjectRightsRequest: getFinalReport
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите окончательный отчет для запроса на права субъекта. Отчет — это текстовый файл, содержащий сведения о файлах, включенных администратором конфиденциальности.
+Получение окончательного отчета для запроса прав субъекта. Отчет представляет собой текстовый файл, содержащий сведения о файлах, включенных администратором конфиденциальности.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается|
+|Делегированное (рабочая или учебная учетная запись)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
+
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+GET /security/subjectRightsRequests{subjectRightsRequestId}/getFinalReport
 GET /privacy/subjectRightsRequests{subjectRightsRequestId}/getFinalReport
 ```
 
@@ -43,12 +46,12 @@ GET /privacy/subjectRightsRequests{subjectRightsRequestId}/getFinalReport
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код отклика и `200 OK` поток в тексте отклика.
+В случае успешного выполнения эта функция возвращает код `200 OK` отклика и поток в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

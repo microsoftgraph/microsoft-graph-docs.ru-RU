@@ -1,40 +1,43 @@
 ---
 title: 'subjectRightsRequest: getFinalAttachment'
-description: Получите окончательное вложение для запроса на права субъекта.
+description: Получение окончательного вложения для запроса прав субъекта.
 author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: d5aa9c443701a4ae04d1982387ac6f3ecfd7a1c7
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 616041fb30b65c41de3bc5b0a2ab239a0393a212
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393278"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461207"
 ---
 # <a name="subjectrightsrequest-getfinalattachment"></a>subjectRightsRequest: getFinalAttachment
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите окончательное вложение для запроса на права субъекта. Вложение — это почтовый файл, содержащий все файлы, которые были включены администратором конфиденциальности.
+Получение окончательного вложения для запроса прав субъекта. Вложение представляет собой ZIP-файл, содержащий все файлы, включенные администратором конфиденциальности.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается|
+|Делегированное (рабочая или учебная учетная запись)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
+
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+GET /security/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
 GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
 ```
 
@@ -48,7 +51,7 @@ GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
 
 ## <a name="response"></a>Отклик
 
-В случае успешного сбоя эта функция перенаправит на Microsoft Azure ссылку на хранилище BLOB с маркером SAS и возвращает код `200` ответа.
+В случае успешного выполнения эта функция перенаправляется на Microsoft Azure хранилища BLOB-объектов с маркером SAS и возвращает код `200` ответа.
 
 ## <a name="examples"></a>Примеры
 

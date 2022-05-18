@@ -1,17 +1,17 @@
 ---
-title: Обзор пакета SDK Microsoft Graph
+title: Общие сведения Graph microsoft Graph SDK
 description: Описывает доступные пакеты SDK, поддерживаемые языки и ценность, которую они предоставляют разработчикам.
 ms.localizationpriority: medium
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c8ea966ce6ef2510e484897816dc62f7359a882f
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: 9a1d2713019de95661b532d32e00e2a918991b3e
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176793"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461515"
 ---
-# <a name="microsoft-graph-sdks-overview"></a>Обзор пакета SDK Microsoft Graph
+# <a name="microsoft-graph-sdk-overview"></a>Общие сведения Graph microsoft Graph SDK
 
 Пакеты SDK Graph Майкрософт предназначены для упрощения создания высококачественных, эффективных и устойчивых приложений, которые имеют доступ к Graph. Пакеты SDK включают два компонента: библиотеку служб и основную библиотеку.
 

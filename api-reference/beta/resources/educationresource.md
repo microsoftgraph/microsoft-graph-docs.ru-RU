@@ -1,38 +1,38 @@
 ---
-title: тип ресурсов educationResource
+title: Тип ресурса educationResource
 description: Базовый класс для всех объектов ресурсов в системе.
 ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e5da9bdd3a9c1046949c5be36b6c7f1ccc79709a
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 1af5cb6ae12eb435b6335d902430fdbc717fcd25
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60219783"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461368"
 ---
-# <a name="educationresource-resource-type"></a>тип ресурсов educationResource
+# <a name="educationresource-resource-type"></a>Тип ресурса educationResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Базовый класс для [образованияExcelResource](../resources/educationexcelresource.md), [educationFileResource](../resources/educationfileresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md), [educationWordResource](../resources/educationwordresource.md), [educationMediaResource](../resources/educationmediaresource.md) и [educationExternalResource](../resources/educationexternalresource.md).
+Базовый класс для [educationExcelResource](../resources/educationexcelresource.md), [educationFileResource](../resources/educationfileresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md), [educationWordResource](../resources/educationwordresource.md), [educationMediaResource](../resources/educationmediaresource.md), [educationExternalResource](../resources/educationexternalresource.md) и [educationTeamsAppResource](../resources/educationteamsappresource.md).
 
-EducationResource ассоциируется с [](educationassignment.md) назначением [и/или](educationsubmission.md)отправкой, которая представляет учебный объект, который передается или передается. Вы не можете мгновенно получить ресурс напрямую; необходимо сделать подкласс, который будет представлять тип используемого ресурса.
+Объект educationResource связан с назначением [](educationassignment.md) и (или) [отправкой, которая](educationsubmission.md) представляет обучающий объект, который передается или передается. Создание экземпляра ресурса напрямую невозможно; Необходимо создать подкласс, который будет представлять тип используемого ресурса.
 
-Этот ресурс сохраняет общие свойства для всех типов ресурсов.
+Этот ресурс хранит общие свойства для всех типов ресурсов.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|createdBy|[identitySet](identityset.md)|Кто создал ресурс.|
-|createdDateTime|Момент создания ресурса.  DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
-|displayName|Строка|Отображение имени ресурса.|
-|lastModifiedBy|[identitySet](identityset.md)|Кто был последним пользователем, который модифицировать ресурс.|
-|lastModifiedDateTime|DateTimeOffset|Время последнего изменения ресурса.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|createdBy|[identitySet](identityset.md)|Кто создали ресурс.|
+|createdDateTime|Момент времени создания ресурса.  DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
+|displayName|String|Отображаемое имя ресурса.|
+|lastModifiedBy|[identitySet](identityset.md)|Кто последним пользователем, который изменяет ресурс.|
+|lastModifiedDateTime|DateTimeOffset|Момент времени последнего изменения ресурса.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

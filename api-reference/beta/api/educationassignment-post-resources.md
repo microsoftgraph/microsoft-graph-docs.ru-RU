@@ -1,16 +1,16 @@
 ---
 title: Создание educationAssignmentResource
-description: Создание ресурса назначения образования.
+description: Создайте ресурс назначения для образовательных учреждений.
 ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 58af8c78229aa5f2656eac1403a19f02d7729406
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6cbf5e876145bdf342397b162257068904bb8053
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103229"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461298"
 ---
 # <a name="create-educationassignmentresource"></a>Создание educationAssignmentResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "62103229"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание ресурса [назначения.](../resources/educationassignmentresource.md) Можно создать следующие типы ресурсов назначения:
+Создайте [ресурс назначения](../resources/educationassignmentresource.md). Вы можете создать следующие типы ресурсов назначения:
 
 - [educationFileResource](../resources/educationfileresource.md)
 - [educationExcelResource](../resources/educationexcelresource.md)
@@ -26,19 +26,20 @@ ms.locfileid: "62103229"
 - [educationLinkResource](../resources/educationlinkresource.md)
 - [educationPowerPointResource](../resources/educationpowerpointresource.md)
 - [educationMediaResource](../resources/educationmediaresource.md)
+- [educationTeamsAppResource](../resources/educationteamsappresource.md)
 
-Каждый ресурс имеет свойство @odata.type, чтобы указать, какой тип ресурса создается. 
+Каждый ресурс имеет свойство @odata.type, указывающее тип создаваемого ресурса. 
 
 > [!IMPORTANT] 
-> Перед отправкой ресурса назначения необходимо [](../api/educationassignment-setupresourcesfolder.md) настроить папку ресурсов для [educationAssignment](../resources/educationassignment.md) для отправки файлов.
+> Перед отправкой ресурса назначения необходимо настроить папку ресурсов [](../api/educationassignment-setupresourcesfolder.md) для [educationAssignment](../resources/educationassignment.md) для отправки файлов.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
+|Делегированное (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Делегированное (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается.  | 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -52,8 +53,8 @@ POST /education/classes/{class-id}/assignments/{assignment-id}/resources
 | Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
-В теле запроса поставляем представление JSON одного из следующих типов ресурсов: 
+## <a name="request-body"></a>Текст запроса
+В тексте запроса добавьте представление одного из следующих типов ресурсов в формате JSON: 
 
 - [educationFileResource](../resources/educationfileresource.md)
 - [educationExcelResource](../resources/educationexcelresource.md)
@@ -61,14 +62,15 @@ POST /education/classes/{class-id}/assignments/{assignment-id}/resources
 - [educationLinkResource](../resources/educationlinkresource.md)
 - [educationPowerPointResource](../resources/educationpowerpointresource.md)
 - [educationMediaResource](../resources/educationmediaresource.md)
+- [educationTeamsAppResource](../resources/educationteamsappresource.md)
 
->**Примечание:** Вы не можете использовать эту операцию для создания [образованияExternalResource](../resources/educationexternalresource.md).
+>**Примечание:** Эту операцию нельзя использовать для создания [объекта educationExternalResource](../resources/educationexternalresource.md).
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа и `201 Created` объект [educationAssignmentResource](../resources/educationassignmentresource.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [educationAssignmentResource](../resources/educationassignmentresource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
-### <a name="example-1-create-an-educationlinkresource"></a>Пример 1. Создание образованияLinkResource
+### <a name="example-1-create-an-educationlinkresource"></a>Пример 1. Создание объекта educationLinkResource
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -189,7 +191,7 @@ Content-type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -233,7 +235,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-create-an-educationfileresource"></a>Пример 3. Создание образованияFileResource
+### <a name="example-3-create-an-educationfileresource"></a>Пример 3. Создание объекта educationFileResource
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -259,7 +261,7 @@ Content-type: application/json
 ```
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
                                                                                  
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
@@ -305,7 +307,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-create-an-educationexcelresource"></a>Пример 4. Создание образованияExcelResource
+### <a name="example-4-create-an-educationexcelresource"></a>Пример 4. Создание объекта educationExcelResource
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -356,7 +358,7 @@ Content-type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -400,7 +402,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-create-an-educationpowerpointresource"></a>Пример 5. Создание образованияPowerPointResource
+### <a name="example-5-create-an-educationpowerpointresource"></a>Пример 5. Создание educationPowerPointResource
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -451,7 +453,7 @@ Content-type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -546,7 +548,7 @@ Content-type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -589,11 +591,85 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-7-create-an-educationteamsappresource"></a>Пример 7. Создание объекта educationTeamsAppResource
+#### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"], 
+  "name": "create_educationTeamsAppResource_from_educationassignment"
+}-->
+```http
+POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
+Content-type: application/json
+
+{
+    "distributeForStudentWork": false,
+    "resource": {
+        "displayName": "Template - My Story",
+        "appId": "6fbeb90c-3d55-4bd5-82c4-bfe824be4300",
+        "appIconWebUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/6fbeb90c-3d55-4bd5-82c4-bfe824be4300_largeImage.png?v=2.0.2",
+        "teamsEmbeddedContentUrl": "https://app.api.edu.buncee.com/player/C7B0866C9B7E485EAE21AE14DBC3FD08?embed=1&render_slide_panel=1",
+        "webUrl": "https://app.edu.buncee.com/buncee/C7B0866C9B7E485EAE21AE14DBC3FD08",
+        "@odata.type": "#microsoft.graph.educationTeamsAppResource"
+    }
+}
+```
+
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationMediaResource"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/resources/$entity",
+  "distributeForStudentWork": false,
+  "id": "5bae19da-a720-4046-8af8-f56b9ae62d25",
+  "resource": {
+      "@odata.type": "#microsoft.graph.educationTeamsAppResource",
+      "displayName": "Template - My Story",
+      "createdDateTime": "2022-04-22T13:51:20.577384Z",
+      "lastModifiedDateTime": "2022-04-22T13:51:20.577384Z",
+      "appId": "6fbeb90c-3d55-4bd5-82c4-bfe824be4300",
+      "appIconWebUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/6fbeb90c-3d55-4bd5-82c4-bfe824be4300_largeImage.png?v=2.0.2",
+      "teamsEmbeddedContentUrl": "https://app.api.edu.buncee.com/player/C7B0866C9B7E485EAE21AE14DBC3FD08?embed=1&render_slide_panel=1",
+      "webUrl": "https://app.edu.buncee.com/buncee/C7B0866C9B7E485EAE21AE14DBC3FD08",
+      "createdBy": {
+          "application": null,
+          "device": null,
+          "user": {
+              "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+              "displayName": null
+          }
+      },
+      "lastModifiedBy": {
+          "application": null,
+          "device": null,
+          "user": {
+              "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+              "displayName": null
+          }
+      }
+  }
+}
+```
+
+
 
 ## <a name="see-also"></a>См. также
 
-* [Состояния, переходы и ограничения для назначений и представлений](/graph/assignments-submissions-states-transition)
-* [Upload для назначений и представлений об образовании](/graph/education-upload-resource-overview)
+* [Состояния, переходы и ограничения для назначений и отправок](/graph/assignments-submissions-states-transition)
+* [Отправка файлов для заданий и отправок для образовательных учреждений](/graph/education-upload-resource-overview)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

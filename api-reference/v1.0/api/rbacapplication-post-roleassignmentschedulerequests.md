@@ -1,18 +1,18 @@
 ---
-title: Создание unifiedRoleAssignmentScheduleRequest
+title: Создание roleAssignmentScheduleRequests
 description: В PIM запросите активное и постоянное назначение ролей через объект unifiedRoleAssignmentScheduleRequest. Используйте этот API для активации допустимых ролей.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bb94ee6d549209d64289f67d1b830c787afe4e04
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: aa00d85024698cbc802db7e07fcf82683750dc8b
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65206802"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461613"
 ---
-# <a name="create-unifiedroleassignmentschedulerequest"></a>Создание unifiedRoleAssignmentScheduleRequest
+# <a name="create-roleassignmentschedulerequests"></a>Создание roleAssignmentScheduleRequests
 Пространство имен: microsoft.graph
 
 В PIM выполните следующие операции с помощью объекта [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) :
@@ -26,9 +26,9 @@ ms.locfileid: "65206802"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|RoleAssignmentSchedule.ReadWrite.Directory|
+|Делегированное (рабочая или учебная учетная запись)|RoleAssignmentSchedule.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|RoleAssignmentSchedule.ReadWrite.Directory|
+|Для приложений|RoleAssignmentSchedule.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,13 +54,13 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |action|unifiedRoleScheduleRequestActions|Представляет тип операции в запросе на назначение роли. Возможные значения: `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`, `selfExtend`, `selfRenew`, `unknownFutureValue`. <br/><ul><li>`adminAssign`: администраторы могут назначать роли пользователям или группам.</li><li>`adminRemove`: администраторы могут удалять пользователей или группы из ролей.</li><li> `adminUpdate`: администраторы могут изменять существующие назначения ролей.</li><li>`adminExtend`: администраторы могут продлить назначения с истекающим сроком действия.</li><li>`adminRenew`: чтобы администраторы продлевали назначения с истекшим сроком действия.</li><li>`selfActivate`: для активации назначений пользователями.</li><li>`selfDeactivate`: для отключения активных назначений пользователями.</li><li>`selfExtend`: пользователи должны запрашивать продление назначений с истекающим сроком действия.</li><li>`selfRenew`: чтобы пользователи запрашивали продление назначений с истекшим сроком действия.</li></ul>|
-|Customdata|Строка|Поле "Бесплатный текст" для определения любых пользовательских данных для запроса. Необязательное.|
-|principalId|Строка|Идентификатор участника, которым было предоставлено назначение. Обязательно.|
-|roleDefinitionId|Строка|Идентификатор [назначаемого объекта unifiedRoleDefinition](../resources/unifiedroledefinition.md) . Обязательно.|
+|Customdata|String|Поле "Бесплатный текст" для определения любых пользовательских данных для запроса. Необязательный параметр.|
+|principalId|Строка|Идентификатор участника, которым было предоставлено назначение. Обязательный.|
+|roleDefinitionId|String|Идентификатор [назначаемого объекта unifiedRoleDefinition](../resources/unifiedroledefinition.md) . Обязательный.|
 |directoryScopeId|String|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым участнику был предоставлен доступ. Области каталога — это общие области, хранящиеся в каталоге, которые распознаются несколькими приложениями. Используется `/` для области на уровне клиента. Используйте **appScopeId** , чтобы ограничить область только приложением. Требуется **directoryScopeId** **или appScopeId** .|
 |appScopeId|String|Идентификатор области, относяшейся к конкретному приложению, если назначение предназначено для приложения. Область назначения определяет набор ресурсов, к которым участнику был предоставлен доступ. Области приложения — это области, которые определяются и распознаются только этим приложением. Используется `/` для областей приложений на уровне клиента. Используйте **directoryScopeId** , чтобы ограничить область определенными объектами каталога, например административными единицами. Требуется **directoryScopeId** **или appScopeId** .|
-|Обоснование|String|Сообщение, предоставляемое пользователями и администраторами при создании объекта **unifiedRoleAssignmentScheduleRequest** . Необязательное.|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Период запроса на назначение роли. В настоящее время повторяющиеся расписания не поддерживаются. Обязательно.|
+|Обоснование|String|Сообщение, предоставляемое пользователями и администраторами при создании объекта **unifiedRoleAssignmentScheduleRequest** . Необязательный параметр. Является ли это свойство обязательным или необязательным, также зависит от [параметров Azure AD роли](../api/unifiedrolemanagementpolicy-list-rules.md).|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Период запроса на назначение роли. Обязательный. Период назначения зависит от параметров роли Azure AD [роли](../api/unifiedrolemanagementpolicy-list-rules.md).|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Сведения о билете, связанные с запросом на назначение роли, включая сведения о номере билета и системе билетов. Необязательный параметр.|
 
 
@@ -72,6 +72,8 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1-admin-assigning-a-directory-role-to-a-principal"></a>Пример 1. Администратор назначает роль каталога субъекту
+
+В следующем запросе администратор `fdd7a751-b60b-444a-984c-02652fe8fa1c` создает запрос на назначение роли, определяемой субъектом, определяемого идентификатором `071cc716-8147-4397-a5ba-b2105951cc0b`. Областью их роли является все объекты каталога в клиенте, а назначение является постоянным.
 
 #### <a name="request"></a>Запрос
 

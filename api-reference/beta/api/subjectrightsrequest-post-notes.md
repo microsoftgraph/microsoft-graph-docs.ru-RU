@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: f1fba8eb55848d1ca884a97d4cfe4c06061291ad
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: eca3fb56abb6d524bd54201d09b37474ae333c26
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191501"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461578"
 ---
 # <a name="create-authorednote"></a>Создание authoredNote
 Пространство имен: microsoft.graph
@@ -24,17 +24,20 @@ ms.locfileid: "65191501"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|SubjectRightsRequest.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|SubjectRightsRequest.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
+
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+POST /security/subjectRightsRequests/{subjectRightsRequestId}/notes
 POST /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 ```
 
@@ -54,7 +57,7 @@ POST /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 |content|[microsoft.graph.itemBody](../resources/itembody.md)|Содержимое заметки для запроса.|
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [authoredNote](../resources/authorednote.md) в тексте отклика.
 
@@ -75,11 +78,10 @@ POST https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRigh
 Content-Type: application/json
 
 {
-"content": 
-  {
-    "content": "String",
-    "contentType": "text"
-  }
+    "content": {
+        "content": "Please take a look at the files tagged with follow up",
+        "contentType": "text"
+    }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -108,7 +110,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -122,13 +124,18 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "id": "String (identifier)",
-    "createdDateTime": "String (timestamp)",
-    "author": { "@odata.type": "microsoft.graph.identitySet"},
+    "id": "D450C4F9-CC18-4784-9406-9372F4E05F7B",
+    "createdDateTime": "2022-05-10T22:42:28Z",
+    "author": {
+        "user": {
+            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+            "displayName": "srradmin@contoso.com"
+        }
+    },
     "content": {
-          "@odata.type": "microsoft.graph.itemBody"
+        "content": "Please take a look at the files tagged with follow up",
+        "contentType": "text"
     }
-
 }
 ```
 

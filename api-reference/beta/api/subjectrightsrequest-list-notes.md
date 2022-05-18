@@ -1,40 +1,43 @@
 ---
-title: Заметки списка
+title: Перечисление заметок
 description: Получите ресурсы authoredNote из свойства навигации примечаний.
 author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: b9290ad1c10f2b8ec3e3fe36afcce619f2630d01
-ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
+ms.openlocfilehash: e1a934f721f079699e63920e58e62d551d4e1534
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61403098"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461543"
 ---
-# <a name="list-notes"></a>Заметки списка
+# <a name="list-notes"></a>Перечисление заметок
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список авторских заметок, связанных с запросом на права субъекта. 
+Получение списка созданных заметок, связанных с запросом прав субъекта. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|Не поддерживается|
+|Делегированное (рабочая или учебная учетная запись)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
+
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+GET /security/subjectRightsRequests/{subjectRightsRequestId}/notes
 GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 ```
 
@@ -51,7 +54,7 @@ GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию `200 OK` [объектов authoredNote](../resources/authorednote.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [authoredNote](../resources/authorednote.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -106,11 +109,17 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/privacy/subjectRightsRequests('77f885ac-1d7b-4317-bde8-4cb3d24a3ed8')/notes",
     "value": [
         {
-            "id": "String (identifier)",
-            "createdDateTime": "String (timestamp)",
-            "author": { "@odata.type": "microsoft.graph.identitySet"},
+            "id": "73A1E594-D973-4740-B1CC-42FD21727543",
+            "createdDateTime": "2022-06-20T22:42:28Z",
+            "author": {
+                "user": {
+                    "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+                    "displayName": "srradmin@contoso.com"
+                }
+            },
             "content": {
-                 "@odata.type": "microsoft.graph.itemBody"
+                "content": "Please review all the files tagged with follow up.",
+                "contentType": "text"
             }
         }
     ]

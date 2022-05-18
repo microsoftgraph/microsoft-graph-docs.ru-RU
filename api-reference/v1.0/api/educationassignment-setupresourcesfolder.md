@@ -1,32 +1,32 @@
 ---
 title: 'educationAssignment: setUpResourcesFolder'
-description: Создайте SharePoint папку для отправки файлов для данного образованияAssignment.
+description: Создайте SharePoint папку для отправки файлов для данного объекта educationAssignment.
 ms.localizationpriority: medium
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d7847f6e38f6a4ce1ce64773f0ced248417beae1
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 2416a4a53c1b8cfee579fa604a5f8ba873875233
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60936385"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65460675"
 ---
 # <a name="educationassignment-setupresourcesfolder"></a>educationAssignment: setUpResourcesFolder
 
 Пространство имен: microsoft.graph
 
-Создайте SharePoint папку для отправки файлов для данного [образованияAssignment](../resources/educationassignment.md). 
+Создайте SharePoint папку для отправки файлов для данного [объекта educationAssignment](../resources/educationassignment.md). 
 
-Учитель определяет ресурсы для отправки в папку назначения. 
+Преподаватель определяет ресурсы для отправки в папку задания. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.Read  |
-|Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
+|Делегированное (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.Read  |
+|Делегированное (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -37,14 +37,15 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer `{token}`. Обязательный параметр.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Необходимо предоставить пустой json в качестве `{}` тела запроса для этого метода.
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа и `200 OK` объект [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-1.0&preserve-view=true) в тексте запроса.
+В тексте запроса укажите пустой объект JSON для `{}` этого метода.
 
-Если указанное **назначение уже** имеет папку, этот метод возвращает ответ на `400 Bad request` ошибку.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-1.0&preserve-view=true) в тексте запроса.
+
+Если указанное **назначение уже** содержит папку, этот метод возвращает ответ об `400 Bad request` ошибке.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -148,7 +149,7 @@ Content-type: application/json
 }
 ```
 
-Если указанное **назначение уже** имеет папку, этот метод возвращает ответ на `400 Bad request` ошибку.
+Если указанное **назначение уже** содержит папку, этот метод возвращает ответ об `400 Bad request` ошибке.
 
 <!-- {
   "blockType": "response",

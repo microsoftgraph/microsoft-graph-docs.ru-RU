@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2f8a2dcd2ebb53db5285c77888408be335d92147
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: 566a923daf3eb4f995af9c8b3f723ec888fac107
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365788"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461417"
 ---
 # <a name="create-message"></a>Создание объекта Message
 
@@ -27,13 +27,15 @@ ms.locfileid: "65365788"
 
 При использовании формата MIME:
 - Укажите соответствующие [заголовки сообщений Интернета](https://tools.ietf.org/html/rfc2076) и [содержимое MIME](https://tools.ietf.org/html/rfc2045), а также закодируйте их в формате **Base64** в тексте запроса.
-- Добавьте все вложения и свойства S/MIME в содержимое MIME.
+- \* Добавьте все вложения и свойства S/MIME в содержимое MIME.
 
 По умолчанию эта операция сохраняет черновик в папке "Черновики".
 
 [Отправьте](../api/message-send.md) черновик сообщения в ходе последующей операции.
 
 Кроме того, [можно отправить новое сообщение](../api/user-sendmail.md) в одном действии или создать черновик для пересылки [](../api/message-createreply.md) [, ответа](../api/message-createforward.md) или [](../api/message-createreplyall.md) ответа всем на существующее сообщение.
+
+>\***Примечание:** В настоящее время полезные данные сообщений S/MIME ограничены 4 МБ. Попытки отправки, превышающее это ограничение, при этом будут выданы сообщения об`HTTP 413 Request Entity Too Large` ошибке.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

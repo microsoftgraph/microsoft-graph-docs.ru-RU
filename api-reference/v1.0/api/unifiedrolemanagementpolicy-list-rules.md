@@ -1,21 +1,21 @@
 ---
 title: Список правил (для политики управления ролами)
-description: Получение правил, определенных для политики управления ролем.
+description: Получение правил или параметров, определенных для политики управления ролами.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1084a5b889fcec98c74f9211705d6d6ec261c509
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: f24a62dedc25d3fb871f86e14863741ab91b8ade
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204594"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461606"
 ---
 # <a name="list-rules-for-a-role-management-policy"></a>Список правил (для политики управления ролами)
 Пространство имен: microsoft.graph
 
-Получение правил, определенных для политики управления ролем. Правила — это коллекция следующих типов, производных от объекта [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) :
+Получение правил или параметров, определенных для политики управления ролами. Правила — это коллекция следующих типов, производных от объекта [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) :
 + [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md)
 + [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md)
 + [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md)
@@ -27,9 +27,9 @@ ms.locfileid: "65204594"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Делегированное (рабочая или учебная учетная запись)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
+|Для приложений|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) в теле отклика.
 

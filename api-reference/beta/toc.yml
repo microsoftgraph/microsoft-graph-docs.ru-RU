@@ -472,7 +472,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Примечания
+          - name: примечания;
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -11487,6 +11487,8 @@ items:
                           - name: Получение
                             href: api/unifiedrbacresourceaction-get.md
                   - name: управление привилегированными пользователями (PIM);
+                    displayName: 'Privileged identity management, PIM'
+                    href: resources/privilegedidentitymanagementv3-overview.md
                     items:
                       - name: Назначения ролей
                         items:
@@ -11494,9 +11496,9 @@ items:
                             href: resources/unifiedroleassignmentschedulerequest.md
                             items:
                               - name: Список
-                                href: api/unifiedroleassignmentschedulerequest-list.md
+                                href: api/rbacapplication-list-roleassignmentschedulerequests.md
                               - name: Создание
-                                href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
+                                href: api/rbacapplication-post-roleassignmentschedulerequests.md
                               - name: Получение
                                 href: api/unifiedroleassignmentschedulerequest-get.md
                               - name: '"Отмена"'
@@ -11507,7 +11509,7 @@ items:
                             href: resources/unifiedroleassignmentschedule.md
                             items:
                               - name: Список
-                                href: api/unifiedroleassignmentschedule-list.md
+                                href: api/rbacapplication-list-roleassignmentschedules.md
                               - name: Получение
                                 href: api/unifiedroleassignmentschedule-get.md
                               - name: Фильтрация по текущему пользователю
@@ -11516,7 +11518,7 @@ items:
                             href: resources/unifiedroleassignmentscheduleinstance.md
                             items:
                               - name: Список
-                                href: api/unifiedroleassignmentscheduleinstance-list.md
+                                href: api/rbacapplication-list-roleassignmentscheduleinstances.md
                               - name: Получение
                                 href: api/unifiedroleassignmentscheduleinstance-get.md
                               - name: Фильтрация по текущему пользователю
@@ -11527,9 +11529,9 @@ items:
                             href: resources/unifiedroleeligibilityschedulerequest.md
                             items:
                               - name: Список
-                                href: api/unifiedroleeligibilityschedulerequest-list.md
+                                href: api/rbacapplication-list-roleeligibilityschedulerequests.md
                               - name: Создание
-                                href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
+                                href: api/rbacapplication-post-roleeligibilityschedulerequests.md
                               - name: Получение
                                 href: api/unifiedroleeligibilityschedulerequest-get.md
                               - name: '"Отмена"'
@@ -11540,7 +11542,7 @@ items:
                             href: resources/unifiedroleeligibilityschedule.md
                             items:
                               - name: Список
-                                href: api/unifiedroleeligibilityschedule-list.md
+                                href: api/rbacapplication-list-roleeligibilityschedules.md
                               - name: Получение
                                 href: api/unifiedroleeligibilityschedule-get.md
                               - name: Фильтрация по текущему пользователю
@@ -11549,7 +11551,7 @@ items:
                             href: resources/unifiedroleeligibilityscheduleinstance.md
                             items:
                               - name: Список
-                                href: api/unifiedroleeligibilityscheduleinstance-list.md
+                                href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
                               - name: Получение
                                 href: api/unifiedroleeligibilityscheduleinstance-get.md
                               - name: Фильтрация по текущему пользователю
@@ -11575,7 +11577,7 @@ items:
                             href: resources/unifiedrolemanagementpolicyassignment.md
                             items:
                               - name: Список
-                                href: api/unifiedRoleManagementPolicyAssignment-list.md
+                                href: api/policyroot-list-rolemanagementpolicyassignments.md
                               - name: Получение
                                 href: api/unifiedrolemanagementpolicyassignment-get.md
           - name: Удостоверение и вход
@@ -13419,7 +13421,7 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: Примечания
+              - name: примечания;
                 items:
                   - name: Заметка пользователя
                     href: resources/personannotation.md

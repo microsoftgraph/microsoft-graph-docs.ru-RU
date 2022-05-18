@@ -10,7 +10,7 @@ ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461221"
+ms.locfileid: "65461848"
 ---
 # <a name="overview-of-role-management-through-the-privileged-identity-management-pim-api"></a>Общие сведения об управлении ролями с помощью API управления привилегированными пользователями (PIM)
 

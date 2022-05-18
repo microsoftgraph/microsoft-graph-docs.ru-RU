@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 03810c04707d9b53a0254cbb4d322f4d5696b0d0
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: a42454acfb8c6dc50077fdd85fc7fcf9fa8086e5
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133198"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461333"
 ---
 # <a name="expirationpattern-resource-type"></a>Тип ресурса expirationPattern
 
@@ -18,7 +18,7 @@ ms.locfileid: "65133198"
 
 В [Azure AD управления правами](entitlementmanagement-overview.md) пользователь, желающий получить назначение пакета доступа, создает запрос на назначение пакета доступа. Этот запрос может включать расписание, в течение которых пользователь должен иметь назначение. Назначение пакета для доступа, которое является результатом такого запроса, также имеет расписание. Поле срока действия [объекта entitlementManagementSchedule](entitlementmanagementschedule.md) указывает, когда должно истечь назначение пакета доступа.
 
-В PIM используйте этот ресурс, чтобы определить, когда истекает срок действия объекта [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) или [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) .
+В PIM используйте этот ресурс, чтобы определить, когда истекает срок действия объекта [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) или [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) . Параметры, допустимые для этого объекта, зависят от [параметров Azure AD роли](../api/unifiedrolemanagementpolicy-list-rules.md). Например, если параметры роли Azure AD указывают, что постоянные допустимые назначения не допускаются, `noExpiration` указание свойства типа возвращает ошибку.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -36,7 +36,7 @@ ms.locfileid: "65133198"
 |afterDateTime|Срок действия доступа истекает после указанной даты и времени.|
 |afterDuration|Срок действия доступа истекает по истечении указанного периода, относительно предоставленного доступа. Требуется при **указании свойства duration** .|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
