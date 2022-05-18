@@ -4,12 +4,12 @@ description: Microsoft Graph открывает доступ к данным и 
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 966ace44a87d79a6c74ad758c342cdcf5796a788
-ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
+ms.openlocfilehash: 867fcfb9baeda7b07ee672cd74a94819e39b61a6
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65103055"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461508"
 ---
 # <a name="overview-of-microsoft-graph"></a>Обзор Microsoft Graph
 
@@ -30,7 +30,7 @@ Microsoft Graph открывает доступ к данным и средст�
 
 Microsoft Graph предоставляет интерфейсы REST API и клиентские библиотеки для доступа к данным в нижеуказанных облачных службах Майкрософт:
 
-- Основные службы Microsoft 365: Bookings, Календарь, Delve, Excel, обнаружение электронных данных в Центре соответствия требованиям Microsoft 365, Поиск (Майкрософт), OneDrive, OneNote, Outlook/Exchange, Люди (контакты Outlook), Планировщик, SharePoint, Teams, Список дел, Рабочая аналитика
+- Основные службы Microsoft 365: Bookings, Календарь, Delve, Excel, Обнаружение электронных данных в Центре соответствия требованиям Microsoft 365, Поиск (Майкрософт), OneDrive, OneNote, Outlook/Exchange, Люди (контакты Outlook), Планировщик, SharePoint, Teams, To Do, Viva Insights
 - Службы Enterprise Mobility + Security: Advanced Threat Analytics, Расширенная защита от угроз, Azure Active Directory, Identity Manager и Intune
 - Службы Windows: действия, устройства, уведомления, универсальная печать
 - Dynamics 365 Business Central

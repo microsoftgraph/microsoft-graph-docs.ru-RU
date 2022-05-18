@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 1ae0e4bd967238aa5566177b89c808231999f688
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 460f5d4af2dbc75b9496b7ff0e5c33d9d62a7fd0
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61861253"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461200"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>Использование API Microsoft Graph для интеграции функций социальной и рабочей аналитики в приложении
 
@@ -86,7 +86,7 @@ Include the next sentence when supporting events.
 
 Используйте API аналитики, чтобы получить статистику о действиях и соответствующие параметры для пользователя:
 
-- [settings](../resources/settings.md). Чтобы API аналитики возвращал результаты для пользователя, в параметрах аналитики текущего пользователя должна отображаться действительная лицензия MyAnalytics, должно быть выбрано использование MyAnalytics и должен применяться облачный почтовый ящик с поддержкой Graph.
+- [параметры](../resources/settings.md). Чтобы API аналитики возвращал результаты для пользователя, в параметрах аналитики текущего пользователя должна отображаться действительная лицензия Microsoft Viva Insights, должно быть выбрано использование Viva Insights и должен применяться облачный почтовый ящик с поддержкой Graph.
 - [activityStatistics](../resources/activitystatistics.md). Получение данных за последнюю полную неделю (или указанный промежуток времени) о действиях в Microsoft 365, выполненных пользователем, включая количество часов, потраченное на [звонки](callactivitystatistics.md), [чаты (мгновенные сообщения)](chatactivitystatistics.md), [письма](emailactivitystatistics.md) и [собрания](meetingactivitystatistics.md) в течение и вне рабочего времени, а также часы, доступные для [сосредоточенной работы](focusactivitystatistics.md).
 
 ## <a name="whats-new"></a>Новые возможности
