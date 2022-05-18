@@ -4,12 +4,12 @@ description: В Microsoft Graph предусмотрены необязател�
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: fc9f732c3cb5269866f9dafc24043b0b06c65fcb
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: e0af0692e89f0ea099fb480ecd57cd60e54bd798
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629416"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461375"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Настройка ответов с помощью параметров запроса
 
@@ -18,7 +18,7 @@ ms.locfileid: "64629416"
 > [!TIP] 
 > В конечной точке бета-версии префикс `$` является необязательным. Например, вместо `$filter` можно использовать `filter`. В конечной точке версии 1 префикс `$` является необязательным только для подмножества API-интерфейсов. Для простоты всегда включайте `$`, если используется конечная точка версии 1.
 
-Параметрами запроса могут быть системные параметры запроса OData или другие параметры запроса. 
+Параметрами запроса могут быть [системные параметры запроса OData](http://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html#_Toc31360955) или другие параметры запроса.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/7BuFv3yETi4]
 
@@ -58,6 +58,7 @@ API Microsoft Graph может поддерживать один или неск
 | [$count](/graph/api/user-list#example-3-get-only-a-count-of-users)| Получает целочисленную сумму коллекции. | `GET /users/$count` <br> `GET /groups/{id}/members/$count`|
 | [$ref](/graph/api/group-post-members) | Обновляет принадлежность объектов к коллекции. | `POST /groups/{id}/members/$ref` |
 | [$value](/graph/api/profilephoto-get) | Возвращает или обновляет двоичное значение элемента. | `GET /me/photo/$value` |
+| [$batch](/graph/json-batching) | Объединение нескольких HTTP-запросов в пакетный запрос. | `POST /$batch` |
 
 ## <a name="encoding-query-parameters"></a>Кодирование параметров запроса
 
@@ -85,12 +86,15 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 
 ## <a name="count-parameter"></a>Параметр count
 
-Параметр запроса `$count` позволяет включить общее количество элементов коллекции вместе со страницей значений, возвращенных из Microsoft Graph.
+Используйте параметр `$count` запроса, чтобы получить общее количество элементов в коллекции или совпадение с выражением. `$count` можно использовать следующими способами:
+
+1. В качестве параметра строки запроса с синтаксисом `$count=true` включить общее количество элементов в коллекции вместе со страницей значений данных, возвращаемой из Microsoft Graph. Например, `users?$count=true`.
+2. В качестве [сегмента URL-адреса](#other-odata-url-capabilities) можно получить только целочисленную сумму коллекции. Например, `users/$count`.
+3. В `$filter` выражении с операторами равенства для получения коллекции данных, где отфильтрованное свойство является пустой коллекцией. См [ примеры ниже](#examples-using-the-filter-query-operator).
 
 > [!NOTE]
-> Можно также использовать `$count` в качестве [сегмента URL-адреса](#other-odata-url-capabilities) для получения целочисленной суммы коллекции. Для ресурсов, производных от [directoryObject](/graph/api/resources/directoryobject), это возможно только в расширенных запросах. См. [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
->
-> Использование `$count` не поддерживается в клиентах Azure AD B2C.
+> 1. Для ресурсов, производных от [directoryObject](/graph/api/resources/directoryobject), `$count` это поддерживается только в расширенных запросах. См. [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+> 2. Использование `$count` не поддерживается в клиентах Azure AD B2C.
 
 Например, приведенный ниже запрос возвращает коллекцию **contact** текущего пользователя, а также ряд элементов коллекции **contact** в свойстве `@odata.count`.
 
@@ -208,6 +212,7 @@ ConsistencyLevel: eventual
 |:------------|:--------|
 | Получение всех пользователей с именем Маша по нескольким свойствам. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) `../users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')` |
 | Получение всех пользователей с почтовым доменом "hotmail.com" | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40hotmail.com')%26%24select%3Did%2CdisplayName%2Cmail&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$count=true&$filter=endsWith(mail,'@hotmail.com')`. Это [расширенный запрос](/graph/aad-advanced-queries). |
+| Получение всех пользователей без назначенных лицензий | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DassignedLicenses%2F%24count%2Bne%2B0%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=assignedLicenses/$count eq 0&$count=true`. Это [расширенный запрос](/graph/aad-advanced-queries). |
 | Получение всех событий для вошедшего в систему пользователя, начинающихся начинаются после 01.07.2017 г. | 
   [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) `../me/events?$filter=start/dateTime ge '2017-07-01T08:00'`. <br/>**ПРИМЕЧАНИЕ.** Свойство **dateTime** относится к строковому типу. |
 | Получение всех сообщений с определенного адреса, полученных вошедшим пользователем. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) `../me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'` |
