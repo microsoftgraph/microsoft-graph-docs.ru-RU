@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2efa24746d8670e9e96d9f3d66f6ec884c643a72
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 50ba58f3546ec06e4c7dab0c62a9453687c99a90
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110345"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461305"
 ---
 # <a name="create-message"></a>Создание сообщения
 
@@ -24,13 +24,15 @@ ms.locfileid: "62110345"
 
 При использовании формата MIME:
 - Укажите соответствующие [заголовки сообщений Интернета](https://tools.ietf.org/html/rfc2076) и [содержимое MIME](https://tools.ietf.org/html/rfc2045), а также закодируйте их в формате **Base64** в тексте запроса.
-- Добавьте все вложения и свойства S/MIME в содержимое MIME.
+- \* Добавьте все вложения и свойства S/MIME в содержимое MIME.
 
 По умолчанию эта операция сохраняет черновик в папке "Черновики".
 
 [Отправьте](../api/message-send.md) черновик сообщения в ходе последующей операции.
 
 Или [отправьте новое сообщение](../api/user-sendmail.md) за одну операцию или создайте черновик для [пересылки](../api/message-createforward.md), [ответа](../api/message-createreply.md) и [ответа всем](../api/message-createreplyall.md) на существующее сообщение.
+
+>\***Примечание:** В настоящее время полезные данные сообщений S/MIME ограничены 4 МБ. Попытки отправки, превышающее это ограничение, будут выдавать `HTTP 413 Request Entity Too Large` ответные сообщения об ошибке.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -52,7 +54,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Length | число | 0. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный.<br/> Используйте `application/json` для объекта JSON и `text/plain` для содержимого MIME. |
 
