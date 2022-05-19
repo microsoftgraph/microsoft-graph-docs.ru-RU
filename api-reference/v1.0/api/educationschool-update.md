@@ -5,18 +5,18 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 70502ab3ad21d6d71d9560c95e2cdef1fc5c5f98
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4e2f1528590020420631fc789a672a3147400c6e
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117662"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549472"
 ---
 # <a name="update-educationschool"></a>Обновление educationSchool
 
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [educationSchool.](../resources/educationschool.md)
+Обновление свойств объекта [educationSchool](../resources/educationschool.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "62117662"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | EduRoster.ReadWrite.All                     |
+| Для приложений                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,18 +42,18 @@ PATCH /education/schools/{id}
 | Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json          |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [educationSchool.](../resources/educationschool.md)
+В тексте запроса добавьте представление объекта [educationSchool](../resources/educationschool.md) в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при обновлении [educationSchool.](../resources/educationschool.md)
+В следующей таблице показаны свойства, необходимые при обновлении [educationSchool](../resources/educationschool.md).
 
 | Свойство             | Тип                                               | Описание                                                                                                                                                           |
 | :------------------- | :------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName          | Строка                                             | Отображаемое имя учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                            |
-| description          | String                                             | Описание учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                             |
-| externalSource       | educationExternalSource                            | Источник, из которых была создана эта организация. Унаследованный от [educationOrganization](../resources/educationorganization.md). Возможные значения: `sis`, `manual`. |
-| externalSourceDetail | String                                             | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                    |
+| displayName          | Строка                                             | Отображаемое имя учебного заведения. Наследуется от [educationOrganization](../resources/educationorganization.md).                                                            |
+| description          | Строка                                             | Описание учебного заведения. Наследуется от [educationOrganization](../resources/educationorganization.md).                                                             |
+| externalSource       | educationExternalSource                            | Источник, из которого была создана эта организация. Наследуется от [educationOrganization](../resources/educationorganization.md). Возможные значения: `sis`, `manual`. |
+| externalSourceDetail | Строка                                             | Имя внешнего источника, из которой были созданы эти ресурсы.                                                                                                    |
 | principalEmail       | String                                             | Адрес электронной почты директора.                                                                                                                                       |
 | principalName        | String                                             | Имя директора.                                                                                                                                                |
 | externalPrincipalId  | String                                             | Идентификатор директора в системе синхронизации.                                                                                                                                    |
@@ -72,7 +72,7 @@ PATCH /education/schools/{id}
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -118,9 +118,9 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

@@ -1,16 +1,16 @@
 ---
 title: assignLicense
 description: Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской.
-author: jpettere
+author: jconley76
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 05e2b5deee0381e34c6d03a2cb9f046209ab44bf
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 9c6566c638eb7dde5a81ca85e617ca684d30264c
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336839"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549479"
 ---
 # <a name="user-assignlicense"></a>user: assignLicense
 

@@ -1,18 +1,18 @@
 ---
-title: тип ресурса licenseDetails
+title: Тип ресурса licenseDetails
 description: Содержит сведения о лицензии, назначенной пользователю.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: users
-author: jpettere
-ms.openlocfilehash: c74c7e229bedffd32dccdfc0a62d7164985e2f4c
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+author: jconley76
+ms.openlocfilehash: 220c164e4acf119a7937e4ab5674b93fb7a64af0
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547073"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549507"
 ---
-# <a name="licensedetails-resource-type"></a>тип ресурса licenseDetails
+# <a name="licensedetails-resource-type"></a>Тип ресурса licenseDetails
 
 Пространство имен: microsoft.graph
 
@@ -24,17 +24,17 @@ ms.locfileid: "52547073"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Перечисление licenseDetails](../api/user-list-licensedetails.md) | Коллекция объектов licenseDetails |Извлечение списка объектов licenseDetails для пользователя.|
+|[Перечисление licenseDetails](../api/user-list-licensedetails.md) | Коллекция объектов licenseDetails |Получение списка объектов licenseDetails для пользователя.|
 
 <!--|[Get licenseDetails](../api/licensedetails-get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Уникальный идентификатор объекта детализации лицензии. Только для чтения, клавиши, а не nullable |
-|servicePlans|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах служб, присвоенных лицензией. Только для чтения, не является недействительным |
-|skuId|Guid| Уникальный идентификатор (GUID) для службы SKU. Равно свойству skuId на связанном [объекте SubscribedSku.](subscribedsku.md) Только для чтения |
-|skuPartNumber|String| Уникальное имя отображения SKU. Равно skuPartNumber на связанном [объекте SubscribedSku;](subscribedsku.md) например: "AAD_Premium". Только для чтения |
+|id|String| Уникальный идентификатор объекта подробностей лицензии. Только для чтения, ключ, не допускает значения NULL |
+|servicePlans|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах обслуживания, назначенных лицензией. Только для чтения, не допускает значение NULL |
+|skuId|Guid| Уникальный идентификатор (GUID) для номера SKU службы. Равно свойству skuId связанного объекта [SubscribedSku](subscribedsku.md) . Только для чтения |
+|skuPartNumber|String| Уникальное отображаемое имя SKU. Равно skuPartNumber для связанного объекта [SubscribedSku](subscribedsku.md) ; Например, "AAD_Premium". Только для чтения |
 
 ## <a name="relationships"></a>Связи
 Нет

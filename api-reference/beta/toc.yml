@@ -1857,11 +1857,11 @@ items:
                     href: api/ediscovery-tag-childtags.md
                   - name: Перечисление тегов как иерархии
                     href: api/ediscovery-tag-ashierarchy.md
-          - name: Запросы прав субъекта
+          - name: Запрос прав субъекта
             items:
               - name: Обзор
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
-              - name: Запросы прав субъекта
+              - name: Запрос прав субъекта
                 href: resources/subjectrightsrequest.md
                 items:
                   - name: Список
@@ -14490,6 +14490,8 @@ items:
                 href: api/itemanalytics-get.md
               - name: Список версий
                 href: api/listitem-list-versions.md
+              - name: Получение дельты
+                href: api/listitem-delta.md
           - name: Версия набора документов
             items:
               - name: Версия набора документов

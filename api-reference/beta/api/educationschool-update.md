@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fbc31501492e364a935a60b7600ab01807567af5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9fb09925d8f34ca9ebe816262f1519a1b62aada2
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62123689"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549584"
 ---
 # <a name="update-educationschool-properties"></a>Обновление свойств educationSchool
 
@@ -28,7 +28,7 @@ ms.locfileid: "62123689"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | EduRoster.ReadWrite.All                     |
+| Для приложений                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,10 +49,10 @@ PATCH /education/schools/{id}
 
 | Свойство            | Тип                                               | Описание                        |
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
-| displayName         | Строка                                             | Отображаемое имя школы         |
-| description         | Строка                                             | Описание школы          |
-| principalEmail      | String                                             | Адрес электронной почты директора     |
-| principalName       | String                                             | Имя директора              |
+| displayName         | Строка                                             | Отображаемое имя учебного заведения.        |
+| description         | Строка                                             | Описание учебного заведения.         |
+| principalEmail      | String                                             | Адрес электронной почты директора.    |
+| principalName       | String                                             | Имя директора.             |
 | externalPrincipalId | String                                             | Идентификатор директора в системе синхронизации. |
 | highestGrade        | String                                             | Самый старший класс.              |
 | lowestGrade         | String                                             | Самый младший класс.               |
@@ -67,7 +67,7 @@ PATCH /education/schools/{id}
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -110,9 +110,9 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

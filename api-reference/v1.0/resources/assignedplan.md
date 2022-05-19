@@ -2,15 +2,15 @@
 title: Тип ресурса assignedPlan
 description: Свойство **assignedPlans** объектов user и organization представляет собой коллекцию объектов **assignedPlan**.
 ms.localizationpriority: medium
-author: jpettere
+author: jconley76
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 599a462e49822c6b69fe75ac7104a101e986db6c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: e1ac85a836ce9b46c908b33cc5d9577c40188ebc
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333192"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549458"
 ---
 # <a name="assignedplan-resource-type"></a>Тип ресурса assignedPlan
 
@@ -23,20 +23,20 @@ ms.locfileid: "63333192"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|assignedDateTime|DateTimeOffset|Дата и время, в которые был назначен план. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|capabilityStatus|String|Условие назначения возможностей. Возможные значения , `Enabled``Warning`, `Suspended`, `Deleted``LockedOut`. См [. подробное описание](#capabilitystatus-values) каждого значения.|
-|service|String|Имя службы; например, `exchange`.|
-|servicePlanId|Guid|Идентификатор GUID, определяющий план обслуживания. Полный список GUID-кодов и их эквивалентных дружественных имен служб см. в списке имен продуктов и идентификаторов плана обслуживания [для лицензирования](/azure/active-directory/enterprise-users/licensing-service-plan-reference).|
+|assignedDateTime|DateTimeOffset|Дата и время назначения плана. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|capabilityStatus|String|Условие назначения возможностей. Возможные значения: `Enabled`, `Warning`, `Suspended`, `Deleted`. `LockedOut` См [. подробное описание](#capabilitystatus-values) каждого значения.|
+|service|String|Имя службы; Например, `exchange`.|
+|servicePlanId|Guid|Идентификатор GUID, определяющий план обслуживания. Полный список идентификаторов GUID и их эквивалентных понятных имен служб см. в разделе "Названия продуктов и идентификаторы планов обслуживания для [лицензирования"](/azure/active-directory/enterprise-users/licensing-service-plan-reference).|
 
 
-### <a name="capabilitystatus-values"></a>значения capabilityStatus
+### <a name="capabilitystatus-values"></a>Значения capabilityStatus
 
 | Member | Описание  |
 |:---------------|:--------|
-| Включен | Доступно для нормального использования. |
-| Предупреждение | Доступно для нормального использования, но находится в льготном периоде. |
-| Suspended | Недоступны, но все данные, связанные с этой возможностью, должны быть сохранены. |
-| Deleted | Недоступные и любые данные, связанные с этой возможностью, могут быть удалены. |
+| Включено | Доступно для обычного использования. |
+| Предупреждение | Доступно для обычного использования, но находится в льготном периоде. |
+| Suspended | Недоступно, но все данные, связанные с возможностью, должны быть сохранены. |
+| Deleted | Недоступно, и все данные, связанные с этой возможностью, могут быть удалены. |
 | LockedOut | Недоступно для всех администраторов и пользователей, но все данные, связанные с этой возможностью, должны быть сохранены. |
 
 ## <a name="json-representation"></a>Представление JSON

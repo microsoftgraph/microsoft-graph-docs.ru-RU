@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса licenseUnitsDetail
 description: Свойство **prepaidUnits** объекта subscribedSku относится к типу **licenseUnitsDetail**.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: directory-management
-author: michaelcurnutt
-ms.openlocfilehash: 0f2f069cbbff191cefcdc8b735b2847b48a8f2ed
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+author: jconley76
+ms.openlocfilehash: ed149138aac5253ffbb2af4ef6447fffce3b9522
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030784"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549493"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>Тип ресурса licenseUnitsDetail
 
@@ -18,14 +18,14 @@ ms.locfileid: "53030784"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Свойство **prepaidUnits** объекта [subscribedSku](subscribedsku.md) относится к типу **licenseUnitsDetail**. Дополнительные сведения о состояниях прогрессии подписки см. в журнале [What if my subscription expires?](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires?view=o365-worldwide)
+Свойство **prepaidUnits** объекта [subscribedSku](subscribedsku.md) относится к типу **licenseUnitsDetail**. Дополнительные сведения о состоянии хода выполнения подписки см. в разделе "Что делать, [если срок действия подписки истекает?".](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires?view=o365-worldwide)
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:-------------|:-----|:----------|
-|enabled|Int32| Количество единиц, включенных для активной подписки службы SKU. |
-|suspended|Int32| Количество единиц, которые приостановлены из-за отмены подписки на службу SKU. Эти блоки не могут быть назначены, но могут быть повторно активированы перед удалением. |
-|warning|Int32| Количество единиц, которые находятся в состоянии предупреждения. По истечении срока действия подписки на службу SKU у клиента есть льготный период для продления подписки до ее отмены (перенесенной в **приостановленное** состояние). |
+|enabled|Int32| Количество единиц, включенных для активной подписки SKU службы. |
+|suspended|Int32| Количество единиц, приостановленных из-за отмены подписки на номер SKU службы. Единицы не могут быть назначены, но по-прежнему могут быть повторно активированы до их удаления. |
+|warning|Int32| Количество единиц, которые находятся в состоянии предупреждения. По истечении срока действия подписки на номер SKU службы у клиента есть льготный период для продления подписки до ее отмены (перемещены в **приостановленное** состояние). |
 
 ## <a name="json-representation"></a>Представление JSON
 

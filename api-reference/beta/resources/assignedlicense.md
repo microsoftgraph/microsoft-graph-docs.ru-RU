@@ -4,13 +4,13 @@ description: Представляет лицензию, назначенную �
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: users
-author: jpettere
-ms.openlocfilehash: 7401237b4d2738967a82ad40177df227332a58cc
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+author: jconley76
+ms.openlocfilehash: 0b1dc256016576f5a7759923c051a546e95a336a
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336041"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549598"
 ---
 # <a name="assignedlicense-resource-type"></a>Тип ресурса assignedLicense
 

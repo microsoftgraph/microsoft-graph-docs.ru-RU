@@ -1,16 +1,16 @@
 ---
 title: assignLicense
-description: Добавление или удаление лицензий для пользователя, чтобы включить или отключить использование облачных предложений Майкрософт. Например, организация может иметь подписку Microsoft 365 корпоративный E3 со 100 лицензиями, и этот запрос назначает одну из этих лицензий конкретному пользователю. Вы также можете включать и отключать отдельные планы, связанные с подпиской. Дополнительные новости о подписках и лицензиях см. в статье Technet.
+description: Добавьте или удалите лицензии для пользователя, чтобы включить или отключить использование облачных предложений Майкрософт. Например, у организации может быть подписка Microsoft 365 корпоративный E3 с 100 лицензиями, и этот запрос назначает одну из этих лицензий конкретному пользователю. Вы также можете включать и отключать отдельные планы, связанные с подпиской. Дополнительные сведения о подписках и лицензиях см. в этой статье Technet.
 ms.localizationpriority: medium
-author: jpettere
+author: jconley76
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 04f4e91c082f8edb0d78ad2ea767b6db80e7736c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5c84288339cc6f59e11dcf4ea7318d83b5621612
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63339982"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549514"
 ---
 # <a name="user-assignlicense"></a>user: assignLicense
 
@@ -18,7 +18,7 @@ ms.locfileid: "63339982"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление или удаление лицензий для пользователя, чтобы включить или отключить использование облачных предложений Майкрософт. Например, организация может иметь подписку Microsoft 365 корпоративный E3 со 100 лицензиями, и этот запрос назначает одну из этих лицензий конкретному пользователю. Вы также можете включать и отключать отдельные планы, связанные с подпиской. Дополнительные новости о подписках и лицензиях см. в статье [Technet](/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
+Добавьте или удалите лицензии для пользователя, чтобы включить или отключить использование облачных предложений Майкрософт. Например, у организации может быть подписка Microsoft 365 корпоративный E3 с 100 лицензиями, и этот запрос назначает одну из этих лицензий конкретному пользователю. Вы также можете включать и отключать отдельные планы, связанные с подпиской. Дополнительные сведения о подписках и лицензиях см. в этой [статье Technet](/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
 
 Чтобы получить подписки, доступные в каталоге, выполните [запрос GET subscribedSkus](subscribedsku-list.md). 
 
@@ -47,16 +47,16 @@ POST /users/{id | userPrincipalName}/assignLicense
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|addLicenses|Коллекция [assignedLicense](../resources/assignedlicense.md)|Коллекция объектов [assignedLicense](../resources/assignedlicense.md), указывающих добавляемые лицензии. Вы можете отключить servicePlans, связанные с лицензией, установив свойство **disabledPlans** на [объекте assignedLicense](../resources/assignedlicense.md) .|
-|removeLicenses|Коллекция объектов Guid|Коллекция skuIds, которые идентифицируют лицензии для удаления.|
+|addLicenses|Коллекция [assignedLicense](../resources/assignedlicense.md)|Коллекция объектов [assignedLicense](../resources/assignedlicense.md), указывающих добавляемые лицензии. Вы можете отключить servicePlans, связанные с лицензией, заданное свойство **disabledPlans** для [объекта assignedLicense](../resources/assignedlicense.md) .|
+|removeLicenses|Коллекция объектов Guid|Коллекция идентификаторов skuId, определяющий удаляемую лицензию.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает `200 OK` код отклика и [обновленный объект](../resources/user.md) пользователя в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и [обновленный объект](../resources/user.md) пользователя в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-assign-licenses-to-the-signed-in-user"></a>Пример 1. Назначение лицензий подписанного пользователя
+### <a name="example-1-assign-licenses-to-the-signed-in-user"></a>Пример 1. Назначение лицензий вошедаму пользователю
 
 #### <a name="request"></a>Запрос
 
@@ -142,7 +142,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-remove-licenses-from-the-signed-in-user"></a>Пример 2. Удаление лицензий у подписанного пользователя
+### <a name="example-2-remove-licenses-from-the-signed-in-user"></a>Пример 2. Удаление лицензий у вошедвшего пользователя
 
 #### <a name="request"></a>Запрос
 

@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 91ed173a26262fd6285df4d60518a80aded68b60
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: e219bdce8f3cc5c2ec83d8cecf7b9b779a8ed782
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65134472"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549297"
 ---
 # <a name="unifiedroleeligibilityscheduleinstance-resource-type"></a>Тип ресурса unifiedRoleEligibilityScheduleInstance
 
@@ -31,14 +31,14 @@ ms.locfileid: "65134472"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|appScopeId|String|Идентификатор области, относяшейся к приложению, если доступ к роли определяется приложением. Область действия роли определяет набор ресурсов, к которым участнику был предоставлен доступ. Области приложения — это области, которые определяются и распознаются только этим приложением. Используется `/` для областей приложений на уровне клиента. Используйте **directoryScopeId** , чтобы ограничить область определенными объектами каталога, например административными единицами. Наследуется [от unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md). `$filter` Поддерживает (`eq`и `ne`по `null` значениям).|
-|directoryScopeId|String|Идентификатор объекта каталога, представляющего область допустимости роли. Область действия роли определяет набор ресурсов, к которым участнику был предоставлен доступ. Области каталога — это общие области, хранящиеся в каталоге, которые распознаются несколькими приложениями. Используется `/` для области на уровне клиента. Используйте **appScopeId** , чтобы ограничить область только приложением. Наследуется [от unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md). `$filter` Поддерживает (`eq`и `ne`по `null` значениям).|
+|appScopeId|Строка|Идентификатор области, относяшейся к приложению, если доступ к роли определяется приложением. Область действия роли определяет набор ресурсов, к которым участнику был предоставлен доступ. Области приложения — это области, которые определяются и распознаются только этим приложением. Используется `/` для областей приложений на уровне клиента. Используйте **directoryScopeId** , чтобы ограничить область определенными объектами каталога, например административными единицами. Наследуется [от unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md). `$filter` Поддерживает (`eq`и `ne`по `null` значениям).|
+|directoryScopeId|Строка|Идентификатор объекта каталога, представляющего область допустимости роли. Область действия роли определяет набор ресурсов, к которым участнику был предоставлен доступ. Области каталога — это общие области, хранящиеся в каталоге, которые распознаются несколькими приложениями. Используется `/` для области на уровне клиента. Используйте **appScopeId** , чтобы ограничить область только приложением. Наследуется [от unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md). `$filter` Поддерживает (`eq`и `ne`по `null` значениям).|
 |endDateTime|DateTimeOffset|Дата окончания экземпляра расписания.|
 |id|String|Уникальный идентификатор объекта расписания. Наследуется от [сущности](../resources/entity.md).|
-|memberType|String|Способ наследования допустимости роли. Это может быть либо `Inherited`, `Direct`, либо `Group`. Это также может означать, может ли **объект unifiedRoleEligibilitySchedule** управляться вызывающим объектом. Поддерживает `$filter` (`eq`, `ne`).|
-|principalId|String|Идентификатор субъекта, который имеет право на роль. Наследуется [от unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md). Поддерживает `$filter` (`eq`, `ne`). |
+|memberType|Строка|Способ наследования допустимости роли. Это может быть либо `Inherited`, `Direct`, либо `Group`. Это также может означать, может ли **объект unifiedRoleEligibilitySchedule** управляться вызывающим объектом. Поддерживает `$filter` (`eq`, `ne`).|
+|principalId|Строка|Идентификатор субъекта, который имеет право на роль. Наследуется [от unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md). Поддерживает `$filter` (`eq`, `ne`). |
 |roleDefinitionId|String|Идентификатор объекта [unifiedRoleDefinition](unifiedroledefinition.md) , для которого имеет право субъект. Наследуется [от unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md). Поддерживает `$filter` (`eq`, `ne`).|
-|roleEligibilityScheduleId|String|Идентификатор объекта **unifiedRoleEligibilitySchedule** , из которого был создан этот экземпляр.|
+|roleEligibilityScheduleId|String|Идентификатор объекта **unifiedRoleEligibilitySchedule** , из которого был создан этот экземпляр. Поддерживает `$filter` (`eq`, `ne`).|
 |startDateTime|DateTimeOffset|При запуске этого экземпляра.|
 
 ## <a name="relationships"></a>Связи

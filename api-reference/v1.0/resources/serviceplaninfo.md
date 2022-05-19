@@ -2,15 +2,15 @@
 title: Тип ресурса servicePlanInfo
 description: Содержит сведения о плане обслуживания, связанном с подписанным SKU. Свойство **servicePlans** объекта subscribedSku представляет собой коллекцию объектов **servicePlanInfo**.
 ms.localizationpriority: medium
-author: jpettere
+author: jconley76
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: a7a08f90d05c9d166f8e171c6f24d536de0c95f3
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 54897e9a1d5d36baae67570388c603b2b7f8d6e8
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333143"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549535"
 ---
 # <a name="serviceplaninfo-resource-type"></a>Тип ресурса servicePlanInfo
 
@@ -24,8 +24,8 @@ ms.locfileid: "63333143"
 |:---------------|:--------|:----------|
 |servicePlanId|Guid|Уникальный идентификатор плана обслуживания.|
 |servicePlanName|String|Имя плана обслуживания.|
-|provisioningStatus|String|Состояние подготовки плана обслуживания. Возможные значения:<br/>`Success` - Служба полностью готова.<br/>`Disabled` - Служба отключена.<br/>`ErrorStatus` - План службы не был предусмотрен и находится в состоянии ошибки.<br/>`PendingInput` - служба еще не предусмотрена; ожидание подтверждения службы.<br/>`PendingActivation` - Служба является предварительной, но требует явной активации администратором (например, Intune_O365 плана службы)<br/>`PendingProvisioning` - Корпорация Майкрософт добавила новую службу в SKU продукта, и она еще не была активирована в клиенте.|
-|appliesTo|String|Объект, на который может быть назначен план службы. Возможные значения:<br/>`User` - план службы может быть назначен отдельным пользователям.<br/>`Company` - план службы может быть назначен для всего клиента.|
+|provisioningStatus|String|Состояние подготовки плана обслуживания. Возможные значения:<br/>`Success` — служба полностью подготовлена.<br/>`Disabled` — служба отключена.<br/>`ErrorStatus` — план обслуживания не подготовлен и находится в состоянии ошибки.<br/>`PendingInput` — служба еще не подготовлена; ожидает подтверждения службы.<br/>`PendingActivation` — служба подготовлена, но требует явной активации администратором (например, Intune_O365 службы)<br/>`PendingProvisioning` — Корпорация Майкрософт добавила новую службу в номер SKU продукта и еще не была активирована в клиенте.|
+|appliesTo|String|Объект, который может быть назначен плану обслуживания. Возможные значения:<br/>`User` — план обслуживания можно назначить отдельным пользователям.<br/>`Company` — план службы можно назначить всему клиенту.|
 
 ## <a name="json-representation"></a>Представление JSON
 

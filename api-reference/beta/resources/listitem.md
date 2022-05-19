@@ -5,12 +5,12 @@ title: Ресурс listItem
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: bfda041c473da6d5d98c7c6b076ba9be276cd486
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: e7e0c01ccbdbbf532b9faecab32bcc3e0d7d4ba8
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060677"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549486"
 ---
 # <a name="listitem-resource"></a>Ресурс listItem
 
@@ -40,9 +40,10 @@ ms.locfileid: "65060677"
 | [Обновление][]                     | PATCH /items/{item-id}                       |
 | [Обновление значений столбцов][Обновление] | PATCH /items/{item-id}/fields                |
 | [createLink][CreateLink]       | POST /items/{itemId}/createLink              |
-|[Перечисление documentSetVersions](../api/listitem-list-documentsetversions.md)| GET /items/{item-id}/documentSetVersions |
-|[Создание documentSetVersion](../api/listitem-post-documentsetversions.md)| POST /items/{item-id}/documentSetVersions |
-|[Восстановление documentSetVersion](../api/documentsetversion-restore.md)| POST /items/{item-id}/documentSetVersions/{documentSetVersion-id}/restore |
+| [Перечисление documentSetVersions](../api/listitem-list-documentsetversions.md)| GET /items/{item-id}/documentSetVersions |
+| [Создание documentSetVersion](../api/listitem-post-documentsetversions.md)| POST /items/{item-id}/documentSetVersions |
+| [Восстановление documentSetVersion](../api/documentsetversion-restore.md)| POST /items/{item-id}/documentSetVersions/{documentSetVersion-id}/restore |
+| [Получение дельты][item-changes]    | GET /items/{item-id}/delta
 
 [Получение]: ../api/listitem-get.md
 [Получение аналитики]: ../api/itemanalytics-get.md
@@ -51,6 +52,7 @@ ms.locfileid: "65060677"
 [Удаление]: ../api/listitem-delete.md
 [Обновление]: ../api/listitem-update.md
 [CreateLink]: ../api/listitem-createlink.md
+[item-changes]: ../api/listitem-delta.md
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
