@@ -5,14 +5,14 @@ author: andrewku0409
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: c63838a4e63d4126a5cfb270cd01618c340eca7b
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: a5f7d28d9969ada4e91b894a2f721d8eca4d4ee6
+ms.sourcegitcommit: 4d8161fb286a3529bd6565856450d2fecb6a8c1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211978"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65603081"
 ---
-# <a name="list-cloudpcs-for-user"></a>Перечисление облачных компьютеров для пользователя
+# <a name="list-cloudpcs"></a>Перечисление облачных ПК
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -52,7 +52,7 @@ GET /me/cloudPCs
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [cloudPC](../resources/cloudpc.md) в тексте отклика.
 

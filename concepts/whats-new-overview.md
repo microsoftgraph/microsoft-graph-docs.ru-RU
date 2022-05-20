@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 75b01f4903153249131cc69e336bb2d12e26095d
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: b3584d205e5d511d77e6283b5ca0fa8cb9595084
+ms.sourcegitcommit: 4d8161fb286a3529bd6565856450d2fecb6a8c1a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65316163"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65603074"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -16,6 +16,16 @@ ms.locfileid: "65316163"
 
 > [!IMPORTANT]
 > Функции в состоянии _предварительной версии_, в том числе API и инструменты, могут изменяться без предварительного уведомления, а некоторые из них, возможно, никогда не достигнут общедоступного состояния (GA). Не используйте функции, доступные в виде предварительных версий, в рабочих приложениях.
+
+
+## <a name="april-2022-new-and-generally-available"></a>Апрель 2022 г.: новое и общедоступное
+### <a name="search--index"></a>Поиск | Индекс
+- Используйте разрешения приложения `ExternalConnection.Read.All` и `ExternalConnection.ReadWrite.All` для чтения и записи всех внешних подключений без присутствия вошедшего в систему пользователя.
+- Используйте разрешение приложения `ExternalItem.Read.All` для чтения всех внешних элементов без присутствия вошедшего в систему пользователя.
+- Используйте делегированную авторизацию `ExternalConnection.ReadWrite.OwnedBy` для чтения и записи внешних подключений от имени вошедшего в систему пользователя, которому разрешено ваше приложение.
+- Используйте делегирование разрешения `ExternalConnection.Read.All` или `ExternalConnection.ReadWrite.All` для чтения или записи всех внешних подключений от имени вошедшего пользователя.
+- Используйте делегирование разрешений `ExternalItem.ReadWrite.OwnedBy` для чтения и записи внешних элементов от имени вошедшего в систему пользователя, которому разрешено ваше приложение.
+- Используйте делегирование разрешения `ExternalItem.Read.All` или `ExternalItem.ReadWrite.All` для чтения или записи всех внешних элементов от имени вошедшего пользователя.
 
 
 ## <a name="april-2022-new-in-preview-only"></a>Апрель 2022 г.: новые возможности только в предварительной версии
@@ -26,7 +36,9 @@ ms.locfileid: "65316163"
 - Использование разрешения приложений `BookingsAppointment.ReadWrite.All` для операций чтения и записи ресурсов клиентов и встреч.
 
 ### <a name="device-and-app-management--cloud-pc"></a>Управление устройствами и приложениями | Облачный компьютер
-Указание [параметров Windows](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true) в составе [ параметров организации облачного компьютера](/graph/api/resources/cloudPcOrganizationSettings?view=graph-rest-beta&preserve-view=true) для клиента.
+- Указание [параметров Windows](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true) в составе [ параметров организации облачного компьютера](/graph/api/resources/cloudPcOrganizationSettings?view=graph-rest-beta&preserve-view=true) для клиента.
+- [Получите](/graph/api/user-list-cloudpcs?view=graph-rest-beta&preserve-view=true) облачные компьютерные устройства, связанные с вошедшим пользователем.
+- [Задать сведения для запуска облачного компьютерного устройства](/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta&preserve-view=true) для вошедшего пользователя.
 
 ### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
 Настройка [параметров федерации](/graph/api/resources/internalDomainFederation?view=graph-rest-beta&preserve-view=true) федеративных доменов в Azure Active Directory.

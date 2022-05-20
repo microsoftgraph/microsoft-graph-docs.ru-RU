@@ -1,24 +1,24 @@
 ---
-title: CloudPCs списка
+title: Перечисление облачных ПК
 description: Список свойств и связей объектов cloudPC.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: cc3b041d0cac4e65ba7ef563a9fd57d3df7c57ef
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: bdef923ed9c92ff34f93d588300c2d3180b42acf
+ms.sourcegitcommit: 4d8161fb286a3529bd6565856450d2fecb6a8c1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64586897"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65603060"
 ---
-# <a name="list-cloudpcs"></a>CloudPCs списка
+# <a name="list-cloudpcs"></a>Перечисление облачных ПК
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список свойств и связей объектов [cloudPC](../resources/cloudpc.md) .
+Вывод списка [устройств CloudPC](../resources/cloudpc.md) в клиенте.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "64586897"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select`и `$filter` параметры `$count` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select`запроса `$filter` `$count` OData и позволяет настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -57,7 +57,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию объектов [cloudPC](../resources/cloudpc.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [cloudPC](../resources/cloudpc.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
