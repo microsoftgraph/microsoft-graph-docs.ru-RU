@@ -1,23 +1,23 @@
 ---
 title: Создание закладки
-description: Создайте новый объект закладки.
+description: Создайте объект закладки.
 author: jakeost-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: f935c97a966755a3cdb519cf5d6e1ff6bf76dd96
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 84283c08a8e80427ff34a310cbcae799bd26ecef
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63339119"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602751"
 ---
 # <a name="create-bookmark"></a>Создание закладки
 Пространство имен: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект закладки](../resources/search-bookmark.md) .
+Создайте объект [закладки](../resources/search-bookmark.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "63339119"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)| SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается. |
-|Для приложений| SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All |
+|Приложение| SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,31 +44,31 @@ POST /search/bookmarks
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса указать JSON-представление объекта [закладки](../resources/search-bookmark.md) .
+В тексте запроса добавьте представление объекта закладки в формате [JSON.](../resources/search-bookmark.md)
 
 В следующей таблице показаны свойства, доступные при создании [закладки](../resources/search-bookmark.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя закладки, отображаемая в результатах поиска. Наследуется [от searchAnswer](../resources/search-searchAnswer.md).|
-|description|String|Описание закладки, показанное на странице результатов поиска. Наследуется [от searchAnswer](../resources/search-searchAnswer.md).|
-|webUrl|String|ССЫЛКА URL-адреса закладок. Когда пользователи щелкают эту закладки в результатах поиска, они перейдут на этот URL-адрес. Наследуется [от searchAnswer](../resources/search-searchAnswer.md).|
-|categories|Коллекция String|Категории, обычно используемые для описания этой закладки. Например, ИТ и HR.|
-|availabilityStartDateTime|DateTimeOffset|Время начала появления закладки в результате поиска. Установите, как `null` всегда доступно.|
-|availabilityEndDateTime|DateTimeOffset|Время, когда закладки перестанут отображаться в результате поиска. Установите, как `null` всегда доступно.|
-|LanguageTags|Коллекция объектов string|Список стран или регионов, которые могут просмотреть эту закладку.|
-|платформы|коллекция microsoft.graph.devicePlatformType|Список устройств и операционных систем, способных просматривать эту закладку. Возможные значения: `unknown`, `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `androidASOP`.|
-|targetedVariations|[коллекция microsoft.graph.search.answerVariant](../resources/search-answerVariant.md)|Варианты закладки для разных стран или устройств. Используйте, когда необходимо показывать пользователям различные контенты на основе их устройства, страны или региона или обоих. Параметры даты и группы будут применяться для всех вариантов.|
-|powerAppIds|Коллекция объектов string|Список Power Apps, связанных с этой закладкой. Если пользователи добавляют существующие Power Apps в закладки, они могут выполнять задачи, например вводить время отпуска или сообщать о расходах на странице результатов поиска.|
+|displayName|String|Имя закладки, отображаемое в результатах поиска. Наследуется от [searchAnswer](../resources/search-searchAnswer.md).|
+|description|Строка|Описание закладки, отображаемое на странице результатов поиска. Наследуется от [searchAnswer](../resources/search-searchAnswer.md).|
+|webUrl|String|Ссылка на URL-адрес закладки. Когда пользователи щелкают эту закладку в результатах поиска, они будут переходить по этому URL-адресу. Наследуется от [searchAnswer](../resources/search-searchAnswer.md).|
+|categories|Коллекция String|Категории, часто используемые для описания этой закладки. Например, ИТ-отдел и отдел кадров.|
+|availabilityStartDateTime|DateTimeOffset|Метка времени начала отображения закладки в качестве результата поиска. Задайте значение `null` "Всегда доступно".|
+|availabilityEndDateTime|DateTimeOffset|Метка времени остановки отображения закладки в качестве результата поиска. Задайте значение `null` "Всегда доступно".|
+|languageTags|Коллекция строк|Список стран или регионов, в которые можно просмотреть эту закладку.|
+|Платформ|Коллекция microsoft.graph.devicePlatformType|Список устройств и операционных систем, которые могут просматривать эту закладку. Возможные значения: `unknown`, `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `androidASOP`.|
+|targetedVariations|[Коллекция microsoft.graph.search.answerVariant](../resources/search-answerVariant.md)|Варианты закладок для разных стран или устройств. Используйте, если необходимо показывать пользователям разные материалы в зависимости от их устройства, страны или региона или и того, и другого. Параметры даты и группы будут применяться ко всем вариантам.|
+|powerAppIds|Коллекция String|Список Power Apps, связанных с этой закладкой. Если пользователи добавляют существующие Power Apps в закладку, они могут выполнять такие задачи, как ввод отпуска или отчет о расходах на странице результатов поиска.|
 |keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|Ключевые слова, которые запускают эту закладку, отображаются в результатах поиска.|
-|state|microsoft.graph.search.answerState|Состояние закладки. Возможные значения: `published`, , `draft`, или `excluded``unknownFutureValue`.|
+|state|microsoft.graph.search.answerState|Состояние закладки. Возможные значения: `published`, `draft`, или `excluded``unknownFutureValue`.|
 |groupIds|Коллекция String|Список групп безопасности, которые могут просматривать эту закладку.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `201 Created` ответа с кодом созданной закладки.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика с идентификатором созданной закладки.
 
 ## <a name="examples"></a>Примеры
 
@@ -97,13 +97,11 @@ Content-Type: application/json
   "platforms": ["windows"],
   "targetedVariations": [
     {
-      "languageTag": "es-ES",
+      "languageTag": "es-es",
       "displayName": "Sitio de instalación Contoso",
       "description": "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
     }
   ],
-  "groupIds": ["groupId"],
-  "powerAppIds": ["powerAppId"],
   "state": "published"
 }
 ```

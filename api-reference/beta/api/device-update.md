@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7e5732fc3f634123401780549e4d24d12f819d5c
-ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
+ms.openlocfilehash: d03c5d1a1d58f1347bb485bd5661357e288b7785
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65549591"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602697"
 ---
 # <a name="update-device"></a>Обновление устройства
 
@@ -27,7 +27,9 @@ ms.locfileid: "65549591"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Device.ReadWrite.All, Directory.ReadWrite.All |
+|Приложение | Device.ReadWrite.All, Directory.ReadWrite.All |
+
+Вызывающему пользователю также должна быть одна из следующих [ролей](/azure/active-directory/roles/permissions-reference) *Azure AD:* глобальный администратор, *Intune администратор.* Вызывающий пользователь с ролью администратора облачных устройств может только включить или отключить устройства с помощью этого API, а пользователь  с ролью администратора Windows 365 может обновлять только основные свойства устройства.
 
 ## <a name="http-request"></a>HTTP-запрос
 

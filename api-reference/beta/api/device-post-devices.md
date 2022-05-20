@@ -1,16 +1,16 @@
 ---
 title: Создание устройства
-description: Создание нового устройства.
+description: Создайте новое устройство.
 author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 18fb7ea822974d12037a7c140f11354a8cefb73c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a5edf3cc84b8e922376bdda54a38d2bf9e768a70
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103652"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602730"
 ---
 # <a name="create-device"></a>Создание устройства
 
@@ -18,7 +18,7 @@ ms.locfileid: "62103652"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового устройства.
+Создайте новое устройство.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -28,6 +28,8 @@ ms.locfileid: "62103652"
 |Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
+
+Вызывающему пользователю также должна быть одна из следующих [ролей Azure AD](/azure/active-directory/roles/permissions-reference)*:* глобальный администратор, *Intune администратор* или *Windows 365 администратор.*
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,10 +42,10 @@ POST /devices
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.
 
-Так как **ресурс устройства** поддерживает [расширения,](/graph/extensibility-overview)можно использовать операцию и добавлять настраиваемые свойства с собственными данными в экземпляр устройства `POST` при его создании.
+Так как **ресурс устройства** поддерживает [расширения,](/graph/extensibility-overview)`POST` вы можете использовать операцию и добавлять настраиваемые свойства с собственными данными в экземпляр устройства при ее создании.
 
 ## <a name="response"></a>Отклик
 

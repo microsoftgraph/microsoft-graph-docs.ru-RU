@@ -1,23 +1,23 @@
 ---
 title: Получение federatedIdentityCredential
-description: Ознакомьтесь с свойствами и отношениями объекта federatedIdentityCredential.
-author: kjyam98
+description: Чтение свойств и связей объекта federatedIdentityCredential.
+author: shahzad-khalid
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4950aeaae15578ae14b5dfbfd67c42b4408c6ad4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5df46a8578c0aa39ed5157c346a196a27837bc6c
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113566"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602800"
 ---
 # <a name="get-federatedidentitycredential"></a>Получение federatedIdentityCredential
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями объекта [federatedIdentityCredential.](../resources/federatedidentitycredential.md)
+Чтение свойств и связей объекта [federatedIdentityCredential](../resources/federatedidentitycredential.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "62113566"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) |  Application.ReadWrite.All |
-|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -49,12 +49,12 @@ GET /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentit
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект federatedIdentityCredential](../resources/federatedidentitycredential.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [federatedIdentityCredential](../resources/federatedidentitycredential.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/applications/acd7c908-1c4d-4d48-93ee-ff3834
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

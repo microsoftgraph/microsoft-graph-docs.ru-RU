@@ -4,12 +4,12 @@ description: Запросы изменений позволяют приложе
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 714fac5350f7df2222ca563b9660994431a3b382
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 3cb2ae70d84b8eeb2087bebfeae60a95b1e84184
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398575"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549528"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
@@ -121,6 +121,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 | Образовательная школа                                              | Функция [delta](/graph/api/educationschool-delta) ресурса [educationSchool](/graph/api/resources/educationschool)                                   |
 | События в представлении (диапазоне дат) основного календаря | Функция [delta](/graph/api/event-delta) ресурса [event](/graph/api/resources/event)                         |
 | Группы                                                         | Функция [delta](/graph/api/group-delta) ресурса [group](/graph/api/resources/group)                         |
+| Элементы списка\*                                                   | Функция [delta](/graph/api/listitem-delta) ресурса [listItem](/graph/api/resources/listitem)             |
 | Папки почты                                                   | Функция [delta](/graph/api/mailfolder-delta) ресурса [mailFolder](/graph/api/resources/mailfolder)          |
 | Сообщения в папке                                           | Функция [delta](/graph/api/message-delta) ресурса [message](/graph/api/resources/message)                   |
 | Контакты организации                                        | функция[delta](/graph/api/orgcontact-delta) ресурса [orgContact](/graph/api/resources/orgcontact)          |
@@ -134,9 +135,9 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 | Пользователи                                                          | Функция [delta](/graph/api/user-delta) ресурса [user](/graph/api/resources/user)                            |
 
 
-> \* Небольшие различия в использовании ресурсов OneDrive и других поддерживаемых ресурсов касаются синтаксиса. Разностный запрос для дисков будет обновлен в соответствии с запросами для других типов ресурсов. Дополнительные сведения о текущем синтаксисе см. в статье [Отслеживание изменений на диске](/graph/api/driveitem-delta).
+> \* Небольшие различия в использовании ресурсов OneDrive и SharePoint и других поддерживаемых ресурсов касаются синтаксиса. Разностный запрос для дисков и списков будет обновлен в соответствии с запросами для других типов ресурсов. Дополнительные сведения о текущем синтаксисе см. в [driveItem: delta](/graph/api/driveitem-delta) и [listItem: delta](/graph/api/listitem-delta).
 
-> \*\* Шаблон использования ресурсов Планировщика незначительно отличается от шаблонов использования других поддерживаемых ресурсов. Дополнительные сведения см. в статье [Отслеживание изменений для Планировщика](/graph/api/planneruser-list-delta).
+> \*\* Шаблон использования ресурсов Планировщика незначительно отличается от шаблонов использования других поддерживаемых ресурсов. Дополнительные сведения см. в [planner: delta](/graph/api/planneruser-list-delta).
 
 ## <a name="limitations"></a>Ограничения
 

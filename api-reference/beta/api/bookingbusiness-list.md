@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 1308d0a8b01eeb2d073fcb69c0a71addcdf70b82
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: 312ad8d2337ec0c7273c192721389d0465fd3203
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755518"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602772"
 ---
 # <a name="list-bookingbusinesses"></a>Перечисление bookingBusinesses
 
@@ -30,9 +30,9 @@ ms.locfileid: "64755518"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) |  Bookings. Read.All, BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
+|Делегированные (рабочая или учебная учетная запись) |  Bookings. Read.All, BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Для приложений | Не поддерживается.  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +53,7 @@ GET /bookingBusinesses
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [bookingBusiness](../resources/bookingbusiness.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request-1"></a>Запрос 1
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses
 ---
 
 ##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -158,8 +158,8 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Adventure
 
 ---
 
-##### <a name="response-2"></a>Ответ 2
-Ниже приведен пример ответа.
+##### <a name="response-2"></a>Отклик 2
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,23 +1,23 @@
 ---
-title: Создание qna
-description: Создание нового объекта qna.
+title: Создание QNA
+description: Создайте новый объект qna.
 author: jakeost-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b0e0c563b76dfd74bf095fc8ea005d78cbbbb1d9
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: d3b2266238a74b052aba433c75e5b91d08669386
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63339164"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602723"
 ---
-# <a name="create-qna"></a>Создание qna
+# <a name="create-qna"></a>Создание QNA
 Пространство имен: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [объекта qna](../resources/search-qna.md) .
+Создайте новый [объект qna](../resources/search-qna.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "63339164"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)| SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается. |
-|Для приложений| SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All |
+|Приложение| SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,29 +45,29 @@ POST /search/qnas
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [qna](../resources/search-qna.md) .
+В тексте запроса добавьте представление объекта [Qna](../resources/search-qna.md) в формате JSON.
 
-В следующей таблице показаны свойства, доступные при создании [qna](../resources/search-qna.md).
+В следующей таблице показаны свойства, доступные при создании [QNA](../resources/search-qna.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Вопрос, отображаемый в результатах поиска. Наследуется [от searchAnswer](../resources/search-searchAnswer.md).|
-|description|String|Ответ, отображаемый в результатах поиска. Наследуется [от searchAnswer](../resources/search-searchAnswer.md).|
-|webUrl|String|URL-ссылка Qna. Когда пользователи щелкают этот qna в результатах поиска, они перейдут на этот URL-адрес. Наследуется [от searchAnswer](../resources/search-searchAnswer.md).|
-|availabilityStartDateTime|DateTimeOffset|Timestamp того, когда qna начнет отображаться в качестве результата поиска. Установите, как `null` всегда доступно.|
-|availabilityEndDateTime|DateTimeOffset|Timestamp того, когда qna остановится, чтобы появиться в качестве результата поиска. Установите, как `null` всегда доступно.|
-|LanguageTags|Коллекция строк|Список стран или регионов, которые могут просматривать этот qna.|
-|платформы|коллекция microsoft.graph.devicePlatformType|Список устройств и операционных систем, которые могут просматривать этот qna. Возможные значения: `unknown`, `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `androidASOP`.|
-|targetedVariations|[коллекция microsoft.graph.search.answerVariant](../resources/search-answerVariant.md)|Варианты QNA для разных стран или устройств. Используйте, когда необходимо показывать пользователям различные контенты на основе их устройства, страны или региона или обоих. Параметры даты и группы будут применяться для всех вариантов.|
-|keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|Ключевые слова, которые запускают этот qna, отображаются в результатах поиска.|
-|state|microsoft.graph.search.answerState|Состояние qna. Возможные значения: `published`, , `draft`, или `excluded``unknownFutureValue`.|
+|displayName|String|Вопрос, отображаемый в результатах поиска. Наследуется от [searchAnswer](../resources/search-searchAnswer.md).|
+|description|Строка|Ответ, отображаемый в результатах поиска. Наследуется от [searchAnswer](../resources/search-searchAnswer.md).|
+|webUrl|String|Ссылка на URL-адрес Qna. Когда пользователи щелкают этот QNA в результатах поиска, они будут переходить по этому URL-адресу. Наследуется от [searchAnswer](../resources/search-searchAnswer.md).|
+|availabilityStartDateTime|DateTimeOffset|Метка времени, когда qna начнет отображаться в качестве результата поиска. Задайте значение `null` "Всегда доступно".|
+|availabilityEndDateTime|DateTimeOffset|Метка времени остановки qna в качестве результата поиска. Задайте значение `null` "Всегда доступно".|
+|languageTags|Коллекция строк|Список стран или регионов, которые могут просматривать этот qna.|
+|Платформ|Коллекция microsoft.graph.devicePlatformType|Список устройств и операционных систем, которые могут просматривать этот QNA. Возможные значения: `unknown`, `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `androidASOP`.|
+|targetedVariations|[Коллекция microsoft.graph.search.answerVariant](../resources/search-answerVariant.md)|Варианты QNA для разных стран или устройств. Используйте, если необходимо показывать пользователям разные материалы в зависимости от их устройства, страны или региона или и того, и другого. Параметры даты и группы будут применяться ко всем вариантам.|
+|keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|Ключевые слова, которые инициирует отображение этого QNA в результатах поиска.|
+|state|microsoft.graph.search.answerState|Состояние qna. Возможные значения: `published`, `draft`, или `excluded``unknownFutureValue`.|
 |groupIds|Коллекция String|Список групп безопасности, которые могут просматривать этот qna.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `201 Created` ответа с кодом созданного вопроса и ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` ответа с идентификатором созданного вопроса и ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -93,9 +93,8 @@ Content-Type: application/json
   },
   "availabilityStartDateTime": "2020-09-21T20:01:37Z",
   "availabilityEndDateTime": "2021-12-31T20:01:37Z",
-  "languageTags": ["en-US"],
+  "languageTags": ["en-us"],
   "platforms": ["ios"],
-  "groupIds": ["groupId"],
   "state": "published"
 }
 ```

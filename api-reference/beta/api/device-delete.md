@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5b0cd39783c97f93bbf3c52ea3d2377d4e0c56da
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 317d482ab6ccce74d501ed09ffa186a352d843dc
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100319"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602716"
 ---
 # <a name="delete-device"></a>Удаление устройства
 
@@ -30,9 +30,11 @@ ms.locfileid: "62100319"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
+Вызывающему пользователю также должна быть одна из следующих ролей [Azure AD:](/azure/active-directory/roles/permissions-reference) глобальный *администратор,* *администратор Intune* администратор, *администратор Windows 365 или* администратор *облачных устройств*.
+
 ## <a name="http-request"></a>HTTP-запрос
 
-В `{id}` запросе имеется значение свойства **id** устройства, а не **свойства deviceId.**
+В `{id}` запросе содержится значение свойства **идентификатора** устройства, а не **свойства deviceId** .
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /devices/{id}
@@ -45,7 +47,7 @@ DELETE /devices/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

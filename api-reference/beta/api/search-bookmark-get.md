@@ -1,23 +1,23 @@
 ---
-title: Получить закладки
-description: Ознакомьтесь с свойствами и отношениями объекта закладки.
+title: Получение закладки
+description: Чтение свойств и связей объекта закладки.
 author: jakeost-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 274cf589a20babbb584e1edde1159e803a54157b
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 2b02bfc05e0fc1e993942c7002287a62edc19947
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63339317"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602793"
 ---
-# <a name="get-bookmark"></a>Получить закладки
+# <a name="get-bookmark"></a>Получение закладки
 Пространство имен: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями объекта [закладки](../resources/search-bookmark.md) .
+Чтение свойств и связей объекта [закладки](../resources/search-bookmark.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "63339317"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)| SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается. |
-|Для приложений| SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All |
+|Приложение| SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,7 +39,7 @@ GET /search/bookmarks/{bookmarksId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `select`параметры запроса , `expand`, `filter`, `orderBy`, и `maxTop``count` [OData](/graph/query-parameters), чтобы помочь настроить ответ.
+Этот метод поддерживает параметры `select`запроса , `expand`, `filter`, `orderBy`, `maxTop`и `count` [OData](/graph/query-parameters) , чтобы помочь настроить ответ.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -51,7 +51,7 @@ GET /search/bookmarks/{bookmarksId}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика [и объект](../resources/search-bookmark.md) закладки в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [закладки](../resources/search-bookmark.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -126,7 +126,7 @@ Content-Type: application/json
   "categories": ["HR"],
   "availabilityStartDateTime": "2020-09-21T20:01:37Z",
   "availabilityEndDateTime": "2020-11-21T20:01:37Z",
-  "languageTags": ["en-US"],
+  "languageTags": ["en-us"],
   "platforms": ["ios"],
   "groupIds": ["groupId"],
   "targetedVariations": null,
