@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: b3584d205e5d511d77e6283b5ca0fa8cb9595084
-ms.sourcegitcommit: 4d8161fb286a3529bd6565856450d2fecb6a8c1a
+ms.openlocfilehash: f4ea5833922cbc36465bba32a7f4ade9b18c11d8
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65603074"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629008"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -18,7 +18,41 @@ ms.locfileid: "65603074"
 > Функции в состоянии _предварительной версии_, в том числе API и инструменты, могут изменяться без предварительного уведомления, а некоторые из них, возможно, никогда не достигнут общедоступного состояния (GA). Не используйте функции, доступные в виде предварительных версий, в рабочих приложениях.
 
 
+## <a name="may-2022-new-and-generally-available"></a>Май 2022 г.: новые и общедоступные возможности
+
+### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
+[Приложение](/graph/api/resources/application), зарегистрированное в Azure Active Directory (Azure AD), может указывать контактные данные приложения или службы из базы данных управления службой или ресурсами.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
+Разрешите клиенту Azure Active Directory (Azure AD) настроить [федерацию с другой организацией, поставщик удостоверений (IdP) которой поддерживает протокол SAML или WS-Fed](/graph/api/resources/samlOrWsFedExternalDomainFederation). Это позволит клиенту Azure AD предоставить доступ к своим ресурсам гостевым пользователям.
+
+### <a name="sites-and-lists"></a>Сайты и списки
+- Получите коллекцию совместимых ресурсов [типа контента](/graph/api/resources/contentType) из концентратора типов контента, совместимых с помощью действия [getCompatibleHubContentTypes](/graph/api/contenttype-getcompatiblehubcontenttypes). 
+- Добавьте или синхронизируйте тип контента из концентратора типов контента на [сайт](/graph/api/resources/site) или в [список](/graph/api/resources/list) с помощью действия [addCopyFromContentTypeHub](/graph/api/contenttype-addcopyfromcontenttypehub). Это делает тип контента или его обновление доступными для определенного сайта или списка, где это необходимо. Это улучшение по сравнению с устаревшей инфраструктурой синхронизации, которая распространяет тип контента на все сайты в организации, сокращая время ожидания распространения публикации. 
+- Получение одной или нескольких [многофункциональных длительных операций](/graph/api/resources/richlongrunningoperation), выполняемых на сайте или в списке, что может происходить при синхронном добавлении типа контента.
+
+### <a name="teamwork"></a>Teamwork
+[Получение сообщений в канале](/graph/api/channel-list-messages) и [включение всех ответов](/graph/api/channel-list-messages#example-3-request-with-top-and-expand-query-options-on-replies) в сообщение.
+
+
+## <a name="may-2022-new-in-preview-only"></a>Май 2022 г.: новые возможности только в предварительной версии
+
+### <a name="application"></a>Приложение
+При настройке прокси приложения Azure AD для локальных приложений с целью безопасного удаленного доступа используйте свойство **isStateSessionEnabled** в ресурсе [onPremisesPublishing](/graph/api/resources/onPremisesPublishing?view=graph-rest-beta&preserve-view=true), чтобы указать, следует ли проверять параметр состояния, если приложение использует поток предоставления кода авторизации OAuth 2.0. Установка этого свойства помогает администраторам защитить приложение от подделки межсайтовых запросов (CSRF).
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
+В области [роли пользователя по умолчанию](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta&preserve-view=true) [политики авторизации](/graph/api/resources/authorizationPolicy?view=graph-rest-beta&preserve-view=true) укажите, может ли зарегистрированный владелец устройства считывать собственные ключи восстановления BitLocker.
+
+### <a name="search--index"></a>Поиск | Индекс
+[Получение](/graph/api/externalconnectors-connectionquota-get?view=graph-rest-beta&preserve-view=true) [сведений о квоте](/graph/api/resources/externalconnectors-connectionQuota?view=graph-rest-beta&preserve-view=true) для [подключения](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true). Эти сведения включают количество элементов, которые можно принять в соединение, учитывая элементы, остающиеся в подключении, и остающуюся квоту на уровне клиента для всех подключений.
+
+
+
 ## <a name="april-2022-new-and-generally-available"></a>Апрель 2022 г.: новое и общедоступное
+
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+Использование службы [Privileged Identity Management (PIM)](/graph/api/resources/privilegedidentitymanagementv3-overview) в рабочих приложениях, чтобы контролировать и отслеживать доступ к важным ресурсам в пределах организации, а также управлять им. Доступ предоставляется через привилегированные роли и управление доступом на основе ролей (RBAC). Он может предоставляться пользователям, группам или субъектам-службам. Ресурсы могут находиться в Azure AD, Azure и других облачных службах Майкрософт, таких как Microsoft 365 или Microsoft Intune.
+
 ### <a name="search--index"></a>Поиск | Индекс
 - Используйте разрешения приложения `ExternalConnection.Read.All` и `ExternalConnection.ReadWrite.All` для чтения и записи всех внешних подключений без присутствия вошедшего в систему пользователя.
 - Используйте разрешение приложения `ExternalItem.Read.All` для чтения всех внешних элементов без присутствия вошедшего в систему пользователя.
@@ -43,6 +77,9 @@ ms.locfileid: "65603074"
 ### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
 Настройка [параметров федерации](/graph/api/resources/internalDomainFederation?view=graph-rest-beta&preserve-view=true) федеративных доменов в Azure Active Directory.
 
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+[Получение назначений](/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-beta&preserve-view=true), для которых у соответствующего пользователя есть несовместимые пакеты доступа. 
+
 ### <a name="reports--identity-and-access-reports"></a>Отчеты | Отчеты об удостоверениях и доступе
 Подтверждение того, что событие является [высокорискованным и скомпрометированным](/graph/api/signin-confirmCompromised?view=graph-rest-beta&preserve-view=true) или [безопасным](/graph/api/signin-confirmSafe?view=graph-rest-beta&preserve-view=true) путем его маркировки в соответствующих журналах входа Azure Active Directory.
 
@@ -58,72 +95,6 @@ ms.locfileid: "65603074"
 - [Удаление канала, к которому предоставлен общий доступ в команде](/graph/api/team-delete-incomingchannel?view=graph-rest-beta&preserve-view=true).
 - [Перечисление команд, которым предоставлен общий доступ к указанному каналу](/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-beta&preserve-view=true).
 - [Отмена общего доступа к каналу для команды](/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-beta&preserve-view=true).
-
-
-## <a name="march-2022-new-and-generally-available"></a>Март 2022 г.: новые и общедоступные возможности
-
-### <a name="files"></a>Файлы
-Использование ресурса [bundle](/graph/api/resources/bundle) для обмена несколькими файлами одновременно, аналогично другим ресурсам [driveItem](/graph/api/resources/driveitem). Вы можете применять действия CRUD к пакету и [добавить](/graph/api/bundle-additem) элемент в пакет или [удалить](/graph/api/bundle-removeitem) его из пакета.
-
-### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
-Использование [разрешения для конкретного ресурса](/graph/api/resources/resourcespecificpermission), чтобы авторизовать прямой доступ приложения Teams к данным определенного экземпляра чата или команды. Например, разрешение для конкретного ресурса ChannelMessage.Read.Group позволяет приложению Teams читать сообщения канала одной команды.
-
-### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
-- [Получение](/graph/api/approval-get) решений об [утверждении](/graph/api/resources/approval), связанных с [запросом на назначение пакета доступа](/graph/api/resources/accesspackageassignmentrequest).
-- В рамках [управления правами Azure Active Directory (Azure AD)](/graph/api/resources/entitlementmanagement-overview) используйте [политику назначения пакета доступа](/graph/api/resources/accesspackageassignmentpolicy) для управления запросом, утверждением, назначением или регулярной проверкой [пакета доступа](/graph/api/resources/accesspackage). Вы можете управлять доступом внутренних и внешних пользователей к группам, приложениям и веб-сайтам SharePoint Online организации.
-
-### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
-Указание [включения или исключения клиентских приложений](/graph/api/resources/conditionalaccessclientapplications) среди [набора условий](/graph/api/resources/conditionalAccessConditionSet) для применения [политики условного доступа](/graph/api/resources/conditionalaccesspolicy).
-
-### <a name="use-the-toolkit"></a>Использование набора средств
-Отметьте реальную командную работу со вкладом сообщества и попробуйте новые функции в [Microsoft Graph Toolkit версии 2.4.0](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v2.4.0):
-- Оптимизируйте обновление изображений людей в компоненте [пользователь](/graph/toolkit/components/person) с помощью атрибута `disable-image-fetch` для управления ненужным получением.
-- Избегайте ненужной загрузки изображений людей в компоненте [выбора людей](/graph/toolkit/components/people-picker) с помощью атрибута `disable-images`. 
-- Используйте фильтр по доступным пользователям, группам и списку людей в компоненте [выбора людей](/graph/toolkit/components/people-picker) с помощью атрибутов `user-filters`, `group-filters` и `people-filters`.
-
-
-## <a name="march-2022-new-in-preview-only"></a>Март 2022 г.: новые возможности только в предварительной версии
-
-### <a name="cloud-communications--online-meeting"></a>Облачные коммуникации | Онлайн-собрание
-Указание одного или нескольких [участников собрания](/graph/api/resources/meetingParticipants?view=graph-rest-beta&preserve-view=true) в качестве соорганизатора.
-
-### <a name="compliance--ediscovery"></a>Соответствие требованиям | Обнаружение электронных данных
-[Очистка данных](/graph/api/ediscovery-sourcecollection-purgeData?view=graph-rest-beta&preserve-view=true) и окончательное удаление сообщений Microsoft Teams из [исходной коллекции](/graph/api/resources/ediscovery-sourcecollection?view=graph-rest-beta&preserve-view=true) обнаружения электронных данных.
-
-### <a name="device-and-app-management--cloud-pc"></a>Управление устройствами и приложениями | Облачный компьютер
-- Использование делегированных разрешений или разрешений приложения `RoleManagement.Read.CloudPC` для операций чтения ресурса [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta&preserve-view=true).
-- Использование делегированных разрешений или разрешений приложения `RoleManagement.ReadWrite.CloudPC` для операций чтения и записи ресурса [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta&preserve-view=true).
-- Указание идентификатора и отображаемого имени подписки Azure в составе сведений об [исходном образе устройства](/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta&preserve-view=true).
-- Указание и настройка [параметров Windows](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true) при создании облачных компьютеров для [политики подготовки](/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta&preserve-view=true).
-
-### <a name="device-and-app-management--corporate-management"></a>Управление устройствами и приложениями | Корпоративное управление
-- Обновления Intune за март для бета-версии.
-
-### <a name="device-and-app-management--multi-tenant-management"></a>Управление устройствами и приложениями | Управление несколькими клиентами
-[Перечисление](/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-beta&preserve-view=true) и [получение](/graph/api/managedtenants-auditevent-get?view=graph-rest-beta&preserve-view=true) событий аудита для управляемых клиентов в Microsoft 365 Lighthouse.
-
-### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
-- [Перечисление](/graph/api/organizationsettings-list-microsoftapplicationdataaccess?view=graph-rest-beta&preserve-view=true) или [обновление](/graph/api/microsoftapplicationdataaccesssettings-update?view=graph-rest-beta&preserve-view=true) [параметров](/graph/api/resources/microsoftapplicationdataaccesssettings?view=graph-rest-beta&preserve-view=true), которые определяют доступ из приложений Майкрософт к данным Microsoft 365, принадлежащим пользователям в организации. Например (при надлежащей авторизации) указывается, могут ли только приложения Microsoft 365 (к примеру, Word и Excel) получать доступ к данным Microsoft 365 пользователей или другие приложения Майкрософт (например, Windows) также могут получать доступ к данным. По умолчанию все пользователи в организации могут получить доступ в приложении Майкрософт к любым данным Microsoft 365, к которым пользователю был разрешен доступ. 
-- Следуя модели кибербезопасности "Никому не доверяй", партнеры Майкрософт могут использовать [детализированные права полномочного администратора (GDAP)](/graph/api/resources/delegatedadminrelationships-api-overview?view=graph-rest-beta&preserve-view=true) для выполнения административных задач с минимальными правами доступа к клиентам пользователей, чтобы избежать потенциальных рисков безопасности. Вместо запроса роли глобального администратора (как в прошлом) партнеры запрашивают определенные роли для администрирования клиента пользователя на определенный период времени, а их пользователи должны явно предоставить им доступ с минимальными правами.
-
-### <a name="security--attack-simulation-and-training"></a>Безопасность | Имитация атак и обучение
-- [Перечисление автоматизации имитации](/graph/api/attacksimulationroot-list-simulationautomations?view=graph-rest-beta&preserve-view=true) для клиента.
-- [Перечисление запусков](/graph/api/resources/simulationautomationrun?view=graph-rest-beta&preserve-view=true) автоматизации имитации для клиента.
-
-### <a name="search"></a>Поиск
-- Указание в [поисковом запросе](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true), следует ли удалить дубликаты файлов SharePoint из результатов поиска. Значение по умолчанию: false.
-- Квалификация строки [поискового запроса](/graph/api/resources/searchquery?view=graph-rest-beta&preserve-view=true) с помощью шаблона, который поддерживает KQL и переменные запроса.
-
-### <a name="sites-and-lists"></a>Сайты и списки
-- Для [столбца](/graph/api/resources/columnDefinition?view=graph-rest-beta&preserve-view=true), содержащего данные таксономии, указывается родительский [термин](/graph/api/resources/termstore-term?view=graph-rest-beta&preserve-view=true) и [набор терминов](/graph/api/resources/termstore-set?view=graph-rest-beta&preserve-view=true), для которых дочерние термины можно выбрать в качестве значений столбцов.
-- Получение параметров [сайта](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true), включая его язык и часовой пояс.
-
-### <a name="tasks-and-plans"></a>Задачи и планы
-Определение того, может ли план Планировщика, предназначенный для интерфейсов за пределами Планировщика (например, Microsoft Teams), отслеживать работу в этом контексте путем проверки связи **details** соответствующего ресурса [plannerPlan](/graph/api/resources/plannerPlan?view=graph-rest-beta&preserve-view=true).
-
-### <a name="teamwork"></a>Teamwork
-- Получение или настройка [сводных сведений](/graph/api/resources/teamSummary?view=graph-rest-beta&preserve-view=true) о [команде](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true), включая количество владельцев, участников и гостей.
-- Сортировка сообщений по убыванию при [перечислении сообщений в чате](/graph/api/chat-list-messages?view=graph-rest-beta&preserve-view=true).
 
 
 ## <a name="want-to-stay-in-the-loop"></a>Хотите получать актуальную информацию?

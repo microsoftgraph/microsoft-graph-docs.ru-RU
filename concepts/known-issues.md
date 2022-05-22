@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: c05bc8548fc6e43b96720e358204cb9752c5ddbe
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: d5234149ddfafb4633803975e33a57294cba656b
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65366060"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629017"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -456,6 +456,10 @@ GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
 ### <a name="incomplete-objects-are-returned-when-using-getbyids-request"></a>Неполные объекты возвращаются при использовании запроса getByIds
 
 При запросе объектов с помощью [получения объектов каталога из списка идентификаторов](/graph/api/directoryobject-getbyids) должны возвращаться полные объекты. Однако в настоящее время объекты [user](/graph/api/resources/user) в конечной точке версии 1.0 возвращаются с ограниченным набором свойств. Временное решение: возврат более полных объектов [user](/graph/api/resources/user) обеспечивается при использовании операции в сочетании с параметром запроса `$select`. Это поведение не соответствует спецификациям OData. Так как это поведение может быть изменено в будущем, используйте это временное решение только при указании в параметре `$select=` всех нужных свойств и только если допускается внесение существенных изменений в это временное решение.
+
+### <a name="showinaddresslist-property-is-out-of-sync-with-microsoft-exchange"></a>Свойство showInAddressList не синхронизировано с Microsoft Exchange
+
+При запросе пользователей через Microsoft Graph свойство **showInAddressList** может не указывать то же состояние, которое отображается в Microsoft Exchange. Рекомендуется управлять этой функцией непосредственно с помощью Microsoft Exchange через Центр администрирования Microsoft 365 и не использовать это свойство в Microsoft Graph.
 
 ## <a name="query-parameters"></a>Параметры запроса 
 
