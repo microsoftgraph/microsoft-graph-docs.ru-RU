@@ -262,7 +262,7 @@ items:
         href: overview.md
       - name: Пользователи
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/users.md
           - name: Пользователь
             href: resources/user.md
@@ -428,7 +428,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: примечания;
+          - name: Примечания
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -743,7 +743,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Расширенные свойства
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -1403,13 +1403,13 @@ items:
       - name: Соответствие требованиям
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/complianceapioverview.md
-          - name: Запросы прав субъекта
+          - name: Запрос прав субъекта
             items:
               - name: Обзор
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
-              - name: Запросы прав субъекта
+              - name: Запрос прав субъекта
                 href: resources/subjectrightsrequest.md
                 items:
                   - name: Список
@@ -1457,7 +1457,7 @@ items:
       - name: Резервирование для пользователей
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/booking-api-overview.md
           - name: Организация в Microsoft Bookings
             href: resources/bookingbusiness.md
@@ -4245,7 +4245,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Работоспособность и взаимодействие служб
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/service-communications-api-overview.md
               - name: Объявление службы
                 href: resources/serviceannouncement.md
@@ -5199,7 +5199,7 @@ items:
                         href: api/organizationalbrandinglocalization-delete.md
               - name: Политики
                 items:
-                  - name: Обзор
+                  - name: Общие сведения
                     href: resources/policy-overview.md
                   - name: Политика времени ожидания на основе действий
                     href: resources/activitybasedtimeoutpolicy.md
@@ -5843,7 +5843,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Расширенные свойства
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -6045,7 +6045,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Расширенные свойства
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -6067,7 +6067,7 @@ items:
         items:
           - name: Отчеты о действиях Azure AD
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/azure-ad-auditlog-overview.md
               - name: Аудит каталога
                 href: resources/directoryaudit.md
@@ -6090,7 +6090,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Microsoft 365 отчетов об использовании
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/report.md
               - name: Использование устройств Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -6303,7 +6303,7 @@ items:
                 href: api/search-query.md
           - name: Index
             items:
-              - name: Обзор
+              - name: Общие сведения
                 href: resources/indexing-api-overview.md
               - name: Внешнее подключение
                 items:
@@ -6379,7 +6379,7 @@ items:
             items:
               - name: Оценка угроз
                 items:
-                  - name: Обзор
+                  - name: Общие сведения
                     href: resources/threatassessment-api-overview.md
                   - name: Запрос на оценку угроз
                     href: resources/threatassessmentrequest.md
@@ -6612,7 +6612,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Создание плана

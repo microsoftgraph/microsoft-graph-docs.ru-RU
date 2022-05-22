@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: KuiGithui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4daead4b510944427edbea4f3c42a8946614293a
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: 0dd40e8cb399b055d8568c97c3d6560110fc0aad
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65294014"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629085"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -64,9 +64,8 @@ ms.locfileid: "65294014"
 | id | String | Уникальный идентификатор клиента, представляющий организацию (или клиента). Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения. |
 | isMultipleDataLocationsForServicesEnabled | Boolean | `true` Значение , если в организации включена поддержка нескольких регионов; `false` Значение , если в организации не включена поддержка нескольких регионов; `null` (по умолчанию). Только для чтения. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | Коллекция String | Значение null не допускается. |
-| Objecttype | String | Строка, которая определяет тип объекта. Для клиентов значение всегда равно `Company`.|
 | onPremisesLastSyncDateTime | DateTimeOffset | Время и дата последней синхронизации клиента с локальным каталогом. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-| onPremisesSyncEnabled | Boolean | `true` Значение , если этот объект синхронизирован из локального каталога; `false` Значение , если изначально этот объект был синхронизирован из локального каталога, но больше не синхронизирован; Nullable. Используется значение `null`, если этот объект никогда не синхронизировался из локального каталога (по умолчанию). |
+| onPremisesSyncEnabled | Логический | `true` Значение , если этот объект синхронизирован из локального каталога; `false` Значение , если изначально этот объект был синхронизирован из локального каталога, но больше не синхронизирован; Nullable. Используется значение `null`, если этот объект никогда не синхронизировался из локального каталога (по умолчанию). |
 | postalCode | String | Почтовый индекс в адресе организации. |
 | preferredLanguage | String | Предпочитаемый язык для организации. Он должен быть представлен в формате ISO 639-1, например `en`. |
 | privacyProfile | [privacyProfile](privacyprofile.md) | Профиль конфиденциальности организации. |
@@ -83,8 +82,8 @@ ms.locfileid: "65294014"
 | Связь  | Тип  |Описание|
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|Коллекция [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Свойство навигации для управления конфигурацией проверки подлинности на основе сертификатов. В коллекции можно создать только один экземпляр объекта certificateBasedAuthConfiguration.  |
-|extensions|Коллекция объектов [extension](extension.md)|Коллекция открытых расширений, определенных для ресурса организации. Допускается значение null.| 
-|organizationalBranding|Коллекция [organizationalBranding](organizationalbranding.md)| Ресурс для управления фирменной символикой по умолчанию для организации. Допускается значение null.|
+|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для ресурса организации. Допускается значение null.| 
+|Брендинг|Коллекция [organizationalBranding](organizationalbranding.md)| Ресурс для управления фирменной символикой по умолчанию для организации. Допускается значение null.|
 |settings|[organizationSettings](organizationsettings.md) | Получение свойств и связей объекта organizationSettings. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -114,7 +113,6 @@ ms.locfileid: "65294014"
   "id": "String (identifier)",
   "isMultipleDataLocationsForServicesEnabled": "Boolean",
   "marketingNotificationEmails": ["String"],
-  "objectType": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "postalCode": "String",

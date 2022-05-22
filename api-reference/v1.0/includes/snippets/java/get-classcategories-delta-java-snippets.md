@@ -1,18 +1,19 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 272a0bc60540135b8e885ea2c436fd8cec2c4bf2
+ms.openlocfilehash: f4e14384fd11885080edca25c9d707199ee85725
 ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/22/2022
-ms.locfileid: "65628969"
+ms.locfileid: "65629425"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.teams("ece6f0a1-7ca4-498b-be79-edf6c8fc4d82").channels("19:56eb04e133944cf69e603c5dac2d292e@thread.skype").sharedWithTeams("ece6f0a1-5g39-498b-be79-edf6c8fc4d82")
+EducationCategoryDeltaCollectionPage delta = graphClient.education().classes("72a7baec-c3e9-4213-a850-f62de0adad5f").assignmentCategories()
+    .delta()
     .buildRequest()
-    .delete();
+    .get();
 
 ```

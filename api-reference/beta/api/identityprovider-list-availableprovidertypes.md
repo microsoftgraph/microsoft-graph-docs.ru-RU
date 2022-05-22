@@ -1,18 +1,18 @@
 ---
-title: Список доступныхProviderTypes
-description: Извлечение всех доступных типов поставщика удостоверений в каталоге.
+title: Перечисление availableProviderTypes
+description: Получение всех доступных типов поставщиков удостоверений в каталоге.
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: c9647057ac993fee1eff4591850102701b112a0a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0c1972e27ecee3e89fe97cb9072f188ff5d3ae76
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014980"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629113"
 ---
-# <a name="list-availableprovidertypes-deprecated"></a>Список доступныхProviderTypes (обесценив)
+# <a name="list-availableprovidertypes-deprecated"></a>Перечисление availableProviderTypes (не рекомендуется)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -28,9 +28,9 @@ ms.locfileid: "61014980"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Приложение|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
+Учетная запись рабочей или учебной учетной записи должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
 * Администратор внешнего поставщика удостоверений
@@ -91,11 +91,15 @@ GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 [!INCLUDE [sample-code](../includes/snippets/go/identityprovider-availableprovidertypes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/identityprovider-availableprovidertypes-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

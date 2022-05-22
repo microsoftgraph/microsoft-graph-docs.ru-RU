@@ -1,24 +1,24 @@
 ---
-title: Список доступныхProviderTypes
-description: Извлечение всех поддерживаемых поставщиков удостоверений в каталоге.
+title: Перечисление availableProviderTypes
+description: Получение всех поддерживаемых поставщиков удостоверений в каталоге.
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 807855072ed42170528ca9cdfd2c2d9604fe1d4d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a7a89a08188568488597cf557d24a0fa67294d56
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61002971"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65628992"
 ---
-# <a name="list-availableprovidertypes"></a>Список доступныхProviderTypes
+# <a name="list-availableprovidertypes"></a>Перечисление availableProviderTypes
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите поддержку всех поставщиков удостоверений в каталоге.
+Получение всех поставщиков удостоверений, поддерживаемых в каталоге.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "61002971"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Приложение|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
+Учетная запись рабочей или учебной учетной записи должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
 * Администратор внешнего поставщика удостоверений
@@ -54,11 +54,11 @@ GET /identity/identityProviders/availableProviderTypes
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код ответа и коллекцию строк `200 OK` в тексте отклика. Коллекция строк содержит имена поставщиков удостоверений, поддерживаемых в клиенте.
+В случае успешного выполнения эта функция возвращает код `200 OK` отклика и коллекцию строк в тексте отклика. Коллекция строк содержит имена поставщиков удостоверений, поддерживаемых в клиенте.
 
 ## <a name="example"></a>Пример
 
-### <a name="example-1-list-all-identityprovider-available-in-an-azure-ad-directory"></a>Пример 1. Список всех **identityProvider,** доступных в каталоге Azure AD
+### <a name="example-1-list-all-identityprovider-available-in-an-azure-ad-directory"></a>Пример 1. Вывод списка **всех identityProvider**, доступных в Azure AD каталоге
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -94,11 +94,15 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/availableProvide
 [!INCLUDE [sample-code](../includes/snippets/go/identityprovider-availableprovidertypes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/identityprovider-availableprovidertypes-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -124,7 +128,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-list-all-identityprovider-available-in-an-azure-ad-b2c-directory"></a>Пример 2. Список всех **identityProvider,** доступных в каталоге Azure AD B2C
+### <a name="example-2-list-all-identityprovider-available-in-an-azure-ad-b2c-directory"></a>Пример 2. Вывод списка **всех identityProvider**, доступных в Azure AD B2C
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -164,7 +168,7 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/availableProvide
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
