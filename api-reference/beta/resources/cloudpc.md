@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: a4f43588966d060e79663ce20b945b9fee47ebb2
-ms.sourcegitcommit: 4ef29d4a2cfa1ccc4a3da649e683377b17b90108
+ms.openlocfilehash: f529b46fc5bb11be7f58fbd4068789d5def4e824
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65125900"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65628861"
 ---
 # <a name="cloudpc-resource-type"></a>Тип ресурса cloudPC
 
@@ -24,7 +24,7 @@ ms.locfileid: "65125900"
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Перечисление облачных компьютеров](../api/virtualendpoint-list-cloudpcs.md)|[Коллекция cloudPC](../resources/cloudpc.md)|Список свойств и связей объектов [cloudPC](../resources/cloudpc.md) .|
+|[Перечисление облачных ПК](../api/virtualendpoint-list-cloudpcs.md)|Коллекция [cloudPC](../resources/cloudpc.md)|Список свойств и связей объектов [cloudPC](../resources/cloudpc.md) .|
 |[Получение cloudPC](../api/cloudpc-get.md)|[CloudPC](../resources/cloudpc.md)|Чтение свойств и связей объекта [cloudPC](../resources/cloudpc.md) .|
 |[Изменение типа учетной записи пользователя](../api/cloudpc-changeuseraccounttype.md)|Нет|Изменение типа учетной записи пользователя на определенном облачном компьютере.|
 |[Окончание льготного периода](../api/cloudpc-endgraceperiod.md)|Нет|Завершение льготного периода для [объекта cloudPC](../resources/cloudpc.md) .|
@@ -38,8 +38,11 @@ ms.locfileid: "65125900"
 |[Устранение неполадок](../api/cloudpc-troubleshoot.md)|Нет|Устранение неполадок [определенного объекта cloudPC](../resources/cloudpc.md) . Используйте этот API для проверки состояния работоспособности облачного компьютера и узла сеанса.|
 |[Восстановление удаленного действия](../api/manageddevice-restorecloudpc.md)|Нет|Восстановление устройства облачного компьютера до предыдущего состояния из моментального снимка.|
 |[Удаленное действие массового восстановления](../api/manageddevice-bulkrestorecloudpc.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Восстановите несколько облачных устройств с одним запросом, который включает идентификаторы Intune управляемых устройств, а также дату и время точки восстановления.|
-|[Список для пользователя](../api/user-list-cloudpcs.md)|[Коллекция cloudPC](../resources/cloudpc.md)|Список устройств [CloudPC](../resources/cloudpc.md) , которые назначены вошедаму пользователю.|
-|[Получение сведений о запуске для пользователя](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Получите [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) для пользователя, выполнившего вход.|
+|[Настройка состояния проверки](../api/manageddevice-setcloudpcreviewstatus.md)|Нет|Задайте состояние проверки для определенного облачного устройства.|
+|[Получение состояния проверки](../api/manageddevice-getcloudpcreviewstatus.md)|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|Получение сведений о состоянии проверки определенного облачного устройства.|
+|[Состояние проверки массового набора](../api/manageddevice-bulksetcloudpcreviewstatus.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Задайте состояние проверки нескольких облачных компьютеров с одним запросом, который включает идентификаторы Intune управляемых устройств.|
+|[Список для пользователя](../api/user-list-cloudpcs.md)|Коллекция [cloudPC](../resources/cloudpc.md)|Перечислите устройства [cloudPC](../resources/cloudpc.md), которые связаны с вошедшим пользователем.|
+|[Получение сведений о запуске для пользователя](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Получите [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) для вошедшего пользователя.|
 
 ## <a name="properties"></a>Свойства
 
@@ -83,7 +86,7 @@ ms.locfileid: "65125900"
 |Восстановление|Облачный компьютер восстанавливается.|
 |unknownFutureValue|Значение sentinel для развиваемого перечисления. Не следует использовать.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
