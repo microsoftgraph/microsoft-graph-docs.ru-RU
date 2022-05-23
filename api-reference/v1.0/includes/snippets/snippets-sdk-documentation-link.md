@@ -1,3 +1,3 @@
 <!-- markdownlint-disable MD041-->
 
-> Ознакомьтесь [с документацией по SDK,](/graph/sdks/sdks-overview) чтобы узнать, как добавить [SDK](/graph/sdks/sdk-installation) в проект и [создать экземпляр authProvider.](/graph/sdks/choose-authentication-providers)
+> Дополнительные сведения о добавлении [пакета SDK](/graph/sdks/sdk-installation) в проект и создании экземпляра [authProvider](/graph/sdks/choose-authentication-providers) см. в документации по пакету [SDK](/graph/sdks/sdks-overview).
