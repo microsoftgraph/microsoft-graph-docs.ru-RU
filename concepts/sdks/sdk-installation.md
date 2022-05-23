@@ -1,18 +1,28 @@
 ---
 title: Установка пакета Microsoft Graph SDK
-description: Инструкции по установке C#, Java, JavaScript, Objective-C, PHP и Ruby microsoft Graph SDK.
+description: Инструкции по установке .NET, Go, Java, JavaScript, PHP, PowerShell и Python microsoft Graph SDK.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 048d9fc3daee48d5b41623916dab937eae595f78
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 659730d111e3d23f0ef7a9d9352a5dc6730e37c3
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461431"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65628707"
 ---
-# <a name="install-the-microsoft-graph-sdks"></a>Установка пакетов SDK Graph Майкрософт
+# <a name="install-a-microsoft-graph-sdk"></a>Установка пакета Microsoft Graph SDK
 
-Пакеты SDK Graph Майкрософт можно включить в проекты с помощью GitHub и популярных диспетчеров пакетов платформы. В этом разделе описывается, как установить пакет Microsoft Graph SDK в проект.
+Пакеты SDK microsoft Graph доступны для нескольких языков, которые будут включены в проекты через GitHub и популярных диспетчеров пакетов платформы. В этой статье описывается, как установить пакет Microsoft Graph SDK в проект.
+
+Пакеты SDK доступны на следующих языках.
+
+- [.NET](#install-the-microsoft-graph-net-sdk)
+- [Go (предварительная версия)](#install-the-microsoft-graph-go-sdk-preview)
+- [Java](#install-the-microsoft-graph-java-sdk)
+- [JavaScript](#install-the-microsoft-graph-javascript-sdk)
+- [PHP](#install-the-microsoft-graph-php-sdk)
+- [PowerShell](#install-the-microsoft-graph-powershell-sdk)
+- [Python (предварительная версия)](#install-the-microsoft-graph-python-sdk-preview)
 
 ## <a name="install-the-microsoft-graph-net-sdk"></a>Установка пакета Microsoft Graph .NET SDK
 
@@ -87,7 +97,7 @@ dependency {
 </dependency>
 ```
 
-## <a name="install-the-microsoft-graph-javascript-sdk"></a>Установка пакета SDK javascript Graph Майкрософт
+## <a name="install-the-microsoft-graph-javascript-sdk"></a>Установка пакета SDK Graph JavaScript для Microsoft
 
 Пакет SDK Graph JavaScript корпорации Майкрософт входит в следующие пакеты:
 
@@ -100,47 +110,6 @@ dependency {
 npm install @microsoft/microsoft-graph-client --save
 npm install @microsoft/microsoft-graph-types --save-dev
 ```
-
-## <a name="install-the-microsoft-graph-objective-c-sdk"></a>Установка пакета Microsoft Graph Objective-C SDK
-
-Пакет SDK Graph Objective-C Майкрософт поддерживает платформы iOS и macOS и может быть установлен в проект с помощью CocoaPods или Carthage.
-
-### <a name="install-the-microsoft-graph-objective-c-sdk-using-cocoapods"></a>Установка пакета Microsoft Graph Objective-C SDK с помощью Cocoapods
-
-Добавьте следующую строку в файл podfile, чтобы включить Objective-C Microsoft Graph SDK и microsoft Graph Objective-C Auth SDK в проект xcode:
-
-```ruby
-pod 'MSGraphClientSDK'
-pod 'MSGraphMSALAuthProvider'
-```
-
-### <a name="install-the-microsoft-graph-objective-c-sdk-using-carthage"></a>Установка пакета Microsoft Graph Objective-C SDK с помощью Carthage
-
-Выполните следующие действия, чтобы установить microsoft Graph Objective-C SDK и microsoft Graph Objective-C Auth SDK с помощью [диспетчера пакетов Carthage](https://github.com/Carthage/Carthage).
-
-1. Создайте **Cartfile**, в котором Objective-C пакет SDK GitHub репозиторий и [тег](https://github.com/microsoftgraph/msgraph-sdk-objc/releases) выпуска для целевого объекта.
-
-    ```text
-    github "microsoftgraph/msgraph-sdk-objc" "tags/<latest_release_tag>"
-    github "microsoftgraph/msgraph-sdk-objc-auth" "tags/<latest_release_tag>"
-    ```
-
-1. Запустите `carthage update`. Это приведет к извлечению зависимостей в папку Carthage/Checkouts, а затем создаст библиотеку MSGraphClientSDK.
-
-1. С помощью Xcode на вкладке "Общие параметры" целевого приложения в разделе  "Связанные платформы и библиотеки" перетащите **msGraphClientSDK.framework** и **MSGraphMSALAuthProvider.framework** из папки Carthage/Build на диске.
-
-1. На вкладке " **+** Этапы сборки" целевого приложения щелкните значок и выберите "**Новый этап запуска скрипта"**. Создайте скрипт запуска, в котором указывается оболочка (например, /bin/sh), и добавьте в скрипт следующее содержимое:
-
-    ```Shell
-    /usr/local/bin/carthage copy-frameworks
-    ```
-
-1. Добавьте пути к платформам, которые вы хотите использовать в разделе " **Входные файлы"**.
-
-    ```Shell
-    $(SRCROOT)/Carthage/Build/iOS/MSGraphClientSDK.framework
-    $(SRCROOT)/Carthage/Build/iOS/MSGraphMSALAuthProvider.framework
-    ```
 
 ## <a name="install-the-microsoft-graph-php-sdk"></a>Установка пакета SDK GRAPH Майкрософт
 
@@ -162,7 +131,7 @@ composer require microsoft/microsoft-graph
 }
 ```
 
-## <a name="install-the-microsoft-powershell-sdk"></a>Установка пакета SDK для Microsoft PowerShell
+## <a name="install-the-microsoft-graph-powershell-sdk"></a>Установка пакета SDK Microsoft Graph PowerShell
 
 Все модули публикуются [на коллекция PowerShell.](https://www.powershellgallery.com/packages/Microsoft.Graph) Чтобы установить:
 
@@ -176,10 +145,13 @@ Install-Module Microsoft.Graph
  Install-Module Microsoft.Graph -AllowClobber -Force
 ```
 
-## <a name="install-the-microsoft-graph-ruby-sdk"></a>Установка microsoft Graph Ruby SDK
+## <a name="install-the-microsoft-graph-python-sdk-preview"></a>Установка пакета Microsoft Graph Python SDK (предварительная версия)
 
-Пакет [SDK Microsoft Graph Ruby](https://github.com/microsoftgraph/msgraph-sdk-ruby) доступен из rubygems.org и может [](https://rubygems.org/) быть установлен с помощью следующей команды:
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-```ruby
-gem install microsoft_graph
+[Клиентская Graph Microsoft Python Core (предварительная версия)](https://github.com/microsoftgraph/msgraph-sdk-python-core) доступна в [PyPI](https://pypi.org/).
+
+```Shell
+python -m pip install msgraph-core
+python -m pip install azure-identity
 ```

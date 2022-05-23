@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: KuiGithui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 1c96894d044e77d1faddf27085163248d1fd4d9b
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: adcef3a522e3f906176285d7f4b477541118bbb9
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65293972"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629190"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -76,7 +76,7 @@ ms.locfileid: "65293972"
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|Коллекция [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Свойство навигации для управления конфигурацией проверки подлинности на основе сертификатов. В коллекции можно создать только один экземпляр объекта certificateBasedAuthConfiguration.  |
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для организации. Только для чтения. Допускается значение null.|
-|organizationalBranding|Коллекция [organizationalBranding](organizationalbranding.md)| Фирменная символика организации. Допускается значение null.|
+|branding|Коллекция [organizationalBranding](organizationalbranding.md)| Фирменная символика организации. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление в формате JSON
 

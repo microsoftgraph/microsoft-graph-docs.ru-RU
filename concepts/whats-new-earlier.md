@@ -3,14 +3,80 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: bcfced8791bddae5bac1d32f0a900f40db286511
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 7e9ec0b2b9bba305b3ad2acdf9cce1d3ecbfb65a
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060698"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629178"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
+
+## <a name="march-2022-new-and-generally-available"></a>Март 2022 г.: новые и общедоступные возможности
+
+### <a name="files"></a>Файлы
+Использование ресурса [bundle](/graph/api/resources/bundle) для обмена несколькими файлами одновременно, аналогично другим ресурсам [driveItem](/graph/api/resources/driveitem). Вы можете применять действия CRUD к пакету и [добавить](/graph/api/bundle-additem) элемент в пакет или [удалить](/graph/api/bundle-removeitem) его из пакета.
+
+### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
+Использование [разрешения для конкретного ресурса](/graph/api/resources/resourcespecificpermission), чтобы авторизовать прямой доступ приложения Teams к данным определенного экземпляра чата или команды. Например, разрешение для конкретного ресурса ChannelMessage.Read.Group позволяет приложению Teams читать сообщения канала одной команды.
+
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+- [Получение](/graph/api/approval-get) решений об [утверждении](/graph/api/resources/approval), связанных с [запросом на назначение пакета доступа](/graph/api/resources/accesspackageassignmentrequest).
+- В рамках [управления правами Azure Active Directory (Azure AD)](/graph/api/resources/entitlementmanagement-overview) используйте [политику назначения пакета доступа](/graph/api/resources/accesspackageassignmentpolicy) для управления запросом, утверждением, назначением или регулярной проверкой [пакета доступа](/graph/api/resources/accesspackage). Вы можете управлять доступом внутренних и внешних пользователей к группам, приложениям и веб-сайтам SharePoint Online организации.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
+Указание [включения или исключения клиентских приложений](/graph/api/resources/conditionalaccessclientapplications) среди [набора условий](/graph/api/resources/conditionalAccessConditionSet) для применения [политики условного доступа](/graph/api/resources/conditionalaccesspolicy).
+
+### <a name="use-the-toolkit"></a>Использование набора средств
+Отметьте реальную командную работу со вкладом сообщества и попробуйте новые функции в [Microsoft Graph Toolkit версии 2.4.0](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v2.4.0):
+- Оптимизируйте обновление изображений людей в компоненте [пользователь](/graph/toolkit/components/person) с помощью атрибута `disable-image-fetch` для управления ненужным получением.
+- Избегайте ненужной загрузки изображений людей в компоненте [выбора людей](/graph/toolkit/components/people-picker) с помощью атрибута `disable-images`. 
+- Используйте фильтр по доступным пользователям, группам и списку людей в компоненте [выбора людей](/graph/toolkit/components/people-picker) с помощью атрибутов `user-filters`, `group-filters` и `people-filters`.
+
+
+## <a name="march-2022-new-in-preview-only"></a>Март 2022 г.: новые возможности только в предварительной версии
+
+### <a name="cloud-communications--online-meeting"></a>Облачные коммуникации | Онлайн-собрание
+Указание одного или нескольких [участников собрания](/graph/api/resources/meetingParticipants?view=graph-rest-beta&preserve-view=true) в качестве соорганизатора.
+
+### <a name="compliance--ediscovery"></a>Соответствие требованиям | Обнаружение электронных данных
+[Очистка данных](/graph/api/ediscovery-sourcecollection-purgeData?view=graph-rest-beta&preserve-view=true) и окончательное удаление сообщений Microsoft Teams из [исходной коллекции](/graph/api/resources/ediscovery-sourcecollection?view=graph-rest-beta&preserve-view=true) обнаружения электронных данных.
+
+### <a name="device-and-app-management--cloud-pc"></a>Управление устройствами и приложениями | Облачный компьютер
+- Использование делегированных разрешений или разрешений приложения `RoleManagement.Read.CloudPC` для операций чтения ресурса [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta&preserve-view=true).
+- Использование делегированных разрешений или разрешений приложения `RoleManagement.ReadWrite.CloudPC` для операций чтения и записи ресурса [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta&preserve-view=true).
+- Указание идентификатора и отображаемого имени подписки Azure в составе сведений об [исходном образе устройства](/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta&preserve-view=true).
+- Указание и настройка [параметров Windows](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true) при создании облачных компьютеров для [политики подготовки](/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta&preserve-view=true).
+
+### <a name="device-and-app-management--corporate-management"></a>Управление устройствами и приложениями | Корпоративное управление
+- Обновления Intune за март для бета-версии.
+
+### <a name="device-and-app-management--multi-tenant-management"></a>Управление устройствами и приложениями | Управление несколькими клиентами
+[Перечисление](/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-beta&preserve-view=true) и [получение](/graph/api/managedtenants-auditevent-get?view=graph-rest-beta&preserve-view=true) событий аудита для управляемых клиентов в Microsoft 365 Lighthouse.
+
+### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
+- [Перечисление](/graph/api/organizationsettings-list-microsoftapplicationdataaccess?view=graph-rest-beta&preserve-view=true) или [обновление](/graph/api/microsoftapplicationdataaccesssettings-update?view=graph-rest-beta&preserve-view=true) [параметров](/graph/api/resources/microsoftapplicationdataaccesssettings?view=graph-rest-beta&preserve-view=true), которые определяют доступ из приложений Майкрософт к данным Microsoft 365, принадлежащим пользователям в организации. Например (при надлежащей авторизации) указывается, могут ли только приложения Microsoft 365 (к примеру, Word и Excel) получать доступ к данным Microsoft 365 пользователей или другие приложения Майкрософт (например, Windows) также могут получать доступ к данным. По умолчанию все пользователи в организации могут получить доступ в приложении Майкрософт к любым данным Microsoft 365, к которым пользователю был разрешен доступ. 
+- Следуя модели кибербезопасности "Никому не доверяй", партнеры Майкрософт могут использовать [детализированные права полномочного администратора (GDAP)](/graph/api/resources/delegatedadminrelationships-api-overview?view=graph-rest-beta&preserve-view=true) для выполнения административных задач с минимальными правами доступа к клиентам пользователей, чтобы избежать потенциальных рисков безопасности. Вместо запроса роли глобального администратора (как в прошлом) партнеры запрашивают определенные роли для администрирования клиента пользователя на определенный период времени, а их пользователи должны явно предоставить им доступ с минимальными правами.
+
+### <a name="security--attack-simulation-and-training"></a>Безопасность | Имитация атак и обучение
+- [Перечисление автоматизации имитации](/graph/api/attacksimulationroot-list-simulationautomations?view=graph-rest-beta&preserve-view=true) для клиента.
+- [Перечисление запусков](/graph/api/resources/simulationautomationrun?view=graph-rest-beta&preserve-view=true) автоматизации имитации для клиента.
+
+### <a name="search"></a>Поиск
+- Указание в [поисковом запросе](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true), следует ли удалить дубликаты файлов SharePoint из результатов поиска. Значение по умолчанию: false.
+- Квалификация строки [поискового запроса](/graph/api/resources/searchquery?view=graph-rest-beta&preserve-view=true) с помощью шаблона, который поддерживает KQL и переменные запроса.
+
+### <a name="sites-and-lists"></a>Сайты и списки
+- Для [столбца](/graph/api/resources/columnDefinition?view=graph-rest-beta&preserve-view=true), содержащего данные таксономии, указывается родительский [термин](/graph/api/resources/termstore-term?view=graph-rest-beta&preserve-view=true) и [набор терминов](/graph/api/resources/termstore-set?view=graph-rest-beta&preserve-view=true), для которых дочерние термины можно выбрать в качестве значений столбцов.
+- Получение параметров [сайта](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true), включая его язык и часовой пояс.
+
+### <a name="tasks-and-plans"></a>Задачи и планы
+Определение того, может ли план Планировщика, предназначенный для интерфейсов за пределами Планировщика (например, Microsoft Teams), отслеживать работу в этом контексте путем проверки связи **details** соответствующего ресурса [plannerPlan](/graph/api/resources/plannerPlan?view=graph-rest-beta&preserve-view=true).
+
+### <a name="teamwork"></a>Teamwork
+- Получение или настройка [сводных сведений](/graph/api/resources/teamSummary?view=graph-rest-beta&preserve-view=true) о [команде](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true), включая количество владельцев, участников и гостей.
+- Сортировка сообщений по убыванию при [перечислении сообщений в чате](/graph/api/chat-list-messages?view=graph-rest-beta&preserve-view=true).
+
 
 ## <a name="february-2022-new-and-generally-available"></a>Февраль 2022 г.: новые и общедоступные возможности
 
@@ -1122,7 +1188,7 @@ GA интерфейса API [просмотра доступа](/graph/api/resou
 ### <a name="change-notifications"></a>Уведомления об изменениях
 [Отслеживание изменений](delta-query-overview.md) поддерживаемых ресурсов в национальном облаке Microsoft Graph для государственных организаций США.
 
-### <a name="cloud-communications"></a>Коммуникации из облака
+### <a name="cloud-communications"></a>Облачные коммуникации
 - [Отмените](/graph/api/call-cancelmediaprocessing) любые действия интерактивного голосового ответа (IVR), выполняемые или находящиеся в очереди, которые [воспроизводят звуковой сигнал](/graph/api/call-playprompt) или [записывают ответ](/graph/api/call-record).
 - Получите [сведения о расшифровке звонка](/graph/api/resources/calltranscriptioninfo) с помощью свойства **transcription**.
 
