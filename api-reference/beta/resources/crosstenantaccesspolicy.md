@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ed825ae07c1a707be2847b9bdc40f7fe71add334
-ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
+ms.openlocfilehash: beea220ebf3a0b12e40e56997c236b82fcb5d2fe
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65103027"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653541"
 ---
 # <a name="crosstenantaccesspolicy-resource-type"></a>Тип ресурса crossTenantAccessPolicy
 
@@ -33,8 +33,9 @@ ms.locfileid: "65103027"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-| displayName | String | Отображаемое имя политики межтенантного доступа. Наследуется [от policyBase](../resources/policybase.md).|
-| определение (не рекомендуется) | String | Необработанные определения JSON политики межтенантного доступа. **Устарело. Не используйте.**|
+| displayName | Строка | Отображаемое имя политики межтенантного доступа. Наследуется [от policyBase](../resources/policybase.md).|
+| allowedCloudEndpoints | Коллекция строк | Используется для указания облаков Майкрософт, с которыми организация будет сотрудничать. По умолчанию это значение пусто. Поддерживаемые значения для этого поля: `microsoftonline.com`, и `microsoftonline.us``partner.microsoftonline.cn`. |
+| определение (не рекомендуется) | Строка | Необработанные определения JSON политики межтенантного доступа. **Устарело. Не используйте.**|
 
 ## <a name="relationships"></a>Связи
 
@@ -43,7 +44,7 @@ ms.locfileid: "65103027"
 |default|[crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md)|Определяет конфигурацию по умолчанию для взаимодействия организации с внешними Azure Active Directory организациями.|
 |Партнеров|[Коллекция crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)|Определяет конфигурации, относящиеся к партнерам, для внешних Azure Active Directory организаций.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 <!-- {
@@ -59,6 +60,7 @@ ms.locfileid: "65103027"
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicy",
   "displayName": "String",
-  "definition": "String"
+  "definition": "String",
+  "allowedCloudEndpoints": ["String"]
 }
 ```

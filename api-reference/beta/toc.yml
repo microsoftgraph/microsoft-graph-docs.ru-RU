@@ -572,7 +572,7 @@ items:
                 href: api/profile-get.md
               - name: Удаление профиля пользователя
                 href: api/profile-delete.md
-          - name: Командная работа
+          - name: Teamwork
             items:
               - name: Приложение установлено
                 href: resources/teamsappinstallation.md
@@ -12631,7 +12631,7 @@ items:
               - name: Запросы согласия
                 href: resources/consentrequests-overview.md
                 items:
-                  - name: Политика запроса согласия администратора
+                  - name: Администратор политики запроса согласия
                     href: resources/adminconsentrequestpolicy.md
                     items:
                       - name: Получение
@@ -14403,20 +14403,6 @@ items:
                 href: api/site-list-operations.md
               - name: Получение параметров сайта
                 href: api/sitesettings-get.md
-              - name: Разрешения
-                items:
-                  - name: Разрешение
-                    href: resources/permission.md
-                  - name: Перечисление разрешений сайта
-                    href: api/site-list-permissions.md
-                  - name: Создание разрешений сайта
-                    href: api/site-post-permissions.md
-                  - name: Получение разрешения сайта
-                    href: api/site-get-permission.md
-                  - name: Обновление разрешения сайта
-                    href: api/site-update-permission.md
-                  - name: Удаление разрешения сайта
-                    href: api/site-delete-permission.md
           - name: Списки
             items:
               - name: Список
@@ -14541,6 +14527,20 @@ items:
                 href: api/list-list-operations.md
               - name: Операция Get
                 href: api/richlongrunningoperation-get.md
+          - name: Разрешения сайта
+            items:
+              - name: Разрешение
+                href: resources/permission.md
+              - name: Перечисление разрешений сайта
+                href: api/site-list-permissions.md
+              - name: Создание разрешений сайта
+                href: api/site-post-permissions.md
+              - name: Получение разрешения сайта
+                href: api/site-get-permission.md
+              - name: Обновление разрешения сайта
+                href: api/site-update-permission.md
+              - name: Удаление разрешения сайта
+                href: api/site-delete-permission.md
           - name: Таксономия
             displayname: Taxonomy API
             items:
@@ -14597,6 +14597,14 @@ items:
                     href: api/termStore-term-list-relations.md
                   - name: Создание
                     href: api/termStore-relation-post.md
+          - name: Параметры клиента
+            items:
+              - name: Settings
+                href: resources/tenantadmin-settings.md
+              - name: Получение параметров
+                href: api/tenantadmin-settings-get.md
+              - name: Обновление параметров
+                href: api/tenantadmin-settings-update.md
       - name: Задачи и планы
         displayName: Planner
         items:
@@ -14923,6 +14931,12 @@ items:
                 href: api/chat-hideforuser.md
               - name: Отобразить чат
                 href: api/chat-unhideforuser.md
+              - name: Вывод списка закрепленных сообщений
+                href: api/chat-list-pinnedmessages.md
+              - name: Закрепление сообщения
+                href: api/chat-post-pinnedmessages.md
+              - name: Открепить сообщение
+                href: api/chat-delete-pinnedmessages.md
           - name: Сообщение чата
             href: resources/chatmessage.md
             items:
@@ -14950,6 +14964,15 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Получение размещенного содержимого
                 href: api/chatmessagehostedcontent-get.md
+          - name: Закрепленное сообщение чата
+            href: resources/pinnedChatMessageInfo.md
+            items:
+              - name: Вывод списка закрепленных сообщений
+                href: api/chat-list-pinnedmessages.md
+              - name: Закрепление сообщения
+                href: api/chat-post-pinnedmessages.md
+              - name: Открепить сообщение
+                href: api/chat-delete-pinnedmessages.md
           - name: Теги
             href: resources/teamworktag.md
             items:
@@ -15329,7 +15352,7 @@ items:
       - name: Задачи To-Do
         displayName: Microsoft To Do
         items:
-          - name: Обзор
+          - name: Общие сведения
             href: resources/tasks-overview.md
           - name: Список задач
             items:
@@ -15407,7 +15430,7 @@ items:
                 href: api/linkedresource_v2-delete.md
           - name: Задачи (старые)
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/todo-overview.md
               - name: Список задач
                 href: resources/todotasklist.md

@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса администрирования
-description: Объект, который выступает в качестве контейнера для функций администратора.
+title: Тип ресурса admin
+description: Сущность, которая выступает в качестве контейнера для функций администратора.
 author: angelgolfer-ms
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: fbd064916aca2b0b355eadaa90f56bc2186638ce
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ef9b235a175b3304b9354beddc67f59eb3994cf1
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447079"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653499"
 ---
-# <a name="admin-resource-type"></a>Тип ресурса администрирования
+# <a name="admin-resource-type"></a>Тип ресурса admin
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Объект, который выступает в качестве контейнера для функций администратора.
+Сущность, которая выступает в качестве контейнера для функций администратора.
 
 ## <a name="properties"></a>Свойства
 Нет
@@ -26,8 +26,9 @@ ms.locfileid: "60447079"
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-| serviceAnnouncement | [serviceAnnouncement](serviceannouncement.md) | Контейнер для ресурсов связи службы. Только для чтения. |
-|Windows|[microsoft.graph.windowsUpdates.windows](../resources/windowsupdates-windows.md)|Контейнер для всех Windows обновления для службы развертывания бизнеса. Только для чтения.|
+| serviceAnnouncement | [serviceAnnouncement](serviceannouncement.md) | Контейнер для ресурсов связи со службами. Только для чтения. |
+| sharepoint |[microsoft.graph.tenantAdmin.sharepoint](../resources/tenantadmin-sharepoint.md)|Контейнер для административных ресурсов для управления параметрами на уровне клиента для SharePoint и OneDrive.|
+| windows |[microsoft.graph.windowsUpdates.windows](../resources/windowsupdates-windows.md)|Контейнер для всех функций клиентский компонент Центра обновления Windows развертывания для бизнеса. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 536c08bded82a25befa1865495f3fa6ba0f415c2
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: b7b9b7e8d56f7653c4813ae33a1e43788e918c80
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65294003"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653492"
 ---
 # <a name="user-exportpersonaldata"></a>user: exportPersonalData
 
 Пространство имен: microsoft.graph
 
-Отправьте запрос на операцию политики данных от администратора компании или приложения для экспорта данных пользователя организации.
+Отправьте запрос на операцию политики данных от администратора компании или приложения для экспорта данных пользователя организации. Эти данные включают данные пользователя, хранящиеся в OneDrive отчеты о действиях. Дополнительные рекомендации по экспорту данных при соблюдении нормативных требований см. в запросах субъектов данных и [GDPR и CCPA](/compliance/regulatory/gdpr-data-subject-requests).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,14 +38,14 @@ POST /users/{id}/exportPersonalData
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {token}|
+| Authorization  | Bearer {token}|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|storageLocation|Строка|Это URL-адрес подписанного URL-адреса (SAS) для учетной записи служба хранилища Azure, в которую следует экспортировать данные.|
+|storageLocation|String|Это URL-адрес подписанного URL-адреса (SAS) для учетной записи служба хранилища Azure, в которую следует экспортировать данные.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Метод не возвращает данные в теле отклика. Ответ содержит следующие заголовки ответа.

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 9e7a8c4b0906e534d91ff62bd32e471fe46cf083
-ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
+ms.openlocfilehash: dfb96e4428ac51c62b0280e9c830e3d9ce3c379e
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61044612"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653555"
 ---
 # <a name="reportroot-getemailactivityuserdetail"></a>reportRoot: getEmailActivityUserDetail
 
@@ -54,13 +54,13 @@ GET /reports/getEmailActivityUserDetail(date={date_value})
 
 > **Примечание.** В URL-адресе необходимо указать либо период, либо дату.
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$format`, `$top` и `$skipToken` для настройки ответа. Тип вывода по умолчанию — текст/csv. Однако, если требуется указать тип вывода, можно использовать параметр OData $format для параметра text/csv или application/json.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$format`, `$top` и `$skipToken` для настройки ответа. Тип выходных данных по умолчанию — text/csv. Однако если вы хотите указать тип выходных данных, можно использовать параметр запроса OData $format text/csv или application/json.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание               |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="response"></a>Отклик
 
@@ -81,22 +81,22 @@ CSV-файл содержит столбцы со следующими заго�
 - Send Count (количество отправленных писем)
 - Receive Count (количество полученных писем)
 - Read Count (количество прочитанных сообщений)
-- Созданная встреча
-- Взаимодействие в собрании
+- Число созданных собраний
+- Количество взаимодействующих собраний
 - Assigned Products (назначенные продукты)
 - "Report Period" (Отчетный период).
 
 ### <a name="json"></a>JSON
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект JSON в тексте отклика.
 
-Размер страницы по умолчанию для этого запроса составляет 200 элементов.
+Размер страницы по умолчанию для этого запроса — 200 элементов.
 
 ## <a name="example"></a>Пример
 
 ### <a name="csv"></a>CSV
 
-Ниже приводится пример, который выводит CSV.
+Ниже приведен пример вывода CSV-файла.
 
 #### <a name="request"></a>Запрос
 
@@ -137,12 +137,12 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Last Activity Date,Send Count,Receive Count,Read Count,Assigned Products,Report Period
+Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Last Activity Date,Send Count,Receive Count,Read Count,Meeting Created Count,Meeting Interacted Count,Assigned Products,Report Period
 ```
 
 ### <a name="json"></a>JSON
 
-Ниже приводится пример, который возвращает JSON.
+Ниже приведен пример, который возвращает JSON.
 
 #### <a name="request"></a>Запрос
 
@@ -191,6 +191,8 @@ Content-Length: 424
       "assignedProducts": [
         "Microsoft 365 ENTERPRISE E5"
       ], 
+      "meetingCreatedCount": 50, 
+      "meetingInteractedCount": 86, 
       "reportPeriod": "7"
     }
   ]

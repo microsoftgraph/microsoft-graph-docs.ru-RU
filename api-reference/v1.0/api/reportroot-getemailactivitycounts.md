@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 3deff4faae561fac92b979146fe78fb43faebee7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dfc65c705d8428f48ff00ab67ca61919b00f5fca
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119186"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653576"
 ---
 # <a name="reportroot-getemailactivitycounts"></a>reportRoot: getEmailActivityCounts
 
@@ -68,8 +68,10 @@ CSV-файл содержит столбцы со следующими заго�
 - Send (отправлено)
 - Receive (получено)
 - Read (прочитано)
-- "Report Date" (Дата отчета);
-- "Report Period" (Отчетный период).
+- Собрание создано
+- Взаимодействие с собранием
+- Report Date (дата отчета)
+- Report Period (Отчетный период).
 
 ## <a name="example"></a>Пример
 
@@ -110,7 +112,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Send,Receive,Read,Report Date,Report Period
+Report Refresh Date,Send,Receive,Read,Meeting Created,Meeting Interacted,Report Date,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

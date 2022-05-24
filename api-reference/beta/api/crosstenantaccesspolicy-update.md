@@ -1,16 +1,16 @@
 ---
 title: Обновление crossTenantAccessPolicy
-description: Обновление свойств политики доступа к клиенту.
+description: Обновление свойств политики межтенантного доступа.
 author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: aa2c2db38d3c65dae58f5efb6d922559c9c524d3
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 8b94ab5f20642ea7283d5a3c3552a4b2a271c2e3
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336608"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653520"
 ---
 # <a name="update-crosstenantaccesspolicy"></a>Обновление crossTenantAccessPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "63336608"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств политики доступа [к клиенту](../resources/crosstenantaccesspolicy.md).
+Обновление свойств политики [межтенантного доступа](../resources/crosstenantaccesspolicy.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "63336608"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.CrossTenantAccess|
 |Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Для приложений|Policy.ReadWrite.CrossTenantAccess|
+|Приложение|Policy.ReadWrite.CrossTenantAccess|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,20 +54,18 @@ PATCH /policies/crossTenantAccessPolicy
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображает имя политики меж клиента доступа.|
+|displayName|Строка|Отображаемое имя политики межтенантного доступа.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`.
 
-В [настоящее время размер объекта crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) ограничен 25 КБ. Этот метод возвращает код ошибки `400 Bad Request` , если размер политики превышает 25 КБ.
+Размер [объекта crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) в настоящее время ограничен 25 КБ. Этот метод возвращает код ошибки `400 Bad Request` , если размер политики превысит 25 КБ.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_crosstenantaccesspolicy"
@@ -79,35 +77,9 @@ PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy
 Content-Type: application/json
 
 {
-  "displayName": "CrossTenantAccessPolicy",
+  "allowedCloudEndpoints": ["microsoftonline.us", "partner.microsoftonline.cn"]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-crosstenantaccesspolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-crosstenantaccesspolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-crosstenantaccesspolicy-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-crosstenantaccesspolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-crosstenantaccesspolicy-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-crosstenantaccesspolicy-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Отклик
 
