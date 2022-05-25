@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: f4ea5833922cbc36465bba32a7f4ade9b18c11d8
-ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
+ms.openlocfilehash: a49bab69acbb630474223a6de7095b8c34157fda
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2022
-ms.locfileid: "65629008"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653527"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -44,7 +44,7 @@ ms.locfileid: "65629008"
 В области [роли пользователя по умолчанию](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta&preserve-view=true) [политики авторизации](/graph/api/resources/authorizationPolicy?view=graph-rest-beta&preserve-view=true) укажите, может ли зарегистрированный владелец устройства считывать собственные ключи восстановления BitLocker.
 
 ### <a name="search--index"></a>Поиск | Индекс
-[Получение](/graph/api/externalconnectors-connectionquota-get?view=graph-rest-beta&preserve-view=true) [сведений о квоте](/graph/api/resources/externalconnectors-connectionQuota?view=graph-rest-beta&preserve-view=true) для [подключения](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true). Эти сведения включают количество элементов, которые можно принять в соединение, учитывая элементы, остающиеся в подключении, и остающуюся квоту на уровне клиента для всех подключений.
+[Получение](/graph/api/externalconnectors-connectionquota-get?view=graph-rest-beta&preserve-view=true) [сведений о квоте](/graph/api/resources/externalconnectors-connectionQuota?view=graph-rest-beta&preserve-view=true) для [подключения](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true). Эти сведения включают количество элементов, которые можно принять в подключение, учитывая элементы, остающиеся в подключении, и остающуюся квоту на уровне клиента для всех подключений.
 
 
 
@@ -107,7 +107,7 @@ ms.locfileid: "65629008"
     1. Впервые в состоянии **_предварительной версии_**. Все связанные обновления REST API доступны в конечной точке бета-версии (`https://graph.microsoft.com/beta`).  
 
     2. Повышение до **_общедоступного_ состояния (GA)**, если целесообразность этого подтверждена достаточным количеством отзывов. Все соответствующие обновления REST API добавляются в конечную точку версии 1.0 (`https://graph.microsoft.com/v1.0`). 
-- Будьте активными участниками сообщества Microsoft Graph! [Присоединяйтесь](https://aka.ms/microsoftgraphcall) к ежемесячной видеоконференции сообщества Microsoft Graph.
+- Будьте активными участниками сообщества Microsoft Graph! [Присоединяйтесь](https://aka.ms/m365-dev-call) к еженедельной видеоконференции сообщества платформы Microsoft 365.
 - Зарегистрируйтесь в [программе для разработчиков Microsoft 365](https://developer.microsoft.com/office/dev-program), получите бесплатную подписку на Microsoft 365 и приступите к разработке!
 
 
