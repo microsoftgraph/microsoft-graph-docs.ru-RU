@@ -1,18 +1,18 @@
 ---
-title: Удаление appliesTo
-description: Удалите directoryObject из выкатки функций.
-localization_priority: Normal
+title: Remove appliesTo
+description: Удалите directoryObject из выпуска компонентов.
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7952b8cc3360c8332c4e5ed6a7a5635d5d7e0e2c
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 8b72317c4b807509bcca17393480f2acdfc31f1e
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508710"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695434"
 ---
-# <a name="remove-appliesto"></a>Удаление appliesTo
+# <a name="remove-appliesto"></a>Remove appliesTo
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "51508710"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите appliesTo на [объекте featureRolloutPolicy,](../resources/featurerolloutpolicy.md) чтобы удалить [directoryObject](../resources/directoryobject.md) из выкатки функций.
+Удалите объект appliesTo для [объекта featureRolloutPolicy](../resources/featurerolloutpolicy.md) , чтобы удалить [directoryObject](../resources/directoryobject.md) из развертывания компонентов.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -44,7 +44,7 @@ DELETE /policies/featureRolloutPolicies/{policyId}/appliesTo/{directoryObjectId}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token}. Обязательна |
+| Авторизация | Носитель {token}. Обязательный |
 
 ## <a name="response"></a>Отклик
 
@@ -82,12 +82,16 @@ DELETE https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9
 [!INCLUDE [sample-code](../includes/snippets/java/delete-directoryobject-from-featurerolloutpolicy-policies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-directoryobject-from-featurerolloutpolicy-policies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

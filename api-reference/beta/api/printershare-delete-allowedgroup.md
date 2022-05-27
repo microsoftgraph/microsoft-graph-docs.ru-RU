@@ -1,29 +1,29 @@
 ---
-title: Удаление allowedGroup из принтераShare
-description: Отзовет доступ указанной группы для отправки заданий печати в связанную долю принтера.
+title: Удаление allowedGroup из printerShare
+description: Отмените доступ указанной группы для отправки заданий печати в связанную общую папку принтера.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: dce2a4d044b555116396953e926ef3c5d8c13fb0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 31dfa999eb10d2a2f6dc2b6b6170e2f5815e6545
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051062"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695363"
 ---
-# <a name="delete-allowedgroup-from-printershare"></a>Удаление allowedGroup из принтераShare
+# <a name="delete-allowedgroup-from-printershare"></a>Удаление allowedGroup из printerShare
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отзовет доступ указанной группы для отправки заданий печати в связанный [принтерShare.](../resources/printershare.md)
+Отмените доступ указанной группы для отправки заданий печати в связанный [printerShare](../resources/printershare.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Чтобы использовать службу универсальной печати, пользователь или клиент приложения должен иметь активную подписку универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице. Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Чтобы использовать службу универсальной печати, у пользователя или клиента приложения должна быть активная подписка на универсальную печать в дополнение к разрешениям, перечисленным в следующей таблице. Выполнив вход, пользователь должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
@@ -39,7 +39,7 @@ DELETE /print/shares/{id}/allowedGroups/{id}/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -75,10 +75,14 @@ DELETE https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups/{id}/$re
 [!INCLUDE [sample-code](../includes/snippets/java/delete-allowedgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-allowedgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

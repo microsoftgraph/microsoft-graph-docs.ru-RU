@@ -1,16 +1,16 @@
 ---
 title: Удаление onpremisesAgent из onPremisesAgentGroup
 description: Удалите onpremisesAgent из onPremisesAgentGroup.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d5649a10cf38f3a8da1004db30a191363a8e6a21
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: c39ceb44b233493ebb2cad914b7b6c4fabec3991
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781172"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694680"
 ---
 # <a name="remove-onpremisesagent-from-an-onpremisesagentgroup"></a>Удаление onPremisesAgent из onPremisesAgentGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "52781172"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите [onPremisesAgent](../resources/onpremisesagent.md) из [onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
+Удалите [onPremisesAgent](../resources/onpremisesagent.md) из [onPremisesAgentGroup](../resources/onpremisesagentgroup.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,7 +42,7 @@ DELETE /onPremisesPublishingProfiles/{publishingType}/agents/{id1}/agentGroups/{
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -83,12 +83,16 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisionin
 [!INCLUDE [sample-code](../includes/snippets/java/removeonpremisesagentfromanonpremisesagentgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/removeonpremisesagentfromanonpremisesagentgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

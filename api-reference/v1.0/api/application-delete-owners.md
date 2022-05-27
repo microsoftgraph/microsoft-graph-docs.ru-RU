@@ -5,18 +5,18 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 201bcf2cbec4dca466a91959fa91c7fd81819e10
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: cf67ad148ca1a31ec298b939c2d948ea0c6aabd9
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669678"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695412"
 ---
 # <a name="remove-owner"></a>Удаление владельца
 
 Пространство имен: microsoft.graph
 
-Удалите владельца из [приложения](../resources/application.md).
+Удаление владельца из [приложения](../resources/application.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,7 +39,7 @@ DELETE /applications/{id}/owners/{id}/$ref
 | Авторизация | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажи идентификатор объекта каталога, назначенного в качестве владельца.
+В тексте запроса укажите идентификатор объекта каталога, который будет назначен в качестве владельца.
 
 ## <a name="response"></a>Отклик
 
@@ -76,12 +76,16 @@ DELETE https://graph.microsoft.com/v1.0/applications/{id}/owners/{id}/$ref
 [!INCLUDE [sample-code](../includes/snippets/java/application-delete-owners-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-delete-owners-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

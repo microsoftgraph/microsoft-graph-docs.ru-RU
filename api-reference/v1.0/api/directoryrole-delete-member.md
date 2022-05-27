@@ -5,20 +5,20 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fc53b761f5ff9201416604fb71e58c8f04e57270
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 0b654bb741ac5be56941eee279110ff39d415e8a
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672569"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694638"
 ---
 # <a name="remove-directory-role-member"></a>Удаление элемента роли каталога
 
 Пространство имен: microsoft.graph
 
-Удаление участника из [каталогаRole](../resources/directoryrole.md).
+Удаление члена из [directoryRole](../resources/directoryrole.md).
 
-С помощью этого API можно использовать ИД объекта и ИД шаблона **каталогаRole** . ID шаблона встроенной роли неменяем и его можно увидеть в описании роли на портале Azure. Подробные сведения см. [в материале Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+С этим API можно использовать идентификатор объекта и идентификатор шаблона **directoryRole** . Идентификатор шаблона встроенной роли является неизменяемым и может отображаться в описании роли на портал Azure. Дополнительные сведения см [. в разделе "Идентификаторы шаблонов ролей"](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,7 +29,7 @@ ms.locfileid: "63672569"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.ReadWrite.Directory |
+|Приложение | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -56,11 +56,11 @@ DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-remove-directory-role-member-using-role-id"></a>Пример 1. Удаление члена роли каталога с помощью role id
+### <a name="example-1-remove-directory-role-member-using-role-id"></a>Пример 1. Удаление члена роли каталога с помощью идентификатора роли
 
 #### <a name="request"></a>Запрос
 
-В этом примере `f8e85ed8-f66f-4058-b170-3efae8b9c6e5` замените значение **id** `bb165b45-151c-4cf6-9911-cd7188912848` роли каталога и **id-значение** объекта пользователя или каталога, которое требуется отменить из роли каталога.
+В этом примере замените значение  идентификатора роли каталога и значением идентификатора пользователя  или объекта каталога, `f8e85ed8-f66f-4058-b170-3efae8b9c6e5` `bb165b45-151c-4cf6-9911-cd7188912848` которые необходимо отменить из роли каталога.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -87,6 +87,10 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/f8e85ed8-f66f-4058-b170-3
 [!INCLUDE [sample-code](../includes/snippets/java/delete-directoryobject-from-directoryrole-objectid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-directoryobject-from-directoryrole-objectid-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -104,7 +108,7 @@ HTTP/1.1 204 No Content
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. Замените `9f06204d-73c1-4d4c-880a-6edb90606fd8` значение roleTemplateId `bb165b45-151c-4cf6-9911-cd7188912848` и **id-значением** пользователя объекта каталога.
+Ниже приведен пример запроса. Замените `9f06204d-73c1-4d4c-880a-6edb90606fd8` значением roleTemplateId `bb165b45-151c-4cf6-9911-cd7188912848` и **значением идентификатора** пользователя объекта каталога.
 
 <!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
 

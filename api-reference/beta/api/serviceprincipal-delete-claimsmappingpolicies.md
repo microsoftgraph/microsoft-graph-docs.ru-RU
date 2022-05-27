@@ -1,16 +1,16 @@
 ---
 title: Удаление типа ресурса claimsMappingPolicy
-description: Удалите claimsMappingPolicy из службыPrincipal.
-localization_priority: Normal
+description: Удалите claimsMappingPolicy из servicePrincipal.
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: fed2bd63c3b944c6a32affbd3fc49edd994f0cd7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6da3bef9ff882b006859165ab09686e47e81188e
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051958"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695086"
 ---
 # <a name="remove-claimsmappingpolicy"></a>Удаление типа ресурса claimsMappingPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "52051958"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите [утверждениеMappingPolicy](../resources/claimsmappingpolicy.md) из [службыPrincipal.](../resources/servicePrincipal.md)
+Удалите [claimsMappingPolicy](../resources/claimsmappingpolicy.md) из [servicePrincipal](../resources/servicePrincipal.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "52051958"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All  |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Приложение                            | Policy.Read.All и Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.OwnedBy, Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ DELETE /servicePrincipals/{id}/claimsMappingPolicies/{id}/$ref
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="examples"></a>Примеры
 
@@ -83,14 +83,16 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/claimsMappingPoli
 [!INCLUDE [sample-code](../includes/snippets/java/delete-claimsmappingpolicy-from-serviceprincipal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-claimsmappingpolicy-from-serviceprincipal-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
-
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

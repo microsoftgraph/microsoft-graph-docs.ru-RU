@@ -1,16 +1,16 @@
 ---
 title: Создание подписки
-description: Подписывает приложение-слушатель для получения уведомлений об изменениях при изменении данных о Graph microsoft.
+description: Подписывает приложение прослушивателя на получение уведомлений об изменениях при изменении Graph ресурсов Майкрософт.
 ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: a348466b45132e641d68785e0537cd4826a299b9
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 8351c0801700cc6d9e724fdcbbc609e646834bc8
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451403"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695421"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -22,13 +22,13 @@ ms.locfileid: "63451403"
 
 Список ресурсов, поддерживающих подписку на уведомления об изменениях, см. в таблице раздела [Разрешения](#permissions).
 
-Некоторые ресурсы поддерживают возможность включить зашифрованные данные ресурсов в уведомления об изменениях. К этим ресурсам относятся [chatMessage](../resources/chatmessage.md), [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md), [onlineMeetings](../resources/onlinemeeting.md) и [presence](../resources/presence.md). Дополнительные сведения см. в статьях [Настройка уведомлений об изменениях, включающих данные ресурсов](/graph/webhooks-with-resource-data) и [Уведомления об изменениях, связанных с ресурсами Outlook, в Microsoft Graph](/graph/outlook-change-notification-overview).
+Некоторые ресурсы поддерживают возможность включить зашифрованные данные ресурсов в уведомления об изменениях. К этим ресурсам относятся [chatMessage](../resources/chatmessage.md), [контакт](../resources/contact.md), [событие](../resources/event.md), [сообщение](../resources/message.md), [onlineMeetings](../resources/onlinemeeting.md) и [сведения о присутствии](../resources/presence.md). Дополнительные сведения см. в статьях [Настройка уведомлений об изменениях, включающих данные ресурсов](/graph/webhooks-with-resource-data) и [Уведомления об изменениях, связанных с ресурсами Outlook, в Microsoft Graph](/graph/outlook-change-notification-overview).
 
 ## <a name="permissions"></a>Разрешения
 
-Для создания подписки требуется разрешение на чтение на ресурс. Например, чтобы получать уведомления об изменениях в сообщениях, приложению необходимо разрешение Mail.Read. 
+Для создания подписки требуется разрешение на чтение ресурса. Например, чтобы получать уведомления об изменениях в сообщениях, приложению необходимо разрешение Mail.Read. 
 
-В зависимости от ресурса и типа требующегося разрешения (делегированное или для приложения) разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
+В зависимости от ресурса и типа требующегося разрешения (делегированное или для приложения) разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Для получения дополнительных сведений[](/graph/auth/auth-concepts#best-practices-for-requesting-permissions), в том числе с осторожностью перед выбором разрешений, выполните поиск следующих разрешений в [Разрешениях](/graph/permissions-reference).
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Application |
 |:-----|:-----|:-----|:-----|
@@ -55,7 +55,7 @@ ms.locfileid: "63451403"
 |[group conversation](../resources/conversation.md) | Group.Read.All | Не поддерживается | Не поддерживается |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Не поддерживается | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
-|[онлайн-собрание](../resources/onlinemeeting.md) | Не поддерживается | Не поддерживается | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
+|[собрание по сети](../resources/onlinemeeting.md) | Не поддерживается | Не поддерживается | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 |[presence](../resources/presence.md) | Presence.Read.All | Не поддерживается | Не поддерживается |
 |[printer](../resources/printer.md) | Не поддерживается | Не поддерживается | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается | Не поддерживается | PrintTaskDefinition.ReadWrite.All |
@@ -65,6 +65,8 @@ ms.locfileid: "63451403"
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 |[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+
+Рекомендуется использовать разрешения, как описано в предыдущей таблице. Из-за ограничений безопасности подписки Microsoft Graph не будут поддерживать разрешения на запись, если требуются только разрешения на доступ на чтение.
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -80,13 +82,13 @@ OneDrive для бизнеса и SharePoint поддерживают отпра
 
 ### <a name="contact-event-and-message"></a>contact, event и message
 
-Вы можете подписаться на изменения в Outlook, события или ресурсов сообщений и  дополнительно указать в полезной нагрузке запроса POST, следует ли включать зашифрованные данные ресурсов в уведомлениях. 
+Вы можете подписаться на изменения в Outlook контактов **, событий** или сообщений  и при необходимости указать в полезных данных запроса POST, следует ли включать зашифрованные данные ресурсов в уведомления. 
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
-### <a name="onlinemeetings-presence"></a>onlineMeetings, присутствие
+### <a name="onlinemeetings-presence"></a>onlineMeetings, presence
 
-Подписки на **onlineMeetings** и  наличие требуют [](/graph/webhooks-with-resource-data#creating-a-subscription) свойства **encryptionCertificate** и **encryptionCertificateId** при создании подписки на уведомления с зашифрованными данными ресурсов. Дополнительные сведения см. [в дополнительных сведениях о настройке уведомлений об изменении, включив данные ресурсов](/graph/webhooks-with-resource-data).
+Для подписок **на onlineMeetings** и **presence** требуется свойство **encryptionCertificate** и **encryptionCertificateId** при [](/graph/webhooks-with-resource-data#creating-a-subscription) создании подписки для уведомлений с зашифрованными данными ресурсов. Дополнительные сведения см. [в статье о настройке уведомлений об изменениях для получения данных о ресурсах](/graph/webhooks-with-resource-data).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -108,7 +110,7 @@ POST /subscriptions
 
 ## <a name="response"></a>Отклик
 
-В случае успешного использования этот метод возвращает код `201 Created` отклика [и объект](../resources/subscription.md) подписки в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика [и объект](../resources/subscription.md) подписки в тексте отклика.
 
 Подробнее о том, как возвращаются ошибки, см. в статье [Возвращение ошибок][error-response].
 
@@ -116,9 +118,10 @@ POST /subscriptions
 
 ### <a name="request"></a>Запрос
 
-Предоставьте в тексте запроса описание объекта [subscription](../resources/subscription.md) в формате JSON. Поля `clientState` и `latestSupportedTlsVersion` не являются обязательными.
+Предоставьте в тексте запроса описание объекта [subscription](../resources/subscription.md) в формате JSON.
+Поля `clientState` и `latestSupportedTlsVersion` необязательны.
 
-Этот запрос создает подписку на уведомления об изменениях о новой почте, полученной в настоящее время подписанным пользователем.
+Этот запрос создает подписку для уведомлений об изменениях новых сообщений, полученных текущим пользователем, выполнившего вход.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -169,12 +172,12 @@ Content-type: application/json
 
 #### <a name="resources-examples"></a>Примеры ресурсов
 
-Ниже приводится допустимые значения для свойства ресурса.
+Ниже приведены допустимые значения для свойства ресурса.
 
 | Тип ресурса | Примеры |
 |:------ |:----- |
 |[Записи звонков](../resources/callrecords-callrecord.md)|`communications/callRecords`|
-|[Каналы](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
+|[Каналами](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
 |[Чат](../resources/chat.md)|`/chats`, `/chats/{id}`|
 |[Сообщение чата](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
 |[Контакты](../resources/contact.md)|`me/contacts`|
@@ -229,7 +232,7 @@ Content-type: application/json
 
 #### <a name="notification-endpoint-validation"></a>Проверка конечной точки уведомлений
 
-Конечная точка уведомления о подписке (указанная в свойстве **notificationUrl** ) должна быть способна отвечать на запрос проверки, как описано в настройках уведомлений об изменениях в пользовательских [данных](/graph/webhooks#notification-endpoint-validation). Если проверка завершилась сбоем, запрос на создание подписки возвращает ошибку 400 (неверный запрос).
+Конечная точка уведомления о подписке (указанная в свойстве **notificationUrl** ) должна отвечать на запрос проверки, как описано в разделе "Настройка уведомлений об изменениях в данных [пользователя"](/graph/webhooks#notification-endpoint-validation). Если проверка завершилась сбоем, запрос на создание подписки возвращает ошибку 400 (неверный запрос).
 
 [error-response]: /graph/errors
 

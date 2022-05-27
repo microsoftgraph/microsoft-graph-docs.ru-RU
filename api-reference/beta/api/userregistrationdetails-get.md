@@ -1,23 +1,23 @@
 ---
-title: Get userRegistrationDetails
-description: Ознакомьтесь с свойствами и отношениями объекта userRegistrationDetails.
-author: danielwood95
+title: Получение userRegistrationDetails
+description: Чтение свойств и связей объекта userRegistrationDetails.
+author: besiler
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 895d2a6a744fe2233fecaf9252962354bd963771
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 9d0b5e114aa9a990bcafffcf2ee94a858cc83ab0
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239136"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694744"
 ---
-# <a name="get-userregistrationdetails"></a>Get userRegistrationDetails
+# <a name="get-userregistrationdetails"></a>Получение userRegistrationDetails
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями [объекта userRegistrationDetails.](../resources/userregistrationdetails.md)
+Чтение свойств и связей объекта [userRegistrationDetails](../resources/userregistrationdetails.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,7 +51,7 @@ GET /reports/authenticationMethods/userRegistrationDetails/{userRegistrationDeta
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа и `200 OK` [объект userRegistrationDetails](../resources/userregistrationdetails.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [userRegistrationDetails](../resources/userregistrationdetails.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -120,7 +120,8 @@ Content-Type: application/json
     "methodsRegistered": [
     "microsoftAuthenticatorPush",
       "softwareOneTimePasscode"
-    ]
+    ],
+    "defaultMfaMethod": "microsoftAuthenticatorPush"
   }
 }
 ```

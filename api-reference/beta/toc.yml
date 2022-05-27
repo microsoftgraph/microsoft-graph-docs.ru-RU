@@ -925,7 +925,7 @@ items:
                     href: api/application-removekey.md
               - name: Расширения
                 items:
-                  - name: Свойство расширения
+                  - name: Свойство Extension
                     href: resources/extensionproperty.md
                     items:
                       - name: Список
@@ -13372,7 +13372,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Delete
                     href: api/educationalactivity-delete.md
-              - name: адрес электронной почты;
+              - name: Адрес электронной почты
                 items:
                   - name: Электронная почта элемента
                     href: resources/itememail.md
@@ -14606,7 +14606,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -15096,6 +15096,8 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: Отправка уведомления пользователю
                 href: api/userteamwork-sendactivitynotification.md
+              - name: Массовая отправка уведомлений нескольким пользователям
+                href: api/teamwork-sendactivitynotificationtorecipients.md
           - name: Tab
             href: resources/teamstab.md
             items:

@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 99307a2f2de13a6b526dceed38134440e92f8118
-ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
+ms.openlocfilehash: f0703dd6cf17c0d47a64e56f6158f7e539e7335f
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65549626"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695071"
 ---
 # <a name="update-device"></a>Обновление устройства
 
@@ -27,7 +27,9 @@ ms.locfileid: "65549626"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Device.ReadWrite.All, Directory.ReadWrite.All |
+|Приложение | Device.ReadWrite.All, Directory.ReadWrite.All |
+
+Вызывающему пользователю также должна быть одна из следующих [ролей](/azure/active-directory/roles/permissions-reference) *Azure AD:* глобальный администратор, *Intune администратор.* Вызывающий пользователь с ролью администратора облачных устройств может только включить или отключить устройства с помощью этого API, а пользователь  с ролью администратора Windows 365 может обновлять только основные свойства устройства.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +51,7 @@ PATCH /devices/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|accountEnabled|Логический| Если учетная запись обеспечена — `true`, в противном случае — `false`. Обновить это свойство могут только вызывающие объекты с ролями глобального администратора и администратора облачных устройств.|
+|accountEnabled|Логический| Если учетная запись обеспечена — `true`, в противном случае — `false`. Обновить это *свойство могут только* вызывающие *объекты* с ролями глобального администратора и администратора облачных устройств.|
 |operatingSystem|String|Тип операционной системы на устройстве.|
 |operatingSystemVersion|String|Версия операционной системы на устройстве.|
 |displayName|String|Отображаемое имя устройства.|
@@ -120,6 +122,8 @@ HTTP/1.1 204 No Content
 #### <a name="request"></a>Запрос
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_device_extensionAttributes"
@@ -134,6 +138,24 @@ Content-type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-device-extensionattributes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-device-extensionattributes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-device-extensionattributes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-device-extensionattributes-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Отклик

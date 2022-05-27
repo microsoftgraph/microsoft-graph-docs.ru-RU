@@ -1,16 +1,16 @@
 ---
 title: Удаление publishedResource
-description: Удаление [объекта publishedResource.](../resources/publishedresource.md)
-localization_priority: Normal
+description: Удаление объекта [publishedResource](../resources/publishedresource.md) .
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 112439c71f165c31ab88282ccc2a1a135f2ec19b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 1359d59fca785176aa8428ee217f6171eef8dc29
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130398"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694665"
 ---
 # <a name="delete-publishedresource"></a>Удаление publishedResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "50130398"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [объекта publishedResource.](../resources/publishedresource.md)
+Удаление объекта [publishedResource](../resources/publishedresource.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,9 +42,9 @@ DELETE ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -83,12 +83,16 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisionin
 [!INCLUDE [sample-code](../includes/snippets/java/delete-publishedresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-publishedresource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

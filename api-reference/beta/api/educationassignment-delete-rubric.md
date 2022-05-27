@@ -1,16 +1,16 @@
 ---
 title: Удаление educationRubric из educationAssignment
-description: Удаление образовательногоRubric из educationAssignment
-localization_priority: Normal
+description: Удаление объекта educationRubric из объекта educationAssignment
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 619938b8550647acfe10f648a20460fe9c7554aa
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: c5c0ae0cf55767753f65788575ac5e3ed22c3045
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911951"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695377"
 ---
 # <a name="remove-educationrubric-from-educationassignment"></a>Удаление educationRubric из educationAssignment
 
@@ -18,8 +18,8 @@ ms.locfileid: "52911951"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [educationRubric](../resources/educationrubric.md) из [educationAssignment](../resources/educationassignment.md).
-Этот метод не удаляет сам рубрику.
+Удаление [educationRubric](../resources/educationrubric.md) из [объекта educationAssignment](../resources/educationassignment.md).
+Этот метод не удаляет сам rubric.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -85,12 +85,16 @@ DELETE https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationrubric-from-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-educationrubric-from-educationassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

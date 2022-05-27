@@ -1,23 +1,23 @@
 ---
 title: Удаление educationRubric из educationAssignment
-description: Удаление educationRubric из educationAssignment
+description: Удаление educationRubric из объекта educationAssignment
 ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 163c829a2fd2aa88b9bfd5731ccab18070afca14
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1c6dcbf9d57b91b6861615de3c337e73e3a921f1
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090658"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694784"
 ---
 # <a name="delete-educationrubric-from-educationassignment"></a>Удаление educationRubric из educationAssignment
 
 Пространство имен: microsoft.graph
 
-Удаление [educationRubric](../resources/educationrubric.md) из [educationAssignment](../resources/educationassignment.md).
-Этот метод не удаляет сам рубрику.
+Удалите [educationRubric](../resources/educationrubric.md) из [объекта educationAssignment](../resources/educationassignment.md).
+Этот метод не удаляет сам rubric.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,7 +45,7 @@ DELETE /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf600
 
 ## <a name="request-body"></a>Тело запроса
 
-Не поставляем тело запроса для этого метода.
+Не предоставляйте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -83,12 +83,16 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationrubric-from-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-educationrubric-from-educationassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

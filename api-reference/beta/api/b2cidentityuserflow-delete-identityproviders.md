@@ -1,25 +1,25 @@
 ---
-title: Удаление identityProvider из b2cIdentityUserFlow (обесценение)
-description: Удаление identityProvider из b2cIdentityUserFlow. (неоконт.
-localization_priority: Normal
+title: Удаление identityProvider из b2cIdentityUserFlow (не рекомендуется)
+description: Удалите identityProvider из b2cIdentityUserFlow. (не рекомендуется)
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 64a72b0d286ff9e794d8ca654d498ee95f1a52de
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: ece5e74db1f27293f58f159eb142ee8b18e47888
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439814"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694707"
 ---
-# <a name="delete-an-identityprovider-from-a-b2cidentityuserflow-deprecated"></a>Удаление идентификатораProvider из b2cIdentityUserFlow (обесценилось)
+# <a name="delete-an-identityprovider-from-a-b2cidentityuserflow-deprecated"></a>Удаление identityProvider из b2cIdentityUserFlow (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
-Удаление поставщика удостоверений из [объекта b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md) Дополнительные сведения о поставщиках удостоверений, доступных для потоков пользователей, см. в справке об API [identityProviders.](../resources/identityprovider.md)
+Удаление поставщика удостоверений из [объекта b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) . Дополнительные сведения о поставщиках удостоверений, доступных для потоков пользователей, см. в справочнике по API [identityProviders](../resources/identityprovider.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -31,10 +31,10 @@ ms.locfileid: "53439814"
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Приложение| IdentityUserFlow.ReadWrite.All|
 
-Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
+Учетная запись рабочей или учебной учетной записи должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор внешних Flow удостоверений
+* Администратор учетных записей Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ DELETE /identity/b2cUserFlows/{id}/identityProviders/{id}/$ref
 
 |Имя|Описание|
 |:---------------|:----------|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -56,7 +56,7 @@ DELETE /identity/b2cUserFlows/{id}/identityProviders/{id}/$ref
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В случае неудачи возвращается ошибка `4xx` с подробностями.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="example"></a>Пример
 
@@ -91,12 +91,16 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSign
 [!INCLUDE [sample-code](../includes/snippets/java/delete-b2xuserflows-identityproviders-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-b2xuserflows-identityproviders-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

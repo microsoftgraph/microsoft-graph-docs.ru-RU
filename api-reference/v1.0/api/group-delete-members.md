@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 35fd3cd9d3537f62af8581f282e67c39af5331b7
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 2f2d8e5f632112958c0363c535daa85a35d01e65
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65209585"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694771"
 ---
 # <a name="remove-member"></a>Удаление участника
 
@@ -24,8 +24,8 @@ ms.locfileid: "65209585"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                             |
 | :------------------------------------- | :---------------------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                          |
+| Делегированное (рабочая или учебная учетная запись)     | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                          |
 | Приложение                            | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > [!IMPORTANT]
@@ -88,6 +88,10 @@ DELETE https://graph.microsoft.com/v1.0/groups/{group-id}/members/{directory-obj
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-member-from-group-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/delete-member-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-member-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: a0649f60e2dda8ea072e226bd8b03ab0e52ba783
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 5bb7971219fcbd97e56acd8933bfc47608c3cb25
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65341701"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719685"
 ---
 ```go
 
@@ -42,13 +42,10 @@ requestBody.SetAvailabilityStartDateTime(&availabilityStartDateTime)
 availabilityEndDateTime, err := time.Parse(time.RFC3339, "2021-12-31T20:01:37Z")
 requestBody.SetAvailabilityEndDateTime(&availabilityEndDateTime)
 requestBody.SetLanguageTags( []String {
-    "en-US",
+    "en-us",
 }
 requestBody.SetPlatforms( []DevicePlatformType {
     "ios",
-}
-requestBody.SetGroupIds( []String {
-    "groupId",
 }
 state := "published"
 requestBody.SetState(&state)

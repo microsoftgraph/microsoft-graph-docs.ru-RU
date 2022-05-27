@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5e6f1ede43bdbf93ce7f3d70922cba71f18f1a52
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 5eaef03c59f4ee7b13cb95d08e25f36de127974b
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65206491"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694449"
 ---
 # <a name="create-acceptedsender"></a>Создание объекта acceptedSender
 
@@ -98,7 +98,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-acceptedsender-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-acceptedsender-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

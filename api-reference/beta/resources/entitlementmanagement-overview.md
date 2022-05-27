@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 79f3097f521f40124539314c06973f21b4a8a764
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 520d786906963250024121144865cfcf15e07560
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133218"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694737"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Работа с API Azure AD управления правами
 
@@ -49,7 +49,7 @@ Azure Active Directory (Azure AD) позволяет управлять дост
 
 | Метод           | Тип возвращаемых данных    |Описание|
 |:---------------|:--------|:----------|
-| [получение](../api/entitlementmanagementsettings-get.md); | [entitlementManagementSettings](entitlementmanagementsettings.md) | Чтение свойств объекта **entitlementManagementSettings** . |
+| [Получение](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Чтение свойств объекта **entitlementManagementSettings** . |
 | [Обновление](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Обновление свойств объекта **entitlementManagementSettings** . |
 | [Перечисление accessPackage](../api/entitlementmanagement-list-accesspackages.md) | [Коллекция accessPackage](accesspackage.md) | Получение списка объектов **accessPackage** . |
 | [Создание accessPackage](../api/entitlementmanagement-post-accesspackages.md) | [accessPackage](accesspackage.md) | Создайте объект **accessPackage** . |
@@ -104,7 +104,7 @@ Azure Active Directory (Azure AD) позволяет управлять дост
 |[Добавление internalSponsors](../api/connectedorganization-post-internalsponsors.md) | Нет | Добавьте пользователя или группу во внутренних спонсоров **connectedOrganization** . |
 |[Добавление externalSponsors](../api/connectedorganization-post-externalsponsors.md) | Нет | Добавьте пользователя или группу во внешних спонсоров **connectedOrganization** . |
 |[Удаление internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | Нет | Удалите пользователя или группу из внутренних спонсоров **connectedOrganization** . |
-|[Получение утверждения](../api/approval-get.md) | [Утверждения](approval.md) | Получение свойств объекта **утверждения** . |
+|[Получение утверждения](../api/approval-get.md) | [утверждение](approval.md) | Получение свойств объекта **утверждения** . |
 |[Список approvalSteps](../api/approval-list-steps.md) | [Коллекция approvalStep](approvalstep.md) | Вывод списка **объектов approvalStep** , связанных с **объектом утверждения** . |
 |[Получение approvalStep](../api/approvalstep-get.md) | [approvalStep](approvalstep.md) | Получение свойств объекта **approvalStep** . |
 |[Обновление approvalStep](../api/approvalstep-update.md) | Нет | Примените утверждение или отклонение решения для **объекта approvalStep** . |
@@ -117,9 +117,9 @@ Azure Active Directory (Azure AD) позволяет управлять дост
 - [approvalStep —](approvalstep.md) используется в [утверждении для](approval.md) различения различных шагов утверждения.
 - [userSet](userset.md) subtypes [singleUser](singleuser.md), [groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md), and [externalSponsors](externalsponsors.md) - Used in [requestorSettings](requestorsettings.md), [approvalStage](approvalstage.md), [approvalStep](approvalstep.md) and [assignmentReviewSettings](assignmentreviewsettings.md).
 - [accessPackageSubject](accesspackagesubject.md) — используется в [accessPackageAssignment](accesspackageassignment.md) в качестве пользователя субъекта с назначением пакета доступа.
-- [identitySource](identitysource.md) — используется в [connectedOrganization](connectedorganization.md), одном из [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) или [externalDomainFederation](externaldomainfederation.md).
+- [identitySource](identitysource.md) — используется в [connectedOrganization](connectedorganization.md), одном из [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [crossCloudAzureActiveDirectoryTenant](crosscloudazureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) или [externalDomainFederation](externaldomainfederation.md).
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также
 
  - [Что такое Azure AD управления правами?](/azure/active-directory/governance/entitlement-management-overview)
 

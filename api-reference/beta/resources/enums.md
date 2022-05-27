@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: d524a6d1015943b269f95535aa7cf3a390aa57b7
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: 14b0c2e9af8ea111cca62036bf4de18a9af57f50
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917635"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695554"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
@@ -115,8 +115,8 @@ ms.locfileid: "64917635"
 
 |Member|
 |:---|
-|пользователь|
-|group;|
+|пользователь;|
+|group|
 
 ### <a name="accesspackagefilterbycurrentuseroptions-values"></a>значения accessPackageFilterByCurrentUserOptions
 
@@ -190,7 +190,7 @@ ms.locfileid: "64917635"
 | Элемент             | Значение | Описание |
 |:-------------------|:------| :------|
 | Нет               | 0     | Политика не применяется ни к пользователям, ни к группам в организации. |
-| Все                | 1     | Политика применяется ко всем пользователям и группам в организации. Значение по умолчанию. |
+| все                | 1     | Политика применяется ко всем пользователям и группам в организации. Значение по умолчанию. |
 | Выбранного           | 2     | Политика применяется к определенным пользователям или группам в организации. |
 | unknownFutureValue | 3     | Значение sentinel для развиваемого перечисления. Не следует использовать. |
 
@@ -320,7 +320,7 @@ ms.locfileid: "64917635"
 
 |Member|
 |:---|
-|Все|
+|все|
 |Обозреватель|
 |mobileAppsAndDesktopClients|
 |exchangeActiveSync|
@@ -340,9 +340,9 @@ ms.locfileid: "64917635"
 |:---|
 |String|
 |Целое число|
-|Справочные материалы|
+|Справка|
 |Binary|
-|Логическое|
+|Логический|
 |DateTime|
 
 ### <a name="mutability-values"></a>значения изменяемости
@@ -518,7 +518,7 @@ ms.locfileid: "64917635"
 
 |Member|
 |:---|
-|userPrincipalName.|
+|userPrincipalName|
 |onPremisesUserPrincipalName|
 |userPrincipalUsername|
 |onPremisesUserPrincipalUsername|
@@ -584,7 +584,7 @@ ms.locfileid: "64917635"
 |:---|
 |email|
 |mobileSMS|
-|mobilePhone;|
+|mobilePhone|
 |officePhone|
 |securityQuestion|
 |appNotification|
@@ -594,6 +594,21 @@ ms.locfileid: "64917635"
 |Фидо|
 |alternateMobilePhone|
 |mobilePhoneAndSMS|
+|unknownFutureValue|
+
+
+### <a name="defaultmfamethodtype-values"></a>Значения defaultMfaMethodType 
+
+
+
+|Member|
+|:---|
+|Нет|
+|mobilePhone|
+|alternateMobilePhone|
+|officePhone|
+|microsoftAuthenticatorPush|
+|softwareOneTimePasscode|
 |unknownFutureValue|
 
 
@@ -631,7 +646,7 @@ ms.locfileid: "64917635"
 |приложение|
 |users|
 |devicePlatform|
-|расположение|
+|расположение;|
 |clientType|
 |signInRisk|
 |userRisk|
@@ -673,17 +688,17 @@ ms.locfileid: "64917635"
 
 |Member|
 |:---|
-|Все|
+|все|
 |privilegedAdmin|
 |Администратора|
-|пользователь|
+|пользователь;|
 |unknownFutureValue|
 
 ### <a name="includedusertypes-values"></a>Значения includedUserTypes
 
 |Member|
 |:---|
-|Все|
+|все|
 |член|
 |Гостевой|
 |unknownFutureValue|
@@ -692,7 +707,7 @@ ms.locfileid: "64917635"
 
 |Member|
 |:---|
-|пользователь|
+|пользователь;|
 |приложение|
 |system|
 |unknownFutureValue|
@@ -752,7 +767,7 @@ ms.locfileid: "64917635"
 |Member|
 |:---|
 |email|
-|mobilePhone;|
+|mobilePhone|
 |officePhone|
 |securityQuestion|
 |appNotification|
@@ -777,7 +792,7 @@ ms.locfileid: "64917635"
 
 |Member|
 |:---|
-|userPrincipalName.|
+|userPrincipalName|
 |phoneNumber|
 |proxyAddress|
 |qrCode|
@@ -798,7 +813,7 @@ ms.locfileid: "64917635"
 
 |Member|
 |:---|
-|пользователь|
+|пользователь;|
 |Запрос|
 |servicePrincipal|
 |v1ConditionalAccess|
@@ -1039,8 +1054,8 @@ ms.locfileid: "64917635"
 
 |Member|
 |:---|
-|пользователь|
-|group;|
+|пользователь;|
+|group|
 
 ### <a name="authenticationmethodstate-values"></a>Значения authenticationMethodState
 
@@ -1075,7 +1090,7 @@ ms.locfileid: "64917635"
 
 |Member|
 |:---|
-|birthday;|
+|birthday|
 |Свадебные|
 |unknownFutureValue|
 
@@ -1146,7 +1161,7 @@ ms.locfileid: "64917635"
 |Member|
 |:---|
 |email|
-|mobilePhone;|
+|mobilePhone|
 |officePhone|
 |securityQuestion|
 |appNotification|
@@ -1298,7 +1313,7 @@ ms.locfileid: "64917635"
 | Member
 |:-----------------
 | Нет|
-| пользователь|
+| пользователь;|
 | manager|
 | unknownFutureValue|
 
@@ -1347,7 +1362,7 @@ ms.locfileid: "64917635"
 |:-------------------------
 | Нет
 | contactsOnly
-| Все
+| все
 
 
 ### <a name="automaticrepliesstatus-values"></a>Значения automaticRepliesStatus
@@ -1686,7 +1701,7 @@ ms.locfileid: "64917635"
 ### <a name="onenotesourceservice-values"></a>Значения onenoteSourceService
 | Member
 |:---------------------
-| Неизвестно
+| Unknown
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -1740,12 +1755,12 @@ ms.locfileid: "64917635"
 | preset7  | 7      |
 | preset8  | 8      |
 | preset9  | 9      |
-| preset10 | 10     |
+| preset10 | 10    |
 | preset11 | 11    |
 | preset12 | 12     |
 | preset13 | 13    |
-| preset14 | 14     |
-| preset15 | 15     |
+| preset14 | 14    |
+| preset15 | 15    |
 | preset16 | 16    |
 | preset17 | 17     |
 | preset18 | 18     |
@@ -1804,7 +1819,7 @@ ms.locfileid: "64917635"
 | Элемент    | Значение | Описание                   |
 | :-------- | :---- | :---------------------------- |
 | unknown   | 0     | Неизвестно.                      |
-| Ненадежных | 10     | Уровень целостности ненадежный. |
+| Ненадежных | 10    | Уровень целостности ненадежный. |
 | Низкой       | 20    | Уровень целостности низкий.       |
 | medium    | 30    | Уровень целостности — средний.    |
 | Высокой      | 40    | Уровень целостности — Высокий.      |
@@ -1851,7 +1866,7 @@ ms.locfileid: "64917635"
 | multiSz           | 7      | REG_MULTI_SZ типа значения реестра.            |
 | Нет              | 8      | REG_NONE типа значения реестра.                |
 | qword             | 9      | REG_QWORD типа значения реестра.               |
-| qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN типа значения реестра. |
+| qwordlittleEndian | 10    | REG_QWORD_LITTLE_ENDIAN типа значения реестра. |
 | Sz                | 11    | REG_SZ типа значения реестра.                  |
 
 ### <a name="alertseverity-values"></a>Значения alertSeverity
@@ -1873,7 +1888,7 @@ ms.locfileid: "64917635"
 | Элемент     | Значение | Описание           |
 | :--------- | :---- | :-------------------- |
 | unknown    | 0     | Неизвестное состояние.       |
-| newAlert   | 10     | Оповещение является новым.         |
+| newAlert   | 10    | Оповещение является новым.         |
 | Inprogress | 20    | Оповещение выполняется. |
 | resolved   | 30    | Оповещение разрешается.    |
 
@@ -1907,7 +1922,7 @@ ms.locfileid: "64917635"
 | Элемент        | Значение | Описание                     |
 | :------------ | :---- | :------------------------------ |
 | unknown       | –1    | Неизвестно.                        |
-| Стандартный      | 0     | Член группы "Стандартные пользователи". |
+| стандарт      | 0     | Член группы "Стандартные пользователи". |
 | Мощность         | 1     | Член группы Power Users.    |
 | Администратора | 2     | Член группы "Администраторы". |
 
@@ -1924,7 +1939,7 @@ ms.locfileid: "64917635"
 
 |Member|
 |:---|
-|Все|
+|все|
 |любой|
 
 ### <a name="risklevel-values"></a>Значения riskLevel
@@ -2047,7 +2062,7 @@ ms.locfileid: "64917635"
 
 | Member             |
 | :----------------- |
-| Стандартный           |
+| стандарт           |
 | Частная            |
 | unknownFutureValue |
 | общие             |
@@ -2089,7 +2104,7 @@ ms.locfileid: "64917635"
 |Member|
 |:---|
 |Signin|
-|пользователь|
+|пользователь;|
 |unknownFutureValue|
 |servicePrincipal|
 
@@ -2169,7 +2184,7 @@ ms.locfileid: "64917635"
 
 | Элемент     | Значение | Описание                                                                                                                      |
 | :--------- | :---- | :------------------------------------------------------------------------------------------------------------------------------- |
-| Стандартный   | 0     | Метка задается службой или условием политики.                                                                              |
+| стандарт   | 0     | Метка задается службой или условием политики.                                                                              |
 | Привилегированных | 1     | Метка была явно задана пользователем.                                                                                          |
 | Авто       | 2     | Разрешает переопределение любой существующей метки. Обоснование, необходимое для понижения уровня. Приводит к методу `standard` присваивания в метаданных. |
 
@@ -2289,7 +2304,7 @@ ms.locfileid: "64917635"
 |windows|
 |WindowsPhone|
 |macOS|
-|Все|
+|все|
 |unknownFutureValue|
 
 ### <a name="priority-values"></a>значения приоритета
@@ -2298,7 +2313,7 @@ ms.locfileid: "64917635"
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкая|2|
+|Низкие|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>Значения threatAssessmentContentType
 
@@ -2336,7 +2351,7 @@ ms.locfileid: "64917635"
 | Элемент        | Значение | Описание              |
 |:--------------|:------|:-------------------------|
 | Неопределенный     | 0     | Пока не известно.            |
-| пользователь          | 1     | Отправка пользователя.         |
+| пользователь;          | 1     | Отправка пользователя.         |
 | Администратора | 2     | Отправка администратора клиента. |
 
 ### <a name="threatassessmentresulttype-values"></a>Значения threatAssessmentResultType
@@ -2361,12 +2376,12 @@ ms.locfileid: "64917635"
 | notInAddressBook      | 7      | Исключить отправителя не в адресной книге. |
 | firstTimeSender       | 8      | Заблокировано из-за первого отправителя.   |
 | autoPurgeToInbox      | 9      | Перемещение сообщения TimeTravel в папку "Входящие".   |
-| autoPurgeToJunk       | 10     | Перемещение сообщения TimeTravel в нежелательное.    |
+| autoPurgeToJunk       | 10    | Перемещение сообщения TimeTravel в нежелательное.    |
 | autoPurgeToDeleted    | 11    | Сообщение о перемещении TimeTravel в удаленное. |
 | Исходящих              | 12     | Исходящая почта.                      |
 | notJunk               | 13    | Разрешить из-за нежелательной почты.              |
-| Нежелательной                  | 14     | Заблокировано из-за нежелательной почты.                |
-| unknownFutureValue    | 15     | Элемент sentinel.                  |
+| Нежелательной                  | 14    | Заблокировано из-за нежелательной почты.                |
+| unknownFutureValue    | 15    | Элемент sentinel.                  |
 
 ### <a name="threatassessmentrequestpivotproperty-values"></a>Значения threatAssessmentRequestPivotProperty
 
@@ -2426,12 +2441,12 @@ ms.locfileid: "64917635"
 |Валюты | столбец валюты. |
 |dateTime | Столбец dateTime. |
 |Поиска | столбец подстановки. |
-|boolean | Столбец "Да" или "Нет". |
-|пользователь | столбец пользователя или группы. |
+|логический | Столбец "Да" или "Нет". |
+|пользователь; | столбец пользователя или группы. |
 |url | гиперссылка или столбец рисунка. |
 |Рассчитывается | вычисляемый столбец. |
-|расположение | столбец location. |
-|Географического расположения | столбец географического расположения. |
+|расположение; | столбец location. |
+|географическое положение | столбец географического расположения. |
 |term | столбец управляемых метаданных. |
 |многотерминантная | столбец управляемых метаданных, который принимает несколько значений. |
 |Миниатюру | Столбец изображения. |
@@ -2451,7 +2466,7 @@ ms.locfileid: "64917635"
 | Элемент                | Значение | Описание                         |
 |:----------------------|:------|:------------------------------------|
 | string                | 1     | строковый тип данных                    |
-| boolean               | 2     | тип данных Boolean                   |
+| логический               | 2     | тип данных Boolean                   |
 | int64                 | 3     | Тип данных Int                       |
 | Stringcollection      | 4     | Тип данных коллекции строк         |
 |dateTime|5||
@@ -2529,7 +2544,7 @@ ms.locfileid: "64917635"
 |:---|
 |group|
 |unknownFutureValue|
-|Реестр|
+|состав|
 
 ### <a name="plannerplancontexttype-values"></a>Значения plannerPlanContextType
 
@@ -2555,7 +2570,7 @@ ms.locfileid: "64917635"
 |Member|
 |:---|
 |Нет|
-|Все|
+|все|
 |Выбранного|
 
 ### <a name="teamsappinstallationscope-values"></a>Значения teamsAppInstallationScope
@@ -2718,7 +2733,7 @@ ms.locfileid: "64917635"
 
 |Элемент| Значение | Описание               |
 |:---|:---- | :------------------------ |
-|Стандартный| 0     |Тип по умолчанию для тега. Тегами уровня "Стандартный" в команде могут управлять участники с разрешениями.|
+|стандарт| 0     |Тип по умолчанию для тега. Тегами уровня "Стандартный" в команде могут управлять участники с разрешениями.|
 
 ### <a name="teamworkapplicationidentitytype-values"></a>Значения teamworkApplicationIdentityType
 
@@ -2798,7 +2813,7 @@ ms.locfileid: "64917635"
 
 |Member|
 |:---|
-|Кроме того:|
+|или|
 |и|
 
 ### <a name="subjectrightsrequeststage-values"></a>Значения subjectRightsRequestStage 

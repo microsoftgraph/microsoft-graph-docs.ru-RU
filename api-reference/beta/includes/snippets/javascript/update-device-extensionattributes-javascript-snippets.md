@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: a55e8153aea254eadcbd7bb8574b69e872a5a9e8
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 9d62578f181fd552350c883b5d5df70fdfe8a96b
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688603"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719726"
 ---
 ```javascript
 
@@ -21,7 +21,7 @@ const device = {
     }
 };
 
-await client.api('/devices/{id}')
+await client.api('/devices/7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac')
     .version('beta')
     .update(device);
 

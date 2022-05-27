@@ -1,16 +1,16 @@
 ---
 title: Убрать tokenIssuancePolicy
-description: Удалите маркерIssuancePolicy из приложения.
+description: Удалите tokenIssuancePolicy из приложения.
 ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 33edea38007084f8e46662a4c0a23f358ace4e89
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8a4f112478525306e7b9ef4833946256ddc27067
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59080473"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695545"
 ---
 # <a name="remove-tokenissuancepolicy"></a>Убрать tokenIssuancePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "59080473"
 
 
 
-Удалите [маркерIssuancePolicy](../resources/tokenissuancepolicy.md) из [приложения.](../resources/application.md)
+Удалите [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) из [приложения](../resources/application.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "59080473"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Приложение                            | Policy.Read.All и Application.ReadWrite.OwnedBy, Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ DELETE /applications/{id}/tokenIssuancePolicies/{id}/$ref
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/v1.0/applications/{id}/tokenIssuancePolicies/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-tokenissuancepolicy-from-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-tokenissuancepolicy-from-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

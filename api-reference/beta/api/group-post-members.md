@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5aeaa4a0955ed595a481191fce2946a0e7013be0
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 763147a8fd43ff64bab71e2c6248957936960919
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398379"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695216"
 ---
 # <a name="add-members"></a>Добавление участников
 
@@ -20,10 +20,10 @@ ms.locfileid: "65398379"
 
 Добавляйте участника в группу Microsoft 365 или группу безопасности через свойство навигации **members**.
 
-В следующей таблице показаны типы членов, которые можно добавить в группы безопасности или Microsoft 365 группы.
+В следующей таблице показаны типы участников, которых можно добавить в группы безопасности или группы Microsoft 365.
 
 
-| Тип объектов             | Член групп безопасности     | Член Microsoft 365 группы |
+| Тип объектов             | Участник групп безопасности.     | Участник группы Microsoft 365 |
 |-------------------------|-------------------------------|-------------------------------|
 | Пользователи                   | ![Может быть участником группы][Yes]   | ![Может быть участником группы][Yes]   |
 | Группы безопасности         | ![Может быть участником группы][Yes]   | ![Не может быть участником группы][No] |
@@ -116,7 +116,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/add-group-member-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/add-group-member-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

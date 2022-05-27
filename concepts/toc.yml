@@ -732,6 +732,8 @@ items:
                 href: toolkit/providers/teams.md
               - name: Поставщик MSAL2 Teams
                 href: toolkit/providers/teams-msal2.md
+              - name: Поставщик TeamsFx
+                href: toolkit/providers/teamsfx.md
               - name: Поставщик Electron
                 href: toolkit/providers/electron.md
               - name: Поставщик прокси

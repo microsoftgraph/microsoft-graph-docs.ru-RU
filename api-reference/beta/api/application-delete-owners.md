@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: eb822cb2d857731f2507edf7a00fb2e8dea0a634
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: e0f1d57604f9c17d345ed6087271e4681f004f3c
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669363"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695329"
 ---
 # <a name="remove-owner"></a>Удаление владельца
 
@@ -18,7 +18,7 @@ ms.locfileid: "63669363"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите владельца из [приложения](../resources/application.md).
+Удаление владельца из [приложения](../resources/application.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "63669363"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ DELETE /applications/{id}/owners/{id}/$ref
 | Авторизация | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажи идентификатор объекта каталога, назначенного в качестве владельца.
+В тексте запроса укажите идентификатор объекта каталога, который будет назначен в качестве владельца.
 
 ## <a name="response"></a>Отклик
 
@@ -78,12 +78,16 @@ DELETE https://graph.microsoft.com/beta/applications/{id}/owners/{id}/$ref
 [!INCLUDE [sample-code](../includes/snippets/java/application-delete-owners-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-delete-owners-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

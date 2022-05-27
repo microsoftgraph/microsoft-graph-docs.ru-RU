@@ -1,23 +1,23 @@
 ---
 title: Удаление tenantTag
-description: Удаляет объект tenantTag.
+description: Удаление объекта tenantTag.
 author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 8da414f46b8116c3f7f5daef30ddb66dbc1993c8
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 0cace0ce196ae1a521610d0c2beeaa9478a5885b
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792220"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695561"
 ---
 # <a name="delete-tenanttag"></a>Удаление tenantTag
 Пространство имен: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет объект [tenantTag.](../resources/managedtenants-tenanttag.md)
+Удаление объекта [tenantTag](../resources/managedtenants-tenanttag.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,7 +41,7 @@ DELETE /tenantRelationships/managedTenants/tenantTags/{tenantTagId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -53,6 +53,8 @@ DELETE /tenantRelationships/managedTenants/tenantTags/{tenantTagId}
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -88,7 +90,7 @@ DELETE https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenan
 
 
 ### <a name="response"></a>Отклик
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true

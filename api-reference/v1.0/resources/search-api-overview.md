@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 046fd5a8e3463ab9efcdd63c79eacb82302d70fa
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: 50e476e116ca4af3882364415c665d705f96817f
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894763"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695393"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 
@@ -72,6 +72,7 @@ API Microsoft Search предоставляет метод [query](../api/search
 
 - В исходном запросе задайте меньший размер первой страницы. Например, задайте для свойства **from** значение 0, а для свойства **size** — 25.
 - Для получения последующих страниц обновите свойства **from** и **size**. Вы можете увеличивать размер страницы в каждом последующем запросе. В приведенной ниже таблице показан пример.
+- Максимальный размер страницы — 1000.
 
     | Страница | from | size |
     |:-----|:-----|:-----|

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 36d96649c4b527caf1772e9fab9045718e405d12
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: a6822acb977374fd3b47045984d7632e1797662c
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65212053"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695462"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -384,6 +384,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-schemaextension-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-schemaextension-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -396,7 +400,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
->**Примечание:** Чтобы удалить значение расширения схемы из пользовательского объекта, задайте для свойства значение `null`. Пример:
+>**Примечание.** Чтобы удалить значение расширения схемы из пользовательского объекта, задайте для свойства значение `null`. Например:
 >
 >```http
 >PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
@@ -407,7 +411,7 @@ HTTP/1.1 204 No Content
 >}
 >```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 - [Добавление пользовательских данных в ресурсы с помощью расширений](/graph/extensibility-overview)
 - [Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](/graph/extensibility-open-users)

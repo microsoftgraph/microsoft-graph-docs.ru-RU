@@ -1,24 +1,24 @@
 ---
-title: Удаление accessPackage из несовместимыхAccessPackages
-description: Удалите ссылку, которая указывает, что пакет доступа несовместим с указанным пакетом доступа.
-localization_priority: Normal
+title: Удаление accessPackage из несовместимых пакетовAccessPackage
+description: Удалите ссылку, указывающее, что пакет доступа несовместим с указанным пакетом доступа.
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c228402a433c3d9920481030ead07e79333459bc
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: d06f46f1e93b9afb97ab0b49a707f90f1f08f10d
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439386"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694077"
 ---
-# <a name="remove-accesspackage-from-incompatibleaccesspackages"></a>Удаление accessPackage из несовместимыхAccessPackages
+# <a name="remove-accesspackage-from-incompatibleaccesspackages"></a>Удаление accessPackage из несовместимых пакетовAccessPackage
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление пакета [доступа](../resources/accesspackage.md) из списка пакетов доступа, помеченных как несовместимые в [accessPackage.](../resources/accesspackage.md)  
+Удалите [пакет доступа](../resources/accesspackage.md) из списка пакетов доступа, помеченных как несовместимые в [accessPackage](../resources/accesspackage.md).  
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,7 +42,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibl
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -84,13 +84,17 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 [!INCLUDE [sample-code](../includes/snippets/java/remove-incompatibleaccesspackage-from-accesspackage-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/remove-incompatibleaccesspackage-from-accesspackage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"

@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f4a25616baa6698b3365c077ee85f907d93d44f2
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: a00c0032e39b3de66dcedb99c8a9e0c6e040b204
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396380"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695109"
 ---
 # <a name="remove-educationclass"></a>Удаление educationClass
 
@@ -47,7 +47,7 @@ DELETE /education/schools/{id}/classes/{classId}/$ref
 При успешном выполнении этот метод возвращает код отклика `204 No Content` и тело отклика.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -81,7 +81,7 @@ DELETE https://graph.microsoft.com/beta/education/schools/10001/classes/11001
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 <!-- {

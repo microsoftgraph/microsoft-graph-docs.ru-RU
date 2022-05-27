@@ -1,16 +1,16 @@
 ---
 title: Удаление внешнего спонсора подключенной организации
 description: Удалите пользователя или группу из внешних спонсоров подключенной организации.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 936c91f5ebd3bff0af8ec25a4ce542707e04227d
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 44b70bf8018afd72d55a2905a6ba9dddd6297eb8
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786512"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695447"
 ---
 # <a name="remove-connected-organization-external-sponsor"></a>Удаление внешнего спонсора подключенной организации
 
@@ -18,7 +18,7 @@ ms.locfileid: "52786512"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите пользователя или группу из внешних спонсоров подключенной организации. Внешние спонсоры — это набор пользователей, которые могут утверждать запросы от имени других пользователей из этой связанной организации.
+Удалите пользователя или группу из внешних спонсоров подключенной организации. Внешние спонсоры — это набор пользователей, которые могут утверждать запросы от имени других пользователей из этой подключенной организации.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,7 +37,7 @@ DELETE /identityGovernance/entitlementManagement/connectedOrganizations/{connect
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -77,12 +77,16 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 [!INCLUDE [sample-code](../includes/snippets/java/delete-externalsponsor-from-connectedorganization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-externalsponsor-from-connectedorganization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"

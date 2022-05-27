@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 95a6ea99386aa69aa7c0f783719ef0731d50dba7
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 08789be4954db6948693d64d110e8512ca72d19e
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336293"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694864"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -26,7 +26,7 @@ ms.locfileid: "63336293"
 
 Создание подписки требует наличия области чтения для ресурса. Например, чтобы получать уведомления об изменениях в сообщениях, приложению необходимо `Mail.Read` разрешение. 
  
-В зависимости от ресурса и типа требующегося разрешения (делегированное или для приложения) разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
+В зависимости от ресурса и типа требующегося разрешения (делегированное или для приложения) разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Чтобы узнать больше, в том числе, [как соблюдать осторожность ](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений, найдите следующие разрешения в [Разрешениях](/graph/permissions-reference).
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Application |
 |:-----|:-----|:-----|:-----|
@@ -48,6 +48,8 @@ ms.locfileid: "63336293"
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается | Не поддерживается | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+
+Рекомендуется использовать разрешения, как описано в предыдущей таблице. Из-за ограничений безопасности подписки Microsoft Graph не будут поддерживать разрешения на запись, если необходимы только разрешения на чтение.
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 

@@ -1,23 +1,23 @@
 ---
-title: Список userRegistrationDetails
-description: Получите список методов проверки подлинности, зарегистрированных для пользователя в объекте userRegistrationDetails.
+title: Перечисление userRegistrationDetails
+description: Получение списка методов проверки подлинности, зарегистрированных для пользователя, как определено в объекте userRegistrationDetails.
 author: danielwood95
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: f89d322841c7b9d3e1d6c3153bd6e9e06415b5cb
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 474750f2f954a75d7fcaa403f061fc96bc663283
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239010"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694857"
 ---
-# <a name="list-userregistrationdetails"></a>Список userRegistrationDetails
+# <a name="list-userregistrationdetails"></a>Перечисление userRegistrationDetails
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список методов проверки подлинности, зарегистрированных для пользователя в [объекте userRegistrationDetails.](../resources/userregistrationdetails.md)
+Получение списка методов проверки подлинности, зарегистрированных для пользователя, как определено в [объекте userRegistrationDetails](../resources/userregistrationdetails.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,7 +39,7 @@ GET /reports/authenticationMethods/userRegistrationDetails
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает только `$filter` параметры `$orderBy` запроса oData и OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает только параметры `$filter` запроса `$orderBy` oData и параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -51,7 +51,7 @@ GET /reports/authenticationMethods/userRegistrationDetails
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [userRegistrationDetails](../resources/userregistrationdetails.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [userRegistrationDetails](../resources/userregistrationdetails.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -122,7 +122,8 @@ Content-Type: application/json
             "methodsRegistered": [
                 "microsoftAuthenticatorPush",
                 "softwareOneTimePasscode"
-            ]
+            ],
+            "defaultMethod": "microsoftAuthenticatorPush"
         },
         {
             "id": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
@@ -134,7 +135,8 @@ Content-Type: application/json
             "isMfaRegistered": false,
             "isMfaCapable": false,
             "isPasswordlessCapable": false,
-            "methodsRegistered": []
+            "methodsRegistered": [],
+            "defaultMethod": ""    
         },
         {
             "id": "c8096958-797c-44fa-8fde-a6fb62567cf0",
@@ -150,7 +152,8 @@ Content-Type: application/json
                 "mobilePhone",
                 "microsoftAuthenticatorPush",
                 "softwareOneTimePasscode"
-            ]
+            ],
+            "defaultMethod": "mobilePhone"
         }
     ]
 }

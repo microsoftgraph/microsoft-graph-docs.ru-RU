@@ -1,16 +1,16 @@
 ---
 title: Присоединение educationRubric к educationAssignment
-description: Прикрепить существующий объект educationRubric к educationAssignment.
-localization_priority: Normal
+description: Присоедините существующий объект educationRubric к объекту educationAssignment.
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7723f95da14bfd32cfb75eff64f193085ac3cff3
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 9e1f0bf036510634229d2868c507010b71375c13
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911904"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694918"
 ---
 # <a name="attach-educationrubric-to-an-educationassignment"></a>Присоединение educationRubric к educationAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "52911904"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Прикрепить существующий [объект educationRubric](../resources/educationrubric.md) к [educationAssignment](../resources/educationassignment.md).
+Присоедините [существующий объект educationRubric](../resources/educationrubric.md) к [объекту educationAssignment](../resources/educationassignment.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +46,7 @@ PUT /education/classes/{id}/assignments/{id}/rubric/$ref
 
 ## <a name="request-body"></a>Тело запроса
 
-В теле запроса укажи ID OData существующего [объекта educationRubric.](../resources/educationrubric.md)
+В тексте запроса укажите идентификатор OData существующего объекта [educationRubric](../resources/educationrubric.md) .
 
 ## <a name="response"></a>Отклик
 
@@ -88,12 +88,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationrubric-from-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationrubric-from-educationassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

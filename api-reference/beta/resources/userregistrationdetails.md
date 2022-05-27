@@ -1,46 +1,47 @@
 ---
-title: тип ресурса userRegistrationDetails
-description: Представляет состояние методов проверки подлинности пользователя, в том числе зарегистрированных методов и функций, на которые зарегистрирован и способен пользователь (например, многофакторная проверка подлинности, сброс пароля самообслуживления и проверка подлинности без паролей).
+title: Тип ресурса userRegistrationDetails
+description: Представляет состояние методов проверки подлинности пользователя, включая, какие методы зарегистрированы и какие функции зарегистрированы и поддерживаются пользователем (например, многофакторная проверка подлинности, самостоятельный сброс пароля и проверка подлинности без пароля).
 author: danielwood95
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 11d447b1b4c9069bd4c8d8c29271c4d0b6f51380
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: 8c2df96cd680896854866618c10a70aae3e65a37
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201787"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694730"
 ---
-# <a name="userregistrationdetails-resource-type"></a>тип ресурса userRegistrationDetails
+# <a name="userregistrationdetails-resource-type"></a>Тип ресурса userRegistrationDetails
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет состояние методов проверки подлинности пользователя, в том числе зарегистрированных методов и функций, на которые зарегистрирован и способен пользователь (например, многофакторная проверка подлинности, сброс пароля самообслуживления и проверка подлинности без паролей).
+Представляет состояние методов проверки подлинности пользователя, включая, какие методы зарегистрированы и какие функции зарегистрированы и поддерживаются пользователем (например, многофакторная проверка подлинности, самостоятельный сброс пароля и проверка подлинности без пароля).
 
-Наследует от [объекта](../resources/entity.md).
+Наследует [от сущности](../resources/entity.md).
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список userRegistrationDetails](../api/authenticationmethodsroot-list-userregistrationdetails.md)|[коллекция userRegistrationDetails](../resources/userregistrationdetails.md)|Получите список объектов [userRegistrationDetails](../resources/userregistrationdetails.md) и их свойств.|
-|[Get userRegistrationDetails](../api/userregistrationdetails-get.md)|[userRegistrationDetails](../resources/userregistrationdetails.md)|Ознакомьтесь с свойствами и отношениями [объекта userRegistrationDetails.](../resources/userregistrationdetails.md)|
+|[Перечисление userRegistrationDetails](../api/authenticationmethodsroot-list-userregistrationdetails.md)|[Коллекция userRegistrationDetails](../resources/userregistrationdetails.md)|Получение списка объектов [userRegistrationDetails](../resources/userregistrationdetails.md) и их свойств.|
+|[Получение userRegistrationDetails](../api/userregistrationdetails-get.md)|[userRegistrationDetails](../resources/userregistrationdetails.md)|Чтение свойств и связей объекта [userRegistrationDetails](../resources/userregistrationdetails.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
+|defaultMfaMethod|defaultMfaMethodType|Метод, выбранный пользователем или администратором по умолчанию для выполнения многофакторной проверки подлинности для пользователя. Возможные значения: `none`, `mobilePhone`, `alternateMobilePhone`, `officePhone`, `microsoftAuthenticatorPush`, `softwareOneTimePasscode`, `unknownFutureValue`.|
 |id|String|Идентификатор объекта пользователя в Azure AD. Наследуется от [сущности](../resources/entity.md).|
-|isMfaCapable|Boolean|Зарегистрировал ли пользователь эффективный метод проверки подлинности для многофакторной проверки подлинности. Метод должен быть разрешен политикой методов [проверки подлинности.](../resources/authenticationmethodspolicy.md) Поддерживает `$filter` (`eq`).|
-|isMfaRegistered|Boolean|Зарегистрировал ли пользователь эффективный метод проверки подлинности для многофакторной проверки подлинности. Метод не обязательно может быть разрешен политикой методов [проверки подлинности.](../resources/authenticationmethodspolicy.md)  Поддерживает `$filter` (`eq`).|
-|isPasswordlessCapable|Boolean|Зарегистрировал ли пользователь надежный метод проверки подлинности без паролей (включая FIDO2, Windows Hello для бизнеса и Microsoft Authenticator (Passwordless)), разрешенный политикой методов проверки [подлинности.](../resources/authenticationmethodspolicy.md) Поддерживает `$filter` (`eq`).|
-|isSsprCapable|Boolean|Зарегистрировано ли пользователем необходимое количество методов проверки подлинности для сброса пароля самообслуживаемой и разрешено ли пользователю выполнять сброс пароля самообслуживления политикой. Поддерживает `$filter` (`eq`).|
-|isSsprEnabled|Boolean|Разрешено ли пользователю выполнять сброс пароля самообслуживки политикой. Возможно, пользователь не обязательно зарегистрировал необходимое количество методов проверки подлинности для сброса пароля самообслуживления. Поддерживает `$filter` (`eq`).|
-|isSsprRegistered|Boolean|Зарегистрировал ли пользователь необходимое количество методов проверки подлинности для сброса пароля самообслуживления. Необязательно, чтобы пользователю было разрешено выполнять сброс пароля самообслуживки политикой. Поддерживает `$filter` (`eq`).|
-|methodsRegistered|Коллекция объектов string|Коллекция зарегистрированных методов проверки подлинности, таких как `mobilePhone` `email` , `fido2` . Поддерживает `$filter` `any` (с `eq` ).|
-|userDisplayName|String| Имя отображения пользователя, например `Adele Vance` . Поддерживает `$filter` `eq` (, `startsWith` ) и `$orderBy` .|
-|userPrincipalName|String|Основное имя пользователя, например `AdeleV@contoso.com` . Поддерживает `$filter` `eq` (, `startsWith` ) и `$orderBy` .|
+|isMfaCapable|Логический|Указывает, зарегистрировал ли пользователь надежный метод проверки подлинности для многофакторной проверки подлинности. Метод должен быть разрешен политикой [методов проверки подлинности](../resources/authenticationmethodspolicy.md). Поддерживает `$filter` (`eq`).|
+|isMfaRegistered|Логический|Указывает, зарегистрировал ли пользователь надежный метод проверки подлинности для многофакторной проверки подлинности. Этот метод не обязательно может быть разрешен политикой [методов проверки подлинности](../resources/authenticationmethodspolicy.md).  Поддерживает `$filter` (`eq`).|
+|isPasswordlessCapable|Логический|Зарегистрирован ли пользователем метод строгой проверки подлинности без пароля (включая FIDO2, Windows Hello для бизнеса и Microsoft Authenticator (без пароля), разрешенный политикой методов проверки [подлинности](../resources/authenticationmethodspolicy.md). Поддерживает `$filter` (`eq`).|
+|isSsprCapable|Логический|Указывает, зарегистрировал ли пользователь необходимое количество методов проверки подлинности для самостоятельного сброса пароля и разрешено ли пользователю выполнять самостоятельный сброс пароля политикой. Поддерживает `$filter` (`eq`).|
+|isSsprEnabled|Логический|Разрешается ли пользователю выполнять самостоятельный сброс пароля по политике. Возможно, пользователь не обязательно зарегистрировал необходимое количество методов проверки подлинности для самостоятельного сброса пароля. Поддерживает `$filter` (`eq`).|
+|isSsprRegistered|Логический|Указывает, зарегистрировал ли пользователь необходимое количество методов проверки подлинности для самостоятельного сброса пароля. Пользователю не обязательно разрешено выполнять самостоятельный сброс пароля по политике. Поддерживает `$filter` (`eq`).|
+|methodsRegistered|Коллекция String|Коллекция зарегистрированных методов проверки подлинности, таких как `mobilePhone`, `email`, . `fido2` Поддерживает ( `$filter` с`any` `eq`).|
+|userDisplayName|String| Отображаемое имя пользователя, например `Adele Vance`. `$filter` Поддерживает (`eq`,`startsWith`) и `$orderBy`.|
+|userPrincipalName|String|Имя участника-пользователя, например `AdeleV@contoso.com`. `$filter` Поддерживает (`eq`,`startsWith`) и `$orderBy`.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
@@ -58,6 +59,7 @@ ms.locfileid: "62201787"
 ``` json
 {
   "@odata.type": "#microsoft.graph.userRegistrationDetails",
+  "defaultMethod": "String",
   "id": "String (identifier)",
   "userDisplayName": "String",
   "userPrincipalName": "String",

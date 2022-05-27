@@ -1,16 +1,16 @@
 ---
 title: Удаление типа ресурса tokenLifetimePolicy
-description: Удалите маркерLifetimePolicy из приложения или службыPrincipal.
-localization_priority: Normal
+description: Удалите tokenLifetimePolicy из приложения или servicePrincipal.
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8ba7813c475ee42fabafab2c9e5d42f29649ddce
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 786cd73ff31b98ec3d57270b0a9ede8108688301
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048143"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695300"
 ---
 # <a name="remove-tokenlifetimepolicy"></a>Удаление типа ресурса tokenLifetimePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "52048143"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите [маркерLifetimePolicy](../resources/tokenlifetimepolicy.md) из [приложения](../resources/application.md) или [службыPrincipal.](../resources/servicePrincipal.md)
+Удалите [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) из [приложения](../resources/application.md) или [servicePrincipal](../resources/servicePrincipal.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "52048143"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Приложение                            | Policy.Read.All и Application.ReadWrite.OwnedBy, Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ DELETE /servicePrincipals/{id}/tokenLifetimePolicies/{id}$ref
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="examples"></a>Примеры
 
@@ -84,12 +84,16 @@ DELETE https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies/
 [!INCLUDE [sample-code](../includes/snippets/java/delete-tokenlifetimepolicy-from-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-tokenlifetimepolicy-from-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

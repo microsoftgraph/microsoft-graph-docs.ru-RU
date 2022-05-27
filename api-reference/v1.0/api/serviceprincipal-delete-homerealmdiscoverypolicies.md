@@ -1,22 +1,22 @@
 ---
 title: Удаление типа ресурса homeRealmDiscoveryPolicy
-description: Удалите homeRealmDiscoveryPolicy из службыPrincipal.
+description: Удалите homeRealmDiscoveryPolicy из servicePrincipal.
 ms.localizationpriority: medium
 author: hpsin
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3ff07305d3cf8030fec6ad71dd1f541a90bcd224
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a2afe5c96a070bda59b927c2984ceb1dcfb385cf
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110146"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694721"
 ---
 # <a name="remove-homerealmdiscoverypolicy"></a>Удаление типа ресурса homeRealmDiscoveryPolicy
 
 Пространство имен: microsoft.graph
 
-Удалите [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) из [службыPrincipal.](../resources/serviceprincipal.md)
+Удалите [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) из [servicePrincipal](../resources/serviceprincipal.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "59110146"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Приложение                            | Policy.Read.All и Application.ReadWrite.OwnedBy, Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ DELETE /servicePrincipals/{id}/homeRealmDiscoveryPolicies/{id}/$ref
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/homeRealmDiscover
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-homerealmdiscoverypolicy-from-serviceprincipal-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-homerealmdiscoverypolicy-from-serviceprincipal-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
