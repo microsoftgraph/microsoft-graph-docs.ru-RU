@@ -56,7 +56,11 @@ items:
     expanded: true
     items:
       - name: Пользователи
-        href: azuread-users-concept-overview.md
+        items:
+          - name: Обзор
+            href: azuread-users-concept-overview.md
+          - name: Доступ к данным пользователя
+            href: /learn/modules/msgraph-access-user-data
       - name: Группы
         items:
           - name: Обзор
@@ -65,6 +69,8 @@ items:
             href: office365-groups-concept-overview.md
           - name: Настройка параметров группы
             href: group-set-options.md
+          - name: Управление жизненным циклом групп
+            href: /learn/modules/msgraph-access-group-data
       - name: Приложения
         items:
           - name: Обзор
