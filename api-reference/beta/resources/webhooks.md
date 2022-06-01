@@ -5,18 +5,20 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: conceptualPageType
 ms.prod: change-notifications
-ms.openlocfilehash: acbb51dcc2bde867003bb5ec3d8fd15133f3f22a
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 17edbdd21aa0fbcd0869ff81be7992159ab3655d
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368051"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820975"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
 REST API Microsoft Graph использует механизм веб-перехватчиков для доставки уведомлений об изменениях клиентам. Клиент — это веб-служба, которая настраивает свой URL-адрес для получения уведомлений. С помощью уведомлений клиентские приложения обновляют свое состояние при изменениях. Дополнительные сведения, включая сведения о подписке и обработке входящих уведомлений, см. в статье [Настройка уведомлений об изменениях в пользовательских данных](/graph/webhooks).
 
@@ -36,14 +38,15 @@ REST API Microsoft Graph использует механизм веб-перех
 | Личный [контакт][] Outlook | Изменения всех личных контактов в почтовом ящике пользователя:<br>`/users/{id}/contacts` | Да |
 | [Оповещение][] безопасности | Изменения в конкретном предупреждении:<br>`/security/alerts/{id}` <br>Изменения в отфильтрованных оповещениях:<br> `/security/alerts/?$filter`| Нет |
 | [callRecord][] в Teams | Изменения во _всех_ записях звонков: `/communications/callRecords` | Нет |
-| [Канал][] Teams  | Изменения каналов во всех командах:<br>`/teams/getAllChannels` <br>Изменения канала в определенной группе:<br>`/teams/{id}/channels` | Да |
+| [Канал][] Teams  | Изменения каналов во всех командах:<br>`/teams/getAllChannels` <br>Изменения канала в определенной команде:<br>`/teams/{id}/channels` | Да |
 | [Чат][] Teams | Изменения в любом чате в клиенте:<br>`/chats` <br>Изменения в определенном чате:<br>`/chats/{id}` | Да |
-| [chatMessage][] Teams | Изменения в сообщениях чата во всех каналах во всех командах:<br>`/teams/getAllMessages` <br>Изменения в сообщениях чата на определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех чатах:<br>`/chats/getAllMessages` <br>Изменения в сообщениях чата в конкретном чате:<br>`/chats/{id}/messages`<br>Изменения в сообщениях чатов во всех чатах определенного пользователя являются частью:<br>`/users/{id}/chats/getAllMessages` | Да |
-| [conversationMember][] в Teams | Изменения членства в определенной команде:<br>`/teams/{id}/members` <br> Изменения членства в определенном чате:<br>`/chats/{id}/members` <br> Изменения членства во всех чатах:<br>`/chats/getAllMembers` <br> Изменения членства во всех каналах в рамках определенной группы:<br>`teams/{id}/channels/getAllMembers` | Да |
-| Teams [onlineMeeting][] | Изменения в собрании в Интернете: <br>`/communications/onlinemeeting/{meeting-id}` | Да |
-| [presence][] в Teams | Изменения в присутствии одного пользователя: `/communications/presences/{id}` <br> Изменения нескольких присутствий пользователей:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Да |
-| [Команда][] Teams | Изменения для любой команды в клиенте:<br>`/teams` <br>Изменения в определенной группе:<br>`/teams/{id}` | Да |
-| [baseTask][] | Изменения всех задач в определенном списке задач:<br>`/me/tasks/lists/{baseTaskListId}/tasks`<br>Изменения во всех задачах:<br>`/me/tasks/lists/alltasks` | Нет |
+| [chatMessage][] Teams | Изменения в сообщениях чата во всех каналах во всех командах:<br>`/teams/getAllMessages` <br>Изменения в сообщениях чата на определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех чатах:<br>`/chats/getAllMessages` <br>Изменения в сообщениях чата в конкретном чате:<br>`/chats/{id}/messages`<br>Изменения в сообщениях чата во всех чатах, в которые входит конкретный пользователь:<br>`/users/{id}/chats/getAllMessages` | Да |
+| [conversationMember][] в Teams | Изменения в членстве в определенной команде:<br>`/teams/{id}/members` <br> Изменения членства в определенном чате:<br>`/chats/{id}/members` <br> Изменения членства во всех чатах:<br>`/chats/getAllMembers` <br> Изменения в членстве во всех каналах в определенной команде:<br>`teams/{id}/channels/getAllMembers` | Да |
+| [onlineMeeting][] в Teams | Изменения в собрании по сети: <br>`/communications/onlinemeeting/{meeting-id}` | Да |
+| [presence][] в Teams | Изменения в присутствии одного пользователя: `/communications/presences/{id}` <br> Изменения в присутствии нескольких пользователей:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Да |
+| [Команда][] Teams | Изменения в любой команде в клиенте:<br>`/teams` <br>Изменения в конкретной команде:<br>`/teams/{id}` | Да |
+| Список дел [baseTask][] (не рекомендуется) | Изменения во всех задачах в определенном списке задач:<br>`/me/tasks/lists/{baseTaskListId}/tasks`<br>Изменения во всех задачах:<br>`/me/tasks/lists/alltasks` | Нет |
+| [Список дел задачи][] | Изменения во всех задачах в определенном списке задач:<br>`/me/todo/lists/{todoTaskListId}/tasks`<br>Изменения во всех задачах:<br>`/me/todo/lists/alltasks` | Нет |
 | [user][] | Изменения для всех пользователей:<br>`/users` <br>Изменения для конкретного пользователя:<br>`/users/{id}`| Нет |
 
 
@@ -55,9 +58,9 @@ REST API Microsoft Graph использует механизм веб-перех
 
 | Тип разрешения                        | Поддерживаемые типы ресурсов                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Делегированное — рабочая или учебная учетная запись     | [оповещение][], [канал,][] [чат][][, контакт][][,][] беседа, [conversationMember][], [driveItem][], [список][], [событие][], [группа, сообщение][][, пользователь][][, присутствие][][,][] [chatMessage][] (предварительный просмотр), [команда][], [baseTask][] |
-| Делегированное — личная учетная запись Майкрософт | [contact][], [driveItem][], [list][], [event][], [message][], [baseTask][]                                     |
-| Для приложений                            | [оповещения][][, канал][], [чат][][, контакт][], [driveItem][][][][, список][][, событие][], [группа, сообщение][], [пользователь,][] [callRecord][], [chatMessage][], [conversationMember][], [onlinemeeting][], [принтер][], [printTaskDefinition][], [команда][] |
+| Делегированное — рабочая или учебная учетная запись     | [alert][], [baseTask][] (не [рекомендуется), канал][], [чат][][, контакт][][,][] беседа, [conversationMember][], [driveItem][], [список][], [событие][], [группа][], [сообщение][], [пользователь][], [присутствие][], [chatMessage][] (предварительная версия), [команда][], [todoTask][] |
+| Делегированное — личная учетная запись Майкрософт | [baseTask][] (не рекомендуется), [contact][], [driveItem][], [list][], [event][], [message][], [todoTask][]                                   |
+| Приложение                            | [alert][], [channel][], [chat][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [onlinemeeting][], [printer][], [printTaskDefinition][], [team][] |
 
 ## <a name="see-also"></a>См. также
 
@@ -88,5 +91,7 @@ REST API Microsoft Graph использует механизм веб-перех
 [printTaskDefinition]: ./printtaskdefinition.md
 [team]: ./team.md
 [baseTask]: ./baseTask.md
+[todoTask]: ./todotask.md
+[Список дел задачи]: ./todotask.md
 [onlineMeeting]: ./onlinemeeting.md
 

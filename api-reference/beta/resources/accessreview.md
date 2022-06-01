@@ -1,18 +1,18 @@
 ---
-title: тип ресурсов accessReview
-description: 'В функции Обзоры доступа Azure AD представляет `accessReview` обзор доступа.  '
-localization_priority: Normal
+title: Тип ресурса accessReview (не рекомендуется)
+description: 'В Azure AD проверки доступа представляет `accessReview` проверку доступа.  '
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 75f844a165b8e5603f2d423a9d0a7aef17ab9186
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 353dfec671a400e87f613779f9d50a6e68845a34
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579290"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819477"
 ---
-# <a name="accessreview-resource-type-deprecated"></a>тип ресурса accessReview (неподготовленный)
+# <a name="accessreview-resource-type-deprecated"></a>Тип ресурса accessReview (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -20,59 +20,59 @@ ms.locfileid: "52579290"
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Представляет обзор доступа Azure [AD.](accessreviews-root.md)  
+Представляет Azure AD [доступа](accessreviews-root.md).  
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[AccessReviews списка](../api/accessreview-list.md) | [коллекция accessReview](accessreview.md) | Список accessReviews для businessFlowTemplate. |
-|[Получить accessReview](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   Получите обзор доступа с определенным id. |
-|[Создание accessReview](../api/accessreview-create.md) | [accessReview](accessreview.md) |   Создание нового accessReview. |
+|[Перечисление объектов accessReview](../api/accessreview-list.md) | [Коллекция accessReview](accessreview.md) | Вывод списка объектов accessReview для businessFlowTemplate. |
+|[Получение accessReview](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   Получение проверки доступа с определенным идентификатором. |
+|[Создание accessReview](../api/accessreview-create.md) | [accessReview](accessreview.md) |   Создайте новый accessReview. |
 |[Обновление accessReview](../api/accessreview-update.md) | [accessReview](accessreview.md) | Обновление accessReview. |
-|[Удаление accessReview](../api/accessreview-delete.md) | Нет.   | Удаление accessReview. |
-|[Рецензенты списка accessReview](../api/accessreview-listreviewers.md) | [коллекция userIdentity](useridentity.md)|  Получите рецензентов accessReview. |
+|[Удаление accessReview](../api/accessreview-delete.md) | Нет.   | Удаление объекта accessReview. |
+|[Перечисление рецензентов accessReview](../api/accessreview-listreviewers.md) | [Коллекция userIdentity](useridentity.md)|  Получение рецензентов accessReview. |
 |[Добавление рецензента accessReview](../api/accessreview-addreviewer.md) | Нет.    |   Добавление рецензента в accessReview. |
 |[Удаление рецензента accessReview](../api/accessreview-removereviewer.md) | Нет. |    Удаление рецензента из accessReview. |
-|[Списки решений accessReview](../api/accessreview-listdecisions.md) | [accessReviewDecision](accessreviewdecision.md) collection | Получите решения accessReview. |
-|[Список решений accessReview](../api/accessreview-listmydecisions.md) | [accessReviewDecision](accessreviewdecision.md) collection | Как рецензент, получите мои решения accessReview. |
+|[Вывод списка решений accessReview](../api/accessreview-listdecisions.md) | [Коллекция accessReviewDecision](accessreviewdecision.md) | Получение решений accessReview. |
+|[Вывод списка решений accessReview](../api/accessreview-listmydecisions.md) | [Коллекция accessReviewDecision](accessreviewdecision.md) | Как рецензент получите мои решения о accessReview. |
 |[Отправка напоминания accessReview](../api/accessreview-sendreminder.md) | Нет. | Отправьте напоминание рецензентам accessReview. |
 |[Остановка accessReview](../api/accessreview-stop.md) | Нет. | Остановите accessReview. |
-|[Сброс решений accessReview](../api/accessreview-reset.md) | Нет.   |   Сброс решений в ходе выполнения accessReview. |
-|[Применение решений accessReview](../api/accessreview-apply.md) | Нет. | Применение решений из завершенного accessReview. |
+|[Сброс решений accessReview](../api/accessreview-reset.md) | Нет.   |   Сбросьте решения в ходе выполнения accessReview. |
+|[Применение решений accessReview](../api/accessreview-apply.md) | Нет. | Примените решения из завершенного accessReview. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип   | Описание |
 |:-------- |:---- |:----------- |
-| id | Строка | Уникальный идентификатор обзора доступа, назначенного функцией. |
-| displayName | Строка | Имя обзора доступа. Требуется при создании. |
-| startDateTime | DateTimeOffset | DateTime, когда планируется начать проверку.  Это может быть дата в будущем.  Требуется при создании. |
-| endDateTime | DateTimeOffset | DateTime, когда проверка должна завершиться. Это должно быть по крайней мере на один день позже даты начала.  Требуется при создании. |
-| status | String | Это поле только для чтения указывает состояние accessReview. Типичные состояния `Initializing` включают , , , , , , и `NotStarted` `Starting` `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` . |
-| description | Строка | Описание, предоставленное создателем обзора доступа, чтобы показать рецензентам. |
-| businessFlowTemplateId | Строка | Идентификатор шаблона бизнес-потока. Требуется при создании.  Это значение является чувствительным к делу. |
-| reviewerType | Строка | Тип отношения рецензента к целевому объекту, одному из `self` или `delegated` `entityOwners` . Требуется при создании. | 
-| createdBy | [userIdentity](useridentity.md) | Пользователь, создавший этот обзор. |
-| reviewedEntity | [identity](identity.md) | Объект, для которого проверяется доступ, проверяет назначения прав доступа. Это может быть группа для проверки членства пользователей в группе или приложение для просмотра назначений пользователей приложению. Требуется при создании. | 
-| settings | [accessReviewSettings](accessreviewsettings.md) | Параметры accessReview см. ниже определение типа. |
+| id | Строка | Уникальный идентификатор проверки доступа, назначаемого компонентом. |
+| displayName | Строка | Имя проверки доступа. Требуется при создании. |
+| startDateTime | DateTimeOffset | Дата и время начала проверки.  Это может быть дата в будущем.  Требуется при создании. |
+| endDateTime | DateTimeOffset | Дата и время окончания проверки. Это значение должно быть по крайней мере на один день позже даты начала.  Требуется при создании. |
+| status | String | Это поле только для чтения указывает состояние accessReview. Типичные состояния: `Initializing`, `NotStarted`, `Starting`,`InProgress`, `Completing`, `Completed`, и `AutoReviewing``AutoReviewed`. |
+| description | Строка | Описание, предоставленное создателем проверки доступа, для отображения рецензентам. |
+| businessFlowTemplateId | Строка | Идентификатор шаблона бизнес-потока. Требуется при создании.  Это значение учитывает регистр. |
+| reviewerType | Строка | Тип связи рецензента с целевым объектом, одним из или `self``delegated` `entityOwners`. Требуется при создании. | 
+| createdBy | [userIdentity](useridentity.md) | Пользователь, создавший эту проверку. |
+| reviewedEntity | [identity](identity.md) | Объект, для которого проверки доступа проверяют назначения прав доступа. Это может быть группа для проверки членства пользователей в группе или приложение для проверки назначений пользователей приложению. Требуется при создании. | 
+| settings | [accessReviewSettings](accessreviewsettings.md) | Параметры accessReview см. в определении типа ниже. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип   | Описание |
 |:------------ |:---- |:----------- |
-| рецензенты | [коллекция userIdentity](useridentity.md) | Коллекция рецензентов для проверки доступа, если reviewerType проверки доступа имеет тип `delegated` . |
-| решения | [accessReviewDecision](accessreviewdecision.md) collection | Коллекция решений для этого обзора доступа. |
-| myDecisions | [accessReviewDecision](accessreviewdecision.md) collection | Коллекция решений для вызываемого, если вызываемая является рецензентом. |
-| instances | [коллекция accessReview](accessreview.md) | Коллекция отзывов о доступе проверяет экземпляры прошлых, нынешних и будущих, если этот объект является повторяющимся обзором доступа. |
+| Авторам | [Коллекция userIdentity](useridentity.md) | Коллекция рецензентов для проверки доступа, если проверка доступа reviewerType имеет тип `delegated`. |
+| Решения | [Коллекция accessReviewDecision](accessreviewdecision.md) | Коллекция решений для этой проверки доступа. |
+| myDecisions | [Коллекция accessReviewDecision](accessreviewdecision.md) | Коллекция решений для вызывающего объекта, если вызывающий объект является рецензентом. |
+| instances | [Коллекция accessReview](accessreview.md) | Коллекция экземпляров проверки доступа в прошлом, настоящем и будущем, если этот объект является повторяющейся проверкой доступа. |
 
-Присутствуют ли эти связи на объекте, зависит от того, является ли объект одноразовой проверкой доступа, серией повторяющегося обзора доступа или экземпляром повторного обзора доступа.
+Наличие этих связей в объекте зависит от того, является ли объект однофакторной проверкой доступа, серию повторяющихся проверок доступа или экземпляром повторяющейся проверки доступа.
 
-| Сценарий | Есть рецензенты? | Есть решения и myDecisions? | Экземпляры? |
+| Сценарий | Есть рецензенты? | Есть ли решения и myDecisions? | Есть экземпляры? |
 |:-------- |:-------------- |:------------------------------ |:-------------- |
-| Разовая проверка доступа | Да | Да, после начала | Нет |
-| Повторяющиеся обзоры доступа | Да | Нет | Да |
-| Экземпляр повторного обзора доступа | Да | Да, после начала | Нет |
+| Разовая проверка доступа | Да | Да, после запуска | Нет |
+| Повторяющиеся проверки доступа | Да | Нет | Да |
+| Экземпляр повторяющейся проверки доступа | Да | Да, после запуска | Нет |
 
 ## <a name="json-representation"></a>Представление JSON
 

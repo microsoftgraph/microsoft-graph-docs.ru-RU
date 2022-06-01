@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f0703dd6cf17c0d47a64e56f6158f7e539e7335f
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 183155c31a69c0f669d4bafcaa19cb0a6fa78ee4
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695071"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821136"
 ---
 # <a name="update-device"></a>Обновление устройства
 
@@ -19,6 +19,9 @@ ms.locfileid: "65695071"
 Обновление свойств зарегистрированного устройства.
 
 Лишь определенные свойства устройства можно обновить через утвержденные приложения для управления мобильными устройствами (MDM).
+
+> [!IMPORTANT]
+> У этого API есть [известная проблема](/graph/known-issues#linux-based-devices-cant-be-updated-by-an-app-with-application-permissions). Приложение с разрешениями приложения может обновлять свойство **extensionAttributes** только для устройств под управлением Linux, то есть там, где находится **свойство** `linux`operationSystem.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -54,7 +57,7 @@ PATCH /devices/{id}
 |accountEnabled|Логический| Если учетная запись обеспечена — `true`, в противном случае — `false`. Обновить это *свойство могут только* вызывающие *объекты* с ролями глобального администратора и администратора облачных устройств.|
 |operatingSystem|String|Тип операционной системы на устройстве.|
 |operatingSystemVersion|String|Версия операционной системы на устройстве.|
-|displayName|String|Отображаемое имя устройства.|
+|displayName|Строка|Отображаемое имя устройства.|
 |isCompliant|Boolean|`true` if the device complies with Mobile Device Management (MDM) policies; otherwise, `false`. Его можно обновить только Intune для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows ОС. |
 |isManaged|Boolean|`true`Значение , если устройство управляется мобильным приложением Управление устройствами (MDM); в противном случае — значение `false`. Его можно обновить только Intune для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows ОС. |
 

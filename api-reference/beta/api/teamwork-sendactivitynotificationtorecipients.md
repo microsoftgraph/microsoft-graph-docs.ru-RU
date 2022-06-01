@@ -5,12 +5,12 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dc0135fcbd7508a435e562c4b2c96cf68da09124
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: abb6d745a30274eda5ec17fa0075315633830b67
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695685"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819852"
 ---
 # <a name="teamwork-sendactivitynotificationtorecipients"></a>teamwork: sendActivityNotificationToRecipients
 
@@ -28,8 +28,8 @@ ms.locfileid: "65695685"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | TeamsActivity.Send                          |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Делегированное (рабочая или учебная учетная запись)     | TeamsActivity.Send                          |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Приложение                            | TeamsActivity.Send                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -63,7 +63,7 @@ POST /teamwork/sendActivityNotificationToRecipients
 | chainId            | Int64                                                        | Необязательно. Используется для переопределения предыдущего уведомления. Используйте то же самое `chainId` в последующих запросах, чтобы переопределить предыдущее уведомление. |
 | previewText        | [itemBody](../resources/itembody.md)                         | Предварительный просмотр текста уведомления. Microsoft Teams будут отображаться только первые 150 символов. |
 | templateParameters | Коллекция [keyValuePair](../resources/keyvaluepair.md)      | Значения переменных шаблона, определенных в записи веб-канала `activityType` действий, соответствующей Teams [манифеста приложения](/microsoftteams/platform/overview). |
-| teamsAppId         | String                                                       | Необязательно. Teams идентификатор приложения Teams, связанного с уведомлением. Используется для устранения неоднозначности установленных приложений, если для одного пользователя-получателя установлено несколько приложений с одинаковым Azure AD идентификатором приложения. |
+| teamsAppId         | Строка                                                       | Необязательно. Teams идентификатор приложения Teams, связанного с уведомлением. Используется для устранения неоднозначности установленных приложений, если для одного пользователя-получателя установлено несколько приложений с одинаковым Azure AD идентификатором приложения. |
 | recipients         | [Коллекция teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md) | Получатели уведомления. Поддерживаются только получатели [типа aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) . В одном запросе существует верхний предел в 100 получателей. |
 
 Следующий ресурс поддерживается при установке `source` значения свойства **раздела** в следующее `entityUrl`:
@@ -83,6 +83,8 @@ POST /teamwork/sendActivityNotificationToRecipients
 #### <a name="request"></a>Запрос
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "teamwork_sendactivitynotificationtorecipients_1"
@@ -124,6 +126,24 @@ Content-Type: application/json
     ] 
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/teamwork-sendactivitynotificationtorecipients-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/teamwork-sendactivitynotificationtorecipients-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/teamwork-sendactivitynotificationtorecipients-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/teamwork-sendactivitynotificationtorecipients-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
@@ -143,6 +163,8 @@ HTTP/1.1 202 Accepted
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "teamwork_sendactivitynotificationtorecipients_2"
@@ -185,6 +207,24 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/teamwork-sendactivitynotificationtorecipients-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/teamwork-sendactivitynotificationtorecipients-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/teamwork-sendactivitynotificationtorecipients-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/teamwork-sendactivitynotificationtorecipients-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

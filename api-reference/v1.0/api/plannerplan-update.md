@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 1cbe211096b341fff2ce148e3551d2f521c49244
-ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
+ms.openlocfilehash: 048768a10d303e6c5b84d5d1fa3c00d6db8e0311
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65420714"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821115"
 ---
 # <a name="update-plannerplan"></a>Обновление планировщика
 
@@ -45,8 +45,7 @@ PATCH /planner/plans/{plan-id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|owner|String|Идентификатор `id` [группы](../resources/group.md), которой принадлежит план. Чтобы в этом поле можно было указать значение, должна существовать подходящая группа. Указанное значение может изменить только владелец.|
-|title|String|Название плана.|
+|title|Строка|Название плана.|
 
 ## <a name="response"></a>Ответ
 

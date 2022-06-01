@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c4337a07e9667ac23d3d0c386964fc1f9f44a275
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: f47448533da07ad369ca3013f9efeae0ca8f8919
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65209637"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820394"
 ---
 # <a name="create-assignmentpolicies"></a>Создание assignmentPolicies
 Пространство имен: microsoft.graph
@@ -23,8 +23,8 @@ ms.locfileid: "65209637"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All  |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All  |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | EntitlementManagement.ReadWrite.All |
 
 
@@ -53,14 +53,15 @@ POST /identityGovernance/entitlementManagement/assignmentPolicies
 |:---|:---|:---|
 |description|Строка|Описание политики.|
 |displayName|Строка|Отображаемое имя политики.|
-|allowedTargetScope|allowedTargetScope|Кто может быть назначен пакет доступа с помощью этой политики. Возможные значения: `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `unknownFutureValue`. Необязательное.|
+|allowedTargetScope|allowedTargetScope|Кто может быть назначен пакет доступа с помощью этой политики. Возможные значения: `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `unknownFutureValue`. Необязательно.|
 |Истечения срока действия|[expirationPattern](../resources/expirationpattern.md)|Дата окончания срока действия для назначений, созданных в этой политике.|
 |requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|Задает параметры для утверждения запросов на назначение пакета доступа с помощью этой политики. Например, если требуется утверждение для новых запросов.|
 |requestorSettings|[accessPackageAssignmentRequestorSettings](../resources/accesspackageassignmentrequestorsettings.md)|Предоставляет дополнительные параметры, чтобы выбрать, кто может создать запрос на назначение пакета для доступа с помощью этой политики и что они могут включить в свой запрос.|
+|reviewSettings|[accessPackageAssignmentReviewSettings](../resources/accesspackageassignmentreviewsettings.md)|Параметры для проверки доступа к назначениям с помощью этой политики.|
 |specificAllowedTargets|[Коллекция subjectSet](../resources/subjectset.md)|Целевые объекты для назначения доступа из пакета доступа из этой политики.|
 |accessPackage|[accessPackage](../resources/accesspackage.md)| Ссылка на пакет доступа, который будет содержать политику, которая уже должна существовать.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) в тексте отклика.
 
@@ -163,7 +164,7 @@ Content-Type: application/json
 
 ### <a name="example-2-create-a-policy-for-users-from-other-organizations-to-request"></a>Пример 2. Создание политики для пользователей из других организаций для запроса
 
-В следующем примере показана более сложная политика с двумя этапами утверждения.
+В следующем примере показана более сложная политика с двумя этапами утверждения и повторяющимися проверками доступа.
 
 #### <a name="request"></a>Запрос
 
@@ -243,6 +244,40 @@ Content-Type: application/json
                 "fallbackEscalationApprovers": []
             }
         ]
+    },
+    "reviewSettings": {
+        "isEnabled": true,
+        "expirationBehavior": "keepAccess",
+        "isRecommendationEnabled": true,
+        "isReviewerJustificationRequired": true,
+        "isSelfReview": false,
+        "schedule": {
+            "startDateTime": "2022-07-02T06:59:59.998Z",
+            "expiration": {
+                "duration": "P14D",
+                "type": "afterDuration"
+            },
+            "recurrence": {
+                "pattern": {
+                    "type": "absoluteMonthly",
+                    "interval": 3,
+                    "month": 0,
+                    "dayOfMonth": 0,
+                    "daysOfWeek": []
+                },
+                "range": {
+                    "type": "noEnd",
+                    "numberOfOccurrences": 0
+                }
+            }
+        },
+        "primaryReviewers": [
+            {
+                "@odata.type": "#microsoft.graph.groupMembers",
+                "groupId": "1623f912-5e86-41c2-af47-39dd67582b66"
+            }
+        ],
+        "fallbackReviewers": []
     },
     "accessPackage": {
         "id": "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b"

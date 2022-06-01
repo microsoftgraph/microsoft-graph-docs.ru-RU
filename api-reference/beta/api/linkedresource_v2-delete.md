@@ -1,31 +1,33 @@
 ---
 title: Удаление linkedResource_v2
-description: Удаление объекта linkedResource_v2.
+description: Удаление linkedResource_v2 объекта.
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 202435c81dc9bb95dc64316f6ec5509506980360
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9c4c5e2a33f970481e7366adbc07ae1b23839bdc
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113296"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821017"
 ---
-# <a name="delete-linkedresource_v2"></a>Удаление linkedResource_v2
+# <a name="delete-linkedresource_v2-deprecated"></a>Удаление linkedResource_v2 (не рекомендуется)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [linkedResource_v2.](../resources/linkedresource_v2.md)
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Удаление [linkedResource_v2 объекта](../resources/linkedresource_v2.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированное (рабочая или учебная учетная запись)|Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Приложение|Tasks.ReadWrite|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,7 +46,7 @@ DELETE /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseT
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

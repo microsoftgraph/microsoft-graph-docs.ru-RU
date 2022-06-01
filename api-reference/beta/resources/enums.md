@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 14b0c2e9af8ea111cca62036bf4de18a9af57f50
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 509a12dc4e819a18dc2728e924814ff8d7db38cb
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695554"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820401"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
@@ -338,11 +338,11 @@ ms.locfileid: "65695554"
 
 |Member|
 |:---|
-|String|
+|Строка|
 |Целое число|
-|Справка|
+|Справочные материалы|
 |Binary|
-|Логический|
+|Логическое|
 |DateTime|
 
 ### <a name="mutability-values"></a>значения изменяемости
@@ -690,7 +690,7 @@ ms.locfileid: "65695554"
 |:---|
 |все|
 |privilegedAdmin|
-|Администратора|
+|администратор|
 |пользователь;|
 |unknownFutureValue|
 
@@ -3021,16 +3021,6 @@ ms.locfileid: "65695554"
 |securityGroup|
 |unknownFutureValue|
 
-### <a name="delegatedadminrelationshipoperationstatus-values"></a>Значения delegatedAdminRelationshipOperationStatus 
-
-|Member|
-|:---|
-|notStarted|
-|Запущена|
-|complete|
-|Сбой при|
-|unknownFutureValue|
-
 ### <a name="delegatedadminrelationshipoperationtype-values"></a>Значения delegatedAdminRelationshipOperationType 
 
 |Member|
@@ -3052,7 +3042,7 @@ ms.locfileid: "65695554"
 |:---|
 |создано|
 |Ожидающие|
-|complete|
+|Удалось|
 |Сбой при|
 |unknownFutureValue|
 

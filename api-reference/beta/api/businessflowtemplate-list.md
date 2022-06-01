@@ -1,18 +1,18 @@
 ---
-title: Перечисление businessFlowTemplates
+title: Перечисление businessFlowTemplates (не рекомендуется)
 description: В Azure AD проверки доступа перечислите все объекты BusinessFlowTemplate.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 150617d1035cf8036dc4424db5e48f38676f8127
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: da70173c081ee7546ed7ebe858763fd3f25f42e3
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65315188"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821066"
 ---
-# <a name="list-businessflowtemplates"></a>Перечисление businessFlowTemplates
+# <a name="list-businessflowtemplates-deprecated"></a>Перечисление businessFlowTemplates (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -26,8 +26,8 @@ ms.locfileid: "65315188"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
 
 Пользователь, выполнив вход, также должен иметь роль каталога, которая позволяет ему читать проверку доступа.

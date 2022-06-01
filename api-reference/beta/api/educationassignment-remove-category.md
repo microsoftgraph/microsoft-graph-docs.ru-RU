@@ -1,16 +1,16 @@
 ---
 title: Удаление educationCategory
-description: Удаление существующей системы educationCategory из этого образованияAssignment
-localization_priority: Normal
+description: Удалите существующую educationCategory из этого объекта educationAssignment.
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: edf054ba1d7b81800a75e260c5a2357ae2d9bcba
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 09d59485a83fcb01887c3a98087bae57f45c3124
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044188"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820842"
 ---
 # <a name="remove-educationcategory"></a>Удаление educationCategory
 
@@ -18,15 +18,15 @@ ms.locfileid: "52044188"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите [educationCategory](../resources/educationcategory.md) из [educationAssignment](../resources/educationassignment.md).
+Удалите [educationCategory](../resources/educationcategory.md) из [объекта educationAssignment](../resources/educationassignment.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
+|Делегированное (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Делегированное (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается.  | 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -37,18 +37,16 @@ DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "ignored",
@@ -58,11 +56,8 @@ DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
 DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories/ec98f158-341d-4fea-9f8c-14a250d489ac/$ref
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
-
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
-
+### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
 
 <!-- {
   "blockType": "ignored",

@@ -1,39 +1,41 @@
 ---
-title: тип ресурса programControlType
-description: 'В функции обзоров доступа Azure AD используется тип управления программой при присоединении элементов управления к программе, чтобы указать тип обзора доступа, для который используется элемент управления.  '
-localization_priority: Normal
+title: Тип ресурса programControlType (не рекомендуется)
+description: 'В Azure AD проверки доступа тип управления программой используется при связывание элемента управления с программой, чтобы указать тип проверки доступа, для который предназначен элемент управления.  '
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 58c9ee3ade6e3969de9653f54c5181a66f087ea5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2dcb4c5e00b4c3b5ea0cf9283dadaa9b2c89cd12
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960364"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819743"
 ---
-# <a name="programcontroltype-resource-type"></a>тип ресурса programControlType
+# <a name="programcontroltype-resource-type-deprecated"></a>Тип ресурса programControlType (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](accessreviews-root.md) используется тип управления программой при присоединении элементов управления к программе, чтобы указать тип обзора доступа, для который используется элемент управления.  
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Объекты типа управления программами автоматически создаются, когда глобальный администратор на борту клиента использует функцию обзоров доступа.  Дополнительные типы управления программами не создаются.
+В Azure AD проверки доступа тип [](accessreviews-root.md) управления программой используется при связывание элемента управления с программой, чтобы указать тип проверки доступа, для который предназначен элемент управления.  
+
+Объекты типов программных элементов управления создаются автоматически, когда глобальный администратор подключает клиент для использования функции проверки доступа.  Дополнительные типы элементов управления программой создаваться не могут.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[List programControlTypes](../api/programcontroltype-list.md) | [коллекция programControlType](programcontroltype.md)| Типы управления программами списка. |
+|[Перечисление programControlTypes](../api/programcontroltype-list.md) | [Коллекция programControlType](programcontroltype.md)| Перечисление типов элементов управления программой. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| id                     |Строка                | Идентификатор типа управления программой, заданная функцией                                      |
-| displayName            |Строка                | Имя типа управления программой                                                             |
+| id                     |Строка                | Назначенный функцией идентификатор типа элемента управления программы                                      |
+| displayName            |Строка                | Имя типа элемента управления программы                                                             |
 
 
 ## <a name="relationships"></a>Связи
@@ -45,7 +47,7 @@ ms.locfileid: "50960364"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Создание programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   Добавьте программуControl в программу.|
+|[Создание объекта programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   Добавьте programControl в программу.|
 
 
 ## <a name="json-representation"></a>Представление JSON

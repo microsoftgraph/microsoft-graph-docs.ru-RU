@@ -1,18 +1,18 @@
 ---
-title: Создание accessReview
+title: Создание accessReview (не рекомендуется)
 description: В Azure AD проверки доступа создайте объект accessReview.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bfddca0486d9f622107b4e234c5baa6ab66cbaa0
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 2d23b1a6607564e7ea073738a0e8e58af39331a4
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314542"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819390"
 ---
-# <a name="create-accessreview"></a>Создание accessReview
+# <a name="create-accessreview-deprecated"></a>Создание accessReview (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -32,8 +32,8 @@ ms.locfileid: "65314542"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | AccessReview.ReadWrite.Membership |
 
 Вызывающий объект также должен иметь разрешение ProgramControl.ReadWrite.All, чтобы после создания проверки доступа вызывающий объект можно было [создать programControl](../resources/programcontrol.md).
@@ -47,7 +47,7 @@ POST /accessReviews
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Описание |
 |:-------------|:------------|
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Authorization | Носитель \{токен\}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,12 +57,12 @@ POST /accessReviews
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| displayName             |String                                                        | Имя проверки доступа.  |
+| displayName             |Строка                                                        | Имя проверки доступа.  |
 | startDateTime           |DateTimeOffset                                                | Дата и время начала проверки.  Это должна быть дата в будущем.   |
 | endDateTime             |DateTimeOffset                                                | Дата и время окончания проверки. Это значение должно быть по крайней мере на один день позже даты начала.   |
-| description             |String                                                        | Описание, отображаемая рецензентам. |
-| businessFlowTemplateId  |String                                                        | Идентификатор шаблона бизнес-потока, полученный из [businessFlowTemplate](../resources/businessflowtemplate.md).  |
-| reviewerType            |String                                                        | Тип отношения рецензента с правами доступа проверяемого объекта, один из `self`, `delegated`или `entityOwners`. | 
+| description             |Строка                                                        | Описание, отображаемая рецензентам. |
+| businessFlowTemplateId  |Строка                                                        | Идентификатор шаблона бизнес-потока, полученный из [businessFlowTemplate](../resources/businessflowtemplate.md).  |
+| reviewerType            |Строка                                                        | Тип отношения рецензента с правами доступа проверяемого объекта, один из `self`, `delegated`или `entityOwners`. | 
 | reviewedEntity          |[identity](../resources/identity.md)                                     | Объект, для которого создается проверка доступа, например членство в группе или назначение пользователей приложению. | 
 
 

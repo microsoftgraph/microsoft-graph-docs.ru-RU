@@ -5,12 +5,12 @@ author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: 430c1acb78d05681cd88d76fbeb5ba0e43aeef53
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: 753212cabaf62f8bbfc5e119f3322b797d6559f8
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704433"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820632"
 ---
 # <a name="delegatedadminrelationship-resource-type"></a>Тип ресурса delegatedAdminRelationship
 
@@ -37,12 +37,27 @@ ms.locfileid: "64704433"
 |activatedDateTime|DateTimeOffset|Дата и время в формате ISO 8601 и времени в формате UTC, когда связь стала активной. Только для чтения.|
 |createdDateTime|DateTimeOffset|Дата и время в формате ISO 8601 и время создания связи в формате UTC. Только для чтения.|
 |Клиентов|[delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|Отображаемое имя и уникальный идентификатор клиента связи. Он настраивается либо партнером во время создания отношения, либо системой после того, как клиент утвердит связь. Не может быть изменен клиентом.|
-|displayName|String|Отображаемое имя связи, используемой для упрощения идентификации. Должен быть уникальным для *всех делегированных* отношений администратора партнера. Этот параметр задается партнером только в том случае `created` , если связь находится в состоянии и не может быть изменена клиентом.|
+|displayName|Строка|Отображаемое имя связи, используемой для упрощения идентификации. Должен быть уникальным для *всех делегированных* отношений администратора партнера. Этот параметр задается партнером только в том случае `created` , если связь находится в состоянии и не может быть изменена клиентом.|
 |duration|Длительность|Длительность связи в формате ISO 8601. Должно быть значением между инклюзивным `P1D` `P2Y` . Этот параметр задается партнером только в том случае `created` , если связь находится в состоянии и не может быть изменена клиентом.|
 |endDateTime|DateTimeOffset|Дата и время в формате ISO 8601 и времени в формате UTC,  когда состояние связи изменяется на любой `terminated` `expired`или . Вычисляется как `endDateTime = activatedDateTime + duration`. Только для чтения.|
-|id|String|Уникальный идентификатор связи. Только для чтения. Наследуется от [сущности](../resources/entity.md).|
+|id|Строка|Уникальный идентификатор связи. Только для чтения. Наследуется от [сущности](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время в формате ISO 8601 и время последнего изменения связи в формате UTC. Только для чтения.|
 |status|delegatedAdminRelationshipStatus|Состояние связи. Только для чтения. Возможные значения: `activating`, , `active`, `approvalPending`, `approved`, `created`, `expiring``expired`, `terminated`, . `unknownFutureValue``terminating``terminationRequested` Поддерживает `$orderBy`.|
+
+### <a name="delegatedadminrelationshipstatus-values"></a>Значения delegatedAdminRelationshipStatus 
+| Member | Описание |
+| --- | --- |
+| создано | Партнер создал новую связь. В этом состоянии связь может быть изменена. |
+| approvalPending | Партнер завершил связь с помощью действия `lockForApproval` делегированного [объекта DelegatedAdminRelationshipRequest](delegatedadminrelationshiprequest.md) . |
+| Утвержденных | Клиент утверждает связь с помощью действия `approve` объекта [delegatedAdminRelationshipRequest](delegatedadminrelationshiprequest.md) . |
+| Активация | Система начинает подготовку связи. |
+| Активных | Система завершает подготовку связи. |
+| Истекает | Срок действия связи истек. |
+| Истек | Система завершает отмену подготовки связи. |
+| terminationRequested | Партнер или клиент запрашивает `terminate` прекращение связи с помощью действия делегированного объекта [delegatedAdminRelationshipRequest](delegatedadminrelationshiprequest.md) . |
+| Прекращения | Система начинает отмену подготовки связи. |
+| Прекращено | Система завершила отмену подготовки связи. |
+| unknownFutureValue | Значение sentinel для развиваемого перечисления. Не следует использовать. |
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

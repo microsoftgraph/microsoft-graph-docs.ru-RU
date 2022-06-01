@@ -1,18 +1,18 @@
 ---
-title: Создание программы
+title: Создание программы (не рекомендуется)
 description: В Azure AD проверки доступа создайте объект программы.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: aa1ac48fb85b2c20d40b9b211d17183a6a78ab65
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 15a74a350d62e31976e62f00726b2aea8f558aed
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65315286"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820968"
 ---
-# <a name="create-program"></a>Создание программы
+# <a name="create-program-deprecated"></a>Создание программы (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -26,8 +26,8 @@ ms.locfileid: "65315286"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | ProgramControl.ReadWrite.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | ProgramControl.ReadWrite.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
 Пользователь, выполнив вход, также должен иметь роль каталога, которая позволяет ему создать программу.

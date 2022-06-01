@@ -5,17 +5,19 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2b1cef10bb6f67b2f9613d566b971a9e353271cb
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: 11ffe48ba964d736d3dc459f01712a681fd01da3
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365199"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820023"
 ---
-# <a name="get-basetask"></a>Получение baseTask
+# <a name="get-basetask-deprecated"></a>Получение baseTask (не рекомендуется)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 Чтение свойств и связей объекта [baseTask](../resources/basetask.md) .
 
@@ -24,8 +26,8 @@ ms.locfileid: "65365199"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
+|Делегированное (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос

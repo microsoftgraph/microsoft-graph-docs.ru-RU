@@ -1,33 +1,36 @@
 ---
-title: 'организация: активироватьService'
+title: 'organization: activateService'
 description: Активирует службу для организации.
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2041afd2cb16b20a5863104e2b54247ecab77ba2
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: d6b963bdc85b9be95fcf68e001c1a4327cc6900a
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62343101"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820745"
 ---
-# <a name="organization-activateservice"></a>организация: активироватьService
+# <a name="organization-activateservice-deprecated"></a>organization: activateService (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> API **activateService** устарел и прекратит возвращать данные 30 июня 2022 г.
 
 Активация службы для организации.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Чтобы активировать службу для организации, запросчик должен иметь роль администратора компании  со следующими разрешениями.
+Чтобы активировать службу для организации, инициатор запроса должен иметь роль администратора  компании со следующими разрешениями.
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 | :--- | :--- |
-| Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All|
+| Делегированное (рабочая или учебная учетная запись) | Directory.ReadWrite.All|
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Directory.ReadWrite.All|
 
@@ -49,14 +52,14 @@ POST /organization/{organizationId}/activateService
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [activateService](../resources/activateService.md) .
-Необходимо определить **службу** или (**servicePlanId** _и_ **skuId**), чтобы это действие было допустимым.
+В тексте запроса добавьте представление объекта [activateService](../resources/activateService.md) в формате JSON.
+Чтобы **это действие было** допустимым, необходимо определить службу или (**servicePlanId**  и **skuId**).
 
 | Свойство         | Тип         | Описание                           |
 | ----------------- | ------------ | ------------------------------------- |
 | service| String | Имя службы для активации. |
-| servicePlanId | Guid | Идентификатор плана для активации плана службы. |
-| skuId | Guid | Идентификатор SKU плана службы. |
+| servicePlanId | Guid | Идентификатор плана службы для активации. |
+| skuId | Guid | Идентификатор SKU плана обслуживания. |
 
 ## <a name="response"></a>Ответ
 

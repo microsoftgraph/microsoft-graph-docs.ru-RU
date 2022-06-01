@@ -1,23 +1,23 @@
 ---
 title: 'authenticationMethodsRoot: usersRegisteredByMethod'
-description: Получите число пользователей, зарегистрированных для каждого метода проверки подлинности.
-author: danielwood95
-localization_priority: Normal
+description: Получение числа пользователей, зарегистрированных для каждого метода проверки подлинности.
+author: besiler
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 71c6274cb2e898a5047dcdaf71dadd6aac1012c0
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 41b8407e6f761387a594ee39f852f16bf063e7d1
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384354"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820849"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbymethod"></a>authenticationMethodsRoot: usersRegisteredByMethod
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите число пользователей, зарегистрированных для каждого метода проверки подлинности.
+Получение числа пользователей, зарегистрированных для каждого метода проверки подлинности.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "58384354"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Чтобы получить доступ к API, требуется одна [из](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) следующих ролей:
+Для доступа к API требуется одна [из](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) следующих ролей:
 
 * Читатель отчетов
 * Читатель сведений о безопасности
@@ -54,7 +54,7 @@ GET /reports/authenticationMethods/usersRegisteredByMethod
 |includedUserTypes|includedUserTypes|Тип пользователя. Возможные значения: `all`, `member`, `guest`.|
 |includedUserRoles|includedUserRoles|Тип роли пользователя. Возможные значения: `all`, `privilegedAdmin`, `admin`, `user`.|
 
-Это значение `privilegedAdmin` состоит из следующих привилегированных ролей администратора:
+Значение состоит `privilegedAdmin` из следующих привилегированных ролей администратора:
 
 * Глобальный администратор
 * Администратор безопасности
@@ -66,19 +66,19 @@ GET /reports/authenticationMethods/usersRegisteredByMethod
 * Администратор пользователей
 * Администратор проверки подлинности
 
-Это значение `admin` включает все роли администратора Azure AD. 
+Это значение включает `admin` все Azure AD роли администратора. 
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код ответа и `200 OK` [userRegistrationMethodSummary](../resources/userregistrationmethodsummary.md) в тексте ответа.
+В случае успешного выполнения эта функция возвращает код `200 OK` отклика и [userRegistrationMethodSummary](../resources/userregistrationmethodsummary.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

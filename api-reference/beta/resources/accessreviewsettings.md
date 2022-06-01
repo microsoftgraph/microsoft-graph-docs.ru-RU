@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса accessReviewSettings
+title: Тип ресурса accessReviewSettings (не рекомендуется)
 description: Предоставляет дополнительные параметры при создании проверки доступа.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: fdc8d22639d098619ef7183ebe22fc9da7bc0287
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: f197ca69132252a58508aa57b2c192eaae34077f
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50293087"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821206"
 ---
-# <a name="accessreviewsettings-resource-type"></a>Тип ресурса accessReviewSettings
+# <a name="accessreviewsettings-resource-type-deprecated"></a>Тип ресурса accessReviewSettings (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -20,21 +20,21 @@ ms.locfileid: "50293087"
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Предоставляет дополнительные параметры при создании проверки доступа для управления поведением функций при запуске проверки доступа.
+Предоставляет дополнительные параметры при создании проверки доступа для управления поведением функции при запуске проверки доступа.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 | :------- | :--- | :---------- |
-| mailNotificationsEnabled | Логический | Указывает, включена ли отправка сообщений рецензентам и создателю отзывов. |
-| remindersEnabled | Логический | Указывает, включена ли отправка напоминаний рецензентам. |
-| justificationRequiredOnApproval | Логический | Указывает, должны ли проверяющие предоставлять обоснование при проверке доступа. |
-| activityDurationInDays | Int64 | Количество дней действий пользователей, которые будут показываться рецензентам. |
-| autoReviewEnabled | Логический | Указывает, следует ли принимать решение, если рецензент не указал его. Используется, если включено автоматическое применение. Если вы не хотите, чтобы решение о проверке было записано, если рецензент не сделал явного выбора, установите для него такое же. `false`|
-| autoReviewSettings | [autoReviewSettings](autoreviewsettings.md) | Подробные параметры настройки функции для принятия решения об отзыве. Используется, если включено автоматическое применение. |
+| mailNotificationsEnabled | Логическое | Указывает, включена ли отправка сообщений рецензентам и создателю проверки. |
+| remindersEnabled | Логическое | Указывает, включена ли отправка напоминаний рецензентам. |
+| justificationRequiredOnApproval | Логическое | Указывает, требуются ли рецензенты для предоставления обоснования при проверке доступа. |
+| activityDurationInDays | Int64 | Количество дней действий пользователей, отображаемые рецензентам. |
+| autoReviewEnabled | Логическое | Указывает, должно ли быть задано решение, если рецензент не указал его. Используется, если включено автоматическое применение. Если вы не хотите, чтобы решение о проверке было записано, если рецензент не сделает явный выбор, задайте для него значение `false`.|
+| autoReviewSettings | [autoReviewSettings](autoreviewsettings.md) | Подробные параметры того, как эта функция должна задавать решение о проверке. Используется, если включено автоматическое применение. |
 | recurrenceSettings | [accessReviewRecurrenceSettings](accessreviewrecurrencesettings.md) | Подробные параметры повторения. |
-| autoApplyReviewResultsEnabled | Логический | Указывает, включена ли возможность автоматического применения для автоматического изменения ресурса доступа к целевому объекту.  Если этот запрет не включен, пользователь должен после завершения проверки доступа применить проверку доступа. |
-| accessRecommendationsEnabled | Логический | Указывает, включены ли рекомендации для проверяющих. |
+| autoApplyReviewResultsEnabled | Логическое | Указывает, включена ли функция автоматического применения для автоматического изменения ресурса доступа к целевому объекту.  Если этот параметр не включен, пользователь должен после завершения проверки доступа применить проверку доступа. |
+| accessRecommendationsEnabled | Логическое | Указывает, включены ли рекомендации для рецензентов. |
 
 ## <a name="json-representation"></a>Представление JSON
 <!-- {

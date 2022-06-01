@@ -5,12 +5,12 @@ author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 5389273d9ee0f9cef015da5131ba4477461cc452
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 8486c6d4fb6166da42378f434b1b86e95aa746af
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204110"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820989"
 ---
 # <a name="get-delegatedadminrelationshipoperation"></a>Получение delegatedAdminRelationshipOperation
 Пространство имен: microsoft.graph
@@ -24,8 +24,8 @@ ms.locfileid: "65204110"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)| DelegatedAdminRelationship.Read.All, DelegatedAdminRelationship.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт)| Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)| DelegatedAdminRelationship.Read.All, DelegatedAdminRelationship.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт)| Не поддерживается. |
 |Для приложений| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -49,7 +49,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [delegatedAdminRelationshipOperation](../resources/delegatedadminrelationshipoperation.md) в тексте отклика.
 
@@ -109,7 +109,7 @@ Content-Type: application/json
   "id": "57e4479a-aafb-4d00-ab0f-8ce6027466cf",
   "operationType": "delegatedAdminAccessAssignmentUpdate",
   "data": "{\"id\":\"a97a9b4c-f43e-4c47-bbd6-50d8d3c88d94\",\"accessContainer\":{\"accessContainerId\":\"869713c9-0b28-4d08-8949-ae07ae1bf528\",\"accessContainerType\":\"securityGroup\"},\"accessDetails\":{\"unifiedRoles\":[{\"roleDefinitionId\":\"e3973bdf-4987-49ae-837a-ba8e231c7286\"}]},\"status\":\"active\"}",
-  "status": "complete",
+  "status": "succeeded",
   "createdDateTime": "2022-02-11T19:27:31.4047395Z",
   "lastModifiedDateTime": "2022-02-11T19:27:31.4047395Z"
 }

@@ -1,31 +1,33 @@
 ---
-title: Получить linkedResource_v2
-description: Ознакомьтесь с свойствами и отношениями объекта linkedResource_v2.
+title: Получение linkedResource_v2
+description: Чтение свойств и связей linkedResource_v2 объекта.
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 22108f9e4859552ebfc5e4f88ae96b31f42f6c41
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1159d79c8c74b0170f59dc45d7c7e61d5c5f64c1
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099597"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821178"
 ---
-# <a name="get-linkedresource_v2"></a>Получить linkedResource_v2
+# <a name="get-linkedresource_v2-deprecated"></a>Получение linkedResource_v2 (не рекомендуется)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями linkedResource_v2 [объекта.](../resources/linkedresource_v2.md)
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Чтение свойств и связей [linkedResource_v2 объекта](../resources/linkedresource_v2.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
+|Делегированное (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
 |Приложение|Tasks.Read, Tasks.ReadWrite|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -47,12 +49,12 @@ GET /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTask
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа `200 OK` [и объект linkedResource_v2](../resources/linkedresource_v2.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика [и linkedResource_v2](../resources/linkedresource_v2.md) объект в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

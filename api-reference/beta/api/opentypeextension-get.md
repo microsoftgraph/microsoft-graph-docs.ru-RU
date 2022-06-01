@@ -5,18 +5,20 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 247795d16dadacdc5f88ffa45d03ffbb880e839e
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: fab76137d91db84b5034e6565676feb396045f18
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365003"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820758"
 ---
 # <a name="get-open-extension"></a>Получение открытого расширения
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
 Получение открытого расширения (объекта [openTypeExtension](../resources/opentypeextension.md)), определенного по имени или полному имени.
 
@@ -26,16 +28,18 @@ ms.locfileid: "65365003"
 
 |**Сценарий GET**|**Поддерживаемые ресурсы**|**Текст ответа**|
 |:-----|:-----|:-----|
-|Получение определенного расширения из экземпляра известного ресурса.| [Административная](../resources/administrativeunit.md) единица, [устройство](../resources/device.md), [событие](../resources/event.md), [группа](../resources/group.md)[, событие](../resources/event.md) группы, [запись](../resources/post.md) группы, [сообщение](../resources/message.md), [организация](../resources/organization.md), личный [контакт](../resources/contact.md), [пользователь](../resources/user.md), [задача](../resources/basetask.md), [список задач](../resources/basetasklist.md)  | Только открытое расширение.|
-|Получение экземпляра известного ресурса, дополненного определенным расширением.|Административная единица, устройство, событие, группа, событие группы, запись группы, сообщение, организация, личный контакт, пользователь, задача, список задач. |Экземпляр известного ресурса, дополненный открытым расширением.|
-|Поиск экземпляров ресурсов и их дополнение определенным расширением. | Событие, групповое событие, запись группы, сообщение, личный контакт, задача, список задач |Экземпляры ресурса, дополненные открытым расширением.|
+|Получение определенного расширения из экземпляра известного ресурса.| [](../resources/administrativeunit.md)Административная единица, [baseTask](../resources/basetask.md) (не рекомендуется), [baseTaskList](../resources/basetasklist.md) (не рекомендуется), [устройство](../resources/device.md), [событие](../resources/event.md)[, группа](../resources/group.md)[, событие](../resources/event.md) [группы, запись](../resources/post.md) группы, [сообщение](../resources/message.md), [организация](../resources/organization.md), [личный](../resources/contact.md) контакт, [пользователь](../resources/user.md), [todoTask](../resources/todotask.md), [todoTaskList](../resources/todotasklist.md)  | Только открытое расширение.|
+|Получение экземпляра известного ресурса, дополненного определенным расширением.|Административная единица, базовая задача, базовый список задач, устройство, событие, группа, событие группы, запись группы, сообщение, организация, личный контакт, пользователь, задача задач, список задач задач. |Экземпляр известного ресурса, дополненный открытым расширением.|
+|Поиск экземпляров ресурсов и их дополнение определенным расширением. | Базовая задача, базовый список задач, событие, групповое событие, запись группы, сообщение, личный контакт, задача задач, список задач задач |Экземпляры ресурса, дополненные открытым расширением.|
 
 ## <a name="permissions"></a>Разрешения
 
 В зависимости от того, какой ресурс содержит расширение, и типа запрашиваемого расширения (делегированного или для приложений), разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Application |
 |:-----|:-----|:-----|:-----|
+| [baseTask](../resources/basetask.md) (не рекомендуется) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
+| [baseTaskList](../resources/basetasklist.md) (не рекомендуется)  | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 | [device](../resources/device.md) | Directory.Read.All | Не поддерживается | Device.ReadWrite.All |
 | [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [group](../resources/group.md) | Group.Read.All | Не поддерживается | Group.Read.All |
@@ -44,9 +48,9 @@ ms.locfileid: "65365003"
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
 | [organization](../resources/organization.md) | User.Read | Не поддерживается | Organization.Read.All |
 | [contact](../resources/contact.md) (личный контакт) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
+| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 | [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
-| [task](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
-| [tasklist](../resources/basetasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -68,13 +72,15 @@ GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
 GET /organization/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{taskId}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/tasks/lists/{baseTaskListId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}/tasks/{todoTaskId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/tasks/{baseTaskId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/extensions/{extensionId}
 ```
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>Получение известного экземпляра ресурса с соответствующим расширением 
 
-Для типов ресурса, таких как event, group event, group post, message, personal contact, task, task list, можно использовать такой же запрос REST, что и при получении экземпляра ресурса. Найдите расширение, соответствующее заданному свойству **id**, и дополните экземпляр расширением. Отклик включает большинство свойств ресурса.
+Для событий, групповых событий, групповых сообщений, сообщений, личных контактов, задач, типов ресурсов списка задач вы можете использовать тот же запрос REST, что и для получения экземпляра ресурса, найти расширение, которое соответствует фильтру по его свойству **id**, и развернуть экземпляр с расширением. Ответ включает в себя большинство свойств ресурса.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -83,7 +89,9 @@ GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/tasks/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 ```
 
@@ -112,7 +120,7 @@ GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{ex
 GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
->**Примечание.** В приведенном выше синтаксисе показаны некоторые распространенные способы определения коллекции или экземпляров ресурсов, чье расширение нужно получить. Все другие варианты синтаксиса, позволяющие определить эти коллекции или экземпляры ресурсов, поддерживают получение открытых расширений этих экземпляров или коллекций подобным образом.
+>**Примечание.** В приведенном выше синтаксисе показаны некоторые распространенные способы определения коллекции или экземпляров ресурсов, расширение которых нужно получить. Все другие варианты синтаксиса, позволяющие определить эти коллекции или экземпляры ресурсов, поддерживают получение открытых расширений этих экземпляров или коллекций подобным образом.
 
 
 ## <a name="path-parameters"></a>Параметры пути
@@ -486,24 +494,14 @@ Content-Type: application/json
 
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_5"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%20eq%20'Com.Contoso.Referral')&$expand=Extensions($filter=id%20eq%20'Com.Contoso.Referral')
 ```
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-5-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-opentypeextension-5-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### <a name="response-5"></a>Отклик 5

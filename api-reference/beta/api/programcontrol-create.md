@@ -1,18 +1,18 @@
 ---
-title: Создание объекта programControl
+title: Создание programControl (не рекомендуется)
 description: В Azure AD проверки доступа создайте объект programControl.  Это связывает проверку доступа с программой.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 61b903d83b6d5b7c8de8e101e9b435a8ff34496e
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: f1a2e919a24d71d50fe0af26dc7f766fd4c0a8d1
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314943"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820908"
 ---
-# <a name="create-programcontrol"></a>Создание объекта programControl
+# <a name="create-programcontrol-deprecated"></a>Создание programControl (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -34,8 +34,8 @@ ms.locfileid: "65314943"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | ProgramControl.ReadWrite.All  |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | ProgramControl.ReadWrite.All  |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            |  ProgramControl.ReadWrite.All  |
 
 Пользователь, выполнив вход, также должен иметь роль каталога, которая позволяет ему создать **programControl**. 

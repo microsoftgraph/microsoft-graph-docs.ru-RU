@@ -1,18 +1,18 @@
 ---
-title: Удаление accessReview
-description: В функции обзоров доступа Azure AD удалите объект accessReview.
+title: Удаление accessReview (не рекомендуется)
+description: В Azure AD проверки доступа удалите объект accessReview.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a76ae76a0cb709de16ce94b0e1e1929262eff4ff
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 4c25cf00feb128faf2d3686adf5a7619de72b535
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63393482"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819260"
 ---
-# <a name="delete-accessreview"></a>Удаление accessReview
+# <a name="delete-accessreview-deprecated"></a>Удаление accessReview (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -20,17 +20,17 @@ ms.locfileid: "63393482"
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) удалите [объект accessReview](../resources/accessreview.md) .
+В Azure AD [проверки доступа](../resources/accessreviews-root.md) удалите [объект accessReview](../resources/accessreview.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | AccessReview.ReadWrite.Membership |
 
-Вызываемая должна также иметь разрешение ProgramControl.ReadWrite.All, чтобы удалить [программуControl](../resources/programcontrol.md).
+Вызывающий объект также должен иметь разрешение ProgramControl.ReadWrite.All, чтобы он можно было удалить [programControl](../resources/programcontrol.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

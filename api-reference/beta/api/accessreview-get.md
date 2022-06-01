@@ -1,18 +1,18 @@
 ---
-title: Получение accessReview
+title: Получение accessReview (не рекомендуется)
 description: В Azure AD проверки доступа получите объект accessReview.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 50f3ba903b15db5e2cee1972d0629127e14926f7
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: ee160d056e4aa4ba792a85551d14ac10c5801d17
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314514"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819176"
 ---
-# <a name="get-accessreview"></a>Получение accessReview
+# <a name="get-accessreview-deprecated"></a>Получение accessReview (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -31,8 +31,8 @@ ms.locfileid: "65314514"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership  |
 
 Чтобы вызвать этот API, пользователь, выполнив вход, также должен быть в роли каталога, которая позволяет ему читать проверку доступа, или пользователь может быть назначен в качестве рецензента при проверке доступа.  Дополнительные сведения см. в разделе о требованиях к роли и разрешениям для [проверок доступа](../resources/accessreviews-root.md).

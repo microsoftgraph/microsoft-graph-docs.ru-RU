@@ -1,31 +1,33 @@
 ---
-title: Контрольные списки спискаItems
-description: Получите ресурсы checklistItem, связанные с baseTask, из свойства навигации checklistItems.
+title: Перечисление контрольных элементов
+description: Получение ресурсов checklistItem, связанных со свойством навигации checklistItems объекта baseTask.
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bb0fe73336dded11a35581b98985db79ff886652
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f8ed81db725f49e112ee7f67d64224ddf46b8749
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130208"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820898"
 ---
-# <a name="list-checklistitems"></a>Контрольные списки спискаItems
+# <a name="list-checklistitems"></a>Перечисление контрольных элементов
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите [ресурсы checklistItem,](../resources/checklistitem.md) связанные с [baseTask,](../resources/basetask.md) из свойства навигации checklistItems.
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Получение ресурсов [checklistItem](../resources/checklistitem.md) , связанных со свойством **навигации checklistItems** [объекта baseTask](../resources/baseTask.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
+|Делегированное (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
 |Приложение|Tasks.Read, Tasks.ReadWrite|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -47,12 +49,12 @@ GET /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTask
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию `200 OK` [объектов checklistItem](../resources/checklistitem.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию [объектов checklistItem](../resources/checklistitem.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

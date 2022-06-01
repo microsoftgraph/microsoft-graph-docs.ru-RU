@@ -1,35 +1,35 @@
 ---
 title: Получение organizationalBranding
-description: Ознакомьтесь с свойствами и отношениями объекта organizationalBranding.
+description: Чтение свойств и связей объекта organizationalBranding.
 author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e9651b07552be60586a9a15050881b80aa13b80d
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 599b38bf2d1b1552cf7e3cd4dc518f266f2ca832
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395680"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820998"
 ---
 # <a name="get-organizationalbranding"></a>Получение organizationalBranding
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение объекта организационного брендинга по умолчанию, если заглавная головка **Accept-Language** установлена или `0` `default`. Если по умолчанию не существует объекта организационного брендинга, этот метод возвращает ошибку `404 Not Found` .
+Извлеките объект фирменной символики организации по умолчанию, если заголовок **Accept-Language** имеет значение или `0` `default`. Если объект фирменной символики организации по умолчанию не существует, этот метод возвращает ошибку `404 Not Found` .
 
-Если загон **Accept-Language** задан существующему локальному языку, определенному по значению его **id**, этот метод извлекает брендинг для указанного локального языка.
+Если для **заголовка accept-Language** задан существующий языковой **стандарт,** определенный по значению его идентификатора, этот метод извлекает фирменную символику для указанного языкового стандарта.
 
-Этот метод извлекает только свойства, не веские, например имя **пользователяHintText** и **signInPageText**. Чтобы получить потоковые типы брендинга по умолчанию, например **bannerLogo** и **backgroundImage**, используйте [метод GET organizationalBrandingLocalization](organizationalbrandinglocalization-get.md) .
+Этот метод извлекает только свойства, отличные от stream, например **usernameHintText** и **signInPageText**. Чтобы получить типы Stream фирменной символики по умолчанию, например **bannerLogo** и **backgroundImage**, используйте [метод GET organizationalBrandingLocalization](organizationalbrandinglocalization-get.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User.Read, Organization.Read.All, User.ReadBasic.All, User.Read.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | User.Read, Organization.Read.All, User.ReadBasic.All, User.Read.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,18 +50,18 @@ GET /organization/{organizationId}/branding
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
-|Принять-Язык|Допустимый локал ISO 639-1. Обязательный элемент.|
+|Принять-Язык|Допустимый языковой стандарт ISO 639-1 или `0` языковой стандарт по умолчанию. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект organizationalBranding](../resources/organizationalbranding.md) в тексте отклика. Если нет объекта брендинга по умолчанию, этот метод возвращает код `404 Not Found` ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [organizationalBranding](../resources/organizationalbranding.md) в тексте отклика. Если объект фирменной символики по умолчанию не существует, этот метод возвращает код `404 Not Found` ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-default-branding"></a>Пример 1. Получить брендинг по умолчанию
+### <a name="example-1-get-the-default-branding"></a>Пример 1. Получение фирменной символики по умолчанию
 
 #### <a name="request"></a>Запрос
 
@@ -158,7 +158,7 @@ Content-Type: application/json
 ```
 
 
-### <a name="example-2-get-organizational-branding-when-no-branding-is-configured"></a>Пример 2. Получить организационный брендинг, если брендинг не настроен
+### <a name="example-2-get-organizational-branding-when-no-branding-is-configured"></a>Пример 2. Получение фирменной символики организации, если фирменная символика не настроена
 
 #### <a name="request"></a>Запрос
 
@@ -213,9 +213,9 @@ Accept-Language: 0
 HTTP/1.1 404 Not Found
 ```
 
-### <a name="example-3-get-organizational-branding-for-the-french-locale"></a>Пример 3. Получить организационный брендинг для французского языка
+### <a name="example-3-get-organizational-branding-for-the-french-locale"></a>Пример 3. Получение фирменной символики организации для французского языкового стандарта
 
-В следующем примере для получения брендинга локализации используется заглавная головка **Accept-Language**`fr-FR`.
+В следующем примере для получения фирменной символики локализации используется заголовок **Accept-Language**`fr-FR`.
 
 #### <a name="request"></a>Запрос
 
@@ -288,9 +288,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-get-the-bannerlogo-for-the-default-locale"></a>Пример 4. Получить bannerLogo для локального значения по умолчанию
+### <a name="example-4-get-the-bannerlogo-for-the-default-locale"></a>Пример 4. Получение bannerLogo для языкового стандарта по умолчанию
 
-В следующем примере **возвращается объект bannerLogo** для локального значения по умолчанию. Чтобы получить типы объектов Stream, например **bannerLogo**, используйте [get organizationalBrandingLocalizationmethod](organizationalbrandinglocalization-get.md). Вы можете указать значение **id** как или `default` в `0` URL-адресе запроса. Если свойство не установлено, запрос возвращает пустой ответ.
+В следующем примере возвращается **объект bannerLogo** для языкового стандарта по умолчанию. Чтобы получить типы объектов Stream, например **bannerLogo**, используйте [командлет Get organizationalBrandingLocalizationmethod](organizationalbrandinglocalization-get.md). Вы можете указать значение **идентификатора как** или `default` в `0` URL-адресе запроса. Если свойство не задано, запрос возвращает пустой ответ.
 
 #### <a name="request"></a>Запрос
 
@@ -322,9 +322,9 @@ Content-Type: image/*
 <Image>
 ```
 
-### <a name="example-5-get-the-bannerlogo-for-the-default-locale-when-it-is-not-set"></a>Пример 5. Получить bannerLogo для локального значения по умолчанию, если он не установлен
+### <a name="example-5-get-the-bannerlogo-for-the-default-locale-when-it-is-not-set"></a>Пример 5. Получение параметра bannerLogo для языкового стандарта по умолчанию, если он не задан
 
-В следующем примере возвращается **объект bannerLogo** , который не был задат для локального значения по умолчанию.
+В следующем примере возвращается **объект bannerLogo** , который не задан для языкового стандарта по умолчанию.
 
 #### <a name="request"></a>Запрос
 

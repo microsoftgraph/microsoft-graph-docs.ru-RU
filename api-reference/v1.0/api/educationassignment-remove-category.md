@@ -1,30 +1,30 @@
 ---
 title: Удаление educationCategory
-description: Удаление существующей системы educationCategory из этого образованияAssignment
+description: Удалите существующую educationCategory из этого объекта educationAssignment.
 ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c457654c4ff05e90e0e75a27d0386302fff9a1cf
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 78035badbf5e481f752a54874ac7769f594a9b82
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61337116"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820786"
 ---
 # <a name="remove-educationcategory"></a>Удаление educationCategory
 
 Пространство имен: microsoft.graph
 
-Удалите [educationCategory](../resources/educationcategory.md) из [educationAssignment](../resources/educationassignment.md).
+Удалите [educationCategory](../resources/educationcategory.md) из [объекта educationAssignment](../resources/educationassignment.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
+|Делегированное (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Делегированное (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается.  | 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -36,10 +36,9 @@ DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
-| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
-Не поставляем тело запроса для этого метода.
+Не предоставляйте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
@@ -82,7 +81,7 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 <!-- {
   "blockType": "response",

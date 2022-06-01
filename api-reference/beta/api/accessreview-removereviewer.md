@@ -1,18 +1,18 @@
 ---
-title: Удаление рецензента accessReview
-description: Удаление рецензента обзоров доступа.
+title: Удаление рецензента accessReview (не рекомендуется)
+description: Удаление рецензента проверки доступа.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e5bd42bf61f85a20b63462ce902809302d30dfd5
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: ca1c1eca841524963f79f05f8a70c1f7495e94d7
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63394175"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819183"
 ---
-# <a name="remove-accessreview-reviewer"></a>Удаление рецензента accessReview
+# <a name="remove-accessreview-reviewer-deprecated"></a>Удаление рецензента accessReview (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "63394175"
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) обновите существующий объект [accessReview](../resources/accessreview.md) , чтобы удалить пользователя в качестве рецензента.  Эта операция разрешена только для еще не завершенного обзора доступа и только для проверки доступа, в которой явно указаны рецензенты. Эта операция не разрешается для проверки доступа, в которой пользователи рассматривают собственный доступ, и не предназначена для проверки доступа, в которой владельцы групп назначены в качестве рецензентов. 
+В Azure AD [проверки доступа](../resources/accessreviews-root.md) обновите существующий объект [accessReview](../resources/accessreview.md), чтобы удалить пользователя в качестве рецензента.  Эта операция разрешена только для проверки доступа, которая еще не завершена, и только для проверки доступа, в которой явно указаны рецензенты. Эта операция не разрешена для проверки доступа, в которой пользователи проверяют собственный доступ, и не предназначена для проверки доступа, в которой владельцы группы назначаются в качестве рецензентов. 
 
 
 ## <a name="permissions"></a>Разрешения
@@ -28,8 +28,8 @@ ms.locfileid: "63394175"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ DELETE /accessReviews/{reviewId}/reviewers/{userId}
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не следует поставлять тело запроса.
+Текст запроса не должен быть указан.
 
 
 ## <a name="response"></a>Отклик
@@ -51,11 +51,11 @@ DELETE /accessReviews/{reviewId}/reviewers/{userId}
 
 ## <a name="example"></a>Пример
 
-Это пример обновления разового (не повторяемого) обзора доступа, чтобы удалить ненужный рецензент.
+Это пример обновления однофакторной проверки доступа (без повторной обработки), чтобы удалить ненужного рецензента.
 
 
 ##### <a name="request"></a>Запрос
-В URL-адрес запроса поставляют id объекта accessReview, а затем id объекта пользователя.
+В URL-адресе запроса укажите идентификатор объекта accessReview, а затем идентификатор объекта пользователя.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

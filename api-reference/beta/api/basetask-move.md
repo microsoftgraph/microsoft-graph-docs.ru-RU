@@ -1,31 +1,33 @@
 ---
 title: 'baseTask: перемещение'
-description: Перемещение объекта baseTask из одной базыTaskList в другой.
+description: Перемещение объекта baseTask из одного baseTaskList в другой.
 author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9f3fe575d2614ea2e9763fd7679e66cf03c928bd
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: e17821703a355d436104394f2c899452d3cc1ad3
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341732"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820317"
 ---
-# <a name="basetask-move"></a>baseTask: перемещение
+# <a name="basetask-move-deprecated"></a>baseTask: перемещение (не рекомендуется)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перемещение объекта [baseTask](../resources/basetask.md) из [одной базыTaskList в](../resources/basetasklist.md) другой.
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Перемещение объекта [baseTask](../resources/basetask.md) из [одного baseTaskList в](../resources/basetasklist.md) другой.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированное (рабочая или учебная учетная запись)|Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -57,13 +59,13 @@ POST /users/{userId|userPrincipalName}/tasks/alltasks/{baseTaskId}/move
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|destinationTaskListId|String|[BaseTaskList,](../resources/basetasklist.md) куда должен быть перемещен [объект baseTask](../resources/basetask.md).|
+|destinationTaskListId|Строка|[BaseTaskList,](../resources/basetasklist.md) в который необходимо переместить объект [baseTask](../resources/basetask.md).|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного действия возвращается код `200 OK` отклика и [baseTask](../resources/basetask.md) в тексте ответа.
+В случае успешного выполнения это действие возвращает код `200 OK` отклика и [baseTask](../resources/basetask.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

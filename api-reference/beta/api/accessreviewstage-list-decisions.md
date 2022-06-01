@@ -1,32 +1,32 @@
 ---
-title: Решения по списку (из многоступенчатого обзора доступа)
-description: Получите решения на этапе в многоступенчатом обзоре доступа.
+title: Вывод списка решений (из многоэтабной проверки доступа)
+description: Получение решений на этапе многоэтабной проверки доступа.
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a188aa60896a31cdde5cdbb6ca7edcf8929cce9d
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 3a2e06ed7d927686a84e352eab52d7a8554e04c0
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63721859"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819638"
 ---
-# <a name="list-decisions-from-a-multi-stage-access-review"></a>Решения по списку (из многоступенчатого обзора доступа)
+# <a name="list-decisions-from-a-multi-stage-access-review"></a>Вывод списка решений (из многоэтабной проверки доступа)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите решения на этапе в многоступенчатом обзоре доступа. Решения в [объекте accessReviewStage](../resources/accessReviewStage.md) представлены accessReviewInstanceDecisionItem].. объект /resources/accessreviewinstancedecisionitem.md.
+Получение решений на этапе многоэтабной проверки доступа. Решения в [объекте accessReviewStage](../resources/accessReviewStage.md) представлены объектом [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,9 +39,9 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметры `$select`запроса , `$filter`, `$orderBy`, и `$skip``$top` OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select`запроса , `$filter`, `$orderBy`, `$skip`и `$top` OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-Размер страницы по умолчанию для этого API — 100 **объектов accessReviewStage** . Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
+Размер страницы по умолчанию для этого API — 100 **объектов accessReviewStage** . Чтобы повысить эффективность и избежать времени ожидания из-за больших результирующих наборов, примените разбиение на страницы с помощью `$skip` `$top` параметров запроса и параметров запроса. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -54,7 +54,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот `200 OK` метод возвращает код отклика и коллекцию [объектов accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) в тексте ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

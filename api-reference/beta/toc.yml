@@ -360,7 +360,7 @@ items:
           - name: Объекты каталога
             href: resources/directoryobject.md
             items:
-              - name: Активация плана обслуживания
+              - name: Активация плана обслуживания (не рекомендуется)
                 href: api/user-activateserviceplan.md
               - name: Назначение лицензии
                 href: api/user-assignlicense.md
@@ -594,7 +594,7 @@ items:
                 href: api/chat-list.md
           - name: Задачи To-Do
             items:
-              - name: Задача
+              - name: Задача "Задачи"
                 href: resources/todotask.md
               - name: Создание задачи
                 href: api/todotasklist-post-tasks.md
@@ -11313,7 +11313,7 @@ items:
                     href: api/organization-get.md
                   - name: Обновление сведений об организации
                     href: api/organization-update.md
-                  - name: Активация службы
+                  - name: Активация службы (нерекомендуемая)
                     href: api/organization-activateservice.md
               - name: Параметры организации
                 href: resources/organizationSettings.md
@@ -12833,7 +12833,7 @@ items:
                         href: api/entitlementmanagementsettings-get.md
                       - name: Обновление
                         href: api/entitlementmanagementsettings-update.md
-              - name: Служба Privileged Identity Management
+              - name: Управление привилегированными пользователями
                 items:
                   - name: Управление привилегированными пользователями
                     displayName: PIM v2
@@ -13372,7 +13372,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Delete
                     href: api/educationalactivity-delete.md
-              - name: Адрес электронной почты
+              - name: адрес электронной почты;
                 items:
                   - name: Электронная почта элемента
                     href: resources/itememail.md
@@ -14617,6 +14617,8 @@ items:
                 href: api/plannerplan-get.md
               - name: Обновление плана
                 href: api/plannerplan-update.md
+              - name: Удалить план
+                href: api/plannerplan-delete.md
               - name: Перечисление задач планов
                 href: api/plannerplan-list-tasks.md
               - name: Перечисление контейнеров планов
@@ -15351,51 +15353,43 @@ items:
         displayName: Microsoft To Do
         items:
           - name: Обзор
-            href: resources/tasks-overview.md
+            href: resources/todo-overview.md
           - name: Список задач
             items:
-              - name: Базовый список задач
-                href: resources/basetasklist.md
               - name: Список задач
-                href: resources/tasklist.md
-              - name: Хорошо известный список задач
-                href: resources/wellknowntasklist.md
+                href: resources/todotasklist.md
               - name: Перечисление списков задач
-                href: api/tasks-list-lists.md
+                href: api/todo-list-lists.md
               - name: Создание списка задач
-                href: api/tasks-post-lists.md
+                href: api/todo-post-lists.md
               - name: Получение списка задач
-                href: api/basetasklist-get.md
+                href: api/todotasklist-get.md
               - name: Обновление списка задач
-                href: api/tasklist-update.md
+                href: api/todotasklist-update.md
               - name: Удаление списка задач
-                href: api/tasklist-delete.md
-              - name: Получение разностного списка задач
-                href: api/basetasklist-delta.md
+                href: api/todotasklist-delete.md
+              - name: Получение разностных данных для списка задач
+                href: api/todotasklist-delta.md
               - name: Создание открытого расширения
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Задача
+          - name: Задача "Задачи"
             items:
-              - name: Базовая задача
-                href: resources/basetask.md
-              - name: Задача
-                href: resources/task.md
+              - name: Задача "Задачи"
+                href: resources/todotask.md
               - name: Перечисление задач
-                href: api/basetasklist-list-tasks.md
+                href: api/todotasklist-list-tasks.md
               - name: Создание задачи
-                href: api/basetasklist-post-tasks.md
+                href: api/todotasklist-post-tasks.md
               - name: Вывод задачи
-                href: api/basetask-get.md
+                href: api/todotask-get.md
               - name: Обновление задачи
-                href: api/basetask-update.md
-              - name: Переместить задачу
-                href: api/basetask-move.md
+                href: api/todotask-update.md
               - name: Удаление задачи
-                href: api/basetask-delete.md
-              - name: Получение разностных задач
-                href: api/basetask-delta.md
+                href: api/todotask-delete.md
+              - name: Получение разностных данных для задачи
+                href: api/todotask-delta.md
               - name: Создание открытого расширения
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
@@ -15404,9 +15398,9 @@ items:
             href: resources/checklistitem.md
             items:
               - name: Список
-                href: api/basetask-list-checklistitems.md
+                href: api/todotask-list-checklistitems.md
               - name: Создание
-                href: api/basetask-post-checklistitems.md
+                href: api/todotask-post-checklistitems.md
               - name: Получение
                 href: api/checklistitem-get.md
               - name: Обновление
@@ -15414,73 +15408,96 @@ items:
               - name: Delete
                 href: api/checklistitem-delete.md
           - name: Связанный ресурс
-            href: resources/linkedresource_v2.md
+            href: resources/linkedresource.md
             items:
               - name: Список
-                href: api/basetask-list-linkedresources.md
+                href: api/todotask-list-linkedresources.md
               - name: Создание
-                href: api/basetask-post-linkedresources.md
+                href: api/todotask-post-linkedresources.md
               - name: Получение
-                href: api/linkedresource_v2-get.md
+                href: api/linkedresource-get.md
               - name: Обновление
-                href: api/linkedresource_v2-update.md
+                href: api/linkedresource-update.md
               - name: Delete
-                href: api/linkedresource_v2-delete.md
-          - name: Задачи (старые)
+                href: api/linkedresource-delete.md
+          - name: API задач с базовыми задачами (не рекомендуется)
             items:
               - name: Обзор
-                href: resources/todo-overview.md
-              - name: Список задач
-                href: resources/todotasklist.md
+                href: resources/tasks-overview.md
+              - name: Базовый список задач
                 items:
-                  - name: Перечисление списков задач
-                    href: api/todo-list-lists.md
-                  - name: Создание списка задач
-                    href: api/todo-post-lists.md
-                  - name: Получение списка задач
-                    href: api/todotasklist-get.md
-                  - name: Обновление списка задач
-                    href: api/todotasklist-update.md
-                  - name: Удаление списка задач
-                    href: api/todotasklist-delete.md
-                  - name: Получение разностного списка задач
-                    href: api/todotasklist-delta.md
+                  - name: Базовый список задач
+                    href: resources/basetasklist.md
+                  - name: Список задач
+                    href: resources/tasklist.md
+                  - name: Хорошо известный список задач
+                    href: resources/wellknowntasklist.md
+                  - name: Перечисление базовых списков задач
+                    href: api/tasks-list-lists.md
+                  - name: Создание базового списка задач
+                    href: api/tasks-post-lists.md
+                  - name: Получение базового списка задач
+                    href: api/basetasklist-get.md
+                  - name: Обновление списка базовых задач
+                    href: api/tasklist-update.md
+                  - name: Удаление базового списка задач
+                    href: api/tasklist-delete.md
+                  - name: Получение разностного списка базовых задач
+                    href: api/basetasklist-delta.md
                   - name: Создание открытого расширения
                     href: api/opentypeextension-post-opentypeextension.md
                   - name: Получение открытого расширения
                     href: api/opentypeextension-get.md
-              - name: Задача
-                href: resources/todotask.md
+              - name: Базовая задача
                 items:
-                  - name: Перечисление задач
-                    href: api/todotasklist-list-tasks.md
-                  - name: Создание задачи
-                    href: api/todotasklist-post-tasks.md
-                  - name: Вывод задачи
-                    href: api/todotask-get.md
-                  - name: Обновление задачи
-                    href: api/todotask-update.md
-                  - name: Удаление задачи
-                    href: api/todotask-delete.md
-                  - name: Получение разностных задач
-                    href: api/todotask-delta.md
+                  - name: Базовая задача
+                    href: resources/basetask.md
+                  - name: Задача
+                    href: resources/task.md
+                  - name: Перечисление базовых задач
+                    href: api/basetasklist-list-tasks.md
+                  - name: Создание базовой задачи
+                    href: api/basetasklist-post-tasks.md
+                  - name: Получение базовой задачи
+                    href: api/basetask-get.md
+                  - name: Обновление базовой задачи
+                    href: api/basetask-update.md
+                  - name: Переместить базовую задачу
+                    href: api/basetask-move.md
+                  - name: Удаление базовой задачи
+                    href: api/basetask-delete.md
+                  - name: Получение разностных данных для базовой задачи
+                    href: api/basetask-delta.md
                   - name: Создание открытого расширения
                     href: api/opentypeextension-post-opentypeextension.md
                   - name: Получение открытого расширения
                     href: api/opentypeextension-get.md
-              - name: Связанный ресурс
-                href: resources/linkedresource.md
+              - name: Элемент контрольного списка
+                href: resources/checklistitem.md
                 items:
                   - name: Список
-                    href: api/todotask-list-linkedresources.md
+                    href: api/basetask-list-checklistitems.md
                   - name: Создание
-                    href: api/todotask-post-linkedresources.md
+                    href: api/basetask-post-checklistitems.md
                   - name: Получение
-                    href: api/linkedresource-get.md
+                    href: api/checklistitem-get.md
                   - name: Обновление
-                    href: api/linkedresource-update.md
+                    href: api/checklistitem-update.md
                   - name: Delete
-                    href: api/linkedresource-delete.md
+                    href: api/checklistitem-delete.md
+              - name: Связанный ресурс версии 2
+                href: resources/linkedresource_v2.md
+                items:
+                  - name: Список
+                    href: api/basetask-list-linkedresources.md
+                  - name: Создание
+                    href: api/basetask-post-linkedresources.md
+                  - name: Получение
+                    href: api/linkedresource_v2-get.md
+                  - name: Обновление
+                    href: api/linkedresource_v2-update.md
+                  - name: Delete
+                    href: api/linkedresource_v2-delete.md
           - name: Задачи Outlook (не рекомендуется)
             items:
               - name: Outlook задачи (не рекомендуется)

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса userRegistrationFeatureSummary
-description: Сводка пользователей, способных выполнять многофакторную проверку подлинности, Self-Service и проверку подлинности без пароля.
-author: danielwood95
-localization_priority: Normal
+description: Сводка пользователей, способных выполнять многофакторную проверку подлинности, Self-Service сброс пароля и проверку подлинности без пароля.
+author: besiler
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 291da483380d6e1d65b5db527128098b8b416c83
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b058276eaa3bc9f12dbe46ddc33afbe06b0bc2f2
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132937"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820149"
 ---
 # <a name="userregistrationfeaturesummary-resource-type"></a>Тип ресурса userRegistrationFeatureSummary
 
@@ -18,19 +18,19 @@ ms.locfileid: "50132937"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет текущее состояние того, сколько пользователей в организации могут выполнять многофакторную проверку подлинности, самостоятельный сброс паролей и проверку подлинности без пароля.
+Представляет текущее состояние количества пользователей в организации, способных выполнять многофакторную проверку подлинности, самостоятельный сброс пароля и проверку подлинности без пароля.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [usersRegisteredByFeature](../api/authenticationmethodsroot-usersregisteredbyfeature.md) | userRegistrationFeatureSummary | Получите количество пользователей, способных выполнять многофакторную проверку подлинности, Self-Service и проверку подлинности без пароля. |
+| [usersRegisteredByFeature](../api/authenticationmethodsroot-usersregisteredbyfeature.md) | userRegistrationFeatureSummary | Получение количества пользователей, способных выполнять многофакторную проверку подлинности, Self-Service сброс пароля и проверку подлинности без пароля. |
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |totalUserCount|Int64|Общее количество учетных записей пользователей, за исключением заблокированных|
-|userRegistrationFeatureCounts|[Коллекция userRegistrationFeatureCount](../resources/userregistrationfeaturecount.md)|Количество пользователей, зарегистрированных или способных использовать многофакторную проверку подлинности, Self-Service и проверку подлинности без пароля.|
+|userRegistrationFeatureCounts|[Коллекция userRegistrationFeatureCount](../resources/userregistrationfeaturecount.md)|Число пользователей, зарегистрированных или поддерживающих многофакторную проверку подлинности, Self-Service и проверку подлинности без пароля.|
 |userRoles|includedUserRoles|Тип роли пользователя. Возможные значения: `all`, `privilegedAdmin`, `admin`, `user`.|
 |userTypes|includedUserTypes|Тип пользователя. Возможные значения: `all`, `member`, `guest`.|
 
@@ -46,7 +46,7 @@ ms.locfileid: "50132937"
 * Администратор пользователей
 * Администратор проверки подлинности
 
-Это значение `admin` включает все роли администратора Azure AD. 
+Это значение включает `admin` все Azure AD роли администратора. 
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

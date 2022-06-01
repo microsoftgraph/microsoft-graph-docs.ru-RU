@@ -1,18 +1,18 @@
 ---
-title: Вывод списка решений accessReview
+title: Вывод списка решений accessReview (нерекомендуемые)
 description: В Azure AD проверки доступа получите решения объекта accessReview для вызывающего пользователя в качестве рецензента.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 60e70fb24ec64648bc273a68dc0b640ad7865be5
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 0a7c60cb53c6232240a8786a19e8a9c97add990d
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314500"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819156"
 ---
-# <a name="list-my-accessreview-decisions"></a>Вывод списка решений accessReview
+# <a name="list-my-accessreview-decisions-deprecated"></a>Вывод списка решений accessReview (нерекомендуемые)
 
 Пространство имен: microsoft.graph
 
@@ -26,8 +26,8 @@ ms.locfileid: "65314500"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
 Пользователь, выполнив вход, также должен иметь разрешение на чтение этой конкретной проверки доступа.

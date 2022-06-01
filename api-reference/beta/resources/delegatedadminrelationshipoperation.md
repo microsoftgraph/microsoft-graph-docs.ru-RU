@@ -5,12 +5,12 @@ author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9eef6d0de67b3e124f95cd0763ac5948b6d2fd10
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: bf369451c3a2b0d5ab4ca01894a4c7d546f7e630
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704206"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820940"
 ---
 # <a name="delegatedadminrelationshipoperation-resource-type"></a>Тип ресурса delegatedAdminRelationshipOperation
 
@@ -30,11 +30,11 @@ ms.locfileid: "64704206"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Время создания длительной операции в формате ISO 8601 и времени в формате UTC. Только для чтения.|
-|data|String|Данные (полезные данные) для операции. Только для чтения.|
-|id|String|Уникальный идентификатор длительной операции делегированного администратора. Только для чтения. Наследуется от [сущности](../resources/entity.md).|
+|data|Строка|Данные (полезные данные) для операции. Только для чтения.|
+|id|Строка|Уникальный идентификатор длительной операции делегированного администратора. Только для чтения. Наследуется от [сущности](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения длительной операции в формате ISO 8601 и времени в формате UTC. Только для чтения.|
 |operationType|delegatedAdminRelationshipOperationType|Тип длительной операции. Возможные значения: `delegatedAdminAccessAssignmentUpdate`, `unknownFutureValue`. Только для чтения.|
-|status|delegatedAdminRelationshipOperationStatus|Состояние операции. Только для чтения. Допустимые значения: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`. Только для чтения. Поддерживает `$orderBy`.|
+|status|longRunningOperationStatus|Состояние операции. Только для чтения. Допустимые значения: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. Только для чтения. Поддерживает `$orderBy`.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

@@ -1,18 +1,18 @@
 ---
-title: Перечисление объектов accessReview
+title: Перечисление объектов accessReview (нерекомендуемых)
 description: Получение объектов accessReview для businessFlowTemplate.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8330e5dedcaae077864c556b9def9d09dac2cc8b
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 916229324c87bf4d7423dde0af86f6434e7cdef7
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314528"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819147"
 ---
-# <a name="list-accessreviews"></a>Перечисление объектов accessReview
+# <a name="list-accessreviews-deprecated"></a>Перечисление объектов accessReview (нерекомендуемых)
 
 Пространство имен: microsoft.graph
 
@@ -35,8 +35,8 @@ ms.locfileid: "65314528"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
 
  Пользователь, выполнив вход, также должен иметь роль каталога, которая позволяет ему читать проверку доступа.

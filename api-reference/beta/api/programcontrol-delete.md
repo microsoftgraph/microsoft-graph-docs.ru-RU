@@ -1,18 +1,18 @@
 ---
-title: Удаление программыControl
-description: В функции обзоров доступа Azure AD удалите объект programControl.  Это отонка обзора доступа из программы.
+title: Удаление programControl (не рекомендуется)
+description: В Azure AD проверки доступа удалите объект programControl.  Это отменит связь проверки доступа из программы.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: d593f6961b470874576e8ff266fabe85a9441723
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 646e194bead131a40f6fbdbd57ac509e61e4f3cc
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63396317"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820464"
 ---
-# <a name="delete-programcontrol"></a>Удаление программыControl
+# <a name="delete-programcontrol-deprecated"></a>Удаление programControl (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -20,17 +20,17 @@ ms.locfileid: "63396317"
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) удалите [объект programControl](../resources/programcontrol.md) .  Это отонка обзора доступа из программы.
+В Azure AD [проверки доступа](../resources/accessreviews-root.md) удалите [объект programControl](../resources/programcontrol.md).  Это отменит связь проверки доступа из программы.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | ProgramControl.ReadWrite.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | ProgramControl.ReadWrite.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | ProgramControl.ReadWrite.All  |
 
-Подписанный пользователь также должен быть в роли каталога, которая позволяет им удалять `programControl`.
+Пользователь, выполнив вход, также должен быть в роли каталога, которая позволяет ему удалить `programControl`.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

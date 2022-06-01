@@ -1,18 +1,18 @@
 ---
-title: Сброс accessReview
-description: В функции обзоров доступа Azure AD сброшены решения действующего в настоящее время accessReview.  Целевой объект может быть либо одноразовой проверкой доступа, либо экземпляром повторного обзора доступа.  Предыдущие решения больше не записываются, но рецензенты могут продолжать обновлять решения.
+title: Сброс accessReview (не рекомендуется)
+description: В Azure AD проверки доступа сбросьте решения текущего активного accessReview.  Целевым объектом может быть либо разовая проверка доступа, либо экземпляр повторяющейся проверки доступа.  Предыдущие решения больше не записываются, но рецензенты могут продолжать обновлять решения.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bf189f1bdae786baa8239a924b5502c442878135
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 77cf15a9120cf59eb5925958368ba2104a588a7c
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340732"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819180"
 ---
-# <a name="reset-accessreview"></a>Сброс accessReview
+# <a name="reset-accessreview-deprecated"></a>Сброс accessReview (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -20,15 +20,15 @@ ms.locfileid: "62340732"
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) сброшены решения действующего [в настоящее время accessReview](../resources/accessreview.md).  Целевой объект может быть либо одноразовой проверкой доступа, либо экземпляром повторного обзора доступа.  Предыдущие решения больше не записываются, но рецензенты могут продолжать обновлять решения.
+В Azure AD [проверки доступа](../resources/accessreviews-root.md) сбросьте решения текущего [активного accessReview](../resources/accessreview.md).  Целевым объектом может быть либо разовая проверка доступа, либо экземпляр повторяющейся проверки доступа.  Предыдущие решения больше не записываются, но рецензенты могут продолжать обновлять решения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP-запрос

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 830ed9a27ae30feb349a9c340436c4a1aa0e6eff
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 648d39302258b0f6940ac06312fb6f7c482f5248
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394770"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821101"
 ---
 # <a name="update-subscription"></a>Обновление подписки
 
@@ -18,18 +18,21 @@ ms.locfileid: "63394770"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
+
 Возобновление подписки путем увеличения срока действия.
 
-В таблице в разделе [Разрешения](#permissions) перечислены ресурсы, поддерживаюющие подписку на изменение уведомлений.
+В таблице в разделе ["Разрешения](#permissions) " перечислены ресурсы, поддерживающие подписку на уведомления об изменениях.
 
-Срок действия подписки истекает по истечении времени, которое зависит от типа ресурса. Чтобы избежать пропуска уведомлений об изменениях, приложение должно продлить подписки заблаговременно до истечения срока их действия. См [. подписку](../resources/subscription.md) на максимальную длину подписки для каждого типа ресурсов.
+Срок действия подписок истекает через некоторое время, которое зависит от типа ресурса. Чтобы избежать отсутствия уведомлений об изменениях, приложение должно продлить свои подписки ранее до даты окончания срока действия. Сведения [о максимальной](../resources/subscription.md) длине подписки для каждого типа ресурсов см. в статье о подписке.
 
 ## <a name="permissions"></a>Разрешения
 
 В зависимости от ресурса и типа требующегося разрешения (делегированное или для приложения) разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Application |
 |:-----|:-----|:-----|:-----|
+|[baseTask](../resources/basetask.md) (не рекомендуется) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 |[callRecord](../resources/callrecords-callrecord.md) | Не поддерживается | Не поддерживается | CallRecords.Read.All  |
 |[каналы](../resources/channel.md) (/teams/getAllChannels — все каналы в организации) | Не поддерживается  | Не поддерживается | Channel.ReadBasic.All, ChannelSettings.Read.All |
 |[каналы](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Не поддерживается | Channel.ReadBasic.All, ChannelSettings.Read.All  |
@@ -53,7 +56,7 @@ ms.locfileid: "63394770"
 |[group conversation](../resources/conversation.md) | Group.Read.All | Не поддерживается | Не поддерживается |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Не поддерживается | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
-|[онлайн-собрание](../resources/onlinemeeting.md) | Не поддерживается | Не поддерживается | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
+|[собрание по сети](../resources/onlinemeeting.md) | Не поддерживается | Не поддерживается | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 |[presence](../resources/presence.md) | Presence.Read.All | Не поддерживается | Не поддерживается |
 |[printer](../resources/printer.md) | Не поддерживается | Не поддерживается | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается | Не поддерживается | PrintTaskDefinition.ReadWrite.All |
@@ -61,7 +64,6 @@ ms.locfileid: "63394770"
 |[teams](../resources/team.md) (/teams — все команды в организации) | Не поддерживается | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
-|[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
@@ -76,13 +78,13 @@ ms.locfileid: "63394770"
 
 ### <a name="contact-event-and-message"></a>contact, event и message
 
-Вы можете подписаться на изменения в Outlook, события или ресурсов сообщений и  дополнительно указать в полезной нагрузке запроса POST, следует ли включать зашифрованные данные ресурсов в уведомлениях. 
+Вы можете подписаться на изменения в Outlook контактов **, событий** или сообщений  и при необходимости указать в полезных данных запроса POST, следует ли включать зашифрованные данные ресурсов в уведомления. 
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
-### <a name="onlinemeetings-presence"></a>onlineMeetings, присутствие
+### <a name="onlinemeetings-presence"></a>onlineMeetings, presence
 
-**OnlineMeetings и** **подписки на присутствие** [требуют](/graph/webhooks-with-resource-data) шифрования для уведомлений с данными ресурса. Создание подписки не удастся, если [шифрованиеCertificate и](../resources/subscription.md) [encryptionCertificateId](../resources/subscription.md) не будут указаны, нужны ли данные ресурса в уведомлениях.
+**OnlineMeetings и** **подписки на сведения** о присутствии требуют [шифрования](/graph/webhooks-with-resource-data) для уведомлений с данными ресурсов. Создание подписки завершится ошибкой, если в уведомлениях не [указаны encryptionCertificate и encryptionCertificateId](../resources/subscription.md).[](../resources/subscription.md)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -105,7 +107,7 @@ PATCH /subscriptions/{id}
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| expirationDateTime  | DateTimeOffset  | Указывает дату и время в UTC по истечении срока действия подписки. Для максимального поддерживаемого времени подписки зависит от ресурса. |
+| expirationDateTime  | DateTimeOffset  | Указывает дату и время окончания срока действия подписки в формате UTC. Максимальный срок действия поддерживаемой подписки зависит от ресурса. |
 
 ## <a name="response"></a>Отклик
 

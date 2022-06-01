@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 0703504f98312b39e1c0b2e22d9407e56662e576
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 42341e7d5fc27a912be45bc1eb811433aadbb8c9
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63367638"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821192"
 ---
 # <a name="delete-subscription"></a>Удаление подписки
 
@@ -18,7 +18,7 @@ ms.locfileid: "63367638"
 
 Удаление подписки.
 
-Список ресурсов, поддерживаюющих подписку на изменение уведомлений, см. в таблице в разделе [Permissions](#permissions) .
+Список ресурсов, поддерживающих подписку на уведомления об изменениях, см. в таблице в [разделе "Разрешения](#permissions) ".
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,6 +42,7 @@ ms.locfileid: "63367638"
 |[printer](../resources/printer.md) | Не поддерживается. | Не поддерживается. | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается. | Не поддерживается. | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается. | SecurityEvents.ReadWrite.All |
+|[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 
@@ -57,7 +58,7 @@ ms.locfileid: "63367638"
 
 ### <a name="contact-event-and-message"></a>contact, event и message
 
-Вы можете подписаться на изменения в **Outlook,** **событий** или **ресурсов сообщений**.
+Вы можете подписаться на изменения ресурсов Outlook **contact**, **event** или **message**.
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
@@ -82,7 +83,7 @@ DELETE /subscriptions/{subscription-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`.
 
 Подробнее о том, как возвращаются ошибки, см. в статье [Возвращение ошибок][error-response].
 

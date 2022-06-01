@@ -5,17 +5,19 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c788b04c31b65ee46b7af0416c21bf21822b564e
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: f3c4de491115f354f133dd2748df5b4fb2461878
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247184"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820380"
 ---
-# <a name="basetask-delta"></a>baseTask: delta
+# <a name="basetask-delta-deprecated"></a>baseTask: delta (не рекомендуется)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 Получение набора ресурсов [baseTask](../resources/basetask.md) , которые были добавлены, удалены или обновлены в определенном [baseTaskList](../resources/basetasklist.md).
 
@@ -26,8 +28,8 @@ ms.locfileid: "65247184"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
+|Делегированное (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос

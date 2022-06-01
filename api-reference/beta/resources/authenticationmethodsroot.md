@@ -1,26 +1,26 @@
 ---
-title: тип ресурса authenticationMethodsRoot
-description: Контейнер для свойств навигации для ресурсов методов проверки подлинности Azure AD.
-author: danielwood95
+title: Тип ресурса authenticationMethodsRoot
+description: Контейнер для свойств навигации для Azure AD методов проверки подлинности.
+author: besiler
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: def78eddd43cdb7ea738d32e25c8d90adb23fbc4
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: cc86e2ff67f7c628406aa90aca5bd00d03101272
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201689"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820485"
 ---
-# <a name="authenticationmethodsroot-resource-type"></a>тип ресурса authenticationMethodsRoot
+# <a name="authenticationmethodsroot-resource-type"></a>Тип ресурса authenticationMethodsRoot
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Контейнер для свойств навигации для ресурсов методов проверки подлинности Azure AD.
+Контейнер для свойств навигации для Azure AD методов проверки подлинности.
 
-Наследует от [объекта](../resources/entity.md).
+Наследует [от сущности](../resources/entity.md).
 
 ## <a name="methods"></a>Методы
 
@@ -29,12 +29,12 @@ ms.locfileid: "62201689"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String| Уникальный идентификатор. Наследуется от [сущности](../resources/entity.md).|
+|id|Строка| Уникальный идентификатор. Наследуется от [сущности](../resources/entity.md).|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|userRegistrationDetails|[userRegistrationDetails](../resources/userRegistrationDetails.md)| Представляет состояние методов проверки подлинности пользователя, в том числе зарегистрированных методов и функций, на которые зарегистрирован и способен пользователь (например, многофакторная проверка подлинности, сброс пароля самообслуживления и проверка подлинности без паролей).|
+|userRegistrationDetails|[userRegistrationDetails](../resources/userRegistrationDetails.md)| Представляет состояние методов проверки подлинности пользователя, включая, какие методы зарегистрированы и какие функции зарегистрированы и поддерживаются пользователем (например, многофакторная проверка подлинности, самостоятельный сброс пароля и проверка подлинности без пароля).|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 778ed1164d41d05193dae32f90187ab6f3d4604a
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 6d031e6c18b3611efdf6c0ae37962c3e977abc54
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65208738"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819498"
 ---
 # <a name="group-evaluatedynamicmembership"></a>group: evaluateDynamicMembership
 
@@ -31,16 +31,16 @@ ms.locfileid: "65208738"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                                                          |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | Для пользователя: Group.Read.All и User.Read.All, Directory.Read.All<br>Для устройства: Group.Read.All и Device.Read.All, Directory.Read.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                                       |
+| Делегированное (рабочая или учебная учетная запись)     | Для пользователя: Group.Read.All и User.Read.All, Directory.Read.All<br>Для устройства: Group.Read.All и Device.Read.All, Directory.Read.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                                       |
 | Для приложений                            | Не поддерживается.                                                                                                                       |
 
 ### <a name="evaluate-dynamic-membership-with-member-id-and-membership-rule"></a>Оценка динамического членства с помощью идентификатора участника и правила членства
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                    |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | Для пользователя: User.Read.All, Directory.Read.All<br>Для устройства: Device.Read.All, Directory.Read.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                 |
+| Делегированное (рабочая или учебная учетная запись)     | Для пользователя: User.Read.All, Directory.Read.All<br>Для устройства: Device.Read.All, Directory.Read.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                                 |
 | Для приложений                            | Не поддерживается.                                                                                 |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -56,7 +56,7 @@ POST /groups/evaluateDynamicMembership
 
 | Имя          | Описание      |
 | :------------ | :--------------- |
-| Авторизация | Bearer {token}   |
+| Authorization | Bearer {token}   |
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,9 +68,9 @@ POST /groups/evaluateDynamicMembership
 | Параметр      | Тип              | Описание                                                                                                                                                                                                                                                                                                                                                                                                            |
 | :------------- | :---------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | memberId       | Коллекция String | memberId — это идентификатор объекта пользователя или устройства для оценки.                                                                                                                                                                                                                                                                                                                                                       |
-| membershipRule | Коллекция объектов string | Правило, используемое для оценки членства. Если это свойство не указано, вычисляется правило для существующей группы. Если это свойство предоставлено, пользователь или устройство оцениваются на наличие возможного членства в группе с тем же правилом. Дополнительные сведения можно найти в статье [Правила динамического членства в группах для Azure AD](/azure/active-directory/users-groups-roles/groups-dynamic-membership). |
+| membershipRule | Коллекция String | Правило, используемое для оценки членства. Если это свойство не указано, вычисляется правило для существующей группы. Если это свойство предоставлено, пользователь или устройство оцениваются на наличие возможного членства в группе с тем же правилом. Дополнительные сведения можно найти в статье [Правила динамического членства в группах для Azure AD](/azure/active-directory/users-groups-roles/groups-dynamic-membership). |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и [объект evaluateDynamicMembershipResult](../resources/evaluatedynamicmembershipresult.md) .
 
@@ -206,6 +206,10 @@ Content-type: application/json
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-2-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-evaluatedynamicmembership-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

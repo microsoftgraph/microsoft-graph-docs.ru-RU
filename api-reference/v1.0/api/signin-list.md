@@ -5,20 +5,23 @@ ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: f4e3f31e3a713d39129d99d726b6628b3d4e10dc
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 8348d19b8c9f15436bb09d8c34c6b0865aaf95f8
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629030"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819648"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
 Пространство имен: microsoft.graph
 
-Получает входы пользователей Azure AD для клиента. Входы, которые являются интерактивными по своей природе (где имя пользователя/пароль передается как часть маркера auth) и успешные федеративные входы в настоящее время включены в журналы входа. 
+Получает входы пользователей Azure AD для клиента. Операции входа, которые являются интерактивными по своей природе (где имя пользователя и пароль передаются как часть маркера проверки подлинности) и успешные федеративные входы в настоящее время включаются в журналы входа. 
 
-Максимальный и по умолчанию размер страницы — 1000 объектов, и по умолчанию самые последние входы возвращаются первыми. Доступны только события, произошедшие в течение Azure Active Directory по умолчанию (Azure AD). [](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
+Максимальный и стандартный размер страницы — 1000 объектов. По умолчанию сначала возвращаются последние входы. Доступны только события входа, произошедшие в течение Azure Active Directory ([Azure AD) по](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) умолчанию.
+
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
+
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,16 +29,16 @@ ms.locfileid: "64629030"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
+|Делегированное (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Для приложений | AuditLog.Read.All и Directory.Read.All  |
+|Приложение | AuditLog.Read.All и Directory.Read.All  |
 
 > [!IMPORTANT]
-> Этот API имеет [известные](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
+> Этот API имеет известная проблема и в настоящее время требует согласия на разрешения **AuditLog.Read.All** и **Directory.Read.All**.[](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports)
 
 Приложения должны быть [правильно зарегистрированы в](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD.
 
-Помимо делегирования разрешений, пользователю, входиму в который, необходимо принадлежать к одной из следующих ролей каталога, которая позволяет ему читать отчеты о входе. Дополнительные информацию о роли каталогов см. в [встроенных ролях Azure AD](/azure/active-directory/roles/permissions-reference):
+Помимо делегированных разрешений, вошед в систему пользователь должен принадлежать к одной из следующих ролей каталога, которые позволяют ему считывать отчеты о входе. Дополнительные сведения о ролях каталогов см. Azure AD [встроенных ролей](/azure/active-directory/roles/permissions-reference):
 + Глобальный администратор
 + Глобальный читатель
 + Читатель отчетов
@@ -52,7 +55,7 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры `$top`запроса OData `$skiptoken``$filter` и OData для настройки ответа. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$top``$skiptoken`запроса OData `$filter` и , чтобы помочь настроить ответ. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query-parameters).
 
 ## <a name="response"></a>Отклик
 
@@ -60,7 +63,7 @@ GET auditLogs/signIns
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-all-sign-ins"></a>Пример 1. Список всех входов
+### <a name="example-1-list-all-sign-ins"></a>Пример 1. Перечисление всех входов
 
 #### <a name="request"></a>Запрос
 
@@ -186,7 +189,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-graph"></a>Пример 2. Извлечение первых 10 входов в приложения с appDisplayName, которое начинается с "Graph"
+### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-graph"></a>Пример 2. Получение первых 10 входов в приложения с помощью appDisplayName, которое начинается с "Graph"
 
 #### <a name="request"></a>Запрос
 
@@ -230,7 +233,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDi
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Ответ включает свойство, `@odata.nextLink` содержаное URL-адрес, который можно использовать для получения следующих 10 результатов.
+Ниже приведен пример отклика. Ответ содержит свойство, содержащее `@odata.nextLink` URL-адрес, который можно использовать для получения следующих 10 результатов.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

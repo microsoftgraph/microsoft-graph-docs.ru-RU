@@ -1,18 +1,18 @@
 ---
-title: Перечисление рецензентов accessReview
+title: Список рецензентов accessReview (не рекомендуется)
 description: В Azure AD проверки доступа извлеките рецензентов объекта accessReview.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0a5ffc308b63eabf9b883be1f68bee1190c86c8a
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 6a120097d4baca6533091c0eeba9e2557bd3e8b6
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314475"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819173"
 ---
-# <a name="list-accessreview-reviewers"></a>Перечисление рецензентов accessReview
+# <a name="list-accessreview-reviewers-deprecated"></a>Список рецензентов accessReview (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -26,8 +26,8 @@ ms.locfileid: "65314475"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership  |
 
 

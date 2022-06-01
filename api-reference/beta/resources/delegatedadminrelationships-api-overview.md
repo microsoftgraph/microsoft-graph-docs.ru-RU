@@ -1,24 +1,24 @@
 ---
-title: Подробный обзор API делегированных привилегий администратора (GDAP) (предварительная версия)
+title: Подробный обзор API делегированных привилегий администратора (GDAP)
 description: Детализированные делегированные права администратора (GDAP) позволяют партнерам Майкрософт настраивать и запрашивать детализированный и ограниченный по времени доступ к средам своих клиентов, позволяя клиентам применять минимальный уровень доступа для партнеров Майкрософт.
 author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: a76e77ed5f6585016ec02a2bf69a613754d6771f
-ms.sourcegitcommit: c854c48f33159628e1d4852e897bb3343ecaf11a
+ms.openlocfilehash: 2d4876f6017219c655b38bc303ce6bbca81db8d2
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2022
-ms.locfileid: "64753973"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821252"
 ---
-# <a name="granular-delegated-admin-privileges-gdap-api-overview-preview"></a>Подробный обзор API делегированных привилегий администратора (GDAP) (предварительная версия)
+# <a name="granular-delegated-admin-privileges-gdap-api-overview"></a>Подробный обзор API делегированных привилегий администратора (GDAP)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В рамках экосистемы Центра партнеров Майкрософт партнеры Майкрософт в программах поставщик облачных решений, торгового посредника с добавленной стоимостью или помощника могут выполнять административные операции с клиентами для управления службами клиента, например Azure AD и Microsoft 365. Эта возможность ранее позволяет партнерам на неограниченное время выполнять роль глобального администратора в клиенте клиента, создавая потенциальные уязвимости для системы безопасности и ограничив потенциал рынка.
+В рамках экосистемы Центра партнеров Майкрософт партнеры Майкрософт в программах поставщик облачных решений, торгового посредника с добавленной стоимостью или Помощник могут выполнять административные операции с клиентами клиентов для управления службами клиента, например Azure AD и Microsoft 365. Эта возможность ранее позволяет партнерам на неограниченное время выполнять роль глобального администратора в клиенте клиента, создавая потенциальные уязвимости для системы безопасности и ограничив потенциал рынка.
 
 Детализированные делегированные права администратора **(GDAP)** предоставляют партнерам с минимальными привилегиями доступ к своим клиентам после модели кибербезопасности "Никому не [доверяй"](/security/zero-trust/). С помощью GDAP партнеры настраивают и запрашивают детализированный и ограниченный по времени доступ к средам своих клиентов, и клиенты должны явным образом предоставить партнерам этот наименее привилегированный доступ. Кроме того, партнеры должны запрашивать определенные роли для администрирования клиента в течение определенного периода времени. Этот элемент управления избавляет партнеров от необходимости иметь роль глобального администратора в клиенте клиента, но вместо этого у них теперь есть менее привилегированные разрешения, которые им абсолютно необходимы для делегированных административных задач.
 
@@ -73,6 +73,29 @@ ms.locfileid: "64753973"
 | Перечисление всех полномочного администратора клиентов | [Перечисление delegatedAdminCustomers](../api/tenantrelationship-list-delegatedadmincustomers.md)|
 | Получение одного полномочного администратора по идентификатору | [Получение delegatedAdminCustomer](../api/delegatedadmincustomer-get.md) |
 | Получение сведений об управлении службами для полномочного администратора клиента | [Перечисление serviceManagementDetails](../api/delegatedadmincustomer-list-servicemanagementdetails.md) |
+
+
+## <a name="gdap-workflow"></a>Рабочий процесс GDAP
+
+### <a name="gdap-relationship-status-transition"></a>Переход состояния связи GDAP
+
+Состояние делегированного Администратор переходит следующим образом:
+
+![Схема перехода состояния Администратор делегированных данных](relationship-status-transitions.png)
+
+1. [Создание delegatedAdminRelationship](../api/tenantrelationship-post-delegatedadminrelationships.md)
+2. [Обновление delegatedAdminRelationship](../api/delegatedadminrelationship-update.md)
+3. [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) (action: lockForApproval)
+4. [Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md) (action: terminate)
+
+### <a name="gdap-relationship-access-assignment-status-transition"></a>Переход состояния назначения доступа к отношениям GDAP
+
+Состояние делегированного Администратор доступа. Переходы состояния выполняются следующим образом:
+
+![Схема перехода Администратор назначения делегированного доступа](access-assignment-status-transitions.png)
+
+1. [Создание delegatedAdminAccessAssignment](../api/delegatedadminrelationship-post-accessassignments.md)
+2. [Удаление delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-delete.md)
 
 ## <a name="permissions"></a>Разрешения
 

@@ -5,12 +5,12 @@ author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: ab1dd04955864b772f661f1968b5b5581c9104b3
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 05fc0e885b598dbe0139adbcac13c7e6e9db51b7
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65203522"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820772"
 ---
 # <a name="list-requests"></a>Перечисление запросов
 Пространство имен: microsoft.graph
@@ -24,8 +24,8 @@ ms.locfileid: "65203522"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)| DelegatedAdminRelationship.Read.All, DelegatedAdminRelationship.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт)| Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)| DelegatedAdminRelationship.Read.All, DelegatedAdminRelationship.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт)| Не поддерживается. |
 |Для приложений| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -49,7 +49,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) в теле отклика.
 
@@ -112,7 +112,7 @@ Content-Type: application/json
       "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
       "id": "ae5a6b9e-6355-43dd-b708-48486b69c3ff",
       "action": "lockForApproval",
-      "status": "complete",
+      "status": "succeeded",
       "createdDateTime": "2022-02-01T06:14:55.5398865Z",
       "lastModifiedDateTime": "2022-02-01T06:14:55.5398865Z"
     },

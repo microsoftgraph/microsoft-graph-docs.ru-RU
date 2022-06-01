@@ -1,32 +1,34 @@
 ---
-title: тип ресурса programResource
-description: Представляет ссылку на объект, который является объектом обзора доступа.
-localization_priority: Normal
+title: Тип ресурса programResource (не рекомендуется)
+description: Представляет ссылку на объект, который является целевым объектом проверки доступа.
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0ef610650887b1d34569465bd5babb7ec91c194d
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: a324c047f6a2a7cf5143d1394696f20c429a12ea
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761830"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819739"
 ---
-# <a name="programresource-resource-type"></a>тип ресурса programResource
+# <a name="programresource-resource-type-deprecated"></a>Тип ресурса programResource (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Объект **programResource,** содержащийся в [объекте programControl,](programcontrol.md) представляет ссылку на объект, который является объектом, объектом обзора доступа.
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Этот тип наследует от [удостоверения](identity.md).
+Объект **programResource** , содержащийся в [объекте programControl](programcontrol.md) , представляет ссылку на объект, который является целевым объектом проверки доступа.
+
+Этот тип наследуется от [удостоверения](identity.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| type | String | Тип ресурса, указывающий, является ли он группой или приложением. |
+| type | Строка | Тип ресурса, указывающий, является ли он группой или приложением. |
 
 ## <a name="json-representation"></a>Представление JSON
 

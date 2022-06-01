@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 08789be4954db6948693d64d110e8512ca72d19e
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 32eac4175ef0f5d4a1419c7b05cf65dbed8d16bd
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65694864"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820016"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -47,6 +47,7 @@ ms.locfileid: "65694864"
 |[printer](../resources/printer.md) | Не поддерживается | Не поддерживается | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается | Не поддерживается | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
+|[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 Рекомендуется использовать разрешения, как описано в предыдущей таблице. Из-за ограничений безопасности подписки Microsoft Graph не будут поддерживать разрешения на запись, если необходимы только разрешения на чтение.
@@ -169,6 +170,7 @@ Content-type: application/json
 |[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Оповещение безопасности](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
+|[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`|
 |[Пользователи](../resources/user.md)|`users`|
 
 > **Примечание.** Любой путь, начинающийся с `me`, также можно использовать с `users/{id}` вместо `me`, чтобы указать определенного пользователя, а не текущего пользователя.

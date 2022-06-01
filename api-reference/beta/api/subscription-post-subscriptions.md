@@ -5,18 +5,20 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 8351c0801700cc6d9e724fdcbbc609e646834bc8
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 879238c0468b15f1ae4466ed8c9efef8b25d540e
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695421"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820527"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
 Создание подписки для приложения прослушивателя, позволяющей ему получать уведомления об изменениях определенного типа в указанном ресурсе в Microsoft Graph.
 
@@ -28,10 +30,11 @@ ms.locfileid: "65695421"
 
 Для создания подписки требуется разрешение на чтение ресурса. Например, чтобы получать уведомления об изменениях в сообщениях, приложению необходимо разрешение Mail.Read. 
 
-В зависимости от ресурса и типа требующегося разрешения (делегированное или для приложения) разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Для получения дополнительных сведений[](/graph/auth/auth-concepts#best-practices-for-requesting-permissions), в том числе с осторожностью перед выбором разрешений, выполните поиск следующих разрешений в [Разрешениях](/graph/permissions-reference).
+В зависимости от ресурса и типа требующегося разрешения (делегированное или для приложения) разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Чтобы узнать больше, в том числе, [как соблюдать осторожность ](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений, найдите следующие разрешения в [Разрешениях](/graph/permissions-reference).
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Application |
 |:-----|:-----|:-----|:-----|
+|[baseTask](../resources/basetask.md) (не рекомендуется) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Не поддерживается | Не поддерживается | CallRecords.Read.All  |
 |[каналы](../resources/channel.md) (/teams/getAllChannels — все каналы в организации) | Не поддерживается  | Не поддерживается | Channel.ReadBasic.All, ChannelSettings.Read.All |
 |[каналы](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Не поддерживается | Channel.ReadBasic.All, ChannelSettings.Read.All  |
@@ -63,10 +66,9 @@ ms.locfileid: "65695421"
 |[teams](../resources/team.md) (/teams — все команды в организации) | Не поддерживается | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
-|[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-Рекомендуется использовать разрешения, как описано в предыдущей таблице. Из-за ограничений безопасности подписки Microsoft Graph не будут поддерживать разрешения на запись, если требуются только разрешения на доступ на чтение.
+Рекомендуется использовать разрешения, как описано в предыдущей таблице. Из-за ограничений безопасности подписки Microsoft Graph не будут поддерживать разрешения на запись, если необходимы только разрешения на чтение.
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -176,6 +178,7 @@ Content-type: application/json
 
 | Тип ресурса | Примеры |
 |:------ |:----- |
+|[baseTask](../resources/basetask.md) (не рекомендуется) | `/me/tasks/lists/{Id}/tasks`
 |[Записи звонков](../resources/callrecords-callrecord.md)|`communications/callRecords`|
 |[Каналами](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
 |[Чат](../resources/chat.md)|`/chats`, `/chats/{id}`|
@@ -195,7 +198,6 @@ Content-type: application/json
 |[Teams](../resources/team.md)|`/teams`, `/teams/{id}`|
 |[Пользователи](../resources/user.md)|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
-|[baseTask](../resources/basetask.md) | `/me/tasks/lists/{baseTaskListId}/tasks`, `/me/tasks/alltasks`
 |[Оповещение безопасности](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 
 > **Примечание.** Любой путь, начинающийся с `me`, также можно использовать с `users/{id}` вместо `me`, чтобы указать определенного пользователя, а не текущего пользователя.

@@ -1,18 +1,18 @@
 ---
-title: Перечисление programControlTypes
+title: Перечисление programControlTypes (не рекомендуется)
 description: В Azure AD проверки доступа перечислите все объекты programControlType.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 69596e18a015c6b8528648f7165894f6244f43c1
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: a97e7430f2b40d29e81a9fda1f83ad34dc618711
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65315349"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821227"
 ---
-# <a name="list-programcontroltypes"></a>Перечисление programControlTypes
+# <a name="list-programcontroltypes-deprecated"></a>Перечисление programControlTypes (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -26,8 +26,8 @@ ms.locfileid: "65315349"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 
 Пользователь, выполнив вход, также должен иметь роль каталога, которая позволяет ему читать программу.

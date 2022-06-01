@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: KuiGithui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 0dd40e8cb399b055d8568c97c3d6560110fc0aad
-ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
+ms.openlocfilehash: 68dea07be58926aeb918ea51ae176471e6a17d68
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2022
-ms.locfileid: "65629085"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820513"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -35,7 +35,7 @@ ms.locfileid: "65629085"
 |**Расширения схемы**| | |
 |[Добавление значений расширений для схемы](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
 |**Лицензии организации**| | |
-|[activateService](../api/organization-activateservice.md) | Нет |  Активация службы для организации. |
+|[activateService](../api/organization-activateservice.md) (не рекомендуется) | Нет |  Активация службы для организации. |
 |**Фирменная символика организации**| | |
 |[Получение organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | Получение стандартного объекта фирменной символики организации. |
 |[Обновление organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Обновление стандартного объекта фирменной символики организации. |
@@ -65,7 +65,7 @@ ms.locfileid: "65629085"
 | isMultipleDataLocationsForServicesEnabled | Boolean | `true` Значение , если в организации включена поддержка нескольких регионов; `false` Значение , если в организации не включена поддержка нескольких регионов; `null` (по умолчанию). Только для чтения. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | Коллекция String | Значение null не допускается. |
 | onPremisesLastSyncDateTime | DateTimeOffset | Время и дата последней синхронизации клиента с локальным каталогом. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-| onPremisesSyncEnabled | Логический | `true` Значение , если этот объект синхронизирован из локального каталога; `false` Значение , если изначально этот объект был синхронизирован из локального каталога, но больше не синхронизирован; Nullable. Используется значение `null`, если этот объект никогда не синхронизировался из локального каталога (по умолчанию). |
+| onPremisesSyncEnabled | Boolean | `true` Значение , если этот объект синхронизирован из локального каталога; `false` Значение , если изначально этот объект был синхронизирован из локального каталога, но больше не синхронизирован; Nullable. Используется значение `null`, если этот объект никогда не синхронизировался из локального каталога (по умолчанию). |
 | postalCode | String | Почтовый индекс в адресе организации. |
 | preferredLanguage | String | Предпочитаемый язык для организации. Он должен быть представлен в формате ISO 639-1, например `en`. |
 | privacyProfile | [privacyProfile](privacyprofile.md) | Профиль конфиденциальности организации. |
@@ -82,8 +82,8 @@ ms.locfileid: "65629085"
 | Связь  | Тип  |Описание|
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|Коллекция [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Свойство навигации для управления конфигурацией проверки подлинности на основе сертификатов. В коллекции можно создать только один экземпляр объекта certificateBasedAuthConfiguration.  |
-|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для ресурса организации. Допускается значение null.| 
-|Брендинг|Коллекция [organizationalBranding](organizationalbranding.md)| Ресурс для управления фирменной символикой по умолчанию для организации. Допускается значение null.|
+|extensions|Коллекция объектов [extension](extension.md)|Коллекция открытых расширений, определенных для ресурса организации. Допускается значение null.| 
+|branding|Коллекция [organizationalBranding](organizationalbranding.md)| Ресурс для управления фирменной символикой по умолчанию для организации. Допускается значение null.|
 |settings|[organizationSettings](organizationsettings.md) | Получение свойств и связей объекта organizationSettings. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON

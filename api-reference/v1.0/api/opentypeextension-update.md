@@ -1,33 +1,33 @@
 ---
 title: Обновление открытого расширения
-description: 'Обновим открытое расширение (объект openTypeExtension) свойствами в теле запроса:'
+description: 'Обновите открытое расширение (объект openTypeExtension), используя свойства в тексте запроса:'
 ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: d76b36380c5cac12a3607e0475c3a57386e2f985
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ec5128ade8bd56526be0bbed3ee608d5c7fa9855
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128595"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821157"
 ---
 # <a name="update-open-extension"></a>Обновление открытого расширения
 
 Пространство имен: microsoft.graph
 
-Обновление открытого расширения[(объекта openTypeExtension)](../resources/opentypeextension.md) с свойствами в теле запроса:
+Обновите открытое расширение ([объект openTypeExtension](../resources/opentypeextension.md) ), используя свойства в тексте запроса:
 
 - Если свойство в теле запроса совпадает с именем существующего свойства в расширении, то данные в расширении будут обновлены.
 - В противном случае это свойство и его данные будут добавлены в расширение. 
 
 Данные в расширении могут относиться к элементарным типам или массиву элементарных типов.
 
-Список ресурсов, поддерживаюных открытые расширения, см. в таблице в разделе [Разрешения.](#permissions)
+Список ресурсов, поддерживающих [открытые](#permissions) расширения, см. в таблице в разделе "Разрешения".
 
 ## <a name="permissions"></a>Разрешения
 
-В зависимости от ресурса, в который было создано расширение, и запрашиваемого типа разрешений (делегирования или приложения), разрешение, указанное в следующей таблице, является наименее привилегированным для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
+В зависимости от ресурса, в котором было создано расширение, и запрашиваемого типа разрешения (делегированное или приложение), разрешение, указанное в следующей таблице, является наименее привилегированным, необходимым для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
@@ -39,9 +39,9 @@ ms.locfileid: "62128595"
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Не поддерживается | Organization.ReadWrite.All |
 | [contact](../resources/contact.md) (личный контакт) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 В запросе идентифицируйте экземпляр ресурса, воспользуйтесь свойством навигации **extensions** этого экземпляра, чтобы определить расширение, и укажите метод `PATCH` для этого экземпляра расширения.
@@ -61,7 +61,7 @@ PATCH /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extension
 PATCH /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
 ```
 
->**Примечание:** В вышеуказанном синтаксисе показано несколько распространенных способов идентификации экземпляра ресурса для обновления расширения в нем. Все остальные синтаксис, позволяющие идентифицировать эти экземпляры ресурсов, поддерживают обновление открытых расширений в них аналогичным образом.
+>**Примечание:** В приведенном выше синтаксисе показаны некоторые распространенные способы идентификации экземпляра ресурса для обновления расширения в нем. Все остальные синтаксис, позволяющие определить эти экземпляры ресурсов, поддерживают обновление открытых расширений в них аналогичным образом.
 
 См. раздел [Тело запроса](#request-body) о том, как включить в тело запроса специальные данные для изменения или дополнения этого расширения.
 
@@ -78,7 +78,7 @@ PATCH /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
 | Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Задайте основной текст JSON объекта [openTypeExtension](../resources/opentypeextension.md) с указанными ниже обязательными парами имя-значение и любыми пользовательскими данными, которые необходимо изменить или добавить в это расширение. Полезные данные JSON могут иметь простой тип или представлять собой массив элементов простого типа.
 

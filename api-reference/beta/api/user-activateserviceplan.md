@@ -1,24 +1,27 @@
 ---
-title: 'пользователь: активироватьServicePlan'
-description: Активация плана службы с заданным `servicePlanId` и `skuId` для данного пользователя.
+title: 'пользователь: activateServicePlan'
+description: Активация плана обслуживания с заданным и `servicePlanId` `skuId` для заданного пользователя.
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4e39fc0f9c6d27c4c820c5fd10eb7e648ed07bba
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: b35b36a42c1c979dc777615d8f73012c47cab13d
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62855163"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820674"
 ---
-# <a name="user-activateserviceplan"></a>пользователь: активироватьServicePlan
+# <a name="user-activateserviceplan-deprecated"></a>user: activateServicePlan (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Активация плана службы с заданным `servicePlanId` и `skuId` для данного пользователя.
+> [!CAUTION]
+> API **activateServicePlan** устарел и прекратит возвращать данные 30 июня 2022 г.
+
+Активация плана обслуживания с заданным и `servicePlanId` `skuId` для заданного пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -50,12 +53,12 @@ POST /users/{id | userPrincipalName}/activateServicePlan
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажи объект JSON со следующим параметром:
+В тексте запроса укажите объект JSON со следующим параметром:
 
 | Параметр | Тип | Описание |
 | :--- | :--- | :--- |
-| servicePlanId | GUID | PlanId servicePlan для активации. |
-| skuId | GUID | SkuId SKU, в планах службы. |
+| servicePlanId | Guid | Идентификатор плана servicePlan для активации. |
+| skuId | Guid | SkuId номера SKU, в который включен план обслуживания. |
 
 ## <a name="response"></a>Ответ
 

@@ -1,31 +1,33 @@
 ---
-title: Создание контрольного спискаItem
-description: Создайте новый объект checklistItem.
+title: Создание checklistItem
+description: Создайте объект checklistItem.
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a77aae528bbe86a6c45e6e31205c41b49b66155d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 83429f43474d247e599b0c562e32e899df8e0a6a
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114230"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821010"
 ---
-# <a name="create-checklistitem"></a>Создание контрольного спискаItem
+# <a name="create-checklistitem"></a>Создание checklistItem
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте [новый объект checklistItem.](../resources/checklistitem.md)
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Создайте новый [объект checklistItem](../resources/checklistitem.md) в качестве подзадачи в большем [baseTask](../resources/basetask.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированное (рабочая или учебная учетная запись)|Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Приложение|Tasks.ReadWrite|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -46,21 +48,21 @@ POST /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTas
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [checklistItem.](../resources/checklistitem.md)
+В тексте запроса добавьте представление объекта [checklistItem](../resources/checklistitem.md) в формате JSON.
 
-При создании контрольного **спискаItem** можно указать следующие свойства.
+При создании **checklistItem** можно указать следующие свойства.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|checkedDateTime|DateTimeOffset|Дата и время завершения **контрольного спискаItem.**|
-|createdDateTime|DateTimeOffset|Дата и время создания **контрольного спискаItem.**|
-|displayName|Строка|Поле, указывающее название **checklistItem**.|
-|isChecked|Логический|Состояние, указывающее, отключается элемент или нет.|
+|checkedDateTime|DateTimeOffset|Дата и время завершения **checklistItem** .|
+|createdDateTime|DateTimeOffset|Дата и время создания **объекта checklistItem** .|
+|displayName|Строка|Поле, указывающее **заголовок checklistItem**.|
+|Ischecked|Логическое|Состояние, указывающее, был ли элемент извлечен или нет.|
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект checklistItem](../resources/checklistitem.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и [объект checklistItem](../resources/checklistitem.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

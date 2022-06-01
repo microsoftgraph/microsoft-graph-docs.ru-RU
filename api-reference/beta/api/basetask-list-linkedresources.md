@@ -1,31 +1,33 @@
 ---
-title: Список linkedResources
+title: Перечисление linkedResources
 description: Получите linkedResource_v2 ресурсов, связанных с baseTask, из свойства навигации linkedResources.
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4c6ee298f7ed86fa997f127cbbe9b416b00829f1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cbff5c559ef909821b1f1f48acc3f076fb9b773b
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124257"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820723"
 ---
-# <a name="list-linkedresources"></a>Список linkedResources
+# <a name="list-linkedresources-deprecated"></a>Перечисление linkedResources (не рекомендуется)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите [linkedResource_v2](../resources/linkedresource_v2.md) ресурсов, связанных с [baseTask,](../resources/basetask.md) из свойства навигации linkedResources.
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Получите [linkedResource_v2 ресурсов](../resources/linkedresource_v2.md) , связанных с [baseTask](../resources/basetask.md) , из свойства навигации linkedResources.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
+|Делегированное (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
 |Приложение|Tasks.Read, Tasks.ReadWrite|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -40,19 +42,19 @@ GET /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTask
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает не поддерживает параметры запроса OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод не поддерживает параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [коллекцию](../resources/linkedresource_v2.md) linkedResource_v2 объектов в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию [linkedResource_v2 объектов в](../resources/linkedresource_v2.md) тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

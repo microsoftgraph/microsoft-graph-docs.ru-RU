@@ -5,17 +5,19 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 291bfa800ce25c333836bf8e45565c61bc6005c6
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 8afd20706102edc9bf25a5e9952675e539a83847
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451342"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820569"
 ---
-# <a name="update-basetask"></a>Обновление baseTask
+# <a name="update-basetask-deprecated"></a>Обновление baseTask (не рекомендуется)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 Обновление свойств объекта [baseTask](../resources/basetask.md) .
 
@@ -24,8 +26,8 @@ ms.locfileid: "63451342"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированное (рабочая или учебная учетная запись)|Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -53,24 +55,24 @@ PATCH /users/{userId|userPrincipalName}/tasks/alltasks/{baseTaskId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|textBody|String|Орган задач в текстовом формате, который обычно содержит сведения о задаче.|
+|textBody|Строка|Текст задачи в текстовом формате, который обычно содержит сведения о задаче.|
 |createdDateTime|DateTimeOffset|Дата в указанном часовом поясе, когда задача была завершена.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса.|
-|bodyLastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения тела задач. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса.|
+|bodyLastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения текста задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса.|
 |completedDateTime|DateTimeOffset|Дата в указанном часовом поясе, когда задача была завершена.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанном часовом поясе, когда задача должна быть завершена.|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанном часовом поясе, когда задача должна быть начата.|
 |importance|importance|Важность события. Допустимые значения: `low`, `normal`, `high`.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Расписание повторения задачи.|
-|displayName|String|Краткое описание задачи.|
+|displayName|Строка|Краткое описание задачи.|
 |status|taskStatus_v2|Указывает состояние или ход выполнения задачи. Допустимые значения: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`.|
-|точки зрения|[taskViewpoint](../resources/taskviewpoint.md)|Свойства, которые являются личными для пользователя, такие как reminderDateTime.|
+|Точки обзора|[taskViewpoint](../resources/taskviewpoint.md)|Свойства, которые являются личными для пользователя, например reminderDateTime.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и обновленный [объект baseTask](../resources/basetask.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный [объект baseTask](../resources/basetask.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

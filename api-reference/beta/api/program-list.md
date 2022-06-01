@@ -1,18 +1,18 @@
 ---
-title: Перечисление программ
+title: Перечисление программ (нерекомендуемых)
 description: В Azure AD проверки доступа перечислите все объекты программы.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 04573b0e18fcac50966b58805aeade057da151af
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 4593f93710161dc000ea8fbe98a3970390185106
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314978"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821290"
 ---
-# <a name="list-programs"></a>Перечисление программ
+# <a name="list-programs-deprecated"></a>Перечисление программ (нерекомендуемых)
 
 Пространство имен: microsoft.graph
 
@@ -26,8 +26,8 @@ ms.locfileid: "65314978"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 
  Пользователь, выполнив вход, также должен иметь роль каталога, которая позволяет ему читать программу.

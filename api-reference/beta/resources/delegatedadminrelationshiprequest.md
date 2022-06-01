@@ -5,12 +5,12 @@ author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4f4683ea9887b4df3b94e1a8f3475cb5a3dfea06
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: 5aaaabed54e6f5a4f0ba21cbdf64fb7d9deb0e8f
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704221"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821185"
 ---
 # <a name="delegatedadminrelationshiprequest-resource-type"></a>Тип ресурса delegatedAdminRelationshipRequest
 
@@ -32,9 +32,9 @@ ms.locfileid: "64704221"
 |:---|:---|:---|
 |action|delegatedAdminRelationshipRequestAction|Действие, выполняемые с делегированным отношением администратора.|
 |createdDateTime|DateTimeOffset|Дата и время в формате ISO 8601 и время создания запроса связи в формате UTC. Только для чтения. |
-|id|String|Уникальный идентификатор запроса связи. Только для чтения. Наследуется от [сущности](../resources/entity.md).|
+|id|Строка|Уникальный идентификатор запроса связи. Только для чтения. Наследуется от [сущности](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения этого запроса связи в формате ISO 8601 и время в формате UTC. Только для чтения.|
-|status|delegatedAdminRelationshipRequestStatus|Состояние запроса. Только для чтения. Допустимые значения: `created`, `pending`, `complete`, `failed`, `unknownFutureValue`.|
+|status|delegatedAdminRelationshipRequestStatus|Состояние запроса. Только для чтения. Допустимые значения: `created`, `pending`, `succeeded`, `failed`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

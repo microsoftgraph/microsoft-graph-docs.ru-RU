@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: c89c28c780b8d9a39b49e0779e08cbef538585b9
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 8dbd41bed4c7b9cccc1cb1ee6fd83c37f33fd92c
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336853"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819379"
 ---
 # <a name="update-subscription"></a>Обновление подписки
 
@@ -18,9 +18,9 @@ ms.locfileid: "63336853"
 
 Возобновление подписки путем увеличения срока действия.
 
-В таблице в разделе [Разрешения](#permissions) перечислены ресурсы, поддерживаюющие подписку на изменение уведомлений.
+В таблице в разделе ["Разрешения](#permissions) " перечислены ресурсы, поддерживающие подписку на уведомления об изменениях.
 
-Срок действия подписки истекает по истечении времени, которое зависит от типа ресурса. Чтобы избежать пропуска уведомлений об изменениях, приложение должно продлить подписки заблаговременно до истечения срока их действия. См [. подписку](../resources/subscription.md) на максимальную длину подписки для каждого типа ресурсов.
+Срок действия подписок истекает через некоторое время, которое зависит от типа ресурса. Чтобы избежать отсутствия уведомлений об изменениях, приложение должно продлить свои подписки ранее до даты окончания срока действия. Сведения [о максимальной](../resources/subscription.md) длине подписки для каждого типа ресурсов см. в статье о подписке.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -44,6 +44,7 @@ ms.locfileid: "63336853"
 |[printer](../resources/printer.md) | Не поддерживается | Не поддерживается | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается | Не поддерживается | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
+|[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
@@ -58,7 +59,7 @@ ms.locfileid: "63336853"
 
 ### <a name="contact-event-and-message"></a>contact, event и message
 
-Вы можете подписаться на изменения в **Outlook,** **событий** или **ресурсов сообщений**.
+Вы можете подписаться на изменения ресурсов Outlook **contact**, **event** или **message**.
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
@@ -82,7 +83,7 @@ PATCH /subscriptions/{id}
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| expirationDateTime  | DateTimeOffset  | Указывает дату и время в UTC по истечении срока действия подписки. Для максимального поддерживаемого времени подписки зависит от ресурса. |
+| expirationDateTime  | DateTimeOffset  | Указывает дату и время окончания срока действия подписки в формате UTC. Максимальный срок действия поддерживаемой подписки зависит от ресурса. |
 
 ## <a name="response"></a>Отклик
 

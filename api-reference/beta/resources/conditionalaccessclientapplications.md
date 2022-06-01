@@ -1,30 +1,30 @@
 ---
-title: тип ресурса conditionalAccessClientApplications
-description: Представляет клиентские приложения (директора служб и удостоверения рабочей нагрузки), включенные и исключенные из области политики.
-author: danielwood95
+title: Тип ресурса conditionalAccessClientApplications
+description: Представляет клиентские приложения (субъекты-службы и удостоверения рабочей нагрузки), включенные в область политики и исключаемые из нее.
+author: calebb
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ad30e86d9c434641e197338613f5f58cf5d2a788
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 151ab019a145e19b18add198c4e824eb0952e314
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239377"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819449"
 ---
-# <a name="conditionalaccessclientapplications-resource-type"></a>тип ресурса conditionalAccessClientApplications
+# <a name="conditionalaccessclientapplications-resource-type"></a>Тип ресурса conditionalAccessClientApplications
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет клиентские приложения (директора служб и удостоверения рабочей нагрузки), включенные и исключенные из области политики.
+Представляет клиентские приложения (субъекты-службы и удостоверения рабочей нагрузки), включенные в область политики и исключаемые из нее.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|excludeServicePrincipals|Коллекция строк|Основные ID службы исключены из области политики.|
-|includeServicePrincipals|Коллекция строк|Основные ID-службы, включенные в область политики, или `ServicePrincipalsInMyTenant` . |
+|excludeServicePrincipals|Коллекция строк|Идентификаторы субъекта-службы, исключенные из области политики.|
+|includeServicePrincipals|Коллекция String|Идентификаторы субъекта-службы, включенные в область политики, или `ServicePrincipalsInMyTenant`. |
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

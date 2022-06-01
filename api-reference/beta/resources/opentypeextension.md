@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: 476747b9341f0d7b2d5b551809319ccec5edc787
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: caab6f1549f4f5098070b91b254e1ce0b1194b75
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461403"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821269"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Тип ресурсов openTypeExtension (открытые расширения)
 
@@ -18,16 +18,20 @@ ms.locfileid: "65461403"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
+
 Открытые расширения (прежнее название — расширения данных Office 365) позволяют легко добавлять нетипизированные свойства непосредственно в ресурс в Microsoft Graph.
 Открытые расширения представлены ресурсом **openTypeExtension**. Все открытые расширения, добавленные в ресурс, отображаются в свойстве навигации **extensions**, которое является производным от абстрактного типа [extension](extension.md).  Каждое расширение, помимо пользовательских данных, содержит свойство **extensionName** — единственное предопределенное записываемое свойство для всех расширений. Чтобы обеспечить уникальность имен расширений, можно использовать формат обратных DNS, который зависит от _принадлежащего вам домена_, например `com.contoso.ContactInfo`. **Не используйте домен** Майкрософт (`com.microsoft` или `com.onmicrosoft`) в имени расширения.
 
 Пример открытого расширения см. в статье [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](/graph/extensibility-open-users).
 
-Открытые расширения поддерживаются следующими ресурсами в соответствующих версиях: общедоступной (/v1.0) или предварительной версии (/beta).
+Открытые расширения поддерживаются указанными ниже ресурсами в соответствующих версиях — общедоступной (1.0) или предварительной (бета-версии).
 
 | Ресурс | Версия |
 |---------------|-------|
 | [administrativeUnit](administrativeunit.md) | Общедоступная версия |
+| [Базовая задача (не рекомендуется)](basetask.md) | Бета |
+| [Базовый список задач (не рекомендуется)](basetasklist.md) | Бета |
 | [Событие календаря](event.md) \* | Общедоступная версия |
 | [event](event.md) для календаря группы | Общедоступная версия |
 | [post](post.md) цепочки беседы группы | Общедоступная версия |
@@ -37,10 +41,10 @@ ms.locfileid: "65461403"
 | [Организация](organization.md) | Общедоступная версия |
 | [Личный контакт](contact.md) | Общедоступная версия |
 | [Пользователь](user.md) | Общедоступная версия |
-| [Задача](basetask.md) | Общедоступная версия |
-| [Список задач](basetasklist.md) | Общедоступная версия |
+| [Задача "Задачи"](todotask.md) | Общедоступная версия |
+| [Список задач](todotasklist.md) | Общедоступная версия |
 
->\***Примечание:** Из-за существующего ограничения службы делегаты не могут создавать открытые события, добавленные расширением, в общих календарях почтовых ящиков. Попытка сделать это приведет к ответу `ErrorAccessDenied` .
+>\* **Примечание:** Из-за существующего ограничения службы делегаты не могут создавать открытые события, добавленные расширением, в общих календарях почтовых ящиков. Попытка сделать это приведет к ответу `ErrorAccessDenied`.
 
 ## <a name="outlook-specific-considerations"></a>Специальные рекомендации для Outlook
 
@@ -53,7 +57,7 @@ ms.locfileid: "65461403"
 
 ### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>Использование открытых расширений (для ресурсов Outlook) или расширенных свойств
 
-Открытые расширения — рекомендуемое решение для большинства сценариев, предполагающих хранение пользовательских данных и доступ к ним. Если вам нужно получить доступ к пользовательским данным для свойств MAPI Outlook, которые еще не предоставлены при помощи [метаданных API Microsoft Graph](/graph/traverse-the-graph#microsoft-graph-api-metadata), используйте [расширенные свойства и соответствующий REST API](extended-properties-overview.md). Вы можете проверить, какие свойства предоставляются с помощью метаданных, на странице https://graph.microsoft.com/v1.0/$metadata.
+Открытые расширения — рекомендуемое решение для большинства сценариев, предполагающее хранение пользовательских данных и доступ к ним. Если вам нужно получить доступ к пользовательским данным для свойств MAPI Outlook, которые еще не предоставлены при помощи [метаданных Microsoft Graph API ](/graph/traverse-the-graph#microsoft-graph-api-metadata), используйте [расширенные свойства и соответствующий REST API](extended-properties-overview.md). Вы можете проверить, какие свойства предоставляются с помощью метаданных в https://graph.microsoft.com/v1.0/$metadata.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -89,7 +93,7 @@ ms.locfileid: "65461403"
 
 | Метод | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
-|[Создание](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (в существующем экземпляре ресурса) или новый [контакт, событие](contact.md)[,](event.md) [сообщение](message.md), [запись](post.md)[, задача](basetask.md) или [TaskList](basetasklist.md), содержащий объект openTypeExtension. | Создание объекта openTypeExtension в существующем или новом экземпляре ресурса.|
+|[Создание](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (в существующем экземпляре ресурса) или новый контакт [baseTask](basetask.md), [baseTaskList](basetasklist.md)[,](contact.md) [событие](event.md)[, сообщение](message.md), [запись](post.md), [todoTask](todotask.md) или [todoTaskList](todotasklist.md), содержащий объект openTypeExtension. | Создание объекта openTypeExtension в существующем или новом экземпляре ресурса.|
 |[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Чтение свойств и связей объекта openTypeExtension.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Обновление объекта openTypeExtension. |
 |[Delete](../api/opentypeextension-delete.md) | Нет |Удаление объекта openTypeExtension. |

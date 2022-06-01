@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса userRegistrationMethodCount
-description: Количество пользователей, зарегистрированных для метода проверки подлинности.
-author: danielwood95
-localization_priority: Normal
+description: Число пользователей, зарегистрированных для метода проверки подлинности.
+author: besiler
+ms.localizationpriority: medium
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 8e4c19c48771ccd0bd1dd1f1a4b049334266834a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c505ea408599dbb7b0c6803d03b87b2586d6d0c3
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132939"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820079"
 ---
 # <a name="userregistrationmethodcount-resource-type"></a>Тип ресурса userRegistrationMethodCount
 
@@ -18,13 +18,13 @@ ms.locfileid: "50132939"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Количество пользователей, зарегистрированных для метода проверки подлинности.
+Число пользователей, зарегистрированных для метода проверки подлинности.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |authenticationMethod|Строка|Имя метода проверки подлинности.|
-|userCount|Int64|Количество зарегистрированных пользователей.|
+|userCount|Int64|Число зарегистрированных пользователей.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

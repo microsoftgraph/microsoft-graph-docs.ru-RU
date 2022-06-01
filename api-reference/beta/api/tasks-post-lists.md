@@ -1,31 +1,33 @@
 ---
 title: Создание списка задач
-description: Создание нового объекта taskList.
+description: Создайте объект taskList.
 author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f696ef66adced69dd286725cb5e1709ba6dbbe27
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 890d5f89ed3b77b237a1bfa0b546d76bf6ce95e3
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451426"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820730"
 ---
-# <a name="create-basetasklist"></a>Создание baseTaskList
+# <a name="create-basetasklist-deprecated"></a>Создание baseTaskList (не рекомендуется)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [объекта taskList](../resources/basetasklist.md) .
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Создайте объект [baseTaskList](../resources/basetasklist.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированное (рабочая или учебная учетная запись)|Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -46,19 +48,19 @@ POST /users/{userId|userPrincipalName}/tasks/lists
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [baseTaskList](../resources/basetasklist.md) .
+В тексте запроса добавьте представление объекта [baseTaskList](../resources/basetasklist.md) в формате JSON.
 
 В следующей таблице показаны свойства, необходимые при создании **baseTaskList**.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Поле, указывающее название списка задач.|
+|displayName|Строка|Поле, указывающее заголовок списка задач.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `201 Created` ответа и [объект baseTaskList](../resources/basetasklist.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [baseTaskList](../resources/basetasklist.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

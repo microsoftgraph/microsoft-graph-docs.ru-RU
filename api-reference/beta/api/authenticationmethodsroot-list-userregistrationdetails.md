@@ -1,16 +1,16 @@
 ---
 title: Перечисление userRegistrationDetails
 description: Получение списка методов проверки подлинности, зарегистрированных для пользователя, как определено в объекте userRegistrationDetails.
-author: danielwood95
+author: besiler
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 474750f2f954a75d7fcaa403f061fc96bc663283
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: e504bbd4ac4326c68eef1b94ccdde2e6aca68762
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65694857"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820856"
 ---
 # <a name="list-userregistrationdetails"></a>Перечисление userRegistrationDetails
 Пространство имен: microsoft.graph
@@ -24,8 +24,8 @@ ms.locfileid: "65694857"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос

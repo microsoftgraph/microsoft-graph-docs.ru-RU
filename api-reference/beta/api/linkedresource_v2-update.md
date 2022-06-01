@@ -1,31 +1,33 @@
 ---
 title: Обновление linkedResource_v2
-description: Обновление свойств объекта linkedResource_v2 объекта.
+description: Обновите свойства linkedResource_v2 объекта.
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0709b060f69c426c83d35e3c8b9c9d38306f9c19
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 52bd6eebf4bd03a46748da730303c64370dd536c
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089943"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819939"
 ---
-# <a name="update-linkedresource_v2"></a>Обновление linkedResource_v2
+# <a name="update-linkedresource_v2-deprecated"></a>Обновление linkedResource_v2 (не рекомендуется)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [linkedResource_v2.](../resources/linkedresource_v2.md)
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Обновите [свойства linkedResource_v2 объекта](../resources/linkedresource_v2.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированное (рабочая или учебная учетная запись)|Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Приложение|Tasks.ReadWrite|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -51,15 +53,15 @@ PATCH /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTa
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|applicationName|String|Поле, указывающее имя приложения источника, отправляющее **linkedResource.**|
-|displayName|String|Поле, указывающее название **linkedResource**.|
-|externalId|String|Id объекта, связанного с этой задачей в стороной или партнерской системе.|
-|webUrl|String|Глубокая ссылка на **linkedResource**.|
+|applicationName|String|Поле, указывающее имя приложения источника, отправляющего **linkedResource**.|
+|displayName|Строка|Поле, указывающее заголовок **объекта linkedResource**.|
+|externalId|String|Идентификатор объекта, связанного с этой задачей в сторонней или партнерской системе.|
+|webUrl|String|Прямая ссылка на **linkedResource**.|
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и обновленный linkedResource_v2 `200 OK` объект в тексте ответа. [](../resources/linkedresource_v2.md)
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный [linkedResource_v2 в](../resources/linkedresource_v2.md) тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

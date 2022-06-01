@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cc4af2698729827cbbc5c65c3bf82169ed8e05d1
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: ce54c12b6b23d8d35610b1826844d0d76717300f
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365031"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820828"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -22,8 +22,8 @@ ms.locfileid: "65365031"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированное (рабочая или учебная учетная запись)|Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -116,6 +116,10 @@ Content-Type: application/json
          "title":"Linked entity new task 1",
          "createdDateTime":"2020-07-08T11:15:19.9359889Z",
          "lastModifiedDateTime":"2020-07-08T11:15:20.0614375Z",
+          "categories": [
+               "Important",
+               "Urgent"
+            ],
          "id":"AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtMDACLTAwCgBGAAAD",
          "body":{
             "content":"",

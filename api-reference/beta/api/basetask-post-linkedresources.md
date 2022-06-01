@@ -1,31 +1,33 @@
 ---
 title: Создание linkedResource_v2
-description: Создание нового linkedResource_v2 объекта.
+description: Создайте новый linkedResource_v2 объекта.
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 96ed1ca949a1485e952d44e4d1113fa5d80fe3f5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 85b87094a277b39dab56fe0dc49ed9da5e82b019
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124171"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820304"
 ---
-# <a name="create-linkedresource_v2"></a>Создание linkedResource_v2
+# <a name="create-linkedresource_v2-deprecated"></a>Создание linkedResource_v2 (не рекомендуется)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [linkedResource_v2](../resources/linkedresource_v2.md) объекта.
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Создайте [новый linkedResource_v2](../resources/linkedresource_v2.md) объекта.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированное (рабочая или учебная учетная запись)|Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Приложение|Tasks.ReadWrite|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,20 +47,20 @@ POST /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTas
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [linkedResource_v2](../resources/linkedresource_v2.md) объекта.
+В тексте запроса добавьте представление объекта linkedResource_v2 [JSON.](../resources/linkedresource_v2.md)
 
-Вы можете указать следующие свойства при создании **linkedResource_v2.**
+Вы можете указать следующие свойства при **создании linkedResource_v2.**
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|applicationName|String|Поле, указывающее имя приложения источника, отправляющее **linkedResource.**|
-|displayName|Строка|Поле, указывающее название **linkedResource**.|
-|externalId|String|Id объекта, связанного с этой задачей в стороной или партнерской системе.|
-|webUrl|String|Глубокая ссылка на **linkedResource**.|
+|applicationName|String|Поле, указывающее имя приложения источника, отправляющего **linkedResource**.|
+|displayName|Строка|Поле, указывающее заголовок **объекта linkedResource**.|
+|externalId|String|Идентификатор объекта, связанного с этой задачей в сторонней или партнерской системе.|
+|webUrl|String|Прямая ссылка на **linkedResource**.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа `201 Created` [и объект linkedResource_v2](../resources/linkedresource_v2.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика [и linkedResource_v2](../resources/linkedresource_v2.md) объект в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

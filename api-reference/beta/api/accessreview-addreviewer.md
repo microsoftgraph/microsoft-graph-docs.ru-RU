@@ -1,18 +1,18 @@
 ---
-title: Добавление рецензента accessReview
+title: Добавление рецензента accessReview (не рекомендуется)
 description: 'В Azure AD проверки доступа обновите существующий объект accessReview, чтобы добавить другого пользователя в качестве рецензента.  Эта операция разрешена только для проверки доступа, которая еще не завершена, и только для проверки доступа, в которой явно указаны рецензенты. Эта операция не разрешена для проверки доступа, в которой пользователи проверяют собственный доступ, и не предназначена для проверки доступа, в которой владельцы группы назначаются в качестве рецензентов. '
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e5814ab38f90bc0f7f2d3ef55eda276bbf3f27c6
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 1f59b588bb1ae59b9c21ee35beed218b23479195
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314556"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819393"
 ---
-# <a name="add-accessreview-reviewer"></a>Добавление рецензента accessReview
+# <a name="add-accessreview-reviewer-deprecated"></a>Добавление рецензента accessReview (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -28,8 +28,8 @@ ms.locfileid: "65314556"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -49,7 +49,7 @@ POST /accessReviews/{reviewId}/reviewers
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| id        | String   | Идентификатор пользователя.|
+| id        | Строка   | Идентификатор пользователя.|
 
 
 ## <a name="response"></a>Отклик

@@ -1,31 +1,33 @@
 ---
-title: Список baseTasks
-description: Получите ресурсы baseTask из свойства навигации задач определенной базыTaskList.
+title: Перечисление baseTasks
+description: Получение ресурсов baseTask из свойства навигации задач определенного объекта baseTaskList.
 author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 84128000fb785e9d5d572de5e81b8d0b8d71b308
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 356a59cb3804a7ae5ca27b5b382c59c0228b7c14
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451384"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820688"
 ---
-# <a name="list-basetasks"></a>Список baseTasks
+# <a name="list-basetasks-deprecated"></a>Перечисление baseTasks (не рекомендуется)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите ресурсы [baseTask](../resources/basetask.md) из свойства навигации задач определенной [базыTaskList](../resources/basetasklist.md).
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Получение ресурсов [baseTask](../resources/basetask.md) из свойства навигации задач определенного [объекта baseTaskList](../resources/basetasklist.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
+|Делегированное (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -40,7 +42,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$expand`параметры `$filter` `$top`  [запроса OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает параметры `$expand``$filter` запроса `$top`[OData](/graph/query-parameters) для настройки ответа.  
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -52,7 +54,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию [объектов baseTask](../resources/basetask.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [baseTask](../resources/basetask.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

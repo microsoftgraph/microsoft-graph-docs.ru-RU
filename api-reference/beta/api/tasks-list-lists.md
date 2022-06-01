@@ -1,31 +1,33 @@
 ---
 title: Перечисление списков
-description: Получите список объектов baseTaskList пользователя и их свойств.
+description: Получение списка объектов baseTaskList пользователя и его свойств.
 author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8d1465d85efa53147bcba683a8fd5781a8c45bcc
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f9d27a249d57b1922c4e5934cc832f3f73246c07
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62093183"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819848"
 ---
-# <a name="list-lists"></a>Перечисление списков
+# <a name="list-lists-deprecated"></a>Списки (нерекомендуемые)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [baseTaskList](../resources/basetasklist.md) пользователя и их свойств.
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Получение списка объектов [baseTaskList](../resources/basetasklist.md) пользователя и его свойств.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
+|Делегированное (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -40,19 +42,19 @@ GET /users/{userId|userPrincipalName}/tasks/lists
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$expand` параметры `$filter` `$top` [запроса OData](/graph/query-parameters) для настройки ответа.  
+Этот метод поддерживает параметры `$expand``$filter` запроса `$top`[OData](/graph/query-parameters) для настройки ответа.  
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов baseTaskList](../resources/basetasklist.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [baseTaskList](../resources/basetasklist.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

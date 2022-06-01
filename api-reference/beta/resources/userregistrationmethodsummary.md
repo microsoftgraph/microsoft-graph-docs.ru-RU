@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса userRegistrationMethodSummary
 description: Сводка количества пользователей, зарегистрированных для каждого метода проверки подлинности.
-author: danielwood95
-localization_priority: Normal
+author: besiler
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 6ff9a079ddce0df5031eef2b1374ebb1d233d56d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e7c5288fb533f3b97ea5c69d7916e3cd3bc33d50
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132925"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820030"
 ---
 # <a name="userregistrationmethodsummary-resource-type"></a>Тип ресурса userRegistrationMethodSummary
 
@@ -24,13 +24,13 @@ ms.locfileid: "50132925"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [usersRegisteredByMethod](../api/authenticationmethodsroot-usersregisteredbymethod.md) | userRegistrationMethodSummary | Получите количество пользователей, зарегистрированных для каждого метода проверки подлинности. |
+| [usersRegisteredByMethod](../api/authenticationmethodsroot-usersregisteredbymethod.md) | userRegistrationMethodSummary | Получение числа пользователей, зарегистрированных для каждого метода проверки подлинности. |
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|totalUserCount|Int64|Общее количество пользователей в клиенте.|
-|userRegistrationMethodCounts|[Коллекция userRegistrationMethodCount](../resources/userregistrationmethodcount.md)|Количество пользователей, зарегистрированных для каждого метода проверки подлинности.|
+|totalUserCount|Int64|Общее число пользователей в клиенте.|
+|userRegistrationMethodCounts|[Коллекция userRegistrationMethodCount](../resources/userregistrationmethodcount.md)|Число пользователей, зарегистрированных для каждого метода проверки подлинности.|
 |userRoles|includedUserRoles|Тип роли пользователя. Возможные значения: `all`, `privilegedAdmin`, `admin`, `user`.|
 |userTypes|includedUserTypes|Тип пользователя. Возможные значения: `all`, `member`, `guest`.|
 
@@ -46,7 +46,7 @@ ms.locfileid: "50132925"
 * Администратор пользователей
 * Администратор проверки подлинности
 
-Значение включает `admin` все роли администратора Azure AD. 
+Это значение включает `admin` все Azure AD роли администратора. 
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

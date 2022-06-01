@@ -1,16 +1,16 @@
 ---
 title: Создание accessPackageAssignmentRequest
-description: Создание нового accessPackageAssignmentRequest.
+description: Создайте новый accessPackageAssignmentRequest.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e266fd6e67c51c7de27341a1880e65d090cc00aa
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1018bedc70bf164698aba075b4a8b921a49e7a6e
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129876"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820814"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>Создание accessPackageAssignmentRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "62129876"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [Azure AD Entitlement Management](../resources/entitlementmanagement-overview.md)создайте новый объект [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)  Эта операция используется для назначения пользователя пакету доступа или удаления назначения пакета доступа.
+В [Azure AD entitlement Management](../resources/entitlementmanagement-overview.md) создайте объект [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).  Эта операция используется для назначения пользователя пакету доступа или удаления назначения пакета доступа.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "62129876"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -42,32 +42,32 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Authorization | Носитель \{токен\}. Обязательно. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)
+В тексте запроса добавьте представление объекта [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) в формате JSON.
 
-Для администратора, запрашиваемого для создания назначения для пользователя, значение свойства **requestType** составляет , а свойство `AdminAdd` **accessPackageAssignment** содержит назначенного пользователя, свойство `targetId` **assignmentPolicyId,** определяющий [accessPackageAssignmentPolicy,](../resources/accesspackageassignmentpolicy.md)и **свойство accessPackageId,** определяющий [accessPackageage.](../resources/accesspackage.md)
+Чтобы администратор запрашивал создание назначения для пользователя, свойство **requestType** `AdminAdd`имеет значение , а свойство **accessPackageAssignment** `targetId` содержит назначаемого пользователя, свойство **assignmentPolicyId** , определяющее [accessPackageAssignmentPolicyPolicy](../resources/accesspackageassignmentpolicy.md), и **свойство accessPackageId** , определяющее [accessPackage](../resources/accesspackage.md).
 
-Для администратора, запрашиваемого для удаления назначения, значение свойства **requestType** составляет , а свойство accessPackageAssignment содержит свойство id, определяющий удаляемую `AdminRemove`  [accessPackageAssignment.](../resources/accesspackageassignment.md) 
+Чтобы администратор запрашивал удаление назначения, свойство **requestType** `AdminRemove`имеет значение , а свойство **accessPackageAssignment** содержит свойство **идентификатора** , определяющее [удаляемое свойство accessPackageAssignment](../resources/accesspackageassignment.md) .
 
-Чтобы пользователь, не вступив в администратор, попросил создать свое собственное назначение для первого назначения или возобновления назначения, значение свойства **requestType** составляет `UserAdd` . Свойство **accessPackageAssignment** содержит свойство `targetId` с `id` пользователями. Свойство **assignmentPolicyId** определяет [accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md) Свойство **accessPackageId** определяет [accessPackage.](../resources/accesspackage.md) Пользователь, делая запрос, должен уже существовать в каталоге.
+Чтобы пользователь без прав администратора запрашивал создание собственного назначения для первого назначения или продления назначения, свойство **requestType** имеет значение `UserAdd`. Свойство **accessPackageAssignment** содержит `targetId` свойство с пользователями `id` . Свойство **assignmentPolicyId** определяет [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). Свойство **accessPackageId** определяет [accessPackage](../resources/accesspackage.md). Пользователь, выполняющего запрос, должен уже существовать в каталоге.
 
-Чтобы пользователь, не вступив в администратор, запрашивал расширение своих назначений, значение свойства **requestType** `UserExtend` составляет . Свойство **accessPackageAssignment** содержит свойство `targetId` с `id` пользователями. Свойство **assignmentPolicyId** определяет [accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md) Свойство **accessPackageId** определяет [accessPackage.](../resources/accesspackage.md) Пользователь, делая запрос, должен уже существовать в каталоге.
+Чтобы пользователь без прав администратора запрашивал продление собственных назначений, свойство **requestType** имеет значение `UserExtend`. Свойство **accessPackageAssignment** содержит `targetId` свойство с пользователями `id` . Свойство **assignmentPolicyId** определяет [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). Свойство **accessPackageId** определяет [accessPackage](../resources/accesspackage.md). Пользователь, выполняющего запрос, должен уже существовать в каталоге.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа из 200 серий и новый объект [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) в тексте ответа.  
+В случае успешного выполнения этот метод возвращает код отклика серии 200 и новый объект [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) в тексте отклика.  
 
-Если это запрос, то впоследствии создается `AdminAdd` [accessPackageAssignment](../resources/accesspackageassignment.md) и, при необходимости, [accessPackageSubject.](../resources/accesspackagesubject.md) Вы можете найти тех, кто использует параметры запроса при [перечислении accessPackageAssignments](entitlementmanagement-list-accesspackageassignments.md).
+Если это запрос `AdminAdd` , то впоследствии также создается [accessPackageAssignment](../resources/accesspackageassignment.md) и, при необходимости, [accessPackageSubject](../resources/accesspackagesubject.md) . Их можно найти с помощью параметров запроса при [перечислении объектов accessPackageAssignment.](entitlementmanagement-list-accesspackageassignments.md)
 
 ## <a name="examples"></a>Примеры
-### <a name="example-1-admin-requests-a-direct-assignment-for-a-user-already-in-the-directory"></a>Пример 1. Администратор запрашивает прямое назначение для пользователя уже в каталоге
+### <a name="example-1-admin-requests-a-direct-assignment-for-a-user-already-in-the-directory"></a>Пример 1. Администратор запрашивает прямое назначение для пользователя, уже найдите его в каталоге
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса на прямое назначение, в котором администратор запрашивает создание назначения для пользователя. Так как [accessPackageSubject](../resources/accesspackagesubject.md) может еще не существовать, значение **targetID** — это объектный ID назначенного пользователя, значение **accessPackageId** — это желаемый пакет доступа для этого пользователя, а значение **assignmentPolicyId** — это политика прямого назначения в этом пакете доступа.
+Ниже приведен пример запроса на прямое назначение, в котором администратор запрашивает создание назначения для пользователя. Так как [accessPackageSubject](../resources/accesspackagesubject.md) может еще не существовать, значение **targetID** является идентификатором объекта назначаемого пользователя, **значением accessPackageId** является требуемый пакет доступа для этого пользователя, а **значение assignmentPolicyId** является политикой прямого назначения в этом пакете доступа.
  
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -118,7 +118,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -145,7 +145,7 @@ Content-type: application/json
 ### <a name="example-2-user-requests-a-package-and-answers-questions-for-approval"></a>Пример 2. Пользователь запрашивает пакет и отвечает на вопросы для утверждения
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса, в котором запросчик предоставил ответы на вопросы, чтобы помочь ему принять решение.
+Ниже приведен пример запроса, в котором инициатор запроса предоставил ответы утверждающему, чтобы помочь ему принять решение.
  
 
 
@@ -217,7 +217,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -314,10 +314,10 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-3-request-a-package-and-provide-a-justification"></a>Пример 3. Запрос пакета и обоснование
+### <a name="example-3-request-a-package-and-provide-a-justification"></a>Пример 3. Запрос пакета и предоставление обоснования
 #### <a name="request"></a>Запрос
 
-В следующем примере показано, как запросить пакет доступа и предоставить обоснование для утвержденного.
+В следующем примере показано, как запросить пакет доступа и предоставить обоснование утверждающему.
  
 
 
@@ -378,10 +378,10 @@ Content-type: application/json
 
 ### <a name="example-4-remove-an-assignment"></a>Пример 4. Удаление назначения
 
-Чтобы удалить назначения, создайте новый объект accessPackageAssignmentRequest со следующими настройками:
+Чтобы удалить назначения, создайте объект accessPackageAssignmentRequest со следующими параметрами:
 
-+ Значение свойства **requestType,** установленного для `AdminRemove` .
-+ В свойство accessPackageAssignment включите список с идентификатором объектов accessPackageAssignment для удаления.
++ Значение свойства **requestType** , равное `AdminRemove`.
++ В свойстве accessPackageAssignment добавьте объект с идентификатором удаляемого объекта accessPackageAssignment.
 
 #### <a name="request"></a>Запрос
 
@@ -431,10 +431,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-admin-requests-a-direct-assignment-for-a-user-not-yet-in-the-directory"></a>Пример 5. Администратор запрашивает прямое назначение для пользователя, еще не в каталоге
+### <a name="example-5-admin-requests-a-direct-assignment-for-a-user-not-yet-in-the-directory"></a>Пример 5. Администратор запрашивает прямое назначение для пользователя, еще не входящих в каталог
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса на прямое назначение, в котором администратор запрашивает создание назначения для пользователя, для пользователя, который не существует в каталоге. Значение **accessPackageId** — это желаемый пакет доступа для этого пользователя, а значение **assignmentPolicyId** — это политика прямого назначения в этом пакете доступа.
+Ниже приведен пример запроса на прямое назначение, в котором администратор запрашивает создание назначения для пользователя, для пользователя, который не существует в каталоге. Значение **accessPackageId** является требуемым пакетом доступа для этого пользователя, а **значение assignmentPolicyId** — политикой прямого назначения в этом пакете доступа.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -487,7 +487,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

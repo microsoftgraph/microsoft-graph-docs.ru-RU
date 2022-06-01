@@ -1,18 +1,18 @@
 ---
-title: тип ресурса accessReviewRecurrenceSettings
-description: Указывает, что обзор доступа повторяется через регулярные промежутки времени.
-localization_priority: Normal
+title: Тип ресурса accessReviewRecurrenceSettings (не рекомендуется)
+description: Указывает, что проверка доступа выполняется через регулярные интервалы.
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: cb2a05589bfa92331a213a489bfb2a5129850065
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9fa6fb47c541094c85778621289d1abb6d71f727
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755660"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821213"
 ---
-# <a name="accessreviewrecurrencesettings-resource-type"></a>тип ресурса accessReviewRecurrenceSettings
+# <a name="accessreviewrecurrencesettings-resource-type-deprecated"></a>Тип ресурса accessReviewRecurrenceSettings (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "52755660"
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Тип **ресурса accessReviewRecurrenceSettings** используется в [ресурсе accessReviewSettings](accessreviewsettings.md) и указывает, что обзор доступа повторяется регулярно.
+Тип **ресурса accessReviewRecurrenceSettings** используется в ресурсе [accessReviewSettings](accessreviewsettings.md) и указывает, что проверка доступа выполняется через регулярные интервалы.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 | :------- | :--- | :---------- |
-| recurrenceType | String | Интервал повторяемости. Возможные vaules: `onetime` , , , , или `weekly` `monthly` `quarterly` `halfyearly` `annual` .                                                                   |
-| recurrenceEndType | String | Как заканчивается повторение. Возможные значения: `never` `endBy` , , или `occurrences` `recurrenceCount` . Если это так, то явный конец серии рецидивов `never` не существует. Если это `endBy` так, то повторение заканчивается в определенный срок. Если это так, то серия заканчивается после завершения экземпляров `occurrences` `recurrenceCount` проверки. |
-| durationInDays | Int32 | Продолжительность в днях для повторения. |
-| recurrenceCount | Int32 | Количество повторерений, если значение **recurrenceEndType** является `occurrences` или `0` иным образом. |
+| recurrenceType | Строка | Интервал повторения. Возможные vaules: , , , , или `annual``quarterly``halfyearly` . `monthly``weekly``onetime`                                                                   |
+| recurrenceEndType | Строка | Как заканчивается повторение. Возможные значения: `never`, `endBy`, или `occurrences``recurrenceCount`. Если это так `never`, то явный конец ряда повторений отсутствует. Если это так `endBy`, то повторение заканчивается в определенную дату. Если это так `occurrences`, то ряд завершается `recurrenceCount` после завершения экземпляров проверки. |
+| durationInDays | Int32 | Длительность повторения в днях. |
+| recurrenceCount | Int32 | Количество повторений, если значение **recurrenceEndType** равно `occurrences`или иным `0` образом. |
 
 ## <a name="json-representation"></a>Представление JSON
 
