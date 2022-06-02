@@ -1,35 +1,35 @@
 ---
-title: Создание androidDeviceOwnerWiFiConfiguration
-description: Создайте новый объект androidDeviceOwnerWiFiConfiguration.
+title: Создание объекта androidDeviceOwnerWiFiConfiguration
+description: Создайте объект androidDeviceOwnerWiFiConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53c7eae21351287664c4b79ee35123dc057cbd4b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4cebc6ab9c81b6efcc2c121e8b8eb43cfc8e6c3a
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59065941"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858158"
 ---
-# <a name="create-androiddeviceownerwificonfiguration"></a>Создание androidDeviceOwnerWiFiConfiguration
+# <a name="create-androiddeviceownerwificonfiguration"></a>Создание объекта androidDeviceOwnerWiFiConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создайте новый [объект androidDeviceOwnerWiFiConfiguration.](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md)
+Создайте объект [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,39 +44,44 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса предоставляем представление JSON для объекта AndroidDeviceOwnerWiFiConfiguration.
+В теле запроса добавьте представление объекта androidDeviceOwnerWiFiConfiguration в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании androidDeviceOwnerWiFiConfiguration.
+В следующей таблице показаны свойства, необходимые при создании объекта androidDeviceOwnerWiFiConfiguration.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|Идентификаторы roleScopeTagId|Коллекция String|Список тегов области для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойству ScopeTags не допускается, если это значение имеет значение false и сущности не будут видны пользователям с заданной областью. Это происходит для устаревших политик, созданных в Silverlight, и их можно устранить, удалив и повторно создав политику на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпуска ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|networkName|String|Имя сети|
-|ssid|Строка|Это имя сети Wi-Fi, которая транслируется на все устройства.|
-|connectAutomatically|Boolean|Подключение автоматически, когда эта сеть находится в диапазоне. Настройка этого параметра будет пропускать запрос пользователя и автоматически подключать устройство к Wi-Fi сети.|
-|connectWhenNetworkNameIsHidden|Логический|Если задана истина, этот профиль заставляет устройство подключаться к сети, которая не передает SSID на все устройства.|
-|wiFiSecurityType|[androidDeviceOwnerWiFiSecurityType](../resources/intune-deviceconfig-androiddeviceownerwifisecuritytype.md)|Указывает, Wi-Fi конечная точка использует тип безопасности на основе EAP. Возможные значения: `open`, `wep`, `wpaPersonal`, `wpaEnterprise`.|
-|preSharedKey|Строка|Это предварительный общий ключ для сети персональных Wi-Fi WPA.|
-|preSharedKeyIsSet|Логический|Это предварительный общий ключ для сети персональных Wi-Fi WPA.|
+|networkName|Строка|Имя сети|
+|Ssid|Строка|Это имя сети Wi-Fi, которая передается на все устройства.|
+|connectAutomatically|Boolean|Подключение, если эта сеть находится в диапазоне. Если задано значение true, запрос пользователя будет пропущен и устройство будет автоматически подключено к Wi-Fi сети.|
+|connectWhenNetworkNameIsHidden|Boolean|Если задано значение true, этот профиль принудительно подключает устройство к сети, которая не передает свой SSID на все устройства.|
+|wiFiSecurityType|[androidDeviceOwnerWiFiSecurityType](../resources/intune-deviceconfig-androiddeviceownerwifisecuritytype.md)|Указывает, использует ли Wi-Fi конечная точка тип безопасности на основе EAP. Возможные значения: `open`, `wep`, `wpaPersonal`, `wpaEnterprise`.|
+|preSharedKey|Строка|Это общий ключ для WPA Personal Wi-Fi сети.|
+|preSharedKeyIsSet|Boolean|Это общий ключ для WPA Personal Wi-Fi сети.|
+|proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Укажите параметр прокси-сервера для Wi-Fi конфигурации. Возможные значения: none, manual и automatic. Возможные значения: `none`, `manual`, `automatic`.|
+|proxyManualAddress|Строка|Укажите IP-адрес прокси-сервера. Android документации не указывает IPv4 или IPv6. Например, 192.168.1.1.|
+|proxyManualPort|Int32|Укажите порт прокси-сервера.|
+|proxyAutomaticConfigurationUrl|Строка|Укажите URL-адрес скрипта конфигурации прокси-сервера.|
+|proxyExclusionList|Строка|Список узлов, исключаемых с помощью прокси-сервера для подключений. Эти узлы могут использовать подстановочные знаки, такие как *.example.com.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -85,7 +90,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1282
+Content-length: 1540
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerWiFiConfiguration",
@@ -123,7 +128,12 @@ Content-length: 1282
   "connectWhenNetworkNameIsHidden": true,
   "wiFiSecurityType": "wep",
   "preSharedKey": "Pre Shared Key value",
-  "preSharedKeyIsSet": true
+  "preSharedKeyIsSet": true,
+  "proxySettings": "manual",
+  "proxyManualAddress": "Proxy Manual Address value",
+  "proxyManualPort": 15,
+  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "proxyExclusionList": "Proxy Exclusion List value"
 }
 ```
 
@@ -132,7 +142,7 @@ Content-length: 1282
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1454
+Content-Length: 1712
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerWiFiConfiguration",
@@ -173,9 +183,15 @@ Content-Length: 1454
   "connectWhenNetworkNameIsHidden": true,
   "wiFiSecurityType": "wep",
   "preSharedKey": "Pre Shared Key value",
-  "preSharedKeyIsSet": true
+  "preSharedKeyIsSet": true,
+  "proxySettings": "manual",
+  "proxyManualAddress": "Proxy Manual Address value",
+  "proxyManualPort": 15,
+  "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "proxyExclusionList": "Proxy Exclusion List value"
 }
 ```
+
 
 
 

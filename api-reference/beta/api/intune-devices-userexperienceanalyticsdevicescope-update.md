@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8650a36fe566b6372b06e843cdaaaaf9a2ba2583
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 71f540448a2078a0af54e68205dfeff42bc35992
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65213590"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858438"
 ---
 # <a name="update-userexperienceanalyticsdevicescope"></a>Обновление userExperienceAnalyticsDeviceScope
 
@@ -20,15 +20,15 @@ ms.locfileid: "65213590"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств `userExperienceAnalyticsDeviceScope` объекта.
+Обновление свойств объекта [userExperienceAnalyticsDeviceScope](../resources/intune-devices-userexperienceanalyticsdevicescope.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,9 +48,9 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceScopes/{userExperienceAnaly
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта в формате `userExperienceAnalyticsDeviceScope` JSON.
+В тексте запроса добавьте представление объекта [userExperienceAnalyticsDeviceScope в формате](../resources/intune-devices-userexperienceanalyticsdevicescope.md) JSON.
 
-В следующей таблице показаны свойства, необходимые при создании `userExperienceAnalyticsDeviceScope`.
+В следующей таблице показаны свойства, необходимые при создании [объекта userExperienceAnalyticsDeviceScope](../resources/intune-devices-userexperienceanalyticsdevicescope.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -59,9 +59,9 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceScopes/{userExperienceAnaly
 |ownerId|Строка|Уникальный идентификатор пользователя (администратора), создавшего конфигурацию области устройства.|
 |isBuiltIn|Boolean|Указывает, является ли конфигурация области устройства встроенной или пользовательской. Если значение равно TRUE, конфигурация области устройства является встроенной. Если значение равно FALSE, конфигурация области устройства является настраиваемой. Значение по умолчанию — FALSE.|
 |enabled|Boolean|Указывает, включена или отключена область устройства. Если значение равно TRUE, область устройства включена. Если значение равно FALSE, область устройства отключена. Значение по умолчанию — FALSE.|
-|status|`deviceScopeStatus`|Указывает состояние области устройства после включения области устройства. Возможные значения: none, computing, insufficientData или completed. Значение по умолчанию — none. Возможные значения: `none`, `computing`, `insufficientData`, `completed`, `unknownFutureValue`.|
-|параметр|`deviceScopeParameter`|Параметр конфигурации области устройства. В будущем он будет расширен для добавления дополнительных параметров. Например, параметр области устройства может быть версией ОС, типом диска, производителем устройства, моделью устройства или тегом области. Значение по умолчанию: scopeTag. Возможные значения: `none`, `scopeTag`, `unknownFutureValue`.|
-|operator|`deviceScopeOperator`|Оператор запроса конфигурации области устройства. Возможные значения: equals, notEquals, contains, notContains, greaterThan, lessThan. Значение по умолчанию: равно. Возможные значения: `none`, `equals`, `unknownFutureValue`.|
+|status|[deviceScopeStatus](../resources/intune-devices-devicescopestatus.md)|Указывает состояние области устройства после включения области устройства. Возможные значения: none, computing, insufficientData или completed. Значение по умолчанию — none. Возможные значения: `none`, `computing`, `insufficientData`, `completed`, `unknownFutureValue`.|
+|параметр|[deviceScopeParameter](../resources/intune-devices-devicescopeparameter.md)|Параметр конфигурации области устройства. В будущем он будет расширен для добавления дополнительных параметров. Например, параметр области устройства может быть версией ОС, типом диска, производителем устройства, моделью устройства или тегом области. Значение по умолчанию: scopeTag. Возможные значения: `none`, `scopeTag`, `unknownFutureValue`.|
+|operator|[deviceScopeOperator](../resources/intune-devices-devicescopeoperator.md)|Оператор запроса конфигурации области устройства. Возможные значения: equals, notEquals, contains, notContains, greaterThan, lessThan. Значение по умолчанию: равно. Возможные значения: `none`, `equals`, `unknownFutureValue`.|
 |valueObjectId|Строка|Уникальный идентификатор идентификатора тега области пользовательского устройства, используемого для создания конфигурации области устройства.|
 |value|String|Значение предложения запроса конфигурации области устройства.|
 |createdDateTime|DateTimeOffset|Указывает дату и время создания пользовательской области устройства.|
@@ -69,8 +69,8 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceScopes/{userExperienceAnaly
 
 
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный `userExperienceAnalyticsDeviceScope` объект в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и обновленный объект [userExperienceAnalyticsDeviceScope](../resources/intune-devices-userexperienceanalyticsdevicescope.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

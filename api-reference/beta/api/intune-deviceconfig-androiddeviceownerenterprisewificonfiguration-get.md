@@ -1,34 +1,34 @@
 ---
-title: Get androidDeviceOwnerEnterpriseWiFiConfiguration
-description: Ознакомьтесь с свойствами и отношениями объекта androidDeviceOwnerEnterpriseWiFiConfiguration.
+title: Получение объекта androidDeviceOwnerEnterpriseWiFiConfiguration
+description: Чтение свойств и связей объекта androidDeviceOwnerEnterpriseWiFiConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 471ebca82ebb580f2252b24a741128c5db05c6c5
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: caf10cdd90646bec442014abe73a582989021139
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61346187"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857948"
 ---
-# <a name="get-androiddeviceownerenterprisewificonfiguration"></a>Get androidDeviceOwnerEnterpriseWiFiConfiguration
+# <a name="get-androiddeviceownerenterprisewificonfiguration"></a>Получение объекта androidDeviceOwnerEnterpriseWiFiConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ознакомьтесь с свойствами и отношениями [объекта androidDeviceOwnerEnterpriseWiFiConfiguration.](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
+Чтение свойств и связей объекта [androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -55,7 +55,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и `200 OK` [объект AndroidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md) в теле отклика.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и объект [androidDeviceOwnerEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1987
+Content-Length: 2255
 
 {
   "value": {
@@ -113,6 +113,11 @@ Content-Length: 1987
     "wiFiSecurityType": "wep",
     "preSharedKey": "Pre Shared Key value",
     "preSharedKeyIsSet": true,
+    "proxySettings": "manual",
+    "proxyManualAddress": "Proxy Manual Address value",
+    "proxyManualPort": 15,
+    "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+    "proxyExclusionList": "Proxy Exclusion List value",
     "eapType": "eapTtls",
     "trustedServerCertificateNames": [
       "Trusted Server Certificate Names value"

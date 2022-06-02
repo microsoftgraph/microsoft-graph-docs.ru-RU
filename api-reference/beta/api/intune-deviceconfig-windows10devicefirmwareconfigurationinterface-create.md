@@ -1,35 +1,35 @@
 ---
-title: Создание windows10DeviceFirmwareConfigurationInterface
-description: Создайте новый объект Windows10DeviceFirmwareConfigurationInterface.
+title: Создание объекта windows10DeviceFirmwareConfigurationInterface
+description: Создайте объект windows10DeviceFirmwareConfigurationInterface.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: de7e72ef42ee60337d16b723daf88ee9211bfe43
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1ef1042b4942160c2491760ccbfc33358c772e8d
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59018560"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857892"
 ---
-# <a name="create-windows10devicefirmwareconfigurationinterface"></a>Создание windows10DeviceFirmwareConfigurationInterface
+# <a name="create-windows10devicefirmwareconfigurationinterface"></a>Создание объекта windows10DeviceFirmwareConfigurationInterface
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создайте [новый объект Windows10DeviceFirmwareConfigurationInterface.](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md)
+Создайте объект [windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -48,37 +48,49 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В корпусе запроса предоставляем представление JSON для объекта Windows10DeviceFirmwareConfigurationInterface.
+В теле запроса добавьте представление объекта windows10DeviceFirmwareConfigurationInterface в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании windows10DeviceFirmwareConfigurationInterface.
+В следующей таблице показаны свойства, необходимые при создании объекта windows10DeviceFirmwareConfigurationInterface.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|Идентификаторы roleScopeTagId|Коллекция String|Список тегов области для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойству ScopeTags не допускается, если это значение имеет значение false и сущности не будут видны пользователям с заданной областью. Это происходит для устаревших политик, созданных в Silverlight, и их можно устранить, удалив и повторно создав политику на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпуска ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |changeUefiSettingsPermission|[changeUefiSettingsPermission](../resources/intune-deviceconfig-changeuefisettingspermission.md)|Определяет уровень разрешений, предоставленный пользователям для изменения параметров UEFI. Возможные значения: `notConfiguredOnly`, `none`.|
-|виртуализацияOfCpuAndIO|[включить](../resources/intune-shared-enablement.md)|Определяет, включена ли виртуализация ЦП и IO. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|камеры|[включить](../resources/intune-shared-enablement.md)|Определяет, включены ли встроенные камеры. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|microphonesAndSpeakers|[включить](../resources/intune-shared-enablement.md)|Определяет, включены ли встроенные микрофоны или динамики. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|радио|[включить](../resources/intune-shared-enablement.md)|Определяет, включены ли встроенные радиостанции, например WIFI, NFC, Bluetooth. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|bootFromExternalMedia|[включить](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю загрузиться из внешних мультимедиа. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|bootFromBuiltInNetworkAdapters|[включить](../resources/intune-shared-enablement.md)|Определяет, разрешена ли пользователю загрузка из встроенных сетевых адаптеров. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|WindowsPlatformBinaryTable|[включить](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить двоичную таблицу Windows платформы. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|simultaneousMultiThreading|[включить](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить одновременную многотекустойку. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|virtualizationOfCpuAndIO|[Включения](../resources/intune-shared-enablement.md)|Определяет, включена ли виртуализация ЦП и ввода-вывода. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|Камеры|[Включения](../resources/intune-shared-enablement.md)|Определяет, включены ли встроенные камеры. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|microphonesAndSpeakers|[Включения](../resources/intune-shared-enablement.md)|Определяет, включены ли встроенные микрофоны или динамики. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|Радио|[Включения](../resources/intune-shared-enablement.md)|Определяет, включены ли встроенные радио, например WIFI, NFC, Bluetooth. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|bootFromExternalMedia|[Включения](../resources/intune-shared-enablement.md)|Определяет, разрешена ли пользователю загрузка с внешнего носителя. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|bootFromBuiltInNetworkAdapters|[Включения](../resources/intune-shared-enablement.md)|Определяет, разрешена ли пользователю загрузка из встроенных сетевых адаптеров. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|windowsPlatformBinaryTable|[Включения](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить двоичную таблицу Windows платформы. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|simultaneousMultiThreading|[Включения](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить одновременную многопоточность. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|frontCamera|[Включения](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить front Камера. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|rearCamera|[Включения](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить задняя камера. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|инфракрасная камеры|[Включения](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить инфракрасную камеру. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|Микрофон|[Включения](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить микрофон. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|Bluetooth|[Включения](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить Bluetooth. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|wirelessWideAreaNetwork|[Включения](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить беспроводную сеть с широкими областями. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|nearFieldCommunication|[Включения](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить связь с полями, близкого к полю. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|Wifi|[Включения](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить Wi-Fi. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|usbTypeAPort|[Включения](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить порт USB типа A. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|Sdcard|[Включения](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить порт SD Card. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|wakeOnLAN|[Включения](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить пробуждение по локальной сети. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|wakeOnPower|[Включения](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить wake On Power. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект Windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) в тексте ответа.
+В случае успешного выполнения `201 Created` этот метод возвращает код отклика и объект [windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -87,7 +99,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1397
+Content-length: 1754
 
 {
   "@odata.type": "#microsoft.graph.windows10DeviceFirmwareConfigurationInterface",
@@ -127,7 +139,19 @@ Content-length: 1397
   "bootFromExternalMedia": "enabled",
   "bootFromBuiltInNetworkAdapters": "enabled",
   "windowsPlatformBinaryTable": "enabled",
-  "simultaneousMultiThreading": "enabled"
+  "simultaneousMultiThreading": "enabled",
+  "frontCamera": "enabled",
+  "rearCamera": "enabled",
+  "infraredCamera": "enabled",
+  "microphone": "enabled",
+  "bluetooth": "enabled",
+  "wirelessWideAreaNetwork": "enabled",
+  "nearFieldCommunication": "enabled",
+  "wiFi": "enabled",
+  "usbTypeAPort": "enabled",
+  "sdCard": "enabled",
+  "wakeOnLAN": "enabled",
+  "wakeOnPower": "enabled"
 }
 ```
 
@@ -136,7 +160,7 @@ Content-length: 1397
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1569
+Content-Length: 1926
 
 {
   "@odata.type": "#microsoft.graph.windows10DeviceFirmwareConfigurationInterface",
@@ -179,9 +203,22 @@ Content-Length: 1569
   "bootFromExternalMedia": "enabled",
   "bootFromBuiltInNetworkAdapters": "enabled",
   "windowsPlatformBinaryTable": "enabled",
-  "simultaneousMultiThreading": "enabled"
+  "simultaneousMultiThreading": "enabled",
+  "frontCamera": "enabled",
+  "rearCamera": "enabled",
+  "infraredCamera": "enabled",
+  "microphone": "enabled",
+  "bluetooth": "enabled",
+  "wirelessWideAreaNetwork": "enabled",
+  "nearFieldCommunication": "enabled",
+  "wiFi": "enabled",
+  "usbTypeAPort": "enabled",
+  "sdCard": "enabled",
+  "wakeOnLAN": "enabled",
+  "wakeOnPower": "enabled"
 }
 ```
+
 
 
 

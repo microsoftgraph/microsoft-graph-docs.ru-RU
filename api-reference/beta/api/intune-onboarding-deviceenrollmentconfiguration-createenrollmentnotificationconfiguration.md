@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 29a1a5418d21bd2cda01072e741f57814eeb3575
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 59cf5b2175e6b02cfd538516407612f1f1c095bd
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65213269"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858340"
 ---
 # <a name="createenrollmentnotificationconfiguration-action"></a>Действие createEnrollmentNotificationConfiguration
 
@@ -27,8 +27,8 @@ ms.locfileid: "65213269"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementConfiguration.Read.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementConfiguration.Read.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementServiceConfig.Read.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -37,7 +37,7 @@ ms.locfileid: "65213269"
 }
 -->
 ``` http
-POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/createEnrollmentNotificationConfiguration
+POST /deviceManagement/deviceEnrollmentConfigurations/createEnrollmentNotificationConfiguration
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -47,7 +47,15 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса для этого метода.
+В тело запроса добавьте параметры в формате JSON.
+
+В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|DeviceEnrollmentNotificationConfigurations|Коллекция объектов [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|Пока не задокументировано.|
+
+
 
 ## <a name="response"></a>Ответ
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
@@ -57,7 +65,29 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/createEnrollmentNotificationConfiguration
+POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/createEnrollmentNotificationConfiguration
+
+Content-type: application/json
+Content-length: 586
+
+{
+  "deviceEnrollmentNotificationConfigurations": [
+    {
+      "@odata.type": "#microsoft.graph.deviceEnrollmentConfiguration",
+      "id": "df13d8b9-d8b9-df13-b9d8-13dfb9d813df",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "priority": 8,
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "version": 7,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "deviceEnrollmentConfigurationType": "limit"
+    }
+  ]
+}
 ```
 
 ### <a name="response"></a>Отклик

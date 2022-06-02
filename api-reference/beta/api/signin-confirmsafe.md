@@ -1,32 +1,32 @@
 ---
 title: 'signIn: confirmSafe'
-description: Позволяет пометить Azure AD входа как безопасные для защиты Azure AD идентификации.
+description: Разрешить администраторам пометить Azure AD входа как безопасные для защиты Azure AD идентификации.
 author: besiler
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 960d5312a409a4975d82152c8ded0b4e99a8269d
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 90302029198358d0eaeb0a816160b966909b7923
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65212710"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858419"
 ---
 # <a name="signin-confirmsafe"></a>signIn: confirmSafe
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Позволяет администраторам пометить событие Azure AD входа в журналы как безопасное. Администраторы могут пометить события как безопасные, помеченные как рискованные с помощью защиты Azure AD идентификации, или пометить события без метки как безопасные.
+Разрешите администраторам пометить событие Azure AD входа в журналы как безопасное. Администраторы могут пометить события, помеченные как рискованные, Azure AD защиты идентификации как безопасные, или пометить события без метки как безопасные. Дополнительные сведения об анализе рисков защиты идентификации см. в [статье "Как исследовать риски"](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|IdentityRiskyUser.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|IdentityRiskyUser.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|IdentityRiskyUser.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|IdentityRiskEvent.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ POST /auditLogs/signIns/confirmSafe
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|requestIds|Коллекция объектов string|Идентификаторы событий входа, которые должны быть помечены как безопасные для Azure AD идентификации.|
+|requestIds|Коллекция String|Идентификаторы событий входа, которые должны быть помечены как безопасные для Azure AD идентификации.|
 
 
 

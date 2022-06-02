@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7674843208283c91103b257c5f942f006511403f
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 0765838967c1c6f3a1608dbbae32eca21206fab9
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65202022"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858018"
 ---
 # <a name="manageddevice-resource-type"></a>Тип ресурса managedDevice
 
@@ -61,12 +61,13 @@ ms.locfileid: "65202022"
 |[Отключение действия](../api/intune-devices-manageddevice-disable.md)|Нет|Н/Д|
 |[повторное действие](../api/intune-devices-manageddevice-reenable.md)|Нет|Н/Д|
 |[Действие moveDevicesToOU](../api/intune-devices-manageddevice-movedevicestoou.md)|Нет|Н/Д|
+|[Действие removeDeviceFirmwareConfigurationInterfaceManagement](../api/intune-devices-manageddevice-removedevicefirmwareconfigurationinterfacemanagement.md)|Нет|Н/Д|
 |[Функция getOemWarranty](../api/intune-devices-manageddevice-getoemwarranty.md)|[oemWarranty](../resources/intune-devices-oemwarranty.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор устройства. Это свойство доступно только для чтения.|
+|id|Строка|Уникальный идентификатор устройства. Это свойство доступно только для чтения.|
 |userId|String|Уникальный идентификатор пользователя, связанного с устройством. Это свойство доступно только для чтения.|
 |deviceName|String|Имя устройства. Это свойство доступно только для чтения.|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|Подробные сведения об устройстве.  Включает такие сведения, как место в хранилище, производитель, серийный номер и т. д. Это свойство доступно только для чтения.|
@@ -111,7 +112,7 @@ ms.locfileid: "65202022"
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время истечения льготного периода соответствия устройств. Это свойство доступно только для чтения.|
 |serialNumber|String|SerialNumber. Это свойство доступно только для чтения.|
 |phoneNumber|String|Телефон номер устройства. Это свойство доступно только для чтения.|
-|androidSecurityPatchLevel|String|Уровень исправления для системы безопасности Android. Это свойство доступно только для чтения.|
+|androidSecurityPatchLevel|String|Android уровня исправления безопасности. Это свойство доступно только для чтения.|
 |userDisplayName|String|Отображаемое имя пользователя. Это свойство доступно только для чтения.|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|Функции, включенные клиентом ConfigrMgr. Это свойство доступно только для чтения.|
 |wiFiMacAddress|String|Wi-Fi MAC. Это свойство доступно только для чтения.|
@@ -126,15 +127,15 @@ ms.locfileid: "65202022"
 |retireAfterDateTime|DateTimeOffset|Указывает время после автоматического прекращения использования устройства из-за запланированного действия. Это свойство доступно только для чтения.|
 |usersLoggedOn|[коллекция loggedOnUser](../resources/intune-devices-loggedonuser.md)|Указывает последний вошед в систему пользователей устройства. Это свойство доступно только для чтения.|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Сообщает dateTime, где задано значение preferMdmOverGroupPolicy.  Если этот параметр задано, Intune MDM переопределит групповая политика параметров в случае конфликта. Только для чтения. Это свойство доступно только для чтения.|
-|autopilotEnrolled|Логическое|Сообщает, зарегистрировано ли управляемое устройство с помощью автоматического пилотного развертывания. Это свойство доступно только для чтения.|
-|requireUserEnrollmentApproval|Логическое|Сообщает, является ли управляемое устройство iOS регистрацией утверждения пользователя. Это свойство доступно только для чтения.|
+|autopilotEnrolled|Boolean|Сообщает, зарегистрировано ли управляемое устройство с помощью автоматического пилотного развертывания. Это свойство доступно только для чтения.|
+|requireUserEnrollmentApproval|Boolean|Сообщает, является ли управляемое устройство iOS регистрацией утверждения пользователя. Это свойство доступно только для чтения.|
 |managementCertificateExpirationDate|DateTimeOffset|Сообщает дату окончания срока действия сертификата управления устройствами. Это свойство доступно только для чтения.|
 |Iccid|Строка|Интегрированный идентификатор карты канала — это уникальный идентификационный номер SIM-карты. Это свойство доступно только для чтения.|
-|udid|Строка|Уникальный идентификатор устройства для устройств iOS и macOS. Это свойство доступно только для чтения.|
-|Идентификаторы roleScopeTagId|Коллекция String|Список идентификаторов тегов области для данного экземпляра устройства.|
+|udid|Строка|Уникальный идентификатор устройства для iOS macOS устройств. Это свойство доступно только для чтения.|
+|Идентификаторы roleScopeTagId|Коллекция строк|Список идентификаторов тегов области для данного экземпляра устройства.|
 |windowsActiveMalwareCount|Int32|Количество активных вредоносных программ для этого устройства Windows. Это свойство доступно только для чтения.|
 |windowsRemediatedMalwareCount|Int32|Число исправленных вредоносных программ для этого устройства Windows. Это свойство доступно только для чтения.|
-|notes|String|Заметки об устройстве, созданном ИТ-администратором|
+|notes|String|Заметки об устройстве, созданном ИТ-Администратор|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Состояние работоспособности клиента Configuration Manager, допустимое только для устройств, управляемых агентом MDM или ConfigMgr|
 |configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Сведения о клиенте Configuration Manager, допустимые только для устройств, управляемых, управляемых duel или три управляемых агентом ConfigMgr|
 |EthernetMacAddress|Строка|Ethernet MAC. Это свойство доступно только для чтения.|
@@ -146,9 +147,9 @@ ms.locfileid: "65202022"
 |skuNumber|Int32|Номер SKU устройства, см. также: https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo. Допустимые значения от 0 до 2147483647. Это свойство доступно только для чтения.|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Функции управления устройствами. Возможные значения: `none`, `microsoftManagedDesktop`.|
 |chromeOSDeviceInfo|[Коллекция chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md)|Список свойств устройства ChromeOS.|
-|enrollmentProfileName|String|Имя профиля регистрации, назначенного устройству. Значение по умолчанию — пустая строка, указывающая, что профиль регистрации не был задан. Это свойство доступно только для чтения.|
+|enrollmentProfileName|Строка|Имя профиля регистрации, назначенного устройству. Значение по умолчанию — пустая строка, указывающая, что профиль регистрации не был задан. Это свойство доступно только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |detectedApps|Коллекция [detectedApp](../resources/intune-devices-detectedapp.md)|Все приложения, установленные в настоящее время на устройстве|

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dea0680c1c1dac260fc195fbf23449e2283eb0ec
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: cb342337ab17db43d75bf84529c43e1ed496369c
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65210905"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858305"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>Перечисление объектов androidDeviceOwnerGeneralDeviceConfigurations
 
@@ -27,8 +27,8 @@ ms.locfileid: "65210905"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,7 +50,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного `200 OK` выполнения этот метод возвращает код отклика и коллекцию объектов [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10859
+Content-Length: 10911
 
 {
   "value": [
@@ -319,7 +319,8 @@ Content-Length: 10859
       "workProfilePasswordMinimumSymbolCharacters": 10,
       "workProfilePasswordPreviousPasswordCountToBlock": 15,
       "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
-      "workProfilePasswordRequiredType": "required"
+      "workProfilePasswordRequiredType": "required",
+      "workProfilePasswordRequireUnlock": "daily"
     }
   ]
 }

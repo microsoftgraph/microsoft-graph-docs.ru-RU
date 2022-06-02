@@ -1,32 +1,32 @@
 ---
 title: 'signIn: confirmCompromised'
-description: Позволяет пометить Azure AD входа как рискованные для Azure AD идентификации.
+description: Разрешить администраторам пометить Azure AD входа как рискованные для Azure AD идентификации.
 author: besiler
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 226a9986402ce315b77472ea1f37062f9e1f6753
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 75e0f6e4ffc85f54a54c964ec72e56d6703ac751
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65212838"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858270"
 ---
 # <a name="signin-confirmcompromised"></a>signIn: confirmCompromised
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Позволяет администраторам пометить событие в журнале Azure AD входа как рискованные. События, помеченные администратором как рискованные, немедленно помечаются как Azure AD защиты идентификации, переопределяя предыдущие состояния риска. Администраторы могут подтвердить, что события, помеченные как рискованные, Azure AD защита идентификации на самом деле являются рискованными, или они могут пометить события без метки как рискованные. 
+Разрешить администраторам пометить событие в журнале Azure AD входа как рискованные. События, помеченные администратором как рискованные, немедленно помечаются как Azure AD защиты идентификации, переопределяя предыдущие состояния риска. Администраторы могут подтвердить, что события, помеченные как рискованные, Azure AD защита идентификации на самом деле являются рискованными, и переместить их в группу с высоким риском. Дополнительные сведения об анализе рисков защиты идентификации см. в [статье "Как исследовать риски"](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|IdentityRiskyUser.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|IdentityRiskyUser.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|IdentityRiskyUser.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|IdentityRiskEvent.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ POST /auditLogs/signIns/confirmCompromised
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|requestIds|Коллекция объектов string|Идентификаторы событий входа, которые должны быть помечены как рискованные для Azure AD идентификации.|
+|requestIds|Коллекция String|Идентификаторы событий входа, которые должны быть помечены как рискованные для Azure AD идентификации.|
 
 
 

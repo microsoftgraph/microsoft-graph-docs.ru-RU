@@ -5,30 +5,30 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2d00636e9ef2f79202a87647d46b4ff64f10bd78
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: b5dca460eb3e136e470daed06b3a855d5230ce70
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61339353"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857766"
 ---
 # <a name="update-userexperienceanalyticsbatteryhealthmodelperformance"></a>Обновление userExperienceAnalyticsBatteryHealthModelPerformance
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [userExperienceAnalyticsBatteryHealthModelPerformance.](../resources/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance.md)
+Обновление свойств объекта [userExperienceAnalyticsBatteryHealthModelPerformance](../resources/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -47,24 +47,25 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthModelPerformance/{us
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для [объекта userExperienceAnalyticsBatteryHealthModelPerformance.](../resources/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance.md)
+В тексте запроса добавьте представление объекта [userExperienceAnalyticsBatteryHealthModelPerformance в формате](../resources/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance.md) JSON.
 
-В следующей таблице показаны свойства, необходимые при создании [пользователяExperienceAnalyticsBatteryHealthModelPerformance.](../resources/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance.md)
+В следующей таблице показаны свойства, необходимые при создании [объекта userExperienceAnalyticsBatteryHealthModelPerformance](../resources/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта производительности модели работоспособности модели работоспособности пользовательской аналитики.|
-|activeDevices|Int32|Количество активных устройств для этой модели. Допустимые значения 2147483648 2147483647|
+|id|Строка|Уникальный идентификатор объекта производительности модели работоспособности батареи аналитики пользовательского интерфейса.|
+|activeDevices|Int32|Количество активных устройств для этой модели. Допустимые значения — 2147483648 2147483647|
 |model|String|Имя модели устройства.|
-|manufacturer|String|Имя производителя устройств.|
-|averageMaxCapacityPercentage|Int32|Значение максимальной емкости для всех устройств данной модели. Максимальная емкость измеряет полную мощность заряда по сравнению с проектной мощностью для аккумуляторов устройства.. Допустимые значения 2147483648 2147483647|
-|averageEstimatedRuntimeInMinutes|Int32|Для всех устройств данной модели имеется в виду предполагаемое время запуска на полную плату. Единица в минутах. Допустимые значения 2147483648 2147483647|
-|averageBatteryAgeInDays|Int32|Время работы от батареи для всех устройств данной модели в клиенте. Единица в днях. Допустимые значения 2147483648 2147483647|
+|manufacturer|String|Имя производителя устройства.|
+|averageMaxCapacityPercentage|Int32|Среднее значение максимальной емкости для всех устройств данной модели. Максимальная емкость измеряет полную стоимость и емкость конструктора для аккумуляторов устройства. Допустимые значения — 2147483648 2147483647|
+|averageEstimatedRuntimeInMinutes|Int32|Среднее значение предполагаемых сред выполнения при полной оплате для всех устройств данной модели. Единица в минутах. Допустимые значения — 2147483648 2147483647|
+|averageBatteryAgeInDays|Int32|Среднее время заряда батареи для всех устройств данной модели в клиенте. Единица в днях. Допустимые значения — 2147483648 2147483647|
+|modelBatteryHealthScore|Int32|Взвешенного среднего значения максимальной оценки емкости модели и оценки времени выполнения. Значения в диапазоне от 0 до 100. Допустимые значения — 2147483648 2147483647|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [userExperienceAnalyticsBatteryHealthModelPerformance](../resources/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance.md) в тексте ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и обновленный объект [userExperienceAnalyticsBatteryHealthModelPerformance](../resources/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -73,7 +74,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthModelPerformance/{us
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBatteryHealthModelPerformance/{userExperienceAnalyticsBatteryHealthModelPerformanceId}
 Content-type: application/json
-Content-length: 300
+Content-length: 333
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthModelPerformance",
@@ -82,7 +83,8 @@ Content-length: 300
   "manufacturer": "Manufacturer value",
   "averageMaxCapacityPercentage": 12,
   "averageEstimatedRuntimeInMinutes": 0,
-  "averageBatteryAgeInDays": 7
+  "averageBatteryAgeInDays": 7,
+  "modelBatteryHealthScore": 7
 }
 ```
 
@@ -91,7 +93,7 @@ Content-length: 300
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 349
+Content-Length: 382
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthModelPerformance",
@@ -101,7 +103,8 @@ Content-Length: 349
   "manufacturer": "Manufacturer value",
   "averageMaxCapacityPercentage": 12,
   "averageEstimatedRuntimeInMinutes": 0,
-  "averageBatteryAgeInDays": 7
+  "averageBatteryAgeInDays": 7,
+  "modelBatteryHealthScore": 7
 }
 ```
 

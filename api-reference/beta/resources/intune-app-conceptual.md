@@ -1,15 +1,15 @@
 ---
-title: Защита данных приложений компании с помощью Microsoft Intune - API Graph Microsoft Graph
-description: Списки microsoft Graph API для конечных точек Intune (REST), которые управляют приложениями и их политиками для организации-клиента.
+title: Защита данных приложения компании с помощью Microsoft Intune Microsoft API Graph
+description: Список microsoft API Graph для Intune конечных точек (REST), которые управляют приложениями и их политиками для организации клиента.
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 1ce759c274bf2762eebeb3a4784162a6a9fe364a
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 5615477cf9c8464dfbf6dc439a8364dc3754eb6c
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63367652"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857619"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -21,13 +21,13 @@ ms.locfileid: "63367652"
 
 Политики защиты приложений в Microsoft Intune помогают защитить корпоративные данные и предотвратить потерю данных.
 
-Политики защиты приложений в Intune используются для защиты корпоративных данных. Так как политики защиты приложений Intune можно использовать независимо от любого решения управления мобильными устройствами (MDM), его можно использовать для защиты данных вашей компании с помощью или без регистрации устройств в решении управления устройствами. Внедрив политики уровня приложения, вы можете ограничить доступ к корпоративным ресурсам и оставить данные в поле зрения ИТ-отдела.
+Политики защиты приложений в Intune используются для защиты корпоративных данных. Так Intune политики защиты приложений можно использовать независимо от любого решения по управлению мобильными устройствами (MDM), его можно использовать для защиты данных компании с помощью регистрации устройств в решении для управления устройствами или без них. Внедрив политики уровня приложения, вы можете ограничить доступ к корпоративным ресурсам и оставить данные в поле зрения ИТ-отдела.
 
 Для управления политиками защиты приложений в Intune используются перечисленные ниже ресурсы Graph.
 
-- [Режим регистрации владельца android-устройств](intune-androidforwork-androiddeviceownerenrollmentmode.md)
+- [Android регистрации владельца устройства](intune-androidforwork-androiddeviceownerenrollmentmode.md)
 - [Профиль регистрации владельца устройства Android](intune-androidforwork-androiddeviceownerenrollmentprofile.md)
-- [Тип маркера регистрации владельцев устройств Android](intune-androidforwork-androiddeviceownerenrollmenttokentype.md)
+- [Android типа маркера регистрации владельца устройства](intune-androidforwork-androiddeviceownerenrollmenttokentype.md)
 - [Код компании регистрации Android](intune-androidforwork-androidenrollmentcompanycode.md)
 - [Приложение Android for Work](intune-apps-androidforworkapp.md)
 - [Схема конфигурации приложения Android for Work](intune-androidforwork-androidforworkappconfigurationschema.md)
@@ -49,12 +49,12 @@ ms.locfileid: "63367652"
 - [Схема конфигурации управляемого приложения магазина для Android](intune-androidforwork-androidmanagedstoreappconfigurationschema.md)
 - [Элемент схемы конфигурации управляемого приложения магазина Android](intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)
 - [Тип данных для элемента схемы конфигурации управляемого приложения магазина Android](intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)
-- [Трек приложения для управляемых магазинов Android](intune-apps-androidmanagedstoreapptrack.md)
-- [Android управляемый магазин веб-приложение](intune-apps-androidmanagedstorewebapp.md)
+- [Android управляемого магазина](intune-apps-androidmanagedstoreapptrack.md)
+- [Android веб-приложения управляемого магазина](intune-apps-androidmanagedstorewebapp.md)
 - [Минимальная версия операционной системы Android](intune-apps-androidminimumoperatingsystem.md)
 - [Действие разрешения Android](intune-apps-androidpermissionaction.md)
 - [Тип действия разрешения Android](intune-apps-androidpermissionactiontype.md)
-- [Применимость профилей Android](intune-apps-androidprofileapplicability.md)
+- [Android профиля](intune-apps-androidprofileapplicability.md)
 - [Приложение из магазина Android](intune-apps-androidstoreapp.md)
 - [Тип безопасности Wi-Fi Aosp](intune-androidforwork-aospwifisecuritytype.md)
 - [Элемент параметра конфигурации приложения](intune-apps-appconfigurationsettingitem.md)
@@ -78,13 +78,14 @@ ms.locfileid: "63367652"
 - [Результат действия "Отзыв лицензии для приложения iOS, приобретенного по программе VPP"](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [Электронная книга VPP для iOS](intune-books-iosvppebook.md)
 - [Назначение электронной книги VPP для iOS](intune-books-iosvppebookassignment.md)
+- [iOSi pad o s web clip](intune-apps-iosipadoswebclip.md)
 - [Пара "ключ-значение"](intune-androidforwork-keyvaluepair.md)
-- [macOS dmg app](intune-apps-macosdmgapp.md)
-- [macOS включено приложение](intune-apps-macosincludedapp.md)
+- [macOS dmg](intune-apps-macosdmgapp.md)
+- [macOS включенного приложения](intune-apps-macosincludedapp.md)
 - [Бизнес-приложение macOS](intune-apps-macoslobapp.md)
 - [Дочернее бизнес-приложение для macOS](intune-apps-macoslobchildapp.md)
-- [приложение mdatp macOS](intune-apps-macosmdatpapp.md)
-- [microsoft edge app macOS](intune-apps-macosmicrosoftedgeapp.md)
+- [macOS mdatp](intune-apps-macosmdatpapp.md)
+- [macOS Microsoft Edge](intune-apps-macosmicrosoftedgeapp.md)
 - [Минимальная версия операционной системы macOS](intune-apps-macosminimumoperatingsystem.md)
 - [Набор приложений Office для macOS](intune-apps-macosofficesuiteapp.md)
 - [Приложение macOS, приобретенное по программе VPP](intune-apps-macosvppapp.md)
@@ -107,7 +108,7 @@ ms.locfileid: "63367652"
 - [Управляемое приложение из магазина iOS](intune-apps-managediosstoreapp.md)
 - [Управляемое мобильное бизнес-приложение](intune-apps-managedmobilelobapp.md)
 - [Тип ключа конфигурации приложения MDM](intune-apps-mdmappconfigkeytype.md)
-- [Microsoft edge channel](intune-apps-microsoftedgechannel.md)
+- [Microsoft Edge Channel](intune-apps-microsoftedgechannel.md)
 - [Приложение Microsoft Store для бизнеса](intune-apps-microsoftstoreforbusinessapp.md)
 - [Отдельное приложение из Microsoft Store для бизнеса](intune-apps-microsoftstoreforbusinesscontainedapp.md)
 - [Тип лицензии Microsoft Store для бизнеса](intune-apps-microsoftstoreforbusinesslicensetype.md)
@@ -116,17 +117,17 @@ ms.locfileid: "63367652"
 - [Содержимое мобильного приложения](intune-apps-mobileappcontent.md)
 - [Файл содержимого мобильного приложения](intune-apps-mobileappcontentfile.md)
 - [Состояние отправки файла содержимого мобильного приложения](intune-apps-mobileappcontentfileuploadstate.md)
-- [Зависимость мобильных приложений](intune-apps-mobileappdependency.md)
-- [Тип зависимости от мобильных приложений](intune-apps-mobileappdependencytype.md)
+- [Зависимость мобильного приложения](intune-apps-mobileappdependency.md)
+- [Тип зависимости мобильного приложения](intune-apps-mobileappdependencytype.md)
 - [Состояние установки мобильных приложений](intune-apps-mobileappinstallstatus.md)
 - [Сводка по установке мобильных приложений](intune-apps-mobileappinstallsummary.md)
 - [Назначение конфигурации подготовки мобильных приложений группе](intune-apps-mobileappprovisioningconfiggroupassignment.md)
 - [Состояние публикации мобильного приложения](intune-apps-mobileapppublishingstate.md)
-- [Отношение к мобильным приложениям](intune-apps-mobileapprelationship.md)
-- [Состояние отношения мобильных приложений](intune-apps-mobileapprelationshipstate.md)
-- [Тип отношения мобильных приложений](intune-apps-mobileapprelationshiptype.md)
-- [Supersedence мобильного приложения](intune-apps-mobileappsupersedence.md)
-- [Тип supersedence мобильного приложения](intune-apps-mobileappsupersedencetype.md)
+- [Связь между мобильными приложениями](intune-apps-mobileapprelationship.md)
+- [Состояние связи мобильного приложения](intune-apps-mobileapprelationshipstate.md)
+- [Тип связи мобильного приложения](intune-apps-mobileapprelationshiptype.md)
+- [Замена мобильного приложения](intune-apps-mobileappsupersedence.md)
+- [Тип замены мобильного приложения](intune-apps-mobileappsupersedencetype.md)
 - [Отдельное мобильное приложение](intune-apps-mobilecontainedapp.md)
 - [Мобильное бизнес-приложение](intune-apps-mobilelobapp.md)
 - [Состояние проверки клиента Office](intune-cirrus-officeclientcheckinstatus.md)
@@ -152,39 +153,39 @@ ms.locfileid: "63367652"
 - [Оператор определения бизнес-приложения Win32](intune-apps-win32lobappdetectionoperator.md)
 - [Определение файловой системы бизнес-приложения Win32](intune-apps-win32lobappfilesystemdetection.md)
 - [Тип определения файловой системы бизнес-приложения Win32](intune-apps-win32lobappfilesystemdetectiontype.md)
-- [Тип операции файловой системы приложения Win32 LOB](intune-apps-win32lobappfilesystemoperationtype.md)
-- [Требование системы файлов приложения Win32 LOB](intune-apps-win32lobappfilesystemrequirement.md)
-- [Правило файловой системы приложения Win32 LOB](intune-apps-win32lobappfilesystemrule.md)
+- [Тип операции файловой системы бизнес-приложения Win32](intune-apps-win32lobappfilesystemoperationtype.md)
+- [Требование файловой системы бизнес-приложения Win32](intune-apps-win32lobappfilesystemrequirement.md)
+- [Правило файловой системы бизнес-приложения Win32](intune-apps-win32lobappfilesystemrule.md)
 - [Интерфейс установки бизнес-приложения Win32](intune-apps-win32lobappinstallexperience.md)
 - [Информация msi бизнес-приложения Win32](intune-apps-win32lobappmsiinformation.md)
 - [Тип пакета msi бизнес-приложения Win32](intune-apps-win32lobappmsipackagetype.md)
 - [Определение скрипта power shell бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptdetection.md)
-- [Тип обнаружения скрипта скрипта power shell приложения Win32 LOB](intune-apps-win32lobapppowershellscriptdetectiontype.md)
-- [Требование скрипта power shell приложения Win32 LOB](intune-apps-win32lobapppowershellscriptrequirement.md)
-- [Правило скрипта power shell приложения Win32 LOB](intune-apps-win32lobapppowershellscriptrule.md)
-- [Тип правила работы скрипта power shell приложения Win32 LOB](intune-apps-win32lobapppowershellscriptruleoperationtype.md)
+- [Тип обнаружения скрипта Power Shell бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptdetectiontype.md)
+- [Требование скрипта Power Shell бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptrequirement.md)
+- [Правило скрипта Power Shell бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptrule.md)
+- [Тип операции правила скрипта power shell бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptruleoperationtype.md)
 - [Определение кода продукта бизнес-приложения Win32](intune-apps-win32lobappproductcodedetection.md)
-- [Правило кода продукта приложения Win32 LOB](intune-apps-win32lobappproductcoderule.md)
+- [Правило кода продукта бизнес-приложения Win32](intune-apps-win32lobappproductcoderule.md)
 - [Определение реестра бизнес-приложения Win32](intune-apps-win32lobappregistrydetection.md)
 - [Тип определения реестра бизнес-приложения Win32](intune-apps-win32lobappregistrydetectiontype.md)
-- [Требование реестра приложений Win32 LOB](intune-apps-win32lobappregistryrequirement.md)
-- [Правило реестра приложений Win32 LOB](intune-apps-win32lobappregistryrule.md)
-- [Тип действия правила реестра приложений Win32 LOB](intune-apps-win32lobappregistryruleoperationtype.md)
-- [Требование приложения Win32 LOB](intune-apps-win32lobapprequirement.md)
-- [Поведение перезапуска приложения Win32 LOB](intune-apps-win32lobapprestartbehavior.md)
+- [Требование реестра бизнес-приложений Win32](intune-apps-win32lobappregistryrequirement.md)
+- [Правило реестра бизнес-приложений Win32](intune-apps-win32lobappregistryrule.md)
+- [Тип операции правила реестра бизнес-приложений Win32](intune-apps-win32lobappregistryruleoperationtype.md)
+- [Требование бизнес-приложения Win32](intune-apps-win32lobapprequirement.md)
+- [Поведение перезапуска бизнес-приложения Win32](intune-apps-win32lobapprestartbehavior.md)
 - [Код возврата бизнес-приложения Win32](intune-apps-win32lobappreturncode.md)
 - [Тип кода возврата бизнес-приложения Win32](intune-apps-win32lobappreturncodetype.md)
-- [Правило приложения Win32 LOB](intune-apps-win32lobapprule.md)
-- [Оператор правил приложения Win32 LOB](intune-apps-win32lobappruleoperator.md)
-- [Тип правила приложения Win32 LOB](intune-apps-win32lobappruletype.md)
+- [Правило бизнес-приложения Win32](intune-apps-win32lobapprule.md)
+- [Оператор правила бизнес-приложения Win32](intune-apps-win32lobappruleoperator.md)
+- [Тип правила бизнес-приложения Win32](intune-apps-win32lobappruletype.md)
 - [Windows AppX](intune-apps-windowsappx.md)
 - [Архитектура Windows](intune-apps-windowsarchitecture.md)
 - [Тип устройства Windows](intune-apps-windowsdevicetype.md)
-- [Windows microsoft edge app](intune-apps-windowsmicrosoftedgeapp.md)
+- [Windows Microsoft Edge](intune-apps-windowsmicrosoftedgeapp.md)
 - [Минимальная версия операционной системы Windows](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
-- [Windows конфигурации клиента office](intune-cirrus-windowsofficeclientconfiguration.md)
-- [Windows конфигурации безопасности клиента office](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
+- [Windows конфигурации клиента Office](intune-cirrus-windowsofficeclientconfiguration.md)
+- [Windows конфигурации безопасности клиента Office](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
 - [Информация о пакете Windows](intune-apps-windowspackageinformation.md)
 - [Windows Phone 8.1 AppX](intune-apps-windowsphone81appx.md)
 - [AppX-пакет Windows Phone 8.1](intune-apps-windowsphone81appxbundle.md)
@@ -193,3 +194,4 @@ ms.locfileid: "63367652"
 - [Приложение из магазина Windows](intune-apps-windowsstoreapp.md)
 - [Windows Universal AppX](intune-apps-windowsuniversalappx.md)
 - [Отдельное универсальное приложение Windows AppX](intune-apps-windowsuniversalappxcontainedapp.md)
+- [Windows веб-приложения](intune-apps-windowswebapp.md)

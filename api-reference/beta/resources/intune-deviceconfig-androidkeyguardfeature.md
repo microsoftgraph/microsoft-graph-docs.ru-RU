@@ -1,38 +1,42 @@
 ---
-title: тип enum androidKeyguardFeature
-description: Функция keyguard Android.
+title: Тип перечисления androidKeyguardFeature
+description: Android keyguard.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 61995572516ee1ea9eabfea9e868bb775e085ba9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c4961ed70921aa8b7c7f5756299c74ae4d9c2928
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59101753"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857591"
 ---
-# <a name="androidkeyguardfeature-enum-type"></a>тип enum androidKeyguardFeature
+# <a name="androidkeyguardfeature-enum-type"></a>Тип перечисления androidKeyguardFeature
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Функция keyguard Android.
+Android keyguard.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Не настроен; это значение игнорируется.|
-|камера|1|Использование камеры на защищенных экранах keyguard.|
+|notConfigured|0|Не настроено; Это значение игнорируется.|
+|Камеры|1|Камера использования на защищенных экранах keyguard.|
 |уведомления|2|Отображение уведомлений на защищенных экранах keyguard.|
-|unredactedNotifications|3|Отображение ненадежных уведомлений на защищенных экранах keyguard.|
-|trustAgents|4 |Состояние агента доверия, когда на защищенных экранах keyguard.|
-|отпечаток пальца|5 |Использование датчика отпечатков пальцев на защищенных экранах keyguard.|
-|remoteInput|6 |Запись текста уведомления на защищенных экранах keyguard.|
+|unredactedNotifications|3|Отображение неотвещенных уведомлений на защищенных экранах keyguard.|
+|trustAgents|4|Состояние доверенного агента на защищенных экранах keyguard.|
+|Отпечатков пальцев|5|Использование датчика отпечатков пальцев на защищенных экранах keyguard.|
+|remoteInput|6 |Текст уведомления, отображающийся на защищенных экранах keyguard.|
 |allFeatures|7 |Все функции keyguard на защищенных экранах keyguard.|
+|Лицо|8 |Проверка подлинности лиц на защищенных экранах keyguard.|
+|Iris|9 |Проверка подлинности Iris на защищенных экранах keyguard.|
+|Биометрия|10|Вся биометрическая проверка подлинности на защищенных экранах keyguard.|
+
 
 
 

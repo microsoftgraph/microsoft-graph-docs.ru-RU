@@ -1,35 +1,35 @@
 ---
-title: Get windows10DeviceFirmwareConfigurationInterface
-description: Чтение свойств и связей объекта Windows10DeviceFirmwareConfigurationInterface.
+title: Получение объекта windows10DeviceFirmwareConfigurationInterface
+description: Чтение свойств и связей объекта windows10DeviceFirmwareConfigurationInterface.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ccde1d108601672ca3326943e71c005c0e530315
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cb1cdfe817474d5fd30206b5c3a20b78774aab3c
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59048600"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857850"
 ---
-# <a name="get-windows10devicefirmwareconfigurationinterface"></a>Get windows10DeviceFirmwareConfigurationInterface
+# <a name="get-windows10devicefirmwareconfigurationinterface"></a>Получение объекта windows10DeviceFirmwareConfigurationInterface
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей [объекта Windows10DeviceFirmwareConfigurationInterface.](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md)
+Чтение свойств и связей объекта [windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -48,14 +48,14 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект Windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) в теле отклика.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и объект [windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1670
+Content-Length: 2051
 
 {
   "value": {
@@ -114,10 +114,23 @@ Content-Length: 1670
     "bootFromExternalMedia": "enabled",
     "bootFromBuiltInNetworkAdapters": "enabled",
     "windowsPlatformBinaryTable": "enabled",
-    "simultaneousMultiThreading": "enabled"
+    "simultaneousMultiThreading": "enabled",
+    "frontCamera": "enabled",
+    "rearCamera": "enabled",
+    "infraredCamera": "enabled",
+    "microphone": "enabled",
+    "bluetooth": "enabled",
+    "wirelessWideAreaNetwork": "enabled",
+    "nearFieldCommunication": "enabled",
+    "wiFi": "enabled",
+    "usbTypeAPort": "enabled",
+    "sdCard": "enabled",
+    "wakeOnLAN": "enabled",
+    "wakeOnPower": "enabled"
   }
 }
 ```
+
 
 
 

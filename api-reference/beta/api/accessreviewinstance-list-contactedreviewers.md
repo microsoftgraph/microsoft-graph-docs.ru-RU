@@ -1,32 +1,32 @@
 ---
-title: Список contactedReviewers
-description: Получите рецензентов, которые получили уведомления для экземпляра проверки доступа.
+title: Перечисление объектов contactedReviewers
+description: Получение рецензентов для экземпляра проверки доступа.
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3b683a39573dd0d895d08a1998dac278d1946938
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 20ec4d3f0a4422a1156d49891c182acb43054678
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722130"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857738"
 ---
-# <a name="list-contactedreviewers"></a>Список contactedReviewers
+# <a name="list-contactedreviewers"></a>Перечисление объектов contactedReviewers
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите рецензентов, которые получили уведомления для [экземпляра проверки доступа](../resources/accessreviewinstance.md). Рецензенты представлены объектом [accessReviewReviewer](../resources/accessreviewreviewer.md) . Возвращается список нулевых или более объектов, включая все вложенные свойства.
+Получение рецензентов для экземпляра проверки [доступа](../resources/accessreviewinstance.md) независимо от того, получили ли они уведомление. Рецензенты представлены объектом [accessReviewReviewer](../resources/accessreviewreviewer.md) . Возвращается список из нуля или более объектов, включая все их вложенные свойства.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,9 +39,9 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$select`параметры `$filter`запроса OData `$orderBy``$skip`и `$top` OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select`параметры `$filter`запроса , `$orderBy`, и `$skip``$top` OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-Размер страницы по умолчанию для этого API — 100 **объектов accessReviewReviewer** . Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
+Размер страницы по умолчанию для этого API — 100 **объектов accessReviewReviewer** . Чтобы повысить эффективность и избежать времени ожидания из-за больших результирующих наборов, примените разбиение на страницы с помощью `$skip` `$top` параметров запроса и параметров запроса. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -53,7 +53,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы этот метод возвращает код ответа и коллекцию [объектов accessReviewReviewer](../resources/accessreviewreviewer.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [accessReviewReviewer](../resources/accessreviewreviewer.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
