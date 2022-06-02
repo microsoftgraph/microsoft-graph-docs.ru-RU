@@ -1,24 +1,24 @@
 ---
-title: Получить чат между пользователем и teamsApp
-description: Извлечение чата один на один между указанным пользователем и Teams приложением.
+title: Получение чата между пользователем и teamsApp
+description: Получение чата "один к одному" между указанным пользователем и Teams приложения.
 author: AkJo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6648e4a808c587a0cabfc3e63699027cee7a1dd8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a1459d3d91606ec0cedcfe57627ac0ed60ea2bb0
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62102033"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857724"
 ---
-# <a name="get-chat-between-user-and-teamsapp"></a>Получить чат между пользователем и teamsApp
+# <a name="get-chat-between-user-and-teamsapp"></a>Получение чата между пользователем и teamsApp
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Извлечение чата](../resources/chat.md) указанного [пользователя](../resources/user.md) и [Teams приложения.](../resources/teamsapp.md)
+Получение [чата](../resources/chat.md) указанного [пользователя и](../resources/user.md) Teams [приложения](../resources/teamsapp.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "62102033"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,21 +48,19 @@ GET /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installat
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и экземпляр объекта `200 OK` [чата](../resources/chat.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и экземпляр объекта [чата](../resources/chat.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-one-on-one-chats-between-the-specified-user-and-the-teams-app"></a>Пример 1. Список чатов один на один между указанным пользователем и Teams приложением
+### <a name="request"></a>Запрос
 
-#### <a name="request"></a>Запрос
-
-Ниже приведен пример запроса.
+Ниже приведен пример запроса, в котором перечислены чаты "один к одному" между указанным пользователем и Teams приложения.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -100,9 +98,9 @@ GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/
 ---
 
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

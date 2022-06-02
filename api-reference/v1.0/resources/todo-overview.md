@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: e24dfe413f46c4d8e4cc65dd6327ff17ef8d7927
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f5a1c64039f1ba2fd77913e76a1c18f4ff48927c
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071863"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821164"
 ---
 # <a name="use-the-microsoft-to-do-api"></a>Использование API Microsoft To Do
 
@@ -24,7 +24,7 @@ ms.locfileid: "59071863"
  
 Прежде чем приступить к работе с API To Do, ознакомьтесь с ресурсами и их связью между собой.
 
-![Объекты API To Do](/graph/images/todo-api-entities.png)
+![Снимок экрана с выделенными объектами API Списка дел. Снимок экрана: перечень списков задач слева, задачи в определенном списке задач по центру и элементы контрольного списка и связанные ресурсы вместе с другими свойствами задач справа.](/graph/images/tasks-api-entities.png)
 
 ## <a name="task-list"></a>Список задач
 
@@ -39,6 +39,13 @@ GET /me/todo/lists
 Объект [todoTask](./todotask.md) представляет задачу, т. е. рабочий или личный элемент, который можно отследить и завершить. Чтобы получить свои задачи из списка задач, выполните следующий HTTP-запрос:
 ``` http
 GET /me/todo/lists/{todoTaskListId}/tasks
+```
+
+## <a name="checklist-item"></a>Элемент контрольного списка 
+
+[ChecklistItem](checklistitem.md) представляет подзадачу в более крупном элементе [todoTask](./todotask.md). **ChecklistItem** позволяет разделить сложную задачу на более удобные задачи меньшего размера. Чтобы получить объект **checklistItem** из задачи, выполните следующий HTTP-запрос.
+``` http
+GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/checklistItems/{checklistItems}
 ```
 
 ## <a name="linked-resource"></a>Связанный ресурс

@@ -5,25 +5,27 @@ ms.localizationpriority: medium
 author: ruoyingl
 ms.prod: workbooks-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: 732e233bf0e110c97415c51695a0358fddecf688
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: f8a76a1212f6a53e3f913391c2d672c3c0bf9142
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365801"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858424"
 ---
 # <a name="add-named-item-formulalocal"></a>Add Named Item FormulaLocal
 
-Пространство имен: microsoft.graph добавляет новое имя в коллекцию заданной области с использованием языкового стандарта пользователя для формулы.
+Пространство имен: microsoft.graph
+
+Добавляет новое имя в определенную коллекцию, применяя языковой стандарт пользователя для формулы.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite, Sites.Read.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Sites.Read.All |
+|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite, Sites.Read.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Sites.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

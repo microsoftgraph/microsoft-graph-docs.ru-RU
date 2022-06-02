@@ -4,12 +4,12 @@ description: Запросы изменений позволяют приложе
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3cb2ae70d84b8eeb2087bebfeae60a95b1e84184
-ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
+ms.openlocfilehash: bb0acf60a44ead08fe779678bd0bcbba53e2b618
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65549528"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819631"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
@@ -111,14 +111,14 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 | :------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Приложения                                                   | Функция [delta](/graph/api/application-delta) ресурса [application](/graph/api/resources/application)                                               |
 | Административные единицы (предварительная версия)                                 | Функция [delta](/graph/api/administrativeunit-delta) (предварительная версия) ресурса [administrativeUnit](/graph/api/resources/administrativeunit)                |
-| Категории заданий                                          | функция [delta](/graph/api/educationcategory-delta) ресурса [educationCategory](/graph/api/resources/educationcategory)                                    |
 | Сообщения чата в канале                                     | Функция [delta](/graph/api/chatmessage-delta) (предварительная версия) ресурса [chatMessage](/graph/api/resources/chatmessage)                                              |
 | Перечисление ролей каталога                                                | Функция [delta](/graph/api/directoryrole-delta) ресурса [directoryObjects](/graph/api/resources/directoryrole) |
 | Элементы на диске\*                                                  | Функция [delta](/graph/api/driveitem-delta) ресурса [driveItem](/graph/api/resources/driveitem)             |
 | Задания образовательных учреждений                                          | функция [delta](/graph/api/educationassignment-delta) ресурса [educationAssignment](/graph/api/resources/educationassignment)                                    |
+| Категории для образовательных учреждений                                           | функция [delta](/graph/api/educationcategory-delta) ресурса [educationCategory](/graph/api/resources/educationcategory)                                    |
 | Классы образовательных учреждений                                              | Функция [delta](/graph/api/educationclass-delta) ресурса [educationClass](/graph/api/resources/educationclass)                                      |
-| Пользователи образовательных учреждений                                                | Функция [delta](/graph/api/educationuser-delta) ресурса [educationUser](/graph/api/resources/educationuser)                                         |
 | Образовательная школа                                              | Функция [delta](/graph/api/educationschool-delta) ресурса [educationSchool](/graph/api/resources/educationschool)                                   |
+| Пользователи образовательных учреждений                                                | Функция [delta](/graph/api/educationuser-delta) ресурса [educationUser](/graph/api/resources/educationuser)                                         |
 | События в представлении (диапазоне дат) основного календаря | Функция [delta](/graph/api/event-delta) ресурса [event](/graph/api/resources/event)                         |
 | Группы                                                         | Функция [delta](/graph/api/group-delta) ресурса [group](/graph/api/resources/group)                         |
 | Элементы списка\*                                                   | Функция [delta](/graph/api/listitem-delta) ресурса [listItem](/graph/api/resources/listitem)             |
@@ -130,8 +130,8 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 | Личные контакты в папке                                  | Функция [delta](/graph/api/contact-delta) ресурса [contact](/graph/api/resources/contact)                   |
 | Элементы Planner\*\* (предварительная версия)                                    | Функция [delta](/graph/api/planneruser-list-delta) (предварительная версия) всего сегмента ресурса [plannerUser](/graph/api/resources/planneruser)                 |
 | Субъекты-службы                                             | Функция [delta](/graph/api/serviceprincipal-delta) ресурса [servicePrincipal](/graph/api/resources/serviceprincipal)                                |
-| Задачи в списке задач                                           | Функция [delta](/graph/api/todotask-delta) ресурса [todoTask](/graph/api/resources/todotask)                                                        |
-| Списки задач                                                     | Функция [delta](/graph/api/todotasklist-delta) ресурса [todoTaskList](/graph/api/resources/todotasklist)                                            |
+| Задачи приложения "Список дел" в списке задач                                     | Функция [delta](/graph/api/todotask-delta) ресурса [todoTask](/graph/api/resources/todotask)                                                        |
+| Списки задач в приложении "Список дел"                                               | Функция [delta](/graph/api/todotasklist-delta) ресурса [todoTaskList](/graph/api/resources/todotasklist)                                            |
 | Пользователи                                                          | Функция [delta](/graph/api/user-delta) ресурса [user](/graph/api/resources/user)                            |
 
 

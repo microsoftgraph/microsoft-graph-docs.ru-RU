@@ -4,12 +4,12 @@ description: 'Пакетная обработка JSON позволяет опт
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 016f096eee9d601f0f178c0fa256c4271d1cd563
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 52c50796722faf51c91b65d65a21b3b495566924
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461382"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819701"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Объединение нескольких запросов в один вызов HTTP с помощью пакетной обработки JSON
 
@@ -201,13 +201,24 @@ Content-Type: application/json
 
 Еще один вариант использования пакетной обработки JSON — обход ограничения на длину URL-адреса. Если предложение фильтра сложное, длина URL-адреса может превышать ограничения, встроенные в браузеры или другие HTTP-клиенты. Для выполнения таких запросов можно использовать пакетную обработку JSON, так как длинные URL-адреса просто станут частью полезных данных запроса.
 
+## <a name="batch-size-limitations"></a>Ограничения размера пакетов
+
+В настоящее пакетные запросы JSON могут содержать не более 20 отдельных запросов. Кроме того, действуют следующие ограничения:
+
+* В зависимости от интерфейсов API, входящих в состав пакетного запроса, базовые службы налагают собственные ограничения регулирования, влияющие на приложения, которые используют Microsoft Graph для доступа к ним.
+* Запросы в пакете проверяются по отдельности на предмет ограничений регулирования. Если какой-либо запрос превышает ограничения, для него выдается ошибка с состоянием `429`.
+* Пакеты, предназначенные для ресурсов Outlook (например, почта и календарь) могут содержать только четыре запроса, предназначенных для одного и того же почтового ящика. Дополнительные сведения см. статье [Ограничения службы Outlook][throttling-outlook].
+
+Дополнительные сведения см в статье [Регулирование и пакетная обработка][throttling-and-batching].
+
 ## <a name="known-issues"></a>Известные проблемы
 
 Список текущих ограничений, связанных с пакетной обработкой, см. в разделе [Известные проблемы][batching-known-issues].
 
 [batching-known-issues]: known-issues.md#json-batching
 [odata-4.01-json]: https://www.oasis-open.org/committees/download.php/60365/odata-json-format-v4.01-wd02-2017-03-24.docx
-
+[throttling-and-batching]: throttling.md#throttling-and-batching
+[throttling-outlook]: throttling.md#outlook-service-limits
 
 ## <a name="see-also"></a>См. также
 

@@ -5,16 +5,18 @@ author: avijityadav
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 5db7dbb8a853fa7a2752d3b4931a22b5ae1e1b4b
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 4dbeb597c8819f968ae67f06c25850cdc03d678d
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451147"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821122"
 ---
-# <a name="use-the-to-do-api-in-microsoft-graph"></a>Использование API Списка дел в Microsoft Graph
+# <a name="use-the-to-do-api-built-on-base-tasks-in-microsoft-graph-deprecated"></a>Использование API приложения "Список дел", встроенного в базовые задачи в Microsoft Graph (упразднено)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 Используйте API Списка дел Microsoft Graph для создания приложения, подключающегося к задаче пользователей в их почтовом ящике. Создавайте разнообразные возможности с задачами, например следующие:
 
@@ -31,7 +33,7 @@ ms.locfileid: "63451147"
 
 ## <a name="task-list"></a>Список задач
 
-Объект [taskList](./basetasklist.md) представляет логический контейнер ресурсов [task](./basetask.md). В настоящее время вы можете создавать задачи только в списке задач. Задачи, созданные без указания списка, создаются в списке задач, используемом по умолчанию. Чтобы [получить все свои списки задач](../api/basetasklist-get.md), выполните следующий HTTP-запрос:
+В этом наборе API список задач представлен ресурсом [baseTaskList](./basetasklist.md), который является логическим контейнером ресурсов [baseTask](./basetask.md). В настоящее время вы можете создавать задачи только в списке задач. Задачи, созданные без указания списка, создаются в списке задач, используемом по умолчанию. Чтобы [получить все свои списки задач](../api/basetasklist-get.md), выполните следующий HTTP-запрос:
 
 ``` http
 GET /me/tasks/lists
@@ -39,7 +41,7 @@ GET /me/tasks/lists
 
 ## <a name="task"></a>Задача
 
-Объект [task](./basetask.md) представляет задачу, то есть рабочий или личный элемент, который можно отследить и завершить. Чтобы получить свои задачи из списка задач, выполните следующий HTTP-запрос:
+В этом наборе API задача представлена ресурсом [baseTask](./basetask.md): это работа или личный элемент, который можно отслеживать и выполнить. Чтобы получить свои задачи из списка задач, выполните следующий HTTP-запрос:
 ``` http
 GET /me/tasks/lists/{taskListId}/tasks
 ```
@@ -63,8 +65,8 @@ GET /me/tasks/lists/{taskListId}/tasks/{taskId}/linkedresources/{linkedResourceI
 Для повышения производительности вы можете использовать локальный кэш объектов и периодически синхронизировать локальный кэш с сервером, используя [разностный запрос](/graph/delta-query-overview).
 
 Разностный запрос поддерживают следующие ресурсы API To Do:
-* Коллекция объектов [Task](./basetask.md) в списке задач
-* [TaskList](./basetasklist.md)
+* Коллекция [baseTask](./basetask.md) в списке задач
+* [baseTaskList](./basetasklist.md)
 
 ## <a name="whats-new"></a>Новые возможности
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.

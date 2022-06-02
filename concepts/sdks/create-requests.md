@@ -3,12 +3,12 @@ title: Выполнение вызовов API с помощью пакетов 
 description: Содержит инструкции по созданию запросов Microsoft Graph HTTP с помощью пакетов SDK.
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: 49be5a3fdb2ead7e8e3a4d39b459b7ef068a9a74
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: 28fad7ebf6a6aec274bb607b79e3cc3c1f4c20fa
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848694"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858151"
 ---
 <!-- markdownlint-disable MD025 -->
 
@@ -16,7 +16,7 @@ ms.locfileid: "64848694"
 
 Библиотеки служб microsoft Graph SDK предоставляют клиентский класс, который можно использовать в качестве отправной точки для создания всех запросов API. Существует два стиля клиентского класса: один использует текучий интерфейс для создания запроса (например, `client.Users["user-id"].Manager`) и другой принимает строку пути (например, `api("/users/user-id/manager")`). При наличии объекта запроса можно указать различные параметры, такие как фильтрация и сортировка, и, наконец, выбрать тип операции, которую необходимо выполнить.
 
-Также существует пакет [SDK Microsoft Graph PowerShell](/powershell/microsoftgraph/get-started.md), который не имеет клиентского класса. Вместо этого все запросы представлены в виде команд PowerShell. Например, чтобы получить руководителя пользователя, выполните следующую команду `Get-MgUserManager`: Дополнительные сведения о поиске команд для вызовов API см. в статье "Навигация по [пакету SDK Microsoft Graph PowerShell"](/powershell/microsoftgraph/navigating.md).
+Также существует пакет [SDK Microsoft Graph PowerShell](/powershell/microsoftgraph/get-started), который не имеет клиентского класса. Вместо этого все запросы представлены в виде команд PowerShell. Например, чтобы получить руководителя пользователя, выполните следующую команду `Get-MgUserManager`: Дополнительные сведения о поиске команд для вызовов API см. в статье "Навигация по [пакету SDK Microsoft Graph PowerShell"](/powershell/microsoftgraph/navigating).
 
 ## <a name="read-information-from-microsoft-graph"></a>Чтение сведений из microsoft Graph
 

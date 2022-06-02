@@ -2,21 +2,21 @@
 title: Get deviceAppManagement
 description: Чтение свойств и связей объекта deviceAppManagement.
 author: rolyon
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 63d3f21639ce33dd7e8a2fe53f8fa02482f2e801
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 070a4fd85b7720e8140a3afb95746d649978bd90
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59096356"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857682"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API в версии /бета-версии в Microsoft Graph могут изменяться. Использование этих API в производственных приложениях не поддерживается.
+> **Важно:** API в версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,11 +29,11 @@ ms.locfileid: "59096356"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись) | |
-| &nbsp;&nbsp; **Приложения,** **книги,** **onboarding,** **интеграция партнеров** или **набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.ReadW.All |
+| &nbsp;&nbsp; **Приложения**, **книги**, **подключение**, **интеграция с партнером** или **набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| |
-| &nbsp;&nbsp; **Приложения,** **книги,** **onboarding,** **интеграция партнеров** или **набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.ReadW.All |
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение| |
+| &nbsp;&nbsp; **Приложения**, **книги**, **подключение**, **интеграция с партнером** или **набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -53,7 +53,7 @@ GET /deviceAppManagement
 
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

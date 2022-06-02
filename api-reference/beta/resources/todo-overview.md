@@ -1,22 +1,22 @@
 ---
 title: Использование API Microsoft To Do
-description: API Microsoft Graph можно использовать для создания приложения, подключающегося к задачам в Microsoft To Do.
+description: С помощью интерфейса API Microsoft Graph, использующего todoTask, можно создать приложение, подключающееся к задачам в Microsoft To Do.
 author: avijityadav
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: fc1e872fa5a75775c436a02afa5f8ee28e68040f
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: e20b6102eb94e05b62b701026fa6958b895739d3
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696381"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820391"
 ---
-# <a name="use-the-microsoft-to-do-api"></a>Использование API Microsoft To Do
+# <a name="use-the-microsoft-to-do-api"></a>Использование API Списка дел Microsoft
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте API To Do Microsoft Graph для создания приложения, подключающегося к задачам в клиентах Microsoft To Do. Создавайте разнообразные возможности с задачами, например следующие:
+Используйте интерфейс API To Do Microsoft Graph, использующий [todoTask](todotask.md), для создания приложения, подключающегося к задачам в клиентах Microsoft To Do. Создавайте разнообразные возможности с задачами, например следующие:
 
 * Создавайте задачи из рабочего процесса приложения, например из электронной почты или уведомлений, и сохраняйте их в To Do. Используйте объект [linkedResource](linkedresource.md), чтобы сохранить ссылку, ведущую к вашему приложению.
 * Синхронизируйте существующие задачи приложения с помощью To Do и создайте единое представление задач, чтобы лучше определить приоритеты и управлять ими.
@@ -26,11 +26,11 @@ ms.locfileid: "58696381"
 
 Прежде чем приступить к работе с API To Do, ознакомьтесь с ресурсами и их связью между собой.
 
-![Объекты API To Do](/graph/images/todo-api-entities.png)
+![Снимок экрана с выделенными объектами API Списка дел. Снимок экрана: перечень списков задач слева, задачи в определенном списке задач по центру и элементы контрольного списка и связанные ресурсы вместе с другими свойствами задач справа.](/graph/images/tasks-api-entities.png)
 
 ## <a name="task-list"></a>Список задач
 
-Объект [todoTaskList](./todotasklist.md) представляет логический контейнер ресурсов [todoTask](./todotask.md). В настоящее время вы можете создавать задачи только в списке задач. Чтобы [получить все свои списки задач](../api/todotasklist-get.md), выполните следующий HTTP-запрос:
+В этом наборе API список задач представлен ресурсом [todoTaskList](./todotasklist.md), который является логическим контейнером ресурсов [todoTask](./todotask.md). В настоящее время вы можете создавать задачи только в списке задач. Чтобы [получить все свои списки задач](../api/todotasklist-get.md), выполните следующий HTTP-запрос:
 
 ``` http
 GET /me/todo/lists
@@ -38,9 +38,16 @@ GET /me/todo/lists
 
 ## <a name="task"></a>Задача
 
-Объект [todoTask](./todotask.md) представляет задачу, т. е. рабочий или личный элемент, который можно отследить и завершить. Чтобы получить свои задачи из списка задач, выполните следующий HTTP-запрос:
+В этом наборе API задача представлена ресурсом [todoTask](./todotask.md): это работа или личный элемент, который можно отслеживать и выполнить. Чтобы получить свои задачи из списка задач, выполните следующий HTTP-запрос:
 ``` http
 GET /me/todo/lists/{todoTaskListId}/tasks
+```
+
+## <a name="checklist-item"></a>Элемент контрольного списка 
+
+[ChecklistItem](checklistitem.md) представляет подзадачу в более крупном элементе [todoTask](./todotask.md). **ChecklistItem** позволяет разделить сложную задачу на более удобные задачи меньшего размера. Чтобы получить объект **checklistItem** из задачи, выполните следующий HTTP-запрос.
+``` http
+GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/checklistItems/{checklistItems}
 ```
 
 ## <a name="linked-resource"></a>Связанный ресурс
