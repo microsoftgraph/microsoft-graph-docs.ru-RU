@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 87c36421b4abc2742d0f368331cecfbf74528a23
-ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
+ms.openlocfilehash: 8a225554d15fb3095f04f28db3d57b659ada1d5d
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2022
-ms.locfileid: "65629183"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820509"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -66,7 +66,6 @@ ms.locfileid: "65629183"
 | [Список контактов](../api/user-list-contacts.md) | Коллекция [contact](contact.md) | Получение коллекции контактов из папки контактов по умолчанию для выполнившего вход пользователя. |
 | [Список объектов contactFolder](../api/user-list-contactfolders.md) | Коллекция [contactFolder](contactfolder.md) | Получение коллекции папок контактов в папке контактов по умолчанию для вошедшего пользователя. |
 | **Объекты каталога**|||
-| [activateServicePlan](../api/user-activateserviceplan.md) | Нет | Активация службы с заданными `servicePlanId` и `skuId` для определенного [пользователя](user.md). |
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской. |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | Нет | Отправка запроса операции политики данных, направленного администратором компании для экспорта данных пользователя организации. |
 | [getByIds](../api/directoryobject-getbyids.md) | Коллекция String | Возвращает объекты каталогов, указанные в списке идентификаторов. |
@@ -88,6 +87,7 @@ ms.locfileid: "65629183"
 | [Получение удаленного пользователя](../api/directory-deleteditems-get.md) | Коллекция [directoryObject](directoryobject.md) | Получение удаленного пользователя по идентификатору. |
 | [Восстановление удаленного пользователя](../api/directory-deleteditems-delete.md) | Коллекция [directoryObject](directoryobject.md) | Восстановление пользователя, удаленного в клиенте за последние 30 дней. |
 | [Удаление пользователя без возможности восстановления](../api/directory-deleteditems-restore.md) | Коллекция [directoryObject](directoryobject.md) | Окончательное удаление пользователя из клиента. |
+| [activateServicePlan](../api/user-activateserviceplan.md) (упразднено) | Нет | Активация службы с заданными `servicePlanId` и `skuId` для определенного [пользователя](user.md). |
 | **Drive** |||
 | [Получение объекта drive](../api/drive-get.md) | [drive](drive.md) | Получение свойств и связей ресурса Drive. |
 | [Список дочерних элементов](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Возвращает коллекцию DriveItems в дочерних элементах ресурса DriveItem. |
@@ -180,7 +180,7 @@ ms.locfileid: "65629183"
 | assignedLicenses | Коллекция [assignedLicense](assignedlicense.md) | Назначенные пользователю лицензии, в том числе наследуемые (на основе групп). <br><br>Не допускающее значение NULL. Поддерживает `$filter` (`eq`, `not` и подсчитывающее пустые коллекции). |
 | assignedPlans | Коллекция [assignedPlan](assignedplan.md) | Планы, назначенные пользователю. Только для чтения. Значение null не допускается.<br><br>Поддерживает `$filter` (`eq` и `not`). |
 | birthday | DateTimeOffset | День рождения пользователя. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и формата времени UTC. Например, полночь 1 января 2014 г. в формате UTC представляется в виде `2014-01-01T00:00:00Z`. <br><br>Возвращается только с помощью оператора `$select`. |
-| businessPhones | Коллекция String | Номера телефонов пользователя. Для этого свойства можно указать только один номер.<br><br>"Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
+| businessPhones | Коллекция строк | Номера телефонов пользователя. Для этого свойства можно указать только один номер.<br><br>"Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | city | String | Город, в котором находится пользователь. Максимальная длина: 128 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
 | CompanyName | String | Название организации, с которой связан пользователь. Это свойство может быть полезно для описания компании внешнего пользователя. Максимальная длина: 64 символа.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`).|
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | Устанавливает, получено ли согласие для несовершеннолетних. Допустимые значения: `null`, `Granted`, `Denied` и `NotRequired`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Поддерживает `$filter` (`eq`, `ne`, `not` и `in`).|
@@ -190,7 +190,7 @@ ms.locfileid: "65629183"
 |customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|Открытый сложный тип, который содержит значение настраиваемого атрибута безопасности, назначенного объекту каталога. Допускается значение NULL.<br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `not`, `startsWith`).|
 | deletedDateTime | DateTimeOffset | Дата и время удаления пользователя. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le` и `in`) |
 | department | String | Название отдела, в котором работает пользователь. Максимальная длина: 64 символа.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `eq` и по `null` значениям). |
-| displayName | String | Имя пользователя, отображаемое в адресной книге. Это значение обычно является сочетанием имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Максимальная длина 256 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям), `$orderBy` и `$search`.|
+| displayName | Строка | Имя пользователя, отображаемое в адресной книге. Это значение обычно является сочетанием имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Максимальная длина 256 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям), `$orderBy` и `$search`.|
 | employeeHireDate | DateTimeOffset | Дата и время, когда пользователь был нанят или начнет работу в случае найма в будущем. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).|
 | employeeId | String | Идентификатор сотрудника, назначенный пользователю организацией. Максимальная длина составляет 16 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`и `eq` для значений `null`).|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |Представляет данные организации (например, подразделение и место возникновения затрат), связанные с пользователем. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).|

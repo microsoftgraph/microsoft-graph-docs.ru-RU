@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 53497ac4745cecc18d86fe3341da43118ea22210
-ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
+ms.openlocfilehash: d25c85d8cf63ff018a521b86822d8d2380d65ebb
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65420602"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819715"
 ---
 # <a name="plannerplan-resource-type"></a>Тип ресурса plannerPlan
 
@@ -26,6 +26,7 @@ ms.locfileid: "65420602"
 |[Перечисление контейнеров](../api/plannerplan-list-buckets.md) |Коллекция [plannerBucket](plannerbucket.md)| Получение коллекции объектов **plannerBucket**.|
 |[Перечисление задач](../api/plannerplan-list-tasks.md) |Коллекция объектов [plannerTask](plannertask.md)| Получение коллекции объектов **plannerTask**.|
 |[Обновление](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md) |Обновление объекта **plannerPlan**. |
+|[Delete](../api/plannerplan-delete.md) | Нет | Удаление объекта **plannerPlan**. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
