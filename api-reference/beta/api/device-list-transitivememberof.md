@@ -1,24 +1,24 @@
 ---
-title: Перечисление транзитивных групп устройств
-description: Получение групп, членом которых является устройство.
+title: Перечисление транзитивных членства устройств
+description: Получение групп и административных единиц, членом которых является устройство.
 ms.localizationpriority: medium
 author: spunukol
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1b252fe010695a987ffc87fda6a3e9e3ba3bb0ba
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 8d83631d5916a55b5300991cf3db3ea157301029
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65206448"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884197"
 ---
-# <a name="list-device-transitive-groups"></a>Перечисление транзитивных групп устройств
+# <a name="list-device-transitive-memberships"></a>Перечисление транзитивных членства устройств
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение групп, членом которых является устройство. Этот запрос API является транзитивным и также возвращает все группы, в которые входит устройство.
+Получение групп и административных единиц, членом которых является устройство. Этот запрос API является транзитивным и также возвращает все группы и административные единицы, в которые входит устройство.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "65206448"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]

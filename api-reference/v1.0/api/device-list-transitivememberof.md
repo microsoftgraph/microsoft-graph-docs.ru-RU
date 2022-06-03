@@ -1,22 +1,22 @@
 ---
-title: Перечисление транзитивных групп устройств
-description: Получение групп, членом которых является устройство.
+title: Перечисление транзитивных членства устройств
+description: Получение групп и административных единиц, членом которых является устройство.
 author: spunukol
 ms.prod: directory-management
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.openlocfilehash: 4610a7c493146c127e3847d762fc953635f50733
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 5b62d40e7dcc6d583f4e4a2c369244e4f6e72659
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65203975"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883875"
 ---
-# <a name="list-device-transitive-groups"></a>Перечисление транзитивных групп устройств
+# <a name="list-device-transitive-memberships"></a>Перечисление транзитивных членства устройств
 
 Пространство имен: microsoft.graph
 
-Получение групп, членом которых является устройство. Этот запрос API является транзитивным и также возвращает все группы, в которые входит устройство.
+Получение групп и административных единиц, членом которых является устройство. Этот запрос API является транзитивным и также возвращает все группы и административные единицы, в которые входит устройство.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "65203975"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]

@@ -294,7 +294,7 @@ items:
             href: resources/calendar.md
             displayName: 'Outlook, Outlook calendar'
             items:
-              - name: Create
+              - name: Создание
                 href: api/user-post-calendars.md
               - name: Создание группы календарей
                 href: api/user-post-calendargroups.md
@@ -317,7 +317,7 @@ items:
           - name: Контакты
             href: resources/contact.md
             items:
-              - name: Create
+              - name: Создание
                 href: api/user-post-contacts.md
               - name: Создание папки контактов
                 href: api/user-post-contactfolders.md
@@ -386,9 +386,9 @@ items:
                 href: api/user-list-transitivememberof.md
           - name: Аналитика
             items:
-              - name: Office Graph аналитики
+              - name: Аналитика Office Graph
                 items:
-                  - name: Office Graph аналитики
+                  - name: Аналитика Office Graph
                     href: resources/officegraphinsights.md
                   - name: Список "Общие"
                     href: api/insights-list-shared.md
@@ -455,10 +455,10 @@ items:
                     href: api/user-get-mailboxsettings.md
                   - name: Обновление параметров почтового ящика
                     href: api/user-update-mailboxsettings.md
-              - name: Outlook пользовательских служб
+              - name: Службы пользователей Outlook
                 expanded: true
                 items:
-                  - name: Outlook пользователя
+                  - name: Пользователь Outlook
                     href: resources/outlookuser.md
                   - name: Создание категории
                     href: api/outlookuser-post-mastercategories.md
@@ -4196,7 +4196,7 @@ items:
                     href: resources/intune-shared-alldevicesassignmenttarget.md
                   - name: Объект назначения всех лицензированных пользователей
                     href: resources/intune-shared-alllicensedusersassignmenttarget.md
-                  - name: Android корпоративный всегда на типе пакета VPN
+                  - name: Тип пакета VPN для Android enterprise always on
                     href: resources/intune-shared-androidenterprisealwaysonvpnpackagetype.md
                   - name: Состояние соответствия
                     href: resources/intune-shared-compliancestatus.md
@@ -4256,7 +4256,7 @@ items:
                     href: api/serviceannouncement-list-healthoverviews.md
                   - name: Получение сведений о работоспособности службы
                     href: api/servicehealth-get.md
-              - name: Работоспособность служб проблемы
+              - name: Проблема с работоспособностью службы
                 href: resources/servicehealthissue.md
                 items:
                   - name: Список проблем
@@ -4725,9 +4725,9 @@ items:
                     href: api/device-delete-registeredowners.md
                   - name: Удаление зарегистрированного пользователя
                     href: api/device-delete-registeredusers.md
-                  - name: Список групп устройств
+                  - name: Перечисление членства устройств
                     href: api/device-list-memberof.md
-                  - name: Перечисление транзитивных групп устройств
+                  - name: Перечисление транзитивных членства устройств
                     href: api/device-list-transitivememberof.md
                   - name: Список зарегистрированных владельцев
                     href: api/device-list-registeredowners.md
@@ -5242,7 +5242,7 @@ items:
                             href: api/fido2authenticationmethodconfiguration-update.md
                           - name: Delete
                             href: api/fido2authenticationmethodconfiguration-delete.md
-                      - name: Microsoft Authenticator политики
+                      - name: Политика Microsoft Authenticator
                         href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: Получение
@@ -5516,7 +5516,7 @@ items:
               - name: Запросы согласия
                 href: resources/consentrequests-overview.md
                 items:
-                  - name: Администратор политики запроса согласия
+                  - name: Политика запроса согласия администратора
                     href: resources/adminconsentrequestpolicy.md
                     items:
                       - name: Получение
@@ -5964,7 +5964,7 @@ items:
                 href: api/user-list-people.md
           - name: Аналитика
             items:
-              - name: Office Graph аналитики
+              - name: Аналитика Office Graph
                 href: resources/officegraphinsights.md
               - name: Shared
                 href: resources/insights-shared.md
@@ -6088,7 +6088,7 @@ items:
                 items:
                   - name: Подготовка списка
                     href: api/provisioningobjectsummary-list.md
-          - name: Microsoft 365 отчетов об использовании
+          - name: Отчеты об использовании Microsoft 365
             items:
               - name: Обзор
                 href: resources/report.md
@@ -6355,7 +6355,7 @@ items:
                     href: api/externalconnectors-externalgroup-delete.md
               - name: Член внешней группы
                 items:
-                  - name: Удостоверение
+                  - name: Identity
                     href: resources/externalconnectors-identity.md
                   - name: Создание
                     href: api/externalconnectors-externalgroup-post-members.md
@@ -6612,7 +6612,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Создание плана
@@ -6698,7 +6698,7 @@ items:
           - name: Команда
             href: resources/team.md
             items:
-              - name: Create
+              - name: Создание
                 href: api/team-post.md
               - name: Создание команды из группы
                 href: api/team-put-teams.md
@@ -7042,7 +7042,7 @@ items:
                     href: api/offershiftrequest-get.md
                   - name: Список
                     href: api/offershiftrequest-list.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/offershiftrequest-approve.md
                   - name: Снижение
                     href: api/offershiftrequest-decline.md
@@ -7068,7 +7068,7 @@ items:
                     href: api/openshiftchangerequest-post.md
                   - name: Получение
                     href: api/openshiftchangerequest-get.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/openshiftchangerequest-approve.md
                   - name: Снижение
                     href: api/openshiftchangerequest-decline.md
@@ -7088,7 +7088,7 @@ items:
                     href: api/swapshiftschangerequest-post.md
                   - name: Получение
                     href: api/swapshiftschangerequest-get.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/swapshiftschangerequest-approve.md
                   - name: Снижение
                     href: api/swapshiftschangerequest-decline.md
@@ -7125,7 +7125,7 @@ items:
                     href: api/timeoffrequest-get.md
                   - name: Удаление
                     href: api/timeoffrequest-delete.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/timeoffrequest-approve.md
                   - name: Снижение
                     href: api/timeoffrequest-decline.md

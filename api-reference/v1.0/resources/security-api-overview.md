@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 47dccb5f8c4bf71ce5814b8f50d7ed2625f7ca01
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 1924ee87043a2ba10beb0505e9a42f1446c30a9e
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072651"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883994"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Использование Microsoft Graph Security API
 
@@ -84,7 +84,7 @@ API оценки угроз Microsoft Graph позволяет организа�
 
 Взаимодействие с сообществом:
 
-- [Присоединяйтесь к сообществу Tech Community](https://aka.ms/graphsecuritycommunity)
+- [Присоединяйтесь к сообществу Tech Community](https://techcommunity.microsoft.com/t5/microsoft-graph-security-api/bd-p/SecurityGraphAPI)
 - [Обсуждения на сайте StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
 
 ## <a name="whats-new"></a>Новые возможности

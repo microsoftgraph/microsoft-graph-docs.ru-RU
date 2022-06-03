@@ -5,12 +5,12 @@ title: driveItem
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: f0bf0d668aacd62cf452f7fa8a469d7e6b9663f7
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: 6dfc2326b062becde4fd29138c29e21cf701f7d6
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917733"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883854"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
@@ -27,7 +27,7 @@ ms.locfileid: "64917733"
 * по уникальному идентификатору **driveItem** с помощью `drive/items/{item-id}`;
 * по пути файловой системы с помощью `/drive/root:/path/to/file`.
 
-Дополнительные сведения см. в разделе об [адресации driveItems](/graph/concepts/onedrive-addressing-driveitems.md).
+Дополнительные сведения см. в разделе об [адресации driveItems](/graph/onedrive-addressing-driveitems).
 
 У ресурсов **DriveItem** есть аспекты, смоделированные как свойства, которые предоставляют данные об идентификаторах и возможностях объекта driveItem. Пример:
 
@@ -98,7 +98,7 @@ ms.locfileid: "64917733"
 | lastModifiedDateTime | DateTimeOffset     | Дата и время последнего изменения элемента. Только для чтения.
 | location             | [geoCoordinates][] | Метаданные местоположения, если в роли элемента выступают данные о местоположении. Только для чтения.
 | malware              | [malware][]        | Метаданные вредоносной программы, если обнаружено, что элемент содержит вредоносную программу. Только для чтения.
-| Носителя                | [media][]          | Сведения об элементе мультимедиа (аудио или видео). Чтение и запись. Только OneDrive для бизнеса и SharePoint.
+| мультимедиа                | [media][]          | Сведения об элементе мультимедиа (аудио или видео). Чтение и запись. Только в OneDrive для бизнеса и SharePoint.
 | name                 | String             | Имя элемента (имя и расширение файла). Чтение и запись.
 | package              | [package][]        | В случае наличия указывает, что этот элемент — пакет, а не папка или файл. Пакеты обрабатываются как файлы в одном контексте, и как папки — в другом. Только для чтения.
 | parentReference      | [itemReference][]  | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.
@@ -112,7 +112,7 @@ ms.locfileid: "64917733"
 | sharepointIds        | [sharepointIds][]  | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
 | size                 | Int64              | Размер элемента (в байтах). Только для чтения.
 | specialFolder        | [specialFolder][]  | Если текущий элемент также доступен как специальная папка, возвращается этот аспект. Только для чтения.
-| source               | [driveItemSource][]| Сведения об источнике элемента диска. Только для чтения. Только OneDrive для бизнеса и SharePoint.
+| source               | [driveItemSource][]| Сведения об источнике элемента диска. Только для чтения. Только в OneDrive для бизнеса и SharePoint.
 | video                | [video][]          | Метаданные видео, если в роли элемента выступает видео. Только для чтения.
 | webDavUrl            | Строка             | URL-адрес элемента, совместимый с WebDAV.
 | webUrl               | String             | URL-адрес для отображения ресурса в браузере. Только для чтения.

@@ -1,16 +1,16 @@
 ---
 title: 'informationProtectionLabel: evaluateClassificationResults'
-description: Оцените, какую метку применять на основе существующих данных о контенте и результата классификации.
+description: Оцените, какую метку следует применить на основе существующих сведений о содержимом и результата классификации.
 ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: a832aeedbe8f4d44cb6e33b11daf7c6b0ab2a72b
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 7cc2a3922ab9361ec607518d81eb74a9f3facda7
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346878"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884057"
 ---
 # <a name="informationprotectionlabel-evaluateclassificationresults"></a>informationProtectionLabel: evaluateClassificationResults
 
@@ -18,9 +18,9 @@ ms.locfileid: "62346878"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-С [помощью результатов](../resources/classificationresult.md) классификации вычислите метку защиты информации, которая должна быть применена, и верните набор действий, которые необходимо принять для правильной метки информации.[](../resources/informationprotectionlabel.md) Этот API полезен, когда метка должна быть заданной автоматически на основе классификации содержимого файла, а не метки непосредственно пользователем или службой. 
+С [помощью результатов](../resources/classificationresult.md) классификации вычислите метку защиты информации, которая должна быть применена, и возвратите набор действий, которые необходимо предпринять для правильной маркировки информации.[](../resources/informationprotectionlabel.md) Этот API полезен, если метка должна быть задана автоматически на основе классификации содержимого файла, а не метки непосредственно пользователем или службой. 
 
-Для оценки на основе результатов классификации предостаточная оценка [контентаInfo](../resources/contentinfo.md), включающая в себя существующие пары [ключей/](../resources/keyvaluepair.md)значений метаданных контента, [а также результаты классификации](../resources/classificationresult.md). API возвращает [informationProtectionAction](../resources/informationprotectionaction.md) , который содержит один из следующих ниже: 
+Для оценки на основе результатов классификации укажите [contentInfo](../resources/contentinfo.md), который включает в себя существующие пары "ключ-значение" метаданных содержимого [и](../resources/keyvaluepair.md) [результаты классификации](../resources/classificationresult.md). API возвращает [объект informationProtectionAction](../resources/informationprotectionaction.md) , содержащий одно из следующих значений: 
 
 * [addContentFooterAction](../resources/addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/addcontentheaderaction.md)
@@ -44,8 +44,8 @@ ms.locfileid: "62346878"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | InformationProtectionPolicy.Read            |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Делегированное (рабочая или учебная учетная запись)     | InformationProtectionPolicy.Read            |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Приложение                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -62,7 +62,7 @@ POST /informationProtection/policy/labels/{id}/evaluateClassificationResults
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {token}. Обязательный.                                                                                                                                             |
 | Content-Type  | application/json. Обязательный.                                                                                                                                           |
-| User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательный параметр. |
+| User-Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения будут отображаться в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -70,12 +70,12 @@ POST /informationProtection/policy/labels/{id}/evaluateClassificationResults
 
 | Параметр             | Тип                                                                    | Описание                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| contentInfo           | [contentInfo](../resources/contentInfo.md)                              | Содержит сведения о формате контента, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в качестве пар ключей и значений.                                                                                                                                                   |
-| classificationResults | [коллекция classificationResult](../resources/classificationresult.md) | Содержит набор результатов классификации, возвращаемого конечной точкой классификации данных. Сведения о классификации используются для определения соответствующей метки на основе конфигурации метки политик Microsoft Information Protection в центре Office 365 безопасности и соответствия требованиям. |
+| contentInfo           | [contentInfo](../resources/contentInfo.md)                              | Предоставляет сведения о формате содержимого, состоянии содержимого и существующих [метаданных](../resources/keyvaluepair.md) в виде пар "ключ-значение".                                                                                                                                                   |
+| classificationResults | [Коллекция classificationResult](../resources/classificationresult.md) | Содержит набор результатов классификации, возвращаемых конечной точкой классификации данных. Сведения о классификации используются для определения соответствующей метки на основе конфигурации метки политики Microsoft Purview Information Protection в Центре безопасности и соответствия требованиям Office 365. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и новый объект [коллекции informationProtectionAction](../resources/informationprotectionaction.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и новый объект [коллекции informationProtectionAction](../resources/informationprotectionaction.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

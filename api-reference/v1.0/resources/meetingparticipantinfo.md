@@ -1,30 +1,34 @@
 ---
-title: тип ресурса meetingParticipantInfo
-description: Сведения о участнике собрания.
+title: Тип ресурса meetingParticipantInfo
+description: Сведения об участнике собрания.
 author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 505a31673ea110f899b37b7d6404b5020ed6d88e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d46f15a86742a23b6ec4e9f6c270308de34c169c
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113653"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883987"
 ---
-# <a name="meetingparticipantinfo-resource-type"></a>тип ресурса meetingParticipantInfo
+# <a name="meetingparticipantinfo-resource-type"></a>Тип ресурса meetingParticipantInfo
 
 Пространство имен: microsoft.graph
 
-Сведения о участнике собрания.
+Сведения об участнике собрания.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип                          | Описание                                                                         |
 | :------- | :---------------------------- | :---------------------------------------------------------------------------------- |
-| удостоверение | [identitySet](identityset.md) | Сведения о удостоверениях участника.                                            |
-| upn      | String                        | Основное имя участника пользователя.                                             |
-| role     | onlineMeetingRole             | Указывает роль участника собрания.  Возможные значения `attendee` , `presenter` и `producer` `unknownFutureValue` .|
+| Идентичности | [identitySet](identityset.md) | Сведения об удостоверении участника.                                            |
+| Upn      | String                        | Имя участника-пользователя.                                             |
+| role     | onlineMeetingRole             | Указывает роль участника в собрании.  Возможные значения: `attendee`, `presenter`и `producer``unknownFutureValue`.|
+
+> [!TIP]
+>
+> Чтобы задать **роль** докладчика участника собрания при создании или обновлении [onlineMeeting](onlinemeeting.md), необходимо также задать значение **allowedPresenters**`roleIsPresenter`.
 
 ## <a name="json-representation"></a>Представление JSON
 

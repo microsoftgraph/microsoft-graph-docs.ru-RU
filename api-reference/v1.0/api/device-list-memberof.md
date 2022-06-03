@@ -1,22 +1,22 @@
 ---
-title: Список групп устройств
-description: Получение групп, непосредственным участником которых является это устройство. Эта операция не является транзитивной.
+title: Перечисление членства устройств
+description: Получение групп и административных единиц, непосредственным участником которых является это устройство. Эта операция не является транзитивной.
 author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a7a8321c12f3fb31c7daef3e79c2f4f9da82d353
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: abdb2d72f22aaf3cf86e5f8f914d25f8828852b2
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65209787"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883966"
 ---
-# <a name="list-device-groups"></a>Список групп устройств
+# <a name="list-device-memberships"></a>Перечисление членства устройств
 
 Пространство имен: microsoft.graph
 
-Получение групп, непосредственным участником которых является это устройство. Эта операция не является транзитивной.
+Получение групп и административных единиц, непосредственным участником которых является это устройство. Эта операция не является транзитивной.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "65209787"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]

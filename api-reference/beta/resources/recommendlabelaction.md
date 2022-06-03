@@ -1,33 +1,33 @@
 ---
-title: recommendLabelAction resource type
-description: Представляет метку, которую следует рекомендовать пользователю для приложения к файлу на основе типов конфиденциальной информации.
-localization_priority: Normal
+title: Тип ресурса recommendLabelAction
+description: Представляет метку, которая должна быть рекомендована пользователю для приложения к файлу на основе типов конфиденциальной информации.
+ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 10d3ac687605ab648cdd3d68d6a3721c8fba2e30
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 245aae5c65d08d5a1755434917afe9b22f4c43b2
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962576"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883840"
 ---
-# <a name="recommendlabelaction-resource-type"></a>recommendLabelAction resource type
+# <a name="recommendlabelaction-resource-type"></a>Тип ресурса recommendLabelAction
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет метку, которую следует рекомендовать пользователю для приложения к файлу на основе обнаруженных типов конфиденциальной информации. В [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md) может быть возвращена **рекомендацияLabelAction,** если политика  маркировки Microsoft Information Protection настроена на рекомендации и метку, а не на принудительное выполнение метки. Пользователь или прикладный пользователь может игнорировать или принимать эту рекомендацию. 
+Представляет метку, которая должна быть рекомендована пользователю для приложения к файлу на основе обнаруженных типов конфиденциальной информации. [Объект evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md) может возвращать **recommendLabelAction**, если в политике меток Microsoft Purview Information Protection задано значение **recommend** и label, а не принудительное применение метки. Пользователь или приложение могут игнорировать или принимать рекомендацию. 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                    | Тип                                                                     | Описание                                                           |
 | :-------------------------- | :----------------------------------------------------------------------- | :-------------------------------------------------------------------- |
 | actionSource                | String                                                                   | Возможные значения: `manual`, `automatic`, `recommended`, `default`. |
-| actions                     | [коллекция informationProtectionAction](informationprotectionaction.md) | Действия, которые необходимо принять, если метка принята пользователем.                                                                       |
-| label                       | [labelDetails](labeldetails.md)                                          | Метка, которая рекомендуется.                                                                      |
-| responsibleSensitiveTypeIds | Коллекция объектов Guid                                                          | GUID типа конфиденциальной информации, из-за чего была дана рекомендация.                                                                      |
+| actions                     | [Коллекция informationProtectionAction](informationprotectionaction.md) | Действия, выполняемые, если метка принимается пользователем.                                                                       |
+| label                       | [labelDetails](labeldetails.md)                                          | Рекомендуемая метка.                                                                      |
+| responsibleSensitiveTypeIds | Коллекция объектов Guid                                                          | Идентификаторы GUID типа конфиденциальной информации, которые вызвали рекомендацию.                                                                      |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -1,24 +1,22 @@
 ---
 title: Добавление участника
-description: Используйте этот API для добавления участника (пользователя или группы) в административное подразделение.
+description: Этот API используется для добавления участника (пользователя, группы или устройства) в административную единицу.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 22cc8c5022cdc27d434ba62bdf76891a7344d7e9
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 9598d63f17e83d92913724f0b64cb5092307a3a4
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672030"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884105"
 ---
 # <a name="add-a-member"></a>Добавление участника
 
 Пространство имен: microsoft.graph
 
-Используйте этот API для добавления участника (пользователя или группы) в административное подразделение.
-
-`NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
+Этот API используется для добавления участника (пользователя, группы или устройства) в административную единицу. В настоящее время в административную единицу можно добавить только один член за раз.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,9 +24,9 @@ ms.locfileid: "63672030"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | AdministrativeUnit.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +40,7 @@ POST /directory/administrativeUnits/{id}/members/$ref
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажи`id`, что [пользователь, группа](../resources/user.md) или [directoryObject](../resources/directoryobject.md) будут добавлены. [](../resources/group.md)
+В тексте запроса укажите `id` [пользователя,](../resources/user.md) группу  [,](../resources/group.md) [устройство](../resources/device.md) или [directoryObject](../resources/directoryobject.md) для добавления.
 
 ## <a name="response"></a>Отклик
 
@@ -58,7 +56,7 @@ POST /directory/administrativeUnits/{id}/members/$ref
   "blockType": "request",
   "name": "post_administrativeUnits_members"
 } -->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 Content-type: application/json
 
@@ -93,7 +91,6 @@ Content-type: application/json
 
 ---
 
-В теле запроса укажи `id` объект [пользователя](../resources/user.md) или группы[](../resources/group.md), который необходимо добавить.
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика.

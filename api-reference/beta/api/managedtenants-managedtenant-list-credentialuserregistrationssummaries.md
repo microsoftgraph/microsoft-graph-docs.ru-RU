@@ -1,23 +1,23 @@
 ---
-title: Список credentialUserRegistrationsSummaries
-description: Получите список объектов credentialUserRegistrationsSummary и их свойств.
+title: Перечисление credentialUserRegistrationsSummaries
+description: Получение списка объектов credentialUserRegistrationsSummary и их свойств.
 author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 0d17a2bccf9289d144d90efda970d97cd777c38a
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: a683661fe309b99d97d2cd6d5a771bc17b0bcb97
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61862081"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884071"
 ---
-# <a name="list-credentialuserregistrationssummaries"></a>Список credentialUserRegistrationsSummaries
+# <a name="list-credentialuserregistrationssummaries"></a>Перечисление credentialUserRegistrationsSummaries
 Пространство имен: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) и их свойств.
+Получение списка объектов [credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) и их свойств.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,19 +39,19 @@ GET /tenantRelationships/managedTenants/credentialUserRegistrationsSummaries
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметры [запроса OData,](/graph/query-parameters) чтобы помочь настроить ответ, в том числе `$apply` , , , , , , , и `$count` `$filter` `$orderBy` `$select` `$skip` `$top` .
+Этот метод поддерживает параметры [запроса OData](/graph/query-parameters) для настройки ответа, `$apply`включая , `$count`, , `$filter`, `$orderBy`, , `$select`и `$skip``$top`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) в тексте ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов [credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -110,6 +110,7 @@ Content-Type: application/json
       "mfaAndSsprCapableUserCount": 2,
       "ssprEnabledUserCount": 9,
       "mfaRegisteredUserCount": 3,
+      "mfaExcludedUserCount": 0,
       "ssprRegisteredUserCount": 2,
       "totalUserCount": 9,
       "securityDefaultsEnabled": false,
@@ -123,6 +124,7 @@ Content-Type: application/json
       "mfaAndSsprCapableUserCount": 0,
       "ssprEnabledUserCount": 1,
       "mfaRegisteredUserCount": 0,
+      "mfaExcludedUserCount": 2,
       "ssprRegisteredUserCount": 0,
       "totalUserCount": 7,
       "securityDefaultsEnabled": false,
