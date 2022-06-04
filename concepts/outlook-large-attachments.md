@@ -4,12 +4,12 @@ description: В зависимости от размера файла можно
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 582501205c106b3deaf0312f3db9c81488feb3de
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: c6e23f8f30e5dc155f54015fd740df761b9a7769
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133050"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883833"
 ---
 # <a name="attach-large-files-to-outlook-messages-or-events"></a>Вложение крупных файлов в сообщения и события Outlook
 
@@ -193,11 +193,11 @@ Content-type: application/json
 После успешной отправки возвращается `HTTP 200 OK` и объект **uploadSession**. Объект отклика имеет указанные ниже свойства.
 
 - Свойство **ExpirationDateTime** указывает дату и время окончания срока действия для маркера авторизации, внедренного в значение свойства **uploadUrl**. Это значение даты и времени окончания срока действия остается таким же, какое было возвращено начальным объектом **uploadSession** на шаге 1.
-- Свойство **NextExpectedRanges** указывает расположение следующего байта, с которого необходимо начать отправку, например `"NextExpectedRanges":["2097152"]`. Байты файла необходимо отправлять по порядку.
-<!-- The **NextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
+- **nextExpectedRanges ** указывает расположение следующего байта для начала загрузки, например,`"nextExpectedRanges":["2097152"]`. Байты файла необходимо отправлять по порядку.
+<!-- The **nextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
 
-  - On a successful upload, this property returns the next range to start from, for example, `"NextExpectedRanges":["2097152"]`.
-  - If a portion of a byte range has not uploaded successfully, this property includes the byte range with the start and end locations, for example, `"NextExpectedRanges":["1998457-2097094"]`.
+  - On a successful upload, this property returns the next range to start from, for example, `"nextExpectedRanges":["2097152"]`.
+  - If a portion of a byte range has not uploaded successfully, this property includes the byte range with the start and end locations, for example, `"nextExpectedRanges":["1998457-2097094"]`.
 -->
 - Свойство **uploadUrl** не возвращается явным образом, поскольку все операции `PUT` сеанса отправки используют тот же самый URL-адрес, который был возвращен при создании сеанса (на шаге 1).
 
@@ -219,7 +219,7 @@ Content-Range: bytes 0-2097151/3483322
 
 #### <a name="response"></a>Отклик
 
-В следующем примере отклика в свойстве **NextExpectedRanges** демонстрируется начало следующего диапазона байтов, ожидаемого сервером.
+Следующий пример ответа показывает в свойстве **nextExpectedRanges** начало следующего диапазона байтов, ожидаемого сервером.
 <!-- {
   "blockType": "ignored"
 }-->
@@ -230,7 +230,7 @@ Content-type: application/json
 {
   "@odata.context":"https://outlook.office.com/api/v2.0/$metadata#Users('a8e8e219-4931-95c1-b73d-62626fd79c32%4072aa88bf-76f0-494f-91ab-2d7cd730db47')/Messages('AAMkADI5MAAIT3drCAAA%3D')/AttachmentSessions/$entity",
   "ExpirationDateTime":"2019-09-25T01:09:30.7671707Z",
-  "NextExpectedRanges":["2097152"]
+  "nextExpectedRanges":["2097152"]
 }
 ```
 
@@ -252,7 +252,7 @@ Content-Range: bytes 0-2097151/3483322
 
 #### <a name="response"></a>Отклик
 
-В следующем примере отклика в свойстве **NextExpectedRanges** демонстрируется начало следующего диапазона байтов, ожидаемого сервером.
+Следующий пример ответа показывает в свойстве **nextExpectedRanges** начало следующего диапазона байтов, ожидаемого сервером.
 <!-- {
   "blockType": "ignored"
 }-->
@@ -263,14 +263,14 @@ Content-type: application/json
 {
     "@odata.context":"https://outlook.office.com/api/v2.0/$metadata#Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69%4098a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA%3D')/AttachmentSessions/$entity",
     "ExpirationDateTime":"2020-02-22T02:46:56.7410786Z",
-    "NextExpectedRanges":["2097152"]
+    "nextExpectedRanges":["2097152"]
 }
 ```
 
 
 ## <a name="step-3-continue-uploading-byte-ranges-until-the-entire-file-has-been-uploaded"></a>Шаг 3. Продолжение отправки диапазонов байтов вплоть до отправки всего файла
 
-После первоначальной отправки на шаге 2 продолжайте отправлять оставшиеся части файла, используя аналогичный запрос `PUT`, как описано на шаге 2, до достижения даты и времени окончания срока действия сеанса. Получайте значение **NextExpectedRanges**, чтобы определить, с какого места должен начинаться следующий диапазон байтов для отправки. Вы можете увидеть несколько диапазонов, указывающих части файла, еще не полученные сервером. Это удобно, когда требуется возобновить прерванную передачу, а клиенту неизвестно состояние службы.
+После первоначальной отправки на шаге 2 продолжайте отправлять оставшиеся части файла, используя аналогичный запрос `PUT`, как описано на шаге 2, до достижения даты и времени окончания срока действия сеанса. Используйте коллекцию **nextExpectedRanges**, чтобы определить, с чего начать отправку следующего диапазона байтов. Вы можете увидеть несколько диапазонов, указывающих части файла, еще не полученные сервером. Это удобно, когда требуется возобновить прерванную передачу, а клиенту неизвестно состояние службы.
 
 После успешной отправки последнего байта файла операция `PUT` возвращает `HTTP 201 Created` и заголовок `Location`, указывающий URL-адрес вложенного файла в домене `https://outlook.office.com`. Можно получить ИД вложения по этому URL-адресу и сохранить его для дальнейшего использования. В зависимости от сценария можно использовать этот ИД для [получения метаданных вложения](/graph/api/attachment-get) или для [удаления вложения из элемента Outlook](/graph/api/attachment-delete) с помощью конечной точки Microsoft Graph.
 
