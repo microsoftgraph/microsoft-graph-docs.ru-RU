@@ -4,12 +4,12 @@ description: Microsoft Graph использует механизм веб-пер
 author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
-ms.openlocfilehash: 3cb94fcc4ba55447646e31635a0e9a68a9b8d1a2
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 9bbd29d374160fdd8c86b6bd34293ce7fe241e17
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368184"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898828"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>Настройка уведомлений об изменениях, включающих данные ресурсов
 
@@ -38,7 +38,17 @@ Microsoft Graph позволяет приложениям подписывать
 - Новые или измененные сообщения в определенном канале Teams: `/teams/{id}/channels/{id}/messages`
 - Новые или измененные сообщения во всех каналах Teams всей организации (клиент): `/teams/getAllMessages`
 - Новые или измененные сообщения в определенном чате Teams: `/chats/{id}/messages`
-- Новые или измененные сообщения во всех чатах всей организации (клиент): `/chats/getAllMessages`
+- Новые или измененные сообщения во всех чатах Teams: `/chats/getAllMessages`
+- Новые или измененные участники во всех чатах Teams: `/chats/getAllMembers`
+- Новые или измененные участники в определенном чате Teams: `/chats/{id}/members`
+- Новый или измененный чат во всем клиенте: `/chats`
+- Изменения свойств в определенном чате: `/chats/{id}`
+- Новые или измененные участники во всех каналах в определенной команде: `/teams/{id}/channels/getAllMembers`
+- Новые или измененные участники в определенной команде: `/teams/{id}/members`
+- Новая или измененная команда во всем клиенте: `/teams`
+- Изменения свойств в определенной команде: `/teams/{id}`
+- Новые или измененные каналы во всех командах Teams: `/teams/getAllChannels`
+- Новый или измененный канал в определенной команде: `/teams/{id}/channels`
 - Обновление сведений о присутствии пользователя: `/communications/presences/{id}`
 
 Доступно только в конечной точке бета-версии:

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 0878c63437cf4d7652fe9c0853dc788cdf3e78b5
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 867382f3ef4f8841edf78d10a142c4f5739f2fbc
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443382"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900376"
 ---
 # <a name="list-subscriptions"></a>Перечисление подписок
 
@@ -27,15 +27,14 @@ ms.locfileid: "62443382"
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Application |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Не поддерживается | Не поддерживается | CallRecords.Read.All  |
-|[каналы](../resources/channel.md) (/teams/getAllChannels — все каналы в организации) | Не поддерживается  | Не поддерживается | Channel.ReadBasic.All, ChannelSettings.Read.All |
-|[каналы](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All, Subscription.Read.All  | Не поддерживается | Channel.ReadBasic.All, ChannelSettings.Read.All  |
+|[channel](../resources/channel.md) (/teams/getAllChannels — все каналы в организации) | Не поддерживается  | Не поддерживается | Channel.ReadBasic.All, ChannelSettings.Read.All |
+|[channel](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All, Subscription.Read.All  | Не поддерживается | Channel.ReadBasic.All, ChannelSettings.Read.All  |
 |[чат](../resources/chat.md) (/чаты — все чаты в организации) | Не поддерживается | Не поддерживается | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[чат](../resources/chat.md) (/chats/{id}) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite, Subscription.Read.All | Не поддерживается | ChatSettings.Read.Chat *, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All, Subscription.Read.All | Не поддерживается | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages — все сообщения канала в организации) | Не поддерживается | Не поддерживается | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read, Chat.ReadWrite, Subscription.Read.All | Не поддерживается | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/getAllMessages — все сообщения чата в организации) | Не поддерживается | Не поддерживается | Chat.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/users/{id}/chats/getAllMessages — сообщения чата для всех чатов, в которые входит определенный пользователь) | Chat.Read, Chat.ReadWrite, Subscription.Read.All | Не поддерживается | Chat.Read.All, Chat.ReadWrite.All |
 |[contact](../resources/contact.md) | Contacts.Read, Subscription.Read.All | Contacts.Read, Subscription.Read.All | Contacts.Read |
 |[conversationMember](../resources/conversationmember.md) (/teams/{id}/channels/getAllMembers) | Не поддерживается | Не поддерживается | ChannelMember.Read.All |
 |[conversationMember](../resources/conversationmember.md) (/chats/getAllMembers) | Не поддерживается | Не поддерживается | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
@@ -53,7 +52,7 @@ ms.locfileid: "62443382"
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается | Не поддерживается | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All, Subscription.Read.All | Не поддерживается | SecurityEvents.ReadWrite.All |
 |[teams](../resources/team.md) (/teams — все команды в организации) | Не поддерживается | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
-|[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All, Subscription.Read.All | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
+|[team](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All, Subscription.Read.All | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite, Subscription.Read.All | Tasks.ReadWrite, Subscription.Read.All | Не поддерживается |
 |[user](../resources/user.md) | User.Read.All, Subscription.Read.All | User.Read.All | User.Read.All |
 
