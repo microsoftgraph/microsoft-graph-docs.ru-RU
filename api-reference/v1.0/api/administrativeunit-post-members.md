@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9598d63f17e83d92913724f0b64cb5092307a3a4
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: 287b06162d8c8d5f4ccd3853ae15d2542516ffd6
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65884105"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899773"
 ---
 # <a name="add-a-member"></a>Добавление участника
 
@@ -26,7 +26,12 @@ ms.locfileid: "65884105"
 |:--------------------|:---------------------------------------------------------|
 |Делегированное (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All    |
 |Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | AdministrativeUnit.ReadWrite.All |
+|Application | AdministrativeUnit.ReadWrite.All |
+
+Чтобы добавить участника в административную единицу, вызывающему субъекту должна быть назначена одна из следующих ролей [Azure AD](/azure/active-directory/roles/permissions-reference):
+
+* Администратор привилегированных ролей
+* Глобальный администратор
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +44,7 @@ POST /directory/administrativeUnits/{id}/members/$ref
 | Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В тексте запроса укажите `id` [пользователя,](../resources/user.md) группу  [,](../resources/group.md) [устройство](../resources/device.md) или [directoryObject](../resources/directoryobject.md) для добавления.
 
 ## <a name="response"></a>Отклик

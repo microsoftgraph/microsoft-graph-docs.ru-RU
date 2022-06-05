@@ -1,22 +1,22 @@
 ---
 title: Удаление administrativeUnit
-description: Удаление администратораUnit.
+description: Удаление объекта administrativeUnit.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7ed4083bf8e55298d5587af8ed352b0697bef967
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 74bd3b7c68679e539758f8ad943cda7688b8fd26
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672429"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898709"
 ---
 # <a name="delete-administrativeunit"></a>Удаление administrativeUnit
 
 Пространство имен: microsoft.graph
 
-Удаление [администратораUnit](../resources/administrativeunit.md).
+Удаление [объекта administrativeUnit](../resources/administrativeunit.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,9 +24,14 @@ ms.locfileid: "63672429"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | AdministrativeUnit.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Application | AdministrativeUnit.ReadWrite.All |
+
+Чтобы удалить административную единицу, вызывающему субъекту должна быть назначена одна из следующих ролей [Azure AD](/azure/active-directory/roles/permissions-reference):
+
+* Администратор привилегированных ролей
+* Глобальный администратор
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

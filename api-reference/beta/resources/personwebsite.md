@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Персонвебсите
-description: Тип ресурса Персонвебсите
-localization_priority: Normal
+title: Тип ресурса personWebsite
+description: Представляет подробные сведения о веб-сайтах, связанных с пользователем в различных службах.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 3b480370309b6c843359a711ff27307c4d6e41e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c26bda366fe03893e138551cb3ae3e8ab1efd8c8
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997916"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900480"
 ---
-# <a name="personwebsite-resource-type"></a>Тип ресурса Персонвебсите
+# <a name="personwebsite-resource-type"></a>Тип ресурса personWebsite
 
 Пространство имен: microsoft.graph
 
@@ -20,43 +20,27 @@ ms.locfileid: "47997916"
 
 Представляет подробные сведения о веб-сайтах, связанных с пользователем в различных службах.
 
-Наследуется от [итемфацет](itemfacet.md).
+Наследуется [от itemFacet](itemfacet.md).
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список веб-сайтов](../api/profile-list-websites.md)|Коллекция [персонвебсите](../resources/personwebsite.md)|Получение ресурсов Персонвебсите из свойства навигации веб-сайтов.|
-|[Создание Персонвебсите](../api/profile-post-websites.md)|[персонвебсите](../resources/personwebsite.md)|Создание нового объекта Персонвебсите.|
-|[Получение Персонвебсите](../api/personwebsite-get.md)|[персонвебсите](../resources/personwebsite.md)|Чтение свойств и связей объекта [персонвебсите](../resources/personwebsite.md) .|
-|[Обновление Персонвебсите](../api/personwebsite-update.md)|[персонвебсите](../resources/personwebsite.md)|Обновление свойств объекта [персонвебсите](../resources/personwebsite.md) .|
-|[Удаление Персонвебсите](../api/personwebsite-delete.md)|Нет|Удаляет объект [персонвебсите](../resources/personwebsite.md) .|
+|[Перечисление веб-сайтов](../api/profile-list-websites.md)|[Коллекция personWebsite](../resources/personwebsite.md)|Получите ресурсы personWebsite из свойства навигации веб-сайтов.|
+|[Создание personWebsite](../api/profile-post-websites.md)|[personWebsite](../resources/personwebsite.md)|Создайте объект personWebsite.|
+|[Получение personWebsite](../api/personwebsite-get.md)|[personWebsite](../resources/personwebsite.md)|Чтение свойств и связей объекта [personWebsite](../resources/personwebsite.md) .|
+|[Обновление personWebsite](../api/personwebsite-update.md)|[personWebsite](../resources/personwebsite.md)|Обновление свойств объекта [personWebsite](../resources/personwebsite.md) .|
+|[Удаление personWebsite](../api/personwebsite-delete.md)|Нет|Удаляет объект [personWebsite](../resources/personwebsite.md) .|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип              | Описание                                                                                   |
 |:-------------|:------------------|:----------------------------------------------------------------------------------------------|
-|categories    |Коллекция String  | Содержит категории, связанные с веб-сайтом пользователя (например, персональный, рецепты).  |
-|description   |String             | Содержит описание веб-сайта.                                                        |
-|displayName   |String             | Содержит понятное имя для веб-сайта.                                                     |
+|categories    |Коллекция String  | Содержит категории, связанные пользователем с веб-сайтом (например, личные, рецепты).  |
+|description   |Строка             | Содержит описание веб-сайта.                                                        |
+|displayName   |Строка             | Содержит понятное имя веб-сайта.                                                     |
 |webUrl        |String             | Содержит ссылку на сам веб-сайт.                                                        |
 
-## <a name="properties"></a>Свойства
-|Свойство|Тип|Описание|
-|:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|Коллекция String|Содержит категории, связанные с веб-сайтом пользователя (например, персональный, рецепты).|
-|createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, создавшего сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|createdDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|description|String|Содержит описание веб-сайта.|
-|displayName|String|Содержит понятное имя для веб-сайта.|
-|id|String|Идентификатор, используемый для индивидуальной адресации объекта. Наследуется от [объекта](../resources/entity.md)|
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, которое последним изменил объект. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|lastModifiedDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|webUrl|String|Содержит ссылку на сам веб-сайт.|
-
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 449b154059bb869abf894c315516ac65f585af23
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: b3fac827fb6f526fa515ab6c87d7027a9cb863c9
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65884292"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899983"
 ---
 # <a name="remove-a-member"></a>Удаление участника
 
@@ -26,7 +26,12 @@ ms.locfileid: "65884292"
 |:--------------------|:---------------------------------------------------------|
 |Делегированное (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All    |
 |Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | AdministrativeUnit.ReadWrite.All |
+|Application | AdministrativeUnit.ReadWrite.All |
+
+Чтобы удалить участника из административной единицы, вызывающему субъекту должна быть назначена одна из следующих ролей [Azure AD](/azure/active-directory/roles/permissions-reference):
+
+* Администратор привилегированных ролей
+* Глобальный администратор
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

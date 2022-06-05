@@ -1,16 +1,16 @@
 ---
 title: Перечисление входов
 doc_type: apiPageType
-description: Получение списка входов пользователей в клиенте Azure Active Directory клиента.
+description: Получение списка входов пользователей в клиенте Azure Active Directory.
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 08f857df962878ff60d711043ac4c32c4543951d
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 2774b547eb38c2d02944f7187fb6aefe0c021a07
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821234"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900032"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -18,9 +18,9 @@ ms.locfileid: "65821234"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [signIn](../resources/signin.md) . Список содержит входы пользователей для вашего Azure Active Directory клиента. Входы, в которых имя пользователя и пароль передаются как часть маркера авторизации, а успешные федеративные входы в настоящее время включаются в журналы входа.
+Получение списка объектов [signIn](../resources/signin.md) . Список содержит входы пользователей для клиента Azure Active Directory. Входы, в которых имя пользователя и пароль передаются как часть маркера авторизации, а успешные федеративные входы в настоящее время включаются в журналы входа.
 
-Максимальный и стандартный размер страницы — 1000 объектов. По умолчанию сначала возвращаются последние входы. Доступны только события входа, произошедшие в течение Azure Active Directory ([Azure AD) по](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) умолчанию.
+Максимальный и стандартный размер страницы — 1000 объектов. По умолчанию сначала возвращаются последние входы. Доступны только события входа, произошедшие в течение срока хранения Azure Active Directory (Azure AD [) по](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) умолчанию.
 
 [!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
@@ -38,15 +38,17 @@ ms.locfileid: "65821234"
 > [!IMPORTANT]
 > Этот API имеет известная проблема и в настоящее время требует согласия на разрешения **AuditLog.Read.All** и **Directory.Read.All**.[](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports)
 
-Приложения должны быть [правильно зарегистрированы в](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD.
+Приложения должны быть [правильно зарегистрированы](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
-Помимо делегированных разрешений, вошед в систему пользователь должен принадлежать к одной из следующих ролей каталога, которые позволяют ему считывать отчеты о входе. Дополнительные сведения о ролях каталогов см. Azure AD [встроенных ролей](/azure/active-directory/roles/permissions-reference):
+Помимо делегированных разрешений, вошед в систему пользователь должен принадлежать к одной из следующих ролей каталога, которые позволяют ему считывать отчеты о входе. Дополнительные сведения о ролях каталогов см. в статье о встроенных ролях [Azure AD](/azure/active-directory/roles/permissions-reference):
 + Глобальный администратор
 + Глобальный читатель
 + Читатель отчетов
 + Администратор безопасности
 + Оператор безопасности
 + Читатель сведений о безопасности
+
+[!INCLUDE [signins-roles-for-ca-data](../../includes/signins-roles-for-ca-data.md)]
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -62,7 +64,7 @@ GET auditLogs/signIns
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

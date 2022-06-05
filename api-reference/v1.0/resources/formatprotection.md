@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса FormatProtection
+title: Тип ресурса formatProtection
 description: Представляет защиту формата объекта Range.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: resourcePageType
-ms.openlocfilehash: 7f4c6b3c29092e74dbbd749e9d75319b7f1fe028
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 592699a23a7a418faa8e9679111b41c0eb964b2f
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084575"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900459"
 ---
-# <a name="formatprotection-resource-type"></a>Тип ресурса FormatProtection
+# <a name="formatprotection-resource-type"></a>Тип ресурса formatProtection
 
 Пространство имен: microsoft.graph
 
@@ -32,11 +32,11 @@ ms.locfileid: "59084575"
 |formulaHidden|boolean|Указывает, скрывает ли Excel формулу для ячеек в диапазоне. Значение NULL указывает, что для всего диапазона не задан единый параметр скрытия формулы.|
 |locked|boolean|Указывает, блокирует ли Excel ячейки в объекте. Значение NULL указывает, что для всего диапазона не задан единый параметр блокировки.|
 
-## <a name="relationships"></a>Связи
-Нет
+## <a name="relationships"></a>Отношения
+Отсутствуют.
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 198bae1ac133b23049347363d003019d4cdb11fa
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 78e9e916da41ad8e28c2776e6c7924c5a5c4cf38
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205294"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900074"
 ---
 # <a name="unifiedroleassignmentscheduleinstance-filterbycurrentuser"></a>unifiedRoleAssignmentScheduleInstance: filterByCurrentUser
 Пространство имен: microsoft.graph
@@ -22,9 +22,9 @@ ms.locfileid: "65205294"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
+|Делегированное (рабочая или учебная учетная запись)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Application|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -38,7 +38,7 @@ GET /roleManagement/directory/roleAssignmentScheduleInstances/filterByCurrentUse
 
 ## <a name="function-parameters"></a>Параметры функции
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
-В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
+В следующей таблице показаны параметры, необходимые для этой функции.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
@@ -56,7 +56,7 @@ GET /roleManagement/directory/roleAssignmentScheduleInstances/filterByCurrentUse
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения `200 OK` эта функция возвращает код отклика и коллекцию [unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md) в тексте отклика.
 

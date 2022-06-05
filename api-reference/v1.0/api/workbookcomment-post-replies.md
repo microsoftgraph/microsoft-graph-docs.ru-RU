@@ -1,22 +1,22 @@
 ---
-title: Создание книгиCommentReply
+title: Создание workbookCommentReply
 description: Используйте этот API для создания новой книгиCommentReply.
 ms.localizationpriority: medium
 author: grangeryy
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: 191a97ed263c448790f795437bebca305216daf2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 44487008863da83246198fcde39394d6ecc078fd
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104536"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898597"
 ---
-# <a name="create-workbookcommentreply"></a>Создание книгиCommentReply
+# <a name="create-workbookcommentreply"></a>Создание workbookCommentReply
 
 Пространство имен: microsoft.graph
 
-Создайте новый [объект книгиCommentReply.](../resources/workbookcommentreply.md)
+Создайте объект [workbookCommentReply](../resources/workbookcommentreply.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "59104536"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Files.ReadWrite |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | Files.ReadWrite |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -41,15 +41,15 @@ POST /me/drive/root:/{item-path}:/workbook/comments/{id}/replies
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [книгиCommentReply.](../resources/workbookcommentreply.md)
+В тексте запроса добавьте представление объекта [workbookCommentReply](../resources/workbookcommentreply.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика и новый объект `201 Created` [workbookCommentReply](../resources/workbookcommentreply.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и новый [объект workbookCommentReply](../resources/workbookcommentreply.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

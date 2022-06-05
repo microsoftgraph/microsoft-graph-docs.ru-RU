@@ -3,14 +3,14 @@ title: Обновление объекта inferenceclassificationoverride
 description: 'Изменение поля **classifyAs** переопределения указанным образом. '
 ms.localizationpriority: medium
 author: abheek-das
-ms.prod: ''
+ms.prod: mail
 doc_type: apiPageType
-ms.openlocfilehash: ac4dec87574e5b6c440e9737b7eb4e1816c33270
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0efc49ab4e47e5b58a1f6da9d1d048601df8cbaf
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124746"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65897918"
 ---
 # <a name="update-inferenceclassificationoverride"></a>Обновление объекта inferenceclassificationoverride
 
@@ -51,7 +51,7 @@ PATCH /users/{id}/inferenceClassification/overrides/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|classifyAs|string| Указывает, как должны классифицироваться все входящие сообщения от определенного отправителя. Возможные значения: `focused` , `other` .|
+|classifyAs|string| Указывает, как должны классифицироваться все входящие сообщения от определенного отправителя. Возможные значения: `focused`, `other`.|
 
 ## <a name="response"></a>Отклик
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса daylightTimeZoneOffset
 description: Определяет, когда в часовом поясе осуществляется переход со стандартного времени на летнее.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: calendar
 author: abheek-das
-ms.openlocfilehash: 31bd6c1b3e9ec50c2e922ae7868b1d39ea66e4aa
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 06d816085d13a6e921ebbdd98a9a18d72ecf289f
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135683"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898065"
 ---
 # <a name="daylighttimezoneoffset-resource-type"></a>Тип ресурса daylightTimeZoneOffset
 
@@ -41,7 +41,7 @@ ms.locfileid: "50135683"
 | year | Edm.Int32 | Указывает, как часто (в годах) осуществляется переход со стандартного времени на летнее. Например, значение 0 указывает, что переход осуществляется ежегодно.|
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

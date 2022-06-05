@@ -1,28 +1,28 @@
 ---
-title: тип ресурсов integerRange
-description: Представляет инклюзивный диапазон наборов, описанных двумя границами Int64.
+title: Тип ресурса integerRange
+description: Представляет инклюзивный диапазон целых чисел, описанных двумя границами Int64.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 31661802fa198790e4d30f2da58ac11c86f19b6e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b869d99fc4fef8b6804a3559ddd21e7d661ea32b
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036482"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899437"
 ---
-# <a name="integerrange-resource-type"></a>тип ресурсов integerRange
+# <a name="integerrange-resource-type"></a>Тип ресурса integerRange
 
 Пространство имен: microsoft.graph
 
-Представляет инклюзивный диапазон наборов, описанных двумя границами Int64.
+Представляет инклюзивный диапазон целых чисел, описанных двумя границами Int64.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|start|Int64|Инклюзивная нижняя граница диапазона integer.|
-|end|Int64|Инклюзивная верхняя граница диапазона integer.|
+|start|Int64|Инклюзивная нижняя граница целочисленного диапазона.|
+|end|Int64|Инклюзивная верхняя граница целочисленного диапазона.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -1,39 +1,39 @@
 ---
 author: JeremyKelley
-description: Хеш-коды групп ресурсов, доступные в виде одной структуры для элемента.
+description: Группы ресурсов хэширования, доступные в одной структуре для элемента.
 ms.date: 09/10/2017
 title: Hashes
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: df3629be679b714805ea6618b7aa963214f32793
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: files
+ms.openlocfilehash: a4d6bf2851ded2de61ff48f30000e5b872c2c26e
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013610"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899169"
 ---
-# <a name="hashes-resource-type"></a>Тип ресурса hashs
+# <a name="hashes-resource-type"></a>Тип ресурса hashes
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Группирует доступные хэши в единую структуру для элемента.
+Группирует доступные хэши в одну структуру для элемента.
 
 > [!NOTE]
-> Не все службы предоставляют значение для всех перечисленных свойств хеша. В OneDrive для бизнеса и SharePoint Server 2016, **sha1Hash**, **crc32Hash**и **sha256Hash** недоступны. В OneDrive персональный хэш **quickXorHash** недоступен.
+> Не все службы предоставляют значение для всех перечисленных свойств хэша. В OneDrive для бизнеса и SharePoint Server 2016 **sha1Hash**, **crc32Hash** и **sha256Hash** недоступны. В OneDrive персональный хэш **quickXorHash** недоступен.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство         | Тип   | Описание                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
 | **sha1Hash**     | String | Хэш SHA1 для содержимого файла (если доступно). Только для чтения. |
-| **sha256Hash**   | String | Хэш SHA256 для содержимого файла (если он доступен). Только для чтения. |
+| **sha256Hash**   | Строка | Хэш SHA256 для содержимого файла (если он доступен). Только для чтения. |
 | **crc32Hash**    | String | Значение CRC32 файла (если доступно). Только для чтения.            |
 | **quickXorHash** | Строка | Особый хэш файла, который можно использовать, чтобы определить, было ли изменено содержимое файла (если доступно). Только для чтения. |
 
-> **Примечание:** В случаях, когда хэш-значения недоступны, значения хеша для элемента будут обновлены после загрузки элемента.
+> **Примечание:** В случаях, когда хэш-значения недоступны, хэш-значения элемента будут обновлены после скачивания элемента.
 
 ## <a name="json-representation"></a>Представление JSON
 

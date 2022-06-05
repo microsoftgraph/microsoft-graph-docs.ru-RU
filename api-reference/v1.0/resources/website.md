@@ -3,14 +3,14 @@ title: Тип ресурса веб-сайта
 description: Представляет веб-сайт.
 ms.localizationpriority: medium
 author: AAmatino
-ms.prod: ''
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: c0daa5106f70f049d070968749e5a7d391783d59
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f63aba19d6f3e0e942ad35f445b43ed7b1bff1e3
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134215"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899668"
 ---
 # <a name="website-resource-type"></a>Тип ресурса веб-сайта
 
@@ -24,7 +24,7 @@ ms.locfileid: "59134215"
 |:---------------|:--------|:----------|
 |type|websiteType| Допустимые значения: `other`, `home`, `work`, `blog`, `profile`.|
 |address|string|URL-адрес веб-сайта.|
-|displayName|string|Отображение имени веб-сайта.|
+|displayName|string|Отображаемое имя веб-сайта.|
 
 ## <a name="json-representation"></a>Представление JSON
 

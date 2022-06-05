@@ -1,29 +1,29 @@
 ---
-title: " тип ресурса controlScore"
-description: Этот ресурс содержит оценку клиента и описание для отдельного управления.
+title: " Тип ресурса controlScore"
+description: Этот ресурс содержит оценку и описание клиента для отдельного элемента управления.
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: 347e7830239f5bf04f0c8611c955173bdda0f18d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b749a81b00a1fe93c12fa5b8b17b8e7f95ca89ae
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146816"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900188"
 ---
-#  <a name="controlscore-resource-type"></a>тип ресурса controlScore
+#  <a name="controlscore-resource-type"></a>Тип ресурса controlScore
 
 Пространство имен: microsoft.graph
 
-Этот ресурс содержит оценку клиента и описание для отдельного управления.
+Этот ресурс содержит оценку и описание клиента для отдельного элемента управления.
 
 |Имя |Тип |Описание |
 |:--|:--|:--|
-|   controlName |   String  |   Управление уникальным именем |
-|   оценка   |   Двойное с плавающей точкой  |  Клиент достиг показателей для управления (он меняется день ото дня в зависимости от операций клиента на контроле). |
-|   controlCategory |   String  |  Категория действия управления (Identity, Data, Device, Apps, Infrastructure). |
-|   description |   String  |  Описание управления. |
+|   controlName |   Строка  |   Управление уникальным именем |
+|   Оценка по   |   Двойное с плавающей точкой  |  Клиент достигает оценки для элемента управления (он изменяется день за днем в зависимости от операций клиента в элементе управления). |
+|   controlCategory |   Строка  |  Категория действий управления (удостоверение, данные, устройство, приложения, инфраструктура). |
+|   description |   Строка  |  Описание элемента управления. |
 
 ## <a name="json-representation"></a>Представление JSON
 

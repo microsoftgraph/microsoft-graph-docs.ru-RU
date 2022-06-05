@@ -4,14 +4,14 @@ ms.date: 09/10/2017
 title: Folder
 ms.localizationpriority: medium
 description: 'Ресурс Folder — это единая структура, объединяющая данные элемента, связанные с папками. '
-ms.prod: ''
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: af6db2e7b5c6418e46643007ff89ac4b48a5174f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f744620c34b2ddbe084d3c7d07b7783cce4fecd8
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123372"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900064"
 ---
 # <a name="folder-resource-type"></a>Тип ресурса Folder
 

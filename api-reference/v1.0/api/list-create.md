@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Создание списка на сайте.
 doc_type: apiPageType
-ms.openlocfilehash: 8539ce7508d49476edf663eb2fc3cbfdeebca6ea
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: d79d8392672253aeb273656f2479460a840a10fe
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335628"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900093"
 ---
 # <a name="create-a-new-list"></a>Создание списка
 
@@ -24,9 +24,9 @@ ms.locfileid: "63335628"
 
 |            Тип разрешения             | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Sites.Manage.All                            |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Sites.Manage.All                            |
+| Делегированное (рабочая или учебная учетная запись)     | Sites.Manage.All                            |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Application                            | Sites.Manage.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,19 +43,19 @@ POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
-В теле запроса поставляем представление JSON объекта [списка][] .
+В тексте запроса добавьте представление объекта списка [в формате][] JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `201 Created` ответа и объект [списка][] в тексте ответа. 
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [списка][] в тексте отклика. 
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
-Ниже приводится пример создания нового общего списка.
+Ниже приведен пример создания универсального списка.
 
 > **Примечание.** Настраиваемые столбцы являются необязательными.
 
@@ -114,7 +114,7 @@ Content-Type: application/json
 ---
 
 
-## <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

@@ -1,33 +1,31 @@
 ---
 title: Тип ресурса unifiedRoleManagementPolicyApprovalRule
-description: UnifiedRoleManagementPolicyApprovalRule указывает правило утверждения, связанное с политикой управления ролем. Он является производным от microsoft.graph.unifiedRoleManagementPolicyRule.
+description: Тип, производный от типа ресурса unifiedRoleManagementPolicyRule, который определяет правила для утверждения назначения роли.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: a48917590c966424473258b9d40af432f98bf917
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 882961f6ca7a5caed8ca7eee52bf18de5f7a940a
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65397560"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900004"
 ---
 # <a name="unifiedrolemanagementpolicyapprovalrule-resource-type"></a>Тип ресурса unifiedRoleManagementPolicyApprovalRule
 
 Пространство имен: microsoft.graph
 
-UnifiedRoleManagementPolicyApprovalRule указывает правило утверждения, связанное с политикой управления ролем. Он является производным от microsoft.graph.unifiedRoleManagementPolicyRule.
-
-Наследуется [от unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
+Тип, производный от типа ресурса [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) , который определяет правила для утверждения назначения роли.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор правила. Наследуется от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
-|setting|[approvalSettings](../resources/approvalsettings.md)|Параметр утверждения для правила.|
-|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Целевой объект для правила правила. Наследуется от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
+|id|Строка|Идентификатор правила. Наследуется от [сущности](../resources/entity.md).|
+|setting|[approvalSettings](../resources/approvalsettings.md)|Параметры для утверждения назначения роли.|
+|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Определяет сведения об области, предназначенной для правила утверждения. Сведения могут включать тип субъекта, тип назначения роли и действия, влияющие на роль. Наследуется [от unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md). Поддерживает `$filter` (`eq`, `ne`).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

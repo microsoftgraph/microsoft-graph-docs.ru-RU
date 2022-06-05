@@ -3,14 +3,14 @@ title: Тип ресурсов locationConstraint
 description: Условия, заданные клиентом в отношении расположения для проведения собрания.
 ms.localizationpriority: medium
 author: harini84
-ms.prod: ''
+ms.prod: calendar
 doc_type: resourcePageType
-ms.openlocfilehash: a2cafad390f0283ddefa09ea25f9ddf8d16b4dd5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5381c688f007a6c9d30deccf384ae70a98492c43
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134698"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898492"
 ---
 # <a name="locationconstraint-resource-type"></a>Тип ресурсов locationConstraint
 
@@ -20,7 +20,7 @@ ms.locfileid: "59134698"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление JSON ресурса.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

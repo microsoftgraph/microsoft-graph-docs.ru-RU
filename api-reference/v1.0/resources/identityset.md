@@ -1,23 +1,23 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: IdentitySet
+title: Тип ресурса identitySet
 ms.localizationpriority: medium
-description: Ресурс IdentitySet представляет собой коллекцию ресурсов identity с ключами.
-ms.prod: ''
+description: Представляет коллекцию ресурсов удостоверений с ключами.
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: a37afd466cf99851ef6343f69c8d97188476ae72
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3f91b44dd10d842787aba9af96fa57a4ef67f53b
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032372"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899941"
 ---
-# <a name="identityset-resource-type"></a>Тип ресурса IdentitySet
+# <a name="identityset-resource-type"></a>Тип ресурса identitySet
 
 Пространство имен: microsoft.graph
 
-Ресурс **IdentitySet** представляет собой коллекцию ресурсов [identity](identity.md) с ключами. Он представляет набор удостоверений, связанных с различными событиями для элемента, например _созданием_ или _последним изменением_.
+Ресурс **identitySet** представляет собой коллекцию ресурсов удостоверений [с](identity.md) ключами.
+Он представляет набор удостоверений, связанных с различными событиями для элемента, например _созданием_ или _последним изменением_.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -44,7 +44,7 @@ ms.locfileid: "59032372"
 
 ## <a name="remarks"></a>Заметки 
 
-Сведения об использовании ресурсов **IdentitySet** см. в описании типа [DriveItem](driveitem.md).
+Сведения [об использовании ресурсов](driveitem.md) identitySet см. в **разделе driveItem** .
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

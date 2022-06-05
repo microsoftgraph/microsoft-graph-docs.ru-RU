@@ -3,14 +3,14 @@ title: Обновление значка
 description: Обновление свойств объекта значка.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: f523d44be11a1a5a27324cec2e4613dc6241161f
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a34bfa55d16235905b45fa434ddb13a6cf22211f
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60937236"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65897834"
 ---
 # <a name="update-icon"></a>Обновление значка
 
@@ -22,8 +22,8 @@ ms.locfileid: "60937236"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -46,7 +46,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |index|int|Представляет собой индекс значка данного набора.|
-|set|string|Представляет набор, в который входит значок. Возможные значения: `Invalid` `ThreeArrows` , , `ThreeArrowsGray` `ThreeFlags` `ThreeTrafficLights1` `ThreeTrafficLights2` `ThreeSigns` `ThreeSymbols` `ThreeSymbols2` `FourArrows` `FourArrowsGray` , `FourRedToBlack` `FourRating` `FourTrafficLights` `FiveArrows` `FiveArrowsGray` `FiveRating` `FiveQuarters` `ThreeStars` `ThreeTriangles` . `FiveBoxes`|
+|set|string|Представляет набор, в который входит значок. Возможные значения: `Invalid`, , `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns``ThreeSymbols`, `FourArrows``ThreeSymbols2`, `FourRating``FourArrowsGray``FourRedToBlack`, `FourTrafficLights`, `FiveArrows`, , `FiveArrowsGray`, , `FiveRating`, `FiveQuarters`, , , `ThreeStars`, . `FiveBoxes``ThreeTriangles`|
 
 ## <a name="response"></a>Отклик
 

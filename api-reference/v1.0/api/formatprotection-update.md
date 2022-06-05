@@ -3,14 +3,14 @@ title: Обновление объекта FormatProtection
 description: Обновление свойств объекта FormatProtection.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: 1842aa4c33e16c3e4154ec06cb99098fba6a0c88
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 09765434092ef2ad644c3831e8e72223b784c901
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940720"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900123"
 ---
 # <a name="update-formatprotection"></a>Обновление объекта FormatProtection
 
@@ -22,8 +22,8 @@ ms.locfileid: "60940720"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос

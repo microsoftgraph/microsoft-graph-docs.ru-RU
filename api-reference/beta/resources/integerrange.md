@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Интежерранже
-description: Представляет включающий диапазон целых чисел, который описывается двумя границами Int64.
+title: Тип ресурса integerRange
+description: Представляет инклюзивный диапазон целых чисел, описанных двумя границами Int64.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: ee879104878189ddcaf51f65e4e127a61798c811
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e370d7b0fcf67c76fcb43cba7c9382521e8ada78
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47986058"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900137"
 ---
-# <a name="integerrange-resource-type"></a>Тип ресурса Интежерранже
+# <a name="integerrange-resource-type"></a>Тип ресурса integerRange
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет включающий диапазон целых чисел, который описывается двумя границами Int64.
+Представляет инклюзивный диапазон целых чисел, описанных двумя границами Int64.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|start|Int64|Инклюзивная Нижняя граница диапазона целых чисел.|
-|end|Int64|Включающая верхняя граница диапазона целых чисел.|
+|start|Int64|Инклюзивная нижняя граница целочисленного диапазона.|
+|end|Int64|Инклюзивная верхняя граница целочисленного диапазона.|
 
 ## <a name="json-representation"></a>Представление JSON
 

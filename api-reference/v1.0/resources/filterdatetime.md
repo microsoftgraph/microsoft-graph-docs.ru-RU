@@ -3,14 +3,14 @@ title: Тип ресурса FilterDatetime
 description: Представляет способ фильтрации даты при фильтрации по значениям.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: resourcePageType
-ms.openlocfilehash: c51e52499530e5ec0caa6c382c9f3e96a14e0d6c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f895128fea1cabd0f4111446443c758f09b06bdd
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137646"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899031"
 ---
 # <a name="filterdatetime-resource-type"></a>Тип ресурса FilterDatetime
 
@@ -24,7 +24,7 @@ ms.locfileid: "59137646"
 |дата|string|Дата в формате ISO8601, используемая для фильтрации данных.|
 |specificity|string|Точность, с которой производится фильтрация данных на основе даты. Например, если указана дата 2005-04-02, а для свойства specificity задано значение month, после фильтрации останутся все строки, датированные апрелем 2009 г. Допустимые значения: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

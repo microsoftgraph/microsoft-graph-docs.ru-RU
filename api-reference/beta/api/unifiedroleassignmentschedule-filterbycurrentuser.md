@@ -1,23 +1,23 @@
 ---
 title: 'unifiedRoleAssignmentSchedule: filterByCurrentUser'
-description: Получение списка объектов unifiedRoleAssignmentSchedule и их свойств, отфильтрованных по определенному субъекту-пользователю
+description: Получение расписаний для активных операций назначения ролей, для которых вошед в систему пользователь является субъектом.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e6499aa163ea860cf7b8e09b4c5d7e80b7447ea4
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 61cac73364365eb27b8210acc294099e0fd38454
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399434"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899927"
 ---
 # <a name="unifiedroleassignmentschedule-filterbycurrentuser"></a>unifiedRoleAssignmentSchedule: filterByCurrentUser
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [unifiedRoleAssignmentSchedule](../resources/unifiedRoleAssignmentSchedule.md) и их свойств, связанных с определенным основным объектом.
+Получение расписаний для активных операций назначения ролей, для которых вошед в систему пользователь является субъектом.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "65399434"
 |:---|:---|
 |Делегированное (рабочая или учебная учетная запись)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложения|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
+|Приложение|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,14 +39,15 @@ GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='pr
 ```
 
 ## <a name="function-parameters"></a>Параметры функции
-В следующей таблице показаны параметры запроса, которые можно использовать с этим методом.
+В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
+В следующей таблице показаны параметры, необходимые для этой функции.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|roleAssignmentScheduleFilterByCurrentUserOptions|Фильтр для запроса объектов, для которых текущий пользователь является субъектом. Допустимое значение: `principal`. Обязательно.|
+|on|roleAssignmentScheduleFilterByCurrentUserOptions| The possible values are `principal`, `unknownFutureValue`.|
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select``$filter`запроса OData `$expand` и , чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -58,7 +59,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='pr
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию [объектовunifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) в теле отклика.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

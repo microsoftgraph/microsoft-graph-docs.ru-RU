@@ -1,29 +1,29 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: Видео
+title: Тип видео ресурса
 ms.localizationpriority: medium
-description: Ресурс Video — это единая структура, объединяющая элементы данных, связанные с видео.
-ms.prod: ''
+description: Видеоматериалы группирует элементы данных, связанные с видео, в одну структуру.
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: d46949bf48455fbb74a99891a80984bdedb460fb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 81a2ccd6250261c87b5af84cc0bef0ace4342702
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134271"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65897827"
 ---
-# <a name="video-resource-type"></a>Тип ресурса video
+# <a name="video-resource-type"></a>Тип видео ресурса
 
 Пространство имен: microsoft.graph
 
-Ресурс **Video** — это единая структура, объединяющая элементы данных, связанные с видео.
+**Видеоматериалы** группирует элементы данных, связанные с видео, в одну структуру.
 
-Если у ресурса [**DriveItem**](driveitem.md) есть ненулевой аспект **video**, то этот ресурс представляет видеофайл. Свойства ресурса **Video** заполняются путем извлечения метаданных из такого файла.
+Если [**driveItem**](driveitem.md) имеет аспект видео, отличный от **NULL,** элемент представляет видеофайл.
+Свойства видео ресурса **заполняются** путем извлечения метаданных из файла.
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление JSON ресурса.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -57,7 +57,7 @@ ms.locfileid: "59134271"
 | **bitrate**               | Int32  | Скорость видео в битах в секунду.
 | **duration**              | Int64  | Длительность файла в миллисекундах.
 | **fourCC**                | string | Название формата видео в виде четырехзначного кода.
-| **frameRate**             | double | Частота кадров видео.
+| **Кадров**             | double | Частота кадров видео.
 | **height**                | Int32  | Высота видео в пикселях.
 | **width**                 | Int32  | Ширина видео в пикселях.
 
@@ -65,7 +65,7 @@ ms.locfileid: "59134271"
 
 ## <a name="remarks"></a>Заметки
 
-Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
+Дополнительные сведения о аспектах на driveItem см. в [разделе driveItem](driveitem.md).
 
 <!-- {
   "type": "#page.annotation",

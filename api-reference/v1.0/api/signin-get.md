@@ -1,16 +1,16 @@
 ---
 title: Получение объекта signIn
-description: Описывает метод get ресурса signIn (сущности) из microsoft API Graph.
+description: Описывает метод get ресурса signIn (сущности) из API Microsoft Graph.
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 099075180c81c1b4cf242b6ff8c0160a0b607f25
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: daae2d982a3a5609483f3a9a742ffa3d5b7ee752
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821276"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898980"
 ---
 # <a name="get-signin"></a>Получение объекта signIn
 
@@ -34,15 +34,17 @@ ms.locfileid: "65821276"
 > [!IMPORTANT]
 > Этот API имеет известная проблема и в настоящее время требует согласия на разрешения **AuditLog.Read.All** и **Directory.Read.All**.[](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports)
 
-Приложения должны быть [правильно зарегистрированы в](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD.
+Приложения должны быть [правильно зарегистрированы](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
-Помимо делегированных разрешений, вошед в систему пользователь должен принадлежать к одной из следующих ролей каталога, которые позволяют ему считывать отчеты о входе. Дополнительные сведения о ролях каталогов см. Azure AD [встроенных ролей](/azure/active-directory/roles/permissions-reference):
+Помимо делегированных разрешений, вошед в систему пользователь должен принадлежать к одной из следующих ролей каталога, которые позволяют ему считывать отчеты о входе. Дополнительные сведения о ролях каталогов см. в статье о встроенных ролях [Azure AD](/azure/active-directory/roles/permissions-reference):
 + Глобальный администратор
 + Глобальный читатель
 + Читатель отчетов
 + Администратор безопасности
 + Оператор безопасности
 + Читатель сведений о безопасности
+
+[!INCLUDE [signins-roles-for-ca-data](../../includes/signins-roles-for-ca-data.md)]
 
 ## <a name="http-request"></a>HTTP-запрос
 

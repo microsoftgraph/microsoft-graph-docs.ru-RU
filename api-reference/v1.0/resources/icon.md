@@ -3,14 +3,14 @@ title: Тип ресурса Icon
 description: Представляет значок ячейки.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 73ae9bbe240df7bd1e8ca2b6cb7a4a0556fae0f5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cc8a3ff251a321d6accc89015ba9b0ec751ed0ed
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099002"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899710"
 ---
 # <a name="icon-resource-type"></a>Тип ресурса Icon
 
@@ -30,7 +30,7 @@ ms.locfileid: "59099002"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |index|int|Представляет собой индекс значка данного набора.|
-|set|string|Представляет набор, в который входит значок. Возможные значения: `Invalid` `ThreeArrows` , , `ThreeArrowsGray` `ThreeFlags` `ThreeTrafficLights1` `ThreeTrafficLights2` `ThreeSigns` `ThreeSymbols` `ThreeSymbols2` `FourArrows` `FourArrowsGray` , `FourRedToBlack` `FourRating` `FourTrafficLights` `FiveArrows` `FiveArrowsGray` `FiveRating` `FiveQuarters` `ThreeStars` `ThreeTriangles` . `FiveBoxes`|
+|set|string|Представляет набор, в который входит значок. Возможные значения: `Invalid`, , `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns``ThreeSymbols`, `FourArrows``ThreeSymbols2`, `FourRating``FourArrowsGray``FourRedToBlack`, `FourTrafficLights`, `FiveArrows`, , `FiveArrowsGray`, , `FiveRating`, `FiveQuarters`, , , `ThreeStars`, . `FiveBoxes``ThreeTriangles`|
 
 ## <a name="relationships"></a>Отношения
 Нет

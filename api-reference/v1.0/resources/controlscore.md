@@ -1,33 +1,33 @@
 ---
-title: тип ресурса controlScore
-description: Этот ресурс содержит оценку клиента и описание для отдельного управления.
+title: Тип ресурса controlScore
+description: Этот ресурс содержит оценку и описание клиента для отдельного элемента управления.
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: ''
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 155b17ed62e3aa61ea523f57ce17fd1ec0df1ee9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 393f1323c72d6755b2947188dfcefe472b39b4ce
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049544"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898247"
 ---
-#  <a name="controlscore-resource-type"></a>тип ресурса controlScore
+#  <a name="controlscore-resource-type"></a>Тип ресурса controlScore
 
 Пространство имен: microsoft.graph
 
-Содержит оценку клиента и описание для отдельного управления.
+Содержит оценку и описание клиента для отдельного элемента управления.
 
 ## <a name="properties"></a>Свойства
 
 |Имя |Тип |Описание |
 |:--|:--|:--|
-|controlName|String|Управление уникальным именем.|
-|оценка|Двойное с плавающей точкой|Клиент достиг показателей для управления (он меняется день ото дня в зависимости от операций клиента на контроле).|
-|controlCategory|Строка|Категория действия управления (Identity, Data, Device, Apps, Infrastructure).|
-|description|Строка| Описание управления.|
+|controlName|Строка|Управление уникальным именем.|
+|Оценка по|Двойное с плавающей точкой|Клиент достигает оценки для элемента управления (он изменяется день за днем в зависимости от операций клиента в элементе управления).|
+|controlCategory|Строка|Категория действий управления (удостоверение, данные, устройство, приложения, инфраструктура).|
+|description|Строка| Описание элемента управления.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

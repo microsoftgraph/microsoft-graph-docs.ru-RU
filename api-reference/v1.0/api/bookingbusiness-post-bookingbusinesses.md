@@ -1,31 +1,31 @@
 ---
 title: Создание bookingBusiness
-description: Создание нового бизнеса Microsoft Bookings в клиенте.
+description: Создайте новый бизнес Microsoft Bookings в клиенте.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 54f3bf6e57baad1f12cdeeeb8945dda50bdf5783
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: 65b46e7683e5ab715c381fe646657becb9e843a2
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014217"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898926"
 ---
 # <a name="create-bookingbusiness"></a>Создание bookingBusiness
 
 Пространство имен: microsoft.graph
 
-Создание нового [бизнеса Microsoft Bookings](../resources/bookingbusiness.md) в клиенте.
+Создайте новый [бизнес Microsoft Bookings](../resources/bookingbusiness.md) в клиенте.
 
-Это первый шаг в настройке бизнеса Bookings, в котором необходимо указать имя бизнес-отображения. Вы можете включить другие сведения, такие как бизнес-адрес, адрес веб-сайта [](bookingbusiness-update.md) и политику планирования, или установить эту информацию позже, обновив **bookingBusiness.**
+Это первый шаг в настройке компании Bookings, в которой необходимо указать отображаемое имя компании. Вы можете включить другие сведения, такие как рабочий адрес, адрес веб-сайта и политику планирования, или задать эти сведения позже [](bookingbusiness-update.md), **обновив bookingBusiness**.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Bookings.Manage.All  |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Делегированное (рабочая или учебная учетная запись) |  Bookings.Manage.All  |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -40,11 +40,11 @@ POST /solutions/bookingBusinesses
 | Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса указать JSON-представление [объекта bookingBusiness.](../resources/bookingbusiness.md)
+В тексте запроса добавьте представление объекта [bookingBusiness](../resources/bookingbusiness.md) в формате JSON.
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект bookingBusiness](../resources/bookingbusiness.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [bookingBusiness](../resources/bookingbusiness.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -60,7 +60,6 @@ Content-type: application/json
 {
     "displayName":"Fourth Coffee",
     "address":{
-        "type":"mall",
         "postOfficeBox":"P.O. Box 123",
         "street":"4567 Main Street",
         "city":"Buffalo",
@@ -98,7 +97,6 @@ Content-type: application/json
     "isPublished":false,
     "publicUrl":null,
     "address":{
-        "type":"mall",
         "postOfficeBox":"P.O. Box 123",
         "street":"4567 Main Street",
         "city":"Buffalo",

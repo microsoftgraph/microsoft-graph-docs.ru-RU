@@ -1,24 +1,24 @@
 ---
-title: тип ресурсов educationOutcome
-description: Результат классификации назначения
+title: Тип ресурса educationOutcome
+description: Результат проверки назначения
 ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 327ab957b3c78a9b6c848a6b29c1108fee6928c4
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 5b5363bda8faec782fda47255db37bd8d09e53c0
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767407"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65897958"
 ---
-# <a name="educationoutcome-resource-type"></a>тип ресурсов educationOutcome
+# <a name="educationoutcome-resource-type"></a>Тип ресурса educationOutcome
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Результат классификации назначения. Это базовый класс; производными типами являются [educationFeedbackOutcome,](educationfeedbackoutcome.md) [educationPointsOutcome](educationpointsoutcome.md)и [educationRubricOutcome.](educationrubricoutcome.md)
+Результат переоценок назначения. Это базовый класс. производными типами являются [educationFeedbackOutcome](educationfeedbackoutcome.md), [educationPointsOutcome](educationpointsoutcome.md), [educationRubricOutcome](educationrubricoutcome.md) и [educationFeedbackResourceOutcome](educationfeedbackresourceoutcome.md).
 
 ## <a name="methods"></a>Методы
 
@@ -30,14 +30,14 @@ ms.locfileid: "59767407"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String|Только для чтения.|
-|lastModifiedBy|[identitySet](identityset.md)|Человек, обновивший ресурс.|
-|lastModifiedDateTime|DateTimeOffset|Время последнего изменения ресурса.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC на 1 января 2021 года `2021-01-01T00:00:00Z` .|
+|lastModifiedBy|[identitySet](identityset.md)|Пользователь, обновивший ресурс.|
+|lastModifiedDateTime|DateTimeOffset|Момент времени последнего изменения ресурса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь в формате UTC 1 января 2021 г. — это .`2021-01-01T00:00:00Z`|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
-Нет
+Отсутствуют.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

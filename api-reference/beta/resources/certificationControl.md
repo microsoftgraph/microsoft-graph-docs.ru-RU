@@ -1,27 +1,27 @@
 ---
-title: " тип ресурса certificationControl"
-description: Этот ресурс содержит данные сертификации соответствия требованиям, связанные с безопасным управлением счетами.
+title: " Тип ресурса certificationControl"
+description: Этот ресурс содержит данные о сертификации соответствия требованиям, связанные с управлением оценкой безопасности.
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: 6f436e2b9e8ebbea1ff03cdcadb024b4dae1ef6c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dd18b83f6f370caabe3d6518f7d9e2d92241f1d3
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59069518"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900207"
 ---
-#  <a name="certificationcontrol-resource-type"></a>тип ресурса certificationControl
+#  <a name="certificationcontrol-resource-type"></a>Тип ресурса certificationControl
 
 Пространство имен: microsoft.graph
 
-Содержит данные сертификации соответствия требованиям, связанные с защищенным контролем показателей.
+Содержит данные сертификации соответствия требованиям, связанные с управлением оценкой безопасности.
 
 |Свойство |Тип |Описание |
 |:--|:--|:--|
-|name | string | Имя управления сертификацией |
-|url | string | URL-адрес портала доверия службы Майкрософт |
+|name | string | Имя элемента управления сертификацией |
+|url | string | URL-адрес портала Microsoft Service Trust Portal |
 
 ## <a name="json-representation"></a>Представление JSON
 

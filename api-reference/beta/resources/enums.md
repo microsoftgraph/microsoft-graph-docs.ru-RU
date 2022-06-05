@@ -1,16 +1,16 @@
 ---
 title: Значения перечисления
-description: Значения Graph майкрософт
+description: Значения перечисления Microsoft Graph
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 509a12dc4e819a18dc2728e924814ff8d7db38cb
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 94dec31967c4ca5caf349d3ddbee5f9a7d000343
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820401"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900011"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
@@ -342,7 +342,7 @@ ms.locfileid: "65820401"
 |Целое число|
 |Справочные материалы|
 |Binary|
-|Логическое|
+|Boolean|
 |DateTime|
 
 ### <a name="mutability-values"></a>значения изменяемости
@@ -646,7 +646,7 @@ ms.locfileid: "65820401"
 |приложение|
 |users|
 |devicePlatform|
-|расположение;|
+|location|
 |clientType|
 |signInRisk|
 |userRisk|
@@ -690,7 +690,7 @@ ms.locfileid: "65820401"
 |:---|
 |все|
 |privilegedAdmin|
-|администратор|
+|Администратора|
 |пользователь;|
 |unknownFutureValue|
 
@@ -948,6 +948,15 @@ ms.locfileid: "65820401"
 |Возвращены|
 |unknownFutureValue|
 |Переназначить|
+
+### <a name="educationfeedbackresourceoutcomestatus-values"></a>Значения educationFeedbackResourceOutcomeStatus
+|Member|
+|:---|
+|notPublished|
+|pendingPublish|
+|Опубликовано|
+|failedPublish|
+|unknownFutureValue|
 
 ### <a name="externalemailotpstate-values"></a>Значения externalEmailOtpState
 
@@ -1351,7 +1360,7 @@ ms.locfileid: "65820401"
 
 | Member
 |:-------------------------
-| Обязательный
+| обязательно
 | необязательный
 | resource
 
@@ -1595,7 +1604,7 @@ ms.locfileid: "65820401"
 |NotStarted
 |Работает
 |Завершено
-|Не выполнено
+|Ошибка
 
 
 ### <a name="onenotepatchactiontype-values"></a>Значения onenotePatchActionType
@@ -1701,7 +1710,7 @@ ms.locfileid: "65820401"
 ### <a name="onenotesourceservice-values"></a>Значения onenoteSourceService
 | Member
 |:---------------------
-| Unknown
+| Неизвестно
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -1917,7 +1926,7 @@ ms.locfileid: "65820401"
 
 ### <a name="useraccountsecuritytype-values"></a>Значения userAccountSecurityType
 
-Возможные значения для типов учетных записей пользователей (членство в группах) в Windows определения.
+Возможные значения для типов учетных записей пользователей (членство в группах) для определения Windows.
 
 | Элемент        | Значение | Описание                     |
 | :------------ | :---- | :------------------------------ |
@@ -1928,7 +1937,7 @@ ms.locfileid: "65820401"
 
 ### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>Значения chatMessagePolicyViolationDlpActionType
 
-| Значение |
+| Value |
 |:-----------------|
 | Нет |
 | NotifySender |
@@ -2313,7 +2322,7 @@ ms.locfileid: "65820401"
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкие|2|
+|Низкая|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>Значения threatAssessmentContentType
 
@@ -2336,7 +2345,7 @@ ms.locfileid: "65820401"
 |:-------------------|:------|:-------------------|
 | уверенности               | 1     | Угроза нежелательной почты.       |
 | степенью           | 2     | Фишинговая угроза.   |
-| вредоносная программа            | 3     | Угроза вредоносных программ.    |
+| malware            | 3     | Угроза вредоносных программ.    |
 | unknownFutureValue | 4     | Элемент sentinel. |
 
 ### <a name="threatassessmentstatus-values"></a>Значения threatAssessmentStatus
@@ -2367,8 +2376,8 @@ ms.locfileid: "65820401"
 | Элемент                | Значение | Описание                         |
 |:----------------------|:------|:------------------------------------|
 | Нет                  | 0     | Пока не известно.                       |
-| mailFlowRule          | 1     | Exchange правила транспорта.            |
-| safeSender            | 2     | Сейф отправителя.                   |
+| mailFlowRule          | 1     | Правило транспорта Exchange.            |
+| safeSender            | 2     | Список надежных отправителей.                   |
 | blockedSender         | 3     | Список заблокированных отправителей.                |
 | advancedSpamFiltering | 4     | Расширенный параметр фильтрации нежелательной почты.     |
 | domainAllowList       | 5     | Список разрешений домена отправителя.           |
@@ -2445,7 +2454,7 @@ ms.locfileid: "65820401"
 |пользователь; | столбец пользователя или группы. |
 |url | гиперссылка или столбец рисунка. |
 |Рассчитывается | вычисляемый столбец. |
-|расположение; | столбец location. |
+|location | столбец location. |
 |географическое положение | столбец географического расположения. |
 |term | столбец управляемых метаданных. |
 |многотерминантная | столбец управляемых метаданных, который принимает несколько значений. |
@@ -2577,9 +2586,9 @@ ms.locfileid: "65820401"
 
 |Элемент    |Значение    |Описание |
 |:---------|:--------|:----------- |
-|team      |0        |Указывает, что Teams приложение может быть установлено в команде и имеет право на доступ к данным этой команды.|
-|groupChat |1        |Указывает, что Teams может быть установлено в групповом чате и имеет право на доступ к данным этого чата группы.|
-|personal  |2        |Указывает, что Teams может быть установлено в личной области пользователя и имеет право на доступ к данным этого пользователя.|
+|team      |0        |Указывает, что приложение Teams может быть установлено в команде и имеет право на доступ к данным этой команды.|
+|groupChat |1        |Указывает, что приложение Teams может быть установлено в групповом чате и имеет право на доступ к данным этого чата группы.|
+|personal  |2        |Указывает, что приложение Teams может быть установлено в личной области пользователя и имеет право на доступ к данным этого пользователя.|
 
 ### <a name="roleassignmentschedulerequestfilterbycurrentuseroptions-values"></a>Значения roleAssignmentScheduleRequestFilterByCurrentUserOptions
 
@@ -2751,7 +2760,7 @@ ms.locfileid: "65820401"
 |Member|
 |:---|
 |team|
-|Канал|
+|channel|
 |чат|
 |unknownFutureValue|
 

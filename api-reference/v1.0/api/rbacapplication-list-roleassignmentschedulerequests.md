@@ -1,28 +1,28 @@
 ---
 title: Перечисление roleAssignmentScheduleRequests
-description: В PIM получите запросы на активные назначения ролей субъектам, выполненные с помощью объекта unifiedRoleAssignmentScheduleRequest.
+description: Получение запросов на активные назначения ролей субъектам, выполненных с помощью объекта PIM unifiedRoleAssignmentScheduleRequest или API назначений ролей.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 167fa54bcca28c3d9b362e3a44b6834aecab864d
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 163ff3370f7e39e93dc0b855d18bf7ea599956a5
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65207271"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898779"
 ---
 # <a name="list-roleassignmentschedulerequests"></a>Перечисление roleAssignmentScheduleRequests
 Пространство имен: microsoft.graph
 
-В PIM получите запросы на активные назначения ролей субъектам. Активные назначения включают назначения и запросы на активацию [, а](rbacapplication-post-roleassignmentschedulerequests.md) также [непосредственно через API назначений ролей](../resources/unifiedroleassignment.md). Назначения ролей могут быть безвозвратно активными с датой окончания срока действия или временно активными после активации пользователем соответствующих назначений.
+Получение запросов для активных назначений ролей субъектам. Активные назначения включают назначения и запросы на активацию [, а](rbacapplication-post-roleassignmentschedulerequests.md) также [непосредственно через API назначений ролей](../resources/unifiedroleassignment.md). Назначения ролей могут быть безвозвратно активными с датой окончания срока действия или временно активными после активации пользователем соответствующих назначений.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
+| Делегированное (рабочая или учебная учетная запись)     | RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
 | Приложение                            | RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory               |
 
@@ -47,7 +47,7 @@ GET /roleManagement/directory/roleAssignmentScheduleRequests
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного `200 OK` выполнения этот метод возвращает код отклика и коллекцию объектов [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) в теле отклика.
 

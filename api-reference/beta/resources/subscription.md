@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: 68cce260c78a68aad3c6b233a47e662c1d7350ff
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: f8a329d6855a9ab17ff2d9a6372c56b8823b6a63
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821045"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899136"
 ---
 # <a name="subscription-resource-type"></a>Тип ресурса subscription
 
@@ -25,22 +25,22 @@ ms.locfileid: "65821045"
 > **Примечание** Подписки, помеченные звездочкой (*), поддерживаются только в конечной `/beta` точке.
 
 - [Оповещение][] Microsoft Graph Security API.
-- [BaseTask][] (не рекомендуется) пользователя в Список дел Microsoft.*
+- [BaseTask][] (не рекомендуется) пользователя в Microsoft To Do.*
 - Объект [callRecord][], создаваемый после звонка или собрания в Microsoft Teams.
-- Канал [в](./channel.md) Microsoft Teams.*
-- Чат [в](./chat.md) Microsoft Teams.*
+- Канал [в](./channel.md) Microsoft Teams.
+- Чат [в](./chat.md) Microsoft Teams.
 - Объект [chatMessage][], отправленный в командах или каналах в Microsoft Teams.
 - [Беседа][] в группе Microsoft 365.
-- [ConversationMember в](./conversationmember.md) команде, канале или чате в Microsoft Teams.*
+- [ConversationMember в](./conversationmember.md) команде, канале или чате в Microsoft Teams.
 - Контент в иерархии корневой папки [driveItem][] в OneDrive для бизнеса либо корневой или вложенной папки [driveItem][] в личном хранилище OneDrive пользователя.
 - [Группа][] в Azure Active Directory.
 - [Список][] на [сайте][] SharePoint.
 - [Сообщение][], [событие][] или [контакт][] в Outlook.
-- Собрание [по сети][] в Microsoft Teams.*
-- Присутствие [пользователя][] в Microsoft Teams.*
-- Команда [в](./team.md) Microsoft Teams.*
+- [Онлайн-собрание][] в Microsoft Teams.*
+- Наличие [пользователя][] в Microsoft Teams.*
+- Команда [в](./team.md) Microsoft Teams.
 - Объект [printer][] (когда задание печати для принтера переходит в состояние JobFetchable — готово к извлечению для печати) и [printTaskDefinition][] универсальной печати. Дополнительные сведения см. в статье [Подписка на уведомления об изменениях из API облачной печати](/graph/universal-print-webhook-notifications).
-- [TodoTask][] пользователя в Список дел Microsoft.
+- [TodoTask][] пользователя в Microsoft To Do.
 - [Пользователь][] в Azure Active Directory.
 
 Возможные значения путей ресурсов для каждого поддерживаемого ресурса см. в статье [Получение уведомлений об изменениях с помощью API Microsoft Graph](webhooks.md). Сведения об использовании уведомлений жизненного цикла см. в разделе [Уменьшение количества отсутствующих подписок и уведомлений об изменениях](/graph/webhooks-lifecycle).

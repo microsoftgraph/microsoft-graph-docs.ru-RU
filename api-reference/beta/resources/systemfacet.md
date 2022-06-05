@@ -1,28 +1,27 @@
 ---
 author: daspek
-description: <descripton>
-ms.date: 09/12/2017
+description: '**Системный** аспект указывает, что объект управляется системой для собственной операции.'
 title: SystemFacet
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 7c5e690462db9b2f9309302f15d1c277b39fca1f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: ed30d7df19b3d9472de6172aa5ff90e2d0ad8c61
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985673"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898569"
 ---
-# <a name="system-facet"></a>Аспект System
+# <a name="system-facet"></a>системный аспект
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Аспект **System** указывает, что объект управляется системой, выполняющей необходимые ей операции.
-Большинству приложений следует игнорировать элементы, содержащие аспект System.
+**Системный** аспект указывает, что объект управляется системой для собственной операции.
+Большинство приложений должны игнорировать элементы с системным аспектом.
 
-**Примечание.** В настоящее время этот аспект пуст, но в будущих редакциях API он может быть дополнен другими свойствами.
+>**Примечание.** В настоящее время этот аспект пуст, но в будущих редакциях API он может быть дополнен другими свойствами.
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -3,14 +3,14 @@ title: Тип ресурса baseItemVersion
 description: Ресурс **baseItemVersion** представляет предыдущую версию элемента или записи.
 ms.localizationpriority: medium
 author: JeremyKelley
-ms.prod: ''
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 3679353e4e5c5aafb2b6594662cbe528ee714ca9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d5b82faef888f3e936ba7668c7d2a14b8f0f4c0e
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015625"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900363"
 ---
 # <a name="baseitemversion-resource-type"></a>Тип ресурса baseItemVersion
 

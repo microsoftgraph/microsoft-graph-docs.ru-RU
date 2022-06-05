@@ -1,16 +1,16 @@
 ---
 title: Добавление scopedRoleMember
-description: Добавьте новое scopedRoleMembership. ПРИМЕЧАНИЕ. *Только роли* администратора учетной записи пользователя и *администратора Helpdesk* в настоящее время поддерживаются для членства в scoped-role.
+description: Назначьте роль Azure Active Directory (Azure AD) с областью административной единицы.
 ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 84bdfc68985fae07a9f19e2fdb84f418c6967fcd
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 88df3e233dc25110d9771b2fcd9943fc2590b95b
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63668992"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898180"
 ---
 # <a name="add-a-scopedrolemember"></a>Добавление scopedRoleMember
 
@@ -18,7 +18,7 @@ ms.locfileid: "63668992"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте новое [scopedRoleMembership](../resources/scopedrolemembership.md). ПРИМЕЧАНИЕ. *Только роли* администратора учетной записи пользователя и *администратора Helpdesk* в настоящее время поддерживаются для членства в scoped-role.
+Назначьте роль Azure Active Directory (Azure AD) с областью административной единицы. Список ролей, которые можно назначить с областью административной единицы, см. в статье "Назначение ролей [Azure AD с областью административной единицы"](/azure/active-directory/roles/admin-units-assign-roles).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,9 +26,14 @@ ms.locfileid: "63668992"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.ReadWrite.Directory |
+|Делегированное (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Application | RoleManagement.ReadWrite.Directory |
+
+Чтобы назначить роли Azure AD с областью административной единицы, вызывающему субъекту должна быть назначена одна из следующих ролей [Azure AD](/azure/active-directory/roles/permissions-reference):
+
+* Администратор привилегированных ролей
+* Глобальный администратор
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,11 +46,11 @@ POST /administrativeUnits/{id}/scopedRoleMembers
 | Авторизация  | Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляют представление JSON объекта [scopedRoleMembership](../resources/scopedrolemembership.md) .
+В тексте запроса добавьте представление объекта [scopedRoleMembership](../resources/scopedrolemembership.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного применения этот `201 Created` метод возвращает код ответа и [объект scopedRoleMembership](../resources/scopedrolemembership.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [scopedRoleMembership](../resources/scopedrolemembership.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -93,7 +98,7 @@ Content-type: application/json
 
 ---
 
-В теле запроса поставляют представление JSON объекта [scopedRoleMembership](../resources/scopedrolemembership.md) .
+В тексте запроса добавьте представление объекта [scopedRoleMembership](../resources/scopedrolemembership.md) в формате JSON.
 ##### <a name="response"></a>Отклик
 Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {

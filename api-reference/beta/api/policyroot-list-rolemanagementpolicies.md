@@ -1,34 +1,32 @@
 ---
 title: Перечисление roleManagementPolicies
-description: Получите ресурсы unifiedRoleManagementPolicy из свойства навигации roleManagementPolicies.
+description: Получение политик управления ролами и их сведений.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 424e26ab89005f9dba9c2a1473c737e2e175c921
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: b3b24f143d1d0cb7daa42947526d39ac9147403e
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398783"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900305"
 ---
 # <a name="list-rolemanagementpolicies"></a>Перечисление roleManagementPolicies
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Получите ресурсы unifiedRoleManagementPolicy из свойства навигации roleManagementPolicies.
-
+Получение политик управления ролами и их сведений. Этот API применяется только к ролям Azure AD. Чтобы получить политики, которые применяются к Azure RBAC, используйте [API REST PIM Azure для политик управления ролами](/rest/api/authorization/role-management-policies/list-for-scope).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|PrivilegedAccess.ReadWrite.AzureAD|
+|Делегированное (рабочая или учебная учетная запись)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|PrivilegedAccess.Read.AzureAD|
+|Приложение|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -37,11 +35,11 @@ ms.locfileid: "65398783"
 }
 -->
 ``` http
-GET /policies/roleManagementPolicies
+GET /policies/roleManagementPolicies?$filter=scopeId eq 'scopeId' and scopeType eq 'scopeType'
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает все параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Для этого метода требуется параметр `$filter` запроса (`eq`) для области запроса **scopeId** и **scopeType**. Для настройки ответа можно также `$select` `$expand` использовать параметры запроса oData и OData. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -59,6 +57,8 @@ GET /policies/roleManagementPolicies
 
 ### <a name="request"></a>Запрос
 
+В следующем примере извлекаются политики, которые относятся к клиенту и применяются к ролям каталога.
+
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -66,7 +66,7 @@ GET /policies/roleManagementPolicies
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/roleManagementPolicies
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicies?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrolemanagementpolicy-csharp-snippets.md)]
@@ -109,20 +109,35 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "f93a5c37-5c37-f93a-375c-3af9375c3af9",
-      "displayName": "Policy1",
-      "description": "A policy for all privileged administrators",
-      "isOrganizationDefault": true,
-      "scopeId": "f93a5c37-5c37-f93a-375c-3af9375c3af9",
-      "scopeType": "subscriptions",
-      "lastModifiedDateTime": "2021-03-17T02:54:27.167+00:00",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identity"
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies",
+    "value": [
+        {
+            "id": "DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9",
+            "displayName": "DirectoryRole",
+            "description": "DirectoryRole",
+            "isOrganizationDefault": false,
+            "scopeId": "/",
+            "scopeType": "DirectoryRole",
+            "lastModifiedDateTime": null,
+            "lastModifiedBy": {
+                "displayName": null,
+                "id": null
+            }
+        },
+        {
+            "id": "DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_da83a66c-eb51-44ae-98d8-3da5f924f90a",
+            "displayName": "DirectoryRole",
+            "description": "DirectoryRole",
+            "isOrganizationDefault": false,
+            "scopeId": "/",
+            "scopeType": "DirectoryRole",
+            "lastModifiedDateTime": null,
+            "lastModifiedBy": {
+                "displayName": null,
+                "id": null
+            }
+        }
+    ]
 }
 ```
 

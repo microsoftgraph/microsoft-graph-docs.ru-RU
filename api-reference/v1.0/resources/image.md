@@ -1,27 +1,27 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: Изображение
+title: Тип ресурса image
 ms.localizationpriority: medium
-description: Ресурс Image — это единая структура, объединяющая свойства, связанные с изображением.
-ms.prod: ''
+description: Ресурс изображения группирует свойства, связанные с образом, в одну структуру.
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: a5ccc3baf969199161936ffd635790c56ab75363
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1c457a139504615cde6e21628e82c8875a47b6a9
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089727"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900529"
 ---
-# <a name="image-resource-type"></a>Тип ресурса Image
+# <a name="image-resource-type"></a>Тип ресурса image
 
 Пространство имен: microsoft.graph
 
-Ресурс **Image** — это единая структура, объединяющая свойства, связанные с изображением. Если у ресурса [**DriveItem**](driveitem.md) есть ненулевой аспект **image**, то этот ресурс представляет точечный рисунок.
+Ресурс **изображения** группирует свойства, связанные с образом, в одну структуру.
+Если [**driveItem имеет**](driveitem.md) аспект изображения, отличный от **NULL,** элемент представляет точечный рисунок.
 
-**Примечание.** Если службе не удается определить ширину и высоту изображения, ресурс **Image** может быть пустым.
+>**Примечание:** Если службе не удается определить ширину и высоту изображения, **ресурс изображения может** быть пустым.
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.image" } -->
 ```json
@@ -42,7 +42,7 @@ ms.locfileid: "59089727"
 
 В OneDrive для бизнеса этот ресурс возвращается для элементов, которые должны быть изображениями в соответствии с расширением файла.
 
-Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
+Дополнительные сведения о аспектах в DriveItem см. [в разделе driveItem](driveitem.md).
 
 
 <!-- {

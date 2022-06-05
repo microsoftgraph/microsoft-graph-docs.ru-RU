@@ -1,37 +1,37 @@
 ---
-title: значения переумыка termstore
-description: Значения Graph termstore
+title: Значения перечисления termstore
+description: Значения перечисления termstore в Microsoft Graph
 doc_type: enumPageType
 ms.localizationpriority: medium
-ms.prod: Sharepoint
+ms.prod: sites-and-lists
 author: mohitpcad
-ms.openlocfilehash: 22c563e250fd732bd90301b345e99606d81d1b7a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d7e9bf98c1ea45400b0770def2e37c3140baf945
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59040570"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898744"
 ---
-# <a name="microsoft-graph-termstore-enumeration-values"></a>Значения Graph termstore
+# <a name="microsoft-graph-termstore-enumeration-values"></a>Значения перечисления termstore в Microsoft Graph
 
 Пространство имен: microsoft.graph.termstore
 
-### <a name="relationtype-values"></a>значения relationType
+### <a name="relationtype-values"></a>Значения relationType
 
-Указывает отношения типов значений, которые могут приниматься в termstore
+Указывает отношения типов значений, которые могут приниматься в хранилище терминов.
 
-|Элемент|
+|Member|
 |:---|
-|пин-код|
-|повторное использование|
+|Контактный|
+|Повторного использования|
 
-### <a name="termgroupscope-values"></a>значения termGroupScope
+### <a name="termgroupscope-values"></a>Значения termGroupScope
 
-Указывает значения, которые могут принимать различные типы групп в termstore
+Указывает значения, которые могут принимать различные типы групп в хранилище терминов.
 
-|Элемент|
+|Member|
 |:---|
-|глобальный|
+|Глобального|
 |system|
 |siteCollection|
 

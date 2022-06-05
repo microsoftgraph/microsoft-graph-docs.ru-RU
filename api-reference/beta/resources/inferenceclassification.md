@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса inferenceClassification
 description: 'Классификация сообщений пользователя, позволяющая сосредоточиться на самых важных сообщениях. '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: mail
 author: abheek-das
-ms.openlocfilehash: b69f892a9d8223e467a10ce1c055cc470a2c171e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 53754b1a803a7c6e550bd8afc682d0d6403b77b1
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130257"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899402"
 ---
 # <a name="inferenceclassification-resource-type"></a>Тип ресурса inferenceClassification
 
@@ -35,12 +35,12 @@ ms.locfileid: "50130257"
 |:---------------|:--------|:----------|
 |id|string| Только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |overrides|Коллекция объектов [inferenceClassificationOverride](inferenceclassificationoverride.md)| Набор переопределений пользователя, классифицирующих сообщения от определенных отправителей указанными способами: `focused` или `other`. Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

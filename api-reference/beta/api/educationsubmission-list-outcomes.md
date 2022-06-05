@@ -1,34 +1,36 @@
 ---
-title: Результаты списка
-description: Извлечение списка объектов educationoutcome.
+title: Перечисление результатов
+description: Получение списка объектов educationoutcome.
 ms.localizationpriority: medium
-author: dipakboyed
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 75591171a58f17e7f2d58955e23d03fe2a967984
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 72f4d034b9afa7639b8cc671aff01489c5a334db
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099938"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900242"
 ---
-# <a name="list-outcomes"></a>Результаты списка
+# <a name="list-outcomes"></a>Перечисление результатов
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка [объектов educationOutcome.](../resources/educationoutcome.md)  Существует три типа результатов: **educationPointsOutcome,** **educationFeedbackOutcome** и **educationRubricOutcome.**
+Получение списка объектов [educationOutcome](../resources/educationoutcome.md) .  Существует четыре типа результатов: **educationPointsOutcome**, **educationFeedbackOutcome**, **educationRubricOutcome** и **educationFeedbackResourceOutcome**.
 
-Отправка для назначения кредита (не имеет значения точки и нет рубрики) будет иметь [educationFeedbackOutcome](../resources/educationpointsoutcome.md). (Это может также вернуть [educationPointsOutcome,](../resources/educationpointsoutcome.md)но этот результат игнорируется.)
+Отправка для кредитного назначения (без точки и без rubric) будет иметь [educationFeedbackOutcome](../resources/educationpointsoutcome.md). (Он также может возвращать [educationPointsOutcome](../resources/educationpointsoutcome.md), но этот результат игнорируется.)
 
-Отправка для назначения точек (назначенное значение точки) будет иметь как [educationFeedbackOutcome,](../resources/educationpointsoutcome.md) так и [educationPointsOutcome.](../resources/educationpointsoutcome.md)
+Отправка для назначения точек (с присвоенным значением точки) будет иметь как [educationFeedbackOutcome](../resources/educationpointsoutcome.md) , так и [educationPointsOutcome](../resources/educationpointsoutcome.md).
 
-Отправка для назначения с прикрепленной рубрикой, если рубрика является кредитной рубрикой (без баллов), будет иметь [educationFeedbackOutcome](../resources/educationpointsoutcome.md) и [educationRubricOutcome](../resources/educationrubricoutcome.md). (Это может также вернуть [educationPointsOutcome,](../resources/educationpointsoutcome.md)но этот результат игнорируется.)
+Отправка задания с прикрепленным rubric, если rubric является кредитным (без баллов), будет иметь [educationFeedbackOutcome](../resources/educationpointsoutcome.md) и [educationRubricOutcome](../resources/educationrubricoutcome.md). (Он также может возвращать [educationPointsOutcome](../resources/educationpointsoutcome.md), но этот результат игнорируется.)
 
-Отправка для назначения с прикрепленной рубрикой, если рубрика является рубрикой точек, будет иметь [educationFeedbackOutcome](../resources/educationpointsoutcome.md), [educationPointsOutcome].. /resources/educationpointsoutcome.md и [educationRubricOutcome](../resources/educationrubricoutcome.md).
+Отправка для задания с прикрепленным rubric, если rubric является rubric points, будет иметь [educationFeedbackOutcome](../resources/educationpointsoutcome.md), [educationPointsOutcome](.. /resources/educationpointsoutcome.md и [educationRubricOutcome](../resources/educationrubricoutcome.md).
 
-Все типы результатов имеют обычное и опубликованное свойство, соответствующее этому типу результатов; например, **точки** и **опубликованныеPoints,** **отзывы** и **опубликованныеFeedback**.  Обычное свойство — это последнее значение, обновленное преподавателем; опубликованное свойство — это самое последнее значение, возвращенное студенту.
+Отправка ресурса обратной связи будет иметь [educationFeedbackResourceOutcome](../resources/educationfeedbackresourceoutcome.md).
+
+Все типы результатов имеют регулярное и опубликованное свойство, соответствующее типу результата; Например, **точки и** **опубликованные точки**, **отзывы** и **publishedFeedback**.  Регулярное свойство — это последнее значение, обновленное преподавателем; Опубликованное свойство является самым последним значением, возвращенным учащемуся.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -36,9 +38,9 @@ ms.locfileid: "62099938"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+| Делегированное (рабочая или учебная учетная запись)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Application                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,17 +56,21 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [educationOutcome](../resources/educationoutcome.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [educationOutcome](../resources/educationoutcome.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-get-all-outcomes"></a>Пример 1. Получение всех результатов
+
+В следующем примере показано, как получить все результаты.
+
+#### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -103,10 +109,9 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/sub
 
 ---
 
+#### <a name="response"></a>Отклик
 
-### <a name="response"></a>Отклик
-
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -233,6 +238,121 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-2-get-outcomes-filtered-by-outcome-type"></a>Пример 2. Получение результатов, отфильтрованных по типу результата
+
+В следующем примере показано, как получить результаты, отфильтрованные по типу результата.
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_outcomes_by_type"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/a3cce0ba-2008-4c4d-bf62-079408562d96/submissions/2185e6d7-2924-4ed1-dde1-269f89e29184/outcomes?$filter=isof('microsoft.graph.educationFeedbackResourceOutcome')
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationOutcome",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments('a3cce0ba-2008-4c4d-bf62-079408562d96')/submissions('2185e6d7-2924-4ed1-dde1-269f89e29184')/outcomes",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.educationFeedbackResourceOutcome",
+            "lastModifiedDateTime": "2022-05-06T00:52:12.8318457Z",
+            "id": "8fb409c5-570b-4fe5-8473-d3666e61f3a0",
+            "resourceStatus": "notPublished",
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                    "displayName": null
+                }
+            },
+            "feedbackResource": {
+                "@odata.type": "#microsoft.graph.educationWordResource",
+                "displayName": "Document2.docx",
+                "createdDateTime": "2022-05-06T00:52:12.8318064Z",
+                "lastModifiedDateTime": "2022-05-06T00:52:12.8318457Z",
+                "fileUrl": "https://graph.microsoft.com/beta/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQ26WF6K2W2IOFAKDITG4F5GWRH5",
+                "createdBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                        "displayName": null
+                    }
+                },
+                "lastModifiedBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                        "displayName": null
+                    }
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.educationFeedbackResourceOutcome",
+            "lastModifiedDateTime": "2022-05-06T00:52:17.3180275Z",
+            "id": "0710aeea-590d-46b4-9eb8-1c08b6549677",
+            "resourceStatus": "notPublished",
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                    "displayName": null
+                }
+            },
+            "feedbackResource": {
+                "@odata.type": "#microsoft.graph.educationWordResource",
+                "displayName": "Document3.docx",
+                "createdDateTime": "2022-05-06T00:52:17.3180176Z",
+                "lastModifiedDateTime": "2022-05-06T00:52:17.3180275Z",
+                "fileUrl": "https://graph.microsoft.com/beta/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQ563EMEMHRTBBH2SOZ4GDSNEUZK",
+                "createdBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                        "displayName": null
+                    }
+                },
+                "lastModifiedBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                        "displayName": null
+                    }
+                }
+            }
+        }
+    ]
+}
+```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
@@ -242,5 +362,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

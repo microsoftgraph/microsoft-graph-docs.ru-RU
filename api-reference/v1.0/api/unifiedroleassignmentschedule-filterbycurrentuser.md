@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 808cff2707016d16cccff7dbda3bf6971626f06c
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 5ec4eb01ee725109d3e746fa41570f2ee240a705
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205361"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898534"
 ---
 # <a name="unifiedroleassignmentschedule-filterbycurrentuser"></a>unifiedRoleAssignmentSchedule: filterByCurrentUser
 Пространство имен: microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "65205361"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory   |
+|Делегированное (рабочая или учебная учетная запись)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory   |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
 |Приложение|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory |
 
@@ -38,7 +38,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='pa
 
 ## <a name="function-parameters"></a>Параметры функции
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
-В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
+В следующей таблице показаны параметры, необходимые для этой функции.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
@@ -57,7 +57,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='pa
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения эта функция возвращает `200 OK` код отклика и коллекцию [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) в тексте отклика.
 

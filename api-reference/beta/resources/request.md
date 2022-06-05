@@ -1,16 +1,16 @@
 ---
 title: тип ресурса запроса
-description: Абстрактный тип сущности для моделирования асинхронного рабочего процесса запроса для создания, обновления и удаления объекта.
+description: Представляет сведения о запросе в PIM или userConsentRequests.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 6e75c2d632356fceffaf432fc4def204e837c9bc
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 72a52ce4911dc85a5d4f954cdc48e62ad8f1f9c2
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399399"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65897960"
 ---
 # <a name="request-resource-type"></a>тип ресурса запроса
 
@@ -18,26 +18,24 @@ ms.locfileid: "65399399"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Абстрактный тип сущности для моделирования асинхронного рабочего процесса запроса для создания, обновления и удаления объекта.
+Представляет сведения о запросе в [PIM](privilegedidentitymanagementv3-overview.md) или [API запроса согласия](userconsentrequest.md) пользователя.
 
-Наследует [от сущности](entity.md).
+Наследует [от сущности](../resources/entity.md).
 
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|approvalId|String|Идентификатор утверждения запроса.|
-|completedDateTime|DateTimeOffset|Время даты завершения запроса.|
-|createdBy|[identitySet](identityset.md)|Пользователь, создавший этот запрос.|
+|approvalId|Строка| Идентификатор утверждения запроса.  |
+|completedDateTime|DateTimeOffset| Время даты завершения запроса. |
+|createdBy|[identitySet](../resources/identityset.md)|Субъект, создавшего запрос.|
 |createdDateTime|DateTimeOffset|Дата создания запроса.|
-|Customdata|String|Поле "Бесплатный текст" для определения любых пользовательских данных для запроса. Не используется.|
-|status|String|Состояние запроса. Значение null не допускается. Возможные значения: `Canceled`, , `Denied`, `Failed`, `Granted`, `PendingAdminDecision`, `PendingApproval`, `PendingProvisioning`, `PendingScheduleCreation`, `Provisioned`и `Revoked``ScheduleCreated`. Значение null не допускается.|
-|id|String|Идентификатор запроса. Только для чтения. Значение null не допускается. Наследуется от [сущности](entity.md).|
+|Customdata|Строка|Поле "Бесплатный текст" для определения любых пользовательских данных для запроса. Не используется.|
+|id|Строка|Уникальный идентификатор объекта запроса. Наследуется от [сущности](../resources/entity.md).|
+|status|String| Состояние запроса. Значение null не допускается. Возможные значения: `Canceled`, , `Denied`, `Failed`, `Granted`, `PendingAdminDecision`, `PendingApproval`, `PendingProvisioning`, `PendingScheduleCreation`, `Provisioned`и `Revoked``ScheduleCreated`. Значение null не допускается. |
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Описание|
-|:---|:---|:---|
-|утверждение|[утверждение](../resources/approval.md)|Представляет объект утверждения, с котором связан запрос.|
+Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
 Ниже указано представление ресурса в формате JSON.
@@ -53,14 +51,13 @@ ms.locfileid: "65399399"
 {
   "@odata.type": "#microsoft.graph.request",
   "id": "String (identifier)",
-  "approvalId": "String (identifier)",
+  "status": "String",
   "completedDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
+  "approvalId": "String",
+  "customData": "String",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
-  },
-  "createdDateTime": "String (timestamp)",
-  "customData": "String",
-  "status": "String",
+  }
 }
 ```
-

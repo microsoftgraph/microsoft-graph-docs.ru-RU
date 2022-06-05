@@ -3,14 +3,14 @@ title: Тип ресурса Json
 description: Представляет данные, возвращаемые в формате JSON.
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: workbooks-and-charts
 author: ruoyingl
-ms.openlocfilehash: 2f24b3d9806179e877e581554ac25141063a8b9f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: eb1a81d01e3dc0a72b379bc30a8cdf82106181de
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59068515"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899332"
 ---
 # <a name="json-resource-type"></a>Тип ресурса Json
 
@@ -18,11 +18,11 @@ ms.locfileid: "59068515"
 
 Представляет данные, возвращаемые в формате JSON.
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Описание|
-|:---|:---|:---|
-
-## <a name="relationships"></a>Отношения
 Нет
+
+## <a name="relationships"></a>Связи
+Отсутствуют.
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!--{

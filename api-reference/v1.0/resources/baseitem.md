@@ -3,15 +3,15 @@ author: JeremyKelley
 ms.date: 09/10/2017
 title: baseItem
 ms.localizationpriority: medium
-description: Ресурс baseItem — это абстрактный ресурс, содержащий общий набор свойств, общих между несколькими другими типами ресурсов.
-ms.prod: ''
+description: Ресурс baseItem — это абстрактный ресурс, содержащий общий набор свойств, совместно используемых несколькими другими типами ресурсов.
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 5937af012f61b804bc773de41a09cc94bdb51dc6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fc9c0418236f9ee30c1d84355d8e508a46809cbb
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019407"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898856"
 ---
 # <a name="baseitem-resource-type"></a>Тип ресурса baseItem
 
@@ -67,7 +67,7 @@ ms.locfileid: "59019407"
 | parentReference      | [itemReference][] | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.                              |
 | webUrl               | строка (url-адрес)      | URL-адрес для отображения ресурса в браузере. Только для чтения.                              |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь       | Тип     | Описание
 |:-------------------|:---------|:---------------------------------------------

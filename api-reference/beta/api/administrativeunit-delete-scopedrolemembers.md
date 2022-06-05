@@ -1,24 +1,24 @@
 ---
-title: Удаление scopedRoleMember
-description: Удалите члена с областью действия из администраторского подразделения.
+title: Удаление объекта scopedRoleMember
+description: Удалите назначение роли Azure Active Directory (Azure AD) с областью административной единицы.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ed090a121c3ed8e8eb1572e10f8701964138ab6a
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 90cc6d4221a362cecf0418b4ca554a4f34574781
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669496"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898206"
 ---
-# <a name="remove-a-scopedrolemember"></a>Удаление scopedRoleMember
+# <a name="remove-a-scopedrolemember"></a>Удаление объекта scopedRoleMember
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите члена с областью действия из администраторского подразделения.
+Удалите назначение роли Azure Active Directory (Azure AD) с областью административной единицы.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,9 +26,14 @@ ms.locfileid: "63669496"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.ReadWrite.Directory |
+|Делегированное (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Application | RoleManagement.ReadWrite.Directory |
+
+Чтобы удалить назначение роли из административной единицы, вызывающему субъекту должна быть назначена одна из следующих ролей [Azure AD](/azure/active-directory/roles/permissions-reference):
+
+* Администратор привилегированных ролей
+* Глобальный администратор
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

@@ -5,12 +5,12 @@ author: anandab
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 2a69b010885c79dba87ef80a23f035e50d7aec53
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: bdc228637496774dd7eb90dcd9b09dff8a6c9da7
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60084093"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900477"
 ---
 # <a name="get-change-notifications-for-membership-changes-in-teams-and-channels-using-microsoft-graph"></a>Получение уведомлений об изменениях участников в командах и каналах с помощью Microsoft Graph
 
@@ -22,18 +22,18 @@ ms.locfileid: "60084093"
 
 ### <a name="permissions"></a>Разрешения
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживаемые версии |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Делегированные (рабочая или учебная учетная запись) | TeamMember.Read.All, TeamMember.ReadWrite.All | Бета |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Приложение | TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All   | Бета |
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | TeamMember.Read.All, TeamMember.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All   |
 
 >**Примечание.** Разрешения, помеченные звездочкой (*), поддерживаются в рамках [согласия для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example"></a>Пример
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -56,17 +56,17 @@ Content-Type: application/json
 
 ### <a name="permissions"></a>Разрешения
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживаемые версии |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Делегированные (рабочая или учебная учетная запись) | Не поддерживается. | Не поддерживается. |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Приложение | ChannelMember.Read.All   | бета |
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Не поддерживается. |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | ChannelMember.Read.All   |
 
 
 ### <a name="example"></a>Пример
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {

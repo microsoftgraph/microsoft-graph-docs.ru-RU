@@ -1,16 +1,16 @@
 ---
 title: Перечисление roleAssignmentScheduleRequests
-description: Получение списка объектов unifiedRoleAssignmentScheduleRequest и их свойств.
+description: Получение запросов на активные назначения ролей субъектам, выполненных с помощью объекта PIM unifiedRoleAssignmentScheduleRequest или API назначений ролей.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9a82b30e19d30eacc04c55b586e0bd9f06598b84
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 4396f1b4bef429aca76274e91aea9b218cf9aa6a
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461827"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899185"
 ---
 # <a name="list-roleassignmentschedulerequests"></a>Перечисление roleAssignmentScheduleRequests
 
@@ -18,7 +18,8 @@ ms.locfileid: "65461827"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) и их свойств.
+Получение запросов для активных назначений ролей субъектам. Активные назначения включают назначения и запросы на активацию [, а](rbacapplication-post-roleassignmentschedulerequests.md) также [непосредственно через API назначений ролей](../resources/unifiedroleassignment.md). Назначения ролей могут быть безвозвратно активными с датой окончания срока действия или временно активными после активации пользователем соответствующих назначений.
+
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +29,7 @@ ms.locfileid: "65461827"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированное (рабочая или учебная учетная запись)     | RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory               |
+| Приложение                            | RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory               |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +44,7 @@ GET /roleManagement/directory/roleAssignmentScheduleRequests
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select``$filter`запроса OData `$expand` и , чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 

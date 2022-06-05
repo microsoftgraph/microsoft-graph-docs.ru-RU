@@ -1,16 +1,16 @@
 ---
 title: Перечисление входов
-description: Описывает метод списка ресурса signIn (сущности) из microsoft API Graph.
+description: Описывает метод списка ресурса signIn (сущности) из API Microsoft Graph.
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 8348d19b8c9f15436bb09d8c34c6b0865aaf95f8
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: bd01785c267fc3497adb85308493062ca8742240
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65819648"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899290"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -18,7 +18,7 @@ ms.locfileid: "65819648"
 
 Получает входы пользователей Azure AD для клиента. Операции входа, которые являются интерактивными по своей природе (где имя пользователя и пароль передаются как часть маркера проверки подлинности) и успешные федеративные входы в настоящее время включаются в журналы входа. 
 
-Максимальный и стандартный размер страницы — 1000 объектов. По умолчанию сначала возвращаются последние входы. Доступны только события входа, произошедшие в течение Azure Active Directory ([Azure AD) по](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) умолчанию.
+Максимальный и стандартный размер страницы — 1000 объектов. По умолчанию сначала возвращаются последние входы. Доступны только события входа, произошедшие в течение срока хранения Azure Active Directory (Azure AD [) по](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) умолчанию.
 
 [!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
@@ -36,15 +36,17 @@ ms.locfileid: "65819648"
 > [!IMPORTANT]
 > Этот API имеет известная проблема и в настоящее время требует согласия на разрешения **AuditLog.Read.All** и **Directory.Read.All**.[](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports)
 
-Приложения должны быть [правильно зарегистрированы в](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD.
+Приложения должны быть [правильно зарегистрированы](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
-Помимо делегированных разрешений, вошед в систему пользователь должен принадлежать к одной из следующих ролей каталога, которые позволяют ему считывать отчеты о входе. Дополнительные сведения о ролях каталогов см. Azure AD [встроенных ролей](/azure/active-directory/roles/permissions-reference):
+Помимо делегированных разрешений, вошед в систему пользователь должен принадлежать к одной из следующих ролей каталога, которые позволяют ему считывать отчеты о входе. Дополнительные сведения о ролях каталогов см. в статье о встроенных ролях [Azure AD](/azure/active-directory/roles/permissions-reference):
 + Глобальный администратор
 + Глобальный читатель
 + Читатель отчетов
 + Администратор безопасности
 + Оператор безопасности
 + Читатель сведений о безопасности
+
+[!INCLUDE [signins-roles-for-ca-data](../../includes/signins-roles-for-ca-data.md)]
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -189,7 +191,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-graph"></a>Пример 2. Получение первых 10 входов в приложения с помощью appDisplayName, которое начинается с "Graph"
+### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-graph"></a>Пример 2. Получение первых 10 входов в приложения с помощью appDisplayName, которое начинается с Graph
 
 #### <a name="request"></a>Запрос
 

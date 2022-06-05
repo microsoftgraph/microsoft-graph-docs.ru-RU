@@ -1,18 +1,18 @@
 ---
-title: Обновление администрирования
+title: Обновление административного ресурса
 description: Обновление свойств объекта administrativeUnit.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6319913db5228b8dc93451513b45ecabc14de4c6
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: b82b3797b72e1f3b7b608fdf92937d273cf183bc
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672023"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898681"
 ---
-# <a name="update-administrativeunit"></a>Обновление администрированияUnit
+# <a name="update-administrativeunit"></a>Обновление administrativeUnit
 
 Пространство имен: microsoft.graph
 
@@ -23,9 +23,14 @@ ms.locfileid: "63672023"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | AdministrativeUnit.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Application | AdministrativeUnit.ReadWrite.All |
+
+Чтобы обновить административную единицу, вызывающему субъекту должна быть назначена одна из следующих ролей [Azure AD](/azure/active-directory/roles/permissions-reference):
+
+* Администратор привилегированных ролей
+* Глобальный администратор
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -46,10 +51,10 @@ PATCH /directory/administrativeUnits/{id}
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|description|string|Описание административного подразделения.|
-|displayName|string|Отображение имени административного подразделения.|
+|description|string|Описание административной единицы.|
+|displayName|string|Отображаемое имя административной единицы.|
 
-Так как ресурс **administrativeUnit** поддерживает [расширения,](/graph/extensibility-overview)`PATCH` операцию можно использовать для добавления, обновления или удаления собственных данных, определенных приложениям, в настраиваемом свойстве расширения в существующем экземпляре **administrativeUnit**.
+Так как ресурс **administrativeUnit** поддерживает [расширения,](/graph/extensibility-overview)`PATCH` операцию можно использовать для добавления, обновления или удаления собственных данных приложения в пользовательских свойствах расширения в существующем экземпляре **administrativeUnit**.
 
 ## <a name="response"></a>Отклик
 

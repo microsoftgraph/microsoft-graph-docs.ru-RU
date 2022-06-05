@@ -1,16 +1,16 @@
 ---
 title: Создание administrativeUnit
-description: Используйте этот API для создания нового администратораUnit.
+description: Используйте этот API для создания нового administrativeUnit.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0a7bb53d098ef2383035485c7cb9311db3935dcf
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: c63191d9f5c71a08cc96b81277c7b9d1712df0c5
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63670245"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900018"
 ---
 # <a name="create-administrativeunit"></a>Создание administrativeUnit
 
@@ -18,16 +18,21 @@ ms.locfileid: "63670245"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API для создания нового [администратораUnit](../resources/administrativeunit.md).
+Используйте этот API для создания нового [administrativeUnit](../resources/administrativeunit.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | AdministrativeUnit.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Application | AdministrativeUnit.ReadWrite.All |
+
+Чтобы создать административную единицу, вызывающему субъекту должна быть назначена одна из следующих ролей [Azure AD](/azure/active-directory/roles/permissions-reference):
+
+* Администратор привилегированных ролей
+* Глобальный администратор
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,14 +46,14 @@ POST /directory/administrativeUnits
 | Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [administrativeUnit](../resources/administrativeunit.md) .
+## <a name="request-body"></a>Основной текст запроса
+В тексте запроса добавьте представление объекта [administrativeUnit](../resources/administrativeunit.md) в формате JSON.
 
-Так как **ресурс administrativeUnit** поддерживает [расширения,](/graph/extensibility-overview)`POST` вы можете использовать операцию и добавлять настраиваемые свойства с собственными данными в административное подразделение при его создании.
+Так как **ресурс administrativeUnit** поддерживает [расширения,](/graph/extensibility-overview)`POST` вы можете использовать операцию и добавлять настраиваемые свойства с собственными данными в административную единицу при ее создании.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `201 Created` ответа и объект [administrativeUnit](../resources/administrativeunit.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [administrativeUnit](../resources/administrativeunit.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -97,11 +102,11 @@ Content-type: application/json
 
 ---
 
-В теле запроса поставляем представление JSON объекта [administrativeUnit](../resources/administrativeunit.md) .
+В тексте запроса добавьте представление объекта [administrativeUnit](../resources/administrativeunit.md) в формате JSON.
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

@@ -1,22 +1,22 @@
 ---
-title: secureScoreControlProfile type
-description: Представляет безопасную оценку клиента на данные управления. По умолчанию он возвращает все элементы управления для клиента и может явно тянуть отдельные элементы управления.
+title: Тип ресурса secureScoreControlProfile
+description: Представляет оценку безопасности клиента для каждого контрольного данных. По умолчанию он возвращает все элементы управления для клиента и может явно извлекать отдельные элементы управления.
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: ''
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 856ed0ca50a2aadb6945f5213de2f4b0f9ac286a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6c54901018dcb6eccf36be2f6f4b0fc1c7d9da8d
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084106"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899836"
 ---
-# <a name="securescorecontrolprofile-resource-type"></a>secureScoreControlProfile type
+# <a name="securescorecontrolprofile-resource-type"></a>Тип ресурса secureScoreControlProfile
 
 Пространство имен: microsoft.graph
 
-Представляет безопасную оценку клиента на данные управления. По умолчанию он возвращает все элементы управления для клиента и может явно тянуть отдельные элементы управления.
+Представляет оценку безопасности клиента для каждого контрольного данных. По умолчанию он возвращает все элементы управления для клиента и может явно извлекать отдельные элементы управления.
 
 
 ## <a name="methods"></a>Методы
@@ -33,26 +33,26 @@ ms.locfileid: "59084106"
 |Имя |Тип |Описание |
 |:--|:--|:--|
 |id|String|GUID или уникальный идентификатор, созданный поставщиком. Только для чтения. Обязательный.|
-|azureTenantId|String|Строка GUID для ID клиента.|
-|actionType|String|Тип действия управления (Config, Review, Behaviour).|
-|actionUrl|Строка|URL-адрес, в котором можно использовать управление. |
-|controlCategory|Строка|Категория действия управления (Identity, Data, Device, Apps, Infrastructure).|
-|title|String|Название управления.|
-|deprecated|Boolean|Флаг, чтобы указать, амортизации управления.|
-|implementationCost|Строка|Затраты ресурсов на неопроверяющий контроль (низкий, умеренный, высокий).|
-|lastModifiedDateTime|DateTimeOffset|Время последнего изменения объекта профилей управления. Тип Timestamp представляет дату и время| 
-|maxScore|Двойное с плавающей точкой|максимальная достижимая оценка для управления.|
-|rank|Int32|Рейтинг управления стеком Майкрософт.|
-|исправление|Строка|Описание того, что поможет исправлению этого управления.|
-|remediationImpact|Строка|Описание влияния на пользователей исправлений.|
-|service|String|Служба, которая владеет управлением (Exchange, Sharepoint, Azure AD).|
-|угрозы|Коллекция String|Список угроз, которые устраняет управление (accountBreach, dataDeletion, dataExfiltration, dataSpillage,
-elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling,spoofing).|
-|tier|Строка|Уровень управления (Core, Defense in Depth, Advanced.)   |
-|userImpact|Строка|Влияние пользователя на реализацию управления (низкий, умеренный, высокий).   |
-|complianceInformation|[коллекция complianceInformation](complianceinformation.md)|Сбор сведений о соответствии требованиям, связанных с безопасным управлением счетами|
-|controlStateUpdates|[secureScoreControlStateUpdate](securescorecontrolstateupdate.md) collection|Флаг, чтобы указать, где у клиента отмечено управление (проигнорировано, thirdParty, рассмотрено) (поддерживает [обновление).](../api/securescorecontrolprofile-update.md)|
-|vendorInformation|[securityVendorInformation](securityvendorinformation.md)|Сложный тип, содержащий сведения о поставщике продукта и службы безопасности, поставщике и подпрограмме (например, vendor=Microsoft; provider=SecureScore). Обязательный.|
+|azureTenantId|String|Строка GUID для идентификатора клиента.|
+|actionType|String|Тип действия элемента управления (Config, Review, Behavior).|
+|actionUrl|Строка|URL-адрес, по которому можно выполнить действие элемента управления. |
+|controlCategory|Строка|Категория действий управления (удостоверение, данные, устройство, приложения, инфраструктура).|
+|title|Строка|Заголовок элемента управления.|
+|Устаревшие|Boolean|Флаг, указывающий, является ли элемент управления нерекомендуемым.|
+|implementationCost|Строка|Затраты на ресурсы для управления имлемментациями (низкая, средняя, высокая).|
+|lastModifiedDateTime|DateTimeOffset|Время последнего изменения сущности профиля элемента управления. Тип метки времени представляет дату и время| 
+|maxScore|Двойное с плавающей точкой|максимальная достижимая оценка для элемента управления.|
+|rank|Int32|Рейтинг элементов управления в стеке корпорации Майкрософт.|
+|Исправления|Строка|Описание того, что поможет устранить элемент управления.|
+|remediationImpact|Строка|Описание влияния на пользователей исправления.|
+|service|String|Служба, владеющую элементом управления (Exchange, Sharepoint, Azure AD).|
+|Угроз|Коллекция объектов string|Список угроз, которые устраняет элемент управления (accountBreach, dataDeletion, dataExfiltration, dataSpillage,
+elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling, spoofing).|
+|Уровня|Строка|Уровень управления (Core, Глубина защиты, Дополнительно.)   |
+|userImpact|Строка|Влияние пользователя на реализацию контроля (низкий, средний, высокий).   |
+|complianceInformation|[Коллекция complianceInformation](complianceinformation.md)|Коллекция сведений о соответствии требованиям, связанных с управлением оценкой безопасности|
+|controlStateUpdates|[Коллекция secureScoreControlStateUpdate](securescorecontrolstateupdate.md)|Флаг, указывающий, где клиент помечал элемент управления (игнорируется, thirdParty, reviewed) (поддерживает [обновление](../api/securescorecontrolprofile-update.md)).|
+|vendorInformation|[securityVendorInformation](securityvendorinformation.md)|Сложный тип, содержащий сведения о поставщике продукта или службы безопасности, поставщике и субпроидере (например, vendor=Microsoft; provider=SecureScore). Обязательный.|
 
 ## <a name="relationships"></a>Связи
 

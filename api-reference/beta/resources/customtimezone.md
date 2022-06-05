@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса customTimeZone
 description: Представляет часовой пояс c нестандартным переходом на летнее время и обратно.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: calendar
 author: abheek-das
-ms.openlocfilehash: c16234ea68b014b1c4682a5b158545121c0ceb42
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9c7b240a010a5fb729cd12770648634decadf284
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136250"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900193"
 ---
 # <a name="customtimezone-resource-type"></a>Тип ресурса customTimeZone
 
@@ -22,7 +22,7 @@ ms.locfileid: "50136250"
 
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
+| Свойство | Тип   |Описание|
 |:---------------|:--------|:----------|
 | bias | Edm.Int32 | Смещение времени часового пояса относительно времени в формате UTC. Это значение представлено в минутах. Часовые пояса с положительным смещением от UTC опережают время UTC, а с отрицательным смещением — отстают от него.|
 | daylightOffset | [daylightTimeZoneOffset](daylighttimezoneoffset.md) | Определяет, когда в часовом поясе осуществляется переход со стандартного времени на летнее. |
@@ -30,7 +30,7 @@ ms.locfileid: "50136250"
 | standardOffset | [standardTimeZoneOffset](standardtimezoneoffset.md) | Определяет, когда в часовом поясе осуществляется переход с летнего времени на стандартное. |
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

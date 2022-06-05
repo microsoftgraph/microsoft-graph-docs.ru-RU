@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Фрибусеррор
-description: Представляет сведения об ошибке при попытке получить доступ к пользователю, списку рассылки или ресурсу.
-localization_priority: Normal
+title: Тип ресурса freeBusyError
+description: Представляет сведения об ошибке при попытке получить сведения о доступности пользователя, списка рассылки или ресурса.
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: calendar
 author: harini84
-ms.openlocfilehash: 565abb49b82a2d8fa41120a9df556113d790ed36
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 58e55ce6a77d10f5be794de4c5223e903d5d5af9
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973960"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900172"
 ---
-# <a name="freebusyerror-resource-type"></a>Тип ресурса Фрибусеррор
+# <a name="freebusyerror-resource-type"></a>Тип ресурса freeBusyError
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет сведения об ошибке при попытке получить доступ к пользователю, списку рассылки или ресурсу.
+Представляет сведения об ошибке при попытке получить сведения о доступности пользователя, списка рассылки или ресурса.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|message |String |Описание ошибки. |
-|респонсекоде |String |Код ответа из запроса на доступность пользователя, списка рассылки или ресурса. |
+|message |String |Описывает ошибку. |
+|responseCode |Строка |Код ответа от запроса на доступность пользователя, списка рассылки или ресурса. |
 
 
 ## <a name="json-representation"></a>Представление JSON

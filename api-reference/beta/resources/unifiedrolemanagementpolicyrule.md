@@ -1,35 +1,40 @@
 ---
 title: Тип ресурса unifiedRoleManagementPolicyRule
-description: UnifiedRoleManagementPolicyRule указывает правило, связанное с политикой управления ролем. Он абстрактный.
+description: Абстрактный тип, который определяет правила, связанные с политиками управления ролами.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d8dee3e3e6b28668b1370a2bb0c34f58e28c82ef
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 4851f090b4e73ace7de7b86fc85db76555c918fa
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461312"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898520"
 ---
 # <a name="unifiedrolemanagementpolicyrule-resource-type"></a>Тип ресурса unifiedRoleManagementPolicyRule
 
 Пространство имен: microsoft.graph
 
-UnifiedRoleManagementPolicyRule указывает правило, связанное с политикой управления ролем. Он абстрактный.
+Абстрактный тип, который определяет правила, связанные с политиками управления ролами. Этот абстрактный тип наследуется следующими ресурсами, которые определяют различные типы правил и их параметры, связанные с политиками управления ролами.
++ [unifiedRoleManagementPolicyApprovalRule](unifiedrolemanagementpolicyapprovalrule.md)
++ [unifiedRoleManagementPolicyAuthenticationContextRule](unifiedrolemanagementpolicyauthenticationcontextrule.md)
++ [unifiedRoleManagementPolicyEnablementRule](unifiedrolemanagementpolicyenablementrule.md)
++ [unifiedRoleManagementPolicyExpirationRule](unifiedrolemanagementpolicyexpirationrule.md)
++ [unifiedRoleManagementPolicyNotificationRule](unifiedrolemanagementpolicynotificationrule.md)
+
+
+Наследует [от сущности](../resources/entity.md).
 
 ## <a name="methods"></a>Методы
-|Метод|Тип возвращаемых данных|Описание|
-|:---|:---|:---|
-|[Перечисление unifiedRoleManagementPolicyRules](../api/unifiedrolemanagementpolicy-list-rules.md)|[Коллекция unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Получение списка объектов [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) и их свойств.|
-|[Получение unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Чтение свойств и связей объекта [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) .|
-|[Обновление unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Обновление свойств объекта [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) .|
+
+Нет.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор правила.|
-|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Целевой объект для правила политики.|
+|id|Строка|Идентификатор правила. Наследуется от [сущности](../resources/entity.md). Только для чтения.|
+|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)| **Не реализовано.** Определяет сведения об области, на которую нацелено правило политики управления ролами. Сведения могут включать тип субъекта, тип назначения роли и действия, влияющие на роль. Поддерживает `$filter` (`eq`, `ne`).|
 
 ## <a name="relationships"></a>Отношения
 Отсутствуют.
@@ -40,6 +45,7 @@ UnifiedRoleManagementPolicyRule указывает правило, связан�
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
@@ -52,4 +58,3 @@ UnifiedRoleManagementPolicyRule указывает правило, связан�
   }
 }
 ```
-

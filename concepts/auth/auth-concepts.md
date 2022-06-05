@@ -5,12 +5,12 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4f69413ebbe824a87414649ceea6d904cdc24bc4
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: 01d1206a3083fda0820be91b8e84a4f5edc2397f
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65294063"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899654"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Основные сведения о проверке подлинности и авторизации для Microsoft Graph
 
@@ -74,7 +74,7 @@ Microsoft Graph предоставляет детализированные ра
 ##### <a name="comparison-of-delegated-and-application-permissions"></a>Сравнение делегированных разрешений и разрешений приложения
 
 
-| <!-- No header--> | Делегированные разрешения | Разрешения приложений |
+| Item | Делегированные разрешения | Разрешения приложений |
 |--|--|--|
 | Сценарии типов приложений | Веб-приложение, мобильное приложение или одностраничное приложение (SPA) | Веб-приложение / управляющая программа |
 | Контекст доступа | [Получение доступа от имени пользователя](../auth-v2-user.md) | [Получение доступа в качестве службы](../auth-v2-service.md) |

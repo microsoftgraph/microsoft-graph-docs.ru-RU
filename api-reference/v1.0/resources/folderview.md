@@ -1,19 +1,18 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: FolderView
+title: folderView
 ms.localizationpriority: medium
 description: Ресурс FolderView предоставляет или задает рекомендации для пользовательского интерфейса папки.
-ms.prod: ''
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 72371634e8cebba4c520277de6bae7055a63ea97
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 79614af785392918026c857816505a12c9f8e476
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078849"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900165"
 ---
-# <a name="folderview-resource-type"></a>Тип ресурса FolderView
+# <a name="folderview-resource-type"></a>Тип ресурса folderView
 
 Пространство имен: microsoft.graph
 
@@ -43,7 +42,7 @@ ms.locfileid: "59078849"
 
 Вы можете использовать свойство _sortBy_ для управления порядком сортировки элементов в приложениях, использующих аспект **viewType**.
 
-### <a name="sortby-options"></a>параметры sortBy
+### <a name="sortby-options"></a>Параметры sortBy
 
 Для свойства **sortBy** определены указанные ниже значения.
 
@@ -58,7 +57,7 @@ ms.locfileid: "59078849"
 | `sequence`               | Для элементов используется настраиваемая последовательность, указанная пользователем.
 
 
-### <a name="sortorder-options"></a>параметры sortOrder
+### <a name="sortorder-options"></a>Параметры sortOrder
 
 Для свойства **sortOrder** определены указанные ниже значения.
 
@@ -68,7 +67,7 @@ ms.locfileid: "59078849"
 | `descending` | Элементы следует упорядочить по убыванию.
 
 
-### <a name="viewtype-options"></a>параметры viewType
+### <a name="viewtype-options"></a>Параметры viewType
 
 Для свойства **viewType** определены указанные ниже значения.
 

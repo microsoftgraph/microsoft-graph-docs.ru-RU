@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0b2f2c9cff290ec80a298a43744fa357d9c3bdf0
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 4109d5c1a1f7882f04e9479c2eca355e5e3a926b
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62442927"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899934"
 ---
 # <a name="get-change-notifications-for-chat-membership-using-microsoft-graph"></a>Получение уведомлений об изменениях участников чата с помощью Microsoft Graph
 
@@ -24,16 +24,16 @@ ms.locfileid: "62442927"
 
 ### <a name="permissions"></a>Разрешения
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживаемые версии |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Делегированные (рабочая или учебная учетная запись) | Не поддерживается. | Не поддерживается. |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Для приложений | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All  | бета|
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Не поддерживается. |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All  |
 
 ### <a name="example"></a>Пример
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -54,18 +54,18 @@ Content-Type: application/json
 
 ### <a name="permissions"></a>Разрешения
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживаемые версии |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Делегированные (рабочая или учебная учетная запись) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Бета |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Приложение | ChatMember.Read.Chat *, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All  | Бета |
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | ChatMember.Read.Chat *, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All  |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example"></a>Пример
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {

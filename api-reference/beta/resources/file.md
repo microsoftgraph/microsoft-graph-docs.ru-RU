@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Ресурс File — это единая структура, объединяющая элементы данных, связанные с файлами.
 ms.date: 09/10/2017
 title: Файл
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: abffb60e4ea82f279ed1605659e5d0f969ed42fc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: files
+ms.openlocfilehash: df40102472783180943389ed4a3d3da48ed5e322
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071194"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899675"
 ---
 # <a name="file-resource-type"></a>Тип ресурса file
 

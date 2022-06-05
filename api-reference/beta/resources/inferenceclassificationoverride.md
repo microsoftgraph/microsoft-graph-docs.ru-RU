@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса inferenceClassificationOverride
-description: Представляет переопределения пользователя в том, как всегда следует классифицировать входящие сообщения от конкретного отправи-
-localization_priority: Normal
+description: Представляет переопределение пользователя для того, как входящие сообщения от определенного отправителя всегда должны классифицироваться как
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: mail
 author: abheek-das
-ms.openlocfilehash: 537032c220ed98fc9052afe6a31376359836fa94
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c0668afef202f646d1d07412077dd15c29747b61
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954999"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898583"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>Тип ресурса inferenceClassificationOverride
 
@@ -18,7 +18,7 @@ ms.locfileid: "50954999"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет переопределения пользователя в том, как всегда следует классифицировать входящие сообщения от конкретного отправитель, как в [сфокусированных почтовых ящиках.](manage-focused-inbox.md)
+Представляет переопределение пользователя для того, как входящие сообщения от определенного отправителя всегда должны классифицироваться как отсортированные в [папке "Входящие"](manage-focused-inbox.md).
 
 
 ## <a name="methods"></a>Методы
@@ -26,7 +26,7 @@ ms.locfileid: "50954999"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Обновление](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Изменение поля **ClassifyAs** переопределения указанным образом. |
-|[удаление](../api/inferenceclassificationoverride-delete.md); | Нет |Удаление переопределения по идентификатору. |
+|[Удаление](../api/inferenceclassificationoverride-delete.md) | Нет |Удаление переопределения по идентификатору. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -35,7 +35,7 @@ ms.locfileid: "50954999"
 |id|string| Уникальный идентификатор переопределения. Только для чтения.|
 |senderEmailAddress|[emailAddress](emailaddress.md)|Сведения об электронном адресе отправителя, для которого создано переопределение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

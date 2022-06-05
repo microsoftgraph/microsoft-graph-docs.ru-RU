@@ -1,34 +1,32 @@
 ---
 title: Тип ресурса unifiedRoleManagementPolicyAuthenticationContextRule
-description: UnifiedRoleManagementPolicyAuthenticationContextRule указывает правило включения, связанное с политикой управления ролем. Он является производным от microsoft.graph.unifiedRoleManagementPolicyRule.
+description: Тип, производный от типа ресурса unifiedRoleManagementPolicyRule, который определяет правило контекста проверки подлинности для политики условного доступа, связанной с политикой управления ролем.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 5e99ef993d846162cdd25a6207474629733865d4
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 118f24e9b449dbe2b1b8069741cea26e7f032990
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398842"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900452"
 ---
 # <a name="unifiedrolemanagementpolicyauthenticationcontextrule-resource-type"></a>Тип ресурса unifiedRoleManagementPolicyAuthenticationContextRule
 
 Пространство имен: microsoft.graph
 
-UnifiedRoleManagementPolicyAuthenticationContextRule указывает правило включения, связанное с политикой управления ролем. Он является производным от microsoft.graph.unifiedRoleManagementPolicyRule.
-
-Наследуется [от unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
+Тип, производный от типа ресурса [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) , который определяет правило контекста проверки подлинности для политики условного доступа, связанной с политикой управления ролем.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|claimValue|String|Значение утверждения контекста проверки подлинности.|
-|id|String|Уникальный идентификатор правила. Наследуется от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
-|isEnabled|Boolean|Указывает, включен ли параметр.|
-|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Целевой объект для правила. Наследуется от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
+|claimValue|Строка|Значение утверждения контекста проверки подлинности.|
+|id|Строка|Идентификатор правила. Наследуется от [сущности](../resources/entity.md).|
+|isEnabled|Boolean| Указывает, включено ли это правило.|
+|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Определяет сведения о области, предназначенной для правила включения. Сведения могут включать тип субъекта, тип назначения роли и действия, влияющие на роль. Наследуется [от unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md). Поддерживает `$filter` (`eq`, `ne`).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

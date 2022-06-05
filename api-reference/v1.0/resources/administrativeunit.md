@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: de7c9260c5682c12f2d61cbc336f22ecb7579d20
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: 40f81892de0fe1a9925a6d9d62d51e679b57748b
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65883980"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899465"
 ---
 # <a name="administrativeunit-resource-type"></a>Тип ресурса administrativeUnit
 
@@ -37,10 +37,10 @@ ms.locfileid: "65883980"
 |[Перечисление участников](../api/administrativeunit-list-members.md) |Коллекция [directoryObject](directoryobject.md)| Получение списка участников (пользователя, группы или устройства).|
 |[Получение члена](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Получение определенного члена.|
 |[Удаление члена](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Удалите член.|
-|[Добавление члена роли с заданной областью](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Добавление члена роли с заданной областью.|
-|[Перечисление элементов роли с заданной областью](../api/administrativeunit-list-scopedrolemembers.md) |Коллекция [scopedRoleMembership](scopedrolemembership.md)| Получение списка администраторов ролей с заданной областью.|
-|[Получение члена роли с заданной областью](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Получение определенного члена роли с заданной областью.|
-|[Удаление члена роли с заданной областью](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Удаление члена роли с заданной областью.|
+|[Добавление scopedRoleMember](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Назначьте роль Azure AD с областью административной единицы.|
+|[Перечисление scopedRoleMembers](../api/administrativeunit-list-scopedrolemembers.md) |Коллекция [scopedRoleMembership](scopedrolemembership.md)| Вывод списка назначений ролей Azure AD с областью административной единицы.|
+|[Получение объекта scopedRoleMember](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Получение назначения роли Azure AD с областью административной единицы.|
+|[Удаление объекта scopedRoleMember](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Удаление назначения роли Azure AD с областью административной единицы.|
 
 ## <a name="properties"></a>Свойства
 
@@ -50,7 +50,7 @@ ms.locfileid: "65883980"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |description|Строка|Необязательное описание административной единицы. `$filter` Поддерживает (`eq`, `ne`, `in`, `startsWith`), `$search`.|
-|displayName|String|Отображаемое имя административной единицы. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`), `$search` и `$orderBy`.|
+|displayName|Строка|Отображаемое имя административной единицы. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`), `$search` и `$orderBy`.|
 |id|Строка|Уникальный идентификатор административной единицы. Только для чтения. Поддерживает `$filter` (`eq`).|
 |visibility|String|Определяет, скрыта ли административная единица и ее члены. Можно задать значение `HiddenMembership`.. Если не задано (значение равно `null`), поведение по умолчанию является общедоступным. Если задано значение `HiddenMembership`,только члены административной единицы могут выведите список других членов административной единицы.|
 

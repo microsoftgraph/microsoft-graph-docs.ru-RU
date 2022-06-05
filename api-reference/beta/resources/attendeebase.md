@@ -1,16 +1,16 @@
 ---
 title: Тип ресурсов attendeeBase
 description: Тип участника.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: calendar
 author: harini84
-ms.openlocfilehash: 947b137d3619cca6cc9a6faa8c3f3e761d15fb37
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cefc9697d9b7fabed4c82b00ad9e7baf513a37c4
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040163"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899542"
 ---
 # <a name="attendeebase-resource-type"></a>Тип ресурсов attendeeBase
 
@@ -44,7 +44,7 @@ ms.locfileid: "48040163"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|type|String| Тип участника. Возможные значения: `required`, `optional`, `resource`. Если участник является пользователем, то [findMeetingTimes](../api/user-findmeetingtimes.md) всегда определяет тип этого пользователя как `Required`.|
+|type|Строка| Тип участника. Возможные значения: `required`, `optional`, `resource`. Если участник является пользователем, то [findMeetingTimes](../api/user-findmeetingtimes.md) всегда определяет тип этого пользователя как `Required`.|
 |emailAddress|[emailAddress](emailaddress.md)|Включает имя и SMTP-адрес участника.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

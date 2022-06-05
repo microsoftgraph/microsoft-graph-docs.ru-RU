@@ -1,39 +1,39 @@
 ---
-title: тип ресурса процесса
-description: Содержит сведения о процессе, связанном с оповещением.
+title: Тип ресурса process
+description: Содержит сведения о процессе, связанном с оповещением, с отслеживанием состояния.
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: ''
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 4c8f24c0df5c4481c51859ff5f22ef0d619d00fd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1c290ed08adae9f9b995c5c24c398826a2bb1160
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143834"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900494"
 ---
-# <a name="process-resource-type"></a>тип ресурса процесса
+# <a name="process-resource-type"></a>Тип ресурса process
 
 Пространство имен: microsoft.graph
 
-Содержит сведения о процессе, связанном с оповещением.
+Содержит сведения о процессе, связанном с оповещением, с отслеживанием состояния.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|имя учетной записи|String|Идентификатор учетной записи пользователя (контекст учетной записи пользователя, в котором был указан процесс), например, Имя учетной записи, SID и так далее.|
-|commandLine|String|Командная линия полного призыва процесса, включая все параметры.|
-|createdDateTime|DateTimeOffset|Время начала процесса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|fileHash|[fileHash](filehash.md)|Сложный тип, содержащий хеши файлов (криптографические и чувствительные к расположению).|
+|Accountname|Строка|Идентификатор учетной записи пользователя (контекст учетной записи пользователя, в которой выполнялся процесс), например AccountName, SID и т. д.|
+|commandLine|String|Полная командная строка вызова процесса, включая все параметры.|
+|createdDateTime|DateTimeOffset|Время запуска процесса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|fileHash|[fileHash](filehash.md)|Сложный тип, содержащий хэши файлов (криптографические и с учетом расположения).|
 |integrityLevel|processIntegrityLevel|Уровень целостности процесса. Возможные значения: `unknown`, `untrusted`, `low`, `medium`, `high`, `system`.|
-|isElevated|Логический|True, если процесс повышен.|
-|name|String|Имя файла Image процесса.|
-|parentProcessCreatedDateTime|DateTimeOffset|DateTime, на котором был запущен родительский процесс. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|parentProcessId|Int32|ID процесса (PID) родительского процесса.|
-|parentProcessName|String|Имя файла изображений родительского процесса.|
+|isElevated|Boolean|Значение true, если процесс имеет повышенные привилегии.|
+|name|String|Имя файла образа процесса.|
+|parentProcessCreatedDateTime|DateTimeOffset|Дата и время начала родительского процесса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|parentProcessId|Int32|Идентификатор (PID) родительского процесса.|
+|parentProcessName|Строка|Имя файла изображения родительского процесса.|
 |path|String|Полный путь, включая имя файла.|
-|processId|Int32|ID процесса (PID) процесса.|
+|processId|Int32|Идентификатор процесса (PID) процесса.|
 
 ## <a name="json-representation"></a>Представление JSON
 

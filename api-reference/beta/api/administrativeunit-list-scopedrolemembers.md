@@ -1,33 +1,34 @@
 ---
-title: Список scopedRoleMembers
-description: Извлечение списка ресурсов scopedRoleMembership.
+title: Перечисление scopedRoleMembers
+description: Список назначений ролей Azure Active Directory (Azure AD) с областью административной единицы.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 219a3bc36a809e596c1cb4d83ce481f548d1cd35
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 3f95bcd7a4cc25be5861b436a46ad748acc2f373
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669146"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898202"
 ---
-# <a name="list-scopedrolemembers"></a>Список scopedRoleMembers
+# <a name="list-scopedrolemembers"></a>Перечисление scopedRoleMembers
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка [ресурсов scopedRoleMembership](../resources/scopedrolemembership.md) .
+Список назначений ролей Azure Active Directory (Azure AD) с областью административной единицы.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +48,7 @@ GET /administrativeUnits/{id}/scopedRoleMembers
 
 ## <a name="response"></a>Отклик
 
-В случае успешного `200 OK` применения этот метод возвращает код ответа и коллекцию объектов [scopedRoleMembership](../resources/scopedrolemembership.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [scopedRoleMembership](../resources/scopedrolemembership.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
