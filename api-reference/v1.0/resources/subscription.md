@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 831de5675b78e94ada5a64c625738b869848c02c
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 3adc9490dc554344b553de5a0520c66e2f905956
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65819456"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900046"
 ---
 # <a name="subscription-resource-type"></a>Тип ресурса subscription
 
@@ -20,13 +20,17 @@ ms.locfileid: "65819456"
 
 - [Оповещение][] Microsoft Graph Security API.
 - Объект [callRecord][], создаваемый после звонка или собрания в Microsoft Teams.
+- [Канал](./channel.md) в Microsoft Teams.
+- [Чат](./chat.md) в Microsoft Teams.
 - Объект [chatMessage][], отправленный в командах или каналах в Microsoft Teams.
 - [Беседа][] в группе Microsoft 365.
+- [ConversationMember](./conversationmember.md) в команде или канале в Microsoft Teams.
 - Контент в иерархии корневой папки [driveItem][] в OneDrive для бизнеса либо корневой или вложенной папки [driveItem][] в личном хранилище OneDrive пользователя.
 - [Группа][] в Azure Active Directory.
 - [Список][] на [сайте][] SharePoint.
 - [Сообщение][], [событие][] или [контакт][] в Outlook.
 - Объект [printer][] (когда задание печати для принтера переходит в состояние JobFetchable — готово к извлечению для печати) и [printTaskDefinition][] универсальной печати. Дополнительные сведения см. в статье [Подписка на уведомления об изменениях из API облачной печати](/graph/universal-print-webhook-notifications).
+- [Команда](./team.md) в Microsoft Teams.
 - Элемент [todoTask][] пользователя в приложении Microsoft To Do.*
 - [Пользователь][] в Azure Active Directory.
 
@@ -69,7 +73,11 @@ ms.locfileid: "65819456"
 |:--------------------|:-------------------------|
 | **Оповещение** безопасности     | 43200 минут (до 30 дней)  |
 | **callRecord** в Teams    | 4230 минут (до 3 дней)  |
+| **Канал** Teams     | 60 минут (1 час)  |
+| **Чат** Teams    | 60 минут (1 час)  |
 | **chatMessage** в Teams    | 60 минут (1 час)  |
+| **conversationMember** в Teams    | 60 минут (1 час)  |
+| **Команда** Teams    | 60 минут (1 час)  |
 | Групповая **беседа** | 4230 минут (до 3 дней)    |
 | **driveItem** OneDrive    | 43200 минут (до 30 дней)    |
 | **Список** SharePoint    | 43200 минут (до 30 дней)    |

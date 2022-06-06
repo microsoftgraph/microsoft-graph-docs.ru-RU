@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c9bd130ce01738ae03cb0521b85774e974240055
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 564ed33603585b333f12f72b6a8e1f8e3f9de406
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133330"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899549"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>Получение уведомлений об изменениях сообщений в каналах и чатах Teams с помощью Microsoft Graph
 
@@ -28,16 +28,16 @@ ms.locfileid: "65133330"
 
 #### <a name="permissions"></a>Разрешения
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживаемые версии |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Делегированные (рабочая или учебная учетная запись) | Не поддерживается. | Не поддерживается. |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Приложение | ChannelMessage.Read.All | Бета-версия, версия 1.0 |
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Не поддерживается. |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | ChannelMessage.Read.All |
 
 #### <a name="example"></a>Пример
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -60,16 +60,16 @@ Content-Type: application/json
 
 #### <a name="permissions"></a>Разрешения
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживаемые версии |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Делегированные (рабочая или учебная учетная запись) | Не поддерживается. | Не поддерживается. |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Приложение | Chat.Read.All | Бета-версия, версия 1.0 |
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Не поддерживается. |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Chat.Read.All |
 
 #### <a name="example"></a>Пример
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -92,18 +92,18 @@ Content-Type: application/json
 
 ### <a name="permissions"></a>Разрешения
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |Поддерживается в версии |
-|:--------------------|:---------------------------------------------------------|:--------------------|
-|Делегированные (рабочая или учебная учетная запись) | ChannelMessage.Read.All | Бета-версия, версия 1.0 |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Приложение | ChannelMessage.Read.Group*, ChannelMessage.Read.All  | Бета-версия, версия 1.0 |
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | ChannelMessage.Read.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
 
 >**Примечание.** Разрешения, помеченные звездочкой (*), поддерживаются в рамках [согласия для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example-1-subscribe-to-all-messages-and-replies-in-a-channel"></a>Пример 1. Подписка на все сообщения (и ответы) в канале
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -123,7 +123,7 @@ Content-Type: application/json
 Следующий запрос отправляет сообщения, содержащие `Hello` подписчику.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -141,7 +141,7 @@ Content-Type: application/json
 ### <a name="example-3-subscribe-to-messages-and-replies-in-a-channel-without-resource-data"></a>Пример 3. Подписка на сообщения (и ответы) в канале без данных ресурса
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -159,7 +159,7 @@ Content-Type: application/json
 Чтобы получать уведомления только о сообщениях, в которых упоминался определенный пользователь, укажите ИД пользователя (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` в этом примере) в запросе.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -182,18 +182,18 @@ Content-Type: application/json
 
 ### <a name="permissions"></a>Разрешения
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживается в версии |
-|:--------------------|:---------------------------------------------------------|:---------------------|
-|Делегированные (рабочая или учебная учетная запись) | Chat.Read | Бета-версия, версия 1.0 |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Приложение | ChatMessage.Read.Chat*, Chat.Read.All | Бета-версия, версия 1.0 |
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Chat.Read |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | ChatMessage.Read.Chat*, Chat.Read.All |
 
 >**Примечание.** В настоящее время разрешения, помеченные звездочкой (*), поддерживаются в рамках [согласия для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) только в бета-версии.
 
 ### <a name="example-1-subscribe-to-messages-in-a-chat"></a>Пример 1. Подписка на сообщения в чате
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -213,7 +213,7 @@ Content-Type: application/json
 Следующий запрос отправляет сообщения, содержащие `Hello` подписчику.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -231,7 +231,7 @@ Content-Type: application/json
 ### <a name="example-3-subscribe-to-messages-and-replies-in-a-chat-without-resource-data"></a>Пример 3. Подписка на сообщения (и ответы) в чате без данных ресурса
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 {
   "changeType": "created,updated",
@@ -248,7 +248,7 @@ Content-Type: application/json
 Чтобы получать уведомления только о сообщениях, в которых упоминался определенный пользователь, укажите ИД пользователя (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` в этом примере) в запросе.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -261,9 +261,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="subscribe-to-changes-at-the-user-level"></a>Подписка на изменения на уровне пользователя
+## <a name="subscribe-to-changes-at-the-user-level-preview"></a>Подписка на изменения на уровне пользователя (предварительная версия)
 
-Чтобы отслеживать сообщения во всех чатах, в которые входит определенный пользователь, можно создать подписку на уведомления об изменениях на уровне пользователя. Для этого подпишитесь на `/users/{user-id}/chats/getAllMessages`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление как в *делегированном* режиме, так и в режиме *только для приложений*. 
+Чтобы отслеживать сообщения во всех чатах, в которые входит определенный пользователь, можно создать подписку на уведомления об изменениях на уровне пользователя. Для этого подпишитесь на `/users/{user-id}/chats/getAllMessages`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление как в *делегированном* режиме, так и в режиме *только для приложений*.  Эта подписка доступна только в конечной точке бета-версии.
 
 Подписки на сообщения чата на уровне пользователя также поддерживают поиск на основе ключевых слов с помощью параметра запроса `$search`.
 
@@ -271,11 +271,11 @@ Content-Type: application/json
 
 ### <a name="permissions"></a>Разрешения
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживается в версии |
-|:--------------------|:---------------------------------------------------------|:---------------------|
-|Делегированные (рабочая или учебная учетная запись) | Chat.Read, Chat.ReadWrite | Бета |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Для приложения | Chat.Read.All, Chat.ReadWrite.All | бета |
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Chat.Read, Chat.ReadWrite |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложения | Chat.Read.All, Chat.ReadWrite.All |
 
 ### <a name="example-subscribe-to-messages-across-all-chats-a-particular-user-is-part-of"></a>Пример. Подписка на сообщения во всех чатах, в которые входит определенный пользователь
 

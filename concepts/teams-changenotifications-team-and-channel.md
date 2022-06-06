@@ -5,12 +5,12 @@ author: anandab
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b6bbfac2cbdb8fcafccbd385c4aa43c994f3c04d
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: ce7a883bb8efa93e356883af90522fd064eb9955
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64684699"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900522"
 ---
 # <a name="get-change-notifications-for-teams-and-channels-using-microsoft-graph"></a>Получение уведомлений об изменениях команд и каналов с помощью Microsoft Graph
 
@@ -22,16 +22,16 @@ ms.locfileid: "64684699"
 
 ### <a name="permissions"></a>Разрешения
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживаемые версии |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Делегированные (рабочая или учебная учетная запись) | Не поддерживается. | Не поддерживается. |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Приложение | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All   | бета|
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Не поддерживается. |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All   |
 
 ### <a name="example"></a>Пример
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -53,18 +53,18 @@ Content-Type: application/json
 
 ### <a name="permissions"></a>Разрешения
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживаемые версии |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Делегированные (рабочая или учебная учетная запись) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All | Бета |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Приложение | TeamSettings.Read.Group *, TeamSettings.ReadWrite.Group*, Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All    | Бета |
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | TeamSettings.Read.Group *, TeamSettings.ReadWrite.Group*, Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All    |
 
 >**Примечание.** Разрешения, помеченные звездочкой (*), поддерживаются в рамках [согласия для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example"></a>Пример
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -87,16 +87,16 @@ Content-Type: application/json
 
 ### <a name="permissions"></a>Разрешения
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживаемые версии |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Делегированные (рабочая или учебная учетная запись) | Не поддерживается. | Не поддерживается. |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Приложение | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All | бета |
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Не поддерживается. |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All |
 
 ### <a name="example"></a>Пример
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -119,18 +119,18 @@ Content-Type: application/json
 
 ### <a name="permissions"></a>Разрешения
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживаемые версии |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Делегированные (рабочая или учебная учетная запись) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All | Бета |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Для приложений | ChannelSettings.Read.Group *, ChannelSettings.ReadWrite.Group*, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All   | Бета |
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | ChannelSettings.Read.Group *, ChannelSettings.ReadWrite.Group*, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All   |
 
 >**Примечание.** Разрешения, помеченные звездочкой (*), поддерживаются в рамках [согласия для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example"></a>Пример
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {

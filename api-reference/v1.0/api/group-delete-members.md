@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2f2d8e5f632112958c0363c535daa85a35d01e65
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 5bee308c393c11b4b1cf72a279428db80a94f3d8
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65694771"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900147"
 ---
 # <a name="remove-member"></a>Удаление участника
 
@@ -38,6 +38,9 @@ ms.locfileid: "65694771"
 ```http
 DELETE /groups/{id}/members/{id}/$ref
 ```
+
+> [!IMPORTANT]
+> Если `/$ref` не добавлено к запросу, пользователь будет удален из Azure Active Directory (Azure AD) в случае использования соответствующих разрешений. В противном случае возвращается ошибка `403 Forbidden`. 
 
 ## <a name="request-headers"></a>Заголовки запросов
 
