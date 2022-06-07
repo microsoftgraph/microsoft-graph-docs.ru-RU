@@ -1,24 +1,24 @@
 ---
-title: Get cloudPC
-description: Просмотр свойств и связей объекта cloudPC.
+title: Получение cloudPC
+description: Чтение свойств и связей определенного объекта cloudPC.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: a84621b6b723f873867fff6d5d961fb6042d9e3c
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: ed3df398cf3bd8f3fd3216552e8e453c970b8a0b
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587807"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924123"
 ---
-# <a name="get-cloudpc"></a>Get cloudPC
+# <a name="get-cloudpc"></a>Получение cloudPC
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями определенного [объекта cloudPC](../resources/cloudpc.md) .
+Чтение свойств и связей определенного [объекта cloudPC](../resources/cloudpc.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "64587807"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметр `$select` запроса OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -57,11 +57,11 @@ GET /deviceManagement/virtualEndpoint/cloudPCs/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект cloudPC](../resources/cloudpc.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [cloudPC](../resources/cloudpc.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-default-properties-of-a-cloud-pc"></a>Пример 1. Получить свойства облачного КОМПЬЮТЕРА по умолчанию
+### <a name="example-1-get-the-default-properties-of-a-cloud-pc"></a>Пример 1. Получение свойств облачного компьютера по умолчанию
 
 #### <a name="request"></a>Запрос
 
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/9
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -154,7 +154,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-the-selected-properties-of-a-cloud-pc"></a>Пример 2. Получить выбранные свойства облачного КОМПЬЮТЕРА
+### <a name="example-2-get-the-selected-properties-of-a-cloud-pc"></a>Пример 2. Получение выбранных свойств облачного компьютера
 
 #### <a name="request"></a>Запрос
 
@@ -200,7 +200,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/4
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

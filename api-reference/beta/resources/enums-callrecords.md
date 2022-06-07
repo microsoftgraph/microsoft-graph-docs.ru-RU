@@ -1,22 +1,22 @@
 ---
-title: Значения записей вызовов
-description: Значения Graph записей вызовов Майкрософт
+title: Вызов значений перечисления записей
+description: Значения перечисления записей вызовов Microsoft Graph
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 author: gageames
-ms.openlocfilehash: b69b28e2aa7fa6d1b5f67aa4cf9620a59a7ee51d
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 9d99964dee81259f39cbabc1494b6189e51621ac
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61339684"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924163"
 ---
-# <a name="call-records-enum-values"></a>Значения записей вызовов
+# <a name="call-records-enum-values"></a>Вызов значений перечисления записей
 
 Пространство имен: microsoft.graph.callRecords
 
-### <a name="calltype-values"></a>значения callType
+### <a name="calltype-values"></a>Значения callType
 
 | Member
 |:--------------
@@ -25,12 +25,12 @@ ms.locfileid: "61339684"
 | peerToPeer
 | unknownFutureValue
 
-### <a name="clientplatform-values"></a>значения clientPlatform
+### <a name="clientplatform-values"></a>Значения clientPlatform
 
 | Member
 |:--------------
 | unknown
-| Windows
+| windows
 | macOS
 | iOS
 | Android
@@ -41,7 +41,7 @@ ms.locfileid: "61339684"
 | holoLens
 | unknownFutureValue
 
-### <a name="failurestage-values"></a>значения failureStage
+### <a name="failurestage-values"></a>Значения failureStage
 
 | Member
 |:--------------
@@ -50,7 +50,7 @@ ms.locfileid: "61339684"
 | midcall
 | unknownFutureValue
 
-### <a name="mediastreamdirection-values"></a>значения mediaStreamDirection
+### <a name="mediastreamdirection-values"></a>Значения mediaStreamDirection
 
 | Member
 |:--------------
@@ -69,39 +69,48 @@ ms.locfileid: "61339684"
 | screenSharing
 | unknownFutureValue
 
-### <a name="networkconnectiontype-values"></a>значения networkConnectionType
+### <a name="networkconnectiontype-values"></a>Значения networkConnectionType
 
 | Member
 |:--------------
 | unknown
-| проводной
-| Wi-Fi
+| Проводной доступ
+| Wifi
 | мобильный
-| туннель
+| Туннель
 | unknownFutureValue
 
-### <a name="productfamily-values"></a>значения productFamily
+### <a name="networktransportprotocol-values"></a>Значения networkTransportProtocol
+
+| Member             |
+|:-------------------|
+| unknown            |
+| Udp                |
+| tcp                |
+| unknownFutureValue |
+
+### <a name="productfamily-values"></a>Значения productFamily
 
 | Member
 |:--------------
 | unknown
-| teams
-| SkypeForBusiness
-| lync
+| Команды
+| skypeForBusiness
+| Lync
 | unknownFutureValue
 | azureCommunicationServices
 
-### <a name="servicerole-values"></a>значения serviceRole
+### <a name="servicerole-values"></a>Значения serviceRole
 
 | Member
 |:--------------
 | unknown
 | customBot
-| SkypeForBusinessMicrosoftTeamsGateway
-| SkypeForBusinessAudioVideoMcu
-| SkypeForBusinessApplicationSharingMcu
-| SkypeForBusinessCallQueues
-| SkypeForBusinessAutoAttendant
+| skypeForBusinessMicrosoftTeamsGateway
+| skypeForBusinessAudioVideoMcu
+| skypeForBusinessApplicationSharingMcu
+| skypeForBusinessCallQueues
+| skypeForBusinessAutoAttendant
 | mediationServer
 | mediationServerCloudConnectorEdition
 | exchangeUnifiedMessagingService
@@ -109,28 +118,28 @@ ms.locfileid: "61339684"
 | conferencingAnnouncementService
 | conferencingAttendant
 | audioTeleconferencerController
-| SkypeForBusinessUnifiedCommunicationApplicationPlatform
+| skypeForBusinessUnifiedCommunicationApplicationPlatform
 | responseGroupServiceAnnouncementService
-| шлюз
-| SkypeTranslator
-| SkypeForBusinessAttendant
+| Шлюза
+| skypeTranslator
+| skypeForBusinessAttendant
 | responseGroupService
 | voicemail
 | unknownFutureValue
 
-### <a name="userfeedbackrating-values"></a>значения userFeedbackRating
+### <a name="userfeedbackrating-values"></a>Значения userFeedbackRating
 
 | Member
 |:--------------
 | notRated
-| плохо
-| плохой
-| fair
-| хороший
+| Плохо
+| Бедных
+| Справедливой
+| Хорошо
 | Отлично
 | unknownFutureValue
 
-### <a name="wifiband-values"></a>значения wifiBand
+### <a name="wifiband-values"></a>Значения wifiBand
 
 | Member
 |:--------------
@@ -140,7 +149,7 @@ ms.locfileid: "61339684"
 | frequency60GHz
 | unknownFutureValue
 
-### <a name="wifiradiotype-values"></a>значения wifiRadioType
+### <a name="wifiradiotype-values"></a>Значения wifiRadioType
 
 | Member
 |:--------------
@@ -153,12 +162,57 @@ ms.locfileid: "61339684"
 | wifi80211ax
 | unknownFutureValue
 
-### <a name="pstncalldurationsource-values"></a>значения pstnCallDurationSource 
+### <a name="pstncalldurationsource-values"></a>Значения pstnCallDurationSource 
 
 |Member|
 |:---|
 |Microsoft|
 |operator|
+
+### <a name="audiocodec-values"></a>Значения audioCodec 
+
+| Member             |
+|:-------------------|
+| unknown            |
+| Недопустимый            |
+| cn                 |
+| pcma               |
+| pcmu               |
+| amrWide            |
+| g722               |
+| g7221              |
+| g7221c             |
+| g729               |
+| multiChannelAudio  |
+| muchv2             |
+| Opus               |
+| Атлас              |
+| satinFullband      |
+| rtAudio8           |
+| rtAudio16          |
+| Шелк               |
+| silkNarrow         |
+| silkWide           |
+| Сирена              |
+| xmsRta             |
+| unknownFutureValue |
+
+### <a name="videocodec-values"></a>Значения videoCodec 
+
+| Member             |
+|:-------------------|
+| unknown            |
+| Недопустимый            |
+| av1                |
+| h263               |
+| h264               |
+| h264s              |
+| h264uc             |
+| h265               |
+| rtvc1              |
+| rtVideo            |
+| xrtvc1             |
+| unknownFutureValue |
 
 <!--
 {

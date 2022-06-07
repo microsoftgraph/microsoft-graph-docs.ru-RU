@@ -1,18 +1,18 @@
 ---
-title: тип ресурса networkInfo
-description: Тип networkInfo
+title: Тип ресурса networkInfo
+description: Представляет сведения о сети, используемой в вызове.
 ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e5f3115b5f450c3998ffb93f8b843dcc80e9f6d9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d43b60399f1d94266c6d0ab7c2ca9c6ac4484b01
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029159"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924074"
 ---
-# <a name="networkinfo-resource-type"></a>тип ресурса networkInfo
+# <a name="networkinfo-resource-type"></a>Тип ресурса networkInfo
 
 Пространство имен: microsoft.graph.callRecords
 
@@ -22,30 +22,32 @@ ms.locfileid: "59029159"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|bandwidthLowEventRatio|Двойное с плавающей точкой|Доля вызова, который конечная точка мультимедиа обнаружила доступную полосу пропускания или политику пропускной способности, была достаточно низкой, чтобы вызвать плохое качество отправленного звука.|
-|basicServiceSetIdentifier|Строка|Идентификатор базового набора беспроводных lan-служб конечной точки мультимедиа, используемой для подключения к сети.|
+|bandwidthLowEventRatio|Двойное с плавающей точкой|Доля звонка, когда конечная точка мультимедиа определяла, что доступная пропускная способность или политика пропускной способности достаточно низкая, чтобы вызвать низкое качество отправляемого звука.|
+|basicServiceSetIdentifier|Строка|Идентификатор базового набора служб беспроводной локальной сети конечной точки мультимедиа, используемой для подключения к сети.|
 |connectionType|microsoft.graph.callRecords.networkConnectionType|Тип сети, используемой конечной точкой мультимедиа. Возможные значения: `unknown`, `wired`, `wifi`, `mobile`, `tunnel`, `unknownFutureValue`.|
-|delayEventRatio|Двойное с плавающей точкой|Доля вызова, который конечная точка мультимедиа обнаружила задержку сети, была достаточно значительной, чтобы повлиять на возможность иметь двуназначную связь в режиме реального времени.|
-|dnsSuffix|Строка|Суффикс DNS, связанный с сетевым адаптером конечной точки мультимедиа.|
+|delayEventRatio|Двойное с плавающей точкой|Доля звонка, когда конечная точка мультимедиа определяла, что задержка сети достаточно значительная, чтобы повлиять на двунастрочную связь в режиме реального времени.|
+|dnsSuffix|String|DNS-суффикс, связанный с сетевым адаптером конечной точки мультимедиа.|
 |ipAddress|String|IP-адрес конечной точки мультимедиа.|
-|linkSpeed|Int64|Скорость соединения в битах в секунду сообщается сетевым адаптером, используемым конечной точкой мультимедиа.|
-|macAddress|String|Адрес управления доступом к мультимедиа (MAC) сетевого устройства конечной точки мультимедиа.|
-|порт|Int32|Номер сетевого порта, используемый конечной точкой мультимедиа.|
-|receivedQualityEventRatio|Двойное с плавающей точкой|Незначительная часть вызова, обнаруженного конечной точкой мультимедиа в сети, приводит к низкому качеству полученного звука.|
-|reflexiveIPAddress|Строка|IP-адрес конечной точки мультимедиа, как видно на сервере ретрансляции мультимедиа. Обычно это общедоступный IP-адрес Интернета, связанный с конечной точкой.|
-|relayIPAddress|String|IP-адрес сервера ретрансляции мультимедиа, выделенного конечной точкой мультимедиа.|
+|linkSpeed|Int64|Скорость связывания в битах в секунду, сообщаемая сетевым адаптером, используемым конечной точкой мультимедиа.|
+|macAddress|Строка|MAC-адрес сетевого устройства конечной точки мультимедиа.|
+|networkTransportProtocol|microsoft.graph.callRecords.networkTransportProtocol|Сетевой протокол, используемый для передачи потока. Возможные значения: `unknown`, `udp`, `tcp`, `unknownFutureValue`.|
+|Порт|Int32|Номер сетевого порта, используемый конечной точкой мультимедиа.|
+|receivedQualityEventRatio|Двойное с плавающей точкой|Доля звонка, когда конечная точка мультимедиа определяла, что сеть вызывает неудовлетворительное качество полученного звука.|
+|dressipAddress|String|IP-адрес конечной точки мультимедиа, отображаемой сервером ретрансляции мультимедиа. Обычно это общедоступный IP-адрес Интернета, связанный с конечной точкой.|
+|relayIPAddress|Строка|IP-адрес сервера ретрансляции мультимедиа, выделенного конечной точкой мультимедиа.|
 |relayPort|Int32|Номер сетевого порта, выделенный на сервере ретрансляции мультимедиа конечной точкой мультимедиа.|
-|sentQualityEventRatio|Двойное с плавающей точкой|Незначительная часть вызова, обнаруженного конечной точкой мультимедиа в сети, приводит к плохому качеству отосланного звука.|
-|подсеть|Строка|Подсеть, используемая для потока мультимедиа конечной точкой мультимедиа.|
-|wifiBand|microsoft.graph.callRecords.wifiBand|Полоса WiFi, используемая конечной точкой мультимедиа. Возможные значения: `unknown`, `frequency24GHz`, `frequency50GHz`, `frequency60GHz`, `unknownFutureValue`.|
-|wifiBatteryCharge|Int32|Предполагаемый оставшийся заряд батареи в процентах, о чем сообщает конечная точка мультимедиа.|
-|wifiChannel|Int32|Канал WiFi, используемый конечной точкой мультимедиа.|
-|wifiMicrosoftDriver|Строка|Имя драйвера Microsoft WiFi, используемого конечной точкой мультимедиа. Значение может быть локализовано на основе языка, используемого конечной точкой.|
-|wifiMicrosoftDriverVersion|Строка|Версия драйвера Microsoft WiFi, используемого конечной точкой мультимедиа.|
-|wifiRadioType|microsoft.graph.callRecords.wifiRadioType|Тип радио WiFi, используемого конечной точкой мультимедиа. Возможные значения: `unknown`, `wifi80211a`, `wifi80211b`, `wifi80211g`, `wifi80211n`, `wifi80211ac`, `wifi80211ax`, `unknownFutureValue`.|
-|wifiSignalStrength|Int32|Сила сигнала WiFi в процентах, сообщаемая конечной точкой мультимедиа.|
-|wifiVendorDriver|Строка|Имя драйвера WiFi, используемого конечной точкой мультимедиа. Значение может быть локализовано на основе языка, используемого конечной точкой.|
-|wifiVendorDriverVersion|Строка|Версия драйвера WiFi, используемого конечной точкой мультимедиа.|
+|sentQualityEventRatio|Двойное с плавающей точкой|Доля звонка, когда конечная точка мультимедиа определяла, что сеть вызывает неудовлетворительное качество отправляемого звука.|
+|Подсети|Строка|Подсеть, используемая для потока мультимедиа конечной точкой мультимедиа.|
+|traceRouteHops|[Коллекция microsoft.graph.callRecords.traceRouteHop](callrecords-traceroutehop.md)|Список прыжков маршрута трассировки сети, собранных для этого потока мультимедиа.|
+|wifiBand|microsoft.graph.callRecords.wifiBand|Диапазон Wi-Fi, используемый конечной точкой мультимедиа. Возможные значения: `unknown`, `frequency24GHz`, `frequency50GHz`, `frequency60GHz`, `unknownFutureValue`.|
+|wifiBatteryCharge|Int32|Предполагаемая оставшаяся заряда батареи в процентах, сообщаемая конечной точкой мультимедиа.|
+|wifiChannel|Int32|Канал Wi-Fi, используемый конечной точкой мультимедиа.|
+|WifiMicrosoftDriver|Строка|Имя драйвера Wi-Fi (Майкрософт), используемого конечной точкой мультимедиа. Значение может быть локализовано на основе языка, используемого конечной точкой.|
+|WifiMicrosoftDriverVersion|Строка|Версия драйвера Wi-Fi (Майкрософт), используемого конечной точкой мультимедиа.|
+|wifiRadioType|microsoft.graph.callRecords.wifiRadioType|Тип радио Wi-Fi, используемый конечной точкой мультимедиа. Возможные значения: `unknown`, `wifi80211a`, `wifi80211b`, `wifi80211g`, `wifi80211n`, `wifi80211ac`, `wifi80211ax`, `unknownFutureValue`.|
+|wifiSignalStrength|Int32|Надежность сигнала Wi-Fi в процентах, сообщаемая конечной точкой мультимедиа.|
+|wifiVendorDriver|Строка|Имя драйвера Wi-Fi, используемого конечной точкой мультимедиа. Значение может быть локализовано на основе языка, используемого конечной точкой.|
+|WifiVendorDriverVersion|Строка|Версия драйвера Wi-Fi, используемого конечной точкой мультимедиа.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -68,22 +70,24 @@ ms.locfileid: "59029159"
   "delayEventRatio": "Double",
   "dnsSuffix": "String",
   "ipAddress": "String",
-  "linkSpeed": 1024,
+  "linkSpeed": "Int64",
   "macAddress": "String",
-  "port": 1024,
+  "networkTransportProtocol": "String",
+  "port": "Int32",
   "receivedQualityEventRatio": "Double",
   "reflexiveIPAddress": "String",
   "relayIPAddress": "String",
-  "relayPort": 1024,
+  "relayPort": "Int32",
   "sentQualityEventRatio": "Double",
   "subnet": "String",
+  "traceRouteHops": [{"@odata.type": "microsoft.graph.callRecords.traceRouteHop"}],
   "wifiBand": "String",
-  "wifiBatteryCharge": 1024,
-  "wifiChannel": 1024,
+  "wifiBatteryCharge": "Int32",
+  "wifiChannel": "Int32",
   "wifiMicrosoftDriver": "String",
   "wifiMicrosoftDriverVersion": "String",
   "wifiRadioType": "String",
-  "wifiSignalStrength": 1024,
+  "wifiSignalStrength": "Int32",
   "wifiVendorDriver": "String",
   "wifiVendorDriverVersion": "String"
 }

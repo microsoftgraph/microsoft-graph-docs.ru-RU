@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: bcc45acf0bab837c9724967bb826e37d55573c83
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 85c51be36e5c2d55fdb1474187a27f6c49e38a36
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246701"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924114"
 ---
 # <a name="domain-resource-type"></a>Тип ресурса домена
 
@@ -48,15 +48,16 @@ ms.locfileid: "65246701"
 |[Удаление домена](../api/domain-delete.md) | Нет |Удаляет домен.|
 |[Домен ForceDelete](../api/domain-forcedelete.md)|Нет|Удаляет домен с помощью асинхронной операции.|
 |[Проверка домена](../api/domain-verify.md)|[domain](domain.md);|Проверка права собственности на домен.|
+|[Повышение уровня домена](../api/domain-promote.md)|Boolean|Повышение уровня проверенного поддомена до корневого домена.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип | Описание |
 |:---------------|:--------|:----------|
-|authenticationType|String| Указывает настроенный тип проверки подлинности для домена. Значение равно "или `Managed` " `Federated`. `Managed`указывает облачный управляемый домен, Azure AD выполняет проверку подлинности пользователя. `Federated`указывает, что проверка подлинности выполняется в федерации с поставщиком удостоверений, таким как клиентский локальная служба Active Directory через службы федерации Active Directory (AD FS). Это свойство доступно только для чтения и не допускает значения NULL. |
-|availabilityStatus|String| Это свойство всегда за исключением `null` [случаев, когда](../api/domain-verify.md) используется действие проверки. При использовании [действия](../api/domain-verify.md) проверки **в** ответе возвращается сущность домена. Свойство **availabilityStatus** сущности **домена** в ответе имеет значение либо `AvailableImmediately` .`EmailVerifiedDomainTakeoverScheduled`|
-|id|String| Полное имя домена. Ключ, неизменяемый, не допускающий значения NULL, уникальный. |
-|isAdminManaged|Boolean| Значение свойства равно, `false` если управление записями DNS домена делегировано Microsoft 365. В противном случае значение равно `true`. Не допускает значения NULL |
+|authenticationType|Строка| Указывает настроенный тип проверки подлинности для домена. Значение равно "или `Managed` " `Federated`. `Managed` указывает облачный управляемый домен, в котором Azure AD выполняет проверку подлинности пользователей. `Federated` указывает, что проверка подлинности выполняется в федерации с поставщиком удостоверений, таким как локальная служба Active Directory клиента через службы федерации Active Directory. Это свойство доступно только для чтения и не допускает значения NULL. |
+|availabilityStatus|Строка| Это свойство всегда за исключением `null` [случаев, когда](../api/domain-verify.md) используется действие проверки. При использовании [действия](../api/domain-verify.md) проверки **в** ответе возвращается сущность домена. Свойство **availabilityStatus** сущности **домена** в ответе имеет значение либо `AvailableImmediately` .`EmailVerifiedDomainTakeoverScheduled`|
+|id|Строка| Полное имя домена. Ключ, неизменяемый, не допускающий значения NULL, уникальный. |
+|isAdminManaged|Boolean| Значение свойства равно, `false` если управление записями DNS домена делегировано в Microsoft 365. В противном случае значение равно `true`. Не допускает значения NULL |
 |isDefault|Boolean| `true` Значение , если это домен по умолчанию, используемый для создания пользователя. Существует только один домен по умолчанию для каждой компании. Не допускает значения NULL |
 |isInitial|Boolean| `true` Значение , если это исходный домен, созданный службами Microsoft Online Services (companyname.onmicrosoft.com). Существует только один исходный домен для каждой компании. Не допускает значения NULL |
 |isRoot|Boolean| `true` Значение , если домен является проверенным корневым доменом. В противном `false` случае, если домен является поддоменом или непроверенным. Не допускает значения NULL |
@@ -66,7 +67,7 @@ ms.locfileid: "65246701"
 |supportedServices|Коллекция строк| Возможности, назначенные домену. Может включать `0`или `1` более следующих значений: `Email`, `Sharepoint`, , `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`,`SharePointDefaultDomain`, `FullRedelegation`, `SharePointPublic`, `OrgIdAuthentication`, `Yammer``Intune`. Значения, которые можно добавить или удалить с помощью API Graph: `Email`, `OfficeCommunicationsOnline`, `Yammer`. Значение null не допускается.|
 |state|[domainState](domainstate.md)| Состояние асинхронных операций, запланированных для домена. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Связи между доменом и другими объектами в каталоге, такими как записи проверки и записи конфигурации службы, предоставляются через свойства навигации. Эти связи можно прочитать, нацелив эти свойства навигации в запросах.
 

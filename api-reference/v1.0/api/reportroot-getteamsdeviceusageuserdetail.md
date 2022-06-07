@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: f51cea4ec7ca24c228ad7d4c92459f4c81cf3a45
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: 54a8394598f7e3ea2db082956e8594f79f9b0a96
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917782"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924044"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -28,7 +28,7 @@ ms.locfileid: "64917782"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                           |
 | Для приложений                            | Reports.Read.All                         |
 
-**Примечание**. Для делегированных разрешений, позволяющих приложениям считывать отчеты об использовании служб от имени пользователя, администратор клиента должен назначить пользователю соответствующую роль Azure Active Directory администратора. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
+**Примечание**. Для делегированных разрешений, позволяющих приложениям считывать отчеты об использовании служб от имени пользователя, администратор клиента должен назначить пользователю соответствующую ограниченную роль администратора Azure Active Directory. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -69,14 +69,17 @@ CSV-файл содержит столбцы со следующими заго�
 - "User Principal Name" (Имя участника-пользователя);
 - Last Activity Date (Дата последнего действия);
 - Is Deleted (Удален);
-- Deleted Date (Дата удаления);
+- "Deleted Date" (Дата удаления);
 - Used Web (использовал браузер);
 - Used Windows Phone (использовал телефон с Windows);
 - Used iOS (использовал iOS);
 - Used Mac (использовал Mac);
 - Used Android Phone (использовал телефон с Android);
 - Used Windows (использовал Windows);
-- Report Period (Отчетный период).
+- Используемая ОС Chrome
+- Используется Linux
+- Лицензировано
+- "Report Period" (Отчетный период).
 
 ## <a name="example"></a>Пример
 
@@ -118,7 +121,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Report Period
+Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Used Chrome OS,Used Linux,Is Licensed,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
