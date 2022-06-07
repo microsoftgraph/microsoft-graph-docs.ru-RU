@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 2774c0a729ed5154b4148698585d79ac79c0d028
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 2a3add855edad204d45be5aaaa20d02afef2cd84
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239108"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924045"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -28,7 +28,7 @@ ms.locfileid: "62239108"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                           |
 | Для приложений                            | Reports.Read.All                         |
 
-**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
+**Примечание**. Чтобы делегированные разрешения позволяли приложениям читать отчеты об использовании службы от имени пользователя, администратор клиента должен назначить пользователю соответствующую роль администратора Azure AD с ограниченными правами. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -56,6 +56,10 @@ GET /reports/getTeamsUserActivityUserDetail(date={date_value})
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
+## <a name="request-body"></a>Текст запроса
+
+Не указывайте текст запроса для этого метода.
+
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета. Этот URL-адрес можно найти в заголовке `Location` отклика.
@@ -65,6 +69,8 @@ URL-адреса для скачивания, для которых выполн
 CSV-файл содержит столбцы со следующими заголовками:
 
 - Report Refresh Date (Дата обновления отчета);
+- Tenant Display Name (Отображаемое имя клиента);
+- Shared Channel Tenant Display Names (Отображаемые имена клиентов общего канала);
 - Идентификатор пользователя
 - "User Principal Name" (Имя участника-пользователя);
 - Last Activity Date (Дата последнего действия);
@@ -75,8 +81,26 @@ CSV-файл содержит столбцы со следующими заго�
 - Private Chat Message Count (Количество сообщений в приватных чатах);
 - Call Count (Количество звонков);
 - Meeting Count (Количество собраний);
+- Post Messages (Публикация сообщений);
+- Reply Messages (Ответные сообщения);
+- Urgent Messages (Срочные сообщения);
+- Meetings Organized Count (Количество организованных собраний);
+- Meetings Attended Count (Количество посещенных собраний);
+- Ad Hoc Meetings Organized Count (Количество организованных незапланированных собраний);
+- Ad Hoc Meetings Attended Count (Количество посещенных незапланированных собраний);
+- Scheduled One-time Meetings Organized Count (Количество организованных запланированных разовых собраний);
+- Scheduled One-time Meetings Attended Count (Количество посещенных запланированных разовых собраний);
+- Scheduled Recurring Meetings Organized Count (Количество организованных запланированных повторяющихся собраний);
+- Scheduled Recurring Meetings Attended Count (Количество посещенных запланированных повторяющихся собраний);
+- Audio Duration (Длительность аудио);
+- Video Duration (Длительность видео);
+- Screen Share Duration (Длительность демонстрации экрана);
+- Audio Duration In Seconds (Длительность аудио в секундах);
+- Video Duration In Seconds (Длительность видео в секундах);
+- Screen Share Duration In Seconds (Длительность демонстрации экрана в секундах);
 - Has Other Action (Есть другое действие);
-- Report Period (Отчетный период).
+- Is Licensed (Наличие лицензии);
+- "Report Period" (Отчетный период).
 
 ## <a name="example"></a>Пример
 
@@ -119,7 +143,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Has Other Action,Report Period
+Report Refresh Date,Tenant Display Name,Shared Channel Tenant Display Names,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Post Messages,Reply Messages,Urgent Messages,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
