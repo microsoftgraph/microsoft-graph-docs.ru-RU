@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: df4a432516eaded193a197a960feb763811805d3f49d6ac77cf6998888545618
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c5ceff4600903d4d7ed465a16a811ec3ae1ac1d0
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57138678"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65947027"
 ---
 ```javascript
 
@@ -17,6 +17,7 @@ const client = Client.init(options);
 
 const todoTask = {
    title: 'A new task',
+   categories: ['Important'],
    linkedResources: [
       {
          webUrl: 'http://microsoft.com',
