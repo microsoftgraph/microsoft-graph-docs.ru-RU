@@ -5,17 +5,32 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 94dec31967c4ca5caf349d3ddbee5f9a7d000343
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: c61273ced5a43a0a200bbcdf433c844643130845
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900011"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944992"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
 Пространство имен: microsoft.graph
 
+
+### <a name="signinfrequencyauthenticationtype-values"></a>Значения signInFrequencyAuthenticationType
+
+|Member|
+|:---|
+|primaryAndSecondaryAuthentication|
+|secondaryAuthentication|
+|unknownFutureValue|
+
+### <a name="signinfrequencyinterval-values"></a>Значения signInFrequencyInterval
+
+|Member|
+|:---|
+|timeBased|
+|Everytime|
 
 #### <a name="authenticationprotocol-values"></a>Значения authenticationProtocol
 
@@ -338,9 +353,9 @@ ms.locfileid: "65900011"
 
 |Member|
 |:---|
-|Строка|
+|String|
 |Целое число|
-|Справочные материалы|
+|Справка|
 |Binary|
 |Boolean|
 |DateTime|
@@ -1182,7 +1197,7 @@ ms.locfileid: "65900011"
 |Member|
 |:---|
 |event|
-|message|
+|сообщение|
 |driveItem|
 |externalItem|
 |site|
@@ -1360,7 +1375,7 @@ ms.locfileid: "65900011"
 
 | Member
 |:-------------------------
-| обязательно
+| Обязательный
 | необязательный
 | resource
 
@@ -2053,7 +2068,7 @@ ms.locfileid: "65900011"
 
 |Member|
 |:---|
-|message|
+|сообщение|
 |chatEvent |
 |Ввода |
 |unknownFutureValue|
@@ -2139,7 +2154,7 @@ ms.locfileid: "65900011"
 | Member       |
 |:--------------|
 |event|
-|message|
+|сообщение|
 |driveItem|
 |externalFile|
 |externalItem|
@@ -2322,7 +2337,7 @@ ms.locfileid: "65900011"
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкая|2|
+|Низкий|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>Значения threatAssessmentContentType
 
@@ -2760,7 +2775,7 @@ ms.locfileid: "65900011"
 |Member|
 |:---|
 |team|
-|channel|
+|Канал|
 |чат|
 |unknownFutureValue|
 

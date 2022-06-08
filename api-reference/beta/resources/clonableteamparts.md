@@ -1,18 +1,18 @@
 ---
-title: тип перечисления Клонаблетеампартс
+title: Тип перечисления clonableTeamParts
 description: 'Описывает, какая часть команды должна быть клонирована. '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: enumPageType
-ms.prod: ''
+ms.prod: teamwork
 author: nkramer
-ms.openlocfilehash: 666dc3cc60490a9a30a5e2bab0b0642c34fb5009
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 99a50eb62af486b1d5eb84ae779627bbf8509cc1
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034086"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944170"
 ---
-# <a name="clonableteamparts-enum-type"></a>тип перечисления Клонаблетеампартс
+# <a name="clonableteamparts-enum-type"></a>Тип перечисления clonableTeamParts
 
 Пространство имен: microsoft.graph
 
@@ -24,10 +24,10 @@ ms.locfileid: "48034086"
 
 | Элемент | Значение| Описание |
 |:---------------|:--------|:----------|
-|apps|1 |Скопируйте список установленных приложений.|
-|tabs|2 |копирует вкладки в каналах.|
-|параметры|4 |Копирует все параметры в группе вместе с параметрами группы ключей.|
+|apps|1|Скопируйте список установленных приложений.|
+|tabs|2|копирует вкладки в каналах.|
+|settings|4|Копирует все параметры в команде вместе с параметрами группы ключей.|
 |channels|8 |копирует структуру канала (но не сообщения в канале).|
-|members|16 |копирует участников и владельцев группы.|
+|members|16|копирует участников и владельцев команды.|
 
 

@@ -1,23 +1,23 @@
 ---
-title: Создание связи
-description: Создайте новый объект связи.
+title: Создание отношения
+description: Создайте объект отношения.
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: Sharepoint
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 3341e09c91734b0c9a306a0c51d692a084451b80
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 804c598c840e34913149ad8fc9555abe41b8fbee
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60926086"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944936"
 ---
-# <a name="create-relation"></a>Создание связи
+# <a name="create-relation"></a>Создание отношения
 Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект связи.](../resources/termstore-relation.md) Они используются для создания закрепленных и повторно используемых отношений между терминами или между термином и набором. При создании закрепленного/повторного термина между термином и задаваемой затем отTerm в теле столба должно быть null.
+Создайте объект [отношения](../resources/termstore-relation.md) . Они используются для создания закрепленных и повторно используемых связей между терминами или между термином и набором. При создании закрепленного или повторно используемого термина между термином и заданием параметр fromTerm в тексте сообщения должен иметь значение NULL.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,21 +46,21 @@ POST /termStore/sets/{setId}/terms/{termId}/relations
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляют представление JSON объекта [связи.](../resources/termstore-relation.md)
+В тексте запроса добавьте представление объекта отношения в формате [JSON.](../resources/termstore-relation.md)
 
-В следующей таблице показаны свойства, необходимые при создании [связи.](../resources/termstore-relation.md)
+В следующей таблице показаны свойства, необходимые при создании [отношения](../resources/termstore-relation.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |Отношение|relationType|Тип создаемого отношения. Возможные значения: `pin`, `reuse`.|
 |set| [microsoft.graph.termstore.set](../resources/termstore-set.md)| Набор, в котором необходимо создать связь.
-|fromTerm| [microsoft.graph.termstore.term](../resources/termstore-term.md) | Термин, с которым необходимо создать отношения.
+|fromTerm| [microsoft.graph.termstore.term](../resources/termstore-term.md) | Термин, с которым необходимо создать связь.
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и объект `201 Created` [связи](../resources/termstore-relation.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [отношения](../resources/termstore-relation.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

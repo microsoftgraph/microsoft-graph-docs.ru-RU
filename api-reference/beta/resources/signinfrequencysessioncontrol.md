@@ -1,34 +1,36 @@
 ---
-title: signInFrequencySessionControl type
-description: Управление сеансом для обеспечения частоты подписей.
-localization_priority: Normal
-author: dkershaw10
+title: Тип ресурса signInFrequencySessionControl
+description: Управление сеансом для обеспечения частоты входа.
+ms.localizationpriority: medium
+author: rckyplln
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 1f224c1e9ba72e114fd9c9bcacdd74670713837d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a42697bd49f9f6742c3f6c1e61ace9a8a1362111
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945629"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944451"
 ---
-# <a name="signinfrequencysessioncontrol-resource-type"></a>signInFrequencySessionControl type
+# <a name="signinfrequencysessioncontrol-resource-type"></a>Тип ресурса signInFrequencySessionControl
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Управление сеансами для обеспечения частоты входов. Наследуется от [управления сеансами условного доступа.](conditionalaccesssessioncontrol.md)
+Управление сеансом для обеспечения частоты входа. Наследуется от [управления сеансом условного доступа](conditionalaccesssessioncontrol.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Указывает, включено ли управление сеансом. |
-|type          |signinFrequencyType       | Возможные значения: `days`, `hours`.|
-|value         |Int32        | Количество `days` или `hours` .|
+|isEnabled     |Boolean      | Указывает, включен ли элемент управления сеансом. |
+|type          |SigninFrequencyType       | Возможные значения: `days`или `hours`, `null` если frequencyInterval имеет значение `everyTime` .|
+|value         |Int32        | Число или `days` `hours`.|
+|authenticationType |signInFrequencyAuthenticationType  | Возможные значения: `primaryAndSecondaryAuthentication`, `secondaryAuthentication`. `unknownFutureValue`|
+|frequencyInterval  |signInFrequencyInterval  | Возможные значения: `timeBased`, `everyTime`. `unknownFutureValue`|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -47,9 +49,11 @@ ms.locfileid: "50945629"
 
 ```json
 {
-  "isEnabled": true,
+  "isEnabled":true,
   "type": "String",
-  "value": 1024
+  "value": 1024,
+  "authenticationType": "String",
+  "frequencyInterval": "String"
 }
 ```
 

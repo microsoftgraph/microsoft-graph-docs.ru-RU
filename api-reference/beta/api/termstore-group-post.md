@@ -1,23 +1,23 @@
 ---
 title: Создание группы
-description: Создание нового группового объекта.
+description: Создайте объект группы.
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: Sharepoint
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 2d7a697bbbf616053c0adf709256b443c0851d33
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 3456e128d28ef9e604e26aa860bb9f1c1eae9389
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940916"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944873"
 ---
 # <a name="create-group"></a>Создание группы
 Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [группового](../resources/termstore-group.md) объекта.
+Создайте объект [группы](../resources/termstore-group.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

@@ -5,13 +5,13 @@ ms.date: 09/12/2017
 title: contentTypeInfo
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 6f57dcfd144ae55b53ed653d11cf82924baf9de3
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: 1125f6604d563abc80c58b52a38f9bff135f9fbf
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63720836"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944887"
 ---
 # <a name="contenttypeinfo-resource-type"></a>Тип ресурса contentTypeInfo
 
@@ -39,7 +39,7 @@ ms.locfileid: "63720836"
 | Свойство | Тип   | Описание                   |
 | :------- | :----- | :---------------------------- |
 | **id**   | string | Идентификатор типа контента.   |
-| **name** | строка | Имя типа контента. |
+| **name** | string | Имя типа контента. |
 
 <!--
 {

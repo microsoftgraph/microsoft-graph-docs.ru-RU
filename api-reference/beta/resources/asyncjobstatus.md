@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Этот ресурс предоставляет сведения о ходе выполнения асинхронного задания.
 ms.date: 09/10/2017
 title: AsyncJobStatus
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 7bbc0a9fe74217d2b510db1e4439962d099e3bef
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: files
+ms.openlocfilehash: 9dfa9d8422df85f5f0cabb875d855050e4643425
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027253"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944985"
 ---
 # <a name="asyncjobstatus-resource"></a>Ресурс AsyncJobStatus
 

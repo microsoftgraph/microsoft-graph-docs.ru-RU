@@ -4,12 +4,12 @@ description: 'Чтобы перечислить все команды '
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1045c71fadcd70f9888f6357366d7097178dbec4
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: b3395432192a47e46fd69b37ea6c587538e1e515
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133575"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944922"
 ---
 # <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>Перечисление всех команд в Microsoft Teams для организации
 
@@ -57,9 +57,7 @@ Content-type: application/json
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
-> **Примечание.** Фильтрация групп по свойству resourceProvisioningOptions доступна только в конечной точке бета-версии. Свойство resourceProvisioningOptions доступно в версии 1.0 и бета-версии.
-
-> **Примечание**. Некоторые неиспользуемые старые команды не указываются в списке. Дополнительные сведения см. в статье [Известные проблемы](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
+> **Примечание**. Некоторые неиспользуемые старые команды не указываются в списке. Дополнительные сведения см. в статье [Известные проблемы](known-issues.md#missing-teams-in-list-all-teams).
 
 Ниже приведен пример ответа. 
 

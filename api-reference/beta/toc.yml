@@ -572,7 +572,7 @@ items:
                 href: api/profile-get.md
               - name: Удаление профиля пользователя
                 href: api/profile-delete.md
-          - name: Командная работа
+          - name: Teamwork
             items:
               - name: Приложение установлено
                 href: resources/teamsappinstallation.md
@@ -14646,6 +14646,237 @@ items:
                         href: resources/attacksimulationtrainingusercoverage.md
                       - name: Получение объема протестированного обучения для пользователей
                         href: api/reportroot-getattacksimulationtrainingusercoverage.md
+          - name: обнаружение электронных данных (предварительная версия)
+            items:
+              - name: Дело
+                href: resources/security-ediscoverycase.md
+                items:
+                  - name: Список
+                    href: api/security-casesroot-list-ediscoverycases.md
+                  - name: Создание
+                    href: api/security-casesroot-post-ediscoverycases.md
+                  - name: Получение
+                    href: api/security-ediscoverycase-get.md
+                  - name: Обновление
+                    href: api/security-ediscoverycase-update.md
+                  - name: Delete
+                    href: api/security-casesroot-delete-ediscoverycases.md
+                  - name: Закрытие
+                    href: api/security-ediscoverycase-close.md
+                  - name: Открыть
+                    href: api/security-ediscoverycase-reopen.md
+                  - name: Операции со списком
+                    href: api/security-ediscoverycase-list-operations.md
+                  - name: Перечисление хранителей
+                    href: api/security-ediscoverycase-list-custodians.md
+                  - name: Создание хранителя
+                    href: api/security-ediscoverycase-post-custodians.md
+                  - name: 'Перечисление источников данных, не содержимого'
+                    href: api/security-ediscoverycase-list-noncustodialdatasources.md
+                  - name: 'Создание источника данных, не являемой хранителями'
+                    href: api/security-ediscoverycase-post-noncustodialdatasources.md
+                  - name: Перечисление удержаний по юридическим причинам
+                    href: api/security-ediscoverycase-list-legalholds.md
+                  - name: Создание удержания по юридическим причинам
+                    href: api/security-ediscoverycase-post-legalholds.md
+                  - name: Поиск по спискам
+                    href: api/security-ediscoverycase-list-searches.md
+                  - name: Создание поиска
+                    href: api/security-ediscoverycase-post-searches.md
+                  - name: Список наборов для проверки
+                    href: api/security-ediscoverycase-list-reviewsets.md
+                  - name: Создание набора для проверки
+                    href: api/security-ediscoverycase-post-reviewsets.md
+                  - name: Перечисление тегов
+                    href: api/security-ediscoverycase-list-tags.md
+                  - name: Создание тега
+                    href: api/security-ediscoverycase-post-tags.md
+              - name: Параметры регистра
+                href: resources/security-ediscoverycasesettings.md
+                items:
+                  - name: Получение параметров
+                    href: api/security-ediscoverycasesettings-get.md
+                  - name: Обновление параметров
+                    href: api/security-ediscoverycasesettings-update.md
+                  - name: Сброс параметров до значения по умолчанию
+                    href: api/security-ediscoverycasesettings-resettodefault.md
+              - name: Operation
+                href: resources/security-caseoperation.md
+                items:
+                  - name: Перечисление операций с вариантами
+                    href: api/security-ediscoverycase-list-operations.md
+                  - name: Получение сведений о регистре по идентификатору
+                    href: api/security-caseoperation-get.md
+              - name: Хранитель
+                href: resources/security-ediscoverycustodian.md
+                items:
+                  - name: Список
+                    href: api/security-ediscoverycase-list-custodians.md
+                  - name: Создание
+                    href: api/security-ediscoverycase-post-custodians.md
+                  - name: Получение
+                    href: api/security-ediscoverycustodian-get.md
+                  - name: Обновление
+                    href: api/security-ediscoverycustodian-update.md
+                  - name: Активация
+                    href: api/security-ediscoverycustodian-activate.md
+                  - name: Выпуск
+                    href: api/security-ediscoverycustodian-release.md
+                  - name: Применение удержания
+                    href: api/security-ediscoverycustodian-applyhold.md
+                  - name: Удаление удержания
+                    href: api/security-ediscoverycustodian-removehold.md
+                  - name: Обновление индекса
+                    href: api/security-ediscoverycustodian-updateindex.md
+                  - name: Перечисление источников пользователей
+                    href: api/security-ediscoverycustodian-list-usersources.md
+                  - name: Создание источника пользователя
+                    href: api/security-ediscoverycustodian-post-usersources.md
+                  - name: Перечисление источников сайта
+                    href: api/security-ediscoverycustodian-list-sitesources.md
+                  - name: Создание источника сайта
+                    href: api/security-ediscoverycustodian-post-sitesources.md
+                  - name: Перечисление источников групп с группировкой
+                    href: api/security-ediscoverycustodian-list-unifiedgroupsources.md
+                  - name: Создание источника неизначимой группы
+                    href: api/security-ediscoverycustodian-post-unifiedgroupsources.md
+                  - name: Получение последней операции с индексом
+                    href: api/security-ediscoverycustodian-list-lastindexoperation.md
+              - name: 'Источник данных, отличный от источника данных, не являемой хранителями'
+                href: resources/security-ediscoverynoncustodialdatasource.md
+                items:
+                  - name: Список
+                    href: api/security-ediscoverycase-list-noncustodialdatasources.md
+                  - name: Создание
+                    href: api/security-ediscoverycase-post-noncustodialdatasources.md
+                  - name: Получение
+                    href: api/security-ediscoverynoncustodialdatasource-get.md
+                  - name: Выпуск
+                    href: api/security-ediscoverynoncustodialdatasource-release.md
+                  - name: Применение удержания
+                    href: api/security-ediscoverynoncustodialdatasource-applyhold.md
+                  - name: Удаление удержания
+                    href: api/security-ediscoverynoncustodialdatasource-removehold.md
+                  - name: Обновление индекса
+                    href: api/security-ediscoverynoncustodialdatasource-updateindex.md
+                  - name: Получение последней операции с индексом
+                    href: api/security-ediscoverycustodian-list-lastindexoperation.md
+              - name: Политика удержания
+                href: resources/security-ediscoveryholdpolicy.md
+                items:
+                  - name: Список
+                    href: api/security-ediscoverycase-list-legalholds.md
+                  - name: Создание
+                    href: api/security-ediscoverycase-post-legalholds.md
+                  - name: Получение
+                    href: api/security-ediscoveryholdpolicy-get.md
+                  - name: Обновление
+                    href: api/security-ediscoveryholdpolicy-update.md
+                  - name: Delete
+                    href: api/security-ediscoverycase-delete-legalholds.md
+                  - name: Перечисление источников пользователей
+                    href: api/security-ediscoverycustodian-list-usersources.md
+                  - name: Создание источника пользователя
+                    href: api/security-ediscoveryholdpolicy-post-usersources.md
+                  - name: Перечисление источников сайта
+                    href: api/security-ediscoverycustodian-list-sitesources.md
+                  - name: Создание источника сайта
+                    href: api/security-ediscoveryholdpolicy-post-sitesources.md
+              - name: Поиск
+                href: resources/security-ediscoverysearch.md
+                items:
+                  - name: Список
+                    href: api/security-ediscoverycase-list-searches.md
+                  - name: Создание
+                    href: api/security-ediscoverycase-post-searches.md
+                  - name: Получение
+                    href: api/security-ediscoverysearch-get.md
+                  - name: Обновление
+                    href: api/security-ediscoverysearch-update.md
+                  - name: Delete
+                    href: api/security-ediscoverycase-delete-searches.md
+                  - name: Оценка статистики
+                    href: api/security-ediscoverysearch-estimatestatistics.md
+                  - name: Очистка данных
+                    href: api/security-ediscoverysearch-purgedata.md
+                  - name: Перечисление источников хранителей
+                    href: api/security-ediscoverysearch-list-custodiansources.md
+                  - name: Добавление источников хранителей
+                    href: api/security-ediscoverysearch-post-custodiansources.md
+                  - name: Удаление источников хранителей
+                    href: api/security-ediscoverysearch-delete-custodiansources.md
+                  - name: 'Перечисление источников данных, не содержимого'
+                    href: api/security-ediscoverysearch-list-noncustodialsources.md
+                  - name: 'Добавление источников данных, не содержимого'
+                    href: api/security-ediscoverysearch-post-noncustodialsources.md
+                  - name: 'Удаление источников данных, которые не являются хранителями'
+                    href: api/security-ediscoverysearch-delete-noncustodialsources.md
+                  - name: Перечисление дополнительных источников
+                    href: api/security-ediscoverysearch-list-additionalsources.md
+                  - name: Добавление дополнительных источников
+                    href: api/security-ediscoverysearch-post-additionalsources.md
+                  - name: Получение последней операции оценки статистики
+                    href: api/security-ediscoverysearch-list-lastestimatestatisticsoperation.md
+              - name: Набор для проверки
+                href: resources/security-ediscoveryreviewset.md
+                items:
+                  - name: Список
+                    href: api/security-ediscoverycase-list-reviewsets.md
+                  - name: Создание
+                    href: api/security-ediscoverycase-post-reviewsets.md
+                  - name: Получение
+                    href: api/security-ediscoveryreviewset-get.md
+                  - name: Добавить в набор для проверки
+                    href: api/security-ediscoveryreviewset-addtoreviewset.md
+                  - name: Экспорт
+                    href: api/security-ediscoveryreviewset-export.md
+                    items:
+                      - name: Получение URL-адреса скачивания
+                        href: api/security-ediscoveryexportoperation-downloadurl.md
+                  - name: Query
+                    href: resources/security-ediscoveryreviewsetquery.md
+                    items:
+                      - name: Список
+                        href: api/security-ediscoveryreviewset-list-queries.md
+                      - name: Создание
+                        href: api/security-ediscoveryreviewset-post-queries.md
+                      - name: Получение
+                        href: api/security-ediscoveryreviewsetquery-get.md
+                      - name: Обновление
+                        href: api/security-ediscoveryreviewsetquery-update.md
+                      - name: Удалить
+                        href: api/security-ediscoveryreviewset-delete-queries.md
+                      - name: Экспорт
+                        href: api/security-ediscoveryreviewsetquery-export.md
+                        items:
+                          - name: Получение URL-адреса скачивания
+                            href: api/security-ediscoveryexportoperation-downloadurl.md
+                      - name: Применение тегов
+                        href: api/security-ediscoveryreviewsetquery-applytags.md
+                      - name: Выполнить
+                        href: api/security-ediscoveryreviewsetquery-run.md
+                  - name: File
+                    href: resources/security-ediscoveryfile.md
+                    items:
+                      - name: Список
+                        href: api/security-ediscoveryreviewset-list-files.md
+                      - name: Получение
+                        href: api/security-ediscoveryfile-get.md
+              - name: Tag
+                href: resources/security-ediscoveryreviewtag.md
+                items:
+                  - name: Список
+                    href: api/security-ediscoverycase-list-tags.md
+                  - name: Создание
+                    href: api/security-ediscoverycase-post-tags.md
+                  - name: Получение
+                    href: api/security-ediscoveryreviewtag-get.md
+                  - name: Обновление
+                    href: api/security-ediscoveryreviewtag-update.md
+                  - name: Delete
+                    href: api/security-ediscoverycase-delete-tags.md
+                  - name: Перечисление тегов как иерархии
+                    href: api/security-ediscoveryreviewtag-ashierarchy.md
           - name: Защита информации
             items:
               - name: Метки

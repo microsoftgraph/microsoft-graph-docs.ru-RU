@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса automaticRepliesMailTips
-description: Сообщения об автоматических ответах, которые были настроены для почтового ящика.
-localization_priority: Normal
+description: Подсказки об автоматических ответах, которые были настроены в почтовом ящике.
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: mail
 author: abheek-das
-ms.openlocfilehash: 5ce447f7b18390770bc8ed2d5c1f8912290fb352
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 48051faa398fcbaf6e894ca2d67b394950c27522
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128619"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944971"
 ---
 # <a name="automaticrepliesmailtips-resource-type"></a>Тип ресурса automaticRepliesMailTips
 
@@ -18,17 +18,17 @@ ms.locfileid: "50128619"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Сообщения об](../resources/mailtips.md) автоматических ответах, которые были настроены для почтового ящика.
+[Подсказки об](../resources/mailtips.md) автоматических ответах, которые были настроены в почтовом ящике.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:-----|:-----|:-----|
 | message | String | Автоматическое ответное сообщение. |
-| messageLanguage | [localeInfo](../resources/localeinfo.md) | Язык, на который находится автоматическое ответное сообщение. |
-| scheduledEndTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Дата и время окончания автоматических ответов. |
+| messageLanguage | [localeInfo](../resources/localeinfo.md) | Язык, на котором находится автоматическое ответное сообщение. |
+| scheduledEndTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Дата и время завершения автоматических ответов. |
 | scheduledStartTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Дата и время начала автоматических ответов. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

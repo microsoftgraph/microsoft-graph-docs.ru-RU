@@ -5,13 +5,13 @@ ms.date: 09/12/2017
 title: columnLink
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: ae75a605f8476b9ec25d5aab5cf50f1bf9508c95
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: 8bf46496209b62748c82e46ca52ec7e7e80ded7c
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723530"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944950"
 ---
 # <a name="columnlink-resource-type"></a>Тип ресурса ColumnLink
 
@@ -40,8 +40,8 @@ ms.locfileid: "63723530"
 
 | Свойство | Тип   | Описание                                   |
 | :------- | :----- | :-------------------------------------------- |
-| **id**   | строка | Уникальный идентификатор столбца.         |
-| **name** | строка | Имя столбца в этом типе контента. |
+| **id**   | string | Уникальный идентификатор столбца.         |
+| **name** | string | Имя столбца в этом типе контента. |
 
 <!--
 {

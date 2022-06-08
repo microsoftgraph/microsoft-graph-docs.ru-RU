@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса automaticRepliesSetting
-description: 'Параметры конфигурации, чтобы автоматически уведомить отправитель входящего сообщения электронной почты с сообщением из '
-localization_priority: Normal
+description: 'Параметры конфигурации для автоматического уведомления отправителя о входящем сообщении электронной почты с сообщением от '
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: mail
 author: abheek-das
-ms.openlocfilehash: 9f191f84697a95c992a8e34896ac5e439c37b973
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a02eb764937f62fdecebbff3d5aec94447c2fb00
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958831"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944964"
 ---
 # <a name="automaticrepliessetting-resource-type"></a>Тип ресурса automaticRepliesSetting
 
