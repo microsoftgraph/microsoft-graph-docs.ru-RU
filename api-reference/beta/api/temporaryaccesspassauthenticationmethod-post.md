@@ -1,48 +1,39 @@
 ---
 title: Создание temporaryAccessPassAuthenticationMethod
-description: Создание нового объекта temporaryAccessPassAuthenticationMethod.
-author: inbarckMS
+description: Создайте новый временный объектAccessPassAuthenticationMethod.
+author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e96a886a3627bf12b42bcd249bd5b800036c67c5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 43d4b5df97653498c4c3630cb95ca5abb48a9a60
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126754"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971576"
 ---
 # <a name="create-temporaryaccesspassauthenticationmethod"></a>Создание temporaryAccessPassAuthenticationMethod
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) для пользователя. У пользователя может быть только один временный пропуск доступа. Пароль можно использовать между началом и конечным временем временного пропуска доступа. Если пользователю требуется новый временный пропуск доступа:
-* Хотя текущий пропуск временного доступа действителен, администратору необходимо удалить существующий временный пропуск доступа и создать новый пропуск для пользователя. Удаление допустимой временной пропускной записи отзовет сеансы пользователя. 
-* После истечения срока действия временного пропуска доступа новый временный пропуск переопределит текущий временный пропуск доступа и не отменит сеансы пользователя.
+Создайте новый [временный объектAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) для пользователя. У пользователя может быть только один временный проход доступа. Секретный код можно использовать между временем начала и окончания временного прохода доступа. Если пользователю требуется новый временный секретный код:
+* Хотя текущий временный секретный код действителен, администратору необходимо удалить существующий временный секретный код и создать новый проход для пользователя. Удаление допустимого временного прохода доступа отменит сеансы пользователя. 
+* По истечении срока действия временного прохода доступа новый временный проход доступа переопределяет текущий временный проход доступа и не отменяет сеансы пользователя.
 
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-### <a name="permissions-acting-on-self"></a>Разрешения, действующие на себя
-
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:---------------------------------------|:-------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
-
-### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие на других пользователей
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | UserAuthenticationMethod.ReadWrite.All |
+| Для приложений                            | UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих ролей [Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+В делегированных сценариях, когда администратор действует с другим пользователем, администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 * глобальный администратор;
 * привилегированный администратор проверки подлинности;
 * администратор проверки подлинности.
@@ -64,21 +55,21 @@ POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [temporaryAccessPassAuthenticationMethod.](../resources/temporaryaccesspassauthenticationmethod.md)
+В тексте запроса добавьте представление объекта [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) в формате JSON.
 
-В следующей таблице описываются необязательные свойства, которые можно использовать при создании [временногоAccessPassAuthenticationMethod.](../resources/temporaryaccesspassauthenticationmethod.md)
+В следующей таблице описаны необязательные свойства, которые можно использовать при создании [временного объектаAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md).
 
 |Свойство|Тип|Описание|Обязательный| 
 |:---|:---|:---|:---|
-|startDateTime|DateTimeOffset|Дата и время, когда временныйAccessPass станет доступным для использования, если не задать временный пропуск доступа, можно использовать во время создания.| Нет|
-|lifetimeInMinutes|Int32|Срок службы temporaryAccessPass в минутах, начиная с момента создания или при наборе startDateTime. Минимум 10, максимум 43200 (эквивалент 30 дней).| Нет|
-|isUsableOnce|Логическое|Определяет, ограничен ли пропуск одно время использования. Если true — пропуск можно использовать один раз, если false — пропуск можно использовать несколько раз в течение временного времени службыAccessPass. Многоцелевой временный пропуск доступа (isUsableOnce = false) может быть создан и использован для регистрации, если это разрешено политикой метода проверки подлинности временного доступа.|  Нет|
+|startDateTime|DateTimeOffset|Дата и время, когда temporaryAccessPass становится доступным для использования, если временный секретный код не задается, доступен для использования во время создания.| Нет|
+|lifetimeInMinutes|Int32|Время существования temporaryAccessPass в минутах, начиная со времени создания или при значении startDateTime, если оно задано. Минимум 10, максимум 43200 (эквивалентно 30 дням).| Нет|
+|isUsableOnce|Boolean|Определяет, ограничен ли проход одним использованием. Если значение равно True, то проход можно использовать один раз, если значение равно False, то этот проход можно использовать несколько раз в течение временного жизненного циклаAccessPass. Многопользовательский временный секретный код (isUsableOnce = false) можно создать и использовать для входа только в том случае, если это разрешено политикой метода проверки подлинности временного прохода доступа.|  Нет|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и временный `201 Created` [объектAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) в тексте ответа.
+В случае успешного выполнения `201 Created` этот метод возвращает код отклика и временный [объектAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

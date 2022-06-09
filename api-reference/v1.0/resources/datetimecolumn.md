@@ -4,14 +4,14 @@ ms.date: 09/11/2017
 title: dateTimeColumn
 ms.localizationpriority: medium
 description: Ресурс dateTimeColumn в ресурсе columnDefinition указывает, что значения столбца представляют собой даты или время.
-ms.prod: ''
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 21f9f3491d87823926bbc6c0f541362114a6d710
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 462110be3c0972745570e935e9d7a432b0415708
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029089"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65970995"
 ---
 # <a name="datetimecolumn-resource-type"></a>Тип ресурса dateTimeColumn
 

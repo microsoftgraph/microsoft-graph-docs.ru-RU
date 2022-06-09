@@ -4,14 +4,14 @@ ms.date: 09/11/2017
 title: choiceColumn
 ms.localizationpriority: medium
 description: Ресурс choiceColumn в ресурсе columnDefinition указывает, что значения столбца можно выбрать из списка вариантов.
-ms.prod: ''
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 3660aadda00b8b9e50856cb9eeeea35727ef1ecf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dae9bfbf6193bde99b3113cf5c0a28e59ded8525
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109362"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971618"
 ---
 # <a name="choicecolumn-resource-type"></a>Тип ресурса choiceColumn
 

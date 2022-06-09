@@ -258,7 +258,7 @@ items:
   - name: Справочник по версии 1.0
     expanded: true
     items:
-      - name: Общие сведения
+      - name: Обзор
         href: overview.md
       - name: Пользователи
         items:
@@ -488,7 +488,7 @@ items:
             items:
               - name: Список задач
                 href: api/planneruser-list-tasks.md
-          - name: Командная работа
+          - name: Teamwork
             items:
               - name: Приложение установлено
                 href: resources/teamsappinstallation.md
@@ -743,7 +743,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Расширенные свойства
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -1221,7 +1221,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Расширенные свойства
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -1336,7 +1336,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Записи звонков
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/callrecords-api-overview.md
               - name: Запись вызова
                 items:
@@ -1403,11 +1403,11 @@ items:
       - name: Соответствие требованиям
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/complianceapioverview.md
           - name: Запрос прав субъекта
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Запрос прав субъекта
                 href: resources/subjectrightsrequest.md
@@ -1457,7 +1457,7 @@ items:
       - name: Резервирование для пользователей
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/booking-api-overview.md
           - name: Организация в Microsoft Bookings
             href: resources/bookingbusiness.md
@@ -4245,7 +4245,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Работоспособность и взаимодействие служб
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/service-communications-api-overview.md
               - name: Объявление службы
                 href: resources/serviceannouncement.md
@@ -5002,17 +5002,28 @@ items:
                         href: api/windowshelloforbusinessauthenticationmethod-get.md
                       - name: Удаление
                         href: api/windowshelloforbusinessauthenticationmethod-delete.md
-              - name: Конфигурация проверки подлинности на основе сертификатов
-                href: resources/certificatebasedauthconfiguration.md
-                items:
-                  - name: Список
-                    href: api/certificatebasedauthconfiguration-list.md
-                  - name: Создание
-                    href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-                  - name: Получение
-                    href: api/certificatebasedauthconfiguration-get.md
-                  - name: Удаление
-                    href: api/certificatebasedauthconfiguration-delete.md
+                  - name: Временный секретный код
+                    href: resources/temporaryaccesspassauthenticationmethod.md
+                    items:
+                      - name: Список
+                        href: api/authentication-list-temporaryaccesspassmethods.md
+                      - name: Создание
+                        href: api/authentication-post-temporaryaccesspassmethods.md
+                      - name: Получение
+                        href: api/temporaryaccesspassauthenticationmethod-get.md
+                      - name: Удаление
+                        href: api/temporaryaccesspassauthenticationmethod-delete.md
+                  - name: Конфигурация проверки подлинности на основе сертификатов
+                    href: resources/certificatebasedauthconfiguration.md
+                    items:
+                      - name: Список
+                        href: api/certificatebasedauthconfiguration-list.md
+                      - name: Создание
+                        href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+                      - name: Получение
+                        href: api/certificatebasedauthconfiguration-get.md
+                      - name: Удаление
+                        href: api/certificatebasedauthconfiguration-delete.md
               - name: Условный доступ
                 items:
                   - name: Политики
@@ -5199,7 +5210,7 @@ items:
                         href: api/organizationalbrandinglocalization-delete.md
               - name: Политики
                 items:
-                  - name: Общие сведения
+                  - name: Обзор
                     href: resources/policy-overview.md
                   - name: Политика времени ожидания на основе действий
                     href: resources/activitybasedtimeoutpolicy.md
@@ -5224,7 +5235,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
                   - name: Политика методов проверки подлинности
                     items:
-                      - name: Общие сведения
+                      - name: Обзор
                         href: resources/authenticationmethodspolicies-overview.md
                       - name: Политика метода проверки подлинности
                         href: resources/authenticationmethodspolicy.md
@@ -5251,6 +5262,15 @@ items:
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                           - name: Delete
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+                      - name: Политика временного доступа
+                        href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
+                        items:
+                          - name: Получение
+                            href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
+                          - name: Обновление
+                            href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
+                          - name: Delete
+                            href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
                       - name: Политика электронной почты
                         href: resources/emailauthenticationmethodconfiguration.md
                         items:
@@ -5437,7 +5457,7 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: Отправка сертификата клиента
                         href: api/identityapiconnector-uploadclientcertificate.md
-                      - name: Delete
+                      - name: Удалить
                         href: api/identityapiconnector-delete.md
           - name: Управление
             items:
@@ -5843,7 +5863,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Расширенные свойства
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -6045,7 +6065,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Расширенные свойства
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -6067,7 +6087,7 @@ items:
         items:
           - name: Отчеты о действиях Azure AD
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/azure-ad-auditlog-overview.md
               - name: Аудит каталога
                 href: resources/directoryaudit.md
@@ -6090,7 +6110,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Отчеты об использовании Microsoft 365
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/report.md
               - name: Использование устройств Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -6291,9 +6311,9 @@ items:
       - name: Поиск
         displayname: Microsoft Search API
         items:
-          - name: Запрос
+          - name: Query
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/search-api-overview.md
               - name: Тип поискового запроса
                 href: resources/searchrequest.md
@@ -6303,7 +6323,7 @@ items:
                 href: api/search-query.md
           - name: Index
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/indexing-api-overview.md
               - name: Внешнее подключение
                 items:
@@ -6379,7 +6399,7 @@ items:
             items:
               - name: Оценка угроз
                 items:
-                  - name: Общие сведения
+                  - name: Обзор
                     href: resources/threatassessment-api-overview.md
                   - name: Запрос на оценку угроз
                     href: resources/threatassessmentrequest.md
@@ -6418,7 +6438,7 @@ items:
       - name: Сайты и списки
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/sharepoint.md
           - name: Сайты
             href: resources/site.md
@@ -7169,7 +7189,7 @@ items:
       - name: Задачи To-Do
         displayName: Microsoft To Do
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/todo-overview.md
           - name: Список задач
             href: resources/todotasklist.md

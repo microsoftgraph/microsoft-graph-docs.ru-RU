@@ -1,18 +1,18 @@
 ---
-title: Создание расширенного свойства с несколькими значениями
+title: Создание многозначного расширенного свойства
 description: 'Создание одного или нескольких многозначных расширенных свойств в новом или существующем экземпляре ресурса. '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ''
+ms.prod: non-product-specific
 author: abheek-das
-ms.openlocfilehash: fd6986161e84aecc17c908c3118bbd813d92f0ef
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 915d86277083d24ab40c677b07151d82538ee07f
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131014"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971058"
 ---
-# <a name="create-multi-value-extended-property"></a>Создание расширенного свойства с несколькими значениями
+# <a name="create-multi-value-extended-property"></a>Создание многозначного расширенного свойства
 
 Пространство имен: microsoft.graph
 
@@ -42,12 +42,12 @@ ms.locfileid: "50131014"
 Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md).
 
 ## <a name="permissions"></a>Разрешения
-В зависимости от ресурса, в который вы создаете расширенное свойство, и типа запрашиваемого разрешения (делегирования или приложения), разрешение, указанное в следующей таблице, является минимальным, необходимым для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от ресурса, в который вы создаете расширенное свойство, и запрашиваемого типа разрешений (делегированного или приложения), разрешение, указанное в следующей таблице, является минимальным, необходимым для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| [контакт](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
 | [calendar](../resources/calendar.md) для групп; | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
@@ -62,7 +62,7 @@ ms.locfileid: "50131014"
 Вы можете создавать расширенные свойства в новом или существующем экземпляре ресурса.
 
 Чтобы создать одно или несколько расширенных свойств в _новом_ экземпляре ресурса, используйте тот же запрос REST, что и при создании этого экземпляра, включив в тело запроса свойства нового экземпляра ресурса _и расширенное свойство_.
-Обратите внимание, что некоторые ресурсы поддерживают несколько способов создания. Дополнительные сведения о создании этих экземпляров ресурсов см. в соответствующих [](../api/group-post-events.md)темах для создания сообщения, [mailFolder,](../api/user-post-mailfolders.md) [события](../api/user-post-events.md) [,](../api/user-post-calendars.md)календаря, контакта , [contactFolder](../api/user-post-contactfolders.md), [задачи Outlook,](../resources/outlooktask.md)папки задач [Outlook,](../resources/outlooktaskfolder.md)события группы и публикации группы [.](../resources/post.md) [](../resources/message.md) [](../api/user-post-contacts.md)
+Обратите внимание, что некоторые ресурсы поддерживают несколько способов создания. Дополнительные сведения о создании этих экземпляров ресурсов см. в соответствующих разделах для создания [сообщения,](../resources/message.md) [mailFolder](../api/user-post-mailfolders.md), [события](../api/user-post-events.md)[,](../api/user-post-calendars.md) календаря, [контакта](../api/user-post-contacts.md), [contactFolder](../api/user-post-contactfolders.md), [задачи Outlook](../resources/outlooktask.md), папки задач [Outlook](../resources/outlooktaskfolder.md)[,](../api/group-post-events.md) группового события и записи [группы.](../resources/post.md)
 
 Ниже приведен синтаксис запросов.
 
@@ -152,17 +152,17 @@ PATCH /groups/{id}/events/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Значение |
 |:---------------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
 
 Предоставьте тело в формате JSON для каждого объекта [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) в свойстве коллекции **multiValueExtendedProperties** для экземпляра ресурса.
 
-|**Property**|**Тип**|**Описание**|
+|**Свойство**|**Тип**|**Описание**|
 |:-----|:-----|:-----|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| Массив из одного или нескольких многозначных расширенных свойств. |
-|id|Строка|Чтобы идентифицировать свойства в коллекции **multiValueExtendedProperties**, укажите этот параметр для каждого из них. Свойство должно относиться к одному из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный параметр.|
+|id|String|Чтобы идентифицировать свойства в коллекции **multiValueExtendedProperties**, укажите этот параметр для каждого из них. Свойство должно относиться к одному из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный параметр.|
 |значение|string|Укажите значение для каждого свойства в коллекции **multiValueExtendedProperties**. Обязательный параметр.|
 
 При создании расширенного свойства в _новом_ экземпляре ресурса, помимо новой коллекции **multiValueExtendedProperties**, нужно указать описание этого экземпляра ресурса (то есть [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md) и т. д.) в формате JSON.
@@ -175,7 +175,7 @@ PATCH /groups/{id}/events/{id}
 В результате успешной операции создания в существующем экземпляре ресурса возвращается код `200 OK`.
 
 
-#### <a name="response-body"></a>Текст отклика
+#### <a name="response-body"></a>Текст ответа
 
 При создании расширенного свойства в поддерживаемом ресурсе, отличном от [post для групп](../resources/post.md), отклик включает только новый или существующий экземпляр (он будет без нового расширенного свойства). Чтобы просмотреть только что созданное расширенное свойство, [разверните экземпляр с этим свойством](../api/multivaluelegacyextendedproperty-get.md).
 
@@ -235,7 +235,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response-1"></a>Отклик 1
+##### <a name="response-1"></a>Отклик 1
 
 Отклик в результате успешного выполнения обозначен кодом `HTTP 201 Created` и включает в себя новое событие, подобно отклику при [создании просто события](../api/user-post-events.md). Отклик не включает только что созданные расширенные свойства.
 

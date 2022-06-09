@@ -1,23 +1,21 @@
 ---
 title: Обновление temporaryAccessPassAuthenticationMethodConfiguration
-description: Обновление свойств объекта temporaryAccessPassAuthenticationMethodConfiguration.
+description: Обновите политику временного доступа для клиента Azure AD, представленную временным объектомAccessPassAuthenticationMethodConfiguration.
 author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8a81d7c55e67e7037bdc3c5bede73424d960695b
+ms.openlocfilehash: a4114b5731d012c3c13b7b59ba7516cef5687c7c
 ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971009"
+ms.locfileid: "65971741"
 ---
 # <a name="update-temporaryaccesspassauthenticationmethodconfiguration"></a>Обновление temporaryAccessPassAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Обновите свойства объекта [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) , который представляет политику метода проверки подлинности временного прохода доступа для клиента Azure AD.
+Обновите политику временного доступа для клиента Azure AD, представленную временным [объектомAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -32,7 +30,6 @@ ms.locfileid: "65971009"
 
 * Администратор политики проверки подлинности
 * Глобальный администратор
-
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,7 +52,8 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/T
 
 Все свойства объекта можно обновить. Список свойств см. в разделе [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md).
 
->**Примечание:** Свойство `@odata.type` со значением должно `#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration` быть включено в текст.
+> [!NOTE]
+> Свойство **@odata.type** со значением `#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration` должно быть включено в текст запроса.
 
 ## <a name="response"></a>Отклик
 
@@ -64,55 +62,19 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/T
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_temporaryaccesspassauthenticationmethodconfiguration"
 }
 -->
-``` http
-PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
+```http
+PATCH https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 Content-Type: application/json
 
 {
-  "@odata.type":"#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
-  "state":"enabled",
-  "defaultLifetimeInMinutes":60,
-  "defaultLength":8,
-  "minimumLifetimeInMinutes":60,
-  "maximumLifetimeInMinutes":1440,"
-  isUsableOnce":false,
-  "includeTargets": [
-        {
-            "targetType": "group",
-            "id": "all_users",
-            "isRegistrationRequired": false,
-            "useForSignIn": true
-        }
-    ]
+  "isUsableOnce": true
 }
-
-
 ```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-temporaryaccesspassauthenticationmethodconfiguration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-temporaryaccesspassauthenticationmethodconfiguration-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-temporaryaccesspassauthenticationmethodconfiguration-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-temporaryaccesspassauthenticationmethodconfiguration-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Отклик
 <!-- {
@@ -120,6 +82,7 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+
+```http
 HTTP/1.1 204 No Content
 ```

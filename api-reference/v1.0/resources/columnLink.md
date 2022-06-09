@@ -4,14 +4,14 @@ ms.date: 09/12/2017
 title: columnLink
 ms.localizationpriority: medium
 description: Ресурс columnLink для объекта contentType связывает ресурс columnDefinition сайта с соответствующим типом контента.
-ms.prod: ''
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 1ad2a7397c18ad8be17a5e5bb27c25ecc84dffa6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 56936039e6524a9a5bc05832748b5989e2f99816
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113723"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971562"
 ---
 # <a name="columnlink-resource-type"></a>Тип ресурса ColumnLink
 

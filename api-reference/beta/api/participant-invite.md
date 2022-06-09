@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8a120dd2cfd0bce297dc094447932d26f6991e8d
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: bf32d936c4dfe246aedcb2ed947d4ebb79dfadff
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65316284"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971226"
 ---
 # <a name="participant-invite"></a>участник: приглашение
 
@@ -31,7 +31,7 @@ ms.locfileid: "65316284"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Приложение     | Calls.InitiateGroupCalls.All |
+| Для приложений     | Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +53,7 @@ POST /communications/calls/{id}/participants/invite
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participants|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Участники, которые будут приглашены.|
-|clientContext|String|Уникальная строка контекста клиента. Максимальное ограничение — 256 знаков.|
+|clientContext|Строка|Уникальная строка контекста клиента. Максимальное ограничение — 256 знаков.|
 
 ## <a name="response"></a>Отклик
 В случае успешного `200 OK` выполнения этот метод возвращает код отклика и заголовок Location с универсальным кодом ресурса (URI) в [объект inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) , созданный для этого запроса. Текст ответа содержит [созданный объект inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) .
@@ -728,7 +728,7 @@ Content-Type: application/json
 ### <a name="example-4-invite-one-pstn-participant-to-an-existing-call"></a>Пример 4. Приглашение одного участника ТСОП к существующему вызову
 
 Для этого вызова требуется экземпляр приложения с назначенным номером ТСОП. Дополнительные сведения см. [в статье "Назначение боту номера телефона"](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
-> **Примечание.** Телефон идентификатором является номер телефона в формате E.164.
+> **Примечание:** Идентификатор телефона — это номер телефона в формате E.164.
 
 #### <a name="request"></a>Запрос
 
@@ -765,6 +765,10 @@ Content-Length: 464
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)

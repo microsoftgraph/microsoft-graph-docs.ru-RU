@@ -1,18 +1,18 @@
 ---
-title: 'NamedItem: Range'
+title: 'namedItem: range'
 description: Возвращает объект Range, сопоставленный с именем. Вызывает исключение, если тип именованного элемента не является диапазоном.
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ''
+ms.prod: workbooks-and-charts
 author: ruoyingl
-ms.openlocfilehash: 2eb66ea6c5665e9e3b0808e1df9a545518fbbecb
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 3832114b1d23a90c5a14f05e73a3b4168f9dbe0f
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942137"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971028"
 ---
-# <a name="nameditem-range"></a>NamedItem: Range
+# <a name="nameditem-range"></a>namedItem: range
 
 Пространство имен: microsoft.graph
 
@@ -49,7 +49,7 @@ GET /me/drive/root:/{item-path}:/workbook/names/{name}/Range
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -79,8 +79,10 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/R
 ---
 
 
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

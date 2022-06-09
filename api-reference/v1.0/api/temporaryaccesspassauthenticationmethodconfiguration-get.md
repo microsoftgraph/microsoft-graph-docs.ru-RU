@@ -1,23 +1,21 @@
 ---
 title: Получение temporaryAccessPassAuthenticationMethodConfiguration
-description: Чтение свойств и связей временного объектаAccessPassAuthenticationMethodConfiguration.
-author: inbarckms
+description: Ознакомьтесь с подробными сведениями о политике временного прохода доступа для клиента Azure AD, представленной временным объектомAccessPassAuthenticationMethodConfiguration.
+author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1fb4b2959631b6e99ad2ea64da26a9c8de460bd6
+ms.openlocfilehash: bc6fc21af43a28072c7f193d449ee8a4dad6aec2
 ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971569"
+ms.locfileid: "65971744"
 ---
 # <a name="get-temporaryaccesspassauthenticationmethodconfiguration"></a>Получение temporaryAccessPassAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Чтение свойств и связей временного [объектаAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md), который представляет политику метода проверки подлинности временного прохода доступа для клиента Azure Active Directory (Azure AD).[](../resources/authenticationmethodspolicies-overview.md)
+Ознакомьтесь с подробными сведениями о политике временного доступа для клиента Azure Active Directory (Azure AD), представленной временным [объектомAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,7 +39,7 @@ ms.locfileid: "65971569"
 }
 -->
 ``` http
-GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -54,31 +52,30 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/Tem
 ## <a name="response"></a>Отклик
 В случае успешного `200 OK` выполнения этот метод возвращает код отклика и временный [объектAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) в теле отклика.
 
-
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
   "name": "get_temporaryaccesspassauthenticationmethodconfiguration"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 ```
 
 ### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -91,7 +88,7 @@ Content-Type: application/json
     "defaultLength": 8,
     "minimumLifetimeInMinutes": 60,
     "maximumLifetimeInMinutes": 480,
-    "isUsableOnce": true,
+    "isUsableOnce": false,
     "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('TemporaryAccessPass')/microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [
         {

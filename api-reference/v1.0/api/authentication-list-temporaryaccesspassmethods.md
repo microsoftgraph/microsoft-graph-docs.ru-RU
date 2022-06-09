@@ -1,23 +1,21 @@
 ---
 title: Перечисление temporaryAccessPassAuthenticationMethods
-description: Получение списка временных объектовAccessPassAuthenticationMethod и их свойств.
+description: Получение списка временных объектовAccessPassAuthenticationMethod для пользователя.
 author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8a9c776b2869268283b81ab453a1eeabf10325f9
+ms.openlocfilehash: a0620009fbc2266f7dade86b525d696eb0f58415
 ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971394"
+ms.locfileid: "65971707"
 ---
 # <a name="list-temporaryaccesspassauthenticationmethods"></a>Перечисление temporaryAccessPassAuthenticationMethods
 Пространство имен: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Получение списка временных [объектовAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)  пользователя и их свойств. Этот вызов вернет только один объект, так как для пользователей может быть задано только один метод временного доступа.
+Получение списка временных [объектовAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) пользователя и их свойств. Этот API вернет только один объект в коллекции, так как у пользователя может быть только один метод временного прохода доступа.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -76,45 +74,17 @@ GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 
 ### <a name="request"></a>Запрос
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_temporaryaccesspassauthenticationmethod"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/temporaryAccessPassMethods
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/temporaryAccessPassMethods
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-temporaryaccesspassauthenticationmethod-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-temporaryaccesspassauthenticationmethod-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-temporaryaccesspassauthenticationmethod-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-temporaryaccesspassauthenticationmethod-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-temporaryaccesspassauthenticationmethod-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-temporaryaccesspassauthenticationmethod-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 ### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,17 +96,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('071cc716-8147-4397-a5ba-b2105951cc0b')/authentication/temporaryAccessPassMethods",
-    "value": [
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('071cc716-8147-4397-a5ba-b2105951cc0b')/authentication/temporaryAccessPassMethods",
+     "value": [
         {
-            "id": "de517d3d-3b92-4902-a21a-da3e60ee3962",
+            "id": "bdaede67-61e0-4349-9347-d2d6afd84009",
             "temporaryAccessPass": null,
-            "createdDateTime": "2022-06-03T16:55:19.5684534Z",
-            "startDateTime": "2022-06-03T16:55:19.3381855Z",
+            "createdDateTime": "2022-06-06T16:43:04.6438213Z",
+            "startDateTime": "2022-06-06T16:48:03.027Z",
             "lifetimeInMinutes": 60,
-            "isUsableOnce": true,
-            "isUsable": true,
-            "methodUsabilityReason": "EnabledByPolicy"
+            "isUsableOnce": false,
+            "isUsable": false,
+            "methodUsabilityReason": "NotYetValid"
         }
     ]
 }

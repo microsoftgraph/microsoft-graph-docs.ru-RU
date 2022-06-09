@@ -3,14 +3,14 @@ title: Add Named Item
 description: Добавляет новое имя в определенную коллекцию, применяя языковой стандарт пользователя для формулы.
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ''
+ms.prod: workbooks-and-charts
 author: ruoyingl
-ms.openlocfilehash: 505beb4fcdb846b5453ee6776eeeb5ced7b50aa4
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: b73984719e213b555fc41d2e4db14f2c53a97619
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60941297"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971247"
 ---
 # <a name="add-named-item"></a>Add Named Item
 
@@ -55,7 +55,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/names/add
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект workbookNamedItem](../resources/workbooknameditem.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и [объект workbookNamedItem](../resources/workbooknameditem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.

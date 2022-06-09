@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 72ccc0e8b12545914d7d1cfad9ea01a974b1430a
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: a494e5180db305f012db73018df42fed6b4fbd19
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64607563"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971037"
 ---
 # <a name="delete-participant"></a>Удаление участника
 
@@ -18,7 +18,7 @@ ms.locfileid: "64607563"
 
 Пространство имен: microsoft.graph
 
-Удаление определенного участника в вызове. В некоторых ситуациях приложение может удалить участника из активного вызова. Это действие можно сделать до или после ответа участника на вызов. При удалении активного вызываемого звонка он немедленно удаляется из вызова без предварительного или после удаления уведомления. При удалении приглашенного участника отменяется любой незаявимый запрос на добавление участника.
+Удаление определенного участника в вызове. В некоторых ситуациях приложение может удалить участника из активного вызова. Это действие можно выполнить до или после того, как участник отвечает на звонок. При удалении активного абонента он немедленно удаляется из вызова без уведомления о предварительном или последующем удалении. При удалении приглашенного участника все необработанные запросы на добавление участника отменяются.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "64607563"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
 | Для приложений                            | Calls.JoinGroupCallsasGuest.All или Calls.JoinGroupCalls.All |
 
-Конфигурация собрания на уровне клиента требуется для того, чтобы позволить приложению вызывать этот API. Администратор клиента должен вызвать следующий комдлет на удаленной PowerShell клиента, чтобы предоставить приложению разрешение на вызов этого API. Дополнительные сведения см. [в рублях Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md).
+Чтобы разрешить приложению вызывать этот API, требуется конфигурация собрания приложения на уровне клиента. Администратор клиента должен вызвать следующий командлет на удаленном сервере PowerShell клиента, чтобы предоставить приложению разрешение на вызов этого API. Дополнительные сведения см [. в разделе Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md).
 ```
 PS C:\> Set-CsApplicationMeetingConfiguration -AllowRemoveParticipantAppIds @{Add="app_id"}
 ```
@@ -119,7 +119,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-cancel-invited-non-active-participant"></a>Пример 2. Отмена приглашенного неавтного участника
 
-#### <a name="invite-a-participant-to-an-existing-call"></a>Приглашение участника на существующий вызов
+#### <a name="invite-a-participant-to-an-existing-call"></a>Приглашение участника к существующему вызову
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -160,6 +160,10 @@ Content-Length: 464
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
@@ -212,7 +216,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="delete-invited-participant-before-participant-is-added-to-the-roster"></a>Удаление приглашенного участника до того, как участник будет добавлен в реестр
+#### <a name="delete-invited-participant-before-participant-is-added-to-the-roster"></a>Удаление приглашенного участника перед добавлением участника в список
 
 <!-- {
   "blockType": "request",

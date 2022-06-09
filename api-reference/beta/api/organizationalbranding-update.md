@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5e86cdf3c3068d407aa2a24312f982dc82df622f
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 6dbcccc8fb457d8a34dc62b366c46e1bf845f4a6
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820961"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971177"
 ---
 # <a name="update-organizationalbranding"></a>Обновление organizationalBranding
 Пространство имен: microsoft.graph
@@ -24,8 +24,8 @@ ms.locfileid: "65820961"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Organization.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | Organization.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ PATCH /organization/{organizationId}/branding
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
-|Принять-Язык|Допустимый языковой стандарт ISO 639-1 или `0` языковой стандарт по умолчанию. Обязательно.|
+|Принять-Язык|Допустимый языковой стандарт ISO 639-1 или `0` языковой стандарт по умолчанию. Обязательный элемент.|
 
 ## <a name="request-body"></a>Текст запроса
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
@@ -60,11 +60,11 @@ PATCH /organization/{organizationId}/branding
 | customPrivacyAndCookiesUrl | Строка | Пользовательский URL-адрес для замены URL-адреса гиперссылки "Конфиденциальность и файлы cookie" в нижнем колонтитуле. Этот URL-адрес должен быть в формате ASCII или символы, отличные от ASCII, должны быть закодированными URL-адресами и не превышать 128 символов. |
 | customTermsOfUseText | Строка | Строка для замены текста гиперссылки "Условия использования" по умолчанию в нижнем колонтитуле. Этот текст должен быть в формате Юникода и не превышать 256 символов. |
 | customTermsOfUseUrl | Строка | Пользовательский URL-адрес для замены URL-адреса гиперссылки "Условия использования" в нижнем колонтитуле. Этот URL-адрес должен быть в формате ASCII или символы, отличные от ASCII, должны быть закодированными URL-адресами и не превышать 128character. |
-| Значок | Stream | Пользовательский значок (favicon) для замены значка продукта Майкрософт по умолчанию в Azure AD клиенте. |
+| Значок | Stream | Пользовательский значок (favicon) для замены значка продукта Майкрософт по умолчанию в клиенте Azure AD. |
 | headerBackgroundColor | Строка | Цвет RGB, применяемый для настройки цвета заголовка. |
 | loginPageTextVisibilitySettings | [loginPageTextVisibilitySettings](../resources/loginPageTextVisibilitySettings.md) | Представляет различные тексты, которые могут быть скрыты на странице входа для клиента. Все свойства можно обновить. |
 | signInPageText | Строка | Текст, отображаемый в нижней части поля входа. Используйте его для передачи дополнительных сведений, таких как номер телефона в службу технической поддержки или юридическое заявление. Этот текст должен быть в формате Юникода и не превышать 1024 символа. |
-| squareLogo | Stream | Квадратная версия логотипа компании, отображаемая в Windows 10 при первом включении при первом включении (OOBE) и Windows для развертывания Autopilot. Допустимые типы: PNG или JPEG размером не более 240 x 240 пикселей и размером не более 10 КБ. Мы рекомендуем использовать прозрачное изображение без заполнения логотипа.|
+| squareLogo | Stream | Квадратная версия логотипа вашей компании, которая отображается в windows 10 в режиме запуска при первом включении при первом включении, и когда Windows Autopilot включен для развертывания. Допустимые типы: PNG или JPEG размером не более 240 x 240 пикселей и размером не более 10 КБ. Мы рекомендуем использовать прозрачное изображение без заполнения логотипа.|
 | usernameHintText | Строка | Строка, отображаемая в качестве подсказки в текстовом поле имени пользователя на экране входа. Этот текст должен быть Юникодом без ссылок или кода и не может превышать 64 символа. |
 
 ## <a name="response"></a>Отклик
@@ -166,10 +166,23 @@ Content-Type: image/jpeg
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandinglocaliation-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
-
 
 #### <a name="response"></a>Отклик
 

@@ -4,14 +4,14 @@ ms.date: 09/11/2017
 title: calculatedColumn
 ms.localizationpriority: medium
 description: Ресурс calculatedColumn в ресурсе columnDefinition указывает, что данные столбца вычисляются на основании значений в других столбцах на сайте.
-ms.prod: ''
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: cfeda60829a12b95bf23ab7ae3c9734baac5a5c4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 54c5c37a91cbc8a3d597c33bc4f30f4ead6c4660
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109516"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971604"
 ---
 # <a name="calculatedcolumn-resource-type"></a>Тип ресурса calculatedColumn
 

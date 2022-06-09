@@ -4,14 +4,14 @@ ms.date: 09/11/2017
 title: currencyColumn
 ms.localizationpriority: medium
 description: Ресурс currencyColumn в ресурсе columnDefinition указывает, что значения столбца представляют денежные значения.
-ms.prod: ''
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 40d2fe4058940f7062796cf5deb5dcdc99b00aee
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 170899638fb34ed92618d7ee3a91c6afdae30bd0
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053128"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65970946"
 ---
 # <a name="currencycolumn-resource-type"></a>Тип ресурса currencyColumn
 

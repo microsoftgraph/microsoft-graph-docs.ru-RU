@@ -3,14 +3,14 @@ title: Список NamedItemCollection
 description: Получение списка объектов nameditem.
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ''
+ms.prod: workbooks-and-charts
 author: ruoyingl
-ms.openlocfilehash: 8463be8d1fe6d4bc9303373fb725df047071d815
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 267addc7cf4a93ee73b8a5ee70dff5f995aff2c8
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947701"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971261"
 ---
 # <a name="list-nameditemcollection"></a>Список NamedItemCollection
 
@@ -48,7 +48,7 @@ GET /me/drive/root:/{item-path}:/workbook/names
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` объектов [workbookNamedItem](../resources/workbooknameditem.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию [объектов workbookNamedItem](../resources/workbooknameditem.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

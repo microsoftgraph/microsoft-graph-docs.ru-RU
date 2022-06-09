@@ -1,31 +1,31 @@
 ---
-title: тип ресурса fileSecurityState
-description: Содержит сведения о файле (не процессе), связанных с оповещением.
+title: Тип ресурса fileSecurityState
+description: Содержит сведения о файле (не процессе), связанном с оповещением.
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: ''
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 2db9d028c6a1550886a956bbfaad3bb3141f3141
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 00a8f3ce61c185969fab0adaf99483a8d03c906c
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078863"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971072"
 ---
-# <a name="filesecuritystate-resource-type"></a>тип ресурса fileSecurityState
+# <a name="filesecuritystate-resource-type"></a>Тип ресурса fileSecurityState
 
 Пространство имен: microsoft.graph
 
-Содержит сведения о файле (не процессе), связанных с оповещением.
+Содержит сведения о файле (не процессе), связанном с оповещением.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|fileHash|[fileHash](filehash.md)|Сложный тип, содержащий хеши файлов (криптографические и чувствительные к расположению).|
+|fileHash|[fileHash](filehash.md)|Сложный тип, содержащий хэши файлов (криптографические и с учетом расположения).|
 |name|String|Имя файла (без пути).|
-|path|String|Полный путь файла файла/imageFile.|
-|riskScore|Строка|Оценка риска поставщика, генерируемого или рассчитанного в файле оповещения. Рекомендуемый диапазон значений 0-1, который приравнивается к проценту.|
+|path|String|Полный путь к файлу или imageFile.|
+|riskScore|Строка|Созданная поставщиком или вычисляемая оценка риска для файла оповещений. Рекомендуемый диапазон значений — 0–1, что соответствует проценту.|
 
 ## <a name="json-representation"></a>Представление JSON
 

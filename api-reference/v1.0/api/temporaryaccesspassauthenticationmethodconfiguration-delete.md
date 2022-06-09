@@ -1,23 +1,21 @@
 ---
 title: Удаление temporaryAccessPassAuthenticationMethodConfiguration
-description: Удалите изменения, внесенные в объект temporaryAccessPassAuthenticationMethodConfiguration.
+description: Возврат политики временного доступа к конфигурации по умолчанию, представленной временным объектомAccessPassAuthenticationMethodConfiguration по умолчанию.
 author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a9ba4b0729f0c2f15af5e251a470f05ef8812c90
+ms.openlocfilehash: ae877c66ca6c989b11706dff072f729895e69dcf
 ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/09/2022
-ms.locfileid: "65970988"
+ms.locfileid: "65971716"
 ---
 # <a name="delete-temporaryaccesspassauthenticationmethodconfiguration"></a>Удаление temporaryAccessPassAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Удалите изменения, внесенные в объект [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) , вернув политику к конфигурации по умолчанию.
+Возврат политики временного доступа к конфигурации по умолчанию, представленной временным [объектомAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) по умолчанию.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,9 +38,8 @@ ms.locfileid: "65970988"
 }
 -->
 ``` http
-DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
+DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 ```
-
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -64,14 +61,17 @@ DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/
   "name": "delete_temporaryaccesspassauthenticationmethodconfiguration"
 }
 -->
+```msgraph-interactive
+DELETE https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass`
+```
 
 ### <a name="response"></a>Отклик
-
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
+
 ``` http
 HTTP/1.1 204 No Content
 ```

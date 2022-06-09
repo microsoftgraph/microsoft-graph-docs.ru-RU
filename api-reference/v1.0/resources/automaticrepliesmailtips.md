@@ -1,30 +1,30 @@
 ---
-title: тип ресурса automaticRepliesMailTips
-description: MailTips о любых автоматических ответах, которые были настроены на почтовом ящике.
+title: Тип ресурса automaticRepliesMailTips
+description: Подсказки об автоматических ответах, которые были настроены в почтовом ящике.
 ms.localizationpriority: medium
 author: abheek-das
-ms.prod: ''
+ms.prod: mail
 doc_type: resourcePageType
-ms.openlocfilehash: 3e9904fe54d14fe707f4917934b81750aa9ec5fd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9d9350df4929bb6fbf428a229812df206e658363
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089867"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971275"
 ---
-# <a name="automaticrepliesmailtips-resource-type"></a>тип ресурса automaticRepliesMailTips
+# <a name="automaticrepliesmailtips-resource-type"></a>Тип ресурса automaticRepliesMailTips
 
 Пространство имен: microsoft.graph
 
 
-[MailTips](../resources/mailtips.md) о любых автоматических ответах, которые были настроены на почтовом ящике.
+[Подсказки об](../resources/mailtips.md) автоматических ответах, которые были настроены в почтовом ящике.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:-----|:-----|:-----|
-| message | String | Автоматическое сообщение ответа. |
-| messageLanguage | [localeInfo](../resources/localeinfo.md) | Язык, на который находится автоматическое сообщение ответа. |
-| scheduledEndTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Дата и время, когда автоматические ответы должны быть засвечив. |
+| message | String | Автоматическое ответное сообщение. |
+| messageLanguage | [localeInfo](../resources/localeinfo.md) | Язык, на котором находится автоматическое ответное сообщение. |
+| scheduledEndTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Дата и время завершения автоматических ответов. |
 | scheduledStartTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Дата и время начала автоматических ответов. |
 
 ## <a name="json-representation"></a>Представление JSON

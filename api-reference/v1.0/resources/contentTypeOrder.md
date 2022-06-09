@@ -4,14 +4,14 @@ ms.date: 09/13/2017
 title: contentTypeOrder
 ms.localizationpriority: medium
 description: Ресурс contentTypeOrder указывает, в каком порядке тип контента будет отображаться в пользовательском интерфейсе выбора.
-ms.prod: ''
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: be84be025a17677fa6c8546b1a7ccc9f1b3122c0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d7a1ef454fc43dbde05d974ae8b7d355a1e33d00
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049594"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971548"
 ---
 # <a name="contenttypeorder-resource-type"></a>Тип ресурса contentTypeOrder
 

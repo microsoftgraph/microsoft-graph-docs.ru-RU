@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 599b38bf2d1b1552cf7e3cd4dc518f266f2ca832
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 1e8c83cd568e77ae9ca13ee4ee538d5493eac6c4
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820998"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971233"
 ---
 # <a name="get-organizationalbranding"></a>Получение organizationalBranding
 Пространство имен: microsoft.graph
@@ -28,8 +28,8 @@ ms.locfileid: "65820998"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | User.Read, Organization.Read.All, User.ReadBasic.All, User.Read.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, Organization.Read.All, User.ReadBasic.All, User.Read.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,7 +50,7 @@ GET /organization/{organizationId}/branding
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
-|Принять-Язык|Допустимый языковой стандарт ISO 639-1 или `0` языковой стандарт по умолчанию. Обязательно.|
+|Принять-Язык|Допустимый языковой стандарт ISO 639-1 или `0` языковой стандарт по умолчанию. Обязательный элемент.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -359,6 +359,11 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbranding-frlocale-bannerlogo-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 
 ---
 

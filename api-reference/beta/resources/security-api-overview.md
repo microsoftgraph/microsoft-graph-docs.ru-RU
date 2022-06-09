@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 86a26afb9bba3421fa2ceaa8fbad035e2f47b6fa
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f8efa4a80cf754de11eddf7777a2548fc617fc05
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129269"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944866"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Использование Microsoft Graph Security API
 
@@ -60,6 +60,10 @@ Microsoft Graph Security API включает указанные ниже клю
 ## <a name="attack-simulation-and-training-preview"></a>Симуляция атак и обучение (предварительная версия)
 
 [Симуляция атак и обучение](/microsoft-365/security/office-365-security/attack-simulation-training) входит в состав [Microsoft Defender для Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true). Эта служба позволяет пользователям в клиенте испытать на себе реалистичную учебную фишинговую атаку и извлечь уроки. Симуляция социотехники и обучение пользователей помогают снизить риск взлома с применением таких методов атаки. API симуляции атак и обучения позволяет администраторам клиентов просматривать запущенные упражнения и тренинги по [симуляции](simulation.md) и получать [отчеты](report-m365defender-reports-overview.md) об аналитике поведения пользователей в Интернете в условиях симуляции фишинга.
+
+## <a name="ediscovery-preview"></a>Обнаружение электронных данных (предварительная версия)
+
+[Обнаружение электронных данных в Microsoft Purview (премиум)](/microsoft-365/compliance/overview-ediscovery-20) обеспечивает комплексный рабочий процесс для сохранения, сбора, анализа, проверки и экспорта содержимого, используемого во внутренних и внешних исследованиях вашей организации.
 
 ## <a name="information-protection"></a>Защита информации
 

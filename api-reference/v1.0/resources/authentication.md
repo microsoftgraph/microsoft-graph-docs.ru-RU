@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса проверки подлинности
-description: Предоставляет отношения, которые представляют методы проверки подлинности, поддерживаемые Azure AD и настроенные для пользователей.
+description: Предоставляет связи, которые представляют методы проверки подлинности, поддерживаемые Azure AD и настроенные для пользователей.
 author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 4c098cc1b813a3805c1afc3956d93b6a416aa239
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 34a7877f8b88e319cfb4ff0e710b064f56365eae
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510721"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971380"
 ---
 # <a name="authentication-resource-type"></a>Тип ресурса проверки подлинности
 
 Пространство имен: microsoft.graph
 
-Предоставляет отношения, которые представляют методы проверки подлинности, поддерживаемые Azure AD и настроенные для пользователей.
+Предоставляет связи, которые представляют методы проверки подлинности, поддерживаемые Azure AD и настроенные для пользователей.
 
 Наследует [от сущности](entity.md).
 
@@ -31,10 +31,11 @@ ms.locfileid: "64510721"
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|fido2Methods|[коллекция fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Представляет ключи безопасности FIDO2, зарегистрированные пользователю для проверки подлинности.|
-|методы|[коллекция authenticationMethod](../resources/authenticationmethod.md)| Представляет все методы проверки подлинности, зарегистрированные пользователем.|
-|MicrosoftAuthenticatorMethods|[коллекция microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md)| Сведения о приложении Microsoft Authenticator, зарегистрированного пользователем для проверки подлинности. |
-|windowsHelloForBusinessMethods|[коллекция windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md)|Представляет метод Windows Hello для бизнеса проверки подлинности, зарегистрированный пользователем для проверки подлинности.|
+|fido2Methods|[Коллекция fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Представляет ключи безопасности FIDO2, зарегистрированные для пользователя для проверки подлинности.|
+|Методы|[Коллекция authenticationMethod](../resources/authenticationmethod.md)| Представляет все методы проверки подлинности, зарегистрированные для пользователя.|
+|microsoftAuthenticatorMethods|[Коллекция microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md)| Сведения о приложении Microsoft Authenticator, зарегистрированном для пользователя для проверки подлинности. |
+|temporaryAccessPassMethods|[Коллекция temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Представляет временный секретный код, зарегистрированный пользователю для проверки подлинности с помощью секретных кодов с ограниченным временем.|
+|windowsHelloForBusinessMethods|[Коллекция windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md)|Представляет метод проверки подлинности Windows Hello для бизнеса, зарегистрированный для пользователя для проверки подлинности.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
@@ -50,4 +51,3 @@ ms.locfileid: "64510721"
   "@odata.type": "#microsoft.graph.authentication"
 }
 ```
-
