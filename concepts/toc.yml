@@ -545,11 +545,18 @@ items:
                 href: search-query-parameter.md
               - name: Расширенные возможности запросов
                 href: aad-advanced-queries.md
+              - name: Оптимизация запросов с помощью параметров запроса
+                href: /learn/modules/optimize-data-usage
           - name: Пакетная обработка
             displayName: Batch requests
             href: json-batching.md
           - name: Регулирование
-            href: throttling.md
+            items:
+              - name: Обзор
+                displayName: throttling
+                href: throttling.md
+              - name: Оптимизация сетевого трафика
+                href: /learn/modules/optimize-network-traffic
           - name: Уведомления об изменениях
             displayName: 'Webhooks, cloud printing, Universal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
             items:
