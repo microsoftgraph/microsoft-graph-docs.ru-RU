@@ -1,23 +1,22 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: Квота
+title: quota
 ms.localizationpriority: medium
-description: Ресурс quota предоставляет сведения об ограничениях дискового пространства в ресурсе Drive.
-ms.prod: ''
+description: Ресурс квоты предоставляет сведения об ограничениях пространства для ресурса диска.
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 71f0f29c4ab6979f7154940e9007665d020b7f68
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f53fc260a785bc44d4e82a149504eca4066e728f
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143812"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034714"
 ---
-# <a name="quota-resource-type"></a>Тип ресурса quota
+# <a name="quota-resource-type"></a>тип ресурса квоты
 
 Пространство имен: microsoft.graph
 
-Ресурс **quota** предоставляет сведения об ограничениях дискового пространства в ресурсе [Drive](drive.md).
+Ресурс **квоты** предоставляет сведения об ограничениях пространства для [ресурса](drive.md) диска.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -51,7 +50,7 @@ ms.locfileid: "59143812"
 | remaining     | Int64  | Общий объем дискового пространства, оставшегося до достижения максимальной квоты, в байтах. Только для чтения. |
 | deleted       | Int64  | Общий объем дискового пространства, занятого файлами в корзине, в байтах. Только для чтения.      |
 | состояние         | string | Значение перечисления, указывающее состояние дискового пространства. Только для чтения. |
-| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Сведения о планах квоты на хранение диска. Только в личном OneDrive.|
+| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Сведения о планах квоты хранилища диска. Только в личных OneDrive.|
 
 ## <a name="state-enumeration"></a>Перечисление state
 

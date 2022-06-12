@@ -1,23 +1,22 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: SharedDriveItem
+title: Тип ресурса sharedDriveItem
 ms.localizationpriority: medium
-description: Ресурс sharedDriveItem возвращается при использовании API Shares для доступа к общему driveItem.
-ms.prod: ''
+description: Ресурс sharedDriveItem возвращается при использовании API общих ресурсов для доступа к общему объекту driveItem.
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: e425d8d243722ffa29b9ffcedfaae566508d8f57
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 52fa1c8d4395283f6e33464142eab0f411fd46ac
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066998"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034588"
 ---
-# <a name="shareddriveitem-resource-type"></a>Тип ресурса SharedDriveItem
+# <a name="shareddriveitem-resource-type"></a>Тип ресурса sharedDriveItem
 
 Пространство имен: microsoft.graph
 
-Ресурс **sharedDriveItem** возвращается, если для доступа к общему элементу [driveItem](driveitem.md) используется API [Shares](../api/shares-get.md).
+Ресурс **sharedDriveItem** возвращается при [использовании API](../api/shares-get.md) общих ресурсов для доступа к [общему объекту driveItem](driveitem.md).
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -53,24 +52,24 @@ ms.locfileid: "59066998"
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
 | id       | Строка                        | Уникальный идентификатор для общего ресурса, к которому предоставляется доступ.              |
 | name     | String                        | Отображаемое имя общего элемента.                             |
-| owner    | [IdentitySet](identityset.md) | Сведения о владельце общего элемента, ставшего объектом ссылки. |
+| owner    | [identitySet](identityset.md) | Сведения о владельце общего элемента, ставшего объектом ссылки. |
 
 ## <a name="relationships"></a>Связи
 
 | Имя связи | Тип                | Описание
 | ------------------|:--------------------|:-----------------------------------
 | **driveItem**     | [**driveItem**][driveItem]   | Используется для доступа к базовому объекту **driveItem**
-| **list**          | [**список**][list]        | Используется для доступа к базовому объекту **list**
+| **list**          | [**list**][list]        | Используется для доступа к базовому объекту **list**
 | **listItem**      | [**listItem**][listItem]    | Используется для доступа к базовому объекту **listItem**
-| **permission**    | [**разрешение**][permission] | Используется для доступа к **разрешению,** представляющим пусковую ссылку общего доступа
+| **permission**    | [**Разрешение**][permission] | Используется для доступа к **разрешению,** представляющего базовую ссылку для общего доступа.
 | **site**          | [**site**][site]        | Используется для доступа к базовому объекту **site**
 
 Кроме того, для объектов **driveItem**, к которым предоставлен доступ в личных учетных записях OneDrive, можно использовать указанные ниже связи.
 
 | Имя связи | Тип                         | Описание
 | ------------------|:-----------------------------|:-----------------------------------
-| **items**         | [**коллекция driveItem**][driveItem] | Все объекты driveItem, содержащиеся в корневой папке, используемой для общего доступа. Перечисление этой коллекции не поддерживается.
-| **root**          | [**driveItem**][driveItem]   | Используется для доступа к **основному driveItem**. Обесценилось — используйте `driveItem` вместо этого.
+| **items**         | [**Коллекция driveItem**][driveItem] | Все объекты driveItem, содержащиеся в корневой папке, используемой для общего доступа. Перечисление этой коллекции не поддерживается.
+| **root**          | [**driveItem**][driveItem]   | Используется для доступа к базовому **объекту driveItem**. Нерекомендуемый — используйте `driveItem` вместо него.
 
 [driveItem]: driveitem.md
 [list]: list.md
@@ -86,7 +85,7 @@ ms.locfileid: "59066998"
 
 ## <a name="remarks"></a>Заметки
 
-Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
+Дополнительные сведения о аспектах в DriveItem см. [в разделе driveItem](driveitem.md).
 
 <!-- {
   "type": "#page.annotation",

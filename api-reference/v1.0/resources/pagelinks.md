@@ -1,18 +1,18 @@
 ---
-title: тип ресурса pageLinks
+title: Тип ресурса pageLinks
 description: Ссылки для открытия OneNote страницы.
 ms.localizationpriority: medium
 author: jewan-microsoft
-ms.prod: ''
+ms.prod: notes
 doc_type: resourcePageType
-ms.openlocfilehash: 5ad703334f60d8cb540d4725f3fc37bdd0d3048e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 78635d0158cbe1d43833b437edf54db15e10a895
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117958"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034728"
 ---
-# <a name="pagelinks-resource-type"></a>тип ресурса pageLinks
+# <a name="pagelinks-resource-type"></a>Тип ресурса pageLinks
 
 Пространство имен: microsoft.graph
 
@@ -40,7 +40,7 @@ ms.locfileid: "59117958"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|oneNoteClientUrl|[externalLink](externallink.md)|Открывает страницу в OneNote клиенте, если она установлена.|
+|oneNoteClientUrl|[externalLink](externallink.md)|Открывает страницу в OneNote клиенте, если он установлен.|
 |oneNoteWebUrl|[externalLink](externallink.md)|Открывает страницу в OneNote в Интернете.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

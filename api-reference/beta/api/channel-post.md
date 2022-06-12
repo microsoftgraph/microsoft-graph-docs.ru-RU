@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9440a84f25f92836f56fb740f460af546ed1aece
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 241296e2cbddb94d582a7241c6f81c195a5cabfe
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65202821"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034560"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -19,6 +19,7 @@ ms.locfileid: "65202821"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создайте новый [канал](../resources/channel.md) в команде, как указано в тексте запроса.
+> **Примечание:** При создании частного канала можно добавить не более 200 участников.
 
 > [!IMPORTANT]
 > В настоящее время общие каналы находятся в состоянии общедоступной предварительной версии. В течение этого времени microsoft API Graph для создания общего канала доступна ограниченной аудитории. Мы рекомендуем создавать общие каналы в клиенте Teams и использовать API microsoft Graph для управления ими. Дополнительные сведения о том, как включить общие каналы в клиенте Teams, см. в разделе "Общие Microsoft Teams [(предварительная версия)"](/microsoftteams/shared-channels).
@@ -57,7 +58,7 @@ POST /teams/{team-id}/channels
 
 В тексте запроса добавьте представление объекта канала [в формате](../resources/channel.md) JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения `201 Created` этот метод возвращает код отклика и [](../resources/channel.md) объект канала в теле отклика для канала со значением **membershipType** или `standard` `private`. Для канала со **значением membershipType** этот `shared`метод возвращает ответ, `202 Accepted` содержащий ссылку на [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
@@ -255,7 +256,7 @@ Content-Type: application/json
 ```
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Заголовок `Content-Location` в ответе указывает путь к каналу, который подготавливается.
 После подготовки этот канал можно использовать для [импорта сообщений](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).

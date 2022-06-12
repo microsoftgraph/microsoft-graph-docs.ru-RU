@@ -1,22 +1,23 @@
 ---
 title: Создание канала
-description: Создание нового канала в команде, как указано в теле запроса.
+description: Создайте новый канал в команде, как указано в тексте запроса.
 ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fceaca74289ed68c861e23c30ce6dd2b46a6d2b5
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: f74ab131db847a942923e2caac074a40bed6db45
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804719"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034504"
 ---
 # <a name="create-channel"></a>Создание канала
 
 Пространство имен: microsoft.graph
 
-Создайте новый [канал](../resources/channel.md) в команде, как указано в теле запроса.
+Создайте новый [канал](../resources/channel.md) в команде, как указано в тексте запроса.
+> **Примечание:** При создании частного канала можно добавить не более 200 участников.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,11 +29,11 @@ ms.locfileid: "62804719"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | Channel.Create.Group *, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
-> **Примечания**. Разрешения, отмеченные ** поддерживаются только для обратной совместимости. Мы рекомендуем обновить решения, чтобы использовать альтернативное разрешение, перечисленное в предыдущей таблице, и избегать использования этих разрешений в будущем. Разрешения, отмеченные *, используют [согласие для конкретного ресурса](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Примечания**. Разрешения, помеченные **, поддерживаются только для обратной совместимости. Рекомендуется обновить решения, чтобы использовать другое разрешение, указанное в предыдущей таблице, и избегать использования этих разрешений в будущем. Разрешения, отмеченные *, используют [согласие для конкретного ресурса](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 >
 > Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 >
-> В будущем Корпорация Майкрософт может потребовать от вас или ваших клиентов уплаты дополнительных сборов в зависимости от объема данных, импортируемых с помощью API Teamwork.Migrate.All и/или [переноса](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+> В будущем корпорация Майкрософт может потребовать от вас или ваших клиентов оплаты дополнительных сборов в зависимости от объема данных, импортированных с помощью API Teamwork.Migrate.All и (или) [миграции](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -134,7 +135,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-В следующем примере показан запрос на создание частного канала и добавление пользователя в качестве владельца группы.
+В следующем примере показан запрос на создание закрытого канала и добавление пользователя в качестве владельца команды.
 
 
 
@@ -272,8 +273,8 @@ Content-Type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример отклика. Заглавный заглавный пункт Content-Location в ответе указывает путь к каналу, который будет задан.
-После этого этот канал можно использовать для [импорта сообщений](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+Ниже показан пример отклика. Заголовок Content-Location в ответе указывает путь к подготавливаемому каналу.
+После подготовки этот канал можно использовать для [импорта сообщений](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -299,11 +300,11 @@ Location: /teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24
 }
 ```
 
-### <a name="example-4-create-private-channel-on-behalf-of-user-using-user-principal-name"></a>Пример 4. Создание частного канала от имени пользователя с использованием основного имени пользователя
+### <a name="example-4-create-private-channel-on-behalf-of-user-using-user-principal-name"></a>Пример 4. Создание закрытого канала от имени пользователя с использованием имени участника-пользователя
 
 #### <a name="request"></a>Запрос
 
-В следующем примере показан запрос на создание частного канала и добавление пользователя в качестве владельца группы.
+В следующем примере показан запрос на создание закрытого канала и добавление пользователя в качестве владельца команды.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

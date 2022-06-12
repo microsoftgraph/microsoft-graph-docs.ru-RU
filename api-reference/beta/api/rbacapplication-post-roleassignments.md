@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 41adbba8d7ffb988ddad7cd91a754712f329aca3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d13d3d077faf34f80fb4f5446589156933219a29
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125704"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034581"
 ---
 # <a name="create-unifiedroleassignment"></a>Создание unifiedRoleAssignment
 
@@ -18,13 +18,13 @@ ms.locfileid: "62125704"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект unifiedRoleAssignment.](../resources/unifiedroleassignment.md)
+Создайте новый [объект unifiedRoleAssignment](../resources/unifiedroleassignment.md) .
 
 ## <a name="permissions"></a>Разрешения
 
-В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
+В зависимости от поставщика RBAC и требуемого типа разрешения (делегированного или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
 
-### <a name="for-directory-azure-ad-provider"></a>Поставщик каталогов (Azure AD)
+### <a name="for-the-directory-azure-ad-provider"></a>Для поставщика каталога (Azure AD)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -32,7 +32,7 @@ ms.locfileid: "62125704"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | RoleManagement.ReadWrite.Directory |
 
-### <a name="for-entitlement-management-provider"></a>Поставщик прав на управление правами
+### <a name="for-the-entitlement-management-provider"></a>Для поставщика управления правами
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -42,7 +42,7 @@ ms.locfileid: "62125704"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Создание назначения ролей для поставщика каталогов:
+Создайте назначение ролей для поставщика каталогов:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -63,23 +63,23 @@ POST /roleManagement/entitlementManagement/roleAssignments
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
-В теле запроса поставляем представление JSON объекта [unifiedRoleAssignment.](../resources/unifiedroleassignment.md) Запрос должен иметь область, определенную в Azure AD, например **directoryScopeId,** или область приложения, например **appScopeId.** Примерами областей Azure AD являются клиенты ("/"), административные единицы или приложения. Управление правами использует области каталога клиентов ("/") и пакетов доступа. Дополнительные сведения см. [в appScope.](../resources/appscope.md)
+В тексте запроса добавьте представление объекта [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в формате JSON. Запрос должен иметь область, определенную в Azure AD, например **directoryScopeId**, или область приложения, например **appScopeId**. Примерами областей Azure AD являются клиент ("/"), административная единица, набор атрибутов или приложение. Управление правами использует клиент ("/") и области каталога пакетов для доступа. Дополнительные сведения см. [в разделе appScope](../resources/appscope.md).
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика и новый объект `201 Created` [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и новый объект [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-a-role-assignment-at-tenant-scope"></a>Пример 1. Создание назначения ролей в области клиента
+### <a name="example-1-create-a-role-assignment-with-tenant-scope"></a>Пример 1. Создание назначения роли с областью действия клиента
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. Обратите внимание на использование ролиTemplateId для roleDefinitionId. roleDefinitionId может быть как ИД-шаблона для всей службы, так и каталогом ролейDefinitionId.
+Ниже приведен пример запроса. Обратите внимание на использование roleTemplateId для roleDefinitionId. RoleDefinitionId может быть идентификатором шаблона на уровне службы или идентификатором роли для конкретного каталога.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -128,7 +128,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -151,11 +151,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2--create-a-role-assignment-over-an-administrative-unit-scope"></a>Пример 2. Создание назначения ролей над областью административного подразделения
+### <a name="example-2--create-a-role-assignment-with-administrative-unit-scope"></a>Пример 2. Создание назначения роли с областью административной единицы
 
 #### <a name="request"></a>Запрос
 
-В следующем примере назначается основная роль администратора пользователя над административным подразделением.
+В следующем примере роль администратора пользователя назначается субъекту с областью административной единицы.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -170,9 +170,9 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
-    "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1", //template id of User Account Administrator
+    "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
     "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "directoryScopeId": "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a" //object id of an administrative unit
+    "directoryScopeId": "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -195,12 +195,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment-over-administrativeunit-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -224,7 +228,55 @@ Content-type: application/json
 ```
 
 
-### <a name="example-3-create-a-role-assignment-at-access-package-catalog-scope"></a>Пример 3. Создание назначения ролей в области каталога пакетов доступа
+### <a name="example-3--create-a-role-assignment-with-attribute-set-scope"></a>Пример 3. Создание назначения роли с областью набора атрибутов
+
+#### <a name="request"></a>Запрос
+
+В следующем примере роль администратора назначения атрибутов назначается субъекту с областью набора атрибутов с именем Engineering. Дополнительные сведения о Azure AD атрибутах безопасности и области набора атрибутов см. в разделе "Управление доступом к настраиваемым атрибутам безопасности [в](/azure/active-directory/fundamentals/custom-security-attributes-manage) Azure AD".
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignment_attributeset_scope"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
+    "roleDefinitionId": "58a13ea3-c632-46ae-9ee0-9c0d43cd7f3d",
+    "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
+    "directoryScopeId": "/attributeSets/Engineering"
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments/$entity",
+    "id": "oz6hWDLGrkae4JwNQ81_PU-mYqx8m71OpqEQPdN1u",
+    "roleDefinitionId": "58a13ea3-c632-46ae-9ee0-9c0d43cd7f3d",
+    "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
+    "directoryScopeId": "/attributeSets/Engineering"
+}
+```
+
+### <a name="example-4-create-a-role-assignment-with-access-package-catalog-scope"></a>Пример 4. Создание назначения роли с областью каталога пакетов для доступа
 
 #### <a name="request"></a>Запрос
 
@@ -276,7 +328,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

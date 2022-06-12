@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3e0cf3ea1b24c3c5556a11bb0aca3d9bed13df4f
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 35b230794b6fca690b90b6a8dff32edb43a8601a
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65206989"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034945"
 ---
 # <a name="create-unifiedroleassignment"></a>Создание unifiedRoleAssignment
 
@@ -62,11 +62,11 @@ POST /roleManagement/entitlementManagement/roleAssignments
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
-В тексте запроса добавьте представление объекта [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в формате JSON. Запрос должен иметь либо область, определенную в Azure Active Directory (Azure AD), заданную **directoryScopeId**, либо область приложения, заданную **идентификатором appScopeId**. Примерами областей Azure AD являются клиент (`/`), административные единицы или приложения. Дополнительные сведения о appScope см. [в appScope](../resources/appscope.md).
+В тексте запроса добавьте представление объекта [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в формате JSON. Запрос должен иметь либо область, определенную в Azure Active Directory (Azure AD), заданную **directoryScopeId**, либо область приложения, заданную **идентификатором appScopeId**. Примерами областей Azure AD являются клиент (`/`), административная единица или приложение. Дополнительные сведения о appScope см. [в appScope](../resources/appscope.md).
 
 В следующей таблице показаны свойства, необходимые при создании объекта [unifiedRoleAssignment](../resources/unifiedroleassignment.md) .
 
@@ -77,13 +77,13 @@ POST /roleManagement/entitlementManagement/roleAssignments
 |directoryScopeId|Строка|Идентификатор объекта каталога, представляющего область назначения. Требуется это свойство **или appScopeId** . Область назначения определяет набор ресурсов, к которым участнику был предоставлен доступ. Области каталога — это общие области, хранящиеся в каталоге, которые распознаются несколькими приложениями. Используется `/` для области на уровне клиента. Используйте **appScopeId** , чтобы ограничить область только приложением.|
 |appScopeId|Строка|Идентификатор области, относяшейся к приложению, если область назначения предназначена для конкретного приложения. Это свойство или **directoryScopeId** является обязательным. Области приложения — это области, которые определяются и распознаются только этим приложением. Используется `/` для областей приложений на уровне клиента. Используйте **directoryScopeId** , чтобы ограничить область определенными объектами каталога, например административными единицами.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код `201 Created` отклика и новый объект [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-a-role-assignment-with-a-tenant-wide-scope"></a>Пример 1. Создание назначения роли с областью на уровне клиента
+### <a name="example-1-create-a-role-assignment-with-tenant-scope"></a>Пример 1. Создание назначения роли с областью действия клиента
 
 #### <a name="request"></a>Запрос
 
@@ -161,11 +161,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2--create-a-role-assignment-with-an-administrative-unit-scope"></a>Пример 2. Создание назначения роли с областью административной единицы
+### <a name="example-2--create-a-role-assignment-with-administrative-unit-scope"></a>Пример 2. Создание назначения роли с областью административной единицы
 
 #### <a name="request"></a>Запрос
 
-В следующем примере субъекту назначается роль администратора пользователя в административной единице.
+В следующем примере роль администратора пользователя назначается субъекту с областью административной единицы.
 
 
 
@@ -239,7 +239,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3--create-a-role-assignment-with-an-application-scope"></a>Пример 3. Создание назначения роли с областью приложения
+### <a name="example-3--create-a-role-assignment-with-application-scope"></a>Пример 3. Создание назначения роли с областью приложения
 
 #### <a name="request"></a>Запрос
 

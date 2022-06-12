@@ -1,25 +1,24 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: SearchResult
+title: Тип ресурса searchResult
 ms.localizationpriority: medium
-description: Ресурс SearchResult указывает, что элемент представляет собой отклик на поисковый запрос.
-ms.prod: ''
+description: Ресурс searchResult указывает, что элемент является ответом на поисковый запрос.
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: ad26c1df29e78d6c04c4332d5a1c1e9f88c12513
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 376e0a709f7607215aac1b1509434549bd437db3
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126690"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034798"
 ---
-# <a name="searchresult-resource-type"></a>Тип ресурса SearchResult
+# <a name="searchresult-resource-type"></a>Тип ресурса searchResult
 
 Пространство имен: microsoft.graph
 
-Ресурс **SearchResult** указывает, что элемент представляет собой отклик на поисковый запрос.
+Ресурс **searchResult** указывает, что элемент является ответом на поисковый запрос.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 <!-- {
   "blockType": "resource",
@@ -41,7 +40,7 @@ ms.locfileid: "59126690"
 
 ## <a name="remarks"></a>Заметки 
 
-Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
+Дополнительные сведения о аспектах в DriveItem см. [в разделе driveItem](driveitem.md).
 
 <!-- {
   "type": "#page.annotation",

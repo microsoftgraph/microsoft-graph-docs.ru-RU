@@ -1,27 +1,27 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: Shared
+title: Тип общего ресурса
 ms.localizationpriority: medium
-description: Ресурс Shared указывает, что к элементу DriveItem был предоставлен доступ другим пользователям.
-ms.prod: ''
+description: Общий ресурс указывает, что driveItem был предоставлен другим пользователям.
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 4298f35f95e4e5e5f18c8ee8492c70fae30d4928
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7dc698106ffcb619e9e5e8e28845841084f59702
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126627"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034392"
 ---
-# <a name="shared-resource-type"></a>Тип ресурса Shared
+# <a name="shared-resource-type"></a>Тип общего ресурса
 
 Пространство имен: microsoft.graph
 
-Ресурс **Shared** указывает, что к элементу DriveItem был предоставлен доступ другим пользователям. Ресурс содержит сведения о способе предоставления совместного доступа к элементу.
+Общий **ресурс** указывает, что **driveItem** был предоставлен другим пользователям.
+Ресурс содержит сведения о способе предоставления совместного доступа к элементу.
 
-Если у элемента [**Driveitem**](driveitem.md) есть аспект **shared**, имеющий значение, отличное от null, это значит, что к элементу предоставлен общий доступ.
+Если у [**элемента driveitem**](driveitem.md) есть общий аспект, отличный от **NULL,** элемент является общим.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 <!-- {
   "blockType": "resource",
@@ -47,7 +47,7 @@ ms.locfileid: "59126627"
 | sharedBy       | [identitySet](identityset.md) | Удостоверение пользователя, предоставившего общий доступ к элементу. Только для чтения.
 | sharedDateTime | DateTimeOffset                | Дата и время предоставления общего доступа к элементу в формате UTC. Только для чтения.
 
-## <a name="scope-options"></a>Параметры Области
+## <a name="scope-options"></a>Параметры области
 
 | Значение          | Описание                                                                           |
 |:---------------|:--------------------------------------------------------------------------------------|

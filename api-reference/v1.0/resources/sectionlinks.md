@@ -1,22 +1,22 @@
 ---
-title: тип ресурса sectionLinks
-description: Ссылки для открытия раздела OneNote.
+title: Тип ресурса sectionLinks
+description: Ссылки для открытия OneNote раздела.
 ms.localizationpriority: medium
 author: jewan-microsoft
-ms.prod: ''
+ms.prod: notes
 doc_type: resourcePageType
-ms.openlocfilehash: 8c227c7963566e01c863fefa4aacb53cff31ce4a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4cc66d1a04777fb44ea542c51668569ad1750f57
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139662"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034770"
 ---
-# <a name="sectionlinks-resource-type"></a>тип ресурса sectionLinks
+# <a name="sectionlinks-resource-type"></a>Тип ресурса sectionLinks
 
 Пространство имен: microsoft.graph
 
-Ссылки для открытия раздела OneNote.
+Ссылки для открытия OneNote раздела.
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 53c94889543ab366279c369e31b1b4efaa7552b5
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: e79f1ef900a9c012f7f3e91c32ddc7b53fa904fd
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451321"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034572"
 ---
 # <a name="delete-a-user"></a>Удалить пользователя
 
@@ -32,11 +32,11 @@ ms.locfileid: "63451321"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.ReadWrite.All |
 
-Рабочая или учебная учетная запись должна использоваться в одной из следующих ролей:
+Вызывающему пользователю или приложению должна быть назначена одна из [следующих Azure AD ролей](/azure/active-directory/roles/permissions-reference):
 + Глобальный администратор
 + Администратор пользователей
 
-Только глобальный администратор может удалить пользователя в роли глобального администратора или _любого_ пользователя в клиенте. Администратор пользователей может удалять только тех пользователей, которые не являются администраторами, или пользователей в роли с ограниченными правами. Дополнительные сведения см. в разделе [Разрешения для роли администратора в Azure AD](/azure/active-directory/roles/permissions-reference#available-roles)
+Только глобальный администратор может удалить пользователя с ролью глобального администратора _или любого_ пользователя в клиенте. Администратор пользователей может удалять только тех пользователей, которые не являются администраторами, или пользователей в роли с ограниченными правами. Дополнительные сведения см. в разделе [Разрешения для роли администратора в Azure AD](/azure/active-directory/roles/permissions-reference#available-roles)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -101,7 +101,7 @@ DELETE https://graph.microsoft.com/beta/users/ba9a3254-9f18-4209-aeb3-9e42a35b5b
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
   "truncated": true

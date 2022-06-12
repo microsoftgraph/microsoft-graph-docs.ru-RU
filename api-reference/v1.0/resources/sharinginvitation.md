@@ -1,23 +1,23 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: SharingInvitation
+title: Тип ресурса sharingInvitation
 ms.localizationpriority: medium
-description: Элементы данных, связанные с приглашением, группы ресурсов SharingInvitation в одну структуру.
-ms.prod: ''
+description: Ресурс sharingInvitation группирует элементы данных, связанные с приглашением, в одну структуру.
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 064c687b761872f587f8fe992d320c204dc260f9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7c76fe60f21831db94b44df5f6e0ccabdeff98d8
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032260"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034938"
 ---
-# <a name="sharinginvitation-resource-type"></a>Тип ресурса SharingInvitation
+# <a name="sharinginvitation-resource-type"></a>Тип ресурса sharingInvitation
 
 Пространство имен: microsoft.graph
 
-Элементы данных, связанные с приглашением, группы ресурсов **SharingInvitation** в одну структуру.
+Группирует элементы данных, связанные с приглашением, в одну структуру.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -49,7 +49,7 @@ ms.locfileid: "59032260"
 
 ## <a name="remarks"></a>Заметки
 
-Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
+Дополнительные сведения об аспектах ресурса **driveItem** см. в описании типа [driveItem](driveitem.md).
 
 [DriveItem]: driveitem.md
 [IdentitySet]: identityset.md

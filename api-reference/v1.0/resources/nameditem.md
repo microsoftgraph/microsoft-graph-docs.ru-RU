@@ -3,14 +3,14 @@ title: Тип ресурса NamedItem
 description: Представляет определенное имя для диапазона ячеек или значения. Имена могут быть простыми именованными объектами (как показано ниже в столбце "Тип"), объектом диапазона и ссылкой на диапазон. Этот объект может использоваться для получения объекта диапазона, связанного с именами.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: resourcePageType
-ms.openlocfilehash: 6afde3e91f451b146add7e364a3c308959d4eff2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1e85270d29b1dcb2dc023f4a0f1499dd38871aa9
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028816"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034434"
 ---
 # <a name="nameditem-resource-type"></a>Тип ресурса NamedItem
 
@@ -40,7 +40,7 @@ ms.locfileid: "59028816"
 |value|Json|Представляет формулу, на которую ссылается имя. Например, =Sheet14!$B$2:$H$12, =4,75 и т. д. Только для чтения.|
 |visible|boolean|Определяет, является ли объект видимым.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |worksheet|[WorkbookWorksheet](worksheet.md)|Возвращает лист, к которому относится именованный элемент. Доступно, только если элемент относится к листу. Только для чтения.|

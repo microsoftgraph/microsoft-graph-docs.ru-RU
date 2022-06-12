@@ -1,22 +1,22 @@
 ---
-title: ресурс onenoteEntityHierarchyModel
-description: Это базовый тип для OneNote сущностями.
+title: Ресурс onenoteEntityHierarchyModel
+description: Базовый тип для OneNote сущностей.
 author: jewan-microsoft
 ms.localizationpriority: medium
-ms.prod: onenote
+ms.prod: notes
 doc_type: resourcePageType
-ms.openlocfilehash: 8b8a53205227f71f92245ebfb8cf4896ec91e58e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 914a2832a79d278660711cfccc1318dc56c390ba
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118035"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034707"
 ---
-# <a name="onenoteentityhierarchymodel-resource"></a>ресурс onenoteEntityHierarchyModel
+# <a name="onenoteentityhierarchymodel-resource"></a>Ресурс onenoteEntityHierarchyModel
 
 Пространство имен: microsoft.graph
 
-Это базовый тип для OneNote сущностями.
+Базовый тип для OneNote сущностей.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -41,7 +41,6 @@ ms.locfileid: "59118035"
 }
 
 ```
-## <a name="properties"></a>Свойства
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|

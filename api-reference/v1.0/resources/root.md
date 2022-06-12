@@ -1,27 +1,26 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: Root
+title: Тип корневого ресурса
 ms.localizationpriority: medium
-description: Аспект Root указывает, что объект находится на верхнем уровне в иерархии.
-ms.prod: ''
+description: Корневой аспект указывает, что объект является самым верхним в иерархии.
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 260d7af5898acd07d7e27c0613bc7d218fd5ded0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6cbf588c35fd5a58d67e5f092c8762766f31cad4
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59108858"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034854"
 ---
-# <a name="root-resource-type"></a>Тип ресурса Root
+# <a name="root-resource-type"></a>Тип корневого ресурса
 
 Пространство имен: microsoft.graph
 
-Аспект **Root** указывает, что объект находится на верхнем уровне в иерархии.
+**Корневой** аспект указывает, что объект является самым верхним в иерархии.
 Наличие ненулевого значения этого аспекта указывает, что объект является корневым элементом.
 Значение null (или отсутствующее значение) указывает, что объект не является корневым.
 
-**Примечание.** В настоящее время этот аспект пуст, но в будущих редакциях API он может быть дополнен другими свойствами.
+>**Примечание.** В настоящее время этот аспект пуст, но в будущих редакциях API он может быть дополнен другими свойствами.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -34,7 +33,7 @@ ms.locfileid: "59108858"
 
 ## <a name="properties"></a>Свойства
 
-У ресурса **Root** отсутствуют свойства.
+**Корневой** ресурс не имеет свойств.
 
 
 <!-- {

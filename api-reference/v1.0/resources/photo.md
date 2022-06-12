@@ -1,19 +1,19 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: Photo
+title: photo;
 ms.localizationpriority: medium
 description: Ресурс photo предоставляет свойства фотографии и камеры, например метаданные EXIF, в ресурсе driveItem.
-ms.prod: ''
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 9f55914c19c399cf58d37cbbf9a23af33a4fe44e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 80bcc486e6e577ebde22925f16e79c83e32f8cae
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59006937"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034469"
 ---
-# <a name="photo-resource-type"></a>Тип ресурса Photo
+# <a name="photo-resource-type"></a>Тип ресурса photo
 
 Пространство имен: microsoft.graph
 
@@ -53,7 +53,7 @@ ms.locfileid: "59006937"
 | **exposureNumerator**   | Double         | Числитель дробного значения выдержки камеры. Только для чтения.
 | **focalLength**         | Double         | Фокусное расстояние камеры. Только для чтения.
 | **iso**                 | Int32          | Значение ISO камеры. Только для чтения.
-| **orientation**         | Int16          | Значение ориентации с камеры. Writable на OneDrive Personal.      |
+| **orientation**         | Int16          | Значение ориентации камеры. Доступно для записи в OneDrive Персональный.      |
 
 ## <a name="remarks"></a>Заметки
 

@@ -1,27 +1,17 @@
 ---
-author: JeremyKelley
-ms.date: 09/10/2017
-title: Пакет
-ms.localizationpriority: medium
-description: " или коллекция элементов, которые следует рассматривать как коллекцию, а не отдельные элементы."
-ms.prod: ''
-doc_type: resourcePageType
-ms.openlocfilehash: cf4a0ec97c328bb10aa51800c7ec18b4a8512286
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094123"
+author: Title: Package ms.localizationpriority: medium description: "Indicates that a driveItem is the top-level item in a "package" or a collection of items that should be treated as a collection instead of individual items".
+ms.prod: files doc_type: resourcePageType
 ---
-# <a name="package-resource-type"></a>Тип ресурса Package
+
+# <a name="package-resource-type"></a>Тип ресурса пакета
 
 Пространство имен: microsoft.graph
 
-Ресурс **Package** указывает, что элемент DriveItem — это элемент верхнего уровня в "пакете" или коллекции элементов, с которыми следует обращаться как с коллекцией, а не как с отдельными элементами.
+Ресурс **пакета** указывает, что **driveItem** является элементом верхнего уровня в "пакете" или коллекции элементов, которые должны рассматриваться как коллекция, а не отдельные элементы.
 
 Пример пакета — записная книжка OneNote. Несмотря на то что записная книжка состоит из файлов и папок, представляющих ее содержимое, элемент верхнего уровня, который представляет записную книжку, имеет аспект **package**, с помощью которого можно информировать клиенты о том, что это коллекция данных, с которой необходимо обращаться особым образом.
 
-Элементы DriveItem с аспектом **package** не включают аспект **folder** или **file**, но концептуально похожи на элемент с аспектом **folder**.
+**Объекты driveItems** с аспектом пакета не включают аспект  папки или  файла, но концептуально похожи на элемент с **аспектом папки**.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -40,7 +30,7 @@ ms.locfileid: "59094123"
 
 ## <a name="remarks"></a>Заметки 
 
-Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
+Дополнительные сведения о аспектах в DriveItem см. [в разделе driveItem](driveitem.md).
 
 
 <!-- {
