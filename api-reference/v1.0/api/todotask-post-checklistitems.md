@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b662afe3f0e726cfe704293f5789344f276d6ab9
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: a8f8153c76e9861676e526add07a44eb00b9a9b3
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821371"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "66041030"
 ---
 # <a name="create-checklistitem"></a>Создание checklistItem
 Пространство имен: microsoft.graph
@@ -22,9 +22,9 @@ ms.locfileid: "65821371"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
-|Приложение|Tasks.ReadWrite|
+|Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Для приложений|Tasks.ReadWrite|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ POST /users/{id | userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{todoTask
 |checkedDateTime|DateTimeOffset|Дата и время завершения **checklistItem** .|
 |createdDateTime|DateTimeOffset|Дата и время создания **объекта checklistItem** .|
 |displayName|Строка|Поле, указывающее **заголовок checklistItem**.|
-|Ischecked|Логическое|Состояние, указывающее, был ли элемент извлечен или нет.|
+|Ischecked|Boolean|Состояние, указывающее, был ли элемент извлечен или нет.|
 
 
 ## <a name="response"></a>Отклик
@@ -64,6 +64,8 @@ POST /users/{id | userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{todoTask
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_checklistitem_from_"
@@ -77,6 +79,24 @@ Content-Type: application/json
     "displayName": "Final sign-off from the team"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-checklistitem-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-checklistitem-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-checklistitem-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-checklistitem-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

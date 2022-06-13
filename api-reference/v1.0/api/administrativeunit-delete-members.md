@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b3fac827fb6f526fa515ab6c87d7027a9cb863c9
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 2ea2ab8f61c050f2abc6624cc5ccb524a8358d25
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899983"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "66040883"
 ---
 # <a name="remove-a-member"></a>Удаление участника
 
@@ -24,11 +24,11 @@ ms.locfileid: "65899983"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | AdministrativeUnit.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | AdministrativeUnit.ReadWrite.All |
 
-Чтобы удалить участника из административной единицы, вызывающему субъекту должна быть назначена одна из следующих ролей [Azure AD](/azure/active-directory/roles/permissions-reference):
+Чтобы удалить участника из административной единицы, вызывающему субъекту должна быть назначена одна из следующих [Azure AD ролей](/azure/active-directory/roles/permissions-reference):
 
 * Администратор привилегированных ролей
 * Глобальный администратор
@@ -54,6 +54,8 @@ DELETE /directory/administrativeUnits/{id}/members/{id}/$ref
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса. `{id1}` `{id2}` В приведенном ниже примере представляет идентификатор целевой административной единицы и уникальный идентификатор пользователя, группы или устройства, удаляемого из целевой административной единицы. 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_administrativeunit_members"
@@ -61,6 +63,24 @@ DELETE /directory/administrativeUnits/{id}/members/{id}/$ref
 ```msgraph-interactive
 DELETE https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id1}/members/{id2}/$ref
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-administrativeunit-members-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-administrativeunit-members-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-administrativeunit-members-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-administrativeunit-members-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика.

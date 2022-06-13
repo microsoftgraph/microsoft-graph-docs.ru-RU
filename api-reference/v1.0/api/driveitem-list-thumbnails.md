@@ -1,21 +1,23 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: Извлечение эскизов для файла или папки
+title: Получение эскизов для файла или папки
 ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Получение коллекции ресурсов ThumbnailSet для ресурса DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 3ac4c607ec2231767248f109a110add506ea4e0e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4e2d37391e18928d5a343e5072628834eaa93981
+ms.sourcegitcommit: 0ec845f93eaa140ad833ba163c76c5308197a92f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140872"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "66041058"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Список эскизов для ресурса DriveItem
 
 Пространство имен: microsoft.graph
+
+[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
 Получение коллекции ресурсов [ThumbnailSet](../resources/thumbnailset.md) для ресурса [DriveItem](../resources/driveitem.md).
 
@@ -57,7 +59,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$select` для настройки отклика.
 
-Кроме того, этот метод поддерживает ирисовку эскиза с исходным значением EXIF ориентации и без примененного поворота путем придания `originalOrientation=true` параметру запроса.
+Кроме того, этот метод поддерживает получение эскиза с исходным значением EXIF `originalOrientation=true` ориентации и без примененного поворота путем добавления параметра запроса.
 В настоящее время этот параметр поддерживается только в OneDrive персональный.
 
 ## <a name="response"></a>Отклик
@@ -157,7 +159,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | Уникальный идентификатор элемента.                                           |
 | **thumb-id** | число | Индекс эскиза (как правило, 0–4). Если присутствует пользовательский эскиз, для него задается индекс 0. |
-| **size**     | string | Размер запрашиваемого эскиза. Это должен быть один из стандартных размеров, указанных ниже, либо пользовательский размер. |
+| **size**     | string | Размер запрашиваемого эскиза. Это должен быть один из стандартных размеров, указанных ниже, или пользовательский размер. |
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 

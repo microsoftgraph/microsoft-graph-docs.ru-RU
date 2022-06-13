@@ -1,18 +1,18 @@
 ---
-title: Список доступныхProviderTypes
-description: Извлечение всех доступных типов поставщика удостоверений в каталоге.
+title: Перечисление availableProviderTypes
+description: Получение всех доступных типов поставщиков удостоверений в каталоге.
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: b4a3c7205d73e0c8c880787ccfdac864ac26ed1d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c58f1bc72dff5c9c60787e1f71d7e5f1649cdfaa
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029597"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "66041009"
 ---
-# <a name="list-availableprovidertypes-deprecated"></a>Список доступныхProviderTypes (обесценив)
+# <a name="list-availableprovidertypes-deprecated"></a>Перечисление availableProviderTypes (не рекомендуется)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "61029597"
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Для приложений|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
+Учетная запись рабочей или учебной учетной записи должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
 * Администратор внешнего поставщика удостоверений
@@ -93,12 +93,16 @@ GET https://graph.microsoft.com/v1.0/identityProviders/availableProviderTypes
 [!INCLUDE [sample-code](../includes/snippets/go/identityprovider-availableprovidertypes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/identityprovider-availableprovidertypes-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
