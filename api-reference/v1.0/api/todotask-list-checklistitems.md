@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 41ce536cf08253eb8a6cf93f497b015422b69dae
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 069cbf184f48b7b52dc74207bb3bf8f92d765356
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821375"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "66040715"
 ---
 # <a name="list-checklistitems"></a>Перечисление контрольных элементов
 Пространство имен: microsoft.graph
@@ -22,9 +22,9 @@ ms.locfileid: "65821375"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
-|Приложение|Tasks.Read, Tasks.ReadWrite|
+|Делегированные (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
+|Для приложений|Tasks.Read, Tasks.ReadWrite|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -56,6 +56,8 @@ GET /users/{id | userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{todoTaskI
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_checklistitem"
@@ -64,6 +66,24 @@ GET /users/{id | userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{todoTaskI
 ``` http
 GET https://graph.microsoft.com/v1.0/me/todo/lists/AAMkADliMmU5YjJlLTVmMmQtNGQzNS1iYjA0LTdmZTA2NTI0MTE5YwAuAAAAAADdOMUbUmCfTKa7OC-fqjkdAQBnu3olF7NfToRyJ2f__TNcAAAAAAESAAA=/tasks/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AZ7t6JRezX06Ecidn-vkzXAABPDii4gAA/checklistitems
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-checklistitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-checklistitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-checklistitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-checklistitem-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
