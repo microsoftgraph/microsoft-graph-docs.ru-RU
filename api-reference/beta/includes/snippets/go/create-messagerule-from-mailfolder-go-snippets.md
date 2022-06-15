@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 4b052847eb461f6cb7a47e3006f382a265242c80
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 0b3d41c32e6f16428851505c1c8944b32a48dbc3
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65342769"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66099536"
 ---
 ```go
 
@@ -28,8 +28,12 @@ actions := msgraphsdk.NewMessageRuleActions()
 requestBody.SetActions(actions)
 actions.SetForwardTo( []Recipient {
     msgraphsdk.NewRecipient(),
-    SetAdditionalData(map[string]interface{}{
-    }
+emailAddress := msgraphsdk.NewEmailAddress()
+    SetEmailAddress(emailAddress)
+name := "Alex Wilbur"
+    emailAddress.SetName(&name)
+address := "AlexW@contoso.onmicrosoft.com"
+    emailAddress.SetAddress(&address)
 }
 stopProcessingRules := true
 actions.SetStopProcessingRules(&stopProcessingRules)

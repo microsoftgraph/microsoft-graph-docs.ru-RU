@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: d82a24177f1982986aa94969f503b304c370b6d1
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: f89bae2936f862668d5061a0562e16c02df4c7ee
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65342272"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66099478"
 ---
 ```go
 
@@ -33,10 +33,10 @@ recipient.SetAdditionalData(map[string]interface{}{
 }
 requestBody.SetTemplateParameters( []KeyValuePair {
     msgraphsdk.NewKeyValuePair(),
-    SetAdditionalData(map[string]interface{}{
-        "name": "approvalTaskId",
-        "value": "2020AAGGTAPP",
-    }
+name := "approvalTaskId"
+    SetName(&name)
+value := "2020AAGGTAPP"
+    SetValue(&value)
 }
 chatId := "chat-id"
 graphClient.ChatsById(&chatId).SendActivityNotification(chat-id).Post(requestBody)

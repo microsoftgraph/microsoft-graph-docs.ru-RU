@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 18babb3b00e8bc3cc40a3cbfae4a6a153f33d637
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 3c1aba8fef9c8d6224b0bb06177c524488e97112
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65342714"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66099515"
 ---
 ```go
 
@@ -31,20 +31,20 @@ usePreDefinedValuesOnly := true
 requestBody.SetUsePreDefinedValuesOnly(&usePreDefinedValuesOnly)
 requestBody.SetAllowedValues( []AllowedValue {
     msgraphsdk.NewAllowedValue(),
-    SetAdditionalData(map[string]interface{}{
-        "id": "Alpine",
-        "isActive": true,
-    }
+id := "Alpine"
+    SetId(&id)
+isActive := true
+    SetIsActive(&isActive)
     msgraphsdk.NewAllowedValue(),
-    SetAdditionalData(map[string]interface{}{
-        "id": "Baker",
-        "isActive": true,
-    }
+id := "Baker"
+    SetId(&id)
+isActive := true
+    SetIsActive(&isActive)
     msgraphsdk.NewAllowedValue(),
-    SetAdditionalData(map[string]interface{}{
-        "id": "Cascade",
-        "isActive": true,
-    }
+id := "Cascade"
+    SetId(&id)
+isActive := true
+    SetIsActive(&isActive)
 }
 result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(requestBody)
 

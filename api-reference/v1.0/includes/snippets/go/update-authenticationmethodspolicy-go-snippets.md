@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 1632adeefb728ed117901ea5545b501aa32b28ef
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 106a07cf3ab265526c5d13726e778cb4ae01ef80
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65341867"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66099464"
 ---
 ```go
 
@@ -33,10 +33,12 @@ authenticationMethodsRegistrationCampaign.SetIncludeTargets( []AuthenticationMet
 }
 requestBody.SetAuthenticationMethodConfigurations( []AuthenticationMethodConfiguration {
     msgraphsdk.NewAuthenticationMethodConfiguration(),
+id := "Fido2"
+    SetId(&id)
+state := "disabled"
+    SetState(&state)
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
-        "id": "Fido2",
-        "state": "disabled",
         "isSelfServiceRegistrationAllowed": false,
         "isAttestationEnforced": false,
     }

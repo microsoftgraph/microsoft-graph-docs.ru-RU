@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 702d9d4327db3fb580fcb1a575b4478eaa47c25a
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 7dd084f7e2ee2e9be1c0eb35b7761bb36069a1be
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65342291"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66099437"
 ---
 ```go
 
@@ -15,11 +15,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewTerm()
 requestBody.SetLabels( []LocalizedLabel {
     msgraphsdk.NewLocalizedLabel(),
-    SetAdditionalData(map[string]interface{}{
-        "name": "changedLabel",
-        "languageTag": "en-US",
-        "isDefault": true,
-    }
+name := "changedLabel"
+    SetName(&name)
+languageTag := "en-US"
+    SetLanguageTag(&languageTag)
+isDefault := true
+    SetIsDefault(&isDefault)
 }
 siteId := "site-id"
 setId := "set-id"
