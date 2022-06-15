@@ -1,22 +1,22 @@
 ---
-title: Скачайте содержимое ресурса DriveItemVersion
-description: В этой статье рассказывается, как получить содержимое определенной версии ресурса DriveItem.
+title: Скачивание содержимого ресурса driveItemVersion
+description: Получение содержимого определенной версии driveItem.
 ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 421a42d1a36fe8e02c53b8a5a6b0f52b3ce92cec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c8f080ab1893ea520f4e2094e914356ce71010b6
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037973"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094671"
 ---
-# <a name="download-contents-of-a-driveitemversion-resource"></a>Скачайте содержимое ресурса DriveItemVersion
+# <a name="download-contents-of-a-driveitemversion-resource"></a>Скачивание содержимого ресурса driveItemVersion
 
 Пространство имен: microsoft.graph
 
-В этой статье рассказывается, как получить содержимое определенной версии ресурса [DriveItem](../resources/driveitem.md).
+Получение содержимого определенной версии [driveItem](../resources/driveitem.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,9 +45,9 @@ GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 
 Возвращает отклик `302 Found`, который выполняет перенаправление на URL-адрес, прошедший предварительную проверку подлинности и предназначенный для скачивания байтов файла.
 
-Чтобы загрузить содержимое файла, приложению необходимо будет следовать заголовку `Location` в отклике. Многие библиотеки клиентов HTTP будут автоматически следовать перенаправлению 302 и немедленно начинать загрузку файла.
+Чтобы скачать содержимое файла, приложению необходимо следовать заголовку `Location` в отклике. Многие библиотеки клиентов HTTP будут автоматически следовать перенаправлению 302 и немедленно начинать скачивание файла.
 
-URL-адреса загрузки, прошедшие предварительную проверку подлинности, действуют только в течение короткого периода времени (несколько минут), и для их скачивания не требуется заголовок `Authorization`.
+URL-адреса загрузки, прошедшие предварительную проверку подлинности, действительны только на протяжении короткого периода времени (несколько минут) и не требуют заголовка `Authorization` для загрузки.
 
 ## <a name="example"></a>Пример
 
@@ -97,7 +97,7 @@ Location: https://onedrive.com/34FF49D6...
 
 OneDrive не сохраняет полные метаданные для предыдущих версий файла.
 
-Когда ваше приложение получает список доступных версий для файла, возвращается ресурс [DriveItemVersion](../resources/driveitemversion.md), в котором представлены доступные сведения об определенной версии.
+Когда приложение получает список доступных версий файла, возвращается ресурс [driveItemVersion](../resources/driveitemversion.md) , предоставляющий доступную информацию о конкретной версии.
 
 <!-- {
   "type": "#page.annotation",

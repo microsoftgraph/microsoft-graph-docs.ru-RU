@@ -10633,6 +10633,11 @@ items:
                     href: api/managedtenants-managedtenant-list-managementtemplates.md
                   - name: Получение шаблона управления
                     href: api/managedtenants-managementtemplate-get.md
+              - name: Мои роли
+                href: resources/managedtenants-myrole.md
+                items:
+                  - name: Список
+                    href: api/managedtenants-managedtenant-list-myroles.md
               - name: Настраиваемые сведения о клиенте
                 href: resources/managedtenants-tenantcustomizedinformation.md
                 items:
@@ -12012,9 +12017,9 @@ items:
                     href: resources/temporaryaccesspassauthenticationmethod.md
                     items:
                       - name: Список
-                        href: api/temporaryaccesspassauthenticationmethod-list.md
+                        href: api/authentication-list-temporaryaccesspassmethods.md
                       - name: Создание
-                        href: api/temporaryaccesspassauthenticationmethod-post.md
+                        href: api/authentication-post-temporaryaccesspassmethods.md
                       - name: Получение
                         href: api/temporaryaccesspassauthenticationmethod-get.md
                       - name: Удаление
@@ -12780,7 +12785,7 @@ items:
                         href: api/identityuserflowattribute-delete.md
                   - name: Назначение атрибута потока пользователя
                     items:
-                      - name: User
+                      - name: Пользователь
                         href: resources/identityuserflowattributeassignment.md
                       - name: Получение
                         href: api/identityuserflowattributeassignment-get.md
@@ -12993,7 +12998,7 @@ items:
               - name: Запросы согласия
                 href: resources/consentrequests-overview.md
                 items:
-                  - name: Политика запроса согласия администратора
+                  - name: Администратор политики запроса согласия
                     href: resources/adminconsentrequestpolicy.md
                     items:
                       - name: Получение
@@ -14700,7 +14705,7 @@ items:
                     href: api/security-ediscoverycasesettings-update.md
                   - name: Сброс параметров до значения по умолчанию
                     href: api/security-ediscoverycasesettings-resettodefault.md
-              - name: Operation
+              - name: Операция
                 href: resources/security-caseoperation.md
                 items:
                   - name: Перечисление операций с вариантами
@@ -15323,7 +15328,7 @@ items:
           - name: Команда
             href: resources/team.md
             items:
-              - name: Создание
+              - name: Create
                 href: api/team-post.md
               - name: Создание команды из группы
                 href: api/team-put-teams.md

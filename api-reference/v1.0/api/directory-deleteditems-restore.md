@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fd077d219fb3b01dceeb1eb307accc541d2f4e60
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 3104ebf6f84f9a0f10b154b6d6c224d097a92f6e
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672394"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093384"
 ---
 # <a name="restore-deleted-item"></a>Восстановление удаленного элемента
 
@@ -18,7 +18,7 @@ ms.locfileid: "63672394"
 
 Восстановление недавно удаленного элемента из контейнера для [удаленных элементов](../resources/directory.md). 
 
-В настоящее время функции восстановления удаленных элементов поддерживаются только для [приложений](../resources/application.md), [групповых и](../resources/group.md) [пользовательских](../resources/user.md) ресурсов. Вы можете полностью восстановить случайно удаленный элемент. Это не применимо к группам безопасности, которые удаляются навсегда.
+В настоящее время функции восстановления удаленных элементов поддерживаются только для [ресурсов приложения](../resources/application.md), [группы](../resources/group.md) [и](../resources/user.md) пользователя. Вы можете полностью восстановить случайно удаленный элемент. Это неприменимо к группам безопасности, которые удаляются без возможности восстановления.
 
 Удаленный элемент можно восстановить в течение 30 дней. Через 30 дней элемент удаляется без возможности восстановления.
 
@@ -29,7 +29,7 @@ ms.locfileid: "63672394"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
@@ -59,7 +59,7 @@ POST /directory/deletedItems/{id}/restore
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Требуется *маркер* Bearer &lt;&gt;|
+| Authorization  | Требуется токен *носителя* &lt;&gt;|
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -95,6 +95,10 @@ POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-directory-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-directoryobject-from-directory-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

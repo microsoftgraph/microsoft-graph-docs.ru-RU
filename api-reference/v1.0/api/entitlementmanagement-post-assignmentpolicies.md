@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f47448533da07ad369ca3013f9efeae0ca8f8919
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: ba18409605253898d60381de3c21286c8642623e
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820394"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094642"
 ---
 # <a name="create-assignmentpolicies"></a>Создание assignmentPolicies
 Пространство имен: microsoft.graph
@@ -23,8 +23,8 @@ ms.locfileid: "65820394"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All  |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All  |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | EntitlementManagement.ReadWrite.All |
 
 
@@ -52,7 +52,7 @@ POST /identityGovernance/entitlementManagement/assignmentPolicies
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |description|Строка|Описание политики.|
-|displayName|Строка|Отображаемое имя политики.|
+|displayName|String|Отображаемое имя политики.|
 |allowedTargetScope|allowedTargetScope|Кто может быть назначен пакет доступа с помощью этой политики. Возможные значения: `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `unknownFutureValue`. Необязательно.|
 |Истечения срока действия|[expirationPattern](../resources/expirationpattern.md)|Дата окончания срока действия для назначений, созданных в этой политике.|
 |requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|Задает параметры для утверждения запросов на назначение пакета доступа с помощью этой политики. Например, если требуется утверждение для новых запросов.|
@@ -302,6 +302,10 @@ Content-Type: application/json
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageassignmentpolicy-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageassignmentpolicy-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

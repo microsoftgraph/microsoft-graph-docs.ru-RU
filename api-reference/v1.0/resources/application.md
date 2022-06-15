@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 8b7864114f357ea031fbaae72c8ee20ad6c477c3
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 188da50ffc613d375fbd57a2035b49a07da624a8
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461193"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094412"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -73,6 +73,7 @@ ms.locfileid: "65461193"
 | appId | String | Уникальный идентификатор приложения, назначенный приложению с помощью Azure AD. Значение NULL не допускается. Только для чтения. |
 | applicationTemplateId | Строка | Уникальный идентификатор applicationTemplate. Поддерживает `$filter` (`eq`, `not`, `ne`).|
 | appRoles | Коллекция [appRole](approle.md) | Совокупность ролей, назначенных приложению. С помощью команды [назначения ролей приложений](approleassignment.md) эти роли можно назначать пользователям, группам или субъектам-службам, связанным с другими приложениями. Значение null не допускается. |
+|certification|[certification](certification.md)|Указывает состояние сертификации приложения.|
 | createdDateTime | DateTimeOffset | Дата и время регистрации приложения. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.<br><br> Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in` и `eq` для значений `null`) и `$orderBy`. |
 | deletedDateTime | DateTimeOffset | Дата и время удаления приложения. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |
 | description | Строка | Произвольное текстовое поле для описания объекта приложения конечным пользователям. Максимальная длина — 1024 символа. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`) и `$search`. |
@@ -140,6 +141,7 @@ ms.locfileid: "65461193"
   "appId": "String",
   "applicationTemplateId": "String",
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
+  "certification": {"@odata.type": "microsoft.graph.certification"},
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "disabledByMicrosoftStatus": "String",

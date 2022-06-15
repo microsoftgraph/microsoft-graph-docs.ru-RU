@@ -1,23 +1,23 @@
 ---
 title: Получение temporaryAccessPassAuthenticationMethodConfiguration
-description: Чтение свойств и связей временного объектаAccessPassAuthenticationMethodConfiguration.
-author: inbarckms
+description: Ознакомьтесь с подробными сведениями о политике временного прохода доступа для Azure AD клиента, представленного временным объектомAccessPassAuthenticationMethodConfiguration.
+author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1fb4b2959631b6e99ad2ea64da26a9c8de460bd6
-ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
+ms.openlocfilehash: 52e455f7a00cc2387752c8bb3b3f5e61599ba938
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971569"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093537"
 ---
 # <a name="get-temporaryaccesspassauthenticationmethodconfiguration"></a>Получение temporaryAccessPassAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение свойств и связей временного [объектаAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md), который представляет политику метода проверки подлинности временного прохода доступа для клиента Azure Active Directory (Azure AD).[](../resources/authenticationmethodspolicies-overview.md)
+Прочтите сведения о политике временного доступа для клиента Azure Active Directory (Azure AD), представленного временным [объектомAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "65971569"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
 
-Для делегированных сценариев администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев администратору требуется одна из следующих [Azure AD ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный читатель
 * Администратор политики проверки подлинности
@@ -41,7 +41,7 @@ ms.locfileid: "65971569"
 }
 -->
 ``` http
-GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -54,31 +54,52 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/Tem
 ## <a name="response"></a>Отклик
 В случае успешного `200 OK` выполнения этот метод возвращает код отклика и временный [объектAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) в теле отклика.
 
-
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_temporaryaccesspassauthenticationmethodconfiguration"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-temporaryaccesspassauthenticationmethodconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-temporaryaccesspassauthenticationmethodconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-temporaryaccesspassauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-temporaryaccesspassauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -91,7 +112,7 @@ Content-Type: application/json
     "defaultLength": 8,
     "minimumLifetimeInMinutes": 60,
     "maximumLifetimeInMinutes": 480,
-    "isUsableOnce": true,
+    "isUsableOnce": false,
     "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('TemporaryAccessPass')/microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [
         {

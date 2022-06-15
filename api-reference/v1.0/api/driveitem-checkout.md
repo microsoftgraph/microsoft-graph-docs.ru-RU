@@ -1,22 +1,22 @@
 ---
 author: learafa
-description: Ознакомьтесь с ресурсом driveItem, чтобы предотвратить редактирование документа другими, а изменения не будут видны до тех пор, пока документ не будет зарегистрирован.
-title: 'driveItem: проверка'
+description: Извлеките ресурс driveItem, чтобы запретить другим пользователям редактировать документ, и ваши изменения не будут видны до тех пор, пока документ не будет извлечен.
+title: 'driveItem: извлечение'
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fd10f488467047e4d5df3048b86fd98b21158f26
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 683e16aab6670c0ccc6beb1304176b0eb767b18c
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063463"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093270"
 ---
-# <a name="driveitem-checkout"></a>driveItem: проверка
+# <a name="driveitem-checkout"></a>driveItem: извлечение
 
 Пространство имен: microsoft.graph
 
-Ознакомьтесь с **ресурсом driveItem,** чтобы не допустить редактирования документа другими и не допустить, чтобы изменения были видны до тех пор, пока документ не будет [зарегистрирован.](driveitem-checkin.md)
+Извлеките **ресурс driveItem** , чтобы запретить другим пользователям редактировать документ и запретить отображать изменения до тех пор, пока документ не будет [извлечен](driveitem-checkin.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +46,7 @@ POST /users/{userId}/drive/items/{itemId}/checkout
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы возвращается вызов `204 No content` API.
+В случае успешного выполнения вызов API возвращается `204 No content`.
 
 ## <a name="example"></a>Пример
 
@@ -75,6 +75,10 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/checkout-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/checkout-item-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,26 +1,26 @@
 ---
-title: Настройка Application Proxy с помощью API Graph Майкрософт
-description: Настройте Application Proxy API Microsoft Graph для предоставления удаленного доступа и единого входа в локальные приложения.
+title: Настройка Application Proxy с помощью microsoft API Graph
+description: Предоставьте удаленный доступ и единый вход в локальные приложения, Application Proxy с помощью microsoft API Graph.
 author: FaithOmbongi
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 832060f2aed60311b8315a4511a467cc57847f47
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 6c28aeee7809ff71f04beae39a151f344eb05589
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060781"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095147"
 ---
 # <a name="configure-application-proxy-using-the-microsoft-graph-api"></a>Настройка Application Proxy с помощью microsoft API Graph
 
-Из этой статьи вы узнаете, как настроить Azure Active Directory (Azure AD) Application Proxy для приложения. Application Proxy обеспечивает безопасный удаленный доступ и единый вход в локальные веб-приложения. После настройки Application Proxy приложения пользователи могут получить доступ к локальным приложениям через внешний URL-адрес, портал Мои приложения или другие внутренние порталы приложений.
+Из этой статьи вы узнаете, как настроить Azure Active Directory (Azure AD) Application Proxy приложения. Application Proxy обеспечивает безопасный удаленный доступ и единый вход в локальные веб-приложения. После настройки Application Proxy приложения пользователи могут получить доступ к локальным приложениям через внешний URL-адрес, портал Мои приложения или другие внутренние порталы приложений.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- В этом руководстве предполагается, что вы уже установили соединитель и [](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites) выполнили необходимые условия для Application Proxy, чтобы соединители могли взаимодействовать со службами Azure AD.
-- В этом руководстве предполагается, что вы используете песочницу Microsoft Graph, но вы можете использовать Postman или создать собственное клиентское приложение, чтобы вызывать Microsoft Graph. Чтобы вызвать API Microsoft Graph в этом руководстве, используйте учетную запись с ролью глобального администратора и соответствующими разрешениями. Чтобы настроить разрешения в песочнице Microsoft Graph, выполните следующие действия.
-    1. Запустите [песочницу Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).
+- В этом руководстве предполагается, что вы уже установили соединитель и [](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites) выполнили предварительные требования для Application Proxy, чтобы соединители могли взаимодействовать с Azure AD службами.
+- В этом руководстве предполагается, что вы используете Graph Explorer, но можете использовать Postman или создать собственное клиентское приложение для вызова Microsoft Graph. Чтобы вызвать API microsoft Graph в этом руководстве, необходимо использовать учетную запись с ролью глобального администратора и соответствующими разрешениями. Выполните следующие действия, чтобы задать разрешения в Graph Explorer:
+    1. [Запустите Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
     2. Выберите вариант **Вход с помощью учетной записи Майкрософт** и войдите, используя учетную запись глобального администратора Azure AD. После успешного входа вы увидите данные учетной записи пользователя на панели слева.
     3. Щелкните значок параметров справа от сведений об учетной записи пользователя и нажмите **Выбор разрешений**.
 
@@ -435,13 +435,13 @@ No Content - 204
 ## <a name="see-also"></a>См. также
 
 - [Application Proxy](/azure/active-directory/manage-apps/what-is-application-proxy)
-- [application](/graph/api/resources/application?view=graph-rest-1.0)
-- [applicationTemplate: создание экземпляра](/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0)
-- [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta)
-- [connector](/graph/api/resources/connector?view=graph-rest-beta)
-- [connectorGroup](/graph/api/resources/connectorGroup?view=graph-rest-beta)
-- [implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0)
-- [локальные профили публикации](/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta)
-- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
-- [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
-- [user](/graph/api/resources/user?view=graph-rest-1.0)
+- [application](/graph/api/resources/application)
+- [applicationTemplate: создание экземпляра](/graph/api/applicationtemplate-instantiate)
+- [appRoleAssignment](/graph/api/resources/approleassignment)
+- [connector](/graph/api/resources/connector)
+- [connectorGroup](/graph/api/resources/connectorGroup)
+- [implicitGrantSettings](/graph/api/resources/implicitgrantsettings)
+- [локальные профили публикации](/graph/api/resources/onpremisespublishingprofile-root)
+- [servicePrincipal](/graph/api/resources/serviceprincipal)
+- [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon)
+- [user](/graph/api/resources/user)

@@ -5,18 +5,18 @@ author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 67f364c387554e972b7fa68d50ac6ee77be26ca9
-ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
+ms.openlocfilehash: aacb033a858255fe69a44a530ad37ee394fbbfc3
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971704"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095085"
 ---
 # <a name="temporaryaccesspassauthenticationmethod-resource-type"></a>Тип ресурса temporaryAccessPassAuthenticationMethod
 
 Пространство имен: microsoft.graph
 
-Представляет временный секретный код, зарегистрированный для пользователя. Временный секретный код — это ограниченный по времени секретный код, который служит надежными учетными данными и позволяет подключать учетные данные без пароля.
+Представляет временный секретный код, зарегистрированный для пользователя. Временный секретный код — это ограниченный по времени секретный код, который служит надежными учетными данными и позволяет подключать учетные данные без пароля. Доступность и параметры, которые можно настроить для **temporaryAccessPassAuthenticationMethod** , зависят от политики временных методов [access Pass](temporaryaccesspassauthenticationmethodconfiguration.md).
 
 ## <a name="methods"></a>Методы
 
@@ -37,9 +37,9 @@ ms.locfileid: "65971704"
 |lifetimeInMinutes|Int32|Время существования временного прохода доступа в минутах, начиная с **startDateTime**. Должно быть от 10 до 43200 включительно (эквивалентно 30 дням).|
 |methodUsabilityReason|Строка|Сведения о состоянии удобства использования (**isUsable**). Возможные причины: `EnabledByPolicy`, , `DisabledByPolicy`, `Expired`, `NotYetValid``OneTimeUsed`.|
 |startDateTime|DateTimeOffset|Дата и время, когда временный секретный код становится доступным для использования и когда **применяется режим isUsable**`true`.|
-|temporaryAccessPass|Строка|Временный секретный код, используемый для проверки подлинности. Возвращается только при создании нового временного объектаAccessPass; Скрыто в последующих операциях чтения и возвращается, как `null` в get.|
+|temporaryAccessPass|String|Временный секретный код, используемый для проверки подлинности. Возвращается только при создании нового объекта **temporaryAccessPassAuthenticationMethod** ; Скрыто в последующих операциях чтения и возвращается, как `null` в get.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

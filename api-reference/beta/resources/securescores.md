@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: security
 author: preetikr
-ms.openlocfilehash: f289ef7c91dbe7975970e679d1950a03498ab333
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 9565a507eac6d5c1be272749a45c6e4b234d5da2
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900130"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094097"
 ---
 # <a name="securescore-resource-type"></a>Тип ресурса secureScore
 
@@ -33,19 +33,21 @@ ms.locfileid: "65900130"
 
 |Свойство |Тип |Описание |
 |:--|:--|:--|
-|   azureTenantId   |   String  |   Строка GUID для идентификатора клиента.  |
-|   createdDateTime |   DateTimeOffset  |   Дата создания сущности.  |
-|   id  |   Строка  |   Сочетание azureTenantId_createdDateTime.   |
-|   licensedUserCount   |   Int32   |   Число лицензированных пользователей заданного клиента.    |
 |   activeUserCount |   Int32   |   Число активных пользователей заданного клиента.  |
-|   currentScore    |   Двойное с плавающей точкой  |   Текущая оценка клиента за указанную дату.    |
-|   maxScore |  Двойное с плавающей точкой  |   Максимально возможная оценка клиента в указанную дату.    |
-|   enabledServices |   Коллекция String   |   Предоставляемые корпорацией Майкрософт службы для клиента (например, Exchange Online, Skype, Sharepoint).   |
 |   averageComparativeScores |  [Коллекция averageComparativeScore](averagecomparativescore.md)    |Средняя оценка по различным областям (например, среднее по отрасли, среднее по рабочим местам) и категории элементов управления (удостоверение, данные, устройство, приложения, инфраструктура) в этой области. |
+|   azureTenantId   |   String  |   Строка GUID для идентификатора клиента.  |
 |   controlScores | [Коллекция controlScore](controlscore.md)  |   Содержит оценки клиентов для набора элементов управления.   |
+|   createdDateTime |   DateTimeOffset  |   Дата создания сущности.  |
+|   currentScore    |   Двойное с плавающей точкой  |   Текущая оценка клиента за указанную дату.    |
+|   enabledServices |   Коллекция String   |   Предоставляемые корпорацией Майкрософт службы для клиента (например, Exchange online, Skype, SharePoint).   |
+|   id  |   String  |   Сочетание azureTenantId_createdDateTime.   |
+|   licensedUserCount   |   Int32   |   Число лицензированных пользователей заданного клиента.    |
+|   maxScore |  Двойное с плавающей точкой  |   Максимально возможная оценка клиента в указанную дату.    |
 
 
-## <a name="relationships"></a>Отношения
+
+
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -63,20 +65,19 @@ ms.locfileid: "65900130"
 
 ```json
 {
-  "id": "String",
-  "azureTenantId": "Guid",
-  "createdDate": "DateTimeOffset",
-  "licensedUserCount": "Int32",
   "activeUserCount": "Int32",
-  "currentScore": "Int32",
-  "maxScore": "Int32",
-  "averageScore": "Double",
-  "enabledServices": "Collection(string)",
   "averageComparativeScores": "Collection(microsoft.graph.SecureScore.averageComparativeScores)",
+  "averageScore": "Double",
+  "azureTenantId": "Guid",
   "controlScores": "Collection(microsoft.graph.SecureScore.controlScores)",
-  "createdDateTime": "2019-02-07T20:33:53.156Z"
+  "createdDate": "DateTimeOffset",
+  "createdDateTime": "2019-02-07T20:33:53.156Z",
+  "currentScore": "Int32",
+  "enabledServices": "Collection(string)",
+  "id": "String",
+  "licensedUserCount": "Int32",
+  "maxScore": "Int32"
 }
-
 ```
 
 

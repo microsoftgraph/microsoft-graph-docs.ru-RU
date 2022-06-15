@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: rkarim-ms
-ms.openlocfilehash: eb0d0d8327851a9b8d18cf4d86af22099df4a2df
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 7574a78f364958401421cff1af2b2c8ca92790a9
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399546"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66092591"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>Отмена governanceRoleAssignmentRequest
 
@@ -30,7 +30,7 @@ ms.locfileid: "65399546"
 | Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ### <a name="azure-ad"></a>Azure AD
@@ -38,7 +38,7 @@ ms.locfileid: "65399546"
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ### <a name="groups"></a>Группы
@@ -46,7 +46,7 @@ ms.locfileid: "65399546"
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -104,6 +104,10 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/cancel-governanceroleassignmentrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/cancel-governanceroleassignmentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

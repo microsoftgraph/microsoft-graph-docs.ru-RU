@@ -1,16 +1,16 @@
 ---
 title: Обновление bookingstaffmember
-description: Обновление свойств bookingStaffMember в указанном bookingbusiness.
+description: Обновите свойства объекта bookingStaffMember в указанном bookingbusiness.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: e1bbffa45608254673cac67cffce9c0c1605dd5b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a44ba8d8ca373107e37a8c77b19b604661558144
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124113"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094257"
 ---
 # <a name="update-bookingstaffmember"></a>Обновление bookingstaffmember
 
@@ -18,7 +18,7 @@ ms.locfileid: "62124113"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств [bookingStaffMember](../resources/bookingstaffmember.md) в указанном [bookingBusiness](../resources/bookingbusiness.md).
+Обновите свойства [объекта bookingStaffMember](../resources/bookingstaffmember.md) в указанном [bookingBusiness](../resources/bookingbusiness.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -36,27 +36,27 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {код}. Обязательно.|
+| Авторизация  | Носитель {code}. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Логический|True означает, что если сотрудник является пользователем Microsoft 365, API Bookings использует личный календарь сотрудника в Microsoft 365, а также свойство **workingHours** для определения доступности. |
-|colorIndex|Int32|Определяет цвет для представления сотрудника. Цвет соответствует цветовой палитре на странице **Сведения о персонале** в приложении Bookings.|
-|displayName|Строка|Имя сотрудника, отображаемого клиентам.|
-|emailAddress|String|Адрес электронной почты сотрудника. Это может быть в том же Microsoft 365 клиенте, что и бизнес, или в другом домене электронной почты. Этот адрес электронной почты используется, если свойство **sendConfirmationsToOwner** имеет свойство true в политике планирования бизнеса.|
-|role|string| Роль сотрудника в бизнесе. Возможные значения: `guest`, `administrator`, `viewer`, `externalGuest`.|
-|timeZone|String|Часовой пояс сотрудника. Список возможных значений см. в [списке dateTimeTimeZone.](../resources/datetimetimezone.md)|
-|useBusinessHours|Логический|True означает, что доступность сотрудника определяется **свойством businessHours** бизнеса. False означает, что доступность определяется параметром **свойства workingHouse** сотрудника.|
-|workingHours|[коллекция bookingWorkHours](../resources/bookingworkhours.md)|Диапазон часов, каждый день недели, когда сотрудник доступен для бронирования.|
+|availabilityIsAffectedByPersonalCalendar|Boolean|Значение true означает, что если сотрудник является Microsoft 365 пользователем, API Bookings использует личный календарь сотрудника в Microsoft 365 а также свойство **workingHours** для определения доступности. |
+|colorIndex|Int32|Определяет цвет, представляющий сотрудника. Цвет соответствует цветовой палитре на странице **сведений** о персонале в приложении Bookings.|
+|displayName|Строка|Имя сотрудника, отображаемое клиентам.|
+|emailAddress|String|Адрес электронной почты сотрудника. Он может быть в том же Microsoft 365, что и бизнес, или в другом домене электронной почты. Этот адрес электронной почты используется, если свойство **sendConfirmationsToOwner** имеет значение true в политике планирования бизнеса.|
+|role|string| Роль сотрудника в организации. Возможные значения: `guest`, `administrator`, `viewer`, `externalGuest`.|
+|timeZone|String|Часовой пояс сотрудника. Список возможных значений см. в [разделе dateTimeTimeZone](../resources/datetimetimezone.md).|
+|useBusinessHours|Boolean|Значение true означает, что доступность сотрудника определяется **свойством businessHours** компании. Значение false означает, что доступность определяется параметром свойства **workingHouse** сотрудника.|
+|workingHours|[Коллекция bookingWorkHours](../resources/bookingworkhours.md)|Диапазон часов каждый день недели, в течение которого сотрудник доступен для резервирования.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No content`. Метод не возвращает данные в теле отклика.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
-В следующем примере изменяется расписание сотрудников на отключение по понедельникам.
+В следующем примере расписание сотрудника изменяется на выходные понедельники.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -153,10 +153,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-bookingstaffmember-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-bookingstaffmember-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,22 +1,22 @@
 ---
 author: learafa
-description: Проверьте проверенный ресурс driveItem, который делает версию документа доступной для других.
+description: Возврат извлеченного ресурса driveItem, который делает версию документа доступной другим пользователям.
 title: 'driveItem: checkin'
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6c98cf8ced988a769b12726b5d2b8a0f60f33c05
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b628a482bebcf43205241afdc396c89159813d1c
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090665"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094667"
 ---
 # <a name="driveitem-checkin"></a>driveItem: checkin
 
 Пространство имен: microsoft.graph
 
-Проверьте проверенный **ресурс driveItem,** который делает версию документа доступной для других.
+Возврат извлеченного **ресурса driveItem** , который делает версию документа доступной другим пользователям.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -52,7 +52,7 @@ POST /users/{userId}/drive/items/{itemId}/checkin
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы возвращается вызов `204 No content` API.
+В случае успешного выполнения вызов API возвращается `204 No content`.
 
 ## <a name="example"></a>Пример
 
@@ -85,6 +85,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/checkin-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/checkin-item-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

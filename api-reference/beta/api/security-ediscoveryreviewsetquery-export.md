@@ -5,19 +5,19 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: aefa42a52c9b9619db9c3fd4c7a499d8961db39f
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 06562d6ecad6d099b656af00936924aaf53eccf5
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65946391"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095890"
 ---
 # <a name="ediscoveryreviewsetquery-export"></a>ediscoveryReviewSetQuery: экспорт
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Инициируйте экспорт из **запроса reviewSet** .  Дополнительные сведения см. в статье "Экспорт документов [из набора для проверки в Advanced eDiscovery"](/microsoft-365/compliance/export-documents-from-review-set).
+Инициируйте экспорт из **запроса reviewSet** .  Дополнительные сведения см. в разделе "Экспорт документов [из набора для проверки" Advanced eDiscovery](/microsoft-365/compliance/export-documents-from-review-set).
 
 
 ## <a name="permissions"></a>Разрешения
@@ -57,7 +57,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryRe
 |description|Строка| Описание экспорта |
 |azureBlobContainer|Строка| При экспорте в собственную учетную запись хранения Azure это URL-адрес контейнера. |
 |azureBlobToken|Строка| При экспорте в собственную учетную запись хранения Azure маркер SAS для URL-адреса контейнера. |
-|exportOptions|Строка|Задает параметры, которые могут управлять форматом экспорта. Возможные значения: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
+|exportOptions|String|Задает параметры, которые могут управлять форматом экспорта. Возможные значения: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
 |exportStructure|Строка| Параметры, которые контролирует структуру файлов и упаковку экспорта. Возможные значения: `none`, `directory`, `pst`.|
 
 
@@ -69,6 +69,8 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryRe
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "ediscoveryreviewsetquerythis.export"
@@ -85,6 +87,24 @@ Content-Type: application/json
     "exportStructure": "directory"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/ediscoveryreviewsetquerythisexport-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/ediscoveryreviewsetquerythisexport-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/ediscoveryreviewsetquerythisexport-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/ediscoveryreviewsetquerythisexport-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

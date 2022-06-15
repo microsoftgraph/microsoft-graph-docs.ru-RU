@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e64a08c5c3b70bbce3842111a93df8166485c3ac
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 52e962df12889c8ecc70fe52a7df0aaf274630f6
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336020"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093388"
 ---
 # <a name="remove-internalsponsors"></a>Удаление internalSponsors
 
 Пространство имен: microsoft.graph
 
-Удалите пользователя или группу из внутренних спонсоров подключенной организации. Внутренние [спонсоры](../resources/internalsponsors.md) — это набор пользователей, которые могут утверждать запросы от имени других пользователей из этой связанной организации.
+Удалите пользователя или группу из внутренних спонсоров подключенной организации. Внутренние [спонсоры](../resources/internalsponsors.md) — это набор пользователей, которые могут утверждать запросы от имени других пользователей из этой подключенной организации.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -77,12 +77,16 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement
 [!INCLUDE [sample-code](../includes/snippets/java/delete-internalsponsor-from-connectedorganization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-internalsponsor-from-connectedorganization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"

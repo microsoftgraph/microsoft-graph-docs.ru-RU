@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: f33b74157e8ec879f2f72233e410c7960851bc61
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: d40a267f32dd481d507fa168768402427509e5f4
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65946203"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66096257"
 ---
 # <a name="update-ediscoverycase"></a>Обновление ediscoveryCase
 Пространство имен: microsoft.graph.security
@@ -52,7 +52,7 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |description|Строка|Описание варианта.|
-|displayName|Строка|Имя регистра.|
+|displayName|String|Имя регистра.|
 |externalId|String|Номер внешнего обращения для ссылки на клиента.|
 
 ## <a name="response"></a>Отклик
@@ -63,6 +63,8 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_ediscoverycase"
@@ -77,6 +79,24 @@ Content-Type: application/json
     "description": "Updated description"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-ediscoverycase-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-ediscoverycase-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-ediscoverycase-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-ediscoverycase-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример ответа.

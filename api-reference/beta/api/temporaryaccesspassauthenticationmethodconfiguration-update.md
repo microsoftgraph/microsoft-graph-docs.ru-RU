@@ -1,23 +1,23 @@
 ---
 title: Обновление temporaryAccessPassAuthenticationMethodConfiguration
-description: Обновление свойств объекта temporaryAccessPassAuthenticationMethodConfiguration.
+description: Обновите политику временного прохода доступа для Azure AD клиента, представленного временным объектомAccessPassAuthenticationMethodConfiguration.
 author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8a81d7c55e67e7037bdc3c5bede73424d960695b
-ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
+ms.openlocfilehash: 23a250df8cb4b58e2654da867867eb96f4ef0641
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971009"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093047"
 ---
 # <a name="update-temporaryaccesspassauthenticationmethodconfiguration"></a>Обновление temporaryAccessPassAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновите свойства объекта [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) , который представляет политику метода проверки подлинности временного прохода доступа для клиента Azure AD.
+Обновите политику временного прохода доступа для Azure AD клиента, представленную временным [объектомAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,11 +28,10 @@ ms.locfileid: "65971009"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
 
-Для делегированных сценариев администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев администратору требуется одна из следующих [Azure AD ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Администратор политики проверки подлинности
 * Глобальный администратор
-
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,9 +52,10 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/T
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) в формате JSON со значениями полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-Все свойства объекта можно обновить. Список свойств см. в разделе [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md).
+Можно обновить все свойства и связи объекта. Список свойств и связей см. в [разделе temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md).
 
->**Примечание:** Свойство `@odata.type` со значением должно `#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration` быть включено в текст.
+> [!NOTE]
+> Свойство **@odata.type** со значением `#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration` должно быть включено в текст запроса.
 
 ## <a name="response"></a>Отклик
 
@@ -64,55 +64,20 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/T
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_temporaryaccesspassauthenticationmethodconfiguration"
 }
 -->
-``` http
-PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
+```http
+PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 Content-Type: application/json
 
 {
   "@odata.type":"#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
-  "state":"enabled",
-  "defaultLifetimeInMinutes":60,
-  "defaultLength":8,
-  "minimumLifetimeInMinutes":60,
-  "maximumLifetimeInMinutes":1440,"
-  isUsableOnce":false,
-  "includeTargets": [
-        {
-            "targetType": "group",
-            "id": "all_users",
-            "isRegistrationRequired": false,
-            "useForSignIn": true
-        }
-    ]
+  "isUsableOnce": true
 }
-
-
 ```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-temporaryaccesspassauthenticationmethodconfiguration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-temporaryaccesspassauthenticationmethodconfiguration-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-temporaryaccesspassauthenticationmethodconfiguration-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-temporaryaccesspassauthenticationmethodconfiguration-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Отклик
 <!-- {
@@ -120,6 +85,7 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+
+```http
 HTTP/1.1 204 No Content
 ```

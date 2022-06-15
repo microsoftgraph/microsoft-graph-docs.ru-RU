@@ -1,18 +1,18 @@
 ---
-title: Создание temporaryAccessPassAuthenticationMethod
+title: Создание temporaryAccessPassMethod
 description: Создайте новый временный объектAccessPassAuthenticationMethod для пользователя.
 author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5055f8631849b9942d6c47dad646b21ebeab4362
-ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
+ms.openlocfilehash: 2d0dbd6ecb3bf9e2aa260496d096ee6278b44539
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971736"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093348"
 ---
-# <a name="create-temporaryaccesspassauthenticationmethod"></a>Создание temporaryAccessPassAuthenticationMethod
+# <a name="create-temporaryaccesspassmethod"></a>Создание temporaryAccessPassMethod
 Пространство имен: microsoft.graph
 
 Создайте новый [временный объектAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) для пользователя. У пользователя может быть только один временный секретный код, который можно использовать в течение указанного времени существования. Если пользователю требуется новый временный секретный код, пока текущий временный секретный код действителен, администратор может создать новый временный секретный код для пользователя, предыдущий временный проход доступа будет удален и создан новый временный секретный код.
@@ -27,9 +27,9 @@ ms.locfileid: "65971736"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | UserAuthenticationMethod.ReadWrite.All |
+| Приложение                            | UserAuthenticationMethod.ReadWrite.All |
 
-В делегированных сценариях, когда администратор действует с другим пользователем, администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+В делегированных сценариях, когда администратор действует с другим пользователем, администратору требуется одна из следующих Azure AD [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 * глобальный администратор;
 * привилегированный администратор проверки подлинности;
 * администратор проверки подлинности.
@@ -59,7 +59,7 @@ POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 |:---|:---|:---|
 |isUsableOnce|Boolean|Необязательное свойство. Определяет, ограничен ли проход однофакторным использованием. Если `true`этот проход можно использовать один раз; если `false`этот проход можно использовать несколько раз в течение времени **существования ПараметрInMinutes** . Многопользовательский временный секретный код (`isUsableOnce = false`) можно создать и использовать для входа только в том случае, если это разрешено политикой метода проверки подлинности временного  [прохода доступа](../resources/temporaryaccesspassauthenticationmethodconfiguration.md).|
 |lifetimeInMinutes|Int32|Необязательный. Время существования temporaryAccessPass в минутах, начиная со времени создания или при значении startDateTime, если оно задано. Должно быть от 10 до 43200 (эквивалентно 30 дням). Если этот параметр не указан, применяется параметр **defaultLifetimeInMinutes** в политике метода проверки подлинности [временного](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) прохода доступа. |
-|startDateTime|DateTimeOffset|Необязательный параметр. Дата и время, когда temporaryAccessPass становится доступным для использования. Если этот параметр не указан, временный секретный код доступен для использования сразу после его создания.| 
+|startDateTime|DateTimeOffset|Необязательно. Дата и время, когда temporaryAccessPass становится доступным для использования. Если этот параметр не указан, временный секретный код доступен для использования сразу после его создания.| 
 
 ## <a name="response"></a>Отклик
 
@@ -68,6 +68,8 @@ POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_temporaryaccesspassauthenticationmethod_from_"
@@ -83,6 +85,24 @@ Content-Type: application/json
     "isUsableOnce": false
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-temporaryaccesspassauthenticationmethod-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-temporaryaccesspassauthenticationmethod-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-temporaryaccesspassauthenticationmethod-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-temporaryaccesspassauthenticationmethod-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

@@ -5,12 +5,12 @@ author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: a84cfd1bf2cdc0cae6a977ea7b31ed3b7b2c9929
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 4518a6b4f3b05e237e4a44c06bed12901369879b
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65397553"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094160"
 ---
 # <a name="managedtenant-resource-type"></a>Тип ресурса managedTenant
 
@@ -42,6 +42,7 @@ API Microsoft 365 Lighthouse определяется в подименю OData.
 |managementActionTenantDeploymentStatuses|[Коллекция microsoft.graph.managedTenants.managementActionTenantDeploymentStatus](../resources/managedtenants-managementactiontenantdeploymentstatus.md)|Состояние действий управления на уровне клиента в управляемых клиентах.|
 |managementIntents|[Коллекция microsoft.graph.managedTenants.managementIntent](../resources/managedtenants-managementintent.md)|Коллекция базовых намерений управления для управляемых клиентов.|
 |managementTemplates|[Коллекция microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md)|Коллекция шаблонов базового управления для управляемых клиентов.|
+|myRoles|[Коллекция microsoft.graph.managedTenants.myRole](../resources/managedtenants-myrole.md)|Коллекция назначений ролей вошедаму пользователю для управляемого клиента.|
 |tenantGroups|[Коллекция microsoft.graph.managedTenants.tenantGroup](../resources/managedtenants-tenantgroup.md)|Коллекция логических групп управляемых клиентов, используемых платформой управления с несколькими клиентами.|
 |Арендаторов|[Коллекция microsoft.graph.managedTenants.tenant](../resources/managedtenants-tenant.md)|Коллекция клиентов, связанных с управляющей сущностью.|
 |tenantsCustomizedInformation|[Коллекция microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md)|Коллекция настраиваемых сведений на уровне клиента в управляемых клиентах.|
@@ -51,7 +52,7 @@ API Microsoft 365 Lighthouse определяется в подименю OData.
 |windowsDeviceMalwareStates|[Коллекция microsoft.graph.managedTenants.windowsDeviceMalwareState](../resources/managedtenants-windowsdevicemalwarestate.md)|Состояние вредоносных программ для Windows устройств, зарегистрированных в Microsoft Endpoint Manager, в управляемых клиентах.|
 |windowsProtectionStates|[Коллекция microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md)|Состояние защиты для Windows устройств, зарегистрированных в Microsoft Endpoint Manager, в управляемых клиентах.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

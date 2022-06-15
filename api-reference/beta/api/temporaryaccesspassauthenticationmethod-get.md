@@ -1,23 +1,23 @@
 ---
 title: Получение temporaryAccessPassAuthenticationMethod
-description: Чтение свойств и связей временного объектаAccessPassAuthenticationMethod.
+description: Получение объекта temporaryAccessPassAuthenticationMethod пользователя.
 author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2e14752159924f6bc8d293bc592b23e05c497eac
-ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
+ms.openlocfilehash: ae0306b18688367679d5adfbb3334b3f16f23757
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971016"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095673"
 ---
 # <a name="get-temporaryaccesspassauthenticationmethod"></a>Получение temporaryAccessPassAuthenticationMethod
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение отдельного временного  [объектаAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) пользователя.
+Получение отдельного временного [объектаAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -36,9 +36,9 @@ ms.locfileid: "65971016"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-В делегированных сценариях, когда администратор действует с другим пользователем, администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+В делегированных сценариях, когда администратор действует с другим пользователем, администратору требуется одна из следующих Azure AD [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 * Глобальный администратор
 * Глобальный читатель
 * привилегированный администратор проверки подлинности;
@@ -67,51 +67,22 @@ GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods/{t
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения `200 OK` этот метод возвращает код отклика и временный [объектAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) в теле отклика.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и коллекцию временных [объектовAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) в теле отклика. Этот API вернет только один объект в коллекции, так как у пользователя может быть только один метод временного прохода доступа.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_temporaryaccesspassauthenticationmethod"
+  "name": "get_temporaryAccessPassAuthenticationMethod"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/temporaryAccessPassMethods/30fd0dfc-0dfc-30fd-fc0d-fd30fc0dfd30
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/temporaryAccessPassMethods/05267842-25b2-4b21-8abd-8e4982796f7f
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-temporaryaccesspassauthenticationmethod-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-temporaryaccesspassauthenticationmethod-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-temporaryaccesspassauthenticationmethod-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-temporaryaccesspassauthenticationmethod-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-temporaryaccesspassauthenticationmethod-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-temporaryaccesspassauthenticationmethod-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 ### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -123,16 +94,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",
-    "id": "30fd0dfc-0dfc-30fd-fc0d-fd30fc0dfd30",
+  "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",
+    "id": "6f1967b7-15e8-4935-ac26-d50770ed07a7",
     "temporaryAccessPass": null,
-    "createdDateTime": "String (timestamp)",
-    "startDateTime": "String (timestamp)",
-    "lifetimeInMinutes": "Integer",
-    "isUsableOnce": "Boolean",
-    "isUsable": "Boolean",
-    "methodUsabilityReason": "String"
-  }
+    "createdDateTime": "2022-06-02T16:21:09.5893903Z",
+    "startDateTime": "2022-06-05T00:00:00Z",
+    "lifetimeInMinutes": 60,
+    "isUsableOnce": false,
+    "isUsable": false,
+    "methodUsabilityReason": "NotYetValid"
 }
 ```

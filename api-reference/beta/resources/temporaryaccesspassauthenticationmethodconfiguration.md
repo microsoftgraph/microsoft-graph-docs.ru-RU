@@ -1,43 +1,43 @@
 ---
 title: Тип ресурса temporaryAccessPassAuthenticationMethodConfiguration
-description: Представляет политику методов проверки подлинности временного прохода доступа.
+description: Представляет политику методов проверки подлинности временного прохода доступа, которая определяет параметры конфигурации и пользователей или группы, которым разрешено использовать метод проверки подлинности.
 author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 073e89cccf4f63760bcf7bcc79a28c4a0c6f7e58
-ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
+ms.openlocfilehash: fbcaa5a1d941a29a12a54699021a7e6ee1b25c41
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971212"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094076"
 ---
 # <a name="temporaryaccesspassauthenticationmethodconfiguration-resource-type"></a>Тип ресурса temporaryAccessPassAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет политику методов проверки подлинности временного прохода доступа. Политика методов проверки подлинности определяет параметры конфигурации и пользователей или группы, которым разрешено использовать метод проверки подлинности.
+Представляет политику методов проверки подлинности временного прохода доступа, которая определяет параметры конфигурации и пользователей или группы, которым разрешено использовать метод проверки подлинности [временного прохода доступа](temporaryaccesspassauthenticationmethod.md).
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Получение](../api/temporaryaccesspassauthenticationmethodconfiguration-get.md)|[temporaryaccesspassauthenticationmethodconfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md)|Чтение свойств и связей объекта **temporaryaccesspassauthenticationmethodconfiguration** .|
-|[Обновление](../api/temporaryaccesspassauthenticationmethodconfiguration-update.md)|[temporaryaccesspassauthenticationmethodconfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md)|Обновление свойств объекта **temporaryaccesspassauthenticationmethodconfiguration** .|
-|[Удаление](../api/temporaryaccesspassauthenticationmethodconfiguration-delete.md)|Нет|Возвращает объект **temporaryaccesspassauthenticationmethodconfiguration** в конфигурацию по умолчанию.|
+|[Получение](../api/temporaryaccesspassauthenticationmethodconfiguration-get.md)|[temporaryaccesspassauthenticationmethodconfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md)|Чтение свойств и связей **временного объектаAccessPassAuthenticationMethodConfiguration** .|
+|[Обновление](../api/temporaryaccesspassauthenticationmethodconfiguration-update.md)|Нет|Обновление свойств объекта **temporaryAccessPassAuthenticationMethodConfiguration** .|
+|[Удаление](../api/temporaryaccesspassauthenticationmethodconfiguration-delete.md)|Нет|Возвращает объект **temporaryAccessPassAuthenticationMethodConfiguration** в конфигурацию по умолчанию.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор политики метода проверки подлинности.|
-|minimumLifetimeInMinutes|Целое|Минимальное время существования в минутах для любого временного приложенияAccessPass, созданного в клиенте. Значение может быть в диапазоне от 10 до 43200 минут (эквивалентно 30 дням).|
-|maximumLifetimeInMinutes|Целое|Максимальное время существования в минутах для любого временного приложенияAccessPass, созданного в клиенте. Значение может быть в диапазоне от 10 до 43200 минут (эквивалентно 30 дням).|
-|defaultLifetimeInMinutes|int|Время существования по умолчанию (в минутах) для временного приложенияAccessPass. Значение может быть в диапазоне от minimumLifetimeInMinutes до maximumLifetimeInMinutes.|
-|defaultLength|int|Длина по умолчанию (в символах) временного объектаAccessPass от 8 до 48 символов.|
-|isUsableOnce|Boolean   |Если `true`все проходы в клиенте будут ограничены однонастройным использованием. Если `false`, то можно создать клиент для однократного или многократного использования.|
-|state|authenticationMethodState|Возможные значения: `enabled`, `disabled`.|
+|defaultLength|Целое|Длина по умолчанию в символах объекта временного access Pass. Должен содержать от 8 до 48 символов.|
+|defaultLifetimeInMinutes|Целое|Время существования по умолчанию в минутах для временного прохода доступа. Значение может быть любым целым числом между **minimumLifetimeInMinutes** и **maximumLifetimeInMinutes**.|
+|id|String|Идентификатор политики метода проверки подлинности. Наследуется от [сущности](entity.md).|
+|isUsableOnce|Boolean   |Если `true`все проходы в клиенте будут ограничены однонастройным использованием. Если `false`этот параметр передается клиенту, его можно создать для одноразового использования или повторного использования.|
+|minimumLifetimeInMinutes|Целое|Минимальное время существования в минутах для любого временного прохода доступа, созданного в клиенте. Значение может быть в диапазоне от 10 до 43200 минут (эквивалентно 30 дням).|
+|maximumLifetimeInMinutes|Целое|Максимальное время существования в минутах для любого временного прохода доступа, созданного в клиенте. Значение может быть в диапазоне от 10 до 43200 минут (эквивалентно 30 дням).|
+|state|authenticationMethodState|Включен ли в клиенте метод временного сквозного доступа. Возможные значения: `enabled`, `disabled`. Наследуется [от authenticationMethodConfiguration](authenticationmethodconfiguration.md). |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |includeTargets|[Коллекция authenticationMethodTarget](../resources/authenticationmethodtarget.md)|Коллекция пользователей или групп, которым разрешено использовать метод проверки подлинности.|
@@ -61,6 +61,7 @@ ms.locfileid: "65971212"
   "defaultLength": "Integer",
   "minimumLifetimeInMinutes": "Integer",
   "maximumLifetimeInMinutes": "Integer",
-  "isUsableOnce": "Boolean"
+  "isUsableOnce": "Boolean",
+  "includeTargets": [ { "@odata.type": "microsoft.graph.authenticationMethodTarget" } ]
 }
 ```

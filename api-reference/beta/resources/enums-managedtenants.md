@@ -1,37 +1,39 @@
 ---
-title: Значения переумерия управления с несколькими арендаторами
-description: Значения Graph управления с несколькими арендаторами
+title: Значения перечисления управления несколькими клиентами
+description: Значения Graph управления несколькими клиентами
 author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: enumTypes
-ms.openlocfilehash: 7218824959465cb7740953f837da0e3e630ec449
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 9b93794e763025b409ff00c0a2b5d13909ca705d
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321626"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095953"
 ---
-# <a name="multi-tenant-management-enumeration-values"></a>Значения переумерия управления с несколькими арендаторами
+# <a name="multi-tenant-management-enumeration-values"></a>Значения перечисления управления несколькими клиентами
 
-### <a name="delegatedprivilegestatus-values"></a>delegatedPrivilegeStatus values
+### <a name="delegatedprivilegestatus-values"></a>Значения delegatedPrivilegeStatus
 
 |Member|
 |:---|
 |Нет|
 |delegatedAdminPrivileges|
 |unknownFutureValue|
+|granularDelegatedAdminPrivileges|
+|delegatedAndGranularDelegetedAdminPrivileges|
 
-### <a name="managementactionstatus-values"></a>значения managementActionStatus
+### <a name="managementactionstatus-values"></a>Значения managementActionStatus
 
 |Member|
 |:---|
 |toAddress|
-|завершено|
+|Завершена|
 |error|
-|timeOut|
-|inProgress|
-|запланированные|
+|Времени ожидания|
+|Inprogress|
+|Планируется|
 |resolvedBy3rdParty|
 |resolvedThroughAlternateMitigation|
 |riskAccepted|
@@ -41,12 +43,12 @@ ms.locfileid: "61321626"
 
 |Member|
 |:---|
-|настраиваемый|
+|Пользовательские|
 |devices|
-|удостоверение|
+|Идентичности|
 |unknownFutureValue|
 
-### <a name="managementparametervaluetype-values"></a>значения managementParameterValueType
+### <a name="managementparametervaluetype-values"></a>Значения managementParameterValueType
 
 |Member|
 |:---|
@@ -54,23 +56,23 @@ ms.locfileid: "61321626"
 |integer|
 |логический|
 |guid|
-|stringCollection|
+|Stringcollection|
 |integerCollection|
 |booleanCollection|
 |guidCollection|
 |unknownFutureValue|
 
-### <a name="tenantonboardingstatus-values"></a>значения tenantOnboardingStatus
+### <a name="tenantonboardingstatus-values"></a>Значения tenantOnboardingStatus
 
 |Member|
 |:---|
-|неугомонные|
+|Недопустимые|
 |inProcess|
-|active|
-|неактивно|
+|Активных|
+|Неактивные|
 |unknownFutureValue|
 
-### <a name="tenantonboardingeligibilityreason-values"></a>значения tenantOnboardingEligibilityReason
+### <a name="tenantonboardingeligibilityreason-values"></a>Значения tenantOnboardingEligibilityReason
 
 |Member|
 |:---|
@@ -81,29 +83,29 @@ ms.locfileid: "61321626"
 |license|
 |unknownFutureValue|
 
-### <a name="workloadactioncategory-values"></a>workloadActionCategory values
+### <a name="workloadactioncategory-values"></a>Значения workloadActionCategory
 
 |Member|
 |:---|
-|автоматизировано|
+|Автоматизированные|
 |Вручную|
 |unknownFutureValue|
 
-### <a name="workloadactionstatus-values"></a>значения workloadActionStatus
+### <a name="workloadactionstatus-values"></a>Значения workloadActionStatus
 
 |Member|
 |:---|
 |toAddress|
-|завершено|
+|Завершена|
 |error|
-|timeOut|
-|inProgress|
+|Времени ожидания|
+|Inprogress|
 |unknownFutureValue|
 
-### <a name="workloadonboardingstatus-values"></a>значения workloadOnboardingStatus
+### <a name="workloadonboardingstatus-values"></a>Значения workloadOnboardingStatus
 
 |Member|
 |:---|
 |notOnboarded|
-|onboarded|
+|подключено|
 |unknownFutureValue|

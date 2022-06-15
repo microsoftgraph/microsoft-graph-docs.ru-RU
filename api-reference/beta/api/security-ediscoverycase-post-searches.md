@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: b80c3a0dc2d4d43b99abb7ccc4c9e41a8f9b8df5
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 9ac384360334d4f98d8b37ff766df887daae6e64
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65946160"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094924"
 ---
 # <a name="create-ediscoverysearch"></a>Создание ediscoverySearch
 Пространство имен: microsoft.graph.security
@@ -51,10 +51,10 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя поиска. Обязательный|
+|displayName|Строка|Отображаемое имя поиска. Обязательный|
 |description|Строка|Описание поиска (необязательно).|
-|contentQuery|Строка|Строка запроса, используемая для поиска. Строка запроса в формате KQL (язык запросов ключевых слов). Необязательный|
-|dataSourceScopes|String|Возможность поиска по всем почтовым ящикам или сайтам в клиенте. Допустимые значения: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`. Необязательный параметр.|
+|contentQuery|Строка|Строка запроса, используемая для поиска. Строка запроса в KQL (язык запросов ключевых слов). Необязательный|
+|dataSourceScopes|Строка|Возможность поиска по всем почтовым ящикам или сайтам в клиенте. Допустимые значения: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
 
@@ -64,6 +64,8 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_ediscoverysearch_from_"
@@ -87,6 +89,24 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoverysearch-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-ediscoverysearch-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-ediscoverysearch-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-ediscoverysearch-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

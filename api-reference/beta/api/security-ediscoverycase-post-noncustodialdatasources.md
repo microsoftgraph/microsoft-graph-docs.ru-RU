@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 77c763fa5e14e795055976ef74fb315c10a96cb7
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 5fb5dafb7fac81632697d6822d621a6e5f248ad1
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65946473"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66092908"
 ---
 # <a name="create-ediscoverynoncustodialdatasource"></a>Создание объекта ediscoveryNoncustodialDataSource
 Пространство имен: microsoft.graph.security
@@ -51,7 +51,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/noncustodialDataSources
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Datasource|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Обязательный. UserSource или siteSource. Для userSource используйте "dataSource": { "@odata.type": "microsoft.graph.security.userSource", "email" : "SMTP address"}.  Для источника сайта используйте "dataSource": { "@odata.type": "microsoft.graph.security.siteSource", "site@odata.bind" : "siteId" }, где siteId может быть производным от URL-адреса сайта, `https://contoso.sharepoint.com/sites/HumanResources`например, запрос Microsoft Graph `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources`будет . Идентификатор — это первый GUID, указанный в поле идентификатора. Кроме того, можно использовать webUrl напрямую, "dataSource": {"@odata.type": "microsoft.graph.security.siteSource","site": {"webUrl": `https://m365x809305.sharepoint.com/sites/Design-topsecret`}}
+|Datasource|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Обязательный аргумент. UserSource или siteSource. Для userSource используйте "dataSource": { "@odata.type": "microsoft.graph.security.userSource", "email" : "SMTP address"}.  Для источника сайта используйте "dataSource": { "@odata.type": "microsoft.graph.security.siteSource", "site@odata.bind": "siteId" }, где siteId может быть получен из URL-адреса сайта, `https://contoso.sharepoint.com/sites/HumanResources`например, запрос Microsoft Graph будет `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources`. Идентификатор — это первый GUID, указанный в поле идентификатора. Кроме того, можно использовать webUrl напрямую, "dataSource": {"@odata.type": "microsoft.graph.security.siteSource","site": {"webUrl": `https://m365x809305.sharepoint.com/sites/Design-topsecret`}}
 
 
 
@@ -63,6 +63,8 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/noncustodialDataSources
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_ediscoverynoncustodialdatasource_from_"
@@ -81,6 +83,24 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoverynoncustodialdatasource-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-ediscoverynoncustodialdatasource-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-ediscoverynoncustodialdatasource-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-ediscoverynoncustodialdatasource-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

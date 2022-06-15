@@ -1,16 +1,16 @@
 ---
 title: Создание подписки
-description: Подписывает приложение прослушивателя на получение уведомлений об изменениях при изменении данных в ресурсе Microsoft Graph.
+description: Подписывает приложение прослушивателя на получение уведомлений об изменениях при изменении Graph ресурсов Майкрософт.
 ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 4e06b0ed81a85de2e49c97d739073cadcdaf7fe1
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 78e8229a2633554c4f544e50196b87a8719bbe79
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900249"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66092557"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -32,7 +32,7 @@ ms.locfileid: "65900249"
 
 В зависимости от ресурса и типа требующегося разрешения (делегированное или для приложения) разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Чтобы узнать больше, в том числе, [как соблюдать осторожность ](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений, найдите следующие разрешения в [Разрешениях](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Application |
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
 |:-----|:-----|:-----|:-----|
 |[baseTask](../resources/basetask.md) (не рекомендуется) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Не поддерживается | Не поддерживается | CallRecords.Read.All  |
@@ -57,13 +57,13 @@ ms.locfileid: "65900249"
 |[group](../resources/group.md) | Group.Read.All | Не поддерживается | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All | Не поддерживается | Не поддерживается |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Не поддерживается | Sites.ReadWrite.All |
-|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.Read |
 |[собрание по сети](../resources/onlinemeeting.md) | Не поддерживается | Не поддерживается | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 |[presence](../resources/presence.md) | Presence.Read.All | Не поддерживается | Не поддерживается |
 |[printer](../resources/printer.md) | Не поддерживается | Не поддерживается | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается | Не поддерживается | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
-|[команда](../resources/team.md) (/teams — все команды в организации) | Не поддерживается | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
+|[teams](../resources/team.md) (/teams — все команды в организации) | Не поддерживается | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
 |[team](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
@@ -84,7 +84,7 @@ OneDrive для бизнеса и SharePoint поддерживают отпра
 
 ### <a name="contact-event-and-message"></a>contact, event и message
 
-Вы можете подписаться на изменения в ресурсах контактов **, событий** или сообщений Outlook и при необходимости указать в полезных данных запроса POST, следует ли включать зашифрованные данные ресурсов в уведомления.
+Вы можете подписаться на изменения в Outlook контактов **, событий** или сообщений  и при необходимости указать в полезных данных запроса POST, следует ли включать зашифрованные данные ресурсов в уведомления. 
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 

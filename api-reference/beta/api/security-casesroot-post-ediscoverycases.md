@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 319772b782a962d90c42b0ecf00baa728b8928fb
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 3092ffba2f3172f559ac8ab9d1d8a2630d827e57
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65946348"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095547"
 ---
 # <a name="create-ediscoverycase"></a>Создание ediscoveryCase
 Пространство имен: microsoft.graph.security
@@ -20,7 +20,7 @@ ms.locfileid: "65946348"
 Создайте объект [ediscoveryCase](../resources/security-ediscoverycase.md) .
 
 >[!NOTE]
-> Этот API создает дело обнаружения электронных данных (Premium) только в новом формате дела. Дополнительные сведения о новом формате дела в eDiscovery см. в статье "Использование нового формата дела [в eDiscovery (Premium)"](/microsoft-365/compliance/advanced-ediscovery-new-case-format).
+> Этот API создает только дело обнаружения электронных данных (Premium) с использованием нового формата дела. Дополнительные сведения о новом формате дела в eDiscovery см. в разделе "Использование нового формата дела [в eDiscovery (Premium)"](/microsoft-365/compliance/advanced-ediscovery-new-case-format).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -53,8 +53,8 @@ POST /security/cases/ediscoveryCases
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя дела обнаружения электронных данных. Обязательный.|
-|description|Строка|Описание варианта. Необязательный параметр.|
+|displayName|Строка|Имя дела обнаружения электронных данных. Обязательный.|
+|description|Строка|Описание варианта. Необязательно.|
 |externalId|String|Номер внешнего обращения для ссылки на клиента. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
@@ -65,6 +65,8 @@ POST /security/cases/ediscoveryCases
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_ediscoverycase_from_"
@@ -80,6 +82,24 @@ Content-Type: application/json
     "externalId": "324516"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoverycase-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-ediscoverycase-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-ediscoverycase-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-ediscoverycase-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

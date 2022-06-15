@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 0ad8113a34bd9ecf70b7e6c0d110fad2bb3e9314
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 34ed4dedde55b3bdb545dffe70894a75339dc0be
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65946384"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093712"
 ---
 # <a name="update-ediscoveryreviewtag"></a>Обновление ediscoveryReviewTag
 Пространство имен: microsoft.graph.security
@@ -50,8 +50,8 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags/{ediscoveryReviewT
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя тега. Обязательный.|
-|description|Строка|Описание тега. Необязательный параметр.|
+|displayName|Строка|Отображаемое имя тега. Обязательный.|
+|description|Строка|Описание тега. Необязательно.|
 |childSelectability|childSelectability|Это значение определяет, представляет ли пользовательский интерфейс теги как флажки или группу переключателей. Возможные значения: `One`, `Many`. Обязательный.|
 
 
@@ -63,6 +63,8 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags/{ediscoveryReviewT
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_ediscoveryreviewtag"
@@ -76,6 +78,24 @@ PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-c
     "description": "Use Graph API to create tags (updated)"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-ediscoveryreviewtag-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-ediscoveryreviewtag-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-ediscoveryreviewtag-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-ediscoveryreviewtag-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

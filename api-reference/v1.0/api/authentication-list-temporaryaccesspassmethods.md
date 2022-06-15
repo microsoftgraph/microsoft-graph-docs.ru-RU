@@ -1,18 +1,18 @@
 ---
-title: Перечисление temporaryAccessPassAuthenticationMethods
+title: Перечисление temporaryAccessPassMethods
 description: Получение списка временных объектовAccessPassAuthenticationMethod для пользователя.
 author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a0620009fbc2266f7dade86b525d696eb0f58415
-ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
+ms.openlocfilehash: a58fc6a85f83734c50ddd8d47a1edc8775952d29
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971707"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093418"
 ---
-# <a name="list-temporaryaccesspassauthenticationmethods"></a>Перечисление temporaryAccessPassAuthenticationMethods
+# <a name="list-temporaryaccesspassmethods"></a>Перечисление temporaryAccessPassMethods
 Пространство имен: microsoft.graph
 
 Получение списка временных [объектовAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) пользователя и их свойств. Этот API вернет только один объект в коллекции, так как у пользователя может быть только один метод временного прохода доступа.
@@ -34,7 +34,7 @@ ms.locfileid: "65971707"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 
 В делегированных сценариях, когда администратор действует с другим пользователем, администратору требуется одна из следующих [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
@@ -74,6 +74,8 @@ GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_temporaryaccesspassauthenticationmethod"
@@ -82,6 +84,24 @@ GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/temporaryAccessPassMethods
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-temporaryaccesspassauthenticationmethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-temporaryaccesspassauthenticationmethod-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-temporaryaccesspassauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-temporaryaccesspassauthenticationmethod-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

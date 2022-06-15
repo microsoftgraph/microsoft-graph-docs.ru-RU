@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: rkarim-ms
-ms.openlocfilehash: 4cefce6d174fff53527ecef0cf921839157fe355
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 8f8d004f67dd14917067c250a66155525b26f2f5
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398776"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093648"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Обновление governanceRoleAssignmentRequests
 
@@ -32,7 +32,7 @@ ms.locfileid: "65398776"
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ### <a name="azure-ad"></a>Azure AD
@@ -40,7 +40,7 @@ ms.locfileid: "65398776"
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ### <a name="groups"></a>Группы
@@ -48,7 +48,7 @@ ms.locfileid: "65398776"
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -67,10 +67,10 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 |Параметры      |Тип                   |Обязательный |Описание|
 |:-------------|:----------------------|:--------|:----------|
-|reason        |String                 |✓        |Причина, указанная администратором для принятия решения.|
+|reason        |Строка                 |✓        |Причина, указанная администратором для принятия решения.|
 |Решение        |String                 |✓        |Решение администратора запроса на назначение роли. Значение должно быть обновлено как `AdminApproved` или `AdminDenied`.|
 |schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | Расписание запроса на назначение ролей. Для состояния является `AdminApproved`обязательным.|
-|assignmentState      |String|         | Состояние присваивания и значения могут быть или `Eligible` `Active`. Для принятия решения `AdminApproved`он является обязательным. |
+|assignmentState      |Строка|         | Состояние присваивания и значения могут быть или `Eligible` `Active`. Для принятия решения `AdminApproved`он является обязательным. |
 ### <a name="response"></a>Отклик
 Этот метод может применяться только к запросам, которые находятся в состоянии `PendingAdminDecision`..
 
@@ -101,6 +101,10 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/updaterequest-governanceroleassignmentrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/updaterequest-governanceroleassignmentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

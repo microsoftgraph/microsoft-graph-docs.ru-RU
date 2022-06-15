@@ -1,24 +1,24 @@
 ---
 author: JeremyKelley
-description: Извлеките ресурс driveItem, чтобы другие пользователи не могли редактировать документ, а ваши изменения будут видны, пока они не будут возвращены.
-title: 'driveItem: Checkout'
-localization_priority: Normal
+description: Извлеките ресурс driveItem, чтобы запретить другим пользователям редактировать документ, и ваши изменения не будут видны до тех пор, пока документ не будет извлечен.
+title: 'driveItem: извлечение'
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8697f139243c59bd05d88612293645bfb42733ef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 60a780e48114d322425a0f8ca8c3b7ff362cf5d3
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963851"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093669"
 ---
-# <a name="driveitem-checkout"></a>driveItem: Checkout
+# <a name="driveitem-checkout"></a>driveItem: извлечение
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлеките ресурс **driveItem** , чтобы другие пользователи не могли редактировать документ, и не допускают изменения, пока не будет [возвращено](driveitem-checkin.md)задокументированное значение.
+Извлеките **ресурс driveItem** , чтобы запретить другим пользователям редактировать документ и запретить отображать изменения до тех пор, пока документ не будет [извлечен](driveitem-checkin.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -73,12 +73,16 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 [!INCLUDE [sample-code](../includes/snippets/java/checkout-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/checkout-item-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ## <a name="response"></a>Отклик
 
-В случае успеха вызов API возвращает `204 No content` .
+В случае успешного выполнения вызов API возвращается `204 No content`.
 
 <!-- { "blockType": "response" } -->
 

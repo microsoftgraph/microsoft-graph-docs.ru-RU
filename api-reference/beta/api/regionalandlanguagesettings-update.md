@@ -1,16 +1,16 @@
 ---
 title: Обновление regionalAndLanguageSettings
-description: Обновление региональных и языковых параметров пользователя.
+description: Обновите региональные и языковые параметры пользователя.
 author: jasonbro
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5be6239d350e8964583967f9647396f921b2a1e3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6ab22ef6f3f51ff43b7441157e85ede2a5d93a59
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62102425"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "66096084"
 ---
 # <a name="update-regionalandlanguagesettings"></a>Обновление regionalAndLanguageSettings
 
@@ -18,12 +18,12 @@ ms.locfileid: "62102425"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновим некоторые или все свойства объекта [regionalAndLanguageSettings.](../resources/regionalAndLanguageSettings.md)
+Обновите некоторые или все свойства объекта [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения                   |Разрешение (от наименее до самых привилегированных)     |
+|Тип разрешения                   |Разрешение (от минимального до наиболее привилегированного)     |
 |----------------------------------|---------------------------------------------- |
 |Делегированные (рабочая или учебная учетная запись)|User.ReadWrite, User.ReadWrite.All             |
 |Делегированная (личная учетная запись)      |User.ReadWrite, User.ReadWrite.All             |
@@ -31,13 +31,13 @@ ms.locfileid: "62102425"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Обновление всех региональных и языковых параметров пользователя:
+Чтобы обновить все региональные и языковые параметры пользователя, выполните следующие действия.
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /settings/regionalAndLanguageSettings
 ```
 
-Обновление подмножество свойств региональных и языковых параметров пользователя:
+Чтобы обновить подмножество свойств региональных и языковых параметров пользователя, выполните указанные ниже действия.
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /settings/regionalAndLanguageSettings
@@ -50,17 +50,17 @@ PATCH /settings/regionalAndLanguageSettings
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
- **PUT.** В теле запроса поставьте [объект regionalAndLanguageSettings.](../resources/regionalAndLanguageSettings.md)
+ **PUT**: в тексте запроса укажите [объект regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) .
  
- **PATCH.** Только поставляем значения для соответствующих полей, которые должны быть обновлены. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
+ **PATCH**: укажите только значения для соответствующих полей, которые должны быть обновлены. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
  
 ## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код ответа 200 и обновленный **объект regionalAndLanguageSettings.**
+В случае успешного выполнения этот метод возвращает код отклика 200 и обновленный **объект regionalAndLanguageSettings** .
 
 ## <a name="example"></a>Пример
 
-### <a name="example-1-update-the-entire-regionalandlanguagesettings-object-of-the-signed-in-user"></a>Пример 1. Обновление всего объекта regionalAndLanguageSettings для подписанного пользователя
+### <a name="example-1-update-the-entire-regionalandlanguagesettings-object-of-the-signed-in-user"></a>Пример 1. Обновление всего объекта regionalAndLanguageSettings вошедвшего пользователя
 
 #### <a name="request"></a>Запрос
 
@@ -136,14 +136,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/put-regionalandlanguagesettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
-
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "name": "put_regionalAndLanguageSettings"
@@ -152,7 +153,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-selected-properties-of-the-signed-in-user"></a>Пример 2. Обновление выбранных свойств подписанного пользователя
+### <a name="example-2-update-selected-properties-of-the-signed-in-user"></a>Пример 2. Обновление выбранных свойств пользователя, выполнившего вход
 
 #### <a name="request"></a>Запрос
 
@@ -206,11 +207,10 @@ Content-type: application/json
 ---
 
 
----
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "name": "patch_regionalAndLanguageSettings"

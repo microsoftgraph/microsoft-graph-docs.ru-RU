@@ -1,23 +1,23 @@
 ---
 title: Создание термина
-description: Создание нового объекта терминов.
+description: Создайте объект термина.
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 36aefc94e89881e25792617fcc48d158d62473f2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 43feb7bc5f3b86fa5fbf7255904788f195492ebf
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60977595"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "66094852"
 ---
 # <a name="create-term"></a>Создание термина
 Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [объекта терминов.](../resources/termstore-term.md)
+Создайте объект [термина](../resources/termstore-term.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,19 +47,19 @@ POST /termStore/sets/{setId}/terms/{termId}/children
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляют представление JSON объекта [термин.](../resources/termstore-term.md)
+В тексте запроса добавьте представление объекта термина в формате [JSON.](../resources/termstore-term.md)
 
 В следующей таблице показаны свойства, необходимые при создании [термина](../resources/termstore-term.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|метки|[коллекция microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Метка для создаемой термины|
+|Метки|[Коллекция microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Метка создаемой термины|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и объект `201 Created` [терминов](../resources/termstore-term.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [термина](../resources/termstore-term.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 126e2b8307fff7749ee28f06744def3de26466f3
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 78e9aacf0bdab7ff109775d59cdce6c9295e33af
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65946223"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66092189"
 ---
 # <a name="create-ediscoveryreviewtag"></a>Создание ediscoveryReviewTag
 Пространство имен: microsoft.graph.security
@@ -51,9 +51,9 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя тега. Обязательный.|
-|description|Строка|Описание тега. Необязательный параметр.|
-|childSelectability|String|Это значение определяет, представляет ли пользовательский интерфейс теги как флажки или группу переключателей. Возможные значения: `One`, `Many`. Обязательный.|
+|displayName|Строка|Отображаемое имя тега. Обязательный.|
+|description|Строка|Описание тега. Необязательно.|
+|childSelectability|Строка|Это значение определяет, представляет ли пользовательский интерфейс теги как флажки или группу переключателей. Возможные значения: `One`, `Many`. Обязательный.|
 
 ## <a name="response"></a>Отклик
 
@@ -64,6 +64,8 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 ### <a name="create-a-tag"></a>Создание тега
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_ediscoveryreviewtag_from_"
@@ -78,6 +80,24 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-ce
     "childSelectability": "Many"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoveryreviewtag-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-ediscoveryreviewtag-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-ediscoveryreviewtag-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryreviewtag-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Отклик

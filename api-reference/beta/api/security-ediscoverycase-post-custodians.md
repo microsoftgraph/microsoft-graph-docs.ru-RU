@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 8732969c2ed71b6eb1e043a56ce254bdbb7a0af9
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: bf66c12b15cf05689d8221f9d0077549482a18de
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65946224"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093502"
 ---
 # <a name="create-ediscoverycustodian"></a>Создание объекта ediscoveryCustodian
 Пространство имен: microsoft.graph.security
@@ -18,7 +18,7 @@ ms.locfileid: "65946224"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создайте объект [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) .
-После создания объекта хранителя необходимо создать [userSource](../resources/security-usersource.md) хранителя для ссылки на его почтовый ящик и сайт OneDrive для бизнеса.
+После создания объекта хранителя необходимо создать [userSource](../resources/security-usersource.md) хранителя, чтобы ссылаться на его почтовый ящик и OneDrive для бизнеса сайте.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -62,6 +62,8 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_ediscoverycustodian_from_"
@@ -75,6 +77,24 @@ Content-Type: application/json
     "email":"AdeleV@contoso.com",
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoverycustodian-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-ediscoverycustodian-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-ediscoverycustodian-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-ediscoverycustodian-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик
