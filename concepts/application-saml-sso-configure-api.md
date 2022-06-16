@@ -1,16 +1,16 @@
 ---
 title: Настройка единого входа на основе SAML с помощью API Microsoft Graph
-description: Узнайте, как экономить время с помощью API Microsoft Graph, чтобы автоматизировать настройку единого входа на основе SAML.
+description: Выполните эти действия, чтобы создать и настроить единый вход на основе SAML для приложения в Azure AD с помощью API Microsoft Graph.
 author: kenwith
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.prod: applications
-ms.openlocfilehash: 06fb882695affc40898d7c9391f655e0bdccfff7
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 3f4d56fec8e09f7e530687b8f8777390da3d96a2
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65314825"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095145"
 ---
 # <a name="configure-saml-based-single-sign-on-for-your-application-using-the-microsoft-graph-api"></a>Настройка единого входа на основе SAML для приложения с помощью API Microsoft Graph
 
@@ -20,9 +20,9 @@ ms.locfileid: "65314825"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-В этом руководстве предполагается, что вы используете песочницу Microsoft Graph, но вы можете использовать Postman или создать собственное клиентское приложение, чтобы вызывать Microsoft Graph. Чтобы вызвать API Microsoft Graph в этом руководстве, используйте учетную запись с ролью глобального администратора и соответствующими разрешениями. Для этого руководства требуются делегированные разрешения `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ApplicationConfiguration`, и `User.ReadWrite.All`. Чтобы настроить разрешения в песочнице Microsoft Graph, выполните следующие действия.
+В этом руководстве предполагается, что вы используете песочницу Graph, но вы можете использовать Postman или создать собственное клиентское приложение, чтобы вызывать Microsoft Graph. Чтобы вызвать API Microsoft Graph в этом руководстве, используйте учетную запись с ролью глобального администратора и соответствующими разрешениями. Для этого руководства требуются делегированные разрешения `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ApplicationConfiguration`, и `User.ReadWrite.All`. Чтобы настроить разрешения в песочнице Graph, выполните перечисленные ниже действия.
 
-1. Перейдите в [песочницу Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).
+1. Перейдите в [песочницу Graph](https://developer.microsoft.com/graph/graph-explorer).
 2. Выберите вариант **Вход с помощью учетной записи Майкрософт** и войдите, используя учетную запись глобального администратора Azure AD. После успешного входа вы увидите данные учетной записи пользователя на панели слева.
 3. Щелкните значок параметров справа от сведений об учетной записи пользователя и нажмите **Выбор разрешений**.
 

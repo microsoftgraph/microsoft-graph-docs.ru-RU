@@ -1,22 +1,22 @@
 ---
 title: Регистрация и обновление схемы для связей Microsoft Graph
-description: Узнайте, как использовать Microsoft Graph для регистрации схемы подключения к Microsoft Graph.
+description: Перед добавлением элементов в подключение вы должны зарегистрировать схему. Указывается описание примера схемы, атрибутов свойств, семантических меток и возможностей обновления схемы.
 ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 7f0871b0f95425fbdd46ad6587195bcb1ef62b0b
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 961b8729bea3a835bcb1d6d49c9f1953a7267004
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65202051"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66092683"
 ---
 <!---<author of this doc: rsamai>--->
 
 # <a name="register-and-update-schema-for-the-microsoft-graph-connection"></a>Регистрация и обновление схемы для связей Microsoft Graph
 
-[Схема](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0&preserve-view=true) подключения определяет, как содержимое используется в различных интерфейсах Microsoft Graph. Схема представляет собой простой список всех свойств, которые вы планируете добавить в соединение, вместе с их атрибутами, метками и псевдонимами. Перед добавлением элементов в соединение вы должны зарегистрировать схему.
+[Схема](/graph/api/resources/externalconnectors-schema) подключения определяет, как содержимое используется в различных интерфейсах Microsoft Graph. Схема представляет собой простой список всех свойств, которые вы планируете добавить в соединение, вместе с их атрибутами, метками и псевдонимами. Перед добавлением элементов в соединение вы должны зарегистрировать схему.
 
 ## <a name="example-schema"></a>Пример схемы
 
@@ -162,7 +162,7 @@ ms.locfileid: "65202051"
 
 ## <a name="schema-update-capabilities"></a>Возможности обновления схемы
 
-В этом разделе содержатся сведения о возможностях обновления API [схемы](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0&preserve-view=true).
+В этом разделе содержатся сведения о возможностях обновления API [схемы](/graph/api/resources/externalconnectors-schema).
 
 > [!NOTE]
 > Рекомендуется повторно загрузить элементы после обновления, чтобы они соответствовали последней схеме. Без повторного приема поведение элементов будет несогласованным.
@@ -192,7 +192,7 @@ ms.locfileid: "65202051"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - [Добавление элементов в связь](connecting-external-content-manage-items.md)
-- [Обзор справочника API соединителей Microsoft Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [Обзор справочника API соединителей Microsoft Graph](/graph/api/resources/indexing-api-overview)
 - [Поиск объектов настраиваемого типа (externalItem)](search-concept-custom-types.md)
 - [Сборка вашего первого пользовательского соединителя Microsoft Graph](/graph/connecting-external-content-build-quickstart)
 

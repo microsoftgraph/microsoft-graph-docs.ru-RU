@@ -1,16 +1,16 @@
 ---
 title: Общие сведения об API приложений
-description: Зарегистрируйте свое приложение в Azure AD, чтобы создать для него конфигурацию удостоверения для интеграции с Azure AD.
+description: 'Интерфейсы API Microsoft Graph дают возможность выполнять такие действия в Azure AD: управление приложениями, локальная публикация, управление субъектами-службами и синхронизация.'
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c824f8b70f273d31b37d2458e384dbb49ffcb0c7
-ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
+ms.openlocfilehash: 15bb312928eb3fe4810d3353d4e2d4c04b266be0
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63780529"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095071"
 ---
 # <a name="applications-api-overview"></a>Общие сведения об API приложений
 
@@ -26,7 +26,7 @@ ms.locfileid: "63780529"
 
 ## <a name="application-management"></a>Управление приложениями
 
-Регистрация приложения включает уведомление Azure AD о вашем приложении. В частности, следует предоставить URL-адрес его расположения, URL-адрес для отправки ответов после проверки подлинности, URI для определения приложения и другие сведения. Чтобы управлять приложениями программными средствами, можно использовать [интерфейсы API приложений](/graph/api/resources/application?view=graph-rest-1.0) в Microsoft Graph.
+Регистрация приложения включает уведомление Azure AD о вашем приложении. В частности, следует предоставить URL-адрес его расположения, URL-адрес для отправки ответов после проверки подлинности, URI для определения приложения и другие сведения. Чтобы управлять приложениями программными средствами, можно использовать [интерфейсы API приложений](/graph/api/resources/application) в Microsoft Graph.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/93j0MmRruFo]
 
@@ -49,16 +49,16 @@ ms.locfileid: "63780529"
 
 Чтобы узнать о том, как использовать интерфейсы API локальной публикации, см. следующее руководство и связанные с ним API:
 - [Автоматизация настройки прокси приложения с помощью API Microsoft Graph.](./application-proxy-configure-api.md)
-    - [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
-    - [application](/graph/api/resources/application?view=graph-rest-1.0)
+    - [applicationTemplate](/graph/api/resources/applicationtemplate)
+    - [application](/graph/api/resources/application)
     - [onPremisesPublishing](/graph/api/resources/onpremisespublishingprofile-root)
     - [connector](/graph/api/resources/connector)
     - [connectorGroup](/graph/api/resources/connectorgroup)
-    - [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
+    - [servicePrincipal](/graph/api/resources/serviceprincipal)
 
 ## <a name="service-principal-management"></a>Управление именем субъекта-службы (SPN)
 
-Чтобы получить доступ к ресурсам, защищенным клиентом Azure AD, субъект, которому требуется доступ, должен быть представлен субъектом безопасности. Чтобы управлять субъектами-службами программными средствами, можно воспользоваться [интерфейсами API субъекта-службы](/graph/api/resources/serviceprincipal?view=graph-rest-1.0) в Microsoft Graph.
+Чтобы получить доступ к ресурсам, защищенным клиентом Azure AD, субъект, которому требуется доступ, должен быть представлен субъектом безопасности. Чтобы управлять субъектами-службами программными средствами, можно воспользоваться [интерфейсами API субъекта-службы](/graph/api/resources/serviceprincipal) в Microsoft Graph.
 
 Подробнее о субъектах-службах см. в разделе[Объекты приложения и субъекта-службы в Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals).
 
@@ -75,15 +75,16 @@ ms.locfileid: "63780529"
 
 Чтобы узнать о том, как использовать интерфейсы API локальной публикации, см. следующие руководства и связанные с ними API:
 - [Настройка подготовки с помощью интерфейсов API Microsoft Graph](/azure/active-directory/app-provisioning/application-provisioning-configuration-api):
-    - [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
+    - [applicationTemplate](/graph/api/resources/applicationtemplate)
     - [synchronizationTemplate](/graph/api/resources/synchronization-synchronizationtemplate)
     - [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob)
 - [Автоматизация настройки единого входа на основе SAML для приложений с помощью API Microsoft Graph](/azure/active-directory/manage-apps/application-saml-sso-configure-api)
-    - [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
-    - [application](/graph/api/resources/application?view=graph-rest-1.0)
+    - [applicationTemplate](/graph/api/resources/applicationtemplate)
+    - [application](/graph/api/resources/application)
     - [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy)
-    - [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
+    - [servicePrincipal](/graph/api/resources/serviceprincipal)
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Протестируйте интерфейс API Microsoft Graph в [Песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
+
+- Протестируйте интерфейс API Microsoft Graph в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 - С помощью [этих примеров](/azure/active-directory/develop/sample-v2-code) узнайте о том, как добавить в веб-приложения и веб-API проверку подлинности и авторизацию.

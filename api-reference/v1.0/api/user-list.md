@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a9c9632a65c7423ea80d60d0eae0e05bdb8ad4bd
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 28e9f77ecee53b668932c6453615a041bde1cab0
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204313"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095819"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -61,7 +61,7 @@ GET /users
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [user](../resources/user.md) в тексте отклика. Если возвращается крупная коллекция пользователей, можно использовать [разбиение по страницам в приложении](/graph/paging).
+При успешном выполнении этот метод возвращает код ответа `200 OK` и коллекцию объектов [user](../resources/user.md) в теле ответа. Если возвращается крупная коллекция пользователей, можно использовать [разбиение по страницам в приложении](/graph/paging).
 
 Попытка использовать `$select` в коллекции `/users` для извлечения свойств, которые невозможно возвратить в пользовательской коллекции (например, запрос`../users?$select=aboutMe`), возвращает код ошибки `501 Not Implemented`.
 
@@ -166,7 +166,7 @@ Content-type: application/json
 
 Ниже приведен пример запроса.
 
->При фильтрации по свойству **identities** требуется указывать параметры **issuer** и **issuerAssignedId**. Значение **issuerAssignedId** должно быть адресом электронной почты учетной записи пользователя, а не именем субъекта-пользователя (UPN). Если используется UPN, результатом будет пустой список.
+> **Примечание.** При фильтрации по свойству **issuerAssignedId** требуется указывать параметры **issuer** и **issuerAssignedId**. Однако в некоторых сценариях значение **issuer** будет игнорироваться. Дополнительные сведения о фильтрации удостоверений см. в [типе ресурса objectIdentity](../resources/objectIdentity.md)
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -175,7 +175,7 @@ Content-type: application/json
   "name": "get_signinname_users"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
+GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'My B2C tenant')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signinname-users-csharp-snippets.md)]
@@ -223,7 +223,8 @@ Content-type: application/json
 {
   "value": [
     {
-      "displayName": "John Smith"
+      "displayName": "John Smith",
+      "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
     }
   ]
 }

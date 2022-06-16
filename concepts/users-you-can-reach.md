@@ -1,33 +1,33 @@
 ---
 title: Пользователи, с которыми можно связаться при помощи Microsoft Graph
-description: 'Корпорация Майкрософт предлагает службы и решения, расширяющие возможности современной работы и современной жизни. '
+description: Используйте microsoft API Graph для создания приложений Microsoft 365, которые подключают пользователей к личным службам, рабочим службам и учебным службам.
 author: dkershaw10
 ms.localizationpriority: high
 ms.prod: applications
-ms.openlocfilehash: aea7510ff9b0b4b5986616317c74b092be011812
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c9c9876d58d645bc48f87e6b2d1891728fa06c18
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134012"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095022"
 ---
 # <a name="users-you-can-reach-with-microsoft-graph"></a>Пользователи, с которыми можно связаться при помощи Microsoft Graph
 
 Корпорация Майкрософт предлагает службы и решения, расширяющие возможности современной работы и современной жизни.
 
-Как разработчик, вы можете использовать API Microsoft Graph для создания приложений, которые охватывают миллионы людей, использующих облачные продукты Майкрософт для работы, учебы и личных дел.
+Как разработчик, вы можете использовать API Microsoft Graph для создания приложений, которые охватывают миллионы людей, использующих облачные продукты Майкрософт 365 для работы, учебы и личных дел.
 
 ## <a name="connect-to-personal-services"></a>Подключение к личным службам
 
-Используйте Microsoft Graph для охвата пользователей с личными учетными записями Майкрософт, такими как @outlook.com, @hotmail.com или @live.com. С согласия пользователей вы можете использовать Microsoft Graph для доступа к их профилям, службам Office (например, OneDrive, почте, календарю и контактам Outlook), а также их устройствам с Windows 10 и действиям.
+Используйте Microsoft Graph для охвата пользователей с личными учетными записями Майкрософт, такими как @outlook.com, @hotmail.com или @live.com. С согласия пользователей вы можете использовать Microsoft Graph для доступа к их профилям, службам Office (например, OneDrive, почте, календарю и контактам Outlook), а также их устройствам с Windows и действиям.
 
 ## <a name="connect-to-work-services"></a>Подключение к рабочим службам
 
-Используйте Microsoft Graph для охвата пользователей и организаций, у которых есть лицензии на службы Microsoft 365 для бизнеса, Microsoft 365 корпоративный или Microsoft 365 для образования. К этим службам Microsoft 365 относятся:
+Используйте Microsoft Graph для охвата пользователей и организаций, у которых есть лицензии на службы Microsoft 365 для бизнеса, Microsoft 365 корпоративный или Microsoft 365 для образования. К этим службам Microsoft 365 относятся:
 
-- Microsoft 365
+- Microsoft 365
 - Enterprise Mobility + Security
-- Windows 10.
+- Windows
 
 С согласия пользователей и организаций вы можете использовать Microsoft Graph для доступа к их данным из тех служб и функций, на которые у них есть лицензии и которые доступны в Microsoft Graph. Дополнительные сведения см. в статье [Основные службы и компоненты в Microsoft Graph](overview-major-services.md).
 
