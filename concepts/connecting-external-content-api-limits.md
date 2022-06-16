@@ -1,16 +1,16 @@
 ---
 title: Ограничения API соединителей Microsoft Graph
-description: Реализация и эксплуатационные ограничения для соединителей Microsoft Graph.
+description: При разработке соединителей Microsoft Graph следует учитывать ограничения реализации и эксплуатации. Это касается ограничений в отношении подключения, схемы и групп.
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: e50085b8c59e304c852f8f75c326fca2967a54f9
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: 517d5f2d62e3d9025b8492433af2ec3fc0bd69a3
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296467"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094237"
 ---
 # <a name="microsoft-graph-connectors-api-limits"></a>Ограничения API соединителей Microsoft Graph
 
@@ -20,21 +20,21 @@ ms.locfileid: "65296467"
 
 | Тип ограничения | Ограничение |
 | ---------- | ----- |
-| Ресурсы [подключения](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0&preserve-view=true) для каждого клиента Microsoft 365 | 10 |
-| [Элементов](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0&preserve-view=true) на соединение | 700 000 |
+| Ресурсы [подключения](/graph/api/resources/externalconnectors-externalconnection) для каждого клиента Microsoft 365 | 10 |
+| [Элементов](/graph/api/resources/externalconnectors-externalitem) на соединение | 700 000 |
 | Размер соединения в байтах | 70 ГБ |
 
 ## <a name="schema-limits"></a>Ограничения схемы
 
 | Тип ограничения | Ограничение |
 | ---------- | ----- |
-| Свойства, которые можно определить в [схеме](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0&preserve-view=true), характеризующие данные, получаемые через соединение. | 128 |
+| Свойства, которые можно определить в [схеме](/graph/api/resources/externalconnectors-schema), характеризующие данные, получаемые через соединение. | 128 |
 
 ## <a name="group-limits"></a>Ограничения для групп
 
 | Тип ограничения | Ограничение |
 | ---------- | ----- |
-| [Внешние группы](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) на каждого клиента Microsoft 365 | 100,000 | 
+| [Внешние группы](/graph/api/resources/externalconnectors-externalgroup) на каждого клиента Microsoft 365 | 100,000 | 
 | Разрешенные запросы в секунду (запросы/сек) в пороге [регулирования количества запросов](#throttling) группового администрирования | 1 000 |
 
 ## <a name="item-ingestion"></a>Прием элементов
@@ -42,7 +42,7 @@ ms.locfileid: "65296467"
 | Тип ограничения | Ограничение |
 | ---------- | ----- |
 | Ограничение пропускной способности для приема элементов через соединение | 4 элемента/с <br> (250 МБ/ч) |
-| Размер элемента; это ограничение применяется к телу запроса при [приеме и индексировании элемента](/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0). | 4 МБ |
+| Размер элемента; это ограничение применяется к телу запроса при [приеме и индексировании элемента](/graph/api/externalconnectors-externalconnection-put-items). | 4 МБ |
 | Размер свойства | Недоступно |
 
 ## <a name="throttling"></a>Регулирование

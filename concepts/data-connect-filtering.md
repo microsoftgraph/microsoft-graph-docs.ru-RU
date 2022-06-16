@@ -1,15 +1,15 @@
 ---
 title: Возможности выбора и фильтрации пользователей, поддерживаемые подключением к данным Microsoft Graph
-description: Описано, как использовать подключение к данным Microsoft Graph, чтобы выбрать пользователей, для которых нужно извлечь данные, и отфильтровать возвращаемые данные.
+description: Узнайте, как использовать подключение к данным Microsoft, чтобы выбрать пользователей, для которых нужно извлечь данные, и включить фильтры для ограничения возвращаемых данных.
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: f87810144bd5b7edff28ea33b6a733559ecdc0f5
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: bcdbfe58b628ee0f431a529d8a3372c6c1c9266e
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247282"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094030"
 ---
 # <a name="user-selection-and-filtering-capabilities-in-microsoft-graph-data-connect"></a>Возможности выбора и фильтрации пользователей, поддерживаемые подключением к данным Microsoft Graph
 

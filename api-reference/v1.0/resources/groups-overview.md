@@ -1,22 +1,22 @@
 ---
 title: Работа с группами в Microsoft Graph
-description: Группы — это коллекции участников с совместным доступом к ресурсам в службах Майкрософт или ваших приложениях. В состав групп могут входить различные участники, такие как пользователи, другие группы, устройства и приложения. Использование групп помогает избежать работы с отдельными участниками и упрощает управление доступом к ресурсам.
+description: Используйте API групп, чтобы создавать группы разных типов и управлять ими, включая группы Microsoft 365, группы безопасности, группы безопасности с поддержкой почты и группы рассылки.
 author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 151d8aff7d48f4ef954554a480736a391833544b
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: 0a41fce3ab121951108fd1dbcde484491d65173c
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296439"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093866"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Работа с группами в Microsoft Graph
 
 Группы — это коллекции участников с совместным доступом к ресурсам в службах Майкрософт или ваших приложениях. В состав групп могут входить различные участники, такие как пользователи, другие группы, устройства и приложения. Использование групп помогает избежать работы с отдельными участниками и упрощает управление доступом к ресурсам.
 
-Microsoft Graph предоставляет API групп для создания и управления различными типами групп и функциональностью групп. 
+Microsoft Graph предоставляет API групп для создания и управления различными типами групп и функциональностью групп.
 
 > [!NOTE]
 > 1. Группы можно создавать только с помощью рабочих или учебных учетных записей. Личные учетные записи Майкрософт не поддерживают группы.
@@ -32,7 +32,7 @@ Azure Active Directory (Azure AD) поддерживает следующие т
 - Группы рассылки
 
 > [!NOTE]
-> Microsoft также поддерживает [динамические группы рассылки](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019), которыми нельзя управлять или извлекать их через Microsoft Graph.
+> Microsoft также поддерживает [динамические группы рассылки](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019&preserve-view=true), которыми нельзя управлять или извлекать их через Microsoft Graph.
 
 Через API групп Microsoft Graph можно управлять только Microsoft 365 и группами безопасности. Почтовые группы и группы рассылки доступны только для чтения через Microsoft Graph.
 
