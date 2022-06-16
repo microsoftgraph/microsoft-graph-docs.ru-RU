@@ -1,16 +1,16 @@
 ---
-title: Обзор пользователей в Microsoft Graph
-description: Пользователи — это представления рабочих или учебных учетных записей Azure Active Directory (Azure AD) либо учетных записей Майкрософт в Microsoft Graph. Ресурс **user** в Microsoft Graph — это центр, из которого вы можете получить доступ к связям и ресурсам, релевантным для ваших пользователей.
+title: Пользователи в Microsoft Graph
+description: Используйте Microsoft Graph, чтобы получить доступ к связям, документам, контактам и настройкам, контекстно-релевантным для пользователя, вошедшего в систему организации.
 author: dkershaw10
 ms.localizationpriority: high
 ms.prod: users
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 88f03a5fad2a6aa9ae473e8ce6d1f9f51cee018d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 03a9e667a665363c4d36ca9c576c1472f66726fe
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127992"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095050"
 ---
 # <a name="overview-of-users-in-microsoft-graph"></a>Обзор пользователей в Microsoft Graph
 
@@ -59,18 +59,16 @@ ms.locfileid: "59127992"
 - Отображать документы, доступ к которым предоставлен пользователю в электронных письмах или в OneDrive для бизнеса.
 
 ## <a name="api-reference"></a>Справочные материалы по API
+
 Ищете справочные материалы по API для этой службы?
 
-- [API пользователей в Microsoft Graph 1.0](/graph/api/resources/users?view=graph-rest-1.0)
-- [API пользователей в бета-версии Microsoft Graph](/graph/api/resources/users?view=graph-rest-beta)
+- [API пользователей в Microsoft Graph 1.0](/graph/api/resources/users?view=graph-rest-1.0&preserve-view=true)
+- [API пользователей в бета-версии Microsoft Graph](/graph/api/resources/users?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Узнайте больше о том, как [работать с пользователями](/graph/api/resources/users?view=graph-rest-1.0).
+- Узнайте больше о том, как [работать с пользователями](/graph/api/resources/users).
 - Проанализируйте собственные данные из ресурса **user** в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Выполняйте аутентификацию с помощью Microsoft Graph [от имени пользователя](auth-v2-user.md) или [с использованием управляющей программы или службы с согласия администратора](auth-v2-service.md).
-- Настройте управление доступом и политики доступа для пользователей с помощью [API Azure AD](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0).
-- Просмотрите [разрешения](permissions-reference.md), которые потребуются вашему приложению для доступа к данным пользователей. 
-<!-- This isn't really a next step; let's remove to keep the list of links concise.>
-- Stay up to date with Microsoft Graph [changelog](changelog.md).
--->
+- Настройте управление доступом и политики доступа для пользователей с помощью [API Azure AD](/graph/api/resources/azure-ad-overview).
+- Просмотрите [разрешения](permissions-reference.md), которые потребуются вашему приложению для доступа к данным пользователей.

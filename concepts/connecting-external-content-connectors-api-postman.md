@@ -1,16 +1,16 @@
 ---
 title: Использование Postman с API соединителей Microsoft Graph
-description: Попробуйте использование API соединителей Microsoft Graph с Postman
+description: Выполните действия, описанные в этом руководстве, чтобы создать API соединителей Microsoft Graph с помощью платформы API Postman.
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 977a0a2a1c361a46795556d336a2eefe41ee3917
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 872107e33f956a13b9748e1153c8286f8620d053
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461550"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095057"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>Использование Postman с API соединителей Microsoft Graph
 
@@ -274,7 +274,7 @@ Content-type: application/json
 
 Если ваша внешняя служба использует контрольные списки (ACL), не относящиеся к Azure AD, синхронизируйте эти разрешения.  
 
-Внешние группы (наряду с пользователями и группами Azure Active Directory) используются для установки разрешений для `externalItems` добавленных в подключение Microsoft Graph. Дополнительные сведения см. в разделе [externalGroup](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true).
+Внешние группы (наряду с пользователями и группами Azure Active Directory) используются для установки разрешений для `externalItems` добавленных в подключение Microsoft Graph. Дополнительные сведения см. в разделе [externalGroup](/graph/api/resources/externalconnectors-externalgroup).
 
 Это пример запроса.
 
