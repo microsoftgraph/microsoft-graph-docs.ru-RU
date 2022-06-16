@@ -1,16 +1,16 @@
 ---
 title: Соединители Microsoft Graph
-description: Соединители Microsoft Graph переносят содержимое из внешних служб в Microsoft Graph, позволяя использовать внешние данные для интеллектуальных функций Microsoft 365.
+description: Использование соединителей Microsoft Graph для переноса содержимого из внешних служб в Microsoft Graph, что позволяет использовать внешние данные для интеллектуального взаимодействия Microsoft 365.
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 0ca7c660a0c2db5ad83bda3253c2d330e390320e
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: 8a536bf78a2ebccb026e7a630c1985184e5d59ed
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176627"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66092662"
 ---
 # <a name="microsoft-graph-connectors-overview"></a>Соединители Microsoft Graph
 

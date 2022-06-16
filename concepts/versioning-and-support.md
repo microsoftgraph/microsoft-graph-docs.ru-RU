@@ -1,13 +1,13 @@
 ---
-title: 'Политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии '
+title: Политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии
 description: В этой статье описаны политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии API Microsoft Graph.
 ms.localizationpriority: high
-ms.openlocfilehash: 1ecf67a8630c055baf00993e3defbae7f57376da
-ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
+ms.openlocfilehash: 3b5b385cbf738c04b976e6ca3e0749c47942eabf
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60016601"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095015"
 ---
 # <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии
 

@@ -1,14 +1,14 @@
 ---
 title: Руководства по Microsoft Graph
-description: Руководства по Microsoft Graph — это пошаговые обучающие упражнения, которые помогут вам создать базовое приложение, получающее доступ к данным через Microsoft Graph.
+description: Создайте базовое приложение, получающее доступ к данным через Microsoft Graph за 30 минут, благодаря пошаговому руководству по Microsoft Graph.
 author: jasonjoh
 ms.localizationpriority: high
-ms.openlocfilehash: 8c1bc3d12fb540f948c55a68cc83ba943a092283
-ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
+ms.openlocfilehash: b2c810e437197f5702abebe46c76648315178ed7
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65653338"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095036"
 ---
 # <a name="microsoft-graph-tutorials"></a>Руководства по Microsoft Graph
 

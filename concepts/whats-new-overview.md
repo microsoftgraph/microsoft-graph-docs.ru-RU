@@ -1,14 +1,14 @@
 ---
 title: Новые возможности Microsoft Graph
-description: Текущие новые возможности в Microsoft Graph
+description: Прочитайте о самых важных новых возможностях Microsoft Graph за последние два месяца, о том, что было добавлено в более ранних выпусках, и о том, как делиться идеями.
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: a49bab69acbb630474223a6de7095b8c34157fda
-ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
+ms.openlocfilehash: db42821b1e22d2845c8c4c6dff97cc7d46f8feb3
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65653527"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095001"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -19,6 +19,10 @@ ms.locfileid: "65653527"
 
 
 ## <a name="may-2022-new-and-generally-available"></a>Май 2022 г.: новые и общедоступные возможности
+
+### <a name="education"></a>Образование
+- [Отслеживание изменений в ресурсах назначения](/graph/api/educationassignment-delta).
+- [Отслеживание изменений в ресурсах категории назначения](/graph/api/educationcategory-delta).
 
 ### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
 [Приложение](/graph/api/resources/application), зарегистрированное в Azure Active Directory (Azure AD), может указывать контактные данные приложения или службы из базы данных управления службой или ресурсами.
@@ -31,6 +35,11 @@ ms.locfileid: "65653527"
 - Добавьте или синхронизируйте тип контента из концентратора типов контента на [сайт](/graph/api/resources/site) или в [список](/graph/api/resources/list) с помощью действия [addCopyFromContentTypeHub](/graph/api/contenttype-addcopyfromcontenttypehub). Это делает тип контента или его обновление доступными для определенного сайта или списка, где это необходимо. Это улучшение по сравнению с устаревшей инфраструктурой синхронизации, которая распространяет тип контента на все сайты в организации, сокращая время ожидания распространения публикации. 
 - Получение одной или нескольких [многофункциональных длительных операций](/graph/api/resources/richlongrunningoperation), выполняемых на сайте или в списке, что может происходить при синхронном добавлении типа контента.
 
+### <a name="tasks-and-plans"></a>Задачи и планы
+- [Получение](/graph/api/plannerplandetails-get) и [обновление](/graph/api/plannerplandetails-update) описаний категорий в [рамках сведений](/graph/api/resources/plannerplandetails) о [плане](/graph/api/resources/plannerplan).
+- Вместо свойства **владельца** **плана** используйте свойство **type** [контейнера плана](/graph/api/resources/plannerplancontainer), чтобы указать правила авторизации и время существования **плана**.
+- Получение приоритета [задачи](/graph/api/resources/plannerTask).
+
 ### <a name="teamwork"></a>Teamwork
 [Получение сообщений в канале](/graph/api/channel-list-messages) и [включение всех ответов](/graph/api/channel-list-messages#example-3-request-with-top-and-expand-query-options-on-replies) в сообщение.
 
@@ -40,12 +49,31 @@ ms.locfileid: "65653527"
 ### <a name="application"></a>Приложение
 При настройке прокси приложения Azure AD для локальных приложений с целью безопасного удаленного доступа используйте свойство **isStateSessionEnabled** в ресурсе [onPremisesPublishing](/graph/api/resources/onPremisesPublishing?view=graph-rest-beta&preserve-view=true), чтобы указать, следует ли проверять параметр состояния, если приложение использует поток предоставления кода авторизации OAuth 2.0. Установка этого свойства помогает администраторам защитить приложение от подделки межсайтовых запросов (CSRF).
 
+### <a name="compliance--subject-rights-requests"></a>Соответствие требованиям | Запросы прав субъектов
+- Указание и получение расположений, в которых должен выполняться поиск при [запросе прав субъекта](/graph/api/resources/subjectRightsRequest?view=graph-rest-beta&preserve-view=true), например [почтовые ящики](/graph/api/resources/subjectRightsRequestAllMailboxLocation?view=graph-rest-beta&preserve-view=true), [каналы SharePoint, OneDrive и Teams](/graph/api/resources/subjectRightsRequestAllSiteLocation?view=graph-rest-beta&preserve-view=true).
+- Указание и получение запроса KQL контента, который должен использоваться для поиска при запросе прав субъекта.
+
+### <a name="device-and-app-management--cloud-pc"></a>Управление устройствами и приложениями | Облачный компьютер
+- Получение четко определенного [результата](/graph/api/resources/cloudpcbulkremoteactionresult?view=graph-rest-beta&preserve-view=true) при [массовой повторной подготовке облачных компьютеров](/graph/api/manageddevice-bulkReprovisionCloudPc?view=graph-rest-beta&preserve-view=true).
+- [Получение](/graph/api/manageddevice-getcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) и [указание](/graph/api/manageddevice-setcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) [состояния проверки облачного компьютера](/graph/api/resources/cloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) и [массовое задание состояния проверки облачных компьютеров](/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) для нескольких устройств.
+
+### <a name="device-and-app-management--multi-tenant-management"></a>Управление устройствами и приложениями | Управление несколькими клиентами
+[Получение](/graph/api/managedtenants-managedtenant-list-tenantusage?view=graph-rest-beta&preserve-view=true) количества ежемесячных активных пользователей для каждой службы в управляемом клиенте.
+
+### <a name="education"></a>Образование
+Использование ресурса [Teams](/graph/api/resources/educationteamsappresource?view=graph-rest-beta&preserve-view=true), соответствующего установленному приложению Microsoft Teams, чтобы разрешить пользователям образовательных служб создавать задания и делиться заданиями во внедренных приложениях Teams, таких как YouTube или FlipGrid.
+
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 В области [роли пользователя по умолчанию](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta&preserve-view=true) [политики авторизации](/graph/api/resources/authorizationPolicy?view=graph-rest-beta&preserve-view=true) укажите, может ли зарегистрированный владелец устройства считывать собственные ключи восстановления BitLocker.
 
 ### <a name="search--index"></a>Поиск | Индекс
 [Получение](/graph/api/externalconnectors-connectionquota-get?view=graph-rest-beta&preserve-view=true) [сведений о квоте](/graph/api/resources/externalconnectors-connectionQuota?view=graph-rest-beta&preserve-view=true) для [подключения](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true). Эти сведения включают количество элементов, которые можно принять в подключение, учитывая элементы, остающиеся в подключении, и остающуюся квоту на уровне клиента для всех подключений.
 
+### <a name="sites-and-lists"></a>Сайты и списки
+[Отслеживание изменений в ресурсах элементов списка SharePoint](/graph/api/listitem-delta?view=graph-rest-beta&preserve-view=true).
+
+### <a name="teamwork"></a>Командная работа
+Использование разрешений приложений для [получения всех чатов](/graph/api/chat-list?view=graph-rest-beta&preserve-view=true), в которых участвует указанный пользователь, без необходимости присутствия пользователя.
 
 
 ## <a name="april-2022-new-and-generally-available"></a>Апрель 2022 г.: новое и общедоступное
@@ -104,7 +132,7 @@ ms.locfileid: "65653527"
 - Имеются ли сценарии, поддержку которых вы хотели бы видеть в Microsoft Graph? Предложите новые функции и проголосуйте за них на сайте [сообщества Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
     Некоторые новые функции реализуются на основе распространенных запросов сообщества разработчиков. Команда разработчиков Microsoft Graph регулярно оценивает потребности клиентов и выпускает новые функции в следующем порядке.
 
-    1. Впервые в состоянии **_предварительной версии_**. Все связанные обновления REST API доступны в конечной точке бета-версии (`https://graph.microsoft.com/beta`).  
+    1. Дебютный выпуск в **_предварительной_** версии. Все соответствующие обновления REST API доступны в конечной точке бета-версии (`https://graph.microsoft.com/beta`).  
 
     2. Повышение до **_общедоступного_ состояния (GA)**, если целесообразность этого подтверждена достаточным количеством отзывов. Все соответствующие обновления REST API добавляются в конечную точку версии 1.0 (`https://graph.microsoft.com/v1.0`). 
 - Будьте активными участниками сообщества Microsoft Graph! [Присоединяйтесь](https://aka.ms/m365-dev-call) к еженедельной видеоконференции сообщества платформы Microsoft 365.

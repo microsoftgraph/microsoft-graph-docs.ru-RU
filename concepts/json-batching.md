@@ -4,12 +4,12 @@ description: 'Пакетная обработка JSON позволяет опт
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3ca25ff3e16437463cac719b2ea5ab6dd47c8687
-ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
+ms.openlocfilehash: 8b83b501f286bcfac80f50081bfaa6084e866b15
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "66034554"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118363"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Объединение нескольких запросов в один вызов HTTP с помощью пакетной обработки JSON
 
@@ -20,6 +20,8 @@ ms.locfileid: "66034554"
 3. Календарь группы
 
 Объединение трех этих запросов в один может значительно снизить задержку в сети, ускорив работу приложения.
+
+Microsoft Graph реализует сегмент пути URL-адреса OData `$batch` для поддержки пакетной обработки JSON.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/tzWGOp8zYh8]
 

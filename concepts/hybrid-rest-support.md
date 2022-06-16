@@ -1,13 +1,13 @@
 ---
 title: Использование интерфейсов REST API для доступа к гибридным развертываниям Exchange (устаревшая версия)
-description: Использование REST API в гибридных развертываниях Exchange устарело и больше не будет поддерживаться с марта 2023 года.
+description: Использование REST API в гибридных развертываниях Exchange устарело и больше не будет поддерживаться начиная с марта 2023 года.
 ms.localizationpriority: high
-ms.openlocfilehash: a7dd122b2a9e15e04613bd31a003dc4f80967f42
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5775a3019b6a4161f7f09141b2f9e128f966fc3e
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335873"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66096212"
 ---
 # <a name="use-rest-apis-to-access-mailboxes-in-exchange-hybrid-deployments-deprecated"></a>Использование интерфейсов REST API для доступа к гибридным развертываниям Exchange (устаревшая версия)
 
