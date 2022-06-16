@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: cf67ad148ca1a31ec298b939c2d948ea0c6aabd9
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 093d153ca9224219c06586457d74fdccf54b6aad
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695412"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118335"
 ---
 # <a name="remove-owner"></a>Удаление владельца
 
@@ -31,8 +31,10 @@ ms.locfileid: "65695412"
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /applications/{id}/owners/{id}/$ref
-
 ```
+> [!CAUTION]
+> `/$ref` Если запрос не добавлен и вызывающее приложение имеет разрешения на управление пользователем, который является владельцем приложения, пользователь также будет удален из Azure Active Directory (Azure AD); `403 Forbidden` в противном случае возвращается ошибка. Удаленных пользователей можно восстановить с помощью [API восстановления удаленных элементов](directory-deleteditems-restore.md).
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание|
 |:---- |:---------- |

@@ -1,16 +1,16 @@
 ---
 title: Удаление registeredUsers
-description: Удалите пользователя как зарегистрированного пользователя устройства.
+description: Удаление пользователя в качестве зарегистрированного пользователя устройства.
 ms.localizationpriority: medium
 author: michaelrm97
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1a356633196358d94e6a486ffda336af52206f84
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: a10dd74a15f531316e08d745087e578b2e0e2b0b
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256405"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118601"
 ---
 # <a name="delete-registereduser"></a>Удаление registeredUser
 
@@ -18,7 +18,7 @@ ms.locfileid: "60256405"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите пользователя как зарегистрированного пользователя устройства.
+Удаление пользователя в качестве зарегистрированного пользователя устройства.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -37,6 +37,8 @@ ms.locfileid: "60256405"
 ```http
 DELETE /devices/{id}/registeredUsers/{id}/$ref
 ```
+> [!CAUTION]
+> `/$ref` Если запрос не добавлен и вызывающее приложение имеет разрешения на управление пользователем, который является зарегистрированным пользователем устройства, пользователь также будет удален из Azure Active Directory (Azure AD); `403 Forbidden` в противном случае возвращается ошибка. Удаленных пользователей можно восстановить с помощью [API восстановления удаленных элементов](directory-deleteditems-restore.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|

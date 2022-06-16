@@ -1,31 +1,33 @@
 ---
-title: тип ресурса preAuthorizedApplication
-description: Списки предварительно авторизованных клиентских приложений
-localization_priority: Normal
+title: Тип ресурса preAuthorizedApplication
+description: Список предварительно авторизованных клиентских приложений
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
-author: sureshja
-ms.openlocfilehash: 94a8dad23492ca7a145c5839410edf0fd4a34877
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+author: psignoret
+ms.openlocfilehash: 40fcfc642444be507fbd8e8a85f0052732293cb3
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761165"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118538"
 ---
-# <a name="preauthorizedapplication-resource-type"></a>тип ресурса preAuthorizedApplication
+# <a name="preauthorizedapplication-resource-type"></a>Тип ресурса preAuthorizedApplication
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перечислены клиентские приложения, предварительно авторизованные с указанными разрешениями на доступ к API этого приложения. Пользователи не обязаны соглашаться на любое предварительно авторизованного приложения (для указанных разрешений). Однако для любых дополнительных разрешений, не указанных в preAuthorizedApplications (запрашивается, например, с помощью дополнительного согласия), потребуется согласие пользователя.
+Выводит список клиентских приложений, предварительно авторизованных с указанными делегированными разрешениями на доступ к API этого приложения. Пользователи не должны давать согласие на какие-либо предварительно авторизованные приложения (для указанных разрешений). Однако все дополнительные разрешения, не перечисленные в preAuthorizedApplications (например, запрашиваемые с помощью добавочного согласия), требуют согласия пользователя.
+
+В некоторых редких случаях идентификатор, указанный в свойстве, может ссылаться на роль [приложения (](approle.md) `appRoles` из свойства субъекта-службы), `appId` указывающую, `permissionIds` что клиентское приложение, определяемое свойством, предварительно авторизовано для этой роли приложения.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|appId|String| Уникальный идентификатор приложения. |
-|permissionIds|Коллекция String| Уникальный идентификатор [oauth2PermissionScopes,](permissionscope.md) который требуется приложению. |
+|appId|String| Уникальный идентификатор клиентского приложения. |
+|permissionIds|Коллекция String| Уникальный идентификатор областей [, которые](permissionscope.md) предоставляет клиентское приложение. |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -59,5 +61,4 @@ ms.locfileid: "50761165"
   "suppressions": []
 }
 -->
-
 

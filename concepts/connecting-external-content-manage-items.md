@@ -1,28 +1,28 @@
 ---
-title: Создание, обновление и удаление элементов, добавленных приложением в связь Microsoft Graph
-description: Узнайте, как использовать Microsoft Graph для управления элементами, добавленными приложением в службу "Поиск (Майкрософт)".
+title: Создание, обновление и удаление элементов в подключении Microsoft Graph
+description: Узнайте, как использовать Microsoft Graph для управления внешними элементами, добавленными приложением в службу Поиск (Майкрософт).
 ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 5ef77fd98e055d9b60b76f4aa3728f20f6cbff7e
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 68a9756966d10a60e443afbef4ed4e26b081b0b5
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211034"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66092676"
 ---
 <!---<author of this doc: rsamai>--->
 
 # <a name="create-update-and-delete-items-added-by-your-application-via-microsoft-graph-connectors"></a>Создание, обновление и удаление элементов, добавленных приложением с помощью соединителей Microsoft Graph
 
-Соединители Microsoft Graph — это интуитивно понятный способ добавления внешних данных в Microsoft Graph. Элементы, добавленные приложением в службу "Поиск (Майкрософт)", представлены ресурсом [externalItem](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0&preserve-view=true) в Microsoft Graph.
+Соединители Microsoft Graph — это интуитивно понятный способ добавления внешних данных в Microsoft Graph. Элементы, добавленные приложением в службу "Поиск (Майкрософт)", представлены ресурсом [externalItem](/graph/api/resources/externalconnectors-externalitem) в Microsoft Graph.
 
-После [создания соединения](/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0&preserve-view=true&tabs=http) вы можете добавить содержимое. Каждый элемент из источника данных должен быть представлен в виде externalItem в Microsoft Graph с уникальным идентификатором элемента. Этот идентификатор используется для создания, обновления или удаления элемента в Microsoft Graph. Вы можете использовать первичный ключ из источника данных в качестве ИД элемента или получить его из одного или нескольких полей. 
+После [создания соединения](/graph/api/externalconnectors-external-post-connections) вы можете добавить содержимое. Каждый элемент из источника данных должен быть представлен в виде **externalItem** в Microsoft Graph с уникальным идентификатором элемента. Этот идентификатор используется для создания, обновления или удаления элемента в Microsoft Graph. Вы можете использовать первичный ключ из источника данных в качестве ИД элемента или получить его из одного или нескольких полей. 
 
 ## <a name="key-components"></a>Ключевые компоненты
 
-externalItem содержит три основных компонента: список управления доступом, свойства и содержимое.
+**externalItem** содержит три основных компонента: список управления доступом, свойства и содержимое.
 
 ### <a name="access-control-list"></a>Список управления доступом
 
@@ -40,7 +40,7 @@ externalItem содержит три основных компонента: сп
 
 ### <a name="properties"></a>Свойства
 
-С помощью компонента свойств можно добавлять метаданные элементов, которые удобно применять в интерфейсах Microsoft Graph. Вы должны [зарегистрировать схему](connecting-external-content-manage-schema.md) для связи перед добавлением в нее элементов и преобразованием **типов данных** в [поддерживаемые типы данных](/graph/api/resources/externalconnectors-property?view=graph-rest-1.0&preserve-view=true).
+С помощью компонента свойств можно добавлять метаданные элементов, которые удобно применять в интерфейсах Microsoft Graph. Вы должны [зарегистрировать схему](connecting-external-content-manage-schema.md) для связи перед добавлением в нее элементов и преобразованием **типов данных** в [поддерживаемые типы данных](/graph/api/resources/externalconnectors-property).
 
 ![Пример компонента свойства.](./images/connectors-images/connecting-external-content-manage-items-1.png)
 
@@ -62,11 +62,11 @@ externalItem содержит три основных компонента: сп
 
 *Шаблон результатов поиска.*
 
-При изменении содержимого в источнике данных вы должны синхронизировать его с элементами связи. Вы можете обновить весь элемент или обновить один или несколько его компонентов. После добавления содержимого в Microsoft Graph вы можете искать его с помощью интерфейса Поиска (Майкрософт), настроив [вертикали поиска](/en-us/microsoftsearch/manage-verticals) и [типы результатов](/en-us/microsoftsearch/manage-result-types) или воспользовавшись [API поиска Microsoft Graph](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true).
+При изменении содержимого в источнике данных вы должны синхронизировать его с элементами связи. Вы можете обновить весь элемент или обновить один или несколько его компонентов. После добавления содержимого в Microsoft Graph вы можете искать его с помощью интерфейса Поиска (Майкрософт), настроив [вертикали поиска](/en-us/microsoftsearch/manage-verticals) и [типы результатов](/en-us/microsoftsearch/manage-result-types) или воспользовавшись [API поиска Microsoft Graph](/graph/api/resources/search-api-overview).
 
 ## <a name="add-an-item"></a>Добавление элемента
 
-Чтобы добавить элемент в индекс, необходимо [создать externalItem](/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0). При создании элемента ему назначается уникальный идентификатор в URL-адресе.
+Чтобы добавить элемент в индекс, необходимо [создать externalItem](/graph/api/externalconnectors-externalconnection-put-items). При создании элемента ему назначается уникальный идентификатор в URL-адресе.
 
 Например, приложение может индексировать запросы в службу технической поддержки по их номерам. Если запросу назначен номер `SR00145`, он может выглядеть так:
 
@@ -86,7 +86,7 @@ Content-Type: application/json
 
 ## <a name="update-an-item"></a>Обновление элемента
 
-При обновлении элемента во внешней службе (переназначении запросов в службу технической поддержки или обновлении описания продукта), вы можете [обновить соответствующую запись в индексе, обновив externalItem](/graph/api/externalconnectors-externalitem-update?view=graph-rest-1.0&preserve-view=true&tabs=http) по уникальному идентификатору, назначенному элементу при его создании.
+При обновлении элемента во внешней службе (переназначении запросов в службу технической поддержки или обновлении описания продукта), вы можете [обновить соответствующую запись в индексе, обновив externalItem](/graph/api/externalconnectors-externalitem-update) по уникальному идентификатору, назначенному элементу при его создании.
 
 ```http
 PATCH /external/connections/contosohelpdesk/items/SR00145
@@ -99,7 +99,7 @@ Content-Type: application/json
 
 ## <a name="delete-an-item"></a>Удаление элемента
 
-Чтобы удалить элементы из индекса, [удалите externalItem](/graph/api/externalconnectors-externalitem-delete?view=graph-rest-1.0&preserve-view=true&tabs=http), используя уникальный идентификатор, присвоенный элементу при его создания.
+Чтобы удалить элементы из индекса, [удалите externalItem](/graph/api/externalconnectors-externalitem-delete), используя уникальный идентификатор, присвоенный элементу при его создания.
 
 ```http
 DELETE /external/connections/contosohelpdesk/items/SR00145
@@ -109,6 +109,6 @@ DELETE /external/connections/contosohelpdesk/items/SR00145
 
 - [Использование внешних групп для управления разрешениями](connecting-external-content-external-groups.md)
 - [Запросы с использованием API Поиска (Майкрософт)](search-concept-overview.md#why-use-the-microsoft-search-api)
-- [Обзор справочника API соединителей Microsoft Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [Обзор справочника API соединителей Microsoft Graph](/graph/api/resources/indexing-api-overview)
 - [Поиск объектов настраиваемого типа (externalItem)](search-concept-custom-types.md)
 - [Скачайте образец соединителя поиска с сайта GitHub](https://github.com/microsoftgraph/msgraph-search-connector-sample)

@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0b654bb741ac5be56941eee279110ff39d415e8a
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 0cb41863dbfb53ee933e488f11c51c8c453c89d9
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65694638"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118643"
 ---
 # <a name="remove-directory-role-member"></a>Удаление элемента роли каталога
 
@@ -39,6 +39,8 @@ ms.locfileid: "65694638"
 DELETE /directoryRoles/{role-id}/members/{id}/$ref
 DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 ```
+> [!CAUTION]
+> `/$ref` Если запрос не добавлен и вызывающее приложение имеет разрешения на управление объектом-членом, объект также будет удален из Azure Active Directory (Azure AD); `403 Forbidden` в противном случае возвращается ошибка. Вы можете восстановить определенные объекты с помощью [API восстановления удаленных элементов](directory-deleteditems-restore.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
 

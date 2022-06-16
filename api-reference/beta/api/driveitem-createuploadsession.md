@@ -5,12 +5,12 @@ title: 'driveItem: createUploadSession'
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: dfb6b231b0db8664b7c01fd81f2697f4387554b6
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: e121323bd1d564b27a253c055f29a4b0c4b10372
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62442647"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118349"
 ---
 # <a name="driveitem-createuploadsession"></a>driveItem: createUploadSession
 
@@ -20,9 +20,9 @@ ms.locfileid: "62442647"
 
 Создайте сеанс отправки, чтобы приложение могло отправлять файлы, размер которых не превышает максимальный.
 
-Сеанс загрузки позволяет приложению загружать диапазоны файла в последовательном запросе API, что позволяет возобновить передачу, если подключение отброшено во время загрузки.
+Сеанс отправки позволяет приложению отправлять диапазоны файла в последовательных запросах API, что позволяет возобновить передачу при удалении подключения во время отправки.
 
-Чтобы загрузить файл с помощью сеанса загрузки:
+Чтобы отправить файл с помощью сеанса отправки:
 
 1. [Создание сеанса отправки](#create-an-upload-session).
 2. [Отправка байтов в сеанс отправки](#upload-bytes-to-the-upload-session).
@@ -409,6 +409,10 @@ Content-Type: application/json
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 [mediaSource]: ../resources/mediaSource.md
+
+## <a name="see-also"></a>См. также
+
+[Отправка большого файла](/concepts/sdks/large-file-upload.md?view=graph-rest-1.0&preserve-view=true&tabs=java)
 
 <!--
 {

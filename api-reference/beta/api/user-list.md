@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8a14aa4ee74a3d978b0da3e8c8076098545f03e0
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: e2b6657c3b4475b47f03e33b193ea26630fe304f
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65210082"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095633"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -141,8 +141,7 @@ Content-type: application/json
 
 Найдите учетную запись пользователя, используя имя для входа (также называемое локальной учетной записью).
 
->[!NOTE]
->При фильтрации по свойству **identities** требуется указывать параметры **issuer** и **issuerAssignedId**. Значение **issuerAssignedId** должно быть адресом электронной почты учетной записи пользователя, а не именем субъекта-пользователя (UPN). Если используется UPN, результатом будет пустой список.
+> **Примечание.** При фильтрации по свойству **issuerAssignedId** требуется указывать параметры **issuer** и **issuerAssignedId**. Однако в некоторых сценариях значение **issuer** будет игнорироваться. Дополнительные сведения о фильтрации удостоверений см. в [типе ресурса objectIdentity](../resources/objectIdentity.md).
 
 #### <a name="request"></a>Запрос
 
@@ -154,7 +153,7 @@ Content-type: application/json
   "name": "get_signinname_users"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
+GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'My B2C tenant')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signinname-users-csharp-snippets.md)]
@@ -200,7 +199,8 @@ Content-type: application/json
 {
   "value": [
     {
-      "displayName": "John Smith"
+      "displayName": "John Smith",
+      "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
     }
   ]
 }

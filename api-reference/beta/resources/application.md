@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 5ae85fb034e508460057fb11725df349e785f1ce
-ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
+ms.openlocfilehash: 6798369b62aab7195ebe56c6ad225a011f244466
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "66034557"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118328"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -32,7 +32,7 @@ ms.locfileid: "66034557"
 |[Перечисление приложений](../api/application-list.md) | Коллекция [application](application.md) | Получение списка приложений в организации. |
 |[Создание приложения](../api/application-post-applications.md) | [application](application.md) | Создает (регистрирует) новое приложение.|
 |[Получение приложения](../api/application-get.md) | [application](application.md) |Считывание свойств и связей объекта application.|
-|[Обновление приложения](../api/application-update.md) | [application](application.md) |Обновление объекта application. |
+|[Обновление приложения](../api/application-update.md) | Нет |Обновление объекта application. |
 |[Удаление приложения](../api/application-delete.md) | Нет |Удаление объекта application. |
 |[Список удаленных приложений](../api/directory-deleteditems-list.md) | Коллекция [directoryObject](directoryobject.md) | Получение списка недавно удаленных приложений. |
 | [Перечисление удаленных приложений, принадлежащих пользователю](../api/directory-deleteditems-user-owned.md) | Коллекция [directoryObject](directoryobject.md) | Получение приложений, принадлежащих пользователю, которые удалены в клиенте за последние 30 дней. |

@@ -1,26 +1,26 @@
 ---
 title: Создание, обновление и удаление подключений в Microsoft Graph
-description: Узнайте, как создавать подключения и управлять ими с помощью Microsoft Graph.
+description: Узнайте, как создавать подключения и управлять ими с помощью Microsoft Graph. Включает таблицу состояний подключения и операций, доступных в каждом состоянии.
 ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 1ea29376e69365724ecea76882c801a9acd807b5
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 1dd9f4a495772d7c7300776966eaa591d03ae587
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65202044"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66092669"
 ---
 <!---<author of this doc: rsamai>--->
 
 # <a name="create-update-and-delete-connections-in-microsoft-graph"></a>Создание, обновление и удаление подключений в Microsoft Graph
 
-Подключения внешних служб к службе "Поиск (Майкрософт)" представляются ресурсом [externalConnection](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0&preserve-view=true) в Microsoft Graph.
+Подключения внешних служб к службе "Поиск (Майкрософт)" представляются ресурсом [externalConnection](/graph/api/resources/externalconnectors-externalconnection) в Microsoft Graph.
 
 Платформа соединителей Microsoft Graph предлагает интуитивно понятный способ добавления внешних данных в Microsoft Graph. Подключение — это логический контейнер для внешних данных, которыми администратор управляет как единым целым.
 
-После создания подключения вы можете добавить содержимое из любого внешнего источника данных, например локального источника содержимого или внешней службы SaaS. Вы можете просматривать и управлять только теми подключениями, которые вы [создали](/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0&preserve-view=true&tabs=http) или для управления которыми вы получили явное разрешение. Администратор поиска может просматривать все подключения клиента и управлять ими в современной версии центра администрирования.
+После создания подключения вы можете добавить содержимое из любого внешнего источника данных, например локального источника содержимого или внешней службы SaaS. Вы можете просматривать и управлять только теми подключениями, которые вы [создали](/graph/api/externalconnectors-external-post-connections) или для управления которыми вы получили явное разрешение. Администратор поиска может просматривать все подключения клиента и управлять ими в современной версии центра администрирования.
 
 <!-- markdownlint-disable MD036 -->
 ![Образец пользовательской структуры системы поддержки Tickets Connector.](./images/connectors-images/connecting-external-content-manage-connections-connector-structure.png)
@@ -63,7 +63,7 @@ ms.locfileid: "65202044"
 | Обновление элемента       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
 | Удаление элемента       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
 
-Соединение позволяет приложению [определять схему](/graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0) для элементов, которые будут проиндексированы, и предоставляет конечную точку для вашей службы, чтобы добавлять, обновлять или удалять элементы из индекса. 
+Соединение позволяет приложению [определять схему](/graph/api/externalconnectors-externalconnection-post-schema) для элементов, которые будут проиндексированы, и предоставляет конечную точку для вашей службы, чтобы добавлять, обновлять или удалять элементы из индекса. 
 
 Первым шагом приложения для добавления элементов в поисковый индекс является создание соединения.
 
@@ -71,22 +71,22 @@ ms.locfileid: "65202044"
 
 Прежде чем приложение сможет добавлять элементы в поисковый индекс, оно должно создать и настроить соединение:
 
-1. [Создание подключения](/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0&preserve-view=true&tabs=http) с уникальным идентификатором, отображаемым именем и описанием.
-2. [Зарегистрируйте схему](/graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0), чтобы определить поля, которые будут включены в индекс.
+1. [Создание подключения](/graph/api/externalconnectors-external-post-connections) с уникальным идентификатором, отображаемым именем и описанием.
+2. [Зарегистрируйте схему](/graph/api/externalconnectors-externalconnection-post-schema), чтобы определить поля, которые будут включены в индекс.
 
 > [!NOTE]
 > Сведения об обновлении схемы для существующего подключения см. в статье [Возможности обновления схемы](/graph/connecting-external-content-manage-schema#schema-update-capabilities).
 
 ## <a name="update-a-connection"></a>Обновление подключения
 
-Чтобы изменить отображаемое имя или описание существующего соединения, вы можете [обновить соединение](/graph/api/externalconnectors-externalconnection-update?view=graph-rest-1.0&preserve-view=true&tabs=http).
+Чтобы изменить отображаемое имя или описание существующего соединения, вы можете [обновить соединение](/graph/api/externalconnectors-externalconnection-update).
 
 ## <a name="delete-a-connection"></a>Удаление подключения
 
-Чтобы удалить все элементы, которые были проиндексированы через соединение, вы можете [удалить соединение](/graph/api/externalconnectors-externalconnection-delete?view=graph-rest-1.0&preserve-view=true&tabs=http).
+Чтобы удалить все элементы, которые были проиндексированы через соединение, вы можете [удалить соединение](/graph/api/externalconnectors-externalconnection-delete).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - [Регистрация схемы подключения](connecting-external-content-manage-schema.md)
-- [Обзор справочника API соединителей Microsoft Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [Обзор справочника API соединителей Microsoft Graph](/graph/api/resources/indexing-api-overview)
 - [Загрузите образец соединителя поиска с GitHub.](https://github.com/microsoftgraph/msgraph-search-connector-sample)

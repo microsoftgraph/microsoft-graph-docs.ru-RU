@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3119daba10087abfe802405e2878d85851dde1ea
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 0883addf07dae70bdb80164c2f509f2824dd3b78
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65397633"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118657"
 ---
 # <a name="create-chat"></a>Создание чата
 Пространство имен: microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "65397633"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|Chat.Create, Chat.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Chat.Create |
+|Делегированные (рабочая или учебная учетная запись)|Chat.Create, Chat.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Приложение | Chat.Create |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -394,5 +394,59 @@ Content-Type: application/json
     "createdDateTime": "2020-12-04T23:11:16.175Z",
     "lastUpdatedDateTime": "2020-12-04T23:11:16.175Z",
     "chatType": "group"
+}
+```
+
+### <a name="example-5-create-a-one-on-one-chat-with-a-federated-user-outside-of-own-organization"></a>Пример 5. Создание чата "один к одному" с федеративным пользователем (за пределами организации)
+
+#### <a name="request"></a>Запрос
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_chat_oneOnOne_federated"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/chats
+Content-Type: application/json
+
+{
+  "chatType": "oneOnOne",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/v1.0/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')",
+      "tenantId": "4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1"
+    }
+  ]
+}
+```
+
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats/$entity",
+    "id": "19:82af01c5-f7cc-4a2e-a728-3a5df21afd9d_8b081ef6-4792-4def-b2c9-c363a1bf41d5@unq.gbl.spaces",
+    "topic": null,
+    "createdDateTime": "2020-12-04T23:10:28.51Z",
+    "lastUpdatedDateTime": "2020-12-04T23:10:28.51Z",
+    "chatType": "oneOnOne"
 }
 ```

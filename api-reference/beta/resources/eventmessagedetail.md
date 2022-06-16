@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 79dad5d78b3e6804a0f0b950a37dd3bce5c057e1
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 70151180d99ed4d83b1a36dfbb804c65e1966ec0
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399497"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118356"
 ---
 # <a name="eventmessagedetail-resource-type"></a>Тип ресурса eventMessageDetail
 
@@ -22,7 +22,7 @@ ms.locfileid: "65399497"
 
 Системные сообщения — это сообщения, создаваемые для таких событий, как участники, добавленные в канал, участники, добавленные в чат, и обновленное описание команды.
 
-Список поддерживаемых событий
+В следующей таблице перечислены поддерживаемые события.
 
 | Событие | Описание |
 | :---- | :---------- |
@@ -43,6 +43,8 @@ ms.locfileid: "65399497"
 | [membersDeletedEventMessageDetail](../resources/membersDeletedEventMessageDetail.md) | Элементы удалены. |
 | [membersJoinedEventMessageDetail](../resources/membersJoinedEventMessageDetail.md) | Участники присоединились. |
 | [membersLeftEventMessageDetail](../resources/membersLeftEventMessageDetail.md) | Участники слева. |
+| [messagePinnedEventMessageDetail](../resources/messagepinnedeventmessagedetail.md) | Сообщение закреплено. |
+| [messageUnpinnedEventMessageDetail](../resources/messageunpinnedeventmessagedetail.md) | Сообщение было откреплено. |
 | [tabUpdatedEventMessageDetail](../resources/tabUpdatedEventMessageDetail.md) | Вкладка обновлена. |
 | [teamArchivedEventMessageDetail](../resources/teamArchivedEventMessageDetail.md) | Команда архивирована. |
 | [teamCreatedEventMessageDetail](../resources/teamCreatedEventMessageDetail.md) | Команда создана. |

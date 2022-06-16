@@ -6,6 +6,7 @@ items:
     items:
       - name: Обзор
         href: /graph/auth/index?context=graph/api/1.0
+        displayName: 'authentication, authorization, authenticate, authorize'
       - name: Основы
         href: /graph/auth/auth-concepts?context=graph/api/1.0
       - name: Регистрация приложения
@@ -20,42 +21,75 @@ items:
         href: /graph/auth-cloudsolutionprovider?context=graph/api/1.0
       - name: Ограничение доступа к почтовому ящику
         href: /graph/auth-limit-mailbox-access?context=graph/api/1.0
+      - name: Устранить ошибки авторизации
+        href: /graph/resolve-auth-errors?context=graph/api/1.0
   - name: Использование API
     items:
       - name: Обзор
         href: /graph/use-the-api?context=graph/api/1.0
+        displayName: 'Microsoft Graph API, API, Microsoft Graph REST API, REST API'
+      - name: Доступ к данным и методам
+        href: /graph/traverse-the-graph?context=graph/api/1.0
       - name: Разбиение на страницы
         href: /graph/paging?context=graph/api/1.0
-      - name: Использование параметров запроса
-        href: /graph/query-parameters?context=graph/api/1.0
+      - name: Параметры запроса
         items:
+          - name: Использование параметров запроса
+            href: /graph/query-parameters?context=graph/api/1.0
+            displayName: 'OData query parameters, OData'
           - name: Использование параметра поискового запроса
             href: /graph/search-query-parameter?context=graph/api/1.0
           - name: Расширенные возможности запросов
             href: /graph/aad-advanced-queries?context=graph/api/1.0
+          - name: Оптимизация запросов с помощью параметров запроса
+            href: /learn/modules/optimize-data-usage
       - name: Пакетная обработка
-        displayName: Batch requests
         href: /graph/json-batching?context=graph/api/1.0
+        displayName: Batch request
       - name: Регулирование
-        href: /graph/throttling?context=graph/api/1.0
+        items:
+          - name: Обзор
+            href: /graph/throttling?context=graph/api/1.0
+            displayName: throttling
+          - name: Оптимизация сетевого трафика
+            href: /learn/modules/optimize-network-traffic
       - name: Уведомления об изменениях
-        displayname: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
         items:
           - name: Обзор
             href: /graph/api/resources/webhooks?context=graph/api/1.0
-          - name: Учебник
+            displayName: 'change notifications, WebHooks, set up notifications for changes in resource data'
+          - name: Учебник по уведомлениям об изменениях
             href: /learn/modules/msgraph-changenotifications-trackchanges
           - name: Пропущенные уведомления об изменениях
-            href: /graph/webhooks-lifecycle
+            href: /graph/webhooks-lifecycle?context=graph/api/1.0
           - name: Уведомления с данными ресурсов
             href: /graph/webhooks-with-resource-data?context=graph/api/1.0
-          - name: Получение уведомлений об изменениях для сообщений чатов или каналов
-            href: /graph/teams-changenotifications-chatmessage?context=graph/api/1.0
+          - name: Получение уведомлений разными способами (предварительная версия)
+            href: /graph/change-notifications-delivery?context=graph/api/1.0
+          - name: Уведомления об изменениях облачной печати
+            href: /graph/universal-print-webhook-notifications?context=graph/api/1.0
+          - name: Уведомления об изменениях для ресурсов Microsoft Teams
+            items:
+              - name: Типы уведомлений и полезные данные
+                href: /graph/teams-change-notification-in-microsoft-teams-overview?context=graph/api/1.0
+                displayName: 'change notifications, Teams, Microsoft Teams'
+              - name: Команды и каналы
+                href: /graph/teams-changenotifications-team-and-channel?context=graph/api/1.0
+              - name: Участие в командах и каналах
+                href: /graph/teams-changenotifications-teamMembership?context=graph/api/1.0
+              - name: Сообщения в чатах и каналах
+                href: /graph/teams-changenotifications-chatmessage?context=graph/api/1.0
+              - name: Чат
+                href: /graph/teams-changenotifications-chat?context=graph/api/1.0
+              - name: Участие в чате
+                href: /graph/teams-changenotifications-chatMembership?context=graph/api/1.0
+          - name: Уведомления об изменениях для ресурсов Outlook
+            href: /graph/outlook-change-notifications-overview?context=graph/api/1.0
       - name: Отслеживание изменений
-        displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
         items:
           - name: Обзор
             href: /graph/delta-query-overview?context=graph/api/1.0
+            displayName: 'Delta query, track changes, change tracking'
           - name: Получение изменений для событий (пример)
             href: /graph/delta-query-events?context=graph/api/1.0
           - name: Получение изменений для групп (пример)
@@ -65,10 +99,10 @@ items:
           - name: Получение изменений для пользователей (пример)
             href: /graph/delta-query-users?context=graph/api/1.0
       - name: Добавление пользовательских данных
-        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
         items:
           - name: Обзор
             href: /graph/extensibility-overview?context=graph/api/1.0
+            displayName: 'add custom data, extensions, resources using extensions'
           - name: Использование открытых расширений (пример)
             href: /graph/extensibility-open-users?context=graph/api/1.0
           - name: Использование расширений схемы (пример)
@@ -77,6 +111,7 @@ items:
         items:
           - name: Начало работы
             href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/1.0
+            displayName: 'Graph Explorer, try the API, try API'
           - name: Работа с песочницей Graph
             href: /graph/graph-explorer/graph-explorer-features?context=graph/api/1.0
       - name: Использование Postman
@@ -84,13 +119,12 @@ items:
       - name: Системные сообщения
         href: /graph/system-messages?context=graph/api/1.0
   - name: Миграция
-    expanded: false
     items:
       - name: Azure AD Graph
-        displayname: 'Migration, Azure AD Graph'
         items:
-          - name: Обзор
-            href: /graph/migrate-azure-ad-graph-overview
+          - name: Миграция приложений Azure AD Graph
+            href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
+            displayName: 'Migration, Azure AD Graph, migrate'
           - name: Контрольный список для переноса приложений
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
           - name: 1. Проверка различий
@@ -119,16 +153,28 @@ items:
                 href: /graph/migrate-azure-ad-graph-client-libraries?context=graph/api/1.0
           - name: '4. Развертывание, тестирование и расширение'
             href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/1.0
-          - name: Вопросы и ответы о миграции
+          - name: 'Миграция Azure AD Graph: вопросы и ответы'
             href: /graph/migrate-azure-ad-graph-faq?context=graph/api/1.0
+            displayName: 'migrate, frequently asked questions'
           - name: Настройка разрешений Azure AD Graph
             href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/1.0
+      - name: Веб-службы Exchange
+        items:
+          - name: Миграция приложений EWS
+            href: /graph/migrate-exchange-web-services-overview?context=graph/api/1.0
+            displayName: 'Migration, Exchange Web Services, EWS, migrate'
+          - name: Проверка подлинности
+            href: /graph/migrate-exchange-web-services-authentication?context=graph/api/1.0
+          - name: Сопоставление API
+            href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/1.0
   - name: Использование пакетов SDK
     items:
       - name: Обзор
         href: /graph/sdks/sdks-overview?context=graph/api/1.0
+        displayName: 'SDK, SDKs, Microsoft Graph SDK'
       - name: Установка пакета SDK
         href: /graph/sdks/sdk-installation?context=graph/api/1.0
+        displayName: 'install SDK, install SDKs, installation'
       - name: Создание клиента
         href: /graph/sdks/create-client?context=graph/api/1.0
       - name: Настройка клиента
@@ -147,25 +193,29 @@ items:
         href: /graph/sdks/use-beta?context=graph/api/1.0
       - name: Воспользуйтесь PowerShell
         items:
-          - name: Установка
-            href: /graph/powershell/installation?context=graph/api/1.0
+          - name: Обзор PowerShell
+            href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
+          - name: Установка пакета SDK для PowerShell
+            href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
           - name: Начало работы
-            href: /graph/powershell/get-started?context=graph/api/1.0
-          - name: Перемещение по пакету SDK
-            href: /graph/powershell/navigating?context=graph/api/1.0
+            href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
+          - name: Навигация в пакете SDK для PowerShell
+            href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
           - name: Проверка подлинности только для приложений
-            href: /graph/powershell/app-only?context=graph/api/1.0
+            href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
   - name: Использование набора средств
     items:
-      - name: Общие сведения о наборе средств
+      - name: Обзор
         href: /graph/toolkit/overview?context=graph/api/1.0
+        displayName: 'Microsoft Graph Toolkit, toolkit'
       - name: Начало работы
         items:
-          - name: Обзор
+          - name: Начало работы
             href: /graph/toolkit/get-started/overview?context=graph/api/1.0
-          - name: /graph/toolkit для React
+            displayName: 'Microsoft Graph Toolkit, toolkit'
+          - name: Набор средств для React
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/1.0
-          - name: /graph/toolkit для SPFx
+          - name: Набор средств для SPFx
             href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/1.0
       - name: Создание первого приложения
         items:
@@ -189,6 +239,7 @@ items:
         items:
           - name: Использование поставщиков
             href: /graph/toolkit/providers/providers?context=graph/api/1.0
+            displayName: 'Microsoft Graph Toolkit providers, toolkit provider'
           - name: Поставщик MSAL
             href: /graph/toolkit/providers/msal?context=graph/api/1.0
           - name: Поставщик MSAL2
@@ -199,6 +250,8 @@ items:
             href: /graph/toolkit/providers/teams?context=graph/api/1.0
           - name: Поставщик MSAL2 Teams
             href: /graph/toolkit/providers/teams-msal2?context=graph/api/1.0
+          - name: Поставщик TeamsFx
+            href: /graph/toolkit/providers/teamsfx?context=graph/api/1.0
           - name: Поставщик Electron
             href: /graph/toolkit/providers/electron?context=graph/api/1.0
           - name: Поставщик прокси
@@ -209,6 +262,7 @@ items:
         items:
           - name: Вход
             href: /graph/toolkit/components/login?context=graph/api/1.0
+            displayName: 'Microsoft Graph toolkit components, toolkit component'
           - name: Получение
             href: /graph/toolkit/components/get?context=graph/api/1.0
           - name: Пользователь
@@ -249,17 +303,21 @@ items:
     items:
       - name: Рекомендации
         href: /graph/best-practices-concept?context=graph/api/1.0
+        displayName: 'Microsoft Graph, Best practices for working with Microsoft Graph'
       - name: Известные проблемы
         href: /graph/known-issues?context=graph/api/1.0
-      - name: Журнал изменений
+        displayName: 'Microsoft Graph, Known issues with Microsoft Graph'
+      - name: Журнал изменений API
         href: 'https://developer.microsoft.com/graph/changelog'
       - name: Ошибки
         href: /graph/errors?context=graph/api/1.0
-  - name: Справочник по версии 1.0
+        displayName: Microsoft Graph error responses and error resource types
+  - name: Справочные материалы по API версии 1.0
     expanded: true
     items:
       - name: Обзор
         href: overview.md
+        displayName: Microsoft Graph REST API v1.0 reference
       - name: Пользователи
         items:
           - name: Обзор
@@ -294,7 +352,7 @@ items:
             href: resources/calendar.md
             displayName: 'Outlook, Outlook calendar'
             items:
-              - name: Создание
+              - name: Create
                 href: api/user-post-calendars.md
               - name: Создание группы календарей
                 href: api/user-post-calendargroups.md
@@ -317,7 +375,7 @@ items:
           - name: Контакты
             href: resources/contact.md
             items:
-              - name: Создание
+              - name: Create
                 href: api/user-post-contacts.md
               - name: Создание папки контактов
                 href: api/user-post-contactfolders.md
@@ -386,9 +444,9 @@ items:
                 href: api/user-list-transitivememberof.md
           - name: Аналитика
             items:
-              - name: Аналитика Office Graph
+              - name: Office Graph аналитики
                 items:
-                  - name: Аналитика Office Graph
+                  - name: Office Graph аналитики
                     href: resources/officegraphinsights.md
                   - name: Список "Общие"
                     href: api/insights-list-shared.md
@@ -455,10 +513,10 @@ items:
                     href: api/user-get-mailboxsettings.md
                   - name: Обновление параметров почтового ящика
                     href: api/user-update-mailboxsettings.md
-              - name: Службы пользователей Outlook
+              - name: Outlook пользовательских служб
                 expanded: true
                 items:
-                  - name: Пользователь Outlook
+                  - name: Outlook пользователя
                     href: resources/outlookuser.md
                   - name: Создание категории
                     href: api/outlookuser-post-mastercategories.md
@@ -488,7 +546,7 @@ items:
             items:
               - name: Список задач
                 href: api/planneruser-list-tasks.md
-          - name: Teamwork
+          - name: Командная работа
             items:
               - name: Приложение установлено
                 href: resources/teamsappinstallation.md
@@ -4196,7 +4254,7 @@ items:
                     href: resources/intune-shared-alldevicesassignmenttarget.md
                   - name: Объект назначения всех лицензированных пользователей
                     href: resources/intune-shared-alllicensedusersassignmenttarget.md
-                  - name: Тип пакета VPN для Android enterprise always on
+                  - name: Android корпоративный всегда на типе пакета VPN
                     href: resources/intune-shared-androidenterprisealwaysonvpnpackagetype.md
                   - name: Состояние соответствия
                     href: resources/intune-shared-compliancestatus.md
@@ -4256,7 +4314,7 @@ items:
                     href: api/serviceannouncement-list-healthoverviews.md
                   - name: Получение сведений о работоспособности службы
                     href: api/servicehealth-get.md
-              - name: Проблема с работоспособностью службы
+              - name: Работоспособность служб проблемы
                 href: resources/servicehealthissue.md
                 items:
                   - name: Список проблем
@@ -4633,7 +4691,7 @@ items:
                 href: api/permission-update.md
               - name: Удаление разрешения
                 href: api/permission-delete.md
-      - name: Удостоверения и доступ
+      - name: Удостоверение и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: Обзор
@@ -5100,7 +5158,7 @@ items:
                     href: api/oauth2permissiongrant-delete.md
                   - name: Получение дельты
                     href: api/oauth2permissiongrant-delta.md
-              - name: Защита идентификации
+              - name: Защита удостоверений
                 href: resources/identityprotection-overview.md
                 items:
                   - name: Обнаружение рисков
@@ -5253,7 +5311,7 @@ items:
                             href: api/fido2authenticationmethodconfiguration-update.md
                           - name: Delete
                             href: api/fido2authenticationmethodconfiguration-delete.md
-                      - name: Политика Microsoft Authenticator
+                      - name: Microsoft Authenticator политики
                         href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: Получение
@@ -5536,7 +5594,7 @@ items:
               - name: Запросы согласия
                 href: resources/consentrequests-overview.md
                 items:
-                  - name: Политика запроса согласия администратора
+                  - name: Администратор политики запроса согласия
                     href: resources/adminconsentrequestpolicy.md
                     items:
                       - name: Получение
@@ -5984,7 +6042,7 @@ items:
                 href: api/user-list-people.md
           - name: Аналитика
             items:
-              - name: Аналитика Office Graph
+              - name: Office Graph аналитики
                 href: resources/officegraphinsights.md
               - name: Shared
                 href: resources/insights-shared.md
@@ -6108,7 +6166,7 @@ items:
                 items:
                   - name: Подготовка списка
                     href: api/provisioningobjectsummary-list.md
-          - name: Отчеты об использовании Microsoft 365
+          - name: Microsoft 365 отчетов об использовании
             items:
               - name: Обзор
                 href: resources/report.md
@@ -6718,7 +6776,7 @@ items:
           - name: Команда
             href: resources/team.md
             items:
-              - name: Создание
+              - name: Create
                 href: api/team-post.md
               - name: Создание команды из группы
                 href: api/team-put-teams.md

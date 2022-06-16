@@ -1,15 +1,15 @@
 ---
-title: 'Подключение к данным Microsoft Graph: часто задаваемые вопросы'
-description: Советы, помогающие воспользоваться преимуществами подключения к данным Microsoft Graph.
+title: 'Вопросы и ответы: подключение к данным Microsoft Graph'
+description: Найдите ответы на часто задаваемые вопросы о том, как подключение к данным позволяет разработчикам создавать приложения, предоставляющие управляемый доступ к масштабным наборам данных Microsoft Graph.
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 24a740efea421b18b1044401f0252102262da6b7
-ms.sourcegitcommit: 4ef29d4a2cfa1ccc4a3da649e683377b17b90108
+ms.openlocfilehash: 53e8231d4e60d498a687f5fb3c8ae6c92b4578d3
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65125887"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093131"
 ---
 # <a name="microsoft-graph-data-connect-frequently-asked-questions"></a>Подключение к данным Microsoft Graph: часто задаваемые вопросы
 

@@ -1,22 +1,22 @@
 ---
-title: Удаление зарегистрированныхowners
-description: Удалите пользователя как зарегистрированного владельца устройства.
+title: Удаление registeredOwners
+description: Удаление пользователя в качестве зарегистрированного владельца устройства.
 ms.localizationpriority: medium
 author: michaelrm97
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a8abb65f4ce55d4d8d30fdd571bda7f4a846f247
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: f8bf77c701349949253575d5043e2573746c6e53
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256517"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118405"
 ---
 # <a name="delete-registeredowner"></a>Удаление registeredOwner
 
 Пространство имен: microsoft.graph
 
-Удалите пользователя как зарегистрированного владельца устройства.
+Удаление пользователя в качестве зарегистрированного владельца устройства.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -35,6 +35,8 @@ ms.locfileid: "60256517"
 ```http
 DELETE /devices/{id}/registeredOwners/{id}/$ref
 ```
+> [!CAUTION]
+> `/$ref` Если запрос не добавлен и вызывающее приложение имеет разрешения на управление пользователем, который является зарегистрированным владельцем устройства, пользователь также будет удален из Azure Active Directory (Azure AD); `403 Forbidden` в противном случае возвращается ошибка. Удаленных пользователей можно восстановить с помощью [API восстановления удаленных элементов](directory-deleteditems-restore.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
@@ -74,6 +76,10 @@ DELETE https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners/{id}/$ref
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-registeredowners-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-registeredowners-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
