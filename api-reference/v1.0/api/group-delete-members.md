@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5bee308c393c11b4b1cf72a279428db80a94f3d8
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 70a9992fc2f9991d3c94156c0e48fa45dd16d435
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900147"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118629"
 ---
 # <a name="remove-member"></a>Удаление участника
 
@@ -38,9 +38,8 @@ ms.locfileid: "65900147"
 ```http
 DELETE /groups/{id}/members/{id}/$ref
 ```
-
-> [!IMPORTANT]
-> Если `/$ref` не добавлено к запросу, пользователь будет удален из Azure Active Directory (Azure AD) в случае использования соответствующих разрешений. В противном случае возвращается ошибка `403 Forbidden`. 
+> [!CAUTION]
+> Если `/$ref` не добавлено к запросу и вызывающее приложение имеет разрешения на управление типом объекта-элемента, объект-элемент также будет удален из Azure Active Directory (Azure AD); в противном случае возвращается ошибка `403 Forbidden`. Например, приложение с разрешениями *GroupMember.ReadWrite.All* и *User.ReadWrite.All* удалит пользователя. Определенные объекты можно восстановить с помощью [API восстановления удаленных элементов](directory-deleteditems-restore.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
