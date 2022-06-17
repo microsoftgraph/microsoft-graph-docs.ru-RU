@@ -4,12 +4,12 @@ description: Отправка уведомлений веб-канала дей�
 author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 990c7da84691c0cd15ad1362a899180c1f4b08c1
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 3136d7c50f687eb1ef5366719e36a823715bc816
+ms.sourcegitcommit: 8f54d85e8e8b0a1f72d4557d2bb7749b972dd3e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695032"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141611"
 ---
 # <a name="send-activity-feed-notifications-to-users-in-microsoft-teams"></a>Отправка уведомлений веб-канала действий пользователям в Microsoft Teams
 
@@ -109,7 +109,7 @@ Teams приложения можно устанавливать в команд
 - [Отправка уведомления пользователю в команде](/graph/api/team-sendactivitynotification)
 - [Отправка уведомления пользователю](/graph/api/userteamwork-sendactivitynotification)
 
-Кроме того, уведомления могут отправляться массово до 100 пользователям одновременно:
+Кроме того, уведомления могут отправляться массово до 100 пользователей одновременно:
 
 * [Массовая отправка уведомлений нескольким пользователям](/graph/api/teamwork-sendactivitynotificationtorecipients)
 

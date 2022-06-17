@@ -546,7 +546,7 @@ items:
             items:
               - name: Список задач
                 href: api/planneruser-list-tasks.md
-          - name: Командная работа
+          - name: Teamwork
             items:
               - name: Приложение установлено
                 href: resources/teamsappinstallation.md
@@ -568,7 +568,7 @@ items:
                 href: api/chat-list.md
           - name: Задачи To-Do
             items:
-              - name: Задача
+              - name: Задача в приложении "Список дел"
                 href: resources/todotask.md
               - name: Создание задачи
                 href: api/todotasklist-post-tasks.md
@@ -1265,7 +1265,7 @@ items:
                 href: api/calendarpermission-delete.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4497,7 +4497,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: Обновление
                 href: api/educationassignmentdefaults-update.md
-          - name: Категория
+          - name: Category
             href: resources/educationcategory.md
             items:
               - name: Создание
@@ -5837,7 +5837,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -6109,7 +6109,7 @@ items:
                 href: api/contact-delta.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -7249,9 +7249,10 @@ items:
         items:
           - name: Обзор
             href: resources/todo-overview.md
-          - name: Список задач
-            href: resources/todotasklist.md
+          - name: Список задач в приложении "Список дел"
             items:
+              - name: Список задач в приложении "Список дел"
+                href: resources/todotasklist.md
               - name: Перечисление списков задач
                 href: api/todo-list-lists.md
               - name: Создание списка задач
@@ -7268,9 +7269,10 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Задача
-            href: resources/todotask.md
+          - name: Задача в приложении "Список дел"
             items:
+              - name: Задача в приложении "Список дел"
+                href: resources/todotask.md
               - name: Перечисление задач
                 href: api/todotasklist-list-tasks.md
               - name: Создание задачи
