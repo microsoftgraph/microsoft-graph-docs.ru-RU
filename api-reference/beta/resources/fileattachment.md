@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса fileAttachment
-description: Файл (например, текстовый файл или документ Word), вложенный в событие,
-localization_priority: Normal
+description: Файл (например, текстовый файл или документ Word), вложенный в событие, сообщение, задачу или запись.
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: outlook
 author: abheek-das
-ms.openlocfilehash: 1ef32e91897ac322b84922012df47c168094f57d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 14ae2bb7ec5e341a144fa5c00eb131853ea6b679
+ms.sourcegitcommit: 2132198551c7d1f37474debab471f612a3e35a08
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135648"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141245"
 ---
 # <a name="fileattachment-resource-type"></a>Тип ресурса fileAttachment
 
@@ -20,7 +20,7 @@ ms.locfileid: "50135648"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-Файл (например, текстовый файл или документ Word), вложенный в событие [пользователя,](../resources/event.md) [сообщение,](../resources/message.md) [задачу Outlook](../resources/outlooktask.md)или [post.](../resources/post.md) 
+Файл (например, текстовый файл или документ Word), вложенный в [событие пользователя,](../resources/event.md) [сообщение, Outlook](../resources/message.md) [задачу](../resources/outlooktask.md) [или запись](../resources/post.md). 
 
 При создании вложенного файла включите в текст запроса следующее:
 
@@ -36,8 +36,8 @@ ms.locfileid: "50135648"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Чтение свойств, связей или необработанных содержимого объекта fileAttachment.|
-|[Delete](../api/attachment-delete.md) | Нет |Удаление объекта fileAttachment. |
+|[Получение](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Чтение свойств, связей или необработанного содержимого объекта **fileAttachment** .|
+|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта **fileAttachment** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -47,18 +47,18 @@ ms.locfileid: "50135648"
 |contentLocation|String|Не используйте это свойство, так как оно не поддерживается.|
 |contentType|String|Тип контента этого вложения.|
 |id|String|Идентификатор вложения.|
-|isInline|Boolean|Задано значение true, если это встроенное вложение.|
+|isInline|Boolean|Задайте `true` значение, если это встроенная вложение.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения вложения.|
 |name|String|Имя, представляющее текст, который отображается под значком, представляющим внедренное вложение. Оно может не быть фактическим именем файла.|
 |size|Int32|Размер вложения в байтах.|
 
 ## <a name="relationships"></a>Связи
-Нет
+Отсутствуют.
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -80,7 +80,7 @@ ms.locfileid: "50135648"
   "isInline": true,
   "lastModifiedDateTime": "String (timestamp)",
   "name": "string",
-  "size": 1024
+  "size": "Int32"
 }
 
 ```

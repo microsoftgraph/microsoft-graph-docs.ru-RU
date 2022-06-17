@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 52b71c62e203bb1adba7c14f9bf72681ff4464a3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 299c98d0e751e835861fda43216c2bdabed05e24
+ms.sourcegitcommit: 2132198551c7d1f37474debab471f612a3e35a08
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067481"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141231"
 ---
 # <a name="conversationmember-resource-type"></a>Тип ресурса conversationMember
 
 Пространство имен: microsoft.graph
 
-Представляет пользователя в [команде,](team.md) [канале](channel.md)или [чате.](chat.md)
+Представляет пользователя в команде, [канале](team.md) или [чате](chat.md).[](channel.md)
 См. [также aadUserConversationMember](aaduserconversationmember.md).
 
 ## <a name="methods"></a>Методы
@@ -44,7 +44,7 @@ ms.locfileid: "59067481"
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Уникальный идентификатор пользователя.|
 |displayName| string | Отображаемое имя пользователя. |
-|roles| Коллекция строк | Роли этого пользователя. |
+|roles| Коллекция строк | Роли этого пользователя. Это свойство содержит только дополнительные квалификаторы, если это необходимо. Например, `owner` если член имеет  привилегии, `owner` свойство ролей содержит одно из значений. Аналогично, если член является гостевым, свойство **ролей** содержит `guest` одно из значений. Базовый член не должен иметь значений, указанных в **свойстве** ролей.  |
 |visibleHistoryStartDateTime| DateTimeOffset | Метка времени, обозначающая, насколько глубоко участник беседы может видеть историю беседы. Это свойство можно задать только для участников чата. |
 
 ## <a name="json-representation"></a>Представление JSON

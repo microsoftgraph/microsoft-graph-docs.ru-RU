@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fd0a85bb14d6b205e81a47259dbdc7616fc86a9f
-ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
+ms.openlocfilehash: fa41b65aa3cfdd894795337430622aebbf80c45a
+ms.sourcegitcommit: 2132198551c7d1f37474debab471f612a3e35a08
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62056339"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141238"
 ---
 # <a name="conversationmember-resource-type"></a>Тип ресурса conversationMember
 
@@ -18,7 +18,7 @@ ms.locfileid: "62056339"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет пользователя в [команде,](team.md) [канале или](channel.md) [чате.](chat.md)
+Представляет пользователя в команде [, канале](team.md) [или](channel.md) [чате](chat.md).
 
 ## <a name="methods"></a>Методы
 
@@ -46,7 +46,7 @@ ms.locfileid: "62056339"
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Уникальный идентификатор пользователя.|
 |displayName| string | Отображаемое имя пользователя. |
-|roles| Коллекция строк | Роли этого пользователя. |
+|roles| Коллекция строк | Роли этого пользователя. Это свойство содержит только дополнительные квалификаторы, если это необходимо. Например, `owner` если член имеет  привилегии, `owner` свойство ролей содержит одно из значений. Аналогично, если член является гостевым, свойство **ролей** содержит `guest` одно из значений. Базовый член не должен иметь значений, указанных в **свойстве** ролей. |
 |visibleHistoryStartDateTime| DateTimeOffset | Метка времени, обозначающая, насколько глубоко участник беседы может видеть историю беседы. Это свойство можно задать только для участников чата. |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -76,10 +76,10 @@ ms.locfileid: "62056339"
 ## <a name="see-also"></a>См. также
 
 - [aadUserConversationMember](aaduserconversationmember.md)
-- [SkypeForBusinessUserConversationMember](skypeForBusinessUserConversationMember.md)
+- [skypeForBusinessUserConversationMember](skypeForBusinessUserConversationMember.md)
 - [anonymousGuestConversationMember](anonymousGuestConversationMember.md)
-- [SkypeUserConversationMember](skypeUserConversationMember.md)
-- [MicrosoftAccountUserConversationMember](microsoftAccountUserConversationMember.md)
+- [skypeUserConversationMember](skypeUserConversationMember.md)
+- [microsoftAccountUserConversationMember](microsoftAccountUserConversationMember.md)
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

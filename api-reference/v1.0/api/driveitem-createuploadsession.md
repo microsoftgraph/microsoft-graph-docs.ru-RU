@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: Создайте сеанс отправки, чтобы приложение могло отправлять файлы, размер которых не превышает максимальный.
 doc_type: apiPageType
-ms.openlocfilehash: e3b03cb0e48a32ba26d5f1dfa323de9fed06adf7
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: b2e24a917766de1cd9e4f4853d4a88d3c963da41
+ms.sourcegitcommit: 2132198551c7d1f37474debab471f612a3e35a08
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118524"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141217"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Отправка больших файлов с помощью сеанса отправки
 
@@ -405,7 +405,7 @@ Content-Type: application/json
 
 ## <a name="see-also"></a>См. также
 
-[Отправка большого файла](/concepts/sdks/large-file-upload.md?view=graph-rest-1.0&preserve-view=true&tabs=java)
+[Отправка большого файла](/graph/sdks/large-file-upload)
 
 <!-- {
   "type": "#page.annotation",
