@@ -1,15 +1,15 @@
 ---
 title: Политики и выставление счетов для подключения к данным Microsoft Graph
-description: Описание поддерживаемых политик и модели выставления счетов Подключения к данным.
+description: Сведения о политиках Azure, поддерживаемых для приложения, созданного на основе данных Microsoft 365, и счета, связанного с используемой вами фабрикой данных Azure.
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 83c285d94a060f5e66c76e27ab041a04c4da8d7a
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: cf3942063936f2b26811251290c9c4a135dfd43e
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176587"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093985"
 ---
 # <a name="microsoft-graph-data-connect-policies-and-billing"></a>Политики и выставление счетов для подключения к данным Microsoft Graph
 

@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 04361ff86fc4106d0792b43b2ea7638a41e04b7c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: e43b300119e8a3efb1b8deca5d82b36a26c339e3
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337924"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093069"
 ---
 # <a name="change-notifications-for-outlook-resources-in-microsoft-graph"></a>Уведомления об изменениях, связанных с ресурсами Outlook, в Microsoft Graph
 
@@ -36,13 +36,13 @@ API Microsoft Graph позволяет подписаться на измене�
 
 [!INCLUDE [outlook-subscription-notes](../includes/outlook-subscription-notes.md)]
 
-В зависимости от ресурса разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API.
+В зависимости от ресурса, используйте для вызова этого API разрешение из приведенной ниже таблице с наименьшими разрешениями.
 
 | Ресурс| Поддерживаемые пути ресурсов| Делегированные (рабочая или учебная учетная запись)| Делегированное (личная учетная запись Майкрософт)| Для приложений|
 |:--------|:------------------------|:----------------------------------|:--------------------------------------|:-----------|
 |[contact](/graph/api/resources/contact) | Изменения всех личных контактов в почтовом ящике пользователя: <br>`/me/contacts`<br>`/users/{id}/contacts`<br>Изменения контактов в contactFolder пользователя:<br>`/users/{id}/contactFolders/{id}/contacts` | Contacts.Read | Contacts.Read | Contacts.Read |
 |[event](/graph/api/resources/event)     | Изменения всех событий в почтовом ящике пользователя: <br>`/me/events`<br>`/users/{id}/events` | Calendars.Read | Calendars.Read | Calendars.Read |
-|[message](/graph/api/resources/message) | Изменения во всех сообщениях в почтовом ящике пользователя: <br>`/me/messages`<br>`/users/{id}/messages`<br>Изменения в сообщениях в mailFolder пользователя:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[message](/graph/api/resources/message) | Изменения во всех сообщениях в почтовом ящике пользователя: <br>`/me/messages`<br>`/users/{id}/messages`<br>Изменения в сообщениях в mailFolder пользователя:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.Read |
 
 ### <a name="include-resource-data-in-notification-payload-preview"></a>Включить данные ресурсов в полезных данных уведомлений (предварительная версия)
 
