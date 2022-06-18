@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Прочитайте о самых важных новых возможностях Microsoft Graph за последние два месяца, о том, что было добавлено в более ранних выпусках, и о том, как делиться идеями.
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: db42821b1e22d2845c8c4c6dff97cc7d46f8feb3
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 33d64635297761f0ac625c4a460e36abba34795e
+ms.sourcegitcommit: 8f54d85e8e8b0a1f72d4557d2bb7749b972dd3e2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095001"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141618"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -30,6 +30,9 @@ ms.locfileid: "66095001"
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 Разрешите клиенту Azure Active Directory (Azure AD) настроить [федерацию с другой организацией, поставщик удостоверений (IdP) которой поддерживает протокол SAML или WS-Fed](/graph/api/resources/samlOrWsFedExternalDomainFederation). Это позволит клиенту Azure AD предоставить доступ к своим ресурсам гостевым пользователям.
 
+### <a name="search"></a>Поиск
+Для [поискового запроса](/graph/api/resources/searchrequest) можно указать до 1000 результатов поиска на странице.
+
 ### <a name="sites-and-lists"></a>Сайты и списки
 - Получите коллекцию совместимых ресурсов [типа контента](/graph/api/resources/contentType) из концентратора типов контента, совместимых с помощью действия [getCompatibleHubContentTypes](/graph/api/contenttype-getcompatiblehubcontenttypes). 
 - Добавьте или синхронизируйте тип контента из концентратора типов контента на [сайт](/graph/api/resources/site) или в [список](/graph/api/resources/list) с помощью действия [addCopyFromContentTypeHub](/graph/api/contenttype-addcopyfromcontenttypehub). Это делает тип контента или его обновление доступными для определенного сайта или списка, где это необходимо. Это улучшение по сравнению с устаревшей инфраструктурой синхронизации, которая распространяет тип контента на все сайты в организации, сокращая время ожидания распространения публикации. 
@@ -42,6 +45,10 @@ ms.locfileid: "66095001"
 
 ### <a name="teamwork"></a>Teamwork
 [Получение сообщений в канале](/graph/api/channel-list-messages) и [включение всех ответов](/graph/api/channel-list-messages#example-3-request-with-top-and-expand-query-options-on-replies) в сообщение.
+
+### <a name="to-do-tasks"></a>Задачи To-Do
+- Разделите сложную [задачу](/graph/api/resources/todotask) на более выполнимые, маленькие задачи, каждая из которых является [элементом контрольного списка](/graph/api/resources/checklistitem).
+- Пометьте задачу [категорией](/graph/api/resources/outlookcategory), определенной пользователем для группирования контактов, событий, сообщений, записей групп и задач Outlook.
 
 
 ## <a name="may-2022-new-in-preview-only"></a>Май 2022 г.: новые возможности только в предварительной версии
@@ -63,8 +70,14 @@ ms.locfileid: "66095001"
 ### <a name="education"></a>Образование
 Использование ресурса [Teams](/graph/api/resources/educationteamsappresource?view=graph-rest-beta&preserve-view=true), соответствующего установленному приложению Microsoft Teams, чтобы разрешить пользователям образовательных служб создавать задания и делиться заданиями во внедренных приложениях Teams, таких как YouTube или FlipGrid.
 
+### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
+Активация службы [для организации](/graph/api/organization-activateService?view=graph-rest-beta&preserve-view=true) и [пользователя](/graph/api/user-activateServicePlan?view=graph-rest-beta&preserve-view=true) устарела и перестанет возвращать данные 30 июня 2022 г.
+
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 В области [роли пользователя по умолчанию](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta&preserve-view=true) [политики авторизации](/graph/api/resources/authorizationPolicy?view=graph-rest-beta&preserve-view=true) укажите, может ли зарегистрированный владелец устройства считывать собственные ключи восстановления BitLocker.
+
+### <a name="reports--identity-and-access-reports"></a>Отчеты | Отчеты об удостоверениях и доступе
+Получите [отчет об использовании зарегистрированных методов проверки подлинности пользователя](/graph/api/resources/userregistrationdetails?view=graph-rest-beta&preserve-view=true), который включает метод многофакторной проверки подлинности по умолчанию.
 
 ### <a name="search--index"></a>Поиск | Индекс
 [Получение](/graph/api/externalconnectors-connectionquota-get?view=graph-rest-beta&preserve-view=true) [сведений о квоте](/graph/api/resources/externalconnectors-connectionQuota?view=graph-rest-beta&preserve-view=true) для [подключения](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true). Эти сведения включают количество элементов, которые можно принять в подключение, учитывая элементы, остающиеся в подключении, и остающуюся квоту на уровне клиента для всех подключений.
@@ -73,8 +86,11 @@ ms.locfileid: "66095001"
 [Отслеживание изменений в ресурсах элементов списка SharePoint](/graph/api/listitem-delta?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="teamwork"></a>Командная работа
-Использование разрешений приложений для [получения всех чатов](/graph/api/chat-list?view=graph-rest-beta&preserve-view=true), в которых участвует указанный пользователь, без необходимости присутствия пользователя.
+- Использование разрешений приложений для [получения всех чатов](/graph/api/chat-list?view=graph-rest-beta&preserve-view=true), в которых участвует указанный пользователь, без необходимости присутствия пользователя.
+- [Массовая отправка уведомлений в веб-канале действий нескольким пользователям](/graph/api/teamwork-sendActivityNotificationToRecipients?view=graph-rest-beta&preserve-view=true) (до 100 пользователей одновременно).
 
+### <a name="to-do-tasks"></a>Задачи To-Do
+С 31 мая 2022 г. [набор API задач, созданный на основе baseTask](/graph/api/resources/tasks-overview?view=graph-rest-beta&preserve-view=true), является устаревшим. Этот набор API прекратит возвращать данные 31 августа 2022 г. Вместо этого используйте [набор API задач, созданный на основе todoTask](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true).
 
 ## <a name="april-2022-new-and-generally-available"></a>Апрель 2022 г.: новое и общедоступное
 
