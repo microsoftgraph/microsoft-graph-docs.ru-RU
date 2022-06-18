@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3ebab5bc652f6e6b484312420fb779d849eabb20
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: 052fac1ad96394862a58abff595ad68b22dcecbf
+ms.sourcegitcommit: 8f54d85e8e8b0a1f72d4557d2bb7749b972dd3e2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894749"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141660"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 
@@ -66,12 +66,12 @@ API Microsoft Search предоставляет метод [query](../api/search
 
 - **from** — целое значение, указывающее начальную точку (начиная с 0) для перечисления результатов поиска на странице. Значение по умолчанию равно 0.
 
-- **size** — целое число, обозначающее количество результатов, возвращаемых для страницы. Значение по умолчанию: 25.
+- **size** — целое число, обозначающее количество результатов, возвращаемых для страницы. Кол-во результатов по умолчанию: 25. Максимальное кол-во результатов: 1000.
 
 При поиске объекта **event** или **message** учитывайте указанные ниже ограничения.
 
 - Значение **from** должно начинаться с нуля для запроса первой страницы. В противном случае запрос возвращает ошибку HTTP 400 `Bad request`.
-- Максимальное количество результатов на странице (**size**) составляет 25 для **message** и **event**..
+- Максимальное кол-во результатов на странице (**size**) составляет 25 для **message** и **event**.
 
 Для SharePoint и OneDrive ограничений нет. Рекомендуемый размер страницы — 200. Чем больше размер страницы, тем, как правило, больше задержка.
 
