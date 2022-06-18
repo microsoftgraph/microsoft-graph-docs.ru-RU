@@ -1,18 +1,18 @@
 ---
-title: тип ресурса bookingCustomer
+title: Тип ресурса bookingCustomer
 description: Представляет клиента bookingBusiness.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 6c8dae5ce7f541f45bc3856e1c3b4de83d5a5307
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 7e4c31ec68cdda121dcb1f7954faa742746271fc
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526151"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160652"
 ---
-# <a name="bookingcustomer-resource-type"></a>тип ресурса bookingCustomer
+# <a name="bookingcustomer-resource-type"></a>Тип ресурса bookingCustomer
 
 Пространство имен: microsoft.graph
 
@@ -25,20 +25,20 @@ ms.locfileid: "61526151"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список клиентов](../api/bookingbusiness-list-customers.md) | [коллекция bookingCustomer](bookingcustomer.md) | Получите список объектов **bookingCustomer.** |
-|[Создание bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Создайте новый **объект bookingCustomer.** |
-|[Get bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Ознакомьтесь с свойствами и отношениями объекта **bookingCustomer.**|
-|[Обновление](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |Обновление **объекта bookingCustomer.** |
-|[удаление](../api/bookingcustomer-delete.md); | Нет |Удаление **объекта bookingCustomer.** |
+|[Перечисление клиентов](../api/bookingbusiness-list-customers.md) | [Коллекция bookingCustomer](bookingcustomer.md) | Получение списка объектов **bookingCustomer** . |
+|[Создание bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Создайте объект **bookingCustomer** . |
+|[Получение bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Чтение свойств и связей объекта **bookingCustomer** .|
+|[Обновление](../api/bookingcustomer-update.md) | Нет  |Обновление объекта **bookingCustomer** . |
+|[Удаление](../api/bookingcustomer-delete.md) | Нет |Удаление объекта **bookingCustomer** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|addresses|[коллекция physicalAddress](../resources/physicaladdress.md)|Адреса, связанные с клиентом, включая домашние, бизнес и другие адреса.|
+|addresses|[Коллекция physicalAddress](../resources/physicaladdress.md)|Адреса, связанные с клиентом, включая домашние, бизнес-адреса и другие адреса.|
 |displayName|Строка|Имя клиента.|
 |emailAddress|String|SMTP-адрес клиента.|
-|id|Строка| ID клиента. Только для чтения.|
-|phones|Коллекция [phone](../resources/phone.md)|Телефон номеров, связанных с клиентом, включая домашние, деловые и мобильные номера.|
+|id|Строка| Идентификатор клиента. Только для чтения.|
+|phones|Коллекция [phone](../resources/phone.md)|Телефон номера, связанные с клиентом, включая домашние, бизнес-номера и мобильные номера.|
 
 ## <a name="relationships"></a>Связи
 Нет

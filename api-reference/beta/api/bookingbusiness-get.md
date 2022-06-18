@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 2d7ee31bf0de9f7119d473af7a3f13358f259301
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: 22c6acfc9b34d9f40d6d14a77eb43b914b89202d
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755651"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160603"
 ---
 # <a name="get-bookingbusiness"></a>Получение bookingBusiness
 
@@ -25,9 +25,9 @@ ms.locfileid: "64755651"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) |  Bookings. Read.All, BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
+|Делегированные (рабочая или учебная учетная запись) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ GET /bookingBusinesses/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [bookingBusiness](../resources/bookingbusiness.md) в тексте отклика.
 ## <a name="example"></a>Пример
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Fabrikam@contoso.onmicros
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -113,6 +113,7 @@ Content-type: application/json
     "defaultCurrencyIso":"USD",
     "isPublished":false,
     "publicUrl":null,
+    "languageTag":null,
     "address":{
         "type":"home",
         "postOfficeBox":"",
@@ -181,6 +182,7 @@ Content-type: application/json
             ]
         }
     ],
+    "languageTag": "String",
     "schedulingPolicy":{
         "timeSlotInterval":"PT30M",
         "minimumLeadTime":"P1D",

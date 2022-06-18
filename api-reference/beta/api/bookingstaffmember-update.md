@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a44ba8d8ca373107e37a8c77b19b604661558144
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 3aa430d1e59bf3506dc7d1bbfd3dc4083e2f9fbe
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094257"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160460"
 ---
 # <a name="update-bookingstaffmember"></a>Обновление bookingstaffmember
 
@@ -25,7 +25,7 @@ ms.locfileid: "66094257"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -47,7 +47,8 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 |colorIndex|Int32|Определяет цвет, представляющий сотрудника. Цвет соответствует цветовой палитре на странице **сведений** о персонале в приложении Bookings.|
 |displayName|Строка|Имя сотрудника, отображаемое клиентам.|
 |emailAddress|String|Адрес электронной почты сотрудника. Он может быть в том же Microsoft 365, что и бизнес, или в другом домене электронной почты. Этот адрес электронной почты используется, если свойство **sendConfirmationsToOwner** имеет значение true в политике планирования бизнеса.|
-|role|string| Роль сотрудника в организации. Возможные значения: `guest`, `administrator`, `viewer`, `externalGuest`.|
+|isEmailNotificationEnabled|Boolean|Значение true означает, что сотрудник будет получать уведомления по электронной почте при создании или изменении назначенного ему резервирования.
+|role|string| Роль сотрудника в организации. Возможные значения: `guest`, `administrator`, `viewer`, `scheduler`, `member`, `externalGuest`.|
 |timeZone|String|Часовой пояс сотрудника. Список возможных значений см. в [разделе dateTimeTimeZone](../resources/datetimetimezone.md).|
 |useBusinessHours|Boolean|Значение true означает, что доступность сотрудника определяется **свойством businessHours** компании. Значение false означает, что доступность определяется параметром свойства **workingHouse** сотрудника.|
 |workingHours|[Коллекция bookingWorkHours](../resources/bookingworkhours.md)|Диапазон часов каждый день недели, в течение которого сотрудник доступен для резервирования.|

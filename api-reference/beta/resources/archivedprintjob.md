@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса archivedPrintJob
-description: Запись задания печати с окончательным состоянием (завершенным, прерванным или неудачным), которое используется для создания отчетов. Это не активное задание печати.
+description: Запись задания печати "конечное состояние" (завершенное, прерванное или отмененное), которое используется для создания отчетов. Это не активное задание печати.
 author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 8ba8d49a01e3b10768e83b04b259d6cfd87d65b5
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: a136d56e8ce6eeb9429b66ea142142628ef187ca
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65944978"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160650"
 ---
 # <a name="archivedprintjob-resource-type"></a>Тип ресурса archivedPrintJob
 
@@ -18,7 +18,7 @@ ms.locfileid: "65944978"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Запись задания печати с окончательным состоянием (завершенным, прерванным или неудачным), которое используется для создания отчетов. Это не активное задание печати.
+Запись задания печати "конечное состояние" (завершенное, прерванное или отмененное), которое используется для создания отчетов. Это не активное задание печати.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |

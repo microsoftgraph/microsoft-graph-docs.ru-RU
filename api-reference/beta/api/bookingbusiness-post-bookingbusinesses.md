@@ -1,16 +1,16 @@
 ---
 title: Создание bookingBusiness
-description: Создайте новый бизнес Microsoft Bookings в клиенте.
+description: Создайте новую Microsoft Bookings в клиенте.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 1fab03031b2fc74647d5e3014ec649e65c5869ab
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 20a5934baeb7d0f7c762b15f9895eb958b615080
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65898905"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160575"
 ---
 # <a name="create-bookingbusiness"></a>Создание bookingBusiness
 
@@ -18,7 +18,7 @@ ms.locfileid: "65898905"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый бизнес Microsoft Bookings в клиенте.
+Создайте новую Microsoft Bookings в клиенте.
 
 Это первый шаг в настройке компании Bookings, в которой необходимо указать отображаемое имя компании. Вы можете включить другие сведения, такие как рабочий адрес, адрес веб-сайта и политику планирования, или задать эти сведения позже [](bookingbusiness-update.md), **обновив bookingBusiness**.
 ## <a name="permissions"></a>Разрешения
@@ -26,7 +26,7 @@ ms.locfileid: "65898905"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) |  Bookings.Manage.All  |
+|Делегированные (рабочая или учебная учетная запись) |  Bookings.Manage.All  |
 |Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается. |
 
@@ -193,6 +193,7 @@ Content-type: application/json
             ]
         }
     ],
+    "languageTag":"en-US",
     "schedulingPolicy":{
         "timeSlotInterval":"PT30M",
         "minimumLeadTime":"P1D",

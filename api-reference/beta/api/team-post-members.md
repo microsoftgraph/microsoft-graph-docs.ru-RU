@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3b56b90a958d516daec194873319cb266546d067
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 7400ecb17804fc9e0d9b8be6a9014e1125897a37
+ms.sourcegitcommit: 2132198551c7d1f37474debab471f612a3e35a08
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335691"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141259"
 ---
 # <a name="add-member-to-team"></a>Добавление участника в группу
 Пространство имен: microsoft.graph
@@ -18,6 +18,9 @@ ms.locfileid: "63335691"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Добавьте в [команду](../resources/team.md) [нового участника беседы](../resources/conversationmember.md).
+
+> [!NOTE] 
+> Свойство **роли** по умолчанию будет пустым для всех участников. Это свойство содержит только дополнительные квалификаторы, если это необходимо. Например, если участник имеет `owner` привилегии, свойство ролей содержит `owner` в качестве одного из значений. Аналогично, если участник является гостем, свойство **роли** содержит `guest` в качестве одного из значений. Базовый участник не должен иметь значений, указанных в свойстве **роли**.
 
 ## <a name="permissions"></a>Разрешения
 

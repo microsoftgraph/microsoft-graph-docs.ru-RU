@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c08705efe8d88387aed81b0c1f98e9d87cfba017
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: c65d9b0a4b418784af1851f87deb0ecef87cd174
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65061078"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160701"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
@@ -51,7 +51,7 @@ ms.locfileid: "65061078"
 |[Удаление вкладки из канала](../api/channel-delete-tabs.md) | Нет | Удаление (открепление) вкладки из канала.|
 |[Подготовка адреса электронной почты канала](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| Подготовка адреса электронной почты для канала.|
 |[Удаление адреса электронной почты канала](../api/channel-removeemail.md) | Нет | Удаление адреса электронной почты канала.|
-|[Удаление входящего канала](../api/team-delete-incomingchannel.md) | Нет| Удаление входящих каналов.|
+|[Удаление входящего канала](../api/team-delete-incomingchannels.md) | Нет| Удаление входящих каналов.|
 |[Перечисление команд с общим доступом к каналу](../api/sharedwithchannelteaminfo-list.md)|Коллекция [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Получение списка команд, которым был предоставлен общий доступ к указанному каналу.|
 |[Получение команды с общим доступом к каналу](../api/sharedwithchannelteaminfo-get.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Получение команды, которой был предоставлен общий доступ к указанному каналу.|
 |[Отмена общего доступа к каналу для команды](../api/sharedwithchannelteaminfo-delete.md)|Нет|Отмена общего доступа к каналу для команды.|

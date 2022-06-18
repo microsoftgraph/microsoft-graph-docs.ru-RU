@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 897517209c156c43648ba23b1993c3a59a08ab51
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: 83e7c4fd355a4c6d4af71164aabd6d55d26e1746
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755672"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160421"
 ---
 # <a name="get-bookingservice"></a>Получение bookingService
 
@@ -24,8 +24,8 @@ ms.locfileid: "64755672"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) |  Bookings. Read.All, BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
-|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
+|Делегированные (рабочая или учебная учетная запись) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /bookingBusinesses/{id}/services/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [bookingService](../resources/bookingservice.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@cont
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -110,6 +110,7 @@ Content-type: application/json
     "defaultPrice": 10,
     "defaultPriceType": "fixedPrice",
     "description": "Individual bento box lunch delivery",
+    "languageTag": "en-US",
     "isHiddenFromCustomers": false,
     "notes": "Home-cooked special",
     "preBuffer": "PT5M",
@@ -117,6 +118,7 @@ Content-type: application/json
     "staffMemberIds": [],
     "isLocationOnline": true,
     "smsNotificationsEnabled": true,
+    "isAnonymousJoinEnabled": false,
     "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
     "defaultLocation": {
         "displayName": "Contoso Lunch Delivery",

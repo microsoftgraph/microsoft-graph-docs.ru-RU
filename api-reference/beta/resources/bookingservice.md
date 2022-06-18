@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса bookingService
-description: Представляет сведения о конкретной службе, предоставляемой bookingBusiness, например имя службы, цена и персонал, который обычно предоставляет такую услугу.
+description: Представляет сведения о конкретной службе, предоставляемой bookingBusiness, например имя службы, цену и персонал, который обычно предоставляет такую услугу.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 8d547ea9870642ebf56f2f7c07608b17a5639dce
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: d8c8fb849bbc452d343cb37b86e8cfae925606ae
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368233"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160708"
 ---
 # <a name="bookingservice-resource-type"></a>Тип ресурса bookingService
 
@@ -18,42 +18,44 @@ ms.locfileid: "63368233"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Представляет сведения о конкретной службе, предоставляемой [bookingBusiness](bookingbusiness.md), например имя службы, цена и персонал, который обычно предоставляет такую услугу.
+Представляет сведения о конкретной службе, предоставляемой [bookingBusiness](bookingbusiness.md), например имя службы, цену и персонал, который обычно предоставляет такую услугу.
 
-Наследует от [bookingNamedEntity](bookingNamedEntity.md).
+Наследуется от [bookingNamedEntity](bookingNamedEntity.md).
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Службы списка](../api/bookingbusiness-list-services.md) | [коллекция bookingService](bookingservice.md) | Получите список объектов **bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md).|
+|[Перечисление служб](../api/bookingbusiness-list-services.md) | [Коллекция bookingService](bookingservice.md) | Получение списка объектов **bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md).|
 |[Создание bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Создайте **bookingService** для указанного [bookingbusiness](../resources/bookingbusiness.md). |
-|[Получить bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Получите свойства и связи объекта **bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md).|
-|[Обновление](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |Обновление объекта **bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md). |
-|[удаление](../api/bookingservice-delete.md); | Нет |Удаление объекта **bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md). |
+|[Получение bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Получение свойств и связей объекта **bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md).|
+|[Обновление](../api/bookingservice-update.md) | Нет   |Обновите **объект bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md). |
+|[Удаление](../api/bookingservice-delete.md) | Нет |Удаление объекта **bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md). |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|additionalInformation|Строка|Дополнительные сведения, которые отправляются клиенту при подтверждении встречи.|
-|customQuestions|[коллекция bookingQuestionAssignment](../resources/bookingquestionassignment.md)| Содержит набор пользовательских вопросов, связанных с определенной службой. |
+|additionalInformation|Строка|Дополнительные сведения, отправляемые клиенту при подтверждении встречи.|
+|customQuestions|[Коллекция bookingQuestionAssignment](../resources/bookingquestionassignment.md)| Содержит набор пользовательских вопросов, связанных с определенной службой. |
 |defaultDuration|Длительность|Длина службы по умолчанию, представленная в числах дней, часов, минут и секунд. Например, P11D23H59M59.999999999999S. |
 |defaultLocation|[location](location.md)|Физическое расположение службы по умолчанию.|
-|defaultPrice|Double|Денежная цена по умолчанию для службы.|
-|defaultPriceType|bookingPriceType|Способ заряжания службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
-|defaultReminders|[коллекция bookingReminder](bookingreminder.md)|Набор напоминаний по умолчанию для назначения этой службы. Значение этого свойства доступно только при чтении этого **bookingService** по его ID.|
+|defaultPrice|Двойное с плавающей точкой|Денежное значение по умолчанию для службы.|
+|defaultPriceType|bookingPriceType|Способ оплаты службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
+|defaultReminders|[Коллекция bookingReminder](bookingreminder.md)|Набор напоминаний по умолчанию для встречи этой службы. Значение этого свойства доступно только при чтении этой **службы bookingService** по его идентификатору.|
 |description|Строка|Текстовое описание службы.|
-|displayName|String|Имя службы.|
-|id|Строка|ID этой службы в формате GUID. Только для чтения.|
-|isHiddenFromCustomers|Boolean|True означает, что эта служба недоступна клиентам для бронирования.|
-|isLocationOnline|Boolean|True указывает, что встречи для службы будут проводиться онлайн. Значение по умолчанию − ложь.|
-|maximumAttendeesCount|Int32|Максимальное число клиентов, разрешенных в службе. Если **значение maximumAttendeesCount** службы превышает 1, передай действительные удостоверения клиентов при создании или обновлении встречи.  Чтобы создать клиента, используйте операцию [Create bookingCustomer](../api/bookingbusiness-post-customers.md) .  |
+|displayName|Строка|Имя службы.|
+|id|Строка|Идентификатор этой службы в формате GUID. Только для чтения.|
+|isAnonymousJoinEnabled|Boolean|`True` Значение , если для встречи, заданной для этой службы, будет создан anonymousJoinWebUrl(webrtcUrl).
+|isHiddenFromCustomers|Boolean|Значение true означает, что эта служба недоступна клиентам для резервирования.|
+|isLocationOnline|Boolean|Значение true указывает, что встречи для службы будут храниться в сети. Значение по умолчанию − ложь.|
+|languageTag|Строка|Язык страницы самостоятельного резервирования.
+|maximumAttendeesCount|Int32|Максимальное число клиентов, разрешенных в службе. Если **значение maximumAttendeesCount** службы больше 1, передайте допустимые идентификаторы клиентов при создании или обновлении встречи.  Чтобы создать клиента, используйте операцию [Create bookingCustomer](../api/bookingbusiness-post-customers.md) .  |
 |notes|String|Дополнительные сведения об этой службе.|
-|postBuffer|Длительность|Время буферизации после назначения для этой службы заканчивается, и до следующей встречи клиента можно заказать.|
-|preBuffer|Длительность|Время буферизации перед назначением для этой службы может начаться.|
-|schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Набор политик, которые определяют, как следует создавать и управлять встречами для этого типа службы.|
-|smsNotificationsEnabled|Boolean|True указывает, что sms-уведомления можно отправить клиентам для назначения службы. Значение по умолчанию − ложь.|
-|staffMemberIds|Коллекция String|Представляет тех [сотрудников,](bookingstaffmember.md) которые предоставляют эту службу. |
+|postBuffer|Длительность|Время буферизации после окончания встречи для этой службы и до того, как можно будет заказать следующую встречу клиента.|
+|preBuffer|Длительность|Время буферизации до начала встречи для этой службы.|
+|schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Набор политик, определяющий способ создания и управления встречами для этого типа службы.|
+|smsNotificationsEnabled|Boolean|Значение true SMS, что клиенты могут отправлять уведомления о встрече службы. Значение по умолчанию − ложь.|
+|staffMemberIds|Коллекция String|Представляет сотрудников [, предоставляющих](bookingstaffmember.md) эту службу. |
 |webUrl|String|URL-адрес, который клиент использует для доступа к службе.|
 
 ## <a name="relationships"></a>Связи
@@ -83,6 +85,7 @@ ms.locfileid: "63368233"
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
+  "languageTag": "String",
   "isHiddenFromCustomers": true,
   "isLocationOnline": "Boolean",
   "notes": "String",
@@ -97,6 +100,7 @@ ms.locfileid: "63368233"
     }
   ],
   "maximumAttendeesCount": "Integer",
+  "isAnonymousJoinEnabled": "Boolean",
   "webUrl": "String"
 }
 

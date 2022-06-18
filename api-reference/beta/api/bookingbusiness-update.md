@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 35cfd16d36878f51d34cfc684b9f7cfa86a056f1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 32c4901237c17429d3908607dffd186fc3919199
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130014"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160659"
 ---
 # <a name="update-bookingbusiness"></a>Обновление bookingbusiness
 
@@ -18,14 +18,14 @@ ms.locfileid: "62130014"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [bookingBusiness.](../resources/bookingbusiness.md)
+Обновление свойств объекта [bookingBusiness](../resources/bookingbusiness.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,21 +43,22 @@ PATCH /bookingBusinesses/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|address|[physicalAddress](../resources/physicaladdress.md)|Адрес улицы бизнеса.|
-|businessHours|[коллекция bookingWorkHours](../resources/bookingworkhours.md)|Часы работы для бизнеса.|
+|address|[physicalAddress](../resources/physicaladdress.md)|Почтовый адрес компании.|
+|businessHours|[Коллекция bookingWorkHours](../resources/bookingworkhours.md)|Часы работы для бизнеса.|
 |businessType|Строка|Тип бизнеса.|
-|defaultCurrencyIso|Строка|Код валюты, в которую бизнес работает в Microsoft Bookings.|
-|displayName|Строка|Имя для бизнеса, который взаимодействует с клиентами.|
+|defaultCurrencyIso|Строка|Код валюты, в которую бизнес использует Microsoft Bookings.|
+|displayName|Строка|Имя компании, которая интерфейсирует с клиентами.|
 |email|String|Адрес электронной почты для бизнеса.|
+|languageTag|Строка|Язык страницы самостоятельного резервирования.
 |phone|String|Номер телефона для бизнеса.|
-|schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Указывает, как можно создавать заказы для этого бизнеса.|
-|webSiteUrl|Строка|URL-адрес веб-сайта бизнеса.|
+|schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Указывает, как можно создавать резервирования для этого бизнеса.|
+|webSiteUrl|Строка|URL-адрес бизнес-сайта.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере обновляется бизнес-адрес электронной почты и политика планирования, чтобы изменить интервал времени бронирования по умолчанию для бизнеса на час, а также предварительное бронирование до 30 дней.
+В следующем примере обновляется рабочий адрес электронной почты и политика планирования, чтобы изменить интервал времени резервирования по умолчанию для бизнеса на час и заранее резервирование до 30 дней.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

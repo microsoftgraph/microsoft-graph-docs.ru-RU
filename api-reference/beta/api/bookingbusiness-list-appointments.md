@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 43723d7e05328ab64b382df8c415b0d7fb6544b7
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: 3f2b088c0da875e906c83bf7923c2c8388d3fbb6
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755609"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160596"
 ---
 # <a name="list-appointments"></a>Список встреч
 
@@ -24,9 +24,9 @@ ms.locfileid: "64755609"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) |  Bookings. Read.All, BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
+|Делегированные (рабочая или учебная учетная запись) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ GET /bookingBusinesses/{id}/appointments
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
-Чтобы получить набор встреч бизнес-Bookings в диапазоне дат, `$filter`вместо получения [calendarView](bookingbusiness-list-calendarview.md) для этого диапазона дат.
+Чтобы получить набор встреч компании Bookings в диапазоне дат, `$filter`вместо получения [calendarView](bookingbusiness-list-calendarview.md) для этого диапазона дат.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -47,7 +47,7 @@ GET /bookingBusinesses/{id}/appointments
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [bookingAppointment](../resources/bookingappointment.md) в тексте отклика.
 ## <a name="example"></a>Пример
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@cont
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -162,6 +162,7 @@ Content-type: application/json
             "price": 10,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
+            "anonymousJoinWebUrl": "String",
             "staffMemberIds": [],
             "invoiceAmount": 10,
             "invoiceId": "1002",

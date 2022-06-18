@@ -1,57 +1,58 @@
 ---
-title: тип ресурса bookingStaffMember
+title: Тип ресурса bookingStaffMember
 description: Представляет сотрудника, который предоставляет услуги в bookingBusiness.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: b65e8b3a8bf9234b55cc6fab4573aaf389a5656b
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 25569646633195e9cbce1067dad1abbd369885a2
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239003"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160631"
 ---
-# <a name="bookingstaffmember-resource-type"></a>тип ресурса bookingStaffMember
+# <a name="bookingstaffmember-resource-type"></a>Тип ресурса bookingStaffMember
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Представляет сотрудника, который предоставляет услуги в [bookingBusiness.](bookingbusiness.md)
+Представляет сотрудника, который предоставляет услуги в [bookingBusiness](bookingbusiness.md).
 
-Сотрудники могут быть частью клиента Microsoft 365, где настроен бизнес бронирования, или они могут использовать службы электронной почты от других поставщиков электронной почты.
+Сотрудники могут быть частью клиента Microsoft 365, в котором настроена компания по резервированию, или могут использовать службы электронной почты от других поставщиков услуг электронной почты.
 
-API бронирования при бронировании рассматривает следующие параметры для определения доступности сотрудника: 
+При резервировании встреч API Bookings рассматривает следующие параметры для определения доступности сотрудника: 
 
-1. По умолчанию часы работы предприятия (свойство **businessHours** объекта [bookingBusiness)](bookingbusiness.md) представляют общую доступность сотрудника.
-2. Если **useBusinessHours** является ложным, то конкретные рабочие часы сотрудника (свойство **workingHours** объекта **bookingStaffmember)** представляют общую доступность этого члена.
-3. Если **доступностьIsAffectedByPersonalCalendar** верна, то API bookings сначала будет смотреть на общедоступные часы сотрудника (в качестве определенного #1 или #2), а затем проверять доступность в эти часы в личном календаре сотрудника, прежде чем делать заказ.
+1. По умолчанию часы работы предприятия (свойство **businessHours** сущности [bookingBusiness](bookingbusiness.md) ) представляют общую доступность сотрудника.
+2. Если **параметр useBusinessHours** имеет значение false, то рабочее время сотрудника (свойство **workingHours** сущности **bookingStaffmember** ) представляет общую доступность этого члена.
+3. Если **параметр availabilityIsAffectedByPersonalCalendar** имеет значение true, API Bookings сначала будет проверять общедоступные часы сотрудника (в соответствии с #1 или 2) и проверять доступность в эти часы в личном календаре сотрудника, прежде чем делать резервирование.
 
-Microsoft Bookings поддерживает не более 100 сотрудников в календаре бронирования.
+Microsoft Bookings поддерживает не более 100 сотрудников в календаре резервирования.
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список сотрудников](../api/bookingbusiness-list-staffmembers.md) | [bookingStaffMember](bookingstaffmember.md) collection | Получите список объектов **bookingStaffMember** в указанном [bookingbusiness.](../resources/bookingbusiness.md) |
-|[Создание bookingStaff](../api/bookingbusiness-post-staffmembers.md) | [bookingStaffMember](bookingstaffmember.md) collection | Создание нового **bookingStaffMember** в указанном [bookingbusiness](../resources/bookingbusiness.md). |
-|[Получить bookingStaffMember](../api/bookingstaffmember-get.md) | [bookingStaffMember](bookingstaffmember.md) |Получите свойства и связи **bookingStaffMember** в указанном [bookingbusiness.](../resources/bookingbusiness.md)|
-|[Обновление](../api/bookingstaffmember-update.md) | [bookingStaffMember](bookingstaffmember.md)    |Обновление свойств **bookingStaffMember** в указанном [bookingbusiness](../resources/bookingbusiness.md).|
-|[удаление](../api/bookingstaffmember-delete.md); | Нет |Удаление сотрудника в указанном [bookingbusiness](../resources/bookingbusiness.md). |
+|[Перечисление сотрудников](../api/bookingbusiness-list-staffmembers.md) | [Коллекция bookingStaffMember](bookingstaffmember.md) | Получение списка объектов **bookingStaffMember** в указанном [bookingbusiness](../resources/bookingbusiness.md). |
+|[Создание bookingStaff](../api/bookingbusiness-post-staffmembers.md) | [Коллекция bookingStaffMember](bookingstaffmember.md) | Создайте **объект bookingStaffMember** в указанном [bookingbusiness](../resources/bookingbusiness.md). |
+|[Получение bookingStaffMember](../api/bookingstaffmember-get.md) | [bookingStaffMember](bookingstaffmember.md) |Получение свойств и связей **объекта bookingStaffMember** в указанном [bookingbusiness](../resources/bookingbusiness.md).|
+|[Обновление](../api/bookingstaffmember-update.md) | Нет   |Обновите свойства **объекта bookingStaffMember** в указанном [bookingbusiness](../resources/bookingbusiness.md).|
+|[Удаление](../api/bookingstaffmember-delete.md) | Нет |Удаление сотрудника в указанном [bookingbusiness](../resources/bookingbusiness.md). |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Логический|True означает, что если сотрудник является пользователем Microsoft 365, API Bookings проверяет наличие сотрудника в личном календаре в Microsoft 365, прежде чем сделать заказ. |
-|colorIndex|Int32|Определяет цвет для представления сотрудника. Цвет соответствует цветовой палитре на странице **Сведения о персонале** в приложении Bookings.|
-|displayName|Строка|Имя сотрудника, отображаемого клиентам. Обязательный.|
-|emailAddress|String|Адрес электронной почты сотрудника. Это может быть в том же Microsoft 365 клиенте, что и бизнес, или в другом домене электронной почты. Этот адрес электронной почты можно использовать, если свойство **sendConfirmationsToOwner** заданной в политике планирования бизнеса. Обязательный.|
-|id|String| ID сотрудника в формате GUID. Только для чтения.|
-|role|bookingStaffRole| Роль сотрудника в бизнесе. Возможные значения: `guest` , , и `administrator` `viewer` `externalGuest` `unknownFutureValue` . Обязательный.|
-|timeZone|String|Часовой пояс сотрудника. Список возможных значений см. в [списке dateTimeTimeZone.](datetimetimezone.md)|
-|useBusinessHours|Логическое|True означает, что доступность сотрудника указана в свойстве **businessHours** бизнеса. False означает, что доступность определяется параметром **свойства workingHours** сотрудника.|
-|workingHours|[коллекция bookingWorkHours](bookingworkhours.md)|Диапазон часов, каждый день недели, когда сотрудник доступен для бронирования. По умолчанию они инициализируются так же, как свойство **businessHours** бизнеса.|
+|availabilityIsAffectedByPersonalCalendar|Boolean|True означает, что если сотрудник является Microsoft 365 пользователем, API Bookings проверяет доступность сотрудника в личном календаре в Microsoft 365, прежде чем делать резервирование. |
+|colorIndex|Int32|Определяет цвет, представляющий сотрудника. Цвет соответствует цветовой палитре на странице **сведений** о персонале в приложении Bookings.|
+|displayName|Строка|Имя сотрудника, отображаемое клиентам. Обязательный элемент.|
+|emailAddress|String|Адрес электронной почты сотрудника. Он может быть в том же Microsoft 365, что и бизнес, или в другом домене электронной почты. Этот адрес электронной почты можно использовать, если свойство **sendConfirmationsToOwner** имеет значение true в политике планирования бизнеса. Обязательный.|
+|id|Строка| Идентификатор сотрудника в формате GUID. Только для чтения.|
+|IsEmailNotificationEnabled|Boolean|`True` означает, что сотрудник будет получать уведомления по электронной почте при создании или изменении назначенного ему резервирования.
+|role|bookingStaffRole| Роль сотрудника в организации. Возможные значения: `guest`, , , `viewer`, `externalGuest`, и `scheduler` `unknownFutureValue``member`. `administrator` Обратите внимание, что необходимо использовать заголовок `Prefer: include-unknown-enum-members` запроса `[evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)`, чтобы получить следующие значения в следующем: `scheduler`, `member`. Обязательный элемент. |
+|timeZone|String|Часовой пояс сотрудника. Список возможных значений см. в [разделе dateTimeTimeZone](datetimetimezone.md).|
+|useBusinessHours|Boolean|Значение true означает, что доступность сотрудника указана в свойстве **businessHours** компании. Значение false означает, что доступность определяется параметром свойства **workingHours** сотрудника.|
+|workingHours|[Коллекция bookingWorkHours](bookingworkhours.md)|Диапазон часов каждый день недели, в течение которого сотрудник доступен для резервирования. По умолчанию они инициализируются так же, как свойство **businessHours** компании.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -79,7 +80,8 @@ Microsoft Bookings поддерживает не более 100 сотрудни
   "role": {"@odata.type": "microsoft.graph.bookingStaffRole"},
   "useBusinessHours": true,
   "workingHours": [{"@odata.type": "microsoft.graph.bookingWorkHours"}],
-  "timeZone": "String"
+  "timeZone": "String",
+  "IsEmailNotificationEnabled": "Boolean"
 }
 
 ```

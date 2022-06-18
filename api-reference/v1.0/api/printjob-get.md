@@ -5,12 +5,12 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: b65d8433177a4a6e71c267a01e2e7387474617dc
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: c30dc6b0f4358ce4cc265c10a5127599907ec954
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365716"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160715"
 ---
 # <a name="get-printjob"></a>Получение printJob
 Пространство имен: microsoft.graph
@@ -20,13 +20,19 @@ ms.locfileid: "65365716"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Помимо указанных ниже разрешений, у пользователя или клиента приложения должна быть активная подписка на универсальную печать и разрешение, предоставляющее доступ к [get printer](printer-get.md) или [Get printerShare](printershare-get.md) в зависимости от того, используется ли принтер или printerShare.
+Помимо указанных ниже разрешений, у пользователя или клиента приложения должна быть активная подписка на универсальную печать.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Application| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+
+Для приложения с делегированными разрешениями на извлечение заданий других пользователей вошед в систему пользователь должен быть членом одной из следующих ролей администратора:
+- Глобальный администратор
+- Администратор принтера
+
+Для приложения с разрешениями на получение заданий пользователей приложению требуется разрешение, которое предоставляет доступ к принтеру вместе с одним из разрешений приложения, описанных в таблице ["Разрешения](#permissions)".[](printer-get.md)
 
 ## <a name="http-request"></a>HTTP-запрос
 

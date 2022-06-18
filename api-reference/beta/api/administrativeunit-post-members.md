@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b34bdd4930eec2c58fce432314c259c4fa5d12f9
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 76ce28e022d171ccd50486527e2ac0c0cfe5df58
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65898197"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160554"
 ---
 # <a name="add-a-member"></a>Добавление участника
 
@@ -28,21 +28,27 @@ ms.locfileid: "65898197"
 ### <a name="permissions-to-add-an-existing-user-group-or-device"></a>Разрешения на добавление существующего пользователя, группы или устройства
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All    |
 |Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Application | AdministrativeUnit.ReadWrite.All |
+
+Чтобы добавить пользователя, группу или устройство в административную единицу, вызывающему субъекту должна быть назначена одна из следующих [Azure AD ролей](/azure/active-directory/roles/permissions-reference):
+
+* Администратор привилегированных ролей
+* Глобальный администратор
 
 ### <a name="permissions-to-create-a-new-group"></a>Разрешения на создание новой группы
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Application | Directory.ReadWrite.All |
 
-Чтобы добавить участника в административную единицу, вызывающему субъекту должна быть назначена одна из следующих ролей [Azure AD](/azure/active-directory/roles/permissions-reference):
+Чтобы создать группу в административной единице, вызывающему субъекту должна быть назначена одна из следующих Azure AD [ролей](/azure/active-directory/roles/permissions-reference):
 
 * Администратор привилегированных ролей
 * Глобальный администратор
+* Администратор групп
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -127,6 +133,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-administrativeunits-members-ref-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-administrativeunits-members-ref-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

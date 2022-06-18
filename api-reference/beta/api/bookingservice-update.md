@@ -1,31 +1,31 @@
 ---
-title: Обновление службы бронирования
-description: Обновление свойств объекта bookingService в указанном bookingbusiness.
+title: Обновление bookingservice
+description: Обновите свойства объекта bookingService в указанном bookingbusiness.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 4a31643464159f7578619eb318ea186a988d6023
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 674221dd3195ed136230e64496f1a2af50041397
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62094513"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160463"
 ---
-# <a name="update-bookingservice"></a>Обновление службы бронирования
+# <a name="update-bookingservice"></a>Обновление bookingservice
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [bookingService](../resources/bookingservice.md) в указанном [bookingBusiness.](../resources/bookingbusiness.md)
+Обновите свойства объекта [bookingService](../resources/bookingservice.md) в указанном [bookingBusiness](../resources/bookingbusiness.md).
 
-Ниже приводится несколько примеров, которые можно настроить для службы:
+Ниже приведены некоторые примеры, которые можно настроить для службы.
 - ЦЕНА
-- Типичная продолжительность встречи
+- Типичная длина встречи
 - Reminders
-- Любой буфер времени, который необходимо настроить до или завершить после службы
-- [Планирование параметров](../resources/bookingschedulingpolicy.md) политики, таких как минимальное уведомление о книге или отмене, а также возможность выбора клиентами определенных сотрудников для встречи.
+- Любой буфер времени для настройки до или после завершения службы
+- [Параметры политики](../resources/bookingschedulingpolicy.md) планирования, такие как минимальное уведомление для резервирования или отмены, а также возможность выбора клиентами определенных сотрудников для встречи.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -33,7 +33,7 @@ ms.locfileid: "62094513"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,7 +44,7 @@ PATCH /bookingBusinesses/{id}/services/{id}
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {код}. Обязательно.|
+| Авторизация  | Носитель {code}. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
@@ -53,28 +53,29 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |:---------------|:--------|:----------|
 |defaultDuration|Длительность|Длина службы по умолчанию, представленная в числах дней, часов, минут и секунд. Например, P11D23H59M59.999999999999S. |
 |defaultLocation|[location](../resources/location.md)|Физическое расположение службы по умолчанию.|
-|defaultPrice|Double|Денежная цена по умолчанию для службы.|
-|defaultPriceType|bookingPriceType|Способ заряжания службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
-|defaultReminders|[коллекция bookingReminder](../resources/bookingreminder.md)|Набор напоминаний по умолчанию для назначения этой службы. Значение этого свойства доступно только при чтении этого **bookingService** по его ID.|
+|defaultPrice|Двойное с плавающей точкой|Денежное значение по умолчанию для службы.|
+|defaultPriceType|bookingPriceType|Способ оплаты службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
+|defaultReminders|[Коллекция bookingReminder](../resources/bookingreminder.md)|Набор напоминаний по умолчанию для встречи этой службы. Значение этого свойства доступно только при чтении этой **службы bookingService** по его идентификатору.|
 |description|Строка|Текстовое описание службы.|
-|displayName|String|Имя службы.|
+|displayName|Строка|Имя службы.|
 |id|String| Только для чтения.|
-|isHiddenFromCustomers|Логический|True означает, что эта служба недоступна клиентам для бронирования.|
-|isLocationOnline|Логическое|True указывает, что встречи для службы будут проводиться онлайн. Значение по умолчанию − ложь.|
+|languageTag|Строка|Язык страницы самостоятельного резервирования.|
+|isHiddenFromCustomers|Boolean|Значение true означает, что эта служба недоступна клиентам для резервирования.|
+|isLocationOnline|Boolean|Значение true указывает, что встречи для службы будут храниться в сети. Значение по умолчанию − ложь.|
 |notes|String|Дополнительные сведения об этой службе.|
-|postBuffer|Длительность|Время буферизации после назначения для этой службы заканчивается, и до следующей встречи клиента можно заказать.|
-|preBuffer|Длительность|Время буферизации перед назначением для этой службы может начаться.|
-|schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Набор политик, которые определяют, как следует создавать и управлять встречами для этого типа службы.|
-|smsNotificationsEnabled|Логический|True указывает, что sms-уведомления можно отправить клиентам для назначения службы. Значение по умолчанию − ложь.|
-|staffMemberIds|Коллекция строк|Представляет тех [сотрудников,](../resources/bookingstaffmember.md) которые предоставляют эту службу. |
-|customQuestions|[коллекция bookingQuestionAssignment](../resources/bookingquestionassignment.md)|Это содержит набор пользовательских вопросов, связанных с определенной службой. Необязательно.|
+|postBuffer|Длительность|Время буферизации после окончания встречи для этой службы и до того, как можно будет заказать следующую встречу клиента.|
+|preBuffer|Длительность|Время буферизации до начала встречи для этой службы.|
+|schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Набор политик, определяющий способ создания и управления встречами для этого типа службы.|
+|smsNotificationsEnabled|Boolean|Значение true SMS, что клиенты могут отправлять уведомления о встрече службы. Значение по умолчанию − ложь.|
+|staffMemberIds|Коллекция String|Представляет сотрудников [, предоставляющих](../resources/bookingstaffmember.md) эту службу. |
+|customQuestions|[Коллекция bookingQuestionAssignment](../resources/bookingquestionassignment.md)|Он содержит набор пользовательских вопросов, связанных с определенной службой. Необязательно.|
 |maximumAttendeesCount|Int32|Максимальное число клиентов, разрешенных в службе.  |
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No content`. Метод не возвращает данные в теле отклика.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
-В следующем примере обновляется продолжительность указанной службы.
+В следующем примере обновляется длительность указанной службы.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -117,7 +118,7 @@ Content-type: application/json
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true

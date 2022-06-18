@@ -1,16 +1,16 @@
 ---
 title: Создание bookingService
-description: Создайте новую bookingService для указанного bookingbusiness.
+description: Создайте резервную службу для указанного bookingbusiness.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 66a16e9e90f45a82b107d8e5d5b0a748b87f987d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f104af1735ff41d0f6e6d9f1e1e8a8cd8313cb16
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114019"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160694"
 ---
 # <a name="create-bookingservice"></a>Создание bookingService
 
@@ -18,14 +18,14 @@ ms.locfileid: "62114019"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новую [bookingService](../resources/bookingservice.md) для указанного [bookingBusiness.](../resources/bookingbusiness.md)
+Создайте [резервную службу](../resources/bookingservice.md) для указанного [объекта bookingBusiness](../resources/bookingbusiness.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -37,14 +37,14 @@ POST /bookingBusinesses/{id}/services
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {код}. Обязательно.|
+| Авторизация  | Носитель {code}. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
-В теле запроса указать JSON-представление объекта [bookingService.](../resources/bookingservice.md)
+## <a name="request-body"></a>Текст запроса
+В тексте запроса добавьте представление объекта [bookingService](../resources/bookingservice.md) в формате JSON.
 
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и `201 Created` объект [bookingService](../resources/bookingservice.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [bookingService](../resources/bookingservice.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -102,6 +102,7 @@ Content-type: application/json
     "displayName":"Bento",
     "isLocationOnline": true,
     "smsNotificationsEnabled": true,
+    "languageTag": "en-US",
     "isHiddenFromCustomers":false,
     "notes":"Home-cooked special",
     "postBuffer":"PT10M",
@@ -118,7 +119,8 @@ Content-type: application/json
     "staffMemberIds":[
         "d90d1e8c-5cfe-48cf-a2d5-966267375b6a",
         "2f5f8794-0b29-45b5-b56a-2eb5ff7aa880"
-    ]
+    ],
+    "isAnonymousJoinEnabled": false
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -148,7 +150,7 @@ Content-type: application/json
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

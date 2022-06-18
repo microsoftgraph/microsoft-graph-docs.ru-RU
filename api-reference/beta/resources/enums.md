@@ -1,16 +1,16 @@
 ---
 title: Значения перечисления
-description: Значения перечисления Microsoft Graph
+description: Значения Graph майкрософт
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: c61273ced5a43a0a200bbcdf433c844643130845
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 8bfa73b97a08a71028cad90562269e9cabb07ff8
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65944992"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160680"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
@@ -353,7 +353,7 @@ ms.locfileid: "65944992"
 
 |Member|
 |:---|
-|String|
+|Строка|
 |Целое число|
 |Справка|
 |Binary|
@@ -533,7 +533,7 @@ ms.locfileid: "65944992"
 
 |Member|
 |:---|
-|userPrincipalName|
+|userPrincipalName.|
 |onPremisesUserPrincipalName|
 |userPrincipalUsername|
 |onPremisesUserPrincipalUsername|
@@ -599,7 +599,7 @@ ms.locfileid: "65944992"
 |:---|
 |email|
 |mobileSMS|
-|mobilePhone|
+|mobilePhone;|
 |officePhone|
 |securityQuestion|
 |appNotification|
@@ -619,7 +619,7 @@ ms.locfileid: "65944992"
 |Member|
 |:---|
 |Нет|
-|mobilePhone|
+|mobilePhone;|
 |alternateMobilePhone|
 |officePhone|
 |microsoftAuthenticatorPush|
@@ -661,7 +661,7 @@ ms.locfileid: "65944992"
 |приложение|
 |users|
 |devicePlatform|
-|location|
+|расположение;|
 |clientType|
 |signInRisk|
 |userRisk|
@@ -782,7 +782,7 @@ ms.locfileid: "65944992"
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |officePhone|
 |securityQuestion|
 |appNotification|
@@ -807,7 +807,7 @@ ms.locfileid: "65944992"
 
 |Member|
 |:---|
-|userPrincipalName|
+|userPrincipalName.|
 |phoneNumber|
 |proxyAddress|
 |qrCode|
@@ -1114,7 +1114,7 @@ ms.locfileid: "65944992"
 
 |Member|
 |:---|
-|birthday|
+|birthday;|
 |Свадебные|
 |unknownFutureValue|
 
@@ -1185,7 +1185,7 @@ ms.locfileid: "65944992"
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |officePhone|
 |securityQuestion|
 |appNotification|
@@ -1619,7 +1619,7 @@ ms.locfileid: "65944992"
 |NotStarted
 |Работает
 |Завершено
-|Ошибка
+|Не выполнено
 
 
 ### <a name="onenotepatchactiontype-values"></a>Значения onenotePatchActionType
@@ -1725,7 +1725,7 @@ ms.locfileid: "65944992"
 ### <a name="onenotesourceservice-values"></a>Значения onenoteSourceService
 | Member
 |:---------------------
-| Неизвестно
+| Unknown
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -1941,7 +1941,7 @@ ms.locfileid: "65944992"
 
 ### <a name="useraccountsecuritytype-values"></a>Значения userAccountSecurityType
 
-Возможные значения для типов учетных записей пользователей (членство в группах) для определения Windows.
+Возможные значения для типов учетных записей пользователей (членство в группах) в Windows определения.
 
 | Элемент        | Значение | Описание                     |
 | :------------ | :---- | :------------------------------ |
@@ -2337,7 +2337,7 @@ ms.locfileid: "65944992"
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкий|2|
+|Низкая|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>Значения threatAssessmentContentType
 
@@ -2391,8 +2391,8 @@ ms.locfileid: "65944992"
 | Элемент                | Значение | Описание                         |
 |:----------------------|:------|:------------------------------------|
 | Нет                  | 0     | Пока не известно.                       |
-| mailFlowRule          | 1     | Правило транспорта Exchange.            |
-| safeSender            | 2     | Список надежных отправителей.                   |
+| mailFlowRule          | 1     | Exchange правила транспорта.            |
+| safeSender            | 2     | Сейф отправителя.                   |
 | blockedSender         | 3     | Список заблокированных отправителей.                |
 | advancedSpamFiltering | 4     | Расширенный параметр фильтрации нежелательной почты.     |
 | domainAllowList       | 5     | Список разрешений домена отправителя.           |
@@ -2469,7 +2469,7 @@ ms.locfileid: "65944992"
 |пользователь; | столбец пользователя или группы. |
 |url | гиперссылка или столбец рисунка. |
 |Рассчитывается | вычисляемый столбец. |
-|location | столбец location. |
+|расположение; | столбец location. |
 |географическое положение | столбец географического расположения. |
 |term | столбец управляемых метаданных. |
 |многотерминантная | столбец управляемых метаданных, который принимает несколько значений. |
@@ -2601,9 +2601,9 @@ ms.locfileid: "65944992"
 
 |Элемент    |Значение    |Описание |
 |:---------|:--------|:----------- |
-|team      |0        |Указывает, что приложение Teams может быть установлено в команде и имеет право на доступ к данным этой команды.|
-|groupChat |1        |Указывает, что приложение Teams может быть установлено в групповом чате и имеет право на доступ к данным этого чата группы.|
-|personal  |2        |Указывает, что приложение Teams может быть установлено в личной области пользователя и имеет право на доступ к данным этого пользователя.|
+|team      |0        |Указывает, что Teams приложение может быть установлено в команде и имеет право на доступ к данным этой команды.|
+|groupChat |1        |Указывает, что Teams может быть установлено в групповом чате и имеет право на доступ к данным этого чата группы.|
+|personal  |2        |Указывает, что Teams может быть установлено в личной области пользователя и имеет право на доступ к данным этого пользователя.|
 
 ### <a name="roleassignmentschedulerequestfilterbycurrentuseroptions-values"></a>Значения roleAssignmentScheduleRequestFilterByCurrentUserOptions
 
@@ -2707,7 +2707,7 @@ ms.locfileid: "65944992"
 
 |Member|
 |:---|
-|Microsoft|
+|microsoft|
 |thirdParty|
 |Клиентов|
 |unknownFutureValue|
@@ -2943,6 +2943,8 @@ ms.locfileid: "65944992"
 |Просмотра|
 |externalGuest|
 |unknownFutureValue|
+|Планировщик|
+|член|
 
 ### <a name="bookingreminderrecipients-values"></a>Значения bookingReminderRecipients 
 

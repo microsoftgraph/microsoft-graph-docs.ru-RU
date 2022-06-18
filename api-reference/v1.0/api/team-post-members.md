@@ -5,17 +5,20 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 27c2e61b6e5b94731071b504d78f2d7c70e721ca
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 8d249d41a71b4e9e6e49c85d4e4ae30afa521c76
+ms.sourcegitcommit: 2132198551c7d1f37474debab471f612a3e35a08
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333227"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141252"
 ---
 # <a name="add-member-to-team"></a>Добавление участника в группу
 Пространство имен: microsoft.graph
 
 Добавление нового [conversationMember](../resources/conversationmember.md) в [группу](../resources/team.md).
+
+> [!NOTE] 
+> Свойство **роли** по умолчанию будет пустым для всех участников. Это свойство содержит только дополнительные квалификаторы, если это необходимо. Например, если участник имеет `owner` привилегии, свойство ролей содержит `owner` в качестве одного из значений. Аналогично, если участник является гостем, свойство **роли** содержит `guest` в качестве одного из значений. Базовый участник не должен иметь значений, указанных в свойстве **роли**.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +31,7 @@ ms.locfileid: "63333227"
 |Приложение| TeamMember.ReadWrite.All |
 
 > [!NOTE]
-> Использование разрешений приложения для [добавления гостевых членов](/microsoft-365/admin/add-users/about-guest-users?view=o365-worldwide&preserve-view=true) в команду не поддерживается.
+> Использование разрешений приложения для [добавления гостей](/microsoft-365/admin/add-users/about-guest-users?view=o365-worldwide&preserve-view=true) в команду не поддерживается.
 
 ## <a name="http-request"></a>HTTP-запрос
 
