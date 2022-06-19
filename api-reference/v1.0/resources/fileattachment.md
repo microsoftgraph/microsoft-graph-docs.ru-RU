@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса fileAttachment
-description: 'Файл (например, текстовый файл или документ Word), вложенный в сведения о событии, сообщение или запись. **contentBytes** '
+description: Файл (например, текстовый файл или документ Word), прикрепленный к событию, сообщению или записи.
 ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3e90553500e44ff20d13de2b56c64b1ac94d7222
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ffd35829cfafac92b2cd6707e0d653325b37993e
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007238"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160625"
 ---
 # <a name="fileattachment-resource-type"></a>Тип ресурса fileAttachment
 
@@ -32,8 +32,8 @@ ms.locfileid: "59007238"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Чтение свойств, связей или необработанного содержимого объекта fileAttachment.|
-|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта fileAttachment. |
+|[Получение](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Чтение свойств, связей или необработанного содержимого объекта **fileAttachment**.|
+|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта **fileAttachment**. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -43,18 +43,18 @@ ms.locfileid: "59007238"
 |contentLocation|String|Не используйте это свойство, так как оно не поддерживается.|
 |contentType|String|Тип контента этого вложения.|
 |id|String|Идентификатор вложения.|
-|isInline|Boolean|Задано значение true, если это встроенное вложение.|
+|isInline|Boolean|Задано значение `true`, если это встроенное вложение.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения вложения.|
 |name|String|Имя, представляющее текст, который отображается под значком, представляющим внедренное вложение. Оно может не быть фактическим именем файла.|
 |size|Int32|Размер вложения в байтах.|
 
 ## <a name="relationships"></a>Связи
-Нет
+Отсутствуют.
 
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -76,7 +76,7 @@ ms.locfileid: "59007238"
   "isInline": true,
   "lastModifiedDateTime": "String (timestamp)",
   "name": "string",
-  "size": 1024
+  "size": "Int32"
 }
 
 ```
