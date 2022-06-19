@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Прочитайте о самых важных новых возможностях Microsoft Graph за последние два месяца, о том, что было добавлено в более ранних выпусках, и о том, как делиться идеями.
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 33d64635297761f0ac625c4a460e36abba34795e
-ms.sourcegitcommit: 8f54d85e8e8b0a1f72d4557d2bb7749b972dd3e2
+ms.openlocfilehash: 7fd388275a31b3b7e426e3f27dc6f5861b9a297f
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66141618"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160281"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -136,7 +136,7 @@ ms.locfileid: "66141618"
 - [Перечисление только каналов, к которым предоставлен общий доступ в команде](/graph/api/team-list-incomingchannels?view=graph-rest-beta&preserve-view=true).
 - [Перечисление всех каналов в команде](/graph/api/team-list-allchannels?view=graph-rest-beta&preserve-view=true), включая каналы, размещенные в команде, и команды, к которым предоставлен общий доступ в команде.
 - [Перечисление участников команды, у которых есть доступ к указанному общему каналу](/graph/api/sharedwithchannelteaminfo-list-allowedmembers?view=graph-rest-beta&preserve-view=true).
-- [Удаление канала, к которому предоставлен общий доступ в команде](/graph/api/team-delete-incomingchannel?view=graph-rest-beta&preserve-view=true).
+- [Удаление канала, к которому предоставлен общий доступ в команде](/graph/api/team-delete-incomingchannels?view=graph-rest-beta&preserve-view=true).
 - [Перечисление команд, которым предоставлен общий доступ к указанному каналу](/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-beta&preserve-view=true).
 - [Отмена общего доступа к каналу для команды](/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-beta&preserve-view=true).
 
