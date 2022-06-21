@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 78e8229a2633554c4f544e50196b87a8719bbe79
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: faa5ca9d9c24cacabfeaf535ad2f6a2f915720e7
+ms.sourcegitcommit: da9079132db3261aed80e6fc4b9314d16e0847b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66092557"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66186927"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -180,7 +180,7 @@ Content-type: application/json
 |:------ |:----- |
 |[baseTask](../resources/basetask.md) (не рекомендуется) | `/me/tasks/lists/{Id}/tasks`
 |[Записи звонков](../resources/callrecords-callrecord.md)|`communications/callRecords`|
-|[Каналы](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
+|[Каналами](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
 |[Чат](../resources/chat.md)|`/chats`, `/chats/{id}`|
 |[Сообщение чата](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
 |[Контакты](../resources/contact.md)|`me/contacts`|
@@ -191,7 +191,7 @@ Content-type: application/json
 |[Группы](../resources/group.md)|`groups`|
 |[Список](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Почта](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
-|[OnlineMeetings](../resources/onlinemeeting.md)|`/communications/onlineMeetings/?$filter=JoinWebUrl eq '{WebJoinUrl}'`|
+|[OnlineMeetings](../resources/onlinemeeting.md)|`/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'`|
 |[Присутствие](../resources/presence.md)| `/communications/presences/{id}` (один пользователь), `/communications/presences?$filter=id in ('{id}','{id}',…)` (несколько пользователей)|
 |[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|

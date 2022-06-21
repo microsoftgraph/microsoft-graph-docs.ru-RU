@@ -1,18 +1,18 @@
 ---
-title: Список provisioningPolicies
-description: Просмотр свойств и связей всех политик продюсинга облачных ПК.
+title: Перечисление provisioningPolicies
+description: Просмотр свойств и связей всех политик подготовки облачных компьютеров.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 5cfd4a178eb24c7f14a3351bd76affc71ac77643
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 003050ef64c9df95c60838baf12353ac358599d6
+ms.sourcegitcommit: da9079132db3261aed80e6fc4b9314d16e0847b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63724014"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66186957"
 ---
-# <a name="list-provisioningpolicies"></a>Список provisioningPolicies
+# <a name="list-provisioningpolicies"></a>Перечисление provisioningPolicies
 
 Пространство имен: microsoft.graph
 
@@ -28,7 +28,7 @@ ms.locfileid: "63724014"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select`и `$filter` параметры `$expand` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select`запроса `$filter` `$expand` OData и позволяет настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -57,7 +57,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы этот метод возвращает код отклика и коллекцию объектов [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -133,7 +133,8 @@ Content-Type: application/json
       "imageType":"custom",
       "windowsSettings": {
         "language": "en-US"
-      }
+      },
+      "managedBy": "windows365"
     }
   ]
 }

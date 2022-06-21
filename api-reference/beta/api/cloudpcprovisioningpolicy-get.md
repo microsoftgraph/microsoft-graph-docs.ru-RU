@@ -1,24 +1,24 @@
 ---
-title: Get cloudPcProvisioningPolicy
-description: Ознакомьтесь с свойствами и отношениями объекта cloudPcProvisioningPolicy.
+title: Получение cloudPcProvisioningPolicy
+description: Чтение свойств и связей объекта cloudPcProvisioningPolicy.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 28dfc04b0286ffc7adcb16dfb690da1051036bda
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: ddeacbf8c8fd7b408d8907fdb3817a3ba652ec54
+ms.sourcegitcommit: da9079132db3261aed80e6fc4b9314d16e0847b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723238"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66186925"
 ---
-# <a name="get-cloudpcprovisioningpolicy"></a>Get cloudPcProvisioningPolicy
+# <a name="get-cloudpcprovisioningpolicy"></a>Получение cloudPcProvisioningPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями объекта [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) .
+Чтение свойств и связей объекта [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) .
 
 
 ## <a name="permissions"></a>Разрешения
@@ -29,7 +29,7 @@ ms.locfileid: "63723238"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры `$select` `$expand` запроса OData и помогает настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select` `$expand` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -58,14 +58,15 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код `200 OK` отклика и [объект cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-properties-of-the-specified-provisioning-policy"></a>Пример 1. Получить свойства указанной политики провизии
+### <a name="example-1-get-the-properties-of-the-specified-provisioning-policy"></a>Пример 1. Получение свойств указанной политики подготовки
 
 #### <a name="request"></a>Запрос
 
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -106,6 +107,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 #### <a name="response"></a>Отклик
 
+Ниже приведен пример отклика.
+
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -133,14 +136,16 @@ Content-Type: application/json
     "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
     "windowsSettings": {
       "language": "en-US"
-    }
+    },
+    "managedBy": "windows365"
 }
 ```
 
-### <a name="example-2-get-the-properties-of-the-specified-provisioning-policy-and-expand-on-the-assignments"></a>Пример 2. Получить свойства указанной политики провизии и расширить назначения
+### <a name="example-2-get-the-properties-of-the-specified-provisioning-policy-and-expand-on-the-assignments"></a>Пример 2. Получение свойств указанной политики подготовки и развертывание назначений
 
 #### <a name="request"></a>Запрос
 
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -181,6 +186,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 #### <a name="response"></a>Отклик
 
+Ниже приведен пример отклика.
+
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -219,6 +226,66 @@ Content-Type: application/json
           "groupId":"64ff06de-9c00-4a5a-98b5-7f5abe26bfd9"
           }
       }
-    ]
+    ],
+    "managedBy": "windows365"
+}
+```
+
+### <a name="example-3-get-the-selected-properties-of-the-specified-provisioning-policy"></a>Пример 3. Получение выбранных свойств указанной политики подготовки
+
+В следующем примере показан запрос, который извлекает выбранные свойства указанной политики подготовки.
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_cloudpcprovisioningpolicy_3"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/60b94f83-3e22-430e-a69d-440f65b922d6?$select=id,description,displayName,displayName,domainJoinConfiguration,imageDisplayName,imageId,imageType,onPremisesConnectionId,windowsSettings,managedBy,cloudPcGroupDisplayName,gracePeriodInHours,localAdminEnabled,alternateResourceUrl
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
+    "alternateResourceUrl": "https://ms.portal.azure.com/#contoso.com/resource/subscriptions/827f2432-9c7b-4637-b694-570b3c2f969c/resourceGroups/myResourceGroupName/providers/Microsoft.Fidalgo/projects/myProjectName/pools/myPoolName",
+    "cloudPcGroupDisplayName": "MyCloudPcGroup",
+    "description": "The ProvisioningPolicy for West US employees.",
+    "displayName": "WestUsPolicy",
+    "domainJoinConfiguration": {
+        "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+        "regionName": null,
+        "type": "hybridAzureADJoin"
+    },
+    "gracePeriodInHours": 2,
+    "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
+    "imageDisplayName": "myCustomImage",
+    "imageId": "d4e0541a-f7bb-4bdf-ad8f-b92b915a229f",
+    "imageType": "custom",
+    "localAdminEnabled": true,
+    "managedBy": "windows365",
+    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+    "windowsSettings": {
+      "language": "en-US"
+    }
 }
 ```

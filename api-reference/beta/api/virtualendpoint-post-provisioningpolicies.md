@@ -1,16 +1,16 @@
 ---
 title: Создание cloudPcProvisioningPolicy
-description: Создайте новую политику продюсинга облачных КОМПЬЮТЕРов.
+description: Создайте новую политику подготовки облачных компьютеров.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: c8ceafcd70592f4f0b10e1818200021cfb7ae061
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: db04f05051085a71c62173e8e39cdb3a6f2d977d
+ms.sourcegitcommit: da9079132db3261aed80e6fc4b9314d16e0847b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722806"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66186962"
 ---
 # <a name="create-cloudpcprovisioningpolicy"></a>Создание cloudPcProvisioningPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "63722806"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) .
+Создайте объект [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "63722806"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|CloudPC.ReadWrite.All|
+|Приложение|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,23 +50,23 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) .
+В тексте запроса добавьте представление объекта [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в формате JSON.
 
 В следующей таблице показаны свойства, необходимые при создании [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя отображения политики обеспечения.|
-|description|String|Описание политики обеспечения.|
-|onPremisesConnectionId|String|ID cloudPcOnPremisesConnection. Чтобы обеспечить подключение к облачным компьютерам и подключение к домену, выберите подключение к виртуальной сети, проверенной службой облачных ПК.|
-|imageId|String|ID изображения ОС, которое необходимо уладить на облачных ПК. Формат изображения типа галереи: {publisher_offer_sku}. Поддерживаемые значения для каждого из параметров:<ul><li>издатель: Microsoftwindowsdesktop.</li> <li>предложение: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-os.</li></ul>|
-|imageDisplayName|String|Имя отображения образа ОС, которое вы закаповыватель.|
-|imageType|cloudPcProvisioningPolicyImageType|Тип изображения ОС (настраиваемый или галерейный) для предоставления на облачных ПК. Возможные значения: `gallery`, `custom`.|
-|WindowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Определенные Windows настройки при создании облачных компьютеров для этой политики обеспечения.|
+|displayName|String|Отображаемое имя политики подготовки.|
+|description|String|Описание политики подготовки.|
+|onPremisesConnectionId|String|Идентификатор cloudPcOnPremisesConnection. Чтобы убедиться, что облачные компьютеры имеют сетевое подключение и присоединены к домену, выберите подключение к виртуальной сети, проверенной службой облачных компьютеров.|
+|imageId|String|Идентификатор образа ОС, который требуется подготовить на облачных компьютерах. Формат образа типа коллекции: {publisher_offer_sku}. Поддерживаемые значения для каждого из параметров:<ul><li>publisher: Microsoftwindowsdesktop.</li> <li>предложение: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-m365 и 19h2-ent-cpc-os.</li></ul>|
+|imageDisplayName|String|Отображаемое имя подготавливаемого образа ОС.|
+|imageType|CloudPcProvisioningPolicyImageType|Тип образа ОС (настраиваемого или коллекции), который требуется подготовить на облачных компьютерах. Возможные значения: `gallery`, `custom`.|
+|windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Конкретные Windows настройки при создании облачных компьютеров для этой политики подготовки.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код `201 Created` отклика и [объект cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -158,6 +158,7 @@ Content-Type: application/json
   "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
   "windowsSettings": {
     "language": "en-US"
-  }
+  },
+  "managedBy": "windows365"
 }
 ```
