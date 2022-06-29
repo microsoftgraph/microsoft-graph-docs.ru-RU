@@ -1,22 +1,22 @@
 ---
-title: Используйте API Поиск (Майкрософт) для обрезки дублирующих результатов поиска (предварительный просмотр)
-description: Узнайте, как использовать API Поиск (Майкрософт) для обрезки дублирующих результатов поиска.
+title: Использование API поиска (Майкрософт) для обрезки повторяющихся результатов поиска
+description: Свойство trimDuplicates API поиска (Майкрософт) в Microsoft Graph можно использовать для обрезки повторяющихся результатов поиска. Поддерживается только в файлах SharePoint.
 author: yiwenwang
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: ca561efcb331bcc0c4fcc55456e06b73e53edde6
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 8101b6c2a74ec7c30d8b9ca6478bbb13e59d7293
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589520"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438257"
 ---
-# <a name="use-the-microsoft-search-api-to-trim-duplicate-search-results-preview"></a>Используйте API Поиск (Майкрософт) для обрезки дублирующих результатов поиска (предварительный просмотр)
+# <a name="use-the-microsoft-search-api-to-trim-duplicate-search-results"></a>Использование API поиска (Майкрософт) для обрезки повторяющихся результатов поиска
 
-В этой статье вы узнаете, как использовать API Поиск (Майкрософт) для обрезки дублирующих результатов поиска. Укажите **свойство trimDuplicates** в [объекте searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) , чтобы отрезать дубликаты результатов поиска. Свойство **trimDuplicates** поддерживается только в файлах, которые SharePoint. Значение по умолчанию — `false`.
+API поиска (Майкрософт) в Microsoft Graph можно использовать для обрезки повторяющихся результатов поиска. Укажите **свойство trimDuplicates** в [объекте searchRequest](/graph/api/resources/searchrequest) , чтобы удалить повторяющиеся результаты поиска. Свойство **trimDuplicates** поддерживается только для файлов, размещенных в SharePoint. Значение по умолчанию — `false`.
 
 ## <a name="example"></a>Пример
-В следующем примере показан запрос на поиск файлов, SharePoint в SharePoint **свойство trimDuplicates** для очистки дублирующих результатов поиска.
+В следующем примере показан запрос, который ищет файлы, размещенные в SharePoint, и использует свойство **trimDuplicates** для удаления повторяющихся результатов поиска.
 
 ### <a name="request"></a>Запрос
 
@@ -141,8 +141,8 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-Свойство **trimDuplicates** не поддерживается для следующих ресурсов: **сообщения**, **события** и **externalItem**.
+Свойство **trimDuplicates** не поддерживается для следующих ресурсов: **message**, **event** и **externalItem**.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview)

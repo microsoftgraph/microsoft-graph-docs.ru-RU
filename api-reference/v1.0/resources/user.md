@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 29de4b2eedaa991665d9b4011f6c8bfa5619f036
-ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
+ms.openlocfilehash: b3ea1a1fa99d2d90daa710c117c83c5a7ef88395
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2022
-ms.locfileid: "65628770"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441190"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -176,12 +176,12 @@ ms.locfileid: "65628770"
 |lastPasswordChangeDateTime| DateTimeOffset | Время последней смены пароля пользователем Azure AD или время создания его пароля (используется дата выполнения последнего действия). В сведениях даты и времени используется формат ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.<br><br>Возвращается только с помощью оператора `$select`.|
 |legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| Используется корпоративными приложениями для определения юридической возрастной группы пользователя. Это свойство предназначено только для чтения. Вычисляется на основе свойств **ageGroup** и **consentProvidedForMinor**. Допустимые значения: `null`, `MinorWithOutParentalConsent`, `MinorWithParentalConsent`, `MinorNoParentalConsentRequired`, `NotAdult` и `Adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Возвращается только на `$select`.|
 |licenseAssignmentStates|Коллекция [licenseAssignmentState](licenseassignmentstate.md)|Состояние назначений лицензий для пользователя. Только для чтения.<br><br>Возвращается только с помощью оператора `$select`.|
-|почта;|String|SMTP-адрес пользователя, например `jeff@contoso.onmicrosoft.com`.<br>Изменение этого свойства также приведет к обновлению коллекции пользователя **proxyAddresses**, которая будет включать это значение как SMTP-адрес. Для учетных записей Azure AD B2C это свойство можно обновить до десяти раз, используя уникальные адреса протокола SMTP. Это свойство не может содержать диакритические знаки.<br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith` и `eq` для значений `null`).|
+|почта;|String|SMTP-адрес пользователя, например `jeff@contoso.onmicrosoft.com`. Изменение этого свойства также приведет к обновлению коллекции пользователя **proxyAddresses**, которая будет включать это значение как SMTP-адрес. Это свойство не может содержать диакритические знаки. <br/> **ЗАМЕТКА:** Не рекомендуется обновлять это свойство для профилей пользователей Azure AD B2C. Вместо этого используйте свойство **otherMails**. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith` и `eq` для значений `null`).|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Параметры основного почтового ящика пользователя, выполнившего вход. Вы можете [получить](../api/user-get-mailboxsettings.md) или [обновить](../api/user-update-mailboxsettings.md) параметры языкового стандарта, часового пояса, отправки автоматических ответов на входящие сообщения.<br><br>Возвращается только с помощью оператора `$select`.|
 |mailNickname|String|Псевдоним электронной почты пользователя. Это свойство должно быть указано при создании пользователя. Максимальная длина: 64 символа.<br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`).|
-|mobilePhone|String|Основной сотовый телефон пользователя. "Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. Максимальная длина: 64 символа. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`). |
+|mobilePhone|String|Основной сотовый телефон пользователя. "Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. Максимальная длина: 64 символа. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
 |mySite|String|URL-адрес личного сайта пользователя. <br><br>Возвращается только с помощью оператора `$select`.|
-|officeLocation|String|Расположение офиса на месте работы пользователя. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`).|
+|officeLocation|String|Расположение офиса на месте работы пользователя. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям).|
 |onPremisesDistinguishedName|String| Содержит `distinguished name` или `DN` локальной службы Active Directory. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. <br><br>Возвращается только с помощью оператора `$select`. |
 |onPremisesDomainName|String| Содержит локальное `domainFQDN` (другое название — dnsDomainName), синхронизированное из локального каталога. Это свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения.<br><br>Возвращается только с помощью оператора `$select`.|
 |onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|Содержит extensionAttributes1-15 для пользователя. Отдельные атрибуты расширения нельзя выбирать и фильтровать. <br><li>Для пользователей **onPremisesSyncEnabled** исходным центром управления для этого набора свойств является локальная среда, и он предназначен только для чтения. </li><li>Для исключительно облачных пользователей (где значением для **onPremisesSyncEnabled** является `false`) эти свойства можно настроить при создании или обновлении объекта пользователя.  </li><li>Для исключительно облачных пользователей, ранее синхронизированных из локальной службы Active Directory, эти свойства предназначены только для чтения в Microsoft Graph, но могут быть полностью управляемыми с помощью Центра администрирования Exchange или модуля Exchange Online версии 2 в Windows PowerShell.</li><br> Эти атрибуты расширения также называются настраиваемыми атрибутами 1–15 Exchange. |

@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 87cc889af16f0f273049e22b46ee4f876db340d0
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 9b5cab64c1784f3f2f63eaf22f2479e0cc5c7f7f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65134433"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441036"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-resource-type"></a>Тип ресурса unifiedRoleEligibilityScheduleRequest
 
@@ -56,10 +56,10 @@ ms.locfileid: "65134433"
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|appScope|[appScope](../resources/appscope.md)| Свойство только для чтения с подробными сведениями об области приложения, если права на роль относятся к приложению. Допускается значение null. Поддерживает `$expand`.|
+|appScope|[appScope](../resources/appscope.md)|Свойство только для чтения с подробными сведениями об области приложения, если права на роль относятся к приложению. Допускается значение null. Поддерживает `$expand`.|
 |directoryScope|[directoryObject](../resources/directoryobject.md)|Объект каталога, который является областью действия роли. Только для чтения. Поддерживает `$expand`.|
 |Основной|[directoryObject](../resources/directoryobject.md)|Субъект, который получает право на роль в запросе. Поддерживает `$expand`.|
-|roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)| Подробные сведения об [объекте unifiedRoleDefinition](../resources/unifiedroledefinition.md) , на который ссылаются через свойство **roleDefinitionId** . Поддерживает `$expand`.|
+|roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|Подробные сведения об [объекте unifiedRoleDefinition](../resources/unifiedroledefinition.md) , на который ссылаются через свойство **roleDefinitionId** . Поддерживает `$expand`.|
 |targetSchedule|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|Расписание для допустимости роли, на которую ссылаются через свойство **targetScheduleId** . Поддерживает `$expand`.|
 
 ## <a name="json-representation"></a>Представление JSON

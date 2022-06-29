@@ -5,12 +5,12 @@ author: sacampbe
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 66bf2b1f9b179fcef6f1b4754cf3316be0a067c1
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 7420562f5cc3e097715e20374403c44c072d4bbd
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133736"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442284"
 ---
 # <a name="create-identity"></a>Создание удостоверения
 Пространство имен: microsoft.graph.externalConnectors
@@ -25,7 +25,7 @@ ms.locfileid: "65133736"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
 | Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
@@ -54,7 +54,7 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 | Свойство       | Тип                    | Описание                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | `id` Уникальный элемент. Это будет **objectId** в случае Azure Active Directory пользователей или групп и **externalGroupId** в случае внешних групп. Обязательное.                                    |
+| id             | String                  | `id` Уникальный элемент. Это будет **objectId** в случае пользователей или групп Azure Active Directory, а **externalGroupId** — в случае внешних групп. Обязательное.                                    |
 | type           | microsoft.graph.externalConnectors.identityType | Тип члена, добавленного во внешнюю группу. Возможные значения: `user`,`group`, `externalGroup`. Обязательный. |
 
 
@@ -64,7 +64,7 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>Пример 1. Добавление Azure Active Directory пользователя в качестве участника
+### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>Пример 1. Добавление пользователя Azure Active Directory в качестве участника
 
 #### <a name="request"></a>Запрос
 
@@ -103,6 +103,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-aad-user-identity-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-aad-user-identity-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -169,6 +173,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-aad-group-identity-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-aad-group-identity-from-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -230,6 +238,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-external-group-identity-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-external-group-identity-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Удаление вкладки из канала
-description: 'Удаляет (открепит) вкладку из указанного канала в команде. '
+description: 'Удаляет (открепляет) вкладку из указанного канала в команде. '
 author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f054621c09e2f423a42a7e0d517a2d337a560a4a
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: f14c790fdc5ab56b00764b61b432028b7874d1b9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62803984"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445757"
 ---
 # <a name="delete-tab-from-channel"></a>Удаление вкладки из канала
 
@@ -18,7 +18,7 @@ ms.locfileid: "62803984"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет (открепит) вкладку из указанного [канала](../resources/channel.md) в [команде](../resources/team.md). 
+Удаляет (открепляет) вкладку из указанного [канала](../resources/channel.md) в [команде](../resources/team.md). 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -52,7 +52,7 @@ DELETE /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "ignored",
@@ -61,8 +61,9 @@ DELETE /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 ```http
 DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 ```
-#### <a name="response"></a>Отклик
-Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
+
+### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
 ```http
 HTTP/1.1 204 No Content
 ```

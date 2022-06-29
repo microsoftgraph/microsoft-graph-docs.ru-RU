@@ -1,23 +1,23 @@
 ---
-title: Получить группу termStore
-description: Ознакомьтесь с свойствами и отношениями группового объекта.
+title: Получение группы termStore
+description: Чтение свойств и связей объекта группы.
 author: mohitpcad
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 913e6b38e3890bb0f6bbd9980daff8b312ab030e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 5c1a55e07363234eb3da0e607981379b0fc2f724
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395995"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440133"
 ---
-# <a name="get-termstore-group"></a>Получить группу termStore
+# <a name="get-termstore-group"></a>Получение группы termStore
 Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями объекта [группы терминов](../resources/termstore-group.md) store.
+Чтение свойств и связей объекта группы банка [терминов](../resources/termstore-group.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,11 +51,11 @@ GET /sites/{site-id}/termStore/groups/{group-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код `200 OK` отклика и [объект Microsoft.graph.termStore.group](../resources/termstore-group.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [microsoft.graph.termStore.group](../resources/termstore-group.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-a-termstore-group"></a>Пример 1. Получить группу termStore
+### <a name="example-1-get-a-termstore-group"></a>Пример 1. Получение группы termStore
 
 #### <a name="request"></a>Запрос
 
@@ -113,7 +113,7 @@ Content-Type: application/json
   "displayName": "myGroup"  
 }
 ```
-### <a name="example-2-get-a-termstore-group-and-its-parent-site-id"></a>Пример 2. Получить группу termStore и ее родительский ИД сайта
+### <a name="example-2-get-a-termstore-group-and-its-parent-site-id"></a>Пример 2. Получение группы termStore и ее родительского идентификатора сайта
 
 #### <a name="request"></a>Запрос
 
@@ -148,6 +148,10 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 [!INCLUDE [sample-code](../includes/snippets/go/get-group-termstore-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-group-termstore-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -175,7 +179,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-get-a-site-collection-termstore-group"></a>Пример 3. Получить группу termStore для коллекции сайтов
+### <a name="example-3-get-a-site-collection-termstore-group"></a>Пример 3. Получение группы termStore для семейства веб-сайтов
 #### <a name="request"></a>Запрос
 
 
@@ -208,6 +212,10 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-group-termstore-sites-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-group-termstore-sites-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

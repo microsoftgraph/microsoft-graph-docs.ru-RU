@@ -1,24 +1,24 @@
 ---
-title: Список включенGroups
-description: Получите список групп, включенных в политику управления мобильными устройствами.
+title: Перечисление includedGroups
+description: Получение списка групп, включенных в политику управления мобильными устройствами.
 author: ravennMSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7067b131572f8346ba6a8bcf36a448ff732c7858
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: b585dc6f9422c56bcbf4fe0c6e7b634152268604
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397885"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440012"
 ---
-# <a name="list-includedgroups"></a>Список включенGroups
+# <a name="list-includedgroups"></a>Перечисление includedGroups
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список групп, включенных в политику управления мобильными устройствами.
+Получение списка групп, включенных в политику управления мобильными устройствами.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -53,7 +53,7 @@ GET /policies/mobileDeviceManagementPolicies/{id}/includedGroups
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию [групповых объектов в](../resources/group.md) тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию [объектов группы](../resources/group.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/ab9
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

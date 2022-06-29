@@ -1,24 +1,24 @@
 ---
-title: Список hostedContents
-description: Извлечение списка объектов chatMessageHostedContent из сообщения.
+title: Перечисление hostedContents
+description: Получение списка объектов chatMessageHostedContent из сообщения.
 ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1cd3b25f63d48c99728016ffd644ee57a5ed55b9
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 8775733e5c94bfe35f363d05e19a0c81a4d4046a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393468"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441982"
 ---
-# <a name="list-hostedcontents"></a>Список hostedContents
+# <a name="list-hostedcontents"></a>Перечисление hostedContents
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка [объектов chatMessageHostedContent](../resources/chatmessagehostedcontent.md) из сообщения. В этом API перечислены только объекты контента, которые находятся на хостинге. Чтобы получить bytes контента, [см. в странице get chatmessage hosted content](chatmessagehostedcontent-get.md)
+Получение списка объектов [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) из сообщения. В этом API перечислены только размещенные объекты содержимого. Сведения о том, как получить байты содержимого, см. в разделе ["Получение размещенного содержимого chatmessage".](chatmessagehostedcontent-get.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,14 +47,14 @@ ms.locfileid: "63393468"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-**Получить hostedContents в сообщении канала**
+**Получение hostedContents в сообщении канала**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/hostedContents
 GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-id}/hostedContents
 ```
 
-**Получить hostedContents в сообщении чата**
+**Получение hostedContents в сообщении чата**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/messages/{message-id}/hostedContents
@@ -77,11 +77,11 @@ GET /users/{user-id | user-principal-name}/chats/{chat-id}/messages/{message-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы этот метод возвращает код ответа и коллекцию объектов [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) в тексте ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-hosted-content-for-a-channel-message"></a>Пример 1. Список содержимого для сообщения канала
+### <a name="example-1-list-hosted-content-for-a-channel-message"></a>Пример 1. Вывод списка размещенного содержимого для сообщения канала
 
 #### <a name="request"></a>Запрос
 
@@ -127,7 +127,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 Ниже приведен пример отклика.
 
-> **Примечание:** `contentBytes` и `contentType` всегда настроены на нуль.
+> **Примечание:** `contentBytes` и `contentType` всегда имеют значение NULL.
 
 <!-- {
   "blockType": "response",
@@ -157,7 +157,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-hosted-content-for-reply-to-a-channel-message"></a>Пример 2. Список содержимого для ответа на сообщение канала
+### <a name="example-2-list-hosted-content-for-reply-to-a-channel-message"></a>Пример 2. Вывод списка размещенного содержимого для ответа на сообщение канала
 
 #### <a name="request"></a>Запрос
 
@@ -192,14 +192,18 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/go/get-hostedcontentschannelmessage-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-hostedcontentschannelmessage-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
-> **Примечание:** `contentBytes` и `contentType` всегда настроены на нуль.
+> **Примечание:** `contentBytes` и `contentType` всегда имеют значение NULL.
 
 <!-- {
   "blockType": "response",
@@ -229,7 +233,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2--list-hosted-content-for-message-in-a-chat"></a>Пример 2. Список содержимого для сообщения в чате
+### <a name="example-2--list-hosted-content-for-message-in-a-chat"></a>Пример 2. Перечисление размещенного содержимого для сообщения в чате
 
 #### <a name="request"></a>Запрос
 
@@ -273,9 +277,9 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
-> **Примечание:** `contentBytes` и `contentType` всегда настроены на нуль.
+> **Примечание:** `contentBytes` и `contentType` всегда имеют значение NULL.
 
 <!-- {
   "blockType": "response",

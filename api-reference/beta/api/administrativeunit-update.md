@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2f9ca520011b3bd8e6ce80266fbdaa276a44c929
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: f1c005be251f66e410d9bedcb8caaef9a12fff3c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65898121"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436913"
 ---
 # <a name="update-administrativeunit"></a>Обновление административного ресурса
 
@@ -25,11 +25,11 @@ ms.locfileid: "65898121"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All   |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | AdministrativeUnit.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | AdministrativeUnit.ReadWrite.All |
 
-Чтобы обновить административную единицу, вызывающему субъекту должна быть назначена одна из следующих ролей [Azure AD](/azure/active-directory/roles/permissions-reference):
+Чтобы обновить административную единицу, вызывающему субъекту должна быть назначена одна из следующих [Azure AD ролей](/azure/active-directory/roles/permissions-reference):
 
 * Администратор привилегированных ролей
 * Глобальный администратор
@@ -53,8 +53,12 @@ PATCH /directory/administrativeUnits/{id}
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|description|Строка|Описание административной единицы.|
-|displayName|Строка|Отображаемое имя административной единицы.|
+| description | String | Описание административной единицы.|
+| displayName | String | Отображаемое имя административной единицы. |
+| membershipRule | String | Правило динамического членства для административной единицы. Дополнительные сведения о правилах, которые можно использовать для динамических административных единиц и динамических групп, см. в разделе "Использование атрибутов [для создания расширенных правил"](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).|
+| membershipRuleProcessingState | String | Используется для управления активной обработкой правила динамического членства. Задайте `On` значение, если требуется, чтобы правило динамического `Paused` членства было активным и если вы хотите остановить динамическое обновление членства. |
+| membershipType | String | Тип членства для административной единицы. Допустимые значения: `dynamic` и `assigned`. |
+| visibility | String | Видимость административной единицы. Если значение не задано, используется значение по умолчанию `public`. Может быть задано значение `HiddenMembership`, которое скрывает членство от участников, не в которых они не являются членами. |
 
 Так как ресурс **administrativeUnit** поддерживает [расширения,](/graph/extensibility-overview)`PATCH` операцию можно использовать для добавления, обновления или удаления собственных данных приложения в пользовательских свойствах расширения в существующем экземпляре **administrativeUnit**.
 
@@ -63,6 +67,7 @@ PATCH /directory/administrativeUnits/{id}
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
+В следующем примере устанавливается правило динамического членства в существующей административной единице для всех пользователей, страна которых США.
 
 ### <a name="request"></a>Запрос
 
@@ -77,7 +82,9 @@ PATCH https://graph.microsoft.com/beta/administrativeUnits/4d7ea995-bc0f-45c0-8c
 Content-type: application/json
 
 {
-    "displayName": "Greater Seattle District Technical Schools"
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipRuleProcessingState": "On"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

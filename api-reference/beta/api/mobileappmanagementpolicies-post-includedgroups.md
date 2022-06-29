@@ -1,16 +1,16 @@
 ---
 title: Добавление includedGroups
-description: Добавление групп, включенных в политику управления мобильными приложениями.
+description: Добавьте группы, которые будут включены в политику управления мобильными приложениями.
 author: ravennMSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 715ddb5c8b168b96252606d40c78d3b70db42562
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3c4765b6132cdec9fd211d0cfe57fd360143f8de
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396548"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443333"
 ---
 # <a name="add-includedgroups"></a>Добавление includedGroups
 
@@ -18,7 +18,7 @@ ms.locfileid: "63396548"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление групп, включенных в политику управления мобильными приложениями.
+Добавьте группы, которые будут включены в политику управления мобильными приложениями.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-group-from-groups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-group-from-groups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

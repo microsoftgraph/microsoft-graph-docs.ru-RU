@@ -1,47 +1,47 @@
 ---
-title: Автоматизация создания, отправки и обработки сообщений
-description: В Microsoft Graph электронные письма представлены ресурсом message.
+title: Автоматизация создания, отправки и обработки сообщений с помощью API почты Outlook
+description: В API почты Outlook Microsoft Graph электронные письма представлены ресурсом message. Вы можете создавать и отправлять электронные письма, проверять состояние получателя и многое другое.
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: efca1dd5a53aac584e4956b794b1c3e30916327b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8cd3fd6fb9975d0eba63c809b2a1699687d27b19
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032099"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446142"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>Автоматизация создания, отправки и обработки сообщений
 
-В Microsoft Graph электронные письма представлены ресурсом [message](/graph/api/resources/message?view=graph-rest-1.0).
+В Microsoft Graph электронные письма представлены ресурсом [message](/graph/api/resources/message).
 
 По умолчанию сообщения можно идентифицировать по уникальному идентификатору записи в свойстве **id**. При первоначальном создании и сохранении сообщения в качестве черновика или отправленного сообщения поставщик услуг хранилища назначает этому сообщению идентификатор записи. По умолчанию этот идентификатор изменяется при копировании сообщения или его перемещении в другую папку, хранилище или PST-файл. Для дальнейшей обработки сообщение указывается по текущему идентификатору.
 
-## <a name="creating-and-sending-mail"></a>Создание и отправка почты
+## <a name="create-and-send-mail"></a>Создание и отправка электронной почты
 
-В Outlook вы можете создавать и отправлять электронные письма в одном и том же действии [sendMail](/graph/api/user-sendmail?view=graph-rest-1.0). Вы также можете [создать](/graph/api/user-post-messages?view=graph-rest-1.0) черновик, затем [добавить содержимое](/graph/api/message-update?view=graph-rest-1.0) и [отправить](/graph/api/message-send?view=graph-rest-1.0) черновик.
+В Outlook вы можете создавать и отправлять электронные письма в одном и том же действии [sendMail](/graph/api/user-sendmail). Вы также можете [создать](/graph/api/user-post-messages) черновик, затем [добавить содержимое](/graph/api/message-update) и [отправить](/graph/api/message-send) черновик.
 
-Аналогично, при ответе на электронное письмо вы можете создавать и отправлять ответы в одном и том же действии ([ответить](/graph/api/message-reply?view=graph-rest-1.0), [ответить всем](/graph/api/message-replyall?view=graph-rest-1.0) или [переслать](/graph/api/message-forward?view=graph-rest-1.0)). Кроме того, вы можете создать черновик для ответа ([ответить](/graph/api/message-createreply?view=graph-rest-1.0), [ответить всем](/graph/api/message-createreplyall?view=graph-rest-1.0) или [переслать](/graph/api/message-createforward?view=graph-rest-1.0)), [добавить содержимое](/graph/api/message-update?view=graph-rest-1.0), а затем [отправить ](/graph/api/message-send?view=graph-rest-1.0) черновик позже.
+Аналогично, при ответе на электронное письмо вы можете создавать и отправлять ответы в одном и том же действии ([ответить](/graph/api/message-reply), [ответить всем](/graph/api/message-replyall) или [переслать](/graph/api/message-forward)). Кроме того, вы можете создать черновик для ответа ([ответить](/graph/api/message-createreply), [ответить всем](/graph/api/message-createreplyall) или [переслать](/graph/api/message-createforward)), [добавить содержимое](/graph/api/message-update), а затем [отправить ](/graph/api/message-send) черновик позже.
 
 Чтобы программным способом отличать черновики от отправленных писем, проверяйте свойство **isDraft**.
 
-По умолчанию черновики сообщений сохраняются в папке `Drafts`, а отправленные сообщения — в папке `Sent Items`. Для удобства вы можете определить папки "Черновики" и "Отправленные", используя их [соответствующие хорошо известные имена папок](/graph/api/resources/mailfolder?view=graph-rest-1.0).
+По умолчанию черновики сообщений сохраняются в папке `Drafts`, а отправленные сообщения — в папке `Sent Items`. Для удобства вы можете определить папки "Черновики" и "Отправленные", используя их [соответствующие хорошо известные имена папок](/graph/api/resources/mailfolder).
 
-### <a name="setting-the-from-and-sender-properties"></a>Задание свойств from и sender
+### <a name="set-the-from-and-sender-properties"></a>Установка свойств from и sender
 
 В большинстве случаев при создании сообщения Outlook настраивает свойства **from** и **sender** для одного вошедшего пользователя. Можно обновить эти свойства, как описано ниже.
 
 - Свойство **from** можно изменить, если администратор Exchange назначил другим пользователям права **sendAs** для почтового ящика. Для этого администратор может назначить его владельца, выбрав элемент **Разрешения для почтового ящика** на портале Azure, либо использовать Центр администрирования Exchange или командлет Add-ADPermission в Windows PowerShell. Затем программным способом можно задать свойство **from** одному из этих пользователей, обладающих правами **sendAs** для этого почтового ящика.
 - Свойство **sender** можно изменить, если владелец почтового ящика предоставил одному или нескольким пользователям права на отправку сообщений из этого почтового ящика. Владелец почтового ящика может делегировать разрешения в Outlook. Когда представитель отправляет сообщение от имени владельца почтового ящика, Outlook присваивает свойству **sender** учетную запись представителя, а в качестве значения свойства **from** остается владелец почтового ящика. Вы можете программным способом задать в качестве значения свойства **sender** пользователя, получившего разрешения представителя для этого почтового ящика.
 
-## <a name="using-mailtips-to-check-recipient-status-and-save-time-preview"></a>Проверка состояния получателя и экономия времени с помощью подсказок (ознакомительная версия)
+## <a name="use-mailtips-to-check-recipient-status-and-save-time-preview"></a>Проверка состояния получателя и экономия времени с помощью подсказок (ознакомительная версия)
 
-Использование [подсказок](/graph/api/resources/mailtips?view=graph-rest-beta) поможет принять правильные решения перед отправкой сообщения электронной почты. Благодаря подсказкам можно получить ряд сведений, например о том, что почтовый ящик получателя доступен только для определенных отправителей, либо о том, что для отправки электронного письма получателю необходимо утверждение.
+Использование [подсказок](/graph/api/resources/mailtips) поможет принять правильные решения перед отправкой сообщения электронной почты. Благодаря подсказкам можно получить ряд сведений, например о том, что почтовый ящик получателя доступен только для определенных отправителей, либо о том, что для отправки электронного письма получателю необходимо утверждение.
 
 
-## <a name="reading-messages-with-control-over-the-body-format-returned"></a>Чтение сообщений с управлением форматом возвращаемого текста
+## <a name="read-messages-with-control-over-the-body-format-returned"></a>Чтение сообщений с управлением форматом возвращаемого текста
 
-Можно [прочитать сообщение](/graph/api/message-get?view=graph-rest-1.0) в почтовом ящике, указав его идентификатор:
+Можно [прочитать сообщение](/graph/api/message-get) в почтовом ящике, указав его идентификатор:
 
 <!-- {
   "blockType": "ignored",
@@ -51,7 +51,7 @@ ms.locfileid: "59032099"
 GET /me/messages/AAMkADhMGAAA=
 ```
 
-Или можно [получать сообщения](/graph/api/user-list-messages?view=graph-rest-1.0) в определенной папке. Например, чтобы читать сообщения в папке "Черновики" пользователя, вошедшего в систему, укажите следующее:
+Или можно [получать сообщения](/graph/api/user-list-messages) в определенной папке. Например, чтобы читать сообщения в папке "Черновики" пользователя, вошедшего в систему, укажите следующее:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -85,31 +85,29 @@ Prefer: outlook.body-content-type="html"
 Prefer: outlook.allow-unsafe-html
 ```
 
-## <a name="integrating-with--social-gesture-preview"></a>Интеграция с социальными жестами (ознакомительная версия)
+## <a name="integrate-with--social-gesture-preview"></a>Интеграция с социальными жестами (ознакомительная версия)
 
-@Упоминания — это уведомления для пользователей, о том, что их упомянули в сообщениях. С помощью ресурса [mention](/graph/api/resources/mention?view=graph-rest-beta) приложения могут задавать и получать стандартный социальный жест в Интернете (префикс @) в письмах.
+@Упоминания — это уведомления для пользователей, о том, что их упомянули в сообщениях. С помощью ресурса [mention](/graph/api/resources/mention?view=graph-rest-beta&preserve-view=true) приложения могут задавать и получать стандартный социальный жест в Интернете (префикс @) в письмах.
 Вы можете выполнить указанные ниже действия.
 
-- Создавать @упоминания при [составлении сообщений](/graph/api/user-post-messages?view=graph-rest-beta#request-2)
-- [Получать все сообщения в почтовом ящике пользователя, содержащие @упоминание пользователя](/graph/api/user-list-messages?view=graph-rest-beta#request-2)
-- [Получать все @упоминания в сообщении](/graph/api/message-get?view=graph-rest-beta#request-2)
+- Создавать @упоминания при [составлении сообщений](/graph/api/user-post-messages?view=graph-rest-beta&preserve-view=true#request-2)
+- [Получать все сообщения в почтовом ящике пользователя, содержащие @упоминание пользователя](/graph/api/user-list-messages?view=graph-rest-beta&preserve-view=true#request-2)
+- [Получать все @упоминания в сообщении](/graph/api/message-get?view=graph-rest-beta&preserve-view=true#request-2)
 
 ## <a name="other-shared-capabilities"></a>Другие общие возможности
 
 Используйте указанные ниже стандартные возможности, имеющиеся в объектах Microsoft Graph.
 
-- Вы можете подписаться на [уведомления об изменениях](/graph/api/resources/webhooks?view=graph-rest-1.0) сообщений. Вы будете получать их при возникновении изменений одного или нескольких типов, например при создании или изменении сообщений.
-- [Вы можете отслеживать эти добавочные изменения сообщений в папке](delta-query-messages.md).
+- Вы можете подписаться на [уведомления об изменениях](/graph/api/resources/webhooks) сообщений. Вы будете получать их при возникновении изменений одного или нескольких типов, например при создании или изменении сообщений.
+- [Отслеживание добавочных изменений сообщений в папке](delta-query-messages.md).
 - Вы можете создавать [открытые расширения](extensibility-overview.md#open-extensions) или [расширения схемы](extensibility-overview.md#schema-extensions), чтобы добавлять пользовательские данные в экземпляры сообщений.
-- Вы можете создавать [расширенные свойства](/graph/api/resources/extended-properties-overview?view=graph-rest-1.0) в экземплярах сообщений, чтобы хранить пользовательские данные для свойств MAPI Outlook, когда эти свойства еще недоступны в метаданных API Microsoft Graph.
+- Вы можете создавать [расширенные свойства](/graph/api/resources/extended-properties-overview) в экземплярах сообщений, чтобы хранить пользовательские данные для свойств MAPI Outlook, когда эти свойства еще недоступны в метаданных API Microsoft Graph.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-
-Дополнительные сведения:
 
 - [Зачем выполнять интеграцию с почтой Outlook?](outlook-mail-concept-overview.md)
 - [Получение содержимого MIME (предварительная версия)](outlook-get-mime-message.md)
 - [Получение общих сообщений](outlook-share-messages-folders.md)
 - [Отправка сообщений Outlook от другого пользователя](outlook-send-mail-from-other-user.md)
 - [Получение неизменяемых идентификаторов для ресурсов Outlook](outlook-immutable-id.md)
-- [Использование API почты](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) и [варианты использования](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) в Microsoft Graph 1.0.
+- [Использование API почты](/graph/api/resources/mail-api-overview) и [вариантов использования](/graph/api/resources/mail-api-overview#common-use-cases) в Microsoft Graph 1.0.

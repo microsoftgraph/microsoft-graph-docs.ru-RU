@@ -3,12 +3,12 @@ title: Компонент Person-Card в Microsoft Graph Toolkit
 description: Компонент Person-Card для просмотра дополнительных сведений, относящихся к пользователю.
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.openlocfilehash: 20f34becb875b7bd8dd10bfdafce28fd6d14c808
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 79a99d80433ac9ee97cf596eb01bf684d25ba5b0
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398323"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446065"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Компонент Person-Card в Microsoft Graph Toolkit
 
@@ -62,6 +62,7 @@ MgtPersonCard.config.sections.profile = false;
 | mailMessages | `boolean` — указывает, отображается ли раздел сообщений карточки контакта. Значение по умолчанию: `true`.  |
 | files | `boolean` — указывает, отображается ли раздела файлов карточки контакта. Значение по умолчанию: `true`.  |
 | profile | `boolean` — указывает, отображается ли раздел профиля карточки контакта. Значение по умолчанию: `true`.  |
+| навигация с помощью клавиши lock-tab | `boolean` — разрешает блокировку навигации с помощью вкладок, чтобы она не вытекала из раздела карточки. Значение по умолчанию — `false`.  |
 
 Чтобы отключить раздел, просто задайте `false` свойство в коде инициализации приложения:
 ```ts
@@ -185,7 +186,7 @@ mgt-person {
 | `sections.organization` enabled (по умолчанию) | User.Read.All | [/users/{id}/manager](/graph/api/user-list-manager) | Организация |
 | `sections.organization.showWorksWith` set (по умолчанию) | People.Read.All | [/users/{id}/people](/graph/api/user-list-people) | Организация |
 | `sections.mailMessages` enabled (по умолчанию) | Mail.ReadBasic | [/me/messages](/graph/api/user-list-messages) | Сообщения |
-| `sections.files` enabled (по умолчанию) | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Файлы |
+| `sections.files` enabled (по умолчанию) | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Files |
 | `sections.profile` enabled (по умолчанию) | User.Read.All | [/users/{id}/profile](/graph/api/profile-get?view=graph-rest-beta&preserve-view=true) | Профиль |
 
 Класс `MgtPersonCard` также предоставляет `getScopes` статический метод, возвращающий массив областей, необходимый для работы карточки контакта с учетом глобальной конфигурации карточки контакта.
@@ -205,7 +206,7 @@ const neededScopes = MgtPersonCard.getScopes();
 > [!IMPORTANT]
 > Компонент `mgt-person-card` получает основные данные пользователя из родительского компонента `mgt-person` без вызова Microsoft Graph. Если `mgt-person-card` используется отдельно, он будет извлекать необходимые данные и кэшировать их. Данные, отображаемые в разделах карточки, извлекаются отдельно и не кэшируются.
 
-|Хранилище объектов|Кэшированные данные|Замечания|
+|Хранилище объектов|Кэшированные данные|Примечания|
 |---------|-----------|-------|
 |`people`|Сведения о пользователе|Используется при `personQuery` указании и его значение отличается от `me`|
 |`photos`|Фотография пользователя|

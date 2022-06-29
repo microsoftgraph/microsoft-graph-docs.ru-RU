@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 06562d6ecad6d099b656af00936924aaf53eccf5
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 80d989b333503d61d768547ac781741ebb8f8fef
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095890"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442501"
 ---
 # <a name="ediscoveryreviewsetquery-export"></a>ediscoveryReviewSetQuery: экспорт
 Пространство имен: microsoft.graph.security
@@ -53,12 +53,12 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryRe
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|outputName|Строка| Имя экспорта. Обязательный. |
-|description|Строка| Описание экспорта |
-|azureBlobContainer|Строка| При экспорте в собственную учетную запись хранения Azure это URL-адрес контейнера. |
-|azureBlobToken|Строка| При экспорте в собственную учетную запись хранения Azure маркер SAS для URL-адреса контейнера. |
+|outputName|String| Имя экспорта. Обязательный. |
+|description|String| Описание экспорта |
+|azureBlobContainer|String| При экспорте в собственную учетную запись хранения Azure это URL-адрес контейнера. |
+|azureBlobToken|String| При экспорте в собственную учетную запись хранения Azure маркер SAS для URL-адреса контейнера. |
 |exportOptions|String|Задает параметры, которые могут управлять форматом экспорта. Возможные значения: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
-|exportStructure|Строка| Параметры, которые контролирует структуру файлов и упаковку экспорта. Возможные значения: `none`, `directory`, `pst`.|
+|exportStructure|String| Параметры, которые контролирует структуру файлов и упаковку экспорта. Возможные значения: `none`, `directory`, `pst`.|
 
 
 ## <a name="response"></a>Отклик
@@ -101,6 +101,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoveryreviewsetquerythisexport-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoveryreviewsetquerythisexport-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

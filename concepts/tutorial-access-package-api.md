@@ -1,25 +1,26 @@
 ---
-title: Руководство. Управление доступом к ресурсам в управлении правами Active Directory с помощью API Graph Майкрософт
-description: Узнайте, как управлять доступом к ресурсам в управлении правами Active Directory (Azure AD) с помощью API Graph Майкрософт.
+title: Руководство. Управление доступом к ресурсам в управлении правами Active Directory
+description: Узнайте, как использовать API Microsoft Graph для разработки кода для создания пакета ресурсов для маркетинговой кампании, которую внутренние пользователи могут запрашивать самостоятельно.
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 4a241d09897e51b4395f867351d51f6be9ef1e2d
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: c301319422a6a19af80725520b46ca413eb589e9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65366123"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438222"
 ---
-# <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>Руководство. Управление доступом к ресурсам в управлении правами Active Directory с помощью API Graph Майкрософт
+# <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>Руководство. Управление доступом к ресурсам в управлении правами Active Directory с помощью API Microsoft Graph
 
-Управление доступом ко всем ресурсам, которые требуются сотрудникам, таким как группы, приложения и сайты, является важной функцией для организаций. Вы хотите предоставить сотрудникам нужный уровень доступа, необходимый для продуктивной работы, и удалить их доступ, когда он больше не нужен. [Azure Active Directory (Azure AD)](/azure/active-directory/governance/entitlement-management-overview) с помощью API Microsoft Graph позволяет управлять этим типом доступа.
+Управление доступом ко всем ресурсам, которые требуются сотрудникам, таким как группы, приложения и сайты, является важной функцией для организаций. Вы хотите предоставить сотрудникам нужный уровень доступа, необходимый для продуктивной работы, и удалить их доступ, когда он больше не нужен. [Управление правами Azure Active Directory (Azure AD)](/azure/active-directory/governance/entitlement-management-overview) с помощью API Microsoft Graph позволяет управлять этим типом доступа.
 
-В этом руководстве вам было предложено разработать код для создания пакета ресурсов для маркетинговой кампании, которую внутренние пользователи могут запрашивать самостоятельно. Запросы не требуют утверждения, и срок действия доступа пользователя истекает через 30 дней. В этом руководстве ресурсы маркетинговой кампании — это просто членство в одной группе, но это может быть коллекция групп, приложений или SharePoint веб-сайтов.
+В этом руководстве описано, как разработать код для создания пакета ресурсов для маркетинговой кампании, которую внутренние пользователи могут запрашивать самостоятельно. Запросы не требуют утверждения, и срок действия доступа пользователя истекает через 30 дней. В этом руководстве ресурсы маркетинговой кампании — это просто членство в одной группе, но это может быть коллекция групп, приложений или сайтов SharePoint Online.
 
->**Примечание:** Объекты ответа, показанные в этом руководстве, могут быть сокращены для удобочитаемости. 
+> [!NOTE]
+> Объекты ответа, показанные в этом руководстве, могут быть сокращены для удобочитаемости.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 Для успешного завершения работы с этим руководством убедитесь, что у вас есть необходимые компоненты:
 - Azure AD управления правами требуются определенные лицензии. Дополнительные сведения см [. в разделе "Требования к лицензии"](/azure/active-directory/governance/entitlement-management-overview#license-requirements). В клиенте требуются следующие лицензии:
@@ -226,7 +227,7 @@ Content-type: application/json
 
 ### <a name="get-catalog-resources"></a>Получение ресурсов каталога
 
-Далее в этом руководстве вам потребуется идентификатор,  назначенный ресурсу группы в каталоге. Этот идентификатор, представляющий группу в качестве ресурса в каталоге, отличается от идентификатора самой группы в Microsoft Graph. Это связано с тем, что каталог может содержать ресурсы, которые не представлены в microsoft Graph.
+Далее в этом руководстве вам потребуется идентификатор,  назначенный ресурсу группы в каталоге. Этот идентификатор, представляющий группу как ресурс в каталоге, отличается от идентификатора самой группы в Microsoft Graph. Это связано с тем, что каталог может содержать ресурсы, которые не представлены в Microsoft Graph.
 
 В запросе укажите **идентификатор** каталога, который вы используете. Запишите значение свойства **идентификатора** для ресурса каталога групп.
 
@@ -260,7 +261,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### <a name="get-resources-roles"></a>Получение ролей ресурсов
 
-Пакет доступа назначает пользователям роли ресурса. Типичной ролью группы является роль участника. Другие ресурсы, такие как SharePoint веб-сайтов и приложений, могут иметь множество ролей. Типичной ролью группы, используемой в пакете доступа, является роль участника. Роль участника потребуется при добавлении роли ресурса в пакет для доступа далее в этом руководстве. 
+Пакет доступа назначает пользователям роли ресурса. Типичной ролью группы является роль участника. Другие ресурсы, такие как сайты и приложения SharePoint Online, могут иметь множество ролей. Типичной ролью группы, используемой в пакете доступа, является роль участника. Роль участника потребуется при добавлении роли ресурса в пакет для доступа далее в этом руководстве. 
 
 В запросе используйте идентификатор каталога и идентификатор ресурса группы в каталоге, который вы записали, чтобы получить **originId** роли ресурса-члена.  Запишите значение свойства **originId** , которое будет использоваться далее в этом руководстве.
 
@@ -470,7 +471,7 @@ Content-type: application/json
 
 В ответе можно увидеть состояние **"Принято** " и " **Отправлено"**. Запишите значение свойства **идентификатора** , которое возвращается для получения состояния запроса позже.
 
-Если вы еще не сделали этого, выйдите из учетной записи администратора, которую вы использовали в Microsoft Graph Explorer. Войдите в **созданную учетную запись пользователя Requestor1** . При первом входе вам будет предложено изменить пароль.
+Если вы еще не сделали этого, выйдите из учетной записи администратора, которую вы использовали в Обозревателе Microsoft Graph. Войдите в **созданную учетную запись пользователя Requestor1** . При первом входе вам будет предложено изменить пароль.
 
 #### <a name="request"></a>Запрос
 
@@ -733,13 +734,12 @@ No Content - 204
 
 В этом руководстве вы использовали множество API для выполнения задач. Дополнительные сведения о возможностях API см. в справочнике по API для этих API.
 
-
-- [Работа с API Azure AD управления правами](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true)
-- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true)
-- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true)
-- [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)
-- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta&preserve-view=true)
-- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true)
-- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)
+- [Работа с API Azure AD управления правами](/graph/api/resources/entitlementmanagement-overview)
+- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog)
+- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest)
+- [accessPackage](/graph/api/resources/accesspackage)
+- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope)
+- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy)
+- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest)
 - [group](/graph/api/resources/group)
-- [user](/graph/api/resources/user?)
+- [user](/graph/api/resources/user)

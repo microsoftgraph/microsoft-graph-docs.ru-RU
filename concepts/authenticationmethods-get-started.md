@@ -1,15 +1,15 @@
 ---
 title: Начало работы с API способов проверки подлинности в Microsoft Graph
-description: AP способов проверки подлинности в Microsoft Graph с помощью программных средств позволяет организациям управлять способами проверки подлинности пользователей, регистрировать пользователей для выполнения многофакторной проверки подлинности (MFA) и выполнять самостоятельный сброс пароля (SSPR).
+description: Узнайте, как управлять методами проверки подлинности ваших пользователей и зарегистрировать пользователей для выполнения многофакторной проверки подлинности (MFA) и самостоятельного сброса пароля (SSPR).
 author: mmcla
 ms.localizationpriority: high
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: bfd0167e0237a35dc6fd19a43e917d7c8899cf0d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 19b9e17d380006254b20d083afdf7adc1f985c17
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59122917"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437032"
 ---
 # <a name="get-started-with-the-microsoft-graph-authentication-methods-api"></a>Начало работы с API способов проверки подлинности в Microsoft Graph
 
@@ -255,11 +255,10 @@ GET https://graph.microsoft.com/beta/users/ed178e23-7447-4892-baf8-fc46f8af26ce/
 
 Ищете справочные материалы по API для способов проверки подлинности?
 
-* См. статью [Обзор API способов проверки подлинности для Azure AD](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta)
+* См. статью [Обзор API способов проверки подлинности для Azure AD](/graph/api/resources/authenticationmethods-overview)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* Узнайте, как [использовать API REST для способов проверки подлинности](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta).
 * Используйте Azure AD для [аутентификации](./auth/index.yml) в Microsoft Graph.
 * Интегрируйте [вход в Azure AD](https://azure.microsoft.com/develop/identity/signin/) в свое приложение или в свой веб-сайт.
 * Сведения о новых возможностях API Azure AD см. в [журнале изменений](changelog.md).

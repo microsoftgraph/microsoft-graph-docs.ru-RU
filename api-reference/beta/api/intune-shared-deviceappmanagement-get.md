@@ -1,22 +1,22 @@
 ---
 title: Get deviceAppManagement
 description: Чтение свойств и связей объекта deviceAppManagement.
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 070a4fd85b7720e8140a3afb95746d649978bd90
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: 64da3a10fbf0f218dd38b32cb67103b894e037ea
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65857682"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437347"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API в версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно:** API-интерфейсы в версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -31,7 +31,7 @@ ms.locfileid: "65857682"
 | Делегированные (рабочая или учебная учетная запись) | |
 | &nbsp;&nbsp; **Приложения**, **книги**, **подключение**, **интеграция с партнером** или **набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение| |
 | &nbsp;&nbsp; **Приложения**, **книги**, **подключение**, **интеграция с партнером** или **набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |

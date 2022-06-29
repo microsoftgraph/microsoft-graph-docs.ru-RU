@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: d009c516409b15b5d10a9bb8befb0d7e5b66bac5
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: ae81bc60407fdaf2f545fac72a313c58ab3b22f7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66092396"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446911"
 ---
 # <a name="ediscoveryreviewset-export"></a>ediscoveryReviewSet: экспорт
 Пространство имен: microsoft.graph.security
@@ -52,12 +52,12 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryRe
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|outputName|Строка| Имя экспорта. Обязательный. |
-|description|Строка| Описание экспорта |
-|azureBlobContainer|Строка| При экспорте в собственную учетную запись хранения Azure это URL-адрес контейнера. |
-|azureBlobToken|Строка| При экспорте в собственную учетную запись хранения Azure маркер SAS для URL-адреса контейнера. |
+|outputName|String| Имя экспорта. Обязательный. |
+|description|String| Описание экспорта |
+|azureBlobContainer|String| При экспорте в собственную учетную запись хранения Azure это URL-адрес контейнера. |
+|azureBlobToken|String| При экспорте в собственную учетную запись хранения Azure маркер SAS для URL-адреса контейнера. |
 |exportOptions|String|Задает параметры, которые могут управлять форматом экспорта. Возможные значения: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
-|exportStructure|Строка| Параметры, которые контролирует структуру файлов и упаковку экспорта. Возможные значения: `none`, `directory`, `pst`.|
+|exportStructure|String| Параметры, которые контролирует структуру файлов и упаковку экспорта. Возможные значения: `none`, `directory`, `pst`.|
 ## <a name="response"></a>Отклик
 
 Если экспорт успешно запущен, это действие возвращает код `202 Accepted` отклика. Ответ также будет содержать заголовок `Location` , содержащий расположение операции [экспорта,](../resources/security-ediscoveryexportoperation.md) созданной для обработки экспорта.
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoveryreviewsetthisexport-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoveryreviewsetthisexport-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Обзор API для личных контактов Outlook
-description: Контакты Outlook позволяют хранить данные личных контактов и являются частью центра обмена сообщениями Outlook в Microsoft 365. Через Outlook можно управлять сообщениями электронной почты, планировать собрания, искать сведения о пользователях организации, начинать беседы в Интернете, делиться файлами и совместно работать в группах.
+description: Используйте API личных контактов Outlook в Microsoft Graph для управления электронной почтой, планирования собраний, поиска сведений о пользователях, обмена файлами и совместной работы в группах.
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 909c79069912375cb4397812350b8c6448d640b4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 95a66efaab47cdc178b81a5e5d4167d708e51d31
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066863"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447102"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Обзор API для личных контактов Outlook
 
@@ -26,9 +26,9 @@ ms.locfileid: "59066863"
 
 API контактов позволяет упорядочивать ваших клиентов аналогично тому, как это делают в Outlook сами клиенты:
 
-- Точно так же, как клиенты, вы можете создавать экземпляры [контактов](/graph/api/resources/contact?view=graph-rest-1.0) и назначать их объектам [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0).
-- API контактов позволяет назначать категории контактам, а также событиям, сообщениям, задачам и записям в группах, чтобы упорядочить эти элементы и упростить их поиск. Кроме того, вы можете [определить основной список категорий пользователя](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0), что позволит использовать дополнительные нестандартные сценарии.
-- [Контакт](/graph/api/resources/contact?view=graph-rest-1.0) можно пометить для последующего наблюдения. (В настоящее время функция пометки доступна [в предварительной версии ](versioning-and-support.md#beta-version) в Microsoft Graph.)
+- Точно так же, как клиенты, вы можете создавать экземпляры [контактов](/graph/api/resources/contact) и назначать их объектам [contactFolder](/graph/api/resources/contactfolder).
+- API контактов позволяет назначать категории контактам, а также событиям, сообщениям, задачам и записям в группах, чтобы упорядочить эти элементы и упростить их поиск. Кроме того, вы можете [определить основной список категорий пользователя](/graph/api/outlookuser-post-mastercategories), что позволит использовать дополнительные нестандартные сценарии.
+- [Контакт](/graph/api/resources/contact) можно пометить для последующего наблюдения. (В настоящее время функция пометки доступна [в предварительной версии ](versioning-and-support.md#beta-version) в Microsoft Graph.)
 
 ### <a name="share-contact-information"></a>Общий доступ к информации контактов
 
@@ -36,12 +36,12 @@ API контактов позволяет получать элементы ко
 
 ### <a name="leverage-people-api-in-microsoft-graph-to-make-better-use-of-all-people-data"></a>Использование API людей в Microsoft Graph для более эффективного использования всех данных пользователей
 
-Вы можете использовать обычные операции CRUD для объекта [contact](/graph/api/resources/contact?view=graph-rest-1.0) Outlook, чтобы создавать контакты и управлять ими. Вы также можете использовать [API людей](people-example.md) в Microsoft Graph, который просматривает контакты Outlook пользователя, а также социальные сети, каталог организации и людей из недавних сообщений и возвращает из этих ресурсов наиболее релевантные сведения о людях для данного пользователя. Используйте эту расширенную аналитику в сценариях с выбором людей.
+Вы можете использовать обычные операции CRUD для объекта [contact](/graph/api/resources/contact) Outlook, чтобы создавать контакты и управлять ими. Вы также можете использовать [API людей](people-example.md) в Microsoft Graph, который просматривает контакты Outlook пользователя, а также социальные сети, каталог организации и людей из недавних сообщений и возвращает из этих ресурсов наиболее релевантные сведения о людях для данного пользователя. Используйте эту расширенную аналитику в сценариях с выбором людей.
 
 ### <a name="take-advantage-of-other-shared-features-and-conveniences-in-microsoft-graph"></a>Использование преимуществ других общих функций и возможностей в Microsoft Graph
 
-- Объект **contact** поддерживает фотографию контакта, которая реализуется в виде того же объекта [profilePhoto](/graph/api/resources/profilephoto?view=graph-rest-1.0), что и фотография пользователя, хранимая в Exchange Online или Azure Active Directory. Это позволяет исключить потребление ресурсов при преобразовании между фотографией контакта и фотографией профиля пользователя.
-- Вы можете синхронизировать локальное хранилище приложения, подписавшись на [уведомления об изменениях](/graph/api/resources/webhooks?view=graph-rest-1.0) и [отслеживание изменений](delta-query-overview.md) в контактах и папках контактов.
+- Объект **contact** поддерживает фотографию контакта, которая реализуется в виде того же объекта [profilePhoto](/graph/api/resources/profilephoto), что и фотография пользователя, хранимая в Exchange Online или Azure Active Directory. Это позволяет исключить потребление ресурсов при преобразовании между фотографией контакта и фотографией профиля пользователя.
+- Вы можете синхронизировать локальное хранилище приложения, подписавшись на [уведомления об изменениях](/graph/api/resources/webhooks) и [отслеживание изменений](delta-query-overview.md) в контактах и папках контактов.
 - Вы можете увеличить хранилище приложения в экземпляре контакта в виде [открытого расширения](extensibility-overview.md#open-extensions) или добавить строго типизированные пользовательские данные в схему контакта в виде [расширения схемы](extensibility-overview.md#schema-extensions).
 
 ## <a name="where-is-the-data"></a>Расположение данных
@@ -52,8 +52,8 @@ API контактов позволяет получать элементы ко
 
 Ищете справочные материалы по API для этой службы?
 
-- [API контактов Outlook в Microsoft Graph 1.0](/graph/api/resources/contact?view=graph-rest-1.0)
-- [API контактов Outlook в бета-версии Microsoft Graph](/graph/api/resources/contact?view=graph-rest-beta)
+- [API контактов Outlook в Microsoft Graph 1.0](/graph/api/resources/contact?view=graph-rest-1.0&preserve-view=true)
+- [API контактов Outlook в бета-версии Microsoft Graph](/graph/api/resources/contact?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
@@ -61,4 +61,3 @@ API контактов позволяет получать элементы ко
 - Узнайте, как выполнять указанные ниже действия.
   - [Получение неизменяемых идентификаторов для ресурсов Outlook](outlook-immutable-id.md)
   - [Получение общих контактов](outlook-get-shared-contacts-folders.md)
-- Ознакомьтесь со справочными материалами по [API контактов](/graph/api/resources/contact?view=graph-rest-1.0) в Outlook.

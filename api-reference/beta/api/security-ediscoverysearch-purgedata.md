@@ -1,34 +1,34 @@
 ---
 title: 'ediscoverySearch: purgeData'
-description: Используйте метод очистки данных для Teams сообщений в поиске eDiscovery.
+description: Используйте метод очистки данных для удаления сообщений Teams в поиске eDiscovery.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: f8ac399b59473a4c5ec1d1e1f064532228c23ea5
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 4a74360e6d714f34e23e6dc6a7ac2bbef641431d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095407"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446665"
 ---
 # <a name="ediscoverysearch-purgedata"></a>ediscoverySearch: purgeData
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Окончательное удаление Microsoft Teams сообщений, содержащихся в поиске [обнаружения электронных данных](../resources/security-ediscoverysearch.md).
+Окончательное удаление сообщений Microsoft Teams, содержащихся в поиске [eDiscovery](../resources/security-ediscoverysearch.md).
 
->**Примечание:** Этот запрос очищает только Teams данных. Он не очищает другие типы данных, такие как элементы почтовых ящиков.
+>**Примечание:** Этот запрос очищает только данные Teams. Он не очищает другие типы данных, такие как элементы почтовых ящиков.
 
-Вы можете собирать и очищать следующие категории Teams контента:
-- **Teams 1:1** — сообщения чата, записи и вложения, Teams беседы между двумя людьми. Teams чаты 1:1 также *называются беседами*.
-- **Teams чатов** — сообщения чата, записи и вложения, Teams беседы между тремя или несколькими пользователями. Также называется *1:N* чатами или *групповыми беседами*.
-- **Teams каналов** — сообщения чата, записи, ответы и вложения, общие в стандартном Teams канале.
-- **Частные каналы** — сообщения, ответы и вложения, общие в частном Teams канале.
-- **Общие каналы —** сообщения, ответы и вложения, общие в общем Teams канале.
+Вы можете собирать и очищать следующие категории содержимого Teams:
+- **Чаты Teams 1:1** — сообщения чата, записи и вложения, к которым предоставлен общий доступ в беседе Teams между двумя людьми. Чаты Teams 1:1 также *называются беседами*.
+- **Групповые чаты Teams** — сообщения чата, записи и вложения, которыми поделились в беседе Teams три или более человек. Также называется *1:N* чатами или *групповыми беседами*.
+- **Каналы Teams —** сообщения чата, записи, ответы и вложения, общие в стандартном канале Teams.
+- **Частные каналы** — сообщения, ответы и вложения, общие в частном канале Teams.
+- **Общие каналы —** сообщения, ответы и вложения, общие в общем канале Teams.
 
-Дополнительные сведения об очистке Teams сообщений см. в следующих статьях:
+Дополнительные сведения о очистке сообщений Teams см. в следующих статьях:
 - [Серия решений для обнаружения электронных данных: сценарий утечки данных — поиск и очистка](/microsoft-365/compliance/data-spillage-scenariosearch-and-purge)
 - [Advanced eDiscovery рабочего процесса для содержимого в Microsoft Teams](/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery) 
 
@@ -96,6 +96,10 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-41
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoverysearchthispurgedata-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoverysearchthispurgedata-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

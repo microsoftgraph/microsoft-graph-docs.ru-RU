@@ -5,19 +5,19 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 975957cb1dca96e074b9012dc7f6d2d7fa948271
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: e11553f5a7008802517d6f132437d2ebe7e07aeb
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65315929"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444068"
 ---
 # <a name="contenttype-addcopyfromcontenttypehub"></a>contentType: addCopyFromContentTypeHub
 Пространство имен: microsoft.graph
 
 Добавьте или синхронизируйте копию опубликованного типа контента из концентратора типов контента на целевой [сайт](../resources/site.md) или [список](../resources/list.md).
 
-Этот метод является частью изменений в типе публикации контента, чтобы оптимизировать синхронизацию опубликованных типов контента с сайтами и списками, эффективно переходя от "принудительного везде" к "извлечению по мере необходимости". Этот метод позволяет пользователям извлекать типы контента непосредственно из центра типов контента на сайт или в список. Дополнительные сведения см. в разделе [contentType: getCompatibleHubContentTypes](contenttype-getcompatiblehubcontenttypes.md) и записи блога о обновлениях продукта [Syntex — август 2021 г](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438).
+Этот метод является частью изменений в типе публикации контента, чтобы оптимизировать синхронизацию опубликованных типов контента с сайтами и списками, эффективно переходя от "принудительного везде" к "извлечению по мере необходимости". Этот метод позволяет пользователям извлекать типы контента непосредственно из центра типов контента на сайт или в список. Дополнительные сведения см. в разделе [contentType: getCompatibleHubContentTypes](contenttype-getcompatiblehubcontenttypes.md) и записи блога [Syntex Product Актуальные данные – август 2021 г](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -105,6 +105,10 @@ Content-length: 33
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-addcopyfromcontenttypehub-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-addcopyfromcontenttypehub-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

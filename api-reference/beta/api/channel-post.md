@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 241296e2cbddb94d582a7241c6f81c195a5cabfe
-ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
+ms.openlocfilehash: 59dbcb55dc4a0e8ae2d267f71dd549903301081a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "66034560"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443454"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -22,7 +22,7 @@ ms.locfileid: "66034560"
 > **Примечание:** При создании частного канала можно добавить не более 200 участников.
 
 > [!IMPORTANT]
-> В настоящее время общие каналы находятся в состоянии общедоступной предварительной версии. В течение этого времени microsoft API Graph для создания общего канала доступна ограниченной аудитории. Мы рекомендуем создавать общие каналы в клиенте Teams и использовать API microsoft Graph для управления ими. Дополнительные сведения о том, как включить общие каналы в клиенте Teams, см. в разделе "Общие Microsoft Teams [(предварительная версия)"](/microsoftteams/shared-channels).
+> В настоящее время общие каналы находятся в состоянии общедоступной предварительной версии. В течение этого времени microsoft API Graph для создания общего канала доступна ограниченной аудитории. Мы рекомендуем создавать общие каналы в клиенте Teams и использовать API Microsoft Graph для управления ими. Дополнительные сведения о включении общих каналов в клиенте Teams см. в разделе "Общие каналы [" в Microsoft Teams (предварительная версия)](/microsoftteams/shared-channels).
 
 
 ## <a name="permissions"></a>Разрешения
@@ -60,7 +60,7 @@ POST /teams/{team-id}/channels
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения `201 Created` этот метод возвращает код отклика и [](../resources/channel.md) объект канала в теле отклика для канала со значением **membershipType** или `standard` `private`. Для канала со **значением membershipType** этот `shared`метод возвращает ответ, `202 Accepted` содержащий ссылку на [teamsAsyncOperation](../resources/teamsasyncoperation.md).
+В случае успешного выполнения `201 Created` этот метод возвращает код отклика и [](../resources/channel.md) объект канала в теле ответа для канала со значением **membershipType** или `standard` `private`. Для канала со значением **membershipType** `shared``202 Accepted` этот метод возвращает код отклика и ссылку на [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
 При безуспешном запросе этот метод возвращает код отклика `400 Bad Request`. Ниже перечислены распространенные причины этого отклика.
 

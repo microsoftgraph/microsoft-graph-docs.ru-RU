@@ -1,22 +1,22 @@
 ---
 title: Создание educationCategories
-description: Добавление существующей системы educationCategory в educationAssignment
+description: Добавление существующей educationCategory в educationAssignment
 ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: add0c80922457e5cf7543412ccb8a8c8f8b1c2ff
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ca6fe2d2541332a0ce3da4be0f5f3c7ff989be71
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61338948"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445064"
 ---
 # <a name="create-educationcategories"></a>Создание educationCategories
 
 Пространство имен: microsoft.graph
 
-Добавьте один или несколько существующих [объектов educationCategory](../resources/educationcategory.md) в указанное [educationAssignment.](../resources/educationassignment.md)
+Добавьте один или несколько существующих [объектов educationCategory](../resources/educationcategory.md) в указанное  [educationAssignment](../resources/educationassignment.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,7 +39,7 @@ POST /education/classes/{id}/assignments/{id}/categories/$ref
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса odata.id существующего объекта [educationCategory(ы)](../resources/educationcategory.md) для добавления к этому назначению.
+В тексте запроса укажите odata.id существующих объектов [educationCategory](../resources/educationcategory.md) для добавления в это назначение.
 
 
 ## <a name="response"></a>Отклик
@@ -85,12 +85,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/add-educationcategory-to-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/add-educationcategory-to-educationassignment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-В теле запроса укажи odata.id существующего объекта [educationCategory,](../resources/educationcategory.md) чтобы добавить к этому назначению.
+В тексте запроса укажите odata.id существующего объекта [educationCategory](../resources/educationcategory.md) для добавления в это назначение.
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 <!-- {
   "blockType": "response",

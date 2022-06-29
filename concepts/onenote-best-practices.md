@@ -1,19 +1,19 @@
 ---
-title: Рекомендации по работе с API OneNote в Microsoft Graph
-description: В этой статье содержатся рекомендации по работе с API OneNote в Microsoft Graph. Эти рекомендации основаны на ответах на распространенные вопросы в Microsoft Q&a и Twitter.
+title: Рекомендации по работе с API OneNote
+description: Ознакомьтесь с рекомендациями по работе с API OneNote в Microsoft Graph на основе ответов на часто задаваемые вопросы о Microsoft Q&A и Twitter.
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: 6f725485901b3a6235df08828489b36427a7fbc4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8d67f5ca0a6f21fc9fb4fab01534634f52e15cef
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019064"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442838"
 ---
 # <a name="best-practices-for-working-with-the-onenote-api-in-microsoft-graph"></a>Рекомендации по работе с API OneNote в Microsoft Graph
 
-В этой статье содержатся рекомендации по работе с API OneNote в Microsoft Graph. Эти рекомендации основаны на ответах на распространенные вопросы в [Microsoft Q&a и](/answers/topics/microsoft-graph-notes.html)  Twitter.
+В этой статье содержатся рекомендации по работе с API OneNote в Microsoft Graph. Эти рекомендации основаны на ответах на часто задаваемые вопросы в [Microsoft Q&A](/answers/topics/microsoft-graph-notes.html)  и Twitter.
 
 ## <a name="use-select-to-select-the-minimum-set-of-properties-you-need"></a>Используйте оператор $select, чтобы выбрать минимальный набор необходимых свойств
 

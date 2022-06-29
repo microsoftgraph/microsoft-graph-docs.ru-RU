@@ -1,26 +1,26 @@
 ---
-title: Удаление deviceManagementDerivedCredentialSettings
-description: Удаляет устройствоManagementDerivedCredentialSettings.
-author: rolyon
-ms.localizationpriority: medium
+title: Удаление объекта deviceManagementDerivedCredentialSettings
+description: Удаляет объект deviceManagementDerivedCredentialSettings.
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 66d18b0349d7f42e27e052a6504119950ce0108d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 19c191a4a3a431dd65a9de6053d00a7f848a4c08
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59132570"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442733"
 ---
-# <a name="delete-devicemanagementderivedcredentialsettings"></a>Удаление deviceManagementDerivedCredentialSettings
+# <a name="delete-devicemanagementderivedcredentialsettings"></a>Удаление объекта deviceManagementDerivedCredentialSettings
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет [устройствоManagementDerivedCredentialSettings.](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)
+Удаляет объект [deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,7 +30,7 @@ ms.locfileid: "59132570"
 |Делегированные (рабочая или учебная учетная запись)||
 |&nbsp;&nbsp; **Политика доступа к ресурсам**|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 |&nbsp;&nbsp; **Политика доступа к ресурсам**|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ DELETE /deviceManagement/derivedCredentials/{deviceManagementDerivedCredentialSe
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

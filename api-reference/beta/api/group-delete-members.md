@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 875fad2dd6921d19cd1ac1834bc684f1e0eae161
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: 3183fa0c2f44e00dbeab863a435271ea06014e70
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118447"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439046"
 ---
 # <a name="remove-member"></a>Удаление участника
 
@@ -41,7 +41,7 @@ ms.locfileid: "66118447"
 DELETE /groups/{id}/members/{id}/$ref
 ```
 > [!CAUTION]
-> `/$ref` Если запрос не добавлен и вызывающее приложение имеет разрешения на управление типом объекта-члена, объект-член также будет удален из Azure Active Directory (Azure AD); `403 Forbidden` в противном случае возвращается ошибка. Например, приложение с разрешениями *GroupMember.ReadWrite.All* и *User.ReadWrite.All* удалит пользователя. Вы можете восстановить определенные объекты с помощью [API восстановления удаленных элементов](directory-deleteditems-restore.md).
+> Если `/$ref` не добавлено к запросу и вызывающее приложение имеет разрешения на управление типом объекта-элемента, объект-элемент также будет удален из Azure Active Directory (Azure AD); в противном случае возвращается ошибка `403 Forbidden`. Например, приложение с разрешениями *GroupMember.ReadWrite.All* и *User.ReadWrite.All* удалит пользователя. Определенные объекты можно восстановить с помощью [API восстановления удаленных элементов](directory-deleteditems-restore.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -96,6 +96,10 @@ DELETE https://graph.microsoft.com/beta/groups/{group-id}/members/{directory-obj
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-member-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-member-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

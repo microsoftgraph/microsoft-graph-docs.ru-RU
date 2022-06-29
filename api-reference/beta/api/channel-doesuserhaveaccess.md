@@ -5,12 +5,12 @@ author: devjha-ms
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 808814a7c535a8a2ba9856eda0d8ec36a1170670
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 542ce63c48932ca7231313ecf4b1525eff4e373e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211079"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439769"
 ---
 # <a name="channel-doesuserhaveaccess"></a>channel: doesUserHaveAccess
 Пространство имен: microsoft.graph
@@ -44,7 +44,7 @@ GET /teams/{team-id}/channels/{channel-id}/doesUserHaveAccess
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|tenantId|String|Идентификатор клиента Azure Active Directory[, к которой](../resources/useridentity.md) принадлежит пользователь. Значением по умолчанию для этого свойства является **текущий идентификатор клиента** вошедвшего пользователя или приложения.|
+|tenantId|String|Идентификатор клиента Azure Active Directory, к [которой принадлежит пользователь](../resources/useridentity.md) . Значением по умолчанию для этого свойства является **текущий идентификатор клиента** вошедвшего пользователя или приложения.|
 |userId|String|Уникальный идентификатор [пользователя](../resources/useridentity.md). Укажите **userId или** **свойство userPrincipalName** в запросе.|
 |userPrincipalName|String|Имя участника-пользователя (UPN) [пользователя](../resources/useridentity.md). Укажите **userId или** **свойство userPrincipalName** в запросе.|
 
@@ -69,6 +69,8 @@ GET /teams/{team-id}/channels/{channel-id}/doesUserHaveAccess
 
 #### <a name="request"></a>Запрос
 
+Ниже приведен пример запроса.
+
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -76,7 +78,7 @@ GET /teams/{team-id}/channels/{channel-id}/doesUserHaveAccess
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc}/channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/doesUserHaveAccess(userId='6285581g-484b-4845-9e01-60667f8b12ae')
+GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc}/channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/doesUserHaveAccess(userId='6285581f-484b-4845-9e01-60667f8b12ae')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/channel-doesuserhaveaccess-csharp-snippets.md)]
@@ -99,6 +101,9 @@ GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc
 
 
 #### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "@odata.type": "string"
@@ -119,6 +124,8 @@ Content-Type: application/json
 Ниже приведен пример запроса, который использует свойство **tenantId** для проверки наличия у внешнего пользователя доступа к общему каналу.
 
 #### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -150,6 +157,9 @@ GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc
 
 
 #### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "@odata.type": "string"
@@ -170,6 +180,8 @@ Content-Type: application/json
 Ниже приведен пример запроса, который использует свойство **userPrincipalName** для проверки того, имеет ли внутренний пользователь доступ к общему каналу.
 
 #### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -201,6 +213,9 @@ GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc
 
 
 #### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "@odata.type": "string"

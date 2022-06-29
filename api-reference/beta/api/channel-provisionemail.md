@@ -1,26 +1,26 @@
 ---
-title: 'канал: provisionEmail'
-description: Предоставление адреса электронной почты для канала.
+title: 'channel: provisionEmail'
+description: Подготовьйте адрес электронной почты для канала.
 author: anandab-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e0848b9e722191549bc52593cd0154929ed98eeb
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: e553a716836e0516baa4855116122ec846b8e5f7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62343158"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443384"
 ---
-# <a name="channel-provisionemail"></a>канал: provisionEmail
+# <a name="channel-provisionemail"></a>channel: provisionEmail
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Предоставление адреса электронной почты для [канала](../resources/channel.md).
+Подготовьйте адрес электронной почты для [канала](../resources/channel.md).
 
-Microsoft Teams автоматически не содержит адрес электронной почты для **канала по** умолчанию. Чтобы Teams адрес электронной почты, можно вызвать **provisionEmail** или с помощью пользовательского интерфейса Teams выберите адрес электронной почты **Get**, который запускает Teams для создания адреса электронной почты, если он еще не был предварительно.
+Microsoft Teams по умолчанию не подготавливает адрес электронной почты для **канала автоматически.** Чтобы в Teams был подготовлен адрес электронной почты, вы можете вызвать **provisionEmail** или с помощью пользовательского интерфейса Teams выбрать "Получить адрес электронной почты **", который** активирует Teams для создания адреса электронной почты, если он еще не подготовлен.
 
 Чтобы удалить адрес электронной почты **канала**, используйте [метод removeEmail](channel-removeemail.md) .
 
@@ -50,7 +50,7 @@ POST /teams/{team-id}/channels/{channel-id}/provisionEmail
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект provisionChannelEmailResult](../resources/provisionChannelEmailResult.md) в тексте ответа. В свойстве имеется предварительный адрес электронной `email` почты.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [provisionChannelEmailResult](../resources/provisionChannelEmailResult.md) в тексте отклика. Подготовленный адрес электронной почты находится в свойстве `email` .
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -95,7 +95,7 @@ POST https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,26 +1,26 @@
 ---
 title: Создание iosLobAppProvisioningConfiguration
-description: Создайте новый объект iosLobAppProvisioningConfiguration.
-author: rolyon
-ms.localizationpriority: medium
+description: Создайте объект iosLobAppProvisioningConfiguration.
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a42abddc26cb9be23286c7a3682740fffa04111e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 52a92cbd29cc69b807a230ad32401a59f41e2451
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59116271"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446499"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>Создание iosLobAppProvisioningConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создайте новый [объект iosLobAppProvisioningConfiguration.](../resources/intune-shared-ioslobappprovisioningconfiguration.md)
+Создайте объект [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +31,7 @@ ms.locfileid: "59116271"
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All|
 
@@ -47,21 +47,21 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для объекта iosLobAppProvisioningConfiguration.
+В тексте запроса добавьте представление объекта iosLobAppProvisioningConfiguration в формате JSON.
 
 В следующей таблице показаны свойства, необходимые при создании iosLobAppProvisioningConfiguration.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|expirationDateTime|DateTimeOffset|Необязательный срок действия профиля.|
-|payloadFileName|String|Имя файла полезной нагрузки (*.mobileprovision) | *.xml).|
+|expirationDateTime|DateTimeOffset|Необязательная дата и время окончания срока действия профиля.|
+|payloadFileName|String|Имя файла полезных данных (*.mobileprovision) | *.xml).|
 |payload|Binary|Полезные данные (массив байтов в кодировке UTF8).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого объекта конфигурации конфигурации приложения iOS LOB.|
+|Идентификаторы roleScopeTagId|Коллекция String|Список тегов области для этой сущности конфигурации подготовки бизнес-приложения iOS.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |description|String|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
@@ -71,7 +71,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) в тексте ответа.
+В случае успешного выполнения `201 Created` этот метод возвращает код отклика и объект [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 

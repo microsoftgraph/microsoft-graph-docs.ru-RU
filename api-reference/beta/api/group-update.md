@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a71b33bb98196380cb0fd036f8d20f47be6502ab
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 6d1ff8baab3b3817d5521ca34ff6c9d50c265a5f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65210495"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446780"
 ---
 # <a name="update-group"></a>Update group
 
@@ -58,7 +58,7 @@ PATCH /groups/{id}
 | displayName             | String  | Отображаемое имя для группы. Это свойство необходимо при создании группы. Оно не может быть удалено во время обновления.                                                                                                                                                                                                                                                                                                                                                                   |
 | mailNickname            | String  | Почтовый псевдоним для группы, уникальный для групп Microsoft 365 в организации. Максимальная длина: 64 символа. Это свойство может содержать только символы из [набора символов ASCII от 0 до 127](/office/vba/language/reference/user-interface-help/character-set-0127), за исключением следующих: ` @ () \ [] " ; : . <> , SPACE`.                                                                                                                                                             |
 | preferredDataLocation   | String  | Предпочтительное расположение данных для группы Microsoft 365. Чтобы обновить это свойство, вызывающему пользователю должна быть назначена одна из указанных ниже ролей Azure AD. <br><ul><li> Глобальный администратор <li> Администратор учетных записей пользователей <li> Поддержка партнеров уровня 1 или уровня 2 <li>Редактор каталогов <li> Администратор Exchange <li> Администратор SharePoint </ul> <br/>Дополнительные сведения об этом свойстве см. в статье [OneDrive Online с поддержкой нескольких регионов](/sharepoint/dev/solution-guidance/multigeo-introduction). |
-| securityEnabled         | Логический | Указывает, является ли группа группой безопасности, включая Microsoft 365 группы.                                                                                                                                                                                                                                                                                                                                                                                                             |
+| securityEnabled         | Boolean | Указывает, является ли группа группой безопасности, включая группы Microsoft 365.                                                                                                                                                                                                                                                                                                                                                                                                             |
 | visibility              | String  | Определяет видимость группы Microsoft 365. Возможные значения: **Private** (частная), **Public** (общедоступная) или пустое значение (оно обрабатывается как **Public**).                                                                                                                                                                                                                                                                                                                                              |
 
 Так как **ресурс** группы поддерживает [расширения,](/graph/extensibility-overview)`PATCH` операцию можно использовать для добавления, обновления или удаления собственных данных приложения в пользовательских свойствах расширения в существующем **экземпляре группы**.
@@ -144,11 +144,13 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-apply-sensitivity-label-to-a-microsoft-365-group"></a>Пример 2. Применение метки конфиденциальности к Microsoft 365 группе
+### <a name="example-2-apply-sensitivity-label-to-a-microsoft-365-group"></a>Пример 2. Применение метки конфиденциальности к группе Microsoft 365
 
 #### <a name="request"></a>Запрос
 
-Идентификатор метки, которую вы хотите применить к группе Microsoft 365, можно получить с помощью [метки списка](informationprotectionpolicy-list-labels.md). Затем можно обновить свойство [assignedLabels](../resources/assignedlabel.md) группы с помощью идентификатора метки.
+Идентификатор метки, которую вы хотите применить к группе Microsoft 365, можно получить с помощью [метки списка](informationprotectionpolicy-list-labels.md). Затем можно обновить свойство [assignedLabels](../resources/assignedlabel.md) группы с помощью идентификатора метки. 
+
+>**Примечание:** Использование этого API для применения меток конфиденциальности к группам Microsoft 365 поддерживается только для сценариев делегированных разрешений.
 
 # <a name="http"></a>[HTTP](#tab/http)
 

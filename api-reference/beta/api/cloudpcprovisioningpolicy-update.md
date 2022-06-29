@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 8adae318e45899cb5a36fc9f534f2f2cdbbea349
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 25957fe267af7e33b82d5596ddfdfbb102dc0716
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722813"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447088"
 ---
 # <a name="update-cloudpcprovisioningpolicy"></a>Обновление cloudPcProvisioningPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "63722813"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|CloudPC.ReadWrite.All|
+|Приложение|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,19 +50,20 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) .
+В тексте запроса добавьте представление объекта [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в формате JSON.
 
 В следующей таблице показаны свойства, которые можно обновить для [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя отображения политики обеспечения. |
-|description|String|Описание политики обеспечения.|
-|onPremisesConnectionId|String|ID cloudPcOnPremisesConnection. Чтобы обеспечить подключение к облачным компьютерам и подключение к домену, выберите подключение к виртуальной сети, проверенной службой облачных ПК.|
-|imageId|String|ID изображения ОС, которое необходимо уладить на облачных ПК. Формат изображения типа галереи: {publisher_offer_sku}. Поддерживаемые значения для каждого из параметров: <ul><li>издатель: Microsoftwindowsdesktop.</li> <li>предложение: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-os.</li></ul>|
-|imageDisplayName|String|Имя отображения образа ОС, которое вы закаповыватель.|
-|imageType|cloudPcProvisioningPolicyImageType|Тип изображения ОС (настраиваемый или галерейный) для предоставления на облачных ПК. Возможные значения: `gallery`, `custom`.|
-|WindowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Параметры Windows для компьютеров с предварительной настройкой облачных компьютеров с этой политикой обеспечения, например параметр языка системы операций.|
+|displayName|String|Отображаемое имя политики подготовки. |
+|description|String|Описание политики подготовки.|
+|domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Указывает, как облачные компьютеры будут присоединяться к Azure Active Directory.|
+|onPremisesConnectionId|String|Идентификатор cloudPcOnPremisesConnection. Чтобы убедиться, что облачные компьютеры имеют сетевое подключение и присоединены к домену, выберите подключение к виртуальной сети, проверенной службой облачных компьютеров.|
+|imageId|String|Идентификатор образа ОС, который требуется подготовить на облачных компьютерах. Формат образа типа коллекции: {publisher_offer_sku}. Поддерживаемые значения для каждого из параметров: <ul><li>publisher: Microsoftwindowsdesktop.</li> <li>предложение: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-m365 и 19h2-ent-cpc-os.</li></ul>|
+|imageDisplayName|String|Отображаемое имя подготавливаемого образа ОС.|
+|imageType|CloudPcProvisioningPolicyImageType|Тип образа ОС (настраиваемого или коллекции), который требуется подготовить на облачных компьютерах. Возможные значения: `gallery`, `custom`.|
+|windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Параметры операционной системы Windows для подготовленных облачных компьютеров с этой политикой подготовки, например параметр языка операционной системы.|
 
 ## <a name="response"></a>Отклик
 

@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a8f8153c76e9861676e526add07a44eb00b9a9b3
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 4567698b78e069462bf0dc18b0406dceecbeb174
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "66041030"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441342"
 ---
 # <a name="create-checklistitem"></a>Создание checklistItem
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "66041030"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
-|Для приложений|Tasks.ReadWrite|
+|Приложение|Tasks.ReadWrite|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,8 +52,8 @@ POST /users/{id | userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{todoTask
 |:---|:---|:---|
 |checkedDateTime|DateTimeOffset|Дата и время завершения **checklistItem** .|
 |createdDateTime|DateTimeOffset|Дата и время создания **объекта checklistItem** .|
-|displayName|Строка|Поле, указывающее **заголовок checklistItem**.|
-|Ischecked|Boolean|Состояние, указывающее, был ли элемент извлечен или нет.|
+|displayName|String|Поле, указывающее **заголовок checklistItem**.|
+|Ischecked|Логическое|Состояние, указывающее, был ли элемент извлечен или нет.|
 
 
 ## <a name="response"></a>Отклик
@@ -93,6 +93,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-checklistitem-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-checklistitem-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

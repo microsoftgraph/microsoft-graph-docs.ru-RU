@@ -1,33 +1,33 @@
 ---
-title: Удаление allowedGroup из принтераShare
-description: Отзовет доступ указанной группы для отправки заданий печати в связанную долю принтера.
+title: Удаление allowedGroup из printerShare
+description: Отмените доступ указанной группы для отправки заданий печати в связанную общую папку принтера.
 author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 35f152af344de8ae1561c824ba06160d1ebb8809
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 51c386226c82fbec62141a190b804e43b7da971e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946435"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445020"
 ---
-# <a name="delete-allowedgroup-from-printershare"></a>Удаление allowedGroup из принтераShare
+# <a name="delete-allowedgroup-from-printershare"></a>Удаление allowedGroup из printerShare
 
 Пространство имен: microsoft.graph
 
-Отзовет доступ указанной группы для отправки заданий печати в связанный [принтерShare.](../resources/printershare.md)
+Отмените доступ указанной группы для отправки заданий печати в связанный [printerShare](../resources/printershare.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Чтобы использовать службу универсальной печати, пользователь или клиент приложения должен иметь активную подписку универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице. Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Чтобы использовать службу универсальной печати, у пользователя или клиента приложения должна быть активная подписка на универсальную печать в дополнение к разрешениям, перечисленным в следующей таблице. Выполнив вход, пользователь должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrinterShare.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -73,10 +73,18 @@ DELETE https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedGro
 [!INCLUDE [sample-code](../includes/snippets/java/delete-allowedgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-allowedgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-allowedgroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

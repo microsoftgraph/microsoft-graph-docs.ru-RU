@@ -5,20 +5,20 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b7ca4ca13507f4ea47e813e178d6c9d85a9ed019
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 374f62d53fd7ef3df9f130d091dea04889f4d721
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805104"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439902"
 ---
 # <a name="send-replies-to-a-message-in-a-channel"></a>Отправка ответов на сообщение в канале
 
 Пространство имен: microsoft.graph
 
-Отправьте новый ответ в [chatMessage в](../resources/chatmessage.md) указанном [канале](../resources/channel.md).
+Отправка нового ответа [на chatMessage](../resources/chatmessage.md) в указанном [канале](../resources/channel.md).
 
-> **Примечание**. Это нарушение условий использования для [](/legal/microsoft-apis/terms-of-use) использования Microsoft Teams в качестве файла журнала. Отправка сообщений, которые будут читаться людьми.
+> **Примечание**. Использование Microsoft Teams в качестве файла [](/legal/microsoft-apis/terms-of-use) журнала является нарушением условий использования. Отправлять только сообщения, которые будут считывать пользователи.
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD022 -->
 <!-- markdownlint-disable MD025 -->
@@ -33,9 +33,9 @@ ms.locfileid: "62805104"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Teamwork.Migrate.All |
 
-> **Примечание**. Разрешения, отмеченные **, поддерживаются только для обратной совместимости. Мы рекомендуем обновить решения, чтобы использовать альтернативное разрешение, перечисленное в предыдущей таблице, и избегать использования этих разрешений в будущем.
+> **Примечание**. Разрешения, отмеченные **, поддерживаются только для обратной совместимости. Рекомендуется обновить решения, чтобы использовать другое разрешение, указанное в предыдущей таблице, и избегать использования этих разрешений в будущем.
 
-> **Примечание**. Разрешения приложений *поддерживаются только для* [миграции](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+> **Примечание**. Разрешения приложения *поддерживаются только* для [миграции](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества импортированных данных.
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,17 +50,17 @@ POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса поставляем представление JSON объекта [сообщения](../resources/chatmessage.md) . Обязательным является только свойство body, другие свойства необязательны.
+В тексте запроса добавьте представление объекта сообщения [в формате](../resources/chatmessage.md) JSON. Обязательным является только свойство body, а другие — необязательные.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает `201 Created` код ответа с [созданным](../resources/chatmessage.md) сообщением.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика с [созданным](../resources/chatmessage.md) сообщением.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1-send-a-new-reply-to-a-chatmessage"></a>Пример 1. Отправка нового ответа в chatMessage
 
-Дополнительный список примеров см. в странице [Create chatMessage в канале или чате](chatmessage-post.md).
+Более полный список примеров см. в разделе ["Создание chatMessage в канале или чате"](chatmessage-post.md).
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -168,7 +168,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-В следующем примере покажите, `createDateTime` `from` как импортировать сообщения с использованием ключей и ключей в тексте запроса.
+В следующем примере показано `createDateTime` , как импортировать сообщения во времени с помощью ключей и ключей `from` в тексте запроса.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -218,7 +218,7 @@ POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

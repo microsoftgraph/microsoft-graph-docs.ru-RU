@@ -1,27 +1,29 @@
 ---
-title: Обновление формата диапазона в Excel с помощью Microsoft Graph
-description: В приведенных ниже примерах показано, как обновить свойства RangeFormat, RangeFill и RangeFont указанного диапазона.
+title: Обновление формата диапазона в Excel
+description: Просмотрите примеры использования Excel в Microsoft Graph для обновления свойств RangeFormat, RangeFill и RangeFont указанного диапазона.
 ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 27d2ca1c22aa82349738da01049346ed2479e6de
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c07deba3b70b43a1cb28c69e5ad7d34e3af6bc5d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143624"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441617"
 ---
-# <a name="update-a-range-format-in-excel-with-microsoft-graph"></a>Обновление формата диапазона в Excel с помощью Microsoft Graph
+# <a name="update-a-range-format-in-excel"></a>Обновление формата диапазона в Excel
 
-В приведенных ниже примерах показано, как обновить свойства [RangeFormat](/graph/api/resources/rangeformat?view=graph-rest-1.0), [RangeFill](/graph/api/resources/rangefill?view=graph-rest-1.0) и [RangeFont](/graph/api/resources/rangefont?view=graph-rest-1.0) указанного диапазона.
+В следующих примерах показано, как использовать Excel в Microsoft Graph для обновления свойств [RangeFormat](/graph/api/resources/rangeformat), [RangeFill](/graph/api/resources/rangefill) и [RangeFont](/graph/api/resources/rangefont) указанного диапазона.
 
-В результате этого набора запросов создается таблица с тремя ячейками, отформатированными так же, как три ячейки на приведенном ниже рисунке.
+Результатом этого набора запросов является таблица с тремя ячейками в формате трех верхних ячеек на следующем рисунке.
 
 ![Таблица-диаграмма Excel с тремя ячейками, свойства Format, Fill и Font которых были обновлены.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
 
-##### <a name="request"></a>Запрос
+## <a name="example-1-cell-1-alignment-and-height"></a>Пример 1. Выравнивание и высота ячейки 1
+
 Этот запрос обновляет выравнивание по вертикали, высоту строк и столбцов первой ячейки.
 
+### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -58,8 +60,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+
+Это пример ответа.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -78,9 +84,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>Запрос
+## <a name="example-2-cell-1-font-style-size-and-color"></a>Пример 2. Стиль, размер и цвет шрифта ячейки 1
+
 Этот запрос обновляет начертание, размер и цвет шрифта в первой ячейке.
 
+### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -116,8 +124,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+
+Это пример ответа.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -137,9 +149,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>Запрос
+## <a name="example-3-cell-1-background-color"></a>Пример 3. Цвет фона ячейки 1
+
 Этот запрос обновляет цвет заливки первой ячейки.
 
+### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -173,8 +187,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+
+Это пример ответа.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -188,9 +206,12 @@ Content-type: application/json
     "color": "#FF0000"
 }
 ```
-##### <a name="request"></a>Запрос
+
+## <a name="example-4-cell-2-alignment-and-height"></a>Пример 4. Выравнивание и высота ячейки 2
+
 Этот запрос обновляет выравнивание по вертикали и горизонтали, высоту строк и столбцов второй ячейки.
 
+### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -228,8 +249,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+
+Это пример ответа.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -248,9 +273,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>Запрос
+## <a name="example-5-cell-2-font-style-and-size"></a>Пример 5. Стиль и размер шрифта ячейки 2
+
 Этот запрос обновляет начертание и размер шрифта во второй ячейке.
 
+### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -285,8 +312,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+
+Это пример ответа.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -306,9 +337,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>Запрос
+## <a name="example-6-cell-2-background-color"></a>Пример 6. Цвет фона ячейки 2
+
 Этот запрос обновляет цвет заливки второй ячейки.
 
+### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -342,8 +375,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+
+Это пример ответа.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -358,9 +395,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>Запрос
+## <a name="example-7-cell-3-alignment-and-height"></a>Пример 7. Выравнивание и высота ячейки 3
+
 Этот запрос обновляет выравнивание по вертикали и горизонтали, высоту строк и столбцов третьей ячейки.
 
+### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -398,8 +437,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+
+Это пример ответа.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -418,9 +461,13 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>Запрос
-Этот запрос обновляет начертание, размер и цвет шрифта в третьей ячейке. Обратите внимание: свойство подчеркивания (Underline) принимает значения **Single** или **Double**.
+## <a name="example-8-cell-3-font-style-size-and-color"></a>Пример 8. Стиль, размер и цвет шрифта ячейки 3
 
+Этот запрос обновляет начертание, размер и цвет шрифта в третьей ячейке.
+
+> **Примечание:** Подчеркивание свойства принимает **значение Single** или **Double** в качестве значений.
+
+### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -456,8 +503,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+
+Это пример ответа.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -477,9 +528,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>Запрос
+## <a name="example-9-cell-3-background-color"></a>Пример 9. Цвет фона ячейки 3
+
 Этот запрос обновляет цвет заливки третьей ячейки.
 
+### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -513,8 +566,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+
+Это пример ответа.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -529,13 +586,14 @@ Content-type: application/json
 }
 ```
 
-
 ## <a name="see-also"></a>См. также
+
 * [Управление сеансами в Excel с помощью Microsoft Graph](excel-manage-sessions.md)
 * [Запись в книгу Excel с помощью Microsoft Graph](excel-write-to-workbook.md)
 * [Использование функций книг в Excel с помощью Microsoft Graph](excel-use-functions.md)
 * [Показ изображения диаграммы в Excel с помощью Microsoft Graph](excel-display-chart-image.md)
-* [Использование REST API для Excel](/graph/api/resources/excel?view=graph-rest-1.0)
+* [Использование REST API для Excel](/graph/api/resources/excel)
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {

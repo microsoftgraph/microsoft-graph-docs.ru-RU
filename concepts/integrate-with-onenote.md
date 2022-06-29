@@ -1,16 +1,16 @@
 ---
 title: Обзор API OneNote
-description: OneNote — это цифровая записная книжка, с помощью которой клиенты могут записывать и отслеживать свои идеи и заметки для дома, учебы и работы, вводя данные, рисуя или диктуя текст в Интернете, на телефоне, планшете или настольном компьютере. Они могут свободно упорядочивать заметки, переключаться между устройствами и продолжать работу с места, на котором они закончили ее в прошлый раз. Кроме того, они могут работать над заметками вместе с другими пользователями в режиме реального времени.
+description: Используйте API OneNote в Microsoft Graph для доступа к записным книжкам, разделам и страницам OneNote для создания решений, которые помогут вашим пользователям планировать и систематизировать идеи и сведения.
 author: Jewan-microsoft
 ms.localizationpriority: high
 ms.prod: onenote
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: eeedcd2519900bdfccdde763d2996b18990787e5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b8f8c01955d0ede7bfad843cebb783eb5f9f268f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136021"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444903"
 ---
 # <a name="onenote-api-overview"></a>Обзор API OneNote
 
@@ -52,12 +52,11 @@ OneNote можно использовать как холст, где польз
 
 ## <a name="learn-more-about-onenote-apis"></a>Узнайте больше об API OneNote
 
-Подробно изучите API Microsoft Graph, чтобы узнать о возможностях изменения контента в OneNote. В перечисленных ниже статьях рассказывается, как создавать страницы OneNote и добавлять новый контент на существующие страницы. Кроме того, вы узнаете о рекомендациях по использованию Microsoft Graph для изменения записных книжек OneNote. 
-
+Подробно изучите API Microsoft Graph, чтобы узнать о возможностях изменения контента в OneNote. В перечисленных ниже статьях рассказывается, как создавать страницы OneNote и добавлять новый контент на существующие страницы. Кроме того, вы узнаете о рекомендациях по использованию Microsoft Graph для изменения записных книжек OneNote.
 
 ### <a name="work-with-onenote"></a>Работа с OneNote
 
-* [Использование REST API для OneNote](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0)
+* [Использование REST API для OneNote](/graph/api/resources/onenote-api-overview)
 * [Рекомендации](onenote-best-practices.md)
 * [Рекомендации по использованию фирменной символики](onenote-branding.md)
 * [Открытие клиента OneNote](open-onenote-client.md)
@@ -77,7 +76,15 @@ OneNote можно использовать как холст, где польз
 * [Добавление изображений, видео и файлов на страницы OneNote](onenote-images-files.md)
 * [Использование тегов div API OneNote для извлечения данных из записанного содержимого](onenote-extract-data.md)
 
+## <a name="api-reference"></a>Справочные материалы по API
+
+Ищете справочные материалы по API для этой службы?
+
+- [API OneNote в Microsoft Graph 1.0](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [API OneNote в бета-версии Microsoft Graph](/graph/api/resources/onenote-api-overview?view=graph-rest-beta&preserve-view=true)
+
 ## <a name="see-also"></a>См. также
+
 Узнайте о других функциях OneNote, которые предоставляются только на конечной точке REST для службы OneNote.
 
 - [Разработка для OneNote](/previous-versions/office/office-365-api/how-to/onenote-landing)
@@ -89,16 +96,8 @@ OneNote можно использовать как холст, где польз
 - [Использование диалогового окна сохранения OneNote на веб-страницах](/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
 - [Подписка на веб-перехватчики](/previous-versions/office/office-365-api/how-to/onenote-sync)
 
-## <a name="api-reference"></a>Справочные материалы по API
-Ищете справочные материалы по API для этой службы?
-
-- [API OneNote в Microsoft Graph 1.0](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0)
-- [API OneNote в бета-версии Microsoft Graph](/graph/api/resources/onenote-api-overview?view=graph-rest-beta)
-
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Используйте [песочницу Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer), чтобы опробовать API OneNote с собственными записными книжками OneNote.
+- Используйте [песочницу Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer), чтобы опробовать API OneNote с собственными записными книжками OneNote.
 
-Чтобы отправлять вызовы API OneNote из песочницы Graph, нажмите **Показать другие примеры** в столбце слева. **Включите** OneNote с помощью меню. Вам также потребуется включить соответствующие разрешения. В меню слева под именем учетной записи выберите **Изменить разрешения**. Дополнительные сведения о разрешениях OneNote см. в разделе [Разрешения для заметок](permissions-reference.md#notes-permissions).
-
-Сведения о том, как приступить к работе с API OneNote в Microsoft Graph, см. в [справочных материалах по OneNote](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0).
+- Чтобы отправлять вызовы API OneNote из песочницы Graph, нажмите **Показать другие примеры** в столбце слева. **Включите** OneNote с помощью меню. Вам также потребуется включить соответствующие разрешения. В меню слева под именем учетной записи выберите **Изменить разрешения**. Дополнительные сведения о разрешениях OneNote см. в разделе [Разрешения для заметок](permissions-reference.md#notes-permissions).

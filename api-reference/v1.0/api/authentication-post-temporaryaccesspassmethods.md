@@ -5,12 +5,12 @@ author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2d0dbd6ecb3bf9e2aa260496d096ee6278b44539
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 403d6e9bfa42df20820bd0db05b0c1a8acf10993
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66093348"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438537"
 ---
 # <a name="create-temporaryaccesspassmethod"></a>Создание temporaryAccessPassMethod
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "66093348"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | UserAuthenticationMethod.ReadWrite.All |
+| Для приложений                            | UserAuthenticationMethod.ReadWrite.All |
 
 В делегированных сценариях, когда администратор действует с другим пользователем, администратору требуется одна из следующих Azure AD [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 * глобальный администратор;
@@ -50,7 +50,7 @@ POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В тексте запроса добавьте представление объекта [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) в формате JSON.
 
 В следующей таблице описаны необязательные свойства, которые можно использовать при создании [временного объектаAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md).
@@ -59,7 +59,7 @@ POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 |:---|:---|:---|
 |isUsableOnce|Boolean|Необязательное свойство. Определяет, ограничен ли проход однофакторным использованием. Если `true`этот проход можно использовать один раз; если `false`этот проход можно использовать несколько раз в течение времени **существования ПараметрInMinutes** . Многопользовательский временный секретный код (`isUsableOnce = false`) можно создать и использовать для входа только в том случае, если это разрешено политикой метода проверки подлинности временного  [прохода доступа](../resources/temporaryaccesspassauthenticationmethodconfiguration.md).|
 |lifetimeInMinutes|Int32|Необязательный. Время существования temporaryAccessPass в минутах, начиная со времени создания или при значении startDateTime, если оно задано. Должно быть от 10 до 43200 (эквивалентно 30 дням). Если этот параметр не указан, применяется параметр **defaultLifetimeInMinutes** в политике метода проверки подлинности [временного](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) прохода доступа. |
-|startDateTime|DateTimeOffset|Необязательно. Дата и время, когда temporaryAccessPass становится доступным для использования. Если этот параметр не указан, временный секретный код доступен для использования сразу после его создания.| 
+|startDateTime|DateTimeOffset|Необязательное. Дата и время, когда temporaryAccessPass становится доступным для использования. Если этот параметр не указан, временный секретный код доступен для использования сразу после его создания.| 
 
 ## <a name="response"></a>Отклик
 
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-temporaryaccesspassauthenticationmethod-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-temporaryaccesspassauthenticationmethod-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

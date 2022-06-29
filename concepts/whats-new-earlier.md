@@ -3,14 +3,63 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 38bfe22b2f5b9e571d40243d0bbb9bbc83a2b238
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: a1c292cebbccecec063ea9c9902bb437645487b9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65884127"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437556"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
+
+## <a name="april-2022-new-and-generally-available"></a>Апрель 2022 г.: новое и общедоступное
+
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+Использование службы [Privileged Identity Management (PIM)](/graph/api/resources/privilegedidentitymanagementv3-overview) в рабочих приложениях, чтобы контролировать и отслеживать доступ к важным ресурсам в пределах организации, а также управлять им. Доступ предоставляется через привилегированные роли и управление доступом на основе ролей (RBAC). Он может предоставляться пользователям, группам или субъектам-службам. Ресурсы могут находиться в Azure AD, Azure и других облачных службах Майкрософт, таких как Microsoft 365 или Microsoft Intune.
+
+### <a name="search--index"></a>Поиск | Индекс
+- Используйте разрешения приложения `ExternalConnection.Read.All` и `ExternalConnection.ReadWrite.All` для чтения и записи всех внешних подключений без присутствия вошедшего в систему пользователя.
+- Используйте разрешение приложения `ExternalItem.Read.All` для чтения всех внешних элементов без присутствия вошедшего в систему пользователя.
+- Используйте делегированную авторизацию `ExternalConnection.ReadWrite.OwnedBy` для чтения и записи внешних подключений от имени вошедшего в систему пользователя, которому разрешено ваше приложение.
+- Используйте делегирование разрешения `ExternalConnection.Read.All` или `ExternalConnection.ReadWrite.All` для чтения или записи всех внешних подключений от имени вошедшего пользователя.
+- Используйте делегирование разрешений `ExternalItem.ReadWrite.OwnedBy` для чтения и записи внешних элементов от имени вошедшего в систему пользователя, которому разрешено ваше приложение.
+- Используйте делегирование разрешения `ExternalItem.Read.All` или `ExternalItem.ReadWrite.All` для чтения или записи всех внешних элементов от имени вошедшего пользователя.
+
+
+## <a name="april-2022-new-in-preview-only"></a>Апрель 2022 г.: новые возможности только в предварительной версии
+
+### <a name="customer-bookings"></a>Резервирование для пользователей
+- [Получение сведений о доступности](/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-beta&preserve-view=true) ресурсов [staff member](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true) в [организации](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true).
+- Использование разрешения приложений `Bookings.Read.All` в операциях чтения для ресурсов [business](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true), [staff member](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true), [service](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true), [customer](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true) и [appointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true).
+- Использование разрешения приложений `BookingsAppointment.ReadWrite.All` для операций чтения и записи ресурсов клиентов и встреч.
+
+### <a name="device-and-app-management--cloud-pc"></a>Управление устройствами и приложениями | Облачный компьютер
+- Указание [параметров Windows](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true) в составе [ параметров организации облачного компьютера](/graph/api/resources/cloudPcOrganizationSettings?view=graph-rest-beta&preserve-view=true) для клиента.
+- [Получите](/graph/api/user-list-cloudpcs?view=graph-rest-beta&preserve-view=true) облачные компьютерные устройства, связанные с вошедшим пользователем.
+- [Задать сведения для запуска облачного компьютерного устройства](/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta&preserve-view=true) для вошедшего пользователя.
+
+### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
+Настройка [параметров федерации](/graph/api/resources/internalDomainFederation?view=graph-rest-beta&preserve-view=true) федеративных доменов в Azure Active Directory.
+
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+[Получение назначений](/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-beta&preserve-view=true), для которых у соответствующего пользователя есть несовместимые пакеты доступа. 
+
+### <a name="reports--identity-and-access-reports"></a>Отчеты | Отчеты об удостоверениях и доступе
+Подтверждение того, что событие является [высокорискованным и скомпрометированным](/graph/api/signin-confirmCompromised?view=graph-rest-beta&preserve-view=true) или [безопасным](/graph/api/signin-confirmSafe?view=graph-rest-beta&preserve-view=true) путем его маркировки в соответствующих журналах входа Azure Active Directory.
+
+### <a name="reports--microsoft-365-usage-reports"></a>Отчеты | Отчеты об использовании Microsoft 365
+- [Получение общего отчета о распределении](/graph/api/reportroot-getTeamsUserActivityTotalDistributionCounts?view=graph-rest-beta&preserve-view=true) для количества определенных действий Teams за указанный период. Количество действий Teams, включая сообщения чата команды, звонки, собрания, длительность звукового фрагмента, публикацию сообщений и т. д.
+- Получение дополнительных типов действий в отчетах, которые [получают сведения о пользователе](/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-beta&preserve-view=true), [получают количество действий](/graph/api/reportroot-getteamsuseractivitycounts?view=graph-rest-beta&preserve-view=true) и [получают общее количество действий](/graph/api/reportroot-getteamsuseractivitytotalcounts?view=graph-rest-beta&preserve-view=true).
+
+### <a name="teamwork"></a>Командная работа
+Предоставление общего доступа к каналу одной или нескольким командам:
+- [Перечисление только каналов, к которым предоставлен общий доступ в команде](/graph/api/team-list-incomingchannels?view=graph-rest-beta&preserve-view=true).
+- [Перечисление всех каналов в команде](/graph/api/team-list-allchannels?view=graph-rest-beta&preserve-view=true), включая каналы, размещенные в команде, и команды, к которым предоставлен общий доступ в команде.
+- [Перечисление участников команды, у которых есть доступ к указанному общему каналу](/graph/api/sharedwithchannelteaminfo-list-allowedmembers?view=graph-rest-beta&preserve-view=true).
+- [Удаление канала, к которому предоставлен общий доступ в команде](/graph/api/team-delete-incomingchannels?view=graph-rest-beta&preserve-view=true).
+- [Перечисление команд, которым предоставлен общий доступ к указанному каналу](/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-beta&preserve-view=true).
+- [Отмена общего доступа к каналу для команды](/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-beta&preserve-view=true).
+
 
 ## <a name="march-2022-new-and-generally-available"></a>Март 2022 г.: новые и общедоступные возможности
 
@@ -1093,7 +1142,7 @@ GA интерфейса API [просмотра доступа](/graph/api/resou
 - Укажите в [политике авторизации](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true), можно ли приглашать внешних пользователей в организацию и кому это разрешено.
 
 ### <a name="people-and-workplace-intelligence--insights"></a>Люди и рабочая аналитика | Аналитика 
-Администраторы могут просмотреть [примеры использования командлетов PowerShell](insights-customize-item-insights-privacy.md#how-to-configure-item-insights-settings-via-powershell), чтобы настроить параметры аналитики элементов для организации.
+Администраторы могут просмотреть [примеры использования командлетов PowerShell](insights-customize-item-insights-privacy.md#configure-item-insights-settings-via-powershell), чтобы настроить параметры аналитики элементов для организации.
 
 ### <a name="teamwork"></a>Командная работа
 - Используйте атрибут **channelCreationMode** экземпляра, чтобы указать, что создается [канал](/graph/api/resources/channel?preserve-view=true&view=graph-rest-beta#instance-attributes) для обслуживания миграции данных. Используйте атрибут [completeMigration](/graph/api/channel-completemigration?view=graph-rest-beta&preserve-view=true), чтобы указать на завершение миграции и возможность публикации и чтения сообщений участниками.
@@ -1188,7 +1237,7 @@ GA интерфейса API [просмотра доступа](/graph/api/resou
 ### <a name="change-notifications"></a>Уведомления об изменениях
 [Отслеживание изменений](delta-query-overview.md) поддерживаемых ресурсов в национальном облаке Microsoft Graph для государственных организаций США.
 
-### <a name="cloud-communications"></a>Коммуникации из облака
+### <a name="cloud-communications"></a>Облачные коммуникации
 - [Отмените](/graph/api/call-cancelmediaprocessing) любые действия интерактивного голосового ответа (IVR), выполняемые или находящиеся в очереди, которые [воспроизводят звуковой сигнал](/graph/api/call-playprompt) или [записывают ответ](/graph/api/call-record).
 - Получите [сведения о расшифровке звонка](/graph/api/resources/calltranscriptioninfo) с помощью свойства **transcription**.
 
@@ -1296,7 +1345,7 @@ GA функции, которая позволяет организаторам 
 ### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
 - Использование разрешения приложений `Printer.ReadWrite.All` и [шифрования Internet Printing Protocol (IPP)](https://tools.ietf.org/html/rfc8010) для [обновления принтера](/graph/api/printer-update?view=graph-rest-beta&preserve-view=true).
 - Использование разрешений приложений `PrintJob.ReadBasic.All`, `PrintJob.Read.All`, `PrintJob.ReadWriteBasic.All` или `PrintJob.ReadWrite.All` для [получения задания печати](/graph/api/printjob-get?view=graph-rest-beta&preserve-view=true) или [перечисления заданий печати для принтера](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true).
-- При [получении задания печати](/graph/api/printjob-get?view=graph-rest-beta&preserve-view=true) используйте `$expand` для получения [задач печати](/graph/api/resources/printtask?view=graph-rest-beta&preserve-view=true), выполняемых или выполненных в рамках задания. Задачи печати, [определения задач](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true) и [триггеры задач](/graph/api/resources/printtasktrigger?view=graph-rest-beta&preserve-view=true) используются при [печати по запросу](universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing).
+- При [получении задания печати](/graph/api/printjob-get?view=graph-rest-beta&preserve-view=true) используйте `$expand` для получения [задач печати](/graph/api/resources/printtask?view=graph-rest-beta&preserve-view=true), выполняемых или выполненных в рамках задания. Задачи печати, [определения задач](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true) и [триггеры задач](/graph/api/resources/printtasktrigger?view=graph-rest-beta&preserve-view=true) используются при [печати по запросу](universal-print-concept-overview.md#enable-pull-printing).
 - [Перенаправление задания печати](/graph/api/printjob-redirect?view=graph-rest-beta&preserve-view=true) на другой принтер в рамках печати по запросу.
 
 ### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление

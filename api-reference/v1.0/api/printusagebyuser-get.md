@@ -1,32 +1,32 @@
 ---
-title: Get printUsageByUser
-description: Извлечение сводки об использовании пользователя за определенный период времени.
+title: Получение printUsageByUser
+description: Получение сводки по использованию пользователя за определенный период времени.
 author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 0ac3773abc50171a3f363c1fbefbb90ff3a796c0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2f27ee823bd6efec58e65596e8e1cde1f949fdde
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032871"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439179"
 ---
-# <a name="get-printusagebyuser"></a>Get printUsageByUser
+# <a name="get-printusagebyuser"></a>Получение printUsageByUser
 Пространство имен: microsoft.graph
 
-Извлечение сводки об использовании пользователя за определенный период времени. Описание каждой конечной точки см. в [printUsageByUser.](../resources/printUsageByUser.md)
+Получение сводки по использованию пользователя за определенный период времени. Описание каждой конечной точки см. [в разделе printUsageByUser](../resources/printUsageByUser.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Чтобы использовать службу универсальной печати, пользователь или клиент приложения должен иметь активную подписку универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице.
+Чтобы использовать службу универсальной печати, у пользователя или клиента приложения должна быть активная подписка на универсальную печать в дополнение к разрешениям, перечисленным в следующей таблице.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ GET /reports/monthlyPrintUsageByUser/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект printUsageByUser](../resources/printusagebyuser.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [printUsageByUser](../resources/printusagebyuser.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByUser/{id}
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-printusagebyuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-printusagebyuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

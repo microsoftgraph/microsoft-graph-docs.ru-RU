@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса windowsUpdateState
 description: Тип ресурса windowsUpdateState
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6cff1bf1becbd2e43967b05a210c7f3f5cfa864a
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 1fcebd4d516d7cc91a3c33163b3325676b824b4a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900256"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444518"
 ---
 # <a name="windowsupdatestate-resource-type"></a>Тип ресурса windowsUpdateState
 
@@ -34,18 +34,18 @@ ms.locfileid: "65900256"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Это идентификатор сущности.|
+|id|String|Это идентификатор сущности.|
 |deviceId|String|Идентификатор устройства.|
 |userId|String|Идентификатор пользователя.|
 |deviceDisplayName|String|Отображаемое имя устройства.|
 |userPrincipalName|String|Имя участника-пользователя.|
 |status|[windowsUpdateStatus](/resources/intune-shared-windowsupdatestatus.md)|Состояние UDPATE Windows. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
-|qualityUpdateVersion|Строка|Версия обновления качества устройства.|
-|featureUpdateVersion|Строка|Текущая версия обновления компонентов устройства.|
-|lastScanDateTime|DateTimeOffset|Дата успешного сканирования агентом Центра обновления Windows.|
-|lastSyncDateTime|DateTimeOffset|Дата последней синхронизации устройства с Microsoft Intune.|
+|qualityUpdateVersion|String|Версия обновления качества устройства.|
+|featureUpdateVersion|String|Текущая версия обновления компонентов устройства.|
+|lastScanDateTime|DateTimeOffset|Дата, когда агент клиентский компонент Центра обновления Windows успешно сканирует.|
+|lastSyncDateTime|DateTimeOffset|Время последней даты, с помощью которого устройство синхронизируется с Microsoft Intune.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

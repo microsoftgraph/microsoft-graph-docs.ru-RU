@@ -1,16 +1,16 @@
 ---
 author: daspek
-description: Получите itemAnalytics о представлениях, которые произошли в этом ресурсе.
+description: Получение itemAnalytics о представлениях, выполненных в этом ресурсе.
 title: Получение аналитики
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sharepoint
-ms.openlocfilehash: ad9520c5605467fd515a1abd59402ed693845fef
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 4eadf9adacb9798ce445ad3c362432b3b2887748
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393334"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446774"
 ---
 # <a name="get-analytics"></a>Получение аналитики
 
@@ -18,11 +18,11 @@ ms.locfileid: "63393334"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите [itemAnalytics][] о представлениях, которые произошли в этом ресурсе.
-Ресурс **itemAnalytics** — это удобный способ получения статистики активности для `allTime` и `lastSevenDays`.
+Получение [itemAnalytics][] о представлениях, выполненных в этом ресурсе.
+Ресурс **itemAnalytics** — это удобный способ получить статистику действий для `allTime` и `lastSevenDays`.
 Для настраиваемого диапазона времени или интервала используйте [API getActivitiesByInterval][] .
 
->**Примечание:** Ресурс **itemAnalytics** еще не доступен во всех [национальных развертываниях](/graph/deployments).
+>**Примечание:** Ресурс **itemAnalytics** пока доступен не во всех национальных [развертываниях](/graph/deployments).
 
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
@@ -62,7 +62,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию объектов [itemAnalytics][] в тексте отклика. 
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [itemAnalytics][] в тексте отклика. 
 
 ## <a name="example"></a>Пример
 
@@ -96,12 +96,16 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 [!INCLUDE [sample-code](../includes/snippets/go/get-analytics-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-analytics-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.itemAnalytics", "truncated": true } -->
 

@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1bf7255803de1632512ae24afb0b17007bb92fae
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 787bee8a5843f432d30c46828387983018d5b78a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461347"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439858"
 ---
 # <a name="create-roleeligibilityschedulerequest"></a>Создание roleEligibilityScheduleRequest
 Пространство имен: microsoft.graph
@@ -22,9 +22,9 @@ ms.locfileid: "65461347"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|RoleEligibilitySchedule.ReadWrite.Directory|
+|Делегированные (рабочая или учебная учетная запись)|RoleEligibilitySchedule.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|RoleAssignmentSchedule.ReadWrite.Directory|
+|Приложение|RoleAssignmentSchedule.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,12 +50,12 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |action|unifiedRoleScheduleRequestActions|Представляет тип операции в запросе на получение прав на роль. Возможные значения: `adminAssign`, , `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend``adminRenew`, `selfExtend``selfRenew``unknownFutureValue`. <br/><ul><li>`adminAssign`: администраторы могут назначать субъектам допустимые роли.</li><li>`adminRemove`: чтобы администраторы удаляли допустимые роли из субъектов.</li><li> `adminUpdate`: чтобы администраторы меняли существующие права на роль.</li><li>`adminExtend`: чтобы администраторы расширяли права на роль с истекающим сроком действия.</li><li>`adminRenew`: чтобы администраторы продлевали просроченные права доступа.</li><li>`selfActivate`: для активации назначений пользователями.</li><li>`selfDeactivate`: для отключения активных назначений пользователями.</li><li>`selfExtend`: пользователи должны запрашивать продление назначений с истекающим сроком действия.</li><li>`SelfRenew`: чтобы пользователи запрашивали продление назначений с истекшим сроком действия.</li></ul>|
-|appScopeId|Строка|Идентификатор области, относяшейся к приложению, если доступ к роли определяется приложением. Область действия роли определяет набор ресурсов, к которым субъект имеет право доступа. Области приложения — это области, которые определяются и распознаются только этим приложением. Используется `/` для областей приложений на уровне клиента. Используйте **directoryScopeId** , чтобы ограничить область определенными объектами каталога, например административными единицами. Требуется **directoryScopeId** **или appScopeId** .|
-|directoryScopeId|Строка|Идентификатор объекта каталога, представляющего область допустимости роли. Область действия роли определяет набор ресурсов, к которым участнику был предоставлен доступ. Области каталога — это общие области, хранящиеся в каталоге, которые распознаются несколькими приложениями. Используется `/` для области на уровне клиента. Используйте **appScopeId** , чтобы ограничить область только приложением. Требуется **directoryScopeId** **или appScopeId** .|
-|isValidationOnly|Boolean|Определяет, является ли вызов проверкой или фактическим вызовом. Задайте это свойство только в том случае, если вы хотите проверить, применяется ли активация к дополнительным правилам, таким как MFA, перед фактической отправкой запроса. Необязательный параметр.|
-|Обоснование|Строка|Сообщение, предоставляемое пользователями и администраторами при создании объекта **unifiedRoleEligibilityScheduleRequest** . Необязательный, **если действие** имеет значение `adminRemove`. Является ли это свойство обязательным или необязательным, также зависит от [параметров Azure AD роли](../api/unifiedrolemanagementpolicy-list-rules.md).|
-|principalId|Строка|Идентификатор участника, которой предоставлено право на роль. Обязательный.|
-|roleDefinitionId|String|Идентификатор объекта [unifiedRoleDefinition](../resources/unifiedroledefinition.md) , назначаемого субъекту. Обязательный.|
+|appScopeId|String|Идентификатор области, относяшейся к приложению, если доступ к роли определяется приложением. Область действия роли определяет набор ресурсов, к которым субъект имеет право доступа. Области приложения — это области, которые определяются и распознаются только этим приложением. Используется `/` для областей приложений на уровне клиента. Используйте **directoryScopeId** , чтобы ограничить область определенными объектами каталога, например административными единицами. Требуется **directoryScopeId** **или appScopeId** .|
+|directoryScopeId|String|Идентификатор объекта каталога, представляющего область допустимости роли. Область действия роли определяет набор ресурсов, к которым участнику был предоставлен доступ. Области каталога — это общие области, хранящиеся в каталоге, которые распознаются несколькими приложениями. Используется `/` для области на уровне клиента. Используйте **appScopeId** , чтобы ограничить область только приложением. Требуется **directoryScopeId** **или appScopeId** .|
+|isValidationOnly|Логическое|Определяет, является ли вызов проверкой или фактическим вызовом. Задайте это свойство только в том случае, если вы хотите проверить, применяется ли активация к дополнительным правилам, таким как MFA, перед фактической отправкой запроса. Необязательное свойство.|
+|Обоснование|String|Сообщение, предоставляемое пользователями и администраторами при создании объекта **unifiedRoleEligibilityScheduleRequest** . Необязательный, **если действие** имеет значение `adminRemove`. Является ли это свойство обязательным или необязательным, также зависит от [параметров Azure AD роли](../api/unifiedrolemanagementpolicy-list-rules.md).|
+|principalId|String|Идентификатор участника, которой предоставлено право на роль. Обязательный элемент.|
+|roleDefinitionId|String|Идентификатор объекта [unifiedRoleDefinition](../resources/unifiedroledefinition.md) , назначаемого субъекту. Обязательный элемент.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Период допустимости роли. Необязательный, **если действие** имеет значение `adminRemove`. Срок действия зависит от параметров роли Azure AD [роли](../api/unifiedrolemanagementpolicy-list-rules.md).|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Сведения о билете, связанные с запросом на участие в роли, включая сведения о номере билета и системе билетов. Необязательный|
 
@@ -66,7 +66,7 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-admin-to-assign-a-role-eligibility-schedule-request"></a>Пример 1. Назначение администратором запроса на расписание соответствия роли
+### <a name="example-1-admin-to-assign-a-role-eligibility-schedule-request"></a>Пример 1. Администратор назначить запрос на расписание соответствия роли
 
 #### <a name="request"></a>Запрос
 
@@ -113,6 +113,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleeligibilityschedulerequest-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleeligibilityschedulerequest-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -171,7 +175,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-admin-to-remove-an-existing-role-eligibility-schedule-request"></a>Пример 2. Удаление существующего запроса на расписание соответствия роли администратору
+### <a name="example-2-admin-to-remove-an-existing-role-eligibility-schedule-request"></a>Пример 2. Администратор удалить существующий запрос на расписание соответствия роли
 
 В следующем запросе `071cc716-8147-4397-a5ba-b2105951cc0b` администратор создает запрос на отмену права субъекта с идентификатором на роль с идентификатором `8424c6f0-a189-499e-bbd0-26c1753c96d4`.
 
@@ -224,7 +228,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Объект ответа показывает, что предыдущая роль для субъекта имеет значение `Revoked`. Субъект больше не будет видеть свою ранее допустимую роль.
+Ниже приведен пример отклика. Объект ответа показывает, что предыдущая роль для субъекта имеет значение `Revoked`. Субъект больше не будет видеть свою ранее допустимую роль.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

@@ -1,25 +1,25 @@
 ---
-title: Используйте API Поиск (Майкрософт) в Microsoft Graph для поиска файлов
-description: API Поиск (Майкрософт) для поиска файлов, хранимых в OneDrive или SharePoint.
+title: Поиск в OneDrive и SharePoint с помощью API поиска (Майкрософт)
+description: 'Используйте API поиска (Майкрософт) в Microsoft Graph для поиска содержимого, хранимого в OneDrive или SharePoint: файлов, папок, списков, элементов списка или сайтов.'
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: c1c4851e84a57a024341c8ab342e7ec7243086c0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a4730bb9c959ee5cb27514cd27b890c4bcb2c095
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103972"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445848"
 ---
-# <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>Используйте API Поиск (Майкрософт) для поиска контента в OneDrive и SharePoint
+# <a name="use-the-microsoft-search-api-to-search-onedrive-and-sharepoint-content"></a>Поиск в OneDrive и SharePoint с помощью API поиска (Майкрософт)
 
-Используйте API Поиск (Майкрософт) для поиска контента, OneDrive или SharePoint: файлов, папок, списков, элементов списка или сайтов.
+Используйте API поиска (Майкрософт) в Microsoft Graph для поиска содержимого, хранимого в OneDrive или SharePoint: файлов, папок, списков, элементов списка или сайтов.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-API поиска позволяет область типов контента для получения в OneDrive или SharePoint, указав свойство **entityTypes** в [searchRequest](/graph/api/resources/searchRequest). В этой статье описаны некоторые примеры.
+API поиска позволяет ограничить типы содержимого, извлекаемого в OneDrive или SharePoint, указав свойство **entityTypes** в [searchRequest](/graph/api/resources/searchRequest). В этой статье описываются некоторые примеры.
 
-## <a name="example-1-search-files"></a>Пример 1. Файлы поиска
+## <a name="example-1-search-files"></a>Пример 1. Поиск файлов
 
 ### <a name="request"></a>Запрос
 
@@ -102,7 +102,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-search-list-items"></a>Пример 2. Элементы списка поиска
+## <a name="example-2-search-list-items"></a>Пример 2. Поиск элементов списка
 
 ### <a name="request"></a>Запрос
 
@@ -182,7 +182,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-3-search-sites"></a>Пример 3. Сайты поиска
+## <a name="example-3-search-sites"></a>Пример 3. Поиск сайтов
 
 ### <a name="request"></a>Запрос
 
@@ -243,9 +243,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-4-search-all-content-in-onedrive-and-sharepoint"></a>Пример 4. Поиск всего контента в OneDrive и SharePoint
+## <a name="example-4-search-all-content-in-onedrive-and-sharepoint"></a>Пример 4. Поиск всего содержимого в OneDrive и SharePoint
 
-В этом примере запрашивается все содержимое OneDrive и SharePoint сайтов, к которым пользователь с входом в вход имеет доступ к считываемому. Свойство **ресурса** в ответе возвращает совпадения файлов и папок в качестве объектов **driveItem,** совпадающих с контейнерами (SharePoint списков) в качестве списка и всеми другими совпадениями как **listItem**.
+В этом примере выполняется запрос ко всем содержимому сайтов OneDrive и SharePoint, к которому вошед в систему пользователь имеет доступ на чтение. Свойство **ресурса** в ответе возвращает совпадения, которые являются файлами и папками в виде объектов **driveItem** , контейнерами (списками SharePoint) в виде **списка, а** все остальные — **как listItem**.
 
 ### <a name="request"></a>Запрос
 
@@ -349,23 +349,23 @@ Content-type: application/json
 
 ## <a name="example-5-use-filters-in-search-queries"></a>Пример 5. Использование фильтров в поисковых запросах
 
-Вы можете использовать KQL в условиях поиска запросов для OneDrive и SharePoint. Например.
+KQL можно использовать в поисковых запросах для OneDrive и SharePoint. Например:
 
-- `"query": "contoso filetype:docx OR filetype:doc"` областью запроса к документам Word.
-- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` область запроса в определенную папку на сайте.
-- `"query": "contoso AND isDocument=true"` область запроса только для возврата документов. Любой контейнер (папка, библиотека документов) не возвращается.
-- `"query": "contoso contentclass:STS_List_Events"`область запроса событий Calendar, хранимые в SharePoint.
-- `"query": "contoso (LastModifiedTime > 2021-02-01 AND Created > 2021-02-01)"`область запроса для фильтрации SharePoint и OneDrive элементов по дате
+- `"query": "contoso filetype:docx OR filetype:doc"` область запроса в документах Word.
+- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\""` определяет область запроса для определенной папки на сайте.
+- `"query": "contoso AND isDocument=true"` определяет область запроса, чтобы возвращать только документы. Контейнер (папка, библиотека документов) не будет возвращен.
+- `"query": "contoso contentclass:STS_List_Events"` определяет область запроса для событий Календаря, хранящихся в SharePoint.
+- `"query": "contoso (LastModifiedTime > 2021-02-01 AND Created > 2021-02-01)"` область запроса для фильтрации элементов SharePoint и OneDrive по дате
 
-Чтобы быть допустимым, ограничение свойств должно указывать допустимое, запрашиваемое имя управляемого свойства в состоянии.
+Чтобы быть допустимым, ограничение свойств должно указывать допустимое запрашиваемое имя управляемого свойства в условии.
 
-## <a name="example-6-specify-select-properties"></a>Пример 6. Укажите свойства выбора
+## <a name="example-6-specify-select-properties"></a>Пример 6. Указание свойств select
 
-В ответе можно указать нужные поля в  качестве части поля под свойства [объекта searchHit](/graph/api/resources/searchhit) в ответе. Это способ либо обрезать ответ по проводу, либо запрашивать некоторые конкретные свойства, которые не являются частью схемы из окна.
+Вы можете указать поля, которые нужно вернуть в ответе, как часть вложенного свойства полей объекта [searchHit](/graph/api/resources/searchhit) в ответе. Это способ обрезать ответ по сети или запросить определенные свойства, которые не являются частью обычной схемы.
 
-Обратите внимание, что выбор свойств для настраиваемого свойства в SharePoint доступен только **для listItem,** так как это единственное SharePoint в Microsoft Graph, которое поддерживает настраиваемые свойства.
+Обратите внимание, что выбор свойств для настраиваемых свойств в SharePoint доступен только **для listItem** , так как это единственный объект SharePoint в Microsoft Graph, который поддерживает настраиваемые свойства.
 
-Для получения настраиваемой свойства **для driveItem** вместо этого запрашивайте **listItem.**
+Чтобы получить пользовательское свойство **для driveItem**, **запросите listItem** .
 
 ### <a name="request"></a>Запрос
 
@@ -440,7 +440,7 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-При **поиске диска** необходимо включить в **запросString** термин, содержащийся в имени библиотеки документов. Запрос не `*` поддерживается и не возвращает все доступные диски.
+При **поиске диска** необходимо включить в **строку запроса** термин, содержащийся в имени библиотеки документов. Запросы `*` не поддерживаются и не возвращают все доступные диски.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

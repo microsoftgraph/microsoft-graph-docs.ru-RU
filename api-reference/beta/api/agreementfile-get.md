@@ -1,23 +1,23 @@
 ---
-title: Get agreementFile
-description: 'Извлечение сведений из файла по умолчанию для соглашения, включая сведения о языке и версии. '
+title: Получение agreementFile
+description: 'Получите сведения о файле по умолчанию для соглашения, включая сведения о языке и версии. '
 author: raprakasMSFT
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a2b25191d286be11e0dd433381ff9622f0998ad0
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: eea2c1589bbeb9f4759bc2350c2b9d17c4725ab9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63516259"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437422"
 ---
-# <a name="get-agreementfile"></a>Get agreementFile
+# <a name="get-agreementfile"></a>Получение agreementFile
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение сведений из файла по умолчанию для соглашения, включая сведения о языке и версии. Сведения о файле указаны в [объекте agreementFile](../resources/agreementfile.md) .
+Получите сведения о файле по умолчанию для соглашения, включая сведения о языке и версии. Сведения о файле заданы с помощью [объекта agreementFile](../resources/agreementfile.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,7 +51,7 @@ GET /agreements/{agreementsId}/file
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и коллекцию объектов [agreementFile](../resources/agreementfile.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [agreementFile](../resources/agreementfile.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/94
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-agreementfile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-agreementfile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,26 +1,26 @@
 ---
 title: Обновление mobileAppTroubleshootingEvent
-description: Описывает метод Update mobileAppTroubleshootingEvent a Microsoft Graph API для Intune, который поддерживает несколько процессов.
-ms.localizationpriority: medium
-author: rolyon
+description: Описывает метод Update mobileAppTroubleshootingEvent microsoft API Graph for Intune, который поддерживает несколько рабочих процессов.
+localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e08d81f6738a6734b2a23c44e653263fc86fec69
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0d54bdc17e2965d0f69a9588c6d30e48a86eea59
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59107353"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447284"
 ---
 # <a name="update-mobileapptroubleshootingevent"></a>Обновление mobileAppTroubleshootingEvent
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API в версии /бета-версии в Microsoft Graph могут изменяться. Использование этих API в производственных приложениях не поддерживается.
+> **Важно:** API-интерфейсы в версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [mobileAppTroubleshootingEvent.](../resources/intune-shared-mobileapptroubleshootingevent.md)
+Обновление свойств объекта [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +31,7 @@ ms.locfileid: "59107353"
 |&nbsp; &nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 |&nbsp; &nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -48,30 +48,30 @@ PATCH /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для [объекта mobileAppTroubleshootingEvent.](../resources/intune-shared-mobileapptroubleshootingevent.md)
+В тексте запроса добавьте представление объекта [mobileAppTroubleshootingEvent в формате](../resources/intune-shared-mobileapptroubleshootingevent.md) JSON.
 
-В следующей таблице показаны свойства, необходимые при создании [mobileAppTroubleshootingEvent.](../resources/intune-shared-mobileapptroubleshootingevent.md)
+В следующей таблице показаны свойства, необходимые при создании [объекта mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|GUID объекта|
 |**Устранение неполадок**|
-|additionalInformation|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор пар значений ключа строки и строк, которые предоставляют дополнительные сведения о событии устранения неполадок.|
-|applicationId|String|Идентификатор приложения Intune.|
-|correlationId|String|ID, используемый для отслеживания сбоя в службе. |
-|eventDateTime|DateTimeOffset|Время, когда произошло событие. |
-|eventName|String|Имя события, соответствующее событию устранения неполадок. Необязательный параметр.|
-|история|[коллекция mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Элемент истории устранения неполадок для мобильных приложений Intune.|
+|additionalInformation|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор пар строкового ключа и строкового значения, который предоставляет дополнительные сведения о событии устранения неполадок.|
+|applicationId|String|Intune идентификатор приложения.|
+|correlationId|String|Идентификатор, используемый для трассировки сбоя в службе. |
+|eventDateTime|DateTimeOffset|Время возникновения события. |
+|eventName|String|Имя события, соответствующее событию устранения неполадок. Необязательное свойство.|
+|Истории|[Коллекция mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Intune журнала устранения неполадок мобильного приложения.|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
-|устранение неполадокErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. |
+|troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. |
 |userId|String|Идентификатор пользователя, который пытался зарегистрировать устройство.|
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный объект [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

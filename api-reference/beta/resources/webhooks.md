@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: conceptualPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 17edbdd21aa0fbcd0869ff81be7992159ab3655d
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 106f0d0600d7020b003cd214d7ef090bc82f3f27
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820975"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443034"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
@@ -39,14 +39,14 @@ REST API Microsoft Graph использует механизм веб-перех
 | [Оповещение][] безопасности | Изменения в конкретном предупреждении:<br>`/security/alerts/{id}` <br>Изменения в отфильтрованных оповещениях:<br> `/security/alerts/?$filter`| Нет |
 | [callRecord][] в Teams | Изменения во _всех_ записях звонков: `/communications/callRecords` | Нет |
 | [Канал][] Teams  | Изменения каналов во всех командах:<br>`/teams/getAllChannels` <br>Изменения канала в определенной команде:<br>`/teams/{id}/channels` | Да |
-| [Чат][] Teams | Изменения в любом чате в клиенте:<br>`/chats` <br>Изменения в определенном чате:<br>`/chats/{id}` | Да |
+| [Чат][] Teams | Изменения в любом чате в клиенте:<br>`/chats` <br>Изменения в конкретном чате:<br>`/chats/{id}` | Да |
 | [chatMessage][] Teams | Изменения в сообщениях чата во всех каналах во всех командах:<br>`/teams/getAllMessages` <br>Изменения в сообщениях чата на определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех чатах:<br>`/chats/getAllMessages` <br>Изменения в сообщениях чата в конкретном чате:<br>`/chats/{id}/messages`<br>Изменения в сообщениях чата во всех чатах, в которые входит конкретный пользователь:<br>`/users/{id}/chats/getAllMessages` | Да |
-| [conversationMember][] в Teams | Изменения в членстве в определенной команде:<br>`/teams/{id}/members` <br> Изменения членства в определенном чате:<br>`/chats/{id}/members` <br> Изменения членства во всех чатах:<br>`/chats/getAllMembers` <br> Изменения в членстве во всех каналах в определенной команде:<br>`teams/{id}/channels/getAllMembers` | Да |
-| [onlineMeeting][] в Teams | Изменения в собрании по сети: <br>`/communications/onlinemeeting/{meeting-id}` | Да |
+| [conversationMember][] в Teams | Изменения участия в определенной команде:<br>`/teams/{id}/members` <br> Изменения участия в определенном чате:<br>`/chats/{id}/members` <br> Изменения участия во всех чатах:<br>`/chats/getAllMembers` <br> Изменения участия во всех каналах определенной команды:<br>`teams/{id}/channels/getAllMembers` | Да |
+| [onlineMeeting][] в Teams | Изменения в собрании по сети: <br>`/communications/onlineMeetings/?$filter=JoinWebUrl eq {joinWebUrl}` | Да |
 | [presence][] в Teams | Изменения в присутствии одного пользователя: `/communications/presences/{id}` <br> Изменения в присутствии нескольких пользователей:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Да |
 | [Команда][] Teams | Изменения в любой команде в клиенте:<br>`/teams` <br>Изменения в конкретной команде:<br>`/teams/{id}` | Да |
-| Список дел [baseTask][] (не рекомендуется) | Изменения во всех задачах в определенном списке задач:<br>`/me/tasks/lists/{baseTaskListId}/tasks`<br>Изменения во всех задачах:<br>`/me/tasks/lists/alltasks` | Нет |
-| [Список дел задачи][] | Изменения во всех задачах в определенном списке задач:<br>`/me/todo/lists/{todoTaskListId}/tasks`<br>Изменения во всех задачах:<br>`/me/todo/lists/alltasks` | Нет |
+| To Do [baseTask][] (не рекомендуется) | Изменения всех задач в определенном списке задач:<br>`/me/tasks/lists/{baseTaskListId}/tasks`<br>Изменения всех задач:<br>`/me/tasks/lists/alltasks` | Нет |
+| [Задача в приложении "Список дел"][] | Изменения всех задач в определенном списке задач:<br>`/me/todo/lists/{todoTaskListId}/tasks`<br>Изменения всех задач:<br>`/me/todo/lists/alltasks` | Нет |
 | [user][] | Изменения для всех пользователей:<br>`/users` <br>Изменения для конкретного пользователя:<br>`/users/{id}`| Нет |
 
 
@@ -92,6 +92,5 @@ REST API Microsoft Graph использует механизм веб-перех
 [team]: ./team.md
 [baseTask]: ./baseTask.md
 [todoTask]: ./todotask.md
-[Список дел задачи]: ./todotask.md
+[Задача в приложении "Список дел"]: ./todotask.md
 [onlineMeeting]: ./onlinemeeting.md
-

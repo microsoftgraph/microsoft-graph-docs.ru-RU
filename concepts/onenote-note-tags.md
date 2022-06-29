@@ -1,17 +1,17 @@
 ---
-title: Использование тегов заметок на страницах OneNote
-description: " Корпоративные записные книжки в Microsoft 365"
+title: Использование тегов заметок на страницах OneNote с помощью API OneNote
+description: Используйте атрибут тега данных для добавления и обновления встроенных тегов заметок на странице OneNote. Узнайте, как работать с тегами заметок в списках и как извлекать теги заметок.
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: f3b5a79da157a84f92bb90d87b144daa4df17f45
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 462fd5eeca23118601d32c7050149b131ec48462
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035558"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437025"
 ---
-# <a name="use-note-tags-in-onenote-pages"></a>Использование тегов заметок на страницах OneNote
+# <a name="use-note-tags-on-onenote-pages"></a>Использование тегов заметок на страницах OneNote
 
 **Область применения:** Пользовательские записные книжки в OneDrive | Корпоративные записные книжки в Microsoft 365.
 
@@ -268,7 +268,8 @@ Authorization: Bearer {token}
 
 Обратите внимание, что атрибут `data-tag`, определенный на уровне списка, передается в его элементы списка. Дополнительные сведения об использовании тегов заметок со списками см. в статье [Теги заметок в списках](#note-tags-on-lists).
 
-> **Примечание.** В выходном HTML-коде определение и теги заметок "Запомнить" возвращаются в виде атрибута `data-tag="remember-for-later"`. Элемент `title` не возвращает никаких сведений о тегах заметок.
+> [!NOTE]
+> В выходном HTML-коде определения и теги заметок "запомнить для более поздних версий" возвращаются как `data-tag="remember-for-later"`. Элемент `title` не возвращает никаких сведений о тегах заметок.
 
 
 

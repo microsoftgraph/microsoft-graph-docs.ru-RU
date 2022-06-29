@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b9e5f147c8383de5ad58f4e879e6411b32602bd7
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 62727173512802356323d9d97423a693384c7640
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672618"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444507"
 ---
 # <a name="get-device"></a>Вывод устройства
 
@@ -25,11 +25,11 @@ ms.locfileid: "63672618"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Приложение | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
-В `{id}` запросе имеется значение свойства **id** устройства, а не **свойства deviceId** .
+В `{id}` запросе содержится значение свойства **идентификатора** устройства, а не **свойства deviceId** .
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}
@@ -51,7 +51,7 @@ GET /devices/{id}
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [device](../resources/device.md) в тексте отклика.
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-a-device"></a>Пример 1. Получить устройство
+### <a name="example-1-get-a-device"></a>Пример 1. Получение устройства
 
 #### <a name="request"></a>Запрос
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc36
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -115,7 +115,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-device-and-return-only-its-id-and-extensionattributes-properties"></a>Пример 2. Получить устройство и вернуть только его свойства id и extensionAttributes
+### <a name="example-2-get-a-device-and-return-only-its-id-and-extensionattributes-properties"></a>Пример 2. Получение устройства и возврат только его свойств id и extensionAttributes
 
 #### <a name="request"></a>Запрос
 
@@ -150,12 +150,16 @@ GET https://graph.microsoft.com/beta/devices/6a59ea83-02bd-468f-a40b-f2c3d182198
 [!INCLUDE [sample-code](../includes/snippets/go/get-device-select-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-device-select-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

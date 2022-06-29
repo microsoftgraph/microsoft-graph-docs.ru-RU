@@ -1,16 +1,16 @@
 ---
 title: Удаление владельца группы
-description: Используйте этот API, чтобы удалить владельца из Microsoft 365 группы безопасности или группы безопасности с помощью свойства навигации владельцев.
+description: Используйте этот API, чтобы удалить владельца из группы Microsoft 365 или группы безопасности с помощью свойства навигации владельцев.
 ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 90be1fb768538d07b5adc3f14a4beaf83fc4a885
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 5f515a859e1ab1f7835b44421d2d3f6b795a9f6b
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65210635"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439070"
 ---
 # <a name="remove-group-owner"></a>Удаление владельца группы
 
@@ -18,7 +18,7 @@ ms.locfileid: "65210635"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API, чтобы удалить владельца из Microsoft 365 или группы безопасности с помощью свойства **навигации** владельцев. Когда владельцы назначены группе, последний владелец (объект пользователя) группы не может быть удален.
+Используйте этот API, чтобы удалить владельца из группы Microsoft 365 или группы безопасности с помощью свойства **навигации владельцев** . Когда владельцы назначены группе, последний владелец (объект пользователя) группы не может быть удален.
 
 > **Примечание:** Сведения о проблемах, возникших при удалении владельца [группы,](/graph/api/resources/team.md) связанной с командой, см. в разделе ["Известные проблемы"](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member).
 
@@ -89,6 +89,14 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/owners/{id}/$ref
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-owner-from-group-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/delete-owner-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-owner-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-owner-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

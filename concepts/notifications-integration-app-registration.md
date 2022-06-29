@@ -1,17 +1,20 @@
 ---
-title: Управление регистрацией приложения и разрешениями API для уведомлений Microsoft Graph
-description: Чтобы получать уведомления, отправляемые через Microsoft Graph, необходимо сначала зарегистрировать свое приложение на портале Microsoft Azure.
+title: Управление регистрацией приложений и разрешениями API (устарело)
+description: Чтобы интегрировать службу приложений с уведомлениями, зарегистрируйте свое приложение на платформе удостоверений Майкрософт и объявите необходимые разрешения API (устарело).
 ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: a6bc396a670eb3d96c63a75f6a894be5893c43ce
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 109fabf81a29633017b8baaa98c3834f307492e6
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049468"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442852"
 ---
-# <a name="manage-app-registration-and-api-permission-for-microsoft-graph-notifications"></a>Управление регистрацией приложения и разрешениями API для уведомлений Microsoft Graph
+# <a name="manage-app-registration-and-api-permission-for-microsoft-graph-notifications-deprecated"></a>Управление регистрацией приложений и разрешениями API для уведомлений Microsoft Graph (устарело)
+
+> [!IMPORTANT]
+> API уведомлений Microsoft Graph не рекомендуется использовать, Он прекратил возвращать данные в январе 2022 г. Дополнительные сведения об уведомлениях см. в [Центрах уведомлений Microsoft Azure](/azure/notification-hubs). Дополнительные сведения см. в записи блога [Прекращение поддержки API уведомлений Microsoft Graph (бета-версия)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 Чтобы интегрировать в службу приложений уведомления Microsoft Graph, необходимо зарегистрировать свое приложение с помощью платформы удостоверений Майкрософт для поддержки учетных записей Майкрософт, рабочих или учебных учетных записей и объявить обязательные разрешение API.
 

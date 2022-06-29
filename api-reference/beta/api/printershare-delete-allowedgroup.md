@@ -3,14 +3,14 @@ title: Удаление allowedGroup из printerShare
 description: Отмените доступ указанной группы для отправки заданий печати в связанную общую папку принтера.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 31dfa999eb10d2a2f6dc2b6b6170e2f5815e6545
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: aa4e2a22d1ce5baae12a74ad5302dfb75c4d08bd
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695363"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445594"
 ---
 # <a name="delete-allowedgroup-from-printershare"></a>Удаление allowedGroup из printerShare
 
@@ -77,6 +77,10 @@ DELETE https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups/{id}/$re
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-allowedgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-allowedgroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

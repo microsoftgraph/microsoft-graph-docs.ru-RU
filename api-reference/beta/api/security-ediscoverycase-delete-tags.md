@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: b32a43975a2378b95f1bf81d80667e5bd5238146
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 75484e3723cbe22c2d5ce84b4e189a3f4d4ebfb4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095372"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446925"
 ---
 # <a name="remove-ediscoveryreviewtag"></a>Удаление ediscoveryReviewTag
 Пространство имен: microsoft.graph.security
@@ -78,6 +78,10 @@ DELETE https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-parent-from-ediscoveryreviewtag-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-parent-from-ediscoveryreviewtag-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

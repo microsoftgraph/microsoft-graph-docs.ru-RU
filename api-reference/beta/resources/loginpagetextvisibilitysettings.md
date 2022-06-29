@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a74e2ea48d8aa39f6e12a6c5c5908d72d445898e
-ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
+ms.openlocfilehash: 9a18a8678db335b788ef170f97958de5154a1942
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65924115"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441722"
 ---
 # <a name="loginpagetextvisibilitysettings-resource-type"></a>Тип ресурса loginPageTextVisibilitySettings
 
@@ -18,23 +18,23 @@ ms.locfileid: "65924115"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Это сложный тип, представляющий различные тексты, которые могут быть скрыты на странице входа клиента.
+Представляет различные текстовые строки, которые могут быть скрыты на странице входа для клиента.
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 | hideAccountResetCredentials | Boolean | Возможность скрыть гиперссылки самостоятельного сброса пароля (SSPR), такие как "Не удается получить доступ к учетной записи?", "Забыли пароль" и "Сбросить его сейчас" в форме входа. |
-| hideCannotAccessYourAccount | Boolean | Возможность скрыть самостоятельный сброс пароля (SSPR) "Не удается получить доступ к учетной записи?" гиперссылка на форму входа. |
-| hideForgotMyPassword | Boolean | Возможность скрыть гиперссылку самостоятельного сброса пароля (SSPR) "Забыли пароль" в форме входа. |
-| hideResetItNow | Boolean | Возможность скрыть гиперссылку самостоятельного сброса пароля (SSPR) "сбросить сейчас" на форме входа. |
-| hideTermsOfUse | Boolean | Возможность скрыть гиперссылку "Условия использования" в нижнем колонтитуле. |
-| hidePrivacyAndCookies | Boolean | Возможность скрыть гиперссылку "Конфиденциальность & cookies" в нижнем колонтитуле. |
+| hideCannotAccessYourAccount | Логическое | Возможность скрыть самостоятельный сброс пароля (SSPR) "Не удается получить доступ к учетной записи?" гиперссылка на форму входа. |
+| hideForgotMyPassword | Логическое | Возможность скрыть гиперссылку самостоятельного сброса пароля (SSPR) "Забыли пароль" в форме входа. |
+| hideResetItNow | Логическое | Возможность скрыть гиперссылку самостоятельного сброса пароля (SSPR) "сбросить сейчас" на форме входа. |
+| hideTermsOfUse | Логическое | Возможность скрыть гиперссылку "Условия использования" в нижнем колонтитуле. |
+| hidePrivacyAndCookies | Логическое | Возможность скрыть гиперссылку "Конфиденциальность & cookies" в нижнем колонтитуле. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

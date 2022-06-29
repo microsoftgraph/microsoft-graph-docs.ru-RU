@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7d6ef135144e152de0c19b3ab2465bd40e6f2bcb
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 86cd1ba096aa412b3ac216b1ed4a1ad240db6e00
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094286"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442584"
 ---
 # <a name="create-invitation"></a>Создание приглашения
 
@@ -23,7 +23,7 @@ ms.locfileid: "66094286"
 При создании приглашения у вас есть несколько вариантов:
 
 1. Microsoft Graph может автоматически отправить письмо с приглашением, или ваше приложение может использовать полученное в отклике свойство *inviteRedeemUrl* для отправки специального приглашения выбранным вами способом. Вы можете настроить содержимое и язык письма, отправляемого Microsoft Graph, используя [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).
-2. Когда приглашается пользователь, создается объект user (userType задано значение Guest), который требуется для управления доступом к ресурсам. Приглашенный пользователь должен пройти процесс активации, чтобы получить доступ к соответствующим ресурсам.
+2. При приглашении пользователя создается сущность пользователя (userType Guest), которую теперь можно использовать для управления доступом к ресурсам. Приглашенный пользователь должен пройти процесс активации, чтобы получить доступ к любым ресурсам, к которым он был приглашен.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

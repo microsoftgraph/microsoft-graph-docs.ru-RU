@@ -1,30 +1,30 @@
 ---
-title: Upload для назначений и представлений для образования с помощью API microsoft Graph
-description: Узнайте, как загрузить файл на назначение или ресурс отправки с помощью API образования в Microsoft Graph.
+title: Отправка файлов для заданий и отправок для образовательных учреждений
+description: Узнайте, как отправить файл в задание или ресурс отправки с помощью API для образования в Microsoft Graph.
 ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 055d454f0ca58dab5c51687fa7b311a30828ac15
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f6c3f9a3a35e89ed935105e6320c4f7c652b288f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137387"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440875"
 ---
-# <a name="upload-files-for-education-assignments-and-submissions-using-the-microsoft-graph-api"></a>Upload для назначений и представлений для образования с помощью API microsoft Graph
+# <a name="upload-files-for-education-assignments-and-submissions-using-the-microsoft-graph-api"></a>Отправка файлов для образовательных заданий и отправки с помощью microsoft API Graph
 
-Ресурсы являются неотъемлемой частью [назначений](/graph/api/resources/educationassignment) и подчинений в [области образования.](/graph/api/resources/educationsubmission) Преподаватели определяют ресурсы для отправки в папку назначения, а учащиеся определяют ресурсы для отправки в папку отправки.
+Ресурсы являются неотъемлемой частью [назначений и](/graph/api/resources/educationassignment) [отправок для образовательных учреждений](/graph/api/resources/educationsubmission). Преподаватели определяют ресурсы для отправки в папку заданий, а учащиеся — ресурсы для отправки в папку отправки.
 
-В этой статье описывается использование API образования в Microsoft Graph для отправки файлов в папку назначения или отправки.
+В этой статье описывается, как использовать API образования в Microsoft Graph для отправки файлов в папку назначения или отправки.
 
 ## <a name="prerequisites"></a>Предварительные условия
 
-Прежде чем загружать файлы, SharePoint папку, в которую можно загрузить файлы [](/graph/api/resources/educationassignment) для данного учебного назначения или ресурса [submisstion.](/graph/api/resources/educationsubmission) 
+Перед отправкой файлов необходимо настроить папку SharePoint, в которую будут отправляться файлы для заданного назначения образования или ресурса отправки.
 
-## <a name="upload-a-resource"></a>Upload ресурс
+## <a name="upload-a-resource"></a>Отправка ресурса
 
-API `setUpResourcesFolder` возвращает модель, содержаную **свойство resourcesFolderUrl.**
+API `setUpResourcesFolder` возвращает модель, содержащую **свойство resourcesFolderUrl** .
 
 ```http
 {
@@ -33,23 +33,25 @@ API `setUpResourcesFolder` возвращает модель, содержану
     ...
 }
 ```
-Ниже описано, как загрузить ресурс или файл в соответствующую папку ресурса.
 
-### <a name="step-1---construct-the-upload-url"></a>Шаг 1 . Создание URL-адреса отправки
-Создайте URL-адрес для отправки контента в этом конкретном `{resourcesFolderUrl}:/{Name of new file}:/content` формате. В следующем примере показан URL-адрес загрузки, содержащий **свойство resourcesFolderUrl.**
+Ниже описано, как отправить ресурс или файл в соответствующую папку ресурсов.
+
+### <a name="step-1---construct-the-upload-url"></a>Шаг 1. Создание URL-адреса отправки
+Создайте URL-адрес для отправки содержимого в указанном формате `{resourcesFolderUrl}:/{Name of new file}:/content`. В следующем примере показан URL-адрес отправки, содержащий **свойство resourcesFolderUrl** .
 
 ```http
 https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJRQLVYT24IWWFAJHMRRNYCB3GE2:/MyPictureFile.png:/content
 ```
 
-### <a name="step-2---upload-the-resource-to-sharepoint"></a>Шаг 2 — Upload ресурс для SharePoint
-Сделайте PUT-запрос с URL-адресом загрузки для отправки контента.
+### <a name="step-2---upload-the-resource-to-sharepoint"></a>Шаг 2. Отправка ресурса в SharePoint
+Выполните запрос PUT с URL-адресом отправки, чтобы отправить содержимое.
 
 Содержимое текста запроса должно представлять собой двоичный поток файла, который необходимо отправить.
 
-Дополнительные сведения [см. в Upload больших файлов с сеансом загрузки.](/graph/api/driveitem-createuploadsession)
+Дополнительные сведения см. в статье ["Отправка больших файлов с помощью сеанса отправки"](/graph/api/driveitem-createuploadsession).
 
-#### <a name="request-example"></a>Пример запроса
+#### <a name="request"></a>Запрос
+
 Ниже показан пример запроса.
 
 ```http
@@ -59,7 +61,8 @@ Content-Type: text/plain
 Binary data for the file
 ```
 
-#### <a name="response-example"></a>Пример ответа
+#### <a name="response"></a>Отклик
+
 Ниже показан пример отклика.
 
 ```http
@@ -115,26 +118,27 @@ Content-type: application/json
 }
 ```
 
-### <a name="step-3---construct-the-value-for-the-fileurl-property"></a>Шаг 3 . Построение значения для свойства fileUrl
-Создайте значение для **свойства fileUrl** с помощью следующего формата: `https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}` . Замените эти значения на значения, описанные `{drive-id}` `{item-id}` в следующей таблице.
+### <a name="step-3---construct-the-value-for-the-fileurl-property"></a>Шаг 3. Создание значения для свойства fileUrl
+Создайте значение свойства **fileUrl** в следующем формате: `https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}` Замените `{drive-id}` заполнители `{item-id}` значениями, описанными в следующей таблице.
 
 | Заполнитель | Описание | Пример |
 |:--|:--|:--|
-| `{drive-id}` | Drive ID из URL-адреса запроса, используемого в шаге 2. | b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F |
-| `{item-id}` | ID элемента из тела ответа, полученного в шаге 2. | 01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ |
+| `{drive-id}` | Идентификатор диска из URL-адреса запроса, используемого на шаге 2. | b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F |
+| `{item-id}` | Идентификатор элемента из текста ответа, полученного на шаге 2. | 01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ |
 
-В следующем примере показан **файлUrl,** основанный на этом формате.
+В следующем примере показан **fileUrl** на основе этого формата.
 
 ```http
 https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ
 ```
 
-### <a name="step-4---create-educationassignmentresource"></a>Шаг 4 . Создание educationAssignmentResource
-На этом шаге показано, как загрузить SharePoint в папку ресурсов назначения.
+### <a name="step-4---create-educationassignmentresource"></a>Шаг 4. Создание educationAssignmentResource
+На этом шаге показано, как отправить ресурс SharePoint в папку ресурсов назначения.
 
-Используйте `fileUrl` предыдущий шаг в теле запроса, чтобы [создать educationAssignmentResource](/graph/api/educationassignment-post-resources).
+Используйте предыдущий `fileUrl` шаг в тексте запроса для [создания educationAssignmentResource](/graph/api/educationassignment-post-resources).
 
-#### <a name="request-example"></a>Пример запроса
+#### <a name="request"></a>Запрос
+
 Ниже показан пример запроса.
 
 ```http
@@ -150,7 +154,8 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response-example"></a>Пример ответа
+#### <a name="response"></a>Отклик
+
 Ниже показан пример отклика.
 
 ```http
@@ -187,4 +192,6 @@ Content-type: application/json
 }
 ```
 
-Теперь вы успешно загрузили ресурс SharePoint в папку ресурсов назначения (и прикрепили его к связанному назначению). Вы можете выполнять аналогичные действия, чтобы загрузить один или несколько ресурсов работы учащихся. Дополнительные сведения см. в [материале Create educationSubmissionResource](/graph/api/educationsubmission-post-resources).
+Вы успешно отправили ресурс SharePoint в папку ресурсов назначения (и подключили его к связанному назначению). Чтобы отправить один или несколько рабочих ресурсов учащихся, выполните аналогичные действия.
+
+Дополнительные сведения см [. в разделе Create educationSubmissionResource](/graph/api/educationsubmission-post-resources).

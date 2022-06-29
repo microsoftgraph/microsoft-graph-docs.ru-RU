@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса deviceEnrollmentConfiguration
 description: Базовый класс конфигурации регистрации устройств
-author: rolyon
-ms.localizationpriority: medium
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d34bfee039fa8d4a030ee5078d73974b9d05f7b3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 66ae56fd0e4d1812977bafcf87d29dca7c55cece
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039149"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436556"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -31,24 +31,24 @@ ms.locfileid: "59039149"
 |[Действие setPriority](../api/intune-shared-deviceenrollmentconfiguration-setpriority.md)|Нет|Н/Д|
 |[Действие assign](../api/intune-shared-deviceenrollmentconfiguration-assign.md)|Нет|Н/Д|
 |**Набор политик**|
-|[действие hasPayloadLinks](../api/intune-shared-deviceenrollmentconfiguration-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection|Н/Д|
+|[Действие hasPayloadLinks](../api/intune-shared-deviceenrollmentconfiguration-haspayloadlinks.md)|[Коллекция hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор учетной записи|
-|displayName|String|Отображающее имя конфигурации регистрации устройства|
-|description|String|Описание конфигурации регистрации устройства|
-|priority|Int32|Приоритет используется, когда пользователь существует в нескольких группах, которые назначены конфигурации регистрации. Пользователи подчиняются только конфигурации с наименьшим значением приоритета.|
-|createdDateTime|DateTimeOffset|Создано время даты в UTC конфигурации регистрации устройства|
-|lastModifiedDateTime|DateTimeOffset|Последнее измененное время даты в UTC конфигурации регистрации устройства|
+|displayName|String|Отображаемое имя конфигурации регистрации устройства|
+|description|String|Описание конфигурации регистрации устройств|
+|priority|Int32|Приоритет используется, когда пользователь существует в нескольких группах, для которых назначена конфигурация регистрации. На пользователей распространяется только конфигурация с наименьшим значением приоритета.|
+|createdDateTime|DateTimeOffset|Дата и время создания в формате UTC конфигурации регистрации устройств|
+|lastModifiedDateTime|DateTimeOffset|Дата последнего изменения в формате UTC конфигурации регистрации устройств|
 |version|Int32|Версия конфигурации регистрации устройства|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |**Адаптация**|
-|assignments|Коллекция [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|Список групповых назначений для профиля конфигурации устройства|
+|assignments|Коллекция [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|Список назначений групп для профиля конфигурации устройства|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

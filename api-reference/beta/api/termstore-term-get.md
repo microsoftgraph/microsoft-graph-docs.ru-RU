@@ -1,23 +1,23 @@
 ---
-title: Получить термин
-description: Ознакомьтесь с свойствами и отношениями объекта терминов.
+title: Получение термина
+description: Чтение свойств и связей объекта термина.
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6ff8039c2d79382926c7ea56363fccbb3348e79e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 0715f0197f283f2379e1513a14749ee7ea1f76ff
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395414"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441797"
 ---
-# <a name="get-term"></a>Получить термин
+# <a name="get-term"></a>Получение термина
 Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями объекта [терминов](../resources/termstore-term.md) .
+Чтение свойств и связей объекта [термина](../resources/termstore-term.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -55,11 +55,11 @@ GET /sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и объект [терминов](../resources/termstore-term.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [термина](../resources/termstore-term.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-a-termstore-term"></a>Пример 1. Получить термин TermStore
+### <a name="example-1-get-a-termstore-term"></a>Пример 1. Получение термина termStore
 
 #### <a name="request"></a>Запрос
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/termStore/groups/1FFD3F87-9464-488A-A0EC-8F
 [!INCLUDE [sample-code](../includes/snippets/go/get-term-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-term-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Отклик
@@ -119,7 +123,7 @@ Content-Type: application/json
   "lastModifiedDateTime": "2019-06-21T20:01:37Z"
 }
 ```
-### <a name="example-2--get-a-site-collection-termstore-term"></a>Пример 2. Получить термин termStore для коллекции сайтов
+### <a name="example-2--get-a-site-collection-termstore-term"></a>Пример 2. Получение термина termStore для семейства веб-сайтов
 
 #### <a name="request"></a>Запрос
 
@@ -151,6 +155,10 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-term-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-term-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

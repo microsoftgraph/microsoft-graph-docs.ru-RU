@@ -1,26 +1,26 @@
 ---
-title: Get passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
-description: Ознакомьтесь с свойствами и отношениями объекта без пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration.
+title: Получение объекта passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
+description: Чтение свойств и связей объекта passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1acc6f6a559aede82a2e0dd74260c51e833e35eb
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 4df6a3dc45ac3418647025b207a1939e672322c4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395386"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446855"
 ---
-# <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>Get passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (deprecated)
+# <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>Получение объекта passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (не рекомендуется)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта Без [пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md), который представляет политику метода проверки подлинности Microsoft Authenticator passwordless Телефон для клиента Azure AD.[](../resources/authenticationmethodspolicies-overview.md)
+Получение свойств и связей объекта [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md), который представляет политику проверки подлинности для входа на телефон без пароля Microsoft Authenticator [](../resources/authenticationmethodspolicies-overview.md) для Azure AD клиента.
 
 > [!CAUTION]
-> API Microsoft Authenticator без паролей Телефон для политики проверки подлинности для регистрации не используется и перестал возвращать результаты 31 декабря 2020 г. Используйте новую политику [Microsoft Authenticator проверки подлинности](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md).
+> API политики проверки подлинности для телефона без пароля Microsoft Authenticator устарел и перестал возвращать результаты 31 декабря 2020 г. Используйте новую политику метода [проверки подлинности Microsoft Authenticator](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +31,7 @@ ms.locfileid: "63395386"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для делегирования сценариев администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев администратору требуется одна из следующих [Azure AD ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный читатель
 * Администратор политики проверки подлинности
@@ -58,7 +58,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/pas
 
 ## <a name="response"></a>Отклик
 
-В случае `200 OK` успешной работы этот метод возвращает код ответа и объект [без пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) в теле отклика.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и объект [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

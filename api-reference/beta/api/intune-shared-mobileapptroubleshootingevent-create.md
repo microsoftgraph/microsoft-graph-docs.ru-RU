@@ -1,26 +1,26 @@
 ---
-title: Создание mobileAppTroubleshootingEvent
-description: Описывает метод Create mobileAppTroubleshootingEvent a Microsoft Graph API для Intune, который поддерживает несколько рабочих процессов.
-ms.localizationpriority: medium
-author: rolyon
+title: Создание объекта mobileAppTroubleshootingEvent
+description: Описывает метод Create mobileAppTroubleshootingEvent microsoft API Graph for Intune, который поддерживает несколько рабочих процессов.
+localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 539cd4c502d4f053d74fdd8f9638ccb12676c733
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6c87a05e810bd0363ce518e0fd719365c4153230
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59033954"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446948"
 ---
-# <a name="create-mobileapptroubleshootingevent"></a>Создание mobileAppTroubleshootingEvent
+# <a name="create-mobileapptroubleshootingevent"></a>Создание объекта mobileAppTroubleshootingEvent
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API в версии /бета-версии в Microsoft Graph могут изменяться. Использование этих API в производственных приложениях не поддерживается.
+> **Важно:** API-интерфейсы в версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового [объекта mobileAppTroubleshootingEvent.](../resources/intune-shared-mobileapptroubleshootingevent.md)
+Создайте объект [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +31,7 @@ ms.locfileid: "59033954"
 |&nbsp; &nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 |&nbsp; &nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -48,30 +48,30 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для объекта mobileAppTroubleshootingEvent.
+В тексте запроса добавьте представление объекта mobileAppTroubleshootingEvent в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании mobileAppTroubleshootingEvent.
+В следующей таблице показаны свойства, необходимые при создании объекта mobileAppTroubleshootingEvent.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|GUID объекта|
 |**Устранение неполадок**|
-|additionalInformation|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор пар значений ключа строки и строк, которые предоставляют дополнительные сведения о событии устранения неполадок.|
-|applicationId|String|Идентификатор приложения Intune.|
-|correlationId|String|ID, используемый для отслеживания сбоя в службе. |
+|additionalInformation|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор пар строкового ключа и строкового значения, который предоставляет дополнительные сведения о событии устранения неполадок.|
+|applicationId|String|Intune идентификатор приложения.|
+|correlationId|String|Идентификатор, используемый для трассировки сбоя в службе. |
 |eventDateTime|DateTimeOffset|Время возникновения события. |
-|eventName|Строка|Имя события, соответствующее событию устранения неполадок. Необязательный параметр.|
-|история|[коллекция mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Элемент истории устранения неполадок для мобильных приложений Intune|
+|eventName|String|Имя события, соответствующее событию устранения неполадок. Необязательное свойство.|
+|Истории|[Коллекция mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Intune журнала устранения неполадок мобильных приложений|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
-|устранение неполадокErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. |
+|troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. |
 |userId|String|Идентификатор пользователя, который пытался зарегистрировать устройство.|
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

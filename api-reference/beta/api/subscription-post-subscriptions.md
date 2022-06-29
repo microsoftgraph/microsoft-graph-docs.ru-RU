@@ -1,16 +1,16 @@
 ---
 title: Создание подписки
-description: Подписывает приложение прослушивателя на получение уведомлений об изменениях при изменении Graph ресурсов Майкрософт.
+description: Подписывает приложение прослушивателя на получение уведомлений об изменениях при изменении данных в ресурсе Microsoft Graph.
 ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: faa5ca9d9c24cacabfeaf535ad2f6a2f915720e7
-ms.sourcegitcommit: da9079132db3261aed80e6fc4b9314d16e0847b3
+ms.openlocfilehash: e64abb2c70c0f51a8b2942ba0b165f047a596c01
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66186927"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445211"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -84,13 +84,14 @@ OneDrive для бизнеса и SharePoint поддерживают отпра
 
 ### <a name="contact-event-and-message"></a>contact, event и message
 
-Вы можете подписаться на изменения в Outlook контактов **, событий** или сообщений  и при необходимости указать в полезных данных запроса POST, следует ли включать зашифрованные данные ресурсов в уведомления. 
+Вы можете подписаться на изменения в ресурсах контактов **, событий** или сообщений Outlook и при необходимости указать в полезных данных запроса POST, следует ли включать зашифрованные данные ресурсов в уведомления.
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
 ### <a name="onlinemeetings-presence"></a>onlineMeetings, presence
 
 Для подписок **на onlineMeetings** и **presence** требуется свойство **encryptionCertificate** и **encryptionCertificateId** при [](/graph/webhooks-with-resource-data#creating-a-subscription) создании подписки для уведомлений с зашифрованными данными ресурсов. Дополнительные сведения см. [в статье о настройке уведомлений об изменениях для получения данных о ресурсах](/graph/webhooks-with-resource-data).
+Дополнительные сведения о подписках на собрания по сети см. в статье ["Получение уведомлений об изменениях для собраний по сети"](/graph/changenotifications-for-onlinemeeting).
 
 ## <a name="http-request"></a>HTTP-запрос
 

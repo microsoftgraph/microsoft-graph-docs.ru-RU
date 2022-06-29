@@ -1,22 +1,22 @@
 ---
 title: Назначение appliesTo
-description: Назначение каталогаОбект для выкатки функций.
+description: Назначьте directoryObject для развертывания компонентов.
 ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9e6b7d35dfcd440fc026775836152fa396050a1b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5ef2aab8ad61b48c9a69d88ad9de7bcdb5b5557e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976769"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446231"
 ---
 # <a name="assign-appliesto"></a>Назначение appliesTo
 
 Пространство имен: microsoft.graph
 
-Добавьте appliesTo на [объект featureRolloutPolicy,](../resources/featurerolloutpolicy.md) чтобы указать [directoryObject,](../resources/directoryobject.md) к которому следует применить функциюRolloutPolicy. [](../resources/featurerolloutpolicy.md)
+Добавьте appliesTo в объект [featureRolloutPolicy](../resources/featurerolloutpolicy.md) , чтобы указать [directoryObject](../resources/directoryobject.md) , к которому [следует применить featureRolloutPolicy](../resources/featurerolloutpolicy.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ POST /policies/featureRolloutPolicies/{id}/appliesTo/$ref
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token}. Обязательно |
+| Авторизация | Носитель {token}. Обязательный |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -48,7 +48,7 @@ POST /policies/featureRolloutPolicies/{id}/appliesTo/$ref
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект directoryObject](../resources/directoryobject.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и новый [объект directoryObject](../resources/directoryobject.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -91,12 +91,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-directoryobject-from-featurerolloutpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-directoryobject-from-featurerolloutpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

@@ -1,18 +1,19 @@
 ---
-title: Обзор доступа к сведениям о работоспособности и взаимодействии служб с помощью Microsoft Graph
-description: Используйте API взаимодействия служб в Microsoft Graph для доступа к состоянию работоспособности и записям центра сообщений об облачных службах (Майкрософт).
+title: Доступ к сведениям о работоспособности и взаимодействии служб в Microsoft Graph
+description: Используйте API взаимодействия служб в Microsoft Graph для доступа к состоянию работоспособности и записям центра сообщений об облачных службах Майкрософт.
 author: payiAzure
 ms.localizationpriority: high
 ms.prod: service-communications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 6b6f5d95684f324864919abb08e5835fd14230bd
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 81b53b9dcabcef6ae4ffd0041c675a6291a03df9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62291452"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445841"
 ---
-# <a name="overview-for-accessing-service-health-and-communications-in-microsoft-graph"></a>Обзор доступа к сведениям о работоспособности и взаимодействии служб в Microsoft Graph
+# <a name="access-service-health-and-communications-in-microsoft-graph"></a>Доступ к сведениям о работоспособности и взаимодействии служб в Microsoft Graph
+
 Вы можете использовать API взаимодействия служб в Microsoft Graph для доступа к состоянию работоспособности и записям центра сообщений об облачных службах (Майкрософт). Фактическое состояние работоспособности и записи соответствуют службам Microsoft 365 и Dynamics 365, которые поддерживаются API-интерфейсом и подписка на которые есть у клиента.
 
 ## <a name="why-integrate-with-service-health-and-communications-data"></a>Зачем интегрировать данные о работоспособности и взаимодействии служб?

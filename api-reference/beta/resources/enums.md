@@ -1,21 +1,28 @@
 ---
 title: Значения перечисления
-description: Значения Graph майкрософт
+description: Значения перечисления Microsoft Graph
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 8bfa73b97a08a71028cad90562269e9cabb07ff8
-ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
+ms.openlocfilehash: a064058b666f7b5709fed96a53b83c6eb3d2c77d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66160680"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446366"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
 Пространство имен: microsoft.graph
 
+### <a name="decisionitemprincipalresourcemembershiptype-values"></a>Значения decisionItemPrincipalResourceMembershipType 
+
+|Member|
+|:---|
+|Прямой|
+|Косвенные|
+|unknownFutureValue|
 
 ### <a name="signinfrequencyauthenticationtype-values"></a>Значения signInFrequencyAuthenticationType
 
@@ -353,11 +360,11 @@ ms.locfileid: "66160680"
 
 |Member|
 |:---|
-|Строка|
+|String|
 |Целое число|
-|Справка|
+|Справочные материалы|
 |Binary|
-|Boolean|
+|Логическое|
 |DateTime|
 
 ### <a name="mutability-values"></a>значения изменяемости
@@ -1941,7 +1948,7 @@ ms.locfileid: "66160680"
 
 ### <a name="useraccountsecuritytype-values"></a>Значения userAccountSecurityType
 
-Возможные значения для типов учетных записей пользователей (членство в группах) в Windows определения.
+Возможные значения для типов учетных записей пользователей (членство в группах) для определения Windows.
 
 | Элемент        | Значение | Описание                     |
 | :------------ | :---- | :------------------------------ |
@@ -1952,7 +1959,7 @@ ms.locfileid: "66160680"
 
 ### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>Значения chatMessagePolicyViolationDlpActionType
 
-| Value |
+| Значение |
 |:-----------------|
 | Нет |
 | NotifySender |
@@ -2343,7 +2350,7 @@ ms.locfileid: "66160680"
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| почта;   | 1     | Почтовая угроза.            |
+| mail;   | 1     | Почтовая угроза.            |
 | url    | 2     | Угроза URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -2391,8 +2398,8 @@ ms.locfileid: "66160680"
 | Элемент                | Значение | Описание                         |
 |:----------------------|:------|:------------------------------------|
 | Нет                  | 0     | Пока не известно.                       |
-| mailFlowRule          | 1     | Exchange правила транспорта.            |
-| safeSender            | 2     | Сейф отправителя.                   |
+| mailFlowRule          | 1     | Правило транспорта Exchange.            |
+| safeSender            | 2     | Список надежных отправителей.                   |
 | blockedSender         | 3     | Список заблокированных отправителей.                |
 | advancedSpamFiltering | 4     | Расширенный параметр фильтрации нежелательной почты.     |
 | domainAllowList       | 5     | Список разрешений домена отправителя.           |
@@ -2601,9 +2608,9 @@ ms.locfileid: "66160680"
 
 |Элемент    |Значение    |Описание |
 |:---------|:--------|:----------- |
-|team      |0        |Указывает, что Teams приложение может быть установлено в команде и имеет право на доступ к данным этой команды.|
-|groupChat |1        |Указывает, что Teams может быть установлено в групповом чате и имеет право на доступ к данным этого чата группы.|
-|personal  |2        |Указывает, что Teams может быть установлено в личной области пользователя и имеет право на доступ к данным этого пользователя.|
+|team      |0        |Указывает, что приложение Teams может быть установлено в команде и имеет право на доступ к данным этой команды.|
+|groupChat |1        |Указывает, что приложение Teams может быть установлено в групповом чате и имеет право на доступ к данным этого чата группы.|
+|personal  |2        |Указывает, что приложение Teams может быть установлено в личной области пользователя и имеет право на доступ к данным этого пользователя.|
 
 ### <a name="roleassignmentschedulerequestfilterbycurrentuseroptions-values"></a>Значения roleAssignmentScheduleRequestFilterByCurrentUserOptions
 
@@ -2707,7 +2714,7 @@ ms.locfileid: "66160680"
 
 |Member|
 |:---|
-|microsoft|
+|Microsoft|
 |thirdParty|
 |Клиентов|
 |unknownFutureValue|
@@ -2775,7 +2782,7 @@ ms.locfileid: "66160680"
 |Member|
 |:---|
 |team|
-|Канал|
+|channel|
 |чат|
 |unknownFutureValue|
 

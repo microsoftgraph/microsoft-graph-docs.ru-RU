@@ -1,24 +1,24 @@
 ---
-title: Получить informationProtectionLabel
-description: Извлечение свойств и связей указанного объекта informationProtectionLabel.
+title: Получение informationProtectionLabel
+description: Получение свойств и связей указанного объекта informationProtectionLabel.
 ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 6564c59608f8f69d0a2fc68dc1639768ff0695bb
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 629e22332595e71faae8901034f39b19661a37a9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395694"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446553"
 ---
-# <a name="get-informationprotectionlabel"></a>Получить informationProtectionLabel
+# <a name="get-informationprotectionlabel"></a>Получение informationProtectionLabel
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей объекта [informationProtectionLabel](../resources/informationprotectionlabel.md) .
+Получение свойств и связей объекта [informationProtectionLabel](../resources/informationprotectionlabel.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,13 +33,13 @@ ms.locfileid: "63395694"
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
-Чтобы получить метку, доступную для подписанного пользователя или указанного пользователя:
+Чтобы получить метку, доступную вошедаму пользователю или указанному пользователю:
 ```http
 GET /me/informationProtection/policy/labels/{id}
 GET /users/{id | user-principal-name}/informationProtection/policy/labels/{id}
 ```
 
-Чтобы получить метку, доступную организации:
+Чтобы получить метку, доступную для организации:
 ```http
 GET /informationProtection/policy/labels/{id}
 ```
@@ -53,7 +53,7 @@ GET /informationProtection/policy/labels/{id}
 | Имя          | Описание                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {token}. Обязательный.                                                                                                                                                         |
-| User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
+| User-Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения будут отображаться в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -61,7 +61,7 @@ GET /informationProtection/policy/labels/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и запрашиваемого объекта [informationProtectionLabel](../resources/informationprotectionlabel.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и запрашиваемый [объект informationProtectionLabel](../resources/informationprotectionlabel.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels/{id}
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-informationprotectionlabel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-informationprotectionlabel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

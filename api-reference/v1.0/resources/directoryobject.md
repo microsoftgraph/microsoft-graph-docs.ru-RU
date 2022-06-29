@@ -5,21 +5,22 @@ ms.localizationpriority: high
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 48355b69913b494f26765bbb49ef831539c897bc
-ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
+ms.openlocfilehash: a9a17eae32984aeb42df8c395eaecdab8420c6a3
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65102993"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437109"
 ---
 # <a name="directoryobject-resource-type"></a>Тип ресурса directoryObject
 
 Пространство имен: microsoft.graph
 
-Представляет объект Azure Active Directory. Тип **directoryObject** является базовым типом для следующих типов элементов каталогов, которые обычно называют объектами каталогов:
+Представляет объект Azure Active Directory. Тип **directoryObject** является базовым типом для следующих типов элементов каталогов, которые обычно называют объектами каталогов.
 
 + [application](application.md)
 + [administrativeUnit](administrativeunit.md)
++ [appRoleAssignment](approleassignment.md)
 + [directoryObject](directoryobject.md)
 + [directoryRole](directoryrole.md)
 + [device](device.md)
@@ -59,7 +60,7 @@ ms.locfileid: "65102993"
 Отсутствуют.
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

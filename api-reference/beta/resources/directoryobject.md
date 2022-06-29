@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 196d95935171ab7b38559024b5d1ac46b84b7ae3
-ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
+ms.openlocfilehash: 95d926deef7961bedd1ebcf9e2ad38f1b7513415
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65103025"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441421"
 ---
 # <a name="directoryobject-resource-type"></a>Тип ресурса directoryObject
 
@@ -22,6 +22,7 @@ ms.locfileid: "65103025"
 
 + [application](application.md)
 + [administrativeUnit](administrativeunit.md)
++ [appRoleAssignment](approleassignment.md)
 + [directoryObject](directoryobject.md)
 + [directoryRole](directoryrole.md)
 + [device](device.md)
@@ -42,7 +43,7 @@ ms.locfileid: "65103025"
 |[Получение объекта directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |Чтение свойств объекта каталога.|
 |[Удаление](../api/directoryobject-delete.md) | Нет |Удаление объекта каталога. |
 |[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|Коллекция строк|Проверка участия в указанном списке групп и возвращение из этого списка тех групп, в которых состоит указанный пользователь, группа, субъект-служба, контакт организации или объект каталога. Это транзитивная проверка.|
-|[getMemberGroups](../api/directoryobject-getmembergroups.md)|Коллекция строк|Возвращение всех групп, в которых состоит пользователь, группа, субъект-служба, контакт организации, устройство или объект каталога. Это транзитивная проверка.|
+|[getMemberGroups](../api/directoryobject-getmembergroups.md)|Коллекция String|Возвращение всех групп, в которых состоит пользователь, группа, субъект-служба, контакт организации, устройство или объект каталога. Это транзитивная проверка.|
 |[checkMemberObjects](../api/directoryobject-checkmemberobjects.md)|Коллекция String|Проверка участия в списке ролей группы, административных единиц или каталога для указанного пользователя, группы, устройства, контакта организации или объекта каталога. Это транзитивный метод.|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Коллекция String| Возвращение всех ролей групп, административных единиц и каталога, в которых состоит пользователь, группа, устройство, контакт организации или объект каталога. Это транзитивная проверка. |
 |[getByIds](../api/directoryobject-getbyids.md) | Коллекция [directoryObject](directoryobject.md) | Получение набора объектов каталога на основе указанных идентификаторов. |
@@ -60,7 +61,7 @@ ms.locfileid: "65103025"
 
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

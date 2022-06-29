@@ -1,48 +1,50 @@
 ---
-title: Укажите канал уведомлений о назначении образования по умолчанию с помощью API microsoft Graph.
-description: Используйте API образования в Microsoft Graph, чтобы указать канал Microsoft Teams, на который отправляются уведомления о **назначении**.
+title: Указание канала по умолчанию для уведомлений о назначениях для образовательных учреждений
+description: Используйте API для образования в Microsoft Graph, чтобы указать канал Microsoft Teams по умолчанию для отправки уведомлений о назначении.
 ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 927641417a3153eab398a31dee19255071a0937e
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 392cfaeef8f4491204dcd6a1cba992ce7f07a092
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443473"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440910"
 ---
-# <a name="specify-the-default-channel-for-education-assignment-notifications-using-the-microsoft-graph-api"></a>Укажите канал уведомлений о назначении образования по умолчанию с помощью API microsoft Graph.
+# <a name="specify-the-default-channel-for-education-assignment-notifications-using-the-microsoft-graph-api"></a>Укажите канал по умолчанию для уведомлений о назначениях для образовательных учреждений с помощью microsoft API Graph
 
-В этой статье описывается использование API образования в Microsoft Graph, чтобы указать канал Microsoft Teams, на который отправляются уведомления о **назначении**. Указание канала по умолчанию предполагает создание **свойства строки notificationChannelUrl** для [educationAssignment](/graph/api/resources/educationassignment). Значение по умолчанию для этого свойства `null`.
+В этой статье описывается, как использовать API образования в Microsoft Graph, чтобы указать канал Microsoft Teams по умолчанию для отправки уведомлений о **назначении**. Указание канала по умолчанию включает в себя создание свойства **строки notificationChannelUrl** для [educationAssignment](/graph/api/resources/educationassignment). Значение по умолчанию для этого свойства — `null`..
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные условия
 
 Перед созданием свойства определите соответствующую команду для назначения и имя канала.
 
-Чтобы определить команду для назначения, в левом меню в Teams нажмите кнопку Teams и выберите соответствующую команду.
+Чтобы определить команду для назначения, в меню слева в Teams щелкните **Teams** и выберите соответствующую команду.
 
-![Снимок экрана команды, выбранной из элемента Teams навигации](./images/notificationchannel-team.png)
+![Снимок экрана: команда, выбранная в элементе навигации Teams](./images/notificationchannel-team.png)
 
 Определите соответствующий канал в выбранной команде.
 
-![Снимок экрана канала, выбранного в команде](./images/notificationchannel-channel.png)
+![Снимок экрана: канал, выбранный в команде](./images/notificationchannel-channel.png)
 
-## <a name="build-the-notificationchannelurl-property-value"></a>Сборка значения свойства notificationChannelUrl
+## <a name="build-the-notificationchannelurl-property-value"></a>Создание значения свойства notificationChannelUrl
 
 Ниже описано, как создать значение свойства.
 
-### <a name="step-1---get-the-team-id-based-on-your-team-name"></a>Шаг 1 . Получите командный ID на основе имени вашей команды
-Чтобы найти id группы, сделайте запрос GET с именем команды. Если у вас уже есть командный id, пропустите этот шаг.
+### <a name="step-1---get-the-team-id-based-on-your-team-name"></a>Шаг 1. Получение идентификатора команды на основе имени команды
+Чтобы найти идентификатор команды, выполните запрос GET с именем команды. Если у вас уже есть идентификатор команды, пропустите этот шаг.
 
-#### <a name="request-example"></a>Пример запроса
+#### <a name="request"></a>Запрос
+
 Ниже показан пример запроса.
 
 ```http
 GET https://graph.microsoft.com/v1.0/teams?$filter=displayName eq 'English Fall ''21'
 ```
 
-#### <a name="response-example"></a>Пример ответа
+#### <a name="response"></a>Отклик
+
 Ниже показан пример отклика.
 
 ```http
@@ -75,17 +77,19 @@ Content-type: application/json
 }
 ```
 
-### <a name="step-2---get-the-channel-id-based-on-channel-name-and-team-id"></a>Шаг 2 . Получить ID канала на основе имени канала и ИД команды
-Сделайте запрос GET с ID группы, полученным на предыдущем шаге, и именем канала. Пропустить этот шаг, если у вас уже есть id канала.
+### <a name="step-2---get-the-channel-id-based-on-channel-name-and-team-id"></a>Шаг 2. Получение идентификатора канала на основе имени канала и идентификатора команды
+Выполните запрос GET с идентификатором команды, полученным на предыдущем шаге, и именем канала. Пропустите этот шаг, если у вас уже есть идентификатор канала.
 
-#### <a name="request-example"></a>Пример запроса
+#### <a name="request"></a>Запрос
+
 Ниже показан пример запроса.
 
 ```http
 GET https://graph.microsoft.com/v1.0/teams/72a7baec-c3e9-4213-a850-f62de0adad5f/channels?$filter=displayName eq 'General'
 ```
 
-#### <a name="response-example"></a>Пример ответа
+#### <a name="response"></a>Отклик
+
 Ниже показан пример отклика.
 
 ```http
@@ -110,29 +114,29 @@ Content-type: application/json
 }
 ```
 
-### <a name="step-3---construct-the-value-for-the-notificationchannelurl-property"></a>Шаг 3 . Построение значения для свойства notificationChannelUrl
+### <a name="step-3---construct-the-value-for-the-notificationchannelurl-property"></a>Шаг 3. Создание значения для свойства notificationChannelUrl
 Создайте значение свойства **notificationChannelUrl** в следующем формате: 
 
 > `https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}` 
 
-Замените `{team-id}` эти `{channel-id}` значения на значения, описанные в следующей таблице.
+Замените `{team-id}` заполнители `{channel-id}` значениями, описанными в следующей таблице.
 
 | Заполнитель | Описание | Пример |
 |:--|:--|:--|
-| `{team-id}` | ID команды из ответа на шаге 1. Это команда, которой принадлежит текущее назначение. | 72a7baec-c3e9-4213-a850-f62de0adad5f |
-| `{channel-id}` | ID элемента из тела ответа, полученного в шаге 2. | 19:jb2-ckDy2jONyW6ElO1phAVD5cTjuswYgoumI0oxrUw1@thread.tacv2 |
+| `{team-id}` | Идентификатор команды из ответа на шаге 1. Это команда, которой принадлежит текущее назначение. | 72a7baec-c3e9-4213-a850-f62de0adad5f |
+| `{channel-id}` | Идентификатор элемента из текста ответа, полученного на шаге 2. | 19:jb2-ckDy2jONyW6ElO1phAVD5cTjuswYgoumI0oxrUw1@thread.tacv2 |
 
-В следующем примере показано **уведомлениеChannelUrl** на основе этого формата.
+В следующем примере показан **notificationChannelUrl** на основе этого формата.
 
 ```http
 https://graph.microsoft.com/v1.0/teams/72a7baec-c3e9-4213-a850-f62de0adad5f/channels/19:jb2-ckDy2jONyW6ElO1phAVD5cTjuswYgoumI0oxrUw1@thread.tacv2
 ```
 
-### <a name="step-4---assign-the-value-to-the-notificationchannelurl-property-for-the-assignment"></a>Шаг 4 . Назначение значения свойству notificationChannelUrl для назначения
+### <a name="step-4---assign-the-value-to-the-notificationchannelurl-property-for-the-assignment"></a>Шаг 4. Назначение значения свойству notificationChannelUrl для назначения
 
-Теперь успешно выстроили URL-адрес, пришло время назначить значение свойству. Эту операцию можно выполнить, обновив ресурсы **educationAssignment** или **educationAssignmentDefaults** .
+Вы успешно создали URL-адрес, и теперь нужно назначить значение свойству. Эту операцию можно выполнить, обновив ресурсы **educationAssignment** или **educationAssignmentDefaults** .
 
-#### <a name="example-1-update-an-educationassignment"></a>Пример 1. Обновление образованияAssignment
+#### <a name="example-1-update-an-educationassignment"></a>Пример 1. Обновление объекта educationAssignment
 
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -210,7 +214,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="example-2-update-educationassignmentdefaults"></a>Пример 2. Обновление образованияAssignmentDefaults
+#### <a name="example-2-update-educationassignmentdefaults"></a>Пример 2. Обновление educationAssignmentDefaults
 
 ##### <a name="request"></a>Запрос
 
@@ -225,6 +229,7 @@ Content-Type: application/json
 ```
 
 ##### <a name="response"></a>Отклик
+
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -247,4 +252,4 @@ Content-Type: application/json
 ## <a name="see-also"></a>См. также
 
 * [Обновление educationAssignmentDefaults](/graph/api/educationassignmentdefaults-update)
-* [Обновление образованияAssignment](/graph/api/educationassignment-update)
+* [Обновление educationAssignment](/graph/api/educationassignment-update)

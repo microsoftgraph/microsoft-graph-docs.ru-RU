@@ -1,27 +1,27 @@
 ---
-title: Используйте API Поиск (Майкрософт) для сортировки результатов поиска (предварительный просмотр)
-description: Вы сортировать результаты поиска с помощью Поиск (Майкрософт) API.
+title: Сортировка результатов поиска с помощью API поиска (Майкрософт)
+description: Для сортировки результатов поиска можно использовать свойство sortProperties API поиска (Майкрософт) в Microsoft Graph. Вы можете выполнить одноуровневую или многоуровневую сортировку.
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 43852737729eb2d8d36e48093302e21b3fecfe7c
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: ed5cb9f8737185be0dcad113f4e37d6afc489eba
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451391"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438271"
 ---
-# <a name="use-the-microsoft-search-api-to-sort-search-results"></a>Используйте API Поиск (Майкрософт) для сортировки результатов поиска
+# <a name="use-the-microsoft-search-api-to-sort-search-results"></a>Сортировка результатов поиска с помощью API поиска (Майкрософт)
 
-Вы можете использовать API Поиск (Майкрософт) Microsoft Graph для сортировки результатов поиска. Чтобы сортировать результаты, укажите свойство **sortProperties** в [объекте searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) и определите свойство ресурса **в entityTypes** для сортировки совпадений по восходящему или нисходящему порядку.
+Для сортировки результатов поиска можно использовать API поиска (Майкрософт) в Microsoft Graph. Чтобы отсортировать результаты, укажите свойство **sortProperties** в [объекте searchRequest](/graph/api/resources/searchrequest) и определите свойство ресурса в **entityTypes** для сортировки совпадений по возрастанию или убыванию.
 
-Сортировка поддерживается для SharePoint и OneDrive элементов. Свойство элементов SharePoint и OneDrive, которые необходимо сортировать, должно сортироваться *в* схеме поиска.
+Сортировка поддерживается для элементов SharePoint и OneDrive. Свойство элементов SharePoint и OneDrive для сортировки должно быть отсортированно *в* схеме поиска.
 
-Сортировка также поддерживается для [внешних элементов](/graph/api/resources/externalconnectors-externalitem). Свойство [внешних](/graph/api/resources/externalconnectors-property) элементов, на которые необходимо отсортироваться, должно быть *уточнено* в схеме поиска.
+Сортировка также поддерживается для [внешних элементов](/graph/api/resources/externalconnectors-externalitem). Свойство [внешних](/graph/api/resources/externalconnectors-property) элементов для сортировки должно быть *уточнено* в схеме поиска.
 
-По умолчанию порядок сортировки возрастает. Установите **свойство isDescending, чтобы** изменить его.
+Порядок сортировки по умолчанию — по возрастанию. **Задайте свойство isDescending**, чтобы изменить его.
 
-## <a name="example-1-single-level-sort"></a>Пример 1. Одноуровневый сорт
+## <a name="example-1-single-level-sort"></a>Пример 1. Одноуровневая сортировка
 
 ### <a name="request"></a>Запрос
 
@@ -146,7 +146,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-multi-level-sort"></a>Пример 2. Многоуровневый сортировка
+## <a name="example-2-multi-level-sort"></a>Пример 2. Многоуровневая сортировка
 
 ### <a name="request"></a>Запрос
 
@@ -322,4 +322,4 @@ Content-type: application/json
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview)

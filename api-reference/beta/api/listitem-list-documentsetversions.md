@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 8c82410725dc6495bf69295a7133605881bac3a9
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: d72e340a9804ecd5e71f86767066154613ab48fa
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65212191"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447373"
 ---
 # <a name="list-documentsetversions"></a>Перечисление documentSetVersions
 Пространство имен: microsoft.graph
@@ -49,7 +49,7 @@ GET /sites/{siteId}/lists/{listId}/items/{itemId}/documentSetVersions
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [documentSetVersion](../resources/documentsetversion.md) в тексте отклика.
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/sites/root/lists/Documents/items/1/document
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-documentsetversion-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-documentsetversion-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

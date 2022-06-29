@@ -5,12 +5,12 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 975b08d9850ca7512813b222491c608e18fdd065
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 237a1d6be02d489d052078a7547a7de64622842b
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133456"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436382"
 ---
 # <a name="create-externalgroupmember"></a>Создание externalGroupMember
 
@@ -26,8 +26,8 @@ ms.locfileid: "65133456"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -56,8 +56,8 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 | Свойство       | Тип                    | Описание                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | `id` Уникальный элемент. Это будет objectId в случае Azure Active Directory пользователей или групп и externalGroupId в случае внешних групп. Обязательное.                                   |
-| type           | microsoft.graph.externalConnectors.externalGroupMemberType | Тип члена, добавленного во внешнюю группу. Возможные значения: `user` или когда identitySource имеет `azureActiveDirectory` значение и `group` только когда identitySource имеет значение `external``group` . Обязательный. |
+| id             | String                  | `id` Уникальный элемент. Это будет objectId в случае пользователей или групп Azure Active Directory, а externalGroupId — в случае внешних групп. Обязательное.                                   |
+| type           | microsoft.graph.externalConnectors.externalGroupMemberType | Тип члена, добавленного во внешнюю группу. Возможные значения: `user` или когда identitySource имеет `azureActiveDirectory` значение и `group` только когда identitySource имеет значение `external``group` . Обязательный элемент. |
 | identitySource | microsoft.graph.externalConnectors.identitySourceType      | Источник удостоверений, к которой принадлежит член. Возможные значения: `azureActiveDirectory`, `external`. Обязательный.                                                                                       |
 
 ## <a name="response"></a>Отклик
@@ -66,7 +66,7 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>Пример 1. Добавление Azure Active Directory пользователя в качестве участника
+### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>Пример 1. Добавление пользователя Azure Active Directory в качестве участника
 
 ### <a name="request"></a>Запрос
 
@@ -105,6 +105,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-externalgroupmember-from--1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalgroupmember-from--1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -172,6 +176,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-externalgroupmember-from--2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalgroupmember-from--2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -234,6 +242,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-externalgroupmember-from--3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalgroupmember-from--3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

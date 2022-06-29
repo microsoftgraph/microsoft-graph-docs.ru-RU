@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: db04f05051085a71c62173e8e39cdb3a6f2d977d
-ms.sourcegitcommit: da9079132db3261aed80e6fc4b9314d16e0847b3
+ms.openlocfilehash: 60422e27d69ddc23faa3708bc4d625a420d0c2c3
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66186962"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446170"
 ---
 # <a name="create-cloudpcprovisioningpolicy"></a>Создание cloudPcProvisioningPolicy
 
@@ -58,11 +58,12 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies
 |:---|:---|:---|
 |displayName|String|Отображаемое имя политики подготовки.|
 |description|String|Описание политики подготовки.|
+|domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Указывает, как облачные компьютеры будут присоединяться к Azure Active Directory.|
 |onPremisesConnectionId|String|Идентификатор cloudPcOnPremisesConnection. Чтобы убедиться, что облачные компьютеры имеют сетевое подключение и присоединены к домену, выберите подключение к виртуальной сети, проверенной службой облачных компьютеров.|
 |imageId|String|Идентификатор образа ОС, который требуется подготовить на облачных компьютерах. Формат образа типа коллекции: {publisher_offer_sku}. Поддерживаемые значения для каждого из параметров:<ul><li>publisher: Microsoftwindowsdesktop.</li> <li>предложение: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-m365 и 19h2-ent-cpc-os.</li></ul>|
 |imageDisplayName|String|Отображаемое имя подготавливаемого образа ОС.|
 |imageType|CloudPcProvisioningPolicyImageType|Тип образа ОС (настраиваемого или коллекции), который требуется подготовить на облачных компьютерах. Возможные значения: `gallery`, `custom`.|
-|windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Конкретные Windows настройки при создании облачных компьютеров для этой политики подготовки.|
+|windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Определенные параметры Windows, которые необходимо настроить при создании облачных компьютеров для этой политики подготовки.|
 
 ## <a name="response"></a>Отклик
 

@@ -1,22 +1,22 @@
 ---
-title: действие hasPayloadLinks
+title: Действие hasPayloadLinks
 description: Пока не задокументировано.
-author: rolyon
-ms.localizationpriority: medium
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1dcd3701ddbb204564d86b9b73163e1b86079845
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cdec0ca0cfbbedb062d0c5db6cc08f8be211e090
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59116243"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446023"
 ---
-# <a name="haspayloadlinks-action"></a>действие hasPayloadLinks
+# <a name="haspayloadlinks-action"></a>Действие hasPayloadLinks
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -30,7 +30,7 @@ ms.locfileid: "59116243"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/hasPayloadLinks
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,12 +55,12 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/hasPayloadLinks
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|payloadIds|Коллекция строк|Н/Д|
+|идентификаторы полезных данных|Коллекция строк|Н/Д|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успешного действия возвращается код ответа и `200 OK` [коллекция hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) в тексте ответа.
+В случае успешного выполнения это действие возвращает код `200 OK` отклика и коллекцию [hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

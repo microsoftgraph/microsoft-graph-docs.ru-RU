@@ -1,41 +1,41 @@
 ---
-title: Используйте API Поиск (Майкрософт) в Microsoft Graph для поиска пользовательских типов
-description: Вы можете использовать API Поиск (Майкрософт) для импорта внешних данных с помощью [ресурса externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) и запуска поисковых запросов на этом внешнем контенте.
+title: Использование API поиска (Майкрософт) для поиска пользовательских типов, импортированных с помощью соединителей
+description: Используйте API поиска (Майкрософт) в Microsoft Graph для поиска по внешнему содержимому, которое принимается и индексируются соединителями Microsoft Graph.
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 01a78191440f017aaa43600d9d15170bf96662b3
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 64a1733722afee9de1e5970389c275062b574e9d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671897"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437634"
 ---
-# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>Используйте API Поиск (Майкрософт) для поиска пользовательских типов, импортируемых с помощью соединителов Microsoft Graph
+# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>Использование API поиска (Майкрософт) для поиска пользовательских типов, импортированных с помощью соединителей Microsoft Graph
 
-Используйте API Поиск (Майкрософт) для поиска по контенту, который вошел и индексировали соединители [Microsoft Graph](/microsoftsearch/connectors-overview). Содержимое импортируется либо через встроенные [](https://www.microsoft.com/microsoft-search/connectors) соединители, предоставляемые Корпорацией Майкрософт, либо через настраиваемые соединители, [реализованные с помощью API](/graph/api/resources/indexing-api-overview) Graph соединителов Microsoft.
+Используйте API поиска (Майкрософт) в Microsoft Graph для поиска по внешнему содержимому, которое принимается и индексируются [соединителями Microsoft Graph](/microsoftsearch/connectors-overview). Содержимое импортируется либо через встроенные [](https://www.microsoft.com/microsoft-search/connectors) соединители, предоставляемые корпорацией Майкрософт, либо с помощью пользовательских соединителей, реализованных с помощью API приема соединителей [Microsoft Graph](/graph/api/resources/indexing-api-overview).
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-После импорта и индексации контента можно использовать API поиска для запроса контента.
+После импорта и индексирования содержимого можно использовать API поиска для запроса содержимого.
 
-Чтобы найти настраиваемые типы, укажите следующие свойства в теле запроса метода [запроса](/graph/api/search-query) :
+Чтобы найти пользовательские типы, укажите следующие свойства в тексте запроса [метода запроса](/graph/api/search-query) :
 
-- Свойство **contentSources** , чтобы включить ID подключения, задаваемое во время установки соединиттеля. Вы можете передать несколько ID-подключений для поиска по нескольким подключениям. Результаты возвращаются в одном списке, ранжировали по нескольким подключениям.
+- Свойство **contentSources** , которое включает идентификатор подключения, назначенный во время установки соединителя. Для поиска по нескольким подключениям можно передать несколько идентификаторов подключений. Результаты возвращаются в одном списке, ранжированных по нескольким подключениям.
 
 <!--
 TODOSEARCHAPI - Bug 1653398 
 -->
 
-- Свойство **entityTypes** как `externalItem`.
+- Свойство **entityTypes как** `externalItem`.
 
-- Свойство **полей** , чтобы включить поля во внешний элемент для получения. Обратите внимание, что если в запрос не  включены какие-либо поля, ответ будет содержать все поля, отмеченные  в схеме данных, указанной для указанных подключений в свойстве **contentSources**.
+- Свойство **полей** , которое включает поля во извлекаемом внешнем элементе. Обратите внимание, что если в запрос не  включены поля, ответ будет содержать все поля, помеченные как извлекаемые в схеме данных, указанной для указанных соединений в свойстве **contentSources**.
 
-Кроме того, можно агрегировать результаты поиска на основе свойств [в externalItem](/graph/api/resources/externalitem) , которые числимы или строки типа, и которые должны быть уточнены в [схеме](/graph/api/resources/schema). Дополнительные сведения см. в [дополнительных сведениях об уточнении результатов поиска с помощью агрегаций](search-concept-aggregation.md).
+Кроме того, можно агрегировать результаты поиска на основе свойств внешнего [](/graph/api/resources/externalitem) объекта, которые являются числовыми или строковыми типами, и для которых задано уточнение [в схеме](/graph/api/resources/schema). Дополнительные сведения см. в [статье "Уточнение результатов поиска с помощью агрегатов"](search-concept-aggregation.md).
 
-## <a name="example-1-retrieve-items-using-azure-sql-built-in-connector"></a>Пример 1. Извлечение элементов с помощью встроенного соединиттеля Azure SQL Azure
+## <a name="example-1-retrieve-items-using-azure-sql-built-in-connector"></a>Пример 1. Извлечение элементов Azure SQL встроенного соединителя
 
-В этом примере содержимое базы данных [AdventureWorks](/sql/samples/adventureworks-install-configure) было въехано с помощью встроенного соединиттеля Azure SQL Azure.
+В этом примере содержимое базы данных [AdventureWorks](/sql/samples/adventureworks-install-configure) принимается с помощью Azure SQL встроенного соединителя.
 
 ### <a name="request"></a>Запрос
 
@@ -236,7 +236,7 @@ Content-type: application/json
 }
 ```
 
-Дополнительные сведения см. в [материале Назначение меток свойств](/microsoftsearch/configure-connector#step-6-assign-property-labels).
+Дополнительные сведения см. в [разделе "Назначение меток свойств"](/microsoftsearch/configure-connector#step-6-assign-property-labels).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

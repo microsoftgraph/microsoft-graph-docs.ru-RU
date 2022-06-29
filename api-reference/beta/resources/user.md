@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 8a225554d15fb3095f04f28db3d57b659ada1d5d
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 532f09979042c126e08cf8ac93adc2acb3ac6d7c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820509"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439370"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -210,7 +210,7 @@ ms.locfileid: "65820509"
 | lastPasswordChangeDateTime | DateTimeOffset | Время последней смены пароля пользователем Azure AD или время создания его пароля (используется дата выполнения последнего действия). Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. <br><br>Возвращается только с помощью оператора `$select`.  |
 | legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | Используется корпоративными приложениями для определения юридической возрастной группы пользователя. Это свойство предназначено только для чтения. Вычисляется на основе свойств **ageGroup** и **consentProvidedForMinor**. Допустимые значения: `null`, `MinorWithOutParentalConsent`, `MinorWithParentalConsent`, `MinorNoParentalConsentRequired`, `NotAdult` и `Adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Возвращается только на `$select`. |
 | licenseAssignmentStates | Коллекция [licenseAssignmentState](licenseassignmentstate.md) | Состояние назначений лицензий для пользователя. Только для чтения.<br><br>Возвращается только с помощью оператора `$select`. |
-| почта; | String | SMTP-адрес пользователя, например `admin@contoso.com`. Изменение этого свойства также приведет к обновлению коллекции пользователя **proxyAddresses**, которая будет включать это значение как SMTP-адрес. Для учетных записей Azure AD B2C это свойство можно обновить до десяти раз, используя уникальные адреса протокола SMTP. Это свойство не может содержать диакритические знаки. <br><br> Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith` и `eq` по `null` значениям). |
+| почта; | String | SMTP-адрес пользователя, например `admin@contoso.com`. Изменение этого свойства также приведет к обновлению коллекции пользователя **proxyAddresses**, которая будет включать это значение как SMTP-адрес. Это свойство не может содержать диакритические знаки. <br/> **ЗАМЕТКА:** Не рекомендуется обновлять это свойство для профилей пользователей Azure AD B2C. Вместо этого используйте свойство **otherMails**. <br><br> Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith` и `eq` для значений `null`). |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | Параметры основного почтового ящика пользователя, выполнившего вход. Вы можете [получить](../api/user-get-mailboxsettings.md) или [обновить](../api/user-update-mailboxsettings.md) параметры языкового стандарта, часового пояса, отправки автоматических ответов на входящие сообщения. Дополнительные сведения см. в разделе [Пользовательские настройки языков и региональных форматов](#user-preferences-for-languages-and-regional-formats).<br><br>Возвращается только с помощью оператора `$select`. |
 | mailNickname | String | Псевдоним электронной почты пользователя. Это свойство должно быть указано при создании пользователя. Максимальная длина: 64 символа.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
 | mobilePhone | String | Основной сотовый телефон пользователя. "Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. <br><br> Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям).|

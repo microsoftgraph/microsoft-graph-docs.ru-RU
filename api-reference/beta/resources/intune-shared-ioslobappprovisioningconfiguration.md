@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса iosLobAppProvisioningConfiguration
 description: В этом разделе приводятся описания объявленных методов, свойств и связей, предоставляемых ресурсом конфигурации подготовки бизнес-приложений iOS.
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3143c19f87144e718b2e5db0dbdb84c24feb2f17
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: b755ab6a94bca06b2ba73f2d896dc3a382077b1e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899346"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439944"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>Тип ресурса iosLobAppProvisioningConfiguration
 
@@ -38,18 +38,18 @@ ms.locfileid: "65899346"
 ## <a name="properties"></a>Свойства
 | Свойство | Тип | Описание |
 | --- | --- | --- |
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |expirationDateTime|DateTimeOffset|Необязательная дата и время окончания срока действия профиля.|
 |payloadFileName|String|Имя файла полезных данных (*.mobileprovision) | *.xml).|
 |payload|Binary|Полезные данные (массив байтов в кодировке UTF8).|
-|Идентификаторы roleScopeTagId|Коллекция String|Список тегов области для этой сущности конфигурации подготовки бизнес-приложения iOS.|
+|Идентификаторы roleScopeTagId|Коллекция строк|Список тегов области для этой сущности конфигурации подготовки бизнес-приложения iOS.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |description|Строка|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|Строка|Указанное администратором имя конфигурации устройства.|
+|displayName|String|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |**Приложения**|

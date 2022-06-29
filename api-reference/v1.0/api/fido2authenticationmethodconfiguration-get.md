@@ -5,17 +5,17 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1f70f07e2c30e5d773e02ddf80eeeffa281fd8ce
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: 23b5ae12bd1cc4fddaf9c3df4a9fe30ff8ceaede
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65364772"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441650"
 ---
 # <a name="get-fido2authenticationmethodconfiguration"></a>Получение fido2AuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md), который представляет политику метода проверки подлинности ключей безопасности FIDO2 для Azure Active Directory (Azure AD).[](../resources/authenticationmethodspolicies-overview.md)
+Извлеките свойства и связи объекта [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md), который представляет политику метода проверки подлинности ключей безопасности FIDO2 для клиента Azure Active Directory (Azure AD).[](../resources/authenticationmethodspolicies-overview.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authen
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-fido2authenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-fido2authenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

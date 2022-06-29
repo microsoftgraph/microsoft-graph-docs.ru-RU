@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: fbeb47132aeb8711050127039f8329de2a692e97
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 7b42a7c0d4187c3f5a4c4e1998d9120d8b5f73bb
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62347291"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503217"
 ---
 ```powershell
 
@@ -18,6 +18,6 @@ $params = @{
     )
 }
 
-Get-MgCommunicationPresence -BodyParameter $params
+Get-MgCommunicationPresenceByUserId -BodyParameter $params
 
 ```

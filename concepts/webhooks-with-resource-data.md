@@ -4,12 +4,12 @@ description: Microsoft Graph использует механизм веб-пер
 author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
-ms.openlocfilehash: 9bbd29d374160fdd8c86b6bd34293ce7fe241e17
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: a842740ca0722580c32af5be84fbfd8c5b9d907d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65898828"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446044"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>Настройка уведомлений об изменениях, включающих данные ресурсов
 
@@ -57,7 +57,7 @@ Microsoft Graph позволяет приложениям подписывать
 - Новые или измененные события в почтовом ящике пользователя: `/users/{id}/events`
 - Новые или измененные сообщения в почтовом ящике пользователя: `/users/{id}/messages`
 - Новые или измененные сообщения в mailFolder пользователя: `/users/{id}/mailFolders/{id}/messages`
-- Обновления сведений о состоянии собрания Teams:`/communications/onlineMeetings/{meeting-id}`
+- Обновления сведений о состоянии собрания Teams:`/communications/onlineMeetings/?$filter=JoinWebUrl eq '{joinWebUrl}`
 
 Уведомления об изменениях, которые включают данные ресурса **chatMessage**, **onlineMeeting** или **presence**, содержат все свойства измененного экземпляра. Они не поддерживают возвращение только выбранных свойств экземпляра. 
 
@@ -609,3 +609,4 @@ decryptedPayload += decipher.final('utf8');
 - [Создание подписки](/graph/api/subscription-post-subscriptions)
 - [Обновление подписки](/graph/api/subscription-update)
 - [Уведомления об изменениях, связанных с ресурсами Outlook, в Microsoft Graph](outlook-change-notifications-overview.md)
+- [Уведомления об изменениях собраний по сети в Microsoft Graph](changenotifications-for-onlinemeeting.md) 

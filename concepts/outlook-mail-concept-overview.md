@@ -1,16 +1,16 @@
 ---
 title: Обзор API почты Outlook
-description: Outlook — это центр обмена сообщениями в Microsoft 365. Кроме того, с помощью Outlook можно управлять контактами, планировать собрания и искать информацию о пользователях в организации.
+description: Используйте почтовый API Outlook в Microsoft Graph для управления контактами, планирования собраний, инициирования бесед в сети, обмена файлами и совместной работы в группах.
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 93563ae4b2e8057bead0abe5fe1a76a51db29285
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: be2697d092bf08de57702bcd786c9a1b600e6cb0
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071870"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444343"
 ---
 # <a name="outlook-mail-api-overview"></a>Обзор API почты Outlook
 

@@ -1,16 +1,16 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: aa52f040f55f06a4af855dc00410d69ae2975408
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 6dba6fc6e0345d264143914072e75d03672d35da
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339033"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503141"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Groups
 
-Invoke-MgSubscribeGroup -GroupId $groupId
+Invoke-MgSubscribeGroupByMail -GroupId $groupId
 
 ```

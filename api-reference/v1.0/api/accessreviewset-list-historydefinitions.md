@@ -1,22 +1,22 @@
 ---
-title: Список historyDefinitions
-description: Получите список объектов accessReviewHistoryDefinition.
+title: Перечисление historyDefinitions
+description: Получение списка объектов accessReviewHistoryDefinition.
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b991b24b2d8b3c09c882c3e2087641c571e32d2b
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 9e2f44c8484b65e2980a70cb6041826656b8a078
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722998"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444096"
 ---
-# <a name="list-historydefinitions"></a>Список historyDefinitions
+# <a name="list-historydefinitions"></a>Перечисление historyDefinitions
 
 Пространство имен: microsoft.graph
 
-[Извлечение объектов accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md), созданных за последние 30 дней, включая все вложенные свойства.
+Извлеките [объекты accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) , созданные за последние 30 дней, включая все вложенные свойства.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "63722998"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|AccessReview.ReadWrite.All|
+|Приложение|AccessReview.ReadWrite.All|
 
-Если подписанный пользователь не является участником роли глобального каталога администратора или членом роли каталога global Reader, возвращаются только определения, созданные пользователем, который был создан для подписи.
+Если пользователь, выполнив вход, не является членом роли глобального Администратор каталога или роли каталога глобального читателя, возвращаются только определения, созданные пользователем, выполнившего вход.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,9 +43,9 @@ GET /identityGovernance/accessReviews/historyDefinitions
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры `$top`запросов , и `$filter``$expand``$skip` OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters). В том `?$expand=instances` числе будут [возвращены объекты accessReviewHistoryDefinitions](../resources/accessreviewhistorydefinition.md) вместе с связанными с ними экземплярами.
+Этот метод поддерживает параметры `$top``$filter`запроса , и `$skip` `$expand`OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters). Включение возвратит `?$expand=instances` [объекты accessReviewHistoryDefinitions](../resources/accessreviewhistorydefinition.md) вместе со связанными экземплярами.
 
-Размер страницы по умолчанию для этого API — 100 **объектов accessReviewHistoryDefinitions** . Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
+Размер страницы по умолчанию для этого API — 100 **объектов accessReviewHistoryDefinitions** . Чтобы повысить эффективность и избежать времени ожидания из-за больших результирующих наборов, примените разбиение на страницы с помощью `$skip` `$top` параметров запроса и параметров запроса. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -59,7 +59,7 @@ GET /identityGovernance/accessReviews/historyDefinitions
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы этот метод возвращает код отклика и коллекцию [объектов accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

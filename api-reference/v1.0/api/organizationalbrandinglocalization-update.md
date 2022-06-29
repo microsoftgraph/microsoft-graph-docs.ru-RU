@@ -5,17 +5,17 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4730f0deb6be24b65af91fe2b090f03c253be7d7
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 7a570b487862f19e43b92c76704945e7addb56db
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397948"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439230"
 ---
 # <a name="update-organizationalbrandinglocalization"></a>Обновление organizationalBrandingLocalization
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [организационнойbrandingLocalization](../resources/organizationalbrandinglocalization.md) для определенной локализации.
+Обновление свойств объекта [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) для определенной локализации.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "63397948"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Только типы данных Stream, включая **backgroundLogo** и **backgroundImage**, обновляются с помощью метода PUT. Чтобы обновить типы данных String, включая **signInPageText** и **usernameHintText**, используйте метод PATCH. В том же запросе нельзя обновлять типы потоков с другими типами данных.
+С помощью метода PUT обновляются только типы данных Stream, включая **backgroundLogo** и **backgroundImage**. Чтобы обновить строковые типы данных, включая **signInPageText** и **usernameHintText**, используйте метод PATCH. Нельзя обновить типы потоков с помощью других типов данных в том же запросе.
 
 <!-- {
   "blockType": "ignored"
@@ -53,12 +53,12 @@ PUT /organization/{organizationId}/branding/localizations/{organizationalBrandin
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| backgroundColor | String | Цвет, который будет отображаться на месте фонового изображения в подключениях с низкой пропускной способностью. Рекомендуется использовать основной цвет логотипа баннера или цвета организации. Укажите это в hexadecimal формате, например, белый .`#FFFFFF` |
-| backgroundImage | Stream | Изображение, которое отображается в качестве фона страницы регистрации. Допустимые типы PNG или JPEG не меньше 300 КБ и не более 1920 × 1080 пикселей. Меньшее изображение уменьшит требования к пропускной способности и сделает загрузку страницы быстрее. |
-| bannerLogo | Stream | Баннерная версия логотипа вашей компании, которая отображается на странице входного знака. Разрешенные типы PNG или JPEG не более 36 × 245 пикселей. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа. |
-| signInPageText | String | Текст, который отображается в нижней части окна для регистрации. С помощью этого можно сообщить дополнительные сведения, например номер телефона в службу поддержки или юридический отчет. Этот текст должен быть unicode и не превышать 1024 символов. |
-| squareLogo | Stream | Квадратная версия логотипа вашей компании, которая отображается в Windows 10 OOBE и когда Windows автопилот включен для развертывания. Разрешены типы PNG или JPEG размером не более 240 x 240 пикселей и размером не более 10 КБ. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа.|
-| usernameHintText | String | Строка, отображаемая в виде подсказки в текстовом ящике имени пользователя на экране входной записи. Этот текст должен быть юникодом без ссылок или кода и не может превышать 64 символов.|
+| backgroundColor | String | Цвет, который будет отображаться вместо фонового изображения в подключениях с низкой пропускной способностью. Рекомендуется использовать основной цвет логотипа баннера или цвета организации. Укажите это в шестнадцатеричном формате, например белый.`#FFFFFF` |
+| Backgroundimage | Stream | Изображение, отображаемое в качестве фона страницы входа. Допустимые типы: PNG или JPEG не меньше 300 КБ и не более 1920 × 1080 пикселей. Изображение меньшего размера уменьшит требования к пропускной способности и ускорит загрузку страницы. |
+| bannerLogo | Stream | Баннер с логотипом компании, который отображается на странице входа. Допустимые типы: PNG или JPEG размером не более 36 × 245 пикселей. Мы рекомендуем использовать прозрачное изображение без заполнения логотипа. |
+| signInPageText | String | Текст, отображаемый в нижней части поля входа. Его можно использовать для передачи дополнительных сведений, таких как номер телефона, в службу технической поддержки или в юридическое заявление. Этот текст должен быть в Юникоде и не должен превышать 1024 символа. |
+| squareLogo | Stream | Квадратная версия логотипа вашей компании, которая отображается Windows 10 при первом включении компьютера (OOBE) и когда Windows Autopilot включен для развертывания. Допустимые типы: PNG или JPEG размером не более 240 x 240 пикселей и размером не более 10 КБ. Мы рекомендуем использовать прозрачное изображение без заполнения логотипа.|
+| usernameHintText | String | Строка, отображаемая как подсказка в текстовом поле имени пользователя на экране входа. Этот текст должен быть Юникодом без ссылок или кода и не может превышать 64 символа.|
 
 ## <a name="response"></a>Отклик
 
@@ -157,6 +157,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-organizationalbrandinglocalization6-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-organizationalbrandinglocalization6-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -172,7 +176,7 @@ HTTP/1.1 204 No Content
 
 
 
-### <a name="example-3-override-a-default-branding-value-with-a-blank-string"></a>Пример 3. Переопределение значения брендинга по умолчанию с пустой строкой
+### <a name="example-3-override-a-default-branding-value-with-a-blank-string"></a>Пример 3. Переопределение значения фирменной символики по умолчанию пустой строкой
 
 #### <a name="request"></a>Запрос
 
@@ -213,6 +217,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-organizationalbrandinglocalization7-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-organizationalbrandinglocalization7-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -226,4 +234,4 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-После этого запроса имя пользователяHintText `fr-FR` для локализации будет пустым, а не наследуется значение от объекта брендинга по умолчанию.
+После выполнения этого запроса usernameHintText `fr-FR` для локализации будет пустым вместо наследования значения от объекта фирменной символики по умолчанию.

@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4dd9dfb9471d127d54bd27e644a296201f3501bf
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: ef36b47b1666010dedf59d384742544ee35ceca5
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65884113"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447109"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -47,7 +47,7 @@ ms.locfileid: "65884113"
 ```http
 HTTP/1.1 429 Too Many Requests
 Content-Type: application/json
-Retry-After: 2.128
+Retry-After: 10
 
 {
   "error": {
@@ -429,7 +429,7 @@ API-интерфейсы отчетов Azure AD регулируются, ко�
 
 ### <a name="excel-service-limits"></a>Ограничения службы Excel
 
-Объяснения и рекомендации, связанные с регулированием службы Excel, см. в разделе [Регулирование](workbook-best-practice.md#throttling). Кроме того, ниже приводится ряд ограничений регулирования.
+Объяснения и рекомендации, связанные с регулированием службы Excel, см. в статье [Уменьшение ошибок регулирования](workbook-best-practice.md#reduce-throttling-errors). Кроме того, ниже приведены некоторые ограничения регулирования.
   
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
 

@@ -1,20 +1,36 @@
 ---
 title: Значения перечисления
-description: Microsoft Graph перечислений.
+description: Значения перечисления Microsoft Graph.
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: abf5a95ccc6c19bcb656d84c9d6cf4d9891cbea6
-ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
+ms.openlocfilehash: 3a5c0c707ce2164dd335e36983ad4d55155fe56a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65420574"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445869"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
 Пространство имен: microsoft.graph
+
+### <a name="federatedidpmfabehavior-values"></a>Значения federatedIdpMfaBehavior
+|Member|
+|:---|
+|acceptIfMfaDoneByFederatedIdp|
+|enforceMfaByFederatedIdp|
+|rejectMfaByFederatedIdp|
+|unknownFutureValue|
+
+#### <a name="promptloginbehavior-values"></a>Значения promptLoginBehavior
+|Member|
+|:---|
+|translateToFreshPasswordAuthentication|
+|nativeSupport|
+|отключено|
+|unknownFutureValue|
 
 ### <a name="expirationpatterntype-values"></a>Значения expirationPatternType 
 
@@ -1046,7 +1062,7 @@ ms.locfileid: "65420574"
 |:---|
 |group|
 |unknownFutureValue|
-|Реестр|
+|состав|
 
 
 ### <a name="plannerpreviewtype-values"></a>Значения plannerPreviewType
@@ -1118,7 +1134,7 @@ ms.locfileid: "65420574"
 ### <a name="onenotesourceservice-values"></a>Значения onenoteSourceService
 | Member
 |:---------------------
-| Unknown
+| Неизвестно
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -1341,7 +1357,7 @@ ms.locfileid: "65420574"
 
 ### <a name="useraccountsecuritytype-values"></a>Значения userAccountSecurityType
 
-Возможные значения для типов учетных записей пользователей (членство в группах) в Windows определения.
+Возможные значения для типов учетных записей пользователей (членство в группах) для определения Windows.
 
 |Member|Member|Описание|
 |:---|:---|:---|
@@ -1469,7 +1485,7 @@ ms.locfileid: "65420574"
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| почта;   | 1     | Почтовая угроза.            |
+| mail;   | 1     | Почтовая угроза.            |
 | url    | 2     | Угроза URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -1486,7 +1502,7 @@ ms.locfileid: "65420574"
 |:-------------------|:------|:-------------------|
 | уверенности               | 1     | Угроза нежелательной почты.       |
 | степенью           | 2     | Фишинговая угроза.   |
-| вредоносная программа            | 3     | Угроза вредоносных программ.    |
+| malware            | 3     | Угроза вредоносных программ.    |
 | unknownFutureValue | 4     | Элемент sentinel. |
 
 ### <a name="threatassessmentstatus-values"></a>Значения threatAssessmentStatus
@@ -1517,8 +1533,8 @@ ms.locfileid: "65420574"
 | Элемент                | Значение | Описание                         |
 |:----------------------|:------|:------------------------------------|
 | Нет                  | 0     | Пока не известно.                       |
-| mailFlowRule          | 1     | Exchange правила транспорта.            |
-| safeSender            | 2     | Сейф отправителя.                   |
+| mailFlowRule          | 1     | Правило транспорта Exchange.            |
+| safeSender            | 2     | Список надежных отправителей.                   |
 | blockedSender         | 3     | Список заблокированных отправителей.                |
 | advancedSpamFiltering | 4     | Расширенный параметр фильтрации нежелательной почты.     |
 | domainAllowList       | 5     | Список разрешений домена отправителя.           |
@@ -1537,7 +1553,7 @@ ms.locfileid: "65420574"
 
 | Значение |
 |:-----------------|
-| message |
+| сообщение |
 | chatEvent |
 | Ввода |
 | unknownFutureValue |
@@ -1756,7 +1772,7 @@ ms.locfileid: "65420574"
 |:----------------------|
 | Builtin               |
 | Пользовательские                |
-| Обязательный              |
+| обязательно              |
 | unknownFutureValue    |
 
 ### <a name="identityuserflowattributeinputtype-values"></a>Значения identityUserFlowAttributeInputType
@@ -1847,7 +1863,7 @@ ms.locfileid: "65420574"
 |Member|
 |:---|
 |team|
-|Канал|
+|channel|
 |чат|
 |unknownFutureValue|
 

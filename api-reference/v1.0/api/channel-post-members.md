@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: c6ea35bfef3de2d51f0c374e3b4a2f1f67cef3ea
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: 1b89fd05d8abe2deb3b928afcff8967d20031962
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917761"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442437"
 ---
 # <a name="add-member-to-channel"></a>Добавление участника в канал
 
@@ -48,7 +48,7 @@ POST /teams/{team-id}/channels/{channel-id}/members
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |roles|Коллекция строк|Роль пользователя. Должен быть или `owner` пустым.|
-|пользователь|[user](../resources/user.md)|Пользователь, добавляемого в канал.|
+|пользователь;|[user](../resources/user.md)|Пользователь, добавляемого в канал.|
 
 ## <a name="response"></a>Отклик
 

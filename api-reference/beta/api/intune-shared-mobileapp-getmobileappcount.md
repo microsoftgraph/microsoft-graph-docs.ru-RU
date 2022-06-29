@@ -1,22 +1,22 @@
 ---
-title: функция getMobileAppCount
+title: Функция getMobileAppCount
 description: Пока не задокументировано.
-author: rolyon
-ms.localizationpriority: medium
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d23efe9372aeba67fd2e4eedf6ef34c6b20eb716
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ac6792542831ec739259c0f24e11aa7b278103c6
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017747"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446955"
 ---
-# <a name="getmobileappcount-function"></a>функция getMobileAppCount
+# <a name="getmobileappcount-function"></a>Функция getMobileAppCount
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -30,7 +30,7 @@ ms.locfileid: "59017747"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -59,7 +59,7 @@ GET /deviceAppManagement/mobileApps/getMobileAppCount
 
 
 ## <a name="response"></a>Ответ
-В случае успешной работы эта функция возвращает код `200 OK` отклика и int64 в тексте ответа.
+В случае успешного выполнения эта функция возвращает код `200 OK` отклика и int64 в тексте отклика.
 
 ## <a name="example"></a>Пример
 

@@ -1,23 +1,23 @@
 ---
 title: Создание organizationalBrandingLocalization
-description: Создайте новый объект organizationalBrandingLocalization.
+description: Создайте объект organizationalBrandingLocalization.
 author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 387bfa83159675f8fc8e144fa3825c13aa964e71
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 8a2bba2591aefa4bc5dfd5821f8358af66e82dc3
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396576"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439256"
 ---
 # <a name="create-organizationalbrandinglocalization"></a>Создание organizationalBrandingLocalization
 Пространство имен: microsoft.graph
 
-Создайте новый [объект organizationalBrandingLocalization](../resources/organizationalBrandingLocalization.md) . Это создает локализованный брендинг, и в то же время, по умолчанию, брендинг, если он не существует.
+Создайте объект [organizationalBrandingLocalization](../resources/organizationalBrandingLocalization.md) . При этом создается локализованная фирменная символика, а в то же время — фирменная символика по умолчанию, если она не существует.
 
-Брендинг по умолчанию создается только один раз. Он загружается, когда локализованная торговая марка не настроена на язык браузера пользователя. Чтобы получить брендинг по умолчанию, см. [в ленте Get branding](organizationalbranding-get.md).
+Фирменная символика по умолчанию создается только один раз. Он загружается, если локализованная фирменная символика не настроена для языка браузера пользователя. Сведения о том, как получить фирменную символику по умолчанию, см. [в разделе "Получение фирменной символики"](organizationalbranding-get.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "63396576"
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
-Этот запрос создает новый брендинг локализации и брендинг по умолчанию, если он еще не существует. 
+Этот запрос создает новую фирменную символику локализации и фирменную символику по умолчанию, если она еще не существует. 
 <!-- {
   "blockType": "ignored"
 }
@@ -44,21 +44,21 @@ POST /organization/{organizationId}/branding/localizations
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В следующей таблице показаны свойства, необходимые при создании объекта [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) .
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| id | String | Идентификатор, который представляет указанный локальный код с использованием имен культуры. Имена культур следуют стандарту RFC 1766 в формате "languagecode2-country/regioncode2", где "languagecode2" — это код из двух букв более низкого уровня, полученный из ISO 639-1, а "country/regioncode2" — это код с двумя буквами верхнего уровня, полученный из ISO 3166. Например, американский английский язык `en-US`. Вы не можете создать брендинг по умолчанию, задав значение **id** типам String или `0` `default`.  <br/><br/>**ПРИМЕЧАНИЕ:** Несколько фирменных окей для одного локального уровня в настоящее время не поддерживаются. |
+| id | String | Идентификатор, представляющий языковой стандарт, указанный с использованием имен языков и региональных параметров. Имена языков и региональных параметров соответствуют стандарту RFC 1766 в формате languagecode2-country/regioncode2, где "languagecode2" — это двухбуквенный двухбуквенный код в нижнем регистре, производный от ISO 639-1, а "country/regioncode2" — это двухбуквенный код в верхнем регистре, производный от ISO 3166. Например, английский (США) — `en-US`. Вы не можете создать фирменную символику по умолчанию, заключив значение **идентификатора** в строковые типы или `0` `default`.  <br/><br/>**ПРИМЕЧАНИЕ:** Несколько фирменной символики для одного языкового стандарта в настоящее время не поддерживаются. |
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код `201 Created` ответа и объект [организационнойbrandingLocalization](../resources/organizationalbrandinglocalization.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-В следующем примере создается локализация бренда для французской (`fr-FR`) локализации. Все неустановленные свойства типа String наследуются от значения в объекте брендинга по умолчанию. Например, если знак SignInPageText `null`в объекте брендинга по умолчанию есть, то знакInPageText `fr-FR` для фирменни, созданной в этом запросе, также будет `null`. Чтобы переопредить `null` значение без текста, используйте строку, содержащую только белое пространство.
+В следующем примере создается локализация фирменной символики для локализации на французском языке (`fr-FR`). Все неуказанные свойства типа String наследуются от значения в объекте фирменной символики по умолчанию. Например, если signInPageText `null`в объекте фирменной символики по умолчанию имеет значение signInPageText `fr-FR` для фирменной символики, созданной в этом запросе, также будет иметь значение `null`. Чтобы переопределить значение `null` без текста, используйте строку, содержащую только пробелы.
 
 ### <a name="request"></a>Запрос
 
@@ -100,13 +100,17 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-organizationalbrandinglocalization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-organizationalbrandinglocalization-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

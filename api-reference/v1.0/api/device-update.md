@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 183155c31a69c0f669d4bafcaa19cb0a6fa78ee4
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: cd3d239a8b49c9a2017de005d42f9d52fc334dfa
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821136"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443013"
 ---
 # <a name="update-device"></a>Обновление устройства
 
@@ -57,9 +57,9 @@ PATCH /devices/{id}
 |accountEnabled|Логический| Если учетная запись обеспечена — `true`, в противном случае — `false`. Обновить это *свойство могут только* вызывающие *объекты* с ролями глобального администратора и администратора облачных устройств.|
 |operatingSystem|String|Тип операционной системы на устройстве.|
 |operatingSystemVersion|String|Версия операционной системы на устройстве.|
-|displayName|Строка|Отображаемое имя устройства.|
-|isCompliant|Boolean|`true` if the device complies with Mobile Device Management (MDM) policies; otherwise, `false`. Его можно обновить только Intune для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows ОС. |
-|isManaged|Boolean|`true`Значение , если устройство управляется мобильным приложением Управление устройствами (MDM); в противном случае — значение `false`. Его можно обновить только Intune для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows ОС. |
+|displayName|String|Отображаемое имя устройства.|
+|isCompliant|Boolean|`true` if the device complies with Mobile Device Management (MDM) policies; otherwise, `false`. Его можно обновить только Intune для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для устройств ОС Windows. |
+|isManaged|Boolean|`true`Значение , если устройство управляется мобильным приложением Управление устройствами (MDM); в противном случае — значение `false`. Его можно обновить только Intune для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для устройств ОС Windows. |
 
 ## <a name="response"></a>Отклик
 

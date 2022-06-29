@@ -1,16 +1,16 @@
 ---
 title: Перечисление параметров
-description: Извлечение списка объектов настройки каталогов.
+description: Получение списка объектов параметров каталога.
 author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4fec8f2b463499bc75ca07243c13fe8fc6ace387
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: ca7159d989bb7f006f9af42eec7922a3b029c508
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63670315"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446562"
 ---
 # <a name="list-settings"></a>Перечисление параметров
 
@@ -18,12 +18,12 @@ ms.locfileid: "63670315"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка объектов параметров групп на уровне клиента или групп.
+Получение списка объектов параметров группы на уровне клиента или группы.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-### <a name="list-tenant-wide-settings"></a>Список параметров для всех клиентов
+### <a name="list-tenant-wide-settings"></a>Вывод списка параметров на уровне клиента
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -31,23 +31,23 @@ ms.locfileid: "63670315"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
-### <a name="list-group-specific-settings"></a>Список параметров, определенных для группы
+### <a name="list-group-specific-settings"></a>Перечисление параметров для конкретной группы
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.Read.All, Group.ReadWrite.All  |
+|Приложение | Group.Read.All, Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
-Список параметров клиента или группы
+Вывод списка параметров на уровне клиента или группы
 ```http
 GET /settings
 ```
 
 <!-- { "blockType": "ignored" } -->
-Список параметров, определенных для группы
+Перечисление параметров для конкретной группы
 ```http
 GET /groups/{groupId}/settings
 ```
@@ -65,7 +65,7 @@ GET /groups/{groupId}/settings
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию [объектов directorySetting](../resources/directorysetting.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [directorySetting](../resources/directorysetting.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/settings
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -127,6 +127,10 @@ Content-type: application/json
       "displayName": "Group.Unified",
       "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
       "values": [
+        {
+          "name": "NewUnifiedGroupWritebackDefault",
+          "value": "false"
+        },
         {
           "name": "EnableMIPLabels",
           "value": "true"

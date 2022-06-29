@@ -1,22 +1,22 @@
 ---
 title: Добавление externalSponsors
-description: Добавьте пользователя или группу к внешним спонсорам подключенной организации.
+description: Добавьте пользователя или группу во внешних спонсоров подключенной организации.
 author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f8e8c21346c95a2647cc58451d4778ba9df5a681
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: ef4741b9ca77dd51519ad4c4c49bb846820cb631
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61346269"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437817"
 ---
 # <a name="add-externalsponsors"></a>Добавление externalSponsors
 
 Пространство имен: microsoft.graph
 
-Добавьте пользователя или группу к внешним спонсорам подключенной организации. Внешние [спонсоры](../resources/externalsponsors.md) — это набор пользователей, которые могут утверждать запросы от имени других пользователей из этой связанной организации.
+Добавьте пользователя или группу во внешних спонсоров подключенной организации. [Внешние спонсоры](../resources/externalsponsors.md) — это набор пользователей, которые могут утверждать запросы от имени других пользователей из этой подключенной организации.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -25,7 +25,7 @@ ms.locfileid: "61346269"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | EntitlementManagement.ReadWrite.All |
+|Для приложений | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,8 +39,8 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations/{id}/exter
 | Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса в качестве свойства с [](../resources/user.md) полным [](../resources/group.md) URI пользователя или группы необходимо предоставить представление JSON ссылки на добавленный объект пользователя или `@odata.id` группы.
+## <a name="request-body"></a>Основной текст запроса
+В тексте запроса добавьте В формате JSON ссылку на добавляемый объект [](../resources/group.md) пользователя или группы в `@odata.id` качестве свойства с полным универсальным кодом ресурса (URI) пользователя или группы.[](../resources/user.md)
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
@@ -86,12 +86,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-externalsponsor-from-connectedorganization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalsponsor-from-connectedorganization-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"

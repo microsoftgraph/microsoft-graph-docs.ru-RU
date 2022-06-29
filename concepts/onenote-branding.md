@@ -1,17 +1,17 @@
 ---
-title: 'Правила использования фирменной символики для разработчиков API OneNote '
-description: " "
+title: Правила использования фирменной символики для разработчиков API OneNote
+description: Интегрируйте фирменную символику OneNote в свой продукт для удовлетворения требований к фирменной символике. Содержит рекомендации по логотипам, размеру, цвету и ссылке на имя OneNote.
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: 9054db1303c0cbe82eb868ebc1c7de6a7f4b17a4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 040029e348f6ab1f438de167e171cc2e76dfee3d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066928"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442859"
 ---
-# <a name="branding-guidelines-for-onenote-api-developers"></a>Правила использования фирменной символики для разработчиков API OneNote 
+# <a name="branding-guidelines-for-onenote-api-developers"></a>Правила использования фирменной символики для разработчиков API OneNote
  
 **Область применения**: пользовательские записные книжки в OneDrive | корпоративные записные книжки в Microsoft 365
 
@@ -58,7 +58,7 @@ ms.locfileid: "59066928"
  
 **Печать:**&nbsp;&nbsp;5 мм (0,2 дюйма) 
 
-![Логотип, показывающий минимальный размер экрана и печати](images/onenotelogominsize.png)
+![Логотип с минимальным размером экрана и печати](images/onenotelogominsize.png)
 
 
 <a name="color"></a>
@@ -71,7 +71,7 @@ ms.locfileid: "59066928"
 
 **Печать:**&nbsp;&nbsp;C75 M100 Y0 K0 
 
-  ![Логотип shwoing предпочтительный цвет бренда с белым и фирменным фоном цвета](images/onenotelogobgs.png)
+  ![Логотип с изображением предпочтительного цвета торговой марки с белым цветом и фоном цвета торговой марки](images/onenotelogobgs.png)
  
 В цветовой среде с ограниченным набором цветов логотип может отображаться черным цветом. Однако логотип никогда не должен быть серым.
 <!--or white?-->

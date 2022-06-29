@@ -486,7 +486,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Заметки
+          - name: Примечания
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -513,10 +513,10 @@ items:
                     href: api/user-get-mailboxsettings.md
                   - name: Обновление параметров почтового ящика
                     href: api/user-update-mailboxsettings.md
-              - name: Outlook пользовательских служб
+              - name: Службы пользователей Outlook
                 expanded: true
                 items:
-                  - name: Outlook пользователя
+                  - name: Пользователь Outlook
                     href: resources/outlookuser.md
                   - name: Создание категории
                     href: api/outlookuser-post-mastercategories.md
@@ -4254,7 +4254,7 @@ items:
                     href: resources/intune-shared-alldevicesassignmenttarget.md
                   - name: Объект назначения всех лицензированных пользователей
                     href: resources/intune-shared-alllicensedusersassignmenttarget.md
-                  - name: Android корпоративный всегда на типе пакета VPN
+                  - name: Тип пакета VPN для Android enterprise always on
                     href: resources/intune-shared-androidenterprisealwaysonvpnpackagetype.md
                   - name: Состояние соответствия
                     href: resources/intune-shared-compliancestatus.md
@@ -5225,6 +5225,18 @@ items:
                         href: api/samlorwsfedexternaldomainfederation-list-domains.md
                       - name: Создание externalDomainName
                         href: api/samlorwsfedexternaldomainfederation-post-domains.md
+                  - name: Федерация с Azure AD
+                    items:
+                      - name: Конфигурация федеративного домена
+                        href: resources/internaldomainfederation.md
+                      - name: Получение
+                        href: api/internaldomainfederation-get.md
+                      - name: Создание
+                        href: api/domain-post-federationconfiguration.md
+                      - name: Обновление
+                        href: api/internaldomainfederation-update.md
+                      - name: Delete
+                        href: api/internaldomainfederation-delete.md
               - name: Поставщик удостоверений (не рекомендуется)
                 items:
                   - name: Тип поставщика удостоверений
@@ -5311,7 +5323,7 @@ items:
                             href: api/fido2authenticationmethodconfiguration-update.md
                           - name: Delete
                             href: api/fido2authenticationmethodconfiguration-delete.md
-                      - name: Microsoft Authenticator политики
+                      - name: Политика Microsoft Authenticator
                         href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: Получение
@@ -5939,7 +5951,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Заметки
+      - name: Примечания
         displayName: OneNote
         items:
           - name: Обзор
@@ -6166,7 +6178,7 @@ items:
                 items:
                   - name: Подготовка списка
                     href: api/provisioningobjectsummary-list.md
-          - name: Microsoft 365 отчетов об использовании
+          - name: Отчеты об использовании Microsoft 365
             items:
               - name: Обзор
                 href: resources/report.md

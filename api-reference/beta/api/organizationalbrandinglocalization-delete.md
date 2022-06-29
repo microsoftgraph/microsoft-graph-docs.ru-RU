@@ -5,19 +5,19 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 33717671720915eccdcfdb80ad8f1d7f7564e5f7
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 28913b30795f0c9cc21562abcb2a959278307914
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63398060"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439000"
 ---
 # <a name="delete-organizationalbrandinglocalization"></a>Удаление organizationalBrandingLocalization
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта локализованного брендинга. Чтобы удалить [объект organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) , все изображения (типы потока) сначала должны быть удалены из объекта.
+Удаление локализованного объекта фирменной символики. Чтобы удалить [объект organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) , сначала необходимо удалить из объекта все образы (типы Stream).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -54,7 +54,7 @@ DELETE /organization/{organizationId}/branding/localizations/{organizationalBran
 
 ### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса на удаление `fr-FR` объекта локализации.
+Ниже приведен пример запроса на удаление объекта `fr-FR` локализации.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-organizationalbrandinglocalization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-organizationalbrandinglocalization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

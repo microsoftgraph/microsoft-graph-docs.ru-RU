@@ -5,19 +5,19 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: dd1f496cb5f4d6761f14f530cff997fbc3a1792c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 91d360c4dc47a223aadf1c62e5dea3542e119d92
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098267"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446338"
 ---
 # <a name="update-accesspackage"></a>Обновление accessPackage
 
 Пространство имен: microsoft.graph
 
 
-Обновим [существующий объект accessPackage,](../resources/accesspackage.md) чтобы изменить одно или несколько его свойств, например имя или описание отображения.
+Обновите [существующий объект accessPackage](../resources/accesspackage.md) , чтобы изменить одно или несколько его свойств, например отображаемое имя или описание.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -50,9 +50,9 @@ PATCH /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя пакета доступа.|
+|displayName|String|Имя пакета доступа.|
 |description|String|Описание пакета доступа.|
-|isHidden|Логический|Скрыт ли пакет доступа от запросителя.|
+|isHidden|Логический|Указывает, скрыт ли пакет доступа от инициатора запроса.|
 
 
 

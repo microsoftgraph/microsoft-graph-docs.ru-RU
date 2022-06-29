@@ -1,15 +1,15 @@
 ---
 title: Отправка документов с помощью API универсальной печати Microsoft Graph
-description: Представляем универсальную печать — современное решение печати, которое можно использовать в организациях для управления инфраструктурой печати через облачные службы Майкрософт.
+description: Используйте универсальный API печати в Microsoft Graph, чтобы создать задание на печать, загрузить документ и запустить задание на печать. На этой странице описано, как загрузить документ.
 author: nilakhan
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 36dd113e02e15822f9a64b04da390d5a87cae867
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: f4b373c7da760277dff390ca1ea491aa9117d354
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133106"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447060"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>Отправка документов с помощью API универсальной печати Microsoft Graph
 
@@ -19,17 +19,19 @@ ms.locfileid: "65133106"
 
 Сегменты файла можно отправлять в любом порядке, в том числе параллельно (до четырех параллельных запросов). После отправки всех двоичных сегментов документа двоичный файл связывается с **printDocument**.
 
-## <a name="http-request"></a>HTTP-запрос
+## <a name="upload-a-file"></a>Отправка файла
+
+### <a name="request"></a>Запрос
 
 Отправьте запрос PUT на адрес **uploadUrl**, указанный в ответе для **createUploadSession**.
 
-### <a name="request-headers"></a>Заголовки запросов
+#### <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание   |
 |:--------------|:--------------|
 | Content-Range | Диапазон байтов: {startByteIndex}-{endByteIndex}‬/{documentSizeInBytes}. Обязательно.|
 | Content-Length | {contentLength}‬ обязательно.|
 
-### <a name="request-body"></a>Текст запроса
+#### <a name="request-body"></a>Текст запроса
 Текст запроса — это большой двоичный объект, содержащий байты документа, указанные как **инклюзивный** диапазон байтов, в заголовке `Content-Range`. 
 
 ### <a name="example"></a>Пример
@@ -44,7 +46,8 @@ Content-Length: 72797
 ```
 
 Здесь 0 и 72796 — это индексы начала и окончания сегмента файла, а 4533322 — размер документа.
-## <a name="http-response"></a>HTTP-ответ
+
+### <a name="response"></a>Ответ
 
 После выполнения запроса сервер отправит в ответ код `202 Accepted`, если требуется отправить дополнительные диапазоны байтов.
 
@@ -82,7 +85,7 @@ Content-Type: application/json
 * При сбоях в тех случаях, когда клиент отправляет файл, уже полученный сервером, сервер возвращает отклик `HTTP 416 Requested Range Not Satisfiable`. Вы можете [запросить состояние отправки](#get-the-upload-session), чтобы получить более подробный список недостающих диапазонов.
 * Включение заголовка `Authorizatio`n при вызове `PUT` может привести к ответу `HTTP 401 Unauthorized`. Заголовок авторизации и маркер носителя необходимо отправлять только при создании сеанса отправки. Их не следует включать при отправке данных для сеанса отправки.
 
-## <a name="completing-a-file"></a>Завершение отправки файла
+## <a name="complete-a-file-upload"></a>Завершить загрузку файла
 
 После получения последнего диапазона байтов файла сервер отправляет ответ `HTTP 201 Created`. Текст ответа также будет включать набор свойств для связанного **printDocument**.
 
@@ -139,8 +142,9 @@ Content-Type: application/json
   ]
 }
 ```
+
 ## <a name="code-examples-create-upload-session-and-upload-documents"></a>Примеры кода: создание сеанса отправки и отправка документов
- 
+
 # <a name="c"></a>[C#](#tab/csharp)
 
 ```csharp
