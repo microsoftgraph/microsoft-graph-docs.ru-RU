@@ -1,28 +1,25 @@
 ---
-title: Получение системных сообщений для Microsoft Teams с помощью API Microsoft Graph
-description: Узнайте, как Microsoft Teams создает системные сообщения для событий с помощью API Microsoft Graph.
+title: Получение системных сообщений для Microsoft Teams
+description: Microsoft Teams генерирует события системных сообщений с помощью API Microsoft Graph. Сведения о поддерживаемых операциях GET, уведомлениях об изменениях и событиях системных сообщений.
 author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b6a953acbd906a56d87df211209c52c432b79fae
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: 9ee7c96aa139437e250943cdc19146e32aab4235
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118321"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555585"
 ---
-# <a name="get-system-messages-for-microsoft-teams-using-microsoft-graph-apis"></a>Получение системных сообщений для Microsoft Teams с помощью API Microsoft Graph
+# <a name="get-system-messages-for-microsoft-teams"></a>Получение системных сообщений для Microsoft Teams
 
-Microsoft Teams создает системные сообщения для событий, таких как добавление участников в чат, обновление имени команды и обновление описания канала. Системные сообщения позволяют звонящему получить аналитику событий, произошедших в команде, канале или чате.
+Microsoft Teams создает системные сообщения для событий с помощью API Microsoft Graph. События включают в себя добавление участников в чат, обновление названия команды и обновление описания канала. Системные сообщения позволяют звонящему получить аналитику событий, произошедших в команде, канале или чате.
 
+Microsoft Graph предоставляет системные сообщения в рамках операций GET [chatMessage](/graph/api/resources/chatMessage) и [уведомлений об изменениях для чата и сообщений канала](teams-changenotifications-chatmessage.md).
 
-Microsoft Graph предоставляет системные сообщения в рамках операций GET [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true) и [уведомлений об изменениях для чата и сообщений канала](teams-changenotifications-chatmessage.md).
-
-
-Системные сообщения представлены как объекты [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true).
+Системные сообщения представлены как объекты [chatMessage](/graph/api/resources/chatMessage).
 В этом случае для свойства **messageType** задается значение `systemEventMessage`, а свойство **eventDetail** предоставляет сведения о событии.
-
 
 ## <a name="supported-get-operations"></a>Поддерживаемые операции GET
 
@@ -33,7 +30,7 @@ Microsoft Graph предоставляет системные сообщения
 - GET /chats/{chat-id}/messages
 - GET /chats/{chat-id}/messages/{message-id}
 
-Дополнительные сведения см. в статье [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true).
+Дополнительные сведения см. в статье [chatMessage](/graph/api/resources/chatMessage).
 
 ## <a name="supported-change-notifications"></a>Поддерживаемые уведомления об изменениях
 
@@ -80,8 +77,8 @@ Microsoft Graph предоставляет системные сообщения
 | Приложение Teams обновлено | [teamsAppUpgradedEventMessageDetail](#teams-app-upgraded) | Чат, канал, команда |
 | Архивация команды отменена | [teamUnarchivedEventMessageDetail](#team-unarchived) | Команда |
 
-
-> **Примечание.** Системные сообщения, применимые к команде, публикуются в основном канале.
+> [!NOTE]
+> Системные сообщения, применимые к команде, публикуются в основном канале.
 
 
 ## <a name="json-response-examples"></a>Примеры ответа JSON
@@ -1571,3 +1568,7 @@ Microsoft Graph предоставляет системные сообщения
   }
 }
 ```
+
+## <a name="see-also"></a>См. также
+
+- [Обзор API Microsoft Teams](/graph/teams-concept-overview)

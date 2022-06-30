@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Прочитайте о самых важных новых возможностях Microsoft Graph за последние два месяца, о том, что было добавлено в более ранних выпусках, и о том, как делиться идеями.
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 9faaf3d0db85a040bbb65b21896819dfb59e1ee4
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 56b50679f230dfc3dd656baf4fdb9bd9a4220b6e
+ms.sourcegitcommit: 175dda9b51aaa94fa00d0e4b7101c771b6315f05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66444231"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66557162"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -25,6 +25,7 @@ ms.locfileid: "66444231"
 ### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
 - [Перечисление административных единиц](/graph/api/device-list-memberOf), в состав которых входит [устройство](/graph/api/resources/device).
 - Управление устройствами в качестве участников [административной единицы](/graph/api/resources/administrativeunit): [перечисление участников](/graph/api/administrativeunit-list-members), включая устройства; [получение](/graph/api/administrativeunit-get-members), [добавление](/graph/api/administrativeunit-post-members) и [удаление](/graph/api/administrativeunit-delete-members) устройства в качестве участника. 
+- [Получите](/graph/api/application-get) статус и другие сведения о [безопасности и сертификации](/graph/api/resources/certification) [приложения](/graph/api/resources/application) для защиты данных клиентов. Дополнительные сведения см. в разделе [Сертификация Microsoft 365](/microsoft-365-app-certification/docs/enterprise-app-certification-guide).
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
  Настройка [параметров политики методов проверки подлинности с временным паролем доступа](/graph/api/resources/temporaryAccessPassAuthenticationMethodConfiguration) в вашем клиенте и управление этими параметрами.
@@ -53,12 +54,16 @@ ms.locfileid: "66444231"
 ### <a name="compliance--ediscovery"></a>Соответствие требованиям | Обнаружение электронных данных
 Доступ к [API обнаружения электронных данных](/graph/api/resources/security-ediscoverycase?view=graph-rest-beta&preserve-view=true) теперь осуществляется из пространства имен [security](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true) вместо пространства имен "compliance".
 
+### <a name="device-and-app-management--multi-tenant-management"></a>Управление устройствами и приложениями | Управление несколькими клиентами
+[Получите](/graph/api/managedtenants-managedtenant-list-myroles?view=graph-rest-beta&preserve-view=true) набор [ролей, назначенных пользователю, вошедшему в ](/graph/api/resources/managedtenants-myRole?view=graph-rest-beta&preserve-view=true)[управляемый клиент](/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta&preserve-view=true).
+
 ### <a name="education"></a>Образование
 - [Создание](/graph/api/educationassignment-setupfeedbackresourcesfolder?view=graph-rest-beta&preserve-view=true) папки SharePoint для [задания](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) для отправки документов с отзывами.
 - [Создание](/graph/api/educationfeedbackresourceoutcome-post-outcomes?view=graph-rest-beta&preserve-view=true) [документа с отзывами](/graph/api/resources/educationFeedbackResourceOutcome?view=graph-rest-beta&preserve-view=true) для [отправки](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true) в папке отзывов, связанной с заданием.
 
 ### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
-[Повышение](/graph/api/domain-promote?view=graph-rest-beta&preserve-view=true) уровня проверенного поддомена до корневого домена.
+- [Повышение](/graph/api/domain-promote?view=graph-rest-beta&preserve-view=true) уровня проверенного поддомена до корневого домена.
+- [Получите](/graph/api/application-get?view=graph-rest-beta&preserve-view=true) URL-адрес метаданных SAML для объединения одноклиентского [приложения](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 Скрытие ссылок самостоятельного сброса пароля (SSPR) в [параметрах видимости текста страницы входа](/graph/api/resources/loginpagetextvisibilitysettings?view=graph-rest-beta&preserve-view=true) для страницы входа клиента.

@@ -1,32 +1,38 @@
 ---
 title: Перечисление всех команд в Microsoft Teams для организации
-description: 'Чтобы перечислить все команды '
+description: Используйте API Microsoft Teams в Microsoft Graph, чтобы составить список всех команд в организации, найдя все группы, в которых есть команды, и получив сведения для каждой команды.
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6a1c4a19900263460bdd1f282cd87aee45ec7af7
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: 955d55d521d1dda3ace17943261477020f2fb935
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118531"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556145"
 ---
 # <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>Перечисление всех команд в Microsoft Teams для организации
 
-Чтобы перечислить все [команды](/graph/api/resources/team?view=graph-rest-1.0&preserve-view=true) в организации (клиенте), найдите все группы с командами, а затем получите сведения для каждой команды.
+Чтобы использовать API Microsoft Teams в Microsoft Graph для получения списка всех [команд](/graph/api/resources/team) в организации (клиенте), вы найдете все группы, в которых есть команды, а затем получите сведения для каждой команды.
 
 ## <a name="get-a-list-of-groups"></a>Получение списка групп
 
-#### <a name="example-1-get-list-of-groups-that-contain-a-team"></a>Пример 1. Получение списка групп, содержащих команду
-Чтобы получить список всех [групп](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) в организации, содержащих команды, получите [список всех групп](/graph/api/group-list?view=graph-rest-1.0&preserve-view=true) и затем в коде найдите нужные, имеющие свойство **resourceProvisioningOptions** со значением "Team".
+### <a name="example-1-get-a-list-of-groups-that-contain-a-team"></a>Пример 1. Получение списка групп, содержащих команду
+
+Чтобы получить список всех [групп](/graph/api/resources/group) в организации, у которых есть команды, получите [список всех групп](/graph/api/group-list), а затем в коде найдите те, у которых есть свойство **resourceProvisioningOptions**, содержащее "Team".
 
 Используйте API с `$filter` для возврата только тех групп, в которых есть команды.
+
+#### <a name="request"></a>Запрос
 
 ```http
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
-> **Примечание**. У некоторых неиспользуемых старых групп не задано значение свойства **resourceProvisioningOptions**. Дополнительные сведения см. в статье [Известные проблемы](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
+> [!NOTE]
+> Для некоторых неиспользуемых старых команд не будет установлен параметр **resourceProvisioningOptions**. Дополнительные сведения см. в статье [Известные проблемы](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
+
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа. 
 
@@ -75,16 +81,22 @@ Content-type: application/json
 }
 ```
 
-#### <a name="example-2-get-list-of-groups-by-selecting-required-properties-only"></a>Пример 2. Получение списка групп путем выбора только обязательных свойств
+### <a name="example-2-get-a-list-of-groups-by-selecting-required-properties-only"></a>Пример 2: Получение списка групп с помощью выбора только необходимых свойств
+
 Так как группы являются большими объектами, используйте `$select`, чтобы получить только нужные свойства группы.
+
+#### <a name="request"></a>Запрос
 
 ```http
 GET /groups?$select=id,resourceProvisioningOptions
 ```
 
-> **Примечание**. У некоторых неиспользуемых старых групп не задано значение свойства **resourceProvisioningOptions**. Дополнительные сведения см. в статье [Известные проблемы](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
+> [!NOTE]
+> Для некоторых неиспользуемых старых команд не будет установлен параметр **resourceProvisioningOptions**. Дополнительные сведения см. в статье [Известные проблемы](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
 
-Ниже приведен пример ответа. 
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
 
 ```http
 HTTP/1.1 200 OK
@@ -110,15 +122,20 @@ Content-type: application/json
 
 ## <a name="get-team-information-for-a-group"></a>Получение сведений о команде для группы
 
-Чтобы получить сведения о команде в определенной группе, вызовите API [get team](/graph/api/team-get?view=graph-rest-1.0&preserve-view=true) и включите идентификатор группы.
+Чтобы получить сведения о команде в определенной группе, вызовите API [get team](/graph/api/team-get) и включите идентификатор группы.
+
+### <a name="request"></a>Запрос
 
 ```http
 GET /teams/{group-id}
 ```
 
+### <a name="response"></a>Отклик
+
 Ниже показан пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -159,5 +176,6 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Перечисление объектов joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0&preserve-view=true)
-- [Перечисление групп](/graph/api/group-list?view=graph-rest-1.0&preserve-view=true)
+- [Перечисление объектов joinedTeams](/graph/api/user-list-joinedteams)
+- [Перечисление групп](/graph/api/group-list)
+- [Обзор API Microsoft Teams](teams-concept-overview.md)

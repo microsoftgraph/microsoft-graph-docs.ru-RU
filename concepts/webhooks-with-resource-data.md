@@ -4,12 +4,12 @@ description: Microsoft Graph использует механизм веб-пер
 author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
-ms.openlocfilehash: a842740ca0722580c32af5be84fbfd8c5b9d907d
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: defaa8f14769b161e73f31ae8b6a0eed76d45d71
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446044"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554990"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>Настройка уведомлений об изменениях, включающих данные ресурсов
 
@@ -39,6 +39,7 @@ Microsoft Graph позволяет приложениям подписывать
 - Новые или измененные сообщения во всех каналах Teams всей организации (клиент): `/teams/getAllMessages`
 - Новые или измененные сообщения в определенном чате Teams: `/chats/{id}/messages`
 - Новые или измененные сообщения во всех чатах Teams: `/chats/getAllMessages`
+- Новые или измененные сообщения во всех чатах Teams, частью которых является конкретный пользователь: `/users/{id}/chats/getAllMessages`
 - Новые или измененные участники во всех чатах Teams: `/chats/getAllMembers`
 - Новые или измененные участники в определенном чате Teams: `/chats/{id}/members`
 - Новый или измененный чат во всем клиенте: `/chats`

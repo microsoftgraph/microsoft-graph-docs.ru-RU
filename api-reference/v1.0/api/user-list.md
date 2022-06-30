@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 28e9f77ecee53b668932c6453615a041bde1cab0
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: c4471da757f5430404ec0cf0f37cc89b1cdbfa7f
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095819"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555162"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -40,13 +40,23 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select` и `$top` для настройки отклика. `$skip` не поддерживается. Стандартный и максимальный размеры страницы — 100 и 999 объектов пользователей соответственно. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries). В настоящее время параметры `$count` и `$search` недоступны в клиентах Azure AD B2C.
+Этот метод поддерживает параметры запроса `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select` и `$top` [OData](/graph/query-parameters) для помощи в настройке отклика.`$skip`  не поддерживается. Стандартный и максимальный размеры страницы — 100 и 999 объектов пользователей соответственно. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries). В настоящее время параметры `$count` и `$search` недоступны в клиентах Azure AD B2C.
 
-По умолчанию возвращается только ограниченный набор свойств (**businessPhones**, **displayName**, **givenName**, **id**, **jobTitle**, **mail**, **mobilePhone**, **officeLocation**, **preferredLanguage**, **surname** и **userPrincipalName**). Чтобы получить альтернативный набор свойств, укажите нужный набор свойств объекта [user](../resources/user.md) с помощью параметра запроса OData `$select`. Например, чтобы получить свойства **displayName**, **givenName** и **postalCode**, добавьте к запросу следующее: `$select=displayName,givenName,postalCode`.
+По умолчанию возвращается только ограниченный набор свойств. (**businessPhones**, **displayName**, **givenName**, **id**, **jobTitle**, **mail**, **mobilePhone**, **officeLocation**, **preferredLanguage**, **surname**, и **userPrincipalName**). Чтобы вернуть альтернативный набор свойств, укажите нужный набор [пользовательских](../resources/user.md) свойств с помощью параметра запроса OData `$select`. Например, чтобы получить свойства **displayName**, **givenName** и **postalCode**, добавьте к запросу следующее: `$select=displayName,givenName,postalCode`.
 
 Примечание. Некоторые свойства не могут быть возвращены в пользовательском наборе. Следующие свойства поддерживаются только при [извлечении одного пользователя](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.
 
 Следующие свойства не поддерживаются в личных учетных записях Майкрософт и будут `null`: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **streetAddress**.
+
+### <a name="retrieve-extensions-and-associated-data"></a>Извлечение расширений и связанных данных
+
+| Тип расширения                     | Комментарии                                                                  |
+|------------------------------------|---------------------------------------------------------------------------|
+| onPremisesExtensionAttributes 1-15 | Возвращается только с помощью `$select`. Поддерживает `$filter` (`eq`).                  |
+| Расширения схемы                  | Возвращается только с помощью `$select`. Поддерживает `$filter` (`eq`).                  |
+| Открытые расширения                    | Возвращается только с `$expand`, то есть `users?$expand=extensions`. |
+| Расширения каталога               | Возвращается только с помощью `$select`. Поддерживает `$filter` (`eq`).                  |
+
 
 ## <a name="request-headers"></a>Заголовки запросов
 
