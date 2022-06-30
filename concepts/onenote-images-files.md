@@ -1,15 +1,15 @@
 ---
-title: Добавление изображений, видео и файлов на страницы OneNote
-description: " Корпоративные записные книжки в Microsoft 365"
+title: Добавление изображений, видео и файлов на страницы OneNote с помощью API OneNote
+description: С помощью элементов img, object и iframe можно добавлять изображения, видео и файлы на страницу OneNote при ее создании или обновлении.
 author: jewan-microsoft
 ms.localizationpriority: high
 ms.prod: onenote
-ms.openlocfilehash: e22b573a65ebd2baabfc39428f580737dddc716d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a9edfd96275e2ce9516fd937ad02e721aa526462
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035516"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444392"
 ---
 # <a name="add-images-videos-and-files-to-onenote-pages"></a>Добавление изображений, видео и файлов на страницы OneNote
 
@@ -52,8 +52,8 @@ ms.locfileid: "59035516"
 
 Используйте элемент `object` с параметром `data="name:file-block-name" data-attachment="file-name.file-ext" type="media-type"` и отправьте файл изображения в части данных составного запроса. Добавляет вложенный файл на страницу OneNote и отображает значок файла.
 
-
-> **Примечание.** Чтобы получить изображения со страницы OneNote, сначала отправьте [запрос GET на получение содержимого страницы](onenote-get-content.md#page-html-content). Будут возвращены URL-адреса ресурсов изображений на странице. Затем разделите [запросы GET на получение ресурсов изображений](onenote-get-content.md#image-or-other-file-resource).
+> [!NOTE]
+> Чтобы получить изображения со страницы OneNote, сначала отправьте [запрос GET на получение содержимого страницы](onenote-get-content.md#page-html-content). Будут возвращены URL-адреса ресурсов изображений на странице. Затем разделите [запросы GET на получение ресурсов изображений](onenote-get-content.md#image-or-other-file-resource).
 
 
 #### <a name="image-attributes"></a>Атрибуты изображений 
@@ -64,7 +64,8 @@ ms.locfileid: "59035516"
 
 Microsoft Graph поддерживает типы изображений TIFF, PNG, GIF, JPEG и BMP. Чтобы сохранить изображение другого формата, которое желательно не преобразовывать, [отправьте двоичные данные](#add-an-image-using-binary-data) в составном запросе. Использовать Base64 или другую кодировку для двоичных данных не нужно.
 
-> **Примечание.** API обнаруживает исходный тип входного изображения и возвращает его в виде атрибута **data-fullres-src-type** [выходного HTML-кода](onenote-input-output-html.md#output-html). API также возвращает тип оптимизированного изображения в атрибуте **data-src-type**.
+> [!NOTE]
+> API обнаруживает исходный тип входного изображения и возвращает его в виде атрибута **data-fullres-src-type** в [выходном коде HTML](onenote-input-output-html.md#output-html). API также возвращает тип оптимизированного изображения в атрибуте **data-src-type**.
  
 Ознакомьтесь с [ограничениями](#size-limitations-for-post-pages-requests) на создание страниц, содержащих файлы мультимедиа.
 

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a6822acb977374fd3b47045984d7632e1797662c
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 53fa85a4a1dff9fc1ca0d89e73bfae28c02c28b0
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695462"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555264"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -43,7 +43,7 @@ PATCH /users/{id | userPrincipalName}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение|
 |:-----------|:------|
-| Авторизация  | Bearer {token}. Обязательный.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -99,6 +99,13 @@ PATCH /users/{id | userPrincipalName}
 > [!NOTE] 
 > - Следующие свойства невозможно обновить с помощью приложения с использованием разрешений только для приложений: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** и **skills**.
 > - Чтобы обновить следующие свойства, необходимо указать их в собственном запросе PATCH, не включая другие свойства, перечисленные в таблице выше: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** and **skills**.
+
+### <a name="manage-extensions-and-associated-data"></a>Управление расширениями и связанными данными
+
+Используйте этот API для управления каталогом, схемой и открытыми расширениями и их данными для пользователей следующим образом:
+
++ Добавление, обновление и хранение данных в расширениях для существующего пользователя
++ Для расширений каталога и схемы удалите все хранимые данные, заданное для свойства настраиваемого расширения значение `null`. Для открытых расширений используйте API [удаления открытого](/graph/api/opentypeextension-delete) расширения.
 
 ## <a name="response"></a>Отклик
 
@@ -325,6 +332,14 @@ Content-type: application/json
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/assign-user-customsecurityattribute-string-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)

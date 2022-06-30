@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 564ed33603585b333f12f72b6a8e1f8e3f9de406
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 3451159f120abf1fa06e45342923d70aad1f84cc
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899549"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555992"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>Получение уведомлений об изменениях сообщений в каналах и чатах Teams с помощью Microsoft Graph
 
@@ -178,8 +178,6 @@ Content-Type: application/json
 
 Подписки на уровне чата также поддерживают поиск на основе ключевых слов с помощью параметра запроса `$search`.
 
-> **Примечание.** Подписка на сообщения в чате находится в состоянии предварительной версии.
-
 ### <a name="permissions"></a>Разрешения
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -261,13 +259,13 @@ Content-Type: application/json
 }
 ```
 
-## <a name="subscribe-to-changes-at-the-user-level-preview"></a>Подписка на изменения на уровне пользователя (предварительная версия)
+## <a name="subscribe-to-changes-at-the-user-level"></a>Подписка на изменения на уровне пользователя
 
-Чтобы отслеживать сообщения во всех чатах, в которые входит определенный пользователь, можно создать подписку на уведомления об изменениях на уровне пользователя. Для этого подпишитесь на `/users/{user-id}/chats/getAllMessages`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление как в *делегированном* режиме, так и в режиме *только для приложений*.  Эта подписка доступна только в конечной точке бета-версии.
+Чтобы отслеживать сообщения во всех чатах, в которые входит определенный пользователь, можно создать подписку на уведомления об изменениях на уровне пользователя. Для этого подпишитесь на `/users/{user-id}/chats/getAllMessages`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление как в *делегированном* режиме, так и в режиме *только для приложений*. 
 
 Подписки на сообщения чата на уровне пользователя также поддерживают поиск на основе ключевых слов с помощью параметра запроса `$search`.
 
-> **Примечание.** В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества данных, доступ к которым получен через API-интерфейс.
+[!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
 
 ### <a name="permissions"></a>Разрешения
 

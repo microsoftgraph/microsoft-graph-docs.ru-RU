@@ -4,12 +4,12 @@ description: В API почты Outlook Microsoft Graph электронные п
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 8cd3fd6fb9975d0eba63c809b2a1699687d27b19
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 63470b3910837e08baee01881a070b9ee708c9bd
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446142"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556187"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>Автоматизация создания, отправки и обработки сообщений
 
@@ -100,7 +100,7 @@ Prefer: outlook.allow-unsafe-html
 
 - Вы можете подписаться на [уведомления об изменениях](/graph/api/resources/webhooks) сообщений. Вы будете получать их при возникновении изменений одного или нескольких типов, например при создании или изменении сообщений.
 - [Отслеживание добавочных изменений сообщений в папке](delta-query-messages.md).
-- Вы можете создавать [открытые расширения](extensibility-overview.md#open-extensions) или [расширения схемы](extensibility-overview.md#schema-extensions), чтобы добавлять пользовательские данные в экземпляры сообщений.
+- Вы можете создавать [открытые расширения](extensibility-overview.md#4-open-extensions) или [расширения схемы](extensibility-overview.md#3-schema-extensions), чтобы добавлять пользовательские данные в экземпляры сообщений.
 - Вы можете создавать [расширенные свойства](/graph/api/resources/extended-properties-overview) в экземплярах сообщений, чтобы хранить пользовательские данные для свойств MAPI Outlook, когда эти свойства еще недоступны в метаданных API Microsoft Graph.
 
 ## <a name="next-steps"></a>Дальнейшие действия

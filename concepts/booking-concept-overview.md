@@ -1,20 +1,20 @@
 ---
-title: Обзор API Microsoft Bookings (предварительная версия)
-description: Microsoft Bookings предоставляет онлайн и мобильные приложения, которые делают планирование встреч простым и эффективным для организации, ее пользователей и клиентов.
+title: Обзор API Microsoft Bookings
+description: Microsoft Bookings — это приложения для браузера и мобильных устройств, предназначенные для удобного и эффективного планирования встреч для организаций, их пользователей и клиентов.
 author: arvindmicrosoft
 ms.localizationpriority: high
 ms.prod: bookings
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4652765f9832ab36d11ff640743e4b0c2c996097
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 3b143969faf7dcc67d4fc07a0ac117d9b020d09e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60560732"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442164"
 ---
-# <a name="microsoft-bookings-api-overview-preview"></a>Обзор API Microsoft Bookings (предварительная версия)
+# <a name="microsoft-bookings-api-overview"></a>Обзор API Microsoft Bookings
 
-Microsoft Bookings — это приложения для браузера и мобильных устройств, упрощающие планирование встреч для небольших компаний и их клиентов. Любая организация, предоставляющая услуги по предварительной записи, например крупные компании, автосервисы, парикмахерские и юридические фирмы, может получить выгоду от управления своими заказами, чтобы высвободить время для более важной задачи развития своего бизнеса. Служба Microsoft Bookings доступна корпоративным организациям и предприятиям, имеющим подписку на Microsoft 365 бизнес премиум.
+Microsoft Bookings — это приложения для браузера и мобильных устройств, предназначенные для удобного и эффективного планирования встреч для коммерческих компаний и их клиентов. Любая организация, предоставляющая услуги по предварительной записи, например крупные компании, автосервисы, парикмахерские и юридические фирмы, может получить выгоду от управления своими заказами, чтобы высвободить время для более важной задачи развития своего бизнеса. Служба Microsoft Bookings доступна корпоративным организациям и предприятиям, имеющим подписку на Microsoft 365 бизнес премиум.
 
 ## <a name="why-integrate-with-microsoft-bookings-using-microsoft-graph"></a>Зачем проводить интеграцию с Microsoft Bookings, используя Microsoft Graph?
 
@@ -33,15 +33,10 @@ Microsoft Bookings — это приложения для браузера и м
 Используя единую конечную точку REST Microsoft Graph, вы можете получить доступ к API Bookings и [интегрировать лучшее из Microsoft 365](overview-major-services.md) для поддержки многофункциональных сценариев. Например, с помощью [Excel](excel-concept-overview.md#generate-reports-and-analyze-results) вы можете отслеживать и анализировать финансовые данные компании, создавать профессиональные отчеты, а с помощью [SharePoint](sharepoint-concept-overview.md) или [Microsoft Teams](teams-concept-overview.md) — повысить эффективность сотрудничества команд.
 
 ## <a name="api-reference"></a>Справочные материалы по API
-Ищете справочные материалы по API для этой службы?
 
-См. статью [API Microsoft Bookings в бета-версии Microsoft Graph](/graph/api/resources/booking-api-overview).
+Ищете справочные материалы по API для этой службы? См. статью [API Microsoft Bookings в версии Microsoft Graph](/graph/api/resources/booking-api-overview).
 
+## <a name="see-also"></a>См. также
 
-## <a name="next-steps"></a>Дальнейшие действия
-
-Дополнительные сведения:
-
-- [Microsoft Bookings](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) и другие [бизнес-приложения Microsoft 365](https://www.microsoft.com/microsoft-365).
-- [Использование API Bookings](/graph/api/resources/booking-api-overview) в Microsoft Graph.
-
+- [Microsoft Bookings для Microsoft 365](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d)
+- Другие [бизнес-приложения Microsoft 365](https://www.microsoft.com/microsoft-365)

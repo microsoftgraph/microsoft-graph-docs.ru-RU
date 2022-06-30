@@ -1,16 +1,16 @@
 ---
 title: Обзор API Azure AD для управления идентификацией и доступом
-description: 'Azure Active Directory (Azure AD) помогает централизовать управление идентификацией и доступом и, соответственно, обеспечить безопасный и эффективный доступ между приложениями, устройствами, службами и инфраструктурой. С помощью Azure AD организации могут управлять идентификацией и доступом в локальной, гибридной и облачной средах.  '
+description: Используйте Azure Active Directory (Azure AD) для управления удостоверениями и устройствами, а также для управления доступом в локальных, гибридных и облачных средах.
 author: jackson-woods
 ms.localizationpriority: high
 ms.prod: identity-and-access
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: ea9fd66eb24b4293a4b86af1e2fbbe2eb55a46e2
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 85f1837c7e2c4b8a7d50000b14978645a9e247cd
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507958"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443797"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Обзор API Azure AD для управления идентификацией и доступом
 
@@ -72,9 +72,9 @@ Azure AD использует адаптивные алгоритмы машин
 
 Проверяйте доступ к группам, приложениям и даже привилегированным ролям в организации. [Проверки доступа](/graph/api/resources/accessreviews-root) доступны в Azure AD Premium P2.
 
-### <a name="activate-users-into-privileged-roles-preview"></a>Активация привилегированных ролей для пользователей (предварительная версия)
+### <a name="activate-users-into-privileged-roles"></a>Активация привилегированных ролей для пользователей
 
-Используйте [API управления привилегированными пользователями (PIM)](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true) для активации привилегий администратора по запросу. Применяйте принудительное обоснование активации ролей и многофакторную проверку подлинности для участников с привилегированными ролями.
+Используйте [API управления привилегированными пользователями (PIM)](/graph/api/resources/rolemanagement) для активации привилегий администратора по запросу. Применяйте принудительное обоснование активации ролей и многофакторную проверку подлинности для участников с привилегированными ролями.
 
 ## <a name="api-reference"></a>Справочные материалы по API
 

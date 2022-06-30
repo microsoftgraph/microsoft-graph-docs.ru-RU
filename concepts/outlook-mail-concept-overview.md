@@ -5,12 +5,12 @@ author: angelgolfer-ms
 ms.localizationpriority: high
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: be2697d092bf08de57702bcd786c9a1b600e6cb0
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 22e733e880ba5dc1d1c39b806b362c359541addd
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66444343"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556327"
 ---
 # <a name="outlook-mail-api-overview"></a>Обзор API почты Outlook
 
@@ -57,7 +57,7 @@ Outlook — это центр обмена сообщениями в Microsoft 3
 
 Зачастую необходимо хранить данные приложений во внешних хранилищах данных, что влечет за собой издержки на управление данными и доступ к ним. Microsoft Graph позволяет просто включать данные приложения в виде заголовков сообщений Интернета при [создании](/graph/api/user-post-messages#example-2-create-message-draft-that-includes-custom-message-headers) или [отправке](/graph/api/user-sendmail#example-2-create-a-message-with-custom-internet-message-headers-and-send-the-message) нового сообщения либо при ответе на сообщение.
 
-Если нужно добавить и впоследствии обновлять пользовательские данные, можно [хранить данные в отдельных экземплярах ресурсов](extensibility-overview.md#open-extensions). При необходимости в качестве альтернативы можно расширить схему, добавить настраиваемые свойства и хранить введенные данные в ресурсах Microsoft Graph. Вы можете сделать такие [расширения схемы](extensibility-overview.md#schema-extensions) доступными для поиска и предоставления общего доступа.
+Если нужно добавить и впоследствии обновлять пользовательские данные, можно [хранить данные в отдельных экземплярах ресурсов](extensibility-overview.md#4-open-extensions). При необходимости в качестве альтернативы можно расширить схему, добавить настраиваемые свойства и хранить введенные данные в ресурсах Microsoft Graph. Вы можете сделать такие [расширения схемы](extensibility-overview.md#3-schema-extensions) доступными для поиска и предоставления общего доступа.
 
 ## <a name="where-is-the-data"></a>Расположение данных
 

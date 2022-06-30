@@ -5,12 +5,12 @@ author: angelgolfer-ms
 ms.localizationpriority: high
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b566947557f9b7287a6e34dd8c2df128b184a07f
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: c9a09d9e56b48c8b757bc501d5e2256045f5d536
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446150"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555627"
 ---
 # <a name="outlook-calendar-api-overview"></a>Общие сведения об API календарей Outlook
 
@@ -90,7 +90,7 @@ Outlook и API Календаря предоставляют множество 
 
 С помощью [API людей](people-example.md) в Microsoft Graph вы можете подключаться к [данным людей](/graph/api/resources/person), основанным на шаблонах общения и работы, а также на бизнес-связях. Вы можете реализовать различные элементы управления, например средство выбора людей, и предлагать людей, релевантных для пользователя, при организации собраний от имени пользователя.
 
-Уменьшите издержки на хранение данных приложений и управление ими во внешних хранилищах данных. С помощью Microsoft Graph вы можете хранить пользовательские данные приложений в качестве [открытых расширений](extensibility-overview.md#open-extensions) в отдельных экземплярах ресурсов. Если требуется вводить данные или необходима возможность делиться введенной схемой, вы можете сохранить пользовательские данные приложений в [расширениях схемы](extensibility-overview.md#schema-extensions).
+Уменьшите издержки на хранение данных приложений и управление ими во внешних хранилищах данных. С помощью Microsoft Graph вы можете хранить пользовательские данные приложений в качестве [открытых расширений](extensibility-overview.md#4-open-extensions) в отдельных экземплярах ресурсов. Если требуется вводить данные или необходима возможность делиться введенной схемой, вы можете сохранить пользовательские данные приложений в [расширениях схемы](extensibility-overview.md#3-schema-extensions).
 
 ## <a name="where-is-the-data"></a>Расположение данных
 

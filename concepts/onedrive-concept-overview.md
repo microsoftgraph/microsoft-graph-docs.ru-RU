@@ -1,25 +1,21 @@
 ---
 title: Обзор API для хранилища файлов OneDrive
-description: OneDrive является центром файлов в Microsoft 365.
+description: 'Используйте OneDrive (центр файлов в Microsoft 365) для доступа к файлам независимо от того, где они хранятся. Используйте Microsoft Graph для применения одного API при работе с этими файлами. '
 ms.localizationpriority: high
 ms.prod: onedrive
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 080d05a3fbba08108b14048968dee47fa1cd2dbc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d16d1b686b3d9265787246be2c333f6b6d495dd7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019085"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442122"
 ---
 # <a name="onedrive-file-storage-api-overview"></a>Обзор API для хранилища файлов OneDrive
 
-OneDrive является центром файлов в Microsoft 365.
-Люди работают с файлами в различных контекстах, например Microsoft Teams, группах, SharePoint и т. д.
-С OneDrive пользователи открывать эти файлы независимо от того, где они хранятся, а с Microsoft Graph для работы с ними можно использовать один API.
+OneDrive является центром файлов в Microsoft 365. Люди работают с файлами в различных контекстах, например Microsoft Teams, группах, SharePoint и т. д. С OneDrive пользователи открывать эти файлы независимо от того, где они хранятся, а с Microsoft Graph для работы с ними можно использовать один API.
 
-Файлы в Microsoft 365 хранятся на [дисках][Drive API].
-Пользователи могут хранить файлы на личном (своем OneDrive) либо общем диске на базе библиотеки документов [SharePoint][].
-Гибкость OneDrive позволяет пользователям работать с коллегами так, как им удобно.
+Файлы в Microsoft 365 хранятся на [дисках][Drive API]. Пользователи могут хранить файлы на личном диске&mdash;(в своем хранилище OneDrive)&mdash;либо общем диске на основе библиотеки документов [SharePoint][]. Гибкость OneDrive позволяет пользователям работать с коллегами так, как им удобно.
 Пользователи могут делиться ссылками на файлы, копировать либо перемещать файлы на диски групп или даже прикреплять файлы OneDrive к почтовым сообщениям в Outlook.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/vG-hQxFHCAE]
@@ -69,8 +65,8 @@ Microsoft Graph открывает доступ к различному соде
 ## <a name="api-reference"></a>Справочные материалы по API
 Ищете справочные материалы по API для этой службы?
 
-- [API для хранилища файлов OneDrive в Microsoft Graph 1.0](/graph/api/resources/onedrive?view=graph-rest-1.0)
-- [API для хранилища файлов OneDrive в бета-версии Microsoft Graph](/graph/api/resources/onedrive?view=graph-rest-beta)
+- [API для хранилища файлов OneDrive в Microsoft Graph 1.0](/graph/api/resources/onedrive?view=graph-rest-1.0&preserve-view=true)
+- [API для хранилища файлов OneDrive в бета-версии Microsoft Graph](/graph/api/resources/onedrive?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
@@ -79,16 +75,16 @@ Microsoft Graph открывает доступ к различному соде
 [SharePoint]: sharepoint-concept-overview.md
 [средство выбора файлов]: https://dev.onedrive.com/sdk/js-v72/js-picker-overview.htm
 [обработчик файлов]: /onedrive/developer/file-handlers
-[специальные папки]: /graph/api/drive-get-specialfolder?view=graph-rest-1.0
+[специальные папки]: /graph/api/drive-get-specialfolder
 [API заметок]: integrate-with-onenote.md
-[API Excel]: /graph/api/resources/excel?view=graph-rest-1.0
-[REST API]: /graph/api/resources/onedrive?view=graph-rest-1.0
-[API изменений]: /graph/api/driveitem-delta?view=graph-rest-1.0
-[видео]: /graph/api/resources/video?view=graph-rest-1.0
-[фото]: /graph/api/resources/photo?view=graph-rest-1.0
-[аудио]: /graph/api/resources/audio?view=graph-rest-1.0
-[форматы]: /graph/api/driveitem-get-content-format?view=graph-rest-1.0
-[эскизы]: /graph/api/driveitem-list-thumbnails?view=graph-rest-1.0
-[предварительный просмотр]: /graph/api/driveitem-preview?view=graph-rest-beta
-[веб-перехватчики]: /graph/api/resources/webhooks?view=graph-rest-1.0
-[Drive API]: /graph/api/resources/onedrive?view=graph-rest-1.0
+[API Excel]: /graph/api/resources/excel
+[REST API]: /graph/api/resources/onedrive
+[API изменений]: /graph/api/driveitem-delta
+[видео]: /graph/api/resources/video
+[фото]: /graph/api/resources/photo
+[аудио]: /graph/api/resources/audio
+[форматы]: /graph/api/driveitem-get-content-format
+[эскизы]: /graph/api/driveitem-list-thumbnails
+[предварительный просмотр]: /graph/api/driveitem-preview
+[веб-перехватчики]: /graph/api/resources/webhooks
+[Drive API]: /graph/api/resources/onedrive

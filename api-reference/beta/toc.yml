@@ -99,14 +99,8 @@ items:
           - name: Получение изменений для пользователей (пример)
             href: /graph/delta-query-users?context=graph/api/beta
       - name: Добавление пользовательских данных
-        items:
-          - name: Обзор
-            href: /graph/extensibility-overview?context=graph/api/beta
-            displayName: 'add custom data, extensions, resources using extensions'
-          - name: Использование открытых расширений (пример)
-            href: /graph/extensibility-open-users?context=graph/api/beta
-          - name: Использование расширений схемы (пример)
-            href: /graph/extensibility-schema-groups?context=graph/api/beta
+        displayName: 'directory extensions, schema extensions, open extensions, extension attributes'
+        href: /graph/extensibility-overview?context=graph/api/beta
       - name: Использование песочницы Graph
         items:
           - name: Начало работы
@@ -979,19 +973,6 @@ items:
                     href: api/application-addkey.md
                   - name: Удаление ключа
                     href: api/application-removekey.md
-              - name: Расширения
-                items:
-                  - name: Свойство Extension
-                    href: resources/extensionproperty.md
-                    items:
-                      - name: Список
-                        href: api/application-list-extensionproperty.md
-                      - name: Создание
-                        href: api/application-post-extensionproperty.md
-                      - name: Получение
-                        href: api/extensionproperty-get.md
-                      - name: Удаление
-                        href: api/extensionproperty-delete.md
               - name: Учетные данные федеративного удостоверения (предварительная версия)
                 items:
                   - name: Обзор
@@ -1481,9 +1462,9 @@ items:
                 href: api/event-delta.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-          - name: Category
+          - name: Категория
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -11001,7 +10982,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: Обновление
                 href: api/educationassignmentdefaults-update.md
-          - name: Category
+          - name: Категория
             href: resources/educationcategory.md
             items:
               - name: Создание категории
@@ -11101,6 +11082,20 @@ items:
                 href: api/educationsynchronizationerrors-get.md
       - name: Расширения
         items:
+          - name: Обзор
+            href: /graph/extensibility-overview?context=graph/api/beta&preserve-view=true
+          - name: Расширения каталогов
+            displayname: 'Groups, Users, Applications, Organization, Devices'
+            href: resources/extensionproperty.md
+            items:
+              - name: Список
+                href: api/application-list-extensionproperty.md
+              - name: Создание
+                href: api/application-post-extensionproperty.md
+              - name: Получение
+                href: api/extensionproperty-get.md
+              - name: Удаление
+                href: api/extensionproperty-delete.md
           - name: Открытые расширения
             href: resources/opentypeextension.md
             displayName: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
@@ -13525,7 +13520,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -14129,7 +14124,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -14609,7 +14604,7 @@ items:
                     href: api/search-qna-update.md
                   - name: Удаление QNA
                     href: api/search-qna-delete.md
-          - name: Index
+          - name: Указатель
             items:
               - name: Обзор
                 href: resources/indexing-api-overview.md
@@ -14801,7 +14796,7 @@ items:
                     href: api/security-ediscoverycasesettings-update.md
                   - name: Сброс параметров до значения по умолчанию
                     href: api/security-ediscoverycasesettings-resettodefault.md
-              - name: Операция
+              - name: Operation
                 href: resources/security-caseoperation.md
                 items:
                   - name: Перечисление операций с вариантами
@@ -14932,7 +14927,7 @@ items:
                     items:
                       - name: Получение URL-адреса скачивания
                         href: api/security-ediscoveryexportoperation-getdownloadurl.md
-                  - name: Запрос
+                  - name: Query
                     href: resources/security-ediscoveryreviewsetquery.md
                     items:
                       - name: Список
@@ -15749,7 +15744,7 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: Удаление приложения из чата
                     href: api/chat-delete-installedapps.md
-          - name: Device
+          - name: Устройство
             items:
               - name: Подготовленные устройства
                 href: resources/teamworkdevice.md
@@ -16266,7 +16261,7 @@ items:
                     href: api/attachment-delete.md
               - name: Категории
                 items:
-                  - name: Category
+                  - name: Категория
                     href: resources/outlookcategory.md
                   - name: Перечисление категорий
                     href: api/outlookuser-list-mastercategories.md

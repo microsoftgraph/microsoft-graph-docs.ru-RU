@@ -5,12 +5,12 @@ author: akgoel23
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d0a8726dd00d6b88f57644d0f3f74d7928549fb5
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 19516308ec2fea1efd86303e9676f83881986fba
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211753"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555277"
 ---
 # <a name="delete-internaldomainfederation"></a>Удаление internalDomainFederation
 Пространство имен: microsoft.graph
@@ -26,7 +26,9 @@ ms.locfileid: "65211753"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Domain.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Domain.ReadWrite.All|
+|Для приложений|Domain.ReadWrite.All|
+
+Вызывающему пользователю или приложению должна быть назначена роль [глобального Azure AD администратора](/azure/active-directory/roles/permissions-reference).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +43,7 @@ DELETE /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

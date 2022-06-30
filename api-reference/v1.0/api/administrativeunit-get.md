@@ -1,22 +1,22 @@
 ---
-title: Get administrativeUnit
-description: Извлечение свойств и связей объекта administrativeUnit.
+title: Получение administrativeUnit
+description: Получение свойств и связей объекта administrativeUnit.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9d6a70d197ab0b2ba3f88b1d16f67173796e993d
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 40b554568a524203253a0cba5a0d2a0a4ef0270c
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672093"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555482"
 ---
-# <a name="get-administrativeunit"></a>Get administrativeUnit
+# <a name="get-administrativeunit"></a>Получение administrativeUnit
 
 Пространство имен: microsoft.graph
 
-Извлечение свойств и связей объекта [administrativeUnit](../resources/administrativeunit.md) .
+Получение свойств и связей объекта [administrativeUnit](../resources/administrativeunit.md) .
 
 
 ## <a name="permissions"></a>Разрешения
@@ -27,7 +27,7 @@ ms.locfileid: "63672093"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
+|Приложение | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,17 +37,24 @@ GET /directory/administrativeUnits/{id}
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает параметр `$select` [запроса OData](/graph/query-parameters) для настройки ответа.
 
+### <a name="retrieve-extensions-and-associated-data"></a>Получение расширений и связанных данных
+
+| Тип расширения       | Комментарии                                                 |
+|----------------------|----------------------------------------------------------|
+| Расширения схемы    | Возвращается только с помощью `$select`. Поддерживает `$filter` (`eq`). |
+| Расширения каталогов | Возвращается по умолчанию. Поддерживает `$filter` (`eq`).          |
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {token}. Обязательный. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект administrativeUnit](../resources/administrativeunit.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [administrativeUnit](../resources/administrativeunit.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

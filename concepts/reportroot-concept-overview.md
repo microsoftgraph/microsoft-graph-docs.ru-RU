@@ -1,20 +1,20 @@
 ---
 title: Обзор API отчетов Microsoft Graph
-description: API отчетов Microsoft Graph позволяют получить представление о действиях ресурсов приложений и клиента.
+description: С помощью API отчетов можно внедрить данные об использовании Microsoft 365 в используемое в организации решение для отчетности, чтобы все отчеты ИТ-служб находились в одном расположении.
 ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 8c0ea574670cd5d52d33a0ef6f8479335206cef4
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: 84718f4a6fb1b0046387e6338980c99e5d91b881
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917796"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446128"
 ---
 # <a name="microsoft-graph-reports-api-overview"></a>Обзор API отчетов Microsoft Graph
 
-API отчетов Microsoft Graph позволяют получить представление о действиях приложений и ресурсов в клиенте Azure Active Directory.
+API отчетов Microsoft Graph позволяют получить представление о действиях приложений и ресурсов в клиенте Azure Active Directory (Azure AD).
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/P6HneRXYdx8]
 
@@ -41,32 +41,32 @@ API отчетов Microsoft Graph позволяют получить пред�
 
 Получите более ясное представление о том, как пользователи получают доступ к службам Azure AD и используют их. Данные можно анализировать и создавать настраиваемые решения, которые отвечают потребностям вашей организации.
 
-## <a name="what-data-can-i-access-by-using-the-reports-apis"></a>К каким данным можно получать доступ с помощью API отчетов?
+## <a name="what-data-can-i-access-by-using-the-reports-api"></a>К каким данным можно получать доступ с помощью API отчетов?
 
-С помощью API отчетов можно получать доступ к наборам данных, перечисленным в приведенной ниже таблице.
+С помощью API отчетов вы можете получать доступ к наборам данных, перечисленным в приведенной ниже таблице.
 
 | API отчетов | Набор данных |
 |:------------ |:-------- |
-| Действие | [Аудит каталога](/graph/api/resources/directoryaudit?view=graph-rest-1.0)<br/>[Вход](/graph/api/resources/signin?view=graph-rest-1.0)<br/>[Подготовка (Предварительная версия)](/graph/api/resources/provisioningobjectsummary?view=graph-rest-beta) |
-| Приложения AD FS | [Детальная сводка о проверяющей части (Предварительная версия)](/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta) |
-| Регистрация приложения | [Счетчик регистрации пользователей учетных данных (Предварительная версия)](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta)<br/>[Сведения о регистрации пользователей учетных данных (Предварительная версия)](/graph/api/resources/credentialuserregistrationdetails?view=graph-rest-beta) <br/>[Сведения об использовании учетных данных пользователей (Предварительная версия)](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta) <br/>[Сводка по использованию учетных данных (Предварительная версия)](/graph/api/resources/credentialusagesummary?view=graph-rest-beta)|
-| Вход в приложение | [Сводка по входу (Предварительная версия)](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta) <br/>[Данные для входа (Предварительная версия)](/graph/api/resources/applicationsignindetailedsummary?view=graph-rest-beta)|
-| Microsoft Teams | [Использование устройств](/graph/api/resources/microsoft-teams-device-usage-reports?view=graph-rest-1.0)<br/>[Использование команды](/graph/api/resources/microsoft-teams-team-usage-reports?view=graph-rest-beta)<br/>[Действия пользователей](/graph/api/resources/microsoft-teams-user-activity-reports?view=graph-rest-1.0)|
-| Microsoft 365 (общая) | [Активации](/graph/api/resources/office-365-activations-reports?view=graph-rest-1.0)<br/>[Активные пользователи](/graph/api/resources/office-365-active-users-reports?view=graph-rest-1.0)<br/>[Действия в группах](/graph/api/resources/office-365-groups-activity-reports?view=graph-rest-1.0) |
-| OneDrive | [Действия](/graph/api/resources/onedrive-activity-reports?view=graph-rest-1.0)<br/>[Использование](/graph/api/resources/onedrive-usage-reports?view=graph-rest-1.0) |
-| Outlook | [Действия](/graph/api/resources/email-activity-reports?view=graph-rest-1.0)<br/>[Использование приложений](/graph/api/resources/email-app-usage-reports?view=graph-rest-1.0)<br/>[Использование почтовых ящиков](/graph/api/resources/mailbox-usage-reports?view=graph-rest-1.0) |
-| SharePoint | [Действия](/graph/api/resources/sharepoint-activity-reports?view=graph-rest-1.0)<br/>[Использование сайтов](/graph/api/resources/sharepoint-site-usage-reports?view=graph-rest-1.0) |
-| Skype для бизнеса | [Действия](/graph/api/resources/skype-for-business-activity-reports?view=graph-rest-1.0)<br/>[Использование устройств](/graph/api/resources/skype-for-business-device-usage-reports?view=graph-rest-1.0)<br/>[Использование устройств](/graph/api/resources/skype-for-business-device-usage-reports?view=graph-rest-1.0)<br/>[Действия участников](/graph/api/resources/skype-for-business-participant-activity-reports?view=graph-rest-1.0)<br/>[Одноранговые действия](/graph/api/resources/skype-for-business-peer-to-peer-activity?view=graph-rest-1.0) |
-| Yammer | [Действия](/graph/api/resources/yammer-activity-reports?view=graph-rest-1.0)<br/>[Использование устройств](/graph/api/resources/yammer-device-usage-reports?view=graph-rest-1.0)<br/>[Действия в группах](/graph/api/resources/yammer-groups-activity-reports?view=graph-rest-1.0) |
+| Действие | [Аудит каталога](/graph/api/resources/directoryaudit)<br/>[Вход](/graph/api/resources/signin)<br/>[Provisioning](/graph/api/resources/provisioningobjectsummary) |
+| Приложения AD FS | [Подробная сводка проверяющей стороны (предварительная версия)](/graph/api/resources/relyingpartydetailedsummary) |
+| Регистрация приложения | [Счетчик регистрации пользователей учетных данных (предварительная версия)](/graph/api/resources/credentialuserregistrationcount)<br/>[Сведения о регистрации пользователей учетных данных (предварительная версия)](/graph/api/resources/credentialuserregistrationdetails) <br/>[Сведения об использовании учетных данных пользователей (предварительная версия)](/graph/api/resources/usercredentialusagedetails) <br/>[Сводка использования учетных данных (предварительная версия)](/graph/api/resources/credentialusagesummary)|
+| Вход в приложение | [Сводка входа (предварительная версия)](/graph/api/resources/applicationsigninsummary) <br/>[Сведения о входе (предварительная версия)](/graph/api/resources/applicationsignindetailedsummary)|
+| Microsoft Teams | [Использование устройств](/graph/api/resources/microsoft-teams-device-usage-reports)<br/>[Использование команды](/graph/api/resources/microsoft-teams-team-usage-reports)<br/>[Действия пользователей](/graph/api/resources/microsoft-teams-user-activity-reports)|
+| Microsoft 365 (общая) | [Активации](/graph/api/resources/office-365-activations-reports)<br/>[Активные пользователи](/graph/api/resources/office-365-active-users-reports)<br/>[Действия в группах](/graph/api/resources/office-365-groups-activity-reports) |
+| OneDrive | [Действия](/graph/api/resources/onedrive-activity-reports)<br/>[Использование](/graph/api/resources/onedrive-usage-reports) |
+| Outlook | [Действия](/graph/api/resources/email-activity-reports)<br/>[Использование приложений](/graph/api/resources/email-app-usage-reports)<br/>[Использование почтовых ящиков](/graph/api/resources/mailbox-usage-reports) |
+| SharePoint | [Действия](/graph/api/resources/sharepoint-activity-reports)<br/>[Использование сайтов](/graph/api/resources/sharepoint-site-usage-reports) |
+| Skype для бизнеса | [Действия](/graph/api/resources/skype-for-business-activity-reports)<br/>[Использование устройств](/graph/api/resources/skype-for-business-device-usage-reports)<br/>[Использование устройств](/graph/api/resources/skype-for-business-device-usage-reports)<br/>[Действия участников](/graph/api/resources/skype-for-business-participant-activity-reports)<br/>[Одноранговые действия](/graph/api/resources/skype-for-business-peer-to-peer-activity) |
+| Yammer | [Действия](/graph/api/resources/yammer-activity-reports)<br/>[Использование устройств](/graph/api/resources/yammer-device-usage-reports)<br/>[Действия в группах](/graph/api/resources/yammer-groups-activity-reports) |
 
 ## <a name="api-reference"></a>Справочные материалы по API
+
 Ищете справочные материалы по API для этой службы?
 
-- [API отчетов об удостоверении и доступе в бета-версии Microsoft Graph](/graph/api/resources/report-identity-access?view=graph-rest-beta)
-- [API отчетов об использовании Microsoft 365 в Microsoft Graph 1.0](/graph/api/resources/report?view=graph-rest-1.0)
-- [API отчетов об использовании Microsoft 365 в бета-версии Microsoft Graph](/graph/api/resources/report?view=graph-rest-beta)
+- [API отчетов об удостоверении и доступе в бета-версии Microsoft Graph](/graph/api/resources/report-identity-access?view=graph-rest-beta&preserve-view=true)
+- [API отчетов об использовании Microsoft 365 в Microsoft Graph 1.0](/graph/api/resources/report?view=graph-rest-1.0&preserve-view=true)
+- [API отчетов об использовании Microsoft 365 в бета-версии Microsoft Graph](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* Изучите API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
-* Узнайте больше об [использовании REST API отчетов](/graph/api/resources/report?view=graph-rest-1.0).
+* Изучайте интерфейсы API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).

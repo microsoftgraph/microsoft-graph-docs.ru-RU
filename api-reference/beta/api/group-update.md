@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6d1ff8baab3b3817d5521ca34ff6c9d50c265a5f
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 17b08b04e88c6ef3b8a0b9ec8acad48535eff6f1
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446780"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555266"
 ---
 # <a name="update-group"></a>Update group
 
@@ -42,7 +42,7 @@ PATCH /groups/{id}
 
 | Имя          | Тип   | Описание               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Обязательный. |
+| Authorization | string | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -58,10 +58,8 @@ PATCH /groups/{id}
 | displayName             | String  | Отображаемое имя для группы. Это свойство необходимо при создании группы. Оно не может быть удалено во время обновления.                                                                                                                                                                                                                                                                                                                                                                   |
 | mailNickname            | String  | Почтовый псевдоним для группы, уникальный для групп Microsoft 365 в организации. Максимальная длина: 64 символа. Это свойство может содержать только символы из [набора символов ASCII от 0 до 127](/office/vba/language/reference/user-interface-help/character-set-0127), за исключением следующих: ` @ () \ [] " ; : . <> , SPACE`.                                                                                                                                                             |
 | preferredDataLocation   | String  | Предпочтительное расположение данных для группы Microsoft 365. Чтобы обновить это свойство, вызывающему пользователю должна быть назначена одна из указанных ниже ролей Azure AD. <br><ul><li> Глобальный администратор <li> Администратор учетных записей пользователей <li> Поддержка партнеров уровня 1 или уровня 2 <li>Редактор каталогов <li> Администратор Exchange <li> Администратор SharePoint </ul> <br/>Дополнительные сведения об этом свойстве см. в статье [OneDrive Online с поддержкой нескольких регионов](/sharepoint/dev/solution-guidance/multigeo-introduction). |
-| securityEnabled         | Boolean | Указывает, является ли группа группой безопасности, включая группы Microsoft 365.                                                                                                                                                                                                                                                                                                                                                                                                             |
+| securityEnabled         | Логический | Указывает, является ли группа группой безопасности, включая группы Microsoft 365.                                                                                                                                                                                                                                                                                                                                                                                                             |
 | visibility              | String  | Определяет видимость группы Microsoft 365. Возможные значения: **Private** (частная), **Public** (общедоступная) или пустое значение (оно обрабатывается как **Public**).                                                                                                                                                                                                                                                                                                                                              |
-
-Так как **ресурс** группы поддерживает [расширения,](/graph/extensibility-overview)`PATCH` операцию можно использовать для добавления, обновления или удаления собственных данных приложения в пользовательских свойствах расширения в существующем **экземпляре группы**.
 
 > [!IMPORTANT]
 >
@@ -70,6 +68,14 @@ PATCH /groups/{id}
 > - Только некоторые элементы API групп, относящиеся к основным операциям администрирования групп и управления ими, поддерживают разрешения для приложений и делегированные разрешения. Все остальные элементы API групп, включая обновление **autoSubscribeNewMembers**, поддерживают только делегированные разрешения. Примеры см. в разделе [Известные проблемы](/graph/known-issues#groups).
 >
 > - Правила обновления групп безопасности, поддерживающих почту, в Microsoft Exchange Server могут быть сложными. Дополнительные сведения см. в статье [Управление группами безопасности с поддержкой электронной почты в Exchange Server](/Exchange/recipients/mail-enabled-security-groups).
+
+
+### <a name="manage-extensions-and-associated-data"></a>Управление расширениями и связанными данными
+
+Используйте этот API для управления [каталогом, схемой и открытыми](/graph/extensibility-overview) расширениями и их данными для групп следующим образом:
+
++ Добавление, обновление и хранение данных в расширениях для существующей группы.
++ Для расширений каталога и схемы удалите все хранимые данные, заданное для свойства настраиваемого расширения значение `null`. Для открытых расширений используйте API [удаления открытого](/graph/api/opentypeextension-delete) расширения.
 
 ## <a name="response"></a>Отклик
 

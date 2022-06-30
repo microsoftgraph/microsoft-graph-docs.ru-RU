@@ -1,21 +1,21 @@
 ---
-title: Получение содержимого и структуры OneNote с помощью Microsoft Graph
-description: " Корпоративная записная книжка в Microsoft 365"
+title: Получение содержимого и структуры OneNote с помощью API OneNote
+description: Чтобы получить содержимое и структуру OneNote, необходимо отправить запрос GET к целевой конечной точке. Затем используйте параметры строки запроса для фильтрации запросов и повышения производительности.
 author: jewan-microsoft
 ms.localizationpriority: high
 ms.prod: onenote
-ms.openlocfilehash: 13a017ac30de19f978c21b1da549efefac985ae7
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 31bcfd207fca8e04f4d476f243752476c65d8a1e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64586872"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446177"
 ---
-# <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Получение содержимого и структуры OneNote с помощью Microsoft Graph
+# <a name="get-onenote-content-and-structure"></a>Получение содержимого и структуры OneNote
 
 **Область применения:** Пользовательские записные книжки в OneDrive | Корпоративные записные книжки в Microsoft 365.
 
-Чтобы получить содержимое и структуру OneNote, необходимо отправить запрос GET к целевой конечной точке. Например:
+Чтобы получить содержимое и структуру OneNote с помощью API OneNote Microsoft Graph, необходимо отправить запрос GET к целевой конечной точке. Например:
 
 `GET ../onenote/pages/{id}`
 
@@ -27,8 +27,8 @@ ms.locfileid: "64586872"
 > Если вы создаете решение, которое поддерживает один из следующих сценариев, вы столкнетесь с ограничениями API OneNote:
 > - Резервное копирование и восстановление разделов OneNote
 > - Резервное копирование и восстановление записных книжек OneNote
-> 
-> Для операций резервного копирования и восстановления см. статью [Рекомендации по обнаружению файлов и определению изменений в масштабе](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online).
+>
+> Для операций резервного копирования и восстановления см. статью [Рекомендации по обнаружению файлов и определению изменений в масштабе](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true).
 
 <a name="request-uri"></a>
 
@@ -38,8 +38,6 @@ ms.locfileid: "64586872"
 
 `https://graph.microsoft.com/v1.0/me/onenote`
 
-<br/>
-
 Затем добавьте конечную точку нужного ресурса. ([Пути к ресурсам](#resource-paths-for-get-requests) показаны в следующем разделе.)
 
 Полный URI запроса будет выглядеть так, как в одном из следующих примеров:
@@ -48,7 +46,8 @@ ms.locfileid: "64586872"
 - `https://graph.microsoft.com/v1.0/me/onenote/notes/pages`
 - `https://graph.microsoft.com/v1.0/me/onenote/pages?select=title,self`
 
-> **Примечание.** Узнайте больше о [корневом URL-адресе службы](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url).
+> [!NOTE]
+> См. дополнительные сведения о [корневом URL-адресе службы](/graph/api/resources/onenote-api-overview#root-url).
 
 <a name="resource-paths"></a>
 
@@ -76,13 +75,9 @@ ms.locfileid: "64586872"
 
 `../pages[?filter,orderby,select,expand,top,skip,search,count]`
 
-<br/>
-
 Получение страниц (метаданных) из определенного раздела.
 
 `../sections/{section-id}/pages[?filter,orderby,select,expand,top,skip,search,count,pagelevel]`
-
-<br/>
  
 Параметр строки запроса `search` доступен только для пользовательских записных книжек.
 
@@ -98,29 +93,23 @@ ms.locfileid: "64586872"
 
 `GET ../sections/{section-id}/pages?pagelevel=true`
 
-
-
 <a name="get-page"></a> 
 
 ### <a name="page-entity"></a>Объект Page
 
 Получение метаданных определенной страницы. 
 
-`../pages/{page-id}[?select,expand,pagelevel]` 
-
-<br/>
+`../pages/{page-id}[?select,expand,pagelevel]`
 
 Запросы страниц могут разворачивать свойства **parentNotebook** и **parentSection**.
 
 Запрос по умолчанию разворачивает родительский раздел и выбирает свойства `id`, `name` и `self` этого раздела.
 
-С помощью параметра **pagelevel** можно вернуть уровень отступа страницы и ее порядковый номер в родительском разделе. 
+С помощью параметра **pagelevel** можно вернуть уровень отступа страницы и ее порядковый номер в родительском разделе.
 
 #### <a name="example"></a>Пример
 
 `GET ../pages/{page-id}?pagelevel=true`
-
-
 
 <a name="get-page-preview"></a> 
 
@@ -129,8 +118,6 @@ ms.locfileid: "64586872"
 Получение текста и изображений на странице для предварительного просмотра.
 
 `../pages/{page-id}/preview`
-
-<br/>
 
 
 Отклик JSON содержит часть контента для предварительного просмотра, благодаря которому пользователи могут узнать, что находится на странице.
@@ -155,7 +142,6 @@ ms.locfileid: "64586872"
 
 `<img src="https://www.onenote.com/api/v1.0/resources/{id}/content?publicAuth=true&mimeType=image/png" />`
 
-
 <a name="get-page-content"></a> 
 
 ### <a name="page-html-content"></a>HTML-контент страницы
@@ -166,11 +152,8 @@ ms.locfileid: "64586872"
 
 (*Дополнительные сведения о [возвращаемом HTML-контенте](onenote-input-output-html.md)*.) 
 
-<br/>
 
 Указав в строке запроса параметр **includeIDs=true**, можно получить созданные идентификаторы, используемые для [обновления страницы](onenote-update-page.md).
-
-
 
 <a name="get-sections"></a>
 
@@ -178,21 +161,15 @@ ms.locfileid: "64586872"
 
 Получение всех разделов всех записных книжек, принадлежащих пользователю, включая разделы из вложенных групп разделов.
 
-`../sections[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../sections[?filter,orderby,select,top,skip,expand,count]`
 
 Получение всех разделов, вложенных непосредственно в определенную группу разделов.
 
-`../sectionGroups/{sectiongroup-id}/sections[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../sectionGroups/{sectiongroup-id}/sections[?filter,orderby,select,top,skip,expand,count]`
 
 Получение всех разделов, вложенных непосредственно в определенную записную книжку.
 
-`../notebooks/{notebook-id}/sections[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../notebooks/{notebook-id}/sections[?filter,orderby,select,top,skip,expand,count]`
 
 Запросы разделов могут разворачивать свойства **parentNotebook** и **parentSectionGroup**.
 
@@ -200,23 +177,17 @@ ms.locfileid: "64586872"
 
 Запрос по умолчанию разворачивает родительскую записную книжку и родительскую группу разделов и выбирает их свойства `id`, `name` и `self`.
 
-
-
 <a name="get-section"></a>
 
 ### <a name="section-entity"></a>Объект Section
 
 Получение определенного раздела.
 
-`../sections/{section-id}[?select,expand]` 
-
-<br/>
+`../sections/{section-id}[?select,expand]`
 
 Запросы разделов могут разворачивать свойства **parentNotebook** и **parentSectionGroup**.
 
 Запрос по умолчанию разворачивает родительскую записную книжку и родительскую группу разделов и выбирает их свойства `id`, `name` и `self`.
-
-
 
 <a name="get-section-groups"></a>
 
@@ -224,15 +195,11 @@ ms.locfileid: "64586872"
 
 Получение всех групп разделов из всех записных книжек, принадлежащих пользователю, включая вложенные.
 
-`../sectionGroups[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../sectionGroups[?filter,orderby,select,top,skip,expand,count]`
 
 Получение всех групп разделов, вложенных непосредственно в определенную записную книжку. 
 
-`../notebooks/{notebook-id}/sectionGroups[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../notebooks/{notebook-id}/sectionGroups[?filter,orderby,select,top,skip,expand,count]`
 
 Запросы групп разделов могут разворачивать свойства **sections**, **sectionGroups**, **parentNotebook** и **parentSectionGroup**.
 
@@ -240,23 +207,17 @@ ms.locfileid: "64586872"
 
 Запрос по умолчанию разворачивает родительскую записную книжку и родительскую группу разделов и выбирает их свойства `id`, `name` и `self`.
 
-
-
 <a name="get-section-group"></a>
 
 ### <a name="sectiongroup-entity"></a>Объект SectionGroup
 
 Получение определенной группы разделов.
 
-`../sectionGroups/{sectiongroup-id}[?select,expand]` 
-
-<br/>
+`../sectionGroups/{sectiongroup-id}[?select,expand]`
 
 Запросы групп разделов могут разворачивать свойства **sections**, **sectionGroups**, **parentNotebook** и **parentSectionGroup**.
 
 Запрос по умолчанию разворачивает родительскую записную книжку и родительскую группу разделов и выбирает их свойства `id`, `name` и `self`.
-
-
 
 <a name="get-notebooks"></a>
 
@@ -264,15 +225,11 @@ ms.locfileid: "64586872"
 
 Получение всех записных книжек, принадлежащих пользователю. 
 
-`../notebooks[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../notebooks[?filter,orderby,select,top,skip,expand,count]`
 
 Запросы записных книжек могут разворачивать свойства **sections** и **sectionGroups**.
 
 По умолчанию для записных книжек используется порядок сортировки `name asc`. 
-
-
 
 <a name="get-notebook"></a>
 
@@ -280,13 +237,9 @@ ms.locfileid: "64586872"
 
 Получение определенной записной книжки.
 
-`../notebooks/{notebook-id}[?select,expand]` 
-
-<br/>
+`../notebooks/{notebook-id}[?select,expand]`
 
 Запросы записных книжек могут разворачивать свойства **sections** и **sectionGroups**.
-
-
 
 <a name="get-resource"></a>
 
@@ -294,9 +247,7 @@ ms.locfileid: "64586872"
 
 Получение двоичных данных определенного ресурса. 
 
-`../resources/{resource-id}/$value` 
-
-<br/>
+`../resources/{resource-id}/$value`
 
 URI ресурса файла можно найти в [выходном HTML-коде](onenote-input-output-html.md) страницы.
 
@@ -323,16 +274,17 @@ URI ресурса файла можно найти в [выходном HTML-к
     type="application/pdf" ... />
 ```
 
-> **Примечание.** Получение коллекции ресурсов не поддерживается. 
+> [!NOTE]
+> Получение коллекции ресурсов не поддерживается. 
 
 При получении файлового ресурса не требуется включать в запрос тип контента **Accept**.
 
 Дополнительные сведения о запросах GET см. в следующих статьях документации по API REST Microsoft Graph:
 
-- [Запрос GET для страниц](/graph/api/page-get?view=graph-rest-1.0)
-- [GET Sections](/graph/api/section-get?view=graph-rest-1.0)
-- [GET SectionGroups](/graph/api/sectiongroup-get?view=graph-rest-1.0)
-- [Запрос GET для записных книжек](/graph/api/notebook-get?view=graph-rest-1.0) 
+- [Запрос GET для страниц](/graph/api/page-get)
+- [GET Sections](/graph/api/section-get)
+- [GET SectionGroups](/graph/api/sectiongroup-get)
+- [Запрос GET для записных книжек](/graph/api/notebook-get)
 
 
 
@@ -345,12 +297,17 @@ URI ресурса файла можно найти в [выходном HTML-к
 
 **Помните:**
 
-- Все запросы GET начинаются с [корневого URL-адреса службы](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url). <br/><br/>**Примеры**: `https://www.onenote.com/api/v1.0/me/notes` и `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`.
+- Все запросы GET начинаются с [корневого URL-адреса службы](/graph/api/resources/onenote-api-overview#root-url).
+  
+  **Примеры**: `https://www.onenote.com/api/v1.0/me/notes` и `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`.
 
-- Пробелы в строке запроса URL следует кодировать как %20.<br/><br/>**Пример**: `filter=title%20eq%20'biology'`.
+- Пробелы в строке запроса URL следует кодировать как %20.
 
-- В случае имен свойств и сравнения строк OData учитывается регистр. Рекомендуем использовать функцию OData **tolower** для сравнения строк.<br/><br/>**Пример**: `filter=tolower(name) eq 'spring'`.
- 
+  **Пример**: `filter=title%20eq%20'biology'`.
+
+- В случае имен свойств и сравнения строк OData учитывается регистр. Рекомендуем использовать функцию OData **tolower** для сравнения строк.
+
+  **Пример**: `filter=tolower(name) eq 'spring'`.
 
 ### <a name="search--filter"></a>search и filter  
 
@@ -400,7 +357,8 @@ URI ресурса файла можно найти в [выходном HTML-к
 [GET] ../notebooks?expand=sections,sectionGroups(expand=sections)
 ```
  
-> **Примечание.** Разворачивание родительских элементов объектов или разворачивание дочерних элементов объектов создает циклическую ссылку и не поддерживается.
+> [!NOTE]
+> Развертывание родительских элементов (у которых есть дочерние элементы) и развертывание дочерних элементов (у которых есть родительские элементы) приводит к созданию циклической ссылки. Такой порядок действий не поддерживается.
 
  
 ### <a name="expand--select-multiple-levels"></a>expand и select (несколько уровней)  
@@ -507,7 +465,8 @@ URI ресурса файла можно найти в [выходном HTML-к
 [GET] ../pages?search=biology&filter=createdTime ge 2015-01-01&top=5&skip=10
 ```
 
-> **Примечание.** Если параметры **search** и **filter** применяются к одному запросу, результаты включают только те объекты, которые соответствуют обоим условиям.
+> [!NOTE]
+> Если в одном запросе применяются как команда **search**, так и **filter**, результаты включают только сущности, соответствующие обоим условиям.
  
 ### <a name="select"></a>select
 
@@ -549,7 +508,8 @@ URI ресурса файла можно найти в [выходном HTML-к
 [GET] ../pages?skip=50&top=50&select=title,self&orderby=title
 ```
 
-> **Примечание.** Запросы GET для страниц, которые восстанавливают количество записей по умолчанию (то есть в них не указывается выражение **top**), возвращают в ответе ссылку **\@odata.nextLink**, с помощью которой можно получить следующие 20 записей.
+> [!NOTE]
+> Запросы GET для страниц, получающие количество записей по умолчанию (т. е. они не указывают выражение **top**), возвращают в отклике ссылку **\@odata.nextLink**, с помощью которой можно получить следующие 20 записей.
  
 
 <a name="supported-odata-query-string-options"></a>
@@ -558,7 +518,8 @@ URI ресурса файла можно найти в [выходном HTML-к
 
 Вы можете настраивать запросы GET к Microsoft Graph, используя параметры строки запроса OData, и получать только нужную информацию. Они также могут повышать производительность, уменьшая количество вызовов службы и размер полезных данных ответа.
 
-> **Примечание.** Для удобства чтения в примерах из этой статьи не используется код %20, которым нужно заменять пробелы в строке запроса URL: `filter=isDefault%20eq%20true`
+> [!NOTE]
+> Для удобочитаемости в примерах в этой статье не используется кодирование пробелов в виде "%20" в строке запроса URL-адреса: `filter=isDefault%20eq%20true`
  
 | Параметр запроса | Пример и описание |  
 |------|------|  
@@ -583,9 +544,13 @@ URI ресурса файла можно найти в [выходном HTML-к
 
 Microsoft Graph поддерживает указанные ниже функции и операторы OData в выражениях **filter**. Используя выражения OData, помните:
 
-- Пробелы в строке запроса URL необходимо заменять кодом `%20`.<br/><br/>**Пример:** `filter=isDefault%20eq%20true`.
+- Пробелы в строке запроса URL необходимо заменять кодом `%20`.
 
-- В случае имен свойств и сравнения строк OData учитывается регистр. Рекомендуем использовать функцию OData **tolower** для сравнения строк.<br/><br/>**Пример:** `filter=tolower(name) eq 'spring'`
+  **Пример:** `filter=isDefault%20eq%20true`.
+
+- В случае имен свойств и сравнения строк OData учитывается регистр. Рекомендуем использовать функцию OData **tolower** для сравнения строк.
+
+  **Пример:** `filter=tolower(name) eq 'spring'`
 
 
 | Оператор сравнения | Пример |  
@@ -636,11 +601,10 @@ not | `not contains(tolower(title),'school')` |
 
 Список свойств и типы свойств см. в следующих статьях документации по API REST Microsoft Graph:
 
-- [Запрос GET для страниц](/graph/api/page-get?view=graph-rest-1.0)
-- [GET Sections](/graph/api/section-get?view=graph-rest-1.0)
-- [GET SectionGroups](/graph/api/sectiongroup-get?view=graph-rest-1.0)
-- [Запрос GET для записных книжек](/graph/api/notebook-get?view=graph-rest-1.0) 
-
+- [Запрос GET для страниц](/graph/api/page-get)
+- [GET Sections](/graph/api/section-get)
+- [GET SectionGroups](/graph/api/sectiongroup-get)
+- [Запрос GET для записных книжек](/graph/api/notebook-get)
 
 
 Параметр строки запроса **expand** можно использовать со следующими свойствами навигации:

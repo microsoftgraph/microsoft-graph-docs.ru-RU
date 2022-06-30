@@ -1,24 +1,23 @@
 ---
 title: Настройка встроенных типов вкладок в Microsoft Teams
-description: Создание или настройка вкладки Microsoft Teams с помощью API Microsoft Graph
+description: Вы можете использовать microsoft API Graph для создания вкладки Microsoft Teams. Узнайте, как получить идентификатор приложения и соответствующие значения для различных встроенных типов вкладок.
 author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 43668e76d4ad400193ab33b7925a0bd612f746c5
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d8d54f864ff9a51cf775bcecdb1569b18cd72af2
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688095"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556159"
 ---
-# <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Настройка встроенных типов вкладок в Microsoft Teams
+# <a name="configure-the-built-in-tab-types-in-microsoft-teams"></a>Настройка встроенных типов вкладок в Microsoft Teams
 
-Чтобы [создать](/graph/api/channel-post-tabs?view=graph-rest-1.0) или [настроить](/graph/api/channel-patch-tabs?view=graph-rest-1.0) вкладку Microsoft Teams с помощью API Microsoft Graph, нужно знать значение `teamsAppId` приложения, и предоставить для этого типа приложения значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl`.
-В этой статье объясняется, как получить эти значения для встроенных типов вкладок.
+Чтобы [создать](/graph/api/channel-post-tabs) или [настроить](/graph/api/channel-patch-tabs) вкладку Microsoft Teams с помощью Microsoft API Graph, `teamsAppId` необходимо знать о приложении и `removeUrl``entityId``contentUrl``websiteUrl` ,, и предоставить для этого типа приложения. В этой статье объясняется, как получить эти значения для встроенных типов вкладок.
 
 ## <a name="custom-tabs"></a>Настраиваемые вкладки
 
-Чтобы использовать Microsoft Graph для настройки вкладки, связанной с [поставщиком вкладок](/microsoftteams/platform/concepts/tabs/tabs-overview), которого вы записали, определите значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl`, предоставляемые [интерфейсом конфигурации приложения для Microsoft Teams](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest), и передайте эти же значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl` в Microsoft Graph.
+Чтобы использовать Microsoft Graph для настройки вкладки, связанной с [поставщиком вкладок](/microsoftteams/platform/concepts/tabs/tabs-overview), которого вы записали, определите значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl`, предоставляемые [интерфейсом конфигурации приложения для Microsoft Teams](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest&preserve-view=true), и передайте эти же значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl` в Microsoft Graph.
 
 Объект `teamsAppId` аналогичен `id` в [схеме манифеста приложения для Microsoft Teams](/microsoftteams/platform/resources/schema/manifest-schema).
 
@@ -48,8 +47,8 @@ ms.locfileid: "60688095"
 
 | Свойство   | Тип        | Описание                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | string      | Идентификатор sourceDoc для файла. Вы найдете его, открыв файл в SharePoint и посмотрев на адресную строку — URL-адрес будет иметь предложение `sourcedoc=%7B{sourceDocId}%7D`. Вы также можете получить эти данные из webUrl адреса элемента диска SharePoint для документа. Дополнительные сведения см.[GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
-| contentUrl | string      | URL-адрес документ в формате `{folder-webUrl}/{item-name}`. {folder-webUrl} - это webUrl адрес папки SharePoint, содержащей файл, который можно найти путем открытия файла в SharePoint и просмотра адресной строки, либо с помощью свойства webUrl из [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta). {item-name} соответствует имени файла (например, file.docx), которое является свойством `name` в [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
+| entityId   | string      | Идентификатор sourceDoc для файла. Вы найдете его, открыв файл в SharePoint и посмотрев на адресную строку — URL-адрес будет иметь предложение `sourcedoc=%7B{sourceDocId}%7D`. Вы также можете получить эти данные из webUrl адреса элемента диска SharePoint для документа. Дополнительные сведения см.[GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get). |
+| contentUrl | string      | URL-адрес документ в формате `{folder-webUrl}/{item-name}`. {folder-webUrl} - это webUrl адрес папки SharePoint, содержащей файл, который можно найти путем открытия файла в SharePoint и просмотра адресной строки, либо с помощью свойства webUrl из [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get). {item-name} соответствует имени файла (например, file.docx), которое является свойством `name` в [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get). |
 | removeUrl  | строка      | NULL                                                     |
 | websiteUrl | string      | Null                                       |
 
@@ -78,11 +77,11 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 | Свойство   | Тип        | Описание                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | Пустая строка ("")                                        |
-| contentUrl | string      | URL-адрес корневой папки библиотеки документов. Этот URL-адрес можно найти, открыв папку SharePoint в браузере, скопив URL-адрес и удалив "/Forms/AllItems.aspx" и все после этого. |
+| contentUrl | string      | URL-адрес корневой папки библиотеки документов. Чтобы найти этот URL-адрес, откройте папку SharePoint в браузере, скопируйте URL-адрес и удалите файл /Forms/AllItems.aspx и все после этого. |
 | removeUrl  | строка      | NULL                                                     |
 | websiteUrl | string      | Null                                                     |
 
-### <a name="example-create-a-configured-document-library-tab"></a>Пример: Создание настраиваемой вкладки библиотеки документов
+### <a name="example-create-a-configured-document-library-tab"></a>Пример. Создание настраиваемой вкладки библиотеки документов
 
 В следующем примере создается настроенная вкладка библиотеки документов.
 
@@ -103,12 +102,12 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 ## <a name="wiki-tabs"></a>Вкладки вики-сайта
 
 Для вкладок вики-сайта объекту `teamsAppId` соответствует `com.microsoft.teamspace.tab.wiki`.
-Вики-вкладки не поддерживают конфигурацию с помощью Microsoft Graph.
-Обратите внимание, однако, что настраивать не так много — на неконфигурированной вкладке вики первый пользователь просто должен выбрать вкладку **Настройка,** чтобы настроить ее.
+Вики-вкладки не поддерживают настройку с помощью Microsoft Graph.
+Обратите внимание, что настраивать не нужно. На ненастройной вики-вкладке первому пользователю достаточно выбрать вкладку "Настройка", чтобы настроить ее.
 
 ## <a name="planner-tabs"></a>Вкладки Планировщика
 
-Для вкладок Planner `teamsAppId` это `com.microsoft.teamspace.tab.planner` . Конфигурация не поддерживается.
+Для вкладок Планировщика — `teamsAppId` это `com.microsoft.teamspace.tab.planner`. Конфигурация не поддерживается.
 
 ## <a name="microsoft-stream-tabs"></a>Вкладки Microsoft Stream
 
@@ -136,4 +135,8 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 
 ## <a name="sharepoint-framework-based-tabs"></a>SharePoint Framework на основе вкладок
 
-Настраиваемые вкладки, созданные с SharePoint Framework, можно создавать с помощью Microsoft Graph, но конфигурация не поддерживается.
+Настраиваемые вкладки, созданные SharePoint Framework, можно создавать с помощью Microsoft Graph, но конфигурация не поддерживается.
+
+## <a name="see-also"></a>См. также
+
+- [Обзор API Microsoft Teams](teams-concept-overview.md)

@@ -5,12 +5,12 @@ author: akgoel23
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e25e6a9f8060bd81e48ed86f7e30e3114f3652fa
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 5fd711b2ec9d908d49af11a8c34c8ea87f1d9361
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447459"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555809"
 ---
 # <a name="get-internaldomainfederation"></a>Получение internalDomainFederation
 Пространство имен: microsoft.graph
@@ -24,7 +24,9 @@ ms.locfileid: "66447459"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Domain.Read.All, Domain.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Domain.Read.All, Domain.ReadWrite.All|
+|Для приложений|Domain.Read.All, Domain.ReadWrite.All|
+
+Вызывающему пользователю или приложению должна быть назначена роль [глобального Azure AD администратора](/azure/active-directory/roles/permissions-reference).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +44,7 @@ GET /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

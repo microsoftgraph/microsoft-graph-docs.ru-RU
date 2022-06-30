@@ -1,57 +1,66 @@
 ---
-title: тип ресурса extensionProperty
+title: Тип ресурса extensionProperty
 description: Представляет расширение каталога
 ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 2f26495298d38b80544108f2d0c2967c5d4a9a7f
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 8de2c18fb4f6ea5b6d2a91f453b915ee7f9b93ea
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335999"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556383"
 ---
-# <a name="extensionproperty-resource-type"></a>тип ресурса extensionProperty
+# <a name="extensionproperty-resource-type"></a>Тип ресурса extensionProperty
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет расширение каталога, которое можно использовать для добавления настраиваемой свойства в объекты каталогов без необходимости хранения внешних данных. Например, если в организации есть приложение бизнес-интерфейса, для которого для каждого пользователя каталога требуется Skype ID, Microsoft Graph может быть использована для регистрации нового свойства с именем skypeId в объекте Пользователя каталога, а затем записываю значение для нового свойства для определенного пользователя.
+Представляет расширение каталога, которое можно использовать для добавления настраиваемого свойства в объекты каталога без необходимости внешнего хранилища данных. Например, если в организации есть бизнес-приложение, требующее идентификатор Skype для каждого пользователя в каталоге, Microsoft Graph можно использовать для регистрации нового свойства skypeId в объекте пользователя каталога, а затем записать значение в новое свойство для определенного пользователя.
 
-Расширения могут быть добавлены к [ресурсам пользователей](user.md), [групп](group.md), [организаций](organization.md), [устройств](device.md), [приложений](application.md) . Только 100 значений расширения для всех типов  и всех приложений  можно написать на любой ресурс Azure AD.
+Расширения каталогов можно добавить в следующие объекты каталога:
++ [user](user.md)
++ [group](group.md)
++ [organization](organization.md)
++ [device](device.md)
++ [ресурсы приложения](application.md)
+
+Только 100 значений расширения для всех типов  и всех приложений  можно записать в любой экземпляр Azure AD ресурса.
+
+Используйте этот ресурс и связанные методы для управления определениями расширений каталогов. Для управления данными расширения каталога в экземпляре расширенного ресурса используйте тот же запрос REST, который используется для управления экземпляром ресурса.
+
+Дополнительные сведения о расширяемости Microsoft Graph см. в статье "Добавление настраиваемых [свойств в ресурсы с помощью расширений"](/graph/extensibility-overview).
 
 Наследуется от [directoryObject](directoryobject.md).
 
-> [!IMPORTANT]
-> Описанные здесь расширения схем Azure AD доступны в Microsoft Graph только по причинам обратной совместимости.
-> Это позволяет использовать microsoft Graph для управления свойствами расширения, добавленными через Azure AD Graph (амортизации) или [Azure AD Подключение](/azure/active-directory/hybrid/whatis-azure-ad-connect).
-> Для новых пользовательских расширений рекомендуется использовать Graph microsoft Graph для [добавления пользовательских данных в ресурсы](/graph/extensibility-overview).
+> [!NOTE]
+> Расширения, созданные с помощью Azure AD Graph (не рекомендуется) и пользовательские данные, синхронизированные из локальная служба Active Directory с помощью Azure AD Connect Sync, представлены как расширения каталогов в Microsoft Graph.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание свойств расширения](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Создание свойства расширения для объекта application. |
-| [Свойства расширения списка](../api/application-list-extensionproperty.md) | Коллекция [extensionProperty](extensionProperty.md) | Список свойств расширения для объекта application. |
-| [Получить extensionProperty](../api/extensionproperty-get.md) | Коллекция [extensionProperty](extensionProperty.md) | Список свойств расширения для объекта application. |
-| [Удаление extensionProperty](../api/extensionproperty-delete.md) | Нет | Удаление свойства расширения объекта application. |
+| [Создание объекта extensionProperties](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Создание свойства расширения для объекта application. |
+| [Список объектов extensionProperties](../api/application-list-extensionproperty.md) | Коллекция [extensionProperty](extensionProperty.md) | Список свойств расширения для объекта application. |
+| [Получение объекта extensionProperty](../api/extensionproperty-get.md) | Коллекция [extensionProperty](extensionProperty.md) | Список свойств расширения для объекта application. |
+| [Удаление объекта extensionProperty](../api/extensionproperty-delete.md) | Нет | Удаление свойства расширения объекта application. Можно удалить только свойства, которые не синхронизируются из локальной службы Active Directory. |
 
 > [!TIP]
-> 1. Чтобы установить значение свойства расширения экземпляру ресурса, указанному в **targetObjects**, используйте операцию Update ресурса. Например, API [для обновления](../api/user-update.md) пользователя, чтобы установить значение для пользователя.
-> 2. Чтобы удалить свойство расширения и его значение из экземпляра ресурса, указанного в **targetObjects**, установите значение свойства расширения `null`.
+> 1. Чтобы задать для свойства расширения значение экземпляра ресурса, указанного в **targetObjects**, используйте операцию обновления ресурса. Например, API [обновления пользователя](../api/user-update.md) для задания значения для пользователя.
+> 2. Чтобы удалить свойство расширения и его значение из экземпляра ресурса, указанного в **targetObjects**, задайте для свойства расширения значение `null`.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|appDisplayName|String| Отображение имени объекта приложения, на котором определено это свойство расширения. Только для чтения. |
-|dataType|String| Указывает тип данных значения, который может удерживать свойство расширения. Поддерживаются следующие значения. Значение null не допускается. <ul><li>`Binary` - максимум 256 bytes</li><li>`Boolean`</li><li>`DateTime` - Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC.</li><li>`Integer` - 32-битное значение.</li><li>`LargeInteger` - 64-битное значение.</li><li>`String` - максимум 256 символов</li></ul>|
-|deletedDateTime|DateTimeOffset|Дата и время удаления этого объекта. Всегда `null` , когда объект не был удален. Наследуется от [directoryObject](directoryobject.md).|
-|isSyncedFromOnPremises|Boolean| Указывает, синхронизировано ли это свойство расширения из локального активного каталога с помощью Azure AD Подключение. Только для чтения. |
+|appDisplayName|String| Отображаемое имя объекта приложения, для которого определено это свойство расширения. Только для чтения. |
+|dataType|String| Указывает тип данных значения, которое может содержать свойство расширения. Поддерживаются следующие значения. Значение null не допускается. <ul><li>`Binary` — максимум 256 байт</li><li>`Boolean`</li><li>`DateTime` — должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC.</li><li>`Integer` — 32-разрядное значение.</li><li>`LargeInteger` — 64-разрядное значение.</li><li>`String` — не более 256 символов</li></ul>|
+|deletedDateTime|DateTimeOffset|Дата и время удаления этого объекта. Всегда `null`, если объект не был удален. Наследуется от [directoryObject](directoryobject.md).|
+|isSyncedFromOnPremises|Логический| Указывает, синхронизировано ли это свойство расширения из локальной службы Active Directory с помощью Azure AD Connect. Только для чтения. |
 |name|String| Имя свойства расширения. Значение null не допускается. |
-|targetObjects|Коллекция объектов string| Поддерживаются следующие значения. Значение null не допускается. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|targetObjects|Коллекция String| Поддерживаются следующие значения. Значение null не допускается. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 ## <a name="relationships"></a>Связи
 
@@ -83,6 +92,10 @@ ms.locfileid: "63335999"
   ]
 }
 ```
+
+## <a name="see-also"></a>См. также
+
++ [Добавление настраиваемых свойств в ресурсы с помощью расширений](/graph/extensibility-overview)
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

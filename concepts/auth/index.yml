@@ -1,6 +1,6 @@
 ### YamlMime:Landing
-title: Обзор Graph майкрософт
-summary: Узнайте, как проверить подлинность и работать с разрешениями на безопасный доступ к данным через Microsoft Graph. Ознакомьтесь с документацией, приведенной ниже, чтобы узнать о регистрации приложений, библиотеках проверки подлинности, авторизации и других частях платформа удостоверений Майкрософт разработки Microsoft Graph.
+title: Обзор проверки подлинности Microsoft Graph
+summary: Узнайте, как выполнять проверку подлинности и работать с разрешениями для безопасного доступа к данным через Microsoft Graph. Изучите следующую документацию, чтобы узнать о регистрации приложений, библиотеках проверки подлинности, авторизации и других частях платформа удостоверений Майкрософт, которые поддерживают разработку Microsoft Graph.
 metadata:
   ms.topic: landing-page
   ms.date: 05/07/2020
@@ -10,12 +10,12 @@ metadata:
   ms.workload: identity
   ms.reviewer: jawoods
   ms.custom: graphiamtop20
-  ms.openlocfilehash: e68883d65e43459e61f8d247448a58966040f0b40fe699df50e9f1f194b8cb4f
-  ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+  ms.openlocfilehash: 75089895765d7efff59070419ecf974f214af00c
+  ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "54169209"
+  ms.lasthandoff: 06/30/2022
+  ms.locfileid: "66555977"
 landingContent:
 - title: Начало работы
   linkLists:
@@ -29,9 +29,9 @@ landingContent:
       url: ../sdks/choose-authentication-providers.md
   - linkListType: video
     links:
-    - text: Регистрация Graph и приложений (7:29)
+    - text: Microsoft Graph и регистрация приложений (7:29)
       url: https://www.youtube.com/watch?v=93j0MmRruFo
-- title: Повышение эффективности приложения
+- title: Улучшение приложения
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -55,7 +55,7 @@ landingContent:
     links:
     - text: Ошибки авторизации
       url: ../resolve-auth-errors.md
-- title: Auth SDKs — MSAL
+- title: Пакеты SDK для проверки подлинности — MSAL
   linkLists:
   - linkListType: download
     links:
@@ -75,7 +75,7 @@ landingContent:
       url: https://github.com/AzureAD/microsoft-authentication-library-for-dotnet
     - text: Xamarin
       url: https://github.com/AzureAD/microsoft-authentication-library-for-dotnet
-- title: Auth SDKs — с открытым исходным кодом
+- title: Пакеты SDK для проверки подлинности — с открытым исходным кодом
   linkLists:
   - linkListType: download
     links:

@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Прочитайте о самых важных новых возможностях Microsoft Graph за последние два месяца, о том, что было добавлено в более ранних выпусках, и о том, как делиться идеями.
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 7fd388275a31b3b7e426e3f27dc6f5861b9a297f
-ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
+ms.openlocfilehash: 9faaf3d0db85a040bbb65b21896819dfb59e1ee4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66160281"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444231"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -16,6 +16,52 @@ ms.locfileid: "66160281"
 
 > [!IMPORTANT]
 > Функции в состоянии _предварительной версии_, в том числе API и инструменты, могут изменяться без предварительного уведомления, а некоторые из них, возможно, никогда не достигнут общедоступного состояния (GA). Не используйте функции, доступные в виде предварительных версий, в рабочих приложениях.
+
+## <a name="june-2022-new-and-generally-available"></a>Июнь 2022 г.: новые и общедоступные возможности
+
+### <a name="cloud-communications--call-records"></a>Облачные коммуникации | Записи звонков
+Получение сведений об аудиокодеке, видеокодеке. сетевом транспортном протоколе и прыжках маршрута трассировки для [потока мультимедиа](/graph/api/resources/callrecords-mediastream) при [получении записи звонка](/graph/api/callrecords-callrecord-get) и развертывании каждого [сегмента](/graph/api/resources/callrecords-segment) [сеанса](/graph/api/resources/callrecords-session).
+
+### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
+- [Перечисление административных единиц](/graph/api/device-list-memberOf), в состав которых входит [устройство](/graph/api/resources/device).
+- Управление устройствами в качестве участников [административной единицы](/graph/api/resources/administrativeunit): [перечисление участников](/graph/api/administrativeunit-list-members), включая устройства; [получение](/graph/api/administrativeunit-get-members), [добавление](/graph/api/administrativeunit-post-members) и [удаление](/graph/api/administrativeunit-delete-members) устройства в качестве участника. 
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
+ Настройка [параметров политики методов проверки подлинности с временным паролем доступа](/graph/api/resources/temporaryAccessPassAuthenticationMethodConfiguration) в вашем клиенте и управление этими параметрами.
+
+### <a name="reports--microsoft-365-usage-reports"></a>Отчеты | Отчеты об использовании Microsoft 365
+- Поиск новых столбцов в отчетах Teams, созданных следующими методами:
+  - [getTeamsUserActivityCounts](/graph/api/reportroot-getteamsuseractivitycounts);
+  - [getTeamsUserActivityUserDetail](/graph/api/reportroot-getTeamsUserActivityUserDetail);
+  - [getTeamsDeviceUsageUserDetail](/graph/api/reportroot-getTeamsDeviceUsageUserDetail);
+  - [getTeamsDeviceUsageUserCounts](/graph/api/reportroot-getteamsdeviceusageusercounts);
+  - [getTeamsDeviceUsageDistributionUserCounts](/graph/api/reportroot-getTeamsDeviceUsageDistributionUserCounts).
+- Столбец Windows Phone упразднен в отчетах Teams, созданных следующими методами:
+  - [getTeamsDeviceUsageUserCounts](/graph/api/reportroot-getteamsdeviceusageusercounts);
+  - [getTeamsDeviceUsageDistributionUserCounts](/graph/api/reportroot-getTeamsDeviceUsageDistributionUserCounts).
+
+
+### <a name="teamwork"></a>Teamwork
+Подпишитесь на уведомления об изменениях для следующих элементов в Teams:
+- [команда и канал](teams-changenotifications-team-and-channel.md)
+- [участие в командах и каналах](teams-changenotifications-teammembership.md)
+- [chat](teams-changenotifications-chat.md)
+- [участие в чате](teams-changenotifications-chatmembership.md)
+
+## <a name="june-2022-new-in-preview-only"></a>Июнь 2022 г.: новые возможности только в предварительной версии
+
+### <a name="compliance--ediscovery"></a>Соответствие требованиям | Обнаружение электронных данных
+Доступ к [API обнаружения электронных данных](/graph/api/resources/security-ediscoverycase?view=graph-rest-beta&preserve-view=true) теперь осуществляется из пространства имен [security](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true) вместо пространства имен "compliance".
+
+### <a name="education"></a>Образование
+- [Создание](/graph/api/educationassignment-setupfeedbackresourcesfolder?view=graph-rest-beta&preserve-view=true) папки SharePoint для [задания](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) для отправки документов с отзывами.
+- [Создание](/graph/api/educationfeedbackresourceoutcome-post-outcomes?view=graph-rest-beta&preserve-view=true) [документа с отзывами](/graph/api/resources/educationFeedbackResourceOutcome?view=graph-rest-beta&preserve-view=true) для [отправки](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true) в папке отзывов, связанной с заданием.
+
+### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
+[Повышение](/graph/api/domain-promote?view=graph-rest-beta&preserve-view=true) уровня проверенного поддомена до корневого домена.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
+Скрытие ссылок самостоятельного сброса пароля (SSPR) в [параметрах видимости текста страницы входа](/graph/api/resources/loginpagetextvisibilitysettings?view=graph-rest-beta&preserve-view=true) для страницы входа клиента.
 
 
 ## <a name="may-2022-new-and-generally-available"></a>Май 2022 г.: новые и общедоступные возможности
@@ -91,54 +137,6 @@ ms.locfileid: "66160281"
 
 ### <a name="to-do-tasks"></a>Задачи To-Do
 С 31 мая 2022 г. [набор API задач, созданный на основе baseTask](/graph/api/resources/tasks-overview?view=graph-rest-beta&preserve-view=true), является устаревшим. Этот набор API прекратит возвращать данные 31 августа 2022 г. Вместо этого используйте [набор API задач, созданный на основе todoTask](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true).
-
-## <a name="april-2022-new-and-generally-available"></a>Апрель 2022 г.: новое и общедоступное
-
-### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
-Использование службы [Privileged Identity Management (PIM)](/graph/api/resources/privilegedidentitymanagementv3-overview) в рабочих приложениях, чтобы контролировать и отслеживать доступ к важным ресурсам в пределах организации, а также управлять им. Доступ предоставляется через привилегированные роли и управление доступом на основе ролей (RBAC). Он может предоставляться пользователям, группам или субъектам-службам. Ресурсы могут находиться в Azure AD, Azure и других облачных службах Майкрософт, таких как Microsoft 365 или Microsoft Intune.
-
-### <a name="search--index"></a>Поиск | Индекс
-- Используйте разрешения приложения `ExternalConnection.Read.All` и `ExternalConnection.ReadWrite.All` для чтения и записи всех внешних подключений без присутствия вошедшего в систему пользователя.
-- Используйте разрешение приложения `ExternalItem.Read.All` для чтения всех внешних элементов без присутствия вошедшего в систему пользователя.
-- Используйте делегированную авторизацию `ExternalConnection.ReadWrite.OwnedBy` для чтения и записи внешних подключений от имени вошедшего в систему пользователя, которому разрешено ваше приложение.
-- Используйте делегирование разрешения `ExternalConnection.Read.All` или `ExternalConnection.ReadWrite.All` для чтения или записи всех внешних подключений от имени вошедшего пользователя.
-- Используйте делегирование разрешений `ExternalItem.ReadWrite.OwnedBy` для чтения и записи внешних элементов от имени вошедшего в систему пользователя, которому разрешено ваше приложение.
-- Используйте делегирование разрешения `ExternalItem.Read.All` или `ExternalItem.ReadWrite.All` для чтения или записи всех внешних элементов от имени вошедшего пользователя.
-
-
-## <a name="april-2022-new-in-preview-only"></a>Апрель 2022 г.: новые возможности только в предварительной версии
-
-### <a name="customer-bookings"></a>Резервирование для пользователей
-- [Получение сведений о доступности](/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-beta&preserve-view=true) ресурсов [staff member](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true) в [организации](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true).
-- Использование разрешения приложений `Bookings.Read.All` в операциях чтения для ресурсов [business](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true), [staff member](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true), [service](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true), [customer](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true) и [appointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true).
-- Использование разрешения приложений `BookingsAppointment.ReadWrite.All` для операций чтения и записи ресурсов клиентов и встреч.
-
-### <a name="device-and-app-management--cloud-pc"></a>Управление устройствами и приложениями | Облачный компьютер
-- Указание [параметров Windows](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true) в составе [ параметров организации облачного компьютера](/graph/api/resources/cloudPcOrganizationSettings?view=graph-rest-beta&preserve-view=true) для клиента.
-- [Получите](/graph/api/user-list-cloudpcs?view=graph-rest-beta&preserve-view=true) облачные компьютерные устройства, связанные с вошедшим пользователем.
-- [Задать сведения для запуска облачного компьютерного устройства](/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta&preserve-view=true) для вошедшего пользователя.
-
-### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
-Настройка [параметров федерации](/graph/api/resources/internalDomainFederation?view=graph-rest-beta&preserve-view=true) федеративных доменов в Azure Active Directory.
-
-### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
-[Получение назначений](/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-beta&preserve-view=true), для которых у соответствующего пользователя есть несовместимые пакеты доступа. 
-
-### <a name="reports--identity-and-access-reports"></a>Отчеты | Отчеты об удостоверениях и доступе
-Подтверждение того, что событие является [высокорискованным и скомпрометированным](/graph/api/signin-confirmCompromised?view=graph-rest-beta&preserve-view=true) или [безопасным](/graph/api/signin-confirmSafe?view=graph-rest-beta&preserve-view=true) путем его маркировки в соответствующих журналах входа Azure Active Directory.
-
-### <a name="reports--microsoft-365-usage-reports"></a>Отчеты | Отчеты об использовании Microsoft 365
-- [Получение общего отчета о распределении](/graph/api/reportroot-getTeamsUserActivityTotalDistributionCounts?view=graph-rest-beta&preserve-view=true) для количества определенных действий Teams за указанный период. Количество действий Teams, включая сообщения чата команды, звонки, собрания, длительность звукового фрагмента, публикацию сообщений и т. д.
-- Получение дополнительных типов действий в отчетах, которые [получают сведения о пользователе](/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-beta&preserve-view=true), [получают количество действий](/graph/api/reportroot-getteamsuseractivitycounts?view=graph-rest-beta&preserve-view=true) и [получают общее количество действий](/graph/api/reportroot-getteamsuseractivitytotalcounts?view=graph-rest-beta&preserve-view=true).
-
-### <a name="teamwork"></a>Командная работа
-Предоставление общего доступа к каналу одной или нескольким командам:
-- [Перечисление только каналов, к которым предоставлен общий доступ в команде](/graph/api/team-list-incomingchannels?view=graph-rest-beta&preserve-view=true).
-- [Перечисление всех каналов в команде](/graph/api/team-list-allchannels?view=graph-rest-beta&preserve-view=true), включая каналы, размещенные в команде, и команды, к которым предоставлен общий доступ в команде.
-- [Перечисление участников команды, у которых есть доступ к указанному общему каналу](/graph/api/sharedwithchannelteaminfo-list-allowedmembers?view=graph-rest-beta&preserve-view=true).
-- [Удаление канала, к которому предоставлен общий доступ в команде](/graph/api/team-delete-incomingchannels?view=graph-rest-beta&preserve-view=true).
-- [Перечисление команд, которым предоставлен общий доступ к указанному каналу](/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-beta&preserve-view=true).
-- [Отмена общего доступа к каналу для команды](/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-beta&preserve-view=true).
 
 
 ## <a name="want-to-stay-in-the-loop"></a>Хотите получать актуальную информацию?

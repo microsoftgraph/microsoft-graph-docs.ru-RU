@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 3e9ce46b44b5e21d326c6c751ae7f6553a2c2199
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 95e068de21681735d2da1023452d57d11ed5ecf2
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246925"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437088"
 ---
 # <a name="unifiedrolemanagementpolicy-resource-type"></a>Тип ресурса unifiedRoleManagementPolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "65246925"
 |[Получение unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)|Получение сведений о политике управления ролами.|
 |[Список правил](../api/unifiedrolemanagementpolicy-list-rules.md)|[Коллекция unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Получение правил, определенных для политики управления ролем.|
 |[Получение unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Получение правила, определенного для политики управления ролем.|
-|[Обновление unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Обновление правила, определенного для политики управления ролем.|
+|[Обновление unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Обновление правила, определенного для политики управления ролем.|
 
 
 ## <a name="properties"></a>Свойства
@@ -42,7 +42,7 @@ ms.locfileid: "65246925"
 |isOrganizationDefault|Boolean|Это значение можно задать только `true` для одной политики на уровне клиента, которая будет применяться ко всем областям и ролям. Задайте для scopeId значение `/` и scopeType значение `Directory`. Поддерживает `$filter` (`eq`, `ne`).|
 |lastModifiedBy|[identity](../resources/identity.md)|Удостоверение, который последним изменил параметр роли.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения параметра роли.|
-|scopeId|String|Идентификатор области, в которой создается политика. Может быть `/` для клиента или идентификатора группы. Обязательно.|
+|scopeId|String|Идентификатор области, в которой создается политика. Может быть `/` для клиента или идентификатора группы. Обязательный элемент.|
 |scopeType|String|Тип области, в которой создается политика. Один из `Directory`, `DirectoryRole`. Обязательный.|
 
 ## <a name="relationships"></a>Связи

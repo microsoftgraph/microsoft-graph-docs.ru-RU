@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: f1bce914868eeb4ccb02daaa608d6d46f00f8325
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: c9ec58c2aaa19e31bd588338e3a05d73d875ce54
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296474"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555261"
 ---
 # <a name="create-schemaextension"></a>Создание schemaExtension
 
@@ -20,7 +20,7 @@ ms.locfileid: "65296474"
 
 Создайте новое определение [schemaExtension](../resources/schemaextension.md), чтобы расширить [поддерживаемый тип ресурса](/graph/extensibility-overview#supported-resources).
 
-Расширения схемы позволяют добавлять в ресурс строго типизированные пользовательские данные. Приложение, которое создает расширение схемы, является приложением-владельцем. В зависимости от [состояния](/graph/extensibility-overview#schema-extensions-lifecycle) расширения, приложение-владелец может обновить или удалить расширение. Другие приложения такого не могут. 
+Расширения схемы позволяют добавлять в ресурс строго типизированные пользовательские данные. Приложение, которое создает расширение схемы, является приложением-владельцем. В зависимости от [состояния](/graph/api/resources/schemaextension#schema-extensions-lifecycle) расширения, приложение-владелец может обновить или удалить расширение. Другие приложения такого не могут. 
 
 Ознакомьтесь с примерами того, как [определить расширение схемы, описывающее учебный курс](/graph/extensibility-schema-groups#2-register-a-schema-extension-definition-that-describes-a-training-course), использовать определение расширения схемы для [создания группы с данными учебного курса](/graph/extensibility-schema-groups#3-create-a-new-group-with-extended-data) и [добавить данные учебного курса в существующую группу](/graph/extensibility-schema-groups#4-add-update-or-remove-custom-data-in-an-existing-group).
 
@@ -35,7 +35,7 @@ ms.locfileid: "65296474"
 |Приложение | Application.ReadWrite.All и Directory.ReadWrite.All |
 
 > [!NOTE]
-> Кроме того, для делегированного потока вошед в систему пользователь должен быть владельцем вызывающего приложения или владельцем (приложения с идентификатором **) appId** , используемого для задания **свойства владельца** .
+> Кроме того, для делегированного потока пользователь, вошедший в систему, должен быть владельцем вызывающего приложения ИЛИ владельцем (приложения с) **appId**, используемого для установки свойства **владельца**.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ POST /schemaExtensions
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {token}. Обязательный. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Тело запроса

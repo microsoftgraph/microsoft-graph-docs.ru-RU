@@ -2,18 +2,18 @@
 author: japere
 ms.topic: include
 ms.localizationpriority: medium
-ms.openlocfilehash: f956f82fbfb6488f23f7ae155d49c1344ec890e2
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: ba8ba53c60d37d55cffba7b3f9626832bbf2f1cc
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461288"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441713"
 ---
 <!-- markdownlint-disable MD041-->
 
 ### <a name="migrate-to-pim-v3-api-for-azure-ad-roles-role-management-apis"></a>Переход на API PIM версии 3 для ролей Azure AD (API управления ролями)
 
-Поддержка интерфейса API PIM для ролей Azure AD прекращена, и он перестал возвращать данные 31 мая 2021 г. Используйте это руководство, чтобы перенести существующие API в новый API [управления ролями](/graph/api/resources/privilegedidentitymanagementv3-overview.md?view=graph-rest-beta&preserve-view=true).
+Поддержка интерфейса API PIM для ролей Azure AD прекращена, и он перестал возвращать данные 31 мая 2021 г. Используйте это руководство, чтобы перенести существующие API в новый [API управления ролями для управления привилегированными удостоверениями](/graph/api/resources/privilegedidentitymanagementv3-overview).
 
 | Operation | API PIM версии 2 | API управления ролями (PIM версии 3) |
 | --------- | ------------ | -------------- |

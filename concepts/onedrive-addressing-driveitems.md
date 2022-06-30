@@ -1,18 +1,20 @@
 ---
 title: Обращение к ресурсам на диске в OneDrive
-description: Как получить доступ к элементам на диске в OneDrive с помощью адресации на основе ИД и путей.
+description: Узнайте о доступе к элементам на диске в OneDrive с помощью адресов на основе идентификаторов и путей, а также о правильном кодировании путей для Microsoft Graph.
 ms.localizationpriority: high
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: conceptualPageType
-ms.openlocfilehash: c35db4503f4130b4404b6fd694f7cc9e8d0a4825
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 46f0304dc81245c79213f96cde30efb95766a580
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61647189"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447123"
 ---
 # <a name="address-resources-in-a-drive-on-onedrive"></a>Обращение к ресурсам на диске в OneDrive
+
+Узнайте о доступе к элементам на диске в OneDrive с помощью адресов на основе идентификаторов и путей, а также о правильном кодировании путей для Microsoft Graph.
 
 ## <a name="id-based-addressing"></a>Обращение к элементам с использованием идентификаторов
 OneDrive поддерживает обращение к элементам с использованием идентификаторов. При создании элементов им назначаются уникальные идентификаторы. Эти идентификаторы остаются неизменными при выполнении действий над элементами. При переименовании или перемещении элемента его идентификатор не изменяется.
@@ -53,9 +55,11 @@ OneDrive поддерживает обращение к файлам и папк
                      = "/" / "\" / "*" / "<" / ">" / "?" / ":" / "|" / "#" / "%"
 ```
 
-**Примечание.** Имена папок не должны заканчиваться точкой (`.`).
-
-**Примечание.** Имена файлов и папок в OneDrive для бизнеса не должны начинаться с тильды (~). Дополнительные сведения см. в статье об [ограничениях при работе с OneDrive для бизнеса](https://support.microsoft.com/en-us/kb/2933738).
+> [!NOTE]
+> - Имена папок не должны оканчиваться точкой (`.`).
+> - Имена файлов и папок не должны начинаться с тильды (~).
+>
+> Дополнительные сведения см. в разделе [Ограничения при синхронизации библиотек SharePoint с компьютером с помощью OneDrive для работы или учебы](https://support.microsoft.com/en-us/kb/2933738).
 
 ### <a name="uri-path-characters"></a>Символы, используемые в пути URI
 
@@ -168,3 +172,7 @@ OneDrive
 | `\...\estimate%.docx`    | `/root:/Adele's%20Files/estimate%25s.docx` |
 | `\Break#Out`             | `/root:/Break%23Out`                      |
 | `\...\saved_game[1].bin` | `/root:/Break%23Out/saved_game[1].bin`    |
+
+## <a name="see-also"></a>См. также
+
+- [Обзор API для хранилища файлов OneDrive](onedrive-concept-overview.md)

@@ -1,22 +1,22 @@
 ---
-title: Список административныхуунитс
-description: Извлечение списка объектов administrativeUnit.
+title: Перечисление элементов администрирования
+description: Получение списка объектов administrativeUnit.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 47dc4c0770a8c9476aa3d5a9a67c6304cf141edd
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 3d3b0dccaa38d051fde5fc8a9e27a7b55f8080cd
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672387"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555848"
 ---
-# <a name="list-administrativeunits"></a>Список административныхуунитс
+# <a name="list-administrativeunits"></a>Перечисление элементов администрирования
 
 Пространство имен: microsoft.graph
 
-Извлечение списка [объектов administrativeUnit](../resources/administrativeunit.md) .
+Получение списка объектов [administrativeUnit](../resources/administrativeunit.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -25,7 +25,7 @@ ms.locfileid: "63672387"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
+|Приложение | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -33,19 +33,26 @@ ms.locfileid: "63672387"
 GET /directory/administrativeUnits
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$count`параметры запросов , `$select`, ( `$search``$filter` (`eq`) `$expand` и [OData](/graph/query-parameters), чтобы помочь настроить ответ.
+Этот метод поддерживает параметры `$count`запроса , `$select`,`$search`, (`$filter``eq`) `$expand` и [OData](/graph/query-parameters) для настройки ответа.
+
+### <a name="retrieve-extensions-and-associated-data"></a>Получение расширений и связанных данных
+
+| Тип расширения       | Комментарии                                                 |
+|----------------------|----------------------------------------------------------|
+| Расширения схемы    | Возвращается только с помощью `$select`. Поддерживает `$filter` (`eq`). |
+| Расширения каталогов | Возвращается по умолчанию. Поддерживает `$filter` (`eq`).          |
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {token}. Обязательный.|
+| Авторизация  | Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию [объектов administrativeUnit](../resources/administrativeunit.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [administrativeUnit](../resources/administrativeunit.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

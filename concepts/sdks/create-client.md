@@ -1,18 +1,18 @@
 ---
-title: Создание клиента Graph Майкрософт
-description: Описывает, как создать клиент, который будет использовать для выполнения вызовов к microsoft Graph. Включает в себя настройку проверки подлинности и выбор национального облака.
+title: Создание клиента Microsoft Graph
+description: Описывает, как создать клиент, который будет использовать для выполнения вызовов к Microsoft Graph. Включает в себя настройку проверки подлинности и выбор национального облака.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 3f1cc7167f0cff4266707fb1d66f6b82c8c01475
-ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
+ms.openlocfilehash: 556377412d9e6a75c6f3136c8c570335d9e0f28a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64733173"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436997"
 ---
-# <a name="create-a-microsoft-graph-client"></a>Создание клиента Graph Майкрософт
+# <a name="create-a-microsoft-graph-client"></a>Создание клиента Microsoft Graph
 
-Клиент Microsoft Graph предназначен для у простых вызовов к microsoft Graph. В течение всего времени существования приложения можно использовать один экземпляр клиента. Сведения о том, как добавить и установить пакет клиента Microsoft Graph в проект, см. в разделе "Установка [пакета SDK"](sdk-installation.md).
+Клиент Microsoft Graph упрощает выполнение вызовов к Microsoft Graph. В течение всего времени существования приложения можно использовать один экземпляр клиента. Сведения о том, как добавить и установить пакет клиента Microsoft Graph в проект, см. в разделе  ["Установка пакета SDK"](sdk-installation.md).
 
 В следующих примерах кода показано, как создать экземпляр клиента Microsoft Graph с поставщиком проверки подлинности на поддерживаемых языках. Поставщик проверки подлинности будет обрабатывать получение маркеров доступа для приложения. Для каждого языка и платформы доступно множество различных поставщиков проверки подлинности. Разные поставщики проверки подлинности поддерживают разные клиентские сценарии. Дополнительные сведения о том, какой поставщик и параметры подходят для вашего сценария, см. в разделе ["Выбор поставщика проверки подлинности"](choose-authentication-providers.md).
 
@@ -36,7 +36,7 @@ var options = new TokenCredentialOptions
 };
 
 // Callback function that receives the user prompt
-// Prompt contains the generated device code that use must
+// Prompt contains the generated device code that you must
 // enter during the auth process in the browser
 Func<DeviceCodeInfo, CancellationToken, Task> callback = (code, cancellation) => {
     Console.WriteLine(code.Message);
