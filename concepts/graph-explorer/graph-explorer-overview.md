@@ -1,14 +1,14 @@
 ---
 title: Используйте песочницу Graph, чтобы попробовать различные API Microsoft Graph
-description: Используйте песочницу Graph, чтобы попробовать API Microsoft Graph на примере клиента по умолчанию, чтобы изучить возможности, или зайдите в собственный клиент и используйте его в качестве средства создания прототипов для выполнения сценариев приложений.
+description: Попробуйте API-интерфейсы Microsoft Graph в выборке клиента по умолчанию, чтобы изучить возможности, или войдите в свой клиент и используйте его в качестве инструмента прототипирования для выполнения сценариев приложений.
 ms.localizationpriority: high
 author: RabebOthmani
-ms.openlocfilehash: 9f1d112cc47493b36fe455d817aa637e7fda783e
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: 1a1e16adcc420f09c867baae616bfce47b7a8595
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176596"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555711"
 ---
 # <a name="use-graph-explorer-to-try-microsoft-graph-apis"></a>Используйте песочницу Graph, чтобы попробовать различные API Microsoft Graph
 
@@ -79,5 +79,5 @@ ms.locfileid: "65176596"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - Попробуйте [песочницу Graph](https://developer.microsoft.com/graph/graph-explorer/).
-- Дополнительные сведения о возможностях [Песочницы Graph](./graph-explorer-features.md).
+- Узнайте, как использовать [функции Graph Explorer](./graph-explorer-features.md).
 - Внести собственные примеры или оставить отзыв и предложения можно в [репозитории GitHub](https://github.com/microsoftgraph/microsoft-graph-explorer-v4/issues/new/choose).

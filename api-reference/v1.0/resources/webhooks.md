@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: conceptualPageType
-ms.openlocfilehash: 93c2b55d9515a2976716633d663dfdcb23a186b3
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 8d95f4cdb8402b0b3b7a7188cea8b30b2477fbc4
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65898946"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555732"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
@@ -35,7 +35,7 @@ REST API Microsoft Graph использует механизм веб-перех
 | [Оповещение][] безопасности | Изменения в конкретном предупреждении:<br>`/security/alerts/{id}` <br>Изменения в отфильтрованных оповещениях:<br> `/security/alerts/?$filter`| Нет |
 | [callRecord][] в Teams | Изменения во _всех_ записях звонков: `/communications/callRecords` | Нет |
 | [Чат][] Teams | Изменения в любом чате в клиенте:<br>`/chats` <br>Изменения в конкретном чате:<br>`/chats/{id}` | Да |
-| [chatMessage][] Teams | Изменения в сообщениях чата во всех каналах во всех командах:<br>`/teams/getAllMessages` <br>Изменения в сообщениях чата на определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех чатах:<br>`/chats/getAllMessages` <br>Изменения в сообщениях чата в конкретном чате:<br>`/chats/{id}/messages` | Да |
+| [chatMessage][] Teams | Изменения в сообщениях чата во всех каналах во всех командах:<br>`/teams/getAllMessages` <br>Изменения в сообщениях чата на определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех чатах:<br>`/chats/getAllMessages` <br>Изменения в сообщениях чата в конкретном чате:<br>`/chats/{id}/messages` <br>Изменения в сообщениях чата во всех чатах с участием конкретного пользователя:<br>`/users/{id}/chats/getAllMessages` | Да |
 | [Канал][] Teams  | Изменения каналов во всех командах:<br>`/teams/getAllChannels` <br>Изменения канала в определенной команде:<br>`/teams/{id}/channels` | Да |
 | [conversationMember][] в Teams | Изменения участия в определенной команде:<br>`/teams/{id}/members` <br> Изменения участия во всех каналах определенной команды:<br>`teams/{id}/channels/getAllMembers` <br> Изменения участия в определенном чате:<br>`/chats/{id}/members` <br> Изменения участия во всех чатах:<br>`/teams/getAllMembers` | Да |
 | [Команда][] Teams | Изменения в любой команде в клиенте:<br>`/teams` <br>Изменения в конкретной команде:<br>`/teams/{id}` | Да |

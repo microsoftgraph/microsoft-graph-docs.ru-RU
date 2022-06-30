@@ -5,12 +5,12 @@ author: angelgolfer-ms
 ms.localizationpriority: high
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 95a66efaab47cdc178b81a5e5d4167d708e51d31
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 9054e2741821778571bd5358c0856ee5677d07fc
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447102"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556096"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Обзор API для личных контактов Outlook
 
@@ -42,7 +42,7 @@ API контактов позволяет получать элементы ко
 
 - Объект **contact** поддерживает фотографию контакта, которая реализуется в виде того же объекта [profilePhoto](/graph/api/resources/profilephoto), что и фотография пользователя, хранимая в Exchange Online или Azure Active Directory. Это позволяет исключить потребление ресурсов при преобразовании между фотографией контакта и фотографией профиля пользователя.
 - Вы можете синхронизировать локальное хранилище приложения, подписавшись на [уведомления об изменениях](/graph/api/resources/webhooks) и [отслеживание изменений](delta-query-overview.md) в контактах и папках контактов.
-- Вы можете увеличить хранилище приложения в экземпляре контакта в виде [открытого расширения](extensibility-overview.md#open-extensions) или добавить строго типизированные пользовательские данные в схему контакта в виде [расширения схемы](extensibility-overview.md#schema-extensions).
+- Вы можете увеличить хранилище приложения в экземпляре контакта в виде [открытого расширения](extensibility-overview.md#4-open-extensions) или добавить строго типизированные пользовательские данные в схему контакта в виде [расширения схемы](extensibility-overview.md#3-schema-extensions).
 
 ## <a name="where-is-the-data"></a>Расположение данных
 

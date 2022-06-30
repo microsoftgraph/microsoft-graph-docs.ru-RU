@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d6ff0bba6e5d8f58d66c2a62270b6a75c17b9bab
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 2eaf6d2e7233a66f46244204b27220f556cdc807
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399231"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556068"
 ---
 # <a name="list-groups"></a>Список групп
 
@@ -56,11 +56,19 @@ GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unifi
 
 Дополнительные сведения о параметрах запроса OData см. в статье [Параметры запроса OData](/graph/query-parameters). Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
 
+### <a name="retrieve-extensions-and-associated-data"></a>Извлечение расширений и связанных данных
+
+| Тип расширения       | Комментарии                      |
+|----------------------|-------------------------------|
+| Расширения схемы    | Возвращается только с помощью `$select`. |
+| Открытые расширения      | Возвращается только с помощью `$expand`. |
+| Расширения каталога | Возвращается по умолчанию.          |
+
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя             | Описание                                                                                                                                                                                                                                                                     |
 | :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Авторизация    | Bearer {token}. Обязательный.                                                                                                                                                                                                                                                       |
+| Авторизация    | Bearer {токен}. Обязательный.                                                                                                                                                                                                                                                       |
 | ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search` или определенном использовании `$filter`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries). |
 
 ## <a name="request-body"></a>Текст запроса
@@ -324,7 +332,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -582,7 +590,7 @@ GET https://graph.microsoft.com/beta/groups?$select=id,assignedLicenses&$filter=
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

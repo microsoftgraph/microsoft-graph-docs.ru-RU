@@ -1,18 +1,19 @@
 ---
-title: Обзор аналитики элементов в Microsoft Graph
-description: Обзор функций аналитики элементов и ее персонализации на уровне пользователя
+title: Аналитика элементов в Microsoft Graph
+description: Узнайте об аналитике элементов, ориентированных на пользователя рекомендациях для вас и тех, с кем вы работаете, на основе вашего совместного использования файлов в Microsoft 365.
 author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e605a2f756e64fb6fff45f1888c6d13d549763e0
-ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
+ms.openlocfilehash: b51f797ae626ecf60c6d2f0a4f9fb395ed97b601
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63780487"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444868"
 ---
-# <a name="overview-of-item-insights"></a>Обзор аналитики элементов
+# <a name="item-insights-overview"></a>Обзор аналитики элементов
+
 Аналитика элементов — это ориентированные на пользователя рекомендации для вас и для тех, с кем вы работаете, основанные на вашей совместной работе в Microsoft 365.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWPGbr] 
@@ -70,6 +71,7 @@ Microsoft 365 — это всемирное облако для продукти
 * Для пользователя, который отключил аналитику элементов, запрос поиска ресурсов по категориям [актуальные](/graph/api/resources/insights-trending) и[используемые](/graph/api/resources/insights-used) в Microsoft Graph API возвращает `HTTP 403 Forbidden`.
 
 ## <a name="api-reference"></a>Справочные материалы по API
+
 Ищете справочные материалы по API для этой службы?
 
 - [API аналитики в Microsoft Graph v1.0](/graph/api/resources/officegraphinsights)

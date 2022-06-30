@@ -1,21 +1,24 @@
 ---
-title: Запись данных в книгу Excel с помощью Microsoft Graph
-description: q=excelstarter).
+title: Запись данных в книге Excel
+description: 'Используйте REST API Excel в Microsoft Graph для записи простых наборов данных в книгу Excel на трех платформах веб-разработки: ASP.NET, Angular и React.'
 ms.localizationpriority: high
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 266427ed2853c26a2267b043b84e04f346467ab2
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8dffa614bb30ee2c095fb7a906dc67daa6b338bb
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457115"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441519"
 ---
-# <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>Запись данных в книгу Excel с помощью Microsoft Graph
+# <a name="write-data-to-an-excel-workbook"></a>Запись данных в книге Excel
 
-REST API для Excel обеспечивает простой независимый от платформ способ отправки информации в книгу Excel. В этой статье рассказывается, как записать простые наборы данных в книгу Excel в трех платформах веб-разработки: ASP.NET, Angular и React. Примеры кода, о которых рассказывается в этой статье, см. на веб-странице [примеров по работе с Excel и Microsoft Graph для начинающих на веб-сайте GitHub](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=excelstarter).
+REST API для Excel в Microsoft Graph обеспечивает простой независимый от платформ способ отправки информации в книгу Excel.
 
-> **Примечание.** Во всех трех примерах показано, как записывать данные в книгу Excel с именем **demo.xlsx**. Вы можете отправить книгу из этих примеров в свой OneDrive. Кроме того, для отправки файлов в OneDrive можно использовать Microsoft Graph. Если вы хотите изучить вызовы REST, вам потребуется отправить файл любого типа в корневую папку вашего OneDrive. См. [пример списка задач ASP.NET для REST API Microsoft Graph](https://github.com/microsoftgraph/aspnet-todo-rest-sample).
+В этой статье рассказывается, как записать простые наборы данных в книгу Excel в трех платформах веб-разработки: ASP.NET, Angular и React. Примеры кода, о которых рассказывается в этой статье, см. на веб-странице [примеров по работе с Excel и Microsoft Graph для начинающих на веб-сайте GitHub](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=excelstarter).
+
+> [!NOTE]
+> Во всех трех примерах показано, как записывать данные в книгу Excel с именем **demo.xlsx**. Вы можете отправить книгу из этих примеров в свой OneDrive. Кроме того, для отправки файлов в OneDrive можно использовать Microsoft Graph. Если вы хотите изучить вызовы REST, вам потребуется отправить файл любого типа в корневую папку вашего OneDrive. См. [пример списка задач ASP.NET для REST API Microsoft Graph](https://github.com/microsoftgraph/aspnet-todo-rest-sample).
 
 Все три примера работы с Excel для начинающих делают одно и то же: получают имя и адрес пользователя, вошедшего в систему, и добавляют эти сведения в новую строку в книге **demo.xlsx**. Вы можете изменить примеры так, чтобы код добавлял дополнительные строки путем простого добавления информации в двумерный массив, представляющий строку или строки, которые вы хотите добавить.
 
@@ -25,9 +28,10 @@ REST API для Excel обеспечивает простой независим
 
 `https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add`
 
-Дополнительные сведения о том, как получить доступ к файлам в папках OneDrive, см. в разделе [Тип ресурса DriveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) в нашей справочной документации.
+Дополнительные сведения о том, как получить доступ к файлам в папках OneDrive, см. в разделе [Тип ресурса DriveItem](/graph/api/resources/driveitem) в нашей справочной документации.
 
-> **Примечание.** Вы можете просмотреть существующую коллекцию строк книги, отправив запрос GET по части пути, который заканчивается на `/rows`.
+> [!NOTE]
+> Вы можете просмотреть существующую коллекцию строк книги, отправив запрос GET по части пути, который заканчивается на `/rows`.
 
 Текст запроса POST выглядит указанным ниже образом.
 
@@ -170,4 +174,4 @@ onWriteToExcel() {
 * [Использование функций книг в Excel с помощью Microsoft Graph](excel-use-functions.md)
 * [Обновление формата диапазона в Excel с помощью Microsoft Graph](excel-update-range-format.md)
 * [Показ изображения диаграммы в Excel с помощью Microsoft Graph](excel-display-chart-image.md)
-* [Использование REST API для Excel](/graph/api/resources/excel?view=graph-rest-1.0)
+* [Использование REST API для Excel](/graph/api/resources/excel)

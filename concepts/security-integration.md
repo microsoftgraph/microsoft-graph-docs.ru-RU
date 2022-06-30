@@ -1,23 +1,23 @@
 ---
 title: Интеграция решений по обеспечению безопасности с помощью Microsoft Graph Security API
-description: Все возможности, описанные в этой статье, позволяют подключаться к Microsoft Graph Security API. Эти возможности позволяют работать с данными в едином формате в разных поддерживаемых решениях поставщиков безопасности партнеров и Майкрософт с помощью единой интеграции.
+description: Используйте эти параметры для подключения к Microsoft Graph Security API и работы с данными в унифицированном формате от поддерживаемых Microsoft и партнерских поставщиков безопасности.
 author: preetikr
 ms.localizationpriority: high
 ms.prod: security
-ms.openlocfilehash: 8f8362be670f2c3988d1db901c5e09532a5f6f76
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: c221192e91d357c442dfd3eaa8ad32ae1685358e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214820"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437550"
 ---
 # <a name="security-solution-integrations-using-the-microsoft-graph-security-api"></a>Интеграция решений по обеспечению безопасности с помощью Microsoft Graph Security API
 
-К Microsoft Graph Security API можно подключиться с помощью следующих возможностей. Они позволяют работать с данными в едином формате в разных [поддерживаемых решениях поставщиков безопасности партнеров и Майкрософт](/graph/api/resources/security-api-overview#alerts) с помощью единой интеграции.
+К Microsoft Graph Security API можно подключиться с помощью следующих возможностей. Эти параметры позволяют работать с данными в унифицированном формате от [поддерживаемых Майкрософт и партнерских поставщиков безопасности](/graph/api/resources/security-api-overview#alerts) посредством единой интеграции:
 
-- **Непосредственное использование поддерживаемых вариантов интеграции.** См. [список поддерживаемых вариантов интеграции](./security-concept-overview.md#why-use-the-microsoft-graph-security-api), например написание кода для прямого подключения приложения, чтобы получать более подробные сведения. Чтобы начать, используйте [примеры](https://aka.ms/graphsecurityapicode).
-- **Использование встроенной интеграции и соединителей, созданных партнерами Майкрософт**. Чтобы использовать эти возможности интеграции, ознакомьтесь с [решениями партнеров для Microsoft Graph Security API](https://aka.ms/graphsecuritypartnerships).  
-- **Использование соединителей, созданных Майкрософт**. См. [список соединителей](#list-of-connectors-from-microsoft), которые можно использовать для подключения к API с помощью разных решений для служб SIEM (инциденты безопасности и управление), SOAR (реагирование системы безопасности и согласование), ITSM (отслеживание инцидентов и управление службой), отчетности и т. д.  
+- **Используйте поддерживаемые варианты интеграции:** обратитесь к [списку поддерживаемых вариантов интеграции](./security-concept-overview.md#why-use-the-microsoft-graph-security-api), таких как написание кода, чтобы напрямую подключить ваше приложение для получения ценных сведений. Используйте [примеры](https://aka.ms/graphsecurityapicode), чтобы приступить к работе.
+- **Используйте встроенные интеграции и соединители, созданные партнерами Microsoft:** см. партнерские решения [Microsoft Graph Security API](https://aka.ms/graphsecuritypartnerships), чтобы использовать эти интеграции.  
+- **Используйте соединители, созданные корпорацией Майкрософт:** см. [список соединителей](#list-of-connectors-from-microsoft), которые можно использовать для подключения к API с помощью различных решений для управления инцидентами безопасности (SIEM), реагированием и оркестровкой безопасности (SOAR), отслеживанием инцидентов и управлением услугами (ITSM). ), отчетности и так далее.  
 
 ## <a name="list-of-connectors-from-microsoft"></a>Список соединителей от Майкрософт
 
@@ -30,4 +30,4 @@ ms.locfileid: "60214820"
 | Автоматизация | Модуль PowerShell | [Модуль PowerShell Microsoft Graph Security](https://aka.ms/graphsecuritypowershellmodule) | [Запись блога](https://aka.ms/graphsecuritypowershellmodulepost) |
 | Отчетность | Power BI | [Соединитель Microsoft Graph Security для Power BI](/power-bi/connect-data/desktop-connect-graph-security) | [Запись блога](https://aka.ms/graphsecuritypowerbiconnectorblogpost) |
 
-Ознакомьтесь с [возможностями партнерства](./security-partner-overview.md), если вы хотите поддерживать встроенную интеграцию в своем решении или стать поставщиком данных для Microsoft Graph Security API.
+Если вы хотите поддерживать встроенную интеграцию в своем решении или стать поставщиком данных для Microsoft Graph Security API, ознакомьтесь [с возможностями партнерства](./security-partner-overview.md).

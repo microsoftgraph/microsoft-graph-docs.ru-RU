@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 925062122223563e00b3a4413b06076fc0164c41
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 99d026a9b00b0a61b29ba1a173d7b03903fb9ad4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820205"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439104"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -156,6 +156,10 @@ GET /me/calendars/{id}/events
 ### <a name="view-meeting-details-menu-is-not-available-on-microsoft-teams-client"></a>Меню "Просмотр сведений о собрании" недоступно в клиенте Microsoft Teams
 
 Клиент Microsoft Teams не отображает меню **Просмотреть сведения о собрании** для собраний канала, созданных с помощью API коммуникаций из облака.
+
+### <a name="presenter-role-cannot-be-assigned-to-non-azure-ad-participants"></a>Роль выступающего нельзя назначить участникам, не связанным с Azure AD
+
+Назначение роли `presenter` или `coorganizer` пользователям, не зарегистрированным в Azure Active Directory, сейчас не поддерживается. Такие запросы будут приниматься методом [Создание объекта onlineMeeting](/graph/api/application-post-onlinemeetings.md), но роль не будет применяться, когда участник присоединяется к собранию по сети. Метод [Создание объекта onlineMeeting](/graph/api/application-post-onlinemeetings.md) отклонит запрос и вернет ошибку `400 Bad Request`. 
 
 ## <a name="contacts"></a>Контакты
 

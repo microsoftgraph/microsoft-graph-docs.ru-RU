@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 8f33af60add0ea55453a735ccb9f9e4aff958bbd
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: 6668b6c2a0bea5522ad8e0ef7f1d9c2fa9033d43
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296375"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555237"
 ---
 # <a name="list-schemaextensions"></a>Перечисление schemaExtensions
 
@@ -38,11 +38,13 @@ ms.locfileid: "65296375"
 ```http
 GET /schemaExtensions
 ```
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает параметры `$filter` запроса (`eq`) `$top` и [OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {token}. Обязательный. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -90,7 +92,7 @@ GET https://graph.microsoft.com/beta/schemaExtensions?$filter=id%20eq%20'graphle
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

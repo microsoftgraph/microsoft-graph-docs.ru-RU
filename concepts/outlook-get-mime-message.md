@@ -1,15 +1,15 @@
 ---
-title: Получение содержимого MIME сообщения
+title: Получение содержимого MIME сообщения с помощью API почты Outlook
 description: Multipurpose Internet Mail Extensions (MIME) — это отраслевой стандарт электронной почты. Теперь вы можете использовать сегмент `$value`, чтобы получить содержимое MIME из сообщения Outlook.
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 541c2481c8534cec7f96010a55beb6d02d825a62
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0b60a44345b9a75a776492fb04706cb9f5d7ffb6
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59135937"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442796"
 ---
 # <a name="get-mime-content-of-a-message"></a>Получение содержимого MIME сообщения
 
@@ -44,7 +44,7 @@ MIME — это стандарт, используемый для электро
 
 ## <a name="get-mime-content-of-an-outlook-message"></a>Получение содержимого MIME сообщения Outlook
 
-Вы можете получить представление сообщения в формате MIME, добавив сегмент `$value` при [получении сообщения](/graph/api/message-get?view=graph-rest-1.0): 
+Вы можете получить представление сообщения в формате MIME, добавив сегмент `$value` при [получении сообщения](/graph/api/message-get): 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -154,10 +154,10 @@ YW5vdGhlciBtYWlsLg0K
 
 ## <a name="get-mime-content-of-an-outlook-message-attached-to-an-outlook-item-or-group-post"></a>Получение содержимого MIME сообщения Outlook, вложенного в элемент Outlook или запись в группе
 
-Вы также можете получить представление сообщения Outlook в формате MIME, если сообщение было вложено в [событие](/graph/api/resources/event?view=graph-rest-1.0), [сообщение](/graph/api/resources/message?view=graph-rest-1.0), [задачу](/graph/api/resources/outlooktask?view=graph-rest-beta) или [запись](/graph/api/resources/post?view=graph-rest-1.0) группы Outlook, доступные приложению.
+Вы также можете получить представление сообщения Outlook в формате MIME, если сообщение было вложено в [событие](/graph/api/resources/event), [сообщение](/graph/api/resources/message), [задачу](/graph/api/resources/outlooktask) или [запись](/graph/api/resources/post) группы Outlook, доступные приложению.
 
-Для этого укажите вложение сообщения и добавьте сегмент `$value` при [получении этого вложения](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment
-). Ниже показано несколько распространенных способов получить доступ к вложению. Дополнительные сведения см. в статье [Получение вложения](/graph/api/attachment-get?view=graph-rest-1.0#http-request).
+Для этого укажите вложение сообщения и добавьте сегмент `$value` при [получении этого вложения](/graph/api/attachment-get#get-the-raw-contents-of-a-file-or-item-attachment
+). Ниже показано несколько распространенных способов получить доступ к вложению. Дополнительные сведения см. в статье [Получение вложения](/graph/api/attachment-get#http-request).
 
 Если сообщение вложено в событие в календаре по умолчанию для пользователя:
 <!-- { "blockType": "ignored" } -->
@@ -276,8 +276,6 @@ e.</p>
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Дополнительные сведения:
-
-- [Получение содержимого MIME вложения](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) для события, сообщения, задачи Outlook или записи в группе
+- [Получение содержимого MIME вложения](/graph/api/attachment-get#get-the-raw-contents-of-a-file-or-item-attachment) для события, сообщения, задачи Outlook или записи в группе
 - [Зачем выполнять интеграцию с почтой Outlook?](outlook-mail-concept-overview.md)
-- [Использование API почты](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) и [варианты использования](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) в Microsoft Graph 1.0.
+- [Использование почтового API](/graph/api/resources/mail-api-overview) и [вариантов его использования](/graph/api/resources/mail-api-overview#common-use-cases) в Microsoft Graph версии 1.0

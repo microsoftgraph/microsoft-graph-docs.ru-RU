@@ -5,12 +5,12 @@ author: akgoel23
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 55a97be3715e8a3b6b9949423e79fae1fe6ebd34
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 7ff2c212a3d4a16af022f0d757712a01eb182764
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65212163"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556283"
 ---
 # <a name="get-internaldomainfederation"></a>Получение internalDomainFederation
 Пространство имен: microsoft.graph
@@ -26,7 +26,9 @@ ms.locfileid: "65212163"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Domain.Read.All, Domain.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Domain.Read.All, Domain.ReadWrite.All|
+|Для приложений|Domain.Read.All, Domain.ReadWrite.All|
+
+Вызывающему пользователю или приложению должна быть назначена роль [глобального Azure AD администратора](/azure/active-directory/roles/permissions-reference).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,12 +46,12 @@ GET /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [internalDomainFederation](../resources/internaldomainfederation.md) в теле отклика.
 

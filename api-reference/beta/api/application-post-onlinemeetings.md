@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 56caf98534752ad1a9f6c535b2978d6c5ad0dd19
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: efd2183589aae2330b48ebabe8e55482883cf4d6
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66438167"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555375"
 ---
 # <a name="create-onlinemeeting"></a>Создание объекта onlineMeeting
 
@@ -50,7 +50,7 @@ POST /users/{userId}/onlineMeetings
 
 | Имя            | Описание                 |
 | :-------------- | :-------------------------- |
-| Авторизация   | Bearer {token}. Обязательный.   |
+| Авторизация   | Bearer {токен}. Обязательный.   |
 | Content-Type    | application/json. Обязательный. |
 | Принять-Язык | Язык. Необязательное.         |
 
@@ -61,7 +61,7 @@ POST /users/{userId}/onlineMeetings
 
 > [!CAUTION]
 >
-> Назначение роли `presenter` или `coorganizer` пользователям, не зарегистрированным в Azure Active Directory, сейчас не поддерживается. Дополнительные сведения см. в разделе [Известные проблемы](/graph/concepts/known-issues.md#presenter-role-assigned-to-non-aad-users).
+> Назначение роли `presenter` или `coorganizer` пользователям, не зарегистрированным в Azure Active Directory, сейчас не поддерживается. Дополнительные сведения см. в разделе [Известные проблемы](/graph/known-issues#presenter-role-cannot-be-assigned-to-non-azure-ad-participants).
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.

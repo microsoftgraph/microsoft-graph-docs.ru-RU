@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 91fc87fb061d2e756aac80998c895df041e56638
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: e56cf53369e7b63e04fe9cf6a882fb6361ee31e5
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65694596"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555739"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -41,7 +41,7 @@ PATCH /users/{id | userPrincipalName}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение|
 |:-----------|:------|
-| Авторизация  | Bearer {token}. Обязательный.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -92,6 +92,13 @@ PATCH /users/{id | userPrincipalName}
 > [!NOTE] 
 > - Следующие свойства невозможно обновить с помощью приложения с использованием разрешений только для приложений: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** и **skills**.
 > - Чтобы обновить следующие свойства, необходимо указать их в собственном запросе PATCH, не включая другие свойства, перечисленные в таблице выше: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** and **skills**.
+
+### <a name="manage-extensions-and-associated-data"></a>Управление расширениями и связанными данными
+
+Используйте этот API для управления каталогом, схемой и открытыми расширениями и их данными для пользователей следующим образом:
+
++ Добавляйте, обновляйте и сохраняйте данные в расширениях для существующего пользователя
++ Для расширений каталогов и схем удалите все сохраненные данные, задав для свойства пользовательского расширения значение `null`. Для открытых расширений используйте API [удаления открытых расширений](/graph/api/opentypeextension-delete).
 
 ## <a name="response"></a>Отклик
 

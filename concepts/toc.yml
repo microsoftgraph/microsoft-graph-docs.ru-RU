@@ -134,7 +134,7 @@ items:
             href: outlook-create-event-in-shared-delegated-calendar.md
           - name: Вложение больших файлов
             href: outlook-large-attachments.md
-          - name: Неизменяемый идентификатор
+          - name: Получение неизменяемых идентификаторов
             href: outlook-immutable-id.md
           - name: Подписка на уведомления об изменениях
             href: outlook-change-notifications-overview.md
@@ -145,24 +145,26 @@ items:
             displayName: cloud communications
           - name: Начало работы
             href: cloud-communications-get-started.md
-          - name: Звонки
+          - name: Поддерживаемые типы вызовов
             href: cloud-communications-calls.md
-          - name: Мультимедиа
+          - name: Записи звонков
+            href: cloud-communications-callrecords.md
+          - name: Артефакты и разрешения собраний по сети
+            href: cloud-communications-online-meeting-artifacts.md
+          - name: Выбор варианта размещения мультимедиа
             href: cloud-communications-media.md
-          - name: Собрания по сети
+          - name: Создание собраний по сети и присоединение к ним
             href: cloud-communications-online-meetings.md
           - name: Выбор API собрания по сети
             href: choose-online-meeting-api.md
           - name: Настройка доступа приложений
             href: cloud-communication-online-meeting-application-access-policy.md
-          - name: Записи звонков
-            href: cloud-communications-callrecords.md
-          - name: Управление номерами телефонов для ботов
+          - name: Управление номерами телефонов ботов
             href: cloud-communications-phone-number.md
-          - name: Артефакты и разрешения собраний по сети
-            href: cloud-communications-online-meeting-artifacts.md
           - name: Определение участников представления "Большая галерея"
             href: cloud-communications-identifylargegalleryview.md
+          - name: Подписка на уведомления об изменениях для собраний по сети
+            href: changenotifications-for-onlinemeeting.md
       - name: Соответствие требованиям
         href: compliance-concept-overview.md
       - name: Подключение внешнего контента
@@ -185,7 +187,7 @@ items:
             href: connecting-external-content-manage-schema.md
           - name: Управление элементами
             href: connecting-external-content-manage-items.md
-          - name: Внешние группы
+          - name: Использование внешних групп
             href: connecting-external-content-external-groups.md
           - name: Ограничения API
             href: connecting-external-content-api-limits.md
@@ -194,15 +196,15 @@ items:
           - name: Обзор
             href: cross-device-concept-overview.md
             displayName: 'Project Rome, cross-device, cross device, cross-device experience'
-          - name: Веб-канал активности
+          - name: Использование API веб-канала активности
             href: activity-feed-concept-overview.md
             displayName: 'cross-device, cross device'
-          - name: Ретрансляция устройств (предварительная версия)
+          - name: Использование API ретрансляции устройств (предварительная версия)
             href: device-relay-concept-overview.md
             displayName: 'cross-device, cross device'
           - name: Создание приложений для различных устройств
             href: cross-device-app-configuration.md
-            displayName: cross device
+            displayName: 'cross device, Project Rome'
       - name: Запись клиентов (предварительная версия)
         items:
           - name: Обзор
@@ -270,6 +272,14 @@ items:
             href: assignments-submissions-states-transition.md
           - name: Укажите канал по умолчанию для уведомлений о назначениях
             href: education-build-notificationchannelurl.md
+      - name: Расширения
+        items:
+          - name: Обзор
+            href: extensibility-overview.md
+          - name: Использование открытых расширений
+            href: extensibility-open-users.md
+          - name: Использование расширений схемы
+            href: extensibility-schema-groups.md
       - name: Файлы
         items:
           - name: Обзор
@@ -340,7 +350,7 @@ items:
             href: outlook-share-messages-folders.md
           - name: Отправка почты от имени другого пользователя
             href: outlook-send-mail-from-other-user.md
-          - name: Неизменяемый идентификатор
+          - name: Получение неизменяемых идентификаторов
             href: outlook-immutable-id.md
           - name: Подписка на уведомления об изменениях
             href: outlook-change-notifications-overview.md
@@ -419,7 +429,7 @@ items:
             displayName: 'Outlook, Outlook contacts, Outlook contact, People, personal contacts'
           - name: Получение общих контактов
             href: outlook-get-shared-contacts-folders.md
-          - name: Неизменяемый идентификатор
+          - name: Получение неизменяемых идентификаторов
             href: outlook-immutable-id.md
           - name: Подписка на уведомления об изменениях
             href: outlook-change-notifications-overview.md
@@ -443,19 +453,19 @@ items:
             href: search-concept-files.md
           - name: Соединители поиска
             href: search-concept-custom-types.md
-          - name: Поиск людей (предварительная версия)
+          - name: Поиск людей
             href: search-concept-person.md
           - name: Управление поиском ответов администратора (предварительная версия)
             href: search-concept-answers.md
-          - name: Управление структурой результатов поиска (предварительная версия)
+          - name: Управление макетом результатов поиска
             href: search-concept-display-layout.md
           - name: Уточнение результатов поиска
             href: search-concept-aggregation.md
-          - name: Исправление орфографии в запросе (предварительная версия)
+          - name: Запрос орфографических исправлений
             href: search-concept-speller.md
-          - name: Обрезка повторяющихся результатов поиска (предварительная версия)
+          - name: Обрезка повторяющихся результатов поиска
             href: search-concept-trim-duplicate.md
-          - name: Использование шаблонов запросов (предварительная версия)
+          - name: Использование шаблонов запросов
             href: search-concept-query-template.md
           - name: Сортировка результатов поиска
             href: search-concept-sort.md
@@ -493,12 +503,12 @@ items:
             href: choose-online-meeting-api.md
           - name: Настройка встроенных вкладок
             href: teams-configuring-builtin-tabs.md
-          - name: Защищенные API
-            href: teams-protected-apis.md
-          - name: Требования к лицензированию и оплате
-            href: teams-licenses.md
           - name: Отправка упреждающих сообщений с помощью бота
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
+          - name: Защищенные API
+            href: teams-protected-apis.md
+          - name: Модели лицензирования и оплаты
+            href: teams-licenses.md
           - name: Уведомления ленты новостей
             items:
               - name: Отправка уведомлений ленты новостей
@@ -507,9 +517,7 @@ items:
                 href: teams-activity-feed-notifications-best-practices.md
           - name: Подписка на уведомления об изменениях
             href: teams-change-notification-in-microsoft-teams-overview.md
-          - name: Получение уведомлений об изменениях для онлайн-собраний
-            href: changenotifications-for-onlinemeeting.md
-          - name: Системные сообщения
+          - name: Получение системных сообщений
             href: system-messages.md
       - name: Задачи To-Do
         href: todo-concept-overview.md
@@ -635,14 +643,8 @@ items:
               - name: Получение изменений для пользователей (пример)
                 href: delta-query-users.md
           - name: Добавление пользовательских данных
-            items:
-              - name: Обзор
-                href: extensibility-overview.md
-                displayName: 'add custom data, extensions, resources using extensions'
-              - name: Использование открытых расширений (пример)
-                href: extensibility-open-users.md
-              - name: Использование расширений схемы (пример)
-                href: extensibility-schema-groups.md
+            displayName: 'directory extensions, schema extensions, open extensions, extension attributes'
+            href: extensibility-overview.md
           - name: Использование песочницы Graph
             items:
               - name: Начало работы

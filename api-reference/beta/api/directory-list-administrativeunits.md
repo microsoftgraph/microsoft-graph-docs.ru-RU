@@ -1,24 +1,24 @@
 ---
-title: Список административныхуунитс
-description: Извлечение списка объектов administrativeUnit.
+title: Перечисление элементов администрирования
+description: Получение списка объектов administrativeUnit.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fd415d36b67dc9bd4a7c246ce56ea7061d3bca85
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 04039b53559af85693e3edb253c99d4e3d67486f
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671281"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556243"
 ---
-# <a name="list-administrativeunits"></a>Список административныхуунитс
+# <a name="list-administrativeunits"></a>Перечисление элементов администрирования
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка [объектов administrativeUnit](../resources/administrativeunit.md) .
+Получение списка объектов [administrativeUnit](../resources/administrativeunit.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -27,7 +27,7 @@ ms.locfileid: "63671281"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
+|Приложение | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,20 +36,27 @@ GET /administrativeUnits
 GET /directory/administrativeUnits
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметры `$count`запроса , `$select`, `$search`, и `$filter``$expand` [OData](/graph/query-parameters), чтобы помочь настроить ответ.
+Этот метод поддерживает параметры `$count`запроса , `$select`, `$search`, `$filter`и `$expand` [OData](/graph/query-parameters) для настройки ответа.
+
+### <a name="retrieve-extensions-and-associated-data"></a>Получение расширений и связанных данных
+
+| Тип расширения       | Комментарии                                                 |
+|----------------------|----------------------------------------------------------|
+| Расширения схемы    | Возвращается только с помощью `$select`. Поддерживает `$filter` (`eq`). |
+| Расширения каталогов | Возвращается по умолчанию. Поддерживает `$filter` (`eq`).          |
 
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {token}. Обязательный.|
+| Авторизация  | Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию [объектов administrativeUnit](../resources/administrativeunit.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [administrativeUnit](../resources/administrativeunit.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -102,20 +109,19 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits",
-    "value": [
-        {
-            "id": "4d7ea995-bc0f-45c0-8c3e-132e93bf95f8",
-            "deletedDateTime": null,
-            "displayName": "Seattle District Technical Schools",
-            "description": "Seattle district technical schools administration",
-            "isMemberManagementRestricted": null,
-            "visibility": "HiddenMembership",
-            "membershipRule": null,
-            "membershipType": null,
-            "membershipRuleProcessingState": null
-        }
-    ]
+  "value": [
+    {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",
+    "id": "49eb93f2-a5a2-4567-ad66-76a3ebd01d84",
+    "deletedDateTime": null,
+    "displayName": "Seattle District Technical Schools",
+    "description": "Seattle district technical schools administration",
+    "visibility": null,
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipType": "Dynamic",
+    "membershipRuleProcessingState": "On"
+    }
+  ]
 }
 ```
 

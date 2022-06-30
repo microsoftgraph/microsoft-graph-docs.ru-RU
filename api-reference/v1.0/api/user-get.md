@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cd2f39a9c507c048794ebb928abc6d9cc22b9f59
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 816220e233346d29c1e13717867bd651597d2563
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204389"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555475"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -59,12 +59,21 @@ GET /me
 
 По умолчанию возвращается только ограниченный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
 
-Чтобы возвратить альтернативный набор свойств, необходимо указать нужный набор свойств [user](../resources/user.md) с помощью параметра запроса OData `$select`. Например, чтобы возвратить свойства _displayName_, _givenName_ и _postalCode_, вам следует добавить к запросу следующее: `$select=displayName,givenName,postalCode`.
+Чтобы возвратить альтернативный набор свойств, необходимо указать нужный набор свойств [user](../resources/user.md) с помощью параметра запроса OData `$select`. Например, чтобы получить свойства _displayName_, _givenName_ и _postalCode_, следует добавить к запросу следующее: `$select=displayName,givenName,postalCode`.
+
+### <a name="retrieve-extensions-and-associated-data"></a>Извлечение расширений и связанных данных
+
+| Тип расширения                     | Комментарии                                                                                              |
+|------------------------------------|-------------------------------------------------------------------------------------------------------|
+| onPremisesExtensionAttributes 1-15 | Возвращается только с помощью `$select`.                                                                         |
+| Расширения схемы                  | Возвращается только с помощью `$select`.                                                                         |
+| Открытые расширения                    | Возвращается только с помощью операции [Получить открытое расширение](opentypeextension-get.md). |
+| Расширения каталога               | Возвращается только с помощью `$select`.                                                                         |
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение|
 |:-----------|:------|
-| Авторизация  | Bearer {token}. Обязательный. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -92,7 +101,7 @@ GET /me
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",

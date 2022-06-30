@@ -5,18 +5,18 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 77e5f4e393911b2f511107279ead62c3a89724d1
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 67f1d557a20399bd1c8b884314eb76bf86ff16a8
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821171"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556019"
 ---
 # <a name="create-open-extension"></a>Создание открытого расширения
 
 Пространство имен: microsoft.graph
 
-Создание открытого расширения (объекта [openTypeExtension](../resources/opentypeextension.md)) и добавление настраиваемых свойств в новый или существующий экземпляр ресурса.
+Создание открытого расширения (объекта [openTypeExtension](../resources/opentypeextension.md)) и добавление настраиваемых свойств в новый или существующий экземпляр ресурса. Вы можете [создать открытое расширение](/graph/api/opentypeextension-post-opentypeextension) в экземпляре ресурса и сохранить в нем пользовательские данные в рамках одной операции, за исключением определенных ресурсов. См. [известные ограничения открытых расширений](/graph/known-issues#extensions) для получения дополнительных сведений.
 
 В таблице раздела [Разрешения](#permissions) перечислены ресурсы, поддерживающие открытые расширения.
 
@@ -39,6 +39,8 @@ ms.locfileid: "65821171"
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
+<!--
+| [administrativeUnit](../resources/administrativeUnit.md) | AdministrativeUnit.ReadWrite.All | Not supported | AdministrativeUnit.ReadWrite.All | -->
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -93,7 +95,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 
 | Имя       | Значение |
 |:---------------|:----------|
-| Авторизация | Bearer {token}. Обязательный. |
+| Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса

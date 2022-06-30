@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e2b6657c3b4475b47f03e33b193ea26630fe304f
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: f69e7570c520b0ddf3d3174373af413820fa4d9d
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095633"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555257"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -48,6 +48,15 @@ GET /users
 Примечание. Некоторые свойства не могут быть возвращены в пользовательском наборе. Следующие свойства поддерживаются только при [извлечении одного пользователя](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.
 
 Следующие свойства не поддерживаются в личных учетных записях Майкрософт и будут `null`: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **streetAddress**.
+
+### <a name="retrieve-extensions-and-associated-data"></a>Извлечение расширений и связанных данных
+
+| Тип расширения                     | Комментарии                                                                  |
+|------------------------------------|---------------------------------------------------------------------------|
+| onPremisesExtensionAttributes 1-15 | Возвращается по умолчанию. Поддерживает `$filter` (`eq`).                  |
+| Расширения схемы                  | Возвращается только с помощью `$select`. Поддерживает `$filter` (`eq`).                  |
+| Открытые расширения                    | Возвращается только с `$expand`, то есть `users?$expand=extensions`. |
+| Расширения каталога               | Возвращается по умолчанию. Поддерживает `$filter` (`eq`).                  |
 
 ## <a name="request-headers"></a>Заголовки запросов
 

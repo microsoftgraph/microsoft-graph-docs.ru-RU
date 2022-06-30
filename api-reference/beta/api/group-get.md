@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 41892000ba3b1e873156948506dd6c852e42c6e4
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 745e60831cbffe18afc9565bfcd459854ea408ef
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65203584"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556047"
 ---
 # <a name="get-group"></a>Вывод группы
 
@@ -30,7 +30,7 @@ ms.locfileid: "65203584"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                         |
-| Приложение                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Для приложений                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Примечание.** В зависимости от функций группы, к которым вы пытаетесь получить доступ, разрешения могут быть ограничены. Дополнительные сведения см. в разделе [Группы](/graph/known-issues#groups) статьи [Известные проблемы с Microsoft Graph](/graph/known-issues).
 
@@ -48,11 +48,19 @@ GET /groups/{id}
 
 Дополнительные сведения о параметрах запроса OData см. в статье [Параметры запроса OData](/graph/query-parameters).
 
+### <a name="retrieve-extensions-and-associated-data"></a>Извлечение расширений и связанных данных
+
+| Тип расширения       | Комментарии                                                                       |
+|----------------------|--------------------------------------------------------------------------------|
+| Расширения схемы    | Возвращается только с помощью `$select`.                                                  |
+| Открытые расширения      | Возврат через операцию [Получение открытого расширения](opentypeextension-get.md). |
+| Расширения каталога | Возвращается по умолчанию.                                                           |
+
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Тип   | Описание               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Обязательный. |
+| Authorization | string | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
