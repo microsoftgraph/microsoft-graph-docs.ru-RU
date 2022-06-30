@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 72007b0e2de2264a4afee4c68b103505815921f5
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 5962b5601f0dfd364bf8b08a25af1d2b326e7bac
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211132"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556229"
 ---
 # <a name="update-group"></a>Update group
 
@@ -40,7 +40,7 @@ PATCH /groups/{id}
 
 | Имя          | Тип   | Описание               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Обязательный. |
+| Authorization | string | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -66,6 +66,13 @@ PATCH /groups/{id}
 > - Только некоторые элементы API групп, относящиеся к основным операциям администрирования групп и управления ими, поддерживают разрешения для приложений и делегированные разрешения. Все остальные элементы API групп, включая обновление **autoSubscribeNewMembers**, поддерживают только делегированные разрешения. Примеры см. в разделе [Известные проблемы](/graph/known-issues#groups).
 >
 > - Правила обновления групп безопасности, поддерживающих почту, в Microsoft Exchange Server могут быть сложными. Дополнительные сведения см. в статье [Управление группами безопасности с поддержкой электронной почты в Exchange Server](/Exchange/recipients/mail-enabled-security-groups).
+
+### <a name="manage-extensions-and-associated-data"></a>Управление расширениями и связанными данными
+
+Используйте этот API для управления [каталогом, схемой и открытыми расширениями](/graph/extensibility-overview) и их данными для пользователей следующим образом:
+
++ Добавляйте, обновляйте и сохраняйте данные в расширениях для существующей группы.
++ Для расширений каталогов и схем удалите все сохраненные данные, задав для свойства пользовательского расширения значение `null`. Для открытых расширений используйте API [удаления открытых расширений](/graph/api/opentypeextension-delete).
 
 ## <a name="response"></a>Отклик
 

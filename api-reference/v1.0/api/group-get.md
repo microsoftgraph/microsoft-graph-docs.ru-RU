@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 006da4f4b653dad8ac3406ddb62caff8af84c6b9
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 6fccabf60e9f625a638f61d0e52053aec31ce28d
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211157"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555928"
 ---
 # <a name="get-group"></a>Вывод группы 
 
@@ -28,9 +28,9 @@ ms.locfileid: "65211157"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                            |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                         |
-| Приложение                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Делегированное (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                                         |
+| Для приложений                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Примечание.** В зависимости от функций группы, к которым вы пытаетесь получить доступ, разрешения могут быть ограничены. Дополнительные сведения см. в разделе [Группы](/graph/known-issues#groups) статьи [Известные проблемы с Microsoft Graph](/graph/known-issues).
 
@@ -48,11 +48,19 @@ GET /groups/{id}
 
 Дополнительные сведения о параметрах запроса OData см. в статье [Параметры запроса OData](/graph/query-parameters).
 
+### <a name="retrieve-extensions-and-associated-data"></a>Извлечение расширений и связанных данных
+
+| Тип расширения       | Комментарии                                                                       |
+|----------------------|--------------------------------------------------------------------------------|
+| Расширения схемы    | Возвращается только с помощью `$select`.                                                  |
+| Открытые расширения      | Возврат через операцию [Получение открытого расширения](opentypeextension-get.md). |
+| Расширения каталога | Возвращается по умолчанию.                                                           |
+
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Тип   | Описание               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Обязательный. |
+| Authorization | string | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

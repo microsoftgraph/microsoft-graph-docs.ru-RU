@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f3aa1f16ba46391d056eb6ab7fbff465cc22b0ae
-ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
+ms.openlocfilehash: b39cc0d28c6c8ca0a6776e85d0dac12e9fc93d92
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "66034574"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555431"
 ---
 # <a name="get-application"></a>Получение объекта application
 
@@ -27,9 +27,10 @@ ms.locfileid: "66034574"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Application.Read.All, Application.ReadWrite.All    |
-|Приложение | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy,  Application.ReadWrite.All, Directory.ReadWrite.All |
+|Для приложений | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
+Замените `{id}` **идентификатором** объекта приложения, также называемым **ИД объекта** на портале Azure.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}
@@ -45,7 +46,7 @@ GET /applications/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя           | Описание                |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {token}. Обязательный.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

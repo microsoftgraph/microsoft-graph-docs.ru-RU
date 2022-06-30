@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c02ff3ad8c3e64e7add955f04e7e9b51ccd500d1
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 8ea66e3ab5018c1ded7c97e5c20312cbcac8ca37
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66093439"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556082"
 ---
 # <a name="get-application"></a>Получение объекта application
 
@@ -25,9 +25,10 @@ ms.locfileid: "66093439"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Application.Read.All, Application.ReadWrite.All |
-|Приложение | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
+|Приложение | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
+Замените `{id}` **идентификатором** объекта приложения, также называемым **ИД объекта** на портале Azure.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}
@@ -45,7 +46,7 @@ GET /applications/{id}
 
 | Имя           | Описание                |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {token}. Обязательный.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 

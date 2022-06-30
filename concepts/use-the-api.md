@@ -1,21 +1,22 @@
 ---
 title: Использование API Microsoft Graph
-description: Microsoft Graph — это соответствующий ограничениям REST веб-API, обеспечивающий доступ к ресурсам службы Microsoft Cloud. После регистрации приложения и получения маркеров аутентификации для пользователя или службы можно отправлять запросы к API Microsoft Graph.
+description: Узнайте, как зарегистрировать свое приложение и получить токены проверки подлинности для пользователя или службы, прежде чем отправлять запросы к API Microsoft Graph.
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 7d146c6082aff2c6d1251dbb8b193f1e29d84d2f
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: c23e9d42656efa3fe842cf1e5703c472e83207c9
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246603"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555445"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Использование API Microsoft Graph
 
 Microsoft Graph — это соответствующий ограничениям REST веб-API, обеспечивающий доступ к ресурсам службы Microsoft Cloud. После [регистрации приложения](auth-register-app-v2.md) и [получения маркеров аутентификации для пользователя](auth-v2-user.md) или [службы](auth-v2-service.md) можно отправлять запросы к API Microsoft Graph.
 
-> **Важно!** Изменяется принцип применения политик условного доступа к Microsoft Graph. Вам необходимо обновить свои приложения, чтобы они могли обрабатывать сценарии, в которых выполняется настройка политик условного доступа. Дополнительные сведения и рекомендации см. в статье [Руководство для разработчиков по условному доступу в Azure Active Directory](/azure/active-directory/develop/active-directory-conditional-access-developer).
+> [!IMPORTANT]
+> Способ применения политик условного доступа к Microsoft Graph меняется. Вам необходимо обновить свои приложения, чтобы они могли обрабатывать сценарии, в которых выполняется настройка политик условного доступа. Дополнительные сведения и рекомендации см. в [руководстве для разработчиков по условному доступу Azure Active Directory](/azure/active-directory/develop/active-directory-conditional-access-developer).
 
 ## <a name="odata-namespace"></a>Пространство имен OData
 

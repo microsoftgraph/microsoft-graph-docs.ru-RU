@@ -1,16 +1,16 @@
 ---
 title: Обзор API Microsoft Teams
-description: 'Microsoft Teams — это единый центр для работы в группах и интеллектуального обмена данными. '
+description: Используйте API Microsoft Teams в Microsoft Graph для автоматизации жизненных циклов команд, создания групп и каналов и управления ими, развертывания приложений и получения уведомлений об изменениях.
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f0bed81ec3857dcb2ef7678b4ff1b1644e0eaae2
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: dedda77e759cb80d1e0579f8aef51847d5afa435
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510506"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556334"
 ---
 # <a name="microsoft-teams-api-overview"></a>Обзор API Microsoft Teams
 
@@ -87,7 +87,8 @@ Microsoft Teams поддерживает подписку на изменени�
 
 Ищете справочные материалы по API для этой службы?
 
-См. статью [API Teams в Microsoft Graph](/graph/api/resources/teams-api-overview).
+- [API Teams в Microsoft Graph версии 1.0](/graph/api/resources/teams-api-overview)
+- [API Teams в бета-версии Microsoft Graph](/graph/api/resources/teams-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

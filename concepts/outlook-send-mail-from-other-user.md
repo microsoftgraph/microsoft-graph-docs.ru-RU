@@ -1,15 +1,15 @@
 ---
-title: Отправка сообщений Outlook от другого пользователя
+title: Отправка сообщений Outlook от другого пользователя с помощью API почты Outlook
 description: Используйте разрешения "Отправить как" и "Отправить от имени" для отправки сообщений Outlook от другого пользователя или с общего почтового ящика в Microsoft Graph.
 author: jasonjoh
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: a6ef4de6e015ed485fe23a142c2a0c44b803d654
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: dad505ff61fe8149772406f4275ad2e981b266f9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176801"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444665"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>Отправка сообщений Outlook от другого пользователя
 
@@ -17,7 +17,9 @@ Exchange Online предусматривает [разрешения для по
 
 ## <a name="permissions"></a>Разрешения
 
-К сообщениям, отправляемым от другого пользователя, применяются два типа разрешений: [разрешения Microsoft Graph](permissions-reference.md) и разрешения для почтового ящика.
+К сообщениям, отправляемым от другого пользователя, применяются два типа разрешений:
+- [Разрешения Microsoft Graph](permissions-reference.md)
+- Разрешения для почтового ящика
 
 ### <a name="microsoft-graph-permissions"></a>Разрешения Microsoft Graph
 
@@ -70,9 +72,9 @@ Exchange Online предусматривает [разрешения для по
 
 ## <a name="sending-with-microsoft-graph"></a>Отправка с помощью Microsoft Graph
 
-Вы можете отправлять сообщения от другого пользователя, [отправляя их напрямую](/graph/api/user-sendmail?view=graph-rest-1.0&preserve-view=true) либо [создавая черновик](/graph/api/user-post-messages?view=graph-rest-1.0&preserve-view=true), а затем [отправляя его](/graph/api/message-send?view=graph-rest-1.0&preserve-view=true).
+Вы можете отправлять сообщения от другого пользователя, [отправляя их напрямую](/graph/api/user-sendmail) либо [создавая черновик](/graph/api/user-post-messages), а затем [отправляя его](/graph/api/message-send).
 
-Чтобы отправлять сообщения от другого пользователя, задайте свойство `from` в [сообщении](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true), отправляемом на адрес электронной почты пользователя, который должен значиться в качестве отправителя. Вам не нужно задавать свойство `sender` — Microsoft Graph задаст его надлежащим образом, на основе разрешений почтового ящика, предоставленных пользователю, который выполнил вход.
+Чтобы отправлять сообщения от другого пользователя, задайте свойство `from` в [сообщении](/graph/api/resources/message), отправляемом на адрес электронной почты пользователя, который должен значиться в качестве отправителя. Вам не нужно задавать свойство `sender` — Microsoft Graph задаст его надлежащим образом, на основе разрешений почтового ящика, предоставленных пользователю, который выполнил вход.
 
 Например, для отправки электронной почты от группы `sales@contoso.com` задайте настройки сообщения как указано ниже.
 
@@ -109,7 +111,7 @@ Exchange Online предусматривает [разрешения для по
 Порядок по умолчанию может меняться в зависимости других сторонних факторов.
 
 - Администраторы могут обновить почтовый ящик пользователя, значащегося в качестве отправителя, таким образом, чтобы [всегда сохранять копии сообщений, отправленных делегированным пользователем,](/exchange/recipients-in-exchange-online/manage-user-mailboxes/automatically-save-sent-items-in-delegator-s-mailbox) в его папке "Отправленные".
-- Задав свойство `saveToSentItems` как `false` в запросе [отправить почту](/graph/api/user-sendmail?view=graph-rest-1.0&preserve-view=true), вы можете отменить сохранение элемента в папке "Отправленные". Тем не менее, если администратор настроил параметр "всегда сохранять копию", сообщения будут по-прежнему сохраняться в папке "Отправленные" пользователя, значащегося как отправитель.
+- Задав свойство `saveToSentItems` как `false` в запросе [отправить почту](/graph/api/user-sendmail), вы можете отменить сохранение элемента в папке "Отправленные". Тем не менее, если администратор настроил параметр "всегда сохранять копию", сообщения будут по-прежнему сохраняться в папке "Отправленные" пользователя, значащегося как отправитель.
 
 ## <a name="examples"></a>Примеры
 
@@ -207,10 +209,8 @@ Content-Type: application/json
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Дополнительные сведения:
-
 - [Зачем выполнять интеграцию с почтой Outlook?](outlook-mail-concept-overview.md)
-- [Использование API почты](/graph/api/resources/mail-api-overview?view=graph-rest-1.0&preserve-view=true) и [вариантов использования](/graph/api/resources/mail-api-overview?view=graph-rest-1.0&preserve-view=true#common-use-cases) API почты в Microsoft Graph 1.0.
+- [Использование API почты ](/graph/api/resources/mail-api-overview) и [варианты его использования](/graph/api/resources/mail-api-overview#common-use-cases) в Microsoft Graph версии 1.0.
 
 <!--
 {

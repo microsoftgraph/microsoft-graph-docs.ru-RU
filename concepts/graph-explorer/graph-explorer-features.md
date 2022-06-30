@@ -1,18 +1,20 @@
 ---
 title: Работа с песочницей Graph
-description: Узнайте, как использовать некоторые важные функции песочницы Graph.
+description: Используйте обозреватель Graph, чтобы отправлять запросы REST API Microsoft Graph и просматривать соответствующие ответы. Узнайте, как использовать некоторые важные функции в Graph Explorer.
 ms.localizationpriority: high
 author: RabebOthmani
-ms.openlocfilehash: ec040c8db2330f9b20407765199adf4a1a84c9ad
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: 925bf7d42068be9141bc1b95c58edcd01ddfc8c8
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176830"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555802"
 ---
 # <a name="work-with-graph-explorer"></a>Работа с песочницей Graph
 
 [Песочница Graph](https://developer.microsoft.com/graph/graph-explorer/) — это средство для разработчика, при помощи которого удобно создавать запросы REST API Microsoft Graph и просматривать их ответы. В этой статье вы узнаете, как использовать некоторые важные функции песочницы Graph.
+
+Обзор см. в статье [Использование Graph Explorer для ознакомления с API Microsoft Graph](/graph/graph-explorer/graph-explorer-overview).
 
 ## <a name="consent-to-permissions"></a>Согласие на разрешения
 

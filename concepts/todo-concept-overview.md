@@ -1,18 +1,19 @@
 ---
 title: Обзор API To Do
-description: Приложение To Do предоставляет простой способ управления задачами и планирования дня
+description: Используйте Microsoft To Do API в Microsoft Graph, чтобы управлять задачами и планировать свой день. Задачи организованы в виде списков задач, доступных в клиентах To Do, Outlook и Teams.
 author: avijityadav
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 3b4fd77adf93b2570ffbb3570a881aaa5e0c551e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 30e4655ddcf4ff96b6cd3c82df80402c2f83d330
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062308"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556292"
 ---
 # <a name="to-do-api-overview"></a>Обзор API To Do
-Приложение Microsoft To Do предоставляет пользователям простой способ управления задачами и планирования дня. Задачи упорядочиваются в списках задач, доступных в клиентах To Do, Outlook и Teams с любого устройства.
+
+Microsoft To Do API в Microsoft Graph предоставляет людям простой способ управлять своими задачами и планировать свой день. Задачи организованы в виде списков задач, к которым можно получить доступ через клиенты To Do, Outlook и Teams с любого устройства.
 
 **Приложение To Do для Windows**
 
@@ -40,6 +41,8 @@ Microsoft To Do предоставляет новый объект под наз
 | Удаление задачи | DELETE https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
 
 ## <a name="api-reference"></a>Справочные материалы по API
+
 Ищете справочные материалы по API для этой службы?
 
-- [API To Do в Microsoft Graph](/graph/api/resources/todo-overview)
+- [API To Do в Microsoft Graph v1.0](/graph/api/resources/todo-overview?view=graph-rest-1.0&preserve-view=true)
+- [To Do API в бета-версии Microsoft Graph](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true)
