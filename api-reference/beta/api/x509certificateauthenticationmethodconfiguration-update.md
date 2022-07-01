@@ -5,19 +5,19 @@ author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 72d2f549ef6a6a01434c90e14ed8da39f70fde55
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 798a994648de5f94d92a7f7b831fdb94135d8516
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397514"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437249"
 ---
 # <a name="update-x509certificateauthenticationmethodconfiguration"></a>Обновление x509CertificateAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств метода проверки подлинности сертификата [X.509](../resources/x509certificateauthenticationmethodconfiguration.md).
+Обновите свойства метода проверки подлинности сертификата [X.509](../resources/x509certificateauthenticationmethodconfiguration.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "63397514"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для делегирования сценариев администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев администратору требуется одна из следующих [Azure AD ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Администратор политики проверки подлинности
 * Глобальный администратор
@@ -55,27 +55,27 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|state|authenticationMethodState|Возможные значения: `enabled`, `disabled`. Наследуется [от проверки подлинностиMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
-|certificateUserBindings|[коллекция x509CertificateUserBinding](../resources/x509certificateuserbinding.md)|Определяет поля в сертификате X.509, которые соединит атрибуты объекта пользователя Azure AD для привязки сертификата к пользователю. Приоритет **объекта** определяет порядок выполнения привязки. Первая привязка, которая будет использоваться для совпадений, а остальные игнорируются. |
-|authenticationModeConfiguration|[x509CertificateAuthenticationModeConfiguration](../resources/x509certificateauthenticationmodeconfiguration.md)|Определяет сильные конфигурации проверки подлинности. Эта конфигурация включает режим проверки подлинности по умолчанию и различные правила для сильных привязки проверки подлинности. |
+|state|authenticationMethodState|Возможные значения: `enabled`, `disabled`. Наследуется [от authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
+|certificateUserBindings|[Коллекция x509CertificateUserBinding](../resources/x509certificateuserbinding.md)|Определяет поля в сертификате X.509, которые сопоставляются с атрибутами объекта пользователя Azure AD для привязки сертификата к пользователю. Приоритет **объекта** определяет порядок выполнения привязки. Будет использоваться первая соответствующая привязка, а остальная часть игнорируется. |
+|authenticationModeConfiguration|[x509CertificateAuthenticationModeConfiguration](../resources/x509certificateauthenticationmodeconfiguration.md)|Определяет конфигурации строгой проверки подлинности. Эта конфигурация включает режим проверки подлинности по умолчанию и различные правила для привязок строгой проверки подлинности. |
 
->**Примечание:** Свойство `@odata.type` со значением должно `#microsoft.graph.x509CertificateAuthenticationMethodConfiguration` быть включено в тело.
+>**Примечание:** Свойство `@odata.type` со значением должно `#microsoft.graph.x509CertificateAuthenticationMethodConfiguration` быть включено в текст.
 
 
 ## <a name="response"></a>Отклик
 
-В случае `204 No Content` успеха этот метод возвращает код отклика и обновленный [объект x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) в тексте ответа.
+В случае успешного `204 No Content` выполнения этот метод возвращает код отклика и обновленный объект [x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса на обновление со следующими настройками:
+Ниже приведен пример запроса на обновление со следующими параметрами:
 
 + Включает метод проверки подлинности сертификата x509 в клиенте.
-+ Настраивает только одну привязку пользователя между свойствами **PrincipalName** сертификата и Azure AD **наPremisesUserPrincipalName** .
++ Настраивает только одну привязку пользователя между certificate **PrincipalName** и Azure AD **onPremisesUserPrincipalName**.
 + Определяет многофакторную проверку подлинности в качестве требования.
-+ Настраивает правила привязки для сильного метода проверки подлинности в отношении типа правила.
++ Настраивает правила привязки для строгого метода проверки подлинности для типа правила.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -136,6 +136,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-x509certificateauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-x509certificateauthenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

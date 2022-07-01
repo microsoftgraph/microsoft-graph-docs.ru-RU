@@ -1,15 +1,15 @@
 ---
 title: Работа с Intune в Microsoft Graph
 description: API Microsoft Graph для Intune обеспечивает программный доступ к сведениям Intune для клиента. API выполняет операции Intune, аналогичные доступным с помощью портала Azure.
-author: rolyon
+author: dougeby
 ms.localizationpriority: high
 ms.prod: intune
-ms.openlocfilehash: 835cdb2e15f942b1adef688e58cea6bd4e83879c
-ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
+ms.openlocfilehash: ade9b1d7579f94e84f8512d8ede342e6d57f2fcc
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61044815"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441155"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Работа с Intune в Microsoft Graph  
 

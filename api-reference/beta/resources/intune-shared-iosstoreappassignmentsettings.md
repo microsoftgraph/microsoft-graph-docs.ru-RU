@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса iosStoreAppAssignmentSettings
 description: Содержит свойства, используемые при назначении мобильного приложения из магазина iOS группе.
-author: rolyon
-ms.localizationpriority: medium
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f614342e59f94d9f336ac6712f97dfeaca69facc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 56ebdadfcf28349b069867bbe494a9429b809a6e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026849"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438586"
 ---
 # <a name="iosstoreappassignmentsettings-resource-type"></a>Тип ресурса iosStoreAppAssignmentSettings
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -30,7 +30,7 @@ ms.locfileid: "59026849"
 |:---|:---|:---|
 |vpnConfigurationId|String|ИД конфигурации VPN, применяемой к этому приложению.|
 |**Приложения**|
-|uninstallOnDeviceRemoval|Логический|Следует ли удалить приложение при удалении устройства из Intune.|
+|uninstallOnDeviceRemoval|Логическое|Указывает, следует ли удалять приложение при удалении устройства из Intune.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 3977c5904d9d92726ed4b7862387ade597409a5a
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: d86dfe4b20508d2b5b1ea0bd2b985d06da9a88c0
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094342"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440378"
 ---
 # <a name="get-ediscoveryreviewtag"></a>Получение ediscoveryReviewTag
 Пространство имен: microsoft.graph.security
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-ceb
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-ediscoveryreviewtag-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-ediscoveryreviewtag-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

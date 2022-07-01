@@ -1,22 +1,22 @@
 ---
 title: Get androidManagedAppProtection
 description: Чтение свойств и связей объекта androidManagedAppProtection.
-author: rolyon
-ms.localizationpriority: medium
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a8d5d3fd54ba21e3c181e3561e8cbb37928c7cb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f3ede667d2f0485ad69846ffe1efd9296343aa93
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59076602"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447362"
 ---
 # <a name="get-androidmanagedappprotection"></a>Get androidManagedAppProtection
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -31,7 +31,7 @@ ms.locfileid: "59076602"
 | &nbsp; &nbsp; **Управление мобильным приложением (MAM)** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp; &nbsp; **Управление мобильным приложением (MAM)** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtecti
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

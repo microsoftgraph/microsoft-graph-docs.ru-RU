@@ -1,15 +1,15 @@
 ---
-title: 'Использование тегов div API OneNote для извлечения данных из записанного содержимого '
-description: " Корпоративные записные книжки в Microsoft 365"
+title: Использование тегов div API OneNote для извлечения данных из записанного содержимого
+description: Используйте API OneNote для извлечения визитных карточек, рецептов и данных о продукте. Включите разделитель, указывающий исходное содержимое, метод извлечения и резервное поведение в запросе.
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: 15a34e07e1d24e333b929a7d2140d6502f907f5d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 94bfffb80c7165d5fa04293443ecd84b46285815
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129763"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446184"
 ---
 # <a name="use-onenote-api-div-tags-to-extract-data-from-captures"></a>Использование тегов div API OneNote для извлечения данных из записанного содержимого 
 
@@ -241,7 +241,8 @@ API оптимизирован для работы с товарами со мн
 
 Если вы не знаете тип контента (визитная карточка, рецепт или товар), который вы отправляете, вы можете использовать неполный метод `extract` и разрешить API OneNote автоматически определять тип контента. Вы можете сделать это, если ваше приложение отправляет изображения различных типов.
 
-> **Примечание.** Если вы не знаете тип контента, который вы отправляете, используйте метод `extract.businesscard`, `extract.recipe` или `extract.product`. В некоторых случаях это позволяет оптимизировать результаты извлечения.
+> [!NOTE]
+> Если вы знаете тип контента, который вы отправляете, следует использовать `extract.businesscard`метод или `extract.recipe``extract.product` метод. В некоторых случаях это позволяет оптимизировать результаты извлечения.
  
 ### <a name="common-scenarios-for-unknown-extractions"></a>Стандартные сценарии извлечения контента неизвестного типа
 

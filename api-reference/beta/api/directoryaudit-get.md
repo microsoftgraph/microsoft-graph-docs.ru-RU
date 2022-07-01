@@ -1,16 +1,16 @@
 ---
 title: Получение directoryAudit
-description: Описывает метод получения ресурса directoryAudit из API Microsoft Graph (бета-версия).
+description: Описывает метод get ресурса directoryAudit (сущности) из microsoft API Graph (бета-версия).
 ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: a4190d9b325b67fc2f6530502f87bb10b644c64b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bc17537c2eafaf53855c65291296c03670d4842a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133972"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445715"
 ---
 # <a name="get-directoryaudit"></a>Получение directoryAudit
 
@@ -18,7 +18,7 @@ ms.locfileid: "62133972"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите определенный элемент журнала Azure Active Directory аудита. Это включает элемент журнала аудита, созданный различными службами в Azure Active Directory, таких как пользователь, приложение, управление устройствами и группой, привилегированное управление удостоверениями (PIM), обзоры доступа, условия использования, защита удостоверений, управление паролями (сбросы паролей самообслуживающего и администратора), управление группой самообслуживаний и так далее.
+Получение определенного элемента журнала аудита Azure Active Directory. К ним относится элемент журнала аудита, созданный различными службами в Azure Active Directory, такими как пользователь, приложение, управление устройствами и группой, управление привилегированными пользователями (PIM), проверки доступа, условия использования, защита идентификации, управление паролями (самостоятельный сброс пароля и сброс пароля администратора), самостоятельное управление группой и т. д.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -31,7 +31,7 @@ ms.locfileid: "62133972"
 |Приложение | AuditLog.Read.All и Directory.Read.All | 
 
 > [!IMPORTANT]
-> Этот API имеет [известные](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
+> Этот API имеет известная проблема и в настоящее время требует согласия на разрешения **AuditLog.Read.All** и **Directory.Read.All**.[](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports)
 
 Кроме того, приложения должны быть [правильно зарегистрированы](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
@@ -44,7 +44,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры запросов OData для настройки ответа. Сведения об использовании этих параметров см. в материале [OData query parameters.](/graph/query-parameters)
+Этот метод поддерживает параметры запросов OData для настройки ответа. Дополнительные сведения об использовании этих параметров см. в разделе параметров [запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -58,7 +58,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект directoryAudit](../resources/directoryaudit.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и [объект directoryAudit](../resources/directoryaudit.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -116,50 +116,63 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",
-  "value": [{
-        "id": "id",
-        "category": "UserManagement",
-        "correlationId": "dax59xfb-5xfa-4x92-8x38-6e1fx7870e30",
-        "result": "success",
-        "resultReason": "Successfully added member to group",
-        "activityDisplayName": "Add member to group",
-        "activityDateTime": "2018-01-09T21:20:02.7215374Z",
-        "loggedByService": "Core Directory",
-        "initiatedBy": {
-            "user": {
-                "id": "72xx09ae-1x37-49x7-9xfe-e3xx964db09b",
-                "displayName": "Jamie Doe",
-                "userPrincipalName": "jdoe@wingtiptoysonline.com",
-                "ipAddress": "127.0.0.1"
-            },
-            "app": null
-        },
-        "targetResources": [{
-            "@odata.type": "#microsoft.graph.TargetResourceGroup",
-            "id": "ef7x527d-6xx2-4xx4-8xxd-cxxfdxx5xx95",
-            "displayName": "Example.com",
-            "modifiedProperties": [{
-                "displayName": "Action Client Name",
-                "oldValue": null,
-                "newValue": "DirectorySync"
-            }],
-            "groupType": "unifiedGroups"
-        }, {
-            "@odata.type": "#microsoft.graph.targetResourceUser",
-            "id": "1x0exxf5-3xx1-4xxb-9xx0-d4xx572xxbb7",
-            "displayName": null,
-            "modifiedProperties": [],
-            "userPrincipalName": "jdoe@contoso.com"
-        }],
-        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36",
-        "additionalDetails": [{
-            "key": "Additional Detail Name",
-            "value": "Additional Detail Value"
-        }]
-    }]
+    "id": "Directory_504a302a-8f2d-418d-b7df-bf77de6ed831_M1N6X_27777783",
+    "category": "UserManagement",
+    "correlationId": "504a302a-8f2d-418d-b7df-bf77de6ed831",
+    "result": "success",
+    "resultReason": "",
+    "activityDisplayName": "Update user",
+    "activityDateTime": "2022-06-21T23:25:00.1458248Z",
+    "loggedByService": "Core Directory",
+    "operationType": "Update",
+    "userAgent": null,
+    "initiatedBy": {
+        "app": null,
+        "user": {
+            "id": "2c940657-1026-4386-bcfd-3176637ba01f",
+            "displayName": "Test Admin",
+            "userPrincipalName": "tadmin@contoso.com",
+            "ipAddress": "",
+            "userType": "Member",
+            "homeTenantId": null,
+            "homeTenantName": null
+        }
+    },
+    "targetResources": [
+        {
+            "id": "2c940657-1026-4386-bcfd-3176637ba01f",
+            "displayName": "Test User",
+            "type": "User",
+            "userPrincipalName": "tuser@contoso.com",
+            "groupType": null,
+            "modifiedProperties": [
+                {
+                    "displayName": "StrongAuthenticationMethod",
+                    "oldValue": "[{\"MethodType\":6,\"Default\":true},{\"MethodType\":7,\"Default\":false}]",
+                    "newValue": "[{\"MethodType\":7,\"Default\":false},{\"MethodType\":6,\"Default\":true},{\"MethodType\":0,\"Default\":false},{\"MethodType\":5,\"Default\":false}]"
+                },
+                {
+                    "displayName": "Included Updated Properties",
+                    "oldValue": null,
+                    "newValue": "\"StrongAuthenticationMethod\""
+                },
+                {
+                    "displayName": "TargetId.UserType",
+                    "oldValue": null,
+                    "newValue": "\"Member\""
+                }
+            ]
+        }
+    ],
+    "additionalDetails": [
+        {
+            "key": "UserType",
+            "value": "Member"
+        }
+    ]
 }
 ```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

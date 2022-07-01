@@ -5,19 +5,19 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a77b98debd87be27c167c9bca95ecea30c81bb16
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: e9cf808e13c180bf3dc1da676f36b8a3219b29f5
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365052"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443760"
 ---
 # <a name="get-microsoftauthenticatorauthenticationmethodconfiguration"></a>Получение объекта microsoftAuthenticatorAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md), который представляет политику метода Microsoft Authenticator проверки подлинности для Azure AD клиента.
+Получение свойств и связей объекта [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md), который представляет политику метода проверки подлинности Microsoft Authenticator для Azure AD клиента.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-microsoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-microsoftauthenticatorauthenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

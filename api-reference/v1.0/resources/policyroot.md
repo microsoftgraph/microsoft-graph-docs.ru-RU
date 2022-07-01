@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: fd9c30baa16ef404c363448f06d211613bad64e7
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: dc54d92a520961441545962fa996efd39fa8ca3d
+ms.sourcegitcommit: a30eea2fa59087088f50e58706b91c0eb5b7a802
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398414"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66604484"
 ---
 # <a name="policyroot-resource-type"></a>Тип ресурса policyRoot
 
@@ -24,7 +24,7 @@ ms.locfileid: "65398414"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор политики. Наследуется от [сущности](../resources/entity.md).|
+|id|Строка|Уникальный идентификатор политики. Наследуется от [сущности](../resources/entity.md).|
 
 
 ## <a name="relationships"></a>Связи
@@ -35,7 +35,8 @@ ms.locfileid: "65398414"
 | authenticationFlowsPolicy                 | [authenticationFlowsPolicy](authenticationflowspolicy.md)                                                 | Конфигурация политики для самостоятельной регистрации внешних пользователей.                                                                                   |
 | authenticationMethodsPolicy               | [authenticationMethodsPolicy](authenticationmethodspolicy.md)                                             | Методы проверки подлинности и пользователи, которым разрешено использовать их для входа и выполнения многофакторной проверки подлинности (MFA) в Azure Active Directory (Azure AD). |
 | authorizationPolicy                       | [Коллекция authorizationPolicy](authorizationpolicy.md)                                                  | Политика, которая управляет Azure AD авторизации.                                                                                                            |
-| claimsMappingPolicies                     | Коллекция [claimsMappingPolicy](claimsmappingpolicy.md)                                                  | Политики сопоставления утверждений для протоколов WS-Fed, SAML, OAuth 2.0 и OpenID Подключение для маркеров, выданных конкретному приложению.                                   |
+| claimsMappingPolicies                     | Коллекция [claimsMappingPolicy](claimsmappingpolicy.md)                                                  | Политики сопоставления утверждений для протоколов WS-Fed, SAML, OAuth 2.0 и OpenID Connect для маркеров, выданных конкретному приложению.                                   |
+| crossTenantAccessPolicy                   | [crossTenantAccessPolicy](crosstenantaccesspolicy.md)                           | Пользовательские правила, определяющие сценарий доступа при взаимодействии с внешними Azure AD клиентами.                                                                                                                     |
 | conditionalAccessPolicies                 | [conditionalAccessPolicy](conditionalaccesspolicy.md)                                                     | Пользовательские правила, определяющие сценарий доступа.                                                                                                                     |
 | featureRolloutPolicies                    | [Коллекция featureRolloutPolicy](featurerolloutpolicy.md)                                                | Политика развертывания компонентов, связанная с объектом каталога.                                                                                                       |
 | homeRealmDiscoveryPolicies                | Коллекция [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md)                                        | Политика для управления Azure AD проверки подлинности для федеративных пользователей.                                                                                          |
@@ -47,7 +48,7 @@ ms.locfileid: "65398414"
 | tokenLifetimePolicies                     | Коллекция [tokenLifetimePolicy](tokenlifetimepolicy.md)                                                  | Политика, которая управляет временем существования маркера доступа JWT, маркера идентификатора или токена SAML 1.1/2.0, выданного Azure AD.                                                |
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

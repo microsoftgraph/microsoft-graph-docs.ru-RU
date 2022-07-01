@@ -1,16 +1,16 @@
 ---
 title: Удаление типа ресурса homeRealmDiscoveryPolicy
-description: Удалите homeRealmDiscoveryPolicy из службыPrincipal.
+description: Удалите homeRealmDiscoveryPolicy из servicePrincipal.
 ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6c415cd7669416734fd61758da456b3148128f64
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: 98f10792ad0abf3a1980042852b42f97169c8d31
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262164"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447261"
 ---
 # <a name="remove-homerealmdiscoverypolicy"></a>Удаление типа ресурса homeRealmDiscoveryPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "62262164"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) из [службыPrincipal](../resources/servicePrincipal.md).
+Удалите [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) из [servicePrincipal](../resources/servicePrincipal.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "62262164"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All  |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Приложение                            | Policy.Read.All и Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.OwnedBy, Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ DELETE /servicePrincipals/{servicePrincipalId}/homeRealmDiscoveryPolicies/{polic
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -83,12 +83,20 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/19c308f2-e088-464d-8cc
 [!INCLUDE [sample-code](../includes/snippets/java/delete-homerealmdiscoverypolicy-from-serviceprincipal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-homerealmdiscoverypolicy-from-serviceprincipal-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-homerealmdiscoverypolicy-from-serviceprincipal-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

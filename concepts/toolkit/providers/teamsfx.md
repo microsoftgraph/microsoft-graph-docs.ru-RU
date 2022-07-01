@@ -3,12 +3,12 @@ title: Поставщик TeamsFx
 description: Используйте поставщик TeamsFx в приложениях Microsoft Teams, чтобы предоставить компонентам Microsoft Graph Toolkit доступ к Microsoft Graph.
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.openlocfilehash: 62df3d038c7a407da77e92b1d4de04fd1832aacf
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 0789bcff15b523ae8227a2dccf3b0360810fd64e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65694396"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438243"
 ---
 # <a name="teamsfx-provider"></a>Поставщик TeamsFx
 
@@ -60,5 +60,7 @@ public render(): void {
 
 Пример, в котором показано, как инициализировать поставщика TeamsFx, см. в примере [экспорта контактов](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/graph-toolkit-contact-exporter).
 
+
 ## <a name="see-also"></a>См. также
-* [начало работы разработки Microsoft Teams и Teams Toolkit](https://aka.ms/teamsfx-docs)
+* [Начало работы с разработкой Microsoft Teams и Набора средств Teams](https://aka.ms/teamsfx-docs)
+* [Один семинар по Центру повышения производительности](https://github.com/OfficeDev/OneProductivityHub-TeamsFx)

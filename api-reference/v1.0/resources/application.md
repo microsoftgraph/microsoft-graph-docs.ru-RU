@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 188da50ffc613d375fbd57a2035b49a07da624a8
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 2414f261e277c10ddff8fe1ab1aaa9228ff589c6
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094412"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556257"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -18,7 +18,12 @@ ms.locfileid: "66094412"
 
 Представляет приложение. Любое приложение, передающее проверку подлинности в Azure Active Directory (Azure AD), должно быть зарегистрировано в каталоге. Регистрация приложения включает уведомление Azure AD о вашем приложении, в том числе URL-адрес его расположения, URL-адрес для отправки ответов после проверки подлинности, URI для определения приложения и многое другое. Дополнительную информацию см. в статье [Основные сведения о регистрации приложения в Azure AD](/azure/active-directory/develop/authentication-vs-authorization#basics-of-registering-an-application-in-azure-ad). Наследуется от [directoryObject](directoryobject.md).
 
-Этот ресурс поддерживает отслеживание добавлений, удалений и обновлений с помощью [разностного запроса](/graph/delta-query-overview) с функцией [delta](../api/application-delta.md). Этот ресурс относится к открытому типу, который позволяет передавать другие свойства.
+Этот ресурс относится к открытому типу, который позволяет передавать другие свойства.
+
+Этот ресурс поддерживает:
+
+- добавление собственных данных к настраиваемым свойствам в виде [расширений](/graph/extensibility-overview);
+- отслеживание дополнений, удалений и обновлений с помощью [запроса изменений](/graph/delta-query-overview) (функция [delta](../api/user-delta.md)).
 
 ## <a name="methods"></a>Методы
 
@@ -80,7 +85,7 @@ ms.locfileid: "66094412"
 | disabledByMicrosoftStatus | Строка | Указывает, отключила ли корпорация Майкрософт зарегистрированное приложение. Возможные значения: `null` (значение по умолчанию), `NotDisabled` и `DisabledDueToViolationOfServicesAgreement` (возможные причины: подозрительные, оскорбительные или вредоносные действия, а также нарушение соглашения об использовании служб Майкрософт).<br><br> Поддерживает `$filter` (`eq`, `ne`, `not`). |
 | displayName | String | Отображаемое имя приложения. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`), `$search` и `$orderBy`. |
 | groupMembershipClaims | String | Настраивает утверждение `groups`, выданное в маркере пользователя или маркере доступа OAuth 2.0, ожидаемом приложением. Чтобы задать этот атрибут, используйте одно из следующих допустимых строковых значений: `None`, `SecurityGroup` (для групп безопасности и ролей Azure AD), `All` (предоставит все группы безопасности, группы рассылки и роли каталога Azure AD, участником которых является выполнивший вход пользователь). |
-| id | String | Уникальный идентификатор приложения. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение NULL не допускается. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `in`).|
+| id | String | Уникальный идентификатор объекта приложения. Это свойство называется **идентификатором объекта** на портале Azure. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `in`).|
 | identifierUris | Коллекция String | Это значение, также известное как URI идентификатора приложения, задается, когда приложение используется в качестве приложения-ресурса. IdentifierUris выступает в качестве префикса для областей, на которые вы будете ссылаться в коде API, он должен быть уникальным на глобальном уровне. Можно использовать предоставленное по умолчанию значение, которое находится в форме `api://<application-client-id>`, или указать более читаемый URI, например `https://contoso.com/api`. Дополнительные сведения о допустимых шаблонах identifierUris и рекомендуемых методах см. в статье [Рекомендации по безопасной регистрации приложений Azure AD](/azure/active-directory/develop/security-best-practices-for-app-registration#appid-uri-configuration). Значение null не допускается. <br><br>Поддерживает `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`).|
 | info | [informationalUrl](informationalurl.md) | Базовые данные профиля для приложения, такие как URL-адреса маркетинга, поддержки, условий обслуживания и заявления о конфиденциальности. Условия обслуживания и заявление о конфиденциальности отображаются в окне запроса согласия пользователя. Дополнительные сведения см. в статье [Добавление условий обслуживания и заявления о конфиденциальности для зарегистрированных приложений Azure AD](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le` и `eq` для значений `null`). |
 | isDeviceOnlyAuthSupported | Boolean | Указывает, поддерживает ли приложение проверку подлинности устройства без пользователя. Значение по умолчанию: `false`.  |

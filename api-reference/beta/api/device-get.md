@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: dec9c03571ebdaae8e0557d7dffbd369f7c2c5c8
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: c8b328a93c72c17bfff376f803ddc5a8ffc018c9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671288"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440055"
 ---
 # <a name="get-device"></a>Вывод устройства
 
@@ -20,7 +20,7 @@ ms.locfileid: "63671288"
 
 Получение свойств и связей объекта устройства.
 
-Так как **ресурс устройства** поддерживает [расширения](/graph/extensibility-overview), `GET` вы также можете использовать операцию для получения пользовательских свойств и данных расширения в **экземпляре** устройства.
+Так как **ресурс устройства** поддерживает [расширения](/graph/extensibility-overview), `GET` можно также использовать операцию для получения пользовательских свойств и данных расширения в **экземпляре** устройства.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -34,7 +34,7 @@ ms.locfileid: "63671288"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-В `{id}` запросе имеется значение свойства **id** устройства, а не **свойства deviceId** .
+В `{id}` запросе содержится значение свойства **идентификатора** устройства, а не **свойства deviceId** .
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}
@@ -54,7 +54,7 @@ GET /devices/{id}
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [device](../resources/device.md) в тексте отклика.
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-a-device"></a>Пример 1. Получить устройство
+### <a name="example-1-get-a-device"></a>Пример 1. Получение устройства
 
 #### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -87,11 +87,15 @@ GET https://graph.microsoft.com/beta/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc36
 [!INCLUDE [sample-code](../includes/snippets/go/get-device-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-device-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
-В следующем примере показан ответ на устройство без **имен хост-имен**. 
+В следующем примере показан ответ для устройства без **имени узла**. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -115,7 +119,7 @@ Content-type: application/json
 }
 ```
 
-В следующем примере показан ответ на устройство с **именами hostNames**. 
+В следующем примере показан ответ для устройства с **hostNames**. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -137,7 +141,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-device-and-return-only-its-id-and-extensionattributes-properties"></a>Пример 2. Получить устройство и вернуть только его свойства id и extensionAttributes
+### <a name="example-2-get-a-device-and-return-only-its-id-and-extensionattributes-properties"></a>Пример 2. Получение устройства и возврат только его свойств id и extensionAttributes
 
 #### <a name="request"></a>Запрос
 
@@ -170,6 +174,10 @@ GET https://graph.microsoft.com/beta/devices/6a59ea83-02bd-468f-a40b-f2c3d182198
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-device-select-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-device-select-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,21 +1,21 @@
 ---
-title: Получение расписания доступности пользователей и ресурсов
-description: Общим сценарием на рабочем месте или в учебном заведении является просмотр доступности пользователя для собрания или доступности команды, помещения или оборудования в некоторый период времени.
+title: Получить график занятости пользователей и ресурсов календаря Outlook
+description: Используйте действие getSchedule, чтобы получить информацию о доступности одного или нескольких пользователей, списков рассылки или ресурсов за определенный период времени.
 author: tariq-sharif
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 2a7a4fdfb61e5a769836bf8e85b06d1baabe0c63
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 263e3b5462b688f0dff98714bd646a247dde9765
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139060"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439034"
 ---
-# <a name="get-freebusy-schedule-of-users-and-resources"></a>Получение расписания доступности пользователей и ресурсов
+# <a name="get-freebusy-schedule-of-outlook-calendar-users-and-resources"></a>Получить график занятости пользователей и ресурсов календаря Outlook
 
 Общим сценарием на рабочем месте или в учебном заведении является просмотр доступности пользователя для собрания или доступности команды, помещения или оборудования в некоторый период времени.
 
-Действие [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0) позволяет получить сведения о доступности одной или нескольких сущностей (пользователей, списков рассылки или ресурсов) для определенного периода времени. 
+Действие [getSchedule](/graph/api/calendar-getschedule) позволяет получить сведения о доступности одной или нескольких сущностей &mdash;пользователей, списков рассылки или ресурсов&mdash; для определенного периода времени.
 
 ## <a name="example"></a>Пример
 
@@ -135,7 +135,7 @@ Content-type: application/json
 
 ## <a name="how-does-getschedule-compare-with-findmeetingtimes"></a>Сравнение getSchedule с findMeetingTimes
 
-Действие [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) похоже на **getSchedule** тем, что оба они считывают сведения о доступности и рабочем времени указанных пользователей и ресурсов. Эти два действиями отличаются по нескольким основным моментам.
+Действие [findMeetingTimes](/graph/api/user-findmeetingtimes) похоже на **getSchedule** тем, что оба они считывают сведения о доступности и рабочем времени указанных пользователей и ресурсов. Эти два действиями отличаются по нескольким основным моментам.
 
 ### <a name="application"></a>Приложение
 

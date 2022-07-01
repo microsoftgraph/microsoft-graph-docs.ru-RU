@@ -1,16 +1,16 @@
 ---
-title: Обзор API Поиска (Майкрософт) в Microsoft Graph
-description: Используйте API Поиска (Майкрософт) для индексирования контента и добавления в приложения функций поиска в Office и индексированном контенте.
+title: Обзор Microsoft Search API в Microsoft Graph
+description: Используйте Microsoft Search API в Microsoft Graph, чтобы расширить возможности Microsoft Search в своих приложениях. Запрашивайте данные, которые Microsoft Search индексирует и включает настраиваемые внешние данные.
 ms.localizationpriority: high
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 05ab6e22ba23c16ce1ed1c0da7b622f6110074f2
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: ee2a62e6be739122140ccadefd993e069fa9e6cd
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587443"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446093"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Обзор API Поиска (Майкрософт) в Microsoft Graph
 
@@ -21,13 +21,13 @@ ms.locfileid: "64587443"
 
 ### <a name="one-unified-search-endpoint-for-microsoft-cloud-data"></a>Единая конечная точка поиска для данных Microsoft Cloud
 
-API Поиска (Майкрософт) предоставляет единую конечную точку поиска, которую можно использовать для [запроса](/graph/api/search-query) в Microsoft Cloud данных (сообщений и событий в почтовых ящиках Outlook, а также файлов в OneDrive и SharePoint), индексированных в Поиске (Майкрософт).
+Microsoft Search API предоставляет одну унифицированную конечную точку поиска, которую можно использовать для [запроса](/graph/api/search-query) данных в облачных&mdash;сообщениях Microsoft и событиях в почтовых ящиках Outlook и файлах в OneDrive и SharePoint&mdash;, которые Microsoft Search уже индексирует.
 
 ### <a name="include-custom-external-data-in-search-experience"></a>Включение настраиваемых внешних данных в интерфейс поиска
 
-Используйте [соединители Microsoft Graph](/microsoftsearch/connectors-overview), чтобы включить данные, не входящие в Microsoft Cloud, в возможности поиска. Например, можно подключиться к базе данных отдела кадров организации или к каталогу продукции. Затем используйте API Поиска (Майкрософт), чтобы [запрашивать](/graph/api/search-query) внешний источник данных. 
+Используйте [соединители Microsoft Graph](/microsoftsearch/connectors-overview), чтобы включить данные, не входящие в Microsoft Cloud, в возможности поиска. Например, можно подключиться к базе данных отдела кадров организации или к каталогу продукции. Затем используйте API Поиска (Майкрософт), чтобы [запрашивать](/graph/api/search-query) внешний источник данных.
 
-Просмотрите [коллекцию соединителей Microsoft Graph](/microsoftsearch/connectors-gallery), чтобы найти готовые к использованию соединители. Вы также можете [создавать собственные соединители](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true#common-use-cases), чтобы индексировать внешние настраиваемые элементы и отправлять запросы к определенным внешним источникам данных.
+Просмотрите [коллекцию соединителей Microsoft Graph](/microsoftsearch/connectors-gallery), чтобы найти готовые к использованию соединители. Вы также можете [создавать собственные соединители](/graph/api/resources/indexing-api-overview#common-use-cases), чтобы индексировать внешние настраиваемые элементы и отправлять запросы к определенным внешним источникам данных.
 
 ### <a name="consistent-up-to-date-search-experience"></a>Единый актуальный интерфейс поиска
 
@@ -40,17 +40,17 @@ API Поиска (Майкрософт) поддерживает поиск сл
 - Ресурсы [message](/graph/api/resources/message) почты Outlook и [event](/graph/api/resources/event) календаря.
 - Файлы и папки в SharePoint и OneDrive (ресурсы [driveItem](/graph/api/resources/driveitem)), ресурсы [list](/graph/api/resources/list), [listItem](/graph/api/resources/listitem), [site](/graph/api/resources/site) и [drive](/graph/api/resources/drive).
 - Ресурсы [person](/graph/api/resources/person) в организации, наиболее релевантные для пользователя.
-- Содержимое, отправляемое через платформу соединителей Microsoft Graph: ресурсы [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true).
+- Содержимое, отправляемое через платформу соединителей Microsoft Graph: ресурсы [externalItem](/graph/api/resources/externalitem).
 - Ресурсы ответов административного поиска: ресурсы [acronyms](/graph/api/resources/search-acronym), [bookmarks](/graph/api/resources/search-bookmark) и [QnA](/graph/api/resources/search-qna).
 
 ## <a name="api-reference"></a>Справочные материалы по API
 
 Ищете справочные материалы по API для этой службы?
 
-- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true)(версия 1.0)
-- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)(предварительная версия)
-- [Использование API Поиска (Майкрософт) для индексирования данных](/graph/api/resources/indexing-api-overview) (предварительная версия)
-- [Используйте API Поиска (Майкрософт) для управления ответами административного поиска](/graph/api/resources/search-api-answers-overview?view=graph-rest-beta&preserve-view=true) (предварительная версия)
+- [Используйте Microsoft Search API для запроса данных версии 1.0](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [Используйте Microsoft Search API для запроса бета-данных](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Использование API Поиска (Майкрософт) для индексирования данных](/graph/api/resources/indexing-api-overview)
+- [Используйте Microsoft Search API для управления бета-версией административных ответов на поиск](/graph/api/resources/search-api-answers-overview?view=graph-rest-beta&preserve-view=true) (предварительная версия)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

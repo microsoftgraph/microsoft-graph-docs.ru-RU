@@ -1,22 +1,22 @@
 ---
-title: Получить certificateBasedAuthConfiguration
-description: Получите свойства объекта certificatebasedauthconfiguration.
+title: Получение объекта certificateBasedAuthConfiguration
+description: Получение свойств объекта certificatebasedauthconfiguration.
 ms.localizationpriority: medium
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9677cecab1a74c753adf227a5d58e303567ef6f4
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 31c040337f28b56c025918cd9bfa7e512c4086c4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394315"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436591"
 ---
-# <a name="get-certificatebasedauthconfiguration"></a>Получить certificateBasedAuthConfiguration
+# <a name="get-certificatebasedauthconfiguration"></a>Получение объекта certificateBasedAuthConfiguration
 
 Пространство имен: microsoft.graph
 
-Получите свойства объекта [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) .
+Получение свойств объекта [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -48,7 +48,7 @@ GET /organization/{id}/certificateBasedAuthConfiguration/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы этот метод возвращает код ответа и запрашиваемого объекта [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и запрашиваемый объект [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/organization/{id}/certificateBasedAuthConfi
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-certificatebasedauthconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-certificatebasedauthconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

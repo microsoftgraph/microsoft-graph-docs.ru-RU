@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 18b519948408cf0fa7b8e745bc046400530d5fe6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8ba794db9c8549bc9a490223cd3805681f93215b
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110360"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445904"
 ---
 # <a name="list-messages"></a>Список сообщений
 
@@ -84,7 +84,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | Prefer: outlook.body-content-type | string | Формат возвращаемых свойств **body** и **uniqueBody**. Возможные значения: "text" или "html". Если заголовок не указан, свойства **body** и **uniqueBody** возвращаются в формате HTML. Необязательный параметр. |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -94,7 +94,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## <a name="examples"></a>Примеры
 ### <a name="example-1-list-all-messages"></a>Пример 1. Перечисление всех сообщений
 #### <a name="request"></a>Запрос
-Данный пример получает по умолчанию 10 верхних сообщений в почтовом ящике выполнившего вход пользователя. `$select` используется для получения подмножества свойств каждого сообщения в ответе.
+Вот пример, который получает первые 10 сообщений по умолчанию в почтовом ящике вошедшего в систему пользователя. `$select` используется для получения подмножества свойств каждого сообщения в ответе.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

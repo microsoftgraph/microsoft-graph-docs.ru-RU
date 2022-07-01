@@ -1,26 +1,26 @@
 ---
-title: Обновление без пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration
-description: Обновление свойств объекта без пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration.
+title: Обновление объекта passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
+description: Обновление свойств объекта passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b809d05d2f3b58ed17b108fee3d4ec3871b0062c
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 13b63803800372ae14187876c671fb4adabcd97d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395400"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439970"
 ---
-# <a name="update-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>Обновление passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (deprecated)
+# <a name="update-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>Обновление объекта passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (не рекомендуется)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновим свойства объекта [PasswordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md), который представляет политику метода проверки подлинности Microsoft Authenticator passwordless Телефон для клиента Azure AD.
+Обновите свойства объекта [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md), который представляет политику метода проверки подлинности на телефоне без пароля Microsoft Authenticator для Azure AD клиента.
 
 > [!CAUTION]
-> API Microsoft Authenticator без паролей Телефон для политики проверки подлинности для регистрации не используется и перестал возвращать результаты 31 декабря 2020 г. Используйте новую политику [Microsoft Authenticator проверки подлинности](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md).
+> API политики проверки подлинности для телефона без пароля Microsoft Authenticator устарел и перестал возвращать результаты 31 декабря 2020 г. Используйте новую политику метода [проверки подлинности Microsoft Authenticator](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +31,7 @@ ms.locfileid: "63395400"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для делегирования сценариев администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев администратору требуется одна из следующих [Azure AD ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Администратор политики проверки подлинности
 * Глобальный администратор
@@ -53,12 +53,12 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/p
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
-В корпусе запроса устройте представление JSON без [пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) со значениями полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+## <a name="request-body"></a>Основной текст запроса
+В тексте запроса добавьте представление объекта [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) в формате JSON со значениями полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-Список свойств см. в списке [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md).
+Список свойств см. в разделе [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md).
 
->**Примечание:** Свойство `@odata.type` со значением должно `#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration` быть включено в тело.
+>**Примечание:** Свойство `@odata.type` со значением должно `#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration` быть включено в текст.
 
 
 ## <a name="response"></a>Отклик
@@ -102,6 +102,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

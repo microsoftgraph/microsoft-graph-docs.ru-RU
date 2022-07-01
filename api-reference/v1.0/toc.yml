@@ -5133,6 +5133,42 @@ items:
                                 href: api/ipnamedlocation-update.md
                               - name: Delete
                                 href: api/ipnamedlocation-delete.md
+              - name: Межтенантный доступ
+                items:
+                  - name: Обзор
+                    href: resources/crosstenantaccesspolicy-overview.md
+                  - name: Политика
+                    items:
+                      - name: Политика межтенантного доступа
+                        href: resources/crosstenantaccesspolicy.md
+                      - name: Получение
+                        href: api/crosstenantaccesspolicy-get.md
+                      - name: Обновление
+                        href: api/crosstenantaccesspolicy-update.md
+                  - name: Параметры по умолчанию
+                    items:
+                      - name: Параметры по умолчанию для межтенантного доступа
+                        href: resources/crosstenantaccesspolicyconfigurationdefault.md
+                      - name: Получение
+                        href: api/crosstenantaccesspolicyconfigurationdefault-get.md
+                      - name: Обновление
+                        href: api/crosstenantaccesspolicyconfigurationdefault-update.md
+                      - name: Сброс до системного значения по умолчанию
+                        href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
+                  - name: Параметры партнера
+                    items:
+                      - name: Параметры партнера для межтенантного доступа
+                        href: resources/crosstenantaccesspolicyconfigurationpartner.md
+                      - name: Список
+                        href: api/crosstenantaccesspolicy-list-partners.md
+                      - name: Создание
+                        href: api/crosstenantaccesspolicy-post-partners.md
+                      - name: Получение
+                        href: api/crosstenantaccesspolicyconfigurationpartner-get.md
+                      - name: Обновление
+                        href: api/crosstenantaccesspolicyconfigurationpartner-update.md
+                      - name: Delete
+                        href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
               - name: Операции с политикой данных
                 href: resources/datapolicyoperation.md
                 items:
@@ -6699,7 +6735,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Создание плана

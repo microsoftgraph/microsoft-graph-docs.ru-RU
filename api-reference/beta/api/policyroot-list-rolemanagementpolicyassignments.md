@@ -1,32 +1,32 @@
 ---
 title: Перечисление объектов roleManagementPolicyAssignment
-description: Получите ресурсы unifiedRoleManagementPolicyAssignment из свойства навигации roleManagementPolicyAssignments.
+description: Получение списка объектов unifiedRoleManagementPolicyAssignment и их свойств.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ff65921feadb2f2c77cefb0e8f5141d9bcc17eaa
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 9b22efda8fc87d9aa27e3335873a220be9588b2c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399476"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444628"
 ---
 # <a name="list-rolemanagementpolicyassignments"></a>Перечисление объектов roleManagementPolicyAssignment
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите ресурсы unifiedRoleManagementPolicyAssignment из свойства навигации roleManagementPolicyAssignments.
+Получение сведений о всех назначениях политик управления ролями, включая политики и правила, связанные с Azure AD ролей.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|PrivilegedAccess.ReadWrite.AzureAD|
+|Делегированные (рабочая или учебная учетная запись)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложения|PrivilegedAccess.Read.AzureAD|
+|Приложение|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -35,11 +35,11 @@ ms.locfileid: "65399476"
 }
 -->
 ``` http
-GET /policies/roleManagementPolicyAssignments
+GET /policies/roleManagementPolicyAssignments?$filter=scopeId eq 'scopeId' and scopeType eq 'scopeType'
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает все параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Для этого метода требуется параметр `$filter` запроса (`eq`) для области запроса **scopeId** и **scopeType**. Можно также выполнить фильтрацию по **roleDefinitionId** `$select` `$expand` или использовать параметры запроса и OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -64,7 +64,7 @@ GET /policies/roleManagementPolicyAssignments
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments?$filter=scopeId eq '/' and scopeType eq 'Directory'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrolemanagementpolicyassignment-csharp-snippets.md)]
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyAssignment"
+  "@odata.type": "Collection(microsoft.graph.unifiedRoleManagementPolicyAssignment)"
 }
 -->
 ``` http
@@ -107,15 +107,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-      "policyId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-      "scopeId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-      "scopeType": "subscription",
-      "roleDefinitionId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicyAssignments",
+    "value": [
+        {
+            "id": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9_fe930be7-5e62-47db-91af-98c3a49a38b1",
+            "policyId": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9",
+            "scopeId": "/",
+            "scopeType": "Directory",
+            "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1"
+        },
+        {
+            "id": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_da83a66c-eb51-44ae-98d8-3da5f924f90a_0526716b-113d-4c15-b2c8-68e3c22b9f80",
+            "policyId": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_da83a66c-eb51-44ae-98d8-3da5f924f90a",
+            "scopeId": "/",
+            "scopeType": "Directory",
+            "roleDefinitionId": "0526716b-113d-4c15-b2c8-68e3c22b9f80"
+        }
+    ]
 }
 ```
 

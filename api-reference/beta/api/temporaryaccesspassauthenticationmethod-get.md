@@ -5,12 +5,12 @@ author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ae0306b18688367679d5adfbb3334b3f16f23757
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: c9680fd277f17efcb44d3fc8ea955397f78eb6f3
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095673"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443173"
 ---
 # <a name="get-temporaryaccesspassauthenticationmethod"></a>Получение temporaryAccessPassAuthenticationMethod
 Пространство имен: microsoft.graph
@@ -39,7 +39,7 @@ ms.locfileid: "66095673"
 | Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 В делегированных сценариях, когда администратор действует с другим пользователем, администратору требуется одна из следующих Azure AD [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-* Глобальный администратор
+* глобальный администратор;
 * Глобальный читатель
 * привилегированный администратор проверки подлинности;
 * администратор проверки подлинности.
@@ -72,6 +72,8 @@ GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods/{t
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_temporaryAccessPassAuthenticationMethod"
@@ -80,6 +82,28 @@ GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods/{t
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/temporaryAccessPassMethods/05267842-25b2-4b21-8abd-8e4982796f7f
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-temporaryaccesspassauthenticationmethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-temporaryaccesspassauthenticationmethod-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-temporaryaccesspassauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-temporaryaccesspassauthenticationmethod-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-temporaryaccesspassauthenticationmethod-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

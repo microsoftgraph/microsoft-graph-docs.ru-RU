@@ -5,16 +5,32 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 3a5c0c707ce2164dd335e36983ad4d55155fe56a
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 3e1c3cc68afaa2be716f05ddf6e0a385eff9b540
+ms.sourcegitcommit: a30eea2fa59087088f50e58706b91c0eb5b7a802
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66445869"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66604491"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
 Пространство имен: microsoft.graph
+
+
+### <a name="crosstenantaccesspolicytargetconfigurationaccesstype-values"></a>Значения crossTenantAccessPolicyTargetConfigurationAccessType
+
+|Member|
+|:---|
+|Разрешены|
+|Заблокирован|
+|unknownFutureValue|
+
+### <a name="crosstenantaccesspolicytargettype-values"></a>Значения crossTenantAccessPolicyTargetType
+
+|Member|
+|:---|
+|пользователь|
+|group|
 
 ### <a name="federatedidpmfabehavior-values"></a>Значения federatedIdpMfaBehavior
 |Member|
@@ -218,7 +234,7 @@ ms.locfileid: "66445869"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |blockSignIn|
 |blockSignInAndDelete|
 |unknownFutureValue|
@@ -267,7 +283,7 @@ ms.locfileid: "66445869"
 |Member|
 |:---|
 |notSpecified|
-|пользователь;|
+|пользователь|
 |servicePrincipal|
 |unknownFutureValue|
 
@@ -343,7 +359,7 @@ ms.locfileid: "66445869"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |assignIfOpen|
 |unknownFutureValue|
 
@@ -365,7 +381,7 @@ ms.locfileid: "66445869"
 
 |Member|
 |:---|
-|пользователь;|
+|пользователь|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>Значения authenticationMethodState
@@ -403,7 +419,7 @@ ms.locfileid: "66445869"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |adminsAndGuestInviters|
 |adminsGuestInvitersAndAllMembers|
 |Все|
@@ -597,7 +613,7 @@ ms.locfileid: "66445869"
 ### <a name="educationaddtocalendaroptions-values"></a>значения educationAddToCalendarOptions
 |Member|
 |:---|
-|Нет|
+|none|
 |studentsAndPublisher|
 |studentsAndTeamOwners|
 |unknownFutureValue|
@@ -660,7 +676,7 @@ ms.locfileid: "66445869"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |Внутренние|
 |Внешних|
 |externalPartner|
@@ -671,7 +687,7 @@ ms.locfileid: "66445869"
 |Member|
 |:---|
 |Signin|
-|пользователь;|
+|пользователь|
 |unknownFutureValue|
 
 ### <a name="riskdetectiontimingtype-values"></a>Значения riskDetectionTimingType
@@ -736,7 +752,7 @@ ms.locfileid: "66445869"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |Автомобилей|
 |calendar|
 |Запущена|
@@ -770,7 +786,7 @@ ms.locfileid: "66445869"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |shift|
 |swapRequest|
 |userShiftPreferences|
@@ -812,7 +828,7 @@ ms.locfileid: "66445869"
 
 | Member
 |:-------------------------
-| Нет
+| none
 | contactsOnly
 | все
 
@@ -894,14 +910,14 @@ ms.locfileid: "66445869"
 | :----------------- |
 | student            |
 | teacher            |
-| Нет               |
+| none               |
 | unknownFutureValue |
 
 ### <a name="meetingmessagetype-values"></a>Значения meetingMessageType
 
 | Member
 |:-----------------
-| Нет
+| none
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -933,7 +949,7 @@ ms.locfileid: "66445869"
 | deviceDefault
 | Баннер
 | Модального
-| Нет
+| none
 
 ### <a name="deviceenrollmentfailurereason-values"></a>Значения deviceEnrollmentFailureReason
 
@@ -1144,7 +1160,7 @@ ms.locfileid: "66445869"
 
 | Member
 |:-------------------------
-| Нет
+| none
 | organizer
 | tentativelyAccepted
 | Принято
@@ -1177,7 +1193,7 @@ ms.locfileid: "66445869"
 
 | Элемент   |Значение
 |:---------|:--------
-| Нет     | –1
+| none     | –1
 | preset0  | 0
 | preset1  | 1
 | preset2  | 2
@@ -1305,7 +1321,7 @@ ms.locfileid: "66445869"
 |expandSz|5| REG_EXPAND_SZ типа значения реестра.|
 |ссылка|6 | REG_LINK типа значения реестра.|
 |multiSz|7 | REG_MULTI_SZ типа значения реестра.|
-|Нет|8 | REG_NONE типа значения реестра.|
+|none|8 | REG_NONE типа значения реестра.|
 |qword|9 | REG_QWORD типа значения реестра.|
 |qwordlittleEndian|10| REG_QWORD_LITTLE_ENDIAN типа значения реестра.|
 |Sz|11| REG_SZ типа значения реестра.|
@@ -1370,7 +1386,7 @@ ms.locfileid: "66445869"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |adminGeneratedTemporaryPassword|
 |userPerformedSecuredPasswordChange|
 |userPerformedSecuredPasswordReset|
@@ -1422,7 +1438,7 @@ ms.locfileid: "66445869"
 
 | Member
 |:-------------------------
-| Нет
+| none
 | Низкой
 | medium
 | Высокой
@@ -1433,7 +1449,7 @@ ms.locfileid: "66445869"
 
 | Member
 |:-------------------------
-| Нет
+| none
 | confirmedSafe
 | исправлено
 | Уволен
@@ -1472,7 +1488,7 @@ ms.locfileid: "66445869"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |freeBusyRead|
 |limitedRead|
 |read|
@@ -1485,7 +1501,7 @@ ms.locfileid: "66445869"
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail;   | 1     | Почтовая угроза.            |
+| почта;   | 1     | Почтовая угроза.            |
 | url    | 2     | Угроза URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -1517,7 +1533,7 @@ ms.locfileid: "66445869"
 | Элемент        | Значение | Описание              |
 |:--------------|:------|:-------------------------|
 | Неопределенный     | 0     | Пока не известно.            |
-| пользователь;          | 1     | Отправка пользователя.         |
+| пользователь          | 1     | Отправка пользователя.         |
 | Администратора | 2     | Отправка администратора клиента. |
 
 ### <a name="threatassessmentresulttype-values"></a>Значения threatAssessmentResultType
@@ -1532,7 +1548,7 @@ ms.locfileid: "66445869"
 
 | Элемент                | Значение | Описание                         |
 |:----------------------|:------|:------------------------------------|
-| Нет                  | 0     | Пока не известно.                       |
+| none                  | 0     | Пока не известно.                       |
 | mailFlowRule          | 1     | Правило транспорта Exchange.            |
 | safeSender            | 2     | Список надежных отправителей.                   |
 | blockedSender         | 3     | Список заблокированных отправителей.                |
@@ -1563,7 +1579,7 @@ ms.locfileid: "66445869"
 
 | Значение |
 |:-----------------|
-| Нет |
+| none |
 | NotifySender |
 | BlockAccess |
 | BlockAccessExternal |
@@ -1595,7 +1611,7 @@ ms.locfileid: "66445869"
 ### <a name="wellknownlistname-values"></a>Значения wellknownListName
 | Member
 |:----------------------
-| Нет
+| none
 | defaultList
 | flaggedEmails
 | unknownFutureValue
@@ -1622,10 +1638,10 @@ ms.locfileid: "66445869"
 |dateTime | Столбец DateTime. |
 |Поиска | Столбец подстановки. |
 |логический | Столбец "Да" или "Нет". |
-|пользователь; | Столбец пользователя или группы. |
+|пользователь | Столбец пользователя или группы. |
 |url | Гиперссылка или столбец рисунка. |
 |Рассчитывается | Вычисляемый столбец. |
-|расположение; | Столбец расположения. |
+|расположение | Столбец расположения. |
 |географическое положение | Столбец географического расположения. |
 |term | Столбец управляемых метаданных. |
 |многотерминантная | Столбец управляемых метаданных, который принимает несколько значений. |
@@ -1678,7 +1694,7 @@ ms.locfileid: "66445869"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |Основных|
 |Удар|
 |Крышка|
@@ -1740,7 +1756,7 @@ ms.locfileid: "66445869"
 |shrinkToFit|
 |fill|
 |Подходят|
-|Нет|
+|none|
 |unknownFutureValue|
 
 ### <a name="userflowtype-values"></a>Значения userFlowType
@@ -1772,7 +1788,7 @@ ms.locfileid: "66445869"
 |:----------------------|
 | Builtin               |
 | Пользовательские                |
-| обязательно              |
+| Обязательный              |
 | unknownFutureValue    |
 
 ### <a name="identityuserflowattributeinputtype-values"></a>Значения identityUserFlowAttributeInputType
@@ -1842,7 +1858,7 @@ ms.locfileid: "66445869"
 
 |Member|
 |:---|
-|пользователь;|
+|пользователь|
 |приложение|
 |system|
 |unknownFutureValue|

@@ -1,16 +1,16 @@
 ---
 title: 'informationProtectionLabel: listLabels'
-description: Извлечение списка меток защиты информации.
+description: Получение списка меток защиты информации.
 ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 95e4bff83464857d5cbe100fa82e143f553e9f63
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 8dd66a1416b8e9719814845cef81778f662abc53
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397206"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439610"
 ---
 # <a name="informationprotectionlabel-listlabels"></a>informationProtectionLabel: listLabels
 
@@ -18,7 +18,7 @@ ms.locfileid: "63397206"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите коллекцию меток [защиты информации,](../resources/informationprotectionlabel.md) доступных пользователю или организации.
+Получение коллекции [меток защиты информации,](../resources/informationprotectionlabel.md) доступных пользователю или организации.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,18 +28,18 @@ ms.locfileid: "63397206"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | InformationProtectionPolicy.Read            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | InformationProtectionPolicy.Read.All        |
+| Для приложений                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
-Чтобы получить метки, доступные пользователю или указанному пользователю:
+Чтобы получить метки, доступные вошедаму пользователю или указанному пользователю:
 ```http
 GET /me/informationProtection/policy/labels
 GET /users/{id | user-principal-name}/informationProtection/policy/labels
 ```
 
-Чтобы получить метки, доступные организации:
+Чтобы получить метки, доступные для организации:
 ```http
 GET /informationProtection/policy/labels
 ```
@@ -53,7 +53,7 @@ GET /informationProtection/policy/labels
 | Имя          | Описание                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {token}. Обязательный.                                                                                                                                                         |
-| User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
+| User-Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения будут отображаться в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -61,7 +61,7 @@ GET /informationProtection/policy/labels
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот `200 OK` метод возвращает код ответа и коллекцию объектов [informationProtectionLabel](../resources/informationprotectionlabel.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [informationProtectionLabel](../resources/informationprotectionlabel.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/beta/me/informationProtection/policy/labels
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-labels-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-labels-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

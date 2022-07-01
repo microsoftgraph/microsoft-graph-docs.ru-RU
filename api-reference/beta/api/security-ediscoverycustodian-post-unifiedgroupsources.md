@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: ef24624e83b721e1e4c01e15502f8683e82be191
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: a0a57825489d4dfa25a33ac7ec4fc4345d157868
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66092830"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445482"
 ---
 # <a name="create-custodian-unifiedgroupsource"></a>Создание хранителя unifiedGroupSource
 Пространство имен: microsoft.graph.security
@@ -54,7 +54,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |includedSources|microsoft.graph.ediscovery.sourceType|Указывает источники, включенные в эту группу. Возможные значения: `mailbox`, `site`.|
-|group|Строка|Указывает адрес электронной почты для группы. Чтобы получить адрес электронной почты группы, используйте группы [list или](../api/group-list.md) [Get](../api/group-get.md). Затем можно выполнить запрос по имени группы, используя `$filter`, например, `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName`.|
+|group|String|Указывает адрес электронной почты для группы. Чтобы получить адрес электронной почты группы, используйте группы [list или](../api/group-list.md) [Get](../api/group-get.md). Затем можно выполнить запрос по имени группы, используя `$filter`, например, `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName`.|
 |group@odata.bind|String|Идентификатор группы. Вы можете получить его так же, как и группу. |
 
 ## <a name="response"></a>Отклик
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedgroupsource-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedgroupsource-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -172,6 +176,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedgroupsource-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedgroupsource-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

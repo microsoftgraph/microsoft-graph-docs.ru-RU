@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b32ba14d85a5f97f2dff6a6be9e1136e75195f6e
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: b611bfaf2b5e3b72e4069287fec6241004f320f0
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65315775"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438475"
 ---
 # <a name="list-samlorwsfedexternaldomainfederations"></a>List samlOrWsFedExternalDomainFederations
 Пространство имен: microsoft.graph
@@ -25,7 +25,7 @@ ms.locfileid: "65315775"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Domain.Read.All, Domain.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|Domain.Read.All, Domain.ReadWrite.All|
+|Для приложений|Domain.Read.All, Domain.ReadWrite.All|
 
 Учетная запись рабочей или учебной учетной записи должна принадлежать к одной из следующих ролей:
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/v1.0/directory/federationConfigurations/graph.sa
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-samlorwsfedexternaldomainfederation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-samlorwsfedexternaldomainfederation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

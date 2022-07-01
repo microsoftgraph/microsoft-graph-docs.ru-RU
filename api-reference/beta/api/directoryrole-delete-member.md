@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 65efa83cff2ad79f49106e17b1e0cb294ba7673b
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: 85d9588608a2b765e63d31c001a0849b6c722046
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118636"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437992"
 ---
 # <a name="remove-directory-role-member"></a>Удаление элемента роли каталога
 
@@ -42,7 +42,7 @@ DELETE /directoryRoles/{role-id}/members/{id}/$ref
 DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 ```
 > [!CAUTION]
-> `/$ref` Если запрос не добавлен и вызывающее приложение имеет разрешения на управление объектом-членом, объект также будет удален из Azure Active Directory (Azure AD); `403 Forbidden` в противном случае возвращается ошибка. Вы можете восстановить определенные объекты с помощью [API восстановления удаленных элементов](directory-deleteditems-restore.md).
+> `/$ref` Если запрос не добавлен и вызывающее приложение имеет разрешения на управление объектом-членом, объект также будет удален из Azure Active Directory (Azure AD); `403 Forbidden` в противном случае возвращается ошибка. Определенные объекты можно восстановить с помощью [API восстановления удаленных элементов](directory-deleteditems-restore.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -93,6 +93,10 @@ DELETE https://graph.microsoft.com/beta/directoryRoles/f8e85ed8-f66f-4058-b170-3
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-directoryobject-from-directoryrole-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-directoryobject-from-directoryrole-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 31e64989212bc5666b2010d2319bc55bdce11fb6
-ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
+ms.openlocfilehash: ed69c942e8d459ee9101a28d2243d842512c45d2
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65924202"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436605"
 ---
 # <a name="traceroutehop-resource-type"></a>Тип ресурса traceRouteHop
 
@@ -24,7 +24,7 @@ ms.locfileid: "65924202"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|hopCount|Int32|Число сетевых путей этого прыжка, которое использовало для вычисления RTT.|
+|hopCount|Int32|Число сетевых путей этого прыжка, которое использовало для вычисления времени кругового пути.|
 |ipAddress|String|IP-адрес, используемый для этого прыжка в трассировке сети.|
 |roundTripTime|Длительность|Время отправки пакета маршрута трассировки от клиента к этому прыжку и обратно клиенту в [формате ISO 8601][] . Например, 1 `PT1S`секунда обозначается как ,где P является указателем длительности, T — указателем времени, а S — вторым.|
 

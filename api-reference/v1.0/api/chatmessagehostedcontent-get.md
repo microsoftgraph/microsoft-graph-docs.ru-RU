@@ -1,22 +1,22 @@
 ---
-title: Get chatMessageHostedContent
-description: Извлечение свойств и связей объекта chatMessageHostedContent.
+title: Получение chatMessageHostedContent
+description: Получение свойств и связей объекта chatMessageHostedContent.
 ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f2cb2976eceba50d93e2c5f60de3a250c73434df
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fa6f268e15c2f112cfeee039107a9287d1f15ee9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122296"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443011"
 ---
-# <a name="get-chatmessagehostedcontent"></a>Get chatMessageHostedContent
+# <a name="get-chatmessagehostedcontent"></a>Получение chatMessageHostedContent
 
 Пространство имен: microsoft.graph
 
-Извлечение свойств и связей [объекта chatMessageHostedContent.](../resources/chatmessagehostedcontent.md)
+Получение свойств и связей объекта [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -38,21 +38,21 @@ ms.locfileid: "62122296"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложения| Chat.Read.All, Chat.ReadWrite.All|
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>HTTP-запрос
 
-**Получать контент в сообщении канала**
+**Получение размещенного содержимого в сообщении канала**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/hostedContents/{hosted-content-id}
 GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-id}/hostedContents/{hosted-content-id}
 ```
 
-**Получать контент в сообщении чата**
+**Получение размещенного содержимого в сообщении чата**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/messages/{message-id}/hostedContents/{hosted-content-id}
@@ -75,11 +75,11 @@ GET /users/{user-id | user-principal-name}/chats/{chat-id}/messages/{message-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и запрашиваемый объект [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-hosted-content-for-message-in-a-chat"></a>Пример 1. Для получения содержимого для сообщения в чате
+### <a name="example-1-get-hosted-content-for-message-in-a-chat"></a>Пример 1. Получение размещенного содержимого для сообщения в чате
 
 #### <a name="request"></a>Запрос
 
@@ -122,9 +122,9 @@ GET https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
-> **Примечание:** `contentBytes` и `contentType` всегда настроены на нуль.
+> **Примечание:** `contentBytes` и `contentType` всегда имеют значение NULL.
 
 <!-- {
   "blockType": "response",
@@ -143,7 +143,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-hosted-content-bytes-for-an-image"></a>Пример 2. Получить у себя bytes контента для изображения
+### <a name="example-2-get-hosted-content-bytes-for-an-image"></a>Пример 2. Получение размещенных байтов содержимого для изображения
 
 #### <a name="request"></a>Запрос
 
@@ -177,7 +177,7 @@ GET https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 #### <a name="response"></a>Отклик
 
-Ответ содержит bytes для размещенного контента в теле. `content-type` Заглавный заглавник указывает тип содержимого, на который установлено.
+Ответ содержит байты для размещенного содержимого в тексте. `content-type` Заголовок  указывает тип размещенного содержимого.
 
 <!-- {
   "blockType": "response",

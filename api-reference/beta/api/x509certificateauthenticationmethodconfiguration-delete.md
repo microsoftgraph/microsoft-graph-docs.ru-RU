@@ -1,18 +1,18 @@
 ---
-title: Удаление x509CertificateAuthenticationMethodConfiguration
+title: Удаление объекта x509CertificateAuthenticationMethodConfiguration
 description: Удалите настраиваемый клиентом объект x509CertificateAuthenticationMethodConfiguration и восстановите конфигурацию по умолчанию.
 author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bf6920ec7e42b1982acbce235d76c7037c071d9c
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 47344b7f36fa1e5e2c189eb1005f84ab67894a01
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397549"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437251"
 ---
-# <a name="delete-x509certificateauthenticationmethodconfiguration"></a>Удаление x509CertificateAuthenticationMethodConfiguration
+# <a name="delete-x509certificateauthenticationmethodconfiguration"></a>Удаление объекта x509CertificateAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "63397549"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для делегирования сценариев администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев администратору требуется одна из следующих [Azure AD ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Администратор политики проверки подлинности
 * Глобальный администратор
@@ -86,6 +86,10 @@ DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/aut
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-x509certificateauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-x509certificateauthenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

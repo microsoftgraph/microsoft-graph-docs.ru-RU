@@ -5,12 +5,12 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: abb6d745a30274eda5ec17fa0075315633830b67
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 715d5daf735b7eb79b48468db53339d860ea4feb
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65819852"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445183"
 ---
 # <a name="teamwork-sendactivitynotificationtorecipients"></a>teamwork: sendActivityNotificationToRecipients
 
@@ -20,7 +20,7 @@ ms.locfileid: "65819852"
 
 Отправка уведомлений веб-канала действий нескольким пользователям в пакетном режиме. 
 
-Дополнительные сведения об отправке уведомлений и требованиях для этого см. в статье [Teams действий](/graph/teams-send-activityfeednotifications).
+Дополнительные сведения об отправке уведомлений и требованиях для этого см. в статье об отправке уведомлений о [действиях Teams](/graph/teams-send-activityfeednotifications).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,8 +28,8 @@ ms.locfileid: "65819852"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированное (рабочая или учебная учетная запись)     | TeamsActivity.Send                          |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Делегированные (рабочая или учебная учетная запись)     | TeamsActivity.Send                          |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Приложение                            | TeamsActivity.Send                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -59,11 +59,11 @@ POST /teamwork/sendActivityNotificationToRecipients
 | Параметр          | Тип                                                         | Описание                                                  |
 | :----------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | topic              | [teamworkActivityTopic](../resources/teamworkactivitytopic.md) | Раздел уведомления. Указывает ресурс, о котором говорят. |
-| activityType       | String                                                       | Тип действия. Он должен быть объявлен в [манифесте Teams приложения](/microsoftteams/platform/overview). |
-| chainId            | Int64                                                        | Необязательно. Используется для переопределения предыдущего уведомления. Используйте то же самое `chainId` в последующих запросах, чтобы переопределить предыдущее уведомление. |
-| previewText        | [itemBody](../resources/itembody.md)                         | Предварительный просмотр текста уведомления. Microsoft Teams будут отображаться только первые 150 символов. |
-| templateParameters | Коллекция [keyValuePair](../resources/keyvaluepair.md)      | Значения переменных шаблона, определенных в записи веб-канала `activityType` действий, соответствующей Teams [манифеста приложения](/microsoftteams/platform/overview). |
-| teamsAppId         | Строка                                                       | Необязательно. Teams идентификатор приложения Teams, связанного с уведомлением. Используется для устранения неоднозначности установленных приложений, если для одного пользователя-получателя установлено несколько приложений с одинаковым Azure AD идентификатором приложения. |
+| activityType       | String                                                       | Тип действия. Это должно быть объявлено в [манифесте приложения Teams](/microsoftteams/platform/overview). |
+| chainId            | Int64                                                        | Необязательное свойство. Используется для переопределения предыдущего уведомления. Используйте то же самое `chainId` в последующих запросах, чтобы переопределить предыдущее уведомление. |
+| previewText        | [itemBody](../resources/itembody.md)                         | Предварительный просмотр текста уведомления. В Microsoft Teams будут отображаться только первые 150 символов. |
+| templateParameters | Коллекция [keyValuePair](../resources/keyvaluepair.md)      | Значения переменных шаблона, определенных в записи веб-канала действий, соответствующей `activityType` [манифесту приложения Teams](/microsoftteams/platform/overview). |
+| teamsAppId         | String                                                       | Необязательно. Идентификатор приложения Teams для приложения Teams, связанного с уведомлением. Используется для устранения неоднозначности установленных приложений, если для одного пользователя-получателя установлено несколько приложений с одинаковым Azure AD идентификатором приложения. |
 | recipients         | [Коллекция teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md) | Получатели уведомления. Поддерживаются только получатели [типа aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) . В одном запросе существует верхний предел в 100 получателей. |
 
 Следующий ресурс поддерживается при установке `source` значения свойства **раздела** в следующее `entityUrl`:
@@ -140,6 +140,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/teamwork-sendactivitynotificationtorecipients-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/teamwork-sendactivitynotificationtorecipients-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -221,6 +225,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/teamwork-sendactivitynotificationtorecipients-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/teamwork-sendactivitynotificationtorecipients-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

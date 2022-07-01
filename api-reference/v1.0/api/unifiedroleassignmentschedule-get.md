@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4b1eb0ac69c36f2506141c31f7f6ee974ef8001d
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 4129ecf54be38064697696c5a0b98aad13548792
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205385"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437730"
 ---
 # <a name="get-unifiedroleassignmentschedule"></a>Получение unifiedRoleAssignmentSchedule
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "65205385"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory   |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory |
+|Для приложений|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/{unifiedRoleAssignmentSche
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) в теле отклика.
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentSche
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignmentschedule-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignmentschedule-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

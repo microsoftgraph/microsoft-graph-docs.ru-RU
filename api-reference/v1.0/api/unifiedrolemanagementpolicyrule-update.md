@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a32f562a86ed72d8da728973ca6c5b5a5db7fcbb
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: e2f22800242670f80125f8e96c73a87aff79509e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204425"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439760"
 ---
 # <a name="update-unifiedrolemanagementpolicyrule"></a>Обновление unifiedRoleManagementPolicyRule
 Пространство имен: microsoft.graph
@@ -53,15 +53,15 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{un
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|claimValue|Строка|Значение утверждения контекста проверки подлинности. <br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyAuthenticationContextRule** .|
-|enabledRules|Коллекция строк|Коллекция правил, включенных для этого правила политики. Например, `MultiFactorAuthentication`и `Ticketing``Justification`.<br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyEnablementRule** .|
+|claimValue|String|Значение утверждения контекста проверки подлинности. <br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyAuthenticationContextRule** .|
+|enabledRules|Коллекция String|Коллекция правил, включенных для этого правила политики. Например, `MultiFactorAuthentication`и `Ticketing``Justification`.<br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyEnablementRule** .|
 |isDefaultRecipientsEnabled|Логическое|Указывает, будет ли получатель по умолчанию получать уведомление по электронной почте.<br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyNotificationRule** .|
 |isEnabled|Boolean| Указывает, включено ли это правило. <br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyAuthenticationContextRule** .|
 |isExpirationRequired|Логическое|Указывает, требуется ли срок действия, является ли это постоянно активным назначением или допустимостью. <br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyExpirationRule** .|
 |maximumDuration|Длительность| Максимальная длительность, допустимая для допустимости или назначения, которая не является постоянной. Требуется, если **isExpirationRequired** имеет значение `true`. <br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyExpirationRule** . |
-|notificationLevel|Строка|Уровень уведомления. Возможные значения: `None`, `Critical`. `All`<br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyNotificationRule** .|
+|notificationLevel|String|Уровень уведомления. Возможные значения: `None`, `Critical`. `All`<br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyNotificationRule** .|
 |notificationRecipients|Коллекция String|Список получателей уведомлений по электронной почте.<br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyNotificationRule** .|
-|notificationType|Строка|Тип уведомления. Поддерживается `Email` только.<br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyNotificationRule** .|
+|notificationType|String|Тип уведомления. Поддерживается `Email` только.<br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyNotificationRule** .|
 |recipientType|String|Тип получателя уведомления. Возможные значения: `Requestor`, `Approver`. `Admin`<br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyNotificationRule** .|
 |setting|[approvalSettings](../resources/approvalsettings.md)|Параметры для утверждения назначения роли. <br/><br/>Может быть обновлен для типа **правила unifiedRoleManagementPolicyApprovalRule** .|
 |target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Определяет сведения об области, предназначенной для правила политики управления ролами. Сведения могут включать тип субъекта, тип назначения роли и действия, влияющие на роль. <br/><br/> Может быть обновлен для всех типов правил.|
@@ -123,6 +123,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-unifiedrolemanagementpolicyrule-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-unifiedrolemanagementpolicyrule-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

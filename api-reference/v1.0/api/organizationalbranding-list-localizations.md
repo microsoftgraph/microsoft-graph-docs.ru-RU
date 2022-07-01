@@ -1,21 +1,21 @@
 ---
-title: Локализация списков
+title: Локализация списка
 description: Получите ресурсы organizationalBrandingLocalization из свойства навигации локализации.
 author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 258a32017f303302d0bcb045c3b0911d9dd01050
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: ddc7014b2fb943713e49f0c71b71df6ec2448955
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396618"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444453"
 ---
-# <a name="list-localizations"></a>Локализация списков
+# <a name="list-localizations"></a>Локализация списка
 Пространство имен: microsoft.graph
 
-Извлечение всех объектов брендинга локализации, включая брендинг по умолчанию.
+Извлеките все объекты фирменной символики локализации, включая фирменную символику по умолчанию.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -49,7 +49,7 @@ GET /organization/{organizationId}/branding/localizations
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы этот метод возвращает код ответа и коллекцию объектов [организационнойbrandingLocalization](../resources/organizationalbrandinglocalization.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276be6
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-organizationalbrandinglocalization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-organizationalbrandinglocalization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

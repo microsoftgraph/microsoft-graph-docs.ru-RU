@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 78e9aacf0bdab7ff109775d59cdce6c9295e33af
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 43d02787042fca5c1f7fc8a2429ab82b8512243e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66092189"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440504"
 ---
 # <a name="create-ediscoveryreviewtag"></a>Создание ediscoveryReviewTag
 Пространство имен: microsoft.graph.security
@@ -51,9 +51,9 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя тега. Обязательный.|
-|description|Строка|Описание тега. Необязательно.|
-|childSelectability|Строка|Это значение определяет, представляет ли пользовательский интерфейс теги как флажки или группу переключателей. Возможные значения: `One`, `Many`. Обязательный.|
+|displayName|String|Отображаемое имя тега. Обязательный.|
+|description|String|Описание тега. Необязательное свойство.|
+|childSelectability|String|Это значение определяет, представляет ли пользовательский интерфейс теги как флажки или группу переключателей. Возможные значения: `One`, `Many`. Обязательный.|
 
 ## <a name="response"></a>Отклик
 
@@ -94,6 +94,10 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-ce
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryreviewtag-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoveryreviewtag-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,30 +1,30 @@
 ---
-title: Get directorySetting
-description: Извлечение свойств определенного объекта настройки каталога.
+title: Получение directorySetting
+description: Получение свойств определенного объекта параметра каталога.
 author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 519c8d06832c46fc1009ea344c5e387ce1cff1fd
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 0a5bc1adf65c5a4715677ea6eb5677bbb75ef3bd
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669559"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441484"
 ---
-# <a name="get-directorysetting"></a>Get directorySetting
+# <a name="get-directorysetting"></a>Получение directorySetting
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств определенного объекта настройки каталога.
+Получение свойств определенного объекта параметра каталога.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 
-### <a name="list-tenant-wide-settings"></a>Список параметров для всех клиентов
+### <a name="list-tenant-wide-settings"></a>Вывод списка параметров на уровне клиента
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -32,33 +32,33 @@ ms.locfileid: "63669559"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
-### <a name="list-group-specific-settings"></a>Список параметров, определенных для группы
+### <a name="list-group-specific-settings"></a>Перечисление параметров для конкретной группы
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.Read.All, Group.ReadWrite.All  |
+|Приложение | Group.Read.All, Group.ReadWrite.All  |
 
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
-Получите параметр в масштабе клиента.
+Получение параметра на уровне клиента.
 
 ```http
 GET /settings/{directorySettingId}
 ```
 
 <!-- { "blockType": "ignored" } -->
-Получите параметр, определенный для группы.
+Получение параметра для конкретной группы.
 ```http
 GET /groups/{groupId}/settings/{directorySettingId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$select` [параметры запросов OData](/graph/query-parameters) для настройки отклика.
+Этот метод поддерживает параметры `$select` [запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -70,7 +70,7 @@ GET /groups/{groupId}/settings/{directorySettingId}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект directorySetting](../resources/directorysetting.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и [объект directorySetting](../resources/directorysetting.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -113,7 +113,7 @@ GET https://graph.microsoft.com/beta/settings/f0b2d6f5-097d-4177-91af-a24e530b53
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -130,6 +130,10 @@ Content-type: application/json
   "displayName": "Group.Unified",
   "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
   "values": [
+    {
+      "name": "NewUnifiedGroupWritebackDefault",
+      "value": "false"
+    },
     {
       "name": "EnableMIPLabels",
       "value": "true"

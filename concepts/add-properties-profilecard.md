@@ -1,22 +1,22 @@
 ---
-title: Добавление или удаление настраиваемых свойств на карточке профиля с помощью API карточки профиля в Microsoft Graph (предварительная версия)
-description: Как настроить карточку профиля, сделав видимыми дополнительные атрибуты или добавив настраиваемые атрибуты. Вы также можете удалить настраиваемые атрибуты.
+title: Добавление или удаление настраиваемых атрибутов в карточке профиля (предварительная версия)
+description: Узнайте, как использовать API карточки профиля в Microsoft Graph, чтобы сделать видимыми дополнительные атрибуты, а также добавить или удалить настраиваемые атрибуты в карточке профиля.
 author: PollyNincevic
 ms.localizationpriority: high
 ms.prod: users
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5e1b140f5e3c9612475bcf0a6e404168cced1c92
-ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
+ms.openlocfilehash: 9d1685ef287cb7cea973b452a1b05d70b8d1d144
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61561512"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441015"
 ---
-# <a name="add-or-delete-custom-properties-from-the-profile-card-using-the-profile-card-api-in-microsoft-graph-preview"></a>Добавление или удаление настраиваемых свойств на карточке профиля с помощью API карточки профиля в Microsoft Graph (предварительная версия)
+# <a name="add-or-delete-custom-attributes-on-a-profile-card-using-the-profile-card-api-preview"></a>Добавление или удаление настраиваемых атрибутов в карточке профиля с помощью API карточки профиля (предварительная версия)
 
-На [карточке профиля](https://support.office.com/article/profile-cards-in-office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) в Microsoft 365 находится информация о пользователях, сохраненная и управляемая вашей организацией, например **Должность** или **Местонахождение офиса**.
+На карточке профиля в Microsoft 365 находится информация о пользователях, сохраненная и управляемая вашей организацией, например **Должность** или **Местонахождение офиса**.
 
-Используйте ресурс [profileCardProperty](/graph/api/resources/profilecardproperty), чтобы отображать дополнительные свойства из Azure AD в карточках профилей для организации следующим образом:
+Используйте ресурс [profileCardProperty](/graph/api/resources/profilecardproperty), чтобы отобразить дополнительные свойства из Azure AD на карточках профиля для организации:
 
 * Обеспечение видимости дополнительных атрибутов
 * Добавление настраиваемых атрибутов
@@ -80,7 +80,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="adding-a-custom-attribute"></a>Добавление настраиваемого атрибута
+## <a name="add-a-custom-attribute"></a>Добавление настраиваемого атрибута
 
 Вы можете добавлять в карточки профилей пользователей любой из 15 [настраиваемых атрибутов расширений](/graph/api/resources/onpremisesextensionattributes) Azure AD путем настройки параметров организации и [добавления соответствующего значения в качестве profileCardProperty](/graph/api/organizationsettings-post-profilecardproperties) в Microsoft Graph. Одновременно можно добавлять только один ресурс **profileCardProperty**.
 
@@ -159,7 +159,8 @@ Content-type: application/json
   ]
 }
 ```
-## <a name="deleting-a-custom-attribute"></a>Удаление настраиваемого атрибута
+
+## <a name="delete-a-custom-attribute"></a>Удаление настраиваемого атрибута.
 
 Следуя аналогичному сопоставлению между настраиваемыми атрибутами расширения Azure AD и настраиваемыми атрибутами карточки профиля (например, `customAttribute1`), как описано в предыдущем разделе [Добавление настраиваемого атрибута](/graph/add-properties-profilecard#adding-a-custom-attribute), вы можете удалить настраиваемый атрибут с помощью операции [удаления](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true), как показано в примере ниже:
 

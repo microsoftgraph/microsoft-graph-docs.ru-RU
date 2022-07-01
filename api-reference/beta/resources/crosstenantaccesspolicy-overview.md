@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 088e9da122680c8f975597a2f58e9ae352a5e4f3
-ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
+ms.openlocfilehash: 5fa5e24eead5f75564a97a7f3ac04fd11e833ba0
+ms.sourcegitcommit: a30eea2fa59087088f50e58706b91c0eb5b7a802
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65653548"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66604477"
 ---
 # <a name="cross-tenant-access-settings-api-overview"></a>Обзор API параметров межтенантного доступа
 
@@ -54,14 +54,14 @@ ms.locfileid: "65653548"
 
 Параметры входящего доверия также позволяют доверять совместимым устройствам или гибридным Azure AD в домашних каталогах. С помощью параметров входящего доверия в параметрах межтенантного доступа теперь можно защитить доступ к приложениям и ресурсам, требуя, чтобы внешние пользователи могли использовать соответствующие или гибридные Azure AD присоединенные устройства.
 
-## <a name="collaborate-with-organizations-using-azure-active-directory-in-different-microsoft-clouds"></a>Совместная работа с организациями с Azure Active Directory в разных облаках Майкрософт
+## <a name="collaborate-with-organizations-using-azure-active-directory-in-different-microsoft-clouds"></a>Совместная работа с организациями с помощью Azure Active Directory в разных облаках Майкрософт
 
 Параметры межтенантного доступа используются для обеспечения совместной работы с Azure AD в отдельных облаках Майкрософт. Это `allowedCloudEndpoints` свойство позволяет указать, какие облака Майкрософт вы хотите расширить для совместной работы. Совместная работа B2B поддерживается между следующими облаками Майкрософт:
 
-+ Microsoft Azure коммерческих и Microsoft Azure для государственных организаций
-+ Microsoft Azure коммерческой и Microsoft Azure Китае
++ Коммерческая служба Microsoft Azure и microsoft Azure для государственных организаций
++ Коммерческая платформа Microsoft Azure и Microsoft Azure для Китая
 
-<!---Learn more about [collaborating with organizations from a different Microsoft cloud](azure/active-directory/external-identities/cross-cloud-settings).--->
+Узнайте больше о [совместной работе с организациями из другого облака Майкрософт](https://docs.microsoft.com/azure/active-directory/external-identities/cross-cloud-settings).
 
 ## <a name="interpreting-the-api-response"></a>Интерпретация ответа API
 

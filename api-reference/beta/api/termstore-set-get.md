@@ -1,21 +1,21 @@
 ---
-title: Набор
-description: Ознакомьтесь с свойствами и отношениями установленного объекта.
+title: Получить набор
+description: Чтение свойств и связей задавного объекта.
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a5735c704faee4f53f54ec2f0a44f2dd7c8845fc
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 161622520fdae9ff89cd38e145123545d9f9fdfe
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397129"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443154"
 ---
-# <a name="get-set"></a>Набор
+# <a name="get-set"></a>Получить набор
 Пространство имен: microsoft.graph.termStore [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями [установленного](../resources/termstore-set.md) объекта.
+Чтение свойств и связей [задавного](../resources/termstore-set.md) объекта.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -52,11 +52,11 @@ GET /sites/{site-id}/termStore/sets/{set-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и [заданной объект](../resources/termstore-set.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [set](../resources/termstore-set.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-a-termstore-set"></a>Пример 1. Получить набор termStore
+### <a name="example-1-get-a-termstore-set"></a>Пример 1. Получение набора termStore
 
 #### <a name="request"></a>Запрос
 
@@ -117,7 +117,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-a-site-collection-termstore-set"></a>Пример 2. Получить набор терминов коллекции сайтовStore
+### <a name="example-2-get-a-site-collection-termstore-set"></a>Пример 2. Получение набора termStore для семейства веб-сайтов
 
 #### <a name="request"></a>Запрос
 
@@ -149,6 +149,10 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-sitecollection-termstore-set-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-sitecollection-termstore-set-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

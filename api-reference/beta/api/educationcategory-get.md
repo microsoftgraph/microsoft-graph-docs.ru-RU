@@ -1,24 +1,24 @@
 ---
-title: Get educationCategory
-description: Извлечение объекта категории.
+title: Получение educationCategory
+description: Получение объекта категории.
 author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2670e029899a7dde734a8a64052bbf21c881082a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6580a52a06fed26b7f2c438723a37d6466d4b370
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003121"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442811"
 ---
-# <a name="get-educationcategory"></a>Get educationCategory
+# <a name="get-educationcategory"></a>Получение educationCategory
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение [объекта educationCategory.](../resources/educationcategory.md)
+Получение объекта [educationCategory](../resources/educationcategory.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "61003121"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                         |
-| Для приложений                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+| Приложение                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ GET /education/classes/{id}/assignmentCategories/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект educationCategory](../resources/educationcategory.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [educationCategory](../resources/educationcategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -90,12 +90,16 @@ GET https://graph.microsoft.com/beta/education/classes/dacbf757-888d-42ae-b701-5
 [!INCLUDE [sample-code](../includes/snippets/go/get-class-category-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-class-category-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

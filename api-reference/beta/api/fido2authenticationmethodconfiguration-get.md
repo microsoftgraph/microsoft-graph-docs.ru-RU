@@ -5,19 +5,19 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 65c972544592a34e058d7b027554ebb37e9a493f
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: ec8a509b8b9e0a0e18e44c427b881cca3103bf2c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65366018"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441223"
 ---
 # <a name="get-fido2authenticationmethodconfiguration"></a>Получение fido2AuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md), который представляет политику метода проверки подлинности ключей безопасности FIDO2 для Azure Active Directory (Azure AD).[](../resources/authenticationmethodspolicies-overview.md)
+Извлеките свойства и связи объекта [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md), который представляет политику метода проверки подлинности ключей безопасности FIDO2 для клиента Azure Active Directory (Azure AD).[](../resources/authenticationmethodspolicies-overview.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-fido2authenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-fido2authenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

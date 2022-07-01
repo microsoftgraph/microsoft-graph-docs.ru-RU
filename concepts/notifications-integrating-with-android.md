@@ -1,16 +1,19 @@
 ---
-title: Интеграция приложения Android с клиентским пакетом SDK для уведомления пользователей
-description: Интеграция приложения Android с клиентским пакетом SDK уведомления пользователей
+title: Интегрируйте свое приложение Android с клиентским SDK (устарело)
+description: После того, как вы зарегистрируете свое приложение и настроите взаимодействие между устройствами, интегрируйте свое клиентское приложение с клиентским пакетом SDK для приложений Android (устарело).
 ms.localizationpriority: high
 ms.prod: notifications
-ms.openlocfilehash: 8f7615b963e5d423e2195d9791ac9f1f2af0244a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6942baab54133cedd57f1fd73b63e25d74f8dc7c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062315"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447130"
 ---
-# <a name="integrate-your-android-app-with-the-client-side-sdk-for-user-notifications"></a>Интеграция приложения Android с клиентским пакетом SDK для уведомления пользователей
+# <a name="integrate-your-android-app-with-the-client-side-sdk-for-user-notifications-deprecated"></a>Интегрируйте свое приложение Android с клиентским SDK для уведомлений пользователей (устарело)
+
+> [!IMPORTANT]
+> API уведомлений Microsoft Graph не рекомендуется использовать, Он прекратил возвращать данные в январе 2022 г. Дополнительные сведения об уведомлениях см. в [Центрах уведомлений Microsoft Azure](/azure/notification-hubs). Дополнительные сведения см. в записи блога [Прекращение поддержки API уведомлений Microsoft Graph (бета-версия)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 После [регистрации своего приложения](notifications-integration-app-registration.md) на портале Azure и внедрения [использования разных устройств](notifications-integration-cross-device-experiences-onboarding.md) в Центре разработки партнеров следующий этап состоит в интеграции вашего клиентского приложения с клиентским пакетом SDK для приложений Android.  
 
@@ -116,7 +119,7 @@ import com.microsoft.connecteddevices.userdata.usernotifications;
 
 Клиентский SDK создан на основе инфраструктуры, называемой платформой подключенных устройств. Перед использованием каких-либо функций необходимо инициализировать платформу в вашем приложении. Действия по инициализации должны находиться в методе **OnCreate** класса main, так как они должны быть выполнены до использования сценариев уведомлений.
 
-Необходимо создать и инициализировать платформу путем создания экземпляра класса [**ConnectedDevicesPlatform**](/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest). Перед этим подключите обработчики событий, так как после запуска платформы могут начать возникать события. 
+Необходимо создать и инициализировать платформу путем создания экземпляра класса [**ConnectedDevicesPlatform**](/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest&preserve-view=true). Перед этим подключите обработчики событий, так как после запуска платформы могут начать возникать события. 
 
 ```java
 ConnectedDevicesPlatform platform = new ConnectedDevicesPlatform(context);

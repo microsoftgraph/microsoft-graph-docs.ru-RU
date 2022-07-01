@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: d40a267f32dd481d507fa168768402427509e5f4
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 62c2e076a8364e7623d056f2cc68a9a104c23c08
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66096257"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441866"
 ---
 # <a name="update-ediscoverycase"></a>Обновление ediscoveryCase
 Пространство имен: microsoft.graph.security
@@ -51,7 +51,7 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|Строка|Описание варианта.|
+|description|String|Описание варианта.|
 |displayName|String|Имя регистра.|
 |externalId|String|Номер внешнего обращения для ссылки на клиента.|
 
@@ -93,6 +93,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-ediscoverycase-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-ediscoverycase-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

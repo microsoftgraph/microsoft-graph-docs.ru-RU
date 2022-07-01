@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 82224699c7bbe80e9ec14e39494fd8a37c1d31be
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 557f67028190621c817b24188f5f44eb3c4c8dca
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461354"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446352"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-resource-type"></a>Тип ресурса unifiedRoleEligibilityScheduleRequest
 
@@ -18,52 +18,48 @@ ms.locfileid: "65461354"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет запрос на назначение допустимой роли через Azure AD управление привилегированными пользователями.
+Представляет запрос на право на роль для субъекта через PIM. Право на получение роли может быть безвозвратно допустимо без даты окончания срока действия или временно допустимой с датой окончания срока действия. Наследуется от [запроса](../resources/request.md).
 
-**unifiedRoleEligibilityScheduleRequest** — это сущность с моделью билета, используемая для управления жизненным циклом допустимых назначений ролей в каталоге. Он представляет намерение или решение пользователей и администраторов, а также обеспечивает гибкость для реализации повторяющегося планирования, `POST``PUT``DELETE` шлюзов утверждения и т. д. по сравнению с предоставлением непосредственного доступа и операциями с ресурсами **unifiedRoleEligibilitySchedule** и **unifiedRoleEligibilityInstance**.
-
-Администраторы могут использовать **unifiedRoleEligibilityScheduleRequest** для создания и (или) обновления допустимых назначений ролей с использованием или без времени начала и окончания. Хотя соответствующие администраторы могут использовать его для создания запроса на продление или продление соответствующих назначений.
-
-Наследуется от [запроса](request.md).
+Дополнительные сведения о сценариях PIM, которые можно определить с помощью типа ресурса **unifiedRoleEligibilityScheduleRequest** , см. в статье "Общие сведения об управлении ролями с помощью API управления привилегированными пользователями [(PIM](privilegedidentitymanagementv3-overview.md))".
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Перечисление unifiedRoleEligibilityScheduleRequests](../api/rbacapplication-list-roleeligibilityschedulerequests.md)|[Коллекция unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|Получение списка объектов [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) и их свойств.|
-|[Создание unifiedRoleEligibilityScheduleRequest](../api/rbacapplication-post-roleeligibilityschedulerequests.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|Создайте объект [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) .|
-|[Получение unifiedRoleEligibilityScheduleRequest](../api/unifiedroleeligibilityschedulerequest-get.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|Чтение свойств и связей объекта [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) .|
-|[filterByCurrentUser](../api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md)|[Коллекция unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|Получение списка объектов [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) и их свойств, связанных с определенным пользователем.|
-|[cancel](../api/unifiedroleeligibilityschedulerequest-cancel.md)|Нет|Немедленно [отменяет unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) и помечает его для удаления через 30 дней.|
+|[Перечисление unifiedRoleEligibilityScheduleRequests](../api/rbacapplication-list-roleeligibilityschedulerequests.md)|[Коллекция unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|Получение запросов на получение прав на роль для субъектов, выполненных с помощью объекта unifiedRoleEligibilityScheduleRequest.|
+|[Создание unifiedRoleEligibilityScheduleRequest](../api/rbacapplication-post-roleeligibilityschedulerequests.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|Запрос права на роль для субъекта через объект unifiedRoleEligibilityScheduleRequest.|
+|[Получение unifiedRoleEligibilityScheduleRequest](../api/unifiedroleeligibilityschedulerequest-get.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|Ознакомьтесь с подробными сведениями о запросе на получение прав на роль, выполненном с помощью объекта unifiedRoleEligibilityScheduleRequest.|
+|[filterByCurrentUser](../api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md)|[Коллекция unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|В PIM получите запросы о допустимости ролей для определенного субъекта. Субъект может быть создателем или утверждающим объектом unifiedRoleEligibilityScheduleRequest или быть целевым объектом для доступа к роли.|
+|[cancel](../api/unifiedroleeligibilityschedulerequest-cancel.md)|Нет|Немедленно отмените **объект unifiedRoleEligibilityScheduleRequest**`Granted`, состояние которого имеет состояние и система автоматически удаляет отмененный запрос через 30 дней.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|action|Строка|Представляет тип операции с назначением соответствия роли. Возможные значения: <ul><li>`AdminAssign`: администраторы могут назначать роли пользователям или группам.</li><li>`AdminExtend`: администраторы могут продлить назначения с истекающим сроком действия.</li><li>`AdminUpdate`: администраторы могут изменять существующие назначения ролей.</li><li>`AdminRenew`: чтобы администраторы продлевали назначения с истекшим сроком действия.</li><li>`AdminRemove`: администраторы могут удалять пользователей или группы из соответствующих ролей.</li><li>`UserAdd`: чтобы пользователи могли активировать соответствующие назначения.</li><li>`UserExtend`: чтобы пользователи запрашивали продление допустимых назначений с истекающим сроком действия.</li><li>`UserRemove`: для отключения активных подходящих назначений пользователями.</li><li>`UserRenew`: чтобы пользователи запрашивали продление допустимых назначений с истекшим сроком действия.</li></ul>|
-|approvalId|Строка|Идентификатор утверждения запроса. Наследуется от [запроса](request.md).|
-|appScopeId|Строка|Идентификатор области, относяшейся к приложению, если область назначения предназначена для конкретного приложения. Область назначения определяет набор ресурсов, к которым участнику был предоставлен доступ. Области приложения — это области, которые определяются и распознаются только этим приложением. Используется `/` для областей приложений на уровне клиента. Используйте **directoryScopeId** , чтобы ограничить область определенными объектами каталога, например административными единицами.|
-|completedDateTime|DateTimeOffset|Время даты завершения запроса. Наследуется от [запроса](request.md).|
-|createdBy|[identitySet](identityset.md)|Пользователь, создавший этот запрос. Наследуется от [запроса](request.md).|
-|createdDateTime|DateTimeOffset|Дата создания запроса. Наследуется от [запроса](request.md).|
-|Customdata|Строка|Поле "Бесплатный текст" для определения любых пользовательских данных для запроса. Не используется. Наследуется от [запроса](request.md).|
-|directoryScopeId|Строка|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым участнику был предоставлен доступ. Области каталога — это общие области, хранящиеся в каталоге, которые распознаются несколькими приложениями. Используется `/` для области на уровне клиента. Используйте **appScopeId** , чтобы ограничить область только приложением.|
-|id|String|Уникальный идентификатор объекта unifiedRoleEligibilityScheduleRequest. Только для чтения.|
-|isValidationOnly|Boolean|Логическое значение, определяющее, является ли вызов проверкой или фактическим вызовом. Задайте это свойство только в том случае, если вы хотите проверить, применяется ли активация к дополнительным правилам, таким как MFA, перед фактической отправкой запроса.|
-|Обоснование|String|Сообщение, предоставленное пользователями и администраторами при создании запроса о том, зачем он нужен.|
-|principalId|Строка| Идентификатор субъекта, которому предоставляется назначение. Например, пользователь или группа. Для групп они должны быть назначены ролям, то есть **isAssignableToRole** свойства группы, для которого задано значение `true`.|
-|roleDefinitionId|Строка|Идентификатор объекта unifiedRoleDefinition, для который предназначено назначение. Только для чтения.|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Объект расписания запроса на назначение роли.|
-|status|String|Объект расписания запроса на участие в роли. Наследуется от [запроса](request.md).|
-|targetScheduleId|Строка|Период времени, в течение которого допустимо назначение соответствия требованиям.|
-|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Сведения о номере билета и системе билета, присоединенной к запросу на назначение роли.|
+|action|String|Представляет тип операции в запросе на получение прав на роль. Возможные значения: <br/><ul><li>`AdminAssign`: администраторы могут назначать субъектам допустимые роли.</li><li>`AdminRemove`: чтобы администраторы удаляли допустимые роли из субъектов.</li><li> `AdminUpdate`: чтобы администраторы меняли существующие права на роль.</li><li>`AdminExtend`: чтобы администраторы расширяли права на роль с истекающим сроком действия.</li><li>`AdminRenew`: чтобы администраторы продлевали просроченные права доступа.</li><li>`UserAdd`: чтобы пользователи могли активировать соответствующие назначения.</li><li>`UserRemove`: для отключения активных подходящих назначений пользователями.</li><li>`UserExtend`: чтобы пользователи запрашивали продление допустимых назначений с истекающим сроком действия.</li><li>`UserRenew`: чтобы пользователи запрашивали продление допустимых назначений с истекшим сроком действия.</li></ul>|
+|approvalId|String|Идентификатор утверждения запроса. Наследуется от [запроса](../resources/request.md).|
+|appScopeId|String|Идентификатор области, относяшейся к приложению, если доступ к роли определяется приложением. Область действия роли определяет набор ресурсов, к которым субъект имеет право доступа. Области приложения — это области, которые определяются и распознаются только этим приложением. Используется `/` для областей приложений на уровне клиента. Используйте **directoryScopeId** , чтобы ограничить область определенными объектами каталога, например административными единицами. `$filter` Поддерживает (`eq`и `ne`по `null` значениям).|
+|completedDateTime|DateTimeOffset|Время даты завершения запроса. Наследуется от [запроса](../resources/request.md).|
+|createdBy|[identitySet](../resources/identityset.md)|Субъект, создавшего этот запрос. Наследуется от [запроса](../resources/request.md).|
+|createdDateTime|DateTimeOffset|Дата создания запроса. Наследуется от [запроса](../resources/request.md).|
+|Customdata|String|Поле "Бесплатный текст" для определения любых пользовательских данных для запроса. Не используется. Наследуется от [запроса](../resources/request.md).|
+|directoryScopeId|String|Идентификатор объекта каталога, представляющего область допустимости роли. Область действия роли определяет набор ресурсов, к которым участнику был предоставлен доступ. Области каталога — это общие области, хранящиеся в каталоге, которые распознаются несколькими приложениями. Используется `/` для области на уровне клиента. Используйте **appScopeId** , чтобы ограничить область только приложением. `$filter` Поддерживает (`eq`и `ne`по `null` значениям).|
+|id|String|Уникальный идентификатор объекта **unifiedRoleEligibilityScheduleRequest** . Ключ, не допускающий значения NULL, только для чтения.  Наследуется от [сущности](../resources/entity.md).|
+|isValidationOnly|Boolean|Определяет, является ли вызов проверкой или фактическим вызовом. Задайте это свойство только в том случае, если вы хотите проверить, применяется ли активация к дополнительным правилам, таким как MFA, перед фактической отправкой запроса.|
+|Обоснование|String|Сообщение, предоставляемое пользователями и администраторами при создании объекта **unifiedRoleEligibilityScheduleRequest** .|
+|principalId|String|Идентификатор участника, которой предоставлено право на роль. Поддерживает `$filter` (`eq`, `ne`).|
+|roleDefinitionId|String|Идентификатор объекта [unifiedRoleDefinition](unifiedroledefinition.md) , назначаемого субъекту. Поддерживает `$filter` (`eq`, `ne`).|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Период допустимости роли. В настоящее время повторяющиеся расписания не поддерживаются.|
+|status|String|Состояние запроса на участие в роли. Наследуется от [запроса](../resources/request.md). Только для чтения. Поддерживает `$filter` (`eq`, `ne`).|
+|targetScheduleId|String|Идентификатор объекта расписания, связанного с запросом на приемлемость. Поддерживает `$filter` (`eq`, `ne`).|
+|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Сведения о билете, связанные с запросом на участие в роли, включая сведения о номере билета и системе билетов. Необязательное свойство.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|appScope|[appScope](../resources/appscope.md)|Свойство только для чтения с подробными сведениями об области приложения, если область назначения предназначена для конкретного приложения. Сущность containment.|
-|directoryScope|[directoryObject](../resources/directoryobject.md)|Свойство, ссылающееся на объект каталога, который является областью назначения. Предоставляется для того, чтобы вызывающие объекты могли получить объект каталога `$expand` , используя одновременно с получением назначения роли. Только для чтения.|
-|Основной|[directoryObject](../resources/directoryobject.md)|Свойство, ссылающееся на субъект, который получает назначение роли через запрос. Предоставляется для того, чтобы вызывающие объекты `$expand` могли получить субъект одновременно с получением назначения роли. Только для чтения. |
-|roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|Свойство, указывающее roleDefinition, для которых предназначено назначение. Предоставляется для того, чтобы вызывающие объекты могли получить определение роли `$expand` одновременно с получением назначения роли. roleDefinition.Id будет автоматически развернут.|
-|targetSchedule|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)| Свойство, указывающее расписание назначения подходящей роли. |
+|appScope|[appScope](../resources/appscope.md)|Свойство только для чтения с подробными сведениями об области приложения, если права на роль относятся к приложению. Допускается значение null. Поддерживает `$expand`.|
+|directoryScope|[directoryObject](../resources/directoryobject.md)|Объект каталога, который является областью действия роли. Только для чтения. Поддерживает `$expand`.|
+|Основной|[directoryObject](../resources/directoryobject.md)|Субъект, который получает право на роль в запросе. Поддерживает `$expand`.|
+|roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|Подробные сведения об [объекте unifiedRoleDefinition](../resources/unifiedroledefinition.md) , на который ссылаются через свойство **roleDefinitionId** . Поддерживает `$expand`.|
+|targetSchedule|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|Расписание для допустимости роли, на которую ссылаются через свойство **targetScheduleId** . Поддерживает `$expand`.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceAppManagement
 description: Одноэлементный объект, служащий контейнером для всех функций управления приложениями на устройствах.
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 97184dcbbf4e76576b8166a9fa10030970b8c2ff
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 1cef0fc97e508bd3f3eb30e1dc09fa86336f7891
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899508"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444532"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Тип ресурса deviceAppManagement
 
@@ -33,15 +33,15 @@ ms.locfileid: "65899508"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |**Адаптация**|
 |isEnabledForMicrosoftStoreForBusiness|Boolean|Указывает, включена ли для учетной запись синхронизация приложений из Microsoft Store для бизнеса.|
 |microsoftStoreForBusinessLanguage|String|Сведения о языковом стандарте, используемом для синхронизации приложений из Microsoft Store для бизнеса. Региональные параметры, относящиеся к стране или региону. Названия этих региональных параметров соответствуют стандарту RFC 4646 (для Windows Vista и более поздних версий). Используется формат `<languagecode2>`-<страна/код_региона2>, где `<languagecode2>` — это двухбуквенный код в нижнем регистре, полученный из стандарта ISO 639-1, а <страна/код_регион2> — код из двух прописных букв по стандарту ISO 3166. Например, en-US для английского (США) — это определенный региональный стандарт.|
 |microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|Время последней завершенной синхронизации приложений из Microsoft Store для бизнеса.|
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|Время последней успешной синхронизации приложений из Microsoft Store для бизнеса с учетной записью.|
-|microsoftStoreForBusinessPortalSelection|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|Сведения о портале конечных пользователей используются для синхронизации приложений из Microsoft Store для бизнеса с корпоративным порталом Intune. Существует три варианта выбора: "Только корпоративный \[портал", "Корпоративный портал и частный магазин", "Только частный магазин"\]. Возможные значения: `none`, `companyPortal`, `privateStore`.|
+|microsoftStoreForBusinessPortalSelection|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|Сведения о портале конечных пользователей используются для синхронизации приложений из Microsoft Store для бизнеса в Корпоративный портал Intune. Существует три варианта выбора: "Только корпоративный \[портал", "Корпоративный портал и частный магазин", "Только частный магазин"\]. Возможные значения: `none`, `companyPortal`, `privateStore`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |**Приложения**|
@@ -67,7 +67,7 @@ ms.locfileid: "65899508"
 |targetedManagedAppConfigurations|Коллекция [targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md)|Целевые конфигурации управляемых приложений.|
 |windowsInformationProtectionPolicies|Коллекция [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md)|Windows Information Protection для приложений на устройствах, не зарегистрированных с использованием MDM.|
 |**Адаптация**|
-|sideLoadingKeys|[Коллекция sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Неопубликоваемые ключи загрузки, необходимые для установки приложений Для Windows 8 и 8.1.|
+|sideLoadingKeys|[Коллекция sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Неопубликоваемые ключи загрузки, необходимые для установки Windows 8 и приложений версии 8.1.|
 |VPP токены|[vpp Токен](../resources/intune-onboarding-vpptoken.md) коллекция|Список Vpp маркеров для данной организации.|
 |**Набор политик**|
 |наборы политик|[Коллекция policySet](../resources/intune-policyset-policyset.md)|Набор политик и приложений|
@@ -80,7 +80,7 @@ ms.locfileid: "65899508"
 |**Интеграция с партнером**|
 |deviceAppManagementTasks|[Коллекция deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|Задачи управления приложениями устройств.|
 |**Unlock**|
-|wdacSupplementalPolicies|[Коллекция windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|Коллекция дополнительных политик управления приложениями в Защитнике Windows.|
+|wdacSupplementalPolicies|[Коллекция windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|Коллекция дополнительных политик Защитник Windows управления приложениями.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.  Обратите внимание, что это только пример. Ответы на фактические запросы будут содержать свойства, соответствующие контексту.  

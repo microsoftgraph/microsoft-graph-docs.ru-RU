@@ -12238,7 +12238,7 @@ items:
                         href: api/authenticationcontextclassreference-get.md
                       - name: Обновление
                         href: api/authenticationcontextclassreference-update.md
-              - name: Межтенантный доступ (предварительная версия)
+              - name: Межтенантный доступ
                 items:
                   - name: Обзор
                     displayName: 'Cross-tenant access settings, XTAP'
@@ -12877,7 +12877,7 @@ items:
                         href: api/identityuserflowattribute-delete.md
                   - name: Назначение атрибута потока пользователя
                     items:
-                      - name: Пользователь
+                      - name: User
                         href: resources/identityuserflowattributeassignment.md
                       - name: Получение
                         href: api/identityuserflowattributeassignment-get.md
@@ -13834,7 +13834,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Delete
                     href: api/educationalactivity-delete.md
-              - name: адрес электронной почты;
+              - name: Адрес электронной почты
                 items:
                   - name: Электронная почта элемента
                     href: resources/itememail.md
@@ -14551,7 +14551,7 @@ items:
       - name: Поиск
         displayname: Microsoft Search API
         items:
-          - name: Запрос
+          - name: Query
             items:
               - name: Обзор
                 href: resources/search-api-overview.md
@@ -15299,7 +15299,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы

@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: e9c27981ef7f4ca80c5c528e1498f4be36c86532
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: a046b8678efefa1350592565aa33fa3da9379fad
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66092753"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446656"
 ---
 # <a name="update-ediscoverysearch"></a>Обновление ediscoverySearch
 Пространство имен: microsoft.graph.security
@@ -50,9 +50,9 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySea
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|contentQuery|Строка|Строка запроса в KQL запроса (язык запросов ключевых слов). Дополнительные сведения см. в [запросах по ключевым словам и условиях поиска для поиска контента и обнаружения электронных данных](/microsoft-365/compliance/keyword-queries-and-search-conditions).  Поиск можно уточнить с помощью полей, связанных со значениями; Например, `subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016`.|
+|contentQuery|String|Строка запроса в запросе KQL (язык запросов ключевых слов). Дополнительные сведения см. в [запросах по ключевым словам и условиях поиска для поиска контента и обнаружения электронных данных](/microsoft-365/compliance/keyword-queries-and-search-conditions).  Поиск можно уточнить с помощью полей, связанных со значениями; Например, `subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016`.|
 |dataSourceScopes|dataSourceScopes|Если этот параметр указан, коллекция будет охватывать всю службу для всей рабочей нагрузки. Возможные значения: `none`,`allTenantMailboxes`,,`allTenantSites``allCaseCustodians`,`allCaseNoncustodialDataSources`. **Примечание:** При создании исходной коллекции требуется один хранителя или указание dataSourceScope.|
-|description|Строка|Описание поиска **eDiscovery**.|
+|description|String|Описание поиска **eDiscovery**.|
 |displayName|String|Отображаемое имя поиска **eDiscovery**.|
 
 
@@ -93,6 +93,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-ediscoverysearch-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-ediscoverysearch-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

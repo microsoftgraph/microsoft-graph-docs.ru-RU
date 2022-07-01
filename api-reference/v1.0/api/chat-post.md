@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0883addf07dae70bdb80164c2f509f2824dd3b78
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: fe400208580870b6eddac82e1ada5709483e25e1
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118657"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437847"
 ---
 # <a name="create-chat"></a>Создание чата
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "66118657"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Chat.Create, Chat.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | Chat.Create |
+|Для приложений | Chat.Create |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ POST /chats
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В тексте запроса добавьте представление объекта чата в формате [JSON.](../resources/chat.md)
 
 В следующей таблице перечислены свойства, необходимые для создания объекта чата.
@@ -402,6 +402,8 @@ Content-Type: application/json
 #### <a name="request"></a>Запрос
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chat_oneOnOne_federated"
@@ -428,6 +430,28 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-oneonone-federated-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-oneonone-federated-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chat-oneonone-federated-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-chat-oneonone-federated-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-chat-oneonone-federated-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

@@ -1,21 +1,21 @@
 ---
 title: Получение organizationalBrandingLocalization
-description: Ознакомьтесь с свойствами и отношениями объекта организационнойbrandingLocalization.
+description: Чтение свойств и связей объекта organizationalBrandingLocalization.
 author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f8204252dc6355737d184512c9000161bd4040c3
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 5d2f49c99c2e442cb14ebcfe1f69d1d192c81a25
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395253"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444467"
 ---
 # <a name="get-organizationalbrandinglocalization"></a>Получение organizationalBrandingLocalization
 Пространство имен: microsoft.graph
 
-Ознакомьтесь с свойствами и отношениями объекта [организационнойbrandingLocalization](../resources/organizationalbrandinglocalization.md) . Чтобы получить объект локализации, укажите значение **id** в URL-адресе.
+Чтение свойств и связей объекта [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) . Чтобы получить объект фирменной символики локализации, укажите значение **идентификатора** в URL-адресе.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,11 +46,11 @@ GET /organization/{organizationId}/branding/localizations/{organizationalBrandin
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код `200 OK` ответа и объект [организационнойbrandingLocalization](../resources/organizationalbrandinglocalization.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-localized-branding-for-a-specific-locale-fr-fr"></a>Пример 1. Получить локализованный брендинг для определенного локального (fr-FR)
+### <a name="example-1-get-the-localized-branding-for-a-specific-locale-fr-fr"></a>Пример 1. Получение локализованной фирменной символики для определенного языкового стандарта (fr-FR)
 
 #### <a name="request"></a>Запрос
 
@@ -86,13 +86,17 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 [!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbrandinglocalization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-organizationalbrandinglocalization-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -123,7 +127,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-the-value-of-signinpagetext-for-a-specific-locale"></a>Пример 2. Получить значение signInPageText для определенного локального значения
+### <a name="example-2-get-the-value-of-signinpagetext-for-a-specific-locale"></a>Пример 2. Получение значения signInPageText для определенного языкового стандарта
 
 #### <a name="request"></a>Запрос
 
@@ -160,7 +164,7 @@ GET https://graph.microsoft.com/v1.0/organization/99b24e1b-abec-4598-9d63-a2baf0
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -180,9 +184,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-get-the-bannerlogo-for-the-default-locale"></a>Пример 3. Получить bannerLogo для локального значения по умолчанию
+### <a name="example-3-get-the-bannerlogo-for-the-default-locale"></a>Пример 3. Получение bannerLogo для языкового стандарта по умолчанию
 
-В следующем примере **возвращается объект bannerLogo** для локального значения по умолчанию. Вы можете указать **id** как или `default` в `0` URL-адресе запроса. Если объект не установлен, запрос возвращает пустой ответ.
+В следующем примере возвращается **объект bannerLogo** для языкового стандарта по умолчанию. Идентификатор можно указать **как** или `default` в URL-адресе `0` запроса. Если объект не задано, запрос возвращает пустой ответ.
 
 #### <a name="request"></a>Запрос
 
@@ -214,9 +218,9 @@ Content-Type: image/*
 <Image>
 ```
 
-### <a name="example-4-get-the-bannerlogo-for-the-fr-fr-locale"></a>Пример 4. Получить bannerLogo для fr-FR-locale
+### <a name="example-4-get-the-bannerlogo-for-the-fr-fr-locale"></a>Пример 4. Получение bannerLogo для языкового стандарта fr-FR
 
-В следующем примере возвращается **объект bannerLogo** `fr-FR` для локального объекта, чей bannerLogo не установлен.
+В следующем примере возвращается объект **bannerLogo** для `fr-FR` языкового стандарта, для которого не задано значение bannerLogo.
 
 #### <a name="request"></a>Запрос
 
@@ -252,12 +256,16 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 [!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbranding-frlocale-bannerlogo-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-organizationalbranding-frlocale-bannerlogo-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

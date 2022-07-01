@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 79db805376e936b8d9bfd36461a5ef421a0eb7c8
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: 141021e58e995e5939ad1dec2b915fbacfbddf21
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685105"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436612"
 ---
 # <a name="azure-ad-access-reviews"></a>Проверки доступа Azure AD
 
@@ -20,17 +20,17 @@ ms.locfileid: "64685105"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Используйте [проверки доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) для настройки однофакторной или повторяющейся проверки доступа для аттестации прав пользователей на доступ к ресурсам Azure AD. К этим ресурсам Azure AD относятся группы, субъекты-службы, пакеты доступа и привилегированные роли.
+Используйте [Azure AD проверки доступа](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) для настройки однофакторной или повторяющейся проверки доступа для аттестации прав пользователей на доступ к Azure AD ресурсам. К Azure AD ресурсов относятся группы, субъекты-службы, пакеты доступа и привилегированные роли.
 
 Типичные сценарии клиентов для проверок доступа:
 
 - Клиенты могут просматривать и сертифицировать доступ гостевых пользователей к группам с помощью членства в группах. Рецензенты могут использовать аналитические сведения, которые предоставляются, чтобы эффективно решить, должны ли гости иметь постоянный доступ.
-- Клиенты могут просматривать и сертифицировать доступ сотрудников к ресурсам Azure AD.
-- Клиенты могут просматривать и проводить аудит назначений привилегированным ролям Azure AD. Это поддерживает организации в управлении привилегированным доступом.
+- Клиенты могут просматривать и сертифицировать доступ сотрудников к Azure AD ресурсам.
+- Клиенты могут просматривать и проводить аудит назначений Azure AD привилегированных ролей. Это поддерживает организации в управлении привилегированным доступом.
 
 Обратите внимание, что функция проверки доступа, включая API, включена в Azure AD Premium P2.  Клиент, в котором создается проверка доступа, должен иметь допустимую приобретенную или пробную Azure AD Premium P2 или подписку EMS E5. Дополнительные сведения о требованиях к лицензиям см. в разделе ["Требования к лицензиям для проверки доступа"](/azure/active-directory/governance/access-reviews-overview#license-requirements).
 
-[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-overview-note.md)]
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
 ## <a name="methods"></a>Методы
 
@@ -52,8 +52,8 @@ ms.locfileid: "64685105"
 |[stop](../api/accessreviewinstance-stop.md) | Нет. | Вручную остановите accessReviewInstance. |
 |[acceptRecommendations](../api/accessreviewinstance-acceptrecommendations.md) | Нет. | Позволяет вызывающему пользователю принять рекомендацию по принятию решения для каждого объекта NotReviewInstanceDecisionItem, в котором он является рецензентом для определенного объекта accessReviewInstance. |
 |[applyDecisions](../api/accessreviewinstance-applydecisions.md) | Нет. | Вручную примените решения к accessReviewInstance. |
-|[batchRecordDecisions](../api/accessreviewinstance-batchrecorddecisions.md)|Никаких других изменений не происходит|Просмотрите пакеты субъектов или ресурсов за один вызов.|
-|[resetDecisions](../api/accessreviewinstance-resetdecisions.md)|Никаких других изменений не происходит|Сбрасывает все элементы принятия решений в экземпляре в значение `notReviewed`.|
+|[batchRecordDecisions](../api/accessreviewinstance-batchrecorddecisions.md)|Нет|Просмотрите пакеты субъектов или ресурсов за один вызов.|
+|[resetDecisions](../api/accessreviewinstance-resetdecisions.md)|Нет|Сбрасывает все элементы принятия решений в экземпляре в значение `notReviewed`.|
 |[filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md)|[Коллекция accessReviewInstance](../resources/accessreviewinstance.md)|Возвращает все экземпляры в заданном [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) , для которого вызывающий пользователь является рецензентом одного или нескольких решений.|
 |**Элементы принятия решений об экземпляре**| | |
 |[Список решений](../api/accessreviewinstance-list-decisions.md) | [Коллекция accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) | Получение списка объектов [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) и их свойств.|
@@ -75,9 +75,9 @@ ms.locfileid: "64685105"
 
 ## <a name="role-and-application-permission-authorization-checks"></a>Проверки авторизации разрешений ролей и приложений
 
-Для управления [проверками доступа](/azure/active-directory/roles/permissions-reference) вызывающему пользователю требуются следующие роли Azure AD.
+Для [управления проверками доступа вызывающему](/azure/active-directory/roles/permissions-reference) пользователю требуются следующие Azure AD роли.
 
-| Операция | Разрешения приложений | Требуемая роль каталога вызывающего пользователя |
+| Operation | Разрешения приложений | Требуемая роль каталога вызывающего пользователя |
 |:------------------|:------------|:--------------------------------------------|
 | Чтение | AccessReview.Read.All или AccessReview.ReadWrite.All | Глобальный администратор, глобальный читатель, администратор безопасности, читатель безопасности или администратор пользователей |
 | Создание, обновление или удаление | AccessReview.ReadWrite.All | Глобальный администратор или администратор пользователей |
@@ -86,9 +86,9 @@ ms.locfileid: "64685105"
 
 ## <a name="see-also"></a>См. также
 
-- [Руководства по](/graph/accessreviews-overview) использованию API проверки доступа для проверки доступа к ресурсам Azure AD
-- [Как администратор может управлять доступом пользователей с помощью проверок доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
-- [Как администратор может управлять гостевым доступом с помощью проверок доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
+- [Руководства по](/graph/accessreviews-overview) использованию API проверок доступа для проверки доступа к Azure AD ресурсам
+- [Как администратор может управлять доступом пользователей с помощью Azure AD доступа](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
+- [Как администратор может управлять гостевым доступом с помощью Azure AD доступа](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
 
 
 <!--

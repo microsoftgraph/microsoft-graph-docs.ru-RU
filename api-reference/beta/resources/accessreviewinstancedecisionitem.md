@@ -1,18 +1,18 @@
 ---
-title: accessReviewInstanceDecisionItem type
+title: Тип ресурса accessReviewInstanceDecisionItem
 description: Представляет решение о доступе пользователя к accessReviewInstance.
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2870732152bbb19cc2145b9dd54d7020ac01e6c0
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: c1412a0354e4993de02ad5cdefc6fc732be545bc
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161937"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446387"
 ---
-# <a name="accessreviewinstancedecisionitem-resource-type"></a>accessReviewInstanceDecisionItem type
+# <a name="accessreviewinstancedecisionitem-resource-type"></a>Тип ресурса accessReviewInstanceDecisionItem
 
 Пространство имен: microsoft.graph
 
@@ -20,43 +20,45 @@ ms.locfileid: "62161937"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Представляет решение о проверке доступа к Azure [AD](accessreviewsv2-overview.md) в экземпляре проверки. Это решение представляет определение доступа пользователя или директора службы для данного экземпляра [обзора доступа.](accessreviewinstance.md)  Этот ресурс относится к открытому типу, который позволяет передавать другие свойства.
+Представляет Azure AD [проверки доступа](accessreviewsv2-overview.md) для экземпляра проверки. Это решение представляет собой определение доступа пользователя или субъекта-службы для данного экземпляра [проверки доступа](accessreviewinstance.md).  Этот ресурс относится к открытому типу, который позволяет передавать другие свойства.
 
 ## <a name="methods"></a>Методы
 
 | Метод | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
-|[List accessReviewInstanceDecisionItems](../api/accessreviewinstance-list-decisions.md) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection | Получите список объектов [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) и их свойств.|
-|[Get accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-get.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)|Ознакомьтесь с свойствами и отношениями [объекта accessReviewInstanceDecisionItem.](../resources/accessreviewinstancedecisionitem.md)|
-|[Обновление accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-update.md) | Нет. | Для любого accessReviewInstanceDecisionItems, на который вызывается пользователь, на который назначен рецензент, вызывающий пользователь может записать решение, заплатив объект решения. |
-|[filterByCurrentUser](../api/accessreviewinstancedecisionitem-filterbycurrentuser.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Извлекает все [объекты accessReviewInstanceDecisionItems,](accessreviewinstancedecisionitem.md) где использование вызовов является рецензентом для данного [accessReviewInstance.](accessreviewinstance.md)|
-|[List accessReviewInstanceDecisionItems pending approval (deprecated)](../api/accessreviewinstancedecisionitem-listpendingapproval.md) | [accessReviewInstanceDecisionItem.](accessreviewinstancedecisionitem.md) | Получите все accessReviewInstanceDecisionItems, назначенные вызываемой пользователю, для определенного accessReviewInstance. Этот метод отмещается и заменяется [фильтромByCurrentUser.](../api/accessreviewinstancedecisionitem-filterbycurrentuser.md) |
+|[Перечисление объектов accessReviewInstanceDecisionItems](../api/accessreviewinstance-list-decisions.md) | [Коллекция accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) | Получение списка объектов [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) и их свойств.|
+|[Получение объекта accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-get.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)|Чтение свойств и связей объекта [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) .|
+|[Обновление accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-update.md) | Нет. | Для любых объектов accessReviewInstanceDecisionItems, для которых вызывающему пользователю назначен рецензент, вызывающий пользователь может записать решение, исправив объект принятия решения. |
+|[filterByCurrentUser](../api/accessreviewinstancedecisionitem-filterbycurrentuser.md)|[Коллекция accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)|Извлекает все [объекты accessReviewInstanceDecisionItems](accessreviewinstancedecisionitem.md) , где вызывающее использование является рецензентом для данного [объекта accessReviewInstance](accessreviewinstance.md).|
+|[Вывод списка объектов accessReviewInstanceDecisionItems, ожидающих утверждения (не рекомендуется)](../api/accessreviewinstancedecisionitem-listpendingapproval.md) | [коллекция accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) . | Получение всех объектов accessReviewInstanceDecisionItems, назначенных вызывающему пользователю, для определенного объекта accessReviewInstance. Этот метод является устаревшим и заменяется [filterByCurrentUser](../api/accessreviewinstancedecisionitem-filterbycurrentuser.md). |
 
 ## <a name="properties"></a>Свойства
 | Свойство | Тип |  Описание |
 | :---------------| :---- | :---------- |
-|accessReviewId|Строка|Идентификатор родителя accessReviewInstance. Поддерживает `$select`. Только для чтения.|
+|accessReviewId|String|Идентификатор родительского объекта accessReviewInstance. Поддерживает `$select`. Только для чтения.|
 |appliedBy|[userIdentity](../resources/useridentity.md)|Идентификатор пользователя, который применил решение. Только для чтения.|
-|appliedDateTime|DateTimeOffset|Время, за которое было применено решение об утверждении. Тип DatetimeOffset представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.  Поддерживает `$select`. Только для чтения.|
-|applyResult|Строка|Результат применения решения. Возможные значения: `New` `AppliedSuccessfully` , , и `AppliedWithUnknownFailure` `AppliedSuccessfullyButObjectNotFound` `ApplyNotSupported` . Поддерживает `$select` и `$orderby` `$filter` `eq` (только). Только для чтения.|
-|решение|Строка|Результат проверки. Возможные значения: `Approve` `Deny` , , или `NotReviewed` `DontKnow` . Поддерживает `$select` и `$orderby` `$filter` `eq` (только). |
-|id|Строка| Идентификатор решения. Наследуется от [сущности](../resources/entity.md). Поддерживает `$select`. Только для чтения.|
-|обоснование|Строка|Обоснование, оставленное рецензентом при принятии решения.|
-| target | [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)  | Цель этого конкретного решения. Целевые показатели принятия решений могут быть разных типов , каждый из которых имеет свои собственные свойства. См. [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md). Только для чтения. <br/> Это свойство было заменено свойствами `principal` и свойствами `resource` в v1.0.|
-|основной|[identity](../resources/identity.md)|Каждый элемент решения в обзоре доступа представляет доступ директора к ресурсу. Это свойство представляет сведения о принципе. Например, если элемент решения представляет доступ пользователя "Bob" к группе "Sales", то основным элементом является "Bob", а ресурсом является "Sales". Основные принципы могут быть двух типов : userIdentity и servicePrincipalIdentity. Поддерживает `$select`. Только для чтения.|
-|principalLink|Строка|Ссылка на основной объект. Пример: `https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9`. Только для чтения.|
-|рекомендация|Строка|Сгенерированная системой рекомендация для решения об утверждении, основанном на последнем интерактивном входе в клиент. Рекомендуется утвердить, если вход в нее находится в течение тридцати дней с начала проверки. Рекомендуется отказать, если вход превышает 30 дней с начала проверки. Рекомендация недоступна в противном случае. Возможные значения: `Approve` `Deny` , или `NoInfoAvailable` . Поддерживает `$select` и `$orderby` `$filter` `eq` (только). Только для чтения.|
-|resource|[accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)|Каждый элемент решения в обзоре доступа представляет доступ директора к ресурсу. Это свойство представляет сведения о ресурсе. Например, если элемент решения представляет доступ пользователя "Bob" к группе "Sales", то основным является Боб, а ресурсом является "Sales". Ресурсы могут быть нескольких типов. См. [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md). Только для чтения.|
-|resourceLink|Строка|Ссылка на ресурс. Например, `https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8`. Поддерживает `$select`. Только для чтения.|
+|appliedDateTime|DateTimeOffset|Метка времени, когда было применено решение об утверждении. Тип DatetimeOffset представляет сведения о дате и времени в формате ISO 8601 и всегда используется во время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.  Поддерживает `$select`. Только для чтения.|
+|applyResult|String|Результат применения решения. Возможные значения: `New`, `AppliedSuccessfully`, и `AppliedSuccessfullyButObjectNotFound` `AppliedWithUnknownFailure``ApplyNotSupported`. Поддерживает , `$select``$orderby`и `$filter` (`eq`только). Только для чтения.|
+|Решение|String|Результат проверки. Возможные значения: `Approve`, `Deny`, или `NotReviewed``DontKnow`. Поддерживает , `$select``$orderby`и `$filter` (`eq`только). |
+|id|String| Идентификатор решения. Наследуется от [сущности](../resources/entity.md). Поддерживает `$select`. Только для чтения.|
+|Обоснование|String|Обоснование, оставленные рецензентом при принятии решения.|
+| target | [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)  | Целевой объект этого конкретного решения. Целевые объекты принятия решений могут иметь разные типы — каждый со своими собственными свойствами. См [. accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md). Только для чтения. <br/> Это свойство было заменено свойствами `principal` и свойствами `resource` в версии 1.0.|
+|Основной|[identity](../resources/identity.md)|Каждый элемент принятия решений в проверке доступа представляет доступ субъекта к ресурсу. Это свойство представляет сведения о субъекте. Например, если элемент принятия решений представляет доступ пользователя Bob к группе "Продажи", то субъект — "Боб", а ресурс — "Sales". Субъекты могут иметь два типа: userIdentity и servicePrincipalIdentity. Поддерживает `$select`. Только для чтения.|
+|principalLink|String|Ссылка на основной объект. Пример: `https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9`. Только для чтения.|
+|Рекомендации|String|Созданная системой рекомендация для принятия решения об утверждении на основе последнего интерактивного входа в клиент. Рекомендуем утвердить, если вход выполняется в течение 30 дней с начала проверки. Рекомендуется запретить вход, если срок действия входа превышает 30 дней с начала проверки. В противном случае рекомендация недоступна. Возможные значения: `Approve`, или `Deny``NoInfoAvailable`. Поддерживает , `$select``$orderby`и `$filter` (`eq`только). Только для чтения.|
+|resource|[accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)|Каждый элемент принятия решений в проверке доступа представляет доступ субъекта к ресурсу. Это свойство представляет сведения о ресурсе. Например, если элемент принятия решения представляет доступ пользователя "Bob" к группе "Продажи", то субъектом является Боб, а ресурс — "Sales". Ресурсы могут иметь несколько типов. См [. accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md). Только для чтения.|
+|resourceLink|String|Ссылка на ресурс. Например, `https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8`. Поддерживает `$select`. Только для чтения.|
 |reviewedBy|[userIdentity](../resources/useridentity.md)| Идентификатор рецензента. Поддерживает `$select`. Только для чтения.|
-|reviewedDateTime|DateTimeOffset| Время, за которое было принято решение о проверке. Поддерживает `$select`. Только для чтения.|
+|reviewedDateTime|DateTimeOffset| Метка времени, когда было принято решение о проверке. Поддерживает `$select`. Только для чтения.|
+|principalResourceMembership|[decisionItemPrincipalResourceMembership](../resources/decisionItemPrincipalResourceMembership.md)| Каждый элемент решения в проверке доступа представляет членство участника в ресурсе. Это свойство предоставляет сведения о членстве. Например, имеет ли субъект прямой или косвенный доступ к ресурсу. Поддерживает `$select`. Только для чтения.|
+
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-| экземпляр |[accessReviewInstance](accessreviewinstance.md) | Существует точно один accessReviewInstance, связанный с каждым решением. Экземпляр является родителем элемента решения, представляющего повторение проверки доступа, на которое принимается решение. |
-| insights |[коллекция governanceInsight](governanceinsight.md) | Аналитика рекомендации рецензентам относительно утверждения или отказа в принятии решения. Может быть несколько идей, связанных с **accessReviewInstanceDecisionItem**. |
+| экземпляр |[accessReviewInstance](accessreviewinstance.md) | С каждым решением связан ровно один объект accessReviewInstance. Экземпляр является родительским элементом элемента принятия решения, представляющим периодичность проверки доступа, в которых принимается решение. |
+| insights |[Коллекция governanceInsight](governanceinsight.md) | Аналитические сведения — это рекомендации рецензентам по утверждению или отклонению решения. С **accessReviewInstanceDecisionItem может быть связано несколько аналитических сведений**. |
 
 
 ## <a name="json-representation"></a>Представление JSON
@@ -97,6 +99,9 @@ ms.locfileid: "62161937"
   "principalLink": "String",
   "resource": {
     "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"
+  },
+  "principalResourceMembership": {
+    "@odata.type": "microsoft.graph.decisionItemPrincipalResourceMembership"
   },
   "resourceLink": "String"
 }

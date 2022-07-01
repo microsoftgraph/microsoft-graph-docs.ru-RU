@@ -1,32 +1,32 @@
 ---
-title: Список dailyPrintUsageByUser
-description: Извлечение списка сводок ежедневного использования печати, сгруппив по пользователю.
+title: List dailyPrintUsageByUser
+description: Получение списка сводок по ежедневному использованию печати, сгруппированных по пользователю.
 author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: e810fe3ebc50cf730309287f46f2ca1590613def
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 65bd348bb5d8b704379994eeddd03637eba7808b
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006067"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443865"
 ---
-# <a name="list-dailyprintusagebyuser"></a>Список dailyPrintUsageByUser
+# <a name="list-dailyprintusagebyuser"></a>List dailyPrintUsageByUser
 Пространство имен: microsoft.graph
 
-Извлечение списка сводок ежедневного использования печати, сгруппив по пользователю.
+Получение списка сводок по ежедневному использованию печати, сгруппированных по пользователю.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать.
+Помимо указанных ниже разрешений, клиент пользователя должен иметь активную подписку на универсальную печать.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ GET /reports/dailyPrintUsageByUser
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов printUsageByUser](../resources/printusagebyuser.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию [объектов printUsageByUser](../resources/printusagebyuser.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByUser
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-printusagebyuser-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-printusagebyuser-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

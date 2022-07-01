@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 3a000fa0d7add3c225f545bde24dcf5983e8a7e9
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: a5eeee7c6bea68f82f653eb6e21de26b6e4b663a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65206009"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445692"
 ---
 # <a name="documentsetversion-restore"></a>documentSetVersion: восстановление
 Пространство имен: microsoft.graph
@@ -46,7 +46,7 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/documentSetVersions/{document
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
@@ -84,6 +84,10 @@ POST https://graph.microsoft.com/beta/sites/root/lists/Documents/items/2/documen
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/documentsetversionthisrestore-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/documentsetversionthisrestore-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

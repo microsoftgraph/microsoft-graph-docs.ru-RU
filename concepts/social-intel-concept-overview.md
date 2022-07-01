@@ -1,18 +1,18 @@
 ---
-title: Обзор социальной и рабочей аналитики в Microsoft Graph
-description: Сотни миллионов пользователей облачных служб Microsoft 365 составляют часть ядра Microsoft Graph. Службы Microsoft Graph управляют данными пользователей, защищают их и при наличии необходимых разрешений предоставляют к ним доступ, чтобы стимулировать работу и креатив в компаниях. Среди всех данных пользователя, доступных в Microsoft Graph, особый интерес представляют данные о его социальных взаимодействиях.
+title: Обзор данных о людях и рабочей аналитики в Microsoft Graph
+description: 'Сведения о параметрах API Microsoft Graph, позволяющих создавать более интеллектуальные приложения для доступа к пользовательским данным: API людей, API аналитики, API профилей и API карточек профилей.'
 author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 63443cf872ebb978a681a4ce3f0b29eb3fa30818
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 6201bd7e70602fda3088e56de24863eb3010d66f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461242"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445820"
 ---
-# <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Обзор социальной и рабочей аналитики в Microsoft Graph
+# <a name="people-and-workplace-intelligence-in-microsoft-graph"></a>Обзор данных о людях и рабочей аналитики в Microsoft Graph
 
 Сотни миллионов пользователей облачных служб Microsoft 365 составляют часть ядра Microsoft Graph. Службы Microsoft Graph управляют данными пользователей, защищают их и при наличии необходимых разрешений предоставляют к ним доступ, чтобы стимулировать работу и креатив в компаниях. 
 
@@ -98,7 +98,8 @@ API аналитики позволяет синхронизировать и и
 
 Ищете справочные материалы по API для этих служб?
 
-- [Использование API Microsoft Graph для интеграции функций социальной и рабочей аналитики в приложении](/graph/api/resources/social-overview)
+- [Используйте API Microsoft Graph для интеграции людей и средств искусственного интеллекта рабочего места в приложении (версия 1.0)](/graph/api/resources/social-overview)
+- [Используйте API Microsoft Graph для интеграции людей и средств искусственного интеллекта рабочего места в приложении (бета-версия)](/graph/api/resources/social-overview?view=graph-rest-beta&preserve-view=true)
 - Персональный ресурс People [API](/graph/api/resources/person) 
 - [Профиль (предварительная версия)](/graph/api/resources/profile)ресурс
 - [Свойство карточки профиля (предварительная версия)](/graph/api/resources/profilecardproperty) ресурс
@@ -111,5 +112,5 @@ API аналитики позволяет синхронизировать и и
 * Узнайте больше об [пользовательском API](people-example.md).
 * Узнайте как [настроить карточку профиля](add-properties-profilecard.md).
 * Узнайте больше об [аналитике элементов](item-insights-overview.md), [настройке конфиденциальности аналитики элементов для пользователей (предварительная версия)](insights-customize-item-insights-privacy.md) и [API параметров аналитики элементов (предварительная версия)](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) с поддержкой настройки.
-* Узнайте больше об [API аналитики](/graph/api/resources/social-overview?view=graph-rest-beta&preserve-view=true#help-users-balance-work-and-life).
+* Узнайте больше об [API аналитики](/graph/api/resources/social-overview#help-users-balance-work-and-life).
 * Узнайте больше об [API профилей](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true).

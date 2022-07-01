@@ -1,15 +1,15 @@
 ---
-title: Отправка сообщений электронной почты с содержимым MIME
-description: Почтовые клиенты могут отправлять сообщения через Exchange в формате MIME.
+title: Отправляйте электронные письма с содержимым MIME с помощью почтового API Outlook.
+description: Почтовые клиенты могут отправлять сообщения через Exchange в формате сообщений MIME и общаться на нескольких платформах электронной почты.
 author: isvargasmsft
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: c1aec55ea0d8fa405047bc9c7e3a31dbd3d06deb
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 7f86ff3ab34c8bdc640fe7874928c2d8400d0e26
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510515"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446135"
 ---
 # <a name="send-messages-with-mime-content"></a>Отправка сообщений с содержимым MIME
 
@@ -195,4 +195,7 @@ CgAAAA==
 |--------|------|----|-------|
 | Содержимое MIME отформатировано неправильно или отсутствует | POST, PUT | 400 | Недопустимая строка base64 для содержимого MIME. |
 
+## <a name="next-steps"></a>Дальнейшие действия
 
+- [Зачем выполнять интеграцию с почтой Outlook?](outlook-mail-concept-overview.md)
+- [Использование почтового API](/graph/api/resources/mail-api-overview) и [вариантов его использования](/graph/api/resources/mail-api-overview#common-use-cases) в Microsoft Graph версии 1.0
