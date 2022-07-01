@@ -1,22 +1,23 @@
 ---
-title: Создание объекта Calendar
-description: С помощью этого API можно создать календарь для пользователя.
+title: Создание календаря
+description: Создайте календарь для пользователя.
 author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 39fa746b720b0682b951b2fa522c6a197e646d49
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 79f622d2f64070d258298e8b375b859d0c3828d8
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128148"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577618"
 ---
-# <a name="create-calendar"></a>Создание объекта Calendar
+# <a name="create-calendar"></a>Создание календаря
 
 Пространство имен: microsoft.graph
 
-С помощью этого API можно создать календарь для экземпляра [user](../resources/user.md).
+Создайте календарь для [пользователя](../resources/user.md).
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -38,7 +39,7 @@ POST /users/{id | userPrincipalName}/calendars
 | Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Предоставьте в тексте запроса описание объекта [calendar](../resources/calendar.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
@@ -88,9 +89,9 @@ Content-type: application/json
 
 ---
 
-Предоставьте в тексте запроса описание объекта [calendar](../resources/calendar.md) в формате JSON.
 ### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
