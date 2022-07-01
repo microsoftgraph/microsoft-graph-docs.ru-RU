@@ -1,15 +1,15 @@
 ---
 title: Вложение крупных файлов в сообщения и события Outlook
-description: В зависимости от размера файла можно выбрать один из двух способов вложения файлов в сообщения или события.
+description: Создание и использование сеанса отправки для добавления вложений больших файлов размером более 3 МБ в элементы Outlook. На каждом шаге демонстрируется соответствующий код для сообщения и события.
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: ecb8d470e7a6946286b27f78b3a61f569bafe261
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: a42847f4351f85acf122981624ee417701d5ec3a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118594"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437669"
 ---
 # <a name="attach-large-files-to-outlook-messages-or-events"></a>Вложение крупных файлов в сообщения и события Outlook
 

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d7fb21bee52c15f6196c9ca07b669876cdc88e23
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 2831486d30035ba7255532b34186e5b04a8c6396
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095827"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438551"
 ---
 # <a name="create-invitation"></a>Создание приглашения
 

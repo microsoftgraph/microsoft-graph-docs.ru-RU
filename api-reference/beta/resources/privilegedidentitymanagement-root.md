@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: governance
 author: rkarim-ms
-ms.openlocfilehash: ab02fa8a20b6f01bf0d7b71aa70882b7f0af51bb
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: cd4552a582bea09f4b498cf05f38ce9d97deb17f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461291"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441716"
 ---
 # <a name="privileged-identity-management-deprecated"></a>Служба Privileged Identity Management (не рекомендуется)
 
@@ -19,7 +19,7 @@ ms.locfileid: "65461291"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!CAUTION]
->API Privileged Identity Management (PIM) для **ролей Azure AD** устарел и перестал возвращать данные 31 мая 2021 г. Используйте API [управления ролями](/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta&preserve-view=true) и см. ниже [руководство по миграции](#migrate-from-pim-v2-to-pim-v3-apis).
+>API Privileged Identity Management (PIM) для **ролей Azure AD** устарел и перестал возвращать данные 31 мая 2021 г. Используйте [API управления ролями для управления привилегированными пользователями](/graph/api/resources/privilegedidentitymanagementv3-overview) и см. ниже [руководство по миграции](#migrate-from-pim-v2-to-pim-v3-apis).
 >
 >API Privileged Identity Management (PIM) для **ресурсов Azure** скоро перестанет поддерживаться. Используйте новый [REST API PIM Azure для ресурсов Azure](/rest/api/authorization/role-eligibility-schedule-requests). Чтобы осуществить миграцию, см. ниже руководство по миграции.
 
