@@ -1,15 +1,15 @@
 ---
 title: Авторизация для API с целью чтения отчетов об использовании Microsoft 365
-description: Данные отчетов, доступные через API отчетов Microsoft Graph, являются конфиденциальными и защищаются как разрешениями, так и ролями Azure Active Directory (Azure AD).
+description: Отчеты об использовании Microsoft 365 защищаются как разрешениями, так и ролями Azure Active Directory (Azure AD). Узнайте, как назначить роль пользователю.
 author: kszb
 ms.localizationpriority: high
 ms.prod: reports
-ms.openlocfilehash: 1710f5c1be640f61c0ff02340e90b991d3d69f9f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3ac9df517918b68d8d59339902ee9a6e44706b20
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139025"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437648"
 ---
 # <a name="authorization-for-apis-to-read-microsoft-365-usage-reports"></a>Авторизация для API с целью чтения отчетов об использовании Microsoft 365
 
@@ -25,7 +25,8 @@ API для чтения отчетов об использовании Microsoft
 - Администратор клиента Azure AD должен явным образом предоставить согласие на требуемые разрешения для приложения песочницы Graph.
 - Пользователь должен быть участником с ролью ограниченного администратора в Azure AD, указанной выше для авторизации, делегированной пользователю.
 
->**Примечание.** Песочница Graph не поддерживает авторизацию на уровне приложения.
+> [!NOTE]
+> Песочница Graph не поддерживает авторизацию на уровне приложения.
 
 При вызове API из приложения:
 
@@ -36,7 +37,8 @@ API для чтения отчетов об использовании Microsoft
 
 После получения приложением разрешений все обладатели доступа к приложению (т. е. участники клиента Azure AD) получат предоставленные разрешения. Чтобы обеспечить дополнительную защиту конфиденциальных данных отчетов, администраторы клиента должны назначить пользователям приложения соответствующие роли Azure AD. Подробности см. в статьях [Разрешения роли администратора в Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) и [Назначение ролей администратора и других ролей пользователям с помощью Azure Active Directory](/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
->**Примечание.** Вы должны быть администратором клиента, чтобы выполнить это действие.
+> [!NOTE]
+> Вы должны быть администратором клиента, чтобы выполнить это действие.
 
 Назначение роли пользователю:
 

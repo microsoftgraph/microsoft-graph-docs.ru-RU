@@ -1,15 +1,15 @@
 ---
 title: Предоставление общего доступа к календарю или его делегирование в Outlook
-description: В Outlook владелец календаря может поделиться им с другим пользователем либо делегировать другому пользователю управление собраниями в основном календаре владельца.
+description: Используйте API календаря Outlook, чтобы разрешить владельцу календаря предоставлять общий доступ к календарю другому пользователю или делегировать другому пользователю управление собраниями в этом календаре.
 author: juforan
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 5818ab77b54af482a5a970a21ba985831d02f2e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 45ffc25c834f031f795359b57b27cda57237c174
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071793"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438299"
 ---
 # <a name="share-or-delegate-a-calendar-in-outlook"></a>Предоставление общего доступа к календарю или его делегирование в Outlook
 

@@ -1,16 +1,19 @@
 ---
-title: Интеграция приложения UWP Windows с клиентским пакетом SDK для уведомления пользователей
-description: Интеграция приложения UWP Windows с клиентским пакетом SDK уведомления пользователей
+title: Интеграция приложения UWP Windows с клиентским пакетом SDK (не рекомендуется)
+description: После того, как вы зарегистрируете свое приложение и настроите взаимодействие между устройствами, интегрируйте свое клиентское приложение с клиентским пакетом SDK для приложений UWP Windows (не рекомендуется).
 ms.localizationpriority: high
 ms.prod: notifications
-ms.openlocfilehash: b7cfb633d3701715e0a29ee1be8bb1acfe375ea8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a812f5637693303bf8ba41d3190b8a3226d4cb9f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035579"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439118"
 ---
-# <a name="integrate-your-windows-uwp-app-with-the-client-side-sdk-for-user-notifications"></a>Интеграция приложения UWP Windows с клиентским пакетом SDK для уведомления пользователей
+# <a name="integrate-your-windows-uwp-app-with-the-client-side-sdk-for-user-notifications-deprecated"></a>Интеграция приложения UWP Windows с клиентским пакетом SDK для уведомления пользователей (не рекомендуется)
+
+> [!IMPORTANT]
+> API уведомлений Microsoft Graph не рекомендуется использовать, Он прекратил возвращать данные в январе 2022 г. Дополнительные сведения об уведомлениях см. в [Центрах уведомлений Microsoft Azure](/azure/notification-hubs). Дополнительные сведения см. в записи блога [Прекращение поддержки API уведомлений Microsoft Graph (бета-версия)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 После [регистрации своего приложения](notifications-integration-app-registration.md) на портале Azure и внедрения [использования разных устройств](notifications-integration-cross-device-experiences-onboarding.md) в Центре разработки партнеров следующий этап состоит в интеграции вашего клиентского приложения с клиентским пакетом SDK для приложений UWP Windows.  
 
@@ -88,7 +91,7 @@ ms.locfileid: "59035579"
 
 Дополнительные сведения о добавлении и использовании пакетов NuGet в приложении UWP см. в следующих статьях:
 
-* [Использование пакетов с сайта nuget.org](/azure/devops/artifacts/nuget/upstream-sources?tabs=new-nav&view=vsts)
+* [Использование пакетов с сайта nuget.org](/azure/devops/artifacts/nuget/upstream-sources?tabs=new-nav&view=vsts&preserve-view=true)
 * [Краткое руководство. Установка и использование пакета в Visual Studio](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 
 

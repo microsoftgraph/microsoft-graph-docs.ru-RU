@@ -1,21 +1,22 @@
 ---
-title: Предложение нового времени собрания в Outlook
-description: В Outlook организатор собрания может разрешить приглашенным предлагать другое время собрания.
+title: Предложение нового времени собрания в календаре Outlook
+description: Узнайте, как использовать свойства allowNewTimeProposals и proposedNewTime для настройки собраний, которые позволяют приглашенным предлагать альтернативное время собрания.
 author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 75eb225da1cc1ea337b20e07a8429e9acdd32748
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: e69b78be23c0d1a35007ccd7807e9b7057c72b0c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424618"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442079"
 ---
-# <a name="propose-new-meeting-times-in-outlook"></a>Предложение нового времени собрания в Outlook
+# <a name="propose-new-meeting-times-in-outlook-calendar"></a>Предложение нового времени собрания в календаре Outlook
 
 В Outlook организатор собрания может разрешить приглашенным предлагать другое время собрания, если им не подходит исходное время и дата и они отклоняют или принимают приглашение под вопросом. Организатор может принять предложение, изменив время собрания соответствующим образом.
 
 ## <a name="example-attendee-responds-tentative-and-suggests-a-different-datetime"></a>Пример: участник принимает приглашение под вопросом и предлагает другую дату и время
+
 Ниже приведен пример, в котором Алекс (Alex) приглашает Адель (Adele) на обед, Адель принимает приглашение под вопросом и предлагает другую дату и время, а Алекс принимает предложение, изменяя собрание соответствующим образом:
 
 1. Алекс в качестве организатора отправляет Адель приглашение на собрание. Он присваивает свойству **allowNewTimeProposals** объекта [event](/graph/api/resources/event) значение `true`, чтобы разрешить Адель предложить другое время при необходимости.
