@@ -1,16 +1,19 @@
 ---
-title: Интеграция приложения iOS с клиентским пакетом SDK для уведомления пользователей
-description: Интеграция приложения iOS с клиентским пакетом SDK уведомления пользователей.
+title: Интеграция приложения iOS с клиентским пакетом SDK (не рекомендуется)
+description: После регистрации своего приложения и настройки взаимодействия между устройствами, интегрируйте свое клиентское приложение с клиентским пакетом SDK для приложений iOS (не рекомендуется).
 ms.localizationpriority: high
 ms.prod: notifications
-ms.openlocfilehash: 0a73626317195320a274430f32607f13b9920505
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 97ce34d160f7f86d5f4fc206a3de9fa00612d412
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066935"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438285"
 ---
-# <a name="integrate-your-ios-app-with-the-client-side-sdk-for-user-notifications"></a>Интеграция приложения iOS с клиентским пакетом SDK для уведомления пользователей
+# <a name="integrate-your-ios-app-with-the-client-side-sdk-for-user-notifications-deprecated"></a>Интеграция приложения iOS с клиентским пакетом SDK для уведомления пользователей (не рекомендуется)
+
+> [!IMPORTANT]
+> API уведомлений Microsoft Graph не рекомендуется использовать, Он прекратил возвращать данные в январе 2022 г. Дополнительные сведения об уведомлениях см. в [Центрах уведомлений Microsoft Azure](/azure/notification-hubs). Дополнительные сведения см. в записи блога [Прекращение поддержки API уведомлений Microsoft Graph (бета-версия)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 После [регистрации приложения](notifications-integration-app-registration.md) на портале Azure и подключения [кроссплатформенных интерфейсов](notifications-integration-cross-device-experiences-onboarding.md) в партнерском центре разработки следующий этап состоит в интеграции вашего клиентского приложения с клиентским пакетом SDK для приложений iOS.  
 
