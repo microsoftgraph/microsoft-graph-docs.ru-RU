@@ -1244,7 +1244,7 @@ items:
                 href: api/calendarpermission-delete.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -1636,7 +1636,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: Прервать
                     href: api/printjob-abort.md
-                  - name: Redirect
+                  - name: Перенаправление
                     href: api/printjob-redirect.md
               - name: Операция печати
                 href: resources/printoperation.md
@@ -4476,7 +4476,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: Обновление
                 href: api/educationassignmentdefaults-update.md
-          - name: Категория
+          - name: Category
             href: resources/educationcategory.md
             items:
               - name: Создание
@@ -4543,7 +4543,7 @@ items:
         items:
           - name: Обзор
             href: /graph/extensibility-overview?context=graph/api/1.0&preserve-view=true
-          - name: Расширения каталогов
+          - name: Расширения каталога
             displayname: 'Groups, Users, Applications, Organization, Devices'
             href: resources/extensionproperty.md
             items:
@@ -5524,7 +5524,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Удалить
                         href: api/identityapiconnector-delete.md
-          - name: Управление
+          - name: Система управления
             items:
               - name: Проверки доступа
                 href: resources/accessreviewsv2-overview.md
@@ -5844,7 +5844,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -6116,7 +6116,7 @@ items:
                 href: api/contact-delta.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -6510,6 +6510,8 @@ items:
             items:
               - name: Получение сайта
                 href: api/site-get.md
+              - name: Список сайтов
+                href: api/site-list.md
               - name: Получение списков
                 href: api/list-list.md
               - name: Получение аналитических данных об элементе
@@ -6967,7 +6969,7 @@ items:
                 href: api/channel-getallmessages.md
               - name: Получение сообщений во всех чатах
                 href: api/chats-getallmessages.md
-              - name: Получение размещенного содержимого
+              - name: Получить размещенное содержимое
                 href: api/chatmessagehostedcontent-get.md
           - name: Приложение
             items:

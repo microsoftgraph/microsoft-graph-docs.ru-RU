@@ -5,12 +5,12 @@ title: 'driveItem: createUploadSession'
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: d8f47342e11210024e8c07ea70971a68fd866a13
-ms.sourcegitcommit: 2132198551c7d1f37474debab471f612a3e35a08
+ms.openlocfilehash: 19b48e78f2c568a6576a63a746d5514ff63e951f
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66141224"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577877"
 ---
 # <a name="driveitem-createuploadsession"></a>driveItem: createUploadSession
 
@@ -93,10 +93,10 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ## <a name="parameters"></a>Параметры
 
-| Параметр            | Тип                          | Описание
-|:---------------------|:------------------------------|:---------------------------------
-| item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Сведения об отправляемом файле
-| deferCommit          | Boolean                       | Если задано значение true, для окончательного создания файла в пункте назначения потребуется явный запрос. Только в OneDrive для бизнеса.
+| Параметр   | Тип                                                                           | Описание                                                                                           |
+|:------------|:-------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------|
+| deferCommit | Boolean                                                                        | Если задано значение `true`,окончательное создание файла в месте назначения требует явного запроса. |
+| item        | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Данные об отправляемом файле.                                                                   |
 
 ### <a name="request"></a>Запрос
 

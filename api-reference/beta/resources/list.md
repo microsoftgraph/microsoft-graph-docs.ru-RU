@@ -5,12 +5,12 @@ title: Ресурс List
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: bdca492a6abac648cee5f48b10ef95f1fd77b8b7
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: cb6a203a3421e6d2fe4889076826c5a6ac8f00b1
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723324"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577873"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -24,14 +24,12 @@ ms.locfileid: "63723324"
 ## <a name="tasks-on-a-list"></a>Задачи для ресурса list
 
 Ниже перечислены задачи, доступные для ресурсов list.
-**Примечание.** В этой бета-версии разрешается только навигация по спискам. Их создание и обновление не поддерживаются.
-Однако вы можете создавать и менять [элементы списков][listItem].
 
 Все приведенные ниже примеры относятся к сайту, например `https://graph.microsoft.com/beta/sites/{site-id}`.
 
 | Стандартная задача                                       | Метод HTTP                                 |
 | :------------------------------------------------ | :------------------------------------------ |
-| [Получить списки на сайте][]                           | GET /sites/{site-id}/lists                  |
+| [Получение списков на сайте][]                           | GET /sites/{site-id}/lists                  |
 | [Создание списка][]                                   | POST /lists                                 |
 | [Получение списка][]                                      | GET /lists/{list-id}                        |
 | [Перечисление элементов списка][]                          | GET /lists/{list-id}/items                  |
@@ -46,7 +44,7 @@ ms.locfileid: "63723324"
 | [Создание столбца][]                                 | POST /lists/{list-id}/columns               |
 | [Операции со списком](../api/list-list-operations.md) | GET /lists/{list-id}/operations             |
 
-[Получить списки на сайте]: ../api/list-list.md
+[Получение списков на сайте]: ../api/list-list.md
 [Получение списка]: ../api/list-get.md
 [Создание списка]: ../api/list-create.md
 [Перечисление элементов списка]: ../api/listitem-list.md

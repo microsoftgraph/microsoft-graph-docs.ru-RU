@@ -5,18 +5,21 @@ ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: c8f080ab1893ea520f4e2094e914356ce71010b6
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 06d2b8be235175cd913c10c61e86c54a9585863b
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094671"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577744"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource"></a>Скачивание содержимого ресурса driveItemVersion
 
 Пространство имен: microsoft.graph
 
 Получение содержимого определенной версии [driveItem](../resources/driveitem.md).
+
+>**Примечание:** Получение содержимого текущей версии не поддерживается. Для этого используйте скачивание [содержимого метода driveItem](driveitem-get-content.md) .
+
 
 ## <a name="permissions"></a>Разрешения
 
@@ -53,7 +56,7 @@ URL-адреса загрузки, прошедшие предварительн
 
 В этом примере показано, как получить версию файла в объекте drive текущего пользователя.
 
-### <a name="http-request"></a>HTTP-запрос
+### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)

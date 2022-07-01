@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: Ресурс list представляет список на сайте.
 doc_type: resourcePageType
-ms.openlocfilehash: 2de3af4c781ad325b59eeb9dff762c47a23dff20
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: 8372127f2fc54444f66893331bc49cc1fd0e2428
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191649"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577569"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -22,7 +22,6 @@ ms.locfileid: "65191649"
 ## <a name="tasks-on-a-list"></a>Задачи для ресурса list
 
 Ниже перечислены задачи, доступные для ресурсов list.
-
 
 Все приведенные ниже примеры относятся к сайту, например `https://graph.microsoft.com/v1.0/sites/{site-id}`.
 

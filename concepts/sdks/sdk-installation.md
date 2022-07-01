@@ -1,18 +1,18 @@
 ---
-title: Установка пакета Microsoft Graph SDK
-description: Инструкции по установке .NET, Go, Java, JavaScript, PHP, PowerShell и Python microsoft Graph SDK.
+title: Установка пакета SDK microsoft Graph
+description: Инструкции по установке пакетов SDK Microsoft Graph для .NET, Go, Java, JavaScript, PHP, PowerShell и Python.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 52334f9011e51632168a97a7dcd3504f516462b4
-ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
+ms.openlocfilehash: 7d1192b54736958858848084ae4786ef946f4c11
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65653513"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577604"
 ---
-# <a name="install-a-microsoft-graph-sdk"></a>Установка пакета Microsoft Graph SDK
+# <a name="install-a-microsoft-graph-sdk"></a>Установка пакета SDK microsoft Graph
 
-Пакеты SDK Graph Майкрософт можно включить в проекты с помощью GitHub и популярных диспетчеров пакетов платформы. В этой статье описывается, как установить пакет Microsoft Graph SDK в проект.
+Пакеты SDK Microsoft Graph можно включить в проекты с помощью GitHub и популярных диспетчеров пакетов платформы. В этой статье описывается, как установить пакет SDK Microsoft Graph в проект.
 
 Пакеты SDK доступны на следующих языках:
 
@@ -24,15 +24,15 @@ ms.locfileid: "65653513"
 - [PowerShell](#install-the-microsoft-graph-powershell-sdk)
 - [Python (предварительная версия)](#install-the-microsoft-graph-python-sdk-preview)
 
-## <a name="install-the-microsoft-graph-net-sdk"></a>Установка пакета Microsoft Graph .NET SDK
+## <a name="install-the-microsoft-graph-net-sdk"></a>Установка пакета SDK .NET Microsoft Graph
 
-Пакет SDK microsoft Graph .NET включен в следующие пакеты NuGet пакетов:
+Пакет SDK .NET Microsoft Graph входит в следующие пакеты NuGet:
 
-- [Microsoft. Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet): содержит модели и конструкторы запросов для доступа к `v1.0` конечной точке с помощью текучих API. Microsoft. Graph зависит от корпорации Майкрософт. Graph. Основные.
-- [Microsoft. Graph. Бета-версия](https://github.com/microsoftgraph/msgraph-beta-sdk-dotnet): содержит модели и конструкторы запросов для доступа к `beta` конечной точке с помощью текучих API. Microsoft. Graph. Бета-версия зависит от корпорации Майкрософт. Graph. Основные.
-- [Microsoft. Graph. Ядро](https://github.com/microsoftgraph/msgraph-sdk-dotnet): основная библиотека для выполнения вызовов к microsoft Graph.
+- [Microsoft.Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet): содержит модели и конструкторы запросов для доступа к `v1.0` конечной точке с помощью текучих API. Microsoft.Graph зависит от Microsoft.Graph.Core.
+- [Microsoft.Graph.Beta](https://github.com/microsoftgraph/msgraph-beta-sdk-dotnet): содержит модели и конструкторы `beta` запросов для доступа к конечной точке с помощью текучих API. Microsoft.Graph.Beta зависит от Microsoft.Graph.Core.
+- [Microsoft.Graph.Core](https://github.com/microsoftgraph/msgraph-sdk-dotnet): основная библиотека для выполнения вызовов к Microsoft Graph.
 
-Чтобы установить корпорацию Майкрософт. Graph пакеты в проект можно использовать пользовательский интерфейс диспетчер пакетов в Visual Studio [или диспетчер пакетов консоли](/nuget/quickstart/install-and-use-a-package-in-visual-studio). Следующие команды диспетчер пакетов консоли устанавливают Microsoft.Graph и Microsoft.Graph. Основные библиотеки. Microsoft. Graph. Ядро устанавливается как зависимость корпорации Майкрософт. Graph.
+Чтобы установить пакеты Microsoft.Graph в проект, можно использовать пользовательский интерфейс диспетчера пакетов [в Visual Studio или консоль диспетчера пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio). Следующие команды консоли диспетчера пакетов устанавливают библиотеки Microsoft.Graph и Microsoft.Graph.Core. Microsoft.Graph.Core устанавливается как зависимость Microsoft.Graph.
 
 ```PowerShell
 Install-Package Microsoft.Graph
@@ -44,8 +44,8 @@ Install-Package Microsoft.Graph
 
 Пакет SDK Microsoft Graph Go входит в следующие пакеты:
 
-- [Microsoft Graph SDK для Go](https://github.com/microsoftgraph/msgraph-sdk-go): `v1.0` содержит модели и конструкторы запросов для доступа к конечной точке с помощью текучих API.
-- [Microsoft Graph бета-версии пакета SDK для Go](https://github.com/microsoftgraph/msgraph-beta-sdk-go): `beta` содержит модели и конструкторы запросов для доступа к конечной точке с помощью текучих API.
+- [Пакет SDK Microsoft Graph для Go](https://github.com/microsoftgraph/msgraph-sdk-go): `v1.0` содержит модели и конструкторы запросов для доступа к конечной точке с помощью текучих API.
+- [Бета-пакет SDK Microsoft Graph для Go](https://github.com/microsoftgraph/msgraph-beta-sdk-go): `beta` содержит модели и конструкторы запросов для доступа к конечной точке с помощью текучих API.
 - [Microsoft Graph Core SDK для Go](https://github.com/microsoftgraph/msgraph-sdk-go-core): основная библиотека для выполнения вызовов к Microsoft Graph.
 
 ```Shell
@@ -54,18 +54,18 @@ go get github.com/Azure/azure-sdk-for-go/sdk/azidentity
 go get github.com/microsoft/kiota-authentication-azure-go
 ```
 
-## <a name="install-the-microsoft-graph-java-sdk"></a>Установка пакета SDK microsoft Graph Java
+## <a name="install-the-microsoft-graph-java-sdk"></a>Установка пакета SDK Java для Microsoft Graph
 
-Пакет SDK Graph Майкрософт для Java входит в следующие пакеты:
+Пакет SDK Java для Microsoft Graph входит в следующие пакеты:
 
 - [microsoft-graph](https://github.com/microsoftgraph/msgraph-sdk-java): содержит модели и конструкторы запросов для доступа к `v1.0` конечной точке с помощью текучих API.
 - [microsoft-graph-beta](https://github.com/microsoftgraph/msgraph-beta-sdk-java): содержит модели и конструкторы `beta` запросов для доступа к конечной точке с помощью текучих API.
-- [microsoft-graph-core](https://github.com/microsoftgraph/msgraph-sdk-java-core): основная библиотека для выполнения вызовов к microsoft Graph.
-- [microsoft-graph-auth](https://github.com/microsoftgraph/msgraph-sdk-java-auth): предоставляет оболочку на основе сценария проверки подлинности библиотеки проверки подлинности Майкрософт (MSAL) для использования с пакетом Microsoft Graph SDK.
+- [microsoft-graph-core](https://github.com/microsoftgraph/msgraph-sdk-java-core): основная библиотека для выполнения вызовов к Microsoft Graph.
+- [microsoft-graph-auth](https://github.com/microsoftgraph/msgraph-sdk-java-auth): предоставляет оболочку на основе сценария проверки подлинности библиотеки проверки подлинности Майкрософт (MSAL) для использования с пакетом SDK Microsoft Graph.
 
-Чтобы установить microsoft Graph Java SDK, выполните одно из следующих действий:
+Чтобы установить пакет SDK Java для Microsoft Graph, выполните одно из следующих действий:
 
-- Используйте Gradle для установки пакета SDK Microsoft Graph Java. Добавьте репозиторий и зависимость компиляции для microsoft-graph в файл build.gradle проекта:
+- Установите пакет SDK Java для Microsoft Graph с помощью Gradle. Добавьте репозиторий и зависимость компиляции для microsoft-graph в файл build.gradle проекта:
     
   ```Gradle
     repository {
@@ -80,7 +80,7 @@ go get github.com/microsoft/kiota-authentication-azure-go
     }
   ```
 
-- Установите пакет SDK Microsoft Graph Java с помощью Maven. Добавьте зависимость в элемент в `dependencies` pom.xml:
+- Установите пакет SDK Java для Microsoft Graph с помощью Maven. Добавьте зависимость в элемент в `dependencies` pom.xml:
     
   ```xml
     <dependency>
@@ -95,31 +95,31 @@ go get github.com/microsoft/kiota-authentication-azure-go
     </dependency>
   ```
 
-## <a name="install-the-microsoft-graph-javascript-sdk"></a>Установка пакета SDK Graph JavaScript для Microsoft
+## <a name="install-the-microsoft-graph-javascript-sdk"></a>Установка пакета SDK JavaScript для Microsoft Graph
 
-Пакет SDK Graph JavaScript корпорации Майкрософт входит в следующие пакеты:
+Пакет SDK JavaScript для Microsoft Graph входит в следующие пакеты:
 
 - @microsoft/microsoft-graph-client ([npm](https://www.npmjs.com/package/@microsoft/microsoft-graph-client)): основная библиотека для выполнения вызовов к Microsoft Graph.
 - @microsoft/microsoft-graph-types ([npm](https://www.npmjs.com/package/@microsoft/microsoft-graph-types)): типы TypeScript для сущностей Microsoft Graph.
 
-Используйте [npm](https://www.npmjs.com) для установки пакета SDK Microsoft Graph JavaScript:
+Используйте [npm](https://www.npmjs.com) для установки пакета SDK JavaScript для Microsoft Graph:
 
 ```Shell
 npm install @microsoft/microsoft-graph-client --save
 npm install @microsoft/microsoft-graph-types --save-dev
 ```
 
-## <a name="install-the-microsoft-graph-php-sdk"></a>Установка пакета SDK GRAPH Майкрософт
+## <a name="install-the-microsoft-graph-php-sdk"></a>Установка пакета SDK PHP для Microsoft Graph
 
-Пакет [SDK PHP](https://github.com/microsoftgraph/msgraph-sdk-php) Graph Microsoft доступен из packagist.org и может быть [](https://packagist.org/packages/microsoft/microsoft-graph) установлен следующим образом:
+Пакет [SDK PHP для Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-php) доступен packagist.org [](https://packagist.org/packages/microsoft/microsoft-graph) и может быть установлен следующими способами:
 
-- Используйте composer для установки пакета SDK microsoft Graph PHP вручную:
+- Используйте composer для установки пакета SDK PHP для Microsoft Graph вручную:
 
     ```Shell
     composer require microsoft/microsoft-graph
     ```
 
-- Используйте composer.json для установки пакета SDK microsoft Graph PHP:
+- Используйте composer.json для установки пакета SDK PHP для Microsoft Graph:
 
     ```json
     {
@@ -129,7 +129,7 @@ npm install @microsoft/microsoft-graph-types --save-dev
     }
     ```
 
-## <a name="install-the-microsoft-graph-powershell-sdk"></a>Установка пакета SDK Microsoft Graph PowerShell
+## <a name="install-the-microsoft-graph-powershell-sdk"></a>Установка пакета SDK PowerShell для Microsoft Graph
 
 Все модули публикуются [на коллекция PowerShell.](https://www.powershellgallery.com/packages/Microsoft.Graph) Чтобы установить:
 
@@ -143,11 +143,11 @@ Install-Module Microsoft.Graph
  Install-Module Microsoft.Graph -AllowClobber -Force
 ```
 
-## <a name="install-the-microsoft-graph-python-sdk-preview"></a>Установка пакета Microsoft Graph Python SDK (предварительная версия)
+## <a name="install-the-microsoft-graph-python-sdk-preview"></a>Установка пакета SDK Python Microsoft Graph (предварительная версия)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-[Клиентская Graph Microsoft Python Core (предварительная версия)](https://github.com/microsoftgraph/msgraph-sdk-python-core) доступна в [PyPI](https://pypi.org/).
+[Клиентская библиотека Microsoft Graph Core Python (предварительная версия)](https://github.com/microsoftgraph/msgraph-sdk-python-core) доступна в [PyPI](https://pypi.org/).
 
 ```Shell
 python -m pip install msgraph-core
@@ -157,5 +157,5 @@ python -m pip install azure-identity
 ## <a name="see-also"></a>См. также
 
 - Дополнительные сведения о функциях и возможностях пакета SDK см. в документации по требованиям к [проектированию пакета SDK](https://github.com/microsoftgraph/msgraph-sdk-design). 
-- Список примеров для microsoft Graph см. на странице [ресурсов Microsoft Graph.](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples)
-- Пошаговые инструкции по созданию приложения Microsoft Graph см. в руководствах Graph [Microsoft](/graph/tutorials).
+- Список примеров для Microsoft Graph см. на странице ресурсов [Microsoft Graph](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples).
+- Пошаговые инструкции по созданию приложения Microsoft Graph см. в руководствах [по Microsoft Graph](/graph/tutorials).

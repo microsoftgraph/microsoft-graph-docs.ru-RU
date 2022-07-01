@@ -1,28 +1,28 @@
 ---
 title: Начало работы с Microsoft Graph Toolkit
-description: Узнайте, как настроить клиент Microsoft 365 и среду разработки и использовать Microsoft Graph Toolkit.
+description: Узнайте, как настроить клиент Microsoft 365 и среду разработки для использования Microsoft Graph Toolkit. Установите пакеты NPM для компонентов и поставщиков.
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.openlocfilehash: dc72066d12061a5d4063c19b583876a3511aa992
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 3e4711003808dfc97536b648fbd02a1ee40b78b2
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65460661"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577716"
 ---
 # <a name="get-started-with-microsoft-graph-toolkit"></a>Начало работы с Microsoft Graph Toolkit
 
-Компоненты Microsoft Graph Toolkit можно легко добавить в веб-приложение, SharePoint веб-часть или Microsoft Teams вкладки. Компоненты основаны на веб-стандартах и могут использоваться как в обычных проектах JavaScript, так и в популярных веб-платформах, таких как Reach, Angular и Vue.js.
+Компоненты Microsoft Graph Toolkit можно легко добавить в веб-приложение, веб-часть SharePoint или вкладки Microsoft Teams. Компоненты основаны на веб-стандартах и могут использоваться как в обычных проектах JavaScript, так и в популярных веб-платформах, таких как Reach, Angular и Vue.js.
 
 Просмотрите это короткое видео, чтобы приступить к работе с набором средств.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oZCGb2MMxa0]
 
-Пошаговое руководство см. в статье начало работы [microsoft Graph Toolkit](/learn/modules/msgraph-toolkit-intro/). 
+Пошаговое руководство см. в модуле "Начало [работы с Microsoft Graph Toolkit](/learn/modules/msgraph-toolkit-intro/) ". 
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>Настройка клиента Microsoft 365
 
-Чтобы использовать Microsoft Graph Toolkit для разработки приложения, требуется доступ к Microsoft 365 клиента. Если у вас ее нет, вы можете получить бесплатную подписку Microsoft 365 разработчика, присоединившись к Microsoft 365 [developer Program](https://developer.microsoft.com/microsoft-365/dev-program). Дополнительные сведения о настройке подписки см. в разделе ["Настройка Microsoft 365 подписки разработчика"](/office/developer-program/microsoft-365-developer-program-get-started).
+Чтобы использовать Microsoft Graph Toolkit для разработки приложения, необходим доступ к клиенту Microsoft 365. Если у вас ее нет, вы можете получить бесплатную подписку разработчика Microsoft 365, присоединившись к [программе для разработчиков Microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program). Дополнительные сведения о настройке подписки см. в разделе ["Настройка подписки разработчика Microsoft 365"](/office/developer-program/microsoft-365-developer-program-get-started).
 
 ## <a name="set-up-your-development-environment"></a>Настройка среды разработки
 
@@ -34,7 +34,7 @@ ms.locfileid: "65460661"
 
 ## <a name="use-microsoft-graph-toolkit"></a>Использование Microsoft Graph Toolkit
 
-Вы можете использовать Microsoft Graph Toolkit в приложении, ссылаясь на загрузчик напрямую (через`unpkg`) или устанавливая `npm` пакет.
+Microsoft Graph Toolkit можно использовать в приложении, ссылаясь на загрузчик напрямую (через `unpkg`) или устанавливая `npm` пакет.
 
 # <a name="unpkg"></a>[unpkg](#tab/html)
 Чтобы использовать набор средств с помощью `mgt-loader`, добавьте ссылку в скрипте в код:
@@ -74,7 +74,7 @@ Microsoft Graph Toolkit состоит из нескольких пакетов 
 
 <b>@microsoft/mgt-components</b>
 
-Пакет `@microsoft/mgt-components` содержит все веб-компоненты, подключенные Graph Майкрософт, `Person`такие как , и `PeoplePicker`т. д. 
+Пакет `@microsoft/mgt-components` содержит все веб-компоненты, подключенные к Microsoft Graph, `Person`такие как , и `PeoplePicker`т. д. 
 
 **Поставщики**
 
@@ -90,19 +90,19 @@ Microsoft Graph Toolkit состоит из нескольких пакетов 
 
 -  <b>@microsoft/mgt-teams-provider</b>
 
-    <code>[@microsoft/mgt-teams-provider](../providers/teams.md)</code> содержит компонент `TeamsProvider` и компонент `mgt-teams-provider` . Поставщик Microsoft Teams включает проверку подлинности в приложении Microsoft Teams табуляции.
+    <code>[@microsoft/mgt-teams-provider](../providers/teams.md)</code> содержит компонент `TeamsProvider` и компонент `mgt-teams-provider` . Поставщик Microsoft Teams включает проверку подлинности в приложении на вкладке Microsoft Teams.
 
 -  <b>@microsoft/mgt-teams-msal2-provider</b>
 
-    <code>[@microsoft/mgt-teams-msal2-provider](../providers/teams.md)</code> содержит компонент `TeamsMsal2Provider` и компонент `mgt-teams-msal2-provider` . Поставщик Microsoft Teams MSAL2 включает проверку подлинности в приложении Microsoft Teams вкладке.
+    <code>[@microsoft/mgt-teams-msal2-provider](../providers/teams.md)</code> содержит компонент `TeamsMsal2Provider` и компонент `mgt-teams-msal2-provider` . Поставщик Microsoft Teams MSAL2 включает проверку подлинности в приложении на вкладке Microsoft Teams.
 
 - <b>@microsoft/mgt-sharepoint-provider</b>
 
-    <code>[@microsoft/mgt-sharepoint-provider](../providers/sharepoint.md)</code>содержит объект `SharePointProvider` для проверки подлинности в SharePoint среде. 
+    <code>[@microsoft/mgt-sharepoint-provider](../providers/sharepoint.md)</code> содержит объект `SharePointProvider` для проверки подлинности в среде SharePoint. 
 
 - <b>@microsoft/mgt-proxy-provider</b>
 
-    <code>[@microsoft/mgt-proxy-provider](../providers/proxy.md)</code>содержит приложение`ProxyProvider`, которое Graph вызовы через серверную службу. 
+    <code>[@microsoft/mgt-proxy-provider](../providers/proxy.md)</code> содержит приложение `ProxyProvider` , которое прокси-сервер Graph вызывает через серверную службу. 
 
 <b>@microsoft/mgt</b>
 
@@ -120,9 +120,11 @@ Microsoft Graph Toolkit состоит из нескольких пакетов 
 
 Теперь вы готовы приступить к разработке с помощью Microsoft Graph Toolkit! Ниже приведены руководства, которые помогут вам приступить к работе.
 
-- [Регистрация приложения Azure Active Directory](./add-aad-app-registration.md)
+- [Регистрация приложения Azure Active Directory (Azure AD)](./add-aad-app-registration.md)
 - [Создание веб-приложения (JavaScript)](./build-a-web-app.md) (javaScript)
 - [Создание веб-приложения (React)](./use-toolkit-with-react.md)
 - [Создание веб-приложения (Angular)](./use-toolkit-with-angular.md)
 - [Создание веб-части SharePoint](./build-a-sharepoint-web-part.md)
 - [Создание вкладки Microsoft Teams](./build-a-microsoft-teams-tab.md)
+- [Создание вкладки единого входа в Microsoft Teams](./build-a-microsoft-teams-sso-tab.md)
+- [Создание приложения Electron](./build-an-electron-app.md)

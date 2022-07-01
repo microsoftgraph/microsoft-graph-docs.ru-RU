@@ -1,24 +1,25 @@
 ---
-title: Создание объекта Calendar
-description: С помощью этого API можно создать календарь для пользователя.
+title: Создание календаря
+description: Создайте новый календарь для пользователя.
 author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9c2f10058c35cc4948ea18287a3e38d2c642caa7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 60d6c92bbbffb16b477f7d1a6c30123576f9434e
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62102048"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577884"
 ---
-# <a name="create-calendar"></a>Создание объекта Calendar
+# <a name="create-calendar"></a>Создание календаря
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-С помощью этого API можно создать календарь для экземпляра [user](../resources/user.md).
+Создайте новый календарь для [пользователя](../resources/user.md).
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -40,15 +41,15 @@ POST /users/{id | userPrincipalName}/calendars
 | Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание объекта [calendar](../resources/calendar.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта календаря [в формате](../resources/calendar.md) JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [calendar](../resources/calendar.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [календаря](../resources/calendar.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -91,9 +92,9 @@ Content-type: application/json
 
 ---
 
-Предоставьте в тексте запроса описание объекта [calendar](../resources/calendar.md) в формате JSON.
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
