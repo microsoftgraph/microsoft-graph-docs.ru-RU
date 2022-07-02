@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Прочитайте о самых важных новых возможностях Microsoft Graph за последние два месяца, о том, что было добавлено в более ранних выпусках, и о том, как делиться идеями.
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 56b50679f230dfc3dd656baf4fdb9bd9a4220b6e
-ms.sourcegitcommit: 175dda9b51aaa94fa00d0e4b7101c771b6315f05
+ms.openlocfilehash: 371cd4ad709b5cab6d18352e386872364f1f96f2
+ms.sourcegitcommit: 2cbfa9abd0b568f9e4c15930df9a378fbe924511
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66557162"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66578594"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -26,6 +26,8 @@ ms.locfileid: "66557162"
 - [Перечисление административных единиц](/graph/api/device-list-memberOf), в состав которых входит [устройство](/graph/api/resources/device).
 - Управление устройствами в качестве участников [административной единицы](/graph/api/resources/administrativeunit): [перечисление участников](/graph/api/administrativeunit-list-members), включая устройства; [получение](/graph/api/administrativeunit-get-members), [добавление](/graph/api/administrativeunit-post-members) и [удаление](/graph/api/administrativeunit-delete-members) устройства в качестве участника. 
 - [Получите](/graph/api/application-get) статус и другие сведения о [безопасности и сертификации](/graph/api/resources/certification) [приложения](/graph/api/resources/application) для защиты данных клиентов. Дополнительные сведения см. в разделе [Сертификация Microsoft 365](/microsoft-365-app-certification/docs/enterprise-app-certification-guide).
+- Настройка [параметров федерации с Azure AD](/graph/api/resources/internalDomainFederation).
+
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
  Настройка [параметров политики методов проверки подлинности с временным паролем доступа](/graph/api/resources/temporaryAccessPassAuthenticationMethodConfiguration) в вашем клиенте и управление этими параметрами.
@@ -54,6 +56,20 @@ ms.locfileid: "66557162"
 ### <a name="compliance--ediscovery"></a>Соответствие требованиям | Обнаружение электронных данных
 Доступ к [API обнаружения электронных данных](/graph/api/resources/security-ediscoverycase?view=graph-rest-beta&preserve-view=true) теперь осуществляется из пространства имен [security](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true) вместо пространства имен "compliance".
 
+### <a name="customer-booking"></a>Резервирование для пользователей
+- Управление языком страницы самостоятельного резервирования [компании](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) или [службы](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true), предоставляемой компанией.
+- Указание в [сведениях клиента](/graph/api/resources/bookingCustomerInformation?view=graph-rest-beta&preserve-view=true), включены ли SMS-уведомления для [встречи](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) клиента.
+- Указание, включено ли анонимное присоединение для [службы](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true) и нужно ли создавать URL-адрес анонимного присоединения для встречи с целью обслуживания.
+- Разграничение роли [сотрудника](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true) в качестве планировщика или участника.
+- Указание, следует ли уведомлять [сотрудника](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true) по электронной почте при назначении или обновлении резервирования для участника.
+
+### <a name="device-and-app-management--cloud-pc"></a>Управление устройствами и приложениями | Облачный компьютер
+Получение следующих сведений о [политике подготовки](/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta&preserve-view=true) облачных компьютеров.
+- Имя группы, в которой находятся облачные компьютеры.
+- Количество часов ожидания перед повторной подготовкой или отменой подготовки.
+- Включен ли локальный администратор (например, конечный пользователь облачного компьютера).
+- Служба, управляющая сетевым подключением Azure, которой в настоящее время является Windows 365 или Пространство для разработки Microsoft.
+
 ### <a name="device-and-app-management--multi-tenant-management"></a>Управление устройствами и приложениями | Управление несколькими клиентами
 [Получите](/graph/api/managedtenants-managedtenant-list-myroles?view=graph-rest-beta&preserve-view=true) набор [ролей, назначенных пользователю, вошедшему в ](/graph/api/resources/managedtenants-myRole?view=graph-rest-beta&preserve-view=true)[управляемый клиент](/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta&preserve-view=true).
 
@@ -68,6 +84,8 @@ ms.locfileid: "66557162"
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 Скрытие ссылок самостоятельного сброса пароля (SSPR) в [параметрах видимости текста страницы входа](/graph/api/resources/loginpagetextvisibilitysettings?view=graph-rest-beta&preserve-view=true) для страницы входа клиента.
 
+### <a name="teamwork"></a>Teamwork
+Получение сведений о [закреплении](/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) или [откреплении](/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) в [чате](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) или [канале](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true). 
 
 ## <a name="may-2022-new-and-generally-available"></a>Май 2022 г.: новые и общедоступные возможности
 

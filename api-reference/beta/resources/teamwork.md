@@ -5,12 +5,12 @@ author: akjo
 doc_type: resourcePageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 63199426ae498a4fa79a6f419d49b0eaa257a181
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: 8a6a07a23d71c79703643dc5280bd531eb5a5843
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262101"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577875"
 ---
 # <a name="teamwork-resource-type"></a>Тип ресурса teamwork
 
@@ -19,6 +19,12 @@ ms.locfileid: "62262101"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Контейнер для набора функциональных возможностей Microsoft Teams, доступных для организации.
+
+## <a name="methods"></a>Методы
+
+| Метод                                                  | Возвращаемый тип                                         |Описание                                                                               |
+|:--------------------------------------------------------|:----------------------------------------------------|:-----------------------------------------------------------------------------------------|
+|[Список deletedTeams](../api/teamwork-list-deletedteams.md)|Коллекция [deletedTeam](../resources/deletedteam.md)|Получение списка объектов [deletedTeam](../resources/deletedteam.md) и их свойств.|
 
 ## <a name="properties"></a>Свойства
 
@@ -30,6 +36,7 @@ ms.locfileid: "62262101"
 
 | Связь | Тип | Описание |
 |:---------------|:--------|:----------|
+|deletedTeams|Коллекция [deletedTeam](../resources/deletedteam.md)| Коллекция удаленных команд.|
 |devices|коллекция [teamworkDevice](../resources/teamworkdevice.md)|Устройства Teams, подготовленные для клиента.|
 |workforceIntegrations|коллекция [workforceIntegration](../resources/workforceintegration.md)| Интеграция рабочих ресурсов со сменами.|
 
@@ -43,12 +50,16 @@ ms.locfileid: "62262101"
   "baseType": "microsoft.graph.entity"
 }-->
 
-```json
+``` json
 {
-  "id": "string"
+    "@odata.type": "#microsoft.graph.teamwork",
+    "id": "String (identifier)"
 }
-
 ```
+
+## <a name="see-also"></a>См. также
+
+- [Ресурс userTeamwork](userteamwork.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -62,7 +73,3 @@ ms.locfileid: "62262101"
   "suppressions": []
 }
 -->
-
-## <a name="see-also"></a>См. также
-
-- [Ресурс userTeamwork](userteamwork.md)

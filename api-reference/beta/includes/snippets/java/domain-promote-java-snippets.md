@@ -1,18 +1,18 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 67c1265eea7748513f38b14c9a05d7f816ed9432
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 80c1b28d133b86eac16df57ea83cb1fb4d6c7cc4
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66502650"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "66446611"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.security().cases().ediscoveryCases("b0073e4e-4184-41c6-9eb7-8c8cc3e2288b").settings()
-    .resettodefault()
+graphClient.domains("contoso.com")
+    .promote()
     .buildRequest()
     .post();
 

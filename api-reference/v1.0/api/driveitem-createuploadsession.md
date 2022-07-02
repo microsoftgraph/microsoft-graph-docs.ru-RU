@@ -1,19 +1,18 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: Возобновляемая отправка файлов
+title: 'driveItem: createUploadSession'
 ms.localizationpriority: high
 ms.prod: sharepoint
 description: Создайте сеанс отправки, чтобы приложение могло отправлять файлы, размер которых не превышает максимальный.
 doc_type: apiPageType
-ms.openlocfilehash: b2e24a917766de1cd9e4f4853d4a88d3c963da41
-ms.sourcegitcommit: 2132198551c7d1f37474debab471f612a3e35a08
+ms.openlocfilehash: 5314c4060c72337d3a82821334f2e5d2bf0fe84f
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66141217"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577891"
 ---
-# <a name="upload-large-files-with-an-upload-session"></a>Отправка больших файлов с помощью сеанса отправки
+# <a name="driveitem-createuploadsession"></a>driveItem: createUploadSession
 
 Пространство имен: microsoft.graph
 
@@ -88,10 +87,10 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ## <a name="parameters"></a>Параметры
 
-| Параметр            | Тип                          | Описание
-|:---------------------|:------------------------------|:---------------------------------
-| item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Сведения об отправляемом файле
-| deferCommit          | Boolean                       | Если задано значение true, для окончательного создания файла в пункте назначения потребуется явный запрос. Только в OneDrive для бизнеса.
+| Параметр   | Тип                                                                           | Описание                                                                                           |
+|:------------|:-------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------|
+| deferCommit | Boolean                                                                        | Если установлено значение `true`, для окончательного создания файла в пункте назначения потребуется явный запрос. |
+| item        | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Сведения об отправляемом файле.                                                                   |
 
 ### <a name="request"></a>Запрос
 

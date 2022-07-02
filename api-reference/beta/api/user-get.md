@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 496dc400412a5e2fce735a831539b9509a122e76
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 59df9f1d7042abb723e7148bcd14984e52ad5866
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211817"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556320"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -58,6 +58,15 @@ GET /me
 ## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает `$select` [параметр запроса OData](/graph/query-parameters) для получения конкретных свойств пользователя, в том числе тех, которые не возвращаются по умолчанию.
+
+### <a name="retrieve-extensions-and-associated-data"></a>Извлечение расширений и связанных данных
+
+| Тип расширения                     | Комментарии                                                                                              |
+|------------------------------------|-------------------------------------------------------------------------------------------------------|
+| onPremisesExtensionAttributes 1-15 | Возвращается только с помощью `$select`.                                                                         |
+| Расширения схемы                  | Возвращается только с помощью `$select`.                                                                         |
+| Открытые расширения                    | Возвращается только с помощью операции [Получить открытое расширение](opentypeextension-get.md). |
+| Расширения каталога               | Возвращается только с помощью `$select`.                                                                         |
 
 ## <a name="request-headers"></a>Заголовки запросов
 

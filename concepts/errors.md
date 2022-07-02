@@ -1,13 +1,13 @@
 ---
 title: Сообщения об ошибках и типы ресурсов Microsoft Graph
-description: В этой статье описаны некоторые ошибки, которые могут возвращаться в ответах Microsoft Graph.
+description: Узнайте об ошибках, которые могут возвращаться в откликах Microsoft Graph. Ошибки возвращаются с использованием стандартных кодов состояния HTTP и JSON-объекта отклика с ошибкой.
 ms.localizationpriority: high
-ms.openlocfilehash: 6894090958a53764a38b4be346fc1ab625ae9f23
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 7e4da1aaeef174130e655d003c2140e0d91e4622
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694353"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577590"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Сообщения об ошибках и типы ресурсов Microsoft Graph
 

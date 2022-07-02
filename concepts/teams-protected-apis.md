@@ -4,12 +4,12 @@ description: API-интерфейсы Microsoft Teams в Microsoft Graph, кот
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8f9387d33d440a7ac8d90fc9be9e671b790c9e17
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: a8c7de28d1ecd5784e69e2cc4774802282b8bd24
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556299"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577814"
 ---
 # <a name="protected-apis-in-microsoft-teams"></a>Защищенные API в Microsoft Teams
 
@@ -29,6 +29,7 @@ API Microsoft Teams в Microsoft Graph, получающие доступ к к�
 * [Создать подписку на новые сообщения чата](/graph/api/subscription-post-subscriptions)
 * [Список всего размещенного содержимого](/graph/api/chatmessage-list-hostedcontents)
 * [Получить размещенное содержимое](/graph/api/chatmessagehostedcontent-get)
+* [Получение сообщений из удаленной команды](/graph/api/deletedteam-getallmessages)
 
 > [!NOTE]
 > [Отправка сообщения](/graph/api/channel-post-messages) не является защищенным API.

@@ -1,25 +1,26 @@
 ---
-title: Справочник по бета-версии конечной точки Microsoft Graph
-description: 'В справочном содержимом этого раздела описывается бета-версия конечной точки Microsoft Graph. Конечная точка бета-версии включает API-интерфейсы, которые в настоящий момент находятся в предварительной версии и не являются общедоступными. Попробуйте эти API и оставьте отзыв через следующие каналы:'
+title: Справочник по бета-версии конечной точки REST API Microsoft Graph
+description: Документация по конечной точке REST API Microsoft Graph, которая включает API-интерфейсы, представленные в настоящее время в предварительной, а не в общедоступной версии.
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: non-product-specific
 author: angelgolfer-ms
-ms.openlocfilehash: 98bf633d026cf2132a29cbeca5f16b2659af813c
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: d194b63b61f4be877489eae05cf22774b930e162
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696927"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577737"
 ---
-# <a name="microsoft-graph-beta-endpoint-reference"></a>Справочник по бета-версии конечной точки Microsoft Graph
+# <a name="microsoft-graph-rest-api-beta-endpoint-reference"></a>Справочник по бета-версии конечной точки REST API Microsoft Graph
 
 В справочном содержимом этого раздела описывается бета-версия конечной точки Microsoft Graph. Конечная точка бета-версии включает API-интерфейсы, которые в настоящее время находятся в предварительной версии и не являются общедоступными. Попробуйте эти API и оставьте отзыв через следующие каналы:
 
 - [GitHub](https://github.com/OfficeDev/microsoft-graph-docs/issues) — для отзывов о предварительных версиях API-интерфейсов. Используйте тег `beta`.
 - [StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-api) — для вопросов и справки по вашему коду. Используйте тег `microsoft-graph-api`.
 
-> **Примечание.** API-интерфейсы в конечной точке бета-версии могут быть изменены. Не рекомендуем использовать их в рабочих приложениях.
+> [!NOTE]
+> API-интерфейсы в конечной точке бета-версии могут быть изменены. Не рекомендуем использовать их в рабочих приложениях.
 
 ## <a name="call-the-beta-endpoint"></a>Вызов конечной точки бета-версии
 

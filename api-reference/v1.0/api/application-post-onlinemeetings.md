@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 198bf3341b22d4461f276920c9e9fdee52f207a8
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: f26b24a1a562e4d55e1be7c5f4c33b8a4341b05f
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66441141"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556201"
 ---
 # <a name="create-onlinemeeting"></a>Создание объекта onlineMeeting
 
@@ -59,7 +59,7 @@ POST /users/{userId}/onlineMeetings
 
 > [!CAUTION]
 >
-> Назначение роли `presenter` или `coorganizer` пользователям, не зарегистрированным в Azure Active Directory, сейчас не поддерживается. Дополнительные сведения см. в разделе [Известные проблемы](/graph/concepts/known-issues.md#presenter-role-assigned-to-non-aad-users).
+> Назначение роли `presenter` пользователям, не зарегистрированным в Azure Active Directory, сейчас не поддерживается. Дополнительные сведения см. в разделе [Известные проблемы](/graph/known-issues#presenter-role-cannot-be-assigned-to-non-azure-ad-participants).
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.

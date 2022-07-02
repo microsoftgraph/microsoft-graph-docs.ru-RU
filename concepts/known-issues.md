@@ -1,14 +1,14 @@
 ---
 title: Известные проблемы с Microsoft Graph
-description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
+description: В этой статье описываются известные проблемы и ограничения в Microsoft Graph, а также приводятся возможные временные решения.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 99d026a9b00b0a61b29ba1a173d7b03903fb9ad4
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 45566a7b451dd0de3938c6a3d2cb7cb31b2393ba
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66439104"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577583"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -22,7 +22,7 @@ ms.locfileid: "66439104"
 
 ### <a name="some-limitations-apply-to-the-application-and-serviceprincipal-resources"></a>Некоторые ограничения применяются к ресурсам приложения и servicePrincipal
 
-Изменения в ресурсах [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) и [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) в настоящее время находятся в разработке. Ниже приведено краткое описание текущих ограничений и возможностей API, находящихся в разработке.
+Изменения в ресурсах [application](/graph/api/resources/application) и [servicePrincipal](/graph/api/resources/serviceprincipal) в настоящее время находятся в разработке. Ниже приведено краткое описание текущих ограничений и возможностей API, находящихся в разработке.
 
 Текущие ограничения:
 
@@ -57,7 +57,8 @@ ms.locfileid: "66439104"
 
 Для целей разработки и тестирования можно использовать следующее временное решение.
 
->**ПРИМЕЧАНИЕ.** Это не окончательное решение и предназначено только для целей разработки. Оно станет ненужным после исправления упомянутой выше ошибки. Удалять указанный ниже субъект-службу не нужно.
+> [!NOTE]
+> Это не окончательное решение и предназначено только для целей разработки. Это временное решение не потребуется после исправления проблемы. Это временное решение не нужно отменять после исправления.
 
 1. Откройте сеанс Azure AD PowerShell 2 и подключитесь к клиенту `customer`, введя учетные данные администратора в окне входа. Скачать и установить Azure AD PowerShell 2 можно [здесь](https://www.powershellgallery.com/packages/AzureAD).
 

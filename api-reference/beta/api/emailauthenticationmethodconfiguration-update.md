@@ -1,24 +1,24 @@
 ---
-title: Обновление emailAuthenticationMethodConfiguration
+title: Обновление объекта emailAuthenticationMethodConfiguration
 description: Обновление свойств объекта emailAuthenticationMethodConfiguration.
 author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0d8abfb33462ed4ff87909554f9bccf8520d2e72
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: d810309f615218dcabba37e0066c1c73c25b5bae
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397682"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436704"
 ---
-# <a name="update-emailauthenticationmethodconfiguration"></a>Обновление emailAuthenticationMethodConfiguration
+# <a name="update-emailauthenticationmethodconfiguration"></a>Обновление объекта emailAuthenticationMethodConfiguration
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновим свойства объекта [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md), который представляет политику метода проверки подлинности [OTP](../resources/authenticationmethodspolicies-overview.md) электронной почты для клиента Azure Active Directory Azure AD.
+Обновите свойства объекта [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md), который представляет политику метода проверки подлинности [OTP](../resources/authenticationmethodspolicies-overview.md) электронной почты для клиента Azure Active Directory (Azure AD).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "63397682"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для делегирования сценариев администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев администратору требуется одна из следующих [Azure AD ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Администратор политики проверки подлинности
 * Глобальный администратор
@@ -54,11 +54,11 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/e
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) . Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+В тексте запроса добавьте представление объекта [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) в формате JSON. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-Список свойств, которые можно обновить, см. в электронной [почтеAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md).
+Список свойств, которые можно обновить, см. в разделе [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md).
 
->**Примечание:** Свойство `@odata.type` со значением должно `#microsoft.graph.emailAuthenticationMethodConfiguration` быть включено в тело.
+>**Примечание:** Свойство `@odata.type` со значением должно `#microsoft.graph.emailAuthenticationMethodConfiguration` быть включено в текст.
 
 ## <a name="response"></a>Отклик
 
@@ -102,6 +102,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-emailauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-emailauthenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
