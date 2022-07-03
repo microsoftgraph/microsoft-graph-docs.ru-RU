@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Прочитайте о самых важных новых возможностях Microsoft Graph за последние два месяца, о том, что было добавлено в более ранних выпусках, и о том, как делиться идеями.
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 371cd4ad709b5cab6d18352e386872364f1f96f2
-ms.sourcegitcommit: 2cbfa9abd0b568f9e4c15930df9a378fbe924511
+ms.openlocfilehash: a823d702204451182a8acc2cc407c53216e4bbe2
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66578594"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609635"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -28,12 +28,12 @@ ms.locfileid: "66578594"
 - [Получите](/graph/api/application-get) статус и другие сведения о [безопасности и сертификации](/graph/api/resources/certification) [приложения](/graph/api/resources/application) для защиты данных клиентов. Дополнительные сведения см. в разделе [Сертификация Microsoft 365](/microsoft-365-app-certification/docs/enterprise-app-certification-guide).
 - Настройка [параметров федерации с Azure AD](/graph/api/resources/internalDomainFederation).
 
-
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
- Настройка [параметров политики методов проверки подлинности с временным паролем доступа](/graph/api/resources/temporaryAccessPassAuthenticationMethodConfiguration) в вашем клиенте и управление этими параметрами.
+- Настройка [параметров политики методов проверки подлинности с временным паролем доступа](/graph/api/resources/temporaryAccessPassAuthenticationMethodConfiguration) в вашем клиенте и управление этими параметрами.
+- Получение [базовой политики в каталоге для параметров межтенантного доступа](/graph/api/resources/crosstenantaccesspolicy), [конфигурации по умолчанию](/graph/api/resources/crosstenantaccesspolicyconfigurationdefault) для взаимодействия организации с внешними организациями Azure Active Directory и [конфигурации партнеров](/graph/api/resources/crosstenantaccesspolicyconfigurationpartner) для внешних организаций Azure Active Directory.
 
 ### <a name="reports--microsoft-365-usage-reports"></a>Отчеты | Отчеты об использовании Microsoft 365
-- Поиск новых столбцов в отчетах Teams, созданных следующими методами:
+Поиск новых столбцов в отчетах Teams, созданных следующими методами:
   - [getTeamsUserActivityCounts](/graph/api/reportroot-getteamsuseractivitycounts);
   - [getTeamsUserActivityUserDetail](/graph/api/reportroot-getTeamsUserActivityUserDetail);
   - [getTeamsDeviceUsageUserDetail](/graph/api/reportroot-getTeamsDeviceUsageUserDetail);
@@ -43,15 +43,18 @@ ms.locfileid: "66578594"
   - [getTeamsDeviceUsageUserCounts](/graph/api/reportroot-getteamsdeviceusageusercounts);
   - [getTeamsDeviceUsageDistributionUserCounts](/graph/api/reportroot-getTeamsDeviceUsageDistributionUserCounts).
 
-
 ### <a name="teamwork"></a>Teamwork
 Подпишитесь на уведомления об изменениях для следующих элементов в Teams:
 - [команда и канал](teams-changenotifications-team-and-channel.md)
 - [участие в командах и каналах](teams-changenotifications-teammembership.md)
 - [chat](teams-changenotifications-chat.md)
 - [участие в чате](teams-changenotifications-chatmembership.md)
+- [сообщения во всех чатах](/graph/teams-changenotifications-chatmessage#subscribe-to-changes-at-the-user-level), в которых участвует конкретный пользователь.
 
 ## <a name="june-2022-new-in-preview-only"></a>Июнь 2022 г.: новые возможности только в предварительной версии
+
+### <a name="applications"></a>Приложения
+Указание [связанных объектов](/graph/api/resources/synchronizationLinkedObjects?view=graph-rest-beta&preserve-view=true), которые можно [подготовить во время подготовки по запросу](/graph/api/resources/synchronization-synchronizationJobSubject?view=graph-rest-beta&preserve-view=true), включая такие субъекты, как руководитель, участники и владельцы.
 
 ### <a name="compliance--ediscovery"></a>Соответствие требованиям | Обнаружение электронных данных
 Доступ к [API обнаружения электронных данных](/graph/api/resources/security-ediscoverycase?view=graph-rest-beta&preserve-view=true) теперь осуществляется из пространства имен [security](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true) вместо пространства имен "compliance".
@@ -77,12 +80,18 @@ ms.locfileid: "66578594"
 - [Создание](/graph/api/educationassignment-setupfeedbackresourcesfolder?view=graph-rest-beta&preserve-view=true) папки SharePoint для [задания](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) для отправки документов с отзывами.
 - [Создание](/graph/api/educationfeedbackresourceoutcome-post-outcomes?view=graph-rest-beta&preserve-view=true) [документа с отзывами](/graph/api/resources/educationFeedbackResourceOutcome?view=graph-rest-beta&preserve-view=true) для [отправки](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true) в папке отзывов, связанной с заданием.
 
+### <a name="groups"></a>Группы
+Указание того, настроена ли [группа](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) для [обратной записи](/graph/api/resources/groupWritebackConfiguration?view=graph-rest-beta&preserve-view=true) свойств объекта группы в локальную службу Active Directory.
+
 ### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
 - [Повышение](/graph/api/domain-promote?view=graph-rest-beta&preserve-view=true) уровня проверенного поддомена до корневого домена.
 - [Получите](/graph/api/application-get?view=graph-rest-beta&preserve-view=true) URL-адрес метаданных SAML для объединения одноклиентского [приложения](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 Скрытие ссылок самостоятельного сброса пароля (SSPR) в [параметрах видимости текста страницы входа](/graph/api/resources/loginpagetextvisibilitysettings?view=graph-rest-beta&preserve-view=true) для страницы входа клиента.
+
+### <a name="compliance--records-management"></a>Соответствие требованиям | Управление записями
+Использование дебютного [API управления записями Microsoft Purview](/graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta&preserve-view=true), чтобы помочь организациям управлять хранением и удалением данных в соответствии с юридическими обязательствами и нормативами соответствия требованиям.
 
 ### <a name="teamwork"></a>Teamwork
 Получение сведений о [закреплении](/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) или [откреплении](/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) в [чате](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) или [канале](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true). 

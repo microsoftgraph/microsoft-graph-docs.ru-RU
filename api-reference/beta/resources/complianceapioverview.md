@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: mahage-msft
 ms.prod: compliance
 doc_type: conceptualPageType
-ms.openlocfilehash: 3a038b2d481afa681f1003de0d1c46b5c4c8e5ea
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: ea9cccfea27ba891010343428db4cdf037fb0844
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66441435"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609733"
 ---
 # <a name="use-the-microsoft-graph-compliance-and-privacy-apis"></a>Используйте API соответствия требованиям и конфиденциальности Microsoft Graph
 

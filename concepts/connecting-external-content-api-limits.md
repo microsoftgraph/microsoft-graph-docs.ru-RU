@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 517d5f2d62e3d9025b8492433af2ec3fc0bd69a3
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: e21f40d99b2a7d56050fa6e8cf119ece7df259d3
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094237"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609642"
 ---
 # <a name="microsoft-graph-connectors-api-limits"></a>Ограничения API соединителей Microsoft Graph
 
@@ -20,9 +20,9 @@ ms.locfileid: "66094237"
 
 | Тип ограничения | Ограничение |
 | ---------- | ----- |
-| Ресурсы [подключения](/graph/api/resources/externalconnectors-externalconnection) для каждого клиента Microsoft 365 | 10 |
-| [Элементов](/graph/api/resources/externalconnectors-externalitem) на соединение | 700 000 |
-| Размер соединения в байтах | 70 ГБ |
+| Ресурсы [подключения](/graph/api/resources/externalconnectors-externalconnection) для каждого клиента Microsoft 365 | 10 для поиска, 15 для соответствия требованиям |
+| [Элементов](/graph/api/resources/externalconnectors-externalitem) на соединение | 5 000 000 |
+| Размер соединения в байтах | 500 ГБ |
 
 ## <a name="schema-limits"></a>Ограничения схемы
 
@@ -41,7 +41,7 @@ ms.locfileid: "66094237"
 
 | Тип ограничения | Ограничение |
 | ---------- | ----- |
-| Ограничение пропускной способности для приема элементов через соединение | 4 элемента/с <br> (250 МБ/ч) |
+| Ограничение пропускной способности для приема элементов через соединение | 25 элементов/с |
 | Размер элемента; это ограничение применяется к телу запроса при [приеме и индексировании элемента](/graph/api/externalconnectors-externalconnection-put-items). | 4 МБ |
 | Размер свойства | Недоступно |
 
