@@ -5,24 +5,24 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: bcc89583a1611093c58f4cd7cbe2ec6907820945
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: 1088ad83b8f2a46d687c234a9b7c87d7e2943ef5
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65883952"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609740"
 ---
 # <a name="assignedlabel-resource-type"></a>Тип ресурса assignedLabel
 
 Пространство имен: microsoft.graph
 
-Представляет метку конфиденциальности, назначенную группе Microsoft 365. Метки конфиденциальности позволяют администраторам применять определенные параметры группы, назначая группе классификацию (например, "Конфиденциально", "Строго конфиденциально" или "Общие"). Метки конфиденциальности публикуются администраторами в Центре соответствия & безопасности Microsoft 365 в рамках возможностей Microsoft Purview Information Protection. Дополнительные сведения о метках конфиденциальности см. в [обзоре меток конфиденциальности](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide).
+Представляет метку конфиденциальности, назначенную группе Microsoft 365. Метки конфиденциальности позволяют администраторам применять определенные параметры группы, назначая группе классификацию (например, "Конфиденциально", "Строго конфиденциально" или "Общие"). Метки конфиденциальности публикуются администраторами в Центре соответствия & безопасности Microsoft 365 в Защита информации Microsoft Purview безопасности. Дополнительные сведения о метках конфиденциальности см. в [обзоре меток конфиденциальности](/microsoft-365/compliance/sensitivity-labels).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство    | Тип   | Описание                               |
 | :---------- | :----- | :---------------------------------------- |
-| labelId     | Строка | Уникальный идентификатор метки.       |
+| labelId     | String | Уникальный идентификатор метки.       |
 | displayName | String | Отображаемое имя метки. Только для чтения. |
 
 ## <a name="json-representation"></a>Представление JSON

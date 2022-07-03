@@ -3,12 +3,12 @@ title: Выбор поставщика проверки подлинности M
 description: Узнайте, как выбрать поставщики проверки подлинности для конкретного сценария для приложения.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: e04d6352012227fcb34ba030ce0cbfdc6a8fed57
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 0e619e506398d1324f87deaa1d055d2632146801
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65898765"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609663"
 ---
 <!-- markdownlint-disable MD001 MD024 MD025 -->
 
@@ -38,13 +38,13 @@ ms.locfileid: "65898765"
 > [!NOTE]
 > Следующие фрагменты кода были написаны с использованием последних версий соответствующих пакетов SDK. Если с этими фрагментами кода возникают ошибки компилятора, убедитесь, что у вас есть последние версии. Используемые поставщики проверки подлинности предоставляются следующими библиотеками удостоверений Azure:
 >
-> - Разработчикам .NET необходимо добавить [пакет Azure.Identity](/dotnet/api/azure.identity) .
+> - .NET разработчики должны добавить [пакет Azure.Identity](/dotnet/api/azure.identity).
 > - Разработчикам JavaScript необходимо добавить библиотеку [@azure/identity](/javascript/api/@azure/identity) .
 > - Разработчикам Java и Android необходимо добавить [библиотеку azure-identity](/java/api/overview/azure/identity-readme) .
 
 ## <a name="authorization-code-provider"></a>Поставщик кода авторизации
 
-Поток кода авторизации позволяет собственным и веб-приложениям безопасно получать маркеры от имени пользователя. Дополнительные сведения см. в [статье о платформе удостоверений Майкрософт и потоке кода авторизации OAuth 2.0](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+Поток кода авторизации позволяет собственным и веб-приложениям безопасно получать маркеры от имени пользователя. Дополнительные сведения см[. в платформа удостоверений Майкрософт кода авторизации OAuth 2.0](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -94,14 +94,14 @@ const {
     AuthCodeMSALBrowserAuthenticationProviderOptions
 } = require("@microsoft/microsoft-graph-client/authProviders/authCodeMsalBrowser");
 
-const options: AuthCodeMSALBrowserAuthenticationProviderOptions: {
+const options: AuthCodeMSALBrowserAuthenticationProviderOptions = {
     account: account, // the AccountInfo instance to acquire the token for.
     interactionType: InteractionType.PopUp, // msal-browser InteractionType
     scopes: ["user.read", "mail.send"] // example of the scopes to be passed
 }
 
 // Pass the PublicClientApplication instance from step 2 to create AuthCodeMSALBrowserAuthenticationProvider instance
-const authProvider: new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
+const authProvider = new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
 ```
 
 ### <a name="using-azureidentity-for-server-side-applications"></a>Использование @azure/identity для серверных приложений
@@ -202,7 +202,7 @@ result, err := client.Me().Get(nil)
 
 ## <a name="client-credentials-provider"></a>Поставщик учетных данных клиента
 
-Поток учетных данных клиента позволяет приложениям-службам выполняться без взаимодействия с пользователем. Доступ основан на удостоверении приложения. Дополнительные сведения см. в статье о платформе удостоверений Майкрософт и потоке учетных данных клиента [OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
+Поток учетных данных клиента позволяет приложениям-службам выполняться без взаимодействия с пользователем. Доступ основан на удостоверении приложения. Дополнительные сведения см. в платформа удостоверений Майкрософт и потоке учетных данных клиента [OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -356,7 +356,7 @@ result, err := client.Me().Get(nil)
 
 ## <a name="on-behalf-of-provider"></a>От имени поставщика
 
-Поток "от имени" применяется, когда приложение вызывает службу или веб-API, который, в свою зрения, вызывает API Microsoft Graph. Дополнительные сведения см. в описании [платформы удостоверений Майкрософт и потока on-Behalf-Of OAuth 2.0](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
+Поток "от имени" применяется, когда приложение вызывает службу или веб-API, который, в свою API Graph. Дополнительные сведения см[. в платформа удостоверений Майкрософт и потоке On-Behalf-Of oAuth 2.0](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -459,7 +459,7 @@ final User me = graphClient.me().buildRequest().get();
 
 ## <a name="device-code-provider"></a>Поставщик кода устройства
 
-Поток кода устройства позволяет выполнять вход на устройства с помощью другого устройства. Дополнительные сведения см. в [описании платформы удостоверений Майкрософт и потока кода устройства OAuth 2.0](/azure/active-directory/develop/v2-oauth2-device-code).
+Поток кода устройства позволяет выполнять вход на устройства с помощью другого устройства. Дополнительные сведения см[. платформа удостоверений Майкрософт и потоке кода устройства OAuth 2.0](/azure/active-directory/develop/v2-oauth2-device-code).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -590,7 +590,7 @@ result, err := client.Me().Get(nil)
 
 ## <a name="integrated-windows-provider"></a>Интегрированный поставщик Windows
 
-Интегрированный поток Windows позволяет компьютерам Windows автоматически получать маркер доступа при присоединении к домену. Дополнительные сведения см [. в статье "Встроенная проверка подлинности Windows"](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
+Интегрированный поток Windows позволяет компьютерам Windows автоматически получать маркер доступа при присоединении к домену. Дополнительные сведения см. в [разделе проверка подлинности Windows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -782,7 +782,7 @@ result, err := client.Me().Get(nil)
 
 ## <a name="usernamepassword-provider"></a>Поставщик имени пользователя и пароля
 
-Поставщик имени пользователя и пароля позволяет приложению входить в систему с помощью имени пользователя и пароля. Используйте этот поток только в том случае, если вы не можете использовать другие потоки OAuth. Дополнительные сведения см. в [разделе "Платформа удостоверений Майкрософт" и учетные данные пароля владельца ресурса OAuth 2.0](/azure/active-directory/develop/v2-oauth-ropc)
+Поставщик имени пользователя и пароля позволяет приложению входить в систему с помощью имени пользователя и пароля. Используйте этот поток только в том случае, если вы не можете использовать другие потоки OAuth. Дополнительные сведения см[. в платформа удостоверений Майкрософт и учетных данных пароля владельца ресурса OAuth 2.0](/azure/active-directory/develop/v2-oauth-ropc).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -886,6 +886,6 @@ result, err := client.Me().Get(nil)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Примеры кода, в которых показано, как использовать платформу удостоверений Майкрософт для защиты различных типов приложений, см. в примерах кода платформы удостоверений [Майкрософт (конечная точка версии 2.0).](/azure/active-directory/develop/sample-v2-code)
+- Примеры кода, в которых показано, как использовать платформа удостоверений Майкрософт для защиты различных типов приложений, см. в платформа удостоверений Майкрософт примерах кода [(конечная точка версии 2.0).](/azure/active-directory/develop/sample-v2-code)
 - Поставщикам проверки подлинности требуется идентификатор клиента. Вы захотите [зарегистрировать приложение после](https://portal.azure.com/) настройки поставщика проверки подлинности.
 - Сообщите нам, не поддерживается ли в настоящее время необходимый поток OAuth путем голосования или открытия запроса функции [Microsoft Graph](https://aka.ms/graphrequests).

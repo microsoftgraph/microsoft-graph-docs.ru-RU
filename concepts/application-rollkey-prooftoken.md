@@ -4,20 +4,20 @@ description: В рамках подтверждения запроса для м
 ms.localizationpriority: high
 ms.prod: applications
 author: FaithOmbongi
-ms.openlocfilehash: 6e3f3b0c807af73e53fe9ea5e122e17c4f79c7a9
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 495c0a86020ff463b0bb76ab89f4f6b367e3af8d
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525486"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609656"
 ---
 # <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a>Создание маркеров подтверждения владения для смены ключей
 
-Вы можете использовать методы **addKey** и **removeKey**, определенные в ресурсах [application](/graph/api/resources/application?view=graph-rest-1.0) и [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0), для программной смены ключей с истекающим сроком действия.
+Вы можете использовать методы **addKey** и **removeKey**, определенные в ресурсах [application](/graph/api/resources/application) и [servicePrincipal](/graph/api/resources/serviceprincipal), для программной смены ключей с истекающим сроком действия.
 
 В рамках подтверждения запроса для этих методов проверяется подтверждение владения существующего ключа перед вызовом этих методов. Подтверждение представляется в виде самозаверяющего маркера JWT. Маркер JWT должен быть подписан с использованием закрытого ключа одного из существующих действительных сертификатов приложения. Срок действия маркера не должен превышать 10 минут.
 
-> **Примечание.** Приложения без существующих действительных сертификатов (сертификаты еще не добавлены или истек срок действия всех сертификатов) не смогут использовать это служебное действие. Чтобы вместо этого выполнить обновление, вы можете использовать операцию [обновления приложения](/graph/api/application-update?view=graph-rest-v1.0).
+> **Примечание.** Приложения без существующих действительных сертификатов (сертификаты еще не добавлены или истек срок действия всех сертификатов) не смогут использовать это служебное действие. Чтобы вместо этого выполнить обновление, вы можете использовать операцию [обновления приложения](/graph/api/application-update).
 
 Маркер должен содержать следующие утверждения:
 

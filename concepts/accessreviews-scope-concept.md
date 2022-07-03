@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: cb8b96c06704a3e66eee38d729fca9a627a12896
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 8da62d1d75119a6ec0dcbb6681be0d3cd9b58d94
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446219"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609621"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Настройка области проверки доступа с помощью microsoft API Graph
 
@@ -182,7 +182,6 @@ API Azure AD доступа позволяет [](/graph/api/resources/accessrev
 Кроме того, так как эта проверка применяется ко всем командам, настройте свойство **instanceEnumerationScope** , чтобы указать все команды. Динамические группы и группы, назначаемые ролем, не включаются в эту проверку.
 
 Эта проверка не будет включать пользователей прямого подключения B2B в команды с общими каналами. Чтобы включить пользователей прямого подключения B2B в команды с общими каналами, см. пример 11. Просмотр всех пользователей, назначенных команде [, включая пользователей прямого подключения B2B](#example-11-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels) в команде с общими каналами.
-
 
 ---
 

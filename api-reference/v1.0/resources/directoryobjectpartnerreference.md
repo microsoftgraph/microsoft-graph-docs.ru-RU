@@ -1,32 +1,32 @@
 ---
-title: тип ресурса directoryObjectPartnerReference
-description: Представляет ссылку на объект каталога в клиенте-партнере. Наследуется от directoryObject.
+title: Тип ресурса directoryObjectPartnerReference
+description: Представляет ссылку на объект каталога в клиенте партнера. Наследуется от directoryObject.
 author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 0a626514e1e078cb34c709027e3f26d9cd478088
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 10365c3a7a2dbc559cfd090710e99998e1f50c54
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335943"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609698"
 ---
-# <a name="directoryobjectpartnerreference-resource-type"></a>тип ресурса directoryObjectPartnerReference
+# <a name="directoryobjectpartnerreference-resource-type"></a>Тип ресурса directoryObjectPartnerReference
 
 Пространство имен: microsoft.graph
 
-Представляет ссылку на объект каталога в организации-партнере. Наследуется от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0).
+Представляет ссылку на объект каталога в партнерской организации. Наследуется от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0&preserve-view=true).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|description|Строка| Описание возвращенного объекта. Только для чтения. |
-|displayName|String| Имя возвращаемого объекта каталога, например группы или приложения. Только для чтения. |
-|externalPartnerTenantId|Guid| Идентификатор клиента для клиента-партнера. Только для чтения. |
-|id|String| Уникальный идентификатор ресурса. Наследуется от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Только для чтения. |
-|objectType|String| Тип ссылаемого объекта в клиенте-партнере. Только для чтения. |
+|description|String| Описание возвращаемого объекта. Только для чтения. |
+|displayName|String| Имя возвращаемого объекта каталога, например группа или приложение. Только для чтения. |
+|externalPartnerTenantId|Guid| Идентификатор клиента партнера. Только для чтения. |
+|id|String| Уникальный идентификатор ресурса. Наследуется от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0&preserve-view=true). Только для чтения. |
+|Objecttype|String| Тип объекта, на который указывает ссылка, в клиенте партнера. Только для чтения. |
 
 ## <a name="json-representation"></a>Представление JSON
 
