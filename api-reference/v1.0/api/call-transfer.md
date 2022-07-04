@@ -1,26 +1,26 @@
 ---
-title: 'вызов: передача'
-description: Передача активного одноранговых вызовов или групповых вызовов.
+title: 'call: transfer'
+description: Передача активного однорангового или группового вызова.
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0dcb6db4e7a9bc9278807db607c7cd868c85cf39
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: ac50bf307666a1471429d0186b87f9ada28a6047
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64608081"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444112"
 ---
-# <a name="call-transfer"></a>вызов: передача
+# <a name="call-transfer"></a>call: transfer
 
 Пространство имен: microsoft.graph
 
-Передача активного одноранговых вызовов или групповых вызовов.
+Передача активного однорангового или группового вызова.
 
-> **Примечание:** Это поддерживается только в том случае, если как передателем, так и Microsoft Teams пользователями, принадлежащими одному и одному клиенту. Передача на номер PSTN поддерживается только для экземпляра приложения. Дополнительные информацию о целевой цели переноса, переноса и переноса см. в [rFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
+> **Примечание:** Это поддерживается, только если получателем и целевым объектом передачи являются пользователи Microsoft Teams, принадлежащие одному клиенту. Передача на номер ТСОП поддерживается только для экземпляра приложения. Дополнительные сведения о получателе, получателе и целевом объекте передачи см. в [статье RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
 
-Консультативная передача означает, что перед передачей перед передачей переносчик может сообщить человеку, на которого он хочет передать вызов. Это противоположно переносу вызова напрямую.
+Консультация по передаче означает, что перед передачей передача может сообщить пользователю, которому он хочет передать звонок (получателю). Это не является прямой передачей вызова.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "64608081"
 | :-------------- | :-------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                |
-| Для приложений     | Calls.Initiate.All                                  |
+| Приложение     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,16 +48,16 @@ POST /communications/calls/{id}/transfer
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Участник, который является объектом переноса.|
-|transferee|[participantInfo](../resources/participantinfo.md)|Участник, который является участником передачи. Это необходимо только при переходе с группового вызова.|
+|transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Участник, который является целевым объектом передачи.|
+|Получатель|[participantInfo](../resources/participantinfo.md)|Участник, который является получателем передачи. Это необходимо только при передаче из группового вызова.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`.
 
 ## <a name="examples"></a>Примеры
-В этих примерах покажите поток входящих вызовов в различные типы уведомлений о переносе.
+В этих примерах показан поток входящего вызова в различных типах уведомлений о передаче.
 
-### <a name="example-1-call-transfer-from-a-peer-to-peer-call"></a>Пример 1. Перенос вызовов из одноранговых вызовов
+### <a name="example-1-call-transfer-from-a-peer-to-peer-call"></a>Пример 1. Передача вызовов из однорангового вызова
 
 ##### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -124,7 +124,7 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a>Уведомление — перенос
+##### <a name="notification---transferring"></a>Уведомление — передача
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -152,9 +152,9 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a>Уведомление — перенос принимается
+##### <a name="notification---transfer-accepted"></a>Уведомление — передача принято
 
-> **Примечание:** Передача, принятая, может произойти после или до неактивного состояния мультимедиа.
+> **Примечание:** Передача принятой передачи может происходить после или до неактивности звука состояния мультимедиа.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -182,7 +182,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-completed"></a>Уведомление - передача завершена
+##### <a name="notification---transfer-completed"></a>Уведомление — передача завершена
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -218,7 +218,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание:** При сбойе передачи вызовов состояние вызова будет .`established`
+> **Note:** When a call transfer fails, the call state will be `established`.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -252,7 +252,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-consultative-transfer-from-a-peer-to-peer-call"></a>Пример 2. Консультативный переход от одноранговых вызовов
+### <a name="example-2-consultative-transfer-from-a-peer-to-peer-call"></a>Пример 2. Консультация по передаче из однорангового вызова
 
 ##### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -319,7 +319,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a>Уведомление — перенос
+##### <a name="notification---transferring"></a>Уведомление — передача
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -347,9 +347,9 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a>Уведомление — перенос принимается
+##### <a name="notification---transfer-accepted"></a>Уведомление — передача принято
 
-> **Примечание:** Передача, принятая, может произойти после или до неактивного состояния мультимедиа.
+> **Примечание:** Передача принятой передачи может происходить после или до неактивности звука состояния мультимедиа.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -377,7 +377,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-completed"></a>Уведомление - передача завершена
+##### <a name="notification---transfer-completed"></a>Уведомление — передача завершена
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -408,7 +408,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание:** При сбойе передачи вызовов состояние вызова будет .`established`
+> **Note:** When a call transfer fails, the call state will be `established`.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -443,10 +443,10 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-call-transfer-from-a-peer-to-peer-call-to-pstn-number"></a>Пример 3. Перенос вызовов из одноранговых вызовов на номер PSTN
+### <a name="example-3-call-transfer-from-a-peer-to-peer-call-to-pstn-number"></a>Пример 3. Передача вызовов из однорангового вызова на номер ТСОП
 
-Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
-> **Примечание.** Телефон является номером телефона в формате E.164.
+Для этого вызова требуется экземпляр приложения с назначенным номером ТСОП. Дополнительные сведения см. [в статье "Назначение боту номера телефона"](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+> **Примечание:** Идентификатор телефона — это номер телефона в формате E.164.
 
 #### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -504,7 +504,7 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 
-#### <a name="notification---transferring"></a>Уведомление — перенос
+#### <a name="notification---transferring"></a>Уведомление — передача
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -532,9 +532,9 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-accepted"></a>Уведомление — перенос принимается
+#### <a name="notification---transfer-accepted"></a>Уведомление — передача принято
 
-> **Примечание:** Передача, принятая, может произойти после или до неактивного состояния мультимедиа.
+> **Примечание:** Передача принятой передачи может происходить после или до неактивности звука состояния мультимедиа.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -562,7 +562,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-completed"></a>Уведомление - передача завершена
+#### <a name="notification---transfer-completed"></a>Уведомление — передача завершена
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -597,7 +597,7 @@ Content-Type: application/json
 ```
 ### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание:** При сбойе передачи вызовов состояние вызова будет .`established`
+> **Note:** When a call transfer fails, the call state will be `established`.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -631,10 +631,10 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-consultative-transfer-from-a-peer-to-peer-call-to-pstn-number"></a>Пример 4. Перенос консультаций с одноранговых вызовов на номер PSTN
+### <a name="example-4-consultative-transfer-from-a-peer-to-peer-call-to-pstn-number"></a>Пример 4. Консультация по передаче из однорангового вызова на номер ТСОП
 
-Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
-> **Примечание.** Телефон является номером телефона в формате E.164.
+Для этого вызова требуется экземпляр приложения с назначенным номером ТСОП. Дополнительные сведения см. [в статье "Назначение боту номера телефона"](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+> **Примечание:** Идентификатор телефона — это номер телефона в формате E.164.
 
 #### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -695,7 +695,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-#### <a name="notification---transferring"></a>Уведомление — перенос
+#### <a name="notification---transferring"></a>Уведомление — передача
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -723,9 +723,9 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-accepted"></a>Уведомление — перенос принимается
+#### <a name="notification---transfer-accepted"></a>Уведомление — передача принято
 
-> **Примечание:** Передача, принятая, может произойти после или до неактивного состояния мультимедиа.
+> **Примечание:** Передача принятой передачи может происходить после или до неактивности звука состояния мультимедиа.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -753,7 +753,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---transfer-completed"></a>Уведомление - передача завершена
+#### <a name="notification---transfer-completed"></a>Уведомление — передача завершена
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -784,7 +784,7 @@ Content-Type: application/json
 
 #### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание:** При сбойе передачи вызовов состояние вызова будет .`established`
+> **Note:** When a call transfer fails, the call state will be `established`.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -820,7 +820,7 @@ Content-Type: application/json
 
 ### <a name="example-5-call-transfer-from-a-group-call"></a>Пример 5. Передача вызовов из группового вызова
 
-> **Примечание:** Для передачи из группового звонка требуется параметр transferee. Все остальные параметры являются теми же, что и для переноса из одноранговых вызовов. Консультативная передача из группового звонка или передачи в PSTN из группового вызова аналогична примерам 1-4 с указанным параметром переноса.
+> **Примечание:** Для передачи из группового вызова требуется параметр transferee. Все остальные параметры совпадают с параметрами для передачи из однорангового вызова. Консультация по передаче из группового вызова или передачи в ТСОП из группового вызова аналогична примерам 1–4 с указанным параметром получателя.
 
 ##### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -890,7 +890,7 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a>Уведомление — перенос
+##### <a name="notification---transferring"></a>Уведомление — передача
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -918,9 +918,9 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a>Уведомление — перенос принимается
+##### <a name="notification---transfer-accepted"></a>Уведомление — передача принято
 
-> **Примечание:** Передача, принятая, может произойти после или до неактивного состояния мультимедиа.
+> **Примечание:** Передача принятой передачи может происходить после или до неактивности звука состояния мультимедиа.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -948,7 +948,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-completed"></a>Уведомление - передача завершена
+##### <a name="notification---transfer-completed"></a>Уведомление — передача завершена
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -984,7 +984,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание:** При сбойе передачи вызовов состояние вызова будет .`established`
+> **Note:** When a call transfer fails, the call state will be `established`.
 
 ```http
 POST https://bot.contoso.com/api/calls
