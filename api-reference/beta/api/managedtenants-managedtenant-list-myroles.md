@@ -5,12 +5,12 @@ author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: cc1701a57eb77cd667ecf2ec07e6c92fd13b35b7
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 1ed99b511b0dfb65c27ec287728551972c87880a
+ms.sourcegitcommit: 005e9d483d03ed048611ffd180a92930afff4e42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66096432"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66646148"
 ---
 # <a name="list-myroles"></a>Перечисление myRoles
 Пространство имен: microsoft.graph.managedTenants
@@ -18,6 +18,10 @@ ms.locfileid: "66096432"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение ролей, которые есть у вошедского пользователя через делегированное отношение между управляемыми клиентами.
+
+Сведения о типах делегированных связей между поставщиком управляемых служб (MSP), который использует Microsoft 365 Lighthouse, и его бизнес-клиентами с клиентами Microsoft 365 бизнес премиум, см. в следующих статьях в Центре [партнеров](/partner-center/overview):
+- [Делегированные права администратора](/partner-center/dap-faq) (DAP)
+- [Детализированные делегированные права администратора](/partner-center/gdap-introduction) (GDAP)
 
 ## <a name="permissions"></a>Разрешения
 
