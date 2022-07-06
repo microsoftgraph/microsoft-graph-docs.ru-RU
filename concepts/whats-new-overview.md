@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Прочитайте о самых важных новых возможностях Microsoft Graph за последние два месяца, о том, что было добавлено в более ранних выпусках, и о том, как делиться идеями.
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: a823d702204451182a8acc2cc407c53216e4bbe2
-ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
+ms.openlocfilehash: 57e86b50b14c87a00341a296af38f22669c3651b
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2022
-ms.locfileid: "66609635"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645240"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -54,7 +54,7 @@ ms.locfileid: "66609635"
 ## <a name="june-2022-new-in-preview-only"></a>Июнь 2022 г.: новые возможности только в предварительной версии
 
 ### <a name="applications"></a>Приложения
-Указание [связанных объектов](/graph/api/resources/synchronizationLinkedObjects?view=graph-rest-beta&preserve-view=true), которые можно [подготовить во время подготовки по запросу](/graph/api/resources/synchronization-synchronizationJobSubject?view=graph-rest-beta&preserve-view=true), включая такие субъекты, как руководитель, участники и владельцы.
+Указание [связанных объектов](/graph/api/resources/synchronization-synchronizationLinkedObjects?view=graph-rest-beta&preserve-view=true), которые можно [подготовить во время подготовки по запросу](/graph/api/resources/synchronization-synchronizationJobSubject?view=graph-rest-beta&preserve-view=true), включая такие субъекты, как руководитель, участники и владельцы.
 
 ### <a name="compliance--ediscovery"></a>Соответствие требованиям | Обнаружение электронных данных
 Доступ к [API обнаружения электронных данных](/graph/api/resources/security-ediscoverycase?view=graph-rest-beta&preserve-view=true) теперь осуществляется из пространства имен [security](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true) вместо пространства имен "compliance".

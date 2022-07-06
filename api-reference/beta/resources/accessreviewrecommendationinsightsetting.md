@@ -1,18 +1,18 @@
 ---
-title: accessReviewRecommendationInsightSetting resource type
-description: В отзывах о доступе Azure AD accessReviewReviewRecommendationInsightSetting представляет параметры, связанные с представлением, предоставляемым для проверки доступа.
+title: Тип ресурса accessReviewRecommendationInsightSetting
+description: В Azure AD проверки доступа accessReviewRecommendationInsightSetting представляет параметры, связанные с аналитическими сведениями, предоставленными для проверки доступа.
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ce3e5406163765a7acc4533399b9a0ae4f5f3545
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: beedb05c7e22ca3a3fcda781eff68a63779ca52b
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137262"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645094"
 ---
-# <a name="accessreviewrecommendationinsightsetting-resource-type"></a>accessReviewRecommendationInsightSetting resource type
+# <a name="accessreviewrecommendationinsightsetting-resource-type"></a>Тип ресурса accessReviewRecommendationInsightSetting
 
 Пространство имен: microsoft.graph
 
@@ -20,13 +20,14 @@ ms.locfileid: "62137262"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-**AccessReviewRecommendationInsightSetting** позволяет настраивать сведения для [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md) Это абстрактный тип [для производных accessReviewRecommendationInsightSetting.](accessReviewRecommendationInsightSetting.md)
+**AccessReviewRecommendationInsightSetting** позволяет настраивать аналитические сведения для [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). Этот сложный тип является абстрактным типом для следующих производных типов:
++ [userLastSignInRecommendationInsightSetting](userlastsignInrecommendationinsightsetting.md)
 
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

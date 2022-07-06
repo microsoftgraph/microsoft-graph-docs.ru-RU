@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d166ebb8b6d3a2c916bd653c78f32e019d870dcc
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 4725728017f7a6430db4bfd41a4ab3214b2c3335
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60937050"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645457"
 ---
 # <a name="update-table"></a>Обновление таблицы
 
@@ -48,13 +48,14 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name
 |name|string|Имя таблицы.|
 |showHeaders|boolean|Указывает, отображается ли строка заголовков. Можно задать это значение, чтобы отобразить или скрыть строку заголовков.|
 |showTotals|boolean|Указывает, отображается ли строка итогов. Можно задать это значение, чтобы отобразить или скрыть строку итогов.|
-|style|string|Постоянное значение, представляющее стиль таблицы. Возможные значения: `TableStyleLight1` через `TableStyleLight21` , через , `TableStyleMedium1` через  `TableStyleMedium28` `TableStyleDark1` `TableStyleDark11` . Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.|
+|style|string|Постоянное значение, представляющее стиль таблицы. Возможные значения: `TableStyleLight1` через `TableStyleLight21`, `TableStyleMedium1` через  `TableStyleMedium28`, `TableStyleDark1` через `TableStyleDark11`. Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` обновленный [объект WorkbookTable](../resources/table.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный объект [workbookTable](../resources/table.md) в тексте отклика.
+
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -91,8 +92,9 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

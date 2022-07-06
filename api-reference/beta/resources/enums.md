@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: a064058b666f7b5709fed96a53b83c6eb3d2c77d
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 9560cac180097207d7bc97f0aef6a560843ca878
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446366"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645088"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
@@ -137,7 +137,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|пользователь;|
+|пользователь|
 |group|
 
 ### <a name="accesspackagefilterbycurrentuseroptions-values"></a>значения accessPackageFilterByCurrentUserOptions
@@ -158,7 +158,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |primaryRefreshToken|
 |saml11|
 |saml20|
@@ -169,7 +169,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |oAuth2|
 |ropc|
 |wsFederation|
@@ -211,7 +211,7 @@ ms.locfileid: "66446366"
 
 | Элемент             | Значение | Описание |
 |:-------------------|:------| :------|
-| Нет               | 0     | Политика не применяется ни к пользователям, ни к группам в организации. |
+| none               | 0     | Политика не применяется ни к пользователям, ни к группам в организации. |
 | все                | 1     | Политика применяется ко всем пользователям и группам в организации. Значение по умолчанию. |
 | Выбранного           | 2     | Политика применяется к определенным пользователям или группам в организации. |
 | unknownFutureValue | 3     | Значение sentinel для развиваемого перечисления. Не следует использовать. |
@@ -247,7 +247,7 @@ ms.locfileid: "66446366"
 |ClientIdentifier|
 |ClientSecret|
 |SingleSignOnType|
-|Песочнице|
+|Песочница|
 |Url|
 |Домен|
 |ConsumerKey|
@@ -362,9 +362,9 @@ ms.locfileid: "66446366"
 |:---|
 |String|
 |Целое число|
-|Справочные материалы|
+|Справка|
 |Binary|
-|Логическое|
+|Логический|
 |DateTime|
 
 ### <a name="mutability-values"></a>значения изменяемости
@@ -480,7 +480,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |noMissedCall|
 |disableForwardingExceptPhone|
 |disableForwarding|
@@ -556,7 +556,7 @@ ms.locfileid: "66446366"
 ### <a name="recipientscopetype-values"></a>Значения recipientScopeType
 |Member|
 |:---|
-|Нет|
+|none|
 |Внутренние|
 |Внешних|
 |externalPartner|
@@ -625,7 +625,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |mobilePhone;|
 |alternateMobilePhone|
 |officePhone|
@@ -640,7 +640,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |clientSecret|
 |clientAssertion|
 |federatedIdentityCredential|
@@ -653,7 +653,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |Бесплатный|
 |Основные|
 |PremiumP1|
@@ -664,11 +664,11 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |приложение|
 |users|
 |devicePlatform|
-|расположение;|
+|расположение|
 |clientType|
 |signInRisk|
 |userRisk|
@@ -713,7 +713,7 @@ ms.locfileid: "66446366"
 |все|
 |privilegedAdmin|
 |Администратора|
-|пользователь;|
+|пользователь|
 |unknownFutureValue|
 
 ### <a name="includedusertypes-values"></a>Значения includedUserTypes
@@ -721,7 +721,7 @@ ms.locfileid: "66446366"
 |Member|
 |:---|
 |все|
-|член|
+|участники|
 |Гостевой|
 |unknownFutureValue|
 
@@ -729,7 +729,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|пользователь;|
+|пользователь|
 |приложение|
 |system|
 |unknownFutureValue|
@@ -826,7 +826,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|член|
+|участники|
 |Гостевой|
 |unknownFutureValue|
 
@@ -835,7 +835,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|пользователь;|
+|пользователь|
 |Запрос|
 |servicePrincipal|
 |v1ConditionalAccess|
@@ -862,7 +862,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |Внутренние|
 |Внешних|
 |externalPartner|
@@ -931,7 +931,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|Обязательный|
+|обязательно|
 |previouslyИмя|
 |notApplicable|
 |unknownFutureValue|
@@ -940,14 +940,14 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |assignIfOpen|
 |unknownFutureValue|
 
 ### <a name="educationaddtocalendaroptions-values"></a>значения educationAddToCalendarOptions
 |Member|
 |:---|
-|Нет|
+|none|
 |studentsAndPublisher|
 |studentsAndTeamOwners|
 |unknownFutureValue|
@@ -1085,7 +1085,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|пользователь;|
+|пользователь|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>Значения authenticationMethodState
@@ -1264,7 +1264,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |Автомобилей|
 |calendar|
 |Запущена|
@@ -1326,7 +1326,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |shift|
 |swapRequest|
 |userShiftPreferences|
@@ -1343,8 +1343,8 @@ ms.locfileid: "66446366"
 
 | Member
 |:-----------------
-| Нет|
-| пользователь;|
+| none|
+| пользователь|
 | manager|
 | unknownFutureValue|
 
@@ -1382,7 +1382,7 @@ ms.locfileid: "66446366"
 
 | Member
 |:-------------------------
-| Обязательный
+| обязательно
 | необязательный
 | resource
 
@@ -1391,7 +1391,7 @@ ms.locfileid: "66446366"
 
 | Member
 |:-------------------------
-| Нет
+| none
 | contactsOnly
 | все
 
@@ -1508,7 +1508,7 @@ ms.locfileid: "66446366"
 
 | Member
 |:-----------------
-| Нет
+| none
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -1540,7 +1540,7 @@ ms.locfileid: "66446366"
 | deviceDefault
 | Баннер
 | Модального
-| Нет
+| none
 
 ### <a name="deviceenrollmentfailurereason-values"></a>Значения deviceEnrollmentFailureReason
 
@@ -1732,7 +1732,7 @@ ms.locfileid: "66446366"
 ### <a name="onenotesourceservice-values"></a>Значения onenoteSourceService
 | Member
 |:---------------------
-| Unknown
+| Неизвестно
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -1742,7 +1742,7 @@ ms.locfileid: "66446366"
 
 | Member
 |:-------------------------
-| Нет
+| none
 | organizer
 | tentativelyAccepted
 | Принято
@@ -1775,7 +1775,7 @@ ms.locfileid: "66446366"
 
 | Элемент   | Значение |
 | :------- | :---- |
-| Нет     | –1    |
+| none     | –1    |
 | preset0  | 0     |
 | preset1  | 1     |
 | preset2  | 2     |
@@ -1895,7 +1895,7 @@ ms.locfileid: "66446366"
 | expandSz          | 5     | REG_EXPAND_SZ типа значения реестра.           |
 | ссылка              | 6      | REG_LINK типа значения реестра.                |
 | multiSz           | 7      | REG_MULTI_SZ типа значения реестра.            |
-| Нет              | 8      | REG_NONE типа значения реестра.                |
+| none              | 8      | REG_NONE типа значения реестра.                |
 | qword             | 9      | REG_QWORD типа значения реестра.               |
 | qwordlittleEndian | 10    | REG_QWORD_LITTLE_ENDIAN типа значения реестра. |
 | Sz                | 11    | REG_SZ типа значения реестра.                  |
@@ -1959,9 +1959,9 @@ ms.locfileid: "66446366"
 
 ### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>Значения chatMessagePolicyViolationDlpActionType
 
-| Значение |
+| Value |
 |:-----------------|
-| Нет |
+| none |
 | NotifySender |
 | BlockAccess |
 | BlockAccessExternal |
@@ -1981,14 +1981,14 @@ ms.locfileid: "66446366"
 |medium|
 |Высокой|
 |hidden|
-|Нет|
+|none|
 |unknownFutureValue|
 
 ### <a name="riskstate-values"></a>Значения riskState
 
 |Member|
 |:---|
-|Нет|
+|none|
 |confirmedSafe|
 |исправлено|
 |Уволен|
@@ -2135,7 +2135,7 @@ ms.locfileid: "66446366"
 |Member|
 |:---|
 |Signin|
-|пользователь;|
+|пользователь|
 |unknownFutureValue|
 |servicePrincipal|
 
@@ -2187,7 +2187,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |freeBusyRead|
 |limitedRead|
 |read|
@@ -2292,12 +2292,22 @@ ms.locfileid: "66446366"
 |unknownFutureValue|
 |deviceFilterIncludeRuleNotMatched|
 |allDeviceStates|
+|anonymizedIPAddress|
+|unfamiliarFeatures|
+|nationStateIPAddress;|
+|realTimeThreatIntelligence|
+|internalGuest|
+|b2bCollaborationGuest|
+|b2bCollaborationMember|
+|b2bDirectConnectUser|
+|otherExternalUser|
+|Serviceprovider|
 
 ### <a name="signinaccesstype-values"></a>Значения signInAccessType 
 
 |Member|
 |:---|
-|Нет|
+|none|
 |b2bCollaboration|
 |b2bDirectConnect|
 |microsoftSupport|
@@ -2344,7 +2354,7 @@ ms.locfileid: "66446366"
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкая|2|
+|Низкий|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>Значения threatAssessmentContentType
 
@@ -2382,7 +2392,7 @@ ms.locfileid: "66446366"
 | Элемент        | Значение | Описание              |
 |:--------------|:------|:-------------------------|
 | Неопределенный     | 0     | Пока не известно.            |
-| пользователь;          | 1     | Отправка пользователя.         |
+| пользователь          | 1     | Отправка пользователя.         |
 | Администратора | 2     | Отправка администратора клиента. |
 
 ### <a name="threatassessmentresulttype-values"></a>Значения threatAssessmentResultType
@@ -2397,7 +2407,7 @@ ms.locfileid: "66446366"
 
 | Элемент                | Значение | Описание                         |
 |:----------------------|:------|:------------------------------------|
-| Нет                  | 0     | Пока не известно.                       |
+| none                  | 0     | Пока не известно.                       |
 | mailFlowRule          | 1     | Правило транспорта Exchange.            |
 | safeSender            | 2     | Список надежных отправителей.                   |
 | blockedSender         | 3     | Список заблокированных отправителей.                |
@@ -2445,7 +2455,7 @@ ms.locfileid: "66446366"
 
 | Member
 |:----------------------
-| Нет
+| none
 | defaultList
 | flaggedEmails
 | unknownFutureValue
@@ -2473,10 +2483,10 @@ ms.locfileid: "66446366"
 |dateTime | Столбец dateTime. |
 |Поиска | столбец подстановки. |
 |логический | Столбец "Да" или "Нет". |
-|пользователь; | столбец пользователя или группы. |
+|пользователь | столбец пользователя или группы. |
 |url | гиперссылка или столбец рисунка. |
 |Рассчитывается | вычисляемый столбец. |
-|расположение; | столбец location. |
+|расположение | столбец location. |
 |географическое положение | столбец географического расположения. |
 |term | столбец управляемых метаданных. |
 |многотерминантная | столбец управляемых метаданных, который принимает несколько значений. |
@@ -2564,7 +2574,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |onPremisesKerberos|
 |aadHeaderBased|
 |pingHeaderBased|
@@ -2600,7 +2610,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |все|
 |Выбранного|
 
@@ -2922,7 +2932,7 @@ ms.locfileid: "66446366"
 
 |Member|
 |:---|
-|Нет|
+|none|
 |defaultList|
 |flaggedEmail|
 |unknownFutureValue|
@@ -2951,7 +2961,7 @@ ms.locfileid: "66446366"
 |externalGuest|
 |unknownFutureValue|
 |Планировщик|
-|член|
+|участники|
 
 ### <a name="bookingreminderrecipients-values"></a>Значения bookingReminderRecipients 
 

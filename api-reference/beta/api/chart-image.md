@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e45050a5f6f453b9d8619dd04c3bf29fd25d3e00
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: da76fcc9cdd9dba812aab0cad322d490fb52158c
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60936917"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645396"
 ---
 # <a name="chart-image"></a>Chart: Image
 
@@ -80,11 +80,11 @@ Content-type: application/json
 
 В случае поведения по умолчанию используйте `Image(width=0,height=0,fittingMode='fit')`. Ниже приведен пример изображения диаграммы, возвращаемого с параметрами по умолчанию.
 
-![Изображение диаграммы Excel с высотой и шириной по умолчанию.](https://cdn.graph.office.net/prod/GraphDocuments/concepts/images/GetChart-default.png)
+![Снимок экрана: изображение диаграммы Excel с высотой и шириной по умолчанию.](https://cdn.graph.office.net/prod/GraphDocuments/concepts/images/GetChart-default.png)
 
 Если вы хотите настроить отображение этого изображения, укажите высоту, ширину и режим подгонки. А вот как выглядит то же самое изображение диаграммы, если получить его с этими параметрами: `Image(width=500,height=500,fittingMode='Fill')`.
 
-![Изображение диаграммы Excel с высотой и шириной по умолчанию.](https://cdn.graph.office.net/prod/GraphDocuments/concepts/images/GetChart-fill.png)
+![Снимок экрана: изображение диаграммы Excel с указанной высотой и шириной.](https://cdn.graph.office.net/prod/GraphDocuments/concepts/images/GetChart-fill.png)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

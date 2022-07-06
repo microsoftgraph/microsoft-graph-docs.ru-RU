@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e735e4440eec0b5ab82f0e7b3cbddc16f851114f
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: 6c87a2357674f50d281bafe8a9fc3661ee0dae5a
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65884255"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645499"
 ---
 # <a name="get-onlinemeeting"></a>Получение onlineMeeting
 
@@ -22,9 +22,9 @@ ms.locfileid: "65884255"
 
 Например, вы можете:
 
-- Получение сведений о onlineMeeting с помощью [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [идентификатора собрания](#example-2-retrieve-an-online-meeting-by-meeting-id) или [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
-- Используйте путь `/attendeeReport` для получения отчета об участнике трансляции [Microsoft Teams](/microsoftteams/teams-live-events/what-are-teams-live-events) в виде ссылки для скачивания, как показано [в примере 4](#example-4-fetch-attendee-report-of-a-teams-live-event).
-- Используйте ссылки `/recording` и `/alternativeRecording` пути для получения записей трансляции [Teams](/microsoftteams/teams-live-events/what-are-teams-live-events) в виде ссылки для скачивания, как показано [в примере 5](#example-5-fetch-recording-of-a-teams-live-event).
+- Получение сведений о onlineMeeting с помощью [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [идентификатора](#example-2-retrieve-an-online-meeting-by-meeting-id) собрания, [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl) или [joinMeetingId](#example-4-retrieve-an-online-meeting-by-joinmeetingid).
+- Используйте путь `/attendeeReport` , чтобы получить отчет об участнике трансляции [Microsoft Teams](/microsoftteams/teams-live-events/what-are-teams-live-events) в виде ссылки для скачивания, как показано в [примере 5](#example-5-fetch-the-attendee-report-of-a-teams-live-event).
+- Используйте ссылки `/recording` и `/alternativeRecording` пути для получения записей трансляции [Teams](/microsoftteams/teams-live-events/what-are-teams-live-events) в виде ссылки для скачивания, как показано [в примере 6](#example-6-fetch-the-recording-of-a-teams-live-event).
 
 Отчет об участниках трансляций Teams и записи трансляций Teams являются артефактами собраний по сети. Дополнительные сведения см. в [разделе "Артефакты и разрешения](/graph/cloud-communications-online-meeting-artifacts) собрания по сети".
 
@@ -34,9 +34,9 @@ ms.locfileid: "65884255"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                            |
 |:---------------------------------------|:---------------------------------------------------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read, OnlineMeetings.ReadWrite          |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                         |
-| Приложение                            | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All  |
+| Делегированные (рабочая или учебная учетная запись)     | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read, OnlineMeetings.ReadWrite          |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                         |
+| Application                            | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All  |
 
 Чтобы использовать разрешение приложения для этого API, администраторы клиента должны создать политику [](/graph/cloud-communication-online-meeting-application-access-policy) доступа к приложениям и предоставить ее пользователю для авторизации приложения, настроенного в политике, для получения онлайн-собраний и (или) артефактов собраний по сети от имени этого пользователя (с идентификатором пользователя, указанным в пути запроса).
 
@@ -67,6 +67,13 @@ GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
+Чтобы получить **onlineMeeting с** помощью **joinMeetingId** с делегированным разрешением (`/me`) и разрешением приложения (`/users/{userId}`):
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'
+GET /users/{userId}/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'
+```
+
 Чтобы получить отчет участника о трансляции [Teams](/microsoftteams/teams-live-events/what-are-teams-live-events) с делегированным разрешением (`/me`) и разрешением приложения (`/users/{userId}`):
 <!-- { "blockType": "ignored" }-->
 
@@ -87,10 +94,11 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 
 > [!NOTE]
 >- Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
->- `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в [разделе "Политика доступа к приложениям"](/graph/cloud-communication-online-meeting-application-access-policy).
+>- `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в разделе "Разрешить приложениям доступ к собраниям по сети [от имени пользователя"](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` — **это идентификатор** объекта [onlineMeeting](../resources/onlinemeeting.md) .
 > - **VideoTeleconferenceId** создается для лицензированных пользователей Cloud-Video-Interop и может быть найден в [объекте onlineMeeting](../resources/onlinemeeting.md) . Дополнительные сведения см. в [описании идентификатора конференции VTC](/microsoftteams/cloud-video-interop-for-teams-set-up).
 >- `joinWebUrl` должен быть закодирован в URL-адрес.
+>- `joinMeetingId` — это идентификатор собрания, используемый для присоединения к собранию.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
@@ -108,18 +116,23 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `200 OK`. Ответ также включает одно из следующих значений:
+В случае успешного выполнения этот метод возвращает код отклика `200 OK`. Ответ также включает одно из следующих значений:
 
 - Если вы извлекаете онлайн-собрание по идентификатору собрания, этот метод возвращает объект [onlineMeeting](../resources/onlinemeeting.md) в тексте ответа.
 - Если вы извлекаете онлайн-собрание по **videoTeleconferenceId** или **joinWebUrl**, этот метод возвращает коллекцию, содержащую только один [объект onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.
 - При получении отчета об участии в собрании по сети этот метод возвращает объект [meetingAttendanceReport](../resources/meetingAttendanceReport.md) в тексте ответа.
 - При получении отчета участника или записи трансляции **Microsoft Teams** этот метод возвращает заголовок, `Location` указывающий URI для отчета или записи участника соответственно.
 
+> [!NOTE]
+>- **JoinMeetingIdSettings** может не создаваться для некоторых запланированных собраний, если собрание было создано до поддержки этой функции.
+
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>Пример 1. Получение собрания по сети по videoTeleconferenceId
 
 #### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -158,6 +171,8 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 
 #### <a name="response"></a>Отклик
 
+Ниже приведен пример отклика.
+
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 
 <!-- {
@@ -174,20 +189,20 @@ Content-Length: 1574
   "@odata.type": "#microsoft.graph.onlineMeeting",
   "autoAdmittedUsers": "everyone",
   "audioConferencing": {
-    "tollNumber": "55525634478",
-    "tollFreeNumber": "55566390588",
+    "tollNumber": "55534478",
+    "tollFreeNumber": "55390588",
     "ConferenceId": "9999999",
     "dialinUrl": "https://dialin.teams.microsoft.com/6787A136-B9B8-4D39-846C-C0F1FF937F10?id=xxxxxxx"
   },
   "chatInfo": {
     "@odata.type": "#microsoft.graph.chatInfo",
-    "threadId": "19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype",
-    "messageId": "1533758867081"
+    "threadId": "19:cbee7c1c868258e3cebf7bee0d@thread.skype",
+    "messageId": "153867081"
   },
   "creationDateTime": "2018-05-30T00:12:19.0726086Z",
   "endDateTime": "2018-05-30T01:00:00Z",
   "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8_19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype",
-  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3a:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2/0?context=%7b%22Tid%22%3a%aa67bd4c-8475-432d-bd41-39f255720e0a%22%2c%22Oid%22%3a%22112f7296-5fa4-42ca-bae8-6a692b15d4b8%22%7d",
+  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3a:meeting_NTg0NmQ3NTctZDVkZDZk@thread.v2/0?context=%7b%22Tid%22%3a%aa674c-875-432d-bd41-3720e0a%22%2c%22Oid%22%3a%2f7296-5fa4-42ca-bae8-6a4b8%22%7d",
   "participants": {
     "attendees": [
       {
@@ -195,8 +210,8 @@ Content-Length: 1574
         "identity": {
           "user": {
             "@odata.type": "#microsoft.graph.identity",
-            "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8",
-            "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+            "id": "11296-5fa4-42ca-bae8-6a2b4b8",
+            "tenantId": "aa674c-8475-432d-bd41-39f2e0a",
             "displayName": "Tyler Stein"
           }
         },
@@ -209,8 +224,8 @@ Content-Length: 1574
       "identity": {
         "user": {
           "@odata.type": "#microsoft.graph.identity",
-          "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-          "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+          "id": "58ede-f3cc-42eb-b2c1-e53ec96",
+          "tenantId": "a7bdc-8475-432d-bd41-39f2e0a",
           "displayName": "Jasmine Miller"
         }
       },
@@ -224,6 +239,11 @@ Content-Length: 1574
   "lobbyBypassSettings": {
     "scope": "everyone",
     "isDialInBypassEnabled": true
+  },
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false,
+    "joinMeetingId": "1234567890",
+    "passcode": null
   },
   "isEntryExitAnnounced": true,
   "allowedPresenters": "everyone",
@@ -241,9 +261,11 @@ Content-Length: 1574
 ```
 
 ### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>Пример 2. Получение онлайн-собрания по идентификатору собрания
-Сведения о собрании можно получить с помощью идентификатора собрания с помощью маркера пользователя или приложения. Идентификатор собрания предоставляется в объекте ответа при создании [объекта onlineMeeting](../resources/onlinemeeting.md). Этот параметр доступен для поддержки вариантов использования, когда идентификатор собрания известен, например, когда приложение сначала создает собрание по сети с помощью API Graph, а затем получает сведения о собрании позже в качестве отдельного действия.
+Сведения о собрании можно получить с помощью идентификатора собрания с помощью маркера пользователя или приложения. Идентификатор собрания предоставляется в объекте ответа при создании [объекта onlineMeeting](../resources/onlinemeeting.md). Этот параметр доступен для поддержки вариантов использования, когда идентификатор собрания известен, например, когда приложение сначала создает собрание по сети с помощью API Graph, а затем извлекает сведения о собрании позже в виде отдельного действия.
 
 #### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
 
 > **Примечание:** Идентификатор собрания был усечен для удобочитаемости.
 
@@ -261,15 +283,17 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>Отклик
 
+Ниже приведен пример отклика.
+
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 
 ```json
 {
-    "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
+    "id": "MSpkYzE3Njc0Yy04MWQ5L1F6WGhyZWFkLnYy",
     "creationDateTime": "2020-09-29T22:35:33.1594516Z",
     "startDateTime": "2020-09-29T22:35:31.389759Z",
     "endDateTime": "2020-09-29T23:35:31.389759Z",
-    "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
+    "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4YxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22c581-5130-43e9-88f3-fc82cde37%22%2c%22Oid%22%3a%22674c-81d9-4adb-bb2-8f62e4622%22%7d",
     "subject": null,
     "autoAdmittedUsers": "EveryoneInCompany",
     "isEntryExitAnnounced": true,
@@ -283,9 +307,9 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
             "role": "presenter",
             "identity": {
                 "user": {
-                    "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+                    "id": "dc174c-81d9-4adb-bfb2-8f4622",
                     "displayName": null,
-                    "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+                    "tenantId": "9081-5130-43e9-88f3-fcde38",
                     "identityProvider": "AAD"
                 }
             }
@@ -297,6 +321,11 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
     "lobbyBypassSettings": {
         "scope": "organization",
         "isDialInBypassEnabled": false
+    },
+    "joinMeetingIdSettings": {
+        "isPasscodeRequired": false,
+        "joinMeetingId": "1234567890",
+        "passcode": null
     }
 }
 ```
@@ -305,6 +334,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 Сведения о собрании можно получить с помощью JoinWebUrl с помощью маркера пользователя или приложения. Этот параметр доступен для поддержки вариантов использования, когда идентификатор собрания неизвестен, но имеет значение JoinWebUrl, например когда пользователь создает собрание (например, в клиенте Microsoft Teams), а отдельному приложению необходимо получить сведения о собрании в качестве действия по выполнению.
 
 #### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
 
 В следующем запросе используется маркер пользователя.
 <!-- { "blockType": "ignored" } -->
@@ -320,17 +351,19 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>Отклик
 
+Ниже приведен пример отклика.
+
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 
 ```json
 {
     "value": [
         {
-            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyEtZWVkODYxODYzMmY2@thread.v2",
             "creationDateTime": "2020-09-29T22:35:33.1594516Z",
             "startDateTime": "2020-09-29T22:35:31.389759Z",
             "endDateTime": "2020-09-29T23:35:31.389759Z",
-            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
+            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2N2%40thread.v2/0?context=%7b%22Tid%22%3a%229581-5130-43e9-8f3-fcb35e37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
             "subject": null,
             "autoAdmittedUsers": "EveryoneInCompany",
             "isEntryExitAnnounced": true,
@@ -344,9 +377,9 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
                     "role": "presenter",
                     "identity": {
                         "user": {
-                            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+                            "id": "dc4c-81d9-4adb-bfb2-8f4622",
                             "displayName": null,
-                            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+                            "tenantId": "9091-5130-43e9-88f3-fcbe38",
                             "identityProvider": "AAD"
                         }
                     }
@@ -358,13 +391,88 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
             "lobbyBypassSettings": {
                 "scope": "organization",
                 "isDialInBypassEnabled": false
+            },
+            "joinMeetingIdSettings": {
+                "isPasscodeRequired": false,
+                "joinMeetingId": "1234567890",
+                "passcode": null
             }
         }
     ]
 }
 ```
 
-### <a name="example-4-fetch-attendee-report-of-a-teams-live-event"></a>Пример 4. Получение отчета участника о трансляции Teams
+### <a name="example-4-retrieve-an-online-meeting-by-joinmeetingid"></a>Пример 4. Получение собрания по сети с помощью joinMeetingId
+Сведения о собрании можно получить с помощью **joinMeetingId** с помощью пользователя или маркера приложения.
+
+#### <a name="request"></a>Запрос
+
+В следующем запросе используется маркер пользователя.
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'1234567890'
+```
+
+В следующем запросе используется маркер приложения.
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'1234567890'
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+
+```json
+{
+    "value": [
+        {
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
+            "creationDateTime": "2020-09-29T22:35:33.1594516Z",
+            "startDateTime": "2020-09-29T22:35:31.389759Z",
+            "endDateTime": "2020-09-29T23:35:31.389759Z",
+            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
+            "subject": null,
+            "autoAdmittedUsers": "EveryoneInCompany",
+            "isEntryExitAnnounced": true,
+            "allowedPresenters": "everyone",
+            "allowMeetingChat": "enabled",
+            "allowTeamworkReactions": true,
+            "videoTeleconferenceId": "(redacted)",
+            "participants": {
+                "organizer": {
+                    "upn": "(redacted)",
+                    "role": "presenter",
+                    "identity": {
+                        "user": {
+                            "id": "dc174c-81d9-4adb-bfb2-8f6622",
+                            "displayName": null,
+                            "tenantId": "9091-5130-43e9-88f3-fce38",
+                            "identityProvider": "AAD"
+                        }
+                    }
+                },
+                "attendees": [],
+                "producers": [],
+                "contributors": []
+            },
+            "lobbyBypassSettings": {
+                "scope": "organization",
+                "isDialInBypassEnabled": false
+            },
+            "joinMeetingIdSettings": {
+                "isPasscodeRequired": false,
+                "joinMeetingId": "1234567890",
+                "passcode": null
+            }
+        }
+    ]
+}
+```
+
+### <a name="example-5-fetch-the-attendee-report-of-a-teams-live-event"></a>Пример 5. Получение отчета участника о трансляции Teams
 
 В следующем примере показан запрос на скачивание отчета участника.
 
@@ -417,6 +525,8 @@ GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/
 
 #### <a name="response"></a>Отклик
 
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -428,7 +538,7 @@ HTTP/1.1 302 Found
 Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
 ```
 
-### <a name="example-5-fetch-recording-of-a-teams-live-event"></a>Пример 5. Получение записи трансляции Teams
+### <a name="example-6-fetch-the-recording-of-a-teams-live-event"></a>Пример 6. Получение записи трансляции Teams
 
 В следующем примере показан запрос на скачивание записи.
 
@@ -478,6 +588,9 @@ GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/
 ```
 
 #### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

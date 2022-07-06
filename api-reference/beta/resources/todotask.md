@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 541e2079d7eb9a27f61acf6e0f46e7b194dd7321
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 7d1d19378d27cb65365d5a9999974aa16b511661
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820793"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645250"
 ---
 # <a name="todotask-resource-type"></a>Тип ресурса todoTask
 
@@ -50,6 +50,7 @@ ms.locfileid: "65820793"
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанном часовом поясе, когда задача была завершена.|
 |createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601. Например, полночь в формате UTC 1 января 2020 г. будет выглядеть следующим образом: "2020-01-01T00:00:00Z".|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанном часовом поясе, когда задача должна быть завершена.|
+|hasAttachments|Boolean|Указывает, есть ли у задачи вложения.|
 |id|String|Уникальный идентификатор задачи. По умолчанию это значение изменяется при перемещении элемента из одного списка в другой.|
 |importance|importance|Важность задачи. Возможные значения: `low`, `normal`, `high`.|
 |isReminderOn|Boolean|Присвоено значение true, если установлено напоминание пользователю о задаче.|
@@ -57,13 +58,14 @@ ms.locfileid: "65820793"
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Расписание повторения задачи.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата и время появления напоминания о задаче.|
 |status|taskStatus|Указывает состояние или ход выполнения задачи. Возможные значения: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|title|Строка|Краткое описание задачи.|
+|title|String|Краткое описание задачи.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
+|attachments|[Коллекция taskFileAttachment](../resources/taskfileattachment.md)| Коллекция вложений файлов для задачи.|
 |checklistItems|[Коллекция checklistItem](../resources/checklistitem.md)|Коллекция небольших подзадач, связанных с более сложной родительской задачей. |
-|extensions|Коллекция объектов [extension](extension.md)| Коллекция открытых расширений, определенных для задачи. Допускается значение null.|
+|extensions|Коллекция [extension](extension.md)| Коллекция открытых расширений, определенных для задачи. Допускается значение null.|
 |linkedResources|[Коллекция linkedResource](../resources/linkedresource.md)|Коллекция ресурсов, связанных с задачей.|
 
 

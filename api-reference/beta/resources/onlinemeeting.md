@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: cfcfdb967348dfa1ebe12f11f97a5287fa5e94aa
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: e01ba9afac4e67c5442696e55246b92d1be65da7
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66441708"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645444"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса onlineMeeting
 
@@ -48,12 +48,13 @@ ms.locfileid: "66441708"
 | chatInfo              | [chatInfo](chatinfo.md) | Сведения о чате, связанные с этим собранием по сети.  |
 | creationDateTime      | DateTime | Время создания собрания в формате UTC. Только для чтения.     |
 | endDateTime           | DateTime | Время окончания собрания в формате UTC.   |
-| externalId            | String | Внешний идентификатор. Пользовательский идентификатор. Необязательное свойство.      |
+| externalId            | String | Внешний идентификатор. Пользовательский идентификатор. Необязательное.      |
 | id | String | Идентификатор по умолчанию, связанный с собранием по сети. Только для чтения.    |
 | isBroadcast | Логическое | Указывает, является ли это [трансляцией Teams](/microsoftteams/teams-live-events/what-are-teams-live-events). |
-| isEntryExitAnnounced  | Логическое | Указывает, следует ли объявлять о присоединении или выходе вызывающих абонентов. |
+| isEntryExitAnnounced  | Логический | Указывает, следует ли объявлять о присоединении или выходе вызывающих абонентов. |
 | joinWebUrl | String | URL-адрес присоединения к собранию по сети. Только для чтения. |
 | joinInformation | [itemBody](itembody.md) | Сведения о соединении на языке и варианте языкового стандарта, указанные в заголовке HTTP запроса Accept-Language. Только для чтения. |
+| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Указывает **joinMeetingId**, секретный код собрания и требование секретного кода. |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Указывает, какие участники могут обходить зал ожидания собрания. |
 | participants | [meetingParticipants](meetingparticipants.md) | Участники, связанные с онлайн-собранием. К ним относятся организатор и участники. |
 | recordAutomatically | Логическое | Указывает, следует ли записывать собрание автоматически. |
@@ -116,25 +117,26 @@ ms.locfileid: "66441708"
 }-->
 ```json
 {
+  "allowAttendeeToEnableCamera": "Boolean",
+  "allowAttendeeToEnableMic": "Boolean",
+  "allowedPresenters": "String",
+  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
+  "allowTeamworkReactions": "Boolean",
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
+  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
-  "id": "String (identifier)",
-  "joinWebUrl": "String",
-  "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
-  "startDateTime": "String (timestamp)",
-  "subject": "String",
-  "videoTeleconferenceId": "String",
-  "isEntryExitAnnounced": "Boolean",
-  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
-  "allowedPresenters": "String",
+  "id": "String (identifier)",  
   "isBroadcast": "Boolean",
-  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
-  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
-  "allowTeamworkReactions": "Boolean",
-  "allowAttendeeToEnableMic": "Boolean",
-  "allowAttendeeToEnableCamera": "Boolean"
+  "isEntryExitAnnounced": "Boolean",
+  "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
+  "joinWebUrl": "String",
+  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
+  "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
+  "startDateTime": "String (timestamp)",  
+  "subject": "String",
+  "videoTeleconferenceId": "String"
 }
 ```
 

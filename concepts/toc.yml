@@ -520,8 +520,12 @@ items:
           - name: Получение системных сообщений
             href: system-messages.md
       - name: Задачи To-Do
-        href: todo-concept-overview.md
         displayName: Microsoft To Do
+        items:
+          - name: Обзор
+            href: todo-concept-overview.md
+          - name: Вложение файлов в задачу
+            href: todo-attachments.md
       - name: Книги и диаграммы
         items:
           - name: Обзор

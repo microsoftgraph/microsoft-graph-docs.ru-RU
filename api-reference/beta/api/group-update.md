@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 17b08b04e88c6ef3b8a0b9ec8acad48535eff6f1
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 773505f386f075b4e012e615006602820d8b324b
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555266"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645287"
 ---
 # <a name="update-group"></a>Update group
 
@@ -42,7 +42,7 @@ PATCH /groups/{id}
 
 | Имя          | Тип   | Описание               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {токен}. Обязательный. |
+| Authorization | string | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -60,6 +60,7 @@ PATCH /groups/{id}
 | preferredDataLocation   | String  | Предпочтительное расположение данных для группы Microsoft 365. Чтобы обновить это свойство, вызывающему пользователю должна быть назначена одна из указанных ниже ролей Azure AD. <br><ul><li> Глобальный администратор <li> Администратор учетных записей пользователей <li> Поддержка партнеров уровня 1 или уровня 2 <li>Редактор каталогов <li> Администратор Exchange <li> Администратор SharePoint </ul> <br/>Дополнительные сведения об этом свойстве см. в статье [OneDrive Online с поддержкой нескольких регионов](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | securityEnabled         | Логический | Указывает, является ли группа группой безопасности, включая группы Microsoft 365.                                                                                                                                                                                                                                                                                                                                                                                                             |
 | visibility              | String  | Определяет видимость группы Microsoft 365. Возможные значения: **Private** (частная), **Public** (общедоступная) или пустое значение (оно обрабатывается как **Public**).                                                                                                                                                                                                                                                                                                                                              |
+| writebackConfiguration                     | [groupWritebackConfiguration](../resources/groupwritebackconfiguration.md)                                                                  | Указывает, настроена ли группа для записи свойств объекта группы обратно в локальную службу Active Directory. Эти свойства используются при настройке обратной записи группы в клиенте синхронизации [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-group-writeback-v2).|  
 
 > [!IMPORTANT]
 >
@@ -72,10 +73,10 @@ PATCH /groups/{id}
 
 ### <a name="manage-extensions-and-associated-data"></a>Управление расширениями и связанными данными
 
-Используйте этот API для управления [каталогом, схемой и открытыми](/graph/extensibility-overview) расширениями и их данными для групп следующим образом:
+Используйте этот API для управления [каталогом, схемой и открытыми расширениями](/graph/extensibility-overview) и их данными для пользователей следующим образом:
 
-+ Добавление, обновление и хранение данных в расширениях для существующей группы.
-+ Для расширений каталога и схемы удалите все хранимые данные, заданное для свойства настраиваемого расширения значение `null`. Для открытых расширений используйте API [удаления открытого](/graph/api/opentypeextension-delete) расширения.
++ Добавляйте, обновляйте и сохраняйте данные в расширениях для существующей группы.
++ Для расширений каталогов и схем удалите все сохраненные данные, задав для свойства пользовательского расширения значение `null`. Для открытых расширений используйте API [удаления открытых расширений](/graph/api/opentypeextension-delete).
 
 ## <a name="response"></a>Отклик
 

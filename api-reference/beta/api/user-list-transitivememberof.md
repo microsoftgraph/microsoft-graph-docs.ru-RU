@@ -1,24 +1,24 @@
 ---
-title: Перечисление user transitive memberOf
-description: Получение групп, ролей каталогов и административных единиц, членом которых является пользователь. Этот запрос API является транзитивным и также возвращает все группы, в которые пользователь входит.
+title: Перечисление членства пользователя (прямое и транзитивное)
+description: Получение групп, ролей каталогов и административных единиц, участником которых является пользователь, посредством прямого или транзитивного членства.
 ms.localizationpriority: medium
 author: psaffaie
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 40bc10527f78d1b4437222782e10d0e354482c3d
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 484bcb632dcd986607ecddf9eff803e1304cc6cc
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65206603"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645311"
 ---
-# <a name="list-user-transitive-memberof"></a>Перечисление user transitive memberOf
+# <a name="list-a-users-memberships-direct-and-transitive"></a>Перечисление членства пользователя (прямое и транзитивное)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение групп, ролей каталогов и административных единиц, членом которых является пользователь. Этот запрос API является транзитивным и также возвращает все группы, в которые пользователь входит.
+Получение [групп](../resources/group.md), [ролей каталогов](../resources/directoryrole.md) и административных единиц, участником которых является пользователь, посредством прямого или транзитивного членства.[](../resources/administrativeunit.md)
 
 ## <a name="permissions"></a>Разрешения
 
