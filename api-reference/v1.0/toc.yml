@@ -51,8 +51,12 @@ items:
           - name: Обзор
             href: /graph/throttling?context=graph/api/1.0
             displayName: throttling
+          - name: Ограничения для отдельных служб
+            href: /graph/throttling-limits?context=graph/api/1.0
+            displayName: throttling
           - name: Оптимизация сетевого трафика
             href: /learn/modules/optimize-network-traffic
+            displayName: throttling
       - name: Уведомления об изменениях
         items:
           - name: Обзор
@@ -560,7 +564,7 @@ items:
                 href: api/chat-get.md
               - name: Перечисление чатов для пользователя
                 href: api/chat-list.md
-          - name: Задачи To-Do
+          - name: Задачи из списка дел
             items:
               - name: Задача в приложении "Список дел"
                 href: resources/todotask.md
@@ -1244,7 +1248,7 @@ items:
                 href: api/calendarpermission-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4476,7 +4480,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: Обновление
                 href: api/educationassignmentdefaults-update.md
-          - name: Category
+          - name: Категория
             href: resources/educationcategory.md
             items:
               - name: Создание
@@ -5560,7 +5564,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Удалить
                         href: api/identityapiconnector-delete.md
-          - name: Система управления
+          - name: Управление
             items:
               - name: Проверки доступа
                 href: resources/accessreviewsv2-overview.md
@@ -5880,7 +5884,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -6152,7 +6156,7 @@ items:
                 href: api/contact-delta.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -6735,7 +6739,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Создание плана

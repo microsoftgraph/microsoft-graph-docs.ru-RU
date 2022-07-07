@@ -5,25 +5,25 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 09d90672e3e77bc18087029f438fc7c011ea661a
-ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
+ms.openlocfilehash: c3213c0f5afed6acbce9db3f52f2115e24af5adc
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2022
-ms.locfileid: "61711972"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66666767"
 ---
 # <a name="macosgeneraldeviceconfiguration-resource-type"></a>Тип ресурса macOSGeneralDeviceConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 В этой статье описаны объявляемые методы, свойства и связи, которые предоставляются ресурсом macOSGeneralDeviceConfiguration.
 
 
-Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).
+Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
@@ -37,17 +37,17 @@ ms.locfileid: "61711972"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Идентификаторы roleScopeTagId|Коллекция строк|Список тегов области для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Логическое|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойству ScopeTags не допускается, если это значение имеет значение false и сущности не будут видны пользователям с заданной областью. Это происходит для устаревших политик, созданных в Silverlight, и их можно устранить, удалив и повторно создав политику на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпуска ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |compliantAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений, соответствующих требованиям (список разрешений или блокировок, определяется свойством CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Список, включенный в CompliantAppsList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |emailInDomainSuffixes|Коллекция String|Электронный адрес без суффикса, соответствующего одной из этих строк, будет считаться не добавленным в домен.|
@@ -60,64 +60,64 @@ ms.locfileid: "61711972"
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordRequired|Boolean|Определяет, нужно ли запрашивать ввод пароля.|
-|passwordMaximumAttemptCount|Int32|Количество разрешенных неудачных попыток ввести пароль на экране блокировки устройства. Допустимые значения от 2 до 11|
-|passwordMinutesUntilFailedLoginReset|Int32|Количество минут до сброса входа после максимального количества неудачных попыток входа.|
-|keychainBlockCloudSync|Логический|Указывает, заблокирована ли синхронизация ключей iCloud (macOS 10.12 и более поздней).|
+|passwordMaximumAttemptCount|Int32|Число разрешенных неудачных попыток ввода секретного кода на экране блокировки устройства. Допустимые значения от 2 до 11|
+|passwordMinutesUntilFailedLoginReset|Int32|Количество минут до сброса имени входа после максимального числа неудачных попыток входа.|
+|keychainBlockCloudSync|Логический|Указывает, заблокирована ли синхронизация цепочки ключей iCloud (macOS 10.12 и более поздних версий).|
 |safariBlockAutofill|Boolean|Указывает, следует ли запретить использовать автозаполнение в Safari.|
 |cameraBlocked|Boolean|Указывает, следует ли запретить доступ к камере устройства.|
-|iTunesBlockMusicService|Boolean|Указывает, следует ли блокировать службу "Музыка" и перенаторять приложение Music в классический режим.|
-|spotlightBlockInternetResults|Boolean|Указывает, следует ли блокировать Spotlight для возврата результатов поиска в Интернете.|
-|keyboardBlockDictation|Boolean|Указывает, следует ли блокировать пользователю использование ввода диктанта.|
-|definitionLookupBlocked|Boolean|Указывает, следует ли блокировать просмотр определения.|
-|AppleWatchBlockAutoUnlock|Логический|Указывает, следует ли блокировать пользователям разблокировку mac с помощью Apple Watch.|
-|iTunesBlockFileSharing|Логический|Указывает, следует ли блокировать перенос файлов с помощью iTunes.|
+|iTunesBlockMusicService|Boolean|Указывает, следует ли заблокировать службу "Музыка" и вернуть приложение "Музыка" в классический режим.|
+|spotlightBlockInternetResults|Boolean|Указывает, следует ли запретить Spotlight возвращать результаты поиска в Интернете.|
+|keyboardBlockDictation|Boolean|Указывает, следует ли запретить пользователю использовать входные данные диктовки.|
+|definitionLookupBlocked|Boolean|Указывает, следует ли блокировать поиск определения.|
+|appleWatchBlockAutoUnlock|Логическое|Указывает, следует ли запретить пользователям разблокировать компьютер Mac с помощью Apple Watch.|
+|iTunesBlockFileSharing|Логическое|Указывает, следует ли блокировать передачу файлов с помощью iTunes.|
 |iCloudBlockDocumentSync|Boolean|Указывает, следует ли заблокировать синхронизацию документов iCloud.|
-|iCloudBlockMail|Логический|Указывает, следует ли блокировать iCloud при синхронизации почты.|
-|iCloudBlockAddressBook|Логический|Указывает, следует ли блокировать iCloud при синхронизации контактов.|
-|iCloudBlockCalendar|Логический|Указывает, следует ли блокировать iCloud от синхронизации календарей.|
-|iCloudBlockReminders|Логический|Указывает, следует ли блокировать iCloud при синхронизации напоминаний.|
-|iCloudBlockBookmarks|Логический|Указывает, следует ли блокировать iCloud при синхронизации закладок.|
-|iCloudBlockNotes|Логический|Указывает, следует ли блокировать iCloud при синхронизации заметок.|
-|airDropBlocked|Boolean|Указывает, разрешить или не разрешить AirDrop.|
-|passwordBlockModification|Логический|Указывает, следует ли разрешить изменение пароля.|
+|iCloudBlockMail|Логическое|Указывает, следует ли блокировать синхронизацию почты в iCloud.|
+|iCloudBlockAddressBook|Логическое|Указывает, следует ли блокировать синхронизацию контактов в iCloud.|
+|iCloudBlockCalendar|Логическое|Указывает, следует ли блокировать синхронизацию календарей в iCloud.|
+|iCloudBlockReminders|Логическое|Указывает, следует ли блокировать синхронизацию напоминаний в iCloud.|
+|iCloudBlockBookmarks|Логическое|Указывает, следует ли блокировать синхронизацию закладок в iCloud.|
+|iCloudBlockNotes|Логическое|Указывает, следует ли блокировать синхронизацию заметок в iCloud.|
+|airDropBlocked|Boolean|Указывает, следует ли разрешить AirDrop.|
+|passwordBlockModification|Логическое|Указывает, следует ли разрешить изменение секретного кода.|
 |passwordBlockFingerprintUnlock|Boolean|Указывает, следует ли запретить разблокировку с помощью отпечатка пальца.|
-|passwordBlockAutoFill|Логический|Указывает, следует ли блокировать функцию AutoFill Passwords.|
-|passwordBlockProximityRequests|Логический|Указывает, следует ли блокировать запрашивающие пароли с близлежащих устройств.|
-|passwordBlockAirDropSharing|Логический|Указывает, следует ли блокировать совместное использование паролей с помощью функции паролей AirDrop.|
-|softwareUpdatesEnforcedDelayInDays|Int32|Задает время, за которое будет отламывно обновление программного обеспечения для контролируемого устройства. Допустимые значения: от 0 до 90.|
-|updateDelayPolicy|[macOSSoftwareUpdateDelayPolicy](../resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md)|Определяет, откладывать ли обновления ОС и/или приложений для macOS. Возможные значения: `none`, `delayOSUpdateVisibility`, `delayAppUpdateVisibility`, `unknownFutureValue`, `delayMajorOsUpdateVisibility`.|
-|contentCachingBlocked|Логический|Указывает, следует ли разрешить кэшинг контента.|
+|passwordBlockAutoFill|Логическое|Указывает, следует ли блокировать функцию автозаполнения паролей.|
+|passwordBlockProximityRequests|Логическое|Указывает, следует ли блокировать запрос паролей с ближайших устройств.|
+|passwordBlockAirDropSharing|Логическое|Указывает, следует ли блокировать общий доступ к паролям с помощью функции паролей AirDrop.|
+|softwareUpdatesEnforcedDelayInDays|Int32|Задает количество дней, в течение которых будет выполняться отладка обновления программного обеспечения для защищенного устройства. Допустимые значения: от 0 до 90.|
+|updateDelayPolicy|[macOSSoftwareUpdateDelayPolicy](../resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md)|Определяет, следует ли отложить обновления ОС и (или) приложений для macOS. Возможные значения: `none`, `delayOSUpdateVisibility`, `delayAppUpdateVisibility`, `unknownFutureValue`, `delayMajorOsUpdateVisibility`.|
+|contentCachingBlocked|Логическое|Указывает, следует ли разрешить кэширование содержимого.|
 |iCloudBlockPhotoLibrary|Boolean|Указывает, следует ли заблокировать медиатеку iCloud.|
 |screenCaptureBlocked|Boolean|Указывает, следует ли запретить пользователю делать снимки экрана.|
-|classroomAppBlockRemoteScreenObservation|Boolean|Указывает, следует ли разрешить удаленное наблюдение экрана в приложении Classroom. Требуется регистрация MDM через менеджера школы Apple или Apple Business Manager.|
-|classroomAppForceUnpromptedScreenObservation|Boolean|Указывает, следует ли автоматически давать преподавателю управляемого курса в приложении Classroom разрешение на просмотр экрана учащегося без запроса. Требуется регистрация MDM через менеджера школы Apple или Apple Business Manager.|
-|classroomForceAutomaticallyJoinClasses|Логический|Указывает, следует ли автоматически давать разрешения на запросы преподавателя без запроса учащегося. Требуется регистрация MDM через менеджера школы Apple или Apple Business Manager.|
-|classroomForceRequestPermissionToLeaveClasses|Логический|Указывает, потребуется ли учащемуся, зарегистрированным на неугодном курсе через Класс, запрашивать разрешения у преподавателя при попытке покинуть курс. Требуется регистрация MDM через менеджера школы Apple или Apple Business Manager.|
-|classroomForceUnpromptedAppAndDeviceLock|Логический|Указывает, следует ли разрешить преподавателю заблокировать приложения или устройство без запроса учащегося. Требуется регистрация MDM через менеджера школы Apple или Apple Business Manager.|
-|iCloudBlockActivityContinuation|Boolean|Указывает, следует ли блокировать пользователю продолжение работы, которую они начали на устройстве MacOS на другом устройстве iOS или MacOS (MacOS 10.15 или более поздней).|
-|privacyAccessControls|[коллекция macOSPrivacyAccessControlItem](../resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md)|Список элементов управления политиками конфиденциальности. Эта коллекция может содержать не более 10 000 элементов.|
-|addingGameCenterFriendsBlocked|Логический|Да, не позволяет пользователям добавлять друзей в Game Center. Доступно для устройств с macOS-версиями 10.13 и более поздней версии.|
-|gameCenterBlocked|Boolean|Да, отключает центр игры, и значок Центра игры удаляется с домашнего экрана. Доступно для устройств с macOS-версиями 10.13 и более поздней версии.|
-|multiplayerGamingBlocked|Логический|TRUE предотвращает многопользовательские игры при использовании Game Center. FALSE позволяет многопользовательские игры при использовании Game Center. Доступно для устройств с macOS-версиями 10.13 и более поздней версии.|
-|wallpaperModificationBlocked|Логический|TRUE не позволяет изменить обои. FALSE позволяет изменить обои. Доступно для устройств с macOS-версиями 10.13 и более поздней версии.|
-|eraseContentAndSettingsBlocked|Логический|TRUE отключает параметр сброса на контролируемых устройствах. FALSE включает параметр сброса на контролируемых устройствах. Доступно для устройств с macOS-версиями 12.0 и более поздней версии.|
-|softwareUpdateMajorOSDeferredInstallDelayInDays|Int32|Укажите количество дней (1-90) для задержки видимости основных обновлений программного обеспечения ОС. Доступно для устройств с macOS-версиями 11.3 и более поздней версии. Допустимые значения: от 0 до 90.|
-|softwareUpdateMinorOSDeferredInstallDelayInDays|Int32|Укажите количество дней (1-90) для задержки видимости незначительных обновлений программного обеспечения ОС. Доступно для устройств с macOS-версиями 11.3 и более поздней версии. Допустимые значения: от 0 до 90.|
-|softwareUpdateNonOSDeferredInstallDelayInDays|Int32|Укажите количество дней (1-90) для задержки видимости обновлений программного обеспечения без ОС. Доступно для устройств с macOS-версиями 11.3 и более поздней версии. Допустимые значения: от 0 до 90.|
-|touchIdTimeoutInHours|Int32|Максимальное время, после которого пользователь должен ввести пароль, чтобы разблокировать устройство, а не использовать Touch ID. Доступно для устройств с macOS 12 и более поздней. Допустимые значения от 0 до 2147483647|
-|iCloudPrivateRelayBlocked|Логический|Частный ретранслятор iCloud — это служба iCloud+, которая не позволяет сетям и серверам следить за деятельностью человека через Интернет. Блокируя частную ретранслятор iCloud, Apple не будет шифровать трафик, покидая устройство. Доступно для устройств с macOS 12 и более поздней.|
-|iCloudDesktopAndDocumentsBlocked|Логический|При TRUE синхронизация облачного рабочего стола и документов блокируется. При FALSE допускается синхронизация облачного рабочего стола и документов. Доступно для устройств с macOS 10.12.4 и более поздней.|
+|classroomAppBlockRemoteScreenObservation|Boolean|Указывает, следует ли разрешить удаленное наблюдение за экранами в приложении Classroom. Требуется регистрация MDM через Apple School Manager или Apple Business Manager.|
+|classroomAppForceUnpromptedScreenObservation|Boolean|Указывает, следует ли автоматически предоставлять преподавателю управляемого курса в приложении Classroom разрешение на просмотр экрана учащегося без запроса. Требуется регистрация MDM через Apple School Manager или Apple Business Manager.|
+|classroomForceAutomaticallyJoinClasses|Логическое|Указывает, следует ли автоматически предоставлять разрешения на запросы преподавателя без запроса учащегося. Требуется регистрация MDM через Apple School Manager или Apple Business Manager.|
+|classroomForceRequestPermissionToLeaveClasses|Логическое|Указывает, должен ли учащийся, зарегистрированный в неуправляемом курсе через Classroom, запрашивать разрешение у преподавателя при попытке покинуть курс. Требуется регистрация MDM через Apple School Manager или Apple Business Manager.|
+|classroomForceUnpromptedAppAndDeviceLock|Логическое|Указывает, следует ли разрешить преподавателю блокировать приложения или устройство без запроса учащегося. Требуется регистрация MDM через Apple School Manager или Apple Business Manager.|
+|iCloudBlockActivityContinuation|Boolean|Указывает, следует ли запретить пользователю продолжать работу, запущенную на устройстве MacOS на другом устройстве iOS или MacOS (MacOS 10.15 или более поздней версии).|
+|privacyAccessControls|[Коллекция macOSPrivacyAccessControlItem](../resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md)|Список элементов управления политикой предпочтений конфиденциальности. Эта коллекция может содержать не более 10 000 элементов.|
+|addingGameCenterFriendsBlocked|Логическое|Да, пользователи не могут добавлять друзей в Game Center. Доступно для устройств под управлением macOS версии 10.13 и более поздних.|
+|gameCenterBlocked|Boolean|Да отключает Game Center, а значок Game Center удаляется с начального экрана. Доступно для устройств под управлением macOS версии 10.13 и более поздних.|
+|multiplayerGamingBlocked|Логическое|ЗНАЧЕНИЕ TRUE предотвращает многопользовательские игры при использовании Game Center. FALSE разрешает многопользовательские игры при использовании Game Center. Доступно для устройств под управлением macOS версии 10.13 и более поздних.|
+|wallpaperModificationBlocked|Логическое|Значение TRUE предотвращает изменение фонового рисунка. Значение FALSE позволяет изменить фоновый рисунок. Доступно для устройств под управлением macOS версии 10.13 и более поздних.|
+|eraseContentAndSettingsBlocked|Логическое|ЗНАЧЕНИЕ TRUE отключает параметр сброса на защищенных устройствах. False включает параметр сброса на защищенных устройствах. Доступно для устройств под управлением macOS версии 12.0 и более поздних.|
+|softwareUpdateMajorOSDeferredInstallDelayInDays|Int32|Укажите количество дней (от 1 до 90) для задержки видимости основных обновлений программного обеспечения ОС. Доступно для устройств под управлением macOS версии 11.3 и более поздних. Допустимые значения: от 0 до 90.|
+|softwareUpdateMinorOSDeferredInstallDelayInDays|Int32|Укажите количество дней (1–90) для задержки видимости дополнительных обновлений программного обеспечения ОС. Доступно для устройств под управлением macOS версии 11.3 и более поздних. Допустимые значения: от 0 до 90.|
+|softwareUpdateNonOSDeferredInstallDelayInDays|Int32|Укажите количество дней (от 1 до 90) для задержки видимости обновлений программного обеспечения, отличных от ОС. Доступно для устройств под управлением macOS версии 11.3 и более поздних. Допустимые значения: от 0 до 90.|
+|touchIdTimeoutInHours|Int32|Максимальное время, по истечении которого пользователь должен ввести пароль для разблокировки устройства вместо использования touch ID. Доступно для устройств под управлением macOS 12 и более поздних версий. Допустимые значения от 0 до 2147483647|
+|iCloudPrivateRelayBlocked|Логическое|Частный ретранслятор iCloud — это служба iCloud+, которая запрещает сетям и серверам наблюдение за действиями пользователя в Интернете. Блокируя частный ретранслятор iCloud, Apple не шифрует трафик, исходящий с устройства. Доступно для устройств под управлением macOS 12 и более поздних версий.|
+|iCloudDesktopAndDocumentsBlocked|Логическое|При значении TRUE синхронизация облачных рабочих столов и документов блокируется. При значении FALSE синхронизация облачного рабочего стола и документов разрешена. Доступно для устройств под управлением macOS 10.12.4 и более поздних версий.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|groupAssignments|[коллекция deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройства пользователем. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств для пользователей. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Сводка данных о состоянии настройки конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|groupAssignments|[Коллекция deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройства по пользователю. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств для пользователей. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Сводка данных о состоянии настройки конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

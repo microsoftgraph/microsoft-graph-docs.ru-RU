@@ -1,26 +1,26 @@
 ---
-title: Список win32LobApps
+title: Перечисление win32LobApps
 description: Список свойств и связей объектов win32LobApp.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7d4acad20ea9cd27ed907b55df50c67241c3cb4
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 87f4cbd912ebcc7062a06a1601ef7689a3e507e0
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60486798"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671299"
 ---
-# <a name="list-win32lobapps"></a>Список win32LobApps
+# <a name="list-win32lobapps"></a>Перечисление win32LobApps
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [win32LobApp.](../resources/intune-apps-win32lobapp.md)
+Список свойств и связей объектов [win32LobApp](../resources/intune-apps-win32lobapp.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -50,7 +50,7 @@ GET /deviceAppManagement/mobileApps
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [win32LobApp](../resources/intune-apps-win32lobapp.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [win32LobApp](../resources/intune-apps-win32lobapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4104
+Content-Length: 4144
 
 {
   "value": [
@@ -181,11 +181,13 @@ Content-Length: 4104
       },
       "setupFilePath": "Setup File Path value",
       "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
-      "displayVersion": "Display Version value"
+      "displayVersion": "Display Version value",
+      "allowAvailableUninstall": true
     }
   ]
 }
 ```
+
 
 
 

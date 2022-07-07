@@ -1,22 +1,22 @@
 ---
-title: тип ресурса deviceManagementConfigurationSetting
+title: Тип ресурса deviceManagementConfigurationSetting
 description: Настройка экземпляра в политике
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d46f4c195fed3080d7f21f50d21700aec6ecc151
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: faad74a1c77886390cc52690ae8e4fd55af08a24
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336624"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66667539"
 ---
-# <a name="devicemanagementconfigurationsetting-resource-type"></a>тип ресурса deviceManagementConfigurationSetting
+# <a name="devicemanagementconfigurationsetting-resource-type"></a>Тип ресурса deviceManagementConfigurationSetting
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,22 +25,22 @@ ms.locfileid: "61336624"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список deviceManagementConfigurationSettings](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-list.md)|[коллекция deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|Список свойств и связей [объектов deviceManagementConfigurationSetting.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|
-|[Get deviceManagementConfigurationSetting](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-get.md)|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|Чтение свойств и связей [объекта deviceManagementConfigurationSetting.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|
-|[Создание deviceManagementConfigurationSetting](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-create.md)|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|Создайте новый [объект deviceManagementConfigurationSetting.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|
-|[Удаление deviceManagementConfigurationSetting](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-delete.md)|Нет|Удаляет [устройствоManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md).|
-|[Обновление deviceManagementConfigurationSetting](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-update.md)|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|Обновление свойств объекта [deviceManagementConfigurationSetting.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|
+|[Перечисление deviceManagementConfigurationSettings](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-list.md)|[Коллекция deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|Список свойств и связей объектов [deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) .|
+|[Получение объекта deviceManagementConfigurationSetting](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-get.md)|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|Чтение свойств и связей объекта [deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) .|
+|[Создание объекта deviceManagementConfigurationSetting](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-create.md)|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|Создайте объект [deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) .|
+|[Удаление объекта deviceManagementConfigurationSetting](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-delete.md)|Нет|Удаляет [объект deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md).|
+|[Обновление объекта deviceManagementConfigurationSetting](../api/intune-deviceconfigv2-devicemanagementconfigurationsetting-update.md)|[deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)|Обновление свойств объекта [deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ этого параметра в политике, содержа которой он содержится. Автоматически созданный.|
-|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|Настройка экземпляра|
+|id|String|Ключ этого параметра в политике, которая его содержит. Создается автоматически.|
+|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|Настройка экземпляра|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|settingDefinitions|[коллекция deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|Список связанных определений параметров. Это свойство доступно только для чтения.|
+|settingDefinitions|[Коллекция deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|Список связанных определений параметров. Это свойство доступно только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

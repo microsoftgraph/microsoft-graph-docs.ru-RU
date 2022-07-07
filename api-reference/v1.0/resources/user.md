@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 79f4fbd1ea4852f0a90150d45eb00be7cceb4750
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 017624069a4487f7145fbc742055ade457fc93e6
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556166"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645233"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -80,8 +80,8 @@ ms.locfileid: "66556166"
 | [Список дочерних элементов](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Возвращает коллекцию DriveItems в дочерних элементах ресурса DriveItem. |
 | **Группы** |  |  |
 | [Перечисление объектов joinedTeams](../api/user-list-joinedteams.md) | Коллекция [team](team.md) | Получение команд Microsoft Teams, непосредственным участником которых является пользователь, из свойства навигации joinedTeams. |
-| [Список memberOf](../api/user-list-memberof.md) | Коллекция [directoryObject](directoryobject.md) | Получение групп и ролей каталога, непосредственным участником которых является пользователь, из свойства навигации memberOf. |
-| [Перечисление транзитивных свойств memberOf](../api/user-list-transitivememberof.md) | Коллекция [directoryObject](directoryobject.md) | Перечисление групп и ролей каталога, участником которых является пользователь. Эта операция является транзитивной и включает группы, в которых пользователь является вложенным элементом. |
+| [Список memberOf](../api/user-list-memberof.md) | Коллекция [directoryObject](directoryobject.md) | Получение групп, ролей каталога и административных единиц, непосредственным участником которых является пользователь. Эта операция не является транзитивной. |
+| [Перечисление transitiveMemberOf](../api/user-list-transitivememberof.md) | Коллекция [directoryObject](directoryobject.md) | Получение групп, ролей каталогов и административных единиц, участником которых является пользователь (посредством прямого или транзитивного участия). |
 | **Почта** |  |  |
 | [Создание объекта inferenceClassificationOverride](../api/inferenceclassification-post-overrides.md) | Создание переопределения сортировки почты для отправителя, определенного SMTP-адресом. |  |
 | [Создание объекта mailFolder](../api/user-post-mailfolders.md) | [mailFolder](mailfolder.md) | Создание объекта MailFolder путем добавления в коллекцию папок почты. |
@@ -181,7 +181,7 @@ ms.locfileid: "66556166"
 |mailNickname|String|Псевдоним электронной почты пользователя. Это свойство должно быть указано при создании пользователя. Максимальная длина: 64 символа.<br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`).|
 |mobilePhone|String|Основной сотовый телефон пользователя. "Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. Максимальная длина: 64 символа. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
 |mySite|String|URL-адрес личного сайта пользователя. <br><br>Возвращается только с помощью оператора `$select`.|
-|officeLocation|String|Расположение офиса на месте работы пользователя. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям).|
+|officeLocation|String|Расположение офиса на месте работы пользователя. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`).|
 |onPremisesDistinguishedName|String| Содержит `distinguished name` или `DN` локальной службы Active Directory. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. <br><br>Возвращается только с помощью оператора `$select`. |
 |onPremisesDomainName|String| Содержит локальное `domainFQDN` (другое название — dnsDomainName), синхронизированное из локального каталога. Это свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения.<br><br>Возвращается только с помощью оператора `$select`.|
 |onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|Содержит extensionAttributes1-15 для пользователя. Эти атрибуты расширения также называются настраиваемыми атрибутами 1–15 Exchange. <br><li>Для пользователей **onPremisesSyncEnabled** исходным центром управления для этого набора свойств является локальная среда, и он предназначен только для чтения. </li><li>Для исключительно облачных пользователей (где значением для **onPremisesSyncEnabled** является `false`) эти свойства можно настроить при создании или обновлении объекта пользователя.  </li><li>Для исключительно облачных пользователей, ранее синхронизированных из локальной службы Active Directory, эти свойства предназначены только для чтения в Microsoft Graph, но могут быть полностью управляемыми с помощью Центра администрирования Exchange или модуля Exchange Online версии 2 в Windows PowerShell.</li><br> Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `not`, `in`). |
@@ -304,6 +304,7 @@ ms.locfileid: "66556166"
 |planner|[plannerUser](planneruser.md)| Точка входа в ресурс Планировщик, который может существовать для пользователя. Только для чтения.|
 |registeredDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, зарегистрированные для пользователя. Только для чтения. Допускается значение null. Поддержка `$expand`.|
 |todo|[todo](todo.md)|Представляет службы To Do, доступные пользователю. |
+|transitiveMemberOf| Коллекция [directoryObject](directoryobject.md) |  Группы, включая вложенные группы, и роли каталога, участником которых является пользователь. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

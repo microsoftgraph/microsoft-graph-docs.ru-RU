@@ -1,39 +1,39 @@
 ---
-title: тип ресурса conditionalAccessApplications
-description: Представляет приложения и действия пользователей, включенные и исключенные из области политики.
+title: Тип ресурса conditionalAccessApplications
+description: Представляет приложения и действия пользователей, включенные в область политики и исключаемые из нее.
 ms.localizationpriority: medium
 author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a25b574968fcad4adcbe3e53c0b800eb0ebf4a71
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: b7c92b9eab03adb284fdde95794c45fc4f7be19d
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161923"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668078"
 ---
-# <a name="conditionalaccessapplications-resource-type"></a>тип ресурса conditionalAccessApplications
+# <a name="conditionalaccessapplications-resource-type"></a>Тип ресурса conditionalAccessApplications
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет приложения и действия пользователей, включенные в политику и исключенные из нее.
+Представляет приложения и действия пользователей, включенные в политику условного доступа и исключенные из нее.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| includeApplications | Коллекция строк | Список ID приложений, к который применяется политика, если явно не исключено (в исключенииApplications). Также можно установить `All` . |
-| excludeApplications | Коллекция строк | Список ID приложений явно исключен из политики. |
-| includeUserActions | Коллекция строк | Действия пользователя, которые необходимо включить. Поддерживаемые значения `urn:user:registersecurityinfo` и `urn:user:registerdevice` |
-| includeAuthenticationContextClassReferences | Коллекция строк | Ссылки на класс контекста проверки подлинности включаются. Поддерживаемые значения `c1` проходят `c25` . |
+| includeApplications | Коллекция String | Допустимые значения: <li> Список идентификаторов клиентов (**appId**), к которым применяется политика, если явно не исключен (в **excludeApplications**) <li> `All` <li> `Office365`- Список приложений, включенных в `Office365`список, см. в разделе целевых приложений условного доступа[: Office 365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) |
+| excludeApplications | Коллекция String | Допустимые значения: <li> Список идентификаторов клиентов (**appId**), явно исключенных из политики.<li> `Office365`- Список приложений, включенных в `Office365`список, см. в разделе целевых приложений условного доступа[: Office 365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) |
+| includeUserActions | Коллекция объектов string | Включаемые действия пользователя. Поддерживаются следующие значения:`urn:user:registersecurityinfo``urn:user:registerdevice` |
+| includeAuthenticationContextClassReferences | Коллекция строк | Ссылки на класс контекста проверки подлинности включают в себя. Поддерживаемые значения выполняются `c1` через `c25`. |
 
 ## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

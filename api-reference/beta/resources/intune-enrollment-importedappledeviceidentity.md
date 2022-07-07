@@ -1,52 +1,52 @@
 ---
-title: тип ресурсов importedAppleDeviceIdentity
-description: Ресурс importedAppleDeviceIdentity представляет собой импортируемый идентификатор устройства устройства Apple.
+title: Тип ресурса importedAppleDeviceIdentity
+description: Ресурс importedAppleDeviceIdentity представляет удостоверение импортированного устройства устройства Apple.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f0e66ebabdfd4466d187778313644c83e5dfb542
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5355f273e2e6535eb877d72efc7e1718fe04e87e
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59141076"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66669065"
 ---
-# <a name="importedappledeviceidentity-resource-type"></a>тип ресурсов importedAppleDeviceIdentity
+# <a name="importedappledeviceidentity-resource-type"></a>Тип ресурса importedAppleDeviceIdentity
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ресурс importedAppleDeviceIdentity представляет собой импортируемый идентификатор устройства устройства Apple.
+Ресурс importedAppleDeviceIdentity представляет удостоверение импортированного устройства устройства Apple.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список импортируемыхAppleDeviceIdentities](../api/intune-enrollment-importedappledeviceidentity-list.md)|[importedAppleDeviceIdentity collection](../resources/intune-enrollment-importedappledeviceidentity.md)|Список свойств и связей импортируемых [объектовAppleDeviceIdentity.](../resources/intune-enrollment-importedappledeviceidentity.md)|
-|[Get importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-get.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|Чтение свойств и связей объекта [importedAppleDeviceIdentity.](../resources/intune-enrollment-importedappledeviceidentity.md)|
-|[Создание объекта importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-create.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|Создание нового [объекта importedAppleDeviceIdentity.](../resources/intune-enrollment-importedappledeviceidentity.md)|
-|[Удаление импортируемого объектаAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-delete.md)|Нет|Удаляет [импортируемую структуруAppleDeviceId.](../resources/intune-enrollment-importedappledeviceidentity.md)|
-|[Обновление импортируемогоAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-update.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|Обновление свойств объекта [importedAppleDeviceIdentity.](../resources/intune-enrollment-importedappledeviceidentity.md)|
-|[Действие importAppleDeviceIdentityList](../api/intune-enrollment-importedappledeviceidentity-importappledeviceidentitylist.md)|[importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) collection|Н/Д|
+|[Перечисление importedAppleDeviceIdentities](../api/intune-enrollment-importedappledeviceidentity-list.md)|[Коллекция importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|Список свойств и связей объектов [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) .|
+|[Получение importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-get.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|Чтение свойств и связей объекта [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) .|
+|[Создание объекта importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-create.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|Создайте объект [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) .|
+|[Удаление importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-delete.md)|Нет|Удаляет объект [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md).|
+|[Обновление importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-update.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|Обновление свойств объекта [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) .|
+|[Действие importAppleDeviceIdentityList](../api/intune-enrollment-importedappledeviceidentity-importappledeviceidentitylist.md)|[Коллекция importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|serialNumber|String|Серийный номер устройства|
-|requestedEnrollmentProfileId|String|Администратор ID профиля регистрации намерен примениться к устройству во время следующей регистрации|
-|requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|Профиль времени регистрации был назначен устройству|
-|isSupervised|Boolean|Указывает, контролируется ли устройство Apple. Дополнительные сведения можно получить по: https://support.apple.com/en-us/HT202837|
+|serialNumber|String|Серийный номер устройства.|
+|requestedEnrollmentProfileId|String|Администратор идентификатора профиля регистрации планирует применить к устройству во время следующей регистрации.|
+|requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|Профиль регистрации времени, назначенный устройству|
+|isSupervised|Boolean|Указывает, защищено ли устройство Apple. Дополнительные сведения см. по адресу: https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md);|Источник обнаружения устройств Apple. Возможные значения: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
 |isDeleted|Логическое|Указывает, удалено ли устройство из Apple Business Manager|
-|createdDateTime|DateTimeOffset|Время создания даты устройства|
-|lastContactedDateTime|DateTimeOffset|Время последней контактной даты устройства|
+|createdDateTime|DateTimeOffset|Дата создания устройства|
+|lastContactedDateTime|DateTimeOffset|Дата последнего контакта устройства|
 |description|String|Описание устройства|
-|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|платформа|[платформа](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|платформа|[Платформы](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -76,6 +76,7 @@ ms.locfileid: "59141076"
   "platform": "String"
 }
 ```
+
 
 
 

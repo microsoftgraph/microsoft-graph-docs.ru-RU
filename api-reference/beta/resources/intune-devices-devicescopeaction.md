@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9b619fb1cef5990db23f118296d6688e33f5cf74
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: 5ef4ba362e5ca28f7381809e8d3ffff2b119b9cf
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65858724"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670536"
 ---
 # <a name="devicescopeaction-enum-type"></a>Тип перечисления deviceScopeAction
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,3 +27,6 @@ ms.locfileid: "65858724"
 |:---|:---|:---|
 |stop|0|Остановка вычислений данных метрик|
 |start|1|Начало вычисления данных метрик|
+
+
+

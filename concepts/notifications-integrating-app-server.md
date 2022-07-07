@@ -1,17 +1,20 @@
 ---
-title: Создание и отправка уведомления из службы приложений
-description: 'Настройте свою службу приложений для отправки уведомлений, ориентированных на пользователя, в разные клиенты через Microsoft Graph. '
+title: Создание и отправка уведомления из службы приложений (устарело)
+description: Вы можете создать и отправить уведомление пользователю с помощью API Microsoft Graph (устарело).
 ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: 24cac26e548d5f05724ee38559f6ef3bb4801277
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 302375137bb2408bcd6be5ad737cf34cc7d6ee70
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062322"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447137"
 ---
-# <a name="create-and-send-a-notification-from-your-app-service"></a>Создание и отправка уведомления из службы приложений
+# <a name="create-and-send-a-notification-from-your-app-service-deprecated"></a>Создание и отправка уведомления из службы приложений (устарело)
+
+> [!IMPORTANT]
+> API уведомлений Microsoft Graph не рекомендуется использовать, Он прекратил возвращать данные в январе 2022 г. Дополнительные сведения об уведомлениях см. в [Центрах уведомлений Microsoft Azure](/azure/notification-hubs). Дополнительные сведения см. в записи блога [Прекращение поддержки API уведомлений Microsoft Graph (бета-версия)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 Вы можете создавать и отправлять уведомления пользователю с помощью API Microsoft Graph. Уведомление хранится в хранилище службы уведомлений Microsoft Graph и отправляется всем клиентам приложений на всех устройствах, с которых целевой пользователь выполнил вход в систему. 
 

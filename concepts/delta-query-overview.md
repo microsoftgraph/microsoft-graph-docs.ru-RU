@@ -1,15 +1,15 @@
 ---
 title: Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 description: Используйте дельта-запрос, чтобы приложения могли обнаруживать вновь созданные, обновленные или удаленные объекты без выполнения полного чтения целевого ресурса при каждом запросе.
-author: FaithOmbongi
+author: Jumaodhiss
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: c3e65f9aaf8c70f323c7d3b9c99fae1a826348d0
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 844b86023c216b215530e1d0fc685185c73179d4
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556250"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671390"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 2414f261e277c10ddff8fe1ab1aaa9228ff589c6
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 76c36db9bb078a679e729ef6e765c008d3ddcb00
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556257"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671411"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -100,6 +100,7 @@ ms.locfileid: "66556257"
 | publicClient | [publicClientApplication](publicclientapplication.md) | Указывает параметры для установленных клиентов, например классических или мобильных устройств. |
 | publisherDomain | String | Проверенный домен издателя для приложения. Только для чтения. Дополнительные сведения см. в статье [Практическое руководство. Настройка домена издателя приложения](/azure/active-directory/develop/howto-configure-publisher-domain). Поддерживает `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`).|
 | requiredResourceAccess |Коллекция [requiredResourceAccess](requiredresourceaccess.md)| Указывает ресурсы, к которым приложению необходимо получить доступ. В этом свойстве также указывается набор делегированных разрешений и ролей приложения, необходимых для каждого из этих ресурсов. Эта настройка доступа к необходимым ресурсам определяет порядок предоставления согласия. Можно настроить не более 50 служб ресурсов (API). С середины октября 2021 г. общее количество необходимых разрешений не должно превышать 400. Значение null не допускается. <br><br>Поддерживает `$filter` (`eq`, `not`, `ge`, `le`).|
+| samlMetadataUrl | Строка | URL-адрес, по которому служба предоставляет метаданные SAML для федерации. Это свойство допустимо только для приложений с одним клиентом. Допускается значение null. |
 | serviceManagementReference | Строка | Ссылки на контактные данные приложения или службы из базы данных управления службами или активами. Возможность обнуления. |
 | signInAudience | String | Указывает, учетные записи Майкрософт, которые поддерживаются для текущего приложения. Возможные значения: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount` (используется по умолчанию) и `PersonalMicrosoftAccount`. Дополнительные сведения см. в [таблице ниже](#signinaudience-values). <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`).|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Указывает параметры для одностраничного приложения, в том числе URL-адреса выхода и URI перенаправления для кодов авторизации и маркеров доступа. |

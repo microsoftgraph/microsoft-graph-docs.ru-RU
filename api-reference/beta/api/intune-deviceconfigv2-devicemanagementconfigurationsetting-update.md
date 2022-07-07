@@ -1,26 +1,26 @@
 ---
-title: Обновление deviceManagementConfigurationSetting
+title: Обновление объекта deviceManagementConfigurationSetting
 description: Обновление свойств объекта deviceManagementConfigurationSetting.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c84c50a4da63cf92360ccbb0fee7d9db3d6764b
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: d6f710798ab3cf077c2db4e853ae76b2b2c593d1
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61334160"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670276"
 ---
-# <a name="update-devicemanagementconfigurationsetting"></a>Обновление deviceManagementConfigurationSetting
+# <a name="update-devicemanagementconfigurationsetting"></a>Обновление объекта deviceManagementConfigurationSetting
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [deviceManagementConfigurationSetting.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)
+Обновление свойств объекта [deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "61334160"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -48,19 +48,19 @@ PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPoli
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для [объекта deviceManagementConfigurationSetting.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)
+В теле запроса добавьте представление объекта [deviceManagementConfigurationSetting в формате](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) JSON.
 
-В следующей таблице показаны свойства, необходимые при создании [устройстваManagementConfigurationSetting.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)
+В следующей таблице показаны свойства, необходимые при создании [объекта deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ этого параметра в политике, содержа которой он содержится. Автоматически созданный.|
-|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|Настройка экземпляра|
+|id|String|Ключ этого параметра в политике, которая его содержит. Создается автоматически.|
+|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|Настройка экземпляра|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и обновленный `200 OK` [объект deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный объект [deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 

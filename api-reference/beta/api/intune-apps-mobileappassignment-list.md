@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 388a72716c4db71622181016b3c4c7aa5cc8a7e2
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 78478fb8ea0d7b721f67702cbf2f90c0f727195f
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60491159"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668246"
 ---
 # <a name="list-mobileappassignments"></a>Перечисление объектов mobileAppAssignment
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 763
+Content-Length: 678
 
 {
   "value": [
@@ -79,10 +79,8 @@ Content-Length: 763
         "deviceAndAppManagementAssignmentFilterType": "include"
       },
       "settings": {
-        "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-        "vpnConfigurationId": "Vpn Configuration Id value",
-        "uninstallOnDeviceRemoval": true,
-        "isRemovable": true
+        "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
+        "useDeviceContext": true
       },
       "source": "policySets",
       "sourceId": "Source Id value"
@@ -90,6 +88,7 @@ Content-Length: 763
   ]
 }
 ```
+
 
 
 

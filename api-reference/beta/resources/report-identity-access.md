@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: identity-and-access-reports
 author: besiler
 doc_type: conceptualPageType
-ms.openlocfilehash: bcaef9dcad8d86f162f1a7e7a40f006c1d6d8ac7
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 59d61709134b2f36f8e99a002ea63e6ee74457cc
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696255"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66669429"
 ---
 # <a name="identity-and-access-reports-api-overview"></a>Обзор API отчетов об удостоверениях и доступе
 
@@ -32,15 +32,15 @@ Microsoft Graph позволяет управлять доступом к рес
 
 ### <a name="ad-fs-application-activity"></a>Активность приложений AD FS
 
-В отчете об активности приложений AD FS содержатся сведения о том, как проверяющая сторона настроена с помощью служб федерации Active Directory (AD FS), обобщенные сведения об использовании, а также о том, можно ли перенести настройку проверяющей стороны в Azure Active Directory. Дополнительные сведения см. в ресурсе [relyingPartyDetailedSummary](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta).
+В отчете об активности приложений AD FS содержатся сведения о том, как проверяющая сторона настроена с помощью служб федерации Active Directory (AD FS), обобщенные сведения об использовании, а также о том, можно ли перенести настройку проверяющей стороны в Azure Active Directory. Дополнительные сведения см. в ресурсе [relyingPartyDetailedSummary](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="application-sign-in"></a>Вход в приложение
 
-Оцените использование входов в приложения в своем клиенте с помощью сводного отчета или отчета, содержащего подробные сведения о входах, такие как количество входов и возникали ли какие-либо ошибки при входе. Дополнительные сведения см. в ресурсе [applicationSignInSummary](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta).
+Оцените использование входов в приложения в своем клиенте с помощью сводного отчета или отчета, содержащего подробные сведения о входах, такие как количество входов и возникали ли какие-либо ошибки при входе. Дополнительные сведения см. в ресурсе [applicationSignInSummary](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="registration-and-usage"></a>Регистрация и использование
 
-Узнайте подробнее, как пользователи в вашей организации используют функции Azure AD, такие как самостоятельный сброс пароля и многофакторная проверка подлинности (MFA). Вы можете определить, какие методы проверки подлинности более успешны в вашей организации, с какими типами ошибок сталкиваются пользователи и какую кампанию нужно провести, чтобы помочь пользователям с внедрением самостоятельного сброса паролей и MFA. Дополнительные сведения см. в статье [API отчетов об использовании методов проверки подлинности](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta).
+Узнайте подробнее, как пользователи в вашей организации используют функции Azure AD, такие как самостоятельный сброс пароля и многофакторная проверка подлинности (MFA). Вы можете определить, какие методы проверки подлинности более успешны в вашей организации, с какими типами ошибок сталкиваются пользователи и какую кампанию нужно провести, чтобы помочь пользователям с внедрением самостоятельного сброса паролей и MFA. Дополнительные сведения см. в статье [API отчетов об использовании методов проверки подлинности](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta&preserve-view=true).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

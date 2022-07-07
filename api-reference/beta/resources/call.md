@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b1b2dc2890686d61845223a517698096ef1d9a0a
-ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
+ms.openlocfilehash: 67480d67339dbe331abaf71d4a722e8d8b698c55
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65016817"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645475"
 ---
 # <a name="call-resource-type"></a>Тип ресурса call
 
@@ -87,7 +87,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) или [serviceHostedMediaConfig](servicehostedmediaconfig.md) | Конфигурация мультимедиа. Обязательные сведения для создания одноранговых вызовов или присоединения к собраниям.                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | Только для чтения. Состояние мультимедиа компонентов вызова. |
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Содержит возможности собрания. Только для чтения.                                                                                                       |
-| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) или [tokenMeetingInfo](tokenmeetinginfo.md)             | Сведения о собрании. Обязательные сведения для сценариев собраний.                                                                                                              |
+| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md), [tokenMeetingInfo](tokenmeetinginfo.md) или [joinMeetingIdMeetingInfo](joinmeetingidmeetinginfo.md)            | Сведения о собрании. Обязательные сведения для сценариев собраний.                                                                                                              |
 |transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                         | Сведения расшифровки для вызова. Только для чтения.                           |
 myParticipantId     | String                                                                                                   | Только для чтения.                                                                                                                                                                        |
 | requestedModalities | Коллекция modality                                                                                      | Список запрошенных модальностей. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |

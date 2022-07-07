@@ -4,12 +4,12 @@ description: Выводит список API Graph майкрософт для I
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 5ee2bb66b6c90df86cf6b9a3136578986113128e
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: 4002720381bb7c98103efe80f6f08db7b11e3a4f
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65858431"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668785"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -81,6 +81,7 @@ ms.locfileid: "65858431"
 - [Сводка по выполнению скрипта работоспособности устройства](intune-devices-devicehealthscriptrunsummary.md)
 - [Строковый параметр скрипта работоспособности устройства](intune-devices-devicehealthscriptstringparameter.md)
 - [Расписание времени скрипта работоспособности устройства](intune-devices-devicehealthscripttimeschedule.md)
+- [Состояние лицензирования устройств](intune-devices-devicelicensingstatus.md)
 - [Запрос на сбор журналов устройств](intune-devices-devicelogcollectionrequest.md)
 - [Ответ на сбор журналов устройств](intune-devices-devicelogcollectionresponse.md)
 - [Тип шаблона коллекции журналов устройств](intune-devices-devicelogcollectiontemplatetype.md)
@@ -176,7 +177,6 @@ ms.locfileid: "65858431"
 - [Указанное состояние работоспособности партнера по управляемым устройствам](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [Удаленное действие с управляемым устройством](intune-devices-manageddeviceremoteaction.md)
 - [Состояние управляемого установщика](intune-devices-managedinstallerstatus.md)
-- [Тип агента управления](intune-devices-managementagenttype.md)
 - [Состояние управления](intune-devices-managementstate.md)
 - [Шаблон сообщения уведомления](intune-notification-notificationmessagetemplate.md)
 - [Параметры фирменной символики для шаблона уведомления](intune-notification-notificationtemplatebrandingoptions.md)
@@ -267,7 +267,7 @@ ms.locfileid: "65858431"
 - [Аналитика пользовательского интерфейса работает отовсюду с производительностью модели](intune-devices-userexperienceanalyticsworkfromanywheremodelperformance.md)
 - [Предложение гарантии](intune-devices-warrantyoffer.md)
 - [Тип гарантии](intune-devices-warrantytype.md)
-- [Windows продукта Защитника](intune-devices-windowsdefenderproductstatus.md)
+- [Состояние продукта Защитника Windows](intune-devices-windowsdefenderproductstatus.md)
 - [Результат действия "Проверка с помощью Защитника Windows"](intune-devices-windowsdefenderscanactionresult.md)
 - [Учетная запись устройства с Windows](intune-devices-windowsdeviceaccount.md)
 - [Учетная запись AD для устройства с Windows](intune-devices-windowsdeviceadaccount.md)
@@ -282,7 +282,7 @@ ms.locfileid: "65858431"
 - [Счетчик имени вредоносной программы Windows](intune-devices-windowsmalwarenamecount.md)
 - [Описание вредоносных программ для Windows](intune-devices-windowsmalwareoverview.md)
 - [Серьезность вредоносной программы для Windows](intune-devices-windowsmalwareseverity.md)
-- [Windows серьезности вредоносных программ](intune-devices-windowsmalwareseveritycount.md)
+- [Число серьезности вредоносных программ Windows](intune-devices-windowsmalwareseveritycount.md)
 - [Состояние вредоносной программы для Windows](intune-devices-windowsmalwarestate.md)
 - [Счетчик состояния вредоносной программы для Windows](intune-devices-windowsmalwarestatecount.md)
 - [Состояние угрозы вредоносных программ Windows](intune-devices-windowsmalwarethreatstate.md)

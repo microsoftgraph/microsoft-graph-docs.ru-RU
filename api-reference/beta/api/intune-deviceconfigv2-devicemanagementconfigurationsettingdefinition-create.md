@@ -1,26 +1,26 @@
 ---
-title: Создание deviceManagementConfigurationSettingDefinition
-description: Создайте новый объект deviceManagementConfigurationSettingDefinition.
+title: Создание объекта deviceManagementConfigurationSettingDefinition
+description: Создайте объект deviceManagementConfigurationSettingDefinition.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 26ccec560c14207b7a607d053ee96e7013e8881e
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 327bcd224db9eae711cfff4110b7ff9001139efc
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61347944"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66669408"
 ---
-# <a name="create-devicemanagementconfigurationsettingdefinition"></a>Создание deviceManagementConfigurationSettingDefinition
+# <a name="create-devicemanagementconfigurationsettingdefinition"></a>Создание объекта deviceManagementConfigurationSettingDefinition
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создайте новый [объект deviceManagementConfigurationSettingDefinition.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)
+Создайте объект [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "61347944"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -51,36 +51,36 @@ POST /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurati
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для объекта deviceManagementConfigurationSettingDefinition.
+В теле запроса добавьте представление объекта deviceManagementConfigurationSettingDefinition в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании устройстваManagementConfigurationSettingDefinition.
+В следующей таблице показаны свойства, необходимые при создании объекта deviceManagementConfigurationSettingDefinition.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|применимость|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|Сведения о том, какие параметры устройства применимы к|
-|accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|Режим доступа к режиму чтения и записи параметра. Возможные значения: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.|
-|keywords|Коллекция String|Маркеры для поиска параметров на|
-|infoUrls|Коллекция String|Список ссылок, дополнительные сведения о параметре можно найти по адресу|
-|возникновение|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|Указывает, требуется ли параметр или нет.|
-|baseUri|Строка|Базовый путь CSP|
-|offsetUri|Строка|Смещение пути CSP из базы|
-|rootDefinitionId|Строка|Определение корневого параметра, если это параметр ребенка.|
-|categoryId|String|Указывает группу области, в которой параметр настроен в указанном поставщике служб конфигурации (CSP)|
-|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Параметр типа, например конфигурации и соответствия требованиям. Возможные значения: `none`, `configuration`, `compliance`.|
-|uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|Настройка представления типа управления в UX. Возможные значения: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.|
-|visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|Настройка области видимости для UX. Возможные значения: `none`, `settingsCatalog`, `template`.|
-|referredSettingInformationList|[коллекция deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md)|Список переданных сведений о параметрах.|
-|id|Строка|Идентификатор элемента|
+|Применимость|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|Сведения о том, какой параметр устройства применим к|
+|accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-shared-devicemanagementconfigurationsettingaccesstypes.md)|Режим доступа для чтения и записи параметра. Возможные значения: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.|
+|keywords|Коллекция объектов string|Токены, на которых выполняется поиск параметров|
+|infoUrls|Коллекция String|Список ссылок на дополнительные сведения о параметре можно найти по адресу|
+|Вхождение|[deviceManagementConfigurationSettingOccurrence](../resources/intune-shared-devicemanagementconfigurationsettingoccurrence.md)|Указывает, является ли параметр обязательным или нет.|
+|Baseuri|String|Базовый путь CSP|
+|offsetUri|String|Смещение пути CSP от базового|
+|rootDefinitionId|String|Определение корневого параметра, если параметр является дочерним.|
+|Categoryid|String|Указывает группу с областями, в которой настроен параметр в указанном поставщике служб конфигурации (CSP).|
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-shared-devicemanagementconfigurationsettingusage.md)|Тип параметра, например конфигурация и соответствие. Возможные значения: `none`, `configuration`, `compliance`.|
+|uxBehavior|[DeviceManagementConfigurationControlType](../resources/intune-shared-devicemanagementconfigurationcontroltype.md)|Задание представления типа элемента управления в пользовательском интерфейсе. Возможные значения: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.|
+|visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-shared-devicemanagementconfigurationsettingvisibility.md)|Настройка области видимости для пользовательского интерфейса. Возможные значения: `none`, `settingsCatalog`, `template`.|
+|referredSettingInformationList|[Коллекция deviceManagementConfigurationReferredSettingInformation](../resources/intune-shared-devicemanagementconfigurationreferredsettinginformation.md)|Список ссылаемой информации о параметрах.|
+|id|String|Идентификатор элемента|
 |description|String|Описание элемента|
-|helpText|Строка|Справка текста элемента|
+|Helptext|String|Текст справки элемента|
 |name|String|Имя элемента|
-|displayName|String|Отображение имени элемента|
+|displayName|String|Отображаемое имя элемента|
 |version|String|Версия элемента|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и `201 Created` [объект deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) в тексте ответа.
+В случае успешного выполнения `201 Created` этот метод возвращает код отклика и объект [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: efd2183589aae2330b48ebabe8e55482883cf4d6
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 9ecd517798f7eb868a283b834dfe9c1f79cdee6a
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555375"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645514"
 ---
 # <a name="create-onlinemeeting"></a>Создание объекта onlineMeeting
 
@@ -44,13 +44,13 @@ POST /users/{userId}/onlineMeetings
 ```
 
 > [!NOTE]
-> `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в статье [Политики доступа для приложений](/graph/cloud-communication-online-meeting-application-access-policy).
+>- `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в разделе [Разрешение приложениям доступ к собраниям по сети от имени пользователя](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя            | Описание                 |
 | :-------------- | :-------------------------- |
-| Авторизация   | Bearer {токен}. Обязательный.   |
+| Авторизация   | Bearer {token}. Обязательный.   |
 | Content-Type    | application/json. Обязательный. |
 | Принять-Язык | Язык. Необязательное.         |
 
@@ -71,6 +71,8 @@ POST /users/{userId}/onlineMeetings
 ### <a name="example-1-create-an-online-meeting-with-user-token"></a>Пример 1. Создание собрания по сети с помощью маркера пользователя
 
 #### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -115,6 +117,9 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -129,37 +134,42 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.onlineMeeting",
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f46-17cc-42e7-854-f03d6')/onlineMeetings/$entity",
   "audioConferencing": {
-    "tollNumber": "+12525634478",
-    "tollFreeNumber": "+18666390588",
-    "ConferenceId": "2425999",
-    "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
+    "tollNumber": "+125254478",
+    "tollFreeNumber": "+1663588",
+    "ConferenceId": "24299",
+    "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-b8da330?id=24299"
   },
   "chatInfo": {
-    "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
+    "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDMjNlOTY4MGEz@thread.skype",
     "messageId": "0",
     "replyChainMessageId": "0"
   },
   "creationDateTime": "2019-07-11T02:17:17.6491364Z",
   "startDateTime": "2019-07-11T02:17:17.6491364Z",
   "endDateTime": "2019-07-11T02:47:17.651138Z",
-  "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
-  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
+  "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMdFpHRTNaR1F6WGhyZWFkLnYy",
+  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDl4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%22bf-8f1-4af-9b-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d51-3ec-8c-374f%22%7d",
   "participants": {
     "organizer": {
       "identity": {
         "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
+          "id": "550fae72-d251-43ec-868c-373734f",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d1db47",
+          "displayName": "Mario Rogers"
         }
       },
       "role": "presenter",
       "upn": "upn-value"
     }
   },
-  "subject": "User Token Meeting"
+  "subject": "User Token Meeting",
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false,
+    "joinMeetingId": "1234567890",
+    "passcode": null
+  }
 }
 ```
 >**Примечание.** если указан японский язык, в ответ будут включены перечисленные ниже данные.
@@ -175,6 +185,9 @@ Content-Type: application/json
 ### <a name="example-2-create-an-online-meeting-in-a-microsoft-teams-channel-with-a-user-token"></a>Пример 2. Создание собрания по сети в канале Microsoft Teams с помощью маркера пользователя
 
 #### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
 >**Примечание.** Идентификатор объекта переданного маркера пользователя должен быть элементом канала, представленного с помощью **threadId** в полезных данных.
 
 ```http
@@ -186,11 +199,299 @@ Content-Type: application/json
   "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
   "subject":"User meeting in Microsoft Teams channel.",
   "chatInfo": {
-    "threadId":"19%3A3b52398f3c524556894b776357c1dd79%40thread.skype"
+    "threadId":"19%3A3b5239894b776357c1dd79%40thread.skype"
   }
 }
 ```
 #### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "example",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f40f86-17cc-42e7-85f4-f03880d6')/onlineMeetings/$entity",
+  "audioConferencing": {
+    "tollNumber": "+12534478",
+    "tollFreeNumber": "+18660588",
+    "ConferenceId": "24229",
+    "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-49f-45b-bc69-b8a330?id=24229"
+  },
+  "chatInfo": {
+    "threadId": "19%3A3b52398f3c5244b776357c1dd79%40thread.skype",
+    "messageId": "1563302249053",
+    "replyChainMessageId": null
+  },
+  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
+  "startDateTime": "2019-07-11T02:17:17.6491364Z",
+  "endDateTime": "2019-07-11T02:47:17.651138Z",
+  "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItHRTNaR1F6WGhyZWFkLnYy",
+  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2288bf-86f1-41af-91ab-2011db47%22%2c%22Oid%22%3a%22fae72-d51-43ec-68c-3704f%22%7d",
+  "participants": {
+    "organizer": {
+      "identity": {
+        "user": {
+          "id": "55ae72-d251-43ec-868c-373704f",
+          "tenantId": "72f98f-86f1-41af-91ab-2d7db47",
+          "displayName": "Mario Rogers"
+        }
+      },
+      "role": "presenter",
+      "upn": "upn-value"
+    }
+  },
+  "subject": "User meeting in Microsoft Teams channel.",
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false,
+    "joinMeetingId": "1234567890",
+    "passcode": null
+  }
+}
+```
+
+### <a name="example-3-create-a-microsoft-teams-live-event-with-a-user-token"></a>Пример 3. Создание актуального события Microsoft Teams с помощью маркера пользователя
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "subject":"User Token Live Event",
+  "startDateTime":"2020-12-02T14:30:34.2444915+00:00",
+  "endDateTime":"2020-12-02T15:00:34.2464912+00:00",
+  "isBroadcast": true,
+  "broadcastSettings": {
+    "allowedAudience": "everyone",
+    "isRecordingEnabled": true,
+    "isAttendeeReportEnabled": true
+  }
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+> **Примечание.** Объект отклика, показанный здесь, сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+```json
+{
+  "id": "dc17674c-81d9-4adb-bfb2-8fa442e4622_19:meeting_MGQ4MDDYxODYzMmY2@thread.v2",
+  "creationDateTime": "2020-12-02T14:30:34.2444915Z",
+  "startDateTime": "2020-09-29T22:35:31.389759Z",
+  "endDateTime": "2020-12-02T15:00:34.2464912Z",
+  "joinWebUrl": "(redacted)",
+  "subject": "User Token Live Event",
+  "autoAdmittedUsers": "EveryoneInCompany",
+  "isEntryExitAnnounced": true,
+  "allowedPresenters": "organization",
+  "videoTeleconferenceId": "(redacted)",
+  "participants": {
+    "organizer": {
+      "upn": "(redacted)",
+      "role": "producer",
+      "identity": {
+        "user": {
+          "id": "dc174c-81d9-4adb-bfb2-8f6a4622",
+          "displayName": null,
+          "tenantId": "909581-5130-43e9-88f3-fccde38",
+          "identityProvider": "AAD"
+        }
+      }
+    },
+    "attendees": [
+      {
+        "upn": "(redacted)",
+        "role": "producer",
+        "identity": {
+          "user": {
+            "id": "dc174c-81d9-4adb-bfb2-8442e4622",
+            "displayName": null,
+            "tenantId": "909581-5130-43e9-88f3-fcb3cde38",
+            "identityProvider": "AAD"
+          }
+        }
+      }
+    ],
+    "producers": [
+      {
+        "upn": "(redacted)",
+        "role": "producer",
+        "identity": {
+          "user": {
+            "id": "d7674c-81d9-4adb-bfb2-8f6a4622",
+            "displayName": null,
+            "tenantId": "909c81-5130-43e9-88f3-fcbcde38",
+            "identityProvider": "AAD"
+          }
+        }
+      }
+    ],
+    "contributors": []
+  },
+  "lobbyBypassSettings": {
+    "scope": "organization",
+    "isDialInBypassEnabled": false
+  },
+  "isBroadcast": true,
+  "broadcastSettings": {
+    "allowedAudience": "organization",
+    "isRecordingEnabled": true,
+    "isAttendeeReportEnabled": true
+  },
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false,
+    "joinMeetingId": "1234567890",
+    "passcode": null
+  }
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Create onlineMeeting",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
+
+### <a name="example-4-create-an-online-meeting-that-requires-a-passcode"></a>Пример 4. Создание собрания по сети, для которого требуется секретный код
+
+В следующем примере показано, как добавить секретный код к собранию. Секретный код используется при присоединении к собранию с идентификатором **joinMeetingId**. Дополнительные сведения см. в разделе [joinMeetingIdSettings](../resources/joinmeetingidsettings.md).
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+>**Примечание.** Секретный код создается автоматически, а пользовательский секретный код не поддерживается.
+
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
+  "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
+  "subject":"User meeting",
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": true
+  }
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "example",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f4086-17cc-42e7-85f4-f03880d6')/onlineMeetings/$entity",
+  "audioConferencing": {
+    "tollNumber": "+12525478",
+    "tollFreeNumber": "+18690588",
+    "ConferenceId": "2999",
+    "dialinUrl": "https://dialin.teams.microsoft.com/22fa0-499f-435b-bc69-b8dea330?id=2999"
+  },
+  "chatInfo": {
+    "threadId": "19%3A3b523985568b776357c1dd79%40thread.skype",
+    "messageId": "15629053",
+    "replyChainMessageId": null
+  },
+  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
+  "startDateTime": "2019-07-11T02:17:17.6491364Z",
+  "endDateTime": "2019-07-11T02:47:17.651138Z",
+  "id": "MSpkYzE3Njc0Yy04MWQ5LTRhFpHRTNaR1F6WGhyZWFkLnYy",
+  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3iMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%22f8bf-86f1-41af-91ab-2011db47%22%2c%22Oid%22%3a%20fae72-d251-43ec-86c-377304f%22%7d",
+  "participants": {
+    "organizer": {
+      "identity": {
+        "user": {
+          "id": "5e72-d251-43ec-868c-3732704f",
+          "tenantId": "72fbf-86f1-41af-91ab-2d71db47",
+          "displayName": "Mario Rogers"
+        }
+      },
+      "role": "presenter",
+      "upn": "upn-value"
+    }
+  },
+  "subject": "User meeting",
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": true,
+    "joinMeetingId": "1234567890",
+    "passcode": "123abc"
+  }
+}
+```
+
+
+### <a name="example-5-create-an-online-meeting-that-does-not-require-a-passcode"></a>Пример 5. Создание собрания по сети, для которого не требуется секретный код
+
+Если параметру **isPasscodeRequired** присвоено значение `false` или в запросе не указан параметр **joinMeetingIdSettings**, созданное собрание по сети не будет использовать секретный код.
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
+  "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
+  "subject":"User meeting in Microsoft Teams channel.",
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false
+  }
+}
+```
+
+или
+
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
+  "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
+  "subject":"User meeting in Microsoft Teams channel."
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -228,122 +529,18 @@ Content-Type: application/json
         "user": {
           "id": "550fae72-d251-43ec-868c-373732c2704f",
           "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
+          "displayName": "Tyler Stein"
         }
       },
       "role": "presenter",
       "upn": "upn-value"
     }
   },
-  "subject": "User meeting in Microsoft Teams channel."
-}
-```
-
-### <a name="example-3-create-a-microsoft-teams-live-event-with-a-user-token"></a>Пример 3. Создание актуального события Microsoft Teams с помощью маркера пользователя
-
-#### <a name="request"></a>Запрос
-
-```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings
-Content-Type: application/json
-
-{
-  "subject":"User Token Live Event",
-  "startDateTime":"2020-12-02T14:30:34.2444915+00:00",
-  "endDateTime":"2020-12-02T15:00:34.2464912+00:00",
-  "isBroadcast": true,
-  "broadcastSettings": {
-    "allowedAudience": "everyone",
-    "isRecordingEnabled": true,
-    "isAttendeeReportEnabled": true
+  "subject": "User meeting in Microsoft Teams channel.",
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false,
+    "joinMeetingId": "1234567890",
+    "passcode": null
   }
 }
 ```
-
-#### <a name="response"></a>Отклик
-
-> **Примечание.** Объект отклика, показанный здесь, сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
-
-```json
-{
-  "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
-  "creationDateTime": "2020-12-02T14:30:34.2444915Z",
-  "startDateTime": "2020-09-29T22:35:31.389759Z",
-  "endDateTime": "2020-12-02T15:00:34.2464912Z",
-  "joinWebUrl": "(redacted)",
-  "subject": "User Token Live Event",
-  "autoAdmittedUsers": "EveryoneInCompany",
-  "isEntryExitAnnounced": true,
-  "allowedPresenters": "organization",
-  "videoTeleconferenceId": "(redacted)",
-  "participants": {
-    "organizer": {
-      "upn": "(redacted)",
-      "role": "producer",
-      "identity": {
-        "user": {
-          "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
-          "displayName": null,
-          "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
-          "identityProvider": "AAD"
-        }
-      }
-    },
-    "attendees": [
-      {
-        "upn": "(redacted)",
-        "role": "producer",
-        "identity": {
-          "user": {
-            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
-            "displayName": null,
-            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
-            "identityProvider": "AAD"
-          }
-        }
-      }
-    ],
-    "producers": [
-      {
-        "upn": "(redacted)",
-        "role": "producer",
-        "identity": {
-          "user": {
-            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
-            "displayName": null,
-            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
-            "identityProvider": "AAD"
-          }
-        }
-      }
-    ],
-    "contributors": []
-  },
-  "lobbyBypassSettings": {
-    "scope": "organization",
-    "isDialInBypassEnabled": false
-  },
-  "isBroadcast": true,
-  "broadcastSettings": {
-    "allowedAudience": "organization",
-    "isRecordingEnabled": true,
-    "isAttendeeReportEnabled": true
-  }
-}
-```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Create onlineMeeting",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
-
-

@@ -1,26 +1,26 @@
 ---
-title: Список windowsManagedDevices
-description: Список свойств и связей объектов WindowsManagedDevice.
+title: Перечисление объектов windowsManagedDevices
+description: Список свойств и связей объектов windowsManagedDevice.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 461509ea39ccdf09910a3480cd3268b8bbe3e15b
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 9ea44eddc4f3fd4781471f0127c26da23909fc29
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61344983"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66669695"
 ---
-# <a name="list-windowsmanageddevices"></a>Список windowsManagedDevices
+# <a name="list-windowsmanageddevices"></a>Перечисление объектов windowsManagedDevices
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей [объектов WindowsManagedDevice.](../resources/intune-devices-windowsmanageddevice.md)
+Список свойств и связей объектов [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "61344983"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов WindowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9507
+Content-Length: 10025
 
 {
   "value": [
@@ -119,7 +119,16 @@ Content-Length: 9507
         "esimIdentifier": "Esim Identifier value",
         "systemManagementBIOSVersion": "System Management BIOSVersion value",
         "tpmManufacturer": "Tpm Manufacturer value",
-        "tpmVersion": "Tpm Version value"
+        "tpmVersion": "Tpm Version value",
+        "wiredIPv4Addresses": [
+          "Wired IPv4Addresses value"
+        ],
+        "batteryLevelPercentage": 7.333333333333333,
+        "residentUsersCount": 2,
+        "productName": "Product Name value",
+        "deviceLicensingStatus": "licenseRefreshPending",
+        "deviceLicensingLastErrorCode": 12,
+        "deviceLicensingLastErrorDescription": "Device Licensing Last Error Description value"
       },
       "ownerType": "company",
       "managedDeviceOwnerType": "company",
@@ -272,7 +281,9 @@ Content-Length: 9507
           "updatable": true
         }
       ],
-      "enrollmentProfileName": "Enrollment Profile Name value"
+      "enrollmentProfileName": "Enrollment Profile Name value",
+      "bootstrapTokenEscrowed": true,
+      "deviceFirmwareConfigurationInterfaceManaged": true
     }
   ]
 }

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b50627c2b69bf9389e3b973e600ff01223c430c8
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 7b772a7892af77f28920ddb6be2db85b48765f00
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211594"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670585"
 ---
 # <a name="devicemanagementconfigurationpolicy-resource-type"></a>Тип ресурса deviceManagementConfigurationPolicy
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -38,13 +38,13 @@ ms.locfileid: "65211594"
 |:---|:---|:---|
 |id|String|Ключ документа политики. Создается автоматически.|
 |name|String|Имя политики|
-|description|Строка|Описание политики|
-|Платформ|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Платформы для этой политики. Возможные значения: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`.|
-|Технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Технологии для этой политики. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `appleRemoteManagement`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
+|description|String|Описание политики|
+|Платформ|[deviceManagementConfigurationPlatforms](../resources/intune-shared-devicemanagementconfigurationplatforms.md)|Платформы для этой политики. Возможные значения: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`.|
+|Технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Технологии для этой политики. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `appleRemoteManagement`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `enrollment`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|Дата и время создания политики|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения политики|
 |settingCount|Int32|Количество параметров|
-|creationSource|Строка|Источник создания политики|
+|creationSource|String|Источник создания политики|
 |Идентификаторы roleScopeTagId|Коллекция строк|Список тегов области для этого экземпляра сущности.|
 |isAssigned|Boolean|Состояние назначения политики. Это свойство доступно только для чтения.|
 |templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Справочные сведения о шаблоне|

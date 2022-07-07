@@ -51,7 +51,11 @@ items:
           - name: Обзор
             href: /graph/throttling?context=graph/api/beta
             displayName: throttling
+          - name: Ограничения для отдельных служб
+            href: /graph/throttling-limits?context=graph/api/beta
+            displayName: throttling
           - name: Оптимизация сетевого трафика
+            displayName: throttling
             href: /learn/modules/optimize-network-traffic
       - name: Уведомления об изменениях
         items:
@@ -622,7 +626,7 @@ items:
                 href: api/profile-get.md
               - name: Удаление профиля пользователя
                 href: api/profile-delete.md
-          - name: Командная работа
+          - name: Teamwork
             items:
               - name: Приложение установлено
                 href: resources/teamsappinstallation.md
@@ -642,7 +646,7 @@ items:
                 href: api/chat-get.md
               - name: Перечисление чатов для пользователя
                 href: api/chat-list.md
-          - name: Задачи To-Do
+          - name: Задачи из списка дел
             items:
               - name: Задача в приложении "Список дел"
                 href: resources/todotask.md
@@ -6389,8 +6393,6 @@ items:
                     href: resources/intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md
                   - name: Сообщение из отчета для управляемого устройства
                     href: resources/intune-deviceconfig-manageddevicereportedapp.md
-                  - name: Тип агента управления
-                    href: resources/intune-deviceconfig-managementagenttype.md
                   - name: Рейтинг мультимедийного содержимого для Австралии
                     href: resources/intune-deviceconfig-mediacontentratingaustralia.md
                   - name: Оценка мультимедийного содержимого для Канады
@@ -7696,6 +7698,8 @@ items:
                     href: resources/intune-devices-devicehealthscriptstringparameter.md
                   - name: Расписание времени скрипта работоспособности устройства
                     href: resources/intune-devices-devicehealthscripttimeschedule.md
+                  - name: Состояние лицензирования устройств
+                    href: resources/intune-devices-devicelicensingstatus.md
                   - name: Запрос на сбор журналов устройств
                     href: resources/intune-devices-devicelogcollectionrequest.md
                   - name: Ответ на сбор журналов устройств
@@ -8347,8 +8351,6 @@ items:
                     href: resources/intune-devices-manageddeviceremoteaction.md
                   - name: Состояние управляемого установщика
                     href: resources/intune-devices-managedinstallerstatus.md
-                  - name: Тип агента управления
-                    href: resources/intune-devices-managementagenttype.md
                   - name: Состояние управления
                     href: resources/intune-devices-managementstate.md
                   - name: Шаблон сообщения уведомления
@@ -9186,6 +9188,16 @@ items:
                         href: api/intune-mam-defaultmanagedappprotection-delete.md
                       - name: Обновление
                         href: api/intune-mam-defaultmanagedappprotection-update.md
+                  - name: Применимость параметров обмена конфигурацией управления устройствами в Интернете
+                    href: resources/intune-mam-devicemanagementconfigurationexchangeonlinesettingapplicability.md
+                  - name: Применимость параметров конфигурации управления устройствами
+                    href: resources/intune-mam-devicemanagementconfigurationsettingapplicability.md
+                  - name: Определение значения параметра строки конфигурации управления устройствами
+                    href: resources/intune-mam-devicemanagementconfigurationstringsettingvaluedefinition.md
+                  - name: Технологии конфигурации управления устройствами
+                    href: resources/intune-mam-devicemanagementconfigurationtechnologies.md
+                  - name: Применимость параметров конфигурации управления устройствами
+                    href: resources/intune-mam-devicemanagementconfigurationwindowssettingapplicability.md
                   - name: Тип платформы устройства
                     href: resources/intune-wip-deviceplatformtype.md
                   - name: Профиль фирменной символики Intune
@@ -10029,7 +10041,7 @@ items:
                         href: api/intune-shared-devicecompliancepolicy-get.md
                       - name: Действие назначения
                         href: api/intune-shared-devicecompliancepolicy-assign.md
-                      - name: Действие refreshDeviceComplianceReportSummarization
+                      - name: Действие обновления
                         href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
                       - name: Действие hasPayloadLinks
                         href: api/intune-shared-devicecompliancepolicy-haspayloadlinks.md
@@ -10074,6 +10086,78 @@ items:
                         href: api/intune-shared-devicemanagement-enablelegacypcmanagement.md
                       - name: Действие sendCustomNotificationToCompanyPortal
                         href: api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md
+                  - name: Конфигурация управления устройствами типа доверия Azure AD
+                    href: resources/intune-shared-devicemanagementconfigurationazureadtrusttype.md
+                  - name: 'Выбор конфигурации управления устройствами: выбор экземпляра коллекции'
+                    href: resources/intune-shared-devicemanagementconfigurationchoicesettingcollectioninstance.md
+                  - name: Экземпляр параметра конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationchoicesettinginstance.md
+                  - name: Значение параметра выбора конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationchoicesettingvalue.md
+                  - name: Тип элемента управления конфигурацией управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationcontroltype.md
+                  - name: Конфигурация управления устройствами зависит от
+                    href: resources/intune-shared-devicemanagementconfigurationdependenton.md
+                  - name: Режим устройства конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationdevicemode.md
+                  - name: Экземпляр коллекции параметров группы конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationgroupsettingcollectioninstance.md
+                  - name: Экземпляр параметра группы конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationgroupsettinginstance.md
+                  - name: Значение параметра группы конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationgroupsettingvalue.md
+                  - name: Целочисленное значение параметра конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationintegersettingvalue.md
+                  - name: Определение целочисленного значения конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationintegersettingvaluedefinition.md
+                  - name: Определение параметра конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationoptiondefinition.md
+                  - name: Платформы конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationplatforms.md
+                  - name: Значение параметра справочника по конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationreferencesettingvalue.md
+                  - name: 'Сведения о настройке конфигурации управления устройствами, на которые ссылается настройка'
+                    href: resources/intune-shared-devicemanagementconfigurationreferredsettinginformation.md
+                  - name: Значение параметра секрета конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationsecretsettingvalue.md
+                  - name: Состояние значения параметра секрета конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationsecretsettingvaluestate.md
+                  - name: Типы доступа к параметрам конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationsettingaccesstypes.md
+                  - name: Параметр конфигурации управления устройствами зависит от
+                    href: resources/intune-shared-devicemanagementconfigurationsettingdependedonby.md
+                  - name: Экземпляр коллекции групп параметров конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationsettinggroupcollectioninstance.md
+                  - name: Экземпляр группы параметров конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationsettinggroupinstance.md
+                  - name: Экземпляр параметра конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationsettinginstance.md
+                  - name: Справочник по шаблону экземпляра параметра конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationsettinginstancetemplatereference.md
+                  - name: Экземпляр параметра конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationsettingoccurrence.md
+                  - name: Использование параметров конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationsettingusage.md
+                  - name: Значение параметра конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationsettingvalue.md
+                  - name: Определение значения параметра конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationsettingvaluedefinition.md
+                  - name: Справочник по шаблону значения параметра конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationsettingvaluetemplatereference.md
+                  - name: Видимость параметров конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationsettingvisibility.md
+                  - name: Простой экземпляр коллекции параметров конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationsimplesettingcollectioninstance.md
+                  - name: Экземпляр простого параметра конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationsimplesettinginstance.md
+                  - name: Простое значение параметра конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationsimplesettingvalue.md
+                  - name: Формат строки конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationstringformat.md
+                  - name: Значение параметра строки конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationstringsettingvalue.md
+                  - name: Номера SKU окон конфигурации управления устройствами
+                    href: resources/intune-shared-devicemanagementconfigurationwindowsskus.md
                   - name: Параметры производных учетных данных для управления устройствами
                     href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
                     items:
@@ -10178,6 +10262,8 @@ items:
                     href: resources/intune-shared-macosvppappassignmentsettings.md
                   - name: Тип владельца управляемого устройства
                     href: resources/intune-shared-manageddeviceownertype.md
+                  - name: Тип агента управления
+                    href: resources/intune-shared-managementagenttype.md
                   - name: Политика Windows Information Protection для MDM
                     href: resources/intune-shared-mdmwindowsinformationprotectionpolicy.md
                     items:
@@ -12922,7 +13008,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Удалить
                         href: api/identityapiconnector-delete.md
-          - name: Система управления
+          - name: Управление
             items:
               - name: Проверки доступа
                 href: resources/accessreviewsv2-overview.md
@@ -15762,7 +15848,7 @@ items:
                 href: api/teamsappsettings-get.md
               - name: Обновление
                 href: api/teamsappsettings-update.md
-          - name: Устройство
+          - name: Device
             items:
               - name: Подготовленные устройства
                 href: resources/teamworkdevice.md

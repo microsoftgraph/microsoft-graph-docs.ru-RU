@@ -5,25 +5,25 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9e7a28dbd23218001030e34309ce751345489261
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 809d9b1b28b922040d80c7a00426f8a2aee8d128
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61341980"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66669541"
 ---
 # <a name="windows10generalconfiguration-resource-type"></a>Тип ресурса windows10GeneralConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 В этой статье описаны объявляемые методы, свойства и связи, которые предоставляются ресурсом windows10GeneralConfiguration.
 
 
-Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).
+Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
@@ -37,76 +37,76 @@ ms.locfileid: "61341980"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|taskManagerBlockEndTask|Boolean|Укажите, могут ли не администраторы использовать диспетчер задач для выполнения задач.|
-|energySaverOnBatteryThresholdPercentage|Int32|Этот параметр позволяет указать уровень заряда батареи, на котором включен энергосберека. Во время работы с аккумулятором энергосберека автоматически включена на указанном уровне заряда батареи (и ниже). Допустимый диапазон ввода (0-100). Допустимые значения: от 0 до 100|
-|energySaverPluggedInThresholdPercentage|Int32|Этот параметр позволяет указать уровень заряда батареи, на котором включен энергосберека. При подключении энергосберегалка автоматически включена на указанном уровне заряда батареи (и ниже). Допустимый диапазон ввода (0-100). Допустимые значения: от 0 до 100|
-|powerLidCloseActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Этот параметр указывает действие, которое Windows, когда пользователь закрывает крышку на мобильном компьютере во время работы с аккумулятором. Возможные значения: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
-|powerLidCloseActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Этот параметр указывает действие, которое Windows, когда пользователь закрывает крышку на мобильном компьютере во время подключения. Возможные значения: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
-|powerButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Этот параметр указывает действие, которое Windows, когда пользователь нажимает кнопку Power во время работы с аккумулятором. Возможные значения: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
-|powerButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Этот параметр указывает действие, которое Windows при нажатии кнопки Power во время подключения. Возможные значения: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
-|powerSleepButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Этот параметр указывает действие, которое Windows, когда пользователь нажимает кнопку "Сон" во время работы с аккумулятором. Возможные значения: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
-|powerSleepButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Этот параметр указывает действие, которое Windows, когда пользователь нажмет кнопку "Спящий режим" во время подключения. Возможные значения: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
-|powerHybridSleepOnBattery|[включить](../resources/intune-shared-enablement.md)|Этот параметр позволяет отключить гибридный сон во время работы с аккумулятором. Если этот параметр отключать, hiberfile не создается при переходе системы в режим сна (Stand By). Если вы установите этот параметр, чтобы включить или не настроить этот параметр политики, пользователи будут управлять этим параметром. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|powerHybridSleepPluggedIn|[включить](../resources/intune-shared-enablement.md)|Этот параметр позволяет отключить гибридный сон во время подключения. Если этот параметр отключать, hiberfile не создается при переходе системы в режим сна (Stand By). Если вы установите этот параметр, чтобы включить или не настроить этот параметр политики, пользователи будут управлять этим параметром. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|Windows 10 расписания принудительного обновления приложений.|
-|enableAutomaticRedeployment|Boolean|Разрешить пользователям с административными правами удалять все пользовательские данные и параметры с помощью CTRL + Win + R на экране блокировки устройства, чтобы устройство можно было автоматически перенастроить и повторно зарегистрировать в управление.|
-|MicrosoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Управляет службой NT Sign-In помощника (wlidsvc). Возможные значения: `notConfigured`, `disabled`.|
-|authenticationAllowSecondaryDevice|Boolean|Позволяет дополнительным устройствам проверки подлинности работать с Windows.|
-|authenticationWebSignIn|[включить](../resources/intune-shared-enablement.md)|Указывает, будет ли включен поставщик веб-учетных данных. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|authenticationPreferredAzureADTenantDomainName|Строка|Указывает предпочтительный домен среди доступных доменов в клиенте Azure AD.|
-|криптографияAllowFipsAlgorithmPolicy|Boolean|Укажите, разрешить или отолонить политику Федерального стандарта обработки информации (FIPS).|
-|displayAppListWithGdiDPIScalingTurnedOn|Коллекция String|Список устаревших приложений, включив масштабирование DPI GDI.|
-|displayAppListWithGdiDPIScalingTurnedOff|Коллекция String|Список устаревших приложений с отключенным масштабированием DPI GDI.|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Идентификаторы roleScopeTagId|Коллекция строк|Список тегов области для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Логическое|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойству ScopeTags не допускается, если это значение имеет значение false и сущности не будут видны пользователям с заданной областью. Это происходит для устаревших политик, созданных в Silverlight, и их можно устранить, удалив и повторно создав политику на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпуска ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|taskManagerBlockEndTask|Логический|Укажите, могут ли администраторы использовать диспетчер задач для завершения задач.|
+|energySaverOnBatteryThresholdPercentage|Int32|Этот параметр позволяет указать уровень заряда батареи, на котором включена экономия энергии. Во время работы от батареи экономия энергии автоматически включается на указанном уровне заряда батареи (и ниже). Допустимый диапазон входных данных (0–100). Допустимые значения: от 0 до 100|
+|energySaverPluggedInThresholdPercentage|Int32|Этот параметр позволяет указать уровень заряда батареи, на котором включена экономия энергии. При подключении энергосохранилка автоматически включается на указанном уровне заряда батареи (и ниже). Допустимый диапазон входных данных (0–100). Допустимые значения: от 0 до 100|
+|powerLidCloseActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Этот параметр указывает действие, выполняемые Windows, когда пользователь закрывает крышку на мобильном компьютере во время работы от батареи. Возможные значения: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerLidCloseActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Этот параметр указывает действие, выполняемые Windows, когда пользователь закрывает крышку на мобильном компьютере при подключении. Возможные значения: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Этот параметр задает действие, выполняемые Windows, когда пользователь нажимает кнопку питания во время работы от батареи. Возможные значения: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Этот параметр указывает действие, выполняемые Windows, когда пользователь нажимает кнопку Питания при подключении. Возможные значения: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerSleepButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Этот параметр указывает действие, выполняемые Windows, когда пользователь нажимает кнопку "Спящий режим" во время работы от батареи. Возможные значения: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerSleepButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|Этот параметр указывает действие, выполняемые Windows, когда пользователь нажимает кнопку "Спящий режим" при подключении. Возможные значения: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerHybridSleepOnBattery|[Включения](../resources/intune-deviceconfig-enablement.md)|Этот параметр позволяет отключить гибридный спящий режим во время работы от батареи. Если этот параметр отключен, гибернация не создается при переходе системы в спящий режим (в режиме ожидания). Если этот параметр включен или не настроен, пользователи могут управлять этим параметром. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|powerHybridSleepPluggedIn|[Включения](../resources/intune-deviceconfig-enablement.md)|Этот параметр позволяет отключить гибридный спящий режим при подключении. Если этот параметр отключен, гибернация не создается при переходе системы в спящий режим (в режиме ожидания). Если этот параметр включен или не настроен, пользователи могут управлять этим параметром. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|Windows 10 принудительное обновление приложений.|
+|enableAutomaticRedeployment|Логическое|Разрешите пользователям с правами администратора удалять все пользовательские данные и параметры с помощью клавиш CTRL+ Win +R на экране блокировки устройства, чтобы устройство можно было автоматически перенастроить и повторно зарегистрировать в управлении.|
+|microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Управляет службой NT Sign-In учетной записи Майкрософт (wlidsvc). Возможные значения: `notConfigured`, `disabled`.|
+|authenticationAllowSecondaryDevice|Логическое|Позволяет дополнительным устройствам проверки подлинности работать с Windows.|
+|authenticationWebSignIn|[Включения](../resources/intune-deviceconfig-enablement.md)|Указывает, будет ли включен поставщик веб-учетных данных. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|authenticationPreferredAzureADTenantDomainName|String|Указывает предпочтительный домен среди доступных доменов в Azure AD клиента.|
+|cryptographyAllowFipsAlgorithmPolicy|Логическое|Укажите, следует ли разрешать или запрещать политику FiPS.|
+|displayAppListWithGdiDPIScalingTurnedOn|Коллекция String|Список устаревших приложений, для которых включено масштабирование DPI GDI.|
+|displayAppListWithGdiDPIScalingTurnedOff|Коллекция объектов string|Список устаревших приложений, для которых отключено масштабирование DPI GDI.|
 |enterpriseCloudPrintDiscoveryEndPoint|String|Конечная точка для обнаружения облачных принтеров.|
 |enterpriseCloudPrintOAuthAuthority|String|Конечная точка аутентификации для получения токенов OAuth.|
 |enterpriseCloudPrintOAuthClientIdentifier|String|GUID клиентского приложения, которому разрешено получать токены OAuth из системы OAuth.|
 |enterpriseCloudPrintResourceIdentifier|String|URI ресурса OAuth для службы печати, настроенный на портале Azure.|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|Максимальное количество принтеров, запрашиваемых с конечной точки обнаружения. Этот параметр применяется только к мобильным устройствам. Допустимые значения: от 1 до 65 535.|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|URI ресурса OAuth для службы обнаружения принтеров, настроенный на портале Azure.|
-|experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Разрешить или предотвратить синхронизацию параметров Microsoft Edge браузера. Параметр для ИТ-администраторов, чтобы предотвратить синхронизацию между устройствами, но разрешить переопределение пользователя. Возможные значения: `notConfigured`, `blockedWithUserOverride`, `blocked`.|
-|messagingBlockSync|Boolean|Указывает, следует ли блокировать текстовое сообщение и восстанавливать и отправлять сообщения везде.|
-|messagingBlockMMS|Boolean|Указывает, следует ли блокировать функции отправки и получения MMS на устройстве.|
-|messagingBlockRichCommunicationServices|Boolean|Указывает, следует ли блокировать RCS отправку и получение функций на устройстве.|
-|printerNames|Коллекция String|Автоматическое предоставление принтеров на основе их имен (имен сетевых хостов).|
-|printerDefaultName|String|Имя (имя сетевого хоста) установленного принтера.|
-|printerBlockAddition|Boolean|Предотвращение установки пользователями дополнительных принтеров из параметров принтеров.|
+|experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Разрешить или запретить синхронизацию параметров браузера Microsoft Edge. ИТ-администраторы могут запретить синхронизацию между устройствами, но разрешить переопределение пользователей. Возможные значения: `notConfigured`, `blockedWithUserOverride`, `blocked`.|
+|messagingBlockSync|Логический|Указывает, следует ли блокировать резервное копирование и восстановление текстовых сообщений и отправку сообщений везде.|
+|messagingBlockMMS|Логическое|Указывает, следует ли блокировать функцию отправки и получения MMS на устройстве.|
+|messagingBlockRichCommunicationServices|Логическое|Указывает, следует ли блокировать функцию отправки и получения RCS на устройстве.|
+|printerNames|Коллекция объектов string|Автоматическая подготовка принтеров на основе их имен (имен сетевых узлов).|
+|printerDefaultName|String|Имя (сетевое имя узла) установленного принтера.|
+|printerBlockAddition|Логическое|Запретить пользователю установку дополнительных принтеров из параметров принтеров.|
 |searchBlockDiacritics|Boolean|Указывает, можно ли использовать диакритические знаки в поиске.|
 |searchDisableAutoLanguageDetection|Boolean|Указывает, следует ли использовать автоматическое определение языка при индексировании контента и свойств.|
 |searchDisableIndexingEncryptedItems|Boolean|Указывает, следует ли запретить индексирование защищенных WIP элементов, чтобы они не отображались в результатах поиска Кортаны или проводника.|
 |searchEnableRemoteQueries|Boolean|Указывает, следует ли заблокировать удаленные запросы к индексу этого компьютера.|
 |searchDisableUseLocation|Boolean|Указывает, может ли поиск использовать сведения о расположении.|
-|searchDisableLocation|Boolean|Указывает, может ли поиск использовать сведения о расположении.|
+|searchDisableLocation|Логическое|Указывает, может ли поиск использовать сведения о расположении.|
 |searchDisableIndexerBackoff|Boolean|Указывает, следует ли отключить функцию отхода индексатора поиска.|
 |searchDisableIndexingRemovableDrive|Boolean|Указывает, могут ли пользователи добавлять расположения на съемных дисках в библиотеки и для индексирования.|
 |searchEnableAutomaticIndexSizeManangement|Boolean|Указывает минимальный объем памяти на жестком диске с индексом до остановки индексирования.|
-|searchBlockWebResults|Boolean|Указывает, следует ли блокировать веб-поиск.|
-|findMyFiles|[включить](../resources/intune-shared-enablement.md)|Управление, если пользователь может настроить поиск в режиме Найти мои файлы, который ищет файлы на вторичных жестких дисках, а также за пределами профиля пользователя. Поиск файлов не позволяет пользователям искать файлы или расположения, к которым у них нет доступа. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|Укажите, следует ли разрешить автоматическое шифрование устройства во время OOBE, когда к устройству присоединяется Azure AD (только на рабочем столе).|
+|searchBlockWebResults|Логическое|Указывает, следует ли блокировать поиск в Интернете.|
+|findMyFiles|[Включения](../resources/intune-deviceconfig-enablement.md)|Определяет, может ли пользователь настроить поиск в режиме поиска "Мои файлы", который выполняет поиск файлов на вторичных жестких дисках, а также за пределами профиля пользователя. Функция "Найти мои файлы" не позволяет пользователям искать файлы или расположения, к которым у них нет доступа. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|securityBlockAzureADJoinedDevicesAutoEncryption|Логическое|Укажите, следует ли разрешить автоматическое шифрование устройства при первом включении при Azure AD устройства (только для настольных компьютеров).|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Возвращает или задает значение, позволяющее устройству отправлять данные диагностики и телеметрии использования, такие как Watson. Возможные значения: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Boolean|Возвращает или задает значение, позволяющее ИТ-администраторам запретить работу приложений и функций с файлами в OneDrive.|
-|systemTelemetryProxyServer|Строка|Получает или задает полностью квалифицированное доменное имя (FQDN) или IP-адрес прокси-сервера для переадпорта запросов подключенных пользователей и телеметрии.|
-|edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|Указывает, какой тип данных телеметрии (ни один, ни интрасети, ни интернет) отправляется в Microsoft 365 Analytics. Возможные значения: `notConfigured`, `intranet`, `internet`, `intranetAndInternet`.|
-|inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|Управляет доступом пользователя к рабочему пространству с рабочего стола и сверху экрана блокировки. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Управляет доступом пользователя к рабочему пространству с рабочего стола и сверху экрана блокировки. Возможные значения: `notConfigured`, `blocked`, `allowed`.|
-|inkWorkspaceBlockSuggestedApps|Boolean|Укажите, следует ли показывать рекомендуемые предложения приложения в рабочей области ink.|
-|smartScreenEnableAppInstallControl|Boolean|Это свойство будет отклонено в июле 2019 г. и будет заменено свойством SmartScreenAppInstallControl. Позволяет ИТ-администраторам разрешать или запрещать установку приложений из мест, отличных от Store.|
-|smartScreenAppInstallControl|[appInstallControlType](../resources/intune-deviceconfig-appinstallcontroltype.md)|Добавлена Windows 10 версии 1703. Позволяет ИТ-администраторам разрешать или запрещать установку приложений из мест, отличных от Store. Возможные значения: `notConfigured`, `anywhere`, `storeOnly`, `recommendations`, `preferStore`.|
+|systemTelemetryProxyServer|String|Возвращает или задает полное доменное имя (FQDN) или IP-адрес прокси-сервера для пересылки запросов подключенных пользователей и телеметрии.|
+|edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|Указывает, какой тип данных телеметрии (none, intranet, internet, both) отправляется в Аналитику Microsoft 365. Возможные значения: `notConfigured`, `intranet`, `internet`, `intranetAndInternet`.|
+|inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|Управляет доступом пользователя к рабочей области рукописного ввода с рабочего стола и сверху экрана блокировки. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Управляет доступом пользователя к рабочей области рукописного ввода с рабочего стола и сверху экрана блокировки. Возможные значения: `notConfigured`, `blocked`, `allowed`.|
+|inkWorkspaceBlockSuggestedApps|Boolean|Укажите, следует ли отображать рекомендуемые предложения приложений в рабочей области рукописного ввода.|
+|smartScreenEnableAppInstallControl|Boolean|Это свойство будет нерекомендуемым в июле 2019 г. и будет заменено свойством SmartScreenAppInstallControl. Позволяет ИТ-администраторам разрешать или запрещать установку приложений из мест, отличных от Store.|
+|smartScreenAppInstallControl|[appInstallControlType](../resources/intune-deviceconfig-appinstallcontroltype.md)|Добавлено в Windows 10 версии 1703. Позволяет ИТ-администраторам разрешать или запрещать установку приложений из мест, отличных от Store. Возможные значения: `notConfigured`, `anywhere`, `storeOnly`, `recommendations`, `preferStore`.|
 |personalizationDesktopImageUrl|String|Начинающийся с http или https URL-адрес изображения в формате JPG, JPEG или PNG, которое необходимо скачать и разместить на рабочем столе, или URL-адрес локального изображения в файловой системе, которое нужно разместить на рабочем столе.|
 |personalizationLockScreenImageUrl|String|Начинающийся с http или https URL-адрес изображения в формате JPG, JPEG или PNG, которое необходимо скачать и разместить на экране блокировки, или URL-адрес локального изображения в файловой системе, которое нужно разместить на экране блокировки.|
 |bluetoothAllowedServices|Коллекция String|Укажите список разрешенных служб и профилей Bluetooth в шестнадцатеричном формате.|
 |bluetoothBlockAdvertising|Boolean|Указывает, следует ли запретить использовать рекламу по Bluetooth.|
-|BluetoothBlockPromptedProximalConnections|Boolean|Следует ли блокировать пользователям использование Swift Pair и других сценариев, основанных на близости.|
+|BluetoothBlockPromptedProximalConnections|Логическое|Следует ли запретить пользователям использовать быстрая связь и другие сценарии на основе близкого взаимодействия.|
 |bluetoothBlockDiscoverableMode|Boolean|Указывает, следует ли запретить использовать режим обнаружения по Bluetooth.|
 |bluetoothBlockPrePairing|Boolean|Указывает, следует ли заблокировать автоматическое связывание отдельных пакетных периферийных устройств Bluetooth с главным устройством.|
 |edgeBlockAutofill|Boolean|Указывает, следует ли заблокировать автозаполнение.|
@@ -125,36 +125,36 @@ ms.locfileid: "61341980"
 |edgeDisableFirstRunPage|Boolean|Позволяет заблокировать веб-страницу Майкрософт, которая открывается при первом запуске Microsoft Edge. Эта политика позволяет предприятиям, зарегистрированным в конфигурациях с нулевым выбросом, блокировать эту страницу.|
 |edgeBlockLiveTileDataCollection|Boolean|Позволяет запретить Майкрософт собирать информацию о создании живых плиток, когда пользователи закрепляют сайты из Microsoft Edge на начальном экране.|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|Указывает, следует ли включить синхронизацию избранного между Internet Explorer и Microsoft Edge. Браузеры обмениваются данными о добавлении, удалении и изменении избранных элементов, а также их порядка.|
-|edgeFavoritesListLocation|Строка|Расположение списка избранного для обеспечения. Это может быть локальный файл, локальная сеть или HTTP-адрес.|
-|edgeBlockEditFavorites|Boolean|Указывает, следует ли блокировать пользователю внесение изменений в избранное.|
-|edgeNewTabPageURL|String|Укажите страницу, открываемую при создания новых вкладок.|
-|edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|Вызывает кнопку Главная, чтобы скрыть, загрузить страницу Начните по умолчанию, загрузить новую страницу вкладки или настраиваемый URL-адрес|
-|edgeHomeButtonConfigurationEnabled|Boolean|Включить конфигурацию кнопки Home.|
+|edgeFavoritesListLocation|String|Расположение списка избранного для подготовки. Это может быть локальный файл, локальная сеть или HTTP-адрес.|
+|edgeBlockEditFavorites|Логический|Указывает, следует ли запретить пользователю вносить изменения в избранное.|
+|edgeNewTabPageURL|String|Укажите страницу, открываемую при создании новых вкладок.|
+|edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|Приводит к скрытию кнопки "Главная", загрузке начальной страницы по умолчанию, загрузке страницы вкладки "Создать" или пользовательскому URL-адресу|
+|edgeHomeButtonConfigurationEnabled|Логическое|Включите конфигурацию кнопки "Главная".|
 |edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|Укажите, какие страницы открыты в начале. Возможные значения: `notConfigured`, `startPage`, `newTabPage`, `previousPages`, `specificPages`.|
-|edgeBlockSideloadingExtensions|Boolean|Указывает, может ли пользователь перезагрузить расширения.|
-|edgeRequiredExtensionPackageFamilyNames|Коллекция String|Укажите список имен семейства пакетов расширений браузера, которые необходимы и не могут быть отключены пользователем.|
-|edgeBlockPrinting|Boolean|Настройте Edge, чтобы разрешить или заблокировать печать.|
-|edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Получите или задано значение, которое указывает, следует ли устанавливать планку избранного, которая всегда будет видна или скрыта на любой странице. Возможные значения: `notConfigured`, `hide`, `show`.|
-|edgeBlockSavingHistory|Boolean|Настройте Edge, чтобы сохранить историю просмотра или никогда не сохранять историю просмотра.|
-|edgeBlockFullScreenMode|Boolean|Разрешить или запретить edge вводить полный режим экрана.|
-|edgeBlockWebContentOnewTabPage|Boolean|Настройка загрузки пустой страницы в Edge вместо новой страницы вкладки по умолчанию и предотвращение ее изменения пользователями.|
-|edgeBlockTabPreloading|Boolean|Настройка предварительной загрузки страницы вкладок Edge в Windows запуске.|
-|edgeBlockPrelaunch|Boolean|Определите, Microsoft Edge ли Windows запуске.|
-|edgeShowMessageWhenOpeningInternetExplorerSites|[internetExplorerMessageSetting](../resources/intune-deviceconfig-internetexplorermessagesetting.md)|Управление сообщением, отображаемой edge перед переходом на Internet Explorer. Возможные значения: `notConfigured`, `disabled`, `enabled`, `keepGoing`.|
-|edgePreventCertificateErrorOverride|Boolean|Разрешить или запретить пользователям переопределять ошибки сертификата.|
-|edgeKioskModeRestriction|[edgeKioskModeRestrictionType](../resources/intune-deviceconfig-edgekioskmoderestrictiontype.md)|Управляет ограничением Microsoft Edge параметров в зависимости от режима настройки киоска. Возможные значения: `notConfigured`, `digitalSignage`, `normalMode`, `publicBrowsingSingleApp`, `publicBrowsingMultiApp`.|
-|edgeKioskResetAfterIdleTimeInMinutes|Int32|Указывает время в минутах от последнего действия пользователя перед сбросом Microsoft Edge киоска.  Допустимые значения : 0-1440. Значение по умолчанию равно 5. 0 указывает на отсутствие сброса. Допустимые значения от 0 до 1440|
+|edgeBlockSideloadingExtensions|Логический|Указывает, может ли пользователь загрузить расширения неопубликованных приложений.|
+|edgeRequiredExtensionPackageFamilyNames|Коллекция String|Укажите список имен семейств пакетов расширений браузера, которые являются обязательными и не могут быть отключены пользователем.|
+|edgeBlockPrinting|Логическое|Настройте Edge для разрешения или блокировки печати.|
+|edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Возвращает или задает значение, указывающее, следует ли всегда отображать или скрывать панель избранного на любой странице. Возможные значения: `notConfigured`, `hide`, `show`.|
+|edgeBlockSavingHistory|Логическое|Настройте Edge, чтобы разрешить сохранение журнала браузера или никогда не сохранять журнал браузера.|
+|edgeBlockFullScreenMode|Логическое|Разрешить или запретить edge вводить полноэкранный режим.|
+|edgeBlockWebContentOnNewTabPage|Логическое|Настройте загрузку пустой страницы в Edge вместо страницы новой вкладки по умолчанию и запретить пользователям изменять ее.|
+|edgeBlockTabPreloading|Логическое|Настройте, будет ли Edge предварительно загрузить новую страницу вкладки при запуске Windows.|
+|edgeBlockPrelaunch|Логическое|Решите, будет ли Microsoft Edge предварительно запущен при запуске Windows.|
+|edgeShowMessageWhenOpeningInternetExplorerSites|[internetExplorerMessageSetting](../resources/intune-deviceconfig-internetexplorermessagesetting.md)|Управляет сообщением, отображаемое edge, перед переходом на Internet Explorer. Возможные значения: `notConfigured`, `disabled`, `enabled`, `keepGoing`.|
+|edgePreventCertificateErrorOverride|Логическое|Разрешить или запретить пользователям переопределять ошибки сертификата.|
+|edgeKioskModeRestriction|[edgeKioskModeRestrictionType](../resources/intune-deviceconfig-edgekioskmoderestrictiontype.md)|Управляет ограничением параметров Microsoft Edge в зависимости от режима настройки киоска. Возможные значения: `notConfigured`, `digitalSignage`, `normalMode`, `publicBrowsingSingleApp`, `publicBrowsingMultiApp`.|
+|edgeKioskResetAfterIdleTimeInMinutes|Int32|Указывает время в минутах с момента последнего действия пользователя до сброса киоска Microsoft Edge.  Допустимые значения: 0–1440. Значение по умолчанию равно 5. Значение 0 означает отсутствие сброса. Допустимые значения от 0 до 1440|
 |cellularBlockDataWhenRoaming|Boolean|Указывает, следует ли запретить использовать мобильные данные в роуминге.|
 |cellularBlockVpn|Boolean|Указывает, следует ли запретить использовать VPN по сотовой сети.|
 |cellularBlockVpnWhenRoaming|Boolean|Указывает, следует ли запретить использовать VPN по сотовой сети в роуминге.|
-|cellularData|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Разрешить или не разрешить канал сотовых данных на устройстве. Если она не настроена, канал сотовых данных разрешен, и пользователь может отключить его. Возможные значения: `blocked`, `required`, `allowed`, `notConfigured`.|
+|cellularData|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Указывает, следует ли разрешить канал передачи данных на устройстве. Если этот параметр не настроен, канал передачи данных разрешен, и пользователь может отключить его. Возможные значения: `blocked`, `required`, `allowed`, `notConfigured`.|
 |defenderRequireRealTimeMonitoring|Boolean|Указывает, обязательно ли использовать мониторинг в режиме реального времени.|
 |defenderRequireBehaviorMonitoring|Boolean|Указывает, обязательно ли использовать наблюдение за поведением.|
 |defenderRequireNetworkInspectionSystem|Boolean|Указывает, обязательно ли использовать систему проверки сети.|
 |defenderScanDownloads|Boolean|Указывает, следует ли проверять загрузки.|
-|defenderScheduleScanEnableLowCpuPriority|Boolean|При включенной проверке при запланированном сканировании будет использоваться низкий приоритет ЦП.|
-|defenderDisableCatchupQuickScan|Boolean|При блокировке отключается проверка наверстать упущенное для запланированных быстрых сканирований.|
-|defenderDisableCatchupFullScan|Boolean|При блокировке отключается проверка наверстать упущенное для запланированных полных сканов.|
+|defenderScheduleScanEnableLowCpuPriority|Логическое|Если этот параметр включен, во время запланированных проверок будет использоваться низкий приоритет ЦП.|
+|defenderDisableCatchupQuickScan|Логическое|Если эта функция заблокирована, дополнительные проверки на наличие запланированных быстрых проверок будут отключены.|
+|defenderDisableCatchupFullScan|Логическое|При блокировке дополнительные проверки на наличие запланированных полных проверок будут отключены.|
 |defenderScanScriptsLoadedInInternetExplorer|Boolean|Указывает, следует ли проверять сценарии, загружаемые в браузере Internet Explorer.|
 |defenderBlockEndUserAccess|Boolean|Указывает, следует ли заблокировать доступ пользователей к Защитнику.|
 |defenderSignatureUpdateIntervalInHours|Int32|Интервал обновления сигнатур (в часах). Укажите 0, чтобы не проверять. Допустимые значения: от 0 до 24.|
@@ -168,17 +168,17 @@ ms.locfileid: "61341980"
 |defenderScanNetworkFiles|Boolean|Указывает, следует ли сканировать файлы, открытые из сетевой папки.|
 |defenderRequireCloudProtection|Boolean|Указывает, обязательно ли использовать облачную защиту.|
 |defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|Определяет уровень облачной защиты. Возможные значения: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
-|defenderCloudExtendedTimeout|Int32|Расширение времени для сканирования файлов облаком. Допустимые значения: от 0 до 50.|
-|defenderCloudExtendedTimeoutInSeconds|Int32|Расширение времени для сканирования файлов облаком. Допустимые значения: от 0 до 50.|
+|defenderCloudExtendedTimeout|Int32|Расширение времени ожидания для сканирования файлов в облаке. Допустимые значения: от 0 до 50.|
+|defenderCloudExtendedTimeoutInSeconds|Int32|Расширение времени ожидания для сканирования файлов в облаке. Допустимые значения: от 0 до 50.|
 |defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune-deviceconfig-defenderpromptforsamplesubmission.md)|Позволяет указать, нужно ли спрашивать пользователя перед отправкой образцов. Возможные значения: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
 |defenderScheduledQuickScanTime|TimeOfDay|Время ежедневной быстрой проверки.|
 |defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|Тип проверки системы Защитником. Возможные значения: `userDefined`, `disabled`, `quick`, `full`.|
 |defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|День проверки системы Защитником. Возможные значения: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `noScheduledScan`.|
 |defenderScheduledScanTime|TimeOfDay|Время проверки системы Защитником.|
-|defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|Получает или задает действие Defender, чтобы взять на себя потенциально нежелательное приложение (PUA), которое включает программное обеспечение с поведением ad-injection, программным набором, настойчивым запросом на оплату или подписку и т.д. Defender оповещает пользователя при загрузке PUA или попытках установить себя. Добавлено в Windows 10 для рабочего стола. Возможные значения: `deviceDefault`, `block`, `audit`.|
-|defenderPotentiallyUnwantedAppActionSetting|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Получает или задает действие Defender, чтобы взять на себя потенциально нежелательное приложение (PUA), которое включает программное обеспечение с поведением ad-injection, программным набором, настойчивым запросом на оплату или подписку и т.д. Defender оповещает пользователя при загрузке PUA или попытках установить себя. Добавлено в Windows 10 для рабочего стола. Возможные значения: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
-|defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md);|Проверка уровня согласия пользователя в Защитник Windows для отправки данных. Возможные значения: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
-|defenderBlockOnAccessProtection|Boolean|Позволяет или не разрешает Защитник Windows функции защиты доступа.|
+|defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|Возвращает или задает действие Защитника для выполнения действий с потенциально нежелательными приложениями (PUA), которое включает программное обеспечение с поведением внедрения рекламных программ, объединение программного обеспечения, постоянное запрашивание оплаты или подписки и т. д. Defender оповещений пользователя при загрузке PUA или попытке установить себя. Добавлено в Windows 10 для настольных компьютеров. Возможные значения: `deviceDefault`, `block`, `audit`.|
+|defenderPotentiallyUnwantedAppActionSetting|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Возвращает или задает действие Защитника для выполнения действий с потенциально нежелательными приложениями (PUA), которое включает программное обеспечение с поведением внедрения рекламных программ, объединение программного обеспечения, постоянное запрашивание оплаты или подписки и т. д. Defender оповещений пользователя при загрузке PUA или попытке установить себя. Добавлено в Windows 10 для настольных компьютеров. Возможные значения: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
+|defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md);|Проверяет уровень согласия пользователя в Защитник Windows для отправки данных. Возможные значения: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
+|defenderBlockOnAccessProtection|Логическое|Разрешает или запрещает использование Защитник Windows on Access Protection.|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Возвращает или задает действия Защитника в отношении обнаруженного вредоносного ПО для каждого уровня угрозы.|
 |defenderFileExtensionsToExclude|Коллекция String|Расширения файлов, которые необходимо исключить из проверки и защиты в режиме реального времени.|
 |defenderFilesAndFoldersToExclude|Коллекция String|Файлы и папки, которые необходимо исключить из проверки и защиты в режиме реального времени.|
@@ -188,7 +188,7 @@ ms.locfileid: "61341980"
 |lockScreenBlockCortana|Boolean|Указывает, может ли пользователь взаимодействовать с Кортаной с помощью голоса при заблокированной системе.|
 |lockScreenBlockToastNotifications|Boolean|Указывает, следует ли показывать всплывающие уведомления на экране блокировки устройства.|
 |lockScreenTimeoutInSeconds|Int32|Установите время (в секундах) от блокировки экрана до его выключения для мобильных устройств с Windows 10. Поддерживаемые значения: от 11 до 1800. Допустимые значения: от 11 до 1800.|
-|lockScreenActivateAppsWithVoice|[включить](../resources/intune-shared-enablement.md)|В этом параметре политики указывается, Windows приложения можно активировать голосом во время блокировки системы. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|lockScreenActivateAppsWithVoice|[Включения](../resources/intune-deviceconfig-enablement.md)|Этот параметр политики указывает, могут ли приложения Windows активироваться голосовой связью во время блокировки системы. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |passwordBlockSimple|Boolean|Укажите, разрешены ли такие ПИН-коды или пароли, как "1111" или "1234". Это свойство также контролирует использование графических паролей на компьютерах с Windows 10.|
 |passwordExpirationDays|Int32|Срок действия пароля (в днях). Допустимые значения: от 0 до 730.|
 |passwordMinimumLength|Int32|Минимальная длина пароля. Допустимые значения: от 4 до 16.|
@@ -199,16 +199,16 @@ ms.locfileid: "61341980"
 |passwordRequireWhenResumeFromIdleState|Boolean|Указывает, следует ли запрашивать пароль при выходе из состояния простоя.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа до восстановления заводских настроек. Допустимые значения: от 0 до 999.|
-|passwordMinimumAgeInDays|Int32|Этот параметр безопасности определяет период времени (в днях), когда пароль необходимо использовать, прежде чем пользователь сможет изменить его. Допустимые значения от 0 до 998|
+|passwordMinimumAgeInDays|Int32|Этот параметр безопасности определяет период времени (в днях), в течение которого пароль должен использоваться, прежде чем пользователь сможет изменить его. Допустимые значения от 0 до 998|
 |privacyAdvertisingId|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Указывает, можно ли использовать идентификатор рекламы. Добавлено в Windows 10 версии 1607. Возможные значения: `notConfigured`, `blocked`, `allowed`.|
 |privacyAutoAcceptPairingAndConsentPrompts|Boolean|Указывает, следует ли запретить автоматическое принятие примечаний о связывании и конфиденциальности при запуске приложений.|
-|privacyDisableLaunchExperience|Boolean|Эта политика не позволяет запускать функции конфиденциальности во время логоса пользователя для новых и обновленных пользователей.|
+|privacyDisableLaunchExperience|Логическое|Эта политика предотвращает запуск функции конфиденциальности во время входа новых и обновленных пользователей.|
 |privacyBlockInputPersonalization|Boolean|Указывает, следует ли запретить использовать облачные службы распознавания речи для приложений "Кортана", "Диктофон" или Store.|
-|privacyBlockPublishUserActivities|Boolean|Блокирует общие возможности и обнаружение недавно используемых ресурсов в коммутаторе задач и т.д.|
-|privacyBlockActivityFeed|Boolean|Блокирует использование облачных служб речи для Кортана, диктовки или приложений Store.|
-|activateAppsWithVoice|[включить](../resources/intune-shared-enablement.md)|Указывает, Windows приложения можно активировать голосом. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|privacyBlockPublishUserActivities|Логическое|Блокирует общие возможности и обнаружение недавно использовавшихся ресурсов в переключателях задач и т. д.|
+|privacyBlockActivityFeed|Логическое|Блокирует использование облачных служб распознавания речи для приложений Кортаны, Диктовки или Магазина.|
+|activateAppsWithVoice|[Включения](../resources/intune-deviceconfig-enablement.md)|Указывает, можно ли активировать приложения Для Windows с помощью голосовой связи. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |startBlockUnpinningAppsFromTaskbar|Boolean|Указывает, следует ли запретить пользователю откреплять приложения с панели задач.|
-|startMenuAppListVisibility|[WindowsStartMenuAppListVisibilityType](../resources/intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md)|Эта политика позволяет свернуть список приложений, полностью удалить этот список или отключить соответствующий переключатель в приложении "Параметры". Возможные значения: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
+|startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md)|Эта политика позволяет свернуть список приложений, полностью удалить этот список или отключить соответствующий переключатель в приложении "Параметры". Возможные значения: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
 |startMenuHideChangeAccountSettings|Boolean|Эта политика позволяет скрыть параметр для смены учетной записи на плитке пользователя в меню "Пуск".|
 |startMenuHideFrequentlyUsedApps|Boolean|Эта политика позволяет скрыть наиболее часто используемые приложения в меню "Пуск" и отключить соответствующий переключатель в приложении "Параметры".|
 |startMenuHideHibernate|Boolean|Эта политика позволяет скрыть параметр кнопки питания для перехода в режим гибернации в меню "Пуск".|
@@ -271,10 +271,10 @@ ms.locfileid: "61341980"
 |deviceManagementBlockManualUnenroll|Boolean|Указывает, следует ли запретить пользователю вручную отменять регистрацию в системе управления устройствами.|
 |safeSearchFilter|[safeSearchFilterType](../resources/intune-deviceconfig-safesearchfiltertype.md)|Определяет необходимый уровень фильтрации для безопасного поиска. Возможные значения: `userDefined`, `strict`, `moderate`.|
 |edgeBlockPopups|Boolean|Указывает, следует ли блокировать всплывающие окна.|
-|edgeBlockSearchSuggestions|Boolean|Указывает, следует ли блокировать пользователю использование предложений поиска в адресной панели.|
-|edgeBlockSearchEngineCustomization|Boolean|Указывает, следует ли блокировать пользователю добавление новой поисковой системы или изменение поисковой системы по умолчанию.|
-|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Указывает, следует ли переключать трафик интрасети с Edge на Internet Explorer. Примечание: имя этого свойства вводит в заблуждение; свойство устарело, вместо этого используйте EdgeSendIntranetTrafficToInternetExplorer.|
-|edgeSendIntranetTrafficToInternetExplorer|Boolean|Указывает, следует ли переключать трафик интрасети с Edge на Internet Explorer.|
+|edgeBlockSearchSuggestions|Boolean|Указывает, следует ли запретить пользователю использовать предложения поиска в адресной строке.|
+|edgeBlockSearchEngineCustomization|Логическое|Указывает, следует ли запретить пользователю добавлять новую поисковую систему или изменять поисковую систему по умолчанию.|
+|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Указывает, следует ли переключать трафик интрасети с Edge на Internet Explorer. Примечание. Имя этого свойства вводит в заблуждение; Свойство устарело. Вместо этого используйте EdgeSendIntranetTrafficToInternetExplorer.|
+|edgeSendIntranetTrafficToInternetExplorer|Логическое|Указывает, следует ли переключать трафик интрасети с Edge на Internet Explorer.|
 |edgeRequireSmartScreen|Boolean|Указывает, обязательно ли использовать фильтр Smart Screen.|
 |edgeEnterpriseModeSiteListLocation|String|Указывает расположение списка сайтов, запускаемых в корпоративном режиме. Это может быть локальный файл, локальная сеть или http-адрес.|
 |edgeFirstRunUrl|String|URL-адрес, открываемый в браузере Edge при первом запуске.|
@@ -323,25 +323,25 @@ ms.locfileid: "61341980"
 |experienceBlockErrorDialogWhenNoSIM|Boolean|Указывает, следует ли запретить отображение диалогового окна ошибки, если SIM-карта не обнаружена.|
 |experienceBlockTaskSwitcher|Boolean|Указывает, следует ли заблокировать переключение задач на устройстве.|
 |logonBlockFastUserSwitching|Boolean|Отключает возможность быстрого переключения между учетными записями пользователей, вошедших в систему, без выхода из системы.|
-|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Boolean|Требуется ли подключение устройства к сети.|
-|appManagementMSIAllowUserControlOverInstall|Boolean|Этот параметр политики позволяет пользователям изменять параметры установки, которые обычно доступны только системным администраторам.|
-|appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|Этот параметр политики Windows установщику использовать повышенные разрешения при установке какой-либо программы в системе.|
-|dataProtectionBlockDirectMemoryAccess|Boolean|Этот параметр политики позволяет блокировать прямой доступ к памяти (DMA) для всех портов PCI с горячим подключением до тех пор, пока пользователь не войдите в Windows.|
-|appManagementPackageFamilyNamesToLaunchAfterLogOn|Коллекция String|Список полу-двоеточий, делимитированные имена семей пакетов Windows приложений. Перечисленные Windows приложения должны быть запущены после logon.|
+|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Логическое|Указывает, требуется ли устройство для подключения к сети.|
+|appManagementMSIAllowUserControlOverInstall|Логическое|Этот параметр политики позволяет пользователям изменять параметры установки, которые обычно доступны только системным администраторам.|
+|appManagementMSIAlwaysInstallWithElevatedPrivileges|Логическое|Этот параметр политики позволяет установщику Windows использовать повышенные разрешения при установке любой программы в системе.|
+|dataProtectionBlockDirectMemoryAccess|Логическое|Этот параметр политики позволяет блокировать прямой доступ к памяти (DMA) для всех нисходящие порты PCI с горячим подключением, пока пользователь не выполнит вход в Windows.|
+|appManagementPackageFamilyNamesToLaunchAfterLogOn|Коллекция String|Список разделенных точкой с запятой имен семейств пакетов для приложений Для Windows. Перечисленные приложения для Windows должны запускаться после входа в систему.|
 |uninstallBuiltInApps|Boolean|Указывает, следует ли удалить фиксированный список встроенных приложений Windows.|
-|configureTimeZone|Строка|Указывает часовой пояс, который будет применен к устройству. Это стандартное Windows для целевого часовой пояса.|
+|configureTimeZone|String|Указывает часовой пояс, применяемый к устройству. Это стандартное имя Windows для целевого часового пояса.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|groupAssignments|[коллекция deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройства пользователем. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств для пользователей. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Сводка данных о состоянии настройки конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|privacyAccessControls|[коллекция windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)|Указывает список приложений с уровнями контроля доступа к категориям данных конфиденциальности и/или уровням доступа по умолчанию для каждой категории. Эта коллекция может содержать не более 500 элементов.|
+|groupAssignments|[Коллекция deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройства по пользователю. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств для пользователей. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Сводка данных о состоянии настройки конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|privacyAccessControls|[Коллекция windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)|Указывает список приложений с уровнями управления доступом к категориям данных конфиденциальности и (или) уровням доступа по умолчанию для каждой категории. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

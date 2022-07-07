@@ -4,12 +4,12 @@ description: Список microsoft API Graph для Intune конечных т�
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: da6e0cf6c15554d7aef243c8b3d2783724d006d6
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: 97180d2dc1f317fbab1cf63e8414b77693605db1
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65857752"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66667392"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -28,11 +28,16 @@ ms.locfileid: "65857752"
 - [Регистрация управляемых приложений для Android](intune-mam-androidmanagedappregistration.md)
 - [Тип проверки приложений системы безопасности для управляемых приложений для Android](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
 - [Тип аттестации устройства системы безопасности для управляемых приложений для Android](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
-- [Android типа оценки сети безопасности управляемого приложения](intune-mam-androidmanagedappsafetynetevaluationtype.md)
+- [Тип оценки для сети безопасности управляемых приложений Android](intune-mam-androidmanagedappsafetynetevaluationtype.md)
 - [Идентификатор мобильных приложений для Android](intune-mam-androidmobileappidentifier.md)
 - [Уровень управления приложениями](intune-mam-appmanagementlevel.md)
 - [Тип приложения](intune-wip-applicationtype.md)
 - [Защита управляемых приложений по умолчанию](intune-mam-defaultmanagedappprotection.md)
+- [Применимость параметров обмена конфигурацией управления устройствами в Интернете](intune-mam-devicemanagementconfigurationexchangeonlinesettingapplicability.md)
+- [Применимость параметров конфигурации управления устройствами](intune-mam-devicemanagementconfigurationsettingapplicability.md)
+- [Определение значения параметра строки конфигурации управления устройствами](intune-mam-devicemanagementconfigurationstringsettingvaluedefinition.md)
+- [Технологии конфигурации управления устройствами](intune-mam-devicemanagementconfigurationtechnologies.md)
+- [Применимость параметров конфигурации управления устройствами](intune-mam-devicemanagementconfigurationwindowssettingapplicability.md)
 - [Тип платформы устройства](intune-wip-deviceplatformtype.md)
 - [Профиль фирменной символики Intune](intune-wip-intunebrandingprofile.md)
 - [Назначение профиля фирменной символики Intune](intune-wip-intunebrandingprofileassignment.md)
@@ -68,7 +73,7 @@ ms.locfileid: "65857752"
 - [Тип целевой управляемой группы приложений](intune-mam-targetedmanagedappgrouptype.md)
 - [Назначение целевой политики для управляемых приложений](intune-mam-targetedmanagedapppolicyassignment.md)
 - [Целевая защита управляемых приложений](intune-mam-targetedmanagedappprotection.md)
-- [Windows приложения](intune-mam-windowsappidentifier.md)
+- [Идентификатор приложения Для Windows](intune-mam-windowsappidentifier.md)
 - [Windows Information Protection](intune-mam-windowsinformationprotection.md)
 - [Приложение Windows Information Protection](intune-mam-windowsinformationprotectionapp.md)
 - [Сводка по обучению приложения Windows Information Protection](intune-wip-windowsinformationprotectionapplearningsummary.md)
@@ -85,6 +90,6 @@ ms.locfileid: "65857752"
 - [Коллекция ресурсов Windows Information Protection](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Приложение из магазина Windows Information Protection](intune-mam-windowsinformationprotectionstoreapp.md)
 - [Действие wipe для Windows Information Protection](intune-mam-windowsinformationprotectionwipeaction.md)
-- [Windows буфера обмена управляемого приложения](intune-mam-windowsmanagedappclipboardsharinglevel.md)
-- [Windows передачи данных управляемого приложения](intune-mam-windowsmanagedappdatatransferlevel.md)
-- [Windows управляемого приложения](intune-mam-windowsmanagedappprotection.md)
+- [Уровень общего доступа к буферу обмена управляемого приложения Windows](intune-mam-windowsmanagedappclipboardsharinglevel.md)
+- [Уровень передачи данных управляемого приложения Windows](intune-mam-windowsmanagedappdatatransferlevel.md)
+- [Защита управляемых приложений Windows](intune-mam-windowsmanagedappprotection.md)

@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 9c5f3d6cb9be4d8b5456e5d348e9cc89d874c007
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 5eca1c3b8455bc2b9ba9694a7beb4b2f1132e84f
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555543"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670333"
 ---
 # <a name="update-application"></a>Обновление приложения
 
@@ -31,10 +31,10 @@ ms.locfileid: "66555543"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Application.ReadWrite.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All    |
-|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
-Замените `{id}` **идентификатор объекта** приложения, который также называется идентификатором **объекта в портал Azure**.
+Замените `{id}` **идентификатором** объекта приложения, также называемым **ИД объекта** на портале Azure.
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /applications/{id}
@@ -42,7 +42,7 @@ PATCH /applications/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный.  |
+| Авторизация | Bearer {token}. Обязательный.  |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -64,6 +64,7 @@ PATCH /applications/{id}
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md)          | Указывает параметры родительского контроля для приложения.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | publicClient            | [publicClientApplication](../resources/publicclientapplication.md)          | Указывает параметры для установленных клиентов, например классических или мобильных устройств.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | requiredResourceAccess  | Коллекция [requiredResourceAccess](../resources/requiredresourceaccess.md) | Указывает ресурсы, к которым приложению необходимо получить доступ. В этом свойстве также указывается набор делегированных разрешений и ролей приложения, необходимых для каждого из этих ресурсов. Эта настройка доступа к необходимым ресурсам определяет порядок предоставления согласия. Можно настроить не более 50 служб ресурсов (API). С середины октября 2021 г. общее количество необходимых разрешений не должно превышать 400. Значение null не допускается.                                                                                                                 |
+| samlMetadataUrl | Строка | URL-адрес, по которому служба предоставляет метаданные SAML для федерации. Это свойство допустимо только для приложений с одним клиентом. |
 | signInAudience          | String                                                                      | Указывает, какие учетные записи Майкрософт поддерживаются для текущего приложения. Поддерживаемые значения:<ul><li>`AzureADMyOrg` — пользователи с рабочей или учебной учетной записью Майкрософт в клиенте Azure AD моей организации (т. е. один клиент)</li><li>`AzureADMultipleOrgs` — пользователи с рабочей или учебной учетной записью Майкрософт в клиенте Azure AD любой организации (т. е. несколько клиентов)</li> <li>`AzureADandPersonalMicrosoftAccount` — пользователи с личной учетной записью Майкрософт, рабочей или учебной учетной записью в клиенте Azure AD любой организации</li></ul>                           |
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Указывает параметры для одностраничного приложения, в том числе URL-адреса выхода и URI перенаправления для кодов авторизации и маркеров доступа. |
 | tags                    | Коллекция String                                                           | Настраиваемые строки, которые можно использовать для классификации и определения приложения. Значение null не допускается.                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |

@@ -4,12 +4,12 @@ description: Список microsoft API Graph для Intune конечных т�
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: c0409951587da135830bbc567b6c3684716a192f
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 509a99d0d4104566295244c83826c6fdca8c8909
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65203241"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668799"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Конфигурация устройства в Microsoft Intune
 
@@ -21,7 +21,7 @@ ms.locfileid: "65203241"
 
 Используйте рабочую нагрузку Microsoft Intune конфигурации устройства для управления параметрами и функциями на всех управляемых устройствах.
 
-Следующие Graph доступны для управления параметрами и функциями на устройствах в Intune:
+Для управления параметрами и функциями на устройствах в Intune доступны следующие ресурсы Graph:
 
 - [Состояние соответствия требованиям настроенного администратором устройства ](intune-deviceconfig-administratorconfigureddevicecompliancestate.md)
 - [Состояние расширенного шифрования BitLocker](intune-deviceconfig-advancedbitlockerstate.md)
@@ -445,7 +445,6 @@ ms.locfileid: "65203241"
 - [Состояние шифрования управляемого устройства](intune-deviceconfig-manageddeviceencryptionstate.md)
 - [Состояние настройки конфигурации мобильного приложения управляемого устройства](intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md)
 - [Сообщение из отчета для управляемого устройства](intune-deviceconfig-manageddevicereportedapp.md)
-- [Тип агента управления](intune-deviceconfig-managementagenttype.md)
 - [Рейтинг мультимедийного содержимого для Австралии](intune-deviceconfig-mediacontentratingaustralia.md)
 - [Оценка мультимедийного содержимого для Канады](intune-deviceconfig-mediacontentratingcanada.md)
 - [Оценка мультимедийного содержимого для Франции](intune-deviceconfig-mediacontentratingfrance.md)
@@ -475,7 +474,7 @@ ms.locfileid: "65203241"
 - [Параметр OMA, строка, XML](intune-deviceconfig-omasettingstringxml.md)
 - [На предварительно зашифрованных полезных данных](intune-raimportcerts-onpremencryptedpayload.md)
 - [Диапазон версий операционной системы](intune-deviceconfig-operatingsystemversionrange.md)
-- [Operator](intune-deviceconfig-operator.md)
+- [Описание](intune-deviceconfig-operator.md)
 - [Идеальное перенаправление группы секретности](intune-deviceconfig-perfectforwardsecrecygroup.md)
 - [Режим личного магазина воспроизведения личного профиля](intune-deviceconfig-personalprofilepersonalplaystoremode.md)
 - [Запрос на повторное шифрование Pfx](intune-raimportcerts-pfxrecryptionrequest.md)
@@ -602,10 +601,10 @@ ms.locfileid: "65203241"
 - [Размер плитки на макете запуска для приложения Windows](intune-deviceconfig-windowsappstartlayouttilesize.md)
 - [База профилей сертификатов Windows ](intune-deviceconfig-windowscertificateprofilebase.md)
 - [Конфигурация Advanced Threat Protection в Защитнике Windows](intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md)
-- [Windows защиты от незаконного изменения в защитнике](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
+- [Параметры защиты от незаконного изменения Защитника Windows](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
 - [Конфигурация оптимизации доставки в Windows](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Режим оптимизации доставки в Windows](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
-- [Windows пограничного киоска](intune-deviceconfig-windowsedgekiosktype.md)
+- [Тип терминала Для пограничных устройств Windows](intune-deviceconfig-windowsedgekiosktype.md)
 - [Сетевой профиль брандмауэра Windows](intune-deviceconfig-windowsfirewallnetworkprofile.md)
 - [Правило брандмауэра Windows](intune-deviceconfig-windowsfirewallrule.md)
 - [Типы интерфейсов правила брандмауэра Windows](intune-deviceconfig-windowsfirewallruleinterfacetypes.md)
@@ -623,17 +622,17 @@ ms.locfileid: "65203241"
 - [Пользователь Azure AD киоска Windows](intune-deviceconfig-windowskioskazureaduser.md)
 - [Конфигурация киоска Windows](intune-deviceconfig-windowskioskconfiguration.md)
 - [Классическое приложение киоска Windows](intune-deviceconfig-windowskioskdesktopapp.md)
-- [Windows расписания принудительного обновления киоска](intune-deviceconfig-windowskioskforceupdateschedule.md)
+- [Расписание принудительного обновления терминала Windows](intune-deviceconfig-windowskioskforceupdateschedule.md)
 - [Локальная группа киоска Windows](intune-deviceconfig-windowskiosklocalgroup.md)
 - [Локальный пользователь киоска Windows](intune-deviceconfig-windowskiosklocaluser.md)
 - [Несколько приложений киоска Windows](intune-deviceconfig-windowskioskmultipleapps.md)
 - [Профиль киоска Windows](intune-deviceconfig-windowskioskprofile.md)
 - [Отдельное приложение UWP киоска Windows](intune-deviceconfig-windowskiosksingleuwpapp.md)
-- [Windows киоска с одним приложением Win32](intune-deviceconfig-windowskiosksinglewin32app.md)
+- [Одно приложение Win32 киоска Windows](intune-deviceconfig-windowskiosksinglewin32app.md)
 - [Пользователь киоска Windows](intune-deviceconfig-windowskioskuser.md)
 - [Приложение UWP киоска Windows](intune-deviceconfig-windowskioskuwpapp.md)
 - [Посетитель киоска Windows](intune-deviceconfig-windowskioskvisitor.md)
-- [Windows киоска win32](intune-deviceconfig-windowskioskwin32app.md)
+- [Приложение Win32 киоска Windows](intune-deviceconfig-windowskioskwin32app.md)
 - [Политика сетевой изоляции Windows](intune-deviceconfig-windowsnetworkisolationpolicy.md)
 - [База профилей сертификатов Windows Phone 8.1](intune-deviceconfig-windowsphone81certificateprofilebase.md)
 - [Политика соответствия для Windows Phone 8.1](intune-deviceconfig-windowsphone81compliancepolicy.md)
@@ -664,7 +663,7 @@ ms.locfileid: "65203241"
 - [Тип VPN-подключения для Windows](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Конфигурация Wi-Fi для Windows](intune-deviceconfig-windowswificonfiguration.md)
 - [Конфигурация корпоративного типа EAP для Wi-Fi в Windows](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
-- [Windows проводной сети](intune-deviceconfig-windowswirednetworkconfiguration.md)
+- [Конфигурация проводной сети Windows](intune-deviceconfig-windowswirednetworkconfiguration.md)
 - [Метод проверки подлинности проводной сети](intune-deviceconfig-wirednetworkauthenticationmethod.md)
 - [Тип проверки подлинности проводной сети](intune-deviceconfig-wirednetworkauthenticationtype.md)
 - [Сетевой интерфейс проводной связи](intune-deviceconfig-wirednetworkinterface.md)

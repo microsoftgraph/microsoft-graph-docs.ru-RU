@@ -5,12 +5,12 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 ms.localizationpriority: high
-ms.openlocfilehash: b8020b413b9d3368bc1b3a7bb0dfb93fe93a18be
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 2b6748d9e2d8f3a0720053083daa33c751554150
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66437900"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668064"
 ---
 # <a name="working-with-the-cloud-communications-api-in-microsoft-graph"></a>Работа с API облачных коммуникаций в Microsoft Graph
 
@@ -38,20 +38,20 @@ API облачных коммуникаций можно использоват�
 
 | Варианты использования                         | Ресурсы REST                                 | См. также  |
 |:------------------------------------|:---------------------------------------------|:----------|
-| Создание приватных и групповых звонков, а также присоединение к ним   | [Звонок](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true)| [Методы звонков](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true#methods)|
-|Звонки с интерактивным речевым взаимодействием   |     | [Методы для интерактивного речевого взаимодействия](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta?&preserve-view=true)
-| Элементы управления звонком (участник) | [Участник](/graph/api/resources/participant?view=graph-rest-beta&preserve-view=true)   ||
-|Собрания|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true)| [Методы для собраний](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true#methods)|
+| Создание приватных и групповых звонков, а также присоединение к ним   | [Звонок](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true&preserve-view=true)| [Методы звонков](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true#methods&preserve-view=true)|
+|Звонки с интерактивным речевым взаимодействием   |     | [Методы для интерактивного речевого взаимодействия](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta?&preserve-view=true&preserve-view=true)
+| Элементы управления звонком (участник) | [Участник](/graph/api/resources/participant?view=graph-rest-beta&preserve-view=true&preserve-view=true)   ||
+|Собрания|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true&preserve-view=true)| [Методы для собраний](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true#methods&preserve-view=true)|
 |Присутствие | [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) | [Методы для присутствия](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true#methods) |
-| Получение записей звонков | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true) | [Подписки веб-перехватчиков](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true) |
+| Получение записей звонков | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true&preserve-view=true) | [Подписки веб-перехватчиков](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true&preserve-view=true) |
 
 ## <a name="common-properties"></a>Общие свойства
 
 | Ресурс                | Свойства                             |
 |:------------------------------------|:---------------------------------------------|
-| call                               | [свойства объекта call](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true#properties)  |
-| participant                         | [свойства объекта participant](/graph/api/resources/participant?view=graph-rest-beta?view=graph-rest-v1.0&preserve-view=true#properties) |
-| onlineMeeting                            | [свойства объекта onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true#properties)                     |
+| call                               | [свойства объекта call](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true#properties&preserve-view=true)  |
+| participant                         | [свойства объекта participant](/graph/api/resources/participant?view=graph-rest-beta?view=graph-rest-v1.0&preserve-view=true#properties&preserve-view=true) |
+| onlineMeeting                            | [свойства объекта onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true#properties&preserve-view=true)                     |
 | presence | [свойства объекта presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true#properties) |
 | callRecord | [Свойства callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true#properties) |
 

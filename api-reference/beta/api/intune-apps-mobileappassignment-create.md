@@ -2,21 +2,21 @@
 title: Создание объекта mobileAppAssignment
 description: Создание объекта mobileAppAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7d0b8fd9b4ecab48fbf53fb18782f6f2a6ceeef0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bc03453f20d25bc6987bcc4b5289a98e2ca36218
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59077890"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66667006"
 ---
 # <a name="create-mobileappassignment"></a>Создание объекта mobileAppAssignment
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,7 +57,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 |intent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки, определенная администратором. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевое назначение группы, определенное администратором.|
 |settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|Параметры целевого назначения, определенные администратором.|
-|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Тип ресурса, который является источником назначения. Возможные значения: `direct`, `policySets`.|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Тип ресурса, который является источником для назначения. Возможные значения: `direct`, `policySets`.|
 |sourceId|String|Идентификатор источника назначения.|
 
 
@@ -72,7 +72,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/assignments
 Content-type: application/json
-Content-length: 617
+Content-length: 540
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -83,10 +83,8 @@ Content-length: 617
     "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-    "vpnConfigurationId": "Vpn Configuration Id value",
-    "uninstallOnDeviceRemoval": true,
-    "isRemovable": true
+    "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
+    "useDeviceContext": true
   },
   "source": "policySets",
   "sourceId": "Source Id value"
@@ -98,7 +96,7 @@ Content-length: 617
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 666
+Content-Length: 589
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -110,15 +108,14 @@ Content-Length: 666
     "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-    "vpnConfigurationId": "Vpn Configuration Id value",
-    "uninstallOnDeviceRemoval": true,
-    "isRemovable": true
+    "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
+    "useDeviceContext": true
   },
   "source": "policySets",
   "sourceId": "Source Id value"
 }
 ```
+
 
 
 

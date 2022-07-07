@@ -599,8 +599,12 @@ items:
               - name: Обзор
                 displayName: throttling
                 href: throttling.md
+              - name: Ограничения для отдельных служб
+                displayName: throttling
+                href: throttling-limits.md
               - name: Оптимизация сетевого трафика
                 href: /learn/modules/optimize-network-traffic
+                displayName: throttling
           - name: Уведомления об изменениях
             items:
               - name: Обзор

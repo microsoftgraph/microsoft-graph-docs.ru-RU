@@ -4,12 +4,12 @@ description: 'Узнайте о моделях лицензирования и �
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: ac8a08b849204558d0315bdb4aa316378c0f8ee4
-ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
+ms.openlocfilehash: 3216ecfa998cf6b2a02ec588992e8622a523038c
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2022
-ms.locfileid: "66609628"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668162"
 ---
 # <a name="licensing-and-payment-requirements-for-the-microsoft-teams-api"></a>Требования к лицензированию и оплате для Microsoft Teams API
 
@@ -17,9 +17,9 @@ ms.locfileid: "66609628"
 
 Некоторые интерфейсы API предоставляют возможность выбора модели лицензирования и оплаты с помощью параметра запроса `model`; другие поддерживают только одну модель или не поддерживают модели лицензирования и оплаты. Плата за использование предусмотрена для следующих API.
 
-* [Экспорт содержимого Teams](/graph/api/export-teams-content.md)
-* [Создание подписки](/graph/api/subscription-post-subscriptions.md)
-* [Обновление сообщения чата](/graph/api/chatmessage-update.md)
+* [Экспорт содержимого Teams](/microsoftteams/export-teams-content)
+* [Создание подписки](/graph/api/subscription-post-subscriptions)
+* [Обновление сообщения чата](/graph/api/chatmessage-update)
 * [Получить сообщение канала](/graph/api/chatmessage-get)
 * [Получение сообщения в чате](/graph/api/chatmessage-get)
 

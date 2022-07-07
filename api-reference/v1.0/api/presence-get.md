@@ -1,22 +1,22 @@
 ---
-title: Получить присутствие
-description: Получите сведения о присутствии пользователя.
+title: Получение сведений о присутствии
+description: Получение сведений о присутствии пользователя.
 author: mkhribech
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 2016e018afb155df4969027347635e3465c52651
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1620d747394540e198fe106f8a965a20a9e35ab4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117064"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442927"
 ---
-# <a name="get-presence"></a>Получить присутствие
+# <a name="get-presence"></a>Получение сведений о присутствии
 
 Пространство имен: microsoft.graph
 
-Получите сведения о [присутствии](../resources/presence.md) пользователя.
+Получение сведений о [присутствии](../resources/presence.md) пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этих API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "62117064"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                        |
 | Приложение                            | Не поддерживается.                        |
 
-> **Примечание:** Максимальная скорость запроса для этого API — 1500 запросов API в течение 30 секунд на каждого клиента.
+> **Примечание:** Максимальная частота запросов для этого API составляет 1500 запросов API в течение 30 секунд для каждого приложения на клиент.
 
 ## <a name="http-requests"></a>HTTP-запросы
 <!-- { "blockType": "ignored" } -->
@@ -37,22 +37,22 @@ GET /users/{id}/presence
 GET /communications/presences
 ```
 
-## <a name="request-headers"></a>Запрашивать заглавные
+## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {token}. Обязательный. |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` объект [присутствия](../resources/presence.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [присутствия](../resources/presence.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-your-own-presence-information"></a>Пример 1. Получить сведения о собственном присутствии
+### <a name="example-1-get-your-own-presence-information"></a>Пример 1. Получение сведений о присутствии
 
 В следующем примере показано, как получить собственные сведения о присутствии. Для этой операции требуется разрешение Presence.Read.
 
@@ -119,7 +119,7 @@ Content-Length: 1574
 }
 ```
 
-### <a name="example-2-get-the-presence-information-of-another-user"></a>Пример 2. Получить сведения о присутствии другого пользователя
+### <a name="example-2-get-the-presence-information-of-another-user"></a>Пример 2. Получение сведений о присутствии другого пользователя
 
 В следующем примере показано, как получить сведения о присутствии для другого пользователя. Для этой операции требуется разрешение Presence.Read.All.
 
@@ -185,7 +185,7 @@ Content-Length: 1574
 }
 ```
 
-### <a name="example-3-get-the-presence-information-of-another-user"></a>Пример 3. Получить сведения о присутствии другого пользователя
+### <a name="example-3-get-the-presence-information-of-another-user"></a>Пример 3. Получение сведений о присутствии другого пользователя
 
 В следующем примере показано, как получить сведения о присутствии для другого пользователя. Для этой операции требуется разрешение Presence.Read.All.
 
@@ -219,6 +219,10 @@ GET https://graph.microsoft.com/v1.0/communications/presences/dc74d9bb-6afe-433d
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-presences-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-user-presences-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

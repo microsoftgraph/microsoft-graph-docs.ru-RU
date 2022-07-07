@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: directory-management
 author: jconley76
-ms.openlocfilehash: ed149138aac5253ffbb2af4ef6447fffce3b9522
-ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
+ms.openlocfilehash: 65cf81462f658fe2c11dc3b4c6c67f3a7b62900b
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65549493"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66669002"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>Тип ресурса licenseUnitsDetail
 
@@ -18,7 +18,7 @@ ms.locfileid: "65549493"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Свойство **prepaidUnits** объекта [subscribedSku](subscribedsku.md) относится к типу **licenseUnitsDetail**. Дополнительные сведения о состоянии хода выполнения подписки см. в разделе "Что делать, [если срок действия подписки истекает?".](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires?view=o365-worldwide)
+Свойство **prepaidUnits** объекта [subscribedSku](subscribedsku.md) относится к типу **licenseUnitsDetail**. Дополнительные сведения о состоянии хода выполнения подписки см. в разделе "Что делать, [если срок действия подписки истекает?".](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires?view=o365-worldwide&preserve-view=true)
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

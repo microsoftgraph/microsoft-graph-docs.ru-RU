@@ -1,26 +1,26 @@
 ---
-title: Создание deviceManagementConfigurationSetting
-description: Создайте новый объект deviceManagementConfigurationSetting.
+title: Создание объекта deviceManagementConfigurationSetting
+description: Создайте объект deviceManagementConfigurationSetting.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c8a02e12098c3b5f9795aa75abf996149ecf40f
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 7a8ac30f146ee0b8847faf86624a05cb5d86cb4e
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61344255"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668561"
 ---
-# <a name="create-devicemanagementconfigurationsetting"></a>Создание deviceManagementConfigurationSetting
+# <a name="create-devicemanagementconfigurationsetting"></a>Создание объекта deviceManagementConfigurationSetting
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создайте новый [объект deviceManagementConfigurationSetting.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)
+Создайте объект [deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "61344255"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -48,19 +48,19 @@ POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolic
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для объекта deviceManagementConfigurationSetting.
+В теле запроса добавьте представление объекта deviceManagementConfigurationSetting в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании устройстваManagementConfigurationSetting.
+В следующей таблице показаны свойства, необходимые при создании объекта deviceManagementConfigurationSetting.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ этого параметра в политике, содержа которой он содержится. Автоматически созданный.|
-|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|Настройка экземпляра|
+|id|String|Ключ этого параметра в политике, которая его содержит. Создается автоматически.|
+|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|Настройка экземпляра|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и `201 Created` [объект deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 

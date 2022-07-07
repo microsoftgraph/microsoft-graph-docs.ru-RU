@@ -1,22 +1,22 @@
 ---
-title: тип ресурса assignmentFilterEvaluateRequest
+title: Тип ресурса assignmentFilterEvaluateRequest
 description: Запрос на оценку фильтра назначения для устройств.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee45c31df0eb2bdd8f65eb670af4a3a83b64f0b9
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 4a3dde68384dcf9813167544a8d2b56c8db7a98e
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368163"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66666860"
 ---
-# <a name="assignmentfilterevaluaterequest-resource-type"></a>тип ресурса assignmentFilterEvaluateRequest
+# <a name="assignmentfilterevaluaterequest-resource-type"></a>Тип ресурса assignmentFilterEvaluateRequest
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -26,10 +26,11 @@ ms.locfileid: "63368163"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |платформа|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Тип платформы устройств, на которых будет применяться фильтр назначения. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|правило|Строка|Определение правила фильтра назначения.|
-|top|Int32|Ограничение записей на запрос. Значение по умолчанию — 100, если предоставлено менее 0 или более 100|
+|Правило|String|Определение правила фильтра назначения.|
+|top|Int32|Ограничение записей на запрос. Значение по умолчанию — 100, если указано меньше 0 или больше 100|
 |skip|Int32|Количество записей, которые нужно пропустить. Значение по умолчанию — 0|
-|orderBy|Коллекция строк|Заказать сортировку устройств. Значение по умолчанию возрастает по имени устройства.|
+|Orderby|Коллекция объектов string|Упорядочивания устройств должны быть отсортированы. Значение по умолчанию — по возрастанию по имени устройства.|
+|search|String|Ключевое слово поиска, примененное к найденным устройствам области.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -50,7 +51,8 @@ ms.locfileid: "63368163"
   "skip": 1024,
   "orderBy": [
     "String"
-  ]
+  ],
+  "search": "String"
 }
 ```
 

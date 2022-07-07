@@ -1,22 +1,22 @@
 ---
 title: Удаление владельца группы
-description: Используйте этот API, чтобы удалить владельца из Microsoft 365 группы безопасности или группы безопасности с помощью свойства навигации владельцев.
+description: Используйте этот API, чтобы удалить владельца из группы Microsoft 365 или группы безопасности с помощью свойства навигации владельцев.
 ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f7b515496427b552d459a838a2f9720f6971f6c6
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 386921b0049cffa4e26a90b69afcfb202c12c3f7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65694463"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442228"
 ---
 # <a name="remove-group-owner"></a>Удаление владельца группы
 
 Пространство имен: microsoft.graph
 
-Используйте этот API, чтобы удалить владельца из Microsoft 365 или группы безопасности с помощью свойства **навигации** владельцев. После назначения владельцев группе последний владелец (объект пользователя) группы не может быть удален.
+Используйте этот API, чтобы удалить владельца из группы Microsoft 365 или группы безопасности с помощью свойства **навигации владельцев** . После назначения владельцев группе последний владелец (объект пользователя) группы не может быть удален.
 
 > **Примечание:** Сведения о проблемах, возникших при удалении владельца [группы,](/graph/api/resources/team.md) связанной с командой, см. в разделе ["Известные проблемы"](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member).
 
@@ -91,6 +91,10 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-owner-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-owner-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

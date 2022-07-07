@@ -1,21 +1,23 @@
 ---
-title: Используйте API Поиск (Майкрософт) для поиска контента с помощью шаблонов запросов (предварительный просмотр)
-description: Узнайте, как использовать шаблоны запросов в API Поиск (Майкрософт) для поиска контента на основе переменных запросов и KQL.
+title: Использование API поиска (Майкрософт) для поиска содержимого с помощью шаблонов запросов
+description: Узнайте, как использовать шаблоны запросов в API поиска (Майкрософт) в Microsoft Graph для поиска содержимого на основе переменных запроса и KQL.
 author: yiwenwang
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 717ea2e319d426403eeb3907e58769efa743856c
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 6fe067a493cf9b715ed5fee1f2405e81783b4ee7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589514"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436962"
 ---
-# <a name="use-the-microsoft-search-api-to-search-content-using-query-templates-preview"></a>Используйте API Поиск (Майкрософт) для поиска контента с помощью шаблонов запросов (предварительный просмотр)
-В этой статье вы узнаете, как использовать шаблоны запросов в API Поиск (Майкрософт) для поиска контента на основе переменных запросов [и KQL](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).[](/sharepoint/technical-reference/query-variables) Это позволяет ограничить область запросов и создать собственный опыт поиска.
+# <a name="use-the-microsoft-search-api-to-search-content-using-query-templates"></a>Использование API поиска (Майкрософт) для поиска содержимого с помощью шаблонов запросов
+
+Шаблоны запросов можно использовать в API поиска (Майкрософт) в Microsoft Graph для поиска содержимого на основе переменных запроса [и](/sharepoint/technical-reference/query-variables) [KQL](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). Это позволяет ограничить область запроса и создать собственный интерфейс поиска.
 
 ## <a name="example"></a>Пример
-В следующем примере показан запрос, использующий шаблон запроса для поиска контента на [](/sharepoint/technical-reference/query-variables) основе переменной и [KQL](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
+
+В следующем примере показан запрос, использующий шаблон запроса для поиска содержимого на основе переменной запроса и KQL.
 
 ### <a name="request"></a>Запрос
 
@@ -139,4 +141,4 @@ Content-type: application/json
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview)

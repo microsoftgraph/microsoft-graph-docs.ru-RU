@@ -1,26 +1,26 @@
 ---
-title: Get windowsManagedDevice
+title: Получение windowsManagedDevice
 description: Чтение свойств и связей объекта windowsManagedDevice.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f17b3ef75488962b43654cdc95e6f297bd41ceb
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 967ba540b13dd842d09779342f95de0ba8250683
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61347825"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66667146"
 ---
-# <a name="get-windowsmanageddevice"></a>Get windowsManagedDevice
+# <a name="get-windowsmanageddevice"></a>Получение windowsManagedDevice
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей [объекта windowsManagedDevice.](../resources/intune-devices-windowsmanageddevice.md)
+Чтение свойств и связей объекта [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "61347825"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -59,7 +59,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект WindowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и [объект windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9093
+Content-Length: 9589
 
 {
   "value": {
@@ -124,7 +124,16 @@ Content-Length: 9093
       "esimIdentifier": "Esim Identifier value",
       "systemManagementBIOSVersion": "System Management BIOSVersion value",
       "tpmManufacturer": "Tpm Manufacturer value",
-      "tpmVersion": "Tpm Version value"
+      "tpmVersion": "Tpm Version value",
+      "wiredIPv4Addresses": [
+        "Wired IPv4Addresses value"
+      ],
+      "batteryLevelPercentage": 7.333333333333333,
+      "residentUsersCount": 2,
+      "productName": "Product Name value",
+      "deviceLicensingStatus": "licenseRefreshPending",
+      "deviceLicensingLastErrorCode": 12,
+      "deviceLicensingLastErrorDescription": "Device Licensing Last Error Description value"
     },
     "ownerType": "company",
     "managedDeviceOwnerType": "company",
@@ -277,7 +286,9 @@ Content-Length: 9093
         "updatable": true
       }
     ],
-    "enrollmentProfileName": "Enrollment Profile Name value"
+    "enrollmentProfileName": "Enrollment Profile Name value",
+    "bootstrapTokenEscrowed": true,
+    "deviceFirmwareConfigurationInterfaceManaged": true
   }
 }
 ```

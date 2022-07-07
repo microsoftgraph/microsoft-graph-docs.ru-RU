@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99a7b269792151cd1109662c6fc850b508aa9649
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: d9df45387f3673d3bf49ae2517014fab22015cba
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61343541"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66669947"
 ---
 # <a name="get-manageddevice"></a>Получение managedDevice
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "61343541"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9086
+Content-Length: 9582
 
 {
   "value": {
@@ -124,7 +124,16 @@ Content-Length: 9086
       "esimIdentifier": "Esim Identifier value",
       "systemManagementBIOSVersion": "System Management BIOSVersion value",
       "tpmManufacturer": "Tpm Manufacturer value",
-      "tpmVersion": "Tpm Version value"
+      "tpmVersion": "Tpm Version value",
+      "wiredIPv4Addresses": [
+        "Wired IPv4Addresses value"
+      ],
+      "batteryLevelPercentage": 7.333333333333333,
+      "residentUsersCount": 2,
+      "productName": "Product Name value",
+      "deviceLicensingStatus": "licenseRefreshPending",
+      "deviceLicensingLastErrorCode": 12,
+      "deviceLicensingLastErrorDescription": "Device Licensing Last Error Description value"
     },
     "ownerType": "company",
     "managedDeviceOwnerType": "company",
@@ -277,7 +286,9 @@ Content-Length: 9086
         "updatable": true
       }
     ],
-    "enrollmentProfileName": "Enrollment Profile Name value"
+    "enrollmentProfileName": "Enrollment Profile Name value",
+    "bootstrapTokenEscrowed": true,
+    "deviceFirmwareConfigurationInterfaceManaged": true
   }
 }
 ```

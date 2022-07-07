@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы и ограничения в Microsoft Graph, а также приводятся возможные временные решения.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 45566a7b451dd0de3938c6a3d2cb7cb31b2393ba
-ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
+ms.openlocfilehash: 8d64aeace070fb646145faf9f06d3a3df0bbaafe
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66577583"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645452"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -432,6 +432,13 @@ GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
 }
 ```
 Чтобы решить эту проблему, удалите часть `/tenants/{tenant-id}` URL-адреса, прежде чем вызывать API для доступа к общему [каналу](/graph/api/resources/channel.md) между арендаторами.
+
+### <a name="teamworkappsettings-permissions-are-not-visible-in-the-azure-portal"></a>Разрешения TeamworkAppSettings не отображаются на портале Azure
+Разрешения TeamworkAppSettings.Read.All и TeamworkAppSettings.ReadWrite.All в настоящее время развертываются и могут не отображаться на портале Azure. Чтобы предоставить согласие на эти разрешения, используйте запрос авторизации следующим образом.
+
+```http
+GET https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/authorize?client_id={client-app-id}&response_type=code&scope=https://graph.microsoft.com/TeamworkAppSettings.ReadWrite.All
+```
 
 ## <a name="users"></a>Пользователи
 

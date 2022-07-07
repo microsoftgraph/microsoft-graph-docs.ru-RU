@@ -1,45 +1,45 @@
 ---
-title: тип ресурса comanagementEligibleDevice
-description: Состояние Co-Management устройства
+title: Тип ресурса comanagementEligibleDevice
+description: Состояние Co-Management устройств
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a198c326265195c43a331a1dd03996c0e3c3139a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6d9c17a3de8a1b2d3bf30874f0202cf432447ef6
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59111056"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670823"
 ---
-# <a name="comanagementeligibledevice-resource-type"></a>тип ресурса comanagementEligibleDevice
+# <a name="comanagementeligibledevice-resource-type"></a>Тип ресурса comanagementEligibleDevice
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние Co-Management устройства
+Состояние Co-Management устройств
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список comanagementEligibleDevices](../api/intune-devices-comanagementeligibledevice-list.md)|[коллекция comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)|Список свойств и связей [объектов comanagementEligibleDevice.](../resources/intune-devices-comanagementeligibledevice.md)|
-|[Get comanagementEligibleDevice](../api/intune-devices-comanagementeligibledevice-get.md)|[comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)|Чтение свойств и связей [объекта comanagementEligibleDevice.](../resources/intune-devices-comanagementeligibledevice.md)|
-|[Создание comanagementEligibleDevice](../api/intune-devices-comanagementeligibledevice-create.md)|[comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)|Создайте новый [объект comanagementEligibleDevice.](../resources/intune-devices-comanagementeligibledevice.md)|
+|[Перечисление comanagementEligibleDevices](../api/intune-devices-comanagementeligibledevice-list.md)|[Коллекция comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)|Список свойств и связей объектов [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) .|
+|[Получение comanagementEligibleDevice](../api/intune-devices-comanagementeligibledevice-get.md)|[comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)|Чтение свойств и связей объекта [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) .|
+|[Создание comanagementEligibleDevice](../api/intune-devices-comanagementeligibledevice-create.md)|[comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)|Создайте объект [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) .|
 |[Удаление comanagementEligibleDevice](../api/intune-devices-comanagementeligibledevice-delete.md)|Нет|Удаляет [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md).|
-|[Обновление comanagementEligibleDevice](../api/intune-devices-comanagementeligibledevice-update.md)|[comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)|Обновление свойств объекта [comanagementEligibleDevice.](../resources/intune-devices-comanagementeligibledevice.md)|
+|[Обновление comanagementEligibleDevice](../api/intune-devices-comanagementeligibledevice-update.md)|[comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)|Обновление свойств объекта [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный ID для устройства|
+|id|String|Уникальный идентификатор устройства|
 |deviceName|String|DeviceName|
-|deviceType|[deviceType](../resources/intune-devices-devicetype.md)|DeviceType. Возможные значения: `desktop` `windowsRT` , `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `chromeOS` `linux` `blackberry` `palm` , `unknown` `cloudPC` , .|
+|deviceType|[deviceType](../resources/intune-devices-devicetype.md)|DeviceType. Возможные значения: `desktop`, , `windowsRT``winMO6`, `nokia`, `windowsPhone`, `holoLens``macMDM``winCE``winEmbedded``mac``iPhone``iPod``android``iPad``androidForWork``unix``surfaceHub``iSocConsumer``androidEnterprise`, `chromeOS``windows10x``androidnGMS``linux`, , , `blackberry`, . `palm``unknown``cloudPC`|
 |clientRegistrationStatus|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|ClientRegistrationStatus. Возможные значения: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|OwnerType. Возможные значения: `unknown`, `company`, `personal`.|
-|managementAgents|[managementAgentType](../resources/intune-devices-managementagenttype.md)|ManagementAgents. Возможные значения: `eas` `mdm` , , , , , `easMdm` , `intuneClient` , `easIntuneClient` `configurationManagerClient` `configurationManagerClientMdm` `configurationManagerClientMdmEas` `unknown` `jamf` `googleCloudDevicePolicyController` `microsoft365ManagedMdm` `msSense` `intuneAosp` .|
+|managementAgents|[managementAgentType](../resources/intune-shared-managementagenttype.md)|ManagementAgents. Возможные значения: `eas`, , `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient``configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf``googleCloudDevicePolicyController`, , `microsoft365ManagedMdm`, . `msSense``intuneAosp`|
 |managementState|[managementState](../resources/intune-devices-managementstate.md)|ManagementState. Возможные значения: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
 |referenceId|String|ReferenceId|
 |mdmStatus|String|MDMStatus|
@@ -47,10 +47,10 @@ ms.locfileid: "59111056"
 |serialNumber|String|SerialNumber|
 |manufacturer|String|Производитель|
 |model|String|Модель|
-|osDescription|String|OSDescription|
+|osDescription|String|Описание OSDescription|
 |entitySource|Int32|EntitySource|
 |userId|String|ИД пользователя|
-|upn|String|Имя участника-пользователя|
+|Upn|String|Имя участника-пользователя|
 |userEmail|String|Электронный адрес пользователя|
 |userName|String|Имя пользователя|
 |status|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus. Возможные значения: `comanaged`, `eligible`, `eligibleButNotAzureAdJoined`, `needsOsUpdate`, `ineligible`.|
@@ -91,6 +91,7 @@ ms.locfileid: "59111056"
   "status": "String"
 }
 ```
+
 
 
 

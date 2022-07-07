@@ -1,26 +1,26 @@
 ---
-title: Обновление deviceManagementReusablePolicySetting
+title: Обновление объекта deviceManagementReusablePolicySetting
 description: Обновление свойств объекта deviceManagementReusablePolicySetting.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: de47ae200b5a3eb7578be00b6ba49f41ef5b24b1
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: bb18b78454ff6404aa3522faa69ec540ee9185bb
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345879"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670237"
 ---
-# <a name="update-devicemanagementreusablepolicysetting"></a>Обновление deviceManagementReusablePolicySetting
+# <a name="update-devicemanagementreusablepolicysetting"></a>Обновление объекта deviceManagementReusablePolicySetting
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [deviceManagementReusablePolicySetting.](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)
+Обновление свойств объекта [deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "61345879"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,26 +47,26 @@ PATCH /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySe
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для [объекта deviceManagementReusablePolicySetting.](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)
+В тексте запроса добавьте представление объекта [deviceManagementReusablePolicySetting в формате](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) JSON.
 
-В следующей таблице показаны свойства, необходимые при создании [устройстваManagementReusablePolicySetting.](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)
+В следующей таблице показаны свойства, необходимые при создании [объекта deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|система, генерируемая многоярусным и настраиваемым id.|
-|displayName|String|имя отображения для повторного параметров, предоставленное пользователем.|
-|description|Строка|повторное описание параметра, предоставленное пользователем.|
-|settingDefinitionId|Строка|параметр определения, связанный с этим многопользоваемым параметром.|
-|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|экземпляр конфигурации повторного параметров|
-|createdDateTime|DateTimeOffset|дата и время создания параметров повторного параметров. Это свойство доступно только для чтения.|
-|lastModifiedDateTime|DateTimeOffset|дата и время последнего изменения параметра повторного параметров. Это свойство доступно только для чтения.|
-|version|Int32|номер версии для повторного параметров. Допустимые значения от 0 до 2147483647. Это свойство доступно только для чтения.|
-|referencingConfigurationPolicyCount|Int32|количество политик конфигурации, ссылающихся на текущий параметр повторного параметров. Допустимые значения от 0 до 2147483647. Это свойство доступно только для чтения.|
+|id|String|созданный системой идентификатор многократно используемого параметра.|
+|displayName|String|отображаемое имя параметра многократного использования, предоставленное пользователем.|
+|description|String|многократно используемое описание параметра, предоставленное пользователем.|
+|settingDefinitionId|String|идентификатор определения параметра, связанный с этим повторно используемым параметром.|
+|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|Повторно используемый экземпляр конфигурации параметров|
+|createdDateTime|DateTimeOffset|многократно используемые параметры даты и времени создания. Это свойство доступно только для чтения.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения параметра многократного использования. Это свойство доступно только для чтения.|
+|version|Int32|номер версии для параметра многократного использования. Допустимые значения от 0 до 2147483647. Это свойство доступно только для чтения.|
+|referencingConfigurationPolicyCount|Int32|число политик конфигурации, ссылаемых на текущий параметр многократного использования. Допустимые значения от 0 до 2147483647. Это свойство доступно только для чтения.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа и обновленный `200 OK` [объект deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) в тексте ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и обновленный объект [deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 

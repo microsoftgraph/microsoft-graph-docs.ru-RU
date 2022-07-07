@@ -1,22 +1,22 @@
 ---
-title: Список memberOf
-description: 'Получение групп и ролей каталога, непосредственным участником которых является пользователь. '
+title: Перечисление прямого участия пользователя
+description: Получение групп, ролей каталогов и административных единиц, непосредственным участником которых является пользователь. Эта операция не является транзитивной.
 author: psaffaie
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d358e7c8e514c91e6a45d2c85f2f7cbb18c8e3bb
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 77cfbe6805baac154d2ff9f5ca308131bf5bd2bd
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204333"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645280"
 ---
-# <a name="list-memberof"></a>Список memberOf
+# <a name="list-a-users-direct-memberships"></a>Перечисление прямого участия пользователя
 
 Пространство имен: microsoft.graph
 
-Получение [групп](../resources/group.md), [ролей каталогов](../resources/directoryrole.md) и [административных единиц](../resources/administrativeunit.md), непосредственным участником которых является пользователь.
+Получение [групп](../resources/group.md), [ролей каталогов](../resources/directoryrole.md) и [административных единиц](../resources/administrativeunit.md), непосредственным участником которых является пользователь. Эта операция не является транзитивной. Чтобы получить группы, роли каталогов и административные единицы, участником которых является пользователь (посредством транзитивного участия), используйте API [перечисления транзитивных объектов memberOf](user-list-transitivememberof.md).
 
 ## <a name="permissions"></a>Разрешения
 

@@ -1,15 +1,15 @@
 ---
 title: Получение добавочных изменений для пользователей
 description: Использование дельта-запроса для обнаружения изменений без извлечения всего набора пользователей для сравнения изменений. В следующем примере показана серия запросов для отслеживания изменений пользователей.
-author: FaithOmbongi
+author: Jumaodhiss
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 907d45aeddef86b0dbb5a30bc06b207a883e7eba
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 9eaac638ddde5bf1b65942f9e256d8c5724c9426
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554892"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671383"
 ---
 # <a name="get-incremental-changes-for-users"></a>Получение добавочных изменений для пользователей
 

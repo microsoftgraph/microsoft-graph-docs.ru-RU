@@ -1,22 +1,22 @@
 ---
-title: evaluateAssignmentFilter action
+title: Действие evaluateAssignmentFilter
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c271302b231f97e22ca6e5be8a24e70153785517
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 934fdc98bec75c6691598f3c4f319287227676f9
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64630753"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671193"
 ---
-# <a name="evaluateassignmentfilter-action"></a>evaluateAssignmentFilter action
+# <a name="evaluateassignmentfilter-action"></a>Действие evaluateAssignmentFilter
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -43,7 +43,7 @@ POST /deviceManagement/evaluateAssignmentFilter
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -58,7 +58,7 @@ POST /deviceManagement/evaluateAssignmentFilter
 
 
 ## <a name="response"></a>Ответ
-В случае успешного действия это действие возвращает код `200 OK` отклика и поток в тексте ответа.
+В случае успешного выполнения это действие возвращает код `200 OK` отклика и поток в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -68,7 +68,7 @@ POST /deviceManagement/evaluateAssignmentFilter
 POST https://graph.microsoft.com/beta/deviceManagement/evaluateAssignmentFilter
 
 Content-type: application/json
-Content-length: 235
+Content-length: 266
 
 {
   "data": {
@@ -79,7 +79,8 @@ Content-length: 235
     "skip": 4,
     "orderBy": [
       "Order By value"
-    ]
+    ],
+    "search": "Search value"
   }
 }
 ```

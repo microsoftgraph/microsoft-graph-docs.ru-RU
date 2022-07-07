@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 27fed2656b745580ba9ffe825d7248a380b7fdb9
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: a5858c1b125c4f4d81df6a78840746bed6194aec
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65206260"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670245"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>Создание объекта windows10EnrollmentCompletionPageConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Graph Майкрософт в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "65206260"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,13 +54,13 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор учетной записи, унаследованного от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|displayName|Строка|Отображаемое имя конфигурации регистрации устройства, унаследованного от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|description|Строка|Описание конфигурации регистрации устройства, унаследованного от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|displayName|String|Отображаемое имя конфигурации регистрации устройства, унаследованного от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|description|String|Описание конфигурации регистрации устройства, унаследованного от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |priority|Int32|Приоритет используется, когда пользователь существует в нескольких группах, для которых назначена конфигурация регистрации. На пользователей распространяется только конфигурация с наименьшим значением приоритета. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Дата создания в формате UTC конфигурации регистрации устройства, унаследованного от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения в формате UTC конфигурации регистрации устройства, унаследованного от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |version|Int32|Версия конфигурации регистрации устройства, унаследованного от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|Идентификаторы roleScopeTagId|Коллекция объектов string|Необязательные теги области роли для ограничений регистрации. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|Идентификаторы roleScopeTagId|Коллекция String|Необязательные теги области роли для ограничений регистрации. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |DeviceEnrollmentConfigurationType|[DeviceEnrollmentConfigurationType](../resources/intune-onboarding-deviceenrollmentconfigurationtype.md)|Поддержка типа конфигурации регистрации, унаследованного [от deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md). Возможные значения: `unknown`, `limit`, `platformRestrictions`, `windowsHelloForBusiness`, `defaultLimit`, `defaultPlatformRestrictions`, `defaultWindowsHelloForBusiness`, `defaultWindows10EnrollmentCompletionPageConfiguration`, `windows10EnrollmentCompletionPageConfiguration`, `deviceComanagementAuthorityConfiguration`, `singlePlatformRestriction`, `unknownFutureValue`, `enrollmentNotificationsConfiguration`.|
 |showInstallationProgress|Логическое|Отображение или скрытие хода установки для пользователя|
 |blockDeviceSetupRetryByUser|Логическое|Разрешить пользователю повторить установку при сбое установки|
@@ -68,14 +68,15 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |allowLogCollectionOnInstallFailure|Логическое|Разрешить или заблокировать сбор журналов при сбое установки|
 |customErrorMessage|String|Настройка настраиваемого сообщения об ошибке, отображаемого при сбое установки|
 |installProgressTimeoutInMinutes|Int32|Задание времени ожидания хода выполнения установки в минутах|
-|allowDeviceUseOnInstallFailure|Логический|Разрешить пользователю продолжать использовать устройство при сбое установки|
-|selectedMobileAppIds|Коллекция строк|Выбранные приложения для отслеживания состояния установки|
+|allowDeviceUseOnInstallFailure|Логическое|Разрешить пользователю продолжать использовать устройство при сбое установки|
+|selectedMobileAppIds|Коллекция String|Выбранные приложения для отслеживания состояния установки|
+|allowNonBlockingAppInstallation|Логическое|Установка всех необходимых приложений в качестве неблокирующих приложений во время белых перьев|
 |trackInstallProgressForAutopilotOnly|Логическое|Отображение хода установки только для сценариев регистрации Autopilot|
 |disableUserStatusTrackingAfterFirstUser|Логическое|Отображение хода установки только для первого пользователя после регистрации|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения `201 Created` этот метод возвращает код отклика и объект [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -85,7 +86,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
-Content-length: 795
+Content-length: 839
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -107,6 +108,7 @@ Content-length: 795
   "selectedMobileAppIds": [
     "Selected Mobile App Ids value"
   ],
+  "allowNonBlockingAppInstallation": true,
   "trackInstallProgressForAutopilotOnly": true,
   "disableUserStatusTrackingAfterFirstUser": true
 }
@@ -117,7 +119,7 @@ Content-length: 795
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 967
+Content-Length: 1011
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -142,6 +144,7 @@ Content-Length: 967
   "selectedMobileAppIds": [
     "Selected Mobile App Ids value"
   ],
+  "allowNonBlockingAppInstallation": true,
   "trackInstallProgressForAutopilotOnly": true,
   "disableUserStatusTrackingAfterFirstUser": true
 }

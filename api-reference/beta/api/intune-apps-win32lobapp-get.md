@@ -1,26 +1,26 @@
 ---
-title: Получить win32LobApp
+title: Получение win32LobApp
 description: Чтение свойств и связей объекта win32LobApp.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c40a4847a1eb7fbd1a6d4fc12464d03f19d49ea2
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 2895df0b881a5a52e6ddbcc6681f1d0b6c7189d7
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60491145"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671326"
 ---
-# <a name="get-win32lobapp"></a>Получить win32LobApp
+# <a name="get-win32lobapp"></a>Получение win32LobApp
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [win32LobApp.](../resources/intune-apps-win32lobapp.md)
+Чтение свойств и связей объекта [win32LobApp](../resources/intune-apps-win32lobapp.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -55,7 +55,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект win32LobApp](../resources/intune-apps-win32lobapp.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и [объект win32LobApp](../resources/intune-apps-win32lobapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3866
+Content-Length: 3904
 
 {
   "value": {
@@ -185,10 +185,12 @@ Content-Length: 3866
     },
     "setupFilePath": "Setup File Path value",
     "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
-    "displayVersion": "Display Version value"
+    "displayVersion": "Display Version value",
+    "allowAvailableUninstall": true
   }
 }
 ```
+
 
 
 
