@@ -1,15 +1,15 @@
 ---
 title: Получение добавочных изменений для сообщений в папке
 description: Используйте дельта-запрос для отслеживания изменений сообщений в иерархии папок, отслеживая каждую папку по отдельности. В примере показано, как синхронизировать сообщения в папке.
-author: FaithOmbongi
+author: Jumaodhiss
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 90f72d899183b028fd66fc23c1f2f54929b7e944
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 06e4b6787a298ef245323b84671c0716768751fb
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555606"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671397"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>Получение добавочных изменений для сообщений в папке
 

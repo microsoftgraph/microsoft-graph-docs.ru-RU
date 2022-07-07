@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 16fda08d45fd9405a85a35c1eeba6b47da836c67
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e0b0855ec3a2d38cd217d8d282f0e186be77f499
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130485"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66667182"
 ---
 # <a name="create-educationassignment"></a>Создание educationAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "62130485"
 
 Создайте новое назначение. 
 
-Только преподаватели в классе могут создать назначение. Назначения начинаются в состоянии Draft, что означает, что учащиеся не будут видеть назначение до публикации.
+Только преподаватели в классе могут создавать задания. Задания начинаются в состоянии черновика, что означает, что учащиеся не будут видеть задание до публикации.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,11 +40,11 @@ POST /education/classes/{class-id}/assignments
 | Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
-В теле запроса поставляют представление JSON объекта [educationAssignment.](../resources/educationassignment.md)
+## <a name="request-body"></a>Текст запроса
+В тексте запроса добавьте представление объекта [educationAssignment](../resources/educationassignment.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и `201 Created` объект [educationAssignment](../resources/educationassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [educationAssignment](../resources/educationassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -67,11 +67,11 @@ Content-type: application/json
         "content": "Read chapter 4"
     },
     "grading": {
-        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "@odata.type": "#microsoft.graph.educationAssignmentGradeType",
         "maxPoints": 50
     },
     "assignTo": {
-        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+        "@odata.type": "#microsoft.graph.educationAssignmentGradeType"
     },
     "status": "draft",
     "allowStudentsToAddResourcesToSubmission": true
@@ -103,10 +103,10 @@ Content-type: application/json
 
 ---
 
-В теле запроса поставляют представление JSON объекта [educationAssignment.](../resources/educationassignment.md)
+В тексте запроса добавьте представление объекта [educationAssignment](../resources/educationassignment.md) в формате JSON.
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -169,7 +169,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-* [Состояния, переходы и ограничения для назначений и представлений](/graph/assignments-submissions-states-transition)
+* [Состояния, переходы и ограничения для назначений и отправок](/graph/assignments-submissions-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

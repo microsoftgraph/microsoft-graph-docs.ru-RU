@@ -4,12 +4,12 @@ description: Используйте API облачных коммуникаци�
 author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: 8ab2494a86abb1298cc4a6cb4fe1172b8374643d
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 38c9ed8b4d12f4962f0e31b4ac1f730969e46c2b
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66436365"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66666867"
 ---
 # <a name="cloud-communications-api-overview"></a>Общие сведения об API облачных коммуникаций
 
@@ -101,7 +101,7 @@ API облачных коммуникаций можно использоват�
 
 - Используйте боты, [чтобы приступить к работе](cloud-communications-get-started.md).
 - Узнайте больше о [звонках](cloud-communications-calls.md), [мультимедиа](cloud-communications-media.md) и [собраниях по сети](cloud-communications-online-meetings.md).
-- Просмотр ограничений на [использование](throttling.md#cloud-communication-service-limits) API.
+- Просмотр ограничений на [использование](throttling-limits.md#cloud-communication-service-limits) API.
 - Узнайте, как [управлять номерами телефонов](cloud-communications-phone-number.md) для ботов.
 
 ## <a name="see-also"></a>См. также

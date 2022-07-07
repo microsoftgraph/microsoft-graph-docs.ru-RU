@@ -1,22 +1,22 @@
 ---
-title: тип ресурса mobileAppInstallStatus
+title: Тип ресурса mobileAppInstallStatus
 description: Содержит свойства для состояния установки мобильного приложения для устройства.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5366bb4cd2f17bb3000a9e6260b1fa57e0d49c8c
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: efcf9d78aecd7ba49e5630473e790d3ed7c37406
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61337247"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671235"
 ---
-# <a name="mobileappinstallstatus-resource-type"></a>тип ресурса mobileAppInstallStatus
+# <a name="mobileappinstallstatus-resource-type"></a>Тип ресурса mobileAppInstallStatus
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** API Microsoft Graph в версии /beta могут быть изменены; использование в рабочей области не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,33 +25,33 @@ ms.locfileid: "61337247"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список mobileAppInstallStatuses](../api/intune-apps-mobileappinstallstatus-list.md)|[коллекция mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список свойств и связей объектов [mobileAppInstallStatus.](../resources/intune-apps-mobileappinstallstatus.md)|
-|[Get mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-get.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Чтение свойств и связей объекта [mobileAppInstallStatus.](../resources/intune-apps-mobileappinstallstatus.md)|
-|[Создание mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-create.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Создание нового [объекта mobileAppInstallStatus.](../resources/intune-apps-mobileappinstallstatus.md)|
+|[Перечисление объектов mobileAppInstallStatuse](../api/intune-apps-mobileappinstallstatus-list.md)|[Коллекция mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список свойств и связей объектов [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) .|
+|[Получение объекта mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-get.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Чтение свойств и связей объекта [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) .|
+|[Создание объекта mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-create.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Создайте объект [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) .|
 |[Удаление mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-delete.md)|Нет|Удаляет [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md).|
-|[Обновление mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-update.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Обновление свойств объекта [mobileAppInstallStatus.](../resources/intune-apps-mobileappinstallstatus.md)|
+|[Обновление mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-update.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Обновление свойств объекта [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |deviceName|String|Имя устройства|
 |deviceId|String|Код устройства|
-|lastSyncDateTime|DateTimeOffset|Время последней даты синхронизации|
+|lastSyncDateTime|DateTimeOffset|Дата последней синхронизации|
 |mobileAppInstallStatusValue|[resultantAppState](../resources/intune-apps-resultantappstate.md)|Состояние установки приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installState|[resultantAppState](../resources/intune-apps-resultantappstate.md)|Состояние установки приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
-|installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Деталь состояния установки приложения. Возможные значения: `noAdditionalDetails` `dependencyFailedToInstall` , `dependencyWithRequirementsNotMet` `dependencyPendingReboot` `dependencyWithAutoInstallDisabled` `supersededAppUninstallFailed` `supersededAppUninstallPendingReboot` `removingSupersededApps` `iosAppStoreUpdateFailedToInstall` `vppAppHasUpdateAvailable` `userRejectedUpdate` `uninstallPendingReboot` `supersedingAppsDetected` `supersededAppsDetected` `seeInstallErrorCode` `autoInstallDisabled` `managedAppNoLongerPresent` `userRejectedInstall` `userIsNotLoggedIntoAppStore` `untargetedSupersedingAppsDetected` `appRemovedBySupersedence` `seeUninstallErrorCode` `pendingReboot` `installingDependencies` `contentDownloaded` `supersedingAppsNotApplicable` `powerShellScriptRequirementNotMet` `registryRequirementNotMet` `fileSystemRequirementNotMet` `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` `minimumDiskSpaceNotMet` . `processorArchitectureNotApplicable`|
-|errorCode|Int32|Код ошибки для установки или отказа от сбоев.|
-|osVersion|String|ВЕРСИЯ ОС|
+|installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Сведения о состоянии установки приложения. Возможные значения: `noAdditionalDetails`, , `dependencyFailedToInstall`, `dependencyWithRequirementsNotMet``dependencyPendingReboot``dependencyWithAutoInstallDisabled``supersededAppUninstallFailed``supersededAppUninstallPendingReboot``removingSupersededApps``iosAppStoreUpdateFailedToInstall``vppAppHasUpdateAvailable``userRejectedUpdate``uninstallPendingReboot``supersedingAppsDetected``supersededAppsDetected``seeInstallErrorCode``autoInstallDisabled``managedAppNoLongerPresent``userRejectedInstall``userIsNotLoggedIntoAppStore``untargetedSupersedingAppsDetected``appRemovedBySupersedence``seeUninstallErrorCode``pendingReboot``installingDependencies``contentDownloaded``supersedingAppsNotApplicable``powerShellScriptRequirementNotMet``registryRequirementNotMet``fileSystemRequirementNotMet``platformNotApplicable``minimumCpuSpeedNotMet``minimumLogicalProcessorCountNotMet``minimumPhysicalMemoryNotMet``minimumOsVersionNotMet``minimumDiskSpaceNotMet``processorArchitectureNotApplicable`|
+|errorCode|Int32|Код ошибки для сбоев установки или удаления.|
+|osVersion|String|Версия ОС|
 |osDescription|String|Описание ОС|
 |userName|String|Имя пользователя устройства|
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
-|displayVersion|String|Читаемая для человека версия приложения|
+|displayVersion|String|Удобочитаемая версия приложения|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|приложение|[mobileApp](../resources/intune-shared-mobileapp.md);|Ссылка на навигацию в мобильном приложении.|
+|приложение|[mobileApp](../resources/intune-apps-mobileapp.md);|Навигационная ссылка на мобильное приложение.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

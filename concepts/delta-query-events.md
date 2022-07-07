@@ -1,15 +1,15 @@
 ---
 title: Получение добавочных изменений для событий в представлении календаря
 description: Отслеживайте изменения событий в представлении календаря, используя запросы GET с дельта-функцией. В примере показано, как синхронизировать календарь пользователя по умолчанию в заданном диапазоне времени.
-author: FaithOmbongi
+author: Jumaodhiss
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 9616e0c9f3d041495a68929045f68a87fbe7a24d
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 9bc69ddd9a1f49475275ac029090c9625ad97da4
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555690"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66667546"
 ---
 # <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>Получение добавочных изменений для событий в представлении календаря
 
