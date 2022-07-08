@@ -526,7 +526,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Примечания
+          - name: Заметки
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -13977,7 +13977,7 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: Примечания
+              - name: Заметки
                 items:
                   - name: Заметка пользователя
                     href: resources/personannotation.md
@@ -15552,6 +15552,24 @@ items:
                 href: api/team-completemigration.md
               - name: Перечисление предоставленных разрешений
                 href: api/team-list-permissiongrants.md
+              - name: Шаблон команды
+                items:
+                  - name: Шаблон команды
+                    href: resources/teamtemplate.md
+                  - name: Список
+                    href: api/teamwork-list-teamtemplates.md
+                  - name: Определения списков
+                    href: api/teamtemplate-list-definitions.md
+              - name: Определение шаблона группы
+                items:
+                  - name: Определение шаблона группы
+                    href: resources/teamtemplatedefinition.md
+                  - name: Список
+                    href: api/teamtemplate-list-definitions.md
+                  - name: Получение
+                    href: api/teamtemplatedefinition-get.md
+                  - name: Получение определения команды
+                    href: api/teamtemplatedefinition-get-teamdefinition.md
               - name: Удалена группа
                 href: resources/deletedteam.md
                 items:

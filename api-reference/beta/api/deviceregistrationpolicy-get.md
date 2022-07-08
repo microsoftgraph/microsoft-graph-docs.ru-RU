@@ -1,16 +1,16 @@
 ---
 title: Получение объекта deviceRegistrationPolicy
 description: Чтение свойств и связей объекта deviceRegistrationPolicy.
-author: spunukol
+author: myra-ramdenbourg
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8e8d4e5bc34fb43221ebc3cd697737b03db556db
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 954e8d573ad03d128cae6f838010019c8f9d16b9
+ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66445356"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66690000"
 ---
 # <a name="get-deviceregistrationpolicy"></a>Получение объекта deviceRegistrationPolicy
 
@@ -27,10 +27,10 @@ ms.locfileid: "66445356"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)| Policy.Read.All, Policy.ReadWrite.DeviceConfiguration|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Не поддерживается|
+|Для приложений|Не поддерживается|
 
 При вызове от имени пользователя пользователь должен принадлежать к следующим Azure AD [ролей](/azure/active-directory/roles/permissions-reference):
-+ глобальный администратор;
++ Глобальный администратор
 + Администратор облачных устройств
 + Глобальный читатель
 

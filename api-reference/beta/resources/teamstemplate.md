@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Теамстемплате
-description: Описывает объект Теамстемплате.
+title: Тип ресурса teamsTemplate
+description: Описывает сущность teamsTemplate.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5fc40b9c2a5789c5bcd7ab5794e41c715223eff3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d20d759476177541ed51ff40edec6188290cbbb1
+ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046393"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66690023"
 ---
-# <a name="teamstemplate-resource-type"></a>Тип ресурса Теамстемплате
+# <a name="teamstemplate-resource-type"></a>Тип ресурса teamsTemplate
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Шаблон группы — это план для создания [команды](../resources/team.md) в Microsoft Teams. Шаблон определяет структуру, параметры и даже содержимое, которое должно быть подготовлено в новой команде, созданной с помощью шаблона. Корпорация Майкрософт предоставляет набор базовых шаблонов и клиентов, которые могут сохранять собственные настраиваемые шаблоны.
+Шаблон команды — это схема для создания [команды](../resources/team.md) в Microsoft Teams. Шаблон указывает структуру, параметры и даже содержимое, которое должно быть подготовлено в новой команде, созданной с помощью шаблона. Корпорация Майкрософт предоставляет набор базовых шаблонов, и клиенты могут сохранять собственные настраиваемые шаблоны.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | Строка   | Уникальный идентификатор шаблона. Не может иметь значение null. |
+| id                  | Строка   | Уникальный идентификатор шаблона. Не может иметь значение NULL. |
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -43,6 +43,7 @@ ms.locfileid: "48046393"
 ## <a name="see-also"></a>См. также
 
 - [team](team.md)
+- [teamTemplateDefinition](teamtemplatedefinition.md)
 
 
 

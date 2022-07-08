@@ -1,39 +1,39 @@
 ---
-title: тип ресурса azureAdJoinPolicy
-description: Представляет область политики клиента, Azure Active Directory, который контролирует регистрацию устройств с помощью Azure AD Join.
-author: spunukol
+title: Тип ресурса azureAdJoinPolicy
+description: Представляет область политики клиента Azure Active Directory, который управляет регистрацией устройств с помощью Azure AD Join.
+author: myra-ramdenbourg
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: a57995b3ec3228d8b7be565165667ffc39aa5338
-ms.sourcegitcommit: 2f394a9f33f2fab3634d0f18882985ee211067d1
+ms.openlocfilehash: 46abc16a3982f7f9d22881f02cf13225d1daadcf
+ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127940"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66689981"
 ---
-# <a name="azureadjoinpolicy-resource-type"></a>тип ресурса azureAdJoinPolicy
+# <a name="azureadjoinpolicy-resource-type"></a>Тип ресурса azureAdJoinPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет область политики клиента Azure Active Directory Azure AD, который контролирует возможность пользователей и групп регистрировать удостоверения устройств в организации с помощью Azure AD Join.
+Представляет область политики клиента Azure Active Directory (Azure AD), которая управляет возможностью пользователей и групп регистрировать удостоверения устройств в организации с помощью Azure AD Join.
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedGroups|Коллекция строк|Идентификаторы групп, которые находятся в области политики. Требуется, когда **свойство appliesTo** задает `selected` . |
-|allowedUsers|Коллекция строк|Идентификаторы пользователей, которые находятся в области политики. Требуется, когда **свойство appliesTo** задает `selected` .|
-|appliesTo|policyScope|Указывает, следует ли блокировать или разрешить мелкозернистый контроль области политики. Возможные значения: `0` `none` (значение), `1` `all` (значение), `2` `selected` (значение), `3` `unknownFutureValue` (значение). <br/><br/>Значение по умолчанию — `1`. При задании по крайней мере один идентификатор пользователя или группы должен быть указан в `2` **allowedUsers** или **allowedGroups.**  Настройка этого свойства для удаления всех идентификаторов как `0` `1` в **allowedUsers,** так **и в allowedGroups.**|
-|isAdminConfigurable|Логическое|Указывает, настраивается ли эта область политики администратором. Значение по умолчанию `false` . Если администратор включил intune (MEM) для управления устройствами, это свойство заданной и применяется По умолчанию `false`  `1` `all` (значение).|
+|allowedGroups|Коллекция объектов string|Идентификаторы групп, которые находятся в области действия политики. Требуется, если **свойству appliesTo** задано значение `selected`. |
+|allowedUsers|Коллекция объектов string|Идентификаторы пользователей, которые находятся в области действия политики. Требуется, если **свойству appliesTo** задано значение `selected`.|
+|appliesTo|policyScope|Указывает, следует ли блокировать или разрешать детальное управление областью политики. Возможные значения: `0` (то есть `none`), `1` (то есть `all`), `2` (то есть `selected`), `3` (то есть `unknownFutureValue`). <br/><br/>Значение по умолчанию — `1`. Если задано значение `2`,в **allowedUsers** или **allowedGroups** должен быть указан по крайней мере один идентификатор пользователя или группы.  Установка или удаление `0` всех `1` идентификаторов в **allowedUsers** и **allowedGroups**.|
+|isAdminConfigurable|Логическое|Указывает, настраивается ли администратором эта область политики. Значение по умолчанию — `false`.. Если администратор включил Intune (MEM) для управления устройствами, `false` это свойство устанавливается и применяется **к** `1` значениям по умолчанию (т. е. ).`all`|
 
 ## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 <!-- {

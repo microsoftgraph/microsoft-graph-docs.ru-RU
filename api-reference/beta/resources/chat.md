@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 234ed38a57d66bf9b0d1cea15c38e4c37d3badb5
-ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
+ms.openlocfilehash: f38b797c18c315e6053d285ce0c2485cd44218aa
+ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65653471"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66690011"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса чата
 
@@ -73,7 +73,7 @@ ms.locfileid: "65653471"
 |:---------------|:--------|:----------|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Указывает тип чата. Возможные значения: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
 | createdDateTime| dateTimeOffset|  Дата и время создания чата. Только для чтения.|
-| id| String| Уникальный идентификатор чата. Только для чтения.|
+| id| Строка| Уникальный идентификатор чата. Только для чтения.|
 | lastUpdatedDateTime| dateTimeOffset|  Дата и время последнего переименования чата или списка участников. Только для чтения.|
 | onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Представляет сведения о собрании по сети. Если чат не связан с собранием по сети, свойство будет пустым. Только для чтения.|
 | tenantId| String | Идентификатор клиента, в котором был создан чат. Только для чтения.|
@@ -99,8 +99,8 @@ ms.locfileid: "65653471"
 | lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| Предварительный просмотр последнего сообщения, отправленного в чате. Значение NULL, если сообщения не были отправлены в чате. В настоящее время [это свойство поддерживается](../api/chat-list.md) только операцией чатов списка.|
 | members | Коллекция [conversationMember](conversationmember.md) | Коллекция всех участников чата. Допускается значение null. |
 | messages | Коллекция [chatMessage](chatmessage.md) | Коллекция всех сообщений в чате. Допускается значение null. |
+| operations | Коллекция [teamsAsyncOperation](teamsasyncoperation.md) | Коллекция всех асинхронных операций Teams, которые выполнялись или выполнялись в чате. Допускается значение null. |
 | permissionGrants| Коллекция [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)| Коллекция разрешений, предоставленных приложениям для чата.|
-| operations | Коллекция [teamsAsyncOperation](teamsasyncoperation.md) | Коллекция всех Teams асинхронных операций, которые выполнялись или выполнялись в чате. Допускается значение null. |
 | pinnedMessages | [Коллекция pinnedChatMessageInfo](pinnedchatmessageinfo.md) | Коллекция всех закрепленных сообщений в чате. Допускается значение null. |
 | tabs | Коллекция [teamsTab](teamstab.md) | Коллекция всех вкладок в чате. Допускается значение null. |
 

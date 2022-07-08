@@ -5,16 +5,26 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 9560cac180097207d7bc97f0aef6a560843ca878
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: dd17d54c0d6cd991f02a5043765aab199bfc3a05
+ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645088"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66690072"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
 Пространство имен: microsoft.graph
+
+
+### <a name="teamtemplateaudience-values"></a>Значения teamTemplateAudience 
+
+|Member|
+|:---|
+|organization;|
+|user|
+|public|
+|unknownFutureValue|
 
 ### <a name="decisionitemprincipalresourcemembershiptype-values"></a>Значения decisionItemPrincipalResourceMembershipType 
 
@@ -137,8 +147,8 @@ ms.locfileid: "66645088"
 
 |Member|
 |:---|
-|пользователь|
-|group|
+|user|
+|group;|
 
 ### <a name="accesspackagefilterbycurrentuseroptions-values"></a>значения accessPackageFilterByCurrentUserOptions
 
@@ -360,7 +370,7 @@ ms.locfileid: "66645088"
 
 |Member|
 |:---|
-|String|
+|Строка|
 |Целое число|
 |Справка|
 |Binary|
@@ -540,7 +550,7 @@ ms.locfileid: "66645088"
 
 |Member|
 |:---|
-|userPrincipalName.|
+|userPrincipalName|
 |onPremisesUserPrincipalName|
 |userPrincipalUsername|
 |onPremisesUserPrincipalUsername|
@@ -606,7 +616,7 @@ ms.locfileid: "66645088"
 |:---|
 |email|
 |mobileSMS|
-|mobilePhone;|
+|mobilePhone|
 |officePhone|
 |securityQuestion|
 |appNotification|
@@ -626,7 +636,7 @@ ms.locfileid: "66645088"
 |Member|
 |:---|
 |none|
-|mobilePhone;|
+|mobilePhone|
 |alternateMobilePhone|
 |officePhone|
 |microsoftAuthenticatorPush|
@@ -713,7 +723,7 @@ ms.locfileid: "66645088"
 |все|
 |privilegedAdmin|
 |Администратора|
-|пользователь|
+|user|
 |unknownFutureValue|
 
 ### <a name="includedusertypes-values"></a>Значения includedUserTypes
@@ -729,7 +739,7 @@ ms.locfileid: "66645088"
 
 |Member|
 |:---|
-|пользователь|
+|user|
 |приложение|
 |system|
 |unknownFutureValue|
@@ -789,7 +799,7 @@ ms.locfileid: "66645088"
 |Member|
 |:---|
 |email|
-|mobilePhone;|
+|mobilePhone|
 |officePhone|
 |securityQuestion|
 |appNotification|
@@ -814,7 +824,7 @@ ms.locfileid: "66645088"
 
 |Member|
 |:---|
-|userPrincipalName.|
+|userPrincipalName|
 |phoneNumber|
 |proxyAddress|
 |qrCode|
@@ -835,7 +845,7 @@ ms.locfileid: "66645088"
 
 |Member|
 |:---|
-|пользователь|
+|user|
 |Запрос|
 |servicePrincipal|
 |v1ConditionalAccess|
@@ -1085,8 +1095,8 @@ ms.locfileid: "66645088"
 
 |Member|
 |:---|
-|пользователь|
-|group|
+|user|
+|group;|
 
 ### <a name="authenticationmethodstate-values"></a>Значения authenticationMethodState
 
@@ -1121,7 +1131,7 @@ ms.locfileid: "66645088"
 
 |Member|
 |:---|
-|birthday;|
+|birthday|
 |Свадебные|
 |unknownFutureValue|
 
@@ -1192,7 +1202,7 @@ ms.locfileid: "66645088"
 |Member|
 |:---|
 |email|
-|mobilePhone;|
+|mobilePhone|
 |officePhone|
 |securityQuestion|
 |appNotification|
@@ -1204,7 +1214,7 @@ ms.locfileid: "66645088"
 |Member|
 |:---|
 |event|
-|сообщение|
+|message|
 |driveItem|
 |externalItem|
 |site|
@@ -1344,7 +1354,7 @@ ms.locfileid: "66645088"
 | Member
 |:-----------------
 | none|
-| пользователь|
+| user|
 | manager|
 | unknownFutureValue|
 
@@ -1382,7 +1392,7 @@ ms.locfileid: "66645088"
 
 | Member
 |:-------------------------
-| обязательно
+| Обязательный
 | необязательный
 | resource
 
@@ -1959,7 +1969,7 @@ ms.locfileid: "66645088"
 
 ### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>Значения chatMessagePolicyViolationDlpActionType
 
-| Value |
+| Значение |
 |:-----------------|
 | none |
 | NotifySender |
@@ -2075,7 +2085,7 @@ ms.locfileid: "66645088"
 
 |Member|
 |:---|
-|сообщение|
+|message|
 |chatEvent |
 |Ввода |
 |unknownFutureValue|
@@ -2135,7 +2145,7 @@ ms.locfileid: "66645088"
 |Member|
 |:---|
 |Signin|
-|пользователь|
+|user|
 |unknownFutureValue|
 |servicePrincipal|
 
@@ -2161,7 +2171,7 @@ ms.locfileid: "66645088"
 | Member       |
 |:--------------|
 |event|
-|сообщение|
+|message|
 |driveItem|
 |externalFile|
 |externalItem|
@@ -2354,13 +2364,13 @@ ms.locfileid: "66645088"
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкий|2|
+|Низкие|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>Значения threatAssessmentContentType
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail;   | 1     | Почтовая угроза.            |
+| почта;   | 1     | Почтовая угроза.            |
 | url    | 2     | Угроза URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -2392,7 +2402,7 @@ ms.locfileid: "66645088"
 | Элемент        | Значение | Описание              |
 |:--------------|:------|:-------------------------|
 | Неопределенный     | 0     | Пока не известно.            |
-| пользователь          | 1     | Отправка пользователя.         |
+| user          | 1     | Отправка пользователя.         |
 | Администратора | 2     | Отправка администратора клиента. |
 
 ### <a name="threatassessmentresulttype-values"></a>Значения threatAssessmentResultType
@@ -2483,7 +2493,7 @@ ms.locfileid: "66645088"
 |dateTime | Столбец dateTime. |
 |Поиска | столбец подстановки. |
 |логический | Столбец "Да" или "Нет". |
-|пользователь | столбец пользователя или группы. |
+|user | столбец пользователя или группы. |
 |url | гиперссылка или столбец рисунка. |
 |Рассчитывается | вычисляемый столбец. |
 |расположение | столбец location. |
@@ -2724,7 +2734,7 @@ ms.locfileid: "66645088"
 
 |Member|
 |:---|
-|Microsoft|
+|microsoft|
 |thirdParty|
 |Клиентов|
 |unknownFutureValue|
@@ -2792,7 +2802,7 @@ ms.locfileid: "66645088"
 |Member|
 |:---|
 |team|
-|channel|
+|Канал|
 |чат|
 |unknownFutureValue|
 
