@@ -1,16 +1,16 @@
 ---
 title: Создание historyDefinitions
-description: Создайте новый объект accessReviewHistoryDefinition.
-author: isabelleatmsft
+description: Создайте объект accessReviewHistoryDefinition.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d8a6b1d34b21e28ec5ec52bfc83afdc81261d68a
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: beff78c6d820d7d62956268d99c9b82ddab046a3
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225289"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697297"
 ---
 # <a name="create-historydefinitions"></a>Создание historyDefinitions
 
@@ -18,7 +18,7 @@ ms.locfileid: "62225289"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект accessReviewHistoryDefinition.](../resources/accessreviewhistorydefinition.md)
+Создайте объект [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "62225289"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.ReadWrite.All|
 
-В роли каталога должен также быть подписан пользователь, который позволяет им читать обзор доступа для получения любых данных.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-overview.md)
+Пользователь, выполнив вход, также должен иметь роль каталога, которая позволяет ему считывать проверку доступа для получения любых данных.  Дополнительные сведения см. в разделе о требованиях к роли и разрешениям для [проверок доступа](../resources/accessreviewsv2-overview.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,43 +52,43 @@ POST /identityGovernance/accessReviews/historyDefinitions
 
 ## <a name="request-body"></a>Основной текст запроса
 
-В теле запроса поставляют представление JSON объекта [accessReviewHistoryDefinition.](../resources/accessreviewhistorydefinition.md)
+В тексте запроса добавьте представление объекта [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) в формате JSON.
 
-В следующей таблице показаны необходимые свойства, используемые для создания [accessReviewHistoryDefinition.](../resources/accessreviewhistorydefinition.md)
+В следующей таблице показаны обязательные свойства, используемые для [создания объекта accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName | Строка  | Имя для сбора данных истории проверки доступа. Обязательный. |
-|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp. Отзывы, начиная с этой даты или после нее, будут включены в извлеченные данные истории. Только если **расписаниеSettings** не определено.  |
-|reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Timestamp. Обзоры, начиная с этой даты или до этой даты, будут включены в извлеченные данные истории. Только если **расписаниеSettings** не определено.  |
-|scopes|[accessReviewQueryScope](../resources/accessreviewqueryscope.md) collection| Используется для фильтрации отзывов, включенных в извлеченные данные истории. Извлекает отзывы, область которых совпадает с этой предоставленной областью. Обязательный. <br> Дополнительные возможности [см. в разделах Поддерживаемые запросы области для accessReviewHistoryDefinition.](#supported-scope-queries-for-accessreviewhistorydefinition) |
-| scheduleSettings  |[accessReviewHistoryScheduleSettings](../resources/accessReviewHistoryScheduleSettings.md)| Параметры для серии определений истории повторного просмотра доступа. Только если не определены **reviewHistoryPeriodStartDateTime** или **reviewHistoryPeriodEndDateTime.**|
+|displayName | String  | Имя для сбора данных журнала проверки доступа. Обязательный элемент. |
+|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Метка времени. Проверки, начиная с этой даты или после нее, будут включены в извлеченные данные журнала. Требуется только в том случае, **если параметр scheduleSettings** не определен.  |
+|reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Метка времени. Проверки, начиная с этой даты или до этой даты, будут включены в извлеченные данные журнала. Требуется только в том случае, **если параметр scheduleSettings** не определен.  |
+|scopes|[Коллекция accessReviewQueryScope](../resources/accessreviewqueryscope.md)| Используется для фильтрации проверок, включенных в извлеченные данные журнала. Извлекает проверки, область которых соответствует указанной области. Обязательный элемент. <br> Дополнительные сведения см [. в разделе "Поддерживаемые запросы области для accessReviewHistoryDefinition"](#supported-scope-queries-for-accessreviewhistorydefinition). |
+| scheduleSettings  |[accessReviewHistoryScheduleSettings](../resources/accessReviewHistoryScheduleSettings.md)| Параметры для серии определений журнала повторяющихся проверок доступа. Требуется только в том случае, если **параметр reviewHistoryPeriodStartDateTime** или **reviewHistoryPeriodEndDateTime** не определен. Пока не поддерживается.|
 
 ### <a name="supported-scope-queries-for-accessreviewhistorydefinition"></a>Поддерживаемые запросы области для accessReviewHistoryDefinition
 
-Свойство **областей** [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) основано на **accessReviewQueryScope**, ресурсе, который позволяет настраивать различные ресурсы в свойстве **запроса.** Эти ресурсы затем представляют область определения истории и диктуют тип данных истории отзывов, включенных в загружаемый CSV-файл, который создается при создания [accessReviewHistoryInstances](../resources/accessreviewhistoryinstance.md) определения истории.
+Свойство **scopes** [объекта accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) основано на **ресурсе accessReviewQueryScope**, который позволяет настраивать различные ресурсы в свойстве **запроса.** Затем эти ресурсы представляют область определения журнала и определяют тип данных журнала проверки, включенных в скачиваемый CSV-файл, который создается при создании [объектов accessReviewHistoryInstance в](../resources/accessreviewhistoryinstance.md) определении журнала.
 
-Используйте следующий формат для свойства **запроса:**
+Используйте следующий формат для свойства **запроса** :
 
 ```http
 /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '{object}')
 ```
 
-Значение является одним из ресурсов, которые `{object}` можно настроить в **accessReviewScheduleDefinition**. Например, ниже приводится каждый результат проверки accessReviewScheduleDefinition для отдельных групп (и исключает определения, охватив все группы Microsoft 365 с гостевых пользователей).
+Значение является одним `{object}` из ресурсов, которые можно настроить в **accessReviewScheduleDefinition**. Например, ниже приведены все результаты проверки accessReviewScheduleDefinition для отдельных групп (и исключаются определения, которые относятся ко всем группам Microsoft 365 с гостевыми пользователями).
 
 ```http
 /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')
 ```
 
-Дополнительные поддерживаемые значения см. в $filter [параметре запроса accessReviewScheduleDefinition.](accessreviewset-list-definitions.md#use-the-filter-query-parameter)
+Дополнительные сведения о поддерживаемых значениях см. в $filter [параметра запроса в accessReviewScheduleDefinition](accessreviewset-list-definitions.md#use-the-filter-query-parameter).
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
-В следующем примере показано, как создать определение истории доступа для доступа к отзывам по пакетам и группам доступа, которое будет работать между датой начала 01/01/2021 и датой окончания 04/05/2021.
+В следующем примере показано, как создать определение журнала проверки доступа с областью действия проверки доступа для пакетов и групп доступа, выполняемых с 01.01.2021 до 05.04.2021.
 
 ### <a name="request"></a>Запрос
 

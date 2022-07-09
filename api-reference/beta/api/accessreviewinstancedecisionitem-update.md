@@ -1,16 +1,16 @@
 ---
 title: Обновление accessReviewInstanceDecisionItem
-description: Обновите существующий объект accessReviewInstanceDecisionItem, для которого вызываемая пользователь является рецензентом.
+description: Обновите существующий объект accessReviewInstanceDecisionItem, для которого вызывающий пользователь является рецензентом.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9b3e75d9817b2e41a332d0138dc409301d58f4e1
-ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
+ms.openlocfilehash: e0cf1034cbf8e1a8fbfcfd5d73568431a2ca75de
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62815856"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697122"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>Обновление accessReviewInstanceDecisionItem
 
@@ -21,10 +21,10 @@ ms.locfileid: "62815856"
 Обновите решения о доступе, известные как [accessReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md), для которых пользователь является рецензентом.
 
 >[!NOTE]
->Любые обновления, сделанные в **accessReviewInstanceDecisionItem** , могут быть сделаны только путем вызова пользователей, перечисленных в качестве рецензента для родительского [accessReviewInstance](../resources/accessreviewinstance.md).
+>Любые обновления **accessReviewInstanceDecisionItem** могут быть внесены только путем вызова пользователей, перечисленных в качестве рецензента для родительского [объекта accessReviewInstance](../resources/accessreviewinstance.md).
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из следующих разрешений. Делегирование разрешений личным учетным записям Майкрософт не поддерживается. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из следующих разрешений. Делегированные разрешения для личных учетных записей Майкрософт не поддерживаются. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -39,7 +39,7 @@ ms.locfileid: "62815856"
 PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/{accessReviewInstanceDecisionItemId}
 ```
 
-Обновление решения на этапе accessReviewInstance с несколькими этапами:
+Чтобы обновить решение на этапе accessReviewInstance с несколькими этапами:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/{accessReviewInstanceDecisionItemId}
@@ -51,16 +51,16 @@ PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinit
 | Авторизация|Bearer {token}. Обязательный.|
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В следующей таблице показаны свойства, принятые для обновления `accessReviewInstanceDecisionItem`.
 
 | Свойство     | Тип       | Описание |
 |:-------------|:------------|:------------|
-| решение  | Строка | Решение о доступе для проверяемого объекта. Возможные значения: `Approve` `NotReviewed` `Deny` `DontKnow`. Обязательный элемент.  |
-|  обоснование | String | Контекст обзора, предоставленного администраторам. Обязательно, если оправданиеRequiredOnApproval является true на accessReviewScheduleDefinition.  |
+| Решение  | Строка | Решение о доступе для проверяемой сущности. Возможные значения: `Approve` `NotReviewed` `Deny` `DontKnow`. Обязательный элемент.  |
+|  Обоснование | String | Контекст проверки, предоставленной администраторам. Требуется, если для свойства accessReviewScheduleDefinition свойство justificationRequiredOnApproval имеет значение True.  |
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код `204 No Content` ответа и не возвращает текст ответа.
+В случае успешного выполнения этот метод возвращает код `204 No Content` отклика без текста ответа.
 
 
 ## <a name="examples"></a>Примеры
@@ -69,7 +69,7 @@ PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinit
 
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример решения об утверждении доступа для пользователя.
+Ниже приведен пример решения об утверждении доступа для пользователя.
 
 
 
@@ -121,7 +121,7 @@ HTTP/1.1 204 Accepted
 ```
 
 
-### <a name="example-2-update-a-decision-on-an-stage-in-a-multi-stage-access-review"></a>Пример 2. Обновление решения на этапе в многоэтансовом обзоре доступа
+### <a name="example-2-update-a-decision-on-an-stage-in-a-multi-stage-access-review"></a>Пример 2. Обновление решения на этапе многоэтабной проверки доступа
 
 #### <a name="request"></a>Запрос
 <!-- {

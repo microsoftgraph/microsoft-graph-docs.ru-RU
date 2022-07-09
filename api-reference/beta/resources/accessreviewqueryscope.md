@@ -1,41 +1,41 @@
 ---
-title: тип ресурса accessReviewQueryScope
-description: Определяет, что будет рассмотрено в обзоре доступа.
-author: isabelleatmsft
+title: Тип ресурса accessReviewQueryScope
+description: Определяет, что будет проверяться при проверке доступа.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f1435e235baec8657f9f78c9bf842aa5ee6b61cf
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 6fb31d3b040177e1065355bab7756b5bdf20ae02
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650484"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697872"
 ---
-# <a name="accessreviewqueryscope-resource-type"></a>тип ресурса accessReviewQueryScope
+# <a name="accessreviewqueryscope-resource-type"></a>Тип ресурса accessReviewQueryScope
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Объект accessReviewQueryScope определяет, что будет рассмотрено в [обзоре доступа.](../resources/accessreviewsv2-overview.md) Чтобы просмотреть обзор доступа для неактивных пользователей, см. [в примере accessReviewInactiveUserQueryScope.](../resources/accessreviewinactiveusersqueryscope.md) 
+Объект accessReviewQueryScope определяет, что будет проверяться при [проверке доступа](../resources/accessreviewsv2-overview.md). Сведения о том, как ограничить проверку доступа для неактивных пользователей, см. в [разделе accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md). 
 
-Наследует [от accessReviewScope](../resources/accessreviewscope.md).
+Наследуется [от accessReviewScope](../resources/accessreviewscope.md).
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Запрос|Строка|Запрос, представляющий то, что будет рассмотрено в обзоре доступа.|
-|queryRoot|Строка|В сценарии, в котором рецензенты должны быть указаны динамически, это свойство используется для указать относительный источник запроса. Это свойство необходимо только в том случае, если указан относительный запрос. Например, `./manager`.|
-|queryType|Строка|Указывает тип запроса. Типы включают `MicrosoftGraph` и `ARM` .|
+|Запрос|Строка|Запрос, представляющий, что будет проверяться при проверке доступа.|
+|queryRoot|Строка|В сценарии, в котором рецензенты должны быть указаны динамически, это свойство используется для определения относительного источника запроса. Это свойство требуется только в том случае, если указан относительный запрос. Например, `./manager`.|
+|queryType|Строка|Указывает тип запроса. Типы включают и `MicrosoftGraph` `ARM`.|
 
-Настоятельно рекомендуется **указать свойство @odata.type** со `#microsoft.graph.accessReviewQueryScope` значением. Дополнительные информацию о  параметрах конфигурации области с помощью **accessReviewQueryScope** см. в меню Настройка области определения обзора доступа с помощью [API Microsoft Graph.](/graph/accessreviews-scope-concept)
+Настоятельно рекомендуется **указать свойство @odata.type** `#microsoft.graph.accessReviewQueryScope` со значением. Дополнительные сведения о параметрах  конфигурации области с помощью **accessReviewQueryScope** см. в статье "Настройка области определения проверки доступа с помощью microsoft [API Graph"](/graph/accessreviews-scope-concept).
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

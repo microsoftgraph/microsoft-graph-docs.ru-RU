@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса accessReviewInstanceDecisionItem
 description: Представляет решение о доступе пользователя к accessReviewInstance.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c1412a0354e4993de02ad5cdefc6fc732be545bc
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 633e095d0fbb2843c888e52f1d71bb0eda1c4644
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446387"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697894"
 ---
 # <a name="accessreviewinstancedecisionitem-resource-type"></a>Тип ресурса accessReviewInstanceDecisionItem
 
@@ -38,13 +38,13 @@ ms.locfileid: "66446387"
 |accessReviewId|String|Идентификатор родительского объекта accessReviewInstance. Поддерживает `$select`. Только для чтения.|
 |appliedBy|[userIdentity](../resources/useridentity.md)|Идентификатор пользователя, который применил решение. Только для чтения.|
 |appliedDateTime|DateTimeOffset|Метка времени, когда было применено решение об утверждении. Тип DatetimeOffset представляет сведения о дате и времени в формате ISO 8601 и всегда используется во время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.  Поддерживает `$select`. Только для чтения.|
-|applyResult|String|Результат применения решения. Возможные значения: `New`, `AppliedSuccessfully`, и `AppliedSuccessfullyButObjectNotFound` `AppliedWithUnknownFailure``ApplyNotSupported`. Поддерживает , `$select``$orderby`и `$filter` (`eq`только). Только для чтения.|
-|Решение|String|Результат проверки. Возможные значения: `Approve`, `Deny`, или `NotReviewed``DontKnow`. Поддерживает , `$select``$orderby`и `$filter` (`eq`только). |
+|applyResult|Строка|Результат применения решения. Возможные значения: `New`, `AppliedSuccessfully`, и `AppliedSuccessfullyButObjectNotFound` `AppliedWithUnknownFailure``ApplyNotSupported`. Поддерживает , `$select``$orderby`и `$filter` (`eq`только). Только для чтения.|
+|Решение|Строка|Результат проверки. Возможные значения: `Approve`, `Deny`, или `NotReviewed``DontKnow`. Поддерживает , `$select``$orderby`и `$filter` (`eq`только). |
 |id|String| Идентификатор решения. Наследуется от [сущности](../resources/entity.md). Поддерживает `$select`. Только для чтения.|
-|Обоснование|String|Обоснование, оставленные рецензентом при принятии решения.|
+|Обоснование|Строка|Обоснование, оставленные рецензентом при принятии решения.|
 | target | [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)  | Целевой объект этого конкретного решения. Целевые объекты принятия решений могут иметь разные типы — каждый со своими собственными свойствами. См [. accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md). Только для чтения. <br/> Это свойство было заменено свойствами `principal` и свойствами `resource` в версии 1.0.|
 |Основной|[identity](../resources/identity.md)|Каждый элемент принятия решений в проверке доступа представляет доступ субъекта к ресурсу. Это свойство представляет сведения о субъекте. Например, если элемент принятия решений представляет доступ пользователя Bob к группе "Продажи", то субъект — "Боб", а ресурс — "Sales". Субъекты могут иметь два типа: userIdentity и servicePrincipalIdentity. Поддерживает `$select`. Только для чтения.|
-|principalLink|String|Ссылка на основной объект. Пример: `https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9`. Только для чтения.|
+|principalLink|Строка|Ссылка на основной объект. Пример: `https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9`. Только для чтения.|
 |Рекомендации|String|Созданная системой рекомендация для принятия решения об утверждении на основе последнего интерактивного входа в клиент. Рекомендуем утвердить, если вход выполняется в течение 30 дней с начала проверки. Рекомендуется запретить вход, если срок действия входа превышает 30 дней с начала проверки. В противном случае рекомендация недоступна. Возможные значения: `Approve`, или `Deny``NoInfoAvailable`. Поддерживает , `$select``$orderby`и `$filter` (`eq`только). Только для чтения.|
 |resource|[accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)|Каждый элемент принятия решений в проверке доступа представляет доступ субъекта к ресурсу. Это свойство представляет сведения о ресурсе. Например, если элемент принятия решения представляет доступ пользователя "Bob" к группе "Продажи", то субъектом является Боб, а ресурс — "Sales". Ресурсы могут иметь несколько типов. См [. accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md). Только для чтения.|
 |resourceLink|String|Ссылка на ресурс. Например, `https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8`. Поддерживает `$select`. Только для чтения.|

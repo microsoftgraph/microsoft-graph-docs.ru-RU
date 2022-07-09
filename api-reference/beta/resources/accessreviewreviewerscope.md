@@ -1,18 +1,18 @@
 ---
-title: тип ресурса accessReviewReviewerScope
-description: Представляет, кто будет рассматривать обзор доступа.
-author: isabelleatmsft
-localization_priority: Normal
+title: Тип ресурса accessReviewReviewerScope
+description: Представляет, кто будет проверять проверку доступа.
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 58abda6c89e484336b34d546edc68ebbfe432162
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: fbbb8288216eda745acc831c7b362454dfaec239
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579263"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698095"
 ---
-# <a name="accessreviewreviewerscope-resource-type"></a>тип ресурса accessReviewReviewerScope
+# <a name="accessreviewreviewerscope-resource-type"></a>Тип ресурса accessReviewReviewerScope
 
 Пространство имен: microsoft.graph
 
@@ -20,24 +20,24 @@ ms.locfileid: "52579263"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-AccessReviewReviewerScope определяет, кто будет рассматривать экземпляры [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md) Это запрос OData, который позволяет рецензентам быть указанными как статический список пользователей (то есть конкретных пользователей, владельцев групп и членов группы) или динамически, в которых каждый пользователь просматривается их менеджером или владельцами групп. Чтобы создать самообзор (когда пользователи просматривают собственный доступ), не предоставлять рецензентов при создании [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md)
+AccessReviewReviewerScope определяет, кто будет проверять экземпляры [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). Это запрос OData, который позволяет рецензентам указать как статический список пользователей (то есть конкретных пользователей, владельцев групп и участников группы), либо динамически, в котором каждый пользователь просматривается руководителем или владельцами группы. Чтобы создать самообслуживайте (когда пользователи проверяют собственный доступ), не предоставьте рецензентов при создании [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) .
 
-Наследует [от accessReviewScope](../resources/accessreviewscope.md).
+Наследуется [от accessReviewScope](../resources/accessreviewscope.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство | Тип | Описание |
 | :-------------------------| :---------- | :---------- |
-| Запрос | Строка | Запрос, определяющий, кто будет рецензентом. Примеры см. в таблице. |
-| queryType | Строка | Тип запроса. Примеры включают `MicrosoftGraph` и `ARM` . |
-| queryRoot | Строка | В сценарии, в котором рецензенты должны быть указаны динамически, это свойство используется для указать относительный источник запроса. Это свойство требуется только в том случае, если указан относительный запрос, `./manager` например. Возможное значение: `decisions` . |
+| Запрос | Строка | Запрос, указывающий, кто будет рецензентом. Примеры см. в таблице. |
+| queryType | Строка | Тип запроса. Примеры включают и `MicrosoftGraph` `ARM`. |
+| queryRoot | String | В сценарии, в котором рецензенты должны быть указаны динамически, это свойство используется для определения относительного источника запроса. Это свойство требуется только в том случае, если указан относительный запрос, `./manager`например. Возможное значение: `decisions`. |
 
-Дополнительные возможности настройки для рецензентов см. в обзоре Назначение рецензентов определению обзора доступа с помощью [API microsoft Graph.](/graph/accessreviews-reviewers-concept)
+Дополнительные сведения о параметрах конфигурации для рецензентов см. в статье "Назначение рецензентов определению проверки доступа [с помощью microsoft API Graph"](/graph/accessreviews-reviewers-concept).
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

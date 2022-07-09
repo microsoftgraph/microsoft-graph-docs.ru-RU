@@ -1,29 +1,29 @@
 ---
-title: тип ресурса accessreviewnotificationrecipientscope
-description: Представляет, кто получит уведомления о просмотре доступа.
-author: isabelleatmsft
+title: Тип ресурса accessreviewnotificationrecipientscope
+description: Представляет пользователей, которые будут получать уведомления о проверке доступа.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c5db194094ef3ee1ef3e7c431ca5d4b39107b6cf
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 2bd960f45e9aacc9a1e6fc133e195c9a8980e609
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60562134"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698410"
 ---
-# <a name="accessreviewnotificationrecipientscope-resource-type"></a>тип ресурса accessreviewnotificationrecipientscope
+# <a name="accessreviewnotificationrecipientscope-resource-type"></a>Тип ресурса accessreviewnotificationrecipientscope
 
 Пространство имен: microsoft.graph
 
-**AccessReviewNotificationRecipientScope** представляет базовый класс для определения пользователей, которые будут получать уведомления о экземплярах [объектов accessReviewScheduleDefinition.](accessreviewscheduledefinition.md) Он наследуется [accessReviewNotificationRecipientQueryScope.](../resources/accessReviewNotificationRecipientQueryScope.md)
+**AccessReviewNotificationRecipientScope** представляет базовый класс для определения пользователей, которые будут получать уведомления об экземплярах [объектов accessReviewScheduleDefinition](accessreviewscheduledefinition.md). Он наследуется [accessReviewNotificationRecipientQueryScope](../resources/accessReviewNotificationRecipientQueryScope.md).
 ## <a name="properties"></a>Свойства
 Нет
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

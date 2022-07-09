@@ -1,26 +1,26 @@
 ---
-title: тип ресурсов accessReviewSet
-description: Контейнер для базовых ресурсов, которые раскрывают API обзоров доступа и функций. В настоящее время предоставляется только ресурс accessReviewScheduleDefinition.
-author: isabelleatmsft
+title: Тип ресурса accessReviewSet
+description: Контейнер для базовых ресурсов, предоставляющих API и функции проверок доступа. В настоящее время предоставляется только ресурс accessReviewScheduleDefinition.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: bd7da749cdeb6e759dc464ddf51b67f60e790c4c
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: ca33119169ed61604b0c9deed18ecad33bd76069
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651061"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697850"
 ---
-# <a name="accessreviewset-resource-type"></a>тип ресурсов accessReviewSet
+# <a name="accessreviewset-resource-type"></a>Тип ресурса accessReviewSet
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Контейнер для базовых ресурсов, которые раскрывают API обзоров доступа и функций. В настоящее время предоставляется [только связь accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+Контейнер для базовых ресурсов, предоставляющих API и функции проверок доступа. В настоящее время предоставляется только [связь accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
-Наследует от [объекта](entity.md).
+Наследует [от сущности](entity.md).
 
 ## <a name="methods"></a>Методы
 
@@ -34,10 +34,10 @@ ms.locfileid: "61651061"
 
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|решения|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection| Представляет решение о проверке доступа к Azure AD в экземпляре проверки.|
-|определения|[accessReviewScheduleDefinition collection](../resources/accessreviewscheduledefinition.md)| Представляет шаблон и планирование просмотра доступа. |
-|historyDefinitions|[accessReviewHistoryDefinition collection](../resources/accessreviewhistorydefinition.md)| Представляет коллекцию данных истории обзоров доступа и области, используемые для сбора этих данных.|
-|policy|[accessReviewPolicy](../resources/accessreviewpolicy.md)| Ресурс, позволяющий администраторам управлять политиками проверки доступа на уровне каталогов в клиенте.|
+|Решения|[Коллекция accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)| Представляет Azure AD проверки доступа для экземпляра проверки.|
+|Определения|[Коллекция accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)| Представляет шаблон и планирование проверки доступа. |
+|historyDefinitions|[Коллекция accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md)| Представляет коллекцию данных журнала проверки доступа и областей, используемых для сбора этих данных.|
+|policy|[accessReviewPolicy](../resources/accessreviewpolicy.md)| Ресурс, позволяющий администраторам управлять политиками проверки доступа на уровне каталога в своем клиенте.|
 
 ## <a name="json-representation"></a>Представление JSON
 

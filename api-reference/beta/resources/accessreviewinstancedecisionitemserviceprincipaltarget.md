@@ -1,18 +1,18 @@
 ---
-title: accessReviewInstanceDecisionItemServicePrincipalTarget type
-description: Представляет цель проверки в качестве основной целевой задачи службы.
-author: isabelleatmsft
-localization_priority: Normal
+title: Тип ресурса accessReviewInstanceDecisionItemServicePrincipalTarget
+description: Представляет целевой объект проверки в качестве целевого объекта субъекта-службы.
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7d8032282d7ddaf41779b73f707b0749e3c82dd0
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: dafb1cde55fe510edcff89bd5497997d136a12a9
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "51469229"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698144"
 ---
-# <a name="accessreviewinstancedecisionitemserviceprincipaltarget-resource-type"></a>accessReviewInstanceDecisionItemServicePrincipalTarget type
+# <a name="accessreviewinstancedecisionitemserviceprincipaltarget-resource-type"></a>Тип ресурса accessReviewInstanceDecisionItemServicePrincipalTarget
 
 Пространство имен: microsoft.graph
 
@@ -20,21 +20,21 @@ ms.locfileid: "51469229"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Представляет главу службы, на рассмотрении в [accessReviewInstance](accessreviewinstance.md).
+Представляет проверяемый субъект-службу в [accessReviewInstance](accessreviewinstance.md).
 
-Наследует [от accessReviewInstanceDecisionItemTarget](../resources/accessreviewinstancedecisionitemtarget.md).
+Наследуется [от accessReviewInstanceDecisionItemTarget](../resources/accessreviewinstancedecisionitemtarget.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство | Тип | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| servicePrincipalID | String | Идентификатор директора службы, доступ к которой пересматривается. |
-| servicePrincipalDisplayName | String | Отображает имя директора службы, доступ к которой пересматривается. |
-| appId | String | AppId для проверяемого основного объекта службы. |
+| servicePrincipalID | Строка | Идентификатор субъекта-службы, доступ к которому проверяется. |
+| servicePrincipalDisplayName | String | Отображаемое имя субъекта-службы, доступ к которому просматривается. |
+| appId | String | AppId для проверяемой сущности субъекта-службы. |
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

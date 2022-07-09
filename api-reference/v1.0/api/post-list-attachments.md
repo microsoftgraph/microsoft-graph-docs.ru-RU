@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 90005847582c5fe136e0a4abf3f3a8b447fb57bb
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9ea784c1f5cdf75f249281f8e52c3a0e016449df
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135806"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698375"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -24,10 +24,10 @@ ms.locfileid: "62135806"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.Read.All, Group.ReadWrite.All |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
-Получите вложения для [публикации](../resources/post.md) в [беседеThread](../resources/conversationthread.md) группы. Указание родительского [разговора необязательно.](../resources/conversation.md)
+Получение вложений для [записи в](../resources/post.md) [conversationThread](../resources/conversationthread.md) группы. Указывать родительскую [беседу необязательно](../resources/conversation.md) .
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -37,7 +37,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
-В частности, можно использовать параметр $expand запроса, чтобы включить все вложения столба в линию с остальными свойствами столба. Например:
+В частности, можно использовать параметр $expand запроса, чтобы включить все вложения post в текст с остальными свойствами post. Например:
 
 <!-- { "blockType": "ignored" } -->
 ```
@@ -48,12 +48,12 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}?$expand
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` вложений в [](../resources/attachment.md) тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [вложений](../resources/attachment.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

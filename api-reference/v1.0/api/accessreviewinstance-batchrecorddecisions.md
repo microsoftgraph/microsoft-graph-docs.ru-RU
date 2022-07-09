@@ -1,21 +1,21 @@
 ---
 title: 'accessReviewInstance: batchRecordDecisions'
-description: Позволяет рецензентам просмотреть все accessReviewInstanceDecisionItems пакетами.
-author: isabelleatmsft
+description: Позволяет рецензентам просматривать все объекты accessReviewInstanceDecisionItems в пакетах.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a01ca2f4525661113ed77f0d9eaf65c731f99b15
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: de064c9b46468ec230e4f7bb323c17fd907006a0
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60974739"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698032"
 ---
 # <a name="accessreviewinstance-batchrecorddecisions"></a>accessReviewInstance: batchRecordDecisions
 Пространство имен: microsoft.graph
 
-Позволяет рецензентам просмотреть все [объекты accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) пакетами с помощью **principalId,** **resourceId** или ни того, ни другго.
+Позволяет рецензентам просматривать все объекты [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) в пакетах с помощью **principalId**, **resourceId** или ни одного из них.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,17 +42,17 @@ POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefiniti
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
-В теле запроса подарите JSON представление [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md).
+## <a name="request-body"></a>Основной текст запроса
+В тексте запроса добавьте представление объекта [accessReviewInstanceDecisionItem в формате JSON](../resources/accessreviewinstancedecisionitem.md).
 
-В следующей таблице перечислены свойства, которые можно использовать для просмотра [объектов accessReviewInstanceDecisionItem.](../resources/accessreviewinstancedecisionitem.md)
+В следующей таблице перечислены свойства, которые можно использовать для просмотра [объектов accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) .
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|решение|Строка|Решение о доступе для проверяемого объекта. Возможные значения: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Обязательный.|
-|обоснование|Строка|Контекст обзора, предоставленного администраторам. Требуется, **если обоснованиеRequiredOnApproval** свойства параметров **accessReviewScheduleDefinition** является `true` .|
-|principalId|Строка|В этом пакете будут рассмотрены все **accessReviewInstanceDecisionItems** с соответствием **значениям principalId.** Если они не будут предоставлены, **все accessReviewInstanceDecisionItems** будут рассмотрены.|
-|resourceId|String|В этом пакете будут рассмотрены все **accessReviewInstanceDecisionItems** с соответствием **resourceId.** Если они не будут предоставлены, **все accessReviewInstanceDecisionItems** будут рассмотрены.|
+|Решение|Строка|Решение о доступе для проверяемой сущности. Возможные значения: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Обязательный элемент.|
+|Обоснование|String|Контекст проверки, предоставленной администраторам. Требуется, если **justificationRequiredOnApproval** свойства параметров **accessReviewScheduleDefinition** имеет значение `true` .|
+|principalId|String|Если этот параметр указан, все **объекты accessReviewInstanceDecisionItems** с соответствующими значениями **principalId** будут проверяться в этом пакете. Если этот параметр не указан, будут проверяться все **объекты accessReviewInstanceDecisionItems** .|
+|resourceId|String|Если этот параметр указан, в этом пакете будут проверяться все **объекты accessReviewInstanceDecisionItems** с соответствующим **идентификатором** ресурса. Если этот параметр не указан, будут проверяться все **объекты accessReviewInstanceDecisionItems** .|
 
 ## <a name="response"></a>Ответ
 

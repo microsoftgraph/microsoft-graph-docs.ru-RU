@@ -1,22 +1,22 @@
 ---
-title: Экземпляры списка (из accessReviewHistoryDefinition)
-description: Извлечение экземпляров определения истории проверки доступа.
-author: isabelleatmsft
+title: Перечисление экземпляров (объекта accessReviewHistoryDefinition)
+description: Получение экземпляров определения журнала проверки доступа.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6cad91e3d5944052f691b6659750f8287b570c54
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: c6ac4049520741bade83deb749e35afa873f0f4f
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337713"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698193"
 ---
-# <a name="list-instances-of-an-accessreviewhistorydefinition"></a>Экземпляры списка (из accessReviewHistoryDefinition)
+# <a name="list-instances-of-an-accessreviewhistorydefinition"></a>Перечисление экземпляров (объекта accessReviewHistoryDefinition)
 
 Пространство имен: microsoft.graph
 
-[Извлечение экземпляров](../resources/accessreviewhistoryinstance.md) определения истории [проверки доступа](../resources/accessreviewhistorydefinition.md), созданного за последние 30 дней.
+Получение [экземпляров определения](../resources/accessreviewhistoryinstance.md) журнала [проверки доступа](../resources/accessreviewhistorydefinition.md) , созданного за последние 30 дней.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "63337713"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|AccessReview.ReadWrite.All|
 
-Если подписанный пользователь не является глобальным администратором или глобальным читателем, возвращаются только определения, созданные пользователем, вписав его.
+Если пользователь, выполнив вход, не является глобальным администратором или глобальным средством чтения, возвращаются только определения, созданные пользователем, выполнившего вход.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ GET /identityGovernance/accessReviews/historyDefinitions/{accessReviewHistoryDef
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы этот метод возвращает код отклика и коллекцию [объектов accessReviewHistoryInstance](../resources/accessreviewhistoryinstance.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [accessReviewHistoryInstance](../resources/accessreviewhistoryinstance.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

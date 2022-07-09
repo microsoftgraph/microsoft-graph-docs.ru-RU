@@ -1,18 +1,18 @@
 ---
-title: accessReviewInstanceDecisionItemTarget type
-description: 'Представляет цель проверки как объект пользователя или основной целевой объект службы. '
-author: isabelleatmsft
-localization_priority: Normal
+title: Тип ресурса accessReviewInstanceDecisionItemTarget
+description: 'Представляет целевой объект проверки в качестве целевого объекта пользователя или субъекта-службы. '
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c49af4f136e860edbfbcc635b7fc44e67814117c
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 104d8c6c2611721b5c822cb75aef95a5b6145848
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "51469224"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698137"
 ---
-# <a name="accessreviewinstancedecisionitemtarget-resource-type"></a>accessReviewInstanceDecisionItemTarget type
+# <a name="accessreviewinstancedecisionitemtarget-resource-type"></a>Тип ресурса accessReviewInstanceDecisionItemTarget
 
 Пространство имен: microsoft.graph
 
@@ -20,12 +20,12 @@ ms.locfileid: "51469224"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Представляет базовый класс для различных типов целей проверки, каждый из которых имеет свои собственные свойства. Поддерживаемые целевые типы: [accessReviewInstanceDecisionItemUserTarget](accessreviewinstancedecisionitemusertarget.md) и [accessReviewInstanceDecisionItemServicePrincipalTarget](accessreviewinstancedecisionitemserviceprincipaltarget.md).
+Представляет базовый класс для различных типов целевых объектов проверки, каждый из которых имеет собственные свойства. Поддерживаемые целевые типы: [accessReviewInstanceDecisionItemUserTarget](accessreviewinstancedecisionitemusertarget.md) и [accessReviewInstanceDecisionItemServicePrincipalTarget](accessreviewinstancedecisionitemserviceprincipaltarget.md).
 
 ## <a name="properties"></a>Свойства
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

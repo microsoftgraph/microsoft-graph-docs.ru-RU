@@ -1,23 +1,23 @@
 ---
-title: Get accessReviewInstanceDecisionItem
-description: Ознакомьтесь с свойствами и отношениями объекта accessReviewInstanceDecisionItem.
-author: isabelleatmsft
+title: Получение объекта accessReviewInstanceDecisionItem
+description: Чтение свойств и связей объекта accessReviewInstanceDecisionItem.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5884841a3e169f0640fe09adb8237bf64816e497
-ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
+ms.openlocfilehash: 2cf52cdb927ddf494adb5a3c048c1de0d4fb9808
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62815890"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697304"
 ---
-# <a name="get-accessreviewinstancedecisionitem"></a>Get accessReviewInstanceDecisionItem
+# <a name="get-accessreviewinstancedecisionitem"></a>Получение объекта accessReviewInstanceDecisionItem
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями [объекта accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) .
+Чтение свойств и связей объекта [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,11 +26,11 @@ ms.locfileid: "62815890"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Чтобы получить решение по accessReviewInstance:
+Чтобы получить решение о accessReviewInstance:
 <!-- {
   "blockType": "ignored"
 }
@@ -62,11 +62,11 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы этот метод возвращает код ответа и [объект accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-retrieve-a-decision-on-an-accessreviewinstance"></a>Пример 1. Извлечение решения по accessReviewInstance
+### <a name="example-1-retrieve-a-decision-on-an-accessreviewinstance"></a>Пример 1. Получение решения о accessReviewInstance
 
 #### <a name="request"></a>Запрос
 
@@ -153,9 +153,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-a-decision-from-a-stage-of-a-multi-stage-access-review"></a>Пример 2. Извлечение решения на этапе многоэтансного обзора доступа
+### <a name="example-2-retrieve-a-decision-from-a-stage-of-a-multi-stage-access-review"></a>Пример 2. Получение решения на этапе многоэтабной проверки доступа
 
 #### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accessreviewstage_accessreviewinstancedecisionitem"
@@ -164,6 +166,28 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreviewstage-accessreviewinstancedecisionitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-accessreviewstage-accessreviewinstancedecisionitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-accessreviewstage-accessreviewinstancedecisionitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-accessreviewstage-accessreviewinstancedecisionitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accessreviewstage-accessreviewinstancedecisionitem-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

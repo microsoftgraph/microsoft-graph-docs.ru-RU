@@ -2,15 +2,15 @@
 title: Проверки доступа Azure AD
 description: Используйте Azure AD проверки доступа для настройки однофакторной или повторяющейся проверки доступа для аттестации прав пользователя на доступ к Azure AD ресурсам.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 6db9753dd66347720dc788a4d1059454daf92f5e
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 831f3b643832ca0986d945559f1ab0327bc0eccf
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66442880"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697794"
 ---
 # <a name="azure-ad-access-reviews"></a>Проверки доступа Azure AD
 
@@ -39,16 +39,16 @@ ms.locfileid: "66442880"
 |[Создание определений](../api/accessreviewset-post-definitions.md)|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)|Создайте объект [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .|
 |[Получение accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md)|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)|Чтение свойств и связей объекта [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .|
 |[Обновление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md)|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)|Обновление свойств объекта [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .|
-|[Удаление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md)|Нет|Удаляет объект [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .|
+|[Удаление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md)|Отсутствует|Удаляет объект [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .|
 |[filterByCurrentUser](../api/accessreviewscheduledefinition-filterbycurrentuser.md)|[Коллекция accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)|Возвращает все определения, в которых вызывающий пользователь является рецензентом любых экземпляров.|
 |**Экземпляров**| | |
 |[Перечисление экземпляров](../api/accessreviewscheduledefinition-list-instances.md)|[Коллекция accessReviewInstance](../resources/accessreviewinstance.md)|Получение списка объектов [accessReviewInstance](../resources/accessreviewinstance.md) и их свойств.|
 |[Получение accessReviewInstance](../api/accessreviewinstance-get.md)|[accessReviewInstance](../resources/accessreviewinstance.md)|Чтение свойств и связей объекта [accessReviewInstance](../resources/accessreviewinstance.md) .|
-|[stop](../api/accessreviewinstance-stop.md)|Нет|Вручную остановите accessReviewInstance.|
-|[sendReminder](../api/accessreviewinstance-sendreminder.md)|Нет|Отправьте напоминание рецензентам accessReviewInstance.|
-|[resetDecisions](../api/accessreviewinstance-resetdecisions.md)|Нет|Сбрасывает все элементы принятия решений в экземпляре на `notReviewed`|
-|[applyDecisions](../api/accessreviewinstance-applydecisions.md)|Нет|Вручную примените решение к accessReviewInstance.|
-|[acceptRecommendations](../api/accessreviewinstance-acceptrecommendations.md)|Нет| Позволяет вызывающему пользователю принять рекомендацию по принятию решения для каждого объекта NotReviewInstanceDecisionItem, в котором он является рецензентом для определенного объекта accessReviewInstance.|
+|[stop](../api/accessreviewinstance-stop.md)|Отсутствует|Вручную остановите accessReviewInstance.|
+|[sendReminder](../api/accessreviewinstance-sendreminder.md)|Отсутствует|Отправьте напоминание рецензентам accessReviewInstance.|
+|[resetDecisions](../api/accessreviewinstance-resetdecisions.md)|Отсутствует|Сбрасывает все элементы принятия решений в экземпляре на `notReviewed`|
+|[applyDecisions](../api/accessreviewinstance-applydecisions.md)|Отсутствует|Вручную примените решение к accessReviewInstance.|
+|[acceptRecommendations](../api/accessreviewinstance-acceptrecommendations.md)|Отсутствует| Позволяет вызывающему пользователю принять рекомендацию по принятию решения для каждого объекта NotReviewInstanceDecisionItem, в котором он является рецензентом для определенного объекта accessReviewInstance.|
 |[batchRecordDecisions](../api/accessreviewinstance-batchrecorddecisions.md)|Нет|Просмотрите пакеты субъектов или ресурсов за один вызов.|
 |[filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md)|[Коллекция accessReviewInstance](../resources/accessreviewinstance.md)|Возвращает все объекты экземпляра в определении, для которого вызывающий пользователь является рецензентом.|
 |**Элементы принятия решений об экземпляре**| | |
@@ -67,7 +67,7 @@ ms.locfileid: "66442880"
 
 Для [управления проверками доступа вызывающему](/azure/active-directory/roles/permissions-reference) пользователю требуются следующие Azure AD роли.
 
-| Operation | Разрешения приложений | Требуемая роль каталога вызывающего пользователя |
+| Операция | Разрешения приложений | Требуемая роль каталога вызывающего пользователя |
 |:------------------|:------------|:--------------------------------------------|
 | Чтение | AccessReview.Read.All или AccessReview.ReadWrite.All | Глобальный администратор, глобальный читатель, администратор безопасности, читатель безопасности или администратор пользователей |
 | Создание, обновление или удаление | AccessReview.ReadWrite.All | Глобальный администратор или администратор пользователей |

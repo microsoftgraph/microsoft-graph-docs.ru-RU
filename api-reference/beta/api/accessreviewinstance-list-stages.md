@@ -1,23 +1,23 @@
 ---
 title: Этапы списка
-description: Извлечение этапов в экземпляре проверки многоступенчатого доступа.
-author: isabelleatmsft
+description: Получение этапов в экземпляре многоэтабной проверки доступа.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5a1f4dbb96682f63b516bae3603a49054ed429fc
-ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
+ms.openlocfilehash: c11b989a29fb14c85d3178e097abd7d82d55f271
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62816183"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697528"
 ---
 # <a name="list-stages"></a>Этапы списка
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение этапов в экземпляре проверки многоступенчатого доступа.
+Получение этапов в экземпляре многоэтабной проверки доступа.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "62816183"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,7 +39,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$select`параметры запроса `$orderby``$filter` OData и (`eq`только) для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select`запроса OData и `$orderby``$filter` (`eq`только) для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -51,11 +51,13 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию [объектов accessReviewStage](../resources/accessreviewstage.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [accessReviewStage](../resources/accessreviewstage.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accessreviewstage"
@@ -64,6 +66,28 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/16d424f6-0100-4bf1-9ebc-fe009c5e5006/instances/bb14c722-51b8-4962-9bd2-1d96ba773d80/stages
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewstage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewstage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-accessreviewstage-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewstage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewstage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

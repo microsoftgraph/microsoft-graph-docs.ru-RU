@@ -1,16 +1,16 @@
 ---
 title: Список calendarView
-description: Получение исключений, повторяемых или единичных экземпляров событий в представлении календаря, которое определяется заданным диапазоном времени,
+description: Получение вхождений, исключений и отдельных экземпляров событий в представлении календаря, определенном диапазоном времени.
 ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: af8dcbe14bb956f211c7b18dd555cca0ba36a35e
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 30617cca3ad2c691672959856b5119cb5942a4a4
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477540"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698298"
 ---
 # <a name="list-calendarview"></a>Список calendarView
 
@@ -70,7 +70,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:--------|:--------|
-| Authorization  | string | Bearer {токен}. Обязательный.  |
+| Authorization  | string | Bearer {token}. Обязательный.  |
 | Prefer: outlook.timezone  | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в отклике. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -80,7 +80,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [event](../resources/event.md) в теле отклика.
 
-Если набор результатов занимает несколько страниц, **calendarView** возвращает в ответе свойство **@odata.nextLink**, содержащее URL-адрес следующей страницы результатов. Дополнительные сведения см. в разделе о [разбиении на страницы](/graph/paging).
+Если набор результатов занимает несколько страниц, **calendarView** возвращает в ответе свойство **@odata.nextLink**, содержащее URL-адрес следующей страницы результатов. Дополнительные сведения см. в разделе [paging](/graph/paging).
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -121,7 +121,8 @@ GET https://graph.microsoft.com/beta/me/calendar/calendarView?startDateTime=2017
 ---
 
 ### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика. 
+>**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

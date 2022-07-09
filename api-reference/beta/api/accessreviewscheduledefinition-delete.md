@@ -2,15 +2,15 @@
 title: Удаление accessReviewScheduleDefinition
 description: Удаление объекта accessReviewScheduleDefinition.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5e975f2d283135b086f5069fae18373159cae903
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: b6b1050efa58488b94bbae1843317cec9e23e888
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63721950"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696894"
 ---
 # <a name="delete-accessreviewscheduledefinition"></a>Удаление accessReviewScheduleDefinition
 
@@ -18,9 +18,9 @@ ms.locfileid: "63721950"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [объекта accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
+Удаление объекта [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
-[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
+[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-delete-intro-sentence.md)]
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

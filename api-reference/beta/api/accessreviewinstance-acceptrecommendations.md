@@ -1,16 +1,16 @@
 ---
 title: 'accessReviewInstance: acceptRecommendations'
-description: 'Позволяет принимать рекомендации по всем решениям, которые не были рассмотрены для экземпляра проверки доступа, для которого вызываемого пользователя является рецензентом. '
+description: 'Позволяет принять рекомендации по всем решениям, которые не были просмотрена для экземпляра проверки доступа, для которого вызывающий пользователь является рецензентом. '
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 70ee2b4c248e4c79c375d1b74667dc7619f18b40
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 2d3c5d38775f70b706542797695fd70629974f06
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340512"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696632"
 ---
 # <a name="accessreviewinstance-acceptrecommendations"></a>accessReviewInstance: acceptRecommendations
 
@@ -18,7 +18,7 @@ ms.locfileid: "62340512"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Позволяет принимать рекомендации по всем объектам [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) , которые не были рассмотрены для объекта [accessReviewInstance](../resources/accessreviewinstance.md) , для которого вызываемого пользователя является рецензентом. Рекомендации создаются, если **рекомендацииEnabled** находятся `true` на [объекте accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md). Если рекомендации по объекту [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) нет, решение не будет записано.
+Разрешает принятие рекомендаций для всех объектов [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) , которые не были просмотрена для объекта [accessReviewInstance](../resources/accessreviewinstance.md) , для которого вызывающий пользователь является рецензентом. Рекомендации создаются, если **объект recommendationsEnabled** `true` находится в [объекте accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) . Если рекомендации по объекту [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) нет, решение не будет записано.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "62340512"
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт)| Не поддерживается. |
 
-В accessReviewInstance пользователь должен также быть рецензентом.
+Вошед в систему пользователь также должен быть рецензентом в accessReviewInstance.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

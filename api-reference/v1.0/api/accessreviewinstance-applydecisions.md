@@ -1,21 +1,21 @@
 ---
 title: 'accessReviewInstance: applyDecisions'
-description: Применение решений для accessReviewInstance.
-author: isabelleatmsft
+description: Применение решений к accessReviewInstance.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b58eed979591c1f35286c77b6716b97fd6b42b3a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: df14af550b861f90346a1981921fb62e94c7b058
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61001545"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698179"
 ---
 # <a name="accessreviewinstance-applydecisions"></a>accessReviewInstance: applyDecisions
 Пространство имен: microsoft.graph
 
-Применение решений по пересмотру [для accessReviewInstance,](../resources/accessreviewinstance.md) если решения не были применены автоматически, так как свойство autoApplyDecisionsEnabled находится в `false` [accessReviewScheduleSettings.](../resources/accessreviewschedulesettings.md)
+Примените решения о проверке для [объекта accessReviewInstance](../resources/accessreviewinstance.md) , если решения не были применены автоматически, так как свойство autoApplyDecisionsEnabled `false` находится в [accessReviewScheduleSettings проверки](../resources/accessreviewschedulesettings.md).
 
 
 Состояние accessReviewInstance должно быть для `Completed` вызова этого метода.

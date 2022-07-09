@@ -1,39 +1,39 @@
 ---
-title: accessReviewInactiveUsersQueryScope
-description: Тип accessReviewQueryScope, который позволяет выбирать только неактивных пользователей в области обзора доступа.
-author: isabelleatmsft
+title: Тип ресурса accessReviewInactiveUsersQueryScope
+description: Тип accessReviewQueryScope, который позволяет выбирать только неактивных пользователей в области проверки доступа.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 5b41f9e60ab25b903a20a31a3b734bf34173bcb1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 18790d11628f7e57a349a357e46ba75377e57cc4
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021752"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697577"
 ---
-# <a name="accessreviewinactiveusersqueryscope-resource-type"></a>accessReviewInactiveUsersQueryScope
+# <a name="accessreviewinactiveusersqueryscope-resource-type"></a>Тип ресурса accessReviewInactiveUsersQueryScope
 
 Пространство имен: microsoft.graph
 
-Тип [accessReviewQueryScope,](../resources/accessreviewqueryscope.md) который позволяет выбирать только неактивных пользователей в области обзора доступа. Продолжительность неактивности рассчитывается на основе последней даты регистрации пользователя с датой начала проверки доступа экземпляра, как определено в свойстве параметров [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md). 
+Тип [accessReviewQueryScope](../resources/accessreviewqueryscope.md) , который позволяет выбирать только неактивных пользователей в области проверки доступа. Продолжительность бездействия вычисляется на основе даты последнего входа пользователя в дату начала проверки доступа, как определено в свойстве параметров [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md).
 
-Наследует [от accessReviewQueryScope](../resources/accessreviewqueryscope.md).
+Наследуется [от accessReviewQueryScope](../resources/accessreviewqueryscope.md).
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|inactiveDuration|Длительность|Определяет продолжительность бездействия. Неактивность основана на последнем знаке даты пользователя по сравнению с датой начала проверки доступа. Если это свойство не указано, ему назначено значение по `PT0S` умолчанию.|
-|Запрос|Строка|Наследуется [от accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
+|inactiveDuration|Длительность|Определяет длительность бездействия. Бездействие основано на дате последнего входа пользователя по сравнению с датой начала экземпляра проверки доступа. Если это свойство не указано, этому свойству назначается значение по умолчанию `PT0S`.|
+|Запрос|String|Наследуется [от accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 |queryRoot|Строка|Наследуется [от accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
-|queryType|Строка|Наследуется [от accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
+|queryType|String|Наследуется [от accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 
-Также необходимо указать **свойство @odata.type** со значением `#microsoft.graph.accessReviewInactiveUsersQueryScope` . Дополнительные информацию о  параметрах конфигурации области с помощью **accessReviewInactiveUsersQueryScope** см. в рубрике Настройка области определения обзора доступа с помощью [API](/graph/accessreviews-scope-concept)Microsoft Graph.
+Необходимо также указать **свойство @odata.type** со значением `#microsoft.graph.accessReviewInactiveUsersQueryScope`. Дополнительные сведения о параметрах  конфигурации области с помощью **accessReviewInactiveUsersQueryScope** см. в статье "Настройка области определения проверки доступа с помощью microsoft [API Graph](/graph/accessreviews-scope-concept)".
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

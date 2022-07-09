@@ -1,26 +1,26 @@
 ---
-title: Получить accessReviewScheduleDefinition
-description: Извлечение объекта accessReviewScheduleDefinition.
+title: Получение accessReviewScheduleDefinition
+description: Получение объекта accessReviewScheduleDefinition.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b28c6c8e9cf65e9ed220734bf930e31e051e92ca
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 96ac40ba6b7785e3fa3465d1bbb0a15afb6a0ac1
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650701"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696885"
 ---
-# <a name="get-accessreviewscheduledefinition"></a>Получить accessReviewScheduleDefinition
+# <a name="get-accessreviewscheduledefinition"></a>Получение accessReviewScheduleDefinition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение [объекта accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) по ID. Это возвращает все свойства серии запланированных обзоров доступа, за исключением связанных accessReviewInstances. Каждый accessReviewScheduleDefinition имеет по крайней мере один экземпляр. Экземпляр представляет обзор для определенного ресурса (например, членов определенной группы) во время одного случая (например, в марте 2021 г.) повторяющегося обзора.
+Получение объекта [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) по идентификатору. При этом возвращаются все свойства серии запланированных проверок доступа, за исключением связанных объектов accessReviewInstances. Каждый accessReviewScheduleDefinition имеет по крайней мере один экземпляр. Экземпляр представляет проверку для определенного ресурса (например, членов определенной группы) во время одного вхождения (например, март 2021 г.) повторяющейся проверки.
 
-Чтобы получить экземпляры серии обзоров доступа, используйте [API accessReviewInstance.](accessreviewscheduledefinition-list-instances.md)
+Чтобы получить экземпляры серии проверки доступа, используйте API [accessReviewInstance](accessreviewscheduledefinition-list-instances.md) списка.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +31,7 @@ ms.locfileid: "61650701"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
-Чтобы вызвать этот API, входив в каталог, пользователь должен также быть в роли каталога, которая позволяет ему читать обзор доступа, или пользователь может быть назначен в качестве рецензента в обзоре доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-overview.md)
+Чтобы вызвать этот API, вошед в систему пользователь также должен быть в роли каталога, которая позволяет ему читать проверку доступа, или пользователь может быть назначен в качестве рецензента при проверке доступа.  Дополнительные сведения см. в разделе о требованиях к роли и разрешениям для [проверок доступа](../resources/accessreviewsv2-overview.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /identityGovernance/accessReviews/definitions/{review-id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$select` параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 Нет.
@@ -49,7 +49,7 @@ GET /identityGovernance/accessReviews/definitions/{review-id}
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
@@ -144,9 +144,9 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Создание accessReviewScheduleDefinition](accessreviewset-post-definitions.md)
-- [Список accessReviewScheduleDefinition](accessreviewset-list-definitions.md)
-- [List accessReviewInstance](accessreviewscheduledefinition-list-instances.md)
+- [Создание объекта accessReviewScheduleDefinition](accessreviewset-post-definitions.md)
+- [Перечисление accessReviewScheduleDefinition](accessreviewset-list-definitions.md)
+- [Перечисление accessReviewInstance](accessreviewscheduledefinition-list-instances.md)
 
 
 <!--

@@ -1,38 +1,38 @@
 ---
-title: тип ресурса accessReviewReviewer
-description: Представляет рецензента, с которым связались для проверки доступа.
-author: isabelleatmsft
+title: Тип ресурса accessReviewReviewer
+description: Представляет рецензента, к которому обращались для проверки доступа.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 3a2a51908f73278e592ec02852c96f75570b7646
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: ab365ee1d3b3fd53696e8fa92a2aa25dfdfd0a97
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62162147"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698417"
 ---
-# <a name="accessreviewreviewer-resource-type"></a>тип ресурса accessReviewReviewer
+# <a name="accessreviewreviewer-resource-type"></a>Тип ресурса accessReviewReviewer
 
 Пространство имен: microsoft.graph
 
-Представляет удостоверения проверяющих, с которыми связывались для завершения проверки.
+Представляет удостоверения рецензентов, с которыми связывались для завершения проверки.
 
-Наследует от [объекта](entity.md).
+Наследует [от сущности](entity.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство | Тип | Описание |
 | :-------------------------| :---------- | :---------- |
-| createdDateTime | DateTimeOffset | Дата, когда рецензент был добавлен для проверки доступа. |
+| createdDateTime | DateTimeOffset | Дата добавления рецензента для проверки доступа. |
 | displayName | Строка | Имя рецензента. |
-| id | Строка | Идентификатор рецензента. Наследуется от [сущности](entity.md). |
-| userPrincipalName | String | Имя основного пользователя рецензента. |
+| id | String | Идентификатор рецензента. Наследуется от [сущности](entity.md). |
+| userPrincipalName | String | Имя участника-пользователя рецензента. |
 
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

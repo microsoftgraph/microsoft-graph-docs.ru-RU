@@ -1,23 +1,23 @@
 ---
-title: Получить accessReviewScheduleDefinition
-description: Ознакомьтесь с свойствами и отношениями объекта accessReviewScheduleDefinition.
-author: isabelleatmsft
+title: Получение accessReviewScheduleDefinition
+description: Чтение свойств и связей объекта accessReviewScheduleDefinition.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 943368046a8c6e8efa2c018ebbb6fe957825ab67
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 1b611d85286d3cfcb4a5d1f9696341d8045475b3
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723073"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698396"
 ---
-# <a name="get-accessreviewscheduledefinition"></a>Получить accessReviewScheduleDefinition
+# <a name="get-accessreviewscheduledefinition"></a>Получение accessReviewScheduleDefinition
 Пространство имен: microsoft.graph
 
-Ознакомьтесь с свойствами и отношениями [объекта accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
+Чтение свойств и связей объекта [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
-Чтобы получить экземпляры серии обзоров доступа, используйте [API accessReviewInstance](accessreviewscheduledefinition-list-instances.md) .
+Чтобы получить экземпляры серии проверки доступа, используйте API [accessReviewInstance](accessreviewscheduledefinition-list-instances.md) списка.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "63723073"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
-Чтобы вызвать этот API, входив в каталог, пользователь должен также быть в роли каталога, которая позволяет ему читать обзор доступа, или пользователь может быть назначен в качестве рецензента в обзоре доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешениям для [отзывов о доступе](../resources/accessreviewsv2-overview.md).
+Чтобы вызвать этот API, вошед в систему пользователь также должен быть в роли каталога, которая позволяет ему читать проверку доступа, или пользователь может быть назначен в качестве рецензента при проверке доступа.  Дополнительные сведения см. в разделе о требованиях к роли и разрешениям для [проверок доступа](../resources/accessreviewsv2-overview.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметр `$select` запроса OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -53,7 +53,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы `200 OK` этот метод возвращает код ответа и [объект accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -160,6 +160,6 @@ Content-Type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Создание accessReviewScheduleDefinition](accessreviewset-post-definitions.md)
-- [Список accessReviewScheduleDefinition](accessreviewset-list-definitions.md)
-- [List accessReviewInstance](accessreviewscheduledefinition-list-instances.md)
+- [Создание объекта accessReviewScheduleDefinition](accessreviewset-post-definitions.md)
+- [Перечисление accessReviewScheduleDefinition](accessreviewset-list-definitions.md)
+- [Перечисление accessReviewInstance](accessreviewscheduledefinition-list-instances.md)

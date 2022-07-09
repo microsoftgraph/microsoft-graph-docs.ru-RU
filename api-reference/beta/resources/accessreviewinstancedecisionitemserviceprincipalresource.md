@@ -1,41 +1,41 @@
 ---
-title: accessReviewInstanceDecisionItemServicePrincipalResource type
-description: Представляет директоров служб, доступ к ресурсу которых представлен через объект accessReviewInstanceDecisionItem.
-author: isabelleatmsft
+title: Тип ресурса accessReviewInstanceDecisionItemServicePrincipalResource
+description: Представляет субъекты-службы, доступ к ресурсу которых представлен через объект accessReviewInstanceDecisionItem.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0ef1fa74401cc9c21f8e568ff988c037685d6f53
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: ac8fe67110f28c852aa3e8c3047f59c4325444e4
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161667"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697162"
 ---
-# <a name="accessreviewinstancedecisionitemserviceprincipalresource-resource-type"></a>accessReviewInstanceDecisionItemServicePrincipalResource type
+# <a name="accessreviewinstancedecisionitemserviceprincipalresource-resource-type"></a>Тип ресурса accessReviewInstanceDecisionItemServicePrincipalResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Представляет директоров служб, доступ к ресурсу которых представлен через [объект accessReviewInstanceDecisionItem.](accessreviewinstancedecisionitem.md) **accessReviewInstanceDecisionItemServicePrincipalResource** — это открытый тип, который позволяет передавать другие свойства.
+Представляет субъекты-службы, доступ к ресурсу которых представлен через [объект accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) . **accessReviewInstanceDecisionItemServicePrincipalResource** — это открытый тип, который позволяет передавать другие свойства.
 
-Наследует [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).
+Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-| appId | String | Глобальный уникальный идентификатор приложения, к которому был предоставлен доступ. |
-| displayName | Строка | Отображение имени ресурса. Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).|
-| id | Строка | Идентификатор ресурса элемента решения. Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
-| type | Строка | Тип ресурса. Тип всегда будет `ServicePrincipal` .  Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
+| appId | String | Глобальный уникальный идентификатор приложения, к которому предоставлен доступ. |
+| displayName | Строка | Отображаемое имя ресурса. Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).|
+| id | String | Идентификатор ресурса элемента принятия решения. Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
+| type | Строка | Тип ресурса. Тип всегда будет иметь значение `ServicePrincipal`.  Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
 
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов contactedReviewers
 description: Получение рецензентов для экземпляра проверки доступа.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c1ad80bb8d4620dc1a320e6d5d95b85dd00b9359
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: 322dfb6741d567554ca47f6324f90909ba7e05bd
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65858144"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698018"
 ---
 # <a name="list-contactedreviewers"></a>Перечисление объектов contactedReviewers
 Пространство имен: microsoft.graph
@@ -22,9 +22,9 @@ ms.locfileid: "65858144"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

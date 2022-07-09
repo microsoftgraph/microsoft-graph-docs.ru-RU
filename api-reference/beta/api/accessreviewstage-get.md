@@ -1,23 +1,23 @@
 ---
-title: Получить accessReviewStage
-description: Ознакомьтесь с свойствами и отношениями объекта accessReviewStage.
+title: Получение accessReviewStage
+description: Чтение свойств и связей объекта accessReviewStage.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 94697225acbe7036e27ab06b17653bdd7fcee4bc
-ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
+ms.openlocfilehash: fe900447986cccfe43f3061dde0cd86fa7ad631d
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62816195"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697288"
 ---
-# <a name="get-accessreviewstage"></a>Получить accessReviewStage
+# <a name="get-accessreviewstage"></a>Получение accessReviewStage
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей [объекта accessReviewStage](../resources/accessreviewstage.md) .
+Получение свойств и связей объекта [accessReviewStage](../resources/accessreviewstage.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "62816195"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
+|Для приложений                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,11 +51,13 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и [объект accessReviewStage](../resources/accessreviewstage.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [accessReviewStage](../resources/accessreviewstage.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accessreviewstage"
@@ -64,6 +66,28 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/6af553ce-104d-4842-ab5f-67d7b556e9dd/instances/9ea56d3c-8746-4cdf-9ccc-c7fe1a267c24/stages/839ecbd4-ba5d-4d32-8249-e734aac47adf
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreviewstage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-accessreviewstage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-accessreviewstage-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-accessreviewstage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accessreviewstage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

@@ -5693,6 +5693,8 @@ items:
                         href: api/entitlementmanagement-list-assignments.md
                       - name: Фильтрация по текущему пользователю
                         href: api/accesspackageassignment-filterbycurrentuser.md
+                      - name: Повторная обработка
+                        href: api/accesspackageassignment-reprocess.md
                   - name: Утверждение запроса на назначение пакета access
                     items:
                       - name: Утверждение
@@ -5726,6 +5728,8 @@ items:
                         href: api/accesspackageassignmentrequest-filterbycurrentuser.md
                       - name: '"Отмена"'
                         href: api/accesspackageassignmentrequest-cancel.md
+                      - name: Повторная обработка
+                        href: api/accesspackageassignmentrequest-reprocess.md
                   - name: Доступ к каталогу пакетов
                     href: resources/accesspackagecatalog.md
                     items:

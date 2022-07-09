@@ -1,27 +1,27 @@
 ---
 title: 'accessReviewInstance: pendingAccessReviewInstances'
-description: Извлечение объектов accessReviewInstance до утверждения с помощью вызова пользователя.
+description: Получение объектов accessReviewInstance, ожидающих утверждения, путем вызова пользователя.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fdca1660b2b5e63f838fdc6cab5c0cdf038e22bd
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: d2304910f408f1587615a9c4b7eafbb951146c9c
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722102"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697521"
 ---
-# <a name="accessreviewinstance-pendingaccessreviewinstances-deprecated"></a>accessReviewInstance: pendingAccessReviewInstances (deprecated)
+# <a name="accessreviewinstance-pendingaccessreviewinstances-deprecated"></a>accessReviewInstance: pendingAccessReviewInstances (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->Этот метод будет обесценится и прекратит возвращать данные 19 мая 2023 г. Он был заменен [фильтромByCurrentUser](accessreviewinstance-filterbycurrentuser.md).
+>Этот метод будет нерекомендуемым и прекратит возвращать данные 19 мая 2023 г. Он был заменен [filterByCurrentUser](accessreviewinstance-filterbycurrentuser.md).
 
-Извлечение [объектов accessReviewInstance](../resources/accessreviewinstance.md) до утверждения пользователем вызова. Возвращается список нулевых или более объектов accessReviewInstance, из которых пользователем вызова является назначен рецензент.
+Получение объектов [accessReviewInstance, ожидающих](../resources/accessreviewinstance.md) утверждения вызывающим пользователем. Возвращается список из нуля или более объектов accessReviewInstance, из которых вызывающий пользователь является назначенным рецензентом.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,7 +30,7 @@ ms.locfileid: "63722102"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 
- При входе пользователь видит только экземпляры, которым им назначен рецензент в accessReviewScheduleDefinition экземпляра.
+ Пользователь, выполнив вход, видит только экземпляры, которым назначен рецензент в accessReviewScheduleDefinition экземпляра.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,22 +39,22 @@ GET /me/pendingAccessReviewInstances
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметры `$skip` `$top` запроса OData и помогает настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$skip` `$top` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-Размер страницы по умолчанию для этого API — 100 **объектов accessReviewInstance** . Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
+Размер страницы по умолчанию для этого API — 100 **объектов accessReviewInstance** . Чтобы повысить эффективность и избежать времени ожидания из-за больших результирующих наборов, примените разбиение на страницы с помощью `$skip` `$top` параметров запроса и параметров запроса. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ## <a name="request-headers"></a>Заголовки запросов
 Нет.
 
-## <a name="request-body"></a>Текст запроса
-Не поставляем тело запроса.
+## <a name="request-body"></a>Основной текст запроса
+Не предоставляйте текст запроса.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код `200 OK` отклика и массив [объектов accessReviewInstance](../resources/accessreviewinstance.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и массив объектов [accessReviewInstance](../resources/accessreviewinstance.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
-В следующем примере показан запрос на извлечение всех серий обзоров доступа в клиенте.
+В следующем примере показан запрос на получение всех рядов проверки доступа в клиенте.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -173,8 +173,8 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Получить accessReviewInstance](accessreviewinstance-get.md)
-- [Получите accessReviewInstanceDecisionItems до утверждения](accessreviewinstancedecisionitem-listpendingapproval.md)
+- [Получение accessReviewInstance](accessreviewinstance-get.md)
+- [Получение объекта accessReviewInstanceDecisionItems, ожидающего утверждения](accessreviewinstancedecisionitem-listpendingapproval.md)
 
 
 <!--

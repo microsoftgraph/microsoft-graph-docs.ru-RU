@@ -1,39 +1,39 @@
 ---
-title: accessReviewInstanceDecisionItemAzureRoleResource type
+title: Тип ресурса accessReviewInstanceDecisionItemAzureRoleResource
 description: Представляет роли ресурсов Azure, для которых доступ представлен через объект accessReviewInstanceDecisionItem.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9b80801520e12b083e1a340a2e10caaf2b393f24
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: b1b8e2c671c65c9efc97014b5614c585c7c1c37e
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62162141"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698291"
 ---
-# <a name="accessreviewinstancedecisionitemazureroleresource-resource-type"></a>accessReviewInstanceDecisionItemAzureRoleResource type
+# <a name="accessreviewinstancedecisionitemazureroleresource-resource-type"></a>Тип ресурса accessReviewInstanceDecisionItemAzureRoleResource
 
 Пространство имен: microsoft.graph
 
-Представляет роли ресурсов Azure, для которых доступ представлен через [объект accessReviewInstanceDecisionItem.](accessreviewinstancedecisionitem.md) **accessReviewInstanceDecisionItemAzureRoleResource** — это открытый тип, который позволяет передавать другие свойства.
+Представляет роли ресурсов Azure, для которых доступ представлен через [объект accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) . **accessReviewInstanceDecisionItemAzureRoleResource** — это открытый тип, который позволяет передавать другие свойства.
 
-Наследует [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).
+Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).
 
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-| displayName | Строка | Отображение имени роли Azure. Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).|
-| id | Строка | Идентификатор ресурса элемента решения. Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
-| type | Строка | Тип ресурса. Тип всегда будет `AzureRole` .  Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
-| область | [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md) | Сведения о области, с которую связана эта роль. |
+| displayName | Строка | Отображаемое имя роли Azure. Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).|
+| id | String | Идентификатор ресурса элемента принятия решения. Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
+| type | Строка | Тип ресурса. Тип всегда будет иметь значение `AzureRole`.  Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
+| область | [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md) | Сведения об области, с помощью которая связана эта роль. |
 
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

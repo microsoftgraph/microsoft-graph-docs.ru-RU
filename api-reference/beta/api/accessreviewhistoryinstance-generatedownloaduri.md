@@ -1,16 +1,16 @@
 ---
 title: 'accessReviewHistoryInstance: generateDownloadUri'
-description: Создание URI, который можно использовать для получения данных истории отзывов.
-author: isabelleatmsft
+description: Создайте универсальный код ресурса (URI), который можно использовать для получения данных журнала проверки.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 44079aafaf994546530d5c9474a774a181b2b6b0
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: af77906c4c5e978e6fc6a26fdfbe966b505f2c80
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340592"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696639"
 ---
 # <a name="accessreviewhistoryinstance-generatedownloaduri"></a>accessReviewHistoryInstance: generateDownloadUri
 
@@ -18,7 +18,7 @@ ms.locfileid: "62340592"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создает URI для [объекта accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md)**, состояние** которого .`done` Каждый URI можно использовать для получения данных истории отзывов экземпляра. Каждый URI действителен в течение 24 часов и может быть извлечен путем получения свойства **downloadUri** из [объекта accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) .
+Создает URI для объекта [accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md)**, состояние** которого равно `done`. Каждый URI можно использовать для получения данных журнала проверки экземпляра. Каждый URI действителен в течение 24 часов и может быть получен путем получения свойства **downloadUri** из объекта [accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "62340592"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.ReadWrite.All|
 
-Чтобы создать ссылку, пользователь, вписав его, должен быть либо создателем связанного определения истории обзора, либо назначен роль  глобального администратора или глобального  [каталога читателей](/azure/active-directory/roles/permissions-reference).
+Чтобы создать ссылку, вошед в систему пользователь должен быть либо создателем связанного определения журнала проверки, либо назначен роль глобального  администратора или  [глобального читателя](/azure/active-directory/roles/permissions-reference).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,7 +55,7 @@ POST /identityGovernance/accessReviews/historyDefinitions/{accessReviewHistoryDe
 
 ## <a name="response"></a>Отклик
 
-В случае успеха это действие возвращает код `200 OK` отклика и [accessReviewHistoryInstances](../resources/accessReviewHistoryInstance.md) в тексте ответа.
+В случае успешного выполнения это действие возвращает код `200 OK` отклика и [accessReviewHistoryInstances](../resources/accessReviewHistoryInstance.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

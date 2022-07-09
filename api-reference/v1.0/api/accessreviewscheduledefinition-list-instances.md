@@ -1,21 +1,21 @@
 ---
 title: Список экземпляров
-description: Получите список объектов accessReviewInstance и их свойств.
-author: isabelleatmsft
+description: Получение списка объектов accessReviewInstance и их свойств.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 91d230c4cb1ed67981ee06691f1aafe856d875a9
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 9c9248932af03069fae67f584d9acf394c690c90
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723389"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698284"
 ---
 # <a name="list-instances"></a>экземпляры списков;
 Пространство имен: microsoft.graph
 
-Получите список объектов [accessReviewInstance](../resources/accessreviewinstance.md) и их свойств.
+Получение списка объектов [accessReviewInstance](../resources/accessreviewinstance.md) и их свойств.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,9 +37,9 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$select`параметры `$filter`запроса OData `$orderBy``$skip`и `$top` OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select`параметры `$filter`запроса , `$orderBy`, и `$skip``$top` OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-Размер страницы по умолчанию для этого API — 100 **объектов accessReviewScheduleDefinition** . Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
+Размер страницы по умолчанию для этого API — 100 **объектов accessReviewScheduleDefinition** . Чтобы повысить эффективность и избежать времени ожидания из-за больших результирующих наборов, примените разбиение на страницы с помощью `$skip` `$top` параметров запроса и параметров запроса. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -51,7 +51,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и коллекцию [объектов accessReviewInstance](../resources/accessreviewinstance.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [accessReviewInstance](../resources/accessreviewinstance.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

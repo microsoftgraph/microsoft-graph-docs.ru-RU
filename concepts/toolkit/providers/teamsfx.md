@@ -3,12 +3,12 @@ title: Поставщик TeamsFx
 description: Используйте поставщик TeamsFx в приложениях Microsoft Teams, чтобы предоставить компонентам Microsoft Graph Toolkit доступ к Microsoft Graph.
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.openlocfilehash: 0789bcff15b523ae8227a2dccf3b0360810fd64e
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: f5a94ab3fc133ebe38ec552ae152b182000311f7
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66438243"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698403"
 ---
 # <a name="teamsfx-provider"></a>Поставщик TeamsFx
 
@@ -35,7 +35,7 @@ Providers.globalProvider = provider;
 Используйте этот `teamsfx.login(scopes)` метод для получения необходимого маркера доступа.
 
 ```ts
-// Automatically when loading the component or in a call-to-action
+// Put this code in a call-to-action callback function to avoid browser blocking automatically showing up pop-ups. 
 await teamsfx.login(this.scope);
 Providers.globalProvider.setState(ProviderState.SignedIn);
 ```
@@ -58,9 +58,10 @@ public render(): void {
 }
 ```
 
-Пример, в котором показано, как инициализировать поставщика TeamsFx, см. в примере [экспорта контактов](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/graph-toolkit-contact-exporter).
+Пример, в котором показано, как инициализировать поставщика TeamsFx, см. в примере [экспорта контактов](https://github.com/OfficeDev/TeamsFx-Samples/tree/dev/hello-world-tab-with-backend).
 
 
 ## <a name="see-also"></a>См. также
 * [Начало работы с разработкой Microsoft Teams и Набора средств Teams](https://aka.ms/teamsfx-docs)
+* [Пакет SDK TeamsFx](/microsoftteams/platform/toolkit/teamsfx-sdk)
 * [Один семинар по Центру повышения производительности](https://github.com/OfficeDev/OneProductivityHub-TeamsFx)

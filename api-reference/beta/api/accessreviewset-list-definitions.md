@@ -2,15 +2,15 @@
 title: Определения списков
 description: Получение объектов accessReviewScheduleDefinition.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3f6519662c4c864c945347323f06698291afe14e
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: c0170167091528d9eec97a3bc19000fb1b325f92
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365906"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696898"
 ---
 # <a name="list-definitions"></a>Определения списков
 
@@ -56,9 +56,9 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 
 |Значение|Описание|
 |:---     |:---       |
-|/groups  |Вывод списка всех объектов accessReviewScheduleDefinition в отдельных группах (исключая определения, область действия для всех Microsoft 365 групп с гостевыми пользователями).|
+|/groups  |Вывод списка всех объектов accessReviewScheduleDefinition в отдельных группах (исключая определения, область действия для всех групп Microsoft 365 с гостевыми пользователями).|
 |/groups/{идентификатор группы}  |Вывод списка всех объектов accessReviewScheduleDefinition в определенной группе (исключая определения, относящиеся ко всем группам Microsoft 365 с гостевыми пользователями).|
-|./members  |Выводит список всех объектов accessReviewScheduleDefinition, Microsoft 365 группы с гостевыми пользователями.|
+|./members  |Список всех accessReviewScheduleDefinition, которые доступны для всех групп Microsoft 365 с гостевыми пользователями.|
 |accessPackageAssignments  |Вывод списка всех объектов accessReviewScheduleDefinition в пакете доступа.|
 |roleAssignmentScheduleInstances  |Список всех объектов accessReviewScheduleDefinition для субъектов-служб, назначенных привилегированной роли.|
 
@@ -68,7 +68,7 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 ## <a name="request-headers"></a>Заголовки запросов
 Нет.
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 Не предоставляйте текст запроса.
 
 ## <a name="response"></a>Отклик
@@ -180,10 +180,10 @@ Content-type: application/json
 ```
 
 
-### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>Пример 2. Извлечение всех определений проверки доступа, область действия Microsoft 365 групп в клиенте
+### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>Пример 2. Получение всех определений проверки доступа для всех групп Microsoft 365 в клиенте
 
 #### <a name="request"></a>Запрос
-В следующем примере показан запрос на получение всех рядов проверки доступа, область действия Microsoft 365 групп в клиенте.
+В следующем примере показан запрос на получение всех рядов проверки доступа, которые доступны для всех групп Microsoft 365 в клиенте.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

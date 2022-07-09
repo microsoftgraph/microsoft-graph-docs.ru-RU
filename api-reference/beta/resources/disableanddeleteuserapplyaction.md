@@ -1,18 +1,18 @@
 ---
-title: отключение типа ресурсаAndDeleteUserApplyAction
-description: Отключите и удалите любого гостевого пользователя B2B, которому отказано в просмотре доступа.
-author: isabelleatmsft
-localization_priority: Normal
+title: Тип ресурса disableAndDeleteUserApplyAction
+description: Отключите и удалите гостевого пользователя B2B, которому отказано в проверке доступа.
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c7b4517ec5690cda96c4869e3be49a24b6d7589f
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: dc58b63d835052754f791d4579bf540216fbba75
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579996"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698214"
 ---
-# <a name="disableanddeleteuserapplyaction-resource-type"></a>отключение типа ресурсаAndDeleteUserApplyAction
+# <a name="disableanddeleteuserapplyaction-resource-type"></a>Тип ресурса disableAndDeleteUserApplyAction
 
 Пространство имен: microsoft.graph
 
@@ -20,9 +20,9 @@ ms.locfileid: "52579996"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Отключите любого гостевого пользователя B2B, которому в обзоре доступа отказано в течение 30 дней, а затем удалите учетную запись. Этот параметр не содержит параметры конфигурации.
+Отключите гостевого пользователя B2B, которому отказано в проверке доступа в течение 30 дней, а затем удалите его учетную запись. Этот параметр не содержит параметров конфигурации.
 
-Наследует [от accessReviewApplyAction](../resources/accessreviewapplyaction.md).
+Наследуется [от accessReviewApplyAction](../resources/accessreviewapplyaction.md).
 
 ## <a name="properties"></a>Свойства
 Нет
@@ -30,7 +30,7 @@ ms.locfileid: "52579996"
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

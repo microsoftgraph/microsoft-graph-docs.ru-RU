@@ -1,18 +1,18 @@
 ---
-title: тип ресурсов accessReviewError
+title: Тип ресурса accessReviewError
 description: Представляет ошибку, которая произошла в жизненном цикле экземпляра проверки доступа.
-author: isabelleatmsft
-localization_priority: Normal
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: dc0fe94daaba28bf92b20cb986760b0d3eb0901b
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 7e0b773bd8b1393b160cb666db4d5f19d9501a54
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534388"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697934"
 ---
-# <a name="accessreviewerror-resource-type"></a>тип ресурсов accessReviewError
+# <a name="accessreviewerror-resource-type"></a>Тип ресурса accessReviewError
 
 Пространство имен: microsoft.graph
 
@@ -20,21 +20,21 @@ ms.locfileid: "53534388"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Представляет ошибку, которая произошла в жизненном цикле экземпляра проверки доступа. Этот ресурс только для чтения.
+Представляет ошибку, которая произошла в жизненном цикле экземпляра проверки доступа. Этот ресурс доступен только для чтения.
 
-Наследует от [genericError](../resources/genericerror.md).
+Наследуется от [genericError](../resources/genericerror.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство                     | Тип     | Описание                          |
 | :--------------------------- | :------  | :----------                          |
-| code  |Строка  | Представляет тип ошибки. Наследуется от genericError. Только для чтения. |
-| message |String | Представляет сведения об ошибках. Наследуется от genericError. Только для чтения.|
+| code  |String  | Представляет тип ошибки. Наследуется от genericError. Только для чтения. |
+| message |String | Представляет сведения об ошибке. Наследуется от genericError. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

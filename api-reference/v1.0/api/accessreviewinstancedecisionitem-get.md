@@ -1,21 +1,21 @@
 ---
-title: Get accessReviewInstanceDecisionItem
-description: Ознакомьтесь с свойствами и отношениями объекта accessReviewInstanceDecisionItem.
-author: isabelleatmsft
+title: Получение объекта accessReviewInstanceDecisionItem
+description: Чтение свойств и связей объекта accessReviewInstanceDecisionItem.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d1698bcd8c855da9b94b721d55ef65c8f1aa9694
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8669a7cbe89fad10169cf20c21fa24fa0f710c8f
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996854"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698487"
 ---
-# <a name="get-accessreviewinstancedecisionitem"></a>Get accessReviewInstanceDecisionItem
+# <a name="get-accessreviewinstancedecisionitem"></a>Получение объекта accessReviewInstanceDecisionItem
 Пространство имен: microsoft.graph
 
-Ознакомьтесь с свойствами и отношениями [объекта accessReviewInstanceDecisionItem.](../resources/accessreviewinstancedecisionitem.md)
+Чтение свойств и связей объекта [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,7 +37,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$select` параметр запроса OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -49,7 +49,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

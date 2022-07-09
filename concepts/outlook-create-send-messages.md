@@ -4,12 +4,12 @@ description: В API почты Outlook Microsoft Graph электронные п
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 63470b3910837e08baee01881a070b9ee708c9bd
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 6958c740c92de862f6233b7154fb833bd5098a16
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556187"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697668"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>Автоматизация создания, отправки и обработки сообщений
 
@@ -87,12 +87,12 @@ Prefer: outlook.allow-unsafe-html
 
 ## <a name="integrate-with--social-gesture-preview"></a>Интеграция с социальными жестами (ознакомительная версия)
 
-@Упоминания — это уведомления для пользователей, о том, что их упомянули в сообщениях. С помощью ресурса [mention](/graph/api/resources/mention?view=graph-rest-beta&preserve-view=true) приложения могут задавать и получать стандартный социальный жест в Интернете (префикс @) в письмах.
+@Упоминания — это уведомления для пользователей, о том, что их упомянули в сообщениях. С помощью ресурса [mention](/graph/api/resources/mention) приложения могут задавать и получать стандартный социальный жест в Интернете (префикс @) в письмах.
 Вы можете выполнить указанные ниже действия.
 
-- Создавать @упоминания при [составлении сообщений](/graph/api/user-post-messages?view=graph-rest-beta&preserve-view=true#request-2)
-- [Получать все сообщения в почтовом ящике пользователя, содержащие @упоминание пользователя](/graph/api/user-list-messages?view=graph-rest-beta&preserve-view=true#request-2)
-- [Получать все @упоминания в сообщении](/graph/api/message-get?view=graph-rest-beta&preserve-view=true#request-2)
+- Создавать @упоминания при [составлении сообщений](/graph/api/user-post-messages#request-2)
+- [Получать все сообщения в почтовом ящике пользователя, содержащие @упоминание пользователя](/graph/api/user-list-messages#request-2)
+- [Получать все @упоминания в сообщении](/graph/api/message-get#request-2)
 
 ## <a name="other-shared-capabilities"></a>Другие общие возможности
 
@@ -100,7 +100,7 @@ Prefer: outlook.allow-unsafe-html
 
 - Вы можете подписаться на [уведомления об изменениях](/graph/api/resources/webhooks) сообщений. Вы будете получать их при возникновении изменений одного или нескольких типов, например при создании или изменении сообщений.
 - [Отслеживание добавочных изменений сообщений в папке](delta-query-messages.md).
-- Вы можете создавать [открытые расширения](extensibility-overview.md#4-open-extensions) или [расширения схемы](extensibility-overview.md#3-schema-extensions), чтобы добавлять пользовательские данные в экземпляры сообщений.
+- Вы можете создавать [открытые расширения](extensibility-overview.md#open-extensions) или [расширения схемы](extensibility-overview.md#schema-extensions), чтобы добавлять пользовательские данные в экземпляры сообщений.
 - Вы можете создавать [расширенные свойства](/graph/api/resources/extended-properties-overview) в экземплярах сообщений, чтобы хранить пользовательские данные для свойств MAPI Outlook, когда эти свойства еще недоступны в метаданных API Microsoft Graph.
 
 ## <a name="next-steps"></a>Дальнейшие действия
@@ -110,4 +110,4 @@ Prefer: outlook.allow-unsafe-html
 - [Получение общих сообщений](outlook-share-messages-folders.md)
 - [Отправка сообщений Outlook от другого пользователя](outlook-send-mail-from-other-user.md)
 - [Получение неизменяемых идентификаторов для ресурсов Outlook](outlook-immutable-id.md)
-- [Использование API почты](/graph/api/resources/mail-api-overview) и [вариантов использования](/graph/api/resources/mail-api-overview#common-use-cases) в Microsoft Graph 1.0.
+- [Использование API почты](/graph/api/resources/mail-api-overview) и [варианты использования](/graph/api/resources/mail-api-overview#common-use-cases) в Microsoft Graph 1.0.

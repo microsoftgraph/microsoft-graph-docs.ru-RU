@@ -1,27 +1,27 @@
 ---
 title: Обновление accessReviewInstance
 description: Обновление свойств объекта accessReviewInstance.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1e9c30269421ee51b5cb5d9445e9d7a8be55b511
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9f6c01e702609b802e51ab06f782c0af21ebedd0
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095466"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697997"
 ---
 # <a name="update-accessreviewinstance"></a>Обновление accessReviewInstance
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [accessReviewInstance.](../resources/accessreviewinstance.md) Можно обновить **только** свойства рецензентов и **fallbackReviewers,** но также требуется свойство области в теле запроса.  Вы можете добавить только рецензентов в **свойство fallbackReviewers,** но не можете удалить существующие **fallbackReviewers**.
+Обновление свойств объекта [accessReviewInstance](../resources/accessreviewinstance.md) . Обновить **можно только** свойства рецензентов и **fallbackReviewers**, но свойство области также требуется  в тексте запроса. В свойство **fallbackReviewers** можно добавлять только рецензентов, но нельзя удалить **существующие элементы fallbackReviewers**.
 
-Чтобы обновить **accessReviewInstance,** его **состояние** должно быть `InProgress` .
+Чтобы обновить **accessReviewInstance**, оно должно иметь **состояние** `InProgress`.
 
 > [!NOTE]
 > 
-> Обновление **accessReviewInstance** будет обновлять только этот экземпляр. Родительский **accessReviewScheduleDefinition** и любые будущие **объекты accessReviewInstance** не изменятся. Чтобы сделать обновления, применимые ко всем будущим экземплярам, обновите родительский [объект accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+> Обновление **accessReviewInstance** приведет к обновлению только этого экземпляра. Родительский **объект accessReviewScheduleDefinition** и любые будущие объекты **accessReviewInstance** не изменяются. Чтобы обновить все будущие экземпляры, обновите родительский [объект accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,7 +30,7 @@ ms.locfileid: "62095466"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение                            | AccessReview.ReadWrite.All |
+|Для приложений                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,17 +54,17 @@ PUT /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Эта коллекция областей рецензентов используется для определения списка рецензентов откатов. Эти рецензенты откатов будут уведомлены о необходимости принятия мер, если пользователи не будут найдены из указанного списка рецензентов. Это может произойти, если либо владелец группы указан в качестве рецензента, но владелец группы не существует, либо менеджер указан в качестве рецензента, но диспетчер пользователя не существует. Необязательное свойство. Updatable.|
-|рецензенты|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Эта коллекция областей обзора доступа используется для определения того, кто такие рецензенты. Примеры вариантов назначения рецензентов см. в примере Назначение рецензентов определению обзора доступа с помощью [API microsoft Graph.](/graph/accessreviews-scope-concept) Необязательный параметр. Updatable.|
-|область|[accessReviewScope](../resources/accessreviewscope.md)|Создан на **основе области** и **экземпляраEnumerationScope** на [уровне accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md) Определяет область пользователей, рассмотренных в группе. Только для чтения. Требуется, но не обновляется.|
+|fallbackReviewers|[Коллекция accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Эта коллекция областей рецензента используется для определения списка резервных рецензентов. Эти резервные рецензенты будут получать уведомления о том, что нужно принять меры, если пользователи не найдены в указанном списке рецензентов. Это может произойти, если владелец группы указан в качестве рецензента, но владелец группы не существует, или руководитель указан в качестве рецензента, но руководитель пользователя не существует. Необязательное. Обновляемые.|
+|Авторам|[Коллекция accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Эта коллекция областей проверки доступа используется для определения рецензентов. Примеры параметров назначения рецензентов см. в статье "Назначение рецензентов определению проверки доступа с [помощью microsoft API Graph"](/graph/accessreviews-scope-concept). Необязательное. Обновляемые.|
+|область|[accessReviewScope](../resources/accessreviewscope.md)|Создается на **основе области** и **экземпляраEnumerationScope** на уровне [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) . Определяет область пользователей, проверяемых в группе. Только для чтения. Обязательный, но не обновленный.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект accessReviewInstance](../resources/accessreviewinstance.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный объект [accessReviewInstance](../resources/accessreviewinstance.md) в теле отклика.
 
-Попытка удалить существующие **fallbackReviewers** возвращает код `409 Conflict` ответа.
+Попытка удалить существующие **объекты fallbackReviewers** возвращает код `409 Conflict` отклика.
 
 ## <a name="examples"></a>Примеры
 

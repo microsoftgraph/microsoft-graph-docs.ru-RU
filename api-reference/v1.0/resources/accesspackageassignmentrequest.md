@@ -1,51 +1,52 @@
 ---
-title: тип ресурса accessPackageAssignmentRequest
-description: Запрос на назначение пакета доступа создается пользователем, который хочет получить назначение пакета доступа.
+title: Тип ресурса accessPackageAssignmentRequest
+description: Запрос на назначение пакета доступа создается пользователем, который хочет получить назначение пакета для доступа.
 author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2359206a9984cd8ab63697e91cc8313bbd4e594e
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: cdf2e4111daeea48babd57aac912006bd2418187
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854722"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698361"
 ---
-# <a name="accesspackageassignmentrequest-resource-type"></a>тип ресурса accessPackageAssignmentRequest
+# <a name="accesspackageassignmentrequest-resource-type"></a>Тип ресурса accessPackageAssignmentRequest
 
 Пространство имен: microsoft.graph
 
 
-В [Azure AD Entitlement Management](entitlementmanagement-overview.md) запрос на назначение пакета доступа создается пользователем или от имени пользователя, который хочет получить назначение пакета доступа. Если запрос является успешным, с любыми необходимыми утверждениями, пользователь получает назначение пакета доступа и является субъектом этого назначения пакета доступа.  Azure AD также создает запросы на назначение пакетов доступа автоматически для отслеживания удаления доступа.
+В [Azure AD управления правами](entitlementmanagement-overview.md) запрос на назначение пакета доступа создается пользователем, который хочет получить назначение пакета доступа, или от его имени. Если запрос выполнен успешно, при наличии необходимых утверждений пользователь получает назначение пакета для доступа и является субъектом полученного назначения пакета доступа.  Azure AD также автоматически создает запросы на назначение пакетов для отслеживания удаления доступа.
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список accessPackageAssignmentRequests](../api/entitlementmanagement-list-assignmentrequests.md)|[accessPackageAssignmentRequest collection](accesspackageassignmentrequest.md)|Извлечение списка **объектов accesspackageassignmentrequest** . |
-| [Создание accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Создает новый **объект accessPackageAssignmentRequest** . |
-|[Получить accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md)|[accessPackageAssignmentRequest](accesspackageassignmentrequest.md)|Чтение свойств и связей объекта **accessPackageAssignmentRequest** . |
-|[Удаление accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-delete.md)|Нет|Удаление **accessPackageAssignmentRequest**. |
-|[filterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[accessPackageAssignmentRequest collection](../resources/accesspackageassignmentrequest.md)|Извлечение списка **объектов accessPackageAssignmentRequest** , фильтруемых на входе пользователя.|
-|[cancel](../api/accesspackageassignmentrequest-cancel.md)|[accessPackageAssignmentRequest collection](../resources/accesspackageassignmentrequest.md)|Отмена **объекта accessPackageAssignmentRequest** , который находится в отменяемом состоянии.|
+|[Перечисление accessPackageAssignmentRequests](../api/entitlementmanagement-list-assignmentrequests.md)|[Коллекция accessPackageAssignmentRequest](accesspackageassignmentrequest.md)|Получение списка объектов **accesspackageassignmentrequest** . |
+| [Создание accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Создает объект **accessPackageAssignmentRequest** . |
+|[Получение accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md)|[accessPackageAssignmentRequest](accesspackageassignmentrequest.md)|Чтение свойств и связей объекта **accessPackageAssignmentRequest** . |
+|[Удаление accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-delete.md)|Отсутствует|Удаление **объекта accessPackageAssignmentRequest**. |
+|[filterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[Коллекция accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)|Получение списка объектов **accessPackageAssignmentRequest** , отфильтрованных по пользователю, выполнившего вход.|
+|[cancel](../api/accesspackageassignmentrequest-cancel.md)|[Коллекция accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)|Отмена **объекта accessPackageAssignmentRequest** , который находится в состоянии отмены.|
+|[Повторная обработка](../api/accesspackageassignmentrequest-reprocess.md) | Отсутствует | Автоматически повторите запрос пользователя на доступ к пакету доступа.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|completedDateTime|DateTimeOffset|Дата окончания обработки , успешной или неудачной, запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
+|completedDateTime|DateTimeOffset|Дата окончания обработки (успешного или неудачного) запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 |id|String|Только для чтения.|
-|requestType|accessPackageRequestType|Тип запроса. Возможные значения: `notSpecified`, , `userAdd``userUpdate`, , `userRemove`, `adminAdd`, `adminUpdate`, `systemUpdate``unknownFutureValue``adminRemove``systemAdd``systemRemove``onBehalfAdd`, . Запрос от самого пользователя будет иметь requestType или `UserAdd` `UserRemove`. Это свойство нельзя изменить после набора.|
-|schedule|[entitlementManagementSchedule](../resources/entitlementmanagementschedule.md)|Диапазон дат, которые должен быть назначен запросчику. Это свойство нельзя изменить после набора.|
+|requestType|accessPackageRequestType|Тип запроса. Возможные значения: `notSpecified`, , `userAdd`, `userUpdate`, `userRemove`, `adminAdd`, `adminRemove``adminUpdate`, `systemAdd`, `systemUpdate``systemRemove`, `onBehalfAdd``unknownFutureValue`. Запрос от пользователя должен иметь значение requestType или `UserAdd` `UserRemove`. Это свойство нельзя изменить после задания.|
+|schedule|[entitlementManagementSchedule](../resources/entitlementmanagementschedule.md)|Диапазон дат, которые необходимо назначить инициатору запроса. Это свойство нельзя изменить после задания.|
 |state|accessPackageRequestState|Состояние запроса. Возможные значения: `submitted`, `pendingApproval`, `delivering`, `delivered`, `deliveryFailed`, `denied`, `scheduled`, `canceled`, `partiallyDelivered`, `unknownFutureValue`. Только для чтения.|
-|status|String|Дополнительные сведения о состоянии обработки запросов. Только для чтения.|
+|status|String|Дополнительные сведения о состоянии обработки запроса. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|accessPackage|[accessPackage](../resources/accesspackage.md)|Пакет доступа, связанный с accessPackageAssignmentRequest. Пакет доступа определяет коллекции ролей ресурсов и политики получения доступа к этим ресурсам для одного или более пользователей. Только для чтения. Допускается значение null. <br/><br/> Поддерживает `$expand`.|
-|назначение|[accessPackageAssignment](../resources/accesspackageassignment.md)|Для **requestType** или `UserAdd` `AdminAdd`, это назначение пакета доступа, запрашиваемого для создания.  Для **requestType** или `UserRemove``AdminRemove` `SystemRemove`, это свойство `id` существующего назначения, которые будут удалены.  <br/><br/> Поддерживает `$expand`.|
-|запросчик|[accessPackageSubject](../resources/accesspackagesubject.md)|Субъекту, который запрашивал или, если прямое назначение, было назначено. Только для чтения. Допускается значение null. Поддерживает `$expand`.|
+|accessPackage|[accessPackage](../resources/accesspackage.md)|Пакет доступа, связанный с accessPackageAssignmentRequest. Пакет доступа определяет коллекции ролей ресурсов и политики того, как один или несколько пользователей могут получить доступ к этим ресурсам. Только для чтения. Допускается значение null. <br/><br/> Поддерживает `$expand`.|
+|Назначения|[accessPackageAssignment](../resources/accesspackageassignment.md)|Для **requestType** или `UserAdd` `AdminAdd`, это назначение пакета доступа, запрашиваемого для создания.  Для **requestType** или `UserRemove``AdminRemove` `SystemRemove`, это свойство `id` существующего назначения, которое необходимо удалить.  <br/><br/> Поддерживает `$expand`.|
+|Запрашивающего|[accessPackageSubject](../resources/accesspackagesubject.md)|Субъект, который запрашивал или, если было назначено прямое назначение. Только для чтения. Допускается значение null. Поддерживает `$expand`.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

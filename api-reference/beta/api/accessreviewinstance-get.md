@@ -1,26 +1,26 @@
 ---
-title: Получить accessReviewInstance
-description: Извлечение объекта accessReviewInstance.
+title: Получение accessReviewInstance
+description: Получение объекта accessReviewInstance.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cf22b9a31f04c4d08f70f887c6b6beea8c1468fa
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 7ebd33e702d4c779158ae4ee852deccd7d4c366d
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650715"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696607"
 ---
-# <a name="get-accessreviewinstance"></a>Получить accessReviewInstance
+# <a name="get-accessreviewinstance"></a>Получение accessReviewInstance
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение [объекта accessReviewInstance](../resources/accessreviewinstance.md) с помощью идентификатора accessReviewInstance и родительского [доступаReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md) Это возвращает все свойства экземпляра, за исключением связанного [доступаReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md).
+Получение объекта [accessReviewInstance](../resources/accessreviewinstance.md) с помощью идентификатора accessReviewInstance и его родительского [объекта accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md). При этом возвращаются все свойства экземпляра, за исключением связанных [объектов accessReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md).
 
-Чтобы получить решения в экземпляре, используйте [list accessReviewInstanceDecisionItem](accessreviewinstance-list-decisions.md).
+Чтобы получить решения об экземпляре, используйте [list accessReviewInstanceDecisionItem](accessreviewinstance-list-decisions.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +31,7 @@ ms.locfileid: "61650715"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
-Чтобы вызвать этот API, подписанный пользователем должен также быть в роли каталога, который позволяет ему читать обзор доступа, или пользователь может быть назначен в качестве рецензента в обзоре доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-overview.md)
+Чтобы вызвать этот API, пользователь, выполнив вход, также должен быть в роли каталога, которая позволяет ему читать проверку доступа, или пользователь может быть назначен в качестве рецензента при проверке доступа.  Дополнительные сведения см. в разделе о требованиях к роли и разрешениям для [проверок доступа](../resources/accessreviewsv2-overview.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{ins
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект accessReviewInstance](../resources/accessreviewinstance.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [accessReviewInstance](../resources/accessreviewinstance.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
@@ -117,8 +117,8 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Получить accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
-- [List accessReviewInstance](accessreviewscheduledefinition-list-instances.md)
+- [Получение accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
+- [Перечисление accessReviewInstance](accessreviewscheduledefinition-list-instances.md)
 
 
 <!--

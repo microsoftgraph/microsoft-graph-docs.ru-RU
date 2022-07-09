@@ -1,44 +1,44 @@
 ---
-title: тип ресурса accessReviewHistoryInstance
-description: Представляет собой повторение объекта accessReviewHistoryDefinition.
-author: isabelleatmsft
+title: Тип ресурса accessReviewHistoryInstance
+description: Представляет повторение объекта accessReviewHistoryDefinition.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f2e3c73dc7b5f368db20ab6b84f58b637099cb7b
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 62a37efbe3c8d01a6ee12c988c5890195812bb45
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337694"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698326"
 ---
-# <a name="accessreviewhistoryinstance-resource-type"></a>тип ресурса accessReviewHistoryInstance
+# <a name="accessreviewhistoryinstance-resource-type"></a>Тип ресурса accessReviewHistoryInstance
 
 Пространство имен: microsoft.graph
 
- Представляет собой повторение объекта [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) . Определение истории, которое не повторяется, будет иметь точно один экземпляр.
+ Представляет повторение объекта [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) . Определение журнала, которое не является повторяемой, будет иметь ровно один экземпляр.
 
- Каждый **accessReviewHistoryInstance** вместе со связанным с ним **accessReviewHistoryDefinition** содержит обзор **свойствHistoryPeriodStartDateTime**, **reviewHistoryPeriodEndDateTime****, решения**, **scheduleSettings** и **области**. Эти свойства используются при планировании повторений, а также при выборе данных обзора и могут быть изменены. **Каждый объект и данные accessReviewHistoryInstance** доступны только в течение 30 дней. После того, как состояние **accessReviewHistoryInstance** `done` было перемещено на ссылку, можно создать для получения данных экземпляра с помощью вызова [generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md).
+ Каждый **объект accessReviewHistoryInstance** вместе со связанным **accessReviewHistoryDefinition** содержит свойства **reviewHistoryPeriodStartDateTime**, **reviewHistoryPeriodEndDateTime****, решения**, **scheduleSettings** и **области**. Эти свойства используются при планировании повторений, а также при выборе данных проверки и могут быть изменены. **Каждый объект и данные accessReviewHistoryInstance** доступны только в течение 30 дней. После перемещения **состояния accessReviewHistoryInstance** `done` в ссылку можно создать для получения данных экземпляра путем вызова [generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md).
 
 ## <a name="methods"></a>Методы
 
 | Метод  | Тип возвращаемых данных | Описание |
 |:---|:---|:---|
-|[Список accessReviewHistoryInstances](../api/accessreviewhistorydefinition-list-instances.md)|[accessReviewHistoryInstance](accessreviewhistoryinstance.md) collection| Извлечение списка [объектов accessReviewHistoryInstance](accessreviewhistoryinstance.md) и их свойств.|
-|[generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Создает URI, который можно использовать для получения данных истории отзывов экземпляра.|
+|[Перечисление объектов accessReviewHistoryInstance](../api/accessreviewhistorydefinition-list-instances.md)|[Коллекция accessReviewHistoryInstance](accessreviewhistoryinstance.md)| Получение списка объектов [accessReviewHistoryInstance](accessreviewhistoryinstance.md) и их свойств.|
+|[generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Создает универсальный код ресурса (URI), который можно использовать для получения данных журнала проверки экземпляра.|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|downloadUri|Строка|Uri, которые можно использовать для получения данных истории отзывов. Этот URI будет активен в течение 24 часов после сгенерирований. Обязательный элемент.|
-|expirationDateTime|DateTimeOffset|Timestamp, когда истекает срок действия этого экземпляра и связанных данных, а история удаляется. Обязательный элемент.|
-|fulfilledDateTime|DateTimeOffset|Timestamp, когда все доступные данные для этого экземпляра были собраны. Это будет установлено после того, как будет заданной для этого экземпляра состояние `done`. Обязательный.|
-|id|Строка|Назначен уникальный идентификатор экземпляра истории проверки доступа. Только для чтения. Обязательный.|
-|reviewHistoryPeriodEndDateTime|DateTimeOffset|Timestamp, отзывы, заканчивающийся до этой даты, будут включены в извлеченные данные истории.|
-|reviewHistoryPeriodStartDateTime|DateTimeOffset|Timestamp, отзывы, начиная с этой даты или после нее, будут включены в извлеченные данные истории.|
-|runDateTime|DateTimeOffset|Timestamp, когда планируется сгенерирование данных истории экземпляра.|
-|status|accessReviewHistoryStatus|Представляет состояние коллекции данных истории отзывов. Допустимые значения: `done`, `inProgress`, `error`, `requested`, `unknownFutureValue`. После того **как состояние** было отмечено как `done`, для получения данных экземпляра можно создать ссылку, вызывав [метод generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md) .|
+|downloadUri|Строка|Универсальный код ресурса (URI), который можно использовать для получения данных журнала проверки. Этот URI будет активен в течение 24 часов после создания. Обязательный элемент.|
+|expirationDateTime|DateTimeOffset|Метка времени, когда истекает срок действия этого экземпляра и связанных данных, а журнал удаляется. Обязательный элемент.|
+|fulfilledDateTime|DateTimeOffset|Метка времени сбора всех доступных данных для этого экземпляра. Он будет установлен после того, как для этого экземпляра будет установлено состояние `done`. Обязательный.|
+|id|Строка|Назначенный уникальный идентификатор экземпляра журнала проверки доступа. Только для чтения. Обязательный.|
+|reviewHistoryPeriodEndDateTime|DateTimeOffset|Метка времени, проверки, заканчивающиеся на эту дату или до этой даты, будут включены в извлеченные данные журнала.|
+|reviewHistoryPeriodStartDateTime|DateTimeOffset|Метка времени, проверки, начиная с этой даты или после нее, будут включены в извлеченные данные журнала.|
+|runDateTime|DateTimeOffset|Метка времени, когда планируется создание данных журнала экземпляра.|
+|status|accessReviewHistoryStatus|Представляет состояние сбора данных журнала проверки. Допустимые значения: `done`, `inProgress`, `error`, `requested`, `unknownFutureValue`. После **пометки** состояния `done`можно создать ссылку для получения данных экземпляра путем вызова [метода generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md) .|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -1,38 +1,38 @@
 ---
-title: тип ресурса servicePrincipalIdentity
-description: Модели основного удостоверения службы.
-author: isabelleatmsft
-localization_priority: Normal
+title: Тип ресурса servicePrincipalIdentity
+description: Модели идентификации субъекта-службы.
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: a49adab87ac5ebe7b8eddf106d8d38c4e15acd11
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: bfd53005643633a5f406555eac21d63bec8db8bc
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469786"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698424"
 ---
-# <a name="serviceprincipalidentity-resource-type"></a>тип ресурса servicePrincipalIdentity
+# <a name="serviceprincipalidentity-resource-type"></a>Тип ресурса servicePrincipalIdentity
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Модели основного удостоверения службы.
+Модели идентификации субъекта-службы.
 
-Наследует от [удостоверения](../resources/identity.md).
+Наследуется от [удостоверения](../resources/identity.md).
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|appId|String| Идентификатор приложения для директора службы. |
-|displayName|String| Отображение имени основного удостоверения службы. Унаследованный от [удостоверения](../resources/identity.md). |
-|id|String| Идентификатор основного удостоверения службы. Унаследованный от [удостоверения](../resources/identity.md). |
+|appId|String| Идентификатор приложения субъекта-службы. |
+|displayName|Строка| Отображаемое имя удостоверения субъекта-службы. Наследуется от [удостоверения](../resources/identity.md). |
+|id|String| Идентификатор удостоверения субъекта-службы. Наследуется от [удостоверения](../resources/identity.md). |
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

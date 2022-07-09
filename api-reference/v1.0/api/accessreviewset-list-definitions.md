@@ -1,16 +1,16 @@
 ---
 title: Определения списков
 description: Получение списка объектов accessReviewScheduleDefinition и их свойств.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b9978d6d33ff278f300df6a8a65f93c13c09b80a
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: c982d417f7b5d51ceb84c23575a974b4b0db54ca
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365780"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697213"
 ---
 # <a name="list-definitions"></a>Определения списков
 Пространство имен: microsoft.graph
@@ -52,9 +52,9 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 
 |Значение|Описание|
 |:---     |:---       |
-|`/groups`  |Вывод списка всех объектов accessReviewScheduleDefinition в отдельных группах (исключая определения, область действия для всех Microsoft 365 групп с гостевыми пользователями).|
+|`/groups`  |Вывод списка всех объектов accessReviewScheduleDefinition в отдельных группах (исключая определения, область действия для всех групп Microsoft 365 с гостевыми пользователями).|
 |`/groups/{group id}`  |Вывод списка всех объектов accessReviewScheduleDefinition в определенной группе (исключая определения, относящиеся ко всем группам Microsoft 365 с гостевыми пользователями).|
-|`./members`  |Выводит список всех объектов accessReviewScheduleDefinition, Microsoft 365 группы с гостевыми пользователями.|
+|`./members`  |Список всех accessReviewScheduleDefinition, которые доступны для всех групп Microsoft 365 с гостевыми пользователями.|
 |`accessPackageAssignments`  |Вывод списка всех объектов accessReviewScheduleDefinition в пакете доступа.|
 |`roleAssignmentScheduleInstances`  |Список всех объектов accessReviewScheduleDefinition для субъектов-служб, назначенных привилегированной роли.|
 
@@ -179,10 +179,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>Пример 2. Извлечение всех определений проверки доступа, область действия Microsoft 365 групп в клиенте
+### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>Пример 2. Получение всех определений проверки доступа для всех групп Microsoft 365 в клиенте
 
 #### <a name="request"></a>Запрос
-В следующем примере показан запрос на получение всех рядов проверки доступа, область действия Microsoft 365 групп в клиенте.
+В следующем примере показан запрос на получение всех рядов проверки доступа, которые доступны для всех групп Microsoft 365 в клиенте.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

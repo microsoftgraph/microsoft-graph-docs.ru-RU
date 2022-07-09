@@ -1,18 +1,18 @@
 ---
-title: accessReviewInstanceDecisionItemUserTarget type
-description: Представляет цель проверки как пользователя.
-author: isabelleatmsft
-localization_priority: Normal
+title: Тип ресурса accessReviewInstanceDecisionItemUserTarget
+description: Представляет целевой объект проверки в качестве пользователя.
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f10796937aa99e5808cb51bdb4069bd99d645db2
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: f64e29f3b1ef13471147be495dcd100e80742304
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "51469215"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698130"
 ---
-# <a name="accessreviewinstancedecisionitemusertarget-resource-type"></a>accessReviewInstanceDecisionItemUserTarget type
+# <a name="accessreviewinstancedecisionitemusertarget-resource-type"></a>Тип ресурса accessReviewInstanceDecisionItemUserTarget
 
 Пространство имен: microsoft.graph
 
@@ -20,9 +20,9 @@ ms.locfileid: "51469215"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Представляет удостоверение пользователя, проверяемого в [accessReviewInstance.](accessreviewinstance.md)
+Представляет удостоверение пользователя, проверяемого в [accessReviewInstance](accessreviewinstance.md).
 
-Наследует [от accessReviewInstanceDecisionItemTarget](../resources/accessreviewinstancedecisionitemtarget.md).
+Наследуется [от accessReviewInstanceDecisionItemTarget](../resources/accessreviewinstancedecisionitemtarget.md).
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -34,7 +34,7 @@ ms.locfileid: "51469215"
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

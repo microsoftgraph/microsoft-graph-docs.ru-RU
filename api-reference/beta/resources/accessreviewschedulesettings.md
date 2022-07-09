@@ -1,18 +1,18 @@
 ---
-title: тип ресурса accessReviewScheduleSettings
-description: В функции обзоров доступа Azure AD представлены параметры, `accessReviewScheduleSettings` связанные с серией обзоров доступа.
-author: isabelleatmsft
+title: Тип ресурса accessReviewScheduleSettings
+description: В Azure AD проверки доступа эта функция представляет параметры, `accessReviewScheduleSettings` связанные с рядом проверок доступа.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: cb7dbc40944d42f50b68b82cf2be8a2499020f8a
-ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
+ms.openlocfilehash: bf56ecef7491c74de864f647b34086cf658f33e6
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62816058"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697170"
 ---
-# <a name="accessreviewschedulesettings-resource-type"></a>тип ресурса accessReviewScheduleSettings
+# <a name="accessreviewschedulesettings-resource-type"></a>Тип ресурса accessReviewScheduleSettings
 
 Пространство имен: microsoft.graph
 
@@ -25,24 +25,24 @@ ms.locfileid: "62816058"
 ## <a name="properties"></a>Свойства
 | Свойство    | Тип   | Описание |
 | :---------------| :---------- | :---------- |
-| mailNotificationsEnabled|Логический | Указывает, включена ли электронная почта или отключена. Значение по умолчанию — `false`.               |
+| mailNotificationsEnabled|Логическое | Указывает, включены или отключены сообщения электронной почты. Значение по умолчанию — `false`.               |
 | reminderNotificationsEnabled|Логический  | Указывает, включены или отключены напоминания. Значение по умолчанию — `false`.  |
-| justificationRequiredOnApproval|Логический | Указывает, требуются ли рецензенты для обоснования своего решения. Значение по умолчанию — `false`. |
-| defaultDecisionEnabled|Логический | Указывает, включено или отключено решение по умолчанию, если рецензенты не отвечают. Значение по умолчанию — `false`. |
-| defaultDecision|Строка | Решение, выбранное, если `defaultDecisionEnabled` включено. Может быть одним из `Approve`, или `Deny``Recommendation`. |
-| instanceDurationInDays|Int32 | Продолжительность каждого повторения обзора (`accessReviewInstance`) в количестве дней. <br/>**ПРИМЕЧАНИЕ:** Если **определены этапыSettings** объекта [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) , вместо значения этого свойства будет использоваться параметр **durationInDays** . |
-| recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | Подробные параметры для повторения с помощью стандартного объекта Outlook повторения. <br/><br/>**Примечание:** **Поддерживаются только свойства dayOfMonth**, **интервал** и **тип** (`weekly`, `absoluteMonthly`). Используйте свойство **startDate на** **recurrenceRange** , чтобы определить день начала проверки. |
-| autoApplyDecisionsEnabled|Boolean | Указывает, применяются ли решения автоматически. Если установлено `false`, администратор должен применять решения вручную, как только рецензент завершит обзор доступа. При наборе `true`решения применяются автоматически после окончания срока действия экземпляра проверки доступа независимо от того, откликнулись ли рецензенты. Значение по умолчанию — `false`. |
-| applyActions|[accessReviewApplyAction collection](../resources/accessreviewapplyaction.md) | Необязательное поле. Описывает действия, которые необходимо выполнить после завершения проверки. В настоящее время поддерживается два типа: `removeAccessApplyAction` (по умолчанию) и `disableAndDeleteUserApplyAction`. Поле должно быть указано только в случае `disableAndDeleteUserApplyAction`. |
-| recommendationsEnabled|Логический | Указывает, включены или отключены рекомендации по принятию решений. <br/>**ПРИМЕЧАНИЕ:** Если **определены этапыSettings** объекта [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) , вместо значения этого свойства будут использоваться его параметр **recommendationsEnabled** . |
-| recommendationLookBackDuration | Длительность| Необязательное поле. Указывает период бездействия (в отношении даты начала экземпляра проверки), из чего будут настроены рекомендации. Рекомендация будет в том `deny` случае, если пользователь неактивно во время периода обратного действия. Для обзоров групп и ролей Azure AD принимается любая продолжительность. Для отзывов приложений максимальная продолжительность — 30 дней. Если не указано, продолжительность — 30 дней. <br/><br/>**ПРИМЕЧАНИЕ:** Если **определены этапыSettings** объекта [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) , вместо значения этого свойства будет использоваться его параметр **recommendationLookBackDuration** . |
-|decisionHistoriesForReviewersEnabled|Boolean| Указывает, доступны ли решения на предыдущих этапах проверки доступа для рецензентов на **accessReviewInstance** с несколькими последующими этапами. Если не предоставлено, по умолчанию отключено (`false`).|
-| recommendationInsightSettings|[accessReviewRecommendationInsightSetting](../resources/accessReviewRecommendationInsightSetting.md) collection | Необязательное свойство. Описывает типы анализов, которые проверяют для принятия решений по обзору доступа. <br/><br/>**ПРИМЕЧАНИЕ:** Если определены **этапыSettings** объекта [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) , вместо значения этого свойства будет использоваться параметр **recommendationInsightSettings** . |
+| justificationRequiredOnApproval|Логический | Указывает, требуются ли рецензенты для предоставления обоснования своего решения. Значение по умолчанию — `false`. |
+| defaultDecisionEnabled|Логический | Указывает, включено ли решение по умолчанию, если рецензенты не отвечают. Значение по умолчанию — `false`. |
+| defaultDecision|Строка | Выбранное решение, если `defaultDecisionEnabled` оно включено. Может быть одним из `Approve`, `Deny`или `Recommendation`. |
+| instanceDurationInDays|Int32 | Длительность каждого повторения проверки (`accessReviewInstance`) в количестве дней. <br/>**ПРИМЕЧАНИЕ:** Если **определен объект stageSettings** [объекта accessReviewScheduleDefinition](accessreviewscheduledefinition.md) , вместо значения этого свойства будет использоваться его параметр **durationInDays** . |
+| recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | Подробные параметры повторения с использованием стандартного объекта повторения Outlook. <br/><br/>**Примечание:** **Поддерживаются только свойства dayOfMonth**, **interval** и **type** (`weekly`, `absoluteMonthly`). Используйте свойство **startDate для** **recurrenceRange** , чтобы определить день начала проверки. |
+| autoApplyDecisionsEnabled|Логический | Указывает, применяются ли решения автоматически. Если задано значение `false`,администратор должен применить решения вручную после завершения проверки доступа рецензентом. Если задано значение `true`,решения применяются автоматически по истечении срока действия экземпляра проверки доступа независимо от того, ответили ли рецензенты. Значение по умолчанию — `false`. |
+| applyActions|[Коллекция accessReviewApplyAction](../resources/accessreviewapplyaction.md) | Необязательное поле. Описывает действия, которые необходимо выполнить после завершения проверки. В настоящее время поддерживаются два типа: `removeAccessApplyAction` (по умолчанию) и `disableAndDeleteUserApplyAction`. Поле необходимо указать только в случае с `disableAndDeleteUserApplyAction`. |
+| recommendationsEnabled|Логическое | Указывает, включены или отключены рекомендации по принятию решений. <br/>**ПРИМЕЧАНИЕ:** Если **определен параметр stageSettings** объекта [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) , вместо значения этого свойства будет использоваться его параметр **recommendationsEnabled** . |
+| recommendationLookBackDuration | Длительность| Необязательное поле. Указывает период бездействия (в отношении даты начала экземпляра проверки), из которого будут настроены рекомендации. В этом случае будет предложено `deny` , если пользователь неактивен во время просмотра. Для проверок групп и Azure AD ролей принимается любая длительность. Для проверок приложений максимальная длительность составляет 30 дней. Если не указано, длительность составляет 30 дней. <br/><br/>**ПРИМЕЧАНИЕ:** Если **определены stageSettings** объекта [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) , вместо значения этого свойства будет использоваться его параметр **recommendationLookBackDuration** . |
+|decisionHistoriesForReviewersEnabled|Логический| Указывает, доступны ли решения на предыдущих этапах проверки доступа для рецензентов в **accessReviewInstance** с несколькими последующими этапами. Если значение не указано, значение по умолчанию будет отключено (`false`).|
+| recommendationInsightSettings|[Коллекция accessReviewRecommendationInsightSetting](../resources/accessReviewRecommendationInsightSetting.md) | Необязательное. Описание типов аналитических сведений, помогающих рецензентам принимать решения о проверке доступа. <br/><br/>**ПРИМЕЧАНИЕ:** Если **определены stageSettings** объекта [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) , вместо значения этого свойства будет использоваться его параметр **recommendationInsightSettings** . |
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

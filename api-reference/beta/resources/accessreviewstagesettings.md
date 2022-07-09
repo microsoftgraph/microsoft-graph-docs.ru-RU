@@ -1,18 +1,18 @@
 ---
-title: тип ресурса accessReviewStageSettings
-description: В обзорах доступа к Azure AD accessReviewStageSettings представляет параметры этапов, связанных с многоэтапным обзором доступа.
-author: isabelleatmsft
+title: Тип ресурса accessReviewStageSettings
+description: В Azure AD проверки доступа accessReviewStageSettings представляет параметры этапов, связанных с многоэтабной проверкой доступа.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: daa7b139aa5a9321965bfe6391c92c16fbc52ffc
-ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
+ms.openlocfilehash: 8a7e0142f7f97f608544bc4ca4fc56ab4d3f11dd
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62816219"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697836"
 ---
-# <a name="accessreviewstagesettings-resource-type"></a>тип ресурса accessReviewStageSettings
+# <a name="accessreviewstagesettings-resource-type"></a>Тип ресурса accessReviewStageSettings
 
 Пространство имен: microsoft.graph
 
@@ -20,20 +20,20 @@ ms.locfileid: "62816219"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Представляет параметры этапов, связанных с объектом [проверки многоступенчатого доступа](accessreviewscheduledefinition.md) . 
+Представляет параметры этапов, связанных с объектом [проверки многоэтабного](accessreviewscheduledefinition.md) доступа. 
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|decisionsThatWillMoveToNextStage|Коллекция String|Указать, какие решения будут приняты на следующем этапе. Может быть подустройка `Approve`, или `Recommendation``Deny``NotReviewed`. Если не предоставлено, все решения будут переходить к следующему этапу. Необязательное свойство. |
-|dependsOn|Коллекция строк| Определяет последовательное или параллельное порядок этапов и зависит от **stageId**. В настоящее время поддерживаются только последовательное этапы. Например, если **stageId** является `2`, то **dependsOn** должен быть `1`. Если **stageId** есть `1`, не укажите **dependsOn**. Обязательно, **если stageId** не является `1`. |
-|durationInDays|Int32|Продолжительность этапа. Обязательный элемент.  <br/><br/>**ПРИМЕЧАНИЕ:** Совокупное значение этого свойства на всех этапах <br/> 1. Переопределит параметр [instanceDurationInDays](accessReviewScheduleSettings.md) на [объекте accessReviewScheduleDefinition](accessReviewScheduleDefinition.md) . <br/>2. Не может превышать длину одного рецидива. То есть, если обзор повторяется еженедельно, совокупная **продолжительностьInDays** не может превышать 7. |
-|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|При условии, если основные рецензенты не существуют, рецензентам откатов будет предложено завершить проверку. Например, если менеджеры выбраны в качестве рецензентов, а у проверяемого директора нет менеджера в Azure AD, проверятелям откатов будет предложено просмотреть этот принцип. <br/><br/>**ПРИМЕЧАНИЕ:** Значение этого свойства переопределит соответствующий параметр объекта [accessReviewScheduleDefinition](accessReviewScheduleDefinition.md) .|
-|recommendationsEnabled|Логический|Указывает, включено ли отображение рекомендаций рецензентам. Обязательный элемент. <br/><br/>**ПРИМЕЧАНИЕ:** Значение этого свойства переопределит соответствующий параметр на [объекте accessReviewScheduleDefinition](accessreviewscheduledefinition.md).[](accessReviewScheduleSettings.md)|
-| recommendationInsightsSettings | [accessReviewRecommendationInsightSetting](accessReviewRecommendationInsightSetting.md) collection | Определяет, какие рекомендации показывать рецензентам. <br/><br/>**ПРИМЕЧАНИЕ:** Значение этого свойства переопределит [соответствующий параметр](accessReviewScheduleSettings.md) объекта [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) .|
-| recommendationLookBackDuration | Длительность| Необязательное поле. Указывает период времени бездействия (в отношении даты начала экземпляра обзора), из чего будут настроены рекомендации. Рекомендация будет в том случае `deny` , если пользователь неактивно во время периода обратного назад. Для обзоров групп и ролей Azure AD принимается любая продолжительность. Для отзывов приложений максимальная продолжительность — 30 дней. Если не указано, продолжительность — 30 дней. <br/><br/>**ПРИМЕЧАНИЕ:** Значение этого свойства переопределит [соответствующий параметр](accessReviewScheduleSettings.md) объекта [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) . |
-|рецензенты|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи просматривают собственный доступ).  Примеры вариантов назначения рецензентов см. в примере Назначение рецензентов определению обзора доступа с помощью [API microsoft Graph.](/graph/accessreviews-reviewers-concept) <br/><br/>**ПРИМЕЧАНИЕ:** Значение этого свойства переопределит соответствующий параметр [в accessReviewScheduleDefinition](accessReviewScheduleDefinition.md). |
-|stageId|Строка|Уникальный идентификатор **accessReviewStageSettings**. **StageId будет** использоваться в **свойстве dependsOn** для указать отношение стадии. Обязательный элемент. |
+|decisionsThatWillMoveToNextStage|Коллекция объектов string|Укажите, какие решения будут приняты на следующем этапе. Может быть подмноженым набором `Approve`, или `NotReviewed``Deny``Recommendation`. Если этот параметр не указан, все решения будут переходить к следующему этапу. Необязательное. |
+|dependsOn|Коллекция String| Определяет последовательный или параллельный порядок этапов и зависит от **stageId**. В настоящее время поддерживаются только последовательные этапы. Например, если **stageId** имеет значение `2`, **то dependsOn должен** иметь значение .`1` Если **stageId** имеет значение `1`stageId, не указывайте **dependsOn**. Требуется, если **stageId** не является `1`. |
+|durationInDays|Int32|Длительность этапа. Обязательный элемент.  <br/><br/>**ПРИМЕЧАНИЕ:** Совокупное значение этого свойства на всех этапах <br/> 1. Переопределяет параметр [instanceDurationInDays](accessReviewScheduleSettings.md) для [объекта accessReviewScheduleDefinition](accessReviewScheduleDefinition.md) . <br/>2. Не может превышать длину одного повторения. То есть, если проверка выполняется еженедельно, совокупная **длительностьInDays** не может превышать 7. |
+|fallbackReviewers|[Коллекция accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Если этот параметр указан, резервным рецензентам предлагается выполнить проверку, если основные рецензенты не существуют. Например, если руководители выбраны в качестве рецензентов, а проверяемая субъект не имеет руководителя в Azure AD, резервным рецензентам будет предложено проверить этот субъект. <br/><br/>**ПРИМЕЧАНИЕ:** Значение этого свойства переопределит соответствующий параметр объекта [accessReviewScheduleDefinition](accessReviewScheduleDefinition.md) .|
+|recommendationsEnabled|Логическое|Указывает, включены ли рекомендации для рецензентов. Обязательный элемент. <br/><br/>**ПРИМЕЧАНИЕ:** Значение этого свойства переопределит соответствующий параметр объекта [accessReviewScheduleDefinition](accessreviewscheduledefinition.md).[](accessReviewScheduleSettings.md)|
+| recommendationInsightsSettings | [Коллекция accessReviewRecommendationInsightSetting](accessReviewRecommendationInsightSetting.md) | Определяет, какие рекомендации следует отображать рецензентам. <br/><br/>**ПРИМЕЧАНИЕ:** Значение этого свойства переопределит соответствующий [параметр объекта](accessReviewScheduleSettings.md) [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) .|
+| recommendationLookBackDuration | Длительность| Необязательное поле. Указывает период бездействия (в отношении даты начала экземпляра проверки), из которого будут настроены рекомендации. Рекомендация будет применяться, `deny` если пользователь неактивен в течение периода обратного просмотра. Для проверок групп и Azure AD ролей принимается любая длительность. Для проверок приложений максимальная длительность составляет 30 дней. Если не указано, длительность составляет 30 дней. <br/><br/>**ПРИМЕЧАНИЕ:** Значение этого свойства переопределит соответствующий [параметр объекта](accessReviewScheduleSettings.md) [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) . |
+|Авторам|[Коллекция accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Определяет, кто является рецензентом. Если они не указаны, проверка выполняется самостоятельно (пользователи проверяют собственный доступ).  Примеры параметров назначения рецензентов см. в статье "Назначение рецензентов определению проверки доступа с [помощью microsoft API Graph"](/graph/accessreviews-reviewers-concept). <br/><br/>**ПРИМЕЧАНИЕ:** Значение этого свойства переопределит соответствующий параметр в [accessReviewScheduleDefinition](accessReviewScheduleDefinition.md). |
+|stageId|Строка|Уникальный идентификатор **объекта accessReviewStageSettings**. **StageId будет** использоваться в **свойстве dependsOn**, чтобы указать связь стадии. Обязательный элемент. |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

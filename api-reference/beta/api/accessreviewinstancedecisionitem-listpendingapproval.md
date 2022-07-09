@@ -1,27 +1,27 @@
 ---
-title: Список accessReviewInstanceDecisionItem до утверждения
-description: Извлечение объектов accessReviewInstanceDecisionItem до утверждения пользователем вызова.
+title: Список объектов accessReviewInstanceDecisionItem, ожидающих утверждения
+description: Получение объектов accessReviewInstanceDecisionItem, ожидающих утверждения вызывающим пользователем.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5925711646753fdde070f34a1d0da37c075377d1
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 85e42de0bffa25377fb6a2eba9332adba6d85b20
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722017"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696619"
 ---
-# <a name="list-accessreviewinstancedecisionitems-pending-approval-deprecated"></a>List accessReviewInstanceDecisionItems pending approval (deprecated)
+# <a name="list-accessreviewinstancedecisionitems-pending-approval-deprecated"></a>Вывод списка объектов accessReviewInstanceDecisionItems, ожидающих утверждения (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->Этот метод будет обесценится и прекратит возвращать данные 19 мая 2023 г. Он был заменен [фильтромByCurrentUser](accessreviewinstancedecisionitem-filterbycurrentuser.md).
+>Этот метод будет нерекомендуемым и прекратит возвращать данные 19 мая 2023 г. Он был заменен [filterByCurrentUser](accessreviewinstancedecisionitem-filterbycurrentuser.md).
 
-Извлечение [объектов accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) для определенного [accessReviewInstance](../resources/accessreviewscheduledefinition.md) до утверждения пользователем вызова. Возвращается список объектов zero или more accessReviewInstanceDecisionItem, включая все вложенные свойства.
+Получение объектов [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) для определенного [accessReviewInstance](../resources/accessreviewscheduledefinition.md) , ожидающего утверждения вызывающим пользователем. Возвращается список из нуля или более объектов accessReviewInstanceDecisionItem, включая все их вложенные свойства.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +31,7 @@ ms.locfileid: "63722017"
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 
-При входе пользователь также увидит решения, которым им назначен рецензент в доступе экземпляра этого решенияReviewScheduleDefinition.
+Пользователь, выполнив вход, также будет видеть только решения, которым он назначен рецензентом в accessReviewScheduleDefinition экземпляра этого решения.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,22 +40,22 @@ GET /me/pendingAccessReviewInstances/{instance-id}/decisions
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметры `$skip` `$top` запроса OData и помогает настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$skip` `$top` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-Размер страницы по умолчанию для этого API — 100 **объектов accessReviewInstanceDecisionItem** . Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
+Размер страницы по умолчанию для этого API — 100 **объектов accessReviewInstanceDecisionItem** . Чтобы повысить эффективность и избежать времени ожидания из-за больших результирующих наборов, примените разбиение на страницы с помощью `$skip` `$top` параметров запроса и параметров запроса. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ## <a name="request-headers"></a>Заголовки запросов
 Нет.
 
-## <a name="request-body"></a>Текст запроса
-Не поставляем тело запроса.
+## <a name="request-body"></a>Основной текст запроса
+Не предоставляйте текст запроса.
 
 ## <a name="response"></a>Отклик
-В случае успешной `200 OK` работы этот метод возвращает код ответа и массив [объектов accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) в теле ответа.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и массив объектов [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
-В следующем примере показан запрос на извлечение всех решений в экземпляре обзора доступа до утверждения вызываемого пользователя.
+В следующем примере показан запрос на получение всех решений по экземпляру проверки доступа в ожидании утверждения вызывающего пользователя.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -165,8 +165,8 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Получить accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
-- [Получить accessReviewInstance](accessreviewinstance-get.md)
+- [Получение accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
+- [Получение accessReviewInstance](accessreviewinstance-get.md)
 
 
 <!--

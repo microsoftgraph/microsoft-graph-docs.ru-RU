@@ -1,31 +1,31 @@
 ---
-title: accessReviewHistoryScheduleSettings
-description: В обзорах доступа Azure AD accessReviewHistoryScheduleSettings представляет параметры, связанные с серией определений истории обзоров доступа.
-author: isabelleatmsft
+title: Тип ресурса accessReviewHistoryScheduleSettings
+description: В Azure AD проверки доступа accessReviewHistoryScheduleSettings представляет параметры, связанные с рядом определений журнала проверки доступа.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7f1e10372fbd2db23ae70ea413e007993c6f85a0
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: f7cf5ebd089fd94999a8ad5bfd8edfe6f1a4129b
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62226333"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697241"
 ---
-# <a name="accessreviewhistoryschedulesettings-resource-type"></a>accessReviewHistoryScheduleSettings
+# <a name="accessreviewhistoryschedulesettings-resource-type"></a>Тип ресурса accessReviewHistoryScheduleSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Определяет параметры объекта [accessReviewHistoryDefinition.](accessreviewhistorydefinition.md)
+Определяет параметры объекта [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) .
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-| recurrence|[patternedRecurrence](patternedrecurrence.md) | Подробные параметры для повторения с помощью стандартного объекта Outlook повторения. <br/><br/>**Примечание:** Поддерживаются **только свойства dayOfMonth,** **интервал** и **тип** `weekly` (, ). `absoluteMonthly` Используйте свойство **startDate на** **recurrenceRange,** чтобы определить день начала проверки. Обязательный. |
-|reportRange|String|Строка продолжительности в формате isO 8601, указывав период ожидания созданных данных истории обзоров. Например, если определение истории планируется выполнить 1-го каждого месяца, **reportRange** `P1M` — это . В этом случае в первой части каждого месяца будут собираться данные истории обзоров доступа, содержащие только данные обзоров предыдущего месяца. <br/><br/>**Примечание:** **Поддерживаются** **только** свойства **ISO** 8601, которые поддерживаются только годами, месяцами и днями. Обязательный элемент.|
+| recurrence|[patternedRecurrence](patternedrecurrence.md) | Подробные параметры повторения с использованием стандартного объекта повторения Outlook. <br/><br/>**Примечание:** **Поддерживаются только свойства dayOfMonth**, **interval** и **type** (`weekly`, `absoluteMonthly`). Используйте свойство **startDate для** **recurrenceRange** , чтобы определить день начала проверки. Обязательный элемент. |
+|reportRange|String|Строка длительности в формате ISO 8601, указывав период просмотра созданных данных журнала проверки. Например, если определение журнала запланировано на 1-е время каждого месяца, **reportRange** будет равно `P1M`. В этом случае в первый раз каждый месяц будут собираться данные журнала проверки доступа, содержащие только данные о проверке за предыдущий месяц. <br/><br/>**Примечание:** **Поддерживаются** только **свойства** **ISO** 8601 только для лет, месяцев и дней. Обязательный элемент.|
 
 ## <a name="json-representation"></a>Представление JSON
 

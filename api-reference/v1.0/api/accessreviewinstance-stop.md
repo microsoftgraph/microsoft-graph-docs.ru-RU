@@ -1,23 +1,23 @@
 ---
-title: 'accessReviewInstance: остановка'
-description: Остановите активный в настоящее время accessReviewInstance.
-author: isabelleatmsft
+title: 'accessReviewInstance: stop'
+description: Остановите текущий активный accessReviewInstance.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0ed798801ecd352bdb86aa50a8552ffc83d20191
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 88074f7fb9a5a31fdba1664d049c12a245c3afeb
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979843"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698004"
 ---
-# <a name="accessreviewinstance-stop"></a>accessReviewInstance: остановка
+# <a name="accessreviewinstance-stop"></a>accessReviewInstance: stop
 Пространство имен: microsoft.graph
 
-Остановите активный в настоящее [время accessReviewInstance.](../resources/accessreviewinstance.md) После остановки экземпляра проверки доступа состояние экземпляра помечено как , рецензенты больше не могут вводить ввод и применяются `Completed` решения о проверке доступа.
+Остановите текущий [активный accessReviewInstance](../resources/accessreviewinstance.md). После остановки экземпляра `Completed`проверки доступа состояние экземпляра помечается как , рецензенты больше не могут вводить данные и применяются решения по проверке доступа.
 
-Остановка экземпляра не остановит будущие экземпляры. Чтобы предотвратить повторный обзор доступа при [](accessreviewscheduledefinition-update.md) запуске будущих экземпляров, обнови определение расписания, чтобы изменить запланированную дату окончания.
+Остановка экземпляра не приведет к остановке будущих экземпляров. Чтобы предотвратить запуск будущих экземпляров повторяющейся проверки [доступа,](accessreviewscheduledefinition-update.md) обновите определение расписания, чтобы изменить запланированную дату окончания.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

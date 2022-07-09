@@ -1,16 +1,16 @@
 ---
 title: Список экземпляров
-description: Извлечение объектов accessReviewInstance.
+description: Получение объектов accessReviewInstance.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4a68e781a26cdb3176d102f0c7727da353921135
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 852640c90e02cd659e3b9e31c37c1625abd9121a
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63721914"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696869"
 ---
 # <a name="list-instances"></a>экземпляры списков;
 
@@ -18,7 +18,7 @@ ms.locfileid: "63721914"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Извлечение объектов accessReviewInstance](../resources/accessreviewinstance.md) для определенного [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md). Возвращается список объектов zero или more **accessReviewInstance** , включая все вложенные свойства. Возвращенные объекты не включают связанный accessReviewInstanceDecisionItems. Чтобы получить решения в экземпляре, используйте [list accessReviewInstanceDecisionItem](accessreviewinstance-list-decisions.md).
+Получение объектов [accessReviewInstance](../resources/accessreviewinstance.md) для определенного [объекта accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md). Возвращается список из нуля или более **объектов accessReviewInstance** , включая все их вложенные свойства. Возвращаемые объекты не включают связанные объекты accessReviewInstanceDecisionItems. Чтобы получить решения об экземпляре, используйте [list accessReviewInstanceDecisionItem](accessreviewinstance-list-decisions.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "63721914"
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Для приложений                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
-В роли каталога должен также быть подписан пользователь, который позволяет им читать обзор доступа. Чтобы просмотреть только те экземпляры, в которые назначен рецензент, см. в примере [List pending access review instances](accessreviewinstance-pendingaccessreviewinstances.md)
+Пользователь, выполнив вход, также должен иметь роль каталога, которая позволяет ему читать проверку доступа. Чтобы просмотреть только экземпляры, для которых вошед в систему пользователь назначен рецензенту, см. список ожидающих [экземпляров проверки доступа](accessreviewinstance-pendingaccessreviewinstances.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,22 +37,22 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$select`параметры `$filter`запроса OData `$orderBy``$skip`и `$top` OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select`параметры `$filter`запроса , `$orderBy`, и `$skip``$top` OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-Размер страницы по умолчанию для этого API — 100 **объектов accessReviewInstance** . Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
+Размер страницы по умолчанию для этого API — 100 **объектов accessReviewInstance** . Чтобы повысить эффективность и избежать времени ожидания из-за больших результирующих наборов, примените разбиение на страницы с помощью `$skip` `$top` параметров запроса и параметров запроса. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ## <a name="request-headers"></a>Заголовки запросов
 Нет.
 
-## <a name="request-body"></a>Текст запроса
-Не поставляем тело запроса.
+## <a name="request-body"></a>Основной текст запроса
+Не предоставляйте текст запроса.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код `200 OK` отклика и массив [объектов accessReviewInstance](../resources/accessreviewinstance.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и массив объектов [accessReviewInstance](../resources/accessreviewinstance.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
-В следующем примере показан запрос на извлечение всех экземпляров обзора доступа для определения.
+В следующем примере показан запрос на получение всех экземпляров проверки доступа для определения.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -132,8 +132,8 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Список accessReviewScheduleDefinition](accessreviewset-list-definitions.md)
-- [Получить accessReviewInstance](accessreviewinstance-get.md)
+- [Перечисление accessReviewScheduleDefinition](accessreviewset-list-definitions.md)
+- [Получение accessReviewInstance](accessreviewinstance-get.md)
 
 
 <!--

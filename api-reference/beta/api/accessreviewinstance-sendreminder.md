@@ -1,16 +1,16 @@
 ---
 title: 'accessReviewInstance: sendReminder'
-description: Отправляет напоминание рецензентам активного доступаReviewInstance.
+description: Отправляет напоминание рецензентам текущего активного объекта accessReviewInstance.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d4e43932d274ef2195f628dcac9ff1284b13f190
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a5e50ce0f976789fed15724a18488a3396f38be4
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60991849"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697332"
 ---
 # <a name="accessreviewinstance-sendreminder"></a>accessReviewInstance: sendReminder
 
@@ -18,7 +18,7 @@ ms.locfileid: "60991849"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отправьте напоминание рецензентам активного в настоящее время [accessReviewInstance](../resources/accessreviewinstance.md).
+Отправьте напоминание рецензентам текущего [активного объекта accessReviewInstance](../resources/accessreviewinstance.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

@@ -1,16 +1,16 @@
 ---
 title: Настройка области проверки доступа с помощью microsoft API Graph
 description: Узнайте, как программно проверить доступ пользователей, субъектов-служб или групп к Azure AD с помощью microsoft API Graph.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 8da62d1d75119a6ec0dcbb6681be0d3cd9b58d94
-ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
+ms.openlocfilehash: 983bb98c9344fc745ebe9a36c27995cef4ce4562
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2022
-ms.locfileid: "66609621"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698340"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Настройка области проверки доступа с помощью microsoft API Graph
 

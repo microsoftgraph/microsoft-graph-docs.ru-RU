@@ -1,15 +1,15 @@
 ---
-title: Обновление содержимого страницы OneNote с помощью API OneNote
+title: Обновление содержимого страниц OneNote
 description: Обновите содержимое страницы OneNote, отправив запрос PATCH в конечную точку содержимого страницы. Затем отправьте объект изменения JSON в тексте сообщения.
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: e11cec09e5b54f6beef43f223264d004f341b11a
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 4ce761de7f1c27ea80db2bd480abf53852368b56
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66442817"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698067"
 ---
 # <a name="update-onenote-page-content"></a>Обновление содержимого страниц OneNote
 
@@ -448,7 +448,7 @@ Content-Type: image/png
 
 <br/> 
 
-| Данные в отклике | Описание |  
+| Данные ответа | Описание |  
 |------|------|  
 | Код успешного завершения | Код состояния HTTP 204. Данные JSON не возвращаются по PATCH-запросу. |  
 | Ошибки | Дополнительные сведения об ошибках OneNote, которые может возвращать Microsoft Graph, см. в статье [Коды ошибок для API OneNote в Microsoft Graph](onenote-error-codes.md). |  

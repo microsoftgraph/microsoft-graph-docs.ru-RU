@@ -1,18 +1,18 @@
 ---
-title: accessReviewnotificationrecipientqueryscope resource type
-description: Представляет пользователей, которые получат уведомления для отзывов о доступе.
-author: isabelleatmsft
-localization_priority: Normal
+title: Тип ресурса accessReviewnotificationrecipientqueryscope
+description: Представляет пользователей, которые будут получать уведомления для проверок доступа.
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 19b619b7479212e5fc055f5ab19b025d8d512dc1
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: fae6a904f06424f79ea96ce4750efa67f6cf1cd4
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896747"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697955"
 ---
-# <a name="accessreviewnotificationrecipientqueryscope-resource-type"></a>accessReviewnotificationrecipientqueryscope resource type
+# <a name="accessreviewnotificationrecipientqueryscope-resource-type"></a>Тип ресурса accessReviewnotificationrecipientqueryscope
 
 Пространство имен: microsoft.graph
 
@@ -20,22 +20,22 @@ ms.locfileid: "52896747"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Указывает статический список получателей (например, определенных пользователей, владельцев групп или членов группы) для получения уведомлений о просмотре доступа.
+Указывает статический список получателей (например, конкретных пользователей, владельцев групп или участников группы) для получения уведомлений о проверке доступа.
 
-Наследует [от accessReviewNotificationRecipientScope](../resources/accessreviewnotificationrecipientscope.md).
+Наследуется [от accessReviewNotificationRecipientScope](../resources/accessreviewnotificationrecipientscope.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство | Тип | Описание |
 | :-------------------------| :---------- | :---------- |
-| Запрос | String | Это представляет запрос для получателей. Например, `/groups/{group id}/members` для участников группы и `/users/{user id}` для определенного пользователя. |
-| queryType | String | Указывает тип запроса. Разрешено значение `MicrosoftGraph` . |
-| queryRoot | String | В сценарии, в котором рецензенты должны быть указаны динамически, это свойство используется для указать относительный источник запроса. Это свойство требуется только в том случае, если указан относительный запрос. `./manager` |
+| Запрос | Строка | Это представляет запрос для получателей. Например, для `/groups/{group id}/members` участников группы и `/users/{user id}` для определенного пользователя. |
+| queryType | Строка | Указывает тип запроса. Допустимое значение: `MicrosoftGraph`. |
+| queryRoot | String | В сценарии, в котором рецензенты должны быть указаны динамически, это свойство используется для определения относительного источника запроса. Это свойство требуется только в том случае, если указан относительный запрос, `./manager`то есть ). |
 
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

@@ -1,21 +1,21 @@
 ---
 title: 'accessReviewInstanceDecisionItem: filterByCurrentUser'
-description: Извлекает все объекты accessReviewInstanceDecisionItem в accessReviewInstance, для которых вызываемая пользователь является рецензентом.
-author: isabelleatmsft
+description: Извлекает все объекты accessReviewInstanceDecisionItem в accessReviewInstance, для которого вызывающий пользователь является рецензентом.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2f6a06e7b6de066e0a8b06383ca3882504dfbf87
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: c39ea6e314ecc61164f863d92090487abdfed7ce
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63720852"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698494"
 ---
 # <a name="accessreviewinstancedecisionitem-filterbycurrentuser"></a>accessReviewInstanceDecisionItem: filterByCurrentUser
 Пространство имен: microsoft.graph
 
-Извлекает все [объекты accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) на заданном [accessReviewInstance](../resources/accessreviewinstance.md) , для которого вызываемая пользователь является рецензентом.
+Извлекает все [объекты accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) в заданном [объекте accessReviewInstance](../resources/accessreviewinstance.md) , для которого вызывающий пользователь является рецензентом.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,16 +37,16 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="function-parameters"></a>Параметры функции
-В следующей таблице показаны параметры запроса, которые можно использовать с помощью этого метода.
+В следующей таблице показаны параметры запроса, которые можно использовать с этим методом.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|Фильтр для запроса объектов принятия решений для текущего пользователя. Возможные значения : `reviewer`. `unknownFutureValue` Использование `reviewer`. Обязательно.|
+|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|Фильтрация для запроса объектов принятия решений для текущего пользователя. Возможные значения:`reviewer``unknownFutureValue` Используйте .`reviewer` Обязательный элемент.|
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$select`параметры `$filter`запроса OData `$orderBy``$skip`и `$top` OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select`параметры `$filter`запроса , `$orderBy`, и `$skip``$top` OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-Размер страницы по умолчанию для этого API — 100 **объектов accessReviewInstanceDecisionItem** . Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
+Размер страницы по умолчанию для этого API — 100 **объектов accessReviewInstanceDecisionItem** . Чтобы повысить эффективность и избежать времени ожидания из-за больших результирующих наборов, примените разбиение на страницы с помощью `$skip` `$top` параметров запроса и параметров запроса. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -58,7 +58,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы эта функция возвращает код ответа и [коллекцию accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) в тексте ответа.
+В случае успешного выполнения эта функция `200 OK` возвращает код отклика и коллекцию [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

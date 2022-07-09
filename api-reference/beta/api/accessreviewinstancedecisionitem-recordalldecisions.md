@@ -1,23 +1,23 @@
 ---
 title: 'accessReviewInstanceDecisionItem: recordAllDecisions'
-description: Запись решений для объекта accessReviewInstanceDecisionItem.
+description: Запишите решения для объекта accessReviewInstanceDecisionItem.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b3d8eb173a219f0d11b49d304040fc6436d97f89
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 75ed5e51631e36179b2c266ecd11ce934c3c9a1f
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225149"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697129"
 ---
 # <a name="accessreviewinstancedecisionitem-recordalldecisions"></a>accessReviewInstanceDecisionItem: recordAllDecisions
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В качестве рецензента обзора доступа зафиксировать решение для назначенного вам [accessReviewInstanceDecisionItem,](../resources/accessReviewInstanceDecisionItem.md) соответствующего указанному основному или ресурсу. Если не указаны никакие ИД, решения будут применяться ко всем **accessReviewInstanceDecisionItem,** для которых вы являетсяе рецензентом.
+Как рецензент проверки доступа запишите решение для [accessReviewInstanceDecisionItem](../resources/accessReviewInstanceDecisionItem.md) , назначенное вам и соответствующее указанным идентификаторам субъекта или ресурса. Если идентификаторы не указаны, решения будут применяться ко всем **объектам accessReviewInstanceDecisionItem** , для которых вы являетсяе рецензентом.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "62225149"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
+|Для приложений                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,10 +51,10 @@ POST /identityGovernance/accessReviews/decisions/filterByCurrentUser(on='reviewe
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|решение|Строка| Решение о предоставлении. Возможные значения `Approve` , `Deny` `DontKnow` . |
-|обоснование|String|Обоснование для принятия решения.|
-|principalId|Строка|При условии, все элементы решения, совпадающие с principalId, будут иметь это решение записано.|
-|resourceId|String|При условии, все элементы решений, совпадающие с resourceId, будут иметь это решение записано.|
+|Решение|Строка| Решение для предоставления. Возможные значения: `Approve`, `Deny`. `DontKnow` |
+|Обоснование|Строка|Обоснование для принятия решения.|
+|principalId|Строка|Если этот параметр указан, все элементы принятия решений, соответствующие principalId, будут записаны.|
+|resourceId|String|Если этот параметр указан, это решение будет записано для всех элементов принятия решений, соответствующих идентификатору ресурса.|
 
 
 

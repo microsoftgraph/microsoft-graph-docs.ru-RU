@@ -1,22 +1,22 @@
 ---
-title: Получить accessReviewInstance
-description: Ознакомьтесь с свойствами и отношениями объекта accessReviewInstance.
-author: isabelleatmsft
+title: Получение accessReviewInstance
+description: Чтение свойств и связей объекта accessReviewInstance.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a81c9792dc7bde645356ed75c6f3b37d1c73eabe
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 850cd34d9e6b76fbb67413ea95f45d8b643f14e9
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61021404"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698025"
 ---
-# <a name="get-accessreviewinstance"></a>Получить accessReviewInstance
+# <a name="get-accessreviewinstance"></a>Получение accessReviewInstance
 Пространство имен: microsoft.graph
 
 
-Ознакомьтесь с свойствами и отношениями [объекта accessReviewInstance.](../resources/accessreviewinstance.md)
+Чтение свойств и связей объекта [accessReviewInstance](../resources/accessreviewinstance.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,7 +38,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$select` параметр запроса OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -50,7 +50,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект accessReviewInstance](../resources/accessreviewinstance.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [accessReviewInstance](../resources/accessreviewinstance.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

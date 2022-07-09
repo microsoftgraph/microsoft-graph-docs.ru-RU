@@ -1,24 +1,24 @@
 ---
-title: отключение типа ресурсаAndDeleteUserApplyAction
-description: Отключите и удалите любого гостевого пользователя B2B, которому отказано в просмотре доступа.
-author: isabelleatmsft
+title: Тип ресурса disableAndDeleteUserApplyAction
+description: Отключите и удалите гостевого пользователя B2B, которому отказано в проверке доступа.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 37085f849dc3bc84dfda1926ba9d140e91d3d894
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3958b27453e8ebe83513f2bbdd34403e3cb6088f
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089741"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698452"
 ---
-# <a name="disableanddeleteuserapplyaction-resource-type"></a>отключение типа ресурсаAndDeleteUserApplyAction
+# <a name="disableanddeleteuserapplyaction-resource-type"></a>Тип ресурса disableAndDeleteUserApplyAction
 
 Пространство имен: microsoft.graph
 
-Отключите любого гостевого пользователя B2B, которому в обзоре доступа отказано в течение 30 дней, а затем удалите учетную запись. Этот параметр не содержит параметры конфигурации.
+Отключите гостевого пользователя B2B, которому отказано в проверке доступа в течение 30 дней, а затем удалите его учетную запись. Этот параметр не содержит параметров конфигурации.
 
-Наследует [от accessReviewApplyAction](../resources/accessreviewapplyaction.md).
+Наследуется [от accessReviewApplyAction](../resources/accessreviewapplyaction.md).
 
 ## <a name="properties"></a>Свойства
 Нет
@@ -26,7 +26,7 @@ ms.locfileid: "59089741"
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

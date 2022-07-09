@@ -1,37 +1,37 @@
 ---
-title: тип ресурса principalResourceMembershipsScope
-description: Позволяет выбрать область обзора доступа, чтобы просмотреть доступ выбранных директоров к выбранным ресурсам.
-author: isabelleatmsft
+title: Тип ресурса principalResourceMembershipsScope
+description: Позволяет выбрать область проверки доступа для проверки доступа выбранных участников к выбранным ресурсам.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7d4e30ccccedb5dda72c4d0bb168655e1a8aedfd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2f9c2982dd8b73969d9b51b2242ad2c33367031e
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019218"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698074"
 ---
-# <a name="principalresourcemembershipsscope-resource-type"></a>тип ресурса principalResourceMembershipsScope
+# <a name="principalresourcemembershipsscope-resource-type"></a>Тип ресурса principalResourceMembershipsScope
 
 Пространство имен: microsoft.graph
 
-PrincipalResourceMembershipsScope — это тип [accessReviewScope,](accessreviewscope.md) который позволяет выбрать коллекцию основных областей и коллекцию областей ресурсов и просмотреть доступ выбранных директоров к выбранным ресурсам. Он используется для настройки свойства **области** [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md)
+PrincipalResourceMembershipsScope — это тип [accessReviewScope](accessreviewscope.md) , который позволяет выбрать коллекцию основных областей и коллекцию областей ресурсов и проверить доступ выбранных субъектов к выбранным ресурсам. Он используется для настройки свойства **области** [accessReviewScheduleDefinition](accessreviewscheduledefinition.md).
 
-Наследует [от accessReviewScope](../resources/accessreviewscope.md).
+Наследуется [от accessReviewScope](../resources/accessreviewscope.md).
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|principalScopes|[коллекция accessReviewScope](../resources/accessreviewscope.md)|Определяет области директоров, доступ к ресурсам которых просматривается в обзоре доступа.|
-|resourceScopes|[коллекция accessReviewScope](../resources/accessreviewscope.md)|Определяет области ресурсов, для которых просматривается доступ.|
+|principalScopes|[Коллекция accessReviewScope](../resources/accessreviewscope.md)|Определяет области субъектов, доступ к ресурсам которых проверяются в проверке доступа.|
+|resourceScopes|[Коллекция accessReviewScope](../resources/accessreviewscope.md)|Определяет области ресурсов, для которых проверяется доступ.|
 
-Также необходимо указать **свойство @odata.type** со значением `#microsoft.graph.principalResourceMembershipsScope` . Дополнительные информацию о  параметрах конфигурации области с помощью **principalResourceMembershipsScope** см. в меню Настройка области определения обзора доступа с помощью [API](/graph/accessreviews-scope-concept)Microsoft Graph.
+Необходимо также указать **свойство @odata.type** со значением `#microsoft.graph.principalResourceMembershipsScope`. Дополнительные сведения о параметрах  конфигурации для области с помощью **principalResourceMembershipsScope** см. в статье "Настройка области определения проверки доступа с помощью microsoft [API Graph](/graph/accessreviews-scope-concept)".
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

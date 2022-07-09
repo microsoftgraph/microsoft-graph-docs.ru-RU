@@ -1,22 +1,22 @@
 ---
 title: 'accessReviewInstance: acceptRecommendations'
-description: Позволяет принимать рекомендации по решениям для экземпляра проверки доступа, который не был рассмотрен пользователем, который является рецензентом.
-author: isabelleatmsft
+description: Разрешает принятие рекомендаций по решениям для экземпляра проверки доступа, который не был просмотрет вызывающий пользователь, который является рецензентом.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 853b3c71c85dd87eafa1147f8d90202c34bf6af0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5b8e635069483ce5b06be58877446ba8ffce17ea
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61001559"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698039"
 ---
 # <a name="accessreviewinstance-acceptrecommendations"></a>accessReviewInstance: acceptRecommendations
 
 Пространство имен: microsoft.graph
 
-Позволяет принимать рекомендации по всем [объектам accessReviewInstanceDecisionItem,](../resources/accessreviewinstancedecisionitem.md) которые не были рассмотрены на [объекте accessReviewInstance,](../resources/accessreviewinstance.md) для которого вызываемого пользователя является рецензентом.
+Позволяет принять рекомендации для всех объектов [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) , которые не были просмотрена в [объекте accessReviewInstance](../resources/accessreviewinstance.md) , для которого вызывающий пользователь является рецензентом.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

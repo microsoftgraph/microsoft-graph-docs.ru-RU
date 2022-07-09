@@ -1,16 +1,16 @@
 ---
 title: Добавление вложения
-description: Добавление вложения при создании групповой публикации.
+description: Добавьте вложение при создании записи группы.
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 03a3097aacb5775414b8a81539ca61c6a95646d0
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: be123136893fac8622c4e0edd7716c07b45893b6
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62347129"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698221"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -18,9 +18,9 @@ ms.locfileid: "62347129"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление [вложения](../resources/attachment.md) при создании групповой публикации. 
+Добавьте [вложение](../resources/attachment.md) при создании записи группы. 
 
-Эта операция ограничивает размер вложения, который можно добавить до 4 МБ.
+Эта операция ограничивает размер вложения, которое можно добавить, до 4 МБ.
 
 Допустимые типы вложений:
 
@@ -37,10 +37,10 @@ ms.locfileid: "62347129"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.ReadWrite.All |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
-Включай вложение при создании [столба](../resources/post.md) в [беседеThread](../resources/conversationthread.md) группы. Указание родительского [разговора необязательно](../resources/conversation.md) .
+Включите вложение при создании [записи](../resources/post.md) в [conversationThread](../resources/conversationthread.md) группы. Указывать родительскую [беседу необязательно](../resources/conversation.md) .
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -53,20 +53,20 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 | Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажи объект JSON, который включает параметр **post** .
+В тексте запроса укажите объект JSON, содержащий параметр **post** .
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|post|[post](../resources/post.md)|Новая почта, с которой будет отвечать, включает одно или несколько вложений в коллекцию [вложений](../resources/attachment.md) .|
+|post|[post](../resources/post.md)|Новая запись, с которой выполняется ответ, которая содержит одно или несколько вложений в коллекции [вложений](../resources/attachment.md) .|
 
 ## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Он не возвращает тело отклика.
 
 ## <a name="examples"></a>Примеры
-### <a name="example-1-include-a-file-attachment"></a>Пример 1. Вложение файла
+### <a name="example-1-include-a-file-attachment"></a>Пример 1. Включение вложения в файл
 #### <a name="request"></a>Запрос
-Вот пример запроса, который включает файл в качестве вложения при создании сообщения.
+Ниже приведен пример запроса, который включает файл в качестве вложения при создании записи.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -128,10 +128,10 @@ Content-type: application/json
 HTTP/1.1 202 Accpted
 ```
 
-### <a name="example-2-include-an-item-attachment"></a>Пример 2. Включить вложение элемента
+### <a name="example-2-include-an-item-attachment"></a>Пример 2. Включение вложения элемента
 
 #### <a name="request"></a>Запрос
-Вот пример запроса, который включает событие в качестве вложения при создании столба.
+Ниже приведен пример запроса, который включает событие в качестве вложения при создании записи.
 
 <!-- {
   "blockType": "request",
@@ -183,11 +183,11 @@ Content-type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-3-include-a-reference-attachment"></a>Пример 3. Включаем вложение ссылки
+### <a name="example-3-include-a-reference-attachment"></a>Пример 3. Включение вложения ссылки
 
 #### <a name="request"></a>Запрос
-Вот пример запроса, который включает ссылку вложения при создании сообщения.
-Вложение указывает на папку на OneDrive.
+Ниже приведен пример запроса, который включает вложение ссылки при создании записи.
+Вложение указывает на папку в OneDrive.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

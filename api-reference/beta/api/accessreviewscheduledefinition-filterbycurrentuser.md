@@ -1,23 +1,23 @@
 ---
 title: 'accessReviewScheduleDefinition: filterByCurrentUser'
-description: Возвращает объекты accessReviewScheduleDefinition, в которых вызываемая пользователь является рецензентом.
-author: isabelleatmsft
+description: Возвращает объекты accessReviewScheduleDefinition, вызывающий пользователь которых является рецензентом.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c8653c9d1054c05ef4f757b18f379789ea3ab0b6
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: ec55cc978d6ffe4bde69c16d3267a2a1bc6d111d
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63721938"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696874"
 ---
 # <a name="accessreviewscheduledefinition-filterbycurrentuser"></a>accessReviewScheduleDefinition: filterByCurrentUser
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Возвращает [объекты accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) , в которых вызываемая пользователь является рецензентом на одном или более [объектах accessReviewInstance](../resources/accessreviewinstance.md) .
+Возвращает [объекты accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) , в которых вызывающий пользователь является рецензентом для одного или нескольких объектов [accessReviewInstance](../resources/accessreviewinstance.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,9 +39,9 @@ GET /identityGovernance/accessReviews/definitions/filterByCurrentUser(on='review
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$select`параметры `$filter`запроса OData `$orderBy``$skip`и `$top` OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select`параметры `$filter`запроса , `$orderBy`, и `$skip``$top` OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-Размер страницы по умолчанию для этого API — 100 **объектов accessReviewScheduleDefinition** . Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
+Размер страницы по умолчанию для этого API — 100 **объектов accessReviewScheduleDefinition** . Чтобы повысить эффективность и избежать времени ожидания из-за больших результирующих наборов, примените разбиение на страницы с помощью `$skip` `$top` параметров запроса и параметров запроса. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -53,10 +53,10 @@ GET /identityGovernance/accessReviews/definitions/filterByCurrentUser(on='review
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы эта функция возвращает код отклика и [коллекцию accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в тексте ответа.
+В случае успешного выполнения эта функция возвращает код `200 OK` отклика и коллекцию [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
-Возвращает все определения обзора, в которых вызываемая пользователь является рецензентом.
+Возвращает все определения проверки, в которых вызывающий пользователь является рецензентом.
 
 ### <a name="request"></a>Запрос
 

@@ -1,24 +1,24 @@
 ---
-title: Получить accessReviewHistoryDefinition
-description: Извлечение объекта accessReviewHistoryDefinition.
-author: isabelleatmsft
+title: Получение accessReviewHistoryDefinition
+description: Получение объекта accessReviewHistoryDefinition.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 28028bfe970f5a63f8d877bfebe55a68cced21ec
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 1ad4b899d2138d0778c6c48bcef7f4058c6fdac0
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804180"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696646"
 ---
-# <a name="get-accessreviewhistorydefinition"></a>Получить accessReviewHistoryDefinition
+# <a name="get-accessreviewhistorydefinition"></a>Получение accessReviewHistoryDefinition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение [объекта accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) по его идентификатору. Возвращаются все свойства объекта определения истории просмотра доступа. Если определение составляет 30 дней или старше, возвращается `404 Not Found` ошибка.
+Получение объекта [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) по его идентификатору. Возвращаются все свойства объекта определения журнала проверки доступа. Если определение старше 30 дней, возвращается `404 Not Found` ошибка.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "62804180"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.ReadWrite.All|
 
-Для получения определения пользователь, заверяемый в записи, также должен быть создателем связанного определения истории отзывов, членом роли глобального каталога администратора или участником роли глобального каталога чтения.
+Пользователь, выполнив вход, также должен быть создателем связанного определения журнала проверки, членом роли глобального каталога Администратор или членом роли каталога глобального читателя, чтобы получить определение.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,9 +42,9 @@ ms.locfileid: "62804180"
 ``` http
 GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры `$select` `$expand` запроса oData и OData для настройки ответа. В том `?$expand=instances` числе будут включены в объект ответа экземпляры, связанные с [объектом accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select` запроса `$expand` oData и для настройки ответа. Включит `?$expand=instances` в объект ответа экземпляры, связанные с [объектом accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -58,7 +58,7 @@ GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы этот метод возвращает код отклика и [объект accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

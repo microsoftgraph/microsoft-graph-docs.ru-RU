@@ -1,32 +1,32 @@
 ---
-title: Получить accessReviewPolicy
-description: Ознакомьтесь с свойствами и отношениями объекта accessReviewPolicy.
-author: isabelleatmsft
+title: Получение accessReviewPolicy
+description: Чтение свойств и связей объекта accessReviewPolicy.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: dd0c6f992f9b3523e2d4c321a1774b1f561b79d5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 900a410be4b88ecd458cc00ef9073ccf3f143885
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110050"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697094"
 ---
-# <a name="get-accessreviewpolicy"></a>Получить accessReviewPolicy
+# <a name="get-accessreviewpolicy"></a>Получение accessReviewPolicy
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями [объекта accessReviewPolicy.](../resources/accessreviewpolicy.md)
+Чтение свойств и связей объекта [accessReviewPolicy](../resources/accessreviewpolicy.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Policy.Read.All, Policy.ReadWrite.AccessReviews|
+|Делегированные (рабочая или учебная учетная запись)|Policy.Read.All, Policy.ReadWrite.AccessReview|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Policy.Read.All, Policy.ReadWrite.AccessReviews|
+|Для приложений|Policy.Read.All, Policy.ReadWrite.AccessReview|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,12 +44,12 @@ GET /identityGovernance/accessReviews/policy
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект accessReviewPolicy](../resources/accessreviewpolicy.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [accessReviewPolicy](../resources/accessreviewpolicy.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

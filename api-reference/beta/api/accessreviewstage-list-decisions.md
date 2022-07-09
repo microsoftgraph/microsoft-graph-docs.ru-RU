@@ -1,16 +1,16 @@
 ---
 title: Вывод списка решений (из многоэтабной проверки доступа)
 description: Получение решений на этапе многоэтабной проверки доступа.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3a2e06ed7d927686a84e352eab52d7a8554e04c0
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: eaa7d90aeb8292bf771145d4e0b438e7eb11c689
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65819638"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696843"
 ---
 # <a name="list-decisions-from-a-multi-stage-access-review"></a>Вывод списка решений (из многоэтабной проверки доступа)
 Пространство имен: microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "65819638"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

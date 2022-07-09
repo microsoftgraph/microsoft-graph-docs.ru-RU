@@ -2,15 +2,15 @@
 title: Проверки доступа Azure AD
 description: Проверки доступа Azure AD можно использовать для настройки однофакторной или повторяющейся проверки доступа для аттестации прав доступа пользователя. Эта документация обслуживает 2-ю версию API.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 141021e58e995e5939ad1dec2b915fbacfbddf21
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 24dd74c3baa54807a78ce338504be89a31043b77
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66436612"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697158"
 ---
 # <a name="azure-ad-access-reviews"></a>Проверки доступа Azure AD
 
@@ -52,7 +52,7 @@ ms.locfileid: "66436612"
 |[stop](../api/accessreviewinstance-stop.md) | Нет. | Вручную остановите accessReviewInstance. |
 |[acceptRecommendations](../api/accessreviewinstance-acceptrecommendations.md) | Нет. | Позволяет вызывающему пользователю принять рекомендацию по принятию решения для каждого объекта NotReviewInstanceDecisionItem, в котором он является рецензентом для определенного объекта accessReviewInstance. |
 |[applyDecisions](../api/accessreviewinstance-applydecisions.md) | Нет. | Вручную примените решения к accessReviewInstance. |
-|[batchRecordDecisions](../api/accessreviewinstance-batchrecorddecisions.md)|Нет|Просмотрите пакеты субъектов или ресурсов за один вызов.|
+|[batchRecordDecisions](../api/accessreviewinstance-batchrecorddecisions.md)|Отсутствует|Просмотрите пакеты субъектов или ресурсов за один вызов.|
 |[resetDecisions](../api/accessreviewinstance-resetdecisions.md)|Нет|Сбрасывает все элементы принятия решений в экземпляре в значение `notReviewed`.|
 |[filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md)|[Коллекция accessReviewInstance](../resources/accessreviewinstance.md)|Возвращает все экземпляры в заданном [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) , для которого вызывающий пользователь является рецензентом одного или нескольких решений.|
 |**Элементы принятия решений об экземпляре**| | |
@@ -77,7 +77,7 @@ ms.locfileid: "66436612"
 
 Для [управления проверками доступа вызывающему](/azure/active-directory/roles/permissions-reference) пользователю требуются следующие Azure AD роли.
 
-| Operation | Разрешения приложений | Требуемая роль каталога вызывающего пользователя |
+| Операция | Разрешения приложений | Требуемая роль каталога вызывающего пользователя |
 |:------------------|:------------|:--------------------------------------------|
 | Чтение | AccessReview.Read.All или AccessReview.ReadWrite.All | Глобальный администратор, глобальный читатель, администратор безопасности, читатель безопасности или администратор пользователей |
 | Создание, обновление или удаление | AccessReview.ReadWrite.All | Глобальный администратор или администратор пользователей |

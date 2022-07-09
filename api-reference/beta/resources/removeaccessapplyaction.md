@@ -1,18 +1,18 @@
 ---
-title: removeAccessApplyAction resource type
-description: Удалите доступ к ресурсу для тех, кому отказано в просмотре доступа к этому ресурсу.
-author: isabelleatmsft
-localization_priority: Normal
+title: Тип ресурса removeAccessApplyAction
+description: Удалите доступ из ресурса для тех, кто отказано в проверке доступа к ресурсу.
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 777d9defdbd7cde435b8d71367a1fb2fc76d45ce
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: b299b2de596eb3876bb6685800a760370383e982
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579990"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698508"
 ---
-# <a name="removeaccessapplyaction-resource-type"></a>removeAccessApplyAction resource type
+# <a name="removeaccessapplyaction-resource-type"></a>Тип ресурса removeAccessApplyAction
 
 Пространство имен: microsoft.graph
 
@@ -20,9 +20,9 @@ ms.locfileid: "52579990"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Удалите доступ к ресурсу для тех, кому отказано в просмотре доступа к этому ресурсу. Это параметр по умолчанию для[accessReviewApplyAction,](../resources/accessreviewapplyaction.md) если параметр не передается.
+Удалите доступ из ресурса для тех, кто отказано в проверке доступа к ресурсу. Это параметр по умолчанию для[accessReviewApplyAction](../resources/accessreviewapplyaction.md) , если параметр не передается.
 
-Наследует [от accessReviewApplyAction](../resources/accessreviewapplyaction.md).
+Наследуется [от accessReviewApplyAction](../resources/accessreviewapplyaction.md).
 
 ## <a name="properties"></a>Свойства
 Нет
@@ -30,7 +30,7 @@ ms.locfileid: "52579990"
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

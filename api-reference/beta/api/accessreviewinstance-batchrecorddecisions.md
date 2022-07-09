@@ -1,23 +1,23 @@
 ---
 title: 'accessReviewInstance: batchRecordDecisions'
-description: Позволяет рецензентам просмотреть все объекты accessReviewInstanceDecisionItem пакетами.
-author: isabelleatmsft
+description: Позволяет рецензентам просматривать все объекты accessReviewInstanceDecisionItem в пакетах.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 61c4f19f4eda2ae5fc990a3791fa39dd627748b0
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 5c1917eea94afafcdb26d306a0b6184d8758faf1
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340510"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696617"
 ---
 # <a name="accessreviewinstance-batchrecorddecisions"></a>accessReviewInstance: batchRecordDecisions
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Позволяет рецензентам просмотреть все [объекты accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) пакетами с помощью **principalId**, **resourceId** или нет.
+Позволяет рецензентам просматривать все объекты [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) в пакетах с помощью **principalId**, **resourceId** или ни одного из них.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "62340510"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,17 +44,17 @@ POST /me/pendingAccessReviewInstances/{accessReviewInstanceId}/batchRecordDecisi
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-| решение  | String | Решение о доступе для проверяемого объекта. Возможные значения: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Обязательный.  |
-|  обоснование | String | Контекст обзора, предоставленного администраторам. Требуется, **если justificationRequiredOnApproval** находится `True` в **accessReviewScheduleDefinition**.  |
-|principalId|String|В этом пакете будут рассмотрены все **accessReviewInstanceDecisionItems** с соответствием **principalId** . Если они не будут предоставлены, все **principalIds** будут рассмотрены.|
-|resourceId|String|В этом пакете будут рассмотрены все **accessReviewInstanceDecisionItems** с соответствием **resourceId** . Если они не будут предоставлены, **все resourceIds** будут рассмотрены.|
+| Решение  | Строка | Решение о доступе для проверяемой сущности. Возможные значения: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Обязательный элемент.  |
+|  Обоснование | String | Контекст проверки, предоставленной администраторам. Требуется, если **justificationRequiredOnApproval** находится `True` в **accessReviewScheduleDefinition**.  |
+|principalId|String|Если этот параметр указан, все **объекты accessReviewInstanceDecisionItems** с соответствующим **principalId** будут проверяться в этом пакете. Если этот параметр не указан, будут проверяться все **идентификаторы** субъектов.|
+|resourceId|String|Если этот параметр указан, в этом пакете будут проверяться все **объекты accessReviewInstanceDecisionItems** с соответствующим **идентификатором** ресурса. Если этот параметр не указан, **будут** проверяться все идентификаторы ресурсов.|
 
 
 

@@ -2,12 +2,12 @@
 title: Поиск времени для проведения собрания в календаре Outlook
 description: Использование findMeetingTimes для определения времени собрания, которое отвечает времени, расположению и другим ограничениям. Включает пример с двумя пользователями.
 ms.localizationpriority: high
-ms.openlocfilehash: 97ee0a5b15a819ba7662764a684ab53ed9e2353b
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 31116dba84845460c58b60e27bac6cf8ffa4cc0c
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66440700"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697773"
 ---
 # <a name="find-possible-meeting-times-on-the-outlook-calendar"></a>Поиск времени для проведения собрания в календаре Outlook
 
@@ -45,6 +45,7 @@ Prefer: outlook.timezone="{time-zone-string}}"
 2. Второй вызов ищет время для собрания 21 апреля и предлагает провести его с 14:00 до 16:00.
 
 Два вызова действия **findMeetingTimes** включают следующие параметры. Все [параметры](/graph/api/user-findmeetingtimes#request-body) для действия **findMeetingTimes** являются необязательными.
+
 
 - **attendees**: один участник, Samantha Booth, для свойства **type** которого задано значение `required`.
 - **locationConstraint**: предлагать место не нужно.

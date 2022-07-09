@@ -1,43 +1,43 @@
 ---
-title: accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource type
-description: Представляет политику назначения пакета доступа, для которой доступ представлен с помощью объекта accessReviewInstanceDecisionItem.
-author: isabelleatmsft
+title: Тип ресурса accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource
+description: Представляет политику назначения пакетов доступа, для которой доступ представлен через объект accessReviewInstanceDecisionItem.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: a957211eb07e1805b12179aefbe1028046354f39
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: 4ede4c067532e1925b5910bbfbb454e0db2a6b98
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62162241"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697185"
 ---
-# <a name="accessreviewinstancedecisionitemaccesspackageassignmentpolicyresource-resource-type"></a>accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource type
+# <a name="accessreviewinstancedecisionitemaccesspackageassignmentpolicyresource-resource-type"></a>Тип ресурса accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Представляет политику назначения пакета доступа, для которой доступ представлен с помощью [объекта accessReviewInstanceDecisionItem.](accessreviewinstancedecisionitem.md) **accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource** — открытый тип, который позволяет передавать другие свойства.
+Представляет политику назначения пакетов доступа, для которой доступ представлен через объект [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) . **accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource** — это открытый тип, который позволяет передавать другие свойства.
 
-Наследует [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).
+Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|accessPackageDisplayName|Строка| Отображение имени пакета доступа, доступ к которому был предоставлен. |
-|accessPackageId|Строка| Идентификатор пакета доступа, доступ к которому был предоставлен. |
-| displayName | Строка | Отображение имени пакета доступа. Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).|
-| id | Строка | Идентификатор ресурса элемента решения. Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
-| type | Строка | Тип ресурса. Тип всегда будет `AccessPackageAssignmentPolicy` .  Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
+|accessPackageDisplayName|Строка| Отображаемое имя пакета доступа, к которому предоставлен доступ. |
+|accessPackageId|Строка| Идентификатор пакета доступа, к которому предоставлен доступ. |
+| displayName | Строка | Отображаемое имя пакета доступа. Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).|
+| id | Строка | Идентификатор ресурса элемента принятия решения. Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
+| type | Строка | Тип ресурса. Тип всегда будет иметь значение `AccessPackageAssignmentPolicy`.  Наследуется [от accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md). |
 
 
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

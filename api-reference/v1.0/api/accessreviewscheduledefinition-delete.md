@@ -1,16 +1,16 @@
 ---
 title: Удаление accessReviewScheduleDefinition
 description: Удаляет объект accessReviewScheduleDefinition.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b958a7d071acf3fd5cc9ab18e8ec100300ab3ff5
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: 34f90e57dfbd00a385f665bf3bbb1d324be77234
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64684776"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698480"
 ---
 # <a name="delete-accessreviewscheduledefinition"></a>Удаление accessReviewScheduleDefinition
 Пространство имен: microsoft.graph

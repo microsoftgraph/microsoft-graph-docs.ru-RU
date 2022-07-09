@@ -1,23 +1,23 @@
 ---
 title: 'accessReviewInstanceDecisionItem: filterByCurrentUser'
-description: Извлечение всех элементов решений в экземпляре обзора доступа или стадии экземпляра многоступенчатого обзора доступа, для которого вызываемого пользователя является рецензентом.
-author: isabelleatmsft
+description: Получение всех элементов принятия решений для экземпляра проверки доступа или этапа экземпляра многоэтапной проверки доступа, для которого вызывающий пользователь является рецензентом.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d75c344b21d04fb9d6af130e0387f374861a611d
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: eba729675c7b4983e1deb5cdd03a49d574c8df53
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722085"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696625"
 ---
 # <a name="accessreviewinstancedecisionitem-filterbycurrentuser"></a>accessReviewInstanceDecisionItem: filterByCurrentUser
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение всех элементов решений в экземпляре обзора доступа или стадии экземпляра многоступенчатого обзора доступа, для которого вызываемого пользователя является рецензентом. Элементы решений представляются [объектами accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) на заданном [accessReviewInstance](../resources/accessreviewinstance.md) или [accessReviewStage](../resources/accessReviewStage.md) , для которых вызываемая пользователь является рецензентом.
+Получение всех элементов принятия решений для экземпляра проверки доступа или этапа экземпляра многоэтапной проверки доступа, для которого вызывающий пользователь является рецензентом. Элементы принятия решений представлены объектами [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) в заданном [объекте accessReviewInstance](../resources/accessreviewinstance.md) или [accessReviewStage](../resources/accessReviewStage.md) , для которого вызывающий пользователь является рецензентом.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,7 +30,7 @@ ms.locfileid: "63722085"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Для получения решений для экземпляра обзора доступа, для которого вызываемая пользователь является рецензентом:
+Чтобы получить решения для экземпляра проверки доступа, для которого вызывающий пользователь является рецензентом:
 <!-- {
   "blockType": "ignored"
 }
@@ -39,7 +39,7 @@ ms.locfileid: "63722085"
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser(on='reviewer')
 ```
 
-Извлечение решений для этапа в экземпляре обзора доступа, для которого вызываемая пользователь является рецензентом:
+Чтобы получить решения для этапа в экземпляре проверки доступа, для которого вызывающий пользователь является рецензентом:
 <!-- {
   "blockType": "ignored"
 }
@@ -49,20 +49,20 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 >[!NOTE]
->Рецензенты многоэтапных обзоров могут извлекать решения на предыдущих этапах, если свойство **decisionHistoriesForReviewersEnabled** включено [](../resources/accessreviewschedulesettings.md) в параметрах [объекта accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md).
+>Рецензенты многоэтапных проверок могут получить решения на предыдущих этапах, если свойство **decisionHistoriesForReviewersEnabled** включено в [](../resources/accessreviewschedulesettings.md) параметрах объекта [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md).
 
 ## <a name="function-parameters"></a>Параметры функции
-В следующей таблице показаны параметры запроса, которые можно использовать с помощью этого метода.
+В следующей таблице показаны параметры запроса, которые можно использовать с этим методом.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|Фильтр для запроса объектов принятия решений для текущего пользователя. Возможные значения : `reviewer`. `unknownFutureValue` Использование `reviewer`. Обязательно.|
+|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|Фильтрация для запроса объектов принятия решений для текущего пользователя. Возможные значения:`reviewer``unknownFutureValue` Используйте .`reviewer` Обязательный элемент.|
 
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметры `$select`запроса , `$filter`, `$orderBy`, и `$skip``$top` OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select`запроса , `$filter`, `$orderBy`, `$skip`и `$top` OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-Размер страницы по умолчанию для этого API — 100 **объектов accessReviewInstanceDecisionItem** . Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
+Размер страницы по умолчанию для этого API — 100 **объектов accessReviewInstanceDecisionItem** . Чтобы повысить эффективность и избежать времени ожидания из-за больших результирующих наборов, примените разбиение на страницы с помощью `$skip` `$top` параметров запроса и параметров запроса. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -74,11 +74,11 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 ## <a name="response"></a>Отклик
 
-В случае успешной `200 OK` работы эта функция возвращает код ответа и [коллекцию accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) в тексте ответа.
+В случае успешного выполнения эта функция `200 OK` возвращает код отклика и коллекцию [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-retrieve-all-decisions-on-an-accessreviewinstance-for-which-the-calling-user-is-the-reviewer"></a>Пример 1. Извлечение всех решений по accessReviewInstance, для которого вызываемая пользователь является рецензентом
+### <a name="example-1-retrieve-all-decisions-on-an-accessreviewinstance-for-which-the-calling-user-is-the-reviewer"></a>Пример 1. Получение всех решений о accessReviewInstance, для которого вызывающий пользователь является рецензентом
 
 #### <a name="request"></a>Запрос
 
@@ -169,7 +169,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-all-decisions-on-an-accessreviewstage-of-a-multi-stage-access-review-for-which-the-calling-user-is-the-reviewer"></a>Пример 2. Извлечение всех решений по accessReviewStage многоэтапного обзора доступа, для которого вызываемого пользователя является рецензентом
+### <a name="example-2-retrieve-all-decisions-on-an-accessreviewstage-of-a-multi-stage-access-review-for-which-the-calling-user-is-the-reviewer"></a>Пример 2. Получение всех решений по accessReviewStage многоэтапной проверки доступа, для которой вызывающий пользователь является рецензентом
 
 #### <a name="request"></a>Запрос
 

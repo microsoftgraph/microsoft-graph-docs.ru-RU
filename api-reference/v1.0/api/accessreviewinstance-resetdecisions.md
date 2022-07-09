@@ -1,21 +1,21 @@
 ---
 title: 'accessReviewInstance: resetDecisions'
-description: Сбрасывает все объекты accessReviewInstanceDecisionItem на accessReviewInstance для `notReviewed` .
-author: isabelleatmsft
+description: Сбрасывает все объекты accessReviewInstanceDecisionItem в accessReviewInstance в значение `notReviewed`.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e79cf8514f83d0e87d5995cf78003cc10cd23e78
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3ce0aef834c26b1b7194b81c5fd04f64beb48687
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61001517"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698515"
 ---
 # <a name="accessreviewinstance-resetdecisions"></a>accessReviewInstance: resetDecisions
 Пространство имен: microsoft.graph
 
-Сбрасывает [все объекты accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) на [accessReviewInstance](../resources/accessreviewinstance.md) для `notReviewed` .
+Сбрасывает [все объекты accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) в [accessReviewInstance](../resources/accessreviewinstance.md) в значение `notReviewed`.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

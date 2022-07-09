@@ -1,21 +1,21 @@
 ---
 title: Обновление accessReviewInstanceDecisionItem
 description: Обновление свойств объекта accessReviewInstanceDecisionItem.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8db1d664d754eec0db5b02fa5b4315748568e6f7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6835f91e41032d06c3c96f79fae8be5432dd852d
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979857"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697990"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>Обновление accessReviewInstanceDecisionItem
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [accessReviewInstanceDecisionItem.](../resources/accessreviewinstancedecisionitem.md)
+Обновление свойств объекта [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) .
 
 
 ## <a name="permissions"></a>Разрешения
@@ -27,7 +27,7 @@ ms.locfileid: "60979857"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|AccessReview.ReadWrite.All|
 
-Обновить **accessReviewInstanceDecisionItem** может только пользователь вызовов, который указан в качестве рецензента для родительского доступаReviewInstanceDecisionItem. [](../resources/accessreviewinstance.md)
+Обновить **accessReviewInstanceDecisionItem** может только вызывающий пользователь, который указан в качестве рецензента для родительского [объекта accessReviewInstanceInstanceItem](../resources/accessreviewinstance.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,15 +45,15 @@ PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinit
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
-В теле запроса подарите JSON представление [объекта accessReviewInstanceDecisionItem.](../resources/accessreviewinstancedecisionitem.md)
+## <a name="request-body"></a>Основной текст запроса
+В тексте запроса добавьте представление объекта [accessReviewInstanceDecisionItem в формате](../resources/accessreviewinstancedecisionitem.md) JSON.
 
-В следующей таблице показаны свойства, которые принимаются при обновлении [accessReviewInstanceDecisionItem.](../resources/accessreviewinstancedecisionitem.md)
+В следующей таблице показаны свойства, которые принимаются при обновлении [объекта accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|решение|Строка|Проверятель голосует о том, должен ли директор иметь доступ к просматриваемом ресурсу. Возможные значения: `Approve` `Deny` , или `DontKnow` . Обязательный.|
-|обоснование|String|Причина принятия решения рецензентом. Требуется, если **обоснованиеRequiredOnApproval** свойства параметров [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) `true` является .|
+|Решение|Строка|Проверяющее голосует за то, должен ли субъект иметь доступ к проверяемого ресурсу. Возможные значения: `Approve`, или `Deny``DontKnow`. Обязательный элемент.|
+|Обоснование|String|Причина принятия решения рецензентом. Требуется, если **аргумент justificationRequiredOnApproval** свойства settings [объекта accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) имеет значение `true`.|
 
 ## <a name="response"></a>Отклик
 

@@ -1,29 +1,29 @@
 ---
 title: Обновление accessReviewStage
 description: Обновление свойств объекта accessReviewStage.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3441d93ab31270915fb1139e30c65e67ab28a197
-ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
+ms.openlocfilehash: e1862cb9da2bc234c3037f11c2de68557f9462cc
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62816186"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697268"
 ---
 # <a name="update-accessreviewstage"></a>Обновление accessReviewStage
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [accessReviewStage](../resources/accessreviewstage.md) . Обновить **можно только свойства** **рецензентов и fallbackReviewers** . В свойство **fallbackReviewers** можно добавить только рецензентов, но не удалить существующие **fallbackReviewers**.
+Обновление свойств объекта [accessReviewStage](../resources/accessreviewstage.md) . Обновлять **можно только** свойства **рецензентов и fallbackReviewers** . В свойство **fallbackReviewers** можно добавлять только рецензентов, но нельзя удалить **существующие элементы fallbackReviewers**.
 
-Чтобы обновить **accessReviewStage**, его **состояние** должно быть `NotStarted`, или `Initializing``InProgress`.
+Чтобы обновить **accessReviewStage**, его **состояние** должно быть или `NotStarted``Initializing``InProgress`.
 
 > [!NOTE]
 > 
-> Обновление **accessReviewStage** будет обновлять только этот этап. Родительский **accessReviewInstance** и любые будущие **объекты accessReviewStage** не изменятся. Чтобы сделать обновления, применимые ко всем будущим экземплярам и этапам, обновите родительский [объект accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
+> Обновление **accessReviewStage** приведет к обновлению только этого этапа. Родительский **объект accessReviewInstance** и любые будущие **объекты accessReviewStage** не изменяются. Чтобы внести обновления, применимые ко всем будущим экземплярам и этапам, обновите родительский [объект accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -32,7 +32,7 @@ ms.locfileid: "62816186"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application                            | AccessReview.ReadWrite.All |
+|Для приложений                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -56,20 +56,22 @@ PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinit
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|рецензенты|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Эта коллекция областей обзора доступа используется для определения того, кто такие рецензенты. Примеры вариантов назначения рецензентов см. в примере Назначение рецензентов определению обзора доступа с помощью [API microsoft Graph.](/graph/accessreviews-scope-concept) Необязательное свойство. Updatable.|
-|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Эта коллекция областей рецензентов используется для определения списка рецензентов откатов. Эти рецензенты откатов будут уведомлены о необходимости принятия мер, если пользователи не будут найдены из указанного списка рецензентов. Это может произойти, если либо владелец группы указан в качестве рецензента, но владелец группы не существует, либо менеджер указан в качестве рецензента, но диспетчер пользователя не существует. Необязательное свойство. Updatable.|
+|Авторам|[Коллекция accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Эта коллекция областей проверки доступа используется для определения рецензентов. Примеры параметров назначения рецензентов см. в статье "Назначение рецензентов определению проверки доступа с [помощью microsoft API Graph"](/graph/accessreviews-scope-concept). Необязательное. Обновляемые.|
+|fallbackReviewers|[Коллекция accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Эта коллекция областей рецензента используется для определения списка резервных рецензентов. Эти резервные рецензенты будут получать уведомления о том, что нужно принять меры, если пользователи не найдены в указанном списке рецензентов. Это может произойти, если владелец группы указан в качестве рецензента, но владелец группы не существует, или руководитель указан в качестве рецензента, но руководитель пользователя не существует. Необязательное. Обновляемые.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код `200 OK` отклика и обновленный [объект accessReviewStage](../resources/accessreviewstage.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный объект [accessReviewStage](../resources/accessreviewstage.md) в тексте отклика.
 
-Попытка удалить существующие **fallbackReviewers** возвращает код `409 Conflict` ответа.
+Попытка удалить существующие **объекты fallbackReviewers** возвращает код `409 Conflict` отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accessreviewstage"
@@ -99,6 +101,28 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accessreviewstage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreviewstage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-accessreviewstage-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewstage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accessreviewstage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик
