@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6fccabf60e9f625a638f61d0e52053aec31ce28d
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 35062c4530d58998f979527d66ed0a48ef50d090
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555928"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698242"
 ---
 # <a name="get-group"></a>Вывод группы 
 
@@ -18,7 +18,7 @@ ms.locfileid: "66555928"
 
 Получение свойств и связей объекта group.
 
-Это действие по умолчанию возвращает только часть всех доступных свойств, как указано в разделе [Свойства](../resources/group.md#properties). Чтобы получить свойства, которые _не_ возвращаются по умолчанию, укажите их в параметре запроса OData `$select`. Свойство **hasMembersWithLicenseErrors** является исключением и не возвращается в запросе `$select`.
+Это действие по умолчанию возвращает только часть всех доступных свойств, как указано в разделе [Свойства](../resources/group.md#properties). Чтобы получить свойства, которые _не_ возвращаются по умолчанию, укажите их в параметре запроса OData `$select`. Свойства **hasMembersWithLicenseErrors** и **isArchived** являются исключением и не возвращаются в запросе `$select`.
 
 > **Примечание.** При запросе могут происходить задержки репликации для групп, которые были недавно созданы, обновлены или удалены.
 
@@ -60,7 +60,7 @@ GET /groups/{id}
 
 | Имя          | Тип   | Описание               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {токен}. Обязательный. |
+| Authorization | string | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
