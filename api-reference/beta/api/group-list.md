@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2eaf6d2e7233a66f46244204b27220f556cdc807
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: abc0c66e1f888032370e27dfb6338ac903f48627
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556068"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698228"
 ---
 # <a name="list-groups"></a>Список групп
 
@@ -20,7 +20,7 @@ ms.locfileid: "66556068"
 
 Перечислите все группы, доступные в организации, за исключением динамических групп рассылки. Чтобы получить динамические группы рассылки, [используйте центр администрирования Exchange](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups).
 
-Эта операция по умолчанию возвращает для каждой группы только подмножество наиболее часто используемых свойств. Эти свойства _по умолчанию_ указаны в разделе [Свойства](../resources/group.md#properties). Чтобы получить свойства, которые _не_ возвращаются по умолчанию, выполните [операцию GET](group-get.md) и укажите их в параметре `$select` запроса OData. Свойство **hasMembersWithLicenseErrors** является исключением и не возвращается в запросе `$select`.
+Эта операция по умолчанию возвращает для каждой группы только подмножество наиболее часто используемых свойств. Эти свойства _по умолчанию_ указаны в разделе [Свойства](../resources/group.md#properties). Чтобы получить свойства, которые _не_ возвращаются по умолчанию, выполните [операцию GET](group-get.md) и укажите их в параметре `$select` запроса OData. Свойства **hasMembersWithLicenseErrors** и **isArchived** являются исключением и не возвращаются в запросе `$select`.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unifi
 
 | Имя             | Описание                                                                                                                                                                                                                                                                     |
 | :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Авторизация    | Bearer {токен}. Обязательный.                                                                                                                                                                                                                                                       |
+| Авторизация    | Bearer {token}. Обязательный.                                                                                                                                                                                                                                                       |
 | ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search` или определенном использовании `$filter`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries). |
 
 ## <a name="request-body"></a>Текст запроса
