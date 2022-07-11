@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 3092ffba2f3172f559ac8ab9d1d8a2630d827e57
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: b32e387be770cd90d30c40be4b93e7ef9c7b5af2
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095547"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438801"
 ---
 # <a name="create-ediscoverycase"></a>Создание ediscoveryCase
 Пространство имен: microsoft.graph.security
@@ -20,7 +20,7 @@ ms.locfileid: "66095547"
 Создайте объект [ediscoveryCase](../resources/security-ediscoverycase.md) .
 
 >[!NOTE]
-> Этот API создает только дело обнаружения электронных данных (Premium) с использованием нового формата дела. Дополнительные сведения о новом формате дела в eDiscovery см. в разделе "Использование нового формата дела [в eDiscovery (Premium)"](/microsoft-365/compliance/advanced-ediscovery-new-case-format).
+> Этот API создает дело обнаружения электронных данных (Premium) только в новом формате дела. Дополнительные сведения о новом формате дела в eDiscovery см. в статье "Использование нового формата дела [в eDiscovery (Premium)"](/microsoft-365/compliance/advanced-ediscovery-new-case-format).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -46,7 +46,7 @@ POST /security/cases/ediscoveryCases
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В тексте запроса добавьте представление объекта [ediscoveryCase](../resources/security-ediscoverycase.md) в формате JSON.
 
 При создании **ediscoveryCase** можно указать следующие свойства.
@@ -54,7 +54,7 @@ POST /security/cases/ediscoveryCases
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Имя дела обнаружения электронных данных. Обязательный.|
-|description|Строка|Описание варианта. Необязательно.|
+|description|Строка|Описание варианта. Необязательное.|
 |externalId|String|Номер внешнего обращения для ссылки на клиента. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
@@ -96,6 +96,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoverycase-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoverycase-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

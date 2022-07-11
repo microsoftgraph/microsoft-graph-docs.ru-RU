@@ -1,17 +1,20 @@
 ---
-title: 'Внедрение использования разных устройств для уведомлений Microsoft Graph '
-description: Зарегистрируйте свое приложение в Центре разработки для Windows, чтобы разрешить клиентам вашего приложения получать на разных устройствах уведомления, отправленные с помощью Microsoft Graph.
+title: Подключенный интерфейс для обмена уведомлениями между устройствами (устарело)
+description: Вашему приложению необходимо зарегистрировать сведения о разных устройствах, чтобы разрешить Microsoft Graph отправлять уведомления через собственные службы push-уведомлений (устарело).
 ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: 15cb37515a7658078b909b801f8ecc3cceafc9cb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a3c229f71a43222a642c4c1113edaf4b99b27535
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066942"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444819"
 ---
-# <a name="onboarding-to-cross-device-experiences-for-microsoft-graph-notifications"></a>Внедрение использования разных устройств для уведомлений Microsoft Graph
+# <a name="onboarding-to-cross-device-experiences-for-microsoft-graph-notifications-deprecated"></a>Подключение использования разных устройств для уведомлений Microsoft Graph (устарело)
+
+> [!IMPORTANT]
+> API уведомлений Microsoft Graph не рекомендуется использовать, Он прекратил возвращать данные в январе 2022 г. Дополнительные сведения об уведомлениях см. в [Центрах уведомлений Microsoft Azure](/azure/notification-hubs). Дополнительные сведения см. в записи блога [Прекращение поддержки API уведомлений Microsoft Graph (бета-версия)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 >[!NOTE]
 >Если вашей целью являются только конечные веб-точки, вы можете сразу перейти к настройке отправки уведомлений в [службе приложений](notifications-integrating-app-server.md).

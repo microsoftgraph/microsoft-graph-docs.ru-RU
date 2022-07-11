@@ -1,21 +1,21 @@
 ---
-title: Обновление microsoftAuthenticatorAuthenticationMethodConfiguration
-description: Обновление свойств объекта MicrosoftAuthenticatorAuthenticationMethodConfiguration.
+title: Обновление объекта microsoftAuthenticatorAuthenticationMethodConfiguration
+description: Обновление свойств объекта microsoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: aea14768e673bea312afcd062cf11bb186a91a2d
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: c2c5c78e2a6f31a4abe09f87679da8759d035494
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396828"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439270"
 ---
-# <a name="update-microsoftauthenticatorauthenticationmethodconfiguration"></a>Обновление microsoftAuthenticatorAuthenticationMethodConfiguration
+# <a name="update-microsoftauthenticatorauthenticationmethodconfiguration"></a>Обновление объекта microsoftAuthenticatorAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
-Обновим свойства объекта [MicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md), который представляет политику метода Microsoft Authenticator проверки подлинности для клиента Azure AD.
+Обновите свойства объекта [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md), который представляет политику метода проверки подлинности Microsoft Authenticator для Azure AD клиента.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -27,7 +27,7 @@ ms.locfileid: "63396828"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
 
-Для делегирования сценариев администратору требуется одна из следующих ролей [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев администратору требуется одна из следующих [Azure AD ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Администратор политики проверки подлинности
 * Глобальный администратор
@@ -48,12 +48,12 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/m
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
-В корпусе запроса необходимо предоставить представление JSON объекта [MicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) со значениями полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+## <a name="request-body"></a>Основной текст запроса
+В тексте запроса добавьте представление объекта [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) в формате JSON со значениями полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-Список свойств см. в [списке microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md).
+Список свойств см. в [разделе microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md).
 
->**Примечание:** Свойство `@odata.type` со значением должно `#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration` быть включено в тело.
+>**Примечание:** Свойство `@odata.type` со значением должно `#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration` быть включено в текст.
 
 ## <a name="response"></a>Отклик
 
@@ -96,6 +96,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-microsoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-microsoftauthenticatorauthenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

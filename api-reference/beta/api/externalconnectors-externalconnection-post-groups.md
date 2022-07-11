@@ -5,12 +5,12 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 901d9a3eb85441f3828315e628ee01a536cf35d2
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 53b0a726551571005f4de7ae776f4c9cbd0bfca7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133636"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439725"
 ---
 # <a name="create-externalgroup"></a>Создание externalGroup
 
@@ -26,9 +26,9 @@ ms.locfileid: "65133636"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ POST /external/connections/{connectionId}/groups
 | Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В тексте запроса добавьте представление объекта **externalGroup** в формате JSON.
 
@@ -57,7 +57,7 @@ POST /external/connections/{connectionId}/groups
 | Свойство    | Тип   | Описание                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
 | id          | String | Уникальный идентификатор внешней группы в соединении. Он должен быть буквенно-цифровым и может содержать до 128 символов. |
-| displayName | String | Понятное имя внешней группы. Необязательное свойство.                                                                      |
+| displayName | String | Понятное имя внешней группы. Необязательное.                                                                      |
 | description | String | Описание внешней группы. Необязательный параметр.                                                                         |
 
 ## <a name="response"></a>Отклик
@@ -104,6 +104,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-externalgroup-from-connection-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalgroup-from-connection-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

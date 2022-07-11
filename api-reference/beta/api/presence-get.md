@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 2c4973c2b3460b13539e873acb34b62f6b48552f
-ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
+ms.openlocfilehash: 31f0cf0e0cc7a80feccf9dfbc638f88ca974e0e5
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971436"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438010"
 ---
 # <a name="get-presence"></a>Получение сведений о присутствии
 
@@ -27,7 +27,7 @@ ms.locfileid: "65971436"
 | :-------------- | :----------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Presence.Read, Presence.Read.All      |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                        |
-| Для приложений                            | Не поддерживается.                        |
+| Приложение                            | Не поддерживается.                        |
 
 ## <a name="http-requests"></a>HTTP-запросы
 <!-- { "blockType": "ignored" } -->
@@ -222,7 +222,7 @@ GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-user-presences-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

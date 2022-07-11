@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 9ac384360334d4f98d8b37ff766df887daae6e64
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 5184452a0481d2059863b9950885755a961b668c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094924"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439418"
 ---
 # <a name="create-ediscoverysearch"></a>Создание ediscoverySearch
 Пространство имен: microsoft.graph.security
@@ -44,7 +44,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В тексте запроса добавьте представление объекта [ediscoverySearch](../resources/security-ediscoverysearch.md) в формате JSON.
 
 При создании **ediscoverySearch** можно указать следующие свойства.
@@ -53,8 +53,8 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches
 |:---|:---|:---|
 |displayName|Строка|Отображаемое имя поиска. Обязательный|
 |description|Строка|Описание поиска (необязательно).|
-|contentQuery|Строка|Строка запроса, используемая для поиска. Строка запроса в KQL (язык запросов ключевых слов). Необязательный|
-|dataSourceScopes|Строка|Возможность поиска по всем почтовым ящикам или сайтам в клиенте. Допустимые значения: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`. Необязательный параметр.|
+|contentQuery|Строка|Строка запроса, используемая для поиска. Строка запроса в формате KQL (язык запросов ключевых слов). Необязательный|
+|dataSourceScopes|String|Возможность поиска по всем почтовым ящикам или сайтам в клиенте. Допустимые значения: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
 
@@ -103,6 +103,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoverysearch-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoverysearch-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,32 +1,32 @@
 ---
-title: Список ежемесячныхPrintUsageByUser
-description: Извлечение списка ежемесячных сводок использования печати, сгруппив их пользователем.
+title: List monthlyPrintUsageByUser
+description: Получение списка ежемесячных сводок по использованию печати, сгруппированных по пользователю.
 author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: b8f3eaf8527219aa5411634c39cf984701de2568
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ae4ed8f69d7afe0eb737591b50e695fd0881521a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006053"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438563"
 ---
-# <a name="list-monthlyprintusagebyuser"></a>Список ежемесячныхPrintUsageByUser
+# <a name="list-monthlyprintusagebyuser"></a>List monthlyPrintUsageByUser
 Пространство имен: microsoft.graph
 
-Извлечение списка ежемесячных сводок использования печати, сгруппив их пользователем.
+Получение списка ежемесячных сводок по использованию печати, сгруппированных по пользователю.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать.
+Помимо указанных ниже разрешений, клиент пользователя должен иметь активную подписку на универсальную печать.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ GET /reports/monthlyPrintUsageByUser
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов printUsageByUser](../resources/printusagebyuser.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию [объектов printUsageByUser](../resources/printusagebyuser.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/reports/monthlyPrintUsageByUser
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-printusagebyuser-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-printusagebyuser-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
