@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 154eaae1f6aaf4a551cac48395f8227d23e6d4da
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 57237a3fe5bdbfd76c518e0359ddd03d1eccd252
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095659"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447347"
 ---
 # <a name="delete-subscription"></a>Удаление подписки
 
@@ -76,13 +76,14 @@ ms.locfileid: "66095659"
 
 ### <a name="contact-event-and-message"></a>contact, event и message
 
-Вы можете подписаться на изменения в Outlook контактов **, событий** или сообщений  и при необходимости указать в полезных данных запроса POST, следует ли включать зашифрованные данные ресурсов в уведомления. 
+Вы можете подписаться на изменения в ресурсах контактов **, событий** или сообщений Outlook и при необходимости указать в полезных данных запроса POST, следует ли включать зашифрованные данные ресурсов в уведомления.
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
 ### <a name="onlinemeetings-presence"></a>onlineMeetings, presence
 
 **OnlineMeetings и** **подписки на сведения** о присутствии требуют [шифрования](/graph/webhooks-with-resource-data) для уведомлений с данными ресурсов. Создание подписки завершится ошибкой, если в уведомлениях не [указаны encryptionCertificate и encryptionCertificateId](../resources/subscription.md).[](../resources/subscription.md)
+Дополнительные сведения о подписках на собрания по сети см. в статье ["Получение уведомлений об изменениях для собраний по сети"](/graph/changenotifications-for-onlinemeeting).
 
 ## <a name="http-request"></a>HTTP-запрос
 
