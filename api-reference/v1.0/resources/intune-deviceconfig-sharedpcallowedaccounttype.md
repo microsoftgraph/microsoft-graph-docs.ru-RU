@@ -1,30 +1,32 @@
 ---
-title: тип enum sharedPCAllowedAccountType
-description: Тип учетных записей, которые разрешены для совместной работы с компьютером.
+title: Тип перечисления sharedPCAllowedAccountType
+description: Тип учетных записей, которым разрешено совместно использовать компьютер.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7a2cdbb727a5965106928196da76643a0fa8c4bb
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e0f4971851d2d297c776a1acbed66ec5c616c8c5
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455297"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733789"
 ---
-# <a name="sharedpcallowedaccounttype-enum-type"></a>тип enum sharedPCAllowedAccountType
+# <a name="sharedpcallowedaccounttype-enum-type"></a>Тип перечисления sharedPCAllowedAccountType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип учетных записей, которые разрешены для совместной работы с компьютером.
+Тип учетных записей, которым разрешено совместно использовать компьютер.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|гость|1|Только учетные записи гостей.|
-|domain|2|Только учетные записи с доменом.|
+|Гостевой|1|Только гостевые учетные записи.|
+|domain|2|Только учетные записи, присоединенные к домену.|
+
+
 
 
 

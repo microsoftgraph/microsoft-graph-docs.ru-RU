@@ -1,35 +1,37 @@
 ---
-title: тип из переумыка complianceState
-description: Состояние соответствия требованиям.
+title: Тип перечисления complianceState
+description: Состояние соответствия.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b371969e349340264b2a3ccd81ce008a1716b0c3
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 20d0c049a8274bbedf4c618c54cdf003b9fbfb63
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450209"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736078"
 ---
-# <a name="compliancestate-enum-type"></a>тип из переумыка complianceState
+# <a name="compliancestate-enum-type"></a>Тип перечисления complianceState
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние соответствия требованиям.
+Состояние соответствия.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестно.|
-|совместимый|1|Совместимый.|
-|нескомплиентные|2|Устройство не соответствует требованиям и блокируется из корпоративных ресурсов.|
-|конфликт|3|Конфликт с другими правилами.|
-|error|4 |Ошибка|
+|Совместимый|1|Совместимый.|
+|Несовместимые|2|Устройство не соответствует требованиям и заблокировано корпоративными ресурсами.|
+|Конфликта|3|Конфликт с другими правилами.|
+|error|4|Ошибка|
 |inGracePeriod|254|Устройство не соответствует требованиям, но по-прежнему имеет доступ к корпоративным ресурсам|
-|configManager|255|Управление менеджером Config|
+|configManager|255|Управляется диспетчером конфигураций|
+
+
 
 
 

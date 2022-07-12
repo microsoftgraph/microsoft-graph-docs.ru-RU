@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 90f3bb1ef89ebe84025b01154946f151e2e1f3e9
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 554e41867e14ef4cab39e52dc2fe16b02276c907
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452568"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732851"
 ---
 # <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>Функция downloadApplePushNotificationCertificateSigningRequest
 
@@ -41,14 +41,14 @@ GET /deviceManagement/applePushNotificationCertificate/downloadApplePushNotifica
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы эта функция возвращает код отклика и `200 OK` строку в тексте ответа.
+В случае успешного выполнения эта функция возвращает код `200 OK` отклика и строку в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -69,6 +69,8 @@ Content-Length: 85
   "value": "Download Apple Push Notification Certificate Signing Request value"
 }
 ```
+
+
 
 
 

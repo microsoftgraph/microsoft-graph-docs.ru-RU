@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e48479a520f866d03d7fde2df477c574e8b619c5
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 5aa38c4152f54c918b7f907d6461d0ff5e5a30fa
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453690"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735266"
 ---
 # <a name="create-iosvppebook"></a>Create iosVppEBook
 
@@ -41,7 +41,7 @@ POST /deviceAppManagement/managedEBooks
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -145,6 +145,8 @@ Content-Length: 964
   "usedLicenseCount": 0
 }
 ```
+
+
 
 
 

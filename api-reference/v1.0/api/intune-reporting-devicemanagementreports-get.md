@@ -1,24 +1,24 @@
 ---
-title: Get deviceManagementReports
+title: Получение объекта deviceManagementReports
 description: Чтение свойств и связей объекта deviceManagementReports.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d04caef5d13fea8ef70bd39ea041408bbb768096
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a138188e1695f792bdaeab57b6b561fbb11799cf
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449512"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733495"
 ---
-# <a name="get-devicemanagementreports"></a>Get deviceManagementReports
+# <a name="get-devicemanagementreports"></a>Получение объекта deviceManagementReports
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей [объекта deviceManagementReports.](../resources/intune-reporting-devicemanagementreports.md)
+Чтение свойств и связей объекта [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,14 +44,14 @@ GET /deviceManagement/reports
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и `200 OK` [объект deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -75,6 +75,8 @@ Content-Length: 137
   }
 }
 ```
+
+
 
 
 

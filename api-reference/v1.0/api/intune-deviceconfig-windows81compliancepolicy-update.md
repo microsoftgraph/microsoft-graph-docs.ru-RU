@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: baeffad99fd681cc6933e20f10737315c5576281
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c3df5726032f7139f130ab8cf8366b9cdb497f6b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451579"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732046"
 ---
 # <a name="update-windows81compliancepolicy"></a>Update windows81CompliancePolicy
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -130,6 +130,8 @@ Content-Length: 774
   "storageRequireEncryption": true
 }
 ```
+
+
 
 
 

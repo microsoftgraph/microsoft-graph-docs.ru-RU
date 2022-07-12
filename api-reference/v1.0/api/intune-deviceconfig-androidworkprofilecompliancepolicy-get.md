@@ -1,24 +1,24 @@
 ---
-title: Get AndroidWorkProfileCompliancePolicy
-description: Чтение свойств и связей объекта AndroidWorkProfileCompliancePolicy.
+title: Получение объекта androidWorkProfileCompliancePolicy
+description: Чтение свойств и связей объекта androidWorkProfileCompliancePolicy.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b04bd44ee4bfb29af49cc5a4ebdf51959c235748
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: aa6956ce1ec3255099d36a4fa730a3767ef4032c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454863"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736603"
 ---
-# <a name="get-androidworkprofilecompliancepolicy"></a>Get AndroidWorkProfileCompliancePolicy
+# <a name="get-androidworkprofilecompliancepolicy"></a>Получение объекта androidWorkProfileCompliancePolicy
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [AndroidWorkProfileCompliancePolicy.](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)
+Чтение свойств и связей объекта [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,14 +44,14 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного использования этот метод возвращает код отклика и `200 OK` [объект AndroidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -101,6 +101,8 @@ Content-Length: 1417
   }
 }
 ```
+
+
 
 
 

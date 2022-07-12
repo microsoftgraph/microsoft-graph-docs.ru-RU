@@ -1,54 +1,54 @@
 ---
-title: тип ресурса терминов
-description: Определяет сущность терминов в магазине терминов.
+title: Тип ресурса term
+description: Определяет сущность термина в хранилище терминов.
 author: mohitpcad
-localization_priority: Normal
-ms.prod: Sharepoint
+ms.localizationpriority: medium
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 5645b85a5d017fd05010e04e118853a904a78b6c
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 0207c740d52f7e7401ed6c741cf8d9134ec47eb1
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516180"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730282"
 ---
-# <a name="term-resource-type"></a>тип ресурса терминов
+# <a name="term-resource-type"></a>Тип ресурса term
 
 Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет термин, используемый в магазине [терминов.] Термин можно использовать для представления объекта, который затем можно использовать в качестве метаданных для тегов контента. Несколько терминов могут быть организованы иерархическим образом в [наборе].
+Представляет термин, используемый в банках [терминов]. Термин можно использовать для представления объекта, который затем можно использовать в качестве метаданных для пометки содержимого. Несколько терминов можно упорядочить в наборе иерархическим [образом].
 
-Наследует от [объекта](../resources/entity.md).
+Наследует [от сущности](../resources/entity.md).
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список дочерних элементов](../api/termstore-term-list-children.md)|[коллекция microsoft.graph.termStore.term](../resources/termstore-term.md)|Получите детей первого уровня термина в магазине [терминов.]|
-|[Отношения списка](../api/termstore-term-list-relations.md)|[коллекция microsoft.graph.termStore.relation](../resources/termstore-relation.md)|Получите отношения термина в магазине [терминов.]|
-|[Создание связи](../api/termstore-relation-post.md)|[microsoft.graph.termStore.relation](../resources/termstore-relation.md)|Создание нового отношения для термина или набора [в] магазине [терминов.]|
-|[Создание термина](../api/termstore-term-post.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Создание нового объекта терминов в магазине [терминов.]|
-|[Получить термин](../api/termstore-term-get.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Ознакомьтесь с свойствами и отношениями объекта терминов в магазине [терминов.]|
-|[Термин Update](../api/termstore-term-update.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Обновление свойств объекта терминов в магазине [терминов.]|
-|[Удаление термина](../api/termstore-term-delete.md)|Нет|Удаление объекта терминов в магазине [терминов.]|
+|[Список дочерних элементов](../api/termstore-term-list-children.md)|[Коллекция microsoft.graph.termStore.term](../resources/termstore-term.md)|Получение дочерних элементов первого уровня термина в хранилище [терминов].|
+|[Перечисление связей](../api/termstore-term-list-relations.md)|[Коллекция microsoft.graph.termStore.relation](../resources/termstore-relation.md)|Получение связей термина в хранилище [терминов].|
+|[Создание отношения](../api/termstore-relation-post.md)|[microsoft.graph.termStore.relation](../resources/termstore-relation.md)|Создайте новое отношение для термина или [набора в] хранилище [терминов].|
+|[Создание термина](../api/termstore-term-post.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Создайте объект термина в хранилище [терминов].|
+|[Получение термина](../api/termstore-term-get.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Чтение свойств и связей объекта термина в хранилище  [терминов].|
+|[Срок обновления](../api/termstore-term-update.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Обновление свойств объекта термина в хранилище [терминов].|
+|[Удалить термин](../api/termstore-term-delete.md)|Нет|Удаление объекта термина в хранилище [терминов].|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Дата и время создания терминов. Только для чтения|
-|описания|[коллекция microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md)|Описание терминов, зависящих от languageTag|
-|id|Строка|Уникальный идентификатор термина. Только чтение|
-|метки|[коллекция microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Метаданные меток для термина|
-|lastModifiedDateTime|DateTimeOffset|Последняя дата и время изменения срока. Только для чтения|
-|properties|[коллекция microsoft.graph.keyValue](../resources/keyvalue.md)|Коллекция свойств в термине|
+|createdDateTime|DateTimeOffset|Дата и время создания термина. Только для чтения.|
+|Описания|[Коллекция microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md)|Описание термина, который зависит от languageTag.|
+|id|String|Уникальный идентификатор термина. Только для чтения.|
+|Метки|[Коллекция microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Метка метаданных для термина.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения термина. Только для чтения.|
+|properties|[Коллекция microsoft.graph.keyValue](../resources/keyvalue.md)|Коллекция свойств термина.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|children|[коллекция microsoft.graph.termStore.term](../resources/termstore-term.md)|Дети текущего срока|
-|отношения|[коллекция microsoft.graph.termStore.relation](../resources/termstore-relation.md)|Указать, какие термины связаны с текущим термином как закрепленные или повторно|
-|set|[microsoft.graph.termStore.set](../resources/termstore-set.md)|[Набор,] в котором создается термин|
+|children|[Коллекция microsoft.graph.termStore.term](../resources/termstore-term.md)|Дочерние элементы текущего термина.|
+|Отношения|[Коллекция microsoft.graph.termStore.relation](../resources/termstore-relation.md)|Чтобы указать, какие термины связаны с текущим термином как закрепленные или повторно используемые.|
+|set|[microsoft.graph.termStore.set](../resources/termstore-set.md)|Набор [,] в котором создается термин.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
@@ -97,7 +97,7 @@ ms.locfileid: "50516180"
   "section": "documentation",
   "tocPath": "Terms",
   "tocBookmarks": {
-    "Resources/termstore-term": "#"
+    "Resources/termstore-term&quot;: &quot;#"
   },
   "suppressions": []
 }

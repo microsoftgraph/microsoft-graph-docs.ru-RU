@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf4301a1f38c46a203cc583bb32e271098280698
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f5355ccb39c82e8428532f3b9ea20595b4b26d51
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60440404"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734986"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>Тип ресурса deviceComplianceScheduledActionForRule
 
@@ -33,12 +33,12 @@ ms.locfileid: "60440404"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|ruleName|String|Имя правила, к которому применяется это запланированное действие. В настоящее время запланированные действия создаются для политики, а не для каждого правила, поэтому значение RuleName всегда задалось значению PasswordRequired по умолчанию.|
+|ruleName|String|Имя правила, к которому применяется это запланированное действие. В настоящее время запланированные действия создаются для каждой политики, а не для каждого правила, поэтому ruleName всегда имеет значение passwordRequired по умолчанию.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|scheduledActionConfigurations|Коллекция [deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md)|Список конфигураций запланированных действий для этой политики соответствия требованиям. Политика соответствия требованиям должна иметь одно и только одно запланированное действие блока.|
+|scheduledActionConfigurations|Коллекция [deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md)|Список конфигураций запланированных действий для этой политики соответствия требованиям. Политика соответствия требованиям должна иметь одно и только одно запланированное действие блокировки.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -55,6 +55,8 @@ ms.locfileid: "60440404"
   "ruleName": "String"
 }
 ```
+
+
 
 
 

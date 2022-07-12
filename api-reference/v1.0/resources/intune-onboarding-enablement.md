@@ -1,18 +1,18 @@
 ---
-title: тип enum enablement
+title: Тип перечисления enablement
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: af53066663ed71292cbe2217510016540a53eee8
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 674935ad61bc2eb6d7eab50b73d4a974abf020f3
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447363"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734667"
 ---
-# <a name="enablement-enum-type"></a>тип enum enablement
+# <a name="enablement-enum-type"></a>Тип перечисления enablement
 
 Пространство имен: microsoft.graph
 
@@ -26,6 +26,8 @@ ms.locfileid: "60447363"
 |notConfigured|0|Значение устройства по умолчанию, без намерения.|
 |включено|1|Включает параметр на устройстве.|
 |отключено|2|Отключает параметр на устройстве.|
+
+
 
 
 

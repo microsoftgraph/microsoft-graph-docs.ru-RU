@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b2a44fc19cb31e9b7edcd441657b773f628dd43e
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 3e9712ac86967525a0e4c0491867e60222325a3a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449315"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734930"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>Тип ресурса deviceManagementExchangeConnector
 
@@ -35,9 +35,9 @@ ms.locfileid: "60449315"
 |:---|:---|:---|
 |id|String|Н/Д|
 |lastSyncDateTime|DateTimeOffset|Время последней синхронизации соединителя Exchange|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Состояние соединитетеля. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Состояние соединителя Exchange. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
 |primarySmtpAddress|String|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
-|serverName|String|Имя сервера Exchange.|
+|serverName|String|Имя сервера Exchange Server.|
 |connectorServerName|String|Имя сервера, на котором размещается соединитель Exchange.|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|Тип настраиваемого соединителя Exchange. Возможные значения: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
 |version|String|Версия объекта ExchangeConnectorAgent|
@@ -70,6 +70,8 @@ ms.locfileid: "60449315"
   "exchangeOrganization": "String"
 }
 ```
+
+
 
 
 

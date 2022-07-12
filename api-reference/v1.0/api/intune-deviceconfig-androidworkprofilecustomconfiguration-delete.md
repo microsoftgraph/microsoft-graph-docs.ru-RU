@@ -1,24 +1,24 @@
 ---
-title: Удаление androidWorkProfileCustomConfiguration
-description: Удаляет androidWorkProfileCustomConfiguration.
+title: Удаление объекта androidWorkProfileCustomConfiguration
+description: Удаляет объект androidWorkProfileCustomConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f5b4436ba92db783dc2624f92cae71415f2259b7
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 76e300c2b4ebe6341db9be9a5c637b3a1f157ce4
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453599"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733642"
 ---
-# <a name="delete-androidworkprofilecustomconfiguration"></a>Удаление androidWorkProfileCustomConfiguration
+# <a name="delete-androidworkprofilecustomconfiguration"></a>Удаление объекта androidWorkProfileCustomConfiguration
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md).
+Удаляет объект [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

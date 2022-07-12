@@ -1,18 +1,18 @@
 ---
-title: тип enum mobileAppPublishingState
+title: Тип перечисления mobileAppPublishingState
 description: Указывает состояние публикации приложения.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1ca66cf4639e5164e35a6b8ae43d5dc6681840f0
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 63af82e4be01a3fb62b78c06e492f0d4cfac1246
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455867"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733110"
 ---
-# <a name="mobileapppublishingstate-enum-type"></a>тип enum mobileAppPublishingState
+# <a name="mobileapppublishingstate-enum-type"></a>Тип перечисления mobileAppPublishingState
 
 Пространство имен: microsoft.graph
 
@@ -24,8 +24,10 @@ ms.locfileid: "60455867"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notPublished|0|Приложение еще не опубликовано.|
-|обработка|1|Приложение находится в ожидании обработки на стороне службы.|
-|опубликовано|2|Приложение опубликовано.|
+|Обработки|1|Приложение ожидает обработки на стороне службы.|
+|Опубликовано|2|Приложение опубликовано.|
+
+
 
 
 

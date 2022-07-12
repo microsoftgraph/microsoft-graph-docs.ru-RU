@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 29bd4b968e21296d36e9bbd285d4ee9e076ada07
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 68983da8725ca148e3d7d57e1fa762525af4a6aa
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451221"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734776"
 ---
 # <a name="update-telecomexpensemanagementpartner"></a>Обновление объекта telecomExpenseManagementPartner
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManageme
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -99,6 +99,8 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
+
 
 
 

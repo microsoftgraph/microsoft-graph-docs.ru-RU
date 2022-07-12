@@ -1,16 +1,16 @@
 ---
 title: Действие unassignUserFromDevice
-description: Отписка пользователя с устройства Автопилота.
+description: Отменяет назначение пользователя с устройства Autopilot.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 92e63f21d4ef64b419cc7895d854cfe83efc9f85
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e4b1765358f5bd712b4fad1263d7db07df9bc33b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60438386"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732816"
 ---
 # <a name="unassignuserfromdevice-action"></a>Действие unassignUserFromDevice
 
@@ -18,7 +18,7 @@ ms.locfileid: "60438386"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Отписка пользователя с устройства Автопилота.
+Отменяет назначение пользователя с устройства Autopilot.
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,7 +41,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,6 +63,8 @@ POST https://graph.microsoft.com/v1.0/deviceManagement/windowsAutopilotDeviceIde
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

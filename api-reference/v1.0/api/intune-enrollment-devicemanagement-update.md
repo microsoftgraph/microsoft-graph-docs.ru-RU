@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1fc11d609906e139b5c0b9e2c850d2e7d980b2c1
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: adf09ac13b43d1394a1bd3d832228231237fa246
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452932"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735819"
 ---
 # <a name="update-devicemanagement"></a>Обновление объекта deviceManagement
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -84,6 +84,8 @@ Content-Length: 107
   "id": "0b283420-3420-0b28-2034-280b2034280b"
 }
 ```
+
+
 
 
 

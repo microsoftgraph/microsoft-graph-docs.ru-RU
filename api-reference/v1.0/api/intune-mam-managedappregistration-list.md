@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 54da84f9ccabf5e9c2cf377e84639d607ff7fdbf
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 736ef7c58672dfb751310ca1e1b2fc74ccc2a482
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446009"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731366"
 ---
 # <a name="list-managedappregistrations"></a>Перечисление объектов managedAppRegistration
 
@@ -41,7 +41,7 @@ GET /deviceAppManagement/managedAppRegistrations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -91,6 +91,8 @@ Content-Length: 855
   ]
 }
 ```
+
+
 
 
 

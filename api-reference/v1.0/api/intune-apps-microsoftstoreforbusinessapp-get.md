@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 204f05b0f4cfb89fd0a3d5c81ef5eb03b0634617
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a3dcb16d92f2b459dcec5ab95586f6e61897da91
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450947"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734153"
 ---
 # <a name="get-microsoftstoreforbusinessapp"></a>Get microsoftStoreForBusinessApp
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -97,6 +97,8 @@ Content-Length: 1008
   }
 }
 ```
+
+
 
 
 

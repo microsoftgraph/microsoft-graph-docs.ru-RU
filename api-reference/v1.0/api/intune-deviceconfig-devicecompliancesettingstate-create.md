@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 47c55655518a9142f6452b100e8cac49b40ac9e6
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ec108c5c8366cdf91052d22bd019b6007834ad39
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451642"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722875"
 ---
 # <a name="create-devicecompliancesettingstate"></a>Создание объекта deviceComplianceSettingState
 
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -61,7 +61,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 |userName|String|Имя пользователя в отчете|
 |userPrincipalName|String|Имя участника-пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Состояние соответствия параметру. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Состояние соответствия параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
 
 
@@ -117,6 +117,8 @@ Content-Length: 566
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
+
+
 
 
 

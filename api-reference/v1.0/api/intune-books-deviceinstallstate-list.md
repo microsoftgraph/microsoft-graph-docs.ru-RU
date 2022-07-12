@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 737113abdac3842fb51ba4724ff995a784990371
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7d080cc308415ce0c1e20135bf3143d09dce8756
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456216"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734132"
 ---
 # <a name="list-deviceinstallstates"></a>Перечисление объектов deviceInstallState
 
@@ -42,7 +42,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userIn
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -83,6 +83,8 @@ Content-Length: 496
   ]
 }
 ```
+
+
 
 
 

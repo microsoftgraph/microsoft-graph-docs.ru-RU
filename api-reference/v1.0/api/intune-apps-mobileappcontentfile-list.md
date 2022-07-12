@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fac3366296a11df36f4fef530693f9804d121899
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 6b809978dbf9c58fc6133ec0cdd98dfc5390627d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446163"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730919"
 ---
 # <a name="list-mobileappcontentfiles"></a>Перечисление объектов mobileAppContentFile
 
@@ -41,7 +41,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCont
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -83,6 +83,8 @@ Content-Length: 527
   ]
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ef918b2247c6c056eb73fc538a9bdb681aba5e95
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 9a76f34e46228e0ddc337192f5bc3208d1fbacb7
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447933"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731885"
 ---
 # <a name="get-managedioslobapp"></a>Get managedIOSLobApp
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -116,6 +116,8 @@ Content-Length: 1604
   }
 }
 ```
+
+
 
 
 

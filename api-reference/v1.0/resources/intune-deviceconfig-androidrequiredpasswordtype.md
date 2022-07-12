@@ -1,36 +1,38 @@
 ---
-title: тип enum androidRequiredPasswordType
-description: Тип пароля, требуемого для Android.
+title: Тип перечисления androidRequiredPasswordType
+description: Требуемый тип пароля Для Android.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 908a8018b1cb805173f04f5aff47bcf528c98ceb
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ae76d6e260dfdef8d269ab20448d38b7c751f0ec
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454842"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733880"
 ---
-# <a name="androidrequiredpasswordtype-enum-type"></a>тип enum androidRequiredPasswordType
+# <a name="androidrequiredpasswordtype-enum-type"></a>Тип перечисления androidRequiredPasswordType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип пароля, требуемого для Android.
+Требуемый тип пароля Для Android.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Значение устройства по умолчанию, без намерения.|
-|алфавитный|1|Требуется алфавитный пароль.|
-|alphanumeric|2|Необходимый альфа-пароль.|
-|alphanumericWithSymbols|3|Альфа-число с паролем символов.|
-|lowSecurityBiometric|4 |Требуется пароль с низкой безопасностью на основе биометрии.|
-|числовая|5|Необходимый числовой пароль.|
-|numericComplex|6 |Требуется числовый сложный пароль.|
-|любой|7 |Требуется пароль или шаблон, и любой из них является приемлемым.|
+|Алфавитном|1|Требуется алфавитный пароль.|
+|Буквы|2|Требуется буквенно-цифровой пароль.|
+|alphanumericWithSymbols|3|Буквенно-цифровой с обязательным паролем символов.|
+|lowSecurityBiometric|4|Требуется пароль на основе биометрических данных с низким уровнем безопасности.|
+|Числовые|5|Требуется числовой пароль.|
+|numericComplex|6 |Требуется числовой сложный пароль.|
+|любой|7 |Пароль или шаблон является обязательным, и любой из них является допустимым.|
+
+
 
 
 

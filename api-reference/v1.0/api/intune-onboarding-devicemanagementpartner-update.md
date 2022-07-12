@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8615c6ea2579daef1663d6aff1d1174a3f4666fb
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 4dbd6686434bb43b9f6b822283c48572372528ca
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446767"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730058"
 ---
 # <a name="update-devicemanagementpartner"></a>Обновление объекта deviceManagementPartner
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,10 +51,10 @@ PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Id объекта|
+|id|String|Идентификатор сущности|
 |lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пульса после того, как администратор включил параметр "Подключиться к партнеру по управлению устройствами".|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Тип приложения-партнера. Возможные значения: `unknown`, `singleTenantApp`, `multiTenantApp`.|
+|partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Тип партнерского приложения. Возможные значения: `unknown`, `singleTenantApp`, `multiTenantApp`.|
 |singleTenantAppId|String|Идентификатор одноклиентского приложения партнера|
 |displayName|String|Отображаемое имя партнера|
 |isConfigured|Boolean|Указывает, настроен ли партнер по управлению устройствами|
@@ -108,6 +108,8 @@ Content-Length: 551
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
 }
 ```
+
+
 
 
 

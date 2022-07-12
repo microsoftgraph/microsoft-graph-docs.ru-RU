@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: afc13b00eca33e38768c9cd213bd8c76faff4a53
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 0b11c39986a869e391af245512e535da28070284
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447765"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731115"
 ---
 # <a name="update-ioscompliancepolicy"></a>Update iosCompliancePolicy
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -139,6 +139,8 @@ Content-Length: 917
   "managedEmailProfileRequired": true
 }
 ```
+
+
 
 
 

@@ -1,34 +1,36 @@
 ---
-title: тип enum ratingAppsType
-description: Оценка приложений, как и в медиаконтенте
+title: Тип перечисления ratingAppsType
+description: Оценка приложений, как в содержимом мультимедиа
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4eec19c6f09f980a3e3ca701f8d7af2dc2caaf73
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 058936a4afacd37d2dc8743b2190d8de4243b127
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450736"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730695"
 ---
-# <a name="ratingappstype-enum-type"></a>тип enum ratingAppsType
+# <a name="ratingappstype-enum-type"></a>Тип перечисления ratingAppsType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Оценка приложений, как и в медиаконтенте
+Оценка приложений, как в содержимом мультимедиа
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |allAllowed|0|Значение по умолчанию, разрешить все содержимое приложений|
-|allBlocked|1|Не разрешайте содержимое приложений|
-|agesAbove4|2|4+, 4 и более лет|
-|agesAbove9|3|9+, 9 лет и старше|
-|agesAbove12|4 |12+, 12 лет и старше |
-|agesAbove17|5|17+, 17 лет и старше|
+|allBlocked|1|Не разрешать содержимое приложений|
+|agesAbove4|2|4+, возраст 4 и более|
+|agesAbove9|3|9+, возраст 9 и выше|
+|agesAbove12|4|12+, возраст 12 и более |
+|agesAbove17|5|17+, возраст 17 и более|
+
+
 
 
 

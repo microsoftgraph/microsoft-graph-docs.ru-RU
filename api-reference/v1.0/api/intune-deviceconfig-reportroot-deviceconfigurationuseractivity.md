@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f00597bee23bc0fbdffe382c814dfdaaa43b96ed
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 17ff238a45de58bdcdaa20ab1c4e897623037dec
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453403"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736379"
 ---
 # <a name="deviceconfigurationuseractivity-function"></a>Функция deviceConfigurationUserActivity
 
@@ -41,7 +41,7 @@ GET /reports/deviceConfigurationUserActivity
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -72,6 +72,8 @@ Content-Length: 136
   }
 }
 ```
+
+
 
 
 

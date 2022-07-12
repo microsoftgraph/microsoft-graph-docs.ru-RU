@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c9c2b1b5ec9df3b3e655eca9176678b4ca70114
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: faadb369ce5f76941d44087dc09b4fa4faee598a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446739"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734832"
 ---
 # <a name="delete-roledefinition"></a>Удаление roleDefinition
 
@@ -42,7 +42,7 @@ DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{rol
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -64,6 +64,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDe
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 04810739efb900e21114c63bf72004a5e45cfbc7
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: cb57db83250d835543a539bf99fb48ddc7a8fcef
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447835"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734657"
 ---
 # <a name="deviceandappmanagementroledefinition-resource-type"></a>Тип ресурса deviceAndAppManagementRoleDefinition
 
@@ -79,6 +79,8 @@ ms.locfileid: "60447835"
   "isBuiltIn": true
 }
 ```
+
+
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: Действие getConfigurationPolicyNonComplianceReport
+title: Действие getNoncompliantDevicesAndSettingsReport
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed8dc0aa5b2f4be6af6f356323dbe244a8e87717
+ms.openlocfilehash: f29b7b44dd3b43eb3c4057b9cac652bd6d765fe0
 ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/12/2022
-ms.locfileid: "66735168"
+ms.locfileid: "66737117"
 ---
-# <a name="getconfigurationpolicynoncompliancereport-action"></a>Действие getConfigurationPolicyNonComplianceReport
+# <a name="getnoncompliantdevicesandsettingsreport-action"></a>Действие getNoncompliantDevicesAndSettingsReport
 
 Пространство имен: microsoft.graph
 
@@ -35,7 +35,7 @@ ms.locfileid: "66735168"
 }
 -->
 ``` http
-POST /deviceManagement/reports/getConfigurationPolicyNonComplianceReport
+POST /deviceManagement/reports/getNoncompliantDevicesAndSettingsReport
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -71,7 +71,7 @@ POST /deviceManagement/reports/getConfigurationPolicyNonComplianceReport
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceManagement/reports/getConfigurationPolicyNonComplianceReport
+POST https://graph.microsoft.com/v1.0/deviceManagement/reports/getNoncompliantDevicesAndSettingsReport
 
 Content-type: application/json
 Content-length: 278
@@ -100,10 +100,10 @@ Content-length: 278
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 115
+Content-Length: 111
 
 {
-  "value": "Z2V0Q29uZmlndXJhdGlvblBvbGljeU5vbkNvbXBsaWFuY2VSZXBvcnQgSW50dW5lIERvYyBTYW1wbGUgLTE2MTk2MDUzMTI="
+  "value": "Z2V0Tm9uY29tcGxpYW50RGV2aWNlc0FuZFNldHRpbmdzUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIC0yMDEyNTMxMjQ3"
 }
 ```
 

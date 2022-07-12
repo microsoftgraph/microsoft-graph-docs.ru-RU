@@ -1,33 +1,35 @@
 ---
-title: тип enum windowsUserAccountControlSettings
-description: Возможные значения для Windows параметров управления учетной записью пользователя.
+title: Тип перечисления windowsUserAccountControlSettings
+description: Возможные значения параметров управления учетной записью пользователя Windows.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d9f7dab49fa95376875772d1135b0066376f33d9
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7ce05cc58af38f5d9fef8e1d5e5dd4de82f36350
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453318"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734216"
 ---
-# <a name="windowsuseraccountcontrolsettings-enum-type"></a>тип enum windowsUserAccountControlSettings
+# <a name="windowsuseraccountcontrolsettings-enum-type"></a>Тип перечисления windowsUserAccountControlSettings
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для Windows параметров управления учетной записью пользователя.
+Возможные значения параметров управления учетной записью пользователя Windows.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
+|userDefined|0|Определяемое пользователем значение по умолчанию, без намерения.|
 |alwaysNotify|1|Всегда уведомлять.|
-|notifyOnAppChanges|2|Уведомление об изменениях приложения.|
-|notifyOnAppChangesWithoutDimming|3|Оповещать об изменениях в приложении без отмывки рабочего стола.|
-|neverNotify|4 |Никогда не уведомлять.|
+|notifyOnAppChanges|2|Уведомлять об изменениях приложения.|
+|notifyOnAppChangesWithoutDimming|3|Уведомлять об изменениях приложения без затемненного рабочего стола.|
+|neverNotify|4|Никогда не уведомлять.|
+
+
 
 
 

@@ -1,35 +1,37 @@
 ---
-title: тип enum dayOfWeek
-description: Возможные значения за будний день
+title: Тип перечисления dayOfWeek
+description: Возможные значения для дня недели
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4469fb76e24aca418c0b38e541138a1bd2b1ca85
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: d8a4f021ac24e885c7bc05577bf19abc5cdd2e12
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454378"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722756"
 ---
-# <a name="dayofweek-enum-type"></a>тип enum dayOfWeek
+# <a name="dayofweek-enum-type"></a>Тип перечисления dayOfWeek
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения за будний день
+Возможные значения для дня недели
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |воскресенье|0|Воскресенье.|
-|понедельник|1|В понедельник.|
-|вторник|2|Во вторник.|
+|понедельник|1|Понедельник.|
+|вторник|2|Вторник.|
 |среда|3|Среда.|
-|четверг|4 |В четверг.|
-|пятница|5|В пятницу.|
-|суббота|6 |В субботу.|
+|четверг|4|Четверг.|
+|пятница|5|Пятница.|
+|суббота|6 |Суббота.|
+
+
 
 
 

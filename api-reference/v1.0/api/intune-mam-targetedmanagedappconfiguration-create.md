@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e676b260f7a51afc1e1cf170518b9d88626ceedd
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 76c33de2eecdf81f9352660a0a5e53a613f46dc3
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445551"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734006"
 ---
 # <a name="create-targetedmanagedappconfiguration"></a>Создание targetedManagedAppConfiguration
 
@@ -41,7 +41,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -118,6 +118,8 @@ Content-Length: 560
   "isAssigned": true
 }
 ```
+
+
 
 
 

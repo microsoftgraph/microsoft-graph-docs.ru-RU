@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e5aed7272f94d87008188ed265efb3792197ab5c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e07e5d977eecb92514b7f647847bd2e5f10f9586
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455227"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733103"
 ---
 # <a name="webapp-resource-type"></a>Тип ресурса webApp
 
@@ -48,8 +48,8 @@ ms.locfileid: "60455227"
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Унаследованный от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
-|appUrl|String|URL-адрес веб-приложения. Это свойство не может быть PATCHed.|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|appUrl|String|URL-адрес веб-приложения. Это свойство не может быть patCHed.|
 |useManagedBrowser|Boolean|Указывает, следует ли использовать управляемый браузер. Это свойство применимо только к Android и iOS.|
 
 ## <a name="relationships"></a>Связи
@@ -91,6 +91,8 @@ ms.locfileid: "60455227"
   "useManagedBrowser": true
 }
 ```
+
+
 
 
 

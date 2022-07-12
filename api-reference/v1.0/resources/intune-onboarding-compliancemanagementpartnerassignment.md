@@ -1,29 +1,29 @@
 ---
-title: тип ресурса complianceManagementPartnerAssignment
-description: Ориентация группы пользователей для партнера по управлению соответствием требованиям
+title: Тип ресурса complianceManagementPartnerAssignment
+description: Группа пользователей, предназначенная для партнера по управлению соответствием требованиям
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 284301b947d27521f38329e2ad07bf2dc42d44d0
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a2c5cda275154256732120c6964c67d4795c7c81
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445601"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735994"
 ---
-# <a name="compliancemanagementpartnerassignment-resource-type"></a>тип ресурса complianceManagementPartnerAssignment
+# <a name="compliancemanagementpartnerassignment-resource-type"></a>Тип ресурса complianceManagementPartnerAssignment
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ориентация группы пользователей для партнера по управлению соответствием требованиям
+Группа пользователей, предназначенная для партнера по управлению соответствием требованиям
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель группового назначения.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевой объект назначения группы.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -44,6 +44,8 @@ ms.locfileid: "60445601"
   }
 }
 ```
+
+
 
 
 

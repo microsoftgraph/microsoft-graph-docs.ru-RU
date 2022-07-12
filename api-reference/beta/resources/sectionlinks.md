@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Сектионлинкс
+title: Тип ресурса sectionLinks
 description: Ссылки для открытия раздела OneNote.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: notes
 author: jewan-microsoft
-ms.openlocfilehash: 9ee3022ede7da1fbbfa6074611f54590e027209c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 70b39a9f8046fd1d12d391d169ca0ad0297abf61
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087588"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723498"
 ---
-# <a name="sectionlinks-resource-type"></a>Тип ресурса Сектионлинкс
+# <a name="sectionlinks-resource-type"></a>Тип ресурса sectionLinks
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "48087588"
 
 Ссылки для открытия раздела OneNote.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Прочитайте о самых важных новых возможностях Microsoft Graph за последние два месяца, о том, что было добавлено в более ранних выпусках, и о том, как делиться идеями.
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: e08c148c1898633f07412a94bf94b11e0d650f98
-ms.sourcegitcommit: 005e9d483d03ed048611ffd180a92930afff4e42
+ms.openlocfilehash: 26b4024a3fd23fb2ea9f2ee04a02894b16db6e0d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66646135"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735336"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -113,7 +113,7 @@ ms.locfileid: "66646135"
 
 Вот несколько способов, которые можно использовать.
 
-- Имеются ли сценарии, поддержку которых вы хотели бы видеть в Microsoft Graph? Предложите новые функции и проголосуйте за них на сайте [сообщества Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
+- Имеются ли сценарии, поддержку которых вы хотели бы видеть в Microsoft Graph? Предложите новые функции и проголосуйте за них на [портале отзывов и предложений Майкрософт](https://aka.ms/graphfeedback).
     Некоторые новые функции реализуются на основе распространенных запросов сообщества разработчиков. Команда разработчиков Microsoft Graph регулярно оценивает потребности клиентов и выпускает новые функции в следующем порядке.
 
     1. Дебютный выпуск в **_предварительной_** версии. Все соответствующие обновления REST API доступны в конечной точке бета-версии (`https://graph.microsoft.com/beta`).  

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc6905a2228edda8c6370e16152af24125537336
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c38ea24e5fa9f472ebd2a816667e9642471a1633
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448087"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735840"
 ---
 # <a name="delete-manageddevice"></a>Delete managedDevice
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDev
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,6 +65,8 @@ DELETE https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedD
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

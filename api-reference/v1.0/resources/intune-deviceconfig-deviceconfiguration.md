@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 35e2101ace3a3f16da17acd09772c6fcf291c764
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 2da49524ce7775110ede2dc7e3b9774e88c61302
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451192"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722735"
 ---
 # <a name="deviceconfiguration-resource-type"></a>Тип ресурса deviceConfiguration
 
@@ -26,7 +26,7 @@ ms.locfileid: "60451192"
 |[Список объектов deviceConfiguration](../api/intune-deviceconfig-deviceconfiguration-list.md)|Коллекция [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|Список свойств и связей объектов [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |[Получение объекта deviceConfiguration](../api/intune-deviceconfig-deviceconfiguration-get.md)|[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|Чтение свойств и связей объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |[Действие assign](../api/intune-deviceconfig-deviceconfiguration-assign.md)|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Н/Д|
-|[функция getOmaSettingPlainTextValue](../api/intune-deviceconfig-deviceconfiguration-getomasettingplaintextvalue.md)|String|Н/Д|
+|[Функция getOmaSettingPlainTextValue](../api/intune-deviceconfig-deviceconfiguration-getomasettingplaintextvalue.md)|String|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -43,7 +43,7 @@ ms.locfileid: "60451192"
 |:---|:---|:---|
 |assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства.|
 |deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства.|
-|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройства пользователем.|
+|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройства по пользователю.|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигураций устройств|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигураций устройств по пользователям|
 |deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Сводка по состоянию параметров конфигурации устройств|
@@ -67,6 +67,8 @@ ms.locfileid: "60451192"
   "version": 1024
 }
 ```
+
+
 
 
 

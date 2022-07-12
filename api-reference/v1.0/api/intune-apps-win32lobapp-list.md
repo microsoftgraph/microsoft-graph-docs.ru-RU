@@ -1,24 +1,24 @@
 ---
-title: Список win32LobApps
+title: Перечисление win32LobApps
 description: Список свойств и связей объектов win32LobApp.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 175b15efb0ee1e9897e7d40390abfd59306a4669
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 28f7783bcf8dcdd76854db2ef3a4a8189b1da855
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452589"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734601"
 ---
-# <a name="list-win32lobapps"></a>Список win32LobApps
+# <a name="list-win32lobapps"></a>Перечисление win32LobApps
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [win32LobApp.](../resources/intune-apps-win32lobapp.md)
+Список свойств и связей объектов [win32LobApp](../resources/intune-apps-win32lobapp.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,14 +41,14 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [win32LobApp](../resources/intune-apps-win32lobapp.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [win32LobApp](../resources/intune-apps-win32lobapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -137,6 +137,8 @@ Content-Length: 2599
   ]
 }
 ```
+
+
 
 
 

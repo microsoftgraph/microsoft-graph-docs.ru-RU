@@ -1,24 +1,24 @@
 ---
-title: Обновление androidWorkProfileCustomConfiguration
-description: Обновление свойств объекта AndroidWorkProfileCustomConfiguration.
+title: Обновление объекта androidWorkProfileCustomConfiguration
+description: Обновление свойств объекта androidWorkProfileCustomConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 749e9b296135bd9fa8a12cc680e707c0f3d8a36f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 424372347c4cf7d07d6dbef29b32c9bd12ec3833
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452974"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731794"
 ---
-# <a name="update-androidworkprofilecustomconfiguration"></a>Обновление androidWorkProfileCustomConfiguration
+# <a name="update-androidworkprofilecustomconfiguration"></a>Обновление объекта androidWorkProfileCustomConfiguration
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [AndroidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)
+Обновление свойств объекта [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,13 +41,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса предоставляем представление JSON для [объекта AndroidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)
+В теле запроса добавьте представление объекта [androidWorkProfileCustomConfiguration в формате](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) JSON.
 
-В следующей таблице показаны свойства, необходимые при создании [androidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)
+В следующей таблице показаны свойства, необходимые при создании [объекта androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -62,7 +62,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 
 ## <a name="response"></a>Ответ
-В случае успеха этот метод возвращает код отклика и обновленный `200 OK` [объект AndroidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) в теле отклика.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и обновленный объект [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -114,6 +114,8 @@ Content-Length: 559
   ]
 }
 ```
+
+
 
 
 

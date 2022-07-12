@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4a482f0da6999eea026df9a07dc9a4d3165d417c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 94ec7345a8527d31c08873e15d6633455ac1ebbf
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445937"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734916"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>Тип ресурса deviceManagementPartner
 
@@ -32,10 +32,10 @@ ms.locfileid: "60445937"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Id объекта|
+|id|String|Идентификатор сущности|
 |lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пульса после того, как администратор включил параметр "Подключиться к партнеру по управлению устройствами".|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Тип приложения-партнера. Возможные значения: `unknown`, `singleTenantApp`, `multiTenantApp`.|
+|partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Тип партнерского приложения. Возможные значения: `unknown`, `singleTenantApp`, `multiTenantApp`.|
 |singleTenantAppId|String|Идентификатор одноклиентского приложения партнера|
 |displayName|String|Отображаемое имя партнера|
 |isConfigured|Boolean|Указывает, настроен ли партнер по управлению устройствами|
@@ -67,6 +67,8 @@ ms.locfileid: "60445937"
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)"
 }
 ```
+
+
 
 
 

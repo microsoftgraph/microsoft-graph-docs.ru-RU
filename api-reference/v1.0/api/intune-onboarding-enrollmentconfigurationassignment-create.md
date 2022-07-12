@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2abc3eec5058ec5dcb63bfb4933a1b8c846c288c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: d3c961efc549a03973ef342984f1d9128f2a304d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446760"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735511"
 ---
 # <a name="create-enrollmentconfigurationassignment"></a>Создание объекта enrollmentConfigurationAssignment
 
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -93,6 +93,8 @@ Content-Length: 274
   }
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aba75bfe7e2f0d728a957134167f6f707c197f7d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7b39b3a582a796e436b0b8ae63629345ad8bfdf9
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452575"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730177"
 ---
 # <a name="update-windows10generalconfiguration"></a>Обновление объекта windows10GeneralConfiguration
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -72,7 +72,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |searchEnableAutomaticIndexSizeManangement|Boolean|Указывает минимальный объем памяти на жестком диске с индексом до остановки индексирования.|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Возвращает или задает значение, позволяющее устройству отправлять данные диагностики и телеметрии использования, такие как Watson. Возможные значения: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Boolean|Возвращает или задает значение, позволяющее ИТ-администраторам запретить работу приложений и функций с файлами в OneDrive.|
-|smartScreenEnableAppInstallControl|Boolean|Это свойство будет отклонено в июле 2019 г. и будет заменено свойством SmartScreenAppInstallControl. Позволяет ИТ-администраторам разрешать или запрещать установку приложений из мест, отличных от Store.|
+|smartScreenEnableAppInstallControl|Boolean|Это свойство будет нерекомендуемым в июле 2019 г. и будет заменено свойством SmartScreenAppInstallControl. Позволяет ИТ-администраторам разрешать или запрещать установку приложений из мест, отличных от Store.|
 |personalizationDesktopImageUrl|String|Начинающийся с http или https URL-адрес изображения в формате JPG, JPEG или PNG, которое необходимо скачать и разместить на рабочем столе, или URL-адрес локального изображения в файловой системе, которое нужно разместить на рабочем столе.|
 |personalizationLockScreenImageUrl|String|Начинающийся с http или https URL-адрес изображения в формате JPG, JPEG или PNG, которое необходимо скачать и разместить на экране блокировки, или URL-адрес локального изображения в файловой системе, которое нужно разместить на экране блокировки.|
 |bluetoothAllowedServices|Коллекция String|Укажите список разрешенных служб и профилей Bluetooth в шестнадцатеричном формате.|
@@ -143,7 +143,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |privacyAutoAcceptPairingAndConsentPrompts|Boolean|Указывает, следует ли запретить автоматическое принятие примечаний о связывании и конфиденциальности при запуске приложений.|
 |privacyBlockInputPersonalization|Boolean|Указывает, следует ли запретить использовать облачные службы распознавания речи для приложений "Кортана", "Диктофон" или Store.|
 |startBlockUnpinningAppsFromTaskbar|Boolean|Указывает, следует ли запретить пользователю откреплять приложения с панели задач.|
-|startMenuAppListVisibility|[WindowsStartMenuAppListVisibilityType](../resources/intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md)|Эта политика позволяет свернуть список приложений, полностью удалить этот список или отключить соответствующий переключатель в приложении "Параметры". Возможные значения: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
+|startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md)|Эта политика позволяет свернуть список приложений, полностью удалить этот список или отключить соответствующий переключатель в приложении "Параметры". Возможные значения: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
 |startMenuHideChangeAccountSettings|Boolean|Эта политика позволяет скрыть параметр для смены учетной записи на плитке пользователя в меню "Пуск".|
 |startMenuHideFrequentlyUsedApps|Boolean|Эта политика позволяет скрыть наиболее часто используемые приложения в меню "Пуск" и отключить соответствующий переключатель в приложении "Параметры".|
 |startMenuHideHibernate|Boolean|Эта политика позволяет скрыть параметр кнопки питания для перехода в режим гибернации в меню "Пуск".|
@@ -206,9 +206,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |deviceManagementBlockManualUnenroll|Boolean|Указывает, следует ли запретить пользователю вручную отменять регистрацию в системе управления устройствами.|
 |safeSearchFilter|[safeSearchFilterType](../resources/intune-deviceconfig-safesearchfiltertype.md)|Определяет необходимый уровень фильтрации для безопасного поиска. Возможные значения: `userDefined`, `strict`, `moderate`.|
 |edgeBlockPopups|Boolean|Указывает, следует ли блокировать всплывающие окна.|
-|edgeBlockSearchSuggestions|Boolean|Указывает, следует ли блокировать пользователю использование предложений поиска в адресной панели.|
-|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Указывает, следует ли переключать трафик интрасети с Edge на Internet Explorer. Примечание: имя этого свойства вводит в заблуждение; свойство устарело, вместо этого используйте EdgeSendIntranetTrafficToInternetExplorer.|
-|edgeSendIntranetTrafficToInternetExplorer|Логический|Указывает, следует ли переключать трафик интрасети с Edge на Internet Explorer.|
+|edgeBlockSearchSuggestions|Boolean|Указывает, следует ли запретить пользователю использовать предложения поиска в адресной строке.|
+|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Указывает, следует ли переключать трафик интрасети с Edge на Internet Explorer. Примечание. Имя этого свойства вводит в заблуждение; Свойство устарело. Вместо этого используйте EdgeSendIntranetTrafficToInternetExplorer.|
+|edgeSendIntranetTrafficToInternetExplorer|Логическое|Указывает, следует ли переключать трафик интрасети с Edge на Internet Explorer.|
 |edgeRequireSmartScreen|Boolean|Указывает, обязательно ли использовать фильтр Smart Screen.|
 |edgeEnterpriseModeSiteListLocation|String|Указывает расположение списка сайтов, запускаемых в корпоративном режиме. Это может быть локальный файл, локальная сеть или http-адрес.|
 |edgeFirstRunUrl|String|URL-адрес, открываемый в браузере Edge при первом запуске.|
@@ -257,7 +257,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |experienceBlockErrorDialogWhenNoSIM|Boolean|Указывает, следует ли запретить отображение диалогового окна ошибки, если SIM-карта не обнаружена.|
 |experienceBlockTaskSwitcher|Boolean|Указывает, следует ли заблокировать переключение задач на устройстве.|
 |logonBlockFastUserSwitching|Boolean|Отключает возможность быстрого переключения между учетными записями пользователей, вошедших в систему, без выхода из системы.|
-|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Логический|Требуется ли подключение устройства к сети.|
+|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Логическое|Указывает, требуется ли устройство для подключения к сети.|
 
 
 
@@ -750,6 +750,8 @@ Content-Length: 9994
   "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true
 }
 ```
+
+
 
 
 

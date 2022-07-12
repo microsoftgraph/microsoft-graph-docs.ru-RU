@@ -1,24 +1,24 @@
 ---
-title: тип ресурса androidWorkProfileCustomConfiguration
-description: Настраиваемая конфигурация профиля работы Android
+title: Тип ресурса androidWorkProfileCustomConfiguration
+description: Настраиваемая конфигурация рабочего профиля Android
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff633e252d430c292a1940bcf9295148c6acf576
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c1a94c3cca40e53ffa80cebcf25fb5816f71822e
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450884"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731612"
 ---
-# <a name="androidworkprofilecustomconfiguration-resource-type"></a>тип ресурса androidWorkProfileCustomConfiguration
+# <a name="androidworkprofilecustomconfiguration-resource-type"></a>Тип ресурса androidWorkProfileCustomConfiguration
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Настраиваемая конфигурация профиля работы Android
+Настраиваемая конфигурация рабочего профиля Android
 
 
 Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).
@@ -26,11 +26,11 @@ ms.locfileid: "60450884"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список androidWorkProfileCustomConfigurations](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-list.md)|[коллекция androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Список свойств и связей [объектов AndroidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|
-|[Get AndroidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-get.md)|[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Чтение свойств и связей [объекта AndroidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|
-|[Создание androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-create.md)|[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Создайте новый [объект AndroidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|
-|[Удаление androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-delete.md)|Отсутствует|Удаляет [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md).|
-|[Обновление androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-update.md)|[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Обновление свойств объекта [AndroidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|
+|[Перечисление объектов androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-list.md)|[Коллекция androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Список свойств и связей объектов [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) .|
+|[Получение объекта androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-get.md)|[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Чтение свойств и связей объекта [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) .|
+|[Создание объекта androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-create.md)|[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Создайте объект [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) .|
+|[Удаление объекта androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-delete.md)|Нет|Удаляет объект [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md).|
+|[Обновление объекта androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-update.md)|[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Обновление свойств объекта [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -48,7 +48,7 @@ ms.locfileid: "60450884"
 |:---|:---|:---|
 |assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройства пользователем. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройства по пользователю. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств для пользователей. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Сводка данных о состоянии настройки конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -80,6 +80,8 @@ ms.locfileid: "60450884"
   ]
 }
 ```
+
+
 
 
 

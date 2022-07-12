@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7d51f822afbc20065afd46e0b0590085fbfff91c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 136443a225ef7ae177e1d738d4ae0bf93fa02178
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60444643"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732928"
 ---
 # <a name="update-iosupdateconfiguration"></a>Обновление объекта iosUpdateConfiguration
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -59,7 +59,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |activeHoursStart|TimeOfDay|Начало периода активности (период активности — временной промежуток, в течение которого не должны устанавливаться обновления).|
 |activeHoursEnd|TimeOfDay|Завершение периода активности (период активности — временной промежуток, в течение которого не должны устанавливаться обновления).|
-|scheduledInstallDays|[коллекция dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|Дни недели, для которых настраивается период активности. Эта коллекция может содержать не более 7 элементов. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|scheduledInstallDays|[Коллекция dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|Дни недели, для которых настраивается период активности. Эта коллекция может содержать не более 7 элементов. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |utcTimeOffsetInMinutes|Int32|Сдвиг по времени от UTC (в минутах).|
 
 
@@ -113,6 +113,8 @@ Content-Length: 497
   "utcTimeOffsetInMinutes": 6
 }
 ```
+
+
 
 
 

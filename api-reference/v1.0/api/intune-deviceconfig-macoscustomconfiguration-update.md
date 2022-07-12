@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 26116953f511f5c5dd9b61c710328e1c7d09e38e
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 1a49df5fe61ac24b9b5787803418ac5bf141c5ea
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449701"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723239"
 ---
 # <a name="update-macoscustomconfiguration"></a>Обновление объекта macOSCustomConfiguration
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -106,6 +106,8 @@ Content-Length: 453
   "payload": "cGF5bG9hZA=="
 }
 ```
+
+
 
 
 

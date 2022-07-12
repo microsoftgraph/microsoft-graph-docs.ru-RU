@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 26d29ab06d3c867c1860402016fa5bfbbcd699bd
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 3b1e606753fadbab7c661efb86d4e1c3743d5880
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454870"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66737037"
 ---
 # <a name="get-windowsuniversalappx"></a>Get windowsUniversalAppX
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -108,6 +108,8 @@ Content-Length: 1450
   }
 }
 ```
+
+
 
 
 

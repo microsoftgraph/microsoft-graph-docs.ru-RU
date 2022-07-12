@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2821460bb2d60a213cd824d0d1e0abd53e182e0f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 206947a6b1394b70d9de4855500054874d785025
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457605"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730121"
 ---
 # <a name="windowsdefenderscan-action"></a>Действие windowsDefenderScan
 
@@ -25,9 +25,9 @@ ms.locfileid: "60457605"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.PrivilegedOperations.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Для приложений|DeviceManagementManagedDevices.PrivilegedOperations.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -80,6 +80,8 @@ Content-length: 25
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

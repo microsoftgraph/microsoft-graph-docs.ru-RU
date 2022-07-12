@@ -1,31 +1,31 @@
 ---
-title: тип ресурса timeStamp
-description: Сведения о дате и времени для точки времени.
+title: Тип ресурса timeStamp
+description: Сведения о дате и времени для точки во времени.
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: sites-and-lists
 author: JeremyKelley
-ms.openlocfilehash: ff93ab9a55a695818ec21f60afb039c6542efd0a
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: fb82ddf1e69b8ea06cb425ed5199d1f6c5862b52
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695799"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66737107"
 ---
-# <a name="timestamp-resource-type"></a>тип ресурса timeStamp
+# <a name="timestamp-resource-type"></a>Тип ресурса timeStamp
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сведения о дате и времени для точки времени.
+Сведения о дате и времени для точки во времени.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|date|Date|Дата части timestamp.|
-|time|TimeOfDay|Временная часть времени.|
-|timeZone|String|Часть часового пояса timestamp, которая является одним из 24 продоальных областей в мире.|
+|date|Date|Часть даты метки времени.|
+|time|TimeOfDay|Часть времени метки времени.|
+|timeZone|String|Часть часового пояса метки времени, которая является одной из 24 длинных областей в мире.|
 
 ## <a name="json-representation"></a>Представление JSON
 
