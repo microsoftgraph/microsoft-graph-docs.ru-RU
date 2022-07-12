@@ -5,12 +5,12 @@ author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 7e9c655cf91a87790d9e5f1327eebaca0a60cb7e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b1990619b734889df50a6333c4a3ce523d8e5a22
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098953"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735483"
 ---
 # <a name="manage-apps-using-microsoft-intune"></a>Управление приложениями с помощью Microsoft Intune
 
@@ -27,7 +27,6 @@ ms.locfileid: "59098953"
 - [Управление приложениями для устройств](intune-apps-deviceappmanagement.md)
 - [Управление приложениями для устройств](intune-apps-deviceappmanagement.md)
 - [Состояние установки устройства](intune-books-deviceinstallstate.md)
-- [Управление устройствами](intune-androidforwork-devicemanagement.md)
 - [Сводка по установке электронной книги](intune-books-ebookinstallsummary.md)
 - [Сведения о шифровании файлов](intune-apps-fileencryptioninfo.md)
 - [Состояние установки](intune-books-installstate.md)
@@ -78,25 +77,25 @@ ms.locfileid: "59098953"
 - [Веб-приложение](intune-apps-webapp.md)
 - [Бизнес-приложение Win32](intune-apps-win32lobapp.md)
 - [Настройки назначения бизнес-приложения Win32](intune-apps-win32lobappassignmentsettings.md)
-- [Приоритет оптимизации доставки приложений Win32 LOB](intune-apps-win32lobappdeliveryoptimizationpriority.md)
-- [Тип операции файловой системы приложения Win32 LOB](intune-apps-win32lobappfilesystemoperationtype.md)
-- [Правило файловой системы приложения Win32 LOB](intune-apps-win32lobappfilesystemrule.md)
+- [Приоритет оптимизации доставки бизнес-приложения Win32](intune-apps-win32lobappdeliveryoptimizationpriority.md)
+- [Тип операции файловой системы бизнес-приложения Win32](intune-apps-win32lobappfilesystemoperationtype.md)
+- [Правило файловой системы бизнес-приложения Win32](intune-apps-win32lobappfilesystemrule.md)
 - [Интерфейс установки бизнес-приложения Win32](intune-apps-win32lobappinstallexperience.md)
 - [Информация msi бизнес-приложения Win32](intune-apps-win32lobappmsiinformation.md)
 - [Тип пакета msi бизнес-приложения Win32](intune-apps-win32lobappmsipackagetype.md)
 - [Уведомление бизнес-приложения Win32](intune-apps-win32lobappnotification.md)
-- [Правило скрипта power shell приложения Win32 LOB](intune-apps-win32lobapppowershellscriptrule.md)
-- [Тип правила работы скрипта power shell приложения Win32 LOB](intune-apps-win32lobapppowershellscriptruleoperationtype.md)
-- [Правило кода продукта приложения Win32 LOB](intune-apps-win32lobappproductcoderule.md)
-- [Правило реестра приложений Win32 LOB](intune-apps-win32lobappregistryrule.md)
-- [Тип действия правила реестра приложений Win32 LOB](intune-apps-win32lobappregistryruleoperationtype.md)
-- [Поведение перезапуска приложения Win32 LOB](intune-apps-win32lobapprestartbehavior.md)
-- [Параметры перезапуска приложения Win32 LOB](intune-apps-win32lobapprestartsettings.md)
+- [Правило скрипта Power Shell бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptrule.md)
+- [Тип операции правила скрипта power shell бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptruleoperationtype.md)
+- [Правило кода продукта бизнес-приложения Win32](intune-apps-win32lobappproductcoderule.md)
+- [Правило реестра бизнес-приложений Win32](intune-apps-win32lobappregistryrule.md)
+- [Тип операции правила реестра бизнес-приложений Win32](intune-apps-win32lobappregistryruleoperationtype.md)
+- [Поведение перезапуска бизнес-приложения Win32](intune-apps-win32lobapprestartbehavior.md)
+- [Параметры перезапуска бизнес-приложения Win32](intune-apps-win32lobapprestartsettings.md)
 - [Код возврата бизнес-приложения Win32](intune-apps-win32lobappreturncode.md)
 - [Тип кода возврата бизнес-приложения Win32](intune-apps-win32lobappreturncodetype.md)
-- [Правило приложения Win32 LOB](intune-apps-win32lobapprule.md)
-- [Оператор правил приложения Win32 LOB](intune-apps-win32lobappruleoperator.md)
-- [Тип правила приложения Win32 LOB](intune-apps-win32lobappruletype.md)
+- [Правило бизнес-приложения Win32](intune-apps-win32lobapprule.md)
+- [Оператор правила бизнес-приложения Win32](intune-apps-win32lobappruleoperator.md)
+- [Тип правила бизнес-приложения Win32](intune-apps-win32lobappruletype.md)
 - [Архитектура Windows](intune-apps-windowsarchitecture.md)
 - [Тип устройства Windows](intune-apps-windowsdevicetype.md)
 - [Минимальная версия операционной системы Windows](intune-apps-windowsminimumoperatingsystem.md)

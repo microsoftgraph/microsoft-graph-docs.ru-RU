@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0cfe9f8b9bcb13174076444e63e04dc4dfb5fccb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1da24fc3c51ded5d4c970bdf528607760ed9ec6c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056769"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736358"
 ---
 # <a name="chart-image"></a>Chart: Image
 
@@ -41,7 +41,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/ima
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="path-parameters"></a>Параметры пути
@@ -51,7 +51,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/ima
 |:---------------|:--------|:----------|
 |height|Int32|Нужная высота создаваемого изображения. Необязательное.|
 |width|Int32|Нужная ширина создаваемого изображения. Необязательное.|
-|fittingMode|string|Метод, используемый для масштабирования диаграммы до указанных размеров (если заданы как высота, так и ширина)."  Допустимые значения: `Fit`, `FitAndCenter`, `Fill`.|
+|fittingMode|string|Метод, используемый для масштабирования диаграммы до указанных измерений (если заданы высота и ширина)."  Допустимые значения: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## <a name="response"></a>Отклик
 
@@ -85,11 +85,11 @@ Content-type: application/json;odata.metadata=minimal;odata.streaming=true
 
 В случае поведения по умолчанию используйте `Image(width=0,height=0,fittingMode='fit')`. Ниже приведен пример изображения диаграммы, возвращаемого с параметрами по умолчанию.
 
-![Изображение диаграммы Excel с высотой и шириной по умолчанию.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
+![Снимок экрана: круговая диаграмма, отображаемая с использованием параметров по умолчанию и заданного режима подгонка.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
 
 Если вы хотите настроить отображение этого изображения, укажите высоту, ширину и режим подгонки. А вот как выглядит то же самое изображение диаграммы, если получить его с этими параметрами: `Image(width=500,height=500,fittingMode='Fill')`.
 
-![Изображение диаграммы Excel с высотой и шириной по умолчанию.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-fill.png)
+![Снимок экрана: круговая диаграмма с заданной шириной и высотой 500 и режимом подгонка.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-fill.png)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,16 +1,16 @@
 ---
 title: Управление устройствами в Microsoft Intune
-description: Ресурсы управления устройствами в Microsoft Intune
+description: Ресурсы по управлению устройствами в Microsoft Intune
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 8e3560bb63ca156029cd238a03479841ae2ccef4
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c8647c69e3ecc37fd588a7e11e3c469ae5085016
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455860"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733425"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -20,10 +20,6 @@ ms.locfileid: "60455860"
 
 - [Состояние действия](intune-devices-actionstate.md)
 - [Сертификат push-уведомлений Apple](intune-devices-applepushnotificationcertificate.md)
-- [Субъект аудита](intune-auditing-auditactor.md)
-- [Событие аудита](intune-auditing-auditevent.md)
-- [Свойство аудита](intune-auditing-auditproperty.md)
-- [Ресурс аудита](intune-auditing-auditresource.md)
 - [Состояние соответствия требованиям](intune-devices-compliancestate.md)
 - [Функции с поддержкой клиента Configuration Manager](intune-devices-configurationmanagerclientenabledfeatures.md)
 - [Удаление пользователя из результата действия над общим устройством Apple](intune-devices-deleteuserfromsharedappledeviceactionresult.md)
@@ -34,10 +30,8 @@ ms.locfileid: "60455860"
 - [Сводка по состоянию доступа к Exchange для устройств](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Геолокация устройств](intune-devices-devicegeolocation.md)
 - [Состояние подтверждения работоспособности устройства](intune-devices-devicehealthattestationstate.md)
-- [Управление устройствами](intune-auditing-devicemanagement.md)
-- [Управление устройствами](intune-auditing-devicemanagement.md)
-- [Управление устройствами](intune-auditing-devicemanagement.md)
-- [Управление устройствами](intune-auditing-devicemanagement.md)
+- [Управление устройствами](intune-devices-devicemanagement.md)
+- [Управление устройствами](intune-devices-devicemanagement.md)
 - [Состояние доступа к Exchange для управления устройствами](intune-devices-devicemanagementexchangeaccessstate.md)
 - [Причина состояния доступа к Exchange для управления устройствами](intune-devices-devicemanagementexchangeaccessstatereason.md)
 - [Состояние подписки на управление устройствами](intune-devices-devicemanagementsubscriptionstate.md)
@@ -52,12 +46,8 @@ ms.locfileid: "60455860"
 - [Тип агента управления](intune-devices-managementagenttype.md)
 - [Шаблон сообщения уведомления](intune-notification-notificationmessagetemplate.md)
 - [Параметры фирменной символики для шаблона уведомления](intune-notification-notificationtemplatebrandingoptions.md)
-- [Тип платформы](intune-esim-platformtype.md)
-- [Состояние подключения удаленного помощника](intune-remoteassistance-remoteassistanceonboardingstatus.md)
-- [Партнерская служба удаленного помощника](intune-remoteassistance-remoteassistancepartner.md)
 - [Результат действия "Удаленная блокировка"](intune-devices-remotelockactionresult.md)
 - [Результат действия "Сброс секретного кода"](intune-devices-resetpasscodeactionresult.md)
-- [Tuple_2 выполнения type_ i collection_1 операции](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
 - [Параметр действия "Обновление учетной записи устройства с Windows"](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [Пользователь](intune-devices-user.md)
 - [Результат действия "Проверка с помощью Защитника Windows"](intune-devices-windowsdefenderscanactionresult.md)

@@ -1,18 +1,18 @@
 ---
-title: тип enum runAsAccountType
+title: Тип перечисления runAsAccountType
 description: Указывает тип контекста выполнения, в котором выполняется приложение.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1c3d3ad8f16f34c6bbe282d3b28aea537cc1ea4d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 37eda415508376a2371c381743f92566d949a083
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60434838"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735140"
 ---
-# <a name="runasaccounttype-enum-type"></a>тип enum runAsAccountType
+# <a name="runasaccounttype-enum-type"></a>Тип перечисления runAsAccountType
 
 Пространство имен: microsoft.graph
 
@@ -23,8 +23,10 @@ ms.locfileid: "60434838"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|system|0|Контекст системы|
-|пользователь|1|Контекст пользователя|
+|system|0|Системный контекст|
+|user|1|Контекст пользователя|
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Удаление complianceManagementPartner
-description: Удаляет complianceManagementPartner.
+description: Удаляет объект complianceManagementPartner.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c394ff3b52388723006764f3f04bba7c51c8881a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 96d1b0f1a4aac2ed9f5c6398b73bea786baefacb
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456356"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732277"
 ---
 # <a name="delete-compliancemanagementpartner"></a>Удаление complianceManagementPartner
 
@@ -18,7 +18,7 @@ ms.locfileid: "60456356"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md).
+Удаляет объект [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,7 +41,7 @@ DELETE /deviceManagement/complianceManagementPartners/{complianceManagementPartn
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/complianceManagementPar
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

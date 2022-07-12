@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 204b16034e2343d5490333d00465f6b46d5ee824
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 9a0dd70fd446d190846fdc2fb0b20029b045bf38
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457591"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733992"
 ---
 # <a name="get-devicecategory"></a>Получение объекта deviceCategory
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceCategories/{deviceCategoryId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -77,6 +77,8 @@ Content-Length: 211
   }
 }
 ```
+
+
 
 
 

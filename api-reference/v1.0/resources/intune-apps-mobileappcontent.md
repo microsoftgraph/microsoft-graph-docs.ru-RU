@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 217291d3bd16b0de5112754e9af03fef2a4d0069
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 5c0941ebdd3e98284f3879f0ad3571fef8e2d6c8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454609"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735469"
 ---
 # <a name="mobileappcontent-resource-type"></a>Тип ресурса mobileAppContent
 
@@ -53,6 +53,8 @@ ms.locfileid: "60454609"
   "id": "String (identifier)"
 }
 ```
+
+
 
 
 

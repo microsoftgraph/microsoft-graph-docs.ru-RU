@@ -1,18 +1,18 @@
 ---
-title: getConfigurationSettingNonComplianceReport action
+title: Действие getConfigurationSettingNonComplianceReport
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c85d95a47c73394903a08fa6968c6483275496dd
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 0bf6af43fe4abb7f6b333b83adc84052e5e0f7bd
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457423"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735161"
 ---
-# <a name="getconfigurationsettingnoncompliancereport-action"></a>getConfigurationSettingNonComplianceReport action
+# <a name="getconfigurationsettingnoncompliancereport-action"></a>Действие getConfigurationSettingNonComplianceReport
 
 Пространство имен: microsoft.graph
 
@@ -41,7 +41,7 @@ POST /deviceManagement/reports/getConfigurationSettingNonComplianceReport
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,17 +54,17 @@ POST /deviceManagement/reports/getConfigurationSettingNonComplianceReport
 |name|String|Пока не задокументировано.|
 |select|Коллекция строк|Н/Д|
 |search|String|Пока не задокументировано.|
-|groupBy|Коллекция строк|Н/Д|
-|orderBy|Коллекция строк|Н/Д|
+|Groupby|Коллекция строк|Н/Д|
+|Orderby|Коллекция строк|Н/Д|
 |skip|Int32|Пока не задокументировано.|
 |top|Int32|Пока не задокументировано.|
-|sessionId|String|Пока не задокументировано.|
+|Sessionid|String|Пока не задокументировано.|
 |filter|String|Пока не задокументировано.|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успешного действия это действие возвращает код `200 OK` отклика и поток в тексте ответа.
+В случае успешного выполнения это действие возвращает код `200 OK` отклика и поток в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -106,6 +106,8 @@ Content-Length: 115
   "value": "Z2V0Q29uZmlndXJhdGlvblNldHRpbmdOb25Db21wbGlhbmNlUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDIxMDczMDYzMzQ="
 }
 ```
+
+
 
 
 

@@ -1,35 +1,37 @@
 ---
-title: тип enum ratingGermanyTelevisionType
-description: Метки оценки телеконтента в Германии
+title: Тип перечисления ratingGermanyTelevisionType
+description: Метки оценки содержимого телевизора в Германии
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5999ccd119b4290e4d254b7e198dab717590bea9
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 792baf7e4b85cd07b99f9bc6638e5b26a68faa48
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450217"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735413"
 ---
-# <a name="ratinggermanytelevisiontype-enum-type"></a>тип enum ratingGermanyTelevisionType
+# <a name="ratinggermanytelevisiontype-enum-type"></a>Тип перечисления ratingGermanyTelevisionType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метки оценки телеконтента в Германии
+Метки оценки содержимого телевизора в Германии
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|allAllowed|0|Значение по умолчанию, разрешить все содержимого тв-шоу|
-|allBlocked|1|Не разрешайте контент тв-шоу|
-|общие|2|Ab 0 Jahren без ограничений по возрасту|
-|agesAbove6|3|Ab 6 Jahren, 6 лет и старше|
-|agesAbove12|4 |Ab 12 Jahren, 12 лет и старше|
-|agesAbove16|5|Ab 16 Jahren, 16 лет и старше|
-|взрослые|6 |Ab 18 Jahren, только для взрослых|
+|allAllowed|0|Значение по умолчанию, разрешать все содержимое тв-шоу|
+|allBlocked|1|Не разрешать содержимое тв-шоу|
+|общие|2|Аб 0 Хирен (Ab 0 Оверен) без ограничений по возрасту|
+|agesAbove6|3|Аб 6 Хирен (Ab 6), возраст 6 лет и старше|
+|agesAbove12|4|Аб 12 Хирен (Ab 12 Оверен), возраст 12 лет и старше|
+|agesAbove16|5|Аб 16 Хирен (Ab 16 Оверен), возраст 16 лет и старше|
+|Взрослых|6 |Ab 18 Овеен( только взрослые)|
+
+
 
 
 

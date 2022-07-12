@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1c6278fefe718f865ddeb03569ad6ec6c2e7485c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 0d1b14e07aa1a4d7b7aebf6ce336d93dea785c5d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453354"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731654"
 ---
 # <a name="create-devicecategory"></a>Создание объекта deviceCategory
 
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceCategories
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -90,6 +90,8 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
+
+
 
 
 

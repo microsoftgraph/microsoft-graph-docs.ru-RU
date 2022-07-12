@@ -1,24 +1,24 @@
 ---
-title: Список deviceManagementExportJobs
+title: Перечисление объектов deviceManagementExportJobs
 description: Список свойств и связей объектов deviceManagementExportJob.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8741c2ac52a64318b698836e68cad685efda5558
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c40a1cfa94fe70fad7c77a8d98e99b78ff19a51f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447594"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735770"
 ---
-# <a name="list-devicemanagementexportjobs"></a>Список deviceManagementExportJobs
+# <a name="list-devicemanagementexportjobs"></a>Перечисление объектов deviceManagementExportJobs
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [deviceManagementExportJob.](../resources/intune-reporting-devicemanagementexportjob.md)
+Список свойств и связей объектов [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,14 +41,14 @@ GET /deviceManagement/reports/exportJobs
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -86,6 +86,8 @@ Content-Length: 593
   ]
 }
 ```
+
+
 
 
 

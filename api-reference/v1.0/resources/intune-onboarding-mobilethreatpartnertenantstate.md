@@ -1,18 +1,18 @@
 ---
-title: тип enum mobileThreatPartnerTenantState
+title: Тип перечисления mobileThreatPartnerTenantState
 description: Состояние партнера этого клиента.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ece2cc46e98d6ff3bf232adf99114cff1bdd31d4
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a0bb2f4f1ede224eb16e89a29b9ba2800a919fd8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447251"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729575"
 ---
-# <a name="mobilethreatpartnertenantstate-enum-type"></a>тип enum mobileThreatPartnerTenantState
+# <a name="mobilethreatpartnertenantstate-enum-type"></a>Тип перечисления mobileThreatPartnerTenantState
 
 Пространство имен: microsoft.graph
 
@@ -23,10 +23,12 @@ ms.locfileid: "60447251"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|недоступно|0|Партнер недоступен.|
+|Недоступен|0|Партнер недоступен.|
 |доступен|1|Партнер доступен.|
 |включено|2|Партнер включен.|
-|unresponsive|3|Партнер не подавляю.|
+|Отвечает|3|Партнер не отвечает.|
+
+
 
 
 

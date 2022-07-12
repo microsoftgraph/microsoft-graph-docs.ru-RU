@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e281a233b000adc189c071148959e058f9cfa5fa
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: aa8288989215336222bc0f6e8f3fe1c1ccc8b3f8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451894"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736435"
 ---
 # <a name="mediacontentratingireland-resource-type"></a>Тип ресурса mediaContentRatingIreland
 
@@ -24,7 +24,7 @@ ms.locfileid: "60451894"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |movieRating|[ratingIrelandMoviesType](../resources/intune-deviceconfig-ratingirelandmoviestype.md)|Рейтинг фильмов, выбранный для Ирландии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove12`, `agesAbove15`, `agesAbove16`, `adults`.|
-|tvRating|[ratingIrelandTelevisionType](../resources/intune-deviceconfig-ratingirelandtelevisiontype.md)|Телевизионный рейтинг, выбранный для Ирландии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `children`, `youngAdults`, `parentalSupervision`, `mature`.|
+|tvRating|[RatingIrelandTelevisionType](../resources/intune-deviceconfig-ratingirelandtelevisiontype.md)|Рейтинг телевизора, выбранный для Ирландии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `children`, `youngAdults`, `parentalSupervision`, `mature`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -43,6 +43,8 @@ ms.locfileid: "60451894"
   "tvRating": "String"
 }
 ```
+
+
 
 
 

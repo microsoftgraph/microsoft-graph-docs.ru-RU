@@ -1,36 +1,38 @@
 ---
-title: тип enum androidWorkProfileRequiredPasswordType
-description: Рабочий профиль Android требуется тип пароля.
+title: Тип перечисления androidWorkProfileRequiredPasswordType
+description: Требуемый тип пароля для рабочего профиля Android.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 094babbe76ff6d395ee5ece0125cd89da15826ce
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 08c878b764e658c8272054b71262ae5607e2585f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450238"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736484"
 ---
-# <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>тип enum androidWorkProfileRequiredPasswordType
+# <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>Тип перечисления androidWorkProfileRequiredPasswordType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Рабочий профиль Android требуется тип пароля.
+Требуемый тип пароля для рабочего профиля Android.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Значение устройства по умолчанию, без намерения.|
-|lowSecurityBiometric|1|Требуется пароль с низкой безопасностью на основе биометрии.|
-|Обязательный|2|Обязательно.|
-|atLeastNumeric|3|Требуется по крайней мере числовая пароль.|
-|numericComplex|4 |Требуется числовый сложный пароль.|
+|lowSecurityBiometric|1|Требуется пароль на основе биометрических данных с низким уровнем безопасности.|
+|Обязательный|2|Обязательный.|
+|atLeastNumeric|3|Требуется по крайней мере числовой пароль.|
+|numericComplex|4|Требуется числовой сложный пароль.|
 |atLeastAlphabetic|5|Требуется по крайней мере алфавитный пароль.|
-|atLeastAlphanumeric|6 |Требуется, по крайней мере, альфа-числовая пароль.|
-|alphanumericWithSymbols|7 |По крайней мере, альфа-число с паролем символов.|
+|atLeastAlphanumeric|6 |Требуется по крайней мере буквенно-цифровой пароль.|
+|alphanumericWithSymbols|7 |По крайней мере буквенно-цифровой с паролем символов.|
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3333fa0db89bc7cf59433c0b496a6eeb99baa840
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f1218aa281e95565a04abfc4273a663daea8d016
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450512"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734510"
 ---
 # <a name="update-devicemanagement"></a>Обновление объекта deviceManagement
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceManagement
 |:---|:---|:---|
 |id|String|Уникальный идентификатор.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
-|intuneAccountId|Guid|Id учетной записи Intune для данного клиента|
+|intuneAccountId|Guid|Intune учетной записи для данного клиента|
 
 
 
@@ -100,6 +100,8 @@ Content-Length: 372
   "intuneAccountId": "cf1549a1-49a1-cf15-a149-15cfa14915cf"
 }
 ```
+
+
 
 
 

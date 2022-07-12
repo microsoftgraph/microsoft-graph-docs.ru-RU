@@ -1,44 +1,46 @@
 ---
-title: тип enum deviceManagementExchangeAccessStateReason
-description: Причина Exchange доступа к состоянию устройства.
+title: Тип перечисления deviceManagementExchangeAccessStateReason
+description: Причина состояния доступа к Обмену устройствами.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 87cdf39172f63bf93c0d48850485b1443b9c99bb
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f6cc10fd962a43ed87179299f22e48d84c7c13ba
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453837"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736071"
 ---
-# <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>тип enum deviceManagementExchangeAccessStateReason
+# <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>Тип перечисления deviceManagementExchangeAccessStateReason
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Причина Exchange доступа к состоянию устройства.
+Причина состояния доступа к Обмену устройствами.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Причина состояния доступа, обнаруженная в Exchange|
-|unknown|1|Причина состояния неизвестного доступа|
-|exchangeGlobalRule|2|Состояние доступа, Exchange глобальное правило|
-|exchangeIndividualRule|3|Состояние доступа, определяемая Exchange индивидуальным правилом|
-|exchangeDeviceRule|4 |Состояние доступа, определяющееся Exchange устройства|
-|exchangeUpgrade|5|Состояние доступа из-за Exchange обновления|
-|exchangeMailboxPolicy|6 |Состояние доступа, определяемого политикой Exchange почтовых ящиков|
-|другие|7 |Состояние доступа, определяемая Exchange|
-|совместимый|8 |Состояние доступа, предоставленная проблемой соответствия требованиям|
-|notCompliant|9 |Доступ к состояниям, отозванным из-за проблемы соответствия требованиям|
-|notEnrolled|10 |Доступ к состояниям, отозванным из-за проблемы управления|
+|none|0|Причина состояния доступа не обнаружена в Exchange|
+|unknown|1|Неизвестная причина состояния доступа|
+|exchangeGlobalRule|2|Состояние доступа, определяемого глобальным правилом Exchange|
+|exchangeIndividualRule|3|Состояние доступа, определяемого правилом Exchange Individual|
+|exchangeDeviceRule|4|Состояние доступа, определяемого правилом устройства Exchange|
+|ExchangeUpgrade|5|Состояние доступа из-за обновления Exchange|
+|exchangeMailboxPolicy|6 |Состояние доступа, определяемая политикой почтовых ящиков Exchange|
+|Других|7 |Состояние доступа, определяемого Exchange|
+|Совместимый|8 |Состояние доступа, предоставленное запросом на соответствие требованиям|
+|notCompliant|9 |Состояние доступа, отозванное в соответствии с запросом на соответствие|
+|notEnrolled|10|Состояние доступа, отозванное задачей управления|
 |unknownLocation|12 |Состояние доступа из-за неизвестного расположения|
-|mfaRequired|13 |Состояние доступа из-за проблемы с MFA|
-|azureADBlockDueToAccessPolicy|14 |Состояние доступа, отозвано AAD политики доступа|
-|compromisedPassword|15 |Состояние доступа отозвано с помощью скомпрометированного пароля|
-|deviceNotKnownWithManagedApp|16|Доступ к состояниям, отозванным из-за проблемы управляемого приложения|
+|mfaRequired|13|Состояние доступа из-за запроса MFA|
+|azureADBlockDueToAccessPolicy|14|Состояние доступа, отозванное политикой доступа AAD|
+|compromisedPassword|15|Состояние доступа, отозванное скомпрометированным паролем|
+|deviceNotKnownWithManagedApp|16|Состояние доступа, отозванное задачей управляемого приложения|
+
+
 
 
 

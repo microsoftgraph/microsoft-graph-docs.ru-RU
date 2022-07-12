@@ -1,18 +1,18 @@
 ---
-title: действие импорта
+title: Действие импорта
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ca0c100750b1b0568bc20cab5345fcc5c8951406
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7a5e6a68268fd4ee885766c3634ae0022975b31a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454532"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734447"
 ---
-# <a name="import-action"></a>действие импорта
+# <a name="import-action"></a>Действие импорта
 
 Пространство имен: microsoft.graph
 
@@ -41,7 +41,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentities/import
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,7 +56,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentities/import
 
 
 ## <a name="response"></a>Ответ
-В случае успеха это действие возвращает код ответа и импортируемую `200 OK` [коллекциюWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) в тексте ответа.
+В случае успешного выполнения `200 OK` это действие возвращает код отклика и импортированную [коллекциюWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -120,6 +120,8 @@ Content-Length: 773
   ]
 }
 ```
+
+
 
 
 

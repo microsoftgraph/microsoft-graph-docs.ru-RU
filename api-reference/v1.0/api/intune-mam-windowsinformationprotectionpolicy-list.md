@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d1c03756dee0e8c4ea8e3aac8dbfb6fae2e937e0
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: b292fd1eda8c3551e664e5bdb07c9e690ad4f5aa
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449049"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732760"
 ---
 # <a name="list-windowsinformationprotectionpolicies"></a>Перечисление объектов WindowsInformationProtectionPolicy
 
@@ -41,7 +41,7 @@ GET /deviceAppManagement/windowsInformationProtectionPolicies
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -207,6 +207,8 @@ Content-Length: 5048
   ]
 }
 ```
+
+
 
 
 

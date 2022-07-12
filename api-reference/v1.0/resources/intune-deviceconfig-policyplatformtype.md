@@ -1,18 +1,18 @@
 ---
-title: тип enum policyPlatformType
+title: Тип перечисления policyPlatformType
 description: Поддерживаемые типы платформ для политик.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 08f8b36284df0752303ecb20552dec8ef917ab4b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a3d0e98109a70f33980bd4bd742ff45902271f6b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447405"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735735"
 ---
-# <a name="policyplatformtype-enum-type"></a>тип enum policyPlatformType
+# <a name="policyplatformtype-enum-type"></a>Тип перечисления policyPlatformType
 
 Пространство имен: microsoft.graph
 
@@ -24,13 +24,15 @@ ms.locfileid: "60447405"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Android|0|Android.|
-|iOS|2|iOS.|
-|macOS|3|MacOS.|
-|windowsPhone81|4 |WindowsPhone 8.1.|
-|windows81AndLater|5|Windows 8.1 и более поздней|
-|windows10AndLater|6 |Windows 10 и более поздней.|
-|AndroidWorkProfile|7 |AndroidWorkProfile.|
-|все|100|Все платформы.|
+|iOS|2|Ios.|
+|macOS|3|Macos.|
+|windowsPhone81|4|WindowsPhone 8.1.|
+|windows81AndLater|5|Windows 8.1 и более поздние версии|
+|windows10AndLater|6 |Windows 10 и более поздних версий.|
+|androidWorkProfile|7 |AndroidWorkProfile.|
+|все|100|Все платформы|
+
+
 
 
 

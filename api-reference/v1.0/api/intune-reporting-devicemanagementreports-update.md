@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ec634b4e324ec588469f9b31de829bd525ed6b0d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 31ccf7f869b391272862fd988ca5fa45db7007a5
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60443321"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733474"
 ---
 # <a name="update-devicemanagementreports"></a>Обновление deviceManagementReports
 
@@ -18,7 +18,7 @@ ms.locfileid: "60443321"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [deviceManagementReports.](../resources/intune-reporting-devicemanagementreports.md)
+Обновление свойств объекта [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,22 +41,22 @@ PATCH /deviceManagement/reports
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для [объекта deviceManagementReports.](../resources/intune-reporting-devicemanagementreports.md)
+В тексте запроса добавьте представление объекта [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании [устройстваManagementReports.](../resources/intune-reporting-devicemanagementreports.md)
+В следующей таблице показаны свойства, необходимые при создании [объекта deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этого объекта|
+|id|String|Уникальный идентификатор для этой сущности|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и обновленный `200 OK` [объект deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и обновленный объект [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -84,6 +84,8 @@ Content-Length: 114
   "id": "d6a697d3-97d3-d6a6-d397-a6d6d397a6d6"
 }
 ```
+
+
 
 
 

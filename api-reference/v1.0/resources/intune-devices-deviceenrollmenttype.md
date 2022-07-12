@@ -1,18 +1,18 @@
 ---
-title: тип enum deviceEnrollmentType
+title: Тип перечисления deviceEnrollmentType
 description: Возможные способы добавления мобильного устройства в управление.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aa44fddf18daae371c7ed7fe0a9784bf0c0cc361
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a53c4fadbce9703e4e68b54a86cfff80e1bd3944
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455842"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735371"
 ---
-# <a name="deviceenrollmenttype-enum-type"></a>тип enum deviceEnrollmentType
+# <a name="deviceenrollmenttype-enum-type"></a>Тип перечисления deviceEnrollmentType
 
 Пространство имен: microsoft.graph
 
@@ -24,18 +24,20 @@ ms.locfileid: "60455842"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Значение по умолчанию, тип регистрации не был собран.|
-|userEnrollment|1|Регистрация по инициативе пользователя через канал BYOD.|
-|deviceEnrollmentManager|2|Регистрация пользователей с учетной записью диспетчера регистрации устройств.|
-|appleBulkWithUser|3|Массовое зачисление Apple с проблемой пользователя. (DEP, настраиваемый Apple)|
-|appleBulkWithoutUser|4 |Массовое зачисление Apple без проблем пользователя. (DEP, Apple Configurator, Mobile Config)|
-|windowsAzureADJoin|5|Windows 10 Присоединиться к Azure AD.|
-|windowsBulkUserless|6 |Windows 10 Массовая регистрация через ICD с сертификатом.|
-|windowsAutoEnrollment|7 |Windows 10 автоматической регистрации. (Добавление учетной записи работы)|
-|windowsBulkAzureDomainJoin|8 |Windows 10 Azure AD Join.|
-|windowsCoManagement|9 |Windows 10 Co-Management с помощью autoPilot или групповой политики.|
-|windowsAzureADJoinUsingDeviceAuth|10 |Windows 10 Azure AD Join с помощью auth устройства.|
+|userEnrollment|1|Регистрация, управляемая пользователем, через канал BYOD.|
+|deviceEnrollmentManager|2|Регистрация пользователей с помощью учетной записи диспетчера регистрации устройств.|
+|appleBulkWithUser|3|Массовая регистрация Apple с запросом пользователя. (DEP, Apple Configurator)|
+|appleBulkWithoutUser|4|Массовая регистрация Apple без запроса пользователя. (DEP, Apple Configurator, Mobile Config)|
+|windowsAzureADJoin|5|Windows 10 Azure AD join.|
+|windowsBulkUserless|6 |Windows 10 массовой регистрации через ICD с помощью сертификата.|
+|windowsAutoEnrollment|7 |Windows 10 автоматической регистрации. (Добавление рабочей учетной записи)|
+|windowsBulkAzureDomainJoin|8 |Windows 10 массовое Azure AD join.|
+|windowsCoManagement|9 |Windows 10 Co-Management с помощью AutoPilot или групповая политика.|
+|windowsAzureADJoinUsingDeviceAuth|10|Windows 10 Azure AD присоединение с использованием проверки подлинности устройства.|
 |appleUserEnrollment|11|Устройство, управляемое регистрацией пользователей Apple|
-|appleUserEnrollmentWithServiceAccount|12 |Устройство, управляемое регистрацией пользователей Apple с учетной записью службы|
+|appleUserEnrollmentWithServiceAccount|12 |Устройство, управляемое регистрацией пользователей Apple с помощью учетной записи службы|
+
+
 
 
 

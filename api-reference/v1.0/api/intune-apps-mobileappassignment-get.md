@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b6400f43f3f2917d99e67361fc70732bcdbe553
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: d6992624c1471956cb5b68ca51bf018b81d38b49
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446170"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731864"
 ---
 # <a name="get-mobileappassignment"></a>Get mobileAppAssignment
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignme
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 412
+Content-Length: 975
 
 {
   "value": {
@@ -77,12 +77,27 @@ Content-Length: 412
       "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
     },
     "settings": {
-      "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-      "vpnConfigurationId": "Vpn Configuration Id value"
+      "@odata.type": "microsoft.graph.win32LobAppAssignmentSettings",
+      "notifications": "showReboot",
+      "restartSettings": {
+        "@odata.type": "microsoft.graph.win32LobAppRestartSettings",
+        "gracePeriodInMinutes": 4,
+        "countdownDisplayBeforeRestartInMinutes": 6,
+        "restartNotificationSnoozeDurationInMinutes": 10
+      },
+      "installTimeSettings": {
+        "@odata.type": "microsoft.graph.mobileAppInstallTimeSettings",
+        "useLocalTime": true,
+        "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+        "deadlineDateTime": "2017-01-01T00:00:21.0378955-08:00"
+      },
+      "deliveryOptimizationPriority": "foreground"
     }
   }
 }
 ```
+
+
 
 
 

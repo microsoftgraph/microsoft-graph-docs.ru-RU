@@ -1,18 +1,18 @@
 ---
-title: тип enum deviceManagementPartnerTenantState
+title: Тип перечисления deviceManagementPartnerTenantState
 description: Состояние партнера этого клиента.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dfc12dc4bfe9d4a16b63c838bef8bd5e3513e198
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 15b0e90e851dd25452a9472829b020588bbcd346
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447954"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736414"
 ---
-# <a name="devicemanagementpartnertenantstate-enum-type"></a>тип enum deviceManagementPartnerTenantState
+# <a name="devicemanagementpartnertenantstate-enum-type"></a>Тип перечисления deviceManagementPartnerTenantState
 
 Пространство имен: microsoft.graph
 
@@ -24,11 +24,13 @@ ms.locfileid: "60447954"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Состояние партнера неизвестно.|
-|недоступно|1|Партнер недоступен.|
+|Недоступен|1|Партнер недоступен.|
 |включено|2|Партнер включен.|
-|прекращено|3|Подключение партнера прекращается.|
-|отклонено|4 |Сообщения партнеров отклоняется.|
-|unresponsive|5|Партнер не подавляю.|
+|Прекращено|3|Соединение с партнером прекращается.|
+|Отклонено|4|Сообщения партнера отклоняются.|
+|Отвечает|5|Партнер не отвечает.|
+
+
 
 
 

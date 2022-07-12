@@ -1,18 +1,18 @@
 ---
-title: тип enum stateManagementSetting
+title: Тип перечисления stateManagementSetting
 description: Параметр управления состоянием.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 75e46e4a4b85d1575779b86243ec3bf8aabbfa87
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a21035ddfe545dccd69e0e83e28aa75657cb007a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452533"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735378"
 ---
-# <a name="statemanagementsetting-enum-type"></a>тип enum stateManagementSetting
+# <a name="statemanagementsetting-enum-type"></a>Тип перечисления stateManagementSetting
 
 Пространство имен: microsoft.graph
 
@@ -23,9 +23,11 @@ ms.locfileid: "60452533"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Не настроен.|
-|заблокировано|1|Заблокировано.|
-|разрешено|2|Разрешено.|
+|notConfigured|0|Не настроено.|
+|Заблокирован|1|Заблокирован.|
+|Разрешены|2|Разрешены.|
+
+
 
 
 

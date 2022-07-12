@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 11c0dc5e1162475ab5e944d50918d03cbbddcf43
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7004b3748a75d2bc680d0bd6bc7cbbb0d6c7e780
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448936"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735574"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -29,12 +29,12 @@ ms.locfileid: "60448936"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этого объекта|
+|id|String|Уникальный идентификатор для этой сущности|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|отчеты|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Отчеты singleton|
+|Отчеты|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Одноэлементные отчеты|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -50,6 +50,8 @@ ms.locfileid: "60448936"
   "id": "String (identifier)"
 }
 ```
+
+
 
 
 

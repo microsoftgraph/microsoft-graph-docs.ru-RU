@@ -1,18 +1,18 @@
 ---
-title: тип enum defenderMonitorFileActivity
+title: Тип перечисления defenderMonitorFileActivity
 description: Возможные значения для мониторинга активности файлов.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1a782a7a246648502ddc06887e22d1f5a8970094
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a20f4bb7b02ee538be488e2437e82fe6a42dbd7e
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447856"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735133"
 ---
-# <a name="defendermonitorfileactivity-enum-type"></a>тип enum defenderMonitorFileActivity
+# <a name="defendermonitorfileactivity-enum-type"></a>Тип перечисления defenderMonitorFileActivity
 
 Пространство имен: microsoft.graph
 
@@ -23,11 +23,13 @@ ms.locfileid: "60447856"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
-|отключение|1|Отключение активности файлов мониторинга.|
+|userDefined|0|Определяемое пользователем значение по умолчанию, без намерения.|
+|отключение|1|Отключите мониторинг действий с файлами.|
 |monitorAllFiles|2|Отслеживайте все файлы.|
 |monitorIncomingFilesOnly|3| Отслеживайте только входящие файлы.|
-|monitorOutgoingFilesOnly|4 |Отслеживайте только исходяющие файлы.|
+|monitorOutgoingFilesOnly|4|Отслеживайте только исходящие файлы.|
+
+
 
 
 

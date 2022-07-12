@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5ace3da4a7d715255cd0c527777fe717d0c5dc07
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 768d2e17702c862ae2bb89d8988ca7eb87f1530c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454364"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734979"
 ---
 # <a name="deviceconfigurationdevicestatus-resource-type"></a>Тип ресурса deviceConfigurationDeviceStatus
 
@@ -65,6 +65,8 @@ ms.locfileid: "60454364"
   "userPrincipalName": "String"
 }
 ```
+
+
 
 
 

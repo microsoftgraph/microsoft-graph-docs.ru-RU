@@ -1,18 +1,18 @@
 ---
-title: тип enum deviceManagementExportJobLocalizationType
+title: Тип перечисления deviceManagementExportJobLocalizationType
 description: Настройка локализации запрашиваемого задания экспорта
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bd7ea9ac34125224c1ca54270cc919807dfafb3e
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 518eca673b4a6208de2d1873d99c5c65c90ad547
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448922"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735098"
 ---
-# <a name="devicemanagementexportjoblocalizationtype-enum-type"></a>тип enum deviceManagementExportJobLocalizationType
+# <a name="devicemanagementexportjoblocalizationtype-enum-type"></a>Тип перечисления deviceManagementExportJobLocalizationType
 
 Пространство имен: microsoft.graph
 
@@ -23,8 +23,10 @@ ms.locfileid: "60448922"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|локализованоValuesAsAdditionalColumn|0|Настраивает задание экспорта, чтобы выставить локализованные значения в качестве дополнительного столбца|
-|replaceLocalizableValues|1|Настраивает задание экспорта для замены переизменяемых значений на их локализованные значения|
+|localizedValuesAsAdditionalColumn|0|Настраивает задание экспорта для предоставления локализованных значений в качестве дополнительного столбца|
+|replaceLocalizableValues|1|Настраивает задание экспорта для замены перечисляемых значений их локализованными значениями|
+
+
 
 
 

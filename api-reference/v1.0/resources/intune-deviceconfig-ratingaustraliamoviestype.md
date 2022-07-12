@@ -1,35 +1,37 @@
 ---
-title: тип enum ratingAustraliaMoviesType
-description: Метки рейтинга фильмов в Австралии
+title: Тип перечисления ratingAustraliaMoviesType
+description: Метки оценки фильмов в Австралии
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bf19040a7db3a7f3cc8aa099f9e0bb45ec9b31d2
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c14f6da49ebd08afef326e8ec51d6dfb60d95fa4
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445523"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735616"
 ---
-# <a name="ratingaustraliamoviestype-enum-type"></a>тип enum ratingAustraliaMoviesType
+# <a name="ratingaustraliamoviestype-enum-type"></a>Тип перечисления ratingAustraliaMoviesType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метки рейтинга фильмов в Австралии
+Метки оценки фильмов в Австралии
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|allAllowed|0|Значение по умолчанию, разрешить все содержимое фильмов|
-|allBlocked|1|Не разрешайте контент фильмов|
+|allAllowed|0|Значение по умолчанию: разрешить все фильмы|
+|allBlocked|1|Не разрешать содержимое фильмов|
 |общие|2|Классификация G подходит для всех|
-|parentalGuidance|3|PG рекомендует зрителям в возрасте до 15 лет рекомендации родителей или опекунов|
-|зрелый|4 |Классификация M не рекомендуется для зрителей в возрасте до 15 лет|
-|agesAbove15|5|Классификация MA15+ не подходит для зрителей в возрасте до 15 лет|
-|agesAbove18|6 |Классификация R18+ не подходит для зрителей в возрасте до 18 лет|
+|parentalGuidance|3|PG рекомендует зрителям до 15 лет с рекомендациями от родителей или опекунов|
+|Зрелые|4|Классификация M не рекомендуется для посетителей в группе до 15 лет|
+|agesAbove15|5|Классификация MA15+ не подходит для пользователей до 15 лет|
+|agesAbove18|6 |Классификация R18+ не подходит для пользователей до 18 лет|
+
+
 
 
 

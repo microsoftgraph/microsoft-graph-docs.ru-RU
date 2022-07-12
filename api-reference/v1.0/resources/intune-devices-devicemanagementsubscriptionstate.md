@@ -1,18 +1,18 @@
 ---
-title: тип enum deviceManagementSubscriptionState
+title: Тип перечисления deviceManagementSubscriptionState
 description: Состояние подписки на управление мобильными устройствами для клиента.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9306b50c9d382847997cd1d1f85256021c2b020e
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 40e8b61687dd31ae206ed821de31e7cbc614e06d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447384"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735364"
 ---
-# <a name="devicemanagementsubscriptionstate-enum-type"></a>тип enum deviceManagementSubscriptionState
+# <a name="devicemanagementsubscriptionstate-enum-type"></a>Тип перечисления deviceManagementSubscriptionState
 
 Пространство имен: microsoft.graph
 
@@ -23,13 +23,15 @@ ms.locfileid: "60447384"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|ожидание|0|Рассмотрение|
-|active|1|Активное|
+|Ожидающие|0|Pending|
+|Активных|1|Активные|
 |warning|2|Предупреждение|
-|отключено|3|Disabled|
-|deleted|4 |Deleted|
-|заблокировано|5|Заблокировано|
+|отключено|3|Отключена|
+|deleted|4|Deleted|
+|Заблокирован|5|Заблокировано|
 |lockedOut|8 |LockedOut|
+
+
 
 
 

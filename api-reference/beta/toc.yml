@@ -222,9 +222,9 @@ items:
           - name: Создание веб-приложения (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
           - name: Создание веб-приложения (React)
-            href: /graph/toolkit/get-started/use-/graph/toolkit-with-react?context=graph/api/beta
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/beta
           - name: Создание веб-приложения (Angular)
-            href: /graph/toolkit/get-started/use-/graph/toolkit-with-angular?context=graph/api/beta
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/beta
           - name: Создание веб-части SharePoint
             href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/beta
           - name: Создание вкладки Teams
@@ -626,7 +626,7 @@ items:
                 href: api/profile-get.md
               - name: Удаление профиля пользователя
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Командная работа
             items:
               - name: Приложение установлено
                 href: resources/teamsappinstallation.md
@@ -1773,7 +1773,7 @@ items:
                   - name: Список наборов для проверки
                     href: api/ediscovery-case-list-reviewsets.md
                   - name: Создание набора для проверки
-                    href: /api/ediscovery-case-post-reviewsets.md
+                    href: api/ediscovery-case-post-reviewsets.md
                   - name: Получение параметров
                     href: api/ediscovery-casesettings-get.md
                   - name: Обновление параметров
@@ -1783,11 +1783,11 @@ items:
                   - name: Перечисление исходных коллекций
                     href: api/ediscovery-case-list-sourcecollections.md
                   - name: Создание исходной коллекции
-                    href: /api/ediscovery-case-post-sourcecollections.md
+                    href: api/ediscovery-case-post-sourcecollections.md
                   - name: Перечисление тегов
-                    href: /api/ediscovery-case-list-tags.md
+                    href: api/ediscovery-case-list-tags.md
                   - name: Создание тега
-                    href: /api/ediscovery-case-post-tags.md
+                    href: api/ediscovery-case-post-tags.md
               - name: Хранитель
                 href: resources/ediscovery-custodian.md
                 items:
@@ -9785,7 +9785,7 @@ items:
                   - name: Использование ПИН-кода в Windows Hello для бизнеса
                     href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
               - name: Управление доступом на основе ролей (RBAC)
-                href: /resources/intune-rbac-conceptual.md
+                href: resources/intune-rbac-conceptual.md
                 items:
                   - name: Данные назначенной роли для управления устройствами и приложениями
                     href: resources/intune-rbac-deviceandappmanagementassignedroledetails.md

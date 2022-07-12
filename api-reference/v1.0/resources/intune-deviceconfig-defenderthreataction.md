@@ -1,35 +1,37 @@
 ---
-title: тип enum defenderThreatAction
-description: Действие защитника по умолчанию для решения обнаруженных угроз вредоносных программ.
+title: Тип перечисления defenderThreatAction
+description: Действие Защитника по умолчанию для реагирования на обнаруженные угрозы вредоносных программ.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a29ca5d0016c90d49ac6cc8febdf21b95feafef6
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 18e8fe9b691e69cf63652dae9d7e8647694f1db9
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454602"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734335"
 ---
-# <a name="defenderthreataction-enum-type"></a>тип enum defenderThreatAction
+# <a name="defenderthreataction-enum-type"></a>Тип перечисления defenderThreatAction
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Действие защитника по умолчанию для решения обнаруженных угроз вредоносных программ.
+Действие Защитника по умолчанию для реагирования на обнаруженные угрозы вредоносных программ.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|deviceDefault|0|Применение действий на основе определения обновления.|
-|очистка|1|Очистите обнаруженную угрозу.|
-|карантин|2|Карантин обнаруженной угрозы.|
-|удаление|3|Удалите обнаруженную угрозу.|
-|разрешить|4 |Разрешить обнаруженную угрозу.|
-|userDefined|5|Разрешить пользователю определять действия, которые необходимо принять с обнаруженной угрозой.|
-|block|6 |Заблокировать обнаруженную угрозу.|
+|deviceDefault|0|Применение действия на основе определения обновления.|
+|Чистый|1|Очистите обнаруженную угрозу.|
+|помещение на карантин|2|Помещение обнаруженной угрозы в карантин.|
+|Удалить|3|Удалите обнаруженную угрозу.|
+|Позволяют|4|Разрешить обнаруженную угрозу.|
+|userDefined|5|Разрешите пользователю определить действие, которое необходимо выполнить с обнаруженной угрозой.|
+|Блок|6 |Блокирование обнаруженной угрозы.|
+
+
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: тип enum defenderCloudBlockLevelType
+title: Тип перечисления defenderCloudBlockLevelType
 description: Возможные значения уровня облачного блока
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 14752803e22cdb991ecf9b7b93f3b01e49993efe
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 14b991b0b00541306a47c56f8c2914c68bff07e4
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451530"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734356"
 ---
-# <a name="defendercloudblockleveltype-enum-type"></a>тип enum defenderCloudBlockLevelType
+# <a name="defendercloudblockleveltype-enum-type"></a>Тип перечисления defenderCloudBlockLevelType
 
 Пространство имен: microsoft.graph
 
@@ -23,10 +23,12 @@ ms.locfileid: "60451530"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Значение по умолчанию, использует уровень антивирусная программа по умолчанию и обеспечивает сильное обнаружение без увеличения риска обнаружения законных файлов|
-|высокая|1|High применяет высокий уровень обнаружения.|
-|highPlus|2|High + использует высокий уровень и применяет меры защиты от добавления|
-|zeroTolerance|3|Нулевая толерантность блокирует все неизвестные исполняемые|
+|notConfigured|0|Значение по умолчанию, использует уровень блокировки антивирусная программа  по умолчанию и обеспечивает надежное обнаружение без повышения риска обнаружения допустимых файлов.|
+|Высокой|1|Высокий уровень применяет высокий уровень обнаружения.|
+|highPlus|2|High + использует высокий уровень и применяет меры защиты сложения|
+|zeroTolerance|3|Нулевое погрешность блокирует все неизвестные исполняемые файлы|
+
+
 
 
 

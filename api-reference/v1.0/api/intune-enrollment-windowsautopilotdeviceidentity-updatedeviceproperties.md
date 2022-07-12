@@ -1,24 +1,24 @@
 ---
-title: действие updateDeviceProperties
-description: Обновляет свойства на устройствах автопилота.
+title: Действие updateDeviceProperties
+description: Обновления свойств на устройствах Autopilot.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f18dd149c85b2e736e5c6f872cf881cc928cb2de
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f6eab72264845fadff254030d8cca1867e3813f0
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454856"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734888"
 ---
-# <a name="updatedeviceproperties-action"></a>действие updateDeviceProperties
+# <a name="updatedeviceproperties-action"></a>Действие updateDeviceProperties
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновляет свойства на устройствах автопилота.
+Обновления свойств на устройствах Autopilot.
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,7 +41,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |:---|:---|:---|
 |userPrincipalName|String|Пока не задокументировано.|
 |addressableUserName|String|Пока не задокументировано.|
-|groupTag|String|Пока не задокументировано.|
+|GroupTag|String|Пока не задокументировано.|
 |displayName|String|Пока не задокументировано.|
 
 
@@ -84,6 +84,8 @@ Content-length: 187
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

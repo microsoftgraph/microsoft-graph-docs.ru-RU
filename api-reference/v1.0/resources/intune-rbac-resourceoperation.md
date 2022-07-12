@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса resourceOperation
-description: Описывает ресурс resourceOperation (сущность) API microsoft Graph (REST), который поддерживает процессы intune, связанные с управлением доступом на основе ролей (RBAC).
+description: Описывает ресурс resourceOperation (сущность) microsoft API Graph (REST), который поддерживает Intune, связанные с управлением доступом на основе ролей (RBAC).
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 80a57a4fccb367813b95c31aa47c2038e5281964
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f86951e5011fa44c9d5188bb492584f2974658c1
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446718"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734650"
 ---
 # <a name="resourceoperation-resource-type"></a>Тип ресурса resourceOperation
 
@@ -18,7 +18,7 @@ ms.locfileid: "60446718"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Описывает ресурс resourceOperation (сущность) API microsoft Graph (REST), который поддерживает процессы intune, связанные с управлением доступом на основе ролей (RBAC).
+Описывает ресурс resourceOperation (сущность) microsoft API Graph (REST), который поддерживает Intune, связанные с управлением доступом на основе ролей (RBAC).
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
@@ -57,6 +57,8 @@ ms.locfileid: "60446718"
   "description": "String"
 }
 ```
+
+
 
 
 

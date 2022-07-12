@@ -1,18 +1,18 @@
 ---
-title: тип enum bitLockerEncryptionMethod
+title: Тип перечисления bitLockerEncryptionMethod
 description: Типы BitLockerEncryptionMethod
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7b744de344219f1147436df46a001874799ab961
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7138a5bd88a625145510bba5b293fbfb816bfe41
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452547"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736197"
 ---
-# <a name="bitlockerencryptionmethod-enum-type"></a>тип enum bitLockerEncryptionMethod
+# <a name="bitlockerencryptionmethod-enum-type"></a>Тип перечисления bitLockerEncryptionMethod
 
 Пространство имен: microsoft.graph
 
@@ -23,10 +23,12 @@ ms.locfileid: "60452547"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|aesCbc128|3|AES-CBC 128-bit.|
-|aesCbc256|4 |AES-CBC 256-bit.|
-|xtsAes128|6 |XTS-AES 128-bit.|
-|xtsAes256|7 |XTS-AES 256-bit.|
+|aesCbc128|3|128-разрядная версия AES-CBC.|
+|aesCbc256|4|256-разрядная версия AES-CBC.|
+|xtsAes128|6 |XTS-AES 128-разрядная версия.|
+|xtsAes256|7 |XTS-AES 256-разрядная версия.|
+
+
 
 
 

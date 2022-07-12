@@ -1,16 +1,16 @@
 ---
 title: Создание complianceManagementPartner
-description: Создание нового объекта complianceManagementPartner.
+description: Создайте объект complianceManagementPartner.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 494957284f3a8d90379d7b9492de0f48a8f43a07
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: affe221e30a8471e4707c8ea7959016cd89fbe64
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455965"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732284"
 ---
 # <a name="create-compliancemanagementpartner"></a>Создание complianceManagementPartner
 
@@ -18,7 +18,7 @@ ms.locfileid: "60455965"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового [объекта complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)
+Создайте объект [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,31 +41,31 @@ POST /deviceManagement/complianceManagementPartners
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для объекта complianceManagementPartner.
+В теле запроса добавьте представление объекта complianceManagementPartner в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании complianceManagementPartner.
+В следующей таблице показаны свойства, необходимые при создании объекта complianceManagementPartner.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Id объекта|
-|lastHeartbeatDateTime|DateTimeOffset|Timestamp последнего сердцебиения после администратора, направленного партнеру по управлению соответствием|
+|id|String|Идентификатор сущности|
+|lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пульса после подключения администратора к партнеру по управлению соответствием требованиям|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|String|Отображаемое имя партнера|
-|macOsOnboarded|Логический|Партнер, на борту для устройств Mac.|
-|AndroidOnboarded|Логический|Партнер, на борту для android-устройств.|
-|iosOnboarded|Логический|Партнер, на борту для устройств ios.|
-|macOsEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Mac через партнера.|
-|AndroidEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Android через партнера.|
-|iosEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства ios через партнера.|
+|macOsOnboarded|Логическое|Партнер, подключенный для устройств Mac.|
+|androidOnboarded|Логическое|Партнер, подключенный для устройств Android.|
+|iosOnboarded|Логическое|Партнер, подключенный для устройств ios.|
+|macOsEnrollmentAssignments|[Коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрирует устройства Mac через партнера.|
+|androidEnrollmentAssignments|[Коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрирует устройства Android через партнера.|
+|iosEnrollmentAssignments|[Коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрирует устройства ios через партнера.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа и объект `201 Created` [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -159,6 +159,8 @@ Content-Length: 1235
   ]
 }
 ```
+
+
 
 
 

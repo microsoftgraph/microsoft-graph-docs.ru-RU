@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15d218f437fca068e5e1635f97f9cf7de5be4bed
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a77d66fdde2b74d7a133971b1ba2b9569e860fe6
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449568"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735915"
 ---
 # <a name="get-manageddevicemobileappconfiguration"></a>Получение объекта managedDeviceMobileAppConfiguration
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -83,6 +83,8 @@ Content-Length: 451
   }
 }
 ```
+
+
 
 
 

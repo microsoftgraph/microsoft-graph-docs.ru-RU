@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2eebc9d8b84beff27d0f98bcb3a125d714ad0557
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: 27b05a8cc2b7079aa9151e0cd3a950ce3b704cda
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65364980"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735105"
 ---
 # <a name="get-callrecord"></a>Получение callRecord
 
@@ -20,7 +20,7 @@ ms.locfileid: "65364980"
 
 Получить идентификатор **callRecord** можно  двумя способами:
 
-* [Подпишитесь на уведомления об изменениях](/graph/api/resources/webhooks?view=graph-rest-1.0) в конечной `/communications/callRecords` точке.
+* [Подпишитесь на уведомления об изменениях](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true) в конечной `/communications/callRecords` точке.
 * Используйте свойство **callChainId** [вызова](../resources/call.md). Запись вызова доступна только после завершения соответствующего вызова.
 
 ## <a name="permissions"></a>Разрешения

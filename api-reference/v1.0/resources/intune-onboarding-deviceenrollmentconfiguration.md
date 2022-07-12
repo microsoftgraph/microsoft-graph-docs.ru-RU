@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 673179b3009a0bd3650e6a8c389cfc766988d9dc
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c1586813b5b8e83919cf2e2aef4f7c1bfa294d05
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450188"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735987"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentConfiguration
 
@@ -32,17 +32,17 @@ ms.locfileid: "60450188"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор учетной записи|
-|displayName|String|Отображающее имя конфигурации регистрации устройства|
-|description|String|Описание конфигурации регистрации устройства|
-|priority|Int32|Приоритет используется, когда пользователь существует в нескольких группах, которые назначены конфигурации регистрации. Пользователи подчиняются только конфигурации с наименьшим значением приоритета.|
-|createdDateTime|DateTimeOffset|Создано время даты в UTC конфигурации регистрации устройства|
-|lastModifiedDateTime|DateTimeOffset|Последнее измененное время даты в UTC конфигурации регистрации устройства|
+|displayName|String|Отображаемое имя конфигурации регистрации устройства|
+|description|String|Описание конфигурации регистрации устройств|
+|priority|Int32|Приоритет используется, когда пользователь существует в нескольких группах, для которых назначена конфигурация регистрации. На пользователей распространяется только конфигурация с наименьшим значением приоритета.|
+|createdDateTime|DateTimeOffset|Дата и время создания в формате UTC конфигурации регистрации устройств|
+|lastModifiedDateTime|DateTimeOffset|Дата последнего изменения в формате UTC конфигурации регистрации устройств|
 |version|Int32|Версия конфигурации регистрации устройства|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|assignments|Коллекция [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|Список групповых назначений для профиля конфигурации устройства|
+|assignments|Коллекция [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|Список назначений групп для профиля конфигурации устройства|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -64,6 +64,8 @@ ms.locfileid: "60450188"
   "version": 1024
 }
 ```
+
+
 
 
 

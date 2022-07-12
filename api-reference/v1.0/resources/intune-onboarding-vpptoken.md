@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f52e3bab37b4dd076a645d7e024762c4f80fbe4
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: dcd28c8e7975a6835d3a75a284b692f451ec096e
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455641"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729883"
 ---
 # <a name="vpptoken-resource-type"></a>Тип ресурса vppToken
 
@@ -74,6 +74,8 @@ ms.locfileid: "60455641"
   "countryOrRegion": "String"
 }
 ```
+
+
 
 
 

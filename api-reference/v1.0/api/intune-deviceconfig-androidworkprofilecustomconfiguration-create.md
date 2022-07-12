@@ -1,24 +1,24 @@
 ---
-title: Создание androidWorkProfileCustomConfiguration
-description: Создайте новый объект AndroidWorkProfileCustomConfiguration.
+title: Создание объекта androidWorkProfileCustomConfiguration
+description: Создайте объект androidWorkProfileCustomConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c1a699eef1482a1af5d9c64c2aa25308f95f88d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 79979112189c84c329878447f334439b77c5138c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454301"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732109"
 ---
-# <a name="create-androidworkprofilecustomconfiguration"></a>Создание androidWorkProfileCustomConfiguration
+# <a name="create-androidworkprofilecustomconfiguration"></a>Создание объекта androidWorkProfileCustomConfiguration
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создайте новый [объект AndroidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)
+Создайте объект [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,13 +41,13 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса предоставляем представление JSON для объекта AndroidWorkProfileCustomConfiguration.
+В теле запроса добавьте представление объекта androidWorkProfileCustomConfiguration в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании androidWorkProfileCustomConfiguration.
+В следующей таблице показаны свойства, необходимые при создании объекта androidWorkProfileCustomConfiguration.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -62,7 +62,7 @@ POST /deviceManagement/deviceConfigurations
 
 
 ## <a name="response"></a>Ответ
-В случае успеха этот метод возвращает код отклика и `201 Created` [объект AndroidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -114,6 +114,8 @@ Content-Length: 559
   ]
 }
 ```
+
+
 
 
 
