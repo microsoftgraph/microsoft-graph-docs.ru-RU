@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1dac9b6bd73e5efefc8d694c0771e68ed3ddf75a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ff3ce1ec90aba45dc041240148a44a218dcb8dac
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454539"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736897"
 ---
 # <a name="get-windows10endpointprotectionconfiguration"></a>Get windows10EndpointProtectionConfiguration
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -169,6 +169,8 @@ Content-Length: 4628
   }
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f472d3d2c11f108d5321fa001dd33db9a9dd326c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 256321746ddfe0a008cd5a8c1ca5073117d0a84e
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453866"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732753"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -41,7 +41,7 @@ GET /users
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -75,6 +75,8 @@ Content-Length: 171
   ]
 }
 ```
+
+
 
 
 

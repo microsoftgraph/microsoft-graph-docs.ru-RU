@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fc330425daffabb65d6b25bd8e66e027350fbc40
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 64fe4819fc2957c72109b872fd4bae9954b59047
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452890"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736148"
 ---
 # <a name="mediacontentratingcanada-resource-type"></a>Тип ресурса mediaContentRatingCanada
 
@@ -24,7 +24,7 @@ ms.locfileid: "60452890"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |movieRating|[ratingCanadaMoviesType](../resources/intune-deviceconfig-ratingcanadamoviestype.md)|Рейтинг фильмов, выбранный для Канады. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`, `restricted`.|
-|tvRating|[ratingCanadaTelevisionType](../resources/intune-deviceconfig-ratingcanadatelevisiontype.md)|Телевизионный рейтинг, выбранный для Канады. Возможные значения: `allAllowed`, `allBlocked`, `children`, `childrenAbove8`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`.|
+|tvRating|[RatingCanadaTelevisionType](../resources/intune-deviceconfig-ratingcanadatelevisiontype.md)|Рейтинг телевизора, выбранный для Канады. Возможные значения: `allAllowed`, `allBlocked`, `children`, `childrenAbove8`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -43,6 +43,8 @@ ms.locfileid: "60452890"
   "tvRating": "String"
 }
 ```
+
+
 
 
 

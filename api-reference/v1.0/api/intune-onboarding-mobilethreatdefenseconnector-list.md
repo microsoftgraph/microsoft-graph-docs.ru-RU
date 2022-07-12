@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4c87a5b8ed632967552c057694a218116749258
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 1faf36898ad2594dbc1a9df4695a5c75cf052d14
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449652"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731626"
 ---
 # <a name="list-mobilethreatdefenseconnectors"></a>Список объектов mobileThreatDefenseConnector
 
@@ -41,7 +41,7 @@ GET /deviceManagement/mobileThreatDefenseConnectors
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -82,6 +82,8 @@ Content-Length: 536
   ]
 }
 ```
+
+
 
 
 

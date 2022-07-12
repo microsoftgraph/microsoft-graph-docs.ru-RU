@@ -1,18 +1,18 @@
 ---
-title: getHistoricalReport action
+title: Действие getHistoricalReport
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a05cf283b3fd7509fc2558838d4ff4d0dc0a19b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: b9653e1f07afde8570eebbb3405dbe6780f06fc4
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455909"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732711"
 ---
-# <a name="gethistoricalreport-action"></a>getHistoricalReport action
+# <a name="gethistoricalreport-action"></a>Действие getHistoricalReport
 
 Пространство имен: microsoft.graph
 
@@ -41,7 +41,7 @@ POST /deviceManagement/reports/getHistoricalReport
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,8 +54,8 @@ POST /deviceManagement/reports/getHistoricalReport
 |name|String|Пока не задокументировано.|
 |select|Коллекция строк|Н/Д|
 |search|String|Пока не задокументировано.|
-|groupBy|Коллекция строк|Н/Д|
-|orderBy|Коллекция строк|Н/Д|
+|Groupby|Коллекция строк|Н/Д|
+|Orderby|Коллекция строк|Н/Д|
 |skip|Int32|Пока не задокументировано.|
 |top|Int32|Пока не задокументировано.|
 |filter|String|Пока не задокументировано.|
@@ -63,7 +63,7 @@ POST /deviceManagement/reports/getHistoricalReport
 
 
 ## <a name="response"></a>Ответ
-В случае успешного действия это действие возвращает код `200 OK` отклика и поток в тексте ответа.
+В случае успешного выполнения это действие возвращает код `200 OK` отклика и поток в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -104,6 +104,8 @@ Content-Length: 83
   "value": "Z2V0SGlzdG9yaWNhbFJlcG9ydCBJbnR1bmUgRG9jIFNhbXBsZSAxNjE5NjA4MTY0"
 }
 ```
+
+
 
 
 

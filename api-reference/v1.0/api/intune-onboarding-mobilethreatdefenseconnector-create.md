@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f9296605dd326e82c8ea5153055354a404f33d99
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 3d430f90a66915864172d33ff5b812892791abf2
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452918"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733985"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>Создание объекта mobileThreatDefenseConnector
 
@@ -41,7 +41,7 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 |:---|:---|:---|
 |id|String|Пока не задокументировано.|
 |lastHeartbeatDateTime|DateTimeOffset|Дата и время последнего подтверждения соединения, полученные от партнера по синхронизации данных|
-|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Синхронизация данных Состояние партнера для этой учетной записи. Возможные значения: `unavailable`, `available`, `enabled`, `unresponsive`.|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Состояние партнера синхронизации данных для этой учетной записи. Возможные значения: `unavailable`, `available`, `enabled`, `unresponsive`.|
 |androidEnabled|Логическое|Для ОС Android следует указать в настройках, необходимо ли использовать данные партнера по синхронизации данных в ходе оценки соответствия требованиям|
 |iosEnabled|Логическое|Для ОС IOS следует получить или задать настройки, необходимо ли использовать данные партнера по синхронизации данных в ходе оценок соответствия требованиям|
 |androidDeviceBlockedOnMissingPartnerData|Логическое|Для ОС Android следует указать, необходимо ли Intune получать данные от партнера по синхронизации данных, прежде чем отметить устройство как соответствующее требованиям|
@@ -108,6 +108,8 @@ Content-Length: 463
   "partnerUnresponsivenessThresholdInDays": 6
 }
 ```
+
+
 
 
 

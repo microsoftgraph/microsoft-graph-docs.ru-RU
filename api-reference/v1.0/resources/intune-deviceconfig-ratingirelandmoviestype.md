@@ -1,36 +1,38 @@
 ---
-title: тип enum ratingIrelandMoviesType
-description: Метки рейтинга фильмов в Ирландии
+title: Тип перечисления ratingIrelandMoviesType
+description: Метки оценки фильмов в Ирландии
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 34b4b1820db1543ac8646558f0c12d05e489da2f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 167f27b76efd1a27e6f12193b6f53b10aeca9e38
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449364"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735406"
 ---
-# <a name="ratingirelandmoviestype-enum-type"></a>тип enum ratingIrelandMoviesType
+# <a name="ratingirelandmoviestype-enum-type"></a>Тип перечисления ratingIrelandMoviesType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метки рейтинга фильмов в Ирландии
+Метки оценки фильмов в Ирландии
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|allAllowed|0|Значение по умолчанию, разрешить все содержимое фильмов|
-|allBlocked|1|Не разрешайте контент фильмов|
-|общие|2|Подходит для детей школьного возраста|
+|allAllowed|0|Значение по умолчанию: разрешить все фильмы|
+|allBlocked|1|Не разрешать содержимое фильмов|
+|общие|2|Подходит для детей из учебного заведения с возрастом|
 |parentalGuidance|3|Классификация PG рекомендует родительские рекомендации|
-|agesAbove12|4 |Классификация 12A подходит для зрителей старше 12 лет|
-|agesAbove15|5|Классификация 15A подходит для зрителей старше 15 лет|
-|agesAbove16|6 |Классификация 16 подходит для зрителей старше 16 лет|
-|взрослые|7 |Классификация 18, подходящая только для взрослых|
+|agesAbove12|4|Классификация 12A подходит для пользователей старше 12 лет|
+|agesAbove15|5|Классификация 15A подходит для пользователей старше 15 лет|
+|agesAbove16|6 |Классификация 16 подходит для пользователей старше 16 лет|
+|Взрослых|7 |Классификация 18, подходящая только для взрослых|
+
+
 
 
 

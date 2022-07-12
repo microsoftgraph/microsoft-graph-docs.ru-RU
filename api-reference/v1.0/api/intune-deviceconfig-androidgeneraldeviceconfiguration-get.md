@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 890134c12d3795930bf05cee490cf335165ee70d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 0c3c79eac1d931fff777a28e82d48bec296f84c8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454672"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731815"
 ---
 # <a name="get-androidgeneraldeviceconfiguration"></a>Get androidGeneralDeviceConfiguration
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -168,6 +168,8 @@ Content-Length: 3414
   }
 }
 ```
+
+
 
 
 

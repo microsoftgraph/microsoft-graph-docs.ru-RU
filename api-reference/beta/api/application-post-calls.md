@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2a6d4639a681da83a52ebe11298477b4beccbc0a
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: fa979daa3cc0c7b6824889a1c084be7ecb7ad476
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645558"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723533"
 ---
 <!-- markdownlint-disable MD001 MD022 MD024 -->
 
@@ -30,7 +30,7 @@ ms.locfileid: "66645558"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                                                                          |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                          |
-| Application                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All |
+| Для приложений                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All |
 
 > **Заметки:** Для вызова с размещенным в приложении носителем требуется разрешение Calls.AccessMedia.All или Calls.AccessMedia.Chat* в дополнение к одному из указанных разрешений.
 >
@@ -849,7 +849,7 @@ Content-Type: application/json
 Чтобы присоединиться к запланированному собранию, необходимо получить идентификатор потока, идентификатор сообщения, идентификатор организатора и идентификатор клиента, в котором запланировано собрание.
 Эти сведения можно получить из [API Get onlineMeeting](../api/onlinemeeting-get.md) .
 
-Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены на сведения, полученные из API [Get onlineMeeting](../api/onlinemeeting-get.md) , фактическими значениями, чтобы пример совмещал работу.
+Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены вместе со сведениями, полученными из API [Get onlineMeeting](../api/onlinemeeting-get.md) , фактическими значениями, чтобы пример совмещал работу.
 
 > **Примечание:** В этом примере требуется `Calls.JoinGroupCalls.All` разрешение или `Calls.JoinGroupCalls.Chat` разрешение [для конкретного ресурса](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -1584,7 +1584,7 @@ Content-Type: application/json
 ### <a name="example-9-join-channel-meeting-with-service-hosted-media"></a>Пример 9. Присоединение к собранию канала с размещенным в службе носителем
 Для собрания в канале требуются определенные сведения, такие как идентификатор потока, идентификатор сообщения и сведения организатора, которые можно получить с помощью API [Get onlineMeeting](../api/onlinemeeting-get.md) .
 
-Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены на сведения, полученные из API [Get onlineMeeting](../api/onlinemeeting-get.md) , фактическими значениями, чтобы пример совмещал работу.
+Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены вместе со сведениями, полученными из API [Get onlineMeeting](../api/onlinemeeting-get.md) , фактическими значениями, чтобы пример совмещал работу.
 
 > **Примечание:** Этому примеру требуется разрешение `Calls.JoinGroupCalls.All` .
 

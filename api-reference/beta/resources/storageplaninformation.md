@@ -1,25 +1,25 @@
 ---
 author: psampath
-description: Ресурс storagePlanInformation предоставляет сведения о планах квот на хранение диска.
+description: Ресурс storagePlanInformation предоставляет сведения о планах квоты хранилища диска.
 ms.date: 06/20/2018
 title: StoragePlanInformation
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: db5707686f6104d8d9004696094c0bcc22066f5a
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: files
+ms.openlocfilehash: 036da4561666bacf12f3cd7a448c9b9ba18808aa
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723272"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735945"
 ---
-# <a name="storageplaninformation-resource-type"></a>тип ресурса storagePlanInformation
+# <a name="storageplaninformation-resource-type"></a>Тип ресурса storagePlanInformation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс **storagePlanInformation** предоставляет сведения о планах квот на хранение диска.
+Ресурс **storagePlanInformation** предоставляет сведения о планах квоты хранилища диска.
 
 ### <a name="json-representation"></a>Представление JSON
 
@@ -40,7 +40,7 @@ ms.locfileid: "63723272"
 
 | Свойство         | Тип    | Описание                                                             |
 | :--------------- | :------ | :---------------------------------------------------------------------- |
-| upgradeAvailable | Boolean | Указывает, имеются ли более высокие планы квоты на хранение. Только для чтения. |
+| upgradeAvailable | Логический | Указывает, существуют ли более высокие планы квоты хранилища. Только для чтения. |
 
 <!--
 {

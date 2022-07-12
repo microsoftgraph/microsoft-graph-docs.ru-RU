@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 245cf17a9a99e5ae53d6095adbab52ae5f7fae42
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f681ab6f002229ee6dec01581848f4f4f13604dc
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60438522"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722896"
 ---
 # <a name="list-androidgeneraldeviceconfigurations"></a>Перечисление объектов androidGeneralDeviceConfiguration
 
@@ -41,7 +41,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -167,6 +167,8 @@ Content-Length: 3618
   ]
 }
 ```
+
+
 
 
 

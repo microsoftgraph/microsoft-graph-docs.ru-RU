@@ -1,18 +1,18 @@
 ---
-title: importedWindowsAutopilotDeviceIdentityImportStatus enum type
+title: Тип перечисления importedWindowsAutopilotDeviceIdentityImportStatus
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a91a12a181a22855f17f4e50aa3b2ee3fbb84c4d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 091f92354ff98129ab1bb02ffd2b91a8e2120108
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452076"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733761"
 ---
-# <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>importedWindowsAutopilotDeviceIdentityImportStatus enum type
+# <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>Тип перечисления importedWindowsAutopilotDeviceIdentityImportStatus
 
 Пространство имен: microsoft.graph
 
@@ -23,11 +23,13 @@ ms.locfileid: "60452076"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|0|Неизвестный статус.|
-|ожидание|1|Состояние ожидания.|
-|частичная|2|Частичный статус.|
-|complete|3|Полный статус.|
-|error|4 |Состояние ошибки.|
+|unknown|0|Неизвестное состояние.|
+|Ожидающие|1|Состояние ожидания.|
+|Частичное|2|Частичное состояние.|
+|complete|3|Состояние завершения.|
+|error|4|Состояние ошибки.|
+
+
 
 
 

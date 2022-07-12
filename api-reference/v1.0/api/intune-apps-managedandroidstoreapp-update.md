@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f98358d6f0c78dab622197810d614ceefd304e8
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e169e88d0334f6d02523caa674b3af0647f350f2
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60444786"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732319"
 ---
 # <a name="update-managedandroidstoreapp"></a>Update managedAndroidStoreApp
 
@@ -41,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -64,8 +64,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Унаследованный от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
-|appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|Доступность приложения. Унаследованный от [managedApp](../resources/intune-apps-managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|Доступность приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
 |version|String|Версия приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md).|
 |packageId|String|ИД пакета приложения.|
 |appStoreUrl|String|AppStoreUrl для Android.|
@@ -168,6 +168,8 @@ Content-Length: 1228
   }
 }
 ```
+
+
 
 
 

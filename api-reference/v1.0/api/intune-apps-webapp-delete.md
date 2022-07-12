@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c64d9908d9dbe0d112cf4dbea9539052e88e0607
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 5b5d80c275826802d34c87b4d2afdcf5d9e79c6a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452638"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733661"
 ---
 # <a name="delete-webapp"></a>Delete webApp
 
@@ -41,7 +41,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

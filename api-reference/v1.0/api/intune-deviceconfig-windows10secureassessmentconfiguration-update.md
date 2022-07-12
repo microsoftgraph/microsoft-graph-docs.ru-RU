@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09a7b4cd3381ae7a73be70c99238a111bd56d4f3
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 762be04df9f6f507e231fff9f1e722b5474500ed
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445276"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732893"
 ---
 # <a name="update-windows10secureassessmentconfiguration"></a>Обновление объекта windows10SecureAssessmentConfiguration
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -112,6 +112,8 @@ Content-Length: 531
   "allowTextSuggestion": true
 }
 ```
+
+
 
 
 

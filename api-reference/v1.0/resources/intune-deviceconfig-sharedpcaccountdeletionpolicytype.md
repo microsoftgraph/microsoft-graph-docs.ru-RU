@@ -1,18 +1,18 @@
 ---
-title: тип enum sharedPCAccountDeletionPolicyType
+title: Тип перечисления sharedPCAccountDeletionPolicyType
 description: Возможные значения при удалении учетных записей на общем компьютере.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f41cfc20132577d11d94cdd66d28cdccfa203b4f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c8ffe724bebd4f03778088d2fc1bb5b8397e3848
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457304"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733803"
 ---
-# <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>тип enum sharedPCAccountDeletionPolicyType
+# <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>Тип перечисления sharedPCAccountDeletionPolicyType
 
 Пространство имен: microsoft.graph
 
@@ -23,9 +23,11 @@ ms.locfileid: "60457304"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|немедленная|0|Удалите немедленно.|
-|diskSpaceThreshold|1|Удаление на пороге пространства диска.|
-|diskSpaceThresholdOrInactiveThreshold|2|Удаление на дисковом пороге пространства или неактивном пороге.|
+|Немедленного|0|Удалите немедленно.|
+|diskSpaceThreshold|1|Удаление при пороговом значении дискового пространства.|
+|diskSpaceThresholdOrInactiveThreshold|2|Удаление с пороговым значением места на диске или пороговым значением неактивности.|
+
+
 
 
 

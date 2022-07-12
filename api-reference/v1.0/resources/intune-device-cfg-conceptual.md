@@ -1,16 +1,16 @@
 ---
 title: Конфигурация устройства в Microsoft Intune
-description: Использование рабочей нагрузки Microsoft Intune конфигурации устройств для управления настройками и функциями на всех управляемых устройствах.
+description: Используйте рабочую нагрузку Microsoft Intune конфигурации устройства для управления параметрами и функциями на всех управляемых устройствах.
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: d97fc069f7862d242cee325dd875d826ef747113
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1b22e05fc3968ac126a06696bc5a4cd7362434fa
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118476"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722987"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Конфигурация устройства в Microsoft Intune
 
@@ -18,9 +18,9 @@ ms.locfileid: "59118476"
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune надлежащим образом.
 
-Использование рабочей нагрузки Microsoft Intune конфигурации устройств для управления настройками и функциями на всех управляемых устройствах.
+Используйте рабочую нагрузку Microsoft Intune конфигурации устройства для управления параметрами и функциями на всех управляемых устройствах.
 
-Для управления настройками и функциями на устройствах Intune доступны следующие ресурсы Graph:
+Для управления параметрами и функциями на устройствах в Intune доступны следующие ресурсы Graph:
 
 - [Политика соответствия требованиям Android](intune-deviceconfig-androidcompliancepolicy.md)
 - [Специальная конфигурация Android](intune-deviceconfig-androidcustomconfiguration.md)
@@ -52,7 +52,7 @@ ms.locfileid: "59118476"
 - [Тип действия, касающегося соответствия устройств требованиям](intune-deviceconfig-devicecomplianceactiontype.md)
 - [Обзор соответствия устройств требованиям](intune-deviceconfig-devicecompliancedeviceoverview.md)
 - [Состояние устройств, касающееся соответствия устройств требованиям](intune-deviceconfig-devicecompliancedevicestatus.md)
-- [Политика соответствия требованиям устройств](intune-deviceconfig-devicecompliancepolicy.md)
+- [Политика соответствия устройств](intune-deviceconfig-devicecompliancepolicy.md)
 - [Назначение политик соответствия устройства требованиям](intune-deviceconfig-devicecompliancepolicyassignment.md)
 - [Общие сведения о состоянии устройства с учетом политики соответствия устройств требованиям](intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)
 - [Состояние соответствия устройства параметру политики](intune-deviceconfig-devicecompliancepolicysettingstate.md)
@@ -69,7 +69,6 @@ ms.locfileid: "59118476"
 - [Состояние параметра конфигурации устройства](intune-deviceconfig-deviceconfigurationsettingstate.md)
 - [Обзор пользователей, касающийся конфигураций устройств](intune-deviceconfig-deviceconfigurationuseroverview.md)
 - [Состояние пользователей, касающееся конфигураций устройств](intune-deviceconfig-deviceconfigurationuserstatus.md)
-- [Управление устройствами](intune-deviceconfig-devicemanagement.md)
 - [Управление устройствами](intune-deviceconfig-devicemanagement.md)
 - [Параметры управления устройствами](intune-deviceconfig-devicemanagementsettings.md)
 - [Уровень защиты устройства от угроз](intune-deviceconfig-devicethreatprotectionlevel.md)
@@ -124,7 +123,7 @@ ms.locfileid: "59118476"
 - [Параметр OMA, строка](intune-deviceconfig-omasettingstring.md)
 - [Параметр OMA, строка, XML](intune-deviceconfig-omasettingstringxml.md)
 - [Тип платформы политики](intune-deviceconfig-policyplatformtype.md)
-- [Предварительные версии функций](intune-deviceconfig-prereleasefeatures.md)
+- [Предварительные выпуски функций](intune-deviceconfig-prereleasefeatures.md)
 - [Тип рейтинга приложений](intune-deviceconfig-ratingappstype.md)
 - [Тип рейтинга фильмов для Австралии](intune-deviceconfig-ratingaustraliamoviestype.md)
 - [Тип рейтинга телевизионных передач для Австралии](intune-deviceconfig-ratingaustraliatelevisiontype.md)
@@ -149,7 +148,7 @@ ms.locfileid: "59118476"
 - [Требуемый тип пароля](intune-deviceconfig-requiredpasswordtype.md)
 - [Тип фильтра для безопасного поиска](intune-deviceconfig-safesearchfiltertype.md)
 - [Источник параметра](intune-deviceconfig-settingsource.md)
-- [Настройка типа источника](intune-deviceconfig-settingsourcetype.md)
+- [Задание типа источника](intune-deviceconfig-settingsourcetype.md)
 - [Объект settingStateDeviceSummary](intune-deviceconfig-settingstatedevicesummary.md)
 - [Тип политики удаления учетных записей общего компьютера](intune-deviceconfig-sharedpcaccountdeletionpolicytype.md)
 - [Политика диспетчера учетных записей общего компьютера](intune-deviceconfig-sharedpcaccountmanagerpolicy.md)

@@ -222,9 +222,9 @@ items:
           - name: Создание веб-приложения (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
           - name: Создание веб-приложения (React)
-            href: /graph/toolkit/get-started/use-/graph/toolkit-with-react?context=graph/api/1.0
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/1.0
           - name: Создание веб-приложения (Angular)
-            href: /graph/toolkit/get-started/use-/graph/toolkit-with-angular?context=graph/api/1.0
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/1.0
           - name: Создание веб-части SharePoint
             href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
           - name: Создание вкладки Teams
@@ -484,7 +484,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Примечания
+          - name: Заметки
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -544,7 +544,7 @@ items:
             items:
               - name: Список задач
                 href: api/planneruser-list-tasks.md
-          - name: Teamwork
+          - name: Командная работа
             items:
               - name: Приложение установлено
                 href: resources/teamsappinstallation.md
@@ -1831,13 +1831,6 @@ items:
                         href: api/intune-books-deviceinstallstate-delete.md
                       - name: Обновление
                         href: api/intune-books-deviceinstallstate-update.md
-                  - name: Управление устройствами
-                    href: resources/intune-androidforwork-devicemanagement.md
-                    items:
-                      - name: Получение
-                        href: api/intune-androidforwork-devicemanagement-get.md
-                      - name: Обновление
-                        href: api/intune-androidforwork-devicemanagement-update.md
                   - name: Сводка по установке электронной книги
                     href: resources/intune-books-ebookinstallsummary.md
                     items:
@@ -2746,13 +2739,6 @@ items:
                         href: api/intune-deviceconfig-devicemanagement-get.md
                       - name: Обновление
                         href: api/intune-deviceconfig-devicemanagement-update.md
-                  - name: Управление устройствами
-                    href: resources/intune-deviceconfig-devicemanagement.md
-                    items:
-                      - name: Получение
-                        href: api/intune-deviceconfig-devicemanagement-get.md
-                      - name: Обновление
-                        href: api/intune-deviceconfig-devicemanagement-update.md
                   - name: Параметры управления устройствами
                     href: resources/intune-deviceconfig-devicemanagementsettings.md
                   - name: Уровень защиты устройства от угроз
@@ -3324,25 +3310,6 @@ items:
                         href: api/intune-devices-applepushnotificationcertificate-get.md
                       - name: Обновление
                         href: api/intune-devices-applepushnotificationcertificate-update.md
-                  - name: Субъект аудита
-                    href: resources/intune-auditing-auditactor.md
-                  - name: Событие аудита
-                    href: resources/intune-auditing-auditevent.md
-                    items:
-                      - name: Перечисление
-                        href: api/intune-auditing-auditevent-list.md
-                      - name: Получение
-                        href: api/intune-auditing-auditevent-get.md
-                      - name: Создание
-                        href: api/intune-auditing-auditevent-create.md
-                      - name: Удалить
-                        href: api/intune-auditing-auditevent-delete.md
-                      - name: Обновление
-                        href: api/intune-auditing-auditevent-update.md
-                  - name: Свойство аудита
-                    href: resources/intune-auditing-auditproperty.md
-                  - name: Ресурс аудита
-                    href: resources/intune-auditing-auditresource.md
                   - name: Состояние соответствия требованиям
                     href: resources/intune-devices-compliancestate.md
                   - name: Включенные функции клиента диспетчера конфигураций
@@ -3371,8 +3338,8 @@ items:
                         href: api/intune-devices-devicecategory-get.md
                       - name: Обновление
                         href: api/intune-devices-devicecategory-update.md
-                  - name: Причина сбоя регистрации устройства
-                    href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
+                  - name: Тип регистрации устройства
+                    href: resources/intune-devices-deviceenrollmenttype.md
                   - name: Сводка по состоянию доступа к Exchange с устройств
                     href: resources/intune-devices-deviceexchangeaccessstatesummary.md
                   - name: Геолокация устройств
@@ -3380,48 +3347,29 @@ items:
                   - name: Состояние подтверждения работоспособности устройства
                     href: resources/intune-devices-devicehealthattestationstate.md
                   - name: Управление устройствами
-                    href: resources/intune-auditing-devicemanagement.md
+                    href: resources/intune-devices-devicemanagement.md
                     items:
                       - name: Получение
-                        href: api/intune-auditing-devicemanagement-get.md
+                        href: api/intune-devices-devicemanagement-get.md
                       - name: Обновление
-                        href: api/intune-auditing-devicemanagement-update.md
+                        href: api/intune-devices-devicemanagement-update.md
+                  - name: Управление устройствами
+                    href: resources/intune-devices-devicemanagement.md
+                    items:
+                      - name: Получение
+                        href: api/intune-devices-devicemanagement-get.md
+                      - name: Обновление
+                        href: api/intune-devices-devicemanagement-update.md
                   - name: Состояние доступа к Exchange для управления устройствами
                     href: resources/intune-devices-devicemanagementexchangeaccessstate.md
                   - name: Причина состояния доступа к Exchange для управления устройствами
                     href: resources/intune-devices-devicemanagementexchangeaccessstatereason.md
                   - name: Состояние подписки на управление устройствами
                     href: resources/intune-devices-devicemanagementsubscriptionstate.md
-                  - name: Событие "Устранение проблем с управлением устройствами"
-                    href: resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md
-                    items:
-                      - name: Перечисление
-                        href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-list.md
-                      - name: Получение
-                        href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-get.md
-                      - name: Создание
-                        href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-create.md
-                      - name: Удалить
-                        href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-delete.md
-                      - name: Обновление
-                        href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-update.md
                   - name: Сводка по операционной системе устройства
                     href: resources/intune-devices-deviceoperatingsystemsummary.md
                   - name: Состояние регистрации устройства
                     href: resources/intune-devices-deviceregistrationstate.md
-                  - name: Событие "Устранение проблем с регистрацией"
-                    href: resources/intune-troubleshooting-enrollmenttroubleshootingevent.md
-                    items:
-                      - name: Перечисление
-                        href: api/intune-troubleshooting-enrollmenttroubleshootingevent-list.md
-                      - name: Получение
-                        href: api/intune-troubleshooting-enrollmenttroubleshootingevent-get.md
-                      - name: Создание
-                        href: api/intune-troubleshooting-enrollmenttroubleshootingevent-create.md
-                      - name: Удалить
-                        href: api/intune-troubleshooting-enrollmenttroubleshootingevent-delete.md
-                      - name: Обновление
-                        href: api/intune-troubleshooting-enrollmenttroubleshootingevent-update.md
                   - name: Локализованное сообщение уведомления
                     href: resources/intune-notification-localizednotificationmessage.md
                     items:
@@ -3516,59 +3464,12 @@ items:
                         href: api/intune-notification-notificationmessagetemplate-sendtestmessage.md
                   - name: Параметры фирменной символики для шаблона уведомления
                     href: resources/intune-notification-notificationtemplatebrandingoptions.md
-                  - name: Тип платформы
-                    href: resources/intune-esim-platformtype.md
-                  - name: Состояние подключения удаленного помощника
-                    href: resources/intune-remoteassistance-remoteassistanceonboardingstatus.md
-                  - name: Партнерская служба удаленного помощника
-                    href: resources/intune-remoteassistance-remoteassistancepartner.md
-                    items:
-                      - name: Перечисление
-                        href: api/intune-remoteassistance-remoteassistancepartner-list.md
-                      - name: Получение
-                        href: api/intune-remoteassistance-remoteassistancepartner-get.md
-                      - name: Создание
-                        href: api/intune-remoteassistance-remoteassistancepartner-create.md
-                      - name: Удалить
-                        href: api/intune-remoteassistance-remoteassistancepartner-delete.md
-                      - name: Обновление
-                        href: api/intune-remoteassistance-remoteassistancepartner-update.md
-                      - name: Действие beginOnboarding
-                        href: api/intune-remoteassistance-remoteassistancepartner-beginonboarding.md
-                      - name: Действие disconnect
-                        href: api/intune-remoteassistance-remoteassistancepartner-disconnect.md
                   - name: Результат действия "Удаленная блокировка"
                     href: resources/intune-devices-remotelockactionresult.md
-                  - name: Отчет
-                    href: resources/intune-troubleshooting-report.md
-                  - name: Корневая папка отчета
-                    href: resources/intune-troubleshooting-reportroot.md
-                    items:
-                      - name: Получение
-                        href: api/intune-troubleshooting-reportroot-get.md
-                      - name: Обновление
-                        href: api/intune-troubleshooting-reportroot-update.md
                   - name: Результат действия "Сброс секретного кода"
                     href: resources/intune-devices-resetpasscodeactionresult.md
-                  - name: Tuple_2 выполнения type_ collection_1 операции
-                    href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
                   - name: Параметр действия "Обновление учетной записи устройства с Windows"
                     href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
-                  - name: Пользователь
-                    href: resources/intune-devices-user.md
-                    items:
-                      - name: Перечисление
-                        href: api/intune-devices-user-list.md
-                      - name: Получение
-                        href: api/intune-devices-user-get.md
-                      - name: Создание
-                        href: api/intune-devices-user-create.md
-                      - name: Удалить
-                        href: api/intune-devices-user-delete.md
-                      - name: Обновление
-                        href: api/intune-devices-user-update.md
-                      - name: Действие removeAllDevicesFromManagement
-                        href: api/intune-devices-user-removealldevicesfrommanagement.md
                   - name: Пользователь
                     href: resources/intune-devices-user.md
                     items:
@@ -4152,7 +4053,7 @@ items:
                   - name: Использование ПИН-кода в Windows Hello для бизнеса
                     href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
               - name: Управление доступом на основе ролей (RBAC)
-                href: resources/intune-rbac-conceptual.md
+                href: /resources/intune-rbac-conceptual.md
                 items:
                   - name: Назначение роли управления устройствами и приложениями
                     href: resources/intune-rbac-deviceandappmanagementroleassignment.md
@@ -4245,8 +4146,6 @@ items:
                     href: resources/intune-shared-configurationmanagercollectionassignmenttarget.md
                   - name: Объект назначения для управления устройствами и приложениями
                     href: resources/intune-shared-deviceandappmanagementassignmenttarget.md
-                  - name: Тип регистрации устройства
-                    href: resources/intune-shared-deviceenrollmenttype.md
                   - name: Объект назначения группы исключения
                     href: resources/intune-shared-exclusiongroupassignmenttarget.md
                   - name: Объект назначения группы
@@ -5990,7 +5889,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Примечания
+      - name: Заметки
         displayName: OneNote
         items:
           - name: Обзор

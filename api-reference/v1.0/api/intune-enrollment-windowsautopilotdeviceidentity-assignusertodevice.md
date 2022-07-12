@@ -1,16 +1,16 @@
 ---
 title: Действие assignUserToDevice
-description: Назначает пользователя устройствам автопилота.
+description: Назначает пользователя устройствам Autopilot.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 63747a574ff357945f1607e2dac6b3d5b810de4f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 4a826b9f83e137105aa1e0bcc3bccbdf9df6073a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449547"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733194"
 ---
 # <a name="assignusertodevice-action"></a>Действие assignUserToDevice
 
@@ -18,7 +18,7 @@ ms.locfileid: "60449547"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Назначает пользователя устройствам автопилота.
+Назначает пользователя устройствам Autopilot.
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,7 +41,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -80,6 +80,8 @@ Content-length: 113
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

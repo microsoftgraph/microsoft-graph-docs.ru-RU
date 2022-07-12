@@ -1,18 +1,18 @@
 ---
-title: тип enum enrollmentState
+title: Тип перечисления enrollmentState
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: acce3bb71f675ecc558768fcdbb3ee2071b073aa
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 189cc01b962e68754c37ae2c6755f883f2230aba
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452869"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729953"
 ---
-# <a name="enrollmentstate-enum-type"></a>тип enum enrollmentState
+# <a name="enrollmentstate-enum-type"></a>Тип перечисления enrollmentState
 
 Пространство имен: microsoft.graph
 
@@ -24,10 +24,12 @@ ms.locfileid: "60452869"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Состояние регистрации устройства неизвестно|
-|зарегистрированный|1|Устройство зачислилось.|
-|pendingReset|2|Зарегистрирован, но он зарегистрирован через профиль регистрации, а зарегистрированный профиль отличается от назначенного профиля.|
-|не удалось|3|Не зарегистрирован, и есть запись сбоя регистрации.|
-|notContacted|4 |Устройство импортируется, но не регистрируется.|
+|Зачислены|1|Устройство зарегистрировано.|
+|pendingReset|2|Зарегистрирован, но зарегистрирован через профиль регистрации, и зарегистрированный профиль отличается от назначенного профиля.|
+|Сбой при|3|Регистрация не зарегистрирована и имеется запись о сбое регистрации.|
+|notContacted|4|Устройство импортируется, но не зарегистрировано.|
+
+
 
 
 

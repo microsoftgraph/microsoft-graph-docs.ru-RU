@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9bf8dfb008029917831af0a0e3f6b950fb9bdab
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 5b8a66ee0a679da9daf72704736af6ec098a52c4
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456440"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730520"
 ---
 # <a name="get-mobileappcategory"></a>Get mobileAppCategory
 
@@ -45,7 +45,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryI
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -78,6 +78,8 @@ Content-Length: 239
   }
 }
 ```
+
+
 
 
 

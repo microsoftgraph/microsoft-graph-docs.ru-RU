@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fa3f89af3588e18018a04c76f5fe82b8aca82393
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 34f20f95e1a9dfd2d3256885798ed2db238fc7c6
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450174"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735931"
 ---
 # <a name="get-androidstoreapp"></a>Get androidStoreApp
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -107,6 +107,8 @@ Content-Length: 1237
   }
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f841c1fa5ddc3d1a84b0b0e9728abdd9dc353c2
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 0234c342d1275faa999b8c1a21ebc6cc43928f48
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60438529"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730254"
 ---
 # <a name="get-termsandconditionsassignment"></a>Получение объекта termsAndConditionsAssignment
 
@@ -44,7 +44,7 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{ter
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -79,6 +79,8 @@ Content-Length: 300
   }
 }
 ```
+
+
 
 
 

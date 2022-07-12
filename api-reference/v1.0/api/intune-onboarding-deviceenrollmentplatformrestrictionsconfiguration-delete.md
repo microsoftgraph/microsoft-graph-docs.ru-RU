@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a4807728a1a89e81a188f05f0c69fc464844c9c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 4d98c08a967b09f79233d1fb4db9779c2636818e
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453767"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732242"
 ---
 # <a name="delete-deviceenrollmentplatformrestrictionsconfiguration"></a>Удаление объекта deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -41,7 +41,7 @@ DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigu
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

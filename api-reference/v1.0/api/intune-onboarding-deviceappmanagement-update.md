@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d143e63ef12338647ffc443e949900ee82add741
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 7740204aee57334def65f3147c8e97c792d8988a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899605"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723134"
 ---
 # <a name="update-deviceappmanagement"></a>Обновление объекта deviceAppManagement
 
@@ -25,9 +25,9 @@ ms.locfileid: "65899605"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ PATCH /deviceAppManagement
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,10 +51,10 @@ PATCH /deviceAppManagement
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Н/Д|
+|id|String|Н/Д|
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|Время последней успешной синхронизации приложений из Microsoft Store для бизнеса с учетной записью.|
 |isEnabledForMicrosoftStoreForBusiness|Boolean|Указывает, включена ли для учетной запись синхронизация приложений из Microsoft Store для бизнеса.|
-|microsoftStoreForBusinessLanguage|String|Сведения о языковом стандарте, используемом для синхронизации приложений из Microsoft Store для бизнеса. Региональные параметры, относящиеся к стране или региону. Названия этих региональных параметров соответствуют стандарту RFC 4646 (для Windows Vista и более поздних версий). Используется формат \<languagecode2\>-<страна/код_региона2>, где \<languagecode2\> — это двухбуквенный код в нижнем регистре, полученный из стандарта ISO 639-1, а <страна/код_регион2> — код из двух прописных букв по стандарту ISO 3166. Например, en-US для английского (США) — это определенный региональный стандарт.|
+|microsoftStoreForBusinessLanguage|String|Сведения о языковом стандарте, используемом для синхронизации приложений из Microsoft Store для бизнеса. Региональные параметры, относящиеся к стране или региону. Названия этих региональных параметров соответствуют стандарту RFC 4646 (для Windows Vista и более поздних версий). Используется формат <languagecode2>-<страна/код_региона2>, где <languagecode2> — это двухбуквенный код в нижнем регистре, полученный из стандарта ISO 639-1, а <страна/код_регион2> — код из двух прописных букв по стандарту ISO 3166. Например, en-US для английского (США) — это определенный региональный стандарт.|
 |microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|Время последней завершенной синхронизации приложений из Microsoft Store для бизнеса.|
 
 
@@ -96,6 +96,8 @@ Content-Length: 443
   "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "2017-01-01T00:02:00.0421137-08:00"
 }
 ```
+
+
 
 
 

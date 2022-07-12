@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 535e038fec24d8e658ff388dd673e7ba7deceee0
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 0c5fdf7a797d599eb9ca7a1f1a3ade8db1848844
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449497"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735448"
 ---
 # <a name="windowsuniversalappx-resource-type"></a>Тип ресурса windowsUniversalAppX
 
@@ -48,12 +48,12 @@ ms.locfileid: "60449497"
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Унаследованный от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
-|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, которая поддерживается этим приложением. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`.|
-|applicableDeviceTypes|[windowsDeviceType](../resources/intune-apps-windowsdevicetype.md)|Типы устройств с Windows, которые поддерживаются этим приложением. Возможные значения: `none`, `desktop`, `mobile`, `holographic`, `team`.|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md);|Архитектура Windows, которая поддерживается этим приложением. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|applicableDeviceTypes|[windowsDeviceType](../resources/intune-apps-windowsdevicetype.md).|Типы устройств с Windows, которые поддерживаются этим приложением. Возможные значения: `none`, `desktop`, `mobile`, `holographic`, `team`.|
 |identityName|String|Имя удостоверения.|
 |identityPublisherHash|String|Хэш издателей удостоверений.|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity.|
@@ -115,6 +115,8 @@ ms.locfileid: "60449497"
   "identityVersion": "String"
 }
 ```
+
+
 
 
 

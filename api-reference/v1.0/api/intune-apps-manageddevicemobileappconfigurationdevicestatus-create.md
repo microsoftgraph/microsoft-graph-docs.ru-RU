@@ -1,24 +1,24 @@
 ---
-title: Создание managedDeviceMobileAppConfigurationDeviceStatus
-description: Создание нового объекта managedDeviceMobileAppConfigurationDeviceStatus.
+title: Создание объекта managedDeviceMobileAppConfigurationDeviceStatus
+description: Создайте объект managedDeviceMobileAppConfigurationDeviceStatus.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 723917f0bdb9c17577ddbdfa45ca4a44c0aa7e68
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e4fadf7efcc5da33db27f3a350f31e66a78b4276
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449872"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731528"
 ---
-# <a name="create-manageddevicemobileappconfigurationdevicestatus"></a>Создание managedDeviceMobileAppConfigurationDeviceStatus
+# <a name="create-manageddevicemobileappconfigurationdevicestatus"></a>Создание объекта managedDeviceMobileAppConfigurationDeviceStatus
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового [объекта managedDeviceMobileAppConfigurationDeviceStatus.](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)
+Создайте объект [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,13 +41,13 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для объекта managedDeviceMobileAppConfigurationDeviceStatus.
+В теле запроса добавьте представление объекта managedDeviceMobileAppConfigurationDeviceStatus в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании управляемогоDeviceMobileAppConfigurationDeviceStatus.
+В следующей таблице показаны свойства, необходимые при создании объекта managedDeviceMobileAppConfigurationDeviceStatus.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -63,7 +63,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 
 
 ## <a name="response"></a>Ответ
-В случае успешной работы этот метод возвращает код отклика и объект `201 Created` [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) в теле ответа.
+В случае успешного выполнения `201 Created` этот метод возвращает код отклика и объект [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -105,6 +105,8 @@ Content-Length: 494
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
 
 
 

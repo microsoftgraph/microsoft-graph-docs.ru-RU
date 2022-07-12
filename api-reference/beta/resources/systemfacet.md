@@ -1,27 +1,28 @@
 ---
 author: daspek
-description: '**Системный** аспект указывает, что объект управляется системой для собственной операции.'
+description: <descripton>
+ms.date: 09/12/2017
 title: SystemFacet
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: ed30d7df19b3d9472de6172aa5ff90e2d0ad8c61
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 400ca1aec8b567966e4dcc56ecd0445c25efb817
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65898569"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736680"
 ---
-# <a name="system-facet"></a>системный аспект
+# <a name="system-facet"></a>Аспект System
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Системный** аспект указывает, что объект управляется системой для собственной операции.
-Большинство приложений должны игнорировать элементы с системным аспектом.
+Аспект **System** указывает, что объект управляется системой, выполняющей необходимые ей операции.
+Большинству приложений следует игнорировать элементы, содержащие аспект System.
 
->**Примечание.** В настоящее время этот аспект пуст, но в будущих редакциях API он может быть дополнен другими свойствами.
+**Примечание.** В настоящее время этот аспект пуст, но в будущих редакциях API он может быть дополнен другими свойствами.
 
 ## <a name="json-representation"></a>Представление JSON
 

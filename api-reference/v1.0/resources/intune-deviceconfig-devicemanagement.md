@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a02524b48574def8ef4cd6e5562a8ef4307a8ad5
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: dfc6b1a68a13d4fc684e0cb106900f3313de45bc
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447272"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732417"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -31,7 +31,7 @@ ms.locfileid: "60447272"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
-|intuneAccountId|Guid|Id учетной записи Intune для данного клиента|
+|intuneAccountId|Guid|Intune учетной записи для данного клиента|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -65,6 +65,8 @@ ms.locfileid: "60447272"
   "intuneAccountId": "Guid"
 }
 ```
+
+
 
 
 

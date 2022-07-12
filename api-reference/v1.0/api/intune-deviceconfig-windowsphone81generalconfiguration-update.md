@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d165129aeabf6dda0b1d46b3c079ba01abd1ed4b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c6224aa37f5ddada2a400d79075ec3daf565cbfe
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457612"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732858"
 ---
 # <a name="update-windowsphone81generalconfiguration"></a>Обновление windowsPhone81GeneralConfiguration
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -200,6 +200,8 @@ Content-Length: 1633
   "windowsStoreBlocked": true
 }
 ```
+
+
 
 
 

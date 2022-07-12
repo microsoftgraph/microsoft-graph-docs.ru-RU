@@ -1,54 +1,54 @@
 ---
-title: задать тип ресурса
-description: Представляет набор в банке терминов.
+title: Задать тип ресурса
+description: Представляет набор в хранилище терминов.
 author: mohitpcad
-localization_priority: Normal
-ms.prod: Sharepoint
+ms.localizationpriority: medium
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 45436f1a20652555b17b553f96db60e5636d3d92
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b9374c1d41ef713b6edfeb3dd0ec4614b5562c2a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988802"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734230"
 ---
-# <a name="set-resource-type"></a>задать тип ресурса
+# <a name="set-resource-type"></a>Задать тип ресурса
 
-Пространство имен: Microsoft. Graph. банка
+Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет набор, используемый в [банке]терминов. Набор представляет единицу измерения, которая содержит коллекцию иерархических терминов. [Группа] может содержать несколько наборов.
+Представляет набор, используемый в хранилище [терминов]. Набор представляет единицу, содержащую коллекцию иерархических терминов. Группа [может] содержать несколько наборов.
 
-Наследуется от [объекта Entity](../resources/entity.md).
+Наследует [от сущности](../resources/entity.md).
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Наборы списков](../api/termstore-group-list-sets.md)|Коллекция [Microsoft. Graph. банка. Set] | Возвращает список наборов, содержащихся в [группе] [банка] терминов. |
-|[Создание набора](../api/termstore-set-post.md)|[Microsoft. Graph. банка. Set](../resources/termstore-set.md)|Создайте новый объект set в [банке]терминов.|
-|[Создание термина](../api/termstore-term-post.md)|[Microsoft. Graph. Банк. Term](../resources/termstore-term.md)|Создайте новый объект [Term] в [банке]терминов.|
-|[Получение набора](../api/termstore-set-get.md)|[Microsoft. Graph. банка. Set](../resources/termstore-set.md)| Получение объекта Set в [банке]терминов.|
-|[Получение термина](../api/termstore-term-get.md)|[Microsoft. Graph. Банк. Term](../resources/termstore-term.md)| Получение объекта [Term] в [банке]терминов.|
-|[Набор обновлений](../api/termstore-set-update.md)|[Microsoft. Graph. банка. Set](../resources/termstore-set.md)|Обновление свойств объекта Set в [банке]терминов.|
-|[Удаление набора](../api/termstore-set-delete.md)|Нет|Удаляет объект set в [банке]терминов.|
+|[Наборы списков](../api/termstore-group-list-sets.md)|коллекция [microsoft.graph.termStore.set] | Возвращает список наборов, содержащихся в [группе] банка [терминов]. |
+|[Создание набора](../api/termstore-set-post.md)|[microsoft.graph.termStore.set](../resources/termstore-set.md)|Создайте объект набора в хранилище [терминов].|
+|[Создание термина](../api/termstore-term-post.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Создайте объект [термина] в хранилище [терминов].|
+|[Получить набор](../api/termstore-set-get.md)|[microsoft.graph.termStore.set](../resources/termstore-set.md)| Получение объекта set в хранилище [терминов].|
+|[Получение термина](../api/termstore-term-get.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)| Получение объекта [термина] в хранилище [терминов].|
+|[Набор обновлений](../api/termstore-set-update.md)|[microsoft.graph.termStore.set](../resources/termstore-set.md)|Обновление свойств объекта set в хранилище [терминов].|
+|[Удалить набор](../api/termstore-set-delete.md)|Нет|Удаляет объект набора в хранилище [терминов].|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Дата и время создания набора. Только для чтения.|
-|description|String|Описание, содержащее сведения об использовании терминов.|
+|description|String|Описание, содержащее сведения об использовании термина.|
 |id|String|Уникальный идентификатор. Только для чтения.|
-|локализеднамес|Коллекция [Microsoft. Graph. банка Microsoft. Graph. локализеднаме](../resources/termstore-localizedname.md)|Имя набора для каждого Лангуажетаг.|
-|properties|Коллекция [Microsoft. Graph. ключзначение](../resources/keyvalue.md)|Настраиваемые свойства для набора.|
+|localizedNames|[Коллекция microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md)|Имя набора для каждого языкового тега.|
+|properties|[Коллекция microsoft.graph.keyValue](../resources/keyvalue.md)|Настраиваемые свойства для набора.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|children|Коллекция [Microsoft. Graph. Банк терминов Microsoft. Graph.](../resources/termstore-term.md)|Дочерние термины набора в [банке]терминов.|
-|парентграуп|[Microsoft. Graph. Банк.](../resources/termstore-group.md)|Родительская [Группа] , содержащая набор.|
-|отношениях|Коллекция [Microsoft. Graph. Банк. relation](../resources/termstore-relation.md)|Указывает, какие термины были закреплены или повторно использованы непосредственно в наборе.|
-|терм|Коллекция [Microsoft. Graph. Банк терминов Microsoft. Graph.](../resources/termstore-term.md)|Все термины в наборе.|
+|children|[Коллекция microsoft.graph.termStore.term](../resources/termstore-term.md)|Дочерние условия набора в банках [терминов].|
+|parentGroup|[microsoft.graph.termStore.group](../resources/termstore-group.md)|Родительская [группа] , содержащая набор.|
+|Отношения|[Коллекция microsoft.graph.termStore.relation](../resources/termstore-relation.md)|Указывает, какие термины были закреплены или повторно использоваться непосредственно в наборе.|
+|Условия|[Коллекция microsoft.graph.termStore.term](../resources/termstore-term.md)|Все термины в наборе.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
@@ -80,7 +80,7 @@ ms.locfileid: "47988802"
 ```
 
 [microsoft.graph.termStore.term]: termstore-term.md
-[Microsoft. Graph. банка. Set]: termstore-set.md
+[microsoft.graph.termStore.set]: termstore-set.md
 [microsoft.graph.termStore.group]: termstore-group.md
 [microsoft.graph.termStore.relation]: termstore-relation.md
 [microsoft.graph.termStore.store]: termstore-store.md
@@ -88,7 +88,7 @@ ms.locfileid: "47988802"
 [store]: ../resources/termstore-store.md
 [group]: ../resources/termstore-group.md
 [set]: ../resources/termstore-set.md
-[банком]: ../resources/termstore-term.md
+[Термин]: ../resources/termstore-term.md
 
 
 <!--
@@ -99,7 +99,7 @@ ms.locfileid: "47988802"
   "section": "documentation",
   "tocPath": "TermSet",
   "tocBookmarks": {
-    "Resources/termStore.set": "#"
+    "Resources/termStore.set&quot;: &quot;#"
   },
   "suppressions": []
 }
