@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Типедемаиладдресс
-description: Представляет имя, адреса электронной почты и соответствующие им типы адресов электронной почты контакта.
-localization_priority: Normal
+title: Тип ресурса typedEmailAddress
+description: Представляет имя, адреса электронной почты и соответствующий тип адреса электронной почты контакта.
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: mail
 author: kevinbellinger
-ms.openlocfilehash: 8ce8ebdd0cb5b8b2113a80dacf72617d0f361356
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 849e566919b22ddaa9c12a275f19139701bf467d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993013"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723495"
 ---
-# <a name="typedemailaddress-resource-type"></a>Тип ресурса Типедемаиладдресс
+# <a name="typedemailaddress-resource-type"></a>Тип ресурса typedEmailAddress
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет имя, адреса электронной почты и соответствующие им типы адресов электронной почты [контакта](contact.md).
+Представляет имя, адреса электронной почты и соответствующий тип адреса электронной почты [контакта](contact.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |address|String|Адрес электронной почты контакта.|
 |name|String|Отображаемое имя контакта.|
-|type |String |Тип адреса электронной почты. Возможные значения: `unknown`, `work`, `personal`, `main`, `other`. Значение по умолчанию —, то есть `unknown` **адрес** не был задан как определенный тип. |
-|осерлабел |String  |Чтобы указать настраиваемый тип адреса электронной почты, задайте для параметра **тип** значение `other` и назначьте **осерлабел** настраиваемой строке. Например, вы можете использовать конкретный адрес электронной почты для своих мероприятий. Задайте для параметра **Type** значение `other` , а для параметра **осерлабел** — настраиваемую строку (например,) `Volunteer work` . |
+|type |String |Тип адреса электронной почты. Возможные значения: `unknown`, `work`, `personal`, `main`, `other`. Значение по умолчанию — `unknown`это означает, **что адрес** не был задан как конкретный тип. |
+|otherLabel |String  |Чтобы указать пользовательский тип адреса электронной почты, `other`задайте тип и назначьте **otherLabel** настраиваемой строке. Например, вы можете использовать определенный адрес электронной почты для своих действий во время работы с доброволителями. **Задайте** тип в `other`значение **otherLabel** и задайте настраиваемую строку, например `Volunteer work`. |
 
 ## <a name="json-representation"></a>Представление JSON
 

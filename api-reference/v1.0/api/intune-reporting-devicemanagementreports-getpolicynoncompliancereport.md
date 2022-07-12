@@ -1,18 +1,18 @@
 ---
-title: действие getPolicyNonComplianceReport
+title: Действие getPolicyNonComplianceReport
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8185861c8e70d6cfe56bfc58e18e6341deba4092
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 277aec84e1d00e004ff9d169d65a6707aa9e1cb3
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455895"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732690"
 ---
-# <a name="getpolicynoncompliancereport-action"></a>действие getPolicyNonComplianceReport
+# <a name="getpolicynoncompliancereport-action"></a>Действие getPolicyNonComplianceReport
 
 Пространство имен: microsoft.graph
 
@@ -41,7 +41,7 @@ POST /deviceManagement/reports/getPolicyNonComplianceReport
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,17 +54,17 @@ POST /deviceManagement/reports/getPolicyNonComplianceReport
 |name|String|Пока не задокументировано.|
 |select|Коллекция строк|Н/Д|
 |search|String|Пока не задокументировано.|
-|groupBy|Коллекция строк|Н/Д|
-|orderBy|Коллекция строк|Н/Д|
+|Groupby|Коллекция строк|Н/Д|
+|Orderby|Коллекция строк|Н/Д|
 |skip|Int32|Пока не задокументировано.|
 |top|Int32|Пока не задокументировано.|
-|sessionId|String|Пока не задокументировано.|
+|Sessionid|String|Пока не задокументировано.|
 |filter|String|Пока не задокументировано.|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успешного действия это действие возвращает код `200 OK` отклика и поток в тексте ответа.
+В случае успешного выполнения это действие возвращает код `200 OK` отклика и поток в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -106,6 +106,8 @@ Content-Length: 95
   "value": "Z2V0UG9saWN5Tm9uQ29tcGxpYW5jZVJlcG9ydCBJbnR1bmUgRG9jIFNhbXBsZSAtNjU2NTI5OTUw"
 }
 ```
+
+
 
 
 

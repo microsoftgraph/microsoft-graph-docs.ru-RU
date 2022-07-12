@@ -1,18 +1,18 @@
 ---
-title: importedWindowsAutopilotDeviceIdentityUploadStatus enum type
+title: Тип перечисления importedWindowsAutopilotDeviceIdentityUploadStatus
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0165772943c001d8a9d87c7a6b33a6dbc526b682
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 28d82f43c406a748feb9fe33959901612c8058b1
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446205"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722952"
 ---
-# <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>importedWindowsAutopilotDeviceIdentityUploadStatus enum type
+# <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>Тип перечисления importedWindowsAutopilotDeviceIdentityUploadStatus
 
 Пространство имен: microsoft.graph
 
@@ -23,10 +23,12 @@ ms.locfileid: "60446205"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|noUpload|0|Нет состояния загрузки.|
-|ожидание|1|Состояние ожидания.|
-|complete|2|Полный статус.|
+|noUpload|0|Состояние отправки не отображается.|
+|Ожидающие|1|Состояние ожидания.|
+|complete|2|Состояние завершения.|
 |error|3|Состояние ошибки.|
+
+
 
 
 

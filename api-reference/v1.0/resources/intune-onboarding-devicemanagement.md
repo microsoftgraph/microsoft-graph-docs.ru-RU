@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ace2308490e53041fc304fb612db6fbe6948427e
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 0dca84be81fce986f8c1dea3016c146d4f866aa4
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455543"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731213"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -30,7 +30,7 @@ ms.locfileid: "60455543"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этого объекта|
+|id|String|Уникальный идентификатор для этой сущности|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|Ресурс intuneBrand содержит данные, которые используются для настройки внешнего вида приложений "Корпоративный портал" и веб-портала пользователя.|
 
 ## <a name="relationships"></a>Связи
@@ -42,7 +42,7 @@ ms.locfileid: "60455543"
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md)|Параметры локального условного доступа в Exchange. Для локального условного доступа устройства должны быть зарегистрированы для доступа к почте и поддерживать его.|
 |Объекты mobileThreatDefenseConnector|Коллекция объектов [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md)|Список соединителей Mobile Threat Defense, настроенных с помощью клиента.|
 |Объекты deviceManagementPartner|Коллекция объектов [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|Список партнеров по управлению устройствами, настроенных с помощью клиента.|
-|complianceManagementPartners|[коллекция complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Список партнеров по управлению соответствием требованиям, настроенный клиентом.|
+|complianceManagementPartners|[Коллекция complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Список партнеров по управлению соответствием требованиям, настроенных клиентом.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -88,6 +88,8 @@ ms.locfileid: "60455543"
   }
 }
 ```
+
+
 
 
 

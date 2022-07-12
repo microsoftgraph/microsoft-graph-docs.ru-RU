@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c70df1e1bd2708865c17ba119ae5cd395aa62455
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 767292c6606294f383487f4aff4f20eda5f20f1f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453311"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720768"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -55,6 +55,8 @@ ms.locfileid: "60453311"
   "subscriptionState": "String"
 }
 ```
+
+
 
 
 

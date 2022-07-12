@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c49073d1ae8ae80f6dd0923ba4bdd3143ae268f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ef40d38464f914681cbc7b6dd0b68976ee5cdff7
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445293"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731801"
 ---
 # <a name="list-devicecompliancepolicies"></a>Перечисление объектов deviceCompliancePolicy
 
@@ -41,7 +41,7 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -79,6 +79,8 @@ Content-Length: 393
   ]
 }
 ```
+
+
 
 
 

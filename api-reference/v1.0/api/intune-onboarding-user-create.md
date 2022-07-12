@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e60595619ae8e08c1f76aa414ef7984855334915
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f7adf8cbc6ce9505936a6f8dae6007a653bc1789
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448683"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732200"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -41,7 +41,7 @@ POST /users
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -87,6 +87,8 @@ Content-Length: 126
   "deviceEnrollmentLimit": 5
 }
 ```
+
+
 
 
 

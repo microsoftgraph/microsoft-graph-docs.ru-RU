@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса Локализеддескриптион
-description: Представляет локализованное описание термина в банке терминов.
+title: Тип ресурса localizedDescription
+description: Представляет локализованное описание, используемое для описания термина в хранилище терминов.
 author: mohitpcad
-localization_priority: Normal
-ms.prod: Sharepoint
+ms.localizationpriority: medium
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 738555750c22f3ffdd5fbd43c8b1849888e0a40f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8506bcb39eeb006f6cea45c1f2d0574af0b71c65
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973619"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732347"
 ---
-# <a name="localizeddescription-resource-type"></a>Тип ресурса Локализеддескриптион
+# <a name="localizeddescription-resource-type"></a>Тип ресурса localizedDescription
 
-Пространство имен: Microsoft. Graph. банка
+Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет локализованное описание [термина] в [банке]терминов.
+Представляет локализованное описание, используемое для описания [термина] в хранилище [терминов].
 
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|description|String|Описание на языке локализации.|
-|лангуажетаг|String|Тег языка для метки.|
+|description|String|Описание на локализованных языках.|
+|languageTag|String|Тег языка для метки.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
@@ -47,8 +47,8 @@ ms.locfileid: "47973619"
 
 [microsoft.graph.termStore.term]: termStore-term.md
 [microsoft.graph.termStore.store]: termStore-store.md
-[банком]: ../resources/termstore-term.md
-[восстановлен]: ../resources/termstore-store.md
+[Термин]: ../resources/termstore-term.md
+[Магазин]: ../resources/termstore-store.md
 
 <!--
 {
@@ -58,7 +58,7 @@ ms.locfileid: "47973619"
   "section": "documentation",
   "tocPath": "TermLocalizedDescriptionFacet",
   "tocBookmarks": {
-    "Resources/termStore.termLocalizedDescription": "#"
+    "Resources/termStore.termLocalizedDescription&quot;: &quot;#"
   },
   "suppressions": []
 }

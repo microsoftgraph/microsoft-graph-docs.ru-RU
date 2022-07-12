@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2f8deabefd05a67d0ffc0fa31d6f04e98d60eac4
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 0ded6effb1af163307462b5cfeb7a86c19c1ea11
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450842"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733726"
 ---
 # <a name="managedappregistration-resource-type"></a>Тип ресурса managedAppRegistration
 
@@ -39,7 +39,7 @@ ManagedAppEntity — это базовый тип для всех осталь�
 |deviceType|String|Тип главного устройства.|
 |deviceTag|String|Тег, который создан с использованием пакета SDK для управления приложениями и позволяет связать приложения, размещенные на одном устройстве. Мы не гарантируем, что приложения будут связаны во всех состояниях.|
 |deviceName|String|Имя главного устройства.|
-|flaggedReasons|[коллекция managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Нуль или более причин, по которым помечается регистрация приложения например приложения, запущенного на устройстве с административным доступом.|
+|flaggedReasons|[Коллекция managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Нуль или более причин, по которым помечается регистрация приложения например приложения, запущенного на устройстве с административным доступом.|
 |userId|String|ИД пользователя, к которому относится эта регистрация приложения.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Идентификатор пакета приложения.|
 |id|String|Ключ объекта.|
@@ -83,6 +83,8 @@ ManagedAppEntity — это базовый тип для всех осталь�
   "version": "String"
 }
 ```
+
+
 
 
 

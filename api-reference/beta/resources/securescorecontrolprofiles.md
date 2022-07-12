@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: security
 author: preetikr
-ms.openlocfilehash: dd4e9ee6372e9d063515ad83e851008e01ec6b60
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 4d401b4003ef8ce0a4384daf16a03ce9d2851694
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900151"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735952"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>Тип ресурса secureScoreControlProfile
 
@@ -33,30 +33,30 @@ ms.locfileid: "65900151"
 |Имя |Тип |Описание |
 |:--|:--|:--|
 |   azureTenantId   |   String  |   Строка GUID для идентификатора клиента.  |
-|   controlName |   Строка  |   Имя элемента управления. |
-|   title   |   Строка  |   Заголовок элемента управления.   |
+|   controlName |   String  |   Имя элемента управления. |
+|   title   |   String  |   Заголовок элемента управления.   |
 | complianceInformation | [Коллекция complianceInformation](complianceinformation.md) | Коллекция сведений о соответствии требованиям, связанных с управлением оценкой безопасности |
-|   controlCategory |   Строка  |   Категория действий управления (учетная запись, данные, устройство, приложения, инфраструктура).  |
+|   controlCategory |   String  |   Категория действий управления (учетная запись, данные, устройство, приложения, инфраструктура).  |
 |   actionType  |   String  |   Тип действия элемента управления (Config, Review, Behavior). |
 |   service |   String  |   Служба, владеющую элементом управления (Exchange, Sharepoint, Azure AD). |
-|   maxScore |  Строка  |   Текущая полученная максимальная оценка за указанную дату.   |
-|   Уровня |  Строка  |   Уровень управления (Core, Глубина защиты, Дополнительно.)    |
-|   userImpact |    Строка  | Влияние пользователя на реализацию контроля (низкий, средний, высокий).    |
-|   implementationCost |    Строка  |   Затраты на ресурсы для управления имлемментациями (низкая, средняя, высокая). |
+|   maxScore |  String  |   Текущая полученная максимальная оценка за указанную дату.   |
+|   Уровня |  String  |   Уровень управления (Core, Глубина защиты, Дополнительно.)    |
+|   userImpact |    String  | Влияние пользователя на реализацию контроля (низкий, средний, высокий).    |
+|   implementationCost |    String  |   Затраты на ресурсы для управления имлемментациями (низкая, средняя, высокая). |
 |   rank |  Int32   |   Рейтинг элементов управления в стеке корпорации Майкрософт.   |
 |   Угроз |   Коллекция String   |   Список угроз, которые устраняет элемент управления (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling, spoofing). |
-|   Устаревшие |    Boolean |   Флаг, указывающий, является ли элемент управления нерекомендуемым.   |
-|   Исправления |   Строка  |   Описание того, что поможет устранить элемент управления. |
-|   remediationImpact | Строка  |   Описание влияния на пользователей исправления. |
-|   actionUrl | Строка  |   URL-адрес, по которому можно выполнить действие элемента управления. |
+|   Устаревшие |    Логическое |   Флаг, указывающий, является ли элемент управления нерекомендуемым.   |
+|   Исправления |   String  |   Описание того, что поможет устранить элемент управления. |
+|   remediationImpact | String  |   Описание влияния на пользователей исправления. |
+|   actionUrl | String  |   URL-адрес, по которому можно выполнить действие элемента управления. |
 |   controlStateUpdates | [Коллекция secureScoreControlStateUpdate](securescorecontrolstateupdate.md) |    Флаг, указывающий, где клиент помечал элемент управления (игнорировать, thirdParty, reviewed) (поддерживает [обновление](../api/securescorecontrolprofiles-update.md)). |
 |   vendorInformation | [securityVendorInformation](securityvendorinformation.md) |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

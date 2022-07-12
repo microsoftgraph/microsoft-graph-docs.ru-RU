@@ -1,36 +1,38 @@
 ---
-title: тип enum deviceRegistrationState
-description: Состояние регистрации устройств.
+title: Тип перечисления deviceRegistrationState
+description: Состояние регистрации устройства.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 032b4bcdc6b84df6d02fccde5e64b16a0d1dd92b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a104fb6f347d24dbb2e3d373a1046148486b387e
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447377"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730639"
 ---
-# <a name="deviceregistrationstate-enum-type"></a>тип enum deviceRegistrationState
+# <a name="deviceregistrationstate-enum-type"></a>Тип перечисления deviceRegistrationState
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние регистрации устройств.
+Состояние регистрации устройства.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notRegistered|0|Устройство не зарегистрировано.|
-|зарегистрирована|2|Устройство зарегистрировано.|
-|отменено|3|Устройство было заблокировано, вытерто или отошедо.|
-|keyConflict|4 |У устройства есть ключевой конфликт.|
-|approvalPending|5|Устройство находится на стадии утверждения.|
+|Зарегистрированных|2|Устройство зарегистрировано.|
+|Отозван|3|Устройство заблокировано, очищено или удалено.|
+|keyConflict|4|У устройства есть конфликт ключей.|
+|approvalPending|5|Устройство ожидает утверждения.|
 |certificateReset|6 |Сертификат устройства был сброшен.|
-|notRegisteredPendingEnrollment|7 |Устройство не регистрируется и не ожидает регистрации.|
+|notRegisteredPendingEnrollment|7 |Устройство не зарегистрировано и ожидает регистрации.|
 |unknown|8 |Состояние регистрации устройства неизвестно.|
+
+
 
 
 

@@ -1,33 +1,35 @@
 ---
-title: тип enum deviceManagementExchangeAccessState
-description: Состояние Exchange доступа.
+title: Тип перечисления deviceManagementExchangeAccessState
+description: Состояние доступа к Обмену устройствами.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b704cc1106bc0b203363dcbdad6019afeee5949d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7d7ccbf9980d4da614364ff5a434012423204b69
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452517"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730646"
 ---
-# <a name="devicemanagementexchangeaccessstate-enum-type"></a>тип enum deviceManagementExchangeAccessState
+# <a name="devicemanagementexchangeaccessstate-enum-type"></a>Тип перечисления deviceManagementExchangeAccessState
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние Exchange доступа.
+Состояние доступа к Обмену устройствами.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Состояние доступа, обнаруженного в Exchange|
-|unknown|1|Состояние доступа устройства к Exchange неизвестно|
-|разрешено|2|Устройство имеет доступ к Exchange|
-|заблокировано|3|Устройство заблокировано в Exchange|
-|карантин|4 |Устройство находится на карантине в Exchange|
+|none|0|Состояние доступа из Exchange не обнаружено|
+|unknown|1|Состояние доступа устройств к Exchange неизвестно|
+|Разрешены|2|Устройство имеет доступ к Exchange|
+|Заблокирован|3|Устройство заблокировано в Exchange|
+|Карантин|4|Устройство помещено в карантин в Exchange|
+
+
 
 
 

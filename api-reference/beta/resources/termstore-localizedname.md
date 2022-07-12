@@ -1,36 +1,35 @@
 ---
-title: Тип ресурса Локализеднаме
-description: Представляет локализованное имя, используемое в банке терминов, которое определяет имя на локализованном языке.
+title: Тип ресурса localizedName
+description: Представляет локализованное имя, используемое в хранилище терминов, которое определяет имя на локализованных языках.
 author: mohitpcad
-ms.author: mopathak
-localization_priority: Normal
-ms.prod: sharepoint-taxonomy
+ms.localizationpriority: medium
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 5c9e6d4cd614c242e8f915fde71eadd07aa5de15
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3f6308689f1f370e3463b9cc095da211dc612de1
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973608"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734244"
 ---
-# <a name="localizedname-resource-type"></a>Тип ресурса Локализеднаме
+# <a name="localizedname-resource-type"></a>Тип ресурса localizedName
 
-Пространство имен: Microsoft. Graph. банка
+Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет локализованное имя, используемое в [банке]терминов, которое определяет имя на локализованном языке. Дополнительные сведения см. в разделе [локализедлабел].
+Представляет локализованное имя, используемое в [хранилище терминов], которое определяет имя на локализованных языках. Дополнительные сведения см. в [разделе localizedLabel].
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|лангуажетаг|String|Тег языка для метки.|
-|name|String|Имя на языке локализации.|
+|languageTag|String|Тег языка для метки.|
+|name|String|Имя на локализованных языках.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
@@ -48,7 +47,7 @@ ms.locfileid: "47973608"
 [microsoft.graph.termStore.localizedLabel]: termstore-localizedlabel.md
 [microsoft.graph.termstore.store]: termstore-store.md
 [store]: ../resources/termstore-store.md
-[локализедлабел]: ../resources/termstore-localizedlabel.md
+[localizedLabel]: ../resources/termstore-localizedlabel.md
 
 <!--
 {
@@ -58,7 +57,7 @@ ms.locfileid: "47973608"
   "section": "documentation",
   "tocPath": "TermLocalizedNameFacet",
   "tocBookmarks": {
-    "Resources/termStore.termLocalizedName": "#"
+    "Resources/termStore.termLocalizedName&quot;: &quot;#"
   },
   "suppressions": []
 }

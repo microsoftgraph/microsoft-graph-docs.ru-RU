@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 94452dea82b3857ecb394a251eb798a24d34d5c5
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 760aebbaea2089a018ab477303c516541a2baa3a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445930"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723407"
 ---
 # <a name="update-manageddevicemobileappconfigurationuserstatus"></a>Обновление объекта managedDeviceMobileAppConfigurationUserStatus
 
@@ -41,7 +41,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -99,6 +99,8 @@ Content-Length: 355
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
 
 
 

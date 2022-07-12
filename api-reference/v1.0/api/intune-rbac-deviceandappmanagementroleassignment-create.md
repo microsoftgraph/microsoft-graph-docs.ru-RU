@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 261578bf213d2721d004b1db788bc510c53dd3ca
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e8c9d5b9db7de7111949d81ab0ae7a62e943db5f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455944"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732739"
 ---
 # <a name="create-deviceandappmanagementroleassignment"></a>Создание объекта deviceAndAppManagementRoleAssignment
 
@@ -41,7 +41,7 @@ POST /deviceManagement/roleAssignments
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -104,6 +104,8 @@ Content-Length: 307
   ]
 }
 ```
+
+
 
 
 

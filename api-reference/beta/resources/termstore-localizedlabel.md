@@ -1,38 +1,38 @@
 ---
-title: тип локализованных ресурсовLabel
-description: Представляет метку для термина в магазине терминов.
+title: Тип ресурса localizedLabel
+description: Представляет метку для термина в хранилище терминов.
 author: mohitpcad
-localization_priority: Normal
-ms.prod: Sharepoint
+ms.localizationpriority: medium
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 4d7de3c9567c20659af4c863d2cf1ac248beff6b
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 1317d51a113da35289b06b035c43316059edf7d0
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696312"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731563"
 ---
-# <a name="localizedlabel-resource-type"></a>тип локализованных ресурсовLabel
+# <a name="localizedlabel-resource-type"></a>Тип ресурса localizedLabel
 
 Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет метку для [термина в] магазине [терминов].
+Представляет метку для термина [в] хранилище [терминов].
 
-Определяет метки, связанные с заданным термином.
+Идентифицирует метки, связанные с заданным термином.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |isDefault|Boolean|Указывает, является ли метка меткой по умолчанию.|
-|LanguageTag|String|Тег языка для метки.|
+|languageTag|String|Тег языка для метки.|
 |name|String|Имя метки.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
@@ -52,8 +52,8 @@ ms.locfileid: "52696312"
 [microsoft.graph.termStore.term]: termstore-term.md
 [microsoft.graph.termStore.localizedName]: termstore-localizedname.md
 [microsoft.graph.termStore.store]: termstore-store.md
-[термин]: ../resources/termstore-term.md
-[магазин]: ../resources/termstore-store.md
+[Термин]: ../resources/termstore-term.md
+[Магазин]: ../resources/termstore-store.md
 
 
 <!--

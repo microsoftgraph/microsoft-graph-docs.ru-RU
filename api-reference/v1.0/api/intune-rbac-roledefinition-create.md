@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c88becbcc57254a561a52519bfe27c5243c8f98b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7aeba9b5d668bf3429889217a49813c1e5817bcc
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457675"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732186"
 ---
 # <a name="create-roledefinition"></a>Создание roleDefinition
 
@@ -41,7 +41,7 @@ POST /deviceManagement/roleDefinitions
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -126,6 +126,8 @@ Content-Length: 629
   "isBuiltIn": true
 }
 ```
+
+
 
 
 

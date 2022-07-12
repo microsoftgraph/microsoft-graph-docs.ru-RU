@@ -1,33 +1,35 @@
 ---
-title: тип enum appLockerApplicationControlType
-description: Возможные значения типов управления приложениями AppLocker
+title: Тип перечисления appLockerApplicationControlType
+description: Возможные значения типов элементов управления приложенияМи AppLocker
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dbd02e9add1fe098c4f52762bc9aa8902633fc37
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 94c6bb7c68bb97afa769de05f872875638f4bd8f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457318"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730723"
 ---
-# <a name="applockerapplicationcontroltype-enum-type"></a>тип enum appLockerApplicationControlType
+# <a name="applockerapplicationcontroltype-enum-type"></a>Тип перечисления appLockerApplicationControlType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения типов управления приложениями AppLocker
+Возможные значения типов элементов управления приложенияМи AppLocker
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Значение устройства по умолчанию, не выбранный тип управления приложениями.|
-|enforceComponentsAndStoreApps|1|Обеспечение Windows компонентов и хранения приложений.|
-|auditComponentsAndStoreApps|2|Аудит Windows компонентов и хранения приложений.|
-|enforceComponentsStoreAppsAndSmartlocker|3|Обеспечение Windows компонентов, хранения приложений и смарт-шкафчик.|
-|auditComponentsStoreAppsAndSmartlocker|4 |Аудит Windows компонентов, хранения приложений и смарт-шкафчик.|
+|notConfigured|0|Значение устройства по умолчанию, тип управления приложениями не выбран.|
+|enforceComponentsAndStoreApps|1|Принудительное применение компонентов Windows и приложений магазина.|
+|auditComponentsAndStoreApps|2|Аудит компонента Windows и хранение приложений.|
+|enforceComponentsStoreAppsAndSmartlocker|3|Принудительно применяйте компоненты Windows, храните приложения и смарт-блокировку.|
+|auditComponentsStoreAppsAndSmartlocker|4|Аудит компонентов Windows, хранение приложений и смарт-блокировки.|
+
+
 
 
 

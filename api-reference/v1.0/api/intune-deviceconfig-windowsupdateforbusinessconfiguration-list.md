@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9b25eae228acb94f1ca812ab240f02caf05390b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f174c07c3f3053a3ffa11d83a7968fa5475ec50a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453669"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722805"
 ---
 # <a name="list-windowsupdateforbusinessconfigurations"></a>Перечисление объектов windowsUpdateForBusinessConfiguration
 
@@ -41,7 +41,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -96,6 +96,8 @@ Content-Length: 1211
   ]
 }
 ```
+
+
 
 
 

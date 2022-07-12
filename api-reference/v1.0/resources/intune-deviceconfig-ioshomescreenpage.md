@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса iosHomeScreenPage
-description: Страница, содержащая приложения, папки и веб-клипы на домашнем экране.
+description: Страница, содержащая приложения, папки и веб-клипы на начальном экране.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e094fccef5c97e0246f32a857fa3edac7874e082
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 57abf90757c480b4e86aa255d10a8fc431bb637e
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454828"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722700"
 ---
 # <a name="ioshomescreenpage-resource-type"></a>Тип ресурса iosHomeScreenPage
 
@@ -18,13 +18,13 @@ ms.locfileid: "60454828"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Страница, содержащая приложения, папки и веб-клипы на домашнем экране.
+Страница, содержащая приложения, папки и веб-клипы на начальном экране.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Имя страницы|
-|icons|Коллекция [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|Список приложений, папок и веб-клипов, которые будут отображаться на странице. Эта коллекция может содержать не более 500 элементов.|
+|icons|Коллекция [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|Список приложений, папок и веб-клипов, отображаемых на странице. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -61,6 +61,8 @@ ms.locfileid: "60454828"
   ]
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 16337b48ef340788711528bade7ab50a50b272c7
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ffd03973a7231aeb007d2df0d6d1c5657c63bc8d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60444626"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729710"
 ---
 # <a name="create-iosupdatedevicestatus"></a>Создание объекта iosUpdateDeviceStatus
 
@@ -41,7 +41,7 @@ POST /deviceManagement/iosUpdateStatuses
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,7 +52,7 @@ POST /deviceManagement/iosUpdateStatuses
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|Состояние установки отчета о политике. Возможные значения: `success` `available` , , , , `idle` , `unknown` , `downloading` `downloadFailed` `downloadRequiresComputer` , `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installing` `installInsufficientSpace` `installInsufficientPower` `installPhoneCallInProgress` `installFailed` `notSupportedOperation` `sharedDeviceUserLoggedInError` `deviceOsHigherThanDesiredOsVersion` .|
+|installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|Состояние установки отчета о политике. Возможные значения: `success`, , `available`, `idle`, `unknown`, `downloading`, `downloadFailed``downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `installing``downloadInsufficientNetwork`, , `installInsufficientSpace``installInsufficientPower`, , `installPhoneCallInProgress`, `installFailed`, , `notSupportedOperation`, , . `deviceOsHigherThanDesiredOsVersion``sharedDeviceUserLoggedInError`|
 |osVersion|String|Версия устройства в отчете.|
 |deviceId|String|ИД устройства в отчете.|
 |userId|String|ИД пользователя в отчете.|
@@ -117,6 +117,8 @@ Content-Length: 601
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
 
 
 

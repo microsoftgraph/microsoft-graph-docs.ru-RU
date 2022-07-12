@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 56316181e1a5541e09d8d1b48d68e7166ff1a6a3
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 9be804ed341a4d3db2f1ffa78b95caaba640cf2b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446528"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733551"
 ---
 # <a name="update-windows10mobilecompliancepolicy"></a>Update windows10MobileCompliancePolicy
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -145,6 +145,8 @@ Content-Length: 964
   "storageRequireEncryption": true
 }
 ```
+
+
 
 
 

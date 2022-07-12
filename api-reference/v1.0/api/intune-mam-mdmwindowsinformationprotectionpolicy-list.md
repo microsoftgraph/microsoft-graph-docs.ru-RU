@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be7cd5cf3675b038e51587b6cf189cace4d0d5ca
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a06763b0de3c6e672fc97211036c870ffb448f45
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450104"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731339"
 ---
 # <a name="list-mdmwindowsinformationprotectionpolicies"></a>Перечисление объектов mdmWindowsInformationProtectionPolicy
 
@@ -41,7 +41,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -197,6 +197,8 @@ Content-Length: 4610
   ]
 }
 ```
+
+
 
 
 

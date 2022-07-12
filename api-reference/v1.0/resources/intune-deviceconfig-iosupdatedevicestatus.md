@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b6ca827545b2b6883be9c62a101b6a131b0c8415
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 53d9e4f3d6070b8a9a3341264d9d96082c1823e8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447265"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732368"
 ---
 # <a name="iosupdatedevicestatus-resource-type"></a>Тип ресурса iosUpdateDeviceStatus
 
@@ -33,7 +33,7 @@ ms.locfileid: "60447265"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|Состояние установки отчета о политике. Возможные значения: `success` `available` , , , , `idle` , `unknown` , `downloading` `downloadFailed` `downloadRequiresComputer` , `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installing` `installInsufficientSpace` `installInsufficientPower` `installPhoneCallInProgress` `installFailed` `notSupportedOperation` `sharedDeviceUserLoggedInError` `deviceOsHigherThanDesiredOsVersion` .|
+|installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|Состояние установки отчета о политике. Возможные значения: `success`, , `available`, `idle`, `unknown`, `downloading`, `downloadFailed``downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `installing``downloadInsufficientNetwork`, , `installInsufficientSpace``installInsufficientPower`, , `installPhoneCallInProgress`, `installFailed`, , `notSupportedOperation`, , . `deviceOsHigherThanDesiredOsVersion``sharedDeviceUserLoggedInError`|
 |osVersion|String|Версия устройства в отчете.|
 |deviceId|String|ИД устройства в отчете.|
 |userId|String|ИД пользователя в отчете.|
@@ -73,6 +73,8 @@ ms.locfileid: "60447265"
   "userPrincipalName": "String"
 }
 ```
+
+
 
 
 

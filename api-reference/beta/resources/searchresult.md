@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Ресурс SearchResult указывает, что элемент представляет собой отклик на поисковый запрос.
 ms.date: 09/10/2017
 title: SearchResult
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 8ee83da0ffdd5d2ed577ba1b7165c05f5a63b1e8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: files
+ms.openlocfilehash: 07dbd5e20cfb91ed40a20cbf7cc63b32900e7228
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063949"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731605"
 ---
 # <a name="searchresult-resource-type"></a>Тип ресурса SearchResult
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0545e93bce9698b5af8994df19f7d08c6fbe5c7a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: dc5c9140bbbe9ea4608a9f4a0c144d89a3e696a8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457374"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729869"
 ---
 # <a name="roleassignment-resource-type"></a>Тип ресурса roleAssignment
 
@@ -61,6 +61,8 @@ ms.locfileid: "60457374"
   ]
 }
 ```
+
+
 
 
 

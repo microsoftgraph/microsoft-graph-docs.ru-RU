@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3336de9abc3f4ea38cc6d3e519ae902c1ba6cb89
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a63e03ae711d55a521c22273296e85e9b9b8fe58
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448059"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723099"
 ---
 # <a name="delete-devicemanagementpartner"></a>Удаление объекта deviceManagementPartner
 
@@ -41,7 +41,7 @@ DELETE /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceManagementPartner
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

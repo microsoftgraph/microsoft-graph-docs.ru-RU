@@ -5,12 +5,12 @@ author: preetikr
 ms.localizationpriority: high
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: a6615ef05a987e96ffec991187b213233ed3703b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 887c79aee4a498c7aadd1176b794c5c218ace9ef
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136625"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731185"
 ---
 # <a name="list-alerts"></a>Перечисление оповещений
 
@@ -51,7 +51,7 @@ GET /security/alerts?$filter={property} eq '{property-value}' and {property} eq 
 - `$top` – Возвращает объединенные лучшие результаты от каждого поставщика API безопасности.  
 - `$filter`
 
-В таблице ниже перечислены ключевые слова `$filter` по именам поставщиков. Несмотря на то, что некоторые из этих продуктов поменяли название в ходе ребрендинга, API еще не обновлен. Ключевые слова фильтра будут продолжать использовать устаревшие названия до дальнейшего уведомления. Подробности см. в [журнале изменений](https://developer.microsoft.com/en-us/graph/changelog).
+В таблице ниже перечислены ключевые слова `$filter` по именам поставщиков. Несмотря на то, что некоторые из этих продуктов поменяли название в ходе ребрендинга, API еще не обновлен. Ключевые слова фильтра будут продолжать использовать устаревшие названия до дальнейшего уведомления. Подробности см. в [журнале изменений](https://developer.microsoft.com/graph/changelog).
 
 | Наименование поставщика      |ключевое слово $filter|
 |:----------|:----------|
@@ -71,9 +71,9 @@ GET /security/alerts?$filter={property} eq '{property-value}' and {property} eq 
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {код}. Обязательно.|
+| Авторизация  | Носитель {code}. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода. Текст запроса будет игнорироваться.
 
@@ -125,7 +125,7 @@ GET https://graph.microsoft.com/v1.0/security/alerts
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

@@ -1,18 +1,18 @@
 ---
-title: тип списка appListType
+title: Тип перечисления appListType
 description: Возможные значения списка приложений для соответствия требованиям.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a5410919bb33a4a77d4d774108157519fad9ae4d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: b801765b4524a22a6525a41d6635daa382564e8e
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455923"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722770"
 ---
-# <a name="applisttype-enum-type"></a>тип списка appListType
+# <a name="applisttype-enum-type"></a>Тип перечисления appListType
 
 Пространство имен: microsoft.graph
 
@@ -23,9 +23,11 @@ ms.locfileid: "60455923"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Значение по умолчанию, без намерения.|
-|appsInListCompliant|1|В списке представлены приложения, которые будут считаться совместимыми (только приложения в списке совместимы).|
-|appsNotInListCompliant|2|В списке представлены приложения, которые будут считаться не соответствующими требованиям (все приложения совместимы, за исключением приложений в списке).|
+|none|0|Значение по умолчанию, без намерения.|
+|appsInListCompliant|1|Список представляет приложения, которые будут считаться совместимыми (только приложения в списке соответствуют требованиям).|
+|appsNotInListCompliant|2|Список представляет приложения, которые будут считаться несоответствующими (все приложения соответствуют требованиям, кроме приложений в списке).|
+
+
 
 
 

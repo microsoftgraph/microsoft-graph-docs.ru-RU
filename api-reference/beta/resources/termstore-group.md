@@ -1,56 +1,56 @@
 ---
 author: mohitpcad
-title: Тип группового ресурса
+title: Тип ресурса группы
 doc_type: resourcePageType
-description: Представляет группу, используемую в магазине терминов.
+description: Представляет группу, используемую в хранилище терминов.
 ms.localizationpriority: medium
 ms.prod: taxonomy
-ms.openlocfilehash: c43001533c5d0b81eb0f9064915a33d9d3e93815
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 3bd7f818cf9e38dcffcba9fac0c93b248d1d10d9
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62347390"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732683"
 ---
-# <a name="group-resource-type"></a>Тип группового ресурса
+# <a name="group-resource-type"></a>Тип ресурса группы
 
 Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Представляет группу, используемую в магазине [терминов](../resources/termstore-store.md). Группа — это логическая иерархия, которая содержит коллекцию наборов под ней. 
+Представляет группу, используемую в хранилище [терминов](../resources/termstore-store.md). Группа — это логическая иерархия, содержащая под ней коллекцию наборов. 
 
-Наследуется [от сущности](../resources/entity.md).
+Наследует [от сущности](../resources/entity.md).
 
 
 ## <a name="methods"></a>Методы
 
 | Метод                                                   | Тип возвращаемых данных       |    Описание|
 |:---------------------------------------------------------|:------------------|:---------------------|
-| [Создание группы](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Создание группы в магазине [терминов].|
-| [Получение группы](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | Извлечение данных группы в магазине [терминов].|
-| [Удаление группы](../api/termstore-group-delete.md)                     | Нет |  Удаление группы в магазине [терминов].|
+| [Создание группы](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Создайте группу в хранилище [терминов].|
+| [Получение группы](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | Получение данных группы в хранилище [терминов].|
+| [Удаление группы](../api/termstore-group-delete.md)                     | Нет |  Удаление группы в хранилище [терминов].|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство             | Тип               | Описание|
 |:---------------------|:-------------------|:------------------------------------|
 | createdDateTime      | DateTimeOffset     | Дата и время создания группы. Только для чтения.|
-| description          | string             | Описание, которое дает сведения об использовании термина.|
+| description          | string             | Описание, содержащее сведения об использовании термина.|
 | id                   | string             | Уникальный идентификатор группы. Только для чтения.|
 | displayName          | string             | Имя группы.|
 | scope                | string              | Возвращает тип группы. Возможные значения: `global`, `system` и `siteCollection`.|
-| parentSiteId         | string             | ID родительского сайта этой группы.|
+| parentSiteId         | String             | Идентификатор родительского сайта этой группы.|
 
 ## <a name="relationships"></a>Связи
 | Связь       | Тип                        | Описание|
 |:-------------------|:----------------------------|:--------------------------|
-| наборы           | [коллекция microsoft.graph.termStore.set][] | Все наборы в группе в магазине [терминов].|
+| Задает           | [Коллекция microsoft.graph.termStore.set][] | Все наборы в группе в банках [терминов].|
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже приводится представление JSON **группового** ресурса.
+Ниже приведено представление ресурса группы в **формате** JSON.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -77,7 +77,7 @@ ms.locfileid: "62347390"
 [microsoft.graph.termStore.set]: termstore-set.md
 [microsoft.graph.termStore.group]: termstore-group.md
 [microsoft.graph.termStore.store]: termstore-store.md
-[магазин]: ../resources/termstore-store.md
+[Магазин]: ../resources/termstore-store.md
 [group]: ../resources/termstore-group.md
 [set]: ../resources/termstore-set.md
 <!--

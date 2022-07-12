@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2be7a32a57890f2dd7cc3bed8e24c3c3ef2c6a0
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 299a2c4446405407004bc54a86df078198eda088
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453830"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730947"
 ---
 # <a name="list-iosvppapps"></a>Перечисление объектов iosVppApp
 
@@ -41,7 +41,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -109,6 +109,8 @@ Content-Length: 1575
   ]
 }
 ```
+
+
 
 
 

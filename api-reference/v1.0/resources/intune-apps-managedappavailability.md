@@ -1,30 +1,32 @@
 ---
-title: тип переуступки managedAppAvailability
-description: Доступность управляемого (MAM) приложения.
+title: Тип перечисления managedAppAvailability
+description: Доступность управляемого приложения (MAM).
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 31a8a343745050347fb131f86933d8d52802067a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a0665e72c38b3dddcf5ab624e23eaef8db2bbb44
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449624"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729589"
 ---
-# <a name="managedappavailability-enum-type"></a>тип переуступки managedAppAvailability
+# <a name="managedappavailability-enum-type"></a>Тип перечисления managedAppAvailability
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Доступность управляемого (MAM) приложения.
+Доступность управляемого приложения (MAM).
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|глобальный|0|Глобально доступное приложение для всех клиентов.|
-|lineOfBusiness|1|Ряд бизнес-приложений, закрытых для организации.|
+|Глобального|0|Глобально доступное приложение для всех клиентов.|
+|lineOfBusiness|1|Бизнес-приложения, частные для организации.|
+
+
 
 
 

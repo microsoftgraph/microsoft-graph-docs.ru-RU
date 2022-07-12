@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ced53e14f2aa3c8e69be42cf5920ab4994b36faf
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ca1bf30227049ff4603d52c4c6cc01b1a4d5558f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457563"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723022"
 ---
 # <a name="get-windowsinformationprotectionnetworklearningsummary"></a>Получение windowsInformationProtectionNetworkLearningSummary
 
@@ -44,7 +44,7 @@ GET /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wind
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -77,6 +77,8 @@ Content-Length: 213
   }
 }
 ```
+
+
 
 
 

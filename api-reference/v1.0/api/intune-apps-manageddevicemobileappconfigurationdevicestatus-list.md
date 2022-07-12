@@ -1,24 +1,24 @@
 ---
-title: Список managedDeviceMobileAppConfigurationDeviceStatuses
+title: Перечисление объектов managedDeviceMobileAppConfigurationDeviceStatuses
 description: Список свойств и связей объектов managedDeviceMobileAppConfigurationDeviceStatus.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dc3d3271d2f1f790d718f26860f39d2968504425
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 5bd0e6a2460869dcc83f627324709f642a02dcf6
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447743"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732634"
 ---
-# <a name="list-manageddevicemobileappconfigurationdevicestatuses"></a>Список managedDeviceMobileAppConfigurationDeviceStatuses
+# <a name="list-manageddevicemobileappconfigurationdevicestatuses"></a>Перечисление объектов managedDeviceMobileAppConfigurationDeviceStatuses
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей [объектов managedDeviceMobileAppConfigurationDeviceStatus.](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)
+Список свойств и связей объектов [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,14 +41,14 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код ответа и коллекцию объектов `200 OK` [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) в теле ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и коллекцию объектов [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -81,6 +81,8 @@ Content-Length: 563
   ]
 }
 ```
+
+
 
 
 

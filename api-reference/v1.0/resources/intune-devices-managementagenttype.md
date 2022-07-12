@@ -1,18 +1,18 @@
 ---
-title: тип enum managementAgentType
+title: Тип перечисления managementAgentType
 description: Тип агента управления.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1be194795738a23c43b43e3dc2cc75aec6a5181f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8e178c22a13e089b89b709757f38d9abb3cc04df
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449760"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731934"
 ---
-# <a name="managementagenttype-enum-type"></a>тип enum managementAgentType
+# <a name="managementagenttype-enum-type"></a>Тип перечисления managementAgentType
 
 Пространство имен: microsoft.graph
 
@@ -23,17 +23,19 @@ ms.locfileid: "60449760"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|eas|1|Устройство управляется Exchange сервером.|
-|mdm|2|Устройство управляется intune MDM.|
-|easMdm|3|Устройство управляется как сервером Exchange, так и MDM Intune.|
-|intuneClient|4 |Клиент Intune управляется.|
-|easIntuneClient|5|Устройство является двойным управляемым клиентом EAS и Intune.|
-|configurationManagerClient|8 |Устройство управляется диспетчером конфигурации.|
-|configurationManagerClientMdm|10 |Устройство управляется диспетчером конфигурации и MDM.|
-|configurationManagerClientMdmEas|11|Устройство управляется диспетчером конфигурации, MDM и Eas.|
+|Eas|1|Устройство управляется сервером Exchange Server.|
+|Mdm|2|Устройством управляет Intune MDM.|
+|easMdm|3|Устройством управляет сервер Exchange Server и Intune MDM.|
+|intuneClient|4|Intune управляемым клиентом.|
+|easIntuneClient|5|Устройство является EAS и Intune управляемым двойным клиентом.|
+|configurationManagerClient|8 |Устройством управляет Configuration Manager.|
+|configurationManagerClientMdm|10|Устройством управляет Configuration Manager MDM.|
+|ConfigurationManagerClientMdmEas|11|Устройством управляет Configuration Manager, MDM и Eas.|
 |unknown|16|Неизвестный тип агента управления.|
 |jamf|32|Атрибуты устройства извлекаются из Jamf.|
-|googleCloudDevicePolicyController|64|Устройство управляется cloudDPC От Google.|
+|googleCloudDevicePolicyController|64|Устройством управляет Google CloudDPC.|
+
+
 
 
 

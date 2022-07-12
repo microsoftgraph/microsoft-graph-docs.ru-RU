@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f09e624e5dafbef0c69a44314c0aaac7d3d93ad
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a9e6bfe2a9ce2f328052ba0f2acbd314faa96d55
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445317"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730261"
 ---
 # <a name="delete-termsandconditionsassignment"></a>Удаление объекта termsAndConditionsAssignment
 
@@ -41,7 +41,7 @@ DELETE /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{ter
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

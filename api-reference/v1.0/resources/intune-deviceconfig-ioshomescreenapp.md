@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d842896b16b8887a0663c0be23ee91c1d757bac8
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 5447133c15ddc1b5daa239464aded110a5897038
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449774"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732389"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>Тип ресурса iosHomeScreenApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "60449774"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Имя приложения. Наследуется от [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
-|bundleID|String|BundleID приложения, если isWebClip является ложным или URL-адрес веб-клипа, если isWebClip является правдой.|
+|bundleID|String|BundleID приложения, если isWebClip имеет значение false, или URL-адрес веб-клипа, если isWebClip имеет значение true.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -46,6 +46,8 @@ ms.locfileid: "60449774"
   "bundleID": "String"
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c8b383de794511b646736961366b51c86c18757
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 39131aca2ac16b548cdc4553b3cbd5adde1b95a3
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451481"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731444"
 ---
 # <a name="update-iosgeneraldeviceconfiguration"></a>Обновление объекта iosGeneralDeviceConfiguration
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -69,12 +69,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |appsVisibilityList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений в списке видимых/запускаемых приложений или списке скрытых/незапускаемых приложений (определяется свойством AppsVisibilityListType) (iOS 9.3 и более поздних версий). Эта коллекция может содержать не более 10 000 элементов.|
 |appsVisibilityListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Тип списка, определенного свойством AppsVisibilityList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |appStoreBlockAutomaticDownloads|Boolean|Указывает, следует ли запретить автоматическое скачивание приложений, приобретенных на других устройствах, когда устройство находится в защищенном режиме (iOS 9.0 и более поздних версий).|
-|appStoreBlocked|Boolean|Указывает, следует ли запретить использовать App Store. Требуется контролируемое устройство для iOS 13 и более поздней.|
+|appStoreBlocked|Boolean|Указывает, следует ли запретить использовать App Store. Требуется защищенное устройство для iOS 13 и более поздних версий.|
 |appStoreBlockInAppPurchases|Boolean|Указывает, следует ли запретить пользователю совершать покупки из приложения.|
 |appStoreBlockUIAppInstallation|Boolean|Указывает, следует ли заблокировать приложение App Store, не ограничивая установку через ведущие приложения. Применяется только к защищенному режиму (iOS 9.0 и более поздних версий).|
 |appStoreRequirePassword|Boolean|Указывает, требуется ли пароль, когда вы используете приложение App Store.|
 |bluetoothBlockModification|Boolean|Указывает, можно ли изменять настройки Bluetooth, когда устройство находится в защищенном режиме (iOS 10.0 и более поздних версий).|
-|cameraBlocked|Boolean|Указывает, следует ли запретить доступ к камере устройства. Требуется контролируемое устройство для iOS 13 и более поздней.|
+|cameraBlocked|Boolean|Указывает, следует ли запретить доступ к камере устройства. Требуется защищенное устройство для iOS 13 и более поздних версий.|
 |cellularBlockDataRoaming|Boolean|Указывает, следует ли блокировать передачу данных в роуминге.|
 |cellularBlockGlobalBackgroundFetchWhileRoaming|Boolean|Указывает, следует ли заблокировать получение фоновых данных в роуминге.|
 |cellularBlockPerAppDataModification|Boolean|Указывает, можно ли изменять настройки передачи данных по сотовой сети в приложении, когда устройство находится в защищенном режиме.|
@@ -96,24 +96,24 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |documentsBlockUnmanagedDocumentsInManagedApps|Boolean|Указывает, следует ли запретить пользователю просматривать неуправляемые документы в управляемых приложениях.|
 |emailInDomainSuffixes|Коллекция String|Адрес электронной почты без суффикса, соответствующего одной из этих строк, будет считаться внешним.|
 |enterpriseAppBlockTrust|Boolean|Указывает, следует ли запретить пользователю подтверждать доверие корпоративному приложению.|
-|enterpriseAppBlockTrustModification|Boolean|\[Неоконфигурированная настройка этого параметра и установка значения "true" не влияет \] на устройство.|
-|faceTimeBlocked|Boolean|Указывает, следует ли запретить использовать FaceTime. Требуется контролируемое устройство для iOS 13 и более поздней.|
-|findMyFriendsBlocked|Boolean|Указывает, следует ли блокировать изменения в "Найти друзей", когда устройство находится в режиме контроля.|
-|gamingBlockGameCenterFriends|Boolean|Указывает, следует ли запретить пользователю добавлять друзей в Game Center. Требуется контролируемое устройство для iOS 13 и более поздней.|
-|gamingBlockMultiplayer|Boolean|Указывает, следует ли запретить пользователю играть с несколькими игроками. Требуется контролируемое устройство для iOS 13 и более поздней.|
+|enterpriseAppBlockTrustModification|Boolean|\[Нерекомендуемая\] настройка этого параметра и установка значения true не влияет на устройство.|
+|faceTimeBlocked|Boolean|Указывает, следует ли запретить использовать FaceTime. Требуется защищенное устройство для iOS 13 и более поздних версий.|
+|findMyFriendsBlocked|Boolean|Указывает, следует ли блокировать изменения в функции "Найти друзей", когда устройство находится в защищенном режиме.|
+|gamingBlockGameCenterFriends|Boolean|Указывает, следует ли запретить пользователю добавлять друзей в Game Center. Требуется защищенное устройство для iOS 13 и более поздних версий.|
+|gamingBlockMultiplayer|Boolean|Указывает, следует ли запретить пользователю играть с несколькими игроками. Требуется защищенное устройство для iOS 13 и более поздних версий.|
 |gameCenterBlocked|Boolean|Указывает, следует ли запретить использовать Game Center, когда устройство находится в защищенном режиме.|
 |hostPairingBlocked|Boolean|Указывает, следует ли запретить связывание с хостами для определения устройств, к которым может подключаться устройство iOS, когда оно находится в защищенном режиме.|
 |iBooksStoreBlocked|Boolean|Указывает, следует ли запретить использовать iBooks Store, когда устройство находится в защищенном режиме.|
 |iBooksStoreBlockErotica|Boolean|Указывает, следует ли запретить пользователю скачивать материалы из iBooks Store с пометкой "эротика".|
-|iCloudBlockActivityContinuation|Boolean|Указывает, следует ли блокировать пользователю продолжение работы, начатой на устройстве iOS, на другое устройство iOS или macOS.|
-|iCloudBlockBackup|Boolean|Указывает, следует ли заблокировать резервное копирование iCloud. Требуется контролируемое устройство для iOS 13 и более поздней.|
-|iCloudBlockDocumentSync|Boolean|Указывает, следует ли блокировать синхронизацию документов iCloud. Требуется контролируемое устройство для iOS 13 и более поздней.|
+|iCloudBlockActivityContinuation|Boolean|Указывает, следует ли запретить пользователю продолжать работу, запущенную на устройстве iOS, на другое устройство iOS или macOS.|
+|iCloudBlockBackup|Boolean|Указывает, следует ли заблокировать резервное копирование iCloud. Требуется защищенное устройство для iOS 13 и более поздних версий.|
+|iCloudBlockDocumentSync|Boolean|Указывает, следует ли блокировать синхронизацию документов iCloud. Требуется защищенное устройство для iOS 13 и более поздних версий.|
 |iCloudBlockManagedAppsSync|Boolean|Указывает, следует ли заблокировать облачную синхронизацию управляемых приложений.|
 |iCloudBlockPhotoLibrary|Boolean|Указывает, следует ли заблокировать медиатеку iCloud.|
 |iCloudBlockPhotoStreamSync|Boolean|Указывает, следует ли заблокировать синхронизацию фотопотока iCloud.|
 |iCloudBlockSharedPhotoStream|Boolean|Указывает, следует ли заблокировать общий фотопоток.|
 |iCloudRequireEncryptedBackup|Boolean|Указывает, обязательно ли шифровать резервные копии iCloud.|
-|iTunesBlockExplicitContent|Boolean|Указывает, следует ли запретить доступ к ненормативному контенту в iTunes и App Store. Требуется контролируемое устройство для iOS 13 и более поздней.|
+|iTunesBlockExplicitContent|Boolean|Указывает, следует ли запретить доступ к ненормативному контенту в iTunes и App Store. Требуется защищенное устройство для iOS 13 и более поздних версий.|
 |iTunesBlockMusicService|Boolean|Указывает, следует ли заблокировать службу Music и вернуть приложение "Музыка" в классический режим, когда устройство находится в защищенном режиме (iOS 9.3 и более поздних версий, а также macOS 10.12 и более поздних версий).|
 |iTunesBlockRadio|Boolean|Указывает, следует ли запретить использовать iTunes Radio, когда устройство находится в защищенном режиме (iOS 9.3 и более поздних версий).|
 |keyboardBlockAutoCorrect|Boolean|Указывает, следует ли заблокировать автокоррекцию, когда устройство находится в защищенном режиме (iOS 8.1.3 и более поздних версий).|
@@ -123,17 +123,17 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |keyboardBlockSpellCheck|Boolean|Указывает, следует ли заблокировать проверку правописания, когда устройство находится в защищенном режиме (iOS 8.1.3 и более поздних версий).|
 |kioskModeAllowAssistiveSpeak|Boolean|Указывает, можно ли использовать специальные возможности речеобразования в режиме киоска.|
 |kioskModeAllowAssistiveTouchSettings|Boolean|Указывает, следует ли запретить доступ к настройкам сенсорного управления со специальными возможностями в режиме киоска.|
-|kioskModeAllowAutoLock|Boolean|Указывает, следует ли запретить автоблокировку устройства в режиме киоска. Функциональность этого свойства является избыточной с помощью оси по умолчанию и обесценяется. Вместо этого используйте KioskModeBlockAutoLock.|
+|kioskModeAllowAutoLock|Boolean|Указывает, следует ли запретить автоблокировку устройства в режиме киоска. Функциональные возможности этого свойства избыточны с использованием ОС по умолчанию и являются устаревшими. Вместо этого используйте KioskModeBlockAutoLock.|
 |kioskModeAllowColorInversionSettings|Boolean|Указывает, следует ли запретить доступ к настройкам инверсии цвета в режиме киоска.|
-|kioskModeAllowRingerSwitch|Boolean|Указывает, можно ли использовать переключатель звонка в режиме киоска. Функциональность этого свойства является избыточной с помощью оси по умолчанию и обесценяется. Вместо этого используйте KioskModeBlockRingerSwitch.|
-|kioskModeAllowScreenRotation|Boolean|Указывает, следует ли запретить поворот экрана в режиме киоска. Функциональность этого свойства является избыточной с помощью оси по умолчанию и обесценяется. Вместо этого используйте kioskModeBlockScreenRotation.|
-|kioskModeAllowSleepButton|Boolean|Указывает, можно ли использовать кнопку "Сон" в режиме киоска. Функциональность этого свойства является избыточной с помощью оси по умолчанию и обесценяется. Вместо этого используйте kioskModeBlockSleepButton.|
-|kioskModeAllowTouchscreen|Boolean|Указывает, можно ли использовать сенсорный экран в режиме киоска. Функциональность этого свойства является избыточной с помощью оси по умолчанию и обесценяется. Вместо этого используйте kioskModeBlockTouchscreen.|
+|kioskModeAllowRingerSwitch|Boolean|Указывает, можно ли использовать переключатель звонка в режиме киоска. Функциональные возможности этого свойства избыточны с использованием ОС по умолчанию и являются устаревшими. Вместо этого используйте KioskModeBlockRingerSwitch.|
+|kioskModeAllowScreenRotation|Boolean|Указывает, следует ли запретить поворот экрана в режиме киоска. Функциональные возможности этого свойства избыточны с использованием ОС по умолчанию и являются устаревшими. Вместо этого используйте KioskModeBlockScreenRotation.|
+|kioskModeAllowSleepButton|Boolean|Указывает, можно ли использовать кнопку "Сон" в режиме киоска. Функциональные возможности этого свойства избыточны с использованием ОС по умолчанию и являются устаревшими. Вместо этого используйте KioskModeBlockBlockButton.|
+|kioskModeAllowTouchscreen|Boolean|Указывает, можно ли использовать сенсорный экран в режиме киоска. Функциональные возможности этого свойства избыточны с использованием ОС по умолчанию и являются устаревшими. Вместо этого используйте kioskModeBlockTouchscreen.|
 |kioskModeAllowVoiceOverSettings|Boolean|Указывает, следует ли запретить доступ к настройкам VoiceOver в режиме киоска.|
-|kioskModeAllowVolumeButtons|Boolean|Указывает, можно ли использовать кнопки громкости в режиме киоска. Функциональность этого свойства является избыточной с помощью оси по умолчанию и обесценяется. Вместо этого используйте kioskModeBlockVolumeButtons.|
+|kioskModeAllowVolumeButtons|Boolean|Указывает, можно ли использовать кнопки громкости в режиме киоска. Функциональные возможности этого свойства избыточны с использованием ОС по умолчанию и являются устаревшими. Вместо этого используйте KioskModeBlockVolumeButtons.|
 |kioskModeAllowZoomSettings|Boolean|Указывает, следует ли запретить доступ к настройкам масштабирования в режиме киоска.|
 |kioskModeAppStoreUrl|String|URL-адрес приложения в App Store для использования в режиме киоска. Используйте, если свойство KioskModeManagedAppId не известно.|
-|kioskModeBuiltInAppId|String|ID для встроенных приложений, которые можно использовать для режима киоска. Используется, когда не заданы KioskModeManagedAppId и KioskModeAppStoreUrl.|
+|kioskModeBuiltInAppId|String|Идентификатор встроенных приложений для использования в режиме киоска. Используется, если параметры KioskModeManagedAppId и KioskModeAppStoreUrl не заданы.|
 |kioskModeRequireAssistiveTouch|Boolean|Указывает, обязательно ли использовать сенсорное управление со специальными возможностями в режиме киоска.|
 |kioskModeRequireColorInversion|Boolean|Указывает, обязательно ли использовать инверсию цвета в режиме киоска.|
 |kioskModeRequireMonoAudio|Boolean|Указывает, обязательно ли использовать монозвук в режиме киоска.|
@@ -154,7 +154,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |mediaContentRatingUnitedKingdom|[mediaContentRatingUnitedKingdom](../resources/intune-deviceconfig-mediacontentratingunitedkingdom.md)|Настройки возрастных ограничений для Соединенного Королевства|
 |mediaContentRatingUnitedStates|[mediaContentRatingUnitedStates](../resources/intune-deviceconfig-mediacontentratingunitedstates.md)|Настройки возрастных ограничений для Соединенных Штатов|
 |networkUsageRules|Коллекция [iosNetworkUsageRule](../resources/intune-deviceconfig-iosnetworkusagerule.md)|Список управляемых приложений и сетевых правил, которые к ним применяются. Эта коллекция может содержать не более 1000 элементов.|
-|mediaContentRatingApps|[ratingAppsType](../resources/intune-deviceconfig-ratingappstype.md)|Параметры оценки контента мультимедиа для приложений. Возможные значения: `allAllowed`, `allBlocked`, `agesAbove4`, `agesAbove9`, `agesAbove12`, `agesAbove17`.|
+|mediaContentRatingApps|[ratingAppsType](../resources/intune-deviceconfig-ratingappstype.md)|Параметры оценки содержимого мультимедиа для приложений. Возможные значения: `allAllowed`, `allBlocked`, `agesAbove4`, `agesAbove9`, `agesAbove12`, `agesAbove17`.|
 |messagesBlocked|Boolean|Указывает, следует ли запретить использовать приложение "Сообщения" на защищенном устройстве.|
 |notificationsBlockSettingsModification|Boolean|Указывает, можно ли изменять настройки уведомлений (iOS 9.3 и более поздних версий).|
 |passcodeBlockFingerprintUnlock|Boolean|Указывает, следует ли запретить разблокировку с помощью отпечатка пальца.|
@@ -171,10 +171,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |passcodeRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Необходимый тип секретного кода. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passcodeRequired|Boolean|Указывает, обязательно ли использовать секретный код.|
 |podcastsBlocked|Boolean|Указывает, следует ли запретить использовать подкасты на защищенном устройстве (iOS 8.0 и более поздних версий).|
-|safariBlockAutofill|Boolean|Указывает, следует ли запретить использовать автозаполнение в Safari. Требуется контролируемое устройство для iOS 13 и более поздней.|
+|safariBlockAutofill|Boolean|Указывает, следует ли запретить использовать автозаполнение в Safari. Требуется защищенное устройство для iOS 13 и более поздних версий.|
 |safariBlockJavaScript|Boolean|Указывает, следует ли заблокировать JavaScript в Safari.|
 |safariBlockPopups|Boolean|Указывает, следует ли блокировать всплывающие окна в Safari.|
-|safariBlocked|Boolean|Указывает, следует ли запретить использовать Safari. Требуется контролируемое устройство для iOS 13 и более поздней.|
+|safariBlocked|Boolean|Указывает, следует ли запретить использовать Safari. Требуется защищенное устройство для iOS 13 и более поздних версий.|
 |safariCookieSettings|[webBrowserCookieSettings](../resources/intune-deviceconfig-webbrowsercookiesettings.md)|Настройки файлов cookie для Safari. Возможные значения: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
 |safariManagedDomains|Коллекция String|URL-адреса, соответствующие приведенным здесь шаблонам, будут считаться управляемыми.|
 |safariPasswordAutoFillDomains|Коллекция String|Пользователи могут сохранять пароли в Safari только с URL-адресов, соответствующих приведенным здесь шаблонам. Применяется к устройствам в защищенном режиме (iOS 9.3 и более поздних версий).|
@@ -187,7 +187,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |spotlightBlockInternetResults|Boolean|Указывает, следует ли запретить показывать результаты из Интернета при поиске полезных сведений на защищенном устройстве.|
 |voiceDialingBlocked|Boolean|Указывает, следует ли заблокировать голосовой набор.|
 |wallpaperBlockModification|Boolean|Указывает, можно ли изменять обои на защищенном устройстве (iOS 9.0 и более поздних версий).|
-|wiFiConnectOnlyToConfiguredNetworks|Boolean|Указывает, обязательно ли использовать только сети Wi-Fi из профилей конфигурации, когда устройство находится в защищенном режиме. Доступно для устройств с версиями iOS и iPadOS 14.4 и более ранних версий. Устройства с 14.5+ должны использовать параметр "WiFiConnectToAllowedNetworksOnlyForced.|
+|wiFiConnectOnlyToConfiguredNetworks|Boolean|Указывает, обязательно ли использовать только сети Wi-Fi из профилей конфигурации, когда устройство находится в защищенном режиме. Доступно для устройств под управлением iOS и iPadOS версий 14.4 и более ранних версий. Устройства под управлением версии 14.5 и выше должны использовать параметр WiFiConnectToAllowedNetworksOnlyForced.|
 
 
 
@@ -652,6 +652,8 @@ Content-Length: 8013
   "wiFiConnectOnlyToConfiguredNetworks": true
 }
 ```
+
+
 
 
 

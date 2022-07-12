@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса связи
-description: Представляет связь между терминами в банке терминов.
+title: Тип ресурса relation
+description: Представляет связь между терминами в хранилище терминов.
 author: mohitpcad
-localization_priority: Normal
-ms.prod: Sharepoint
+ms.localizationpriority: medium
+ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 12d976a189b5ebc50e993b5c1203800e4afd68da
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 18753cf6cb246eea25f9a497ebebc197ac23cb93
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289059"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732662"
 ---
-# <a name="relation-resource-type"></a>Тип ресурса связи
+# <a name="relation-resource-type"></a>Тип ресурса relation
 
-Пространство имен: Microsoft. Graph. банка
+Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет связь между [терминами](../resources/termstore-term.md) в [банке]терминов. В настоящее время поддерживаются два типа отношений: ПИН-код и повторное использование. 
+Представляет связь между [терминами](../resources/termstore-term.md) в хранилище [терминов]. В настоящее время поддерживаются два типа связей: закрепление и повторное использование. 
 
-В контактном отношении термин может быть закреплен под другим термином в другом наборе терминов. В закрепленной связи новые дочерние элементы для термина можно добавить только в набор терминов, в котором был создан термин. Любое изменение в иерархии под термином отражается на тех наборах, в которых термин был закреплен. 
+В связи с закреплением термин можно закрепить под другим термином в другом наборе терминов. В закрепленной связи новые дочерние элементы термина можно добавить только в набор терминов, в котором был создан термин. Любое изменение иерархии в термине отражается в наборах, в которых был закреплен термин. 
 
-Отношение повторного использования аналогично закрепленному отношению, за исключением того, что изменения повторно используемого термина можно выполнить из любой иерархии, в которой этот термин используется повторно. Кроме того, изменение иерархии, выполненное для повторно используемого термина, не отражается в других наборах терминов, в которых термин используется повторно.
+Отношение повторного использования аналогично закрепленной связи, за исключением того, что изменения в повторно используемом термине могут быть внесены из любой иерархии, в которой термин используется повторно. Кроме того, изменение иерархии, внесенное в повторно используемый термин, не отражается в других наборах терминов, в которых термин используется повторно.
 
-Наследуется от [объекта Entity](../resources/entity.md).
+Наследует [от сущности](../resources/entity.md).
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список отношений](../api/termstore-term-list-relations.md)|Коллекция [Microsoft. Graph. Банк. relation](../resources/termstore-relation.md)|Получение списка объектов **relation** .|
-|[Создание отношения](../api/termstore-relation-post.md)|[Microsoft. Graph. Банк. отношение](../resources/termstore-relation.md)|Создание объекта **связи** .|
+|[Перечисление связей](../api/termstore-term-list-relations.md)|[Коллекция microsoft.graph.termstore.relation](../resources/termstore-relation.md)|Получение списка объектов **отношения** .|
+|[Создание отношения](../api/termstore-relation-post.md)|[microsoft.graph.termstore.relation](../resources/termstore-relation.md)|Создайте объект **отношения** .|
 
 
 ## <a name="properties"></a>Свойства
@@ -42,11 +42,11 @@ ms.locfileid: "48289059"
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|фромтерм|[Microsoft. Graph. Банк. Term](../resources/termstore-term.md)|[Термин] "от" отношения. Термин, в котором определено отношение. Значение NULL указывает на то, что отношение напрямую с [набором]. |
-|set|[Microsoft. Graph. банка. Set](../resources/termstore-set.md)|[Набор] , в котором соотношение является релевантным.|
-|тотерм|[Microsoft. Graph. Банк. Term](../resources/termstore-term.md)|[Термин] "Кому" отношения. Термин, для которого определена связь.|
+|fromTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|От [термина отношения] . Термин, из которого определена связь. Значение NULL указывает, что отношение непосредственно с [набором]. |
+|set|[microsoft.graph.termStore.set](../resources/termstore-set.md)|Набор [,] в котором отношение релевантно.|
+|toTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Термин [отношения.] Термин, с которым определена связь.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
@@ -68,8 +68,8 @@ ms.locfileid: "48289059"
 [microsoft.graph.termStore.set]: termstore-set.md
 [microsoft.graph.termStore.relations]: termstore-relation.md
 [microsoft.graph.termStore.relation]: termstore-relation.md
-[восстановлен]: ../resources/termstore-store.md
-[банком]: ../resources/termstore-term.md
+[store]: ../resources/termstore-store.md
+[Термин]: ../resources/termstore-term.md
 [set]: ../resources/termstore-set.md
 
 <!--
@@ -80,7 +80,7 @@ ms.locfileid: "48289059"
   "section": "documentation",
   "tocPath": "TermRelation",
   "tocBookmarks": {
-    "Resources/termStore.relation": "#"
+    "Resources/termStore.relation&quot;: &quot;#"
   },
   "suppressions": []
 }

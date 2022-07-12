@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e5715e3fea9b864a1b94d7747c8cd7477904f09
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 2deedcf8121c629ebebde1cea74a2f75993f6dd8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451474"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723057"
 ---
 # <a name="create-vpptoken"></a>Создать VPP токен
 
@@ -41,7 +41,7 @@ POST /deviceAppManagement/vppTokens
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -116,6 +116,8 @@ Content-Length: 574
   "countryOrRegion": "Country Or Region value"
 }
 ```
+
+
 
 
 

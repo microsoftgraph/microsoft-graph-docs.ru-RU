@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 955ddce1b6b2cd1fc32925a6a763db83c38bcfac
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 18e046e8648bfa6b0d505b4dac110641fd08a864
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454891"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730681"
 ---
 # <a name="settingsource-resource-type"></a>Тип ресурса settingSource
 
@@ -25,7 +25,7 @@ ms.locfileid: "60454891"
 |:---|:---|:---|
 |id|String|Пока не задокументировано.|
 |displayName|String|Пока не задокументировано.|
-|sourceType|[settingSourceType](../resources/intune-deviceconfig-settingsourcetype.md)|Еще не задокументировано. Возможные значения: `deviceConfiguration`, `deviceIntent`.|
+|Sourcetype|[settingSourceType](../resources/intune-deviceconfig-settingsourcetype.md)|Еще не задокументировано. Возможные значения: `deviceConfiguration`, `deviceIntent`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -45,6 +45,8 @@ ms.locfileid: "60454891"
   "sourceType": "String"
 }
 ```
+
+
 
 
 

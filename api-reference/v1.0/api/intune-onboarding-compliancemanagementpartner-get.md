@@ -1,24 +1,24 @@
 ---
-title: Получить complianceManagementPartner
+title: Получение complianceManagementPartner
 description: Чтение свойств и связей объекта complianceManagementPartner.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 000727b76d78d161685530b33de8a102c57d2256
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7d8e623ab56cb42040ec9ae5b6db08bed69fb5d8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450266"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732263"
 ---
-# <a name="get-compliancemanagementpartner"></a>Получить complianceManagementPartner
+# <a name="get-compliancemanagementpartner"></a>Получение complianceManagementPartner
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)
+Чтение свойств и связей объекта [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,14 +44,14 @@ GET /deviceManagement/complianceManagementPartners/{complianceManagementPartnerI
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа и объект `200 OK` [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -108,6 +108,8 @@ Content-Length: 1324
   }
 }
 ```
+
+
 
 
 

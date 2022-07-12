@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ff1a4924f68730345c109edf083b620bb2811b09
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8049c9f5dcfa5fdebf130ea924bdc2bb8b2cd860
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60444612"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732074"
 ---
 # <a name="list-macoscompliancepolicies"></a>Перечисление объектов macOSCompliancePolicy
 
@@ -41,7 +41,7 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -96,6 +96,8 @@ Content-Length: 1150
   ]
 }
 ```
+
+
 
 
 

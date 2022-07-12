@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 043466eba844f12ea2d38155106198522afb4d3d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 238934e0a5b89c2576169813de197da440169428
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455874"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733437"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Тип ресурса iosMinimumOperatingSystem
 
@@ -27,9 +27,9 @@ ms.locfileid: "60455874"
 |v9_0|Boolean|Версия 9.0 или выше.|
 |v10_0|Boolean|Версия 10.0 или выше.|
 |v11_0|Boolean|Версия 11.0 или выше.|
-|v12_0|Логический|Версия 12.0 или более поздней версии.|
-|v13_0|Логический|Версия 13.0 или более поздней версии.|
-|v14_0|Логический|Версия 14.0 или более поздней версии.|
+|v12_0|Логическое|Версия 12.0 или более поздняя.|
+|v13_0|Логическое|Версия 13.0 или более поздняя.|
+|v14_0|Логический|Версия 14.0 или более поздняя.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -53,6 +53,8 @@ ms.locfileid: "60455874"
   "v14_0": true
 }
 ```
+
+
 
 
 

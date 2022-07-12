@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a087076f85cf38aef5ae081048211f22d6bb8cd5
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: bc4b299f27590ca80859aa2780100734b7b0af28
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454070"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720754"
 ---
 # <a name="windowsdefenderscanactionresult-resource-type"></a>Тип ресурса windowsDefenderScanActionResult
 
@@ -27,7 +27,7 @@ ms.locfileid: "60454070"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |actionName|String|Название действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
-|actionState|[actionState](../resources/intune-devices-actionstate.md)|Состояние действия, унаследованной от [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune-devices-actionstate.md)|Состояние действия, унаследованного от [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Время начала действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |scanType|String|Тип сканирования (полное или краткое).|
@@ -52,6 +52,8 @@ ms.locfileid: "60454070"
   "scanType": "String"
 }
 ```
+
+
 
 
 

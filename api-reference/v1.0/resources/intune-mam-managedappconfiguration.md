@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 525fa036f373a9e8796493ba87f24c9134aad2ad
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e67ff79ee8842ef09bd22c921fb79d4246e35d1c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448536"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730625"
 ---
 # <a name="managedappconfiguration-resource-type"></a>Тип ресурса managedAppConfiguration
 
@@ -69,6 +69,8 @@ ms.locfileid: "60448536"
   ]
 }
 ```
+
+
 
 
 

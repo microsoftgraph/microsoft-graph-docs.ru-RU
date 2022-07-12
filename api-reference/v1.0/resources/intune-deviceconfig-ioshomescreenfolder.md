@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса iosHomeScreenFolder
-description: Папка, содержащая страницы приложений и веб-клипы на домашнем экране.
+description: Папка, содержащая страницы приложений и веб-клипов на начальном экране.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 39c1cee75fa889468fc6191a753d3e2141b473ca
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 37c4a5969f023e0aaebb3a86aceeb1b9a6e7bb09
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451347"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732375"
 ---
 # <a name="ioshomescreenfolder-resource-type"></a>Тип ресурса iosHomeScreenFolder
 
@@ -18,7 +18,7 @@ ms.locfileid: "60451347"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Папка, содержащая страницы приложений и веб-клипы на домашнем экране.
+Папка, содержащая страницы приложений и веб-клипов на начальном экране.
 
 
 Наследуется от [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)
@@ -27,7 +27,7 @@ ms.locfileid: "60451347"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Имя приложения. Наследуется от [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
-|pages|Коллекция [iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md)|Страницы значков макета домашнего экрана, которые должны быть приложениями или веб-клипами. Эта коллекция может содержать не более 500 элементов.|
+|pages|Коллекция [iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md)|Страницы значков макета начального экрана, которые должны быть приложениями или веб-клипами. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -58,6 +58,8 @@ ms.locfileid: "60451347"
   ]
 }
 ```
+
+
 
 
 

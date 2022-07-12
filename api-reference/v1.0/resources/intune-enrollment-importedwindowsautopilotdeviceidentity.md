@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62c8441a5d96853f8f7f08a7db19f4ea81aa2f7a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: af1ffa62a140c3badcd8d74d3f36b5ae710e8db4
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454350"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730632"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>Тип ресурса importedWindowsAutopilotDeviceIdentity
 
@@ -27,19 +27,19 @@ ms.locfileid: "60454350"
 |[Получение importedWindowsAutopilotDeviceIdentity](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md)|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Чтение свойств и связей между объектами[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).|
 |[Создание importedWindowsAutopilotDeviceIdentity](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-create.md)|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Создание нового объекта [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).|
 |[Удаление importedWindowsAutopilotDeviceIdentity](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-delete.md)|Отсутствует|Удаляет [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).|
-|[действие импорта](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-import.md)|Коллекция [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Н/Д|
+|[Действие импорта](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-import.md)|Коллекция [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|GUID объекта|
-|groupTag|String|Тег группы устройства Windows автопилота.|
+|GroupTag|String|Тег группы устройства Windows Autopilot.|
 |serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
-|importId|String|Импорт Id устройства Windows автопилота.|
+|importId|String|Идентификатор импорта устройства Windows Autopilot.|
 |hardwareIdentifier|Двоичный|Аппаратный большой двоичный объект (BLOB) устройства Windows Autopilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Текущее состояние импортированного устройства.|
-|assignedUserPrincipalName|String|UPN пользователя, на которое будет назначено устройство|
+|assignedUserPrincipalName|String|Имя участника-пользователя, которое будет назначено устройству|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -71,6 +71,8 @@ ms.locfileid: "60454350"
   "assignedUserPrincipalName": "String"
 }
 ```
+
+
 
 
 

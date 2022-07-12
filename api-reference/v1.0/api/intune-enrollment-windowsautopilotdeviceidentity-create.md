@@ -1,16 +1,16 @@
 ---
 title: Создание объекта windowsAutopilotDeviceIdentity
-description: Создание нового объекта windowsAutopilotDeviceIdentity.
+description: Создайте объект windowsAutopilotDeviceIdentity.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a1a2de6012d1a576b5f4c2c55e671d700313bfd0
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 5875ec65c666b6cb4d04573181e22a022e63cfbe
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449837"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732837"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Создание объекта windowsAutopilotDeviceIdentity
 
@@ -18,7 +18,7 @@ ms.locfileid: "60449837"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового [объекта windowsAutopilotDeviceIdentity.](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)
+Создайте объект [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,38 +41,38 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для объекта windowsAutopilotDeviceIdentity.
+В тексте запроса добавьте представление объекта windowsAutopilotDeviceIdentity в формате JSON.
 
 В следующей таблице показаны свойства, необходимые при создании объекта windowsAutopilotDeviceIdentity.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|GUID объекта|
-|groupTag|String|Тег группы устройства Windows автопилота.|
-|purchaseOrderIdentifier|String|Покупка идентификатора заказа устройства Windows автопилота.|
+|GroupTag|String|Тег группы устройства Windows Autopilot.|
+|purchaseOrderIdentifier|String|Идентификатор заказа на покупку устройства Windows Autopilot.|
 |serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
-|manufacturer|String|Oem производитель устройства Windows автопилота.|
-|model|String|Имя модели устройства Windows автопилота.|
-|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Состояние регистрации intune устройства Windows автопилота. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
-|lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows автопилота.|
-|addressableUserName|String|Адресное имя пользователя.|
-|userPrincipalName|String|Имя главного пользователя.|
+|manufacturer|String|Изготовитель изготовителя устройства Windows Autopilot.|
+|model|String|Имя модели устройства Windows Autopilot.|
+|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune состояние регистрации устройства Windows Autopilot. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
+|lastContactedDateTime|DateTimeOffset|Intune дата последнего контакта устройства Windows Autopilot.|
+|addressableUserName|String|Адресируемое имя пользователя.|
+|userPrincipalName|String|Имя участника-пользователя.|
 |resourceName|String|Имя ресурса.|
 |skuNumber|String|Номер SKU|
-|systemFamily|String|Семейство system|
-|azureActiveDirectoryDeviceId|String|AAD ID устройства , который будет обесценить|
-|managedDeviceId|String|Управляемый ID устройства|
+|systemFamily|String|Семейство систем|
+|azureActiveDirectoryDeviceId|String|Идентификатор устройства AAD — нерекомендуемый|
+|managedDeviceId|String|Идентификатор управляемого устройства|
 |displayName|String|"Display Name" (Отображаемое имя);|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -132,6 +132,8 @@ Content-Length: 863
   "displayName": "Display Name value"
 }
 ```
+
+
 
 
 

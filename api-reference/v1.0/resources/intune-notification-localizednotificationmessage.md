@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1c5c472376bc2dac15d3fff8dcaad1a655020363
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 96e5bd966a53e146e9ba21a894f952300a92e75b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445079"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729925"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>Тип ресурса localizedNotificationMessage
 
@@ -61,6 +61,8 @@ ms.locfileid: "60445079"
   "isDefault": true
 }
 ```
+
+
 
 
 

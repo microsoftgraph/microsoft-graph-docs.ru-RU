@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc8c9de1cf8c6a704b451a2e59f4d8358b02dde8
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 3ff5e32c36d63e297017c4f3ca83da1af72d3400
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454665"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734069"
 ---
 # <a name="list-iosgeneraldeviceconfigurations"></a>Перечисление объектов iosGeneralDeviceConfiguration
 
@@ -41,7 +41,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -291,6 +291,8 @@ Content-Length: 8922
   ]
 }
 ```
+
+
 
 
 

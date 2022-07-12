@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db01464ee260a67872ab1310536ad87a0f96dd66
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 21c239753291c90d618d644809f6a5f7a2d7112b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60437096"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722588"
 ---
 # <a name="get-managedappoperation"></a>Get managedAppOperation
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/oper
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -79,6 +79,8 @@ Content-Length: 303
   }
 }
 ```
+
+
 
 
 

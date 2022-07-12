@@ -5,12 +5,12 @@ author: Charlieforce
 ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: ce9261b636a0d5f53b3c92d9795624b9b1ddd931
-ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
+ms.openlocfilehash: fdb44b3daab76d1222cdc80fcf0cff13402ce7fb
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2022
-ms.locfileid: "66690160"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735595"
 ---
 # <a name="list-teamtemplates"></a>Перечисление teamTemplates
 Пространство имен: microsoft.graph
@@ -25,7 +25,7 @@ ms.locfileid: "66690160"
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Team.Create|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Team.Create|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -58,9 +58,9 @@ GET /teamwork/teamTemplates
 
 ## <a name="examples"></a>Примеры
 
-## <a name="example-1-get-a-list-of-team-templates"></a>Пример 1. Получение списка шаблонов команд
+### <a name="example-1-get-a-list-of-team-templates"></a>Пример 1. Получение списка шаблонов команд
 
-### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 
@@ -73,7 +73,7 @@ GET /teamwork/teamTemplates
 GET https://graph.microsoft.com/beta/teamwork/teamTemplates
 ```
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
@@ -102,7 +102,7 @@ Content-Type: application/json
 
 ### <a name="example-2-use-extend-and-filter-to-get-templatedefinitions-for-en-us-locale"></a>Пример 2. Использование $extend и $filter для получения templateDefinitions для языкового стандарта en-US
 
-### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -115,7 +115,7 @@ Content-Type: application/json
 GET https://graph.microsoft.com/beta/teamwork/teamTemplates?$expand=definitions&filter=definitions/any(a:a/languageTag eq 'en-US')
 ```
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
@@ -172,7 +172,7 @@ Content-Type: application/json
                     "lastModifiedBy": null
                 }
             ]
-        },
+        }
     ]
 }
 ```

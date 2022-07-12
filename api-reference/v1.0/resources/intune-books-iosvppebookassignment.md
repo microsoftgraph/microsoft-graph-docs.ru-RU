@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3c2b0327abf7df07e0eb868fdbac1cb723f8c393
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 665d40af8c05609d3ab053f20a7bd01d36846cc4
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451460"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731948"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>Тип ресурса iosVppEBookAssignment
 
@@ -37,7 +37,7 @@ ms.locfileid: "60451460"
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения электронной книги. Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
-|installIntent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки электронной книги. Унаследованный от [managedEBookAssignment](../resources/intune-books-managedebookassignment.md). Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|installIntent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки электронной книги. Наследуется [от managedEBookAssignment](../resources/intune-books-managedebookassignment.md). Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -60,6 +60,8 @@ ms.locfileid: "60451460"
   "installIntent": "String"
 }
 ```
+
+
 
 
 

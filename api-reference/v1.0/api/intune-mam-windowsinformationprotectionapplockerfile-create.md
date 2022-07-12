@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2f8619e3b19633626f392f52a90501d9fe2431b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 2d661d0afe6ee6d43aabc9569b0e4e466a4d3b79
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447898"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730422"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>Создание объекта windowsInformationProtectionAppLockerFile
 
@@ -44,7 +44,7 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -99,6 +99,8 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
+
+
 
 
 

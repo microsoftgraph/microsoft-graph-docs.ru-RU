@@ -1,24 +1,24 @@
 ---
-title: Список androidWorkProfileGeneralDeviceConfigurations
-description: Список свойств и связей объектов AndroidWorkProfileGeneralDeviceConfiguration.
+title: Перечисление объектов androidWorkProfileGeneralDeviceConfiguration
+description: Список свойств и связей объектов androidWorkProfileGeneralDeviceConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5224e1e6914ec2d24e356e26fabc7618c7a01b12
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 3fd437fd910902da13ff7c2476bb7b48c6d125d5
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452582"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733614"
 ---
-# <a name="list-androidworkprofilegeneraldeviceconfigurations"></a>Список androidWorkProfileGeneralDeviceConfigurations
+# <a name="list-androidworkprofilegeneraldeviceconfigurations"></a>Перечисление объектов androidWorkProfileGeneralDeviceConfiguration
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [AndroidWorkProfileGeneralDeviceConfiguration.](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)
+Список свойств и связей объектов [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,14 +41,14 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [AndroidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) в теле отклика.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и коллекцию объектов [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -113,6 +113,8 @@ Content-Length: 2200
   ]
 }
 ```
+
+
 
 
 

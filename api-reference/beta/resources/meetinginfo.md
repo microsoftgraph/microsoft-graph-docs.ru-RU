@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cf845e7867f8a2e69019b8807383feb5c417f1ef
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: d7aebdbd0236f0c1223e295456d408f37fb0708e
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645421"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731598"
 ---
 # <a name="meetinginfo-resource-type"></a>Тип ресурса meetingInfo
 
@@ -27,7 +27,7 @@ ms.locfileid: "66645421"
 
 | Тип                                                    | Описание                                                         |
 |:--------------------------------------------------------|:--------------------------------------------------------------------|
-| [joinMeetingIdMeetingInfo](joinmeetingidmeetingInfo.md) | Содержит **идентификатор joinMeetingId** **и секретный код** собрания.     |
+| [joinMeetingIdMeetingInfo](joinmeetingidmeetinginfo.md) | Содержит **идентификатор joinMeetingId** **и секретный код** собрания.     |
 | [organizerMeetingInfo](./organizermeetinginfo.md)       | Сведения об организаторе собрания.                         |
 | [TokenMeetingInfo](tokenmeetinginfo.md)                 | Зашифрованный маркер, содержащий сведения о собрании. |
 

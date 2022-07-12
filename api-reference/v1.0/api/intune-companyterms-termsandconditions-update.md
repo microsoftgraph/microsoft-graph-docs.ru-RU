@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15e97fb857cebe80818db34c8fe6e37037e6a450
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: b8fb497b11a4a2f3e1f9f4d6e13d9edde4e2eb93
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447821"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729771"
 ---
 # <a name="update-termsandconditions"></a>Update termsAndConditions
 
@@ -42,7 +42,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -107,6 +107,8 @@ Content-Length: 445
   "version": 7
 }
 ```
+
+
 
 
 

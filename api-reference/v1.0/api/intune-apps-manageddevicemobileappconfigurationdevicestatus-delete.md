@@ -1,24 +1,24 @@
 ---
-title: Удаление managedDeviceMobileAppConfigurationDeviceStatus
-description: Удаляет управляемыйDeviceMobileAppConfigurationDeviceStatus.
+title: Удаление объекта managedDeviceMobileAppConfigurationDeviceStatus
+description: Удаляет managedDeviceMobileAppConfigurationDeviceStatus.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 14e5b0f9b1f5af87a366b53e1d463e4f31319cf3
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 739df57a8deb78549bac21f1214bc97da8919036
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447807"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729820"
 ---
-# <a name="delete-manageddevicemobileappconfigurationdevicestatus"></a>Удаление managedDeviceMobileAppConfigurationDeviceStatus
+# <a name="delete-manageddevicemobileappconfigurationdevicestatus"></a>Удаление объекта managedDeviceMobileAppConfigurationDeviceStatus
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет [управляемыйDeviceMobileAppConfigurationDeviceStatus.](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)
+Удаляет [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,7 +41,7 @@ DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfi
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurati
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

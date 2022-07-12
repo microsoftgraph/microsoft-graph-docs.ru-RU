@@ -1,24 +1,24 @@
 ---
-title: Создание deviceManagementExportJob
-description: Создание нового объекта deviceManagementExportJob.
+title: Создание объекта deviceManagementExportJob
+description: Создайте объект deviceManagementExportJob.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 204213d5e9eca15ea8765f6154d27cc8771f276d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 0341343a7b3e63868fe26d8fb39f59966ea1bff1
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456553"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723036"
 ---
-# <a name="create-devicemanagementexportjob"></a>Создание deviceManagementExportJob
+# <a name="create-devicemanagementexportjob"></a>Создание объекта deviceManagementExportJob
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового [объекта deviceManagementExportJob.](../resources/intune-reporting-devicemanagementexportjob.md)
+Создайте объект [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,32 +41,32 @@ POST /deviceManagement/reports/exportJobs
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для объекта deviceManagementExportJob.
+В тексте запроса добавьте представление объекта deviceManagementExportJob в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании устройстваManagementExportJob.
+В следующей таблице показаны свойства, необходимые при создании объекта deviceManagementExportJob.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этого объекта|
+|id|String|Уникальный идентификатор для этой сущности|
 |reportName|String|Имя отчета|
-|filter|String|Фильтры, применяемые в отчете|
-|select|Коллекция строк|Столбцы, выбранные из отчета|
-|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат экспортируемого отчета. Возможные значения: `csv`, `pdf`.|
-|snapshotId|String|Снимок — это идентифицируемый подмножество наборов данных, представленных в ReportName. Здесь можно использовать id sessionId или CachedReportConfiguration. Если задана sessionId, фильтр, выберите и OrderBy применяются к данным, представленным sessionId. Фильтр, выбор и OrderBy нельзя указать вместе с id CachedReportConfiguration.|
-|ЛокализацияТип|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|Настройка локализации запрашиваемого задания экспорта. Возможные значения: `localizedValuesAsAdditionalColumn`, `replaceLocalizableValues`.|
+|filter|String|Фильтры, примененные к отчету|
+|select|Коллекция String|Столбцы, выбранные в отчете|
+|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат экспортированного отчета. Возможные значения: `csv`, `pdf`.|
+|snapshotId|String|Моментальный снимок — это идентифицируемое подмножество набора данных, представленного reportName. Здесь можно использовать идентификатор sessionId или CachedReportConfiguration. Если указан идентификатор сеанса, фильтр, select и OrderBy применяются к данным, представленным sessionId. Параметры Filter, Select и OrderBy нельзя указать вместе с идентификатором CachedReportConfiguration.|
+|localizationType|[DeviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|Настраивает способ локализации запрашиваемого задания экспорта. Возможные значения: `localizedValuesAsAdditionalColumn`, `replaceLocalizableValues`.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Состояние задания экспорта. Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
-|url|String|Временное расположение экспортируемого отчета|
-|requestDateTime|DateTimeOffset|Время запроса экспортируемой отчетности|
-|expirationDateTime|DateTimeOffset|Время истечения срока действия экспортируемой отчетности|
+|url|String|Временное расположение экспортированного отчета|
+|requestDateTime|DateTimeOffset|Время запроса экспортированного отчета|
+|expirationDateTime|DateTimeOffset|Время истечения срока действия экспортированного отчета|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и `201 Created` [объект deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -118,6 +118,8 @@ Content-Length: 504
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
+
+
 
 
 

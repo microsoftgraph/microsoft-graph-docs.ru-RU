@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса timeZoneBase
 description: Основное представление часового пояса.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: mail
 author: abheek-das
-ms.openlocfilehash: 4869fafb20150a06a6da323359664f98b83d3eee
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e1258a2d65f09eef1b9415d4d04c22eb834c4716
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133345"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66737100"
 ---
 # <a name="timezonebase-resource-type"></a>Тип ресурса timeZoneBase
 
@@ -27,7 +27,7 @@ ms.locfileid: "50133345"
 | name | string | Имя часового пояса (стандартного, например "Гавайско-Алеутское время (зима)" или особого, например "Особый часовой пояс"). |
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

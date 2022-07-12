@@ -1,34 +1,36 @@
 ---
-title: тип enum ratingFranceMoviesType
-description: Метки рейтинга фильмов во Франции
+title: Тип перечисления ratingFranceMoviesType
+description: Метки оценки фильмов во Франции
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d95a5cc57765481d9d40eec82c89cfd3a553f26e
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 4f685432dea6d2ad36aeae72957b95d99f89127d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448571"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733348"
 ---
-# <a name="ratingfrancemoviestype-enum-type"></a>тип enum ratingFranceMoviesType
+# <a name="ratingfrancemoviestype-enum-type"></a>Тип перечисления ratingFranceMoviesType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метки рейтинга фильмов во Франции
+Метки оценки фильмов во Франции
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|allAllowed|0|Значение по умолчанию, разрешить все содержимое фильмов|
-|allBlocked|1|Не разрешайте контент фильмов|
-|agesAbove10|2|Классификация 10 запрещает показ фильма несовершеннолетним в возрасте до 10 лет|
-|agesAbove12|3|Классификация 12 запрещает показ фильма несовершеннолетним в возрасте до 12 лет|
-|agesAbove16|4 |Классификация 16 запрещает показ фильма несовершеннолетним в возрасте до 16 лет|
-|agesAbove18|5|Классификация 18 запрещает проверку несовершеннолетним в возрасте до 18 лет|
+|allAllowed|0|Значение по умолчанию: разрешить все фильмы|
+|allBlocked|1|Не разрешать содержимое фильмов|
+|agesAbove10|2|Классификация 10 запрещает показ фильма для несовершеннолетних в группе до 10 лет.|
+|agesAbove12|3|Классификация 12 запрещает показ фильма для несовершеннолетних в группе до 12 лет|
+|agesAbove16|4|Классификация 16 запрещает показ фильма для несовершеннолетних в группе до 16 лет|
+|agesAbove18|5|Классификация 18 запрещает проверку для несовершеннолетних пользователей в группе до 18 лет.|
+
+
 
 
 

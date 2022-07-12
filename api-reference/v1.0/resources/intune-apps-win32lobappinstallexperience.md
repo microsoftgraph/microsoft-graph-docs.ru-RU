@@ -1,30 +1,30 @@
 ---
-title: тип ресурса win32LobAppInstallExperience
-description: Содержит свойства работы с установкой для приложения Win32
+title: Тип ресурса win32LobAppInstallExperience
+description: Содержит свойства процесса установки для приложения Win32
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b1b16148f0a2c61525c58d459709115d99d79c2e
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: dcb0cd00fd9b71f71ae962bc21274881649dd2d8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448031"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731955"
 ---
-# <a name="win32lobappinstallexperience-resource-type"></a>тип ресурса win32LobAppInstallExperience
+# <a name="win32lobappinstallexperience-resource-type"></a>Тип ресурса win32LobAppInstallExperience
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства работы с установкой для приложения Win32
+Содержит свойства процесса установки для приложения Win32
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |runAsAccount|[runAsAccountType](../resources/intune-apps-runasaccounttype.md)|Указывает тип контекста выполнения, в котором выполняется приложение. Возможные значения: `system`, `user`.|
-|deviceRestartBehavior|[win32LobAppRestartBehavior](../resources/intune-apps-win32lobapprestartbehavior.md)|Поведение перезагрузки устройства. Возможные значения: `basedOnReturnCode`, `allow`, `suppress`, `force`.|
+|deviceRestartBehavior|[win32LobAppRestartBehavior](../resources/intune-apps-win32lobapprestartbehavior.md)|Поведение перезапуска устройства. Возможные значения: `basedOnReturnCode`, `allow`, `suppress`, `force`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -43,6 +43,8 @@ ms.locfileid: "60448031"
   "deviceRestartBehavior": "String"
 }
 ```
+
+
 
 
 

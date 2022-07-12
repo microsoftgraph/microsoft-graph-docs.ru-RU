@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 92ecd46a11fd68181a443208fd9f913e65ba191d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ba7b456edb6b683f57daaa207e629e3a42a449ef
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449448"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729813"
 ---
 # <a name="list-managediosstoreapps"></a>Перечисление объектов managedIOSStoreApp
 
@@ -41,7 +41,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -110,6 +110,8 @@ Content-Length: 1481
   ]
 }
 ```
+
+
 
 
 

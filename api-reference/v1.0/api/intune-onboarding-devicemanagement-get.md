@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e6b99beeea1e4b54c881ee674c21452b7ce1bcc
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c831027d0b50a899b92ec24f9a9aa7b819611be7
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448073"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732578"
 ---
 # <a name="get-devicemanagement"></a>Получение deviceManagement
 
@@ -44,7 +44,7 @@ GET /deviceManagement
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -105,6 +105,8 @@ Content-Length: 1230
   }
 }
 ```
+
+
 
 
 

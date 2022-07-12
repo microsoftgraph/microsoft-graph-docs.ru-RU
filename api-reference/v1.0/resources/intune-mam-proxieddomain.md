@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 22df2056dda32884b25cd7bc1e59ab12ce9eccbd
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 68345da459d37742137ca373b2c98c6da2e96437
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454063"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730380"
 ---
 # <a name="proxieddomain-resource-type"></a>Тип ресурса proxiedDomain
 
@@ -24,7 +24,7 @@ ms.locfileid: "60454063"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |ipAddressOrFQDN|Строка|IP-адрес или полное доменное имя|
-|proxy|Строка|IP-адрес прокси или FQDN|
+|proxy|Строка|IP-адрес прокси-сервера или полное доменное имя|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -43,6 +43,8 @@ ms.locfileid: "60454063"
   "proxy": "String"
 }
 ```
+
+
 
 
 
