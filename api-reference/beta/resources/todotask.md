@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7d1d19378d27cb65365d5a9999974aa16b511661
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: 9c11252d3dded276e96ffbc219a3cf9155718da7
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645250"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66767956"
 ---
 # <a name="todotask-resource-type"></a>Тип ресурса todoTask
 
@@ -57,6 +57,7 @@ ms.locfileid: "66645250"
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601 (всегда используется формат UTC). Например, полночь в формате UTC 1 января 2020 г. будет выглядеть следующим образом: "2020-01-01T00:00:00Z".|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Расписание повторения задачи.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата и время появления напоминания о задаче.|
+|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанном часовом поясе, с которого запланирован запуск задачи.|
 |status|taskStatus|Указывает состояние или ход выполнения задачи. Возможные значения: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |title|String|Краткое описание задачи.|
 
@@ -99,6 +100,9 @@ ms.locfileid: "66645250"
     "@odata.type": "microsoft.graph.patternedRecurrence"
   },
   "reminderDateTime": {
+    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+  },
+  "startDateTime": {
     "@odata.type": "microsoft.graph.dateTimeTimeZone"
   },
   "status": "String",

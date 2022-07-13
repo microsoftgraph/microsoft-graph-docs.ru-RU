@@ -1,8 +1,8 @@
 ### YamlMime:Tutorial
-title: Создайте первое Подключение к данным Microsoft Graph приложение
+title: Создание первого приложения Microsoft Graph Data Connect
 metadata:
-  title: Создайте первое Подключение к данным Microsoft Graph приложение
-  description: В этом руководстве вы создайте первое Подключение к данным Microsoft Graph для метрик электронной почты.
+  title: Создание первого приложения Microsoft Graph Data Connect
+  description: В этом руководстве вы создадите первое приложение Microsoft Graph Data Connect для метрик электронной почты.
   audience: Developer
   level: Beginner
   displayType: one-column
@@ -10,41 +10,41 @@ metadata:
   author: fercobo-msft
   ms.topic: tutorial
   ms.custom: scenarios:getting-started, languages:ASP.NET
-  ms.openlocfilehash: af54756e2ec275210cb621e8e118f4fdd8fbd43f1a9f10065fdd04aa300d133a
-  ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+  ms.openlocfilehash: 9dd17b419898fe7e7355a740521263780fdef13b
+  ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "54146636"
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66768228"
 items:
-- title: Создайте первое Подключение к данным Microsoft Graph приложение
+- title: Создание первого приложения Microsoft Graph Data Connect
   durationInMinutes: 10
   content: >
-    [!INCLUDE [](data-connect-quickstart-01.md)]
-- title: Настройка клиента Microsoft 365 и включить Подключение к данным Microsoft Graph
+    [!INCLUDE [](../includes/data-connect-quickstart-01.md)]
+- title: Настройка клиента Microsoft 365 и включение Подключения к данным Microsoft Graph
   durationInMinutes: 5
   content: >
-    [!INCLUDE [](data-connect-quickstart-02.md)]
-- title: Настройка регистрации Azure Active Directory приложения
+    [!INCLUDE [](../includes/data-connect-quickstart-02.md)]
+- title: Настройка регистрации приложения Azure Active Directory
   durationInMinutes: 10
   content: >
-    [!INCLUDE [](data-connect-quickstart-03.md)]
-- title: Настройка ресурса служба хранилища Azure
+    [!INCLUDE [](../includes/data-connect-quickstart-03.md)]
+- title: Настройка ресурса службы хранилища Azure
   durationInMinutes: 10
   content: >
-    [!INCLUDE [](data-connect-quickstart-04.md)]
-- title: Настройка ресурса Фабрики данных Azure
+    [!INCLUDE [](../includes/data-connect-quickstart-04.md)]
+- title: Настройка Фабрика данных Azure ресурсов
   durationInMinutes: 15
   content: >
-    [!INCLUDE [](data-connect-quickstart-05.md)]
-- title: Отслеживайте запросы на согласие на данные с Microsoft 365 Admin Center и PowerShell
+    [!INCLUDE [](../includes/data-connect-quickstart-05.md)]
+- title: Мониторинг запросов на согласие данных с помощью Microsoft 365 Admin Center и PowerShell
   durationInMinutes: 5
   content: >
-    [!INCLUDE [](data-connect-quickstart-06.md)]
-- title: Создайте ASP.NET для обработки экспортных данных
+    [!INCLUDE [](../includes/data-connect-quickstart-06.md)]
+- title: Создание ASP.NET веб-приложения для обработки экспортированных данных
   durationInMinutes: 25
   content: >
-    [!INCLUDE [](data-connect-quickstart-07.md)]
+    [!INCLUDE [](../includes/data-connect-quickstart-07.md)]
 - title: Поздравляем!
   durationInMinutes: 0
-  content: '[!INCLUDE [](data-connect-quickstart-08.md)]'
+  content: '[!INCLUDE [](../includes/data-connect-quickstart-08.md)]'

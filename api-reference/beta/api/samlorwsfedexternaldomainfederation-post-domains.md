@@ -1,34 +1,34 @@
 ---
 title: Создание externalDomainName
-description: Создание нового объекта externalDomainName.
+description: Создайте новый объект externalDomainName.
 author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5038eebdc83c242ffce20668b1eb906f032e006f
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 5c53e346e5f6631b6cf322fae118c5563aab04e5
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947673"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66767967"
 ---
 # <a name="create-externaldomainname"></a>Создание externalDomainName
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте несколько доменов в конфигурацию SAML или WS-Fed, создав новый объект [externalDomainName](../resources/externaldomainname.md) и добавьте его в существующий [samlOrWsFedExternalDomainFedFedFedAinFederation.](../resources/samlorwsfedexternaldomainfederation.md)
+Добавьте несколько доменов в конфигурацию на основе SAML или WS-Fed, создав новый объект [externalDomainName](../resources/externaldomainname.md) и добавьте его в существующий [объект samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Domain.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)| IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Domain.ReadWrite.All|
+|Приложение| IdentityProvider.ReadWrite.All|
 
-Учетная запись для работы или школы должна принадлежать одной из следующих ролей Azure Active Directory [(Azure AD):](/azure/active-directory/roles/permissions-reference)
+Учетная запись рабочей или учебной учетной записи должна принадлежать одной из следующих ролей [Azure Active Directory (Azure AD).](/azure/active-directory/roles/permissions-reference)
 
 * Глобальный администратор
 * Администратор внешнего поставщика удостоверений
@@ -53,17 +53,17 @@ POST /directory/federationConfigurations/{samlOrWsFedExternalDomainFederation ID
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса подарим JSON представление [объекта externalDomainName.](../resources/externaldomainname.md)
+В тексте запроса добавьте представление объекта [externalDomainName](../resources/externaldomainname.md) в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании [externalDomainName.](../resources/externaldomainname.md)
+В следующей таблице показаны свойства, необходимые при создании [externalDomainName](../resources/externaldomainname.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Доменное имя внешней организации, которое необходимо добавить в [samlOrOrWsFedExternalDomainFederation.](../resources/samlorwsfedexternaldomainfederation.md) Наследуется от [сущности](../resources/entity.md).|
+|id|String|Доменное имя внешней организации, которую вы хотите добавить в [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md). Наследуется от [сущности](../resources/entity.md).|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект externalDomainName](../resources/externaldomainname.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [externalDomainName](../resources/externaldomainname.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -106,7 +106,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5883640754dfc1256bd0293556ea766e48b613c3
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 4f2fd1bce0619204237b8a3d49f7643f20b4a3fa
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820835"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768303"
 ---
 # <a name="update-todotask"></a>Обновление todoTask
 Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -22,8 +22,8 @@ ms.locfileid: "65820835"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -59,8 +59,9 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 |isReminderOn|Boolean|Присвоено значение true, если установлено напоминание пользователю о задаче.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Расписание повторения задачи.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата и время появления напоминания о задаче.|
+|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанном часовом поясе, с которого запланирован запуск задачи.|
 |status|taskStatus|Указывает состояние или ход выполнения задачи. Возможные значения: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|title|Строка|Краткое описание задачи.|
+|title|String|Краткое описание задачи.|
 |createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса.|
 |bodyLastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения текста задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса.|

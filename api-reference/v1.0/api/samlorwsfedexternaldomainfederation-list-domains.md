@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 803e67770dc38851e96f2c69a78568b855c7f7a3
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 5d7adcc1861baa3fa42cd630f3b78cf0e0f7140a
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65315670"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768135"
 ---
 # <a name="list-domains"></a>Список доменов
 Пространство имен: microsoft.graph
@@ -23,11 +23,11 @@ ms.locfileid: "65315670"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Domain.Read.All, Domain.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|Domain.Read.All, Domain.ReadWrite.All|
+|Приложение|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-Учетная запись рабочей или учебной учетной записи должна принадлежать одной из следующих Azure Active Directory [(Azure AD) ролей](/azure/active-directory/roles/permissions-reference):
+Учетная запись рабочей или учебной учетной записи должна принадлежать одной из следующих ролей [Azure Active Directory (Azure AD).](/azure/active-directory/roles/permissions-reference)
 
 * Глобальный администратор
 * Администратор внешнего поставщика удостоверений

@@ -1,23 +1,23 @@
 ---
 title: Создание samlOrWsFedExternalDomainFederation
-description: Создание нового объекта samlOrWsFedExternalDomainFederation.
+description: Создайте объект samlOrWsFedExternalDomainFederation.
 author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 53d95a9f40ba3253c3c6cc7fbc8133a787de0e09
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 43614ae06988fe31ee3b2a8eb4013f02befa7b40
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099030"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768310"
 ---
 # <a name="create-samlorwsfedexternaldomainfederation"></a>Создание samlOrWsFedExternalDomainFederation
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [объекта samlOrWsFedExternalDomainFederation.](../resources/samlorwsfedexternaldomainfederation.md)
+Создайте объект [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,11 +25,11 @@ ms.locfileid: "62099030"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Domain.Read.All, Domain.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|Domain.Read.All, Domain.ReadWrite.All|
+|Приложение|IdentityProvider.ReadWrite.All|
 
-Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
+Учетная запись рабочей или учебной учетной записи должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
 * Администратор внешнего поставщика удостоверений
@@ -42,7 +42,7 @@ ms.locfileid: "62099030"
 -->
 
 ``` http
-POST /directory/federationConfigurations
+POST /directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomainFederation
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -54,22 +54,22 @@ POST /directory/federationConfigurations
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [samlOrWsFedExternalDomainFederation.](../resources/samlorwsfedexternaldomainfederation.md)
+В тексте запроса добавьте представление объекта [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании [samlOrWsFedExternalDomainFederation.](../resources/samlorwsfedexternaldomainfederation.md)
+В следующей таблице показаны свойства, необходимые при создании [объекта samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображение имени поставщика удостоверений на основе SAML/WS-Fed. Унаследовано от [identityProviderBase](../resources/identityproviderbase.md).|
-|issuerUri|Строка|URI эмитента сервера федерации. Наследуется [от samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
-|metadataExchangeUri|Строка|URI конечной точки обмена метаданными, используемой для проверки подлинности из богатых клиентских приложений. Наследуется [от samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
-|passiveSignInUri|String|URI, на которые направляются веб-клиенты при входе в службы Azure AD. Наследуется [от samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
-|preferredAuthenticationProtocol|String|Предпочтительный протокол проверки подлинности. Поддерживаемые значения `saml` включают или `wsfed` . Наследуется [от samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
-|signingCertificate|String|Текущий сертификат, используемый для подписывания маркеров, переданных платформа удостоверений Майкрософт. Сертификат форматируется как кодированная строка Base64 для публичной части сертификата подписи маркера федеративы IdP и должна быть совместима с классом X509Certificate2.  <br/><br/> Это свойство используется в следующих сценариях: <ul><li> если требуется опрокидывка за пределами обновления автороллевера <li>в настоящее время устанавливается новая служба федерации <li> если новый сертификат подписи маркера не присутствует в свойствах федерации после обновления сертификата службы федерации. </ul> <br/><br/> Azure AD обновляет сертификаты с помощью процесса автопроверки, в котором он пытается получить новый сертификат из метаданных службы федерации за 30 дней до истечения текущего сертификата. Если новый сертификат не доступен, Azure AD ежедневно отслеживает метаданные и обновляет параметры федерации для домена при наличии нового сертификата.|
+|displayName|String|Отображаемое имя поставщика удостоверений на основе SAML/WS-Fed. Унаследовано от [identityProviderBase](../resources/identityproviderbase.md).|
+|IssuerUri|String|URI издателя сервера федерации. Наследуется [от samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
+|metadataExchangeUri|String|URI конечной точки обмена метаданными, используемой для проверки подлинности из полнофункциональных клиентских приложений. Наследуется [от samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
+|passiveSignInUri|String|Универсальный код ресурса (URI), на который направляются веб-клиенты при входе в Azure AD служб. Наследуется [от samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
+|preferredAuthenticationProtocol|String|Предпочтительный протокол проверки подлинности. Поддерживаемые значения включают или `saml` `wsfed`. Наследуется [от samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
+|signingCertificate|String|Текущий сертификат, используемый для подписи маркеров, передаваемых платформа удостоверений Майкрософт. Сертификат форматируется как строка в кодировке Base64 общедоступной части сертификата подписи маркера федеративного IdP и должна быть совместима с классом X509Certificate2.  <br/><br/> Это свойство используется в следующих сценариях: <ul><li> Значение , если требуется смена за пределами обновления автоматической регистрации. <li>настраивается новая служба федерации; <li> Значение , если новый сертификат подписи маркера отсутствует в свойствах федерации после обновления сертификата службы федерации. </ul> <br/><br/> Azure AD обновляет сертификаты с помощью процесса автоматической регистрации, в котором он пытается получить новый сертификат из метаданных службы федерации за 30 дней до истечения срока действия текущего сертификата. Если новый сертификат недоступен, Azure AD отслеживает метаданные ежедневно и обновляет параметры федерации для домена, когда доступен новый сертификат.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа и `201 Created` [объект samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) в тексте ответа.
+В случае успешного выполнения `201 Created` этот метод возвращает код отклика и объект [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -83,7 +83,7 @@ POST /directory/federationConfigurations
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/directory/federationConfigurations
+POST https://graph.microsoft.com/beta/directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomainFederation
 Content-Type: application/json
 
 {
@@ -126,7 +126,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

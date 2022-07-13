@@ -1,26 +1,24 @@
 ---
-title: Перечисление удаленных элементов
+title: Перечисление deletedItems (объекты каталога)
 description: Получение списка недавно удаленных элементов.
 author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 73100502687101eaf9a9aa056ab12f91af4361ee
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 61d11d33871710267933fcf71e5932a33f71514d
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672562"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768163"
 ---
-# <a name="list-deleted-items"></a>Перечисление удаленных элементов
+# <a name="list-deleteditems-directory-objects"></a>Перечисление deletedItems (объекты каталога)
 
 Пространство имен: microsoft.graph
 
-Получение списка недавно [удаленных элементов](../resources/directory.md).
+Получение списка недавно удаленных объектов каталога. В настоящее время эта функция поддерживается только для [ресурсов приложения](../resources/application.md), [группы](../resources/group.md) [и пользователей](../resources/user.md) .
 
-В настоящее время функции удаленных элементов поддерживаются только для [приложений](../resources/application.md), [групп](../resources/group.md) и [пользовательских](../resources/user.md) ресурсов.
-
->**Примечание:** Удаленные группы безопасности удаляются постоянно и не могут быть извлечены с помощью этого API.
+>**Примечание:** Удаленные группы безопасности удаляются без возможности восстановления и не могут быть получены с помощью этого API.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -34,7 +32,7 @@ ms.locfileid: "63672562"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
+|Приложение | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ### <a name="for-users"></a>Для пользователей:
 
@@ -50,7 +48,7 @@ ms.locfileid: "63672562"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
+|Приложение | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -61,24 +59,24 @@ GET /directory/deletedItems/microsoft.graph.user
 GET /directory/deletedItems/microsoft.graph.device
 ```
 
-Этот API в настоящее время поддерживает получение типов объектов приложений (`microsoft.graph.application`), групп (`microsoft.graph.group`) или пользователей (`microsoft.graph.user`) из удаленных элементов. Тип литой OData является обязательной частью URI `GET /directory/deleteditems` , и вызов без типа **не поддерживается** .
+В настоящее время этот API поддерживает извлечение типов объектов приложений (`microsoft.graph.application`), групп (`microsoft.graph.group`) или пользователей (`microsoft.graph.user`) из удаленных элементов. Тип приведения OData является обязательной частью URI, `GET /directory/deleteditems` и вызов без типа **не поддерживается** .
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры запроса, поддерживаемые ресурсом, заданным литой OData. То есть, `$count`, `$expand``$filter`, `$orderBy`, , `$search`, и `$select`параметры `$top` запроса. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Например:
+Этот метод поддерживает параметры запроса, поддерживаемые ресурсом, указанным приведения OData. То есть, `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, и `$select`параметры `$top` запроса. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Например:
 
 ```msgraph-interactive
 https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?&$count=true&$orderBy=deletedDateTime desc&$select=id,displayName,deletedDateTime
 ConsistencyLevel: eventual
 ```
 
-В этом примере требуется **заглавная головка ConsistencyLevel** , `$orderBy` `$count` так как в запросе используются параметры запроса и запроса.
+В этом примере требуется **заголовок ConsistencyLevel** `$orderBy` `$count` , так как в запросе используются параметры и параметры запроса.
 
-### <a name="examples-using-the-orderby-odata-query-parameter"></a>Примеры использования параметра запроса $orderBy OData
+### <a name="examples-using-the-orderby-odata-query-parameter"></a>Примеры использования параметра $orderBy OData
 
-Параметр `$orderBy` запроса OData поддерживается в свойствах **deletedDateTime**, **displayName** и **userPrincipalName** удаленных типов объектов. В **свойстве deletedDateTime** запрос требует добавления расширенных параметров запроса [(](/graph/aad-advanced-queries) заглавная строка **ConsistencyLevel** `true` `$count=true` и строка запросов).
+Параметр `$orderBy` запроса OData поддерживается в свойствах **deletedDateTime**, **displayName** и **userPrincipalName** удаленных типов объектов. В **свойстве deletedDateTime** запрос требует добавления дополнительных параметров запроса [(](/graph/aad-advanced-queries) заголовок **ConsistencyLevel** `true` задан и строка `$count=true` запроса).
 
-| Литой OData | Свойства, поддерживающие $orderBy | Пример |
+| Приведение OData | Свойства, поддерживающие $orderBy | Пример |
 | :--- | :--- | :--- |
 | microsoft.graph.user | deletedDateTime, displayName, userPrincipalName | /directory/deletedItems/microsoft.graph.user?$orderBy=userPrincipalName |
 | microsoft.graph.group | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.group?$orderBy=deletedDateTime asc&$count=true |
@@ -88,7 +86,7 @@ ConsistencyLevel: eventual
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer &lt;code&gt; *Обязательный*.|
+| Authorization  | Bearer &lt;code&gt; *Обязательный*.|
 | Accept  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -104,7 +102,7 @@ ConsistencyLevel: eventual
 #### <a name="request"></a>Запрос
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_deleteditems"
 }-->
 ```msgraph-interactive
@@ -141,7 +139,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-the-count-of-deleted-user-objects-and-order-the-results-by-the-deleteddatetime-property"></a>Пример 2. Извлекать количество удаленных объектов пользователя и заказать результаты с помощью свойства deletedDateTime.
+### <a name="example-2-retrieve-the-count-of-deleted-user-objects-and-order-the-results-by-the-deleteddatetime-property"></a>Пример 2. Получение количества удаленных объектов пользователя и упорядочивания результатов по свойству deletedDateTime
 
 #### <a name="request"></a>Запрос
 

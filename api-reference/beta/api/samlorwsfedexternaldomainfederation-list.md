@@ -1,23 +1,23 @@
 ---
-title: Список samlOrWsFedExternalDomainFederations
-description: Получите список объектов samlOrWsFedExternalDomainFederation и их свойств.
+title: List samlOrWsFedExternalDomainFederations
+description: Получение списка объектов samlOrWsFedExternalDomainFederation и их свойств.
 author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7c8ad07b44a4bb724e9b58645ac053df58a34a02
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6081b34c488d3b55d06880d4c05789b6dd59b024
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132725"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768317"
 ---
-# <a name="list-samlorwsfedexternaldomainfederations"></a>Список samlOrWsFedExternalDomainFederations
+# <a name="list-samlorwsfedexternaldomainfederations"></a>List samlOrWsFedExternalDomainFederations
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) и их свойств.
+Получение списка объектов [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) и их свойств.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,11 +25,11 @@ ms.locfileid: "62132725"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Domain.Read.All, Domain.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|Domain.Read.All, Domain.ReadWrite.All|
+|Приложение|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
+Учетная запись рабочей или учебной учетной записи должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
 * Администратор внешнего поставщика удостоверений
@@ -51,13 +51,13 @@ GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederatio
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) в теле ответа.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и коллекцию объектов [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

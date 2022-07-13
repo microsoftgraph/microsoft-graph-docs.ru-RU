@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7ab1a56c83e580ffdabfc687b65e6d5a10a958d5
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 0c67074803e43ebad14af4e9b5017e4286021c80
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65315733"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768156"
 ---
 # <a name="create-samlorwsfedexternaldomainfederation"></a>Создание samlOrWsFedExternalDomainFederation
 Пространство имен: microsoft.graph
@@ -23,9 +23,9 @@ ms.locfileid: "65315733"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Domain.Read.All, Domain.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|Domain.Read.All, Domain.ReadWrite.All|
+|Приложение|IdentityProvider.ReadWrite.All|
 
 Учетная запись рабочей или учебной учетной записи должна принадлежать к одной из следующих ролей:
 
@@ -40,7 +40,7 @@ ms.locfileid: "65315733"
 -->
 
 ``` http
-POST /directory/federationConfigurations
+POST /directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomainFederation
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -82,7 +82,7 @@ POST /directory/federationConfigurations
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/directory/federationConfigurations
+POST https://graph.microsoft.com/beta/directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomainFederation
 Content-Type: application/json
 
 {

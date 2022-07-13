@@ -1,22 +1,23 @@
 ---
 title: Получение объекта plannerTaskDetails
-description: Получение свойств и связей объекта **plannertaskdetails**.
+description: Получение свойств и связей объекта plannerTaskDetails.
 ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 4b492bd6f947d18de6b869e2278f23466d04629e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: acc02f8e1c11993945977a519593f064d0c82fe5
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132264"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768296"
 ---
 # <a name="get-plannertaskdetails"></a>Получение объекта plannerTaskDetails
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта **plannertaskdetails**.
+Получение свойств и связей объекта **plannerTaskDetails** .
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -37,17 +38,17 @@ GET /planner/tasks/{id}/details
 |:----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа `200 OK` и объект [plannerTaskDetails](../resources/plannertaskdetails.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [plannerTaskDetails](../resources/plannertaskdetails.md) в теле отклика.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 403 и 404, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -84,8 +85,9 @@ GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/details
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

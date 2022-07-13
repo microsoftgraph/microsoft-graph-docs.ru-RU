@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: b7c78f1a792930d701cc07666c3c95d4d77803bf
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 187ac1380b20726300d7a9134b866a63973d818e
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477504"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768170"
 ---
 # <a name="update-serviceprincipal"></a>Обновление servicePrincipal
 
@@ -47,7 +47,7 @@ PATCH /servicePrincipals/{id}
 | Свойство     | Тип |Описание|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| Значение **true**, если учетная запись субъекта-службы включена. В противном случае используется значение **false**.|
-|addIns| [addIn](../resources/addin.md) | Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые способны визуализировать файловые потоки, [могут установить свойство addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online) для его функции "FileHandler". Это позволит таким службам, как Microsoft 365, вызывать приложение в контексте документов, над которыми работает пользователь.|
+|addIns| [addIn](../resources/addin.md) | Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые способны визуализировать файловые потоки, [могут установить свойство addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online&preserve-view=true) для его функции "FileHandler". Это позволит таким службам, как Microsoft 365, вызывать приложение в контексте документов, над которыми работает пользователь.|
 |alternativeNames|Коллекция строк| Используется для получения субъектов-служб по подпискам, для идентификации групп ресурсов и полных идентификаторов ресурсов для [управляемых удостоверений](/azure/active-directory/managed-identities-azure-resources/overview).|
 |appRoleAssignmentRequired|Boolean|Указывает, требуется ли объект **appRoleAssignment** для пользователя или группы, перед тем как Azure AD выпустит маркер пользователя или доступа для приложения. Значение NULL не допускается. |
 |appRoles|Коллекция [appRole](../resources/approle.md)|Роли приложения, предоставляемые связанным приложением. Дополнительные сведения см. в определении свойства **appRoles** для ресурса [application](../resources/application.md). Значение null не допускается. |

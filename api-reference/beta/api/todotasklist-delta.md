@@ -1,16 +1,16 @@
 ---
 title: 'todoTaskList: delta'
-description: Получение набора ресурсов todoTaskList, которые были добавлены, удалены или удалены в Список дел Microsoft.
+description: Получение набора ресурсов todoTaskList, которые были добавлены, удалены или удалены в Microsoft To Do.
 ms.localizationpriority: medium
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bc9da9fbc462a4056504d982d41ff4d63c2835c7
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: ff97063f53297ca2457252aae5dec3b1dfd42c18
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246799"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66767960"
 ---
 # <a name="todotasklist-delta"></a>todoTaskList: delta
 
@@ -18,7 +18,7 @@ ms.locfileid: "65246799"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение набора ресурсов [todoTaskList](../resources/todotasklist.md), которые были добавлены, удалены или удалены в Список дел Microsoft.
+Получение набора ресурсов [todoTaskList](../resources/todotasklist.md) , которые были добавлены, удалены или удалены в Microsoft To Do.
 
 Вызов **разностной** функции **для todoTaskList** аналогичен запросу GET, за исключением того, [](/graph/delta-query-overview) что путем соответствующего применения маркеров состояния в одном или нескольких из этих вызовов можно запросить добавочные изменения в **todoTaskList**. Это позволяет поддерживать и синхронизировать локальное хранилище **todoTaskList** пользователя без необходимости каждый раз получать все **todoTaskList** с сервера.
 
@@ -59,6 +59,8 @@ GET /users/{id|userPrincipalName}/todo/lists/delta
 | Content-Type  | string  | application/json. Обязательный. |
 | Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
 
+> **Примечание:** В заголовке запроса значение `odata.maxpagesize` должно быть больше или равно 10, чтобы получить правильное `nextLink` значение.
+
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект коллекции [todoTaskList](../resources/todotasklist.md) в тексте отклика.
@@ -74,7 +76,7 @@ GET /users/{id|userPrincipalName}/todo/lists/delta
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET https://graph.microsoft.com/beta/me/todo/lists/delta
-Prefer: odata.maxpagesize=2
+Prefer: odata.maxpagesize=12
 ```
 ### <a name="response"></a>Отклик
 
@@ -83,7 +85,7 @@ Prefer: odata.maxpagesize=2
 
 Ниже показан отклик с маркером состояния _skipToken_ в заголовке отклика _@odata.nextLink_.
 
-Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 ```http
 HTTP/1.1 200 OK

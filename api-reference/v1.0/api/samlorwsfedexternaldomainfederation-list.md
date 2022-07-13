@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b611bfaf2b5e3b72e4069287fec6241004f320f0
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 0acbdc2109e1f8886429bfe145910c227692d9da
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66438475"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66767934"
 ---
 # <a name="list-samlorwsfedexternaldomainfederations"></a>List samlOrWsFedExternalDomainFederations
 Пространство имен: microsoft.graph
@@ -23,9 +23,9 @@ ms.locfileid: "66438475"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Domain.Read.All, Domain.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Domain.Read.All, Domain.ReadWrite.All|
+|Приложение|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 Учетная запись рабочей или учебной учетной записи должна принадлежать к одной из следующих ролей:
 

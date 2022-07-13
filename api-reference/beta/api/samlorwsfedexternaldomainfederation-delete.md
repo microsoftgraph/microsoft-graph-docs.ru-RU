@@ -5,19 +5,19 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cd92f1d919f3fc5938e2f994255f02f11849330f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 251f16e3a30372819a8800a87ac62f4ae64e1401
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125571"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768331"
 ---
 # <a name="delete-samlorwsfedexternaldomainfederation"></a>Удаление samlOrWsFedExternalDomainFederation
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [объекта samlOrWsFedExternalDomainFederation.](../resources/samlorwsfedexternaldomainfederation.md)
+Удаление объекта [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,11 +25,11 @@ ms.locfileid: "62125571"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Domain.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|Domain.ReadWrite.All|
+|Приложение|IdentityProvider.ReadWrite.All|
 
-Учетная запись для работы или школы должна принадлежать одной из следующих ролей Azure Active Directory [(Azure AD):](/azure/active-directory/roles/permissions-reference)
+Учетная запись рабочей или учебной учетной записи должна принадлежать одной из следующих ролей [Azure Active Directory (Azure AD).](/azure/active-directory/roles/permissions-reference)
 
 * Глобальный администратор
 * Администратор внешнего поставщика удостоверений
@@ -51,7 +51,7 @@ DELETE directory/federationConfigurations/{samlOrWsFedExternalDomainFederation I
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -62,7 +62,6 @@ DELETE directory/federationConfigurations/{samlOrWsFedExternalDomainFederation I
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -99,7 +98,6 @@ DELETE https://graph.microsoft.com/beta/directory/federationConfigurations/96db0
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>Отклик
 

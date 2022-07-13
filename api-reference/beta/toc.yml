@@ -626,7 +626,7 @@ items:
                 href: api/profile-get.md
               - name: Удаление профиля пользователя
                 href: api/profile-delete.md
-          - name: Командная работа
+          - name: Teamwork
             items:
               - name: Приложение установлено
                 href: resources/teamsappinstallation.md
@@ -12325,7 +12325,7 @@ items:
                         href: api/authenticationcontextclassreference-get.md
                       - name: Обновление
                         href: api/authenticationcontextclassreference-update.md
-              - name: Межтенантный доступ
+              - name: Межклиентский доступ
                 items:
                   - name: Обзор
                     displayName: 'Cross-tenant access settings, XTAP'
@@ -12382,7 +12382,14 @@ items:
                     href: api/oauth2permissiongrant-delete.md
                   - name: Получение дельты
                     href: api/oauth2permissiongrant-delta.md
-              - name: Защита удостоверений
+              - name: Политика внешних удостоверений (предварительная версия)
+                href: resources/externalidentitiespolicy.md
+                items:
+                  - name: Получение
+                    href: api/externalidentitiespolicy-get.md
+                  - name: Обновление
+                    href: api/externalidentitiespolicy-update.md
+              - name: Защита идентификации
                 href: resources/identityprotection-overview.md
                 items:
                   - name: Обнаружение рисков
@@ -15681,6 +15688,10 @@ items:
                 href: api/channel-update-members.md
               - name: Обновление сообщения
                 href: api/chatmessage-update.md
+              - name: Удаление сообщения
+                href: api/chatmessage-softdelete.md
+              - name: Отмена удаления сообщений
+                href: api/chatmessage-undosoftdelete.md
               - name: Проверка доступа пользователей
                 href: api/channel-doesuserhaveaccess.md
               - name: Перечисление команд с общим доступом к каналу
@@ -15759,6 +15770,10 @@ items:
                 href: api/chatmessage-post-replies.md
               - name: Обновление сообщения
                 href: api/chatmessage-update.md
+              - name: Удаление сообщения
+                href: api/chatmessage-softdelete.md
+              - name: Отмена удаления сообщений
+                href: api/chatmessage-undosoftdelete.md
               - name: Получение сообщений по всем каналам.
                 href: api/channel-getallmessages.md
               - name: Получение сообщений во всех чатах

@@ -1,23 +1,23 @@
 ---
 title: Список доменов
-description: Получите список всех объектов externalDomainName для samlOrWsFedExternalDomainFederation.
+description: Получение списка всех объектов externalDomainName для объекта samlOrWsFedExternalDomainFederation.
 author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0655cc11f6f153ee62d16d5d1378b07340a225b0
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 92b41c5c2ce5fc50a0ee3908157a11c82046d869
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766525"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768282"
 ---
 # <a name="list-domains"></a>Список доменов
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список всех [объектов externalDomainName](../resources/externaldomainname.md) для [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
+Получение списка всех объектов [externalDomainName](../resources/externaldomainname.md) для [объекта samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,11 +25,11 @@ ms.locfileid: "59766525"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Domain.Read.All, Domain.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложения|Domain.Read.All, Domain.ReadWrite.All|
+|Приложение|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-Учетная запись для работы или школы должна принадлежать одной из следующих ролей Azure Active Directory [(Azure AD):](/azure/active-directory/roles/permissions-reference)
+Учетная запись рабочей или учебной учетной записи должна принадлежать одной из следующих ролей [Azure Active Directory (Azure AD).](/azure/active-directory/roles/permissions-reference)
 
 * Глобальный администратор
 * Администратор внешнего поставщика удостоверений
@@ -49,7 +49,7 @@ GET /directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomai
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -57,7 +57,7 @@ GET /directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomai
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов externalDomainName](../resources/externaldomainname.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию [объектов externalDomainName](../resources/externaldomainname.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

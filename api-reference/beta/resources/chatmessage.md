@@ -5,12 +5,12 @@ doc_type: resourcePageType
 ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: cc1651a8ea1d9ae5ca7a6dca2d4544cc3b8c735b
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: d02f67363c11f9e70419ebc8f4dee376e23dba06
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296544"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768324"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -29,26 +29,32 @@ ms.locfileid: "65296544"
 |**Сообщения в канале**| | |
 |[Вывод списка сообщений в канале](../api/channel-list-messages.md) | Коллекция [chatMessage](chatmessage.md) | Список всех корневых сообщений в канале.|
 |[Получение разностных сообщений в канале](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Получение добавочных сообщений в канале. |
-|[Создание подписки для новых сообщений канала](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Прослушивайте новые, измененные и удаленные сообщения и реакции на них. |
+|[Создать подписку на новые сообщения канала](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Прослушивайте новые, измененные и удаленные сообщения и реакции на них. |
 |[Получение сообщения в канале](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Получение одного корневого сообщения в канале.|
 |[Отправка сообщения в канале](../api/chatmessage-post.md) | [chatMessage](chatmessage.md)| Создайте новое корневое сообщение в канале.|
 |[Обновление сообщения в канале](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Обновление свойства **policyViolation** сообщения чата.|
+|[Удаление сообщения в канале](../api/chatmessage-softdelete.md)|[chatMessage](chatmessage.md)| Удалите сообщение в канале.|
+|[Отмена удаления сообщения в канале](../api/chatmessage-undoSoftdelete.md)|[chatMessage](chatmessage.md)| Отмените удаление сообщения в канале.|
 |**Ответы на сообщения канала**| | |
 |[Перечисление ответов на сообщение](../api/chatmessage-list-replies.md) | Коллекция [chatMessage](chatmessage.md)| Список всех ответов на сообщение чата в канале.|
 |[Получение ответного сообщения в канале](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Получение одного ответного сообщения в канале.|
 |[Ответ на сообщение в канале](../api/chatmessage-post-replies.md) | [chatMessage](chatmessage.md)| Ответ на существующее сообщение чата в канале.|
 |[Обновление ответного сообщения](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Обновление свойства **policyViolation** сообщения чата.|
+|[Удаление ответного сообщения в канале](../api/chatmessage-softdelete.md)|[chatMessage](chatmessage.md)| Удалите одно ответное сообщение в канале.|
+|[Отмена удаления ответного сообщения в канале](../api/chatmessage-undoSoftdelete.md)|[chatMessage](chatmessage.md)| Отмените удаление одного ответного сообщения в канале.
 |**Сообщения чата**| | |
 |[Вывод списка сообщений в чате](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Вывод списка сообщений чата в чате. |
 |[Получение сообщения в чате](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения чата в чате. |
 |[Получение сообщений во всех чатах для пользователя](../api/chats-getallmessages.md)| [коллекция чатов](chat.md)| Получение сообщений из всех чатов, в которых пользователь является участником, включая чаты 1:1, групповые чаты и чаты собраний. |
 |[Получение всех сообщений в канале](../api/channel-getallmessages.md)|Коллекция [channel](channel.md) | Получайте все сообщения каналов, в которые входит пользователь. |
-|[Создание подписки для новых сообщений чата](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Прослушивайте новые, измененные и удаленные сообщения чата и реакции на них. |
+|[Создать подписку на новые сообщения чата](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Прослушивайте новые, измененные и удаленные сообщения чата и реакции на них. |
 |[Отправка сообщения в чате](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Отправка сообщения чата в существующей беседе 1:1 или групповой беседе.|
 |[Обновление сообщения в чате](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Обновление свойства **policyViolation** сообщения чата.|
+|[Удаление сообщения в чате](../api/chatmessage-softdelete.md)|[chatMessage](chatmessage.md)| Удалите сообщение чата.|
+|[Отмена удаления сообщения в чате](../api/chatmessage-undoSoftdelete.md)|[chatMessage](chatmessage.md)| Отмените удаление сообщения в чате.|
 |**Размещенное содержимое**| | |
-|[Вывод списка всего размещенного содержимого](../api/chatmessage-list-hostedcontents.md) | [Коллекция chatMessageHostedContent](../resources/chatmessagehostedcontent.md)| Получение всего размещенного содержимого, связанного с сообщением.|
-|[Получение размещенного содержимого](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Получение размещенного содержимого (и его байтов) для сообщения.|
+|[Список всего размещенного содержимого](../api/chatmessage-list-hostedcontents.md) | [Коллекция chatMessageHostedContent](../resources/chatmessagehostedcontent.md)| Получение всего размещенного содержимого, связанного с сообщением.|
+|[Получить размещенное содержимое](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Получение размещенного содержимого (и его байтов) для сообщения.|
 
 ## <a name="properties"></a>Свойства
 
@@ -57,15 +63,15 @@ ms.locfileid: "65296544"
 |attachments|Коллекция [chatMessageAttachment](chatmessageattachment.md) |Ссылки на вложенные объекты, такие как файлы, вкладки, собрания и т. д.|
 |body|[itemBody](itembody.md)|Обычное текстовое или HTML-представление содержимого сообщения чата. Представление определяется параметром contentType в тексте. Содержимое всегда находится в ФОРМАТЕ HTML, если сообщение чата содержит [chatMessageMention](chatmessagemention.md). |
 |channelIdentity|[channelIdentity](channelidentity.md)|Если сообщение было отправлено в канале, представляет удостоверение канала.|
-|chatId|строка|Если сообщение было отправлено в **чате**, представляет удостоверение **чата**.|
+|chatId|String|Если сообщение было отправлено в **чате**, представляет удостоверение **чата**.|
 |createdDateTime|dateTimeOffset|Метка времени создания сообщения чата.|
 |deletedDateTime|dateTimeOffset|Только для чтения. Метка времени, в которой сообщение чата было удалено, или значение NULL, если оно не удалено. |
 |etag| string | Только для чтения. Номер версии сообщения чата. |
 |eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Только для чтения.  При наличии представляет сведения о событии, которое произошло в чате **, канале** или **команде**, например добавление новых участников. Для сообщений о событиях **свойству messageType** будет задано значение `systemEventMessage`.|
 |from|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| Сведения об отправителях сообщения чата. Можно задать только во время [миграции](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).|
 |id|String| Только для чтения. Уникальный идентификатор сообщения.|
-|importance|строка | Важность сообщения чата. Допустимые значения: `normal`, `high`, `urgent`.|
-|lastEditedDateTime|dateTimeOffset|Только для чтения. Метка времени при внесении изменений в сообщение чата. Активирует флаг "Изменено" в Teams пользовательского интерфейса. Если изменения не внесены, значение равно .`null`|
+|importance|string | Важность сообщения чата. Допустимые значения: `normal`, `high`, `urgent`.|
+|lastEditedDateTime|dateTimeOffset|Только для чтения. Метка времени при внесении изменений в сообщение чата. Активирует флаг "Изменено" в пользовательском интерфейсе Teams. Если изменения не внесены, значение равно .`null`|
 |lastModifiedDateTime|dateTimeOffset|Только для чтения. Метка времени при создании сообщения чата (начальном параметре) или изменении, в том числе при добавлении или удалении реакции. |
 |языковые стандарты|string|Языковой стандарт сообщения чата, задаемого клиентом. Всегда задавайте значение `en-us`.|
 |mentions|Коллекция [chatMessageMention](chatmessagemention.md)| Список сущностей, упомянутых в сообщении чата. Поддерживаемые сущности: пользователь, бот, команда, канал и тег.|
@@ -83,7 +89,7 @@ ms.locfileid: "65296544"
 | Связь   | Тип    | Описание |
 |:---------------|:--------|:----------|
 |Ответы|[chatMessage](chatmessage.md)| Отвечает за указанное сообщение. Поддерживает сообщения `$expand` канала. |
-|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Содержимое в сообщении, размещенном Microsoft Teams, например изображения или фрагменты кода. |
+|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Содержимое в сообщении, размещенном в Microsoft Teams, например изображения или фрагменты кода. |
 
 ## <a name="json-representation"></a>Представление JSON
 

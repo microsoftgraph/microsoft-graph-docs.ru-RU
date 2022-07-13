@@ -5,25 +5,25 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8c78950129ccb0c469b505970c696a4b57236e9d
-ms.sourcegitcommit: 94741ff7f61f20a39dacfa6ce451a77ca02dd68a
+ms.openlocfilehash: 5812fb25f03a1bffde622ac1461738754b060b65
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62047107"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768121"
 ---
 # <a name="update-settings"></a>Обновление параметров
 
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [userSettings.](../resources/usersettings.md) Пользователи в одной организации могут иметь различные параметры в зависимости от их предпочтений или политик организации. Чтобы получить текущие параметры пользователя, см. [текущие параметры пользователя.](usersettings-get.md) 
+Обновление свойств объекта [userSettings](../resources/usersettings.md) . Пользователи в одной организации могут иметь разные параметры в зависимости от их предпочтений или политик организации. Чтобы получить текущие параметры пользователя, ознакомьтесь [с текущими параметрами пользователя](usersettings-get.md). 
 
 ### <a name="batch-request"></a>Пакетный запрос
 
-Кроме того, можно отключать несколько пользователей от Delve и отключить их вклад в доступ к контенту для всей организации с помощью пакетного запроса.
-Дополнительные дополнительные информации см. в серии [JSON.](/graph/json-batching)
+Кроме того, можно отказаться от использования Delve несколькими пользователями и отключить их вклад в релевантность содержимого для всей организации с помощью пакетного запроса.
+Дополнительные сведения см. в статье [о пакетной обработке JSON](/graph/json-batching).
 
->**Важно.** Только члены группы [ролей](/exchange/permissions/permissions?view=exchserver-2019#role-groups) управления организацией могут обновлять несколько пользователей. 
+>**Важно**! Обновить несколько пользователей могут [только члены](/exchange/permissions/permissions?view=exchserver-2019#role-groups&preserve-view=true) группы ролей управления организации. 
 
 
 
@@ -56,19 +56,19 @@ PATCH /users/{id | userPrincipalName}/settings/
 | Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Логический|Установите для true отключение доступа делегатов к API [Trending](/graph/api/resources/insights-trending?view=graph-rest-1.0) и отключение доступа к документам в Office Delve для пользователя. Значение true также влияет на релевантность контента, отображаемого в Microsoft 365 , например, рекомендуемые сайты в SharePoint Home и представление Discover в OneDrive для бизнеса показывают менее релевантные результаты. Этот параметр отражает состояние управления в [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+|contributionToContentDiscoveryDisabled|Логический|Задайте значение true: отключите делегированный доступ к API ["](/graph/api/resources/insights-trending?view=graph-rest-1.0&preserve-view=true) Тенденции" и отключите доступ к документам в Office Delve для пользователя. Значение true также влияет на релевантность содержимого, отображаемого в Microsoft 365. Например, рекомендуемые сайты в Домашней папке SharePoint и представление обнаружения в OneDrive для бизнеса отображают менее релевантные результаты. Этот параметр отражает состояние элемента управления [в Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 
 ## <a name="example"></a>Пример 
 
 ##### <a name="request"></a>Запрос
 
-Вот пример запроса о том, как отключать пользователя от Delve и отключить его вклад в содержимого для всей организации.
+Ниже приведен пример запроса на отказ пользователя от Delve и отключение его вклада в релевантность содержимого для всей организации.
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/settings

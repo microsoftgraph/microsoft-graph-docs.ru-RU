@@ -1,79 +1,80 @@
 ---
-title: тип ресурса tokenIssuancePolicy
-description: Представляет политику, определяемую характеристиками маркеров SAML, выданных Azure AD.
+title: Тип ресурса tokenIssuancePolicy
+description: Представляет политику для указания характеристик токенов SAML, выданных Azure AD.
 ms.localizationpriority: medium
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9fe2a87e0b56a54ef198152cd7f7e37941a8b572
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0ec511daf140c83887fad5c524c5c67084ba3810
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143673"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768289"
 ---
-# <a name="tokenissuancepolicy-resource-type"></a>тип ресурса tokenIssuancePolicy
+# <a name="tokenissuancepolicy-resource-type"></a>Тип ресурса tokenIssuancePolicy
 
 Пространство имен: microsoft.graph
 
 
 
-Представляет политику, определяемую характеристиками маркеров SAML, выданных Azure AD. Политики выдачи маркеров можно использовать для:
+Представляет политику для указания характеристик токенов SAML, выданных Azure AD. Политики выдачи маркеров можно использовать для:
 
-- Настройка параметров подписи
-- Настройка алгоритма подписи
-- Установите версию маркера SAML
+- Настройка параметров подписывания
+- Настройка алгоритма подписывания
+- Настройка версии токена SAML
 
-Наследует [от stsPolicy](stsPolicy.md).
+Наследуется от [stsPolicy](stsPolicy.md).
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [List tokenIssuancePolicy](../api/tokenissuancepolicy-list.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Чтение свойств и связей объектов tokenIssuancePolicy. |
-| [Создание tokenIssuancePolicy](../api/tokenissuancepolicy-post-tokenissuancepolicy.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Создание объекта tokenIssuancePolicy. |
-| [Get tokenIssuancePolicy](../api/tokenissuancepolicy-get.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Чтение свойств и связей объекта tokenIssuancePolicy. |
+| [Перечисление tokenIssuancePolicy](../api/tokenissuancepolicy-list.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Чтение свойств и связей объектов tokenIssuancePolicy. |
+| [Создание tokenIssuancePolicy](../api/tokenissuancepolicy-post-tokenissuancepolicy.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Создайте объект tokenIssuancePolicy. |
+| [Получение tokenIssuancePolicy](../api/tokenissuancepolicy-get.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Чтение свойств и связей объекта tokenIssuancePolicy. |
 | [Обновление tokenIssuancePolicy](../api/tokenissuancepolicy-update.md) | Нет | Обновление объекта tokenIssuancePolicy. |
 | [Удаление tokenIssuancePolicy](../api/tokenissuancepolicy-delete.md) | Нет | Удаление объекта tokenIssuancePolicy. |
-| [Список применяетсяTo](../api/tokenissuancepolicy-list-appliesto.md) | Коллекция [directoryObject](directoryobject.md) | Получите список directoryObjects, к которые была применена эта политика. |
+| [List appliesTo](../api/tokenissuancepolicy-list-appliesto.md) | Коллекция [directoryObject](directoryobject.md) | Получение списка объектов directoryObject, к которым применена эта политика. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String| Уникальный идентификатор для этой политики. Только для чтения.|
-|определение|Коллекция String| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики. Дополнительные сведения о схеме JSON для этого свойства см. ниже. Обязательный.|
+|Определение|Коллекция объектов string| Коллекция строк, содержащая строку JSON, которая определяет правила и параметры для этой политики. Дополнительные сведения о схеме JSON для этого свойства см. ниже. Обязательный.|
 |description|String| Описание этой политики.|
-|displayName|String| Отображение имени для этой политики. Обязательно.|
-|isOrganizationDefault|Логический|Игнорируйте это свойство. Политика выдачи маркеров может применяться только к директорам служб и не может быть установлена глобально для организации.|
+|displayName|String| Отображаемое имя для этой политики. Обязательный.|
+|isOrganizationDefault|Логический|Игнорируйте это свойство. Политика выдачи маркеров может применяться только к субъектам-службам и не может быть глобально задана для организации.|
 
 
 ### <a name="properties-of-a-token-issuance-policy-definition"></a>Свойства определения политики выдачи маркеров
-Свойства формируют объект JSON, который представляет политику выдачи маркеров. Этот объект JSON необходимо **преобразовать** в строку с кавычками, которые будут вставлены в **свойство определения.** Ниже приводится пример в формате JSON:
+Свойства формируют объект JSON, представляющий политику выдачи маркеров. Этот объект JSON необходимо преобразовать **в** строку с escape-кавычками, чтобы вставить его в **свойство** определения. Ниже приведен пример в формате JSON:
 
 <!-- {
   "blockType": "ignored"
 }-->
 ``` json
 "definition": [
-    "{ \"TokenIssuancePolicy\":{\"TokenResponseSigningPolicy\":\"TokenOnly\",\"SamlTokenVersion\":\"1.1\",\"SigningAlgorithm\":\"http://www.w3.org/2001/04/xmldsig-more#rsa-sha256\",\"Version\":1}}"
+    "{ \"TokenIssuancePolicy\":{\"TokenResponseSigningPolicy\":\"TokenOnly\",\"SamlTokenVersion\":\"1.1\",\"SigningAlgorithm\":\"http://www.w3.org/2001/04/xmldsig-more#rsa-sha256\",\"Version\":\"1\",\"EmitSAMLNameFormat\": \"true\"}}"
   ]
 ```
 
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|TokenResponseSigningPolicy|String|Представляет параметры подписи сертификатов, доступные в Azure AD. Поддерживаемые значения: `ResponseOnly` `TokenOnly` , `ResponseAndToken` .  |
-|SamlTokenVersion|String|Версия маркера SAML. Поддерживаемые значения: `1.1` , `2.0` . |
-|SigningAlgorithm|String|Использование алгоритма подписи в Azure AD для подписи маркера SAML. Поддерживаемые значения: `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256` , `http://www.w3.org/2000/09/xmldsig#rsa-sha1` .|
-|Версия|Целое число|Значение 1. Обязательный.|
+|TokenResponseSigningPolicy|String|Представляет параметры подписи сертификата, доступные в Azure AD. Поддерживаемые значения: `ResponseOnly`, `TokenOnly`, `ResponseAndToken`.  |
+|SamlTokenVersion|String|Версия токена SAML. Поддерживаемые значения: `1.1`, `2.0`. |
+|SigningAlgorithm|String|Алгоритм подписи, используемый Azure AD для подписывания маркера SAML. Поддерживаемые значения: `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256`, `http://www.w3.org/2000/09/xmldsig#rsa-sha1`.|
+|Version|Целое число|Задайте значение 1. Обязательный.|
+| EmitSamlNameFormat | Логический | Если этот флажок выбран, Azure Active Directory добавит дополнительный атрибут NameFormat, описывающий формат имени для ограниченных, основных и необязательных утверждений для этого приложения. [Подробнее](/azure/active-directory/develop/reference-claims-mapping-policy-type#claim-sets) |
 
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|appliesTo|Коллекция [directoryObject](directoryobject.md)| Коллекция [directoryObject,](directoryObject.md) к которую была применена эта политика. Только для чтения.|
+|appliesTo|Коллекция [directoryObject](directoryobject.md)| Коллекция [directoryObject](directoryObject.md) , к которой была применена эта политика. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
