@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта plannerBucket
-description: Удаление объекта **plannerBucket**.
+description: Удаление объекта plannerBucket.
 ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 57ba0b1ab5a30a971e72dbc902f9f442ea21e24f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 48c1940f091144f014fb4afbbb1504eb4da58af5
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118564"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788803"
 ---
 # <a name="delete-plannerbucket"></a>Удаление объекта plannerBucket
 
@@ -19,6 +19,7 @@ ms.locfileid: "62118564"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление объекта **plannerBucket**.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -33,23 +34,24 @@ ms.locfileid: "62118564"
 ```http
 DELETE /planner/buckets/{id}
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 | If-Match  | Последнее известное значение ETag удаляемого объекта **plannerBucket**. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -87,8 +89,8 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true

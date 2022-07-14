@@ -544,7 +544,7 @@ items:
             items:
               - name: Список задач
                 href: api/planneruser-list-tasks.md
-          - name: Командная работа
+          - name: Teamwork
             items:
               - name: Приложение установлено
                 href: resources/teamsappinstallation.md
@@ -950,6 +950,14 @@ items:
                 href: api/serviceprincipal-update.md
               - name: Delete
                 href: api/serviceprincipal-delete.md
+              - name: Перечисление удаленных субъектов-служб
+                href: api/directory-deleteditems-list.md
+              - name: Получение удаленного субъекта-службы
+                href: api/directory-deleteditems-get.md
+              - name: Окончательное удаление субъекта-службы
+                href: api/directory-deleteditems-delete.md
+              - name: Восстановление удаленного субъекта-службы
+                href: api/directory-deleteditems-restore.md
               - name: Получение дельты
                 href: api/serviceprincipal-delta.md
               - name: Список созданных объектов
@@ -5036,7 +5044,7 @@ items:
                                 href: api/ipnamedlocation-update.md
                               - name: Delete
                                 href: api/ipnamedlocation-delete.md
-              - name: Межтенантный доступ
+              - name: Межклиентский доступ
                 items:
                   - name: Обзор
                     href: resources/crosstenantaccesspolicy-overview.md
@@ -5092,7 +5100,7 @@ items:
                     href: api/oauth2permissiongrant-delete.md
                   - name: Получение дельты
                     href: api/oauth2permissiongrant-delta.md
-              - name: Защита удостоверений
+              - name: Защита идентификации
                 href: resources/identityprotection-overview.md
                 items:
                   - name: Обнаружение рисков
@@ -5275,7 +5283,7 @@ items:
                             href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
                           - name: Delete
                             href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
-                      - name: Политика электронной почты
+                      - name: Email политики
                         href: resources/emailauthenticationmethodconfiguration.md
                         items:
                           - name: Получение

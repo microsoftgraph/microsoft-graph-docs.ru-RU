@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 484bcb632dcd986607ecddf9eff803e1304cc6cc
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: b0b67346fdf59ec1ee8ed75d0e7bd252c5e75bc0
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645311"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788488"
 ---
 # <a name="list-a-users-memberships-direct-and-transitive"></a>Перечисление членства пользователя (прямое и транзитивное)
 
@@ -24,11 +24,11 @@ ms.locfileid: "66645311"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
-| :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Directory.Read.All, Directory.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Directory.Read.All, Directory.ReadWrite.All |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                  |
+| :------------------------------------- | :--------------------------------------------------------------------------- |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                               |
+| Для приложений                            | Directory.Read.All, Directory.ReadWrite.All                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4c81494ba9e85dd0c5521c0eb22ba28dc17646a4
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 690fd574c341e785c8b7c227bc6e20963fc1036c
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65206400"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788480"
 ---
 # <a name="delete-a-group-setting"></a>Удаление параметра группы
 
@@ -22,11 +22,23 @@ ms.locfileid: "65206400"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
-| :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Directory.ReadWrite.All                     |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | Directory.ReadWrite.All                     |
+### <a name="for-all-settings-except-the-consent-policy-settings-object"></a>Для всех параметров, кроме объекта "Параметры политики согласия"
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Directory.ReadWrite.All |
+
+### <a name="for-the-consent-policy-settings-object"></a>Для объекта "Параметры политики согласия"
+
+Для обновления объекта **directorySetting** "Параметры политики согласия" требуются следующие разрешения.
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Policy.ReadWrite.Authorization    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Policy.ReadWrite.Authorization |
 
 ## <a name="http-request"></a>HTTP-запрос
 

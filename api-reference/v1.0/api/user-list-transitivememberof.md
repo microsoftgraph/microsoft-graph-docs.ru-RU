@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0fa31490a57c398f88958b7d7284f0bd3b0ea8f0
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: 9236aacb415654c8c303b9030f3a3f8de6fc4539
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645496"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788614"
 ---
 # <a name="list-a-users-memberships-direct-and-transitive"></a>Перечисление членства пользователя (прямое и транзитивное)
 
@@ -22,11 +22,11 @@ ms.locfileid: "66645496"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
-| :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Directory.Read.All, Directory.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Directory.Read.All, Directory.ReadWrite.All |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                  |
+| :------------------------------------- | :--------------------------------------------------------------------------- |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                               |
+| Для приложений                            | Directory.Read.All, Directory.ReadWrite.All                                  |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

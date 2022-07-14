@@ -1125,6 +1125,14 @@ items:
                 href: api/serviceprincipal-update.md
               - name: Удаление субъекта службы
                 href: api/serviceprincipal-delete.md
+              - name: Перечисление удаленных субъектов-служб
+                href: api/directory-deleteditems-list.md
+              - name: Получение удаленного субъекта-службы
+                href: api/directory-deleteditems-get.md
+              - name: Окончательное удаление субъекта-службы
+                href: api/directory-deleteditems-delete.md
+              - name: Восстановление удаленного субъекта-службы
+                href: api/directory-deleteditems-restore.md
               - name: Перечисление createdObjects
                 href: api/serviceprincipal-list-createdobjects.md
               - name: Список ownedObjects
@@ -5215,7 +5223,7 @@ items:
                         href: api/intune-deviceconfig-editionupgradeconfiguration-update.md
                   - name: Тип лицензии для обновления выпуска
                     href: resources/intune-deviceconfig-editionupgradelicensetype.md
-                  - name: Тип сертификата электронной почты
+                  - name: Email типа сертификата
                     href: resources/intune-deviceconfig-emailcertificatetype.md
                   - name: Продолжительность синхронизации электронной почты
                     href: resources/intune-deviceconfig-emailsyncduration.md
@@ -12675,7 +12683,7 @@ items:
                             href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
                           - name: Delete
                             href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
-                      - name: Политика электронной почты
+                      - name: Email политики
                         href: resources/emailauthenticationmethodconfiguration.md
                         items:
                           - name: Получение
@@ -14185,7 +14193,7 @@ items:
                     href: resources/callactivitystatistics.md
                   - name: Тип статистики чата
                     href: resources/chatactivitystatistics.md
-                  - name: Тип статистики электронной почты
+                  - name: Email типа статистики
                     href: resources/emailactivitystatistics.md
                   - name: Тип статистики фокуса
                     href: resources/focusactivitystatistics.md

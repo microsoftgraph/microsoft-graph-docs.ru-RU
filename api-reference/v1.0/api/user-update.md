@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e56cf53369e7b63e04fe9cf6a882fb6361ee31e5
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 9e2bd2c3814cc8bebb065db81ca37a28d6156812
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555739"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788705"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -41,7 +41,7 @@ PATCH /users/{id | userPrincipalName}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение|
 |:-----------|:------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -75,7 +75,7 @@ PATCH /users/{id | userPrincipalName}
 |onPremisesImmutableId|String|Это свойство используется для сопоставления локальной учетной записи пользователя Active Directory с объектом пользователя Azure AD. Его необходимо указывать при создании учетной записи пользователя в Graph, если в качестве свойства **userPrincipalName** (имени участника-пользователя) используется федеративный домен. **Важно!** При указании этого свойства не допускается использование символов **$** и **_**.                            |
 |otherMails|Коллекция строк |Список дополнительных адресов электронной почты для пользователя. Например: `["bob@contoso.com", "Robert@fabrikam.com"]`.|
 |passwordPolicies|String|Задает политики паролей для пользователя. Это свойство представляет собой перечисление с единственным возможным значением `DisableStrongPassword`, позволяющим использовать менее надежные пароли, чем предусмотрено политикой по умолчанию. Также можно указать значение `DisablePasswordExpiration`. Эти значения допускается указывать одновременно, например `DisablePasswordExpiration, DisableStrongPassword`. |
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|Задает профиль пароля для пользователя. Профиль содержит пароль пользователя. Это свойство обязательно указывать при создании пользователя. Пароль в профиле должен соответствовать минимальным требованиям, указанным в свойстве **passwordPolicies**. По умолчанию требуется надежный пароль. Его невозможно использовать для федеративных пользователей.<br><br> Вызывающему пользователю должно быть назначено делегированное разрешение *Directory.AccessAsUser.All* для обновления этого свойства. Это свойство не может обновляться только с разрешениями для приложений.|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|Задает профиль пароля для пользователя. Профиль содержит пароль пользователя. Это свойство обязательно указывать при создании пользователя. Пароль в профиле должен соответствовать минимальным требованиям, указанным в свойстве **passwordPolicies**. По умолчанию требуется надежный пароль. Его невозможно использовать для федеративных пользователей.<br><br> При делегированном доступе вызывающему приложению должен быть назначено делегированное разрешение от имени вошедшего пользователя *Directory.AccessAsUser.All*. При доступе только к приложению вызывающему приложению должно быть назначено разрешение приложения *User.ReadWrite.All* и по крайней мере роль *пользователя администратора* [Azure AD](/azure/active-directory/roles/permissions-reference)|
 |pastProjects|Коллекция строк|Список предыдущих проектов пользователя.|
 |postalCode|String|Почтовый индекс адреса пользователя. Формат почтового индекса зависит от страны или региона пользователя. В США для этого атрибута используется ZIP-код.|
 |preferredLanguage|String|Предпочитаемый язык для пользователя. Он должен быть представлен в формате ISO 639-1, например `en-US`. |
@@ -90,8 +90,8 @@ PATCH /users/{id | userPrincipalName}
 |userType|String|Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например `Member` и `Guest`.          |
 
 > [!NOTE] 
-> - Следующие свойства невозможно обновить с помощью приложения с использованием разрешений только для приложений: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** и **skills**.
-> - Чтобы обновить следующие свойства, необходимо указать их в собственном запросе PATCH, не включая другие свойства, перечисленные в таблице выше: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** and **skills**.
+> - Следующие свойства не могут быть обновлены приложением только с разрешениями приложения: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **responsibilities**, **schools**, и **skills**.
+> - Для обновления следующих свойств вы должны указать их в собственном PATCH-запросе, не включая другие свойства, перечисленные в таблице выше: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **responsibilities**, **schools**, и **skills**.
 
 ### <a name="manage-extensions-and-associated-data"></a>Управление расширениями и связанными данными
 
@@ -226,7 +226,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-update-the-passwordprofile-of-a-user-to-reset-their-password"></a>Пример 3. Обновление passwordProfile пользователя для сброса его пароля
 
-В приведенном ниже примере показан запрос на сброс пароля другого пользователя. Вызывающему пользователю должно быть назначено делегированное разрешение *Directory.AccessAsUser.All* для обновления этого свойства.
+В приведенном ниже примере показан запрос на сброс пароля другого пользователя.
 
 #### <a name="request"></a>Запрос
 

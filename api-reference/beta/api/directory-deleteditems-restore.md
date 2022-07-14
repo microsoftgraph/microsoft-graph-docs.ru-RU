@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2badde96f6ad6ba0fff7be7302bb7fa80b6e28d8
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: d68d811e88afe56ea97472acac8c2a8fa983e970
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66441496"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788628"
 ---
 # <a name="restore-deleted-item"></a>Восстановление удаленного элемента
 
@@ -20,20 +20,20 @@ ms.locfileid: "66441496"
 
 Восстановление недавно удаленного элемента из контейнера для [удаленных элементов](../resources/directory.md). 
 
-В настоящее время функции восстановления удаленных элементов поддерживаются только для [ресурсов приложения](../resources/application.md)[, группы](../resources/group.md) [и пользователей](../resources/user.md). Вы можете полностью восстановить случайно удаленный элемент. Это неприменимо к группам безопасности, которые удаляются без возможности восстановления.
+В настоящее время функции восстановления удаленных элементов поддерживаются только для ресурсов [приложения,](../resources/application.md) [servicePrincipal](../resources/serviceprincipal.md), [группы](../resources/group.md) [и](../resources/user.md) пользователей. Вы можете полностью восстановить случайно удаленный элемент. Это неприменимо к группам безопасности, которые удаляются без возможности восстановления.
 
 Удаленный элемент можно восстановить в течение 30 дней. Через 30 дней элемент удаляется без возможности восстановления.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-### <a name="for-applications"></a>Для приложений:
+### <a name="for-applications-and-service-principals"></a>Для приложений и субъектов-служб:
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All     |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Application.ReadWrite.All, Application.ReadWrite.OwnedBy |
+|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 
 ### <a name="for-users"></a>Для пользователей:
@@ -61,7 +61,7 @@ POST /directory/deleteditems/{id}/restore
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Требуется токен *носителя* &lt;&gt;|
+| Authorization  | Требуется токен *носителя* &lt;&gt;|
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса

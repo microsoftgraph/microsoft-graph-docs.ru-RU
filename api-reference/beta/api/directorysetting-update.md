@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f6a642c39a773b25181ca659ebb2d9599e02dd2e
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 683df79d236c4b23e03473c3b91645b6650a1b18
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671008"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788796"
 ---
 # <a name="update-directorysetting"></a>Обновление directorySetting
 
@@ -24,22 +24,34 @@ ms.locfileid: "63671008"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
+### <a name="for-all-settings-except-the-consent-policy-settings-object"></a>Для всех параметров, кроме объекта "Параметры политики согласия"
+
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Приложение | Directory.ReadWrite.All |
+
+### <a name="for-the-consent-policy-settings-object"></a>Для объекта "Параметры политики согласия"
+
+Для обновления объекта **directorySetting** "Параметры политики согласия" требуются следующие разрешения.
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Policy.ReadWrite.Authorization    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Policy.ReadWrite.Authorization |
 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
-Обновление параметра для клиента.
+Обновим параметр на уровне клиента.
 ```http
 PATCH /settings/{directorySettingId}
 ```
 
 <!-- { "blockType": "ignored" } -->
-Обновление параметра, определенного для группы.
+Обновим параметр для конкретной группы.
 ```http
 PATCH /groups/{groupId}/settings/{directorySettingId}
 ```
@@ -54,7 +66,7 @@ PATCH /groups/{groupId}/settings/{directorySettingId}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| values | [settingValue](../resources/settingvalue.md) collection | Обновленный набор значений.  ПРИМЕЧАНИЕ. Необходимо предоставить весь набор коллекции. Вы не можете обновить отдельный набор значений. |
+| values | [Коллекция settingValue](../resources/settingvalue.md) | Обновленный набор значений.  ПРИМЕЧАНИЕ. Необходимо предоставить весь набор коллекции. Вы не можете обновить отдельный набор значений. |
 
 ## <a name="response"></a>Отклик
 

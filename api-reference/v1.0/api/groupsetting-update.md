@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 604e4275f1b5d49fab3d866b6845d820f67cd0ec
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 04e23418a4e224a8186e9e96018026d5f725451f
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211279"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788691"
 ---
 # <a name="update-groupsetting"></a>Обновление groupSetting
 
@@ -22,11 +22,23 @@ ms.locfileid: "65211279"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
-| :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Directory.ReadWrite.All                     |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | Directory.ReadWrite.All                     |
+### <a name="for-all-settings-except-the-consent-policy-settings-object"></a>Для всех параметров, кроме объекта "Параметры политики согласия"
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Directory.ReadWrite.All |
+
+### <a name="for-the-consent-policy-settings-object"></a>Для объекта "Параметры политики согласия"
+
+Для обновления объекта **directorySetting** "Параметры политики согласия" требуются следующие разрешения.
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Policy.ReadWrite.Authorization    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Policy.ReadWrite.Authorization |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +62,7 @@ PATCH /groups/{groupId}/settings/{groupSettingId}
 
 | Имя          | Описание        |
 | :------------ | :----------------- |
-| Авторизация | {token}. Обязательно. |
+| Authorization | {token}. Обязательный элемент. |
 | Content-Type  | application/json   |
 
 ## <a name="request-body"></a>Текст запроса

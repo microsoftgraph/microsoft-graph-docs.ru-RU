@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 02417fe5f942513461d4f4d36304b57b24e8c5c9
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: e2eaa049a07d054ff187d91063cf3610e0346453
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66442354"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788621"
 ---
 # <a name="restore-deleted-item"></a>Восстановление удаленного элемента
 
@@ -18,14 +18,14 @@ ms.locfileid: "66442354"
 
 Восстановление недавно удаленного элемента из контейнера для [удаленных элементов](../resources/directory.md). 
 
-В настоящее время функции восстановления удаленных элементов поддерживаются только для [ресурсов приложения](../resources/application.md), [группы](../resources/group.md) [и](../resources/user.md) пользователя. Вы можете полностью восстановить случайно удаленный элемент. Это неприменимо к группам безопасности, которые удаляются без возможности восстановления.
+В настоящее время функции восстановления удаленных элементов поддерживаются только для ресурсов [приложения,](../resources/application.md) [servicePrincipal](../resources/serviceprincipal.md), [группы](../resources/group.md) [и](../resources/user.md) пользователей. Вы можете полностью восстановить случайно удаленный элемент. Это неприменимо к группам безопасности, которые удаляются без возможности восстановления.
 
 Удаленный элемент можно восстановить в течение 30 дней. Через 30 дней элемент удаляется без возможности восстановления.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-### <a name="for-applications"></a>Для приложений:
+### <a name="for-applications-and-service-principals"></a>Для приложений и субъектов-служб:
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -59,7 +59,7 @@ POST /directory/deletedItems/{id}/restore
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Требуется токен *носителя* &lt;&gt;|
+| Authorization  | Требуется токен *носителя* &lt;&gt;|
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса

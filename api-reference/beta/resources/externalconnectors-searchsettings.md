@@ -1,34 +1,34 @@
 ---
-title: тип ресурса searchSettings
-description: Собирает все настраиваемые параметры, связанные с поиском по содержимому соединители.
+title: Тип ресурса searchSettings
+description: Собирает все настраиваемые параметры, связанные с поиском по содержимому соединителя.
 author: emzho
 ms.localizationpriority: normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 6750ce5ea8f6b74dd55e83dae1a8f22d04ebfc15
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: f0915d57f0c49199f0273b8c44d5f60b2d78531c
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214945"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788635"
 ---
-# <a name="searchsettings-resource-type"></a>тип ресурса searchSettings
+# <a name="searchsettings-resource-type"></a>Тип ресурса searchSettings
 
 Пространство имен: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Собирает все настраиваемые параметры, связанные с поиском по содержимому соединители.
+Собирает все настраиваемые параметры, связанные с поиском по содержимому соединителя.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|searchResultTemplates|[коллекция microsoft.graph.externalConnectors.displayTemplate](../resources/externalconnectors-displaytemplate.md)|Позволяет разработчику определять внешний вид контента и настраивать условия, которые диктуют, когда должен отображаться шаблон.|
+|searchResultTemplates|[Коллекция microsoft.graph.externalConnectors.displayTemplate](../resources/externalconnectors-displaytemplate.md)|Позволяет разработчику определить внешний вид содержимого и настроить условия, определяющие, когда должен отображаться шаблон. Не более 2 шаблонов результатов поиска на подключение.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: a82c38e89c0af77ba928a03976c19265eda060bb
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: b0d60e35c17801f75847d4ce20b46f23f1e1b922
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645486"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788698"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -69,7 +69,7 @@ ms.locfileid: "66645486"
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской. |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | Нет | Отправка запроса операции политики данных, направленного администратором компании для экспорта данных пользователя организации. |
 | [getByIds](../api/directoryobject-getbyids.md) | Коллекция String | Возвращает объекты каталогов, указанные в списке идентификаторов. |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Коллекция String | Проверка членства в списке групп. Это транзитивная проверка. |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Коллекция строк | Проверка членства в списке групп. Это транзитивная проверка. |
 | [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Коллекция String | Проверка участия в списке группы, роли каталога или объектах административных единиц. Это транзитивная проверка. |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | Коллекция строк | Возвращает все группы, в которых состоит пользователь. Это транзитивная проверка. |
 | [getMemberObjects](../api/directoryobject-getmemberobjects.md) | Коллекция строк | Возвращение всех групп, ролей каталога и административных единиц, в которых состоит пользователь. Это транзитивная проверка. |
@@ -224,7 +224,7 @@ ms.locfileid: "66645486"
 | onPremisesProvisioningErrors | Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md) | Ошибки при использовании продукта синхронизации Майкрософт во время подготовки. <br> Поддерживает `$filter` (`eq`, `not`, `ge`, `le`).|
 | onPremisesSamAccountName | String | Содержит локальное `sAMAccountName`, синхронизированное из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. <br><br> Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
 | onPremisesSecurityIdentifier | String | Содержит локальный идентификатор безопасности (SID) пользователя, синхронизированного из локальной среды с облаком. Только для чтения. Поддерживает `$filter` (`eq` включая значения `null`).  |
-| onPremisesSyncEnabled | Логический | Значение `true` указывает, что этот объект синхронизируется из локального каталога. Значение `false` указывает, что этот объект изначально синхронизировался из локального каталога, но синхронизация больше не выполняется. Значение `null` указывает, что этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). Только для чтения. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `in` и `eq` по `null` значениям). |
+| onPremisesSyncEnabled | Логический | `true`, если этот объект пользователя сейчас синхронизируется из локальной службы Active Directory (AD); иначе пользователь не синхронизируется и может управляться в Azure Active Directory (Azure AD). Только для чтения. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `in` и `eq` по `null` значениям). |
 | onPremisesUserPrincipalName | String | Содержит локальное `userPrincipalName`, синхронизированное из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`). |
 | otherMails | Коллекция строк | Список дополнительных адресов электронной почты для пользователя. Например: `["bob@contoso.com", "Robert@fabrikam.com"]`.<br>ПРИМЕЧАНИЕ. Это свойство не может содержать диакритические знаки.<br><br>Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`, и подсчитывает пустые коллекции). |
 | passwordPolicies | String | Задает политики паролей для пользователя. Это свойство представляет собой перечисление с единственным возможным значением `DisableStrongPassword`, позволяющим использовать менее надежные пароли, чем предусмотрено политикой по умолчанию. Также можно указать значение `DisablePasswordExpiration`. Эти значения допускается указывать одновременно, например `DisablePasswordExpiration, DisableStrongPassword`. Дополнительную информацию о политиках паролей по умолчанию см. в разделе [Политики паролей Azure AD](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts). <br><br>Поддерживает `$filter` (`ne`, `not` и `eq` по `null` значениям).|
@@ -233,7 +233,7 @@ ms.locfileid: "66645486"
 | postalCode | String | Почтовый индекс адреса пользователя. Формат почтового индекса зависит от страны или региона пользователя. В США для этого атрибута используется ZIP-код. Максимальная длина 40 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям).|
 | preferredDataLocation | String | Предпочитаемое расположение данных для пользователя. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](/sharepoint/dev/solution-guidance/multigeo-introduction).|
 | preferredLanguage | String | Предпочитаемый язык для пользователя. Он должен быть представлен в формате ISO 639-1, например `en-US`. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
-| preferredName | String | Предпочитаемое имя пользователя. <br><br>Возвращается только с помощью оператора `$select`. |
+| preferredName | String | Предпочитаемое имя пользователя. **Не поддерживается. Этот атрибут возвращает пустую строку.**<br><br>Возвращается только с помощью оператора `$select`. |
 | provisionedPlans | Коллекция [provisionedPlan](provisionedplan.md) | Планы, подготовленные для пользователя. Только для чтения. Значение NULL не допускается. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`).|
 | proxyAddresses | Коллекция String | Пример: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Изменения в свойстве **почты** также обновят эту коллекцию, включив в нее значение SMTP-адреса. Дополнительные сведения см. в разделе [Свойства mail и proxyAddresses](#mail-and-proxyaddresses-properties). Прокси-адрес с префиксом `SMTP` (заглавными буквами) являются основным прокси-адресом, а адреса с префиксом `smtp` являются дополнительными прокси-адресами. Для учетных записей Azure AD B2C это свойство имеет ограничение в десять уникальных адресов. Доступно только для чтения в Microsoft Graph. Обновить это свойство можно только с помощью [Центра администрирования Microsoft 365](/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses). Значение null не допускается. <br><br>Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`, `endsWith` и подсчитывает пустые коллекции). |
 | refreshTokensValidFromDateTime | DateTimeOffset | Все маркеры обновления или маркеры сеансов (файлы cookie сеанса), выпущенные до этого момента, являются недопустимыми. В приложениях возникает ошибка при использовании недопустимых маркеров обновления или маркеров сеансов для получения маркера делегированного доступа (для доступа к API, например Microsoft Graph).  В этом случае приложению потребуется получить новый маркер обновления, сделав запрос к конечной точке авторизации. Только для чтения. Сброс можно выполнить с помощью [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md).|

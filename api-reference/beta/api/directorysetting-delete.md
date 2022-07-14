@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 27cfa150303e7a89553c212561966f87f7b1b47a
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 19879c4a3fda4c9e81a721f6af5969bb77b6670e
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671505"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788789"
 ---
 # <a name="delete-directorysetting"></a>Удаление directorySetting
 
@@ -23,21 +23,33 @@ ms.locfileid: "63671505"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
+### <a name="for-all-settings-except-the-consent-policy-settings-object"></a>Для всех параметров, кроме объекта "Параметры политики согласия"
+
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Приложение | Directory.ReadWrite.All |
+
+### <a name="for-the-consent-policy-settings-object"></a>Для объекта "Параметры политики согласия"
+
+Для обновления объекта **directorySetting** "Параметры политики согласия" требуются следующие разрешения.
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Policy.ReadWrite.Authorization    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Policy.ReadWrite.Authorization |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
-Удаление параметра для всех клиентов.
+Удалите параметр на уровне клиента.
 ```http
 DELETE /settings/{directorySettingId}
 ```
 
 <!-- { "blockType": "ignored" } -->
-Удаление параметра, определенного для группы.
+Удаление параметра для конкретной группы.
 ```http
 DELETE /groups/{groupId}/settings/{directorySettingId}
 ```

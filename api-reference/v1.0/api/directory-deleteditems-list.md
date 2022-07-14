@@ -5,18 +5,20 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 61d11d33871710267933fcf71e5932a33f71514d
-ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
+ms.openlocfilehash: 6ed39739978d7d72427e32f01445d9bcac36c930
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66768163"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788775"
 ---
 # <a name="list-deleteditems-directory-objects"></a>Перечисление deletedItems (объекты каталога)
 
 Пространство имен: microsoft.graph
 
 Получение списка недавно удаленных объектов каталога. В настоящее время эта функция поддерживается только для [ресурсов приложения](../resources/application.md), [группы](../resources/group.md) [и пользователей](../resources/user.md) .
+
+В настоящее время функции удаленных элементов поддерживаются только для ресурсов [приложения,](../resources/application.md) [servicePrincipal](../resources/serviceprincipal.md), [группы](../resources/group.md) [и](../resources/user.md) пользователей.
 
 >**Примечание:** Удаленные группы безопасности удаляются без возможности восстановления и не могут быть получены с помощью этого API.
 
@@ -26,7 +28,7 @@ ms.locfileid: "66768163"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-### <a name="for-applications"></a>Для приложений:
+### <a name="for-applications-and-service-principals"></a>Для приложений и субъектов-служб:
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -54,12 +56,13 @@ ms.locfileid: "66768163"
 <!-- { "blockType": "ignored" } -->
 ```http 
 GET /directory/deleteditems/microsoft.graph.application
+GET /directory/deleteditems/microsoft.graph.servicePrincipal
 GET /directory/deletedItems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 GET /directory/deletedItems/microsoft.graph.device
 ```
 
-В настоящее время этот API поддерживает извлечение типов объектов приложений (`microsoft.graph.application`), групп (`microsoft.graph.group`) или пользователей (`microsoft.graph.user`) из удаленных элементов. Тип приведения OData является обязательной частью URI, `GET /directory/deleteditems` и вызов без типа **не поддерживается** .
+В настоящее время этот API поддерживает извлечение типов объектов приложений (`microsoft.graph.application`), servicePrincipals (`microsoft.graph.serviceprincipal`), групп (`microsoft.graph.group`) или пользователей (`microsoft.graph.user`) из удаленных элементов. Тип приведения OData является обязательной частью URI, `GET /directory/deleteditems` и вызов без типа **не поддерживается** .
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 

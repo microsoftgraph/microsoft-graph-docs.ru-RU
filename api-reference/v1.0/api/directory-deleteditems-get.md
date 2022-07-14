@@ -1,16 +1,16 @@
 ---
-title: Извлечение свойств недавно удаленного элемента
+title: Получение свойств недавно удаленного элемента
 description: Получение свойств недавно удаленного элемента.
 author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ecd2dbce0993e9610c51007f50ce1f2c58bad423
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 84386053c422ffaf3b1b454e0824fdf2cc8beaa6
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672037"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788474"
 ---
 # <a name="get-deleted-item"></a>Получение удаленных элементов
 
@@ -18,20 +18,20 @@ ms.locfileid: "63672037"
 
 Получение свойств недавно [удаленного элемента](../resources/directory.md).
 
-В настоящее время функции удаленных элементов поддерживаются только для [приложений](../resources/application.md), [групповых и](../resources/group.md) [пользовательских](../resources/user.md) ресурсов.
+В настоящее время функции удаленных элементов поддерживаются только для ресурсов [приложения,](../resources/application.md) [servicePrincipal](../resources/serviceprincipal.md), [группы](../resources/group.md) [и](../resources/user.md) пользователей.
 
->**Примечание:** Удаленные группы безопасности удаляются постоянно и не могут быть извлечены с помощью этого API.
+>**Примечание:** Удаленные группы безопасности удаляются без возможности восстановления и не могут быть получены с помощью этого API.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-### <a name="for-applications"></a>Для приложений:
+### <a name="for-applications-and-service-principals"></a>Для приложений и субъектов-служб:
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
+|Приложение | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
 
 ### <a name="for-users"></a>Для пользователей:
 
@@ -61,7 +61,7 @@ GET /directory/deletedItems/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer &lt;code&gt; *Обязательный*.|
+| Authorization  | Bearer &lt;code&gt; *Обязательный*.|
 | Accept  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
