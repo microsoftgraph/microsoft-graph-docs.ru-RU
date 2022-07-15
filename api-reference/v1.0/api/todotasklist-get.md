@@ -1,21 +1,21 @@
 ---
 title: Get todoTaskList
-description: Ознакомьтесь с свойствами и отношениями объекта todoTaskList.
+description: Чтение свойств и связей объекта todoTaskList.
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d9f99c236a91ebb9cdaafb1c920fce67ec7fb699
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a56b4f363da5136336d1d9df5c6efee750b6dee4
+ms.sourcegitcommit: 84db9d70672e7a36a1130ff4f4b9baf3554d287f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121686"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66810293"
 ---
 # <a name="get-todotasklist"></a>Get todoTaskList
 Пространство имен: microsoft.graph
 
-Ознакомьтесь с свойствами и отношениями объекта [todoTaskList.](../resources/todotasklist.md)
+Чтение свойств и связей объекта [todoTaskList](../resources/todotasklist.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,12 +45,12 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект todoTaskList](../resources/todotasklist.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [todoTaskList](../resources/todotasklist.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -108,14 +108,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.todoTaskList",
-    "id": "5daae1ed-e1ed-5daa-ede1-aa5dede1aa5d",
-    "displayName": "Monthly tasks",
-    "isOwner": "true",
-    "isShared": "false",
-    "wellknownListName": "defaultList"
-  }
+  "@odata.type": "#microsoft.graph.todoTaskList",
+  "id": "5daae1ed-e1ed-5daa-ede1-aa5dede1aa5d",
+  "displayName": "Monthly tasks",
+  "isOwner": true,
+  "isShared": false,
+  "wellknownListName": "defaultList"
 }
 ```
 

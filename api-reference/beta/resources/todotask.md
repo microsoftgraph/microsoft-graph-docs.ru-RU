@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9c11252d3dded276e96ffbc219a3cf9155718da7
-ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
+ms.openlocfilehash: 9f997396228551bb50f1518e96e35e234f013ac2
+ms.sourcegitcommit: 84db9d70672e7a36a1130ff4f4b9baf3554d287f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66767956"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66810271"
 ---
 # <a name="todotask-resource-type"></a>Тип ресурса todoTask
 
@@ -45,7 +45,7 @@ ms.locfileid: "66767956"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |body|[itemBody](../resources/itembody.md)|Текст задачи, который обычно содержит сведения о задаче.|
-|bodyLastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601 (всегда используется формат UTC). Например, полночь в формате UTC 1 января 2020 г. будет выглядеть следующим образом: "2020-01-01T00:00:00Z".|
+|bodyLastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения текста задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601 (всегда используется формат UTC). Например, полночь в формате UTC 1 января 2020 г. будет выглядеть следующим образом: "2020-01-01T00:00:00Z".|
 |categories|Коллекция String|Категории, связанные с задачей. Каждая категория соответствует свойству **displayName** объекта [outlookCategory](../resources/outlookcategory.md), определенному пользователем.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанном часовом поясе, когда задача была завершена.|
 |createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601. Например, полночь в формате UTC 1 января 2020 г. будет выглядеть следующим образом: "2020-01-01T00:00:00Z".|
