@@ -5,19 +5,19 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 80d989b333503d61d768547ac781741ebb8f8fef
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 718419e7deddb45d748c442612af00f6111e3309
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66442501"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837690"
 ---
 # <a name="ediscoveryreviewsetquery-export"></a>ediscoveryReviewSetQuery: экспорт
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Инициируйте экспорт из **запроса reviewSet** .  Дополнительные сведения см. в разделе "Экспорт документов [из набора для проверки" Advanced eDiscovery](/microsoft-365/compliance/export-documents-from-review-set).
+Инициируйте экспорт из **запроса reviewSet** .  Дополнительные сведения см. в статье "Экспорт документов [из набора для проверки в eDiscovery (Premium)"](/microsoft-365/compliance/export-documents-from-review-set).
 
 
 ## <a name="permissions"></a>Разрешения
@@ -53,12 +53,12 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryRe
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|outputName|String| Имя экспорта. Обязательный. |
-|description|String| Описание экспорта |
-|azureBlobContainer|String| При экспорте в собственную учетную запись хранения Azure это URL-адрес контейнера. |
-|azureBlobToken|String| При экспорте в собственную учетную запись хранения Azure маркер SAS для URL-адреса контейнера. |
-|exportOptions|String|Задает параметры, которые могут управлять форматом экспорта. Возможные значения: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
-|exportStructure|String| Параметры, которые контролирует структуру файлов и упаковку экспорта. Возможные значения: `none`, `directory`, `pst`.|
+|outputName|Строка| Имя экспорта. Обязательный. |
+|description|Строка| Описание экспорта |
+|azureBlobContainer|Строка| При экспорте в собственную учетную запись хранения Azure это URL-адрес контейнера. |
+|azureBlobToken|Строка| При экспорте в собственную учетную запись хранения Azure маркер SAS для URL-адреса контейнера. |
+|exportOptions|Строка|Задает параметры, которые могут управлять форматом экспорта. Возможные значения: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
+|exportStructure|Строка| Параметры, которые контролирует структуру файлов и упаковку экспорта. Возможные значения: `none`, `directory`, `pst`.|
 
 
 ## <a name="response"></a>Отклик
@@ -112,8 +112,8 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true

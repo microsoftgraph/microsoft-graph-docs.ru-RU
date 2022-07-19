@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: a23b2d95519e1f3f69f05c4199d3ae3b843c3a72
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 9b58f52074154ebaf621134327a3d5ee1c7804d2
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65946107"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838187"
 ---
 # <a name="ediscoveryholdoperation-resource-type"></a>Тип ресурса ediscoveryHoldOperation
 
@@ -18,7 +18,7 @@ ms.locfileid: "65946107"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет процесс применения удержания к источникам данных, включая хранителей и источники данных, которые не являются хранителями".
+Представляет процесс применения удержания к источникам данных, в том числе хранителям и источникам данных, которые не являются хранителями.
 
 Наследуется от [caseOperation](../resources/security-caseoperation.md).
 
@@ -37,10 +37,10 @@ ms.locfileid: "65946107"
 |resultInfo|[resultInfo](../resources/resultinfo.md)| Содержит сведения о результатах успешного выполнения и сбоя. |
 |status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| Состояние операции обращения. Возможные значения: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

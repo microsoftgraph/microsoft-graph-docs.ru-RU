@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса userSource
-description: Контейнер для почтового ящика пользователя и сайта OneDrive для бизнеса.
+description: Контейнер для почтового ящика пользователя и OneDrive для бизнеса сайта.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 45bd3444baa6b3e0aa7c13f6678fd9c2312915b5
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: b36d9cc2947c263510c8b08d05f210a556985690
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65946052"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838180"
 ---
 # <a name="usersource-resource-type"></a>Тип ресурса userSource
 
@@ -18,7 +18,7 @@ ms.locfileid: "65946052"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Контейнер для почтового ящика пользователя и сайта OneDrive для бизнеса.
+Контейнер для почтового ящика пользователя и OneDrive для бизнеса сайта.
 
 Наследуется [от dataSource](../resources/security-datasource.md).
 
@@ -28,21 +28,14 @@ ms.locfileid: "65946052"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |createdBy|[identitySet](../resources/identityset.md)|Пользователь, создавший **userSource**.|
-|createdDateTime|DateTimeOffset|Дата и время создания **userSource**|
+|createdDateTime|DateTimeOffset|Дата и время **создания объекта userSource** .|
 |displayName|Строка|Отображаемое имя, связанное с почтовым ящиком и сайтом.|
-|email|String|Адрес электронной почты почтового ящика пользователя.|
+|email|String|Email адрес почтового ящика пользователя.|
 |id|String|Идентификатор **объекта userSource**. Это не идентификатор фактической группы.|
-|includedSources|Строка|Указывает источники, включенные в эту группу. Возможные значения: `mailbox`, `site`.|
-|siteWebUrl|Строка|URL-адрес сайта OneDrive для бизнеса пользователя. Только для чтения.|
-|holdStatus|Строка|Состояние удержания **объекта userSource**. Возможные значения: `notApplied`, , `applied`, `applying`, `removing``partial`|
-### <a name="sourcetype-values"></a>Значения sourceType
+|includedSources|microsoft.graph.security.sourceType|Указывает источники, включенные в эту группу. Возможные значения: `mailbox`, `site`.|
+|siteWebUrl|String|URL-адрес веб-сайта OneDrive для бизнеса пользователя. Только для чтения.|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|Состояние удержания **объекта userSource**. Допустимые значения: `notApplied`, `applied`, `applying`, `removing`, `partial`.|
 
-Типы источников, связанных с пользователем. Включает почтовый ящик и сайт по умолчанию.
-
-|Member|Описание|
-|:----|-----------|
-|mailbox|Представляет почтовый ящик.|
-|site|Представляет сайт OneDrive для бизнеса.|
 
 ### <a name="usersourceholdstatus-values"></a>Значения userSourceHoldStatus
 
@@ -54,10 +47,10 @@ ms.locfileid: "65946052"
 |Удаление|UserSource удаляет состояние удержания (активируется операция removeHold).|
 |Частичное|UserSource находится в смешанном состоянии, где некоторые источники находятся на удержании, а некоторые не находятся в состоянии удержания или ошибки.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

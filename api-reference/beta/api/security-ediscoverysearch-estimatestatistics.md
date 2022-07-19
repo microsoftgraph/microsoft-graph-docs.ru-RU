@@ -5,19 +5,19 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 90a447edef59e4a46d62a082f49815ef01420aaa
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: d8a7a98d0d10617798df6dfb678a29e8e54f1564
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66438676"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837662"
 ---
 # <a name="ediscoverysearch-estimatestatistics"></a>ediscoverySearch: estimateStatistics
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Выполните оценку количества сообщений электронной почты и документов в поиске электронных данных. Дополнительные сведения об поисковых запросах в службе обнаружения электронных данных см. в разделе "Сбор данных для дела[" Advanced eDiscovery](/microsoft-365/compliance/collecting-data-for-ediscovery).
+Выполните оценку количества сообщений электронной почты и документов в поиске электронных данных. Дополнительные сведения об поисковых запросах в службе обнаружения электронных данных см. в статье "Сбор данных для дела [в службе обнаружения электронных данных (премиум)"](/microsoft-365/compliance/collecting-data-for-ediscovery).
 
 
 ## <a name="permissions"></a>Разрешения
@@ -50,7 +50,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 ## <a name="response"></a>Отклик
 
 Если оценка успешно запущена, это действие возвращает код `202 Accepted` отклика.
-Ответ также будет содержать заголовок `Location` , содержащий расположение [estimateStatisticsOperation](../resources/security-ediscoveryestimateoperation.md) , созданного для обработки оценки. Проверьте состояние операции оценки, выполнив запрос GET к расположению. После успешного завершения [состояние изменится на](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) `succeeded`.
+Ответ также будет содержать `Location` заголовок, содержащий расположение [объекта microsoft.graph.security.estimateStatisticsOperation](../resources/security-ediscoveryestimateoperation.md) , созданного для обработки оценки. Проверьте состояние операции оценки, выполнив запрос GET к расположению.
 
 ## <a name="examples"></a>Примеры
 
@@ -91,8 +91,8 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-41
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true

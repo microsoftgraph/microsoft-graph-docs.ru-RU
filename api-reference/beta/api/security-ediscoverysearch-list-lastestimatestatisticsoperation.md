@@ -1,23 +1,23 @@
 ---
-title: Перечисление объектов ediscoveryEstimateOperations
+title: Список lastEstimateStatisticsOperation
 description: Получение последнего объекта ediscoveryEstimateOperation и его свойств.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 9f961f422c542e5b1ab1d8ed175205209d2aecff
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: ec0e32013c9fb2bf7ee77a7903224167b3474365
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66440306"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837375"
 ---
-# <a name="list-ediscoveryestimateoperations"></a>Перечисление объектов ediscoveryEstimateOperations
+# <a name="list-lastestimatestatisticsoperation"></a>Список lastEstimateStatisticsOperation
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение последних  [объектов ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) и их свойств.
+Получение последних [объектов ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) и их свойств.
 
 >**Примечание:** Этот метод выводит только последнюю операцию. Он не возвращает журнал всех операций.
 
@@ -53,7 +53,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearc
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) в теле отклика.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и объект [microsoft.graph.security.ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 3e544a4b6d00bb59b5879fc13376fd94a5bba169
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: a6b8b05c3f57e4903b66aa7de95e8b4d94849d71
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65946055"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837809"
 ---
 # <a name="unifiedgroupsource-resource-type"></a>Тип ресурса unifiedGroupSource
 
@@ -29,12 +29,19 @@ ms.locfileid: "65946055"
 |:---|:---|:---|
 |createdBy|[identitySet](../resources/identityset.md)|Пользователь, создавший **unifiedGroupSource**.|
 |createdDateTime|DateTimeOffset|Дата и время создания **unifiedGroupSource** .|
-|displayName|Строка|Отображаемое имя объединенной группы — это имя группы.|
-|id|String|Идентификатор **unifiedGroupSource**. Это не идентификатор фактической группы.|
-|includedSources|Строка|Указывает источники, включенные в эту группу. Возможные значения: `mailbox`, `site`.|
-|holdStatus|Строка|Состояние удержания **объекта unifiedGroupSource**. Возможные значения: `notApplied`, , `applied`, `applying`, `removing``partial`|
+|displayName|Строка|Отображаемое имя объединенной группы, которое является именем группы.|
+|id|Строка|Идентификатор **unifiedGroupSource**. Это не идентификатор фактической группы.|
+|includedSources|microsoft.graph.security.sourceType|Указывает источники, включенные в эту группу. Возможные значения: `mailbox`, `site`.|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|Состояние удержания **объекта unifiedGroupSource**. Допустимые значения: `notApplied`, `applied`, `applying`, `removing`, `partial`.|
 
-## <a name="relationships"></a>Отношения
+### <a name="sourcetype-values"></a>Значения sourceType
+|Member|Описание|
+|:----|-----------|
+| mailbox | Представляет почтовый ящик.|
+| site | Представляет сайт SharePoint.|
+
+
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |group|[group](../resources/group.md)|Представляет группу.|

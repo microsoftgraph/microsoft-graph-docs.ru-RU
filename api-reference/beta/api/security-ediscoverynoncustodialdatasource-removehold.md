@@ -5,19 +5,19 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: d6c78b84048cff68ed5aac4522f168daf17e50ff
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: c1ab716fd747f0e8971c383ae1ee6690ca7fb151
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66440382"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838677"
 ---
 # <a name="ediscoverynoncustodialdatasource-removehold"></a>ediscoveryNoncustodialDataSource: removeHold
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Запустите процесс удаления удержания из источников данных, не охраняемых при обнаружении электронных данных. После создания операции можно `Location` получить состояние операции обращения, извлекая параметр из заголовков ответа. Расположение содержит URL-адрес, который возвращает [eDiscoveryHoldOpertaion](../resources/security-ediscoveryholdoperation.md).
+Запустите процесс удаления удержания из источников данных [, не охраняемых при обнаружении электронных данных](../resources/security-ediscoverynoncustodialdatasource.md). После создания операции можно получить `Location` состояние, извлекая параметр из заголовков ответа. Расположение содержит URL-адрес, возвращающий объект [eDiscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -62,7 +62,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/noncustodialDataSources/
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-remove-hold-from-multiple-non-custodial-data-sources"></a>Пример 1. Удалите удержание из нескольких источников данных, которые не являются хранителями.
+### <a name="example-1-remove-hold-from-multiple-non-custodial-data-sources"></a>Пример 1. Удаление удержания из нескольких источников данных, которые не являются хранителями
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -108,8 +108,8 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -119,7 +119,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-2-remove-hold-from-a-single-non-custodial-data-source"></a>Пример 2. Удалите удержание из одного источника данных, не являемой хранителями.
+### <a name="example-2-remove-hold-from-a-single-non-custodial-data-source"></a>Пример 2. Удаление удержания из одного источника данных, не являемой хранителями
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -157,8 +157,8 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-41
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true

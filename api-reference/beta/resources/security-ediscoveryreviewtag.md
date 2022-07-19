@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 1e5ba6fecb006a270d256e0f53f63e643874cec4
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 4bd787ed238fdd7c365b913a98d1129d2b80b35d
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65946079"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838600"
 ---
 # <a name="ediscoveryreviewtag-resource-type"></a>Тип ресурса ediscoveryReviewTag
 
@@ -27,18 +27,18 @@ ms.locfileid: "65946079"
 |[Создание ediscoveryReviewTag](../api/security-ediscoverycase-post-tags.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Создайте объект [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) .|
 |[Получение ediscoveryReviewTag](../api/security-ediscoveryreviewtag-get.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Чтение свойств и связей объекта [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) .|
 |[Обновление ediscoveryReviewTag](../api/security-ediscoveryreviewtag-update.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Обновление свойств объекта [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) .|
-|[Удаление ediscoveryReviewTag](../api/security-ediscoverycase-delete-tags.md)|Нет|Удаляет объект [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) .|
+|[Удаление ediscoveryReviewTag](../api/security-ediscoverycase-delete-tags.md)|Нет|Удаление объекта [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) .|
 |[asHierarchy](../api/security-ediscoveryreviewtag-ashierarchy.md)|[Коллекция microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Перечисление тегов, упорядоченных как иерархия.|
 
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|childSelectability|Строка|Указывает, может ли один или несколько дочерних тегов быть связаны с документом. Возможные значения: `One`, `Many`.  Это значение определяет, представляет ли пользовательский интерфейс теги как флажки или группу переключателей.|
+|childSelectability|microsoft.graph.security.childSelectability|Указывает, может ли один или несколько дочерних тегов быть связаны с документом. Возможные значения: `One`, `Many`.  Это значение определяет, представляет ли пользовательский интерфейс теги как флажки или группу переключателей.|
 |createdBy|[identitySet](../resources/identityset.md)|Пользователь, создавший тег.|
-|description|Строка|Описание тега.|
-|displayName|String|Отображаемое имя тега.|
-|id|Строка|Уникальный идентификатор тега.|
+|description|String|Описание тега.|
+|displayName|Строка|Отображаемое имя тега.|
+|id|String|Уникальный идентификатор тега.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения тега.|
 
 ### <a name="childselectability-values"></a>Значения childSelectability
@@ -48,7 +48,7 @@ ms.locfileid: "65946079"
 |Одной|Можно выбрать только один дочерний элемент. Это соответствует пользовательскому интерфейсу, который представляет теги с переключатели.|
 |Много|Можно выбрать ноль или много дочерних элементов. Это соответствует пользовательскому интерфейсу, который представляет теги с флажками.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 |Связь|Тип|Описание|
 |:---|:---|:---|

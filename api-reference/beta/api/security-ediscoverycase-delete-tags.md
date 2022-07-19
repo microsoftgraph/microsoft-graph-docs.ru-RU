@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 75484e3723cbe22c2d5ce84b4e189a3f4d4ebfb4
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 00ebe02e61d352819e3239e887e83040f8828007
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446925"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838152"
 ---
 # <a name="remove-ediscoveryreviewtag"></a>Удаление ediscoveryReviewTag
 Пространство имен: microsoft.graph.security
@@ -89,8 +89,8 @@ DELETE https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true

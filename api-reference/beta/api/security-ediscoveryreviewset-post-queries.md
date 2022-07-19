@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: f489128a7e4c666827e669a08bbcc6f3846f3c62
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: eb001e518abdbfb0044b0e657b0ea7cc61bb9604
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66440444"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837410"
 ---
 # <a name="create-ediscoveryreviewsetquery"></a>Создание ediscoveryReviewSetQuery
 Пространство имен: microsoft.graph.security
@@ -51,14 +51,14 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryRe
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя запроса. Обязательный элемент.|
-|contentQuery|String|KQL-запрос для набора проверки. [Дополнительные сведения](https://docs.microsoft.com/microsoft-365/compliance/review-set-search).|
+|displayName|Строка|Имя запроса. Обязательный.|
+|contentQuery|Строка|KQL-запрос для набора проверки. Дополнительные сведения см [. в разделе "Запрос и фильтрация содержимого в наборе для проверки"](/microsoft-365/compliance/review-set-search).|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `201 Created` отклика и [объект ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) в теле отклика.
+В случае успешного выполнения `201 Created` этот метод возвращает код отклика и объект [microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -105,7 +105,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

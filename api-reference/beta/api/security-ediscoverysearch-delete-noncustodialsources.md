@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: ae3d4b53f2d018f7f05cc511933ee5a9aa326a7f
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 9409664da68640f28f0fb886b9da8bd3cff408fa
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095749"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838264"
 ---
 # <a name="remove-noncustodialsources"></a>Удаление noncustodialSources
 Пространство имен: microsoft.graph.security
@@ -81,8 +81,7 @@ DELETE https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true

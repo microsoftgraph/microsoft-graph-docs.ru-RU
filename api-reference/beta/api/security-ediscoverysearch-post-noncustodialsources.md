@@ -1,23 +1,23 @@
 ---
-title: Добавление ediscoveryNoncustodialDataSource
-description: Добавьте noncustodialSources, выполнив публикацию в коллекции noncustodialSources.
+title: Добавление noncustodialDataSources
+description: Создайте новый источник, не связанный с хранением, связанный с поиском eDiscovery.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 3e1ab04b0f01df80fab3566f4fea7e801c71ab04
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: fd124f907a2d73edc94ec031dd9e179bbde5d282
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66096314"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837648"
 ---
-# <a name="add-ediscoverynoncustodialdatasource"></a>Добавление ediscoveryNoncustodialDataSource
+# <a name="add-add-noncustodialdatasources"></a>Добавление noncustodialDataSources
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте noncustodialSources, выполнив публикацию в коллекции noncustodialSources.
+Создайте новый источник, не связанный с хранением, связанный с поиском [eDiscovery](../resources/security-ediscoverysearch.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -56,7 +56,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения `204 No Content` этот метод возвращает код отклика и [объект ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="examples"></a>Примеры
 
@@ -98,8 +98,8 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true

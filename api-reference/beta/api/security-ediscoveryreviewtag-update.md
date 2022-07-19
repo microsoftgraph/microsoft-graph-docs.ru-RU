@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 34ed4dedde55b3bdb545dffe70894a75339dc0be
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: ceb490ed7c5fcd91d6e2b1625c70a3a417c076c8
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66093712"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838390"
 ---
 # <a name="update-ediscoveryreviewtag"></a>Обновление ediscoveryReviewTag
 Пространство имен: microsoft.graph.security
@@ -51,8 +51,8 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags/{ediscoveryReviewT
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Отображаемое имя тега. Обязательный.|
-|description|Строка|Описание тега. Необязательно.|
-|childSelectability|childSelectability|Это значение определяет, представляет ли пользовательский интерфейс теги как флажки или группу переключателей. Возможные значения: `One`, `Many`. Обязательный.|
+|description|Строка|Описание тега. Необязательный элемент.|
+|childSelectability|microsoft.graph.security.childSelectability|Это значение определяет, представляет ли пользовательский интерфейс теги как флажки или группу переключателей. Возможные значения: `One`, `Many`. Обязательный.|
 
 
 ## <a name="response"></a>Отклик
@@ -99,8 +99,8 @@ PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-c
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true

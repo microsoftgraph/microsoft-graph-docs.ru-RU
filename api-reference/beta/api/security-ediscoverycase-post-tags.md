@@ -1,23 +1,23 @@
 ---
-title: Создание ediscoveryReviewTag
+title: Создание тегов
 description: Создайте объект ediscoveryReviewTag.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 43d02787042fca5c1f7fc8a2429ab82b8512243e
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 2c1a43903bde6a330c43e86f5708d1db3185225c
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66440504"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837956"
 ---
-# <a name="create-ediscoveryreviewtag"></a>Создание ediscoveryReviewTag
+# <a name="create-tags"></a>Создание тегов
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте объект ediscoveryReviewTag.
+Создайте объект [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -52,16 +52,16 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Отображаемое имя тега. Обязательный.|
-|description|String|Описание тега. Необязательное свойство.|
-|childSelectability|String|Это значение определяет, представляет ли пользовательский интерфейс теги как флажки или группу переключателей. Возможные значения: `One`, `Many`. Обязательный.|
+|description|Строка|Описание тега. Необязательный элемент.|
+|childSelectability|microsoft.graph.security.childSelectability|Это значение определяет, представляет ли пользовательский интерфейс теги как флажки или группу переключателей. Возможные значения: `One`, `Many`. Обязательный.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `201 Created` отклика и [объект ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) в тексте отклика.
+В случае успешного выполнения `201 Created` этот метод возвращает код отклика и объект [microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="create-a-tag"></a>Создание тега
+### <a name="example-1-create-a-tag"></a>Пример 1. Создание тега
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -105,7 +105,7 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-ce
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -138,7 +138,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-a-tag-with-a-parent"></a>Создание тега с родительским элементом
+### <a name="example-2-create-a-tag-with-a-parent"></a>Пример 2. Создание тега с родительским элементом
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 <!-- {
@@ -159,7 +159,7 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-ce
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

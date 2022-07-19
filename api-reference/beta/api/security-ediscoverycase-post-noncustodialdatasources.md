@@ -1,23 +1,23 @@
 ---
-title: Создание объекта ediscoveryNoncustodialDataSource
+title: Создание объектов nonCustodialDataSources
 description: Создайте объект ediscoveryNoncustodialDataSource.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 5fb5dafb7fac81632697d6822d621a6e5f248ad1
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 36b9823a9c6374827acffec8efd5bd08371770b2
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66092908"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837977"
 ---
-# <a name="create-ediscoverynoncustodialdatasource"></a>Создание объекта ediscoveryNoncustodialDataSource
+# <a name="create-noncustodialdatasources"></a>Создание объектов nonCustodialDataSources
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте объект ediscoveryNoncustodialDataSource.
+Создайте объект [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,13 +51,14 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/noncustodialDataSources
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Datasource|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Обязательный аргумент. UserSource или siteSource. Для userSource используйте "dataSource": { "@odata.type": "microsoft.graph.security.userSource", "email" : "SMTP address"}.  Для источника сайта используйте "dataSource": { "@odata.type": "microsoft.graph.security.siteSource", "site@odata.bind": "siteId" }, где siteId может быть получен из URL-адреса сайта, `https://contoso.sharepoint.com/sites/HumanResources`например, запрос Microsoft Graph будет `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources`. Идентификатор — это первый GUID, указанный в поле идентификатора. Кроме того, можно использовать webUrl напрямую, "dataSource": {"@odata.type": "microsoft.graph.security.siteSource","site": {"webUrl": `https://m365x809305.sharepoint.com/sites/Design-topsecret`}}
+|Datasource|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Обязательный. Либо [microsoft.graph.security.userSource](../resources/security-usersource.md) , [либо microsoft.graph.security.siteSource](../resources/security-sitesource.md).
 
-
+Для userSource используйте "dataSource": { "@odata.type": "microsoft.graph.security.userSource", "email" : "SMTP address"}.  
+Для siteSource используйте "dataSource": { "@odata.type": "microsoft.graph.security.siteSource", "site@odata.bind": "siteId" }, либо используйте webUrl напрямую, "dataSource": {"@odata.type": "microsoft.graph.security.siteSource","site": {"webUrl": `https://m365x809305.sharepoint.com/sites/Design-topsecret`}}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения `201 Created` этот метод возвращает код отклика и [объект ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) в теле отклика.
+В случае `201 Created` успешного выполнения этот метод возвращает код отклика и объект [microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -104,7 +105,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

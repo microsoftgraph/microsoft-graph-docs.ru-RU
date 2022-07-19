@@ -5,19 +5,19 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 928af8cb478813b68fc3602ffaf25d69a395c683
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 124ea0ba891a45688eb93f41964e6ad3f5a5892b
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66443559"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838117"
 ---
 # <a name="list-usersources"></a>Перечисление userSources
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение ресурсов userSource из свойства навигации userSources.
+Получение списка объектов [userSource](../resources/security-usersource.md) , связанных с [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,7 +51,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHol
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [userSource](../resources/security-usersource.md) в тексте отклика.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов [microsoft.graph.security.userSource](../resources/security-usersource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

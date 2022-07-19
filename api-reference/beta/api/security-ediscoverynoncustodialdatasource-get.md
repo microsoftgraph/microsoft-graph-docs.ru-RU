@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 3d1ace2f7640dca13154cc5e4bfa59f12c0605ee
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 05492438741e602cf944f7c8b8bc3a54e3cd7d9e
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66438760"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837438"
 ---
 # <a name="get-ediscoverynoncustodialdatasource"></a>Get ediscoveryNoncustodialDataSource
 Пространство имен: microsoft.graph.security
@@ -51,7 +51,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/noncustodialDataSources/{
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения `200 OK` этот метод возвращает код отклика и [объект ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) в теле отклика.
+В случае `200 OK` успешного выполнения этот метод возвращает код отклика и объект [microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 1a25eff61ef247e6a8b0b0e8aa6f0c6e367ec71b
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: f70b57cafece8f59de3cf15c8f8e37d1a4df75d9
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447275"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838762"
 ---
 # <a name="update-ediscoverycasesettings"></a>Обновление ediscoveryCaseSettings
 Пространство имен: microsoft.graph.security
@@ -50,9 +50,9 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/settings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|**TODO: добавление описания** Дополнительные.|
-|topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|**TODO: добавление описания** Дополнительные.|
-|Ocr|[microsoft.graph.security.ocrSettings](../resources/security-ocrsettings.md)|**TODO: добавление описания** Дополнительные.|
+|redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|Параметры избыточности (потоковая обработка электронной почты и обнаружение практически повторяющихся данных) для дела обнаружения электронных данных. Необязательный элемент.|
+|topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|Параметры моделирования тем (тем) для дела обнаружения электронных данных. Необязательный элемент.|
+|Ocr|[microsoft.graph.security.ocrSettings](../resources/security-ocrsettings.md)|Параметры OCR (оптическое распознавание символов) для дела обнаружения электронных данных. Необязательный параметр.|
 
 
 
@@ -113,8 +113,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true

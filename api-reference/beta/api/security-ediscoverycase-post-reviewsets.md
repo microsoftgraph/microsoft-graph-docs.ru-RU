@@ -1,18 +1,18 @@
 ---
-title: Создание объекта ediscoveryReviewSet
+title: Создание наборов reviewSets
 description: Создайте объект ediscoveryReviewSet.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 921cd76809af7aafe28c0dc7da2b65386e513edd
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: dbb71c0de6cbe137029b015cf389ebfe42cc02e6
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66437933"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838579"
 ---
-# <a name="create-ediscoveryreviewset"></a>Создание объекта ediscoveryReviewSet
+# <a name="create-reviewsets"></a>Создание наборов reviewSets
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -47,16 +47,16 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) в формате JSON.
 
-При создании **ediscoveryReviewSet** можно указать следующие свойства.
+При создании объекта **ediscoveryReviewSet** можно указать следующие свойства.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя набора для проверки. Обязательный.|
+|displayName|Строка|Имя набора для проверки. Обязательный.|
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `201 Created` отклика и [объект ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) в теле отклика.
+В случае успешного выполнения `201 Created` этот метод возвращает код отклика и объект [microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

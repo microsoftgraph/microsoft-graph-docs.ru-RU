@@ -14844,7 +14844,7 @@ items:
                         href: resources/attacksimulationtrainingusercoverage.md
                       - name: Получение объема протестированного обучения для пользователей
                         href: api/reportroot-getattacksimulationtrainingusercoverage.md
-          - name: Обнаружение электронных данных (предварительная версия)
+          - name: Обнаружение электронных данных (eDiscovery)
             items:
               - name: Дело
                 href: resources/security-ediscoverycase.md
@@ -14873,9 +14873,9 @@ items:
                     href: api/security-ediscoverycase-list-noncustodialdatasources.md
                   - name: 'Создание источника данных, не являемой хранителями'
                     href: api/security-ediscoverycase-post-noncustodialdatasources.md
-                  - name: Перечисление удержаний по юридическим причинам
+                  - name: Вывод списка удержаний по юридическим причинам (предварительная версия)
                     href: api/security-ediscoverycase-list-legalholds.md
-                  - name: Создание удержания по юридическим причинам
+                  - name: Создание удержания по юридическим причинам (предварительная версия)
                     href: api/security-ediscoverycase-post-legalholds.md
                   - name: Поиск по спискам
                     href: api/security-ediscoverycase-list-searches.md
@@ -14957,7 +14957,7 @@ items:
                     href: api/security-ediscoverynoncustodialdatasource-updateindex.md
                   - name: Получение последней операции с индексом
                     href: api/security-ediscoverycustodian-list-lastindexoperation.md
-              - name: Политика удержания
+              - name: Политика удержания (предварительная версия)
                 href: resources/security-ediscoveryholdpolicy.md
                 items:
                   - name: Список
@@ -14993,7 +14993,7 @@ items:
                     href: api/security-ediscoverycase-delete-searches.md
                   - name: Оценка статистики
                     href: api/security-ediscoverysearch-estimatestatistics.md
-                  - name: Очистка данных
+                  - name: Очистка данных (предварительная версия)
                     href: api/security-ediscoverysearch-purgedata.md
                   - name: Перечисление источников хранителей
                     href: api/security-ediscoverysearch-list-custodiansources.md
@@ -15024,7 +15024,7 @@ items:
                     href: api/security-ediscoveryreviewset-get.md
                   - name: Добавить в набор для проверки
                     href: api/security-ediscoveryreviewset-addtoreviewset.md
-                  - name: Экспорт
+                  - name: Экспорт (предварительная версия)
                     href: api/security-ediscoveryreviewset-export.md
                     items:
                       - name: Получение URL-адреса скачивания
@@ -15040,18 +15040,18 @@ items:
                         href: api/security-ediscoveryreviewsetquery-get.md
                       - name: Обновление
                         href: api/security-ediscoveryreviewsetquery-update.md
-                      - name: Удалить
+                      - name: Delete
                         href: api/security-ediscoveryreviewset-delete-queries.md
-                      - name: Экспорт
+                      - name: Экспорт (предварительная версия)
                         href: api/security-ediscoveryreviewsetquery-export.md
                         items:
                           - name: Получение URL-адреса скачивания
                             href: api/security-ediscoveryexportoperation-getdownloadurl.md
                       - name: Применение тегов
                         href: api/security-ediscoveryreviewsetquery-applytags.md
-                      - name: Выполнить
+                      - name: Запуск (предварительная версия)
                         href: api/security-ediscoveryreviewsetquery-run.md
-                  - name: Файл
+                  - name: Файл (предварительная версия)
                     href: resources/security-ediscoveryfile.md
                     items:
                       - name: Список
@@ -15401,7 +15401,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы

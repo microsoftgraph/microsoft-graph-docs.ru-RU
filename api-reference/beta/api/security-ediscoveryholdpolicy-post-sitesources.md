@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 782c16cc1d2919c70bd2e98adce54faf25385350
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 9e8e1e09758cfc088250202c539a83b10a04c609
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446808"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838068"
 ---
 # <a name="create-sitesource"></a>Создание siteSource
 Пространство имен: microsoft.graph.security
@@ -55,7 +55,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHo
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [siteSource](../resources/security-sitesource.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [microsoft.graph.security.siteSource](../resources/security-sitesource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -103,7 +103,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

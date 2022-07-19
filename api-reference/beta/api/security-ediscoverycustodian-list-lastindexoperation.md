@@ -1,23 +1,23 @@
 ---
-title: Перечисление ediscoveryIndexOperation
+title: Перечисление lastIndexOperation
 description: Получите ресурсы ediscoveryIndexOperation из свойства навигации lastIndexOperation.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: a7dd52372ea74d22330039a3c5bbaa165d4a849c
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 99c8c50aac15336f72d48e70800d8d123748a95f
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66445552"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838516"
 ---
-# <a name="list-ediscoveryindexoperation"></a>Перечисление ediscoveryIndexOperation
+# <a name="list-lastindexoperation"></a>Перечисление lastIndexOperation
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите ресурсы ediscoveryIndexOperation из свойства навигации lastIndexOperation.
+Получение списка [ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) , связанного с [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -52,7 +52,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/noncustodialSources/{edis
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов [ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) в теле отклика.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и коллекцию объектов [microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: ce721c36fcad19df13c9a8f31833508f6ef84630
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 766ef9b95a65e7be4002970f2eca392b6626dd4d
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447303"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838439"
 ---
 # <a name="get-ediscoverycasesettings"></a>Получение ediscoveryCaseSettings
 Пространство имен: microsoft.graph.security
@@ -51,7 +51,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/settings
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `200 OK` отклика и [объект ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md) в теле отклика.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и объект [microsoft.graph.security.ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

@@ -1,23 +1,23 @@
 ---
 title: Создание хранителя userSource
-description: Создайте объект userSource хранителя.
+description: Создайте объект userSource хранителя, связанный с хранителями обнаружения электронных данных.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: f754199fe56d5e8b14fe52cf4654d560827d5323
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 5d41673c8f2d51983ea6222d38619fb5ed1bfa28
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66438682"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838334"
 ---
 # <a name="create-custodian-usersource"></a>Создание хранителя userSource
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте объект [userSource](../resources/security-usersource.md) .
+Создайте объект [userSource](../resources/security-usersource.md) , связанный с хранителями [обнаружения электронных данных](../resources/security-ediscoverycustodian.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,7 +44,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [userSource в формате JSON](../resources/security-usersource.md) .
 
 При создании **userSource** можно указать следующие свойства.
@@ -52,11 +52,11 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |email|String|SMTP-адрес пользователя.|
-|includedSources|String|Указывает источники, включенные в эту группу. Возможные значения: `mailbox`, `site`.|
+|includedSources|microsoft.graph.security.sourceType|Указывает источники, включенные в эту группу. Возможные значения: `mailbox`, `site`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [userSource](../resources/security-usersource.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [microsoft.graph.security.userSource](../resources/security-usersource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -102,7 +102,7 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-41
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

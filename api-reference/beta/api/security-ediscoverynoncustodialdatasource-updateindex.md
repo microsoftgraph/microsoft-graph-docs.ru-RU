@@ -5,19 +5,19 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 060826ed93adecc12f2be275dbfa72b7d53e03ca
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: d01d2ff9bb90166aaba47f794131de6026a67239
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66438788"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837865"
 ---
 # <a name="ediscoverynoncustodialdatasource-updateindex"></a>ediscoveryNoncustodialDataSource: updateIndex
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Активирует [indexOperation](../resources/security-ediscoveryIndexOperation.md)
+Активация [indexOperation](../resources/security-ediscoveryIndexOperation.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -90,8 +90,7 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-41
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true

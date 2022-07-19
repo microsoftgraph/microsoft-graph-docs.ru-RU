@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: a046b8678efefa1350592565aa33fa3da9379fad
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 3384d11a048860df5cbae9bc003203ebd73f3c67
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446656"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838488"
 ---
 # <a name="update-ediscoverysearch"></a>Обновление ediscoverySearch
 Пространство имен: microsoft.graph.security
@@ -51,14 +51,14 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySea
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |contentQuery|String|Строка запроса в запросе KQL (язык запросов ключевых слов). Дополнительные сведения см. в [запросах по ключевым словам и условиях поиска для поиска контента и обнаружения электронных данных](/microsoft-365/compliance/keyword-queries-and-search-conditions).  Поиск можно уточнить с помощью полей, связанных со значениями; Например, `subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016`.|
-|dataSourceScopes|dataSourceScopes|Если этот параметр указан, коллекция будет охватывать всю службу для всей рабочей нагрузки. Возможные значения: `none`,`allTenantMailboxes`,,`allTenantSites``allCaseCustodians`,`allCaseNoncustodialDataSources`. **Примечание:** При создании исходной коллекции требуется один хранителя или указание dataSourceScope.|
-|description|String|Описание поиска **eDiscovery**.|
+|dataSourceScopes|microsoft.graph.security.dataSourceScopes|Если этот параметр указан, коллекция будет охватывать всю службу для всей рабочей нагрузки. Возможные значения: `none`,`allTenantMailboxes`,,`allTenantSites``allCaseCustodians`,`allCaseNoncustodialDataSources`. **Примечание:** При создании исходной коллекции требуется один хранителя или указание dataSourceScope.|
+|description|Строка|Описание поиска **eDiscovery**.|
 |displayName|String|Отображаемое имя поиска **eDiscovery**.|
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `204 No Content` код отклика и обновленный [объект ediscoverySearch](../resources/security-ediscoverysearch.md) в теле отклика.
+В случае успешного выполнения `204 No Content` этот метод возвращает код отклика и обновленный объект [microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -104,8 +104,8 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true

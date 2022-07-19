@@ -1,23 +1,23 @@
 ---
-title: List ediscoveryReviewTag
+title: Перечисление тегов
 description: Получение списка объектов ediscoveryReviewTag из объекта дела eDiscovery.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: ccdaf7d79d08e083edbbadc15be6bf73ccb2addf
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: a2c5911c7f087c9fcec31a0f6949b2d795a8979d
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66439431"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837571"
 ---
-# <a name="list-ediscoveryreviewtag"></a>List ediscoveryReviewTag
+# <a name="list-tags"></a>Перечисление тегов
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте объект ediscoveryReviewTag.
+Получение списка объектов [eDiscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) и их свойств.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,7 +47,8 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и коллекцию объектов [microsoft.graph.security.ediscoveryreviewtag](../resources/security-ediscoveryreviewtag.md) в теле отклика.
+
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
@@ -87,7 +88,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-ceb
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

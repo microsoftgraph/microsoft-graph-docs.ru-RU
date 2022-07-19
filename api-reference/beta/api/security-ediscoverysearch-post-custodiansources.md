@@ -1,23 +1,23 @@
 ---
-title: Добавление источника данных
-description: Добавьте custodianSources, выполнив публикацию в коллекции custodianSources.
+title: Добавление источников хранителей
+description: Создайте новый источник хранителя, связанный с поиском eDiscovery.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: a5755e7d4dfd0dea3313081e52fcf5fe5decaa30
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: ad3265d6e28e1fe67024f16ac169b82469408ae9
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66440219"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837851"
 ---
-# <a name="add-datasource"></a>Добавление источника данных
+# <a name="add-custodian-sources"></a>Добавление источников хранителей
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте custodianSources, выполнив публикацию в коллекции custodianSources.
+Создайте новый источник хранителя, связанный с поиском [обнаружения электронных данных](../resources/security-ediscoverysearch.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,20 +44,20 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [dataSource](../resources/security-datasource.md) в формате JSON.
 
-При создании **источника данных** можно указать следующие свойства.
+При создании источника данных можно указать следующие **свойства**.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|@odata.id|String|Строка, определяющее объект хранителя. См. следующий пример.|
+|@odata.id|Строка|Строка, определяющее объект хранителя. См [. следующий](#examples) пример.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `204 No Content` отклика и объект [dataSource](../resources/security-datasource.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="examples"></a>Примеры
 
@@ -99,8 +99,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true

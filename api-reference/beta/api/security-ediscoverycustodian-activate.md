@@ -5,19 +5,19 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: c2149238fbcdf7671ea376ad15784b158f7f70f3
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: f61b0418f195ac8da8b0e45cfcf5497811f71e9b
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66440495"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837928"
 ---
 # <a name="ediscoverycustodian-activate"></a>ediscoveryCustodian: activate
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Активируйте хранителя, освобожденного из дела, чтобы снова сделать его частью дела. Дополнительные сведения см. в [разделе "Управление хранителями" Advanced eDiscovery дела](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian).
+Активируйте хранителя, освобожденного из дела, чтобы снова сделать его частью дела. Дополнительные сведения см. в [разделе "Управление хранителями" дела об обнаружении электронных данных (premium](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian)).
 
 
 ## <a name="permissions"></a>Разрешения
@@ -88,8 +88,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true

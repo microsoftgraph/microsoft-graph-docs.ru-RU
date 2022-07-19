@@ -1,8 +1,17 @@
 ---
-title: "siteSource resource type" description: ""The container for a site associated with a custodian".
-author: "SeunginLyu" ms.localizationpriority: medium ms.prod: "ediscovery" doc_type: resourcePageType
+title: Тип ресурса siteSource
+description: Контейнер для сайта, связанного с хранителями.
+author: SeunginLyu
+ms.localizationpriority: medium
+ms.prod: ediscovery
+doc_type: resourcePageType
+ms.openlocfilehash: 0dd23c703ef63c11da357ac6db0d0dfdc73a5212
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837536"
 ---
-
 # <a name="sitesource-resource-type"></a>Тип ресурса siteSource
 
 Пространство имен: microsoft.graph.security
@@ -10,7 +19,7 @@ author: "SeunginLyu" ms.localizationpriority: medium ms.prod: "ediscovery" doc_t
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Контейнер для сайта, связанного с хранителями.
 
-IInherits из [dataSource](../resources/security-datasource.md).
+Наследуется [от dataSource](../resources/security-datasource.md).
 
 
 ## <a name="methods"></a>Методы
@@ -21,10 +30,10 @@ IInherits из [dataSource](../resources/security-datasource.md).
 |createdBy|[identitySet](../resources/identityset.md)|Пользователь, создавший **siteSource**.|
 |createdDateTime|DateTimeOffset|Дата и время создания **siteSource** .|
 |displayName|Строка|Отображаемое имя **siteSource**. Это будет имя сайта SharePoint.|
-|id|String| Идентификатор **siteSource**. Источник сайта можно получить в любое время с помощью [get site](../api/site-get.md) - https://graph.microsoft.com/v1.0/sites/{siteId}|
-|holdStatus|Строка|Состояние удержания **ресурса siteSource**. Возможные значения: `notApplied`, , `applied`, `applying`, `removing``partial`|
+|id|Строка| Идентификатор **siteSource**. |
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|Состояние удержания **ресурса siteSource**. Допустимые значения: `notApplied`, `applied`, `applying`, `removing`, `partial`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |site|[site](../resources/site.md)|Сайт SharePoint, связанный с **siteSource**.|
@@ -35,7 +44,7 @@ IInherits из [dataSource](../resources/security-datasource.md).
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.security.siteSource",
-  "baseType": "microsoft.graph.ediscovery.dataSource",
+  "baseType": "microsoft.graph.security.dataSource",
   "openType": false
 }
 -->

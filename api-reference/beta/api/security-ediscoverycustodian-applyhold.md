@@ -5,19 +5,19 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: cca03abb7e390dbfddedf50ab0bd7e2b6df562eb
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: d230ef69965b3c07193ee4e23cf2c296b9dd058a
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66438678"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837459"
 ---
 # <a name="ediscoverycustodian-applyhold"></a>ediscoveryCustodian: applyHold
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Запустите процесс применения удержания к хранителям обнаружения электронных данных. После создания операции можно `Location` получить состояние операции обращения, извлекая параметр из заголовков ответа. Расположение содержит URL-адрес, который возвращает [eDiscoveryHoldOpertaion](../resources/security-ediscoveryholdoperation.md).
+Запустите процесс применения удержания к хранителям [обнаружения электронных данных](../resources/security-ediscoverycustodian.md). После создания операции можно получить `Location` состояние, извлекая параметр из заголовков ответа. Расположение содержит URL-адрес, возвращающий объект [eDiscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,7 +45,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{eDiscoveryCu
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление параметров в формате JSON.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
@@ -61,7 +61,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{eDiscoveryCu
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-apply-hold-to-multiple-custodians"></a>Пример 1. Примените удержание к нескольким хранителям.
+### <a name="example-1-apply-hold-to-multiple-custodian"></a>Пример 1. Применение удержания к нескольким хранителям
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -106,8 +106,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -117,7 +116,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-2-apply-hold-to-a-single-custodian"></a>Пример 2. Примените удержание к одному хранителям.
+### <a name="example-2-apply-hold-to-a-single-custodian"></a>Пример 2. Применение удержания к одному хранителям
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -155,8 +154,8 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-41
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true

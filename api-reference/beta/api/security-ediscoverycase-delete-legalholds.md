@@ -1,23 +1,23 @@
 ---
 title: Удаление ediscoveryHoldPolicy
-description: Удаляет объект ediscoveryHoldPolicy.
+description: Удаление объекта ediscoveryHoldPolicy.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 7d75b58fbe07e928e95a8bf80f8711fd2c89dc3d
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 9c1c1ac41f94f69390fa7779234fdab1c14037c9
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66438745"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837508"
 ---
 # <a name="delete-ediscoveryholdpolicy"></a>Удаление ediscoveryHoldPolicy
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет объект [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) .
+Удаление объекта [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -89,8 +89,7 @@ DELETE https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true

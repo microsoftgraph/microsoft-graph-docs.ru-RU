@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: ad795f9bc03b6cc131b4b2ae57442b06a1447eee
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 8cdbd719808d314d40d2c3f406b467bd163a19db
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66442554"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838769"
 ---
 # <a name="create-ediscoveryholdpolicy"></a>Создание ediscoveryHoldPolicy
 Пространство имен: microsoft.graph.security
@@ -51,13 +51,13 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя политики удержания по юридическим причинам. Обязательный.|
-|description|String|Описание политики удержания по юридическим причинам. Необязательное свойство.|
-|contentQuery|String|Запрос содержимого политики удержания по юридическим причинам. Необязательный параметр.|
+|displayName|Строка|Отображаемое имя политики удержания по юридическим причинам. Обязательный.|
+|description|Строка|Описание политики удержания по юридическим причинам. Необязательный элемент.|
+|contentQuery|Строка|Запрос содержимого политики удержания по юридическим причинам. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `201 Created` отклика и [объект ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) в теле отклика.
+В случае успешного выполнения `201 Created` этот метод возвращает код отклика и объект [microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -117,7 +117,7 @@ Content-Type: application/json
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

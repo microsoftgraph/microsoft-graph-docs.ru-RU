@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 271989fb37804db1cf4d0051d9b1bebcdd1d1e32
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 5b98442eb897362dfb967e8f44217911c80ff228
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66093936"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837704"
 ---
 # <a name="update-ediscoveryholdpolicy"></a>Обновление ediscoveryHoldPolicy
 Пространство имен: microsoft.graph.security
@@ -50,13 +50,13 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryH
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|description|Строка|Описание политики удержания по юридическим причинам. Необязательно.|
+|description|String|Описание политики удержания по юридическим причинам. Необязательный элемент.|
 |contentQuery|String|Запрос содержимого политики удержания по юридическим причинам. Необязательный параметр.|
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `204 No Content` отклика и обновленный [объект ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) в теле отклика.
+В случае успешного `204 No Content` выполнения этот метод возвращает код отклика и обновленный объект [microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -98,8 +98,8 @@ PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true

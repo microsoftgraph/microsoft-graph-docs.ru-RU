@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса ocrSettings
-description: Параметры OCR для дела обнаружения электронных данных
+description: Представляет параметры OCR для дела обнаружения электронных данных.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: d3a72dbcbdf75abe0e2da50aa8626a828a4d2588
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: e3951812e8196a4bd5839f5580cf79bac8bc671e
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65946068"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838229"
 ---
 # <a name="ocrsettings-resource-type"></a>Тип ресурса ocrSettings
 
@@ -18,7 +18,7 @@ ms.locfileid: "65946068"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Параметры OCR (оптическое распознавание символов) для дела обнаружения электронных данных.
+Представляет параметры оптического распознавания символов (OCR) для дела обнаружения электронных данных.
 
 
 ## <a name="properties"></a>Свойства
@@ -28,10 +28,10 @@ ms.locfileid: "65946068"
 |maxImageSize|Int32|Максимальный размер образа, который будет обрабатываться в КБ).|
 |timeout|Длительность|Длительность времени ожидания для обработчика OCR. Более длительное время ожидания может увеличить успешность OCR, но может увеличить общее время обработки.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

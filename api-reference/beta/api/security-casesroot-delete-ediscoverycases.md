@@ -1,23 +1,23 @@
 ---
 title: Удаление ediscoveryCase
-description: Удаляет ediscoveryCase.
+description: Удалите ediscoveryCase.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 389f49d08a2ede048c03aa32907c7c93cac7ed39
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 2b12f67ddfd637ddf4d0e6e4a7b7202113d60304
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447317"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838733"
 ---
 # <a name="delete-ediscoverycase"></a>Удаление ediscoveryCase
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет объект [ediscoveryCase](../resources/security-ediscoverycase.md) .
+Удаление объекта [ediscoveryCase](../resources/security-ediscoverycase.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -88,8 +88,8 @@ DELETE https://graph.microsoft.com/beta/security/cases/eDiscoverycases/22aa2acd-
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true

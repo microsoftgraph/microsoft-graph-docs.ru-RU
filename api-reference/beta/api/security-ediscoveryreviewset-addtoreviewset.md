@@ -5,19 +5,19 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 8ae8a25bb90e647c4bd4795febf321a2a7208421
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 42daaa6cb5321e90c722af8a54ace685145d2449
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65946308"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838509"
 ---
 # <a name="ediscoveryreviewset-addtoreviewset"></a>ediscoveryReviewSet: addToReviewSet
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Начните процесс добавления коллекции из служб Microsoft 365 в набор для проверки. После создания операции можно `Location` получить состояние операции, получив параметр из заголовков ответа. Расположение содержит URL-адрес, который возвращает операцию ["Добавить для проверки набора"](../resources/security-ediscoveryaddtoreviewsetoperation.md).
+Начните процесс добавления коллекции из служб Microsoft 365 в [набор для проверки](../resources/security-ediscoveryreviewset.md). После создания операции можно `Location` получить состояние операции, получив параметр из заголовков ответа. Расположение содержит URL-адрес, который возвращает операцию ["Добавить для проверки набора"](../resources/security-ediscoveryaddtoreviewsetoperation.md).
 
 
 ## <a name="permissions"></a>Разрешения
@@ -36,7 +36,7 @@ ms.locfileid: "65946308"
 }
 -->
 ``` http
-POST /ediscoveryExportOperation/reviewSet/addToReviewSet
+POST /security/cases/ediscoverycases/{eDiscoveryCaseId}/reviewSets/{eDiscoveryReviewSetId}/addToReviewSet
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -75,12 +75,12 @@ POST /ediscoveryExportOperation/reviewSet/addToReviewSet
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSet/addToReviewSet
+POST https://graph.microsoft.com/beta/security/cases/ediscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/63ef0fd7-0db2-45eb-a9d7-7d75c8239873/addToReviewSet
 Content-Type: application/json
 
 {
     "search": {
-        "id": "7c165312-d8db-48b5-9129-1af50932df53"
+        "id": "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7"
     },
     "additionalDataOptions": "linkedFiles"
 }
@@ -88,13 +88,13 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```

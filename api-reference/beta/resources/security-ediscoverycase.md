@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 6bb5c8777afb87523d2e939d7c1665288e5c27fd
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 0c50d528d67ad4757c8f6b25c7f70b4757540008
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65946128"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837823"
 ---
 # <a name="ediscoverycase-resource-type"></a>Тип ресурса ediscoveryCase
 
@@ -18,7 +18,7 @@ ms.locfileid: "65946128"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В контексте обнаружения электронных данных содержатся хранители, удержания, поисковые запросы, наборы проверки и экспорты. Дополнительные сведения см [. в разделе "Обзор обнаружения электронных данных Microsoft Purview (премиум)"](/microsoft-365/compliance/overview-ediscovery-20).
+В контексте обнаружения электронных данных содержатся хранители, удержания, поисковые запросы, наборы проверки и экспорты. Дополнительные сведения см[. в разделе "Обзор Microsoft Purview eDiscovery (Премиум)"](/microsoft-365/compliance/overview-ediscovery-20).
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
@@ -27,7 +27,7 @@ ms.locfileid: "65946128"
 |[Создание ediscoveryCase](../api/security-casesroot-post-ediscoverycases.md)|[microsoft.graph.security.ediscoveryCase](../resources/security-ediscoverycase.md)|Создайте объект [ediscoveryCase](../resources/security-ediscoverycase.md) .|
 |[Получение ediscoveryCase](../api/security-ediscoverycase-get.md)|[microsoft.graph.security.ediscoveryCase](../resources/security-ediscoverycase.md)|Чтение свойств и связей объекта [ediscoveryCase](../resources/security-ediscoverycase.md) .|
 |[Обновление ediscoveryCase](../api/security-ediscoverycase-update.md)|[microsoft.graph.security.ediscoveryCase](../resources/security-ediscoverycase.md)|Обновление свойств объекта [ediscoveryCase](../resources/security-ediscoverycase.md) .|
-|[Удаление ediscoveryCase](../api/security-casesroot-delete-ediscoverycases.md)|Нет|Удаляет объект [ediscoveryCase](../resources/security-ediscoverycase.md) .|
+|[Удаление ediscoveryCase](../api/security-casesroot-delete-ediscoverycases.md)|Нет|Удаление объекта [ediscoveryCase](../resources/security-ediscoverycase.md) .|
 |[Перечисление хранителей](../api/security-ediscoverycase-list-custodians.md)|[Коллекция microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Получите ресурсы ediscoveryCustodian из свойства навигации хранителей.|
 |[Создание объекта ediscoveryCustodian](../api/security-ediscoverycase-post-custodians.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Создайте объект ediscoveryCustodian.|
 |[Перечисление legalHolds](../api/security-ediscoverycase-list-legalholds.md)|[Коллекция microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md)|Получите ресурсы ediscoveryHoldPolicy из свойства навигации legalHolds.|
@@ -50,12 +50,12 @@ ms.locfileid: "65946128"
 |createdBy|[Microsoft.graph.identitySet](/graph/api/resources/identityset)|Пользователь, создавший дело.|
 |createdDateTime|DateTimeOffset|Дата и время создания сущности. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |description|Строка|Описание варианта.|
-|displayName|Строка|Имя регистра.|
+|displayName|String|Имя регистра.|
 |externalId|String|Номер внешнего обращения для ссылки на клиента.|
-|id|String|Идентификатор дела обнаружения электронных данных. Только для чтения. |
+|id|Строка|Идентификатор дела обнаружения электронных данных. Только для чтения. |
 |lastModifiedBy|[Microsoft.graph.identitySet](../resources/identityset.md)|Последний пользователь, который изменил дело.
 |lastModifiedDateTime|DateTimeOffset|Последняя дата и время изменения дела. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|status|String|Состояние обращения. Возможные значения: `unknown`, `active`, `pendingDelete`, , `closing`, и `closedWithError``closed`. Дополнительные сведения см. в следующей таблице.
+|status|microsoft.graph.security.caseStatus|Состояние обращения. Возможные значения: `unknown`, `active`, `pendingDelete`, , `closing`, и `closedWithError``closed`. Дополнительные сведения см. в следующей таблице.
 
 ### <a name="casestatus-values"></a>Значения caseStatus
 
@@ -68,7 +68,7 @@ ms.locfileid: "65946128"
 | Закрыт | Обращение закрыто. |
 | closedWithError | Дело закрыто, но в этом случае произошли ошибки, связанные с освобождением удержаний. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |Хранителей|[Коллекция microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Возвращает список объектов **case ediscoveryCustodian** для этого **случая**.|

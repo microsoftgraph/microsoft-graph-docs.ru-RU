@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 76ec63befe49601e404c3d2dc21e8832cd82ed8c
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 414410a19c44299960a7939e98887ab10d9990fe
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65946123"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837816"
 ---
 # <a name="ediscoverycasesettings-resource-type"></a>Тип ресурса ediscoveryCaseSettings
 
@@ -18,7 +18,7 @@ ms.locfileid: "65946123"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит параметры для дела обнаружения электронных данных. Дополнительные сведения см [. в разделе "Настройка параметров поиска и аналитики" в advanced eDiscovery](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery).
+Содержит параметры для дела обнаружения электронных данных. Дополнительные сведения см[. в разделе "Настройка параметров поиска и аналитики" в службе обнаружения электронных данных (цен. категория "Премиум").](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery)
 
 Наследует [от сущности](../resources/entity.md).
 
@@ -37,10 +37,10 @@ ms.locfileid: "65946123"
 |redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|Параметры обнаружения избыточности (почти дубликатов и потоков электронной почты) для дела.|
 |topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|Параметры моделирования тем (тем) для дела.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

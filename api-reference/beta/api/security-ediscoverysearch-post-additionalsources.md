@@ -1,23 +1,23 @@
 ---
-title: Создание источника данных
-description: Создайте объект dataSource.
+title: Добавление дополнительных источников
+description: Создайте новый дополнительный источник, связанный с поиском обнаружения электронных данных.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 1314e063866be6483a5b791d7f0bfb2216c88c00
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 2f82f0ed6ef610a69e50f389be3def5849bcd06e
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66443186"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837669"
 ---
-# <a name="create-datasource"></a>Создание источника данных
+# <a name="add-additional-sources"></a>Добавление дополнительных источников
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте объект dataSource.
+Создайте новый [дополнительный источник,](../resources/security-datasource.md) связанный с поиском [обнаружения электронных данных](../resources/security-ediscoverysearch.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,22 +44,22 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [dataSource](../resources/security-datasource.md) в формате JSON.
 
-При создании **источника данных** можно указать следующие свойства.
+При создании источника данных можно указать следующие **свойства**.
 
->**Примечание:** Требуется **либо адрес электронной** **почты** , либо сайт, а не оба. 
+>**Примечание:** Требуется **либо адрес электронной** **почты** , либо сайт, но не оба.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |email|строка|SMTP-адрес почтового ящика. Чтобы получить адрес электронной почты группы, используйте группы [list или](../api/group-list.md) [Get](../api/group-get.md). Можно выполнить запрос по имени группы, используя `$filter`, например, `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName`.|
-|site|string|URL-адрес сайта; Например, `https://contoso.sharepoint.com/sites/HumanResources`. |
+|site|Строка|URL-адрес сайта; Например, `https://contoso.sharepoint.com/sites/HumanResources`. |
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает значение `201 Created`.
+В случае успешного выполнения этот метод возвращает объект `201 Created` [microsoft.graph.security.dataSource](../resources/security-datasource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -78,7 +78,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 {
     "@odata.type": "microsoft.graph.security.siteSource",
     "site": {
-        "webUrl": "https://contoso.sharepoint.com/sites/SecretSite"
+        "webUrl": "https://m365x809305.sharepoint.com/sites/Design-topsecret"
     }
 }
 ```
@@ -102,7 +102,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -114,16 +114,18 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 HTTP/1.1 201 Created
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/sourceCollections('39b0bafd920e4360995c62e18a5e8a49')/additionalSources/$entity",
-    "@odata.type": "#microsoft.graph.ediscovery.siteSource",
-    "displayName": "Secret Site",
-    "createdDateTime": "2021-08-11T23:35:02.33986Z",
-    "id": "42393244-3838-4636-3437-453030334136",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/searches('c61a5860-d634-4d14-aea7-d82b6f4eb7af')/additionalSources/$entity",
+    "@odata.type": "#microsoft.graph.security.siteSource",
+    "@odata.id": "https://graph.microsoft.com/v1.0/sites/46303732-3434-4630-3832-363333363441",
+    "displayName": "Design - top secret",
+    "createdDateTime": "2022-07-15T22:45:36.1096267Z",
+    "holdStatus": "0",
+    "id": "46303732-3434-4630-3832-363333363441",
     "createdBy": {
+        "application": null,
         "user": {
-            "id": "798d8d23-2087-4e03-912e-c0d9db5cb5d2",
-            "displayName": "Edisco Admin",
-            "userPrincipalname": "ediscoadmin@contoso.com"
+            "id": null,
+            "displayName": null
         }
     }
 }

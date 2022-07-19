@@ -1,18 +1,18 @@
 ---
-title: Создание ediscoverySearch
+title: Создание поисковых запросов
 description: Создайте объект ediscoverySearch.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 5184452a0481d2059863b9950885755a961b668c
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 7ed28d8a9336b4c61ef7a49d8cb3d61fadea7b2f
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66439418"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838726"
 ---
-# <a name="create-ediscoverysearch"></a>Создание ediscoverySearch
+# <a name="create-searches"></a>Создание поисковых запросов
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -44,21 +44,21 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [ediscoverySearch](../resources/security-ediscoverysearch.md) в формате JSON.
 
 При создании **ediscoverySearch** можно указать следующие свойства.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя поиска. Обязательный|
-|description|Строка|Описание поиска (необязательно).|
+|displayName|String|Отображаемое имя поиска. Обязательный|
+|description|String|Описание поиска (необязательно).|
 |contentQuery|Строка|Строка запроса, используемая для поиска. Строка запроса в формате KQL (язык запросов ключевых слов). Необязательный|
-|dataSourceScopes|String|Возможность поиска по всем почтовым ящикам или сайтам в клиенте. Допустимые значения: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`. Необязательный параметр.|
+|dataSourceScopes|microsoft.graph.security.dataSourceScopes|Возможность поиска по всем почтовым ящикам или сайтам в клиенте. Допустимые значения: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `201 Created` отклика и [объект ediscoverySearch](../resources/security-ediscoverysearch.md) в тексте отклика.
+В случае успешного выполнения `201 Created` этот метод возвращает код отклика и объект [microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -114,7 +114,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

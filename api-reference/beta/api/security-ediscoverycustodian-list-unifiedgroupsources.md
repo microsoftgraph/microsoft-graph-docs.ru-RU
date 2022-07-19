@@ -5,19 +5,19 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 342588f2110f35b5f2c0c3177a8919846f1157ce
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 52634082d2910081e5ab622acf5964f3f2c48eeb
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66440453"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838124"
 ---
-# <a name="list-custodians-unifiedgroupsources"></a>Перечисление объектов unifiedGroupSources хранителя
+# <a name="list-unifiedgroupsources"></a>Перечисление unifiedGroupSources
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [unifiedGroupSource](../resources/security-unifiedgroupsource.md) и их свойств.
+Получение списка объектов [unifiedGroupSource](../resources/security-unifiedgroupsource.md) , связанных с [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,7 +51,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}/
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [unifiedGroupSource](../resources/security-unifiedgroupsource.md) в теле отклика.
+В случае успешного выполнения `200 OK` этот метод возвращает код отклика и коллекцию объектов [microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

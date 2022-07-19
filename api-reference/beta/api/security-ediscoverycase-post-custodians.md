@@ -1,18 +1,18 @@
 ---
-title: Создание объекта ediscoveryCustodian
+title: Создание хранителей
 description: Создайте объект ediscoveryCustodian.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 155d69e73957cd8549656c79d4701ca17b447bb8
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 7cfc9ef2d6791d29e101136d0552a48e6421a810
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66442568"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837697"
 ---
-# <a name="create-ediscoverycustodian"></a>Создание объекта ediscoveryCustodian
+# <a name="create-custodians"></a>Создание хранителей
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -48,7 +48,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians
 ## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) в формате JSON.
 
-При создании **ediscoveryCustodian** можно указать следующие свойства.
+При создании объекта **ediscoveryCustodian можно указать следующие свойства**.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -56,7 +56,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `201 Created` отклика и [объект ediscoveryCustodian](../resources/security-ediscoverycustodian.md) в теле отклика.
+В случае успешного выполнения `201 Created` этот метод возвращает код отклика и объект [microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

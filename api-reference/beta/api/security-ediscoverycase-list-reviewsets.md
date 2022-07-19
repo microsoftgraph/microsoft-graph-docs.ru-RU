@@ -1,23 +1,23 @@
 ---
-title: List ediscoveryReviewSet
+title: Перечисление наборов reviewSets
 description: Получение ресурсов ediscoveryReviewSet из объекта дела обнаружения электронных данных
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: fc183b5dfb91c0ad02443afc3787cc479a06be9c
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 81804b6a09383eab589c5ffe50b3edc55555ed85
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66440544"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837578"
 ---
-# <a name="list-ediscoveryreviewset"></a>List ediscoveryReviewSet
+# <a name="list-reviewsets"></a>Перечисление наборов reviewSets
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите ресурсы [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) из свойства навигации reviewSet.
+Получение списка объектов [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) , связанных с делом обнаружения электронных данных.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,7 +51,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) в теле отклика.
+В случае успешного `200 OK` выполнения этот метод возвращает код отклика и коллекцию объектов [microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

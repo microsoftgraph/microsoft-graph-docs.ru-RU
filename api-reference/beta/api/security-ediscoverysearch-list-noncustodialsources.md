@@ -1,23 +1,24 @@
 ---
 title: Перечисление noncustodialSources
-description: Получите ресурсы ediscoveryNoncustodialDataSource из свойства навигации noncustodialSources.
+description: Получение списка noncustodialSources, связанных с поиском eDiscovery.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: f7fa82cd237edeb3e57fe62f2b92d958b11bee15
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 794f931f7d7eae572ffd1a275c16430e782094a6
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446674"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837655"
 ---
 # <a name="list-noncustodialsources"></a>Перечисление noncustodialSources
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите ресурсы ediscoveryNoncustodialDataSource из свойства навигации noncustodialSources.
+
+Получение списка noncustodialSources, связанных с поиском [eDiscovery](../resources/security-ediscoverysearch.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -51,7 +52,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearc
 
 ## <a name="response"></a>Отклик
 
-В случае успешного `200 OK` выполнения этот метод возвращает код отклика и коллекцию [объектов ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) в теле отклика.
+В случае `200 OK` успешного выполнения этот метод возвращает код отклика и коллекцию объектов [microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -92,7 +93,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

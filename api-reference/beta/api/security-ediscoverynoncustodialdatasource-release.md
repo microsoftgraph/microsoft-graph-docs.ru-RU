@@ -1,23 +1,23 @@
 ---
 title: 'ediscoveryNoncustodialDataSource: release'
-description: Освобождает источник данных, не ский для хранения, из дела.
+description: Освобождение источника данных, не являемой хранителями, из дела.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 60b59f363b60245e50b8fef6181b7e5683e4a66d
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 6862b62b2c1fc6701c582faed15b48de976d67d6
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66445426"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837424"
 ---
 # <a name="ediscoverynoncustodialdatasource-release"></a>ediscoveryNoncustodialDataSource: release
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Освобождает источник данных, не ский для хранения, из дела.
+Освобождение источника данных, не являемой хранителями, из дела.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -89,8 +89,8 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 62c2e076a8364e7623d056f2cc68a9a104c23c08
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 2ef788b583b5114c1050fa4aac75f69c630b6ce3
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66441866"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837515"
 ---
 # <a name="update-ediscoverycase"></a>Обновление ediscoveryCase
 Пространство имен: microsoft.graph.security
@@ -52,12 +52,12 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |description|String|Описание варианта.|
-|displayName|String|Имя регистра.|
+|displayName|Строка|Имя регистра.|
 |externalId|String|Номер внешнего обращения для ссылки на клиента.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `204 NO CONTENT` отклика и обновленный [объект ediscoveryCase](../resources/security-ediscoverycase.md) в тексте отклика.
+В случае успешного выполнения `204 NO CONTENT` этот метод возвращает код отклика и обновленный объект [microsoft.graph.security.ediscoveryCase](../resources/security-ediscoverycase.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -103,8 +103,8 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true

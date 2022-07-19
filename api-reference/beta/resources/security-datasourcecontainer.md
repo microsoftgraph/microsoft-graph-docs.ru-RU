@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 7482e31ab1a43cf4c60e7c211acb38d8cac42bfa
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: f90a527ec47cc6b9e14e536a4f8da4841d6504c8
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65946131"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838649"
 ---
 # <a name="datasourcecontainer-resource-type"></a>Тип ресурса dataSourceContainer
 
@@ -27,18 +27,37 @@ ms.locfileid: "65946131"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|holdStatus|Строка|Состояние удержания dataSourceContainer.Возможные значения: `notApplied`, `applied`, `applying`, , `removing``partial`|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|Состояние удержания dataSourceContainer.Возможные значения: `notApplied`, `applied`, `applying`, , `removing``partial`|
 |createdDateTime|DateTimeOffset|Дата и время создания сущности dataSourceContainer.|
 |displayName|Строка|Отображаемое имя сущности dataSourceContainer.|
 |id|String|Уникальный идентификатор dataSourceContainer. Наследуется [от сущности](../resources/entity.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения dataSourceContainer.|
 |releasedDateTime|DateTimeOffset|Дата и время освобождения dataSourceContainer из дела.|
-|status|String|Последнее состояние dataSourceContainer. Возможные значения: `Active`, `Released`.|
+|status|microsoft.graph.security.dataSourceContainerStatus|Последнее состояние dataSourceContainer. Возможные значения: `Active`, `Released`.|
 
-## <a name="relationships"></a>Отношения
+
+### <a name="datasourcecontainerstatus-values"></a>Значения dataSourceContainerStatus
+
+|Member|Описание|
+|:----|-----------|
+| Активных| Контейнер источника данных активен.|
+| Выпуска | Контейнер источника данных выпущен.|
+
+### <a name="datasourceholdstatus-values"></a>Значения dataSourceHoldStatus
+
+|Member|Описание|
+|:----|-----------|
+| notApplied | Контейнер источника данных не находится на удержании.|
+| Применяется | Контейнер источника данных находится на удержании.|
+| Применение | Контейнер источника данных находится в состоянии удержания (активируется операция applyHold).|
+| Удаление | Контейнер источника данных удаляет состояние удержания (активируется операция removeHold).|
+| Частичное | Контейнер источника данных находится в смешанном состоянии, где некоторые источники находятся на удержании, а некоторые не находятся в состоянии удержания или ошибки.|
+
+
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

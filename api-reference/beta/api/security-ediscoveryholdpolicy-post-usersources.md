@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 4659c52ec4431cb7ab9960056acd24704eafa46e
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 2fcc0d2c45e296a39c1537e40c4a1679af622b05
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446801"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837921"
 ---
 # <a name="create-usersource"></a>Создание userSource
 Пространство имен: microsoft.graph.security
@@ -52,12 +52,12 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHo
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |email|String|SMTP-адрес пользователя.|
-|includedSources|String|Указывает источники, включенные в эту группу. Возможные значения: `mailbox`, `site`.|
+|includedSources|microsoft.graph.security.sourceType|Указывает источники, включенные в эту группу. Возможные значения: `mailbox`, `site`.|
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [userSource](../resources/security-usersource.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [microsoft.graph.security.userSource](../resources/security-usersource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -104,7 +104,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

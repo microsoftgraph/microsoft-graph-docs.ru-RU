@@ -1,23 +1,23 @@
 ---
 title: Создание хранителя unifiedGroupSource
-description: Создайте новый объект custodian unifiedGroupSource.
+description: Создайте новый объект unifiedGroupSource хранителя, связанный с хранителями обнаружения электронных данных.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: a0a57825489d4dfa25a33ac7ec4fc4345d157868
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 71a8174570cc6fed779e564447569a7d832de138
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66445482"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838103"
 ---
 # <a name="create-custodian-unifiedgroupsource"></a>Создание хранителя unifiedGroupSource
 Пространство имен: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект unifiedGroupSource](../resources/security-unifiedgroupsource.md) .
+Создайте новый [объект unifiedGroupSource](../resources/security-unifiedgroupsource.md) , связанный с хранителям [обнаружения электронных данных](../resources/security-ediscoverycustodian.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -53,13 +53,13 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|includedSources|microsoft.graph.ediscovery.sourceType|Указывает источники, включенные в эту группу. Возможные значения: `mailbox`, `site`.|
-|group|String|Указывает адрес электронной почты для группы. Чтобы получить адрес электронной почты группы, используйте группы [list или](../api/group-list.md) [Get](../api/group-get.md). Затем можно выполнить запрос по имени группы, используя `$filter`, например, `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName`.|
-|group@odata.bind|String|Идентификатор группы. Вы можете получить его так же, как и группу. |
+|includedSources|microsoft.graph.security.sourceType|Указывает источники, включенные в эту группу. Возможные значения: `mailbox`, `site`.|
+|group;|String|Указывает адрес электронной почты для группы. Чтобы получить адрес электронной почты группы, используйте группы [list или](../api/group-list.md) [Get](../api/group-get.md). Затем можно выполнить запрос по имени группы, используя `$filter`, например, `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName`.|
+|group@odata.bind|Строка|Идентификатор группы. Вы можете получить его так же, как и группу. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [unifiedGroupSource](../resources/security-unifiedgroupsource.md) в тексте отклика.
+В случае успешного выполнения этот `201 Created` метод возвращает код отклика и объект [microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -74,7 +74,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryReviewSetId}/files/{ediscoveryFileId}/custodian/unifiedGroupSources
+POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/unifiedGroupSources
 Content-Type: application/json
 
 {
@@ -109,7 +109,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -187,7 +187,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
