@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 1924ee87043a2ba10beb0505e9a42f1446c30a9e
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: 06ab85704a737877ca6674737dd64504f3698629
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65883994"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838467"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Использование Microsoft Graph Security API
 
@@ -49,6 +49,10 @@ Microsoft Graph Security API включает указанные ниже клю
 
 \*\*\* Оповещения Microsoft Defender для удостоверений доступны в рамках интеграции с Microsoft Defender for Cloud Apps. Это означает, что вы будете получать оповещения Microsoft Defender для удостоверений только в том случае, если вы присоединились к комплексному решению SecOps и подключили Microsoft Defender для удостоверений к Microsoft Defender for Cloud Apps. Узнайте больше о том, [как интегрировать Microsoft Defender для удостоверений и Microsoft Defender for Cloud Apps](/defender-for-identity/mcas-integration).
 
+## <a name="ediscovery"></a>Обнаружение электронных данных (eDiscovery)
+
+[Обнаружение электронных данных в Microsoft Purview (премиум)](/microsoft-365/compliance/overview-ediscovery-20) обеспечивает комплексный рабочий процесс для сохранения, сбора, анализа, проверки и экспорта содержимого, используемого во внутренних и внешних исследованиях вашей организации.
+
 ## <a name="information-protection"></a>Защита информации
 
 API оценки угроз Microsoft Graph позволяет организациям оценивать угрозу, возникшую для любого пользователя в клиенте. Благодаря этому пользователи могут сообщать в корпорацию Майкрософт о полученной нежелательной почте, фишинговых URL-адресах и вредоносных вложениях. Результат проверки политики и результат повторного сканирования может помочь администраторам клиента понять заключение сканирования угроз и настроить политику организации.
@@ -65,6 +69,8 @@ API оценки угроз Microsoft Graph позволяет организа�
 |:---------------|:--------|:----------|
 | Перечисление оповещений | [Перечисление оповещений](../api/alert-list.md) | [https://graph.microsoft.com/v1.0/security/alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) |
 | Обновление оповещений | [Обновление оповещения](../api/alert-update.md) | [https://graph.microsoft.com/v1.0/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com) |
+|Перечисление случаев обнаружения электронных данных|[Перечисление eDiscoveryCases](../api/security-casesroot-list-ediscoverycases.md)|[https://graph.microsoft.com/beta/security/cases/eDiscoveryCases](https://developer.microsoft.com/graph/graph-explorer?request=security%2Fcases%2FeDiscoverycases&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
+|Перечисление операций со случаями обнаружения электронных данных|[Перечисление caseOperations](../api/security-ediscoverycase-list-operations.md)|[https://graph.microsoft.com/beta/security/cases/eDiscoverycases/{id}/operations](https://developer.microsoft.com/graph/graph-explorer?request=security%2Fcases%2FeDiscoverycases%2F%7Bid%7D%2Foperations&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
 |Список оценок безопасности|[Список объектов secureScore](../api/security-list-securescores.md) |[https://graph.microsoft.com/v1.0/security/secureScores](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
 |Получение оценки безопасности|[Получение объектов secureScore](../api/securescore-get.md) |[https://graph.microsoft.com/v1.0/security/secureScores/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores/{id}&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
 |Список профилей составляющих оценки безопасности|[Список объектов secureScoreControlProfiles](../api/security-list-securescorecontrolprofiles.md) |[https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
